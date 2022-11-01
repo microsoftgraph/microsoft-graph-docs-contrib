@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReferenceUpdate()
 "@odata.id" := "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"
 requestBody.Set"@odata.id"(&"@odata.id") 
 
-graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Rubric().$ref().Put(requestBody)
+graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Rubric().$ref().Put(context.Background(), requestBody, nil)
 
 
 ```

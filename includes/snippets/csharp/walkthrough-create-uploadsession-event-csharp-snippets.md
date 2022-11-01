@@ -13,7 +13,7 @@ var attachmentItem = new AttachmentItem
 	Size = 3483322
 };
 
-await graphClient.Me.Events["AAMkADU5CCmSAAA="].Attachments
+await graphClient.Me.Events["{event-id}"].Attachments
 	.CreateUploadSession(attachmentItem)
 	.Request()
 	.PostAsync();

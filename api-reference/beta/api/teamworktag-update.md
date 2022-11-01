@@ -1,9 +1,9 @@
 ---
 title: "Update teamworkTag"
 description: "Update the properties of a teamworkTag object."
-author: "anniecolonna"
+author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 

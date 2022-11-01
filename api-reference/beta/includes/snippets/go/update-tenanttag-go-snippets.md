@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Tenants that we are currently onboarding"
 requestBody.SetDescription(&description) 
 
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").Patch(requestBody)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

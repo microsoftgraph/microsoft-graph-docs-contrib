@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgRiskDetection -Filter "riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'"  -OutFile $outFileId
+Get-MgRiskDetection -Filter "riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'" 
 
 ```

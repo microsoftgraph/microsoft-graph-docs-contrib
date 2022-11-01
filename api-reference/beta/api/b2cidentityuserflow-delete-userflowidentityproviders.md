@@ -72,15 +72,15 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_si
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-userflowidentityproviders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identity-b2cuserflows-userflow-userflowidentityproviders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-userflowidentityproviders-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identity-b2cuserflows-userflow-userflowidentityproviders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-b2xuserflows-userflowidentityproviders-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identity-b2cuserflows-userflow-userflowidentityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

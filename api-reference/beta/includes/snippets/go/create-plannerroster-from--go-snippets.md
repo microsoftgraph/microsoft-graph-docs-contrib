@@ -8,10 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewPlannerRoster()
-"@odata.type" := "#microsoft.graph.plannerRoster"
-requestBody.Set"@odata.type"(&"@odata.type") 
 
-result, err := graphClient.Planner().Rosters().Post(requestBody)
+result, err := graphClient.Planner().Rosters().Post(context.Background(), requestBody, nil)
 
 
 ```

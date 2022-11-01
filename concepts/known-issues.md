@@ -301,7 +301,7 @@ The **allowExternalSenders** property can only be accessed on unified groups. Ac
 
 ### Removing a group owner also removes the user as a group member
 
-When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for a group that is associated with a [team](/graph/api/resources/team), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 ## Identity and access
 
@@ -398,6 +398,12 @@ This error might also occur when retrieving the **signInActivity** property of t
 This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
 
 
+## Sites and lists (SharePoint)
+
+### Follow/unfollow sites is not in sync with SharePoint following
+
+When querying [followed sites](/graph/api/sites-list-followed) through Microsoft Graph, the response might have incorrect results and those results might not match the results from following content in SharePoint. As a temporary workaround, you can use the [Following people and content REST API](/sharepoint/dev/general-development/following-people-and-content-rest-api-reference-for-sharepoint).
+
 ## Teamwork (Microsoft Teams)
 
 ### Unable to filter team members by roles
@@ -416,7 +422,7 @@ The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only
 ### Installation of apps that require resource-specific consent permissions is not supported
 The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 - [Add app to team](/graph/api/team-post-installedapps)
-- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
+- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade)
 - [Add app to chat](/graph/api/chat-post-installedapps)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 

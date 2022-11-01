@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Teamwork().TeamsAppSettings().Get()
+result, err := graphClient.Teamwork().TeamsAppSettings().Get(context.Background(), nil)
 
 
 ```

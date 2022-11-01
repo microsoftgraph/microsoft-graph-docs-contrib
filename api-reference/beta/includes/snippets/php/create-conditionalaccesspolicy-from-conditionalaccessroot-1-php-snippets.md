@@ -15,7 +15,9 @@ $requestBody->setDisplayName('Access to EXO requires MFA');
 $requestBody->setState(new ConditionalAccessPolicyState('enabled'));
 
 $conditions = new ConditionalAccessConditionSet();
-$conditions->setClientAppTypes(['mobileAppsAndDesktopClients', 'browser', ]);
+$conditions->setClientAppTypes([$conditions->setConditionalAccessClientApp(new ConditionalAccessClientApp('mobileappsanddesktopclients'));
+$conditions->setConditionalAccessClientApp(new ConditionalAccessClientApp('browser'));
+]);
 
 $conditionsApplications = new ConditionalAccessApplications();
 $conditionsApplications->setIncludeApplications(['00000002-0000-0ff1-ce00-000000000000', ]);
@@ -39,7 +41,8 @@ $requestBody->setConditions($conditions);
 $grantControls = new ConditionalAccessGrantControls();
 $grantControls->setOperator('OR');
 
-$grantControls->setBuiltInControls(['mfa', ]);
+$grantControls->setBuiltInControls([$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('mfa'));
+]);
 
 
 $requestBody->setGrantControls($grantControls);

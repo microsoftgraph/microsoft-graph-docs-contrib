@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Print().SharesById("printerShare-id").Delete()
+graphClient.Print().SharesById("printerShare-id").Delete(context.Background(), nil)
 
 
 ```

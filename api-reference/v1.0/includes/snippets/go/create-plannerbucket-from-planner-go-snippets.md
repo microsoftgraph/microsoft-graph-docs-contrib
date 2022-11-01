@@ -15,7 +15,7 @@ requestBody.SetPlanId(&planId)
 orderHint := " !"
 requestBody.SetOrderHint(&orderHint) 
 
-result, err := graphClient.Planner().Buckets().Post(requestBody)
+result, err := graphClient.Planner().Buckets().Post(context.Background(), requestBody, nil)
 
 
 ```

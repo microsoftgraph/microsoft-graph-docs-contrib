@@ -19,7 +19,7 @@ requestBody.SetAssignmentState(&assignmentState)
 type := "AdminRemove"
 requestBody.SetType(&type) 
 
-result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(requestBody)
+result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

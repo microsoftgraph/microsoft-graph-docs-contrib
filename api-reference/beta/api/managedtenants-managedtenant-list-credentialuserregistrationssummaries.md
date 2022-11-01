@@ -3,7 +3,7 @@ title: "List credentialUserRegistrationsSummaries"
 description: "Get a list of the credentialUserRegistrationsSummary objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credenti
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-credentialuserregistrationssummary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-credentialuserregistrationssummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

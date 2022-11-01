@@ -2,6 +2,7 @@
 title: "Add custom data to users using open extensions"
 description: "Follow the steps in this example to add an extension, query a user and return a roaming profile, change and then delete the user's roaming profile information."
 author: "dkershaw10"
+ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -26,6 +27,11 @@ The user signs in to the app and configures the look and feel of the app.  These
 whatever device they sign in to the app from.  Here we'll see how to add the roaming profile information to a user resource.
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "openextensions-users-create"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/extensions
 Content-type: application/json
@@ -38,6 +44,12 @@ Content-type: application/json
 }
 ```
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openTypeExtension"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -56,10 +68,21 @@ Content-Type: application/json
 When the user signs in to the app from another device, the app can retrieve the user's profile details as well as their roaming settings. This can be done by getting the user's resource and expanding the extension navigation property.
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "openextensions-users-get"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
 ```
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openTypeExtension"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -89,6 +112,11 @@ Content-Type: application/json
 The user can choose to change their roaming profile information.  This update can be done with a ```PATCH``` on the open extension value.
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "openextensions-users-update"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 Content-type: application/json
@@ -100,6 +128,11 @@ Content-type: application/json
 ```
 
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```
 HTTP/1.1 204 No content
 ```
@@ -108,11 +141,21 @@ HTTP/1.1 204 No content
 The user decides that they don't want a roaming profile anymore, so they delete it. This can be done with a ```DELETE``` request on the open extension value.
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "openextensions-users-delete"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```
 HTTP/1.1 204 No content
 ```

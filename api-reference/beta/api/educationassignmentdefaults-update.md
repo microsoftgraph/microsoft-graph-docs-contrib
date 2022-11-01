@@ -40,7 +40,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields of the [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,7 +118,7 @@ Content-Type: application/json
 {
   "addedStudentAction": "assignIfOpen",
   "addToCalendarAction": "studentsAndTeamOwners",
-  "dueTime": "23:59:00",
+  "dueTime": "2021-08-30T23:59:00Z",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```

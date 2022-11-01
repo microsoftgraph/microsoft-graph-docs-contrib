@@ -21,8 +21,6 @@ content := "New Task Created"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
 recipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "microsoft.graph.aadUserNotificationRecipient"
-recipient.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
 }
@@ -42,7 +40,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.ChatsById("chat-id").SendActivityNotification().Post(requestBody)
+graphClient.ChatsById("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

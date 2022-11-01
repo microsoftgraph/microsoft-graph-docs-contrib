@@ -51,6 +51,8 @@ The following table shows the properties that are required when you create the [
 |version|String|Version of the discovered application. Read-only|
 |sizeInByte|Int64|Discovered application size in bytes. Read-only|
 |deviceCount|Int32|The number of devices that have installed this application|
+|publisher|String|Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.|
+|platform|[detectedAppPlatformType](../resources/intune-devices-detectedappplatformtype.md)|Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0). Possible values are: `unknown`, `windows`, `windowsMobile`, `windowsHolographic`, `ios`, `macOS`, `chromeOS`, `androidOSP`, `androidDeviceAdministrator`, `androidWorkProfile`, `androidDedicatedAndFullyManaged`.|
 
 
 
@@ -64,14 +66,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
-Content-length: 167
+Content-length: 228
 
 {
   "@odata.type": "#microsoft.graph.detectedApp",
   "displayName": "Display Name value",
   "version": "Version value",
   "sizeInByte": 10,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "publisher": "Publisher value",
+  "platform": "windows"
 }
 ```
 
@@ -80,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 216
+Content-Length: 277
 
 {
   "@odata.type": "#microsoft.graph.detectedApp",
@@ -88,10 +92,11 @@ Content-Length: 216
   "displayName": "Display Name value",
   "version": "Version value",
   "sizeInByte": 10,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "publisher": "Publisher value",
+  "platform": "windows"
 }
 ```
-
 
 
 
