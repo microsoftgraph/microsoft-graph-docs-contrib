@@ -1,6 +1,6 @@
 ---
 title: "monitoring resource type"
-description: "Represents the entry point entity type to access all alert-related resources."
+description: "Represents the entry point entity type to access all alert-related resources. The monitoring APIs provide a programatic alert experience in Microsoft Endpoint Manager(MEM) admin center. MEM admins could create alert rules with prefered notification channels, like email and MEM portal notification, and receive alerts when conditions set in alert rules are met. Each alert will be recorded as an alert record. Admins could review created alert records to learn about alert impact, severity, status and more. Only MEM global admin, Intune admin and Cloud PC admin have access to monitoring APIs."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
