@@ -22,8 +22,8 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List updatableAssetGroup resources](../api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) collection|Get a list of the [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) objects and their properties.|
-|[Create updatableAssetGroup](../api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
+|[List updatableAssetGroup resources](../api/adminwindowsupdates-list-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) collection|Get a list of the [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) objects and their properties.|
+|[Create updatableAssetGroup](../api/adminwindowsupdates-post-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Get updatableAssetGroup](../api/windowsupdates-updatableassetgroup-get.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Read the properties and relationships of an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Delete updatableAssetGroup](../api/windowsupdates-updatableassetgroup-delete.md)|None|Deletes an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Add members](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|

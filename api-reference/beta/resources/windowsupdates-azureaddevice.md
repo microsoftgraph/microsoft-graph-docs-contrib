@@ -28,7 +28,7 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureADDevice resources](../api/windowsupdates-updates-list-updatableassets-azureaddevice.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
+|[List azureADDevice resources](../api/adminwindowsupdates-list-updatableassets-azureaddevice.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
 |[Get azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Delete azureADDevice](../api/windowsupdates-azureaddevice-delete.md)|None|Delete an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Enroll azureADDevice resources in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by the deployment service.|

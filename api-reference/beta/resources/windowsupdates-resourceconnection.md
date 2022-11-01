@@ -20,7 +20,7 @@ This is an abstract type.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List resourceConnections](../api/windowsupdates-updates-list-resourceconnections.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Get a list of the [resourceConnection](../resources/windowsupdates-resourceconnection.md) objects and their properties.|
+|[List resourceConnections](../api/adminwindowsupdates-list-resourceconnections.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Get a list of the [resourceConnection](../resources/windowsupdates-resourceconnection.md) objects and their properties.|
 |[Get resourceConnection](../api/windowsupdates-resourceconnection-get.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md)|Read the properties and relationships of a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
 |[Delete resourceConnection](../api/windowsupdates-resourceconnection-delete.md)|None|Delete a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
 

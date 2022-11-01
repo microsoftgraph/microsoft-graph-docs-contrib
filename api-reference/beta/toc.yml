@@ -18842,7 +18842,7 @@ items:
         displayName: Windows updates
         items:
         - name: Updates
-          href: resources/windowsupdates-updates.md
+          href: resources/adminwindowsupdates.md
         - name: Catalog
           items:
           - name: Catalog
@@ -18857,9 +18857,9 @@ items:
           href: resources/windowsupdates-deployment.md
           items:
           - name: List deployments
-            href: api/windowsupdates-updates-list-deployments.md
+            href: api/adminwindowsupdates-list-deployments.md
           - name: Create deployment
-            href: api/windowsupdates-updates-post-deployments.md
+            href: api/adminwindowsupdates-post-deployments.md
           - name: Get deployment
             href: api/windowsupdates-deployment-get.md
           - name: Update deployment
@@ -18888,7 +18888,7 @@ items:
           href: resources/windowsupdates-updatableasset.md
           items:
           - name: List updatable assets
-            href: api/windowsupdates-updates-list-updatableassets.md
+            href: api/adminwindowsupdates-list-updatableassets.md
           - name: Get updatable asset
             href: api/windowsupdates-updatableasset-get.md
           - name: Delete updatable asset
@@ -18897,7 +18897,7 @@ items:
             href: resources/windowsupdates-azureaddevice.md
             items:
             - name: List Azure AD devices
-              href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
+              href: api/adminwindowsupdates-list-updatableassets-azureaddevice.md
             - name: Get Azure AD device
               href: api/windowsupdates-azureaddevice-get.md
             - name: Delete Azure AD device
@@ -18914,9 +18914,9 @@ items:
             href: resources/windowsupdates-updatableassetgroup.md
             items:
             - name: List updatable asset groups
-              href: api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md
+              href: api/adminwindowsupdates-list-updatableassets-updatableassetgroup.md
             - name: Create updatable asset group
-              href: api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md
+              href: api/adminwindowsupdates-post-updatableassets-updatableassetgroup.md
             - name: Get updatable asset group
               href: api/windowsupdates-updatableassetgroup-get.md
             - name: Delete updatable asset group
@@ -18935,7 +18935,7 @@ items:
           href: resources/windowsupdates-resourceconnection.md
           items:
           - name: List
-            href: api/windowsupdates-updates-list-resourceconnections.md
+            href: api/adminwindowsupdates-list-resourceconnections.md
           - name: Get
             href: api/windowsupdates-resourceconnection-get.md
           - name: Delete
@@ -18944,9 +18944,9 @@ items:
             href: resources/windowsupdates-operationalinsightsconnection.md
             items:
             - name: List
-              href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
+              href: api/adminwindowsupdates-list-resourceconnections-operationalinsightsconnection.md
             - name: Create
-              href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
+              href: api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
             - name: Get
               href: api/windowsupdates-operationalinsightsconnection-get.md
             - name: Delete
