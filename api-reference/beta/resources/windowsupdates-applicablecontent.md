@@ -35,13 +35,13 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "microsoft.graph.windowsUpdates.applicableContent",
+  "@odata.type": "#microsoft.graph.windowsUpdates.applicableContent",
   "catalogEntry": {
-    "@odata.type": "microsoft.graph.windowsUpdates.catalogEntry"
+    "@odata.type": "#microsoft.graph.windowsUpdates.catalogEntry"
   },
   "matchedDevices": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.applicableContentDeviceMatch"
+      "@odata.type": "#microsoft.graph.windowsUpdates.applicableContentDeviceMatch"
     }
   ]
 }

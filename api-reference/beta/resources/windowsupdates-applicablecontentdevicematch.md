@@ -35,9 +35,9 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "microsoft.graph.windowsUpdates.applicableContentDeviceMatch",
+  "@odata.type": "#microsoft.graph.windowsUpdates.applicableContentDeviceMatch",
   "device": {
-    "@odata.type": "microsoft.graph.device"
+    "@odata.type": "#microsoft.graph.device"
   },
   "recommendedBy": ["String"]
 }
