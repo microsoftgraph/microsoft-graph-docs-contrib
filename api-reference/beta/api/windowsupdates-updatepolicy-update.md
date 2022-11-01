@@ -62,7 +62,8 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_updatepolicy"
+  "name": "update_updatepolicy",
+  "@odata.type": "microsoft.graph.windowsUpdates.updatePolicy"
 }
 -->
 ``` http
@@ -91,7 +92,8 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.windowsUpdates.updatePolicy"
 }
 -->
 ``` http

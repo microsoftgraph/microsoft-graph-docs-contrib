@@ -61,7 +61,8 @@ If successful, this method returns a `200 OK` response code and an updated [cont
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_contentapproval"
+  "name": "update_contentapproval",
+  "@odata.type": "microsoft.graph.windowsUpdates.contentApproval"
 }
 -->
 ``` http
@@ -81,7 +82,8 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.windowsUpdates.contentApproval"
 }
 -->
 ``` http
