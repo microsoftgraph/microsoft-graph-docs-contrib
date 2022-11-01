@@ -43,14 +43,6 @@ Namespace: microsoft.graph.windowsUpdates
 |archived|
 |unknownFutureValue|
 
-### equivalentContentOption values 
-
-|Member|
-|:---|
-|none|
-|latestSecurity|
-|unknownFutureValue|
-
 ### monitoringAction values 
 
 |Member|
