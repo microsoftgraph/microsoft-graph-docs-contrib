@@ -111,7 +111,9 @@ mgt-people-picker {
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
-    
+    --dropdown-item__text__color: yellow; /* person item text color */
+    --dropdown-item__text__hover__color: blue; /* person item text color on hover */
+
     --selected-person-background-color: #f1f1f1; /* person item background color */
     
     --color: white; /* input area border focus color */
