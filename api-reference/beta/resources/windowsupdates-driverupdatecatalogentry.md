@@ -1,9 +1,9 @@
 ---
 title: "driverUpdateCatalogEntry resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Entity representing the Metadata for driver update content that you can approve for deployment."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Entity representing the Metadata for driver update content that you can approve for deployment.
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
@@ -29,17 +28,17 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description** Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
-|driverClass|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
-|manufacturer|String|**TODO: Add Description**|
-|provider|String|**TODO: Add Description**|
-|releaseDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
-|setupInformationFile|String|**TODO: Add Description**|
-|version|String|**TODO: Add Description**|
-|versionDateTime|DateTimeOffset|**TODO: Add Description**|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available to deploy using the service. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|description|String|The description of the content.|
+|displayName|String|The display name of the content Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|driverClass|String|The classification of the driver.|
+|id|String|Unique identifier Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|manufacturer|String|Manufacturer of the driver.|
+|provider|String|Provider of the driver.|
+|releaseDateTime|DateTimeOffset|The release date for the content Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|setupInformationFile|String|The setup information file of the driver.|
+|version|String|The unique version of the content.|
+|versionDateTime|DateTimeOffset|The version date and time of the content.|
 
 ## Relationships
 None.
