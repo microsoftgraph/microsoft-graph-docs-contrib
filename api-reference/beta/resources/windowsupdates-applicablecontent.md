@@ -18,7 +18,7 @@ Content applicable for offering to the related collection of devices.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|matchedDevices|[microsoft.graph.windowsUpdates.applicableContentDeviceMatch](../resources/windowsupdates-applicablecontentdevicematch.md) collection|Collection of devices and recommendations for applicable catalog content.|
+|matchedDevices|[Collection(microsoft.graph.windowsUpdates.applicableContentDeviceMatch)](../resources/windowsupdates-applicablecontentdevicematch.md)|Collection of devices and recommendations for applicable catalog content.|
 
 ## Relationships
 |Relationship|Type|Description|

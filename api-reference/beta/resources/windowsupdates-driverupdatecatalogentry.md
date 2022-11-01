@@ -17,14 +17,6 @@ Entity representing the Metadata for driver update content that you can approve 
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List driverUpdateCatalogEntries](../api/windowsupdates-driverupdatecatalogentry-list.md)|[microsoft.graph.windowsUpdates.driverUpdateCatalogEntry](../resources/windowsupdates-driverupdatecatalogentry.md) collection|Get a list of the [driverUpdateCatalogEntry](../resources/windowsupdates-driverupdatecatalogentry.md) objects and their properties.|
-|[Get driverUpdateCatalogEntry](../api/windowsupdates-driverupdatecatalogentry-get.md)|[microsoft.graph.windowsUpdates.driverUpdateCatalogEntry](../resources/windowsupdates-driverupdatecatalogentry.md)|Read the properties and relationships of a [driverUpdateCatalogEntry](../resources/windowsupdates-driverupdatecatalogentry.md) object.|
-|[Update driverUpdateCatalogEntry](../api/windowsupdates-driverupdatecatalogentry-update.md)|[microsoft.graph.windowsUpdates.driverUpdateCatalogEntry](../resources/windowsupdates-driverupdatecatalogentry.md)|Update the properties of a [driverUpdateCatalogEntry](../resources/windowsupdates-driverupdatecatalogentry.md) object.|
-|[Delete driverUpdateCatalogEntry](../api/windowsupdates-driverupdatecatalogentry-delete.md)|None|Delete a [driverUpdateCatalogEntry](../resources/windowsupdates-driverupdatecatalogentry.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

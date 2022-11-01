@@ -30,7 +30,7 @@ Collection of devices and recommendations for applicable catalog content.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.windowsUpdates.catalogContent"
+  "@odata.type": "microsoft.graph.windowsUpdates.applicableContentDeviceMatch"
 }
 -->
 ``` json
