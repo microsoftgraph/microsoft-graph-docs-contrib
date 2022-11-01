@@ -33,7 +33,7 @@ Entity that governs the deployment of content to an associated deploymentAudienc
 |Property|Type|Description|
 |:---|:---|:---|
 |complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|collection|Rules governing the automatic creation of compliance changes.|
-|createdDateTime|DateTimeOffset|The date and time when created|
+|createdDateTime|DateTimeOffset|The date and time when created.|
 |deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
 |id|String|Unique identifier.|
 
