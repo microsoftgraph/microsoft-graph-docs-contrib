@@ -69,4 +69,4 @@ To learn more, see [Manage monitoring rules for a deployment](windowsupdates-man
 
 Looking for the API reference for this service?
 
-See [Windows updates API in Microsoft Graph beta](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true).
+See [Windows updates API in Microsoft Graph beta](/graph/api/resources/adminwindowsupdates?view=graph-rest-beta&preserve-view=true).

@@ -25,7 +25,7 @@ None.
 | reportSettings |[microsoft.graph.adminReportSettings](../resources/adminreportsettings.md)|A container for administrative resources to manage reports.|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
 | sharepoint |[microsoft.graph.tenantAdmin.sharepoint](../resources/tenantadmin-sharepoint.md)|A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive.|
-| windows |[microsoft.graph.windowsUpdates.windows](../resources/windowsupdates-windows.md)|A container for all Windows Update for Business deployment service functionality. Read-only.|
+| windows |[microsoft.graph.adminWindows](../resources/adminwindows.md)|A container for all Windows administrator functionality. Read-only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
