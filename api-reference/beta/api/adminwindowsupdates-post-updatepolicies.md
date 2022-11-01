@@ -128,7 +128,7 @@ Content-Type: application/json
   ],
   "complianceChangeRules": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
+      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
       "contentFilter": {
           "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
       },

@@ -7,7 +7,7 @@ ms.prod: "w10"
 doc_type: apiPageType
 ---
 
-# Update contentApproval
+# Create contentApproval
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
