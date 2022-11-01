@@ -1,9 +1,9 @@
 ---
 title: "contentApproval resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Approves content to be deployed according to policy."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Approves content to be deployed according to policy.
 
 
 Inherits from [complianceChange](../resources/windowsupdates-compliancechange.md).
@@ -21,31 +21,27 @@ Inherits from [complianceChange](../resources/windowsupdates-compliancechange.md
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List contentApprovals](../api/windowsupdates-contentapproval-list.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) collection|Get a list of the [contentApproval](../resources/windowsupdates-contentapproval.md) objects and their properties.|
+|[List contentApprovals](../api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) collection|Get a list of the [contentApproval](../resources/windowsupdates-contentapproval.md) objects and their properties.|
+|[Create contentApproval](../api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Create a new [contentApproval](../resources/windowsupdates-contentapproval.md) object.|
 |[Get contentApproval](../api/windowsupdates-contentapproval-get.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Read the properties and relationships of a [contentApproval](../resources/windowsupdates-contentapproval.md) object.|
 |[Update contentApproval](../api/windowsupdates-contentapproval-update.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Update the properties of a [contentApproval](../resources/windowsupdates-contentapproval.md) object.|
 |[Delete contentApproval](../api/windowsupdates-contentapproval-delete.md)|None|Delete a [contentApproval](../resources/windowsupdates-contentapproval.md) object.|
-|[List deployments](../api/adminwindowsupdates-list-deployments.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md) collection|Get the deployment resources from the deployments navigation property.|
-|[Create deployment](../api/windowsupdates-contentapproval-post-deployments.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md)|Create a new deployment object.|
-|[List updatePolicy](../api/adminwindowsupdates-list-updatepolicies.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) collection|Get the updatePolicy resources from the updatePolicy navigation property.|
-|[Add updatePolicy](../api/windowsupdates-contentapproval-post-updatepolicy.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Add updatePolicy by posting to the updatePolicy collection.|
-|[Remove updatePolicy](../api/windowsupdates-contentapproval-delete-updatepolicy.md)|None|Remove an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md).|
-|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md).|
-|isRevoked|Boolean|**TODO: Add Description** Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md).|
-|revokedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md).|
+|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [catalogContent](../resources/windowsupdates-catalogcontent.md)|
+|createdDateTime|DateTimeOffset|The date and time when created. Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md).|
+|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
+|id|String|The unique identifier for the compliance change. Returned by default. Key. Not nullable. Read-only. Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md).|
+|isRevoked|Boolean|Set to **true** to revoke the change and prevent further application. Revoking a compliance change is a final action. Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md).|
+|revokedDateTime|DateTimeOffset|Date and time the compliance change was revoked. Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deployments|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md) collection|**TODO: Add Description**|
-|updatePolicy|[updatePolicy](../resources/windowsupdates-updatepolicy.md)|**TODO: Add Description** Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md)|
+|deployments|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md) collection|Deployments created as a result of applying the approval.|
+|updatePolicy|[updatePolicy](../resources/windowsupdates-updatepolicy.md)|The policy this compliance change is a member of. Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.
