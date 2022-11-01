@@ -30,12 +30,12 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 |:---|:---|:---|
 |deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available to deploy using the service. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |description|String|The description of the content.|
-|displayName|String|The display name of the content Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|displayName|String|The display name of the content. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |driverClass|String|The classification of the driver.|
-|id|String|Unique identifier Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|id|String|Unique identifier. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |manufacturer|String|Manufacturer of the driver.|
 |provider|String|Provider of the driver.|
-|releaseDateTime|DateTimeOffset|The release date for the content Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|releaseDateTime|DateTimeOffset|The release date for the content. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |setupInformationFile|String|The setup information file of the driver.|
 |version|String|The unique version of the content.|
 |versionDateTime|DateTimeOffset|The version date and time of the content.|
