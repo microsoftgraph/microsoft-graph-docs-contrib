@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new TaskDefinitionsRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new TaskDefinitionsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "category eq 'joiner,leaver' OR category eq 'joiner'";
+$queryParameters->filter = "category has 'joiner'";
 
 $requestConfiguration->queryParameters = $queryParameters;
 
