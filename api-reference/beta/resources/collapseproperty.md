@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the criteria used for collapsing search results. Applies only to sortable/refinable property.
+Specifies the criteria used for collapsing search results. Applies only to sortable/refinable properties.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|fields|String Collection| Defines the collapse group to trim results. The properties in this collection must be sortable/refinable property. Required.|
-|limit|Int16| Defines a max limit count for this fields. This numeric value must be a positive integer. Required.|
+|fields|String Collection| Defines the collapse group to trim results. The properties in this collection must be sortable/refinable properties. Required.|
+|limit|Int16| Defines a maximum limit count for this field. This numeric value must be a positive integer. Required.|
 
 ## JSON representation
 
