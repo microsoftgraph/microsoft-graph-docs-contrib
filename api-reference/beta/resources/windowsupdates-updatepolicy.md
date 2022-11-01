@@ -1,7 +1,7 @@
 ---
 title: "updatePolicy resource type"
 description: "Entity that governs the deployment of content to an associated deploymentAudience."
-author: "*ryan-k-williams"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
