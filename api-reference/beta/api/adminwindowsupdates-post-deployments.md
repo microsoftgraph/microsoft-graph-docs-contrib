@@ -158,7 +158,7 @@ Content-Type: application/json
     "effectiveSinceDate": "String (timestamp)"
   },
   "audience": {
-    "id": "1"
+    "id": "1",
     "members": []
   },
   "content": {
