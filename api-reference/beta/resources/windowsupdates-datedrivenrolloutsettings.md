@@ -1,9 +1,9 @@
 ---
 title: "dateDrivenRolloutSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Settings controlling how to rollout by a specific end date."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings controlling how to rollout by a specific end date.
 
 
 Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md).
@@ -21,8 +21,8 @@ Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrollou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|durationBetweenOffers|Duration|**TODO: Add Description** Inherited from [gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md).|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
+|durationBetweenOffers|String|Specifies duration between each set of devices being offered the update. Has an effect when **endDateTime** is defined. Default value is `P1D` (1 day).|
+|endDateTime|DateTimeOffset|Specifies the date before which all devices currently in the deployment are offered the update. Devices added after this date are offered immediately. When **endDateTime** is not set, all devices in the deployment are offered content at the same time.|
 
 ## Relationships
 None.

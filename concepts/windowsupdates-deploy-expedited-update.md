@@ -102,7 +102,7 @@ Content-type: application/json
         "releaseDate": "YYYY-MM-DD"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "userExperience": {
             "daysUntilForcedReboot": 2
         }
@@ -138,13 +138,12 @@ Content-Type: application/json
         "equivalentContent": "latestSecurity"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "userExperience": {
             "daysUntilForcedReboot": 2
         },
         "monitoring": null,
-        "rollout": null,
-        "safeguard": null
+        "schedule": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

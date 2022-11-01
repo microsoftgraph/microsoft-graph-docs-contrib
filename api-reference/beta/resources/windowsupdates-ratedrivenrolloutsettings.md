@@ -1,9 +1,9 @@
 ---
 title: "rateDrivenRolloutSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Settings governing rate driven rollouts."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings governing rate driven rollouts.
+
+A rate driven rollout deploys content over time at a specific rate determined by **devicesPerOffer** and **durationBetweenOffers**.
 
 
 Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md).
@@ -21,8 +23,8 @@ Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrollou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|devicesPerOffer|Int32|**TODO: Add Description**|
-|durationBetweenOffers|Duration|**TODO: Add Description** Inherited from [gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md).|
+|devicesPerOffer|Int32|	Specifies the number of devices that are offered at the same time. When **devicesPerOffer** is not set, all devices in the deployment are offered content at the same time.|
+|durationBetweenOffers|String|Specifies duration between each set of devices being offered the update. Has an effect when **devicesPerOffer** is defined. Default value is `P1D` (1 day).|
 
 ## Relationships
 None.

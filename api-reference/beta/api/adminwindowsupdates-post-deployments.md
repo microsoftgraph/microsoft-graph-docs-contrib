@@ -80,7 +80,7 @@ Content-Type: application/json
     }
   },
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "schedule": {
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
@@ -168,7 +168,7 @@ Content-Type: application/json
     }
   },
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "schedule": {
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",

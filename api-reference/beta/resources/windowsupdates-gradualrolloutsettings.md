@@ -1,9 +1,9 @@
 ---
 title: "gradualRolloutSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Settings governing how to rollout content to devices."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings governing how to rollout content to devices.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|durationBetweenOffers|Duration|**TODO: Add Description**|
+|durationBetweenOffers|String|Specifies duration between each set of devices being offered the update. Default value is `P1D` (1 day).|
 
 ## Relationships
 None.

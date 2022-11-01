@@ -37,7 +37,7 @@ Content-type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -77,7 +77,7 @@ Content-Type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -88,9 +88,8 @@ Content-Type: application/json
                 }
             ]
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -114,7 +113,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": []
         }
@@ -148,13 +147,12 @@ Content-Type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": []
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -175,7 +173,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -215,7 +213,7 @@ Content-Type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -226,9 +224,8 @@ Content-Type: application/json
                 }
             ]
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

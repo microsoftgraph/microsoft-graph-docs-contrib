@@ -15,7 +15,7 @@ Scheduling features are compatible with [deployments](windowsupdates-deployments
 
 ## Schedule a deployment to start at a future date
 
-You can schedule a deployment to start at a future date by configuring its [rollout settings](/graph/api/resources/windowsupdates-rolloutsettings). In the example below, all devices assigned the deployment will be offered the update on July 1, 2021.
+You can schedule a deployment to start at a future date by configuring its [schedule settings](/graph/api/resources/windowsupdates-schedulesettings). In the example below, all devices assigned the deployment will be offered the update on July 1, 2021.
 
 ### Request
 
@@ -30,8 +30,8 @@ Content-type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
             "startDateTime": "2021-07-01T17:00:00Z",
         }
     }
@@ -64,16 +64,13 @@ Content-Type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
             "startDateTime": "2021-07-01T17:00:00Z",
-            "endDateTime": null,
-            "durationBetweenOffers": "P1D",
-            "devicesPerOffer": null
+            "gradualRollout": null
         },
         "monitoring": null,
-        "userExperience": null,
-        "safeguard": null
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -103,11 +100,14 @@ Content-type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
             "startDateTime": "2021-07-01T17:00:00Z",
-            "endDateTime": "2021-08-01T17:00:00Z",
-            "durationBetweenOffers": "P7D"
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
+                "endDateTime": "2021-08-01T17:00:00Z",
+                "durationBetweenOffers": "P7D"
+            }
         }
     }
 }
@@ -139,16 +139,17 @@ Content-Type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
             "startDateTime": "2021-07-01T17:00:00Z",
-            "endDateTime": "2021-08-01T17:00:00Z",
-            "durationBetweenOffers": "P7D",
-            "devicesPerOffer": null
-        },
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
+                "endDateTime": "2021-08-01T17:00:00Z",
+                "durationBetweenOffers": "P7D"
+            }
+        }
         "monitoring": null,
-        "userExperience": null,
-        "safeguard": null
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -175,11 +176,14 @@ Content-type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
             "startDateTime": "2020-07-01T17:00:00Z",
-            "devicesPerOffer": 100,
-            "durationBetweenOffers": "P7D"
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P7D",
+                "devicePerOffer": 100
+            }
         }
     }
 }
@@ -211,16 +215,17 @@ Content-Type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
             "startDateTime": "2020-07-01T17:00:00Z",
-            "devicesPerOffer": 100,
-            "durationBetweenOffers": "P7D",
-            "endDateTime": null
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P7D",
+                "devicePerOffer": 100
+            }
         },
         "monitoring": null,
-        "userExperience": null,
-        "safeguard": null
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

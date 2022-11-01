@@ -84,13 +84,15 @@ Content-type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "safeguard": {
-            "disabledSafeguardProfiles": [
-                {
-                    "category": "likelyIssues"
-                }
-            ]
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "contentApplicability": {
+            "safeguard": {
+                "disabledSafeguardProfiles": [
+                    {
+                        "category": "likelyIssues"
+                    }
+                ]
+            }
         }
     }
 }
@@ -122,17 +124,19 @@ Content-Type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": null,
-        "rollout": null,
+        "schedule": null,
         "userExperience": null,
-        "safeguard": {
-            "disabledSafeguardProfiles": [
-                {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.safeguardProfile",
-                    "category": "likelyIssues"
-                }
-            ]
+        "contentApplicability": {
+            "safeguard": {
+                "disabledSafeguardProfiles": [
+                    {
+                        "@odata.type": "#microsoft.graph.windowsUpdates.safeguardProfile",
+                        "category": "likelyIssues"
+                    }
+                ]
+            }
         }
     },
     "createdDateTime": "String (timestamp)",

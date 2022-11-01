@@ -1,9 +1,9 @@
 ---
 title: "durationDrivenRolloutSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Settings controlling how to rollout over a specific duration."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings controlling how to rollout over a specific duration.
 
 
 Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md).
@@ -21,8 +21,8 @@ Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrollou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|durationBetweenOffers|Duration|**TODO: Add Description** Inherited from [gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md).|
-|durationUntilDeploymentEnd|Duration|**TODO: Add Description**|
+|durationBetweenOffers|String|Specifies duration between each set of devices being offered the update. Has an effect when **durationUntilDeploymentEnd** is defined. Default value is `P1D` (1 day).|
+|durationUntilDeploymentEnd|Duration|Specifies the target duration of the rollout. Given **durationBetweenOffers** and **durationUntilDeploymentEnd** the system will automatically calculate how many devices are in each offering.|
 
 ## Relationships
 None.

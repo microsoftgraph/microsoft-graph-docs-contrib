@@ -1,9 +1,9 @@
 ---
 title: "scheduleSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Settings controlling how and when the service deploys an update over time."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings controlling how and when the service deploys an update over time.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|gradualRollout|[microsoft.graph.windowsUpdates.gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md)|**TODO: Add Description**|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
+|gradualRollout|[microsoft.graph.windowsUpdates.gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md)|Settings governing how to rollout content to devices. One of: [rateDrivenRolloutSettings](../resources/windowsupdates-ratedrivenrolloutsettings.md), [dateDrivenRolloutSettings](../resources/windowsupdates-datedrivenrolloutsettings.md), or [durationDrivenRolloutSettings](../resources/windowsupdates-durationdrivenrolloutsettings.md)|
+|startDateTime|DateTimeOffset|Date on which devices in the deployment start receiving the update. When not set, the deployment starts as soon as devices are assigned.|
 
 ## Relationships
 None.

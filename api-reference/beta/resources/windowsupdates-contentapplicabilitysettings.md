@@ -1,9 +1,9 @@
 ---
 title: "contentApplicabilitySettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Settings governing whether content is applicable to a device."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings governing whether content is applicable to a device.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|offerWhileRecommendedBy|String collection|**TODO: Add Description**|
-|safeguard|[microsoft.graph.windowsUpdates.safeguardSettings](../resources/windowsupdates-safeguardsettings.md)|**TODO: Add Description**|
+|offerWhileRecommendedBy|String collection|Offer if the update is recommended by a vendor in the list, otherwise withold the offer.|
+|safeguard|[microsoft.graph.windowsUpdates.safeguardSettings](../resources/windowsupdates-safeguardsettings.md)|Settings governing safeguard holds on offering content.|
 
 ## Relationships
 None.

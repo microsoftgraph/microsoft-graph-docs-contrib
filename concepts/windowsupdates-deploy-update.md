@@ -82,10 +82,13 @@ Content-type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
-            "devicesPerOffer": 100,
-            "durationBetweenOffers": "P7D"
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P7D",
+                "devicePerOffer": 100
+            }
         },
         "monitoring": {
             "monitoringRules": [
@@ -126,12 +129,13 @@ Content-Type: application/json
         "version": "20H2"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
-            "devicesPerOffer": 100,
-            "durationBetweenOffers": "P7D",
-            "startDateTime": null,
-            "endDateTime": null
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P7D",
+                "devicePerOffer": 100
+            }
         },
         "monitoring": {
             "monitoringRules": [
@@ -143,7 +147,6 @@ Content-Type: application/json
                 }
             ]
         },
-        "safeguard": null,
         "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
