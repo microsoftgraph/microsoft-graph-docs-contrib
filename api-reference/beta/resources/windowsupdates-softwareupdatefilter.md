@@ -1,6 +1,6 @@
 ---
 title: "softwareUpdateFilter resource type"
-description: "A filter to determine which software update content matches the rule on an ongoing basis"
+description: "A filter to determine which software update content matches the rule on an ongoing basis."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A filter to determine which software update content matches the rule on an ongoing basis
+A filter to determine which software update content matches the rule on an ongoing basis.
 
 This is an abstract type.
 
