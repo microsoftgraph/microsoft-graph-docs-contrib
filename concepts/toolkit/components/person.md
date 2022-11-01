@@ -29,7 +29,7 @@ You can use three properties to set the person details. Use only one of the foll
 
 * Set the `person-presence` attribute or `personPresence` property to add a presence badge to person avatar manually.
 
-* Set the `avatar-size` attribute or `avatarSize` property to `small` or `large` to determine the size of avatar. This helps add the [correct presence badge](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) to avatar. You will need to choose the correct corresponding css custom properties shown below to further customize avatar size. By default, the value is set to `auto` which will automatically decide how to render the presence based on the `view` property. We recommend using `small` if your avatar is smaller than 32px by 32px. 
+* Set the `avatar-size` attribute or `avatarSize` property to `small` or `large` to determine the size of avatar. This helps add the [correct presence badge](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) to avatar. You will need to choose the correct corresponding css custom properties shown below to further customize avatar size. By default, the value is set to `auto` which will automatically decide how to render the presence based on the `view` property. We recommend using `small` if your avatar is smaller than 32px by 32px.
 
 * Use the `person-details` attribute or `personDetails` property to manually set the person details, as shown in the following example.
 
@@ -45,7 +45,7 @@ You can use three properties to set the person details. Use only one of the foll
 
   If no image is provided, one will be fetched (if available).
 
-* By default, the person component will only request the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`. 
+* By default, the person component will only request the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`.
 
 
 ## Properties
@@ -82,7 +82,7 @@ mgt-person {
   --avatar-border: 0;
   --avatar-border-radius: 50%;
   --avatar-cursor: default;
-  
+
   --initials-color: white;
   --initials-background-color: magenta;
 
@@ -106,6 +106,10 @@ mgt-person {
   --line3-text-transform: none;
 
   --details-spacing: 12px;
+
+  --person-flex-direction: row;
+
+  --focus-offset: 11px;
 }
 ```
 
@@ -131,7 +135,7 @@ The `mgt-person` component supports several [templates](../customize-components/
 | Data type | Data context | Description |
 | --------- | ------------ | ----------- |
 | loading | none | The template to render while the component is in a loading state. |
-| no-data | none | The template to render when no person image or data is available. | 
+| no-data | none | The template to render when no person image or data is available. |
 | default | person: The person details object <br> `personImage`: The URL of the image <br> `personPresence`: The presence details object for person.  | The default template replaces the entire component with your own. |
 | person-card | person: The person details object <br> `personImage`: The URL of the image. | The template to update the mgt-person-card displayed on hover or click. |
 | line1 | person: The person details object | The template for the first line of person metadata. |
