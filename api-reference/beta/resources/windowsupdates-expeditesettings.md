@@ -1,9 +1,9 @@
 ---
 title: "expediteSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Settings for expediting the deployment of content."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings for expediting the deployment of content.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isExpedited|Boolean|**TODO: Add Description**|
+|isExpedited|Boolean|Set to **true** to expedite deployment of content.|
 
 ## Relationships
 None.
