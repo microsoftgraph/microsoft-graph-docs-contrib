@@ -66,6 +66,7 @@ The following table shows the properties that are required when you create the w
 |allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
 |selectedMobileAppIds|String collection|Selected applications to track the installation status|
 |allowNonBlockingAppInstallation|Boolean|Install all required apps as non blocking apps during white glove|
+|installQualityUpdates|Boolean|Allows quality updates installation during OOBE|
 |trackInstallProgressForAutopilotOnly|Boolean|Only show installation progress for Autopilot enrollment scenarios|
 |disableUserStatusTrackingAfterFirstUser|Boolean|Only show installation progress for first user post enrollment|
 
@@ -81,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 839
+Content-length: 873
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -104,6 +105,7 @@ Content-length: 839
     "Selected Mobile App Ids value"
   ],
   "allowNonBlockingAppInstallation": true,
+  "installQualityUpdates": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }
@@ -114,7 +116,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1011
+Content-Length: 1045
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -140,6 +142,7 @@ Content-Length: 1011
     "Selected Mobile App Ids value"
   ],
   "allowNonBlockingAppInstallation": true,
+  "installQualityUpdates": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }

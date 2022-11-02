@@ -115,6 +115,32 @@
     {
       "ChangeList": [
         {
+          "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessApplications"
+        },
+        {
+          "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipalFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalFilter** property to the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessclientapplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessClientApplications"
+        }
+      ],
+      "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-01T00:00:00.8129252Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "identity-and-sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
           "ApiChange": "Relationship",
           "ChangedApiName": "emailMethods",

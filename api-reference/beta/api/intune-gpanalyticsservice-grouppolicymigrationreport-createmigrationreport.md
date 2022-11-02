@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/createMigrationReport
 
 Content-type: application/json
-Content-length: 438
+Content-length: 506
 
 {
   "groupPolicyObjectFile": {
@@ -73,7 +73,10 @@ Content-length: 438
     "ouDistinguishedName": "Ou Distinguished Name value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "content": "Content value"
+    "content": "Content value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

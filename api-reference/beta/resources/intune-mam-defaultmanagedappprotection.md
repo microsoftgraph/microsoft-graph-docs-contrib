@@ -136,6 +136,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |requireClass3Biometrics|Boolean|Require user to apply Class 3 Biometrics on their Android device.|
 |requirePinAfterBiometricChange|Boolean|A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.|
 |fingerprintAndBiometricEnabled|Boolean|Indicate to the client to enable both biometrics and fingerprints for the app.|
+|minimumWarningSdkVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. (iOS only)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -283,7 +284,8 @@ Here is a JSON representation of the resource.
   "appActionIfDevicePasscodeComplexityLessThanHigh": "String",
   "requireClass3Biometrics": true,
   "requirePinAfterBiometricChange": true,
-  "fingerprintAndBiometricEnabled": true
+  "fingerprintAndBiometricEnabled": true,
+  "minimumWarningSdkVersion": "String"
 }
 ```
 
