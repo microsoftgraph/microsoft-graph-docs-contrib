@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents feedback on an [educationOutcome](../resources/educationoutcome.md) object in the form of a document.
 
 Inherits from [educationOutcome](../resources/educationoutcome.md).
