@@ -47,7 +47,7 @@ Lifecycle Workflows currently support the following tasks:
 
 <!--[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](../includes/lifecycle-workflows-tasks-table.md)]-->
 
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/friendly_name/includes/lifecycle-workflows-tasks-table.md)]
+[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/azure_docs/includes/lifecycle-workflows-tasks-table.md)]
 
 ## Relationships
 
