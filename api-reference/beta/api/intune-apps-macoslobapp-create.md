@@ -71,16 +71,16 @@ The following table shows the properties that are required when you create the m
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|bundleId|String|The bundle id.|
-|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
-|buildNumber|String|The build number of MacOS Line of Business (LoB) app.|
-|versionNumber|String|The version number of MacOS Line of Business (LoB) app.|
-|childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) collection|The app list in this bundle package|
-|identityVersion|String|The identity version.|
-|md5HashChunkSize|Int32|The chunk size for MD5 hash|
-|md5Hash|String collection|The MD5 hash codes|
-|ignoreVersionDetection|Boolean|A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set this to true for macOS Line of Business (LoB) apps that use a self update feature.|
-|installAsManaged|Boolean|A boolean to control whether the app will be installed as managed (requires macOS 11.0 and other PKG restrictions).|
+|bundleId|String|The primary bundleId of the package.|
+|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|ComplexType macOSMinimumOperatingSystem that indicates the minimum operating system applicable for the application.|
+|buildNumber|String|The build number of the package. This should match the package CFBundleShortVersionString of the .pkg file.|
+|versionNumber|String|The version number of the package. This should match the package CFBundleVersion in the packageinfo file.|
+|childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) collection|List of ComplexType macOSLobChildApp objects. Represents the apps expected to be installed by the package.|
+|identityVersion|String|The identity version. This property is being deprecated in 2211(November 2022).|
+|md5HashChunkSize|Int32|The chunk size for MD5 hash. This is '0' or empty if the package was uploaded directly. If the Intune App Wrapping Tool is used to create a .intunemac, this value can be found inside the Detection.xml file.|
+|md5Hash|String collection|The MD5 hash codes. This is empty if the package was uploaded directly. If the Intune App Wrapping Tool is used to create a .intunemac, this value can be found inside the Detection.xml file.|
+|ignoreVersionDetection|Boolean|When TRUE, indicates that the app's version will NOT be used to detect if the app is installed on a device. When FALSE, indicates that the app's version will be used to detect if the app is installed on a device. Set this to true for apps that use a self update feature.|
+|installAsManaged|Boolean|When TRUE, indicates that the app will be installed as managed (requires macOS 11.0 and other managed package restrictions). When FALSE, indicates that the app will be installed as unmanaged.|
 
 
 

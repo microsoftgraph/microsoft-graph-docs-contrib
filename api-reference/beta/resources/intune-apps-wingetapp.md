@@ -52,6 +52,7 @@ Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|manifestHash|String|Hash of package metadata properties used to validate that the application matches the metadata in the source repository.|
 |packageIdentifier|String|The PackageIdentifier from the WinGet source repository REST API. This also maps to the Id when using the WinGet client command line application. Required at creation time, cannot be modified on existing objects.|
 |installExperience|[winGetAppInstallExperience](../resources/intune-apps-wingetappinstallexperience.md)|The install experience settings associated with this application, which are used to ensure the desired install experiences on the target device are taken into account. This includes the account type (System or User) that actions should be run as on target devices. Required at creation time.|
 
@@ -102,6 +103,7 @@ Here is a JSON representation of the resource.
   "dependentAppCount": 1024,
   "supersedingAppCount": 1024,
   "supersededAppCount": 1024,
+  "manifestHash": "String",
   "packageIdentifier": "String",
   "installExperience": {
     "@odata.type": "microsoft.graph.winGetAppInstallExperience",
