@@ -7,21 +7,21 @@ author: RabebOthmani
 
 # Work with Graph Explorer
 
-[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you learn about Microsoft Graph APIs. It has a variety of features to help you on your journey. This article describes Graph Explorer's main interface areas and how to use some of the important features.
+[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you learn about Microsoft Graph APIs. It has a variety of features to help you on your journey. This article describes some of the important features of Graph Explorer and how to use them.
 
 For an overview, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
 
 ## Header
 
-The header allows you to sign in, view the tenant you are using and access your settings, helpful links and the survey to provide feedback for the tool.
+From the top navigation, you can sign in, view the tenant you're using, access your settings, and find helpful links and a feedback mechanism.
 
 ![Screenshot of Graph Explorer header](./images/header-screenshot.png)
 
-- **The avatar** : sign in, view your profile, consent to permissions, switch accounts or sign out of your account. For more on consenting to permissions, see [Consent to permissions](#consent-to-permissions).
-- **Feedback** : If you wish to provide feedback, you can fill in the survey form.
-- **Help** : Access useful links such as the documentation or the GitHub repo for Graph Explorer.
-- **Settings** : Access Graph Explorer settings to change the interface theme or to get a free instant sandbox preconfigured with sample data packs
-- **Tenant** : View the tenant you are currently using.
+- **Tenant**: View the tenant you are currently using.
+- **Settings**: Access Graph Explorer settings to change the interface theme or to get a free instant sandbox preconfigured with sample data packs.
+- **Help**: Access useful links such as the documentation or the GitHub repo for Graph Explorer.
+- **Feedback**: If you wish to provide feedback, you can fill in the survey form.
+- **Profile avatar**: Sign in, view your profile, consent to permissions, switch accounts or sign out of your account. For more on consenting to permissions, see [Consent to permissions](#consent-to-permissions).
 
 ### Consent to permissions
 
@@ -38,45 +38,45 @@ To consent to permissions:
 
 The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions. If permissions are missing for a query, the **Consent to permissions** option in the avatar gear contains the list of all available permissions:
 
-1. Go the avatar gear and choose the **Consent to permissions** option. This option contains the list of all available permissions.
+1. Click on the profile avatar and choose the **Consent to permissions** option. This option contains the list of all available permissions.
 2. From the list of all the permissions, consent to the ones you want.
 
 ![Screenshot of Graph Explorer with the Select permissions option highlighted](./images/consent-permissions.png)
 
-## Sidebar
+## Left pane
 
-The sidebar allows you to access the main features of Graph Explorer:
+The left pane allows you to access the main features of Graph Explorer:
 
-- [Sample queries](#get-started-with-microsoft-graph-apis)
-- [Resources](#explore-all-of-the-microsoft-graph-resources)
-- [History](#store-and-share-queries)
+- [Sample queries](#sample-queries)
+- [Resources](#resources)
+- [History](#history)
 
-### Get started with Microsoft Graph APIs
+### Sample queries
 
-To get started with Microsoft Graph and get yourself familiar with Graph Explorer, the **Sample queries** feature provides a set of queries categorized by service that you can select and run.
+The **Sample queries** tab provides a set of queries categorized by service that you can select and run to help you get started with Microsoft Graph API calls.
 
 ![Screenshot of the sample queries tab](./images/sample-queries-screenshot.png)
 
-The query box will be populated by the selected query. You can then make the request by clicking the Run query button.
+When you select a query, the selected query populates the query box. To try the request, choose **Run query**.
 
-### Explore all of the Microsoft Graph resources
+### Resources
 
-The Resources feature allows you to explore the resources on Microsoft Graph in their entirety, on both v1.0 and beta versions. Navigate the tree to browse for a specific resource or, alternatively, use the search bar to find it.
+Use the **Resources** tab to explore Microsoft Graph resources in the beta and v1.0 endpoints. Browse the list of resources or use the search bar to search for a specific resource.
 
 ![Screenshot of the resources tab](./images/resources-tab-screenshot.png)
 
-With the **Resources** tab you can export a collection of resources into a Postman collection:
+From the **Resources** tab, you can export a collection of resources into a Postman collection by doing the following:
 
 1. From the kebab menu next to the resource, select **Add to collection**.
-1. Once you complete adding resources, click on the **Preview collection** button.
-1. From the collection view, you can review the resources and remove any if you chose to.
-1. Click on **Download Postman collection** to download your collection.
+1. When you're finished adding resources, choose **Preview collection**.
+1. From the collection view, you can review the resources you selected and remove any if you choose.
+1. Choose **Download Postman collection**.
 
 ![Screenshot of the preview collection screen](./images/download-collection-screenshot.png)
 
-### Store and share queries
+### History
 
-All queries you run in Graph Explorer are saved for 30 days in the **History** tab. In the **History** tab, you can:
+All queries you run in Graph Explorer are saved for 30 days in the **History** tab. From the **History** tab, you can:
 
 - Export all history items in **.har** format.
 - Delete all history items.
@@ -87,38 +87,43 @@ All queries you run in Graph Explorer are saved for 30 days in the **History** t
 
 ![Screenshot of the History tab](./images/history-tab-screenshot.png)
 
-To share queries that you run, select the **Share** button situated next to the Run query button, and then select **Copy**. This copies a shareable link that allows others to see your query and the results.
+To share queries that you run, select the **Share** button situated next to the **Run query** button, and then select **Copy**. This copies a shareable link that allows others to see your query and the results.
 
 ![Screenshot of Graph Explorer with the Share and Copy options highlighted](./images/share-query-screenshot.png)
 
-## Main work area
+## Query area
 
-This area is where you will be spending most of your time on Graph Explorer. This area has everything you need to run a request:
+Use the query area to run requests and see the responses. The query area includes the following elements:
 
-- **Query box**: you can manually build your query.
-- **HTTP verbs**: a dropdown list of the HTTP methods.
-- **API version**: a dropdown list of the API versions available publicly.
-- **Modify permissions**: you need to consent to the right permissions to be able to run a query. For details, see [consenting to permissions](#consent-to-permissions).
-- **Access token**: this tab shows your access token when you're signed in. You can copy the token if you need to use it in your favorite REST client application.
+- **HTTP methods**: A dropdown list of the HTTP methods.
+- **API version**: A dropdown list of the API versions available publicly.
+- **Query box**: A bar where you can manually build your query, or see the autopopulated query if you selected one from the left pane.
+- **Request body**: A space to write the request body in JSON format.
+- **Request headers**: A section to add headers to your request by specifying the key and value.
+- **Modify permissions**: You need to consent to the right permissions to be able to run a query. For details, see [consenting to permissions](#consent-to-permissions).
+- **Access token**: This tab shows your access token when you're signed in. You can copy the token if you need to use it in your favorite REST client application.
 
- ![Screenshot of Graph Explorer highlighting the main work area](./images/run-query-tabs-screenshot.png)
+ ![Screenshot of Graph Explorer highlighting the query area](./images/run-query-tabs-screenshot.png)
 
-This is also where you see:
+When you run a query, you will see a **Response preview** and **Response headers** in the response pane.
 
-- **Response preview**: You can see the response body here.
-- **Response headers**: You can see the response headers here.
+In addition to the response, this pane also includes:
 
-On top of query related features, the main work area also contains:
-
-- [Microsoft Graph Toolkit Adaptive cards integration](#microsoft-graph-toolkit-integration)
-- [Adaptive cards integration](#adaptive-cards-integration)
 - [Code snippets](#leverage-the-power-of-the-client-libraries)
+- [Microsoft Graph Toolkit integration](#microsoft-graph-toolkit-integration)
+- [Adaptive cards integration](#adaptive-cards-integration)
+
+### Leverage the power of the client libraries
+
+For each REST API query that you select or enter in Graph Explorer, you can find how to make that call in each of the supported languages: C#, Java, JavaScript, Go and PowerShell.
+
+![Screenshot of Graph Explorer with the code snippets tab highlighted](./images/code-snippets-screenshot.png)
 
 ### Microsoft Graph Toolkit integration
 
 The [Microsoft Graph Toolkit](../toolkit/overview.md) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built-in providers that authenticate with and fetch data from Microsoft Graph.
 
-Graph Explorer allows you to visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the **Toolkit component** tab indicates that the Toolkit provides a component for the currently specified REST API query in Graph Explorer. You can conveniently copy the code for the component to your app.
+Graph Explorer allows you to visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the **toolkit component** tab indicates that the Toolkit provides a component for the currently specified REST API query in Graph Explorer. You can conveniently copy the code for the component to your app.
 
 ![Screenshot showing the Toolkit components tab](./images/toolkit-screenshot.png)
 
@@ -127,12 +132,6 @@ Graph Explorer allows you to visualize Microsoft Graph Toolkit components that c
 [Adaptive cards](https://adaptivecards.io/) are platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange. A blue dot on the **Adaptive cards** tab indicates that an adaptive card is available for the selected query.
 
 ![Screenshot of the adaptive cards tab in Graph Explorer with the response details highlighted](./images/adaptive-cards-screenshot.png)
-
-### Leverage the power of the client libraries
-
-For each REST API query that you select or enter in Graph Explorer, you can find how to make that call in each of the supported languages: C#, Java, JavaScript, Go and PowerShell.
-
-![Screenshot of Graph Explorer with the code snippets tab highlighted](./images/code-snippets-screenshot.png)
 
 ## Next steps
 
