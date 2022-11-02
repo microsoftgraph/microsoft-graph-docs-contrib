@@ -25,7 +25,16 @@ From the top navigation, you can sign in, view the tenant you're using, access y
 
 ### Consent to permissions
 
-The user or administrator must grant Graph Explorer the correct permissions by using a consent process to access data in Microsoft Graph. You can consent to permissions in Graph Explorer by choosing either the **Modify permissions** tab or the **Consent to permissions** option under the profile avatar when you’re signed in. The **Modify permissions** tab lists all the permissions that might let you run the query in the address bar. When possible, choose the least privileged permission.
+The user or administrator must grant Graph Explorer the correct permissions by using a consent process to access data in Microsoft Graph. You can consent to permissions in Graph Explorer by choosing either the **Modify permissions** tab or the **Consent to permissions** option under the profile avatar when you’re signed in.
+
+The **Consent to permissions** option in the profile avatar contains the list of all available permissions:
+
+1. Click on the profile avatar and choose the **Consent to permissions** option. This option contains the list of all available permissions.
+2. From the list of all the permissions, consent to the ones you want.
+
+![Screenshot of Graph Explorer with the Select permissions option highlighted](./images/consent-permissions.png)
+
+The **Modify permissions** tab lists all the permissions that might let you run the query in the address bar. When possible, choose the least privileged permission.
 
 To consent to permissions:
 
@@ -36,12 +45,7 @@ To consent to permissions:
 
 ![Screenshot of Graph Explorer with the steps to consent to permissions highlighted](./images/modify-permissions-screenshot.png)
 
-The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions. If permissions are missing for a query, the **Consent to permissions** option in the avatar gear contains the list of all available permissions:
-
-1. Click on the profile avatar and choose the **Consent to permissions** option. This option contains the list of all available permissions.
-2. From the list of all the permissions, consent to the ones you want.
-
-![Screenshot of Graph Explorer with the Select permissions option highlighted](./images/consent-permissions.png)
+> Note: The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions.
 
 ## Left pane
 
