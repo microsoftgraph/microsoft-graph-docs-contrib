@@ -501,6 +501,8 @@ items:
             href: search-concept-aggregation.md
           - name: Request spelling corrections
             href: search-concept-speller.md
+          - name: Collapse search results
+            href: search-concept-collapse.md
           - name: Trim duplicate search results
             href: search-concept-trim-duplicate.md
           - name: Use query templates
