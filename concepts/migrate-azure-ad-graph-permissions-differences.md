@@ -10,9 +10,9 @@ ms.prod: "applications"
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Microsoft Graph cannot issue access tokens using Azure AD Graph permissions. Instead, you must grant Microsoft Graph permissions to your app before it can be authorized to access data through Microsoft Graph.
+An app that is granted Azure AD Graph permissions can only access Azure AD Graph resources. It can't access Microsoft Graph resources. For the app to access Microsoft Graph resources, you must grant it Microsoft Graph permissions.
 
-While the permission strings may be the same across both APIs, they have different identifiers. However, similar to Azure AD Graph, Microsoft Graph also exposes both application and delegated permissions. In addition, admin consent is always required for application permissions.
+While the permission strings may be the same in both Azure AD Graph and Microsoft Graph, they have different identifiers. However, similar to Azure AD Graph, Microsoft Graph also exposes both application and delegated permissions. In addition, admin consent is always required for application permissions.
 
 The article provides a mapping of Azure AD Graph to Microsoft Graph permissions to help you migrate your apps.
 
@@ -302,10 +302,9 @@ Not applicable.
 
 Compared to Azure AD Graph, Microsoft Graph exposes granular permissions that are scoped to specific resources. This granularity helps you to assign the minimum permissions that your app requires for the API operations, helping you to maintain a good security posture for your app.
 
-For example, to read user profiles through Azure AD Graph in app-only scenarios, you had to grant the app either the *Directory.Read.All* or the *Directory.ReadWrite.All* Azure AD Graph permission. Unfortunately, these permissions also allowed your app to read all the groups, apps, and policies in your tenant. On the other hand, in Microsoft Graph, you need only assign your app the *User.Read.All* Microsoft Graph app-only permission, limiting the app to only reading the user profiles.
+For example, to read user profiles through Azure AD Graph in app-only scenarios, you had to grant the app either the *Directory.Read.All* or the *Directory.ReadWrite.All* Azure AD Graph permission. Unfortunately, these permissions also allowed your app to read all the groups, apps, and policies in your tenant. On the other hand, in Microsoft Graph, you need only assign your app the *User.Read.All* Microsoft Graph app-only permission, limiting the app to only reading user profiles.
 
 ## Next Steps
 
 - Learn how to [examine API differences](migrate-azure-ad-graph-audit-api-use.md) in your app between Azure AD Graph and Microsoft graph.
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
-
