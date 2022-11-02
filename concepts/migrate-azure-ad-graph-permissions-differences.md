@@ -132,7 +132,7 @@ Not applicable.
 |--------------------------|---------------------------------------------|---------------------------------------------|
 | Permission ID           | a42657d6-7f20-40e3-b6f0-cee03008a62a       | 0e263e50-5827-48a4-b97c-d940288653c7       |
 | Display String          | Access the directory as the signed-in user | Access the directory as the signed-in user |
-| Admin consent required? | No                                         | Yes                                        |
+| Admin consent required? | Yes                                        | Yes                                        |
 
 
 ### Application
@@ -300,9 +300,9 @@ Not applicable.
 
 ## Enforce the principle of least privilege
 
-Compared to Azure AD Graph, Microsoft Graph exposes granular permissions that are scoped to specific resources. This granularity helps you to assign the minimum permissions that your app requires for the API operations, helping you to maintain a good security posture for your app.
+The least privileged permission for a specific scenario might be different between Azure AD Graph and Microsoft Graph. When migrating, analyze whether you also need to migrate to more narrowly scoped Microsoft Graph permissions to maintain least privilege.
 
-For example, to read user profiles through Azure AD Graph in app-only scenarios, you had to grant the app either the *Directory.Read.All* or the *Directory.ReadWrite.All* Azure AD Graph permission. Unfortunately, these permissions also allowed your app to read all the groups, apps, and policies in your tenant. On the other hand, in Microsoft Graph, you need only assign your app the *User.Read.All* Microsoft Graph app-only permission, limiting the app to only reading user profiles.
+For example, on Azure AD Graph, reading users in app-only scenarios requires the *Directory.Read.All* permission. This permission also allows your app to read all the groups, apps, and some policies in your tenant. However, on Microsoft Graph, reading users in app-only scenarios requires only the *User.Read.All* permission.
 
 ## Next Steps
 
