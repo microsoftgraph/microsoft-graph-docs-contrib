@@ -98,7 +98,7 @@ Use the query area to run requests and see the responses. The query area include
 - **HTTP methods**: A dropdown list of the HTTP methods.
 - **API version**: A dropdown list of the API versions available publicly.
 - **Query box**: A bar where you can manually build your query, or see the autopopulated query if you selected one from the left pane.
-- **Request body**: A space to write the request body in JSON format.
+- **Request body**: A space to write the request body in JSON format or MIME content, according to the desired request.
 - **Request headers**: A section to add headers to your request by specifying the key and value.
 - **Modify permissions**: You need to consent to the right permissions to be able to run a query. For details, see [consenting to permissions](#consent-to-permissions).
 - **Access token**: This tab shows your access token when you're signed in. You can copy the token if you need to use it in your favorite REST client application.
