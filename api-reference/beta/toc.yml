@@ -2548,6 +2548,8 @@ items:
               href: api/intune-apps-macoslobapp-delete.md
             - name: Update
               href: api/intune-apps-macoslobapp-update.md
+          - name: macOS LOB app assignment settings
+            href: resources/intune-apps-macoslobappassignmentsettings.md
           - name: macOS LOB child app
             href: resources/intune-apps-macoslobchildapp.md
           - name: macOS mdatp app
@@ -2563,6 +2565,19 @@ items:
               href: api/intune-apps-macosmdatpapp-delete.md
             - name: Update
               href: api/intune-apps-macosmdatpapp-update.md
+          - name: macOS microsoft defender app
+            href: resources/intune-apps-macosmicrosoftdefenderapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macosmicrosoftdefenderapp-list.md
+            - name: Get
+              href: api/intune-apps-macosmicrosoftdefenderapp-get.md
+            - name: Create
+              href: api/intune-apps-macosmicrosoftdefenderapp-create.md
+            - name: Delete
+              href: api/intune-apps-macosmicrosoftdefenderapp-delete.md
+            - name: Update
+              href: api/intune-apps-macosmicrosoftdefenderapp-update.md
           - name: macOS microsoft edge app
             href: resources/intune-apps-macosmicrosoftedgeapp.md
             items:
@@ -8197,6 +8212,8 @@ items:
               href: api/intune-devices-manageddevice-movedevicestoou.md
             - name: removeDeviceFirmwareConfigurationInterfaceManagement action
               href: api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md
+            - name: initiateMobileDeviceManagementKeyRecovery action
+              href: api/intune-devices-manageddevice-initiatemobiledevicemanagementkeyrecovery.md
             - name: downloadAppDiagnostics action
               href: api/intune-devices-manageddevice-downloadappdiagnostics.md
           - name: Managed device architecture
@@ -8723,6 +8740,8 @@ items:
               href: api/intune-devices-userexperienceanalyticsdevicescope-update.md
             - name: triggerDeviceScopeAction action
               href: api/intune-devices-userexperienceanalyticsdevicescope-triggerdevicescopeaction.md
+          - name: User experience analytics device scope summary
+            href: resources/intune-devices-userexperienceanalyticsdevicescopesummary.md
           - name: User experience analytics device scores
             href: resources/intune-devices-userexperienceanalyticsdevicescores.md
             items:
@@ -8870,15 +8889,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsoverview-get.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsoverview-update.md
-          - name: User experience analytics regression summary
-            href: resources/intune-devices-userexperienceanalyticsregressionsummary.md
-            items:
-            - name: Get
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-get.md
-            - name: Update
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-update.md
-            - name: summarizeDeviceRegressionPerformance
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance.md
           - name: User experience analytics remote connection
             href: resources/intune-devices-userexperienceanalyticsremoteconnection.md
             items:
@@ -9128,6 +9138,8 @@ items:
               href: api/intune-mam-devicemanagementreports-update.md
             - name: getMobileApplicationManagementAppRegistrationSummaryReport action
               href: api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappregistrationsummaryreport.md
+            - name: getMobileApplicationManagementAppConfigurationReport action
+              href: api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappconfigurationreport.md
           - name: Device platform type
             href: resources/intune-wip-deviceplatformtype.md
           - name: Intune branding profile
@@ -9589,6 +9601,8 @@ items:
               href: api/intune-onboarding-devicemanagementpartner-delete.md
             - name: Update
               href: api/intune-onboarding-devicemanagementpartner-update.md
+            - name: terminate action
+              href: api/intune-onboarding-devicemanagementpartner-terminate.md
           - name: Device management partner app type
             href: resources/intune-onboarding-devicemanagementpartnerapptype.md
           - name: Device management partner assignment
@@ -10118,8 +10132,6 @@ items:
             href: resources/intune-shared-keyusages.md
           - name: Key/value pair
             href: resources/intune-shared-keyvaluepair.md
-          - name: macOS LOB app assignment settings
-            href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
             href: resources/intune-shared-macosvppappassignmentsettings.md
           - name: Managed device owner type
@@ -13183,6 +13195,8 @@ items:
               href: api/accesspackage-delete-incompatiblegroup.md
             - name: List access packages incompatible with
               href: api/accesspackage-list-accesspackagesincompatiblewith.md
+            - name: Move to catalog
+              href: api/accesspackage-movetocatalog.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:

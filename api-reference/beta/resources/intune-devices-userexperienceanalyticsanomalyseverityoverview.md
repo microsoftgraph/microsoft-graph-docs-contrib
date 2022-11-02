@@ -24,7 +24,6 @@ The user experience analytics anomaly severity overview entity contains the coun
 |mediumSeverityAnomalyCount|Int32|The number of medium severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
 |highSeverityAnomalyCount|Int32|The number of high severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
 |informationalSeverityAnomalyCount|Int32|The number of informational severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
-|otherSeverityAnomalyCount|Int32|The number of anomalies which have been detected with undefined severity. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None
@@ -42,8 +41,7 @@ Here is a JSON representation of the resource.
   "lowSeverityAnomalyCount": 1024,
   "mediumSeverityAnomalyCount": 1024,
   "highSeverityAnomalyCount": 1024,
-  "informationalSeverityAnomalyCount": 1024,
-  "otherSeverityAnomalyCount": 1024
+  "informationalSeverityAnomalyCount": 1024
 }
 ```
 

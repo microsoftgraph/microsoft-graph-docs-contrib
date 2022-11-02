@@ -60,13 +60,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 251
+Content-Length: 291
 
 {
   "value": {
     "@odata.type": "microsoft.graph.comanagementEligibleDevicesSummary",
     "comanagedCount": 14,
     "eligibleCount": 13,
+    "scheduledForEnrollmentCount": 11,
     "eligibleButNotAzureAdJoinedCount": 0,
     "needsOsUpdateCount": 2,
     "ineligibleCount": 15
