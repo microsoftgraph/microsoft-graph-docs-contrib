@@ -45,7 +45,8 @@ To consent to permissions:
 
 ![Screenshot of Graph Explorer with the steps to consent to permissions highlighted](./images/modify-permissions-screenshot.png)
 
-> Note: The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions.
+> [!NOTE] 
+> The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions.
 
 ## Left pane
 
