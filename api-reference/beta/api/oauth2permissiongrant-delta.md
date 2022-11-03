@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|oauth2permissiongrant | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -37,12 +37,12 @@ GET /oauth2PermissionGrants/delta
 
 ## Query parameters
 
-Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter 
-(other than `$deltatoken` and `$skiptoken`), you must specify 
-it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
-into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. 
-You only need to specify any query parameters once up front. 
-In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. That URL already 
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter
+(other than `$deltatoken` and `$skiptoken`), you must specify
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters
+into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
+You only need to specify any query parameters once up front.
+In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. That URL already
 includes the encoded parameters.
 
 | Query parameter	   | Type	|Description|
@@ -117,12 +117,12 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
-<!-- { 
+<!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
-  "isCollection": true 
-} --> 
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
