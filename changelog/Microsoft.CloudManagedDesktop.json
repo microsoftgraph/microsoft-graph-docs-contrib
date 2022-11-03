@@ -2,14 +2,130 @@
     "changelog": [
         {
             "ChangeList": [
-              {
-                "Id": "a33b829e-5c61-4ee8-9737-5ab14fe3f7bf",
-                "ApiChange": "Property",
-                "ChangedApiName": "supportedSolution",
-                "ChangeType": "Addition",
-                "Description": "Added the **supportedSolution** property to the [cloudPcSupportedRegion](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta) resource.",
-                "Target": "cloudPcSupportedRegion"
-              }
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Enumeration",
+                    "ChangedApiName": "cloudPcExportJobStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcExportJobStatus** enumeration type.",
+                    "Target": "cloudPcExportJobStatus"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Enumeration",
+                    "ChangedApiName": "cloudPcReportName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcReportName** enumeration type.",
+                    "Target": "cloudPcReportName"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcExportJob",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcExportJob](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcExportJob?view=graph-rest-beta) resource",
+                    "Target": "cloudPcExportJob"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcReports",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "reports",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **reports** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getDailyAggregatedRemoteConnectionReports",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getDailyAggregatedRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getRemoteConnectionHistoricalReports",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getRemoteConnectionHistoricalReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getTotalAggregatedRemoteConnectionReports",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getTotalAggregatedRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getRealTimeRemoteConnectionLatency",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getRealTimeRemoteConnectionLatency](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getRealTimeRemoteConnectionStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getRealTimeRemoteConnectionStatus](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                }
+            ],
+            "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-10-19T00:47:20.8868626Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcCrossCloudGovernmentOrganizationMapping",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcCrossCloudGovernmentOrganizationMapping](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcCrossCloudGovernmentOrganizationMapping?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcCrossCloudGovernmentOrganizationMapping"
+                },
+                {
+                    "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "crossCloudGovernmentOrganizationMapping",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **crossCloudGovernmentOrganizationMapping** navigation property to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-10-17T09:33:40.1525853Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "a33b829e-5c61-4ee8-9737-5ab14fe3f7bf",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "supportedSolution",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **supportedSolution** property to the [cloudPcSupportedRegion](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSupportedRegion"
+                }
             ],
             "Id": "a33b829e-5c61-4ee8-9737-5ab14fe3f7bf",
             "Cloud": "Prod",
@@ -66,41 +182,41 @@
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T09:01:07.071541Z",
             "WorkloadArea": "Devices and apps",
-            "SubArea": "Cloud PC"        
+            "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
                 {
-                  "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
-                  "ApiChange": "EnumType",
-                  "ChangedApiName": "cloudPcExternalPartnerStatus",
-                  "ChangeType": "Addition",
-                  "Description": "Added the **cloudPcExternalPartnerStatus** enumeration type.",
-                  "Target": "cloudPcExternalPartnerStatus"
+                    "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcExternalPartnerStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcExternalPartnerStatus** enumeration type.",
+                    "Target": "cloudPcExternalPartnerStatus"
                 },
                 {
-                  "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
-                  "ApiChange": "Resource",
-                  "ChangedApiName": "cloudPcExternalPartnerSetting",
-                  "ChangeType": "Addition",
-                  "Description": "Added the [cloudPcExternalPartnerSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcexternalpartnersetting?view=graph-rest-beta) resource and supported methods.",
-                  "Target": "cloudPcExternalPartnerSetting"
+                    "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcExternalPartnerSetting",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcExternalPartnerSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcexternalpartnersetting?view=graph-rest-beta) resource and supported methods.",
+                    "Target": "cloudPcExternalPartnerSetting"
                 },
                 {
-                  "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
-                  "ApiChange": "Relationship",
-                  "ChangedApiName": "externalPartnerSettings",
-                  "ChangeType": "Addition",
-                  "Description": "Added the **externalPartnerSettings** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
-                  "Target": "virtualEndpoint"
+                    "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "externalPartnerSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **externalPartnerSettings** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
                 }
-              ],
-              "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
-              "Cloud": "Prod",
-              "Version": "beta",
-              "CreatedDateTime": "2022-08-01T05:50:11.4106474Z",
-              "WorkloadArea": "Devices and apps",
-              "SubArea": "Cloud PC"
+            ],
+            "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-08-01T05:50:11.4106474Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
@@ -128,24 +244,24 @@
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
-        { 
+        {
             "ChangeList": [
-              {
-                "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
-                "ApiChange": "Method",
-                "ChangedApiName": "updateAdDomainPassword",
-                "ChangeType": "Deprecation",
-                "Description": "Deprecated the PATCH syntax for the [updateAdDomainPassword](https://learn.microsoft.com/en-us/graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta) method.",
-                "Target": "updateaddomainpassword"
-              },
-              {
-                "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
-                "ApiChange": "Method",
-                "ChangedApiName": "updateAdDomainPassword",
-                "ChangeType": "Addition",
-                "Description": "Added the POST syntax to the [updateAdDomainPassword](https://learn.microsoft.com/en-us/graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta) method.",
-                "Target": "updateaddomainpassword"
-              }
+                {
+                    "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "updateAdDomainPassword",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the PATCH syntax for the [updateAdDomainPassword](https://learn.microsoft.com/en-us/graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta) method.",
+                    "Target": "updateaddomainpassword"
+                },
+                {
+                    "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "updateAdDomainPassword",
+                    "ChangeType": "Addition",
+                    "Description": "Added the POST syntax to the [updateAdDomainPassword](https://learn.microsoft.com/en-us/graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta) method.",
+                    "Target": "updateaddomainpassword"
+                }
             ],
             "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
             "Cloud": "Prod",
@@ -155,22 +271,22 @@
             "SubArea": "Cloud PC"
         },
         {
-          "ChangeList": [
-            {
-              "Id": "981fed74-2b07-413f-a118-ac16c4395696",
-              "ApiChange": "Property",
-              "ChangedApiName": "alternateResourceUrl",
-              "ChangeType": "Addition",
-              "Description": "Added the **alternateResourceUrl** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
-              "Target": "cloudPcOnPremisesConnection"
-            }
-          ],
-          "Id": "981fed74-2b07-413f-a118-ac16c4395696",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2022-06-20T07:19:17.8395506Z",
-          "WorkloadArea": "Devices and apps",
-          "SubArea": "Cloud PC"
+            "ChangeList": [
+                {
+                    "Id": "981fed74-2b07-413f-a118-ac16c4395696",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "alternateResourceUrl",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **alternateResourceUrl** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcOnPremisesConnection"
+                }
+            ],
+            "Id": "981fed74-2b07-413f-a118-ac16c4395696",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-06-20T07:19:17.8395506Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
@@ -191,56 +307,56 @@
             "SubArea": "Cloud PC"
         },
         {
-          "ChangeList": [
-            {
-              "Id": "1df1712d-52c5-4891-9de1-bdecb1193b94",
-              "ApiChange": "Property",
-              "ChangedApiName": "windowsSettings",
-              "ChangeType": "Addition",
-              "Description": "Added the **windowsSettings** property to [cloudPcOrganizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
-              "Target": "cloudPcOrganizationSettings"
-            }
-          ],
-          "Id": "1df1712d-52c5-4891-9de1-bdecb1193b94",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2022-04-07T08:30:16.9388044Z",
-          "WorkloadArea": "Devices and apps",
-          "SubArea": "Cloud PC"
+            "ChangeList": [
+                {
+                    "Id": "1df1712d-52c5-4891-9de1-bdecb1193b94",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "windowsSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **windowsSettings** property to [cloudPcOrganizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcOrganizationSettings"
+                }
+            ],
+            "Id": "1df1712d-52c5-4891-9de1-bdecb1193b94",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-04-07T08:30:16.9388044Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
         },
         {
-          "ChangeList": [
-            {
-              "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
-              "ApiChange": "EnumType",
-              "ChangedApiName": "cloudPcManagementService",
-              "ChangeType": "Addition",
-              "Description": "Added the **cloudPcManagementService** enumeration type.",
-              "Target": "cloudPcManagementService"
-            },
-            {
-              "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
-              "ApiChange": "Property",
-              "ChangedApiName": "managedBy",
-              "ChangeType": "Addition",
-              "Description": "Added the **managedBy** property to [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
-              "Target": "cloudPcOnPremisesConnection"
-            },
-            {
-                "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
-                "ApiChange": "Property",
-                "ChangedApiName": "inUse",
-                "ChangeType": "Change",
-                "Description": "Changed the **inUse** property in the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) to nullable",
-                "Target": "cloudPcOnPremisesConnection"
-            }
-          ],
-          "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
-          "Cloud": "prd",
-          "Version": "beta",
-          "CreatedDateTime": "2022-03-17T06:57:48.3702162Z",
-          "WorkloadArea": "Devices and apps",
-          "SubArea": "Cloud PC"
+            "ChangeList": [
+                {
+                    "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcManagementService",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcManagementService** enumeration type.",
+                    "Target": "cloudPcManagementService"
+                },
+                {
+                    "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "managedBy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **managedBy** property to [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcOnPremisesConnection"
+                },
+                {
+                    "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "inUse",
+                    "ChangeType": "Change",
+                    "Description": "Changed the **inUse** property in the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) to nullable",
+                    "Target": "cloudPcOnPremisesConnection"
+                }
+            ],
+            "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-03-17T06:57:48.3702162Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
@@ -320,22 +436,22 @@
         },
         {
             "ChangeList": [
-              {
-                "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
-                "ApiChange": "Property",
-                "ChangedApiName": "subscriptionDisplayName",
-                "ChangeType": "Addition",
-                "Description": "Added the **subscriptionDisplayName** property to the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
-                "Target": "cloudPcSourceDeviceImage"
-              },
-              {
-                "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
-                "ApiChange": "Property",
-                "ChangedApiName": "subscriptionId",
-                "ChangeType": "Addition",
-                "Description": "Added the **subscriptionId** property to the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
-                "Target": "cloudPcSourceDeviceImage"
-              }
+                {
+                    "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "subscriptionDisplayName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **subscriptionDisplayName** property to the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSourceDeviceImage"
+                },
+                {
+                    "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "subscriptionId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **subscriptionId** property to the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSourceDeviceImage"
+                }
             ],
             "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
             "Cloud": "prd",
@@ -346,7 +462,8 @@
         },
         {
             "ChangeList": [
-                {"Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "organizationSettings",
                     "ChangeType": "Addition",
@@ -567,7 +684,7 @@
                     "Description": "Added the [restoreCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 }
-              ],
+            ],
             "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
             "Cloud": "Prod",
             "Version": "beta",
@@ -644,31 +761,31 @@
                     "ChangeType": "Addition",
                     "Description": "Added the [cloudPcForensicStorageAccount]((https://learn.microsoft.com/en-us/graph/api/resources/cloudpcforensicstorageaccount?view=graph-rest-beta) resource.",
                     "Target": "cloudPcForensicStorageAccount"
-                    },
-                    {
+                },
+                {
                     "Id": "112e8692-d578-4f1f-b28a-b2d11dc0a5f3",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcSubscription",
                     "ChangeType": "Addition",
                     "Description": "Added the [cloudPcSubscription](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsubscription?view=graph-rest-beta) resource.",
                     "Target": "cloudPcSubscription"
-                    },
-                    {
+                },
+                {
                     "Id": "112e8692-d578-4f1f-b28a-b2d11dc0a5f3",
                     "ApiChange": "Method",
                     "ChangedApiName": "getStorageAccounts",
                     "ChangeType": "Addition",
                     "Description": "Added the [getStorageAccounts](https://learn.microsoft.com/en-us/graph/api/cloudpcsnapshot-getstorageaccounts?view=graph-rest-beta) method to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
                     "Target": "cloudPcSnapshot"
-                    },
-                    {
+                },
+                {
                     "Id": "112e8692-d578-4f1f-b28a-b2d11dc0a5f3",
                     "ApiChange": "Method",
                     "ChangedApiName": "getSubscriptions",
                     "ChangeType": "Addition",
                     "Description": "Added the [getSubscriptions](https://learn.microsoft.com/en-us/graph/api/cloudpcsnapshot-getsubscriptions?view=graph-rest-beta) method to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
                     "Target": "cloudPcSnapshot"
-                    }
+                }
             ],
             "Id": "112e8692-d578-4f1f-b28a-b2d11dc0a5f3",
             "Cloud": "prd",
@@ -2221,46 +2338,46 @@
         },
         {
             "ChangeList": [
-              {
-                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
-                "ApiChange": "Property",
-                "ChangedApiName": "alternateResourceUrl",
-                "ChangeType": "Addition",
-                "Description": "Added the **alternateResourceUrl** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                "Target": "cloudPcProvisioningPolicy"
-              },
-              {
-                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
-                "ApiChange": "Property",
-                "ChangedApiName": "cloudPcGroupDisplayName",
-                "ChangeType": "Addition",
-                "Description": "Added the **cloudPcGroupDisplayName** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                "Target": "cloudPcProvisioningPolicy"
-              },
-              {
-                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
-                "ApiChange": "Property",
-                "ChangedApiName": "gracePeriodInHours",
-                "ChangeType": "Addition",
-                "Description": "Added the **gracePeriodInHours** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                "Target": "cloudPcProvisioningPolicy"
-              },
-              {
-                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
-                "ApiChange": "Property",
-                "ChangedApiName": "localAdminEnabled",
-                "ChangeType": "Addition",
-                "Description": "Added the **localAdminEnabled** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                "Target": "cloudPcProvisioningPolicy"
-              },
-              {
-                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
-                "ApiChange": "Property",
-                "ChangedApiName": "managedBy",
-                "ChangeType": "Addition",
-                "Description": "Added the **managedBy** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                "Target": "cloudPcProvisioningPolicy"
-              }
+                {
+                    "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "alternateResourceUrl",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **alternateResourceUrl** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "cloudPcGroupDisplayName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcGroupDisplayName** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "gracePeriodInHours",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **gracePeriodInHours** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "localAdminEnabled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **localAdminEnabled** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "managedBy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **managedBy** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                }
             ],
             "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
             "Cloud": "prd",
@@ -2271,22 +2388,22 @@
         },
         {
             "ChangeList": [
-              {
-                "Id": "f9975176-211a-42df-88a5-0eae3501a7ac",
-                "ApiChange": "Member",
-                "ChangedApiName": "endpointConnectivityCheckAzureADUrlNotAllowListed",
-                "ChangeType": "Addition",
-                "Description": "Added the `endpointConnectivityCheckAzureADUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
-                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
-              },
-              {
-                "Id": "f9975176-211a-42df-88a5-0eae3501a7ac",
-                "ApiChange": "Member",
-                "ChangedApiName": "endpointConnectivityCheckLocaleUrlNotAllowListed",
-                "ChangeType": "Addition",
-                "Description": "Added the `endpointConnectivityCheckLocaleUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
-                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
-              }
+                {
+                    "Id": "f9975176-211a-42df-88a5-0eae3501a7ac",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "endpointConnectivityCheckAzureADUrlNotAllowListed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `endpointConnectivityCheckAzureADUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "f9975176-211a-42df-88a5-0eae3501a7ac",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "endpointConnectivityCheckLocaleUrlNotAllowListed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `endpointConnectivityCheckLocaleUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
             ],
             "Id": "f9975176-211a-42df-88a5-0eae3501a7ac",
             "Cloud": "Prod",
@@ -2405,14 +2522,14 @@
         },
         {
             "ChangeList": [
-              {
-                "Id": "b653c0f4-bbc5-4236-b6a3-e440ac4565ab",
-                "ApiChange": "Property",
-                "ChangedApiName": "enableMEMAutoEnroll",
-                "ChangeType": "Addition",
-                "Description": "Added the `enableMEMAutoEnroll` property to the [cloudPcOrganizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
-                "Target": "cloudPcOrganizationSettings"
-              }
+                {
+                    "Id": "b653c0f4-bbc5-4236-b6a3-e440ac4565ab",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "enableMEMAutoEnroll",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `enableMEMAutoEnroll` property to the [cloudPcOrganizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcOrganizationSettings"
+                }
             ],
             "Id": "b653c0f4-bbc5-4236-b6a3-e440ac4565ab",
             "Cloud": "Prod",
@@ -2441,14 +2558,14 @@
         },
         {
             "ChangeList": [
-              {
-                "Id": "f3def7ad-015a-48bc-aaf2-b944069124cd",
-                "ApiChange": "Method",
-                "ChangedApiName": "restore",
-                "ChangeType": "Addition",
-                "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/cloudpc-restore?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
-                "Target": "cloudPC"
-              }
+                {
+                    "Id": "f3def7ad-015a-48bc-aaf2-b944069124cd",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "restore",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/cloudpc-restore?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
             ],
             "Id": "f3def7ad-015a-48bc-aaf2-b944069124cd",
             "Cloud": "Prod",

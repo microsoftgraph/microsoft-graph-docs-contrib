@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 DELETE /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
@@ -54,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
 
 ### Response
