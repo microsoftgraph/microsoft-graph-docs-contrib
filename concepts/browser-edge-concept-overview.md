@@ -1,12 +1,12 @@
 ---
-title: "Overview for using the Edge API in Microsoft Graph to manage browsers"
-description: "Use the Edge API in Microsoft Graph to streamline the way you manage cloud site lists."
+title: "Use the Edge API in Microsoft Graph to manage browsers"
+description: "Learn how to use the Edge API in Microsoft Graph to streamline the way you manage cloud site lists."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "browser-management"
 ---
 
-# Overview for using the Edge API in Microsoft Graph to manage browsers
+# Use the Edge API in Microsoft Graph to manage browsers
 
 The [Microsoft 365 admin center](https://admin.microsoft.com/) lets administrators manage applications, services, data, devices, and users across Microsoft 365 services in an organization. Microsoft Edge is one of the applications that administrators manage through the admin center.
 
