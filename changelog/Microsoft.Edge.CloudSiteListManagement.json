@@ -126,8 +126,8 @@
         "Id": "83c8e159-1987-49bd-a8d1-f33a651b96f0",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2022-08-29T18:53:10.1690479Z",
-        "WorkloadArea": "Devices and apps",
+        "CreatedDateTime": "2022-11-02T18:53:10.1690479Z",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Browser management"
       }
     ]
