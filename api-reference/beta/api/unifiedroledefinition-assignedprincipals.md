@@ -37,7 +37,7 @@ To read the properties that may require permissions for the object, grant the pe
 }
 -->
 ``` http
-GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals()
+GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals
 ```
 
 ## Function parameters
