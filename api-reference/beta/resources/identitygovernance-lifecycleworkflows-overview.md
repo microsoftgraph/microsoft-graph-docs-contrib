@@ -54,7 +54,7 @@ Workflow tasks are specific actions that run automatically when a workflow is tr
 
 <!--[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](../includes/lifecycle-workflows-tasks-table.md)]-->
 
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
+[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure-docs/includes/lifecycle-workflows-tasks-table.md)]
 
 Use the [taskDefinition resource type](identitygovernance-taskdefinition.md) and its associated methods to discover all the predefined tasks that you can configure for your workflow and the settings for the properties The [task](identitygovernance-task.md) resource type and its associated GET methods allow you to view the tasks that are configured for your workflow.
 
