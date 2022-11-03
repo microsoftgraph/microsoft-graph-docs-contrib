@@ -1,17 +1,17 @@
 ---
-title: "Delete extensionProperty"
-description: "Delete an extensionProperty."
+title: "Delete extensionProperty (directory extension)"
+description: "Delete a directory extension definition."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
 
-# Delete extensionProperty
+# Delete extensionProperty (directory extension)
 
 Namespace: microsoft.graph
 
-Delete an [extensionProperty](../resources/extensionproperty.md) object. You can delete only properties that aren't synced from on-premises active directory.
+Delete a directory extension definition represented by an [extensionProperty](../resources/extensionproperty.md) object. You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 
 ## Permissions
 

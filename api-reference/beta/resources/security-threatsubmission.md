@@ -13,11 +13,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a threat submission, which is an abstract type for representing suspected spam, malware, phish, and blocked legitimate emails; malware, phish and blocked legitimate URLs; phish, malware and blocked legitimate email attachments to Microsoft Defender for Office 365, and suspicious files to Microsoft Defender for Endpoint.
+Represents a report of an item to Microsoft Defender for Office 365 for analysis, to confirm whether the item is malicious or safe. Items can include an email, email file attachment, or URL. Users can submit a report at the Microsoft 365 Defender portal (https://security.microsoft.com).
 
-This resource can also be used to submit false positive cases that should not be blocked by Microsoft Defender for Office 365; for example, not junk emails, safe URLs, and safe email attachments.
+This resource can represent a threat - a false negative case of an email which can be malware, phish, or spam, or a malicious file attachment to an email, or a malicious URL. Or it can represent a false positive case where an email, attachment, or URL is legitimate but blocked by Microsoft Defender for Office 365, for example, an email that's not junk, or an email file attachment or URL that is safe. False negative and false positive cases could have been respectively allowed or blocked by tenant policies overriding Microsoft Defender for Office 365. 
 
-This is an abstract type. Inherits from [entity](../resources/entity.md). Base type of [emailThreatSubmission](../resources/security-emailthreatsubmission.md), [urlThreatSubmission](../resources/security-urlthreatsubmission.md), [fileThreatSubmissin](../resources/security-filethreatsubmission.md).
+This resource is an abstract type. It is the base type for [emailThreatSubmission](../resources/security-emailthreatsubmission.md), [fileThreatSubmissin](../resources/security-filethreatsubmission.md), and [urlThreatSubmission](../resources/security-urlthreatsubmission.md).
 
 ## Properties
 | Property        | Type                       | Description                                                                      |

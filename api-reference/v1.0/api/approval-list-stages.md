@@ -1,5 +1,5 @@
 ---
-title: "List stages"
+title: "List approval stages"
 description: "List approval stages associated with an approval object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# List stages
+# List approval stages
 
 Namespace: microsoft.graph
 

@@ -44,9 +44,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type | Permissions (from least to most privileged)                   |
 | --------------- | ------------------------------------------------------------- |
-| Delegated (work or school account)        | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+| Delegated (work or school account)        | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
 | Delegated (personal Microsoft account)    | Not supported.                      |
-| Application                               | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+| Application                               | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
 
 ### To retrieve the profile photo of a user
 

@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/claimsMappingPolicies
+GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-56124728e051/claimsMappingPolicies
 ```
 
 # [C#](#tab/csharp)

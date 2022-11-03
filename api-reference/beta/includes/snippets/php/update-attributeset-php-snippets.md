@@ -12,11 +12,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AttributeSet();
 $requestBody->setDescription('Attributes for engineering team');
 
-$requestBody->setMaxAttributesPerSet(maxAttributesPerSet);
+$requestBody->setMaxAttributesPerSet(20);
 
 
 
-$graphServiceClient->directory()->attributeSetsById('attributeSet-id')->patch($requestBody);
+$requestResult = $graphServiceClient->directory()->attributeSetsById('attributeSet-id')->patch($requestBody);
 
 
 ```

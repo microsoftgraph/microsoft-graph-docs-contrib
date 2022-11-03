@@ -13,10 +13,10 @@ $requestBody = new EducationOutcome();
 $requestBody->set@odatatype('#microsoft.graph.educationPointsOutcome');
 
 $additionalData = [
-'points' => $requestBody = new ();
+'points' => $requestBody = new Points();
 $		requestBody->set@odatatype('#microsoft.graph.educationAssignmentPointsGrade');
 
-		$requestBody->setPoints(points);
+		$requestBody->setPoints(85.0);
 
 
 $requestBody->setPoints($points);
@@ -27,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomesById('educationOutcome-id')->patch($requestBody);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomesById('educationOutcome-id')->patch($requestBody);
 
 
 ```

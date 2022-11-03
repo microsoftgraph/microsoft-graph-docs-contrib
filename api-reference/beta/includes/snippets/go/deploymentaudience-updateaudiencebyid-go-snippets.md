@@ -10,28 +10,28 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewUpdateAudienceByIdPostRequestBody()
 memberEntityType := "String"
 requestBody.SetMemberEntityType(&memberEntityType) 
-addMembers := []String {
+addMembers := []string {
 	"String",
 
 }
 requestBody.SetAddMembers(addMembers)
-removeMembers := []String {
+removeMembers := []string {
 	"String",
 
 }
 requestBody.SetRemoveMembers(removeMembers)
-addExclusions := []String {
+addExclusions := []string {
 	"String",
 
 }
 requestBody.SetAddExclusions(addExclusions)
-removeExclusions := []String {
+removeExclusions := []string {
 	"String",
 
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudienceById(deployment-id).Post(requestBody)
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudienceById().Post(context.Background(), requestBody, nil)
 
 
 ```

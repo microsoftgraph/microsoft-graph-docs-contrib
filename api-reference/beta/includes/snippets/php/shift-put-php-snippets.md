@@ -16,14 +16,14 @@ $additionalData = [
 'lastModifiedDateTime' => '2019-03-14T05:32:51.451Z', 
 'userId' => 'c5d0c76b-80c4-481c-be50-923cd8d680a1', 
 'schedulingGroupId' => 'TAG_228940ed-ff84-4e25-b129-1b395cf78be0', 
-'lastModifiedBy' => $requestBody = new ();
+'lastModifiedBy' => $requestBody = new LastModifiedBy();
 		$requestBody->setApplication(null);
 
 		$requestBody->setDevice(null);
 
 		$requestBody->setConversation(null);
 
-$user = new ();
+$user = new User();
 $		user->setId('366c0b19-49b1-41b5-a03f-9f3887bd0ed8');
 
 $		user->setDisplayName('John Doe');
@@ -33,7 +33,7 @@ $requestBody->setUser($user);
 
 $requestBody->setLastModifiedBy($lastModifiedBy);
 
-'sharedShift' => $requestBody = new ();
+'sharedShift' => $requestBody = new SharedShift();
 $		requestBody->setDisplayName('Day shift');
 
 $		requestBody->setNotes('Please do inventory as part of your shift.');
@@ -63,7 +63,7 @@ $requestBody->setActivities($activitiesArray);
 
 $requestBody->setSharedShift($sharedShift);
 
-'draftShift' => $requestBody = new ();
+'draftShift' => $requestBody = new DraftShift();
 $	requestBody->setDisplayName('Day shift');
 
 $	requestBody->setNotes('Please do inventory as part of your shift.');

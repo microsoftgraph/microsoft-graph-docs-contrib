@@ -70,7 +70,8 @@ The following example gets the properties of a predefined value for a custom sec
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_allowedvalue"
+  "name": "get_allowedvalue",
+  "sampleKeys": ["Engineering_Project", "Alpine"]
 }
 -->
 ``` http

@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewPermission()
-roles := []String {
+roles := []string {
 	"read",
 
 }
 requestBody.SetRoles(roles)
 
-graphClient.SitesById("site-id").PermissionsById("permission-id").Patch(requestBody)
+result, err := graphClient.SitesById("site-id").PermissionsById("permission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

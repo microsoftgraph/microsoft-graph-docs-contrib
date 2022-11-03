@@ -38,23 +38,18 @@ $location->setDisplayName('Harry\'s Bar');
 
 
 $requestBody->setLocation($location);
-$attendees1 = new ();
-$additionalData = [
-'emailAddress' => $attendees1 = new ();
-$		attendees1->setAddress('AlexW@contoso.OnMicrosoft.com');
+$attendeesAttendee1 = new Attendee();
+$attendeesAttendee1EmailAddress = new EmailAddress();
+$attendeesAttendee1EmailAddress->setAddress('AlexW@contoso.OnMicrosoft.com');
 
-$		attendees1->setName('Alex Wilbur');
-
-
-$attendees1->setEmailAddress($emailAddress);
-
-'type' => 'required', 
-];
-$attendees1->setAdditionalData($additionalData);
+$attendeesAttendee1EmailAddress->setName('Alex Wilbur');
 
 
+$attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
+$attendeesAttendee1->setType(new AttendeeType('required'));
 
-$attendeesArray []= $attendees1;
+
+$attendeesArray []= $attendeesAttendee1;
 $requestBody->setAttendees($attendeesArray);
 
 
@@ -62,7 +57,7 @@ $recurrence = new PatternedRecurrence();
 $recurrencePattern = new RecurrencePattern();
 $recurrencePattern->setType(new RecurrencePatternType('daily'));
 
-$recurrencePattern->setInterval(interval);
+$recurrencePattern->setInterval(1);
 
 
 $recurrence->setPattern($recurrencePattern);
@@ -71,7 +66,7 @@ $recurrenceRange->setType(new RecurrenceRangeType('numbered'));
 
 $recurrenceRange->setStartDate('2020-02-25');
 
-$recurrenceRange->setNumberOfOccurrences(numberOfOccurrences);
+$recurrenceRange->setNumberOfOccurrences(2);
 
 
 $recurrence->setRange($recurrenceRange);

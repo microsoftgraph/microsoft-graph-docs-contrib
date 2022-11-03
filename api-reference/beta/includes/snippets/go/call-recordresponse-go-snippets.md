@@ -15,8 +15,6 @@ requestBody.SetClientContext(&clientContext)
 
 
 prompt := graphmodels.NewPrompt()
-"@odata.type" := "#microsoft.graph.mediaPrompt"
-prompt.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 mediaInfo := graphmodels.New()
 uri := "https://cdn.contoso.com/beep.wav"
@@ -40,7 +38,7 @@ maxSilenceTimeoutInSeconds := int32(2)
 requestBody.SetMaxSilenceTimeoutInSeconds(&maxSilenceTimeoutInSeconds) 
 playBeep := true
 requestBody.SetPlayBeep(&playBeep) 
-stopTones := []String {
+stopTones := []string {
 	"#",
 	"1",
 	"*",
@@ -48,7 +46,7 @@ stopTones := []String {
 }
 requestBody.SetStopTones(stopTones)
 
-result, err := graphClient.Communications().CallsById("call-id").RecordResponse(call-id).Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").RecordResponse().Post(context.Background(), requestBody, nil)
 
 
 ```

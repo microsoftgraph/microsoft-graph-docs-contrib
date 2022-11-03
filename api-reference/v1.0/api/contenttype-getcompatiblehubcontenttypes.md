@@ -56,7 +56,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "contenttype_getcompatiblehubcontenttypes"
+  "name": "contenttype_getcompatiblehubcontenttypes",
+  "sampleKeys": ["root", "Documents"]
 }
 -->
 ``` http

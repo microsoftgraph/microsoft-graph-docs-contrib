@@ -14,7 +14,7 @@ configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().Delta()(educationClass-id).GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().Delta().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

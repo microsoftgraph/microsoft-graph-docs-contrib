@@ -4,7 +4,7 @@ description: 'Retrieve the properties and relationships of applicationtemplate o
 ms.localizationpriority: medium
 author: 'luleonpla'
 ms.prod: 'applications'
-doc_type: 'apiPageType'
+doc_type: apiPageType
 ---
 
 # Get applicationTemplate

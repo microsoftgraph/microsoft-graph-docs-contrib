@@ -57,7 +57,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_taskfileattachment"
+  "name": "list_taskfileattachment",
+  "sampleKeys": ["AAMehdkfuhgAAA=", "AAMkAGUzY5QKjAAA="]
 }
 -->
 ``` http

@@ -35,18 +35,20 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/assignments
 ```
 
-## Optional query parameters
+## Query parameters
 
-This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response.
+
+If the user or app is assigned only to catalog-specific administrative roles, the request must supply a filter to indicate a specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`.
 
 ### Example scenarios for using query parameters
 
-- If the caller is on behalf of a delegated user who is assigned only to catalog-specific delegated administrative roles, the request must supply a filter to indicate a specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`.
 - To return the target subject and access package, include `$expand=target,accessPackage`.
-- To retrieve only delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`.
+- To retrieve only delivered assignments, you can include a query `$filter=state eq 'Delivered'`.
 - To retrieve only assignments for a particular user, you can include a query with assignments targeting the object ID of that user: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.
 - To retrieve only assignments for a particular user and a particular access package, you can include a query with assignments targeting that access package and the object ID of that user: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.
 
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

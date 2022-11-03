@@ -30,13 +30,13 @@ isReminderOn := true
 requestBody.SetIsReminderOn(&isReminderOn) 
 hideAttendees := false
 requestBody.SetHideAttendees(&hideAttendees) 
-categories := []String {
+categories := []string {
 	"Red category",
 
 }
 requestBody.SetCategories(categories)
 
-graphClient.Me().EventsById("event-id").Patch(requestBody)
+result, err := graphClient.Me().EventsById("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

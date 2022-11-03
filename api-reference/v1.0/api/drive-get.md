@@ -81,7 +81,7 @@ If a user's OneDrive is not provisioned but the user has a license to use OneDri
 <!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```msgraph-interactive
-GET /users/{idOrUserPrincipalName}/drive
+GET https://graph.microsoft.com/v1.0/users/{48d31887-5fad-4d73-a9f5-3c356e68a038}/drive
 ```
 
 # [C#](#tab/csharp)

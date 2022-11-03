@@ -34,7 +34,7 @@ To list the document libraries for a group, your app requests the **drives** rel
 <!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all", "tags": "service.graph" } -->
 
 ```msgraph-interactive
-GET /groups/{groupId}/drives
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/drives
 ```
 
 # [C#](#tab/csharp)
@@ -110,7 +110,7 @@ GET /sites/{siteId}/drives
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
-GET /users/{userId}/drives
+GET https://graph.microsoft.com/v1.0/users/48d31887-5fad-4d73-a9f5-3c356e68a038/drives
 ```
 
 # [C#](#tab/csharp)
@@ -196,30 +196,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
-      "driveType": "documentLibrary",
-      "name": "Shared Documents",
-      "owner": {
-        "user": {
-          "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
-          "displayName": "Ryan Gregg"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#drives",
+    "value": [
+        {
+            "createdDateTime": "2017-07-27T02:41:36Z",
+            "description": "",
+            "id": "b!-RIj2DuyvEyV1T4NlOaMHk8XkS_I8MdFlUCq1BlcjgmhRfAj3-Z8RY2VpuvV_tpd",
+            "lastModifiedDateTime": "2018-03-27T07:34:38Z",
+            "name": "OneDrive",
+            "webUrl": "https://m365x214355-my.sharepoint.com/personal/meganb_m365x214355_onmicrosoft_com/Documents",
+            "driveType": "business",
+            "createdBy": {
+                "user": {
+                    "displayName": "System Account"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "MeganB@M365x214355.onmicrosoft.com",
+                    "id": "48d31887-5fad-4d73-a9f5-3c356e68a038",
+                    "displayName": "Megan Bowen"
+                }
+            },
+            "owner": {
+                "user": {
+                    "email": "MeganB@M365x214355.onmicrosoft.com",
+                    "id": "48d31887-5fad-4d73-a9f5-3c356e68a038",
+                    "displayName": "Megan Bowen"
+                }
+            },
+            "quota": {
+                "deleted": 0,
+                "remaining": 1099217021300,
+                "state": "normal",
+                "total": 1099511627776,
+                "used": 294606476
+            }
         }
-      }
-    },
-    {
-      "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
-      "driveType": "documentLibrary",
-      "name": "Contoso Project Files",
-      "owner": {
-        "user": {
-          "id": "406B2281-18E8-4416-9857-38C531B904F1",
-          "displayName": "Daron Spektor"
-        }
-      }
-    }
-  ]
+    ]
 }
 ```
 

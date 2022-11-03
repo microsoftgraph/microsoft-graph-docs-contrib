@@ -10,55 +10,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UpdateAudiencePostRequestBody();
-$addMembers1 = new ();
-$additionalData = [
-'@odata.type' => '#microsoft.graph.windowsUpdates.azureADDevice', 
-'id' => 'String (identifier)', 
-];
-$addMembers1->setAdditionalData($additionalData);
+$addMembersUpdatableAsset1 = new UpdatableAsset();
+$addMembersUpdatableAsset1->set@odatatype('#microsoft.graph.windowsUpdates.azureADDevice');
+
+$addMembersUpdatableAsset1->setId('String (identifier)');
 
 
-
-$addMembersArray []= $addMembers1;
+$addMembersArray []= $addMembersUpdatableAsset1;
 $requestBody->setAddMembers($addMembersArray);
 
 
-$removeMembers1 = new ();
-$additionalData = [
-'@odata.type' => '#microsoft.graph.windowsUpdates.azureADDevice', 
-'id' => 'String (identifier)', 
-];
-$removeMembers1->setAdditionalData($additionalData);
+$removeMembersUpdatableAsset1 = new UpdatableAsset();
+$removeMembersUpdatableAsset1->set@odatatype('#microsoft.graph.windowsUpdates.azureADDevice');
+
+$removeMembersUpdatableAsset1->setId('String (identifier)');
 
 
-
-$removeMembersArray []= $removeMembers1;
+$removeMembersArray []= $removeMembersUpdatableAsset1;
 $requestBody->setRemoveMembers($removeMembersArray);
 
 
-$addExclusions1 = new ();
-$additionalData = [
-'@odata.type' => '#microsoft.graph.windowsUpdates.azureADDevice', 
-'id' => 'String (identifier)', 
-];
-$addExclusions1->setAdditionalData($additionalData);
+$addExclusionsUpdatableAsset1 = new UpdatableAsset();
+$addExclusionsUpdatableAsset1->set@odatatype('#microsoft.graph.windowsUpdates.azureADDevice');
+
+$addExclusionsUpdatableAsset1->setId('String (identifier)');
 
 
-
-$addExclusionsArray []= $addExclusions1;
+$addExclusionsArray []= $addExclusionsUpdatableAsset1;
 $requestBody->setAddExclusions($addExclusionsArray);
 
 
-$removeExclusions1 = new ();
-$additionalData = [
-'@odata.type' => '#microsoft.graph.windowsUpdates.azureADDevice', 
-'id' => 'String (identifier)', 
-];
-$removeExclusions1->setAdditionalData($additionalData);
+$removeExclusionsUpdatableAsset1 = new UpdatableAsset();
+$removeExclusionsUpdatableAsset1->set@odatatype('#microsoft.graph.windowsUpdates.azureADDevice');
+
+$removeExclusionsUpdatableAsset1->setId('String (identifier)');
 
 
-
-$removeExclusionsArray []= $removeExclusions1;
+$removeExclusionsArray []= $removeExclusionsUpdatableAsset1;
 $requestBody->setRemoveExclusions($removeExclusionsArray);
 
 

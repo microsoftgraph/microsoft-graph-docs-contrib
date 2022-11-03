@@ -14,7 +14,7 @@ $requestBody->setDescription('Group with designated owner and members');
 
 $requestBody->setDisplayName('Operations group');
 
-$requestBody->setGroupTypes(]);
+$requestBody->setGroupTypes([]);
 
 $requestBody->setMailEnabled(false);
 

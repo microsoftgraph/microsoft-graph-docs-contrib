@@ -68,7 +68,7 @@ The following is an example of the request to retrieve the app roles assignments
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignedTo
+GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-56124728e051/appRoleAssignedTo
 ```
 
 # [C#](#tab/csharp)

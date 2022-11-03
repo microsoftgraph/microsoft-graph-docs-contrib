@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -74,6 +74,8 @@ Content-Length: 274
   ]
 }
 ```
+
+
 
 
 

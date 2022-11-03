@@ -68,11 +68,12 @@ The following example specifies the **id** of a **room** to get its properties.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_room"
+  "name": "get_room",
+  "sampleKeys": ["979e9793-3e91-40eb-b18c-0ea937893956"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
+GET https://graph.microsoft.com/v1.0/places/979e9793-3e91-40eb-b18c-0ea937893956
 ```
 
 # [C#](#tab/csharp)
@@ -121,36 +122,13 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.room",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "cf100@contoso.com",
-    "displayName": "Conf Room 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
-    },
-    "phone": "000-000-0000",
-    "nickname": "Conf Room",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorNumber": 1,
-    "isManaged": true,
-    "isWheelChairAccessible": false,
-    "bookingType": "standard",
-    "tags": [
-      "bean bags"
-    ],
-    "audioDeviceName": null,
-    "videoDeviceName": null,
-    "displayDevice": "surface hub"
+    "@odata.type": "#microsoft.graph.roomList",
+    "id": "979e9793-3e91-40eb-b18c-0ea937893956",
+    "displayName": "Building 2 Rooms",
+    "address": null,
+    "geoCoordinates": null,
+    "phone": "",
+    "emailAddress": "Building2Rooms@M365x214355.onmicrosoft.com"
 }
 ```
 
@@ -163,11 +141,12 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roomlist"
+  "name": "get_roomlist",
+  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
+GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com
 ```
 
 # [C#](#tab/csharp)
@@ -216,20 +195,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
-  "@odata.type": "#microsoft.graph.roomList",
-  "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
-  "displayName": "Building 1",
-  "address": {
-    "street": "4567 Main Street",
-    "city": "Buffalo",
-    "state": "NY",
-    "postalCode": "98052",
-    "countryOrRegion": "USA"
-  },
-  "geocoordinates": null,
-  "phone": null,
-  "emailAddress": "bldg1@contoso.com"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.roomList",
+    "id": "979e9793-3e91-40eb-b18c-0ea937893956",
+    "displayName": "Building 2 Rooms",
+    "address": null,
+    "geoCoordinates": null,
+    "phone": "",
+    "emailAddress": "Building2Rooms@M365x214355.onmicrosoft.com"
 }
 ```
 

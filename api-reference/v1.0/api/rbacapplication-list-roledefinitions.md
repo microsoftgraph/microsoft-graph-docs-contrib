@@ -2,7 +2,7 @@
 title: "List roleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -46,12 +46,6 @@ To list role definitions for the directory provider:
 
 ```http
 GET /roleManagement/directory/roleDefinitions
-```
-
-To list role definitions for the entitlement management provider:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## Optional query parameters
@@ -225,9 +219,6 @@ Content-type: application/json
 ### Example 2: Retrieve role definitions for the entitlement management provider
 
 #### Request
-
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {

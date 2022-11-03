@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new PlannerUser();
 $favoritePlanReferences = new PlannerFavoritePlanReferenceCollection();
 $additionalData = [
-'jd8S5gOaFk2S8aWCIAJz42QAAxtD' => $favoritePlanReferences = new ();
+'jd8S5gOaFk2S8aWCIAJz42QAAxtD' => $favoritePlanReferences = new Jd8S5gOaFk2S8aWCIAJz42QAAxtD();
 $		favoritePlanReferences->set@odatatype('#microsoft.graph.plannerFavoritePlanReference');
 
 $		favoritePlanReferences->setOrderHint(' !');
@@ -31,7 +31,7 @@ $favoritePlanReferences->setAdditionalData($additionalData);
 $requestBody->setFavoritePlanReferences($favoritePlanReferences);
 $recentPlanReferences = new PlannerRecentPlanReferenceCollection();
 $additionalData = [
-'jd8S5gOaFk2S8aWCIAJz42QAAxtD' => $recentPlanReferences = new ();
+'jd8S5gOaFk2S8aWCIAJz42QAAxtD' => $recentPlanReferences = new Jd8S5gOaFk2S8aWCIAJz42QAAxtD();
 $		recentPlanReferences->set@odatatype('#microsoft.graph.plannerRecentPlanReference');
 
 $		recentPlanReferences->setLastAccessedDateTime('2018-01-02T22:49:46.155Z');
@@ -58,7 +58,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->me()->planner()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->me()->planner()->patch($requestBody, $requestConfiguration);
 
 
 ```

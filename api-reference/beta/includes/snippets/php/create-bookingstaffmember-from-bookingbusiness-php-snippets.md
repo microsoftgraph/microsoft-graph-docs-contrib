@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new BookingStaffMember();
 $requestBody->set@odatatype('#microsoft.graph.bookingStaffMember');
 
-$requestBody->setColorIndex(colorIndex);
+$requestBody->setColorIndex(1);
 
 $requestBody->setDisplayName('Dana Swope');
 

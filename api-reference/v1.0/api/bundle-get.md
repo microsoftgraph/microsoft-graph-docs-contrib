@@ -64,7 +64,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
 ```
 
@@ -132,7 +132,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 ```
 

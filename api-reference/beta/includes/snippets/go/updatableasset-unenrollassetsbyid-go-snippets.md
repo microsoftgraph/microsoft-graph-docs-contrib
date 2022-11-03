@@ -12,7 +12,7 @@ updateCategory := graphmodels.FEATURE_UPDATECATEGORY
 requestBody.SetUpdateCategory(&updateCategory) 
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"
 requestBody.SetMemberEntityType(&memberEntityType) 
-ids := []String {
+ids := []string {
 	"String",
 	"String",
 	"String",
@@ -20,7 +20,7 @@ ids := []String {
 }
 requestBody.SetIds(ids)
 
-graphClient.Admin().Windows().Updates().UpdatableAssets().UnenrollAssetsById().Post(requestBody)
+graphClient.Admin().Windows().Updates().UpdatableAssets().UnenrollAssetsById().Post(context.Background(), requestBody, nil)
 
 
 ```

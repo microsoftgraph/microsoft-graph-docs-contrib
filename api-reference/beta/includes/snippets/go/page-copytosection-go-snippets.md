@@ -13,7 +13,7 @@ requestBody.SetId(&id)
 groupId := "groupId-value"
 requestBody.SetGroupId(&groupId) 
 
-result, err := graphClient.Me().Onenote().PagesById("onenotePage-id").CopyToSection(onenotePage-id).Post(requestBody)
+result, err := graphClient.Me().Onenote().PagesById("onenotePage-id").CopyToSection().Post(context.Background(), requestBody, nil)
 
 
 ```

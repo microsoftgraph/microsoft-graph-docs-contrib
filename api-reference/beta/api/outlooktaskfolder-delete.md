@@ -53,7 +53,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_outlooktaskfolder"
+  "name": "delete_outlooktaskfolder",
+  "sampleKeys": ["AAMkADIyAAAhrbPXAAA="]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPXAAA=

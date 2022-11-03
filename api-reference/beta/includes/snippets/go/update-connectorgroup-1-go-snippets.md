@@ -11,7 +11,7 @@ requestBody := graphmodels.NewConnectorGroup()
 name := "Connector Group Demo"
 requestBody.SetName(&name) 
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroups().Post(requestBody)
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

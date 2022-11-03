@@ -17,21 +17,21 @@ $		participantMixerLevels1->setParticipant('550fae72-d251-43ec-868c-373732c2704f
 
 		$participantMixerLevels1->setExclusive(true);
 
-$participantMixerLevels1Ducking = new ();
-		$participantMixerLevels1Ducking->setRampActive(rampActive);
+$participantMixerLevels1Ducking = new Ducking();
+		$participantMixerLevels1Ducking->setRampActive(50);
 
-		$participantMixerLevels1Ducking->setRampInactive(rampInactive);
+		$participantMixerLevels1Ducking->setRampInactive(50);
 
-		$participantMixerLevels1Ducking->setLowerLevel(lowerLevel);
+		$participantMixerLevels1Ducking->setLowerLevel(10);
 
-		$participantMixerLevels1Ducking->setUpperLevel(upperLevel);
+		$participantMixerLevels1Ducking->setUpperLevel(50);
 
 
 $participantMixerLevels1->setDucking($participantMixerLevels1Ducking);
 $sourceLevels1 = new ();
 $		sourceLevels1->setParticipant('632899f8-2ea1-4604-8413-27bd2892079f');
 
-		$sourceLevels1->setLevel(level);
+		$sourceLevels1->setLevel(50);
 
 		$sourceLevels1->setDuckOthers(false);
 

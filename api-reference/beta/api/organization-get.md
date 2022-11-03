@@ -2,7 +2,7 @@
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
 ms.localizationpriority: medium
-author: "KuiGithui"
+author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -123,6 +123,7 @@ Content-type: application/json
     "country": null,
     "countryLetterCode": "NL",
     "createdDateTime": "2021-08-02T10:30:06Z",
+    "defaultUsageLocation": "String",
     "displayName": "Contoso",
     "isMultipleDataLocationsForServicesEnabled": null,
     "marketingNotificationEmails": [],

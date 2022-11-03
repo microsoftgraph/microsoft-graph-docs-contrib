@@ -64,7 +64,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_b2xUserFlows"
+  "name": "get_b2xUserFlows",
+  "sampleKeys": ["B2X_1_PartnerSignUp"]
 }
 -->
 

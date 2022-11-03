@@ -59,7 +59,7 @@ The following is an example of the request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/localizations/
+GET https://graph.microsoft.com/v1.0/organization/dcd219dd-bc68-4b9b-bf0b-4a33a796be35/branding/localizations/
 ```
 
 # [C#](#tab/csharp)

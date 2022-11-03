@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewOrganization()
-marketingNotificationEmails := []String {
+marketingNotificationEmails := []string {
 	"marketing@contoso.com",
 
 }
@@ -19,23 +19,23 @@ privacyProfile.SetContactEmail(&contactEmail)
 statementUrl := "https://contoso.com/privacyStatement"
 privacyProfile.SetStatementUrl(&statementUrl) 
 requestBody.SetPrivacyProfile(privacyProfile)
-securityComplianceNotificationMails := []String {
+securityComplianceNotificationMails := []string {
 	"security@contoso.com",
 
 }
 requestBody.SetSecurityComplianceNotificationMails(securityComplianceNotificationMails)
-securityComplianceNotificationPhones := []String {
+securityComplianceNotificationPhones := []string {
 	"(123) 456-7890",
 
 }
 requestBody.SetSecurityComplianceNotificationPhones(securityComplianceNotificationPhones)
-technicalNotificationMails := []String {
+technicalNotificationMails := []string {
 	"tech@contoso.com",
 
 }
 requestBody.SetTechnicalNotificationMails(technicalNotificationMails)
 
-graphClient.OrganizationById("organization-id").Patch(requestBody)
+result, err := graphClient.OrganizationById("organization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

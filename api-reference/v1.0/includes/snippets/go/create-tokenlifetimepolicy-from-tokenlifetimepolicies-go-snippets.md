@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewTokenLifetimePolicy()
-definition := []String {
+definition := []string {
 	"definition-value",
 
 }
@@ -18,7 +18,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().TokenLifetimePolicies().Post(requestBody)
+result, err := graphClient.Policies().TokenLifetimePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

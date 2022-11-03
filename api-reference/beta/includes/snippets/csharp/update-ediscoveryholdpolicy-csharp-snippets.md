@@ -8,8 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var ediscoveryHoldPolicy = new Microsoft.Graph.Security.EdiscoveryHoldPolicy
 {
-	Description = "updated description",
-	ContentQuery = "bazooka bazooka"
+	Description = "updated description"
 };
 
 await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].LegalHolds["{security.ediscoveryHoldPolicy-id}"]

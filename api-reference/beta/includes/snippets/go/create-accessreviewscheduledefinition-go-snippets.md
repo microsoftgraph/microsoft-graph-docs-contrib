@@ -15,8 +15,6 @@ requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
 descriptionForReviewers := "If you have any questions, contact jerry@contoso.com"
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-scope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"query" : "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers", 
 	"queryType" : "MicrosoftGraph", 
@@ -25,15 +23,14 @@ scope.SetAdditionalData(additionalData)
 requestBody.SetScope(scope)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "/users/398164b1-5196-49dd-ada2-364b49f99b27", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 reviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetReviewers(reviewers)
@@ -62,13 +59,13 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NOEND_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2020-09-08T12:02:30.667Z"
+startDate := 2020-09-08T12:02:30.667Z
 range.SetStartDate(&startDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

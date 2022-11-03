@@ -64,7 +64,7 @@ staffMemberIdsList.add("2f5f8794-0b29-45b5-b56a-2eb5ff7aa880");
 bookingService.staffMemberIds = staffMemberIdsList;
 bookingService.isAnonymousJoinEnabled = false;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").services()
+graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").services()
 	.buildRequest()
 	.post(bookingService);
 

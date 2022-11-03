@@ -69,7 +69,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
   "name": "unifiedroleassignmentschedulerequestthis.filterbycurrentuser"
 }
 -->
-```msgraph-interactive
+``` http
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')
 ```
 

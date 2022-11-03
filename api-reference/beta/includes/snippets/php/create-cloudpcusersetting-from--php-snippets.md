@@ -19,7 +19,7 @@ $requestBody->setSelfServiceEnabled(false);
 $requestBody->setLocalAdminEnabled(true);
 
 $restorePointSetting = new CloudPcRestorePointSetting();
-$restorePointSetting->setFrequencyInHours(frequencyInHours);
+$restorePointSetting->setFrequencyInHours(16);
 
 $restorePointSetting->setUserRestoreEnabled(true);
 

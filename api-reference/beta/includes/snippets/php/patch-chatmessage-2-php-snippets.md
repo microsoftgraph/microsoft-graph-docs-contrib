@@ -22,7 +22,7 @@ $requestBody->setImportance(new ChatMessageImportance('normal'));
 
 $requestBody->setLocale('en-us');
 
-$from = new From();
+$from = new ChatMessageFromIdentitySet();
 $From->setApplication(null);
 
 $From->setDevice(null);
@@ -55,14 +55,14 @@ $body->setContent('<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at
 
 
 $requestBody->setBody($body);
-$requestBody->setAttachments(]);
+$requestBody->setAttachments([]);
 
 $mentionsChatMessageMention1 = new ChatMessageMention();
-$mentionsChatMessageMention1->setId(id);
+$mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('Raghav');
 
-$mentionsChatMessageMention1Mentioned = new Mentioned();
+$mentionsChatMessageMention1Mentioned = new ChatMessageMentionedIdentitySet();
 $mentionsChatMessageMention1Mentioned->setApplication(null);
 
 $mentionsChatMessageMention1Mentioned->setDevice(null);
@@ -87,11 +87,11 @@ $mentionsChatMessageMention1->setMentioned($mentionsChatMessageMention1Mentioned
 
 $mentionsArray []= $mentionsChatMessageMention1;
 $mentionsChatMessageMention2 = new ChatMessageMention();
-$mentionsChatMessageMention2->setId(id);
+$mentionsChatMessageMention2->setId(1);
 
 $mentionsChatMessageMention2->setMentionText('TestGlobalBot');
 
-$mentionsChatMessageMention2Mentioned = new Mentioned();
+$mentionsChatMessageMention2Mentioned = new ChatMessageMentionedIdentitySet();
 $mentionsChatMessageMention2MentionedApplication = new Identity();
 $mentionsChatMessageMention2MentionedApplication->setId('03a02232-d8f5-4970-a77e-6e8c76ce7a4e');
 
@@ -118,11 +118,11 @@ $mentionsArray []= $mentionsChatMessageMention2;
 $requestBody->setMentions($mentionsArray);
 
 
-$requestBody->setReactions(]);
+$requestBody->setReactions([]);
 
 
 
-$graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
 
 
 ```

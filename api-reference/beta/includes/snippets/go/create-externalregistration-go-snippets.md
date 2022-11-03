@@ -9,12 +9,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewRegistrationPostRequestBody()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.externalMeetingRegistration", 
 	"allowedRegistrant" : "everyone", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Post(requestBody)
+graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Post(context.Background(), requestBody, nil)
 
 
 ```

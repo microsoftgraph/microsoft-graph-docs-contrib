@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstance: acceptRecommendations"
 description: "Allows the acceptance of recommendations on decisions for an access review instance that has not been reviewed by the calling user who is a reviewer."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

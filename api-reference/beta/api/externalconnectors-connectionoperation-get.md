@@ -58,7 +58,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connectionoperation"
+  "name": "get_connectionoperation",
+  "sampleKeys": ["contosohr", "3ed1595a-4bae-43c2-acda-ef973e581323"]
 }-->
 
 ```msgraph-interactive

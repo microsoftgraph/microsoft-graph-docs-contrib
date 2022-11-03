@@ -31,22 +31,19 @@ $requestBody->setScope($scope);
 $stageSettingsAccessReviewStageSettings1 = new AccessReviewStageSettings();
 $stageSettingsAccessReviewStageSettings1->setStageId('1');
 
-$stageSettingsAccessReviewStageSettings1->setDurationInDays(durationInDays);
+$stageSettingsAccessReviewStageSettings1->setDurationInDays(2);
 
 $stageSettingsAccessReviewStageSettings1->setRecommendationsEnabled(false);
 
 $stageSettingsAccessReviewStageSettings1->setDecisionsThatWillMoveToNextStage(['NotReviewed', 'Approve', ]);
 
-$reviewers1 = new ();
-$additionalData = [
-'query' => '/users/398164b1-5196-49dd-ada2-364b49f99b27', 
-'queryType' => 'MicrosoftGraph', 
-];
-$reviewers1->setAdditionalData($additionalData);
+$reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$reviewersAccessReviewReviewerScope1->setQuery('/users/398164b1-5196-49dd-ada2-364b49f99b27');
+
+$reviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
-
-$reviewersArray []= $reviewers1;
+$reviewersArray []= $reviewersAccessReviewReviewerScope1;
 $stageSettingsAccessReviewStageSettings1->setReviewers($reviewersArray);
 
 
@@ -57,34 +54,29 @@ $stageSettingsAccessReviewStageSettings2->setStageId('2');
 
 $stageSettingsAccessReviewStageSettings2->setDependsOn(['1', ]);
 
-$stageSettingsAccessReviewStageSettings2->setDurationInDays(durationInDays);
+$stageSettingsAccessReviewStageSettings2->setDurationInDays(2);
 
 $stageSettingsAccessReviewStageSettings2->setRecommendationsEnabled(true);
 
-$reviewers1 = new ();
-$additionalData = [
-'query' => './manager', 
-'queryType' => 'MicrosoftGraph', 
-'queryRoot' => 'decisions', 
-];
-$reviewers1->setAdditionalData($additionalData);
+$reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$reviewersAccessReviewReviewerScope1->setQuery('./manager');
+
+$reviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
+
+$reviewersAccessReviewReviewerScope1->setQueryRoot('decisions');
 
 
-
-$reviewersArray []= $reviewers1;
+$reviewersArray []= $reviewersAccessReviewReviewerScope1;
 $stageSettingsAccessReviewStageSettings2->setReviewers($reviewersArray);
 
 
-$fallbackReviewers1 = new ();
-$additionalData = [
-'query' => '/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers', 
-'queryType' => 'MicrosoftGraph', 
-];
-$fallbackReviewers1->setAdditionalData($additionalData);
+$fallbackReviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$fallbackReviewersAccessReviewReviewerScope1->setQuery('/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers');
+
+$fallbackReviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
-
-$fallbackReviewersArray []= $fallbackReviewers1;
+$fallbackReviewersArray []= $fallbackReviewersAccessReviewReviewerScope1;
 $stageSettingsAccessReviewStageSettings2->setFallbackReviewers($fallbackReviewersArray);
 
 
@@ -94,23 +86,13 @@ $requestBody->setStageSettings($stageSettingsArray);
 
 
 $settings = new AccessReviewScheduleSettings();
-$settings->setMailNotificationsEnabled(true);
-
-$settings->setReminderNotificationsEnabled(true);
-
-$settings->setJustificationRequiredOnApproval(true);
-
-$settings->setDefaultDecisionEnabled(false);
-
-$settings->setDefaultDecision('None');
-
-$settings->setInstanceDurationInDays(instanceDurationInDays);
+$settings->setInstanceDurationInDays(4);
 
 $settingsRecurrence = new PatternedRecurrence();
 $settingsRecurrencePattern = new RecurrencePattern();
 $settingsRecurrencePattern->setType(new RecurrencePatternType('weekly'));
 
-$settingsRecurrencePattern->setInterval(interval);
+$settingsRecurrencePattern->setInterval(1);
 
 
 $settingsRecurrence->setPattern($settingsRecurrencePattern);

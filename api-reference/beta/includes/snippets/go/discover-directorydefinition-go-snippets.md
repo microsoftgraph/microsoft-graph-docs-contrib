@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Schema().DirectoriesById("directoryDefinition-id").Discover(servicePrincipal-id, synchronizationJob-id, directoryDefinition-id).Post()
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Schema().DirectoriesById("directoryDefinition-id").Discover().Post(context.Background(), nil)
 
 
 ```

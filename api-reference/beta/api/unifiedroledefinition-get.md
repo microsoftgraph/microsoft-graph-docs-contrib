@@ -2,7 +2,7 @@
 title: "Get unifiedRoleDefinition"
 description: "Retrieve the properties and relationships of a unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -55,7 +55,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 
@@ -115,7 +115,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_custom_role_unifiedroledefinition"
+  "name": "get_custom_role_unifiedroledefinition",
+  "sampleKeys": ["f189965f-f560-4c59-9101-933d4c87a91a"]
 }-->
 
 ```msgraph-interactive
@@ -197,7 +198,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_built_in_role_unifiedroledefinition"
+  "name": "get_built_in_role_unifiedroledefinition",
+  "sampleKeys": ["fdd7a751-b60b-444a-984c-02652fe8fa1c"]
 }-->
 
 ```msgraph-interactive
@@ -305,7 +307,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_inheritsFrom_unifiedroledefinition"
+  "name": "get_inheritsFrom_unifiedroledefinition",
+  "sampleKeys": ["fdd7a751-b60b-444a-984c-02652fe8fa1c"]
 }-->
 
 ```msgraph-interactive
@@ -477,7 +480,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_built-in_cloudpc_role_unifiedroledefinition"
+  "name": "get_built-in_cloudpc_role_unifiedroledefinition",
+  "sampleKeys": ["d40368cb-fbf4-4965-bbc1-f17b3a78e510"]
 }-->
 
 ```msgraph-interactive
@@ -561,7 +565,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_built-in_entitlementmanagement_role_unifiedroledefinition"
+  "name": "get_built-in_entitlementmanagement_role_unifiedroledefinition",
+  "sampleKeys": ["ba92d953-d8e0-4e39-a797-0cbedb0a89e8"]
 }-->
 
 ```msgraph-interactive

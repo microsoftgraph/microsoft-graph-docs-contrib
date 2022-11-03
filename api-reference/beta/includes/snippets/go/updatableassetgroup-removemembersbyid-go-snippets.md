@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewRemoveMembersByIdPostRequestBody()
-ids := []String {
+ids := []string {
 	"String",
 	"String",
 	"String",
@@ -18,7 +18,7 @@ requestBody.SetIds(ids)
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"
 requestBody.SetMemberEntityType(&memberEntityType) 
 
-graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").RemoveMembersById(updatableAsset-id).Post(requestBody)
+graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").RemoveMembersById().Post(context.Background(), requestBody, nil)
 
 
 ```

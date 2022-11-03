@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), callers can automatically reevaluate and enforce an [accessPackageAssignment](../resources/accesspackageassignment.md) object of a user’s assignments for a specific access package. The **assignmentState** of the access package must be `Delivered` for the administrator to reprocess the user's assignment. Only admins with the Access Package Assignment Manager role, or higher, in Azure AD entitlement management can perform this action.
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), callers can automatically reevaluate and enforce an [accessPackageAssignment](../resources/accesspackageassignment.md) object of a user’s assignments for a specific access package. The **state** of the access package assignment must be `Delivered` for the administrator to reprocess the user's assignment. Only admins with the Access Package Assignment Manager role, or higher, in Azure AD entitlement management can perform this action.
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-POST /identityGovernance/entitlementManagement/accessPackageAssignments/{id}/reprocess 
+POST /identityGovernance/entitlementManagement/assignments/{id}/reprocess 
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "reprocess_accesspackageassignments"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignments/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignments/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
 ```
 
 ### Response

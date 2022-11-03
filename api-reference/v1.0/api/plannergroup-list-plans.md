@@ -50,7 +50,7 @@ The following is an example of a request.
   "name": "get_plans_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/planner/plans
 ```
 
 # [C#](#tab/csharp)

@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/validateFilter
 
 Content-type: application/json
-Content-length: 520
+Content-length: 807
 
 {
   "deviceAndAppManagementAssignmentFilter": {
@@ -77,6 +77,15 @@ Content-length: 520
     "rule": "Rule value",
     "roleScopeTags": [
       "Role Scope Tags value"
+    ],
+    "payloads": [
+      {
+        "@odata.type": "microsoft.graph.payloadByFilter",
+        "payloadId": "Payload Id value",
+        "payloadType": "deviceConfigurationAndCompliance",
+        "groupId": "Group Id value",
+        "assignmentFilterType": "include"
+      }
     ]
   }
 }
@@ -96,6 +105,7 @@ Content-Length: 120
   }
 }
 ```
+
 
 
 

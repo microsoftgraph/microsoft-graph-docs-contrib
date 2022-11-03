@@ -16,7 +16,8 @@ $requestBody->setDirection(new CallDirection('outgoing'));
 
 $requestBody->setCallbackUri('https://bot.contoso.com/callback');
 
-$requestBody->setRequestedModalities(['audio', ]);
+$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
 $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
@@ -44,10 +45,10 @@ $meetingInfo->set@odatatype('#microsoft.graph.organizerMeetingInfo');
 $meetingInfo->setAllowConversationWithoutHost(true);
 
 $additionalData = [
-'organizer' => $meetingInfo = new ();
+'organizer' => $meetingInfo = new Organizer();
 $	meetingInfo->set@odatatype('#microsoft.graph.identitySet');
 
-$user = new ();
+$user = new User();
 $	user->set@odatatype('#microsoft.graph.identity');
 
 $	user->setId('5810cede-f3cc-42eb-b2c1-e9bd5d53ec96');

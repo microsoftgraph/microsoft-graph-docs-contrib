@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new ConversationMember();
 $requestBody->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
-$requestBody->setRoles(]);
+$requestBody->setRoles([]);
 
 $additionalData = [
 'user@odata.bind' => 'https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408', 

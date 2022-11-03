@@ -23,9 +23,9 @@ $keysTrustFrameworkKey1->setKty('kty-value');
 
 $keysTrustFrameworkKey1->setUse('use-value');
 
-$keysTrustFrameworkKey1->setExp(exp);
+$keysTrustFrameworkKey1->setExp(99);
 
-$keysTrustFrameworkKey1->setNbf(nbf);
+$keysTrustFrameworkKey1->setNbf(99);
 
 $keysTrustFrameworkKey1->setKid('kid-value');
 

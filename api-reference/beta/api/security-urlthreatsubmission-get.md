@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/security/threatSubmission/urlThreats/49c5ef
 [!INCLUDE [sample-code](../includes/snippets/go/get-urlthreatsubmission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-urlthreatsubmission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-urlthreatsubmission-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +108,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/urlThreatSubmission/$entity",
-  "@odata.type": "#microsoft.graph.urlThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.urlThreatSubmission",
   "category": "phishing",  
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new GroupLifecyclePolicy();
-$requestBody->setGroupLifetimeInDays(groupLifetimeInDays);
+$requestBody->setGroupLifetimeInDays(180);
 
 $requestBody->setManagedGroupTypes('Selected');
 
@@ -18,7 +18,7 @@ $requestBody->setAlternateNotificationEmails('admin@contoso.com');
 
 
 
-$graphServiceClient->groupLifecyclePoliciesById('groupLifecyclePolicy-id')->patch($requestBody);
+$requestResult = $graphServiceClient->groupLifecyclePoliciesById('groupLifecyclePolicy-id')->patch($requestBody);
 
 
 ```

@@ -25,3 +25,5 @@ Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added he
 |unarchiveTeam|Operation to restore an archived team.|
 |createTeam|Operation to create a team from scratch.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|teamifyGroup |Operation to create a team from a group. |
+|createChannel |Operation to create a channel in a team. |

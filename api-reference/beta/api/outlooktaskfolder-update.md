@@ -58,7 +58,8 @@ The following example changes the name of the specified task folder to `Charity 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_outlooktaskfolder"
+  "name": "update_outlooktaskfolder",
+  "sampleKeys": ["AAMkADIyAAAhrbPWAAA="]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=

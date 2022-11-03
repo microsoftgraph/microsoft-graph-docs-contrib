@@ -23,7 +23,7 @@ Represents information about a virtual appointment, including the client join UR
 |:---|:---|:---|
 |[Create virtualAppointment](../api/virtualappointment-put.md)|[virtualAppointment](../resources/virtualappointment.md)|Create a new [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Get virtualAppointment](../api/virtualappointment-get.md)|[virtualAppointment](../resources/virtualappointment.md)|Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.|
-|[Update virtualAppointment](../api/virtualappointment-update.md)|[virtualAppointment](../resources/virtualappointment.md)|Update the properties of a [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Update virtualAppointment](../api/virtualappointment-update.md)|None|Update the properties of a [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Delete virtualAppointment](../api/virtualappointment-delete.md)|None|Delete a [virtualAppointment](../resources/virtualappointment.md) object.|
 
 > [!TIP]

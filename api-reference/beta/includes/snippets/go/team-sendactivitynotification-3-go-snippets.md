@@ -23,7 +23,7 @@ content := "New deployment requires your approval"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
 recipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient"
+"@odata.type" := "microsoft.graph.aadUserNotificationRecipient"
 recipient.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
@@ -44,7 +44,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.TeamsById("team-id").SendActivityNotification(team-id).Post(requestBody)
+graphClient.TeamsById("team-id").SendActivityNotification().Post(requestBody)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstanceDecisionItemTarget resource type"
 description: "Represents the target of a review as either a user target or a service principal target. "
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

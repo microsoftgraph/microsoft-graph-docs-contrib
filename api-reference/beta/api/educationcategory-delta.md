@@ -67,7 +67,7 @@ Use the `$top` parameter to specify the number of categories to be returned. The
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_classcategories_delta"
+  "name": "get_class_assignmentcategories_delta_top_3"
 }-->
 
 ```msgraph-interactive
@@ -75,27 +75,27 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-classcategories-delta-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-class-assignmentcategories-delta-top-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-classcategories-delta-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-class-assignmentcategories-delta-top-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-classcategories-delta-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-class-assignmentcategories-delta-top-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-class-assignmentcategories-delta-top-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-class-assignmentcategories-delta-top-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-classcategories-delta-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-class-assignmentcategories-delta-top-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -155,7 +155,7 @@ Use the `@odata.nextLink` value from the previous call for this request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_classcategories_delta"
+  "name": "get_classcategories_delta_skiptoken"
 }-->
 
 ```msgraph-interactive
@@ -163,27 +163,27 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-classcategories-delta-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-classcategories-delta-skiptoken-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-classcategories-delta-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-classcategories-delta-skiptoken-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-classcategories-delta-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-classcategories-delta-skiptoken-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-skiptoken-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-skiptoken-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-classcategories-delta-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-classcategories-delta-skiptoken-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -238,7 +238,7 @@ Use the `@odata.deltaLink` value from the previous call for this request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_classcategories_delta"
+  "name": "get_classcategories_delta_for_token"
 }-->
 
 ```msgraph-interactive
@@ -246,27 +246,27 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-classcategories-delta-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-classcategories-delta-for-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-classcategories-delta-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-classcategories-delta-for-token-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-classcategories-delta-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-classcategories-delta-for-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-for-token-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-for-token-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-classcategories-delta-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-classcategories-delta-for-token-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

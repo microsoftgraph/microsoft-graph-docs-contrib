@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AdministrativeUnit administrativeUnit = graphClient.directory().administrativeUnits("4d7ea995-bc0f-45c0-8c3e-132e93bf95f8")
+AdministrativeUnit administrativeUnit = graphClient.directory().administrativeUnits("8a07f5a8-edc9-4847-bbf2-dde106594bf4")
 	.buildRequest()
 	.get();
 

@@ -19,7 +19,7 @@ $settingsMonitoring = new MonitoringSettings();
 $monitoringRulesMonitoringRule1 = new MonitoringRule();
 $monitoringRulesMonitoringRule1->setSignal(new MonitoringSignal('rollback'));
 
-$monitoringRulesMonitoringRule1->setThreshold(threshold);
+$monitoringRulesMonitoringRule1->setThreshold(5);
 
 $monitoringRulesMonitoringRule1->setAction(new MonitoringAction('pausedeployment'));
 
@@ -34,7 +34,7 @@ $settings->setMonitoring($settingsMonitoring);
 $requestBody->setSettings($settings);
 
 
-$graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->patch($requestBody);
+$requestResult = $graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->patch($requestBody);
 
 
 ```

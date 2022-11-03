@@ -13,7 +13,7 @@ $requestBody = new EducationOutcome();
 $requestBody->set@odatatype('#microsoft.graph.educationFeedbackResourceOutcome');
 
 $additionalData = [
-'feedbackResource' => $requestBody = new ();
+'feedbackResource' => $requestBody = new FeedbackResource();
 $		requestBody->set@odatatype('#microsoft.graph.educationWordResource');
 
 $		requestBody->setDisplayName('Document1.docx');

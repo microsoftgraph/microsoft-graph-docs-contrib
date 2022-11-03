@@ -24,26 +24,26 @@ $attachmentsAttachment1->set@odatatype('#microsoft.graph.itemAttachment');
 $attachmentsAttachment1->setName('Holiday event');
 
 $additionalData = [
-'item' => $attachmentsAttachment1 = new ();
+'item' => $attachmentsAttachment1 = new Item();
 $		attachmentsAttachment1->set@odatatype('microsoft.graph.event');
 
 $		attachmentsAttachment1->setSubject('Discuss gifts for children');
 
-$body = new ();
+$body = new Body();
 $		body->setContentType('HTML');
 
 $		body->setContent('Let\'s look for funding!');
 
 
 $attachmentsAttachment1->setBody($body);
-$start = new ();
+$start = new Start();
 $		start->setDateTime('2019-12-02T18:00:00');
 
 $		start->setTimeZone('Pacific Standard Time');
 
 
 $attachmentsAttachment1->setStart($start);
-$end = new ();
+$end = new End();
 $		end->setDateTime('2019-12-02T19:00:00');
 
 $		end->setTimeZone('Pacific Standard Time');

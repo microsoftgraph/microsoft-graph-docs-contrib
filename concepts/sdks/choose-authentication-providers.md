@@ -65,7 +65,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
 var authCodeCredential = new AuthorizationCodeCredential(
     tenantId, clientId, clientSecret, authorizationCode, options);
 
@@ -224,7 +224,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
 var clientSecretCredential = new ClientSecretCredential(
     tenantId, clientId, clientSecret, options);
 
@@ -250,7 +250,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
 var clientCertCredential = new ClientCertificateCredential(
     tenantId, clientId, clientCertificate, options);
 
@@ -482,7 +482,7 @@ Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) =>
     return Task.FromResult(0);
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.devicecodecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
 var deviceCodeCredential = new DeviceCodeCredential(
     callback, tenantId, clientId, options);
 
@@ -678,7 +678,7 @@ var options = new InteractiveBrowserCredentialOptions
     RedirectUri = new Uri("http://localhost"),
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(options);
 
 var graphClient = new GraphServiceClient(interactiveCredential, scopes);
@@ -800,7 +800,7 @@ var options = new TokenCredentialOptions
 var userName = "adelev@contoso.com";
 var password = "P@ssword1!";
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
 var userNamePasswordCredential = new UsernamePasswordCredential(
     userName, password, tenantId, clientId, options);
 

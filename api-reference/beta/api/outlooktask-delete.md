@@ -60,7 +60,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_outlooktask"
+  "name": "delete_outlooktask",
+  "sampleKeys": ["AAMkADIyAAAhrb_QAAA="]
 }-->
 
 ```http

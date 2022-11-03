@@ -65,7 +65,8 @@ If successful, this method only returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-externalregistratrant"
+  "name": "delete-externalregistratrant",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ", "9d96988d-a66a-46ce-aad7-0b245615b297"]
 }-->
 
 ```http

@@ -63,7 +63,7 @@ Here is an example of the request.
   "name": "get_conversation_member_2"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
 ```
 

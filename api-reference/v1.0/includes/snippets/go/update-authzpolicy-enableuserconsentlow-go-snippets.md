@@ -9,14 +9,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthorizationPolicy()
 defaultUserRolePermissions := graphmodels.NewDefaultUserRolePermissions()
-permissionGrantPoliciesAssigned := []String {
+permissionGrantPoliciesAssigned := []string {
 	"managePermissionGrantsForSelf.microsoft-user-default-low",
 
 }
 defaultUserRolePermissions.SetPermissionGrantPoliciesAssigned(permissionGrantPoliciesAssigned)
 requestBody.SetDefaultUserRolePermissions(defaultUserRolePermissions)
 
-graphClient.Policies().AuthorizationPolicy().Patch(requestBody)
+result, err := graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

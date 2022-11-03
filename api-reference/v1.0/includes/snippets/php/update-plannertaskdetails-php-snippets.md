@@ -14,7 +14,7 @@ $requestBody->setPreviewType(new PlannerPreviewType('nopreview'));
 
 $references = new PlannerExternalReferences();
 $additionalData = [
-'http%3A//developer%2Emicrosoft%2Ecom' => $references = new ();
+'http%3A//developer%2Emicrosoft%2Ecom' => $references = new Http%3A//developer%2Emicrosoft%2Ecom();
 $		references->set@odatatype('microsoft.graph.plannerExternalReference');
 
 $		references->setAlias('Documentation');
@@ -26,7 +26,7 @@ $		references->setType('Other');
 
 $references->setHttp%3A//developer%2Emicrosoft%2Ecom($http%3A//developer%2Emicrosoft%2Ecom);
 
-'https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer' => $references = new ();
+'https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer' => $references = new Https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer();
 $		references->set@odatatype('microsoft.graph.plannerExternalReference');
 
 $		references->setPreviewPriority('  !!');
@@ -43,7 +43,7 @@ $references->setAdditionalData($additionalData);
 $requestBody->setReferences($references);
 $checklist = new PlannerChecklistItems();
 $additionalData = [
-'95e27074-6c4a-447a-aa24-9d718a0b86fa' => $checklist = new ();
+'95e27074-6c4a-447a-aa24-9d718a0b86fa' => $checklist = new 95e27074-6c4a-447a-aa24-9d718a0b86fa();
 $		checklist->set@odatatype('microsoft.graph.plannerChecklistItem');
 
 $		checklist->setTitle('Update task details');
@@ -53,7 +53,7 @@ $		checklist->setTitle('Update task details');
 
 $checklist->set95e27074-6c4a-447a-aa24-9d718a0b86fa($95e27074-6c4a-447a-aa24-9d718a0b86fa);
 
-'d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff' => $checklist = new ();
+'d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff' => $checklist = new D280ed1a-9f6b-4f9c-a962-fb4d00dc50ff();
 $		checklist->set@odatatype('microsoft.graph.plannerChecklistItem');
 
 		$checklist->setIsChecked(true);
@@ -79,7 +79,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->tasksById('plannerTask-id')->details()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->details()->patch($requestBody, $requestConfiguration);
 
 
 ```

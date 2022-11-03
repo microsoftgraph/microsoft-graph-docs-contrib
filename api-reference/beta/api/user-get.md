@@ -1,7 +1,7 @@
 ---
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
-author: "jpettere"
+author: "yyuank"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -52,16 +52,14 @@ GET /me
 
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default. Extension properties also support query parameters as follows:
 
-### Retrieve extensions and associated data
-
-| Extension type                     | Comments                                                                                              |
-|------------------------------------|-------------------------------------------------------------------------------------------------------|
-| onPremisesExtensionAttributes 1-15 | Returned only with `$select`.                                                                         |
-| Schema extensions                  | Returned only with `$select`.                                                                         |
+| Extension type                     | Comments                                                                            |
+|------------------------------------|-------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Returned only with `$select`.                                                       |
+| Schema extensions                  | Returned only with `$select`.                                                       |
 | Open extensions                    | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
-| Directory extensions               | Returned only with `$select`.                                                                         |
+| Directory extensions               | Returned only with `$select`.                                                       |
 
 ## Request headers
 
@@ -418,34 +416,34 @@ In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_schemaextension"
+  "name": "get_schemaextension_for_ext55gb1l09_msLearnCourses_"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?$select=ext55gb1l09_msLearnCourses
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-for-ext55gb1l09-mslearncourses--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextension-for-ext55gb1l09-mslearncourses--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-for-ext55gb1l09-mslearncourses--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-for-ext55gb1l09-mslearncourses--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-for-ext55gb1l09-mslearncourses--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-schemaextension-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-schemaextension-for-ext55gb1l09-mslearncourses--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -24,12 +24,14 @@
         "/partner-center",
         "/powershell",
         "/previous-versions",
+        "/project-for-the-web",
         "/rest",
         "/security",
         "/skypeforbusiness",
         "/sharepoint",
         "/troubleshoot",
         "/windows",
-        "/windows-hardware"
+        "/windows-hardware",
+        "/deployedge"
     ]
 }

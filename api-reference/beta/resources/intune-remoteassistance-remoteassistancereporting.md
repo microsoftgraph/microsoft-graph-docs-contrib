@@ -31,7 +31,7 @@ RemoteAssistanceReporting resources represents the metadata of a given Remote As
 |helperOs|String|Helper's operating system|
 |helperDeviceAadId|String|Helper's device AAD Id|
 |helperDeviceName|String|Helper's device name|
-|helperEnrollmentState|[enrollmentState](../resources/intune-remoteassistance-enrollmentstate.md)|Intune enrollment state of the helper's device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|helperEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune enrollment state of the helper's device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |sharerEmail|String|Login email used by the sharer to establish the session|
 |sharerTenantId|String|Tenant id for the sharer|
 |sharerFirstName|String|Sharer's first name|
@@ -39,7 +39,7 @@ RemoteAssistanceReporting resources represents the metadata of a given Remote As
 |sharerDeviceAadId|String|Sharer's device AAD Id|
 |sharerDeviceName|String|Sharer's device name|
 |sharerOs|String|Sharer's operating system|
-|sharerEnrollmentState|[enrollmentState](../resources/intune-remoteassistance-enrollmentstate.md)|Intune enrollment state of the sharer's device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune enrollment state of the sharer's device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 
 ## Relationships
 None
@@ -76,6 +76,7 @@ Here is a JSON representation of the resource.
   "sharerEnrollmentState": "String"
 }
 ```
+
 
 
 

@@ -39,17 +39,15 @@ GET /groups/{id}
 
 ## Optional query parameters
 
-You can use `$select` to get specific group properties, including those that are not returned by default.
-
-For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
-
-### Retrieve extensions and associated data
+You can use `$select` to get specific group properties, including those that are not returned by default. Extension properties also support query parameters as follows:
 
 | Extension type       | Comments                                                                       |
 |----------------------|--------------------------------------------------------------------------------|
 | Schema extensions    | Returned only with `$select`.                                                  |
 | Open extensions      | Returned through the [Get open extension](opentypeextension-get.md) operation. |
 | Directory extensions | Returned by default.                                                           |
+
+For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -79,12 +77,12 @@ The following is an example of a GET request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 ```
 
 # [C#](#tab/csharp)
@@ -133,22 +131,20 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
-    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/b320ee12-b1cd-4cca-b648-a437be61c5cd/Microsoft.DirectoryServices.Group",
-    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "id": "02bd9fd6-8f93-4758-87c3-1fb73740a315",
     "deletedDateTime": null,
     "classification": null,
-    "createdDateTime": "2021-09-13T10:07:01Z",
-    "creationOptions": [],
-    "description": "Self help community for library",
-    "displayName": "Library Assist",
-    "expirationDateTime": "2022-01-11T10:07:01Z",
+    "createdDateTime": "2017-07-31T18:56:16Z",
+    "description": "Welcome to the HR Taskforce team.",
+    "displayName": "HR Taskforce",
+    "expirationDateTime": null,
     "groupTypes": [
         "Unified"
     ],
     "isAssignableToRole": null,
-    "mail": "library@contoso.com",
+    "mail": "HRTaskforce@M365x214355.onmicrosoft.com",
     "mailEnabled": true,
-    "mailNickname": "library",
+    "mailNickname": "HRTaskforce",
     "membershipRule": null,
     "membershipRuleProcessingState": null,
     "onPremisesDomainName": null,
@@ -157,19 +153,21 @@ Content-type: application/json
     "onPremisesSamAccountName": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "EU",
+    "preferredDataLocation": null,
     "preferredLanguage": null,
     "proxyAddresses": [
-        "SPO:SPO_0dbffe23-f6fb-4478-adcd-880daf88bb12@SPO_84841066-274d-4ec0-a5c1-276be684bdd3",
-        "SMTP:library@contoso.com"
+        "SMTP:HRTaskforce@M365x214355.onmicrosoft.com",
+        "SPO:SPO_896cf652-b200-4b74-8111-c013f64406cf@SPO_dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
     ],
-    "renewedDateTime": "2021-09-13T10:07:01Z",
+    "renewedDateTime": "2020-01-24T19:01:14Z",
     "resourceBehaviorOptions": [],
-    "resourceProvisioningOptions": [],
+    "resourceProvisioningOptions": [
+        "Team"
+    ],
     "securityEnabled": false,
-    "securityIdentifier": "S-1-12-1-1306860066-1319449225-59104187-458188010",
+    "securityIdentifier": "S-1-12-1-45981654-1196986259-3072312199-363020343",
     "theme": null,
-    "visibility": "Public",
+    "visibility": "Private",
     "onPremisesProvisioningErrors": []
 }
 ```
@@ -186,12 +184,12 @@ The following is an example of a GET request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group_non_default"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
 
 # [C#](#tab/csharp)
@@ -237,11 +235,11 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
-    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "id": "02bd9fd6-8f93-4758-87c3-1fb73740a315",
     "allowExternalSenders": false,
     "autoSubscribeNewMembers": false,
     "isSubscribedByMail": false,
-    "unseenCount": 0
+    "unseenCount": 3
 }
 ```
 

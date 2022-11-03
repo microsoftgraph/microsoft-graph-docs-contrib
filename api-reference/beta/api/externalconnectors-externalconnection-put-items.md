@@ -97,7 +97,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_externalitem_from_connections",
-  "@odata.type": "microsoft.graph.externalConnectors.externalItem"
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }-->
 
 ```http

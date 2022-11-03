@@ -54,7 +54,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_mailfolder"
+  "name": "update_mailfolder",
+  "sampleKeys": ["AAMkAGVmMDEzM"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM

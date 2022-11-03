@@ -14,8 +14,6 @@ $requestBody->setDisplayname('My legalHold with sources');
 
 $requestBody->setDescription('Created from Graph API');
 
-$requestBody->setContentQuery('Bazooka');
-
 $additionalData = [
 'userSources@odata.bind' => $userSources@odatabind1 = new ();
 $		userSources@odatabind1->set@odatatype('microsoft.graph.security.userSource');
@@ -30,7 +28,7 @@ $requestBody->setUserSources@odatabind($userSources@odata.bindArray);
 'siteSources@odata.bind' => $siteSources@odatabind1 = new ();
 $	siteSources@odatabind1->set@odatatype('microsoft.graph.security.siteSource');
 
-$siteSources@odatabind1Site = new ();
+$siteSources@odatabind1Site = new Site();
 $	siteSources@odatabind1Site->setWebUrl('https://m365x809305.sharepoint.com/sites/Design-topsecret');
 
 

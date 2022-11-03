@@ -21,6 +21,8 @@ Throttling limits vary based on the scenario. For example, if you are performing
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 <!-- markdownlint-enable MD034 -->
+> [!div class="nextstepaction"]
+> [Learn: Optimize network traffic with Microsoft Graph](/training/modules/optimize-network-traffic)
 
 <!-- markdownlint-disable MD026 -->
 ## What happens when throttling occurs?

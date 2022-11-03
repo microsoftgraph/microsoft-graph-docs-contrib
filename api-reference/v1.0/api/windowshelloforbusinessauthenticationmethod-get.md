@@ -74,7 +74,8 @@ If successful, this method returns a `200 OK` response code and a [windowsHelloF
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_windowshelloforbusinessauthenticationmethod"
+  "name": "get_windowshelloforbusinessauthenticationmethod",
+  "sampleKeys": ["annie@contoso.com", "_jpuR-TGZtk6aQCLF3BQjA2"]
 }
 -->
 ``` http

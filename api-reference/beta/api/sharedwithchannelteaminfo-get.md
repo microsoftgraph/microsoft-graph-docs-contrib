@@ -1,6 +1,6 @@
 ---
 title: "Get sharedWithChannelTeamInfo"
-description: "Get a team shared with a channel."
+description: "Get a team that has been shared with a specified channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [team](../resources/sharedwithchannelteaminfo.md) which has been shared a specified [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
+Get a [team](../resources/sharedwithchannelteaminfo.md) that has been shared with a specified [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_sharedwithchannelteaminfo"
+  "name": "get_sharedwithchannelteaminfo",
+  "sampleKeys": ["893075dd-2487-5634-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2", "893075dd-2487-5634-925f-022c42e20265"]
 }
 -->
 ``` http

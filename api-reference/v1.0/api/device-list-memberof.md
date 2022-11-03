@@ -137,7 +137,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/$count
 ConsistencyLevel: eventual
 ```
@@ -166,7 +166,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_video_count"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$search="displayName:Video"
 ConsistencyLevel: eventual
 ```

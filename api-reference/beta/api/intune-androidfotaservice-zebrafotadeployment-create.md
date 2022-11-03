@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/zebraFotaDeployments
 Content-type: application/json
-Content-length: 1892
+Content-length: 2024
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaDeployment",
@@ -78,6 +78,7 @@ Content-length: 1892
     "deviceModel": "Device Model value",
     "updateType": "latest",
     "timeZoneOffsetInMinutes": 7,
+    "firmwareTargetArtifactDescription": "Firmware Target Artifact Description value",
     "firmwareTargetBoardSupportPackageVersion": "Firmware Target Board Support Package Version value",
     "firmwareTargetPatch": "Firmware Target Patch value",
     "firmwareTargetOsVersion": "Firmware Target Os Version value",
@@ -95,6 +96,7 @@ Content-length: 1892
     {
       "@odata.type": "microsoft.graph.androidFotaDeploymentAssignment",
       "id": "Id value",
+      "displayName": "Display Name value",
       "target": {
         "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
         "groupId": "Group Id value"
@@ -126,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1941
+Content-Length: 2073
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaDeployment",
@@ -138,6 +140,7 @@ Content-Length: 1941
     "deviceModel": "Device Model value",
     "updateType": "latest",
     "timeZoneOffsetInMinutes": 7,
+    "firmwareTargetArtifactDescription": "Firmware Target Artifact Description value",
     "firmwareTargetBoardSupportPackageVersion": "Firmware Target Board Support Package Version value",
     "firmwareTargetPatch": "Firmware Target Patch value",
     "firmwareTargetOsVersion": "Firmware Target Os Version value",
@@ -155,6 +158,7 @@ Content-Length: 1941
     {
       "@odata.type": "microsoft.graph.androidFotaDeploymentAssignment",
       "id": "Id value",
+      "displayName": "Display Name value",
       "target": {
         "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
         "groupId": "Group Id value"
@@ -180,6 +184,7 @@ Content-Length: 1941
   }
 }
 ```
+
 
 
 

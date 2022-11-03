@@ -1,17 +1,17 @@
 ---
-title: "List extensionProperties"
-description: "Retrieve a list of extensionproperty objects."
+title: "List extensionProperties (directory extensions)"
+description: "Retrieve a list of directory extension definitions."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
 
-# List extensionProperties
+# List extensionProperties (directory extensions)
 
 Namespace: microsoft.graph
 
-Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
+Retrieve the list of directory extension definitions, represented by [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
 
 ## Permissions
 
@@ -33,7 +33,7 @@ GET /applications/{application ObjectId}/extensionProperties
 
 ## Optional query parameters
 
-This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` (`eq` on **name**) OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

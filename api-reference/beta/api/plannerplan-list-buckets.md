@@ -49,7 +49,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_buckets_2"
+  "name": "get_buckets_2",
+  "sampleKeys": ["2txjA-BMZEq-bKi6Wfj5aGQAB1OJ"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/buckets

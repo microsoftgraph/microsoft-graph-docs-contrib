@@ -26,7 +26,7 @@ $endTime->setTimeZone('Pacific Standard Time');
 
 
 $requestBody->setEndTime($endTime);
-$requestBody->setAvailabilityViewInterval(availabilityViewInterval);
+$requestBody->setAvailabilityViewInterval(60);
 
 
 $requestConfiguration = new GetScheduleRequestBuilderPostRequestConfiguration();

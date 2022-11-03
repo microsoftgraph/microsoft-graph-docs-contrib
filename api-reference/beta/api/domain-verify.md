@@ -57,7 +57,8 @@ If successful, this method returns `200 OK` response code and [domain](../resour
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "domain_verify"
+  "name": "domain_verify",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/verify

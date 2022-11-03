@@ -12,7 +12,7 @@ assignedTo := "String"
 requestBody.SetAssignedTo(&assignedTo) 
 closedDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetClosedDateTime(&closedDateTime) 
-comments := []String {
+comments := []string {
 	"String",
 
 }
@@ -21,7 +21,7 @@ feedback := graphmodels.ALERTFEEDBACK_GRAPH_TYPE: MICROSOFT_@ODATA_ALERTFEEDBACK
 requestBody.SetFeedback(&feedback) 
 status := graphmodels.ALERTSTATUS_GRAPH_TYPE: MICROSOFT_@ODATA_ALERTSTATUS 
 requestBody.SetStatus(&status) 
-tags := []String {
+tags := []string {
 	"String",
 
 }
@@ -33,7 +33,7 @@ vendor := "String"
 vendorInformation.SetVendor(&vendor) 
 requestBody.SetVendorInformation(vendorInformation)
 
-graphClient.Security().AlertsById("alert-id").Patch(requestBody)
+result, err := graphClient.Security().AlertsById("alert-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3580
+Content-Length: 3679
 
 {
   "value": [
@@ -108,6 +108,7 @@ Content-Length: 3580
       "passwordPreviousPasswordBlockCount": 2,
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "passwordRequiredType": "lowSecurityBiometric",
+      "requiredPasswordComplexity": "low",
       "workProfileDataSharingType": "preventAny",
       "workProfileBlockNotificationsWhileDeviceLocked": true,
       "workProfileBlockAddingAccounts": true,
@@ -134,6 +135,7 @@ Content-Length: 3580
       "workProfilePasswordPreviousPasswordBlockCount": 13,
       "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
       "workProfilePasswordRequiredType": "lowSecurityBiometric",
+      "workProfileRequiredPasswordComplexity": "low",
       "workProfileRequirePassword": true,
       "securityRequireVerifyApps": true,
       "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
@@ -144,6 +146,7 @@ Content-Length: 3580
   ]
 }
 ```
+
 
 
 

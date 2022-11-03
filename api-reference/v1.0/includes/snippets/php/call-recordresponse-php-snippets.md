@@ -18,7 +18,7 @@ $promptsPrompt1 = new Prompt();
 $promptsPrompt1->set@odatatype('#microsoft.graph.mediaPrompt');
 
 $additionalData = [
-'mediaInfo' => $promptsPrompt1 = new ();
+'mediaInfo' => $promptsPrompt1 = new MediaInfo();
 $		promptsPrompt1->setUri('https://cdn.contoso.com/beep.wav');
 
 $		promptsPrompt1->setResourceId('1D6DE2D4-CD51-4309-8DAA-70768651088E');
@@ -35,11 +35,11 @@ $promptsArray []= $promptsPrompt1;
 $requestBody->setPrompts($promptsArray);
 
 
-$requestBody->setMaxRecordDurationInSeconds(maxRecordDurationInSeconds);
+$requestBody->setMaxRecordDurationInSeconds(10);
 
-$requestBody->setInitialSilenceTimeoutInSeconds(initialSilenceTimeoutInSeconds);
+$requestBody->setInitialSilenceTimeoutInSeconds(5);
 
-$requestBody->setMaxSilenceTimeoutInSeconds(maxSilenceTimeoutInSeconds);
+$requestBody->setMaxSilenceTimeoutInSeconds(2);
 
 $requestBody->setPlayBeep(true);
 

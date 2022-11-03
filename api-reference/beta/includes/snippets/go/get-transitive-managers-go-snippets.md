@@ -10,17 +10,20 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestCount := true
+
 requestParameters := &graphconfig.MeRequestBuilderGetQueryParameters{
 	Expand: [] string {"manager($levels=max;$select=id,displayName)"},
 	Select: [] string {"id","displayName"},
-	Count: true,
+	Count: &requestCount,
 }
 configuration := &graphconfig.MeRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().Get(context.Background(), configuration)
 
 
 ```

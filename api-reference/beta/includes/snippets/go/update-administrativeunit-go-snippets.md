@@ -15,7 +15,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.AdministrativeUnitsById("administrativeUnit-id").Patch(requestBody)
+result, err := graphClient.AdministrativeUnitsById("administrativeUnit-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

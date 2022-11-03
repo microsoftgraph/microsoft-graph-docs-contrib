@@ -14,29 +14,26 @@ $requestBody->setGivenName('Pavel');
 
 $requestBody->setSurname('Bansky');
 
-$emailAddresses1 = new ();
-$additionalData = [
-'address' => 'pavelb@contoso.onmicrosoft.com', 
-'name' => 'Pavel Bansky', 
-'type' => 'personal', 
-];
-$emailAddresses1->setAdditionalData($additionalData);
+$emailAddressesTypedEmailAddress1 = new TypedEmailAddress();
+$emailAddressesTypedEmailAddress1->setAddress('pavelb@contoso.onmicrosoft.com');
+
+$emailAddressesTypedEmailAddress1->setName('Pavel Bansky');
+
+$emailAddressesTypedEmailAddress1->setType(new EmailType('personal'));
 
 
+$emailAddressesArray []= $emailAddressesTypedEmailAddress1;
+$emailAddressesTypedEmailAddress2 = new TypedEmailAddress();
+$emailAddressesTypedEmailAddress2->setAddress('pavelb@fabrikam.onmicrosoft.com');
 
-$emailAddressesArray []= $emailAddresses1;
-$emailAddresses2 = new ();
-$additionalData = [
-'address' => 'pavelb@fabrikam.onmicrosoft.com', 
-'name' => 'Pavel Bansky', 
-'type' => 'other', 
-'otherLabel' => 'Volunteer work', 
-];
-$emailAddresses2->setAdditionalData($additionalData);
+$emailAddressesTypedEmailAddress2->setName('Pavel Bansky');
 
+$emailAddressesTypedEmailAddress2->setType(new EmailType('other'));
+
+$emailAddressesTypedEmailAddress2->setOtherLabel('Volunteer work');
 
 
-$emailAddressesArray []= $emailAddresses2;
+$emailAddressesArray []= $emailAddressesTypedEmailAddress2;
 $requestBody->setEmailAddresses($emailAddressesArray);
 
 

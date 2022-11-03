@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [call](../reso
   "name": "get-call-1"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/{id}
 ```
 
@@ -169,7 +169,7 @@ Content-Type: application/json
   "blockType": "request",
   "name": "get-call-2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
 

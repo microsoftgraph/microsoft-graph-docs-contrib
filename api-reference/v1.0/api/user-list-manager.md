@@ -2,7 +2,7 @@
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 ms.localizationpriority: high
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -36,8 +36,7 @@ GET /users/{id | userPrincipalName}/manager
 Get the management chain:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me?$expand=manager
-GET /users?$expand=manager($levels=n)
+GET /users?$expand=manager
 GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
@@ -49,6 +48,8 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 > + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
 > + When the `$levels` parameter is not specified, only the immediate manager is returned.  
 > + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`.
+> + `$levels` parameter is only supported on a single user (`/users/{id}` or `me` endpoints) and not on the entire list of users.
+> + `$levels` requires the **ConsistencyLevel** header set to `eventual` and `$count=true` in query string. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
@@ -133,11 +134,9 @@ Content-type: application/json
 
 ### Example 2: Get manager chain up to the root level
 
-The following example shows a request to get the manager chain up to the root level. This request requires the **ConsistencyLevel** header set to `eventual` because `$count=true` query string is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+The following example shows a request to get the manager chain up to the root level.
 
 #### Request
-
-
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,6 +3,7 @@ title: "Add custom data to resources using extensions"
 description: "You can extend Microsoft Graph with your own application data. Add custom properties for storing custom data in Microsoft Graph resources without requiring an external data store."
 author: "dkershaw10"
 ms.localizationpriority: high
+ms.prod: "extensions"
 ms.custom: graphiamtop20
 ---
 
@@ -14,27 +15,31 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 
 > [!IMPORTANT]
 > Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
+>
+> The extensions mentioned in this article are not similar to Azure AD [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with directory extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-directory-extensions).
 
-## Why add custom properties to Microsoft Graph?
 
-> [!IMPORTANT]
-> You should not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
+> [!div class="nextstepaction"]
+> [Learn: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
+
+## Why add custom data to Microsoft Graph?
+
 * As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
 * Alternatively, you might want to retain your app’s existing user profile store, and add an app-specific identifier to the **user** resource.
-* As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this data in custom properties in Microsoft Graph.
+* As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this custom data in Microsoft Graph.
 
-## Custom property options in Microsoft Graph
+## Custom data options in Microsoft Graph
 
-Microsoft Graph offers four types of extensions for adding custom properties.
+Microsoft Graph offers four types of extensions for adding custom data.
 
-- Extension attributes properties
+- Extension attributes
 - Directory (Azure AD) extensions
 - Schema extensions
 - Open extensions
 
 ### Extension attributes
 
-Azure AD offers a set of 15 custom properties with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
+Azure AD offers a set of 15 extension attributes with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
 
 #### Developer experience
 
@@ -451,7 +456,6 @@ The table below contrasts and compares the extension types, which should help yo
 | Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
 | Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
 
-
 > [!NOTE]
 > 
 > <sup>1</sup> Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
@@ -461,6 +465,36 @@ The table below contrasts and compares the extension types, which should help yo
 > <sup>3</sup> Each [open extension](/graph/api/resources/opentypeextension) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. This limit applies to the following Outlook resources: **message**, **event**, and **contact**
 >
 > You can manage all extensions when you're signed in with a work or school account. Additionally, you can manage open extensions for the following resources when signed-in with a personal Microsoft account: **event**, **post**, **group**, **message**, **contact**, and **user**.
+
+### Considerations for using extension attribute properties
+
+The **onPremisesExtensionAttributes** object can be updated only for objects that aren't synced from on-premises AD.
+
+The 15 extension attributes are already predefined in Microsoft Graph and their property names can't be changed. Therefore, you can't use custom names such as **SkypeId** for the extension attributes. This requires you and the organization to be aware of the extension attribute properties that are in use so that the values aren't inadvertently overwritten by other apps.
+
+### Considerations for using directory extensions
+
+If you accidentally delete a directory extension definition, any data that's stored in the associated property becomes undiscoverable. To resolve this, create a new directory extension definition on the same owner app and with exactly the same name as the deleted definition.
+
+When the definition object is deleted before the corresponding extension property is updated to `null`, the property will still count against the 100-limit for the object.
+
+When the definition is deleted before data in the associated extension property is deleted, there's no way to know the existence of the extension property via Microsoft Graph - even though the undiscoverable property counts against the 100-limit.
+
+Deleting an owner app in the home tenant makes the associated directory extension properties and their data undiscoverable. Restoring an owner app restores the directory extension definitions *but doesn't* make the directory extension properties or their data immediately discoverable. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. To make the directory extension properties and their data discoverable, either create a new service principal or restore the deleted service principal. NO changes are made to other tenants where the app has been consented to.
+
+<!-- Needs further testing; weird behavior.
+If a multi-tenant application creates additional directory extensions in an app that has been consented to by other tenants, the associated directory extension properties become immediately available for use by the other tenants.
+-->
+
+### Considerations for using schema extensions
+
+Deleting a schema extension definition without setting the schema extension to `null` makes the property and its associated user data undiscoverable.
+
+Deleting an owner app in the home tenant doesn't delete the associated schema extension definition or the property and the data it stores. The schema extension property can still be read, deleted, or updated for users. However, the schema extension definition can't be updated.
+
+### Considerations for using open extensions
+
+Deleting a creator app doesn't affect the open extension and the data it stores.
 
 ## Permissions
 

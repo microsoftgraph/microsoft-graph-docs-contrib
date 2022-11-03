@@ -1,5 +1,5 @@
 ---
-author: swapnil1993
+author: "swapnil1993"
 title: "contentType: isPublished"
 description: "Check the publishing status of a content type in a content type hub site."
 ms.localizationpriority: medium
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Sites.FullControl.All    |
-|Delegated (personal Microsoft account) | Not Supported   |
+|Delegated (personal Microsoft account) | Not supported.   |
 |Application | Sites.FullControl.All |
 
 ## HTTP request
@@ -38,7 +38,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 |Authorization|Bearer {token}. Required.|
 
 ## Response
-If successful, this call returns a `200 OK` response and a Boolean value that specifies the publishing status of the content type.
+If successful, this method returns a `200 OK` response code and a Boolean value that specifies the publishing status of the content type.
 
 ## Request body
 Do not supply a request body for this method.
@@ -47,6 +47,7 @@ Do not supply a request body for this method.
 
 ### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,6 +87,9 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}
 
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

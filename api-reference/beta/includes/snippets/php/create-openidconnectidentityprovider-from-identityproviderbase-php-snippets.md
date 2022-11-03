@@ -17,7 +17,7 @@ $requestBody->setDisplayName('Login with the Contoso identity provider');
 $additionalData = [
 'clientId' => '56433757-cadd-4135-8431-2c9e3fd68ae8', 
 'clientSecret' => '12345', 
-'claimsMapping' => $requestBody = new ();
+'claimsMapping' => $requestBody = new ClaimsMapping();
 $		requestBody->setUserId('myUserId');
 
 $		requestBody->setGivenName('myGivenName');

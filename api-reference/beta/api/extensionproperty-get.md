@@ -1,18 +1,18 @@
 ---
-title: "Get extensionProperty"
-description: "Read an extensionProperty object."
+title: "Get extensionProperty (directory extension)"
+description: "Read a directory extension definition."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 
-# Get extensionProperty
+# Get extensionProperty (directory extension)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read an [extensionProperty](../resources/extensionproperty.md) object.
+Read a directory extension definition represented by an [extensionProperty](../resources/extensionproperty.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

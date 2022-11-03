@@ -2,7 +2,7 @@
 title: "Delete subscription"
 description: "Delete a subscription."
 ms.localizationpriority: medium
-author: "Jumaodhiss"
+author: "jumasure"
 doc_type: apiPageType
 ms.prod: "change-notifications"
 ---

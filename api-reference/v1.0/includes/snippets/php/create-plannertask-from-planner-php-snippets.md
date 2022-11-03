@@ -18,7 +18,7 @@ $requestBody->setTitle('Update client list');
 
 $assignments = new PlannerAssignments();
 $additionalData = [
-'fbab97d0-4932-4511-b675-204639209557' => $assignments = new ();
+'fbab97d0-4932-4511-b675-204639209557' => $assignments = new Fbab97d0-4932-4511-b675-204639209557();
 $		assignments->set@odatatype('#microsoft.graph.plannerAssignment');
 
 $		assignments->setOrderHint(' !');

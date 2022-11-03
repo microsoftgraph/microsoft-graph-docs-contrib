@@ -61,7 +61,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_permissiongrantpolicy"
+  "name": "get_permissiongrantpolicy",
+  "sampleKeys": ["microsoft-user-default-low"]
 }-->
 
 ```msgraph-interactive
