@@ -5,8 +5,12 @@ on:
     types:
       - "opened"
 
+permissions: {}
 jobs:
   assign_to_author_job:
+    permissions:
+      issues: write  #  to modify issue
+
     runs-on: ubuntu-latest
     name: Assign issue to author
     steps:
