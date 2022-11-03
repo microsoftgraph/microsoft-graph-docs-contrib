@@ -1,6 +1,6 @@
 ---
 title: "adminWindows resource type"
-description: "A container for all Windows administrator functionality."
+description: "Represents a container for all Windows administrator functionalities."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for all Windows administrator functionality.
+Represents a container for all Windows administrator functionalities.
 
 ## Properties
 None.
@@ -21,7 +21,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|updates|[adminWindowsUpdates](../resources/adminwindowsupdates.md)|Entity that acts as a container for all Windows Update for Business deployment service functionality. Read-only.|
+|updates|[adminWindowsUpdates](../resources/adminwindowsupdates.md)|Entity that acts as a container for all Windows Update for Business deployment service functionalities. Read-only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -36,4 +36,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.adminWindows"
 }
 ```
-

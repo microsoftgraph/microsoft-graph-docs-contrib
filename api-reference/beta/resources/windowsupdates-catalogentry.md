@@ -1,6 +1,6 @@
 ---
 title: "catalogEntry resource type"
-description: "Metadata for a piece of content that you can approve for deployment."
+description: "An abstract type that represents metadata for a piece of content that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,13 +13,11 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata for a piece of content that you can approve for deployment.
+An abstract type that represents metadata for a piece of content that you can approve for deployment.
 
 All catalog entries exist as one of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md), [driverUpdateCatalogEntry](../resources/windowsupdates-driverupdatecatalogentry.md), and [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).
 
 Base type for [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
-
-This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
@@ -44,10 +42,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.catalogEntry",
-  "id": "String (identifier)",
+  "deployableUntilDateTime": "String (timestamp)",
   "displayName": "String",
-  "releaseDateTime": "String (timestamp)",
-  "deployableUntilDateTime": "String (timestamp)"
+  "id": "String (identifier)",
+  "releaseDateTime": "String (timestamp)"
 }
 ```
-

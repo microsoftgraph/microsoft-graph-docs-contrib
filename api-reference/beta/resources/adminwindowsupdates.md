@@ -1,6 +1,6 @@
 ---
 title: "adminWindowsUpdates resource type"
-description: "Entity that acts as a container for all Windows Update for Business deployment service functionality."
+description: "Represents an entity that acts as a container for all Windows Update for Business deployment service functionalities."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entity that acts as a container for all Windows Update for Business deployment service functionality.
+Represents an entity that acts as a container for all Windows Update for Business deployment service functionalities.
 
 ## Relationships
 |Relationship|Type|Description|
@@ -35,7 +35,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.adminWindowsUpdates",
+  "@odata.type": "#microsoft.graph.adminWindowsUpdates"
 }
 ```
-

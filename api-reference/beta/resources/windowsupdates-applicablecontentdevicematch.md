@@ -1,6 +1,6 @@
 ---
 title: "applicableContentDeviceMatch resource type"
-description: "Collection of devices and recommendations for applicable catalog content."
+description: "Represents a collection of devices and recommendations for applicable catalog content."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,18 +13,17 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Collection of devices and recommendations for applicable catalog content.
-
+Represents a collection of devices and recommendations for applicable catalog content.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|recommendedBy|Collection(String)|Collection of vendors recommending the content.|
+| Property      | Type              | Description                                      |
+|:--------------|:------------------|:-------------------------------------------------|
+| recommendedBy | String collection | Collection of vendors who recommend the content. |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|device|[microsoft.graph.device](../resources/device.md)|Represents a device registered in the directory.|
+| Relationship | Type                                             | Description                                      |
+|:-------------|:-------------------------------------------------|:-------------------------------------------------|
+| device       | [microsoft.graph.device](../resources/device.md) | Represents a device registered in the directory. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -36,10 +35,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.applicableContentDeviceMatch",
-  "device": {
-    "@odata.type": "#microsoft.graph.device"
-  },
   "recommendedBy": ["String"]
 }
 ```
-

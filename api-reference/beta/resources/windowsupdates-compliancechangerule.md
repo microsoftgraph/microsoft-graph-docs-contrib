@@ -1,6 +1,6 @@
 ---
 title: "complianceChangeRule resource type"
-description: "Rule governing the automatic creation of compliance changes."
+description: "An abstract type that represents a rule for governing the automatic creation of compliance changes."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,16 +13,14 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rule governing the automatic creation of compliance changes.
-
-This is an abstract type.
+An abstract type that represents a rule for governing the automatic creation of compliance changes.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when created.|
-|lastEvaluatedDateTime|DateTimeOffset|The date and time the rule was last evaluated.|
-|lastModifiedDateTime|DateTimeOffset|The date and time last modified.|
+| Property              | Type           | Description                                         |
+|:----------------------|:---------------|:----------------------------------------------------|
+| createdDateTime       | DateTimeOffset | The date and time when the rule was created.        |
+| lastEvaluatedDateTime | DateTimeOffset | The date and time when the rule was last evaluated. |
+| lastModifiedDateTime  | DateTimeOffset | The date and time when the rule was last modified.  |
 
 ## Relationships
 None.
@@ -42,4 +40,3 @@ The following is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

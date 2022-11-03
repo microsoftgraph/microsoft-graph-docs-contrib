@@ -1,6 +1,6 @@
 ---
 title: "complianceChange resource type"
-description: "Compliance changes represent a change to enforce policy such as approving content."
+description: "An abstract type that represents a change to enforce policy such as approving content."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Compliance changes represent a change to enforce policy such as approving content.
-
-This is an abstract type.
+An abstract type that represents a change to enforce policy such as approving content.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,17 +24,17 @@ This is an abstract type.
 |[Delete complianceChange](../api/windowsupdates-compliancechange-delete.md)|None|Delete a [microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) object.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when created.|
-|id|String|The unique identifier for the compliance change. Returned by default. Key. Not nullable. Read-only.|
-|isRevoked|Boolean|Set to **true** to revoke the change and prevent further application. Revoking a compliance change is a final action.|
-|revokedDateTime|DateTimeOffset|Date and time the compliance change was revoked.|
+| Property        | Type           | Description                                                                                                                           |
+|:----------------|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------|
+| createdDateTime | DateTimeOffset | The date and time when a compliance change was created.                                                                               |
+| id              | String         | The unique identifier for the compliance change. Returned by default. Not nullable. Read-only.                                        |
+| isRevoked       | Boolean        | `True` indicates that a compliance change is revoked, preventing further application. Revoking a compliance change is a final action. |
+| revokedDateTime | DateTimeOffset | The date and time when the compliance change was revoked.                                                                             |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|updatePolicy|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|The policy this compliance change is a member of.|
+| Relationship | Type                                                                                       | Description                                       |
+|:-------------|:-------------------------------------------------------------------------------------------|:--------------------------------------------------|
+| updatePolicy | [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) | The policy this compliance change is a member of. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -50,10 +48,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.complianceChange",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "isRevoked": "Boolean",
   "revokedDateTime": "String (timestamp)"
 }
 ```
-
