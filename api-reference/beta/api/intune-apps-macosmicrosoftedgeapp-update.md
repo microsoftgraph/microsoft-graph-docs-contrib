@@ -70,7 +70,7 @@ The following table shows the properties that are required when you create the [
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. Possible values are: `dev`, `beta`, `stable`.|
+|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. Possible values are: `dev`, `beta`, `stable`, `unknownFutureValue`.|
 
 
 
