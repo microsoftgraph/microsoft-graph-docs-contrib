@@ -727,6 +727,8 @@ items:
                 href: teams-change-notification-in-microsoft-teams-overview.md
               - name: Subscribe for online meetings
                 href: changenotifications-for-onlinemeeting.md
+              - name: Subscribe to virtual events
+              href: changenotifications-for-virtualevent.md
           - name: Groups and teams
             items:
               - name: Create a group and team
