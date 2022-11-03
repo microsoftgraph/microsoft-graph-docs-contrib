@@ -1,0 +1,9 @@
+{
+    "redirections": [
+        {
+            "source_path_from_root": "/api-reference/beta/resources/identitygovernance-usersprocessingsummary.md",
+            "redirect_url": "/api-reference/beta/resources/identitygovernance-usersummary.md",
+            "redirect_document_id": false
+        }
+    ]
+}
