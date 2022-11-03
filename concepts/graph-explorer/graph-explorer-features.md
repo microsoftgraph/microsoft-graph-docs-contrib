@@ -7,7 +7,7 @@ author: RabebOthmani
 
 # Work with Graph Explorer
 
-[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you learn about Microsoft Graph APIs. It has a variety of features to help you on your journey. This article describes some of the important features of Graph Explorer and how to use them.
+[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that you can use to learn about Microsoft Graph APIs. It has a variety of features to help you on your journey. This article describes some of the important features of Graph Explorer and how to use them.
 
 For an overview, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
 
@@ -20,8 +20,8 @@ From the top navigation, you can sign in, view the tenant you're using, access y
 - **Tenant**: View the tenant you are currently using.
 - **Settings**: Access Graph Explorer settings to change the interface theme or to get a free instant sandbox preconfigured with sample data packs.
 - **Help**: Access useful links such as the documentation or the GitHub repo for Graph Explorer.
-- **Feedback**: If you wish to provide feedback, you can fill in the survey form.
-- **Profile avatar**: Sign in, view your profile, consent to permissions, switch accounts or sign out of your account. For more on consenting to permissions, see [Consent to permissions](#consent-to-permissions).
+- **Feedback**: If you want to provide feedback, you can fill in the survey form.
+- **Profile avatar**: Sign in, view your profile, consent to permissions, switch accounts, or sign out of your account. For details about consenting to permissions, see [Consent to permissions](#consent-to-permissions).
 
 ### Consent to permissions
 
@@ -29,12 +29,12 @@ The user or administrator must grant Graph Explorer the correct permissions by u
 
 The **Consent to permissions** option in the profile avatar contains the list of all available permissions:
 
-1. Click on the profile avatar and choose the **Consent to permissions** option. This option contains the list of all available permissions.
+1. Click the profile avatar and choose the **Consent to permissions** option. This option contains the list of all available permissions.
 2. From the list of all the permissions, consent to the ones you want.
 
 ![Screenshot of Graph Explorer with the Select permissions option highlighted](./images/consent-permissions.png)
 
-The **Modify permissions** tab lists all the permissions that might let you run the query in the address bar. When possible, choose the least privileged permission.
+The **Modify permissions** tab lists all the permissions that you might need to run the query in the address bar. When possible, choose the least privileged permission.
 
 To consent to permissions:
 
@@ -46,7 +46,7 @@ To consent to permissions:
 ![Screenshot of Graph Explorer with the steps to consent to permissions highlighted](./images/modify-permissions-screenshot.png)
 
 > [!NOTE] 
-> The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions.
+> The **Modify permissions** feature is currently in preview, and some queries might be missing permissions.
 
 ## Left pane
 
@@ -118,7 +118,7 @@ In addition to the response, this pane also includes:
 - [Microsoft Graph Toolkit integration](#microsoft-graph-toolkit-integration)
 - [Adaptive cards integration](#adaptive-cards-integration)
 
-### Leverage the power of the client libraries
+### Use the power of the client libraries
 
 For each REST API query that you select or enter in Graph Explorer, you can find how to make that call in each of the supported languages: C#, Java, JavaScript, Go and PowerShell.
 
@@ -126,7 +126,7 @@ For each REST API query that you select or enter in Graph Explorer, you can find
 
 ### Microsoft Graph Toolkit integration
 
-The [Microsoft Graph Toolkit](../toolkit/overview.md) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built-in providers that authenticate with and fetch data from Microsoft Graph.
+[Microsoft Graph Toolkit](../toolkit/overview.md) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built-in providers that authenticate with and fetch data from Microsoft Graph.
 
 Graph Explorer allows you to visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the **toolkit component** tab indicates that the Toolkit provides a component for the currently specified REST API query in Graph Explorer. You can conveniently copy the code for the component to your app.
 
