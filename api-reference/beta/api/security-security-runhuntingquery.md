@@ -48,7 +48,7 @@ POST /security/runHuntingQuery
 
 ## Request body
 
-In the request body, provide a JSON object for the parameter, `query`. 
+In the request body, provide a JSON object for the parameter, `Query`. 
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
