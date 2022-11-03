@@ -285,7 +285,13 @@ items:
               - name: Set up Microsoft Teams
                 href: msgraph-onboarding-msteams.md
               - name: Use Graph Explorer with education APIs
-                href: msgraph-onboarding-graphexplorer.md                                                                                            
+                href: msgraph-onboarding-graphexplorer.md
+          - name: Connecting with Assignments and Grades
+            items:
+              - name: Overview
+                href: msgraph-customer-scenarios.md
+              - name: Assignments and Grades data
+                href: msgraph-customer-assignmentgradedatafortool.md
       - name: Extensions
         items:
           - name: Overview
