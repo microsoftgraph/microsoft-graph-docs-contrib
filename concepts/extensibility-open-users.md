@@ -35,6 +35,7 @@ whatever device they sign in to the app from.  Here we'll see how to add the roa
 ```http
 POST https://graph.microsoft.com/v1.0/me/extensions
 Content-type: application/json
+
 {
     "@odata.type":"microsoft.graph.openTypeExtension",
     "extensionName":"com.contoso.roamingSettings",
@@ -149,6 +150,7 @@ The user can choose to change their roaming profile information.  This update ca
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 Content-type: application/json
+
 {
     "theme":"light",
     "color":"yellow",

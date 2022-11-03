@@ -212,6 +212,9 @@ items:
       - name: Device and app management
         expanded: true
         items:
+          - name: Browser management
+            href: browser-edge-concept-overview.md
+            displayName: Edge, Internet Explorer, IE mode, site list
           - name: Cloud printing
             items:
               - name: Overview
