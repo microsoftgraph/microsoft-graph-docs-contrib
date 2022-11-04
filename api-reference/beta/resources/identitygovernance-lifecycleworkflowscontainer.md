@@ -36,7 +36,9 @@ Inherits from [entity](../resources/entity.md).
 
 ## Properties
 
-None
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Identifier used for individually addressing the lifecycle workflows objects. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 
