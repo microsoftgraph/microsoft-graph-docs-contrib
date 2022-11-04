@@ -1,6 +1,6 @@
 ---
 title: "timeOffReason resource type"
-description: "Represents a valid reason to take time-off in a schedule."
+description: "Represents a valid reason to take time off in a schedule."
 author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a valid reason to take [time-off](timeoff.md) in a [schedule](schedule.md).
+Represents a valid reason to take [time off](timeoff.md) in a [schedule](schedule.md).
 
 ## Methods
 
