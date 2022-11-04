@@ -1,6 +1,6 @@
 ---
 title: "contentApproval resource type"
-description: "Approves content to be deployed according to policy."
+description: "Represents content approval to be deployed according to a policy."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Approves content to be deployed according to policy.
+Represents content approval to be deployed according to a policy.
 
 Inherits from [complianceChange](../resources/windowsupdates-compliancechange.md).
 

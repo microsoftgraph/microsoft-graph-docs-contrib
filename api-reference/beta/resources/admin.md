@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 Represents an entity that acts as a container for administrator functionality.
 
 ## Properties
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|An identifier for the device. Key. Not nullable. Read-only. Returned by default.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -31,13 +33,15 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.admin",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.admin"
+  "@odata.type": "#microsoft.graph.admin",
+  "id": "String (identifier)",
 }
 ```
 

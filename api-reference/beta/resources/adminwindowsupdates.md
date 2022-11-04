@@ -14,6 +14,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an entity that acts as a container for all Windows Update for Business deployment service functionalities.
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|An identifier for the device. Key. Not nullable. Read-only. Returned by default.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -29,12 +33,14 @@ Represents an entity that acts as a container for all Windows Update for Busines
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.adminWindowsUpdates",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.adminWindowsUpdates"
+  "@odata.type": "#microsoft.graph.adminWindowsUpdates",
+  "id": "String (identifier)",
 }
 ```
