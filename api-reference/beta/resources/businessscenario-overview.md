@@ -12,6 +12,14 @@ Business Scenario API allows creation and management of Business Scenarios that 
 
 ## Structure of a Business Scenario
 
+[businessScenario](businessscenario.md) entity.
+
+### Entities available in Business Scenarios
+
+Through [Planner](businessscenario-planner-overview.md):
+
+* [businessScenarioTask](businessscenariotask.md)
+
 ## Creating a Business Scenario
 
 Business Scenarios can be created by applications using application permissions or delegated permissions.

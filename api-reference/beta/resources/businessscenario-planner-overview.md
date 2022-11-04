@@ -12,7 +12,11 @@ ms.prod: ""
 
 ### Plan Configuration
 
+[plannerPlanConfiguration](plannerplanconfiguration.md) entity.
+
 ### Task Configuration
+
+[plannerTaskConfiguration](plannertaskconfiguration.md) entity.
 
 ## Targeting Tasks
 
