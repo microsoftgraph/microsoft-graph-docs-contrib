@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewSelfSignedCertificatePostRequestBody()
+requestBody := graphmodels.NewAddTokenSigningCertificatePostRequestBody()
 displayName := "CN=customDisplayName"
 requestBody.SetDisplayName(&displayName) 
 endDateTime , err := time.Parse(time.RFC3339, "2024-01-25T00:00:00Z")
 requestBody.SetEndDateTime(&endDateTime) 
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").AddTokenSigningCertificate().Post(requestBody)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").AddTokenSigningCertificate().Post(context.Background(), requestBody, nil)
 
 
 ```

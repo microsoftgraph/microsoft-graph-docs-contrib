@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LearningContent learningContent = new LearningContent();
 learningContent.title = "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle";
 learningContent.description = "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.";
-learningContent.contentWebUrl = "https://docs.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/";
+learningContent.contentWebUrl = "https://learn.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/";
 learningContent.sourceName = "MsLearn";
 learningContent.thumbnailWebUrl = "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF";
 learningContent.languageTag = "en-us";

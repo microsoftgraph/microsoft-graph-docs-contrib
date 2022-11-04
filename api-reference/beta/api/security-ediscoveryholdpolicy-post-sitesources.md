@@ -60,7 +60,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_sitesource_from_"
+  "name": "create_sitesource_from__weburl"
 }
 -->
 ``` http
@@ -75,27 +75,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-sitesource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-sitesource-from--weburl-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-sitesource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-sitesource-from--weburl-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--weburl-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-sitesource-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-sitesource-from--weburl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-sitesource-from--powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-sitesource-from--weburl-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-sitesource-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-sitesource-from--weburl-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

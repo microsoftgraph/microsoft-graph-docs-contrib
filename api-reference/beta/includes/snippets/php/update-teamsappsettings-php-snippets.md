@@ -12,11 +12,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new TeamsAppSettings();
 $requestBody->set@odatatype('#microsoft.graph.teamsAppSettings');
 
-$requestBody->setIsChatResourceSpecificConsentEnabled('true');
+$requestBody->setIsChatResourceSpecificConsentEnabled(true);
 
 
 
-$graphServiceClient->teamwork()->teamsAppSettings()->patch($requestBody);
+$requestResult = $graphServiceClient->teamwork()->teamsAppSettings()->patch($requestBody);
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "accessReviewReviewerScope resource type"
-description: "Represents who will review an access review."
+description: "Represents reviewers of an access review or user consent requests."
 author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,14 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The accessReviewReviewerScope defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). It is an OData query that allows reviewers to be specified both as a static list of users (that is, specific users, group owners, and group members) or dynamically in which every user is reviewed by their manager or by group owners. To create a self-review (where users review their own access), do not provide reviewers on [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) creation.
+The **accessReviewReviewerScope** defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) or [user consent requests](consentrequests-overview.md). 
+
+Reviewers can be specified as a static list of users (that is, specific users, group owners, and group members) or dynamically in which every user is reviewed by their manager, group or application owners. To create a self-review (where users review their own access) in Azure AD access reviews, the **reviewers** property of the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) should be an empty collection.
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
 ## Properties
 | Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
-| query | String | The query specifying who will be the reviewer. See table for examples. |
+| query | String | The query specifying who will be the reviewer.|
 | queryType | String | The type of query. Examples include `MicrosoftGraph` and `ARM`. |
 | queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, `./manager`, is specified. Possible value: `decisions`. |
 

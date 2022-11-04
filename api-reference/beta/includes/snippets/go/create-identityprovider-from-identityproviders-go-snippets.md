@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewIdentityProvider()
-"@odata.type" := "microsoft.graph.identityProvider"
-requestBody.Set"@odata.type"(&"@odata.type") 
 name := "Login with Amazon"
 requestBody.SetName(&name) 
 type := "Amazon"
@@ -19,7 +17,7 @@ requestBody.SetClientId(&clientId)
 clientSecret := "000000000000"
 requestBody.SetClientSecret(&clientSecret) 
 
-result, err := graphClient.IdentityProviders().Post(requestBody)
+result, err := graphClient.IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

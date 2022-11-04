@@ -1,7 +1,7 @@
 ---
 title: "user resource type"
 description: "Represents an Azure AD user account. Inherits from directoryObject."
-author: "jpettere"
+author: "yyuank"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: resourcePageType
@@ -140,7 +140,7 @@ This resource supports:
 |aboutMe|String|A freeform text entry field for the user to describe themselves. Returned only on `$select`.|
 |accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, and `in`).    |
 |ageGroup|[ageGroup](#agegroup-values)|Sets the age group of the user. Allowed values: `null`, `Minor`, `NotAdult` and `Adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, and `in`).|
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user, including inherited (group-based) licenses.  Not nullable. Returned only on `$select`. Supports `$filter` (`eq`, `not`, and counting empty collections).           |
+|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user, including inherited (group-based) licenses. This property doesn't differentiate directly-assigned and inherited licenses. Use the **licenseAssignmentStates** property to identify the directly-assigned and inherited licenses.  Not nullable. Returned only on `$select`. Supports `$filter` (`eq`, `not`, and counting empty collections).           |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq` and `not`). |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned only on `$select`.|
 |businessPhones|String collection|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property. Read-only for users synced from on-premises directory. <br><br>Returned by default. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
@@ -170,7 +170,7 @@ This resource supports:
 |jobTitle|String|The user's job title. Maximum length is 128 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |lastPasswordChangeDateTime| DateTimeOffset | The time when this Azure AD user last changed their password or when their password was created, whichever date the latest action was performed. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned only on `$select`.|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `MinorWithOutParentalConsent`, `MinorWithParentalConsent`, `MinorNoParentalConsentRequired`, `NotAdult` and `Adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`.|
-|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only. <br><br>Returned only on `$select`.|
+|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Also indicates licenses that are directly-assigned and those that the user has inherited through group memberships. Read-only. <br><br>Returned only on `$select`.|
 |mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as an SMTP address. This property cannot contain accent characters. <br/> **NOTE:** We do not recommend updating this property for Azure AD B2C user profiles. Use the **otherMails** property instead. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, and `eq` on `null` values).|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone. <br><br>Returned only on `$select`.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
@@ -200,6 +200,7 @@ This resource supports:
 |refreshTokensValidFromDateTime|DateTimeOffset|Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. <br><br>Returned only on `$select`. Read-only. |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities. <br><br>Returned only on `$select`.|
 |schools|String collection|A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`.|
+|securityIdentifier| String | Security identifier (SID) of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |showInAddressList|Boolean|**Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
 |skills|String collection|A list for the user to enumerate their skills. <br><br>Returned only on `$select`.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset. <br><br>Returned only on `$select`.|
@@ -523,6 +524,7 @@ The following is a JSON representation of the resource.
   "proxyAddresses": ["String"],
   "responsibilities": ["String"],
   "schools": ["String"],
+  "securityIdentifier": "String",
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["String"],

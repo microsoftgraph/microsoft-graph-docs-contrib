@@ -22,6 +22,7 @@ Configuration Manager client information synced from SCCM
 |:---|:---|:---|
 |clientIdentifier|String|Configuration Manager Client Id from SCCM|
 |isBlocked|Boolean|Configuration Manager Client blocked status from SCCM|
+|clientVersion|String|Configuration Manager Client version from SCCM|
 
 ## Relationships
 None
@@ -37,9 +38,11 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientInformation",
   "clientIdentifier": "String",
-  "isBlocked": true
+  "isBlocked": true,
+  "clientVersion": "String"
 }
 ```
+
 
 
 

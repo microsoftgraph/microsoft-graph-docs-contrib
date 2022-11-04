@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportMonthlyPrintUsageByUser -OutFile $outFileId
+Get-MgReportMonthlyPrintUsageByUser
 
 ```

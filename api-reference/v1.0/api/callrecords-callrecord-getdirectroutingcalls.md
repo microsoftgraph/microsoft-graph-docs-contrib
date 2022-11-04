@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this function.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time.|
-|toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
+|toDateTime|DateTimeOffset|End of time range to query. UTC, exclusive.|
 
 ## Response
 

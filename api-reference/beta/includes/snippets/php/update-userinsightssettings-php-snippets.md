@@ -10,11 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UserInsightsSettings();
-$requestBody->setIsEnabled('false');
+$requestBody->setIsEnabled(false);
 
 
 
-$graphServiceClient->usersById('user-id')->settings()->itemInsights()->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->settings()->itemInsights()->patch($requestBody);
 
 
 ```

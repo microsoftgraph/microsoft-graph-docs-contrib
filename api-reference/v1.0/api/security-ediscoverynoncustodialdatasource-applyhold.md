@@ -62,7 +62,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverynoncustialdatasource.applyhold"
+  "name": "ediscoverynoncustialdatasource.applyhold_caseID"
 }
 -->
 ``` http
@@ -78,27 +78,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasourceapplyhold-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasourceapplyhold-caseid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverynoncustialdatasourceapplyhold-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverynoncustialdatasourceapplyhold-caseid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasourceapplyhold-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasourceapplyhold-caseid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-caseid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverynoncustialdatasourceapplyhold-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-caseid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -124,7 +124,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverynoncustialdatasource.applyhold"
+  "name": "ediscoverynoncustialdatasource_applyhold_single_noncustodial_datasource"
 }
 -->
 ``` http
@@ -132,27 +132,27 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasourceapplyhold-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverynoncustialdatasourceapplyhold-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasourceapplyhold-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverynoncustialdatasourceapplyhold-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

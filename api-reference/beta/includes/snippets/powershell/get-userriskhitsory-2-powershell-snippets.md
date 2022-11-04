@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgRiskyUserHistory -RiskyUserId $riskyUserId -OutFile $outFileId
+Get-MgRiskyUserHistory -RiskyUserId $riskyUserId
 
 ```

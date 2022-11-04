@@ -141,7 +141,7 @@ If you want to link an aspect that is not represented by Microsoft Graph, or you
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_4"
+  "name": "team_sendactivitynotification_for_customer_topic"
 }
 -->
 ``` http
@@ -168,27 +168,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-4-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-for-customer-topic-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-4-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-for-customer-topic-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-4-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-for-customer-topic-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-4-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-for-customer-topic-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-4-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-for-customer-topic-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-4-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-for-customer-topic-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -15,7 +15,7 @@ requestBody.SetResourceId(&resourceId)
 appRoleId := uuid.MustParse("00000000-0000-0000-0000-000000000000")
 requestBody.SetAppRoleId(&appRoleId) 
 
-result, err := graphClient.GroupsById("group-id").AppRoleAssignments().Post(requestBody)
+result, err := graphClient.GroupsById("group-id").AppRoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

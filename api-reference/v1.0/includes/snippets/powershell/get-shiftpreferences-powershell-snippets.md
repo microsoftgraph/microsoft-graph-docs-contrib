@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users
 
-Get-MgUserSettingShiftPreference -UserId $userId -OutFile $outFileId
+Get-MgUserSettingShiftPreference -UserId $userId
 
 ```

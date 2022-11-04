@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAccessReviewPolicy()
 isGroupOwnerManagementEnabled := true
 requestBody.SetIsGroupOwnerManagementEnabled(&isGroupOwnerManagementEnabled) 
 
-graphClient.IdentityGovernance().AccessReviews().Policy().Patch(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Policy().Patch(context.Background(), requestBody, nil)
 
 
 ```

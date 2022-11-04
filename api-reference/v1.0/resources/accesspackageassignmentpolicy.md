@@ -27,6 +27,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |Property|Type|Description|
 |:---|:---|:---|
 |allowedTargetScope|allowedTargetScope|Principals that can be assigned the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`.|
+|automaticRequestSettings|[accessPackageAutomaticRequestSettings](../resources/accessPackageAutomaticRequestSettings.md)|This property is only present for an auto assignment policy; if absent, this is a request-based policy.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|The description of the policy.|
 |displayName|String|The display name of the policy.|
@@ -60,6 +61,9 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "allowedTargetScope": "String",
+  "automaticRequestSettings": {
+    "@odata.type": "microsoft.graph.accessPackageAutomaticRequestSettings"
+  },
   "specificAllowedTargets": [
     {
       "@odata.type": "microsoft.graph.singleUser"

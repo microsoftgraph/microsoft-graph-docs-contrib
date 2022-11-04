@@ -29,7 +29,7 @@ endDateTime , err := time.Parse(time.RFC3339, "2018-08-10T23:53:55.327Z")
 schedule.SetEndDateTime(&endDateTime) 
 requestBody.SetSchedule(schedule)
 
-result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(requestBody)
+result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

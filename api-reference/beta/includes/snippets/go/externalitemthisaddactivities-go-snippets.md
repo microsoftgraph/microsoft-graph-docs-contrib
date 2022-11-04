@@ -11,8 +11,6 @@ requestBody := graphmodels.NewAddActivitiesPostRequestBody()
 
 
 externalActivity := graphmodels.NewExternalActivity()
-"@odata.type" := "#microsoft.graph.externalConnectors.externalActivity"
-externalActivity.Set"@odata.type"(&"@odata.type") 
 type := graphmodels.STRING_EXTERNALACTIVITYTYPE 
 externalActivity.SetType(&type) 
 startDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -24,7 +22,7 @@ activities := []graphmodels.ExternalActivityable {
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.ConnectionsById("externalConnection-id").ItemsById("externalItem-id").AddActivities().Post(requestBody)
+result, err := graphClient.ConnectionsById("externalConnection-id").ItemsById("externalItem-id").AddActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

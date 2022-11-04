@@ -1,7 +1,7 @@
 ---
 title: "Propose new meeting times in Outlook calendar"
 description: "Learn how to use the allowNewTimeProposals and proposedNewTime properties to set up meetings that allow invitees to propose alternative meeting times."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---

@@ -12,14 +12,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.
+Delete the specified [learningContent](../resources/learningcontent.md) resource that represents the metadata of the specified provider's ingested content.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|LearningContent.ReadWrite.All|
+|Delegated (work or school account)|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|LearningContent.ReadWrite.All|
 
@@ -29,8 +29,15 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+For a specific learning content based on its ID (primary key):
 ``` http
-DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents/{externalId='{externalId}'}/$ref
+DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}/$ref
+```
+
+For a specific learning content based on its external ID (secondary key):
+``` http
+DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')/$ref
 ```
 
 ## Request headers
@@ -47,37 +54,26 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Example 1: Delete a learning content resource based on its ID
 
-# [HTTP](#tab/http)
+The following example shows a request that deletes a learning content resource based on its ID (primary key).
+
+#### Request
+
+The following example shows the request.
+
 <!-- {
   "blockType": "request",
-  "name": "delete_learningcontent"
+  "name": "delete_learningcontent_id",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "77029588-a660-46b6-ba58-3ce4d21d5678"]
 }
 -->
 ``` http
-DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='27rg2ifb28gf28')/$ref
+DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678/$ref
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-learningcontent-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-learningcontent-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-learningcontent-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
-### Response
-The following is an example of the response.
+#### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -87,3 +83,30 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
+### Example 2: Delete a learning content resource based on its external ID
+
+The following example shows a request that deletes a learning content resource based on its external ID (secondary key).
+
+#### Request
+The following example shows the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_learningcontent_externalid",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "27rg2ifb28gf28"]
+}
+-->
+``` http
+DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='27rg2ifb28gf28')/$ref
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```

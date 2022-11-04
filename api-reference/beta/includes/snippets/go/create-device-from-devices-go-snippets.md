@@ -13,12 +13,12 @@ requestBody.SetAccountEnabled(&accountEnabled)
 
 
 alternativeSecurityId := graphmodels.NewAlternativeSecurityId()
-additionalData := map[string]interface{}{
-	"type" : int32(99) , 
-	"identityProvider" : "identityProvider-value", 
-	"key" : "base64Y3YxN2E1MWFlYw==", 
-}
-alternativeSecurityId.SetAdditionalData(additionalData)
+type := int32(99)
+alternativeSecurityId.SetType(&type) 
+identityProvider := "identityProvider-value"
+alternativeSecurityId.SetIdentityProvider(&identityProvider) 
+key := []byte("base64Y3YxN2E1MWFlYw==")
+alternativeSecurityId.SetKey(&key) 
 
 alternativeSecurityIds := []graphmodels.AlternativeSecurityIdable {
 	alternativeSecurityId,
@@ -34,7 +34,7 @@ requestBody.SetDeviceMetadata(&deviceMetadata)
 deviceVersion := int32(99)
 requestBody.SetDeviceVersion(&deviceVersion) 
 
-result, err := graphClient.Devices().Post(requestBody)
+result, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
 
 
 ```

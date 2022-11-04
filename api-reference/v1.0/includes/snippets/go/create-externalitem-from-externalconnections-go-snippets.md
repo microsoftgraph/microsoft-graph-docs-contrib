@@ -48,7 +48,7 @@ content.SetType(&type)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Put(requestBody)
+graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Put(context.Background(), requestBody, nil)
 
 
 ```

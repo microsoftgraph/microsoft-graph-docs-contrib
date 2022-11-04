@@ -2,7 +2,7 @@
 title: "List organization"
 description: "Retrieve a list of organization objects."
 ms.localizationpriority: medium
-author: "KuiGithui"
+author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -106,6 +106,7 @@ Content-type: application/json
             "country": null,
             "countryLetterCode": "NL",
             "createdDateTime": "2021-08-02T10:30:06Z",
+            "defaultUsageLocation": "String",
             "displayName": "Contoso",
             "isMultipleDataLocationsForServicesEnabled": null,
             "marketingNotificationEmails": [],

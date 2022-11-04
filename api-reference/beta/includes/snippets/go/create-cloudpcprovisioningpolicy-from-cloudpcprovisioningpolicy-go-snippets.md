@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcProvisioningPolicy()
-"@odata.type" := "#microsoft.graph.cloudPcProvisioningPolicy"
-requestBody.Set"@odata.type"(&"@odata.type") 
 description := "Description value"
 requestBody.SetDescription(&description) 
 displayName := "Display Name value"
@@ -37,7 +35,7 @@ language := "en-US"
 windowsSettings.SetLanguage(&language) 
 requestBody.SetWindowsSettings(windowsSettings)
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

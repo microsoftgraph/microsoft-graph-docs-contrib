@@ -70,7 +70,7 @@ The following is an example of a decision to approve access for a user.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_accessReviewInstanceDecisionItem"
+  "name": "update_decision_accessReviewInstanceDecisionItem"
 }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
@@ -83,27 +83,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-decision-accessreviewinstancedecisionitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-decision-accessreviewinstancedecisionitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-decision-accessreviewinstancedecisionitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewinstancedecisionitem-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-decision-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-accessreviewinstancedecisionitem-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-decision-accessreviewinstancedecisionitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-accessreviewinstancedecisionitem-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-decision-accessreviewinstancedecisionitem-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -123,9 +123,11 @@ HTTP/1.1 204 Accepted
 ### Example 2: Update a decision on an stage in a multi-stage access review
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_accessReviewInstanceDecisionItem"
+  "name": "update_accessReviewInstanceDecisionItem_multi_stage_review"
 }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
@@ -136,6 +138,33 @@ Content-Type: application/json
   "justification": "This person is still on my team",
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewinstancedecisionitem-multi-stage-review-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewinstancedecisionitem-multi-stage-review-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-multi-stage-review-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewinstancedecisionitem-multi-stage-review-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accessreviewinstancedecisionitem-multi-stage-review-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accessreviewinstancedecisionitem-multi-stage-review-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

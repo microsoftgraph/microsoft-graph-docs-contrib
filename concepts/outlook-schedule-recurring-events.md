@@ -1,7 +1,7 @@
 ---
 title: "Schedule repeating appointments as recurring events in Outlook"
 description: "Create recurring events by using the recurrence rule, which includes the recurrence pattern - how often an event repeats - and the recurrence range - for how long."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
@@ -234,7 +234,7 @@ The numbered range causes an event to occur a fixed number of times (based on th
 
 | Property | Relevance | Description |
 |----------|-----------|-------------|
-| **numberOfOccurences** | Required | Specifies the number of occurrences. Must be a positive integer. |
+| **numberOfOccurrences** | Required | Specifies the number of occurrences. Must be a positive integer. |
 | **recurrenceTimeZone** | Optional | Specifies the time zone for the **startDate** property. If not specified, the time zone of the event is used. |
 | **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
 | **type** | Required | Must be set to `numbered`. |

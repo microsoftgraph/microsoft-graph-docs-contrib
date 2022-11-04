@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents feedback on an [educationOutcome](educationoutcome.md) object in the form of text. 
+Represents feedback on an [educationOutcome](educationoutcome.md) object in the form of text.
 
 ## Methods
 
@@ -61,4 +61,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

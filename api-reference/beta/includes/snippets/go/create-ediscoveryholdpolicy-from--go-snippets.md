@@ -12,14 +12,10 @@ displayname := "My legalHold with sources"
 requestBody.SetDisplayname(&displayname) 
 description := "Created from Graph API"
 requestBody.SetDescription(&description) 
-contentQuery := "Bazooka"
-requestBody.SetContentQuery(&contentQuery) 
 additionalData := map[string]interface{}{
 
 
  := graphmodels.New()
-"@odata.type" := "microsoft.graph.security.userSource"
-.Set"@odata.type"(&"@odata.type") 
 email := "SalesTeam@M365x809305.OnMicrosoft.com"
 .SetEmail(&email) 
 
@@ -30,8 +26,6 @@ email := "SalesTeam@M365x809305.OnMicrosoft.com"
 
 
  := graphmodels.New()
-"@odata.type" := "microsoft.graph.security.siteSource"
-.Set"@odata.type"(&"@odata.type") 
 site := graphmodels.New()
 webUrl := "https://m365x809305.sharepoint.com/sites/Design-topsecret"
 site.SetWebUrl(&webUrl) 
@@ -44,7 +38,7 @@ site.SetWebUrl(&webUrl)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHolds().Post(requestBody)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHolds().Post(context.Background(), requestBody, nil)
 
 
 ```

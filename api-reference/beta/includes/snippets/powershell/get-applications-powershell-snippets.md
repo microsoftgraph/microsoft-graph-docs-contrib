@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgOnPremisePublishingProfileConnectorGroupApplication -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId -OutFile $outFileId
+Get-MgOnPremisePublishingProfileConnectorGroupApplication -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId
 
 ```

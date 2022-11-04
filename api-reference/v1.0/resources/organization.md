@@ -2,7 +2,7 @@
 title: "organization resource type"
 description: " create and delete are not supported. Inherits from directoryObject."
 ms.localizationpriority: high
-author: "KuiGithui"
+author: "adimitui"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

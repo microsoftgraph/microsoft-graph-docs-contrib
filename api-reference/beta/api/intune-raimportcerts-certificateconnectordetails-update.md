@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the [
 |machineName|String|Name of the machine hosting this connector service.|
 |enrollmentDateTime|DateTimeOffset|Date/time when this connector was enrolled.|
 |lastCheckinDateTime|DateTimeOffset|Date/time when this connector last connected to the service.|
+|connectorVersion|String|Version of the connector installed.|
 
 
 
@@ -66,14 +67,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 Content-type: application/json
-Content-length: 278
+Content-length: 328
 
 {
   "@odata.type": "#microsoft.graph.certificateConnectorDetails",
   "connectorName": "Connector Name value",
   "machineName": "Machine Name value",
   "enrollmentDateTime": "2016-12-31T23:57:59.3726057-08:00",
-  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+  "connectorVersion": "Connector Version value"
 }
 ```
 
@@ -82,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 327
+Content-Length: 377
 
 {
   "@odata.type": "#microsoft.graph.certificateConnectorDetails",
@@ -90,9 +92,11 @@ Content-Length: 327
   "connectorName": "Connector Name value",
   "machineName": "Machine Name value",
   "enrollmentDateTime": "2016-12-31T23:57:59.3726057-08:00",
-  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+  "connectorVersion": "Connector Version value"
 }
 ```
+
 
 
 

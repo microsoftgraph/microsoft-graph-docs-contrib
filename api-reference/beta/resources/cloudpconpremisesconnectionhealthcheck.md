@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnectionHealthCheck resource type"
-description: "The result of a cloud PC Azure network connection health check."
+description: "The result of a Cloud PC Azure network connection health check."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The result of a cloud PC Azure network connection health check.
+The result of a Cloud PC Azure network connection health check.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -54,15 +54,17 @@ The result of a cloud PC Azure network connection health check.
 |adJoinCheckUnknownError|The domain join check failed due to an unknown error. Please make sure that the Azure network connection can successfully join the domain using the details provided.|
 |endpointConnectivityCheckCloudPcUrlNotAllowListed|During provisioning, one or more required URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |endpointConnectivityCheckWVDUrlNotAllowListed|During provisioning, one or more required WVD URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
-|endpointConnectivityCheckIntuneUrlNotAllowListed|During provisioning, one or more required Intune URLs couldn’t be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
+|endpointConnectivityCheckIntuneUrlNotAllowListed|During provisioning, one or more required Intune URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
+|endpointConnectivityCheckAzureADUrlNotAllowListed|During provisioning, one or more required Azure Active Directory (Azure AD) URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
+|endpointConnectivityCheckLocaleUrlNotAllowListed|During provisioning, one or more language pack URLs couldn't be contacted. If you choose a non-English (United States) **Language & Region** setting in a provisioning policy, the language pack might not be successfully installed. Please make sure that all of the required URLs are allowed through your firewalls and proxies. For a list or required URLs, see [Azure network connections health checks](https://go.microsoft.com/fwlink/?linkid=2156206).|
 |endpointConnectivityCheckUnknownError|During provisioning, one or more required URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
-|azureAdDeviceSyncCheckDeviceNotFound|The cloud PC computer object can't be found in Azure Active Directory (Azure AD). Please make sure that Azure AD connect works and syncs frequently so that the cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
-|azureAdDeviceSyncCheckLongSyncCircle|The check whether the cloud PC computer object has been synced to Azure Active Directory (Azure AD) has timed out. Please make sure that Azure AD connect works and syncs frequently so that the cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
+|azureAdDeviceSyncCheckDeviceNotFound|The Cloud PC computer object can't be found in Azure Active Directory (Azure AD). Please make sure that Azure AD connect works and syncs frequently so that the Cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
+|azureAdDeviceSyncCheckLongSyncCircle|The check whether the Cloud PC computer object has been synced to Azure Active Directory (Azure AD) has timed out. Please make sure that Azure AD connect works and syncs frequently so that the Cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
 |azureAdDeviceSyncCheckConnectDisabled|The Azure Active Directory (Azure AD) device sync check failed because the Azure AD Connect is disabled. Please make sure the Azure AD Connect is enabled and it syncs frequently. If the Azure AD Connect doesn't sync the computer within 60 minutes, then the check will fail.|
 |azureAdDeviceSyncCheckDurationExceeded|The Azure Active Directory (Azure AD) device sync check failed because the Azure AD Connect sync didn't sync within 60 minutes. Please make sure the Azure AD Connect is enabled and it syncs frequently. If the Azure AD Connect doesn't sync the computer within 60 minutes, then the check will fail.|
 |azureAdDeviceSyncCheckScpNotConfigured|The Hybrid Azure Active Directory (Azure AD) join failed due to misconfiguration in the Service Configuration Point (SCP). Please make sure your SCP configuration is valid and available to perform a Hybrid Azure AD join. Your SCP can be created and configured in the Azure AD Connect wizard.|
 |azureAdDeviceSyncCheckTransientServiceError|The Azure Active Directory (Azure AD) device sync check failed due to a transient error. Please try it again. If the issue persists, please contact customer support.|
-|azureAdDeviceSyncCheckUnknownError|Hybrid Azure Active Directory (Azure AD) connectivity check failed. Please make sure that Azure AD connect works and syncs frequently so that the cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
+|azureAdDeviceSyncCheckUnknownError|Hybrid Azure Active Directory (Azure AD) connectivity check failed. Please make sure that Azure AD connect works and syncs frequently so that the Cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
 |resourceAvailabilityCheckNoSubnetIP|The subnet provided doesn't have IP addresses available. Please make sure that the subnet provided in the Azure network connection has sufficient IP addresses available. Please expand the current selected subnet or select a different subnet to be used for provisioning.|
 |resourceAvailabilityCheckSubscriptionDisabled|The Azure subscription provided is disabled. Please make sure that the Azure subscription is enabled and available for provisioning.|
 |resourceAvailabilityCheckAzurePolicyViolation|The Azure subscription provided can't be found. Please ensure that the Azure subscription is available for provisioning.|
@@ -78,19 +80,22 @@ The result of a cloud PC Azure network connection health check.
 |resourceAvailabilityCheckSubnetDelegationFailed|The selected Azure virtual network has subnet delegation which blocks the creation of a network interface (Nic). Please ask your Azure virtual network owner to modify their subnet delegation policy to allow provisioning to succeed.|
 |resourceAvailabilityCheckSubnetWithExternalResources|The selected subnet can't be used because it contains external resources. Please remove any resources that could cause conflicts and try again. Alternatively, update this Azure network connection with another subnet.|
 |resourceAvailabilityCheckResourceGroupLockedForReadonly|The selected resource group is locked and can't be modified for provisioning. Please remove this lock to allow provisioning to succeed.|
-|resourceAvailabilityCheckResourceGroupLockedForDelete|The selected resource group or its parent scope has been locked for delete actions. It may be because the IP addresses are used up. Please remove the lock and try again.|
+|resourceAvailabilityCheckResourceGroupLockedForDelete|The selected resource group or its parent scope has been locked for delete actions. It might be because the IP addresses are used up. Please remove the lock and try again.|
 |resourceAvailabilityCheckTransientServiceError|The resource availability check failed due to a transient error. Please try it again. If the issue persists, please contact customer support.|
+|resourceAvailabilityCheckNoIntuneReaderRoleError|The Cloud PC service principal doesn't have sufficient permissions to check the Intune platform restriction settings. Please make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
+|resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation|The Intune has a default Windows platform restriction policy, which may block you from provisioning.|
+|resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation|The Intune has a custom Windows platform restriction policy, which may block you from provisioning.|
 |resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Please ensure that all Azure resources meet the prerequisites.|
-|permissionCheckNoSubscriptionReaderRole|The cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Please make sure that the cloud PC service principal has the *Reader* permissions on the subscription.|
-|permissionCheckNoResourceGroupOwnerRole|The cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the cloud PC service principal has the *Owner* permissions on the resource group. |
-|permissionCheckNoVNetContributorRole|The cloud PC service principal doesn't have sufficient permissions on the Azure vNet. Please make sure that the cloud PC service has the *Network contributor* permissions on the vNet.|
+|permissionCheckNoSubscriptionReaderRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Please make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
+|permissionCheckNoResourceGroupOwnerRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the Cloud PC service principal has the *Owner* permissions on the resource group. |
+|permissionCheckNoVNetContributorRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure vNet. Please make sure that the Cloud PC service has the *Network contributor* permissions on the vNet.|
 |permissionCheckNoResourceGroupNetworkContributorRole|Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the  application has Network contributor permissions on the resource group.|
 |permissionCheckTransientServiceError|The first-party app permission check failed due to a transient error. Please try it again. If the issue persists, please contact customer support.|
-|permissionCheckUnknownError|The cloud PC service principal doesn't have sufficient permissions. Please make sure that the cloud PC service principal is granted sufficient Azure permissions.|
+|permissionCheckUnknownError|The Cloud PC service principal doesn't have sufficient permissions. Please make sure that the Cloud PC service principal is granted sufficient Azure permissions.|
 |internalServerErrorDeploymentCanceled|The deployment was canceled. Please try again later. If the problem persists, please contact support.|
 |internalServerErrorAllocateResourceFailed|The allocation of resources failed. Please try again later. If the problem persists, please contact support.|
 |internalServerErrorVMDeploymentTimeout|The virtual machine deployment timed out. Please try again later. If the problem persists, please contact support.|
-|internalServerErrorUnableToRunDscScript|During provisioning, some PowerShell DSC scripts are executed on the cloud PC. Unable to either download these DSC scripts or execute them during the health check. Please ensure vNet has unrestricted access to the required endpoints, and PowerShell isn't blocked in the environment or Group Policy.|
+|internalServerErrorUnableToRunDscScript|During provisioning, some PowerShell DSC scripts are executed on the Cloud PC. Unable to either download these DSC scripts or execute them during the health check. Please ensure vNet has unrestricted access to the required endpoints, and PowerShell isn't blocked in the environment or Group Policy.|
 |internalServerUnknownError|The provisioning has failed due to an internal error. Please contact customer support.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 

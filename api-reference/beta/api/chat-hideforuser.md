@@ -49,7 +49,6 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to hide the chat for. **In delegated mode, users can only hide a chat for themselves**.|
-|tenantId|String|Tenant ID of the user.|
 
 ## Response
 
@@ -72,9 +71,9 @@ Content-Type: application/json
 
 {
   "user": {
-    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
-  },
-  "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
+    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
+    "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
+  }
 }
 ```
 
@@ -84,10 +83,6 @@ Content-Type: application/json
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chat-hideforuser-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/chat-hideforuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -14,7 +14,7 @@ configuration := &graphconfig.AccessPackageAssignmentRequestBuilderGetRequestCon
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentsById("accessPackageAssignment-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentsById("accessPackageAssignment-id").Get(context.Background(), configuration)
 
 
 ```
