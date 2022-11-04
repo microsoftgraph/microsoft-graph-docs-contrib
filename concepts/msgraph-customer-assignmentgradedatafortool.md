@@ -15,16 +15,16 @@ Partners and education institutions have their own tool that needs data from Ass
 
 ## Using Microsoft Graph
 
-The method to get data from Assignment and M365 is using [Microsoft Graph](/graph/overview). To test out the Microsoft Graph you can use [Graph Explorer](/graph/msgraph-onboarding-graphexplorer) to work with the education API in Microsoft Graph.
+All the assignments endpoints described in this scenario can be tested using [Graph Explorer](/graph/msgraph-onboarding-graphexplorer) and any other education API in [Microsoft Graph](/graph/overview).
 
 ## API to use for Teams information
 
-All Assignments and Grades information is provided in relation to Teams and Teams users. Graph gives you the ability to get information about all the classes in a Team and its members and the role they have in the team (student or teacher).
+All Assignments and Grades information is provided in relation to Teams and Teams users. You have the ability to get information about all the classes in a Team and its members and the role they have in the team (student or teacher).
 
 - [List classes of an educationSchools](/graph/api/educationschool-list-classes) : If you need the class information, this API will give you all classes in your Education Tenant.
 - [List members of an educationClass](/graph/api/educationclass-list-members) : If you need the student and teachers of the class, this API will list all information about members of a given class.
 
-Once you have the relevant class and user information, you can choose what information you need from the Graph API in regard to assignments and grades.
+Once you have the relevant class and user information, you can choose what information you need from the API in regard to assignments and grades.
 
 ## API to use for Class Assignments
 
@@ -32,24 +32,24 @@ All assignments are connected to a class, and all students information is connec
 
 - [educationAssignment resource type](/graph/api/resources/educationassignment) : Allows you list and see all data for assignments in a class.
 
-- [educationSubmission resource type](/graph/api/resources/educationsubmission) : When you publish an assignment in Teams EDU, Assignment will create an submissionid for each student that the assignment has been published to. This will allow you to get the [status](/graph/api/resources/educationsubmission#properties) of the submission, e.g. if it is turned in and graded, any resources that was submitted by the student ([resources](/graph/api/educationsubmissionresource-get)) and the grade([outcome](/graph/api/resources/educationoutcome)) for the submission.
+- [educationSubmission resource type](/graph/api/resources/educationsubmission) : When you publish an assignment, the assignment will create a submissionid for each student that the assignment has been published to. This will allow you to get the [status](/graph/api/resources/educationsubmission#properties) of the submission, e.g. if it is turned in and graded, any resources that was submitted by the student ([resources](/graph/api/educationsubmissionresource-get)) and the grade([outcome](/graph/api/resources/educationoutcome)) for the submission.
 
 ## API to use for student assignments
 
 A student is often in multiple classes within a school, and you often need to see the data for the student across classes. There is a unique API for this:
 
-- [List assignments of a user](/graph/api/educationuser-list-assignments): lists all assignments for a given user in Teams. You can use either this by a delegated user or the preferred way is to use AppOnly person to use  `/users/{user-id}`.
+- [List assignments of a user](/graph/api/educationuser-list-assignments): lists all assignments for a given user. You can use either this by a delegated user or the preferred way is to use AppOnly person to use  `/users/{user-id}`.
 
 ## Permissions to think about
 
-Teams and Assignments API supports both delegated (per user) and AppOnly (per App) permission. For ease of use for the student and teacher Apponly is preferred as this allows for only approval of your app to retrieve data.
+Assignments API supports both delegated (per user) and AppOnly (per App) permission. For ease of use for the student and teacher Apponly is preferred as this allows for only approval of your app to retrieve data.
 
 ## Updates to the data
 
-There will be changes to the school year, and of course there will be updates to assignments are the educator and student continue work on these during the school year. All class information support [Delta Query support](/graph/api/educationschool-delta), allowing you to track changes since last time Graph was queried.
+There will be changes to the school year, and of course there will be updates to assignments are the educator and student continue work on these during the school year. All class information support [Delta Query support](/graph/api/educationschool-delta), allowing you to track changes since last time the API endpoint was queried.
 
 For Assignments [Delta Queries](/graph/api/educationassignment-delta) are supported for Assignment information changes only, and not submission changes for an assignment.
 
 ## Filtering data
 
-Specific API endpoints will be returing a large list of information that you can filter and handle as needed. You can accomplish that by using [OData query parameters](/graph/query-parameters) in your API requests above
+Specific API endpoints will be returing a large list of information that you can [filter](/graph/query-parameters#filter-parameter) and handle as needed. You can accomplish that by using [OData query parameters](/graph/query-parameters) in your API requests above
