@@ -1,6 +1,6 @@
 ---
 title: "timeOffReason resource type"
-description: "Represents a valid reason to take time-off in a schedule."
+description: "Represents a valid reason to take time off in a schedule."
 author: "akumar39"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
