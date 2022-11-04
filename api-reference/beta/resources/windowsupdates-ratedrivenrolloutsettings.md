@@ -20,7 +20,7 @@ Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrollou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|devicesPerOffer|Int32|Specifies the number of devices that are offered at the same time. When **devicesPerOffer** is not set, all devices in the deployment are offered content at the same time.|
+|devicesPerOffer|Int32|Specifies the number of devices that are offered at the same time. When not set, all devices in the deployment are offered content at the same time.|
 |durationBetweenOffers|Duration|The duration between each set of devices being offered the update, which has an effect when **devicesPerOffer** is defined. The value is represented in ISO 8601 format for duration. Default value is `P1D` (1 day).|
 
 ## Relationships
