@@ -7,17 +7,18 @@ author: "FaithOmbongi"
 
 ### Administrative unit properties
 
-| FormattedProperty             | eq               | startsWith       | ge/le | eq Null             |
-|-------------------------------|------------------|------------------|-------|---------------------|
-| description                   | ![Advanced][AQP] | ![Advanced][AQP] |       | ![Advanced][AQP]    |
-| displayName                   | ![Default][RDS]  | ![Default][RDS]  |       | ![Advanced][AQP]    |
-| isMemberManagementRestricted  | ![Default][RDS]  |                  |       | ![NotSupported][NS] |
-| scopedRoleMembers/any(s:s/id) | ![Default][RDS]  |                  |       | ![NotSupported][NS] |
+| Property             | eq               | startsWith       |eq null             |
+|-------------------------------|------------------|------------------|--------------------|
+| description                   | ![Advanced][AQP] | ![Advanced][AQP] |![Advanced][AQP]    |
+| displayName                   | ![Default][RDS]  | ![Default][RDS]  |![Advanced][AQP]    |
+| isMemberManagementRestricted  | ![Default][RDS]  |                  |![NotSupported][NS] |
+| scopedRoleMembers/any(s:s/id) | ![Default][RDS]  |                  |![NotSupported][NS] |
 
 ### Application properties
 
-| appId                                         | ![Default][RDS]     |                     |                     | ![NotSupported][NS] |                  |
+| Property                             | eq                  | startsWith          | ge/le               | eq null             | eq Count 0       |
 |-----------------------------------------------|---------------------|---------------------|---------------------|---------------------|------------------|
+| appId                                         | ![Default][RDS]     |                     |                     | ![NotSupported][NS] |                  |
 | createdDateTime                               | ![Default][RDS]     |                     | ![Default][RDS]     | ![Advanced][AQP]    |                  |
 | createdOnBehalfOf/id                          | ![Default][RDS]     |                     |                     | ![NotSupported][NS] |                  |
 | description                                   | ![Advanced][AQP]    | ![Advanced][AQP]    |                     | ![Advanced][AQP]    |                  |
@@ -48,7 +49,7 @@ author: "FaithOmbongi"
 
 ### Contract properties
 
-| FormattedProperty | eq              | startsWith      |
+| Property | eq              | startsWith      |
 |-------------------|-----------------|-----------------|
 | customerId        | ![Default][RDS] |                 |
 | defaultDomainName | ![Default][RDS] | ![Default][RDS] |
@@ -56,7 +57,7 @@ author: "FaithOmbongi"
 
 ### Device properties
 
-| FormattedProperty                                | eq               | startsWith          | ge/le            | eq Null             | eq Count 0       |
+| Property                                | eq               | startsWith          | ge/le            | eq null             | eq Count 0       |
 |--------------------------------------------------|------------------|---------------------|------------------|---------------------|------------------|
 | accountEnabled                                   | ![Default][RDS]  |                     |                  | ![NotSupported][NS] |                  |
 | alternativeSecurityIds/any(a:a/identityProvider) | ![Advanced][AQP] | ![NotSupported][NS] |                  | ![NotSupported][NS] |                  |
@@ -94,15 +95,15 @@ author: "FaithOmbongi"
 
 ### Directory role properties
 
-| FormattedProperty | eq               | startsWith       | ge/le | eq Null             |
-|-------------------|------------------|------------------|-------|---------------------|
-| description       | ![Advanced][AQP] | ![Advanced][AQP] |       | ![Advanced][AQP]    |
-| displayName       | ![Default][RDS]  | ![Advanced][AQP] |       | ![Advanced][AQP]    |
-| roleTemplateId    | ![Default][RDS]  |                  |       | ![NotSupported][NS] |
+| Property | eq               | startsWith       | eq null             |
+|-------------------|------------------|------------------|---------------------|
+| description       | ![Advanced][AQP] | ![Advanced][AQP] | ![Advanced][AQP]    |
+| displayName       | ![Default][RDS]  | ![Advanced][AQP] | ![Advanced][AQP]    |
+| roleTemplateId    | ![Default][RDS]  |                  | ![NotSupported][NS] |
 
 ### Group properties
 
-| FormattedProperty                                          | eq               | startsWith          | ge/le            | eq Null             | eq Count 0       |
+| Property                                          | eq               | startsWith          | ge/le            | eq null             | eq Count 0       |
 |------------------------------------------------------------|------------------|---------------------|------------------|---------------------|------------------|
 | appRoleAssignments/any(a:a/id)                             | ![Default][RDS]  |                     |                  | ![NotSupported][NS] |                  |
 | assignedLicenses/any(a:a/skuId)                            | ![Default][RDS]  |                     |                  | ![NotSupported][NS] |                  |
@@ -140,7 +141,7 @@ author: "FaithOmbongi"
 
 ### Organizational contacts properties
 
-| FormattedProperty                                          | eq               | startsWith       | ge/le           | eq Null             | eq Count 0       |
+| Property                                          | eq               | startsWith       | ge/le           | eq null             | eq Count 0       |
 |------------------------------------------------------------|------------------|------------------|-----------------|---------------------|------------------|
 | companyName                                                | ![Advanced][AQP] | ![Advanced][AQP] |                 | ![Advanced][AQP]    |                  |
 | department                                                 | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |                  |
@@ -161,7 +162,7 @@ author: "FaithOmbongi"
 
 ### Service principal properties
 
-| FormattedProperty                              | eq                  | startsWith          | ge/le           | eq Null             |
+| Property                              | eq                  | startsWith          | ge/le           | eq null             |
 |------------------------------------------------|---------------------|---------------------|-----------------|---------------------|
 | accountEnabled                                 | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
 | alternativeNames/any(p:p)                      | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
@@ -191,7 +192,7 @@ author: "FaithOmbongi"
 
 ### User properties
 
-| FormattedProperty                                          | eq                  | startsWith          | ge/le            | eq Null             | eq Count 0       |
+| Property                                          | eq                  | startsWith          | ge/le            | eq null             | eq Count 0       |
 |------------------------------------------------------------|---------------------|---------------------|------------------|---------------------|------------------|
 | accountEnabled                                             | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |                  |
 | ageGroup                                                   | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |                  |
@@ -275,6 +276,7 @@ author: "FaithOmbongi"
 | usageLocation                                              | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |                  |
 | userPrincipalName                                          | ![Default][RDS]     | ![Default][RDS]     |                  | ![NotSupported][NS] |                  |
 | userType                                                   | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
+
 
 [RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
 [AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
