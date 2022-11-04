@@ -1,6 +1,6 @@
 ---
 title: "timeOffReason resource type"
-description: "Represents a valid reason to take time-off in the schedule."
+description: "Represents a valid reason to take time-off in a schedule."
 author: "akumar39"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.md).
+Represents a valid reason to take [time-off](timeoff.md) in a [schedule](schedule.md).
 
 ## Methods
 
@@ -24,7 +24,7 @@ Represents a valid reason to for a [timeOff](timeoff.md) instance in a [schedule
 |[Delete](../api/timeoffreason-delete.md) | None | Mark a **timeOffReason** as inactive.|
 
 ## Properties
-|Name          |Type           |Description                                                                                 |
+|Property          |Type           |Description                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | createdDateTime		| DateTimeOffset        |The time stamp on which this **timeOffReason** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | displayName               | String                  | The name of the **timeOffReason**. Required. |
@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "iconType": "String",
-  "id": "String",
+  "id": "String (identifier)",
   "isActive": "Boolean",
   "lastModifiedBy": { "@odata.type":"microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)"
