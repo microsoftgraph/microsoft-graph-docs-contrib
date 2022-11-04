@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a valid reason to take [time-off](timeoff.md) in a [schedule](schedule.md).
+Represents a valid reason to take [time off](timeoff.md) in a [schedule](schedule.md).
 
 ## Methods
 
