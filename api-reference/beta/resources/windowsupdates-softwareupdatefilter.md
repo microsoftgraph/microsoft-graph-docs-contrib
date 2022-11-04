@@ -1,6 +1,6 @@
 ---
 title: "softwareUpdateFilter resource type"
-description: "A filter to determine which software update content matches the rule on an ongoing basis."
+description: "An abstract type that represents a filter to determine which software update content matches the rule on an ongoing basis."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,16 +13,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A filter to determine which software update content matches the rule on an ongoing basis.
-
-This is an abstract type.
-
+An abstract type that represents a filter to determine which software update content matches the rule on an ongoing basis.
 
 Inherits from [contentFilter](../resources/windowsupdates-contentfilter.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
@@ -39,4 +35,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsUpdates.softwareUpdateFilter"
 }
 ```
-

@@ -17,7 +17,7 @@ Represents content that is deployable by the service.
 
 This is an abstract type. 
 
-Base type for [catalogContent](../resources/windowsupdates-catalogContent.md).
+Base type for [catalogContent](../resources/windowsupdates-catalogcontent.md).
 
 ## Properties
 None.

@@ -33,7 +33,7 @@ If the same **updatableAsset** resource is included in the **exclusions** and **
 |Property|Type|Description|
 |:---|:---|:---|
 |applicableContent|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection|Content eligible to deploy to devices in the audience. Not nullable. Read-only.|
-|id|String|The unique identifier for the deployment audience. Returned by default. Key. Not nullable. Read-only.|
+|id|String|The unique identifier for the deployment audience. Returned by default. Not nullable. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -53,22 +53,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deploymentAudience",
-  "applicableContent": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
-    }
-  ],
-  "exclusions": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset"
-    }
-  ],
-  "id": "String (identifier)",
-  "members": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset"
-    }
-  ]
+  "applicableContent": [{"@odata.type": "microsoft.graph.windowsUpdates.applicableContent"}],
+  "id": "String (identifier)"
 }
 ```
-

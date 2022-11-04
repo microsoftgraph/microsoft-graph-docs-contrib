@@ -1,6 +1,6 @@
 ---
 title: "scheduleSettings resource type"
-description: "Settings controlling how and when the service deploys an update over time."
+description: "Represents settings for controlling how and when the service deploys an update over time."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings controlling how and when the service deploys an update over time.
+Represents settings for controlling how and when the service deploys an update over time.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|gradualRollout|[microsoft.graph.windowsUpdates.gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md)|Settings governing how to rollout content to devices. One of: [rateDrivenRolloutSettings](../resources/windowsupdates-ratedrivenrolloutsettings.md), [dateDrivenRolloutSettings](../resources/windowsupdates-datedrivenrolloutsettings.md), or [durationDrivenRolloutSettings](../resources/windowsupdates-durationdrivenrolloutsettings.md)|
-|startDateTime|DateTimeOffset|Date on which devices in the deployment start receiving the update. When not set, the deployment starts as soon as devices are assigned.|
+|gradualRollout|[microsoft.graph.windowsUpdates.gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md)|Settings for governing how to rollout content to devices. One of: [dateDrivenRolloutSettings](../resources/windowsupdates-datedrivenrolloutsettings.md), [durationDrivenRolloutSettings](../resources/windowsupdates-durationdrivenrolloutsettings.md), or [rateDrivenRolloutSettings](../resources/windowsupdates-ratedrivenrolloutsettings.md).|
+|startDateTime|DateTimeOffset|The date on which devices in the deployment start receiving the update. When not set, the deployment starts as soon as devices are assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 None.
@@ -34,10 +34,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.scheduleSettings",
-  "startDateTime": "String (timestamp)",
-  "gradualRollout": {
-    "@odata.type": "microsoft.graph.windowsUpdates.gradualRolloutSettings"
-  }
+  "gradualRollout": {"@odata.type": "microsoft.graph.windowsUpdates.gradualRolloutSettings"},
+  "startDateTime": "String (timestamp)"
 }
 ```
-

@@ -20,7 +20,7 @@ Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrollou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|durationBetweenOffers|Duration|Specifies the duration between each set of devices being offered the update, which has an effect when the **endDateTime** is defined. The value is represented in ISO 8601 format for duration. Default value is `P1D` (1 day).|
+|durationBetweenOffers|Duration|The duration between each set of devices being offered the update, which has an effect when the **endDateTime** is defined. The value is represented in ISO 8601 format for duration. Default value is `P1D` (1 day).|
 |endDateTime|DateTimeOffset|Specifies the date before which all devices currently in the deployment are offered the update. Devices added after this date are offered immediately. When the **endDateTime** is not set, all devices in the deployment are offered content at the same time.|
 
 ## Relationships

@@ -1,6 +1,6 @@
 ---
 title: "updatePolicy resource type"
-description: "Entity that governs the deployment of content to an associated deploymentAudience."
+description: "Represents an entity that governs the deployment of content to an associated deploymentAudience."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entity that governs the deployment of content to an associated deploymentAudience.
+Represents an entity that governs the deployment of content to an associated deploymentAudience.
 
 ## Methods
 |Method|Return type|Description|
@@ -29,16 +29,16 @@ Entity that governs the deployment of content to an associated deploymentAudienc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|Rules governing the automatic creation of compliance changes.|
-|createdDateTime|DateTimeOffset|The date and time when created.|
-|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
-|id|String|Unique identifier.|
+|complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|Rules for governing the automatic creation of compliance changes.|
+|createdDateTime|DateTimeOffset|The date and time when the update policy was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings for governing how to deploy **content**.|
+|id|String|Unique identifier for the update policy.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |audience|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Specifies the audience to target.|
-|complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Compliance changes like content approvals which result in the automatic creation of deployments using the policy's **audience** and **deploymentSettings**.|
+|complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Compliance changes like content approvals which result in the automatic creation of deployments using the **audience** and **deploymentSettings** of the policy.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -52,22 +52,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
-  "audience": { "@odata.type": "microsoft.graph.windowsUpdates.deploymentAudience" },
-  "complianceChangeRules": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
-    }
-  ],
-  "complianceChanges": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.complianceChange"
-    }
-  ],
+  "complianceChangeRules": [{"@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"}],
   "createdDateTime": "String (timestamp)",
-  "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-  },
+  "deploymentSettings": {"@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"},
   "id": "String (identifier)"
 }
 ```
-

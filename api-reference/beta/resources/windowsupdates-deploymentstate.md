@@ -36,12 +36,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deploymentState",
   "effectiveValue": "String",
-  "reasons": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"
-    }
-  ],
+  "reasons": [{"@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"}],
   "requestedValue": "String"
 }
 ```
-
