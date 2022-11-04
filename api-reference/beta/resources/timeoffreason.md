@@ -32,7 +32,7 @@ Represents a valid reason to take [time-off](timeoff.md) in a [schedule](schedul
 | createdDateTime		| DateTimeOffset        |The time stamp on which this **timeOffReason** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | displayName               | String                  | The name of the **timeOffReason**. Required. |
 | iconType | timeOffReasonIconType   | Supported icon types are: `none`, `car`, `calendar,` `running`, `plane`, `firstAid`, `doctor`, `notWorking`, `clock`, `juryDuty`, `globe`, `cup`, `phone`, `weather`, `umbrella`, `piggyBank`, `dog`, `cake`, `trafficCone`, `pin`, `sunny`. Required. |
-| id			| String      |Unique identifier for the time off reason.|
+| id			| String      |Unique identifier for the time-off reason.|
 | isActive 			| Boolean      | Indicates whether the **timeOffReason** can be used when creating new entities or updating existing ones. Required. |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **timeOffReason**.|
 | lastModifiedDateTime		| DateTimeOffset         |The time stamp on which this **timeOffReason** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
