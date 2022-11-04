@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=')
+let event = await client.api('/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=')
 	.get();
 
 ```

@@ -371,6 +371,16 @@ Namespace: microsoft.graph
 |reviewer|
 |unknownFutureValue|
 
+### educationFeedbackResourceOutcomeStatus values
+
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|

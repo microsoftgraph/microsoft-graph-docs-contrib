@@ -212,6 +212,9 @@ items:
       - name: Device and app management
         expanded: true
         items:
+          - name: Browser management
+            href: browser-edge-concept-overview.md
+            displayName: Edge, Internet Explorer, IE mode, site list
           - name: Cloud printing
             items:
               - name: Overview
@@ -501,6 +504,8 @@ items:
             href: search-concept-aggregation.md
           - name: Request spelling corrections
             href: search-concept-speller.md
+          - name: Collapse search results
+            href: search-concept-collapse.md
           - name: Trim duplicate search results
             href: search-concept-trim-duplicate.md
           - name: Use query templates
