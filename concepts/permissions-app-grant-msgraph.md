@@ -11,7 +11,7 @@ ms.custom: template-how-to
 
 When you grant API permissions to a client app in Azure Active Directory (Azure AD), the permission grants are recorded as objects that can be accessed, updated, or deleted like your data. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
-In this guide, you'll learn how to grant and revoke app roles for an app using Microsoft Graph. **App roles**, also called *application permissions*, *app-only permissions*, or *direct access permissions*, allow an app to call an API with its own identity.
+In this guide, you'll learn how to grant and revoke app roles for an app using Microsoft Graph. **App roles**, also called *application permissions*, or *direct access permissions*, allow an app to call an API with its own identity.
 
 > [!CAUTION]
 > Be careful! Permissions granted programmatically are not subject to review or confirmation. They take effect immediately.
@@ -23,13 +23,16 @@ To complete these instructions, you need the following resources and privileges:
 1. A working Azure AD tenant.
 2. You'll run the requests in this article as a user. You must complete the following steps:
     1. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
-    2. In the app you've signed in to, consent to the `Application.ReadWrite.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
+    2. In the app you've signed in to, consent to the *Application.Read.All* and *AppRoleAssignment.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
     3. Get the object ID of the client service principal to which you'll grant app roles. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`.
 
 <!--
 > [!CAUTION]
 > The `AppRoleAssignment.ReadWrite.All` permission allows an app or service to manage permission grants and elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 -->
+
+> [!CAUTION]
+> Apps that have been granted the *AppRoleAssignment.ReadWrite.All* permission should only be accessed by appropriate users.
 
 ## Step 1: Get the appRoles of the resource service principal
 

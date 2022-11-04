@@ -23,13 +23,16 @@ To complete these instructions, you need the following resources and privileges:
 1. A working Azure AD tenant.
 2. You'll run the requests in this article as a user. You must complete the following steps:
     1. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
-    2. In the app you've signed in to, consent to the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All` delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
+    2. In the app you've signed in to, consent to the *Application.Read.All*, *DelegatedPermissionGrant.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
     3. Get the object ID of the client service principal to which you'll grant delegated permissions on behalf of a user. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`.
 
 <!--
 > [!CAUTION]
 > The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or service to manage permission grants and elevate privileges for any app or user in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 -->
+
+> [!CAUTION]
+> Apps that have been granted the *DelegatedPermissionGrant.ReadWrite.All* permission should only be accessed by appropriate users.
 
 ## Step 1: Get the delegated permissions of the resource service principal
 
@@ -203,7 +206,7 @@ Content-type: application/json
 
 ## Step 3 [Optional]: Revoke delegated permissions granted to a service principal on behalf of a user
 
-If a service principal has been granted multiple delegated permission grants on behalf of a user, you can choose to revoke either one or some grant or all grants.
+If a service principal has been granted multiple delegated permission grants on behalf of a user, you can choose to revoke either specific grants or all grants.
 
 + To revoke one or some grants, run a PATCH request on the oauth2PermissionGrant object and specify only the delegated permissions to retain in the **scope** parameter.
 + To revoke all grants, run a DELETE request on the oauth2PermissionGrant object.
