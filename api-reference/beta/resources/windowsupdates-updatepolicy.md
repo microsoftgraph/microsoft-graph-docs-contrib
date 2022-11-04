@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that governs the deployment of content to an associated deploymentAudience.
+Represents an entity that governs the deployment of content to an associated [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).
 
 ## Methods
 |Method|Return type|Description|
