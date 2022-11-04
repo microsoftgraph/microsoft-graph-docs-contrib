@@ -136,3 +136,13 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 + [Tutorial: Automate employee offboarding tasks after their last day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-scheduled-leaver-graph)
 + [Tutorial: Execute employee offboarding tasks in real-time on their last day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-offboard-custom-workflow-graph)
 + [Tutorial: Automate employee onboarding tasks before their first day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-onboard-custom-workflow-graph)
+
+<!-- {
+  "type": "#page.annotation",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/identitygovernance-lifecycleworkflows-overview.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md) (Parameter 'Definition')"
+  ]
+} -->
