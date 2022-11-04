@@ -241,10 +241,11 @@ The following table lists query scenarios on directory objects that are supporte
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
-+ Queries that are supported by default will also work in advanced queries, but the response will be eventually consistent.
++ Queries that are supported by default will also work with advanced query parameters, but the response will be eventually consistent.
 + The `in` operator is supported by default whenever `eq` operator is supported by default.
-+ The `endsWith` operator is supported only with advanced queries on **mail**, **otherMails**, **userPrincipalName**, and **proxyAddresses** properties.
-+ The `not` and `ne` negation operators are supported only with advanced queries.
++ The `endsWith` operator is supported only with advanced query parameters by **mail**, **otherMails**, **userPrincipalName**, and **proxyAddresses** properties.
++ Getting empty collections is supported only with advanced query parameters.
++ The `not` and `ne` negation operators are supported only with advanced query parameters.
   + All properties that support the `eq` operator also support the `ne` or `not` operators.
   + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/query-parameters#filter-using-lambda-operators).
 
