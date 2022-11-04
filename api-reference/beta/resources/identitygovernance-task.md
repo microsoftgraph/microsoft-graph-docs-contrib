@@ -41,17 +41,17 @@ Inherits from [entity](../resources/entity.md).
 |isEnabled|Boolean|A boolean value that denotes whether the task is set to run or not. Optional.<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |taskDefinitionId|String|A unique template identifier for the task. For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see [supported tasks](../resources/identitygovernance-task.md#supported-tasks). Required.<br><br>Supports `$filter`(`eq`, `ne`).|
 
-## Relationships
-
-|Relationship|Type|Description|
-|:---|:---|:---|
-|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The result of processing the task.|
-
 ### Supported tasks
 
 Lifecycle Workflows currently support the following tasks:
 
 [!INCLUDE [identitygovernance-lifecycleworkflows-tasks](../includes/lifecycle-workflows-tasks-table.md)]
+
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The result of processing the task.|
 
 ## JSON representation
 
