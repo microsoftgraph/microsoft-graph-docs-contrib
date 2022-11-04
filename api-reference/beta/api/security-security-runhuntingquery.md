@@ -48,11 +48,11 @@ POST /security/runHuntingQuery
 
 ## Request body
 
-In the request body, provide a JSON object for the parameter, `query`. 
+In the request body, provide a JSON object for the parameter, `Query`. 
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|query|String|The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).|
+|Query|String|The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).|
 
 ## Response
 
@@ -80,7 +80,7 @@ This example specifies a KQL query which does the following:
 POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 {
-    "query":"DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
+    "Query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 }
 ```
 
