@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: ""
 ---
 
-# Business Senarios (Preview) Overview
+# Business Scenarios (Preview) Overview
 
 Business Scenarios allow integration of real work business processes into native Microsoft Graph entities. Business Scenarios allow applications to create data in the tenant that looks like any other data, however they can specify behaviors for this data to make sure the requirements of the represented business process can be met. Using Business Scenarios applications can work at the tenant level, without having access to the tenant data, outside of the data created for a specific scenario.
 
@@ -36,8 +36,8 @@ Business Scenarios are built for integrations. Data created for the scenario can
 
 You can find more about the Business Scenario API here:
 
-* [Business Scenario API in Microsoft Graph beta](../api-reference/beta/resources/businessscenario-overview.md)
+* [Business Scenario API in Microsoft Graph beta](/graph/api/resources/businessscenario-overview)
 
 ## Next Steps
 
-Get started using Business Scenarios to integrated data into [Planner](../api-reference/beta/resources/businessscenario-planner-overview.md)
+Get started using Business Scenarios to integrated data into [Planner](/graph/api/resources/businessscenario-planner-overview)
