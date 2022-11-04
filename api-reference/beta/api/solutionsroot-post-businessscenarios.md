@@ -44,18 +44,11 @@ In the request body, supply a JSON representation of the [businessScenario](../r
 
 You can specify the following properties when creating a **businessScenario**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|uniqueName|String|**TODO: Add Description** Optional.|
-|ownerAppIds|String collection|**TODO: Add Description** Optional.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-
-
+|displayName|String|Display name of the scenario. Required.|
+|uniqueName|String|Unique name of the scemario. Each scenario must have a unique name. To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario. For example, a scenario authored by "Contoso.com" would have a unique name starting with "com.contoso" Required.|
+|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario. Application creating the scenario will be automatically added to the list. Optional.|
 
 ## Response
 
@@ -64,6 +57,7 @@ If successful, this method returns a `201 Created` response code and a [business
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -87,8 +81,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -119,4 +113,3 @@ Content-Type: application/json
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

@@ -47,28 +47,17 @@ You can specify the following properties when creating a **businessScenarioTask*
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|planId|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|bucketId|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |title|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Required.|
 |orderHint|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |assigneePriority|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |percentComplete|Int32|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |priority|Int32|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |startDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |dueDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |hasDescription|Boolean|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |previewType|plannerPreviewType|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). The possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Optional.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|completedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|referenceCount|Int32|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|checklistItemCount|Int32|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|activeChecklistItemCount|Int32|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|conversationThreadId|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
 |businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|**TODO: Add Description** Optional.|
 |target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|**TODO: Add Description** Optional.|
 
