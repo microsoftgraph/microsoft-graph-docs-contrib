@@ -245,7 +245,6 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
 ```
 
-
 #### Response
 
 <!-- {
@@ -276,8 +275,13 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=directoryScopeId+eq+'/d23998b1-8853-4c87-b95f-be97d6c6b610'
 ```
 
-Response
+#### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.roleAssignment"
+} -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -317,8 +321,7 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.roleAssignment"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
