@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an anonymous guest in a chat. 
 
 Anonymous users do not have a Microsoft Teams identity and can join meetings using meeting join links. For more details, see [Anonymous users](/microsoftteams/non-standard-users#anonymous-users).
