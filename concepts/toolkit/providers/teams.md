@@ -55,8 +55,8 @@ export interface TeamsConfig {
 
 ```html
 <!-- Microsoft Teams sdk must be referenced before the toolkit -->
-<script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/teams-js@2/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
 
 <mgt-teams-provider
   client-id="<YOUR_CLIENT_ID>"
@@ -94,8 +94,8 @@ TeamsProvider.handleAuth();
 # [unpkg](#tab/html)
 
 ```html
-<script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/teams-js@2/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
 
 <script>
   mgt.TeamsProvider.handleAuth();
@@ -114,8 +114,8 @@ If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams
 You can also use the [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) in **Visual Studio Code** to quickly create and deploy your Teams app.
 
 ### Creating an app/client ID
-In order to get a client ID, you need to [register your application](../get-started/add-aad-app-registration.md) in Azure AD. 
->**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
+In order to get a client ID, you need to [register your application](../get-started/add-aad-app-registration.md) in Azure AD.
+>**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**.
 
 ## See also
 * [Microsoft Teams tab sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
