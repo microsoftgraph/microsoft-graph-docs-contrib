@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /directory/onPremisesSynchronization
+PATCH /directory/onPremisesSynchronization/{id}
 ```
 
 ## Request headers
@@ -66,17 +66,21 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/directory/onPremisesSynchronization
+PATCH https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 Content-Type: application/json
 Content-length: 293
 
 {
-  "@odata.type": "#microsoft.graph.onPremisesDirectorySynchronization",
   "configuration": {
-    "@odata.type": "microsoft.graph.onPremisesDirectorySynchronizationConfiguration"
+    "accidentalDeletionPrevention": {
+      "synchronizationPreventionType": "enabledForCount",
+      "alertThreshold": 500
+    },
+    "synchronizationInterval": "PT30M",
+    "customerRequestedSynchronizationInterval": "PT1H"
   },
   "features": {
-    "@odata.type": "microsoft.graph.onPremisesDirectorySynchronizationFeature"
+    "groupWriteBackEnabled": true
   }
 }
 ```
