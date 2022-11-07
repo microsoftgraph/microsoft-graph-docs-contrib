@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [deploymentAudience](../resources/windowsupdates-deploymentAudience.md) object.
+Create a new [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,12 +42,12 @@ POST /admin/windows/updates/deploymentAudiences
 ## Request body
 In the request body, supply a JSON representation of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.
 
-You can specify the following properties when creating a **deploymentAudience**.
+You can specify the following properties when you create a **deploymentAudience**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience.|
-|members|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to include in the audience.|
+|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|The assets to exclude from the audience.|
+|members|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|The assets to include in the audience.|
 
 ## Response
 
@@ -80,7 +80,7 @@ Content-length: 208
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -103,4 +103,3 @@ Content-Type: application/json
   ]
 }
 ```
-

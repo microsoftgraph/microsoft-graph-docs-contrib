@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 Represents a container for all Windows administrator functionalities.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|An identifier for the device. Key. Not nullable. Read-only. Returned by default.|
+| Property | Type   | Description                                                                         |
+|:---------|:-------|:------------------------------------------------------------------------------------|
+| id       | String | The unique identifier for the device. Not nullable. Read-only. Returned by default. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -37,6 +37,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.adminWindows",
-  "id": "String (identifier)",
+  "id": "String (identifier)"
 }
 ```

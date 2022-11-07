@@ -40,14 +40,12 @@ PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/{
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isRevoked|Boolean|Set to **true** to revoke the change and prevent further application. Revoking a compliance change is a final action.|
-
-
+|isRevoked|Boolean|`True` indicates that a compliance change is revoked, preventing further application. Revoking a compliance change is a final action.|
 
 ## Response
 
@@ -74,9 +72,8 @@ Content-length: 144
 }
 ```
 
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -97,4 +94,3 @@ Content-Type: application/json
   "updatePolicy": { "@odata.id": "updatePolicies/1" }
 }
 ```
-

@@ -40,20 +40,18 @@ POST /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentApproval.md) object.
+In the request body, supply a JSON representation of the [contentApproval](../resources/windowsupdates-contentapproval.md) object.
 
-You can specify the following properties when creating a **contentApproval**.
+You can specify the following properties when you create a **contentApproval**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [microsoft.graph.windowsUpdates.catalogContent](../resources/windowsupdates-catalogcontent.md)|
-|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
-
-
+|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [microsoft.graph.windowsUpdates.catalogContent](../resources/windowsupdates-catalogcontent.md).|
+|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings for governing how to deploy **content**.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [contentApproval](../resources/windowsupdates-contentapproval.md) object in the response body.
 
 ## Examples
 
@@ -91,9 +89,8 @@ Content-length: 570
 }
 ```
 
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -136,4 +133,3 @@ Content-Type: application/json
   ]
 }
 ```
-

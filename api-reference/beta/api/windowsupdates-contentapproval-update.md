@@ -40,16 +40,14 @@ PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/{
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [catalogContent](../resources/windowsupdates-catalogcontent.md)|
-|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
-|isRevoked|Boolean|Set to **true** to revoke the change and prevent further application. Revoking a compliance change is a final action.|
-
-
+|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [microsoft.graph.windowsUpdates.catalogContent](../resources/windowsupdates-catalogcontent.md).|
+|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings for governing how to deploy **content**.|
+|isRevoked|Boolean|`True` indicates that a compliance change is revoked, preventing further application. Revoking a compliance change is a final action. Inherited from [microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md).|
 
 ## Response
 
@@ -78,7 +76,7 @@ Content-length: 91
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -121,4 +119,3 @@ Content-Type: application/json
   ]
 }
 ```
-

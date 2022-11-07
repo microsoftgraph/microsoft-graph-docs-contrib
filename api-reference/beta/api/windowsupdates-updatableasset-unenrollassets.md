@@ -51,8 +51,6 @@ The following table shows the parameters that can be used with this action.
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to stop managing. Supports a subset of the values for **updateCategory**. Possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
 |assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of **updatableAsset** resources to unenroll from update management by the service for the given **updateCategory**.|
 
-
-
 ## Response
 
 If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.

@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [deploymentAudience](../resources/windowsupdates-deploymentAudience.md) objects and their properties.
+Get a list of [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -101,4 +101,3 @@ Content-Type: application/json
   ]
 }
 ```
-

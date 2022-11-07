@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [complianceChange](../resources/windowsupdates-complianceChange.md) object.
+Delete a [complianceChange](../resources/windowsupdates-compliancechange.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,10 +58,8 @@ The following is an example of a request.
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/{complianceChangeId}
 ```
 
-
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -70,4 +68,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

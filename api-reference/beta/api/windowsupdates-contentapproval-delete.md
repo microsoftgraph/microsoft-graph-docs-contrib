@@ -60,8 +60,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/{up
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -70,4 +69,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

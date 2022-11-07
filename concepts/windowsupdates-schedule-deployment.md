@@ -15,7 +15,7 @@ Scheduling features are compatible with [deployments](windowsupdates-deployments
 
 ## Schedule a deployment to start at a future date
 
-You can schedule a deployment to start at a future date by configuring its [schedule settings](/graph/api/resources/windowsupdates-schedulesettings). In the example below, all devices assigned the deployment will be offered the update on July 1, 2021.
+You can schedule a deployment to start at a future date by configuring its [schedule settings](/graph/api/resources/windowsupdates-schedulesettings). In the following example, all devices assigned the deployment will be offered the update on July 1, 2021.
 
 ### Request
 
