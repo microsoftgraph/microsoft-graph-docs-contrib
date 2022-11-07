@@ -1,6 +1,6 @@
 ---
 title: "onPremisesDirectorySynchronization resource type"
-description: "A container for on-premises directory synchronization functionalities that are available for the organization"
+description: "A container for on-premises directory synchronization functionalities that are available for the organization."
 author: "mwongela"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
