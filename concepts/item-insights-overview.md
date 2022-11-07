@@ -62,7 +62,7 @@ After disabling item insights, the following happens:
 * Your colleagues can still see files that you have shared with them from OneDrive for Business and SharePoint in experiences such as Delve and [the profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501). To avoid seeing shared files in these places, remove the sharing permissions on the files.  
 * Experiences that show content trending around you is inaccessible to others, in places such as Delve and the **Discover** section in Outlook mobile. The lack of trending insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
-* Note that _your_ access to experiences showing trending content is _not_ revoked, while _your activities_ are protected from being shared. In other words, when you have item insights disabled you are protected against undesirable discovery of your data, but you yourself are not locked out of seeing activities and data from users who have chosen to contribute.
+* Insights about your file-based activities in collaborative workspaces are no longer shared with others, protecting you from undesirable discovery of your data. On the other hand, your access to experiences showing trending content is not revoked. You can see the activities and data of users who have not disabled item insights.
 * [Suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) will no longer be calculated and shown to the user on their persona card.
 
 > [!NOTE]
