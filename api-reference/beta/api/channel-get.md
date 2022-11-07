@@ -192,6 +192,23 @@ Content-type: application/json
 }
 ```
 
+Here is an example of the response for a standard channel with summary property.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels(summary)/$entity",
+    ""summary":{
+        "hasMembersFromOtherTenants":false,
+        "guestsCount":1,
+        "membersCount":3,
+        "ownersCount":2
+    }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
