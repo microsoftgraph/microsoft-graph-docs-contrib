@@ -1413,7 +1413,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isExactMatchRequired",
           "ChangeType": "Addition",
-          "Description": "Added the **isExactMatchRequired** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) entity.",
+          "Description": "Added the **isExactMatchRequired** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
           "Target": "property"
         }
       ],
