@@ -33,7 +33,7 @@ To complete this tutorial, you need the following resources and privileges:
 The following request creates an offboarding workflow with the following settings:
 
 + It can currently be run on-demand but not on schedule. This step will allow us to validate the workflow using the test user's account. The workflow will be updated to run on schedule later in this tutorial.
-+ The workflow runs seven days after the employee's employeeLeaveDateTime, and if they are in the "Marketing" department.
++ The workflow runs seven days after the employee's [employeeLeaveDateTime](/graph/tutorial-lifecycle-workflows-set-employeeleavedatetime?tabs=http), and if they are in the "Marketing" department.
 + Three workflow tasks are enabled to run in sequence: the user is unassigned all licenses, then removed from all teams, then their user account is deleted.
 
 
@@ -538,7 +538,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 When a workflow is scheduled, Lifecycle Workflows will check every three hours for users in the associated execution condition and execute the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
 
