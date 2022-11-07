@@ -65,12 +65,6 @@ After disabling item insights, the following happens:
 * Insights about your file-based activities in collaborative workspaces are no longer shared with others, protecting you from undesirable discovery of your data. On the other hand, your access to experiences showing trending content is not revoked. You can see the activities and data of users who have not disabled item insights.
 * [Suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) will no longer be calculated and shown to the user on their persona card.
 
-> [!NOTE]
-> There is a change in behavior that was put into effect on December 1, 2022. Previously, users who had item insights turned off were not themselves able to use experiences with trending content, like Delve. As an example, when a user who had disabled item insights opened the Delve home page, it showed an empty page. After the behavior change, Delve _does_ show content when users with item insights disabled open the Delve home page, although the activities from these users are still protected from being shared with others. It should be noted that nothing has changed for organizations where the administrator has disabled item insights for the entire organization – since no users in the organization share their activities, experiences like Delve remain empty.
-
-
-
-
 ## API reference
 
 Looking for the API reference for this service?
