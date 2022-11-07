@@ -24,9 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 ### Permissions for channel
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ChannelMessage.Send |
+| Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Teamwork.Migrate.All |
+
+> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 > **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
@@ -567,9 +569,9 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)
+> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in body as `../hostedContents/1/$value`.)
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. .NET SDK users do not need to perform the conversion to Base64 encoded bytes as the SDK handles it for you.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. Microsoft .NET SDK users do not need to perform the conversion to Base64 encoded bytes as the SDK handles it for you.
 
 
 # [HTTP](#tab/http)
@@ -679,9 +681,9 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)
+> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.)
 
-**contentBytes** must be set to binary string Base64-encoded bytes.  You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. .NET SDK users do not need to perform the conversion to Base64 encoded bytes as the SDK handles it for you.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. Microsoft .NET SDK users do not need to perform the conversion to Base64 encoded bytes as the SDK handles it for you.
 
 
 # [HTTP](#tab/http)
@@ -748,6 +750,8 @@ Content-type: application/json
 
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

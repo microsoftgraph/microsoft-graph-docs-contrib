@@ -69,7 +69,7 @@ The following example specifies the **id** of a **room** to get its properties.
 <!-- {
   "blockType": "request",
   "name": "get_room",
-  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"]
+  "sampleKeys": ["979e9793-3e91-40eb-b18c-0ea937893956"]
 }-->
 
 ```msgraph-interactive

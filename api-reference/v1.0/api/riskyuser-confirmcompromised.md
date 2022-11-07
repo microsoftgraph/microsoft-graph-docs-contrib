@@ -1,7 +1,7 @@
 ---
 title: "riskyUser: confirmCompromised"
 description: "Confirm a user as compromised"
-author: "cloudhandler"
+author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

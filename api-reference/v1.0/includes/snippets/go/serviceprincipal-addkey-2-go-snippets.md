@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewKeyCredentialPostRequestBody()
+requestBody := graphmodels.NewAddKeyPostRequestBody()
 keyCredential := graphmodels.NewKeyCredential()
 type := "X509CertAndPassword"
 keyCredential.SetType(&type) 

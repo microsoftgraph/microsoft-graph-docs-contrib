@@ -15,13 +15,11 @@ requestBody.SetDisplayName(&displayName)
 
 
 unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
-additionalData := map[string]interface{}{
-	allowedResourceActions := []string {
-		"microsoft.directory/applications/basic/read",
+allowedResourceActions := []string {
+	"microsoft.directory/applications/basic/read",
 
-	}
 }
-unifiedRolePermission.SetAdditionalData(additionalData)
+unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
 
 rolePermissions := []graphmodels.UnifiedRolePermissionable {
 	unifiedRolePermission,

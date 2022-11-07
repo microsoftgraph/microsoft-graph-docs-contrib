@@ -11,19 +11,20 @@ requestBody := graphmodels.NewInvitePostRequestBody()
 
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
-additionalData := map[string]interface{}{
-	"replacesCallId" : "a7ebfb2d-871e-419c-87af-27290b22e8db", 
-	"participantId" : "7d501bf1-5ee4-4605-ba92-0ae4513c611c", 
-identity := graphmodels.New()
-user := graphmodels.New()
+replacesCallId := "a7ebfb2d-871e-419c-87af-27290b22e8db"
+invitationParticipantInfo.SetReplacesCallId(&replacesCallId) 
+participantId := "7d501bf1-5ee4-4605-ba92-0ae4513c611c"
+invitationParticipantInfo.SetParticipantId(&participantId) 
+identity := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
 id := "682b6c37-0729-4fab-ace6-d730d5d9137e"
 user.SetId(&id) 
-identityProvider := "AAD"
-user.SetIdentityProvider(&identityProvider) 
-	identity.SetUser(user)
-	invitationParticipantInfo.SetIdentity(identity)
+additionalData := map[string]interface{}{
+	"identityProvider" : "AAD", 
 }
-invitationParticipantInfo.SetAdditionalData(additionalData)
+user.SetAdditionalData(additionalData)
+identity.SetUser(user)
+invitationParticipantInfo.SetIdentity(identity)
 
 participants := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
