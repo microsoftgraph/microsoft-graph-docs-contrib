@@ -73,22 +73,22 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 
 *Refine results by `tags`, a refinable property.*
 
-### Exact Match Required
+### Exact match required
 
 If exact matching is specified for a property, then the full string value will be indexed. Only non-searchable properties can specify exact matching.
 
 For example, the `ticketId` property is both queryable and specifies exact matching.
-- Querying "ticketId:CTS-ce913b61" will return the item with a ticket ID property "CTS-ce913b61"
-- Querying "ticketId:CTS" will NOT return the item with ticket ID "CTS-ce913b61"
+- Querying "ticketId:CTS-ce913b61" will return the item with a ticket ID property "CTS-ce913b61".
+- Querying "ticketId:CTS" will NOT return the item with ticket ID "CTS-ce913b61".
 
 Similarly, the `tags` property also specifies exact matching.
-- Querying "tags:contoso" will return any item with the tag "contoso"
-- Querying "tags:contoso" will NOT return items with the tag "contoso ticket"
+- Querying "tags:contoso" will return any item with the tag "contoso".
+- Querying "tags:contoso" will NOT return items with the tag "contoso ticket".
 
-For example, there may be a scenario where the item property is a GUID-formatted string. If this property must be matched exactly for item queries, then please specify that `isExactMatchRequired` is true.
+For example, there may be a scenario where the item property is a GUID-formatted string. If this property must be matched exactly for item queries, specify that `isExactMatchRequired` is true.
 
-The `title` property does not specify exact matching. If nothing is specified, then the `isExactMatchRequired` is false. The `title` property will be tokenized based on the item content language's tokenization rules.
-- Querying "title:Contoso Title" will return any item containing "Contoso" or "Title" in the `title` property
+The `title` property does not specify exact matching. If nothing is specified, then `isExactMatchRequired` is false. The `title` property will be tokenized based on the tokenization rules of the language of the item content.
+- Querying "title:Contoso Title" will return any item containing "Contoso" or "Title" in the `title` property.
 
 ## Semantic labels
 
