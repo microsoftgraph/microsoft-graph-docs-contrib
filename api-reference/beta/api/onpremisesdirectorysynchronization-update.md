@@ -48,8 +48,8 @@ PATCH /directory/onPremisesSynchronization/{id}
 
 | Property      | Type                                                                                                                                           | Description                                                                                                                                |
 | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| configuration | [Microsoft.DirectoryServices.onPremisesDirectorySynchronizationConfiguration](../resources/onpremisesdirectorysynchronizationconfiguration.md) | Consists of configurations that can be fine tuned and impact the on-premises directory synchronization process for a tenant. Not required. |
-| features      | [Microsoft.DirectoryServices.onPremisesDirectorySynchronizationFeature](../resources/onpremisesdirectorysynchronizationfeature.md)             | Consists of directory synchronization features that can be enabled or disabled. Not required.                                              |
+| configuration | [onPremisesDirectorySynchronizationConfiguration](../resources/onpremisesdirectorysynchronizationconfiguration.md) | Consists of configurations that can be fine-tuned and impact the on-premises directory synchronization process for a tenant. |
+| features      | [onPremisesDirectorySynchronizationFeature](../resources/onpremisesdirectorysynchronizationfeature.md)             | Consists of directory synchronization features that can be enabled or disabled.                                          |
 
 ## Response
 
