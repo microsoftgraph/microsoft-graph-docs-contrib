@@ -2647,6 +2647,22 @@ Possible values for user account types (group membership), per Windows definitio
 |delinked           |
 |unknownFutureValue |  
 
+### plannerExternalTaskSourceDisplayType values
+
+|Member|
+|:---|
+|none|
+|default|
+|unknownFutureValue|
+
+### plannerCreationSourceKind values
+
+|Member|
+|:---|
+|none|
+|external|
+|publication|
+|unknownFutureValue|
 
 ### policyScope values
 

@@ -17,6 +17,7 @@ Contains information about the origin of the [plannerTask](plannerTask.md). This
 |Property|Type|Description|
 |:---|:---|:---|
 |teamsPublicationInfo|[plannerTeamsPublicationInfo](../resources/plannerteamspublicationinfo.md)|Information about the publication process that created this task. `null` value indicates that the task was not created by a publication process.|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the task is created with. |
 
 ## Relationships
 None.
@@ -33,7 +34,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.plannerTaskCreation",
   "teamsPublicationInfo": {
     "@odata.type": "microsoft.graph.plannerTeamsPublicationInfo"
-  }
+  },
+  "creationSourceKind": "plannerCreationSourceKind"
 }
 ```
 

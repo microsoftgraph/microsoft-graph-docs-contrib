@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerCreationSourceKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerCreationSourceKind** enumeration type.",
+          "Target": "plannerCreationSourceKind"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerExternalTaskSourceDisplayType",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerExternalTaskSourceDisplayType** enumeration type.",
+          "Target": "plannerExternalTaskSourceDisplayType"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerBucketCreation",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerBucketCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerBucketCreation?view=graph-rest-beta) resource type.",
+          "Target": "plannerBucketCreation"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerExternalBucketSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerExternalBucketSource](https://docs.microsoft.com/en-us/graph/api/resources/plannerExternalBucketSource?view=graph-rest-beta) resource type.",
+          "Target": "plannerExternalBucketSource"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerExternalPlanSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerExternalPlanSource](https://docs.microsoft.com/en-us/graph/api/resources/plannerExternalPlanSource?view=graph-rest-beta) resource type.",
+          "Target": "plannerExternalPlanSource"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerExternalTaskSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerExternalTaskSource](https://docs.microsoft.com/en-us/graph/api/resources/plannerExternalTaskSource?view=graph-rest-beta) resource type.",
+          "Target": "plannerExternalTaskSource"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanCreation",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanCreation?view=graph-rest-beta) resource type.",
+          "Target": "plannerPlanCreation"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Property",
+          "ChangedApiName": "creationSourceKind",
+          "ChangeType": "Addition",
+          "Description": "Added the `creationSourceKind` property to the [plannerTaskCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskCreation?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskCreation"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Property",
+          "ChangedApiName": "creationSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `creationSource` property to the [plannerBucket](https://docs.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+          "ApiChange": "Property",
+          "ChangedApiName": "creationSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `creationSource` property to the [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "e4d367de-f8a3-4c05-a3ac-80216244a80c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-07T20:25:18.7873044Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
           "ApiChange": "Resource",
           "ChangedApiName": "baseTaskList",

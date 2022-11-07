@@ -36,6 +36,7 @@ The **plannerPlan** resource represents a plan in Microsoft 365. A plan can be o
 |title|String|Required. Title of the plan.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Additional user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
+|creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
 |owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it is set, this property can’t be updated. This property will not return a valid group ID if the container of the plan is not a group.|
 
 ## Relationships
@@ -74,6 +75,7 @@ Here is a JSON representation of the resource.
     }
   },
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "creationSource": {"@odata.type": "#microsoft.graph.plannerPlanCreation"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "container": {
