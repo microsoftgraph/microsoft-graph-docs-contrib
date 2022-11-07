@@ -28,7 +28,7 @@ A container for on-premises directory synchronization functionalities that are a
 | :------------ | :----------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
 | configuration | [onPremisesDirectorySynchronizationConfiguration](../resources/onpremisesdirectorysynchronizationconfiguration.md) | Consists of configurations that can be fine tuned and impact the on-premises directory synchronization process for a tenant. |
 | features      | [onPremisesDirectorySynchronizationFeature](../resources/onpremisesdirectorysynchronizationfeature.md)             | Consists of directory synchronization features that can be enabled or disabled.                                              |
-| id            | String                                                                                                             | The organization ID.                                                                                                         |
+| id            | String                                                                                                             | The unique Azure AD tenant ID.                                                                                                         |
 
 ## Relationships
 
