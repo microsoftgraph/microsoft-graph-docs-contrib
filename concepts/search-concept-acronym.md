@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search acronyms
 
-You can use the Microsoft Search API in Microsoft Graph to search acronyms. Administrators can create acronyms in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) or via the [Create acronym](/graph/api/search-searchentity-post-acronyms) API.
+You can use the Microsoft Search API in Microsoft Graph to search acronyms in your organization. Administrators can create acronyms in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) or via the [Create acronym](/graph/api/search-searchentity-post-acronyms) API.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -77,7 +77,8 @@ Content-type: application/json
 
 ## Known issues
 
-Sorting, aggregation, and pagination are not supported for acronym searches.
+- Sorting, aggregation, and pagination are not supported for acronym searches.
+- Combination search with other entity types is not supported.
 
 ## Next steps
 

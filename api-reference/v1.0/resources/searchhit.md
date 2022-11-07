@@ -2,7 +2,7 @@
 title: "searchHit resource type"
 description: "Description of searchHit entity"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

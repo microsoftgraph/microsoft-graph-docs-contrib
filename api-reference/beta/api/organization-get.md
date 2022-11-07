@@ -123,6 +123,7 @@ Content-type: application/json
     "country": null,
     "countryLetterCode": "NL",
     "createdDateTime": "2021-08-02T10:30:06Z",
+    "defaultUsageLocation": "String",
     "displayName": "Contoso",
     "isMultipleDataLocationsForServicesEnabled": null,
     "marketingNotificationEmails": [],

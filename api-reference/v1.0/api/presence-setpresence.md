@@ -20,7 +20,7 @@ Similarly, an application can have its own presence session for a user and be ab
 
 The following is the precedence for how session states are aggregated:
 * User-configured > app-configured (user-configured state overrides others)
-* Among app-configured: DoNotDisturb (currently not supported for set presence) > Busy > Available > Away
+* Among app-configured: DoNotDisturb > Busy > Available > Away
 
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
@@ -66,12 +66,13 @@ In the request body, provide a JSON object with the following parameters.
 
 Supported combinations of `availability` and `activity` are:
 
-| availability | activity          | Description                                              |
-| :----------- | :---------------- | :------------------------------------------------------- |
-| Available    | Available         | Updates the presence session as Available.               |
-| Busy         | InACall           | Updates the presence session as Busy, InACall.           |
-| Busy         | InAConferenceCall | Updates the presence session as Busy, InAConferenceCall. |
-| Away         | Away              | Updates the presence session as Away.                    |
+| availability | activity          | Description                                               |
+| :----------- | :---------------- | :-------------------------------------------------------- |
+| Available    | Available         | Updates the presence session as Available.                |
+| Busy         | InACall           | Updates the presence session as Busy, InACall.            |
+| Busy         | InAConferenceCall | Updates the presence session as Busy, InAConferenceCall.  |
+| Away         | Away              | Updates the presence session as Away.                     |
+| DoNotDisturb | Presenting        | Updates the presence session as DoNotDisturb, Presenting. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.

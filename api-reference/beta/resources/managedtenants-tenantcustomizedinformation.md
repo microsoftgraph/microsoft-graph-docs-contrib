@@ -3,7 +3,7 @@ title: "tenantCustomizedInformation resource type"
 description: "Represents customizable information for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 
