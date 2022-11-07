@@ -1564,6 +1564,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | OnPremDirectorySynchronization.Read.All      | Read all on-premises directory synchronization information           | Allows the app to read all on-premises directory synchronization information for the organization, on behalf of the signed-in user           | Yes                    | No                          |
 | OnPremDirectorySynchronization.ReadWrite.All | Read and write all on-premises directory synchronization information | Allows the app to read and write all on-premises directory synchronization information for the organization, on behalf of the signed-in user | Yes                    | No                          |
 
+### Application permissions
+
+None.
 ---
 
 ## On-premises publishing profiles permissions
