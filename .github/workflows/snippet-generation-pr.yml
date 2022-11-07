@@ -10,6 +10,9 @@ on:
     branches:
       - "snippet-generation/*"
 
+permissions:
+  contents: read  #  to fetch code (actions/checkout)
+
 jobs:
   create-pull-request:
     # GitHub Actions don't support skip ci yet like Azure Pipelines so this check will do the same. 
