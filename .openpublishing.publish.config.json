@@ -61,7 +61,8 @@
     "Conceptual": "Content",
     "ManagedReference": "Content",
     "RestApi": "Content",
-    "Tutorial": "Content"
+    "Tutorial": "Content",
+    "ZonePivotGroups": "Toc"
   },
   "redirection_files": [
     "redirects/.openpublishing.redirection.0820.json",
