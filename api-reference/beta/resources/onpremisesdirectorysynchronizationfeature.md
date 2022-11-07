@@ -1,7 +1,7 @@
 ---
 title: "onPremisesDirectorySynchronizationFeature resource type"
 description: "Consists of directory synchronization features that can be enabled or disabled."
-author: "mwongela"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

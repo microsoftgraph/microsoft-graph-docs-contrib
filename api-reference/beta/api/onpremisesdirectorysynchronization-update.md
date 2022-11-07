@@ -1,7 +1,7 @@
 ---
 title: "Update onPremisesDirectorySynchronization"
 description: "Update the properties of an onPremisesDirectorySynchronization object."
-author: "mwongela"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

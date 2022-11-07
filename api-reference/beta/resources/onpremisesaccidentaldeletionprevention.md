@@ -1,7 +1,7 @@
 ---
 title: "onPremisesAccidentalDeletionPrevention resource type"
 description: "Contains the accidental deletion prevention configuration for a tenant."
-author: "mwongela"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Get onPremisesDirectorySynchronization"
 description: "Read the properties and relationships of an onPremisesDirectorySynchronization object."
-author: "mwongela"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
