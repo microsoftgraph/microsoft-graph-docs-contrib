@@ -56,7 +56,7 @@ By default, item insights are enabled. Administrators use specific settings to c
 
 Updating settings can take up to 24 hours to apply within the user’s organization across Microsoft 365 experiences.
 
-After an administrator disables your item insights, the following happens:
+After disabling item insights, the following happens:
 * Microsoft stops using your signals when computing recommendations for others. Your colleagues stop receiving item insights based on activities that you perform in shared workspaces. Your colleagues’ insights-based experience becomes less rich in places such as the **Recommended** section of files in Office.com and Delve, as shown in the following example, if you were signed in with the user name MeganB.
 ![disabled item insights in recommended in office](images/disabled-item-insights-in-office.PNG)
 * Your colleagues can still see files that you have shared with them from OneDrive for Business and SharePoint in experiences such as Delve and [the profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501). To prevent these places from displaying shared files, remove the sharing permissions on the files.  
