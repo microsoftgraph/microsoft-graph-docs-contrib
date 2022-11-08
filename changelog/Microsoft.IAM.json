@@ -2,36 +2,43 @@
   "changelog": [
     {
       "ChangeList": [
-        
         {
-          "Id": "0398bbe0-2643-4a10-90e1-85bdae7f105a",
-          "ApiChange": "Property",
-          "ChangedApiName": "groupFilterConfig",
-          "ChangeType": "Addition",
-          "Description": "Added the **groupFilterConfig** property to the [synchronizationRule](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
-          "Target": "synchronizationRule"
-        },
-        {
-          "Id": "0398bbe0-2643-4a10-90e1-85bdae7f105a",
-          "ApiChange": "Property",
-          "ChangedApiName": "containerFilterConfig",
-          "ChangeType": "Addition",
-          "Description": "Added the **containerFilterConfig** property to the [synchronizationRule](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
-          "Target": "synchronizationRule"
-        },
-        {
-          "Id": "0398bbe0-2643-4a10-90e1-85bdae7f105a",
+          "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
           "ApiChange": "Resource",
-          "ChangedApiName": "containerFilterConfig",
+          "ChangedApiName": "containerFilter",
           "ChangeType": "Addition",
-          "Description": "Added the [containerFilterConfig](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-containerfilterconfig?view=graph-rest-beta) resource type.",
-          "Target": "containerFilterConfig"
+          "Description": "Added the [containerFilter](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-containerFilter?view=graph-rest-beta) resource type.",
+          "Target": "containerFilter"
+        },
+        {
+          "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupFilter](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-groupFilter?view=graph-rest-beta) resource type.",
+          "Target": "groupFilter"
+        },
+        {
+          "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
+          "ApiChange": "Property",
+          "ChangedApiName": "containerFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the `containerFilter` property to the [synchronizationRule](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
+          "Target": "synchronizationRule"
+        },
+        {
+          "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the `groupFilter` property to the [synchronizationRule](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
+          "Target": "synchronizationRule"
         }
       ],
-      "Id": "0398bbe0-2643-4a10-90e1-85bdae7f105a",
+      "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-09-26T00:00:00.8657718Z",
+      "CreatedDateTime": "2022-11-07T18:54:24.8019646Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
     }
