@@ -9,7 +9,8 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -61,8 +62,7 @@
     "Conceptual": "Content",
     "ManagedReference": "Content",
     "RestApi": "Content",
-    "Tutorial": "Content",
-    "ZonePivotGroups": "Toc"
+    "Tutorial": "Content"
   },
   "redirection_files": [
     "redirects/.openpublishing.redirection.0820.json",
