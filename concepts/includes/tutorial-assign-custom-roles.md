@@ -13,7 +13,7 @@ ms.topic: include
 
 # Assign custom admin roles using the Microsoft Graph API in Azure Active Directory
 
-You can automate how you assign roles to user accounts using the Microsoft Graph API. This article covers POST, GET, and DELETE operations on roleAssignments.
+You can automate how you assign roles to user accounts using the Microsoft Graph API. This article covers POST, GET, and DELETE operations on **roleAssignments**.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ You can automate how you assign roles to user accounts using the Microsoft Graph
 - Privileged Role Administrator or Global Administrator
 - Admin consent when using Graph Explorer for Microsoft Graph API
 
-## POST Operations on RoleAssignment
+## POST operations on roleAssignment
 
 Use the [Create unifiedRoleAssignment](/graph/api/rbacapplication-post-roleassignments) API to assign the role.
 
@@ -151,9 +151,9 @@ HTTP/1.1 400 Bad Request
 }
 ```
 
-Only a subset of built-in roles are enabled for Administrative Unit scoping. Refer to [this documentation](/azure/active-directory/roles/admin-units-assign-roles) for the list of built-in roles supported over an administrative unit.
+Only a subset of built-in roles are enabled for Administrative Unit scoping. For the list of built-in roles supported over an administrative unit, see [Assign Azure AD roles with administrative unit scope](/azure/active-directory/roles/admin-units-assign-roles).
 
-## GET Operations on RoleAssignment
+## GET operations on roleAssignment
 
 Use the [List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments) API to get the role assignment.
 
@@ -198,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Get role assignments for a given role definition.
+### Example 6: Get role assignments for a given role definition
 
 #### Request
 <!-- {
@@ -232,7 +232,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7: Get a role assignment by ID.
+### Example 7: Get a role assignment by ID
 
 #### Request
 <!-- {
@@ -300,11 +300,11 @@ HTTP/1.1 200 OK
 }
 ```
 
-## DELETE Operations on RoleAssignment
+## DELETE operations on roleAssignment
 
 Use the [Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete) API to delete the role assignment.
 
-### Example 9: Delete a role assignment between a user and a role definition.
+### Example 9: Delete a role assignment between a user and a role definition
 
 
 #### Request
@@ -361,4 +361,4 @@ HTTP/1.1 400 Bad Request
 }
 ```
 
-We prevent users from deleting their own Global Administrator role to avoid a scenario where a tenant has zero Global Administrators. Removing other roles assigned to self is allowed.
+Users are not able to delete their own Global Administrator role to avoid a scenario where a tenant has zero Global Administrators. Removing other roles assigned to self is allowed.
