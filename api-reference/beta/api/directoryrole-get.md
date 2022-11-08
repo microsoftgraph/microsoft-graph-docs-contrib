@@ -27,14 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
+
+You can address the directory role using either its **id** or **roleTemplateId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/{role-id}
-```
-
-**roleTemplateId** can also be used in the place of `id` as an alternate key.
-
-```http
 GET /directoryRoles/(roleTemplateId='{roleTemplateId}')
 ```
 
@@ -119,13 +116,11 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-<!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
-
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_directoryrole_templateId"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='88d8e3e3-8f55-4a1e-953a-9b9898b8876b')
 ```
 
