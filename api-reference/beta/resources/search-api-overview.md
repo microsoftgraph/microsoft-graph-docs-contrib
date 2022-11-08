@@ -120,7 +120,7 @@ The **collapseProperties** property contains a set of criteria, fields, and limi
 
 The [query](../api/search-query.md) method lets you customize the collapse property by specifying **collapseProperties** on the `requests` parameter, which is a collection of [collapseProperty](collapseproperty.md) objects. This allows you to specify a set of one or more collapse properties.
 
-Note that collapsing results is currently supported on the following entity types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](lcist.md), [site](site.md), [externalItem](externalconnectors-externalitem.md).
+Note that collapsing results is currently supported on the following entity types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md), [externalItem](externalconnectors-externalitem.md).
 
 The properties on which the collapse clause are applied need to be queryable and either sortable or refinable. For multi-level collapse, each subsequent property limit size specified in a multi-level request should be less than or equal to the previous; otherwise, the response will return an `HTTP 400 Bad Request` error.
 
