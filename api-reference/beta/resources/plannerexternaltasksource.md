@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
     "externalObjectVersion": "String-value",
     "webUrl": "String-value",
     "displayLinkType": "plannerExternalTaskSourceDisplayType value",
-    "displayNameSegments": [String-Collection]
+    "displayNameSegments": "String Collection"
 }
 ```
 
