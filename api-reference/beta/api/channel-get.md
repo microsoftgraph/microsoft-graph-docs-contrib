@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [channel](../r
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -124,7 +124,7 @@ Content-type: application/json
 
 ```
 
-Here is an example of the response for a standard channel with channel moderation off.
+The following example shows the response for a standard channel with channel moderation off.
 
 ```http
 HTTP/1.1 200 OK
@@ -147,7 +147,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-Here is an example of the response for a standard channel with channel moderation on.
+The following example shows the response for a standard channel with channel moderation on.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -173,7 +173,7 @@ Content-type: application/json
 }
 ```
 
-Here is an example of the response for a private channel.
+The following example shows the response for a private channel.
 
 ```http
 HTTP/1.1 200 OK
@@ -192,7 +192,7 @@ Content-type: application/json
 }
 ```
 
-Here is an example of the response for a standard channel with summary property.
+The following example shows the response for a standard channel with the **summary** property.
 
 ```http
 HTTP/1.1 200 OK
