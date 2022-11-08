@@ -8,7 +8,7 @@ ms.prod: ""
 
 # Working with Planner in Business Scenarios (Preview)
 
-Planner APIs in [Business Scenarios](businessscenario-overview.md) allow creating tasks with scenario controlled policies, in a specified target. In the current version a [group](group.md) can be targeted, and a [plannerPlan](plannerplan.md) based on the scenario configuration will be created, and tasks will be created in this plan.
+Planner APIs in [Business Scenarios](businessscenario-overview.md) allow creating tasks with scenario controlled policies, in a specified target. 
 
 ## Planner configuration
 
@@ -36,4 +36,8 @@ See [Planner Task Rules Overview](planner-task-rules-overview.md) for more infor
 
 ## Targeting Tasks
 
+Created tasks are placed in plans based on the specified target when they are created. In the current version a [group](group.md) can be targeted. The task will be placed in the [plan](plannerplan.md) associated with the scenario in that group. If the group doesn't have a plan for the scenario a new plan is going to be created based on the plan configuration.
+
 ## Task Metadata & Behavior
+
+As part of the tasks [scenario properties](businessscenarioproperties.md) are required. These properties include external id of the task, which is a required to be specified for each task. This value must be unique within the tenant. Creating a second task with the same external id will cause the first task to be returned without any modifications. External id can also be used as an alternate key when working with tasks. Additionally a context id can be specified for each task. This value can be used to query the tasks with the same context id, allowing the applications to group tasks across plans.

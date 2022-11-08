@@ -34,7 +34,7 @@ GET /solutions/businessScenarios/{businessScenarioId}/planner/tasks
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). Tasks can be queried with a their context id or location as filters.
 
 ## Request headers
 |Name|Description|
