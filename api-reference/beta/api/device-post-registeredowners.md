@@ -26,17 +26,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/{id}/registeredOwners/$ref
-```
-
-**deviceId** can also be used as an alternate key
-```http
 POST /devices/(deviceId='{deviceId}')/registeredOwners/$ref
-```
 
+```
 ## Request headers
 | Name       | Description|
 |:---------------|:--------|
@@ -60,17 +56,6 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/devices/{id}/registeredOwners/$ref
-Content-type: application/json
-
-{
-  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
-}
-```
-
-# [HTTP - deviceId](#tab/httpdeviceid)
-
-```http
-POST https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')/registeredOwners/$ref
 Content-type: application/json
 
 {

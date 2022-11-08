@@ -30,14 +30,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredUsers
-```
-
-**deviceId** can also be used as an alternate key
-```http
 GET /devices/(deviceId='{deviceId}')/registeredUsers
 ```
 
@@ -71,12 +67,6 @@ Here is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/registeredUsers
-```
-
-# [HTTP - deviceId](#tab/httpdeviceid)
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')/registeredUsers
 ```
 
 # [C#](#tab/csharp)

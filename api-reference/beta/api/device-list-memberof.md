@@ -29,17 +29,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/memberOf
-```
-
-**deviceId** can also be used as an alternate key
-```http
 GET /devices/(deviceId='{deviceId}')/memberOf
 ```
-
 ## Optional query parameters
 
 This method supports the `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled, for example, you can cast to get just the directoryRoles the device is a member of. You can use `$search` on the **displayName** and **description** properties.
@@ -74,12 +69,6 @@ The following is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf
-
-```
-# [HTTP - deviceId](#tab/httpdeviceid)
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')/memberOf
 ```
 
 # [C#](#tab/csharp)

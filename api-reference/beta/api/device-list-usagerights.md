@@ -25,17 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
+You can address the device using either its **id** or **deviceId**.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /devices/{id}/usageRights
-```
-
-**deviceId** can also be used as an alternate key
-``` http
+GET /devices/{objectId}/usageRights
 GET /devices/(deviceId='{deviceId}')/usageRights
 ```
 
@@ -77,11 +73,6 @@ Additionally, if there are more pages in the response an @odata.nextLink is retu
 -->
 ``` http
 GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
-```
-
-# [HTTP - deviceId](#tab/httpdeviceid)
-``` http
-GET https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')/usageRights
 ```
 
 # [C#](#tab/csharp)
