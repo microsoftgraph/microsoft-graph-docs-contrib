@@ -212,7 +212,6 @@ You've learned how to manage app role grants for a service principal. This metho
 
 ## See also
 
-+ [Grant and revoke API delegated permissions using Microsoft Graph](permissions-delegated-grant-msgraph.md)
 + [appRoleAssignment resource type](/graph/api/resources/approleassignment)
 
 ::: zone-end
@@ -475,7 +474,6 @@ You've granted delegated permissions (or scopes) to a service principal. This me
 
 ## See also
 
-+ [Grant and revoke API app roles using Microsoft Graph](permissions-app-grant-msgraph.md)
 + [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)
 
 ::: zone-end
