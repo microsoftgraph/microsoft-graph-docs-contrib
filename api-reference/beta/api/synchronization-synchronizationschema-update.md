@@ -139,7 +139,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_synchronizationschema_containerFilterConfig"
+  "name": "update_synchronizationschema_containerFilter"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
@@ -167,14 +167,14 @@ Content-type: application/json
     ],
     "synchronizationRules": [
         {
-            "containerFilterConfig": {
-                "inclusionList": [
+            "containerFilter": {
+                "includedContainers": [
                     "OU=In-Scope OU 1,DC=contoso,DC=com",
                     "OU=In-Scope OU 2,DC=contoso,DC=com",
                 ]
             },
-            "groupFilterConfig": {
-                "inclusionList": []
+            "groupFilter": {
+                "includedGroups": []
             },
             "name": "AD2AADProvisioning",
             "sourceDirectoryName": "Active Directory",
