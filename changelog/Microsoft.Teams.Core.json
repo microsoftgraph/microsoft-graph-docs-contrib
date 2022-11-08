@@ -39,6 +39,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a6ca8ae4-aabe-4191-83d2-494adcd6bcb6",
+          "ApiChange": "Authentication",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Change",
+          "Description": "Enabled validation on the sender tenant ID for the [Update chatMessage](https://learn.microsoft.com/en-us/graph/api/update-chatmessage) operation. With this change, only the tenant of the user who sent the message can perform data loss prevention updates on the chat message; that is, change the **policyViolation** property on the chat message.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "a6ca8ae4-aabe-4191-83d2-494adcd6bcb6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-11-07T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "04f199ca-74fe-4c67-b39f-2feacad3f304",
           "ApiChange": "Authentication",
           "ChangedApiName": "Messaging",
