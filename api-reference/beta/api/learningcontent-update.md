@@ -59,7 +59,7 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContent
 |contributors|String collection|The authors, creators, or contributors of the learning content. Optional.|
 |createdDateTime|DateTimeOffset|The date when the learning content was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 |description|String|The description or summary for the learning content. Optional.|
-|duration|Duration|The duration of the learning content in seconds. Optional.|
+|duration|Duration|The duration of the learning content in seconds. The value is represented in ISO 8601 format for durations. Optional.|
 |externalId|String|Unique external content ID for the learning content. Required.|
 |format|String|The format of the learning content. For example, `Course`, `Video`, `Book`, `Book Summary`, `Audiobook Summary`. Optional.|
 |isActive|Boolean|Indicates whether the content is active or not. Inactive content will not show up in the UI. The default value is `true`. Optional.|
@@ -106,9 +106,9 @@ Content-Type: application/json
     "numberOfPages": 9,
     "duration": "PT20M",
     "format": "Book",
-    "createdDateTime": "2018-01-01T00:00:00",
+    "createdDateTime": "2018-01-01T00:00:00Z",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-    "contributor": "Scott Simpson",
+    "contributors": ["Scott Simpson"],
     "additionalTags": [
         "Create private or public teams",
         "Add members to teams"
