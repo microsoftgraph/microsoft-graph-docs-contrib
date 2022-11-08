@@ -1,7 +1,7 @@
 ---
 title: "Delete businessScenario"
 description: "Delete a businessScenario object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [businessScenario](../resources/businessscenario.md) object.
+Delete a [businessScenario](../resources/businessscenario.md) object. Deleting a scenario will cause all data associated with the scenario to be deleted.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

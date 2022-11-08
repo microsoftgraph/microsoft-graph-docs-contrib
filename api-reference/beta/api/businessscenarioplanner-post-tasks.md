@@ -1,7 +1,7 @@
 ---
 title: "Create businessScenarioTask"
 description: "Create a new businessScenarioTask object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
@@ -44,24 +44,22 @@ In the request body, supply a JSON representation of the [businessScenarioTask](
 
 You can specify the following properties when creating a **businessScenarioTask**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|title|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Required.|
-|orderHint|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|assigneePriority|String|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|percentComplete|Int32|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|priority|Int32|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|startDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|dueDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|hasDescription|Boolean|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|previewType|plannerPreviewType|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). The possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Optional.|
-|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|assignments|[plannerAssignments](../resources/plannerassignments.md)|**TODO: Add Description** Inherited from [plannerTask](../resources/plannertask.md). Optional.|
-|businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|**TODO: Add Description** Optional.|
-|target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|**TODO: Add Description** Optional.|
-
-
+|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.|
+|assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
+|assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of users the task is assigned to.|
+|bucketId|String|Bucket id to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. [Format validation](../resources/tasks-identifiers-disclaimer.md) is done on the service. |
+|conversationThreadId|String|Thread id of the conversation on the task. This is the id of the conversation thread object created in the group.|
+|dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
+|percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
+|planId|String|Plan id to which the task belongs.|
+|priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
+|startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|title|String|Title of the task.|
+|businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|Required. Application managed properties. |
+|target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|Required. Target of the task.|
 
 ## Response
 

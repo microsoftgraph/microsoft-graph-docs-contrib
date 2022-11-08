@@ -1,7 +1,7 @@
 ---
 title: "businessScenarioPlanner resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: resourcePageType
@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 Contains Planner related content for the scenario, allowing both configuration of Planner behavior and accessing the scenario data in Planner.
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get businessScenarioPlanner](../api/businessscenarioplanner-get.md)|[businessScenarioPlanner](../resources/businessscenarioplanner.md)|Read the properties and relationships of a [businessScenarioPlanner](../resources/businessscenarioplanner.md) object.|
@@ -30,11 +30,13 @@ Inherits from [entity](../resources/entity.md).
 |[Create businessScenarioTask](../api/businessscenarioplanner-post-tasks.md)|[businessScenarioTask](../resources/businessscenariotask.md)|Create a new businessScenarioTask object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier of businessScenarioPlanner object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |planConfiguration|[plannerPlanConfiguration](../resources/plannerplanconfiguration.md)|The configuration of Planner plans that will be created for the scenario.|
@@ -42,6 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |tasks|[businessScenarioTask](../resources/businessscenariotask.md) collection|The Planner tasks for the scenario|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -57,4 +60,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-

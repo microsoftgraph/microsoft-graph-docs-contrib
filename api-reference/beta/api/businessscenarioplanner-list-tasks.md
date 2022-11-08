@@ -1,7 +1,7 @@
 ---
 title: "List businessScenarioTasks"
 description: "Get a list of the businessScenarioTask objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType

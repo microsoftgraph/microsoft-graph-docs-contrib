@@ -1,7 +1,7 @@
 ---
 title: "businessScenarioPlanner: getPlan"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Returns information about the [plannerPlan](../resources/plannerplan.md) mapped to the given target.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|**TODO: Add Description**|
+|target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|Target for which to get the plan information.|
 
 
 

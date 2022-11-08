@@ -1,7 +1,7 @@
 ---
 title: "plannerTaskPropertyRule resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the specific restrictions that apply to editing a [plannerTask](../resources/plannertask.md).
+Represents the specific restrictions that apply to editing a [plannerTask](../resources/plannertask.md). See [Planner Task Rules](planner-task-rules-overview.md) for more information on how to use this object.
 
 
 Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
