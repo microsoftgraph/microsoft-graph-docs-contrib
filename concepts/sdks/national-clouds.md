@@ -92,7 +92,8 @@ const graphClient = Client.initWithMiddleware({
 ### [PowerShell](#tab/powershell)
 
 ```powershell
-Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' -TenantId 'YOUR_TENANT_ID' -Scopes 'https://graph.microsoft.us/.default'
+Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
+  -TenantId 'YOUR_TENANT_ID' -Scopes 'https://graph.microsoft.us/.default'
 ```
 
 ### [Java](#tab/java)
