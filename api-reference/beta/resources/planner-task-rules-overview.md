@@ -49,18 +49,18 @@ The collection must contain only one of these values.
 
 ### appliedCategories
 
-AppliedCategories field is configured with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
+AppliedCategories property is configured with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
 
 * `block` : Applied categories cannot be changed.
 * `allow` : Categories can be added or removed.
 
 The collection must contain only one of these values.
 
-This field doesn't support any override conditions, the rules must be specified in the **defaultRules** property.
+This property doesn't support any override conditions, the rules must be specified in the **defaultRules** property.
 
 ### assignments
 
-Assignments field is configued with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
+Assignments property is configued with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
 
 * `block` : Assignments of the task cannot be changed.
 * `addSelf` : Users can assign the task to themselves.
@@ -73,25 +73,108 @@ Assignments field is configued with [fieldRules](plannerfieldrules.md) providing
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This field supports the following override conditions. If the an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If the an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
 
 * `userCreated` : Rules apply if the assignment was created by a user.
 * `applicationCreated` : Rules apply if the assignment was created using application permissions.
 
 ### checkLists
 
+Checklists property is configued with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
+
+* `block` : Checklist cannot be changed.
+* `check` : Checklist items can be checked.
+* `reorder` : Checklist items can be reordered.
+* `add` : New checklist items can be added.
+* `update` : Existing checklist items can be updated.
+* `remove` : Existing checklist items can be removed.
+* `allow` : All checklist actions are allowed.
+
+The collection can specify either a single `allow` or `block` value, or any combination of other values.
+
+This property supports the following override conditions. If the an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+
+* `userCreated` : Rules apply if the checklist item was created by a user.
+* `applicationCreated` : Rules apply if the checklist item was created using application permissions.
+
 ### dueDate
+
+Specifies if the task due date can be changed. Accepted values are:
+
+* `block` : Task due date cannot be changed.
+* `allow` : Task due date can be changed, added or removed.
+
+The collection must contain only one of these values.
 
 ### notes
 
+Specifies if the task notes can be changed. Accepted values are:
+
+* `block` : Task notes cannot be changed.
+* `allow` : Task notes can be changed.
+
+The collection must contain only one of these values.
+
 ### percentComplete
+
+Specifies if the task percentComplete property can be changed. Accepted values are:
+
+* `block` : Task percentComplete property cannot be changed.
+* `setToComplete` : Task percentComplete property can be set to 100.
+* `setToInProgress` : Task percentComplete property can be set to values from 1 to 99.
+* `setToNotStarted` : Task percentComplete property can be set to 0.
+* `allow` : Task percentComplete property can be changed.
+
+The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
 ### previewType
 
+Specifies if the task preview type can be changed. Accepted values are:
+
+* `block` : Task preview type cannot be changed.
+* `allow` : Task preview type can be changed.
+
+The collection must contain only one of these values.
+
 ### priority
+
+Specifies if the task priority can be changed. Accepted values are:
+
+* `block` : Task priority cannot be changed.
+* `allow` : Task priority can be changed.
+
+The collection must contain only one of these values.
 
 ### references
 
+References property is configued with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
+
+* `block` : Task references cannot be changed.
+* `add` : New references can be added.
+* `remove` : Existing references can be removed.
+* `allow` : All task reference actions are allowed.
+
+The collection can specify either a single `allow` or `block` value, or any combination of other values.
+
+This property supports the following override conditions. If the an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+
+* `userCreated` : Rules apply if the task reference was created by a user.
+* `applicationCreated` : Rules apply if the task reference was created using application permissions.
+
 ### startDate
 
+Specifies if the task start date can be changed. Accepted values are:
+
+* `block` : Task start date cannot be changed.
+* `allow` : Task start date can be changed.
+
+The collection must contain only one of these values.
+
 ### title
+
+Specifies if the task title can be changed. Accepted values are:
+
+* `block` : Task title cannot be changed.
+* `allow` : Task title can be changed.
+
+The collection must contain only one of these values.
