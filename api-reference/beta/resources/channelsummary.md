@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 ```json
 {
     "guestsCount": "Integer",
-    "hasMembersFromOtherTenants": "Boolean"
+    "hasMembersFromOtherTenants": "Boolean",
     "membersCount": "Integer",
-    "ownersCount": "Integer",
+    "ownersCount": "Integer"
 }
 ```
