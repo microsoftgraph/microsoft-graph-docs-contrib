@@ -16,7 +16,7 @@ This article introduces Microsoft Graph permissions and provides guidance for us
 
 To learn more about how permissions work, watch the following video.
 
-    > [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
+> [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
 
 ## Permission types
 
