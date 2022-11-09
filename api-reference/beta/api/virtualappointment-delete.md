@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | VirtualAppointment.ReadWrite.All
 
 > [!NOTE]
-> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. Online meeting permissions will no longer be supported starting December 1, 2022.
+> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. We'll provide additional details on when online meeting permissions will no longer be supported before the preview period ends.
 
 ## HTTP request
 
