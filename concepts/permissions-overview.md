@@ -16,8 +16,7 @@ This article introduces Microsoft Graph permissions and provides guidance for us
 
 To learn more about how permissions work, watch the following video.
 
-<br/>
-> [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
+    > [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
 
 ## Permission types
 
@@ -36,6 +35,8 @@ For example, an application has been granted the *Files.Read.All* delegated perm
 + Tom has been authorized through a role-based access control (RBAC) system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
 
 Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=one-dev-minute&ep=how-do-delegated-permissions-work]
 
 In a delegated access scenario, an app may allow users to sign in with their Microsoft accounts, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for Microsoft accounts.
 
@@ -176,5 +177,5 @@ To find the IDs for all Microsoft Graph permissions, see [All permissions and ID
 
 + [Microsoft Graph permissions reference](permissions-reference.md).
 + [Overview of role-based access control in Azure Active Directory](/azure/active-directory/roles/custom-overview).
++ [Understanding delegated access](/azure/active-directory/develop/delegated-access-primer)
 + [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
-+ Call the [Get servicePrincipal](/graph/api/serviceprincipal-list.md) API to read permissions information programmatically.
