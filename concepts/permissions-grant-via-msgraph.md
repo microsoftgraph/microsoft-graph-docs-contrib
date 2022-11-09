@@ -24,11 +24,11 @@ In this guide, you'll learn how to grant and revoke app roles for an app using M
 
 To complete these instructions, you need the following resources and privileges:
 
-1. A working Azure AD tenant.
-2. You'll run the requests in this article as a user. You must complete the following steps:
-    1. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
-    2. In the app you've signed in to, consent to the *Application.Read.All* and *AppRoleAssignment.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
-    3. Get the object ID of the client service principal to which you'll grant app roles. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`.
+- A working Azure AD tenant.
+- You'll run the requests in this article as a user. You must complete the following steps:
+    - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
+    - In the app you've signed in to, consent to the *Application.Read.All* and *AppRoleAssignment.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
+    - Get the object ID of the client service principal to which you'll grant app roles. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`.
 
 <!--
 > [!CAUTION]
@@ -230,11 +230,11 @@ In this guide, you'll learn how to grant and revoke delegated permissions for an
 
 To complete these instructions, you need the following resources and privileges:
 
-1. A working Azure AD tenant.
-2. You'll run the requests in this article as a user. You must complete the following steps:
-    1. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
-    2. In the app you've signed in to, consent to the *Application.Read.All*, *DelegatedPermissionGrant.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
-    3. Get the object ID of the client service principal to which you'll grant delegated permissions on behalf of a user. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`.
+- A working Azure AD tenant.
+- You'll run the requests in this article as a user. You must complete the following steps:
+    - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
+    - In the app you've signed in to, consent to the *Application.Read.All*, *DelegatedPermissionGrant.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
+    - Get the object ID of the client service principal to which you'll grant delegated permissions on behalf of a user. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`.
 
 <!--
 > [!CAUTION]
@@ -414,7 +414,7 @@ Content-type: application/json
 }
 ```
 
-## Step 3 [Optional]: Revoke delegated permissions granted to a service principal on behalf of a user
+## Step 3: Revoke delegated permissions granted to a service principal on behalf of a user [Optional]
 
 If a service principal has been granted multiple delegated permission grants on behalf of a user, you can choose to revoke either specific grants or all grants.
 
