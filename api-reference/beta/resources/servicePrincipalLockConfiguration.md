@@ -20,7 +20,7 @@ Basic profile information of the application.
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 | isEnabled                  | Boolean | Enables or disables service principal lock configuration. To allow the sensitive properties to be updated, update this property to `false` to disable the lock on the service principal. | 
-| allProperties              | Boolean | Enables locking all properties.                                                                                                             |
+| allProperties              | Boolean | Enables locking all sensitive properties. The sensitive properties are **keyCredentials**, **passwordCredentials**, and **tokenEncryptionKeyId**.                                                                                                           |
 | credentialsWithUsageVerify | Boolean | Locks credential properties (keyCredentials and passwordCredentials) where cred usage type is `Verify`. This locks OAuth Service principals.                                                   |
 | credentialsWithUsageSign   | Boolean | Locks credential properties (keyCredentials and passwordCredentials) where cred usage type is `Sign`.                                                                 |
 | tokenEncryptionKeyId       | Boolean | Locks token encryption keyId modification on Service principal.                                                                            |
