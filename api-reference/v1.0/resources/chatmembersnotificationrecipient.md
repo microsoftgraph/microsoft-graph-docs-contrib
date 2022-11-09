@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the recipient of a notification sent in a Microsoft Teams activity feed. The recipient consists of the chat members.
 
 Inherits from [teamworkNotificationRecipient](teamworknotificationrecipient.md).
