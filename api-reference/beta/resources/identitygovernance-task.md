@@ -90,8 +90,6 @@ The following is a JSON representation of the resource.
   "type": "#page.annotation",
   "section": "documentation",
   "suppressions": [
-    "Error: /resources/identitygovernance-task.md::
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md) (Parameter 'Definition')"
+    "Error: /resources/identitygovernance-task.md:\r\n    Exception processing links.\r\n    Link Definition was null. Link text: !INCLUDE identitygovernance-lifecycleworkflows-tasks (Parameter 'Definition')"
   ]
 } -->
