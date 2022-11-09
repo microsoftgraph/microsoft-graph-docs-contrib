@@ -69,7 +69,7 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: Access user data
+          - name: "Training module: Access user data"
             href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
