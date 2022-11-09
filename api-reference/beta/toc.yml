@@ -18875,12 +18875,14 @@ items:
           - name: Deployment audience
             href: resources/windowsupdates-deploymentaudience.md
             items:
-            - name: List deployment audience
+            - name: List
               href: api/adminwindowsupdates-list-deploymentaudiences.md
-            - name: Create deployment audience
+            - name: Create
               href: api/adminwindowsupdates-post-deploymentaudiences.md
-            - name: Get deployment audience
+            - name: Get
               href: api/windowsupdates-deploymentaudience-get.md
+            - name: Delete
+              href: api/windowsupdates-deploymentaudience-delete.md
             - name: List members
               href: api/windowsupdates-deploymentaudience-list-members.md
             - name: List exclusions
@@ -18889,8 +18891,6 @@ items:
               href: api/windowsupdates-deploymentaudience-updateaudience.md
             - name: Update by ID
               href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
-            - name: Delete deployment audience
-              href: api/windowsupdates-deploymentaudience-delete.md
         - name: Update policy
           href: resources/windowsupdates-updatepolicy.md
           items:

@@ -440,7 +440,7 @@
             "ChangeList": [
                 {
                     "Id": "9fac1e6a-4adc-4def-804e-4d38efae3984",
-                    "ApiChange": "EnumType",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "resourceConnectionState",
                     "ChangeType": "Addition",
                     "Description": "Added the **resourceConnectionState** enumeration type.",
@@ -482,31 +482,7 @@
             "ChangeList": [
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "adminWindows",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [adminWindows](https://docs.microsoft.com/en-us/graph/api/resources/adminWindows?view=graph-rest-beta) resource",
-                    "Target": "adminWindows"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "adminWindowsUpdates",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [adminWindowsUpdates](https://docs.microsoft.com/en-us/graph/api/resources/adminWindowsUpdates?view=graph-rest-beta) resource",
-                    "Target": "adminWindowsUpdates"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "device",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
-                    "Target": "device"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Enumeration",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "equivalentContentOption",
                     "ChangeType": "Deletion",
                     "Description": "Removed the **equivalentContentOption** enumeration type.",
@@ -517,31 +493,63 @@
                     "ApiChange": "Member",
                     "ChangedApiName": "driver",
                     "ChangeType": "Addition",
-                    "Description": "Added the [driver](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+                    "Description": "Added the `driver` member to the **updateCategory** enumeration.",
                     "Target": "updateCategory"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "adminWindows",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [adminWindows](https://docs.microsoft.com/en-us/graph/api/resources/adminWindows?view=graph-rest-beta) resource type.",
+                    "Target": "adminWindows"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "adminWindowsUpdates",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [adminWindowsUpdates](https://docs.microsoft.com/en-us/graph/api/resources/adminWindowsUpdates?view=graph-rest-beta) resource type.",
+                    "Target": "adminWindowsUpdates"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "applicableContent",
                     "ChangeType": "Addition",
-                    "Description": "Added the [applicableContent](https://docs.microsoft.com/en-us/graph/api/resources/applicableContent?view=graph-rest-beta) resource",
+                    "Description": "Added the [applicableContent](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-applicablecontent?view=graph-rest-beta) resource type.",
                     "Target": "applicableContent"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "applicableContentDeviceMatch",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [applicableContentDeviceMatch](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-applicablecontentdevicematch?view=graph-rest-beta) resource type.",
+                    "Target": "applicableContentDeviceMatch"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "catalogContent",
                     "ChangeType": "Addition",
-                    "Description": "Added the [catalogContent](https://docs.microsoft.com/en-us/graph/api/resources/catalogContent?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [catalogContent](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-catalogcontent?view=graph-rest-beta) resource type.",
                     "Target": "catalogContent"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "complianceChange",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [complianceChange](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-compliancechange?view=graph-rest-beta) resource and supported methods.",
+                    "Target": "complianceChange"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "complianceChangeRule",
                     "ChangeType": "Addition",
-                    "Description": "Added the [complianceChangeRule](https://docs.microsoft.com/en-us/graph/api/resources/complianceChangeRule?view=graph-rest-beta) resource",
+                    "Description": "Added the [complianceChangeRule](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-compliancechangerule?view=graph-rest-beta) resource type.",
                     "Target": "complianceChangeRule"
                 },
                 {
@@ -549,23 +557,23 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "contentApplicabilitySettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [contentApplicabilitySettings](https://docs.microsoft.com/en-us/graph/api/resources/contentApplicabilitySettings?view=graph-rest-beta) resource",
+                    "Description": "Added the [contentApplicabilitySettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-contentapplicabilitysettings?view=graph-rest-beta) resource type.",
                     "Target": "contentApplicabilitySettings"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "safeguard",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "contentApproval",
                     "ChangeType": "Addition",
-                    "Description": "Added the `safeguard` property to the [contentApplicabilitySettings](https://docs.microsoft.com/en-us/graph/api/resources/contentApplicabilitySettings?view=graph-rest-beta) resource.",
-                    "Target": "contentApplicabilitySettings"
+                    "Description": "Added the [contentApproval](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-contentapproval?view=graph-rest-beta) resource and supported methods.",
+                    "Target": "contentApproval"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "contentApprovalRule",
                     "ChangeType": "Addition",
-                    "Description": "Added the [contentApprovalRule](https://docs.microsoft.com/en-us/graph/api/resources/contentApprovalRule?view=graph-rest-beta) resource",
+                    "Description": "Added the [contentApprovalRule](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-contentapprovalrule?view=graph-rest-beta) resource type.",
                     "Target": "contentApprovalRule"
                 },
                 {
@@ -573,7 +581,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "contentFilter",
                     "ChangeType": "Addition",
-                    "Description": "Added the [contentFilter](https://docs.microsoft.com/en-us/graph/api/resources/contentFilter?view=graph-rest-beta) resource",
+                    "Description": "Added the [contentFilter](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-contentfilter?view=graph-rest-beta) resource type.",
                     "Target": "contentFilter"
                 },
                 {
@@ -581,79 +589,31 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "dateDrivenRolloutSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [dateDrivenRolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/dateDrivenRolloutSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [dateDrivenRolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-datedrivenrolloutsettings?view=graph-rest-beta) resource type.",
                     "Target": "dateDrivenRolloutSettings"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "contentApplicability",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "device",
                     "ChangeType": "Addition",
-                    "Description": "Added the [contentApplicability](https://docs.microsoft.com/en-us/graph/api/resources/deploymentSettings?view=graph-rest-beta) resource",
-                    "Target": "deploymentSettings"
+                    "Description": "Added the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource type.",
+                    "Target": "device"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "expedite",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "driverUpdateCatalogEntry",
                     "ChangeType": "Addition",
-                    "Description": "Added the `expedite` property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/deploymentSettings?view=graph-rest-beta) resource.",
-                    "Target": "deploymentSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "rollout",
-                    "ChangeType": "Deletion",
-                    "Description": "Removed the `rollout` property from the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/deploymentSettings?view=graph-rest-beta) resource.",
-                    "Target": "deploymentSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "safeguard",
-                    "ChangeType": "Deletion",
-                    "Description": "Removed the `safeguard` property from the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/deploymentSettings?view=graph-rest-beta) resource.",
-                    "Target": "deploymentSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "schedule",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `schedule` property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/deploymentSettings?view=graph-rest-beta) resource.",
-                    "Target": "deploymentSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "userExperience",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `userExperience` property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/deploymentSettings?view=graph-rest-beta) resource.",
-                    "Target": "deploymentSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "effectiveValue",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `effectiveValue` property to the [deploymentState](https://docs.microsoft.com/en-us/graph/api/resources/deploymentState?view=graph-rest-beta) resource.",
-                    "Target": "deploymentState"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "value",
-                    "ChangeType": "Deletion",
-                    "Description": "Removed the `value` property from the [deploymentState](https://docs.microsoft.com/en-us/graph/api/resources/deploymentState?view=graph-rest-beta) resource.",
-                    "Target": "deploymentState"
+                    "Description": "Added the [driverUpdateCatalogEntry](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdatecatalogentry?view=graph-rest-beta) resource type.",
+                    "Target": "driverUpdateCatalogEntry"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "driverUpdateFilter",
                     "ChangeType": "Addition",
-                    "Description": "Added the [driverUpdateFilter](https://docs.microsoft.com/en-us/graph/api/resources/driverUpdateFilter?view=graph-rest-beta) resource",
+                    "Description": "Added the [driverUpdateFilter](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdatefilter?view=graph-rest-beta) resource type.",
                     "Target": "driverUpdateFilter"
                 },
                 {
@@ -661,8 +621,64 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "durationDrivenRolloutSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [durationDrivenRolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/durationDrivenRolloutSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [durationDrivenRolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-durationdrivenrolloutsettings?view=graph-rest-beta) resource type.",
                     "Target": "durationDrivenRolloutSettings"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "expediteSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [expediteSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditesettings?view=graph-rest-beta) resource type.",
+                    "Target": "expediteSettings"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "gradualRolloutSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [gradualRolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-gradualrolloutsettings?view=graph-rest-beta) resource type.",
+                    "Target": "gradualRolloutSettings"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "rateDrivenRolloutSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [rateDrivenRolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-ratedrivenrolloutsettings?view=graph-rest-beta) resource type.",
+                    "Target": "rateDrivenRolloutSettings"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "scheduleSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [scheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-schedulesettings?view=graph-rest-beta) resource type.",
+                    "Target": "scheduleSettings"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "softwareUpdateFilter",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [softwareUpdateFilter](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-softwareupdatefilter?view=graph-rest-beta) resource type.",
+                    "Target": "softwareUpdateFilter"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "updatePolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [updatePolicy](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatepolicy?view=graph-rest-beta) resource and supported methods.",
+                    "Target": "updatePolicy"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "windowsUpdateFilter",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [windowsUpdateFilter](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdatefilter?view=graph-rest-beta) resource type.",
+                    "Target": "windowsUpdateFilter"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
@@ -675,26 +691,10 @@
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "expediteSettings",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [expediteSettings](https://docs.microsoft.com/en-us/graph/api/resources/expediteSettings?view=graph-rest-beta) resource type.",
-                    "Target": "expediteSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
                     "ChangedApiName": "featureUpdateReference",
                     "ChangeType": "Deletion",
                     "Description": "Removed the **featureUpdateReference** resource type.",
                     "Target": "featureUpdateReference"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "gradualRolloutSettings",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [gradualRolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/gradualRolloutSettings?view=graph-rest-beta) resource type.",
-                    "Target": "gradualRolloutSettings"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
@@ -707,58 +707,42 @@
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "rateDrivenRolloutSettings",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [rateDrivenRolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/rateDrivenRolloutSettings?view=graph-rest-beta) resource type.",
-                    "Target": "rateDrivenRolloutSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
                     "ChangedApiName": "rolloutSettings",
                     "ChangeType": "Deletion",
-                    "Description": "Removed the **rolloutSettings** resource type.",
+                    "Description": "Removed the **rolloutSettings** resource type. Going forward, use [scheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-schedulesettings?view=graph-rest-beta) because it better clarifies the role of these settings.",
                     "Target": "rolloutSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "scheduleSettings",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [scheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/scheduleSettings?view=graph-rest-beta) resource type.",
-                    "Target": "scheduleSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "softwareUpdateFilter",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [softwareUpdateFilter](https://docs.microsoft.com/en-us/graph/api/resources/softwareUpdateFilter?view=graph-rest-beta) resource",
-                    "Target": "softwareUpdateFilter"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "softwareUpdateReference",
                     "ChangeType": "Deletion",
-                    "Description": "Removed the **softwareUpdateReference** resource type.",
+                    "Description": "Removed the **softwareUpdateReference** resource type. The [catalogContent](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-catalogcontent?view=graph-rest-beta) and [expediteSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditesettings?view=graph-rest-beta) replace the need for this hierarchy.",
                     "Target": "softwareUpdateReference"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "updates",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **updates** resource type. Going forward, use [adminWindowsUpdates](https://docs.microsoft.com/en-us/graph/api/resources/adminWindowsUpdates?view=graph-rest-beta) instead.",
+                    "Target": "updates"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "windows",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **windows** resource type. Going forward, use [adminWindows](https://docs.microsoft.com/en-us/graph/api/resources/adminWindows?view=graph-rest-beta) instead.",
+                    "Target": "windows"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsDeploymentSettings",
                     "ChangeType": "Deletion",
-                    "Description": "Removed the **windowsDeploymentSettings** resource type.",
+                    "Description": "Removed the **windowsDeploymentSettings** resource type. Going forward, use [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentsettings?view=graph-rest-beta) instead.",
                     "Target": "windowsDeploymentSettings"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "windowsUpdateFilter",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [windowsUpdateFilter](https://docs.microsoft.com/en-us/graph/api/resources/windowsUpdateFilter?view=graph-rest-beta) resource",
-                    "Target": "windowsUpdateFilter"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
@@ -770,99 +754,83 @@
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "complianceChange",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [complianceChange](https://docs.microsoft.com/en-us/graph/api/resources/complianceChange?view=graph-rest-beta) resource",
-                    "Target": "complianceChange"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "isRevoked",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `isRevoked` property to the [complianceChange](https://docs.microsoft.com/en-us/graph/api/resources/complianceChange?view=graph-rest-beta) resource.",
-                    "Target": "complianceChange"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "revoked",
-                    "ChangeType": "Deletion",
-                    "Description": "Removed the `revoked` property from the [complianceChange](https://docs.microsoft.com/en-us/graph/api/resources/complianceChange?view=graph-rest-beta) resource.",
-                    "Target": "complianceChange"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "contentApproval",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [contentApproval](https://docs.microsoft.com/en-us/graph/api/resources/contentApproval?view=graph-rest-beta) resource",
-                    "Target": "contentApproval"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Property",
                     "ChangedApiName": "applicableContent",
                     "ChangeType": "Addition",
-                    "Description": "Added the [applicableContent](https://docs.microsoft.com/en-us/graph/api/resources/deploymentAudience?view=graph-rest-beta) resource",
+                    "Description": "Added the **applicableContent** property to the [deploymentAudience](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentaudience?view=graph-rest-beta) resource.",
                     "Target": "deploymentAudience"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "driverUpdateCatalogEntry",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "contentApplicability",
                     "ChangeType": "Addition",
-                    "Description": "Added the [driverUpdateCatalogEntry](https://docs.microsoft.com/en-us/graph/api/resources/driverUpdateCatalogEntry?view=graph-rest-beta) resource",
-                    "Target": "driverUpdateCatalogEntry"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "updatePolicy",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [updatePolicy](https://docs.microsoft.com/en-us/graph/api/resources/updatePolicy?view=graph-rest-beta) resource",
-                    "Target": "updatePolicy"
+                    "Description": "Added the **contentApplicability** to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentsettings?view=graph-rest-beta) resource.",
+                    "Target": "deploymentSettings"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Property",
-                    "ChangedApiName": "autoEnrollmentUpdateCategories",
-                    "ChangeType": "Deletion",
-                    "Description": "Removed the `autoEnrollmentUpdateCategories` property from the [updatePolicy](https://docs.microsoft.com/en-us/graph/api/resources/updatePolicy?view=graph-rest-beta) resource.",
-                    "Target": "updatePolicy"
+                    "ChangedApiName": "effectiveValue",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **effectiveValue** property to the [deploymentState](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentstate?view=graph-rest-beta) resource.",
+                    "Target": "deploymentState"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Property",
-                    "ChangedApiName": "autoPauseCreatedDeployments",
-                    "ChangeType": "Deletion",
-                    "Description": "Removed the `autoPauseCreatedDeployments` property from the [updatePolicy](https://docs.microsoft.com/en-us/graph/api/resources/updatePolicy?view=graph-rest-beta) resource.",
-                    "Target": "updatePolicy"
+                    "ChangedApiName": "expedite",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **expedite** property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentsettings?view=graph-rest-beta) resource.",
+                    "Target": "deploymentSettings"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "updates",
-                    "ChangeType": "Deletion",
-                    "Description": "Removed the **updates** resource type.",
-                    "Target": "updates"
+                    "ApiChange": "Property",
+                    "ChangedApiName": "schedule",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **schedule** property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentsettings?view=graph-rest-beta) resource.",
+                    "Target": "deploymentSettings"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "windows",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "userExperience",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **userExperience** property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentsettings?view=graph-rest-beta) resource.",
+                    "Target": "deploymentSettings"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "rollout",
                     "ChangeType": "Deletion",
-                    "Description": "Removed the **windows** resource type.",
-                    "Target": "windows"
+                    "Description": "Removed the **rollout** property from the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentsettings?view=graph-rest-beta) resource.  Going forward, use the **schedule** property instead.",
+                    "Target": "deploymentSettings"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "safeguard",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **safeguard** property from the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentsettings?view=graph-rest-beta) resource. Going forward this property is available from the [contentApplicabilitySettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-contentapplicabilitysettings?view=graph-rest-beta) resource.",
+                    "Target": "deploymentSettings"
+                },
+                {
+                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "value",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **value** property from the [deploymentState](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentstate?view=graph-rest-beta) resource. Going forward, use the **effectiveValue** property instead.",
+                    "Target": "deploymentState"
                 }
             ],
             "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-11-01T03:35:46.1510967Z",
-            "WorkloadArea": "Microsoft.WindowsUpdates",
-            "SubArea": ""
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Device updates"
         }
     ]
 }
