@@ -20,7 +20,7 @@ Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrollou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|durationBetweenOffers|String|The duration between each set of devices being offered the update, which has an effect when **durationUntilDeploymentEnd** is defined. The value is represented in ISO 8601 format for duration. Default value is `P1D` (1 day).|
+|durationBetweenOffers|String|The duration between each set of devices being offered the update, which has an effect when **durationUntilDeploymentEnd** is defined. The value is represented in ISO 8601 format for duration. Default value is `P1D` (1 day). Inherited from [microsoft.graph.windowsUpdates.gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md).|
 |durationUntilDeploymentEnd|Duration|The target duration of the rollout. Given **durationBetweenOffers** and **durationUntilDeploymentEnd**, the system will automatically calculate how many devices are in each offering.|
 
 ## Relationships

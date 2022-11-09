@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [contentApproval](../resources/windowsupdates-contentapproval.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object in the response body.
 
 ## Examples
 

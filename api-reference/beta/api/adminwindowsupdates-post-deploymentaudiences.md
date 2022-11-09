@@ -51,7 +51,7 @@ You can specify the following properties when you create a **deploymentAudience*
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object in the response body.
 
 ## Examples
 

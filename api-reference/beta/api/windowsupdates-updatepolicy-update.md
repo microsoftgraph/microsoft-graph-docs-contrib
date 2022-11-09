@@ -52,7 +52,7 @@ PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [updatePolicy](../resources/windowsupdates-updatepolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) object in the response body.
 
 ## Examples
 

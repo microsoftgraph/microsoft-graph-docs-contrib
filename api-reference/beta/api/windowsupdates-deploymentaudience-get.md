@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object in the response body.
 
 ## Examples
 

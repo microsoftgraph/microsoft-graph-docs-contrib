@@ -20,14 +20,14 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. Read-only. Inherited from [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |description|String|The description of the content.|
-|displayName|String|The display name of the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|displayName|String|The display name of the content. Read-only. Inherited from [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |driverClass|String|The classification of the driver.|
-|id|String|The unique identifier for this catalog entry. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|id|String|The unique identifier for this catalog entry. Read-only. Inherited from [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |manufacturer|String|The manufacturer of the driver.|
 |provider|String|The provider of the driver.|
-|releaseDateTime|DateTimeOffset|The release date for the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|releaseDateTime|DateTimeOffset|The release date for the content. Read-only. Inherited from [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |setupInformationFile|String|The setup information file of the driver.|
 |version|String|The unique version of the content.|
 |versionDateTime|DateTimeOffset|The date and time when a new version of content was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|

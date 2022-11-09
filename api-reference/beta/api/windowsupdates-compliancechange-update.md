@@ -49,7 +49,7 @@ PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/{
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [complianceChange](../resources/windowsupdates-compliancechange.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) object in the response body.
 
 ## Examples
 

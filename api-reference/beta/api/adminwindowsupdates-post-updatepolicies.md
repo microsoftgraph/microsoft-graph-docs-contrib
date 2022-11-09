@@ -53,7 +53,7 @@ You can specify the following properties when you create an **updatePolicy**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) object in the response body.
 
 ## Examples
 

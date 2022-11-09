@@ -18,7 +18,7 @@ Represents settings for controlling how and when the service deploys an update o
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|gradualRollout|[microsoft.graph.windowsUpdates.gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md)|Settings for governing how to rollout content to devices. One of: [dateDrivenRolloutSettings](../resources/windowsupdates-datedrivenrolloutsettings.md), [durationDrivenRolloutSettings](../resources/windowsupdates-durationdrivenrolloutsettings.md), or [rateDrivenRolloutSettings](../resources/windowsupdates-ratedrivenrolloutsettings.md).|
+|gradualRollout|[microsoft.graph.windowsUpdates.gradualRolloutSettings](../resources/windowsupdates-gradualrolloutsettings.md)|Settings for governing how to rollout content to devices. One of: [microsoft.graph.windowsUpdates.dateDrivenRolloutSettings](../resources/windowsupdates-datedrivenrolloutsettings.md), [microsoft.graph.windowsUpdates.durationDrivenRolloutSettings](../resources/windowsupdates-durationdrivenrolloutsettings.md), or [microsoft.graph.windowsUpdates.rateDrivenRolloutSettings](../resources/windowsupdates-ratedrivenrolloutsettings.md).|
 |startDateTime|DateTimeOffset|The date on which devices in the deployment start receiving the update. When not set, the deployment starts as soon as devices are assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships

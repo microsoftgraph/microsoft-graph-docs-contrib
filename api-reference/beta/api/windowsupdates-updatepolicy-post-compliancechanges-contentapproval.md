@@ -51,7 +51,7 @@ You can specify the following properties when you create a **contentApproval**.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [contentApproval](../resources/windowsupdates-contentapproval.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object in the response body.
 
 ## Examples
 
