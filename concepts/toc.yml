@@ -88,7 +88,9 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
-            displayName: applications, apps
+          - name: Grant and revoke permissions
+            displayName: grant delegated and application permissions
+            href: permissions-grant-via-msgraph.md
           - name: Automate SAML-based SSO configuration
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
