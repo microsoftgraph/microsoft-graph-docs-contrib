@@ -27,18 +27,18 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date time when taskProcessingResult execution ended. Value is `null` if task execution is still in progress.|
-|createdDateTime|DateTimeOffset|The date time when the taskProcessingResult was created. <br><br>Supports `$filter`(`lt`, `gt`) and `orderBy`.|
+|completedDateTime|DateTimeOffset|The date time when taskProcessingResult execution ended. Value is `null` if task execution is still in progress.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|createdDateTime|DateTimeOffset|The date time when the taskProcessingResult was created.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |failureReason|String|Describes why the taskProcessingResult has failed.|
-|id|String|Identifier used for individually addressing a specific task processing result. Inherited from [entity](../resources/entity.md).|
-|processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md)|Describes the execution status of the `taskProcessingResult`. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. <br><br>Supports `$filter`(`eq`).|
-|startedDateTime|DateTimeOffset|The date time when taskProcessingResult execution started. Value is `null` if task execution has not yet started. <br><br>Supports `$filter`(`lt`, `gt`) and `orderBy`.|
+|id|String|Identifier used for individually addressing a specific task processing result. Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md)|Describes the execution status of the `taskProcessingResult`. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|startedDateTime|DateTimeOffset|The date time when taskProcessingResult execution started. Value is `null` if task execution has not yet started.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subject|[user](../resources/user.md)|The unique identifier of the Azure AD user targeted for the task execution.|
+|subject|[user](../resources/user.md)|The unique identifier of the Azure AD user targeted for the task execution.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |task|[task](../resources/identitygovernance-task.md)|The related workflow task|
 
 ## JSON representation

@@ -22,7 +22,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of organization object.|
-|[Update organization](../api/organization-update.md) | [organization](organization.md)  |Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** and **privacyProfile**. |
+|[Update organization](../api/organization-update.md) | None | Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones**, and **privacyProfile**. |
 | [Get organization settings](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Read the organization settings object. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
@@ -53,6 +53,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | country | String | Country/region name of the address for the organization. |
 | countryLetterCode | String | Country or region abbreviation for the organization in ISO 3166-2 format. |
 | createdDateTime | DateTimeOffset | Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+| defaultUsageLocation | String | Two-letter ISO 3166 country code indicating the default service usage location of an organization. |
 | deletedDateTime | DateTimeOffset | Represents date and time of when the Azure AD tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | The directory size quota information of an organization. |
 | displayName | String | The display name for the tenant. |
@@ -102,6 +103,7 @@ Here is a JSON representation of the resource
   "country": "String",
   "countryLetterCode": "String",
   "createdDateTime": "String (timestamp)",
+  "defaultUsageLocation": "String",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
   "displayName": "String",

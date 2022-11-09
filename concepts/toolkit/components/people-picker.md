@@ -109,9 +109,10 @@ mgt-people-picker {
     --input-border-color--hover: #008394; /* input area border hover color */
     --input-border-color--focus: #0f78d4; /* input area border focus color */
 
-    --dropdown-background-color: #1f1f1f; /* selection area background color */
-    --dropdown-item-hover-background: #333d47; /* person background color on hover */
-    
+    --dropdown-background-color: #ca00ca; /* selection area background color */
+    --dropdown-item-hover-background: purple; /* person background color on hover */
+    --dropdown-item-text-color: white; /* person item text color */
+    --dropdown-item-text-hover-color: gold; /* person item text color on hover */
     --selected-person-background-color: #f1f1f1; /* person item background color */
     
     --color: white; /* input area border focus color */
