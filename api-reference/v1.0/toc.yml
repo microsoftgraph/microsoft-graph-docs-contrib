@@ -6717,6 +6717,8 @@ items:
             href: api/security-ediscoverysearch-post-additionalsources.md
           - name: Get last estimate statistics operation
             href: api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
+          - name: Purge data
+            href: api/security-ediscoverysearch-purgedata.md
         - name: Review set
           href: resources/security-ediscoveryreviewset.md
           items:
