@@ -26,9 +26,9 @@ Planner currently supports the container types listed in the following table. Wh
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|containerId|String|The identifier of the resource that contains the plan.|
-|type|plannerContainerType| The type of the resource that contains the plan. See the previous table for supported types. Possible values are: `group`, `unknownFutureValue`, `roster` and `project`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`.|
-|url|String|The full canonical URL of the container.|
+|containerId|String|Nullable. The identifier of the resource that contains the plan.|
+|type|plannerContainerType|Nullable. The type of the resource that contains the plan. See the previous table for supported types. Possible values are: `group`, `unknownFutureValue`, `roster` and `project`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`.|
+|url|String|Nullable. The full canonical URL of the container.|
 
 ## Relationships
 None.
