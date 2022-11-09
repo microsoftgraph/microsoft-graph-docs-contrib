@@ -38,6 +38,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+   "@odata.type": "#microsoft.graph.servicePrincipalLockConfiguration",
    "isEnabled": "Boolean",
    "allProperties": "Boolean",
    "credentialsWithUsageVerify": "Boolean",
