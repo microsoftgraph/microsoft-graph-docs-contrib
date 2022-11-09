@@ -23,6 +23,15 @@ You will need the following information to configure a Microsoft Graph SDK to co
 
 In order to connect to a national cloud deployment, you must configure your [authentication provider](choose-authentication-providers.md) to connect to the correct token service endpoint. Then you must configure the SDK client to connect to the correct Microsoft Graph service root endpoint.
 
+### Permission scopes
+
+Any permission scope value (including the `.default` scope) that contains the Microsoft Graph domain MUST use the domain of the Microsoft Graph service root endpoint for the national cloud deployment. The shortened permission scope names, such as `User.Read` or `Mail.Send`, are also valid.
+
+- For [incremental or dynamic consent](/azure/active-directory/develop/consent-types-developer#incremental-and-dynamic-user-consent), `User.Read` and `https://graph.microsoft.us/User.Read` are equivalent for the US Government L4 national cloud.
+- For [statically defined permissions](/azure/active-directory/develop/consent-types-developer#request-the-permissions-in-the-app-registration-portal), or if you are using [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) for app-only permissions, `https://graph.microsoft.us/.default` is the correct `.default` scope value.
+
+## Examples
+
 The following example configures an [Interactive authentication provider](choose-authentication-providers.md#interactive-provider) with the Microsoft Graph SDK to connect to the Microsoft Graph for US Government L4 national cloud.
 
 ### [C#](#tab/csharp)
