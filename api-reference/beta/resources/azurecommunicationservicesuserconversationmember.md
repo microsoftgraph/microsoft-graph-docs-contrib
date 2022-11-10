@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# anonymousGuestConversationMember resource type
+# azureCommunicationServicesUserConversationMember resource type
 
 Namespace: microsoft.graph
 
@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.anonymousGuestConversationMember",
+  "@odata.type": "microsoft.graph.azureCommunicationServicesUserConversationMember",
   "baseType": "microsoft.graph.conversationMember",
   "openType": false
 }
