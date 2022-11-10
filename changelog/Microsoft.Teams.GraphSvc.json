@@ -733,6 +733,48 @@
       "CreatedDateTime": "2022-10-11T09:44:21.690374Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousGuestConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousGuestConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-1.0) resource",
+          "Target": "anonymousGuestConversationMember"
+        },
+        {
+          "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAccountUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAccountUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-1.0) resource",
+          "Target": "microsoftAccountUserConversationMember"
+        },
+        {
+          "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-1.0) resource",
+          "Target": "skypeForBusinessUserConversationMember"
+        },
+        {
+          "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeUserConversationMember?view=graph-rest-1.0) resource",
+          "Target": "skypeUserConversationMember"
+        }
+      ],
+      "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-11-10T20:38:02.3901715Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
