@@ -1,6 +1,6 @@
 ---
 title: "businessScenarioProperties resource type"
-description: "**TODO: Add Description**"
+description: "Represents scenario metadata for a businessScenarioTask object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -19,11 +19,11 @@ Represents scenario metadata for a [businessScenarioTask](../resources/businesss
 
 |Property|Type|Description|
 |:---|:---|:---|
-|externalBucketId|String|Required. The identifier of the [bucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) configured in the [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) for the scenario. The task will be placed in the corresponding [plannerBucket](../resources/plannerbucket.md) in the target plan|
-|externalContextId|String|Optional. The identifier of the context of the task. Context is an application controlled value, and tasks can be queried by their externalContextId.|
-|externalObjectId|String|Required. Application specified Identifier of the task. Every task for the same scenario must have a unique identifier specified for this property.|
-|externalObjectVersion|String|Optional. Application specific version of the task. |
-|webUrl|String|Optional. The URL to the application specific experience for this task.|
+|externalBucketId|String|The identifier for the [bucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) configured in the [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) for the scenario. The task will be placed in the corresponding [plannerBucket](../resources/plannerbucket.md) in the target plan. Required.|
+|externalContextId|String|The identifier for the context of the task. Context is an application controlled value, and tasks can be queried by their **externalContextId**. Optional.|
+|externalObjectId|String|Application-specific identifier for the task. Every task for the same scenario must have a unique identifier specified for this property. Required.|
+|externalObjectVersion|String|Application-specific version of the task. Optional.|
+|webUrl|String|The URL to the application-specific experience for this task. Optional.|
 
 ## Relationships
 
@@ -40,10 +40,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.businessScenarioProperties",
-  "externalObjectId": "String",
+  "externalBucketId": "String",
   "externalContextId": "String",
+  "externalObjectId": "String",
   "externalObjectVersion": "String",
-  "webUrl": "String",
-  "externalBucketId": "String"
+  "webUrl": "String"
 }
 ```

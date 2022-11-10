@@ -1,6 +1,6 @@
 ---
 title: "businessScenarioTaskTargetBase resource type"
-description: "**TODO: Add Description**"
+description: "Represents an abstract type that is the base object for all targets that can be specified for creating tasks for a scenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,19 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the base object for all targets that can be specified for creating tasks for a scenario.
-This is an abstract type. Following types derive from this type: [businessScenarioGroupTarget](businessscenariogrouptarget.md).
+Represents an abstract type that is the base object for all targets that can be specified for creating tasks for a scenario.
+Following types derive from this type: [businessScenarioGroupTarget](businessscenariogrouptarget.md).
 
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|taskTargetKind|plannerTaskTargetKind|The target kind. The possible values are: `group`, `unknownFutureValue`.|
+|taskTargetKind|plannerTaskTargetKind|Represents the kind of the target. The possible values are: `group`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,4 +41,3 @@ The following is a JSON representation of the resource.
   "taskTargetKind": "String"
 }
 ```
-

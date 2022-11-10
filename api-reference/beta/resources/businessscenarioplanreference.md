@@ -1,6 +1,6 @@
 ---
 title: "businessScenarioPlanReference resource type"
-description: "**TODO: Add Description**"
+description: "Represents a reference to a plannerPlan object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,27 +13,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a reference to a [plannerPlan](../resources/plannerplan.md).
-
+Represents a reference to a [plannerPlan](../resources/plannerplan.md) object.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getPlan](../api/businessscenarioplanner-getplan.md)|[businessScenarioPlanReference](../resources/businessscenarioplanreference.md)|Gets the reference to the Plan corresponding to the given target. This plan contains any tasks created for the scenario for this the given target.|
-
+|[getPlan](../api/businessscenarioplanner-getplan.md)|[businessScenarioPlanReference](../resources/businessscenarioplanreference.md)|Get the reference to the plan that corresponds to the given target.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the plannerPlan. Inherited from [entity](../resources/entity.md).|
-|title|String|The title property of the plannerPlan|
+|id|String|The unique identifier for the **plannerPlan**. Inherited from [entity](../resources/entity.md). Read-only.|
+|title|String|The title property of the **plannerPlan**.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -50,4 +52,3 @@ The following is a JSON representation of the resource.
   "title": "String"
 }
 ```
-

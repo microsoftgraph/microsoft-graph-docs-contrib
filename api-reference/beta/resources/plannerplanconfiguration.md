@@ -1,6 +1,6 @@
 ---
 title: "plannerPlanConfiguration resource type"
-description: "**TODO: Add Description**"
+description: "Represents the configuration of plannerPlans created for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 Represents the configuration of [plannerPlans](../resources/plannerplan.md) created for a [businessScenario](../resources/businessscenario.md).
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get plannerPlanConfiguration](../api/plannerplanconfiguration-get.md)|[plannerPlanConfiguration](../resources/plannerplanconfiguration.md)|Read the properties and relationships of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object.|
@@ -27,22 +27,25 @@ Inherits from [entity](../resources/entity.md).
 |[Create plannerPlanConfigurationLocalization](../api/plannerplanconfiguration-post-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Create a new plannerPlanConfigurationLocalization object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|buckets|[plannerPlanConfigurationBucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) collection|List the buckets that should be created in the Plan.|
-|createdBy|[identitySet](../resources/identityset.md)|Read-Only. The identity of the creator of the planConfiguation.|
-|createdDateTime|DateTimeOffset|Read-Only. The date and time the planConfiguration was created.|
-|defaultLanguage|String|The language code for the default language to be used for the names of the objects created for the Plan.|
-|id|String|The identifier for the plan configuration. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Read-Only. The identity of the last modifier of the planConfiguration.|
-|lastModifiedDateTime|DateTimeOffset|Read-Only. The date and time the planConfiguration was last modified.|
+|buckets|[plannerPlanConfigurationBucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) collection|List the buckets that should be created in the plan. Required.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the creator of the plan configuration. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the plan configuration was created. Read-only.|
+|defaultLanguage|String|The language code for the default language to be used for the names of the objects created for the plan.|
+|id|String|The unique identifier for the plan configuration. Inherited from [entity](../resources/entity.md). Read-only.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the user who last modified the plan configuration. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the plan configuration was last modified. Read-only.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|localizations|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection|Localized names for the Plan configuration|
+|localizations|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection|Localized names for the plan configuration.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -55,21 +58,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerPlanConfiguration",
-  "id": "String (identifier)",
-  "defaultLanguage": "String",
-  "buckets": [
-    {
-      "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketDefinition"
-    }
-  ],
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "buckets": [{"@odata.type": "microsoft.graph.plannerPlanConfigurationBucketDefinition"}],
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "defaultLanguage": "String",
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
