@@ -300,12 +300,6 @@ Not applicable.
 
 ---
 
-## Enforce the principle of least privilege
-
-The least privileged permission for a specific scenario might be different between Azure AD Graph and Microsoft Graph. When migrating, analyze whether you also need to migrate to more narrowly scoped Microsoft Graph permissions to maintain least privilege.
-
-For example, on Azure AD Graph, reading users in app-only scenarios requires the *Directory.Read.All* permission. This permission also allows your app to read all the groups, apps, and some policies in your tenant. However, on Microsoft Graph, reading users in app-only scenarios requires only the *User.Read.All* permission.
-
 ## Next Steps
 
 - Learn how to [examine API differences](migrate-azure-ad-graph-audit-api-use.md) in your app between Azure AD Graph and Microsoft graph.
