@@ -10,7 +10,9 @@ ms.prod: "applications"
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-An app that is granted Azure AD Graph permissions can only access Azure AD Graph resources. It can't access Microsoft Graph resources. For the app to access Microsoft Graph resources, you must grant it Microsoft Graph permissions.
+The least privileged permission for a specific scenario might be different between Azure AD Graph and Microsoft Graph. When migrating your apps to call Microsoft Graph, analyze whether you also need to migrate to more narrowly scoped Microsoft Graph permissions to maintain least privilege.
+
+For example, on Azure AD Graph, reading users in app-only scenarios requires the *Directory.Read.All* permission. This permission also allows your app to read all the groups, apps, and some policies in your tenant. However, on Microsoft Graph, reading users in app-only scenarios requires only the *User.Read.All* permission.
 
 While the permission strings may be the same in both Azure AD Graph and Microsoft Graph, they have different identifiers. However, similar to Azure AD Graph, Microsoft Graph also exposes both application and delegated permissions. In addition, admin consent is always required for application permissions.
 
