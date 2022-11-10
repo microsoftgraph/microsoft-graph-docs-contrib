@@ -29,7 +29,7 @@ requestBody.SetStatus(&status)
 viewpoint := graphmodels.NewTaskViewpoint()
 requestBody.SetViewpoint(viewpoint)
 
-result, err := graphClient.Me().Tasks().ListsById("baseTaskList-id").Tasks().Post(requestBody)
+result, err := graphClient.Me().Tasks().ListsById("baseTaskList-id").Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

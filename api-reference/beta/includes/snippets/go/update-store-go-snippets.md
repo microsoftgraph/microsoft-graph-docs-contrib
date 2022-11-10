@@ -11,7 +11,7 @@ requestBody := graphmodels.NewStore()
 defaultLanguageTag := "en-US"
 requestBody.SetDefaultLanguageTag(&defaultLanguageTag) 
 
-graphClient.TermStore().Patch(requestBody)
+result, err := graphClient.TermStore().Patch(context.Background(), requestBody, nil)
 
 
 ```

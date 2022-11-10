@@ -17,7 +17,7 @@ configuration := &graphconfig.PoliciesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Get(context.Background(), configuration)
 
 
 ```

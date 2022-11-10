@@ -17,7 +17,7 @@ configuration := &graphconfig.PrivilegedOperationEventsRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.PrivilegedOperationEvents().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.PrivilegedOperationEvents().Get(context.Background(), configuration)
 
 
 ```

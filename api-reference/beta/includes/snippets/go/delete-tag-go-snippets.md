@@ -17,7 +17,7 @@ configuration := &graphconfig.TagRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").Delete(context.Background(), configuration)
 
 
 ```

@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # Styling components in the Microsoft Graph Toolkit
 
-Each Microsoft Graph Toolkit component documents a set of [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) that you can use to change the look and feel of certain elements. You can find the available custom CSS properties in each component docs. For example:
+Each Microsoft Graph Toolkit component documents a set of [CSS custom properties](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) that you can use to change the look and feel of certain elements. You can find the available custom CSS properties in each component docs. For example:
 
 ```css
 mgt-person {
@@ -15,7 +15,7 @@ mgt-person {
 }
 ```
 
-You can't style internal elements of a component unless you provide a CSS custom property. The component child elements are hosted in a [shadow dom](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
+You can't style internal elements of a component unless you provide a CSS custom property. The component child elements are hosted in a [shadow dom](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).
 
 For more flexibility, consider using [custom templates](./templates.md).
 

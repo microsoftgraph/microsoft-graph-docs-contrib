@@ -12,8 +12,6 @@ displayname := "My legalHold with sources"
 requestBody.SetDisplayname(&displayname) 
 description := "Created from Graph API"
 requestBody.SetDescription(&description) 
-contentQuery := "Bazooka"
-requestBody.SetContentQuery(&contentQuery) 
 additionalData := map[string]interface{}{
 
 
@@ -40,7 +38,7 @@ site.SetWebUrl(&webUrl)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHolds().Post(requestBody)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHolds().Post(context.Background(), requestBody, nil)
 
 
 ```

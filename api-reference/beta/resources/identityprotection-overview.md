@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph identity protection APIs"
 description: "Use Microsoft Graph to query and receive information about risks detected by Azure AD Identity Protection."
-author: "cloudhandler"
+author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: conceptualPageType

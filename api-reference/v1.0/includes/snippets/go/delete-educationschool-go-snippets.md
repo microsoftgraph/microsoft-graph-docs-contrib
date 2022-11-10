@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Education().SchoolsById("educationSchool-id").Delete()
+graphClient.Education().SchoolsById("educationSchool-id").Delete(context.Background(), nil)
 
 
 ```

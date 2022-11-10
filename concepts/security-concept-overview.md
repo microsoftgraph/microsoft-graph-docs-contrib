@@ -23,7 +23,7 @@ For information about authorization, see [Authorization and the Microsoft Graph 
 
 The [Microsoft Graph security API](/graph/api/resources/security-api-overview) makes it easy to connect with security solutions from Microsoft and partners. It allows you to more readily realize and enrich the value of these solutions. You can connect easily with the Microsoft Graph security API by using one of the following approaches, depending on your requirements:
 
-- [Write code](https://aka.ms/graphsecuritysdk) – Find [code samples](https://aka.ms/graphsecurityapicode) in C#, Java, NodeJS, and more.
+- Write code – Find [code samples](https://aka.ms/graphsecurityapicode) in C#, Java, NodeJS, and more.
 - [Connect using scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Find [PowerShell samples](https://aka.ms/graphsecuritypowershellsample).
 - [Drag and drop into workflows and playbooks](https://aka.ms/graphsecurityconnectorsblogpost) – Use [Microsoft Graph security connectors](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) for [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/), and [Power Apps](https://powerapps.microsoft.com/).
 - [Get data into reports and dashboards](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – Use the [Microsoft Graph security connector for Power BI](/power-bi/connect-data/desktop-connect-graph-security).

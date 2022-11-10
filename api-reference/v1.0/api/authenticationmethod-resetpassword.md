@@ -59,7 +59,6 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |newPassword|String|The new password. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
-|requireChangeOnNextSignIn|Boolean | Specifies whether the user must change their password at their next sign in.|
 
 ## Response
 

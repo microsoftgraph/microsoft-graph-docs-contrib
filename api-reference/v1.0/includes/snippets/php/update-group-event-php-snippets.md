@@ -17,7 +17,7 @@ $location->setDisplayName('Conf Room 2');
 $requestBody->setLocation($location);
 
 
-$graphServiceClient->groupsById('group-id')->calendar()->eventsById('event-id')->patch($requestBody);
+$requestResult = $graphServiceClient->groupsById('group-id')->calendar()->eventsById('event-id')->patch($requestBody);
 
 
 ```

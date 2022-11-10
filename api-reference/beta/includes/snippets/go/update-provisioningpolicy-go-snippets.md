@@ -25,7 +25,7 @@ language := "en-US"
 windowsSettings.SetLanguage(&language) 
 requestBody.SetWindowsSettings(windowsSettings)
 
-graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById("cloudPcProvisioningPolicy-id").Patch(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById("cloudPcProvisioningPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

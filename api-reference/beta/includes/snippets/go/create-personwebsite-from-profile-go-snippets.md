@@ -18,7 +18,7 @@ requestBody.SetDisplayName(&displayName)
 webUrl := "www.lyndamer.no"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Websites().Post(requestBody)
+result, err := graphClient.Me().Profile().Websites().Post(context.Background(), requestBody, nil)
 
 
 ```

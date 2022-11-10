@@ -28,14 +28,19 @@ targets := []graphmodels.InvitationParticipantInfoable {
 }
 requestBody.SetTargets(targets)
 requestedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetRequestedModalities(requestedModalities)
+callOptions := graphmodels.NewCallOptions()
+isContentSharingNotificationEnabled := true
+callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
+requestBody.SetCallOptions(callOptions)
 mediaConfig := graphmodels.NewMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
 
-result, err := graphClient.Communications().Calls().Post(requestBody)
+result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

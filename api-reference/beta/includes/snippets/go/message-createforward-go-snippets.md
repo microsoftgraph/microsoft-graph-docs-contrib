@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCreateForwardPostRequestBody()
-message := graphmodels.Newmessage()
+message := graphmodels.NewMessage()
 isDeliveryReceiptRequested := true
 message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested) 
 
@@ -30,7 +30,7 @@ requestBody.SetMessage(message)
 comment := "Dana, just want to make sure you get this; you'll need this if the project gets approved."
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Me().MessagesById("message-id").CreateForward().Post(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").CreateForward().Post(context.Background(), requestBody, nil)
 
 
 ```

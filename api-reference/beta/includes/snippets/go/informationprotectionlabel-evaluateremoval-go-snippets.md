@@ -84,7 +84,7 @@ isDowngradeJustified := true
 downgradeJustification.SetIsDowngradeJustified(&isDowngradeJustified) 
 requestBody.SetDowngradeJustification(downgradeJustification)
 
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().Post(context.Background(), requestBody, configuration)
 
 
 ```
