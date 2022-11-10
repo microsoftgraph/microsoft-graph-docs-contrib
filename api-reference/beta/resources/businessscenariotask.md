@@ -35,7 +35,7 @@ Inherits from [plannerTask](../resources/plannertask.md).
 |assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of assignees the task is assigned to. Inherited from [plannerTask](../resources/plannertask.md).|
 |bucketId|String|Bucket ID to which the task belongs. Inherited from [plannerTask](../resources/plannertask.md).|
-|businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|**TODO: Add Description**|
+|businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|Scenario specific properties of the task. **externalObjectId** and **externalBucketId** properties must be specified when creating a task.|
 |checklistItemCount|Int32|Number of checklist items that are present on the task. Inherited from [plannerTask](../resources/plannertask.md).|
 |completedBy|[identitySet](../resources/intune-identityset.md)|REad-Only. Identity of the user that completed the task. Inherited from [plannerTask](../resources/plannertask.md).|
 |completedDateTime|DateTimeOffset|Read-only. Date and time at which the `'percentComplete'` of the task is set to `'100'`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [plannerTask](../resources/plannertask.md).|
@@ -53,7 +53,7 @@ Inherits from [plannerTask](../resources/plannertask.md).
 |priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low". Inherited from [plannerTask](../resources/plannertask.md).|
 |referenceCount|Int32|Number of external references that exist on the task. Inherited from [plannerTask](../resources/plannertask.md).|
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [plannerTask](../resources/plannertask.md).|
-|target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|**TODO: Add Description**|
+|target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|Target of the task, specifying where the task should be placed. Must be specified when creating a task.|
 |title|String|Title of the task. Inherited from [plannerTask](../resources/plannertask.md).|
 
 ## Relationships
