@@ -23,7 +23,9 @@ These item insights reflect only content to which users have access. No user get
 Item insights privacy settings provide the ability to configure the visibility of insights derived from Microsoft Graph between users and other items (such as documents or sites) in Microsoft 365. You can disable the Delve app via the pre-existing controls, but allow other insights-based experiences to continue to provide assistance.
 
 There are a few ways to customize users' item insights privacy settings:
-- A user can [get](/graph/api/usersettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/usersettings-update?view=graph-rest-beta&preserve-view=true) one's own settings that are exposed through an **itemInsights** navigation property of [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true). These user-centric item insights privacy settings are of the type [userInsightsSettings](/graph/api/resources/userinsightssettings?view=graph-rest-beta&preserve-view=true).
+- A user can view or update one's own settings, in two ways:
+  - [MyAccount, under Settings & Privacy](https://myaccount.microsoft.com/settingsandprivacy/privacy).
+  - Microsoft Graph REST API - [reading](/graph/api/usersettings-get?view=graph-rest-beta&preserve-view=true) or [updating](/graph/api/usersettings-update?view=graph-rest-beta&preserve-view=true) one's own settings that are exposed through an **itemInsights** navigation property of [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true). These user-centric item insights privacy settings are of the type [userInsightsSettings](/graph/api/resources/userinsightssettings?view=graph-rest-beta&preserve-view=true).
 - An administrator can customize these settings at scale for an organization, or for a subset of people in a group in an organization, through one of the following ways:
   - [Microsoft 365 admin center](#configure-item-insights-settings-via-microsoft-365-admin-center)
   - [Microsoft Graph PowerShell SDK](#configure-item-insights-settings-via-powershell)
