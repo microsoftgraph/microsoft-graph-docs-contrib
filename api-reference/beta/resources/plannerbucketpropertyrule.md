@@ -15,20 +15,22 @@ Namespace: microsoft.graph
 
 **TODO: Add Description**
 
-
 Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |order|String collection|**TODO: Add Description**|
-|ruleKind|plannerRuleKind|**TODO: Add Description** Inherited from [plannerPropertyRule](../resources/plannerpropertyrule.md).The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`.|
+|ruleKind|plannerRuleKind|**TODO: Add Description**. The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`. Inherited from [plannerPropertyRule](../resources/plannerpropertyrule.md).|
 |title|String collection|**TODO: Add Description**|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,13 +40,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerBucketPropertyRule",
+  "order": ["String"],
   "ruleKind": "String",
-  "title": [
-    "String"
-  ],
-  "order": [
-    "String"
-  ]
+  "title": ["String"]
 }
 ```
-
