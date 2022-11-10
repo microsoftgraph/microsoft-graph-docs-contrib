@@ -31,6 +31,20 @@ None.
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. |
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
+### purgeType values
+
+|Name|Description|
+|:----|-----------|
+|recoverable|Purged data is recoverable.|
+|permanentlyDeleted|Purged data is permanently deleted.|
+
+### purgeAreas values
+
+|Name|Description|
+|:----|-----------|
+|mailboxes|Purged data is recoverable.|
+|teamsMessages|Purged data is permanently deleted.|
+
 ## Relationships
 None.
 
