@@ -30,7 +30,7 @@ There are a few ways to customize users' item insights privacy settings:
   - [Microsoft Graph REST API](#configure-item-insights-settings-using-the-rest-api)
 
 > [!NOTE]
-> The PowerShell and REST APIs for item insights settings are currently available only in the beta version.
+> The REST and PowerShell APIs for item insights settings are currently available only in the beta version.
 
 The rest of this article describes how an administrator can customize item insights privacy in an organization. 
 
