@@ -54,7 +54,14 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|PurgeType|String| Options that control whether to the action is soft delete or hard delete. Possible values are `recoverable`, `permanentlydeleted`. |
+|PurgeAreas|String| Options to define the locations to be in scope of the purge action. Possible values are: `mailboxes`, `teamsMessages`. |
 
 ## Response
 
