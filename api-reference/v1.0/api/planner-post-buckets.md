@@ -1,6 +1,6 @@
 ---
 title: "Create plannerBucket"
-description: "Create a new plannerBucket."
+description: "Create a new plannerBucket object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [plannerBucket](../resources/plannerbucket.md).
+Create a new [plannerBucket](../resources/plannerbucket.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
