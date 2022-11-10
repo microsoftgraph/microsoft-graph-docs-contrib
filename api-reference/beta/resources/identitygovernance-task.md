@@ -43,9 +43,7 @@ Inherits from [entity](../resources/entity.md).
 
 ### Supported tasks
 
-Lifecycle Workflows currently support the following tasks:
-
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](../includes/lifecycle-workflows-tasks-table.md)]
+[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
 
 ## Relationships
 
@@ -86,3 +84,12 @@ The following is a JSON representation of the resource.
 ## See also
 
 + [Configure task arguments](/graph/identitygovernance-lifecycleworkflows-task-arguments)
+
+
+<!-- {
+  "type": "#page.annotation",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/identitygovernance-task.md:\r\n    Exception processing links.\r\n    Link Definition was null. Link text: !INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md) (Parameter 'Definition')"
+  ]
+} -->
