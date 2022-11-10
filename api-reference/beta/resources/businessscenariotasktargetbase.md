@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the base object for all targets that can be specified for creating tasks for a scenario.
-This is an abstract type.
+This is an abstract type. Following types derive from this type: [businessScenarioGroupTarget](businessscenariogrouptarget.md).
+
 
 ## Properties
 |Property|Type|Description|

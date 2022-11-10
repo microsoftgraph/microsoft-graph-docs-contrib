@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents targeting a [group](../resources/group.md) for a creating tasks in a scenario.
-
+Represents a [group](../resources/group.md) which will be used as the target when a creating tasks in a [businessScenario](businessscenario.md).
 
 Inherits from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).
 

@@ -19,9 +19,9 @@ Represents scenario metadata for a [businessScenarioTask](../resources/businesss
 
 |Property|Type|Description|
 |:---|:---|:---|
-|externalBucketId|String|The identifier of the [bucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) configured in the [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) for the scenario. The task will be placed in the corresponding [plannerBucket](../resources/plannerbucket.md) in the target plan|
+|externalBucketId|String|Required. The identifier of the [bucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) configured in the [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) for the scenario. The task will be placed in the corresponding [plannerBucket](../resources/plannerbucket.md) in the target plan|
 |externalContextId|String|Optional. The identifier of the context of the task. Context is an application controlled value, and tasks can be queried by their externalContextId.|
-|externalObjectId|String|Application specified Identifier of the task. Every task for the same scenario must have a unique identifier specified for this property.|
+|externalObjectId|String|Required. Application specified Identifier of the task. Every task for the same scenario must have a unique identifier specified for this property.|
 |externalObjectVersion|String|Optional. Application specific version of the task. |
 |webUrl|String|Optional. The URL to the application specific experience for this task.|
 
