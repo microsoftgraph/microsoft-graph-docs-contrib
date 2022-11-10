@@ -1,6 +1,6 @@
 ---
 title: "businessScenario resource type"
-description: "**TODO: Add Description**"
+description: "Represents a scenario which collects relevant data and configuration for a specific problem domain."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a scenario which collects relevant data and configuration for a specific problem domain. Learn more about Business Scenarios [here](/graph/businessScenarios-concept-overview.md).
+Represents a scenario which collects relevant data and configuration for a specific problem domain. For more details about business scenarios, see [Business Scenarios (Preview) Overview](/graph/businessscenarios-concept-overview.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -32,20 +32,20 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of the creator of the scenario.|
-|createdDateTime|DateTimeOffset|The date and time the scenario was created.|
-|displayName|String|Display name of the scenario.|
-|id|String|The identifier of the scenario. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the last modifier of the scenario.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the scenario was last modified.|
-|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario.|
-|uniqueName|String|Unique name of the scenario. Each scenario must have a unique name. To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario. For example, a scenario authored by "Contoso.com" would have a unique name starting with "com.contoso"|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the user who created the scenario. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the scenario was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|displayName|String|Display name of the scenario. Required.|
+|id|String|The unique identifier for the scenario. Inherited from [entity](../resources/entity.md). Read-only.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the user who last modified the scenario. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the scenario was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario. Required.|
+|uniqueName|String|Unique name of the scenario. To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario. For example, a scenario authored by *Contoso.com* would have a unique name starting with `com.contoso`. Required.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|planner|[businessScenarioPlanner](../resources/businessscenarioplanner.md)|Planner Content related to the scenario.|
+|planner|[businessScenarioPlanner](../resources/businessscenarioplanner.md)|Planner content related to the scenario.|
 
 ## JSON representation
 
@@ -61,19 +61,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.businessScenario",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "uniqueName": "String",
-  "ownerAppIds": [
-    "String"
-  ],
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)"
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "ownerAppIds": ["String"],
+  "uniqueName": "String"
 }
 ```

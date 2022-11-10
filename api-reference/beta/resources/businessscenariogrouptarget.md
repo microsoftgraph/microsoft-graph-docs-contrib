@@ -15,19 +15,21 @@ Namespace: microsoft.graph
 
 Represents targeting a [group](../resources/group.md) for a creating tasks in a scenario.
 
-
 Inherits from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|The identifier of the group.|
-|taskTargetKind|plannerTaskTargetKind|Represents the kind of the target. The value of this property will be `group`. Inherited from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).The possible values are: `group`, `unknownFutureValue`.|
+|groupId|String|The unique identifier for the group. Required.|
+|taskTargetKind|plannerTaskTargetKind|Represents the kind of the target. The possible values are: `group`, `unknownFutureValue`. The value of this property will be `group`. Inherited from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -37,8 +39,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.businessScenarioGroupTarget",
-  "taskTargetKind": "String",
-  "groupId": "String"
+  "groupId": "String",
+  "taskTargetKind": "String"
 }
 ```
-
