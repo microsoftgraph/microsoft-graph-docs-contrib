@@ -54,7 +54,7 @@ GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$sel
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameter to return the **key** property. For details, see [Example 2](#example-2). For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to return the **key** property. For details, see [Example 2](#example-2-get-the-bitlocker-key-with-the-key-property-by-specifying-the-key-id). For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
