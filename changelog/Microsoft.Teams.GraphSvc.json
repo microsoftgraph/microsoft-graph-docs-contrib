@@ -751,7 +751,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "chatMessageHistoryItem",
               "ChangeType": "Addition",
-              "Description": "Added the [chatMessageHistoryItem](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageHistoryItem?view=graph-rest-beta) resource type.",
+              "Description": "Added the [chatMessageHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageHistoryItem?view=graph-rest-beta) resource type.",
               "Target": "chatMessageHistoryItem"
             },
             {
@@ -759,7 +759,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "messageHistory",
               "ChangeType": "Addition",
-              "Description": "Added the `messageHistory` property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+              "Description": "Added the `messageHistory` property to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
               "Target": "chatMessage"
             }
           ],
