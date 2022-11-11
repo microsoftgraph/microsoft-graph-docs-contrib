@@ -19,7 +19,7 @@ Represents the edition history of a message in a chat or a channel.
 |Property|Type|Description|
 |:---|:---|:---|
 |actions|chatMessageActions|The message edition action.The possible values are: `reactionAdded`, `reactionRemoved`, `actionUndefined`, `unknownFutureValue`.|
-|modifiedDateTime|DateTimeOffset|The message modification date time.|
+|modifiedDateTime|DateTimeOffset|The date and time when the message was modified.|
 |reaction|[chatMessageReaction](../resources/chatmessagereaction.md)|The reaction in the modified message.|
 
 ## Relationships
