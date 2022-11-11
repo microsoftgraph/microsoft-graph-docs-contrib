@@ -1,14 +1,14 @@
 ---
-title: "Microsoft Teams API licensing and payment requirements"
-description: "Learn about the licensing and payment models that apply to the Microsoft Teams API in Microsoft Graph: model=A, model=B, and evaluation mode."
+title: "Payment models and licensing requirements for Microsoft Teams APIs"
+description: "Learn about the payment models and license requirements that apply to some Microsoft Teams APIs in Microsoft Graph: model=A, model=B, and evaluation mode."
 author: "nkramer"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Licensing and payment requirements for Microsoft Teams APIs
+# Payment models and licensing requirements for Microsoft Teams APIs
 
-This article describes the licensing and payment requirements for the Microsoft Teams APIs in Microsoft Graph.
+This article describes the payment models and licensing requirements for Microsoft Teams APIs in Microsoft Graph.
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. 
 
@@ -20,9 +20,9 @@ The following table lists the APIs that currently support payment models.
 | Update (DLP patch) | [Update channel](/graph/api/channel-patch)</br>[Update chat](/graph/api/chat-patch)</br>[Update chatMessage](/graph/api/chatmessage-update) |
 | [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions) | [channel](/graph/api/resources/channel)</br>[chat](/graph/api/resources/chat)</br>[chatMessage](/graph/api/resources/chatmessage)</br>[conversationMember](/graph/api/resources/conversationmember) |
 
-## Licensing models
+## Payment models
 
-The following licensing models are available:
+The following payment models are available:
 
 - [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), and requires a [supported license](#required-licenses-for-modela). 
 
