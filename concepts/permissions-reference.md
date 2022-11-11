@@ -394,6 +394,7 @@ None.
 | _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | No |
 | _Calendars.ReadWrite_ |Have full access to user calendars |Allows the app to create, read, update, and delete events in user calendars. |No | Yes |
 | _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No | No |
+| _Calendars.ReadBasic_ |Read basic details in a user's calendar |Allows the app to read events in the signed-in user’s calendar except for body, attachments, extensions etc. |No | No |
 
 <br/>
 
@@ -403,6 +404,7 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Calendars.Read_ |Read calendars in all mailboxes |Allows the app to read events of all calendars without a signed-in user. |Yes |
 |_Calendars.ReadWrite_ |Read and write calendars in all mailboxes |Allows the app to create, read, update, and delete events of all calendars without a signed-in user. |Yes |
+| _Calendars.ReadBasi.Allc_ |Read all user's basic calendar information |Allows the app to read events in a user’s calendar except for body, attachments, extensions etc. |Yes |
 
 > **Important**
 Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not to all the mailboxes in the organization, even if the app has been granted the application permissions of Calendars.Read or Calendars.ReadWrite.
