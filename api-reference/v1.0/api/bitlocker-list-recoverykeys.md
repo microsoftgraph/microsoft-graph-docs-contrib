@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be in one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
 
@@ -129,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve a list of BitLocker keys filtered by deviceId.
+### Example 2: Retrieve a list of BitLocker keys filtered by **deviceId**
 
 #### Request
 
