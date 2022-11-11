@@ -39,19 +39,18 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## Optional query parameters
 
-This operation supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
+This method supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
 ```http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
-You can use `model` query parameter, which supports the values `A` and `B`, based on the [payment model](/graph/teams-licenses) that applies to your scenario,
-as shown in the following examples.  
+Use the `model` query parameter to specify the [payment model](/graph/teams-licenses) that applies to your scenario, as shown in the following examples.  
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
->**Note:** If no payment model is specified in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+>**Note:** If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ## Request headers
 | Header       | Value |
