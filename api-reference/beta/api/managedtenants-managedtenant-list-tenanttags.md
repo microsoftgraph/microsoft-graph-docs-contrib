@@ -3,7 +3,7 @@ title: "List tenantTags"
 description: "Get a list of the tenantTag objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTa
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-tenanttag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-tenanttag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

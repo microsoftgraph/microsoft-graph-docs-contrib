@@ -26,5 +26,3 @@ Possible values of a property
 
 
 
-
-

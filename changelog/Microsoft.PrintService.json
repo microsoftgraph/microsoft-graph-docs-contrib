@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShareViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerShareViewpoint](https://learn.microsoft.com/graph/api/resources/printerShareViewpoint?view=graph-rest-beta) resource type.",
+          "Target": "printerShareViewpoint"
+        },
+        {
+          "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+          "ApiChange": "Property",
+          "ChangedApiName": "viewPoint",
+          "ChangeType": "Addition",
+          "Description": "Added the **viewPoint** property to the [printerShare](https://learn.microsoft.com/graph/api/resources/printerShare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [List recentPrinterShares](https://learn.microsoft.com/en-us/graph/api/print-list-recentshares?view=graph-rest-beta) method to the [printerShare](https://learn.microsoft.com/graph/api/resources/printerShare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        }
+      ],
+      "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-05T03:23:57.6570047Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ffcaf9ed-cf62-4ad0-bbbd-35e5ce8ca783",
           "ApiChange": "Method",
           "ChangedApiName": "uploadData",
