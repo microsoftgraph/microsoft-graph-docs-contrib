@@ -6,6 +6,6 @@ ms.topic: include
 ---
 
 > [!NOTE]
-> This is a premium API that supports the `model=A` and `model=B` payment models. For details, see [Payment models](/graph/teams-licenses#payment-models). Depending on which payment model you choose, a [license](/graph/teams-licenses#required-licenses-for-modela) might also be required.
->
-> If no payment model is specified in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+> This is a premium API that supports the `model=A` and `model=B` payment models. For details, see [Payment models](/graph/teams-licenses#payment-models). If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
+
+> Depending on which payment model you choose, a license might also be required.
