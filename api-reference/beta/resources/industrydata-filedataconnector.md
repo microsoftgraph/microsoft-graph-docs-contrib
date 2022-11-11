@@ -17,16 +17,6 @@ Represents an abstract type that provides the resources to establish a connectio
 
 Inherits from [industryDataConnector](../resources/industrydata-industrydataconnector.md).
 
-## Methods
-
-| Method                                                                                        | Return type                                                                                                           | Description                                                                                                            |
-| :-------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| [List fileDataConnectors](../api/industrydata-filedataconnector-list.md)                      | [microsoft.graph.industryData.fileDataConnector](../resources/industrydata-filedataconnector.md) collection           | Get a list of the [fileDataConnector](../resources/industrydata-filedataconnector.md) objects and their properties.    |
-| [Get fileDataConnector](../api/industrydata-filedataconnector-get.md)                         | [microsoft.graph.industryData.fileDataConnector](../resources/industrydata-filedataconnector.md)                      | Read the properties and relationships of a [fileDataConnector](../resources/industrydata-filedataconnector.md) object. |
-| [Update fileDataConnector](../api/industrydata-filedataconnector-update.md)                   | [microsoft.graph.industryData.fileDataConnector](../resources/industrydata-filedataconnector.md)                      | Update the properties of a [fileDataConnector](../resources/industrydata-filedataconnector.md) object.                 |
-| [Delete fileDataConnector](../api/industrydata-filedataconnector-delete.md)                   | None                                                                                                                  | Delete a [fileDataConnector](../resources/industrydata-filedataconnector.md) object.                                  |
-| [validate](../api/industrydata-filedataconnector-validate.md)                                 | None                                                                                                                  | Perform validations applicable for the specific instance of the data connector.                                       |
-
 ## Properties
 
 | Property    | Type   | Description                                                                                                             |
