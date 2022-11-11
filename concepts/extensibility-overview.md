@@ -20,7 +20,7 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 
 
 > [!div class="nextstepaction"]
-> [Learn: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
+> [Training module: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
 
 ## Why add custom data to Microsoft Graph?
 
