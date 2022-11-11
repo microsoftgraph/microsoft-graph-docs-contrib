@@ -766,6 +766,8 @@ items:
                     href: migrate-azure-ad-graph-property-differences.md
                   - name: Methods
                     href: migrate-azure-ad-graph-method-differences.md
+                  - name: Permissions
+                    href: migrate-azure-ad-graph-permissions-differences.md
               - name: "2: Examine API use"
                 href: migrate-azure-ad-graph-audit-api-use.md
               - name: "3: Review app details"
