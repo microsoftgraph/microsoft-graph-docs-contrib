@@ -1,19 +1,19 @@
 ---
-title: "Update inboundFlow"
-description: "Update the properties of an inboundFlow object."
+title: "Create inboundFileFlow"
+description: "Create a new inboundFileFlow object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Update inboundFlow
+# Create inboundFileFlow
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [inboundFlow](../resources/industrydata-inboundflow.md) object.
+Create a new [inboundFileFlow](../resources/industrydata-inboundFileFlow.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /external/industryData/inboundFlows/{inboundFlowId}
+POST /external/industryData/inboundFlows
 ```
 
 ## Request headers
@@ -45,17 +45,22 @@ PATCH /external/industryData/inboundFlows/{inboundFlowId}
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [inboundFileFlow](../resources/industrydata-inboundFileFlow.md) object.
+
+You can specify the following properties when you create an **inboundFileFlow**.
 
 | Property           | Type            | Description                                                                                                                                                                                                                                                                  |
 | :----------------- | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName        | String          | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                                                     |
+| dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                                               |
+| displayName        | String          | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                                                 |
 | effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required.                                                                                                                                                                                     |
 | expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.                                                                                                                                                                                       |
+| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). |
+| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).    |
 
-### Response
+## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `201 Created` response code and an [inboundFileFlow](../resources/industrydata-inboundFileFlow.md) object in the response body.
 
 ## Examples
 
@@ -65,35 +70,49 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_inboundfileflow"
+  "name": "create_inboundFileFlow_from_"
 }
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}
+POST https://graph.microsoft.com/beta/external/industryData/inboundFileFlows
 Content-Type: application/json
 Content-length: 246
 
 {
-  "@odata.type": "#microsoft.graph.industryData.inboundFlow",
+  "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
   "displayName": "String",
+  "dataDomain": "String",
   "effectiveDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)"
+  "expirationDateTime": "String (timestamp)",
+  "year@odata.bind": "https://graph.microsoft.com/beta/external/industryData/years/{yearId}",
+  "dataConnector@odata.bind": "https://graph.microsoft.com/beta/external/industryData/dataConnectors/{dataConnectorId}"
 }
 ```
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.industryData.inboundFileFlow"
 }
 -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
+  "displayName": "String",
+  "readinessStatus": "String",
+  "dataDomain": "String",
+  "effectiveDateTime": "String (timestamp)",
+  "expirationDateTime": "String (timestamp)"
+}
 ```

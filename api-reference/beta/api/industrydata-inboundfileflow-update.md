@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                 |
 | :------------------------------------- | :---------------------------------------------------------- |
-| Delegated (work or school account)     | EduAdministration.Read, EduAdministration.ReadWrite         |
+| Delegated (work or school account)     | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                                              |
-| Application                            | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+| Application                            | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All |
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
+PATCH /external/industryData/inboundFlows/{inboundFlowId}
 ```
 
 ## Request headers
@@ -49,15 +49,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Property           | Type            | Description                                                                                                                                                                                                                                                                  |
 | :----------------- | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                       |
 | displayName        | String          | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                                                     |
 | effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). Required.                                                                                                             |
 | expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). Optional.                                                                                                               |
-| readinessStatus    | readinessStatus | The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Required. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -72,7 +70,16 @@ The following is an example of a request.
 -->
 
 ```http
+PATCH https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}
+Content-Type: application/json
+Content-length: 246
 
+{
+  "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
+  "displayName": "String",
+  "effectiveDateTime": "String (timestamp)",
+  "expirationDateTime": "String (timestamp)"
+}
 ```
 
 ### Response
@@ -88,15 +95,5 @@ The following is an example of the response
 -->
 
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-  "displayName": "String",
-  "readinessStatus": "String",
-  "dataDomain": "String",
-  "effectiveDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)"
-}
+HTTP/1.1 204 No Content
 ```
