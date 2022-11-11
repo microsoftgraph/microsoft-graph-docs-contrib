@@ -42,12 +42,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.userMatchingSetting",
-  "matchTarget": {
-    "@odata.type": "microsoft.graph.industryData.userMatchTargetReferenceValue"
-  },
+  "matchTarget": {"@odata.type": "microsoft.graph.industryData.userMatchTargetReferenceValue"},
   "priorityOrder": "Int32",
-  "sourceIdentifier": {
-    "@odata.type": "microsoft.graph.industryData.identifierTypeReferenceValue"
-  }
+  "sourceIdentifier": {"@odata.type": "microsoft.graph.industryData.identifierTypeReferenceValue"}
 }
 ```

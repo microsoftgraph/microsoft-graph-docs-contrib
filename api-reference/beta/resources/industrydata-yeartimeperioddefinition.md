@@ -56,8 +56,6 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "endDate": "Date",
   "startDate": "Date",
-  "year": {
-    "@odata.type": "microsoft.graph.industryData.yearReferenceValue"
-  }
+  "year": {"@odata.type": "microsoft.graph.industryData.yearReferenceValue"}
 }
 ```

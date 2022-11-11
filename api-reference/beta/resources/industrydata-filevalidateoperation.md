@@ -60,21 +60,17 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.industryData.fileValidateOperation",
   "createdDateTime": "String (timestamp)",
+  "errors": [
+    {"@odata.type": "microsoft.graph.publicError"}
+  ],
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "resourceLocation": "String",
   "status": "String",
   "statusDetail": "String",
-  "errors": [
-    {
-      "@odata.type": "microsoft.graph.publicError"
-    }
-  ],
+  "validatedFiles": ["String"],
   "warnings": [
-    {
-      "@odata.type": "microsoft.graph.publicError"
-    }
-  ],
-  "validatedFiles": ["String"]
+    {"@odata.type": "microsoft.graph.publicError"}
+  ]
 }
 ```

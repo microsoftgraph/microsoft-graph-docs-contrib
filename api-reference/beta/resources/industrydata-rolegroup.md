@@ -52,9 +52,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.industryData.roleGroup",
   "displayName": "String",
   "roles": [
-    {
-      "@odata.type": "microsoft.graph.industryData.roleReferenceValue"
-    }
+    {"@odata.type": "microsoft.graph.industryData.roleReferenceValue"}
   ]
 }
 ```

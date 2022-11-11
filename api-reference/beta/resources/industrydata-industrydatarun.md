@@ -65,9 +65,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.industryDataRun",
-  "blockingError": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
+  "blockingError": {"@odata.type": "microsoft.graph.publicError"},
   "displayName": "String",
   "endDateTime": "String (timestamp)",
   "startDateTime": "String (timestamp)",

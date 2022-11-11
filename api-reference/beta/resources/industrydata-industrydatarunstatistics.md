@@ -42,13 +42,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.industryData.industryDataRunStatistics",
   "activityStatistics": [
-    {
-      "@odata.type": "microsoft.graph.industryData.inboundActivityResults"
-    }
+    {"@odata.type": "microsoft.graph.industryData.inboundActivityResults"}
   ],
-  "inboundTotals": {
-    "@odata.type": "microsoft.graph.industryData.aggregatedInboundStatistics"
-  },
+  "inboundTotals": {"@odata.type": "microsoft.graph.industryData.aggregatedInboundStatistics"},
   "runId": "String",
   "status": "String"
 }

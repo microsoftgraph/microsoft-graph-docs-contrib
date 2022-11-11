@@ -53,28 +53,16 @@ The following is a JSON representation of the resource.
   "activityId": "String",
   "displayName": "String",
   "errors": "Int32",
-  "groups": {
-    "@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"
-  },
+  "groups": {"@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"},
   "matchedPeopleByRole": [
-    {
-      "@odata.type": "microsoft.graph.industryData.industryDataRunRoleCountMetric"
-    }
+    {"@odata.type": "microsoft.graph.industryData.industryDataRunRoleCountMetric"}
   ],
-  "memberships": {
-    "@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"
-  },
-  "organizations": {
-    "@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"
-  },
-  "people": {
-    "@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"
-  },
+  "memberships": {"@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"},
+  "organizations": {"@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"},
+  "people": {"@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"},
   "status": "String",
   "unmatchedPeopleByRole": [
-    {
-      "@odata.type": "microsoft.graph.industryData.industryDataRunRoleCountMetric"
-    }
+    {"@odata.type": "microsoft.graph.industryData.industryDataRunRoleCountMetric"}
   ],
   "warnings": "Int32"
 }

@@ -54,9 +54,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.industryData.sourceSystemDefinition",
   "displayName": "String",
   "userMatchingSettings": [
-    {
-      "@odata.type": "microsoft.graph.industryData.userMatchingSetting"
-    }
+    {"@odata.type": "microsoft.graph.industryData.userMatchingSetting"}
   ],
   "vendor": "String"
 }
