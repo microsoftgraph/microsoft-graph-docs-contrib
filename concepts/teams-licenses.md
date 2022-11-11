@@ -33,7 +33,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Active pricing events for these APIs started on July 5th, 2022. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
+> Active pricing events for these APIs started on July 5th, 2022. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing).
 
 ### `model=A` requirements
 
@@ -42,7 +42,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 The following APIs support the `model=A` parameter.
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing-updates) | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/chatmessage-delta) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | conversationMember change notifications | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
@@ -83,7 +83,7 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 
 The following APIs support the `model=B` parameter.
 
-|API                   | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing-updates) | Notes |
+|API                   | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/chatmessage-delta) | None | $0.00075 per message |  |
 | conversationMember change notifications | None  | $0.00075 per notification | |
@@ -95,7 +95,7 @@ The following APIs support the `model=B` parameter.
 
 The following APIs support evaluation mode.
 
-|API   | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing-updates) | Notes |
+|API   | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/chatmessage-delta) |  500 messages per month per app | N/A |
 | conversationMember change notifications | 500 messages per month per app | N/A |
