@@ -49,7 +49,11 @@ You can use the 15 extension attributes to store String values on **user** or **
 
 The following example shows how to store data in **extensionAttribute1** and delete existing data from **extensionAttribute12** through an update operation with a PATCH method.
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-extattributes1-15-update-user"
+}-->
+```http
 PATCH https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b
 
 {
@@ -66,12 +70,21 @@ The request returns a `204 No Content` response object.
 
 ###### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-extattributes1-15-get"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExtensionAttributes
 ```
 
 ###### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,onPremisesExtensionAttributes)",
@@ -119,7 +132,11 @@ Before you can add a directory extension to a resource instance, you must first 
 
 ###### Request
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-directoryextensions-create"
+}-->
+```http
 POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69e287e7b/extensionProperties
 
 {
@@ -135,6 +152,11 @@ POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69
 
 A directory extension property named `extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker` is created with an extension name that follows the following naming convention: *extension_{appId-without-hyphens}_{extensionProperty-name}*.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -157,6 +179,10 @@ Content-type: application/json
 
 After creating the directory extension definition, you can now add it to an instance of a target object type. You can store data in the directory extension property when creating a new instance of the target object or when updating an existing object. The following example shows how to store data in the directory extension property when creating a new user object.
 
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-directoryextensions-add-users"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/users
 
@@ -181,12 +207,21 @@ The following example shows how the directory extension properties and associate
 
 ##### Request
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-directoryextensions-get-users"
+}-->
+```http
 GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker,extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable
 ```
 
 ##### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -210,7 +245,11 @@ To update or delete the value of the directory extension property for a resource
 
 The following request updates the value of one directory extension property and deletes another extension property.
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-directoryextensions-update-users"
+}-->
+```http
 PATCH https://graph.microsoft.com/v1.0/users/63384f56-42d2-4aa7-b1d6-b10c78f143a2
 
 {
@@ -246,6 +285,10 @@ Unlike open extensions, you manage the [schema extension definitions](/graph/api
 
 ###### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-schemaextensions-create"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/schemaExtensions
 
@@ -274,6 +317,11 @@ POST https://graph.microsoft.com/v1.0/schemaExtensions
 
 ###### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#schemaExtensions/$entity",
@@ -304,8 +352,12 @@ POST https://graph.microsoft.com/v1.0/schemaExtensions
 
 After creating the schema extension definition, you can now add the extension property to an instance of a target object type. You can store data in the schema extension when creating a new instance of the target object or when updating an existing object. The following example shows how to store data in the schema extension property when creating a new user object.
 
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/users/
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-schemaextensions-add-users"
+}-->
+```http
+POST https://graph.microsoft.com/beta/users
 
 {
     "accountEnabled": true,
@@ -332,7 +384,11 @@ Use the PATCH operation to update a schema extension property or delete an exist
 
 The following example deletes the value of the **courseId** property and updates the **courseType** property. To delete the `extkmpdyld2_graphLearnCourses` extension property in its entirety, set its value to `null`.
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-schemaextensions-update-users"
+}-->
+```http
 PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e
 
 {
@@ -350,11 +406,22 @@ The request returns a `204 No Content` response object.
 To read the schema extension properties on a resource instance, specify the extension name in a `$select` request.
 
 ###### Request
-```msgraph-interactive
+
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-schemaextensions-get-user"
+}-->
+```http
 GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?$select=id,displayName,extkmpdyld2_graphLearnCourses
 ```
 
 ###### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -392,7 +459,11 @@ The **extensionName** property is the only *pre-defined*, writable property in a
 
 The following example shows an open extension definition with three properties and how the custom properties and associated data is presented on a resource instance.
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-openextensions-create-user"
+}-->
+```http
 POST https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions
 
 {
@@ -413,7 +484,11 @@ To update an open extension, you must specify all its properties in the request 
 
 The following request specifies only the **linkedInProfile** and **xboxGamerTag** properties. The value of the **xboxGamerTag** property is being updated while the **linkedInProfile** property remains the same. This request also deletes the unspecified **skypeId** property.
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-openextensions-update-user"
+}-->
+```http
 PATCH https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
 
 {
@@ -426,7 +501,11 @@ This request returns a `204 No Content` response code.
 
 ##### Retrieve the open extensions
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-openextensions-get-user"
+}-->
+```http
 GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
 
 {
