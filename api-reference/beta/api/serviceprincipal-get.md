@@ -76,14 +76,9 @@ Here is an example of the request.
   "name": "get_serviceprincipal"
 }-->
 
-```msgraph-interactive (using id)
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ```
-
-```msgraph-interactive (using appId)
-GET https://graph.microsoft.com/beta/servicePrincipals(appId='{appId}')
-```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -282,11 +277,7 @@ To get custom security attribute assignments, the calling principal must be assi
   "blockType": "request",
   "name": "get_serviceprincipal_customsecurityattributes"
 }-->
-```msgraph-interactive (using id)
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
-```
-
-```msgraph-interactive (using appId)
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
 ```
 
