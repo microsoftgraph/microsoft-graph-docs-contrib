@@ -44,7 +44,11 @@ Take note of the following items:
 - The optional `$select` query parameter is also used to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
 - The initial request doesn't include a state token. State tokens will be used in subsequent requests.
 
-``` http
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-groups-initial-request"
+}-->
+```http
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
@@ -54,6 +58,11 @@ If successful, this method returns `200 OK` response code and [group](/graph/api
 
 In this example, a `@odata.nextLink` was included; the original `$select` query parameter is encoded in the state token.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -93,6 +102,10 @@ Content-type: application/json
 
 The second request uses the `@odata.nextLink` from the previous response, which contains the `skipToken`. Notice the `$select` parameter isn't visibly present as it's encoded and included in the token.
 
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-groups-nextlink-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
 ```
@@ -101,6 +114,11 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 
 The response contains another `@odata.nextLink` with a new `skipToken` value, which indicates that more changes that were tracked for groups are available. Use the `@odata.nextLink` URL in more requests until a `@odata.deltaLink` URL (in an `@odata.deltaLink` parameter) is returned in the final response, even if the value is an empty array.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -143,6 +161,10 @@ Content-type: application/json
 
 The third request uses the latest `@odata.nextLink` returned from the last sync request.
 
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-groups-nextlink-request2"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
@@ -151,6 +173,11 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVA
 
 When a `@odata.deltaLink` URL is returned, there's no more data about the existing state of group objects.  For future requests, the application uses the `@odata.deltaLink` URL to learn about other changes to groups. Save the `deltaToken` and use it in the subsequent request URL to discover more changes to groups.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -181,6 +208,10 @@ Using the `@odata.deltaLink` from the [last response](#final-nextlink-response),
 - Group objects for which a property has changed (for example, **displayName** has been modified).
 - Group objects for which member objects have been added or removed.
 
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-groups-deltalink-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
 ```
@@ -189,6 +220,11 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1
 
 If no changes have occurred, a `@odata.deltaLink` is returned with no results - the **value** property is an empty array. Make sure to replace the previous link in the application with the new one for use in future calls.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -205,6 +241,11 @@ If changes have occurred, a collection of changed groups is included. The respon
 > [!NOTE]
 > This request might have replication delays for groups that were recently created, updated, or deleted. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -256,6 +297,10 @@ The `members@delta` property is included in group objects by default, when the `
 
 Let's assume you're running the following delta query - either to capture the initial full state of groups, or later on to get delta changes:
 
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-groups-delta-paging-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
@@ -264,6 +309,11 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 **First page**
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -300,6 +350,11 @@ Content-type: application/json
 
 **Second page**
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
