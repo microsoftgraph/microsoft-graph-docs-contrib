@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Attempts to re-install party partner agents in a Cloud PC failed to install.
+Retry installation for the partner agents which failed to install on the Cloud PC. Service side will check which agent installation failed firstly and retry.
 
 ## Permissions
 

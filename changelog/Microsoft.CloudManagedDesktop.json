@@ -2575,7 +2575,7 @@
             "SubArea": "Cloud PC"
         },
         {
-            "ChangList": [
+            "ChangeList": [
               {
                 "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
                 "ApiChange": "Method",
@@ -2591,6 +2591,30 @@
                 "ChangeType": "Addition",
                 "Description": "Added the **partnerAgentInstallResults** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
                 "Target": "cloudPC"
+              },
+              {
+                "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
+                "ApiChange": "EnumType",
+                "ChangedApiName": "cloudPcPartnerAgentInstallStatus",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcPartnerAgentInstallStatus** enumeration type.",
+                "Target": "cloudPcPartnerAgentInstallStatus"
+              },
+              {
+                "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
+                "ApiChange": "EnumType",
+                "ChangedApiName": "cloudPcPartnerAgentName",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcPartnerAgentName** enumeration type.",
+                "Target": "cloudPcPartnerAgentName"
+              },
+              {
+                "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcPartnerAgentInstallResult",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcPartnerAgentInstallResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPartnerAgentInstallResult?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcPartnerAgentInstallResult"
               }
             ],
             "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
