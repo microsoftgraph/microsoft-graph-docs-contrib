@@ -1,8 +1,8 @@
 ---
 title: "Reports API overview for attack simulation training as part of Microsoft Defender for Office 365"
-description: "This section describes APIs that access security reports that are part of Microsoft Defender for Office 365."
+description: "This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation training."
 ms.localizationpriority: high
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.prod: "security"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation traning. Attack simulation tranings set up benign cyberattack simulations to train users in the tenant to increase their awareness, and help identify vulnerable users.
+This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation training. Attack simulation trainings set up benign cyberattack simulations to train users in the tenant to increase their awareness, and help identify vulnerable users.
 
 ## What role do the attack simulation reports play in enterprise defense?
 
@@ -28,7 +28,6 @@ Microsoft 365 Defender is a unified enterprise defense suite that helps detect s
 
 To access attack simulation training, open the Microsoft 365 Defender portal, go to **Email & collaboration** > **Attack simulation training**.
 
-
 ## Authorization
 
 Microsoft Graph controls access to resources using permissions. You must specify the permissions you need in order to access reports resources. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [reports permissions](/graph/permissions-reference#reports-permissions).
@@ -37,9 +36,11 @@ Microsoft Graph controls access to resources using permissions. You must specify
 
 | Kinds of data          | Resource                                | API         |
 |:---------------------- |:--------------------------------------- |:------------|
-| Vulnerable repeat offenders in a tenant | [attackSimulationRepeatOffender](attacksimulationrepeatoffender.md) | [getAttackSimulationRepeatOffenders](../api/reportroot-getattacksimulationrepeatoffenders.md) |
-| Simulation data and results for each user in a tenant | [attackSimulationSimulationUserCoverage](attacksimulationsimulationusercoverage.md) | [getAttackSimulationSimulationUserCoverage](../api/reportroot-getattacksimulationsimulationusercoverage.md) |
-| Training coverage for each user in a tenant | [attackSimulationTrainingUserCoverage](attacksimulationtrainingusercoverage.md) | [getAttackSimulationTrainingUserCoverage](../api/reportroot-getattacksimulationtrainingusercoverage.md) |
+| Vulnerable repeat offenders in a tenant | [attackSimulationRepeatOffender](attacksimulationrepeatoffender.md) | [getAttackSimulationRepeatOffenders](../api/securityreportsroot-getattacksimulationrepeatoffenders.md) |
+| Simulation data and results for each user in a tenant | [attackSimulationSimulationUserCoverage](attacksimulationsimulationusercoverage.md) | [getAttackSimulationSimulationUserCoverage](../api/securityreportsroot-getattacksimulationsimulationusercoverage.md) |
+| Training coverage for each user in a tenant | [attackSimulationTrainingUserCoverage](attacksimulationtrainingusercoverage.md) | [getAttackSimulationTrainingUserCoverage](../api/securityreportsroot-getattacksimulationtrainingusercoverage.md) |
+
+[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
 
 ## Next steps
 
@@ -47,4 +48,3 @@ Reports resources and APIs can open up new ways for you to engage with users and
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-

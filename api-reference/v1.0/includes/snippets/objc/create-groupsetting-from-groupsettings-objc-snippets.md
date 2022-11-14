@@ -12,7 +12,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphGroupSetting *groupSetting = [[MSGraphGroupSetting alloc] init];
-[groupSetting setDisplayName:@"Group.Unified"];
 [groupSetting setTemplateId:@"62375ab9-6b52-47ed-826b-58e47e0e304b"];
 NSMutableArray *valuesList = [[NSMutableArray alloc] init];
 MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];

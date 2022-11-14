@@ -1,0 +1,70 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchAnswer",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchAnswer](https://learn.microsoft.com/en-us/graph/api/resources/search-searchAnswer?view=graph-rest-beta) resource type",
+                    "Target": "searchAnswer"
+                },
+                {
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookmark",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookmark](https://learn.microsoft.com/en-us/graph/api/resources/search-bookmark?view=graph-rest-beta) resource type and supported methods.",
+                    "Target": "bookmark"
+                },
+                {
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "qna",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [qna](https://learn.microsoft.com/en-us/graph/api/resources/search-qna?view=graph-rest-beta) resource type and supported methods.",
+                    "Target": "qna"
+                },
+                {
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "acronym",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [acronym](https://learn.microsoft.com/en-us/graph/api/resources/search-acronym?view=graph-rest-beta) resource type and supported methods.",
+                    "Target": "acronym"
+                },
+                {
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "answerVariant",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [answerVariant](https://learn.microsoft.com/en-us/graph/api/resources/search-answerVariant?view=graph-rest-beta) resource type.",
+                    "Target": "answerVariant"
+                },
+                {
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "answerKeyword",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [answerKeyword](https://learn.microsoft.com/en-us/graph/api/resources/search-answerKeyword?view=graph-rest-beta) resource type.",
+                    "Target": "answerKeyword"
+                },
+                {
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "answerState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **answerState** enumeration type.",
+                    "Target": "answerState"
+                }
+            ],
+            "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-02-28T21:05:19.767Z",
+            "WorkloadArea": "Search",
+            "SubArea": ""
+        }
+    ]
+}

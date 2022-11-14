@@ -163,7 +163,11 @@ Here is a JSON representation of the resource.
       "domains": [
         "String"
       ],
-      "probeRequiredUrl": "String"
+      "probeRequiredUrl": "String",
+      "interfaceTypeMatch": "String",
+      "dnsServerAddressMatch": [
+        "String"
+      ]
     }
   ],
   "providerType": "String",
@@ -185,6 +189,7 @@ Here is a JSON representation of the resource.
   "optInToDeviceIdSharing": true
 }
 ```
+
 
 
 

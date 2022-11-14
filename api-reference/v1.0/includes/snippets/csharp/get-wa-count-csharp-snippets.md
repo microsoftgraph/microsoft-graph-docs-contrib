@@ -6,10 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("$count", "true"),
+	new QueryOption("$search", "\"displayName:wa\"")
+};
+
 var users = await graphClient.Users
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
-	.Search("displayName:wa")
 	.OrderBy("displayName")
 	.GetAsync();
 

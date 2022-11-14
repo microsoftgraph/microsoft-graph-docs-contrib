@@ -1,20 +1,19 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SharingLink
+title: sharingLink resource type
 ms.localizationpriority: medium
-description: "The SharingLink resource groups link-related data items into a single structure."
-ms.prod: ""
+description: "The sharingLink resource groups link-related data items into a single structure."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# SharingLink resource type
+# sharingLink resource type
 
 Namespace: microsoft.graph
 
-The **SharingLink** resource groups link-related data items into a single structure.
+Groups link-related data items into a single structure.
 
-If a [**Permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
+If a [**permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
 
 ## JSON representation
 
@@ -66,6 +65,8 @@ This table defines the possible values for the **type** property:
 |:---------------|:------------------------------------------------------------
 | `anonymous`    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization.
 | `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
+| `existingAccess`| Only people who have already been granted access to the item through other means can access the item using this link. Only available in OneDrive for Business and SharePoint.
+|`users`         | The link grants access only to a specific list of people. Only available in OneDrive for Business and SharePoint.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

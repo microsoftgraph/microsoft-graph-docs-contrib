@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Represents an Azure Active Directory (Azure AD) terms of use agreement file.
 
 ## Properties
-| Method       | Return Type | Description |
+| Property       | Type | Description |
 |:-------------|:------------|:------------|
 |data|Binary|Data that represents the terms of use PDF document. Read-only.|
 

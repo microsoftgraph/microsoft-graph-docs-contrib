@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstanceDecisionItemServicePrincipalResource resource type"
 description: "Represents service principals whose access to a resource is represented through an accessReviewInstanceDecisionItem object."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

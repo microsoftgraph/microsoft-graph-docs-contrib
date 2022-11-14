@@ -20,9 +20,11 @@ Not yet documented
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|hdd|1|Not yet documented|
-|ssd|2|Not yet documented|
-|unknown|3|Enum member for unknown or default diskType|
+|unknown|0|Enum member for unknown or default diskType|
+|hdd|1|Enum member for HDD devices|
+|ssd|2|Enum member for SSD devices|
+|unknownFutureValue|3|Evolvable enum member|
+
 
 
 

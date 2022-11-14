@@ -7,14 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.AppConsentRequestRequestBuilderGetQueryParameters{
-	Filter: "userConsentRequests/any(u:u/status%20eq%20'InProgress')",
+
+requestFilter := "userConsentRequests/any"
+
+requestParameters := &graphconfig.AppConsentRequestRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.AppConsentRequestRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.AppConsentRequestRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-appConsentRequestId := "appConsentRequest-id"
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById(&appConsentRequestId).Get(options)
+
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById("appConsentRequest-id").Get(context.Background(), configuration)
 
 
 ```

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/AlexW@contoso.OnMicrosoft.com/calendar/calendarPermissions')
+let calendarPermissions = await client.api('/users/AlexW@contoso.OnMicrosoft.com/calendar/calendarPermissions')
 	.version('beta')
 	.get();
 

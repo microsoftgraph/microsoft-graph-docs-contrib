@@ -34,8 +34,10 @@ Not yet documented
 |installPhoneCallInProgress|-2016330703|Not yet documented|
 |installFailed|-2016330702|Not yet documented|
 |notSupportedOperation|-2016330701|Not yet documented|
-|sharedDeviceUserLoggedInError|-2016324035|Not yet documented|
+|sharedDeviceUserLoggedInError|-2016330699|Not yet documented|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Not yet documented|
+
+
 
 
 

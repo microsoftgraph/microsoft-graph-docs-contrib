@@ -18,9 +18,9 @@ Defines the appearance of the content and the conditions that dictate when the t
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The text identifier for the display template; for example, `contosoTickets`.|
+|id|String|The text identifier for the display template; for example, `contosoTickets`. Maximum 16 characters. Only alphanumeric characters allowed. |
 |layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|The definition of the content's appearance, represented by an [Adaptive Card](/adaptive-cards/authoring-cards/getting-started), which is a JSON-serialized card object model.|
-|priority|Int32|Defines the priority of a display template. A display template with priority 1 is evaluated before a template with priority 4. Gaps in priority values are supported.|
+|priority|Int32|Defines the priority of a display template. A display template with priority 1 is evaluated before a template with priority 4. Gaps in priority values are supported. Must be positive value.|
 |rules|[microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md) collection|Specifies additional rules for selecting this display template based on the item schema. Optional.|
 
 ## Relationships

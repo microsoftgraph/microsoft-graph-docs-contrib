@@ -10,7 +10,12 @@ var cloudPcUserSetting = new CloudPcUserSetting
 {
 	DisplayName = "Example",
 	SelfServiceEnabled = false,
-	LocalAdminEnabled = true
+	LocalAdminEnabled = true,
+	RestorePointSetting = new CloudPcRestorePointSetting
+	{
+		FrequencyInHours = 16,
+		UserRestoreEnabled = true
+	}
 };
 
 await graphClient.DeviceManagement.VirtualEndpoint.UserSettings

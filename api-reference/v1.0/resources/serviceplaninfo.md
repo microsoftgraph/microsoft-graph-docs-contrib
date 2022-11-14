@@ -2,7 +2,7 @@
 title: "servicePlanInfo resource type"
 description: "Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the subscribedSku entity is a collection of **servicePlanInfo**."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "jconley76"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -36,10 +36,10 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "appliesTo": "string",
-  "provisioningStatus": "string",
-  "servicePlanId": "guid",
-  "servicePlanName": "string"
+  "appliesTo": "String",
+  "provisioningStatus": "String",
+  "servicePlanId": "Guid",
+  "servicePlanName": "String"
 }
 
 ```

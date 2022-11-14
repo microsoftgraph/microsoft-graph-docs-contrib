@@ -4,7 +4,7 @@ description: "Contains information about a service plan associated with a subscr
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "jpettere"
+author: "jconley76"
 ---
 
 # servicePlanInfo resource type
@@ -38,10 +38,10 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "appliesTo": "string",
-  "provisioningStatus": "string",
-  "servicePlanId": "guid",
-  "servicePlanName": "string"
+  "appliesTo": "String",
+  "provisioningStatus": "String",
+  "servicePlanId": "Guid",
+  "servicePlanName": "String"
 }
 
 ```

@@ -2,7 +2,7 @@
 title: "groupLifecyclePolicy: renewGroup"
 description: "Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "psaffaie"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -20,16 +20,17 @@ Renew a group's expiration. When a group is renewed, the group expiration is ext
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
- 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All or Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported |
-|Application | Group.ReadWrite.All or Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)    |
+| :------------------------------------- | :--------------------------------------------- |
+| Delegated (work or school account)     | Group.ReadWrite.All or Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported                                  |
+| Application                            | Group.ReadWrite.All or Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groupLifecyclePolicies/renewGroup
 
@@ -37,17 +38,18 @@ POST /groupLifecyclePolicies/renewGroup
 
 ## Request headers
 
-| Name | Description |
-|:---------------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type | Description |
-|:---------------|:--------|:----------|
-|groupId|Guid| The id of the group to renew. |
+| Parameter | Type | Description                   |
+| :-------- | :--- | :---------------------------- |
+| groupId   | Guid | The id of the group to renew. |
 
 ## Response
 
@@ -57,12 +59,13 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ##### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "grouplifecyclepolicy_renewgroup"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/renewGroup
 Content-type: application/json
@@ -71,16 +74,13 @@ Content-type: application/json
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/grouplifecyclepolicy-renewgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/grouplifecyclepolicy-renewgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/grouplifecyclepolicy-renewgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -95,14 +95,18 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/grouplifecyclepolicy-renewgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/grouplifecyclepolicy-renewgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ##### Response
 
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

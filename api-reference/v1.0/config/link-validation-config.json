@@ -2,7 +2,9 @@
     "pathsToIgnore": [
         "/aspnet",
         "/azure",
+        "/compliance",
         "/cloud-app-security",
+        "/concepts",
         "/defender-for-identity",
         "/dotnet",
         "/dynamics-nav",
@@ -20,11 +22,14 @@
         "/openspecs",
         "/powershell",
         "/previous-versions",
+        "/rest",
+        "/security",
         "/skypeforbusiness",
         "/sharepoint",
         "/universal-print",
         "/troubleshoot",
         "/windows",
-        "/windows-hardware"
+        "/windows-hardware",
+        "/deployedge"
     ]
 }

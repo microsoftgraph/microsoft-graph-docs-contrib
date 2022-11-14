@@ -75,6 +75,7 @@ This object provides a targeted subset of properties from the core [user] object
 | classes       | [educationClass] collection  | Classes to which the user belongs. Nullable. |
 | schools       | [educationSchool] collection | Schools to which the user belongs. Nullable. |
 | taughtClasses | [educationClass] collection  | Classes for which the user is a teacher.     |
+|rubrics|[educationRubric](educationrubric.md) collection|When set, the grading rubric attached to the assignment.|
 
 ## JSON representation
 

@@ -8,14 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 headers := map[string]string{
-	"Authorization": "Bearer {Token}"
+	"Authorization": "Bearer {Token}",
 }
-options := &msgraphsdk.SchemaRequestBuilderGetOptions{
-	H: headers,
+configuration := &graphconfig.SchemaRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
-servicePrincipalId := "servicePrincipal-id"
-synchronizationJobId := "synchronizationJob-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Schema().Get(options)
+
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Schema().Get(context.Background(), configuration)
 
 
 ```
