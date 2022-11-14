@@ -10,13 +10,7 @@ ms.prod: "applications"
 
 Your app must be registered in Azure AD before the Microsoft Identity Platform can authorize it to access data stored in Azure AD or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
 
-In this article, you learn how to use the Microsoft Graph API to manage the following aspects of the lifecycle of an application:
-
-+ Register an application and the different app types
-+ Configure the properties of an app
-+ Add credentials to an application
-+ Configure single sign-on for an app
-+ Delete an app
+In this article, you learn how to use the Microsoft Graph API to manage different aspects of the lifecycle of an application, including it's properties, permissions, and role assignments.
 
 ## Prerequisites
 
