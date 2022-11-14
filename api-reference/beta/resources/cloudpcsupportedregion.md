@@ -61,6 +61,6 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "id": "String (identifier)",
   "regionStatus": "microsoft.graph.cloudPcSupportedRegionStatus",
-  "supportedSolution": "String",
+  "supportedSolution": "String"
 }
 ```
