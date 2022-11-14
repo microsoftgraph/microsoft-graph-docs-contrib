@@ -96,13 +96,12 @@ interface MsalConfig {
 
 To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/msal-js-initializing-client-applications).
 
-#### Use a diffferent cloud endpoint
+#### Use a different cloud endpoint
 
 Use this when you want to use the toolkit to render your data from a different Microsoft 365 endpoint.
 
 ```ts
 import {Providers, MsalProvider} from '@microsoft/mgt'
-import {UserAgentApplication} from "msal";
 
 const config: MsalConfig = {
   baseUrl: 'https://graph.microsoft.us', // change the base URL

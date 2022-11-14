@@ -98,7 +98,7 @@ interface Msal2PublicClientApplicationConfig {
 }
 ```
 
-#### Use a diffferent cloud endpoint
+#### Use a different cloud endpoint
 
 Use this when you want to use the toolkit to render your data from a different Microsoft 365 endpoint.
 
