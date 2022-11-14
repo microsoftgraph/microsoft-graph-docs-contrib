@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: getSupportedCloudPcRemoteActions"
 description: "Get a list of supported Cloud PC remote actions of a specific Cloud PC device with their action names and capabilities. One use case is to hide the actions that are not in the supported action list and gray out the ones that are currently disabled on the Cloud PC Intune device blade."
-author: "Hank Chang"
+author: "hanky0301"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType

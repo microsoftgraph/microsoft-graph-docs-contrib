@@ -10403,6 +10403,8 @@ items:
             href: api/cloudpc-endgraceperiod.md
           - name: Get connectivity history
             href: api/cloudpc-getcloudpcconnectivityhistory.md
+          - name: Get supported remote actions
+            href: api/cloudpc-getsupportedcloudpcremoteactions.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get remote action results

@@ -1,7 +1,7 @@
 ---
 title: "cloudPcRemoteActionCapability resource type"
 description: "The action name and capability of a supported Cloud PC remote action. This is the element type of the returned list of GetSupportedCloudPcRemoteActions API."
-author: "Hank Chang"
+author: "hanky0301"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
