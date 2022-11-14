@@ -14,7 +14,7 @@ configuration := &graphconfig.AttachmentRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MessagesById("message-id").AttachmentsById("attachment-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().MessagesById("message-id").AttachmentsById("attachment-id").Get(context.Background(), configuration)
 
 
 ```

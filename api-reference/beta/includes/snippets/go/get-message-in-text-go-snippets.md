@@ -18,7 +18,7 @@ configuration := &graphconfig.MessageRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MessagesById("message-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().MessagesById("message-id").Get(context.Background(), configuration)
 
 
 ```

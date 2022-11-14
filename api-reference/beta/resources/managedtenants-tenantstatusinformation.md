@@ -3,7 +3,7 @@ title: "tenantStatusInformation resource type"
 description: "Represents onboarding status information for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Represents onboarding status information for a managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|delegatedPrivilegeStatus|delegatedPrivilegeStatus|The status of the delegated admin privilege relationship between the managing entity and the managed tenant. Possible values are: `none`, `delegatedAdminPrivileges`, `unknownFutureValue`. Optional. Read-only.|
+|delegatedPrivilegeStatus|delegatedPrivilegeStatus|The status of the delegated admin privilege relationship between the managing entity and the managed tenant. Possible values are: `none`, `delegatedAdminPrivileges`, `unknownFutureValue`, `granularDelegatedAdminPrivileges`, `delegatedAndGranularDelegetedAdminPrivileges`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `granularDelegatedAdminPrivileges` , `delegatedAndGranularDelegetedAdminPrivileges`. Optional. Read-only.|
 |lastDelegatedPrivilegeRefreshDateTime|DateTimeOffset|The date and time the delegated admin privileges status was updated. Optional. Read-only.|
 |offboardedByUserId|String|The identifier for the account that offboarded the managed tenant. Optional. Read-only.|
 |offboardedDateTime|DateTimeOffset|The date and time when the managed tenant was offboarded. Optional. Read-only.|

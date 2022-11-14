@@ -37,7 +37,7 @@ values := []graphmodels.Objectable {
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.TeamsById("team-id").Members().Add().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").Members().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

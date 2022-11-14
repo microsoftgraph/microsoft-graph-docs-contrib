@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var users = await graphClient.Users["AlexW@contoso.OnMicrosoft.com"]
+var users = await graphClient.Users["{user-id}"]
 	.Request()
 	.Select("MailboxSettings")
 	.GetAsync();

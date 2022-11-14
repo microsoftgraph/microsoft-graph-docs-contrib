@@ -43,6 +43,10 @@ Take note of the following items:
 - The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
 - The initial request doesn't include a state token. State tokens will be used in subsequent requests.
 
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-users-initial-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
@@ -53,6 +57,11 @@ If successful, this method returns `200 OK` response code and [user](/graph/api/
 
 In this example, a `@odata.nextLink` URL is returned indicating there are more pages of data to be retrieved in the session. The `$select` query parameter from the initial request is encoded into the `@odata.nextLink` URL.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -91,6 +100,10 @@ Content-type: application/json
 
 The second request specifies the `skipToken` returned from the previous response. Notice the `$select` parameter is encoded and included in the `skipToken`.
 
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-users-nextlink-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
@@ -99,6 +112,11 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 The response contains another `@odata.nextLink` with a new `skipToken` value, which indicates that more changes that were tracked for users are available. Use the `@odata.nextLink` URL in more requests until a `@odata.deltaLink` URL (in an `@odata.deltaLink` parameter) is returned in the final response, even if the value is an empty array.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -127,6 +145,10 @@ Content-type: application/json
 
 The third request uses the latest `skipToken` returned from the last sync request. 
 
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-users-nextlink-request2"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
@@ -135,6 +157,11 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwE
 
 When a `@odata.deltaLink` URL is returned, there's no more data about the existing state of the user objects. For future requests, the application uses the `@odata.deltaLink` URL to learn about other changes to users. Save the `deltaToken` and use it in the subsequent request URL to discover more changes to users.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -163,6 +190,10 @@ Content-type: application/json
 
 Using the `deltaToken` from the [last response](#final-nextlink-response), you'll get changes (additions, deletions, or updates) to users since the last request.
 
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-users-deltalink-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
@@ -171,6 +202,11 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 If no changes have occurred, a `@odata.deltaLink` is returned with no results - the **value** property is an empty array.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -187,6 +223,11 @@ If changes have occurred, a collection of changed user objects is included. The 
 > [!NOTE]
 > This request might have replication delays for users that were recently created, updated, or deleted. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

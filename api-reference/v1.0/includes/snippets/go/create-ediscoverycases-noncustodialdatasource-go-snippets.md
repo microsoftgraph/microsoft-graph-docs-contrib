@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").SearchesById("ediscoverySearch-id").NoncustodialSourcesById("ediscoveryNoncustodialDataSource-id").Post(requestBody)
+graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").SearchesById("ediscoverySearch-id").NoncustodialSourcesById("ediscoveryNoncustodialDataSource-id").Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Teamwork().WorkforceIntegrationsById("workforceIntegration-id").Delete()
+graphClient.Teamwork().WorkforceIntegrationsById("workforceIntegration-id").Delete(context.Background(), nil)
 
 
 ```

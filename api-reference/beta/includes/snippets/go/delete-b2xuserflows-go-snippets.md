@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").Delete()
+graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").Delete(context.Background(), nil)
 
 
 ```

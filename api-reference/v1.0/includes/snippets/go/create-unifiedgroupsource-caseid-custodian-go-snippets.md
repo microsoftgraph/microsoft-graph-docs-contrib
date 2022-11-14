@@ -15,7 +15,7 @@ requestBody.SetGroup(group)
 includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE 
 requestBody.SetIncludedSources(&includedSources) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").CustodiansById("ediscoveryCustodian-id").UnifiedGroupSources().Post(requestBody)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").CustodiansById("ediscoveryCustodian-id").UnifiedGroupSources().Post(context.Background(), requestBody, nil)
 
 
 ```

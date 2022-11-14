@@ -14,12 +14,12 @@ description := "outside sales representatives"
 requestBody.SetDescription(&description) 
 isHidden := false
 requestBody.SetIsHidden(&isHidden) 
-catalog := graphmodels.Newcatalog()
+catalog := graphmodels.NewAccessPackageCatalog()
 id := "66584aae-98bb-48cc-9458-7bee5d2a6577"
 catalog.SetId(&id) 
 requestBody.SetCatalog(catalog)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(context.Background(), requestBody, nil)
 
 
 ```

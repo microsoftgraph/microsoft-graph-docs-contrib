@@ -23,7 +23,7 @@ configuration := &graphconfig.ContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Contacts().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Contacts().Get(context.Background(), configuration)
 
 
 ```

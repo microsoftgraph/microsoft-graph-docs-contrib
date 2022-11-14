@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").Delete()
+graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").Delete(context.Background(), nil)
 
 
 ```

@@ -45,11 +45,11 @@ POST /identityGovernance/entitlementManagement/assignmentRequests
 
 In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **assignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
+For an administrator to request to create an assignment for a user, the value of the **requestType** property is `adminAdd`, and the **assignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
 
-For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
+For an administrator to request to remove an assignment, the value of the **requestType** property is `adminRemove`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
-For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `UserAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `userAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
 For a non-administrator user to request to extend their own assignments, the value of the **requestType** property is `UserExtend`. The **assignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
@@ -57,7 +57,7 @@ For a non-administrator user to request to extend their own assignments, the val
 
 If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.
 
-If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
+If this is an `adminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
 
 ## Examples
 
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 Content-type: application/json
 
 {
-  "requestType": "AdminAdd",
+  "requestType": "adminAdd",
   "assignment":{
      "targetId":"46184453-e63b-4f20-86c2-c557ed5d5df9",
      "assignmentPolicyId":"2264bf65-76ba-417b-a27d-54d291f0cbc8",
@@ -134,7 +134,7 @@ Content-type: application/json
 {
 
   "id": "7e382d02-4454-436b-b700-59c7dd77f466",
-  "requestType": "AdminAdd",
+  "requestType": "adminAdd",
   "requestState": "Submitted",
   "requestStatus": "Accepted"
 }
@@ -144,7 +144,7 @@ Content-type: application/json
 
 To remove assignments, create a new accessPackageAssignmentRequest object with the following settings:
 
-+ The value of the **requestType** property set to `AdminRemove`.
++ The value of the **requestType** property set to `adminRemove`.
 + In the assignment property, include an object with the identifier of the accessPackageAssignment object to delete.
 
 #### Request
@@ -163,7 +163,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 Content-type: application/json
 
 {
-    "requestType": "AdminRemove",
+    "requestType": "adminRemove",
     "assignment":{
      "id": "a6bb6942-3ae1-4259-9908-0133aaee9377"
     }
@@ -217,7 +217,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessPackageAssignmentRequests/$entity",
 
     "id": "78eaee8c-e6cf-48c9-8f99-aae44c35e379",
-    "requestType": "AdminRemove",
+    "requestType": "adminRemove",
     "requestState": "Submitted",
     "requestStatus": "Accepted"
 }

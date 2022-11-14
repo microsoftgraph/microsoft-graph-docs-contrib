@@ -3,7 +3,7 @@ title: "List extensionProperties (directory extensions)"
 description: "Retrieve a list of directory extension definitions."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
 

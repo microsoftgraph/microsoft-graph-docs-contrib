@@ -48,11 +48,7 @@ $requestBody->setCreatedBy($createdBy);
 $requestBody->setAccountEnabled(boolean);
 
 $assignedLicensesAssignedLicense1 = new AssignedLicense();
-$additionalData = [
-'@odata.type' => 'microsoft.graph.assignedLicense', 
-];
-$assignedLicensesAssignedLicense1->setAdditionalData($additionalData);
-
+$assignedLicensesAssignedLicense1->set@odatatype('microsoft.graph.assignedLicense');
 
 
 $assignedLicensesArray []= $assignedLicensesAssignedLicense1;
@@ -60,11 +56,7 @@ $requestBody->setAssignedLicenses($assignedLicensesArray);
 
 
 $assignedPlansAssignedPlan1 = new AssignedPlan();
-$additionalData = [
-'@odata.type' => 'microsoft.graph.assignedPlan', 
-];
-$assignedPlansAssignedPlan1->setAdditionalData($additionalData);
-
+$assignedPlansAssignedPlan1->set@odatatype('microsoft.graph.assignedPlan');
 
 
 $assignedPlansArray []= $assignedPlansAssignedPlan1;
@@ -97,11 +89,7 @@ $requestBody->setOfficeLocation('String');
 $requestBody->setPreferredLanguage('String');
 
 $provisionedPlansProvisionedPlan1 = new ProvisionedPlan();
-$additionalData = [
-'@odata.type' => 'microsoft.graph.provisionedPlan', 
-];
-$provisionedPlansProvisionedPlan1->setAdditionalData($additionalData);
-
+$provisionedPlansProvisionedPlan1->set@odatatype('microsoft.graph.provisionedPlan');
 
 
 $provisionedPlansArray []= $provisionedPlansProvisionedPlan1;

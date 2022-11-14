@@ -25,5 +25,3 @@ Possible types of Application
 
 
 
-
-

@@ -17,7 +17,7 @@ requestBody.SetIsEnabled(&isEnabled)
 isAppliedToOrganization := false
 requestBody.SetIsAppliedToOrganization(&isAppliedToOrganization) 
 
-graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").Patch(requestBody)
+result, err := graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
