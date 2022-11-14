@@ -10,7 +10,7 @@ ms.prod: "applications"
 
 Your app must be registered in Azure AD before the Microsoft Identity Platform can authorize it to access data stored in Azure AD or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
 
-In this article, you learn how to use the Microsoft Graph API to manage different aspects of the lifecycle of an application, including it's properties, permissions, and role assignments.
+In this article, you learn how to use the Microsoft Graph API to manage app and service principal objects including properties, permissions, and role assignments.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the default response that includes all the properties returned by default. The application is assigned an ID that's globally unique in the Azure AD ecosystem.
+The following code is an example of the default response that includes all the properties returned by default. The application is assigned an ID that's globally unique in the Azure AD ecosystem.
 
 <!-- {
   "blockType": "response",
@@ -119,18 +119,16 @@ Content-type: application/json
 }
 ```
 
-The **signInAudience** property is assigned a default value of `AzureADandPersonalMicrosoftAccount`. This allows any user to access your app, including users from other Azure AD tenants, users with personal Microsoft accounts, and consumer users who may sign in using their social media credentials. You may change the **signInAudience** to a different scope.
+The **signInAudience** property is assigned a default value of `AzureADandPersonalMicrosoftAccount`. This configuration allows any user who is signed in with any account type, including Azure AD accounts, personal Microsoft accounts, and social media credentials, can use your app. You may change the **signInAudience** to a different scope.
 
-If you created the application as a user with administrator privileges, you were automatically assigned ownership to the application. You can confirm this by retrieving the owners navigation property through `GET https://graph.microsoft.com/v1.0/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/owners`. You may also assign another user or app ownership of the application.
+If you created the application as a user with administrator privileges, you were automatically assigned ownership to the application. You can confirm ownership by retrieving the owners navigation property through `GET https://graph.microsoft.com/v1.0/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/owners`. You may also assign another user or app ownership of the application.
 
 ## Configure other basic properties for your app
 
-You will configure the following basic properties for the app.
+You'll configure the following basic properties for the app.
 
 + Add tags for categorization in the organization. Also, use the `HideApp` tag to hide the app from My Apps and the Microsoft 365 Launcher.
 + Add basic information including the logo, terms of service, and privacy statement.
-
-### Request
 
 <!-- {
   "blockType": "request",
@@ -163,19 +161,9 @@ Content-type: application/json
 }
 ```
 
-### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
 ## Assign permissions to an app
 
-While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that have not yet been consented to.
+While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
 
 <!-- {
   "blockType": "request",
@@ -233,7 +221,7 @@ Content-Type: application/json
 
 ### Create a delegated permission grant on behalf of one principal
 
-The following request grants a service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, two scopes that're exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`, on behalf of a principal identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5` in the tenant.
+The following request grants a service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, two scopes that are exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`, on behalf of a principal identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5` in the tenant.
 
 <!-- {
   "blockType": "request",
@@ -254,7 +242,7 @@ Content-Type: application/json
 
 ### Create a delegated permission grant on behalf of all principals
 
-The following request grants a service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, two scopes that're exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`, on behalf of all principals in the tenant.
+The following request grants a service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, two scopes that are exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`, on behalf of all principals in the tenant.
 
 <!-- {
   "blockType": "request",
@@ -272,7 +260,7 @@ Content-Type: application/json
 }
 ```
 
-## Limit app sign in to only assigned identities
+## Limit app sign-in to only assigned identities
 
 <!-- {
   "blockType": "request",
@@ -288,7 +276,7 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 ## Assign users and groups to an application
 
-You may wish that users and groups must first be assigned this application before being able to access it. To do this, create an app role assignment for the users or groups to the app. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
+You may wish that users and groups must first be assigned the application before being able to access it. To implement this access control list, create an app role assignment for the users or groups to the app. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
 
 <!-- {
   "blockType": "request",
