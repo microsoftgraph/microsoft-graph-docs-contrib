@@ -1,5 +1,49 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "7e11383c-72a9-465a-970d-471360f95418",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalLockConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalLockConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalLockConfiguration?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipalLockConfiguration"
+        },
+        {
+          "Id": "7e11383c-72a9-465a-970d-471360f95418",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipalLockConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalLockConfiguration** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "7e11383c-72a9-465a-970d-471360f95418",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-09T21:02:17.1897204Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },    
+    {
+      "ChangeList": [
+        {
+          "Id": "fd0b2af6-a129-4284-9114-7303d3091a3c",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultUsageLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "fd0b2af6-a129-4284-9114-7303d3091a3c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-31T05:29:04.5101503Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
@@ -93,6 +137,32 @@
       "CreatedDateTime": "2022-10-12T00:00:00.4434651Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessApplications"
+        },
+        {
+          "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipalFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalFilter** property to the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessclientapplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessClientApplications"
+        }
+      ],
+      "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-01T00:00:00.8129252Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "identity-and-sign-in"
     },
     {
       "ChangeList": [
@@ -969,6 +1039,24 @@
       "CreatedDateTime": "2022-03-01T00:00:00.0123959Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        { 
+          "Id": "daa9406f-39d6-48fc-aaa4-452a7494b05c",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignedPrincipals",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedPrincipals](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-assignedprincipals) method to the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource. Use this API to retrieve the principals (users, groups, and service principals) directly or transitively assigned to a specific role for different scopes.",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+        "Id": "daa9406f-39d6-48fc-aaa4-452a7494b05c",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-11-04T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Directory management"
     },
     {
       "ChangeList": [

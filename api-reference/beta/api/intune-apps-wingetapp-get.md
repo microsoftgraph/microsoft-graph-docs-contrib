@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1198
+Content-Length: 1242
 
 {
   "value": {
@@ -96,6 +96,7 @@ Content-Length: 1198
     "dependentAppCount": 1,
     "supersedingAppCount": 3,
     "supersededAppCount": 2,
+    "manifestHash": "Manifest Hash value",
     "packageIdentifier": "Package Identifier value",
     "installExperience": {
       "@odata.type": "microsoft.graph.winGetAppInstallExperience",

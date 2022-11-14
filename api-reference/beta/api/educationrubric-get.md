@@ -63,10 +63,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/education/me/rubrics/bf040af7-a5ff-4abe-a8c8-1bdc532344c2
 ```
 
-## Optional query parameters
-
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationrubric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
