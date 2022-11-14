@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "e33b35a2-c9d5-405d-8519-a61a32e40e09",
+          "ApiChange": "Member",
+          "ChangedApiName": "granularDelegatedAdminPrivileges",
+          "ChangeType": "Addition",
+          "Description": "Added the **granularDelegatedAdminPrivileges** member to the **delegatedPrivilegeStatus** enumeration.",
+          "Target": "delegatedPrivilegeStatus"
+        },
+        {
+          "Id": "e33b35a2-c9d5-405d-8519-a61a32e40e09",
+          "ApiChange": "Member",
+          "ChangedApiName": "delegatedAndGranularDelegetedAdminPrivileges",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAndGranularDelegetedAdminPrivileges** member to the **delegatedPrivilegeStatus** enumeration.",
+          "Target": "delegatedPrivilegeStatus"
+        }
+      ],
+      "Id": "e33b35a2-c9d5-405d-8519-a61a32e40e09",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-27T01:51:01.8371121Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Multi-tenant management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a673cdb1-b8a3-4de7-bae3-188e3b9f5b53",
           "ApiChange": "Property",
           "ChangedApiName": "deviceSpecification",
