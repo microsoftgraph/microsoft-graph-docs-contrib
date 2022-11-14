@@ -2578,6 +2578,30 @@
         "ChangList": [
           {
             "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "cloudPcRemoteActionName",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPcRemoteActionName** enumeration type.",
+            "Target": "cloudPcRemoteActionName"
+          },
+          {
+            "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "actionCapability",
+            "ChangeType": "Addition",
+            "Description": "Added the **actionCapability** enumeration type.",
+            "Target": "actionCapability"
+          },
+          {
+            "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcRemoteActionCapability",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcRemoteActionCapability](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRemoteActionCapability?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcRemoteActionCapability"
+          },
+          {
+            "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
             "ApiChange": "Method",
             "ChangedApiName": "getSupportedCloudPcRemoteActions",
             "ChangeType": "Addition",
