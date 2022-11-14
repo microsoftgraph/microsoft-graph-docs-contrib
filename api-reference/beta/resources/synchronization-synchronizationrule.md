@@ -53,7 +53,7 @@ The following is a JSON representation of the resource.
   },
   "editable": true,
   "groupFilter": {
-    "@odata.type": "microsoft.graph.containerFilter"
+    "@odata.type": "microsoft.graph.groupFilter"
   },
   "id": "String",
   "metadata": [{"@odata.type": "microsoft.graph.stringKeyStringValuePair"}],

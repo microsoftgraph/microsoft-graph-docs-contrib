@@ -18,7 +18,7 @@ Defines how certain containers, such as organizational units, should be consider
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|includedContainers|String collection|The names and identifiers of containers, such as organizational units, that are in scope for a synchronization rule.|
+|includedContainers|String collection|The identifiers of containers, such as organizational units, that are in scope for a synchronization rule. For Active Directory organizational units, use the distinguished names. An empty list means no container filtering is configured.|
 
 ## Relationships
 None.

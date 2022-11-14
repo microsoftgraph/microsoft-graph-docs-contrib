@@ -18,7 +18,7 @@ Defines how groups should be considered in scope for a synchronization rule. Thi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|includedGroups|String collection|Identifiers of groups that are in scope for a synchronization rule.|
+|includedGroups|String collection|Identifiers of groups that are in scope for a synchronization rule. For Active Directory groups, use the distinguished names. An empty list means no group filtering is configured.|
 
 ## Relationships
 None.
