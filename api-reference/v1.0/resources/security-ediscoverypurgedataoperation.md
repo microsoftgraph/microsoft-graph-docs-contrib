@@ -36,14 +36,14 @@ None.
 |:----|-----------|
 |recoverable|Purged data is recoverable.|
 |permanentlyDeleted|Purged data is permanently deleted.|
-
+|unknownFutureValue|Reserved for future options.|
 ### purgeAreas values
 
 |Name|Description|
 |:----|-----------|
-|mailboxes|Purged data is recoverable.|
-|teamsMessages|Purged data is permanently deleted.|
-
+|mailboxes|Purges data from Exchange mailboxes.|
+|teamsMessages|Purges Teams messages.|
+|unknownFutureValue|Reserved for future options.|
 ## Relationships
 None.
 
