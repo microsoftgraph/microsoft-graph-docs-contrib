@@ -17,13 +17,14 @@ Initialize the provider inside your component.
 
 ```ts
 // Import the providers and credential at the top of the page
-import {Providers} from '@microsoft/mgt-element';
+import {Providers, GraphEndpoint} from '@microsoft/mgt-element';
 import {TeamsFxProvider} from '@microsoft/mgt-teamsfx-provider';
 import {TeamsUserCredential} from "@microsoft/teamsfx";
 
-const scope = ["User.Read"];
+const scopes = ["User.Read"];
+const baseURL: GraphEndpoint = 'https://graph.microsoft.us'; // change the base URL
 const teamsfx = new TeamsFx();
-const provider = new TeamsFxProvider(teamsfx, scope);
+const provider = new TeamsFxProvider(teamsfx, scope, baseURL);
 Providers.globalProvider = provider;
 ```
 
