@@ -52,7 +52,7 @@ Each workflow contains general descriptive information such as it's identifier, 
 
 Workflow tasks are specific actions that run automatically when a workflow is triggered. Lifecycle Workflows defines the following preconfigured and read-only tasks that are allowed for the specified workflow categories. These task definitions show the settings for the task type, guiding you as you create tasks for your workflow.
 
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](../includes/lifecycle-workflows-tasks-table.md)]
+[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
 
 Use the [taskDefinition resource type](identitygovernance-taskdefinition.md) and its associated methods to discover all the predefined tasks that you can configure for your workflow and the settings for the properties The [task](identitygovernance-task.md) resource type and its associated GET methods allow you to view the tasks that are configured for your workflow.
 
@@ -136,3 +136,11 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 + [Tutorial: Automate employee offboarding tasks after their last day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-scheduled-leaver-graph)
 + [Tutorial: Execute employee offboarding tasks in real-time on their last day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-offboard-custom-workflow-graph)
 + [Tutorial: Automate employee onboarding tasks before their first day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-onboard-custom-workflow-graph)
+
+<!-- {
+  "type": "#page.annotation",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/identitygovernance-lifecycleworkflows-overview.md:\r\n    Exception processing links.\r\n    Link Definition was null. Link text: !INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md) (Parameter 'Definition')"
+  ]
+} -->
