@@ -741,7 +741,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "anonymousGuestConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [anonymousGuestConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-1.0) resource",
+          "Description": "Added the [anonymousGuestConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-1.0) resource",
           "Target": "anonymousGuestConversationMember"
         },
         {
@@ -749,7 +749,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftAccountUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [microsoftAccountUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-1.0) resource",
+          "Description": "Added the [microsoftAccountUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-1.0) resource",
           "Target": "microsoftAccountUserConversationMember"
         },
         {
@@ -757,7 +757,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "skypeForBusinessUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [skypeForBusinessUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-1.0) resource",
+          "Description": "Added the [skypeForBusinessUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-1.0) resource",
           "Target": "skypeForBusinessUserConversationMember"
         },
         {
@@ -765,7 +765,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "skypeUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [skypeUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeUserConversationMember?view=graph-rest-1.0) resource",
+          "Description": "Added the [skypeUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/skypeUserConversationMember?view=graph-rest-1.0) resource",
           "Target": "skypeUserConversationMember"
         }
       ],
