@@ -1,6 +1,6 @@
 ---
 title: "businessScenarioGroupTarget resource type"
-description: "**TODO: Add Description**"
+description: "Represents a [group](../resources/group.md) which will be used as the target when creating tasks in a [businessScenario](businessscenario.md)."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [group](../resources/group.md) which will be used as the target when a creating tasks in a [businessScenario](businessscenario.md).
+Represents a [group](../resources/group.md) which will be used as the target when creating tasks in a [businessScenario](businessscenario.md).
 
 Inherits from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).
 

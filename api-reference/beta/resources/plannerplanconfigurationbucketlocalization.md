@@ -1,6 +1,6 @@
 ---
 title: "plannerPlanConfigurationBucketLocalization resource type"
-description: "**TODO: Add Description**"
+description: "Represents the localized name of a bucket in a plannerPlanConfigurationLocalization."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,18 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the localized name of a bucket in a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) .  
+Represents the localized name of a bucket in a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md).  
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|externalBucketId|String|Application specified identifier of the bucket.|
+|externalBucketId|String|Application-specified identifier of the bucket.|
 |name|String|Name of the bucket.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,4 +41,3 @@ The following is a JSON representation of the resource.
   "name": "String"
 }
 ```
-

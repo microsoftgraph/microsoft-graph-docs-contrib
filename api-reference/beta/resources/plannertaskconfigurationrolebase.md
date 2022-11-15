@@ -1,6 +1,6 @@
 ---
 title: "plannerTaskConfigurationRoleBase resource type"
-description: "**TODO: Add Description**"
+description: "An abstract type that represents a role that a plannerTaskRoleBasedRule can be applied to."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,18 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a role that a [plannerTaskRoleBasedRule](../resources/plannertaskrolebasedrule.md) can be applied to.
-This is an abstract type.
+An abstract type that represents a role that a [plannerTaskRoleBasedRule](../resources/plannertaskrolebasedrule.md) can be applied to.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |roleKind|plannerUserRoleKind|Type of the role. The possible values are: `relationship`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -37,4 +39,3 @@ The following is a JSON representation of the resource.
   "roleKind": "String"
 }
 ```
-

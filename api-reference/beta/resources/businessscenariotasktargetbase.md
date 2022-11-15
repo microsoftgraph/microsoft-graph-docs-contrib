@@ -1,6 +1,6 @@
 ---
 title: "businessScenarioTaskTargetBase resource type"
-description: "Represents an abstract type that is the base object for all targets that can be specified for creating tasks for a scenario."
+description: "An abstract type that represents a base object for all targets that can be specified for creating tasks for a scenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract type that is the base object for all targets that can be specified for creating tasks for a scenario.
-Following types derive from this type: [businessScenarioGroupTarget](businessscenariogrouptarget.md).
+An abstract type that represents a base object for all targets that can be specified for creating tasks for a scenario.
 
+Base type of [businessScenarioGroupTarget](businessscenariogrouptarget.md).
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "plannerPlanConfigurationBucketDefinition resource type"
-description: "**TODO: Add Description**"
+description: "Represents a bucket in a plannerPlanConfiguration."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -16,14 +16,17 @@ Namespace: microsoft.graph
 Represents a bucket in a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|externalBucketId|String|Application specified identifier of the bucket.|
+|externalBucketId|String|Application-specified identifier of the bucket. Required.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -36,4 +39,3 @@ The following is a JSON representation of the resource.
   "externalBucketId": "String"
 }
 ```
-

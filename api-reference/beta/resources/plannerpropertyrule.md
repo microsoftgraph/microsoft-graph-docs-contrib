@@ -17,14 +17,17 @@ Namespace: microsoft.graph
 This is an abstract type.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |ruleKind|plannerRuleKind|**TODO: Add Description**.The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -37,4 +40,3 @@ The following is a JSON representation of the resource.
   "ruleKind": "String"
 }
 ```
-
