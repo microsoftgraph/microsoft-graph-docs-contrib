@@ -1052,63 +1052,7 @@
       "ChangeList": [
         {
           "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "plannerRuleKind",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerRuleKind](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "plannerRuleKind"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Resource",
-          "ChangedApiName": "plannerBucketPropertyRule",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerBucketPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerBucketPropertyRule?view=graph-rest-beta) resource",
-          "Target": "plannerBucketPropertyRule"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Resource",
-          "ChangedApiName": "plannerFieldRules",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerFieldRules](https://docs.microsoft.com/en-us/graph/api/resources/plannerFieldRules?view=graph-rest-beta) resource",
-          "Target": "plannerFieldRules"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Resource",
-          "ChangedApiName": "plannerPlanPropertyRule",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanPropertyRule?view=graph-rest-beta) resource",
-          "Target": "plannerPlanPropertyRule"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Resource",
-          "ChangedApiName": "plannerPropertyRule",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerPropertyRule?view=graph-rest-beta) resource",
-          "Target": "plannerPropertyRule"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Resource",
-          "ChangedApiName": "plannerRuleOverride",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerRuleOverride](https://docs.microsoft.com/en-us/graph/api/resources/plannerRuleOverride?view=graph-rest-beta) resource",
-          "Target": "plannerRuleOverride"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Resource",
-          "ChangedApiName": "plannerTaskPropertyRule",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource",
-          "Target": "plannerTaskPropertyRule"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "plannerTaskTargetKind",
           "ChangeType": "Addition",
           "Description": "Added the **plannerTaskTargetKind** enumeration type.",
@@ -1117,50 +1061,122 @@
         {
           "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
           "ApiChange": "Resource",
-          "ChangedApiName": "businessScenarioGroupTarget",
+          "ChangedApiName": "plannerFieldRules",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioGroupTarget](https://docs.microsoft.com/en-us/graph/api/resources/businessScenarioGroupTarget?view=graph-rest-beta) resource type.",
-          "Target": "businessScenarioGroupTarget"
+          "Description": "Added the [plannerFieldRules](https://docs.microsoft.com/en-us/graph/api/resources/plannerFieldRules?view=graph-rest-beta) resource type.",
+          "Target": "plannerFieldRules"
         },
         {
           "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
           "ApiChange": "Resource",
-          "ChangedApiName": "businessScenarioProperties",
+          "ChangedApiName": "plannerPlanConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioProperties](https://docs.microsoft.com/en-us/graph/api/resources/businessScenarioProperties?view=graph-rest-beta) resource",
-          "Target": "businessScenarioProperties"
+          "Description": "Added the [plannerPlanConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanConfiguration?view=graph-rest-beta) resource and supported methods.",
+          "Target": "plannerPlanConfiguration"
         },
         {
           "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
           "ApiChange": "Resource",
-          "ChangedApiName": "businessScenarioTaskTargetBase",
+          "ChangedApiName": "plannerPlanConfigurationBucketDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioTaskTargetBase](https://docs.microsoft.com/en-us/graph/api/resources/businessScenarioTaskTargetBase?view=graph-rest-beta) resource type.",
-          "Target": "businessScenarioTaskTargetBase"
+          "Description": "Added the [plannerPlanConfigurationBucketDefinition](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationBucketDefinition?view=graph-rest-beta) resource type.",
+          "Target": "plannerPlanConfigurationBucketDefinition"
         },
         {
           "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
           "ApiChange": "Resource",
-          "ChangedApiName": "businessScenarioPlanReference",
+          "ChangedApiName": "plannerPlanConfigurationBucketLocalization",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioPlanReference](https://docs.microsoft.com/en-us/graph/api/resources/businessScenarioPlanReference?view=graph-rest-beta) resource",
-          "Target": "businessScenarioPlanReference"
+          "Description": "Added the [plannerPlanConfigurationBucketLocalization](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationBucketLocalization?view=graph-rest-beta) resource type.",
+          "Target": "plannerPlanConfigurationBucketLocalization"
         },
         {
           "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
           "ApiChange": "Resource",
-          "ChangedApiName": "businessScenarioTask",
+          "ChangedApiName": "plannerPlanConfigurationLocalization",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioTask](https://docs.microsoft.com/en-us/graph/api/resources/businessScenarioTask?view=graph-rest-beta) resource",
-          "Target": "businessScenarioTask"
+          "Description": "Added the [plannerPlanConfigurationLocalization](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationLocalization?view=graph-rest-beta) resource and supported methods.",
+          "Target": "plannerPlanConfigurationLocalization"
         },
         {
           "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Method",
-          "ChangedApiName": "getPlan",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPropertyRule",
           "ChangeType": "Addition",
-          "Description": "Added the [getPlan](https://docs.microsoft.com/en-us/graph/api/businessScenarioPlanner?view=graph-rest-beta) method to the [businessScenarioPlanner](https://docs.microsoft.com/en-us/graph/api/businessScenarioPlanner?view=graph-rest-beta) resource.",
-          "Target": "businessScenarioPlanner"
+          "Description": "Added the [plannerPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerPropertyRule?view=graph-rest-beta) resource type.",
+          "Target": "plannerPropertyRule"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRelationshipBasedUserType",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRelationshipBasedUserType](https://docs.microsoft.com/en-us/graph/api/resources/plannerRelationshipBasedUserType?view=graph-rest-beta) resource type.",
+          "Target": "plannerRelationshipBasedUserType"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRuleOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRuleOverride](https://docs.microsoft.com/en-us/graph/api/resources/plannerRuleOverride?view=graph-rest-beta) resource type.",
+          "Target": "plannerRuleOverride"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskConfiguration?view=graph-rest-beta) resource and supported methods.",
+          "Target": "plannerTaskConfiguration"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskConfigurationRoleBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskConfigurationRoleBase](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskConfigurationRoleBase?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskConfigurationRoleBase"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskPolicy](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskPolicy?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskPolicy"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskPropertyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskPropertyRule"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskRoleBasedRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskRoleBasedRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskRoleBasedRule?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskRoleBasedRule"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerBucketPropertyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerBucketPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerBucketPropertyRule?view=graph-rest-beta) resource type.",
+          "Target": "plannerBucketPropertyRule"
+        },
+        {
+          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanPropertyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanPropertyRule?view=graph-rest-beta) resource type.",
+          "Target": "plannerPlanPropertyRule"
         }
       ],
       "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",

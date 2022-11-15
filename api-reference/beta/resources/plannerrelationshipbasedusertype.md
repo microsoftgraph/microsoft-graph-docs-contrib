@@ -1,6 +1,6 @@
 ---
 title: "plannerRelationshipBasedUserType resource type"
-description: "**TODO: Add Description**"
+description: "Represents a role based on the caller's relationship to the businessScenarioTask that a plannerTaskRoleBasedRule can be applied to."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -15,19 +15,21 @@ Namespace: microsoft.graph
 
 Represents a role based on the caller's relationship to the [businessScenarioTask](../resources/businessscenariotask.md) that a [plannerTaskRoleBasedRule](../resources/plannertaskrolebasedrule.md) can be applied to.
 
-
 Inherits from [plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|role|plannerRelationshipUserRoles|Identifies the relationship of the caller to the task.The possible values are: `defaultRules`, `groupOwners`, `groupMembers`, `taskAssignees`, `applications`, `unknownFutureValue`.|
-|roleKind|plannerUserRoleKind|The kind of the rule. The value must be `relationship`. Inherited from [plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md).The possible values are: `relationship`, `unknownFutureValue`.|
+|role|plannerRelationshipUserRoles|Identifies the relationship of the caller to the task. The possible values are: `defaultRules`, `groupOwners`, `groupMembers`, `taskAssignees`, `applications`, `unknownFutureValue`.|
+|roleKind|plannerUserRoleKind|The kind of the rule. The value must be `relationship`. The possible values are: `relationship`, `unknownFutureValue`. Inherited from [plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md).|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -37,8 +39,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerRelationshipBasedUserType",
-  "roleKind": "String",
-  "role": "String"
+  "role": "String",
+  "roleKind": "String"
 }
 ```
-
