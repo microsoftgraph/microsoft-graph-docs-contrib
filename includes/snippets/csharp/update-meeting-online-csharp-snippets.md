@@ -12,7 +12,7 @@ var @event = new Event
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };
 
-await graphClient.Me.Events["AAMkADAGu0AABIGYDaAAA="]
+await graphClient.Me.Events["{event-id}"]
 	.Request()
 	.UpdateAsync(@event);
 

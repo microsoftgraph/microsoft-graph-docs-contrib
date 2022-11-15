@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 805
+Content-Length: 879
 
 {
   "value": [
@@ -78,7 +78,10 @@ Content-Length: 805
       "targetedInActiveDirectory": true,
       "totalSettingsCount": 2,
       "supportedSettingsCount": 6,
-      "supportedSettingsPercent": 8
+      "supportedSettingsPercent": 8,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }

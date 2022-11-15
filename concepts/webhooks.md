@@ -17,7 +17,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [Learn: Use Change Notifications and Track Changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+> [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
@@ -350,7 +350,7 @@ The following table lists the latency to expect between an event happening in th
 - [Create subscription](/graph/api/subscription-post-subscriptions)
 - [changeNotification](/graph/api/resources/changenotification) resource type
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
-- [Change notifications and change tracking tutorial](/training/modules/msgraph-changenotifications-trackchanges)
+- [Change notifications and change tracking training module](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact

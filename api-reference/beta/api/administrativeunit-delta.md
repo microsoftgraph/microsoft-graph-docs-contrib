@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|administrativeunit | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
+|Application | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -37,12 +37,12 @@ GET /administrativeUnits/delta
 
 ## Query parameters
 
-Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter 
-(other than `$deltatoken` and `$skiptoken`), you must specify 
-it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
-into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. 
-You only need to specify any query parameters once up front. 
-In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. That URL already 
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter
+(other than `$deltatoken` and `$skiptoken`), you must specify
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters
+into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
+You only need to specify any query parameters once up front.
+In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. That URL already
 includes the encoded parameters.
 
 | Query parameter	   | Type	|Description|
@@ -54,8 +54,8 @@ includes the encoded parameters.
 
 This method supports the following OData query parameters to help customize the response:
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
-**id** property is always returned. 
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The
+**id** property is always returned.
 
 - There is limited support for `$filter`:
   * The only supported `$filter` expression is for tracking changes for specific resources, by their ID:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of IDs you can specify is limited by the maximum URL length.
@@ -71,7 +71,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and an [administrativeUnit](../resources/administrativeunit.md) collection object in the response body. The response also includes a `@odata.nextLink` URL or a `@odata.deltaLink` URL. 
+If successful, this method returns `200 OK` response code and an [administrativeUnit](../resources/administrativeunit.md) collection object in the response body. The response also includes a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
 - If a `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The **administrativeUnit** continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
 
@@ -121,12 +121,12 @@ GET https://graph.microsoft.com/beta/administrativeUnits/delta
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
-<!-- { 
+<!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.administrativeUnit",
-  "isCollection": true 
-} --> 
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

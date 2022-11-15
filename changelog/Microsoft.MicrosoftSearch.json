@@ -643,6 +643,32 @@
       "CreatedDateTime": "2022-10-04T04:12:04.628237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7ef93dd9-b55d-4abf-8c3b-6c15f6409050",
+          "ApiChange": "Resource",
+          "ChangedApiName": "collapseProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [collapseProperty](https://learn.microsoft.com/en-us/graph/api/resources/collapseProperty?view=graph-rest-beta) resource type.",
+          "Target": "collapseProperty"
+        },
+        {
+          "Id": "7ef93dd9-b55d-4abf-8c3b-6c15f6409050",
+          "ApiChange": "Property",
+          "ChangedApiName": "collapseProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **collapseProperties** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "7ef93dd9-b55d-4abf-8c3b-6c15f6409050",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-01T08:33:47.66211Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Analytics"
     }
   ]
 }
