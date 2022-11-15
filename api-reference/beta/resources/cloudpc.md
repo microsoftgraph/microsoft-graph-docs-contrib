@@ -67,7 +67,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, and `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are dedicated and shared. It will be dedicated by default if it's not specified when creating provisioningPolicy. The possible values are: `dedicated`, `shared`, `unknownFutureValue`.|
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is dedicated if it's not specified when creating provisioningPolicy. |
 
 ### cloudPcStatus values
 
