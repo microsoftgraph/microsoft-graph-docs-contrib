@@ -195,6 +195,14 @@
       "CreatedDateTime": "2022-09-01T00:00:00.1897686Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "Id": "",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
