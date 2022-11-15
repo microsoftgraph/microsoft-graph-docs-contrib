@@ -89,7 +89,14 @@ Content-Type: application/json
     },
     "deploymentSettings": {
       "contentApplicability": {
-        "offerWhileRecommendedBy": ["Microsoft"]
+        "offerWhileRecommendedBy": ["Microsoft"],
+        "safeguard": {
+          "disabledSafeguardProfiles": [
+            {
+                "category": "likelyIssues"
+            }
+          ]
+        }
       },
       "schedule": {
         "startDateTime": "2020-06-09T10:00:00Z",
