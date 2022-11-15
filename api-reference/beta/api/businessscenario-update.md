@@ -43,16 +43,10 @@ PATCH /solutions/businessScenarios/{businessScenarioId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|uniqueName|String|**TODO: Add Description** Optional.|
-|ownerAppIds|String collection|**TODO: Add Description** Optional.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
+|displayName|String|Display name of the scenario. Required.|
+|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario. Application creating the scenario will be automatically added to the list. Optional.|
 
 
 
@@ -76,13 +70,9 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.businessScenario",
   "displayName": "String",
-  "uniqueName": "String",
   "ownerAppIds": [
     "String"
   ],
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
 }
 ```
 
