@@ -3,8 +3,8 @@ title: "presence resource type"
 description: "Contains information about a user's presence, including their availability and user activity."
 author: "mkhribech"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
 doc_type: resourcePageType
+ms.prod: "cloud-communications"
 ---
 
 # presence resource type
@@ -38,7 +38,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | id                  | string                                        | The user object id                                                                                                                                                                                                                                                                             |
 | availability        | string collection                             | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`                                                                                                           |
 | activity            | string collection                             | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`. |
-| outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                         |
+| outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                     |
 | statusMessage | [microsoft.graph.presenceStatusMessage](presenceStatusMessage.md) | The the Teams Presence Status Message of a user. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
