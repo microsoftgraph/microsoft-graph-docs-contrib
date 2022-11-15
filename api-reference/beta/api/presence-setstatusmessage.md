@@ -1,6 +1,6 @@
 ---
 title: "presence: setStatusMessage"
-description: "Set the status message for a user"
+description: "Set the Teams Presence Status Message for a user"
 author: "afedorov"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the status message for a user. Optional expiration date and time can be supplied as well.
+Set the Teams Presence Status Message for a user. Optional expiration date and time can be supplied as well.
 
-Status message text can be xml-sanitized which leads to having a different status message applied, see [example](#example-2-set-status-message-xml-sanitization).
+Teams Presence Status Message text can be xml-sanitized which leads to having a different status message applied, see [example](#example-2-set-status-message-xml-sanitization).
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type            |  Description                                 |
 | --------------- | --------------- |------------------------------------------- |
-| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presenceStatusMessage.md) | Status message that can be set to display a text message in presence. |
+| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presenceStatusMessage.md) | Status message that can be set to display a Teams Presence Status Message of a user. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code.
 
 ### Example 1: Set status message with expiry date
 
-The following request sets the user status message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`, with the expiration on 2022-10-18 at 17:05:33.2079781 Pacific Standard Time.
+The following request sets the Teams Presence Status Message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`, with the expiration on 2022-10-18 at 17:05:33.2079781 Pacific Standard Time.
 
 #### Request
 
@@ -95,7 +95,7 @@ HTTP/1.1 200 OK
 
 ### Example 2: Set status message: xml sanitization
 
-The first request sets the user status message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then user's self presence with status message is obtained using a [getPresence](presence-get.md) request.
+The first request sets the Teams Presence Status Message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then user's self presence with Teams Presence Status Message is obtained using a [getPresence](presence-get.md) request.
 
 #### Set status message: request
 
@@ -178,7 +178,7 @@ Content-Type: application/json
 
 ### Example 3: Get status message of another user.
 
-The following request sets the user status message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`is obtained on behalf of other user via a [getPresence](presence-get.md) request.
+The following request sets the Teams Presence Status Message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`is obtained on behalf of other user via a [getPresence](presence-get.md) request.
 
 #### Set status message: request
 

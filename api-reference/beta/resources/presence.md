@@ -29,7 +29,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear a presence session of an application for a user.                                       |
 | [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
 | [Clear user preferred presence](../api/presence-clearuserpreferredpresence.md)       |                                                 | Clear the preferred availability and activity status for a user.                  |
-| [Set user status message](../api/presence-setstatusmessage.md) | | Set status message text for a user. |
+| [Set user status message](../api/presence-setstatusmessage.md) | | Set the Teams Presence Status Message for a user. |
 
 ## Properties
 
@@ -39,7 +39,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | availability        | string collection                             | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`                                                                                                           |
 | activity            | string collection                             | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`. |
 | outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                         |
-| statusMessage | [microsoft.graph.presenceStatusMessage](presenceStatusMessage.md) | The status message of a user. |
+| statusMessage | [microsoft.graph.presenceStatusMessage](presenceStatusMessage.md) | The the Teams Presence Status Message of a user. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 

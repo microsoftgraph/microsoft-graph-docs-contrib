@@ -1,6 +1,6 @@
 ---
 title: "presenceStatusMessage resource type"
-description: "Represents status message for a user's presence"
+description: "Represents Teams Presence Status Message for a user's presence"
 author: "afedorov"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the status message related to the [presence](presence.md) of a user.
+Represents the Teams Presence Status Message related to the [presence](presence.md) of a user.
 
 ## Properties
 
 | Property       | Type           | Description                                 | 
 | -------------- | -------------- | ------------------------------------------- | 
 | message | [microsoft.graph.itemBody](itemBody.md) | Status message item.<br/><br/> The only supported format at the moment is `message.contentType = 'text'`. |
-| publishedDateTime | Edm.DateTimeOffset | Moment in time of when status message was published. Read-only.<br/><br/>`publishedDateTime` is not available when requesting presence of another user. |
-| expiryDateTime | [microsoft.graph.dateTimeTimeZone](dateTimeTimeZone.md) | Moment in time of when status message expires.<br/>If not provided the status message will not expire.<br/><br/>Please mind that `expiryDateTime.dateTime` should not include time zone.<br/><br/>`expiryDateTime.timeZone` may occur to be different from previously set value when using [Get presence](../api/presence-get.md) or [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md) requests.<br/><br/>`expiryDateTime` is not available when requesting presence of another user. |
+| publishedDateTime | Edm.DateTimeOffset | Moment in time of when status message was published.<br/>Read-only.<br/><br/>`publishedDateTime` is not available when requesting presence of another user. |
+| expiryDateTime | [microsoft.graph.dateTimeTimeZone](dateTimeTimeZone.md) | Moment in time of when status message expires.<br/>If not provided the status message will not expire.<br/><br/>`expiryDateTime.dateTime` should not include time zone.<br/><br/>`expiryDateTime.timeZone` may occur to be different from previously set value when using [Get presence](../api/presence-get.md) or [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md) requests because of xml sanitization.<br/>See [setStatusMessage example](../api/presence-setstatusmessage.md#example-2-set-status-message-xml-sanitization).<br/><br/>`expiryDateTime` is not available when requesting presence of another user. |
 
 ## JSON representation
 
