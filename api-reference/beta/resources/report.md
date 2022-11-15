@@ -21,7 +21,7 @@ Microsoft Graph controls access to resources via permissions. You must specify t
 
 ## Settings
 
-In Microsoft 365 reports, user information such as usernames, groups, and sites is concealed; actual values are not displayed. You can use the [adminReportSettings ](../resources/adminreportsettings.md) API to control the display of user information in the reports.
+In Microsoft 365 reports, user information such as usernames, groups, and sites is concealed; actual values are not displayed. You can use the [adminReportSettings](../resources/adminreportsettings) API to control the display of user information in the reports.
 
 ## Cloud deployments
 
