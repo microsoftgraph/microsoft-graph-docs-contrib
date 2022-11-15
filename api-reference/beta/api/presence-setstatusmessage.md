@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type            |  Description                                 |
 | --------------- | --------------- |------------------------------------------- |
-| `statusMessage` | [microsoft.graph.presenceStatusMessage](presenceStatusMessage.md) | Status message that can be set to display a text message in presence. |
+| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presenceStatusMessage.md) | Status message that can be set to display a text message in presence. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
@@ -334,7 +334,7 @@ GET https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/
 ---
 
 #### Get another user presence: response
-Since this presence request does not qualify as a [self presence](presence-get.md#Get-your-own-presence-information) request, `statusMessage.expiryDateTime` and `statusMessage.publishedDateTime` properties are not included in the response body.
+Since this presence request does not qualify as a [self presence](presence-get.md#Example-1-Get-your-own-presence-information) request, `statusMessage.expiryDateTime` and `statusMessage.publishedDateTime` properties are not included in the response body.
 
 ```http
 HTTP/1.1 200 OK
