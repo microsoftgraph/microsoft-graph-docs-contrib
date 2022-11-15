@@ -362,3 +362,4 @@ Welcome To Microsoft Graph!
 
 + [application API](/graph/api/resources/application)
 + [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)
++ [Grant permissions programmatically without interactive consent](/graph/permissions-grant-via-msgraph)
