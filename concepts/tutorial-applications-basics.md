@@ -8,9 +8,9 @@ ms.prod: "applications"
 
 # Create and manage an Azure AD application
 
-Your app must be registered in Azure AD before the Microsoft Identity Platform can authorize it to access data stored in Azure AD or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
+Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure AD or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
 
-In this article, you learn how to use the Microsoft Graph API to manage app and service principal objects including properties, permissions, and role assignments.
+In this article, you'll learn how to use the Microsoft Graph API to manage app and service principal objects including properties, permissions, and role assignments.
 
 ## Prerequisites
 
@@ -119,9 +119,9 @@ Content-type: application/json
 }
 ```
 
-The **signInAudience** property is assigned a default value of `AzureADandPersonalMicrosoftAccount`. This configuration allows any user who is signed in with any account type, including Azure AD accounts, personal Microsoft accounts, and social media credentials, can use your app. You may change the **signInAudience** to a different scope.
+The **signInAudience** property is assigned a default value of `AzureADandPersonalMicrosoftAccount`. This configuration allows any user who is signed in with any account type, including Azure AD accounts, personal Microsoft accounts, and social media credentials, can use your app. You can change the **signInAudience** to a different scope.
 
-If you created the application as a user with administrator privileges, you were automatically assigned ownership to the application. You can confirm ownership by retrieving the owners navigation property through `GET https://graph.microsoft.com/v1.0/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/owners`. You may also assign another user or app ownership of the application.
+If you created the application as a user with administrator privileges, you were automatically assigned ownership to the application. You can confirm ownership by retrieving the owners navigation property through `GET https://graph.microsoft.com/v1.0/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/owners`. You can also assign another user or app ownership of the application.
 
 ## Configure other basic properties for your app
 
@@ -276,7 +276,7 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 ## Assign users and groups to an application
 
-You may wish that users and groups must first be assigned the application before being able to access it. To implement this access control list, create an app role assignment for the users or groups to the app. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
+You might want users and groups to first be assigned the application before they're able to access it. To implement this access control list, create an app role assignment for the users or groups to the app. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
 
 <!-- {
   "blockType": "request",
