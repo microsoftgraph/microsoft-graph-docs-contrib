@@ -60,7 +60,7 @@ The following request sets the user status message as "Hey I'm currently in a me
 ##### [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "setStatusMessage"
+  "name": "setstatusmessage"
 }-->
 
 ```msgraph-interactive
@@ -82,27 +82,27 @@ Content-Type: application/json
 ```
 
 ###### [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/setStatusMessage-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/setstatusmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/setStatusMessage-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/setstatusmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/setStatusMessage-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/setstatusmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/setStatusMessage-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/setstatusmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/setStatusMessage-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/setstatusmessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/setStatusMessage-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/setstatusmessage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -126,7 +126,7 @@ The first request sets the user status message as "Hey I'm currently in a meetin
 ##### [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "setStatusMessage-xml-sanitization"
+  "name": "setstatusmessage-xml-sanitization"
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
@@ -143,27 +143,27 @@ Content-Type: application/json
 ```
 
 ###### [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/setStatusMessage-xml-sanitization-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/setstatusmessage-xml-sanitization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/setStatusMessage-xml-sanitization-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/setstatusmessage-xml-sanitization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/setStatusMessage-xml-sanitization-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/setstatusmessage-xml-sanitization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/setStatusMessage-xml-sanitization-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/setstatusmessage-xml-sanitization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/setStatusMessage-xml-sanitization-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/setstatusmessage-xml-sanitization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/setStatusMessage-xml-sanitization-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/setstatusmessage-xml-sanitization-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -247,7 +247,7 @@ The following request sets the user status message as "Hey I'm currently in a me
 ##### [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "setStatusMessage-xml-sanitization"
+  "name": "setstatusmessage-another-user"
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
@@ -264,27 +264,27 @@ Content-Type: application/json
 ```
 
 ###### [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/setStatusMessage-xml-sanitization-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/setstatusmessage-another-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/setStatusMessage-xml-sanitization-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/setstatusmessage-another-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/setStatusMessage-xml-sanitization-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/setstatusmessage-another-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/setStatusMessage-xml-sanitization-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/setstatusmessage-another-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/setStatusMessage-xml-sanitization-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/setstatusmessage-another-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ###### [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/setStatusMessage-xml-sanitization-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/setstatusmessage-another-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
