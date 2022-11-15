@@ -1,5 +1,31 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "7e11383c-72a9-465a-970d-471360f95418",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalLockConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalLockConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalLockConfiguration?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipalLockConfiguration"
+        },
+        {
+          "Id": "7e11383c-72a9-465a-970d-471360f95418",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipalLockConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalLockConfiguration** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "7e11383c-72a9-465a-970d-471360f95418",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-09T21:02:17.1897204Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },    
     {
       "ChangeList": [
         {
@@ -11900,6 +11926,24 @@
       "CreatedDateTime": "2022-07-05T07:06:20.8129252Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f3fd9d42-fb5c-46d8-abad-a51ca6c31aab",
+          "ApiChange": "Property",
+          "ChangedApiName": "appId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing a [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta) using the **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "f3fd9d42-fb5c-46d8-abad-a51ca6c31aab",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-14T00:00:00.077762Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
     },
     {
       "ChangeList": [

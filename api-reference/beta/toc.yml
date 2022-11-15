@@ -186,6 +186,8 @@ items:
       href: /graph/sdks/customize-client?context=graph/api/beta
     - name: Choose an authentication provider
       href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+    - name: Connect to national clouds
+      href: /graph/sdks/national-clouds?context=graph/api/beta
     - name: Create requests
       href: /graph/sdks/create-requests?context=graph/api/beta
     - name: Page through a collection
@@ -12209,7 +12211,7 @@ items:
             - name: List usage
               href: api/authenticationstrengthpolicy-usage.md
           - name: Authentication combination configurations
-            items: 
+            items:
             - name: Authentication combination configuration
               href: resources/authenticationcombinationconfiguration.md
             - name: FIDO2 combination configuration
