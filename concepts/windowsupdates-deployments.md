@@ -28,9 +28,9 @@ To learn more about creating a deployment, see [Deploy a feature update](windows
 
 ### Schedule
 
-[Schedule settings](/graph/api/resources/windowsupdates-schedulesettings) govern how the content is deployed over time to devices in the deployment audience. You can configure rollout settings for deployments of feature updates.
+[Schedule settings](/graph/api/resources/windowsupdates-schedulesettings) govern how the content is deployed over time to devices in the deployment audience. You can configure schedule settings for deployments of feature updates.
 
-To learn more about rollout settings, see [Schedule a deployment](windowsupdates-schedule-deployment.md).
+To learn more about schedule settings, see [Schedule a deployment](windowsupdates-schedule-deployment.md).
 
 ### Monitoring
 
@@ -73,7 +73,7 @@ Deployments move through lifecycle states as described in the following table.
 
 The [deployment](/graph/api/resources/windowsupdates-deployment) resource has a **state** property of type [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) which provides information about the current lifecycle state.
 
-The service determines the effective **value** of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting **requestedValue** as one of these inputs. Other inputs to the effective deployment state value include rollout settings and monitoring settings.
+The service determines the effective **value** of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting **requestedValue** as one of these inputs. Other inputs to the effective deployment state value include schedule settings and monitoring settings.
 
 ## Assign a device to multiple deployments
 
