@@ -40,6 +40,21 @@ In addition to the required permissions, the user operations that the calling us
 
 The set of default permissions depends on whether the user is a native member of the tenant (member user) or whether the user is brought over from another directory as a business-to-business (B2B) collaboration guest (guest user). Azure AD defines a set of default permissions for member users and guest users. For more information about what member users and guest users can do, see [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context)
 
+### Sensitive actions for users
+
+The following table lists the sensitive actions on user objects. All users can read the sensitive properties. However, only some administrators can perform the following sensitive actions for some users.
+
+| Sensitive action | Sensitive property name |
+| --- | --- |
+| Disable or enable users | accountEnabled |
+| Update business phone | businessPhones |
+| Update mobile phone | mobilePhone |
+| Update on-premises immutable ID | onPremisesImmutableId |
+| Update other emails | otherMails |
+| Update password profile | passwordProfile |
+| Update user principal name | userPrincipalName |
+| Delete or restore users | Not applicable |
+
 ### Who can reset passwords?
 
 In the following table, the columns list the roles that can reset passwords. The rows list the roles for which their password can be reset.
