@@ -17,6 +17,9 @@ Azure Communication Services users can join Teams meetings and Teams chats as an
 
 Inherits from [conversationMember](../resources/conversationmember.md).
 
+## Methods
+None.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

@@ -741,7 +741,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureCommunicationServicesUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [azureCommunicationServicesUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-beta) resource",
+          "Description": "Added the [azureCommunicationServicesUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-beta) resource",
           "Target": "azureCommunicationServicesUserConversationMember"
         }
       ],
