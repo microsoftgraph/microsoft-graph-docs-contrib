@@ -138,7 +138,7 @@ Content-Type: application/json
       }
     ],
     "requestedValue": "paused",
-    "value": "paused"
+    "effectiveValue": "paused"
   },
   "content": {
     "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
@@ -242,7 +242,7 @@ Content-Type: application/json
       }
     ],
     "requestedValue": "none",
-    "value": "offering"
+    "effectiveValue": "offering"
   },
   "content": {
     "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
