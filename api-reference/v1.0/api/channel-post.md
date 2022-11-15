@@ -16,7 +16,8 @@ Create a new [channel](../resources/channel.md) in a team, as specified in the r
 > **Note:** You can add a maximum of 200 members when you create a private channel.
 
 > [!IMPORTANT]
-> When you create a channel, ensure that you don't:
+>
+> Using the special characters in your channel name can cause a 400 bad request error from the [Get filesFolder](channel-get-filesfolder.md) API. When you create a channel, ensure that you don't:
 >
 > - Include these characters in your channel name: ~ # % & * { } + / \ : < > ? | ‘ ”.
 > - Start with an underscore (_) or period (.), or end it with a period (.).
