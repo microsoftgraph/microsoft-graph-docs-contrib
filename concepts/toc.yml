@@ -88,6 +88,8 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
+          - name: Configure properties
+            href: tutorial-applications-basics.md
           - name: Grant and revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
