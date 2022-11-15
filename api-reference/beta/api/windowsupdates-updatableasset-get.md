@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [updatableAss
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{updatableAssetId}
+GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5
 ```
 
 # [C#](#tab/csharp)

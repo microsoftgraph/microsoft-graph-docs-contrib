@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges
+GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713/complianceChanges
 ```
 
 ### Response
@@ -82,7 +82,7 @@ Content-Type: application/json
       "createdDateTime": "2020-06-09T10:00:00Z",
       "isRevoked": true,
       "revokedDateTime": "2020-06-09T11:00:00Z",
-      "updatePolicy": { "@odata.id": "updatePolicies/1" }
+      "updatePolicy": { "@odata.id": "updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713" }
     }
   ]
 }

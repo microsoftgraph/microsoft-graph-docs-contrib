@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/members
+GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5/audience/members
 ```
 
 # [C#](#tab/csharp)

@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713/complianceChanges
 Content-Type: application/json
 Content-length: 570
 
@@ -118,7 +118,7 @@ Content-Type: application/json
   "createdDateTime": "2020-06-09T10:00:00Z",
   "isRevoked": false,
   "revokedDateTime": null,
-  "updatePolicy": { "@odata.id": "updatePolicies/1" },
+  "updatePolicy": { "@odata.id": "updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713" },
   "content": {
     "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
     "catalogEntry": { "@odata.id": "catalog/entries/1" }
