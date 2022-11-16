@@ -19,7 +19,7 @@ Represents a bucket in a [plannerPlanConfiguration](../resources/plannerplanconf
 
 |Property|Type|Description|
 |:---|:---|:---|
-|externalBucketId|String|Application-specified identifier of the bucket. Required.|
+|externalBucketId|String|Application-specified identifier of the bucket. |
 
 ## Relationships
 

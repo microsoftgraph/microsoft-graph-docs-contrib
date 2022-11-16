@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Update plannerPlanConfiguration
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,11 +16,12 @@ Namespace: microsoft.graph
 Update the properties of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScnearioConfig.ReadWrite.All|
+|Delegated (work or school account)|BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|BusinessScenarioConfig.ReadWrite.OwnedBy|
 
@@ -34,14 +36,15 @@ PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguratio
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
@@ -53,8 +56,6 @@ PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguratio
 |lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Optional.|
 |lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
 
-
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object in the response body.
@@ -62,6 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [plan
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -86,9 +88,9 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response
+
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -118,4 +120,3 @@ Content-Type: application/json
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

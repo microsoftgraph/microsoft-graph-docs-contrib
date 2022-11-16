@@ -34,14 +34,17 @@ GET /solutions/businessScenarios/{businessScenarioId}/planner/tasks
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). Tasks can be queried with a their context id or location as filters.
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). You can query tasks with their context ID or location as filters.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -51,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -63,7 +67,8 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenar
 
 
 ### Response
-The following is an example of the response
+
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -122,4 +127,3 @@ Content-Type: application/json
   ]
 }
 ```
-

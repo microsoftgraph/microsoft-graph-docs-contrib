@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create businessScenarioTask
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Create a new [businessScenarioTask](../resources/businessscenariotask.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,32 +36,34 @@ POST /solutions/businessScenarios/{businessScenarioId}/planner/tasks
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [businessScenarioTask](../resources/businessscenariotask.md) object.
 
-You can specify the following properties when creating a **businessScenarioTask**.
+You can specify the following properties when you create a **businessScenarioTask**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.|
-|assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
-|assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of users the task is assigned to.|
-|bucketId|String|Bucket id to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. [Format validation](../resources/tasks-identifiers-disclaimer.md) is done on the service. |
-|conversationThreadId|String|Thread id of the conversation on the task. This is the id of the conversation thread object created in the group.|
-|dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
-|percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
-|planId|String|Plan id to which the task belongs.|
-|priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
-|startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|title|String|Title of the task.|
-|businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|Required. Application managed properties. |
-|target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|Required. Target of the task.|
+|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|The categories to which the task has been applied. For possible values, see [plannerAppliedCategories](plannerappliedcategories.md). Inherited from [plannerTask](../resources/plannertask.md).|
+|assigneePriority|String|Hint used to order items of this type in a list view. For details about supported format, see [Using order hints in Planner](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
+|assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of assignees the task is assigned to. Inherited from [plannerTask](../resources/plannertask.md).|
+|bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. The [format validation](../resources/tasks-identifiers-disclaimer.md) is done on the service. Inherited from [plannerTask](../resources/plannertask.md).|
+|businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|Scenario specific properties of the task. **externalObjectId** and **externalBucketId** properties must be specified when creating a task. Required.|
+|conversationThreadId|String|Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the **group**. Inherited from [plannerTask](../resources/plannertask.md).|
+|dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [plannerTask](../resources/plannertask.md).|
+|orderHint|String|Hint used to order items of this type in a list view. For details about supported format, see [Using order hints in Planner](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
+|percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. Inherited from [plannerTask](../resources/plannertask.md).|
+|planId|String|Identifier of the plan to which the task belongs. Inherited from [plannerTask](../resources/plannertask.md).|
+|priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2`, `3`, and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low". Inherited from [plannerTask](../resources/plannertask.md).|
+|startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [plannerTask](../resources/plannertask.md).|
+|target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|Target of the task that specifies where the task should be placed. Required.|
+|title|String|Title of the task. Inherited from [plannerTask](../resources/plannertask.md).|
 
 ## Response
 
@@ -68,6 +72,7 @@ If successful, this method returns a `201 Created` response code and a [business
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -120,9 +125,9 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response
+
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -177,4 +182,3 @@ Content-Type: application/json
   }
 }
 ```
-
