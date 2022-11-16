@@ -33,7 +33,7 @@ You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
-DELETE /devices/(deviceId='{deviceId}')
+DELETE /devices(deviceId='{deviceId}')
 ```
 
 

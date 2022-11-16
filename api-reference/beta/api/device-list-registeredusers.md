@@ -34,7 +34,7 @@ You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredUsers
-GET /devices/(deviceId='{deviceId}')/registeredUsers
+GET /devices(deviceId='{deviceId}')/registeredUsers
 ```
 
 > Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.

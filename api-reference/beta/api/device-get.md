@@ -33,7 +33,7 @@ You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
-GET /devices/(deviceId='{deviceId}')
+GET /devices(deviceId='{deviceId}')
 ```
 
 ## Optional query parameters

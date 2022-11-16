@@ -35,7 +35,7 @@ You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/{id}
-PATCH /devices/(deviceId='{deviceId}')
+PATCH /devices(deviceId='{deviceId}')
 ```
 
 ## Request headers

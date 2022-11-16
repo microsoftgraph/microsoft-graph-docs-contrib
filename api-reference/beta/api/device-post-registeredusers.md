@@ -31,7 +31,7 @@ You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/{id}/registeredUsers/$ref
-POST /devices/(deviceId='{deviceId}')/registeredUsers/$ref
+POST /devices(deviceId='{deviceId}')/registeredUsers/$ref
 ```
 ## Request headers
 | Name       | Description|

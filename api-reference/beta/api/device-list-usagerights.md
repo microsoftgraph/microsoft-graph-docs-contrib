@@ -32,7 +32,7 @@ You can address the device using either its **id** or **deviceId**.
 -->
 ``` http
 GET /devices/{objectId}/usageRights
-GET /devices/(deviceId='{deviceId}')/usageRights
+GET /devices(deviceId='{deviceId}')/usageRights
 ```
 
 ## Optional query parameters
