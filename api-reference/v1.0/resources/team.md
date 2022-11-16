@@ -53,6 +53,7 @@ For more information about working with groups and members in teams, see [Use th
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
+| id | String | The unique identifier of the team. The group has the same ID as the team. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
