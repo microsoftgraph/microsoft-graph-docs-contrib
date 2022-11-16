@@ -10,19 +10,15 @@ ms.prod: "applications"
 
 Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure AD or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
 
-In this article, you'll learn how to use the Microsoft Graph API to manage app and service principal objects including properties, permissions, and role assignments.
-
-## Prerequisites
-
-To complete this tutorial, you need the following resources and privileges:
-
-+ A working Azure AD tenant.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Global Administrator role or a user allowed to create applications in the tenant.
-+ Consent to the `Application.ReadWrite.All` delegated permission.
+Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you'll learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments. You can use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to test the requests in this article.
 
 ## Register an application with Azure AD
 
 ### Request
+
+Least privilege delegated permission and Azure AD role:
++ Permission: `Application.ReadWrite.All`
++ Roles: Application Administrator
 
 <!-- {
   "blockType": "request",
@@ -125,6 +121,10 @@ If you created the application as a user with administrator privileges, you were
 
 ## Configure other basic properties for your app
 
+Least privilege delegated permission and Azure AD role:
++ Permission: `Application.ReadWrite.All`
++ Roles: Application Administrator
+
 You'll configure the following basic properties for the app.
 
 + Add tags for categorization in the organization. Also, use the `HideApp` tag to hide the app from My Apps and the Microsoft 365 Launcher.
@@ -165,6 +165,10 @@ Content-type: application/json
 
 While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
 
+Least privilege delegated permission and Azure AD role:
++ Permission: `Application.ReadWrite.All`
++ Roles: Application Administrator
+
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-assign-permissions"
@@ -204,6 +208,10 @@ When you grant an application permission to an app, you create an **app role ass
 
 The following request grants the client service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, an app role of ID `df021288-bdef-4463-88db-98f22de89214`, that's exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`.
 
+Least privilege delegated permission and Azure AD role:
++ Permission: `Application.Read.All` and `AppRoleAssignment.ReadWrite.All`
++ Roles: Application Administrator
+
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-grant-approles"
@@ -222,6 +230,10 @@ Content-Type: application/json
 ### Create a delegated permission grant on behalf of one principal
 
 The following request grants a service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, two scopes that are exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`, on behalf of a principal identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5` in the tenant.
+
+Least privilege delegated permission and Azure AD role:
++ Permission: `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All`
++ Roles: Application Administrator
 
 <!-- {
   "blockType": "request",
@@ -244,6 +256,10 @@ Content-Type: application/json
 
 The following request grants a service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, two scopes that are exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`, on behalf of all principals in the tenant.
 
+Least privilege delegated permission and Azure AD role:
++ Permission: `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All`
++ Roles: Application Administrator
+
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-grant-scopes-allprincipals"
@@ -262,6 +278,10 @@ Content-Type: application/json
 
 ## Limit app sign-in to only assigned identities
 
+Least privilege delegated permission and Azure AD role:
++ Permission: `Application.ReadWrite.All`
++ Roles: Application Administrator
+
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-grant-approleassignmentrequired"
@@ -276,7 +296,11 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 ## Assign users and groups to an application
 
-You might want users and groups to first be assigned the application before they're able to access it. To implement this access control list, create an app role assignment for the users or groups to the app. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
+You might want users and groups to first be assigned the application before they're able to access it. To implement this access control list, create an app role assignment for the users or groups to the app. Only users and security groups, including dynamic security groups, are supported. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
+
+Least privilege delegated permission and Azure AD role:
++ Permission: `Application.Read.All` and `AppRoleAssignment.ReadWrite.All`
++ Roles: Application Administrator
 
 <!-- {
   "blockType": "request",
