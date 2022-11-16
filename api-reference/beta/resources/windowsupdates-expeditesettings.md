@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents settings for expediting the deployment of content.
 
-Catalog content is marked with `isExpeditable = true` if it can be expedited. If an attempt is made to create a deployment with `isExpedited = true` but content has `isExpeditable = false` the operation may return `400 Bad Request`. See [Deploy an expedited security update using the Windows Update for Business deployment service](../../../concepts/windowsupdates-deploy-expedited-update.md).
+Catalog content is marked with `isExpeditable = true` if it can be expedited. If an attempt is made to create a deployment with `isExpedited = true` but content has `isExpeditable = false` the operation may return `400 Bad Request`. See [Deploy an expedited security update using the Windows Update for Business deployment service](https://developer.microsoft.com/graph/docs/concepts/windowsupdates-deploy-expedited-update.md).
 
 ## Properties
 |Property|Type|Description|
