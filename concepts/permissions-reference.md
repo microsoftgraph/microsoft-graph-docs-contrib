@@ -354,6 +354,40 @@ None.
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
 
+## Business Scenarios permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|BusinessScenarioConfig.Read.All|Read business scenario configurations|Allows the app to read the configurations of your organization's business scenarios, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.Read.OwnedBy|Read business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.All|Read and write business scenario configurations|Allows the app to read and write the configurations of your organization's business scenarios, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioData.Read.OwnedBy|Read all data for business scenarios this app creates or owns|Allows the app to read all data associated with the business scenarios it owns. Data access will be attributed to the signed-in user.|Yes|No|
+|BusinessScenarioData.ReadWrite.OwnedBy|Read and write all data for business scenarios this app creates or owns|Allows the app to fully manage all data associated with the business scenarios it owns. Data access and changes will be attributed to the signed-in user.|Yes|No|
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|BusinessScenarioConfig.Read.OwnedBy|Read all business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write all business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioData.Read.OwnedBy|Read data for all business scenarios this app creates or owns|Allows the app to read the data associated with the business scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioData.ReadWrite.OwnedBy|Read and write data for all business scenarios this app creates or owns|Allows the app to fully manage the data associated with the business scenarios it owns, without a signed-in user.|Yes|
+
+### Example usage
+
+#### Delegated
+
+* _BusinessScenarioConfig.Read.OwnedBy_ : Create a business scenario (`POST /solutions/businessScenarios`)
+* _BusinessScenarioConfig.Read.All_ : Get a list of all business scenarios in the organization (`GET /solutions/businessScenarios`)
+
+#### Application
+
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_ : Update Planner plan configuration for a busines scenario (`PATCH /solutions/businessScenarios(uniqueName='com.contoso.orderManagement')/planner/planConfiguration`)
+* _BusinessScenarioData.ReadWrite.OwnedBy_ : Delete a Planner task in a business scenario (`DELETE /solutions/businessScenarios(uniqueName='com.contoso.sampleScenario')/planner/tasks(externalObjectId='Order#19922')`)
+
 ## Calendars permissions
 
 #### Delegated permissions
