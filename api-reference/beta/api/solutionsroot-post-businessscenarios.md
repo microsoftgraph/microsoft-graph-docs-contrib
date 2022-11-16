@@ -15,11 +15,12 @@ Namespace: microsoft.graph
 Create a new [businessScenario](../resources/businessscenario.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScnearioConfig.ReadWrite.All|
+|Delegated (work or school account)|BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| BusinessScenarioConfig.ReadWrite.OwnedBy |
 
@@ -34,21 +35,23 @@ POST /solutions/businessScenarios
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [businessScenario](../resources/businessscenario.md) object.
 
-You can specify the following properties when creating a **businessScenario**.
+You can specify the following properties when you create a **businessScenario**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the scenario. Required.|
-|uniqueName|String|Unique name of the scemario. Each scenario must have a unique name. To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario. For example, a scenario authored by "Contoso.com" would have a unique name starting with "com.contoso" Required.|
-|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario. Application creating the scenario will be automatically added to the list. Optional.|
+|uniqueName|String|Unique name of the scenario. To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario. For example, a scenario authored by *Contoso.com* would have a unique name that starts with `com.contoso`. Required.|
+|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario. The application that creates the scenario will be automatically added to the list. Optional.|
 
 ## Response
 
@@ -83,7 +86,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

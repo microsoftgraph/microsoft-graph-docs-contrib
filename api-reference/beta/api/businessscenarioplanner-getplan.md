@@ -1,6 +1,6 @@
 ---
 title: "businessScenarioPlanner: getPlan"
-description: "**TODO: Add Description**"
+description: "Get information about the plannerPlan mapped to a given target."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -8,13 +8,15 @@ doc_type: apiPageType
 ---
 
 # businessScenarioPlanner: getPlan
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns information about the [plannerPlan](../resources/plannerplan.md) mapped to the given target.
+Get information about the [plannerPlan](../resources/plannerplan.md) mapped to a given target.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -42,21 +44,20 @@ POST /solutions/businessScenarios/{businessScenarioId}/planner/getPlan
 ## Request body
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |target|[businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md)|Target for which to get the plan information.|
 
-
-
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [businessScenarioPlanReference](../resources/businessscenarioplanreference.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [businessScenarioPlanReference](../resources/businessscenarioplanreference.md) object in the response body.
 
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -74,9 +75,9 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response
+
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -96,4 +97,3 @@ Content-Type: application/json
   }
 }
 ```
-
