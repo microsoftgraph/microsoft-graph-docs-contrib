@@ -8,6 +8,8 @@ ms.prod: ""
 
 # Working with the Business Scenario API (Preview)
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Business Scenario API allows creation and management of Business Scenarios that configure and manage integration of data into Microsoft Graph.
 
 ## Structure of a Business Scenario

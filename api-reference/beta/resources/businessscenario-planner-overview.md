@@ -8,6 +8,8 @@ ms.prod: ""
 
 # Working with Planner in Business Scenarios (Preview)
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Planner APIs in [Business Scenarios](businessscenario-overview.md) allow creating tasks with scenario controlled policies, in a specified target. 
 
 ## Planner configuration
