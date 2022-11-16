@@ -277,6 +277,15 @@ author: "FaithOmbongi"
 | userPrincipalName                                          | ![Default][RDS]     | ![Default][RDS]     |                  | ![NotSupported][NS] |                  |
 | userType                                                   | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
 
+The following table shows support for `$filter` by extension properties on the user object.
+
+| Extension type                     | eq               | startsWith       | eq null          |
+|------------------------------------|------------------|------------------|------------------|
+| onPremisesExtensionAttributes 1-15 | ![Advanced][AQP] |                  | ![Advanced][AQP] |
+| Schema extensions                  | ![Advanced][AQP] | ![Advanced][AQP] | ![Advanced][AQP] |
+| Open extensions                    |                  |                  |                  |
+| Directory extensions               | ![Default][RDS]  |                  | ![Advanced][AQP] |
+
 
 [RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
 [AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
