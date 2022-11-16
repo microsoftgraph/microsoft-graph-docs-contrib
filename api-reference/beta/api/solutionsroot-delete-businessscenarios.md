@@ -8,18 +8,20 @@ doc_type: apiPageType
 ---
 
 # Delete businessScenario
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [businessScenario](../resources/businessscenario.md) object. Deleting a scenario will cause all data associated with the scenario to be deleted.
+Delete a [businessScenario](../resources/businessscenario.md) object. The deletion of a scenario causes all data associated with the scenario to be deleted.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScnearioConfig.ReadWrite.All|
+|Delegated (work or school account)|BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| BusinessScenarioConfig.ReadWrite.OwnedBy|
 
@@ -34,11 +36,13 @@ DELETE /solutions/businessScenarios/{businessScenarioId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -48,6 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -58,10 +63,9 @@ The following is an example of a request.
 DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenarioId}
 ```
 
-
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -70,4 +74,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

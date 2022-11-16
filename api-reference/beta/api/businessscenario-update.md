@@ -46,13 +46,10 @@ PATCH /solutions/businessScenarios/{businessScenarioId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the scenario. Required.|
-|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario. Application creating the scenario will be automatically added to the list. Optional.|
-
-
+|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario. The application that creates the scenario will be automatically added to the list. Optional.|
 
 ## Response
 
@@ -80,7 +77,6 @@ Content-Type: application/json
   ],
 }
 ```
-
 
 ### Response
 

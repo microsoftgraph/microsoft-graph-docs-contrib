@@ -32,14 +32,14 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of the user who created the scenario. Read-only.|
-|createdDateTime|DateTimeOffset|The date and time when the scenario was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|displayName|String|Display name of the scenario. Required.|
-|id|String|The unique identifier for the scenario. Inherited from [entity](../resources/entity.md). Read-only.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the user who last modified the scenario. Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the scenario was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario. Required.|
-|uniqueName|String|Unique name of the scenario. To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario. For example, a scenario authored by *Contoso.com* would have a unique name starting with `com.contoso`. Required.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the user who created the scenario.|
+|createdDateTime|DateTimeOffset|The date and time when the scenario was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|displayName|String|Display name of the scenario.|
+|id|String|The unique identifier for the scenario. Inherited from [entity](../resources/entity.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the user who last modified the scenario.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the scenario was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|ownerAppIds|String collection|Identifiers of applications that are authorized to work with this scenario.|
+|uniqueName|String|Unique name of the scenario. To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario. For example, a scenario authored by *Contoso.com* would have a unique name that starts with `com.contoso`.|
 
 ## Relationships
 
