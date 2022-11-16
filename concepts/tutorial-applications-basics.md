@@ -18,7 +18,7 @@ Many settings for apps are recorded as objects that can be accessed, updated, or
 
 Least privilege delegated permission and Azure AD role:
 + Permission: `Application.ReadWrite.All`
-+ Roles: Application Administrator
++ Role _Application Administrator_
 
 <!-- {
   "blockType": "request",
@@ -123,7 +123,7 @@ If you created the application as a user with administrator privileges, you were
 
 Least privilege delegated permission and Azure AD role:
 + Permission: `Application.ReadWrite.All`
-+ Roles: Application Administrator
++ Role _Application Administrator_
 
 You'll configure the following basic properties for the app.
 
@@ -167,7 +167,7 @@ While you can assign permissions to an app through the Azure portal, you also as
 
 Least privilege delegated permission and Azure AD role:
 + Permission: `Application.ReadWrite.All`
-+ Roles: Application Administrator
++ Role _Application Administrator_
 
 <!-- {
   "blockType": "request",
@@ -210,7 +210,7 @@ The following request grants the client service principal identified by ID `b0d9
 
 Least privilege delegated permission and Azure AD role:
 + Permission: `Application.Read.All` and `AppRoleAssignment.ReadWrite.All`
-+ Roles: Application Administrator
++ Role _Application Administrator_
 
 <!-- {
   "blockType": "request",
@@ -233,7 +233,7 @@ The following request grants a service principal identified by ID `b0d9b9e3-0ecf
 
 Least privilege delegated permission and Azure AD role:
 + Permission: `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All`
-+ Roles: Application Administrator
++ Role _Application Administrator_
 
 <!-- {
   "blockType": "request",
@@ -258,7 +258,7 @@ The following request grants a service principal identified by ID `b0d9b9e3-0ecf
 
 Least privilege delegated permission and Azure AD role:
 + Permission: `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All`
-+ Roles: Application Administrator
++ Role _Application Administrator_
 
 <!-- {
   "blockType": "request",
@@ -280,7 +280,7 @@ Content-Type: application/json
 
 Least privilege delegated permission and Azure AD role:
 + Permission: `Application.ReadWrite.All`
-+ Roles: Application Administrator
++ Role _Application Administrator_
 
 <!-- {
   "blockType": "request",
@@ -300,7 +300,7 @@ You might want users and groups to first be assigned the application before they
 
 Least privilege delegated permission and Azure AD role:
 + Permission: `Application.Read.All` and `AppRoleAssignment.ReadWrite.All`
-+ Roles: Application Administrator
++ Role _Application Administrator_
 
 <!-- {
   "blockType": "request",
