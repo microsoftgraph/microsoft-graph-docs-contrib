@@ -66,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenarioId}
+PATCH https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d
 Content-Type: application/json
 
 {

@@ -70,16 +70,18 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations
+POST https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration/localizations
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
-  "languageTag": "String",
-  "planTitle": "String",
+  "languageTag": "en-us",
+  "planTitle": "Plan title",
   "buckets": [
     {
-      "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+      "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+      "externalBucketId": "123",
+      "name": "Bucket name"
     }
   ]
 }
@@ -101,12 +103,14 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
-  "id": "fe3919b6-7927-0c66-cc73-a7ba6b0adf7d",
-  "languageTag": "String",
-  "planTitle": "String",
+  "id": "en-us",
+  "languageTag": "en-us",
+  "planTitle": "Plan title",
   "buckets": [
     {
       "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+      "externalBucketId": "123",
+      "name": "Bucket name"
     }
   ]
 }

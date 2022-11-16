@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration/localizations/en-us
 ```
 
 ### Response
@@ -82,16 +82,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
-    "id": "fe3919b6-7927-0c66-cc73-a7ba6b0adf7d",
-    "languageTag": "String",
-    "planTitle": "String",
-    "buckets": [
-      {
-        "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-      }
-    ]
-  }
+  "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
+  "id": "en-us",
+  "languageTag": "en-us",
+  "planTitle": "Plan title",
+  "buckets": [
+    {
+      "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+      "externalBucketId": "123",
+      "name": "Bucket name"
+    }
+  ]
 }
 ```
