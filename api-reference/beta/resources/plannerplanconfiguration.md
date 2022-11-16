@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration of [plannerPlans](../resources/plannerplan.md) created for a [businessScenario](../resources/businessscenario.md).
+Represents the configuration of [plannerPlan](../resources/plannerplan.md) resources created for a [businessScenario](../resources/businessscenario.md).
 
 Inherits from [entity](../resources/entity.md).
 
