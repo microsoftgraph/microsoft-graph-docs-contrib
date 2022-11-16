@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Set the Teams Presence Status Message for a user. Optional expiration date and time can be supplied as well.
 
-Teams Presence Status Message text can be xml-sanitized which leads to having a different status message applied, see [example](#example-2-set-status-message-xml-sanitization).
-
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -93,90 +91,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 ```
 
-### Example 2: Set status message: xml sanitization
-
-The first request sets the Teams Presence Status Message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then user's self presence with Teams Presence Status Message is obtained using a [getPresence](presence-get.md) request.
-
-#### Set status message: request
-
-<!-- {
-  "blockType": "request",
-  "name": "setstatusmessage-xml-sanitization"
-}-->
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
-Content-Type: application/json
-
-{
-  "statusMessage": {
-    "message": {
-      "content": "<html>Hello world a<b</html>",
-      "contentType": "text"
-    }
-  }
-}
-```
-
----
-
-#### Set status message: response
-
-<!-- {
-  "blockType": "response",
-  "name": "setstatusmessage-xml-sanitization",
-  "truncated": true
-} -->
-```http
-HTTP/1.1 200 OK
-```
-
-#### Get self presence: request
-
-<!-- {
-  "blockType": "request",
-  "name": "setstatusmessage-xml-sanitization-get-me-presence"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/presence
-```
-
----
-
-#### Get self presence: response
-
-<!-- {
-  "blockType": "response",
-  "name": "setstatusmessage-xml-sanitization-get-me-presence",
-  "@odata.type": "microsoft.graph.presence",
-  "truncated":"true"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-  "availability": "Available",
-  "activity": "Available",
-  "outOfOfficeSettings": {
-    "message": null,
-    "isOutOfOffice": false
-  },
-  "statusMessage": {
-    "message": {
-      "content": "Hello world a",
-      "contentType": "text"
-    },
-    "publishedDateTime": "2022-10-18T00:07:15.4012511Z",
-    "expiryDateTime": {
-      "dateTime": "9999-12-31T23:59:59.9999999",
-      "timeZone": "UTC",
-    }
-  }
-}
-```
-
-### Example 3: Get status message of another user.
+### Example 2: Get status message of another user.
 
 The following request sets the Teams Presence Status Message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`is obtained on behalf of other user via a [getPresence](presence-get.md) request.
 
