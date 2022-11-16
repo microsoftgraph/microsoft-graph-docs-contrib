@@ -266,11 +266,9 @@ Content-type: application/json
 }
 ```
 
-## Known Limitation
+## Known limitation
 
-- Deep paging (paging through the entire result set) not supported beyond start row x (e.g. "from":1000).
-
-- Collapsing is not supported 
-
-- Query rules and result sources are not supported 
+- Deep paging (paging through the entire result set) is not supported beyond start row x (e.g. "from":1000).
+- Collapsing is not supported.
+- Query rules and result sources are not supported.
 
