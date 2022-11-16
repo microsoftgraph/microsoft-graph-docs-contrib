@@ -74,7 +74,7 @@ Content-Type: application/json
   "displayName": "String",
   "ownerAppIds": [
     "String"
-  ],
+  ]
 }
 ```
 

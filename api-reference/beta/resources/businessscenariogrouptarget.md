@@ -21,7 +21,7 @@ Inherits from [businessScenarioTaskTargetBase](../resources/businessscenariotask
 
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|The unique identifier for the group. Required.|
+|groupId|String|The unique identifier for the group. |
 |taskTargetKind|plannerTaskTargetKind|Represents the kind of the target. The possible values are: `group`, `unknownFutureValue`. The value of this property will be `group`. Inherited from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).|
 
 ## Relationships
