@@ -35,7 +35,7 @@ You can address the directory role using either its **id** or **roleTemplateId**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/{role-id}/members
-GET /directoryRoles/(roleTemplateId='{roleTemplateId}')/members
+GET /directoryRoles(roleTemplateId='{roleTemplateId}')/members
 ```
 
 ## Optional query parameters
@@ -132,7 +132,7 @@ The following is an example of the request.
   "name": "get_directoryrole_members_templateId"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='4a5d8f65-41da-4de4-8968-e035b65339cf')/members
+GET https://graph.microsoft.com/beta/directoryRoles(roleTemplateId='4a5d8f65-41da-4de4-8968-e035b65339cf')/members
 ```
 
 

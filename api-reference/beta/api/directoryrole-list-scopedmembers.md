@@ -29,7 +29,7 @@ You can address the directory role using either its **id** or **roleTemplateId**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryroles/{role-id}/scopedMembers
-GET /directoryRoles/(roleTemplateId='{roleTemplateId}')/scopedMembers
+GET /directoryRoles(roleTemplateId='{roleTemplateId}')/scopedMembers
 ```
 
 ## Optional query parameters
@@ -127,7 +127,7 @@ The following is an example of a request for a directory role with **roleTemplat
   "name": "get_scopedmembers_directoryrole_templateId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='fdd7a751-b60b-444a-984c-02652fe8fa1c')/scopedMembers
+GET https://graph.microsoft.com/beta/directoryRoles(roleTemplateId='fdd7a751-b60b-444a-984c-02652fe8fa1c')/scopedMembers
 ```
 
 
