@@ -2573,6 +2573,114 @@
             "CreatedDateTime": "2022-08-24T02:53:28.597151Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "Property",
+                "ChangedApiName": "virtualNetworkLocation",
+                "ChangeType": "Addition",
+                "Description": "Added the `virtualNetworkLocation` property to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+              },
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "Property",
+                "ChangedApiName": "enableSingleSignOn",
+                "ChangeType": "Addition",
+                "Description": "Added the `enableSingleSignOn` property to the [cloudPcOrganizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
+                "Target": "cloudPcOrganizationSettings"
+              },
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "Property",
+                "ChangedApiName": "enableSingleSignOn",
+                "ChangeType": "Addition",
+                "Description": "Added the `enableSingleSignOn` property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Target": "cloudPcProvisioningPolicy"
+              },
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "microsoft.graph.reprovisionCloudPc]",
+                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
+                "ChangeType": "Change",
+                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
+                "Target": "reprovisionCloudPc"
+              },
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "microsoft.graph.resizeCloudPc]",
+                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
+                "ChangeType": "Change",
+                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
+                "Target": "resizeCloudPc"
+              },
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "microsoft.graph.restoreCloudPc]",
+                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
+                "ChangeType": "Change",
+                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
+                "Target": "restoreCloudPc"
+              },
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "microsoft.graph.setCloudPcReviewStatus]",
+                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
+                "ChangeType": "Change",
+                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
+                "Target": "setCloudPcReviewStatus"
+              },
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "microsoft.graph.getCloudPcRemoteActionResults]",
+                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
+                "ChangeType": "Change",
+                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
+                "Target": "getCloudPcRemoteActionResults"
+              },
+              {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "microsoft.graph.getCloudPcReviewStatus]",
+                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
+                "ChangeType": "Change",
+                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
+                "Target": "getCloudPcReviewStatus"
+              }
+            ],
+            "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-11-16T04:14:41.3424906Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "edcf2c13-d390-4e75-95ed-3ed7733d22cd",
+                "ApiChange": "cloudPCs]",
+                "ChangedApiName": "cloudPCs",
+                "ChangeType": "Change",
+                "Description": "Removed the **cloudPCs** resource type",
+                "Target": "user"
+              },
+              {
+                "Id": "edcf2c13-d390-4e75-95ed-3ed7733d22cd",
+                "ApiChange": "EntitySet",
+                "ChangedApiName": "organizationAllowedDataLocations",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **organizationAllowedDataLocations** resource type",
+                "Target": "DirectoryDataService"
+              }
+            ],
+            "Id": "edcf2c13-d390-4e75-95ed-3ed7733d22cd",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-11-16T04:14:41.3434956Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Directory management"
         }
     ]
 }
