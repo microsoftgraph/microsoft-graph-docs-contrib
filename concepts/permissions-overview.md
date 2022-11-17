@@ -151,11 +151,29 @@ Microsoft Graph exposes granular permissions that allow an app to request only t
 Consider the following examples:
 
 1. An app needs to only read the profile information of the signed-in user. The app requires only the *User.Read* permission, which is the least privileged permission to access the signed-in user's information. Granting the app the *User.ReadWrite* permission makes it over-privileged because the app doesn't need to update the user's profile.
-2. An app needs to read the groups in the tenant without a signed-in user. To grant the app privileges through Microsoft Graph permissions, you can grant it the *Group.Read.All* permission. To grant the app privileges through Azure AD administrative roles, you don't need to grant it the [Groups Administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#groups-administrator) Azure AD role. Instead, you can create and grant it a custom role with only the `microsoft.directory/groups/allProperties/read` permission.
+2. An app needs to read the groups in the tenant without a signed-in user. 
+    1. The least privilege Microsoft Graph permission that the app needs is the *Group.Read.All* application permission.
+    1. To grant the app privileges through Azure AD administrative roles, you don't need to grant it the [Groups Administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#groups-administrator) Azure AD role. Instead, you can create and grant it a custom role with only the `microsoft.directory/groups/allProperties/read` permission.
 
 Granting an application more privileges than it needs is a poor security practice that exposes an app to unauthorized and unintended access to data or operations. Also, requiring more permissions than necessary may cause users to refrain from consenting to an app, affecting an app's adoption and usage.
 
-Apply the principle of least privilege when assigning and granting Microsoft Graph permissions to an app. For more information, see [Enhance security with the principle of least privilege](#see-also).
+Apply the principle of least privilege when assigning and granting Microsoft Graph permissions to an app. For more information, see [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
+
+<!--
+## Configure vs Grant permissions
+
+Add a note that configuring (assigning) permissions doesn't mean granting the permissions.
+
+You can configure 
+1. Through the API permissions menu of the app registration page on the Azure portal.
+1. Update the **requiredResourceAccess** property of the [app object](/graph/resources/api/application#properties).
+
+An administrator or a user with the privileges to grant permissions can grant Microsoft Graph permissions for your app through one of two ways:
+
++ By selecting the **Grant admin consent** button of an enterprise app or an app registration on the Azure portal. For more information, see [Grant tenant-wide admin consent to an application](/azure/active-directory/manage-apps/grant-admin-consent?pivots=portal#prerequisite)
++ Programmatically through Microsoft Graph. For more information, see [Grant API permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?tabs=http&pivots=grant-application-permissions)
+
+-->
 
 ## Limits on requested permissions per app
 
@@ -178,4 +196,3 @@ To find the IDs for all Microsoft Graph permissions, see [All permissions and ID
 + [Microsoft Graph permissions reference](permissions-reference.md).
 + [Overview of role-based access control in Azure Active Directory](/azure/active-directory/roles/custom-overview).
 + [Understanding delegated access](/azure/active-directory/develop/delegated-access-primer)
-+ [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
