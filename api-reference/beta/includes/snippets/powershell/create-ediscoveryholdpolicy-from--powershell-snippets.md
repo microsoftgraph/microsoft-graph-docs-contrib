@@ -9,7 +9,6 @@ Import-Module Microsoft.Graph.Security
 $params = @{
 	Displayname = "My legalHold with sources"
 	Description = "Created from Graph API"
-	ContentQuery = "Bazooka"
 	"UserSources@odata.bind" = @(
 		@{
 			"@odata.type" = "microsoft.graph.security.userSource"

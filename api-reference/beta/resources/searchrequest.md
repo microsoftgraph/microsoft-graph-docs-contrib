@@ -2,7 +2,7 @@
 title: "searchRequest resource type"
 description: "The search request to be sent to the query endpoint. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query."
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
@@ -40,6 +40,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |sharePointOneDriveOptions|[sharePointOneDriveOptions](sharePointOneDriveOptions.md)|Indicates the kind of contents to be searched when a search is performed using application permissions. Optional.|
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
+|collapseProperties|[collapseProperty](collapseproperty.md) collection|Contains the ordered collection of fields and limit to collapse results. Optional.|
 |trimDuplicates|Boolean|Indicates whether to trim away the duplicate SharePoint files from search results. Default value is `false`. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
 
@@ -72,6 +73,7 @@ The following is a JSON representation of the resource.
   "sharePointOneDriveOptions": {"@odata.type": "microsoft.graph.sharePointOneDriveOptions"},
   "size": 1024,
   "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
+  "collapseProperties": [{"@odata.type": "microsoft.graph.collapseProperty"}],
   "trimDuplicates": false
 }
 ```
@@ -84,6 +86,7 @@ The following is a JSON representation of the resource.
 - [Search content in SharePoint and OneDrive](/graph/search-concept-files) (files, lists, and sites)
 - [Search custom types imported using connectors](/graph/search-concept-custom-types)
 - [Sort search results](/graph/search-concept-sort)
+- [Collapse search results](/graph/search-concept-collapse)
 - [Trim duplicate search results](/graph/search-concept-trim-duplicate) 
 - [Use aggregations](/graph/search-concept-aggregation) to refine search results
 - [Use display layout](/graph/search-concept-display-layout)

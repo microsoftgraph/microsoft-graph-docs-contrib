@@ -186,6 +186,8 @@ items:
       href: /graph/sdks/customize-client?context=graph/api/beta
     - name: Choose an authentication provider
       href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+    - name: Connect to national clouds
+      href: /graph/sdks/national-clouds?context=graph/api/beta
     - name: Create requests
       href: /graph/sdks/create-requests?context=graph/api/beta
     - name: Page through a collection
@@ -1884,6 +1886,55 @@ items:
     - name: Device and app management
       expanded: true
       items:
+      - name: Browser management
+        displayName: Edge, Internet Explorer, IE mode, site list
+        items:
+        - name: Overview
+          href: resources/browser-edge-api-overview.md
+        - name: Browser site list
+          items:
+          - name: Browser site list
+            href: resources/browsersitelist.md
+          - name: List
+            href: api/internetexplorermode-list-sitelists.md
+          - name: Create
+            href: api/internetexplorermode-post-sitelists.md
+          - name: Get
+            href: api/browsersitelist-get.md
+          - name: Update
+            href: api/browsersitelist-update.md
+          - name: Delete
+            href: api/internetexplorermode-delete-sitelists.md
+          - name: Publish
+            href: api/browsersitelist-publish.md
+        - name: Browser site
+          items:
+          - name: Browser site
+            href: resources/browsersite.md
+          - name: List
+            href: api/browsersitelist-list-sites.md
+          - name: Create
+            href: api/browsersitelist-post-sites.md
+          - name: Get
+            href: api/browsersite-get.md
+          - name: Update
+            href: api/browsersite-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sites.md
+        - name: Shared cookie
+          items:
+          - name: Shared cookie
+            href: resources/browsersharedcookie.md
+          - name: List
+            href: api/browsersitelist-list-sharedcookies.md
+          - name: Create
+            href: api/browsersitelist-post-sharedcookies.md
+          - name: Get
+            href: api/browsersharedcookie-get.md
+          - name: Update
+            href: api/browsersharedcookie-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sharedcookies.md
       - name: Cloud printing
         items:
         - name: Print
@@ -2507,6 +2558,8 @@ items:
               href: api/intune-apps-macoslobapp-delete.md
             - name: Update
               href: api/intune-apps-macoslobapp-update.md
+          - name: macOS LOB app assignment settings
+            href: resources/intune-apps-macoslobappassignmentsettings.md
           - name: macOS LOB child app
             href: resources/intune-apps-macoslobchildapp.md
           - name: macOS mdatp app
@@ -2522,6 +2575,19 @@ items:
               href: api/intune-apps-macosmdatpapp-delete.md
             - name: Update
               href: api/intune-apps-macosmdatpapp-update.md
+          - name: macOS microsoft defender app
+            href: resources/intune-apps-macosmicrosoftdefenderapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macosmicrosoftdefenderapp-list.md
+            - name: Get
+              href: api/intune-apps-macosmicrosoftdefenderapp-get.md
+            - name: Create
+              href: api/intune-apps-macosmicrosoftdefenderapp-create.md
+            - name: Delete
+              href: api/intune-apps-macosmicrosoftdefenderapp-delete.md
+            - name: Update
+              href: api/intune-apps-macosmicrosoftdefenderapp-update.md
           - name: macOS microsoft edge app
             href: resources/intune-apps-macosmicrosoftedgeapp.md
             items:
@@ -8156,6 +8222,8 @@ items:
               href: api/intune-devices-manageddevice-movedevicestoou.md
             - name: removeDeviceFirmwareConfigurationInterfaceManagement action
               href: api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md
+            - name: initiateMobileDeviceManagementKeyRecovery action
+              href: api/intune-devices-manageddevice-initiatemobiledevicemanagementkeyrecovery.md
             - name: downloadAppDiagnostics action
               href: api/intune-devices-manageddevice-downloadappdiagnostics.md
           - name: Managed device architecture
@@ -8682,6 +8750,8 @@ items:
               href: api/intune-devices-userexperienceanalyticsdevicescope-update.md
             - name: triggerDeviceScopeAction action
               href: api/intune-devices-userexperienceanalyticsdevicescope-triggerdevicescopeaction.md
+          - name: User experience analytics device scope summary
+            href: resources/intune-devices-userexperienceanalyticsdevicescopesummary.md
           - name: User experience analytics device scores
             href: resources/intune-devices-userexperienceanalyticsdevicescores.md
             items:
@@ -8829,15 +8899,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsoverview-get.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsoverview-update.md
-          - name: User experience analytics regression summary
-            href: resources/intune-devices-userexperienceanalyticsregressionsummary.md
-            items:
-            - name: Get
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-get.md
-            - name: Update
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-update.md
-            - name: summarizeDeviceRegressionPerformance
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance.md
           - name: User experience analytics remote connection
             href: resources/intune-devices-userexperienceanalyticsremoteconnection.md
             items:
@@ -9087,6 +9148,8 @@ items:
               href: api/intune-mam-devicemanagementreports-update.md
             - name: getMobileApplicationManagementAppRegistrationSummaryReport action
               href: api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappregistrationsummaryreport.md
+            - name: getMobileApplicationManagementAppConfigurationReport action
+              href: api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappconfigurationreport.md
           - name: Device platform type
             href: resources/intune-wip-deviceplatformtype.md
           - name: Intune branding profile
@@ -9548,6 +9611,8 @@ items:
               href: api/intune-onboarding-devicemanagementpartner-delete.md
             - name: Update
               href: api/intune-onboarding-devicemanagementpartner-update.md
+            - name: terminate action
+              href: api/intune-onboarding-devicemanagementpartner-terminate.md
           - name: Device management partner app type
             href: resources/intune-onboarding-devicemanagementpartnerapptype.md
           - name: Device management partner assignment
@@ -10077,8 +10142,6 @@ items:
             href: resources/intune-shared-keyusages.md
           - name: Key/value pair
             href: resources/intune-shared-keyvaluepair.md
-          - name: macOS LOB app assignment settings
-            href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
             href: resources/intune-shared-macosvppappassignmentsettings.md
           - name: Managed device owner type
@@ -10447,6 +10510,23 @@ items:
             href: api/virtualendpoint-post-externalpartnersettings.md
           - name: Update
             href: api/cloudpcexternalpartnersetting-update.md
+        - name: Cloud PC reports
+          href: resources/cloudpcreports.md
+          items:
+          - name: Get export job
+            href: api/cloudpcexportjob-get.md
+          - name: Create export job
+            href: api/cloudpcreports-post-exportjobs.md
+          - name: Get daily aggregated remote conneciton reports
+            href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+          - name: Get real time remote connection latency
+            href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
+          - name: Get real time remote connection status
+            href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+          - name: Get historical remote conneciton reports
+            href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+          - name: Get total aggregated remote conneciton reports
+            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -11910,6 +11990,8 @@ items:
               href: api/unifiedroledefinition-update.md
             - name: Delete role definition
               href: api/unifiedroledefinition-delete.md
+            - name: List assigned principals
+              href: api/unifiedroledefinition-assignedprincipals.md
           - name: Role assignment
             href: resources/unifiedroleassignment.md
             items:
@@ -12088,7 +12170,7 @@ items:
             - name: List usage
               href: api/authenticationstrengthpolicy-usage.md
           - name: Authentication combination configurations
-            items: 
+            items:
             - name: Authentication combination configuration
               href: resources/authenticationcombinationconfiguration.md
             - name: FIDO2 combination configuration
@@ -13125,6 +13207,8 @@ items:
               href: api/accesspackage-delete-incompatiblegroup.md
             - name: List access packages incompatible with
               href: api/accesspackage-list-accesspackagesincompatiblewith.md
+            - name: Move to catalog
+              href: api/accesspackage-movetocatalog.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
@@ -15604,7 +15688,7 @@ items:
           href: api/documentsetversion-delete.md
         - name: Restore
           href: api/documentsetversion-restore.md
-      - name: Page
+      - name: Pages
         items:
         - name: Site page
           href: resources/sitepage.md

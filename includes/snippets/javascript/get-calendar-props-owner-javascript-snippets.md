@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/AlexW@contoso.OnMicrosoft.com/calendar')
+let calendar = await client.api('/users/AlexW@contoso.OnMicrosoft.com/calendar')
 	.version('beta')
 	.get();
 
