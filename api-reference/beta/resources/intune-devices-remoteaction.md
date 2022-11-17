@@ -48,6 +48,7 @@ Remote actions Intune supports.
 |disable|25|Indicate user initiates an action to disable the device.|
 |reenable|26|Indicate user initiates an action to reenable the device.|
 |moveDeviceToOrganizationalUnit|27|Indicate user initiates an action to move the device to a new organizational unit.|
+|initiateMobileDeviceManagementKeyRecovery|28|Add device action of InitiateMobileDeviceManagementKeyRecovery|
 
 
 
