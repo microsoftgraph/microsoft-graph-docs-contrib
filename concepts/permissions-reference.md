@@ -412,7 +412,7 @@ None.
 
 #### Delegated
 
-* _BusinessScenarioConfig.Read.OwnedBy_: Create a new business scenario (`POST /solutions/businessScenarios`)
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Create a new business scenario (`POST /solutions/businessScenarios`)
 * _BusinessScenarioConfig.Read.All_: Get a list of all business scenarios in an organization (`GET /solutions/businessScenarios`)
 
 #### Application

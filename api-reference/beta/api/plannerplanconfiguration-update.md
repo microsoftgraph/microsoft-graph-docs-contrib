@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration
+PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration
 ```
 
 ## Request headers
@@ -46,15 +47,10 @@ PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguratio
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguage|String|**TODO: Add Description** Optional.|
-|buckets|[plannerPlanConfigurationBucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) collection|**TODO: Add Description** Optional.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
+|defaultLanguage|String|The language that should be used for creating plans when no language has been specified. Required.|
+|buckets|[plannerPlanConfigurationBucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) collection|Buckets that will be available in the plan. Required.|
 
 ## Response
 

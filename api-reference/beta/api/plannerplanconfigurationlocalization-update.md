@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}
+PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}
 ```
 
 ## Request headers
@@ -46,12 +47,10 @@ PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguratio
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|buckets|[plannerPlanConfigurationBucketLocalization](../resources/plannerplanconfigurationbucketlocalization.md) collection|**TODO: Add Description** Optional.|
-|languageTag|String|**TODO: Add Description** Optional.|
-|planTitle|String|**TODO: Add Description** Optional.|
+|buckets|[plannerPlanConfigurationBucketLocalization](../resources/plannerplanconfigurationbucketlocalization.md) collection|Localizations for buckets specified in the [plannerPlanConfiguration](../resources/plannerplanconfiguration.md). Optional.|
+|planTitle|String|Localized title of the plan. Optional.|
 
 ## Response
 
