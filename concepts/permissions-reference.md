@@ -354,15 +354,47 @@ None.
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
 
+---
+
+## Browser management permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BrowserSiteLists.Read.All_ | Read browser site lists for your organization | Allows an app to read the browser site lists configured for your organization, on behalf of the signed-in user. | No | No |
+| _BrowserSiteLists.ReadWrite.All_ | Read and write browser site lists for your organization |  Allows an app to read and write the browser site lists configured for your organization, on behalf of the signed-in user. | No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BrowserSiteLists.Read.All_ | Read all browser site lists for your organization | Allows an app to read all browser site lists configured for your organization, without a signed-in user. | Yes | No |
+| _BrowserSiteLists.ReadWrite.All_ | Read and write all browser site lists for your organization | Allows an app to read and write all browser site lists configured for your organization, without a signed-in user. | Yes | No |
+
+### Example usage
+
+#### Delegated
+
+* _BrowserSiteLists.Read.All_: List all browser site lists, on behalf of a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Update a browser site list, on behalf of a signed-in user (`PATCH /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
+
+#### Application
+
+* _BrowserSiteLists.Read.All_: List all browser site lists, without a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Delete a browser site list, without a signed-in user (`DELETE /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
+
+---
+
 ## Business Scenarios permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|BusinessScenarioConfig.Read.All|Read business scenario configurations|Allows the app to read the configurations of your organization's business scenarios, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.Read.All|Read business scenario configurations|Allows the app to read the configurations for the business scenarios of your organization, on behalf of the signed-in user.|Yes|No|
 |BusinessScenarioConfig.Read.OwnedBy|Read business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, on behalf of the signed-in user.|Yes|No|
-|BusinessScenarioConfig.ReadWrite.All|Read and write business scenario configurations|Allows the app to read and write the configurations of your organization's business scenarios, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.All|Read and write business scenario configurations|Allows the app to read and write the configurations for the business scenarios of your organization, on behalf of the signed-in user.|Yes|No|
 |BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, on behalf of the signed-in user.|Yes|No|
 |BusinessScenarioData.Read.OwnedBy|Read all data for business scenarios this app creates or owns|Allows the app to read all data associated with the business scenarios it owns. Data access will be attributed to the signed-in user.|Yes|No|
 |BusinessScenarioData.ReadWrite.OwnedBy|Read and write all data for business scenarios this app creates or owns|Allows the app to fully manage all data associated with the business scenarios it owns. Data access and changes will be attributed to the signed-in user.|Yes|No|
@@ -380,13 +412,15 @@ None.
 
 #### Delegated
 
-* _BusinessScenarioConfig.Read.OwnedBy_ : Create a business scenario (`POST /solutions/businessScenarios`)
-* _BusinessScenarioConfig.Read.All_ : Get a list of all business scenarios in the organization (`GET /solutions/businessScenarios`)
+* _BusinessScenarioConfig.Read.OwnedBy_: Create a new business scenario (`POST /solutions/businessScenarios`)
+* _BusinessScenarioConfig.Read.All_: Get a list of all business scenarios in an organization (`GET /solutions/businessScenarios`)
 
 #### Application
 
-* _BusinessScenarioConfig.ReadWrite.OwnedBy_ : Update Planner plan configuration for a busines scenario (`PATCH /solutions/businessScenarios(uniqueName='com.contoso.orderManagement')/planner/planConfiguration`)
-* _BusinessScenarioData.ReadWrite.OwnedBy_ : Delete a Planner task in a business scenario (`DELETE /solutions/businessScenarios(uniqueName='com.contoso.sampleScenario')/planner/tasks(externalObjectId='Order#19922')`)
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Update the Planner plan configuration for a business scenario (`PATCH /solutions/businessScenarios(uniqueName='com.contoso.orderManagement')/planner/planConfiguration`)
+* _BusinessScenarioData.ReadWrite.OwnedBy_: Delete a Planner task in a business scenario (`DELETE /solutions/businessScenarios(uniqueName='com.contoso.sampleScenario')/planner/tasks(externalObjectId='Order#19922')`)
+
+---
 
 ## Calendars permissions
 

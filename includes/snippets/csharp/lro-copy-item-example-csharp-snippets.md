@@ -13,7 +13,7 @@ var parentReference = new ItemReference
 
 var name = "Copy of LargeFolder1";
 
-await graphClient.Me.Drive.Items["{folder-item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
 	.Copy(name,parentReference)
 	.Request()
 	.PostAsync();

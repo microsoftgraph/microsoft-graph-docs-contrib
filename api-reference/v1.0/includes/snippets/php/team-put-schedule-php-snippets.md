@@ -9,17 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new SchedulePutRequestBody();
-$additionalData = [
-'enabled' => true,
-'timeZone' => 'America/Chicago', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody = new Schedule();
+$requestBody->setEnabled(true);
+
+$requestBody->setTimeZone('America/Chicago');
 
 
 
-
-$graphServiceClient->teamsById('team-id')->schedule()->put($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->put($requestBody);
 
 
 ```

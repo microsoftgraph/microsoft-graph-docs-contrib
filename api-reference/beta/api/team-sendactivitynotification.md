@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md), [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md), and [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). |
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. For more details, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md), [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md), and [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -384,11 +384,13 @@ HTTP/1.1 204 No Content
 
 ### Example 5: Notify the team members about pending finance approval requests
 
-This example shows how you can send an activity feed notification to all team members. This example is similar to previous examples. However, in this case, the `recipient` is a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+The following example shows how you can send an activity feed notification to all team members. This example is similar to previous examples. However, in this case, the **recipient** is a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the **teamId** specified in the **recipient** must match the **teamId** specified in the request URL.
 
 > **Note:** The ability to send notifications to all team members is limited to teams with 10,000 members or less. If the team exceeds 10,000 members, none of the team members will receive a notification.
 
 #### Request
+
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -451,6 +453,9 @@ Content-Type: application/json
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -462,14 +467,16 @@ HTTP/1.1 204 No Content
 
 ### Example 6: Notify the channel members about pending finance approval requests
 
-This example shows how you can send an activity feed notification to all channel members. This example is similar to the previous example. However, in this case, the `recipient` is a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+The following example shows how you can send an activity feed notification to all channel members. This example is similar to the previous example. However, in this case, the **recipient** is a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Note that the **teamId** specified in the **recipient** must match the **teamId** specified in the request URL.
 
 #### Request
+
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_5"
+  "name": "team_sendactivitynotification_6"
 }
 -->
 
@@ -528,6 +535,9 @@ Content-Type: application/json
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false

@@ -1,6 +1,6 @@
 ---
 title: "plannerPropertyRule resource type"
-description: "This is the abstract base type of all entity rule definitions for Planner."
+description: "An abstract base type of all entity rule definitions for Microsoft Planner."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is the abstract base type of all entity rule definitions for Planner. See [plannerTaskPeopertyRule](plannertaskpropertyrule.md) for more information.
+An abstract base type of all entity rule definitions for Microsoft Planner. For more details, see [plannerTaskPropertyRule](plannertaskpropertyrule.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|ruleKind|plannerRuleKind|Identifies which type of property rules represented by this instance. The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`.|
+|ruleKind|plannerRuleKind|Identifies which type of property rules is represented by this instance. The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`.|
 
 ## Relationships
 

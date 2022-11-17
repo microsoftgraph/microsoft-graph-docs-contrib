@@ -8,13 +8,15 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var user = new TeamworkUserIdentity
 {
-	Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
+	Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"tenantId", "2a690434-97d9-4eed-83a6-f5f13600199a"}
+	}
 };
 
-var tenantId = "2a690434-97d9-4eed-83a6-f5f13600199a";
-
 await graphClient.Chats["{chat-id}"]
-	.UnhideForUser(user,tenantId)
+	.UnhideForUser(user,null)
 	.Request()
 	.PostAsync();
 

@@ -10,8 +10,8 @@ var comment = "I will probably be able to make it.";
 
 var sendResponse = true;
 
-await graphClient.Me.Events["AAMkADADVj3fyAABZ5ieyAAA="]
-	.TentativelyAccept(comment,sendResponse)
+await graphClient.Me.Events["{event-id}"]
+	.TentativelyAccept(comment,sendResponse,null)
 	.Request()
 	.PostAsync();
 

@@ -36,6 +36,7 @@ Not yet documented
 |moveDeviceToOrganizationalUnit|13|Name of the moveDevicesToOU action.|
 |activateDeviceEsim|14|Name of action to Activate eSIM on the device.|
 |collectDiagnostics|15|Name of the collectDiagnostics action.|
+|initiateMobileDeviceManagementKeyRecovery|16|Name of action to initiate MDM key recovery|
 
 
 
