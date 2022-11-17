@@ -268,6 +268,7 @@ Content-type: application/json
 
 ## Known limitation
 
-- Deep paging (paging through the entire result set) is not supported beyond start row x (e.g. "from":1000).
+- Deep paging (paging through the entire result set) is not supported beyond start row x (e.g. "from" value > 1000).
+  Suggest not to use big 'from' and 'size' value while executing search request with Application Permission.
 - [Collapsing](./search-concept-collapse.md) is not supported.
 
