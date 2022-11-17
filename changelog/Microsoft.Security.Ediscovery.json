@@ -414,19 +414,19 @@
 		  },
 		  {
 			"Id": "42153eec-8631-4737-af85-edfc4fb7301e",
-			"ApiChange": "Method",
-			"ChangedApiName": "purgeData",
-			"ChangeType": "Deletion",
-			"Description": "Removed the **purgeData** method from the [ediscoverySearch](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) resource.",
-			"Target": "ediscoverySearch"
+			"ApiChange": "Parameter",
+			"ChangedApiName": "purgeType",
+			"ChangeType": "Addition",
+			"Description": "Added the **purgeType** parameter to the [purgeData](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+			"Target": "purgeData"
 		  },
 		  {
 			"Id": "42153eec-8631-4737-af85-edfc4fb7301e",
-			"ApiChange": "Method",
-			"ChangedApiName": "purgeData",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "purgeAreas",
 			"ChangeType": "Addition",
-			"Description": "Added the [purgeData](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method to the [ediscoverySearch](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) resource.",
-			"Target": "ediscoverySearch"
+			"Description": "Added the **purgeAreas** parameter to the [purgeData](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+			"Target": "purgeData"
 		  }
 		],
 		"Id": "42153eec-8631-4737-af85-edfc4fb7301e",
