@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /solutions/businessScenarios/{businessScenarioId}/planner/tasks/{businessScenarioTaskId}/$ref
+DELETE /solutions/businessScenarios/{businessScenarioId}/planner/tasks/{businessScenarioTaskId}
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenarioId}/planner/tasks/{businessScenarioTaskId}
+DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks/pmc1rS1Io0C3rXQhyXIsNmUAOeIi
 ```
 
 ### Response

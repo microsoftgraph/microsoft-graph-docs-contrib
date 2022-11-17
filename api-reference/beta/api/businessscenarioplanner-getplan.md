@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenarioId}/planner/getPlan
+POST https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/getPlan
 Content-Type: application/json
 
 {
