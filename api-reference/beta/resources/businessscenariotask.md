@@ -1,6 +1,6 @@
 ---
 title: "businessScenarioTask resource type"
-description: "Represents a plannerTask with additional scenario data."
+description: "Represents a plannerTask that is associated with a businessScenario and contains additional scenario data."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [plannerTask](../resources/plannertask.md) with additional scenario data.
+Represents a [plannerTask](../resources/plannertask.md) that is associated with a [businessScenario](../resources/businessscenario.md) and contains additional scenario data.
 
 Inherits from [plannerTask](../resources/plannertask.md).
 
@@ -36,7 +36,7 @@ Inherits from [plannerTask](../resources/plannertask.md).
 |assigneePriority|String|Hint used to order items of this type in a list view. For details about supported format, see [Using order hints in Planner](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of assignees the task is assigned to. Inherited from [plannerTask](../resources/plannertask.md).|
 |bucketId|String|Bucket ID to which the task belongs. Inherited from [plannerTask](../resources/plannertask.md).|
-|businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|Scenario specific properties of the task. **externalObjectId** and **externalBucketId** properties must be specified when creating a task.|
+|businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|Scenario-specific properties of the task. **externalObjectId** and **externalBucketId** properties must be specified when creating a task.|
 |checklistItemCount|Int32|Number of checklist items that are present on the task. Inherited from [plannerTask](../resources/plannertask.md).|
 |completedBy|[identitySet](../resources/identityset.md)|Identity of the user who completed the task. Inherited from [plannerTask](../resources/plannertask.md). Read-Only.|
 |completedDateTime|DateTimeOffset|Date and time at which the **percentComplete** of the task is set to `100`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [plannerTask](../resources/plannertask.md). Read-only.|

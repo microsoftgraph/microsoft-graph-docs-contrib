@@ -33,7 +33,7 @@ Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 |previewType|String collection|Rules and restrictions for changing the preview type of the task. Accepted values are `allow` and `block`.|
 |priority|String collection|Rules and restrictions for changing the priority of the task. Accepted values are `allow` and `block`.|
 |references|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for references. Allowed overrides are `userCreated` and `applicationCreated`. Accepted values for the default rule and individual overrides are `allow`, `add`, `remove`, `block`.|
-|ruleKind|plannerRuleKind|Must be set to `taskRule`. The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`. Inherited from [plannerPropertyRule](../resources/plannerpropertyrule.md).|
+|ruleKind|plannerRuleKind|Identifies which type of property rules is represented by this instance. Must be set to `taskRule`. The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`. Inherited from [plannerPropertyRule](../resources/plannerpropertyrule.md).|
 |startDate|String collection|Rules and restrictions for changing the start date of the task. Accepted values are `allow` and `block`.|
 |title|String collection|Rules and restrictions for changing the title of the task. Accepted values are `allow` and `block`.|
 

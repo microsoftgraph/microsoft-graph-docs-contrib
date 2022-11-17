@@ -1,6 +1,6 @@
 ---
 title: "businessScenarioPlanner resource type"
-description: "Contains Planner-related content for the scenario, allowing both configuration of Planner behavior and accessing the scenario data in Planner."
+description: "Contains Microsoft Planner-related content for the scenario, allowing both configuration of Planner behavior and accessing the scenario data in Planner."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains Planner-related content for the scenario, allowing both configuration of Planner behavior and accessing the scenario data in Planner.
+Contains Microsoft Planner-related content for the scenario, allowing both configuration of Planner behavior and accessing the scenario data in Planner.
 
 Inherits from [entity](../resources/entity.md).
 
