@@ -14,7 +14,7 @@ filter := "<filter condition>"
 query := cv.CalendarViewRequestBuilderGetQueryParameters{
     Filter:  &filter,
     Orderby: []string{"start/dateTime"},
-    Select_escaped: []string{
+    Select: []string{
         "subject",
         "start",
         "end",
