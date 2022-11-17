@@ -1,20 +1,20 @@
 ---
-title: "Business Scenarios (Preview) Overview"
+title: "Business Scenarios API overview (preview)"
 description: ""
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: ""
 ---
 
-# Business Scenarios (Preview) Overview
+# Business Scenarios API overview (preview)
 
 Business Scenarios allow integration of real work business processes into native Microsoft Graph entities. Business Scenarios allow applications to create data in the tenant that looks like any other data, however they can specify behaviors for this data to make sure the requirements of the represented business process can be met. Using Business Scenarios applications can work at the tenant level, without having access to the tenant data, outside of the data created for a specific scenario.
 
 Business Scenarios currently allow Microsoft Planner data to be generated through a scenario.
 
-## Why Use Business Scenarios?
+## Why Use the Business Scenarios APIs?
 
-Business Scenarios are all about integrating data into existing Microsoft Graph entities so that your end users can have a consistent experince with data they depend on without having to switch between different applications for common operations. All the data you care about can be surfaced consistently in the Microsoft or external user experiences, and all data is also available in Microsoft Graph so that additional semantics and processes can be built consistently through the Graph API regardless of the origin of the data.
+Business Scenarios are all about integrating data into existing Microsoft Graph entities so that your end users can have a consistent experience with data they depend on without having to switch between different applications for common operations. All the data you care about can be surfaced consistently in the Microsoft or external user experiences, and all data is also available in Microsoft Graph so that additional semantics and processes can be built consistently through the Graph API regardless of the origin of the data.
 
 ### Least Privilege Access
 
@@ -22,7 +22,7 @@ With Business Scenarios applications do not require control over all the tenant'
 
 ### Control Over User Experience
 
-Business Scenarios control how the users and other applications can interact with the data created for the scenario, through scenario managed data containers and configurable permissions. Applications can specify granular permissions and behaviors on the data to make sure the data cannot be manipuled in ways that are incompatible with the requirements of the scenario.
+Business Scenarios control how the users and other applications can interact with the data created for the scenario, through scenario managed data containers and configurable permissions. Applications can specify granular permissions and behaviors on the data to make sure the data cannot be manipulated in ways that are incompatible with the requirements of the scenario.
 
 ### Control Over Data
 
@@ -34,7 +34,7 @@ Business Scenarios are built for integrations. Data created for the scenario can
 
 ## API reference
 
-You can find more about the Business Scenario API here:
+Looking for the API reference for this service?
 
 * [Business Scenario API in Microsoft Graph beta](/graph/api/resources/businessscenario-overview)
 
