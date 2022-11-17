@@ -10,7 +10,7 @@ ms.prod: ""
 
 Business Scenarios allow integration of real work business processes into native Microsoft Graph entities. Business Scenarios allow applications to create data in the tenant that looks like any other data, however they can specify behaviors for this data to make sure the requirements of the represented business process can be met. Using Business Scenarios applications can work at the tenant level, without having access to the tenant data, outside of the data created for a specific scenario.
 
-Business Scenarios currently allow Planner data to be generated through a scenario.
+Business Scenarios currently allow Microsoft Planner data to be generated through a scenario.
 
 ## Why Use Business Scenarios?
 

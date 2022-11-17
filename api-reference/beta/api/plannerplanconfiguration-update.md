@@ -1,6 +1,6 @@
 ---
 title: "Update plannerPlanConfiguration"
-description: "Update the properties of a plannerPlanConfiguration object."
+description: "Update the properties of a plannerPlanConfiguration object for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object.
+Update the properties of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object for a [businessScenario](../resources/businessscenario.md).
 
 ## Permissions
 

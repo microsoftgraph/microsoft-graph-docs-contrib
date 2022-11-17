@@ -1,6 +1,6 @@
 ---
 title: "plannerPlanConfiguration resource type"
-description: "Represents the configuration of plannerPlans created for a businessScenario."
+description: "Represents the configuration of plannerPlan resources created for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get plannerPlanConfiguration](../api/plannerplanconfiguration-get.md)|[plannerPlanConfiguration](../resources/plannerplanconfiguration.md)|Read the properties and relationships of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object.|
-|[Update plannerPlanConfiguration](../api/plannerplanconfiguration-update.md)|[plannerPlanConfiguration](../resources/plannerplanconfiguration.md)|Update the properties of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object.|
+|[Update plannerPlanConfiguration](../api/plannerplanconfiguration-update.md)|[plannerPlanConfiguration](../resources/plannerplanconfiguration.md)|Update the properties of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object for a [businessScenario](../resources/businessscenario.md). |
 |[List localizations](../api/plannerplanconfiguration-list-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection|Get the plannerPlanConfigurationLocalization resources from the localizations navigation property.|
 |[Create plannerPlanConfigurationLocalization](../api/plannerplanconfiguration-post-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Create a new plannerPlanConfigurationLocalization object.|
 

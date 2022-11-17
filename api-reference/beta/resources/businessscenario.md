@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List businessScenarios](../api/solutionsroot-list-businessscenarios.md)|[businessScenario](../resources/businessscenario.md) collection|Get a list of the [businessScenario](../resources/businessscenario.md) objects and their properties.|
+|[List businessScenarios](../api/solutionsroot-list-businessscenarios.md)|[businessScenario](../resources/businessscenario.md) collection|Get a list of all [businessScenario](../resources/businessscenario.md) objects in an organization.|
 |[Create businessScenario](../api/solutionsroot-post-businessscenarios.md)|[businessScenario](../resources/businessscenario.md)|Create a new [businessScenario](../resources/businessscenario.md) object.|
 |[Get businessScenario](../api/businessscenario-get.md)|[businessScenario](../resources/businessscenario.md)|Read the properties and relationships of a [businessScenario](../resources/businessscenario.md) object.|
 |[Update businessScenario](../api/businessscenario-update.md)|[businessScenario](../resources/businessscenario.md)|Update the properties of a [businessScenario](../resources/businessscenario.md) object.|

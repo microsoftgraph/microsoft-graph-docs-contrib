@@ -1,6 +1,6 @@
 ---
 title: "List businessScenarios"
-description: "Get a list of the businessScenario objects and their properties."
+description: "Get a list of all businessScenario objects in an organization."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [businessScenario](../resources/businessscenario.md) objects and their properties.
+Get a list of all [businessScenario](../resources/businessscenario.md) objects in an organization.
 
 ## Permissions
 
