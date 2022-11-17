@@ -11,7 +11,7 @@ requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
-value := "https://graph.microsoft.com/beta/chats/{chatId}"
+value := "https://graph.microsoft.com/v1.0/chats/{chatId}"
 topic.SetValue(&value) 
 requestBody.SetTopic(topic)
 activityType := "taskCreated"

@@ -69,7 +69,7 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: Access user data
+          - name: "Training module: Access user data"
             href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
@@ -82,12 +82,14 @@ items:
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
-          - name: Manage group lifecycle
+          - name: "Training module: Manage group lifecycle"
             href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
             href: applications-concept-overview.md
+          - name: Configure properties
+            href: tutorial-applications-basics.md
           - name: Grant and revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
@@ -670,7 +672,7 @@ items:
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
-              - name: Optimize requests with query parameters
+              - name: "Training module: Optimize requests with query parameters"
                 displayName: OData query parameters, OData
                 href: /training/modules/optimize-data-usage
           - name: Batching
@@ -684,7 +686,7 @@ items:
               - name: Service-specific limits
                 displayName: throttling
                 href: throttling-limits.md
-              - name: Optimize network traffic
+              - name: "Training module: Optimize network traffic"
                 href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
@@ -692,7 +694,7 @@ items:
               - name: Overview
                 href: webhooks.md
                 displayName: change notifications, WebHooks, set up notifications for changes in resource data
-              - name: Change notifications tutorial
+              - name: "Training module: Change notifications tutorial"
                 href: /training/modules/msgraph-changenotifications-trackchanges
               - name: Missing change notifications
                 href: webhooks-lifecycle.md
@@ -766,6 +768,8 @@ items:
                     href: migrate-azure-ad-graph-property-differences.md
                   - name: Methods
                     href: migrate-azure-ad-graph-method-differences.md
+                  - name: Permissions
+                    href: migrate-azure-ad-graph-permissions-differences.md
               - name: "2: Examine API use"
                 href: migrate-azure-ad-graph-audit-api-use.md
               - name: "3: Review app details"

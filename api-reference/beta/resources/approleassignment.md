@@ -29,7 +29,7 @@ An app role assignment where the assigned principal is a service principal is an
 |:---------------|:--------|:----------|
 | id | String | A unique identifier for the **appRoleAssignment** key. Not nullable. Read-only. |
 | creationTimestamp | DateTimeOffset | The time when the app role assignment was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
-| principalId | Guid | The unique identifier (**id**) for the [user](user.md), [group](group.md), or [service principal](serviceprincipal.md) being granted the app role. Required on create.  |
+| principalId | Guid | The unique identifier (**id**) for the [user](user.md), [security group](group.md), or [service principal](serviceprincipal.md) being granted the app role. Security groups with dynamic memberships are supported. Required on create.  |
 | principalType | String | The type of the assigned principal. This can either be `User`, `Group`, or `ServicePrincipal`. Read-only. |
 | principalDisplayName | String |The display name of the user, group, or service principal that was granted the app role assignment. Read-only. Supports `$filter` (`eq` and `startswith`). |
 | resourceId | Guid |The unique identifier (**id**) for the resource [service principal](serviceprincipal.md) for which the assignment is made. Required on create. Supports `$filter` (`eq` only). |
@@ -60,6 +60,10 @@ Here is a JSON representation of the resource
   "appRoleId": "Guid"
 }
 ```
+
+## See also
+
++ [Grant or revoke app roles using Microsoft Graph](/graph/permissions-grant-via-msgraph?pivots=grant-application-permissions)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

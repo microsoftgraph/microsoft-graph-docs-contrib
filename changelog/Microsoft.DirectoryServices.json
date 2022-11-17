@@ -11930,6 +11930,24 @@
     {
       "ChangeList": [
         {
+          "Id": "f3fd9d42-fb5c-46d8-abad-a51ca6c31aab",
+          "ApiChange": "Property",
+          "ChangedApiName": "appId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing a [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta) using the **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "f3fd9d42-fb5c-46d8-abad-a51ca6c31aab",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-14T00:00:00.077762Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0d721125-f1c0-44e7-96fa-dd4773cf2445",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationContextClassReferences",
