@@ -22,7 +22,6 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get businessScenarioPlanner](../api/businessscenarioplanner-get.md)|[businessScenarioPlanner](../resources/businessscenarioplanner.md)|Read the properties and relationships of a [businessScenarioPlanner](../resources/businessscenarioplanner.md) object.|
-|[Update businessScenarioPlanner](../api/businessscenarioplanner-update.md)|[businessScenarioPlanner](../resources/businessscenarioplanner.md)|Update the properties of a [businessScenarioPlanner](../resources/businessscenarioplanner.md) object.|
 |[getPlan](../api/businessscenarioplanner-getplan.md)|[businessScenarioPlanReference](../resources/businessscenarioplanreference.md)|Get information about the [plannerPlan](../resources/plannerplan.md) mapped to a given target.|
 |[Get plannerPlanConfiguration](../api/businessscenarioplanner-get-planconfiguration.md)|[plannerPlanConfiguration](../resources/plannerplanconfiguration.md)|Get the **plannerPlanConfiguration** from the **planConfiguration** navigation property.|
 |[Get plannerTaskConfiguration](../api/businessscenarioplanner-get-taskconfiguration.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md)|Get the **plannerTaskConfiguration** from the **taskConfiguration** navigation property.|
