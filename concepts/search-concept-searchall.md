@@ -269,6 +269,5 @@ Content-type: application/json
 ## Known limitation
 
 - Deep paging (paging through the entire result set) is not supported beyond start row x (e.g. "from":1000).
-- Collapsing is not supported.
-- Query rules and result sources are not supported.
+- [Collapsing](./search-concept-collapse.md) is not supported.
 
