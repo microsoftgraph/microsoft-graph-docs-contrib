@@ -3,6 +3,7 @@ title: "Create and manage an Azure AD application"
 description: "Learn how to use the applications API in Microsoft Graph to manage your applications."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
+ms.topic: how-to
 ms.prod: "applications"
 ---
 
@@ -289,7 +290,7 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 ## Assign users and groups to an application
 
-You might want users and groups to first be assigned the application before they're able to access it. To implement this access control list, create an app role assignment for the users or groups to the app. Only users and security groups, including dynamic security groups, are supported. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
+You might want users and groups to first be assigned the application before they're able to access it. To implement this access control list, create an app role assignment for the users or groups to the app. Only users and security groups, including security groups with dynamic memberships, are supported. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
 
 Least privilege delegated permission: `Application.Read.All` and `AppRoleAssignment.ReadWrite.All`
 <!-- {
