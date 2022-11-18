@@ -53,7 +53,7 @@ Inherits from [entity](../resources/entity.md).
 | sharingDomainRestrictionMode                       | [tenantAdmin.sharingDomainRestrictionMode](#sharingdomainrestrictionmode-values) | Specifies the external sharing mode for domains. Possible values are: `none`, `allowList`, `blockList`.                                                    |
 | siteCreationDefaultManagedPath                     | String                       | The value of the team site managed path. This is the path under which new team sites will be created.                                                                                                          |
 | siteCreationDefaultStorageLimitInMB                | Int32                        | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                            |
-| tenantDefaultTimezone                              | String                       | The default timezone of a tenant for newly created sites. Possible values can be found at this [reference](/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones).                                      |
+| tenantDefaultTimezone                              | String                       | The default timezone of a tenant for newly created sites. For a list of possible values, see [SPRegionalSettings.TimeZones property](/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones).                                      |
 
 ### imageTaggingChoice values
 | Member                          | Description                                                                                                           |
