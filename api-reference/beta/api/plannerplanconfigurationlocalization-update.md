@@ -31,8 +31,16 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+For a specific localization based on a business scenario ID:
+
 ``` http
 PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}
+```
+
+For a specific localization based on the unique name of a business scenario:
+
+``` http
 PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}
 ```
 
@@ -63,7 +71,8 @@ If successful, this method returns a `200 OK` response code and an updated [plan
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_plannerplanconfigurationlocalization"
+  "name": "update_plannerplanconfigurationlocalization",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d", "en-us"]
 }
 -->
 ``` http

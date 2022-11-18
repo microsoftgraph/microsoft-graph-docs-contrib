@@ -60,7 +60,8 @@ If successful, this method returns a `200 OK` response code and a [businessScena
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_businessscenariotask"
+  "name": "get_businessscenariotask",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d", "pmc1rS1Io0C3rXQhyXIsNmUAOeIi"]
 }
 -->
 ``` http
