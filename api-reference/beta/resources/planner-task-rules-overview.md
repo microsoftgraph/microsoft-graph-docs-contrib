@@ -1,40 +1,40 @@
 ---
-title: "Planner Task Rules Overview"
-description: ""
+title: "Planner task rules overview (preview)"
+description: "Rules allow customization of what can and can't be done on tasks, and the business scenarios API in Microsoft Graph supports them."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: ""
 ---
 
-# Planner Task Rules
+# Planner task rules overview (preview)
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Rules allow customization of what can and can't be done on tasks, and the business scenarios API in Microsoft Graph supports them. Task rules can be specified for tasks created from various sources, such as [business scenarios](businessscenario-planner-overview.md).
 
-Rules allow customization of what can and cannot be done on tasks. Task rules can be specified for tasks created from various sources, such as [Business Scenarios](businessscenario-planner-overview.md).
+Task property rules are represented by [plannerTaskPropertyRule](plannertaskpropertyrule.md) entity and describe the allowed actions at the task-level and rules around each configurable property.
 
-Task property rules are represented by [plannerTaskPropertyRule](plannertaskpropertyrule.md) entity and describe the the allowed actions at the task level and rules around each configurable property. This document explains the behaviors associated with each entry.
+Depending on the specific entry has either a collection of values or a [fieldRules](plannerfieldrules.md) is specified. Field rules specify a collection of values as default, and provides separate collection of values for override conditions. For any collection of values, the specified values are what is allowed, omitted values will be disallowed.
 
-Depending on the specific entry has either a collection of values or a [fieldRules](plannerfieldrules.md) is specified. Field rules specify a collection of values as default, and provides separate collection of values for override conditions. Override conditions supported by each property are described in the property documentation below. For any collection of values, the specified values are what is allowed, omitted values will be disallowed.
+In this article, you will learn the behaviors associated with each entry and the override conditions supported by each property.
 
-## Configurable Actions
+## Configurable actions
 
 ### delete
 
 Specifies if the task can be deleted. Accepted values are:
 
-* `block` : Task cannot be deleted.
-* `allow` : Task can be deleted.
+* `block`: Task can't be deleted.
+* `allow`: Task can be deleted.
 
 The collection must contain only one of these values.
 
 ### move
 
-Specifies if the task can be moved. This only includes task moving between [buckets](plannerbucket.md), [plans](plannerplan.md) with the same or different [containers](plannerplancontainer.md). However it does not include other operations that may look like moves, which can be configured independently, such as assignments, ordering of the task, percentComplete, priority etc. Accepted values are:
+Specifies if the task can be moved. This only includes a task moving between [buckets](plannerbucket.md) and [plans](plannerplan.md) with the same or different [containers](plannerplancontainer.md). However, it doesn't include other operations similar to moves, which can be configured independently, such as assignments, ordering of the task, percent complete, priority etc. Accepted values are:
 
-* `block` : Task cannot be moved.
-* `moveBetweenBuckets` : Task can only be moved between the buckets of the plan it is in.
-* `moveBetweenPlans` : Task can be moved between buckets and across the plans that belong to the same container.
-* `allow` : Task can be moved between buckets and across plans.
+* `block`: Task can't be moved.
+* `moveBetweenBuckets`: Task can only be moved between the buckets of the plan it is in.
+* `moveBetweenPlans`: Task can be moved between buckets and across the plans that belong to the same container.
+* `allow`: Task can be moved between buckets and across plans.
 
 The collection must contain only one of these values.
 
@@ -42,69 +42,69 @@ The collection must contain only one of these values.
 
 Specifies if the task can be reordered in shared views. Accepted values are:
 
-* `block` : Task cannot be reordered.
-* `allow` : Task can be reordered.
+* `block`: Task can't be reordered.
+* `allow`: Task can be reordered.
 
 The collection must contain only one of these values.
 
-## Configurable Properties
+## Configurable properties
 
 ### appliedCategories
 
-AppliedCategories property is configured with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
+The **appliedCategories** property is configured with [fieldRules](plannerfieldrules.md), providing default values and overrides for specific conditions. Accepted values are:
 
-* `block` : Applied categories cannot be changed.
-* `allow` : Categories can be added or removed.
+* `block`: Applied categories can't be changed.
+* `allow`: Categories can be added or removed.
 
 The collection must contain only one of these values.
 
-This property doesn't support any override conditions, the rules must be specified in the **defaultRules** property.
+This property doesn't support any override conditions. The rules must be specified in the **defaultRules** property.
 
 ### assignments
 
-Assignments property is configued with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
+The **assignments** property is configured with [fieldRules](plannerfieldrules.md), providing default values and overrides for specific conditions. Accepted values are:
 
-* `block` : Assignments of the task cannot be changed.
-* `addSelf` : Users can assign the task to themselves.
-* `removeSelf` : Users can remove themselves as assignees.
-* `addOther` : Users can assign the task to people other than themselves.
-* `removeOther` : Users can remove assignees other than themselves.
-* `add` : Assignees can be added.
-* `remove` : Assignees can be removed.
-* `allow` : Assignees can be added or removed.
+* `block`: Assignments of the task can't be changed.
+* `addSelf`: Users can assign the task to themselves.
+* `removeSelf`: Users can remove themselves as assignees.
+* `addOther`: Users can assign the task to people other than themselves.
+* `removeOther`: Users can remove assignees other than themselves.
+* `add`: Assignees can be added.
+* `remove`: Assignees can be removed.
+* `allow`: Assignees can be added or removed.
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If the an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
 
-* `userCreated` : Rules apply if the assignment was created by a user.
-* `applicationCreated` : Rules apply if the assignment was created using application permissions.
+* `userCreated`: Rules apply if the assignment was created by a user.
+* `applicationCreated`: Rules apply if the assignment was created using application permissions.
 
 ### checkLists
 
-Checklists property is configued with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
+The **checkLists** property is configured with [fieldRules](plannerfieldrules.md), providing default values and overrides for specific conditions. Accepted values are:
 
-* `block` : Checklist cannot be changed.
-* `check` : Checklist items can be checked.
-* `reorder` : Checklist items can be reordered.
-* `add` : New checklist items can be added.
-* `update` : Existing checklist items can be updated.
-* `remove` : Existing checklist items can be removed.
-* `allow` : All checklist actions are allowed.
+* `block`: Checklist can't be changed.
+* `check`: Checklist items can be checked.
+* `reorder`: Checklist items can be reordered.
+* `add`: New checklist items can be added.
+* `update`: Existing checklist items can be updated.
+* `remove`: Existing checklist items can be removed.
+* `allow`: All checklist actions are allowed.
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If the an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
 
-* `userCreated` : Rules apply if the checklist item was created by a user.
-* `applicationCreated` : Rules apply if the checklist item was created using application permissions.
+* `userCreated`: Rules apply if the checklist item was created by a user.
+* `applicationCreated`: Rules apply if the checklist item was created using application permissions.
 
 ### dueDate
 
 Specifies if the task due date can be changed. Accepted values are:
 
-* `block` : Task due date cannot be changed.
-* `allow` : Task due date can be changed, added or removed.
+* `block`: Task due date can't be changed.
+* `allow`: Task due date can be changed, added, or removed.
 
 The collection must contain only one of these values.
 
@@ -112,8 +112,8 @@ The collection must contain only one of these values.
 
 Specifies if the task notes can be changed. Accepted values are:
 
-* `block` : Task notes cannot be changed.
-* `allow` : Task notes can be changed.
+* `block`: Task notes can't be changed.
+* `allow`: Task notes can be changed.
 
 The collection must contain only one of these values.
 
@@ -121,11 +121,11 @@ The collection must contain only one of these values.
 
 Specifies if the task percentComplete property can be changed. Accepted values are:
 
-* `block` : Task percentComplete property cannot be changed.
-* `setToComplete` : Task percentComplete property can be set to 100.
-* `setToInProgress` : Task percentComplete property can be set to values from 1 to 99.
-* `setToNotStarted` : Task percentComplete property can be set to 0.
-* `allow` : Task percentComplete property can be changed.
+* `block`: The task **percentComplete** property can't be changed.
+* `setToComplete`: The task **percentComplete**  property can be set to `100`.
+* `setToInProgress`: The task **percentComplete**  property can be set to values from `1` to `99`.
+* `setToNotStarted`: The task **percentComplete**  property can be set to `0`.
+* `allow`: The task **percentComplete**  property can be changed.
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
@@ -133,8 +133,8 @@ The collection can specify either a single `allow` or `block` value, or any comb
 
 Specifies if the task preview type can be changed. Accepted values are:
 
-* `block` : Task preview type cannot be changed.
-* `allow` : Task preview type can be changed.
+* `block`: Task preview type can't be changed.
+* `allow`: Task preview type can be changed.
 
 The collection must contain only one of these values.
 
@@ -142,33 +142,33 @@ The collection must contain only one of these values.
 
 Specifies if the task priority can be changed. Accepted values are:
 
-* `block` : Task priority cannot be changed.
-* `allow` : Task priority can be changed.
+* `block`: Task priority can't be changed.
+* `allow`: Task priority can be changed.
 
 The collection must contain only one of these values.
 
 ### references
 
-References property is configued with [fieldRules](plannerfieldrules.md) providing default values and overrides for specific conditions. Accepted values are:
+References property is configured with [fieldRules](plannerfieldrules.md), providing default values and overrides for specific conditions. Accepted values are:
 
-* `block` : Task references cannot be changed.
-* `add` : New references can be added.
-* `remove` : Existing references can be removed.
-* `allow` : All task reference actions are allowed.
+* `block`: Task references can't be changed.
+* `add`: New references can be added.
+* `remove`: Existing references can be removed.
+* `allow`: All task reference actions are allowed.
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If the an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
 
-* `userCreated` : Rules apply if the task reference was created by a user.
-* `applicationCreated` : Rules apply if the task reference was created using application permissions.
+* `userCreated`: Rules apply if the task reference was created by a user.
+* `applicationCreated`: Rules apply if the task reference was created using application permissions.
 
 ### startDate
 
 Specifies if the task start date can be changed. Accepted values are:
 
-* `block` : Task start date cannot be changed.
-* `allow` : Task start date can be changed.
+* `block`: Task start date can't be changed.
+* `allow`: Task start date can be changed.
 
 The collection must contain only one of these values.
 
@@ -176,7 +176,7 @@ The collection must contain only one of these values.
 
 Specifies if the task title can be changed. Accepted values are:
 
-* `block` : Task title cannot be changed.
-* `allow` : Task title can be changed.
+* `block`: Task title can't be changed.
+* `allow`: Task title can be changed.
 
 The collection must contain only one of these values.
