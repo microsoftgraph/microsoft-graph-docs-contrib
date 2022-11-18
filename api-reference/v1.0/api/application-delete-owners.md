@@ -1,5 +1,5 @@
 ---
-title: "Remove owner"
+title: "Remove application owner"
 description: "Remove an owner from an application."
 author: "sureshja"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Remove owner
+# Remove application owner
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Remove owner"
+title: "Remove service principal owner"
 description: "Remove an owner from a servicePrincipals."
 author: "sureshja"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Remove owner
+# Remove service principal owner
 
 Namespace: microsoft.graph
 
