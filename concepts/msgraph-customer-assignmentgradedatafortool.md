@@ -1,23 +1,19 @@
 ---
 title: "Get data from assignment and grade for customer tools"
-description: "Learn how to get data from assignments and grades for your reporting, communication and automation tools."
+description: "Use Microsoft Graph to get data from assignments and grades for education solution reporting, communication, and automation tools."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Get data from Assignmments and Grades
+# Get data from assignmments and grades
 
-## Scenario
+Education institutions have custom tools that need data from assignments and grades; for example, tools that are used for reporting and communication to the school district, or tools that are used to automate a set of process. You can use the education API in Microsoft Graph to get data for assignments and grades for both classes and students.
 
-Partners and education institutions have their own tool that needs data from Assignments and Grades, e.g. tools that are used for reporting and communication to the school district, or tools that are used to automate a set of process. You can get data for assignments and grades for both classes and students.
+> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
-## Using Microsoft Graph
-
-All the assignments endpoints described in this scenario can be tested using [Graph Explorer](/graph/msgraph-onboarding-graphexplorer) and any other education API in [Microsoft Graph](/graph/overview).
-
-## API to use for Teams information
+## API to use for classes and members information
 
 All Assignments and Grades information is provided in relation to Teams and Teams users. You have the ability to get information about all the classes in a Team and its members and the role they have in the team (student or teacher).
 
