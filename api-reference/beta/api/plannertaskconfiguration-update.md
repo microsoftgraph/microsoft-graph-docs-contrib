@@ -62,7 +62,8 @@ If successful, this method returns a `200 OK` response code and an updated [plan
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_plannertaskconfiguration"
+  "name": "update_plannertaskconfiguration",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
 ``` http

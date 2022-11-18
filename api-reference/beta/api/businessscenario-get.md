@@ -31,9 +31,17 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+For a specific business scenario based on its ID (primary key):
+
 ``` http
 GET /solutions/businessScenarios/{businessScenarioId}
-GET /solutions/businessScenarios/(uniqueName='{uniqueName}')
+```
+
+For a specific business scenario based on its unique name:
+
+``` http
+GET /solutions/businessScenarios(uniqueName='{uniqueName}')
 ```
 
 ## Optional query parameters
@@ -61,13 +69,13 @@ If successful, this method returns a `200 OK` response code and a [businessScena
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_businessscenario"
+  "name": "get_businessscenario",
+  "sampleKeys": [""]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d
 ```
-
 
 ### Response
 
