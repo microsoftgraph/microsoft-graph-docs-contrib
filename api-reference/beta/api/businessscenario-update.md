@@ -31,8 +31,16 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+For a specific business scenario based on its ID (primary key):
+
 ``` http
 PATCH /solutions/businessScenarios/{businessScenarioId}
+```
+
+For a specific business scenario based on its unique name:
+
+``` http
 PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')
 ```
 
@@ -63,7 +71,8 @@ If successful, this method returns a `200 OK` response code and an updated [busi
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_businessscenario"
+  "name": "update_businessscenario",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
 ``` http

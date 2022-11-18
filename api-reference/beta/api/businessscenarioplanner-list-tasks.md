@@ -58,13 +58,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_businessscenariotask"
+  "name": "list_businessscenariotask",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks
 ```
-
 
 ### Response
 

@@ -31,8 +31,16 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+For a specific localization based on a business scenario ID:
+
 ``` http
 DELETE /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}
+```
+
+For a specific localization based on the unique name of a business scenario:
+
+``` http
 DELETE /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}
 ```
 
@@ -57,7 +65,8 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_plannerplanconfigurationlocalization"
+  "name": "delete_plannerplanconfigurationlocalization",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d", "en-us"]
 }
 -->
 ``` http
