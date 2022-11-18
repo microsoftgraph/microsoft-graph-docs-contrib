@@ -41,7 +41,7 @@ Where does this statement come in:
 Azure AD supports policies that are scopes either to the directory or to a directory role. Both these policy scopes include the 17 pre-defined but updatable rules.
 -->
 
-## Activation rules
+### Activation rules
 
 1. Screenshot image with numberings
 
@@ -53,6 +53,7 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 | 2 | `Approval_EndUser_Assignment`              |                             |        |
 | 3 | `Expiration_EndUser_Assignment`            |                             |        |
 | 4 | `Enablement_Admin_Eligibility`             |                             |        |
+
 
 ## Assignment rules
 

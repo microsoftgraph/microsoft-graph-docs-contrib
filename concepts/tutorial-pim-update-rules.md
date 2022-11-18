@@ -11,6 +11,8 @@ ms.prod: "applications"
 
 The following article provides examples for updating different rules that are assigned to Azure AD roles through privileged identity management. To understand the structure of role settings in PIM, see [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identitygovernance-pim-rules-overview.md).
 
+When updating the rules, you must include the @odata.type for the derived type.
+
 If successful, all requests return `204 No Content` response codes.
 
 ## Prerequisites
