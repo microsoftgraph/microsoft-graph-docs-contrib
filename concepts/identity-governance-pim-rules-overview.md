@@ -43,28 +43,49 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ### Activation rules
 
-1. Screenshot image with numberings
+:::image type="content" source="includes/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation.png" alt-text="PIM activation settings on the Azure portal":::
 
-<!-- Author in Excel than copy/paste-->
+<!-- Author in Excel then copy/paste-->
 
-|   | Microsoft Graph rule ID                    | Azure portal UX description | Caller |
-|----|---------------------------------------------|------------------------------|---------|
-| 1 | `AuthenticationContext_EndUser_Assignment` |                             |        |
-| 2 | `Approval_EndUser_Assignment`              |                             |        |
-| 3 | `Expiration_EndUser_Assignment`            |                             |        |
-| 4 | `Enablement_Admin_Eligibility`             |                             |        |
-
+|                 | Microsoft Graph rule ID                    | Azure portal UX description | Caller |
+|------------------|---------------------------------------------|------------------------------|---------|
+| ![one][one]     | `AuthenticationContext_EndUser_Assignment` |                             |        |
+| ![two][two]     | `Approval_EndUser_Assignment`              |                             |        |
+| ![three][three] | `Expiration_EndUser_Assignment`            |                             |        |
+| ![four][four]   | `Enablement_Admin_Eligibility`             |                             |        |
 
 ## Assignment rules
 
+:::image type="content" source="includes/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment.png" alt-text="PIM assignment settings on the Azure portal":::
 
+<!-- Author table in Excel then copy/paste-->
 
 ## Notification rules
 
+:::image type="content" source="includes/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification.png" alt-text="PIM notification settings on the Azure portal":::
 
+<!-- Author table in Excel then copy/paste-->
 
 ## See also
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
 + []
+
+[one]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-1.png
+[two]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-2.png
+[three]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-3.png
+[four]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-4.png
+[five]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-5.png
+[six]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-6.png
+[seven]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-7.png
+[eight]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-8.png
+[nine]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-9.png
+[ten]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-10.png
+[eleven]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-11.png
+[twelve]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-12.png
+[thirteen]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-12.png
+[fourteen]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-14.png
+[fifteen]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-15.png
+[sixteen]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-16.png
+[seventeen]: includes/identity-governance-pim-ux-role-rules-screenshots/circle-17.png
 
