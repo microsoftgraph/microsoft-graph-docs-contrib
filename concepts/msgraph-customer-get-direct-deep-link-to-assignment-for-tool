@@ -1,0 +1,37 @@
+---
+title: "Get direct deep link to the assignment"
+description: "Get direct deep link to the assignment for reporting, communication and automation tools."
+ms.localizationpriority: medium
+author: "ashwani-bansal"
+ms.prod: "education"
+doc_type: conceptualPageType
+---
+
+# Get direct deep link to the assignment
+
+## Scenario
+
+Education institutions have custom tools that are used for the students, user needs to provide a direct deep link to the assignment, so students can directly view more details or complete the given assignment.
+
+**Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
+
+## API to use for classes and members information
+
+All the assignments and grades information is part of the team in Microsoft Teams. You can get information about classes, members, and roles (student or teacher) in a team by using the following Teams APIs:
+
+- [List classes of an educationSchools](/graph/api/educationschool-list-classes): Returns a list of all classes in your education tenant.
+- [List members of an educationClass](/graph/api/educationclass-list-members): Lists information about members of a specific class.
+
+After you get the relevant class and member information, you can get the assignment and grade information that you need.
+
+## Direct deep link for the assignment
+
+The [Assignment Property](/graph/api/resources/educationassignment#properties) webURL returns the authenticated deep link to the selected assignments. For user within Teams it will open the assignment directly.
+
+## Direct deep link for the submission
+
+The [Submission Property](/graph/api/resources/educationsubmission#properties) webURL returns the authenticated deep link to the submission.
+
+## Permissions required
+
+Assignments APIs supports both delegated (per user) and AppOnly (per App) permission. For ease of use for the student and teacher Apponly is preferred as this allows for only approval of your app to retrieve data.
