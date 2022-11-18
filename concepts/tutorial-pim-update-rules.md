@@ -9,7 +9,7 @@ ms.prod: "applications"
 
 # Use privileged identity management (PIM) APIs in Microsoft Graph to update Azure AD rules
 
-The following article provides examples for updating different rules that are assigned to Azure AD roles through privileged identity management. To understand the structure of role settings in PIM, see [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identitygovernance-pim-rules-overview.md).
+The following article provides examples for updating different rules that are assigned to Azure AD roles through privileged identity management. To understand the structure of role settings in PIM, see [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md).
 
 When updating the rules, you must include the @odata.type for the derived type.
 
@@ -53,3 +53,13 @@ Content-Type: application/json
 ```
 
 ## Example 2: 
+
+
+
+
+
+## See also
+
++ [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
++ [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md)
++ [Configure Azure AD role settings in Privileged Identity Management - Azure portal](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings)
