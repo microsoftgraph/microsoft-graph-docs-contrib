@@ -13,30 +13,30 @@ Education institutions have custom tools that need data from assignments and gra
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
-## API to use for classes and members information
+## Get classes and members information
 
-All Assignments and Grades information is provided in relation to Teams and Teams users. You have the ability to get information about all the classes in a Team and its members and the role they have in the team (student or teacher).
+Assignment and grade information is part of the team in Microsoft Teams. You can get information about classes, members, and roles (student or teacher) in a team by using the following APIs:
 
-- [List classes of an educationSchools](/graph/api/educationschool-list-classes) : If you need the class information, this API will give you all classes in your Education Tenant.
-- [List members of an educationClass](/graph/api/educationclass-list-members) : If you need the student and teachers of the class, this API will list all information about members of a given class.
+- [List classes of an educationSchools](/graph/api/educationschool-list-classes): Returns a list of all classes in your education tenant.
+- [List members of an educationClass](/graph/api/educationclass-list-members): Lists information about members of a specific class.
 
-Once you have the relevant class and user information, you can choose what information you need from the API in regard to assignments and grades.
+After you get the relevant class and member information, you can get the assignment and grade information that you need.
 
-## API to use for Class Assignments
+## Get class assignment information
 
-All assignments are connected to a class, and all students information is connected to the submission information. The key API’s that we provide for retrieving class assignments data are:
+All assignments and students' information are linked to class and submission information respectively. You can use the following APIs to retrieve information about class assignments:
 
-- [educationAssignment resource type](/graph/api/resources/educationassignment) : Allows you list and see all data for assignments in a class.
+- [educationAssignment resource type](/graph/api/resources/educationassignment) : Allows you to list and see all data for assignments in a class.
 
 - [educationSubmission resource type](/graph/api/resources/educationsubmission) : When you publish an assignment, the assignment will create a submissionid for each student that the assignment has been published to. This will allow you to get the [status](/graph/api/resources/educationsubmission#properties) of the submission, e.g. if it is turned in and graded, any resources that was submitted by the student ([resources](/graph/api/educationsubmissionresource-get)) and the grade([outcome](/graph/api/resources/educationoutcome)) for the submission.
 
-## API to use for student assignments
+## Get student assignment information
 
 A student is often in multiple classes within a school, and you often need to see the data for the student across classes. There is a unique API for this:
 
 - [List assignments of a user](/graph/api/educationuser-list-assignments): lists all assignments for a given user. You can use either this by a delegated user or the preferred way is to use AppOnly person to use  `/users/{user-id}`.
 
-## Permissions to think about
+## Permissions
 
 Assignments API supports both delegated (per user) and AppOnly (per App) permission. For ease of use for the student and teacher Apponly is preferred as this allows for only approval of your app to retrieve data.
 
