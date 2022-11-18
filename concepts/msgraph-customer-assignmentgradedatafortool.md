@@ -26,9 +26,9 @@ After you get the relevant class and member information, you can get the assignm
 
 All assignments and students' information are linked to class and submission information respectively. You can use the following APIs to retrieve information about class assignments:
 
-- [educationAssignment resource type](/graph/api/resources/educationassignment) : Allows you to list and see all data for assignments in a class.
+- [educationAssignment resource type](/graph/api/resources/educationassignment): Allows you to list and see all data for assignments in a class.
 
-- [educationSubmission resource type](/graph/api/resources/educationsubmission) : When you publish an assignment, the assignment will create a submissionid for each student that the assignment has been published to. This will allow you to get the [status](/graph/api/resources/educationsubmission#properties) of the submission, e.g. if it is turned in and graded, any resources that was submitted by the student ([resources](/graph/api/educationsubmissionresource-get)) and the grade([outcome](/graph/api/resources/educationoutcome)) for the submission.
+- [educationSubmission resource type](/graph/api/resources/educationsubmission): A **submission** is created for every student for whom an assignment is published. You can use this API to get the submission [status](/graph/api/resources/educationsubmission#properties) - that is, whether it was turned in and graded, [resources](/graph/api/educationsubmissionresource-get) submitted by the student, and the grade ([outcome](/graph/api/resources/educationoutcome)) for the submission.
 
 ## Get student assignment information
 
