@@ -456,6 +456,7 @@ Least privilege delegated permission: `Application.Read.All` and `AppRoleAssignm
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-1418d6908bcd/appRoleAssignedTo
+Content-Type: application/json
 
 {
     "principalId": "b8afc02cb-4d62-4dba-b536-9f6d73e9e26",
@@ -490,6 +491,62 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-
 
 ---
 
+## Manage application ownership
+
+As a best practice, we recommend auditing the apps in your tenant to ensure that there aren't any ownerless apps and service principals, and that all apps and service principals have least two owners.
+
+### Identify ownerless apps
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+This request also returns the count of the apps that match the filter condition.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-ownerless-apps"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications?$filter=owners/$count eq 0&$count=true
+ConsistencyLevel: eventual
+```
+
+### Identify ownerless service principals or without at least two owners
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+This request also returns the count of the apps that match the filter condition.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-ownerless-serviceprincipals"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=owners/$count eq 0 or owners/$count eq 1&$count=true
+ConsistencyLevel: eventual
+```
+
+### Assign an owner to an app
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for the user, group, or a service principal.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-assign-app-owner"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/applications/7b45cf6d-9083-4eb2-92c4-a7e090f1fc40/owners/$ref
+Content-Type: application/json
+
+{
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/8afc02cb-4d62-4dba-b536-9f6d73e9be26"
+}
+```
 
 ## See also
 
