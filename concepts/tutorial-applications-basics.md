@@ -574,7 +574,7 @@ ConsistencyLevel: eventual
 
 Least privilege delegated permission: `Application.ReadWrite.All`
 
-In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for the user, group, or a service principal.
+In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
 
 <!-- {
   "blockType": "request",
