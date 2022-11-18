@@ -12,8 +12,6 @@ displayname := "My legalHold with sources"
 requestBody.SetDisplayname(&displayname) 
 description := "Created from Graph API"
 requestBody.SetDescription(&description) 
-contentQuery := "Bazooka"
-requestBody.SetContentQuery(&contentQuery) 
 additionalData := map[string]interface{}{
 
 

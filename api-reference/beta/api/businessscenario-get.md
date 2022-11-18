@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /solutions/businessScenarios/{businessScenarioId}
+GET /solutions/businessScenarios/(uniqueName='{uniqueName}')
 ```
 
 ## Optional query parameters

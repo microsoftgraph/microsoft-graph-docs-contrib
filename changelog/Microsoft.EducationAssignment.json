@@ -1,5 +1,73 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "educationFeedbackResourceOutcomeStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationFeedbackResourceOutcomeStatus** enumeration type.",
+          "Target": "educationFeedbackResourceOutcomeStatus"
+        },
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Property",
+          "ChangedApiName": "feedbackResourcesFolderUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **feedbackResourcesFolderUrl** property to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationFeedbackResourceOutcome",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationFeedbackResourceOutcome](https://learn.microsoft.com/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "educationFeedbackResourceOutcome"
+        },
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpFeedbackResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpFeedbackResourcesFolder](https://learn.microsoft.com/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-1.0) method to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter` query parameter for the [List outcomes](https://learn.microsoft.com/graph/api/educationsubmission-list-outcomes?view=graph-rest-1.0) method.",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-11-01T17:22:42.5007887Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "392fd7c1-35e6-4162-ad6e-a4754cdf2d95",
+          "ApiChange": "Property",
+          "ChangedApiName": "webUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **webUrl** property to the [educationSubmission](https://learn.microsoft.com/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "392fd7c1-35e6-4162-ad6e-a4754cdf2d95",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-01T17:50:21.2564873Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -184,7 +252,7 @@
       "ChangeList": [
         {
           "Id": "0089a052-0ffa-47ba-a8c0-9fad7f1ae0cc",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "educationFeedbackResourceOutcomeStatus",
           "ChangeType": "Addition",
           "Description": "Added the **educationFeedbackResourceOutcomeStatus** enumeration type.",

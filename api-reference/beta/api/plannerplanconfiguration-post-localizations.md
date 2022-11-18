@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations
+POST /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration/localizations
 ```
 
 ## Request headers
@@ -48,12 +49,11 @@ In the request body, supply a JSON representation of the [plannerPlanConfigurati
 
 You can specify the following properties when you create a **plannerPlanConfigurationLocalization**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|buckets|[plannerPlanConfigurationBucketLocalization](../resources/plannerplanconfigurationbucketlocalization.md) collection|**TODO: Add Description** Optional.|
-|languageTag|String|**TODO: Add Description** Optional.|
-|planTitle|String|**TODO: Add Description** Optional.|
+|buckets|[plannerPlanConfigurationBucketLocalization](../resources/plannerplanconfigurationbucketlocalization.md) collection|Localizations for buckets specified in the [plannerPlanConfiguration](../resources/plannerplanconfiguration.md). Required.|
+|languageTag|String|The code for the language the localized data is intended for. Required.|
+|planTitle|String|Localized title of the plan. Required.|
 
 ## Response
 
