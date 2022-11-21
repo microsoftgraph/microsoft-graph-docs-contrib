@@ -677,7 +677,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "region",
           "ChangeType": "Change",
-          "Description": "Change the region value format from GUID to 3-letter region code.",
+          "Description": "Changed the region value format from GUID to 3-letter region code.",
           "Target": "searchResponse"
         }
       ],
