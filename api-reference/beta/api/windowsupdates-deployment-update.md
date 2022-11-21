@@ -40,7 +40,6 @@ PATCH /admin/windows/updates/deployments/{deploymentId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [deployment](../resources/windowsupdates-deployment.md) object.
 
 The following table shows the properties that can be set when you update a [deployment](../resources/windowsupdates-deployment.md).
 
@@ -48,7 +47,6 @@ The following table shows the properties that can be set when you update a [depl
 |:---|:---|:---|
 |state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|Execution status of the deployment.|
 |settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings specified on the specific deployment governing how to deploy deployment `content`.|
-
 
 ## Response
 

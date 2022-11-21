@@ -36,7 +36,6 @@ To learn more about schedule settings, see [Schedule a deployment](windowsupdate
 
 You can use [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings) to configure alerts and automated actions to take based on update signals from devices. Monitoring settings can be configured for deployments of feature updates.
 
-
 To learn more about monitoring settings, see [Manage monitoring rules](windowsupdates-manage-monitoring-rules.md).
 
 ### User experience

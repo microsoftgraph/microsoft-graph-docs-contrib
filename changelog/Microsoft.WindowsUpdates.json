@@ -595,14 +595,6 @@
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "device",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource type.",
-                    "Target": "device"
-                },
-                {
-                    "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
-                    "ApiChange": "Resource",
                     "ChangedApiName": "driverUpdateCatalogEntry",
                     "ChangeType": "Addition",
                     "Description": "Added the [driverUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdatecatalogentry?view=graph-rest-beta) resource type.",

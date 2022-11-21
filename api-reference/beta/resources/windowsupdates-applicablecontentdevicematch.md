@@ -1,6 +1,6 @@
 ---
 title: "applicableContentDeviceMatch resource type"
-description: "Represents a collection of devices and recommendations for applicable catalog content."
+description: "Represents a collection of devices and recommendations for the applicable catalog content."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of devices and recommendations for applicable catalog content.
+Represents a collection of devices and recommendations for the applicable catalog content.
 
 ## Properties
 | Property      | Type              | Description                                      |
