@@ -1,9 +1,9 @@
 ---
 title: "Get softwareOathAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a softwareOathAuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "jpettere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object.
+Read the properties and relationships of a [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object, which represents the Third-Party Software OATH authentication method policy for the Azure AD tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /softwareOathAuthenticationMethodConfiguration
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/softwareOath
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/softwareOathAuthenticationMethodConfiguration
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/softwareOath
 ```
 
 
@@ -78,8 +78,16 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethodConfiguration",
-    "id": "d64e6fcb-c13b-624d-8944-47606d03b0c8",
-    "state": "String",
+    "id": "SoftwareOath",
+    "state": "enabled",
+    "includeTargets": [
+      {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false,
+          "isUsableForSignIn": true
+      }
+    ],
     "excludeTargets": [
       {
         "@odata.type": "microsoft.graph.excludeTarget"
