@@ -135,7 +135,7 @@ With `select` and `expand` statements, you can retrieve sitePage metadata and pa
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}?select=id,title,expand=webparts
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}?select=id,title&expand=webparts
 ```
 
 #### Response
