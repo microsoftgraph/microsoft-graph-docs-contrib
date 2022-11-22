@@ -1,4 +1,10 @@
-# How to write an interactive message app within your own application?
+---
+title: "How to write an interactive message app within your own application?"
+description: "This article shows how you can embed the Microsoft Teams experience within your own application, so users do not need to constantly switch between your own application and the Microsoft Teams application. Instead, users can read and send Microsoft Teams messages directly within your own application."
+author: "v-erichui"
+ms.localizationpriority: high
+ms.prod: "microsoft-teams"
+---
 
 # Introduction
 
