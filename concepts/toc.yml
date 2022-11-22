@@ -21,7 +21,7 @@ items:
             href: https://developer.microsoft.com/graph/changelog
             displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
       - name: Try the APIs
-        href: graph-explorer-overview.md
+        href: graph-explorer/graph-explorer-overview.md
       - name: Quick start
         href: https://developer.microsoft.com/graph/quick-start
         displayName: quickstart
