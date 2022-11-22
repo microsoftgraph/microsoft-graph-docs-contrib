@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set a single portal notification status to published by modifying the **isPortalNotificationSent** property to `true` for the user specified in the request.
+Set a single portal notification status to published by modifying the **isPortalNotificationSent** property to `true` for the user specified in the request. Portal refers to Microsoft Endpoint Manager admin center.
 
 ## Permissions
 

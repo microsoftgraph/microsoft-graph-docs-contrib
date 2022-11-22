@@ -1,6 +1,6 @@
 ---
 title: "monitoring resource type"
-description: "Represents the entry point entity type to access all alert-related resources. The monitoring APIs provide a programatic alert experience in Microsoft Endpoint Manager(MEM) admin center. MEM admins could create alert rules with prefered notification channels, like email and MEM portal notification, and receive alerts when conditions set in alert rules are met. Each alert will be recorded as an alert record. Admins could review created alert records to learn about alert impact, severity, status and more. Only MEM global admin, Intune admin and Cloud PC admin have access to monitoring APIs."
+description: "Represents the entry point entity type to access all alert-related resources."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point entity type to access all alert-related resources.
+Represents the entry point entity type to access all alert-related resources. The monitoring APIs provide a programmatic alert experience in Microsoft Endpoint Manager admin center. Microsoft Endpoint Manager admins could create alert rules with preferred notification channels, like email and Microsoft Endpoint Manager admin center notification, and receive alerts when conditions set as thresholds in alert rules are met. Each alert will be recorded as an alert record. Admins could review created alert records to learn about alert impact, severity, status and more. Only global admin, Intune admin, Windows 365 admin and Cloud PC admin have access to monitoring APIs.
+
+This API set allows admins to set up rules and alert issues with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections. Currently the API set only supports Windows 365 scenarios.
 
 ## Properties
 
