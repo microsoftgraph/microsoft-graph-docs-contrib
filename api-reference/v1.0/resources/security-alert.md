@@ -16,8 +16,6 @@ This resource corresponds to the latest generation of alerts in the Microsoft Gr
 
 When detecting a threat, a security provider creates an alert in the system. Microsoft 365 Defender pulls this alert data from the security provider, and consumes the alert data to return valuable clues in an [alert](security-alert.md) resource about any related attack, impacted assets, and associated [evidence](security-alertevidence.md). It automatically correlates other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
-[!INCLUDE [alerts-callout-two-types](../includes/alerts-callout-two-types.md)]
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
