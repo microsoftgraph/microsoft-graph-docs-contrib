@@ -1,29 +1,25 @@
 ---
-title: "ipEvidence resource type"
-description: "An IP Address that is reported in the alert as evidence."
-ms.date: 09/09/2021
+title: "urlEvidence resource type"
+description: "A url that is reported in the alert as evidence."
+ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-
-# ipEvidence resource type
+# urlEvidence resource type
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-An IP Address that is reported in the alert as evidence.
+A URL that is reported in the alert as evidence.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ipAddress|String|The value of the IP Address, can be either in V4 address or V6 address format.|
-|countryLetterCode|String|The two-letter country code according to ISO 3166 format, for example: `US`, `UK`, `CA`, etc..).|
+|url|String|The Unique Resource Locator (URL).|
 
 ## Relationships
 None.
@@ -32,12 +28,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.ipEvidence"
+  "@odata.type": "microsoft.graph.security.urlEvidence"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.ipEvidence",
+  "@odata.type": "#microsoft.graph.security.urlEvidence",
   "createdDateTime": "String (timestamp)",
   "verdict": "String",
   "remediationStatus": "String",
@@ -48,6 +44,6 @@ The following is a JSON representation of the resource.
   "tags": [
     "String"
   ],
-  "ipAddress": "String"
+  "url": "String"
 }
 ```

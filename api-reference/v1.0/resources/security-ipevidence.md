@@ -1,7 +1,7 @@
 ---
 title: "ipEvidence resource type"
 description: "An IP Address that is reported in the alert as evidence."
-ms.date: 09/09/2021
+ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,8 +12,6 @@ doc_type: resourcePageType
 # ipEvidence resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An IP Address that is reported in the alert as evidence.
 

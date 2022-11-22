@@ -1,7 +1,7 @@
 ---
 title: "List incidents"
 description: "Get a list of the incident objects and their properties."
-ms.date: 09/09/2021
+ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -10,8 +10,6 @@ doc_type: apiPageType
 
 # List incidents
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender has created to track attacks in an organization.
 
@@ -83,7 +81,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/incidents
+GET https://graph.microsoft.com/v1.0/security/incidents
 ```
 
 # [C#](#tab/csharp)
