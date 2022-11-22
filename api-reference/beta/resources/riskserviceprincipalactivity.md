@@ -1,17 +1,18 @@
 ---
-title: "riskyServicePrincipalActivity resource type"
-description: author
+title: "riskServicePrincipalActivity resource type"
+description: "Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection."
 author: "ebasseri"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# riskUserActivity resource type
+# riskServicePrincipalActivity resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection. 
 
 ## Properties
 
@@ -25,12 +26,12 @@ Namespace: microsoft.graph
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.riskyServicePrincipalActivity"
+  "@odata.type": "microsoft.graph.riskServicePrincipalActivity"
 }-->
 ```json
 {
-    "eventTypes": ["String"],
-    "detail": "string"
+    "riskEventTypes": ["String"],
+    "detail": "String"
 }
 ```
 <!--
