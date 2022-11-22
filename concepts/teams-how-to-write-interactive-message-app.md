@@ -36,7 +36,7 @@ The system diagram below shows the suggested high-level architecture. It has thr
 
 Please note that this is a service-to-service architecture, with Microsoft Teams APIs communicating with the server component, not directly with the UI. There are two benefits of having the server component in between in the backend. One benefit is that it can persist all historical messages in the cache in the backend, so your UI can be lightweight; caching all (not just the recent) messages on the UI layer may not be feasible when you have many messages. Another benefit is when Microsoft Teams APIs send the change notification (see Step 5 below), it requires an URL, and your UI, such as the users' mobile phone, may not have an URL. The server component, however, can have a webhook URL.
 
-Once these system components are all set up, you can start using Microsoft Teams APIs as described in the following steps. ![Shape1](RackMultipart20221122-1-9yn0rr_html_79a0814b2b0f7524.gif)
+Once these system components are all set up, you can start using Microsoft Teams APIs as described in the following steps. ![System Diagram](images/teams-how-to-write-interactive-message-app-system-diagram.png)
 
 ## Step 1: Create a new chat
 
