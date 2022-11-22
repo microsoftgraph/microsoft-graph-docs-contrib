@@ -30,9 +30,9 @@ At a high level, the example consists of the following:
 
 The system diagram below shows the suggested high-level architecture. It has three components that should be added to your existing application system if not already:
 
-1. There is a **server component** that is ready to make API requests (e.g., POST chats, POST messages, etc.) to and process API requests (e.g., change notifications) from Microsoft Teams APIs. To learn how to set it up, please visit the [[Quick Start](https://developer.microsoft.com/graph/quick-start)], [[Tutorials](https://learn.microsoft.com/en-us/graph/tutorials)], and [[Authentication and authorization basics](https://learn.microsoft.com/en-us/graph/auth/auth-concepts)] first.
-2. There is a **cache** that is ready to cache messages. To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times, by storing messages in this cache. You do not want to be surprised by the API consumption bill later, so make sure you do not skip building this cache. To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management | Microsoft Learn](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-cache).
-3. There is a new **chat user interface (UI)** that can communicate with the server component to get user inputs and display messages. The server component would communicate to it when there is a new message. One way to implement the communication is using ASP.NET's [[SignalR](https://learn.microsoft.com/en-us/aspnet/signalr/overview/getting-started/introduction-to-signalr)].
+1. There is a **server component** that is ready to make API requests (e.g., POST chats, POST messages, etc.) to and process API requests (e.g., change notifications) from Microsoft Teams APIs. To learn how to set it up, please visit the [Quick Start](https://developer.microsoft.com/graph/quick-start), [Tutorials](/graph/tutorials), and [Authentication and authorization basics](/graph/auth/auth-concepts) first.
+2. There is a **cache** that is ready to cache messages. To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times, by storing messages in this cache. You do not want to be surprised by the API consumption bill later, so make sure you do not skip building this cache. To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
+3. There is a new **chat user interface (UI)** that can communicate with the server component to get user inputs and display messages. The server component would communicate to it when there is a new message. One way to implement the communication is using ASP.NET's [SignalR](/aspnet/signalr/overview/getting-started/introduction-to-signalr).
 
 Please note that this is a service-to-service architecture, with Microsoft Teams APIs communicating with the server component, not directly with the UI. There are two benefits of having the server component in between in the backend. One benefit is that it can persist all historical messages in the cache in the backend, so your UI can be lightweight; caching all (not just the recent) messages on the UI layer may not be feasible when you have many messages. Another benefit is when Microsoft Teams APIs send the change notification (see Step 5 below), it requires an URL, and your UI, such as the users' mobile phone, may not have an URL. The server component, however, can have a webhook URL.
 
@@ -40,7 +40,7 @@ Once these system components are all set up, you can start using Microsoft Teams
 
 ## Step 1: Create a new chat
 
-Before sending a new [[chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0)], a [[chat](https://learn.microsoft.com/en-us/graph/api/resources/chat)] must first be created, by assigning [[members](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-1.0)] to the new chat. Below is an example of a "oneOnOne" chat. More examples with a different chatType can be found at [[Create Chat](https://learn.microsoft.com/en-us/graph/api/chat-post)].
+Before sending a new [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-1.0), a [chat](/graph/api/resources/chat) must first be created, by assigning [members](/graph/api/resources/conversationmember?view=graph-rest-1.0] to the new chat. Below is an example of a "oneOnOne" chat. More examples with a different chatType can be found at [Create Chat](/graph/api/chat-post].
 
 Request:
 
@@ -100,7 +100,7 @@ Content-Type: application/json
 
 ## Step 2: Send a message in the chat
 
-Members within the chat can then send messages to each other. Below is an example of a simple message. More advanced examples can be found at [[Send chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-post)].
+Members within the chat can then send messages to each other. Below is an example of a simple message. More advanced examples can be found at [Send chatMessage](/graph/api/chatmessage-post].
 
 Request:
 
@@ -202,7 +202,7 @@ Content-type: application/json
 
 }
 
-Members within the chat can also send **images** to each other. Below is an example. More advanced examples, including other media, such as file attachments and adaptive cards, can be found at [[Send chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-post)].
+Members within the chat can also send **images** to each other. Below is an example. More advanced examples, including other media, such as file attachments and adaptive cards, can be found at [Send chatMessage](/graph/api/chatmessage-post].
 
 Request:
 
@@ -316,22 +316,22 @@ Content-type: application/json
 
 ## Step 3: Retrieve messages
 
-Messages can be retrieved using the GET HTTP method on the [[chatMessages](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage)] resource.
+Messages can be retrieved using the GET HTTP method on the [chatMessages](/graph/api/resources/chatmessage] resource.
 
 To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times. Thus, retrieving messages using the GET HTTP method described in this step should only be used initially as a one-time export or when you need to restore your system during rare occasions. Otherwise, you should rely on your cache (see Step 4 below) and change notifications (see Step 5 below).
 
 Microsoft Graph offers several ways to retrieve chat messages:
 
-- [[per-chat](https://learn.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-1.0&tabs=http)]:
+- [per-chat](/graph/api/chat-list-messages?view=graph-rest-1.0&tabs=http]:
   - GET /chats/{chat-id}/messages
-- [[per-user, across all chats](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-1.0&tabs=http)]:
+- [per-user, across all chats](/graph/api/chatmessage-get?view=graph-rest-1.0&tabs=http]:
   - GET /users/{user-id | user-principal-name}/chats/getAllMessages
-- [[per-user, for a given chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-1.0&tabs=http)]:
+- [per-user, for a given chat](/graph/api/chatmessage-get?view=graph-rest-1.0&tabs=http]:
   - GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages
 
-If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, per-chat may be a better option, but you would need to implement the **access control logic** yourself. That is, you would need to check whether the users are [[members](https://learn.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-1.0&tabs=http)] of the chats and let only members access the chats to which they belong.
+If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, per-chat may be a better option, but you would need to implement the **access control logic** yourself. That is, you would need to check whether the users are [members](/graph/api/chat-list-members?view=graph-rest-1.0&tabs=http] of the chats and let only members access the chats to which they belong.
 
-Below is an example of **per-chat**. By default, the returned list of messages is sorted by lastModifiedDateTime. However, for this example, sorting by [[createdDateTime](https://learn.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-1.0&tabs=http#example-3-list-chat-messages-sorted-by-creation-date)] is more appropriate. The sorting is specified in the orderBy query parameter in the request.
+Below is an example of **per-chat**. By default, the returned list of messages is sorted by lastModifiedDateTime. However, for this example, sorting by [createdDateTime](/graph/api/chat-list-messages?view=graph-rest-1.0&tabs=http#example-3-list-chat-messages-sorted-by-creation-date] is more appropriate. The sorting is specified in the orderBy query parameter in the request.
 
 Request:
 
@@ -503,11 +503,11 @@ Content-type: application/json
 
 The " **contentType**" can be either "text" or "html", so make sure your application can display both accordingly.
 
-To get **images** embedded in the chat message, you will make a second call to retrieve [[chatMessageHostedContent](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagehostedcontent?view=graph-rest-1.0)], as described on [Get chatMessageHostedContent - Microsoft Graph v1.0 | Microsoft Learn.](https://learn.microsoft.com/en-us/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0&tabs=http)
+To get **images** embedded in the chat message, you will make a second call to retrieve [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent?view=graph-rest-1.0], as described on [Get chatMessageHostedContent - Microsoft Graph v1.0 | Microsoft Learn.](/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0&tabs=http)
 
-If you are also running a **data loss prevention (DLP)** app, which monitors chats for messages that contain data that users are not supposed to send, you will use [[chatMessage.policyViolation.dlpAction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-1.0)] to hide or flag the messages accordingly. The valid values are "None", "NotifySender", and "BlockAccess". "BlockAccessExternal" is not used today and is ignored by Microsoft Teams. Please refer to [chatMessagePolicyViolation resource type - Microsoft Graph v1.0 | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-1.0) for the definition of these values.
+If you are also running a **data loss prevention (DLP)** app, which monitors chats for messages that contain data that users are not supposed to send, you will use [chatMessage.policyViolation.dlpAction](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-1.0] to hide or flag the messages accordingly. The valid values are "None", "NotifySender", and "BlockAccess". "BlockAccessExternal" is not used today and is ignored by Microsoft Teams. Please refer to [chatMessagePolicyViolation resource type - Microsoft Graph v1.0 | Microsoft Learn](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-1.0) for the definition of these values.
 
-Some messages are [[**system messages**](https://learn.microsoft.com/en-us/graph/system-messages)]. For example, the following system message shows that there is a new member joining the chat.
+Some messages are [**system messages**](/graph/system-messages]. For example, the following system message shows that there is a new member joining the chat.
 
 {
 
@@ -621,7 +621,7 @@ Instead of getting all messages
 
 ## Step 4: Cache messages
 
-Each message you get it through [getAllMessages] or [[change notification](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-1.0)] is subject to charge by Microsoft Graph, so you will want to avoid reading the same message multiple times. We recommend caching the messages on your server. To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management | Microsoft Learn](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-cache).
+Each message you get it through [getAllMessages] or [change notification](/graph/api/resources/changenotificationcollection?view=graph-rest-1.0] is subject to charge by Microsoft Graph, so you will want to avoid reading the same message multiple times. We recommend caching the messages on your server. To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management | Microsoft Learn](/azure/api-management/api-management-howto-cache).
 
 ## Step 5: Subscribe to change notifications
 
@@ -636,9 +636,9 @@ Microsoft Graph offers several kinds of change notifications for messages:
 - per-app:
   - "resource": "/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages"
 
-If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, consider how many different chats you'll need to track. If you use per-chat change notifications, there's a [[limit](https://learn.microsoft.com/en-us/graph/webhooks#teams-resource-limitations)] (e.g. 10,000) on the number of [[subscriptions](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta)]. Instead, consider subscribing to per-app or per-tenant, which covers all the messages in the chats of your Microsoft Teams app or tenant. Furthermore, unless you are using per-user, the notes about access control logic described in [Step 3: Retrieve messages] above are applicable to the change notifications here as well.
+If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, consider how many different chats you'll need to track. If you use per-chat change notifications, there's a [limit](/graph/webhooks#teams-resource-limitations] (e.g. 10,000) on the number of [subscriptions](/graph/api/resources/subscription?view=graph-rest-beta]. Instead, consider subscribing to per-app or per-tenant, which covers all the messages in the chats of your Microsoft Teams app or tenant. Furthermore, unless you are using per-user, the notes about access control logic described in [Step 3: Retrieve messages] above are applicable to the change notifications here as well.
 
-Below is an example to get all messages **per-tenant**. More details can be found on [[Create subscription]](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). As mentioned at the bottom of [[Create subscription]](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http), before trying the example below, the subscription notification endpoint (specified in the notificationUrl property) must be capable of responding to a validation request as described in [[Set up notifications for changes in user data](https://learn.microsoft.com/en-us/graph/webhooks#notification-endpoint-validation)]. If validation fails, the request to create the subscription returns a 400 Bad Request error.
+Below is an example to get all messages **per-tenant**. More details can be found on [Create subscription]](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). As mentioned at the bottom of [Create subscription]](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http), before trying the example below, the subscription notification endpoint (specified in the notificationUrl property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation]. If validation fails, the request to create the subscription returns a 400 Bad Request error.
 
 Request:
 
@@ -698,7 +698,7 @@ When designing the user experience, please take into account that, for most mess
 
 ## Step 6: Renew change notifications subscriptions
 
-For security reasons, subscriptions for chatMessage expire in 60 minutes, as described on [subscription resource type - Microsoft Graph v1.0 | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type). We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions. Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their expirationDateTime, as described on [Update subscription - Microsoft Graph v1.0 | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0&tabs=http#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications. Below is an example.
+For security reasons, subscriptions for chatMessage expire in 60 minutes, as described on [subscription resource type - Microsoft Graph v1.0 | Microsoft Learn](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type). We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions. Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their expirationDateTime, as described on [Update subscription - Microsoft Graph v1.0 | Microsoft Learn](/graph/api/subscription-update?view=graph-rest-1.0&tabs=http#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications. Below is an example.
 
 Request:
 
@@ -752,7 +752,7 @@ Content-type: application/json
 
 ## Step 7: Receive and decrypt change notifications
 
-Whenever there is a change to the subscribed resource, a [[change notification](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-1.0)] is sent to the notificationUrl (provided in the subscription creation above). For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Update subscription - Microsoft Graph beta | Microsoft Learn.](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta&tabs=http)
+Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection?view=graph-rest-1.0] is sent to the notificationUrl (provided in the subscription creation above). For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Update subscription - Microsoft Graph beta | Microsoft Learn.](/graph/api/subscription-update?view=graph-rest-beta&tabs=http)
 
 Request (sent by Microsoft Graph):
 
@@ -826,7 +826,7 @@ Decrypted content:
 
 }
 
-Change notifications are sometimes delivered out of order, due to their asynchronous nature. If your application requires the resources to be sorted in a particular order, make sure you are sorting the decrypted content by the appropriate property. For example, if the messages should be displayed in chronological order in your chat application, you will sort the decrypted [[chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0)] by createdDateTime.
+Change notifications are sometimes delivered out of order, due to their asynchronous nature. If your application requires the resources to be sorted in a particular order, make sure you are sorting the decrypted content by the appropriate property. For example, if the messages should be displayed in chronological order in your chat application, you will sort the decrypted [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-1.0] by createdDateTime.
 
 When a chat message is edited, a change notification is sent for the edit, with an updated "lastEditedDateTime". Your chat application should display the edited message instead of the original message, if it is meant to display the latest version of messages.
 
@@ -834,9 +834,9 @@ The notes about contentType, images, data loss preventin (DLP), and system messa
 
 ## Step 8: Get and set viewpoints
 
-A [viewpoint](https://learn.microsoft.com/en-us/graph/api/resources/chatviewpoint?view=graph-rest-1.0) in a chat marks the timestamp at which the chat was last read by the users, so users can easily tell that any messages under the viewpoint are unread.
+A [viewpoint](/graph/api/resources/chatviewpoint?view=graph-rest-1.0) in a chat marks the timestamp at which the chat was last read by the users, so users can easily tell that any messages under the viewpoint are unread.
 
-To get the viewpoint of a chat, use the GET HTTP method on the [[chats](https://learn.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-1.0&tabs=http#code-try-1)] resource. Here is an example.
+To get the viewpoint of a chat, use the GET HTTP method on the [chats](/graph/api/chat-get?view=graph-rest-1.0&tabs=http#code-try-1] resource. Here is an example.
 
 Request:
 
@@ -898,18 +898,15 @@ PATCH /chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/viewpoint
 
 You can also add more advanced features in your chat application by:
 
-- [[Adding reactions to chat messages](https://learn.microsoft.com/en-us/graph/api/chatmessage-setreaction?view=graph-rest-beta)], such as thumbs up and smileys.
-- [[Adding images, attachments, HTML styling, adaptive cards to chat messages](https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-1.0&tabs=http#examples)], so messages can contact rich contents.
-- [[Adding mentions to chat messages](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagemention?view=graph-rest-1.0)], so specific users can be tagged with "@".
-- [[Enabling resource-specific consent](https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/rsc/resource-specific-consent)], so users have access to only chats that are meant for them.
-- [[Hiding a chat from](https://learn.microsoft.com/en-us/graph/api/chat-hideforuser?view=graph-rest-beta&tabs=http)users] to declutter the chat list.
-- [[Removing a member from a](https://learn.microsoft.com/en-us/graph/api/chat-delete-members?view=graph-rest-1.0&tabs=http)chat] when it is no longer needed to them.
-- [[Installing an app within chat](https://learn.microsoft.com/en-us/graph/api/chat-post-installedapps?view=graph-rest-1.0&tabs=http)], so users can use the app within the chat
-- [[Pinning a tab in the chat](https://learn.microsoft.com/en-us/graph/api/chat-post-tabs?view=graph-rest-1.0&tabs=http)], so users can switch to the app easily
+- [Adding reactions to chat messages](/graph/api/chatmessage-setreaction?view=graph-rest-beta], such as thumbs up and smileys.
+- [Adding images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?view=graph-rest-1.0&tabs=http#examples], so messages can contact rich contents.
+- [Adding mentions to chat messages](/graph/api/resources/chatmessagemention?view=graph-rest-1.0], so specific users can be tagged with "@".
+- [Enabling resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent], so users have access to only chats that are meant for them.
+- [Hiding a chat from](/graph/api/chat-hideforuser?view=graph-rest-beta&tabs=http)users] to declutter the chat list.
+- [Removing a member from a](/graph/api/chat-delete-members?view=graph-rest-1.0&tabs=http)chat] when it is no longer needed to them.
+- [Installing an app within chat](/graph/api/chat-post-installedapps?view=graph-rest-1.0&tabs=http], so users can use the app within the chat
+- [Pinning a tab in the chat](/graph/api/chat-post-tabs?view=graph-rest-1.0&tabs=http], so users can switch to the app easily
 
 ## Related articles
 
-- [Bring Microsoft Teams (Chats & Channel) collaboration to your Apps by leveraging Microsoft Graph](https://mybuild.microsoft.com/en-US/sessions/b7c008ab-69eb-40d5-a170-5dd9db57f022)
-
-![Shape2](RackMultipart20221122-1-9yn0rr_html_4e3a067e4a1793f2.gif)
-
+- [Bring Microsoft Teams (Chats & Channel) collaboration to your Apps by leveraging Microsoft Graph](https://mybuild.microsoft.com/sessions/b7c008ab-69eb-40d5-a170-5dd9db57f022)
