@@ -638,7 +638,7 @@ Microsoft Graph offers several kinds of change notifications for messages:
 
 If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, consider how many different chats you'll need to track. If you use per-chat change notifications, there's a [limit](/graph/webhooks#teams-resource-limitations] (e.g. 10,000) on the number of [subscriptions](/graph/api/resources/subscription?view=graph-rest-beta]. Instead, consider subscribing to per-app or per-tenant, which covers all the messages in the chats of your Microsoft Teams app or tenant. Furthermore, unless you are using per-user, the notes about access control logic described in [Step 3: Retrieve messages] above are applicable to the change notifications here as well.
 
-Below is an example to get all messages **per-tenant**. More details can be found on [Create subscription]](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). As mentioned at the bottom of [Create subscription]](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http), before trying the example below, the subscription notification endpoint (specified in the notificationUrl property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation]. If validation fails, the request to create the subscription returns a 400 Bad Request error.
+Below is an example to get all messages **per-tenant**. More details can be found on [Create subscription]](/graph/api/subscription-post-subscriptions). As mentioned at the bottom of [Create subscription]](/graph/api/subscription-post-subscriptions), before trying the example below, the subscription notification endpoint (specified in the notificationUrl property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation]. If validation fails, the request to create the subscription returns a 400 Bad Request error.
 
 Request:
 
@@ -752,7 +752,7 @@ Content-type: application/json
 
 ## Step 7: Receive and decrypt change notifications
 
-Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection] is sent to the notificationUrl (provided in the subscription creation above). For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Update subscription - Microsoft Graph beta | Microsoft Learn.](/graph/api/subscription-update?view=graph-rest-beta&tabs=http)
+Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection] is sent to the notificationUrl (provided in the subscription creation above). For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Update subscription - Microsoft Graph beta | Microsoft Learn.](/graph/api/subscription-update)
 
 Request (sent by Microsoft Graph):
 
@@ -898,14 +898,14 @@ PATCH /chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/viewpoint
 
 You can also add more advanced features in your chat application by:
 
-- [Adding reactions to chat messages](/graph/api/chatmessage-setreaction?view=graph-rest-beta], such as thumbs up and smileys.
-- [Adding images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples], so messages can contact rich contents.
-- [Adding mentions to chat messages](/graph/api/resources/chatmessagemention], so specific users can be tagged with "@".
-- [Enabling resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent], so users have access to only chats that are meant for them.
-- [Hiding a chat from](/graph/api/chat-hideforuser?view=graph-rest-beta&tabs=http)users] to declutter the chat list.
-- [Removing a member from a](/graph/api/chat-delete-members)chat] when it is no longer needed to them.
-- [Installing an app within chat](/graph/api/chat-post-installedapps], so users can use the app within the chat
-- [Pinning a tab in the chat](/graph/api/chat-post-tabs], so users can switch to the app easily
+- [Adding reactions to chat messages](/graph/api/chatmessage-setreaction?view=graph-rest-beta), such as thumbs up and smileys.
+- [Adding images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples), so messages can contact rich contents.
+- [Adding mentions to chat messages](/graph/api/resources/chatmessagemention), so specific users can be tagged with "@".
+- [Enabling resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent), so users have access to only chats that are meant for them.
+- [Hiding a chat from users](/graph/api/chat-hideforuser) to declutter the chat list.
+- [Removing a member from a chat](/graph/api/chat-delete-members) when it is no longer needed to them.
+- [Installing an app within chat](/graph/api/chat-post-installedapps), so users can use the app within the chat
+- [Pinning a tab in the chat](/graph/api/chat-post-tabs), so users can switch to the app easily
 
 ## Related articles
 
