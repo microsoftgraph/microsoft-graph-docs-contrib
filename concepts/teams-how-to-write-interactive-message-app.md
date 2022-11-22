@@ -1,18 +1,18 @@
 ---
 title: "How to write an interactive message app within your own application?"
 description: "This article shows how you can embed the Microsoft Teams experience within your own application, so users do not need to constantly switch between your own application and the Microsoft Teams application. Instead, users can read and send Microsoft Teams messages directly within your own application."
-author: "v-erichui"
+author: "erichui-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Introduction
+# How to write an interactive message app within your own application?
 
 This article shows how you can embed the Microsoft Teams experience within your own application, so users do not need to constantly switch between your own application and the Microsoft Teams application. Instead, users can read and send Microsoft Teams messages directly within your own application.
 
 To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times. In this article, we will show how you can do a one-time retrieval for the existing messages, cache them, and then use change notifications to get only the subsequent messages.
 
-# Overview
+## Overview
 
 At a high level, the example consists of the following:
 
@@ -26,7 +26,7 @@ At a high level, the example consists of the following:
 - Step 7: Receive and decrypt change notifications
 - Step 8: Get and set viewpoints
 
-# Step 0: Design and setup the architecture
+## Step 0: Design and setup the architecture
 
 The system diagram below shows the suggested high-level architecture. It has three components that should be added to your existing application system if not already:
 
@@ -38,7 +38,7 @@ Please note that this is a service-to-service architecture, with Microsoft Teams
 
 Once these system components are all set up, you can start using Microsoft Teams APIs as described in the following steps. ![Shape1](RackMultipart20221122-1-9yn0rr_html_79a0814b2b0f7524.gif)
 
-# Step 1: Create a new chat
+## Step 1: Create a new chat
 
 Before sending a new [[chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0)], a [[chat](https://learn.microsoft.com/en-us/graph/api/resources/chat)] must first be created, by assigning [[members](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-1.0)] to the new chat. Below is an example of a "oneOnOne" chat. More examples with a different chatType can be found at [[Create Chat](https://learn.microsoft.com/en-us/graph/api/chat-post)].
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 
 }
 
-# Step 2: Send a message in the chat
+## Step 2: Send a message in the chat
 
 Members within the chat can then send messages to each other. Below is an example of a simple message. More advanced examples can be found at [[Send chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-post)].
 
@@ -314,7 +314,7 @@ Content-type: application/json
 
 }
 
-# Step 3: Retrieve messages
+## Step 3: Retrieve messages
 
 Messages can be retrieved using the GET HTTP method on the [[chatMessages](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage)] resource.
 
@@ -619,11 +619,11 @@ Some messages are [[**system messages**](https://learn.microsoft.com/en-us/graph
 
 Instead of getting all messages
 
-# Step 4: Cache messages
+## Step 4: Cache messages
 
 Each message you get it through [getAllMessages] or [[change notification](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-1.0)] is subject to charge by Microsoft Graph, so you will want to avoid reading the same message multiple times. We recommend caching the messages on your server. To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management | Microsoft Learn](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-cache).
 
-# Step 5: Subscribe to change notifications
+## Step 5: Subscribe to change notifications
 
 Microsoft Graph offers several kinds of change notifications for messages:
 
@@ -696,7 +696,7 @@ Content-type: application/json
 
 When designing the user experience, please take into account that, for most messages, it takes up to 3 seconds (TODO: to be confirmed after getting access to Jarvis charts) for Microsoft Graph to detect a change and send its change notification.
 
-# Step 6: Renew change notifications subscriptions
+## Step 6: Renew change notifications subscriptions
 
 For security reasons, subscriptions for chatMessage expire in 60 minutes, as described on [subscription resource type - Microsoft Graph v1.0 | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type). We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions. Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their expirationDateTime, as described on [Update subscription - Microsoft Graph v1.0 | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0&tabs=http#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications. Below is an example.
 
@@ -750,7 +750,7 @@ Content-type: application/json
 
 }
 
-# Step 7: Receive and decrypt change notifications
+## Step 7: Receive and decrypt change notifications
 
 Whenever there is a change to the subscribed resource, a [[change notification](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-1.0)] is sent to the notificationUrl (provided in the subscription creation above). For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Update subscription - Microsoft Graph beta | Microsoft Learn.](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta&tabs=http)
 
@@ -832,7 +832,7 @@ When a chat message is edited, a change notification is sent for the edit, with 
 
 The notes about contentType, images, data loss preventin (DLP), and system messages described in [Step 3: Retrieve messages] above are applicable to the decrypted messages here as well.
 
-# Step 8: Get and set viewpoints
+## Step 8: Get and set viewpoints
 
 A [viewpoint](https://learn.microsoft.com/en-us/graph/api/resources/chatviewpoint?view=graph-rest-1.0) in a chat marks the timestamp at which the chat was last read by the users, so users can easily tell that any messages under the viewpoint are unread.
 
@@ -894,7 +894,7 @@ PATCH /chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/viewpoint
 
 }
 
-# Tips and additional information
+## Tips and additional information
 
 You can also add more advanced features in your chat application by:
 
@@ -907,7 +907,7 @@ You can also add more advanced features in your chat application by:
 - [[Installing an app within chat](https://learn.microsoft.com/en-us/graph/api/chat-post-installedapps?view=graph-rest-1.0&tabs=http)], so users can use the app within the chat
 - [[Pinning a tab in the chat](https://learn.microsoft.com/en-us/graph/api/chat-post-tabs?view=graph-rest-1.0&tabs=http)], so users can switch to the app easily
 
-# Related articles
+## Related articles
 
 - [Bring Microsoft Teams (Chats & Channel) collaboration to your Apps by leveraging Microsoft Graph](https://mybuild.microsoft.com/en-US/sessions/b7c008ab-69eb-40d5-a170-5dd9db57f022)
 
