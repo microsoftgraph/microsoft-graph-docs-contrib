@@ -1,5 +1,5 @@
 ---
-title: "account target content resource type"
+title: "Account target content resource type"
 description: "Represents an included or excluded users from attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# simulation resource type
+# accounttargetcontent resource type
 
 Namespace: microsoft.graph
 
@@ -43,19 +43,16 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.accounttargetContent",
-  "openType": true
+  "@odata.type": "microsoft.graph.accountTargetContent"
 }
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
-    "type" : "addressBook",
-    "accountTargetEmails" : [
-        jeff.watson@microsoft.com"
-    ]
+  "@odata.type": "#microsoft.graph.accountTargetContent",
+  "type": "addressbook"
 }
 ```
+
 
 
 ## See also
