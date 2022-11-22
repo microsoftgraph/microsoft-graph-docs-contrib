@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include

@@ -18,7 +18,7 @@ For any app update, there are three areas to consider:
 
 - **Permissions**: You should change your configured permissions to the equivalent Microsoft Graph permissions. Delegated permissions which were granted for Azure Active Directory (Azure AD) Graph will be implicitly considered granted for Microsoft Graph also. Application permissions (app roles) will need to be granted again.
 
-    If your update also incudes the use of features or capabilities that aren't available to Azure AD Graph, you'll likely need to request permissions for these new features. If that's the case, you can switch your app to use MSAL and the v2 endpoint, and request additional/incremental consent dynamically. Find more details about switching to MSAL in [review app authentication library changes](./migrate-azure-ad-graph-authentication-library.md).
+    If your update also includes the use of features or capabilities that aren't available to Azure AD Graph, you'll likely need to request permissions for these new features. If that's the case, you can switch your app to use MSAL and the v2 endpoint, and request additional/incremental consent dynamically. Find more details about switching to MSAL in [review app authentication library changes](./migrate-azure-ad-graph-authentication-library.md).
 
 - **Consent**: End-users who have already granted consent for delegated permissions (or for whom consent has already been granted by an admin) can continue using your app without being asked to grant consent again.
 

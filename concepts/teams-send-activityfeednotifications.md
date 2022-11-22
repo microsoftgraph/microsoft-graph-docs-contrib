@@ -128,13 +128,13 @@ This example shows how you can send an activity feed notification for a new task
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/chats/{chatId}"
+        "value": "https://graph.microsoft.com/v1.0/chats/{chatId}"
     },
     "activityType": "taskCreated",
     "previewText": {
@@ -203,13 +203,13 @@ This example shows how you can send an activity feed notification for a team. Th
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/teams/{teamId}"
+        "value": "https://graph.microsoft.com/v1.0/teams/{teamId}"
     },
     "activityType": "taskCreated",
     "previewText": {
@@ -283,7 +283,7 @@ The Yammer notification example shown earlier uses a custom topic because Yammer
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
 {
@@ -350,9 +350,6 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all team members. This example notifies the team members about a new event. 
 
-> [!NOTE]
-> The ability to send notifications to all team members is currently only available in beta.
-
 #### Request
 
 # [HTTP](#tab/http)
@@ -362,7 +359,7 @@ This example shows how you can send an activity feed notification to all team me
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
 Content-Type: application/json
 
 {
@@ -423,9 +420,6 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all channel members. This example notifies the channel members about a new event. 
 
-> [!NOTE]
-> The ability to send notifications to all channel members is currently only available in beta.
-
 #### Request
 
 # [HTTP](#tab/http)
@@ -435,7 +429,7 @@ This example shows how you can send an activity feed notification to all channel
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
 Content-Type: application/json
 
 {
@@ -497,9 +491,6 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all chat members. This example notifies the chat members about a new event. 
 
-> [!NOTE]
-> The ability to send notifications to all chat members is currently only available in beta.
-
 #### Request
 
 # [HTTP](#tab/http)
@@ -510,7 +501,7 @@ This example shows how you can send an activity feed notification to all chat me
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
 Content-Type: application/json
 
 {
@@ -582,13 +573,13 @@ The following example shows how to send an activity feed notification to multipl
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/teamwork/sendActivityNotificationToRecipients
+POST https://graph.microsoft.com/v1.0/teamwork/sendActivityNotificationToRecipients
 Content-Type: application/json
 
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+        "value": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}"
     },
     "activityType": "pendingFinanceApprovalRequests",
     "previewText": {

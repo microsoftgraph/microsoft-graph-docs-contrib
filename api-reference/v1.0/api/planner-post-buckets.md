@@ -1,6 +1,6 @@
 ---
 title: "Create plannerBucket"
-description: "Use this API to create a new **plannerBucket**."
+description: "Create a new plannerBucket object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to create a new **plannerBucket**.
+Create a new [plannerBucket](../resources/plannerbucket.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/buckets
-
 ```
 ## Request headers
 | Name       | Description|
@@ -34,17 +33,17 @@ POST /planner/buckets
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.
+In the request body, supply a JSON representation of the [plannerBucket](../resources/plannerbucket.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [plannerBucket](../resources/plannerbucket.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [plannerBucket](../resources/plannerbucket.md) object in the response body.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,9 +87,9 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
