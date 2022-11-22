@@ -40,64 +40,41 @@ Once these system components are all set up, you can start using Microsoft Teams
 
 ## Step 1: Create a new chat
 
-Before sending a new [chatMessage](/graph/api/resources/chatmessage), a [chat](/graph/api/resources/chat) must first be created, by assigning [members](/graph/api/resources/conversationmember] to the new chat. Below is an example of a "oneOnOne" chat. More examples with a different chatType can be found at [Create Chat](/graph/api/chat-post].
+Before sending a new [chatMessage](/graph/api/resources/chatmessage), a [chat](/graph/api/resources/chat) must first be created, by assigning [members](/graph/api/resources/conversationmember) to the new chat. Below is an example of a "oneOnOne" chat. More examples with a different chatType can be found at [Create Chat](/graph/api/chat-post).
 
-Request:
-
-POST /chats
-
-{
-
-"chatType": "oneOnOne",
-
-"members": [
-
-{
-
-"[@odata.type](mailto:@odata.type)": "#microsoft.graph.aadUserConversationMember",
-
-"roles": ["owner"],
-
-"[user@odata.bind](mailto:user@odata.bind)": "[https://graph.microsoft.com/v1.0/users('jacob@contoso.com](mailto:https://graph.microsoft.com/v1.0/users(%E2%80%98jacob@contoso.com)')"
-
-},
-
-{
-
-"[@odata.type](mailto:@odata.type)": "#microsoft.graph.aadUserConversationMember",
-
-"roles": ["owner"],
-
-"[user@odata.bind](mailto:user@odata.bind)": "[https://graph.microsoft.com/v1.0/users('alex@contoso.com](mailto:https://graph.microsoft.com/v1.0/users(%E2%80%98alex@contoso.com)')"
-
-}
-
-]
-
-}
-
-Response:
-
-HTTP/1.1 201 Created
-
+### Request
+``` http
+POST https://graph.microsoft.com/v1.0/chats
 Content-Type: application/json
-
 {
-
-"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
-
-"id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f\_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
-
-"topic": null,
-
-"createdDateTime": "2020-12-04T23:10:28.51Z",
-
-"lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
-
-"chatType": "oneOnOne"
-
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+    }
+  ]
 }
-
+```
+### Respose
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
+    "id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
+    "topic": null,
+    "createdDateTime": "2020-12-04T23:10:28.51Z",
+    "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
+    "chatType": "oneOnOne"
+}
+```
 ## Step 2: Send a message in the chat
 
 Members within the chat can then send messages to each other. Below is an example of a simple message. More advanced examples can be found at [Send chatMessage](/graph/api/chatmessage-post].
@@ -898,7 +875,7 @@ PATCH /chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/viewpoint
 
 You can also add more advanced features in your chat application by:
 
-- [Adding reactions to chat messages](/graph/api/chatmessage-setreaction?view=graph-rest-beta), such as thumbs up and smileys.
+- [Adding reactions to chat messages](/graph/api/chatmessage-setreaction), such as thumbs up and smileys.
 - [Adding images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples), so messages can contact rich contents.
 - [Adding mentions to chat messages](/graph/api/resources/chatmessagemention), so specific users can be tagged with "@".
 - [Enabling resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent), so users have access to only chats that are meant for them.
