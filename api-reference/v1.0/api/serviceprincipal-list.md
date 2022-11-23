@@ -304,6 +304,60 @@ Content-type: application/json
   ]
 }
 ```
+
+
+### Example 5: Get service principals with less than two owners
+
+#### Request
+
+Here is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_serviceprincipals_lessthan2owners"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/serviceprincipals?$filter=owners/$count eq 0 or owners/$count eq 1&$count=true&$select=id,displayName
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+Here is an example of the response.
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals(id,displayName)",
+    "@odata.count": 3,
+    "value": [
+        {
+            "id": "c4ca17b7-4f3e-4c3a-b884-bfa4100c745d",
+            "displayName": "Box"
+        },
+        {
+            "id": "b5966bf3-e895-4f01-ae19-64f434c35b58",
+            "displayName": "LinkedIn"
+        },
+        {
+            "id": "ed17bd95-fbef-43eb-abea-9496e46eee42",
+            "displayName": "BrowserStack"
+        }
+    ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
