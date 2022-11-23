@@ -786,7 +786,7 @@ Content-type: application/json
 
 ### Option 2: Create a custom signing certificate
 
-You can use the following PowerShell and C# commands to get a self-signed certificate for testing. You will then need to manipulate and pull the values you need manually using other tools. Use the best security practice from your company to create a signing certificate for production.
+You can use the following PowerShell and C# scripts to get a self-signed certificate for testing. You will then need to manipulate and pull the values you need manually using other tools. Use the best security practice from your company to create a signing certificate for production.
 
 # [PowerShell script](#tab/powershell-script)
 ```powershell
@@ -814,9 +814,9 @@ Export-PfxCertificate -cert $path -FilePath $pfxFile -Password $pwdSecure
 Export-Certificate -cert $path -FilePath $cerFile
 ```
 
-Alternatively, the following C# console app can be used as a Proof of Concept to understand how the required values can be obtained. Note that this code is for **learning and reference ONLY** and should not be used as-is in production.
-
 # [C# script](#tab/csharp-script)
+The following C# console app can be used as a Proof of Concept to understand how the required values can be obtained. This code is for learning and reference only and should not be used as-is in production.
+
 ```csharp
 using System;
 using System.Security.Cryptography;
