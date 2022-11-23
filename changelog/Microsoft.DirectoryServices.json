@@ -323,6 +323,58 @@
       "CreatedDateTime": "2022-07-07T00:00:00",
       "WorkloadArea": "Identity and access ",
       "SubArea": " Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b02837fc-7288-4c68-90d5-81d06df2a58f",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for [retrieving deleted administrative units](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-list?view=graph-rest-1.0) from the [deleted items in the directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0).",
+          "Target": "directory"
+        },
+        {
+          "Id": "b02837fc-7288-4c68-90d5-81d06df2a58f",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added support for [restoring deleted administrative units](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-1.0) from the [deleted items in the directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0).",
+          "Target": "directory"
+        }
+      ],
+      "Id": "b02837fc-7288-4c68-90d5-81d06df2a58f",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-11-16T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "39294ea4-803b-4343-8cef-2b9ed4d1a86b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for [retrieving deleted administrative units](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-list?view=graph-rest-beta) from the [deleted items in the directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta).",
+          "Target": "directory"
+        },
+        {
+          "Id": "39294ea4-803b-4343-8cef-2b9ed4d1a86b",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added support for [restoring deleted administrative units](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-beta) from the [deleted items in the directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta).",
+          "Target": "directory"
+        }
+      ],
+      "Id": "39294ea4-803b-4343-8cef-2b9ed4d1a86b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-18T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }, 	   
     {
       "ChangeList": [
