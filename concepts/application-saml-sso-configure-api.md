@@ -927,7 +927,7 @@ Delete the MyTestUser1 user account.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial_configure_saml_sso_delete_user"
+ "name": "tutorial_configure_saml_sso_delete_user"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/040f9599-7c0f-4f94-aa75-8394c4c6ea9b
