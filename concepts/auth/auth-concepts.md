@@ -30,7 +30,7 @@ The method that an app uses to authenticate with the Microsoft identity platform
 + **Delegated access**, an app acting on behalf of a signed-in user.
 + **App-only access**, an app acting with its own identity.
 
-:::image type="content" source="../images/access-scenarios.png" alt-text="Illustration of delegated access and app-only access scenarios in the Microsoft identity platform.":::
+:::image type="content" source="~/../azure_docs/active-directory/develop/media/permissions-consent-overview/access-scenarios.png" alt-text="Illustration of delegated access and app-only access scenarios in the Microsoft identity platform.":::
 
 ### Delegated access (access on behalf of a user)
 
