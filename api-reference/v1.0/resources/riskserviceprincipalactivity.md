@@ -11,7 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection. 
 
 ## Properties

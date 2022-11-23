@@ -10,8 +10,6 @@ doc_type: apiPageType
 # riskyServicePrincipal: confirmCompromised
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Confirm one or more [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects as compromised. This action sets the targeted service principal account's risk level to `high`. When the risk level of the service principal is confirmed as compromised, the service principal object is disabled and its **disabledByMicrosoftStatus** property is updated.
 
 >**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
@@ -58,7 +56,7 @@ If successful, this action returns a `204 No Content` response code. It does not
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/confirmCompromised
+POST https://graph.microsoft.com/v1.0/identityProtection/riskyServicePrincipals/confirmCompromised
 Content-Type: application/json
 
 {

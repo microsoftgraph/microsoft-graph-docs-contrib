@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List servicePrincipalRiskDetections
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve the properties of a collection of [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) objects.
 
 >**Note:** You must have an Entra Workload Identity Premium license to use the servicePrincipalRiskDetection API.
@@ -65,7 +63,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections
+GET https://graph.microsoft.com/v1.0/identityProtection/servicePrincipalRiskDetections
 ```
 
 # [C#](#tab/csharp)
@@ -156,7 +154,7 @@ The following example shows how to use `$filter` to get the collection of servic
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections?$filter=riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'
+GET https://graph.microsoft.com/v1.0/identityProtection/servicePrincipalRiskDetections?$filter=riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'
 ```
 
 # [C#](#tab/csharp)

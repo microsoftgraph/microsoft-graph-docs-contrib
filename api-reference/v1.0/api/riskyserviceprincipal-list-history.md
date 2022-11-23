@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List history (risk history of riskyServicePrincipal)
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the risk history of a [riskyServicePrincipal](../resources/riskyServicePrincipal.md) object.
 
 >**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
@@ -57,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/{riskyServicePrincipalId}/history
+GET https://graph.microsoft.com/v1.0/identityProtection/riskyServicePrincipals/{riskyServicePrincipalId}/history
 ```
 
 # [C#](#tab/csharp)
@@ -101,11 +99,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyServicePrincipalHistoryItem",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#riskyServicePrincipalHistoryItem",
   "value": [
     {
        "id": "0fbef39d-9e8c-460b-444e-8ae5abcdffd7",
-       "accountEnabled": true,
+       "isEnabled": true,
        "isProcessing": false,
        "riskLastUpdatedDateTime": "2021-10-20T01:14:37.7214159Z",
        "riskState": "atRisk",
