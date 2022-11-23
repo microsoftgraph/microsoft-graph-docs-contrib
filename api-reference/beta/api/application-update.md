@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Application.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) |  Application.ReadWrite.All |
 |Delegated (personal Microsoft account) | Application.ReadWrite.All    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
 Replace `{applicationObjectId}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
@@ -34,6 +34,13 @@ Replace `{applicationObjectId}` with the **id** for the application object, also
 ```http
 PATCH /applications/{applicationObjectId}
 ```
+
+To update the logo, use the PUT method as follows.
+<!-- { "blockType": "ignored" } -->
+```http
+PUT /applications/{applicationObjectId}/logo
+```
+
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
@@ -53,7 +60,7 @@ In the request body, supply the values for relevant fields that should be update
 | info                    | [informationalUrl](../resources/informationalurl.md)                        | Basic profile information of the application such as  app's marketing, support, terms of service, and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more information, see [Add Terms of service and privacy statement for registered Azure AD apps](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement).                                                                                                                                                 |
 | isFallbackPublicClient  | Boolean                                                                     | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false`, which means the fallback application type is confidential client such as web app. There are certain scenarios where Azure AD cannot determine the client application type (for example, [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI). In those cases, Azure AD will interpret the application type based on the value of this property. |
 | keyCredentials          | [keyCredential](../resources/keycredential.md) collection                   | The collection of key credentials associated with the application. Not nullable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| logo                    | Stream                                                                      | The main logo for the application. Not nullable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| logo                    | Stream                                                                      | The main logo for the application. Not nullable. Use the PUT method to update the logo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Represents the set of properties for configuring [Azure AD Application Proxy](/azure/active-directory/app-proxy/what-is-application-proxy) for an on-premises application. This property can only be set after the application has been created and cannot be updated in the same request as other application properties.                                                                                                                                                                                                                                                                                                                                                       |
 | optionalClaims          | optionalClaims                                                              | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [optional claims](/azure/active-directory/develop/active-directory-optional-claims) for more information.                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Specifies parental control settings for an application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
