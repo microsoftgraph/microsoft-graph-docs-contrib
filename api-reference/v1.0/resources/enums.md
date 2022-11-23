@@ -18,7 +18,6 @@ Namespace: microsoft.graph
 |signin|
 |user|
 |unknownFutureValue|
-|servicePrincipal|
 
 ### riskDetectionTimingType values
 
@@ -685,23 +684,17 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskDetail values
 
-|Member|
-|:---|
-|none|
-|adminGeneratedTemporaryPassword|
-|userPerformedSecuredPasswordChange|
-|userPerformedSecuredPasswordReset|
-|adminConfirmedSigninSafe|
-|aiConfirmedSigninSafe|
-|userPassedMFADrivenByRiskBasedPolicy|
-|adminDismissedAllRiskForUser|
-|adminConfirmedSigninCompromised|
-|hidden|
-|adminConfirmedUserCompromised|
-|unknownFutureValue|
-|adminConfirmedServicePrincipalCompromised|
-|adminDismissedAllRiskForServicePrincipal|
-|m365DAdminDismissedDetection|
+| Member
+|:-------------------------
+| adminGeneratedTemporaryPassword
+| userPerformedSecuredPasswordChange
+| userPerformedSecuredPasswordReset
+| adminConfirmedSigninSafe
+| aiConfirmedSigninSafe
+| userPassedMFADrivenByRiskBasedPolicy
+| adminDismissedAllRiskForUser
+| adminConfirmedSigninCompromised
+| unknownFutureValue
 
 ### riskEventTypes values
 
