@@ -53,9 +53,9 @@ This resource supports:
 | [Update federatedIdentityCredential](../api/federatedidentitycredential-update.md) | None | Update a federated identity credential of an application object. |
 | [Delete federatedIdentityCredential](../api/federatedidentitycredential-delete.md) | None | Delete a federated identity credential from an application object. |
 |**Owners**| | |
-|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
-|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
-|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application.|
+|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of an application.|
+|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to an application. Application owners can be users or service principals.|
+|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application. As a recommended best practice, apps should have at least two owners.|
 |**Policies**| | |
 |[Assign tokenIssuancePolicy](../api/application-post-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Assign a tokenIssuancePolicy to this object.|
 |[List tokenIssuancePolicies](../api/application-list-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Get all tokenIssuancePolicies assigned to this object.|
