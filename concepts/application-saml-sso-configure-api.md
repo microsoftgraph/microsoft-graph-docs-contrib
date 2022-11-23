@@ -815,7 +815,7 @@ Export-Certificate -cert $path -FilePath $cerFile
 ```
 
 # [C# script](#tab/csharp-script)
-The following C# console app can be used as a Proof of Concept to understand how the required values can be obtained. This code is for learning and reference only and should not be used as-is in production.
+The following C# console app can be used as a proof of concept to understand how the required values can be obtained. This code is for learning and reference only and should not be used as-is in production.
 
 ```csharp
 using System;
