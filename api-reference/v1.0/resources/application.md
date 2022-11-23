@@ -100,10 +100,10 @@ This resource supports:
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
 | publisherDomain | String | The verified publisher domain for the application. Read-only. For more information, see [How to: Configure an application's publisher domain](/azure/active-directory/develop/howto-configure-publisher-domain). Supports `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
-| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Specifies the resources that the application needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. No more than 50 resource services (APIs) can be configured. Beginning mid-October 2021, the total number of required permissions must not exceed 400. Not nullable. <br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`).|
+| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Specifies the resources that the application needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. <br/><br/>No more than 50 resource services (APIs) can be configured. Beginning mid-October 2021, the total number of required permissions must not exceed 400. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). Not nullable. <br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | samlMetadataUrl | String | The URL where the service exposes SAML metadata for federation. This property is valid only for single-tenant applications. Nullable. |
 | serviceManagementReference | String | References application or service contact information from a Service or Asset Management database. Nullable. |
-| signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. The possible values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (default), and `PersonalMicrosoftAccount`. See more in the [table below](#signinaudience-values). <br><br>Supports `$filter` (`eq`, `ne`, `not`).|
+| signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. The possible values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (default), and `PersonalMicrosoftAccount`. See more in the [table](#signinaudience-values). <br/><br/>The value of this object also limits the number of permissions an app can request. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). <br><br>Supports `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable. <br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
@@ -118,6 +118,12 @@ This resource supports:
 |AzureADMultipleOrgs|Users with a Microsoft work or school account in any organization’s Azure AD tenant (multi-tenant).|
 |AzureADandPersonalMicrosoftAccount|Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant. For authenticating users with Azure AD B2C user flows, use `AzureADandPersonalMicrosoftAccount`. This value allows for the widest set of user identities including local accounts and user identities from Microsoft, Facebook, Google, Twitter, or any OpenID Connect provider. This is the default value for the **signInAudience** property. |
 |PersonalMicrosoftAccount|Users with a personal Microsoft account only.|
+
+
+### Limits on requested permissions per app
+
+[!INCLUDE [microsoft-graph-permissions-limits](../../../concepts/includes/msgraph-permissions-limits.md)]
+
 
 ## Relationships
 

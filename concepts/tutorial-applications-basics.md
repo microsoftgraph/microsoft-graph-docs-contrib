@@ -1,5 +1,5 @@
 ---
-title: "Create and manage an Azure AD application"
+title: "Create and manage an Azure AD application using Microsoft Graph"
 description: "Learn how to use the applications API in Microsoft Graph to manage your applications."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
@@ -161,6 +161,7 @@ You'll configure the following basic properties for the app.
 
 + Add tags for categorization in the organization. Also, use the `HideApp` tag to hide the app from My Apps and the Microsoft 365 Launcher.
 + Add basic information including the logo, terms of service, and privacy statement.
++ Limit app sign-in to only assigned identities.
 
 
 # [HTTP](#tab/http)
@@ -191,7 +192,8 @@ Content-type: application/json
         "redirectUris": [
             "https://localhost"
         ]
-    }
+    },
+    "appRoleAssignmentRequired": true
 }
 ```
 
@@ -440,51 +442,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
-## Limit app sign-in to only assigned identities
-
-Least privilege delegated permission: `Application.ReadWrite.All`
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-application-basics-grant-approleassignmentrequired"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-1418d6908bcd
-
-{
-    "appRoleAssignmentRequired": true
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-grant-approleassignmentrequired-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-grant-approleassignmentrequired-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-grant-approleassignmentrequired-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-grant-approleassignmentrequired-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-grant-approleassignmentrequired-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ## Assign users and groups to an application
 
