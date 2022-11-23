@@ -48,7 +48,9 @@ Apps get privileges to call Microsoft Graph with their own identity through one 
 
 + When the app is assigned *application permissions*, also called *app roles*.
 + When the app is assigned ownership of the resource that it intends to manage.
-+ When the app is assigned an [Azure AD administrative role](/azure/active-directory/roles/permissions-reference).
+
+> [!NOTE]
+> An app can also get permissions through [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). These permissions don't limit the app to calling Microsoft Graph APIs.
 
 ## Microsoft Graph permissions
 

@@ -32,7 +32,7 @@ For example, an application has been granted the *Files.Read.All* delegated perm
 
 + Tom created or owns the files.
 + The files were shared directly with Tom, or indirectly shared with him through a team or group membership.
-+ Tom has been authorized through a role-based access control (RBAC) system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
++ Tom has been granted permissions through a role-based access control (RBAC) system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview). For the list of Azure AD administrative roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json).
 
 Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.
 
@@ -41,6 +41,9 @@ Therefore, in a delegated scenario, the privileges that an app has to act on beh
 In a delegated access scenario, an app may allow users to sign in with their Microsoft accounts, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for Microsoft accounts.
 
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app can access the resources, and APIs that it has requested, within the boundaries of the permissions that the user has.
+
+> [!NOTE]
+> Permissions granted through [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Application permissions
 
@@ -51,7 +54,10 @@ For apps that access resources and APIs without a signed-in user, the applicatio
 Apart from being assigned Microsoft Graph application permissions, an app may also be granted the privileges it needs through one of the following conditions:
 
 + When the app is assigned ownership of the resource that it intends to manage.
-+ When the app is assigned an [Azure AD administrative role or a custom role](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json).
++ When the app is assigned an [Azure AD administrative role or a custom directory role](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json).
+
+> [!NOTE]
+> Permissions granted through [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) don't limit the app to calling Microsoft Graph APIs only.
 
 #### Comparison of delegated and application permissions
 
@@ -151,9 +157,11 @@ Microsoft Graph exposes granular permissions that allow an app to request only t
 Consider the following examples:
 
 1. An app needs to only read the profile information of the signed-in user. The app requires only the *User.Read* permission, which is the least privileged permission to access the signed-in user's information. Granting the app the *User.ReadWrite* permission makes it over-privileged because the app doesn't need to update the user's profile.
-2. An app needs to read the groups in the tenant without a signed-in user. 
+2. An app needs to read the groups in the tenant without a signed-in user.
     1. The least privilege Microsoft Graph permission that the app needs is the *Group.Read.All* application permission.
-    1. To grant the app privileges through Azure AD administrative roles, you don't need to grant it the [Groups Administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#groups-administrator) Azure AD role. Instead, you can create and grant it a custom role with only the `microsoft.directory/groups/allProperties/read` permission.
+    1. To grant the app privileges through Azure AD administrative roles:
+        1. You can grant the app the [Groups Administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#groups-administrator) Azure AD role. 
+        1. For finer-grained permissions, you can create a custom role with only the `microsoft.directory/groups/allProperties/read` permission and grant the custom role to the app.
 
 Granting an application more privileges than it needs is a poor security practice that exposes an app to unauthorized and unintended access to data or operations. Also, requiring more permissions than necessary may cause users to refrain from consenting to an app, affecting an app's adoption and usage.
 
