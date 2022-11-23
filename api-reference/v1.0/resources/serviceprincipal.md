@@ -58,9 +58,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Get the list of groups that this service principal is a member of.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection|Get the list of groups, administrative units, and directory roles that this service principal is a member of.|
 |**Owners**| | |
-|[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
-|[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[Remove owner](../api/serviceprincipal-delete-owners.md) |None| Remove an owner from a serviceprincipal.|
+|[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of a service principal.|
+|[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to a service principal. Service principal owners can be users or other service principals.|
+|[Remove owner](../api/serviceprincipal-delete-owners.md) |None| Remove an owner from a service principal. As a recommended best practice, service principals should have at least two owners.|
 |**Policies**| | |
 |[Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Assign a claimsMappingPolicy to this object.|
 |[List claimsMappingPolicies](../api/serviceprincipal-list-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Get all claimsMappingPolicies assigned to this object.|
