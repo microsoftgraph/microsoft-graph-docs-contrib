@@ -34,7 +34,7 @@ The system diagram below shows the suggested high-level architecture. It has thr
 2. There is a **cache** that is ready to cache messages. To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times, by storing messages in this cache. You do not want to be surprised by the API consumption bill later, so make sure you do not skip building this cache. To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
 3. There is a new **chat user interface (UI)** that can communicate with the server component to get user inputs and display messages. The server component would communicate to it when there is a new message. One way to implement the communication is using ASP.NET's [SignalR](/aspnet/signalr/overview/getting-started/introduction-to-signalr).
 
-Please note that this is a service-to-service architecture, with Microsoft Teams APIs communicating with the server component, not directly with the UI. There are two benefits of having the server component in between in the backend. One benefit is that it can persist all historical messages in the cache in the backend, so your UI can be lightweight; caching all (not just the recent) messages on the UI layer may not be feasible when you have many messages. Another benefit is when Microsoft Teams APIs send the change notification (see Step 6 below), it requires an URL, and your UI, such as the users' mobile phone, may not have an URL. The server component, however, can have a webhook URL.
+Please note that this is a *service-to-service* architecture, with Microsoft Teams APIs communicating with the server component, not directly with the UI. There are two benefits of having the server component in between in the backend. One benefit is that it can persist all historical messages in the cache in the backend, so your UI can be lightweight; caching all (not just the recent) messages on the UI layer may not be feasible when you have many messages. Another benefit is when Microsoft Teams APIs send the change notification (see [Step 6](#step-6-subscribe-to-change-notifications) below), it requires an URL, and your UI, such as the users' mobile phone, may not have an URL. The server component, however, can have a webhook URL.
 
 Once these system components are all set up, you can start using Microsoft Teams APIs as described in the following steps. ![System Diagram](images/teams-how-to-write-interactive-message-app-system-diagram.png)
 
@@ -141,7 +141,7 @@ Members within the chat can also send **images** to each other. Below is an exam
 POST https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages
 Content-type: application/json
 {
-	"body": {
+    "body": {
         "contentType": "html",
         "content": "<div><div>\n<div><span><img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>"
     },
@@ -197,9 +197,9 @@ Content-type: application/json
 ```
 ## Step 4: Retrieve messages
 
-Messages can be retrieved using the GET HTTP method on the [chatMessages](/graph/api/resources/chatmessage) resource.
+Messages can be retrieved using the `GET` HTTP method on the [chatMessages](/graph/api/resources/chatmessage) resource.
 
-To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times. Thus, retrieving messages using the GET HTTP method described in this step should only be used initially as a one-time export or when you need to restore your system during rare occasions. Otherwise, you should rely on your cache (see [Step 5](#step-5-cache-messages) below) and change notifications (see [Step 6](#step-6-subscribe-to-change-notifications) below).
+To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times. Thus, retrieving messages using the `GET` HTTP method described in this step should only be used initially as a one-time export or when you need to restore your system during rare occasions. Otherwise, you should rely on your cache (see [Step 5](#step-5-cache-messages) below) and change notifications (see [Step 6](#step-6-subscribe-to-change-notifications) below).
 
 Microsoft Graph offers several ways to retrieve chat messages:
 
@@ -303,7 +303,7 @@ Content-type: application/json
 }
 ```
 
-The **`contentType`** can be either `text` or `html`, so make sure your application can display both accordingly.
+The `contentType` can be either `text` or `html`, so make sure your application can display both accordingly.
 
 To get **images** embedded in the chat message, you will make a second call to retrieve [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent), as described on [Get chatMessageHostedContent](/graph/api/chatmessagehostedcontent-get)
 
@@ -384,7 +384,7 @@ Microsoft Graph offers several kinds of change notifications for messages:
 - per-app:
   - `"resource": "/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages"`
 
-If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, consider how many different chats you'll need to track. If you use per-chat change notifications, there's a [limit](/graph/webhooks#teams-resource-limitations) (e.g. 10,000) on the number of [subscriptions](/graph/api/resources/subscription?view=graph-rest-beta). Instead, consider subscribing to per-app or per-tenant, which covers all the messages in the chats of your Microsoft Teams app or tenant. Furthermore, unless you are using per-user, the notes about access control logic described in [Step 4: Retrieve messages](#step-4-retrieve-messages) above are applicable to the change notifications here as well.
+If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, consider how many different chats you'll need to track. If you use per-chat change notifications, there's a [limit](/graph/webhooks#teams-resource-limitations) (e.g. 10,000) on the number of [subscriptions](/graph/api/resources/subscription?view=graph-rest-beta). Instead, consider subscribing to per-app or per-tenant, which covers all the messages in the chats of your Microsoft Teams app or tenant. Furthermore, unless you are using per-user, the notes about access control logic described in [Step 4](#step-4-retrieve-messages) above are applicable to the change notifications here as well.
 
 Below is an example to get all messages **per-tenant**. More details can be found on [Create subscription](/graph/api/subscription-post-subscriptions). As mentioned at the bottom of [Create subscription](/graph/api/subscription-post-subscriptions), before trying the example below, the subscription notification endpoint (specified in the notificationUrl property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a `400 Bad Request` error.
 
@@ -490,7 +490,7 @@ Change notifications are sometimes delivered out of order, due to their asynchro
 
 When a chat message is edited, a change notification is sent for the edit, with an updated `lastEditedDateTime`. Your chat application should display the edited message instead of the original message, if it is meant to display the latest version of messages.
 
-The notes about `contentType`, images, data loss preventin (DLP), and system messages described in [Step 4: Retrieve messages](#step-4-retrieve-messages) above are applicable to the decrypted messages here as well.
+The notes about `contentType`, images, data loss preventin (DLP), and system messages described in [Step 4](#step-4-retrieve-messages) above are applicable to the decrypted messages here as well.
 
 ## Step 9: Get and set viewpoints
 
