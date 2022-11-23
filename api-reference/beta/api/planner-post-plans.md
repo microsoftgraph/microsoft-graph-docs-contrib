@@ -42,7 +42,13 @@ POST /planner/plans
 ## Request body
 
 In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.
-The **plannerPlan** container property must be set.
+
+The following table shows the properties that are required when you create a [plannerPlan](../resources/plannerplan.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Either specify only the **url**, the **containerId** and **type**, or all properties. After it is set, this property can’t be updated.|
+|title|String|The title of the plan.|
 
 >**Note:** If the container is a Microsoft 365 group, the user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
@@ -56,7 +62,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,9 +110,9 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
