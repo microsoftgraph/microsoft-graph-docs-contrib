@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewProjectParticipation()
-allowedAudiences := "organization"
-requestBody.SetAllowedAudiences(&allowedAudiences)
-client := msgraphsdk.NewCompanyDetail()
-requestBody.SetClient(client)
+requestBody := graphmodels.NewProjectParticipation()
+allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
+client := graphmodels.NewCompanyDetail()
 department := "Corporate Marketing"
-client.SetDepartment(&department)
+client.SetDepartment(&department) 
 webUrl := "https://www.contoso.com"
-client.SetWebUrl(&webUrl)
-projectParticipationId := "projectParticipation-id"
-graphClient.Me().Profile().ProjectsById(&projectParticipationId).Patch(requestBody)
+client.SetWebUrl(&webUrl) 
+requestBody.SetClient(client)
+
+result, err := graphClient.Me().Profile().ProjectsById("projectParticipation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

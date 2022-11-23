@@ -20,8 +20,11 @@ Possible values for the file format of a report
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|csv|0|Comma-separated values|
-|pdf|1|Portable Document Format|
+|csv|0|CSV Format|
+|pdf|1|PDF Format (Deprecate later)|
+|json|2|JSON Format|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
+
 
 
 

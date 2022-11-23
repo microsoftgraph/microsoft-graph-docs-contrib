@@ -7,12 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewValueRequestBody()
-requestBody.SetValue( []String {
+requestBody := graphmodels.NewDeleteTiIndicatorsByExternalIdPostRequestBody()
+value := []string {
 	"externalId-value1",
 	"externalId-value2",
+
 }
-result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(requestBody)
+requestBody.SetValue(value)
+
+result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(context.Background(), requestBody, nil)
 
 
 ```

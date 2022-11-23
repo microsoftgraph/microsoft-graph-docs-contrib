@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Get()
+
+result, err := graphClient.Me().ContactFoldersById("contactFolder-id").Get(context.Background(), nil)
 
 
 ```

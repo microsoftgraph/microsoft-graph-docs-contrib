@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewItemPatent()
+requestBody := graphmodels.NewItemPatent()
 number := "USPTO-3954432633"
-requestBody.SetNumber(&number)
+requestBody.SetNumber(&number) 
 webUrl := "https://patents.gov/3954432633"
-requestBody.SetWebUrl(&webUrl)
-userId := "user-id"
-itemPatentId := "itemPatent-id"
-graphClient.UsersById(&userId).Profile().PatentsById(&itemPatentId).Patch(requestBody)
+requestBody.SetWebUrl(&webUrl) 
+
+result, err := graphClient.UsersById("user-id").Profile().PatentsById("itemPatent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

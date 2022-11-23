@@ -2,7 +2,7 @@
 title: "unifiedRoleDefinition resource type"
 description: "A role definition is a collection of permissions in Azure Active Directory (Azure AD)."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

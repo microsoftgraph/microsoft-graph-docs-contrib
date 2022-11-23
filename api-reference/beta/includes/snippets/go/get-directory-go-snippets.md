@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.Directory().DeletedItemsById(&directoryObjectId).Get()
+
+result, err := graphClient.Directory().DeletedItemsById("directoryObject-id").Get(context.Background(), nil)
 
 
 ```

@@ -7,12 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTeam()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-	"group@odata.bind": "https://graph.microsoft.com/v1.0/groups('71392b2f-1765-406e-86af-5907d9bdb2ab')",
+requestBody := graphmodels.NewTeam()
+additionalData := map[string]interface{}{
+	"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
+	"group@odata.bind" : "https://graph.microsoft.com/v1.0/groups('71392b2f-1765-406e-86af-5907d9bdb2ab')", 
 }
-result, err := graphClient.Teams().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
 
 
 ```

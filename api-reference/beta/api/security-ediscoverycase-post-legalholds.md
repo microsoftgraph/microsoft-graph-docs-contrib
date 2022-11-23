@@ -48,7 +48,6 @@ You can specify the following properties when you create an **ediscoveryHoldPoli
 |:---|:---|:---|
 |displayName|String|The display name of the legal hold policy. Required.|
 |description|String|The description of the legal hold policy. Optional.|
-|contentQuery|String|The content query of the legal hold policy. Optional.|
 
 ## Response
 
@@ -66,13 +65,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalHolds
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalHolds
 Content-Type: application/json
 
 {
     "displayname": "My legalHold with sources",
     "description": "Created from Graph API",
-    "contentQuery": "Bazooka",
     "userSources@odata.bind": [
         {
             "@odata.type": "microsoft.graph.security.userSource",
@@ -89,6 +87,7 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryholdpolicy-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -107,6 +106,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryholdpolicy-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryholdpolicy-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -128,7 +131,6 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/legalHolds/$entity",
     "isEnabled": true,
     "errors": [],
-    "contentQuery": "Bazooka",
     "description": "Created from Graph API",
     "createdDateTime": "2022-05-23T03:54:11.1Z",
     "lastModifiedDateTime": "2022-05-23T03:54:11.1Z",

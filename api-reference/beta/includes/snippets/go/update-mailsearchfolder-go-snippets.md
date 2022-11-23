@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMailFolder()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.mailSearchFolder",
-	"filterQuery": "contains(subject, 'Analytics')",
+requestBody := graphmodels.NewMailFolder()
+additionalData := map[string]interface{}{
+	"filterQuery" : "contains(subject, 'Analytics')", 
 }
-mailFolderId := "mailFolder-id"
-graphClient.Me().MailFoldersById(&mailFolderId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

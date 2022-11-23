@@ -11,6 +11,26 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### conditionalAccessExternalTenantsMembershipKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
+
+### conditionalAccessGuestOrExternalUserTypes values
+
+|Member|
+|:---|
+|none|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|serviceProvider|
+|unknownFutureValue|
 
 ### teamTemplateAudience values 
 
@@ -541,6 +561,16 @@ Namespace: microsoft.graph
 |screenSharing|
 |unknownFutureValue|
 
+### endpointType values
+
+|Member|
+|:---|
+|default|
+|voicemail|
+|skypeForBusiness|
+|skypeForBusinessVoipPhone|
+|unknownFutureValue|
+
 ### kerberosSignOnMappingAttributeType values
 
 |Member|
@@ -868,10 +898,6 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |none|
-|internal|
-|external|
-|externalPartner|
-|externalNonPartner|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -885,6 +911,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 |adminConfirmedServicePrincipalCompromised|
 |adminDismissedAllRiskForServicePrincipal|
+|m365DAdminDismissedDetection|
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -950,6 +977,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### educationAddToCalendarOptions values
+
 |Member|
 |:---|
 |none|
@@ -959,6 +987,7 @@ Namespace: microsoft.graph
 |studentsOnly|
 
 ### educationAssignmentStatus values
+
 |Member|
 |:---|
 |draft|
@@ -967,6 +996,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### educationSubmissionStatus values
+
 |Member|
 |:---|
 |working|
@@ -977,6 +1007,7 @@ Namespace: microsoft.graph
 |reassigned|
 
 ### educationFeedbackResourceOutcomeStatus values
+
 |Member|
 |:---|
 |notPublished|
@@ -1216,6 +1247,9 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|acronym|
+|bookmark|
+|chatMessage|
 |unknownFutureValue|
 
 ### searchAlterationType values
@@ -2094,15 +2128,6 @@ Possible values for user account types (group membership), per Windows definitio
 |high|
 |urgent|
 
-### channelMembershipType values
-
-| Member             |
-| :----------------- |
-| standard           |
-| private            |
-| unknownFutureValue |
-| shared             |
-
 ### stagedFeatureName values
 
 | Member                    | Description                   |
@@ -2361,6 +2386,17 @@ Possible values for user account types (group membership), per Windows definitio
 |High|1|
 |Low|2|
 
+### templateScenarios values
+|Member             |
+|:------------------|
+|new                |
+|secureFoundation   |
+|zeroTrust          |
+|remoteWork         |
+|protectAdmins      |
+|emergingThreats    |
+|unknownFutureValue |
+
 ### threatAssessmentContentType values
 
 | Member | Value | Description             |
@@ -2591,6 +2627,7 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |unknownFutureValue|
 |roster|
+|project|
 
 ### plannerPlanContextType values
 
@@ -2775,12 +2812,6 @@ Possible values for user account types (group membership), per Windows definitio
 |critical|
 |unknownFutureValue|
 
-### teamworkTagType values
-
-|Member| Value | Description               |
-|:---|:---- | :------------------------ |
-|standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
-
 ### teamworkApplicationIdentityType values
 
 |Member|
@@ -2814,6 +2845,7 @@ Possible values for user account types (group membership), per Windows definitio
 |phoneUser|
 |unknownFutureValue|
 |emailUser|
+|azureCommunicationServicesUser|
 
 ### callRecordingStatus values
 
@@ -3110,6 +3142,15 @@ Possible values for user account types (group membership), per Windows definitio
 |terminationRequested|
 |unknownFutureValue|
 
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
+|unknownFutureValue|
+
 ### longRunningOperationStatus values 
 
 |Member|
@@ -3172,6 +3213,13 @@ Possible values for user account types (group membership), per Windows definitio
 |administrator|
 |unknownFutureValue|
 
+### weakAlgorithms values 
+
+|Member|
+|:---|
+|rsaSha1|
+|unknownFutureValue|
+
 ### tenantAllowBlockListAction values 
 
 |Member|
@@ -3189,3 +3237,156 @@ Possible values for user account types (group membership), per Windows definitio
 |sender|
 |recipient|
 |unknownFutureValue|
+
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
+
+### browserSharedCookieSourceEnvironment values
+
+| Member|
+|:-----------------|
+|microsoftEdge|
+|internetExplorer11|
+|both|
+|unknownFutureValue|
+
+### browserSiteCompatibilityMode values
+
+| Member|
+|:-----------------|
+|default|
+|internetExplorer8Enterprise|
+|internetExplorer7Enterprise|
+|internetExplorer11|
+|internetExplorer10|
+|internetExplorer9|
+|internetExplorer8|
+|internetExplorer7|
+|internetExplorer5|
+|unknownFutureValue|
+
+### browserSiteMergeType values
+
+| Member|
+|:-----------------|
+|noMerge|
+|default|
+|unknownFutureValue|
+
+### browserSiteTargetEnvironment values
+
+| Member|
+|:-----------------|
+|internetExplorerMode|
+|internetExplorer11|
+|microsoftEdge|
+|configurable|
+|none|
+|unknownFutureValue|
+
+### browserSiteStatus values
+
+| Member|
+|:-----------------|
+|published|
+|pendingAdd|
+|pendingEdit|
+|pendingDelete|
+|unknownFutureValue|
+
+### browserSharedCookieStatus values
+
+| Member|
+|:-----------------|
+|published|
+|pendingAdd|
+|pendingEdit|
+|pendingDelete|
+|unknownFutureValue|
+
+### browserSiteListStatus values
+
+| Member|
+|:-----------------|
+|draft|
+|published|
+|pending|
+|unknownFutureValue|
+
+### authenticationStrengthPolicyType values
+
+|Member|
+|:---|
+|builtIn|
+|custom|
+|unknownFutureValue|
+
+### authenticationStrengthRequirements values
+
+|Member|
+|:---|
+|none|
+|mfa|
+|unknownFutureValue|
+
+### authenticationMethodModes values
+
+|Member|
+|:---|
+|password|
+|voice|
+|hardwareOath|
+|softwareOath|
+|sms|
+|fido2|
+|windowsHelloForBusiness|
+|microsoftAuthenticatorPush|
+|deviceBasedPush|
+|temporaryAccessPassOneTime|
+|temporaryAccessPassMultiUse|
+|email|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|federatedSingleFactor|
+|federatedMultiFactor|
+|unknownFutureValue|
+
+### baseAuthenticationMethod values
+
+|Member|
+|:---|
+|password|
+|voice|
+|hardwareOath|
+|softwareOath|
+|sms|
+|fido|
+|microsoftAuthenticator|
+|windowsHelloForBusiness|
+|temporaryAccessPass|
+|email|
+|x509Certificate|
+|federation|
+|unknownFutureValue|
+
+### searchContent values 
+
+|Member|
+|:---|
+|privateContent|
+|sharedContent|
+|unknownFutureValue|
+
+

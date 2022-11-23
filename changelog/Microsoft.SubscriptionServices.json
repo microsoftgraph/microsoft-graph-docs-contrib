@@ -111,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "todoTask, change notifications",
           "ChangeType": "Addition",
-          "Description": "Added [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](https://learn.microsoft.com/en-us/graph/webhooks).",
           "Target": "todoTask, change notifications"
         }
       ],
@@ -129,7 +129,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printTaskDefinition, change notifications",
           "ChangeType": "Addition",
-          "Description": "Added [printTaskDefinition](https://docs.microsoft.com/en-us/graph/api/resources/printtaskdefinition?view=graph-rest-beta) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Description": "Added [printTaskDefinition](https://learn.microsoft.com/en-us/graph/api/resources/printtaskdefinition?view=graph-rest-beta) to the resources supported for [change notifications](https://learn.microsoft.com/en-us/graph/webhooks).",
           "Target": "printTaskDefinition, change notifications"
         }
       ],
@@ -147,7 +147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lifecycle notifications,chatMessage,contact,event,message",
           "ChangeType": "Addition",
-          "Description": "Added [lifecycle notifications](https://docs.microsoft.com/en-us/graph/webhooks-lifecycle) for personal [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0), [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), and [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0).",
+          "Description": "Added [lifecycle notifications](https://learn.microsoft.com/en-us/graph/webhooks-lifecycle) for personal [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0), [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), and [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0).",
           "Target": "lifecycle notifications,chatMessage,contact,event,message"
         }
       ],
@@ -165,7 +165,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessage,change notifications",
           "ChangeType": "Addition",
-          "Description": "Added [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/presence) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Description": "Added [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/presence) to the resources supported for [change notifications](https://learn.microsoft.com/en-us/graph/webhooks).",
           "Target": "chatMessage,change notifications"
         }
       ],
@@ -183,7 +183,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "includeProperties,includeResourceData",
           "ChangeType": "Deletion",
-          "Description": "Removed the **includeProperties** property from the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property.",
+          "Description": "Removed the **includeProperties** property from the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property.",
           "Target": "subscription"
         },
         {
@@ -209,7 +209,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta queries",
           "ChangeType": "Addition",
-          "Description": "Change tracking through [delta queries](https://docs.microsoft.com/en-us/graph/api/event-delta) is available for Microsoft Graph for US Government.",
+          "Description": "Change tracking through [delta queries](https://learn.microsoft.com/en-us/graph/api/event-delta) is available for Microsoft Graph for US Government.",
           "Target": "delta queries"
         }
       ],
@@ -227,7 +227,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence,change notifications",
           "ChangeType": "Addition",
-          "Description": "Added [presence](https://docs.microsoft.com/en-us/graph/api/resources/presence) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Description": "Added [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence) to the resources supported for [change notifications](https://learn.microsoft.com/en-us/graph/webhooks).",
           "Target": "presence,change notifications"
         }
       ],
@@ -245,7 +245,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "changeNotification,changeNotificationCollection,resourceData,change notification",
           "ChangeType": "Addition",
-          "Description": "Added the [changeNotification](https://docs.microsoft.com/en-us/graph/api/resources/changenotification), [changeNotificationCollection](https://docs.microsoft.com/en-us/graph/api/resources/changenotificationcollection), and [resourceData](https://docs.microsoft.com/en-us/graph/api/resources/resourcedata) resources to the [change notification](https://docs.microsoft.com/en-us/graph/api/concepts/webhooks) API.",
+          "Description": "Added the [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changenotification), [changeNotificationCollection](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection), and [resourceData](https://learn.microsoft.com/en-us/graph/api/resources/resourcedata) resources to the [change notification](https://learn.microsoft.com/en-us/graph/api/concepts/webhooks) API.",
           "Target": "changeNotification,changeNotificationCollection,resourceData,change notification"
         }
       ],
@@ -263,7 +263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "changeNotification,changeNotificationCollection,changeNotificationEncryptedContent,change notification",
           "ChangeType": "Addition",
-          "Description": "Added the [changeNotification](https://docs.microsoft.com/en-us/graph/api/resources/changenotification?view=graph-rest-beta), [changeNotificationCollection](https://docs.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-beta), and [changeNotificationEncryptedContent](https://docs.microsoft.com/en-us/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta) resources for the [change notification](https://docs.microsoft.com/en-us/graph/api/concepts/webhooks) API.",
+          "Description": "Added the [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changenotification?view=graph-rest-beta), [changeNotificationCollection](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-beta), and [changeNotificationEncryptedContent](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta) resources for the [change notification](https://learn.microsoft.com/en-us/graph/api/concepts/webhooks) API.",
           "Target": "changeNotification,changeNotificationCollection,changeNotificationEncryptedContent,change notification"
         }
       ],
@@ -281,7 +281,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "subscription,Microsoft Cloud for US Government",
           "ChangeType": "Addition",
-          "Description": "Added support for [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription) in [Microsoft Cloud for US Government](deployments.md).",
+          "Description": "Added support for [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) in [Microsoft Cloud for US Government](deployments.md).",
           "Target": "subscription,Microsoft Cloud for US Government"
         }
       ],
@@ -299,7 +299,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chatMessage,Set up change notifications for chat messages, including message properties (preview)",
           "ChangeType": "Addition",
-          "Description": "Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).",
+          "Description": "Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).",
           "Target": "chatMessage,Set up change notifications for chat messages, including message properties (preview)"
         }
       ],
@@ -317,7 +317,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Create and send notifications",
           "ChangeType": "Addition",
-          "Description": "Added the [Create and send notifications](https://docs.microsoft.com/en-us/graph/api/user-post-notifications?view=graph-rest-beta) API to enable targeting users without managing the on-behalf-of tokens.",
+          "Description": "Added the [Create and send notifications](https://learn.microsoft.com/en-us/graph/api/user-post-notifications?view=graph-rest-beta) API to enable targeting users without managing the on-behalf-of tokens.",
           "Target": "Create and send notifications"
         },
         {
@@ -325,7 +325,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetPolicy",
           "ChangeType": "Addition",
-          "Description": "Introduced the **targetPolicy** property on the [notification](https://docs.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable web endpoints to be targeted via webpush.",
+          "Description": "Introduced the **targetPolicy** property on the [notification](https://learn.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable web endpoints to be targeted via webpush.",
           "Target": "notification"
         },
         {
@@ -333,7 +333,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "fallbackPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the **fallbackPolicy** property on the [notification](https://docs.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable guaranteed delivery on iOS for high-priority notifications.",
+          "Description": "Added the **fallbackPolicy** property on the [notification](https://learn.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable guaranteed delivery on iOS for high-priority notifications.",
           "Target": "notification"
         }
       ],
@@ -369,7 +369,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "notification",
           "ChangeType": "Addition",
-          "Description": "Added the [notification](https://docs.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource type.",
+          "Description": "Added the [notification](https://learn.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource type.",
           "Target": "notification"
         },
         {
@@ -377,7 +377,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Create and publish notification",
           "ChangeType": "Addition",
-          "Description": "Added the [Create and publish notification](https://docs.microsoft.com/en-us/graph/api/projectrome_notification_post?view=graph-rest-beta) API.",
+          "Description": "Added the [Create and publish notification](https://learn.microsoft.com/en-us/graph/api/projectrome_notification_post?view=graph-rest-beta) API.",
           "Target": "Create and publish notification"
         }
       ],
@@ -395,7 +395,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webhooks",
           "ChangeType": "Change",
-          "Description": "Added support to [webhooks](https://docs.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-beta) for users and groups.",
+          "Description": "Added support to [webhooks](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-beta) for users and groups.",
           "Target": "webhooks"
         }
       ],

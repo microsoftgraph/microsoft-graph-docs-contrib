@@ -59,6 +59,8 @@ If successful, this method returns a `201 Created` response code and an [urlThre
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_urlthreatsubmission_from_urlthreats"
@@ -74,6 +76,33 @@ Content-type: application/json
   "webUrl": "http://phishing.contoso.com"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-urlthreatsubmission-from-urlthreats-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-urlthreatsubmission-from-urlthreats-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-urlthreatsubmission-from-urlthreats-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-urlthreatsubmission-from-urlthreats-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-urlthreatsubmission-from-urlthreats-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-urlthreatsubmission-from-urlthreats-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
@@ -93,7 +122,7 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/urlThreatSubmission/$entity",
-  "@odata.type": "#microsoft.graph.urlThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.urlThreatSubmission",
   "category": "phishing",  
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",

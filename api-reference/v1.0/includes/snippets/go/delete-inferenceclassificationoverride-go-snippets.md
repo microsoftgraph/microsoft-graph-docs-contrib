@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-inferenceClassificationOverrideId := "inferenceClassificationOverride-id"
-graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Delete()
+
+graphClient.Me().InferenceClassification().OverridesById("inferenceClassificationOverride-id").Delete(context.Background(), nil)
 
 
 ```

@@ -7,158 +7,219 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageAssignmentPolicy()
+requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
 displayName := "policy for external access requests"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "policy for users from connected organizations to request access, with two stages of approval."
-requestBody.SetDescription(&description)
-allowedTargetScope := "allConfiguredConnectedOrganizationUsers"
-requestBody.SetAllowedTargetScope(&allowedTargetScope)
-requestBody.SetSpecificAllowedTargets( []SubjectSet {
+requestBody.SetDescription(&description) 
+allowedTargetScope := graphmodels.ALLCONFIGUREDCONNECTEDORGANIZATIONUSERS_ALLOWEDTARGETSCOPE 
+requestBody.SetAllowedTargetScope(&allowedTargetScope) 
+specificAllowedTargets := []graphmodels.SubjectSetable {
+
 }
-expiration := msgraphsdk.NewExpirationPattern()
+requestBody.SetSpecificAllowedTargets(specificAllowedTargets)
+expiration := graphmodels.NewExpirationPattern()
+type := graphmodels.NOEXPIRATION_EXPIRATIONPATTERNTYPE 
+expiration.SetType(&type) 
 requestBody.SetExpiration(expiration)
-type := "noExpiration"
-expiration.SetType(&type)
-requestorSettings := msgraphsdk.NewAccessPackageAssignmentRequestorSettings()
-requestBody.SetRequestorSettings(requestorSettings)
+requestorSettings := graphmodels.NewAccessPackageAssignmentRequestorSettings()
 enableTargetsToSelfAddAccess := true
-requestorSettings.SetEnableTargetsToSelfAddAccess(&enableTargetsToSelfAddAccess)
+requestorSettings.SetEnableTargetsToSelfAddAccess(&enableTargetsToSelfAddAccess) 
 enableTargetsToSelfUpdateAccess := true
-requestorSettings.SetEnableTargetsToSelfUpdateAccess(&enableTargetsToSelfUpdateAccess)
+requestorSettings.SetEnableTargetsToSelfUpdateAccess(&enableTargetsToSelfUpdateAccess) 
 enableTargetsToSelfRemoveAccess := true
-requestorSettings.SetEnableTargetsToSelfRemoveAccess(&enableTargetsToSelfRemoveAccess)
+requestorSettings.SetEnableTargetsToSelfRemoveAccess(&enableTargetsToSelfRemoveAccess) 
 allowCustomAssignmentSchedule := false
-requestorSettings.SetAllowCustomAssignmentSchedule(&allowCustomAssignmentSchedule)
+requestorSettings.SetAllowCustomAssignmentSchedule(&allowCustomAssignmentSchedule) 
 enableOnBehalfRequestorsToAddAccess := false
-requestorSettings.SetEnableOnBehalfRequestorsToAddAccess(&enableOnBehalfRequestorsToAddAccess)
+requestorSettings.SetEnableOnBehalfRequestorsToAddAccess(&enableOnBehalfRequestorsToAddAccess) 
 enableOnBehalfRequestorsToUpdateAccess := false
-requestorSettings.SetEnableOnBehalfRequestorsToUpdateAccess(&enableOnBehalfRequestorsToUpdateAccess)
+requestorSettings.SetEnableOnBehalfRequestorsToUpdateAccess(&enableOnBehalfRequestorsToUpdateAccess) 
 enableOnBehalfRequestorsToRemoveAccess := false
-requestorSettings.SetEnableOnBehalfRequestorsToRemoveAccess(&enableOnBehalfRequestorsToRemoveAccess)
-requestorSettings.SetOnBehalfRequestors( []SubjectSet {
+requestorSettings.SetEnableOnBehalfRequestorsToRemoveAccess(&enableOnBehalfRequestorsToRemoveAccess) 
+onBehalfRequestors := []graphmodels.SubjectSetable {
+
 }
-requestApprovalSettings := msgraphsdk.NewAccessPackageAssignmentApprovalSettings()
-requestBody.SetRequestApprovalSettings(requestApprovalSettings)
+requestorSettings.SetOnBehalfRequestors(onBehalfRequestors)
+requestBody.SetRequestorSettings(requestorSettings)
+requestApprovalSettings := graphmodels.NewAccessPackageAssignmentApprovalSettings()
 isApprovalRequiredForAdd := true
-requestApprovalSettings.SetIsApprovalRequiredForAdd(&isApprovalRequiredForAdd)
+requestApprovalSettings.SetIsApprovalRequiredForAdd(&isApprovalRequiredForAdd) 
 isApprovalRequiredForUpdate := false
-requestApprovalSettings.SetIsApprovalRequiredForUpdate(&isApprovalRequiredForUpdate)
-requestApprovalSettings.SetStages( []AccessPackageApprovalStage {
-	msgraphsdk.NewAccessPackageApprovalStage(),
+requestApprovalSettings.SetIsApprovalRequiredForUpdate(&isApprovalRequiredForUpdate) 
+
+
+accessPackageApprovalStage := graphmodels.NewAccessPackageApprovalStage()
 durationBeforeAutomaticDenial := "P14D"
-	SetDurationBeforeAutomaticDenial(&durationBeforeAutomaticDenial)
+accessPackageApprovalStage.SetDurationBeforeAutomaticDenial(&durationBeforeAutomaticDenial) 
 isApproverJustificationRequired := false
-	SetIsApproverJustificationRequired(&isApproverJustificationRequired)
+accessPackageApprovalStage.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
 isEscalationEnabled := false
-	SetIsEscalationEnabled(&isEscalationEnabled)
+accessPackageApprovalStage.SetIsEscalationEnabled(&isEscalationEnabled) 
 durationBeforeEscalation := "PT0S"
-	SetDurationBeforeEscalation(&durationBeforeEscalation)
-	SetPrimaryApprovers( []SubjectSet {
-		msgraphsdk.NewSubjectSet(),
-		SetAdditionalData(map[string]interface{}{
-			"@odata.type": "#microsoft.graph.internalSponsors",
-		}
-	}
-	SetFallbackPrimaryApprovers( []SubjectSet {
-		msgraphsdk.NewSubjectSet(),
-		SetAdditionalData(map[string]interface{}{
-			"@odata.type": "#microsoft.graph.singleUser",
-			"userId": "7deff43e-1f17-44ef-9e5f-d516b0ba11d4",
-		}
-		msgraphsdk.NewSubjectSet(),
-		SetAdditionalData(map[string]interface{}{
-			"@odata.type": "#microsoft.graph.groupMembers",
-			"groupId": "1623f912-5e86-41c2-af47-39dd67582b66",
-		}
-	}
-	SetEscalationApprovers( []SubjectSet {
-	}
-	SetFallbackEscalationApprovers( []SubjectSet {
-	}
-	msgraphsdk.NewAccessPackageApprovalStage(),
-durationBeforeAutomaticDenial := "P14D"
-	SetDurationBeforeAutomaticDenial(&durationBeforeAutomaticDenial)
-isApproverJustificationRequired := false
-	SetIsApproverJustificationRequired(&isApproverJustificationRequired)
-isEscalationEnabled := false
-	SetIsEscalationEnabled(&isEscalationEnabled)
-durationBeforeEscalation := "PT0S"
-	SetDurationBeforeEscalation(&durationBeforeEscalation)
-	SetPrimaryApprovers( []SubjectSet {
-	}
-	SetFallbackPrimaryApprovers( []SubjectSet {
-		msgraphsdk.NewSubjectSet(),
-		SetAdditionalData(map[string]interface{}{
-			"@odata.type": "#microsoft.graph.singleUser",
-			"userId": "46184453-e63b-4f20-86c2-c557ed5d5df9",
-		}
-		msgraphsdk.NewSubjectSet(),
-		SetAdditionalData(map[string]interface{}{
-			"@odata.type": "#microsoft.graph.groupMembers",
-			"groupId": "1623f912-5e86-41c2-af47-39dd67582b66",
-		}
-	}
-	SetEscalationApprovers( []SubjectSet {
-	}
-	SetFallbackEscalationApprovers( []SubjectSet {
-	}
+accessPackageApprovalStage.SetDurationBeforeEscalation(&durationBeforeEscalation) 
+
+
+subjectSet := graphmodels.NewSubjectSet()
+"@odata.type" := "#microsoft.graph.internalSponsors"
+subjectSet.Set"@odata.type"(&"@odata.type") 
+
+primaryApprovers := []graphmodels.SubjectSetable {
+	subjectSet,
+
 }
-reviewSettings := msgraphsdk.NewAccessPackageAssignmentReviewSettings()
-requestBody.SetReviewSettings(reviewSettings)
+accessPackageApprovalStage.SetPrimaryApprovers(primaryApprovers)
+
+
+subjectSet := graphmodels.NewSubjectSet()
+"@odata.type" := "#microsoft.graph.singleUser"
+subjectSet.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"userId" : "7deff43e-1f17-44ef-9e5f-d516b0ba11d4", 
+}
+subjectSet.SetAdditionalData(additionalData)
+subjectSet1 := graphmodels.NewSubjectSet()
+"@odata.type" := "#microsoft.graph.groupMembers"
+subjectSet1.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
+}
+subjectSet1.SetAdditionalData(additionalData)
+
+fallbackPrimaryApprovers := []graphmodels.SubjectSetable {
+	subjectSet,
+	subjectSet1,
+
+}
+accessPackageApprovalStage.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
+escalationApprovers := []graphmodels.SubjectSetable {
+
+}
+accessPackageApprovalStage.SetEscalationApprovers(escalationApprovers)
+fallbackEscalationApprovers := []graphmodels.SubjectSetable {
+
+}
+accessPackageApprovalStage.SetFallbackEscalationApprovers(fallbackEscalationApprovers)
+accessPackageApprovalStage1 := graphmodels.NewAccessPackageApprovalStage()
+durationBeforeAutomaticDenial := "P14D"
+accessPackageApprovalStage1.SetDurationBeforeAutomaticDenial(&durationBeforeAutomaticDenial) 
+isApproverJustificationRequired := false
+accessPackageApprovalStage1.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
+isEscalationEnabled := false
+accessPackageApprovalStage1.SetIsEscalationEnabled(&isEscalationEnabled) 
+durationBeforeEscalation := "PT0S"
+accessPackageApprovalStage1.SetDurationBeforeEscalation(&durationBeforeEscalation) 
+primaryApprovers := []graphmodels.SubjectSetable {
+
+}
+accessPackageApprovalStage1.SetPrimaryApprovers(primaryApprovers)
+
+
+subjectSet := graphmodels.NewSubjectSet()
+"@odata.type" := "#microsoft.graph.singleUser"
+subjectSet.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"userId" : "46184453-e63b-4f20-86c2-c557ed5d5df9", 
+}
+subjectSet.SetAdditionalData(additionalData)
+subjectSet1 := graphmodels.NewSubjectSet()
+"@odata.type" := "#microsoft.graph.groupMembers"
+subjectSet1.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
+}
+subjectSet1.SetAdditionalData(additionalData)
+
+fallbackPrimaryApprovers := []graphmodels.SubjectSetable {
+	subjectSet,
+	subjectSet1,
+
+}
+accessPackageApprovalStage1.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
+escalationApprovers := []graphmodels.SubjectSetable {
+
+}
+accessPackageApprovalStage1.SetEscalationApprovers(escalationApprovers)
+fallbackEscalationApprovers := []graphmodels.SubjectSetable {
+
+}
+accessPackageApprovalStage1.SetFallbackEscalationApprovers(fallbackEscalationApprovers)
+
+stages := []graphmodels.AccessPackageApprovalStageable {
+	accessPackageApprovalStage,
+	accessPackageApprovalStage1,
+
+}
+requestApprovalSettings.SetStages(stages)
+requestBody.SetRequestApprovalSettings(requestApprovalSettings)
+reviewSettings := graphmodels.NewAccessPackageAssignmentReviewSettings()
 isEnabled := true
-reviewSettings.SetIsEnabled(&isEnabled)
-expirationBehavior := "keepAccess"
-reviewSettings.SetExpirationBehavior(&expirationBehavior)
+reviewSettings.SetIsEnabled(&isEnabled) 
+expirationBehavior := graphmodels.KEEPACCESS_ACCESSREVIEWEXPIRATIONBEHAVIOR 
+reviewSettings.SetExpirationBehavior(&expirationBehavior) 
 isRecommendationEnabled := true
-reviewSettings.SetIsRecommendationEnabled(&isRecommendationEnabled)
+reviewSettings.SetIsRecommendationEnabled(&isRecommendationEnabled) 
 isReviewerJustificationRequired := true
-reviewSettings.SetIsReviewerJustificationRequired(&isReviewerJustificationRequired)
+reviewSettings.SetIsReviewerJustificationRequired(&isReviewerJustificationRequired) 
 isSelfReview := false
-reviewSettings.SetIsSelfReview(&isSelfReview)
-schedule := msgraphsdk.NewEntitlementManagementSchedule()
-reviewSettings.SetSchedule(schedule)
-startDateTime, err := time.Parse(time.RFC3339, "2022-07-02T06:59:59.998Z")
-schedule.SetStartDateTime(&startDateTime)
-expiration := msgraphsdk.NewExpirationPattern()
-schedule.SetExpiration(expiration)
+reviewSettings.SetIsSelfReview(&isSelfReview) 
+schedule := graphmodels.NewEntitlementManagementSchedule()
+startDateTime , err := time.Parse(time.RFC3339, "2022-07-02T06:59:59.998Z")
+schedule.SetStartDateTime(&startDateTime) 
+expiration := graphmodels.NewExpirationPattern()
 duration := "P14D"
-expiration.SetDuration(&duration)
-type := "afterDuration"
-expiration.SetType(&type)
-recurrence := msgraphsdk.NewPatternedRecurrence()
-schedule.SetRecurrence(recurrence)
-pattern := msgraphsdk.NewRecurrencePattern()
-recurrence.SetPattern(pattern)
-type := "absoluteMonthly"
-pattern.SetType(&type)
+expiration.SetDuration(&duration) 
+type := graphmodels.AFTERDURATION_EXPIRATIONPATTERNTYPE 
+expiration.SetType(&type) 
+schedule.SetExpiration(expiration)
+recurrence := graphmodels.NewPatternedRecurrence()
+pattern := graphmodels.NewRecurrencePattern()
+type := graphmodels.ABSOLUTEMONTHLY_RECURRENCEPATTERNTYPE 
+pattern.SetType(&type) 
 interval := int32(3)
-pattern.SetInterval(&interval)
+pattern.SetInterval(&interval) 
 month := int32(0)
-pattern.SetMonth(&month)
+pattern.SetMonth(&month) 
 dayOfMonth := int32(0)
-pattern.SetDayOfMonth(&dayOfMonth)
-pattern.SetDaysOfWeek( []DayOfWeek {
+pattern.SetDayOfMonth(&dayOfMonth) 
+daysOfWeek := []graphmodels.DayOfWeekable {
+
 }
-range := msgraphsdk.NewRecurrenceRange()
-recurrence.SetRange(range)
-type := "noEnd"
-range.SetType(&type)
+pattern.SetDaysOfWeek(daysOfWeek)
+recurrence.SetPattern(pattern)
+range := graphmodels.NewRecurrenceRange()
+type := graphmodels.NOEND_RECURRENCERANGETYPE 
+range.SetType(&type) 
 numberOfOccurrences := int32(0)
-range.SetNumberOfOccurrences(&numberOfOccurrences)
-reviewSettings.SetPrimaryReviewers( []SubjectSet {
-	msgraphsdk.NewSubjectSet(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.groupMembers",
-		"groupId": "1623f912-5e86-41c2-af47-39dd67582b66",
-	}
+range.SetNumberOfOccurrences(&numberOfOccurrences) 
+recurrence.SetRange(range)
+schedule.SetRecurrence(recurrence)
+reviewSettings.SetSchedule(schedule)
+
+
+subjectSet := graphmodels.NewSubjectSet()
+"@odata.type" := "#microsoft.graph.groupMembers"
+subjectSet.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
 }
-reviewSettings.SetFallbackReviewers( []SubjectSet {
+subjectSet.SetAdditionalData(additionalData)
+
+primaryReviewers := []graphmodels.SubjectSetable {
+	subjectSet,
+
 }
-accessPackage := msgraphsdk.NewAccessPackage()
-requestBody.SetAccessPackage(accessPackage)
+reviewSettings.SetPrimaryReviewers(primaryReviewers)
+fallbackReviewers := []graphmodels.SubjectSetable {
+
+}
+reviewSettings.SetFallbackReviewers(fallbackReviewers)
+requestBody.SetReviewSettings(reviewSettings)
+accessPackage := graphmodels.NewaccessPackage()
 id := "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
-accessPackage.SetId(&id)
+accessPackage.SetId(&id) 
+requestBody.SetAccessPackage(accessPackage)
+
 result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().Post(requestBody)
 
 

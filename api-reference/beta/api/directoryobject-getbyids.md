@@ -77,20 +77,26 @@ POST https://graph.microsoft.com/beta/directoryObjects/getByIds
 Content-type: application/json
 
 {
-    "ids":["84b80893-8749-40a3-97b7-68513b600544","5d6059b6-368d-45f8-91e1-8e07d485f1d0"],
-    "types":["user"]
+    "ids": [
+        "84b80893-8749-40a3-97b7-68513b600544",
+        "5d6059b6-368d-45f8-91e1-8e07d485f1d0",
+        "0b944de3-e0fc-4774-a49a-b135213725ef",
+        "b75a5ab2-fe55-4463-bd31-d21ad555c6e0"
+    ],
+    "types": [
+        "user",
+        "group",
+        "device"
+    ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getbyids-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getbyids-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getbyids-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -103,6 +109,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getbyids-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/directoryobject-getbyids-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,9 +144,23 @@ Content-type: application/json
       },
       {
         "@odata.type": "#microsoft.graph.user",
-        "id": "84b80893-8749-40a3-97b7-68513b600544",
+        "id": "5d6059b6-368d-45f8-91e1-8e07d485f1d0",
         "accountEnabled": true,
         "displayName": "Billy Smith"
+      },
+      {
+         "@odata.type": "#microsoft.graph.group",
+         "id": "0b944de3-e0fc-4774-a49a-b135213725ef",
+         "description": "Pineview School Staff",
+         "groupTypes": [
+             "Unified"
+         ]
+      },
+      {
+         "@odata.type": "#microsoft.graph.device",
+         "id": "b75a5ab2-fe55-4463-bd31-d21ad555c6e0",
+         "dipslayName": "e8ba4e98c000002",
+         "deviceId": "4c299165-6e8f-4b45-a5ba-c5d250a707ff"
       }
     ]
 }

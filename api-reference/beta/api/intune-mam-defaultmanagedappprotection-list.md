@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6441
+Content-Length: 6591
 
 {
   "value": [
@@ -117,6 +117,7 @@ Content-Length: 6441
       "managedBrowser": "microsoftEdge",
       "maximumAllowedDeviceThreatLevel": "secured",
       "mobileThreatDefenseRemediationAction": "wipe",
+      "mobileThreatDefensePartnerPriority": "thirdPartyPartnerOverDefender",
       "blockDataIngestionIntoOrganizationDocuments": true,
       "allowedDataIngestionLocations": [
         "sharePoint"
@@ -194,11 +195,13 @@ Content-Length: 6441
       "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
       "requireClass3Biometrics": true,
       "requirePinAfterBiometricChange": true,
-      "fingerprintAndBiometricEnabled": true
+      "fingerprintAndBiometricEnabled": true,
+      "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
     }
   ]
 }
 ```
+
 
 
 

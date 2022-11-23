@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_schools_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
+GET https://graph.microsoft.com/v1.0/education/classes/7e4ec76c-8276-43ef-ba10-9aaa197cb212/schools
 ```
 
 # [C#](#tab/csharp)
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -86,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-schools-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-schools-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -107,36 +107,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "10002",
-      "displayName": "Fabrikam High School",
-      "description": "Magnate school for the arts. Los Angeles School District",
-      "status": "String",
-      "externalSource": "String",
-      "principalEmail": "AmyR@fabrikam.com",
-      "principalName": "Amy Roebuck",
-      "externalPrincipalId": "14007",
-      "highestGrade": "12",
-      "lowestGrade": "9",
-      "schoolNumber": "10002",
-      "address": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-      "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.educationSchool)",
+    "value": [
+        {
+            "id": "8a07f5a8-edc9-4847-bbf2-dde106594bf4",
+            "displayName": "Management Fast Track",
+            "description": null,
+            "principalEmail": "aroebuck@principal.edu",
+            "principalName": "Amy Roebuck",
+            "externalPrincipalId": "14008",
+            "externalId": "10002",
+            "externalSource": "sis",
+            "externalSourceDetail": "SIS",
+            "phone": "555-123-4567",
+            "address": {
+                "city": "Redmond",
+                "countryOrRegion": "US",
+                "postalCode": "98052",
+                "state": "WA",
+                "street": "2 Microsoft Way"
+            }
         }
-      },
-      "externalId": "10002",
-      "phone": "+1 (253) 555-0102",
-    }
-  ]
+    ]
 }
 ```
 

@@ -7,52 +7,61 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageAssignmentPolicy()
+requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
 displayName := "New Policy"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "policy for assignment"
-requestBody.SetDescription(&description)
-allowedTargetScope := "notSpecified"
-requestBody.SetAllowedTargetScope(&allowedTargetScope)
-requestBody.SetSpecificAllowedTargets( []SubjectSet {
+requestBody.SetDescription(&description) 
+allowedTargetScope := graphmodels.NOTSPECIFIED_ALLOWEDTARGETSCOPE 
+requestBody.SetAllowedTargetScope(&allowedTargetScope) 
+specificAllowedTargets := []graphmodels.SubjectSetable {
+
 }
-expiration := msgraphsdk.NewExpirationPattern()
+requestBody.SetSpecificAllowedTargets(specificAllowedTargets)
+expiration := graphmodels.NewExpirationPattern()
+endDateTime := null
+expiration.SetEndDateTime(&endDateTime) 
+duration := null
+expiration.SetDuration(&duration) 
+type := graphmodels.NOEXPIRATION_EXPIRATIONPATTERNTYPE 
+expiration.SetType(&type) 
 requestBody.SetExpiration(expiration)
-expiration.SetEndDateTime(nil)
-expiration.SetDuration(nil)
-type := "noExpiration"
-expiration.SetType(&type)
-requestorSettings := msgraphsdk.NewAccessPackageAssignmentRequestorSettings()
-requestBody.SetRequestorSettings(requestorSettings)
+requestorSettings := graphmodels.NewAccessPackageAssignmentRequestorSettings()
 enableTargetsToSelfAddAccess := false
-requestorSettings.SetEnableTargetsToSelfAddAccess(&enableTargetsToSelfAddAccess)
+requestorSettings.SetEnableTargetsToSelfAddAccess(&enableTargetsToSelfAddAccess) 
 enableTargetsToSelfUpdateAccess := false
-requestorSettings.SetEnableTargetsToSelfUpdateAccess(&enableTargetsToSelfUpdateAccess)
+requestorSettings.SetEnableTargetsToSelfUpdateAccess(&enableTargetsToSelfUpdateAccess) 
 enableTargetsToSelfRemoveAccess := false
-requestorSettings.SetEnableTargetsToSelfRemoveAccess(&enableTargetsToSelfRemoveAccess)
+requestorSettings.SetEnableTargetsToSelfRemoveAccess(&enableTargetsToSelfRemoveAccess) 
 allowCustomAssignmentSchedule := true
-requestorSettings.SetAllowCustomAssignmentSchedule(&allowCustomAssignmentSchedule)
+requestorSettings.SetAllowCustomAssignmentSchedule(&allowCustomAssignmentSchedule) 
 enableOnBehalfRequestorsToAddAccess := false
-requestorSettings.SetEnableOnBehalfRequestorsToAddAccess(&enableOnBehalfRequestorsToAddAccess)
+requestorSettings.SetEnableOnBehalfRequestorsToAddAccess(&enableOnBehalfRequestorsToAddAccess) 
 enableOnBehalfRequestorsToUpdateAccess := false
-requestorSettings.SetEnableOnBehalfRequestorsToUpdateAccess(&enableOnBehalfRequestorsToUpdateAccess)
+requestorSettings.SetEnableOnBehalfRequestorsToUpdateAccess(&enableOnBehalfRequestorsToUpdateAccess) 
 enableOnBehalfRequestorsToRemoveAccess := false
-requestorSettings.SetEnableOnBehalfRequestorsToRemoveAccess(&enableOnBehalfRequestorsToRemoveAccess)
-requestorSettings.SetOnBehalfRequestors( []SubjectSet {
+requestorSettings.SetEnableOnBehalfRequestorsToRemoveAccess(&enableOnBehalfRequestorsToRemoveAccess) 
+onBehalfRequestors := []graphmodels.SubjectSetable {
+
 }
-requestApprovalSettings := msgraphsdk.NewAccessPackageAssignmentApprovalSettings()
-requestBody.SetRequestApprovalSettings(requestApprovalSettings)
+requestorSettings.SetOnBehalfRequestors(onBehalfRequestors)
+requestBody.SetRequestorSettings(requestorSettings)
+requestApprovalSettings := graphmodels.NewAccessPackageAssignmentApprovalSettings()
 isApprovalRequiredForAdd := false
-requestApprovalSettings.SetIsApprovalRequiredForAdd(&isApprovalRequiredForAdd)
+requestApprovalSettings.SetIsApprovalRequiredForAdd(&isApprovalRequiredForAdd) 
 isApprovalRequiredForUpdate := false
-requestApprovalSettings.SetIsApprovalRequiredForUpdate(&isApprovalRequiredForUpdate)
-requestApprovalSettings.SetStages( []AccessPackageApprovalStage {
+requestApprovalSettings.SetIsApprovalRequiredForUpdate(&isApprovalRequiredForUpdate) 
+stages := []graphmodels.AccessPackageApprovalStageable {
+
 }
-accessPackage := msgraphsdk.NewAccessPackage()
-requestBody.SetAccessPackage(accessPackage)
+requestApprovalSettings.SetStages(stages)
+requestBody.SetRequestApprovalSettings(requestApprovalSettings)
+accessPackage := graphmodels.NewAccessPackage()
 id := "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
-accessPackage.SetId(&id)
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().Post(requestBody)
+accessPackage.SetId(&id) 
+requestBody.SetAccessPackage(accessPackage)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

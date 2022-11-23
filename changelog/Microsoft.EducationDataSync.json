@@ -7,7 +7,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "educationSynchronizationProfileList",
             "ChangeType": "Addition",
-            "Description": "Added support for application permissions to the [educationSynchronizationProfileList](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-list?view=graph-rest-beta) resource.",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileList](https://learn.microsoft.com/en-us/graph/api/educationsynchronizationprofile-list?view=graph-rest-beta) resource.",
             "Target": "educationSynchronizationProfileList"        
           },
           {
@@ -15,7 +15,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "educationSynchronizationProfilePause",
             "ChangeType": "Addition",
-            "Description": "Added support for application permissions to the [educationSynchronizationProfilePause](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-pause?view=graph-rest-beta) resource.",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfilePause](https://learn.microsoft.com/en-us/graph/api/educationsynchronizationprofile-pause?view=graph-rest-beta) resource.",
             "Target": "educationSynchronizationProfilePause"        
           },
           {
@@ -23,7 +23,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "educationSynchronizationProfileReset",
             "ChangeType": "Addition",
-            "Description": "Added support for application permissions to the [educationSynchronizationProfileReset](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-reset?view=graph-rest-beta) resource.",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileReset](https://learn.microsoft.com/en-us/graph/api/educationsynchronizationprofile-reset?view=graph-rest-beta) resource.",
             "Target": "educationSynchronizationProfileReset"        
           },
           {
@@ -31,7 +31,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "educationSynchronizationProfileResume",
             "ChangeType": "Addition",
-            "Description": "Added support for application permissions to the [educationSynchronizationProfileResume](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta) resource.",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileResume](https://learn.microsoft.com/en-us/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta) resource.",
             "Target": "educationSynchronizationProfileResume"        
           },
           {
@@ -39,7 +39,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "educationSynchronizationProfileStart",
             "ChangeType": "Addition",
-            "Description": "Added support for application permissions to the [educationSynchronizationProfileStart](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-start?view=graph-rest-beta) resource.",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileStart](https://learn.microsoft.com/en-us/graph/api/educationsynchronizationprofile-start?view=graph-rest-beta) resource.",
             "Target": "educationSynchronizationProfileStart"        
           },
           {
@@ -47,7 +47,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "educationSynchronizationProfileUploadUrl",
             "ChangeType": "Addition",
-            "Description": "Added support for application permissions to the [educationSynchronizationProfileUploadUrl](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta) resource.",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileUploadUrl](https://learn.microsoft.com/en-us/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta) resource.",
             "Target": "educationSynchronizationProfileUploadUrl"        
           }
         ],
@@ -65,7 +65,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "errorCount",
           "ChangeType": "Addition",
-          "Description": "Added new property **errorCount** to the [educationsynchronizationprofilestatus](https://docs.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta) resource.",
+          "Description": "Added new property **errorCount** to the [educationsynchronizationprofilestatus](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta) resource.",
           "Target": "educationsynchronizationprofilestatus"        
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "statusMessage",
           "ChangeType": "Addition",
-          "Description": "Added new property **statusMessage** to the [educationsynchronizationprofilestatus](https://docs.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta) resource.",
+          "Description": "Added new property **statusMessage** to the [educationsynchronizationprofilestatus](https://learn.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta) resource.",
           "Target": "educationsynchronizationprofilestatus"        
         },
         {

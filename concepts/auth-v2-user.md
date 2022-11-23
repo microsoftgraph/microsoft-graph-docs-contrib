@@ -149,7 +149,7 @@ Although the access token is opaque to your app, the response contains a list of
 | scope         | A space separated list of the Microsoft Graph permissions that the access_token is valid for.                                                                                                                                                                                                                                                                                             |
 | expires_in    | How long the access token is valid (in seconds).                                                                                                                                                                                                                                                                                                                                          |
 | access_token  | The requested access token. Your app can use this token to call Microsoft Graph.                                                                                                                                                                                                                                                                                                          |
-| refresh_token | An OAuth 2.0 refresh token. Your app can use this token to acquire additional access tokens after the current access token expires. Refresh tokens are long-lived, and can be used to retain access to resources for extended periods of time. For more detail, refer to the [v2.0 token reference](/azure/active-directory/develop/active-directory-v2-tokens). |
+| refresh_token | An OAuth 2.0 refresh token. Your app can use this token to acquire additional access tokens after the current access token expires. Refresh tokens are long-lived, and can be used to retain access to resources for extended periods of time. A refresh token will only be returned if `offline_access` was included as a `scope` parameter. For details, see the [v2.0 token reference](/azure/active-directory/develop/active-directory-v2-tokens). |
 
 ## 4. Use the access token to call Microsoft Graph
 
@@ -201,7 +201,7 @@ Access tokens are short lived, and you must refresh them after they expire to co
 ```
 // Line breaks for legibility only
 
-POST /common/oauth2/v2.0/token HTTP/1.1
+POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
@@ -268,7 +268,10 @@ Microsoft continues to support the Azure AD endpoint. There are [several differe
 - If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the [Azure portal](https://portal.azure.com).
 - All permissions that your app needs must be configured by the developer. The Azure AD endpoint doesn't support dynamic (incremental) consent.
 - The Azure AD endpoint uses a `resource` parameter in authorization and token requests to specify the resource, such as Microsoft Graph, for which it wants permissions. The endpoint doesn't support the `scope` parameter.
+<!-- commenting out this section until we can have a tutorial/how-to to demo this. Old article has been archived here https://github.com/uglide/azure-content/blob/master/articles/active-directory/active-directory-integrating-applications.md
+
 - The Azure AD endpoint doesn't expose a specific endpoint for administrator consent. Instead, apps use the `prompt=admin_consent` parameter in the authorization request to obtain administrator consent for an organization. For more information, see **Triggering the Azure AD consent framework at runtime** in [Integrating applications with Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications).
+-->
 
 For more information about getting access to Microsoft Graph on behalf of a user, see the following resources.
 

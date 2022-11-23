@@ -7,21 +7,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewConnectedOrganization()
+requestBody := graphmodels.NewConnectedOrganization()
 displayName := "Connected organization name"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Connected organization description"
-requestBody.SetDescription(&description)
-requestBody.SetIdentitySources( []IdentitySource {
-	msgraphsdk.NewIdentitySource(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.domainIdentitySource",
-		"domainName": "example.com",
-		"displayName": "example.com",
-	}
+requestBody.SetDescription(&description) 
+
+
+identitySource := graphmodels.NewIdentitySource()
+"@odata.type" := "#microsoft.graph.domainIdentitySource"
+identitySource.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"domainName" : "example.com", 
+	"displayName" : "example.com", 
 }
-state := "proposed"
-requestBody.SetState(&state)
+identitySource.SetAdditionalData(additionalData)
+
+identitySources := []graphmodels.IdentitySourceable {
+	identitySource,
+
+}
+requestBody.SetIdentitySources(identitySources)
+state := graphmodels.PROPOSED_CONNECTEDORGANIZATIONSTATE 
+requestBody.SetState(&state) 
+
 result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(requestBody)
 
 
