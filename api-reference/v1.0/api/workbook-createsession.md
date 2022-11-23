@@ -115,7 +115,7 @@ Content-type: application/json
 #### Request
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
+POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/createSession
 Prefer: respond-async
 Content-type: application/json
 {
