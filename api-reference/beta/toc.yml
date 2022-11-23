@@ -195,6 +195,8 @@ items:
       href: /graph/sdks/customize-client?context=graph/api/beta
     - name: Choose an authentication provider
       href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+    - name: Connect to national clouds
+      href: /graph/sdks/national-clouds?context=graph/api/beta
     - name: Create requests
       href: /graph/sdks/create-requests?context=graph/api/beta
     - name: Page through a collection
@@ -1797,6 +1799,29 @@ items:
             href: api/security-retentioneventtype-update.md
           - name: Delete
             href: api/security-retentioneventtype-delete.md
+      - name: Subject rights request
+        items:
+        - name: Overview
+          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+        - name: Subject rights request
+          href: resources/subjectrightsrequest.md
+          items:
+          - name: List
+            href: api/subjectrightsrequest-list.md
+          - name: Create
+            href: api/subjectrightsrequest-post.md
+          - name: Get
+            href: api/subjectrightsrequest-get.md
+          - name: Update
+            href: api/subjectrightsrequest-update.md
+          - name: Get final report
+            href: api/subjectrightsrequest-getfinalreport.md
+          - name: Get final attachment
+            href: api/subjectrightsrequest-getfinalattachment.md
+          - name: List notes
+            href: api/subjectrightsrequest-list-notes.md
+          - name: Create note
+            href: api/subjectrightsrequest-post-notes.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -12218,7 +12243,7 @@ items:
             - name: List usage
               href: api/authenticationstrengthpolicy-usage.md
           - name: Authentication combination configurations
-            items: 
+            items:
             - name: Authentication combination configuration
               href: resources/authenticationcombinationconfiguration.md
             - name: FIDO2 combination configuration

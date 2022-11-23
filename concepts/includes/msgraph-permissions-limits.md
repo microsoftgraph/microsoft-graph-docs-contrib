@@ -1,4 +1,12 @@
+---
+author: "FaithOmbongi"
+ms.localizationpriority: high
+ms.topic: include
+---
+
 <!-- markdownlint-disable MD041-->
+
+<!-- Limits on requested permissions per app-->
 
 Azure AD limits the number of permissions that can be requested and consented by a client app. These limits depend on the `signInAudience` value for an app, shown in the [app's manifest](/graph/api/resources/application). 
 

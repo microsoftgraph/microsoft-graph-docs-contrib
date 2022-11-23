@@ -9,7 +9,7 @@ Import-Module Microsoft.Graph.Teams
 $params = @{
 	Topic = @{
 		Source = "entityUrl"
-		Value = "https://graph.microsoft.com/beta/teams/{teamId}"
+		Value = "https://graph.microsoft.com/v1.0/teams/{teamId}"
 	}
 	ActivityType = "taskCreated"
 	PreviewText = @{

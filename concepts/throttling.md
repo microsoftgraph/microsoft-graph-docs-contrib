@@ -22,7 +22,7 @@ Throttling limits vary based on the scenario. For example, if you are performing
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 <!-- markdownlint-enable MD034 -->
 > [!div class="nextstepaction"]
-> [Learn: Optimize network traffic with Microsoft Graph](/training/modules/optimize-network-traffic)
+> [Training module: Optimize network traffic with Microsoft Graph](/training/modules/optimize-network-traffic)
 
 <!-- markdownlint-disable MD026 -->
 ## What happens when throttling occurs?
@@ -43,6 +43,7 @@ Whenever the throttling threshold is exceeded, Microsoft Graph responds with a r
 
 ```http
 HTTP/1.1 429 Too Many Requests
+Content-Length: 312
 Content-Type: application/json
 Retry-After: 10
 

@@ -195,6 +195,8 @@ items:
         href: /graph/sdks/customize-client?context=graph/api/1.0
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
+      - name: Connect to national clouds
+        href: /graph/sdks/national-clouds?context=graph/api/1.0
       - name: Create requests
         href: /graph/sdks/create-requests?context=graph/api/1.0
       - name: Page through a collection
@@ -5037,11 +5039,11 @@ items:
             - name: List
               href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
             - name: Create or update
-              href: api/authenticationcontextclassreference-update.md    
+              href: api/authenticationcontextclassreference-update.md
             - name: Get
               href: api/authenticationcontextclassreference-get.md
             - name: Delete
-              href: api/authenticationcontextclassreference-delete.md  
+              href: api/authenticationcontextclassreference-delete.md
           - name: Templates
             items:
             - name: Conditional access template
@@ -7285,7 +7287,7 @@ items:
             - name: List
               href: api/call-list-contentsharingsessions.md
             - name: Get
-              href: api/contentsharingsession-get.md    
+              href: api/contentsharingsession-get.md
           - name: IVR scenarios
             href: resources/calls-api-ivr-overview.md
             items:
