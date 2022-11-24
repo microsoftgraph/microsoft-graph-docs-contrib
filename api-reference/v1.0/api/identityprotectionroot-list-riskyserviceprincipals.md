@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals
+GET https://graph.microsoft.com/v1.0/identityProtection/riskyServicePrincipals
 ```
 
 # [C#](#tab/csharp)
@@ -103,7 +103,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyServicePrincipal",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#riskyServicePrincipal",
   "value": [
     {
       "id": "9089a539-a539-9089-39a5-899039a58990",

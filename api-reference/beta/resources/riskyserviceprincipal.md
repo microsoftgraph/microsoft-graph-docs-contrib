@@ -17,7 +17,7 @@ Represents Azure AD service principals that are at-risk. Azure AD continually ev
 
 Inherits from [entity](../resources/entity.md).
 
->**Note:** Using the riskyServicePrincipal API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity license.
 
 ## Methods
 

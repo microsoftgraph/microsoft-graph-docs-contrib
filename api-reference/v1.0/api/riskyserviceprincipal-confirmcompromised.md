@@ -10,7 +10,7 @@ doc_type: apiPageType
 # riskyServicePrincipal: confirmCompromised
 Namespace: microsoft.graph
 
-Confirm one or more [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects as compromised. This action sets the targeted service principal account's risk level to `high`. When the risk level of the service principal is confirmed as compromised, the service principal object is disabled and its **disabledByMicrosoftStatus** property is updated.
+Confirm one or more [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects as compromised. This action sets the targeted service principal account's risk level to `high`.
 
 >**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
 
