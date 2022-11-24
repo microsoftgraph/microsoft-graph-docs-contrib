@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the Teams Presence Status Message for a user. Optional expiration date and time can be supplied as well.
+"Set presence status message for a user. An optional expiration date and time can be supplied.
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
