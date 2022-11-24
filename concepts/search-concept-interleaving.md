@@ -7,6 +7,7 @@ ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to search with interleaved results
+The searchRequest resource supports passing multiple entity types in a single request, and return interleaved results with requested entity type which ranked by relevance.
 
 ## Supported Entity Combination
 
