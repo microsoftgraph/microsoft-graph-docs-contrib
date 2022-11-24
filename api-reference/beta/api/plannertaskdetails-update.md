@@ -1,6 +1,6 @@
 ---
 title: "Update plannerTaskDetails"
-description: "Update the properties of **plannerTaskDetails** object."
+description: "Update the properties of a **plannerTaskDetails** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
