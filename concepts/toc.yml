@@ -535,7 +535,11 @@ items:
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
       - name: Tasks and plans
-        href: planner-concept-overview.md
+        items:
+          - name: Overview
+            href: planner-concept-overview.md
+          - name: Task rules
+            href: planner-task-rules-overview.md
         displayName: Planner
       - name: Teamwork and communications
         items:
