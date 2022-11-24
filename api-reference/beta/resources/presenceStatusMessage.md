@@ -1,6 +1,6 @@
 ---
 title: "presenceStatusMessage resource type"
-description: "Represents a presence status message related to the presence of a user on Teams".
+description: "Represents a presence status message related to the presence of a user on Teams."
 author: "afedorov"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
