@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search with interleavd results
+# Use the Microsoft Search API to search with interleaved results
 
 ## Supported Entity Combination
 
