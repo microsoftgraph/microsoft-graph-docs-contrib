@@ -35,6 +35,7 @@ Represents a Cloud PC provisioning policy.
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy.|
 |domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory.|
+|domainJoinConfigurations|Collection(microsoft.graph.cloudPcDomainJoinConfiguration)|Specifies a list ordered by priority on how Cloud PCs will join Azure AD.|No|No|No|
 |gracePeriodInHours|Int32|The number of hours to wait before reprovisioning/deprovisioning happens. Read-only.|
 |id|String|Unique identifier for the Cloud PC provisioning policy. Read-only.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
@@ -74,6 +75,7 @@ The following is a JSON representation of the resource.
   "domainJoinConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
   },
+  "domainJoinConfigurations": "Collection(microsoft.graph.cloudPcDomainJoinConfiguration)",
   "gracePeriodInHours": "Integer",
   "id": "String (identifier)",
   "imageDisplayName": "String",
