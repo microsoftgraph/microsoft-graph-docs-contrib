@@ -1,5 +1,5 @@
 ---
-title: "Remove owner"
+title: "Remove service principal owner"
 description: "Remove an owner from a servicePrincipals."
 author: "sureshja"
 ms.localizationpriority: medium
@@ -7,11 +7,12 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Remove owner
+# Remove service principal owner
 
 Namespace: microsoft.graph
 
-Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md) object.
+Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md) object. As a recommended best practice, service principals should have at least two owners.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

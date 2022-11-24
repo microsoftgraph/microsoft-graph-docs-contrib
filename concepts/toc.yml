@@ -20,15 +20,8 @@ items:
           - name: API changelog
             href: https://developer.microsoft.com/graph/changelog
             displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
-      - name: Users you can reach
-        items:
-          - name: Overview
-            href: users-you-can-reach.md
-            displayName: users you can reach
-          - name: National cloud deployments
-            href: deployments.md
-          - name: Hybrid deployments (deprecated)
-            href: hybrid-rest-support.md
+      - name: Try the APIs
+        href: graph-explorer/graph-explorer-overview.md
       - name: Quick start
         href: https://developer.microsoft.com/graph/quick-start
         displayName: quickstart
@@ -55,6 +48,15 @@ items:
             href: /graph/tutorials/python
           - name: TypeScript
             href: /graph/tutorials/typescript
+      - name: Users you can reach
+        items:
+          - name: Overview
+            href: users-you-can-reach.md
+            displayName: users you can reach
+          - name: National cloud deployments
+            href: deployments.md
+          - name: Hybrid deployments (deprecated)
+            href: hybrid-rest-support.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
