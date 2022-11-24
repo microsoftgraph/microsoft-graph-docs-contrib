@@ -1,6 +1,6 @@
 ---
 title: "presence: setStatusMessage"
-description: "Set a presence status message for a user".
+description: "Set a presence status message for a user."
 author: "afedorov"
 ms.localizationpriority: medium
 doc_type: apiPageType
