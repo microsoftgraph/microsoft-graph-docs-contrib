@@ -123,7 +123,7 @@ Create a [comment](/graph/api/resources/security-alertcomment?view=graph-rest-be
 - Subscribe to [change notification of membership in all the channels across a tenant](teams-changenotifications-teamMembership.md#subscribe-to-membership-changes-in-all-channels-across-the-tenant-preview). 
 - [Set](/graph/api/chatmessage-setreaction?view=graph-rest-beta&preserve-view=true) or [unset](/graph/api/chatmessage-unsetreaction?view=graph-rest-beta&preserve-view=true) a reaction to a single [message](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) or a [message reply](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) in a Teams [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) or a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
 - Only the tenant admin of the sender of a [chat message](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) can [update](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) and override a [policy violation](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) on the message. Usually, a data loss prevention (DLP) application takes action when a sender violates policy and sends data they should not send. 
-- Be aware that the [identity](/graph/api/resources/teamworkUserIdentity?view=graph-rest-beta&preserve-view=true) of a user in a Teams chat or online meeting can now be an Azure Communication Services user.
+- The [identity](/graph/api/resources/teamworkUserIdentity?view=graph-rest-beta&preserve-view=true) of a user in a Teams chat or online meeting can be an Azure Communication Services user.
 
 
 ## Want to stay in the loop?
