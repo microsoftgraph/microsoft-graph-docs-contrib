@@ -1,6 +1,6 @@
 ---
 title: "presenceStatusMessage resource type"
-description: "Represents Teams Presence Status Message for a user's presence"
+description: "Represents a presence status message related to the presence of a user on Teams".
 author: "afedorov"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Teams Presence Status Message related to the [presence](presence.md) of a user.
+Represents a presence status message related to the [presence](presence.md) of a user on Teams.
 
 ## Properties
 
 | Property       | Type           | Description                                 | 
 | -------------- | -------------- | ------------------------------------------- | 
-| message | [microsoft.graph.itemBody](itemBody.md) | Status message item.<br/><br/> The only supported format at the moment is `message.contentType = 'text'`. |
-| publishedDateTime | Edm.DateTimeOffset | Moment in time of when status message was published.<br/>Read-only.<br/><br/>`publishedDateTime` is not available when requesting presence of another user. |
+| message | [microsoft.graph.itemBody](itemBody.md) | Status message item.<br/><br/> The only supported format currently is `message.contentType = 'text'`. |
+| publishedDateTime | Edm.DateTimeOffset |Time in which the status message was published.<br/>Read-only.<br/><br/>`publishedDateTime` is not available when requesting presence of another user. |
 | expiryDateTime | [microsoft.graph.dateTimeTimeZone](dateTimeTimeZone.md) | Moment in time of when status message expires.<br/>If not provided the status message will not expire.<br/><br/>`expiryDateTime.dateTime` should not include time zone.<br/><br/>`expiryDateTime` is not available when requesting presence of another user. |
 
 ## JSON representation
