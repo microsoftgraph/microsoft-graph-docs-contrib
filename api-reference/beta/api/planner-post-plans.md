@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Tasks.ReadWrite, Group.ReadWrite.All                         |
+| Delegated (work or school account)     | Tasks.ReadWrite, Group.ReadWrite.All        |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
@@ -54,9 +54,9 @@ The following table shows the properties that are required when you create a [pl
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [plannerPlan](../resources/plannerplan.md) object in the response body.
 
-This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
+This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
 
@@ -156,5 +156,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
