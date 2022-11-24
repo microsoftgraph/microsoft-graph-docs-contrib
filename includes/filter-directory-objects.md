@@ -101,8 +101,9 @@ author: "FaithOmbongi"
 
 ### Group properties
 
+| Property                                                   | eq               | startsWith       | ge/le            | eq Null             | eq Count 0       |
+|-------------------------------------------------------------|-------------------|-------------------|-------------------|----------------------|-------------------|
 | appRoleAssignments/any(a:a/id)                             | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |                  |
-|------------------------------------------------------------|------------------|------------------|------------------|---------------------|------------------|
 | assignedLicenses/any(a:a/skuId)                            | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |                  |
 | classification                                             | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |                  |
 | createdByAppId                                             | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |                  |
