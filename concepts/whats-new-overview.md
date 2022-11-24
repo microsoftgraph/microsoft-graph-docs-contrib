@@ -73,7 +73,7 @@ When [inviting](/graph/api/participant-invite) a [participant](/graph/api/resour
 ### Teamwork and communications | Messaging
 - [Send activity feed notifications to multiple users](/graph/api/teamwork-sendActivityNotificationToRecipients), in bulk.
 - [Hide](/graph/api/chat-hideforuser) or [unhide](/graph/api/chat-unhideforuser) a [chat](/graph/api/resources/chat) for a user.
-- Using delegated permissions to [list chats](/graph/api/chat-list) takes the [viewpoint](/graph/api/resources/chatviewpoint) of the specific user into account. The viewpoint includes whether the user has hidden the chat, and the date/time when the user last read a message in that chat.
+- Using delegated permissions to [list chats](/graph/api/chat-list) now takes the [viewpoint](/graph/api/resources/chatviewpoint) of the specific user into account. The viewpoint includes whether the user has hidden the chat, and the date/time when the user last read a message in that chat.
 
 
 ## October 2022: New in preview only
