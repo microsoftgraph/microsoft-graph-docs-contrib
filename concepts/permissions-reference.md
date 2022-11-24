@@ -386,7 +386,7 @@ None.
 
 ---
 
-## Business Scenarios permissions
+## Business scenarios permissions
 
 #### Delegated permissions
 
