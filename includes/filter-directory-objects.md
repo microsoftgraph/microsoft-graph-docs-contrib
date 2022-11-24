@@ -28,7 +28,7 @@ author: "FaithOmbongi"
 | federatedIdentityCredentials/$count           |                     |                     |                     |                     | ![Advanced][AQP] |
 | federatedIdentityCredentials/any(f:f/issuer)  | ![Advanced][AQP]    | ![NotSupported][NS] |                     | ![NotSupported][NS] |                  |
 | federatedIdentityCredentials/any(f:f/name)    | ![Advanced][AQP]    | ![NotSupported][NS] |                     | ![NotSupported][NS] |                  |
-| federatedIdentityCredentials/any(f:f/subject) | ![Advanced][AQP]    | ![NotSupported][NS] |                     | ![NotSupported][NS] |                  |
+| federatedIdentityCredentials/any(f:f/subject) | ![Advanced][AQP]    | ![Advanced][AQP] |                     | ![NotSupported][NS] |                  |
 | identifierUris/any(p:p)                       | ![Default][RDS]     | ![Default][RDS]     |                     |                     |                  |
 | info/logoUrl                                  | ![NotSupported][NS] | ![NotSupported][NS] |                     | ![Advanced][AQP]    |                  |
 | info/termsOfServiceUrl                        | ![Advanced][AQP]    | ![NotSupported][NS] |                     | ![NotSupported][NS] |                  |
