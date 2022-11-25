@@ -15856,7 +15856,7 @@ items:
           href: api/plannerbucket-update.md
         - name: Delete bucket
           href: api/plannerbucket-delete.md
-      - name: Business scenarios
+      - name: Business scenarios (preview)
         items:
         - name: Overview
           href: resources/businessscenario-overview.md
