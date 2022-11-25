@@ -538,7 +538,7 @@ items:
         items:
           - name: Overview
             href: planner-concept-overview.md
-          - name: Business scenarios
+          - name: Business scenarios (preview)
             href: businessscenarios-concept-overview.md
           - name: Task rules
             href: planner-task-rules-overview.md

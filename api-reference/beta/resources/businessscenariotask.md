@@ -33,7 +33,7 @@ Inherits from [plannerTask](../resources/plannertask.md).
 |:---|:---|:---|
 |activeChecklistItemCount|Int32|Number of checklist items with value set to `false`, representing incomplete items. Inherited from [plannerTask](../resources/plannertask.md).|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|The categories to which the task has been applied. For possible values, see [plannerAppliedCategories](plannerappliedcategories.md). Inherited from [plannerTask](../resources/plannertask.md).|
-|assigneePriority|String|Hint used to order items of this type in a list view. For details about supported format, see [Using order hints in Planner](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
+|assigneePriority|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of assignees the task is assigned to. Inherited from [plannerTask](../resources/plannertask.md).|
 |bucketId|String|Bucket ID to which the task belongs. Inherited from [plannerTask](../resources/plannertask.md).|
 |businessScenarioProperties|[businessScenarioProperties](../resources/businessscenarioproperties.md)|Scenario-specific properties of the task. **externalObjectId** and **externalBucketId** properties must be specified when creating a task.|
@@ -47,7 +47,7 @@ Inherits from [plannerTask](../resources/plannertask.md).
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [plannerTask](../resources/plannertask.md).|
 |hasDescription|Boolean|`True` indicates that the details object of the task has a non-empty description; otherwise, `false`. Inherited from [plannerTask](../resources/plannertask.md). Read-only.|
 |id|String|The unique identifier for the task. Inherited from [entity](../resources/entity.md). Read-only.|
-|orderHint|String|Hint used to order items of this type in a list view. For details about supported format, see [Using order hints in Planner](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
+|orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. Inherited from [plannerTask](../resources/plannertask.md).|
 |planId|String|Identifier of the plan to which the task belongs. Inherited from [plannerTask](../resources/plannertask.md).|
 |previewType|plannerPreviewType|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Inherited from [plannerTask](../resources/plannertask.md).|
