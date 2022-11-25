@@ -538,6 +538,8 @@ items:
         items:
           - name: Overview
             href: planner-concept-overview.md
+          - name: Business scenarios
+            href: businessscenarios-concept-overview.md
           - name: Task rules
             href: planner-task-rules-overview.md
         displayName: Planner
