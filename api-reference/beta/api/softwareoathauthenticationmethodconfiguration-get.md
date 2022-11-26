@@ -85,7 +85,7 @@ Content-Type: application/json
           "targetType": "group",
           "id": "all_users",
           "isRegistrationRequired": false,
-          "isUsableForSignIn": true
+          "isUsableForSignIn": flase
       }
     ],
     "excludeTargets": [
