@@ -90,7 +90,7 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
-          - name: Configure properties
+          - name: Manage applications
             href: tutorial-applications-basics.md
           - name: Grant and revoke permissions
             displayName: grant delegated and application permissions
