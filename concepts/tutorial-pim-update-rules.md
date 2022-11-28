@@ -52,10 +52,284 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: 
+## Example 2: Update the justification, MFA, and ticketing rules required on activation 
 
+- Category of rule: Activation rule
+- Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyEnablementRule](/graph/api/resources/unifiedrolemanagementpolicyenablementrule)
+- Microsoft Graph rule ID: `Enablement_EndUser_Assignment`
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-pim-update-rules-Enablement_EndUser_Assignment"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9/rules/Expiration_EndUser_Assignment
+Content-Type: application/json
 
+{ 
+
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule", 
+
+    "id": "Enablement_EndUser_Assignment", 
+
+    "enabledRules": [“Justification”, “MultiFactorAuthentication”, “Ticketing”], 
+
+    "target": { 
+
+        "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget", 
+
+        "caller": "EndUser", 
+
+        "operations": [ 
+
+            "All" 
+
+        ], 
+
+        "level": "Assignment", 
+
+        "inheritableSettings": [], 
+
+        "enforcedSettings": [] 
+
+    }
+```
+
+## Example 3: Require approval to activate
+
+- Category of rule: Activation rule
+- Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyApprovalRule](/graph/api/resources/unifiedrolemanagementpolicyapprovalrule)
+- Microsoft Graph rule ID: `Approval_EndUser_Assignment`
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-pim-update-rules-Approval_EndUser_Assignment"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9/rules/Expiration_EndUser_Assignment
+Content-Type: application/json
+
+{ 
+
+    "setting": {  
+
+                    "isApprovalRequired": true,  
+
+                    "isApprovalRequiredForExtension": false,  
+
+                    "isRequestorJustificationRequired": true,  
+
+                    "approvalMode": "SingleStage",  
+
+                    "approvalStages": [  
+
+                        {  
+
+                            "approvalStageTimeOutInDays": 1,  
+
+                            "isApproverJustificationRequired": true,  
+
+                            "escalationTimeInMinutes": 0,  
+
+                            "primaryApprovers": [  
+
+                                {  
+
+                                    "id": "<Insert Approver ID>",  
+
+                                    "description": "User – Display Name",  
+
+                                    "isBackup": false,  
+
+                                    "userType": "User"  
+
+                                },  
+
+   {  
+
+                                    "id": ""<Insert Approver ID>",  
+
+                                    "description": "Group– Display Name",  
+
+                                    "isBackup": false,  
+
+                                    "userType": "Group"  
+
+                                }  
+
+  
+
+                               ],  
+
+                            "isEscalationEnabled": false,  
+
+                            "escalationApprovers": null  
+
+                        }  
+
+                    ]  
+
+                },  
+
+ 
+
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule", 
+
+    "id": "Approval_EndUser_Assignment", 
+
+    "target": { 
+
+        "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget", 
+
+        "caller": "EndUser", 
+
+        "operations": [ 
+
+            "All" 
+
+        ], 
+
+        "level": "Assignment", 
+
+        "inheritableSettings": [], 
+
+        "enforcedSettings": [] 
+
+    } 
+```
+
+## Example 4: Set expiration of eligible assignment 
+
+- Category of rule: Activation rule
+- Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
+- Microsoft Graph rule ID: `Expiration_Admin_Eligibility`
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-pim-update-rules-Expiration_Admin_Eligibility"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9/rules/Expiration_EndUser_Assignment
+Content-Type: application/json
+
+{ 
+
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule", 
+
+    "id": "Expiration_Admin_Eligibility", 
+
+    "isExpirationRequired": false, 
+
+    "maximumDuration": "P365D", 
+
+    "target": { 
+
+        "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget", 
+
+        "caller": "Admin", 
+
+        "operations": [ 
+
+            "All" 
+
+        ], 
+
+        "level": "Eligibility", 
+
+        "inheritableSettings": [], 
+
+        "enforcedSettings": [] 
+
+    }
+```
+
+## Example 5: Set expiration of active assignment
+
+- Category of rule: Activation rule
+- Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
+- Microsoft Graph rule ID: `Expiration_Admin_Assignment`
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-pim-update-rules-Expiration_Admin_Assignment"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9/rules/Expiration_EndUser_Assignment
+Content-Type: application/json
+
+{ 
+
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule", 
+
+    "id": "Expiration_Admin_Assignment", 
+
+    "isExpirationRequired": true, 
+
+    "maximumDuration": "P90D", 
+
+    "target": { 
+
+        "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget", 
+
+        "caller": "Admin", 
+
+        "operations": [ 
+
+            "All" 
+
+        ], 
+
+        "level": "Assignment", 
+
+        "inheritableSettings": [], 
+
+        "enforcedSettings": [] 
+
+    }
+```
+
+## Example 6: Set the justification and MFA requirements for active assignment
+
+- Category of rule: Activation rule
+- Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
+- Microsoft Graph rule ID: `Enablement_Admin_Assignment`
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-pim-update-rules-Enablement_Admin_Assignment"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9/rules/Expiration_EndUser_Assignment
+Content-Type: application/json
+
+{ 
+
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule", 
+
+    "id": "Enablement_Admin_Assignment", 
+
+    "enabledRules": [“Justification”, “MultiFactorAuthentication”], 
+
+    "target": { 
+
+        "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget", 
+
+        "caller": "Admin", 
+
+        "operations": [ 
+
+            "All" 
+
+        ], 
+
+        "level": "Assignment", 
+
+        "inheritableSettings": [], 
+
+        "enforcedSettings": [] 
+
+    }
+```
 
 
 ## See also

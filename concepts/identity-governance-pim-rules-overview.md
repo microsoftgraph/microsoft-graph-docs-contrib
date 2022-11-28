@@ -27,10 +27,12 @@ To group the rules into activation, assignment, and notification rules, Microsof
 
 The following table breaks down the three categories of rules into the Microsoft Graph resources through which they can be configured, and the rules that can be in each resource.
 
+<!--
 | Microsoft Graph objects | Activation rules | Assignment rules | Notification rules |
 |---|---|---|---|
 | Derived resource types | unifiedRoleManagementPolicyApprovalRule <br/> unifiedRoleManagementPolicyAuthenticationContextRule <br/> unifiedRoleManagementPolicyEnablementRule | unifiedRoleManagementPolicyExpirationRule | unifiedRoleManagementPolicyNotificationRule |
 | Rule IDs | AuthenticationContext_EndUser_Assignment <br/> Approval_EndUser_Assignment <br/> Expiration_EndUser_Assignment <br/> Enablement_Admin_Eligibility | Enablement_EndUser_Assignment <br/> Enablement_Admin_Assignment <br/> Expiration_Admin_Assignment <br/> Expiration_Admin_Eligibility | Notification_Approver_EndUser_Assignment <br/> Notification_Requestor_EndUser_Assignment <br/> Notification_Admin_EndUser_Assignment <br/> Notification_Approver_Admin_Assignment <br/> Notification_Requestor_Admin_Assignment <br/> Notification_Admin_Admin_Assignment <br/> Notification_Approver_Admin_Eligibility <br/> Notification_Requestor_Admin_Eligibility <br/> Notification_Admin_Admin_Eligibility |
+-->
 
 ## Mapping of rule IDs to Azure portal settings
 
@@ -45,10 +47,6 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation.png" alt-text="PIM activation settings on the Azure portal":::
 
-<!-- Author in Excel then copy/paste
-Can't figure out the fourth rule in this window
--->
-
 | Number          | Microsoft Graph Rule ID         | Derived resource type                     | Azure Portal UX Description                                                              | Caller   |
 |-----------------|---------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------|----------|
 | ![one][one]     | `Enablement_EndUser_Assignment` | unifiedRoleManagementPolicyEnablementRule | Update justification and MFA requirements for active assignment.                         | End user |
@@ -60,9 +58,6 @@ Can't figure out the fourth rule in this window
 
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment.png" alt-text="PIM assignment settings on the Azure portal":::
 
-<!-- Author table in Excel then copy/paste
-Can't figure out the fourth rule in this window either
--->
 | Number          | Microsoft Graph Rule ID         | Derived resource type                     | Azure Portal UX Description                                      | Caller   |
 |------------------|----------------------------------|--------------------------------------------|-------------------------------------------------------------------|-----------|
 | ![five][five]   | `Enablement_EndUser_Assignment` | unifiedRoleManagementPolicyExpirationRule | Update justification and MFA requirements for active assignment. | End user |
@@ -74,7 +69,6 @@ Can't figure out the fourth rule in this window either
 
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification.png" alt-text="PIM notification settings on the Azure portal":::
 
-<!-- Author table in Excel then copy/paste-->
 | Number                  | Microsoft Graph Rule ID                     | Derived resource type                       | Azure Portal UX Description                                            | Caller    |
 |--------------------------|----------------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|------------|
 | ![nine][nine]           | `Notification_Approver_EndUser_Assignment`  | unifiedRoleManagementPolicyNotificationRule | Send notifications when eligible members activate this role.           | Approver  |
