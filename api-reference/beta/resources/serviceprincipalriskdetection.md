@@ -37,7 +37,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |appId|String|The unique identifier for the associated application.|
 |correlationId|String|Correlation ID of the sign-in activity associated with the risk detection. This property is `null` if the risk detection is not associated with a sign-in activity.|
 |detectedDateTime|DateTimeOffset|Date and time when the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|detectionTimingType|riskDetectionTimingType|Timing of the detected risk , whether real-time or offline). The possible values are: `notDefined`, `realtime`, `nearRealtime`, `offline`.|
+|detectionTimingType|riskDetectionTimingType|Timing of the detected risk , whether real-time or offline). The possible values are: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
 |id|String|Unique identifier of the risk detection. Inherited from [entity](../resources/entity.md).|
 |ipAddress|String|Provides the IP address of the client from where the risk occurred.|
 |keyIds|String collection|The unique identifier (GUID) for the key credential associated with the risk detection.|
