@@ -71,6 +71,7 @@ If successful, this method returns a `201 Created` response code and a [workbook
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/createSession
 Prefer: respond-async
+
 Content-type: application/json
 {
     "persistChanges": true
