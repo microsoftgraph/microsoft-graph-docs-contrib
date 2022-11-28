@@ -1428,35 +1428,35 @@
       "ChangeList": [
         {
           "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
-          "ApiChange": "Property",
+          "ApiChange": "Permission",
           "ChangedApiName": "Acronym.Read.All",
           "ChangeType": "Addition",
-          "Description": "Required minimum to search **Acronym** in Search API.",
-          "Target": "permission"
+          "Description": "Required minimum permission to search **Acronym** in Search API.",
+          "Target": "identity"
         },
         {
           "Id": "c44293eb-d43b-4bd6-ae78-5de920a8e7f1",
-          "ApiChange": "Property",
+          "ApiChange": "Permission",
           "ChangedApiName": "Bookmark.Read.All",
           "ChangeType": "Addition",
           "Description": "Required minimum permission to search **Bookmark** in Search API.",
-          "Target": "permission"
+          "Target": "identity"
         },
         {
           "Id": "537a4b42-9b7e-418f-b58d-d4ce976af4fb",
-          "ApiChange": "Property",
+          "ApiChange": "Permission",
           "ChangedApiName": "Chat.Read",
           "ChangeType": "Addition",
           "Description": "One of the required minimum permissions to search **chatMessage** in Search API.",
-          "Target": "permission"
+          "Target": "identity"
         },
         {
           "Id": "6b68b691-391b-4882-8396-73eb6bedd900",
-          "ApiChange": "Property",
+          "ApiChange": "Permission",
           "ChangedApiName": "ChannelMessage.Read.All",
           "ChangeType": "Addition",
           "Description": "One of the required minimum permissions to search **chatMessage** in Search API.",
-          "Target": "permission"
+          "Target": "identity"
         }
       ],
       "Id": "e74764a8-1ae4-4af8-8f71-4a29af0fe5ed",
@@ -1470,35 +1470,35 @@
       "ChangeList": [
         {
           "Id": "6b68b691-391b-4882-8396-73eb6bedd900",
-          "ApiChange": "Property",
+          "ApiChange": "Permission",
           "ChangedApiName": "Acronym.Read.All",
           "ChangeType": "Addition",
-          "Description": "Required minimum to search **Acronym** in Search API.",
-          "Target": "permission"
+          "Description": "Required minimum permission to search **Acronym** in Search API.",
+          "Target": "identity"
         },
         {
           "Id": "c245dd45-240d-4f9e-9f8d-7d56972d0196",
-          "ApiChange": "Property",
+          "ApiChange": "Permission",
           "ChangedApiName": "Bookmark.Read.All",
           "ChangeType": "Addition",
           "Description": "Required minimum permission to search **Bookmark** in Search API.",
-          "Target": "permission"
+          "Target": "identity"
         },
         {
           "Id": "3068e2b1-d5eb-448c-bd8c-c60d170014b2",
-          "ApiChange": "Property",
+          "ApiChange": "Permission",
           "ChangedApiName": "Chat.Read",
           "ChangeType": "Addition",
           "Description": "One of the required minimum permissions to search **chatMessage** in Search API.",
-          "Target": "permission"
+          "Target": "identity"
         },
         {
           "Id": "e281a86c-4ad1-475f-bb3d-5600d97bafbe",
-          "ApiChange": "Property",
+          "ApiChange": "Permission",
           "ChangedApiName": "ChannelMessage.Read.All",
           "ChangeType": "Addition",
           "Description": "One of the required minimum permissions to search **chatMessage** in Search API.",
-          "Target": "permission"
+          "Target": "identity"
         }
       ],
       "Id": "711a9d3d-7ef0-4b8a-a9c2-bbebbdea40d2",
