@@ -28,7 +28,7 @@ Represents a Third-Party Software OATH Authentication methods policy. Authentica
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection| A collection of users or groups of users that are excluded from a policy.|
 |id|String|The authentication method policy identifier.|
-|state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|Represents whether users can register this authentication method. The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|

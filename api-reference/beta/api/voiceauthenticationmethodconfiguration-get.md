@@ -1,9 +1,9 @@
 ---
 title: "Get voiceAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a voiceAuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "jpettere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
+
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global Reader
+* Authentication Policy Administrator
+* Global Administrator
 
 ## HTTP request
 
@@ -30,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /voiceAuthenticationMethodConfiguration
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/voice
 ```
 
 ## Optional query parameters
@@ -58,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/voiceAuthenticationMethodConfiguration
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/voice
 ```
 
 
@@ -78,14 +84,17 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.voiceAuthenticationMethodConfiguration",
-    "id": "b49d5625-8d65-6b5a-7ecf-f0c5579a7290",
-    "state": "String",
-    "excludeTargets": [
+    "id": "Voice",
+    "state": "enabled",
+    "includeTargets": [
       {
-        "@odata.type": "microsoft.graph.excludeTarget"
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false
       }
     ],
-    "isOfficePhoneAllowed": "Boolean"
+    "excludeTargets": [],
+    "isOfficePhoneAllowed": "true"
   }
 }
 ```

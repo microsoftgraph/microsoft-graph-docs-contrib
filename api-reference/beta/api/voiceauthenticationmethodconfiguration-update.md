@@ -1,9 +1,9 @@
 ---
 title: "Update voiceAuthenticationMethodConfiguration"
 description: "Update the properties of a voiceAuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "jpettere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.
+Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object, which represents the Phone Call authentication method policy for the Azure AD tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Policy.ReadWrite.AuthenticationMethod|
+
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Authentication Policy Administrator
+* Global Administrator
 
 ## HTTP request
 
@@ -30,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /voiceAuthenticationMethodConfiguration
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/voice
 ```
 
 ## Request headers
@@ -40,21 +45,15 @@ PATCH /voiceAuthenticationMethodConfiguration
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [voiceAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object with the values of fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
+For the list of properties, see [voiceAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md).
 
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|state|authenticationMethodState|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Optional.|
-|isOfficePhoneAllowed|Boolean|**TODO: Add Description** Optional.|
-
-
+>**Note:** The `@odata.type` property with a value of `#microsoft.graph.voiceAuthenticationMethodConfiguration` must be included in the body.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -66,18 +65,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/voiceAuthenticationMethodConfiguration
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/voice
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.voiceAuthenticationMethodConfiguration",
-  "state": "String",
-  "excludeTargets": [
-    {
-      "@odata.type": "microsoft.graph.excludeTarget"
-    }
-  ],
-  "isOfficePhoneAllowed": "Boolean"
+  "isOfficePhoneAllowed": "false"
 }
 ```
 
@@ -91,19 +84,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.voiceAuthenticationMethodConfiguration",
-  "id": "b49d5625-8d65-6b5a-7ecf-f0c5579a7290",
-  "state": "String",
-  "excludeTargets": [
-    {
-      "@odata.type": "microsoft.graph.excludeTarget"
-    }
-  ],
-  "isOfficePhoneAllowed": "Boolean"
-}
+HTTP/1.1 204 No Content
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "voiceAuthenticationMethodConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a Phone Call authenticaiton methods policy"
+author: "jpettere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a Phone Call authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
@@ -21,25 +21,23 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List voiceAuthenticationMethodConfigurations](../api/voiceauthenticationmethodconfiguration-list.md)|[voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) collection|Get a list of the [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) objects and their properties.|
+|Get a list of the [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) objects and their properties.|
 |[Get voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-get.md)|[voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md)|Read the properties and relationships of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
 |[Update voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-update.md)|[voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md)|Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
 |[Delete voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-delete.md)|None|Delete a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
-|[List includeTargets](../api/voiceauthenticationmethodconfiguration-list-includetargets.md)|[voiceAuthenticationMethodTarget](../resources/voiceauthenticationmethodtarget.md) collection|Get the voiceAuthenticationMethodTarget resources from the includeTargets navigation property.|
-|[Create voiceAuthenticationMethodTarget](../api/voiceauthenticationmethodconfiguration-post-includetargets.md)|[voiceAuthenticationMethodTarget](../resources/voiceauthenticationmethodtarget.md)|Create a new voiceAuthenticationMethodTarget object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isOfficePhoneAllowed|Boolean|**TODO: Add Description**|
-|state|authenticationMethodState|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).The possible values are: `enabled`, `disabled`.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|A collection of users or groups of users that are excluded from a policy.|
+|id|String|The authentication method policy identifier.|
+|isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`|
+|state|authenticationMethodState|Represents whether users can register this authentication method. The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[voiceAuthenticationMethodTarget](../resources/voiceauthenticationmethodtarget.md) collection|**TODO: Add Description**|
+|includeTargets|[voiceAuthenticationMethodTarget](../resources/voiceauthenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method. Expanded by default.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
