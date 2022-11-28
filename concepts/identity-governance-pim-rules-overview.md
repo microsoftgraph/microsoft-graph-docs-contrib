@@ -25,7 +25,7 @@ While each policy is read-only, it contains 17 pre-defined rules that can be upd
 
 To group the rules into activation, assignment, and notification rules, Microsoft Graph defines the [unifiedRoleManagementPolicyRule resource type](/graph/api/resources/unifiedrolemanagementpolicyrule) abstract type. This abstract type is inherited by five resources. Each of these five derived types then defines rule configurations that can be one or more of 17 rules. The 17 rules are identified by unique and immutable rule IDs.
 
-The following table breaks down the three categories of rules into the Microsoft Graph resources through which they can be configured, and the rules that can be in each resource.
+This article provides a mapping of the Azure portal Azure AD role settings to the corresponding rules in Microsoft Graph.
 
 <!--
 | Microsoft Graph objects | Activation rules | Assignment rules | Notification rules |
