@@ -84,15 +84,10 @@ Content-Type: application/json
       {
           "targetType": "group",
           "id": "all_users",
-          "isRegistrationRequired": false,
-          "isUsableForSignIn": flase
+          "isRegistrationRequired": false
       }
     ],
-    "excludeTargets": [
-      {
-        "@odata.type": "microsoft.graph.excludeTarget"
-      }
-    ]
+    "excludeTargets": []
   }
 }
 ```

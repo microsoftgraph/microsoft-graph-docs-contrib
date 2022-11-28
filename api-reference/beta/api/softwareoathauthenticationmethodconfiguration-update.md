@@ -70,12 +70,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethodConfiguration",
-  "state": "enabled",
-  "excludeTargets": [
-    {
-      "@odata.type": "microsoft.graph.excludeTarget"
-    }
-  ]
+  "state": "disabled"
 }
 ```
 
