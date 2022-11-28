@@ -19,7 +19,10 @@ The following example shows you how to add a new number to a table and then find
 ### Step 1: Create a session
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_excel_session"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
@@ -32,7 +35,11 @@ Content-type: application/json
 #### Response
 
 The following is a successful response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -46,7 +53,10 @@ Content-type: application/json
 ### Step 2: Add a new row to the table
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "add_a_table_row"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/Table1/rows/add
 Content-type: application/json
@@ -58,7 +68,11 @@ workbook-session-id: {session-id}
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookTableRow"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -72,7 +86,10 @@ Content-type: application/json
 ### Step 3: Look up a value in the updated table
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "look_up_value_in_table"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/functions/vlookup
 Content-type: application/json
@@ -87,7 +104,11 @@ workbook-session-id: {session-id}
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookFunctionResult"
+} -->
 ```http
 HTTP code: 200 OK
 content-type: application/json
@@ -100,7 +121,10 @@ content-type: application/json
 ### Step 4: Close the session after all the requests are completed
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "close_excel_session"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
 Content-type: application/json
@@ -111,7 +135,10 @@ workbook-session-id: {session-id}
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -134,7 +161,10 @@ The following example creates a session using the long-running operation pattern
 ### Initial request to create session
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_excel_session_with_long_running"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/createSession
 Prefer: respond-async
@@ -146,7 +176,11 @@ Content-type: application/json
 
 #### Response
 The long-running operation pattern will return a `202 Accepted` response similar to the following.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -157,7 +191,11 @@ Content-type: application/json
 ```
 
 In some cases, if the creation succeeds within seconds, it won't enter the long-running operation pattern; instead, it returns as a regular create session and the successful request will return a `201 Created` response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -197,7 +235,10 @@ Content-type: application/json
 With the long-running operation pattern, you can get the creation status at specified location by using the following request. The suggested interval to poll status is around 30 seconds. The maximum interval should be no more than 4 minutes.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "poll_status"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
 {
@@ -262,7 +303,10 @@ For more details about errors, see [Error codes and messages](workbook-error-cod
 #### Request
 
 With a status of `succeeded`, you can get the created session information through `resourceLocation` with a request similar to the following.
-
+<!-- {
+  "blockType": "request",
+  "name": "acquire_session_information"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')
 {
@@ -271,7 +315,11 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 
 #### Response
 The following is the response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
