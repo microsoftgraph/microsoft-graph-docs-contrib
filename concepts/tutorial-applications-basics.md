@@ -18,7 +18,7 @@ Many settings for apps are recorded as objects that can be accessed, updated, or
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in an _Application Administrator_ role or a user allowed to create and manage applications in the tenant.
++ Sign in to [Graph Explorer](https://aka.ms/ge) as a user in an _Application Administrator_ role or a user allowed to create and manage applications in the tenant.
 
 ## Register an application with Azure AD
 
