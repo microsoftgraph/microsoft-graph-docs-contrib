@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|addedStudentAction|String|Optional field to control the **assignment** behavior for students who are added after the **assignment** is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`.|
+|addedStudentAction|String|Optional field to control the **assignment** behavior for students who are added after the **assignment** is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`. For Example, teacher can use `assignIfOpen` to signal if the given assignment should be backfilled to any new student who joins the class and `none` when no backfill required.|
 |addToCalendarAction| educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, and `studentsOnly`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. The default value is `none`.|
 |allowLateSubmissions|Boolean| Identifies whether students can submit after the due date. If this property is not specified during create, it defaults to true. |
 |allowStudentsToAddResourcesToSubmission|Boolean| Identifies whether students can add their own resources to a **submission** or if they can only modify resources added by the teacher. |
