@@ -49,12 +49,12 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 Can't figure out the fourth rule in this window
 -->
 
-|                 | Microsoft Graph rule ID                    | Azure portal UX description | Caller |
-|------------------|---------------------------------------------|------------------------------|---------|
-| ![one][one]     | `AuthenticationContext_EndUser_Assignment` |                             |        |
-| ![two][two]     | `Approval_EndUser_Assignment`              |                             |        |
-| ![three][three] | `Expiration_EndUser_Assignment`            |                             |        |
-| ![four][four]   | `Enablement_Admin_Eligibility`             |                             |        |
+| Number          | Microsoft Graph Rule ID         | Derived resource type                     | Azure Portal UX Description                                                              | Caller   |
+|-----------------|---------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------|----------|
+| ![one][one]     | `Enablement_EndUser_Assignment` | unifiedRoleManagementPolicyEnablementRule | Update justification and MFA requirements for active assignment.                         | End user |
+| ![two][two]     | `Approval_EndUser_Assignment`   | unifiedRoleManagementPolicyApprovalRule   | Require approval to activate.                                                            | End user |
+| ![three][three] | `Expiration_EndUser_Assignment` | unifiedRoleManagementPolicyExpirationRule | Update the activation maximum duration in hours.                                         | End user |
+| ![four][four]   | `Enablement_Admin_Eligibility`  | unifiedRoleManagementPolicyEnablementRule | Update the justification, MFA, and ticket information requirements upon role activation. | Admin    |
 
 ## Assignment rules
 
@@ -63,12 +63,29 @@ Can't figure out the fourth rule in this window
 <!-- Author table in Excel then copy/paste
 Can't figure out the fourth rule in this window either
 -->
+| Number          | Microsoft Graph Rule ID         | Derived resource type                     | Azure Portal UX Description                                      | Caller   |
+|------------------|----------------------------------|--------------------------------------------|-------------------------------------------------------------------|-----------|
+| ![five][five]   | `Enablement_EndUser_Assignment` | unifiedRoleManagementPolicyExpirationRule | Update justification and MFA requirements for active assignment. | End user |
+| ![six][six]     | `Enablement_Admin_Assignment`   | unifiedRoleManagementPolicyExpirationRule | Update justification and MFA requirements for active assignment  | Admin    |
+| ![seven][seven] | `Expiration_Admin_Assignment`   | unifiedRoleManagementPolicyExpirationRule | Set expiration for active assignment.                            | Admin    |
+| ![eight][eight] | `Expiration_Admin_Eligibility`  | unifiedRoleManagementPolicyExpirationRule | Set expiration for eligible assignment.                          | Admin    |
 
 ## Notification rules
 
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification.png" alt-text="PIM notification settings on the Azure portal":::
 
 <!-- Author table in Excel then copy/paste-->
+| Number                  | Microsoft Graph Rule ID                     | Derived resource type                       | Azure Portal UX Description                                            | Caller    |
+|--------------------------|----------------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|------------|
+| ![nine][nine]           | `Notification_Approver_EndUser_Assignment`  | unifiedRoleManagementPolicyNotificationRule | Send notifications when eligible members activate this role.           | Approver  |
+| ![ten][ten]             | `Notification_Requestor_EndUser_Assignment` | unifiedRoleManagementPolicyNotificationRule | Send notifications when eligible members activate this role.           | Requestor |
+| ![eleven][eleven]       | `Notification_Admin_EndUser_Assignment`     | unifiedRoleManagementPolicyNotificationRule | Send notifications when eligible members activate this role.           | Admin     |
+| ![twelve][twelve]       | `Notification_Approver_Admin_Assignment`    | unifiedRoleManagementPolicyNotificationRule | Send notifications when members are assigned as eligible to this role. | Approver  |
+| ![thirteen][thirteen]   | `Notification_Requestor_Admin_Assignment`   | unifiedRoleManagementPolicyNotificationRule | Send notifications when members are assigned as active to this role.   | Requestor |
+| ![fourteen][fourteen]   | `Notification_Admin_Admin_Assignment`       | unifiedRoleManagementPolicyNotificationRule | Send notifications when members are assigned as active to this role.   | Admin     |
+| ![fifteen][fifteen]     | `Notification_Approver_Admin_Eligibility`   | unifiedRoleManagementPolicyNotificationRule | Send notifications when members are assigned as eligible to this role. | Approver  |
+| ![sixteen][sixteen]     | `Notification_Requestor_Admin_Eligibility`  | unifiedRoleManagementPolicyNotificationRule | Send notifications when members are assigned as eligible to this role. | Requestor |
+| ![seventeen][seventeen] | `Notification_Admin_Admin_Eligibility`      | unifiedRoleManagementPolicyNotificationRule | Send notifications when members are assigned as eligible to this role. | Admin     |
 
 ## See also
 
