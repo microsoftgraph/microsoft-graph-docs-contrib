@@ -38,7 +38,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |detectionTimingType|riskDetectionTimingType|Timing of the detected risk , whether real-time or offline. The possible values are: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
 |id|String|Unique identifier of the risk detection. Inherited from [entity](../resources/entity.md).|
 |ipAddress|String|Provides the IP address of the client from where the risk occurred.|
-|keyIds|String collection|The unique identifier (GUID) for the key credential associated with the risk detection.|
+|keyIds|String collection|The unique identifier for the key credential associated with the risk detection.|
 |lastUpdatedDateTime|DateTimeOffset|Date and time when the risk detection was last updated.|
 |location|[signInLocation](signinlocation.md)|Location from where the sign-in was initiated. |
 |requestId|String|Request identifier of the sign-in activity associated with the risk detection. This property is `null` if the risk detection is not associated with a sign-in activity. Supports `$filter` (`eq`).|
