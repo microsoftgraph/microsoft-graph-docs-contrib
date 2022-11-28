@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Set presence status message for a user. An optional expiration date and time can be supplied.
+Set a presence status message for a user. An optional expiration date and time can be supplied.
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type            |  Description                                 |
 | --------------- | --------------- |------------------------------------------- |
-| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presenceStatusMessage.md) | Status message that can be set to display a Teams Presence Status Message of a user. |
+| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presenceStatusMessage.md) |It can be set to display the Teams presence status message of a user. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
