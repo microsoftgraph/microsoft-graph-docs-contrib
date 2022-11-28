@@ -1,15 +1,15 @@
 ---
-title: "Create and manage an Azure AD application using Microsoft Graph"
-description: "Learn how to use the applications API in Microsoft Graph to manage your applications."
+title: "Manage an Azure AD application using Microsoft Graph"
+description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
 ---
 
-# Create and manage an Azure AD application
+# Manage an Azure AD application using Microsoft Graph
 
-Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure AD or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
+Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
 
 Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you'll learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
 
