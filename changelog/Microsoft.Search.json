@@ -1423,6 +1423,48 @@
       "CreatedDateTime": "2022-11-18T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
+          "ApiChange": "Property",
+          "ChangedApiName": "Acronym.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Required minimum to search **Acronym** in Search API.",
+          "Target": "permission"
+        },
+        {
+          "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
+          "ApiChange": "Property",
+          "ChangedApiName": "Bookmark.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Required minimum permission to search **Bookmark** in Search API.",
+          "Target": "permission"
+        },
+        {
+          "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
+          "ApiChange": "Property",
+          "ChangedApiName": "Chat.Read",
+          "ChangeType": "Addition",
+          "Description": "One of the required minimum permissions to search **chatMessage** in Search API.",
+          "Target": "permission"
+        },
+        {
+          "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
+          "ApiChange": "Property",
+          "ChangedApiName": "ChannelMessage.Read.All",
+          "ChangeType": "Addition",
+          "Description": "One of the required minimum permissions to search **chatMessage** in Search API.",
+          "Target": "permission"
+        }
+      ],
+      "Id": "e74764a8-1ae4-4af8-8f71-4a29af0fe5ed",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-18T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
