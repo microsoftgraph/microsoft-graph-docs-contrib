@@ -61,7 +61,50 @@ If successful, this method returns a `201 Created` response code and a [workbook
 
 ## Examples
 
-### Example 1: Basic session creation
+### Example 1: Session creation with long-running operation pattern
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_excel_session_with_long_running"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/createSession
+Prefer: respond-async
+Content-type: application/json
+{
+    "persistChanges": true
+}
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
+Content-type: application/json
+{
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}-->
+
+### Example 2: Basic session creation
 #### Request
 
 # [HTTP](#tab/http)
@@ -109,47 +152,4 @@ Content-type: application/json
   "persistChanges": true
 }
 ```
-### Example 2: Session creation with long-running operation pattern
-
-#### Request
-<!-- {
-  "blockType": "request",
-  "name": "create_excel_session_with_long_running"
-}-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/createSession
-Prefer: respond-async
-Content-type: application/json
-{
-    "persistChanges": true
-}
-```
-
-#### Response
->**Note:** The response object shown here might be shortened for readability. 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.workbookSessionInfo"
-} -->
-```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
-Content-type: application/json
-{
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Example",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->
-
 
