@@ -1435,7 +1435,7 @@
           "Target": "permission"
         },
         {
-          "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
+          "Id": "c44293eb-d43b-4bd6-ae78-5de920a8e7f1",
           "ApiChange": "Property",
           "ChangedApiName": "Bookmark.Read.All",
           "ChangeType": "Addition",
@@ -1443,7 +1443,7 @@
           "Target": "permission"
         },
         {
-          "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
+          "Id": "537a4b42-9b7e-418f-b58d-d4ce976af4fb",
           "ApiChange": "Property",
           "ChangedApiName": "Chat.Read",
           "ChangeType": "Addition",
@@ -1451,7 +1451,7 @@
           "Target": "permission"
         },
         {
-          "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
+          "Id": "6b68b691-391b-4882-8396-73eb6bedd900",
           "ApiChange": "Property",
           "ChangedApiName": "ChannelMessage.Read.All",
           "ChangeType": "Addition",
