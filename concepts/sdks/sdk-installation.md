@@ -142,11 +142,10 @@ If you're upgrading from the preview modules, run `Install-Module` with `AllowCl
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-The [Microsoft Graph Core Python Client Library (preview)](https://github.com/microsoftgraph/msgraph-sdk-python-core) is available on [PyPI](https://pypi.org/).
+The [Microsoft Graph Python SDK (preview)](https://github.com/microsoftgraph/msgraph-sdk-python) is available on [PyPI](https://pypi.org/).
 
 ```Shell
-python -m pip install msgraph-core
-python -m pip install azure-identity
+pip install msgraph-sdk
 ```
 
 ## See also

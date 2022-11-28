@@ -201,4 +201,27 @@ if err != nil {
 client := msgraphsdk.NewGraphServiceClient(adapter)
 ```
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+```py
+from azure.identity.aio import EnvironmentCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+from msgraph import GraphRequestAdapter
+from msgraph import GraphServiceClient
+from msgraph_core import GraphClientFactory
+
+credential=EnvironmentCredential()
+auth_provider = AzureIdentityAuthenticationProvider(credential)
+
+adapter = GraphRequestAdapter(auth_provider)
+
+http_Client = GraphClientFactory.create_with_default_middleware(client=httpx.AsyncClient())
+request_adapter = GraphRequestAdapter(auth_Provider, http_client)
+
+client = GraphServiceClient(request_adapter)
+
+```
+
 ---

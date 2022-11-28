@@ -352,4 +352,16 @@ adapter, err :=
 client := msgraphsdk.NewGraphServiceClient(adapter)
 ```
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+```py
+from msgraph import GraphRequestAdapter
+from msgraph_core import GraphClientFactory
+
+http_Client = GraphClientFactory.create_with_default_middleware(client=httpx.AsyncClient())
+request_adapter = GraphRequestAdapter(auth_Provider, http_client)
+```
+
 ---
