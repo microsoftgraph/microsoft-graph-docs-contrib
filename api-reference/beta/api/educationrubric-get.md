@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object.
+Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object. This operation can be performed with both the roles in the class either teacher or student.
 
 ## Permissions
 

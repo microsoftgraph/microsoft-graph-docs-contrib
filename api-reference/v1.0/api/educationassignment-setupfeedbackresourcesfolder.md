@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md).
+Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md). This operation can only be performed if the role of the user in the class is teacher.
 
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 

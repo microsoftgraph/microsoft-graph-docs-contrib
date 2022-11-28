@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create an [assignment resource](../resources/educationassignmentresource.md). You can create the following types of assignment resources:
+This operation can only be performed if the role of the user in the class is teacher. Create an [assignment resource](../resources/educationassignmentresource.md). You can create the following types of assignment resources:
 
 - [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)

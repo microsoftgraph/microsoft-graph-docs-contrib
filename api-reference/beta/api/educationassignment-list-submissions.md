@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [submissions](../resources/educationsubmission.md) associated with an [assignment](../resources/educationassignment.md).
+List all the [submissions](../resources/educationsubmission.md) associated with an [assignment](../resources/educationassignment.md). This operation can be performed with both the roles in the class either teacher or student.
 
 A teacher or an application with application permissions can get all the **submissions**, a student can only get **submissions** that they are associated with.
 

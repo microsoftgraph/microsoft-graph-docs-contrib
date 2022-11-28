@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [educationRubric](../resources/educationrubric.md) object.
+Delete an [educationRubric](../resources/educationrubric.md) object. This operation can only be performed if the role of the user in the class is teacher.
 
 ## Permissions
 

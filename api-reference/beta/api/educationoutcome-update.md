@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.
+Update the properties of an [educationOutcome](../resources/educationoutcome.md) object. This operation can only be performed if the role of the user in the class is teacher.
 
 ## Permissions
 
