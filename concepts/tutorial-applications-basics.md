@@ -532,6 +532,71 @@ Content-Type: application/json
 
 ---
 
+## Create app roles
+
+### Create app roles on an application object
+
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/bbd46130-e957-4c38-a116-d4d02afd1057
+Content-Type: application/json
+
+{
+    "appRoles": [
+        {
+            "allowedMemberTypes": [
+                "User",
+                "Application"
+            ],
+            "description": "Survey.Read",
+            "displayName": "Survey.Read",
+            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
+            "isEnabled": false,
+            "origin": "Application",
+            "value": "Survey.Read"
+        }
+    ]
+}
+```
+
+
+### Create app roles on a service principal object
+
+When updating the appRoles in a service principal, you can only add to or update the existing collection. You cannot use this method to delete an appRole whose origin is the backing application. Therefore, the service principal can expose more, but not less, appRoles than the backing application.
+
+In the following request, the `Survey.Read` appRole originates from the application object.
+
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7
+Content-Type: application/json
+
+{
+    "appRoles": [
+        {
+            "allowedMemberTypes": [
+                "User"
+            ],
+            "description": "Survey.ReadWrite.All",
+            "displayName": "Survey.ReadWrite.All",
+            "id": "3ce57053-0ebf-42d8-bf7c-74161a450e4b",
+            "isEnabled": true,
+            "value": "Survey.ReadWrite.All"
+        },
+        {
+            "allowedMemberTypes": [
+                "User",
+                "Application"
+            ],
+            "description": "Survey.Read",
+            "displayName": "Survey.Read",
+            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
+            "isEnabled": false,
+            "origin": "Application",
+            "value": "Survey.Read"
+        }
+    ]
+}
+```
+
 ## Manage application ownership
 
 As a best practice, we recommend auditing the apps in your tenant to ensure that there aren't any ownerless apps and service principals, and that all apps and service principals have least two owners.

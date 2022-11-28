@@ -518,6 +518,8 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
+          - name: Search interleaving results
+            href: search-concept-interleaving.md
       - name: Security
         items:
           - name: Overview
