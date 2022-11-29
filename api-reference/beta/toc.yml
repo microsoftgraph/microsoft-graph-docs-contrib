@@ -1950,7 +1950,7 @@ items:
     - name: Device and app management
       expanded: true
       items:
-      - name: Browser management
+      - name: Browser management (preview)
         displayName: Edge, Internet Explorer, IE mode, site list
         items:
         - name: Overview
