@@ -1453,6 +1453,24 @@
     {
       "ChangeList": [
         {
+          "Id": "91714c66-fa98-485a-a393-c2c6396e0ed5",
+          "ApiChange": "Method",
+          "ChangedApiName": "promote",
+          "ChangeType": "Addition",
+          "Description": "Added the [promote](https://docs.microsoft.com/en-us/graph/api/promote?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/domain?view=graph-rest-1.0) resource.",
+          "Target": "domain"
+        }
+      ],
+      "Id": "91714c66-fa98-485a-a393-c2c6396e0ed5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-11-30T00:53:51.6122157Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
           "ApiChange": "Permission",
           "ChangedApiName": "EntitlementManagement.ReadWrite.All",
