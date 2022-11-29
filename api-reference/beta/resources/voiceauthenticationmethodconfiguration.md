@@ -21,10 +21,9 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|Get a list of the [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) objects and their properties.|
 |[Get voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-get.md)|[voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md)|Read the properties and relationships of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
-|[Update voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-update.md)|[voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md)|Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
-|[Delete voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-delete.md)|None|Delete a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
+|[Update voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-update.md)|None|Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object.|
+|[Delete voiceAuthenticationMethodConfiguration](../api/voiceauthenticationmethodconfiguration-delete.md)|None|Revert the [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object to its default configuration.|
 
 ## Properties
 |Property|Type|Description|

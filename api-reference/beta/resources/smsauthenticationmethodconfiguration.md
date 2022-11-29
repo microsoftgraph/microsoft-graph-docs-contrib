@@ -18,7 +18,7 @@ Represents a Text Message authentication methods policy. Authentication methods 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/smsauthenticationmethodconfiguration-get.md)|[smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md)|Read the properties and relationships of a smsAuthenticationMethodConfiguration object.|
-|[Update](../api/smsauthenticationmethodconfiguration-update.md)|[smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md)|Update the properties of a smsAuthenticationMethodConfiguration object.|
+|[Update](../api/smsauthenticationmethodconfiguration-update.md)|None|Update the properties of a smsAuthenticationMethodConfiguration object.|
 |[Delete](../api/smsauthenticationmethodconfiguration-delete.md)|None|Reverts the smsAuthenticationMethodConfiguration object to its default configuration.|
 
 ## Properties

@@ -18,7 +18,7 @@ Represents a Microsoft Authenticator authentication methods policy. Authenticati
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/microsoftauthenticatorauthenticationmethodconfiguration-get.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethodConfiguration object.|
-|[Update](../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Update the properties of a microsoftAuthenticatorAuthenticationMethodConfiguration object.|
+|[Update](../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md)|None|Update the properties of a microsoftAuthenticatorAuthenticationMethodConfiguration object.|
 |[Delete](../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md)|None|Reverts the microsoftAuthenticatorAuthenticationMethodConfiguration object to its default configuration.|
 
 ## Properties

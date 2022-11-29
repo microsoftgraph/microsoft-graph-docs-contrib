@@ -20,7 +20,7 @@ Represents a FIDO2 authentication methods policy. Authentication methods policie
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Read the properties and relationships of a fido2AuthenticationMethodConfiguration object.|
-|[Update](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Update the properties of a fido2AuthenticationMethodConfiguration object.|
+|[Update](../api/fido2authenticationmethodconfiguration-update.md)|None|Update the properties of a fido2AuthenticationMethodConfiguration object.|
 |[Delete](../api/fido2authenticationmethodconfiguration-delete.md)|None|Reverts the fido2AuthenticationMethodConfiguration object to its default configuration.|
 
 
