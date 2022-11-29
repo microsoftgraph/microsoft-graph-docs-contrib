@@ -21,7 +21,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-get.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Read the properties and relationships of a x509CertificateAuthenticationMethodConfiguration object.|
-|[Update x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-update.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Update the properties of a x509CertificateAuthenticationMethodConfiguration object.|
+|[Update x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-update.md)|None|Update the properties of a x509CertificateAuthenticationMethodConfiguration object.|
 |[Delete x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|None| Delete the tenant-customized x509CertificateAuthenticationMethodConfiguration object and restore the default configuration.|
 
 
