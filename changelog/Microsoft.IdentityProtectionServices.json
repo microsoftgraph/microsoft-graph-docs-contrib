@@ -79,7 +79,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmCompromised",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/riskyServicePrincipal?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyServicePrincipal?view=graph-rest-1.0) resource.",
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyServicePrincipal?view=graph-rest-1.0) resource.",
           "Target": "riskyServicePrincipal"
         },
         {
@@ -87,14 +87,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "dismiss",
           "ChangeType": "Addition",
-          "Description": "Added the [dismiss](https://docs.microsoft.com/en-us/graph/api/riskyServicePrincipal?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyServicePrincipal?view=graph-rest-1.0) resource.",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyServicePrincipal?view=graph-rest-1.0) resource.",
           "Target": "riskyServicePrincipal"
         }
       ],
       "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-11-22T15:32:15.4722346Z",
+      "CreatedDateTime": "2022-11-29T00:00:00.4722346Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
