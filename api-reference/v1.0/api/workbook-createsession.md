@@ -107,6 +107,8 @@ Content-type: application/json
   ]
 }-->
 
+With the `202 Accepted` response, please see [Work with APIs that take a long time to complete](../../../concepts/workbook-best-practice.md#work-with-apis-that-take-a-long-time-to-complete) for how to retrieve the operation status and get the session creation result.
+
 ### Example 2: Basic session creation
 
 #### Request
