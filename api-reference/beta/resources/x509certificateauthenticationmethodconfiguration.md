@@ -28,6 +28,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|A collection of users or groups of users that are excluded from a policy.|
 |id|String|The identifier for the authentication method policy. The value is always `X509Certificate`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
@@ -54,6 +55,11 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ],
   "certificateUserBindings": [
     {
       "@odata.type": "microsoft.graph.x509CertificateUserBinding"

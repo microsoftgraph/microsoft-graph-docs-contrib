@@ -24,6 +24,7 @@ Represents a Text Message authentication methods policy. Authentication methods 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|A collection of users or groups of users that are excluded from a policy.|
 |id|String|The authentication method policy identifier.|
 |state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
@@ -46,7 +47,12 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String"
+  "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ]
 }
 ```
 

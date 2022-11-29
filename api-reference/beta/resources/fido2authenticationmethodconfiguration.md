@@ -27,6 +27,7 @@ Represents a FIDO2 authentication methods policy. Authentication methods policie
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|A collection of users or groups of users that are excluded from a policy.|
 |id|String|The authentication method policy identifier.|
 |isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 security key registration.|
 |isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 security keys.|
@@ -53,6 +54,11 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
+    "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ],
   "isSelfServiceRegistrationAllowed": "Boolean",
   "isAttestationEnforced": "Boolean",
   "keyRestrictions": {
