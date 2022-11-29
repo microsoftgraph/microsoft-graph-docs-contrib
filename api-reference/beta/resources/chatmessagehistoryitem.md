@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the edition history of a message in a chat or a channel.
+Represents activity history information for a message in a chat or a channel.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actions|chatMessageActions|The message edition action.The possible values are: `reactionAdded`, `reactionRemoved`, `actionUndefined`, `unknownFutureValue`.|
-|modifiedDateTime|DateTimeOffset|The date and time when the message was modified.|
-|reaction|[chatMessageReaction](../resources/chatmessagereaction.md)|The reaction in the modified message.|
+|actions|chatMessageActions |The modification actions of a message item.The possible values are: `reactionAdded`, `reactionRemoved`, `actionUndefined`, `unknownFutureValue`. |
+|modifiedDateTime|DateTimeOffset |The date and time when the message was modified. |
+|reaction|[chatMessageReaction](../resources/chatmessagereaction.md) |The reaction in the modified message. |
 
 ## Relationships
 None.

@@ -759,7 +759,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "messageHistory",
               "ChangeType": "Addition",
-              "Description": "Added the `messageHistory` property to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+              "Description": "Added the **messageHistory** property to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
               "Target": "chatMessage"
             }
           ],
@@ -768,7 +768,7 @@
           "Version": "beta",
           "CreatedDateTime": "2022-10-20T22:13:37.3506829Z",
           "WorkloadArea": "Teamwork",
-          "SubArea": "Microsoft.Teams.Shifts"
+          "SubArea": ""
         }
       ]
     }
