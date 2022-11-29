@@ -3,6 +3,136 @@
     {
       "ChangeList": [
         {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationStrengthRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthRoot** relationship to the [conditionalAccessRoot](https://docs.microsoft.com/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationStrengthPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthPolicies** relationship to the [policyRoot](https://docs.microsoft.com/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationStrengthPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationStrengthPolicy](https://docs.microsoft.com/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "authenticationStrengthPolicy"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationMethodModes",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodModes** enumeration type.",
+          "Target": "authenticationMethodModes"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationStrengthPolicyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthPolicyType** enumeration type.",
+          "Target": "authenticationStrengthPolicyType"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationStrengthRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthRequirements** enumeration type.",
+          "Target": "authenticationStrengthRequirements"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "baseAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **baseAuthenticationMethod** enumeration type.",
+          "Target": "baseAuthenticationMethod"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updateAllowedCombinationsResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllowedCombinationsResult](https://docs.microsoft.com/graph/api/resources/updateAllowedCombinationsResult?view=graph-rest-beta) resource.",
+          "Target": "updateAllowedCombinationsResult"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationStrengthUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationStrengthUsage](https://docs.microsoft.com/graph/api/resources/authenticationStrengthUsage?view=graph-rest-beta) resource.",
+          "Target": "authenticationStrengthUsage"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationCombinationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationCombinationConfiguration](https://docs.microsoft.com/graph/api/resources/authenticationCombinationConfiguration?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "authenticationCombinationConfiguration"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodModeDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodModeDetail](https://docs.microsoft.com/graph/api/resources/authenticationMethodModeDetail?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "authenticationMethodModeDetail"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2CombinationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fido2CombinationConfiguration](https://docs.microsoft.com/graph/api/resources/fido2CombinationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "fido2CombinationConfiguration"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateAllowedCombinations",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllowedCombinations](https://docs.microsoft.com/graph/api/authenticationstrengthpolicy-updateAllowedCombinations?view=graph-rest-beta) method to the [authenticationStrengthPolicy](https://docs.microsoft.com/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource.",
+          "Target": "updateAllowedCombinations"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Method",
+          "ChangedApiName": "findByMethodMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [findByMethodMode](https://docs.microsoft.com/graph/api/authenticationstrengthpolicy-findByMethodMode?view=graph-rest-beta) method to the [authenticationStrengthPolicy](https://docs.microsoft.com/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource.",
+          "Target": "findByMethodMode"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Method",
+          "ChangedApiName": "usage",
+          "ChangeType": "Addition",
+          "Description": "Added the [usage](https://docs.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-beta) method to the [authenticationStrengthPolicy](https://docs.microsoft.com/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource.",
+          "Target": "findByMethodMode"
+        }
+      ],
+      "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-12T00:00:00.4281584Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
           "ApiChange": "Property",
           "ChangedApiName": "featureSettings",

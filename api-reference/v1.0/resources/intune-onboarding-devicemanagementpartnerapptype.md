@@ -26,5 +26,3 @@ Partner App Type.
 
 
 
-
-

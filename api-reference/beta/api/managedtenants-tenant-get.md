@@ -3,7 +3,7 @@ title: "Get tenant"
 description: "Read the properties and relationships of a tenant object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 

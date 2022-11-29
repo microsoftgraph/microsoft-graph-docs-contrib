@@ -33,6 +33,9 @@ $params = @{
 		}
 		"A93c93c5-10a6-4167-9551-8bafa09967a7" = $null
 	}
+	Description = "Updated task details properties:
+Updated checklist:Sub items
+Updated references:Related links"
 }
 
 Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params
