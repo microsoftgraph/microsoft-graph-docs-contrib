@@ -31,7 +31,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/addPassword
-POST /applications/(appId='{appId}')/addPassword
+POST /applications(appId='{appId}')/addPassword
 ```
 
 ## Request headers

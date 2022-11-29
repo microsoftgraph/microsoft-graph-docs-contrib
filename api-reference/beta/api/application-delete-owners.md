@@ -30,7 +30,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/owners/{id}/$ref
-DELETE /applications/(appId='{appId}')/owners/{id}/$ref
+DELETE /applications(appId='{appId}')/owners/{id}/$ref
 ```
 
 > [!CAUTION]

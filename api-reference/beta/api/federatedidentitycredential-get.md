@@ -35,9 +35,9 @@ GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredential
 
 GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 
-GET /applications/(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
-GET /applications/(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
+GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Optional query parameters

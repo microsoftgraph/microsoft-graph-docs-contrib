@@ -29,7 +29,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/federatedIdentityCredentials
-POST /applications/(appId='{appId}')/federatedIdentityCredentials
+POST /applications(appId='{appId}')/federatedIdentityCredentials
 ```
 
 ## Request headers

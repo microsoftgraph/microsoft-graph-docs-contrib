@@ -35,9 +35,9 @@ PATCH /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredenti
 
 PATCH /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 
-PATCH /applications/(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+PATCH /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
-PATCH /applications/(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
+PATCH /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers

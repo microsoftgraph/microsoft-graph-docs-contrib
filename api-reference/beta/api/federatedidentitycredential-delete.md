@@ -34,9 +34,9 @@ DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredent
 
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 
-DELETE /applications/(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
-DELETE /applications/(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
+DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers

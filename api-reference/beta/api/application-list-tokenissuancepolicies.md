@@ -31,7 +31,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/tokenIssuancePolicies
-GET /applications/(appId='{appId}')/tokenIssuancePolicies
+GET /applications(appId='{appId}')/tokenIssuancePolicies
 ```
 
 ## Request headers

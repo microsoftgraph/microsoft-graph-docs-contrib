@@ -31,7 +31,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/tokenIssuancePolicies/$ref
-POST /applications/(appId='{appId}')/tokenIssuancePolicies/$ref
+POST /applications(appId='{appId}')/tokenIssuancePolicies/$ref
 ```
 
 ## Request headers

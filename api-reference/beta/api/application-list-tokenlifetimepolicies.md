@@ -35,7 +35,7 @@ You can address the application using either its **id** or **appId**. **id** and
 ```http
 GET /applications/{id}/tokenLifetimePolicies
 
-GET /applications/(appId='{appId}')/tokenLifetimePolicies
+GET /applications(appId='{appId}')/tokenLifetimePolicies
 
 GET /servicePrincipals/{id}/tokenLifetimePolicies
 ```

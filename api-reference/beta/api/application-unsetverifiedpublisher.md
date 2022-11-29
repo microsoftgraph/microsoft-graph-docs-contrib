@@ -29,7 +29,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/unsetVerifiedPublisher
-POST /applications/(appId='{appId}')/unsetVerifiedPublisher
+POST /applications(appId='{appId}')/unsetVerifiedPublisher
 ```
 
 ## Request headers

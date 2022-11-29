@@ -30,7 +30,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/owners/$ref
-POST /applications/(appId='{appId}')/owners/$ref
+POST /applications(appId='{appId}')/owners/$ref
 ```
 
 ## Request headers

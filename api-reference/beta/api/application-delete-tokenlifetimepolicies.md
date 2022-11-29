@@ -35,7 +35,7 @@ You can address the application using either its **id** or **appId**. **id** and
 ```http
 DELETE /applications/{id}/tokenLifetimePolicies/$ref
 
-DELETE /applications/(appId='{appId}')/tokenLifetimePolicies/$ref
+DELETE /applications(appId='{appId}')/tokenLifetimePolicies/$ref
 
 DELETE /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 ```

@@ -35,7 +35,7 @@ You can address the application using either its **id** or **appId**. **id** and
 ```http
 POST /applications/{id}/tokenLifetimePolicies/$ref
 
-POST /applications/(appId='{appId}')/tokenLifetimePolicies/$ref
+POST /applications(appId='{appId}')/tokenLifetimePolicies/$ref
 
 POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 ```

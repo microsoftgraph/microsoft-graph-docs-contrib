@@ -34,7 +34,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/owners
-GET /applications/(appId='{appId}')/owners
+GET /applications(appId='{appId}')/owners
 ```
 
 ## Optional query parameters
