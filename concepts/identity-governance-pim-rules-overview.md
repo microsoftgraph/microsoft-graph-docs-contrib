@@ -38,7 +38,7 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ### Activation rules
 
-:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation.png" alt-text="PIM activation settings on the Azure portal":::
+:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation-inline.png" alt-text="PIM role activation settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation-expanded.png":::
 
 | Number | Microsoft Graph Rule ID / Derived resource type                             | Azure Portal UX Description                                                                                                  | Caller   |
 |--------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -49,7 +49,7 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ## Assignment rules
 
-:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment.png" alt-text="PIM assignment settings on the Azure portal":::
+:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment-inline.png" alt-text="PIM role assignment settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment-expanded.png":::
 
 | Number | Microsoft Graph Rule ID / Derived resource type                             | Azure Portal UX Description                                                                                   | Caller   |
 |--------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|----------|
@@ -60,7 +60,7 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ## Notification rules
 
-:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification.png" alt-text="PIM notification settings on the Azure portal":::
+:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification-inline.png" alt-text="PIM role notification settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification-expanded.png":::
 
 | Number | Microsoft Graph Rule ID / Derived resource type                                           | Azure Portal UX Description                                                                                                   | Caller               |
 |--------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------|
