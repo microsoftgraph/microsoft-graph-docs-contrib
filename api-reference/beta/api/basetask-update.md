@@ -76,7 +76,8 @@ If successful, this method returns a `200 OK` response code and an updated [base
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_basetask"
+  "name": "update_basetask",
+  "sampleKeys": ["AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt", "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT"]
 }
 -->
 ``` http

@@ -40,7 +40,8 @@ GET /education/users/{user-id}/assignments
 
 ## Optional query parameters
 
-This method supports the `$submissions` and `$categories` [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 
@@ -70,7 +71,7 @@ The following is an example of the request.
   "name": "get_me_assignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/assignments
 ```
 
@@ -214,7 +215,7 @@ The following is an example of the request.
   "name": "get_user_assignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b62a243836/assignments
 ```
 

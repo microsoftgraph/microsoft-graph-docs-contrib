@@ -127,7 +127,7 @@ To access a Group's default document library, your app requests the **drive** re
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /groups/{groupId}/drive
 ```
 
@@ -174,7 +174,7 @@ To access a [Site's](../resources/site.md) default document library, your app re
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-site-id", "scopes": "group.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{siteId}/drive
 ```
 
@@ -221,7 +221,7 @@ If you have the unique identifier for a drive, you can access it directly from t
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}
 ```
 

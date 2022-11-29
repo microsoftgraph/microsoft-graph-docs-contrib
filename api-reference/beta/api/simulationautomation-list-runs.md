@@ -1,7 +1,7 @@
 ---
 title: "List runs"
 description: "Get a list of the attack simulation automation runs for a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (work or school account)     | AttackSimulation.Read.All                   |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | SecurityEvents.Read.All                     |
+| Application                            | AttackSimulation.Read.All                   |
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/ru
 ```
 
 ## Optional query parameters
-This method supports the `$count`, `$skiptoken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 

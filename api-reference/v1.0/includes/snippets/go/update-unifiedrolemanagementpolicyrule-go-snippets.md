@@ -8,17 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUnifiedRoleManagementPolicyRule()
-"@odata.type" := "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
-requestBody.Set"@odata.type"(&"@odata.type") 
 id := "Expiration_EndUser_Assignment"
 requestBody.SetId(&id) 
 target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
-"@odata.type" := "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
-target.Set"@odata.type"(&"@odata.type") 
 caller := "EndUser"
 target.SetCaller(&caller) 
 operations := []graphmodels.UnifiedRoleManagementPolicyRuleTargetOperationsable {
-	"All",
+	unifiedRoleManagementPolicyRuleTargetOperations := graphmodels.ALL_UNIFIEDROLEMANAGEMENTPOLICYRULETARGETOPERATIONS 
+	target.SetUnifiedRoleManagementPolicyRuleTargetOperations(&unifiedRoleManagementPolicyRuleTargetOperations) 
 
 }
 target.SetOperations(operations)
@@ -40,7 +37,7 @@ requestBody.SetIsExpirationRequired(&isExpirationRequired)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").RulesById("unifiedRoleManagementPolicyRule-id").Patch(requestBody)
+result, err := graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").RulesById("unifiedRoleManagementPolicyRule-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

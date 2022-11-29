@@ -58,10 +58,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "permissiongrantpolicy_get_includes"
+  "name": "permissiongrantpolicy_get_includes",
+  "sampleKeys": ["microsoft-application-admin"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-application-admin/includes
 ```
 

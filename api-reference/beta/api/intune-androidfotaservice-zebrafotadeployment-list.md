@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2218
+Content-Length: 2310
 
 {
   "value": [
@@ -74,6 +74,7 @@ Content-Length: 2218
         "deviceModel": "Device Model value",
         "updateType": "latest",
         "timeZoneOffsetInMinutes": 7,
+        "firmwareTargetArtifactDescription": "Firmware Target Artifact Description value",
         "firmwareTargetBoardSupportPackageVersion": "Firmware Target Board Support Package Version value",
         "firmwareTargetPatch": "Firmware Target Patch value",
         "firmwareTargetOsVersion": "Firmware Target Os Version value",
@@ -119,6 +120,7 @@ Content-Length: 2218
   ]
 }
 ```
+
 
 
 

@@ -83,7 +83,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_unifiedroleassignmentMultiple"
+  "name": "delete_unifiedroleassignmentMultiple",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
 ```http
@@ -142,7 +143,7 @@ HTTP/1.1 204 No Content
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/id
+DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{id}
 ```
 
 # [C#](#tab/csharp)

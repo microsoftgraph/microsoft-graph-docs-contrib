@@ -11,8 +11,6 @@ requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "microsoft.graph.educationPowerPointResource"
-resource.Set"@odata.type"(&"@odata.type") 
 displayName := "state diagram.pptx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
@@ -21,7 +19,7 @@ additionalData := map[string]interface{}{
 resource.SetAdditionalData(additionalData)
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Resources().Post(requestBody)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

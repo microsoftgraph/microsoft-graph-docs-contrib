@@ -52,10 +52,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_mailfolder"
+  "name": "delete_mailfolder",
+  "sampleKeys": ["AAMkAGVmMDEzM"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
+DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 
 # [C#](#tab/csharp)

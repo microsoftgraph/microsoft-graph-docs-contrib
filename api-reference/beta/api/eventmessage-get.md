@@ -2,7 +2,7 @@
 title: "Get eventMessage"
 description: "expand` parameter on the **event**"
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -70,7 +70,8 @@ The first example shows how to get the properties of an event message based on t
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_eventmessage"
+  "name": "get_eventmessage",
+  "sampleKeys": ["AAMkADYAAAImV_lAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
@@ -217,7 +218,8 @@ and apply an $expand parameter to get the properties of the event.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_event_based_on_eventmessage"
+  "name": "get_event_based_on_eventmessage",
+  "sampleKeys": ["AAMkADYAAAImV_jAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=microsoft.graph.eventMessage/event

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.WindowsUpdates
 
-Get-MgWindowsUpdatesCatalogEntry -OutFile $outFileId
+Get-MgWindowsUpdatesCatalogEntry
 
 ```

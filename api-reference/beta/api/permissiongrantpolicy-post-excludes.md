@@ -59,7 +59,8 @@ In this example, *all* delegated permissions for Microsoft Graph (**appId** 0000
 <!-- {
   "blockType": "request",
   "truncated": true,
-  "name": "permissiongrantpolicy_create_excludes"
+  "name": "permissiongrantpolicy_create_excludes",
+  "sampleKeys": ["my-custom-consent-policy"]
 }-->
 
 ```http

@@ -61,7 +61,8 @@ This method returns a maximum of 100 actions. If there are more actions, you can
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedrbacresourceaction_directory"
+  "name": "list_unifiedrbacresourceaction_directory",
+  "sampleKeys": ["microsoft.directory"]
 }
 -->
 ``` http
@@ -146,7 +147,8 @@ The following example gets the actions for the resource namespace with the ident
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedrbacresourceaction_insights"
+  "name": "list_unifiedrbacresourceaction_insights",
+  "sampleKeys": ["microsoft.insights"]
 }
 -->
 ``` http

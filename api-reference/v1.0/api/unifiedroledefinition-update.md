@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object. You cannot update built-in roles.
+Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object. You cannot update built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
 
 ## Permissions
 
@@ -69,7 +69,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroledefinition"
+  "name": "update_unifiedroledefinition",
+  "sampleKeys": ["0d55728d-3e24-4309-9b1b-5ac09921475a"]
 }-->
 
 ```http

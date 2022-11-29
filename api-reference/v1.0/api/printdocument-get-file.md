@@ -51,7 +51,7 @@ The following example shows how to call this API to acquire a pre-authenticated 
   "blockType": "request",
   "name": "get_document_value"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/$value
 ```
 

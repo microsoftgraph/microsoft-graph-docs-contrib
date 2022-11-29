@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewNamedLocation()
-"@odata.type" := "#microsoft.graph.countryNamedLocation"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Named location with unknown countries and regions"
 requestBody.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
@@ -23,7 +21,7 @@ requestBody.SetIncludeUnknownCountriesAndRegions(&includeUnknownCountriesAndRegi
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(context.Background(), requestBody, nil)
 
 
 ```

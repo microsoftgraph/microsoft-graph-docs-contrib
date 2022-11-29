@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 Add a key credential to an [application](../resources/application.md). This method, along with [removeKey](application-removekey.md), can be used by an application to automate rolling its expiring keys.
 
 > [!NOTE]
-> You can continue to use the [Create application](../api/application-post-applications.md) and [Update application](../api/application-update.md) application operations to add and update key credentials for any application with or without a user's context. 
+> You can continue to use the [Create application](../api/application-post-applications.md) and [Update application](../api/application-update.md) operations to add and update key credentials for any application with or without a user's context. 
+>
+> You should only provide the public key value when adding a certificate credential to your application. Adding a private key certificate to your application risks compromising the application.
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 

@@ -54,7 +54,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "printjob-update"
+  "name": "printjob-update",
+  "sampleKeys": ["44353", "d5ef6ec4-07ca-4212-baf9-d45be126bfbb"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353

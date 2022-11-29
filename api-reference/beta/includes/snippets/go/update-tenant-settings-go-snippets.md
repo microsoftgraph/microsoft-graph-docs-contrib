@@ -17,6 +17,8 @@ excludedFileExtensionsForSyncApp := []string {
 requestBody.SetExcludedFileExtensionsForSyncApp(excludedFileExtensionsForSyncApp)
 imageTaggingOption := graphmodels.ENHANCED_IMAGETAGGINGCHOICE 
 requestBody.SetImageTaggingOption(&imageTaggingOption) 
+isLegacyAuthProtocolsEnabled := true
+requestBody.SetIsLegacyAuthProtocolsEnabled(&isLegacyAuthProtocolsEnabled) 
 isSitesStorageLimitAutomatic := false
 requestBody.SetIsSitesStorageLimitAutomatic(&isSitesStorageLimitAutomatic) 
 isSyncButtonHiddenOnPersonalSite := false
@@ -26,7 +28,7 @@ requestBody.SetIsUnmanagedSyncAppForTenantRestricted(&isUnmanagedSyncAppForTenan
 personalSiteDefaultStorageLimitInMB := int64(120000)
 requestBody.SetPersonalSiteDefaultStorageLimitInMB(&personalSiteDefaultStorageLimitInMB) 
 
-graphClient.Admin().Sharepoint().Settings().Patch(requestBody)
+result, err := graphClient.Admin().Sharepoint().Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

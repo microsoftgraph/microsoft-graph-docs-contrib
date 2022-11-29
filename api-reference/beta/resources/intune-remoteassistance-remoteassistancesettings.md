@@ -29,6 +29,7 @@ Remote assistance settings for the account
 |id|String|The remote assistance settings identifier|
 |remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|The current state of remote assistance for the account. Possible values are: disabled, enabled. This setting is configurable by the admin. Remote assistance settings that have not yet been configured by the admin have a disabled state. Returned by default. Possible values are: `disabled`, `enabled`.|
 |allowSessionsToUnenrolledDevices|Boolean| Indicates if sessions to unenrolled devices are allowed for the account. This setting is configurable by the admin. Default value is false.|
+|blockChat|Boolean| Indicates if sessions to block chat function. This setting is configurable by the admin. Default value is false.|
 
 ## Relationships
 None
@@ -46,9 +47,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
   "id": "String (identifier)",
   "remoteAssistanceState": "String",
-  "allowSessionsToUnenrolledDevices": true
+  "allowSessionsToUnenrolledDevices": true,
+  "blockChat": true
 }
 ```
+
 
 
 

@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1611
+Content-Length: 1653
 
 {
   "value": {
@@ -80,6 +80,7 @@ Content-Length: 1611
     "passwordRequired": true,
     "passwordMinimumLength": 5,
     "passwordRequiredType": "alphabetic",
+    "requiredPasswordComplexity": "low",
     "passwordMinutesOfInactivityBeforeLock": 5,
     "passwordExpirationDays": 6,
     "passwordPreviousPasswordBlockCount": 2,
@@ -103,6 +104,7 @@ Content-Length: 1611
   }
 }
 ```
+
 
 
 

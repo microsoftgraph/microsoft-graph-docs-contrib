@@ -319,7 +319,8 @@ extended property that has its **id** matching the string `String {66f5a359-4659
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_singlevaluelegacyextendedproperty_1"
+  "name": "get_singlevaluelegacyextendedproperty_1",
+  "sampleKeys": ["AAMkAGE1M2_bs88AACHsLqWAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=/?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')

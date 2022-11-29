@@ -56,7 +56,8 @@ If successful, this method returns a `200 OK` response code and a [schema](../re
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_schema"
+  "name": "get_schema",
+  "sampleKeys": ["contosohr"]
 }
 -->
 ``` http

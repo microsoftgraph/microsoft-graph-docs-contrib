@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Delegated (work or school account)|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Application|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/authenticationMethods/userRegistrationDetails/{userRegistrationDetailsId}
+GET /reports/authenticationMethods/userRegistrationDetails/{userId}
 ```
 
 ## Optional query parameters
@@ -107,6 +107,7 @@ Content-Type: application/json
     "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
     "userPrincipalName": "AlexW@Contoso.com",
     "userDisplayName": "Alex Wilber",
+    "isAdmin": false,
     "isSsprRegistered": false,
     "isSsprEnabled": false,
     "isSsprCapable": false,
@@ -117,7 +118,8 @@ Content-Type: application/json
     "microsoftAuthenticatorPush",
       "softwareOneTimePasscode"
     ],
-    "defaultMfaMethod": "microsoftAuthenticatorPush"
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "userType": "member"
   }
 }
 ```

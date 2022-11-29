@@ -89,11 +89,12 @@ The following is an example of the request:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedroleassignmentmultiple"
+  "name": "list_unifiedroleassignmentmultiple",
+  "sampleKeys": ["9e47fc6f-2d7a-464c-944e-d3dd0de522e4"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments/$filter=principalId eq '9e47fc6f-2d7a-464c-944e-d3dd0de522e4'
+GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments?$filter=principalId eq '9e47fc6f-2d7a-464c-944e-d3dd0de522e4'
 ```
 
 # [C#](#tab/csharp)
@@ -256,7 +257,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcunifiedroleassignmentmultiple_2"
+  "name": "list_cloudpcunifiedroleassignmentmultiple_2",
+  "sampleKeys": ["b5c08161-a7af-481c-ace2-a20a69a48fb1"]
 }-->
 
 ```msgraph-interactive

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Calendar
 
-Get-MgGroupEvent -GroupId $groupId -OutFile $outFileId
+Get-MgGroupEvent -GroupId $groupId
 
 ```

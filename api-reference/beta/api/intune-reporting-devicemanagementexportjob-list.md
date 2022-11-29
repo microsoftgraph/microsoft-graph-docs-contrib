@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 594
+Content-Length: 593
 
 {
   "value": [
@@ -72,7 +72,7 @@ Content-Length: 594
       "select": [
         "Select value"
       ],
-      "format": "json",
+      "format": "pdf",
       "snapshotId": "Snapshot Id value",
       "localizationType": "replaceLocalizableValues",
       "status": "notStarted",
@@ -83,6 +83,7 @@ Content-Length: 594
   ]
 }
 ```
+
 
 
 

@@ -58,7 +58,8 @@ The following example updates the business email address and scheduling policy, 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_bookingbusiness"
+  "name": "update_bookingbusiness",
+  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com

@@ -33,7 +33,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## Optional query parameters
-This method supports the `$select` [OData query parameters](/graph/query-parameter) to help customize the response.
+This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -55,7 +55,8 @@ If successful, this method returns a `200 OK` response code and a [teamworkBot](
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_teamworkbot"
+  "name": "get_teamworkbot",
+  "sampleKeys": ["e4c5c249-bb4b-419e-b7c5-b1d98559368b", "ZTRjNWMyNDktYmI0Yi00MTllLWI3YzUtYjFkOTg1NTkzNjhiIyMyLjAuMSMjUHVibGlzaGVk"]
 }
 -->
 ``` http

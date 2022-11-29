@@ -14,7 +14,7 @@ configuration := &graphconfig.PlannerBucketRequestBuilderDeleteRequestConfigurat
 	Headers: headers,
 }
 
-graphClient.Planner().BucketsById("plannerBucket-id").DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.Planner().BucketsById("plannerBucket-id").Delete(context.Background(), configuration)
 
 
 ```

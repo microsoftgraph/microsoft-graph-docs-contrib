@@ -71,7 +71,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_b2cidentityuserflow"
+  "name": "update_b2cidentityuserflow",
+  "sampleKeys": ["B2C_1_CustomerSignUp"]
 }
 -->
 

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /contacts/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
@@ -53,7 +53,7 @@ Here is an example of the request.
   "name": "get_orgcontact"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/contacts/{id}
+GET https://graph.microsoft.com/beta/contacts/25caf6a2-d5cb-470d-8940-20ba795ef62d
 ```
 
 # [C#](#tab/csharp)
@@ -94,25 +94,48 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "addresses":[
-      {
-        "city": "string",
-        "countryOrRegion": "string",
-        "officeLocation": "string",
-        "postalCode": "string",
-        "state": "string",
-        "street": "string"
-      }
-  ],
-  "companyName": "companyName-value",
-  "department": "department-value",
-  "displayName": "displayName-value",
-  "phones":[
-      {
-        "type": "string",
-        "number": "string"
-      }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#contacts/$entity",
+    "id": "25caf6a2-d5cb-470d-8940-20ba795ef62d",
+    "deletedDateTime": null,
+    "companyName": "Adatum Corporation",
+    "department": null,
+    "displayName": "Adele Vance",
+    "proxyAddresses": [
+        "SMTP:AdeleVance@adatum.com"
+    ],
+    "givenName": "Adele",
+    "imAddresses": [],
+    "jobTitle": "Engagement manager",
+    "mail": "AdeleVance@adatum.com",
+    "mailNickname": "AdeleVance",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSyncEnabled": null,
+    "surname": "Vance",
+    "addresses": [
+        {
+            "city": null,
+            "countryOrRegion": "United States",
+            "officeLocation": null,
+            "postalCode": null,
+            "state": null,
+            "street": null
+        }
+    ],
+    "onPremisesProvisioningErrors": [],
+    "phones": [
+        {
+            "number": null,
+            "type": "businessFax"
+        },
+        {
+            "number": null,
+            "type": "mobile"
+        },
+        {
+            "number": null,
+            "type": "business"
+        }
+    ]
 }
 ```
 

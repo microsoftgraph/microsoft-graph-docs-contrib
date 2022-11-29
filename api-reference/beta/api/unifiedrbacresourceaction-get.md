@@ -57,7 +57,8 @@ The following example gets the action with the identifier `microsoft.directory-a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrbacresourceaction"
+  "name": "get_unifiedrbacresourceaction",
+  "sampleKeys": ["microsoft.directory-accessReviews-allProperties-read-get", "microsoft.directory"]
 }
 -->
 ``` http

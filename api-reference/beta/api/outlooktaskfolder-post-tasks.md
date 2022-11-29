@@ -58,7 +58,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_outlooktask_from_outlooktaskfolder"
+  "name": "create_outlooktask_from_outlooktaskfolder",
+  "sampleKeys": ["AAMkADIyAAAhrbPXAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks

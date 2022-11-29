@@ -1,7 +1,7 @@
 ---
 title: "simulationReportOverview resource type"
-description: "Represents overview report of an attack simulation and training campaign."
-author: "Gopal-MSFT"
+description: "Represents an overview report of an attack simulation and training campaign."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an overview of an attack simulation and training campaign.
+Represents an overview report of an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
@@ -36,18 +36,18 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.simulationReportOverview",
-  "resolvedTargetsCount": "Integer",
+  "recommendedActions": [
+    {
+      "@odata.type": "microsoft.graph.recommendedAction"
+    }
+  ],
+  "resolvedTargetsCount": "Int32",
   "simulationEventsContent": {
     "@odata.type": "microsoft.graph.simulationEventsContent"
   },
   "trainingEventsContent": {
     "@odata.type": "microsoft.graph.trainingEventsContent"
-  },
-  "recommendedActions": [
-    {
-      "@odata.type": "microsoft.graph.recommendedAction"
-    }
-  ]
+  }
 }
 ```
 

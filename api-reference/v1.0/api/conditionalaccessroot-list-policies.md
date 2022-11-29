@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_policies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 ```
 

@@ -27,8 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-> [!CAUTION] 
-> The PATCH syntax for this action is deprecated and will stop working after June 2022. We recommend that you use POST going forward.
 
 <!-- {
   "blockType": "ignored"
@@ -36,7 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
-PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 ```
 
 ## Request headers

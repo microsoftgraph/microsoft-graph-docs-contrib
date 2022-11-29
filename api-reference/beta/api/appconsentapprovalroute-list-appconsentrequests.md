@@ -34,7 +34,7 @@ GET /identityGovernance/appConsent/appConsentRequests
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$skip`, `$top`, `$filter`, and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$skip`, `$top`, `$filter` (`eq`), and `$orderby` OData query parameters to help customize the response. You can also apply `$filter` (`eq`) on the collection of objects in the**userConsentRequests** relationship. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -48,9 +48,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [appConsentRequest](../resources/appconsentrequest.md) objects in the response body.
 
-## Example 1: List all appConsentRequests
+## Examples
 
-### Request
+### Example 1: List all appConsentRequests
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -90,7 +92,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -103,24 +105,38 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests",
-  "@odata.count": 1,
-  "value": [
-    {
-      "id": "af330b30-dd59-4482-a848-0fd81b0438ed",
-      "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
-      "appDisplayName": "Moodle",
-      "consentType": "Dynamic",
-      "pendingScopes": [],
-      "userConsentRequests": []
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "7322e5f3-0f15-4eb8-9e82-2029e8622f5d",
+            "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "appDisplayName": "Graph Explorer",
+            "consentType": "Dynamic",
+            "pendingScopes": [
+                {
+                    "displayName": "AccessReview.Read.All"
+                },
+                {
+                    "displayName": "openid"
+                },
+                {
+                    "displayName": "profile"
+                },
+                {
+                    "displayName": "offline_access"
+                }
+            ],
+            "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('7322e5f3-0f15-4eb8-9e82-2029e8622f5d')/userConsentRequests",
+            "userConsentRequests": []
+        }
+    ]
 }
 ```
 
-## Example 2: List all appConsentRequests with at least one userConsentRequest whose status is InProgress
+### Example 2: List all appConsentRequests with at least one userConsentRequest whose status is InProgress
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -160,7 +176,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 
 
-### Response
+#### Response
+
+The following is an example of the response. The response object includes all **appConsentRequest** objects that have at least one **userConsentRequest** that's `InProgress`, but doesn't expand the related **userConsentRequests** relationship.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -176,15 +195,29 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests",
     "@odata.count": 1,
     "value": [
-      {
-      "id": "af330b30-dd59-4482-a848-0fd81b0438ed",
-      "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
-      "appDisplayName": "Moodle",
-      "consentType": "Dynamic",
-      "pendingScopes": [],
-      "userConsentRequests": []
-    }
-  ]
+        {
+            "id": "7322e5f3-0f15-4eb8-9e82-2029e8622f5d",
+            "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "appDisplayName": "Graph Explorer",
+            "consentType": "Dynamic",
+            "pendingScopes": [
+                {
+                    "displayName": "AccessReview.Read.All"
+                },
+                {
+                    "displayName": "openid"
+                },
+                {
+                    "displayName": "profile"
+                },
+                {
+                    "displayName": "offline_access"
+                }
+            ],
+            "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('7322e5f3-0f15-4eb8-9e82-2029e8622f5d')/userConsentRequests",
+            "userConsentRequests": []
+        }
+    ]
 }
 ```
 

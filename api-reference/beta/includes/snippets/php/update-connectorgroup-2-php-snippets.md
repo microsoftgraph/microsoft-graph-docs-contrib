@@ -16,7 +16,7 @@ $requestBody->setRegion(new ConnectorGroupRegion('region-value'));
 
 
 
-$graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->connectorGroupsById('connectorGroup-id')->patch($requestBody);
+$requestResult = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->connectorGroupsById('connectorGroup-id')->patch($requestBody);
 
 
 ```

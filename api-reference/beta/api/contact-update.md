@@ -98,7 +98,8 @@ The following example updates the personal email address of the specified contac
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_contact"
+  "name": "update_contact",
+  "sampleKeys": ["AAMkADh6v5AAAvgTCEAAA="]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/contacts/AAMkADh6v5AAAvgTCEAAA=

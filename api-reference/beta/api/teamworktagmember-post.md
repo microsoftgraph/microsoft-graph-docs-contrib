@@ -1,7 +1,7 @@
 ---
 title: "Create teamworkTagMember"
 description: "Create a new teamworkTagMember object."
-author: "anniecolonna"
+author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -61,7 +61,8 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamworktagmember_from_"
+  "name": "create_teamworktagmember_from_",
+  "sampleKeys": ["53c53217-fe77-4383-bc5a-ed4937a1aecd", "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk=="]
 }
 -->
 ``` http

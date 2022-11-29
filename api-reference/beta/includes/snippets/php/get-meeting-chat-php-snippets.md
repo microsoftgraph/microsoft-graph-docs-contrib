@@ -9,8 +9,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
+$requestConfiguration = new ChatRequestBuilderGetRequestConfiguration();
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->get();
+$queryParameters = new ChatRequestBuilderGetQueryParameters();
+$queryParameters->expand = ["lastMessagePreview"];
+
+$requestConfiguration->queryParameters = $queryParameters;
+
+
+$requestResult = $graphServiceClient->chatsById('chat-id')->get($requestConfiguration);
 
 
 ```

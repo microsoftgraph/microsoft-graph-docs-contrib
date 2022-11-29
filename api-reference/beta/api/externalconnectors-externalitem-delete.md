@@ -37,8 +37,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). |
+| connection-id | string | The **id** property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md). |
+| item-id       | string | The developer-provided **id** property of the [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## Request headers
 
@@ -65,7 +65,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_externalitem"
+  "name": "delete_externalitem",
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }-->
 
 ```http

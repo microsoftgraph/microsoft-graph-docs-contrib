@@ -51,7 +51,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_outlooktaskgroup"
+  "name": "delete_outlooktaskgroup",
+  "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=

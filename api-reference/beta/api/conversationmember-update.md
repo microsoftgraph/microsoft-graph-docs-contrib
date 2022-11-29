@@ -18,7 +18,7 @@ Update the role of a [conversationMember](../resources/conversationmember.md) in
 or [channel](../resources/channel.md).
 
 > [!NOTE]
-> On channels, this operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.
+> On channels, this operation is only supported on channels with a [channelMembershipType](../resources/channel.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/channel.md#channelmembershiptype-values) will return a `400 Bad Request` response.
 
 ## Permissions
 

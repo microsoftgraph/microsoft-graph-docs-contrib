@@ -53,7 +53,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_post"
+  "name": "get_post",
+  "sampleKeys": ["0d75b8dc-c42d-44dd-890a-751a99c0589f", "AAQkAD8EJUmcWwTJi06Cew==", "AQMkADgAAAIJbQAAAA=="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts/AQMkADgAAAIJbQAAAA==

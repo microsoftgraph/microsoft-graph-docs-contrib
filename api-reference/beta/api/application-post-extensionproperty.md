@@ -3,7 +3,7 @@ title: "Create extensionProperty (directory extension)"
 description: "Create a new directory extension."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
 

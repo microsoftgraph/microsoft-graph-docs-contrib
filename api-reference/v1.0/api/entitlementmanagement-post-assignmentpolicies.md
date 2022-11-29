@@ -52,7 +52,8 @@ You can specify the following properties when creating an **accessPackageAssignm
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Specifies the settings for approval of requests for an access package assignment through this policy. For example, if approval is required for new requests.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Provides additional settings to select who can create a request for an access package assignment through this policy, and what they can include in their request.|
 |reviewSettings|[accessPackageAssignmentReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Settings for access reviews of assignments through this policy.|
-|specificAllowedTargets|[subjectSet](../resources/subjectset.md) collection|The targets for being assigned access from an access package from this policy.|
+|specificAllowedTargets|[subjectSet](../resources/subjectset.md) collection|The principals that can be assigned access from an access package through this policy.|
+|automaticRequestSettings|[accessPackageAutomaticRequestSettings](../resources/accessPackageAutomaticRequestSettings.md)|This property is only present for an auto assignment policy; if absent, this is a request-based policy.|
 |accessPackage|[accessPackage](../resources/accesspackage.md)| A reference to the access package that will contain the policy, which must already exist.|
 
 ## Response
@@ -299,3 +300,58 @@ Content-Type: application/json
 }
 ```
 
+## Example 3: Create a policy that automatically creates assignments based on a membership rule
+
+The following example shows a policy that automatically creates assignments for users in the sales department.
+
+#### Request
+
+
+<!-- {
+  "blockType": "ignored",
+  "name": "create_accesspackageassignmentpolicy_autoassignment"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies
+Content-Type: application/json
+
+{
+    "displayName": "Sales department users",
+    "description": "All users from sales department",
+    "allowedTargetScope": "specificDirectoryUsers",
+    "specificAllowedTargets": [
+        {
+            "@odata.type": "#microsoft.graph.attributeRuleMembers",
+            "description": "Membership rule for all users from sales department",
+            "membershipRule": "(user.department -eq \"Sales\")"
+        }
+    ],
+    "automaticRequestSettings": {
+        "requestAccessForAllowedTargets": true
+    },
+    "accessPackage": {
+        "id": "8a36831e-1527-4b2b-aff2-81259a8d8e76"
+    }
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "id": "962493bb-be02-4aeb-a233-a205bbfe1d8d",
+    "displayName": "Sales department users",
+    "description": "All users from sales department"
+}
+```

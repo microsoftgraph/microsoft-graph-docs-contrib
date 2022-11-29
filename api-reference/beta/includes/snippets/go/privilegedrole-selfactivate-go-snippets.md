@@ -17,7 +17,7 @@ requestBody.SetTicketNumber(&ticketNumber)
 ticketSystem := "ticketSystem-value"
 requestBody.SetTicketSystem(&ticketSystem) 
 
-result, err := graphClient.PrivilegedRolesById("privilegedRole-id").SelfActivate().Post(requestBody)
+result, err := graphClient.PrivilegedRolesById("privilegedRole-id").SelfActivate().Post(context.Background(), requestBody, nil)
 
 
 ```

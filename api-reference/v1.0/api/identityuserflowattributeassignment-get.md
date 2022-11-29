@@ -62,7 +62,8 @@ If successful, this method returns a `200 OK` response code and an [identityUser
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityuserflowattributeassignment_3"
+  "name": "get_identityuserflowattributeassignment_3",
+  "sampleKeys": ["B2X_1_Partner", "City"]
 }
 -->
 

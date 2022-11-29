@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "get_featurerolloutpolicy"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
 
@@ -134,7 +134,7 @@ The following is an example of the request.
   "name": "get_featurerolloutpolicy_expand_appliesTo"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
 ```
 

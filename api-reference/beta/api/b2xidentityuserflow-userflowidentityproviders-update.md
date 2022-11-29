@@ -63,7 +63,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_b2xuserflows_userflowidentityprovider"
+  "name": "update_b2xuserflows_userflowidentityprovider",
+  "sampleKeys": ["B2X_1_Test"]
 }
 -->
 

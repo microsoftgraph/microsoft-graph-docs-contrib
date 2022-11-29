@@ -58,11 +58,12 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_activity"
+  "name": "delete_activity",
+  "sampleKeys": ["13881113971988980728"]
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
+DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728
 ```
 
 # [C#](#tab/csharp)

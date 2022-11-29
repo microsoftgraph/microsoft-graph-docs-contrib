@@ -1,5 +1,5 @@
 ---
-title: "Create languages"
+title: "Create or update language"
 description: "Create a custom language in an Azure AD B2C user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create languages
+# Create or update language
 
 Namespace: microsoft.graph
 
@@ -75,7 +75,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_userflowlanguageconfiguration_from__1"
+  "name": "create_userflowlanguageconfiguration_from__1",
+  "sampleKeys": ["B2C_1_CustomerSignUp", "es-ES"]
 }
 -->
 
@@ -146,7 +147,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_userflowlanguageconfiguration_from__2"
+  "name": "create_userflowlanguageconfiguration_from__2",
+  "sampleKeys": ["B2C_1_CustomerSignUp", "es-ES"]
 }
 -->
 

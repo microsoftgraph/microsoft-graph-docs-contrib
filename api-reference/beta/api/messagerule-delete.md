@@ -50,7 +50,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_messagerule"
+  "name": "delete_messagerule",
+  "sampleKeys": ["AQAAAJ5dZp8="]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZp8=')

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
+This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,15 +27,27 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.ReadBasic.All*, Chat.Read.All*, Chat.ReadWrite.All* |
 
-\* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`
+> **Note**: \* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`.
 
 ## HTTP request
 
+To get the signed-in user's chats in the organization using delegated permission:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /chats
+```
+
+To get the chats of the specified user (who is the signed-in user) in the organization using delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats
 GET /users/{user-id | user-principal-name}/chats
-GET /chats
+```
+
+To get the chats of the specified user (who may not be signed in or is different from the signed-in user) in the organization, using application permission:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{user-id | user-principal-name}/chats
 ```
 
 ## Optional query parameters
@@ -708,6 +722,8 @@ Content-type: application/json
 
 The following is an example of a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_chats_orderby"
@@ -715,6 +731,33 @@ The following is an example of a request. **lastMessagePreview/createdDateTime**
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats?$orderBy=lastMessagePreview/createdDateTime desc
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-chats-orderby-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-chats-orderby-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-chats-orderby-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-chats-orderby-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-orderby-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-chats-orderby-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

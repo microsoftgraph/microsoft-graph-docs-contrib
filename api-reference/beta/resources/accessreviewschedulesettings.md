@@ -63,7 +63,7 @@ The following is a JSON representation of the resource.
     }
   ],
   "recommendationsEnabled": "Boolean",
-  "recommendationLookBackDuration": "Duration",
+  "recommendationLookBackDuration": "String (duration)",
   "decisionHistoriesForReviewersEnabled": "Boolean",
   "recommendationInsightSettings": [
     {

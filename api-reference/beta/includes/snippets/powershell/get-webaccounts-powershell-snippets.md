@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 # A UPN can also be used as -UserId.
-Get-MgUserProfileWebAccount -UserId $userId -OutFile $outFileId
+Get-MgUserProfileWebAccount -UserId $userId
 
 ```

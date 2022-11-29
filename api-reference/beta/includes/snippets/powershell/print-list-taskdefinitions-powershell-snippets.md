@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
-Get-MgPrintTaskDefinition -OutFile $outFileId
+Get-MgPrintTaskDefinition
 
 ```

@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["contoso.com"],
+  "sampleKeys": ["M365x214355.onmicrosoft.com"],
   "name": "get_domain"
 }-->
 ```msgraph-interactive

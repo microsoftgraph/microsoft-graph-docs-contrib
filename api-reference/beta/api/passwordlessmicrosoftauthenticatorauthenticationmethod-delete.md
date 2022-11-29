@@ -71,7 +71,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_passwordlessmicrosoftauthenticatorauthenticationmethod"
+  "name": "delete_passwordlessmicrosoftauthenticatorauthenticationmethod",
+  "sampleKeys": ["kim@contoso.com", "R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1"]
 }
 -->
 ``` http
