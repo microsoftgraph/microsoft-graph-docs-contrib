@@ -38,6 +38,8 @@ POST /applications/{id}/tokenLifetimePolicies/$ref
 POST /applications(appId='{appId}')/tokenLifetimePolicies/$ref
 
 POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
+
+POST /servicePrincipals(appId='{appId}')/tokenLifetimePolicies/$ref
 ```
 
 ## Request headers

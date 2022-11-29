@@ -38,6 +38,8 @@ DELETE /applications/{id}/tokenLifetimePolicies/$ref
 DELETE /applications(appId='{appId}')/tokenLifetimePolicies/$ref
 
 DELETE /servicePrincipals/{id}/tokenLifetimePolicies/$ref
+
+DELETE /servicePrincipals(appId='{appId}')/tokenLifetimePolicies/$ref
 ```
 
 ## Request headers

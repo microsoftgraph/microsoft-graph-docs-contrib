@@ -38,6 +38,8 @@ GET /applications/{id}/tokenLifetimePolicies
 GET /applications(appId='{appId}')/tokenLifetimePolicies
 
 GET /servicePrincipals/{id}/tokenLifetimePolicies
+
+GET /servicePrincipals(appId='{appId}')/tokenLifetimePolicies
 ```
 
 ## Request headers
