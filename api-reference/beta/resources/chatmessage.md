@@ -27,11 +27,11 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted messages, and reactions to them. |
 |[Get message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single root message in a channel.|
 |[Send message in channel](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new root message in a channel.|
-|[Update message in channel](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the properties of a chat message.|
-|[Delete message in channel](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Delete the message in a channel.|
-|[Undo the deletion of a message in channel](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the message in a channel.|
-|[Set reaction to a message in channel](../api/chatmessage-setreaction.md)|[chatMessage](chatmessage.md)| Set reaction to a message in a channel.|
-|[Unset reaction to a message in channel](../api/chatmessage-unsetreaction.md)|[chatMessage](chatmessage.md)| Unset reaction to a message in a channel.|
+|[Update message in channel](../api/chatmessage-update.md)| None | Update the properties of a chat message.|
+|[Delete message in channel](../api/chatmessage-softdelete.md)| None | Delete the message in a channel.|
+|[Undo the deletion of a message in channel](../api/chatmessage-undoSoftdelete.md)|None| Undelete the message in a channel.|
+|[Set reaction to a message in channel](../api/chatmessage-setreaction.md)|None| Set reaction to a message in a channel.|
+|[Unset reaction to a message in channel](../api/chatmessage-unsetreaction.md)|None| Unset reaction to a message in a channel.|
 |**Channel message replies**| | |
 |[List replies to message](../api/chatmessage-list-replies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
 |[Get reply message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single reply message in a channel.|

@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -15,6 +15,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:  
 
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <!-- fake header--> |
+|---|
 | <ul> <li> [circularGeofenceManagementCondition](/graph/api/resources/intune-fencing-circulargeofencemanagementcondition) <li> [locationManagementCondition](/graph/api/resources/intune-fencing-locationmanagementcondition) <li> [managementCondition](/graph/api/resources/intune-fencing-managementcondition) <li> [managementConditionStatement](/graph/api/resources/intune-fencing-managementconditionstatement) <li> [networkIPv4ConfigurationManagementCondition](/graph/api/resources/intune-fencing-networkipv4configurationmanagementcondition) <li> [networkIPv6ConfigurationManagementCondition](/graph/api/resources/intune-fencing-networkipv6configurationmanagementcondition) <li> [networkManagementCondition](/graph/api/resources/intune-fencing-networkmanagementcondition) </ul> |
