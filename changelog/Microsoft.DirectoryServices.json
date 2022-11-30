@@ -3,6 +3,24 @@
      {
       "ChangeList": [
         {
+          "Id": "b1bc594e-31eb-4773-a14b-0048cb782f24",
+          "ApiChange": "Member",
+          "ChangedApiName": "oAuthToken",
+          "ChangeType": "Addition",
+          "Description": "Added the `oAuthToken` member to the **singleSignOnMode** enumeration.",
+          "Target": "singleSignOnMode"
+        }
+      ],
+      "Id": "b1bc594e-31eb-4773-a14b-0048cb782f24",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-30T22:29:56.4129094Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+     },	  
+     {
+      "ChangeList": [
+        {
           "Id": "7e11383c-72a9-465a-970d-471360f95418",
           "ApiChange": "Resource",
           "ChangedApiName": "servicePrincipalLockConfiguration",
