@@ -144,7 +144,7 @@ If you're upgrading from the preview modules, run `Install-Module` with `AllowCl
 
 The [Microsoft Graph Python SDK (preview)](https://github.com/microsoftgraph/msgraph-sdk-python) is available on [PyPI](https://pypi.org/).
 
-```Shell
+```py
 pip install msgraph-sdk
 ```
 
