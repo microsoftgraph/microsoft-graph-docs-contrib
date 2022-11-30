@@ -54,22 +54,22 @@ Following are the location of the log path depending on your use case:
 
 1. Connector not hosted as a windows service:
 
-    _C:\Users\<User Account>\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log_
+    _**C:\Users\<User Account>\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log**_
 
 2. Connector hosted as a windows service under Local System account:
 
-    _C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log_
+    _**C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log**_
 
 3. Connector hosted as a windows service under virtual account:
 
-    _C:\Windows\ServiceProfiles\<Network Service Name>\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log_
+    _**C:\Windows\ServiceProfiles\<Network Service Name>\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log**_
 
 4. Connector hosted as a windows service under Local Service account:
 
-    _C:\WINDOWS\ServiceProfiles\LocalService\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log_
+    _**C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log**_
 
 >[!Note]
->- GraphConnectorsTemplate v2.1 and above supports storing logs for connectors hosted as a windows service.
+>- **GraphConnectorsTemplate v2.1** and above supports storing logs for connectors hosted as a windows service.
 >- Make sure you provide a unique connector name in the **ConnectorServer.cs** file to ensure logs for each unique connector are stored separately.
 
 ## Errors with hosting a connector as a Windows service
