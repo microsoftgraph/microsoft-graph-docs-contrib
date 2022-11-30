@@ -248,6 +248,12 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-create.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-create.md)]
+
 ---
 
 ## Updating an existing entity with PATCH
@@ -275,6 +281,12 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-update.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-update.md)]
 
 ---
 
