@@ -27,11 +27,19 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+Token lifetime policies can be assigned to both applications and service principals.
 
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/tokenLifetimePolicies
+
+GET /applications(appId='{appId}')/tokenLifetimePolicies
+
 GET /servicePrincipals/{id}/tokenLifetimePolicies
+
+GET /servicePrincipals(appId='{appId}')/tokenLifetimePolicies
 ```
 
 ## Request headers

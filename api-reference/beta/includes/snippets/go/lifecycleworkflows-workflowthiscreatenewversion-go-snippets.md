@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCreateNewVersionPostRequestBody()
-workflow := graphmodels.Newworkflow()
+workflow := graphmodels.NewWorkflow()
 description := "Configure new hire tasks for onboarding employees on their first day"
 workflow.SetDescription(&description) 
 displayName := "Global onboard new hire employee"

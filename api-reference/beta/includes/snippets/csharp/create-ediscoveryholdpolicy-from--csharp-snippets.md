@@ -10,7 +10,6 @@ var ediscoveryHoldPolicy = new Microsoft.Graph.Security.EdiscoveryHoldPolicy
 {
 	Displayname = "My legalHold with sources",
 	Description = "Created from Graph API",
-	ContentQuery = "Bazooka",
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"userSources@odata.bind", "[{\"@odata.type\":\"microsoft.graph.security.userSource\",\"email\":\"SalesTeam@M365x809305.OnMicrosoft.com\"}]"},

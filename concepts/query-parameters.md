@@ -19,7 +19,7 @@ Query parameters can be [OData system query options](http://docs.oasis-open.org/
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
 > [!div class="nextstepaction"]
-> [Learn: Optimize data usage when using Microsoft Graph with query parameters](/learn/modules/optimize-data-usage)
+> [Training module: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)
 
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query] and are supported in only GET operations.
@@ -223,10 +223,9 @@ For example, the following request returns events for the user sorted by date cr
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-> [!NOTE]
-> Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
->
-> The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
+Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
+
+[Directory objects](/graph/api/resources/directoryobject) such as **user**, **group**, and **application** don't support `$skip`.
 
 ## skipToken parameter
 
@@ -240,7 +239,7 @@ The `$skiptoken` parameter contains an opaque token that references the next pag
 
 ## top parameter
 
-Use the `$top` query parameter to specify the page size of the result set. 
+Use the `$top` query parameter to specify the number of items to be included in the result.
 
 If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 

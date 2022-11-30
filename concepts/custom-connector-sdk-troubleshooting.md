@@ -28,9 +28,9 @@ When the connector needs to run on a different port, you need to update the port
 
 If you notice connection failures after upgrading from a GCA version 1.8.0.0 or lower, follow the following steps:
 
-1. Repair the updated GCA through Control panel: Open Control panel > Programs and features > Select **Graph connector agent** from the list of programs and click on **Repair**.
+1. Open the GCA Control panel. In **Programs and features**, select **Graph connector agent** from the list of programs, and choose **Repair**.
 2. Update the new port map file configuration with the previous configurations.
-3. Resume any failed connections from Microsoft 365 Admin Center.
+3. Resume any failed connections from Microsoft 365 admin center.
 
 ## Connector service is unavailable
 
@@ -98,9 +98,9 @@ If the service fails to start, check the event viewer error logs. Open the event
 
 ## More help
 
-You may raise any [issues](https://github.com/microsoftgraph/msgraph-connectors-sdk/issues) or start a [discussion](https://github.com/microsoftgraph/msgraph-connectors-sdk/discussions) on relevant topics through our GitHub repository.
+If you need more help troubleshooting an issue, you can raise an [issue](https://github.com/microsoftgraph/msgraph-connectors-sdk/issues) or start a [discussion](https://github.com/microsoftgraph/msgraph-connectors-sdk/discussions) on relevant topics through our GitHub repository.
 
-You may also reach out to the [Microsoft Graph Connectors team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) for more help and troubleshooting.
+You can also reach out to the [Microsoft Graph Connectors team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) for more help and troubleshooting.
 
 ## See also
 

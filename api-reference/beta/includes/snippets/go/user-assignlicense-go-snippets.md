@@ -11,22 +11,21 @@ requestBody := graphmodels.NewAssignLicensePostRequestBody()
 
 
 assignedLicense := graphmodels.NewAssignedLicense()
-additionalData := map[string]interface{}{
-	disabledPlans := []string {
-		"8a256a2b-b617-496d-b51b-e76466e88db0",
+disabledPlans := []string {
+ := uuid.MustParse("8a256a2b-b617-496d-b51b-e76466e88db0")
+assignedLicense.Set(&) 
 
-	}
-	"skuId" : "84a661c4-e949-4bd2-a560-ed7766fcaf2b", 
 }
-assignedLicense.SetAdditionalData(additionalData)
+assignedLicense.SetDisabledPlans(disabledPlans)
+skuId := uuid.MustParse("84a661c4-e949-4bd2-a560-ed7766fcaf2b")
+assignedLicense.SetSkuId(&skuId) 
 assignedLicense1 := graphmodels.NewAssignedLicense()
-additionalData := map[string]interface{}{
-	disabledPlans := []graphmodels.able {
+disabledPlans := []string {
 
-	}
-	"skuId" : "f30db892-07e9-47e9-837c-80727f46fd3d", 
 }
-assignedLicense1.SetAdditionalData(additionalData)
+assignedLicense1.SetDisabledPlans(disabledPlans)
+skuId := uuid.MustParse("f30db892-07e9-47e9-837c-80727f46fd3d")
+assignedLicense1.SetSkuId(&skuId) 
 
 addLicenses := []graphmodels.AssignedLicenseable {
 	assignedLicense,

@@ -18,25 +18,17 @@ accessDetails := graphmodels.NewDelegatedAdminAccessDetails()
 
 
 unifiedRole := graphmodels.NewUnifiedRole()
-additionalData := map[string]interface{}{
-	"roleDefinitionId" : "29232cdf-9323-42fd-ade2-1d097af3e4de", 
-}
-unifiedRole.SetAdditionalData(additionalData)
+roleDefinitionId := "29232cdf-9323-42fd-ade2-1d097af3e4de"
+unifiedRole.SetRoleDefinitionId(&roleDefinitionId) 
 unifiedRole1 := graphmodels.NewUnifiedRole()
-additionalData := map[string]interface{}{
-	"roleDefinitionId" : "f2ef992c-3afb-46b9-b7cf-a126ee74c451", 
-}
-unifiedRole1.SetAdditionalData(additionalData)
+roleDefinitionId := "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+unifiedRole1.SetRoleDefinitionId(&roleDefinitionId) 
 unifiedRole2 := graphmodels.NewUnifiedRole()
-additionalData := map[string]interface{}{
-	"roleDefinitionId" : "729827e3-9c14-49f7-bb1b-9608f156bbb8", 
-}
-unifiedRole2.SetAdditionalData(additionalData)
+roleDefinitionId := "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+unifiedRole2.SetRoleDefinitionId(&roleDefinitionId) 
 unifiedRole3 := graphmodels.NewUnifiedRole()
-additionalData := map[string]interface{}{
-	"roleDefinitionId" : "3a2c62db-5318-420d-8d74-23affee5d9d5", 
-}
-unifiedRole3.SetAdditionalData(additionalData)
+roleDefinitionId := "3a2c62db-5318-420d-8d74-23affee5d9d5"
+unifiedRole3.SetRoleDefinitionId(&roleDefinitionId) 
 
 unifiedRoles := []graphmodels.UnifiedRoleable {
 	unifiedRole,
