@@ -39,6 +39,12 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-read.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-read.md)]
+
 ---
 
 ## Use $select to control the properties returned
@@ -67,6 +73,12 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-select.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-select.md)]
 
 ---
 
