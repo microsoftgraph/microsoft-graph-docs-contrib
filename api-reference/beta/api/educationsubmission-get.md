@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a particular [submission](../resources/educationsubmission.md).
+Retrieve a particular [submission](../resources/educationsubmission.md). This operation can be performed by either teacher or student.
 
 A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent this work.
 

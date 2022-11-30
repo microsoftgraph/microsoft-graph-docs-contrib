@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a SharePoint folder to upload files for a given [educationAssignment](../resources/educationassignment.md). This operation can only be performed if the role of the user in the class is teacher.
+Create a SharePoint folder to upload files for a given [educationAssignment](../resources/educationassignment.md). This operation can only be performed by the teacher.
 
-The teacher determines the resources to upload in the assignment's folder. 
+The teacher determines the resources to upload in the assignment's folder.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

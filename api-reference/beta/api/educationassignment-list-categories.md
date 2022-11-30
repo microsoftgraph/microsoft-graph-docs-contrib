@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the categories associated with an [assignment](../resources/educationassignment.md). This operation can be performed with both the roles in the class either teacher or student.
+List all the categories associated with an [assignment](../resources/educationassignment.md). This operation can be performed by either teacher or student.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

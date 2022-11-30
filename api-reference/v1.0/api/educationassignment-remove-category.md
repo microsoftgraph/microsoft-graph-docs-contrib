@@ -11,8 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Remove an [educationCategory](../resources/educationcategory.md) from an [educationAssignment](../resources/educationassignment.md). This operation can only be performed if the role of the user in the class is teacher.
-
+Remove an [educationCategory](../resources/educationcategory.md) from an [educationAssignment](../resources/educationassignment.md). This operation can only be performed by the teacher.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

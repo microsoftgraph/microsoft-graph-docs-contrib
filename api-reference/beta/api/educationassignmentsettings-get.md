@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object. This operation can only be performed if the role of the user in the class is teacher.
+Read the properties and relationships of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object. This operation can only be performed by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

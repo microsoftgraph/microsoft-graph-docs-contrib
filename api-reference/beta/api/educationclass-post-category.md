@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md). This operation can only be performed if the role of the user in the class is teacher.
+Creates a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md). This operation can only be performed by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

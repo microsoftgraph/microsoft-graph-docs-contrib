@@ -12,7 +12,7 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Remove an [educationRubric](../resources/educationrubric.md) from an [educationAssignment](../resources/educationassignment.md).
-This method does not delete the rubric itself and can only be performed if the role of the user in the class is teacher.
+This method does not delete the rubric itself and can only be performed by the teacher.
 
 ## Permissions
 

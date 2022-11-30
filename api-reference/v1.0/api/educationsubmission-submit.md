@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Indicate that a student is done with the work and is ready to hand in the assignment. 
+Indicate that a student is done with the work and is ready to hand in the assignment. This operation can be performed by either teacher or student.
 
 This method changes the status of the submission from `working` to `submitted`. During the submit process, all the resources are copied to the **submittedResources** bucket. The teacher will be looking at the submitted resources list for grading.
 
