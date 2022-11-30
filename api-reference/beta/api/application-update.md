@@ -29,16 +29,20 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
-Replace `{applicationObjectId}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
+
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal. Replace `{applicationObjectId}` with the **id** for the application object.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/{applicationObjectId}
+PATCH /applications(appId='{appId}')
 ```
 
 To update the logo, use the PUT method as follows.
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /applications/{applicationObjectId}/logo
+PUT /applications(appId='{appId}')/logo
 ```
 
 ## Request headers
