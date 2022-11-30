@@ -1341,6 +1341,8 @@ items:
             href: api/synchronization-synchronizationschema-update.md
           - name: Reset schema
             href: api/synchronization-synchronizationschema-delete.md
+          - name: Parse attribute mapping expression
+            href: api/synchronization-synchronizationschema-parseexpression.md
           - name: Directory definition
             href: resources/synchronization-directorydefinition.md
             items:

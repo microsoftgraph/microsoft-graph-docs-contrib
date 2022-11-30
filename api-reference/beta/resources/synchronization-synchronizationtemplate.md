@@ -38,7 +38,7 @@ You can provide multiple templates for an application, and designate a default t
 |description    |String                     |Description of the template.|
 |discoverable   |String                     |`true` if this template should appear in the collection of templates available for the application instance (service principal).|
 |factoryTag     |String                     |One of the well-known factory tags supported by the synchronization engine. The **factoryTag** tells the synchronization engine which implementation to use when processing jobs based on this template.|
-|metadata       |metadataEntry collection   |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
+|metadata       |[metadataEntry](../resources/synchronization-metadataentry.md) collection  |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 
 ## Relationships
 | Relationship      | Type	    |Description|

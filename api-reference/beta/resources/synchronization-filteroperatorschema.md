@@ -19,10 +19,10 @@ Describes an operator that can be used in a [filter](synchronization-filter.md).
 
 | Property                   | Type                      | Description    |
 |:---------------------------|:--------------------------|:---------------|
-|arity                       |String          |Arity of the operator. Possible values are: `Binary`, `Unary`. The default is `Binary`.|
+|arity                       |scopeOperatorType          |Arity of the operator. Possible values are: `Binary`, `Unary`. The default is `Binary`.|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Possible values are: `All`, `Any`. Applies only to multivalued attributes. `All` means that all values must satisfy the condition. `Any` means that at least one value has to satisfy the condition. The default is `All`.|
 |name                        |String                     |Operator name. |
-|supportedAttributeTypes     |String collection         |Attribute types supported by the operator. Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
+|supportedAttributeTypes     |attributeType collection         |Attribute types supported by the operator. Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## JSON representation
 

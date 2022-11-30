@@ -30,12 +30,12 @@ Directory definitions are updated as part of the [synchronization schema](synchr
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
 |id           |String     |Directory identifier. Not nullable.|
-|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 |name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization-synchronizationschema.md). Not nullable.|
 |objects        |[objectDefinition](synchronization-objectdefinition.md) collection    |Collection of objects supported by the directory.|
+|readOnly|Boolean|**TODO: Add Description**|
 |version|String|Read only value that indicates version discovered. `null` if discovery has not yet occurred.|
 |discoveryDateTime|DateTimeOffset| Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|discoverabilities|directoryDefinitionDiscoverabilities| Read only value indicating what type of discovery the app supports. Possible values are: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
+|discoverabilities|directoryDefinitionDiscoverabilities| Read-only value indicating what type of discovery the app supports. The possible values are: `None`, `AttributeNames`, `AttributeDataTypes`, `AttributeReadOnly`, `ReferenceAttributes`, `UnknownFutureValue`. This is a multi-valued object.| 
 
 ## JSON representation
 
