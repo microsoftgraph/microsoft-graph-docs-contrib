@@ -1527,7 +1527,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "promote",
           "ChangeType": "Addition",
-          "Description": "Added the [promote](https://docs.microsoft.com/en-us/graph/api/promote?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/domain?view=graph-rest-1.0) resource.",
+          "Description": "Added the [promote](https://docs.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/domain?view=graph-rest-1.0) resource.",
           "Target": "domain"
         }
       ],
