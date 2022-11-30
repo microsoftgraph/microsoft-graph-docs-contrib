@@ -24,8 +24,6 @@ Schema extensions allow you to define a schema to extend and add strongly-typed 
 + [message](/graph/api/resources/message)
 + [organization](/graph/api/resources/organization)
 + [post](/graph/api/resources/post)
-+ [todoTask](/graph/api/resources/todotask)
-+ [todoTaskList](/graph/api/resources/todotasklist)
 
 Use this resource and associated methods to manage the [schema extension definitions](/graph/api/resources/schemaextension). To manage the schema extension data on the extended resource instance, use the same REST request that you use to manage the resource instance. See the [schema extension example](/graph/extensibility-schema-groups) to learn how to add custom data to groups.
 

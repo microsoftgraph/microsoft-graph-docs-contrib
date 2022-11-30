@@ -239,7 +239,7 @@ The `$skiptoken` parameter contains an opaque token that references the next pag
 
 ## top parameter
 
-Use the `$top` query parameter to specify the page size of the result set. 
+Use the `$top` query parameter to specify the number of items to be included in the result.
 
 If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 

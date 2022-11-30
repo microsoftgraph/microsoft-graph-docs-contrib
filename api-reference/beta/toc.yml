@@ -1749,47 +1749,29 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
-      - name: Records management (preview)
+      - name: Subject rights request
         items:
         - name: Overview
-          href: resources/security-recordsManagement-overview.md
-        - name: Retention label
-          href: resources/security-retentionlabel.md
+          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+        - name: Subject rights request
+          href: resources/subjectrightsrequest.md
           items:
           - name: List
-            href: api/security-retentionlabel-list.md
+            href: api/subjectrightsrequest-list.md
           - name: Create
-            href: api/security-retentionlabel-post.md
+            href: api/subjectrightsrequest-post.md
           - name: Get
-            href: api/security-retentionlabel-get.md
+            href: api/subjectrightsrequest-get.md
           - name: Update
-            href: api/security-retentionlabel-update.md
-          - name: Delete
-            href: api/security-retentionlabel-delete.md
-        - name: Retention event
-          href: resources/security-retentionevent.md
-          items:
-          - name: List
-            href: api/security-retentionevent-list.md
-          - name: Create
-            href: api/security-retentionevent-post.md
-          - name: Get
-            href: api/security-retentionevent-get.md
-          - name: Delete
-            href: api/security-retentionevent-delete.md
-        - name: Retention event type
-          href: resources/security-retentioneventtype.md
-          items:
-          - name: List
-            href: api/security-retentioneventtype-list.md
-          - name: Create
-            href: api/security-retentioneventtype-post.md
-          - name: Get
-            href: api/security-retentioneventtype-get.md
-          - name: Update
-            href: api/security-retentioneventtype-update.md
-          - name: Delete
-            href: api/security-retentioneventtype-delete.md
+            href: api/subjectrightsrequest-update.md
+          - name: Get final report
+            href: api/subjectrightsrequest-getfinalreport.md
+          - name: Get final attachment
+            href: api/subjectrightsrequest-getfinalattachment.md
+          - name: List notes
+            href: api/subjectrightsrequest-list-notes.md
+          - name: Create note
+            href: api/subjectrightsrequest-post-notes.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -1927,7 +1909,7 @@ items:
     - name: Device and app management
       expanded: true
       items:
-      - name: Browser management
+      - name: Browser management (preview)
         displayName: Edge, Internet Explorer, IE mode, site list
         items:
         - name: Overview
@@ -15300,7 +15282,7 @@ items:
             href: api/security-ediscoverycase-delete-searches.md
           - name: Estimate statistics
             href: api/security-ediscoverysearch-estimatestatistics.md
-          - name: Purge data (preview)
+          - name: Purge data
             href: api/security-ediscoverysearch-purgedata.md
           - name: List custodian sources
             href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15449,6 +15431,47 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Records management (preview)
+        items:
+        - name: Overview
+          href: resources/security-recordsManagement-overview.md
+        - name: Retention label
+          href: resources/security-retentionlabel.md
+          items:
+          - name: List
+            href: api/security-retentionlabel-list.md
+          - name: Create
+            href: api/security-retentionlabel-post.md
+          - name: Get
+            href: api/security-retentionlabel-get.md
+          - name: Update
+            href: api/security-retentionlabel-update.md
+          - name: Delete
+            href: api/security-retentionlabel-delete.md
+        - name: Retention event
+          href: resources/security-retentionevent.md
+          items:
+          - name: List
+            href: api/security-retentionevent-list.md
+          - name: Create
+            href: api/security-retentionevent-post.md
+          - name: Get
+            href: api/security-retentionevent-get.md
+          - name: Delete
+            href: api/security-retentionevent-delete.md
+        - name: Retention event type
+          href: resources/security-retentioneventtype.md
+          items:
+          - name: List
+            href: api/security-retentioneventtype-list.md
+          - name: Create
+            href: api/security-retentioneventtype-post.md
+          - name: Get
+            href: api/security-retentioneventtype-get.md
+          - name: Update
+            href: api/security-retentioneventtype-update.md
+          - name: Delete
+            href: api/security-retentioneventtype-delete.md
       - name: Secure score
         href: resources/securescores.md
         items:
