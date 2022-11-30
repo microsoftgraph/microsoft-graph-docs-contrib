@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 # ediscoverySearch: purgeData
 Namespace: microsoft.graph.security
 
-Permanently delete Microsoft Teams messages contained in a [eDiscovery search](../resources/security-ediscoverysearch.md).
+Permanently delete Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 >**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
 
@@ -58,8 +58,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|purgeType|microsoft.graph.security.purgeType| Options that control whether to the action is soft delete or hard delete. Possible values are `recoverable`, `permanentlydeleted`,`unknownFutureValue`. |
-|purgeAreas|microsoft.graph.security.purgeAreas| Option to define the locations to be in scope of the purge action. Possible values are: `mailboxes`, `teamsMessages`,`unknownFutureValue`. |
+|purgeType|microsoft.graph.security.purgeType| Options that control whether the action is soft delete or hard delete. Possible values are `recoverable`, `permanentlydeleted`, `unknownFutureValue`. |
+|purgeAreas|microsoft.graph.security.purgeAreas| Option to define the locations to be in scope of the purge action. Possible values are: `mailboxes`, `teamsMessages`, `unknownFutureValue`. |
 
 ## Response
 
