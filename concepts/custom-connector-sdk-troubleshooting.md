@@ -46,11 +46,37 @@ If you see any RPC errors during the communication between the Microsoft Graph c
 
 If the error code is **Unknown**, there's likely an unhandled exception in your connector code. Make sure that you send a response with success/failure operation status in all cases.
 
+## Locating the Log file for your custom connector
+
+If you're using the [GraphConnectorsTemplate](https://marketplace.visualstudio.com/items?itemName=ms-graph-connectors.graphConnectors) to develop your custom connector, the AppData folder of the current user account is used to store logs by default. You can also provide an absolute path for storing logs in the **ConnectorServer.cs** file of the template. The user account should have access to the absolute path you've provided.
+
+Following are the location of the log path depending on your use case:
+
+1. Connector not hosted as a windows service:
+
+    _C:\Users\<User Account>\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log_
+
+2. Connector hosted as a windows service under Local System account:
+
+    _C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log_
+
+3. Connector hosted as a windows service under virtual account:
+
+    _C:\Windows\ServiceProfiles\<Network Service Name>\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log_
+
+4. Connector hosted as a windows service under Local Service account:
+
+    _C:\WINDOWS\ServiceProfiles\LocalService\AppData\Local\Microsoft\<Connector Name>\Logs\ConnectorLog.log_
+
+>[!Note]
+>- GraphConnectorsTemplate v2.1 and above supports storing logs for connectors hosted as a windows service.
+>- Make sure you provide a unique connector name in the **ConnectorServer.cs** file to ensure logs for each unique connector are stored separately.
+
 ## Errors with hosting a connector as a Windows service
 
 ### Service failed to start due to Access denied error
 
-Use the following steps to make sure that the path of the executable is accessible to the LocalSystem account.
+Use the following steps to make sure that the path of the executable is accessible to the LocalService account.
 
 1. Right-click the folder that contains the executable and choose **Properties**.
 

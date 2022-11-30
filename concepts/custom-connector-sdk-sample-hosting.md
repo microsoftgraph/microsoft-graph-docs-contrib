@@ -62,6 +62,7 @@ Use the following steps to host the connector as a Windows service:
             public Worker(ILogger<Worker> logger)
             {
                 var server = new ConnectorServer();
+                server.StartLogger();
                 server.Start();
             }
     
@@ -115,7 +116,7 @@ Use the following steps to host the connector as a Windows service:
     $ExePath = "<Full path of CustomConnectorWorkerService.exe from above build>"
     # Create a service with the given executable. This just creates an entry for this service.
     sc.exe create $ServiceName binPath="$ExePath" start="delayed-auto"
-    # Set the service to run under a virtual account NT Service\<ServiceName>. Optionally skip this step to run the service under LOCAL SERVICE account
+    # Set the service to run under a virtual account NT Service\<ServiceName>. Optionally skip this step to run the service under LOCAL SYSTEM account
     sc.exe config $ServiceName obj="NT Service\$ServiceName"
     # Restarts service after 5 minutes on first, second and third failures and resets error after 1 day
     sc.exe failureflag $ServiceName 1
@@ -125,7 +126,8 @@ Use the following steps to host the connector as a Windows service:
     ```
 
     >[!Note]
-    >The service name must be unique for each unique connector.
+    >- The service name must be unique for each unique connector.
+    >- Refer [Service User Accounts](/windows/win32/services/service-user-accounts) to understand more about Service User Accounts
 
 13. Open services.msc and verify that the service is running.
 
