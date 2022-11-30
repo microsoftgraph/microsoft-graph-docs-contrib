@@ -146,6 +146,12 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-index.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-index.md)]
+
 ---
 
 ## Use $expand to access related entities
@@ -174,6 +180,12 @@ You can use the `$expand` filter to request a related entity, or collection of e
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-expand.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-expand.md)]
+
 ---
 
 ## Delete an entity
@@ -201,6 +213,12 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-delete.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-delete.md)]
 
 ---
 
