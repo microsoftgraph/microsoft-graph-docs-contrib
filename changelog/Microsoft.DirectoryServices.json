@@ -301,6 +301,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b1b69af7-630f-4183-a152-ebffa1a4bf27",
+          "ApiChange": "Property",
+          "ChangedApiName": "appId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta) using the application **appId** as the alternate key. You can now address an application via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Target": "application"
+        }
+      ],
+      "Id": "b1b69af7-630f-4183-a152-ebffa1a4bf27",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-29T00:00:00.077762Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
           "ApiChange": "Property",
           "ChangedApiName": "squareLogoDark",
