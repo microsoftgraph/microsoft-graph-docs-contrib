@@ -110,6 +110,12 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-list.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-list.md)]
+
 ---
 
 The object returned when retrieving a list of entities is likely to be a paged collection. For details about how to get the complete list of entities, see [paging through a collection](../paging.md).
