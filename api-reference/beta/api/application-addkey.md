@@ -37,10 +37,11 @@ Applications that don’t have any existing valid certificates (no certificates 
 
 ## HTTP request
 
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /applications/{id}/addKey
+POST /applications(appId='{appId}')/addKey
 ```
 
 ## Request headers

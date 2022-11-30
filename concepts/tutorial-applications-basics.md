@@ -1,15 +1,15 @@
 ---
-title: "Create and manage an Azure AD application using Microsoft Graph"
-description: "Learn how to use the applications API in Microsoft Graph to manage your applications."
+title: "Manage an Azure AD application using Microsoft Graph"
+description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
 ---
 
-# Create and manage an Azure AD application
+# Manage an Azure AD application using Microsoft Graph
 
-Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure AD or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
+Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
 
 Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you'll learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
 
@@ -18,7 +18,7 @@ Many settings for apps are recorded as objects that can be accessed, updated, or
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in an _Application Administrator_ role or a user allowed to create and manage applications in the tenant.
++ Sign in to [Graph Explorer](https://aka.ms/ge) as a user in an _Application Administrator_ role or a user allowed to create and manage applications in the tenant.
 
 ## Register an application with Azure AD
 
@@ -531,6 +531,71 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+## Create app roles
+
+### Create app roles on an application object
+
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/bbd46130-e957-4c38-a116-d4d02afd1057
+Content-Type: application/json
+
+{
+    "appRoles": [
+        {
+            "allowedMemberTypes": [
+                "User",
+                "Application"
+            ],
+            "description": "Survey.Read",
+            "displayName": "Survey.Read",
+            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
+            "isEnabled": false,
+            "origin": "Application",
+            "value": "Survey.Read"
+        }
+    ]
+}
+```
+
+
+### Create app roles on a service principal object
+
+When updating the appRoles in a service principal, you can only add to or update the existing collection. You cannot use this method to delete an appRole whose origin is the backing application. Therefore, the service principal can expose more, but not less, appRoles than the backing application.
+
+In the following request, the `Survey.Read` appRole originates from the application object.
+
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7
+Content-Type: application/json
+
+{
+    "appRoles": [
+        {
+            "allowedMemberTypes": [
+                "User"
+            ],
+            "description": "Survey.ReadWrite.All",
+            "displayName": "Survey.ReadWrite.All",
+            "id": "3ce57053-0ebf-42d8-bf7c-74161a450e4b",
+            "isEnabled": true,
+            "value": "Survey.ReadWrite.All"
+        },
+        {
+            "allowedMemberTypes": [
+                "User",
+                "Application"
+            ],
+            "description": "Survey.Read",
+            "displayName": "Survey.Read",
+            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
+            "isEnabled": false,
+            "origin": "Application",
+            "value": "Survey.Read"
+        }
+    ]
+}
+```
 
 ## Manage application ownership
 
