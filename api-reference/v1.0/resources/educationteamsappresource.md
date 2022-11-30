@@ -1,7 +1,7 @@
 ---
 title: "educationTeamsAppResource resource type"
 description: "Corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications."
-author: "adarshgh"
+author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
