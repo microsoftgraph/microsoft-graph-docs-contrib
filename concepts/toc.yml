@@ -153,22 +153,23 @@ items:
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
-      - name: Change notifications (subscriptions)
+      - name: Change notifications
         items: 
           - name: Overview
             href: webhooks.md
-            displayName: change notifications, webhooks, Azure Event Hubs, Azure Event Grids
-          - name: Missing change notifications
-            href: webhooks-lifecycle.md
-          - name: Notifications with resource data
-            href: webhooks-with-resource-data.md
-          - name: Get notifications delivered different ways
+            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+          - name: "Training module: Change notifications tutorial"
+            href: /training/modules/msgraph-changenotifications-trackchanges
+          - name: Change notifications through webhooks
+          - name: Change notifications through Azure Event Hubs
             href: change-notifications-delivery.md
+          - name: Lifecycle notifications for subscriptions
+            href: webhooks-lifecycle.md
+          - name: Notifications with resource data (rich notifications)
+            href: webhooks-with-resource-data.md
           - name: Tutorials
-            displayName: change notifications, webhooks
+            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
             items:
-            - name: "Training module: Change notifications tutorial"
-              href: /training/modules/msgraph-changenotifications-trackchanges
             - name: Change notifications for cloud printing
               href: universal-print-webhook-notifications.md
             - name: Change notifications for Microsoft Teams resources
@@ -192,7 +193,7 @@ items:
         items:
           - name: Overview
             href: delta-query-overview.md
-            displayName: Delta query, change tracking
+            displayName: Delta query, change tracking, polling
           - name: Get changes to events (example)
             href: delta-query-events.md
           - name: Get changes to groups (example)
@@ -742,10 +743,10 @@ items:
                 href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
-            displayName: change notifications, webhooks, Azure Event Hubs, Azure Event Grids
+            displayName: rich notifications, basic notifications, webhooks, Azure Event Hubs, Azure Event Grids
             href: webhooks.md
           - name: Change tracking
-            displayName: delta query
+            displayName: delta query, polling
             href: delta-query-overview.md
           - name: Add custom data
             displayName: directory extensions, schema extensions, open extensions, extension attributes

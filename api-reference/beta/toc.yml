@@ -65,7 +65,7 @@ items:
         displayName: throttling
         href: /training/modules/optimize-network-traffic
     - name: Change notifications
-      displayName: change notifications, webhooks, Azure Event Hubs, Azure Event Grids
+      displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
       href: /graph/webhooks?context=graph/api/beta
     - name: Change tracking
       displayName: delta query
