@@ -1,5 +1,23 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "9bc3c118-c0b7-43ed-8fa8-679f566fea64",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationTeamsAppResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationTeamsAppResource](https://docs.microsoft.com/en-us/graph/api/resources/educationteamsappresource?view=graph-rest-1.0) resource type.",
+          "Target": "educationTeamsAppResource"
+        }
+      ],
+      "Id": "9bc3c118-c0b7-43ed-8fa8-679f566fea64",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-01T14:48:15.2227943Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
      {
       "ChangeList": [
         {
