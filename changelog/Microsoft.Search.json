@@ -1431,7 +1431,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Acronym.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `Acronym.Read.All` to the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
+          "Description": "Added support for the delegated permission of `Acronym.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
           "Target": "query"
         },
         {
@@ -1439,7 +1439,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Bookmark.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
+          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
           "Target": "query"
         },
         {
@@ -1447,7 +1447,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Chat.Read",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `Chat.Read` to the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
+          "Description": "Added support for the delegated permission of `Chat.Read` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
           "Target": "query"
         },
         {
@@ -1455,7 +1455,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "ChannelMessage.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `ChannelMessage.Read.All` to the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
+          "Description": "Added support for the delegated permission of `ChannelMessage.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
           "Target": "query"
         }
       ],
@@ -1473,7 +1473,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Acronym.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `Acronym.Read.All` to the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
+          "Description": "Added support for the delegated permission of `Acronym.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
           "Target": "query"
         },
         {
@@ -1481,7 +1481,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Bookmark.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
+          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
           "Target": "query"
         },
         {
@@ -1489,7 +1489,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Chat.Read",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `Chat.Read` to the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
+          "Description": "Added support for the delegated permission of `Chat.Read` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
           "Target": "query"
         },
         {
@@ -1497,7 +1497,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "ChannelMessage.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `ChannelMessage.Read.All` to the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
+          "Description": "Added support for the delegated permission of `ChannelMessage.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
           "Target": "query"
         }
       ],
