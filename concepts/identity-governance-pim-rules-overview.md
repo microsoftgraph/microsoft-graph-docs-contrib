@@ -3,13 +3,13 @@ title: "Overview of rules for Azure AD roles in privileged identity management (
 description: "Learn how Azure AD rules in PIM are structures in Microsoft Graph and how they map with Azure portal descriptions."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
-ms.topic: how-to
+ms.topic: conceptual
 ms.prod: "governance"
 ---
 
 # Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph
 
-In Privileged Identity Management, each Azure AD role has settings that can fall in one of three categories: Activation settings, assignment settings, and notification settings. Such settings include whether multifactor authentication (MFA) is required to activate an eligible role, or whether you can create permanent assignments or eligibilities for principals to the role, or who gets PIM notifications.
+In Privileged Identity Management, each Azure AD role has settings that can fall in one of three categories: Activation settings, assignment settings, and notification settings. Such settings include whether multifactor authentication (MFA) is required to activate an eligible role, or whether you can create permanent assignments to the role.
 
 When using the [privileged identity management APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) in Microsoft Graph, these Azure AD settings are managed through policies and rules.
 
@@ -40,21 +40,21 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation-inline.png" alt-text="PIM role activation settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation-expanded.png":::
 
-| Number | Microsoft Graph Rule ID / Derived resource type                             | Azure Portal UX Description                                                                                                  | Caller   |
+| Number | Microsoft Graph Rule ID / Derived resource type                             | Azure portal UX Description                                                                                                  | Caller   |
 |--------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|----------|
 | 1      | `Enablement_EndUser_Assignment` / unifiedRoleManagementPolicyEnablementRule | Update justification and MFA requirements for active assignment.                                                             | End user |
 | 2      | `Approval_EndUser_Assignment` / unifiedRoleManagementPolicyApprovalRule     | Require approval to activate                                                                                                 | End user |
 | 3      | `Expiration_EndUser_Assignment` / unifiedRoleManagementPolicyExpirationRule | Activation maximum duration (hours)                                                                                          | End user |
-| 4      | `Enablement_Admin_Eligibility` / unifiedRoleManagementPolicyEnablementRule  | Require ticket information on activation<br/>Require justification on activation<br/>On activation, require: None, Azure MFA | Admin    |
+| 4      | `Enablement_Admin_Eligibility` / unifiedRoleManagementPolicyEnablementRule  | Require ticket information on activation<br/>Require justification on activation<br/>On activation, require: None, Azure AD Multi-Factor Authentication | Admin    |
 
 ## Assignment rules
 
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment-inline.png" alt-text="PIM role assignment settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment-expanded.png":::
 
-| Number | Microsoft Graph Rule ID / Derived resource type                             | Azure Portal UX Description                                                                                   | Caller   |
+| Number | Microsoft Graph Rule ID / Derived resource type                             | Azure portal UX Description                                                                                   | Caller   |
 |--------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|----------|
 | 5      | `Enablement_EndUser_Assignment` / unifiedRoleManagementPolicyExpirationRule | Update justification and MFA requirements for active assignment.                                              | End user |
-| 6      | `Enablement_Admin_Assignment` / unifiedRoleManagementPolicyExpirationRule   | Require Azure Multi-Factor Authentication on active assignment<br/>Require justification on active assignment | Admin    |
+| 6      | `Enablement_Admin_Assignment` / unifiedRoleManagementPolicyExpirationRule   | Require Azure MFA on active assignment<br/>Require justification on active assignment | Admin    |
 | 7      | `Expiration_Admin_Assignment` / unifiedRoleManagementPolicyExpirationRule   | Allow permanent active assignment<br/>Expire active assignments after                                         | Admin    |
 | 8      | `Expiration_Admin_Eligibility` / unifiedRoleManagementPolicyExpirationRule  | Allow permanent eligible assignment<br/>Expire eligible assignments after                                     | Admin    |
 
@@ -62,12 +62,12 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification-inline.png" alt-text="PIM role notification settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification-expanded.png":::
 
-| Number | Microsoft Graph Rule ID / Derived resource type                                           | Azure Portal UX Description                                                                                                   | Caller               |
+| Number | Microsoft Graph Rule ID / Derived resource type                                           | Azure portal UX Description                                                                                                   | Caller               |
 |--------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | 9      | `Notification_Approver_EndUser_Assignment` / unifiedRoleManagementPolicyNotificationRule  | Send notifications when eligible members activate this role: Request to approve an activation                                 | Approver             |
 | 10     | `Notification_Requestor_EndUser_Assignment` / unifiedRoleManagementPolicyNotificationRule | Send notifications when eligible members activate this role: Notification to activated user (requestor)                       | Requestor            |
 | 11     | `Notification_Admin_EndUser_Assignment` / unifiedRoleManagementPolicyNotificationRule     | Send notifications when eligible members activate this role: Role activation alert                                            | Admin                |
-| 12     | `Notification_Approver_Admin_Assignment` / unifiedRoleManagementPolicyNotificationRule    | Send notifications when members are assigned as eligible to this role: equest to approve a role assignment renewal/extension  | Approver             |
+| 12     | `Notification_Approver_Admin_Assignment` / unifiedRoleManagementPolicyNotificationRule    | Send notifications when members are assigned as eligible to this role: request to approve a role assignment renewal/extension  | Approver             |
 | 13     | `Notification_Requestor_Admin_Assignment` / unifiedRoleManagementPolicyNotificationRule   | Send notifications when members are assigned as active to this role: Notification to the assigned user (assignee)             | Assignee / Requestor |
 | 14     | `Notification_Admin_Admin_Assignment` / unifiedRoleManagementPolicyNotificationRule       | Send notifications when members are assigned as active to this role: Role assignment alert                                    | Admin                |
 | 15     | `Notification_Approver_Admin_Eligibility` / unifiedRoleManagementPolicyNotificationRule   | Send notifications when members are assigned as eligible to this role: Request to approve a role assignment renewal/extension | Approver             |

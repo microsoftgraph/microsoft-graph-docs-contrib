@@ -4,12 +4,12 @@ description: "Learn how to use the PIM API in Microsoft Graph to update Azure AD
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: "applications"
+ms.prod: "governance"
 ---
 
 # Use privileged identity management (PIM) APIs in Microsoft Graph to update Azure AD rules
 
-The following article provides examples for updating different rules that are assigned to Azure AD roles through privileged identity management. To understand the structure of role settings in PIM, see [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md).
+The following article provides examples for using Microsoft Graph APIs to update different rules that are assigned to Azure AD roles through Privileged Identity Management (PIM). To understand the structure of role settings in PIM, see [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md).
 
 When updating the rules, you must include the `@odata.type` for the derived type in the request body. For example, to update an activation rule of ID `Enablement_EndUser_Assignment`, you must include `"@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule"`.
 
@@ -19,14 +19,14 @@ If successful, all requests return `204 No Content` response codes.
 
 + Have an understanding of [privileged identity management APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) for managing Azure AD roles.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the *Global Administrator* or *Privileged Role Administrator* roles.
-+ Grant yourself the `RoleManagement.ReadWrite.Directory` delegated permission.
++ Grant yourself the `RoleManagementPolicy.ReadWrite.Directory` delegated permission.
 
 ## Example 1: Update the activation maximum duration
 
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Expiration_EndUser_Assignment`
-+ Description:
+<!--+ Description:-->
 
 <!-- {
   "blockType": "request",
@@ -59,7 +59,7 @@ Content-Type: application/json
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyEnablementRule](/graph/api/resources/unifiedrolemanagementpolicyenablementrule)
 + Microsoft Graph rule ID: `Enablement_EndUser_Assignment`
-+ Description:
+<!--+ Description:-->
 
 <!-- {
   "blockType": "request",
@@ -95,11 +95,12 @@ Content-Type: application/json
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyApprovalRule](/graph/api/resources/unifiedrolemanagementpolicyapprovalrule)
 + Microsoft Graph rule ID: `Approval_EndUser_Assignment`
-+ Description:
+<!--+ Description:-->
 
 <!--
-
-By default, the primaryApprovers and escalationApprovers are always blank. What's the default behavior? Do we call it out currently in docs?
+Questions/Issues:
+1. By default, the primaryApprovers and escalationApprovers are always blank. What's the default behavior - who gets to approve? Do we call it out currently in docs?
+2. I cannot set escalationApprovers. Request succeeds but escalationApprovers isn't populated.
 
 -->
 
@@ -131,22 +132,24 @@ Content-Type: application/json
         "isRequestorJustificationRequired": true,
         "approvalMode": "SingleStage",
         "approvalStages": [
-        {
-            "@odata.type": "microsoft.graph.unifiedApprovalStage",
-            "approvalStageTimeOutInDays": 1,
-            "isApproverJustificationRequired": true,
-            "escalationTimeInMinutes": 0,
-            "primaryApprovers": [
             {
-                "@odata.type": "microsoft.graph.singleUser",
-                "userId": "<insert approver user ID here",
-                "description": "DisplayName"
+                "@odata.type": "microsoft.graph.unifiedApprovalStage",
+                "approvalStageTimeOutInDays": 1,
+                "isApproverJustificationRequired": true,
+                "escalationTimeInMinutes": 0,
+                "primaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "userId": "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "groupId": "14f2746d-7d6f-4ac6-acd8-8cac318b041b"
+                    }
+                ],
+                "isEscalationEnabled": false,
+                "escalationApprovers": []
             }
-            ],
-            "isEscalationEnabled": false,
-            "escalationApprovers": []
-
-        }
         ]
     }
 }
@@ -157,7 +160,7 @@ Content-Type: application/json
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Expiration_Admin_Eligibility`
-+ Description:
+<!--+ Description:-->
 
 <!-- {
   "blockType": "request",
@@ -190,7 +193,7 @@ Content-Type: application/json
 + Category of rule: Assignment rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Expiration_Admin_Assignment`
-+ Description:
+<!--+ Description:-->
 
 <!-- {
   "blockType": "request",
@@ -223,6 +226,7 @@ Content-Type: application/json
 + Category of rule: Assignment rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Enablement_Admin_Assignment`
+<!--+ Description:-->
 
 <!-- {
   "blockType": "request",
