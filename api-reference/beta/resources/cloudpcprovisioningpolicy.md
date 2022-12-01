@@ -35,7 +35,7 @@ Represents a Cloud PC provisioning policy.
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy.|
 |domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory.|
-|enableSingleSignOn|Boolean|True if the provisioned Cloud PC can be accessed by single sign-on option, false if the provisioned Cloud PC don't support this feature. Default value is false. Through single sign-on, Windows 365 users can authenticate to Azure AD with passwordless options (like FIDO keys) to access their Cloud PC.|No|No|No|
+|enableSingleSignOn|Boolean|Describe the provisioned Cloud PC can be accessed by single sign-on option when TRUE, indicates the provisioned Cloud PC don't support this feature when FALSE, Default value is false. Through single sign-on, Windows 365 users can authenticate to Azure AD with passwordless options (like FIDO keys) to access their Cloud PC.|No|No|No|
 |gracePeriodInHours|Int32|The number of hours to wait before reprovisioning/deprovisioning happens. Read-only.|
 |id|String|Unique identifier for the Cloud PC provisioning policy. Read-only.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
