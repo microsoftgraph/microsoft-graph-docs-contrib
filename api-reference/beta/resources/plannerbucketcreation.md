@@ -11,12 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The resources that derive from plannerBucketCreation contains information about the origin of the [plannerBucket](plannerbucket.md). Apps do not need to know the origin of the bucket to be able to work with it; however, some apps can use the additional information to provide specific experiences around these buckets.
+The resources that derive from plannerBucketCreation contain information about the origin of the [plannerBucket](plannerbucket.md). Apps do not need to know the origin of the bucket to be able to work with it; however, some apps can use the additional information to provide specific experiences around these buckets. This is the abstract base type of [plannerExternalBucketSource](plannerExternalBucketSource.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the bucket is created with.|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the bucket is created with. The possible values are: `external`, `publication`.|
 
 ## Relationships
 None.
@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerBucketCreation",
-  "creationSourceKind": "plannerCreationSourceKind"
+  "creationSourceKind": "String-value"
 }
 ```
 

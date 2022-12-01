@@ -11,11 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains information about the relationship of a [plannerTask](plannerTask.md) to a user experience outside of Planner. Tasks in Planner can be surfaced in or synced with other experiences to track work in the context of that experience. Data in the plannerExternalTaskSource can be displayed in a user interface, used for sync information utilized by external services, or used to simply point to where a task was created in an external service.
+Contains information about the relationship of a [plannerTask](plannerTask.md) to a user experience outside of Planner. Tasks in Planner can be surfaced in or synced with other experiences to track work in the context of that experience. Data in the plannerExternalTaskSource can be displayed in a user interface, used for sync information utilized by external services, or used to simply point to where a task was created in an external service. This type derives from [plannerTaskCreation](plannerTaskCreation.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|teamsPublicationInfo|[plannerTeamsPublicationInfo](../resources/plannerteamspublicationinfo.md)|Information about the publication process that created this task. This field is deprecated and should not be used in this resource type. Inherited from [plannerTaskCreation](plannerTaskCreation.md).|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the task is created with. The possible values are: `external`, `publication`. Inherited from [plannerTaskCreation](plannerTaskCreation.md).|
 |contextScenarioId|String| Nullable. An identifier for the scenario associated with this external source. This will generally take the form of "com.contoso.myapp".|
 |displayLinkType|plannerExternalTaskSourceDisplayType| Specifies how an application should display the link to the associated plannerExternalTaskSource. The possible values are: `none`, `default`. |
 |externalObjectId|String| Nullable. The id of the entity that an external service associates with a task.|
@@ -36,14 +38,15 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.plannerExternalTaskSource",
-    "externalObjectId": "String-value",
-    "externalContextId": "String-value",
-    "contextScenarioId": "String-value",
-    "externalObjectVersion": "String-value",
-    "webUrl": "String-value",
-    "displayLinkType": "plannerExternalTaskSourceDisplayType value",
-    "displayNameSegments": "String Collection"
+  "@odata.type": "#microsoft.graph.plannerExternalTaskSource",
+  "creationSourceKind": "String-value",
+  "externalObjectId": "String-value",
+  "externalContextId": "String-value",
+  "contextScenarioId": "String-value",
+  "externalObjectVersion": "String-value",
+  "webUrl": "String-value",
+  "displayLinkType": "plannerExternalTaskSourceDisplayType value",
+  "displayNameSegments": "String Collection"
 }
 ```
 
