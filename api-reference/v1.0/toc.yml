@@ -4784,6 +4784,8 @@ items:
             href: api/domain-update.md
           - name: Verify domain
             href: api/domain-verify.md
+          - name: Promote domain
+            href: api/domain-promote.md
         - name: Organization
           href: resources/organization.md
           items:
