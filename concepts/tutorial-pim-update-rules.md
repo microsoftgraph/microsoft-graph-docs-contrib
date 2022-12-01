@@ -18,6 +18,8 @@ If successful, all requests return `204 No Content` response codes.
 ## Prerequisites
 
 + Have an understanding of [privileged identity management APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) for managing Azure AD roles.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the *Global Administrator* or *Privileged Role Administrator* roles.
++ Grant yourself the `RoleManagement.ReadWrite.Directory` delegated permission.
 
 ## Example 1: Update the activation maximum duration
 
