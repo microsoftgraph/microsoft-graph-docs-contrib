@@ -71,7 +71,7 @@ POST https://graph.microsoft.com/beta/policies/crossTenantIdentitySyncPolicy/par
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.crossTenantIdentitySyncPolicyPartner",
+  "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
   "tenantId": "String",
   "displayName": "String",
   "userSyncInbound": {
@@ -87,7 +87,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.crossTenantIdentitySyncPolicyPartner"
+  "@odata.type": "microsoft.graph.crossTenantIdentitySyncPolicyPartner"
 }
 -->
 ``` http
@@ -95,7 +95,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.crossTenantIdentitySyncPolicyPartner",
+  "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
   "tenantId": "String",
   "displayName": "String",
   "userSyncInbound": {
