@@ -111,34 +111,6 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
-    "setting": {
-        "isApprovalRequired": true,
-        "isApprovalRequiredForExtension": false,
-        "isRequestorJustificationRequired": true,
-        "approvalMode": "SingleStage",
-        "approvalStages": [
-            {
-                "approvalStageTimeOutInDays": 1,
-                "isApproverJustificationRequired": true,
-                "escalationTimeInMinutes": 0,
-                "primaryApprovers": [
-                    {
-                        "id": "14f2746d-7d6f-4ac6-acd8-8cac318b041b",
-                        "userType": "User",
-                        "isBackup": "false"
-                    }
-                ],
-                "isEscalationEnabled": true,
-                "escalationApprovers": [
-                    {
-                        "id": "8afc02cb-4d62-4dba-b536-9f6d73e9be26",
-                        "userType": "Group",
-                        "isBackup": "true"
-                    }
-                ]
-            }
-        ]
-    },
     "id": "Approval_EndUser_Assignment",
     "target": {
         "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget",
@@ -149,6 +121,31 @@ Content-Type: application/json
         "level": "Assignment",
         "inheritableSettings": [],
         "enforcedSettings": []
+    },
+    "setting": {
+        "@odata.type": "microsoft.graph.approvalSettings",
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "SingleStage",
+        "approvalStages": [
+        {
+            "@odata.type": "microsoft.graph.unifiedApprovalStage",
+            "approvalStageTimeOutInDays": 1,
+            "isApproverJustificationRequired": true,
+            "escalationTimeInMinutes": 0,
+            "primaryApprovers": [
+            {
+                "@odata.type": "microsoft.graph.singleUser",
+                "userId": "<insert approver user ID here",
+                "description": "DisplayName"
+            }
+            ],
+            "isEscalationEnabled": false,
+            "escalationApprovers": []
+
+        }
+        ]
     }
 }
 ```
