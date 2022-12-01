@@ -1,6 +1,32 @@
 {
     "changelog": [
         {
+            "ChangeList":[
+                {
+                    "Id":"11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
+                    "ApiChange":"Property",
+                    "ChangedApiName":"enableSingleSignOn",
+                    "ChangeType":"Addition",
+                    "Description":"Added the **enableSingleSignOn** property to [cloudPcOrganizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
+                    "Target":"cloudPcOrganizationSettings"
+                },
+                {
+                    "Id":"11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
+                    "ApiChange":"Property",
+                    "ChangedApiName":"enableSingleSignOn",
+                    "ChangeType":"Addition",
+                    "Description":"Added the **enableSingleSignOn** property to [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target":"cloudPcProvisioningPolicy"
+                }
+            ],
+            "Id":"11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
+            "Cloud":"Prod",
+            "Version":"beta",
+            "CreatedDateTime":"2022-11-30T08:30:16.9388044Z",
+            "WorkloadArea":"Devices and apps",
+            "SubArea":"Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
