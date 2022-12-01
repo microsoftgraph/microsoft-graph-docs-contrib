@@ -1462,7 +1462,7 @@
       "Id": "e74764a8-1ae4-4af8-8f71-4a29af0fe5ed",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2022-11-28T00:00:00",
+      "CreatedDateTime": "2022-12-01T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
     },
@@ -1504,7 +1504,7 @@
       "Id": "711a9d3d-7ef0-4b8a-a9c2-bbebbdea40d2",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-11-28T00:00:00",
+      "CreatedDateTime": "2022-12-01T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
     }
