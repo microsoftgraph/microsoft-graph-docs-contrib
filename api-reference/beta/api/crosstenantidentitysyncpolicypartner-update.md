@@ -55,7 +55,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigu
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -90,16 +90,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-  "tenantId": "String",
-  "displayName": "String",
-  "userSyncInbound": {
-    "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
