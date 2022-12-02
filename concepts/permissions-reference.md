@@ -417,8 +417,8 @@ None.
 
 #### Application
 
-* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Update the Planner plan configuration for a business scenario (`PATCH /solutions/businessScenarios(uniqueName='com.contoso.orderManagement')/planner/planConfiguration`)
-* _BusinessScenarioData.ReadWrite.OwnedBy_: Delete a Planner task in a business scenario (`DELETE /solutions/businessScenarios(uniqueName='com.contoso.sampleScenario')/planner/tasks(externalObjectId='Order#19922')`)
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Update the Planner plan configuration for a business scenario (`PATCH /solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration`)
+* _BusinessScenarioData.ReadWrite.OwnedBy_: Delete a Planner task in a business scenario (`DELETE /solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks/M60dlXLEkk-ZocLUTDvBSpcAGRaa`)
 
 ---
 

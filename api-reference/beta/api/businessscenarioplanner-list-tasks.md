@@ -53,7 +53,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all tasks for the scenario
+
+#### Request
 
 The following is an example of a request.
 <!-- {
@@ -66,7 +68,161 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks
 ```
 
-### Response
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.businessScenarioTask)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.businessScenarioTask",
+      "id": "657127e8-b792-bd90-d937-82b7465d1c11",
+      "createdBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "planId": "String",
+      "bucketId": "String",
+      "title": "String",
+      "orderHint": "String",
+      "assigneePriority": "String",
+      "percentComplete": "Integer",
+      "priority": "Integer",
+      "startDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "dueDateTime": "String (timestamp)",
+      "hasDescription": "Boolean",
+      "previewType": "String",
+      "completedDateTime": "String (timestamp)",
+      "completedBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "referenceCount": "Integer",
+      "checklistItemCount": "Integer",
+      "activeChecklistItemCount": "Integer",
+      "appliedCategories": {
+        "@odata.type": "microsoft.graph.plannerAppliedCategories"
+      },
+      "assignments": {
+        "@odata.type": "microsoft.graph.plannerAssignments"
+      },
+      "conversationThreadId": "String",
+      "creationSource": {
+        "@odata.type": "microsoft.graph.plannerTaskCreation"
+      },
+      "businessScenarioProperties": {
+        "@odata.type": "microsoft.graph.businessScenarioProperties"
+      },
+      "target": {
+        "@odata.type": "microsoft.graph.businessScenarioTaskTargetBase"
+      }
+    }
+  ]
+}
+```
+
+### Example 2: Get tasks associated with a specific externalContextId
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_businessscenariotask",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=businessScenarioProperties/externalContextId eq 'value'
+```
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.businessScenarioTask)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.businessScenarioTask",
+      "id": "657127e8-b792-bd90-d937-82b7465d1c11",
+      "createdBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "planId": "String",
+      "bucketId": "String",
+      "title": "String",
+      "orderHint": "String",
+      "assigneePriority": "String",
+      "percentComplete": "Integer",
+      "priority": "Integer",
+      "startDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "dueDateTime": "String (timestamp)",
+      "hasDescription": "Boolean",
+      "previewType": "String",
+      "completedDateTime": "String (timestamp)",
+      "completedBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "referenceCount": "Integer",
+      "checklistItemCount": "Integer",
+      "activeChecklistItemCount": "Integer",
+      "appliedCategories": {
+        "@odata.type": "microsoft.graph.plannerAppliedCategories"
+      },
+      "assignments": {
+        "@odata.type": "microsoft.graph.plannerAssignments"
+      },
+      "conversationThreadId": "String",
+      "creationSource": {
+        "@odata.type": "microsoft.graph.plannerTaskCreation"
+      },
+      "businessScenarioProperties": {
+        "@odata.type": "microsoft.graph.businessScenarioProperties"
+      },
+      "target": {
+        "@odata.type": "microsoft.graph.businessScenarioTaskTargetBase"
+      }
+    }
+  ]
+}
+```
+
+### Example 3: Get scenario tasks created in a specific group
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_businessscenariotask",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=location/microsoft.graph.businessScenarioGroupTarget/groupId eq 'group id'
+```
+
+#### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

@@ -50,6 +50,14 @@ Applications that own a business scenario can delete the scenario if they have t
 
 For more information, see [Delete businessScenario](../api/solutionsroot-delete-businessscenarios.md).
 
+## Common use cases
+
+| Use cases | REST resources | See also |
+|:----------|:---------------|:---------|
+|Create, read, update, and delete business scenarios|[businessScenario](businessscenario.md)|[Methods of businessScenario](businessscenario.md#methods)|
+|Configure business scenarios for Planner| [plannerPlanConfiguration](plannerplanconfiguration.md) [plannerTaskConfiguration](plannertaskconfiguration.md)|[Methods of plannerPlanConfiguration](plannerplanconfiguration.md#methods) [Methods of plannerTaskConfiguration](plannertaskconfiguration.md#methods)|
+|Create, read, update, and delete business scenario tasks in Planner| [businessScenarioTask](businessscenariotask.md)| [businessScenarioTask](businessscenariotask.md#methods)|
+
 ## What's new
 
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

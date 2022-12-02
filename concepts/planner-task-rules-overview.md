@@ -12,7 +12,7 @@ Rules allow customization of what can and can't be done on tasks, and the Planne
 
 Task property rules are represented by [plannerTaskPropertyRule](plannertaskpropertyrule.md) entity and describe the allowed actions at the task-level and rules around each configurable property.
 
-Depending on the specific entry has either a collection of values or a [fieldRules](plannerfieldrules.md) is specified. Field rules specify a collection of values as default, and provides separate collection of values for override conditions. For any collection of values, the specified values are what is allowed, omitted values will be disallowed.
+Depending on the specific entry, the rules specify either a collection of values or a [fieldRules](plannerfieldrules.md). Field rules specify a collection of values as default, and provides separate collection of values for override conditions. For any collection of values, the specified values are what is allowed, omitted values will be disallowed.
 
 In this article, you will learn the behaviors associated with each entry and the override conditions supported by each property.
 
