@@ -29,7 +29,8 @@ const application = {
         redirectUris: [
             'https://localhost'
         ]
-    }
+    },
+    appRoleAssignmentRequired: true
 };
 
 await client.api('/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/')
