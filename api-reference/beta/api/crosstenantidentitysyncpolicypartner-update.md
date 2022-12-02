@@ -45,6 +45,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigu
 
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |tenantId|String|**TODO: Add Description** Required.|

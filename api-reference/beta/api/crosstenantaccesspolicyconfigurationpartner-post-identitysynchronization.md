@@ -45,6 +45,7 @@ In the request body, supply a JSON representation of the [crossTenantIdentitySyn
 You can specify the following properties when creating a **crossTenantIdentitySyncPolicyPartner**.
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |tenantId|String|**TODO: Add Description** Required.|
