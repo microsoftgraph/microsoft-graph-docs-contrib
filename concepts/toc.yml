@@ -92,6 +92,8 @@ items:
             href: applications-concept-overview.md
           - name: Manage applications
             href: tutorial-applications-basics.md
+          - name: Validation differences for signInAudience
+            href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
           - name: Grant and revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
