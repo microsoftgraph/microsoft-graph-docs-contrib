@@ -38,6 +38,11 @@ redirectUris := []string {
 }
 web.SetRedirectUris(redirectUris)
 requestBody.SetWeb(web)
+additionalData := map[string]interface{}{
+	appRoleAssignmentRequired := true
+requestBody.SetAppRoleAssignmentRequired(&appRoleAssignmentRequired) 
+}
+requestBody.SetAdditionalData(additionalData)
 
 result, err := graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
 

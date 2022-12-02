@@ -26,6 +26,7 @@ $params = @{
 			"https://localhost"
 		)
 	}
+	AppRoleAssignmentRequired = $true
 }
 
 Update-MgApplication -ApplicationId $applicationId -BodyParameter $params

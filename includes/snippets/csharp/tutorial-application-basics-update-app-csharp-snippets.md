@@ -30,6 +30,10 @@ var application = new Application
 		{
 			"https://localhost"
 		}
+	},
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"appRoleAssignmentRequired", "true"}
 	}
 };
 
