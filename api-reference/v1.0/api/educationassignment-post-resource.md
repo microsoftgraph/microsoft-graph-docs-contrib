@@ -653,7 +653,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461","820371a1-4589-4a4a-8b40-9d5db94b9186"], 
-  "name": "create_educationTeamsAppResource_from_educationassignment"
+  "name": "create_educationTeamsAppResource_from_educationassignmentsApp"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/820371a1-4589-4a4a-8b40-9d5db94b9186/resources
@@ -678,7 +678,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationMediaResource"
+  "@odata.type": "microsoft.graph.educationTeamsAppResource"
 } -->
 ```http
 HTTP/1.1 201 Created
