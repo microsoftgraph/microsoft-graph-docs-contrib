@@ -207,7 +207,7 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
-    "enableSingleSignOn": "true",
+    "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
