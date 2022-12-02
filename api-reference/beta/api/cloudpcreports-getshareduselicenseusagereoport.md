@@ -1,7 +1,7 @@
 ---
 title: "cloudPcReports: getSharedUseLicenseUsageReport"
 description: "Get the Shared Use license usage reports, such as servicePlanId, licenseCount, claimedLicenseCount and so on, for Real time, 7 days or 28 days trend."
-author: "Rustem Bayetov (rbayetov)"
+author: "rbayetov"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
