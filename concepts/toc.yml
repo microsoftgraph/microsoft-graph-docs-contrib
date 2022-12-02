@@ -20,6 +20,34 @@ items:
           - name: API changelog
             href: https://developer.microsoft.com/graph/changelog
             displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
+      - name: Try the APIs
+        href: graph-explorer/graph-explorer-overview.md
+      - name: Quick start
+        href: https://developer.microsoft.com/graph/quick-start
+        displayName: quickstart
+      - name: Tutorials
+        items:
+          - name: Overview
+            href: tutorials.md
+            displayName: tutorials
+          - name: .NET
+            href: /graph/tutorials/dotnet
+          - name: Go
+            href: /graph/tutorials/go
+          - name: Java
+            href: /graph/tutorials/java
+          - name: JavaScript
+            href: /graph/tutorials/javascript
+          - name: PHP
+            href: /graph/tutorials/php
+          - name: Power Automate
+            href: /graph/tutorials/power-automate
+          - name: PowerShell
+            href: /graph/tutorials/powershell
+          - name: Python
+            href: /graph/tutorials/python
+          - name: TypeScript
+            href: /graph/tutorials/typescript
       - name: Users you can reach
         items:
           - name: Overview
@@ -29,46 +57,6 @@ items:
             href: deployments.md
           - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
-      - name: Quick start
-        href: https://developer.microsoft.com/graph/quick-start
-        displayName: quickstart
-      - name: Tutorials
-        items:
-          - name: Overview
-            href: tutorials.md
-            displayName: tutorials
-          - name: Delegated (user) auth
-            items:
-              - name: .NET
-                href: /graph/tutorials/dotnet
-              - name: Go
-                href: /graph/tutorials/go
-              - name: Java
-                href: /graph/tutorials/java
-              - name: JavaScript
-                href: /graph/tutorials/javascript
-              - name: PHP
-                href: /graph/tutorials/php
-              - name: Power Automate
-                href: /graph/tutorials/power-automate
-              - name: PowerShell
-                href: /graph/tutorials/powershell
-              - name: Python
-                href: /graph/tutorials/python
-              - name: TypeScript
-                href: /graph/tutorials/typescript
-          - name: App-only auth
-            items:
-              - name: .NET
-                href: /graph/tutorials/dotnet-app-only
-              - name: Java
-                href: /graph/tutorials/java-app-only
-              - name: JavaScript
-                href: /graph/tutorials/javascript-app-only
-              - name: PowerShell
-                href: /graph/tutorials/powershell-app-only
-              - name: TypeScript
-                href: /graph/tutorials/typescript-app-only
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -83,7 +71,7 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: Access user data
+          - name: "Training module: Access user data"
             href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
@@ -96,12 +84,16 @@ items:
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
-          - name: Manage group lifecycle
+          - name: "Training module: Manage group lifecycle"
             href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
             href: applications-concept-overview.md
+          - name: Manage applications
+            href: tutorial-applications-basics.md
+          - name: Validation differences for signInAudience
+            href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
           - name: Grant and revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
@@ -228,7 +220,7 @@ items:
       - name: Device and app management
         expanded: true
         items:
-          - name: Browser management
+          - name: Browser management (preview)
             href: browser-edge-concept-overview.md
             displayName: Edge, Internet Explorer, IE mode, site list
           - name: Cloud printing
@@ -528,6 +520,8 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
+          - name: Search interleaving results
+            href: search-concept-interleaving.md
       - name: Security
         items:
           - name: Overview
@@ -684,7 +678,7 @@ items:
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
-              - name: Optimize requests with query parameters
+              - name: "Training module: Optimize requests with query parameters"
                 displayName: OData query parameters, OData
                 href: /training/modules/optimize-data-usage
           - name: Batching
@@ -698,7 +692,7 @@ items:
               - name: Service-specific limits
                 displayName: throttling
                 href: throttling-limits.md
-              - name: Optimize network traffic
+              - name: "Training module: Optimize network traffic"
                 href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
@@ -706,7 +700,7 @@ items:
               - name: Overview
                 href: webhooks.md
                 displayName: change notifications, WebHooks, set up notifications for changes in resource data
-              - name: Change notifications tutorial
+              - name: "Training module: Change notifications tutorial"
                 href: /training/modules/msgraph-changenotifications-trackchanges
               - name: Missing change notifications
                 href: webhooks-lifecycle.md
@@ -780,6 +774,8 @@ items:
                     href: migrate-azure-ad-graph-property-differences.md
                   - name: Methods
                     href: migrate-azure-ad-graph-method-differences.md
+                  - name: Permissions
+                    href: migrate-azure-ad-graph-permissions-differences.md
               - name: "2: Examine API use"
                 href: migrate-azure-ad-graph-audit-api-use.md
               - name: "3: Review app details"
