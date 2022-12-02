@@ -1,6 +1,6 @@
 ---
 title: "azureDataLakeConnector resource type"
-description: "Representation of a way to connect data uploaded to an Azure Data Lake."
+description: "Represents a way to connect data uploaded to an Azure Data Lake."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representation of a way to connect data uploaded to an Azure Data Lake.
+Represents a way to connect data uploaded to an Azure Data Lake.
 
 Inherits from [fileDataConnector](../resources/industrydata-filedataconnector.md).
 
@@ -35,7 +35,7 @@ For more information:
 
 #### Get Data Connector List
 
-Retrieves the list of `industryDataAzureDataLakeConnector` to supply to the `getUploadSesion()`.
+Retrieves the list of `industryDataAzureDataLakeConnector` to supply to the `getUploadSession()`.
 
 #### Request an Upload Session
 

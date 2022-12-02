@@ -1,21 +1,21 @@
 ---
-title: "Overview"
-description: "Overview of industryData API."
+title: "Working with the industry data APIs in Microsoft Graph (preview)"
+description: "Industry data APIs power the Microsoft School Data Sync (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 from student information systems (SIS) / student management systems (SMS)."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: conceptual
 ---
 
-# Working with IndustryData APIs in Microsoft Graph
+# Working with the industry data APIs in Microsoft Graph (preview)
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-IndustryData APIs power [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure AD and Office 365 from Student Information Systems (SIS) / Student Management Systems (SMS).
+Industry data APIs power the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 from student information systems (SIS) / student management systems (SMS).
 
-Additionally IndustryData provides resources that you can use to retrieve statistics, after data is processed, and assist with monitoring and troubleshooting.
+Additionally, industry data provides resources that you can use to retrieve statistics, after data is processed, and assist with monitoring and troubleshooting.
 
 ## Overview
 
@@ -58,9 +58,9 @@ Insights & Analytics help provide analysis for student progress and activity wit
 
 For more information, see [Microsoft School Data Sync, pre-requisites, and core concepts](/schooldatasync/school-data-sync-overview.md) on the platform and architecture.
 
-## Registration, Permissions, and Authorization
+## Registration, permissions, and authorization
 
-IndustryData APIs can be integrated with 3rd party apps. To enable this integration, we recommend taking time to review the following articles.
+Industry data APIs can be integrated with 3rd party apps. To enable this integration, we recommend taking time to review the following articles.
 
 - [Explore the basics documentation](/graph/auth/auth-concepts.md)
 - [Learn how to add and register an application](/graph/auth-register-app-v2.md)
@@ -68,7 +68,7 @@ IndustryData APIs can be integrated with 3rd party apps. To enable this integrat
 - [Permissions via a consent process](/graph/permissions-reference.md)
 - [Steps to resolve common errors](/graph/resolve-auth-errors.md)
 
-_We'll be expanding out scopes that are specific to IndustryData, however until then IndustryData APIs support the existing Graph permissions noted below._
+_We have plans to expand out the scopes that are specific to industry data; however, until then the industry data APIs support the following existing Microsoft Graph permissions._
 
 | Permissions                     | Type            | Description                                                                         |
 | ------------------------------- | --------------- | ----------------------------------------------------------------------------------- |
@@ -79,13 +79,13 @@ _We'll be expanding out scopes that are specific to IndustryData, however until 
 
 ## Concepts
 
-IndustryData APIs powers School Data Sync which is a data transformation engine. It imports data sets in from external sources (SIS / SMS), transforms the data into a common data model, and then writes the transformed data to various external services, like users and groups to Azure AD, and ability to create a team based group.
+Industry data APIs power School Data Sync which is a data transformation engine. It imports data sets in from external sources (SIS / SMS), transforms the data into a common data model, and then writes the transformed data to various external services, like users and groups to Azure AD, and ability to create a team based group.
 
-The following articles are to help with some basics that are specific to IndustryData APIs.
+The following articles are to help with some basics that are specific to industry data APIs.
 
-### Data Domain
+### Data domain
 
-The `dataDomain` property defines the type of data being imported and determines the common data model format it will be stored in. Today the only supported `dataDomain` is _educationRostering_.
+The **dataDomain** property defines the type of data being imported and determines the common data model format it will be stored in. Today the only supported **dataDomain** is `educationRostering`.
 
 ### Reference Definitions
 
@@ -96,13 +96,13 @@ Each **referenceDefinition** uses a composite identifier of `{referenceType}-{co
 
 [Retrieving referenceDefinition](resources/industrydata-referencedefinition.md)
 
-### Reference Values
+### Reference values
 
 When the API requires the developer to provide a **referenceDefinition**, it uses a type derived from **industryDataReferenceValue**.
 
 The **industryDataReferenceValue** is designed to simplify selecting **[referenceDefinition](resources/industrydata-referencedefinition.md)** and to reduce developer configuration by only requiring the `code` value. The type of reference value is defined by the **industryDataReferenceValue** type, eliminating potential confusing as to which **referenceDefinition** a given property is expecting.
 
-#### Example Usage
+#### Example usage
 
 The `userMatchingSettings.sourceIdentifier` property takes a `industryDataIdentifierTypeReferenceValue` type. This is a `industryDataReferenceValue` type bound to a `RefIdentifierType` reference definition.
 
@@ -122,11 +122,11 @@ or binding the `industryDataReferenceDefinition` entity directly.
 },
 ```
 
-### Role Groups
+### Role groups
 
 Transformation of the data is often shaped by each individual user's role within an organization. These roles are defined as Reference Definitions. Given the number of potential roles, binding each role individual would result in a tedious user experience. [Role Groups](resources/industrydata-rolegroup.md) are simply a collection of Role values used to provide a convenient way to reference multiple reference definitions. The default role groups are _Students_ and _Staff_.
 
-#### Get the Staff role group
+#### Get the staff role group
 
 ```json
 {
@@ -147,14 +147,14 @@ Transformation of the data is often shaped by each individual user's role within
 
 ## Scenarios
 
-### Most Common
+### Most common
 
 The two most common scenarios are _Upload and Validate CSV Data_ and _Run Health and Monitoring_.
 
 - **[Upload and Validate CSV Data](resources/industrydata-azuredatalakeconnector.md)**
 - **[Run Health and Monitoring](resources/industrydata-industrydatarun.md)**
 
-### Other Scenarios
+### Other scenarios
 
 - **[Create Inbound Flow](resources/industrydata-inboundflow.md)**
 - **[Edit Inbound Flow](resources/industrydata-inboundflow.md)**

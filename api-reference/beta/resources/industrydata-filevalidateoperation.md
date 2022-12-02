@@ -15,13 +15,11 @@ Namespace: microsoft.graph.industryData
 
 Represents the asynchronous operation results from any operation that validates file data.
 
-Loop through the list to upload the latest CSVs in preperation for basic file validation.
+Loop through the list to upload the latest CSV files in preparation for basic file validation. Once the files have been uploaded, call `validate()` to validate the uploaded files and finalize the upload session. Once the files have been validated, they are moved to an internal container for processing by an `industryDataInboundFlow`.
 
-Once the files have been uploaded, call `validate()` to validate the uploaded files and finalize the upload session. Once the files have been validated, they are moved to an internal container for processing by an `industryDataInboundFlow`.
+The `validate()` action is a long-running operation. The link to the operation is returned in the `Location` header. Once the validation is complete, the results can be obtained through the `Location` URI.
 
-The `validate()` action is a long-running operation. The link to the operation is returned in the `Location` header. Once validation is complete, the results can be obtained through the `Location` URI.
-
-Recommend to poll no less than every 5 seconds while the status is 'in progress'.
+Recommend to poll no less than every 5 seconds while the status is `in progress`.
 
 Inherits from [validateOperation](../resources/industrydata-validateoperation.md).
 
