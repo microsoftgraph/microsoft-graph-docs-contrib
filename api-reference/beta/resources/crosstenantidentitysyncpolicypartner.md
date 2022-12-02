@@ -1,6 +1,6 @@
 ---
 title: "crossTenantIdentitySyncPolicyPartner resource type"
-description: "**TODO: Add Description**"
+description: "Cross-tenant synchronization policy for partners."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

@@ -1,6 +1,6 @@
 ---
 title: "crossTenantUserSyncInbound resource type"
-description: "**TODO: Add Description**"
+description: "Configuration for inbound user synchronization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
