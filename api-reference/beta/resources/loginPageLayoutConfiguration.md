@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.loginPageLayoutConfiguration",
-  "layoutTemplateType": "string",
+  "layoutTemplateType": "String",
   "isHeaderShown": "Boolean",
   "isFooterShown": "Boolean",
 }
