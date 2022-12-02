@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Get a deep direct link to the assignment.
 
-Education institutions have custom tools that are used for the students, user needs to provide a direct deep link to the assignment, so students can directly view more details or complete the given assignment.
+Education institutions have custom tools for students and users who need to obtain a deep direct link to the assignment, so students can directly view more details or complete a given assignment.
 
  > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
