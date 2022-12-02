@@ -13,10 +13,14 @@ ms.prod: "microsoft-teams"
 
 
 Update a [chatMessage](../resources/chatMessage.md) object. 
-With the exception of the **policyViolation** property, all properties of a **chatMessage** can be updated in delegated permissions scenarios.
+
+All properties of a **chatMessage** can be updated in delegated permissions scenarios, 
+except for read-only properties and the **policyViolation** property.
 Only the **policyViolation** property of a **chatMessage** can be updated in application permissions scenarios.
 
 The update only works for chats where members are Microsoft Teams users. If one of the participants is using Skype, the operation will fail.
+
+This method does not support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
@@ -201,7 +205,8 @@ Content-Type: application/json
   },
   "attachments": [],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -312,7 +317,8 @@ Content-Type: application/json
       }
     }
   ],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -410,7 +416,8 @@ Content-Type: application/json
     }
   ],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -611,6 +618,136 @@ Content-Type: application/json
           "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
           "displayName": null,
           "userIdentityType": "aadUser"
+        }
+      }
+    }
+  ],
+  "messageHistory": [
+    {
+      "modifiedDateTime": "2018-10-21T08:10:30.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "angry",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:32.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "laugh",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T02:17:14.67Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T02:34:40.3Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "4c9041b7-449a-40f7-8855-56da239b9fd1",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:25.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:31.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "heart",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:33.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "sad",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:34.489Z",
+      "actions": "surprised",
+      "reaction": {
+        "reactionType": "sad",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
         }
       }
     }

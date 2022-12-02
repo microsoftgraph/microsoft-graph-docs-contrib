@@ -371,6 +371,16 @@ Namespace: microsoft.graph
 |reviewer|
 |unknownFutureValue|
 
+### educationFeedbackResourceOutcomeStatus values
+
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -578,6 +588,17 @@ Namespace: microsoft.graph
 |failure|
 |notApplied|
 |unknownFutureValue|
+
+### templateScenarios values
+|Member             |
+|:------------------|
+|new                |
+|secureFoundation   |
+|zeroTrust          |
+|remoteWork         |
+|protectAdmins      |
+|emergingThreats    |
+|unknownFutureValue |
 
 ### operationResult values
 
@@ -1961,6 +1982,15 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoft|
 |thirdParty|
 |customer|
+|unknownFutureValue|
+
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
 |unknownFutureValue|
 
 ### serviceHealthStatus values 

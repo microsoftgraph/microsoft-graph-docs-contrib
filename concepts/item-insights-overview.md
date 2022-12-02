@@ -56,14 +56,14 @@ By default, item insights are enabled. Administrators use specific settings to c
 
 Updating settings can take up to 24 hours to apply within the user’s organization across Microsoft 365 experiences.
 
-After disabling item insights, the following happens: 
-* Microsoft stops using your signals when computing recommendations for others. Your colleagues stop receiving item insights based on activities that you perform in shared workspaces, and your colleagues’ insights-based experience becomes less rich in places such as the **Recommended** files in Office.com and Delve.
+After your item insights are disabled, the following happens:
+* Microsoft stops using your signals when computing recommendations for others. Your colleagues stop receiving item insights based on activities that you perform in shared workspaces. Your colleagues’ insights-based experience becomes less rich in places such as the **Recommended** section of files in Office.com and Delve, as shown in the following example, if you were signed in with the user name MeganB.
 ![disabled item insights in recommended in office](images/disabled-item-insights-in-office.PNG)
-* Your colleagues can still see files that you have shared with them from OneDrive for Business and SharePoint in experiences such as Delve and [the profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501). To avoid seeing shared files in these places, remove the sharing permissions on the files.  
-* Experiences that show content trending around you is blocked for you and inaccessible to others, in places such as Delve and Outlook mobile’s **Discover** section. The lack of the trending-insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
+* Your colleagues can still see files that you have shared with them from OneDrive for Business and SharePoint in experiences such as Delve and [the profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501). To prevent these places from displaying shared files, remove the sharing permissions on the files.  
+* Experiences that show content trending around you is inaccessible to others, in places such as Delve and the **Discover** section in Outlook mobile. The lack of trending insights also reduces your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
-* Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) from being calculated and shown to the user on their persona card. 
-* For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API returns `HTTP 403 Forbidden`.
+* Insights about your file-based activities in collaborative workspaces are no longer shared with others, protecting you from undesirable discovery of your data. On the other hand, your access to experiences showing trending content is not revoked. You can see the activities and data of users who have not disabled item insights.
+* [Suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) are no longer calculated and shown on your profile card.
 
 ## API reference
 
@@ -76,4 +76,4 @@ Looking for the API reference for this service?
 ## Next steps
 
 - Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the insights API with your own files. Sign in, expand **Insights** in the column on the left, and try the sample queries.
-- Learn more about [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [insights settings API (preview)](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
+- Learn more about [customizing item insights privacy for users](insights-customize-item-insights-privacy.md), and the [insights settings API (preview)](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.

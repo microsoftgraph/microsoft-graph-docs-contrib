@@ -2,7 +2,7 @@
 title: "searchRequest resource type"
 description: "The search request to be sent to the query endpoint. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query."
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
@@ -28,6 +28,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |:-------------|:------------|:------------
 |aggregations|[aggregationOption](aggregationOption.md) collection|Specifies aggregations (also known as refiners) to be returned alongside search results. Optional.|
 |aggregationFilters|String collection|Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field. Optional.<br>Build this filter based on a prior search that aggregates by the same field. From the response of the prior search, identify the [searchBucket](searchBucket.md) that filters results to the specific value of the field, use the string in its **aggregationFilterToken** property, and build an aggregation filter string in the format **"{field}:\\"{aggregationFilterToken}\\""**. <br>If multiple values for the same field need to be provided, use the strings in its **aggregationFilterToken** property and build an aggregation filter string in the format **"{field}:or(\\"{aggregationFilterToken1}\\",\\"{aggregationFilterToken2}\\")"**. <br>For example, searching and aggregating drive items by file type returns a **searchBucket** for the file type `docx` in the response. You can conveniently use the **aggregationFilterToken** returned for this **searchBucket** in a subsequent search query and filter matches down to drive items of the `docx` file type. [Example 1](/graph/search-concept-aggregation#example-1-request-aggregations-by-string-fields) and [example 2](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request) show the actual requests and responses.|
+|collapseProperties|[collapseProperty](collapseproperty.md) collection|Contains the ordered collection of fields and limit to collapse results. Optional.|
 |contentSources|String collection|Contains the connection to be targeted. <br>Respects the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId defined in the Connectors Administration. <br> Note: contentSource is only applicable when entityType=`externalItem`. Optional.|
 |enableTopResults|Boolean|This triggers hybrid sort for messages: the first 3 messages are the most relevant. This property is only applicable to entityType=`message`. Optional.|
 |entityTypes|entityType collection| One or more types of resources expected in the response. Possible values are: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `person`, `externalItem`, `acronym`, `bookmark`, `chatMessage`. For details about combinations of two or more entity types that are supported in the same search request, see [known limitations](search-api-overview.md#known-limitations). Required.|
@@ -72,6 +73,7 @@ The following is a JSON representation of the resource.
   "sharePointOneDriveOptions": {"@odata.type": "microsoft.graph.sharePointOneDriveOptions"},
   "size": 1024,
   "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
+  "collapseProperties": [{"@odata.type": "microsoft.graph.collapseProperty"}],
   "trimDuplicates": false
 }
 ```
@@ -84,6 +86,7 @@ The following is a JSON representation of the resource.
 - [Search content in SharePoint and OneDrive](/graph/search-concept-files) (files, lists, and sites)
 - [Search custom types imported using connectors](/graph/search-concept-custom-types)
 - [Sort search results](/graph/search-concept-sort)
+- [Collapse search results](/graph/search-concept-collapse)
 - [Trim duplicate search results](/graph/search-concept-trim-duplicate) 
 - [Use aggregations](/graph/search-concept-aggregation) to refine search results
 - [Use display layout](/graph/search-concept-display-layout)
