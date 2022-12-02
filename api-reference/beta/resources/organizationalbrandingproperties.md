@@ -95,7 +95,7 @@ The following is a JSON representation of the resource.
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
   "customCannotAccessYourAccountUrl": "String",
-  "customCSS": "String",
+  "customCSS": "Stream",
   "customCSSRelativeUrl": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
