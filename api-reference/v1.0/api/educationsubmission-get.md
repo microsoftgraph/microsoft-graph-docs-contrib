@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a particular [submission](../resources/educationsubmission.md).
+Retrieve a particular [submission](../resources/educationsubmission.md). This operation can be performed by teacher, student and system.
 
 A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent this work.
 

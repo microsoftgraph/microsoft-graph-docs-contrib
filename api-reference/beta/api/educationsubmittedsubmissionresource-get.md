@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [submitted resource](../resources/educationsubmissionresource.md). This operation can be performed by either teacher or student.
+Retrieve a [submitted resource](../resources/educationsubmissionresource.md). This operation can be performed by teacher, student and system.
 
 Resources will be available to a teacher or an application with application permissions after a student submits it, and will be available to the student after the teacher releases the submission. Note that teachers can leave notes in some resources.
 

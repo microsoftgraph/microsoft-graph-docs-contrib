@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object. This operation can be performed by either teacher or student.
+Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object. This operation can be performed by teacher and student.
 
 ## Permissions
 
