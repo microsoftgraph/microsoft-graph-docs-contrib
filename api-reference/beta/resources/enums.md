@@ -3324,7 +3324,6 @@ Possible values for user account types (group membership), per Windows definitio
 |published|
 |pending|
 |unknownFutureValue|
-=======
 
 ### authenticationStrengthPolicyType values
 
@@ -3388,6 +3387,15 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |privateContent|
 |sharedContent|
+|unknownFutureValue|
+
+### chatMessageActions values 
+
+|Member|
+|:---|
+|reactionAdded|
+|reactionRemoved|
+|actionUndefined|
 |unknownFutureValue|
 
 

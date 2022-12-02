@@ -80,7 +80,7 @@ This example specifies a KQL query which does the following:
 POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 {
-    "query":"DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
+    "query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 }
 ```
 
