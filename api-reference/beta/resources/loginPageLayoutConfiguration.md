@@ -1,6 +1,6 @@
 ---
 title: "loginPageLayoutConfiguration resource type"
-description: "Contains details of the organization's branding."
+description: "Contains details of the layout of the sign-in page for a tenant."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
