@@ -50,7 +50,7 @@ You can specify the following properties when creating a **crossTenantIdentitySy
 |:---|:---|:---|
 |tenantId|String|**TODO: Add Description** Required.|
 |displayName|String|**TODO: Add Description** Optional.|
-|userSyncInbound|[Microsoft.DirectoryServices.crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|
 
 
 

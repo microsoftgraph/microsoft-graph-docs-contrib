@@ -50,7 +50,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigu
 |:---|:---|:---|
 |tenantId|String|**TODO: Add Description** Required.|
 |displayName|String|**TODO: Add Description** Optional.|
-|userSyncInbound|[Microsoft.DirectoryServices.crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|
 
 
 
