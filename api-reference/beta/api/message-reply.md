@@ -68,7 +68,7 @@ When specifying the body in MIME format, provide the MIME content with the appli
 
 If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
-If the request body includes malformed MIME content, this method returns a `400 Bad request` response code and the following error message: "Invalid base64 string for MIME content".
+If the request body includes malformed MIME content, this method returns a `400 Bad Request` response code and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 ### Example 1: Reply to a message in JSON format
