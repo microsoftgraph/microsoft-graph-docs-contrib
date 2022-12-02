@@ -15,7 +15,7 @@ Education institutions have custom tools for students and users who need to obta
 
 ## Get classes and members information
 
-All the assignments and grades information is part of the team in Microsoft Teams. You can get information about classes, members, and roles (student or teacher) in a team by using the following Teams APIs:
+All assignments and grading information are part of a team in Microsoft Teams. You can get information about classes, members, and roles (student or teacher) in a team by using the following Teams APIs:
 
 - [List classes of an educationSchools](/graph/api/educationschool-list-classes): Returns a list of all classes in your education tenant.
 - [List members of an educationClass](/graph/api/educationclass-list-members): Lists information about members of a specific class.
