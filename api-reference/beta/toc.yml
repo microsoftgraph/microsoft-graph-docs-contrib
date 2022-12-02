@@ -15856,6 +15856,10 @@ items:
           href: api/plannerbucket-update.md
         - name: Delete bucket
           href: api/plannerbucket-delete.md
+      - name: Business scenarios (preview)
+        items:
+        - name: Overview
+          href: resources/businessscenario-overview.md
       - name: Planner user
         href: resources/planneruser.md
         items:
@@ -15871,27 +15875,29 @@ items:
           href: api/planneruser-list-tasks.md
       - name: Get delta
         href: api/planneruser-list-delta.md
-      - name: Assigned-to task board format
-        href: resources/plannerassignedtotaskboardtaskformat.md
+      - name: Task formats
         items:
-        - name: Get assigned to task board format
-          href: api/plannerassignedtotaskboardtaskformat-get.md
-        - name: Update assigned to task board format
-          href: api/plannerassignedtotaskboardtaskformat-update.md
-      - name: Bucket task board task format
-        href: resources/plannerbuckettaskboardtaskformat.md
-        items:
-        - name: Get bucket task board format
-          href: api/plannerbuckettaskboardtaskformat-get.md
-        - name: Update bucket task board format
-          href: api/plannerbuckettaskboardtaskformat-update.md
-      - name: Progress task board task format
-        href: resources/plannerprogresstaskboardtaskformat.md
-        items:
-        - name: Get progress task board format
-          href: api/plannerprogresstaskboardtaskformat-get.md
-        - name: Update progress task board format
-          href: api/plannerprogresstaskboardtaskformat-update.md
+        - name: Assigned-to view
+          href: resources/plannerassignedtotaskboardtaskformat.md
+          items:
+          - name: Get assigned to task board format
+            href: api/plannerassignedtotaskboardtaskformat-get.md
+          - name: Update assigned to task board format
+            href: api/plannerassignedtotaskboardtaskformat-update.md
+        - name: Buckets view
+          href: resources/plannerbuckettaskboardtaskformat.md
+          items:
+          - name: Get bucket task board format
+            href: api/plannerbuckettaskboardtaskformat-get.md
+          - name: Update bucket task board format
+            href: api/plannerbuckettaskboardtaskformat-update.md
+        - name: Progress view
+          href: resources/plannerprogresstaskboardtaskformat.md
+          items:
+          - name: Get progress task board format
+            href: api/plannerprogresstaskboardtaskformat-get.md
+          - name: Update progress task board format
+            href: api/plannerprogresstaskboardtaskformat-update.md
       - name: Planner roster (preview)
         items:
         - name: Planner roster

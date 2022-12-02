@@ -1,6 +1,6 @@
 ---
 title: "Use the business scenarios API in Microsoft Graph (preview)"
-description: ""
+description: "Business scenarios API allows creation and management of business scenarios that configure and manage integration of data into Microsoft Graph."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: ""
@@ -10,7 +10,7 @@ ms.prod: ""
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Business Scenario API allows creation and management of business scenarios that configure and manage integration of data into Microsoft Graph.
+Business scenarios API allows creation and management of business scenarios that configure and manage integration of data into Microsoft Graph.
 
 ## Structure of a business scenario
 

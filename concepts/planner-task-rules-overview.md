@@ -1,6 +1,6 @@
 ---
 title: "Planner task rules overview (preview)"
-description: "Rules allow customization of what can and can't be done on tasks, and the business scenarios API in Microsoft Graph supports them."
+description: "Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: ""
@@ -8,7 +8,7 @@ ms.prod: ""
 
 # Planner task rules overview (preview)
 
-Rules allow customization of what can and can't be done on tasks, and the business scenarios API in Microsoft Graph supports them. Task rules can be specified for tasks created from various sources, such as [business scenarios](businessscenario-planner-overview.md).
+Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them. Task rules can be specified for tasks created from various sources, such as [business scenarios](businessscenario-planner-overview.md).
 
 Task property rules are represented by [plannerTaskPropertyRule](plannertaskpropertyrule.md) entity and describe the allowed actions at the task-level and rules around each configurable property.
 
