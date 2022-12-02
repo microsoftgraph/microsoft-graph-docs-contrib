@@ -51,7 +51,7 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-reviewers := []graphmodels.AccessReviewReviewerScopeable {
+reviewers := []graphmodels.Objectable {
 	accessReviewReviewerScope,
 
 }
@@ -69,14 +69,14 @@ accessReviewReviewerScope1.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope1.SetQueryType(&queryType) 
 
-fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
+fallbackReviewers := []graphmodels.Objectable {
 	accessReviewReviewerScope,
 	accessReviewReviewerScope1,
 
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

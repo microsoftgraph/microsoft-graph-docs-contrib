@@ -18,7 +18,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-graphClient.Policies().ActivityBasedTimeoutPoliciesById("activityBasedTimeoutPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().ActivityBasedTimeoutPoliciesById("activityBasedTimeoutPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

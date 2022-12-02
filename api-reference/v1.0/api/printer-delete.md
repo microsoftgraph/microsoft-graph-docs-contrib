@@ -1,9 +1,9 @@
 ---
-title: Delete printer
-description: Delete (unregister) a printer.
-author: nilakhan
+title: "Delete printer"
+description: "Delete (unregister) a printer".
+author: "nilakhan"
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.prod: "cloud-printing"
 doc_type: apiPageType
 ---
 
@@ -20,8 +20,8 @@ To use the Universal Print service, the user or app's tenant must have an active
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Printer.FullControl.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -48,6 +48,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,6 +90,9 @@ DELETE https://graph.microsoft.com/v1.0/print/printers/{printerId}
 
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

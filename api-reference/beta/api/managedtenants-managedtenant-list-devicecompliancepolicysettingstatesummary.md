@@ -3,7 +3,7 @@ title: "List deviceCompliancePolicySettingStateSummary"
 description: "Get a list of the deviceCompliancePolicySettingStateSummary objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/deviceCo
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-devicecompliancepolicysettingstatesummary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-devicecompliancepolicysettingstatesummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -2,7 +2,7 @@
 title: "Set up change notifications that include resource data"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Change notifications can include resource properties."
 author: "jumasure"
-ms.prod: "non-product-specific"
+ms.prod: "change-notifications"
 ms.localizationpriority: high
 ---
 
@@ -54,6 +54,7 @@ Available in only the beta endpoint:
 - New or changed messages in a user's mailbox: `/users/{id}/messages`
 - New or changed messages in a user's mailFolder: `/users/{id}/mailFolders/{id}/messages`
 - Teams Meeting status information updates: `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}`
+- New or changed members in all channels across the entire tenant: `/teams/getAllChannels/getAllMembers`
 
 Change notifications that include **chatMessage**, **onlineMeeting**, or **presence** resource data consist of all the properties of the changed instance. They do not support returning only selected properties of the instance. 
 

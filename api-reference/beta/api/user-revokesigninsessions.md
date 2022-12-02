@@ -19,6 +19,8 @@ If the application attempts to redeem a delegated access token for this user by 
 
 >[!NOTE]
 >After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
+>
+>This API doesn't revoke sign-in sessions for external users, because external users sign in through their home tenant.
 
 ## Permissions
 

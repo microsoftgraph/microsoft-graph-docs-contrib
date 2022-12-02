@@ -22,7 +22,7 @@ $requestBody->setMailNickname('library-help');
 
 
 
-$graphServiceClient->groupsById('group-id')->patch($requestBody);
+$requestResult = $graphServiceClient->groupsById('group-id')->patch($requestBody);
 
 
 ```

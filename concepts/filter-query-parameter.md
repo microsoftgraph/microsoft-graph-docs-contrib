@@ -20,11 +20,11 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 
 | Operator type         | Operator                                                                                                                                         |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Equality operators    | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li><li> Logical negation (`not`)</li><li> In (`in`)</li></ul>                                |
+| Equality operators    | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li><li> Logical negation (`not`)</li><li> In (`in`)</li><li> Has (`has`)</li></ul>                                |
 | Relational operators  | <ul><li> Less than (`lt`) </li><li> Greater than (`gt`)</li><li> Less than or equal to (`le`)</li><li> Greater than or equal to (`ge`)</li></ul> |
 | Lambda operators      | <ul><li> Any (`any`) </li><li> All (`all`)</li></ul>                                                                                             |
 | Conditional operators | <ul><li> And (`and`) </li><li> Or (`or`)</li>                                                                                                    |
-| Functions             | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li></ul>                                                                   |
+| Functions             | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li><li> Contains (`contains`)</li></ul>                                                                   |
 
 > [!NOTE]
 > Support for these operators varies by entity and some properties support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details.
@@ -52,7 +52,7 @@ Where
 If you are familiar with `C#` and `LINQ`, this would be the equivalent of the above syntax:
 
 ```csharp
-collection.Where(property => property.subProperty == "value-to-match")
+collection.Any(property => property.subProperty == "value-to-match")
 ```
 
 For example, the **imAddresses** property of the `user` resource contains a collection of String primitive types. The following query retrieves only users with an imAddress of `admin@contoso.com`.
@@ -117,49 +117,53 @@ These examples show how to use `$filter` to match against supported properties a
 
 ### For single primitive types like String, Int, and dates
 
-| Operator               | Syntax                                                               |
-| ---------------------- | -------------------------------------------------------------------- |
-| `eq`                   | `~/users?$filter=userType eq 'Member'`                               |
-| `not`                  | `~/users?$filter=not userType eq 'Member'`*                          |
-| `ne`                   | `~/users?$filter=companyName ne null`*                               |
-| `startsWith`           | `~/users?$filter=startsWith(userPrincipalName, 'admin')`             |
-| `endsWith`             | `~/users?$count=true&$filter=endsWith(mail,'@outlook.com')`          |
-| `in`                   | `~/users?$filter=userType in ('Guest')`                              |
-| `le`                   | `~/devices?$filter=registrationDateTime le 2021-01-02T12:00:00Z`     |
-| `ge`                   | `~/devices?$filter=registrationDateTime ge 2021-01-02T12:00:00Z`     |
-| `not` and `endsWith`   | `~/users?$filter=NOT endsWith(mail, 'OnMicrosoft.com')&$count=true`* |
-| `not` and `startsWith` | `~/users?$filter=NOT startsWith(mail, 'A')&$count=true`              |
-| `not` and `eq`         | `~/users?$filter=not(companyName eq 'Contoso E.A.')&$count=true`*    |
-| `not` and `in`         | `~/users?$filter=not (userType in ('Member'))&$count=true`*          |
-<!-- contains-->
+| Operator               | Syntax                                                                                                                             |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| `eq`                   | `~/users?$filter=userType eq 'Member'`                                                                                             |
+| `not`                  | `~/users?$filter=not(userType eq 'Member')`*                                                                                       |
+| `ne`                   | `~/users?$filter=companyName ne null`*                                                                                             |
+| `startsWith`           | `~/users?$filter=startsWith(userPrincipalName, 'admin')`                                                                           |
+| `endsWith`             | `~/users?$filter=endsWith(mail,'@outlook.com')`*                                                                                   |
+| `in`                   | `~/users?$filter=userType in ('Guest')`                                                                                            |
+| `le`                   | `~/devices?$filter=registrationDateTime le 2021-01-02T12:00:00Z`*                                                                  |
+| `ge`                   | `~/devices?$filter=registrationDateTime ge 2021-01-02T12:00:00Z`*                                                                  |
+| `not` and `endsWith`   | `~/users?$filter=not(endsWith(mail, 'OnMicrosoft.com'))`*                                                                          |
+| `not` and `startsWith` | `~/users?$filter=not(startsWith(mail, 'A'))`*                                                                                      |
+| `not` and `eq`         | `~/users?$filter=not(companyName eq 'Contoso E.A.')`*                                                                              |
+| `not` and `in`         | `~/users?$filter=not(userType in ('Member'))`*                                                                                     |
+| `contains`             | `~/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')` |
+| `has`                  | `~/identity/conditionalAccess/templates?$filter=scenarios has 'secureFoundation'`                                                  |
 
 ### For a collection of primitive types
 
-| Operator (s)                             | Syntax                                                                       |
-| ---------------------------------------- | ---------------------------------------------------------------------------- |
-| `eq`                                     | `~/groups?$filter=groupTypes/any(c:c eq 'Unified')`                          |
-| `not`                                    | `~/groups?$filter=not groupTypes/any(c:c eq 'Unified')`*                     |
-| `ne`                                     | `~/users?$filter=companyName ne null`*                                       |
-| `startsWith`                             | `~/users?$filter=businessPhones/any(p:startsWith(p, '44 121'))`*             |
-| `endsWith`                               | `~/users?$filter=endsWith(mail,'@outlook.com')`*                             |
-| `le`                                     | `~/groups?$filter=createdOnBehalfOf/deletedDateTime le 2021-01-02T12:00:00Z` |
-| `ge`                                     | `~/groups?$filter=createdOnBehalfOf/deletedDateTime ge 2021-01-02T12:00:00Z` |
-| `any` and `eq`                           | `~/groups?$filter=groupTypes/any(c:c eq 'Unified')`                          |
-| `not` and `endsWith`                     | `~/groups?$filter=NOT(endsWith(mail,'OnMicrosoft.com'))`*                    |
-| `not` and `startsWith`                   | `~/groups?$filter=NOT(startsWith(mail,'Pineview'))&$count=true`*             |
-| `not` and `eq`                           | `~/groups?$filter=NOT(mail eq 'PineviewSchoolStaff@Contoso.com')`*           |
-| `eq` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count eq 0`*                              |
-| `ne` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count ne 0`*                              |
-| `not` and `$count` for empty collections | `~/users?$filter=NOT(assignedLicenses/$count ne 0)`*                         |
-<!-- contains; `in` - otherMails example; `not` and `in`; -->
+| Operator (s)                             | Syntax                                                             |
+|-------------------------------------------|---------------------------------------------------------------------|
+| `eq`                                     | `~/groups?$filter=groupTypes/any(c:c eq 'Unified')`                |
+| `not`                                    | `~/groups?$filter=not(groupTypes/any(c:c eq 'Unified'))`*          |
+| `ne`                                     | `~/users?$filter=companyName ne null`*                             |
+| `startsWith`                             | `~/users?$filter=businessPhones/any(p:startsWith(p, '44'))`*       |
+| `endsWith`                               | `~/users?$filter=endsWith(mail,'@outlook.com')`*                   |
+| `not` and `endsWith`                     | `~/groups?$filter=not(endsWith(mail,'OnMicrosoft.com'))`*          |
+| `not` and `startsWith`                   | `~/groups?$filter=not(startsWith(mail,'Pineview'))`*               |
+| `not` and `eq`                           | `~/groups?$filter=not(mail eq 'PineviewSchoolStaff@Contoso.com')`* |
+| `eq` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count eq 0`*                    |
+| `ne` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count ne 0`*                    |
+| `not` and `$count` for empty collections | `~/users?$filter=not(assignedLicenses/$count eq 0)`*               |
+| `$count` for collections with one object | `~/servicePrincipals?$filter=owners/$count eq 1`*                  |
+
+<!--`in` - otherMails example; 
+`not` and `in`; 
+no examples available for ge and le
+-->
 
 ### For GUID types
 
-| Operator (s) | Syntax                                                                                             |
-| ------------ | -------------------------------------------------------------------------------------------------- |
-| `eq`         | `~/servicePrincipals?$filter=appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47`*      |
-| `not`        | `~/servicePrincipals?$filter=NOT(appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47)`* |
+| Operator (s) | Syntax                                                                                                         |
+|---------------|-----------------------------------------------------------------------------------------------------------------|
+| `eq`         | `~/servicePrincipals?$filter=appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47`*                  |
+| `not`        | `~/servicePrincipals?$filter=not(appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47)&$count=true`* |
 
+<!--
 ### For single complex types such as relationships
 
 | Operator (s) | Syntax                                                                             |
@@ -167,22 +171,25 @@ These examples show how to use `$filter` to match against supported properties a
 | `eq`         | `~/applications?$filter=createdOnBehalfOf/deletedDateTime eq 2021-01-02T12:00:00Z` |
 | `le`         | `~/applications?$filter=createdOnBehalfOf/deletedDateTime le 2021-01-02T12:00:00Z` |
 | `ge`         | `~/users?$filter=manager/createdDateTime ge 2021-01-02T12:00:00Z`                  |
+Hiding because the latest iteration of the report doesn't include these properties.
+-->
 
 ### For a collection of GUID types
 
-| Operator (s) | Syntax                                                            |
-| ------------ | ----------------------------------------------------------------- |
-| `eq`         | `~/devices?$filter=alternativeSecurityIds/any(a:a/type ge 12345)` |
+| Operator (s) | Syntax                                                         |
+|---------------|-----------------------------------------------------------------|
+| `eq`         | `~/devices?$filter=alternativeSecurityIds/any(a:a/type eq 2)`* |
+| `le`         | `~/devices?$filter=alternativeSecurityIds/any(a:a/type le 2)`* |
+| `ge`         | `~/devices?$filter=alternativeSecurityIds/any(a:a/type ge 2)`* |
 
 ### For a collection of complex types
 
-| Operator (s) | Syntax                                                                                  |
-| ------------ | --------------------------------------------------------------------------------------- |
-| `eq`         | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil')`     |
-| `startsWith` | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:startswith(x,'987654321'))` |
-| `endsWith`   | `~/users?$filter=proxyAddresses/any(p:endsWith(p,'OnMicrosoft.com'))`*                  |
-| `le`         | `~/applications?$filter=keyCredentials/any(k:k/endDateTime le 2021-01-02T12:00:00Z)`*   |
-| `ge`         | `~/applications?$filter=keyCredentials/any(k:k/endDateTime ge 2021-01-02T12:00:00Z)`*   |
+| Operator (s)   | Syntax                                                                                    |
+|-----------------|--------------------------------------------------------------------------------------------|
+| `eq`           | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil')`*      |
+| `not` and `eq` | `~/users?$filter=not(authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil'))`* |
+| `startsWith`   | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:startswith(x,'987654321'))`*  |
+| `endsWith`     | `~/users?$filter=proxyAddresses/any(p:endsWith(p,'OnMicrosoft.com'))`*                    |
 
 ## See also
 

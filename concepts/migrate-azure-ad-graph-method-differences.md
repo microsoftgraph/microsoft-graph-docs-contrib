@@ -22,5 +22,5 @@ A handful of Azure Active Directory (Azure AD) Graph methods have also changed. 
 
 ## Next Steps
 
-- Learn how to [examine API differences](migrate-azure-ad-graph-audit-api-use.md) in your app between Azure AD Graph and Microsoft graph.
+- Learn about [permissions differences](migrate-azure-ad-graph-permissions-differences.md) between Azure AD Graph and Microsoft Graph.
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
