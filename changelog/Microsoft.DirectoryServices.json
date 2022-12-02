@@ -12177,6 +12177,24 @@
       "CreatedDateTime": "2021-11-28T00:00:00.077762Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db47d34d-9ef1-4e79-84be-0f28107e485e",
+          "ApiChange": "Property",
+          "ChangedApiName": "appId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0) using the service principal **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "db47d34d-9ef1-4e79-84be-0f28107e485e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-02T00:00:00.077762Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
     }
   ]
 }
