@@ -479,6 +479,8 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
+For details on the library see [OnBehalfOfCredential Class](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true).
+
 ```py
 from azure.identity.aio import OnBehalfOfCredential
 from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
@@ -490,7 +492,7 @@ credential=OnBehalfOfCredential(
     client_secret: str = None, 
     user_assertion: str,
     **kwargs: Any)
-    
+
 auth_provider = AzureIdentityAuthenticationProvider(credential)
 ```
 
