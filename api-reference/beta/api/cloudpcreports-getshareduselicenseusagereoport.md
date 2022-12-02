@@ -83,10 +83,10 @@ Content-length: 199
 
 {
     "reportName": "SharedUseLicenseUsageReport",
-    "filter": "reportDateTime gt 2022-07-14T07:40:41.694Z and servicePlanId eq '599fe3a3-0285-4e7f-9c83-ffdf37914e27'",
-    "select":["servicePlanId", "licenseCount", "bufferSize", "claimedLicenseCount", "waitlistedCount", "reportDateTime"],
+    "filter": "ServicePlanId eq '2d1d344e-d10c-41bb-953b-b3a47521dca0' and DateTimeUTC gt datetime'2022-11-30'",
+    "select":["ServicePlanId", "LicenseCount", "ClaimedLicenseCount", "DateTimeUTC"],
     "skip": 0,
-    "top": 50
+    "top": 100
 }
 ```
 
@@ -134,32 +134,24 @@ Content-Type: application/octet-stream
     "TotalRowCount": 2,
     "Schema": [
         {
-            "Column": "servicePlanId",
-            "PropertyType": "String"
-        }, 
+            "name": "ServicePlanId",
+            "type": "String"
+        },
         {
-            "Column": "licenseCount",
-            "PropertyType": "Int64"
-        }, 
+            "name": "LicenseCount",
+            "type": "Int32"
+        },
         {
-            "Column": "bufferSize",
-            "PropertyType": "Int64"
-        }, 
+            "name": "ClaimedLicenseCount",
+            "type": "Int32"
+        },
         {
-            "Column": "claimedLicenseCount",
-            "PropertyType": "Int64"
-        }, 
-        {
-            "Column": "waitlistedCount",
-            "PropertyType": "Int64"
-        }, 
-        {
-            "Column": "reportDateTime",
-            "PropertyType": "DateTime"
+            "name": "DateTimeUTC",
+            "type": "DateTime"
         }],
     "Values": [
-        ["599fe3a3-0285-4e7f-9c83-ffdf37914e27", 100, 0, 10, 0, "2022-03-29T18:30:57Z"],
-        ["599fe3a3-0285-4e7f-9c83-ffdf37914e27", 100, 0, 11, 0, "2022-03-28T18:00:57Z"]
+        ["2d1d344e-d10c-41bb-953b-b3a47521dca0", 100, 10, "2022-12-02T00:00:00"],
+        ["2d1d344e-d10c-41bb-953b-b3a47521dca0", 100, 11, "2022-12-01T00:00:00"]
     ]
 }
 ```
