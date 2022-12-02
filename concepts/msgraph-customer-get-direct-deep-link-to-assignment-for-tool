@@ -22,7 +22,7 @@ All assignments and grading information are part of a team in Microsoft Teams. Y
 
 After you get the relevant class and member information, you can get the assignment and grade information you need.
 
-## Get direct deep link for the assignment
+## Get a deep direct link for the assignment.
 
 The [Assignment Property](/graph/api/resources/educationassignment#properties) webURL returns the authenticated deep link to the selected assignments. For user within Teams it will open the assignment directly.
 
