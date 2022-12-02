@@ -34,6 +34,12 @@ $web->setRedirectUris(['https://localhost', ]);
 
 
 $requestBody->setWeb($web);
+$additionalData = [
+'appRoleAssignmentRequired' => true,
+];
+$requestBody->setAdditionalData($additionalData);
+
+
 
 
 $requestResult = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
