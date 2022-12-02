@@ -26,7 +26,7 @@ After you get the relevant class and member information, you can get the assignm
 
 The [Assignment Property](/graph/api/resources/educationassignment#properties) returns the authenticated deep link to the selected assignments. For Teams' users, the assignments open directly.
 
-## Get direct deep link for the submission
+##  Get a deep direct link for the submission.
 
 The [Submission Property](/graph/api/resources/educationsubmission#properties) webURL returns the authenticated deep link to the submission.
 
