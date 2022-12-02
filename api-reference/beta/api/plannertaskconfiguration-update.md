@@ -46,10 +46,9 @@ PATCH /solutions/businessScenarios/{businessScenarioId}/planner/taskConfiguratio
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|editPolicy|[plannerTaskPolicy](../resources/plannertaskpolicy.md)|**TODO: Add Description** Optional.|
+|editPolicy|[plannerTaskPolicy](../resources/plannertaskpolicy.md)|Policy configuration for tasks created for the businessScenario when they are being changed outside of the scenario. Optional.|
 
 ## Response
 

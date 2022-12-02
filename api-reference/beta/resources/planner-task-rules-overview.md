@@ -75,7 +75,7 @@ The **assignments** property is configured with [fieldRules](plannerfieldrules.m
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead. The **defaultRules** must be specified.
 
 * `userCreated`: Rules apply if the assignment was created by a user.
 * `applicationCreated`: Rules apply if the assignment was created using application permissions.
@@ -94,7 +94,7 @@ The **checkLists** property is configured with [fieldRules](plannerfieldrules.md
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead. The **defaultRules** must be specified.
 
 * `userCreated`: Rules apply if the checklist item was created by a user.
 * `applicationCreated`: Rules apply if the checklist item was created using application permissions.
@@ -158,7 +158,7 @@ References property is configured with [fieldRules](plannerfieldrules.md), provi
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead. The **defaultRules** must be specified.
 
 * `userCreated`: Rules apply if the task reference was created by a user.
 * `applicationCreated`: Rules apply if the task reference was created using application permissions.
