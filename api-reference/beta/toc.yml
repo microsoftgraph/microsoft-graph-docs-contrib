@@ -15883,6 +15883,38 @@ items:
         items:
         - name: Overview
           href: resources/businessscenario-overview.md
+        - name: Integrating with plans and tasks
+          href: resources/businessscenario-planner-overview.md
+        - name: Business scenario
+          items:
+          - name: Business scenario
+            href: businessscenario.md
+          - name: List
+            href: api/solutionsroot-list-businessscenarios.md
+        - name: Business scenario in Planner
+          items:
+          - name: Business scenario Planner
+            href: businessscenarioplanner.md
+          - name: Get
+            href: api/businessscenarioplanner-get.md
+        - name: Plan configuration in business scenario
+          items:
+          - name: Plan configuration
+            href: plannerplanconfiguration.md
+          - name: Get
+            href: api/plannerplanconfiguration-get.md
+        - name: Task configuration in business scenario
+          items:
+          - name: Task configuration
+            href: plannertaskconfiguration.md
+          - name: Get
+            href: api/plannertaskconfiguration-get.md
+        - name: Task in business scenario
+          items:
+          - name: Business scenario task
+            href: businessscenariotask.md
+          - name: List
+            href: api/businessscenarioplanner-list-tasks.md
       - name: Planner user
         href: resources/planneruser.md
         items:
