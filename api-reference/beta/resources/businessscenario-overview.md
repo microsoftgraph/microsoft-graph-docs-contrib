@@ -20,7 +20,7 @@ A business scenario is represented by the [businessScenario](businessscenario.md
 
 The business scenarios API is designed to allow Microsoft Graph services to extend it to support service-specific scenarios of their app developer customers.
 
-Currently, the API supports custom scenario data for [Planner](businessscenario-planner-overview.md) in the [businessScenarioTask](businessscenariotask.md) entity.
+Currently, [Planner](businessscenario-planner-overview.md) has extended the API. The API supports custom scenario data for Planner in the [businessScenarioTask](businessscenariotask.md) entity.
 
 ## Creating a business scenario
 
