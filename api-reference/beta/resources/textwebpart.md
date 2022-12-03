@@ -1,6 +1,6 @@
 ---
 title: 'textWebPart resource type'
-description: Represents a text WebPart instance on a SharePoint page
+description: Represents a text web part instance on a SharePoint page.
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a text WebPart instance on a SharePoint page.
+Represents a text web part instance on a SharePoint page.
 
 Inherits from [webPart](../resources/webpart.md).
 
 ## Methods
 
-There is no methods available on this resource.
+None.
 
 ## Properties
 
