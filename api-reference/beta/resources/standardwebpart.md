@@ -17,10 +17,6 @@ Represents a standard web part instance on a SharePoint page.
 
 Inherits from [webPart](../resources/webpart.md).
 
-## Methods
-
-None.
-
 ## Properties
 
 | Property    | Type                                       | Description                                                                          |
