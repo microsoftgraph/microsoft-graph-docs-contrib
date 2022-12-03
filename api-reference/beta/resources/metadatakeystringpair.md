@@ -1,6 +1,6 @@
 ---
 title: 'metaDataKeyStringPair resource type'
-description: Represents a key-value(string) pair of the meta data
+description: Represents a key-value (string) pair of the metadata.
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key-value(string) pair of the meta data.
+Represents a key-value (string) pair of the metadata.
 
 ## Properties
 
 | Property | Type   | Description                                 |
 | :------- | :----- | :------------------------------------------ |
-| key      | String | Key of the meta data.                       |
-| value    | String | Value of the meta data. Should be a string. |
+| key      | String | Key of the metadata.                       |
+| value    | String | Value of the metadata. Should be a string. |
 
 ## Relationships
 
