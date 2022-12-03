@@ -1,6 +1,6 @@
 ---
 title: "serverProcessedContent resource type"
-description: Represent the server processed content of a given WebPart
+description: Represents the server processed content of a given web part.
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the server processed content of a given WebPart.
+Represents the server processed content of a given web part.
 
 ## Properties
 |Property|Type|Description|
