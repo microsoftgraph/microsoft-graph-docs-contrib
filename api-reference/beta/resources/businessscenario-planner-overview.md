@@ -8,11 +8,11 @@ ms.prod: ""
 
 # Use the business scenarios API in Microsoft Graph to integrate with Planner (preview)
 
-Microsoft Planner APIs in [business scenarios](businessscenario-overview.md) allow creating tasks with scenario controlled policies, in a specified target.
+The [business scenarios API](businessscenario-overview.md) allows creating Planner tasks with scenario-controlled policies, in a specified target.
 
 ## Planner configuration
 
-In business scenarios, Planner entities can be configured in two ways. First is the plan configuration which defines the elements of the plans created to host scenario tasks. Second is the task configuration which controls how created tasks behave for users and applications.
+Using the business scenarios API, apps can configure Planner entities in two ways. First is the plan configuration which defines the elements of the plans created to host scenario tasks. Second is the task configuration which controls how created tasks behave for users and applications.
 
 ### Plan configuration
 
