@@ -21,8 +21,8 @@ Inherits from [webPart](../resources/webpart.md).
 
 | Property  | Type   | Description                                                                          |
 | :-------- | :----- | :----------------------------------------------------------------------------------- |
-| id        | String | Instance identifier of the WebPart. Inherited from [entity](../resources/entity.md). |
-| innerHtml | String | The HTML string in text WebPart.                                                     |
+| id        | String | Instance identifier of the web part. Inherited from [entity](../resources/entity.md). |
+| innerHtml | String | The HTML string in text web part.                                                     |
 
 ## Relationships
 
