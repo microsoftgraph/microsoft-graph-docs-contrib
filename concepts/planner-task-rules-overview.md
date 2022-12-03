@@ -8,11 +8,11 @@ ms.prod: ""
 
 # Planner task rules overview (preview)
 
-Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them. Task rules can be specified for tasks created from various sources, such as [business scenarios](businessscenario-planner-overview.md).
+Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them. Task rules can be specified for tasks created from various sources, such as [business scenarios](businessscenario-planner-overview).
 
-Task property rules are represented by [plannerTaskPropertyRule](/graph/api/resources/plannertaskpropertyrule.md) entity and describe the allowed actions at the task-level and rules around each configurable property.
+Task property rules are represented by [plannerTaskPropertyRule](/graph/api/resources/plannertaskpropertyrule) entity and describe the allowed actions at the task-level and rules around each configurable property.
 
-Depending on the specific entry, the rules specify either a collection of values or a [fieldRules](plannerfieldrules.md). Field rules specify a collection of values as default, and provides separate collection of values for override conditions. For any collection of values, the specified values are what is allowed, omitted values will be disallowed.
+Depending on the specific entry, the rules specify either a collection of values or a [fieldRules](/graph/api/resources/plannerfieldrules). Field rules specify a collection of values as default, and provides separate collection of values for override conditions. For any collection of values, the specified values are what is allowed, omitted values will be disallowed.
 
 In this article, you will learn the behaviors associated with each entry and the override conditions supported by each property.
 
@@ -29,7 +29,7 @@ The collection must contain only one of these values.
 
 ### move
 
-Specifies if the task can be moved. This only includes a task moving between [buckets](/graph/api/resources/plannerbucket.md) and [plans](/graph/api/resources/plannerplan.md) with the same or different [containers](/graph/api/resources/plannerplancontainer.md). However, it doesn't include other operations similar to moves, which can be configured independently, such as assignments, ordering of the task, percent complete, priority etc. Accepted values are:
+Specifies if the task can be moved. This only includes a task moving between [buckets](/graph/api/resources/plannerbucket) and [plans](/graph/api/resources/plannerplan) with the same or different [containers](/graph/api/resources/plannerplancontainer). However, it doesn't include other operations similar to moves, which can be configured independently, such as assignments, ordering of the task, percent complete, priority etc. Accepted values are:
 
 * `block`: Task can't be moved.
 * `moveBetweenBuckets`: Task can only be moved between the buckets of the plan it is in.
@@ -51,7 +51,7 @@ The collection must contain only one of these values.
 
 ### appliedCategories
 
-The **appliedCategories** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules.md), providing default values and overrides for specific conditions. Accepted values are:
+The **appliedCategories** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Accepted values are:
 
 * `block`: Applied categories can't be changed.
 * `allow`: Categories can be added or removed.
@@ -62,7 +62,7 @@ This property doesn't support any override conditions. The rules must be specifi
 
 ### assignments
 
-The **assignments** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules.md), providing default values and overrides for specific conditions. Accepted values are:
+The **assignments** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Accepted values are:
 
 * `block`: Assignments of the task can't be changed.
 * `addSelf`: Users can assign the task to themselves.
@@ -82,7 +82,7 @@ This property supports the following override conditions. If an override doesn't
 
 ### checkLists
 
-The **checkLists** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules.md), providing default values and overrides for specific conditions. Accepted values are:
+The **checkLists** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Accepted values are:
 
 * `block`: Checklist can't be changed.
 * `check`: Checklist items can be checked.
@@ -149,7 +149,7 @@ The collection must contain only one of these values.
 
 ### references
 
-References property is configured with [fieldRules](/graph/api/resources/plannerfieldrules.md), providing default values and overrides for specific conditions. Accepted values are:
+References property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Accepted values are:
 
 * `block`: Task references can't be changed.
 * `add`: New references can be added.
