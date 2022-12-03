@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Exmaple 1: Get all localizations
+### Example 1: Get all localizations
 
 #### Request
 

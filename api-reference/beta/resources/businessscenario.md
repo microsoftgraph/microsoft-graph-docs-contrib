@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a scenario which collects relevant data and configuration for a specific problem domain. For more details about business scenarios, see [Business scenarios API overview (preview)](/graph/businessscenarios-concept-overview.md).
+Represents a scenario which collects relevant data and configuration for a specific problem domain. For more details about business scenarios, see [Business scenarios API overview](/graph/businessscenarios-concept-overview.md).
 
 Inherits from [entity](../resources/entity.md).
 

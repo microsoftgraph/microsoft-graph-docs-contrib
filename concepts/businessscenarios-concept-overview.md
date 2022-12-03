@@ -8,7 +8,7 @@ ms.prod: ""
 
 # Business scenarios API overview (preview)
 
-The business scenarios API allows apps to model and integrate real work business processes with a Microsoft 365 service over Microsoft Graph. Business scenarios allow applications to create data in form of existing Microsoft Graph entities in the tenant, however they can specify behaviors for this data to make sure the requirements of the represented business process can be met. While the data creted for the scenario behaves in accordance witht he scenario rules, other applications can consume this data the same way it consumes other data for the same entity types. Using business scenarios applications can work at the tenant level, without having access to the tenant data, outside of the data created for a specific scenario.
+The business scenarios API allows apps to model and integrate real work business processes with a Microsoft 365 service over Microsoft Graph. Business scenarios allow applications to create data in form of existing Microsoft Graph entities in the tenant, however they can specify behaviors for this data to make sure the requirements of the represented business process can be met. While the data created for the scenario behaves in accordance with the scenario rules, other applications can consume this data the same way it consumes other data for the same entity types. Using business scenarios applications can work at the tenant level, without having access to the tenant data, outside of the data created for a specific scenario.
 
 Business scenarios currently allow Microsoft Planner data to be generated through a scenario.
 

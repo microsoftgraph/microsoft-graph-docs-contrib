@@ -48,7 +48,7 @@ PATCH /solutions/businessScenarios/{businessScenarioId}/planner/taskConfiguratio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|editPolicy|[plannerTaskPolicy](../resources/plannertaskpolicy.md)|Policy configuration for tasks created for the businessScenario when they are being changed outside of the scenario. Optional.|
+|editPolicy|[plannerTaskPolicy](../resources/plannertaskpolicy.md)|Policy configuration for tasks created for a [businessScenario](../resources/businessscenario.md) when they are being changed outside of the scenario. Optional.|
 
 ## Response
 
