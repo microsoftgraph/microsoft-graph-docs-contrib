@@ -32,7 +32,7 @@ Task configuration is represented by the [plannerTaskConfiguration](plannertaskc
 
 Each role specifies a default rule, and rules for specific actions and fields on task. The default rule must be either `allow` or `block`. If an action or field doesn't have a rule defined for it, the default rule will be used to either keep it unrestricted for `allow`, or blocked from getting used for `block`. Keep in mind this applies when new properties and actions are available to be configured, but the scenario configuration is not yet updated to specify rules for these.
 
-For more information about using rules, see [Planner task rules overview](planner-task-rules-overview.md).
+For more information about using rules, see [Planner task rules overview](/graph/planner-task-rules-overview).
 
 ## Targeting tasks
 

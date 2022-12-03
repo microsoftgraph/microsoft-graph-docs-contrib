@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get all tasks for the scenario
+### Example 1: Get all tasks for a scenario
 
 #### Request
 

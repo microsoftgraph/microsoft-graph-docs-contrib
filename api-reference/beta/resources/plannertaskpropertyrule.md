@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific restrictions that apply to editing a [plannerTask](../resources/plannertask.md). For more details, see [Planner task rules overview](../resources/planner-task-rules-overview.md).
+Represents specific restrictions that apply to editing a [plannerTask](../resources/plannertask.md). For more details, see [Planner task rules overview](/graph/planner-task-rules-overview).
 
 Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 
