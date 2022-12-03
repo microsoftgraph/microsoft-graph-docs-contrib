@@ -15727,9 +15727,9 @@ items:
           href: api/sitepage-delete.md
         - name: Publish
           href: api/sitepage-publish.md
-        - name: Horizontal Section
+        - name: Horizontal section
           items:
-          - name: Horizontal Section
+          - name: Horizontal section
             href: resources/horizontalsection.md
           - name: List
             href: api/horizontalsection-list.md
@@ -15737,23 +15737,23 @@ items:
             href: api/horizontalsection-get.md
           - name: Column
             items:
-            - name: Horizontal Section Column
+            - name: Horizontal section column
               href: resources/horizontalsectioncolumn.md
             - name: List
               href: api/horizontalsectioncolumn-list.md
             - name: Get
               href: api/horizontalsectioncolumn-get.md
-        - name: Vertical Section
+        - name: Vertical section
           items:
-          - name: Vertical Section
+          - name: Vertical section
             href: resources/verticalsection.md
           - name: Get
             href: api/verticalsection-get.md
-        - name: WebPart
+        - name: Web part
           items:
-          - name: WebPart
+          - name: Web part
             href: resources/webpart.md
-          - name: Text WebPart
+          - name: Text web part
             href: resources/textwebpart.md
           - name: Standard WebPart
             href: resources/standardwebpart.md
@@ -15761,9 +15761,9 @@ items:
             href: api/webpart-list.md
           - name: Get 
             href: api/webpart-get.md
-          - name: Get Position
+          - name: Get position
             href: api/webpart-getposition.md
-          - name: Get By Position
+          - name: Get by position
             href: api/sitepage-getwebpartsbyposition.md
       - name: Rich long-running operation
         items:
