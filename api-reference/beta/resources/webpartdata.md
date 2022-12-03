@@ -1,6 +1,6 @@
 ---
 title: "webPartData resource type"
-description: Represents the data of a given WebPart
+description: Represents the data of a given web part.
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the data of a given WebPart.
+Represents the data of a given web part.
 
 ## Properties
 
 | Property               | Type                                                             | Description                                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| audiences              | String collection                                                | Audience information of the webPart. By using this property, specific content will be prioritized to specific audiences.                            |
-| dataVersion            | String                                                           | Data version of the webPart. The value is defined by the webPart's developer. Different dataVersion usually refers to different property structure. |
-| description            | String                                                           | Description of the WebPart.                                                                                                                         |
-| properties             | [Json](../resources/json.md)                                     | Properties bag of the WebPart.                                                                                                                      |
+| audiences              | String collection                                                | Audience information of the web part. By using this property, specific content will be prioritized to specific audiences.                            |
+| dataVersion            | String                                                           | Data version of the web part. The value is defined by the web part developer. Different dataVersions usually refers to a different property structure. |
+| description            | String                                                           | Description of the web part.                                                                                                                         |
+| properties             | [Json](../resources/json.md)                                     | Properties bag of the web part.                                                                                                                      |
 | serverProcessedContent | [serverProcessedContent](../resources/serverprocessedcontent.md) | Contains collections of data that can be processed by server side services like search index and link fixup.                                        |
-| title                  | String                                                           | Title of the WebPart.                                                                                                                               |
+| title                  | String                                                           | Title of the web part.                                                                                                                               |
 
 ## Relationships
 
