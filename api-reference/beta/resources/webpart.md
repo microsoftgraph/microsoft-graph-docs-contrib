@@ -1,6 +1,6 @@
 ---
 title: 'webPart resource type'
-description: Represents a specific webPart instance on a SharePoint page
+description: Represents a specific web part instance on a SharePoint page.
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specific webPart instance on a SharePoint page.
+Represents a specific web part instance on a SharePoint page.
 
 This is an abstract type.
 
@@ -26,13 +26,13 @@ Inherits from [entity](../resources/entity.md).
 | [List webParts](../api/webpart-list.md)                                        | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects and their properties.                                                          |
 | [Get webPart](../api/webpart-get.md)                                           | [webPart](../resources/webpart.md)                 | Read the properties and relationships of a [webPart](../resources/webpart.md) object.                                                       |
 | [Get webPart position](../api/webpart-getposition.md)                          | [webPartPosition](../resources/webpartposition.md) | Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).                             |
-| [Get webPart collection by position](../api/sitePage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information. ßπ |
+| [Get webPart collection by position](../api/sitePage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information.  |
 
 ## Properties
 
 | Property | Type   | Description                                                                                 |
 | :------- | :----- | :------------------------------------------------------------------------------------------ |
-| id       | String | Unique instance identifier of the webPart. Inherited from [entity](../resources/entity.md). |
+| id       | String | Unique instance identifier of the web part. Inherited from [entity](../resources/entity.md). |
 
 ## Relationships
 
