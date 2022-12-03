@@ -55,7 +55,7 @@ When using JSON format, provide a JSON object in the request body with the follo
 
 | Parameter	   | Type	| Description |
 |---------------|-------|---------|
-| comment | String | A comment to include, which can be an empty string. |
+| comment | String | A comment to include. Can be an empty string. |
 | message | [message](../resources/message.md) | Any writeable properties to update in the reply message. |
 
 When specifying the body in MIME format, provide the MIME content with the applicable Internet message headers, all encoded in **base64** format in the request body. This method uses the sender of the original message as recipient.
