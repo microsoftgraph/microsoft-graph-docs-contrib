@@ -70,11 +70,11 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_businessscenario",
-  "sampleKeys": [""]
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenarioId}
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d
 ```
 
 ### Response

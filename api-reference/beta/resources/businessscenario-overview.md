@@ -10,18 +10,17 @@ ms.prod: ""
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Business scenarios API allows creation and management of business scenarios that configure and manage integration of data into Microsoft Graph.
+The business scenarios API allows creation and management of business scenarios that configure and manage integration of data into Microsoft Graph.
 
 ## Structure of a business scenario
 
-A business scenario is represented by the [businessScenario](businessscenario.md) entity. The business scenario contains general information about the scenario, specifies which applications can use the scenario, as well as configurations for entities that can be managed with the scenario. Each scenario specifies a unique name, which allows the scenario to be accessed by the application independent of the instance-specific identifier.
+A business scenario is represented by the [businessScenario](businessscenario.md) entity. A **businessScenario** resource specifies general information about the scenario, the apps that use that scenario, and configurations for entities that apps can manage to support the scenario. Apps can identify their instance of **businessScenario** by the **uniqueName** property using a reverse domain name format.
 
 ### Entities available in business scenarios
 
-Business scenarios currently support creating content for the following services:
+The business scenarios API is designed to allow Microsoft Graph services to extend it to support service-specific scenarios of their app developer customers.
 
-* [Planner](businessscenario-planner-overview.md), with the following supported entities:
-  * [businessScenarioTask](businessscenariotask.md)
+Currently, [Planner](businessscenario-planner-overview.md) has extended the API. The API supports custom scenario data for Planner in the [businessScenarioTask](businessscenariotask.md) entity.
 
 ## Creating a business scenario
 
@@ -49,6 +48,14 @@ Each service supported through business scenarios provide access to data within 
 Applications that own a business scenario can delete the scenario if they have the `BusinessScenarioConfig.ReadWrite.OwnedBy` permission. Deleting the scenario removes all the data associated with the scenario as well.
 
 For more information, see [Delete businessScenario](../api/solutionsroot-delete-businessscenarios.md).
+
+## Common use cases
+
+| Use cases | REST resources | See also |
+|:----------|:---------------|:---------|
+|Create, read, update, and delete business scenarios|[businessScenario](businessscenario.md)|[Methods of businessScenario](businessscenario.md#methods)|
+|Configure business scenarios for Planner| [plannerPlanConfiguration](plannerplanconfiguration.md) [plannerTaskConfiguration](plannertaskconfiguration.md)|[Methods of plannerPlanConfiguration](plannerplanconfiguration.md#methods) [Methods of plannerTaskConfiguration](plannertaskconfiguration.md#methods)|
+|Create, read, update, and delete business scenario tasks in Planner| [businessScenarioTask](businessscenariotask.md)| [businessScenarioTask](businessscenariotask.md#methods)|
 
 ## What's new
 

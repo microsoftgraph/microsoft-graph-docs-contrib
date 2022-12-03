@@ -8,7 +8,7 @@ ms.prod: ""
 
 # Business scenarios API overview (preview)
 
-Business scenarios allow integration of real work business processes into native Microsoft Graph entities. Business scenarios allow applications to create data in the tenant that looks like any other data, however they can specify behaviors for this data to make sure the requirements of the represented business process can be met. Using business scenarios applications can work at the tenant level, without having access to the tenant data, outside of the data created for a specific scenario.
+The business scenarios API allows apps to model and integrate real work business processes with a Microsoft 365 service over Microsoft Graph. Business scenarios allow applications to create data in form of existing Microsoft Graph entities in the tenant, however they can specify behaviors for this data to make sure the requirements of the represented business process can be met. While the data creted for the scenario behaves in accordance witht he scenario rules, other applications can consume this data the same way it consumes other data for the same entity types. Using business scenarios applications can work at the tenant level, without having access to the tenant data, outside of the data created for a specific scenario.
 
 Business scenarios currently allow Microsoft Planner data to be generated through a scenario.
 
@@ -27,6 +27,10 @@ Business scenarios control how the users and other applications can interact wit
 ### Control over data
 
 Business scenario controls the scenario-related data. The data created from the scenario is always tied to the scenario, and the configurations set on the scenario apply to all scenario data, even if the data was created before the configuration change. Administrators can control which apps have access to manage the data, or add new applications that can manage existing scenario data. If no longer required, the scenarios can be deleted, which will delete all associated data for the scenario.
+
+### Central control over configuration
+
+Business scenario provides a single point of configuration. The behavior of data and the user experience around them can be changed globally by simply updating the scenario, instead of finding and updating each data object separately.
 
 ### Integrate data from other sources
 

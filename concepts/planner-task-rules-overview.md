@@ -12,7 +12,7 @@ Rules allow customization of what can and can't be done on tasks, and the Planne
 
 Task property rules are represented by [plannerTaskPropertyRule](/graph/api/resources/plannertaskpropertyrule.md) entity and describe the allowed actions at the task-level and rules around each configurable property.
 
-Depending on the specific entry has either a collection of values or a [fieldRules](/graph/api/resources/plannerfieldrules.md) is specified. Field rules specify a collection of values as default, and provides separate collection of values for override conditions. For any collection of values, the specified values are what is allowed, omitted values will be disallowed.
+Depending on the specific entry, the rules specify either a collection of values or a [fieldRules](plannerfieldrules.md). Field rules specify a collection of values as default, and provides separate collection of values for override conditions. For any collection of values, the specified values are what is allowed, omitted values will be disallowed.
 
 In this article, you will learn the behaviors associated with each entry and the override conditions supported by each property.
 
@@ -75,7 +75,7 @@ The **assignments** property is configured with [fieldRules](/graph/api/resource
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead. The **defaultRules** must be specified.
 
 * `userCreated`: Rules apply if the assignment was created by a user.
 * `applicationCreated`: Rules apply if the assignment was created using application permissions.
@@ -94,7 +94,7 @@ The **checkLists** property is configured with [fieldRules](/graph/api/resources
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead. The **defaultRules** must be specified.
 
 * `userCreated`: Rules apply if the checklist item was created by a user.
 * `applicationCreated`: Rules apply if the checklist item was created using application permissions.
@@ -158,7 +158,7 @@ References property is configured with [fieldRules](/graph/api/resources/planner
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property will apply instead. The **defaultRules** must be specified.
 
 * `userCreated`: Rules apply if the task reference was created by a user.
 * `applicationCreated`: Rules apply if the task reference was created using application permissions.

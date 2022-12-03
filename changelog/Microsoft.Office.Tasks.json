@@ -1161,22 +1161,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [plannerTaskRoleBasedRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskRoleBasedRule?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskRoleBasedRule"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Resource",
-          "ChangedApiName": "plannerBucketPropertyRule",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerBucketPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerBucketPropertyRule?view=graph-rest-beta) resource type.",
-          "Target": "plannerBucketPropertyRule"
-        },
-        {
-          "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",
-          "ApiChange": "Resource",
-          "ChangedApiName": "plannerPlanPropertyRule",
-          "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanPropertyRule?view=graph-rest-beta) resource type.",
-          "Target": "plannerPlanPropertyRule"
         }
       ],
       "Id": "8b0db479-fcd5-4bbc-a9d8-43fb039f6664",

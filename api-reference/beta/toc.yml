@@ -1749,47 +1749,29 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
-      - name: Records management (preview)
+      - name: Subject rights request
         items:
         - name: Overview
-          href: resources/security-recordsManagement-overview.md
-        - name: Retention label
-          href: resources/security-retentionlabel.md
+          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+        - name: Subject rights request
+          href: resources/subjectrightsrequest.md
           items:
           - name: List
-            href: api/security-retentionlabel-list.md
+            href: api/subjectrightsrequest-list.md
           - name: Create
-            href: api/security-retentionlabel-post.md
+            href: api/subjectrightsrequest-post.md
           - name: Get
-            href: api/security-retentionlabel-get.md
+            href: api/subjectrightsrequest-get.md
           - name: Update
-            href: api/security-retentionlabel-update.md
-          - name: Delete
-            href: api/security-retentionlabel-delete.md
-        - name: Retention event
-          href: resources/security-retentionevent.md
-          items:
-          - name: List
-            href: api/security-retentionevent-list.md
-          - name: Create
-            href: api/security-retentionevent-post.md
-          - name: Get
-            href: api/security-retentionevent-get.md
-          - name: Delete
-            href: api/security-retentionevent-delete.md
-        - name: Retention event type
-          href: resources/security-retentioneventtype.md
-          items:
-          - name: List
-            href: api/security-retentioneventtype-list.md
-          - name: Create
-            href: api/security-retentioneventtype-post.md
-          - name: Get
-            href: api/security-retentioneventtype-get.md
-          - name: Update
-            href: api/security-retentioneventtype-update.md
-          - name: Delete
-            href: api/security-retentioneventtype-delete.md
+            href: api/subjectrightsrequest-update.md
+          - name: Get final report
+            href: api/subjectrightsrequest-getfinalreport.md
+          - name: Get final attachment
+            href: api/subjectrightsrequest-getfinalattachment.md
+          - name: List notes
+            href: api/subjectrightsrequest-list-notes.md
+          - name: Create note
+            href: api/subjectrightsrequest-post-notes.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -1927,7 +1909,7 @@ items:
     - name: Device and app management
       expanded: true
       items:
-      - name: Browser management
+      - name: Browser management (preview)
         displayName: Edge, Internet Explorer, IE mode, site list
         items:
         - name: Overview
@@ -15300,7 +15282,7 @@ items:
             href: api/security-ediscoverycase-delete-searches.md
           - name: Estimate statistics
             href: api/security-ediscoverysearch-estimatestatistics.md
-          - name: Purge data (preview)
+          - name: Purge data
             href: api/security-ediscoverysearch-purgedata.md
           - name: List custodian sources
             href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15449,6 +15431,47 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Records management (preview)
+        items:
+        - name: Overview
+          href: resources/security-recordsManagement-overview.md
+        - name: Retention label
+          href: resources/security-retentionlabel.md
+          items:
+          - name: List
+            href: api/security-retentionlabel-list.md
+          - name: Create
+            href: api/security-retentionlabel-post.md
+          - name: Get
+            href: api/security-retentionlabel-get.md
+          - name: Update
+            href: api/security-retentionlabel-update.md
+          - name: Delete
+            href: api/security-retentionlabel-delete.md
+        - name: Retention event
+          href: resources/security-retentionevent.md
+          items:
+          - name: List
+            href: api/security-retentionevent-list.md
+          - name: Create
+            href: api/security-retentionevent-post.md
+          - name: Get
+            href: api/security-retentionevent-get.md
+          - name: Delete
+            href: api/security-retentionevent-delete.md
+        - name: Retention event type
+          href: resources/security-retentioneventtype.md
+          items:
+          - name: List
+            href: api/security-retentioneventtype-list.md
+          - name: Create
+            href: api/security-retentioneventtype-post.md
+          - name: Get
+            href: api/security-retentioneventtype-get.md
+          - name: Update
+            href: api/security-retentioneventtype-update.md
+          - name: Delete
+            href: api/security-retentioneventtype-delete.md
       - name: Secure score
         href: resources/securescores.md
         items:
@@ -15829,20 +15852,6 @@ items:
           href: api/plannertask-delete.md
         - name: List user's tasks
           href: api/planneruser-list-tasks.md
-      - name: Task details
-        href: resources/plannertaskdetails.md
-        items:
-        - name: Get task details
-          href: api/plannertaskdetails-get.md
-        - name: Update task details
-          href: api/plannertaskdetails-update.md
-      - name: Plan details
-        href: resources/plannerplandetails.md
-        items:
-        - name: Get plan details
-          href: api/plannerplandetails-get.md
-        - name: Update plan details
-          href: api/plannerplandetails-update.md
       - name: Bucket
         href: resources/plannerbucket.md
         items:
@@ -15860,6 +15869,65 @@ items:
         items:
         - name: Overview
           href: resources/businessscenario-overview.md
+        - name: Integrating with plans and tasks
+          href: resources/businessscenario-planner-overview.md
+        - name: Business scenario
+          items:
+          - name: Business scenario
+            href: resources/businessscenario.md
+          - name: List
+            href: api/solutionsroot-list-businessscenarios.md
+        - name: Business scenario in Planner
+          items:
+          - name: Business scenario Planner
+            href: resources/businessscenarioplanner.md
+          - name: Get
+            href: api/businessscenarioplanner-get.md
+        - name: Plan configuration in business scenario
+          items:
+          - name: Plan configuration
+            href: resources/plannerplanconfiguration.md
+          - name: Get
+            href: api/plannerplanconfiguration-get.md
+        - name: Task configuration in business scenario
+          items:
+          - name: Task configuration
+            href: resources/plannertaskconfiguration.md
+          - name: Get
+            href: api/plannertaskconfiguration-get.md
+        - name: Task in business scenario
+          items:
+          - name: Business scenario task
+            href: resources/businessscenariotask.md
+          - name: List
+            href: api/businessscenarioplanner-list-tasks.md
+      - name: Get delta
+        href: api/planneruser-list-delta.md
+      - name: Plan details
+        href: resources/plannerplandetails.md
+        items:
+        - name: Get plan details
+          href: api/plannerplandetails-get.md
+        - name: Update plan details
+          href: api/plannerplandetails-update.md
+      - name: Planner roster (preview)
+        items:
+        - name: Planner roster
+          href: resources/plannerroster.md
+        - name: Create roster
+          href: api/planner-post-rosters.md
+        - name: Delete roster
+          href: api/plannerroster-delete.md
+        - name: List roster's members
+          href: api/plannerroster-list-members.md
+        - name: Add a member to roster
+          href: api/plannerroster-post-members.md
+        - name: Remove a member from roster
+          href: api/plannerrostermember-delete.md
+        - name: List plans in roster
+          href: api/plannerroster-list-plans.md
+        - name: List user's plans in rosters
+          href: api/planneruser-list-rosterplans.md
       - name: Planner user
         href: resources/planneruser.md
         items:
@@ -15873,8 +15941,13 @@ items:
           href: api/planneruser-list-recentplans.md
         - name: List user's assigned tasks
           href: api/planneruser-list-tasks.md
-      - name: Get delta
-        href: api/planneruser-list-delta.md
+      - name: Task details
+        href: resources/plannertaskdetails.md
+        items:
+        - name: Get task details
+          href: api/plannertaskdetails-get.md
+        - name: Update task details
+          href: api/plannertaskdetails-update.md
       - name: Task formats
         items:
         - name: Assigned-to view
@@ -15898,24 +15971,6 @@ items:
             href: api/plannerprogresstaskboardtaskformat-get.md
           - name: Update progress task board format
             href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Planner roster (preview)
-        items:
-        - name: Planner roster
-          href: resources/plannerroster.md
-        - name: Create roster
-          href: api/planner-post-rosters.md
-        - name: Delete roster
-          href: api/plannerroster-delete.md
-        - name: List roster's members
-          href: api/plannerroster-list-members.md
-        - name: Add a member to roster
-          href: api/plannerroster-post-members.md
-        - name: Remove a member from roster
-          href: api/plannerrostermember-delete.md
-        - name: List plans in roster
-          href: api/plannerroster-list-plans.md
-        - name: List user's plans in rosters
-          href: api/planneruser-list-rosterplans.md
     - name: Teamwork and communications
       displayName: Microsoft Teams
       items:

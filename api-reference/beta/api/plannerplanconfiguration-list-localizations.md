@@ -64,7 +64,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Exmaple 1: Get all localizations
+
+#### Request
 
 The following is an example of a request.
 <!-- {
@@ -77,7 +79,55 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration/localizations
 ```
 
-### Response
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.plannerPlanConfigurationLocalization)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
+      "id": "en-us",
+      "languageTag": "en-us",
+      "planTitle": "Plan title",
+      "buckets": [
+        {
+          "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+          "externalBucketId": "123",
+          "name": "Bucket name"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Example 2: Get localization for a specific language tag
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_plannerplanconfigurationlocalization",
+  "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration/localizations?$filter=languageTag eq 'en-us'
+```
+
+#### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
