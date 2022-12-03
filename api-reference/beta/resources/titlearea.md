@@ -1,6 +1,6 @@
 ---
 title: 'titleArea resource type'
-description: Represents the title area of a given SharePoint page
+description: Represents the title area of a given SharePoint page.
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -21,7 +21,7 @@ Represents the title area of a given SharePoint page.
 | :---------------------- | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | alternativeText         | String                                                                                    | Alternative text on the title area.                                                                                                                           |
 | enableGradientEffect    | Boolean                                                                                   | Indicates whether the title area has a gradient effect enabled.                                                                                               |
-| imageWebUrl                  | String                                                                                    | Url of The image in the title area.                                                                                                                           |
+| imageWebUrl                  | String                                                                                    | URL of the image in the title area.                                                                                                                           |
 | layout                  | [titleAreaLayoutType](../resources/titlearea.md#titlearealayouttype-values)               | Enumeration value that indicates the layout of the title area. The possible values are: `imageAndTitle`, `plain`, `colorBlock`, `overlap`, `unknownFutureValue`. |
 | serverProcessedContent | [serverProcessedContent](../resources/serverprocessedcontent.md) | Contains collections of data that can be processed by server side services like search index and link fixup. |
 | showAuthor              | Boolean                                                                                   | Indicates whether the author should be shown in title area.                                                                                                  |
