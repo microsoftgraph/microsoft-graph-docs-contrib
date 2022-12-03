@@ -1,6 +1,6 @@
 ---
 title: 'webPartPosition resource type'
-description: Represents the position information of the given WebPart to the current page.
+description: Represents the position information of the given web part to the current page.
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the position information of the given WebPart to the current page.
+Represents the position information of the given web part to the current page.
 
 ## Properties
 
 | Property            | Type    | Description                                                                              |
 | :------------------ | :------ | :--------------------------------------------------------------------------------------- |
-| columnId            | Double  | Indicates the identifier of the column where the webPart located in.                      |
-| horizontalSectionId | Double  | Indicates the horizontal section where the webPart located in.                            |
-| isInVerticalSection | boolean | Indicates whether the webPart located in the vertical section.                            |
-| webPartIndex        | Double  | Index of the current webPart. Represents the order of webPart in this column or section. |
+| columnId            | Double  | Indicates the identifier of the column where the web part is located.                      |
+| horizontalSectionId | Double  | Indicates the horizontal section where the web part is located.                            |
+| isInVerticalSection | boolean | Indicates whether the web part is located in the vertical section.                            |
+| webPartIndex        | Double  | Index of the current web part. Represents the order of the web part in this column or section. |
 
 ## Relationships
 
