@@ -19,8 +19,8 @@ Represents a key-value (string) pair of the metadata.
 
 | Property | Type   | Description                                 |
 | :------- | :----- | :------------------------------------------ |
-| key      | String | Key of the metadata.                       |
-| value    | String | Value of the metadata. Should be a string. |
+| key      | String | Key of the meta data.                       |
+| value    | String | Value of the meta data. |
 
 ## Relationships
 

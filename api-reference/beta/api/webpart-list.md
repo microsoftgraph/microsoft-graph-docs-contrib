@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the webPart resources from a sitePage. Sort by the order in which they appear on the page.
+Get the [webPart](../resources/webpart.md) resources from a [sitePage](../resources/sitepage.md). Sort by the order in which they appear on the page.
 
 ## Permissions
 

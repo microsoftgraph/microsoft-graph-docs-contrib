@@ -1,5 +1,5 @@
 ---
-title: "Get webpart position"
+title: "webPart: getPosition"
 description: "Get position information of a webPart"
 author: sangle7
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Get webpart position
+# webPart: getPosition
 
 Namespace: microsoft.graph
 

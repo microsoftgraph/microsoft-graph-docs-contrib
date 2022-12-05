@@ -1,5 +1,5 @@
 ---
-title: 'Get webparts by position'
+title: 'sitepage: get webparts by position'
 description: 'Get a collection of webParts by position information'
 author: sangle7
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Get webparts by position
+# sitepage: get webparts by position
 
 Namespace: microsoft.graph
 
