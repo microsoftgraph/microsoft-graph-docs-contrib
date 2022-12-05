@@ -3,7 +3,7 @@ title: "Business scenarios API overview (preview)"
 description: "Learn how to use the business scenarios API in Microsoft Graph to integrate data into Microsoft Graph entities."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: ""
+ms.prod: "business-scenarios"
 ---
 
 # Business scenarios API overview (preview)

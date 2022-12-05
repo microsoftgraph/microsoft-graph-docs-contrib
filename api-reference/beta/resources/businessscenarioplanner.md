@@ -3,7 +3,7 @@ title: "businessScenarioPlanner resource type"
 description: "Contains Microsoft Planner-related content for the scenario, allowing both configuration of Planner behavior and accessing the scenario data in Planner."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: resourcePageType
 ---
 

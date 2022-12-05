@@ -3,7 +3,7 @@ title: "Planner task rules overview (preview)"
 description: "Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: ""
+ms.prod: "business-scenarios"
 ---
 
 # Planner task rules overview (preview)

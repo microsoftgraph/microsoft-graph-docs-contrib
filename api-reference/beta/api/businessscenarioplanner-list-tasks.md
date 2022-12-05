@@ -3,7 +3,7 @@ title: "List businessScenarioTasks"
 description: "Get a list of the businessScenarioTask objects and their properties."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: apiPageType
 ---
 

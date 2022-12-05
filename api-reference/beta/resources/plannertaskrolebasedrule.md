@@ -3,7 +3,7 @@ title: "plannerTaskRoleBasedRule resource type"
 description: "Represents the rules for editing tasks created for a scenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: resourcePageType
 ---
 

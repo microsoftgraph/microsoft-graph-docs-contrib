@@ -3,7 +3,7 @@ title: "Delete businessScenario"
 description: "Delete a businessScenario object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: apiPageType
 ---
 

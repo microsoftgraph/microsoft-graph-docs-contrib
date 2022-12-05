@@ -3,7 +3,7 @@ title: "plannerRuleOverride resource type"
 description: "Represents an overridden rule as part of plannerFieldRules."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "plannerTaskPropertyRule resource type"
 description: "Represents specific restrictions that apply to editing a plannerTask."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: resourcePageType
 ---
 

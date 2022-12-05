@@ -3,7 +3,7 @@ title: "Update plannerPlanConfiguration"
 description: "Update the properties of a plannerPlanConfiguration object for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: apiPageType
 ---
 

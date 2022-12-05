@@ -3,7 +3,7 @@ title: "businessScenarioGroupTarget resource type"
 description: "Represents a [group](../resources/group.md) which will be used as the target when creating tasks in a [businessScenario](businessscenario.md)."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: resourcePageType
 ---
 

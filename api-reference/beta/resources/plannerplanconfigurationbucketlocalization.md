@@ -3,7 +3,7 @@ title: "plannerPlanConfigurationBucketLocalization resource type"
 description: "Represents the localized name of a bucket in a plannerPlanConfigurationLocalization."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: resourcePageType
 ---
 

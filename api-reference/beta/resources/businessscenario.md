@@ -3,7 +3,7 @@ title: "businessScenario resource type"
 description: "Represents a scenario which collects relevant data and configuration for a specific problem domain."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "businessScenarioTask resource type"
 description: "Represents a plannerTask that is associated with a businessScenario and contains additional scenario data."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "business-scenarios"
 doc_type: resourcePageType
 ---
 
