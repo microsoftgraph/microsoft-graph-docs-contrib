@@ -10550,6 +10550,8 @@ items:
             href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
           - name: Get total aggregated remote conneciton reports
             href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+          - name: Get shared Use license usage reports
+            href: api/cloudpcreports-getshareduselicenseusagereoport.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
