@@ -46,7 +46,7 @@ You can specify the following properties when creating a **crossTenantIdentitySy
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Optional.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Azure AD organization. Optional.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines the partner-specific configuration for inbound user synchronization.|
 
 

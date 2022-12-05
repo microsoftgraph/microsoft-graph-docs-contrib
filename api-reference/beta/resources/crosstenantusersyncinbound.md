@@ -18,7 +18,7 @@ Defines the inbound user synchronization for partner configurations within cross
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSyncAllowed|Boolean|Defines whether user objects should be synchronized. If set to false, any current user synchronization from the source tenant to the target tenant will stop. Also, user objects that already been synchronized will not be cleaned up.|
+|isSyncAllowed|Boolean|Defines whether user objects should be synchronized. If set to false, any current user synchronization from the source tenant to the target tenant will stop. There is no impact to existing users that have already been synchronized.|
 
 ## Relationships
 None.

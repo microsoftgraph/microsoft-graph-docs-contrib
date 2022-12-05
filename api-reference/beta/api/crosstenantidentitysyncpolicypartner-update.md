@@ -45,7 +45,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 |Property|Type|Description|
 |:---|:---|:---|
 |tenantId|String|Tenant identifier for the partner Azure AD organization. Read-only.|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Optional.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Azure AD organization. Optional.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines the partner-specific configuration for inbound user synchronization.|
 
 
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-If you set `isSyncAllowed` to false, any current user synchronization from the source tenant to the target tenant will stop. Also, user objects that already been synchronized will not be cleaned up.
+If you set `isSyncAllowed` to false, any current user synchronization from the source tenant to the target tenant will stop. There is no impact to existing users that have already been synchronized.
 
 ### Request
 The following is an example of a request.

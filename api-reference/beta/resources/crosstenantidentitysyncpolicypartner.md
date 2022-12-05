@@ -27,7 +27,7 @@ Defines the user synchronization policy for partner configurations within cross-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Optional.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Azure AD organization. Optional.|
 |tenantId|String|Tenant identifier for the partner Azure AD organization. Read-only.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines the partner-specific configuration for inbound user synchronization.|
 
