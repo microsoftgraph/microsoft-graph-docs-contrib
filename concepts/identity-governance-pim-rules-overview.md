@@ -38,9 +38,7 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ### Activation rules
 
-<!--:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation-inline.png" alt-text="PIM role activation settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation-expanded.png":::-->
-
-:::image type="content" source="images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation-expanded.png" alt-text="PIM role activation settings on the Azure portal.":::
+:::image type="content" source="images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation.png" alt-text="PIM role activation settings on the Azure portal.":::
 
 | Number | Microsoft Graph Rule ID / Derived resource type                                                   | Azure portal UX Description                                                                                                                              | Enforced for caller |
 |---------|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
@@ -51,9 +49,7 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ## Assignment rules
 
-<!--:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment-inline.png" alt-text="PIM role assignment settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment-expanded.png":::-->
-
-:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment-expanded.png" alt-text="PIM role assignment settings on the Azure portal.":::
+:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment.png" alt-text="PIM role assignment settings on the Azure portal.":::
 
 | Number | Microsoft Graph Rule ID / Derived resource type                             | Azure portal UX Description                                                                                   | Enforced for caller |
 |---------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|----------------------|
@@ -64,9 +60,7 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ## Notification rules
 
-<!--:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification-inline.png" alt-text="PIM role notification settings on the Azure portal." lightbox="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification-expanded.png":::-->
-
-:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification-expanded.png" alt-text="PIM role notification settings on the Azure portal.":::
+:::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification.png" alt-text="PIM role notification settings on the Azure portal.":::
 
 | Number | Microsoft Graph Rule ID / Derived resource type                                           | Azure portal UX Description                                                                                                   | Enforced for caller               |
 |--------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------|
