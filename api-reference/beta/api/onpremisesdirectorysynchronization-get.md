@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization
+GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 ```
 
 ### Response
@@ -82,15 +82,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.onPremisesDirectorySynchronization",
-    "id": "5b9cdf70-03a6-87ad-df4e-8283368fc372",
-    "configuration": {
-      "@odata.type": "microsoft.graph.onPremisesDirectorySynchronizationConfiguration"
-    },
-    "features": {
-      "@odata.type": "microsoft.graph.onPremisesDirectorySynchronizationFeature"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/onPremisesSynchronization/$entity",
+  "id": "12cce4b4-4ab8-40b7-be4d-f5d7742ec185",
+  "configuration": {
+    "synchronizationInterval": "PT30M",
+    "customerRequestedSynchronizationInterval": "PT1H",
+    "accidentalDeletionPrevention": {
+      "synchronizationPreventionType": "enabledForCount",
+      "alertThreshold": 500
     }
+  },
+  "features": {
+    "passwordSyncEnabled": false,
+    "passwordWritebackEnabled": false,
+    "directoryExtensionsEnabled": false,
+    "quarantineUponUpnConflictEnabled": true,
+    "quarantineUponProxyAddressesConflictEnabled": true,
+    "softMatchOnUpnEnabled": true,
+    "cloudPasswordPolicyForPasswordSyncedUsersEnabled": false,
+    "fopeConflictResolutionEnabled": false,
+    "unifiedGroupWritebackEnabled": false,
+    "userWritebackEnabled": false,
+    "deviceWritebackEnabled": false,
+    "synchronizeUpnForManagedUsersEnabled": true,
+    "userForcePasswordChangeOnLogonEnabled": false,
+    "concurrentOrgIdProvisioningEnabled": false,
+    "concurrentCredentialUpdateEnabled": false,
+    "groupWriteBackEnabled": false,
+    "blockSoftMatchEnabled": false,
+    "blockCloudObjectTakeoverThroughHardMatchEnabled": false,
+    "bypassDirSyncOverridesEnabled": false
   }
 }
 ```
