@@ -1,6 +1,6 @@
 ---
 title: "Create crossTenantIdentitySyncPolicyPartner"
-description: "Create a new crossTenantIdentitySyncPolicyPartner object."
+description: "Create a cross-tenant user synchronization policy for a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) object.
+Create a cross-tenant user synchronization policy for a partner-specific configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /policies/crossTenantIdentitySyncPolicy/partners
+PUT /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
 ## Request headers
@@ -44,13 +44,10 @@ In the request body, supply a JSON representation of the [crossTenantIdentitySyn
 
 You can specify the following properties when creating a **crossTenantIdentitySyncPolicyPartner**.
 
-**TODO: Remove properties that don't apply**
-
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|**TODO: Add Description** Required.|
-|displayName|String|**TODO: Add Description** Optional.|
-|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Optional.|
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines the partner-specific configuration for inbound user synchronization.|
 
 
 
@@ -68,23 +65,21 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/crossTenantIdentitySyncPolicy/partners
+PUT https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1/identitySynchronization
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-  "tenantId": "String",
-  "displayName": "String",
-  "userSyncInbound": {
-    "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
+  "displayName": "Fabrikam",
+  "userSyncInbound":
+      {
+    "isSyncAllowed": true
   }
 }
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,16 +87,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-  "tenantId": "String",
-  "displayName": "String",
-  "userSyncInbound": {
-    "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
