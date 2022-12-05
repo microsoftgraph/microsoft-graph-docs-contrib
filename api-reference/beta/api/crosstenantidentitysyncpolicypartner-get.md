@@ -76,12 +76,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
-    "displayName": "Fabrikam",
-    "userSyncInbound":
-    {
-        "isSyncAllowed": true
-    }
+  "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
+  "displayName": "Fabrikam",
+  "userSyncInbound":
+  {
+    "isSyncAllowed": true
+  }
 }
 ```
 
