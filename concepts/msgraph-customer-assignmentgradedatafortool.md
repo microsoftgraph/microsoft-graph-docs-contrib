@@ -24,7 +24,7 @@ After you get the relevant class and member information, you can get the assignm
 
 ## Get class assignment information
 
-All assignments and students' information are linked to class and submission information respectively. You can use the following APIs to retrieve information about class assignments:
+All assignments and students' information are linked to class and submission information respectively:
 
 - [educationAssignment resource type](/graph/api/resources/educationassignment): Allows you to list and see all data for assignments in a class.
 
