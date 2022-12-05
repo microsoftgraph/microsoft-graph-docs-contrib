@@ -53,7 +53,7 @@ You can specify the following properties when creating a **crossTenantIdentitySy
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 {
   "displayName": "Fabrikam",
   "userSyncInbound":
-      {
+  {
     "isSyncAllowed": true
   }
 }
@@ -82,8 +82,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.crossTenantIdentitySyncPolicyPartner"
+  "truncated": true
 }
 -->
 ``` http
