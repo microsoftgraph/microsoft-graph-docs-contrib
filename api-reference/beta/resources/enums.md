@@ -3389,6 +3389,15 @@ Possible values for user account types (group membership), per Windows definitio
 |sharedContent|
 |unknownFutureValue|
 
+### chatMessageActions values 
+
+|Member|
+|:---|
+|reactionAdded|
+|reactionRemoved|
+|actionUndefined|
+|unknownFutureValue|
+
 ### onPremisesDirectorySynchronizationDeletionPreventionType values
 
 |Member|

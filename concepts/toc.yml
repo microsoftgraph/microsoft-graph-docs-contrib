@@ -20,15 +20,8 @@ items:
           - name: API changelog
             href: https://developer.microsoft.com/graph/changelog
             displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
-      - name: Users you can reach
-        items:
-          - name: Overview
-            href: users-you-can-reach.md
-            displayName: users you can reach
-          - name: National cloud deployments
-            href: deployments.md
-          - name: Hybrid deployments (deprecated)
-            href: hybrid-rest-support.md
+      - name: Try the APIs
+        href: graph-explorer/graph-explorer-overview.md
       - name: Quick start
         href: https://developer.microsoft.com/graph/quick-start
         displayName: quickstart
@@ -55,6 +48,15 @@ items:
             href: /graph/tutorials/python
           - name: TypeScript
             href: /graph/tutorials/typescript
+      - name: Users you can reach
+        items:
+          - name: Overview
+            href: users-you-can-reach.md
+            displayName: users you can reach
+          - name: National cloud deployments
+            href: deployments.md
+          - name: Hybrid deployments (deprecated)
+            href: hybrid-rest-support.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -88,8 +90,10 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
-          - name: Configure properties
+          - name: Manage applications
             href: tutorial-applications-basics.md
+          - name: Validation differences for signInAudience
+            href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
           - name: Grant and revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
@@ -216,7 +220,7 @@ items:
       - name: Device and app management
         expanded: true
         items:
-          - name: Browser management
+          - name: Browser management (preview)
             href: browser-edge-concept-overview.md
             displayName: Edge, Internet Explorer, IE mode, site list
           - name: Cloud printing
@@ -516,6 +520,8 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
+          - name: Search interleaving results
+            href: search-concept-interleaving.md
       - name: Security
         items:
           - name: Overview
