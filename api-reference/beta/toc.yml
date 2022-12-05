@@ -1919,91 +1919,91 @@ items:
       items:
         - name: Overview
           href: resources/industrydata-overview.md
-        - name: Data Connectors
+        - name: Data connectors
           href: resources/industrydata-industrydataconnector.md
           items:
-            - name: List Data Connectors
+            - name: List
               href: api/industrydata-industrydatatenant-list-industrydataconnectors.md
-            - name: Create Data Connector
+            - name: Create
               href: api/industrydata-industrydatatenant-post-industrydataconnectors.md
-            - name: Get Data Connector
+            - name: Get
               href: api/industrydata-industrydataconnector-get.md
-            - name: Update Data Connector
+            - name: Update
               href: api/industrydata-industrydataconnector-update.md
-            - name: Delete Data Connector
+            - name: Delete
               href: api/industrydata-industrydatatenant-delete-industrydataconnectors.md
-            - name: Upload Data Files
+            - name: Upload data files
               href: api/industrydata-azuredatalakeconnector-getuploadsession.md
-            - name: Validate Data Connector
+            - name: Validate
               href: api/industrydata-industrydataconnector-validate.md
-        - name: Inbound Data Flows
+        - name: Inbound data flows
           href: resources/industrydata-inboundflow.md
           items:
-            - name: List Inbound Flows
+            - name: List
               href: api/industrydata-industrydatatenant-list-inboundflows.md
-            - name: Create Inbound flow
+            - name: Create
               href: api/industrydata-industrydatatenant-post-inboundflows.md
-            - name: Get Inbound Flow
+            - name: Get
               href: api/industrydata-inboundflow-get.md
-            - name: Update Inbound Flow
+            - name: Update
               href: api/industrydata-inboundflow-update.md
-            - name: Delete Inbound flow
+            - name: Delete
               href: api/industrydata-industrydatatenant-delete-inboundflows.md
-        - name: Source Systems
+        - name: Source systems
           href: resources/industrydata-sourcesystemdefinition.md
           items:
-            - name: List Source Systems
+            - name: List
               href: api/industrydata-industrydatatenant-list-sourcesystemdefinitions.md
-            - name: Create Source System
+            - name: Create
               href: api/industrydata-industrydatatenant-post-sourcesystemdefinitions.md
-            - name: Get Source System
+            - name: Get
               href: api/industrydata-sourcesystemdefinition-get.md
-            - name: Update Source System
+            - name: Update
               href: api/industrydata-sourcesystemdefinition-update.md
-            - name: Delete Source System
+            - name: Delete
               href: api/industrydata-industrydatatenant-delete-sourcesystemdefinitions.md
-        - name: Time Periods
+        - name: Time periods
           href: resources/industrydata-yeartimeperioddefinition.md
           items:
-            - name: List Years
+            - name: List
               href: api/industrydata-industrydatatenant-list-yeartimeperioddefinitions.md
-            - name: Create Year
+            - name: Create
               href: api/industrydata-industrydatatenant-post-yeartimeperioddefinitions.md
-            - name: Get Year
+            - name: Get
               href: api/industrydata-yeartimeperioddefinition-get.md
-            - name: Update Year
+            - name: Update
               href: api/industrydata-yeartimeperioddefinition-update.md
-            - name: Delete Year
+            - name: Delete
               href: api/industrydata-industrydatatenant-delete-yeartimeperioddefinitions.md
-        - name: Long-running Operations
+        - name: Long-running operations
           href: resources/industrydata-longrunningoperation.md
           items:
-            - name: List Operations
+            - name: List
               href: api/industrydata-industrydatatenant-list-longrunningoperations.md
-            - name: Get Operation
+            - name: Get
               href: api/industrydata-longrunningoperation-get.md
-        - name: Reference Definitions
+        - name: Reference definitions
           href: resources/industrydata-referencedefinition.md
           items:
-            - name: List Reference Definitions
+            - name: List
               href: api/industrydata-industrydatatenant-list-referencedefinitions.md
-            - name: Get Reference Definitions
+            - name: Get
               href: api/industrydata-referencedefinition-get.md
-        - name: Role Groups
+        - name: Role groups
           href: resources/industrydata-rolegroup.md
           items:
-            - name: List Role Groups
+            - name: List
               href: api/industrydata-industrydatatenant-list-rolegroups.md
-            - name: Get Role Group
+            - name: Get
               href: api/industrydata-rolegroup-get.md
         - name: Activities
           href: resources/industrydata-industrydatarun.md
           items:
-            - name: List Runs
+            - name: List
               href: api/industrydata-industrydatatenant-list-industrydataruns.md
-            - name: Get Run
+            - name: Get
               href: api/industrydata-industrydatarun-get.md
-            - name: Get Statistics
+            - name: Get statistics
               href: api/industrydata-industrydatarunstatistics.md
     - name: Device and app management
       items:
