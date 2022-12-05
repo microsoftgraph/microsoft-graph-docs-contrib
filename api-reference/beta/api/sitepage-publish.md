@@ -1,7 +1,7 @@
 ---
 author: rahmit
 description: "Publish the latest version of a sitePage resource, which makes the version of the page available to all users."
-title: sitePage: publish
+title: "sitePage: publish"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
