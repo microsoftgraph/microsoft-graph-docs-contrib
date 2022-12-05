@@ -1,6 +1,6 @@
 ---
 title: "Delete crossTenantIdentitySyncPolicyPartner"
-description: "Delete a crossTenantIdentitySyncPolicyPartner object."
+description: "Delete the user synchronization policy for a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) object.
+Delete the user synchronization policy for a partner-specific configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /policies/crossTenantIdentitySyncPolicy/partners/{crossTenantIdentitySyncPolicyPartnerId}/$ref
-DELETE /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigurationPartnerId}/identitySynchronization/$ref
+DELETE /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
 ## Request headers
@@ -56,13 +55,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/policies/crossTenantIdentitySyncPolicy/partners/{crossTenantIdentitySyncPolicyPartnerId}
+DELETE https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9c5d131d-b1c3-4fc4-9e3f-c6557947d551/identitySynchronization
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 ---
 title: "List partners"
-description: "Get the crossTenantIdentitySyncPolicyPartner resources from the partners navigation property."
+description: "List the user synchronization policy for all partner configurations."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the crossTenantIdentitySyncPolicyPartner resources from the partners navigation property.
+List the user synchronization policy for all partner configurations.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /policies/crossTenantIdentitySyncPolicy/partners
+GET /policies/crossTenantAccessPolicy/partners
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/crossTenantIdentitySyncPolicy/partners
+GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners?select=tenantId&$expand=identitySynchronization
 ```
 
 
@@ -76,16 +76,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-      "tenantId": "String",
-      "displayName": "String",
-      "userSyncInbound": {
-        "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
-      }
-    }
-  ]
+    "value": [
+        {
+            "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
+            "identitySynchronization": {
+                "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
+                "displayName": "Fabrikam",
+                "userSyncInbound":
+                {
+                    "isSyncAllowed": true
+                }
+            }
+        }
+    ]
 }
 ```
-

@@ -1,6 +1,6 @@
 ---
 title: "crossTenantUserSyncInbound resource type"
-description: "Configuration for inbound user synchronization."
+description: "Defines the inbound user synchronization for partner configurations within cross-tenant access settings."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines the inbound user synchronization for partner configurations within cross-tenant access settings.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSyncAllowed|Boolean|**TODO: Add Description**|
+|isSyncAllowed|Boolean|Defines whether user objects should be synchronized. If set to false, any current user synchronization from the source tenant to the target tenant will stop. Also, user objects that already been synchronized will not be cleaned up.|
 
 ## Relationships
 None.

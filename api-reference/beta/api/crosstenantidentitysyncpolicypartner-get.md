@@ -1,6 +1,6 @@
 ---
 title: "Get crossTenantIdentitySyncPolicyPartner"
-description: "Read the properties and relationships of a crossTenantIdentitySyncPolicyPartner object."
+description: "Read the user synchronization policy of a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) object.
+Read the user synchronization policy of a partner-specific configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /policies/crossTenantIdentitySyncPolicy/partners/{crossTenantIdentitySyncPolicyPartnerId}
-GET /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigurationPartnerId}/identitySynchronization
+GET /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
 ## Optional query parameters
@@ -59,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/crossTenantIdentitySyncPolicy/partners/{crossTenantIdentitySyncPolicyPartnerId}
+GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9c5d131d-b1c3-4fc4-9e3f-c6557947d551/identitySynchronization
 ```
 
 
@@ -77,14 +76,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-    "tenantId": "String",
-    "displayName": "String",
-    "userSyncInbound": {
-      "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
+    "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
+    "displayName": "Fabrikam",
+    "userSyncInbound":
+    {
+        "isSyncAllowed": true
     }
-  }
 }
 ```
 

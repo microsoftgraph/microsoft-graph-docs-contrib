@@ -1,6 +1,6 @@
 ---
 title: "Update crossTenantIdentitySyncPolicyPartner"
-description: "Update the properties of a crossTenantIdentitySyncPolicyPartner object."
+description: "Update the user synchronization policy of a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) object.
+Update the user synchronization policy of a partner-specific configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /policies/crossTenantIdentitySyncPolicy/partners/{crossTenantIdentitySyncPolicyPartnerId}
-PATCH /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigurationPartnerId}/identitySynchronization
+PATCH /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
 ## Request headers
@@ -43,14 +42,11 @@ PATCH /policies/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigu
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
-
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|**TODO: Add Description** Required.|
-|displayName|String|**TODO: Add Description** Optional.|
-|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|
+|tenantId|String|Tenant identifier for the partner Azure AD organization. Read-only.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Optional.|
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines the partner-specific configuration for inbound user synchronization.|
 
 
 
@@ -60,6 +56,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+If you set `isSyncAllowed` to false, any current user synchronization from the source tenant to the target tenant will stop. Also, user objects that already been synchronized will not be cleaned up.
+
 ### Request
 The following is an example of a request.
 <!-- {
@@ -68,23 +66,20 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantIdentitySyncPolicy/partners/{crossTenantIdentitySyncPolicyPartnerId}
+PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1/identitySynchronization
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-  "tenantId": "String",
-  "displayName": "String",
-  "userSyncInbound": {
-    "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
+  "userSyncInbound": 
+  {
+    "isSyncAllowed": true
   }
 }
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

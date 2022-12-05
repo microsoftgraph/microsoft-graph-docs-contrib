@@ -12346,9 +12346,9 @@ items:
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
               href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
-          - name: Partner identity sync settings
+          - name: Partner user sync settings
             items:
-            - name: Cross-tenant access partner identity sync settings
+            - name: Cross-tenant access partner user sync settings
               href: resources/crosstenantidentitysyncpolicypartner.md
             - name: List
               href: api/crosstenantaccesspolicyconfigurationpartner-list-identitysynchronization.md
