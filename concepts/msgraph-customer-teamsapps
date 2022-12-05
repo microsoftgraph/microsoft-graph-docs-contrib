@@ -1,0 +1,33 @@
+---
+title: "Show teams applications content in assignments"
+description: "Use Microsoft Graph to get Microsoft Teams applications content in assignments."
+ms.localizationpriority: medium
+author: "cristobal-buenrostro"
+ms.prod: "education"
+doc_type: conceptualPageType
+---
+
+# Get Microsoft Teams applications content within assignments
+
+The EdTech community has a rich set of tools and applications that are used in Education, you can integrate your tool to be added to assignments as a resource for teachers and students to use.  
+
+> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
+
+## Creating a Microsoft Teams application
+
+TODO: Link to how to create apps in Teams.
+TODO: ask Richard about it; https://github.com/microsoft/edu-assignments-apps-sample
+or is there a better resource for it?
+
+## Requirements
+
+In addition to being a Teams App , Assignments does have a set of additional requirements to be used within Assignments. See https://aka.ms/AssignmentsRequirements for full requirements for using Teams Apps in Assignments  
+
+## Enabling Microsoft Teams application
+
+After you have created and published your app for Assignments, Teams needs to enable the app for the Assignment App. Fill out this form https://aka.ms/AssignmentsAppRequest to get your app enabled.
+
+## Launch the application
+
+TODO: Add information on the launch information when launched from: Configuration Dialog ( how to know you are in assignments) , launched as a Student, launched from Speed Grader.
+TODO: ask Richard about it.

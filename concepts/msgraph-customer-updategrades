@@ -1,0 +1,28 @@
+---
+title: "Update assignment and grades for customer tools"
+description: "Use Microsoft Graph to update assignments and grades for education solution reporting, communication, and automation tools."
+ms.localizationpriority: medium
+author: "cristobal-buenrostro"
+ms.prod: "education"
+doc_type: conceptualPageType
+---
+
+# Update data from assignmments and grades
+
+Education apps that allows students to do assessments or quizzes, wants to have the points created in the app to be automatically added to the assignment when the teacher are grading the app.
+
+> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
+
+## Update grade
+
+You can update and assignment grade by using the folliwing API:
+
+- [Update education outcome](/graph/api/educationoutcome-update): Allows to update an education outcome; grade, feedback resource or rubric for instance.
+
+## Query Parameters when launched within Assignments
+
+TODO: Add information on the launch information when launched from: Configuration Dialog ( how to know you are in assignments) , launched as a Student, launched from Speed Grader.
+
+## Permissions
+
+Assignments API supports both delegated (per user) and AppOnly (per App) permission. For ease of use for the student and teacher Apponly is preferred as this allows for only approval of your app to retrieve data.
