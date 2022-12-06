@@ -30,7 +30,7 @@ If successful, all requests return `204 No Content` response codes.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-pim-update-rules-Expiration_EndUser_Assignment"
+  "name": "how-to-pim-update-rules-Expiration_EndUser_Assignment"
 }-->
 ```http
 https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Expiration_EndUser_Assignment
@@ -63,7 +63,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-pim-update-rules-Enablement_EndUser_Assignment"
+  "name": "how-to-pim-update-rules-Enablement_EndUser_Assignment"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Enablement_EndUser_Assignment
@@ -106,7 +106,7 @@ Questions/Issues:
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-pim-update-rules-Approval_EndUser_Assignment"
+  "name": "how-to-pim-update-rules-Approval_EndUser_Assignment"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Approval_EndUser_Assignment
@@ -164,7 +164,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-pim-update-rules-Expiration_Admin_Eligibility"
+  "name": "how-to-pim-update-rules-Expiration_Admin_Eligibility"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Expiration_Admin_Eligibility
@@ -197,7 +197,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-pim-update-rules-Expiration_Admin_Assignment"
+  "name": "how-to-pim-update-rules-Expiration_Admin_Assignment"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Expiration_Admin_Assignment
@@ -230,7 +230,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-pim-update-rules-Enablement_Admin_Assignment"
+  "name": "how-to-pim-update-rules-Enablement_Admin_Assignment"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Enablement_Admin_Assignment

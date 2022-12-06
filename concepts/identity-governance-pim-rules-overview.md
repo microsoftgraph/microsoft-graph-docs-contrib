@@ -83,5 +83,5 @@ The following image shows the notification role settings on the Azure portal, ma
 ## See also
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
-+ [Use PIM APIs in Microsoft Graph to update Azure AD rules](tutorial-pim-update-rules.md)
++ [Use PIM APIs in Microsoft Graph to update Azure AD rules](how-to-pim-update-rules.md)
 + [Configure Azure AD role settings in Privileged Identity Management - Azure portal](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings)
