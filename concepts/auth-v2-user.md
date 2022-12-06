@@ -72,8 +72,7 @@ client_id=11111111-1111-1111-1111-111111111111
 
 ### Consent experience
 
-After sending an authorization request, the user will be asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter. If the user hasn't consented to any of those permissions and if an administrator hasn't previously consented on behalf of all users in the organization, they'll be asked to consent to the required permissions. For more information on consent experience with Azure AD, see [Application consent experience](/azure/active-directory/develop/application-consent-experience).
-
+After sending an authorization request, the user will be asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter. If the user hasn't consented to any of those permissions and if an administrator hasn't previously consented on behalf of all users in the organization, they'll be asked to consent to the required permissions. For more information about the Azure AD consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience).
 The following screenshot is an example of the consent dialog box presented for a Microsoft account user.
 
 :::image type="content" source="./images/auth-v2/v2-consumer-consent.png" alt-text="Consent dialog for Microsoft account." border="true":::

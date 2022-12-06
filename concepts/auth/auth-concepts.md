@@ -9,7 +9,7 @@ ms.custom: graphiamtop20
 
 # Authentication and authorization basics
 
-To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has to access the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user, or an administrator, to access the Microsoft Graph resources that it wants to access.
+To get an access token, your app must be registered with the Microsoft identity platform and be granted Microsoft Graph permissions by a user or administrator.
 
 This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [next steps](#see-also) section.
 
@@ -21,16 +21,31 @@ Before your app can get a token from the Microsoft identity platform, it must be
 - **Redirect URI/URL**: One or more endpoints at which your app will receive responses from the Microsoft identity platform. (For native and mobile apps, the URI is assigned by the Microsoft identity platform.)
 - **Client secret**: A password or a public/private key pair that your app uses to authenticate with the Microsoft identity platform. (Not needed for native or mobile apps.)
 
-For more information, see [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2)
+The properties configured during registration are used in the request. For example, in the following token request: *client_id* is the *application ID*, *redirect_uri* is one of your app's registered *redirect URIs*, and *client_secret* is the *client secret*.
+
+```http
+// Line breaks for legibility only
+
+POST /common/oauth2/v2.0/token HTTP/1.1
+Host: https://login.microsoftonline.com
+Content-Type: application/x-www-form-urlencoded
+
+client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+&scope=user.read%20mail.read
+&code=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq3n8b2JRLk4OxVXr...
+&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
+&grant_type=authorization_code
+&client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only required for web apps
+```
 
 ## Access scenarios
 
-The method that an app uses to authenticate with the Microsoft identity platform will depend on how you want the app to access the data. This access can be in one of two ways:
+The method that an app uses to authenticate with the Microsoft identity platform will depend on how you want the app to access the data. This access can be in one of two ways as illustrated in the following image.
 
 + **Delegated access**, an app acting on behalf of a signed-in user.
 + **App-only access**, an app acting with its own identity.
 
-:::image type="content" source="~/../azure_docs/active-directory/develop/media/permissions-consent-overview/access-scenarios.png" alt-text="Illustration of delegated access and app-only access scenarios in the Microsoft identity platform.":::
+:::image type="content" source="../images/access-scenarios.png" alt-text="Illustration of delegated and app-only access scenarios in the Microsoft identity platform.":::
 
 ### Delegated access (access on behalf of a user)
 
@@ -94,11 +109,11 @@ Like most developers, you'll probably use authentication libraries to manage you
 
 For the Microsoft identity platform endpoint:
 
-- Microsoft Authentication Library (MSAL) client libraries are available for various frameworks including for .NET, JavaScript, Android, and Objective-C. All platforms are in production-supported preview, and, in the event breaking changes are introduced, Microsoft guarantees a path to upgrade.
-- Server middleware from Microsoft is available for .NET core and ASP.NET (OWIN OpenID Connect and OAuth) and for Node.js (Microsoft the Microsoft identity platform Passport.js).
+- Microsoft Authentication Library (MSAL) client libraries are available for various frameworks including for .NET, JavaScript, Android, and iOS. All platforms are in production-supported preview, and, in the event breaking changes are introduced, Microsoft guarantees a path to upgrade.
+- Server middleware from Microsoft is available for .NET core and ASP.NET (OWIN OpenID Connect and OAuth) and for Node.js (Microsoft identity platform Passport.js).
 - The Microsoft identity platform is also compatible with many third-party authentication libraries.
 
-For a complete list of Microsoft client libraries, Microsoft server middleware, and compatible third-party libraries, see [Microsoft identity platform documentation libraries](#see-also).
+For a complete list of Microsoft client libraries, Microsoft server middleware, and compatible third-party libraries, see [Microsoft identity platform documentation](#see-also).
 
 You don't need to use an authentication library to get an access token. To learn about directly using the Microsoft identity platform endpoints without the help of an authentication library, see [Microsoft identity platform documentation libraries](#see-also).
 
