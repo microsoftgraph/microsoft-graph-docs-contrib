@@ -14,7 +14,7 @@ var mailboxSettings = new MailboxSettings
 var users = new User();
 users.MailboxSettings = mailboxSettings;
 
-await graphClient.Users["AlexW@contoso.OnMicrosoft.com"]
+await graphClient.Users["{user-id}"]
 	.Request()
 	.UpdateAsync(users);
 

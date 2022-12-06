@@ -155,10 +155,6 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
-### Presenter role cannot be assigned to non-Azure AD participants
-
-Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported. Such requests will be accepted by the [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method, but the role will not be applied when the participant joins the online meeting. The [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method will reject the request and return a `400 Bad Request` error. 
-
 ## Contacts
 
 ### GET operation does not return default contacts folder
@@ -397,6 +393,12 @@ This error might also occur when retrieving the **signInActivity** property of t
 
 This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
 
+
+## Sites and lists (SharePoint)
+
+### Follow/unfollow sites is not in sync with SharePoint following
+
+When querying [followed sites](/graph/api/sites-list-followed) through Microsoft Graph, the response might have incorrect results and those results might not match the results from following content in SharePoint. As a temporary workaround, you can use the [Following people and content REST API](/sharepoint/dev/general-development/following-people-and-content-rest-api-reference-for-sharepoint).
 
 ## Teamwork (Microsoft Teams)
 

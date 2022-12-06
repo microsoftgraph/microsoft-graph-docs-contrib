@@ -23,6 +23,7 @@ Specifically, look for differences in the following areas:
 - [Entity resource names](migrate-azure-ad-graph-resource-differences.md) and their types
 - [Properties](migrate-azure-ad-graph-property-differences.md) of request and response objects
 - [Methods](migrate-azure-ad-graph-method-differences.md), including parameters and types
+- [Permissions](migrate-azure-ad-graph-permissions-differences.md)
 
 ## Step 2: Examine API use
 

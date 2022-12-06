@@ -1246,7 +1246,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-10-10T06:50:44.0853657Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
       },
       {
       "ChangeList": [
@@ -1403,6 +1403,24 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-09-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ce913b61-7449-4839-ab8d-fa3c74ba9f1a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isExactMatchRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isExactMatchRequired** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
+          "Target": "property"
+        }
+      ],
+      "Id": "ce913b61-7449-4839-ab8d-fa3c74ba9f1a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-18T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
     }
