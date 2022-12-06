@@ -20,7 +20,7 @@ All the assignments and grading information are part of the team in Microsoft Te
 - [List classes of an educationSchools](/graph/api/educationschool-list-classes): Returns a list of all classes in your education tenant.
 - [List members of an educationClass](/graph/api/educationclass-list-members): Lists information about members of a specific class.
 
-After you get the relevant class and member information, you can get the assignment and grade information that you need.
+After you get the relevant class and member information, you can get the assignment and grade information you need.
 
 ## Get class assignment information
 
