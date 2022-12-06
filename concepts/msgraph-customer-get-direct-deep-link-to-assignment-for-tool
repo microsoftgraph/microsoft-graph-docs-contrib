@@ -28,7 +28,7 @@ The [Assignment Property](/graph/api/resources/educationassignment#properties) r
 
 ##  Get a deep direct link for the submission
 
-The [Submission Property](/graph/api/resources/educationsubmission#properties) webURL returns the authenticated deep link to the submission.
+The [Submission property](/graph/api/resources/educationsubmission#properties) webURL returns the authenticated deep link to the submission.
 
 ## Permissions
 
