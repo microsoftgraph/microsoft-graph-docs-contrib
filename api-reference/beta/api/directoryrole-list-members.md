@@ -30,11 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+You can address the directory role using either its **id** or **roleTemplateId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/{role-id}/members
-GET /directoryRoles/roleTemplateId={roleTemplateId}/members
+GET /directoryRoles(roleTemplateId='{roleTemplateId}')/members
 ```
+
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
@@ -124,14 +127,12 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-<!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
-
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_directoryrole_members_templateId"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
+```http
+GET https://graph.microsoft.com/beta/directoryRoles(roleTemplateId='4a5d8f65-41da-4de4-8968-e035b65339cf')/members
 ```
 
 

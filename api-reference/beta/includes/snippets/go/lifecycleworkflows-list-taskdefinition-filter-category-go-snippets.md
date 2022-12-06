@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-requestFilter := "category eq 'joiner,leaver' OR category eq 'joiner'"
+requestFilter := "category has 'joiner'"
 
 requestParameters := &graphconfig.TaskDefinitionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
