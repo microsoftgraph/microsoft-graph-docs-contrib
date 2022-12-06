@@ -1758,47 +1758,6 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
-      - name: Records management (preview)
-        items:
-        - name: Overview
-          href: resources/security-recordsManagement-overview.md
-        - name: Retention label
-          href: resources/security-retentionlabel.md
-          items:
-          - name: List
-            href: api/security-retentionlabel-list.md
-          - name: Create
-            href: api/security-retentionlabel-post.md
-          - name: Get
-            href: api/security-retentionlabel-get.md
-          - name: Update
-            href: api/security-retentionlabel-update.md
-          - name: Delete
-            href: api/security-retentionlabel-delete.md
-        - name: Retention event
-          href: resources/security-retentionevent.md
-          items:
-          - name: List
-            href: api/security-retentionevent-list.md
-          - name: Create
-            href: api/security-retentionevent-post.md
-          - name: Get
-            href: api/security-retentionevent-get.md
-          - name: Delete
-            href: api/security-retentionevent-delete.md
-        - name: Retention event type
-          href: resources/security-retentioneventtype.md
-          items:
-          - name: List
-            href: api/security-retentioneventtype-list.md
-          - name: Create
-            href: api/security-retentioneventtype-post.md
-          - name: Get
-            href: api/security-retentioneventtype-get.md
-          - name: Update
-            href: api/security-retentioneventtype-update.md
-          - name: Delete
-            href: api/security-retentioneventtype-delete.md
       - name: Subject rights request
         items:
         - name: Overview
@@ -1959,7 +1918,7 @@ items:
     - name: Device and app management
       expanded: true
       items:
-      - name: Browser management
+      - name: Browser management (preview)
         displayName: Edge, Internet Explorer, IE mode, site list
         items:
         - name: Overview
@@ -15332,7 +15291,7 @@ items:
             href: api/security-ediscoverycase-delete-searches.md
           - name: Estimate statistics
             href: api/security-ediscoverysearch-estimatestatistics.md
-          - name: Purge data (preview)
+          - name: Purge data
             href: api/security-ediscoverysearch-purgedata.md
           - name: List custodian sources
             href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15481,6 +15440,47 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Records management (preview)
+        items:
+        - name: Overview
+          href: resources/security-recordsManagement-overview.md
+        - name: Retention label
+          href: resources/security-retentionlabel.md
+          items:
+          - name: List
+            href: api/security-retentionlabel-list.md
+          - name: Create
+            href: api/security-retentionlabel-post.md
+          - name: Get
+            href: api/security-retentionlabel-get.md
+          - name: Update
+            href: api/security-retentionlabel-update.md
+          - name: Delete
+            href: api/security-retentionlabel-delete.md
+        - name: Retention event
+          href: resources/security-retentionevent.md
+          items:
+          - name: List
+            href: api/security-retentionevent-list.md
+          - name: Create
+            href: api/security-retentionevent-post.md
+          - name: Get
+            href: api/security-retentionevent-get.md
+          - name: Delete
+            href: api/security-retentionevent-delete.md
+        - name: Retention event type
+          href: resources/security-retentioneventtype.md
+          items:
+          - name: List
+            href: api/security-retentioneventtype-list.md
+          - name: Create
+            href: api/security-retentioneventtype-post.md
+          - name: Get
+            href: api/security-retentioneventtype-get.md
+          - name: Update
+            href: api/security-retentioneventtype-update.md
+          - name: Delete
+            href: api/security-retentioneventtype-delete.md
       - name: Secure score
         href: resources/securescores.md
         items:
@@ -15730,10 +15730,50 @@ items:
           href: api/sitepage-create.md
         - name: Get
           href: api/sitepage-get.md
+        - name: Update
+          href: api/sitepage-update.md
         - name: Delete
           href: api/sitepage-delete.md
         - name: Publish
           href: api/sitepage-publish.md
+        - name: Horizontal section
+          items:
+          - name: Horizontal section
+            href: resources/horizontalsection.md
+          - name: List
+            href: api/horizontalsection-list.md
+          - name: Get
+            href: api/horizontalsection-get.md
+          - name: Column
+            items:
+            - name: Horizontal section column
+              href: resources/horizontalsectioncolumn.md
+            - name: List
+              href: api/horizontalsectioncolumn-list.md
+            - name: Get
+              href: api/horizontalsectioncolumn-get.md
+        - name: Vertical section
+          items:
+          - name: Vertical section
+            href: resources/verticalsection.md
+          - name: Get
+            href: api/verticalsection-get.md
+        - name: Web part
+          items:
+          - name: Web part
+            href: resources/webpart.md
+          - name: Text web part
+            href: resources/textwebpart.md
+          - name: Standard WebPart
+            href: resources/standardwebpart.md
+          - name: List
+            href: api/webpart-list.md
+          - name: Get 
+            href: api/webpart-get.md
+          - name: Get position
+            href: api/webpart-getposition.md
+          - name: Get by position
+            href: api/sitepage-getwebpartsbyposition.md
       - name: Rich long-running operation
         items:
         - name: Rich long-running operation
