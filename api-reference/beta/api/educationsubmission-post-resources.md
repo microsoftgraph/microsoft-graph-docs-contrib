@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Add a [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list.
 
-Only the student assigned to the submission can perform this operation.
+This operation can be performed by the teacher and students.
 
 The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`. 
 
