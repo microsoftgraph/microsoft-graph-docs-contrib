@@ -87,33 +87,36 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "additionalInformation": "String",
+  "anonymousJoinWebUrl": "String",
   "customerEmailAddress": "String",
   "customerId": "String",
   "customerLocation": {"@odata.type": "microsoft.graph.location"},
   "customerName": "String",
   "customerNotes": "String",
   "customerPhone": "String",
-  "customerTimeZone": "String",
   "customers": [
     {
       "@odata.type": "microsoft.graph.bookingCustomerInformation"
     }
   ],
+  "customerTimeZone": "String",
   "duration": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "filledAttendeesCount": "Int32",
   "id": "String (identifier)",
-  "invoiceAmount": 1024,
+  "invoiceAmount": "Double",
   "invoiceDate": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "invoiceId": "String",
   "invoiceStatus": "string",
   "invoiceUrl": "String",
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
-  "optOutOfCustomerEmail": true,
-  "anonymousJoinWebUrl": "String",
+  "maximumAttendeesCount": "Int32",
+  "optOutOfCustomerEmail": "Boolean",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
-  "price": 1024,
+  "price": "Double",
   "priceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
   "reminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "selfServiceAppointmentId": "String",
@@ -123,9 +126,7 @@ The following is a JSON representation of the resource.
   "serviceNotes": "String",
   "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
-  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "maximumAttendeesCount": "Integer",
-  "filledAttendeesCount": "Integer"
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
 }
 
 ```

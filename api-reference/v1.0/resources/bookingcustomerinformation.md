@@ -41,27 +41,19 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+  "customerId": "String",
   "customQuestionAnswers": [
     {
       "@odata.type": "microsoft.graph.bookingQuestionAnswer"
     }
   ],
-  "customerId": "String",
   "emailAddress": "String",
   "location": {
     "@odata.type": "microsoft.graph.location"
   },
-  "timeZone": "String",
-  "customQuestionAnswers": [
-    {
-      "@odata.type": "microsoft.graph.bookingQuestionAnswer"
-    }
-  ]
   "name": "String",
   "notes": "String",
   "phone": "String",
-  "smsNotificationsEnabled": "Boolean",
   "timeZone": "String"
 }
 ```
-

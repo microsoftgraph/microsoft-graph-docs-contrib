@@ -85,7 +85,7 @@ The following is a JSON representation of the resource.
   "isHiddenFromCustomers": "Boolean",
   "isLocationOnline": "Boolean",
   "languageTag": "String",
-  "maximumAttendeesCount": "Integer",
+  "maximumAttendeesCount": "Int32",
   "notes": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",

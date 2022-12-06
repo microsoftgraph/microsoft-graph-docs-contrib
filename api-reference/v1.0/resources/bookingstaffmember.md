@@ -49,8 +49,7 @@ Microsoft Bookings supports a maximum of 100 staff members in a booking calendar
 |workingHours|[bookingWorkHours](bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking. By default, they are initialized to be the same as the **businessHours** property of the business.|
 
 ## Relationships
-None
-
+None.
 
 ## JSON representation
 
@@ -77,7 +76,6 @@ The following is a JSON representation of the resource.
   "useBusinessHours": "Boolean",
   "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
