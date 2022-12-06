@@ -33,4 +33,4 @@ All assignments and students' information are linked to class and submission inf
 
 For update of data in assignments user get support for both delegated (per user) and AppOnly (per App). AppOnly support is currently only for Beta version.
 
-> **Note:** Since Student Information and Grade information is sensitive data, it needs to be verified if AppOnly data is what is needed for the scenario.
+> **Note:**  Since student and grade information is sensitive data, please verify which permissions are required. 
