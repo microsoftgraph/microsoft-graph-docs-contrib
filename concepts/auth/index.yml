@@ -30,6 +30,8 @@ landingContent:
         links:
           - text: Microsoft Graph and app registration (7:29)
             url: https://www.youtube.com/watch?v=93j0MmRruFo
+          - text: How delegated permissions work (1:21)
+            url: https://learn-video.azurefd.net/vod/player?show=one-dev-minute&ep=how-do-delegated-permissions-work
   - title: Authorize your app
     linkLists:
       - linkListType: how-to-guide
