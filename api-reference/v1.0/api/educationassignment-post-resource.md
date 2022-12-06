@@ -645,11 +645,13 @@ Content-type: application/json
     }
 }
 ```
+
 ### Example 7: Create an educationTeamsAppResource
 #### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461","820371a1-4589-4a4a-8b40-9d5db94b9186"], 
@@ -658,6 +660,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/820371a1-4589-4a4a-8b40-9d5db94b9186/resources
 Content-type: application/json
+
 {
     "distributeForStudentWork": false,
     "resource": {
@@ -683,6 +686,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('820371a1-4589-4a4a-8b40-9d5db94b9186')/resources/$entity",
     "distributeForStudentWork": false,
