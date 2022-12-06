@@ -32,4 +32,4 @@ The [Submission property](/graph/api/resources/educationsubmission#properties) w
 
 ## Permissions
 
-Assignments APIs support both delegated (per user) and AppOnly (per App) permission. We recommend using Apponly as it only permits your app to retrieve data.
+Assignments APIs support both delegated and application permissions. We recommend using application permissions as it only permits your app to retrieve data.
