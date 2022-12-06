@@ -31,6 +31,6 @@ All assignments and students' information are linked to class and submission inf
 
 ## Permissions
 
-For update of data in assignments user get support for both delegated (per user) and AppOnly (per App). AppOnly support is currently only for Beta version.
+Delegated and application permissions are required to update data in assignments. Application permissions are currently supported in the beta version only.
 
 > **Note:**  Since student and grade information is sensitive data, please verify which permissions are required. 
