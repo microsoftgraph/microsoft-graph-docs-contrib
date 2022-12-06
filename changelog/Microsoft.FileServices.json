@@ -2798,7 +2798,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "metaDataKeyStringPair",
           "ChangeType": "Addition",
-          "Description": "Added the [metaDataKeyStringPair](https://docs.microsoft.com/en-us/graph/api/resources/metaDataKeyStringPair?view=graph-rest-beta) resource type.",
+          "Description": "Added the [metaDataKeyStringPair](https://learn.microsoft.com/en-us/graph/api/resources/metaDataKeyStringPair?view=graph-rest-beta) resource type.",
           "Target": "metaDataKeyStringPair"
         },
         {
@@ -2806,7 +2806,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "metaDataKeyValuePair",
           "ChangeType": "Addition",
-          "Description": "Added the [metaDataKeyValuePair](https://docs.microsoft.com/en-us/graph/api/resources/metaDataKeyValuePair?view=graph-rest-beta) resource type.",
+          "Description": "Added the [metaDataKeyValuePair](https://learn.microsoft.com/en-us/graph/api/resources/metaDataKeyValuePair?view=graph-rest-beta) resource type.",
           "Target": "metaDataKeyValuePair"
         },
         {
@@ -2814,7 +2814,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "reactionsFacet",
           "ChangeType": "Addition",
-          "Description": "Added the [reactionsFacet](https://docs.microsoft.com/en-us/graph/api/resources/reactionsFacet?view=graph-rest-beta) resource type.",
+          "Description": "Added the [reactionsFacet](https://learn.microsoft.com/en-us/graph/api/resources/reactionsFacet?view=graph-rest-beta) resource type.",
           "Target": "reactionsFacet"
         },
         {
@@ -2822,7 +2822,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serverProcessedContent",
           "ChangeType": "Addition",
-          "Description": "Added the [serverProcessedContent](https://docs.microsoft.com/en-us/graph/api/resources/serverProcessedContent?view=graph-rest-beta) resource type.",
+          "Description": "Added the [serverProcessedContent](https://learn.microsoft.com/en-us/graph/api/resources/serverProcessedContent?view=graph-rest-beta) resource type.",
           "Target": "serverProcessedContent"
         },
         {
@@ -2838,7 +2838,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "titleArea",
           "ChangeType": "Addition",
-          "Description": "Added the [titleArea](https://docs.microsoft.com/en-us/graph/api/resources/titleArea?view=graph-rest-beta) resource type.",
+          "Description": "Added the [titleArea](https://learn.microsoft.com/en-us/graph/api/resources/titleArea?view=graph-rest-beta) resource type.",
           "Target": "titleArea"
         },
         {
@@ -2846,7 +2846,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webPartData",
           "ChangeType": "Addition",
-          "Description": "Added the [webPartData](https://docs.microsoft.com/en-us/graph/api/resources/webPartData?view=graph-rest-beta) resource type.",
+          "Description": "Added the [webPartData](https://learn.microsoft.com/en-us/graph/api/resources/webPartData?view=graph-rest-beta) resource type.",
           "Target": "webPartData"
         },
         {
@@ -2854,7 +2854,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webPartPosition",
           "ChangeType": "Addition",
-          "Description": "Added the [webPartPosition](https://docs.microsoft.com/en-us/graph/api/resources/webPartPosition?view=graph-rest-beta) resource type.",
+          "Description": "Added the [webPartPosition](https://learn.microsoft.com/en-us/graph/api/resources/webPartPosition?view=graph-rest-beta) resource type.",
           "Target": "webPartPosition"
         },
         {
@@ -2862,7 +2862,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "canvasLayout",
           "ChangeType": "Addition",
-          "Description": "Added the [canvasLayout](https://docs.microsoft.com/en-us/graph/api/resources/canvasLayout?view=graph-rest-beta) resource",
+          "Description": "Added the [canvasLayout](https://learn.microsoft.com/en-us/graph/api/resources/canvasLayout?view=graph-rest-beta) resource",
           "Target": "canvasLayout"
         },
         {
@@ -2870,7 +2870,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "horizontalSection",
           "ChangeType": "Addition",
-          "Description": "Added the [horizontalSection](https://docs.microsoft.com/en-us/graph/api/resources/horizontalSection?view=graph-rest-beta) resource",
+          "Description": "Added the [horizontalSection](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSection?view=graph-rest-beta) resource",
           "Target": "horizontalSection"
         },
         {
@@ -2878,7 +2878,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "horizontalSectionColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [horizontalSectionColumn](https://docs.microsoft.com/en-us/graph/api/resources/horizontalSectionColumn?view=graph-rest-beta) resource",
+          "Description": "Added the [horizontalSectionColumn](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSectionColumn?view=graph-rest-beta) resource",
           "Target": "horizontalSectionColumn"
         },
         {
@@ -2886,7 +2886,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "pageLayout",
           "ChangeType": "Addition",
-          "Description": "Added the `pageLayout` property to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **pageLayout** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2894,7 +2894,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "pageLayoutType",
           "ChangeType": "Deletion",
-          "Description": "Removed the `pageLayoutType` property from the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Removed the **pageLayoutType** property from the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2902,7 +2902,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "promotionKind",
           "ChangeType": "Addition",
-          "Description": "Added the `promotionKind` property to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **promotionKind** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2910,7 +2910,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "reactions",
           "ChangeType": "Addition",
-          "Description": "Added the `reactions` property to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **reactions** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2918,7 +2918,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "showComments",
           "ChangeType": "Addition",
-          "Description": "Added the `showComments` property to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **showComments** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2926,7 +2926,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "showRecommendedPages",
           "ChangeType": "Addition",
-          "Description": "Added the `showRecommendedPages` property to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **showRecommendedPages** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2934,7 +2934,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "thumbnailWebUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `thumbnailWebUrl` property to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **thumbnailWebUrl** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2942,7 +2942,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "titleArea",
           "ChangeType": "Addition",
-          "Description": "Added the `titleArea` property to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **titleArea** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2950,7 +2950,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "webParts",
           "ChangeType": "Deletion",
-          "Description": "Removed the `webParts` property from the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Removed the **webParts** property from the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2958,7 +2958,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "canvasLayout",
           "ChangeType": "Addition",
-          "Description": "Added the **canvasLayout** relationship to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **canvasLayout** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2966,7 +2966,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webParts",
           "ChangeType": "Addition",
-          "Description": "Added the **webParts** relationship to the [sitePage](https://docs.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **webParts** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {
@@ -2974,7 +2974,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "standardWebPart",
           "ChangeType": "Addition",
-          "Description": "Added the [standardWebPart](https://docs.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-beta) resource",
+          "Description": "Added the [standardWebPart](https://learn.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-beta) resource",
           "Target": "standardWebPart"
         },
         {
@@ -2982,7 +2982,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "textWebPart",
           "ChangeType": "Addition",
-          "Description": "Added the [textWebPart](https://docs.microsoft.com/en-us/graph/api/resources/textWebPart?view=graph-rest-beta) resource",
+          "Description": "Added the [textWebPart](https://learn.microsoft.com/en-us/graph/api/resources/textWebPart?view=graph-rest-beta) resource",
           "Target": "textWebPart"
         },
         {
@@ -2990,7 +2990,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "verticalSection",
           "ChangeType": "Addition",
-          "Description": "Added the [verticalSection](https://docs.microsoft.com/en-us/graph/api/resources/verticalSection?view=graph-rest-beta) resource",
+          "Description": "Added the [verticalSection](https://learn.microsoft.com/en-us/graph/api/resources/verticalSection?view=graph-rest-beta) resource",
           "Target": "verticalSection"
         },
         {
@@ -2998,7 +2998,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPositionOfWebPart",
           "ChangeType": "Addition",
-          "Description": "Added the [getPositionOfWebPart](https://docs.microsoft.com/en-us/graph/api/webPart?view=graph-rest-beta) method to the [webPart](https://docs.microsoft.com/en-us/graph/api/webPart?view=graph-rest-beta) resource.",
+          "Description": "Added the [getPositionOfWebPart](https://learn.microsoft.com/en-us/graph/api/webPart?view=graph-rest-beta) method to the [webPart](https://docs.microsoft.com/en-us/graph/api/webPart?view=graph-rest-beta) resource.",
           "Target": "webPart"
         },
         {
@@ -3006,7 +3006,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getWebPartsByPosition",
           "ChangeType": "Addition",
-          "Description": "Added the [getWebPartsByPosition](https://docs.microsoft.com/en-us/graph/api/sitePage?view=graph-rest-beta) method to the [sitePage](https://docs.microsoft.com/en-us/graph/api/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the [getWebPartsByPosition](https://learn.microsoft.com/en-us/graph/api/sitePage?view=graph-rest-beta) method to the [sitePage](https://docs.microsoft.com/en-us/graph/api/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         }
       ],
