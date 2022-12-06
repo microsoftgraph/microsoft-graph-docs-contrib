@@ -38,6 +38,8 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ### Activation rules
 
+The following image shows the activation role settings on the Azure portal, mapped to rules and resource types in the PIM API in Microsoft Graph.
+
 :::image type="content" source="images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation.png" alt-text="PIM role activation settings on the Azure portal.":::
 
 | Number | Microsoft Graph Rule ID / Derived resource type                                                   | Azure portal UX Description                                                                                                                              | Enforced for caller |
@@ -49,6 +51,8 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 
 ## Assignment rules
 
+The following image shows the assignment role settings on the Azure portal, mapped to rules and resource types in the PIM API in Microsoft Graph.
+
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.assignment.png" alt-text="PIM role assignment settings on the Azure portal.":::
 
 | Number | Microsoft Graph Rule ID / Derived resource type                             | Azure portal UX Description                                                                                   | Enforced for caller |
@@ -59,6 +63,8 @@ Azure AD supports policies that are scopes either to the directory or to a direc
 | 8      | `Enablement_EndUser_Assignment` / unifiedRoleManagementPolicyExpirationRule | Require Azure Multi-Factor Authentication on active assignment<br/>Require justification on active assignment | End user            |
 
 ## Notification rules
+
+The following image shows the notification role settings on the Azure portal, mapped to rules and resource types in the PIM API in Microsoft Graph.
 
 :::image type="content" source="../concepts/images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.notification.png" alt-text="PIM role notification settings on the Azure portal.":::
 
