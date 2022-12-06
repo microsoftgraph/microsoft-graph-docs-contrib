@@ -301,6 +301,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b1b69af7-630f-4183-a152-ebffa1a4bf27",
+          "ApiChange": "Property",
+          "ChangedApiName": "appId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta) using the application **appId** as the alternate key. You can now address an application via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Target": "application"
+        }
+      ],
+      "Id": "b1b69af7-630f-4183-a152-ebffa1a4bf27",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-29T00:00:00.077762Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
           "ApiChange": "Property",
           "ChangedApiName": "squareLogoDark",
@@ -1501,6 +1519,24 @@
       "CreatedDateTime": "2022-02-10T00:00:00",
       "WorkloadArea": "Identity and access ",
       "SubArea": " Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "91714c66-fa98-485a-a393-c2c6396e0ed5",
+          "ApiChange": "Method",
+          "ChangedApiName": "promote",
+          "ChangeType": "Addition",
+          "Description": "Added the [promote](https://docs.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/domain?view=graph-rest-1.0) resource.",
+          "Target": "domain"
+        }
+      ],
+      "Id": "91714c66-fa98-485a-a393-c2c6396e0ed5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-11-30T00:53:51.6122157Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -12088,7 +12124,7 @@
           "ChangedApiName": "templates",
           "ChangeType": "Addition",
           "Description": "Added the **templates** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-1.0) resource.",
-	  "Target": "conditionalAccessRoot"
+	        "Target": "conditionalAccessRoot"
         },
         {
           "Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
@@ -12105,6 +12141,42 @@
       "CreatedDateTime": "2022-10-14T16:30:13.6218231Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4fb5785c-dbcc-462a-bfc5-ef55408c470f",
+          "ApiChange": "Property",
+          "ChangedApiName": "roleTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [directoryRole](https://learn.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-beta) using **roleTemplateId* as the alternate key. You can now address a directoryRole via either the primary key **id** or the alternate key **roleTemplateId** as the path parameter.",
+          "Target": "directoryRole"
+        }
+      ],
+      "Id": "4fb5785c-dbcc-462a-bfc5-ef55408c470f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-28T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "07904345-de3c-427b-b671-56d424ccc9e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
+          "Target": "device"
+        }
+      ],
+      "Id": "07904345-de3c-427b-b671-56d424ccc9e2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-28T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
