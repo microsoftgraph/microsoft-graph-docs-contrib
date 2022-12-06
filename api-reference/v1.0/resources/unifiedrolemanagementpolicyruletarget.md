@@ -26,7 +26,7 @@ Defines details of the scope that's targeted by role management policy rule. The
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|targetObjects|[directoryObject](../resources/directoryobject.md) collection| The collection of users, groups, and service principals that are in scope of the policy. If not specified, all objects are in scope of the policy.|
+|targetObjects|[directoryObject](../resources/directoryobject.md) collection| **Not implemented.** The collection of users, groups, and service principals that are in scope of the policy. If not specified, all objects are in scope of the policy.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

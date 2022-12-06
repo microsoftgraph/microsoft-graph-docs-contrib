@@ -1,6 +1,6 @@
 ---
 title: "Get started with the Microsoft Graph authentication methods API"
-description: "The authentication methods API in Microsoft Graph gives organizations the ability to programmatically manage their users' authentication methods, getting users registered to do multi-factor authentication (MFA) and self-service password reset (SSPR)."
+description: "Learn how to manage your users' authentication methods and get users registered to do multi-factor authentication (MFA) and self-service password reset (SSPR)."
 author: "mmcla"
 ms.localizationpriority: high
 ms.prod: "identity-and-sign-in"
@@ -250,11 +250,10 @@ And success! You've walked through seeing a user's profile, their auth methods, 
 
 Looking for the API reference for authentication methods?
 
-* See [Azure AD authentication methods API overview](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)
+* See [Azure AD authentication methods API overview](/graph/api/resources/authenticationmethods-overview)
 
 ## Next steps
 
-* Find out how to [use the authentication method REST APIs](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).
 * Use Azure AD to [authenticate](./auth/index.yml) to Microsoft Graph.
 * Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
 * See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.

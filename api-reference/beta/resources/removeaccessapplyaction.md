@@ -1,7 +1,7 @@
 ---
 title: "removeAccessApplyAction resource type"
 description: "Remove access from a resource for those denied in an access review of that resource."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

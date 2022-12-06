@@ -83,6 +83,7 @@ $params = @{
 			)
 		}
 	)
+	IsEmailNotificationEnabled = $false
 }
 
 New-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params

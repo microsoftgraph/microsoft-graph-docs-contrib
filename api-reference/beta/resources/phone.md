@@ -4,7 +4,7 @@ description: "Represents a phone number."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "Jumaodhiss"
+author: "jumasure"
 ---
 
 # phone resource type

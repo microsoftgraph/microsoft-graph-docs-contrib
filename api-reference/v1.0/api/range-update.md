@@ -73,6 +73,7 @@ Content-type: application/json
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-range-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

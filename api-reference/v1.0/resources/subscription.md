@@ -2,7 +2,7 @@
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
 ms.localizationpriority: high
-author: "Jumaodhiss"
+author: "jumasure"
 ms.prod: "change-notifications"
 doc_type: resourcePageType
 ---
@@ -15,16 +15,21 @@ A subscription allows a client app to receive change notifications about changes
 
 - An [alert][] from the Microsoft Graph Security API.
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
+- A [channel](./channel.md) in Microsoft Teams.
+- A [chat](./chat.md) in Microsoft Teams.
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
+- A [conversationMember](./conversationmember.md) in a team or channel in Microsoft Teams.
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
 - A [group][] in Azure Active Directory.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
+- A [team](./team.md) in Microsoft Teams.
+- A [todoTask][] of a user in Microsoft To Do.*
 - A [user][] in Azure Active Directory.
 
-For the possible resource path values for each supported resource and to learn how resources use lifecycle notifications, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
+For the possible resource path values for each supported resource, see [Use the Microsoft Graph API to get change notifications](webhooks.md). To learn how to use lifecycle notifications, see [Reduce missing subscriptions and change notifications](/graph/webhooks-lifecycle).
 
 
 ## Methods
@@ -63,7 +68,11 @@ For the possible resource path values for each supported resource and to learn h
 |:--------------------|:-------------------------|
 | Security **alert**     | 43200 minutes (under 30 days)  |
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
+| Teams **channel**    | 60 minutes (1 hour)  |
+| Teams **chat**    | 60 minutes (1 hour)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
+| Teams **conversationMember**    | 60 minutes (1 hour)  |
+| Teams **team**    | 60 minutes (1 hour)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
 | OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
 | SharePoint **list**    | 42300 minutes (under 30 days)    |
@@ -72,6 +81,8 @@ For the possible resource path values for each supported resource and to learn h
 | **presence**        | 60 minutes (1 hour) |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
+| **todoTask**              | 4230 minutes (under 3 days)    |
+
 
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
@@ -140,6 +151,7 @@ Here is a JSON representation of the resource.
 [callRecord]: ./callrecords-callrecord.md
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[todoTask]: ./todotask.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

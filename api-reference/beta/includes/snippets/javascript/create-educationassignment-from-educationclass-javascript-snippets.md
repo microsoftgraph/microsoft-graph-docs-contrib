@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const educationAssignment = {
-    dueDateTime: '2021-09-07T00:00:00Z',
-    displayName: 'Reading test 09.03 #4',
+    dueDateTime: '2022-09-16T00:00:00Z',
+    displayName: 'Reading test 09.14 Beta',
     instructions: {
         contentType: 'text',
         content: 'Read chapter 4'

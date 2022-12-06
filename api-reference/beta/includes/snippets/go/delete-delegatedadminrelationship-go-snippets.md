@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 headers := map[string]string{
-	"If-Match": "W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==""
+	"If-Match": "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"",
 }
-options := &msgraphsdk.DelegatedAdminRelationshipRequestBuilderDeleteOptions{
-	H: headers,
+configuration := &graphconfig.DelegatedAdminRelationshipRequestBuilderDeleteRequestConfiguration{
+	Headers: headers,
 }
-delegatedAdminRelationshipId := "delegatedAdminRelationship-id"
-graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).Delete(options)
+
+graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").Delete(context.Background(), configuration)
 
 
 ```

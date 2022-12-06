@@ -7,17 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"name": "My Day at the Beach",
-	"@microsoft.graph.conflictBehavior": "rename",
-	"children":  []Object {
+requestBody := graphmodels.NewBundlesPostRequestBody()
+additionalData := map[string]interface{}{
+	"name" : "My Day at the Beach", 
+	"@microsoft.graph.conflictBehavior" : "rename", 
+bundle := graphmodels.New()
+album := graphmodels.New()
+	bundle.SetAlbum(album)
+	requestBody.SetBundle(bundle)
+
+
+ := graphmodels.New()
+id := "1234asdf"
+.SetId(&id) 
+
+	children := []graphmodels.Objectable {
+		,
+
 	}
 }
-options := &msgraphsdk.BundlesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Drive().Bundles().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Drive().Bundles().Post(context.Background(), requestBody, nil)
 
 
 ```

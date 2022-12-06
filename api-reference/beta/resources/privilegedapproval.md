@@ -4,7 +4,7 @@ description: "Represents an approval that is requested in Privileged Identity Ma
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # privilegedApproval resource type (deprecated)

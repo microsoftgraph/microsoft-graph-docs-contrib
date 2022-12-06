@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content auditEvent = graphClient.tenantRelationships().managedTenants().auditEvent()
+AuditEvent auditEvent = graphClient.tenantRelationships().managedTenants().auditEvents("{auditEventId}")
 	.buildRequest()
 	.get();
 

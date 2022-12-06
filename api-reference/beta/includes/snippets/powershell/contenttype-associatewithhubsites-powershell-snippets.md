@@ -13,6 +13,6 @@ $params = @{
 	PropagateToExistingLists = $false
 }
 
-Join-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+Join-MgSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
 ```

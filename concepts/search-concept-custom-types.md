@@ -1,6 +1,6 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to search custom types"
-description: "You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resource, and run search queries on this external content."
+title: "Use the Microsoft Search API to search custom types imported using connectors"
+description: "Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by Microsoft Graph connectors."
 author: "nmoreau"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -8,11 +8,11 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors
 
-Use the Microsoft Search API to search across content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](https://www.microsoft.com/microsoft-search/connectors) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview).
+Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](https://www.microsoft.com/microsoft-search/connectors) provided by Microsoft, or via custom connectors implemented by using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview).
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-Once the content has been imported and indexed, you can use the search API to query the content.
+After the content has been imported and indexed, you can use the search API to query the content.
 
 To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query) method:
 

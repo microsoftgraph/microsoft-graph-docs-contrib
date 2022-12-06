@@ -53,6 +53,22 @@ Namespace: microsoft.graph.externalConnectors
 | limitExceeded
 | unknownFutureValue
 
+### contentExperienceType values
+|Member
+|:--------------
+| search
+| compliance
+| unknownFutureValue
+
+### externalActivityType values
+
+|Member
+|:--------------
+|viewed
+|modified
+|created
+|commented
+|unknownFutureValue
 
 ### externalGroupMemberType values
 
@@ -61,7 +77,6 @@ Namespace: microsoft.graph.externalConnectors
 | user
 | group
 | unknownFutureValue
-
 
 ### externalItemContentType values
 
@@ -78,6 +93,14 @@ Namespace: microsoft.graph.externalConnectors
 | azureActiveDirectory
 | external
 
+### identityType values
+
+| Member
+|:--------------
+| user
+| group
+| externalGroup
+| unknownFutureValue
 
 ### label values
 
@@ -113,7 +136,7 @@ Namespace: microsoft.graph.externalConnectors
 | dateTimeCollection
 | unknownFutureValue
 
-### ruleOperation values 
+### ruleOperation values
 
 |Member|
 |:---|
@@ -133,5 +156,3 @@ Namespace: microsoft.graph.externalConnectors
   "namespace": "microsoft.graph.externalConnectors"
 }
 -->
-
-

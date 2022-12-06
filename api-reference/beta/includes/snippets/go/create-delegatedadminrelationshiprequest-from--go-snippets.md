@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDelegatedAdminRelationshipRequest()
-action := "lockForApproval"
-requestBody.SetAction(&action)
-options := &msgraphsdk.RequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-delegatedAdminRelationshipId := "delegatedAdminRelationship-id"
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).Requests().Post(options)
+requestBody := graphmodels.NewDelegatedAdminRelationshipRequest()
+action := graphmodels.LOCKFORAPPROVAL_DELEGATEDADMINRELATIONSHIPREQUESTACTION 
+requestBody.SetAction(&action) 
+
+result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").Requests().Post(context.Background(), requestBody, nil)
 
 
 ```

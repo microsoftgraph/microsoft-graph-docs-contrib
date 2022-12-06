@@ -88,7 +88,7 @@ The following is an example of the request.
   "name": "reportroot_getonedriveusageuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveUsageAccountDetail(period='D7')
 ```
 

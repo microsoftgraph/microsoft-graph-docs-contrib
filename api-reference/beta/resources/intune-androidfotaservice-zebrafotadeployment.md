@@ -59,6 +59,7 @@ Here is a JSON representation of the resource.
     "deviceModel": "String",
     "updateType": "String",
     "timeZoneOffsetInMinutes": 1024,
+    "firmwareTargetArtifactDescription": "String",
     "firmwareTargetBoardSupportPackageVersion": "String",
     "firmwareTargetPatch": "String",
     "firmwareTargetOsVersion": "String",
@@ -76,6 +77,7 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.androidFotaDeploymentAssignment",
       "id": "String",
+      "displayName": "String",
       "target": {
         "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
         "groupId": "String"
@@ -101,6 +103,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagementConfigurationPolicy
 GET /deviceManagement/configurationPolicies
 GET /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies
 ```
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
+GET https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy
 ```
 
 ### Response
@@ -61,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 976
+Content-Length: 1090
 
 {
   "value": [
@@ -86,11 +87,15 @@ Content-Length: 976
         "templateFamily": "endpointSecurityAntivirus",
         "templateDisplayName": "Template Display Name value",
         "templateDisplayVersion": "Template Display Version value"
+      },
+      "priorityMetaData": {
+        "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData"
       }
     }
   ]
 }
 ```
+
 
 
 

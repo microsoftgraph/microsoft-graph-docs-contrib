@@ -38,6 +38,7 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 ## See also
 
 - [team](team.md)
+- [teamTemplateDefinition](teamtemplatedefinition.md)
 
 
 

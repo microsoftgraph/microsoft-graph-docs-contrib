@@ -4,7 +4,7 @@ description: "Represents the rules that the role settings are composed of."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # governanceRuleSetting resource type

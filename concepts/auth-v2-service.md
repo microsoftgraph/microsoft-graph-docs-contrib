@@ -150,15 +150,17 @@ A successful response looks like this:
 {
   "token_type": "Bearer",
   "expires_in": 3599,
+  "ext_expires_in":3599,
   "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1uQ19WWmNBVGZNNXBP..."
 }
 ```
 
-| Parameter     | Description
-|:--------------|:------------
-| access_token  | The requested access token. Your app can use this token in calls to Microsoft Graph.
-| token_type    | Indicates the token type value. The only type that Azure AD supports is `bearer`.
-| expires_in    | How long the access token is valid (in seconds).
+| Parameter      | Description                                                                                   |
+|:---------------|:----------------------------------------------------------------------------------------------|
+| access_token   | The requested access token. Your app can use this token in calls to Microsoft Graph.          |
+| expires_in     | How long the access token is valid (in seconds).                                              |
+| ext_expires_in | Used to indicate an extended lifetime for the access token and to support resiliency when the token issuance service is not responding. |
+| token_type     | Indicates the token type value. The only type that Azure AD supports is `Bearer`.             |
 
 ## 5. Use the access token to call Microsoft Graph
 

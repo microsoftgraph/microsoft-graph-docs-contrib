@@ -12,8 +12,9 @@ const client = Client.init(options);
 
 const cloudPcOrganizationSettings = {
   '@odata.type': '#microsoft.graph.cloudPcOrganizationSettings',
-  userAccountType: 'standardUser',
+  enableMEMAutoEnroll: true,
   osVersion: 'windows11',
+  userAccountType: 'standardUser',
   windowsSettings: {
     language: 'en-US'
   }

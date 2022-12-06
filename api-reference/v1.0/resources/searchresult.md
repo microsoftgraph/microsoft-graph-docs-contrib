@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SearchResult
+title: searchResult resource type
 ms.localizationpriority: medium
-description: "The SearchResult resource indicates than an item is the response to a search query."
-ms.prod: ""
+description: "The searchResult resource indicates than an item is the response to a search query."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# SearchResult resource type
+# searchResult resource type
 
 Namespace: microsoft.graph
 
-The **SearchResult** resource indicates than an item is the response to a search query.
+The **searchResult** resource indicates than an item is the response to a search query.
 
 ## JSON representation
 
@@ -36,7 +35,7 @@ The **SearchResult** resource indicates than an item is the response to a search
 
 ## Remarks 
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a DriveItem, see [driveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

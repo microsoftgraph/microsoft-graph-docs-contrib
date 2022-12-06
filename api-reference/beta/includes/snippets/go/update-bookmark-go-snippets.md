@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBookmark()
+requestBody := graphmodels.NewBookmark()
 description := "Book a fancy vacation in Tuscany or browse museums in Florence."
-requestBody.SetDescription(&description)
-options := &msgraphsdk.BookmarkRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-bookmarkId := "bookmark-id"
-graphClient.Search().BookmarksById(&bookmarkId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Search().BookmarksById("bookmark-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

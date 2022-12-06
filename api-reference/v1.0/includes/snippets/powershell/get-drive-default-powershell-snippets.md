@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Files
 
 # A UPN can also be used as -UserId.
-Get-MgUserDrive -UserId $userId
+Get-MgUserDefaultDrive -UserId $userId
 
 ```

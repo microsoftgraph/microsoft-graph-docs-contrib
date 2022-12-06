@@ -4,7 +4,7 @@ ms.date: 09/13/2017
 title: ContentTypeOrder
 ms.localizationpriority: medium
 description: "The contentTypeOrder resource specifies in which order the Content Type will appear in the selection UI."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

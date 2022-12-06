@@ -71,20 +71,23 @@ The CSV file has the following headers for columns:
 - Used Mac
 - Used Android Phone
 - Used Windows
+- Used Chrome OS
+- Used Linux
+- Is Licensed
 - Report Period
 
 ## Example
 
 ### Request
 
-The following is an example of a request.
+The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getteamsdeviceusageuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(period='D7')
 ```
 
@@ -113,7 +116,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
