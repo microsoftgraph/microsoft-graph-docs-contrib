@@ -13,10 +13,11 @@ Namespace: microsoft.graph
 
 ### layoutTemplateType values
 
-| Member      | Value |
-| :---------- | :---- |
-| default        | 0     |
-| verticalSplit  | 1     |
+| Member             |
+|:--------------------|
+| default            |
+| verticalSplit      |
+| unknownFutureValue |
 
 ### conditionalAccessExternalTenantsMembershipKind values
 

@@ -7,7 +7,7 @@
           "ApiChange": "Enumeration",
           "ChangedApiName": "layoutTemplateType",
           "ChangeType": "Addition",
-          "Description": "Added the [layoutTemplateType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the [layoutTemplateType](https://docs.microsoft.com/en-us/graph/api/resources/layoutTemplateType?view=graph-rest-beta) resource.",
           "Target": "layoutTemplateType"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "loginPageLayoutConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [loginPageLayoutConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/loginPageLayoutConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [loginPageLayoutConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/loginPageLayoutConfiguration?view=graph-rest-beta) resource.",
           "Target": "loginPageLayoutConfiguration"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customCSS",
           "ChangeType": "Addition",
-          "Description": "Added the [customCSS](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource",
+          "Description": "Added the **customCSS** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customCSSRelativeUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [customCSSRelativeUrl](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource",
+          "Description": "Added the **customCSSRelativeUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "headerLogo",
           "ChangeType": "Addition",
-          "Description": "Added the [headerLogo](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource",
+          "Description": "Added the **headerLogo** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "headerLogoRelativeUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [headerLogoRelativeUrl](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource",
+          "Description": "Added the **headerLogoRelativeUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "loginPageLayoutConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [loginPageLayoutConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource",
+          "Description": "Added the **loginPageLayoutConfiguration** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         }
       ],
