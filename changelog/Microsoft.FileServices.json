@@ -2862,7 +2862,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "canvasLayout",
           "ChangeType": "Addition",
-          "Description": "Added the [canvasLayout](https://learn.microsoft.com/en-us/graph/api/resources/canvasLayout?view=graph-rest-beta) resource",
+          "Description": "Added the [canvasLayout](https://learn.microsoft.com/en-us/graph/api/resources/canvasLayout?view=graph-rest-beta) resource.",
           "Target": "canvasLayout"
         },
         {
@@ -2870,7 +2870,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "horizontalSection",
           "ChangeType": "Addition",
-          "Description": "Added the [horizontalSection](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSection?view=graph-rest-beta) resource",
+          "Description": "Added the [horizontalSection](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSection?view=graph-rest-beta) resource and associated methods.",
           "Target": "horizontalSection"
         },
         {
@@ -2878,7 +2878,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "horizontalSectionColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [horizontalSectionColumn](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSectionColumn?view=graph-rest-beta) resource",
+          "Description": "Added the [horizontalSectionColumn](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSectionColumn?view=graph-rest-beta) resource and associated methods.",
           "Target": "horizontalSectionColumn"
         },
         {
@@ -2974,7 +2974,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "standardWebPart",
           "ChangeType": "Addition",
-          "Description": "Added the [standardWebPart](https://learn.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-beta) resource",
+          "Description": "Added the [standardWebPart](https://learn.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-beta) resource.",
           "Target": "standardWebPart"
         },
         {
@@ -2982,7 +2982,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "textWebPart",
           "ChangeType": "Addition",
-          "Description": "Added the [textWebPart](https://learn.microsoft.com/en-us/graph/api/resources/textWebPart?view=graph-rest-beta) resource",
+          "Description": "Added the [textWebPart](https://learn.microsoft.com/en-us/graph/api/resources/textWebPart?view=graph-rest-beta) resource.",
           "Target": "textWebPart"
         },
         {
@@ -2990,7 +2990,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "verticalSection",
           "ChangeType": "Addition",
-          "Description": "Added the [verticalSection](https://learn.microsoft.com/en-us/graph/api/resources/verticalSection?view=graph-rest-beta) resource",
+          "Description": "Added the [verticalSection](https://learn.microsoft.com/en-us/graph/api/resources/verticalSection?view=graph-rest-beta) resource and associated methods.",
           "Target": "verticalSection"
         },
         {
