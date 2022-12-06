@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Update data in assignments and grades
 
-Education institutions have custom tools that needs to update assignments and grades data; for example, user needs to create an assignment with custom tool, or update grades data ( outcome) for the submission from students.
+Education institutions have custom tools to update assignments and grading data. For example, a user may need to create an assignment or update grading data (outcome) with a custom tool for students to submit them.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
