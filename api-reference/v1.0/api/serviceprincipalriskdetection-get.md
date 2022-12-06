@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get servicePrincipalRiskDetection
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) object.
 
 >**Note:** You must have an Entra Workload Identity Premium license to use the servicePrincipalRiskDetection API.
@@ -57,8 +55,10 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections/{servicePrincipalRiskDetectionId}
+GET https://graph.microsoft.com/v1.0/identityProtection/servicePrincipalRiskDetections/{servicePrincipalRiskDetectionId}
 ```
+
+
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
