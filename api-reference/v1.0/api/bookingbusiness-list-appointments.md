@@ -213,6 +213,7 @@ Content-type: application/json
             "price": 10,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
+            "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
             "startDateTime": {
                 "dateTime": "2018-05-01T12:00:00.0000000Z",
