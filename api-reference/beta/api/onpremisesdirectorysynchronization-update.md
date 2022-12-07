@@ -27,8 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the user needs to be assigned the *Global administrator* [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-* Global administrator
-
 ## HTTP request
 
 <!-- {
