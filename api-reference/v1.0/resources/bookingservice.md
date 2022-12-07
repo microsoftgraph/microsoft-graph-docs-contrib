@@ -36,7 +36,7 @@ Represents information about a particular service provided by a [bookingBusiness
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String|The ID of that service, in a GUID format. Read-only.|
-|isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (webrtcUrl) will be generated for the appointment booked for this service.|
+|isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) will be generated for the appointment booked for this service.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
 |languageTag|String|The language of the self-service booking page.|
