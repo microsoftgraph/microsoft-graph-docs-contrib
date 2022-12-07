@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### layoutTemplateType values
+
+| Member             |
+|:--------------------|
+| default            |
+| verticalSplit      |
+| unknownFutureValue |
+
 ### conditionalAccessExternalTenantsMembershipKind values
 
 |Member|
@@ -3387,6 +3395,15 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |privateContent|
 |sharedContent|
+|unknownFutureValue|
+
+### chatMessageActions values 
+
+|Member|
+|:---|
+|reactionAdded|
+|reactionRemoved|
+|actionUndefined|
 |unknownFutureValue|
 
 
