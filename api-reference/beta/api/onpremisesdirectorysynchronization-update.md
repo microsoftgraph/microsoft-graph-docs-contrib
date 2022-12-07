@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                               |
 | Application                            | Not supported.                               |
 
-For delegated scenario, the user needs to be assigned the one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios, the user needs to be assigned the *Global administrator* [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 * Global administrator
 
