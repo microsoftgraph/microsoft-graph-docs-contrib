@@ -1,5 +1,71 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "layoutTemplateType",
+          "ChangeType": "Addition",
+          "Description": "Added the [layoutTemplateType](https://learn.microsoft.com/en-us/graph/api/resources/layoutTemplateType?view=graph-rest-beta) resource.",
+          "Target": "layoutTemplateType"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageLayoutConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [loginPageLayoutConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/loginPageLayoutConfiguration?view=graph-rest-beta) resource.",
+          "Target": "loginPageLayoutConfiguration"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCSS",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCSS** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCSSRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCSSRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerLogo",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerLogo** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerLogoRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerLogoRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageLayoutConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **loginPageLayoutConfiguration** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        }
+      ],
+      "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-06T08:43:38.2274156Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+     },
      {
       "ChangeList": [
         {
