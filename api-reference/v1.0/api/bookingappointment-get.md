@@ -93,7 +93,7 @@ Content-type: application/json
     "price": 10.0,
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
-    "anonymousJoinWebUrl": "String",
+    "anonymousJoinWebUrl": null,
     "staffMemberIds": [],
     "startDateTime": {
         "dateTime": "2018-05-06T12:00:00.0000000Z",
