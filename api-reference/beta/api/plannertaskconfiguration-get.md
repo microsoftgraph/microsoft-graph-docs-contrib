@@ -83,12 +83,105 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.plannerTaskConfiguration",
-    "id": "28d08803-2e7b-9873-59df-1f68cb1c0539",
-    "editPolicy": {
-      "@odata.type": "microsoft.graph.plannerTaskPolicy"
-    }
+  "@odata.type": "#microsoft.graph.plannerTaskConfiguration",
+  "id": "52be01e6291f403aa49f2b9f5288ab48",
+  "editPolicy": {
+    "rules": [
+      {
+        "defaultRule": "block",
+        "role": {
+          "@odata.type": "#microsoft.graph.plannerRelationshipBasedUserType",
+          "roleKind": "relationship",
+          "role": "defaultRules"
+        },
+        "propertyRule": {
+          "move": [],
+          "delete": [],
+          "title": [],
+          "notes": [],
+          "priority": [],
+          "startDate": [],
+          "dueDate": [],
+          "percentComplete": ["allow"],
+          "order": [],
+          "previewType": [],
+          "ruleKind": "taskRule",
+          "references": null,
+          "checkLists": null,
+          "assignments": {
+            "defaultRules": ["addSelf"],
+            "overrides": []
+          },
+          "appliedCategories": null
+        }
+      },
+      {
+        "defaultRule": "block",
+        "role": {
+          "@odata.type": "#microsoft.graph.plannerRelationshipBasedUserType",
+          "roleKind": "relationship",
+          "role": "taskAssignees"
+        },
+        "propertyRule": {
+          "move": [],
+          "delete": [],
+          "title": [],
+          "notes": [],
+          "priority": [],
+          "startDate": ["allow"],
+          "dueDate": ["allow"],
+          "percentComplete": ["allow"],
+          "order": ["allow"],
+          "previewType": [],
+          "ruleKind": "taskRule",
+          "references": {
+            "defaultRules": ["allow"],
+            "overrides": [
+              {
+                "name": "userCreated",
+                "rules": ["allow"]
+              },
+              {
+                "name": "applicationCreated",
+                "rules": ["block"]
+              }
+            ]
+          },
+          "checkLists": {
+            "defaultRules": ["allow"],
+            "overrides": [
+              {
+                "name": "userCreated",
+                "rules": ["allow"]
+              },
+              {
+                "name": "applicationCreated",
+                "rules": ["check"]
+              }
+            ]
+          },
+          "assignments": {
+            "defaultRules": ["block"],
+            "overrides": [
+              {
+                "name": "userCreated",
+                "rules": ["removeSelf"]
+              },
+              {
+                "name": "applicationCreated",
+                "rules": ["check"]
+              }
+            ]
+          },
+          "appliedCategories": {
+            "defaultRules": [
+              "allow"
+            ],
+            "overrides": []
+          }
+        }
+      }
+    ]
   }
 }
 ```

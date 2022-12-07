@@ -83,23 +83,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.plannerPlanConfiguration",
-    "id": "0d9e8529-c49c-8fad-a12b-f87e079bf551",
-    "defaultLanguage": "String",
-    "buckets": [
+  "@odata.type": "#microsoft.graph.plannerPlanConfiguration",
+  "id": "afdd911ee3db44b69cc28373a6192e94",
+  "defaultLanguage": "en-us",
+  "buckets": [
       {
-        "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketDefinition"
+          "externalBucketId": "deliveryBucket"
+      },
+      {
+          "externalBucketId": "storePickupBucket"
+      },
+      {
+          "externalBucketId": "specialOrdersBucket"
+      },
+      {
+          "externalBucketId": "returnProcessingBucket"
       }
-    ],
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)"
-  }
+  ]
 }
 ```

@@ -85,20 +85,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.businessScenario",
-      "id": "277253c3-a27e-99e1-402e-45acffad54e1",
-      "displayName": "String",
-      "uniqueName": "String",
+      "id": "c5d514e6c6864911ac46c720affb6e4d",
+      "displayName": "Contoso Order Tracking",
+      "uniqueName": "ordertracking.apps.contoso.com",
       "ownerAppIds": [
-        "String"
-      ],
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)"
+        "44109254-4b2b-7a33-76ee-c890a167b295"
+      ]
     }
   ]
 }

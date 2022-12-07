@@ -83,9 +83,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.businessScenarioPlanner",
-    "id": "54379e10-f935-5776-7a30-445837f15655"
-  }
+  "@odata.type": "#microsoft.graph.businessScenarioPlanner",
+  "id": "54379e10-f935-5776-7a30-445837f15655"
 }
 ```

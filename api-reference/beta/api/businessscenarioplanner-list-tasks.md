@@ -86,44 +86,21 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.businessScenarioTask",
-      "id": "657127e8-b792-bd90-d937-82b7465d1c11",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "planId": "String",
-      "bucketId": "String",
-      "title": "String",
-      "orderHint": "String",
-      "assigneePriority": "String",
-      "percentComplete": "Integer",
-      "priority": "Integer",
-      "startDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "dueDateTime": "String (timestamp)",
-      "hasDescription": "Boolean",
-      "previewType": "String",
-      "completedDateTime": "String (timestamp)",
-      "completedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "referenceCount": "Integer",
-      "checklistItemCount": "Integer",
-      "activeChecklistItemCount": "Integer",
-      "appliedCategories": {
-        "@odata.type": "microsoft.graph.plannerAppliedCategories"
-      },
-      "assignments": {
-        "@odata.type": "microsoft.graph.plannerAssignments"
-      },
-      "conversationThreadId": "String",
-      "creationSource": {
-        "@odata.type": "microsoft.graph.plannerTaskCreation"
+      "title": "Customer order #12010",
+      "percentComplete": 0,
+      "priority": 5,
+      "id": "pmc1rS1Io0C3rXQhyXIsNmUAOeIi",
+      "target": {
+          "@odata.type": "microsoft.graph.businessScenarioGroupTarget",
+          "taskTargetKind": "group",
+          "groupId": "7a339254-4b2b-4410-b295-c890a16776ee"
       },
       "businessScenarioProperties": {
-        "@odata.type": "microsoft.graph.businessScenarioProperties"
-      },
-      "target": {
-        "@odata.type": "microsoft.graph.businessScenarioTaskTargetBase"
+          "externalObjectId": "Order#12010",
+          "externalContextId": "Warehouse-CA-36",
+          "externalObjectVersion": "000001",
+          "webUrl": "https://ordertracking.contoso.com/view?id=12010",
+          "externalBucketId": "deliveryBucket"
       }
     }
   ]
@@ -142,7 +119,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=businessScenarioProperties/externalContextId eq 'value'
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=businessScenarioProperties/externalContextId eq 'Warehouse-CA-36'
 ```
 
 #### Response
@@ -163,44 +140,21 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.businessScenarioTask",
-      "id": "657127e8-b792-bd90-d937-82b7465d1c11",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "planId": "String",
-      "bucketId": "String",
-      "title": "String",
-      "orderHint": "String",
-      "assigneePriority": "String",
-      "percentComplete": "Integer",
-      "priority": "Integer",
-      "startDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "dueDateTime": "String (timestamp)",
-      "hasDescription": "Boolean",
-      "previewType": "String",
-      "completedDateTime": "String (timestamp)",
-      "completedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "referenceCount": "Integer",
-      "checklistItemCount": "Integer",
-      "activeChecklistItemCount": "Integer",
-      "appliedCategories": {
-        "@odata.type": "microsoft.graph.plannerAppliedCategories"
-      },
-      "assignments": {
-        "@odata.type": "microsoft.graph.plannerAssignments"
-      },
-      "conversationThreadId": "String",
-      "creationSource": {
-        "@odata.type": "microsoft.graph.plannerTaskCreation"
+      "title": "Customer order #12010",
+      "percentComplete": 0,
+      "priority": 5,
+      "id": "pmc1rS1Io0C3rXQhyXIsNmUAOeIi",
+      "target": {
+        "@odata.type": "microsoft.graph.businessScenarioGroupTarget",
+        "taskTargetKind": "group",
+        "groupId": "7a339254-4b2b-4410-b295-c890a16776ee"
       },
       "businessScenarioProperties": {
-        "@odata.type": "microsoft.graph.businessScenarioProperties"
-      },
-      "target": {
-        "@odata.type": "microsoft.graph.businessScenarioTaskTargetBase"
+        "externalObjectId": "Order#12010",
+        "externalContextId": "Warehouse-CA-36",
+        "externalObjectVersion": "000001",
+        "webUrl": "https://ordertracking.contoso.com/view?id=12010",
+        "externalBucketId": "deliveryBucket"
       }
     }
   ]
@@ -219,7 +173,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=location/microsoft.graph.businessScenarioGroupTarget/groupId eq 'group id'
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks?$filter=location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'
 ```
 
 #### Response
@@ -240,44 +194,21 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.businessScenarioTask",
-      "id": "657127e8-b792-bd90-d937-82b7465d1c11",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "planId": "String",
-      "bucketId": "String",
-      "title": "String",
-      "orderHint": "String",
-      "assigneePriority": "String",
-      "percentComplete": "Integer",
-      "priority": "Integer",
-      "startDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "dueDateTime": "String (timestamp)",
-      "hasDescription": "Boolean",
-      "previewType": "String",
-      "completedDateTime": "String (timestamp)",
-      "completedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "referenceCount": "Integer",
-      "checklistItemCount": "Integer",
-      "activeChecklistItemCount": "Integer",
-      "appliedCategories": {
-        "@odata.type": "microsoft.graph.plannerAppliedCategories"
-      },
-      "assignments": {
-        "@odata.type": "microsoft.graph.plannerAssignments"
-      },
-      "conversationThreadId": "String",
-      "creationSource": {
-        "@odata.type": "microsoft.graph.plannerTaskCreation"
+      "title": "Customer order #12010",
+      "percentComplete": 0,
+      "priority": 5,
+      "id": "pmc1rS1Io0C3rXQhyXIsNmUAOeIi",
+      "target": {
+        "@odata.type": "microsoft.graph.businessScenarioGroupTarget",
+        "taskTargetKind": "group",
+        "groupId": "7a339254-4b2b-4410-b295-c890a16776ee"
       },
       "businessScenarioProperties": {
-        "@odata.type": "microsoft.graph.businessScenarioProperties"
-      },
-      "target": {
-        "@odata.type": "microsoft.graph.businessScenarioTaskTargetBase"
+        "externalObjectId": "Order#12010",
+        "externalContextId": "Warehouse-CA-36",
+        "externalObjectVersion": "000001",
+        "webUrl": "https://ordertracking.contoso.com/view?id=12010",
+        "externalBucketId": "deliveryBucket"
       }
     }
   ]

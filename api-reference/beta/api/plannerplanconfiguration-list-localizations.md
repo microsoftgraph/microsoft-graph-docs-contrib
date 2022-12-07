@@ -99,13 +99,56 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
       "id": "en-us",
       "languageTag": "en-us",
-      "planTitle": "Plan title",
+      "planTitle": "Order Tracking",
       "buckets": [
-        {
-          "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-          "externalBucketId": "123",
-          "name": "Bucket name"
-        }
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "deliveryBucket",
+              "name": "Deliveries"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "storePickupBucket",
+              "name": "Pickup"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "specialOrdersBucket",
+              "name": "Special Orders"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "returnProcessingBucket",
+              "name": "Customer Returns"
+          }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
+      "id": "pt-br",
+      "languageTag": "pt-br",
+      "planTitle": "Acompanhamento de pedidos",
+      "buckets": [
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "deliveryBucket",
+              "name": "Entregas"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "storePickupBucket",
+              "name": "Retirada na loja"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "specialOrdersBucket",
+              "name": "Pedidos especiais"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "returnProcessingBucket",
+              "name": "Devoluções"
+          }
       ]
     }
   ]
@@ -147,13 +190,28 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
       "id": "en-us",
       "languageTag": "en-us",
-      "planTitle": "Plan title",
+      "planTitle": "Order Tracking",
       "buckets": [
-        {
-          "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-          "externalBucketId": "123",
-          "name": "Bucket name"
-        }
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "deliveryBucket",
+              "name": "Deliveries"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "storePickupBucket",
+              "name": "Pickup"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "specialOrdersBucket",
+              "name": "Special Orders"
+          },
+          {
+              "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization",
+              "externalBucketId": "returnProcessingBucket",
+              "name": "Customer Returns"
+          }
       ]
     }
   ]

@@ -71,7 +71,9 @@ Content-Type: application/json
 
 {
   "target": {
-    "@odata.type": "microsoft.graph.businessScenarioGroupTarget"
+      "@odata.type": "microsoft.graph.businessScenarioGroupTarget",
+      "taskTargetKind": "group",
+      "groupId": "7a339254-4b2b-4410-b295-c890a16776ee"
   }
 }
 ```
@@ -91,10 +93,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.businessScenarioPlanReference",
-    "id": "String (identifier)",
-    "title": "String"
-  }
+  "@odata.type": "#microsoft.graph.businessScenarioPlanReference",
+  "id": "pmc1rS1Io0C3rXQhyXIsNmUAOeIi",
+  "title": "Order Tracking"
 }
 ```

@@ -81,11 +81,23 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
-  "languageTag": "String",
-  "planTitle": "String",
+  "planTitle": "Order Tracking",
   "buckets": [
     {
-      "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+      "externalBucketId": "deliveryBucket",
+      "name": "Deliveries"
+    },
+    {
+      "externalBucketId": "storePickupBucket",
+      "name": "Pickup"
+    },
+    {
+      "externalBucketId": "specialOrdersBucket",
+      "name": "Special Orders"
+    },
+    {
+      "externalBucketId": "returnProcessingBucket",
+      "name": "Customer Returns"
     }
   ]
 }
@@ -106,12 +118,25 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.plannerPlanConfigurationLocalization",
-  "id": "fe3919b6-7927-0c66-cc73-a7ba6b0adf7d",
-  "languageTag": "String",
-  "planTitle": "String",
+  "id": "en-us",
+  "languageTag": "en-us",
+  "planTitle": "Order Tracking",
   "buckets": [
     {
-      "@odata.type": "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+      "externalBucketId": "deliveryBucket",
+      "name": "Deliveries"
+    },
+    {
+      "externalBucketId": "storePickupBucket",
+      "name": "Pickup"
+    },
+    {
+      "externalBucketId": "specialOrdersBucket",
+      "name": "Special Orders"
+    },
+    {
+      "externalBucketId": "returnProcessingBucket",
+      "name": "Customer Returns"
     }
   ]
 }
