@@ -53,6 +53,7 @@ PATCH /solutions/bookingBusinesses/{id}/services/{id}
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String| The unique identifier for the **bookingService**. Read-only.|
+|isAnonymousJoinEnabled|Boolean| True means anonymousJoinEnabled(webrtcUrl) will be generated for the appointment booked for this service.|
 |languageTag|String|The language of the self-service booking page.|
 |isHiddenFromCustomers|Boolean|If `true`, the service is not available to customers for booking.|
 |isLocationOnline|Boolean|If `true` it indicates that the appointments for the service will be held online. Default value is `false`.|
