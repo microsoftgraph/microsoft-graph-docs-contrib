@@ -645,7 +645,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "anonymousJoinWebUrl",
             "ChangeType": "Addition",
-            "Description": "Added the **anonymousJoinWebUrl** property to the [bookingAppointment](https://learn.microsoft.com/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
+            "Description": "Added the **anonymousJoinWebUrl** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
             "Target": "bookingAppointment"
           },
           {
@@ -653,23 +653,15 @@
             "ApiChange": "Property",
             "ChangedApiName": "languageTag",
             "ChangeType": "Addition",
-            "Description": "Added the **languageTag** property to the [bookingBusiness](https://learn.microsoft.com/graph/api/resources/bookingBusiness?view=graph-rest-1.0) resource.",
+            "Description": "Added the **languageTag** property to the [bookingBusiness](https://learn.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-1.0) resource.",
             "Target": "bookingBusiness"
-          },
-          {
-            "Id": "b4dff39b-4869-4fb7-a274-8929abc049d2",
-            "ApiChange": "Property",
-            "ChangedApiName": "smsNotificationsEnabled",
-            "ChangeType": "Addition",
-            "Description": "Added the **smsNotificationsEnabled** property to the [bookingCustomerInformation](https://learn.microsoft.com/graph/api/resources/bookingCustomerInformation?view=graph-rest-1.0) resource.",
-            "Target": "bookingCustomerInformation"
           },
           {
             "Id": "b4dff39b-4869-4fb7-a274-8929abc049d2",
             "ApiChange": "Property",
             "ChangedApiName": "isAnonymousJoinEnabled",
             "ChangeType": "Addition",
-            "Description": "Added the **isAnonymousJoinEnabled** property to the [bookingService](https://learn.microsoft.com/graph/api/resources/bookingService?view=graph-rest-1.0) resource.",
+            "Description": "Added the **isAnonymousJoinEnabled** property to the [bookingService](https://learn.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-1.0) resource.",
             "Target": "bookingService"
           },
           {
@@ -677,7 +669,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "languageTag",
             "ChangeType": "Addition",
-            "Description": "Added the **languageTag** property to the [bookingService](https://learn.microsoft.com/graph/api/resources/bookingService?view=graph-rest-1.0) resource.",
+            "Description": "Added the **languageTag** property to the [bookingService](https://learn.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-1.0) resource.",
             "Target": "bookingService"
           },
           {
@@ -685,7 +677,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "isEmailNotificationEnabled",
             "ChangeType": "Addition",
-            "Description": "Added the **isEmailNotificationEnabled** property to the [bookingStaffMember](https://learn.microsoft.com/graph/api/resources/bookingStaffMember?view=graph-rest-1.0) resource.",
+            "Description": "Added the **isEmailNotificationEnabled** property to the [bookingStaffMember](https://learn.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-1.0) resource.",
             "Target": "bookingStaffMember"
           }
         ],

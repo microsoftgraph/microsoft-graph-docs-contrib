@@ -10,7 +10,7 @@ doc_type: resourcePageType
 # bookingAppointment resource type
 
 Namespace: microsoft.graph
- 
+
 Represents a customer appointment for a [bookingService](bookingservice.md), performed by a set of staff members, provided by a Microsoft Bookings business.
 
 > [!NOTE]
@@ -18,7 +18,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method   | Return Type |Description|
 |:---------------|:--------|:----------|
 |[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](bookingbusiness.md). |
 |[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](bookingbusiness.md). |
@@ -29,7 +29,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 
 ## Properties
 
-| Property	   | Type	|Description|
+| Property     | Type |Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
 |anonymousJoinWebUrl|String|The URL of the meeting to join anonymously.|
@@ -75,6 +75,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "additionalInformation": "String",
   "anonymousJoinWebUrl": "String",
   "customers": [
     {
@@ -83,15 +84,15 @@ The following is a JSON representation of the resource.
   ],
   "duration": "String (timestamp)",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "filledAttendeesCount": "Integer",
+  "filledAttendeesCount": "Int32",
   "id": "String (identifier)",
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
-  "maximumAttendeesCount": "Integer",
+  "maximumAttendeesCount": "Int32",
   "optOutOfCustomerEmail": "Boolean",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
-  "price": "Integer",
+  "price": "Double",
   "priceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
   "reminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "selfServiceAppointmentId": "String",

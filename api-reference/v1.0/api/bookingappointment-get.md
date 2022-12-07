@@ -90,7 +90,7 @@ Content-type: application/json
     "preBuffer": "PT5M",
     "postBuffer": "PT10M",
     "priceType": "fixedPrice",
-    "price": 10,
+    "price": 10.0,
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": "String",
