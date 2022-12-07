@@ -10,7 +10,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 For an app to access data in Microsoft Graph, the user or administrator must grant it the permissions it needs. This topic lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
-To find the unique identifiers for all permissions, jump to [All permissions and IDs](#all-permissions-and-ids).
+To find the unique identifiers for all permissions, see [All permissions and IDs](#all-permissions-and-ids).
 
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
 

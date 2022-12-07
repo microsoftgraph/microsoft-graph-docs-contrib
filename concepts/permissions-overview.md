@@ -13,11 +13,10 @@ Before the Microsoft identity platform can authorize your app to access data in 
 One way to grant an app the privileges it needs to access and work with your data through Microsoft Graph is by assigning it *Microsoft Graph permissions*.
 
 This article introduces Microsoft Graph permissions and provides guidance for using the permissions. To see the full list of permissions that Microsoft Graph exposes, see the [Microsoft Graph permissions reference](permissions-reference.md).
-<!--
+
 To learn more about how permissions work, watch the following video.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
--->
 
 ## Permission types
 
@@ -31,9 +30,9 @@ To support these access scenarios, Microsoft Graph exposes granular *delegated p
 
 For example, an application has been granted the *Files.Read.All* delegated permission on behalf of Tom, a user. The application will only be able to read all files in the organization that Tom can already access. Tom may be able to access the files because he has permissions through one of the following ways:
 
-+ Tom created or owns the files.
-+ The files were shared directly with Tom, or indirectly shared with him through a team or group membership.
-+ Tom has been granted permissions through a role-based access control (RBAC) system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview). For the list of Azure AD administrative roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json).
+- Tom created or owns the files.
+- The files were shared directly with Tom, or indirectly shared with him through a team or group membership.
+- Tom has been granted permissions through a role-based access control (RBAC) system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview). For the list of Azure AD administrative roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json).
 
 Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.
 
@@ -54,13 +53,13 @@ For apps that access resources and APIs without a signed-in user, the applicatio
 
 Apart from being assigned Microsoft Graph application permissions, an app may also be granted the privileges it needs through one of the following conditions:
 
-+ When the app is assigned ownership of the resource that it intends to manage.
-+ When the app is assigned an Azure AD built-in or custom administrative roles.
+- When the app is assigned ownership of the resource that it intends to manage.
+- When the app is assigned an Azure AD built-in or custom administrative roles.
 
 > [!NOTE]
 > Permissions granted through [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
 
-#### Comparison of delegated and application permissions
+### Comparison of delegated and application permissions
 
 | <!-- No header--> | Delegated permissions | Application permissions |
 |--|--|--|
@@ -87,11 +86,11 @@ Microsoft Graph exposes granular permissions that help you control the access th
 | `{constraint}` | Determines the potential extent of access an app will have within the directory. This value may not be explicitly declared. When undeclared, the default constraint is limited to data that's owned by the signed-in user. | `All`, `AppFolder`, `OwnedBy`, `Selected`, `Shared`, `Hidden`      |
 
 Examples:
-+ *User.Read* - Allows the app to read information about the signed-in user.
-+ *Application.ReadWrite.All* - Allows the app to manage all applications in the tenant.
-+ *Application.ReadWrite.OwnedBy* - Allows the app to manage only the applications that it creates or owns.
-+ *Group.Create* - Allows the application create new groups, but not modify or delete them.
-+ *Member.Read.Hidden* - Allows the app to read hidden memberships
+- *User.Read* - Allows the app to read information about the signed-in user.
+- *Application.ReadWrite.All* - Allows the app to manage all applications in the tenant.
+- *Application.ReadWrite.OwnedBy* - Allows the app to manage only the applications that it creates or owns.
+- *Group.Create* - Allows the application create new groups, but not modify or delete them.
+- *Member.Read.Hidden* - Allows the app to read hidden memberships
 
 For the full list of permissions exposed by Microsoft Graph, see the [Microsoft Graph permissions reference](permissions-reference.md).
 
@@ -109,8 +108,8 @@ To read the basic properties of a group's members that are users, the app needs 
 
 Because the app has permissions to access only user and group objects in the group, but not device objects, in the response:
 
-+ All the basic properties of the user and group member objects are returned. 
-+ For the device member objects, only the object type and object ID are returned, but all other properties have the value *null*.
+- All the basic properties of the user and group member objects are returned. 
+- For the device member objects, only the object type and object ID are returned, but all other properties have the value *null*.
 
 ### Example
 
@@ -158,8 +157,8 @@ Microsoft Graph exposes granular permissions that allow an app to request only t
 
 Consider the following examples:
 
-1. An app needs to only read the profile information of the signed-in user. The app requires only the *User.Read* permission, which is the least privileged permission to access the signed-in user's information. Granting the app the *User.ReadWrite* permission makes it over-privileged because the app doesn't need to update the user's profile.
-2. An app needs to read the groups in the tenant without a signed-in user, the least privileged Microsoft Graph permission that the app needs is the *Group.Read.All* application permission.
+- An app needs to only read the profile information of the signed-in user. The app requires only the *User.Read* permission, which is the least privileged permission to access the signed-in user's information. Granting the app the *User.ReadWrite* permission makes it over-privileged because the app doesn't need to update the user's profile.
+- An app needs to read the groups in the tenant without a signed-in user. The app requires only the *Group.Read.All* application permission, which is the least privileged permission to read groups in the tenant without a signed-in user..
 
 Granting an application more privileges than it needs is a poor security practice that exposes an app to unauthorized and unintended access to data or operations. Also, requiring more permissions than necessary may cause users to refrain from consenting to an app, affecting an app's adoption and usage.
 
@@ -178,6 +177,6 @@ To find the IDs for all Microsoft Graph permissions, see [All permissions and ID
 
 ## See also
 
-+ [Microsoft Graph permissions reference](permissions-reference.md).
-+ [Overview of role-based access control in Azure Active Directory](/azure/active-directory/roles/custom-overview).
-+ [Understanding delegated access](/azure/active-directory/develop/delegated-access-primer)
+- [Microsoft Graph permissions reference](permissions-reference.md).
+- [Overview of role-based access control in Azure Active Directory](/azure/active-directory/roles/custom-overview).
+- [Understanding delegated access](/azure/active-directory/develop/delegated-access-primer)
