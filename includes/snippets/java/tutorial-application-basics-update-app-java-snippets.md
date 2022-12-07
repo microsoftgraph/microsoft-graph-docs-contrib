@@ -26,6 +26,7 @@ LinkedList<String> redirectUrisList = new LinkedList<String>();
 redirectUrisList.add("https://localhost");
 web.redirectUris = redirectUrisList;
 application.web = web;
+application.appRoleAssignmentRequired = true;
 
 graphClient.applications("0d0021e2-eaab-4b9f-a5ad-38c55337d63e")
 	.buildRequest()
