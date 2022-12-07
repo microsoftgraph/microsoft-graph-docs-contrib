@@ -12,7 +12,7 @@ Before the Microsoft identity platform can authorize your app to access data in 
 
 One way to grant an app the privileges it needs to access and work with your data through Microsoft Graph is by assigning it *Microsoft Graph permissions*.
 
-This article introduces Microsoft Graph permissions and provides guidance for using the permissions. To see the full list of permissions that Microsoft Graph exposes, see the [Microsoft Graph permissions reference](permissions-reference.md).
+This article introduces Microsoft Graph permissions and provides guidance for using them. To see the full list of permissions that Microsoft Graph exposes, see the [Microsoft Graph permissions reference](permissions-reference.md).
 
 To learn more about how permissions work, watch the following video.
 
@@ -22,7 +22,7 @@ To learn more about how permissions work, watch the following video.
 
 Microsoft Graph supports [two access scenarios](/graph/auth/auth-concepts), *delegated access* and *app-only access*. In delegated access, the app calls Microsoft Graph on behalf of a signed-in user. In app-only access, the app calls Microsoft Graph with its own identity, without a signed in user.
 
-To support these access scenarios, Microsoft Graph exposes granular *delegated permissions* and *application permissions*.
+To support these access scenarios, Microsoft Graph exposes *delegated permissions* and *application permissions*.
 
 ### Delegated permissions
 
@@ -32,7 +32,7 @@ For example, an application has been granted the *Files.Read.All* delegated perm
 
 - Tom created or owns the files.
 - The files were shared directly with Tom, or indirectly shared with him through a team or group membership.
-- Tom has been granted permissions through a role-based access control (RBAC) system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview). For the list of Azure AD administrative roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json).
+- Tom has been granted permissions through a role-based access control (RBAC) system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
 
 Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.
 
@@ -96,7 +96,7 @@ For the full list of permissions exposed by Microsoft Graph, see the [Microsoft 
 
 ## Limited information returned for inaccessible member objects
 
-Container objects such as groups support members of various types, for example users and devices. When an application queries the membership of a container object, it receives a `200 OK` response and a collection of objects. However, if the app doesn't have the permissions to read a certain object type in the container, objects of that type are returned but with limited information, for example, only the object type and ID may be returned and other properties are indicated as `null`. Complete information is returned for the object types that the app has permissions to read.
+Container objects such as groups support members of various types, for example users and devices. When an application with the right privileges queries the membership of a container object, it receives a `200 OK` response and a collection of objects. However, if the app doesn't have the permissions to read a certain object type in the container, objects of that type are returned but with limited information, for example, only the object type and ID may be returned and other properties are indicated as `null`. Complete information is returned for the object types that the app has permissions to read.
 
 This principle is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type. Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
 
@@ -115,7 +115,11 @@ Because the app has permissions to access only user and group objects in the gro
 
 #### Request
 
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "permissions-overview-limitedinfo-example"
+}-->
+```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
 
@@ -128,13 +132,13 @@ The following object is an example of the response:
         {
             "@odata.type":"#microsoft.graph.user",
             "id":"69d035a3-29c9-469f-809d-d21a4ae69e65",
-            "displayName":"Jane Dane",
+            "displayName":"Adele Vance",
             "createdDateTime":"2019-09-18T09:06:51Z",
         },
         {
             "@odata.type":"#microsoft.graph.group",
             "id":"c43a7cc9-2d95-44b6-bf6a-6392e41949b4",
-            "displayName":"Group 1",
+            "displayName":"All Company",
             "description":null,
             "createdDateTime":"2019-10-24T01:34:35Z"
         },
@@ -169,11 +173,11 @@ Apply the principle of least privilege when assigning and granting Microsoft Gra
 
 [!INCLUDE [microsoft-graph-permissions-limits](includes/msgraph-permissions-limits.md)]
 
-## Retrieve permission IDs
+## Retrieve permission IDs through Microsoft Graph
 
-To set permissions using the Azure CLI, PowerShell, or infrastructure as code frameworks, you might need the identifier for the permission that you want to use instead of the name.
+To set permissions using the Azure CLI, PowerShell, or infrastructure as code frameworks, you may need the identifier for the permission that you want to use instead of the name.
 
-To find the IDs for all Microsoft Graph permissions, see [All permissions and IDs](permissions-reference.md#all-permissions-and-ids). Alternatively, you can read the permissions programmatically through the [Get servicePrincipal](#see-also) API in Microsoft Graph.
+To find the IDs for all Microsoft Graph permissions, see [All permissions and IDs](permissions-reference.md#all-permissions-and-ids). Alternatively, you can read the permissions programmatically through the [Get servicePrincipal](/graph/api/serviceprincipal-get) API in Microsoft Graph.
 
 ## See also
 
