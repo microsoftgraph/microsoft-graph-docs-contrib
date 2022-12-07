@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
+| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All, Bookmark.Read.All, Acronym.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Files.Read.All, Sites.Read.All |
 
