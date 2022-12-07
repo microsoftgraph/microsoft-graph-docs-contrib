@@ -26,7 +26,7 @@ This alert evidence base type and its derived evidence types provide a means to 
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The time the evidence was created and added to the alert.|
-|remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `active`, `pendingApproval`, `declined`, `notRemediated`, `running`, `unknownFutureValue`.|
+|remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`.|
 |remediationStatusDetails|String|Details about the remediation status.|
 |roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role "Attacker".|
 |tags|String collection|Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.|

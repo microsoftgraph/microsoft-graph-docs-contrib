@@ -8,7 +8,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Create comment for incident
+# Create comment
 Namespace: microsoft.graph
 
 Create a comment for an existing [incident](../resources/security-incident.md) based on the specified incident **id** property.

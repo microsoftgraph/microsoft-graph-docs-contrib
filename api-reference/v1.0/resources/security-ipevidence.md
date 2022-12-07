@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
   "tags": [
     "String"
   ],
-  "ipAddress": "String"
+  "ipAddress": "String",
+  "countryLetterCode": "String"
 }
 ```

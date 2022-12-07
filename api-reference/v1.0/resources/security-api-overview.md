@@ -12,6 +12,7 @@ doc_type: conceptualPageType
 The Microsoft Graph security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph security API federates queries to all onboarded security providers and aggregates responses. Use the Microsoft Graph security API to build applications that:
 
 - Consolidate and correlate security alerts from multiple sources.
+- Pull and investigate all incidents and alerts from services that are part of or integrated with Microsoft 365 Defender.
 - Unlock contextual data to inform investigations.
 - Automate security tasks, business processes, workflows, and reporting.
 - Send threat indicators to Microsoft products for customized detections.
@@ -63,7 +64,7 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
-Alerts are potential security issues within a customer's tenant that Microsoft or partner security providers have identified and flagged for action or notification. 
+These [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response.
 
 The legacy version of the security API offers the [alert](alert.md) resource which federates calling of supported Azure and Microsoft 365 Defender security providers. This **alert** resource aggregates alert data that’s common among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. This enables applications to correlate alerts and context to improve threat protection and response. 
 
@@ -95,6 +96,25 @@ Alerts from the following providers are available via this **alert** resource. S
 ## eDiscovery
 
 [Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations.
+
+# Incidents
+
+An [incident](security-incident.md) is a collection of correlated  [alerts](security-alert.md) and associated data that make up the story of an attack. Incident management is part of Microsoft 365 Defender, and is available in the Microsoft 365 Defender portal (https://security.microsoft.com/). 
+
+Microsoft 365 services and apps create  alerts  when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple  alerts for multiple entities in your tenant. 
+
+Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an [incident](security-incident.md). 
+
+Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see: 
+
+- Where the attack started. 
+- What tactics were used. 
+- How far the attack has gone into your tenant. 
+- The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
+- All of the data associated with the attack. 
+
+The  [incident](security-incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents, with their related  [alerts](security-alert.md), that were flagged in your network, within the time range you specified in your environment retention policy. 
+
 
 ## Information protection
 
