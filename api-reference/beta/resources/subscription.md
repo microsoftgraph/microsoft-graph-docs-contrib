@@ -16,28 +16,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources.
+A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. 
 
-> **Note** Subscriptions marked with an asterisk (*) are supported in the `/beta` endpoint only.
-
-- An [alert][] from the Microsoft Graph Security API.
-- A [baseTask][] (deprecated) of a user in Microsoft To Do.*
-- A [callRecord][] produced after a call or meeting in Microsoft Teams.
-- A [channel](./channel.md) in Microsoft Teams.
-- A [chat](./chat.md) in Microsoft Teams.
-- A [chatMessage][] sent via teams or channels in Microsoft Teams.
-- A [conversation][] in a Microsoft 365 group.
-- A [conversationMember](./conversationmember.md) in a team, channel, or chat in Microsoft Teams.
-- Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
-- A [group][] in Azure Active Directory.
-- A [list][] under a SharePoint [site][].
-- A [message][], [event][], or [contact][] in Outlook.
-- An [online meeting][] in Microsoft Teams.*
-- The [presence][] of a user in Microsoft Teams.
-- A [team](./team.md) in Microsoft Teams.
-- A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
-- A [todoTask][] of a user in Microsoft To Do.
-- A [user][] in Azure Active Directory.
+[!INCLUDE [change-notifications-supported-resources](/graph/includes/change-notifications-supported-resources.md)]
 
 For the possible resource path values for each supported resource, see [Use the Microsoft Graph API to get change notifications](webhooks.md). To learn how to use lifecycle notifications, see [Reduce missing subscriptions and change notifications](/graph/webhooks-lifecycle).
 
@@ -149,37 +130,3 @@ Here is a JSON representation of the resource.
   "notificationUrlAppId": "String"
 }
 ```
-
-[contact]: ./contact.md
-[conversation]: ./conversation.md
-[driveItem]: ./driveitem.md
-[list]: ./list.md
-[site]: ./site.md
-[event]: ./event.md
-[group]: ./group.md
-[message]: ./message.md
-[user]: ./user.md
-[alert]: ./alert.md
-[chatMessage]: ./chatmessage.md
-[callRecord]: ./callrecords-callrecord.md
-[presence]: ./presence.md
-[printer]: ./printer.md
-[printTaskDefinition]: ./printtaskdefinition.md
-[todoTask]: ./todotask.md
-[online meeting]: ./onlinemeeting.md
-[baseTask]: ./basetask.md
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "subscription resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
-
-
