@@ -90,8 +90,10 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
-          - name: Configure properties
+          - name: Manage applications
             href: tutorial-applications-basics.md
+          - name: Validation differences for signInAudience
+            href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
           - name: Grant and revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
@@ -218,7 +220,7 @@ items:
       - name: Device and app management
         expanded: true
         items:
-          - name: Browser management
+          - name: Browser management (preview)
             href: browser-edge-concept-overview.md
             displayName: Edge, Internet Explorer, IE mode, site list
           - name: Cloud printing
@@ -365,8 +367,17 @@ items:
                     href: accessreviews-scope-concept.md
                   - name: Assign reviewers
                     href: accessreviews-reviewers-concept.md
-              - name: Use PIM to assign Azure AD roles
-                href: tutorial-assign-azureadroles.md
+              - name: Use PIM to manage Azure AD roles
+                items:
+                  - name: Rules for Azure AD roles
+                    href: identity-governance-pim-rules-overview.md
+                    displayName: PIM rules, privileged identity management settings
+                  - name: Customize and update rules for Azure AD roles
+                    href: how-to-pim-update-rules.md
+                    displayName: PIM rules, privileged identity management settings
+                  - name: Assign Azure AD roles with PIM
+                    href: tutorial-assign-azureadroles.md
+                    displayName: PIM, privileged identity management
       - name: Mail
         items:
           - name: Overview
@@ -518,6 +529,8 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
+          - name: Search interleaving results
+            href: search-concept-interleaving.md
       - name: Security
         items:
           - name: Overview
