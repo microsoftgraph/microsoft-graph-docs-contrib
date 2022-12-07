@@ -35,9 +35,7 @@ The typical call pattern is as follows:
 
 > [!NOTE]
 > The initial request to the delta query function (no `$deltaToken` or `$skipToken`) will return the resources that currently exist in the collection. Resources that have been created and deleted prior to the initial delta query won't be returned. Updates made before the initial request are summarized on the resource returned as its latest state.
-
-> [!NOTE]
->  Please note that `$select` and `$deltaLink` functions will be supported for Azure Active Directory (AAD) resources so that customers can change the properties they want to track for an existing `@odata.deltaLink`. Therefore, delta queries with both `$select` and `$skipToken` will not be permitted. 
+> Note that `$select` and `$deltaLink` query parameters will be supported for Azure Active Directory (Azure AD) resources so that customers can change the properties they want to track for an existing `@odata.deltaLink`. Delta queries with both `$select` and `$skipToken` will not be supported. 
 
 ### State tokens
 
