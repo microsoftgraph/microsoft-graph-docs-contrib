@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph.
 
-[!INCLUDE [change-notifications-supported-resources](/graph/includes/change-notifications-supported-resources.md)]
+[!INCLUDE [change-notifications-supported-resources](/graph/includes/change-notifications-supported-resources)]
 
 For the possible resource path values for each supported resource, see [Use the Microsoft Graph API to get change notifications](webhooks.md). To learn how to use lifecycle notifications, see [Reduce missing subscriptions and change notifications](/graph/webhooks-lifecycle).
 
