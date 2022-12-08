@@ -7,6 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
+
 # attackSimulationOperation resource type
 
 Namespace: microsoft.graph
@@ -19,7 +20,7 @@ Attack simulation and training is a service available as part of [Microsoft Defe
 
 For LRO api, this type will contain the respective details
 
-Inherits from [longRunningOperation](../resources/longRunningOperation.md).
+Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -46,6 +47,34 @@ Inherits from [longRunningOperation](../resources/longRunningOperation.md).
 |unknown| The operation is not defined. |
 |createSimulation| The simulation creation operation. |
 |updateSimulation| The simulation updation operation. |
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.attackSimulationOperation",
+  "baseType": "microsoft.graph.longRunningOperation",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.attackSimulationOperation",
+  "id": "String (identifier)",
+  "createdDateTime": "2022-01-12T05:27:18.7957961Z",
+  "lastActionDateTime": "2022-01-12T05:27:18.7957961Z",
+  "resourceLocation": "String",
+  "status": "notStarted",
+  "percentageCompleted": 0
+  "statusDetail": "Creating new simulation",
+  "type": "createSimulation",
+  "tenantId": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3ss",
+}
+```
 
 ## See also
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
