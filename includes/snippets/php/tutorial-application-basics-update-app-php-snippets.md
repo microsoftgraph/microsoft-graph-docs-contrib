@@ -34,11 +34,7 @@ $web->setRedirectUris(['https://localhost', ]);
 
 
 $requestBody->setWeb($web);
-$additionalData = [
-'appRoleAssignmentRequired' => true,
-];
-$requestBody->setAdditionalData($additionalData);
-
+$requestBody->setServiceManagementReference('Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;');
 
 
 

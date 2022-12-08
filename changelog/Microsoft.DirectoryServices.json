@@ -95,6 +95,64 @@
     {
       "ChangeList": [
         {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "onPremisesDirectorySynchronizationDeletionPreventionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesDirectorySynchronizationDeletionPreventionType** enumeration type.",
+          "Target": "onPremisesDirectorySynchronizationDeletionPreventionType"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesAccidentalDeletionPrevention",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesAccidentalDeletionPrevention](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesAccidentalDeletionPrevention?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesAccidentalDeletionPrevention"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronizationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronizationFeature",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronizationFeature](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationFeature?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesDirectorySynchronizationFeature"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "onPremisesSynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSynchronization** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronization](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronization?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronization"
+        }
+      ],
+      "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-07T08:56:56.555588Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fd0b2af6-a129-4284-9114-7303d3091a3c",
           "ApiChange": "Property",
           "ChangedApiName": "defaultUsageLocation",
@@ -12241,6 +12299,60 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-28T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a4b3144c-145e-4d0d-8bed-1a41f62f4221",
+          "ApiChange": "Property",
+          "ChangedApiName": "roleTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [directoryRole](https://learn.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-1.0) using **roleTemplateId* as the alternate key. You can now address a directoryRole via either the primary key **id** or the alternate key **roleTemplateId** as the path parameter.",
+          "Target": "directoryRole"
+        }
+      ],
+      "Id": "a4b3144c-145e-4d0d-8bed-1a41f62f4221",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db47d34d-9ef1-4e79-84be-0f28107e485e",
+          "ApiChange": "Property",
+          "ChangedApiName": "appId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [servicePrincipal](https://learn.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0) using the service principal **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "db47d34d-9ef1-4e79-84be-0f28107e485e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
+          "Target": "device"
+        }
+      ],
+      "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }
