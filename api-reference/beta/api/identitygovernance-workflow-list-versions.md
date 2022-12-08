@@ -155,7 +155,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 12: Retrieve specific properties of all versions of a workflow
+### Example 2: Retrieve specific properties of all versions of a workflow
 
 #### Request
 

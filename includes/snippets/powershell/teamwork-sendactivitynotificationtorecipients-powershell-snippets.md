@@ -9,7 +9,7 @@ Import-Module Microsoft.Graph.Teams
 $params = @{
 	Topic = @{
 		Source = "entityUrl"
-		Value = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+		Value = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}"
 	}
 	ActivityType = "pendingFinanceApprovalRequests"
 	PreviewText = @{

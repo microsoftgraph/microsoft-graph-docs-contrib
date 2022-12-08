@@ -681,7 +681,9 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.)
+> **Notes:** 
+> * The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
+> * The maximum possible size of hosted content is 4 MB.
 
 **contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. Microsoft .NET SDK users do not need to perform the conversion to Base64 encoded bytes as the SDK handles it for you.
 

@@ -54,7 +54,7 @@ The request should be a JSON object with the following properties.
 |   Property                 |  Type  |                                 Description                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
 |type|String|Optional.The type of sharing link to create.   |
-|scope|String|Optional. The scope of link to create. Either anonymous, organization or users.|
+|scope|String|Optional. The scope of link to create. Either `anonymous`, `organization`, or `users`|
 |expirationDateTime|DateTimeOffset|Optional. A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
 |password|String|Optional.The password of the sharing link that is set by the creator.|
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
@@ -82,7 +82,7 @@ The following values are allowed for the **scope** parameter.
 |:---------------|:------------------------------------------------------------
 | anonymous    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
 | organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
-| users        | Specific people in the recipients collection can use the link to get access. Only available in OneDrive for Business and SharePoint.
+| users        | Specific people in the recipient's collection can use the link to get access. Only available in OneDrive for Business and SharePoint.
 
 ## Response
 
