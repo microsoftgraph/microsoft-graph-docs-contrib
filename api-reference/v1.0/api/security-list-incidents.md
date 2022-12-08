@@ -72,9 +72,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 ### Example 1: List all incidents
-### Request
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_incident_for_defender"
@@ -85,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/security/incidents
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -131,21 +130,20 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all incidents with their alerts.
-### Request
+### Example 2: List all incidents with their alerts
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_incident_with_theri_alerts"
+  "name": "list_incident_with_their_alerts"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/incidents?$expand=alerts
+GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
