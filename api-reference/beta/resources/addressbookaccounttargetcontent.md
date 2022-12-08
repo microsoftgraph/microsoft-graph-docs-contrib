@@ -29,7 +29,7 @@ Inherits from [accountTargetContent](../resources/accountTargetContent.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accountTargetEmails|(String)collection|List of user emails targetted|
+|accountTargetEmails|((Collection(String))|List of user emails targetted|
 |type|accountTargetContentType| Type of account target content contains targetted user email addresses. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 ## Relationships

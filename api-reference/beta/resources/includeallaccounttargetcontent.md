@@ -20,7 +20,7 @@ The attack simulation and training API enables tenant administrators to list lau
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedaccounttarget](../api/simulation-get-includedaccounttarget.md)|[includedallaccounttargetcontent](../resources/includedallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
+|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[includedallaccounttargetcontent](../resources/includedallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
 
 ## Properties
 |Property|Type|Description|
@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.security.includeAllAccountTargetContent",
-    "type" : "incudeAll"
+    "type" : "includeAll"
 }
 ```
 
