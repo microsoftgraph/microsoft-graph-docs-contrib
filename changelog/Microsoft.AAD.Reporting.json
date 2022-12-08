@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationAppDeviceDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationAppDeviceDetails](https://docs.microsoft.com/en-us/graph/api/resources/authenticationAppDeviceDetails?view=graph-rest-beta) resource type.",
+          "Description": "Added the [authenticationAppDeviceDetails](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAppDeviceDetails?view=graph-rest-beta) resource type.",
           "Target": "authenticationAppDeviceDetails"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationAppPolicyDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationAppPolicyDetails](https://docs.microsoft.com/en-us/graph/api/resources/authenticationAppPolicyDetails?view=graph-rest-beta) resource type.",
+          "Description": "Added the [authenticationAppPolicyDetails](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAppPolicyDetails?view=graph-rest-beta) resource type.",
           "Target": "authenticationAppPolicyDetails"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationAppDeviceDetails",
           "ChangeType": "Addition",
-          "Description": "Added the `authenticationAppDeviceDetails` property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the `authenticationAppDeviceDetails` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationAppPolicyEvaluationDetails",
           "ChangeType": "Addition",
-          "Description": "Added the `authenticationAppPolicyEvaluationDetails` property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the `authenticationAppPolicyEvaluationDetails` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         }
       ],
