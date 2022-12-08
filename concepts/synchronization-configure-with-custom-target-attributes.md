@@ -21,9 +21,22 @@ This article assumes that you have already added an application that supports sy
 
 The following example shows how to find a service principal object with the display name Salesforce.
 
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-configure-synchronization-get-serviceprincipals"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 Authorization: Bearer {Token}
+```
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName)",
@@ -54,9 +67,22 @@ The `{servicePrincipalId}` is `167e33e9-f80e-490e-b4d8-698d4a80fb3e`.
 
 The following example shows you how to get the `jobId` that you need to work with. Generally, the response returns only one job.
 
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-configure-synchronization-get-synchronization-jobs"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 Authorization: Bearer {Token}
+```
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('60443998-8cf7-4e61-b05c-a53b658cb5e1')/synchronization/jobs",
@@ -81,9 +107,9 @@ The following example shows how to get the synchronization schema.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationschema_2"
+  "name": "tutorial-configure-synchronization-get_synchronizationschema"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
@@ -128,88 +154,90 @@ Content-Type: application/json
 
 {
   "directories": [
-	    {
-		      "id": "66e4a8cc-1b7b-435e-95f8-f06cea133828",
-		      "name": "Azure Active Directory",
-		      "objects": [
-			    {
-		            "attributes": [
-			            {
-			              "anchor": true,
-			              "caseExact": false,
-			              "defaultValue": null,
-			              "metadata": [],
-			              "multivalued": false,
-			              "mutability": "ReadWrite",
-			              "name": "objectId",
-			              "required": false,
-			              "referencedObjects": [],
-			              "type": "String"
-			            },
-			            {
-			              "anchor": false,
-			              "caseExact": false,
-			              "defaultValue": null,
-			              "metadata": [],
-			              "multivalued": false,
-			              "mutability": "ReadWrite",
-			              "name": "streetAddress",
-			              "required": false,
-			              "referencedObjects": [],
-			              "type": "String"
-			            }
-					],
-					"name": "User"
-				}
-			 ]
-		},
-		{
-		      "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
-		      "name": "salesforce.com",
-		      "objects": []
-		}
+    {
+      "id": "66e4a8cc-1b7b-435e-95f8-f06cea133828",
+      "name": "Azure Active Directory",
+      "objects": [
+        {
+          "attributes": [
+            {
+              "anchor": true,
+              "caseExact": false,
+              "defaultValue": null,
+              "metadata": [],
+              "multivalued": false,
+              "mutability": "ReadWrite",
+              "name": "objectId",
+              "required": false,
+              "referencedObjects": [],
+              "type": "String"
+            },
+            {
+              "anchor": false,
+              "caseExact": false,
+              "defaultValue": null,
+              "metadata": [],
+              "multivalued": false,
+              "mutability": "ReadWrite",
+              "name": "streetAddress",
+              "required": false,
+              "referencedObjects": [],
+              "type": "String"
+            }
+          ],
+          "name": "User"
+        }
+      ]
+    },
+    {
+      "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
+      "name": "salesforce.com",
+      "objects": []
+    }
   ],
- "synchronizationRules": [
-	    {
-	      "editable": true,
-	      "id": "4c5ecfa1-a072-4460-b1c3-4adde3479854",
-	      "name": "USER_OUTBOUND_USER",
-	      "objectMappings": [
-		        {
-			        "attributeMappings": [
-				            {
-				              "defaultValue": "True",
-				              "exportMissingReferences": false,
-				              "flowBehavior": "FlowWhenChanged",
-				              "flowType": "Always",
-				              "matchingPriority": 0,
-				              "source": {
-				                "expression": "Not([IsSoftDeleted])",
-				                "name": "Not",
-				                "parameters": [
-				                  {
-				                    "key": "source",
-				                    "value": {
-				                      "expression": "[IsSoftDeleted]",
-				                      "name": "IsSoftDeleted",
-				                      "parameters": [],
-				                      "type": "Attribute"
-				                    }
-				                  }
-				                ],
-				                "type": "Function"
-				              },
-				              "targetAttributeName": "IsActive"
-				            }
-			         ],
-			        "enabled": true,
-			        "flowTypes": "Add, Update, Delete",
-			        "name": "Synchronize Azure Active Directory Users to salesforce.com",
-			        "scope": null,
-			        "sourceObjectName": "User",
-			        "targetObjectName": "User"
-			}]
-		}]
+  "synchronizationRules": [
+    {
+      "editable": true,
+      "id": "4c5ecfa1-a072-4460-b1c3-4adde3479854",
+      "name": "USER_OUTBOUND_USER",
+      "objectMappings": [
+        {
+          "attributeMappings": [
+            {
+              "defaultValue": "True",
+              "exportMissingReferences": false,
+              "flowBehavior": "FlowWhenChanged",
+              "flowType": "Always",
+              "matchingPriority": 0,
+              "source": {
+                "expression": "Not([IsSoftDeleted])",
+                "name": "Not",
+                "parameters": [
+                  {
+                    "key": "source",
+                    "value": {
+                      "expression": "[IsSoftDeleted]",
+                      "name": "IsSoftDeleted",
+                      "parameters": [],
+                      "type": "Attribute"
+                    }
+                  }
+                ],
+                "type": "Function"
+              },
+              "targetAttributeName": "IsActive"
+            }
+          ],
+          "enabled": true,
+          "flowTypes": "Add, Update, Delete",
+          "name": "Synchronize Azure Active Directory Users to salesforce.com",
+          "scope": null,
+          "sourceObjectName": "User",
+          "targetObjectName": "User"
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -280,18 +308,22 @@ Use a plain text editor of your choice (for example, [Notepad++](https://notepad
 
 When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts. This request will replace the existing schema with the one that you provide.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-configure-synchronization-update_synchronizationschema"
+}-->
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
+
 {
     "directories": [..],
     "synchronizationRules": [..]
 }
-
-HTTP/1.1 201 No Content
 ```
 
-If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.
+If the schema was saved successfully, the request returns a `204 No Content` response code. On the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
