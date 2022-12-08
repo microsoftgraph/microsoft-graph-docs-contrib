@@ -72,6 +72,7 @@ If successful, this method returns a `201 Created` response code and a [plannerP
 ### Request
 
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplanconfigurationlocalization_from_",

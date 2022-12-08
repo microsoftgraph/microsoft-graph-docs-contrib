@@ -86,7 +86,7 @@ Content-Type: application/json
           "assignments": {
             "defaultRules": ["addSelf"],
             "overrides": []
-          },
+          }
         }
       },
       {
