@@ -26,6 +26,11 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
 |[Get simulation](../api/attacksimulationroot-get-simulations.md)|[simulation](../resources/simulation.md)|Get an attack simulation campaign for a tenant.|
+|[Create simulation](../api/attacksimulationroot-post-simulations.md)|[simulation](../resources/simulation.md)|Create a new [simulation](../resources/simulation.md) object.|
+|[Update simulation](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update the properties of a [simulation](../resources/simulation.md) object.|
+|[Delete simulation](../api/attacksimulationroot-delete-simulations.md)|None|Delete a [simulation](../resources/simulation.md) object.|
+|[Get payload](../api/simulation-get-payload.md)|None|Get a [payload](../resources/payload.md) object.|
+
 
 ## Properties
 |Property|Type|Description|
@@ -46,6 +51,15 @@ Inherits from [entity](../resources/entity.md).
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
+|durationInDays|Int32|Simulation duration in days.|
+|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from simulation|
+|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targetted in simulation|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|payload|[payload](../resources/payload.md)|Payload associated with a simulation while creation.|
+
 
 ### simulationStatus values
 

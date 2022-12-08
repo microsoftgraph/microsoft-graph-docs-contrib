@@ -1,12 +1,11 @@
 ---
 title: Update simulations 
 description: Updates an attack simulation campaign for a tenant.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.prod: "security"
 doc_type: apiPageType
+
 ---
 
 # Update simulations
@@ -60,13 +59,12 @@ Content-type: application/json
   "description": "Test simulation created using postman",
   "payloadDeliveryPlatform": "email",
   "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a"
-  "duration": "7",
+  "durationInDays": "7",
   "attackTechnique": "credentialHarvesting",
   "attackType": "social",
   "status": "scheduled",
   "completionDateTime": "2022-09-16T06:13:08.4297612Z",
   "launchDateTime": "2022-09-05T06:13:08.4297612Z",
-
   "includedAccountTarget": {
     "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
     "type" : "addressBook",

@@ -29,9 +29,15 @@ Inherits from [longRunningOperation](../resources/longRunningOperation.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[attackSimulationOperationType](#attackSimulationOperationType-values)|Attack simulation operation type|
+|createdDateTime|DateTimeOffset|Operation created date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|id|String|Tracking id. Inherited from [entity](../resources/entity.md).|
+|lastActionDateTime|DateTimeOffset|Last action date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|percentageCompleted|Int32| Percentage of completion of the respective operation.|
+|resourceLocation|String|Tracking resource location. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|status|longRunningOperationStatus|Operation status. Inherited from [longRunningOperation](../resources/longrunningoperation.md).The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|statusDetail|String|Status detail of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |tenantId|String|Tenant identifier.|
-|percentageCompleted|Int32|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
+|type|attackSimulationOperationType|Attack simulation operation type.The possible values are: `createSimulation`, `updateSimulation`.|
 
 ### attackSimulationOperationType values
 
@@ -40,7 +46,6 @@ Inherits from [longRunningOperation](../resources/longRunningOperation.md).
 |unknown| The operation is not defined. |
 |createSimulation| The simulation creation operation. |
 |updateSimulation| The simulation updation operation. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## See also
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)

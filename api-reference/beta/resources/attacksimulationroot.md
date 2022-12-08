@@ -17,11 +17,15 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
+|[Get simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) |Get an attack simulation campaigns for a tenant.|
 |[Create simulations](../api/attacksimulationroot-create-simulations.md)|[simulation](../resources/simulation.md)|Create a new attack simulation campaigns for a tenant.|
 |[Update simulations](../api/attacksimulationroot-update-simulations.md)|[simulation](../resources/simulation.md)|Update a attack simulation campaigns for a tenant.|
 |[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
+|[Get simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) |Get an attack simulation automations for a tenant.|
 |[List payloads](../api/simulation-list-payload.md)|[payload](../resources/payload.md) collection|Get the payload resources from the payloads navigation property.|
+|[Get payloads](../api/simulation-list-payload.md)|[payload](../resources/payload.md)|Get the payload resource from the payloads navigation property.|
 |[Get attackSimulationOperation](../api/attacksimulationroot-get-operations.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get attackSimulationOperation object.|
+
 ## Properties
 None.
 

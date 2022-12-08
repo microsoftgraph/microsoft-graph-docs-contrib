@@ -18,10 +18,9 @@ Coachmark location detail
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|offset|Int32|Offset of coachmark.|
 |length|Int32|Length of coachmark.|
-|type|[type](#coachmarkLocationType-values)|Type of coachmark location.|
-
+|location|coachmarkLocationType|Type of coachmark location.The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
+|offset|Int32|Offset of coachmark.|
 
 ### coachmarkLocationType values
 

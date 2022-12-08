@@ -60,7 +60,7 @@ Content-type: application/json
   "description": "Test simulation created using postman",
   "payloadDeliveryPlatform": "email",
   "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a"
-  "duration": "7",
+  "durationInDays": "7",
   "attackTechnique": "credentialHarvesting",
   "attackType": "social",
   "status": "scheduled",

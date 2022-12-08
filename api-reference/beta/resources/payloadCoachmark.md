@@ -28,3 +28,26 @@ Represents the payload coachmark detail of a payload.
 ## Relationships
 None.
 
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.payloadCoachmark"
+}
+-->
+``` json
+{
+"@odata.type": "#microsoft.graph.payloadCoachmark",
+"indicator": "URL hyperlinking",
+"description": "URL hyperlinking hides the true URL behind text; the text can also look like another link",
+"language": "en",
+"order": 0,
+"isValid": "true",
+"location": {
+	"offset": 144,
+	"length": 6,
+	"type": "messageBody"  
+}
+```
+
