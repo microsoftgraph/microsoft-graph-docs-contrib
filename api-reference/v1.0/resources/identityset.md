@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
 
 ## See also 
 
-For the usage of **identitySet** resources, see [driveItem](driveitem.md).
+For examples about the usage of **identitySet** resources, see [driveItem](driveitem.md).
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
