@@ -41,9 +41,9 @@ Inherits from [entity](../resources/entity.md).
 |complexity|[payloadComplexity](payloadComplexity-values)|Complexity of a payload.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
-|theme|[payloadTheme]|Theme of a payload.|
-|brand|[payloadBrand]|Brand of a payload.|
-|industry|[payloadIndustry]|industry of a payload.|
+|theme|[payloadTheme](payloadTheme)|Theme of a payload.|
+|brand|[payloadBrand](payloadBrand)|Brand of a payload.|
+|industry|[payloadIndustry](payloadIndustry)|industry of a payload.|
 |isAutomated|Boolean|Flag that represents if the attack simulation and training campaign payload was created from a automation flow. Supports `$filter` and `$orderby`. |
 |language|String|Unique identifier for the attack simulation payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targetted user.|
