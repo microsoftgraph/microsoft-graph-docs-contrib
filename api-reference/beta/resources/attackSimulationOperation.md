@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# attackSimulationResouce resource type
+# attackSimulationOperation resource type
 
 Namespace: microsoft.graph
 

@@ -19,17 +19,10 @@ The attack simulation and training API enables tenant administrators to list lau
 
 Inherits from [accountTargetContent](../resources/accountTargetContent.md).
 
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[addressbookaccounttargetcontent](../resources/addressbookaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
-|[Get excludedaccounttarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[addressbookaccounttargetcontent](../resources/addressbookaccounttargetcontent.md)|Get excluded user for an attack simulation campaigns.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accountTargetEmails|((Collection(string))|List of user emails targetted|
+|accountTargetEmails|((Collection(String))|List of user emails targetted|
 |type|accountTargetContentType| Type of account target content contains targetted user email addresses. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 ## Relationships
