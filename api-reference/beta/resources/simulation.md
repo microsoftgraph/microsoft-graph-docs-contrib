@@ -97,6 +97,26 @@ Inherits from [entity](../resources/entity.md).
 |endpoint| Attack on endpoints of a corporate network, such as desktops, laptops, mobile phones, and Internet of Things (IoT) devices. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
+### simulationContentStatus values
+
+|Member|Description |
+|:---|:---|
+|unknown| The simulation content status is not defined. |
+|draft| The simulation content status is in draft state. |
+|ready| The simulation content status is in ready state. |
+|archive| The simulation content status is archive state. |
+|delete| The simulation content status is in delete state. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+
+### simulationContentSource values
+
+|Member|Description |
+|:---|:---|
+|unknown| The simulation content source is not defined. |
+|tenant| The simulation content source is tenant. |
+|global| The simulation content status is global. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+
 ## Relationships
 None.
 
@@ -122,6 +142,7 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
+  "durationInDays": "3",
   "id": "String (identifier)",
   "isAutomated": "Boolean",
   "lastModifiedBy": {

@@ -36,8 +36,8 @@ Inherits from [entity](../resources/entity.md).
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |deliveryPlatform|[payloadDeliveryPlatform](#payloadDeliveryPlatform-values)|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |isAutomated|Boolean|Flag that represents if the attack simulation and training campaign payload was created from a automation flow. Supports `$filter` and `$orderby`. |
-|status|[simulationContentStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|source|[simulationContentSource](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
+|status|[simulationContentStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`..Inherited from [simulation](../resources/simulation.md) Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
+|source|[simulationContentSource](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
 |language|String|Unique identifier for the attack simulation payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targetted user.|
 |attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
@@ -162,26 +162,6 @@ Inherits from [entity](../resources/entity.md).
 |sms| The payload is delivered via sms. |
 |email| The payload is delivered via email. |
 |teams| The payload is delivered via teams. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
-
-### simulationContentStatus values
-
-|Member|Description |
-|:---|:---|
-|unknown| The simulation content status is not defined. |
-|draft| The simulation content status is in draft state. |
-|ready| The simulation content status is in ready state. |
-|archive| The simulation content status is archive state. |
-|delete| The simulation content status is in delete state. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
-
-### simulationContentSource values
-
-|Member|Description |
-|:---|:---|
-|unknown| The simulation content source is not defined. |
-|tenant| The simulation content source is tenant. |
-|global| The simulation content status is global. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
