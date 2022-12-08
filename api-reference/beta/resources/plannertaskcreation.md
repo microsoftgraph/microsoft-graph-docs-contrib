@@ -17,7 +17,7 @@ The resources that derive from plannerPlanCreation contain information about the
 |Property|Type|Description|
 |:---|:---|:---|
 |teamsPublicationInfo|[plannerTeamsPublicationInfo](../resources/plannerteamspublicationinfo.md)|Information about the publication process that created this task. This field is deprecated and clients should move to using the new inheritance model.|
-|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the task is created with. The possible values are: `external`, `publication`.|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the task is created with. The possible values are: `external`, `publication` and `unknownFutureValue`.|
 
 ## Relationships
 None.

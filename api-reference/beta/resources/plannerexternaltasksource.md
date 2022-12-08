@@ -17,10 +17,10 @@ Contains information about the relationship of a [plannerTask](plannerTask.md) t
 |Property|Type|Description|
 |:---|:---|:---|
 |teamsPublicationInfo|[plannerTeamsPublicationInfo](../resources/plannerteamspublicationinfo.md)|Information about the publication process that created this task. This field is deprecated and should not be used in this resource type. Inherited from [plannerTaskCreation](plannerTaskCreation.md).|
-|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the task is created with. The possible values are: `external`, `publication`. Inherited from [plannerTaskCreation](plannerTaskCreation.md).|
-|contextScenarioId|String| Nullable. An identifier for the scenario associated with this external source. This will generally take the form of "com.contoso.myapp".|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the task is created with. The possible values are: `external`, `publication` and `unknownFutureValue`. The value of this property will be `external`. Inherited from [plannerTaskCreation](plannerTaskCreation.md).|
+|contextScenarioId|String| Nullable. An identifier for the scenario associated with this external source. This should be in reverse DNS format. For example, Contoso company owned application for customer support would have a value like "com.constoso.customerSupport". The combination of contextScenarioId and externalObjectId is enforced to be unique.|
 |displayLinkType|plannerExternalTaskSourceDisplayType| Specifies how an application should display the link to the associated plannerExternalTaskSource. The possible values are: `none`, `default`. |
-|externalObjectId|String| Nullable. The id of the entity that an external service associates with a task.|
+|externalObjectId|String| Nullable. The id of the entity that an external service associates with a task. The combination of contextScenarioId and externalObjectId is enforced to be unique.|
 |externalObjectVersion|String| Nullable. The external Item Version for the object specified by the externalObjectId.|
 |externalContextId|String| Nullable. The id of the external entity's containing entity or context.|
 |webUrl|String| Nullable. URL of the user experience represented by the associated plannerExternalTaskSource.|

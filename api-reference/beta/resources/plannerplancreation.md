@@ -16,7 +16,7 @@ The resources that derive from plannerPlanCreation contain information about the
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the plan is created with. The possible values are: `external`, `publication`.|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the plan is created with. The possible values are: `external`, `publication` and `unknownFutureValue`.|
 
 ## Relationships
 None.
