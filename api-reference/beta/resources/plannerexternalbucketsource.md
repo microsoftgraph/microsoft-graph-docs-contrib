@@ -16,7 +16,7 @@ Contains information about the relationship of a [plannerBucket](plannerbucket.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the bucket is created with. The possible values are: `external`, `publication`. Inherited from [plannerBucketCreation](plannerBucketCreation.md).|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the bucket is created with. The possible values are: `external`, `publication` and `unknownFutureValue`. Inherited from [plannerBucketCreation](plannerBucketCreation.md).|
 |contextScenarioId|String| Nullable. An identifier for the scenario associated with this external source. This will generally take the form of "com.contoso.myapp".|
 |externalObjectId|String| Nullable. The id of the entity that an external service associates with a bucket.|
 |externalContextId|String| Nullable. The id of the external entity's containing entity or context.|
