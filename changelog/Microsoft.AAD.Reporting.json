@@ -1,5 +1,72 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationAppAdminConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationAppAdminConfiguration** enumeration type.",
+          "Target": "authenticationAppAdminConfiguration"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationAppEvaluation",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationAppEvaluation** enumeration type.",
+          "Target": "authenticationAppEvaluation"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationAppPolicyStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationAppPolicyStatus** enumeration type.",
+          "Target": "authenticationAppPolicyStatus"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAppDeviceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAppDeviceDetails](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAppDeviceDetails?view=graph-rest-beta) resource type.",
+          "Target": "authenticationAppDeviceDetails"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAppPolicyDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAppPolicyDetails](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAppPolicyDetails?view=graph-rest-beta) resource type.",
+          "Target": "authenticationAppPolicyDetails"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationAppDeviceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationAppDeviceDetails` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationAppPolicyEvaluationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationAppPolicyEvaluationDetails` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-07T17:44:47.9011014Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },  
+
         {
       "ChangeList": [
         {
@@ -26,6 +93,7 @@
       "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
     }, 
+
     {
          "ChangeList": [
            {
