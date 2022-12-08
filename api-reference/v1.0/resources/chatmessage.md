@@ -48,7 +48,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the message. IDs are unique within a chat/channel/reply-to-message, but might be duplicated in other chats/channels/reply-to-messages. |
+|id|String| Read-only. Unique ID of the message. IDs are unique within a chat/channel/reply-to-message, but might be duplicated in other chats/channels/reply-to-messages. |
 |replyToId| string | Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
 |from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Details of the sender of the chat message. Can only be set during [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).|
 |etag| string | Read-only. Version number of the chat message. |
