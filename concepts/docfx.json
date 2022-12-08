@@ -38,7 +38,7 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
-      "breadcrumb_path": "/graph/concepts/breadcrumb/toc.json",
+      "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
