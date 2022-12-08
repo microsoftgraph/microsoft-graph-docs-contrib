@@ -235,8 +235,8 @@
     },
     "fileMetadata": {
       "breadcrumb_path": {
-        "v1.0/**": "/api-reference/v1.0/breadcrumb/toc.json",
-        "beta/**": "/api-reference/beta/breadcrumb/toc.json"
+        "v1.0/**": "/graph/breadcrumb/toc.json",
+        "beta/**": "/graph/breadcrumb/toc.json"
       },
       "monikerRange": {
         "v1.0/**": "graph-rest-1.0",
