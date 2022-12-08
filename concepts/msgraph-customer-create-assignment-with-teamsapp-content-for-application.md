@@ -1,5 +1,5 @@
 ---
-title: "Create assignments with teams app from my application"
+title: "Create assignments with adding Teams App as a resource using your own application"
 description: "Use Microsoft Graph to create assignments with teams app resource using your own application"
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
@@ -7,30 +7,28 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Create assignments with teams app from my application
+# Create assignments with adding Teams app as a resource using your own application
 
-If user want to create an assignment with a Teams App resource from his own application, this can be done using Graph API.
+If you want to create an assignment and attach a Teams app as a resource from your own application, this can be done using Graph API.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
-## API to use for installing Teams App for the team
+## APIs to use for installing applications to the Teams
 
-Use the following APIs to install the App to the teams:
+Use the following APIs to install the application to the Teams:
 
-- [List apps in teams](/graph/api/team-list-installedapps): Lists the apps in team for user.
-- [Get installed app in team](/graph/api/team-get-installedapp): Lists information about installed app.
-- [Add app to team](/graph/api/educationclass-list-members): Lists information about adding the app to team.
+- [List apps in Teams](/graph/api/team-list-installedapps): Lists the apps in Teams for user.
+- [Get installed apps in Teams](/graph/api/team-get-installedapp): Lists information about installed apps.
+- [Add app to Teams](/graph/api/team-post-installedapps): Lists information about adding the app to Teams.
 
 ## Creating the new assignment 
 
 Use [Assignment Creation](/graph/api/educationclass-post-assignment) for user to create the new assignments for the class.
 
-## Creating the app resource
+## Creating an app resource
 
-Use [Eduducation teams app resource](/graph/api/resources/educationteamsappresource) to create and share assignments with embedded Teams applications.
-
-[Resource sample](/api/educationassignment-post-resources#example-7-create-an-educationteamsappresource) can be used  to get the information on creating the app resource.
+Use the [create teams app resource](/api/educationassignment-post-resources#example-7-create-an-educationteamsappresource) endpoint to create and load the resource into an assignment. You will need to provide an [educationResource](/graph/api/resources/educationteamsappresource) for the request body.
 
 ## Permissions
 
-Adding teams app as a resource to your assignments would require the teacher permissions.
+Adding Teams app as a resource to your assignments would require the teacher permissions.

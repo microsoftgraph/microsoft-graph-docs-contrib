@@ -31,7 +31,7 @@ Use [submission feedback information](/graph/education-upload-feedback-resource-
 
 [List outcomes](/graph/api/educationsubmission-list-outcomes) helps to retrieve the list for the education outcome objects.
 
-## Information to download files from sharepoint
+## Information to download files from SharePoint
 
 The [list of assignment resources](/graph/api/educationassignment-list-resources) response gives the information on driveid and item inside the fileUrl property.
 
