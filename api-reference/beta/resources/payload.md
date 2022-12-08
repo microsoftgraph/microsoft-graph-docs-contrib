@@ -51,7 +51,7 @@ Inherits from [entity](../resources/entity.md).
 |industry|[payloadIndustry](#payloadIndustry-values)|industry of a payload.|
 |isCurrentEvent|Boolean|Flag that represents if the payload is from any recent event. |
 |isControversial|Boolean|Flag that represents if If payload is controversial |
-|payloadTags|[String]collection|Free text tags for a payload.|
+|payloadTags|Collection(string)|Free text tags for a payload.|
 |detail|[payloadDetail](../resources/payloadDetail.md)|Additional details about the payload.|
 
 ### payloadTheme values
