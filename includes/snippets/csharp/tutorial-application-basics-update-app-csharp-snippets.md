@@ -31,10 +31,7 @@ var application = new Application
 			"https://localhost"
 		}
 	},
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"appRoleAssignmentRequired", "true"}
-	}
+	ServiceManagementReference = "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
 };
 
 await graphClient.Applications["{application-id}"]
