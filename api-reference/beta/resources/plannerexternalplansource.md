@@ -18,8 +18,8 @@ Contains information about the relationship of a [plannerPlan](plannerplan.md) t
 |:---|:---|:---|
 |creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the plan is created with. The possible values are: `external`, `publication` and `unknownFutureValue`. The value of this property will be `external`. Inherited from [plannerPlanCreation](plannerPlanCreation.md).|
 |contextScenarioId|String| Nullable. An identifier for the scenario associated with this external source. This should be in reverse DNS format. For example, Contoso company owned application for customer support would have a value like "com.constoso.customerSupport". The combination of contextScenarioId and externalObjectId is enforced to be unique.|
-|externalObjectId|String| Nullable. The id of the entity that an external service associates with a plan.|
-|externalContextId|String| Nullable. The id of the external entity's containing entity or context. The combination of contextScenarioId and externalObjectId is enforced to be unique.|
+|externalObjectId|String| Nullable. The id of the entity that an external service associates with a plan. The combination of contextScenarioId and externalObjectId is enforced to be unique.|
+|externalContextId|String| Nullable. The id of the external entity's containing entity or context.|
 
 ## Relationships
 None.
