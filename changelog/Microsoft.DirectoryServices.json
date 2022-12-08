@@ -12301,6 +12301,24 @@
       "CreatedDateTime": "2021-11-28T00:00:00.077762Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a4b3144c-145e-4d0d-8bed-1a41f62f4221",
+          "ApiChange": "Property",
+          "ChangedApiName": "roleTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [directoryRole](https://learn.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-1.0) using **roleTemplateId* as the alternate key. You can now address a directoryRole via either the primary key **id** or the alternate key **roleTemplateId** as the path parameter.",
+          "Target": "directoryRole"
+        }
+      ],
+      "Id": "a4b3144c-145e-4d0d-8bed-1a41f62f4221",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
