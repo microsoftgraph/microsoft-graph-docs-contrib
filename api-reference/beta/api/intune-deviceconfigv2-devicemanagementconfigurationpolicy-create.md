@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagementConfigurationPolicy
 POST /deviceManagement/configurationPolicies
 POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies
 ```
@@ -54,7 +53,7 @@ The following table shows the properties that are required when you create the d
 |name|String|Policy name|
 |description|String|Policy description|
 |platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `enrollment`, `unknownFutureValue`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `enrollment`, `endpointPrivilegeManagement`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Policy creation date and time|
 |lastModifiedDateTime|DateTimeOffset|Policy last modification date and time|
 |settingCount|Int32|Number of settings|
@@ -74,9 +73,9 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy
+POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
 Content-type: application/json
-Content-length: 789
+Content-length: 809
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -98,7 +97,8 @@ Content-length: 789
     "templateDisplayVersion": "Template Display Version value"
   },
   "priorityMetaData": {
-    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData"
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData",
+    "priority": 8
   }
 }
 ```
@@ -108,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 981
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -133,7 +133,8 @@ Content-Length: 961
     "templateDisplayVersion": "Template Display Version value"
   },
   "priorityMetaData": {
-    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData"
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData",
+    "priority": 8
   }
 }
 ```

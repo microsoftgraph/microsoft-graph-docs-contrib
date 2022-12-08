@@ -66,6 +66,34 @@
       "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
     },  
+
+        {
+      "ChangeList": [
+        {
+          "Id": "a87b3d78-8579-4500-b0fe-2ee2a498d8b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "a87b3d78-8579-4500-b0fe-2ee2a498d8b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "a87b3d78-8579-4500-b0fe-2ee2a498d8b8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-05T15:32:15.4715841Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    }, 
+
     {
          "ChangeList": [
            {

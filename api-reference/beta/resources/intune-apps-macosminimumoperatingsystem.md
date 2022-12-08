@@ -1,6 +1,6 @@
 ---
 title: "macOSMinimumOperatingSystem resource type"
-description: "The minimum operating system required for a MacOS app."
+description: "The minimum operating system required for a macOS app."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,16 +15,16 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The minimum operating system required for a MacOS app.
+The minimum operating system required for a macOS app.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|v10_7|Boolean|When TRUE, indicates macOS 10.7 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
-|v10_8|Boolean|When TRUE, indicates macOS 10.8 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
-|v10_9|Boolean|When TRUE, indicates macOS 10.9 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
-|v10_10|Boolean|When TRUE, indicates macOS 10.10 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
-|v10_11|Boolean|When TRUE, indicates macOS 10.11 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
+|v10_7|Boolean|When TRUE, indicates Mac OS X 10.7 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
+|v10_8|Boolean|When TRUE, indicates OS X 10.8 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
+|v10_9|Boolean|When TRUE, indicates OS X 10.9 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
+|v10_10|Boolean|When TRUE, indicates OS X 10.10 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
+|v10_11|Boolean|When TRUE, indicates OS X 10.11 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
 |v10_12|Boolean|When TRUE, indicates macOS 10.12 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
 |v10_13|Boolean|When TRUE, indicates macOS 10.13 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|
 |v10_14|Boolean|When TRUE, indicates macOS 10.14 or later is required to install the app. When FALSE, indicates some other OS version is the minimum OS to install the app. Default value is FALSE.|

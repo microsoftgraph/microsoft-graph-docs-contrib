@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}/createCopy
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/createCopy
 POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}/createCopy
 ```
@@ -63,7 +62,7 @@ If successful, this action returns a `200 OK` response code and a [deviceManagem
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}/createCopy
+POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/createCopy
 
 Content-type: application/json
 Content-length: 82
@@ -79,7 +78,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1028
+Content-Length: 1050
 
 {
   "value": {
@@ -105,7 +104,8 @@ Content-Length: 1028
       "templateDisplayVersion": "Template Display Version value"
     },
     "priorityMetaData": {
-      "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData"
+      "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData",
+      "priority": 8
     }
   }
 }

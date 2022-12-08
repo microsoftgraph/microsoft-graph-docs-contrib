@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### layoutTemplateType values
+
+| Member             |
+|:--------------------|
+| default            |
+| verticalSplit      |
+| unknownFutureValue |
+
 ### conditionalAccessExternalTenantsMembershipKind values
 
 |Member|
@@ -1017,6 +1025,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### educationAddToCalendarOptions values
+
 |Member|
 |:---|
 |none|
@@ -1026,6 +1035,7 @@ Namespace: microsoft.graph
 |studentsOnly|
 
 ### educationAssignmentStatus values
+
 |Member|
 |:---|
 |draft|
@@ -1034,6 +1044,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### educationSubmissionStatus values
+
 |Member|
 |:---|
 |working|
@@ -1044,6 +1055,7 @@ Namespace: microsoft.graph
 |reassigned|
 
 ### educationFeedbackResourceOutcomeStatus values
+
 |Member|
 |:---|
 |notPublished|
@@ -3289,6 +3301,78 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 
+### browserSharedCookieSourceEnvironment values
+
+| Member|
+|:-----------------|
+|microsoftEdge|
+|internetExplorer11|
+|both|
+|unknownFutureValue|
+
+### browserSiteCompatibilityMode values
+
+| Member|
+|:-----------------|
+|default|
+|internetExplorer8Enterprise|
+|internetExplorer7Enterprise|
+|internetExplorer11|
+|internetExplorer10|
+|internetExplorer9|
+|internetExplorer8|
+|internetExplorer7|
+|internetExplorer5|
+|unknownFutureValue|
+
+### browserSiteMergeType values
+
+| Member|
+|:-----------------|
+|noMerge|
+|default|
+|unknownFutureValue|
+
+### browserSiteTargetEnvironment values
+
+| Member|
+|:-----------------|
+|internetExplorerMode|
+|internetExplorer11|
+|microsoftEdge|
+|configurable|
+|none|
+|unknownFutureValue|
+
+### browserSiteStatus values
+
+| Member|
+|:-----------------|
+|published|
+|pendingAdd|
+|pendingEdit|
+|pendingDelete|
+|unknownFutureValue|
+
+### browserSharedCookieStatus values
+
+| Member|
+|:-----------------|
+|published|
+|pendingAdd|
+|pendingEdit|
+|pendingDelete|
+|unknownFutureValue|
+
+### browserSiteListStatus values
+
+| Member|
+|:-----------------|
+|draft|
+|published|
+|pending|
+|unknownFutureValue|
+
 ### authenticationStrengthPolicyType values
 
 |Member|
@@ -3352,4 +3436,14 @@ Possible values for user account types (group membership), per Windows definitio
 |privateContent|
 |sharedContent|
 |unknownFutureValue|
+
+### chatMessageActions values 
+
+|Member|
+|:---|
+|reactionAdded|
+|reactionRemoved|
+|actionUndefined|
+|unknownFutureValue|
+
 

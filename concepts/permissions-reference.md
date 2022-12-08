@@ -266,7 +266,9 @@ None.
 > Permissions that allow granting authorization, such as _AppRoleAssignment.ReadWrite.All_, allow an application to grant additional privileges to itself, other applications, or any user. Likewise, permissions that allow managing credentials, such as _Application.ReadWrite.All_, allow an application to act as other entities, and use the privileges they were granted. Use caution when granting any of these permissions.
 
 The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Application.ReadWrite.All_ except that the former allows these operations only on applications and service principals that the calling app is an owner of. Ownership is indicated by the `owners` navigation property on the target [application](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) or [service principal](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true) resource.
-> NOTE: Using the _Application.ReadWrite.OwnedBy_ permission to call `GET /applications` to list applications will fail with a 403.  Instead use `GET servicePrincipals/{id}/ownedObjects` to list the applications owned by the calling application.
+
+> [!NOTE]
+> The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
 
 ### Example usage
 
@@ -353,6 +355,36 @@ None.
 * _BookingsAppointment.ReadWrite.All_: Create an appointment for a service at a Bookings business (`POST /bookingBusinesses/{id}/appointments`).
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
+
+## Browser management permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BrowserSiteLists.Read.All_ | Read browser site lists for your organization | Allows an app to read the browser site lists configured for your organization, on behalf of the signed-in user. | No | No |
+| _BrowserSiteLists.ReadWrite.All_ | Read and write browser site lists for your organization |  Allows an app to read and write the browser site lists configured for your organization, on behalf of the signed-in user. | No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BrowserSiteLists.Read.All_ | Read all browser site lists for your organization | Allows an app to read all browser site lists configured for your organization, without a signed-in user. | Yes | No |
+| _BrowserSiteLists.ReadWrite.All_ | Read and write all browser site lists for your organization | Allows an app to read and write all browser site lists configured for your organization, without a signed-in user. | Yes | No |
+
+### Example usage
+
+#### Delegated
+
+* _BrowserSiteLists.Read.All_: List all browser site lists, on behalf of a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Update a browser site list, on behalf of a signed-in user (`PATCH /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
+
+#### Application
+
+* _BrowserSiteLists.Read.All_: List all browser site lists, without a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Delete a browser site list, without a signed-in user (`DELETE /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
+
+---
 
 ## Calendars permissions
 

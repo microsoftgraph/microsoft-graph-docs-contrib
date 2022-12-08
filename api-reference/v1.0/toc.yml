@@ -186,6 +186,8 @@ items:
         href: /graph/sdks/customize-client?context=graph/api/1.0
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
+      - name: Connect to national clouds
+        href: /graph/sdks/national-clouds?context=graph/api/1.0
       - name: Create requests
         href: /graph/sdks/create-requests?context=graph/api/1.0
       - name: Page through a collection
@@ -1869,6 +1871,38 @@ items:
               href: api/intune-books-iosvppebookassignment-delete.md
             - name: Update
               href: api/intune-books-iosvppebookassignment-update.md
+          - name: macOS LOB app
+            href: resources/intune-apps-macoslobapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macoslobapp-list.md
+            - name: Get
+              href: api/intune-apps-macoslobapp-get.md
+            - name: Create
+              href: api/intune-apps-macoslobapp-create.md
+            - name: Delete
+              href: api/intune-apps-macoslobapp-delete.md
+            - name: Update
+              href: api/intune-apps-macoslobapp-update.md
+          - name: macOS LOB app assignment settings
+            href: resources/intune-apps-macoslobappassignmentsettings.md
+          - name: macOS LOB child app
+            href: resources/intune-apps-macoslobchildapp.md
+          - name: macOS microsoft edge app
+            href: resources/intune-apps-macosmicrosoftedgeapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macosmicrosoftedgeapp-list.md
+            - name: Get
+              href: api/intune-apps-macosmicrosoftedgeapp-get.md
+            - name: Create
+              href: api/intune-apps-macosmicrosoftedgeapp-create.md
+            - name: Delete
+              href: api/intune-apps-macosmicrosoftedgeapp-delete.md
+            - name: Update
+              href: api/intune-apps-macosmicrosoftedgeapp-update.md
+          - name: macOS minimum operating system
+            href: resources/intune-apps-macosminimumoperatingsystem.md
           - name: macOS office suite app
             href: resources/intune-apps-macosofficesuiteapp.md
             items:
@@ -2036,6 +2070,8 @@ items:
               href: api/intune-apps-managedmobilelobapp-get.md
           - name: MDM app config key type
             href: resources/intune-apps-mdmappconfigkeytype.md
+          - name: Microsoft edge channel
+            href: resources/intune-apps-microsoftedgechannel.md
           - name: Microsoft store for business app
             href: resources/intune-apps-microsoftstoreforbusinessapp.md
             items:
@@ -3257,6 +3293,25 @@ items:
               href: api/intune-devices-applepushnotificationcertificate-get.md
             - name: Update
               href: api/intune-devices-applepushnotificationcertificate-update.md
+          - name: Audit actor
+            href: resources/intune-auditing-auditactor.md
+          - name: Audit event
+            href: resources/intune-auditing-auditevent.md
+            items:
+            - name: List
+              href: api/intune-auditing-auditevent-list.md
+            - name: Get
+              href: api/intune-auditing-auditevent-get.md
+            - name: Create
+              href: api/intune-auditing-auditevent-create.md
+            - name: Delete
+              href: api/intune-auditing-auditevent-delete.md
+            - name: Update
+              href: api/intune-auditing-auditevent-update.md
+          - name: Audit property
+            href: resources/intune-auditing-auditproperty.md
+          - name: Audit resource
+            href: resources/intune-auditing-auditresource.md
           - name: Compliance state
             href: resources/intune-devices-compliancestate.md
           - name: Configuration manager client enabled features
@@ -3296,19 +3351,26 @@ items:
           - name: Device health attestation state
             href: resources/intune-devices-devicehealthattestationstate.md
           - name: Device management
-            href: resources/intune-devices-devicemanagement.md
+            href: resources/intune-auditing-devicemanagement.md
             items:
             - name: Get
-              href: api/intune-devices-devicemanagement-get.md
+              href: api/intune-auditing-devicemanagement-get.md
             - name: Update
-              href: api/intune-devices-devicemanagement-update.md
+              href: api/intune-auditing-devicemanagement-update.md
           - name: Device management
-            href: resources/intune-devices-devicemanagement.md
+            href: resources/intune-auditing-devicemanagement.md
             items:
             - name: Get
-              href: api/intune-devices-devicemanagement-get.md
+              href: api/intune-auditing-devicemanagement-get.md
             - name: Update
-              href: api/intune-devices-devicemanagement-update.md
+              href: api/intune-auditing-devicemanagement-update.md
+          - name: Device management
+            href: resources/intune-auditing-devicemanagement.md
+            items:
+            - name: Get
+              href: api/intune-auditing-devicemanagement-get.md
+            - name: Update
+              href: api/intune-auditing-devicemanagement-update.md
           - name: Device management exchange access state
             href: resources/intune-devices-devicemanagementexchangeaccessstate.md
           - name: Device management exchange access state reason
@@ -3909,6 +3971,8 @@ items:
               href: api/intune-onboarding-devicemanagementpartner-delete.md
             - name: Update
               href: api/intune-onboarding-devicemanagementpartner-update.md
+            - name: terminate action
+              href: api/intune-onboarding-devicemanagementpartner-terminate.md
           - name: Device management partner app type
             href: resources/intune-onboarding-devicemanagementpartnerapptype.md
           - name: Device management partner tenant state
@@ -4292,6 +4356,8 @@ items:
           href: api/educationassignment-delete.md
         - name: Set up assignment resources folder
           href: api/educationassignment-setupresourcesfolder.md
+        - name: Set up assignment feedback resources folder
+          href: api/educationassignment-setupfeedbackresourcesfolder.md
         - name: Publish assignment
           href: api/educationassignment-publish.md
         - name: List assignment resources
@@ -4361,10 +4427,14 @@ items:
           href: api/educationsubmission-list-resources.md
         - name: Add submission resource
           href: api/educationsubmission-post-resources.md
+        - name: Add submission feedback resource outcome
+          href: api/educationfeedbackresourceoutcome-post-outcomes.md
         - name: Get submission resource
           href: api/educationsubmissionresource-get.md
         - name: Delete submission resource
           href: api/educationsubmissionresource-delete.md
+        - name: Delete feedback resource outcome
+          href: api/educationfeedbackresourceoutcome-delete.md
         - name: Get submission
           href: api/educationsubmission-get.md
         - name: Set up submission resources folder
@@ -4714,6 +4784,8 @@ items:
             href: api/domain-update.md
           - name: Verify domain
             href: api/domain-verify.md
+          - name: Promote domain
+            href: api/domain-promote.md
         - name: Organization
           href: resources/organization.md
           items:
@@ -4960,11 +5032,11 @@ items:
             - name: List
               href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
             - name: Create or update
-              href: api/authenticationcontextclassreference-update.md    
+              href: api/authenticationcontextclassreference-update.md
             - name: Get
               href: api/authenticationcontextclassreference-get.md
             - name: Delete
-              href: api/authenticationcontextclassreference-delete.md  
+              href: api/authenticationcontextclassreference-delete.md
           - name: Templates
             items:
             - name: Conditional access template
@@ -5055,6 +5127,28 @@ items:
               href: api/riskyuser-confirmcompromised.md
             - name: Dismiss
               href: api/riskyuser-dismiss.md
+          - name: Service principal risk detection
+            items:
+            - name: Risk detection
+              href: resources/serviceprincipalriskdetection.md
+            - name: List
+              href: api/identityprotectionroot-list-serviceprincipalriskdetections.md
+            - name: Get
+              href: api/serviceprincipalriskdetection-get.md
+          - name: Risky service principal
+            items:
+            - name: Risky service principal
+              href: resources/riskyserviceprincipal.md
+            - name: List risky service principals
+              href: api/identityprotectionroot-list-riskyserviceprincipals.md
+            - name: Get risky service principal
+              href: api/riskyserviceprincipal-get.md
+            - name: List history
+              href: api/riskyserviceprincipal-list-history.md 
+            - name: Confirm compromised
+              href: api/riskyserviceprincipal-confirmcompromised.md 
+            - name: Dismiss
+              href: api/riskyserviceprincipal-dismiss.md
         - name: Identity provider
           items:
           - name: Identity provider base
@@ -6649,6 +6743,8 @@ items:
             href: api/security-ediscoverysearch-post-additionalsources.md
           - name: Get last estimate statistics operation
             href: api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
+          - name: Purge data
+            href: api/security-ediscoverysearch-purgedata.md
         - name: Review set
           href: resources/security-ediscoveryreviewset.md
           items:
@@ -7208,7 +7304,7 @@ items:
             - name: List
               href: api/call-list-contentsharingsessions.md
             - name: Get
-              href: api/contentsharingsession-get.md    
+              href: api/contentsharingsession-get.md
           - name: IVR scenarios
             href: resources/calls-api-ivr-overview.md
             items:
