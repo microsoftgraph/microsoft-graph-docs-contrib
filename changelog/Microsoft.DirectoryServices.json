@@ -95,6 +95,64 @@
     {
       "ChangeList": [
         {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "onPremisesDirectorySynchronizationDeletionPreventionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesDirectorySynchronizationDeletionPreventionType** enumeration type.",
+          "Target": "onPremisesDirectorySynchronizationDeletionPreventionType"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesAccidentalDeletionPrevention",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesAccidentalDeletionPrevention](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesAccidentalDeletionPrevention?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesAccidentalDeletionPrevention"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronizationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronizationFeature",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronizationFeature](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationFeature?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesDirectorySynchronizationFeature"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "onPremisesSynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSynchronization** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronization](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronization?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronization"
+        }
+      ],
+      "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-07T08:56:56.555588Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fd0b2af6-a129-4284-9114-7303d3091a3c",
           "ApiChange": "Property",
           "ChangedApiName": "defaultUsageLocation",
