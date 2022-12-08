@@ -12337,6 +12337,24 @@
       "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
       "WorkloadArea": "Application",
       "SubArea": ""
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
+          "Target": "device"
+        }
+      ],
+      "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
