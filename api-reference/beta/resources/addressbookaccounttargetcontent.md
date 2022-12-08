@@ -23,13 +23,13 @@ Inherits from [accountTargetContent](../resources/accountTargetContent.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedaccounttarget](../api/simulation-get-includedaccounttarget.md)|[addressbookaccounttargetcontent](../resources/addressbookaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
-|[Get excludedaccounttarget](../api/simulation-get-excludedaccounttarget.md)|[addressbookaccounttargetcontent](../resources/addressbookaccounttargetcontent.md)|Get excluded user for an attack simulation campaigns.|
+|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[addressbookaccounttargetcontent](../resources/addressbookaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
+|[Get excludedaccounttarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[addressbookaccounttargetcontent](../resources/addressbookaccounttargetcontent.md)|Get excluded user for an attack simulation campaigns.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accountTargetEmails|String collection|List of user emails targetted|
+|accountTargetEmails|(String)collection|List of user emails targetted|
 |type|accountTargetContentType| Type of account target content contains targetted user email addresses. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 ## Relationships

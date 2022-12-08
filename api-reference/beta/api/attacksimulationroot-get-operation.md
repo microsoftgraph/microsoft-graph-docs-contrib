@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [AttackSimulationOperation](../resources/AttackSimulationOperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [AttackSimulationOperation](../resources/attacksimulationoperation.md) object in the response body.
 
 ## Examples
 
@@ -71,7 +71,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.AttackSimulationOperation"
+  "@odata.type": "microsoft.graph.attacksimulationoperation"
 }
 -->
 ``` http

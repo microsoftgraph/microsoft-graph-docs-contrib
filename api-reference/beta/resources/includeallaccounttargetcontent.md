@@ -25,7 +25,8 @@ The attack simulation and training API enables tenant administrators to list lau
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](#accountTargetContentType-values. Inherited from [accounttargetcontent])|Type of account target content. Possible values are: `addressbook`, `includeall`.|
+|type|[accountTargetContentType](../resources/accounttargetcontent.md#accountTargetContentType-values. Inherited from [accounttargetcontent])|Type of account target content. Possible values are: `addressbook`, `includeall`.|
+|coachmarkLocation|[coachmarkLocation](../resources/coachmarkLocation.md)|Coachmark location.|
 
 
 ## Relationships

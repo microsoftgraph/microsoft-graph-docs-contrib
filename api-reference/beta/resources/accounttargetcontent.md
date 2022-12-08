@@ -21,13 +21,13 @@ The attack simulation and training API enables tenant administrators to list lau
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedaccounttarget](../api/simulation-get-includedaccounttarget.md)|[accounttargetcontent](../resources/includedaccounttarget.md)|Get included user for an attack simulation campaigns.|
-|[Get excludedaccounttarget](../api/simulation-get-excludedaccounttarget.md)|[accounttargetcontent](../resources/excludedaccounttarget.md)|Get excluded user for an attack simulation campaigns.|
+|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accounttargetcontent](../resources/includedaccounttarget.md)|Get included user for an attack simulation campaigns.|
+|[Get excludedaccounttarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accounttargetcontent](../resources/excludedaccounttarget.md)|Get excluded user for an attack simulation campaigns.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](#accountTargetContentType-values)|Type of account target content. Possible values are: `addressbook`, `includeall`.|
+|type|[accountTargetContentType](#accounttargetcontenttype-values)|Type of account target content. Possible values are: `addressbook`, `includeall`.|
 
 ### accountTargetContentType values
 

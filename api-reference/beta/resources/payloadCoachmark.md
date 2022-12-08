@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
 	"offset": 144,
 	"length": 6,
 	"type": "messageBody"  
+	}
 }
 ```
 
