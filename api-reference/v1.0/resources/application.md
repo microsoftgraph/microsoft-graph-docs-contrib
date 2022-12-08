@@ -53,9 +53,9 @@ This resource supports:
 | [Update federatedIdentityCredential](../api/federatedidentitycredential-update.md) | None | Update a federated identity credential of an application object. |
 | [Delete federatedIdentityCredential](../api/federatedidentitycredential-delete.md) | None | Delete a federated identity credential from an application object. |
 |**Owners**| | |
-|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
-|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
-|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application.|
+|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of an application.|
+|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to an application. Application owners can be users or service principals.|
+|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application. As a recommended best practice, apps should have at least two owners.|
 |**Policies**| | |
 |[Assign tokenIssuancePolicy](../api/application-post-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Assign a tokenIssuancePolicy to this object.|
 |[List tokenIssuancePolicies](../api/application-list-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Get all tokenIssuancePolicies assigned to this object.|
@@ -103,7 +103,7 @@ This resource supports:
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Specifies the resources that the application needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. <br/><br/>No more than 50 resource services (APIs) can be configured. Beginning mid-October 2021, the total number of required permissions must not exceed 400. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). Not nullable. <br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | samlMetadataUrl | String | The URL where the service exposes SAML metadata for federation. This property is valid only for single-tenant applications. Nullable. |
 | serviceManagementReference | String | References application or service contact information from a Service or Asset Management database. Nullable. |
-| signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. The possible values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (default), and `PersonalMicrosoftAccount`. See more in the [table](#signinaudience-values). <br/><br/>The value of this object also limits the number of permissions an app can request. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). <br><br>Supports `$filter` (`eq`, `ne`, `not`).|
+| signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. The possible values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (default), and `PersonalMicrosoftAccount`. See more in the [table](#signinaudience-values). <br/><br/>The value of this object also limits the number of permissions an app can request. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). <br><br>The value for this property has implications on other app object properties. As a result, if you change this property, you may need to change other properties first. For more information, see [Validation differences for signInAudience](/azure/active-directory/develop/supported-accounts-validation?context=graph/context).<br><br>Supports `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable. <br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
@@ -127,12 +127,15 @@ This resource supports:
 
 ## Relationships
 
+> [!IMPORTANT]
+> Specific usage of the `$filter` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#user-properties).
+
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| Supports `$filter` (`eq` when counting empty collections). Read-only.|
-|extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable. Supports `$expand` and `$filter` (`eq` and `ne` when counting empty collections and only with [advanced query parameters](/graph/aad-advanced-queries)).|
-|federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) collection |Federated identities for applications. Supports `$expand` and `$filter` (`startsWith`, and `eq`, `ne` when counting empty collections and only with [advanced query parameters](/graph/aad-advanced-queries)).|
-|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand` and `$filter` (`eq` when counting empty collections).|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| Supports `$filter` (`/$count eq 0`, `/$count ne 0`). Read-only.|
+|extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`).|
+|federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) collection |Federated identities for applications. Supports `$expand` and `$filter` (`startsWith`, `/$count eq 0`, `/$count ne 0`).|
+|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|
 
 ## JSON representation
 
