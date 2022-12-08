@@ -20,7 +20,7 @@ The attack simulation and training API enables tenant administrators to list lau
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[includedallaccounttargetcontent](../resources/includedallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
+|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[includedallaccounttargetcontent](../resources/includeallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
 
 ## Properties
 |Property|Type|Description|
