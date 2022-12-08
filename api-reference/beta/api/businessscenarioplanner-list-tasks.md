@@ -55,6 +55,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Get all tasks for a scenario
 
+The following example shows a request that gets all tasks related to a scenario.
+
 #### Request
 
 The following is an example of a request.
@@ -109,6 +111,8 @@ Content-Type: application/json
 
 ### Example 2: Get tasks associated with a specific externalContextId
 
+The following example shows a request that gets all tasks associated with a specific context.
+
 #### Request
 
 The following is an example of a request.
@@ -162,6 +166,8 @@ Content-Type: application/json
 ```
 
 ### Example 3: Get scenario tasks created in a specific group
+
+The following example shows a request that gets all tasks created in a specific [group](../resources/group.md).
 
 #### Request
 

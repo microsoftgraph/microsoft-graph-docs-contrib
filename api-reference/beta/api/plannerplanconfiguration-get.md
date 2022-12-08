@@ -87,18 +87,18 @@ Content-Type: application/json
   "id": "afdd911ee3db44b69cc28373a6192e94",
   "defaultLanguage": "en-us",
   "buckets": [
-      {
-          "externalBucketId": "deliveryBucket"
-      },
-      {
-          "externalBucketId": "storePickupBucket"
-      },
-      {
-          "externalBucketId": "specialOrdersBucket"
-      },
-      {
-          "externalBucketId": "returnProcessingBucket"
-      }
+    {
+      "externalBucketId": "deliveryBucket"
+    },
+    {
+      "externalBucketId": "storePickupBucket"
+    },
+    {
+      "externalBucketId": "specialOrdersBucket"
+    },
+    {
+      "externalBucketId": "returnProcessingBucket"
+    }
   ]
 }
 ```

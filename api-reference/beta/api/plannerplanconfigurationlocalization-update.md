@@ -32,13 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-For a specific localization based on a business scenario ID:
+For a specific localization based on a business scenario ID and a localization ID:
 
 ``` http
 PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}
 ```
 
-For a specific localization based on the unique name of a business scenario:
+For a specific localization based on the unique name of a business scenario and a localization ID:
 
 ``` http
 PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration/localizations/{plannerPlanConfigurationLocalizationId}

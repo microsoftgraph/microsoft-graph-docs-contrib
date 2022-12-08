@@ -32,13 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-For a specific localization based on a business scenario ID:
+For localizations based on a business scenario ID:
 
 ``` http
 GET /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations
 ```
 
-For a specific localization based on the unique name of a business scenario:
+For localizations based on the unique name of a business scenario:
 
 ``` http
 GET /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration/localizations
@@ -65,6 +65,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Example 1: Get all localizations
+
+The following example shows a request that gets all localized names for a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md).
 
 #### Request
 
@@ -156,6 +158,8 @@ Content-Type: application/json
 ```
 
 ### Example 2: Get localization for a specific language tag
+
+The following example shows a request that gets all localized names for a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) for a specific language.
 
 #### Request
 
