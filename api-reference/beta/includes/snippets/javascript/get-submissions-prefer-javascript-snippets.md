@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let submissions = await client.api('/education/classes/59069eb2-2a09-4d90-bb19-2089cc69d613/assignments/80da1069-a635-4913-813f-d775a5470a8f/submissions')
+let submissions = await client.api('/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/submissions')
 	.version('beta')
 	.header('Prefer','include-unknown-enum-members')
 	.get();

@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |contributors|String collection|The authors, creators, or contributors of the learning content. Optional.|
 |createdDateTime|DateTimeOffset|The date when the learning content was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 |description|String|The description or summary for the learning content. Optional.|
-|duration|Duration|The duration of the learning content in seconds. Optional.|
+|duration|Duration|The duration of the learning content in seconds. The value is represented in ISO 8601 format for durations. Optional.|
 |externalId|String|Unique external content ID for the learning content. Required.|
 |format|String|The format of the learning content. For example, `Course`, `Video`, `Book`, `Book Summary`, `Audiobook Summary`. Optional.|
 |id|String|The unique identifier for the learning content. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
