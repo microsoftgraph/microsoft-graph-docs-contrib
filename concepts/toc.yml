@@ -101,6 +101,10 @@ items:
             href: application-proxy-configure-api.md
           - name: Automate provisioning
             href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
+          - name: Synchronize custom target attributes
+            href: synchronization-configure-with-custom-target-attributes.md
+          - name: Synchronize directory extension attributes
+            href: synchronization-configure-with-directory-extension-attributes.md
       - name: Accessing data at scale
         items:
           - name: Microsoft Graph Data Connect overview

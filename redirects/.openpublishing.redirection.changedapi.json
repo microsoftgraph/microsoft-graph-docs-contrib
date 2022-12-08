@@ -74,6 +74,16 @@
             "source_path_from_root": "/api-reference/v1.0/api/conditionalaccessroot-post-authenticationcontextclassreferences.md",
             "redirect_url": "/graph/api/authenticationcontextclassreference-update?view=graph-rest-1.0",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md",
+            "redirect_url": "/graph/synchronization-configure-with-directory-extension-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md",
+            "redirect_url": "/graph/synchronization-configure-with-directory-extension-attributes",
+            "redirect_document_id": true
         }
     ]
 }
