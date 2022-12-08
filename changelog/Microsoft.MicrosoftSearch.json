@@ -668,7 +668,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-11-01T08:33:47.66211Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
     },
     {
       "ChangeList": [
