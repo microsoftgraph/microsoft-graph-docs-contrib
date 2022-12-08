@@ -74,7 +74,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.businessScenario",
   "displayName": "Contoso Order Tracking",
-  "uniqueName": "ordertracking.apps.contoso.com"
+  "uniqueName": "com.contoso.apps.ordertracking"
 }
 ```
 
@@ -96,7 +96,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.businessScenario",
   "id": "c5d514e6c6864911ac46c720affb6e4d",
   "displayName": "Contoso Order Tracking",
-  "uniqueName": "ordertracking.apps.contoso.com",
+  "uniqueName": "com.contoso.apps.ordertracking",
   "ownerAppIds": [
       "44109254-4b2b-7a33-76ee-c890a167b295"
   ]
