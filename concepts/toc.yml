@@ -367,8 +367,17 @@ items:
                     href: accessreviews-scope-concept.md
                   - name: Assign reviewers
                     href: accessreviews-reviewers-concept.md
-              - name: Use PIM to assign Azure AD roles
-                href: tutorial-assign-azureadroles.md
+              - name: Use PIM to manage Azure AD roles
+                items:
+                  - name: Rules for Azure AD roles
+                    href: identity-governance-pim-rules-overview.md
+                    displayName: PIM rules, privileged identity management settings
+                  - name: Customize and update rules for Azure AD roles
+                    href: how-to-pim-update-rules.md
+                    displayName: PIM rules, privileged identity management settings
+                  - name: Assign Azure AD roles with PIM
+                    href: tutorial-assign-azureadroles.md
+                    displayName: PIM, privileged identity management
       - name: Mail
         items:
           - name: Overview
@@ -647,7 +656,16 @@ items:
           - name: Get access without a user
             href: auth-v2-service.md
           - name: Permissions
-            href: permissions-reference.md
+            items:
+            - name: Overview
+              displayName: Microsoft Graph permissions
+              href: permissions-overview.md
+            - name: Permissions reference
+              displayName: Microsoft Graph permissions list
+              href: permissions-reference.md
+            - name: Azure AD built-in roles
+              displayName: Microsoft Graph permissions
+              href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
           - name: Manage app access (CSPs)
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access

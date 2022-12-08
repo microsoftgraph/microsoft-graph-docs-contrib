@@ -16,7 +16,16 @@ items:
     - name: Get access without a user
       href: /graph/auth-v2-service?context=graph/api/1.0
     - name: Permissions
-      href: /graph/permissions-reference?context=graph/api/1.0
+      items:
+      - name: Overview
+        displayName: Microsoft Graph permissions
+        href: /graph/permissions-overview?context=graph/api/1.0
+      - name: Permissions reference
+        displayName: Microsoft Graph permissions list
+        href: /graph/permissions-reference?context=graph/api/1.0
+      - name: Azure AD built-in roles
+        displayName: Microsoft Graph permissions
+        href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
     - name: Manage app access (CSPs)
       href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
     - name: Limit mailbox access
@@ -5127,6 +5136,28 @@ items:
               href: api/riskyuser-confirmcompromised.md
             - name: Dismiss
               href: api/riskyuser-dismiss.md
+          - name: Service principal risk detection
+            items:
+            - name: Risk detection
+              href: resources/serviceprincipalriskdetection.md
+            - name: List
+              href: api/identityprotectionroot-list-serviceprincipalriskdetections.md
+            - name: Get
+              href: api/serviceprincipalriskdetection-get.md
+          - name: Risky service principal
+            items:
+            - name: Risky service principal
+              href: resources/riskyserviceprincipal.md
+            - name: List risky service principals
+              href: api/identityprotectionroot-list-riskyserviceprincipals.md
+            - name: Get risky service principal
+              href: api/riskyserviceprincipal-get.md
+            - name: List history
+              href: api/riskyserviceprincipal-list-history.md 
+            - name: Confirm compromised
+              href: api/riskyserviceprincipal-confirmcompromised.md 
+            - name: Dismiss
+              href: api/riskyserviceprincipal-dismiss.md
         - name: Identity provider
           items:
           - name: Identity provider base

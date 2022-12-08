@@ -26,7 +26,7 @@ $params = @{
 			"https://localhost"
 		)
 	}
-	AppRoleAssignmentRequired = $true
+	ServiceManagementReference = "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
 }
 
 Update-MgApplication -ApplicationId $applicationId -BodyParameter $params

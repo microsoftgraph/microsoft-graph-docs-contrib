@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### layoutTemplateType values
+
+| Member             |
+|:--------------------|
+| default            |
+| verticalSplit      |
+| unknownFutureValue |
+
 ### conditionalAccessExternalTenantsMembershipKind values
 
 |Member|
@@ -949,6 +957,46 @@ Namespace: microsoft.graph
 |alternateMobileCall|
 |fido|
 |appPassword|
+|unknownFutureValue|
+
+### authenticationAppAdminConfiguration values
+
+|Member|
+|:---|
+|notApplicable|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### authenticationAppEvaluation values
+
+|Member|
+|:---|
+|success|
+|failure|
+|unknownFutureValue|
+
+### authenticationAppPolicyStatus values
+
+|Member|
+|:---|
+|unknown|
+|appLockOutOfDate|
+|appLockEnabled|
+|appLockDisabled|
+|appContextOutOfDate|
+|appContextShown|
+|appContextNotShown|
+|locationContextOutOfDate|
+|locationContextShown|
+|locationContextNotShown|
+|numberMatchOutOfDate|
+|numberMatchCorrectNumberEntered|
+|numberMatchIncorrectNumberEntered|
+|numberMatchDeny|
+|tamperResistantHardwareOutOfDate|
+|tamperResistantHardwareUsed|
+|tamperResistantHardwareNotUsed|
 |unknownFutureValue|
 
 ### authenticationMethodKeyStrength values
@@ -3398,4 +3446,11 @@ Possible values for user account types (group membership), per Windows definitio
 |actionUndefined|
 |unknownFutureValue|
 
+### onPremisesDirectorySynchronizationDeletionPreventionType values
 
+|Member|
+|:-----|
+|disabled|
+|enabledForCount|
+|enabledForPercentage|
+|unknownFutureValue|
