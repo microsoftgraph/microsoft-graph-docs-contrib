@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "#microsoft.graph.security.addressbookaccounttargetcontent",
     "type" : "addressBook",
     "accountTargetEmails" : [
-        jeff.watson@microsoft.com"
+        "jeff.watson@microsoft.com"
     ]
 }
 ```

@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 |[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
 |[Get simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) |Get an attack simulation automations for a tenant.|
 |[List payloads](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get the payload resources from the payloads navigation property.|
-|[Get payloads](../api/simulation-get-payload.md)|[payload](../resources/payload.md)|Get the payload resource from the payloads navigation property.|
+|[Get payloads](../api/attacksimulationroot-get-payload.md)|[payload](../resources/payload.md)|Get the payload resource from the payloads navigation property.|
 |[Get attackSimulationOperation](../api/attacksimulationroot-get-operation.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get attackSimulationOperation object.|
 
 ## Properties

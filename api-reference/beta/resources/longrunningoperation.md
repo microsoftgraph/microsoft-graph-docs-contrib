@@ -1,7 +1,6 @@
 ---
 title: "longRunningOperation resource type"
 description: "The status of a long-running operation."
-ms.localizationpriority: medium
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
