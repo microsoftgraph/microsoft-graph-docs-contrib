@@ -16,7 +16,7 @@ The resources that derive from plannerBucketCreation contain information about t
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the bucket is created with. The possible values are: `external`, `publication`.|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the bucket is created with. The possible values are: `external`, `publication` and `unknownFutureValue`.|
 
 ## Relationships
 None.
