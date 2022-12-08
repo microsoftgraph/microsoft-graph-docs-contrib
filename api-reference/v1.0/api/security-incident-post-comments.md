@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/incidents/3962396/comments
+POST https://graph.microsoft.com/v1.0/security/incidents/3962396/comments
 Content-Type: application/json
 
 {

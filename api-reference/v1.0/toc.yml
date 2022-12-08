@@ -6877,8 +6877,9 @@ items:
           - name: Get
             href: api/threatassessmentrequest-get.md
       - name: Legacy alert
-        href: resources/alert.md
         items:
+        - name: Alert
+          href: resources/alert.md
         - name: List alerts
           href: api/alert-list.md
         - name: Get alert
