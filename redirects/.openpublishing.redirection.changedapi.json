@@ -78,12 +78,12 @@
         {
             "source_path_from_root": "/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md",
             "redirect_url": "/graph/synchronization-configure-with-directory-extension-attributes",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md",
             "redirect_url": "/graph/synchronization-configure-with-custom-target-attributes",
-            "redirect_document_id": true
+            "redirect_document_id": false
         }
     ]
 }
