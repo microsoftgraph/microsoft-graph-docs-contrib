@@ -1,11 +1,9 @@
 ---
-title: Create simulaitons 
+title: Create simulations 
 description: Creates an attack simulation campaign for a tenant.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 

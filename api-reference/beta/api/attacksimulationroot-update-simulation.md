@@ -5,7 +5,6 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
-
 ---
 
 # Update simulations

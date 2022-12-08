@@ -1,9 +1,7 @@
 ---
 title: Delete simulations 
 description: Delete an attack simulation campaign for a tenant.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+author: stuartcl
 ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
