@@ -19,7 +19,7 @@ Use the following APIs to install the application to the Teams:
 
 - [List apps in Teams](/graph/api/team-list-installedapps): Lists the apps in Teams for user.
 - [Get installed apps in Teams](/graph/api/team-get-installedapp): Lists information about installed apps.
-- [Add app to Teams](/graph/api/team-post-installedapps): Lists information about adding the app to Teams.
+- [Add app to Teams](/graph/api/team-post-installedapps): Lists information about how to add the app to Teams.
 
 ## Creating the new assignment 
 
@@ -31,4 +31,4 @@ Use the [create teams app resource](/api/educationassignment-post-resources#exam
 
 ## Permissions
 
-Adding Teams app as a resource to your assignments would require the teacher permissions.
+Adding Teams app as a resource to your assignments would require the teacher role.

@@ -1,5 +1,5 @@
 ---
-title: "Build a tool to download all resources from a set of assignments"
+title: "How to download all resources from a set of assignments"
 description: "Use Microsoft Graph to create assignments with teams app resource using your own application"
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Build a tool to download all resources from a set of assignments at the end of the grade period
+# How to download all resources from a set of assignments at the end of the grade period
 
 You can download resources for a set of assignments for end of the year archiving or for external access for review of feedback given to students, you can use Graph API to download all resources stored in SharePoint.
 
