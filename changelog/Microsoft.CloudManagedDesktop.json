@@ -7,7 +7,7 @@
                     "ApiChange":"Property",
                     "ChangedApiName":"enableSingleSignOn",
                     "ChangeType":"Addition",
-                    "Description":"Added the **enableSingleSignOn** property to [cloudPcOrganizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
+                    "Description":"Added the **enableSingleSignOn** property to the [cloudPcOrganizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
                     "Target":"cloudPcOrganizationSettings"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange":"Property",
                     "ChangedApiName":"enableSingleSignOn",
                     "ChangeType":"Addition",
-                    "Description":"Added the **enableSingleSignOn** property to [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Description":"Added the **enableSingleSignOn** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                     "Target":"cloudPcProvisioningPolicy"
                 }
             ],
