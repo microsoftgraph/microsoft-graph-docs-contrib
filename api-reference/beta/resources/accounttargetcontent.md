@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# accounttargetcontent resource type
+# accountTargetContent resource type
 
 Namespace: microsoft.graph
 
@@ -21,8 +21,8 @@ The attack simulation and training API enables tenant administrators to list lau
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accounttargetcontent](../resources/accounttargetcontent.md)|Get included user for an attack simulation campaigns.|
-|[Get excludedaccounttarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accounttargetcontent](../resources/accounttargetcontent.md)|Get excluded user for an attack simulation campaigns.|
+|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included user for an attack simulation campaigns.|
+|[Get excludedaccounttarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded user for an attack simulation campaigns.|
 
 ## Properties
 |Property|Type|Description|

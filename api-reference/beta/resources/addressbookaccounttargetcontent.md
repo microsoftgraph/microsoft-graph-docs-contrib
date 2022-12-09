@@ -23,7 +23,7 @@ Inherits from [accountTargetContent](../resources/accountTargetContent.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accountTargetEmails|String Collection|List of user emails targetted|
-|type|accountTargetContentType| Type of account target content contains targetted user email addresses. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
+|type|accountTargetContentType| Type of account target content contains targetted user email addresses. Inherited from [accountTargetContent](../resources/accountTargetContent.md).The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -32,13 +32,13 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.addressbookaccounttargetcontent",
+  "@odata.type": "microsoft.graph.addressBookAccountTargetContent",
   "openType": true
 }
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.security.addressbookaccounttargetcontent",
+    "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
     "type" : "addressBook",
     "accountTargetEmails" : [
         "jeff.watson@microsoft.com"

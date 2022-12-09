@@ -52,8 +52,8 @@ Inherits from [entity](../resources/entity.md).
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
 |durationInDays|Int32|Simulation duration in days.|
-|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from simulation|
-|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targetted in simulation|
+|excludedAccountTarget|[accountTargetContent](../resources/accountTargetContent.md)|Users excluded from simulation|
+|includedAccountTarget|[accountTargetContent](../resources/accountTargetContent.md)|Users targetted in simulation|
 
 ## Relationships
 |Relationship|Type|Description|
