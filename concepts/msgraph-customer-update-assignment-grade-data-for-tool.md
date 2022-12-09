@@ -1,6 +1,6 @@
 ---
 title: "Update data in assignments and grades"
-description: "Use Microsoft Graph APIs to update assignments and grades data for use in custom tools"
+description: "Use Microsoft Graph APIs to update assignment and grade data for use in custom tools."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
@@ -9,11 +9,11 @@ doc_type: conceptualPageType
 
 # Update data in assignments and grades
 
-Education institutions have custom tools to update assignments and grading data. For example, a user might need to create an assignment or update grading data (outcome) with a custom tool for students to submit them.
+Education institutions have custom tools to update assignment and grade data. For example, a user might need to create an assignment or update a grade (outcome) with a custom tool for students to submit them. You can use education APIs in Microsoft Graph to update assignments and grades. Before you can update data, you must get the relevant class and member information.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
-## Get classes and members information required for assignments and grades
+## Get class and member information
 
 All the assignments and grading information are part of the team in Microsoft Teams. You can get information about classes, members, and roles (student or teacher) in a team by using the following Teams APIs:
 
@@ -24,14 +24,14 @@ After you get the relevant class and member information, you can get the assignm
 
 ## Get class assignment information
 
-All assignments and students' information are linked to class and submission information respectively. The following APIs retrieve information about class assignments:
+All assignments and students' information are linked to class and submission information, respectively. The following APIs retrieve information about class assignments:
 
 - [educationAssignment resource type](/graph/api/resources/educationassignment): Lists all the methods available for assignments in a class.
 - [educationSubmission resource type](/graph/api/resources/educationsubmission): A `submissionId` is created for every student for whom an assignment is published. You can use this API to get the submission status - for example, whether it was turned in and graded, ([resources](/graph/api/educationsubmissionresource-get)) submitted by the student, and the grade ([outcome](/graph/api/resources/educationoutcome)) for the submission.
 
 ## Update the points outcome data
 
-Outcome will get recalculated based on the changes in the property values. Use [update a points outcome](/graph/api/educationoutcome-update?#example-2-update-a-points-outcome) to update the student points outcome data.
+The outcome data will be recalculated based on changes in the property values. To update student points outcome data, see [update a points outcome](/graph/api/educationoutcome-update?#example-2-update-a-points-outcome).
 
 ## Permissions
 
