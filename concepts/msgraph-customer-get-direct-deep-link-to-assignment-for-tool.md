@@ -1,5 +1,5 @@
 ---
-title: "Get a deep link to an assignment"
+title: "Get class and member information and links to assignments and submissions"
 description: "Use Microsoft Graph APIs to get a deep link to the assignments for use in custom tools"
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Get a deep link to an assignment
+# Get class and member information and links to assignments and submissions
 
 Education institutions have custom tools for students and users who need to get a deep link to the assignment, so students can directly view more details or complete a given assignment. You can use education APIs in Microsoft Graph to get links to assignments and submissions.
 
