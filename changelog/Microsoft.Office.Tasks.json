@@ -91,7 +91,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
           "Target": "plannerProgressTaskBoardTaskFormat"
-        },        
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
@@ -99,7 +99,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerPlan"
-        },        
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
@@ -107,7 +107,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerTask"
-        },        
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
@@ -115,7 +115,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerPlanDetails"
-        },        
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
@@ -123,7 +123,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerTaskDetails"
-        },        
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
@@ -131,7 +131,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerBucket"
-        },        
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
@@ -139,7 +139,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
-        },        
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
@@ -147,7 +147,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerBucketTaskBoardTaskFormat"
-        },        
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
@@ -229,7 +229,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
           "Target": "plannerProgressTaskBoardTaskFormat"
-        },        
+        },
         {
           "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
           "ApiChange": "Permission",
@@ -237,7 +237,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerPlan"
-        },        
+        },
         {
           "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
           "ApiChange": "Permission",
@@ -245,7 +245,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerTask"
-        },        
+        },
         {
           "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
           "ApiChange": "Permission",
@@ -253,7 +253,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerPlanDetails"
-        },        
+        },
         {
           "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
           "ApiChange": "Permission",
@@ -261,7 +261,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerTaskDetails"
-        },        
+        },
         {
           "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
           "ApiChange": "Permission",
@@ -269,7 +269,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerBucket"
-        },        
+        },
         {
           "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
           "ApiChange": "Permission",
@@ -277,7 +277,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
-        },        
+        },
         {
           "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
           "ApiChange": "Permission",
@@ -285,7 +285,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
           "Target": "plannerBucketTaskBoardTaskFormat"
-        },        
+        },
         {
           "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
           "ApiChange": "Permission",
@@ -302,7 +302,7 @@
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
-    { 
+    {
       "ChangeList": [
         {
           "Id": "9d024c18-5aa0-11eb-93a5-6e9aaa10c0ef",
@@ -1063,7 +1063,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerFieldRules",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerFieldRules](https://learn.microsoft.com/en-us/graph/api/resources/plannerFieldRules?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerFieldRules](https://learn.microsoft.com/en-us/graph/api/resources/plannerfieldrules?view=graph-rest-beta) resource type.",
           "Target": "plannerFieldRules"
         },
         {
@@ -1071,7 +1071,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanConfiguration?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [plannerPlanConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfiguration?view=graph-rest-beta) resource and supported methods.",
           "Target": "plannerPlanConfiguration"
         },
         {
@@ -1079,7 +1079,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanConfigurationBucketDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanConfigurationBucketDefinition](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationBucketDefinition?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerPlanConfigurationBucketDefinition](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationbucketdefinition?view=graph-rest-beta) resource type.",
           "Target": "plannerPlanConfigurationBucketDefinition"
         },
         {
@@ -1087,7 +1087,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanConfigurationBucketLocalization",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanConfigurationBucketLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationBucketLocalization?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerPlanConfigurationBucketLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationbucketlocalization?view=graph-rest-beta) resource type.",
           "Target": "plannerPlanConfigurationBucketLocalization"
         },
         {
@@ -1095,7 +1095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanConfigurationLocalization",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationLocalization?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource and supported methods.",
           "Target": "plannerPlanConfigurationLocalization"
         },
         {
@@ -1103,7 +1103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPropertyRule",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerPropertyRule?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerpropertyrule?view=graph-rest-beta) resource type.",
           "Target": "plannerPropertyRule"
         },
         {
@@ -1111,7 +1111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRelationshipBasedUserType",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerRelationshipBasedUserType](https://learn.microsoft.com/en-us/graph/api/resources/plannerRelationshipBasedUserType?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerRelationshipBasedUserType](https://learn.microsoft.com/en-us/graph/api/resources/plannerrelationshipbasedusertype?view=graph-rest-beta) resource type.",
           "Target": "plannerRelationshipBasedUserType"
         },
         {
@@ -1119,7 +1119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRuleOverride",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerRuleOverride](https://learn.microsoft.com/en-us/graph/api/resources/plannerRuleOverride?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerRuleOverride](https://learn.microsoft.com/en-us/graph/api/resources/plannerruleoverride?view=graph-rest-beta) resource type.",
           "Target": "plannerRuleOverride"
         },
         {
@@ -1127,7 +1127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskConfiguration?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [plannerTaskConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskconfiguration?view=graph-rest-beta) resource and supported methods.",
           "Target": "plannerTaskConfiguration"
         },
         {
@@ -1135,7 +1135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskConfigurationRoleBase",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskConfigurationRoleBase](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskConfigurationRoleBase?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskConfigurationRoleBase](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskconfigurationrolebase?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskConfigurationRoleBase"
         },
         {
@@ -1143,7 +1143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskPolicy](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskPolicy](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskpolicy?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskPolicy"
         },
         {
@@ -1151,7 +1151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskPropertyRule",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskpropertyrule?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskPropertyRule"
         },
         {
@@ -1159,7 +1159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskRoleBasedRule",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskRoleBasedRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskRoleBasedRule?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskRoleBasedRule](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskrolebasedrule?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskRoleBasedRule"
         }
       ],
