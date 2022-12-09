@@ -43,6 +43,7 @@ The Group Policy migration report.
 |totalSettingsCount|Int32|The total number of Group Policy Settings from GPO file.|
 |supportedSettingsCount|Int32|The number of Group Policy Settings supported by Intune.|
 |supportedSettingsPercent|Int32|The Percentage of Group Policy Settings supported by Intune.|
+|roleScopeTagIds|String collection|The list of scope tags for the configuration.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -73,7 +74,10 @@ Here is a JSON representation of the resource.
   "targetedInActiveDirectory": true,
   "totalSettingsCount": 1024,
   "supportedSettingsCount": 1024,
-  "supportedSettingsPercent": 1024
+  "supportedSettingsPercent": 1024,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

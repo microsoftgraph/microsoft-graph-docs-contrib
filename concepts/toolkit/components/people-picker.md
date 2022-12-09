@@ -42,7 +42,8 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | user-filters | userFilters | Specifies the filter criteria to use when querying the users endpoint. It requires the `user-type` to be set to `user` or `contact`. By default, the `user-type` is `any` and this leads the querying to take place in the `people` endpoint block. Example: `user-filters="startsWith(displayName,'a')"`. This attribute is optional. Learn more about [the support for filter on user properties of Azure AD directory objects](/graph/aad-advanced-queries?tabs=http#user-properties).
 | group-filters | groupFilters | Specifies the filter criteria to use when querying the `groups` endpoint. It requires the `type` to be set to `group`. Example: `group-filters="startsWith(displayName,'a')"`. This attribute is optional.
 | people-filters | peopleFilters | Specifies the filter criteria to use when querying the `people` endpoint. It is used as it is. Example: `people-filters="jobTitle eq 'Web Marketing Manager'"`. This attribute is optional. Learn more about [filtering and the supported capabilities on the people resource](/graph/people-example).
-| group-ids | groupIds | A string of comma-separated group IDs. The available results should be limited to the specified groups. Users that will appear on the dropdown menu and via the search experience should only come from the specified group IDs. For example, `02bd9fd6-8f93-4758-87c3-1fb73740a315,06f62f70-9827-4e6e-93ef-8e0f2d9b7b23` will only display users belonging to these groups. When you type a search text, it will return results that match the users in the two group IDs only. This property is not used if `group-id` is defined. If the property is set, the `type` is `group` by default and `trnsitive-search` is `true` by default. If the `group-type` is set with the property, the `type` can be `any` or `group`. If the `type` is `person`, the property is not used.
+| group-ids | groupIds | A string of comma-separated group IDs. The available results should be limited to the specified groups. Users that will appear on the dropdown menu and via the search experience should only come from the specified group IDs. For example, `02bd9fd6-8f93-4758-87c3-1fb73740a315,06f62f70-9827-4e6e-93ef-8e0f2d9b7b23` will only display users belonging to these groups. When you type a search text, it will return results that match the users in the two group IDs only. This property is not used if `group-id` is defined. If the property is set, the `type` is `group` by default and `transitive-search` is `true` by default. If the `group-type` is set with the property, the `type` can be `any` or `group`. If the `type` is `person`, the property is not used.
+| aria-label | ariaLabel | A string provided to help assitive technologies provide context for the people picker.
 
 The following is a `show-max` example.
 
@@ -109,9 +110,10 @@ mgt-people-picker {
     --input-border-color--hover: #008394; /* input area border hover color */
     --input-border-color--focus: #0f78d4; /* input area border focus color */
 
-    --dropdown-background-color: #1f1f1f; /* selection area background color */
-    --dropdown-item-hover-background: #333d47; /* person background color on hover */
-    
+    --dropdown-background-color: #ca00ca; /* selection area background color */
+    --dropdown-item-hover-background: purple; /* person background color on hover */
+    --dropdown-item-text-color: white; /* person item text color */
+    --dropdown-item-text-hover-color: gold; /* person item text color on hover */
     --selected-person-background-color: #f1f1f1; /* person item background color */
     
     --color: white; /* input area border focus color */

@@ -29,11 +29,11 @@ The calling user must also be in one of the following [Azure AD roles](/azure/ac
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
-
+DELETE /devices(deviceId='{deviceId}')
 ```
 
 

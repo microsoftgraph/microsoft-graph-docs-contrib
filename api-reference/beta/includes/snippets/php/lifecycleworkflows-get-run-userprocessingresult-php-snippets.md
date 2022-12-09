@@ -9,8 +9,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
+$requestConfiguration = new UserProcessingResultRequestBuilderGetRequestConfiguration();
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->runsById('run-id')->userProcessingResultsById('userProcessingResult-id')->get();
+$queryParameters = new UserProcessingResultRequestBuilderGetQueryParameters();
+$queryParameters->select = ["id","failedTasksCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","subject"];
+
+$requestConfiguration->queryParameters = $queryParameters;
+
+
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->runsById('run-id')->userProcessingResultsById('userProcessingResult-id')->get($requestConfiguration);
 
 
 ```
