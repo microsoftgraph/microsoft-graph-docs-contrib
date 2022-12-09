@@ -199,6 +199,136 @@ $params = @{
 			}
 		}
 	)
+	MessageHistory = @(
+		@{
+			ModifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:30.489Z")
+			Actions = "reactionAdded"
+			Reaction = @{
+				ReactionType = "angry"
+				User = @{
+					Application = $null
+					Device = $null
+					User = @{
+						Id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+						DisplayName = $null
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			ModifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:32.489Z")
+			Actions = "reactionAdded"
+			Reaction = @{
+				ReactionType = "laugh"
+				User = @{
+					Application = $null
+					Device = $null
+					User = @{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						DisplayName = $null
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			ModifiedDateTime = [System.DateTime]::Parse("2018-10-21T02:17:14.67Z")
+			Actions = "reactionAdded"
+			Reaction = @{
+				ReactionType = "like"
+				User = @{
+					Application = $null
+					Device = $null
+					User = @{
+						Id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+						DisplayName = $null
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			ModifiedDateTime = [System.DateTime]::Parse("2018-10-21T02:34:40.3Z")
+			Actions = "reactionAdded"
+			Reaction = @{
+				ReactionType = "like"
+				User = @{
+					Application = $null
+					Device = $null
+					User = @{
+						Id = "4c9041b7-449a-40f7-8855-56da239b9fd1"
+						DisplayName = $null
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			ModifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:25.489Z")
+			Actions = "reactionAdded"
+			Reaction = @{
+				ReactionType = "like"
+				User = @{
+					Application = $null
+					Device = $null
+					User = @{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						DisplayName = $null
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			ModifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:31.489Z")
+			Actions = "reactionAdded"
+			Reaction = @{
+				ReactionType = "heart"
+				User = @{
+					Application = $null
+					Device = $null
+					User = @{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						DisplayName = $null
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			ModifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:33.489Z")
+			Actions = "reactionAdded"
+			Reaction = @{
+				ReactionType = "sad"
+				User = @{
+					Application = $null
+					Device = $null
+					User = @{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						DisplayName = $null
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			ModifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:34.489Z")
+			Actions = "surprised"
+			Reaction = @{
+				ReactionType = "sad"
+				User = @{
+					Application = $null
+					Device = $null
+					User = @{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						DisplayName = $null
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+	)
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params

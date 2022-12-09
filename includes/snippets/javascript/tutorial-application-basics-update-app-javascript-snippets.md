@@ -30,7 +30,7 @@ const application = {
             'https://localhost'
         ]
     },
-    appRoleAssignmentRequired: true
+    serviceManagementReference: 'Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;'
 };
 
 await client.api('/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/')

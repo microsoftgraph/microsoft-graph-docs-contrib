@@ -24,7 +24,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-09-16T22:15:23.0059399Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2640,8 +2640,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-09-05T16:22:06.9159065Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
