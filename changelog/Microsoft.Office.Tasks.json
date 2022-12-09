@@ -1071,7 +1071,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerBucketCreation",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerBucketCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerBucketCreation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerBucketCreation](https://learn.microsoft.com/en-us/graph/api/resources/plannerBucketCreation?view=graph-rest-beta) resource type.",
           "Target": "plannerBucketCreation"
         },
         {
@@ -1079,7 +1079,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerExternalBucketSource",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerExternalBucketSource](https://docs.microsoft.com/en-us/graph/api/resources/plannerExternalBucketSource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerExternalBucketSource](https://learn.microsoft.com/en-us/graph/api/resources/plannerExternalBucketSource?view=graph-rest-beta) resource type.",
           "Target": "plannerExternalBucketSource"
         },
         {
@@ -1087,7 +1087,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerExternalPlanSource",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerExternalPlanSource](https://docs.microsoft.com/en-us/graph/api/resources/plannerExternalPlanSource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerExternalPlanSource](https://learn.microsoft.com/en-us/graph/api/resources/plannerExternalPlanSource?view=graph-rest-beta) resource type.",
           "Target": "plannerExternalPlanSource"
         },
         {
@@ -1095,7 +1095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerExternalTaskSource",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerExternalTaskSource](https://docs.microsoft.com/en-us/graph/api/resources/plannerExternalTaskSource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerExternalTaskSource](https://learn.microsoft.com/en-us/graph/api/resources/plannerExternalTaskSource?view=graph-rest-beta) resource type.",
           "Target": "plannerExternalTaskSource"
         },
         {
@@ -1103,7 +1103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanCreation",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanCreation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerPlanCreation](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanCreation?view=graph-rest-beta) resource type.",
           "Target": "plannerPlanCreation"
         },
         {
@@ -1111,7 +1111,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "creationSourceKind",
           "ChangeType": "Addition",
-          "Description": "Added the `creationSourceKind` property to the [plannerTaskCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskCreation?view=graph-rest-beta) resource.",
+          "Description": "Added the `creationSourceKind` property to the [plannerTaskCreation](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCreation?view=graph-rest-beta) resource.",
           "Target": "plannerTaskCreation"
         },
         {
@@ -1119,7 +1119,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "creationSource",
           "ChangeType": "Addition",
-          "Description": "Added the `creationSource` property to the [plannerBucket](https://docs.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
+          "Description": "Added the `creationSource` property to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1127,7 +1127,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "creationSource",
           "ChangeType": "Addition",
-          "Description": "Added the `creationSource` property to the [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the `creationSource` property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],
