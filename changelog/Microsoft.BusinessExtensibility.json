@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessScenarioGroupTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioGroupTarget](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioGroupTarget?view=graph-rest-beta) resource type.",
+          "Description": "Added the [businessScenarioGroupTarget](https://learn.microsoft.com/en-us/graph/api/resources/businessscenariogrouptarget?view=graph-rest-beta) resource type.",
           "Target": "businessScenarioGroupTarget"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessScenarioPlanner",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioPlanner](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioPlanner?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [businessScenarioPlanner](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioplanner?view=graph-rest-beta) resource and supported methods.",
           "Target": "businessScenarioPlanner"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessScenarioPlanReference",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioPlanReference](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioPlanReference?view=graph-rest-beta) resource type.",
+          "Description": "Added the [businessScenarioPlanReference](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioplanreference?view=graph-rest-beta) resource type.",
           "Target": "businessScenarioPlanReference"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessScenarioProperties",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioProperties](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioProperties?view=graph-rest-beta) resource type.",
+          "Description": "Added the [businessScenarioProperties](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioproperties?view=graph-rest-beta) resource type.",
           "Target": "businessScenarioProperties"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessScenarioTask",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioTask](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioTask?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [businessScenarioTask](https://learn.microsoft.com/en-us/graph/api/resources/businessscenariotask?view=graph-rest-beta) resource and supported methods.",
           "Target": "businessScenarioTask"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessScenarioTaskTargetBase",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenarioTaskTargetBase](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioTaskTargetBase?view=graph-rest-beta) resource type.",
+          "Description": "Added the [businessScenarioTaskTargetBase](https://learn.microsoft.com/en-us/graph/api/resources/businessscenariotasktargetbase?view=graph-rest-beta) resource type.",
           "Target": "businessScenarioTaskTargetBase"
         }
       ],
