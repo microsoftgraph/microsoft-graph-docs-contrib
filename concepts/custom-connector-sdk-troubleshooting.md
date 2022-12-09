@@ -52,25 +52,25 @@ If you're using the [GraphConnectorsTemplate](https://marketplace.visualstudio.c
 
 The following are the locations of the log path depending on your use case:
 
-1. Connector not hosted as a windows service:
+1. Connector not hosted as a Windows service:
 
     ``` Path
     C:\Users\{User Account}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
     ```
 
-2. Connector hosted as a windows service under Local System account:
+2. Connector hosted as a Windows service under the local system account:
 
     ``` Path
     C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
     ```
 
-3. Connector hosted as a windows service under virtual account:
+3. Connector hosted as a Windows service under the virtual account:
 
     ``` Path
     C:\Windows\ServiceProfiles\{Network Service Name}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
     ```
 
-4. Connector hosted as a windows service under Local Service account:
+4. Connector hosted as a Windows service under the local service account:
 
     ``` Path
     C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
