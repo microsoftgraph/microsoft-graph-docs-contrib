@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessScenario",
           "ChangeType": "Addition",
-          "Description": "Added the [businessScenario](https://learn.microsoft.com/en-us/graph/api/resources/businessScenario?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [businessScenario](https://learn.microsoft.com/graph/api/resources/businessScenario?view=graph-rest-beta) resource and supported methods.",
           "Target": "businessScenario"
         },
         {
