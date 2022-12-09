@@ -26,6 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application    | Organization.ReadWrite.All |
 
+For delegated scenarios, the administrator needs the following [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global Administrator
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
