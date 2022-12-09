@@ -15110,6 +15110,12 @@ items:
             href: api/attacksimulationroot-list-simulations.md
           - name: Get
             href: api/attacksimulationroot-get-simulations.md
+          - name: Create
+            href: api/attacksimulationroot-create-simulation.md
+          - name: Update
+            href: api/attacksimulationroot-update-simulation.md
+          - name: Delete
+            href: api/attacksimulationroot-delete-simulation.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
@@ -15128,6 +15134,14 @@ items:
             href: resources/simulationautomationrun.md
           - name: List
             href: api/simulationautomation-list-runs.md
+        - name: Payload
+          items:
+          - name: List Payload
+            href: resources/payload.md
+          - name: List
+            href: api/attacksimulationroot-list-payloads.md
+          - name: Get
+            href: api/attacksimulationroot-get-payload.md
         - name: Reports
           items:
           - name: Attack simulation reports
