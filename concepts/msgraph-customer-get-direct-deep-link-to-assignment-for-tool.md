@@ -1,5 +1,5 @@
 ---
-title: "Get deep link to the assignment"
+title: "Get a deep link to an assignment"
 description: "Use Microsoft Graph to get a deep link to the assignment for reporting, communication, and automation tools."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
@@ -7,11 +7,11 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Get a deep link to the assignment
+# Get a deep link to an assignment
 
 Education institutions have custom tools for students and users who need to get a deep link to the assignment, so students can directly view more details or complete a given assignment.
 
- > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
+ > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
 ## Get classes and members information
 
@@ -26,7 +26,7 @@ After you get the relevant class and member information, you can get the assignm
 
 The [Assignment property](/graph/api/resources/educationassignment#properties) returns the authenticated deep link to the selected assignments. For Teams users, the assignments open directly.
 
-##  Get a deep link for the submission
+## Get a deep link for the submission
 
 The [submission property](/graph/api/resources/educationsubmission#properties) webURL returns the authenticated deep link to the submission.
 
