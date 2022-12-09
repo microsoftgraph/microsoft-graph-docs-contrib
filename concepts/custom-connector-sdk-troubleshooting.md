@@ -58,7 +58,7 @@ The following are the locations of the log path depending on your use case:
     C:\Users\{User Account}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
     ```
 
-2. Connector hosted as a Windows service under the local system account:
+2. Connector hosted as a Windows service under the LOCAL SYSTEM account:
 
     ``` Path
     C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
@@ -70,7 +70,7 @@ The following are the locations of the log path depending on your use case:
     C:\Windows\ServiceProfiles\{Network Service Name}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
     ```
 
-4. Connector hosted as a Windows service under the local service account:
+4. Connector hosted as a Windows service under the LOCAL SYSTEM account:
 
     ``` Path
     C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
