@@ -34,16 +34,16 @@ Inherits from [entity](../resources/entity.md).
 |description|String|Description of the attack simulation and training campaign payload.|
 |displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|deliveryPlatform|[payloadDeliveryPlatform](#payloadDeliveryPlatform-values)|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`. 
+|deliveryPlatform|[payloadDeliveryPlatform](#payloaddeliveryplatform-values)|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`. 
 |status|[simulationContentStatus](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md) Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
 |source|[simulationContentSource](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
 |attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |complexity|[payloadComplexity](#payloadComplexity-values)|Complexity of a payload.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
-|theme|[payloadTheme](#payloadTheme-values)|Theme of a payload.|
-|brand|[payloadBrand](#payloadBrand-values)|Brand of a payload.|
-|industry|[payloadIndustry](#payloadIndustry-values)|Industry of a payload.|
+|theme|[payloadTheme](#payloadtheme-values)|Theme of a payload.|
+|brand|[payloadBrand](#payloadbrand-values)|Brand of a payload.|
+|industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload.|
 |isAutomated|Boolean|Flag that represents if the attack simulation and training campaign payload was created from a automation flow. Supports `$filter` and `$orderby`. |
 |language|String|Unique identifier for the attack simulation payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targetted user.|
