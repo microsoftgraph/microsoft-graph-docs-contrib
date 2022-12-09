@@ -1,19 +1,19 @@
 ---
-title: "Get class and member information and links to assignments and submissions"
-description: "Use Microsoft Graph APIs to get a deep link to the assignments for use in custom tools"
+title: "Get links to assignments and submissions"
+description: "Use Microsoft Graph APIs to get a deep link to the assignments for use in custom tools."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Get class and member information and links to assignments and submissions
+# Get links to assignments and submissions
 
-Education institutions have custom tools for students and users who need to get a deep link to the assignment, so students can directly view more details or complete a given assignment. You can use education APIs in Microsoft Graph to get links to assignments and submissions.
+Education institutions have custom tools for students and users who need to get a deep link to the assignment, so students can directly view more details or complete a given assignment. You can use education APIs in Microsoft Graph to get links to assignments and submissions. Before you can get links to assignments and submissions, you must get the relevant class and member information.
 
  > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
-## Get relevant classes and members information required for assignments and grades
+## Get class and member information
 
 All assignments and grading information are part of a team in Microsoft Teams. You can get information about classes, members, and roles (student or teacher) in a team by using the following Teams APIs:
 
@@ -24,11 +24,11 @@ After you get the relevant class and member information, you can get the assignm
 
 ## Get a deep link for the assignment
 
-The [assignment property](/graph/api/resources/educationassignment#properties) returns the authenticated deep link to the selected assignments. For Teams users, the assignments open directly.
+The [assignment property](/graph/api/resources/educationassignment#properties) returns the authenticated deep link to selected assignments. For Teams users, the assignments open directly.
 
 ## Get a deep link for the submission
 
-The [submission webURL property](/graph/api/resources/educationsubmission#properties) returns the authenticated deep link to the submission.
+The [submission webURL property](/graph/api/resources/educationsubmission#properties) returns an authenticated deep link to a submission.
 
 ## Permissions
 
