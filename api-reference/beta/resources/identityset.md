@@ -61,7 +61,7 @@ The following is a JSON representation of the resource.
 
 ## See also 
 
-For examples about the usage of **identitySet** resources, see [call](call.md).
+For examples that show how to use **identitySet** resources, see [call](call.md).
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
