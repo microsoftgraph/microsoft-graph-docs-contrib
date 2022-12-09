@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accountTargetContent",
           "ChangeType": "Addition",
-          "Description": "Added the [accountTargetContent](https://docs.microsoft.com/en-us/graph/api/resources/accounttargetcontent?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accountTargetContent](https://review.learn.microsoft.com/en-us/graph/api/resources/accounttargetcontent?view=graph-rest-beta) resource type.",
           "Target": "accountTargetContent"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "addressBookAccountTargetContent",
           "ChangeType": "Addition",
-          "Description": "Added the [addressBookAccountTargetContent](https://docs.microsoft.com/en-us/graph/api/resources/addressbookaccounttargetcontent?view=graph-rest-beta) resource type.",
+          "Description": "Added the [addressBookAccountTargetContent](https://review.learn.microsoft.com/en-us/graph/api/resources/addressbookaccounttargetcontent?view=graph-rest-beta) resource type.",
           "Target": "addressBookAccountTargetContent"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "coachmarkLocation",
           "ChangeType": "Addition",
-          "Description": "Added the [coachmarkLocation](https://docs.microsoft.com/en-us/graph/api/resources/coachmarklocation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [coachmarkLocation](https://review.learn.microsoft.com/en-us/graph/api/resources/coachmarklocation?view=graph-rest-beta) resource type.",
           "Target": "coachmarkLocation"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailPayloadDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [emailPayloadDetail](https://docs.microsoft.com/en-us/graph/api/resources/emailpayloaddetail?view=graph-rest-beta) resource type.",
+          "Description": "Added the [emailPayloadDetail](https://review.learn.microsoft.com/en-us/graph/api/resources/emailpayloaddetail?view=graph-rest-beta) resource type.",
           "Target": "emailPayloadDetail"
         },
         {
@@ -135,7 +135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "includeAllAccountTargetContent",
           "ChangeType": "Addition",
-          "Description": "Added the [includeAllAccountTargetContent](https://docs.microsoft.com/en-us/graph/api/resources/includeallaccounttargetcontent?view=graph-rest-beta) resource type.",
+          "Description": "Added the [includeAllAccountTargetContent](https://review.learn.microsoft.com/en-us/graph/api/resources/includeallaccounttargetcontent?view=graph-rest-beta) resource type.",
           "Target": "includeAllAccountTargetContent"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "payloadCoachmark",
           "ChangeType": "Addition",
-          "Description": "Added the [payloadCoachmark](https://docs.microsoft.com/en-us/graph/api/resources/payloadcoachmark?view=graph-rest-beta) resource type.",
+          "Description": "Added the [payloadCoachmark](https://review.learn.microsoft.com/en-us/graph/api/resources/payloadcoachmark?view=graph-rest-beta) resource type.",
           "Target": "payloadCoachmark"
         },
         {
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "payloadDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [payloadDetail](https://docs.microsoft.com/en-us/graph/api/resources/payloaddetail?view=graph-rest-beta) resource type.",
+          "Description": "Added the [payloadDetail](https://review.learn.microsoft.com/en-us/graph/api/resources/payloaddetail?view=graph-rest-beta) resource type.",
           "Target": "payloadDetail"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attackSimulationOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [attackSimulationOperation](https://docs.microsoft.com/en-us/graph/api/resources/attacksimulationoperation?view=graph-rest-beta) resource",
+          "Description": "Added the [attackSimulationOperation](https://review.learn.microsoft.com/en-us/graph/api/resources/attacksimulationoperation?view=graph-rest-beta) resource",
           "Target": "attackSimulationOperation"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to the [attackSimulationRoot](https://docs.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **operations** relationship to the [attackSimulationRoot](https://review.learn.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) resource.",
           "Target": "attackSimulationRoot"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "payloads",
           "ChangeType": "Addition",
-          "Description": "Added the **payloads** relationship to the [attackSimulationRoot](https://docs.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **payloads** relationship to the [attackSimulationRoot](https://review.learn.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) resource.",
           "Target": "attackSimulationRoot"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "longRunningOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [longRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/longrunningoperation?view=graph-rest-beta) resource",
+          "Description": "Added the [longRunningOperation](https://review.learn.microsoft.com/en-us/graph/api/resources/longrunningoperation?view=graph-rest-beta) resource",
           "Target": "longRunningOperation"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "payload",
           "ChangeType": "Addition",
-          "Description": "Added the [payload](https://docs.microsoft.com/en-us/graph/api/resources/payload?view=graph-rest-beta) resource",
+          "Description": "Added the [payload](https://review.learn.microsoft.com/en-us/graph/api/resources/payload?view=graph-rest-beta) resource",
           "Target": "payload"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "durationInDays",
           "ChangeType": "Addition",
-          "Description": "Added the `durationInDays` property to the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Added the `durationInDays` property to the [simulation](https://review.learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "excludedAccountTarget",
           "ChangeType": "Addition",
-          "Description": "Added the `excludedAccountTarget` property to the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Added the `excludedAccountTarget` property to the [simulation](https://review.learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "includedAccountTarget",
           "ChangeType": "Addition",
-          "Description": "Added the `includedAccountTarget` property to the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Added the `includedAccountTarget` property to the [simulation](https://review.learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -507,7 +507,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationRepeatOffenders",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationRepeatOffenders](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationRepeatOffenders](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-attackSimulationRepeatOffenders?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
           "Target": "securityReportRoot"
         },
         {
@@ -515,7 +515,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-attackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
           "Target": "securityReportRoot"
         },
         {
@@ -523,7 +523,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityReportRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-attackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityReportRoot?view=graph-rest-beta) resource.",
           "Target": "securityReportRoot"
         },
         {
