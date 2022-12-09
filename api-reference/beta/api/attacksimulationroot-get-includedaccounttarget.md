@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [accountTargetContent](../resources/accountTargetContent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [accountTargetContent](../resources/accounttargetcontent.md) object in the response body.
 
 ## Examples
 
