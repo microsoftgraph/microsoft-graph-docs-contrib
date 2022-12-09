@@ -2181,7 +2181,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 None.
 
 ### Remarks
-_Tasks_ permissions are used to control access for To Do tasks and Outlook tasks(deprecated). Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
+_Tasks_ permissions are used to control access for To Do tasks, Planner tasks and Outlook tasks(deprecated).
 
 _Shared_ permissions are currently only supported for work or school accounts. Even with _Shared_ permissions, reads and writes may fail if the user who owns the shared content has not granted the accessing user permissions to modify content within the folder.
 
