@@ -88,7 +88,7 @@ Content-Type: application/json
   "percentComplete": 20,
   "priority": 1,
   "businessScenarioProperties": {
-    "externalObjectVersion": "000003",
+    "externalObjectVersion": "000003"
   }
 }
 ```

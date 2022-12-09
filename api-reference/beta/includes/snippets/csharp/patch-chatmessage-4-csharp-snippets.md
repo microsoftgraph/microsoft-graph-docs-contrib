@@ -187,6 +187,169 @@ var chatMessage = new ChatMessage
 				}
 			}
 		}
+	},
+	MessageHistory = new List<ChatMessageHistoryItem>()
+	{
+		new ChatMessageHistoryItem
+		{
+			ModifiedDateTime = DateTimeOffset.Parse("2018-10-21T08:10:30.489Z"),
+			Actions = ChatMessageActions.ReactionAdded,
+			Reaction = new ChatMessageReaction
+			{
+				ReactionType = "angry",
+				User = new ChatMessageReactionIdentitySet
+				{
+					Application = null,
+					Device = null,
+					User = new Identity
+					{
+						Id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+						DisplayName = null,
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		},
+		new ChatMessageHistoryItem
+		{
+			ModifiedDateTime = DateTimeOffset.Parse("2018-10-21T08:10:32.489Z"),
+			Actions = ChatMessageActions.ReactionAdded,
+			Reaction = new ChatMessageReaction
+			{
+				ReactionType = "laugh",
+				User = new ChatMessageReactionIdentitySet
+				{
+					Application = null,
+					Device = null,
+					User = new Identity
+					{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+						DisplayName = null,
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		},
+		new ChatMessageHistoryItem
+		{
+			ModifiedDateTime = DateTimeOffset.Parse("2018-10-21T02:17:14.67Z"),
+			Actions = ChatMessageActions.ReactionAdded,
+			Reaction = new ChatMessageReaction
+			{
+				ReactionType = "like",
+				User = new ChatMessageReactionIdentitySet
+				{
+					Application = null,
+					Device = null,
+					User = new Identity
+					{
+						Id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+						DisplayName = null,
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		},
+		new ChatMessageHistoryItem
+		{
+			ModifiedDateTime = DateTimeOffset.Parse("2018-10-21T02:34:40.3Z"),
+			Actions = ChatMessageActions.ReactionAdded,
+			Reaction = new ChatMessageReaction
+			{
+				ReactionType = "like",
+				User = new ChatMessageReactionIdentitySet
+				{
+					Application = null,
+					Device = null,
+					User = new Identity
+					{
+						Id = "4c9041b7-449a-40f7-8855-56da239b9fd1",
+						DisplayName = null,
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		},
+		new ChatMessageHistoryItem
+		{
+			ModifiedDateTime = DateTimeOffset.Parse("2018-10-21T08:10:25.489Z"),
+			Actions = ChatMessageActions.ReactionAdded,
+			Reaction = new ChatMessageReaction
+			{
+				ReactionType = "like",
+				User = new ChatMessageReactionIdentitySet
+				{
+					Application = null,
+					Device = null,
+					User = new Identity
+					{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+						DisplayName = null,
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		},
+		new ChatMessageHistoryItem
+		{
+			ModifiedDateTime = DateTimeOffset.Parse("2018-10-21T08:10:31.489Z"),
+			Actions = ChatMessageActions.ReactionAdded,
+			Reaction = new ChatMessageReaction
+			{
+				ReactionType = "heart",
+				User = new ChatMessageReactionIdentitySet
+				{
+					Application = null,
+					Device = null,
+					User = new Identity
+					{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+						DisplayName = null,
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		},
+		new ChatMessageHistoryItem
+		{
+			ModifiedDateTime = DateTimeOffset.Parse("2018-10-21T08:10:33.489Z"),
+			Actions = ChatMessageActions.ReactionAdded,
+			Reaction = new ChatMessageReaction
+			{
+				ReactionType = "sad",
+				User = new ChatMessageReactionIdentitySet
+				{
+					Application = null,
+					Device = null,
+					User = new Identity
+					{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+						DisplayName = null,
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		},
+		new ChatMessageHistoryItem
+		{
+			ModifiedDateTime = DateTimeOffset.Parse("2018-10-21T08:10:34.489Z"),
+			Actions = ChatMessageActions.ReactionAdded,
+			Reaction = new ChatMessageReaction
+			{
+				ReactionType = "sad",
+				User = new ChatMessageReactionIdentitySet
+				{
+					Application = null,
+					Device = null,
+					User = new Identity
+					{
+						Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+						DisplayName = null,
+						UserIdentityType = "aadUser"
+					}
+				}
+			}
+		}
 	}
 };
 
