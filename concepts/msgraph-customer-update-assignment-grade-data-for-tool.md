@@ -1,5 +1,5 @@
 ---
-title: "Update data in assignments and grades"
+title: "Update assignment and grade data"
 description: "Use Microsoft Graph APIs to update assignment and grade data for use in custom tools."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
@@ -7,9 +7,11 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Update data in assignments and grades
+# Update assignment and grade data
 
-Education institutions have custom tools to update assignment and grade data. For example, a user might need to create an assignment or update a grade (outcome) with a custom tool for students to submit them. You can use education APIs in Microsoft Graph to update assignments and grades. Before you can update data, you must get the relevant class and member information.
+Education institutions have custom tools to update assignment and grade data. For example, a user might need to create an assignment or update a grade (outcome) with a custom tool for students to submit them. You can use education APIs in Microsoft Graph to update assignments and grades. 
+
+Before you can update data, you must get the relevant class and member information.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
@@ -22,7 +24,7 @@ All the assignments and grading information are part of the team in Microsoft Te
 
 After you get the relevant class and member information, you can get the assignment and grade information you need.
 
-## Get class assignment information
+## Get assignment and submission information
 
 All assignment and student information is linked to class and submission information, respectively. The following APIs retrieve information about class assignments and submissions:
 
