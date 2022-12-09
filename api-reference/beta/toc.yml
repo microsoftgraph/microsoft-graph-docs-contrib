@@ -15933,8 +15933,16 @@ items:
           items:
           - name: Business scenario
             href: resources/businessscenario.md
+          - name: Create
+            href: api/solutionsroot-post-businessscenarios.md
+          - name: Delete
+            href: api/solutionsroot-delete-businessscenarios.md
+          - name: Get
+            href: api/businessscenario-get.md
           - name: List
             href: api/solutionsroot-list-businessscenarios.md
+          - name: Update
+            href: api/businessscenario-update.md
         - name: Business scenario in Planner
           items:
           - name: Business scenario Planner
@@ -15947,18 +15955,42 @@ items:
             href: resources/plannerplanconfiguration.md
           - name: Get
             href: api/plannerplanconfiguration-get.md
+          - name: Update
+            href: api/plannerplanconfiguration-update.md
+        - name: Plan configuration localization in business scenario
+          items:
+          - name: Plan configuration localization
+            href: resources/plannerplanconfigurationlocalization.md
+          - name: Create
+            href: api/plannerplanconfiguration-post-localizations.md
+          - name: Delete
+            href: api/plannerplanconfiguration-delete-localizations.md
+          - name: Get
+            href: api/plannerplanconfigurationlocalization-get.md
+          - name: List
+            href: api/plannerplanconfiguration-list-localizations.md
+          - name: Update
+            href: api/plannerplanconfigurationlocalization-update.md
         - name: Task configuration in business scenario
           items:
           - name: Task configuration
             href: resources/plannertaskconfiguration.md
           - name: Get
             href: api/plannertaskconfiguration-get.md
+          - name: Update
+            href: api/plannertaskconfiguration-update.md
         - name: Task in business scenario
           items:
           - name: Business scenario task
             href: resources/businessscenariotask.md
+          - name: Create
+            href: api/businessscenarioplanner-post-tasks.md
+          - name: Delete
+            href: api/businessscenarioplanner-delete-tasks.md
           - name: List
             href: api/businessscenarioplanner-list-tasks.md
+          - name: Update
+            href: api/businessscenariotask-update.md
       - name: Get delta
         href: api/planneruser-list-delta.md
       - name: Plan details
