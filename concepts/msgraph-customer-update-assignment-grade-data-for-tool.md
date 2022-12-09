@@ -1,6 +1,6 @@
 ---
 title: "Update data in assignments and grades"
-description: "Use Microsoft Graph to update data in assignments and grades for reporting, communication, and automation tools."
+description: "Use Microsoft Graph APIs to update assignments and grades data for use in custom tools"
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
@@ -13,7 +13,7 @@ Education institutions have custom tools to update assignments and grading data.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
-## Get classes and members information
+## Get classes and members information required for assignments and grades
 
 All the assignments and grading information are part of the team in Microsoft Teams. You can get information about classes, members, and roles (student or teacher) in a team by using the following Teams APIs:
 
@@ -26,8 +26,12 @@ After you get the relevant class and member information, you can get the assignm
 
 All assignments and students' information are linked to class and submission information respectively. The following APIs retrieve information about class assignments:
 
-- [educationAssignment resource type](/graph/api/resources/educationassignment): Lists all data for assignments in a class.
+- [educationAssignment resource type](/graph/api/resources/educationassignment): Lists all the methods available for assignments in a class.
 - [educationSubmission resource type](/graph/api/resources/educationsubmission): A `submissionId` is created for every student for whom an assignment is published. You can use this API to get the submission status - for example, whether it was turned in and graded, ([resources](/graph/api/educationsubmissionresource-get)) submitted by the student, and the grade ([outcome](/graph/api/resources/educationoutcome)) for the submission.
+
+## Update the points outcome data
+
+Outcome will get recalculated based on the changes in the property values. Use [update a points outcome](/graph/api/educationoutcome-update?#example-2-update-a-points-outcome) to update the student points outcome data.
 
 ## Permissions
 
