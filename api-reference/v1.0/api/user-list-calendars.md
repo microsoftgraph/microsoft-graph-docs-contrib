@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
 |Delegated (personal Microsoft account) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
+|Application | Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

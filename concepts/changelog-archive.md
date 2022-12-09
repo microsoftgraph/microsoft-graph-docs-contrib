@@ -1230,7 +1230,7 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 |:---|:---|:---|
 |Change | beta |Updated the behavior of the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](/graph/api/resources/serviceprincipal.md) to return the roles as documented. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.|
 | Addition | beta | Added the new entity type [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true). |
-|Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
+|Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-overview.md#limited-information-returned-for-inaccessible-member-objects).|
 
 ### Security
 
@@ -4789,15 +4789,15 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#3-schema-extensions).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md) |
-| Addition        | Beta        | Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility-overview.md#3-schema-extensions) for details. |
+| Addition        | Beta        | Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#schema-extensions).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md) |
+| Addition        | Beta        | Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility-overview.md#schema-extensions) for details. |
 
 ### Extensions | Open extensions
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Change          | v1.0 and beta | Renamed former "Office 365 data extensions" as "open extensions". |
-| Addition        | Beta          | Added resources that support [open extensions](extensibility-overview.md#4-open-extensions): <br/>administrative unit<br/>device<br/>group<br/>organization<br/>user<br/>See the following example:<br/>[Add custom data to users using open extensions (preview)](extensibility-open-users.md) |
+| Addition        | Beta          | Added resources that support [open extensions](extensibility-overview.md#open-extensions): <br/>administrative unit<br/>device<br/>group<br/>organization<br/>user<br/>See the following example:<br/>[Add custom data to users using open extensions (preview)](extensibility-open-users.md) |
 
 ### Identity and access
 
