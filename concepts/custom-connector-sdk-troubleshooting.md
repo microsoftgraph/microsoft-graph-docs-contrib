@@ -50,27 +50,27 @@ If the error code is **Unknown**, there's likely an unhandled exception in your 
 
 If you're using the [GraphConnectorsTemplate](https://marketplace.visualstudio.com/items?itemName=ms-graph-connectors.graphConnectors) to develop your custom connector, the **AppData** folder of the current user account is used to store logs by default. You can also provide an absolute path for storing logs in the **ConnectorServer.cs** file of the template. The user account should have access to the absolute path you've provided.
 
-The following are the locations of the log path depending on your use case:
+The following are the locations of the log path, depending on your use case:
 
-1. Connector not hosted as a Windows service:
+- Connector not hosted as a Windows service:
 
     ``` Path
     C:\Users\{User Account}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
     ```
 
-2. Connector hosted as a Windows service under the LOCAL SYSTEM account:
+- Connector hosted as a Windows service under the LOCAL SYSTEM account:
 
     ``` Path
     C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
     ```
 
-3. Connector hosted as a Windows service under the virtual account:
+- Connector hosted as a Windows service under the virtual account:
 
     ``` Path
     C:\Windows\ServiceProfiles\{Network Service Name}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
     ```
 
-4. Connector hosted as a Windows service under the LOCAL SYSTEM account:
+- Connector hosted as a Windows service under the LOCAL SYSTEM account:
 
     ``` Path
     C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
