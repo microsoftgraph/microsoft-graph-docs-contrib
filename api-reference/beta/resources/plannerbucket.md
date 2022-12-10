@@ -32,6 +32,7 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 |id|String| Read-only. ID of the bucket. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |name|String|Name of the bucket.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|creationSource|[plannerBucketCreation](plannerbucketcreation.md)|  Contains information about the origin of the bucket.|
 |planId|String|Plan ID to which the bucket belongs.|
 
 ## Relationships
@@ -57,6 +58,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "name": "String",
   "orderHint": "String",
+  "creationSource": {"@odata.type": "#microsoft.graph.plannerBucketCreation"},
   "planId": "String"
 }
 ```
