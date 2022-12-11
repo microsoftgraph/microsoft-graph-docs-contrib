@@ -687,6 +687,24 @@
       "CreatedDateTime": "2022-11-07T04:11:04.628137Z",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6380cd6b-1d32-49c3-a9ff-9f9a89edc00d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "QnA.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `QnA.Read.All` to access [qna](https://learn.microsoft.com/en-us/graph/search-concept-qna)",
+          "Target": "qna"
+        }
+      ],
+      "Id": "65c699bb-49cf-4a9d-bee0-7e2950d966a4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-30T04:12:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
