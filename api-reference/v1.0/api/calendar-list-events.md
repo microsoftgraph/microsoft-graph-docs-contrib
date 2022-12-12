@@ -16,6 +16,13 @@ Retrieve a list of events in a calendar.  The calendar can be one for a [user](.
 To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
 [get the instances of an event](event-list-instances.md).
 
+#### NOTE
+If your target mailbox calendar contains any **Private** items, then the caller of this API request must either:  
+  * Be granted with `FullAccess` mailbox permissions over the target mailbox (which can be achieved through the [Add-MailboxPermission](https://learn.microsoft.com/en-us/powershell/module/exchange/add-mailboxpermission?view=exchange-ps) cmdlet).  
+  * Be granted with the `Delegate` + `CanViewPrivateItems` flags (similar to the previous option, but through the [Add-MailboxFolderPermission](https://learn.microsoft.com/en-us/powershell/module/exchange/add-mailboxfolderpermission?view=exchange-ps) cmdlet) - which has the side effect of routing all meeting requests to the delegate mailbox (refer to the linked article's note under the `SharingPermissionFlags` parameter description for a workaround).  
+
+Failure to meet these conditions will result in a `"The specified object was not found in the store."` response.
+
 ## Permissions
 Depending on the type of calendar that the events are in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
