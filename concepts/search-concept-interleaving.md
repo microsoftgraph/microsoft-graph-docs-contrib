@@ -49,9 +49,9 @@ Content-Type: application/json
       "query": {
         "queryString": "contoso"
       },
-      "contentSource":[
+      "contentSources":[
         "/external/connections/*"
-      ]
+      ],
       "from": 0,
       "size": 25
     }
