@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Third-Party Software OATH Authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
+Represents the authentication policy for a third-party software OATH authentication method. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 
 ## Methods
