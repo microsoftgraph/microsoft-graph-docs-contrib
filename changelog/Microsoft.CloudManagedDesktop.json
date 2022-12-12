@@ -74,7 +74,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getDailyAggregatedRemoteConnectionReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getDailyAggregatedRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getDailyAggregatedRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getdailyaggregatedremoteconnectionreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -82,7 +82,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getRemoteConnectionHistoricalReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getRemoteConnectionHistoricalReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getRemoteConnectionHistoricalReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getremoteconnectionhistoricalreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -90,7 +90,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getTotalAggregatedRemoteConnectionReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getTotalAggregatedRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getTotalAggregatedRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-gettotalaggregatedremoteconnectionreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -98,7 +98,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getRealTimeRemoteConnectionLatency",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getRealTimeRemoteConnectionLatency](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getRealTimeRemoteConnectionLatency](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getrealtimeremoteconnectionlatency?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -106,7 +106,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getRealTimeRemoteConnectionStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getRealTimeRemoteConnectionStatus](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getRealTimeRemoteConnectionStatus](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getrealtimeremoteconnectionstatus?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 }
             ],
@@ -642,7 +642,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "bulkSetCloudPcReviewStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bulkSetCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [bulkSetCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -650,7 +650,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "setCloudPcReviewStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the [setCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [setCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -658,7 +658,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getCloudPcReviewStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 }
             ],
@@ -700,7 +700,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "bulkRestoreCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bulkRestoreCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [bulkRestoreCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -708,7 +708,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "restoreCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [restoreCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [restoreCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 }
             ],
@@ -2502,7 +2502,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getCloudPcConnectivityHistory",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getCloudPcConnectivityHistory](https://learn.microsoft.com/en-us/graph/api/cloudPC-getCloudPcConnectivityHistory?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getCloudPcConnectivityHistory](https://learn.microsoft.com/en-us/graph/api/cloudPC-getCloudPcConnectivityHistory?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 }
             ],
