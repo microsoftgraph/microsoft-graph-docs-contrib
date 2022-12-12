@@ -18,9 +18,9 @@ A collection of users or groups enabled to use phone call authentication via the
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Object ID of an Azure AD user or group.|
+|id|String|Object ID of an Azure AD group.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. **Not supported**.|
-|targetType|authenticationMethodTargetType|The possible values are: `user`, `group`, and `unknownFutureValue`. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|
+|targetType|authenticationMethodTargetType|The possible values are: `group`, and `unknownFutureValue`. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|
 
 ## Relationships
 None.
