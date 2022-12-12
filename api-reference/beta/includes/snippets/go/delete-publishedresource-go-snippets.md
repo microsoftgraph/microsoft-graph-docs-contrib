@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResourcesById("publishedResource-id").AgentGroupsById("onPremisesAgentGroup-id").$ref().Delete()
+graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResourcesById("publishedResource-id").AgentGroupsById("onPremisesAgentGroup-id").$ref().Delete(context.Background(), nil)
 
 
 ```

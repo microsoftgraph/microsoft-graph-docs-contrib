@@ -2,7 +2,7 @@
 title: "user: changePassword"
 description: "Update your own password."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: apiPageType
 ---

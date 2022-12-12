@@ -14,7 +14,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").Fields().Patch(requestBody)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").Fields().Patch(context.Background(), requestBody, nil)
 
 
 ```

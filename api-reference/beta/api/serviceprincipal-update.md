@@ -28,9 +28,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /servicePrincipals/{id}
+PATCH /servicePrincipals(appId='{appId}')
 ```
 ## Request headers
 | Name       | Description|

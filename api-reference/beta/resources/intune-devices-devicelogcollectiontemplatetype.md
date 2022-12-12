@@ -25,3 +25,4 @@ Enum for the template type used for collecting logs
 
 
 
+

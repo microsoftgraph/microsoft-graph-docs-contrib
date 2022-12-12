@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
+This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.ReadBasic.All*, Chat.Read.All*, Chat.ReadWrite.All* |
 
-\* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`
+> **Note**: \* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`.
 
 ## HTTP request
 

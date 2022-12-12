@@ -14,7 +14,7 @@ $requestBody->setAccountEnabled(false);
 
 
 
-$graphServiceClient->devicesById('device-id')->patch($requestBody);
+$requestResult = $graphServiceClient->devicesById('device-id')->patch($requestBody);
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReferenceCreate()
 "@odata.id" := "https://graph.microsoft.com/beta/groups/{id}"
 requestBody.Set"@odata.id"(&"@odata.id") 
 
-graphClient.Print().SharesById("printerShare-id").AllowedGroups().$ref().Post(requestBody)
+graphClient.Print().SharesById("printerShare-id").AllowedGroups().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Magnate school for the arts. Los Angeles School District"
 requestBody.SetDescription(&description) 
 
-graphClient.Education().SchoolsById("educationSchool-id").Patch(requestBody)
+result, err := graphClient.Education().SchoolsById("educationSchool-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ userIds := []string {
 }
 requestBody.SetUserIds(userIds)
 
-graphClient.RiskyUsers().ConfirmCompromised().Post(requestBody)
+graphClient.RiskyUsers().ConfirmCompromised().Post(context.Background(), requestBody, nil)
 
 
 ```

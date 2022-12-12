@@ -3,7 +3,7 @@ title: "tenantTag: unassignTag"
 description: "Un-assigns the tenant tag from the specified managed tenants."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
