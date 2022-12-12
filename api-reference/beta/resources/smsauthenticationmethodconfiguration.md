@@ -24,7 +24,7 @@ Represents a Text Message authentication methods policy. Authentication methods 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|A collection of users or groups of users that are excluded from a policy.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from a policy.|
 |id|String|The authentication method policy identifier.|
 |state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
