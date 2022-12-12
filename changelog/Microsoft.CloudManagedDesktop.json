@@ -2617,6 +2617,10 @@
             "CreatedDateTime": "2022-11-16T04:14:41.3434956Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Directory management"
+        },
+        {
+            "ChangeList": [
+              {
                 "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
                 "ApiChange": "Method",
                 "ChangedApiName": "retryPartnerAgentInstallation",
