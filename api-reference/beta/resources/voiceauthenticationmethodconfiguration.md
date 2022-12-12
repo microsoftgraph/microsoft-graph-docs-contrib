@@ -30,7 +30,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from a policy.|
 |id|String|The authentication method policy identifier.|
-|isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`|
+|isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`. |
 |state|authenticationMethodState|Represents whether users can register this authentication method. The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
