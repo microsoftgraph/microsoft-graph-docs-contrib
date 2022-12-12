@@ -617,32 +617,6 @@
       "CreatedDateTime": "2022-07-18T11:01:30.771Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "40F51709-9B6A-4FDC-A26B-607490582F84",
-          "ApiChange": "Resource",
-          "ChangedApiName": "channelSummary",
-          "ChangeType": "Addition",
-          "Description": "Added the [channelSummary](https://docs.microsoft.com/en-us/graph/api/resources/channelSummary?view=graph-rest-beta) resource type.",
-          "Target": "channelSummary"
-        },
-        {
-          "Id": "40F51709-9B6A-4FDC-A26B-607490582F84",
-          "ApiChange": "Property",
-          "ChangedApiName": "summary",
-          "ChangeType": "Addition",
-          "Description": "Added the **summary** property to [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
-          "Target": "channel"
-        }
-      ],
-      "Id": "40F51709-9B6A-4FDC-A26B-607490582F84",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2022-11-10T20:18:40.595Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
     }
   ]
 }
