@@ -1,6 +1,6 @@
 ---
 title: "voiceAuthenticationMethodConfiguration resource type"
-description: "Represents a Phone Call authenticaiton methods policy"
+description: "Represents a voice call authenticaiton methods policy"
 author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Voice Call authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
+Represents a voice call authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
