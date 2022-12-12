@@ -20,6 +20,8 @@ Contains the information to connect a [cloudPC](../resources/cloudpc.md).
 |:---|:---|:---|
 |cloudPcId|String|The unique identifier of the Cloud PC.|
 |cloudPcLaunchUrl|String|The connect URL of the Cloud PC.|
+|windows365SwitchCompatible|Boolean|Whether Cloud PC support switch.|
+|windows365SwitchNotCompatibleReason|String|The reason Cloud PC does not support switch.|
 
 ## Relationships
 None.
@@ -35,7 +37,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcLaunchInfo",
   "cloudPcId": "String",
-  "cloudPcLaunchUrl": "String"
+  "cloudPcLaunchUrl": "String",
+  "windows365SwitchCompatible":"Boolean",
+  "windows365SwitchNotCompatibleReason":"String"
 }
 ```
 

@@ -261,6 +261,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "cd4e114e-6354-438a-bde7-b92378954f0c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "windows365SwitchCompatible",
+                    "ChangeType":"Addition",
+                    "Description": "Add the **windows365SwitchCompatible** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta) resource.",
+                    "Target": "cloudPc"
+                },
+                {
+                    "Id": "cd4e114e-6354-438a-bde7-b92378954f0c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "windows365SwitchNotCompatibleReason",
+                    "ChangeType":"Addition",
+                    "Description": "Add the **windows365SwitchNotCompatibleReason** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta) resource.",
+                    "Target": "cloudPc"
+                }
+            ],
+            "Id": "cd4e114e-6354-438a-bde7-b92378954f0c",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-12-12T08:39:57.8868626Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
                     "ApiChange": "Enumeration",
                     "ChangedApiName": "cloudPcExportJobStatus",
