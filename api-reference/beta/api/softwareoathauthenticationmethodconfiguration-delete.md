@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove changes made to the [Third-Party Software Oath authentication method policy](../resources/softwareoathauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
+Revert the [third-party software Oath authentication method policy](../resources/softwareoathauthenticationmethodconfiguration.md) to its default configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
