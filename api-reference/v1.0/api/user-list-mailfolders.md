@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 This example includes a **mailSearchFolder** object in the response. The mail search folder is a child folder under the Inbox with the display name "Weekly digests".
 
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,8 +100,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 
 ---
 
-##### Response
-Here is an example of the response which includes a **mailSearchFolder** that is a child folder under the Inbox. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+The following is an example of the response which includes a **mailSearchFolder** that is a child folder under the Inbox. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -249,7 +249,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 
 
 #### Response
-Here is an example of the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here is shortened for readability, and doesn't include all the default folders in a user mailbox.
 <!-- {
