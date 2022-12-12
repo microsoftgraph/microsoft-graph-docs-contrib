@@ -39,9 +39,6 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/voice
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 |Name|Description|
 |:---|:---|
