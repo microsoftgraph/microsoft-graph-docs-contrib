@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove changes made to the [Phone Call authentication method policy](../resources/voiceauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
+Revert the [phone call authentication method policy](../resources/voiceauthenticationmethodconfiguration.md) b to its default configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
