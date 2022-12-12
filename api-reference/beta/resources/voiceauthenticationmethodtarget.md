@@ -1,6 +1,6 @@
 ---
 title: "voiceAuthenticationMethodTarget resource type"
-description: "A collection of users or groups enabled to use Phone Call authentication methods policy."
+description: "A collection of users or groups enabled to use phone call authentication method via policy."
 author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
