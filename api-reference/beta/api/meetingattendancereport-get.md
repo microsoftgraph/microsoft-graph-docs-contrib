@@ -56,6 +56,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 >
 >- The `/meetingAttendanceReport` path is deprecated. Going forward, use the `/attendanceReports` path to retrieve attendance reports for an online meeting.
 >- The `/meetingAttendanceReport` path will remain in beta for backward compatibility. However, to get the same response, you need to add the `expand` query option. For details, see the [Optional query parameters](#optional-query-parameters) section.
+>- The **attendanceRecords** currently does not contain the **attendanceInterval** from a breakout room.
 
 ## Optional query parameters
 
