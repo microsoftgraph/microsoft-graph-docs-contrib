@@ -19,13 +19,13 @@ By default, this operation does not return the **key** property that represents 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
->**Note:** For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from: 
+>**Note:** For delegated permissions to allow apps to get **bitLockerRecoveryKey** resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from: 
 * Global administrator
 * Cloud device administrator
 * Helpdesk administrator
@@ -54,7 +54,7 @@ GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$sel
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameter to return the **key** property. For details, see [Example 2](#example-2). For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to return the **key** property. For details, see [Example 2](#example-2-get-the-bitlocker-key-with-the-key-property-by-specifying-the-key-id). For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -74,11 +74,10 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 
 ## Examples
 
-### Example 1
-Get the BitLocker key by specifying the **key id**. This example does not return the **key** property.
+### Example 1: Get the BitLocker key by specifying the key **id**
 
 #### Request
-The following is an example of the request.
+The following is an example of the request. This example does not return the **key** property.
 
 <!-- {
   "blockType": "request",
@@ -98,7 +97,7 @@ ocp-client-version: "1.2"
 #### Response
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -120,8 +119,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2
-Get the BitLocker key with the **key** property by specifying the **key id**.
+### Example 2: Get the BitLocker key with the **key** property by specifying the key **id**
 
 #### Request
 The following is an example of the request.
@@ -144,7 +142,7 @@ ocp-client-version: "1.2"
 #### Response
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
