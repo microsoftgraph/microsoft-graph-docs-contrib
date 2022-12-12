@@ -1,6 +1,6 @@
 ---
 title: "voiceAuthenticationMethodTarget resource type"
-description: "A collection of users or groups enabled to use phone call authentication method via policy."
+description: "A collection of users or groups enabled to use voice call authentication method via policy."
 author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of users or groups enabled to use phone call authentication via the [phone call authentication methods policy](../resources/voiceAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of users or groups enabled to use voice call authentication via the [voice call authentication methods policy](../resources/voiceAuthenticationMethodConfiguration.md) in Azure AD.
 
 ## Properties
 |Property|Type|Description|

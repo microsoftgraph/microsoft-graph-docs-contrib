@@ -19,7 +19,7 @@ A collection of users or groups enabled to use [Text Message authentication meth
 |:---|:---|:---|
 |id|String|Object ID of an Azure AD user or group.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. **Not supported**.|
-|isUsableForSignIn|Boolean|Determines if the users or groups can use this authentication method to sign in to Azure AD. The value is always `true`.|
+|isUsableForSignIn|Boolean|Determines if users can use this authentication method to sign in to Azure AD. `true` if users can use this method for primary authentication, otherwise `false`.|
 |targetType|authenticationMethodTargetType|The possible values are: `user`, `group`, and `unknownFutureValue`. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|
 
 ## Relationships

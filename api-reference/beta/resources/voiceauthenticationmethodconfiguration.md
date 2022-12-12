@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Phone Call authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
+Represents a Voice Call authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
