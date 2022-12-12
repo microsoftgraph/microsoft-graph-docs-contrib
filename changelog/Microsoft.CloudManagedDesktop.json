@@ -786,7 +786,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcForensicStorageAccount",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcForensicStorageAccount]((https://learn.microsoft.com/en-us/graph/api/resources/cloudpcforensicstorageaccount?view=graph-rest-beta) resource.",
+                    "Description": "Added the [cloudPcForensicStorageAccount](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcforensicstorageaccount?view=graph-rest-beta) resource.",
                     "Target": "cloudPcForensicStorageAccount"
                 },
                 {
@@ -2608,7 +2608,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "retryPartnerAgentInstallation",
                 "ChangeType": "Addition",
-                "Description": "Added the [retryPartnerAgentInstallation](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta) method to the [cloudPC](https://review.learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                "Description": "Added the [retryPartnerAgentInstallation](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                 "Target": "cloudPC"
               },
               {
