@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of users or groups enabled to use [Phone call authentication methods policy](../resources/voiceAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of users or groups enabled to use phone call authentication via the [phone call authentication methods policy](../resources/voiceAuthenticationMethodConfiguration.md) in Azure AD.
 
 ## Properties
 |Property|Type|Description|
