@@ -22,7 +22,7 @@ Try the new [Microsoft Graph Python SDK (preview)](https://devblogs.microsoft.co
 - A new authentication provider that automatically refreshes access tokens.
 - A built-in retry handler that understands response status codes.
 - A fluent request building pattern to improve efficiency and discoverability.
-- Type annotations, both sync and async experiences and HTTP2 support.
+- Type annotations, both synchronous and asynchronous experiences and HTTP2 support.
 
 To get started, see:
 - [README](https://github.com/microsoftgraph/msgraph-sdk-python#readme)
