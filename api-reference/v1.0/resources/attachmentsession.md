@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a resource that uploads large attachments to a [todoTask](../resources/todotask.md).
 
 Inherits from [entity](../resources/entity.md).

@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Delete taskFileAttachment
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a [taskFileAttachment](../resources/taskfileattachment.md) object from a [todoTask](../resources/todotask.md) resource.
 
 ## Permissions

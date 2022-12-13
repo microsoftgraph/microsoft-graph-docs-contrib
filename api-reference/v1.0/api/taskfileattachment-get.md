@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get taskFileAttachment
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.
 
 ## Permissions

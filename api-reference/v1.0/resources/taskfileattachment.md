@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a file, such as a text file or Word document, attached to a [todoTask](../resources/todotask.md).
 When you create a file attachment on a task, include `"@odata.type": "#microsoft.graph.taskFileAttachment"` and the properties **name** and **contentBytes**.
 
