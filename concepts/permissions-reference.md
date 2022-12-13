@@ -993,6 +993,39 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_EntitlementManagement.ReadWrite.All_|Read and write entitlement management resources|Allows the app to read and manage access packages and related entitlement management resources.|Yes|
 |_EntitlementManagement.Read.All_|Read entitlement management resources|Allows the app to read access packages and related entitlement management resources.|Yes|
 
+## External user profile permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ExternalUserProfile.Read.All_ |   Read external user profile information  | Allows the application to read external user profiles in your Azure AD tenant on behalf of the signed-in user. | Yes | No |
+| _ExternalUserProfile.ReadWrite.All_ |   Read or write external user profile information  | Allows the application to read or write external user profiles in your Azure AD tenant on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ExternalUserProfile.Read.All_ |   Read external user profile information  | Allows the application to read external user profiles in your Azure AD tenant, without a signed-in user. | Yes | No |
+| _ExternalUserProfile.ReadWrite.All_ |   Read or write external user profile information  | Allows the application to read or write external user profiles in your Azure AD tenant, without a signed-in user. | Yes | No |
+
+### Remarks
+
+_ExternalUserProfile.Read.All_ and _ExternalUserProfile.ReadWrite.All_ are valid only for work or school accounts. For an app to read or write external user profiles with delegated permissions, the signed-in user must be assigned the Global Administrator or Teams service administrator role. For an app to only read external user profiles, the user must be assigned the Global Reader role. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+### Example usage
+
+The following usages are valid for both delegated and application permissions:
+
+* _ExternalUserProfile.Read.All_: Read all external user profiles configured in the tenant (`GET /beta/directory/externalUserProfiles`)
+* _ExternalUserProfile.Read.All_: Read an existing external user profile (`GET /beta/directory/externalUserProfiles/{id}`)
+* _ExternalUserProfile.ReadWrite.All_ Update an external user profile (`PATCH /beta/directory/externalUserProfiles/{id}`)
+* _ExternalUserProfile.ReadWrite.All_ Delete an existing external user profile (`DELETE /beta/directory/externalUserProfiles/{id}`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
 ## Files permissions
 
 #### Delegated permissions
@@ -1678,6 +1711,40 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ scope in the 
 #### Delegated
 
 * _OrgContact.Read.All_: Get all organizational contacts (`GET /contacts`).
+
+---
+
+## Pending external user profile permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _PendingExternalUserProfile.Read.All_ |   Read pending external user profile information  | Allows the application to read pending external user profiles in your Azure AD tenant on behalf of the signed-in user. | Yes | No |
+| _PendingExternalUserProfile.ReadWrite.All_ |   Read or write pending external user profile information  | Allows the application to read or write pending external user profiles in your Azure AD tenant on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _PendingExternalUserProfile.Read.All_ |   Read pending external user profile information  | Allows the application to read pending external user profiles in your Azure AD tenant, without a signed-in user. | Yes | No |
+| _PendingExternalUserProfile.ReadWrite.All_ |   Read or write pending external user profile information  | Allows the application to read or write pending external user profiles in your Azure AD tenant, without a signed-in user. | Yes | No |
+
+### Remarks
+
+_PendingExternalUserProfile.Read.All_ and _PendingExternalUserProfile.ReadWrite.All_ are valid only for work or school accounts. For an app to read or write pending external user profiles with delegated permissions, the signed-in user must be assigned the Global Administrator or Teams service administrator role. For an app to only read pending external user profiles, the user must be assigned the Global Reader role. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+### Example usage
+
+The following usages are valid for both delegated and application permissions:
+
+* _PendingExternalUserProfile.Read.All_: Read all pending external user profiles configured in the tenant (`GET /beta/directory/pendingExternalUserProfiles`)
+* _PendingExternalUserProfile.Read.All_: Read an pending existing external user profile (`GET /beta/directory/pendingExternalUserProfiles/{id}`)
+* _PendingExternalUserProfile.ReadWrite.All_ Create a pending external user profile (`POST /beta/directory/pendingExternalUserProfiles`)
+* _PendingExternalUserProfile.ReadWrite.All_ Update an pending external user profile (`PATCH /beta/directory/pendingExternalUserProfiles/{id}`)
+* _PendingExternalUserProfile.ReadWrite.All_ Delete an existing pending external user profile (`DELETE /beta/directory/pendingExternalUserProfiles/{id}`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
 

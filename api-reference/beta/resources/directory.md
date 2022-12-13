@@ -43,8 +43,11 @@ Inherits from [entity](entity.md).
 |attributeSets|[attributeSet](attributeset.md) collection| Group of related custom security attribute definitions.|
 |customSecurityAttributeDefinitions|[customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection|Schema of a custom security attributes (key-value pairs).|
 |deleteditems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
+|externalProfiles|[externalProfile](externalprofile.md) collection| Base type for pendingExternalUserProfile and externalUserProfile.|
+|externalUserProfiles|[externalUserProfile](externaluserprofile.md) collection| Collection of external user profiles that represent collaborators in the directory.|
 |featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) collection| Nullable.|
 |federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
+|pendingExternalUserProfiles|[pendingExternalUserProfile](pendingexternaluserprofile.md) collection| Collection of pending external user profiles representing collaborators in the directory that have not yet redeemed.|
 
 ## JSON representation
 

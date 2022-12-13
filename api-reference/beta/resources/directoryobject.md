@@ -21,6 +21,7 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 + [directoryObject](directoryobject.md)
 + [directoryRole](directoryrole.md)
 + [device](device.md)
++ [externalProfile](externalprofile.md)
 + [group](group.md)
 + [orgContact](orgcontact.md)
 + [oauth2PermissionGrant](oauth2permissiongrant.md)
