@@ -57,6 +57,14 @@
           "ChangeType": "Addition",
           "Description": "Added the `ExternalUserProfile.ReadWrite.All` delegated and application permissions to query  and write external user profiles through the [externalUserProfiles](https://learn.microsoft.com/en-us/graph/api/externaluserprofiles?view=graph-rest-beta) methods.",
           "Target": "externalUserProfile"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryObject",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalProfile](https://learn.microsoft.com/en-us/graph/api/resources/externalprofile?view=graph-rest-beta), [externalUserProfiles](https://learn.microsoft.com/en-us/graph/api/externaluserprofiles?view=graph-rest-beta), and [pendingExternalUserProfiles](https://learn.microsoft.com/en-us/graph/api/pendingexternaluserprofiles?view=graph-rest-beta) navigation properties to the [directory](https://learn.microsoft.com/graph/api/resources/directoryobject?view=graph-rest-beta) resource.",
+          "Target": "directoryObject"
         }
       ],
       "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
