@@ -2217,7 +2217,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Tasks.Read.All_        | Read all users’ tasks and tasklist | Allows the app to read all users’ tasks and task lists in your organization, without a signed-in user | Yes  | No |
+| _Tasks.ReadWrite.All_   | Read and write all users’ tasks and tasklists | Allows the app to create, read, update and delete all users’ tasks and task lists in your organization, without a signed-in user | Yes  | No |
 
 ### Remarks
 _Tasks_ permissions are used to control access for To Do tasks and Outlook tasks(deprecated). Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).

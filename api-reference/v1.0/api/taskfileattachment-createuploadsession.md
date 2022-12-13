@@ -80,7 +80,7 @@ The following is an example of a request to create an upload session.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachments/createUploadSession
+POST https://graph.microsoft.com/v1.0/me/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachments/createUploadSession
 Content-Type: application/json
 
 {
@@ -133,8 +133,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.uploadSession",
-    "uploadUrl": "https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachmentSessions/AAMkADliMm=",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.uploadSession",
+    "uploadUrl": "https://graph.microsoft.com/v1.0/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachmentSessions/AAMkADliMm=",
     "expirationDateTime": "2022-06-09T10:45:27.4324526Z",
     "nextExpectedRanges": [
         "0-"
