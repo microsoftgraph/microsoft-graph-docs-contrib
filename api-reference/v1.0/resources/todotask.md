@@ -47,6 +47,7 @@ This resource supports the following:
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone for a reminder alert of the task to occur.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone at which the task is scheduled to start.|
 |status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 
