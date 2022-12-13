@@ -11853,6 +11853,34 @@ items:
             href: api/domain-verify.md
           - name: Promote domain
             href: api/domain-promote.md
+        - name: Extended directory
+          items:
+          - name: Overview
+            href: resources/extendeddirectory-overview.md
+          - name: Pending external user profile
+            href: resources/pendingexternaluserprofile.md
+            items:
+            - name: List pending external user profiles
+              href: api/directory-list-pendingexternaluserprofile.md
+            - name: Get pending external user profile
+              href: api/pendingexternaluserprofile-get.md
+            - name: Create pending external user profile
+              href: api/directory-post-pendingexternaluserprofile.md
+            - name: Update pending external user profile
+              href: api/pendingexternaluserprofile-update.md
+            - name: Delete pending external user profile
+              href: api/pendingexternaluserprofile-delete.md
+          - name: External user profile
+            href: resources/externaluserprofile.md
+            items:
+            - name: List external user profiles
+              href: api/directory-list-pendingexternaluserprofile.md
+            - name: Get external user profile
+              href: api/externaluserprofile-get.md
+            - name: Update external user profile
+              href: api/externaluserprofile-update.md
+            - name: Delete external user profile
+              href: api/externaluserprofile-delete.md
         - name: Feature rollout policy
           href: resources/featurerolloutpolicy.md
           items:
