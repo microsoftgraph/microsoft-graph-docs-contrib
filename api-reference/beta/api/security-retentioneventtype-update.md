@@ -47,10 +47,7 @@ PATCH /security/triggers/retentionEvents/{retentionEventId}/retentionEventType
 |:---|:---|:---|
 |displayName|String|Name of the event type. Optional.|
 |description|String|Information about the event type. Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the retentionEventType. Optional.|
-|createdDateTime|DateTimeOffset|The date time when the retentionEventType was created. Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionEventType.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionEventType was modified. Optional.|
+
 
 ## Response
 
