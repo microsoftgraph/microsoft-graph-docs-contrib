@@ -51,7 +51,7 @@ In the request body, provide a JSON representation of a [pendingExternalUserProf
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|address|[physicalOfficeAddress](physicalofficeaddress.md)|The office address of the pending external user profile.|
+|address|[physicalOfficeAddress](../resources/physicalofficeaddress.md)|The office address of the pending external user profile.|
 |createdBy|String|The object id of the user who created the pending external user profile. Read-only. Not nullable. |
 |createdDateTime|DateTimeOffset|Date and time when this pending external user profile was created. Not nullable. Read-only. |
 |companyName|String|The company name of the pending external user profile. |

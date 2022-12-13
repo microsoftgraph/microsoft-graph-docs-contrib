@@ -54,7 +54,7 @@ The following table shows the properties that are able to be updated after a [pe
 
 |Property|Type|Description|
 |:---|:---|:---|
-|address|[physicalOfficeAddress](physicalofficeaddress.md)|The office address of the pending external user profile.|
+|address|[physicalOfficeAddress](../resources/physicalofficeaddress.md)|The office address of the pending external user profile.|
 |companyName|String|The company name of the pending external user profile. |
 |department|String|The department of the pending external user profile. |
 |displayName|String|The display name of the pending external user profile.|

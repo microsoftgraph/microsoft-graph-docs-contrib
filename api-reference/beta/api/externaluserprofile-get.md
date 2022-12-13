@@ -1,6 +1,6 @@
 ---
 title: "Get externalUserProfile"
-description: "Get a pendingExternalUserProfile object."
+description: "Get an externalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
