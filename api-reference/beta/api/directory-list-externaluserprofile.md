@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a all [externalUserProfiles](../resources/externaluserprofile.md)
+Retrieve the properties of all [externalUserProfiles](../resources/externaluserprofile.md)
 
 ## Permissions
 
