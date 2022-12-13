@@ -15933,22 +15933,24 @@ items:
           items:
           - name: Business scenario
             href: resources/businessscenario.md
-          - name: Create
-            href: api/solutionsroot-post-businessscenarios.md
-          - name: Delete
-            href: api/solutionsroot-delete-businessscenarios.md
-          - name: Get
-            href: api/businessscenario-get.md
           - name: List
             href: api/solutionsroot-list-businessscenarios.md
+          - name: Create
+            href: api/solutionsroot-post-businessscenarios.md
+          - name: Get
+            href: api/businessscenario-get.md
           - name: Update
             href: api/businessscenario-update.md
+          - name: Delete
+            href: api/solutionsroot-delete-businessscenarios.md
         - name: Business scenario in Planner
           items:
           - name: Business scenario Planner
             href: resources/businessscenarioplanner.md
           - name: Get
             href: api/businessscenarioplanner-get.md
+          - name: Get plan
+            href: api/businessscenarioplanner-getplan.md
         - name: Plan configuration in business scenario
           items:
           - name: Plan configuration
@@ -15961,16 +15963,16 @@ items:
           items:
           - name: Plan configuration localization
             href: resources/plannerplanconfigurationlocalization.md
-          - name: Create
-            href: api/plannerplanconfiguration-post-localizations.md
-          - name: Delete
-            href: api/plannerplanconfiguration-delete-localizations.md
-          - name: Get
-            href: api/plannerplanconfigurationlocalization-get.md
           - name: List
             href: api/plannerplanconfiguration-list-localizations.md
+          - name: Create
+            href: api/plannerplanconfiguration-post-localizations.md
+          - name: Get
+            href: api/plannerplanconfigurationlocalization-get.md
           - name: Update
             href: api/plannerplanconfigurationlocalization-update.md
+          - name: Delete
+            href: api/plannerplanconfiguration-delete-localizations.md
         - name: Task configuration in business scenario
           items:
           - name: Task configuration
@@ -15983,14 +15985,16 @@ items:
           items:
           - name: Business scenario task
             href: resources/businessscenariotask.md
-          - name: Create
-            href: api/businessscenarioplanner-post-tasks.md
-          - name: Delete
-            href: api/businessscenarioplanner-delete-tasks.md
           - name: List
             href: api/businessscenarioplanner-list-tasks.md
+          - name: Create
+            href: api/businessscenarioplanner-post-tasks.md
+          - name: Get
+            href: api/businessscenariotask-get.md
           - name: Update
             href: api/businessscenariotask-update.md
+          - name: Delete
+            href: api/businessscenarioplanner-delete-tasks.md
       - name: Get delta
         href: api/planneruser-list-delta.md
       - name: Plan details

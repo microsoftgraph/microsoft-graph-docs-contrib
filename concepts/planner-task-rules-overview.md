@@ -1,12 +1,12 @@
 ---
-title: "Planner task rules overview (preview)"
+title: "Configuring task rules in Planner (preview)"
 description: "Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "business-scenarios"
 ---
 
-# Planner task rules overview (preview)
+# Configuring task rules in Planner (preview)
 
 Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them. Task rules can be specified for tasks created from various sources, such as [business scenarios](/graph/api/resources/businessscenario-planner-overview).
 
