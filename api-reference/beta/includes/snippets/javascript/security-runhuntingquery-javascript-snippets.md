@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const huntingQueryResults = {
-    Query: 'DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2'
+    query: 'DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2'
 };
 
 await client.api('/security/runHuntingQuery')
