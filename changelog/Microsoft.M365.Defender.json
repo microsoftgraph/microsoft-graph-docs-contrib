@@ -387,7 +387,7 @@
 					"ChangeType": "Addition",
 					"Description": "Added the [runHuntingQuery](https://docs.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-beta) method to the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
 					"Target": "runHuntingQuery"
-				}				
+				}
 			],
 			"Id": "81de8e8a-4ac0-11ed-b878-0242ac120002",
 			"Cloud": "Prod",
@@ -420,6 +420,40 @@
 			"Version": "beta",
 			"CreatedDateTime": "2022-10-14T13:00:00.0000000Z",
 			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "de54d2e0-f6ea-485c-9b8d-85f7b484cddb",
+					"ApiChange": "EnumType",
+					"ChangedApiName": "evidenceRemediationStatus",
+					"ChangeType": "Change",
+					"Description": "Removed the values `running`, `notRemediated`, `declined`, `pendingApproval` and `active`.",
+					"Target": "evidenceRemediationStatus"
+				},
+				{
+					"Id": "de54d2e0-f6ea-485c-9b8d-85f7b484cddb",
+					"ApiChange": "Resource",
+					"ChangedApiName": "incident",
+					"ChangeType": "Change",
+					"Description": "Renamed `tags` to `customTags` on the [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
+					"Target": "incident"
+				},
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipEvidence",
+          "ChangeType": "Change",
+          "Description": "Added `countryLetterCode` property to [ipEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-ipEvidence?view=graph-rest-beta) resource type.",
+          "Target": "ipEvidence"
+        }
+			],
+			"Id": "de54d2e0-f6ea-485c-9b8d-85f7b484cddb",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-11-11T13:03:13.9213719Z", 
+      "WorkloadArea": "Security",
 			"SubArea": "Alerts and incidents"
 		},
 		{
