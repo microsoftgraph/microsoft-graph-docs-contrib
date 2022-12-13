@@ -47,7 +47,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 
 > [!CAUTION]
 >
->- The **attendanceRecords** currently does not contain the **attendanceInterval** from a breakout room.
+>- The **attendanceRecords** property currently does not support returning information about a breakout room.
 
 ## Optional query parameters
 
