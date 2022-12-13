@@ -21,19 +21,19 @@ Inherits from [entity](entity.md).
 
 ## Methods
 
-| Method         | Return Type | Description |
-|:---------------|:------------|:------------|
-|[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted item. |
-|[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. |
-|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
-|[Permanently delete an item](../api/directory-deleteditems-delete.md) | None | Permanently deletes an item. |
-|[List deleted items owned by a user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
+| Method                                                                                     | Return Type                                      | Description                            |
+| :----------------------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------- |
+| [Get deleted item](../api/directory-deleteditems-get.md)                                   | [directoryObject](directoryobject.md)            | Gets the properties of a deleted item. |
+| [Restore deleted item](../api/directory-deleteditems-restore.md)                           | [directoryObject](directoryobject.md)            | Restores a recently deleted item.      |
+| [List deleted items](../api/directory-deleteditems-list.md)                                | [directoryObject](directoryobject.md) collection | Gets a list of recently deleted items. |
+| [Permanently delete an item](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
+| [List deleted items owned by a user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 ## Properties
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|id|String| A unique identifier for the object; for example, `12345678-9abc-def0-1234-56789abcde`. Key. Not nullable. Read-only. Inherited from [entity](entity.md).|
+| Property | Type   | Description                                                                                                                                              |
+| :------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id       | String | A unique identifier for the object; for example, `12345678-9abc-def0-1234-56789abcde`. Key. Not nullable. Read-only. Inherited from [entity](entity.md). |
 
 ## Relationships
 
@@ -48,6 +48,7 @@ Inherits from [entity](entity.md).
 |featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) collection| Nullable.|
 |federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
 |pendingExternalUserProfiles|[pendingExternalUserProfile](pendingexternaluserprofile.md) collection| Collection of pending external user profiles representing collaborators in the directory that have not yet redeemed.|
+| onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.            |
 
 ## JSON representation
 
