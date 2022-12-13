@@ -38,11 +38,8 @@ redirectUris := []string {
 }
 web.SetRedirectUris(redirectUris)
 requestBody.SetWeb(web)
-additionalData := map[string]interface{}{
-	appRoleAssignmentRequired := true
-requestBody.SetAppRoleAssignmentRequired(&appRoleAssignmentRequired) 
-}
-requestBody.SetAdditionalData(additionalData)
+serviceManagementReference := "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
+requestBody.SetServiceManagementReference(&serviceManagementReference) 
 
 result, err := graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
 
