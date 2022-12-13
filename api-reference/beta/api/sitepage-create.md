@@ -42,8 +42,6 @@ In the request body, supply a JSON representation of the [sitePage](../resources
 
 The following example shows how to create a new page.
 
-# [HTTP](#tab/http)
-
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http
