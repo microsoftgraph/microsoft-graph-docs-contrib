@@ -112,6 +112,7 @@ Content-type: application/json
             "marketingNotificationEmails": [],
             "onPremisesLastSyncDateTime": null,
             "onPremisesSyncEnabled": null,
+            "partnerTenantType": "String",
             "postalCode": null,
             "preferredLanguage": "en",
             "securityComplianceNotificationMails": [],

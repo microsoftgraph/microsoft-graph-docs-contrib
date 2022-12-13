@@ -62,6 +62,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | marketingNotificationEmails | String collection | Not nullable. |
 | onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; Nullable. `null` if this object has never been synced from an on-premises directory (default). |
+|partnerTenantType|partnerTenantType| Type of the partner tenant.The possible values are: `microsoftSupport`, `syndicatePartner`, `breadthPartner`, `breadthPartnerDelegatedAdmin`, `resellerPartnerDelegatedAdmin`, `valueAddedResellerPartnerDelegatedAdmin`, `unknownFutureValue`.|
 | postalCode | String | Postal code of the address for the organization. |
 | preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 Code; for example `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | The privacy profile of an organization. |
@@ -113,6 +114,7 @@ Here is a JSON representation of the resource
   "marketingNotificationEmails": ["String"],
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
+  "partnerTenantType": "String",
   "postalCode": "String",
   "preferredLanguage": "String",
   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
