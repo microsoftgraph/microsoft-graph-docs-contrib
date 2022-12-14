@@ -49,11 +49,11 @@ In the request body, supply a JSON representation of the [sourceSystemDefinition
 
 You can specify the following properties when you create a **sourceSystemDefinition**.
 
-| Property             | Type                                                                                                            | Description                                                    |
-| :------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------- |
-| displayName          | String                                                                                                          | The name of the source system. Maximum supported length is 100 characters. Required.                           |
-| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by [roleGroup](../resources/industrydata-rolegroup.md). Optional. |
-| vendor               | String                                                                                                          | The name of the vendor who supplies the source system. Maximum supported length is 100 characters. Optional.   |
+| Property             | Type                                                                                                            | Description                                                                                                  |
+| :------------------- | :-------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| displayName          | String                                                                                                          | The name of the source system. Maximum supported length is 100 characters. Required.                         |
+| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by [roleGroup](../resources/industrydata-rolegroup.md). Optional.     |
+| vendor               | String                                                                                                          | The name of the vendor who supplies the source system. Maximum supported length is 100 characters. Optional. |
 
 ## Response
 
@@ -77,14 +77,29 @@ Content-Type: application/json
 Content-length: 250
 
 {
-  "@odata.type": "#microsoft.graph.industryData.sourceSystemDefinition",
-  "displayName": "String",
-  "userMatchingSettings": [
-    {
-      "@odata.type": "microsoft.graph.industryData.userMatchingSetting"
-    }
-  ],
-  "vendor": "String"
+    "displayName": "Rostering source",
+    "userMatchingSettings": [
+        {
+            "roleGroup@odata.bind": "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff",
+            "sourceIdentifier": {
+                "code": "username"
+            },
+            "matchTarget": {
+                "code": "userPrincipalName"
+            },
+            "priorityOrder": 0
+        },
+        {
+            "roleGroup@odata.bind": "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')",
+            "sourceIdentifier": {
+                "code": "username"
+            },
+            "matchTarget": {
+                "code": "userPrincipalName"
+            },
+            "priorityOrder": 1
+        }
+    ]
 }
 ```
 
@@ -106,13 +121,29 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.sourceSystemDefinition",
-  "displayName": "String",
-  "userMatchingSettings": [
-    {
-      "@odata.type": "microsoft.graph.industryData.userMatchingSetting"
-    }
-  ],
-  "vendor": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/sourceSystems/$entity",
+    "id": "aa050107-5784-4a8e-1876-08daddab21bc",
+    "displayName": "Rostering source",
+    "vendor": null,
+    "userMatchingSettings": [
+        {
+            "priorityOrder": 0,
+            "sourceIdentifier": {
+                "code": "username"
+            },
+            "matchTarget": {
+                "code": "userPrincipalName"
+            }
+        },
+        {
+            "priorityOrder": 1,
+            "sourceIdentifier": {
+                "code": "username"
+            },
+            "matchTarget": {
+                "code": "userPrincipalName"
+            }
+        }
+    ]
 }
 ```

@@ -68,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/sourceSystems/{sourceSystemDefinitionId}
+GET https://graph.microsoft.com/beta/external/industryData/sourceSystems/0190210e-8827-4747-6f2b-08dacc885e72
 ```
 
 ### Response
@@ -89,15 +89,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.industryData.sourceSystemDefinition",
-    "displayName": "String",
-    "userMatchingSettings": [
-      {
-        "@odata.type": "microsoft.graph.industryData.userMatchingSetting"
+  "id": "0190210e-8827-4747-6f2b-08dacc885e72",
+  "displayName": "Rostering Source",
+  "vendor": null,
+  "userMatchingSettings": [
+    {
+      "priorityOrder": 0,
+      "sourceIdentifier": {
+        "code": "username"
+      },
+      "matchTarget": {
+        "code": "userPrincipalName"
       }
-    ],
-    "vendor": "String"
-  }
+    },
+    {
+      "priorityOrder": 1,
+      "sourceIdentifier": {
+        "code": "username"
+      },
+      "matchTarget": {
+        "code": "userPrincipalName"
+      }
+    }
+  ]
 }
 ```

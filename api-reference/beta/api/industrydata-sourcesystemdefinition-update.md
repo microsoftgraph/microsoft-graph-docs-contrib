@@ -34,7 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /external/industryData/sourceSystems/{sourceSystemDefinitionId}
-PATCH /external/industryData/dataConnectors/{industryDataConnectorId}/sourceSystem
 ```
 
 ## Request headers
@@ -48,15 +47,14 @@ PATCH /external/industryData/dataConnectors/{industryDataConnectorId}/sourceSyst
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property             | Type                                                                                                            | Description                                                    |
-| :------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------- |
-| displayName          | String                                                                                                          | The name of the source system. Maximum supported length is 100 characters. Required.                           |
-| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by [roleGroup](../resources/industrydata-rolegroup.md). Optional. |
-| vendor               | String                                                                                                          | The name of the vendor who supplies the source system. Maximum supported length is 100 characters. Optional.   |
+| Property             | Type                                                                                                            | Description                                                                                                  |
+| :------------------- | :-------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by [roleGroup](../resources/industrydata-rolegroup.md). Optional.     |
+| vendor               | String                                                                                                          | The name of the vendor who supplies the source system. Maximum supported length is 100 characters. Optional. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -71,19 +69,12 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/external/industryData/sourceSystems/{sourceSystemDefinitionId}
+PATCH https://graph.microsoft.com/beta/external/industryData/sourceSystems/d1cde272-4585-462c-4725-08dad18eb580
 Content-Type: application/json
 Content-length: 250
 
 {
-  "@odata.type": "#microsoft.graph.industryData.sourceSystemDefinition",
-  "displayName": "String",
-  "userMatchingSettings": [
-    {
-      "@odata.type": "microsoft.graph.industryData.userMatchingSetting"
-    }
-  ],
-  "vendor": "String"
+   "vendor": "LMS Vendor"
 }
 ```
 
@@ -100,17 +91,9 @@ The following is an example of the response.
 -->
 
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
+HTTP/1.1 204 No Content
+```
 
-{
-  "@odata.type": "#microsoft.graph.industryData.sourceSystemDefinition",
-  "displayName": "String",
-  "userMatchingSettings": [
-    {
-      "@odata.type": "microsoft.graph.industryData.userMatchingSetting"
-    }
-  ],
-  "vendor": "String"
-}
+```
+
 ```
