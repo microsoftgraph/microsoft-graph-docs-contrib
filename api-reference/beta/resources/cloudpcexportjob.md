@@ -54,8 +54,8 @@ None.
 | remoteConnectionHistoricalReports      | The historical remote connections report.                           |
 | dailyAggregatedRemoteConnectionReports | The daily aggregated remote connections report.                     |
 | totalAggregatedRemoteConnectionReports | The total aggregated remote connections report.                     |
-| sharedUseLicenseUsageReport            | Indicates  daily/hourly aggregated shared use license usage report. |
-| sharedUseLicenseUsageRealTimeReport    | Indicates  real time data for shared use license usage.             |
+| sharedUseLicenseUsageReport            | Indicates daily/hourly aggregated shared use license usage report.  |
+| sharedUseLicenseUsageRealTimeReport    | Indicates real time data for shared use license usage.              |
 | unknownFutureValue                     | Evolvable enumeration sentinel value. Do not use.                   |
 
 ## JSON representation

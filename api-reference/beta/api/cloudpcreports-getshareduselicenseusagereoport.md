@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getSharedUseLicenseUsageReport"
-description: "Get the Shared Use license usage reports, such as servicePlanId, licenseCount, claimedLicenseCount and so on, for Real time, 7 days or 28 days trend."
+description: "Get the shared use license usage reports, such as servicePlanId, licenseCount, and claimedLicenseCount, for real-time, 7 days, or 28 days trend."
 author: "rbayetov"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the Shared Use license usage reports, such as servicePlanId, licenseCount, claimedLicenseCount and so on, for Real time, 7 days or 28 days trend.
+Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
 ## Permissions
 
@@ -48,16 +48,16 @@ In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-| Parameter  | Type              | Description                                                                                  |
-| :--------- | :---------------- | :------------------------------------------------------------------------------------------- |
-| reportName | String            | Specify report name                                                                          |
-| filter     | String            | OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`. |
-| select     | String collection | OData select syntax. Represents the selected columns of the reports.                         |
-| search     | String            | Specifies a string to search                                                                 |
-| groupBy    | String collection | Specify how to group the reports. If used, must have the same contents as select parameter   |
-| orderBy    | String collection | Specify how to sort the reports.                                                             |
-| skip       | Int32             | Number of records to skip.                                                                   |
-| top        | Int32             | The number of top records to return.                                                         |
+| Parameter  | Type              | Description                                                                                           |
+| :--------- | :---------------- | :---------------------------------------------------------------------------------------------------- |
+| reportName | String            | Specifies the report name.                                                                            |
+| filter     | String            | OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.         |
+| select     | String collection | OData select syntax. Represents the selected columns of the reports.                                  |
+| search     | String            | Specifies a string to search.                                                                         |
+| groupBy    | String collection | Specifies how to group the reports. If used, must have the same contents as the **select** parameter. |
+| orderBy    | String collection | Specifies how to sort the reports.                                                                    |
+| skip       | Int32             | The number of records to skip.                                                                        |
+| top        | Int32             | The number of top records to return.                                                                  |
 
 ## Response
 
@@ -88,11 +88,10 @@ Content-length: 199
 }
 ```
 
----
-
 ### Response
 
 The following is an example of the response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -105,27 +104,32 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 {
-    "TotalRowCount": 2,
-    "Schema": [
-        {
-            "name": "ServicePlanId",
-            "type": "String"
-        },
-        {
-            "name": "LicenseCount",
-            "type": "Int32"
-        },
-        {
-            "name": "ClaimedLicenseCount",
-            "type": "Int32"
-        },
-        {
-            "name": "DateTimeUTC",
-            "type": "DateTime"
-        }],
-    "Values": [
-        ["2d1d344e-d10c-41bb-953b-b3a47521dca0", 100, 10, "2022-12-02T00:00:00"],
-        ["2d1d344e-d10c-41bb-953b-b3a47521dca0", 100, 11, "2022-12-01T00:00:00"]
+  "TotalRowCount": 2,
+  "Schema": [
+    {
+      "name": "ServicePlanId",
+      "type": "String"
+    },
+    {
+      "name": "LicenseCount",
+      "type": "Int32"
+    },
+    {
+      "name": "ClaimedLicenseCount",
+      "type": "Int32"
+    },
+    {
+      "name": "DateTimeUTC",
+      "type": "DateTime"
+    }
+  ],
+  "Values": [
+    [
+      "2d1d344e-d10c-41bb-953b-b3a47521dca0", 100, 10, "2022-12-02T00:00:00"
+    ],
+    [
+      "2d1d344e-d10c-41bb-953b-b3a47521dca0", 100, 11, "2022-12-01T00:00:00"
     ]
+  ]
 }
 ```
