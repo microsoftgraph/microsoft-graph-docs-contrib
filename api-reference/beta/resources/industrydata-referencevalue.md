@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a pointer to a [referenceDefinition](../resources/industrydata-referencedefinition.md) with a specific `referenceType`.
+Represents a pointer to a [referenceDefinition](industrydata-referencedefinition.md) with a specific `referenceType`.
 
 This is an abstract type.
 
@@ -41,10 +41,10 @@ or binding the `industryDataReferenceDefinition` entity directly.
 
 | Type                                                                                        | ReferenceType        |
 | ------------------------------------------------------------------------------------------- | -------------------- |
-| [identifierTypeReferenceValue](../resources/industrydata-identifiertypereferencevalue.md)   | `RefIdentifierType`  |
-| [roleReferenceValue](../resources/industrydata-rolereferencevalue.md)                       | `RefRole`            |
-| [userMatchTargetReferenceValue](../resources/industrydata-usermatchtargetreferencevalue.md) | `RefUserMatchTarget` |
-| [yearReferenceValue](../resources/industrydata-yearreferencevalue.md)                       | `RefAcademicYear`    |
+| [identifierTypeReferenceValue](industrydata-identifiertypereferencevalue.md)   | `RefIdentifierType`  |
+| [roleReferenceValue](industrydata-rolereferencevalue.md)                       | `RefRole`            |
+| [userMatchTargetReferenceValue](industrydata-usermatchtargetreferencevalue.md) | `RefUserMatchTarget` |
+| [yearReferenceValue](industrydata-yearreferencevalue.md)                       | `RefAcademicYear`    |
 
 ## Properties
 
@@ -56,7 +56,7 @@ or binding the `industryDataReferenceDefinition` entity directly.
 
 | Relationship | Type                                                                    | Description                                        |
 | :----------- | :---------------------------------------------------------------------- | :------------------------------------------------- |
-| value        | [referenceDefinition](../resources/industrydata-referencedefinition.md) | Reference to the bound referenceDefinition entity. |
+| value        | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound referenceDefinition entity. |
 
 ## JSON representation
 

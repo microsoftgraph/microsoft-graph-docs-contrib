@@ -48,7 +48,7 @@ For the data that passed validation, the process uses the configured **yearTimeP
 At the end of each run, **industryDataRunStatistics** are available to determine data health.
 
 - Error and warnings related to **industryDataRunStatistics** will be produced to help provide an initial understanding of data health.
- <!-- - When investigating data health, _industryData_ provides ability to download a log file that contains information based on the errors and warnings found to begin the data investigation process to correct the data in the source system.
+<!-- - When investigating data health, _industryData_ provides ability to download a log file that contains information based on the errors and warnings found to begin the data investigation process to correct the data in the source system.
 
 After investigating and addressing any data errors and/or warnings, or are comfortable with the current state of the data health, then you can enable the scenarios with the data that is now in the Education data lake. When enabling a scenario to use this data, the scenario will create an outbound flow. Outbound flows are defined by Microsoft 365 provisioning, Insights & Analytics.
 
@@ -68,7 +68,7 @@ You can integrate industry data APIs with 3rd-party apps. To enable this integra
 - For permissions via a consent process, see [Microsoft Graph permissions reference](/graph/permissions-reference)
 - For steps to resolve common errors, see [Resolve Microsoft Graph authorization errors](/graph/resolve-auth-errors)
 
->**Note:** We have plans to expand out the scopes that are specific to industry data; however, until then the industry data APIs support the following existing Microsoft Graph permissions.
+> **Note:** We have plans to expand out the scopes that are specific to industry data; however, until then the industry data APIs support the following existing Microsoft Graph permissions.
 
 | Permissions                     | Type        | Description                                                                                                    |
 | ------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------- |

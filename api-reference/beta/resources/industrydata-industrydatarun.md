@@ -27,28 +27,27 @@ For details about how statistics can assist with health and monitoring a run gro
 
 ## Methods
 
-| Method                                                                     | Return type                                                                                                             | Description                                                                                                         |
-| :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
-| [List industryDataRuns](../api/industrydata-industrydataroot-list-runs.md) | [microsoft.graph.industryData.industryDataRun](../resources/industrydata-industrydatarun.md) collection                 | Get a list of the [industryDataRun](../resources/industrydata-industrydatarun.md) objects and their properties.     |
-| [Get industryDataRun](../api/industrydata-industrydatarun-get.md)          | [microsoft.graph.industryData.industryDataRun](../resources/industrydata-industrydatarun.md)                            | Read the properties and relationships of an [industryDataRun](../resources/industrydata-industrydatarun.md) object. |
-| [getStatistics](../api/industrydata-industrydatarun-getstatistics.md)      | [microsoft.graph.industryData.industryDataRunStatistics](../resources/industrydata-industrydatarunstatistics.md)        | Calculate statistics for a run group.                                                                              |
-| [List activities](../api/industrydata-industrydatarun-list-activities.md)  | [microsoft.graph.industryData.industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md) collection | Get the **industryDataRunActivity** resources from the **activities** navigation property.                                  |
+| Method                                                                     | Return type                                                                                         | Description                                                                                            |
+| :------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| [List industryDataRuns](../api/industrydata-industrydataroot-list-runs.md) | [microsoft.graph.industryData.industryDataRun](industrydata-industrydatarun.md) collection          | Get a list of the [industryDataRun](industrydata-industrydatarun.md) objects and their properties.     |
+| [Get industryDataRun](../api/industrydata-industrydatarun-get.md)          | [microsoft.graph.industryData.industryDataRun](industrydata-industrydatarun.md)                     | Read the properties and relationships of an [industryDataRun](industrydata-industrydatarun.md) object. |
+| [getStatistics](../api/industrydata-industrydatarun-getstatistics.md)      | [microsoft.graph.industryData.industryDataRunStatistics](industrydata-industrydatarunstatistics.md) | Calculate statistics for a run group.                                                                  |
 
 ## Properties
 
-| Property      | Type                                                       | Description                                                                                                                                                 |
-| :------------ | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockingError | [publicError](../resources/publicerror.md) | An error object to diagnose critical failures in the run.                                                                                                   |
-| displayName   | String                                                     | The name of the run for rendering in a user interface.                                                                                                      |
-| endDateTime   | DateTimeOffset                                             | The date and time when the run finished or null if the run is still in-progress. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`.                                                                     |
-| startDateTime | DateTimeOffset                                             | The date and time when the run started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`.                                                                                                               |
-| status        | industryDataRunStatus                                      | The current status of the run. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| Property      | Type                          | Description                                                                                                                                                                                                                                                   |
+| :------------ | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| blockingError | [publicError](publicerror.md) | An error object to diagnose critical failures in the run.                                                                                                                                                                                                     |
+| displayName   | String                        | The name of the run for rendering in a user interface.                                                                                                                                                                                                        |
+| endDateTime   | DateTimeOffset                | The date and time when the run finished or null if the run is still in-progress. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`. |
+| startDateTime | DateTimeOffset                | The date and time when the run started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`.                                          |
+| status        | industryDataRunStatus         | The current status of the run. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`.                                                                                               |
 
 ## Relationships
 
-| Relationship | Type                                                                                                                    | Description                                     |
-| :----------- | :---------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- |
-| activities   | [microsoft.graph.industryData.industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md) collection | The set of activities performed during the run. |
+| Relationship | Type                                                                                                       | Description                                     |
+| :----------- | :--------------------------------------------------------------------------------------------------------- | :---------------------------------------------- |
+| activities   | [microsoft.graph.industryData.industryDataRunActivity](industrydata-industrydatarunactivity.md) collection | The set of activities performed during the run. |
 
 ## JSON representation
 
@@ -65,7 +64,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.industryDataRun",
-  "blockingError": {"@odata.type": "microsoft.graph.publicError"},
+  "blockingError": { "@odata.type": "microsoft.graph.publicError" },
   "displayName": "String",
   "endDateTime": "String (timestamp)",
   "startDateTime": "String (timestamp)",

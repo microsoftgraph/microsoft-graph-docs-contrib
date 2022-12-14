@@ -21,21 +21,21 @@ The `validate()` action is a long-running operation. The link to the operation i
 
 Recommend to poll no less than every 5 seconds while the status is `in progress`.
 
-Inherits from [validateOperation](../resources/industrydata-validateoperation.md).
+Inherits from [validateOperation](industrydata-validateoperation.md).
 
 ## Properties
 
-| Property           | Type                                                                  | Description                                                                                                                                                                                          |
-| :----------------- | :-------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdDateTime    | DateTimeOffset                                                        | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
-| errors             | [microsoft.graph.publicError](../resources/publicerror.md) collection | Set of errors discovered by validation. Inherited from [validateOperation](../resources/industrydata-validateoperation.md).                                                                          |
-| id                 | String                                                                | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
-| lastActionDateTime | DateTimeOffset                                                        | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
-| resourceLocation   | String                                                                | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
-| status             | longRunningOperationStatus                                            | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
-| statusDetail       | String                                                                | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
-| validatedFiles     | String collection                                                     | Set of files validated by the validate operation.                                                                                                                                                    |
-| warnings           | [microsoft.graph.publicError](../resources/publicerror.md) collection | Set of warnings discovered by validation. Inherited from [validateOperation](../resources/industrydata-validateoperation.md).                                                                        |
+| Property           | Type                                                     | Description                                                                                                                                                                             |
+| :----------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| createdDateTime    | DateTimeOffset                                           | **TODO: Add Description** Inherited from [longRunningOperation](longrunningoperation.md).                                                                                               |
+| errors             | [microsoft.graph.publicError](publicerror.md) collection | Set of errors discovered by validation. Inherited from [validateOperation](industrydata-validateoperation.md).                                                                          |
+| id                 | String                                                   | **TODO: Add Description** Inherited from [longRunningOperation](longrunningoperation.md).                                                                                               |
+| lastActionDateTime | DateTimeOffset                                           | **TODO: Add Description** Inherited from [longRunningOperation](longrunningoperation.md).                                                                                               |
+| resourceLocation   | String                                                   | **TODO: Add Description** Inherited from [longRunningOperation](longrunningoperation.md).                                                                                               |
+| status             | longRunningOperationStatus                               | **TODO: Add Description** Inherited from [longRunningOperation](longrunningoperation.md).The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
+| statusDetail       | String                                                   | **TODO: Add Description** Inherited from [longRunningOperation](longrunningoperation.md).                                                                                               |
+| validatedFiles     | String collection                                        | Set of files validated by the validate operation.                                                                                                                                       |
+| warnings           | [microsoft.graph.publicError](publicerror.md) collection | Set of warnings discovered by validation. Inherited from [validateOperation](industrydata-validateoperation.md).                                                                        |
 
 ## Relationships
 
@@ -58,17 +58,13 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.industryData.fileValidateOperation",
   "createdDateTime": "String (timestamp)",
-  "errors": [
-    {"@odata.type": "microsoft.graph.publicError"}
-  ],
+  "errors": [{ "@odata.type": "microsoft.graph.publicError" }],
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "resourceLocation": "String",
   "status": "String",
   "statusDetail": "String",
   "validatedFiles": ["String"],
-  "warnings": [
-    {"@odata.type": "microsoft.graph.publicError"}
-  ]
+  "warnings": [{ "@odata.type": "microsoft.graph.publicError" }]
 }
 ```

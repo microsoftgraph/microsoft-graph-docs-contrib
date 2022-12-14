@@ -15,21 +15,21 @@ Namespace: microsoft.graph.industryData
 
 Represents details about the run of an outbound flow.
 
-Inherits from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).
+Inherits from [industryDataRunActivity](industrydata-industrydatarunactivity.md).
 
 ## Properties
 
-| Property      | Type                                                       | Description                                                                                                                                                                                                                                                                    |
-| :------------ | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockingError | [microsoft.graph.publicError](../resources/publicerror.md) | An error object to diagnose critical failures in an activity. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).                                                                                                                  |
-| displayName   | String                                                     | The name of the running flow. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).                                                                                                                                           |
-| status        | industryDataActivityStatus                                 | The current status of the activity. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md). The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| Property      | Type                                                       | Description                                                                                                                                                                                                                                                                        |
+| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| blockingError | [microsoft.graph.publicError](publicerror.md) | An error object to diagnose critical failures in an activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md).                                                                                                                      |
+| displayName   | String                                                     | The name of the running flow. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md).                                                                                                                                                      |
+| status        | industryDataActivityStatus                                 | The current status of the activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md). The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 
-| Relationship | Type                                                                      | Description                                                                                                                     |
-| :----------- | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------ |
-| activity     | [industryDataActivity](../resources/industrydata-industrydataactivity.md) | The flow performed by this activity. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md). |
+| Relationship | Type                                                                      | Description                                                                                                                          |
+| :----------- | :------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------- |
+| activity     | [industryDataActivity](industrydata-industrydataactivity.md) | The flow performed by this activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md). |
 
 ## JSON representation
 
@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.outboundFlowActivity",
-  "blockingError": {"@odata.type": "microsoft.graph.publicError"},
+  "blockingError": { "@odata.type": "microsoft.graph.publicError" },
   "displayName": "String",
   "status": "String"
 }

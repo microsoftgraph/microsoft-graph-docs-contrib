@@ -17,14 +17,14 @@ Represents an abstract type that provides the resources to establish a connectio
 
 ## Methods
 
-| Method                                                                                        | Return type                                                                                                         | Description                                                                                                                     |
-| :-------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------ |
-| [List industryDataConnectors](../api/industrydata-industrydataroot-list-dataconnectors.md)    | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md) collection | Get a list of the [industryDataConnector](../resources/industrydata-industrydataconnector.md) objects and their properties.     |
-| [Create industryDataConnector](../api/industrydata-industrydataroot-post-dataconnectors.md)   | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Create a new [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                                |
-| [Get industryDataConnector](../api/industrydata-industrydataconnector-get.md)                 | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Read the properties and relationships of an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object. |
-| [Update industryDataConnector](../api/industrydata-industrydataconnector-update.md)           | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Update the properties of an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                 |
-| [Delete industryDataConnector](../api/industrydata-industrydataroot-delete-dataconnectors.md) | None                                                                                                                | Delete an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                                   |
-| [validate](../api/industrydata-industrydataconnector-validate.md)                             | None                                                                                                                | Perform validations applicable for the specific instance of the data connector.                                                 |
+| Method                                                                                        | Return type                                                                                            | Description                                                                                                        |
+| :-------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| [Create industryDataConnector](../api/industrydata-industrydataroot-post-dataconnectors.md)   | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)            | Create a new [industryDataConnector](industrydata-industrydataconnector.md) object.                                |
+| [List industryDataConnectors](../api/industrydata-industrydataroot-list-dataconnectors.md)    | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md) collection | Get a list of the [industryDataConnector](industrydata-industrydataconnector.md) objects and their properties.     |
+| [Get industryDataConnector](../api/industrydata-industrydataconnector-get.md)                 | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)            | Read the properties and relationships of an [industryDataConnector](industrydata-industrydataconnector.md) object. |
+| [Update industryDataConnector](../api/industrydata-industrydataconnector-update.md)           | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)            | Update the properties of an [industryDataConnector](industrydata-industrydataconnector.md) object.                 |
+| [Delete industryDataConnector](../api/industrydata-industrydataroot-delete-dataconnectors.md) | None                                                                                                   | Delete an [industryDataConnector](industrydata-industrydataconnector.md) object.                                   |
+| [validate](../api/industrydata-industrydataconnector-validate.md)                             | None                                                                                                   | Perform validations applicable for the specific instance of the data connector.                                    |
 
 ## Properties
 
@@ -34,9 +34,9 @@ Represents an abstract type that provides the resources to establish a connectio
 
 ## Relationships
 
-| Relationship | Type                                                                          | Description                                                    |
-| :----------- | :---------------------------------------------------------------------------- | :------------------------------------------------------------- |
-| sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. |
+| Relationship | Type                                                             | Description                                                    |
+| :----------- | :--------------------------------------------------------------- | :------------------------------------------------------------- |
+| sourceSystem | [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. |
 
 ## JSON representation
 

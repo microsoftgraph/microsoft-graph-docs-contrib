@@ -27,8 +27,8 @@ The following are examples of types:
 
 | Method                                                                                         | Return type                                                                                                     | Description                                                                                                                |
 | :--------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| [List referenceDefinitions](../api/industrydata-industrydataroot-list-referencedefinitions.md) | [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) collection | Get a list of the [referenceDefinition](../resources/industrydata-referencedefinition.md) objects and their properties.    |
-| [Get referenceDefinition](../api/industrydata-referencedefinition-get.md)                      | [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md)            | Read the properties and relationships of a [referenceDefinition](../resources/industrydata-referencedefinition.md) object. |
+| [List referenceDefinitions](../api/industrydata-industrydataroot-list-referencedefinitions.md) | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) collection | Get a list of the [referenceDefinition](industrydata-referencedefinition.md) objects and their properties.    |
+| [Get referenceDefinition](../api/industrydata-referencedefinition-get.md)                      | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md)            | Read the properties and relationships of a [referenceDefinition](industrydata-referencedefinition.md) object. |
 
 ## Properties
 

@@ -17,22 +17,22 @@ Represents annual time periods such as academic or fiscal years. This resource a
 
 ## Methods
 
-| Method                                                                                    | Return type                                                                                                               | Description                                                                                                                          |
-| :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------- |
-| [List yearTimePeriodDefinitions](../api/industrydata-inboundfileflow-list-year.md)        | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) collection | Get a list of the [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) objects and their properties.    |
-| [Create yearTimePeriodDefinition](../api/industrydata-inboundfileflow-post-year.md)       | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)            | Create a new [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.                               |
-| [Get yearTimePeriodDefinition](../api/industrydata-yeartimeperioddefinition-get.md)       | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)            | Read the properties and relationships of a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object. |
-| [Update yearTimePeriodDefinition](../api/industrydata-yeartimeperioddefinition-update.md) | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)            | Update the properties of a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.                 |
-| [Delete yearTimePeriodDefinition](../api/industrydata-inboundfileflow-delete-year.md)     | None                                                                                                                      | Delete a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.                                   |
+| Method                                                                                    | Return type                                                                                                  | Description                                                                                                             |
+| :---------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| [Create yearTimePeriodDefinition](../api/industrydata-industrydataroot-post-years.md)     | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Create a new [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                               |
+| [List yearTimePeriodDefinitions](../api/industrydata-industrydataroot-list-years.md)      | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) collection | Get a list of the [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) objects and their properties.    |
+| [Get yearTimePeriodDefinition](../api/industrydata-yeartimeperioddefinition-get.md)       | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Read the properties and relationships of a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object. |
+| [Update yearTimePeriodDefinition](../api/industrydata-yeartimeperioddefinition-update.md) | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md)            | Update the properties of a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                 |
+| [Delete yearTimePeriodDefinition](../api/industrydata-industrydataroot-delete-years.md)   | None                                                                                                         | Delete a [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) object.                                   |
 
 ## Properties
 
-| Property    | Type                                                                                               | Description                                                                                                          |
-| :---------- | :------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| displayName | String                                                                                             | The name of the year. Maximum supported length is 100 characters.                                                    |
-| endDate     | Date                                                                                               | The last day of the year using ISO 8601 format for date.                                                             |
-| startDate   | Date                                                                                               | The first day of the year using ISO 8601 format for date.                                                            |
-| year        | [microsoft.graph.industryData.yearReferenceValue](../resources/industrydata-yearreferencevalue.md) | A pointer to a year entry in the [referenceDefinition](../resources/industrydata-referencedefinition.md) collection. |
+| Property    | Type                                                                                  | Description                                                                                             |
+| :---------- | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ |
+| displayName | String                                                                                | The name of the year. Maximum supported length is 100 characters.                                       |
+| endDate     | Date                                                                                  | The last day of the year using ISO 8601 format for date.                                                |
+| startDate   | Date                                                                                  | The first day of the year using ISO 8601 format for date.                                               |
+| year        | [microsoft.graph.industryData.yearReferenceValue](industrydata-yearreferencevalue.md) | A pointer to a year entry in the [referenceDefinition](industrydata-referencedefinition.md) collection. |
 
 ## Relationships
 
@@ -56,6 +56,6 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "endDate": "Date",
   "startDate": "Date",
-  "year": {"@odata.type": "microsoft.graph.industryData.yearReferenceValue"}
+  "year": { "@odata.type": "microsoft.graph.industryData.yearReferenceValue" }
 }
 ```

@@ -17,10 +17,10 @@ Represents an abstract base type for statistics for a single activity within a r
 
 ## Properties
 
-| Property    | Type                       | Description                                                                                                                                                                                      |
-| :---------- | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activityId  | String                     | The identifier for the activity that is being reported on.                                                                                                                                       |
-| displayName | String                     | The display name of the underlying flow. Maximum supported length is 100 characters.                                                                                                                                                         |
+| Property    | Type                       | Description                                                                                                                                                                                  |
+| :---------- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| activityId  | String                     | The identifier for the activity that is being reported on.                                                                                                                                   |
+| displayName | String                     | The display name of the underlying flow. Maximum supported length is 100 characters.                                                                                                         |
 | status      | industryDataActivityStatus | The latest status of the activity in the run. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
