@@ -11971,13 +11971,6 @@ items:
               href: api/orgcontact-list-memberof.md
             - name: Get manager
               href: api/orgcontact-get-manager.md
-          - name: Subscribed sku
-            href: resources/subscribedsku.md
-            items:
-            - name: List subscribedSkus
-              href: api/subscribedsku-list.md
-            - name: Get subscribedSku
-              href: api/subscribedsku-get.md
         - name: On-premises directory synchronization
           href: resources/onpremisesdirectorysynchronization.md
           items:
@@ -12075,6 +12068,13 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
+        - name: Subscribed sku
+          href: resources/subscribedsku.md
+          items:
+          - name: List subscribedSkus
+            href: api/subscribedsku-list.md
+          - name: Get subscribedSku
+            href: api/subscribedsku-get.md
         - name: Tenant information
           href: resources/tenantinformation.md
           items:
