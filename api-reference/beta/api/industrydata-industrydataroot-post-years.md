@@ -49,11 +49,11 @@ In the request body, supply a JSON representation of the [yearTimePeriodDefiniti
 
 You can specify the following properties when you create a **yearTimePeriodDefinition**.
 
-| Property    | Type                                                                                               | Description                                                              |
-| :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| displayName | String                                                                                             | The name of the year. Maximum supported length is 100 characters. Required.                                          |
-| endDate     | Date                                                                                               | The last day of the year using ISO 8601 format for date. Required.                       |
-| startDate   | Date                                                                                               | The first day of the year using ISO 8601 format for date. Required.                      |
+| Property    | Type                                                                                               | Description                                                                                                                    |
+| :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| displayName | String                                                                                             | The name of the year. Maximum supported length is 100 characters. Required.                                                    |
+| endDate     | Date                                                                                               | The last day of the year using ISO 8601 format for date. Required.                                                             |
+| startDate   | Date                                                                                               | The first day of the year using ISO 8601 format for date. Required.                                                            |
 | year        | [microsoft.graph.industryData.yearReferenceValue](../resources/industrydata-yearreferencevalue.md) | A pointer to a year entry in the [referenceDefinition](../resources/industrydata-referencedefinition.md) collection. Required. |
 
 ## Response
@@ -78,13 +78,12 @@ Content-Type: application/json
 Content-length: 242
 
 {
-  "@odata.type": "#microsoft.graph.industryData.yearTimePeriodDefinition",
-  "displayName": "String",
-  "endDate": "Date",
-  "startDate": "Date",
-  "year": {
-    "@odata.type": "microsoft.graph.industryData.yearReferenceValue"
-  }
+    "displayName": "Fiscal Year 2022",
+    "year": {
+        "code": "2022"
+    },
+    "startDate": "2022-09-01",
+    "endDate": "2023-06-15"
 }
 ```
 
@@ -106,12 +105,13 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.yearTimePeriodDefinition",
-  "displayName": "String",
-  "endDate": "Date",
-  "startDate": "Date",
-  "year": {
-    "@odata.type": "microsoft.graph.industryData.yearReferenceValue"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
+    "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
+    "displayName": "Fiscal Year 2022",
+    "startDate": "2022-09-01",
+    "endDate": "2023-06-15",
+    "year": {
+        "code": "2022"
+    }
 }
 ```

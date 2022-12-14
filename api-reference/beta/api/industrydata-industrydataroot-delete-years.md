@@ -1,19 +1,19 @@
 ---
-title: "Get yearTimePeriodDefinition"
-description: "Read the properties and relationships of a yearTimePeriodDefinition object."
+title: "Delete yearTimePeriodDefinition"
+description: "Delete a yearTimePeriodDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Get yearTimePeriodDefinition
+# Create yearTimePeriodDefinition
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.
+Delete a [yearTimePeriodDefinition](../resources/industrydata-yearTimePeriodDefinition.md) object.
 
 ## Permissions
 
@@ -33,19 +33,15 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/years/{yearTimePeriodDefinitionId}
-GET /external/industryData/inboundFlows/{inboundFlowId}/year
+POST /external/industryData/years
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -53,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -63,12 +59,26 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_yeartimeperioddefinition"
+  "name": "create_yearTimePeriodDefinition_from_"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/years/ebf18762-ab92-487e-21d1-08daddab28bb
+DELETE https://graph.microsoft.com/beta/external/industryData/years/0c629a1a-a85c-4365-bdf0-623a32ca69cb
+```
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+```http
+HTTP/1.1 204 No Content
 ```
 
 ### Response
@@ -85,17 +95,33 @@ The following is an example of the response.
 -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
-    "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
-    "displayName": "Fiscal Year 2022",
-    "startDate": "2022-09-01",
-    "endDate": "2023-06-15",
-    "year": {
-        "code": "2022"
-    }
+    "id": "aa050107-5784-4a8e-1876-08daddab21bc",
+    "displayName": "Rostering source",
+    "vendor": null,
+    "userMatchingSettings": [
+        {
+            "priorityOrder": 0,
+            "sourceIdentifier": {
+                "code": "username"
+            },
+            "matchTarget": {
+                "code": "userPrincipalName"
+            }
+        },
+        {
+            "priorityOrder": 1,
+            "sourceIdentifier": {
+                "code": "username"
+            },
+            "matchTarget": {
+                "code": "userPrincipalName"
+            }
+        }
+    ]
 }
 ```

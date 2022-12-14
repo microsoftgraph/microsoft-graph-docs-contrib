@@ -1,19 +1,19 @@
 ---
-title: "Get yearTimePeriodDefinition"
-description: "Read the properties and relationships of a yearTimePeriodDefinition object."
+title: "List yearTimePeriodDefinition"
+description: "Get a list of the yearTimePeriodDefinition objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Get yearTimePeriodDefinition
+# List yearTimePeriodDefinition
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.
+Get a list of the [yearTimePeriodDefinition](../resources/industrydata-yearTimePeriodDefinition.md) objects and their properties.
 
 ## Permissions
 
@@ -33,8 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/years/{yearTimePeriodDefinitionId}
-GET /external/industryData/inboundFlows/{inboundFlowId}/year
+GET /external/industryData/years
 ```
 
 ## Optional query parameters
@@ -53,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [yearTimePeriodDefinition](../resources/industrydata-yearTimePeriodDefinition.md) objects in the response body.
 
 ## Examples
 
@@ -63,12 +62,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_yeartimeperioddefinition"
+  "name": "list_yearTimePeriodDefinition"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/years/ebf18762-ab92-487e-21d1-08daddab28bb
+GET https://graph.microsoft.com/beta/external/industryData/years
 ```
 
 ### Response
@@ -80,7 +79,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.yearTimePeriodDefinition"
+  "@odata.type": "Collection(microsoft.graph.industryData.yearTimePeriodDefinition)"
 }
 -->
 
@@ -89,13 +88,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
-    "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
-    "displayName": "Fiscal Year 2022",
-    "startDate": "2022-09-01",
-    "endDate": "2023-06-15",
-    "year": {
-        "code": "2022"
-    }
+  "value": [
+      {
+          "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
+          "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
+          "displayName": "Fiscal Year 2022",
+          "startDate": "2022-09-01",
+          "endDate": "2023-06-15",
+          "year": {
+              "code": "2022"
+          }
+      }
+  ]
 }
 ```

@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /external/industryData/inboundFlows/{inboundFlowId}/year
 PATCH /external/industryData/years/{yearTimePeriodDefinitionId}
 ```
 
@@ -48,16 +47,15 @@ PATCH /external/industryData/years/{yearTimePeriodDefinitionId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property    | Type                                                                                               | Description                                                              |
-| :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| displayName | String                                                                                             | The name of the year. Maximum supported length is 100 characters. Required.                                          |
-| endDate     | Date                                                                                               | The last day of the year using ISO 8601 format for date. Required.                       |
-| startDate   | Date                                                                                               | The first day of the year using ISO 8601 format for date. Required.                      |
-| year        | [microsoft.graph.industryData.yearReferenceValue](../resources/industrydata-yearreferencevalue.md) | A pointer to a year entry in the [referenceDefinition](../resources/industrydata-referencedefinition.md) collection. Required. |
+| Property    | Type   | Description                                                                 |
+| :---------- | :----- | :-------------------------------------------------------------------------- |
+| displayName | String | The name of the year. Maximum supported length is 100 characters. Required. |
+| endDate     | Date   | The last day of the year using ISO 8601 format for date. Required.          |
+| startDate   | Date   | The first day of the year using ISO 8601 format for date. Required.         |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -72,18 +70,13 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}/year
+PATCH https://graph.microsoft.com/beta/external/industryData/years/ebf18762-ab92-487e-21d1-08daddab28bb
 Content-Type: application/json
 Content-length: 242
 
 {
-  "@odata.type": "#microsoft.graph.industryData.yearTimePeriodDefinition",
-  "displayName": "String",
-  "endDate": "Date",
-  "startDate": "Date",
-  "year": {
-    "@odata.type": "microsoft.graph.industryData.yearReferenceValue"
-  }
+    "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
+    "displayName": "Fiscal Year 2022",
 }
 ```
 
@@ -100,16 +93,5 @@ The following is an example of the response.
 -->
 
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.industryData.yearTimePeriodDefinition",
-  "displayName": "String",
-  "endDate": "Date",
-  "startDate": "Date",
-  "year": {
-    "@odata.type": "microsoft.graph.industryData.yearReferenceValue"
-  }
-}
+HTTP/1.1 204 No Content
 ```
