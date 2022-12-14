@@ -4,10 +4,10 @@
             "ChangeList": [
                 {
                     "Id": "7a3d023d-8aa8-438c-afa7-f7f488623deb",
-                    "ApiChange": "Enumeration",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcReportName",
                     "ChangeType": "Change",
-                    "Description": "Added 'sharedUseLicenseUsageReport' and 'sharedUseLicenseUsageRealTimeReport' values to the **cloudPcReportName** enumeration type.",
+                    "Description": "Added the ´sharedUseLicenseUsageReport´ and ´sharedUseLicenseUsageRealTimeReport´ members to the **cloudPcReportName** enumeration type.",
                     "Target": "cloudPcReportName"
                 },
                 {
@@ -15,8 +15,8 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getSharedUseLicenseUsageReport",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta&tabs=http) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
-                    "Target": "virtualEndpoint"
+                    "Description": "Added the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
                 }
             ],
             "Id": "7a3d023d-8aa8-438c-afa7-f7f488623deb",

@@ -10551,18 +10551,18 @@ items:
             href: api/cloudpcreports-post-exportjobs.md
           - name: Get export job
             href: api/cloudpcexportjob-get.md
-          - name: Get daily aggregated remote conneciton reports
+          - name: Get daily aggregated remote connection reports
             href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-          - name: Get historical remote conneciton reports
+          - name: Get historical remote connection reports
             href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
           - name: Get real time remote connection latency
             href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
           - name: Get real time remote connection status
             href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-          - name: Get total aggregated remote conneciton reports
-            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-          - name: Get shared Use license usage reports
+          - name: Get shared use license usage reports
             href: api/cloudpcreports-getshareduselicenseusagereoport.md
+          - name: Get total aggregated remote connection reports
+            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
