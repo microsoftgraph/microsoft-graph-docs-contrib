@@ -14,8 +14,16 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
-> **Note:** You can add a maximum of 200 members when you create a private channel.
 
+You can add a maximum of 200 members when you create a private channel.
+
+> [!IMPORTANT]
+>
+> If you use special characters in your channel name, the [Get filesFolder](channel-get-filesfolder.md) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
+>
+> - Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
+> - Start with an underscore (_) or period (.), or end with a period (.).
+ 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
