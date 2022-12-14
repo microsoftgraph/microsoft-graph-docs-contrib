@@ -24,7 +24,7 @@ Try the new [Microsoft Graph Python SDK (preview)](https://devblogs.microsoft.co
 - A fluent request building pattern to improve efficiency and discoverability.
 - Type annotations, both synchronous and asynchronous experiences and HTTP2 support.
 
-**Note**: The Microsoft Graph Python SDK is currently in public preview. Don't use this SDK in production environments. For details see [SDKs in preview or GA status](https://learn.microsoft.com/en-us/graph/sdks/sdks-overview#sdks-in-preview-or-ga-status).
+**Note**: The Microsoft Graph Python SDK is currently in public preview. Don't use this SDK in production environments. For details see [SDKs in preview or GA status](/graph/sdks/sdks-overview#sdks-in-preview-or-ga-status).
 
 To get started, see:
 - [README](https://github.com/microsoftgraph/msgraph-sdk-python#readme)
