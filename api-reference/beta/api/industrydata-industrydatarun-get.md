@@ -67,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/runs/{industryDataRunId}
+GET https://graph.microsoft.com/beta/external/industryData/runs/918d4a8f-599b-4f6a-b409-e892855db534
 ```
 
 ### Response
@@ -88,15 +88,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.industryData.industryDataRun",
-    "blockingError": {
-      "@odata.type": "microsoft.graph.publicError"
-    },
-    "displayName": "String",
-    "endDateTime": "String (timestamp)",
-    "startDateTime": "String (timestamp)",
-    "status": "String"
-  }
+  "@odata.type": "#microsoft.graph.industryData.industryDataRun",
+  "id": "918d4a8f-599b-4f6a-b409-e892855db534",
+  "displayName": "Run 2023-11-01 11:10 UTC",
+  "endDateTime": null,
+  "startDateTime": "2023-11-01T11:10:46.924769Z",
+  "status": "running"
 }
 ```

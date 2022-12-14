@@ -63,7 +63,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/runs/{industryDataRunId}/getStatistics
+GET https://graph.microsoft.com/beta/external/industryData/runs/918d4a8f-599b-4f6a-b409-e892855db534/getStatistics
 ```
 
 ### Response
@@ -84,8 +84,37 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.industryData.industryDataRunStatistics"
-  }
+  "@odata.type": "#microsoft.graph.industryData.industryDataRunStatistics",
+  "activityStatistics": [
+    {
+      "count": "154390",
+      "role": "student"
+    },
+    {
+      "count": "59820",
+      "role": "teacher"
+    }
+  ],
+  "inboundTotals": {
+    "errors": "0",
+    "groups": "565987",
+    "matchedPeopleByRole": [
+      {
+        "count": "154390",
+        "role": "student"
+      },
+      {
+        "count": "59820",
+        "role": "teacher"
+      }
+    ],
+    "memberships": "1235120",
+    "organizations": "16",
+    "people": "278473",
+    "unmatchedPeopleByRole": [],
+    "warnings": "0"
+  },
+  "runId": "918d4a8f-599b-4f6a-b409-e892855db534",
+  "status": "completed"
 }
 ```
