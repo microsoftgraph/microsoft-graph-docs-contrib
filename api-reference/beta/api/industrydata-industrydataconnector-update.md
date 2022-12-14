@@ -54,7 +54,7 @@ PATCH /external/industryData/inboundFlows/{inboundFlowId}/dataConnector
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
