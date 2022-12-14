@@ -30,7 +30,6 @@ To get started, see:
 - [README](https://github.com/microsoftgraph/msgraph-sdk-python#readme)
 - [Upgrade guide](https://github.com/microsoftgraph/msgraph-sdk-python/blob/main/UPGRADING.md)
 
-
 ## November 2022: New and generally available
 
 ### Education
