@@ -25,12 +25,6 @@ eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect
 
 Explore the [Microsoft 365 eDiscovery APIs](ediscovery-ediscoveryapioverview.md).
 
-## Subject rights request
-
-Microsoft Priva Subject Rights Requests provides powerful capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Microsoft Priva empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams. Learn more about [Priva Subject Rights Requests](/microsoft-365/compliance/privacy-management-subject-rights-requests).
-
-Explore the [subject rights request APIs](subjectrightsrequest-subjectrightsrequestapioverview.md).
-
 ## Records management (preview)
 
 Records management in Microsoft Purview provides the ability to manage regulatory, legal, and business-critical records across corporate data. It helps organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained.
@@ -39,6 +33,12 @@ For more details, see [Microsoft Purview records management](/microsoft-365/comp
 
 The records management API is defined in the OData subnamespace, microsoft.graph.security.
 Explore the [Microsoft Purview records management APIs](security-recordsManagement-overview.md).
+
+## Subject rights request
+
+Microsoft Priva Subject Rights Requests provides powerful capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Microsoft Priva empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams. Learn more about [Priva Subject Rights Requests](/microsoft-365/compliance/privacy-management-subject-rights-requests).
+
+Explore the [subject rights request APIs](subjectrightsrequest-subjectrightsrequestapioverview.md).
 
 <!--
 ## Labels
