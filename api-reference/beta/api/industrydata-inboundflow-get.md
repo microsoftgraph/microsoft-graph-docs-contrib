@@ -67,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}
+GET https://graph.microsoft.com/beta/external/industryData/inboundFlows/7bd62d17-8c37-4494-f68d-08daddab2911
 ```
 
 ### Response
@@ -88,13 +88,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.industryData.inboundFlow",
-    "displayName": "String",
-    "readinessStatus": "String",
-    "dataDomain": "String",
-    "effectiveDateTime": "String (timestamp)",
-    "expirationDateTime": "String (timestamp)"
-  }
+    "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
+    "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
+    "displayName": "Inbound Flow",
+    "readinessStatus": "ready",
+    "dataDomain": "educationRostering",
+    "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
+    "expirationDateTime": "2023-03-13T11:10:46.924769Z"
 }
 ```

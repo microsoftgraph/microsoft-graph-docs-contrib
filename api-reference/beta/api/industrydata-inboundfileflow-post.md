@@ -19,13 +19,18 @@ Create a new [inboundFileFlow](../resources/industrydata-inboundFileFlow.md) obj
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                 |
-| :------------------------------------- | :---------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                               |
+| :------------------------------------- | :------------------------------------------------------------------------ |
 | Delegated (work or school account)     | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                              |
+| Delegated (personal Microsoft account) | Not supported.                                                            |
 | Application                            | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All |
 
 ## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 <!-- {
   "blockType": "ignored"
@@ -49,14 +54,14 @@ In the request body, supply a JSON representation of the [inboundFileFlow](../re
 
 You can specify the following properties when you create an **inboundFileFlow**.
 
-| Property           | Type            | Description                                                                                                                                                                                                                                                                  |
-| :----------------- | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                                               |
-| displayName        | String          | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                                                 |
-| effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required.                                                                                                                                                                                     |
-| expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.                                                                                                                                                                                       |
-| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). |
-| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).    |
+| Property           | Type                                                                              | Description                                                                                                                                                                                                                                          |
+| :----------------- | :-------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dataDomain         | inboundDomain                                                                     | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
+| displayName        | String                                                                            | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                         |
+| effectiveDateTime  | DateTimeOffset                                                                    | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
+| expirationDateTime | DateTimeOffset                                                                    | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.   |
+| dataConnector      | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                 |
+| year               | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                                            |
 
 ## Response
 

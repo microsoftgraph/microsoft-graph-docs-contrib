@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
+GET /external/industryData/inboundFlows/{inboundFlowId}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [inboundFlow](../resources/industrydata-inboundflow.md) object in the response body.
 
 ## Examples
 
@@ -62,12 +62,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_inboundfileflow"
+  "name": "get_inboundflow"
 }
 -->
 
 ```http
-
+GET https://graph.microsoft.com/beta/external/industryData/inboundFlows/7bd62d17-8c37-4494-f68d-08daddab2911
 ```
 
 ### Response
@@ -79,7 +79,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.inboundFileFlow"
+  "@odata.type": "microsoft.graph.industryData.inboundFlow"
 }
 -->
 
@@ -88,13 +88,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-    "displayName": "String",
-    "readinessStatus": "String",
-    "dataDomain": "String",
-    "effectiveDateTime": "String (timestamp)",
-    "expirationDateTime": "String (timestamp)"
-  }
+    "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
+    "displayName": "Inbound Flow",
+    "readinessStatus": "ready",
+    "dataDomain": "educationRostering",
+    "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
+    "expirationDateTime": "2023-03-13T11:10:46.924769Z"
 }
 ```

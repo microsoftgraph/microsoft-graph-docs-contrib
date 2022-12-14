@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-DELETE /external/industryData/inboundFlows/{inboundFlowId}/$ref
+DELETE /external/industryData/inboundFlows/{inboundFlowId}
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following is an example of a request.
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}
+DELETE https://graph.microsoft.com/beta/external/industryData/inboundFlows/0c629a1a-a85c-4365-bdf0-623a32ca69cb
 ```
 
 ### Response

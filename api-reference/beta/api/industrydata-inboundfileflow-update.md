@@ -19,10 +19,10 @@ Update the properties of an [inboundFileFlow](../resources/industrydata-inboundf
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                 |
-| :------------------------------------- | :---------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                               |
+| :------------------------------------- | :------------------------------------------------------------------------ |
 | Delegated (work or school account)     | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                              |
+| Delegated (personal Microsoft account) | Not supported.                                                            |
 | Application                            | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All |
 
 ## HTTP request
@@ -47,13 +47,13 @@ PATCH /external/industryData/inboundFlows/{inboundFlowId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property           | Type            | Description                                                                                                                                                                                                                                                                  |
-| :----------------- | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName        | String          | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                                                     |
-| effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). Required.                                                                                                             |
-| expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). Optional.                                                                                                               |
+| Property           | Type           | Description                                                                                                                                                                                                                                          |
+| :----------------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName        | String         | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                         |
+| effectiveDateTime  | DateTimeOffset | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
+| expirationDateTime | DateTimeOffset | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.   |
 
-## Response
+### Response
 
 If successful, this method returns a `204 No Content` response code.
 
@@ -75,7 +75,7 @@ Content-Type: application/json
 Content-length: 246
 
 {
-  "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
+  "@odata.type": "#microsoft.graph.industryData.inboundFlow",
   "displayName": "String",
   "effectiveDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)"
