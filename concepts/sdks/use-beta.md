@@ -127,4 +127,4 @@ client := msgraphsdk.NewGraphServiceClient(adapter)
 
 
 ## See also
-[SDKs in preview or GA status](sdk-overview.md#sdks-in-preview-or-ga-status).
+[SDKs in preview or GA status](sdks-overview.md#sdks-in-preview-or-ga-status).
