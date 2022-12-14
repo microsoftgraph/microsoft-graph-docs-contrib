@@ -88,13 +88,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
-    "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
-    "displayName": "API Monitor 68770985",
-    "startDate": "2022-09-01",
-    "endDate": "2023-06-15",
-    "year": {
-        "code": "2022"
-    }
+  "@odata.type": "#microsoft.graph.industryData.industryDataRun",
+  "id": "918d4a8f-599b-4f6a-b409-e892855db534",
+  "displayName": "Run 2023-11-01 11:10 UTC",
+  "endDateTime": null,
+  "startDateTime": "2023-11-01T11:10:46.924769Z",
+  "status": "running"
 }
 ```
