@@ -2742,6 +2742,280 @@
       "CreatedDateTime": "2022-08-09T05:35:55.0887308Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "horizontalSectionLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **horizontalSectionLayoutType** enumeration type.",
+          "Target": "horizontalSectionLayoutType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pageLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageLayoutType** enumeration type.",
+          "Target": "pageLayoutType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pagePromotionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **pagePromotionType** enumeration type.",
+          "Target": "pagePromotionType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sectionEmphasisType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sectionEmphasisType** enumeration type.",
+          "Target": "sectionEmphasisType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "titleAreaLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **titleAreaLayoutType** enumeration type.",
+          "Target": "titleAreaLayoutType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "titleAreaTextAlignmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **titleAreaTextAlignmentType** enumeration type.",
+          "Target": "titleAreaTextAlignmentType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metaDataKeyStringPair",
+          "ChangeType": "Addition",
+          "Description": "Added the [metaDataKeyStringPair](https://learn.microsoft.com/en-us/graph/api/resources/metaDataKeyStringPair?view=graph-rest-beta) resource type.",
+          "Target": "metaDataKeyStringPair"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metaDataKeyValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [metaDataKeyValuePair](https://learn.microsoft.com/en-us/graph/api/resources/metaDataKeyValuePair?view=graph-rest-beta) resource type.",
+          "Target": "metaDataKeyValuePair"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reactionsFacet",
+          "ChangeType": "Addition",
+          "Description": "Added the [reactionsFacet](https://learn.microsoft.com/en-us/graph/api/resources/reactionsFacet?view=graph-rest-beta) resource type.",
+          "Target": "reactionsFacet"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serverProcessedContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [serverProcessedContent](https://learn.microsoft.com/en-us/graph/api/resources/serverProcessedContent?view=graph-rest-beta) resource type.",
+          "Target": "serverProcessedContent"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sitePageData",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sitePageData** resource type.",
+          "Target": "sitePageData"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "titleArea",
+          "ChangeType": "Addition",
+          "Description": "Added the [titleArea](https://learn.microsoft.com/en-us/graph/api/resources/titleArea?view=graph-rest-beta) resource type.",
+          "Target": "titleArea"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webPartData",
+          "ChangeType": "Addition",
+          "Description": "Added the [webPartData](https://learn.microsoft.com/en-us/graph/api/resources/webPartData?view=graph-rest-beta) resource type.",
+          "Target": "webPartData"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webPartPosition",
+          "ChangeType": "Addition",
+          "Description": "Added the [webPartPosition](https://learn.microsoft.com/en-us/graph/api/resources/webPartPosition?view=graph-rest-beta) resource type.",
+          "Target": "webPartPosition"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "canvasLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the [canvasLayout](https://learn.microsoft.com/en-us/graph/api/resources/canvasLayout?view=graph-rest-beta) resource.",
+          "Target": "canvasLayout"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "horizontalSection",
+          "ChangeType": "Addition",
+          "Description": "Added the [horizontalSection](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSection?view=graph-rest-beta) resource and associated methods.",
+          "Target": "horizontalSection"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "horizontalSectionColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [horizontalSectionColumn](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSectionColumn?view=graph-rest-beta) resource and associated methods.",
+          "Target": "horizontalSectionColumn"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageLayout** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageLayoutType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **pageLayoutType** property from the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "promotionKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **promotionKind** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "reactions",
+          "ChangeType": "Addition",
+          "Description": "Added the **reactions** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "showComments",
+          "ChangeType": "Addition",
+          "Description": "Added the **showComments** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "showRecommendedPages",
+          "ChangeType": "Addition",
+          "Description": "Added the **showRecommendedPages** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "thumbnailWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **thumbnailWebUrl** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "titleArea",
+          "ChangeType": "Addition",
+          "Description": "Added the **titleArea** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "webParts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **webParts** property from the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "canvasLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the **canvasLayout** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webParts",
+          "ChangeType": "Addition",
+          "Description": "Added the **webParts** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "standardWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [standardWebPart](https://learn.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-beta) resource.",
+          "Target": "standardWebPart"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "textWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [textWebPart](https://learn.microsoft.com/en-us/graph/api/resources/textWebPart?view=graph-rest-beta) resource.",
+          "Target": "textWebPart"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verticalSection",
+          "ChangeType": "Addition",
+          "Description": "Added the [verticalSection](https://learn.microsoft.com/en-us/graph/api/resources/verticalSection?view=graph-rest-beta) resource and associated methods.",
+          "Target": "verticalSection"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPositionOfWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPositionOfWebPart](https://learn.microsoft.com/en-us/graph/api/webPart?view=graph-rest-beta) method to the [webPart](https://docs.microsoft.com/en-us/graph/api/webPart?view=graph-rest-beta) resource.",
+          "Target": "webPart"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getWebPartsByPosition",
+          "ChangeType": "Addition",
+          "Description": "Added the [getWebPartsByPosition](https://learn.microsoft.com/en-us/graph/api/sitePage?view=graph-rest-beta) method to the [sitePage](https://docs.microsoft.com/en-us/graph/api/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        }
+      ],
+      "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-05T03:42:44.8308328Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     }
   ]
 }
