@@ -21,9 +21,9 @@ Additionally IndustryData provides resources that you can use to retrieve statis
 
 The system is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process will combine and normalize the imported data to land in the tenants Data Lake.
 
-![industryData overview](../../concepts/images/industryData-overview-1.png)
+![industryData overview](../../../concepts/images/industryData-overview-1.png)
 
-First, you'll need to connect to your institution’s data. You'll define an Inbound flow: Create **sourceSystemDefinition**, **dataConnector**, and **yearTimePeriodDefinition**. By default, your inbound flow will activate twice (2x) daily (called a Run).
+First, you'll need to connect to your institution's data. You'll define an Inbound flow: Create **sourceSystemDefinition**, **dataConnector**, and **yearTimePeriodDefinition**. By default, your inbound flow will activate twice (2x) daily (called a Run).
 
 When the Run starts, it will connect to the Inbound flow's **sourceSystemDefinition**, **dataConnector** and perform basic validation. Basic validation ensures that the connection is correct, for OneRoster API as a source, or the filenames and headers are correct for CSV as a source.
 
