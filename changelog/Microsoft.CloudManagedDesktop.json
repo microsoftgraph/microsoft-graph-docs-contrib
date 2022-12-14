@@ -23,8 +23,8 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "regionGroup",
                     "ChangeType": "Addition",
-                    "Description": "Added the regionGroup property to the cloudPcDomainJoinConfiguration resource.",
-                    "Target": "cloudPcDomainJoinConfiguration"
+                    "Description": "Added the regionGroup property to the **cloudPcRegionGroup** resource.",
+                    "Target": "cloudPcRegionGroup"
                 }
             ],
             "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
