@@ -48,13 +48,13 @@ PATCH /external/industryData/inboundFlows/{inboundFlowId}/dataConnector
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property    | Type   | Description                               |
-| :---------- | :----- | :---------------------------------------- |
-| displayName | String | The name of the data connector. Required. |
+| Property    | Type   | Description                                                                                                                           |
+| :---------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| displayName | String | The name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [industryDataConnector](../resources/industrydata-industrydataconnector.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object in the response body.
 
 ## Examples
 
@@ -64,26 +64,23 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_industrydataconnector"
+  "name": "update_azuredatalakeconnector"
 }
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/external/industryData/dataConnectors/{industryDataConnectorId}
-Content-Type: application/json
-Content-length: 104
-
+PATCH /external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
 {
-  "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
-  "displayName": "String"
+    "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",
+    "displayName": "API Monitor 60201009"
 }
 ```
 
 ### Response
 
-The following is an example of the response.
+### Response
 
-> **Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -92,11 +89,5 @@ The following is an example of the response.
 -->
 
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
-  "displayName": "String"
-}
+HTTP/1.1 204 No Content
 ```

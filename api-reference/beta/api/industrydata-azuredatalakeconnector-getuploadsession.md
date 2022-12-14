@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
+GET /external/industryData/dataConnectors/{industryDataConnectorId}/microsoft.graph.industryData.azureDataLakeConnector/GetUploadSession
 ```
 
 ## Function parameters
@@ -72,7 +72,7 @@ The following is an example of a request.
 -->
 
 ```http
-
+GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271/microsoft.graph.industryData.azureDataLakeConnector/GetUploadSession
 ```
 
 ### Response
@@ -93,8 +93,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.industryData.fileUploadSession"
-  }
+    "sessionUrl": "https://azureBlobSas.example/",
+    "sessionExpirationDateTime": "2022-12-14T20:07:39.5792917Z",
+    "containerId": "40fe691e-a4b8-4b47-8c86-08daddab241e",
+    "containerExpirationDateTime": "2022-12-16T06:07:39.3096785Z"
 }
 ```

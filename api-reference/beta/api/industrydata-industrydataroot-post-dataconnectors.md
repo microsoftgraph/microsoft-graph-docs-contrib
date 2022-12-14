@@ -75,8 +75,9 @@ Content-Type: application/json
 Content-length: 104
 
 {
-  "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
-  "displayName": "String"
+    "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+    "displayName": "CSV connector"
+    "sourceSystem@odata.bind": "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')"
 }
 ```
 
@@ -98,7 +99,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
-  "displayName": "String"
+    "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+    "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+    "displayName": "CSV connector"
 }
 ```

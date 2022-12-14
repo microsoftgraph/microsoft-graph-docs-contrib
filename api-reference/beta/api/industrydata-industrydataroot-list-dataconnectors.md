@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/inboundFlows/{inboundFlowId}/dataConnector
+GET /external/industryData/dataConnectors
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [industryDataConnector](../resources/industrydata-industrydataconnector.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) objects in the response body.
 
 ## Examples
 
@@ -62,12 +62,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_industrydataconnector"
+  "name": "list_azuredatalakeconnector"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}/dataConnector
+GET https://graph.microsoft.com/beta/external/industryData/dataConnectors
 ```
 
 ### Response
@@ -79,7 +79,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.industryData.industryDataConnector)"
+  "@odata.type": "Collection(microsoft.graph.industryData.azureDataLakeConnector)"
 }
 -->
 
@@ -88,11 +88,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
-      "displayName": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/dataConnectors",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/external/industryData/dataConnectors?$skiptoken=id-%27ff8c6a87-31d2-43ad-e990-08dacc85e8cd%27",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+            "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+            "displayName": "Rostering connector"
+        },
+        {
+            "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+            "id": "f02aa680-4cdc-4d57-f4e1-08daddab2271",
+            "displayName": "CSV connector"
+        }
+    ]
 }
 ```

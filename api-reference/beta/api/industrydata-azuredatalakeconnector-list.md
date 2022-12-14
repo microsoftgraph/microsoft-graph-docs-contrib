@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET ** Collection URI for microsoft.graph.industryData.azureDataLakeConnector not found
+GET /external/industryData/dataConnectors
 ```
 
 ## Optional query parameters
@@ -67,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.industryData.azureDataLakeConnector not found
+GET https://graph.microsoft.com/beta/external/industryData/dataConnectors
 ```
 
 ### Response
@@ -88,11 +88,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
-      "displayName": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/dataConnectors",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/external/industryData/dataConnectors?$skiptoken=id-%27ff8c6a87-31d2-43ad-e990-08dacc85e8cd%27",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+            "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+            "displayName": "Rostering connector"
+        },
+        {
+            "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+            "id": "f02aa680-4cdc-4d57-f4e1-08daddab2271",
+            "displayName": "CSV connector"
+        }
+    ]
 }
 ```

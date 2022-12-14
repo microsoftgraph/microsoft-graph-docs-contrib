@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
+GET /external/industryData/dataConnectors/{industryDataConnectorId}
 ```
 
 ## Optional query parameters
@@ -67,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-
+GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
 ```
 
 ### Response
@@ -88,9 +88,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
-    "displayName": "String"
-  }
+    "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+    "displayName": "CSV connector"
 }
 ```

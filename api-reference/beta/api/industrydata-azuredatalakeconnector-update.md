@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
+PATCH https://graph.microsoft.com/beta/external/industryData/dataConnectors/{industryDataConnectorId}
 ```
 
 ## Request headers
@@ -68,14 +68,18 @@ The following is an example of a request.
 -->
 
 ```http
-
+PATCH /external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
+{
+    "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",
+    "displayName": "API Monitor 60201009"
+}
 ```
 
 ### Response
 
-The following is an example of the response
+### Response
 
-> **Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -84,11 +88,5 @@ The following is an example of the response
 -->
 
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
-  "displayName": "String"
-}
+HTTP/1.1 204 No Content
 ```

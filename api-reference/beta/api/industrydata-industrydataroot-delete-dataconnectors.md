@@ -33,8 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-DELETE /external/industryData/dataConnectors/{industryDataConnectorId}/$ref
-DELETE /external/industryData/inboundFlows/{inboundFlowId}/dataConnector/$ref
+DELETE /external/industryData/dataConnectors/{industryDataConnectorId}
 ```
 
 ## Request headers
@@ -59,12 +58,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_industrydataconnector"
+  "name": "delete_azuredatalakeconnector"
 }
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/external/industryData/dataConnectors/{industryDataConnectorId}
+DELETE /external/industryData/dataConnectors/8c010e87-c28b-4350-bdc1-65ec29258b93
 ```
 
 ### Response

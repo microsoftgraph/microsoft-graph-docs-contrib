@@ -53,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object in the response body.
 
 ## Examples
 
@@ -63,12 +63,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_industrydataconnector"
+  "name": "get_azuredatalakeconnector"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/{industryDataConnectorId}
+GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
 ```
 
 ### Response
@@ -80,7 +80,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.industryDataConnector"
+  "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector"
 }
 -->
 
@@ -89,9 +89,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
-    "displayName": "String"
-  }
+    "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+    "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+    "displayName": "CSV connector"
 }
 ```

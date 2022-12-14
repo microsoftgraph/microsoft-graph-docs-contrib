@@ -1,19 +1,19 @@
 ---
-title: "Update fileDataConnector"
-description: "Update the properties of a fileDataConnector object."
+title: "Create azureDataLakeConnector"
+description: "Create a new azureDataLakeConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Update fileDataConnector
+# Create industryDataConnector
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [fileDataConnector](../resources/industrydata-filedataconnector.md) object.
+Create a new [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
+POST /external/industryData/dataConnectors
 ```
 
 ## Request headers
@@ -45,15 +45,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
 
-| Property    | Type   | Description                                                                                                                           |
-| :---------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| displayName | String | The name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required. |
+You can specify the following properties when you create an **industryDataConnector**.
+
+| Property    | Type   | Description                               |
+| :---------- | :----- | :---------------------------------------- |
+| displayName | String | The name of the data connector. Required. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [fileDataConnector](../resources/industrydata-filedataconnector.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object in the response body.
 
 ## Examples
 
@@ -63,12 +65,20 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_filedataconnector"
+  "name": "create_industrydataconnector_from_"
 }
 -->
 
 ```http
+POST https://graph.microsoft.com/beta/external/industryData/dataConnectors
+Content-Type: application/json
+Content-length: 104
 
+{
+    "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+    "displayName": "CSV connector"
+    "sourceSystem@odata.bind": "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')"
+}
 ```
 
 ### Response
@@ -79,16 +89,18 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.industryData.industryDataConnector"
 }
 -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.fileDataConnector",
-  "displayName": "String"
+    "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+    "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+    "displayName": "CSV connector"
 }
 ```
