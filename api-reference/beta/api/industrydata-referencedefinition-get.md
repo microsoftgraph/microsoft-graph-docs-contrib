@@ -67,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/referenceDefinitions/{referenceDefinitionId}
+GET https://graph.microsoft.com/beta/external/industryData/referenceDefinitions/RefAcademicSubject-01
 ```
 
 ### Response
@@ -88,15 +88,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.industryData.referenceDefinition",
-    "code": "String",
-    "createdDateTime": "String (timestamp)",
-    "isDisabled": "Boolean",
-    "lastModifiedDateTime": "String (timestamp)",
-    "referenceType": "String",
-    "sortIndex": "Integer",
-    "source": "String"
-  }
+    "id": "RefAcademicSubject-01",
+    "referenceType": "RefAcademicSubject",
+    "code": "01",
+    "source": "microsoft.com",
+    "isDisabled": false,
+    "sortIndex": 10,
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
 }
 ```

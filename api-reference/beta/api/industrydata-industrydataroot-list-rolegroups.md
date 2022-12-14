@@ -90,11 +90,23 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.industryData.roleGroup",
-      "displayName": "String",
+      "id": "staff",
+      "displayName": "Staff",
       "roles": [
         {
-          "@odata.type": "microsoft.graph.industryData.roleReferenceValue"
+          "code": "faculty"
+        },
+        {
+          "code": "teacher"
+        },
+      ]
+    },
+    {
+      "id": "students",
+      "displayName": "Students",
+      "roles": [
+        {
+          "code": "student"
         }
       ]
     }

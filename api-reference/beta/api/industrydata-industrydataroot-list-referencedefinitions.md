@@ -90,14 +90,64 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.industryData.referenceDefinition",
-      "code": "String",
-      "createdDateTime": "String (timestamp)",
-      "isDisabled": "Boolean",
-      "lastModifiedDateTime": "String (timestamp)",
-      "referenceType": "String",
-      "sortIndex": "Integer",
-      "source": "String"
+      "id": "RefEmailAddressType-home",
+      "referenceType": "RefEmailAddressType",
+      "code": "home",
+      "source": "ceds.ed.gov",
+      "isDisabled": false,
+      "sortIndex": 10,
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "RefGradeLevel-01",
+      "referenceType": "RefGradeLevel",
+      "code": "01",
+      "source": "ceds.ed.gov",
+      "isDisabled": false,
+      "sortIndex": 60,
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "RefGradeLevel-02",
+      "referenceType": "RefGradeLevel",
+      "code": "02",
+      "source": "ceds.ed.gov",
+      "isDisabled": false,
+      "sortIndex": 70,
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "RefGradeLevel-undergraduate",
+      "referenceType": "RefGradeLevel",
+      "code": "undergraduate",
+      "source": "microsoft.com",
+      "isDisabled": false,
+      "sortIndex": 270,
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "RefIdentifierType-username",
+      "referenceType": "RefIdentifierType",
+      "code": "username",
+      "source": "imsglobal.org",
+      "isDisabled": false,
+      "sortIndex": 40,
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "RefOrgType-academicTrust",
+      "referenceType": "RefOrgType",
+      "code": "academicTrust",
+      "source": "microsoft.com",
+      "isDisabled": false,
+      "sortIndex": 140,
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
     }
   ]
 }

@@ -67,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/roleGroups/{roleGroupId}
+GET https://graph.microsoft.com/beta/external/industryData/roleGroups/students
 ```
 
 ### Response
@@ -88,14 +88,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.industryData.roleGroup",
-    "displayName": "String",
-    "roles": [
-      {
-        "@odata.type": "microsoft.graph.industryData.roleReferenceValue"
-      }
-    ]
-  }
+  "id": "students",
+  "displayName": "Students",
+  "roles": [
+    {
+      "code": "student"
+    }
+  ]
 }
 ```
