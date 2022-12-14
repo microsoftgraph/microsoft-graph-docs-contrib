@@ -2622,32 +2622,6 @@
         {
             "ChangeList": [
               {
-                "Id": "edcf2c13-d390-4e75-95ed-3ed7733d22cd",
-                "ApiChange": "cloudPCs]",
-                "ChangedApiName": "cloudPCs",
-                "ChangeType": "Change",
-                "Description": "Removed the **cloudPCs** resource type",
-                "Target": "user"
-              },
-              {
-                "Id": "edcf2c13-d390-4e75-95ed-3ed7733d22cd",
-                "ApiChange": "EntitySet",
-                "ChangedApiName": "organizationAllowedDataLocations",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **organizationAllowedDataLocations** resource type",
-                "Target": "DirectoryDataService"
-              }
-            ],
-            "Id": "edcf2c13-d390-4e75-95ed-3ed7733d22cd",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2022-11-16T04:14:41.3434956Z",
-            "WorkloadArea": "Identity and access",
-            "SubArea": "Directory management"
-        },
-        {
-            "ChangeList": [
-              {
                 "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
                 "ApiChange": "Method",
                 "ChangedApiName": "retryPartnerAgentInstallation",
