@@ -28,11 +28,11 @@ SDKs are currently available for the following languages:
 
 
 ## SDKs in preview or GA status
-A release of an SDK can be in preview status upon debut or a significant update. Do not assume that a preview release will always be promoted to generally available (GA) status. 
+A release of an SDK can be in _preview_ status upon debut or a significant update. Do not assume that a preview release will always be promoted to generally available (GA) status. 
 
-In addition, do not use a preview release of an SDK in production apps, regardless of whether it uses the Microsoft Graph API v1.0 or beta endpoint.
+In addition, do not use a preview release of an SDK in production apps, regardless of the version of Microsoft Graph API (v1.0 or beta) it uses.
 
-A release of an SDK in GA status can access the Microsoft Graph API v1.0 endpoint or beta endpoint as specified. Because Microsoft Graph APIs in the beta endpoint are subject to breaking changes, do not use a GA release of an SDK that uses the Microsoft Graph API beta endpoint in production apps.
+A release of an SDK in _GA_ status can use the Microsoft Graph API v1.0 endpoint or beta endpoint as specified. Because Microsoft Graph APIs in the beta endpoint are subject to breaking changes, do not use a GA release of an SDK that uses the Microsoft Graph API beta endpoint in production apps.
 
 
 ## Microsoft 365 developer subscription
