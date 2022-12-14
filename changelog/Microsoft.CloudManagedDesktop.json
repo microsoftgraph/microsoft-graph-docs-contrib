@@ -3,40 +3,6 @@
         {
             "ChangeList": [
                 {
-                    "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "rpaBox",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `rpaBox` member to the **cloudPcManagementService** enumeration.",
-                    "Target": "cloudPcManagementService"
-                },
-                {
-                    "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
-                    "ApiChange": "Enumeration",
-                    "ChangedApiName": "cloudPcRegionGroup",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcRegionGroup** enumeration type.",
-                    "Target": "cloudPcRegionGroup"
-                },
-                {
-                    "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "regionGroup",
-                    "ChangeType": "Addition",
-                    "Description": "Added the regionGroup property to the cloudPcDomainJoinConfiguration resource.",
-                    "Target": "cloudPcDomainJoinConfiguration"
-                }
-            ],
-            "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2022-10-20T02:22:10.3002588Z",
-            "WorkloadArea": "Devices and apps",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
                     "Id": "234823ab-d3b3-4ad6-9eab-0db8fe3d93a7",
                     "ApiChange": "Member",
                     "ChangedApiName": "udpConnectivityCheckStunUrlNotAllowListed",
