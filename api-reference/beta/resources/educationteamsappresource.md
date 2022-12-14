@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "educationExcelResource resource",
+  "description": "educationTeamsAppResource resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
