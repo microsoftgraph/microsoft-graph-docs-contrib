@@ -17,11 +17,11 @@ Represents the measure of total, active, and inactive entries for a single entit
 
 ## Properties
 
-| Property | Type  | Description                             |
-| :------- | :---- | :-------------------------------------- |
-| active   | Int32 | Count of the entity marked as Active.   |
-| inactive | Int32 | Count of the entity marked as Inactive. |
-| total    | Int32 | Total count of the entity.              |
+| Property | Type  | Description                                               |
+| :------- | :---- | :-------------------------------------------------------- |
+| active   | Int32 | The count of entries for the entity marked as `Active`.   |
+| inactive | Int32 | The count of entries for the entity marked as `Inactive`. |
+| total    | Int32 | Total count of the entity.                                |
 
 ## Relationships
 
