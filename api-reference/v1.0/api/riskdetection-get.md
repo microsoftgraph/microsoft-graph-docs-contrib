@@ -1,7 +1,7 @@
 ---
 title: "Get riskDetection"
 description: "Read the properties and relationships of a riskDetection object."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
