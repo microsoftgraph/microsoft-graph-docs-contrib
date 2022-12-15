@@ -24,6 +24,31 @@ The status of a long-running operation.
 |statusDetail|String|Details about the status of the operation.|
 
 
+### longRunningOperationStatus values
+
+| Member| Description
+|:-----------------|
+|notStarted| Operation not started |
+|running| Operation is in running state|
+|succeeded| Operation succeeded |
+|failed| Operation failed |
+|unknownFutureValue| Unknown fuure value |
+
+
+### simulationStatus values
+
+|Member|Description |
+|:---|:---|
+|unknown| The simulation status is not defined. |
+|draft| The simulation is in draft mode. |
+|running| The simulation is running. |
+|scheduled| The simulation is scheduled. |
+|succeeded| The simulation has succeeded. |
+|failed| The simulation has failed. |
+|cancelled| The simulation is cancelled. |
+|excluded| The simulation is excluded. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
