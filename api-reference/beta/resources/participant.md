@@ -40,6 +40,7 @@ Represents a participant in a call.
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
 | metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
+| restrictedExperience | [onlineMeetingRestricted](onlineMeetingRestricted.md)        | Specifies the reasons if the participant is having a restricted experience. |
 
 ## Relationships
 None.
@@ -63,7 +64,8 @@ The following is a JSON representation of the resource.
   "isMuted": true,
   "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
   "metadata": "String",
-  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
+  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" },
+  "restrictedExperience": { "@odata.type": "#microsoft.graph.onlineMeetingRestricted" }
 }
 ```
 
@@ -79,5 +81,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
