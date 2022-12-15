@@ -499,7 +499,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "securityReportRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [securityReportRoot](https://microsoft.com/en-us/graph/api/resources/securityReportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityReportRoot?view=graph-rest-beta) resource",
           "Target": "securityReportRoot"
         },
         {
@@ -507,7 +507,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationRepeatOffenders",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationRepeatOffenders](https://microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationRepeatOffenders](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
           "Target": "securityReportRoot"
         },
         {
@@ -515,7 +515,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
           "Target": "securityReportRoot"
         },
         {
@@ -523,7 +523,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityReportRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/securityreportsroot-getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityReportRoot?view=graph-rest-beta) resource.",
           "Target": "securityReportRoot"
         },
         {
