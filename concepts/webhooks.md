@@ -269,9 +269,9 @@ The following table lists the latency to expect between an event happening in th
 
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription)
+- [subscription resource type](/graph/api/resources/subscription)
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
-- [Change notifications and change tracking training module](/training/modules/msgraph-changenotifications-trackchanges)
+- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact
