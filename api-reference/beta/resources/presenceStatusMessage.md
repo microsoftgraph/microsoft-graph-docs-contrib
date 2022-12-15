@@ -37,11 +37,8 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "message": {
-    "content": "string",
-    "contentType": "string"
-  },
+  "message": {"@odata.type": "#microsoft.graph.itemBody"},
   "publishedDateTime": "string",
-  "expiryDateTime": {"@odata.type": "#microsoft.graph.itemBody"}
+  "expiryDateTime": {"@odata.type": "#microsoft.graph.dateTimeTimeZone"}
 }
 ```
