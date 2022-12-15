@@ -48,7 +48,7 @@ Use the following steps to publish a connection for your custom connector:
     - **additionalCrawlsSupported** is optional; you can define crawl types in addition to full and periodic full crawl, depending on your implementation and the data source support.
 
     >[!Note]
-    > The manifest file is generated automatically in the output directory of your project if you're using the C# project template. You can edit/update the manifest file as required.
+    > The manifest file is automatically generated in the output directory of your project if you're using the C# project template. You can edit/update the manifest file as required.
 
 4. Name the connection. For details, see [Step 2: Name the connection](/microsoftsearch/configure-connector#step-2-name-the-connection).
 

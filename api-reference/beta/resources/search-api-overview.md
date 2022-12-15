@@ -245,6 +245,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Use search display layout](/graph/search-concept-display-layout)
   - [Search with application permission](/graph/search-concept-searchall)
   - [XRANK search results](/graph/search-concept-xrank)
+  - [Search interleaving results](/graph/search-concept-interleaving)
 
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

@@ -1,6 +1,6 @@
 ---
-title: "Grant and revoke API permissions using Microsoft Graph"
-description: "Learn how to use Microsoft Graph to grant and revoke delegated and application API permissions for an app."
+title: "Grant or revoke API permissions programmatically"
+description: "Learn how to use Microsoft Graph to programmatically grant and revoke delegated and application API permissions for an app. This method is an alternative to interactive admin consent."
 author: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -8,7 +8,7 @@ zone_pivot_groups: grant-api-permissions
 ms.custom: template-how-to
 ---
 
-# Grant and revoke API permissions using Microsoft Graph
+# Grant or revoke API permissions programmatically
 
 When you grant API permissions to a client app in Azure Active Directory (Azure AD), the permission grants are recorded as objects that can be accessed, updated, or deleted like your data. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
@@ -619,14 +619,14 @@ Content-type: application/json
 
 ## Step 3: Revoke delegated permissions granted to a service principal on behalf of a user [Optional]
 
-If a service principal has been granted multiple delegated permission grants on behalf of a user, you can choose to revoke either specific grants or all grants.
+If a service principal has been granted multiple delegated permission grants on behalf of a user, you can choose to revoke either specific grants or all grants. Use this method to remove and revoke consent for the delegated permissions that you've assigned to Graph Explorer.
 
 + To revoke one or some grants, run a PATCH request on the oauth2PermissionGrant object and specify only the delegated permissions to retain in the **scope** parameter.
 + To revoke all grants, run a DELETE request on the oauth2PermissionGrant object.
 
 ### Request
 
-The following request revokes all permission grants and retains only the `User.Read.All` permission grant.
+The following request revokes all permission grants and retains only the `User.Read.All` permission grant. The permissions are removed and the consent that was previously granted is revoked.
 
 
 # [HTTP](#tab/http)
