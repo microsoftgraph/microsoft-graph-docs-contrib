@@ -6133,6 +6133,32 @@
       "CreatedDateTime": "2022-11-08T19:48:01.454Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e77b3b8-1396-49ab-b2d0-a26bef7ddb8e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamSummary](https://docs.microsoft.com/en-us/graph/api/resources/teamSummary?view=graph-rest-v1.0) resource type.",
+          "Target": "teamSummary"
+        },
+        {
+          "Id": "3e77b3b8-1396-49ab-b2d0-a26bef7ddb8e",
+          "ApiChange": "Property",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the **summary** property to [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-v1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "3e77b3b8-1396-49ab-b2d0-a26bef7ddb8e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-15T23:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
