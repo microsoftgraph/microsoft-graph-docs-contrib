@@ -44,14 +44,14 @@ Once a sharee or delegate has been set up for a calendar, you can [update](../ap
 
 | Member        | Description |
 |:--------------|:------------|
-| none | Calendar is not shared with the user. |
-| freeBusyRead | User is a sharee who can view free/busy status of the owner on the calendar. |
-| limitedRead | User is a sharee who can view free/busy status, and titles and locations of the events on the calendar. |
-| read | User is a sharee who can view all the details of the events on the calendar, except for the owner's private events. |
-| write | User is a sharee who can view all the details (except for private events) and edit events on the calendar. |
+| custom | User has custom permissions to the calendar. |
 | delegateWithoutPrivateEventAccess | User is a delegate who has write access but cannot view information of the owner's private events on the calendar. |
 | delegateWithPrivateEventAccess | User is a delegate who has write access and can view information of the owner's private events on the calendar. |
-| custom | User has custom permissions to the calendar. |
+| freeBusyRead | User is a sharee who can view free/busy status of the owner on the calendar. |
+| limitedRead | User is a sharee who can view free/busy status, and titles and locations of the events on the calendar. |
+| none | Calendar is not shared with the user. |
+| read | User is a sharee who can view all the details of the events on the calendar, except for the owner's private events. |
+| write | User is a sharee who can view all the details (except for private events) and edit events on the calendar. |
 
 ## JSON representation
 
