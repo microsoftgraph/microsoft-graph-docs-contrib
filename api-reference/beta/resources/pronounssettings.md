@@ -1,6 +1,6 @@
 ---
 title: "pronounsSettings resource type"
-description: "Represents a Settings to control availability of Pronouns in the tenant"
+description: "This resource represents a Setting to control the availability of Pronouns in the tenant"
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a Setting to control the availability of Pronouns in the tenant.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|**TODO: Add Description**|
+|isEnabledInOrganization|Boolean|`true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `false`.|
 
 ## Relationships
 None.
@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.pronounsSettings",
-  "id": "String (identifier)",
   "isEnabledInOrganization": "Boolean"
 }
 ```

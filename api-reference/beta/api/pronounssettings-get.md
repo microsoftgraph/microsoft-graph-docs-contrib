@@ -80,7 +80,6 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.pronounsSettings",
-    "id": "5f2902eb-a3e6-14a4-731d-8ecede0067b2",
     "isEnabledInOrganization": "Boolean"
   }
 }
