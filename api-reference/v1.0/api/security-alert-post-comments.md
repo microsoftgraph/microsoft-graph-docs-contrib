@@ -1,28 +1,26 @@
 ---
-title: "Create comment for incident"
-description: "Adds a comment to the end of the incident comments list"
-ms.date: 09/09/2021
+title: "Create comment for alert"
+description: "Adds a comment to the end of the alert comments list"
+ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Create comment
+# Create comment for alert
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Create a comment for an existing [incident](../resources/security-incident.md) based on the specified incident **id** property.
+Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **id** property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|SecurityIncident.ReadWrite.All|
+|Delegated (work or school account)|SecurityAlert.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|SecurityIncident.ReadWrite.All|
+|Application|SecurityAlert.ReadWrite.All|
 
 ## HTTP request
 
@@ -31,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /security/incidents/{incidentId}/comments
+POST /security/alerts_v2/{alertId}/comments
 ```
 
 ## Request headers
@@ -50,7 +48,7 @@ In the request body, use `@odata.type` to specify the parameter type of [alertCo
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated list of all [alertComment](../resources/security-alertcomment.md) resources of the incident.
+If successful, this method returns a `200 OK` response code and an updated list of all [alertComment](../resources/security-alertcomment.md) resources for the specified alert.
 
 ## Examples
 
@@ -61,12 +59,12 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["3962396"],
-  "name": "incident_addcomment"
+  "sampleKeys": ["da637865765418431569_-773071023"],
+  "name": "alert_v2_addcomment"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/incidents/3962396/comments
+POST https://graph.microsoft.com/v1.0/security/alerts_v2/da637865765418431569_-773071023/comments
 Content-Type: application/json
 
 {
@@ -74,12 +72,6 @@ Content-Type: application/json
     "comment": "Demo for docs"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/incident-addcomment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response
@@ -102,12 +94,12 @@ Content-type: application/json
         {
             "comment": "test",
             "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
-            "createdDateTime": "2022-10-13T07:08:45.4626766Z"
+            "createdDateTime": "2022-10-13T07:08:30.1606766Z"
         },
         {
             "comment": "Demo for docs",
             "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
-            "createdDateTime": "2022-10-13T07:08:50.5821324Z"
+            "createdDateTime": "2022-10-13T07:08:40.3825324Z"
         }
     ]
 }
