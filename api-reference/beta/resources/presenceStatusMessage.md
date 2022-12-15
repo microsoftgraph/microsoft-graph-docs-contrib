@@ -38,13 +38,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "message": {
-    "content": "Hello I am in a meeting now",
-    "contentType": "text"
+    "content": "string",
+    "contentType": "string"
   },
-  "publishedDateTime": "2022-10-18T00:07:15.4012511Z",
-  "expiryDateTime": {
-    "dateTime": "9999-12-31T23:59:59.9999999",
-    "timeZone": "Pacific Standard Time"
-  }
+  "publishedDateTime": "string",
+  "expiryDateTime": {"@odata.type": "#microsoft.graph.itemBody"}
 }
 ```
