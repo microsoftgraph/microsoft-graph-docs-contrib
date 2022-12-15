@@ -2608,7 +2608,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "virtualNetworkLocation",
                 "ChangeType": "Addition",
-                "Description": "Added the `virtualNetworkLocation` property to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+                "Description": "Added the `virtualNetworkLocation` property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
                 "Target": "cloudPcOnPremisesConnection"
               }
             ],
