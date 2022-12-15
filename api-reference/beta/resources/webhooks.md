@@ -35,4 +35,4 @@ In general, subscription operations require read permission to the resource. For
 
 - [Subscription resource type](subscription.md)
 - [Change notifications and change tracking training module](/training/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications](./webhooks-lifecycle.md)
+- [Lifecycle notifications](/graph/webhooks-lifecycle.md)
