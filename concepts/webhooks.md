@@ -56,9 +56,14 @@ The client must store the subscription ID to correlate change notifications with
 
 #### Subscription request example
 
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
@@ -117,6 +122,10 @@ The client can renew a subscription with a specific expiration date of up to thr
 
 #### Subscription renewal example
 
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example-renewal"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
 Content-Type: application/json
@@ -132,6 +141,10 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/gra
 
 The client can stop receiving change notifications by deleting the subscription using its ID.
 
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example-delete"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
@@ -228,28 +241,28 @@ You can optionally configure the firewall that protects your notification URL to
 
 The following table lists the latency to expect between an event happening in the service and the delivery of the change notification.
 
-| Resource | Average latency | Maximum latency |
-|:-----|:-----|:-----|
-|[alert][] | Less than 3 minutes | 5 minutes |
-|[callRecord][] | Less than 15 minutes | 60 minutes |
-|[channel][] | Less than 10 seconds | 60 minutes |
-|[chat][] | Less than 10 seconds | 60 minutes |
-|[chatMessage][] | Less than 10 seconds | 1 minute |
-|[contact][] | Unknown | Unknown |
-|[conversation][] | Unknown | Unknown |
-|[conversationMember][] | Less than 10 seconds | 60 minutes |
-|[driveItem][] | Less than 1 minute | 5 minutes |
-|[event][] | Unknown | Unknown |
-|[group][] | Less than 2 minutes | 15 minutes |
-|[list][] | Less than 1 minute | 5 minutes |
-|[message][] | Unknown | Unknown |
-|[onlineMeeting][] | Less than 10 seconds | 1 minute |
-|[presence][] | Less than 10 seconds | 1 minute |
-|[printer][] | Less than 1 minute | 5 minutes |
-|[printTaskDefinition][] | Less than 1 minute | 5 minutes |
-|[team][] | Less than 10 seconds | 60 minutes |
-|[todoTask][] | Less than 2 minutes | 15 minutes |
-|[user][] | Less than 2 minutes | 15 minutes |
+| Resource                | Average latency      | Maximum latency |
+|:-------------------------|:----------------------|:-----------------|
+| [alert][]               | Less than 3 minutes  | 5 minutes       |
+| [callRecord][]          | Less than 15 minutes | 60 minutes      |
+| [channel][]             | Less than 10 seconds | 60 minutes      |
+| [chat][]                | Less than 10 seconds | 60 minutes      |
+| [chatMessage][]         | Less than 10 seconds | 1 minute        |
+| [contact][]             | Unknown              | Unknown         |
+| [conversation][]        | Unknown              | Unknown         |
+| [conversationMember][]  | Less than 10 seconds | 60 minutes      |
+| [driveItem][]           | Less than 1 minute   | 5 minutes       |
+| [event][]               | Unknown              | Unknown         |
+| [group][]               | Less than 2 minutes  | 15 minutes      |
+| [list][]                | Less than 1 minute   | 5 minutes       |
+| [message][]             | Unknown              | Unknown         |
+| [onlineMeeting][]       | Less than 10 seconds | 1 minute        |
+| [presence][]            | Less than 10 seconds | 1 minute        |
+| [printer][]             | Less than 1 minute   | 5 minutes       |
+| [printTaskDefinition][] | Less than 1 minute   | 5 minutes       |
+| [team][]                | Less than 10 seconds | 60 minutes      |
+| [todoTask][]            | Less than 2 minutes  | 15 minutes      |
+| [user][]                | Less than 2 minutes  | 15 minutes      |
 
 > [!NOTE]
 > The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
@@ -257,9 +270,6 @@ The following table lists the latency to expect between an event happening in th
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription)
-- [Get subscription](/graph/api/subscription-get)
-- [Create subscription](/graph/api/subscription-post-subscriptions)
-- [changeNotification](/graph/api/resources/changenotification) resource type
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
 - [Change notifications and change tracking training module](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)

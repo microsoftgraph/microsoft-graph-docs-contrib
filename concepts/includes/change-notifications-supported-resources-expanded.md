@@ -33,7 +33,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Teams [onlineMeeting][] * | Changes to an online meeting: `/communications/onlineMeetings/?$filter=JoinWebUrl eq {joinWebUrl}` |  |
 | Teams [presence][] * | Changes to a single user's presence:  `/communications/presences/{id}` <br><br> Changes to multiple user presences:  `/communications/presences?$filter=id in ({id},{id}...)` |  |
 | Teams [team][] | Changes to any team in the tenant: `/teams` <br><br> Changes to a specific team: `/teams/{id}` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
-| [To Do task][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
+| [todoTask][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
 | [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>A [known issue](/graph/known-issues#change-notifications) for the subscription **changeType**. |
 
 The following resources support rich notifications (notifications with resource data):
@@ -66,5 +66,5 @@ The following resources support rich notifications (notifications with resource 
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [team]: /graph/api/resources/team
 [todoTask]: /graph/api/resources/todotask
-[online meeting]: /graph/api/resources/onlinemeeting
+[onlineMeeting]: /graph/api/resources/onlinemeeting
 [baseTask]: /graph/api/resources/basetask
