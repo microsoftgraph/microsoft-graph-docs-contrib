@@ -219,7 +219,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrinciples",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrincipals",
   "@odata.count":1,
   "value":[
     {
