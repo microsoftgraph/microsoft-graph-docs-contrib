@@ -1,5 +1,5 @@
 ---
-title: "People picker component"
+title: "People picker component in Microsoft Graph Toolkit"
 description: "You can use the mgt-people-picker web component to search for a specified number of people and render the list of results via Microsoft Graph."
 ms.localizationpriority: medium
 author: sebastienlevert
