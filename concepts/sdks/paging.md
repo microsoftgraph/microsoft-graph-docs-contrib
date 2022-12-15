@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
+<!-- markdownlint-disable MD051 -->
+
 # Page through a collection using the Microsoft Graph SDKs
 
 For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. The **PageIterator** class simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
@@ -122,19 +124,21 @@ while(messagesPage != null) {
 
 ```go
 import (
+    abstractions "github.com/microsoft/kiota-abstractions-go"
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
     "github.com/microsoftgraph/msgraph-sdk-go/me"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
-query := me.MeMessagesRequestBuilderGetQueryParameters{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.body-content-type=\"text\"")
+
+query := me.MessagesRequestBuilderGetQueryParameters{
     Select: []string{"body", "sender", "subject"},
 }
 
-options := me.MeMessagesRequestBuilderGetRequestConfiguration{
-    Headers: map[string]string{
-        "Prefer": "outlook.body-content-type=\"text\"",
-    },
+options := me.MessagesRequestBuilderGetRequestConfiguration{
+    Headers: headers,
     QueryParameters: &query,
 }
 
@@ -146,7 +150,7 @@ pageIterator, err := msgraphcore.NewPageIterator(
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.Headers)
+pageIterator.SetHeaders(headers)
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(context.Background(), func(pageItem interface{}) bool {
@@ -250,19 +254,21 @@ while (!pageIterator.isComplete()) {
 
 ```go
 import (
+    abstractions "github.com/microsoft/kiota-abstractions-go"
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
     "github.com/microsoftgraph/msgraph-sdk-go/me"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
-query := me.MeMessagesRequestBuilderGetQueryParameters{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.body-content-type=\"text\"")
+
+query := me.MessagesRequestBuilderGetQueryParameters{
     Select: []string{"body", "sender", "subject"},
 }
 
-options := me.MeMessagesRequestBuilderGetRequestConfiguration{
-    Headers: map[string]string{
-        "Prefer": "outlook.body-content-type=\"text\"",
-    },
+options := me.MessagesRequestBuilderGetRequestConfiguration{
+    Headers: headers,
     QueryParameters: &query,
 }
 
@@ -275,7 +281,7 @@ pageIterator, err := msgraphcore.NewPageIterator(
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.Headers)
+pageIterator.SetHeaders(headers)
 
 // Pause iterating after 25
 var count, pauseAfter = 0, 25
