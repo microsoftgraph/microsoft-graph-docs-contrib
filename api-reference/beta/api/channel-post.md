@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
-> **Note**: You can add a maximum of 200 members when you create a private channel.
-
-> **Note**: Specifying more than one member while creating the shared channel is not supported.
+> **Note**: While creating a channel, only one members can be specified for shared channel however maximum of 200 members can be specified for private channel.
 
 ## Permissions
 
