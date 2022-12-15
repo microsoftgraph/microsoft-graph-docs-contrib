@@ -69,9 +69,9 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 | Member             | Value | Description               |
 | :----------------- | :---- | :------------------------ |
-|oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members cannot be removed/added.|
 |group               | 1     | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
 |meeting             | 2     | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
+|oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members cannot be removed/added.|
 |unknownFutureValue  | 3     | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
