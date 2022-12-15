@@ -1,7 +1,7 @@
 ---
 title: "alertEvidence resource type"
 description: "Each alert contains a list of related evidence."
-ms.date: 09/09/2021
+ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 # alertEvidence resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Evidence related to an [alert](security-alert.md).
 

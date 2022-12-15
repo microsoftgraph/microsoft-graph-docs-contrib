@@ -1,7 +1,7 @@
 ---
 title: "Create comment for incident"
 description: "Adds a comment to the end of the incident comments list"
-ms.date: 09/09/2021
+ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -10,8 +10,6 @@ doc_type: apiPageType
 
 # Create comment
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a comment for an existing [incident](../resources/security-incident.md) based on the specified incident **id** property.
 
@@ -66,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/incidents/3962396/comments
+POST https://graph.microsoft.com/v1.0/security/incidents/3962396/comments
 Content-Type: application/json
 
 {
@@ -74,12 +72,6 @@ Content-Type: application/json
     "comment": "Demo for docs"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/incident-addcomment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response
@@ -97,7 +89,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/alerts_v2('da637865765418431569_-773071023')/comments",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/alerts_v2('da637865765418431569_-773071023')/comments",
     "value": [
         {
             "comment": "test",
