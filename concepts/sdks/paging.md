@@ -146,7 +146,7 @@ result, err := client.Me().Messages().Get(context.Background(), &options)
 
 // Initialize iterator
 pageIterator, err := msgraphcore.NewPageIterator(
-    result, adapter, models.CreateMessageCollectionResponseFromDiscriminatorValue)
+    result, client.GetAdapter(), models.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
@@ -277,7 +277,7 @@ result, err := client.Me().Messages().Get(context.Background(), &options)
 
 // Initialize iterator
 pageIterator, err := msgraphcore.NewPageIterator(
-    result, adapter, models.CreateMessageCollectionResponseFromDiscriminatorValue)
+    result, client.GetAdapter(), models.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
