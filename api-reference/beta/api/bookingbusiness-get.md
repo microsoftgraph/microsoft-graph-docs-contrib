@@ -179,7 +179,6 @@ Content-type: application/json
             ]
         }
     ],
-    "languageTag": "String",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",
