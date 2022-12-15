@@ -11969,13 +11969,6 @@ items:
               href: api/orgcontact-list-memberof.md
             - name: Get manager
               href: api/orgcontact-get-manager.md
-          - name: Subscribed sku
-            href: resources/subscribedsku.md
-            items:
-            - name: List subscribedSkus
-              href: api/subscribedsku-list.md
-            - name: Get subscribedSku
-              href: api/subscribedsku-get.md
         - name: On-premises directory synchronization
           href: resources/onpremisesdirectorysynchronization.md
           items:
@@ -12073,6 +12066,13 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
+        - name: Subscribed sku
+          href: resources/subscribedsku.md
+          items:
+          - name: List subscribedSkus
+            href: api/subscribedsku-list.md
+          - name: Get subscribedSku
+            href: api/subscribedsku-get.md
         - name: Tenant information
           href: resources/tenantinformation.md
           items:
@@ -15032,7 +15032,7 @@ items:
           href: api/securityaction-get.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
-      - name: Advanced hunting (preview)
+      - name: Advanced hunting
         items:
         - name: Run hunting query
           href: api/security-security-runhuntingquery.md
@@ -15042,7 +15042,7 @@ items:
           href: resources/security-huntingrowresult.md
         - name: Single property schema
           href: resources/security-singlepropertyschema.md
-      - name: Alerts and incidents (preview)
+      - name: Alerts and incidents
         items:
         - name: Alert
           items:
