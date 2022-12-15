@@ -62,7 +62,7 @@ The following is a JSON representation of the resource.
    "id":"string",
    "availability":"string",
    "activity":"string",
-   "outOfOfficeSettings":{"@odata.type": "#microsoft.graph.outOfOfficeSettings"}
+   "outOfOfficeSettings":{"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
    "statusMessage":{"@odata.type": "#microsoft.graph.presenceStatusMessage"}
 }
 ```
