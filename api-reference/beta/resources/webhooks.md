@@ -36,3 +36,29 @@ In general, subscription operations require read permission to the resource. For
 - [Subscription resource type](subscription.md)
 - [Change notifications and change tracking training module](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](/graph/webhooks-lifecycle.md)
+
+
+<!-- Links -->
+[chat]: ./chat.md
+[chatMessage]: ./chatmessage.md
+[contact]: ./contact.md
+[conversation]: ./conversation.md
+[conversationMember]: ./conversationmember.md
+[channel]: ./channel.md
+[driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
+[event]: ./event.md
+[group]: ./group.md
+[message]: ./message.md
+[user]: ./user.md
+[callRecord]: ./callrecords-callrecord.md
+[alert]: ./alert.md
+[presence]: ./presence.md
+[printer]: ./printer.md
+[printTaskDefinition]: ./printtaskdefinition.md
+[team]: ./team.md
+[baseTask]: ./baseTask.md
+[todoTask]: ./todotask.md
+[To Do task]: ./todotask.md
+[onlineMeeting]: ./onlinemeeting.md
