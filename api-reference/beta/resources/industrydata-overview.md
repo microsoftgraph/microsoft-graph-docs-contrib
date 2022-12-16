@@ -1,5 +1,5 @@
 ---
-title: "Use the industry data APIs in Microsoft Graph (preview)"
+title: "Use industry data API as an extract, transform, and load (ETL) engine (preview)"
 description: "Industry data APIs power the Microsoft School Data Sync (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 from student information systems (SIS) / student management systems (SMS)."
 author: "mlafleur"
 ms.localizationpriority: medium
@@ -7,43 +7,43 @@ ms.prod: "industrydata"
 doc_type: conceptual
 ---
 
-# Use the industry data APIs in Microsoft Graph (preview)
+# Use industry data API as an extract, transform, and load (ETL) engine (preview)
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Industry data APIs power the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 from student information systems (SIS) / student management systems (SMS).
+Industry data API is intended to be a multi-vertical, cross-industry platform. In the current release, it is highly tailored to the education industry, powering the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 from student information systems (SIS) / student management systems (SMS).
 
 Additionally, industry data provides resources that you can use to retrieve statistics, after the data is processed, and assist with monitoring and troubleshooting.
 
 ## Overview
 
-The system is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process will combine and normalize the imported data to land in the Azure Data Lake of the tenant.
+Industry data is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process will combine and normalize the imported data to land in the Azure Data Lake of the tenant.
 
-![industryData overview](../../concepts/images/industryData-overview-1.png)
+:::image type="content" source="../../../concepts/images/industryData-overview-1.png" alt-text="Graphic that shows industryData overview." lightbox="../../../concepts/images/industryData-overview-1.png":::
 
-First, you'll need to connect to the data of your institution. You'll define an inbound flow: Create **sourceSystemDefinition**, **dataConnector**, and **yearTimePeriodDefinition**. By default, your inbound flow will activate twice (2x) daily (called a _run_).
+First, connect to the data of your institution. Define an inbound flow: Create **sourceSystemDefinition**, **dataConnector**, and **yearTimePeriodDefinition**. By default, your inbound flow will activate twice (2x) daily (called a _run_).
 
-When the run starts, it'll connect to the **sourceSystemDefinition** and **dataConnector** of the inbound flow, and perform basic validation. Basic validation ensures that the connection is correct, for [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) as a source, or the filenames and headers are correct for CSV as a source.
+When the run starts, it connects to the **sourceSystemDefinition** and **dataConnector** of the inbound flow, and performs basic validation. Basic validation ensures that the connection is correct, for [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) as a source, or the filenames and headers are correct for CSV as a source.
 
-Next, the system will transform the data for import in preparation for advanced validation. As part of the data transformation, the data is associated based on the configured **yearTimePeriodDefinition**.
+Next, the system transforms the data for import in preparation for advanced validation. As part of the data transformation, the data is associated based on the configured **yearTimePeriodDefinition**.
 
-Additionally, the system will also store an updated copy of the Azure AD of the tenant into the Azure Data Lake. The copy of the Azure AD assists with user matching between the **sourceSystemDefinition** and the Azure AD user object. At this stage, the match link is written only to the Azure Data Lake.
+Additionally, the system stores the latest copy of the Azure AD of the tenant into the Azure Data Lake. The copy of the Azure AD assists with user matching between the **sourceSystemDefinition** and the Azure AD user object. At this stage, the match link is written only to the Azure Data Lake.
 
-Next, the inbound flow will perform advanced validation to determine data health. The validation focuses on identifying errors and/or warnings. Validation follows the concept of bringing in good data and keeping out bad data.
+Next, the inbound flow performs advanced validation to determine data health. The validation focuses on identifying errors and/or warnings. Validation follows the concept of bringing in good data and keeping out bad data.
 
 - Errors mean that a record didn't pass validation and was removed from further processing.
 - Warnings mean that the value on an optional field of a record didn't pass. The value was removed from the record, however, the record was included for further processing.
 
-Errors and warnings will be used to help you better understand data health.
+Errors and warnings are used to help better understand data health.
 
 For the data that passed validation, the process uses the configured **yearTimePeriodDefinition** to determine its association for longitudinal storage.
 
-- When the data is stored in our internal representation in the Azure Data Lake of the tenant, it will identify when it was first seen by industry data.
-- For data linked with user organization, role association, and group association, it's also identified as active in session based on the **yearTimePeriodDefinition**.
-- In future runs, for the same inbound flow, **sourceSystemDefinition**, and **yearTimePeriodDefinition**, industry data will identify if the record is still seen.
-- Based on the presence or absence of record, the record will be kept active or be marked as no longer active in session for the configured **yearTimePeriodDefinition**. This process determines the historical and longitudinal nature of the data between days, months, and years.
+- As the data is stored the internal representation in the Azure Data Lake of the tenant, it identifies when it was first seen by industry data.
+- For data linked with user organization, role association, and group association, it also identifies data as active in session based on the **yearTimePeriodDefinition**.
+- In future runs, for the same inbound flow, **sourceSystemDefinition**, and **yearTimePeriodDefinition**, industry data identifies if the record is still seen.
+- Based on the presence or absence of record, the record is kept active or marked as no longer active in session for the configured **yearTimePeriodDefinition**. This process determines the historical and longitudinal nature of the data between days, months, and years.
 
 At the end of each run, **industryDataRunStatistics** are available to determine data health.
 
@@ -79,7 +79,7 @@ You can integrate industry data APIs with 3rd-party apps. To enable this integra
 
 ## Concepts
 
-Industry data APIs power School Data Sync which is a data transformation engine. It imports data sets in from external sources (SIS / SMS), transforms the data into a common data model, and then writes the transformed data to various external services, like users and groups to Azure AD, and ability to create a team based group.
+Industry data APIs power School Data Sync which is a data transformation engine. It imports data sets in from external sources (SIS / SMS), transforms the data into a common data model, and writes the transformed data to various external services, like users and groups to Azure AD, and ability to create a team based group.
 
 The following articles are to help with some basics that are specific to industry data APIs.
 
