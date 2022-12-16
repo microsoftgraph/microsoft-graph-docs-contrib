@@ -676,7 +676,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "startHoldMusic",
           "ChangeType": "Addition",
-          "Description": "Added the [startHoldMusic](https://learn.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-1.0) method to the [participant](https://learn.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Description": "Added the [startHoldMusic](https://learn.microsoft.com/en-us/graph/api/participant-startholdmusic?view=graph-rest-1.0) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
           "Target": "participant"
         },
         {
@@ -684,7 +684,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "stopHoldMusic",
           "ChangeType": "Addition",
-          "Description": "Added the [stopHoldMusic](https://learn.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-1.0) method to the [participant](https://learn.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Description": "Added the [stopHoldMusic](https://learn.microsoft.com/en-us/graph/api/participant-stopholdmusic?view=graph-rest-1.0) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
           "Target": "participant"
         }
       ],
@@ -1522,7 +1522,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
           "ChangeType": "Addition",
-          "Description": "Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the **outOfOfficeSettings** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource type.",
           "Target": "outOfOfficeSettings"
         },
         {
@@ -1530,7 +1530,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
           "ChangeType": "Addition",
-          "Description": "Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.",
+          "Description": "Added the [outOfOfficeSettings](https://learn.microsoft.com/en-us/graph/api/resources/outofofficesettings?view=graph-rest-beta) complex type.",
           "Target": "outOfOfficeSettings"
         }
       ],
@@ -1548,7 +1548,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
           "ChangeType": "Addition",
-          "Description": "Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource type.",
           "Target": "presence"
         }
       ],
@@ -1834,7 +1834,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webhook",
           "ChangeType": "Addition",
-          "Description": "Added support for [webhook](webhooks.md) subscriptions to call records.",
+          "Description": "Added support for [webhook](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0) subscriptions to call records.",
           "Target": "webhook"
         },
         {
@@ -2114,7 +2114,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webhook",
           "ChangeType": "Addition",
-          "Description": "Added support for [webhook](webhooks.md) subscriptions to call records.",
+          "Description": "Added support for [webhook](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0) subscriptions to call records.",
           "Target": "webhook"
         }
       ],
@@ -2174,7 +2174,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "call,participant,onlineMeeting",
           "ChangeType": "Addition",
-          "Description": "Added the following resources: [call](https://learn.microsoft.com/en-us/graph/api/resouces/call?view=graph-rest-1.0), [participant](https://learn.microsoft.com/en-us/graph/api/resouces/participant?view=graph-rest-1.0), and [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resouces/onlinemeeting?view=graph-rest-1.0).",
+          "Description": "Added the following resources: [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0), [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0), and [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0).",
           "Target": "call,participant,onlineMeeting"
         },
         {
@@ -2182,7 +2182,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delete onlineMeeting",
           "ChangeType": "Addition",
-          "Description": "Added the [delete onlineMeeting](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-delete.md) operation.",
+          "Description": "Added the [delete onlineMeeting](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-delete?view=graph-rest-1.0) operation.",
           "Target": "delete onlineMeeting"
         }
       ],
@@ -2216,7 +2216,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "keepAlive",
           "ChangeType": "Addition",
-          "Description": "Added the [keepAlive](https://learn.microsoft.com/en-us/api-reference/beta/api/call-keepalive?view=graph-rest-beta) action to the [call](https://learn.microsoft.com/en-us/api-reference/beta/resources/call?view=graph-rest-beta) entity.",
+          "Description": "Added the [keepAlive](https://learn.microsoft.com/en-us/graph/api/call-keepalive?view=graph-rest-beta) action to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) entity.",
           "Target": "call"
         }
       ],
@@ -2316,7 +2316,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime,lastActionDateTime",
           "ChangeType": "Deletion",
-          "Description": "Removed the properties **createdDateTime** and **lastActionDateTime** from the [commsOperation](https://learn.microsoft.com/en-us/graph/.api/resource/commsOperation?view=graph-rest-beta) resource.",
+          "Description": "Removed the properties **createdDateTime** and **lastActionDateTime** from the [commsOperation](https://learn.microsoft.com/en-us/graph/api/resources/commsoperation?view=graph-rest-beta) resource.",
           "Target": "commsOperation"
         },
         {
@@ -2374,7 +2374,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mediaState",
           "ChangeType": "Addition",
-          "Description": "Added **mediaState** property to [call](/api-reference/beta/resources/call.md) resource",
+          "Description": "Added **mediaState** property to [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource",
           "Target": "call"
         },
         {
@@ -2382,7 +2382,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "recordResourceLocation,recordingLocation",
           "ChangeType": "Change",
-          "Description": "Renamed **recordResourceLocation** property in [recordOperation](/api-reference/beta/resources/recordOperation.md) resource to **recordingLocation**",
+          "Description": "Renamed **recordResourceLocation** property in [recordOperation](https://learn.microsoft.com/en-us/graph/api/resources/recordoperation?view=graph-rest-beta) resource to **recordingLocation**",
           "Target": "recordOperation"
         },
         {
@@ -2390,7 +2390,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "recordResourceAccessToken,recordingAccessToken",
           "ChangeType": "Change",
-          "Description": "Renamed **recordResourceAccessToken** property in [recordOperation](/api-reference/beta/resources/recordOperation.md) resource to **recordingAccessToken**",
+          "Description": "Renamed **recordResourceAccessToken** property in [recordOperation](https://learn.microsoft.com/en-us/graph/api/resources/recordoperation?view=graph-rest-beta) resource to **recordingAccessToken**",
           "Target": "recordOperation"
         },
         {
@@ -2398,7 +2398,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "capabilities",
           "ChangeType": "Addition",
-          "Description": "Added **capabilities** property to [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) resource",
+          "Description": "Added **capabilities** property to [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource",
           "Target": "onlineMeeting"
         },
         {
@@ -2406,7 +2406,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "videoTeleconferenceId",
           "ChangeType": "Addition",
-          "Description": "Added **videoTeleconferenceId** property to [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) resource",
+          "Description": "Added **videoTeleconferenceId** property to [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource",
           "Target": "onlineMeeting"
         },
         {
@@ -2414,7 +2414,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "producers",
           "ChangeType": "Addition",
-          "Description": "Added **producers** property to [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) resource",
+          "Description": "Added **producers** property to [meetingParticipants](https://learn.microsoft.com/en-us/graph/api/resources/meetingparticipants?view=graph-rest-beta) resource",
           "Target": "meetingParticipants"
         },
         {
@@ -2422,7 +2422,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contributors",
           "ChangeType": "Addition",
-          "Description": "Added **contributors** property to [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) resource",
+          "Description": "Added **contributors** property to [meetingParticipants](https://learn.microsoft.com/en-us/graph/api/resources/meetingparticipants?view=graph-rest-beta) resource",
           "Target": "meetingParticipants"
         }
       ],
@@ -2694,7 +2694,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setStatusMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence-setstatusmessage?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-beta) resource.",
+          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence-setstatusmessage?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
           "Target": "presence"
         }
       ],
