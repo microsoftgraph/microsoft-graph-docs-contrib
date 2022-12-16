@@ -23,6 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not applicable|
 |Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
+The signed-in user must also be assigned permissions included in the following [directory role](/azure/active-directory/roles/permissions-reference):
+
++ Hybrid Identity Administrator
+
 ## HTTP request
 
 <!-- {
