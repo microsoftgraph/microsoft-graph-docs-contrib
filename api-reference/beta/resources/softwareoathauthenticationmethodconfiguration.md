@@ -26,7 +26,7 @@ Represents the authentication policy for a third-party software OATH authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from a policy.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |state|authenticationMethodState|Represents whether users can register this authentication method. The possible values are: `enabled`, `disabled`.|
 

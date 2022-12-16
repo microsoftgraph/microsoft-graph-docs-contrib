@@ -203,7 +203,7 @@
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationMethodsPolicyMigrationState",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationMethodsPolicyMigrationState](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the **authenticationMethodsPolicyMigrationState** enumeration.",
           "Target": "authenticationMethodsPolicyMigrationState"
         },
         {
@@ -211,7 +211,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "excludeTargets",
           "ChangeType": "Addition",
-          "Description": "Added the [excludeTargets](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the **excludeTargets** property to the [authenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodConfiguration?view=graph-rest-beta) resource. Use this property to specify the groups of users that are excluded from an authentication methods policy.",
           "Target": "authenticationMethodConfiguration"
         },
         {
@@ -219,7 +219,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "policyMigrationState",
           "ChangeType": "Addition",
-          "Description": "Added the [policyMigrationState](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource",
+          "Description": "Added the **policyMigrationState** property to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
           "Target": "authenticationMethodsPolicy"
         },
         {
@@ -227,7 +227,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isSoftwareOathEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the [isSoftwareOathEnabled](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the **isSoftwareOathEnabled** property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
           "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
         },
         {
@@ -235,7 +235,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "softwareOathAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [softwareOathAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethodConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [softwareOathAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethodConfiguration?view=graph-rest-beta) resource and its associated methods.",
           "Target": "softwareOathAuthenticationMethodConfiguration"
         },
         {
@@ -243,23 +243,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "voiceAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [voiceAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodConfiguration?view=graph-rest-beta) resource",
-          "Target": "voiceAuthenticationMethodConfiguration"
-        },
-        {
-          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
-          "ApiChange": "Property",
-          "ChangedApiName": "isOfficePhoneAllowed",
-          "ChangeType": "Addition",
-          "Description": "Added the [isOfficePhoneAllowed](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodConfiguration?view=graph-rest-beta) resource",
-          "Target": "voiceAuthenticationMethodConfiguration"
-        },
-        {
-          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
-          "ApiChange": "Resource",
-          "ChangedApiName": "includeTargets",
-          "ChangeType": "Addition",
-          "Description": "Added the [includeTargets](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [voiceAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodConfiguration?view=graph-rest-beta) resource and its associated methods.",
           "Target": "voiceAuthenticationMethodConfiguration"
         },
         {
@@ -267,14 +251,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "voiceAuthenticationMethodTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [voiceAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodTarget?view=graph-rest-beta) resource",
+          "Description": "Added the [voiceAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodTarget?view=graph-rest-beta) resource.",
           "Target": "voiceAuthenticationMethodTarget"
         }
       ],
       "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-11-15T20:31:54.1642286Z",
+      "CreatedDateTime": "2022-12-20T00:00:00.1642286Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
