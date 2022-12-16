@@ -649,7 +649,6 @@ Content-type: application/json
 ### Example 7: Create an educationTeamsAppResource
 
 #### Request
-
 The following is an example of the request.
 
 <!-- {
