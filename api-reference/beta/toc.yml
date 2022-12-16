@@ -12368,8 +12368,6 @@ items:
             items:
             - name: Cross-tenant access partner user sync settings
               href: resources/crosstenantidentitysyncpolicypartner.md
-            - name: List
-              href: api/crosstenantaccesspolicyconfigurationpartner-list-identitysynchronization.md
             - name: Create
               href: api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
             - name: Get
