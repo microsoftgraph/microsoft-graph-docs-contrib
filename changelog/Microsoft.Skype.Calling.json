@@ -2646,24 +2646,6 @@
     {
       "ChangeList": [
         {
-          "Id": "0eee89e2-4020-43aa-b675-38509de5e509",
-          "ApiChange": "Resource",
-          "ChangedApiName": "dateTimeTimeZone",
-          "ChangeType": "Addition",
-          "Description": "Added the [dateTimeTimeZone](https://learn.microsoft.com/en-us/graph/api/resources/dateTimeTimeZone?view=graph-rest-beta) resource type.",
-          "Target": "dateTimeTimeZone"
-        }
-      ],
-      "Id": "0eee89e2-4020-43aa-b675-38509de5e509",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2022-11-15T00:17:48.4789176Z",
-      "WorkloadArea": "Calendar, mail, personal contacts",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "a689460b-853f-4cbd-8973-ffd1b9cc1376",
           "ApiChange": "Resource",
           "ChangedApiName": "presenceStatusMessage",
