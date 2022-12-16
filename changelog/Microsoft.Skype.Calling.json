@@ -2694,7 +2694,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setStatusMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-beta) resource.",
+          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence-setstatusmessage?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-beta) resource.",
           "Target": "presence"
         }
       ],
