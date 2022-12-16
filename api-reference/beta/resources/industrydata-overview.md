@@ -1,5 +1,5 @@
 ---
-title: "Use industry data API as an extract, transform, and load (ETL) engine (preview)"
+title: "Use industry data API as an extract, transform, and load (ETL) engine"
 description: "Industry data APIs power the Microsoft School Data Sync (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 from student information systems (SIS) / student management systems (SMS)."
 author: "mlafleur"
 ms.localizationpriority: medium
