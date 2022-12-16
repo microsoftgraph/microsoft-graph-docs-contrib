@@ -647,12 +647,13 @@ Content-type: application/json
 ```
 
 ### Example 7: Create an educationTeamsAppResource
+
 #### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461","820371a1-4589-4a4a-8b40-9d5db94b9186"], 
+  "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461", "820371a1-4589-4a4a-8b40-9d5db94b9186"], 
   "name": "create_educationTeamsAppResource_from_educationassignmentsApp"
 }-->
 ```http
@@ -673,7 +674,8 @@ Content-type: application/json
 ```
 
 #### Response
-The following is an example of the response. 
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
