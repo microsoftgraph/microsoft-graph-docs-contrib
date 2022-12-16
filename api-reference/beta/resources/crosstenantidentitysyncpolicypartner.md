@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the user synchronization policy for partner configurations within cross-tenant access settings.
+Defines the cross-tenant policy for synchronization of users from a partner tenant. Use this synchronization policy to streamline collaboration between users in a multi-tenant organization by automating creating, updating, and deleting users from one tenant to another.
 
 ## Methods
 |Method|Return type|Description|

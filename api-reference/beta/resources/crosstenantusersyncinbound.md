@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the inbound user synchronization for partner configurations within cross-tenant access settings.
+Defines whether users can be synchronized from the partner tenant.
 
 ## Properties
 |Property|Type|Description|
