@@ -19,10 +19,10 @@ Defines the cross-tenant policy for synchronization of users from a partner tena
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List crossTenantIdentitySyncPolicyPartners](../api/crosstenantaccesspolicyconfigurationpartner-list-identitysynchronization.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) collection|List the user synchronization policy for all partner configurations.|
-|[Create crossTenantIdentitySyncPolicyPartner](../api/crosstenantaccesspolicyconfigurationpartner-post-identitysynchronization.md)|None|Create a cross-tenant user synchronization policy for a partner-specific configuration.|
+|[Create crossTenantIdentitySyncPolicyPartner](../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md)|None|Create a cross-tenant user synchronization policy for a partner-specific configuration.|
 |[Get crossTenantIdentitySyncPolicyPartner](../api/crosstenantidentitysyncpolicypartner-get.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Read the user synchronization policy of a partner-specific configuration.|
 |[Update crossTenantIdentitySyncPolicyPartner](../api/crosstenantidentitysyncpolicypartner-update.md)|None|Update the user synchronization policy of a partner-specific configuration.|
-|[Delete crossTenantIdentitySyncPolicyPartner](../api/crosstenantaccesspolicyconfigurationpartner-delete-identitysynchronization.md)|None|Delete the user synchronization policy for a partner-specific configuration.|
+|[Delete crossTenantIdentitySyncPolicyPartner](../api/crosstenantidentitysyncpolicypartner-delete.md)|None|Delete the user synchronization policy for a partner-specific configuration.|
 
 ## Properties
 |Property|Type|Description|
