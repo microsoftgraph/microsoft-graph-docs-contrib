@@ -109,6 +109,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [crossTenantUserSyncInbound](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantusersyncinbound?view=graph-rest-beta) resource.",
           "Target": "crossTenantUserSyncInbound"
+        },
+        {
+          "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identitySynchronization",
+          "ChangeType": "Relationship",
+          "Description": "Added the **identitySynchronization** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
         }
       ],
       "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
