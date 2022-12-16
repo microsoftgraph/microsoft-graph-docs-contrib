@@ -2472,7 +2472,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "share content,mute and unmute itself,update the metadata associated with a call",
           "ChangeType": "Addition",
-          "Description": "Added APIs for applications to manage and participate in calls and meetings, including the ability to [share content](https://learn.microsoft.com/en-us/graph/api/call-changescreensharingrole?view=graph-rest-beta), [mute and unmute itself](https://learn.microsoft.com/en-us/graph/api/call-unmute?view=graph-rest-beta), and [update the metadata associated with a call](https://learn.microsoft.com/en-us/graph/api/call-updatemetadata?view=graph-rest-beta).",
+          "Description": "Added APIs for applications to manage and participate in calls and meetings, including the ability to [share content](https://learn.microsoft.com/en-us/graph/api/call-changescreensharingrole?view=graph-rest-beta), [mute and unmute itself](https://learn.microsoft.com/en-us/graph/api/call-unmute?view=graph-rest-beta), and update the metadata associated with a call.",
           "Target": "share content,mute and unmute itself,update the metadata associated with a call"
         },
         {
