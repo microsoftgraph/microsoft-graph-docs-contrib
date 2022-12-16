@@ -101,7 +101,7 @@ The following request sets the presence status message as "Hey I'm currently in 
   "blockType": "request",
   "name": "setstatusmessage-another-user"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ This request should be executed on behalf of another user.
   "blockType": "request",
   "name": "setstatusmessage-another-user-get-presence"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence
 ```
 
