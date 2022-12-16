@@ -13,13 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<<<<<<< HEAD
-An education resource that corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications, such as YouTube or Flip.
-=======
-Corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications, such as YouTube or FlipGrid.
->>>>>>> 39a48990773d3607ec3b7f33ea7761c1d0d7dcdf
+Corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications, such as YouTube or Flip.
 
-For information about using Flip for education on Microsoft Teams, see [introduction to Flip](https://learn.microsoft.com/en-us/training/educator-center/product-guides/flip).
+For information about using Flip for education on Microsoft Teams, see [introduction to Flip](/training/educator-center/product-guides/flip).
 
 Inherits from [educationResource](educationresource.md).
 
