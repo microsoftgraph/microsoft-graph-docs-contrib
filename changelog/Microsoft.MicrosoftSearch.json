@@ -105,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchResultSet",
           "ChangeType": "Addition",
-          "Description": "Added the [searchResultSet](https://learn.microsoft.com/en-us/graph/api/resources/searchResultSet?view=graph-rest-beta) resource type.",
+          "Description": "Added the searchResultSet resource type.",
           "Target": "searchResultSet"
         },
         {
