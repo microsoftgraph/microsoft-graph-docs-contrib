@@ -695,7 +695,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "QnA.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission `QnA.Read.All` to access the [qna](https://learn.microsoft.com/en-us/graph/search-concept-qna) resource.",
+          "Description": "Added support for the delegated permission `QnA.Read.All` to access the qna resource.",
           "Target": "qna"
         }
       ],
