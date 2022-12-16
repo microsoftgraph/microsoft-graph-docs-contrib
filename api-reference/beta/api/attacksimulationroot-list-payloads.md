@@ -1,5 +1,5 @@
 ---
-title: "List payload"
+title: "List payloads"
 description: "Get a list of attack simulation campaigns payload."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -71,7 +71,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-# [HTTP](#tab/http)
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_payload"
@@ -81,11 +82,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=source eq 'Tenant'
 ```
 
----
-
-
 
 ### Response
+
+The following is an example of a response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -137,4 +138,3 @@ Content-Type: application/json
     ]
 }
 ```
-

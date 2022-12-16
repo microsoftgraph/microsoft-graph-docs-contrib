@@ -1,5 +1,5 @@
 ---
-title: "Get payload detail"
+title: "Get payloadDetail"
 description: "Get an attack simulation campaign payload detail for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get payload detail
+# Get payloadDetail
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -73,11 +73,10 @@ If successful, this method returns a `200 OK` response code and a [payloadDetail
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_payloadDetail"
+  "name": "get_payloadDetail",
+  "sampleKeys": ["f1b13829-3829-f1b1-2938-b1f12938b1a"]
 }
 -->
 ``` http
@@ -122,5 +121,4 @@ Content-Type: application/json
         }
     ]            
 }
-
 ```

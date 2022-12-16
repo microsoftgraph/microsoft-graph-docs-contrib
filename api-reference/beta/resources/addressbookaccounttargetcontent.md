@@ -17,13 +17,13 @@ Attack simulation and training is a service available as part of [Microsoft Defe
 
 The attack simulation and training API enables tenant administrators to list launched **simulation** exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
 
-Inherits from [accountTargetContent](../resources/accountTargetContent.md).
+Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accountTargetEmails|String Collection|List of user emails targetted|
-|type|accountTargetContentType| Type of account target content contains targetted user email addresses. Inherited from [accountTargetContent](../resources/accountTargetContent.md).The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
+|accountTargetEmails|String Collection|List of user emails targeted|
+|type|accountTargetContentType| Type of account target content contains targeted user email addresses. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 ## Relationships
 None.

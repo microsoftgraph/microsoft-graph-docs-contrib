@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 <!-- {
   "blockType": "response",
   "truncated": true,
-      "@odata.type": "Collection(microsoft.graph.simulation)"
+  "@odata.type": "Collection(microsoft.graph.simulation)"
 }
 -->
 ``` http

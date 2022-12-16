@@ -1,6 +1,6 @@
 ---
-title: Delete simulations 
-description: Delete an attack simulation campaign for a tenant.
+title: "Delete simulations"
+description: "Delete an attack simulation campaign for a tenant."
 author: stuartcl
 ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
@@ -19,11 +19,16 @@ Delete an attack simulation campaign for a tenant.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | AttackSimulation.ReadWrite.All              |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 DELETE /security/attackSimulation/simulations/{simulationId}
 ```
@@ -41,25 +46,33 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 In the request body, supply a JSON representation of **simulation** object.
 
 ## Response
-If successful, this method returns ```204 NoContent``` response code in the response.
+If successful, this method returns `204 No Content` response code in the response.
 
-## Example
+## Examples
 
-**Request**
+### Request
 
-Here is an example of a request.
+The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_simulation",
+  "sampleKeys": ["2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc"]
+}
+-->
 ```http
-DELETE https://graph.microsoft.com/beta//security/attackSimulation/simulations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
+DELETE https://graph.microsoft.com/beta/security/attackSimulation/simulations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following is an example of the response.
 
-```http
-HTTP/1.1 204
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
 ```
-
-
-

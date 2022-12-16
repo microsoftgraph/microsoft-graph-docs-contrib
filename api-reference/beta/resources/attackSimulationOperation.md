@@ -35,7 +35,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |lastActionDateTime|DateTimeOffset|Last action date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |percentageCompleted|Int32| Percentage of completion of the respective operation.|
 |resourceLocation|String|Tracking resource location. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
-|status|longRunningOperationStatus|Operation status. Inherited from [longRunningOperation](../resources/longrunningoperation.md).The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|longRunningOperationStatus|Operation status. Inherited from [longRunningOperation](../resources/longrunningoperation.md). The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 |statusDetail|String|Status detail of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |tenantId|String|Tenant identifier.|
 |type|attackSimulationOperationType|Attack simulation operation type.The possible values are: `createSimulation`, `updateSimulation`.|
@@ -46,7 +46,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |:---|:---|
 |unknown| The operation is not defined. |
 |createSimulation| The simulation creation operation. |
-|updateSimulation| The simulation updation operation. |
+|updateSimulation| The simulation update operation. |
 
 ## Relationships
 None.

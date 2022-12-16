@@ -34,7 +34,7 @@ The attack simulation and training API enables tenant administrators to list lau
 |Member|Description |
 |:---|:---|
 |includeall| Include all users under tenant boundary. |
-|addressbook| Account details uploaded via AAD.|
+|addressbook| Account details uploaded via Azure Active Directory.|
 
 ## Relationships
 None.

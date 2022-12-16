@@ -18,9 +18,9 @@ Represents the detail of a payload.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|phishingUrl|String|Phishing url used to target a user.Inherited from [payloadDetail](../resources/payloadDetail.md).|
-|content|String|Payload content details.Inherited from [payloadDetail](../resources/payloadDetail.md).|
-|coachmarks|[payloadCoachmark](../resources/payloadCoachmark.md)|Payload coachmark details.Inherited from [payloadDetail](../resources/payloadDetail.md).|
+|phishingUrl|String|Phishing url used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
+|content|String|Payload content details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
+|coachmarks|[payloadCoachmark](../resources/payloadcoachmark.md)|Payload coachmark details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
 |fromName|String|Display name of the user.|
 |fromEmail|String|Email address of the user.|
 |isExternalSender|String|Email address of the user.|
