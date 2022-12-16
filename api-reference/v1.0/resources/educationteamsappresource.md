@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An education resource that corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications, such as YouTube or FlipGrid.
+An education resource that corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications, such as YouTube or Flip.
 
-For information about using FlipGrid for education on Microsoft Teams, see [introduction to FlipGrid](https://education.microsoft.com/en-us/resource/13cb22b1).
+For information about using Flip for education on Microsoft Teams, see [introduction to Flip](https://learn.microsoft.com/en-us/training/educator-center/product-guides/flip).
 
 Inherites from [educationResource](educationresource.md).
 
