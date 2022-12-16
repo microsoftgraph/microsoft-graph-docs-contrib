@@ -21,7 +21,7 @@ Represents the detail of a payload.
 |phishingUrl|String|Phishing url used to target a user.|
 |content|String|Payload content details.|
 |phishingUrl|String|Payload phishing url.|
-|coachmarks|[payloadCoachmark](../resources/payloadCoachmark.md)|collection|Payload coachmark details.|
+|coachmarks|[payloadCoachmark](../resources/payloadcoachmark.md)|collection|Payload coachmark details.|
 
 ## Relationships
 None.

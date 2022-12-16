@@ -1,6 +1,6 @@
 ---
-title: Create simulations 
-description: Creates an attack simulation campaign for a tenant.
+title: "Create simulations"
+description: "Create an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -19,11 +19,16 @@ Create an attack simulation campaign for a tenant.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | AttackSimulation.ReadWrite.All              |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 POST /security/attackSimulation/simulations
 ```
@@ -41,16 +46,21 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 In the request body, supply a JSON representation of **customers** object.
 
 ## Response
-If successful, this method returns ```202 Accepted``` response code and a tracking header named ```location``` in the response.
+If successful, this method returns `202 Accepted` response code and a tracking header named `location` in the response.
 
-## Example
+## Examples
 
-**Request**
+### Request
 
-Here is an example of a request.
+The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "create_simulation"
+}
+-->
 ```http
-POST https://graph.microsoft.com/beta//security/attackSimulation/simulations
+POST https://graph.microsoft.com/beta/security/attackSimulation/simulations
 Content-type: application/json
 
 {
@@ -83,15 +93,18 @@ Content-type: application/json
 }
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following is an example of the response.
 
 > **Note**: The response object shown here might be shortened for readability.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
-HTTP/1.1 202 Accepted Location https://graph.microsoft.com/beta/security/attackSimulation/operations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc 
+HTTP/1.1 202 Accepted 
+Location https://graph.microsoft.com/beta/security/attackSimulation/operations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc 
 ```
-
-
-

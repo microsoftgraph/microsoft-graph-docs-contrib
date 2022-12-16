@@ -1,6 +1,6 @@
 ---
 title: "Get included users from a simulation"
-description: "Get targetted account targets from a simulation."
+description: "Get included users for an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /security/attackSimulation/simulations/{simulationId}/includedaccounttarget
 ```
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -42,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [accountTargetContent](../resources/accounttargetcontent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [accountTargetContent](../resources/accounttargetcontent.md) object in the response body.
 
 ## Examples
 
@@ -50,11 +51,10 @@ If successful, this method returns a `200 OK` response code and a [accountTarget
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_includedaccounttarget"
+  "name": "get_includedaccounttarget",
+  "sampleKeys": ["f1b13829-3829-f1b1-2938-b1f12938b1a"]
 }
 -->
 ``` http

@@ -23,7 +23,7 @@ Represents the payload coachmark detail of a payload.
 |language|String|Coachmark language.|
 |order|String|Coachmark order.|
 |isValid|String|Tells if the coachmark is valid or not.|
-|coachmarkLocation|(../resources/coachmarkLocation.md)|Coachmark location.|
+|coachmarkLocation|(../resources/coachmarklocation.md)|Coachmark location.|
 
 ## Relationships
 None.

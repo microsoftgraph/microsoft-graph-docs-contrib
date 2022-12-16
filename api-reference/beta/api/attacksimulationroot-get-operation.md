@@ -1,6 +1,6 @@
 ---
-title: "Get operation"
-description: "Get an attack simulation campaign operation for a tracking id. The opertation api is used to tracking a LRO operation."
+title: "Get attackSimulationOperation"
+description: "Get an attack simulation campaign operation for a tracking ID."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an attack simulation campaign operation for a tracking id. The opertation api is used to tracking a LRO operation.
+Get an attack simulation campaign operation for a tracking ID. The operation API is used to tracking a LRO operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [AttackSimulationOperation](../resources/attacksimulationoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [attackSimulationOperation](../resources/attacksimulationoperation.md) object in the response body.
 
 ## Examples
 
@@ -52,11 +52,10 @@ If successful, this method returns a `200 OK` response code and a [AttackSimulat
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_operation"
+  "name": "get_attackSimulationOperation",
+  "sampleKeys": ["f1b13829-3829-f1b1-2938-b1f12938b1a"]
 }
 -->
 ``` http
@@ -88,5 +87,4 @@ Content-Type: application/json
    "status": "notStarted",
    "percentageCompleted": 0
 }
-
 ```

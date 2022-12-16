@@ -46,13 +46,13 @@ Inherits from [entity](../resources/entity.md).
 |industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload.|
 |isAutomated|Boolean|Flag that represents if the attack simulation and training campaign payload was created from a automation flow. Supports `$filter` and `$orderby`. |
 |language|String|Unique identifier for the attack simulation payload.|
-|predictedCompromiseRate|Double|Predicted probability for a payload to phish a targetted user.|
+|predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |createdDateTime|DateTimeOffset|Date and time of creation of the attack simulation and training campaign payload.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign payload.|
 |isCurrentEvent|Boolean|Flag that represents if the payload is from any recent event. |
 |isControversial|Boolean|Flag that represents if If payload is controversial |
 |payloadTags|Collection(string)|Free text tags for a payload.|
-|detail|[payloadDetail](../resources/payloadDetail.md)|Additional details about the payload.|
+|detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
 
 ### payloadTheme values
 
