@@ -21,7 +21,7 @@ Create an [assignment resource](../resources/educationassignmentresource.md). Yo
 - [educationMediaResource](../resources/educationmediaresource.md)
 - [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
-Every resource has an @odata.type property to indicate which type of resource is being created. 
+Every resource has an **@odata.type** property to indicate which type of resource is being created. 
 
 > [!IMPORTANT] 
 > Before you can upload an assignment resource, you must [set up the resources folder](../api/educationassignment-setupresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
@@ -649,8 +649,6 @@ Content-type: application/json
 ### Example 7: Create an educationTeamsAppResource
 #### Request
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
