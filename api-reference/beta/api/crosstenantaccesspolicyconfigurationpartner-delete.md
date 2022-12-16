@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantaccesspolicyconfigurationpartner-delete-identitysynchronization.md) before you can delete the root endpoint /policies/crossTenantAccessPolicy/partners/{id}.
+If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantaccesspolicyconfigurationpartner-delete-identitysynchronization.md) before you can delete the partner-specific configuration.
 
 ### Request
 

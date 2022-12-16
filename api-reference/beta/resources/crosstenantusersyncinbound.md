@@ -1,6 +1,6 @@
 ---
 title: "crossTenantUserSyncInbound resource type"
-description: "Defines the inbound user synchronization for partner configurations within cross-tenant access settings."
+description: "Defines whether users can be synchronized from the partner tenant."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -18,7 +18,7 @@ Defines the inbound user synchronization for partner configurations within cross
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSyncAllowed|Boolean|Defines whether user objects should be synchronized. If set to false, any current user synchronization from the source tenant to the target tenant will stop. There is no impact to existing users that have already been synchronized.|
+|isSyncAllowed|Boolean|Defines whether user objects should be synchronized from the partner tenant. If set to `false`, any current user synchronization from the source tenant to the target tenant will stop. There is no impact on existing users that have already been synchronized.|
 
 ## Relationships
 None.

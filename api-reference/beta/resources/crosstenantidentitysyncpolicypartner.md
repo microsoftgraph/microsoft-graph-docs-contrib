@@ -1,6 +1,6 @@
 ---
 title: "crossTenantIdentitySyncPolicyPartner resource type"
-description: "Defines the user synchronization policy for partner configurations within cross-tenant access settings."
+description: "Defines the cross-tenant policy for synchronization of users from a partner tenant. Use this synchronization policy to streamline collaboration between users in a multi-tenant organization by automating creating, updating, and deleting users from one tenant to another."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -29,7 +29,7 @@ Defines the user synchronization policy for partner configurations within cross-
 |:---|:---|:---|
 |displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Azure AD organization. Optional.|
 |tenantId|String|Tenant identifier for the partner Azure AD organization. Read-only.|
-|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines the partner-specific configuration for inbound user synchronization.|
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users can be synchronized from the partner tenant. |
 
 ## Relationships
 None.
