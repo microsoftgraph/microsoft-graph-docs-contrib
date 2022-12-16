@@ -1,5 +1,5 @@
 ---
-title: "Create crossTenantIdentitySyncPolicyPartner"
+title: "Create identitySynchronization"
 description: "Create a cross-tenant user synchronization policy for a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create crossTenantIdentitySyncPolicyPartner
+# Create identitySynchronization
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
