@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
-> **Note:** You can add a maximum of 200 members when you create a private channel.
+> **Note**: While creating a channel, you can only add one member per shared channel; however, you can add up to 200 members per private channel.
 
 ## Permissions
 
