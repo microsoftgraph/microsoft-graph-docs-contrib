@@ -60,7 +60,7 @@ The following request sets the presence status message as "Hey I'm currently in 
   "name": "setstatusmessage"
 }-->
 
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
 Content-Type: application/json
 
