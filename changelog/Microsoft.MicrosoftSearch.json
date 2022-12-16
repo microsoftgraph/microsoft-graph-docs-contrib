@@ -145,7 +145,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "queryAlterationOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **queryAlterationOptions** parameter to the [query](https://learn.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-beta) method.",
+          "Description": "Added the **queryAlterationOptions** parameter to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method.",
           "Target": "query"
         },
         {
@@ -169,7 +169,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "query",
           "ChangeType": "Change",
-          "Description": "Changed the return type for the [query](https://learn.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-beta) method.",
+          "Description": "Changed the return type for the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method.",
           "Target": "query"
         }
       ],
@@ -695,7 +695,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "QnA.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission `QnA.Read.All` to access the qna resource.",
+          "Description": "Added support for the delegated permission `QnA.Read.All` to access the [qna](https://learn.microsoft.com/en-us/graph/api/resources/search-qna?view=graph-rest-beta) resource.",
           "Target": "qna"
         }
       ],
