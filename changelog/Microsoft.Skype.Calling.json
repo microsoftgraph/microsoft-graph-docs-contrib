@@ -2632,7 +2632,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentSharingSessions",
           "ChangeType": "Addition",
-          "Description": "Added the **contentSharingSessions** relationship to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Description": "Added the **contentSharingSessions** relationship to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         }
       ],
@@ -2650,7 +2650,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dateTimeTimeZone",
           "ChangeType": "Addition",
-          "Description": "Added the [dateTimeTimeZone](https://docs.microsoft.com/en-us/graph/api/resources/dateTimeTimeZone?view=graph-rest-beta) resource type.",
+          "Description": "Added the [dateTimeTimeZone](https://learn.microsoft.com/en-us/graph/api/resources/dateTimeTimeZone?view=graph-rest-beta) resource type.",
           "Target": "dateTimeTimeZone"
         }
       ],
@@ -2668,7 +2668,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presenceStatusMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [presenceStatusMessage](https://docs.microsoft.com/en-us/graph/api/resources/presenceStatusMessage?view=graph-rest-beta) resource type.",
+          "Description": "Added the [presenceStatusMessage](https://learn.microsoft.com/en-us/graph/api/resources/presenceStatusMessage?view=graph-rest-beta) resource type.",
           "Target": "presenceStatusMessage"
         }
       ],
@@ -2686,7 +2686,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "statusMessage",
           "ChangeType": "Addition",
-          "Description": "Added the `statusMessage` property to the [presence](https://docs.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Description": "Added the `statusMessage` property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
           "Target": "presence"
         },
         {
@@ -2694,7 +2694,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setStatusMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [setStatusMessage](https://docs.microsoft.com/en-us/graph/api/presence?view=graph-rest-beta) method to the [presence](https://docs.microsoft.com/en-us/graph/api/presence?view=graph-rest-beta) resource.",
+          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-beta) resource.",
           "Target": "presence"
         }
       ],
