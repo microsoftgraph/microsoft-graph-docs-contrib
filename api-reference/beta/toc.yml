@@ -16325,6 +16325,8 @@ items:
             href: api/presence-setuserpreferredpresence.md
           - name: Clear user preferred presence
             href: api/presence-clearuserpreferredpresence.md
+          - name: Set user status message
+            href: api/presence-setstatusmessage.md
       - name: Devices (preview)
         items:
         - name: Provisioned device
