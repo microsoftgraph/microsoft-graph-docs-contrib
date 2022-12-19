@@ -10559,8 +10559,6 @@ items:
             href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
           - name: Get real time remote connection status
             href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-          - name: Get shared use license usage reports
-            href: api/cloudpcreports-getshareduselicenseusagereoport.md
           - name: Get total aggregated remote connection reports
             href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
           - name: Get shared use license usage reports
