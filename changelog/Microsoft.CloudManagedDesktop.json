@@ -12,7 +12,7 @@
                 },
                 {
                     "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
-                    "ApiChange": "Enumeration",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcRegionGroup",
                     "ChangeType": "Addition",
                     "Description": "Added the **cloudPcRegionGroup** enumeration type.",
@@ -23,8 +23,8 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "regionGroup",
                     "ChangeType": "Addition",
-                    "Description": "Added the regionGroup property to the **cloudPcRegionGroup** resource.",
-                    "Target": "cloudPcRegionGroup"
+                    "Description": "Added the **regionGroup** property to the [cloudPcSupportedRegion](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSupportedRegion"
                 }
             ],
             "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
