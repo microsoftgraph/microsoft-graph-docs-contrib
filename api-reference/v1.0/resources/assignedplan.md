@@ -30,11 +30,12 @@ The following table describes the possible statuses for the **capabilityStatus**
 
 | Member | Description	|
 |:---------------|:--------|
-| Deleted | Unavailable and any data associated with the capability may be deleted. |
 | Enabled | Available for normal use and assignment. |
-| LockedOut | Unavailable for all administrators and users for assignment but any data associated with the capability must be preserved. This is the state after `Suspended` and if the license isn't renewed, it is the final state before the plan is `Deleted`. |
-| Suspended | Unavailable for assignment but any data associated with the capability must be preserved. |
 | Warning | Available for normal use and assignment but is in a grace period. |
+| Suspended | Unavailable for assignment but any data associated with the capability must be preserved. |
+| LockedOut | Unavailable for all administrators and users for assignment but any data associated with the capability must be preserved. This is the state after `Suspended` and if the license isn't renewed, it is the final state before the plan is `Deleted`. |
+| Deleted | Unavailable and any data associated with the capability may be deleted. |
+
 
 ## JSON representation
 

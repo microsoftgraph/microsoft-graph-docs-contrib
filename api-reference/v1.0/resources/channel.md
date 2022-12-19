@@ -70,10 +70,11 @@ where files are shared, and where tabs are added.
 
 | Member             | Description                                                                       |
 |:-------------------|:----------------------------------------------------------------------------------|
-| private            | Channel can have members that are a subset of all the members on the parent team. |
-| shared             | Members can be directly added to the channel without adding them to the team.     |
 | standard           | Channel inherits the list of members of the parent team.                          |
+| private            | Channel can have members that are a subset of all the members on the parent team. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                 |
+| shared             | Members can be directly added to the channel without adding them to the team.     |
+
 
 ### Instance attributes
 
