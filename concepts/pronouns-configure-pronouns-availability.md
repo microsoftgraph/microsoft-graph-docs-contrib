@@ -9,7 +9,8 @@ ms.custom: scenarios:getting-started
 
 # Enabling or disabling pronouns settings in Microsoft 365 (preview)
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+> [!NOTE]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
 If you are a global administrator, you can enable and disable showing pronouns in your organization. Pronouns are **off** by default. When pronouns are enabled, users can add, update, and delete pronouns in Microsoft apps and services.
 
