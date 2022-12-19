@@ -119,7 +119,7 @@ Content-Type: application/json
         }
     ],
     "excludeTargets": [],
-    "isSoftwareOathEnabled": "true",
+    "isSoftwareOathEnabled": true,
     "featureSettings": {
         "numberMatchingRequiredState" : {
             "state": "enabled",
