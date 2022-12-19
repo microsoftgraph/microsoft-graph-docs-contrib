@@ -67,8 +67,8 @@ Content-type: application/json
   "displayName": "Graph Simulation",
   "description": "Test simulation created using postman",
   "payloadDeliveryPlatform": "email",
-  "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a"
-  "durationInDays": "7",
+  "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
+  "durationInDays": 7,
   "attackTechnique": "credentialHarvesting",
   "attackType": "social",
   "status": "scheduled",
@@ -103,7 +103,9 @@ The following is an example of the response.
   "truncated": true
 }
 -->
+
 ```http
 HTTP/1.1 202 Accepted 
+
 Location https://graph.microsoft.com/beta/security/attackSimulation/operations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc 
 ```
