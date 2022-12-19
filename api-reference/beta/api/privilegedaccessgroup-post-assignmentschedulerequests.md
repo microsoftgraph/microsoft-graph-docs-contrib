@@ -48,8 +48,6 @@ You can specify the following properties when creating a **privilegedAccessGroup
 |Property|Type|Description|
 |:---|:---|:---|
 |status|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Required.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
 |approvalId|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
 |customData|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
 |createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
