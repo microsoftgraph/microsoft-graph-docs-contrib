@@ -1,6 +1,6 @@
 ---
 title: "smsAuthenticationMethodTarget resource type"
-description: "A collection of users or groups enabled to use Text Message authentication methods policy."
+description: "A collection of groups enabled to use Text Message authentication methods policy."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of users or groups enabled to use [Text Message authentication methods policy](../resources/smsAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of groups enabled to use [Text Message authentication methods policy](../resources/smsAuthenticationMethodConfiguration.md) in Azure AD.
 
 ## Properties
 |Property|Type|Description|
