@@ -167,6 +167,8 @@ Content-type: application/json
   "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
   "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
   "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+  "authenticationAppDeviceDetails": null,
+  "authenticationAppPolicyDetails": null,
   "authenticationMethodsUsed":[],
   "authenticationRequirement":"singleFactorAuthentication",
   "azureResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM",

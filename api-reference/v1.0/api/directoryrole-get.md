@@ -25,10 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
+
+You can address the directory role using either its **id** or **roleTemplateId**.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/{role-id}
-GET /directoryRoles/roleTemplateId={roleTemplateId}
+GET /directoryRoles(roleTemplateId='{roleTemplateId}')
 ```
 ## Optional query parameters
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
@@ -116,7 +119,7 @@ Content-type: application/json
   "name": "get_directoryrole_templateId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=43a63cc2-582b-4d81-a79d-1591f91d5558
+GET https://graph.microsoft.com/v1.0/directoryRoles(roleTemplateId='43a63cc2-582b-4d81-a79d-1591f91d5558')
 ```
 
 

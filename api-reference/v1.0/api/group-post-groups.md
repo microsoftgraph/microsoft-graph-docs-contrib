@@ -311,6 +311,8 @@ Content-type: application/json
 
 The following is an example of the request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
 
+A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type, its **securityEnabled** must be set to `true`, and **visibility** can only be `Private`.
+
 # [HTTP](#tab/http)
 
 <!-- {
