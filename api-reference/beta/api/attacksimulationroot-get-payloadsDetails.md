@@ -100,12 +100,12 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/detail",
-    "fromName": "test@tst.com",
-    "fromEmail": "test@test.com",
+    "fromName": "faiza",
+    "fromEmail": "faiza@contoso.com",
     "addIsExternalSender": false,
     "subject": "Payload Detail",
     "content": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">",
-    "phishingUrl": "www.testphishing.com",
+    "phishingUrl": "http://www.widgetsinc10+.com",
     "coachMarks": [
         {
             "indicator": "URL hyperlinking",

@@ -79,15 +79,14 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
     "type" : "addressBook",
     "accountTargetEmails" : [
-        "jeff.watson@microsoft.com",
-        "pefferson.watson@microsoft.com"
+        "john@contoso.com"
     ]
   },
   "excludedAccountTarget": {
     "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
     "type" : "addressBook",
     "accountTargetEmails" : [
-      "jeffer.watson@microsoft.com"
+      "faiza@contoso.com"
     ]
   }
 }

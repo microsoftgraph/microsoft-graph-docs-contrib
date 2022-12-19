@@ -1,5 +1,5 @@
 ---
-title: "include all account target content resource type"
+title: "includeallaccountTargetContent resource type"
 description: "Represents an included or excluded users from attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium

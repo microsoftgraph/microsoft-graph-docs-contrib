@@ -80,7 +80,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
     "type" : "addressBook",
     "accountTargetEmails" : [
-        "jeff.watson@microsoft.com"
+        "john@contoso.com"
     ]
 }
 ```

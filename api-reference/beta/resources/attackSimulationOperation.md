@@ -1,5 +1,5 @@
 ---
-title: "Operation details for attacksimulation"
+title: "attackSimulationOperation resource type"
 description: "Represents an attack simulation training operation. For LRO api, this type will contain the respective details."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -64,15 +64,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.attackSimulationOperation",
-  "id": "vkb3-nbfn-cdvfv-skfdjg",
-  "createdDateTime": "2022-01-12T05:27:18.7957961Z",
-  "lastActionDateTime": "2022-01-12T05:27:18.7957961Z",
+  "id": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastActionDateTime": "String (timestamp)",
+  "percentageCompleted": "Integer",
   "resourceLocation": "String",
-  "status": "notStarted",
-  "percentageCompleted": 0,
-  "statusDetail": "Creating new simulation",
-  "type": "createSimulation",
-  "tenantId": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3ss"
+  "status": "microsoft.graph.longRunningOperationStatus",
+  "statusDetail": "String",
+  "type": "microsoft.graph.attackSimulationOperationType",
+  "tenantId": "String"
 }
 ```
 

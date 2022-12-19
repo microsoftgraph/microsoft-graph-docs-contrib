@@ -43,6 +43,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|Date and time of creation of the attack simulation and training campaign.|
 |description|String|Description of the attack simulation and training campaign.|
 |displayName|String|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
+|durationInDays|Int32|Simulation duration in days.|
 |id|String|Unique identifier for the attack simulation and training campaign. Inherited from [entity](../resources/entity.md).|
 |isAutomated|Boolean|Flag that represents if the attack simulation and training campaign was created from a simulation automation flow. Supports `$filter` and `$orderby`. |
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
@@ -51,7 +52,6 @@ Inherits from [entity](../resources/entity.md).
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|durationInDays|Int32|Simulation duration in days.|
 |excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from simulation|
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targetted in simulation|
 
@@ -142,7 +142,7 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "durationInDays": "3",
+  "durationInDays": "Integer",
   "id": "String (identifier)",
   "isAutomated": "Boolean",
   "lastModifiedBy": {
@@ -150,7 +150,7 @@ The following is a JSON representation of the resource.
   },
   "lastModifiedDateTime": "String (timestamp)",
   "launchDateTime": "String (timestamp)",
-  "payloadDeliveryPlatform": "String",
+  "payloadDeliveryPlatform": "microsoft.graph.payloadDeliveryPlatform",
   "report": {
     "@odata.type": "microsoft.graph.simulationReport"
   },

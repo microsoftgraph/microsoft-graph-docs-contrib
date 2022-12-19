@@ -1,5 +1,5 @@
 ---
-title: "email payload Detail resource type"
+title: "emailPayloadDetail resource type"
 description: "Represents the detail of a payload."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -18,12 +18,12 @@ Represents the detail of a payload.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|phishingUrl|String|Phishing url used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
-|content|String|Payload content details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
 |coachmarks|[payloadCoachmark](../resources/payloadcoachmark.md)|Payload coachmark details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
-|fromName|String|Display name of the user.|
+|content|String|Payload content details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
 |fromEmail|String|Email address of the user.|
+|fromName|String|Display name of the user.|
 |isExternalSender|String|Email address of the user.|
+|phishingUrl|String|Phishing url used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
 |subject|String|Email address of the user.|
 
 ## Relationships
@@ -38,27 +38,27 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/detail",
-    "fromName": "test@tst.com",
-    "fromEmail": "test@test.com",
-    "addIsExternalSender": false,
-    "subject": "Payload Detail",
-    "content": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">",
-    "phishingUrl": "www.testphishing.com",
-    "coachMarks": [
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/detail",
+   "coachMarks": [
         {
-            "indicator": "URL hyperlinking",
-            "description": "URL hyperlinking hides the true URL behind text; the text can also look like another link",
-            "language": "en",
-            "order": 0,
-            "isValid": "true",
+            "indicator": "String",
+            "description": "String",
+            "language": "String",
+            "order": "Integer",
+            "isValid": "Boolean",
             "coachmarkLocation": {
-                "offset": 144,
-                "length": 6,
-                "type": "messageBody"
+                "offset": "Integer",
+                "length": "Integer",
+                "type": "String"
             }
         }
-    ]            
-}
+    ],            
+    "content": "String",
+    "fromEmail": "String",
+    "fromName": "String",
+    "IsExternalSender": "Boolean",
+    "phishingUrl": "String",
+    "subject": "String"
+ }
 ```
 

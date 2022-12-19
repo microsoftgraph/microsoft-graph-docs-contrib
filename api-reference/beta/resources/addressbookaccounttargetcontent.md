@@ -1,5 +1,5 @@
 ---
-title: "addressbook account target content resource type"
+title: "aaddressbookccountTargetContent resource type"
 description: "Represents an included or excluded users from attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -39,10 +39,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
-    "type" : "addressBook",
     "accountTargetEmails" : [
-        "jeff.watson@microsoft.com"
-    ]
+        "String",
+    ],
+    "type" : "microsoft.graph.accountTargetContentType"
 }
 ```
 

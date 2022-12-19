@@ -113,15 +113,15 @@ Content-Type: application/json
     "complexity": "medium",
     "attackTechnique": "credentialHarvesting",
     "createdBy": {
-        "email": "attacksim@a8130edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+        "email": "faiza@contoso.com",
         "id": "121212",
-        "displayName": "Test User"
+        "displayName": "Faiza"
     },
     "createdDateTime": "2022-01-12T03:15:01.5906699Z",
     "lastModifiedBy": {
-        "email": "attacksim@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
-        "id": "1111",
-        "displayName": "Test user 2"
+        "email": "faiza@contoso.com",
+        "id": "121212",
+        "displayName": "Faiza"
     },
     "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
     "theme": "personalizedOffer",

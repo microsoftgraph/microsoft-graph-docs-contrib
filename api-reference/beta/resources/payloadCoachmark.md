@@ -18,12 +18,12 @@ Represents the payload coachmark detail of a payload.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|indicator|String|Coachmark indicator.|
-|description|String|Description about the coachmark.|
-|language|String|Coachmark language.|
-|order|String|Coachmark order.|
-|isValid|String|Tells if the coachmark is valid or not.|
 |coachmarkLocation|(../resources/coachmarklocation.md)|Coachmark location.|
+|description|String|Description about the coachmark.|
+|indicator|String|Coachmark indicator.|
+|isValid|String|Tells if the coachmark is valid or not.|
+|order|String|Coachmark order.|
+|language|String|Coachmark language.|
 
 ## Relationships
 None.
@@ -38,17 +38,17 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.payloadCoachmark",
-"indicator": "URL hyperlinking",
-"description": "URL hyperlinking hides the true URL behind text; the text can also look like another link",
-"language": "en",
-"order": 0,
-"isValid": "true",
-"location": {
-	"offset": 144,
-	"length": 6,
-	"type": "messageBody"  
-	}
+  "@odata.type": "#microsoft.graph.payloadCoachmark",
+  "coachmarkLocation": {
+    "offset": "Integer",
+    "length": "Integer",
+    "type": "String"
+  },
+  "description": "String",
+  "indicator": "String",
+  "isValid": "Boolean",
+  "order": "Integer",
+  "langauage":"String"
 }
 ```
 

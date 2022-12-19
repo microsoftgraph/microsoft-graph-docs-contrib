@@ -1,5 +1,5 @@
 ---
-title: "Coachmark location detail"
+title: "coachmarkLocation detail"
 description: "Coachmark location detail."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -19,7 +19,7 @@ Coachmark location detail
 |Property|Type|Description|
 |:---|:---|:---|
 |length|Int32|Length of coachmark.|
-|location|coachmarkLocationType|Type of coachmark location.The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
+|type|coachmarkLocationType|Type of coachmark location.The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
 |offset|Int32|Offset of coachmark.|
 
 ### coachmarkLocationType values
@@ -33,3 +33,21 @@ Coachmark location detail
 |displayName| Coachmark from display name. |
 |messageBody| Coachmark from email body. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+
+
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.coachmarkLocation"
+}
+-->
+``` json
+{
+"@odata.type": "#microsoft.graph.coachmarkLocation",
+"offset": "Integer",
+"length": "Integer",
+"type": "String"  
+}
+```
