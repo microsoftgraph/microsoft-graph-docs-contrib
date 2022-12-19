@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 | filter     | String            | OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.         |
 | select     | String collection | OData select syntax. Represents the selected columns of the reports.                                  |
 | search     | String            | Specifies a string to search.                                                                         |
-| groupBy    | String collection | Specifies how to group the reports. If used, must have the same contents as the **select** parameter. |
+| groupBy    | String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.  |
 | orderBy    | String collection | Specifies how to sort the reports.                                                                    |
 | skip       | Int32             | The number of records to skip.                                                                        |
 | top        | Int32             | The number of top records to return.                                                                  |
