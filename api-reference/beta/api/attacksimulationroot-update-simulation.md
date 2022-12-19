@@ -76,14 +76,14 @@ Content-type: application/json
   "completionDateTime": "2022-09-16T06:13:08.4297612Z",
   "launchDateTime": "2022-09-05T06:13:08.4297612Z",
   "includedAccountTarget": {
-    "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
+    "@odata.type": "#microsoft.graph.security.addressbookaccounttargetcontent",
     "type" : "addressBook",
     "accountTargetEmails" : [
         "faiza@contoso.com"
     ]
   },
   "excludedAccountTarget": {
-    "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
+    "@odata.type": "#microsoft.graph.security.addressbookaccounttargetcontent",
     "type" : "addressBook",
     "accountTargetEmails" : [
         "sam@contoso.com"
@@ -105,7 +105,5 @@ The following is an example of the response.
 -->
 
 ```http
-HTTP/1.1 202 Accepted 
-
-Location https://graph.microsoft.com/beta/security/attackSimulation/operations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc 
+HTTP/1.1 202 Accepted
 ```
