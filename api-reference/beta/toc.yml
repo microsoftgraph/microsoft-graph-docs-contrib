@@ -16319,12 +16319,13 @@ items:
             href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Set presence
             href: api/presence-setpresence.md
-          - name: Clear presencedevice
+          - name: Clear presence
             href: api/presence-clearpresence.md
           - name: Set user preferred presence
             href: api/presence-setuserpreferredpresence.md
           - name: Clear user preferred presence
             href: api/presence-clearuserpreferredpresence.md
+          - name: Set user status message
       - name: Devices (preview)
         items:
         - name: Provisioned device
