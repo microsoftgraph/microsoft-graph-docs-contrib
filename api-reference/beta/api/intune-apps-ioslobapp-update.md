@@ -79,7 +79,7 @@ The following table shows the properties that are required when you create the [
 |expirationDateTime|DateTimeOffset|The expiration time.|
 |versionNumber|String|The version number of iOS Line of Business (LoB) app.|
 |buildNumber|String|The build number of iOS Line of Business (LoB) app.|
-|identityVersion|String|The identity version.|
+|identityVersion|String|The identity version. This property is being deprecated in 2211(November 2022)|
 
 
 

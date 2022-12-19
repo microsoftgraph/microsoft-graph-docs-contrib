@@ -32,6 +32,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
+|[Collapse search results](#collapse-search-results)| **collapseProperties**|
 |[Sort search results](#sort-search-results)| **sortProperties** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
@@ -112,6 +113,18 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 - [Email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [Site properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+
+## Collapse search results
+
+The **collapseProperties** property contains a set of criteria, fields, and limit size, which are used for collapsing results in a response body. Using **collapseProperties** only impacts the recall but not ranking/sorting.
+
+The [query](../api/search-query.md) method lets you customize the collapse property by specifying **collapseProperties** on the `requests` parameter, which is a collection of [collapseProperty](collapseproperty.md) objects. This allows you to specify a set of one or more collapse properties.
+
+Note that collapsing results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md).
+
+The properties on which the collapse clause are applied need to be queryable and either sortable or refinable in the SharePoint [search schema](/sharepoint/manage-search-schema). For multi-level collapse, each subsequent property limit size specified in a multi-level request should be less than or equal to the previous; otherwise, the response will return an `HTTP 400 Bad Request` error.
+
+For examples that show how to collapse results, see [collapse search results](/graph/search-concept-collapse).
 
 ## Sort search results
 
@@ -225,12 +238,14 @@ For backward compatibility, the original properties and types are accessible and
   - [Search person](/graph/search-concept-person)
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
   - [Search custom types imported using connectors](/graph/search-concept-custom-types)
+  - [Collapse search results](/graph/search-concept-collapse)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
   - [Use search display layout](/graph/search-concept-display-layout)
   - [Search with application permission](/graph/search-concept-searchall)
   - [XRANK search results](/graph/search-concept-xrank)
+  - [Search interleaving results](/graph/search-concept-interleaving)
 
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
