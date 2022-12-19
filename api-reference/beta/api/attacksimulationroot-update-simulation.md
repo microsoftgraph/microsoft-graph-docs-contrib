@@ -76,14 +76,14 @@ Content-type: application/json
   "completionDateTime": "2022-09-16T06:13:08.4297612Z",
   "launchDateTime": "2022-09-05T06:13:08.4297612Z",
   "includedAccountTarget": {
-    "@odata.type": "#microsoft.graph.addressbookaccounttargetcontent",
+    "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
     "type" : "addressBook",
     "accountTargetEmails" : [
         "faiza@contoso.com"
     ]
   },
   "excludedAccountTarget": {
-    "@odata.type": "#microsoft.graph.addressbookaccounttargetcontent",
+    "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
     "type" : "addressBook",
     "accountTargetEmails" : [
         "sam@contoso.com"
