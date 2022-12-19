@@ -11920,8 +11920,8 @@ items:
             items:
             - name: Pronouns settings
               href: resources/pronounssettings.md
-            - name: Get
-              href: api/pronounssettings-get.md
+            - name: List
+              href: api/organizationsettings-list-pronounssettings.md
             - name: Update
               href: api/pronounssettings-update.md
           - name: Profile card customization (preview)

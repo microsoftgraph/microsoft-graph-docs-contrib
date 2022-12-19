@@ -69,8 +69,7 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pr
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.pronounsSettings",
-  "isEnabledInOrganization": "Boolean"
+  "isEnabledInOrganization": true
 }
 ```
 
@@ -88,8 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.pronounsSettings",
-  "isEnabledInOrganization": "Boolean"
+  "isEnabledInOrganization": true
 }
 ```
 

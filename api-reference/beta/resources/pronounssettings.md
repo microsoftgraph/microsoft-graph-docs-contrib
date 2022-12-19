@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get pronounsSettings](../api/pronounssettings-get.md)|[pronounsSettings](../resources/pronounssettings.md)|Read the properties and relationships of a [pronounsSettings](../resources/pronounssettings.md) object.|
+|[List pronounsSettings](../api/organizationsettings-list-pronounssettings.md)|[pronounsSettings](../resources/pronounssettings.md)|Read the properties and relationships of a [pronounsSettings](../resources/pronounssettings.md) object.|
 |[Update pronounsSettings](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) object.|
 
 ## Properties
@@ -44,7 +44,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.pronounsSettings",
   "isEnabledInOrganization": "Boolean"
 }
 ```

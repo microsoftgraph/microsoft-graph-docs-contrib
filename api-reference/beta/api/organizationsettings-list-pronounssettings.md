@@ -79,8 +79,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.pronounsSettings",
-    "isEnabledInOrganization": "Boolean"
+    "isEnabledInOrganization": true
   }
 }
 ```
