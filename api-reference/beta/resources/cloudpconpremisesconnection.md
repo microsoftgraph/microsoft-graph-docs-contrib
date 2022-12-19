@@ -53,12 +53,12 @@ Represents a defined collection of Azure resource information that can be used t
 
 ### cloudPcManagementService values
 
-|Member| Value |Description|
-|:---|:---|:---|
-|windows365|1| Azure network connection was successfully created through Windows365.|
-|devBox|2| Azure network connection was successfully created through Project Fidalgo.|
-|unknownFutureValue|4| Evolvable enumeration sentinel value. Do not use.|
-|rpaBox|8| Azure network connection was successfully created through Project Power Automate.|
+| Member             | Value | Description                                                                               |
+|:-------------------|:------|:------------------------------------------------------------------------------------------|
+| windows365         | 1     | Azure network connection was successfully created through Windows365.                     |
+| devBox             | 2     | Azure network connection was successfully created through Project Fidalgo.                |
+| unknownFutureValue | 4     | Evolvable enumeration sentinel value. Do not use.                                         |
+| rpaBox             | 8     | The Azure network connection was successfully created through the Power Automate project. |
 
 ### cloudPcOnPremisesConnectionType values
 

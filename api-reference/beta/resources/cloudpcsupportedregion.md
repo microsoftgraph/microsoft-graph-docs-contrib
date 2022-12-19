@@ -27,9 +27,9 @@ Represents a supported region to establish an Azure network connection for Cloud
 |:---      |:---  |:---         |
 |displayName|String|The name for the supported region. Read-only.|
 |id|String|The unique identifier for the supported region. Read-only.|
+|regionGroup|[cloudPcRegionGroup](#cloudpcregiongroup-values)|The geographic group this region belongs to. Multiple regions can belong to one region group. For example, the Europe region group contains the Northern Europe and Western Europe regions. A customer can select a region group when provisioning a Cloud PC. The Cloud PC will be put under one of the regions under the group based on resource status. Possible values are: `default`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `euap`, `usGovernment`, `usGovernmentDod`, `norway`, `switzerland`，`southKorea`, `unknownFutureValue`. Read-only.|
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
-|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`,`unknownFutureValue`. Read-only.|
-|regionGroup|[cloudPcRegionGroup](#cloudpcregiongroup-values)|The logic geographic group this region belongs to. Multiple regions could belong to one region group. Customer could select a regionGroup when provision a Cloud PC, the Cloud PC will be put under one of the regions under the group based on resource status. e.g. Europe region group contains North Europe and West Europe regions. Possible values are: `default`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `usGovernment`, `usGovrnmentDod`, `norway`, `switzerland`，`southKorea` and `uae`. Read-only.|
+|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`, `unknownFutureValue`. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
@@ -42,29 +42,29 @@ Represents a supported region to establish an Azure network connection for Cloud
 
 ### cloudPcRegionGroup values
 
-|Member|Description|
-|:---|:---|
-| default | The region belongs to the default region group.|
-| australia | The region belongs to Australia region group.|
-| canada | The region belongs to Canada region group |
-| usCentral | The region belongs to US Central region group |
-| usEast | The region belongs to US East region group |
-| usWest | The region belongs to US West region group |
-| france | The region belongs to France region group |
-| germany | The region belongs to Germany region group |
-| europeUnion | The region belongs to Europe Union region group |
-| unitedKingdom | The region belongs to United Kingdom region group |
-| japan | The region belongs to Japan region group |
-| asia | The region belongs to Asia region group |
-| india | The region belongs to India region group |
-| southAmerica | The region belongs to South America region group |
-| usGovernment | The region belongs to US Government region group |
-| usGovernmentDod | The region belongs to US Government DOD region group |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use |
-| norway | The region belongs to Norway region group |
-| switzerland | The region belongs to Switzerland region group |
-| southKorea | The region belongs to South Korea region group |
-| uae | The region belongs to UAE region group |
+| Member             | Description                                                                        |
+|:-------------------|:-----------------------------------------------------------------------------------|
+| default            | The region belongs to the default region group.                                    |
+| australia          | The region belongs to the region group: Australia.                                 |
+| canada             | The region belongs to the region group: Canada.                                    |
+| usCentral          | The region belongs to the region group: Central US.                                |
+| usEast             | The region belongs to the region group: East US.                                   |
+| usWest             | The region belongs to the region group: West US.                                   |
+| france             | The region belongs to the region group: France.                                    |
+| germany            | The region belongs to the region group: Germany.                                   |
+| europeUnion        | The region belongs to the region group: European Union.                            |
+| unitedKingdom      | The region belongs to the region group: United Kingdom.                            |
+| japan              | The region belongs to the region group: Japan.                                     |
+| asia               | The region belongs to the region group: Asia.                                      |
+| india              | The region belongs to the region group: India.                                     |
+| southAmerica       | The region belongs to the region group: South America.                             |
+| usGovernment       | The region belongs to the region group: US Government.                             |
+| usGovernmentDod    | The region belongs to the region group: US Government Department of Defense (DOD). |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                  |
+| norway             | The region belongs to the region group: Norway.                                    |
+| switzerland        | The region belongs to the region group: Switzerland.                               |
+| southKorea         | The region belongs to the region group: South Korea.                               |
+| uae                | The region belongs to the region group: UAE.                                       |
 
 ## Relationships
 
@@ -87,8 +87,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcSupportedRegion",
   "displayName": "String",
   "id": "String (identifier)",
+  "regionGroup": "String",
   "regionStatus": "microsoft.graph.cloudPcSupportedRegionStatus",
-  "supportedSolution": "String",
-  "regionGroup": "microsoft.graph.cloudPcRegionGroup"
+  "supportedSolution": "String"
 }
 ```
