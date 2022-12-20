@@ -492,7 +492,7 @@ items:
             href: item-insights-overview.md
           - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
-          - name: Enabling or disabling pronouns in Microsoft 365 (preview)
+          - name: Enabling or disabling pronouns (preview)
             href: pronouns-configure-pronouns-availability.md
       - name: Personal contacts
         items:

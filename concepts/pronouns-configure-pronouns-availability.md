@@ -1,5 +1,5 @@
 ---
-title: "Enabling or disabling pronouns in Microsoft 365 (preview)"
+title: "Enabling or disabling pronouns (preview)"
 description: "Configure availability of pronouns by using the REST API pronounsSettings resource."
 author: "aymen-ms"
 ms.localizationpriority: high
