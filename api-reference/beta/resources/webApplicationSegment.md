@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a [webApplicationSegment](webApplicationSegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.
 
-Inherits from [applicationSegment](applicationSegment.md.md).
+Inherits from [applicationSegment](applicationSegment.md).
 
 ## Properties
 
