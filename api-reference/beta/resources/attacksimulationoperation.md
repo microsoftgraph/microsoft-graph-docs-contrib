@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationOperation resource type"
-description: "Represents an attack simulation training operation. For LRO api, this type will contain the respective details."
+description: "Represents an attack simulation training operation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -25,13 +25,13 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get operation](../api/attacksimulationroot-get-operation.md)|[operation](../resources/attackSimulationOperation.md)|Get an attack simulation operation to track a LRO request for a tenant.|
+|[Get operation](../api/attacksimulationroot-get-operation.md)|[operation](../resources/attacksimulationoperation.md)|Get an attack simulation operation to track a LRO request for a tenant.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Operation created date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
-|id|String|Tracking id. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier for the training. Inherited from [entity](../resources/entity.md).|
 |lastActionDateTime|DateTimeOffset|Last action date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |percentageCompleted|Int32| Percentage of completion of the respective operation.|
 |resourceLocation|String|Tracking resource location. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
@@ -63,16 +63,20 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.attackSimulationOperation",
-  "id": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastActionDateTime": "String (timestamp)",
-  "percentageCompleted": "Integer",
-  "resourceLocation": "String",
-  "status": "microsoft.graph.longRunningOperationStatus",
-  "statusDetail": "String",
-  "type": "microsoft.graph.attackSimulationOperationType",
-  "tenantId": "String"
+    "@odata.type": "#microsoft.graph.attackSimulationOperation",
+    "createdDateTime": "String (timestamp)",
+    "id": "String (identifier)",
+    "lastActionDateTime": "String (timestamp)",
+    "percentageCompleted": "Int32",
+    "resourceLocation": "String",
+    "status": {
+        "@odata.type": "microsoft.graph.longRunningOperationStatus"
+    },
+    "statusDetail": "String",
+    "tenantId": "String",
+    "type": {
+        "@odata.type": "microsoft.graph.attackSimulationOperationType"
+    }
 }
 ```
 

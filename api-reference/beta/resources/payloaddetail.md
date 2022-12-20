@@ -16,16 +16,19 @@ Namespace: microsoft.graph
 Represents the detail of a payload.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
+|coachmarks|[payloadCoachmark](../resources/payloadcoachmark.md) collection|Payload coachmark details.|
 |content|String|Payload content details.|
-|coachmarks|[payloadCoachmark](../resources/payloadcoachmark.md)|collection|Payload coachmark details.|
-|phishingUrl|String|Phishing url used to target a user.|
+|phishingUrl|String|The phishing URL used to target a user.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -34,24 +37,13 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/detail",
-    "content": "String",
+    "@odata.type": "#microsoft.graph.payloadDetail",
     "coachMarks": [
         {
-            "coachmarkLocation": {
-                "length": "Integer",
-                "offset": "Integer",
-                "type": "String"
-            },
-            "description": "String",
-            "indicator": "String",
-            "isValid": "Boolean",
-            "language": "String",
-            "order": "Integer"            
+            "@odata.type": "microsoft.graph.payloadCoachmark"
         }
     ],
-    "phishingUrl": "String",
-
+    "content": "String",
+    "phishingUrl": "String"
 }
 ```
-
