@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
+ms.date: 20/07/2022
 ---
 
 # Configure synchronization with custom target attributes

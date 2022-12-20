@@ -4,6 +4,7 @@ description: "Microsoft Graph provides optional query parameters that you can us
 author: "mumbi-o"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/08/2022
 ---
 
 # Use query parameters to customize responses

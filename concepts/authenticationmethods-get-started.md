@@ -4,6 +4,7 @@ description: "Learn how to manage your users' authentication methods and get use
 author: "mmcla"
 ms.localizationpriority: high
 ms.prod: "identity-and-sign-in"
+ms.date: 18/10/2022
 ---
 
 # Get started with the Microsoft Graph authentication methods API
