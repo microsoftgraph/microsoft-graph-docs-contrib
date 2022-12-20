@@ -5,6 +5,7 @@ author: "jackson-woods"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/09/2022
 ---
 
 # Microsoft Graph permissions reference

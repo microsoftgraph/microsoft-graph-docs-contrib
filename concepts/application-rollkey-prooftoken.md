@@ -4,6 +4,7 @@ description: "As part of the request validation for the addKey and removeKey met
 ms.localizationpriority: high
 ms.prod: "applications"
 author: "FaithOmbongi"
+ms.date: 12/20/2022
 ---
 
 # Generating proof of possession tokens for rolling keys
