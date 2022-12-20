@@ -13,11 +13,11 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point to access all resources related to alerts in the Microsoft Endpoint Manager admin center. 
+Represents the entry point to access all resources related to alerts in the Microsoft Endpoint Manager admin center.
 
-The monitoring APIs provide a programmatic alert experience in the Microsoft Endpoint Manager admin center. Microsoft Endpoint Manager admins can create alert rules with preferred notification channels, and receive alerts when conditions set as thresholds in alert rules are met. Notification channels may include email and Microsoft Endpoint Manager admin center notifications. Each alert is recorded as an [alert record](devicemanagement-alertrecord.md). Admins can review alert records to learn about alert impact, severity, status, and more. Only the roles of a global admin, Intune admin, Windows 365 admin, and Cloud PC admin have access to the monitoring APIs.
+The monitoring APIs provide a programmatic alert experience in the Microsoft Endpoint Manager admin center. Microsoft Endpoint Manager admins can create alert rules with preferred notification channels, and receive alerts when conditions set as thresholds in alert rules are met. Notification channels may include email and Microsoft Endpoint Manager admin center notifications. Each alert is recorded as an [alert record](devicemanagement-alertrecord.md). Admins can review alert records to learn about alert impact, severity, status, and more. Only the role of Windows 365 admin has access to the monitoring APIs. Admins also need role of global admin, Intune admin, or Cloud PC admin to successfully make API calls.
 
-Currently this API set supports only [Windows 365](/windows-365/overview) and Cloud PC scenarios. It allows admins to set up rules and alert issues with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections. 
+Currently this API set supports only [Windows 365](/windows-365/overview) and Cloud PC scenarios. It allows admins to set up rules and alert issues with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections.
 
 ## Properties
 
