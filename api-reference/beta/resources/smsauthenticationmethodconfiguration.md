@@ -31,7 +31,7 @@ Represents a Text Message authentication methods policy. Authentication methods 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[smsAuthenticationMethodTarget](../resources/smsauthenticationmethodtarget.md) collection|A collection of groups who are enabled to use the authentication method.|
+|includeTargets|[smsAuthenticationMethodTarget](../resources/smsauthenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

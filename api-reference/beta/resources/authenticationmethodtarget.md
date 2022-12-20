@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodTarget resource type"
-description: "A collection of groups enabled to use an authentication method as part of an authentication method policy."
+description: "A collection of groups that are enabled to use an authentication method as part of an authentication method policy."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of groups enabled to use an authentication method as part of an authentication method policy in Azure AD. Inherits from [entity](entity.md).
+A collection of groups that are enabled to use an authentication method as part of an authentication method policy in Azure AD. Inherits from [entity](entity.md).
 
 
 ## Properties
