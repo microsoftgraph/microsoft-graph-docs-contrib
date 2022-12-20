@@ -1,5 +1,5 @@
 ---
-title: "Get pronounsSettings"
+title: "List pronounsSettings"
 description: "Read the properties and relationships of a pronounsSettings object."
 author: "aymen-ms"
 ms.localizationpriority: medium
@@ -7,14 +7,15 @@ ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Get pronounsSettings
+# List pronounsSettings
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [pronounsSettings](../resources/pronounssettings.md) object.
+Get the properties of a [pronounsSettings](../resources/pronounssettings.md) object for displaying or returning pronouns in an organization.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,9 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /organization/{organizationId}/settings/pronouns
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -78,9 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "isEnabledInOrganization": true
-  }
+  "isEnabledInOrganization": true
 }
 ```
 

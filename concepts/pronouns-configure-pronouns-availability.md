@@ -1,6 +1,6 @@
 ---
 title: "Enabling or disabling pronouns in Microsoft 365 (preview)"
-description: "Configure availability of pronouns by using REST API pronounsSettings resource."
+description: "Configure availability of pronouns by using the REST API pronounsSettings resource."
 author: "aymen-ms"
 ms.localizationpriority: high
 ms.prod: "people"
@@ -9,12 +9,10 @@ ms.custom: scenarios:getting-started
 
 # Enabling or disabling pronouns settings in Microsoft 365 (preview)
 
+If you are a global administrator, you have the ability to enable or disable the display of pronouns in your organization. By default, pronouns are **disabled**. If you enable pronouns, users will be able to add and update pronouns in Microsoft apps and services.
+
 > [!NOTE]
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
-
-If you are a global administrator, you can enable and disable showing pronouns in your organization. Pronouns are **off** by default. When pronouns are enabled, users can add, update, and delete pronouns in Microsoft apps and services.
-
-Pronouns settings are exposed through the *pronouns* property in *organizationSettings*.
 
 ## Confirm your current settings
 
@@ -98,4 +96,4 @@ Content-Type: application/json
 
 ## Important
 
-When you turn off pronouns in your organization, pronouns are immediately hidden in Microsoft apps, but the data can persist for up to 30 days on Microsoft servers. If you choose to enable pronouns back not yet deleted pronouns that were hidden will be visible again. 
+when pronouns are turned off in your organization, pronouns will be hidden in Microsoft apps. However, the data may persist on Microsoft servers for up to 30 days. If you decide to re-enable pronouns within that period, any previously hidden pronouns that have not yet been deleted will became visible again.

@@ -137,6 +137,30 @@
 				"ChangeType": "Addition",
 				"Description": "Added the [pronounsSettings](https://docs.microsoft.com/en-us/graph/api/resources/pronounsSettings?view=graph-rest-beta) resource",
 				"Target": "pronounsSettings"
+			  },
+			  {
+				  "Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",
+				  "ApiChange": "Method",
+				  "ChangedApiName": "GET",
+				  "ChangeType": "Addition",
+				  "Description": "Added a [list](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://docs.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource, to get the tenant-level settings for pronouns",
+				  "Target": "pronounsSettings"
+			  },
+			  {
+				  "Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",
+				  "ApiChange": "Method",
+				  "ChangedApiName": "PATCH",
+				  "ChangeType": "Addition",
+				  "Description": "Added an [udpate](https://learn.microsoft.com/en-us/graph/api/pronounssettings-update?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://docs.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource, to update the tenant-level settings for pronouns",
+				  "Target": "pronounsSettings"
+			  },
+			  {
+				"Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",
+				"ApiChange": "Relationship",
+				"ChangedApiName": "pronounsSettings",
+				"ChangeType": "Addition",
+				"Description": "Added the **pronounsSettings** relationship to the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+				"Target": "organizationSettings"
 			  }
 			],
 			"Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",

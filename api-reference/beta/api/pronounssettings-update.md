@@ -8,11 +8,12 @@ doc_type: apiPageType
 ---
 
 # Update pronounsSettings
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [pronounsSettings](../resources/pronounssettings.md) object.
+Update the properties of a [pronounsSettings](../resources/pronounssettings.md) in an organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents _settings_ to control the availability of Pronouns in the tenant. Pronouns are *off* by default. When pronouns are enabled, users can add, update, and delete pronouns on their profile card in Microsoft apps and services.
+Represents _settings_ to control the availability of Pronouns in the tenant. Pronouns are *off* by default. When pronouns are enabled, users can add or update pronouns on their profile card in Microsoft apps and services.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List pronounsSettings](../api/organizationsettings-list-pronounssettings.md)|[pronounsSettings](../resources/pronounssettings.md)|Read the properties and relationships of a [pronounsSettings](../resources/pronounssettings.md) object.|
-|[Update pronounsSettings](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) object.|
+|[List pronounsSettings](../api/organizationsettings-list-pronounssettings.md)|[pronounsSettings](../resources/pronounssettings.md)|Get the _settings_ in [pronounsSettings](../resources/pronounssettings.md) object for displaying pronouns in an organization.|
+|[Update pronounsSettings](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) resource to mangage the display of pronouns in an organization.|
 
 ## Properties
 |Property|Type|Description|
