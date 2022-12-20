@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "joinMeetingIdMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [joinMeetingIdMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/joinMeetingIdMeetingInfo?view=graph-rest-1.0) resource type.",
+          "Target": "joinMeetingIdMeetingInfo"
+        }
+      ],
+      "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-19T17:47:14.2823035Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f1e8f2ba-e5b1-4104-88be-1ed7f6f44904",
           "ApiChange": "Resource",
           "ChangedApiName": "broadcastMeetingCaptionSettings",
