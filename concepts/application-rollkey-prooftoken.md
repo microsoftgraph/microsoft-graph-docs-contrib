@@ -1,5 +1,5 @@
 ---
-title: "Generating proof of possession tokens for rolling keys"
+title: "Generate proof of possession tokens for rolling keys"
 description: "As part of the request validation for the addKey and removeKey methods, a proof of possession token is required. This document provides guidance for generating the proof of possession token."
 ms.localizationpriority: high
 ms.prod: "applications"
@@ -7,7 +7,7 @@ author: "FaithOmbongi"
 ms.date: 12/20/2022
 ---
 
-# Generating proof of possession tokens for rolling keys
+# Generate proof of possession tokens for rolling keys
 
 You can use the **addKey** and **removeKey** methods defined on the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources to roll expiring keys programmatically.
 
