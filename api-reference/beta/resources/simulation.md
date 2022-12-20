@@ -22,6 +22,7 @@ The attack simulation and training API enables tenant administrators to list lau
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
@@ -33,6 +34,7 @@ Inherits from [entity](../resources/entity.md).
 
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |attackTechnique|[simulationAttackTechnique](#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
@@ -44,7 +46,9 @@ Inherits from [entity](../resources/entity.md).
 |description|String|Description of the attack simulation and training campaign.|
 |displayName|String|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |durationInDays|Int32|Simulation duration in days.|
+|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from the simulation.|
 |id|String|Unique identifier for the attack simulation and training campaign. Inherited from [entity](../resources/entity.md).|
+|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the simulation.|
 |isAutomated|Boolean|Flag that represents if the attack simulation and training campaign was created from a simulation automation flow. Supports `$filter` and `$orderby`. |
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign.|
@@ -52,14 +56,6 @@ Inherits from [entity](../resources/entity.md).
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from simulation|
-|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targetted in simulation|
-
-## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|payload|[payload](../resources/payload.md)|Payload associated with a simulation while creation.|
-
 
 ### simulationStatus values
 
@@ -118,9 +114,13 @@ Inherits from [entity](../resources/entity.md).
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
-None.
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|payload|[payload](../resources/payload.md)|Payload associated with a simulation while creation.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -142,9 +142,11 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "durationInDays": "Integer",
+  "durationInDays": "Int32",
+  "excludedAccountTarget": {"@odata.type": "microsoft.graph.accountTargetContent"},
   "id": "String (identifier)",
   "isAutomated": "Boolean",
+  "includedAccountTarget": {"@odata.type": "microsoft.graph.accountTargetContent"},
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.emailIdentity"
   },
@@ -158,7 +160,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-
 ## See also
+
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
 - [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).
