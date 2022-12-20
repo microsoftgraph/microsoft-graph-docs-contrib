@@ -24,7 +24,7 @@ When the threshold of an alert rule is reached, a record of the alert event is g
 |[List alertRecords](../api/devicemanagement-alertrecord-list.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md) collection|Get a list of the [alertRecord](../resources/devicemanagement-alertrecord.md) objects and their properties.|
 |[Get alertRecord](../api/devicemanagement-alertrecord-get.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md)|Read the properties and relationships of an [alertRecord](../resources/devicemanagement-alertrecord.md) object.|
 |[getPortalNotifications](../api/devicemanagement-alertrecord-getportalnotifications.md)|[microsoft.graph.deviceManagement.portalNotification](../resources/devicemanagement-portalnotification.md) collection|Get a list of all portal notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.|
-|[setPortalNotificationAsSent](../api/devicemanagement-alertrecord-setportalnotificationassent.md)|None|Set a single portal notification status to published.|
+|[setPortalNotificationAsSent](../api/devicemanagement-alertrecord-setportalnotificationassent.md)|None|Set the status of the specified notification on the Microsoft EndPoint Manager admin center as sent.|
 
 ## Properties
 
