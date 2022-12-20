@@ -1,5 +1,5 @@
 ---
-title: "aaddressbookccountTargetContent resource type"
+title: "addressBookAccountTargetContent resource type"
 description: "Represents an included or excluded users from attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# aaddressbookccountTargetContent resource type
+# addressBookAccountTargetContent resource type
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accountTargetEmails|String Collection|List of user emails targeted|
-|type|accountTargetContentType| Type of account target content contains targeted user email addresses. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
+|type|accountTargetContentType| Type of account target content contains targeted user email addresses. Inherited from [accountTargetContent](../resources/accounttargetcontent.md). The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 ## Relationships
 

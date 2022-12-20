@@ -1,5 +1,5 @@
 ---
-title: "includeallaccountTargetContent resource type"
+title: "includeAllAccountTargetContent resource type"
 description: "Represents included or excluded users from an attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# includeallaccountTargetContent resource type
+# includeAllAccountTargetContent resource type
 
 Namespace: microsoft.graph
 
@@ -17,17 +17,19 @@ Attack simulation and training is a service available as part of [Microsoft Defe
 
 The attack simulation and training API enables tenant administrators to list launched **simulation** exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
 
+Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
+
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[includeallaccountTargetContent](../resources/includeallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
+|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[includeAllAccountTargetContent](../resources/includeallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values. Inherited from [accountTargetContent](../resources/accounttargetcontent.md)|Type of account target content. Possible values are: `addressbook`, `includeall`.|
+|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values. Inherited from [accountTargetContent](../resources/accounttargetcontent.md)|Type of account target content. Possible values are: `includeAll`,`addressBook`.|
 
 ## Relationships
 
