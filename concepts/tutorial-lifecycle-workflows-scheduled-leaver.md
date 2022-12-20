@@ -5,6 +5,7 @@ author: AlexFilipin
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 11/01/2022
 ---
 
 # Automate employee offboarding tasks after their last day of work using Lifecycle Workflows APIs

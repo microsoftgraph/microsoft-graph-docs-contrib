@@ -4,6 +4,7 @@ description: "Describes property differences between Azure AD Graph resources (e
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Property differences between Azure AD Graph and Microsoft Graph

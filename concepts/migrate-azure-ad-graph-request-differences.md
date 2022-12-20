@@ -4,6 +4,7 @@ description: "Describes how Microsoft Graph requests differ from Azure Active Di
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Request differences between Azure AD Graph and Microsoft Graph

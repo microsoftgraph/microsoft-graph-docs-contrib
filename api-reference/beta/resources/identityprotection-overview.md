@@ -5,6 +5,7 @@ author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: conceptualPageType
+ms.date: 12/06/2022
 ---
 
 # Use the Microsoft Graph identity protection APIs

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
+ms.date: 12/10/2022
 ---
 
 # Azure AD authentication strengths API overview
