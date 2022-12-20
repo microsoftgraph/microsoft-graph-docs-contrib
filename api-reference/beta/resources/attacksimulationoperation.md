@@ -25,7 +25,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get operation](../api/attacksimulationroot-get-operation.md)|[operation](../resources/attackSimulationOperation.md)|Get an attack simulation operation to track a LRO request for a tenant.|
+|[Get operation](../api/attacksimulationroot-get-operation.md)|[operation](../resources/attacksimulationoperation.md)|Get an attack simulation operation to track a LRO request for a tenant.|
 
 ## Properties
 |Property|Type|Description|
