@@ -56,7 +56,7 @@ To read the certificate's key using PowerShell, run the following request.
 #### Request
 
 ```powershell-interactive
-[convert]::ToBase64String((Get-Content C:\Users\OmbongiFaith\Desktop\20221220.cer -Encoding byte)) ## Replace the file path with the location of your certificate
+[convert]::ToBase64String((Get-Content C:\Users\admin\Desktop\20221220.cer -Encoding byte)) ## Replace the file path with the location of your certificate
 ```
 
 #### Response
@@ -71,10 +71,10 @@ MIIDADCCAeigAwIBAgIQHfy9G83A5Y5MrBXtWXhCKzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgy
 
 The following request adds the certificate details to an app. The settings are as follows:
 
-- The customKeyIdentifier is the certificate thumbprint.
-- The endDateTime can be a maximum of one year from the startDateTime. If unspecified, the system will automatically assign a date one year after the startDateTime.
-- The type and usage must be `AsymmetricX509Cert` and `Verify` respectively.
-- Assign the certificate subject name to the displayName property.
+- The **customKeyIdentifier** is the certificate thumbprint.
+- The **endDateTime** can be a maximum of one year from the **startDateTime**. If unspecified, the system will automatically assign a date one year after the startDateTime.
+- The **type** and **usage** must be `AsymmetricX509Cert` and `Verify` respectively.
+- Assign the certificate subject name to the **displayName** property.
 
 <!-- {
   "blockType": "request",
