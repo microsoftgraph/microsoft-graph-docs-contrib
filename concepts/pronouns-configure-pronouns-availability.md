@@ -31,9 +31,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "isEnabledInOrganization": false
-  }
+  "isEnabledInOrganization": false
 }
 ```
  
@@ -96,4 +94,4 @@ Content-Type: application/json
 
 ## Important
 
-When pronouns are turned off in your organization, pronouns will be hidden in Microsoft apps. However, the data may persist on Microsoft servers for up to 30 days. If you decide to re-enable pronouns within that period, any previously hidden pronouns that have not yet been deleted will became visible again.
+When pronouns are turned off in your organization, pronouns will be hidden in Microsoft apps and services. However, the data may persist on Microsoft servers for up to 30 days. If you decide to re-enable pronouns within that period, any previously hidden pronouns that have not yet been deleted will became visible again.

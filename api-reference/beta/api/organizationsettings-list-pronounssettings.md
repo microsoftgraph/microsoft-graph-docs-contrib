@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application    | Not supported. |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
 ## HTTP request
 
@@ -64,7 +64,6 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/pron
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

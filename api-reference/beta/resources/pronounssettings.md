@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents _settings_ to control the availability of Pronouns in the tenant. Pronouns are *off* by default. When pronouns are enabled, users can add or update pronouns on their profile card in Microsoft apps and services.
-
+Represents _settings_ to control the availability of Pronouns in the tenant. By default, pronouns are **disabled**. If enabled, users will be able to add and update pronouns in Microsoft apps and services.
 
 Inherits from [entity](../resources/entity.md).
 
