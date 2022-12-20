@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the portal notification associated with the alert record of a user.
+Represents the portal notification associated with the [alert record](devicemanagement-alertrecord.md) of a user.
 
 ## Properties
 
