@@ -5,7 +5,7 @@ author: "jackson-woods"
 ms.localizationpriority: high
 ms.prod: "identity-and-access"
 ms.custom: scenarios:getting-started
-ms.date: 22/06/2022
+ms.date: 06/22/2022
 ---
 
 # Azure AD identity and access management API overview
