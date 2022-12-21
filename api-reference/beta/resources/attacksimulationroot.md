@@ -24,7 +24,9 @@ Namespace: microsoft.graph
 |[Get simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) |Get an attack simulation automations for a tenant.|
 |[List payloads](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get the payload resources from the payloads navigation property.|
 |[Get payloads](../api/attacksimulationroot-get-payload.md)|[payload](../resources/payload.md)|Get the payload resource from the payloads navigation property.|
-|[Get attackSimulationOperation](../api/attacksimulationroot-get-operation.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get attackSimulationOperation object.|
+|[Get attackSimulationOperation](../api/attacksimulationroot-get-operation.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation campaign operation for a tracking ID.|
+|[Get excludedAccountTarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded account targets (users) for an attack simulation campaign for a tenant.|
+|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included account targets (users) for an attack simulation campaign for a tenant.|
 
 ## Properties
 None.
@@ -32,7 +34,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|operations|[attackSimulationOperation](../resources/attacksimulationoperation.md) collection|Represents simulation operation.|
+|operations|[attackSimulationOperation](../resources/attacksimulationoperation.md) collection|Represents an attack simulation training operation.|
 |payloads|[payload](../resources/payload.md) collection|Represents an attack simulation training campaign payload in a tenant.|
 |simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represents simulation automation created to run on a tenant.|
 |simulations|[simulation](../resources/simulation.md) collection|Represents an attack simulation training campaign in a tenant.|

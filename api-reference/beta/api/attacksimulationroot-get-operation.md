@@ -1,6 +1,6 @@
 ---
 title: "Get attackSimulationOperation"
-description: "Get an attack simulation campaign operation for a tracking ID."
+description: "Get an attack simulation operation to track a long-running operation request for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -8,13 +8,15 @@ doc_type: apiPageType
 ---
 
 # Get attackSimulationOperation
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an attack simulation campaign operation for a tracking ID. The operation API is used to tracking a LRO operation.
+Get an attack simulation operation to track a long-running operation request for a tenant.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -40,6 +42,7 @@ GET /security/attackSimulation/operations/{operationsId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response

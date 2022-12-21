@@ -1,19 +1,21 @@
 ---
 title: "payloadDetail resource type"
-description: "Represents the detail of a payload."
+description: "Represents details about a payload."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# emailIdentity resource type
+# payloadDetail resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the detail of a payload.
+Represents details about a payload.
+
+Base type of [emailPayloadDetail](../resources/emailpayloaddetail.md).
 
 ## Properties
 

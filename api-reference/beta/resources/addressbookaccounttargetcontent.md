@@ -1,6 +1,6 @@
 ---
 title: "addressBookAccountTargetContent resource type"
-description: "Represents an included or excluded users email addresses from attack simulation training campaign."
+description: "Represents included or excluded users' email addresses for an attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an included or excluded users email addresses from attack simulation training campaign.
+Represents included or excluded users' email addresses for an attack simulation training campaign.
 
 Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 
@@ -21,8 +21,8 @@ Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accountTargetEmails|String Collection|List of user emails targeted|
-|type|accountTargetContentType| Type of account target content contains targeted user email addresses. Inherited from [accountTargetContent](../resources/accounttargetcontent.md). The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
+|accountTargetEmails|String collection|List of user emails targeted for an attack simulation training campaign.|
+|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values)| The type of account target content contains targeted user email addresses. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).|
 
 ## Relationships
 

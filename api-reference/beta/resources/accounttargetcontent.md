@@ -1,6 +1,6 @@
 ---
 title: "accountTargetContent resource type"
-description: "Represents an included or excluded users from attack simulation training campaign."
+description: "Represents included or excluded users for an attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,33 +13,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an included or excluded users from attack simulation training campaign.
+Represents included or excluded users for an attack simulation training campaign.
 
-Attack simulation and training is a service available as part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets tenant users experience a realistic benign phishing attack and learn from it. The service enables tenant administrators to simulate, assign trainings, and read derived insights into online behaviors of users in the phishing simulations. The service provides attack simulation reports that help tenants identify security knowledge gaps, so that they can further train their users to decrease their susceptibility to attacks.
-
-The attack simulation and training API enables tenant administrators to list launched **simulation** exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
+Base type of [addressBookAccountTargetContent](../resources/addressbookaccounttargetcontent.md) and [includeAllAccountTargetContent](../resources/includeallaccounttargetcontent.md).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included user for an attack simulation campaigns.|
-|[Get excludedAccountTarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded user for an attack simulation campaigns.|
+|[Get excludedAccountTarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded account targets (users) for an attack simulation campaign for a tenant.|
+|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included account targets (users) for an attack simulation campaign for a tenant.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](#accounttargetcontenttype-values)|Type of account target content. Possible values are: `unknown`, `addressbook`, `includeall` and `unknownFutureValue`.|
+|type|[accountTargetContentType](#accounttargetcontenttype-values)| The type of account target content. Possible values are: `unknown`, `addressBook`, `includeAll`, `unknownFutureValue`.|
 
 ### accountTargetContentType values
 
 |Member|Description |
 |:---|:---|
 |unknown| Unknown type. |
-|includeall| Include all users under tenant boundary. |
-|addressbook| Account details uploaded via Azure Active Directory.|
-|unknownFutureValue| Unknown future value. |
+|includeAll| Include all users under tenant boundary. |
+|addressBook| Account details uploaded via Azure Active Directory.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 

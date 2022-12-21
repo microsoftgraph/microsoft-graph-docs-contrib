@@ -7,7 +7,6 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-
 # attackSimulationOperation resource type
 
 Namespace: microsoft.graph
@@ -16,29 +15,27 @@ Namespace: microsoft.graph
 
 Represents an attack simulation training operation.
 
-Attack simulation and training is a service available as part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets tenant users experience a realistic benign phishing attack and learn from it. The service enables tenant administrators to simulate, assign trainings, and read derived insights into online behaviors of users in the phishing simulations. The service provides attack simulation reports that help tenants identify security knowledge gaps, so that they can further train their users to decrease their susceptibility to attacks.
-
-For LRO api, this type will contain the respective details
-
 Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get operation](../api/attacksimulationroot-get-operation.md)|[operation](../resources/attacksimulationoperation.md)|Get an attack simulation operation to track a LRO request for a tenant.|
+|[Get attackSimulationOperation](../api/attacksimulationroot-get-operation.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation operation to track a long-running operation request for a tenant.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Operation created date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|createdDateTime|DateTimeOffset|The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |id|String|The unique identifier for the training. Inherited from [entity](../resources/entity.md).|
-|lastActionDateTime|DateTimeOffset|Last action date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
-|percentageCompleted|Int32| Percentage of completion of the respective operation.|
-|resourceLocation|String|Tracking resource location. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
-|status|longRunningOperationStatus|Operation status. Inherited from [longRunningOperation](../resources/longrunningoperation.md). The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
-|statusDetail|String|Status detail of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|percentageCompleted|Int32| Percentage of completion for the respective operation.|
+|resourceLocation|String|URI of the resource that the operation is performed on. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|statusDetail|String|Details about the status of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |tenantId|String|Tenant identifier.|
-|type|attackSimulationOperationType|Attack simulation operation type.The possible values are: `createSimulation`, `updateSimulation`.|
+|type|attackSimulationOperationType|The attack simulation operation type. Possible values are: `unknown`, `createSimulation`, `updateSimulation`.|
 
 ### attackSimulationOperationType values
 
@@ -49,9 +46,11 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |updateSimulation| The simulation update operation. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,6 +1,6 @@
 ---
 title: "Get includedAccountTarget"
-description: "Get included users for an attack simulation campaign for a tenant."
+description: "Get included account targets (users) for an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get included users for an attack simulation campaign for a tenant.
+Get included account targets (users) for an attack simulation campaign for a tenant.
 
 ## Permissions
 
