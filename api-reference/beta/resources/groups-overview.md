@@ -5,6 +5,7 @@ author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType
+ms.date: 12/15/2022
 ---
 
 # Working with groups in Microsoft Graph

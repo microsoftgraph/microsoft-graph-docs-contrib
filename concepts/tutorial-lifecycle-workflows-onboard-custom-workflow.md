@@ -4,6 +4,7 @@ description: "Learn how to automate employee onboarding tasks before their first
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs

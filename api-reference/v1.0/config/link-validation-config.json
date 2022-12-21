@@ -6,6 +6,7 @@
         "/cloud-app-security",
         "/concepts",
         "/defender-for-identity",
+        "/deployedge",
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
@@ -30,7 +31,6 @@
         "/training",
         "/troubleshoot",
         "/windows",
-        "/windows-hardware",
-        "/deployedge"
+        "/windows-hardware"
     ]
 }
