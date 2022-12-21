@@ -173,44 +173,33 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-    "value":{
-        "attackTechnique": "microsoft.graph.simulationAttackType",
-        "brand": "microsoft.graph.payloadBrand",
-        "complexity": "microsoft.graph.payloadComplexity",
-        "createdBy": {
-            "email": "String",
-            "id": "String",
-            "displayName": "String",
-        },        
-        "createdDateTime": "String (timestamp)",
-        "description": "String",
-        "detail" : "microsoft.graph.payloadDetail",
-        "id": "String",
-        "industry": "microsoft.graph.payloadIndustry",
-        "isAutomated":"Boolean",
-        "isControversial": "Boolean",
-        "isCurrentEvent": "Boolean",
-        "language": "String",
-        "lastModifiedBy": {
-            "email": "String",
-            "id": "String",
-            "displayName": "String",
-        },
-        "lastModifiedDateTime": "String (timestamp)",
-        "name": "String",
-        "payloadTags": [
-        "String"
-        ],
-        "platform": "microsoft.graph.deliveryPlatform",
-        "predictedCompromiseRate": "Integer",        
-        "simulationAttackType": "microsoft.graph.simulationAttackType",
-        "source": "microsoft.graph.simulationContentSource",
-        "status":"microsoft.graph.simulationContentStatus",
-        "theme": "microsoft.graph.payloadTheme"
-    }
+    "@odata.type": "#microsoft.graph.payload",
+    "attackTechnique": {"@odata.type": "microsoft.graph.simulationAttackType"},
+    "brand": {"@odata.type": "microsoft.graph.payloadBrand"},
+    "complexity": {"@odata.type": "microsoft.graph.payloadComplexity"},
+    "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
+    "createdDateTime": "String (timestamp)",
+    "deliveryPlatform" "String",
+    "description": "String",
+    "detail": {"@odata.type": "microsoft.graph.payloadDetail"},
+    "displayName": "String",
+    "id": "String (identifier)",
+    "industry": {"@odata.type": "microsoft.graph.payloadIndustry"},
+    "isAutomated": "Boolean",
+    "isControversial": "Boolean",
+    "isCurrentEvent": "Boolean",
+    "language": "String",
+    "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
+    "lastModifiedDateTime": "String (timestamp)",
+    "name": "String",
+    "payloadTags": ["String"],
+    "platform": {"@odata.type": "microsoft.graph.deliveryPlatform"},
+    "predictedCompromiseRate": "Double",
+    "simulationAttackType": {"@odata.type": "microsoft.graph.simulationAttackType"},
+    "source": {"@odata.type": "microsoft.graph.simulationContentSource"},
+    "status": {"@odata.type": "microsoft.graph.simulationContentStatus"},
+    "theme": {"@odata.type": "microsoft.graph.payloadTheme"}
 }
-
 ```
 
 
