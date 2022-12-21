@@ -20,8 +20,8 @@ This article provides guidance for using PowerShell to read certificate details 
 
 To complete this tutorial, you need the following resources and privileges:
 
-- A working Azure AD tenant.
-- Sign in to [Graph Explorer](https://aka.ms/ge) as a user in an *Application Administrator* role or a user allowed to create and manage applications in the tenant.
+- An active Azure AD tenant.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) as a user in an *Application Administrator* role or a user allowed to create and manage applications in the tenant.
 - Have a signed certificate that you'll use to authenticate the app. This article uses a self-signed certificate for demonstration purposes. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).
 
 > [!CAUTION]
