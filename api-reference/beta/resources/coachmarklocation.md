@@ -1,6 +1,6 @@
 ---
 title: "coachmarkLocation detail"
-description: "Coachmark location detail."
+description: "Represents details about a coachmark location."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Coachmark location detail
+Represents details about a coachmark location.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |length|Int32|Length of coachmark.|
-|type|coachmarkLocationType|Type of coachmark location.The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
 |offset|Int32|Offset of coachmark.|
+|type|coachmarkLocationType|Type of coachmark location.The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
 
 ### coachmarkLocationType values
 
@@ -34,8 +34,6 @@ Coachmark location detail
 |messageBody| Coachmark from email body. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
-
-
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -45,9 +43,9 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.coachmarkLocation",
-"offset": "Integer",
-"length": "Integer",
-"type": "String"  
+    "@odata.type": "#microsoft.graph.coachmarkLocation",
+    "offset": "Int32",
+    "length": "Int32",
+    "type": "String"
 }
 ```

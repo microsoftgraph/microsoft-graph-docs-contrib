@@ -16,20 +16,22 @@ Namespace: microsoft.graph
 Represents the payload coachmark detail of a payload.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |coachmarkLocation|(../resources/coachmarklocation.md)|Coachmark location.|
 |description|String|Description about the coachmark.|
 |indicator|String|Coachmark indicator.|
-|isValid|String|Tells if the coachmark is valid or not.|
-|order|String|Coachmark order.|
+|isValid|Boolean|Indicates whether the coachmark is valid or not.|
 |language|String|Coachmark language.|
+|order|String|Coachmark order.|
 
 ## Relationships
+
 None.
 
-
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,17 +40,14 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.payloadCoachmark",
-  "coachmarkLocation": {
-    "offset": "Integer",
-    "length": "Integer",
-    "type": "String"
-  },
-  "description": "String",
-  "indicator": "String",
-  "isValid": "Boolean",
-  "order": "Integer",
-  "langauage":"String"
+    "@odata.type": "#microsoft.graph.payloadCoachmark",
+    "coachmarkLocation": {
+        "@odata.type": "microsoft.graph.coachmarkLocation"
+    },
+    "description": "String",
+    "indicator": "String",
+    "isValid": "Boolean",
+    "language": "String",
+    "order": "String"
 }
 ```
-

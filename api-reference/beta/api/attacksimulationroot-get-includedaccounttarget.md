@@ -1,5 +1,5 @@
 ---
-title: "Get included users from a simulation"
+title: "Get includedAccountTarget"
 description: "Get included users for an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -7,7 +7,8 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get excluded account target
+# Get includedAccountTarget
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Get included users for an attack simulation campaign for a tenant.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -34,11 +36,13 @@ GET /security/attackSimulation/simulations/{simulationId}/includedaccounttarget
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response

@@ -7,27 +7,33 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# includeallaccountTargetContent resource type
+# includeAllAccountTargetContent resource type
 
 Namespace: microsoft.graph
 
 Represent all users of a tenant should be selected for a target phish simulation. 
 
+Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
+
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedaccounttarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[includedallaccounttargetcontent](../resources/includeallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
+|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[includeAllAccountTargetContent](../resources/includeallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values. Inherited from [accountTargetContent](../resources/accounttargetcontent.md)|Type of account target content.The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,11 +44,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.security.includeAllAccountTargetContent",
-    "type" : "includeAll"
+    "type": "String"
 }
 ```
 
-
 ## See also
+
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
 - [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).

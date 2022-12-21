@@ -1,6 +1,6 @@
 ---
 title: "emailPayloadDetail resource type"
-description: "Represents the detail of an email typpayload."
+description: "Represents the detail of an email type payload."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Represents the detail of an email type payload.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |coachmarks|[payloadCoachmark](../resources/payloadcoachmark.md)|Payload coachmark details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
@@ -27,9 +28,11 @@ Represents the detail of an email type payload.
 |subject|String|Email address of the user.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,27 +41,17 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/detail",
-   "coachMarks": [
+    "@odata.type": "#microsoft.graph.emailPayloadDetail",
+    "coachMarks": [
         {
-            "indicator": "String",
-            "description": "String",
-            "language": "String",
-            "order": "Integer",
-            "isValid": "Boolean",
-            "coachmarkLocation": {
-                "offset": "Integer",
-                "length": "Integer",
-                "type": "String"
-            }
+            "@odata.type": "microsoft.graph.payloadCoachmark"
         }
-    ],            
+    ],
     "content": "String",
     "fromEmail": "String",
     "fromName": "String",
-    "IsExternalSender": "Boolean",
+    "isExternalSender": "Boolean",
     "phishingUrl": "String",
     "subject": "String"
- }
+}
 ```
-
