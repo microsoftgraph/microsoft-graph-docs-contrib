@@ -22,7 +22,7 @@ Only the role of Windows 365 admin has access to the monitoring APIs. Admins als
 > [!Note]
 > Currently this API set supports only [Windows 365](/windows-365/overview) and Cloud PC scenarios. It allows admins to set up rules to alert issues with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections.
 >
-> Have a different scenario that can use programmatic alert support on the Microsoft Endpoint Manager admin center? [Suggest a feature or vote for existing feature requests](https://developer.microsoft.com/en-us/graph/support).
+> Have a different scenario that can use additional programmatic alert support on the Microsoft Endpoint Manager admin center? [Suggest the feature or vote for existing feature requests](https://developer.microsoft.com/en-us/graph/support).
 
 ## Properties
 
