@@ -23,6 +23,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |ipAddress|String|The value of the IP Address, can be either in V4 address or V6 address format.|
+|countryLetterCode|String|The two-letter country code according to ISO 3166 format, for example: `US`, `UK`, `CA`, etc..).|
 
 ## Relationships
 None.
@@ -47,6 +48,7 @@ The following is a JSON representation of the resource.
   "tags": [
     "String"
   ],
-  "ipAddress": "String"
+  "ipAddress": "String",
+  "countryLetterCode": "String"
 }
 ```

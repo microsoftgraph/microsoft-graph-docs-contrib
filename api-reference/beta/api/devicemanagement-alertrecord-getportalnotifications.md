@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all portal notifications that one or more users can access.
+Get a list of all notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.
 
 ## Permissions
 

@@ -34,9 +34,6 @@ Represents the export job created for downloading reports.
 | requestDateTime    | DateTimeOffset                                           | The date and time when the export job was requested.                                                                                                                                        |
 | select             | String collection                                        | The selected columns of the report.                                                                                                                                                     |
 
-## Relationships
-None.
-
 ### cloudPcExportJobStatus values
 
 | Member             | Description                                           |
@@ -57,6 +54,10 @@ None.
 | sharedUseLicenseUsageReport            | Indicates daily/hourly aggregated shared use license usage report.  |
 | sharedUseLicenseUsageRealTimeReport    | Indicates real-time data for shared use license usage.              |
 | unknownFutureValue                     | Evolvable enumeration sentinel value. Do not use.                   |
+
+
+## Relationships
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
