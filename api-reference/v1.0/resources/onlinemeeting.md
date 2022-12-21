@@ -50,7 +50,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
-| joinMeetingIdSettings | String                                        | The video teleconferencing ID. Read-only.
+
 ### onlineMeetingPresenters values
 
 | Value              | Description                                                   |
