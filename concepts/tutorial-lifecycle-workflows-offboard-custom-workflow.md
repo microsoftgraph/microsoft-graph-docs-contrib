@@ -4,6 +4,7 @@ description: "Learn how to complete employee offboarding tasks in real-time on t
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/08/2022
 ---
 
 # Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs

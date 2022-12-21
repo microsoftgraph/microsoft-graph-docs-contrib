@@ -5,6 +5,7 @@ author: "shahzad-khalid"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: conceptualPageType
+ms.date: 08/03/2022
 ---
 
 # Overview of federated identity credentials in Azure Active Directory

@@ -4,6 +4,7 @@ description: "Use this checklist to migrate your apps from Azure Active Director
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Azure AD Graph app migration planning checklist
