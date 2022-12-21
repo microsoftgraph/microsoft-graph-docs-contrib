@@ -1,6 +1,6 @@
 ---
 title: "emailPayloadDetail resource type"
-description: "Represents the detail of a payload."
+description: "Represents the detail of an email typpayload."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the detail of a payload.
+Represents the detail of an email type payload.
 
 ## Properties
 |Property|Type|Description|

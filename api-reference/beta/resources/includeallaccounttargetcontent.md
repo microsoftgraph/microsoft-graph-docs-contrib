@@ -1,6 +1,6 @@
 ---
 title: "includeallaccountTargetContent resource type"
-description: "Represents an included or excluded users from attack simulation training campaign."
+description: "Represent all users of a tenant should be selected for a target phish simulation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,11 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an included users from attack simulation training campaign.
-
-Attack simulation and training is a service available as part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets tenant users experience a realistic benign phishing attack and learn from it. The service enables tenant administrators to simulate, assign trainings, and read derived insights into online behaviors of users in the phishing simulations. The service provides attack simulation reports that help tenants identify security knowledge gaps, so that they can further train their users to decrease their susceptibility to attacks.
-
-The attack simulation and training API enables tenant administrators to list launched **simulation** exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
+Represent all users of a tenant should be selected for a target phish simulation. 
 
 ## Methods
 |Method|Return type|Description|
@@ -25,7 +21,7 @@ The attack simulation and training API enables tenant administrators to list lau
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values. Inherited from [accountTargetContent](../resources/accounttargetcontent.md)|Type of account target content. Possible values are: `addressbook`, `includeall`.|
+|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values. Inherited from [accountTargetContent](../resources/accounttargetcontent.md)|Type of account target content.The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 
 ## Relationships

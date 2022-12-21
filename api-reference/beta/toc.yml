@@ -15120,6 +15120,10 @@ items:
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
             href: api/simulationreportoverview-get.md
+          - name: Get simulation included account targets
+            href: api/attacksimulationroot-get-includedaccounttarget.md
+          - name: Get simulation excluded account targets
+            href: apiattacksimulationroot-get-excludedaccounttarget.md
         - name: Simulation automation
           items:
           - name: Simulation automation
@@ -15142,6 +15146,12 @@ items:
             href: api/attacksimulationroot-list-payloads.md
           - name: Get
             href: api/attacksimulationroot-get-payload.md
+        - name: Operation
+          items:
+          - name: Operation
+            href: resources/attacksimulationoperation.md
+          - name: Get
+            href: api/attacksimulationroot-get-operation.md
         - name: Reports
           items:
           - name: Attack simulation reports

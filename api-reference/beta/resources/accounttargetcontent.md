@@ -27,14 +27,16 @@ The attack simulation and training API enables tenant administrators to list lau
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](#accounttargetcontenttype-values)|Type of account target content. Possible values are: `addressbook`, `includeall`.|
+|type|[accountTargetContentType](#accounttargetcontenttype-values)|Type of account target content. Possible values are: `unknown`, `addressbook`, `includeall` and `unknownFutureValue`.|
 
 ### accountTargetContentType values
 
 |Member|Description |
 |:---|:---|
+|unknown| Unknown type. |
 |includeall| Include all users under tenant boundary. |
 |addressbook| Account details uploaded via Azure Active Directory.|
+|unknownFutureValue| Unknown future value. |
 
 ## Relationships
 None.
