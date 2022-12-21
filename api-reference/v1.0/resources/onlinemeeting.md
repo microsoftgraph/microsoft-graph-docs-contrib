@@ -43,6 +43,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | isEntryExitAnnounced  | Boolean                                       | Indicates whether to announce when callers join or leave.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
 | joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                             |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode.                           |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
@@ -90,25 +91,27 @@ Contains information about a meeting, including the URL used to join a meeting, 
 }-->
 ```json
 {
+
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean",
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
+  "isBroadcast": "Boolean",
+  "isEntryExitAnnounced": "Boolean",
   "joinWebUrl": "String",
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "videoTeleconferenceId": "String",
-  "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String",
-  "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
-  "allowAttendeeToEnableMic": "Boolean",
-  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 
