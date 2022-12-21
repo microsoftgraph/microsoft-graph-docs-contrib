@@ -142,7 +142,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_group_transitivemembers_count"
 }-->
 
@@ -157,6 +157,9 @@ The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
