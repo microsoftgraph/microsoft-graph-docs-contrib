@@ -29,6 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |[Get payload](../api/attacksimulationroot-get-payload.md)|[payload](../resources/payload.md)|Get an attack simulation payload for a tenant.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
@@ -47,7 +48,7 @@ Inherits from [entity](../resources/entity.md).
 |language|String|Unique identifier for the attack simulation payload.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign payload.|
-|payloadTags|Collection(String)|Free text tags for a payload.|
+|payloadTags|Collection(string)|Free text tags for a payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |source|[simulationContentSource](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
