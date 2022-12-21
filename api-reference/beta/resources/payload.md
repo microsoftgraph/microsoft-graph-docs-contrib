@@ -47,7 +47,7 @@ Inherits from [entity](../resources/entity.md).
 |language|String|Unique identifier for the attack simulation payload.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign payload.|
-|payloadTags|String collection|Free text tags for a payload.|
+|payloadTags|Collection(String)|Free text tags for a payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |source|[simulationContentSource](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
