@@ -22,25 +22,24 @@ The attack simulation and training API enables tenant administrators to list pay
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List payload](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get a list of attack simulation payload for a tenant.|
 |[Get payload](../api/attacksimulationroot-get-payload.md)|[payload](../resources/payload.md)|Get an attack simulation payload for a tenant.|
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 |attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |brand|[payloadBrand](#payloadbrand-values)|Brand of a payload.|
-|complexity|[payloadComplexity](#payloadcomplexity-values)|Complexity of a payload.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |createdDateTime|DateTimeOffset|Date and time of creation of the attack simulation and training campaign payload.|
-|description|String|Description of the attack simulation and training campaign payload.|
-|detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
-|displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
+|complexity|[payloadComplexity](#payloadcomplexity-values)|Complexity of a payload.|
 |id|String|Unique identifier for the attack simulation and training campaign payload. Inherited from [entity](../resources/entity.md).|
+|deliveryPlatform|[payloadDeliveryPlatform](#payloaddeliveryplatform-values)|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`. 
+|detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
+|description|String|Description of the attack simulation and training campaign payload.|
+|displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
 |industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload.|
 |isAutomated|Boolean|Flag that represents if the attack simulation and training campaign payload was created from a automation flow. Supports `$filter` and `$orderby`. |
 |isControversial|Boolean|Flag that represents if If payload is controversial |
@@ -48,8 +47,7 @@ Inherits from [entity](../resources/entity.md).
 |language|String|Unique identifier for the attack simulation payload.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign payload.|
-|payloadTags|String collection|Free text tags for a payload.|
-|platform|[payloadDeliveryPlatform](#payloaddeliveryplatform-values)|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
+|payloadTags|Collection(string)|Free text tags for a payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |source|[simulationContentSource](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
@@ -67,7 +65,7 @@ Inherits from [entity](../resources/entity.md).
 |billing| Payload tax etc bill details|
 |cleanUpMail| Payload mail cleanup details|
 |controversial| Payload controversial information|
-|documentReceived| Payload tells the document has been received|
+|documentReceived| Payload tells the document has been recieved|
 |expense| Payload contains expense related details|
 |fax| Payload contains fax specific details|
 |financeReport| Payload contains FinanceReport|
@@ -167,7 +165,6 @@ Inherits from [entity](../resources/entity.md).
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -176,36 +173,47 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.payload",
-    "attackTechnique": {"@odata.type": "microsoft.graph.simulationAttackType"},
-    "brand": {"@odata.type": "microsoft.graph.payloadBrand"},
-    "complexity": {"@odata.type": "microsoft.graph.payloadComplexity"},
-    "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
-    "createdDateTime": "String (timestamp)",
-    "deliveryPlatform" "String",
-    "description": "String",
-    "detail": {"@odata.type": "microsoft.graph.payloadDetail"},
-    "displayName": "String",
-    "id": "String (identifier)",
-    "industry": {"@odata.type": "microsoft.graph.payloadIndustry"},
-    "isAutomated": "Boolean",
-    "isControversial": "Boolean",
-    "isCurrentEvent": "Boolean",
-    "language": "String",
-    "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
-    "lastModifiedDateTime": "String (timestamp)",
-    "name": "String",
-    "payloadTags": ["String"],
-    "platform": {"@odata.type": "microsoft.graph.deliveryPlatform"},
-    "predictedCompromiseRate": "Double",
-    "simulationAttackType": {"@odata.type": "microsoft.graph.simulationAttackType"},
-    "source": {"@odata.type": "microsoft.graph.simulationContentSource"},
-    "status": {"@odata.type": "microsoft.graph.simulationContentStatus"},
-    "theme": {"@odata.type": "microsoft.graph.payloadTheme"}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+    "value":{
+        "attackTechnique": "microsoft.graph.simulationAttackType",
+        "brand": "microsoft.graph.payloadBrand",
+        "complexity": "microsoft.graph.payloadComplexity",
+        "createdBy": {
+            "email": "String",
+            "id": "String",
+            "displayName": "String",
+        },        
+        "createdDateTime": "String (timestamp)",
+        "description": "String",
+        "detail" : "microsoft.graph.payloadDetail",
+        "id": "String",
+        "industry": "microsoft.graph.payloadIndustry",
+        "isAutomated":"Boolean",
+        "isControversial": "Boolean",
+        "isCurrentEvent": "Boolean",
+        "language": "String",
+        "lastModifiedBy": {
+            "email": "String",
+            "id": "String",
+            "displayName": "String",
+        },
+        "lastModifiedDateTime": "String (timestamp)",
+        "name": "String",
+        "payloadTags": [
+        "String"
+        ],
+        "platform": "microsoft.graph.deliveryPlatform",
+        "predictedCompromiseRate": "Integer",        
+        "simulationAttackType": "microsoft.graph.simulationAttackType",
+        "source": "microsoft.graph.simulationContentSource",
+        "status":"microsoft.graph.simulationContentStatus",
+        "theme": "microsoft.graph.payloadTheme"
+    }
 }
+
 ```
 
-## See also
 
+## See also
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
 - [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).
