@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jumasure"
 doc_type: conceptualPageType
 ms.prod: "change-notifications"
+ms.date: 10/04/2022
 ---
 
 # Use the Microsoft Graph API to get change notifications

@@ -4,6 +4,7 @@ description: "Describes differences between resources in Azure Active Directory 
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Resource type differences between Azure AD Graph and Microsoft Graph

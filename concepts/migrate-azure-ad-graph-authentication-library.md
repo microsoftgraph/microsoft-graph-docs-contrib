@@ -4,6 +4,7 @@ description: "Describes how to update authentication library use in order to mig
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Review app authentication library changes
