@@ -194,7 +194,7 @@ The following is a JSON representation of the resource.
     "lastModifiedDateTime": "String (timestamp)",
     "name": "String",
     "payloadTags": ["String"],
-    "platform": {"@odata.type": "microsoft.graph.deliveryPlatform"},
+    "platform": {"@odata.type": "microsoft.graph.payloadDeliveryPlatform"},
     "predictedCompromiseRate": "Double",
     "simulationAttackType": {"@odata.type": "microsoft.graph.simulationAttackType"},
     "source": {"@odata.type": "microsoft.graph.simulationContentSource"},
