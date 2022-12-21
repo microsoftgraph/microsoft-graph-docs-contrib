@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Represents the rules that IT administrators can configure to trigger alerts.
 
+When the threshold of an alert rule is reached, an [alert record](devicemanagement-alertrecord.md) is generated and stored, and administrators receive notifications via defined notification channels.
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List alertRules](../api/devicemanagement-alertrule-list.md)|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md) collection|Get a list of the [alertRule](../resources/devicemanagement-alertrule.md) objects and their properties.|

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the record of an alert event triggered by a rule. 
+Represents the record of an alert event triggered by an [alert rule](devicemanagement-alertrule.md). 
 
 When the threshold of an alert rule is reached, a record of the alert event is generated and stored, and administrators receive notifications via defined notification channels.
 
