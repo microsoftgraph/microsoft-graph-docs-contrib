@@ -10561,7 +10561,7 @@ items:
             href: api/cloudpcusersetting-delete.md
           - name: Assign
             href: api/cloudpcusersetting-assign.md
-        - name: Monitoring
+        - name: Monitoring admin issues
           items:
           - name: Monitoring
             href: resources/devicemanagement-monitoring.md
