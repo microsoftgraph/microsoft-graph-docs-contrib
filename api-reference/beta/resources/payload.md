@@ -180,7 +180,7 @@ The following is a JSON representation of the resource.
     "complexity": {"@odata.type": "microsoft.graph.payloadComplexity"},
     "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
     "createdDateTime": "String (timestamp)",
-    "deliveryPlatform" "String",
+    "deliveryPlatform": "String",
     "description": "String",
     "detail": {"@odata.type": "microsoft.graph.payloadDetail"},
     "displayName": "String",
