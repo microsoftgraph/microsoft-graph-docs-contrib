@@ -18,5 +18,5 @@ The following table shows the types of members that can be added to either secur
 | Service principal      | ![Can be group member][Yes]   | ![Cannot be group member][No] |
 | Organizational contact | ![Can be group member][Yes]   | ![Cannot be group member][No] |
 
-[Yes]: ../images/yesandnosymbols/greencheck.svg
-[No]: ../images/yesandnosymbols/no.svg
+[Yes]: /graph/images/yesandnosymbols/greencheck.svg
+[No]: /graph/yesandnosymbols/no.svg
