@@ -13,9 +13,11 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the record of an alert event triggered by an [alertRule](devicemanagement-alertrule.md). 
+Represents the record of an alert event in the Microsoft Endpoint Manager admin center triggered by an [alertRule](devicemanagement-alertrule.md). 
 
 When the threshold of an **alertRule** is reached, an **alertRecord** is generated and stored, and administrators receive notifications via defined notification channels.
+
+For more information, see the [monitoring](devicemanagement-monitoring.md) resource.
 
 ## Methods
 

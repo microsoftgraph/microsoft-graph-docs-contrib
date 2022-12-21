@@ -13,9 +13,11 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the rules that IT administrators can configure to trigger alerts.
+Represents a rule that an IT administrator with the appropriate roles can configure to monitor issues and trigger alerts on the Microsoft Endpoint Manager admin center.
 
 When the threshold of an **alertRule** is reached, an [alertRecord](devicemanagement-alertrecord.md) is generated and stored, and administrators receive notifications via defined notification channels.
+
+For more information, see the [monitoring](devicemanagement-monitoring.md) resource.
 
 |Method|Return type|Description|
 |:---|:---|:---|
