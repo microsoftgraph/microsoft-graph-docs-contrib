@@ -24,14 +24,14 @@ Represents the export job created for downloading reports.
 ## Properties
 | Property           | Type                                                     | Description                                                                                                                                                                             |
 | :----------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| expirationDateTime | DateTimeOffset                                           | The date time when the export job expires.                                                                                                                                              |
-| exportJobStatus    | [cloudPcExportJobStatus](#cloudpcexportjobstatus-values) | The status of the export job.The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Read-only.                                                         |
-| exportUrl          | String                                                   | The storage account url of the exported report, it can be used to download the file.                                                                                                    |
+| expirationDateTime | DateTimeOffset                                           | The date and time when the export job expires.                                                                                                                                              |
+| exportJobStatus    | [cloudPcExportJobStatus](#cloudpcexportjobstatus-values) | The status of the export job. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Read-only.                                                         |
+| exportUrl          | String                                                   | The storage account URL of the exported report. It can be used to download the file.                                                                                                    |
 | filter             | String                                                   | The filter applied on the report.                                                                                                                                                       |
 | format             | String                                                   | The format of the exported report.                                                                                                                                                      |
 | id                 | String                                                   | The unique identifier for the report. Read-only.                                                                                                                                        |
-| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name.The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`. |
-| requestDateTime    | DateTimeOffset                                           | The date time when the export job was requested.                                                                                                                                        |
+| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`. |
+| requestDateTime    | DateTimeOffset                                           | The date and time when the export job was requested.                                                                                                                                        |
 | select             | String collection                                        | The selected columns of the report.                                                                                                                                                     |
 
 ## Relationships
@@ -43,8 +43,8 @@ None.
 | :----------------- | :---------------------------------------------------- |
 | notStarted         | The export job doesn't start yet.                     |
 | inProgress         | The export job is in progress.                        |
-| completed          | The export job is completed with export url returned. |
-| failed             | The export job is failed.                             |
+| completed          | The export job is completed with export URL returned. |
+| failed             | The export job has failed.                            |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.     |
 
 ### cloudPcReportName values
@@ -55,7 +55,7 @@ None.
 | dailyAggregatedRemoteConnectionReports | The daily aggregated remote connections report.                     |
 | totalAggregatedRemoteConnectionReports | The total aggregated remote connections report.                     |
 | sharedUseLicenseUsageReport            | Indicates daily/hourly aggregated shared use license usage report.  |
-| sharedUseLicenseUsageRealTimeReport    | Indicates real time data for shared use license usage.              |
+| sharedUseLicenseUsageRealTimeReport    | Indicates real-time data for shared use license usage.              |
 | unknownFutureValue                     | Evolvable enumeration sentinel value. Do not use.                   |
 
 ## JSON representation
@@ -70,16 +70,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcExportJob",
+  "expirationDateTime": "String (timestamp)",
+  "exportJobStatus": "String",
+  "exportUrl": "String",
+  "filter": "String",
+  "format": "String",
   "id": "String (identifier)",
   "reportName": "String",
-  "filter": "String",
+  "requestDateTime": "String (timestamp)",
   "select": [
     "String"
-  ],
-  "format": "String",
-  "expirationDateTime": "String (timestamp)",
-  "requestDateTime": "String (timestamp)",
-  "exportJobStatus": "String",
-  "exportUrl": "String"
+  ]
 }
 ```
