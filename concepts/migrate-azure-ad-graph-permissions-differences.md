@@ -4,6 +4,7 @@ description: "Describes permissions differences between Azure Active Directory (
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Permissions differences between Azure AD Graph and Microsoft Graph

@@ -4,6 +4,7 @@ description: "Use JSON batching to optimize your application by combining multip
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 10/08/2022
 ---
 
 # Combine multiple requests in one HTTP call using JSON batching
