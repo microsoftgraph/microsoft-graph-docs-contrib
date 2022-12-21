@@ -22,6 +22,7 @@ The attack simulation and training API enables tenant administrators to list pay
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List payload](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get a list of attack simulation payload for a tenant.|
@@ -32,22 +33,21 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |brand|[payloadBrand](#payloadbrand-values)|Brand of a payload.|
+|complexity|[payloadComplexity](#payloadcomplexity-values)|Complexity of a payload.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |createdDateTime|DateTimeOffset|Date and time of creation of the attack simulation and training campaign payload.|
-|complexity|[payloadComplexity](#payloadcomplexity-values)|Complexity of a payload.|
-|id|String|Unique identifier for the attack simulation and training campaign payload. Inherited from [entity](../resources/entity.md).|
 |deliveryPlatform|[payloadDeliveryPlatform](#payloaddeliveryplatform-values)|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`. 
-|detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
 |description|String|Description of the attack simulation and training campaign payload.|
+|detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
 |displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
-|industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload.|
+|id|String|Unique identifier for the attack simulation and training campaign payload. Inherited from [entity](../resources/entity.md).||industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload.|
 |isAutomated|Boolean|Flag that represents if the attack simulation and training campaign payload was created from a automation flow. Supports `$filter` and `$orderby`. |
 |isControversial|Boolean|Flag that represents if If payload is controversial |
 |isCurrentEvent|Boolean|Flag that represents if the payload is from any recent event. |
 |language|String|Unique identifier for the attack simulation payload.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign payload.|
-|payloadTags|Collection(string)|Free text tags for a payload.|
+|payloadTags|String collection|Free text tags for a payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |source|[simulationContentSource](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
