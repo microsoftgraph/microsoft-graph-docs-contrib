@@ -159,10 +159,6 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
-<!-- {
-  "blockType": "response",
-} -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
