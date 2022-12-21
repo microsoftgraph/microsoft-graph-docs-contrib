@@ -8041,7 +8041,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "checkMemberObjects,servicePrincipal",
           "ChangeType": "Addition",
-          "Description": "Added the [checkMemberObjects](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) operation for the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprinciple?view=graph-rest-beta) resource.",
+          "Description": "Added the [checkMemberObjects](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) operation for the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
           "Target": "checkMemberObjects,servicePrincipal"
         },
         {
@@ -8115,7 +8115,7 @@
           "ApiChange": "method",
           "ChangedApiName": "directoryDefinition: discover",
           "ChangeType": "Addition",
-          "Description": "Added the [directoryDefinition: discover](https://learn.microsoft.com/en-us/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) method.",
+          "Description": "Added the [directoryDefinition: discover](https://learn.microsoft.com/en-us/graph/api/directorydefinition-discover?view=graph-rest-beta) method.",
           "Target": "directoryDefinition: discover"
         },
         {
@@ -8199,7 +8199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationTemplate,instantiate,list,get",
           "ChangeType": "Addition",
-          "Description": "Introduced the new resource type [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md), [list](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md) and [get](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.",
+          "Description": "Introduced the new resource type [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate). This resource type supports [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md), [list](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md) and [get](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.",
           "Target": "applicationTemplate,instantiate,list,get"
         },
         {
@@ -8207,7 +8207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "detailsInfo,initiator,modifiedProperty,provisionedIdentity,provisioningObjectsummary,provisioningStep,provisioningsystemDetails,statusBase",
           "ChangeType": "Addition",
-          "Description": "Added new resources: \u003C/br\u003E [detailsInfo](https://learn.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-beta)\u003C/br\u003E [initiator](https://learn.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-beta)\u003C/br\u003E [modifiedProperty](https://learn.microsoft.com/en-us/graph/api/resources/modifiedProperty?view=graph-rest-beta)\u003C/br\u003E [provisionedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-beta)\u003C/br\u003E [provisioningObjectsummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)\u003C/br\u003E [provisioningStep](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-beta)\u003C/br\u003E [provisioningsystemDetails](https://learn.microsoft.com/en-us/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)\u003C/br\u003E [statusBase](https://learn.microsoft.com/en-us/graph/api/resources/statusBase?view=graph-rest-beta)",
+          "Description": "Added new resources: [detailsInfo](https://learn.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-beta), [initiator](https://learn.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-beta), [modifiedProperty](https://learn.microsoft.com/en-us/graph/api/resources/modifiedProperty?view=graph-rest-beta), [provisionedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-beta), [provisioningObjectsummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta), [provisioningStep](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-beta), [provisioningsystemDetails](https://learn.microsoft.com/en-us/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta), [statusBase](https://learn.microsoft.com/en-us/graph/api/resources/statusBase?view=graph-rest-beta)",
           "Target": "detailsInfo,initiator,modifiedProperty,provisionedIdentity,provisioningObjectsummary,provisioningStep,provisioningsystemDetails,statusBase"
         },
         {
@@ -8215,7 +8215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "List provisioningObjectSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) operation\u003C/br\u003E",
+          "Description": "Added the [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/provisioningobjectsummary-list?view=graph-rest-beta) operation.",
           "Target": "List provisioningObjectSummary"
         }
       ],
@@ -8363,7 +8363,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "audit logs APIs for Azure AD",
           "ChangeType": "Addition",
-          "Description": "Introduced the new **audit logs APIs for Azure AD** providing activity logs for directory management tasks through [directoryAudit](https://learn.microsoft.com/en-us/graph/api/resources/directoryAudit?view=graph-rest-1.0) and sign-in activity through [signIns](https://learn.microsoft.com/en-us/graph/api/resources/signIns?view=graph-rest-1.0).",
+          "Description": "Introduced the new **audit logs APIs for Azure AD** providing activity logs for directory management tasks through [directoryAudit](https://learn.microsoft.com/en-us/graph/api/resources/directoryAudit?view=graph-rest-1.0) and sign-in activity through [signIns](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-1.0).",
           "Target": "directoryAudit,signIns"
         }
       ],
@@ -8415,7 +8415,7 @@
           "ApiChange": "method",
           "ChangedApiName": "Confirm riskyUsers compromised",
           "ChangeType": "Addition",
-          "Description": "Introduced [Confirm riskyUsers compromised](https://learn.microsoft.com/en-us/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta) method, which allows admins to confirm users as compromised in Azure AD Identity Protection.",
+          "Description": "Introduced [Confirm riskyUsers compromised](https://learn.microsoft.com/en-us/graph/api/riskyusers-confirmcompromised?view=graph-rest-beta) method, which allows admins to confirm users as compromised in Azure AD Identity Protection.",
           "Target": "Confirm riskyUsers compromised"
         },
         {
@@ -8423,7 +8423,7 @@
           "ApiChange": "method",
           "ChangedApiName": "Dismiss riskyUsers",
           "ChangeType": "Addition",
-          "Description": "Introduced [Dismiss riskyUsers](https://learn.microsoft.com/en-us/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta) method, which allows admins to dismiss users marked as risky in Azure AD Identity Protection.",
+          "Description": "Introduced [Dismiss riskyUsers](https://learn.microsoft.com/en-us/graph/api/riskyusers-dismiss?view=graph-rest-beta) method, which allows admins to dismiss users marked as risky in Azure AD Identity Protection.",
           "Target": "Dismiss riskyUsers"
         },
         {
@@ -8561,7 +8561,7 @@
           "ApiChange": "method",
           "ChangedApiName": "users,groups,devices",
           "ChangeType": "Addition",
-          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivemembersof?view=graph-rest-1.0), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivemembersof?view=graph-rest-beta) and [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivemembersof?view=graph-rest-1.0).",
+          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivememberof?view=graph-rest-1.0), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivememberof?view=graph-rest-beta) and [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivememberof?view=graph-rest-1.0).",
           "Target": "users,groups,devices"
         },
         {
@@ -8773,7 +8773,7 @@
           "ApiChange": "method",
           "ChangedApiName": "users,groups,devices,service principals",
           "ChangeType": "Addition",
-          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivemembersof?view=graph-rest-beta), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivemembersof?view=graph-rest-beta), [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivemembersof?view=graph-rest-beta) and [service principals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta).",
+          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivememberof?view=graph-rest-beta), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivememberof?view=graph-rest-beta), [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivememberof?view=graph-rest-beta) and [service principals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta).",
           "Target": "users,groups,devices,service principals"
         },
         {
@@ -8781,7 +8781,7 @@
           "ApiChange": "method",
           "ChangedApiName": "membership",
           "ChangeType": "Addition",
-          "Description": "Added method memberOf to get a devices direct [membership](https://learn.microsoft.com/en-us/graph/api/device-list-members?view=graph-rest-beta). This method has been added for getting the list of memberships including nested memberships.",
+          "Description": "Added method memberOf to get a devices direct [membership](https://learn.microsoft.com/en-us/graph/api/device-list-memberof?view=graph-rest-beta). This method has been added for getting the list of memberships including nested memberships.",
           "Target": "membership"
         },
         {
@@ -8849,7 +8849,7 @@
           "ApiChange": "method",
           "ChangedApiName": "users,groups,devices,service principals",
           "ChangeType": "Addition",
-          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivemembersof?view=graph-rest-beta), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivemembersof?view=graph-rest-beta), [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivemembersof?view=graph-rest-beta) and [service principals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta).",
+          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivememberof?view=graph-rest-beta), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivememberof?view=graph-rest-beta), [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivememberof?view=graph-rest-beta) and [service principals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta).",
           "Target": "users,groups,devices,service principals"
         },
         {
@@ -8857,7 +8857,7 @@
           "ApiChange": "method",
           "ChangedApiName": "membership",
           "ChangeType": "Addition",
-          "Description": "Added method memberOf to get a devices direct [membership](https://learn.microsoft.com/en-us/graph/api/device-list-members?view=graph-rest-beta). This method has been added for getting the list of memberships including nested memberships.",
+          "Description": "Added method memberOf to get a devices direct [membership](https://learn.microsoft.com/en-us/graph/api/device-list-memberof?view=graph-rest-beta). This method has been added for getting the list of memberships including nested memberships.",
           "Target": "membership"
         },
         {
@@ -8959,7 +8959,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,directoryObject",
           "ChangeType": "Addition",
-          "Description": "Added [delta query](delta-query-overview.md) capability for [directoryObject](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-beta)",
+          "Description": "Added [delta query](https://learn.microsoft.com/en-us/graph/delta-query-overview) capability for [directoryObject](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-beta)",
           "Target": "delta query,directoryObject"
         }
       ],
@@ -8977,7 +8977,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta,directoryRole,change tracking using delta query",
           "ChangeType": "Addition",
-          "Description": "Added [delta](https://learn.microsoft.com/en-us/graph/api/directoryrole-delta?view=graph-rest-1.0) function for [directoryRole](https://learn.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-1.0) to support [change tracking using delta query](delta-query-overview.md).",
+          "Description": "Added **delta** function for [directoryRole](https://learn.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-1.0) to support [change tracking using delta query](https://learn.microsoft.com/en-us/graph/delta-query-overview).",
           "Target": "delta,directoryRole,change tracking using delta query"
         }
       ],
@@ -10433,7 +10433,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "approvalWorkflowProvider",
           "ChangeType": "Addition",
-          "Description": "Added the [approvalWorkflowProvider](https://learn.microsoft.com/en-us/graph/api/resources/approvalWorkflowProvider?view=graph-rest-beta) resource type.",
+          "Description": "Added the **approvalWorkflowProvider** resource type.",
           "Target": "approvalWorkflowProvider"
         },
         {
@@ -10441,7 +10441,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [businessFlow](https://learn.microsoft.com/en-us/graph/api/resources/businessFlow?view=graph-rest-beta) resource type.",
+          "Description": "Added the **businessFlow** resource type.",
           "Target": "businessFlow"
         },
         {
@@ -10449,7 +10449,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessFlowSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [businessFlowSettings](https://learn.microsoft.com/en-us/graph/api/resources/businessFlowSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the **businessFlowSettings** resource type.",
           "Target": "businessFlowSettings"
         },
         {
@@ -10457,7 +10457,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governancePolicyTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [governancePolicyTemplate](https://learn.microsoft.com/en-us/graph/api/resources/governancePolicyTemplate?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governancePolicyTemplate** resource type.",
           "Target": "governancePolicyTemplate"
         },
         {
@@ -10521,7 +10521,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "directoryRoleAccessReviewPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [directoryRoleAccessReviewPolicy](https://learn.microsoft.com/en-us/graph/api/resources/directoryRoleAccessReviewPolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the **directoryRoleAccessReviewPolicy** resource type.",
           "Target": "directoryRoleAccessReviewPolicy"
         },
         {
@@ -10657,7 +10657,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governancePolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [governancePolicy](https://learn.microsoft.com/en-us/graph/api/resources/governancePolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governancePolicy** resource type.",
           "Target": "governancePolicy"
         },
         {
@@ -10665,7 +10665,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governanceCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [governanceCriteria](https://learn.microsoft.com/en-us/graph/api/resources/governanceCriteria?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governanceCriteria** resource type.",
           "Target": "governanceCriteria"
         },
         {
@@ -10673,7 +10673,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "groupMembershipGovernanceCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [groupMembershipGovernanceCriteria](https://learn.microsoft.com/en-us/graph/api/resources/groupMembershipGovernanceCriteria?view=graph-rest-beta) resource type.",
+          "Description": "Added the **groupMembershipGovernanceCriteria** resource type.",
           "Target": "groupMembershipGovernanceCriteria"
         },
         {
@@ -10681,7 +10681,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roleMembershipGovernanceCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [roleMembershipGovernanceCriteria](https://learn.microsoft.com/en-us/graph/api/resources/roleMembershipGovernanceCriteria?view=graph-rest-beta) resource type.",
+          "Description": "Added the **roleMembershipGovernanceCriteria** resource type.",
           "Target": "roleMembershipGovernanceCriteria"
         },
         {
@@ -10689,7 +10689,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userGovernanceCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [userGovernanceCriteria](https://learn.microsoft.com/en-us/graph/api/resources/userGovernanceCriteria?view=graph-rest-beta) resource type.",
+          "Description": "Added the **userGovernanceCriteria** resource type.",
           "Target": "userGovernanceCriteria"
         },
         {
@@ -10697,7 +10697,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governanceNotificationPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [governanceNotificationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/governanceNotificationPolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governanceNotificationPolicy** resource type.",
           "Target": "governanceNotificationPolicy"
         },
         {
@@ -10705,7 +10705,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governanceNotificationTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [governanceNotificationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/governanceNotificationTemplate?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governanceNotificationTemplate** resource type.",
           "Target": "governanceNotificationTemplate"
         },
         {
@@ -10841,7 +10841,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "recordDecisions",
           "ChangeType": "Addition",
-          "Description": "Added the [recordDecisions](https://learn.microsoft.com/en-us/graph/api/businessFlow-recordDecisions?view=graph-rest-beta) method to the [businessFlow](https://learn.microsoft.com/en-us/graph/api/resources/businessFlow?view=graph-rest-beta) resource.",
+          "Description": "Added the **recordDecisions** method to the **businessFlow** resource.",
           "Target": "businessFlow"
         }
       ],
