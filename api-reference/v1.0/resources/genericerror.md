@@ -17,8 +17,8 @@ A general-purpose error.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| message | String | The error message. |
 | code | String | The error code. |
+| message | String | The error message. |
 
 ## JSON representation
 
