@@ -1,6 +1,6 @@
 ---
 title: "emailPayloadDetail resource type"
-description: "Represents the detail of an email type payload."
+description: "Represents details of an email type payload."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the detail of an email type payload.
+Represents details of an email type payload.
 
 ## Properties
 
@@ -24,7 +24,7 @@ Represents the detail of an email type payload.
 |fromEmail|String|Email address of the user.|
 |fromName|String|Display name of the user.|
 |isExternalSender|String|Email address of the user.|
-|phishingUrl|String|Phishing url used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
+|phishingUrl|String|The phishing URL used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
 |subject|String|Email address of the user.|
 
 ## Relationships

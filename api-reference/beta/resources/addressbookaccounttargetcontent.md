@@ -1,6 +1,6 @@
 ---
 title: "addressBookAccountTargetContent resource type"
-description: "Represents an included or excluded users email addresses from attack simulation training campaign."
+description: "Represents included or excluded users' email addresses from an attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an included or excluded users email addresses from attack simulation training campaign.
+Represents included or excluded users' email addresses from an attack simulation training campaign.
 
 Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 

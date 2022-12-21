@@ -15120,24 +15120,20 @@ items:
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
             href: api/simulationreportoverview-get.md
-          - name: Get simulation included account targets
-            href: api/attacksimulationroot-get-includedaccounttarget.md
-          - name: Get simulation excluded account targets
+        - name: Account target content
+          items:
+          - name: Account target content
+            href: resources/accounttargetcontent.md
+          - name: Get excluded account targets
             href: api/attacksimulationroot-get-excludedaccounttarget.md
-        - name: Simulation automation
+          - name: Get included account targets
+            href: api/attacksimulationroot-get-includedaccounttarget.md
+        - name: Attack simulation operation
           items:
-          - name: Simulation automation
-            href: resources/simulationautomation.md
-          - name: List
-            href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Attack simulation operation
+            href: resources/attacksimulationoperation.md
           - name: Get
-            href: api/attacksimulationroot-get-simulationautomations.md
-        - name: Simulation automation run
-          items:
-          - name: Simulation automation run
-            href: resources/simulationautomationrun.md
-          - name: List
-            href: api/simulationautomation-list-runs.md
+            href: api/attacksimulationroot-get-operation.md
         - name: Payload
           items:
           - name: Payload
@@ -15146,12 +15142,6 @@ items:
             href: api/attacksimulationroot-list-payloads.md
           - name: Get
             href: api/attacksimulationroot-get-payload.md
-        - name: Operation
-          items:
-          - name: Operation
-            href: resources/attacksimulationoperation.md
-          - name: Get
-            href: api/attacksimulationroot-get-operation.md
         - name: Reports
           items:
           - name: Attack simulation reports
@@ -15174,7 +15164,21 @@ items:
             - name: Training user coverage
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
-              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md        
+        - name: Simulation automation
+          items:
+          - name: Simulation automation
+            href: resources/simulationautomation.md
+          - name: List
+            href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
+        - name: Simulation automation run
+          items:
+          - name: Simulation automation run
+            href: resources/simulationautomationrun.md
+          - name: List
+            href: api/simulationautomation-list-runs.md
       - name: eDiscovery (preview)
         items:
         - name: Case

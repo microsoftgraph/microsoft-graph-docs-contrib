@@ -1,6 +1,6 @@
 ---
-title: "includeallaccountTargetContent resource type"
-description: "Represent all users of a tenant should be selected for a target phish simulation."
+title: "includeAllAccountTargetContent resource type"
+description: "Represents all users of a tenant who should be selected for a targeted phishing simulation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represent all users of a tenant should be selected for a target phish simulation. 
+Represents all users of a tenant who should be selected for a targeted phishing simulation.
 
 Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 
@@ -25,8 +25,7 @@ Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values. Inherited from [accountTargetContent](../resources/accounttargetcontent.md)|Type of account target content.The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
-
+|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values. Inherited from [accountTargetContent](../resources/accounttargetcontent.md)|Type of account target content. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
 
 ## Relationships
 
