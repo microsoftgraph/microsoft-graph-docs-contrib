@@ -19,4 +19,4 @@ The following table shows the types of members that can be added to either secur
 | Organizational contact | ![Can be group member][Yes]   | ![Cannot be group member][No] |
 
 [Yes]: /graph/images/yesandnosymbols/greencheck.svg
-[No]: /graph/yesandnosymbols/no.svg
+[No]: /graph/images/yesandnosymbols/no.svg
