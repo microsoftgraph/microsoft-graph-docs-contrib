@@ -8199,7 +8199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationTemplate,instantiate,list,get",
           "ChangeType": "Addition",
-          "Description": "Introduced the new resource type [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate). This resource type supports [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md), [list](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md) and [get](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.",
+          "Description": "Introduced the new resource type [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate). This resource type supports [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate), [list](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate) and [get](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-get) applications from the Azure AD application gallery.",
           "Target": "applicationTemplate,instantiate,list,get"
         },
         {
@@ -8345,7 +8345,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "trustFrameworkPolicy,Azure Active Directory B2C,create,list,get,update,delete",
           "ChangeType": "Addition",
-          "Description": "Introduced a new resource type [trustFrameworkPolicy](https://learn.microsoft.com/en-us/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta) to support [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview). This resource type supports  [create](https://learn.microsoft.com/en-us/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [list](https://learn.microsoft.com/en-us/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [get](https://learn.microsoft.com/en-us/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [update](https://learn.microsoft.com/en-us/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), and [delete](https://learn.microsoft.com/en-us/graph/api/trustframerkpolicy-delete?view=graph-rest-beta) operations.",
+          "Description": "Introduced a new resource type [trustFrameworkPolicy](https://learn.microsoft.com/en-us/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta) to support [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview). This resource type supports  [create](https://learn.microsoft.com/en-us/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [list](https://learn.microsoft.com/en-us/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [get](https://learn.microsoft.com/en-us/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [update](https://learn.microsoft.com/en-us/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), and [delete](https://learn.microsoft.com/en-us/graph/api/trustframeworkpolicy-delete?view=graph-rest-beta) operations.",
           "Target": "trustFrameworkPolicy,Azure Active Directory B2C,create,list,get,update,delete"
         }
       ],
@@ -8959,7 +8959,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,directoryObject",
           "ChangeType": "Addition",
-          "Description": "Added [delta query](https://learn.microsoft.com/en-us/graph/delta-query-overview) capability for [directoryObject](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-beta)",
+          "Description": "Added [delta query](https://learn.microsoft.com/en-us/graph/delta-query-overview) capability for [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryobject?view=graph-rest-beta)",
           "Target": "delta query,directoryObject"
         }
       ],
