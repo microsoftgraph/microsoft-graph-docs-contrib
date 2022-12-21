@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported                                                                           |
-| Delegated (personal Microsoft account) | Not Supported                                                                           |
-| Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Delegated (work or school account)     | Not Supported.                                                                          |
+| Delegated (personal Microsoft account) | Not Supported.                                                                          |
+| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
 
 > **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the table above.
 
@@ -126,6 +126,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
 } -->
 ```http
@@ -443,6 +444,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 } -->
 ```http
@@ -512,7 +514,7 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 #### Request
 
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "create-group-call-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -571,6 +573,80 @@ Content-Type: application/json
 }
 ```
 
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create-group-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d17646-3110-40b1-bae6-e9ac6c3f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "myParticipantId": "c9a65b85-a223-44ae-8cdb-29395458323f",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+}
+```
+
 ### Example 4: Create a group call with application hosted media
 
 This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
@@ -579,7 +655,7 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 #### Request
 
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "create-group-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -638,11 +714,88 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Join scheduled meeting with service hosted media
-To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.
-This information can be obtained from the [Get Online Meetings API](../api/onlinemeeting-get.md) (VTC-based meetings only).
+#### Response
 
-The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) (VTC-based meetings only) with actual values to make the example work.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create-group-call-app-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "subject": "Create a group call with app hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+    "removeFromDefaultAudioGroup": false
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "myParticipantId": "c9a65b85-a223-44ae-8cdb-29395458323f",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+}
+```
+
+### Example 5: Join scheduled meeting with service hosted media
+To join the scheduled meeting we will need to get the thread ID, message ID, organizer ID and the tenant ID in which the meeting is scheduled.
+This information can be obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
+
+The values of authorization token, callback url, application ID, application name, user ID, user name and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
+
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
 #### Request
@@ -1012,7 +1165,385 @@ Content-Type: application/json
 }
 ```
 
-### Example 7: Create peer-to-peer PSTN call with service hosted media
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "join-meeting-app-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+    "messageId": "0",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "user": {
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
+      }
+    },
+    "allowConversationWithoutHost": true
+  },
+  "transcription": null,
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+
+### Example 7: Join a scheduled meeting with joinMeetingId and passcode
+The following shows an example that requires a **joinMeetingId** and a **passcode** to join an existing meeting. You can retrieve these properties from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "join-meeting-with-join-meeting-id-and-passcode",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.joinMeetingIdMeetingInfo",
+    "joinMeetingId": "1234567",
+    "passcode": "psw123"
+  },
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/join-meeting-with-join-meeting-id-and-passcode-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/join-meeting-with-join-meeting-id-and-passcode-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/join-meeting-with-join-meeting-id-and-passcode-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/join-meeting-with-join-meeting-id-and-passcode-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/join-meeting-with-join-meeting-id-and-passcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/join-meeting-with-join-meeting-id-and-passcode-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "name": "join-meeting-with-join-meeting-id-and-passcode",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNNkYTFm@thread.v2",
+    "messageId": "0",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.joinMeetingIdMeetingInfo",
+    "joinMeetingId": "1234567",
+    "passcode": "psw123"
+  },
+  "transcription": null,
+  "routingPolicies": [],
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### Example 8: Join a scheduled meeting with joinMeetingId
+The following shows an example that requires a **joinMeetingId** but doesn't require a **passcode** to join an existing meeting. You can retrieve the **joinMeetingId** property from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "join-meeting-with-join-meeting-id-and-without-passcode",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.joinMeetingIdMeetingInfo",
+    "joinMeetingId": "1234567",
+    "passcode": null
+  },
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/join-meeting-with-join-meeting-id-and-without-passcode-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/join-meeting-with-join-meeting-id-and-without-passcode-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/join-meeting-with-join-meeting-id-and-without-passcode-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/join-meeting-with-join-meeting-id-and-without-passcode-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/join-meeting-with-join-meeting-id-and-without-passcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/join-meeting-with-join-meeting-id-and-without-passcode-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "join-meeting-with-join-meeting-id-and-without-passcode",
+  "@odata.type": "microsoft.graph.call"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNNkYTFm@thread.v2",
+    "messageId": "0",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.joinMeetingIdMeetingInfo",
+    "joinMeetingId": "1234567",
+    "passcode": null
+  },
+  "transcription": null,
+  "routingPolicies": [],
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### Example 9: Create peer-to-peer PSTN call with service hosted media
 
 > **Note:** This call requires the Calls.Initiate.All permission.
 
@@ -1107,6 +1638,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create-call-service-hosted-media-2",
   "@odata.type": "microsoft.graph.call"
 } -->
 ```http
@@ -1188,7 +1720,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 8: Create peer-to-peer PSTN call with application hosted media
+### Example 10: Create peer-to-peer PSTN call with application hosted media
 
 > **Note**: This example requires Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
@@ -1284,6 +1816,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create-call-service-hosted-media-3",
   "@odata.type": "microsoft.graph.call"
 } -->
 ```http
