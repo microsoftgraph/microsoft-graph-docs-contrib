@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point to access all resources related to alerts in the Microsoft Endpoint Manager admin center.
+Represents the entry point to access all resources related to alerts in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
 The monitoring APIs provide a programmatic alert experience in the Microsoft Endpoint Manager admin center. A Microsoft Endpoint Manager admin can create an [alert rule](devicemanagement-alertrule.md) with preferred notification channels, and receive alerts when conditions set as thresholds in alert rules are met. Notification channels may include email and Microsoft Endpoint Manager admin center notifications. Each alert is recorded as an [alert record](devicemanagement-alertrecord.md). Admins can review alert records to learn about alert impact, severity, status, and more. 
 
