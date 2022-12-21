@@ -5,6 +5,7 @@ author: "jackson-woods"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/09/2022
 ---
 
 # Microsoft Graph permissions reference
@@ -1924,6 +1925,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
 | _Acronym.Read.All_ | Read all acronyms | Allows the app to read all acronyms on behalf of a signed-in user. | No | No |
 | _Bookmark.Read.All_ | Read all bookmarks | Allows the app to read all bookmarks on behalf of a signed-in user. | No | No |
+| _QnA.Read.All_ | Read all qnas | Allows the app to read all question and answer sets on behalf of a signed-in user. | No | No |
 | _ExternalConnection.Read.All_ | Read all external connections | Allows the app to read all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.All_ | Read and write all external connections | Allows the app to read and write all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections | Allows the app to read and write external connections on behalf of a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. | Yes | No |
