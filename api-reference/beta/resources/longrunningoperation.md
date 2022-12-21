@@ -15,40 +15,18 @@ Namespace: microsoft.graph
 
 The status of a long-running operation.
 
+Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md).
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The start time of the operation.|
-|id|String|The unique identifier of the operation |
-|lastActionDateTime|DateTimeOffset|The time of the last action in the operation.|
+|createdDateTime|DateTimeOffset|The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String|The unique identifier for the operation. |
+|lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |resourceLocation|String| URI of the resource that the operation is performed on. |
-|status|[longRunningOperationStatus](#longrunningoperationstatus-values)|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 |statusDetail|String|Details about the status of the operation.|
-
-### longRunningOperationStatus values
-
-| Member             | Description                                       |
-|:-------------------|:--------------------------------------------------|
-| notStarted         | The operation has not started.                    |
-| running            | The operation is in running state.                |
-| succeeded          | The operation has succeeded.                      |
-| failed             | The operation has failed.                         |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
-
-### simulationStatus values
-
-| Member             | Description                                       |
-|:-------------------|:--------------------------------------------------|
-| unknown            | The simulation status is not defined.             |
-| draft              | The simulation is in draft mode.                  |
-| running            | The simulation is running.                        |
-| scheduled          | The simulation is scheduled.                      |
-| succeeded          | The simulation has succeeded.                     |
-| failed             | The simulation has failed.                        |
-| cancelled          | The simulation is cancelled.                      |
-| excluded           | The simulation is excluded.                       |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 
@@ -83,4 +61,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,6 +1,6 @@
 ---
 title: "Get excludedAccountTarget"
-description: "Get excluded account targets from a simulation."
+description: "Get excluded account targets (users) for an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get excluded users for an attack simulation campaign for a tenant.
+Get excluded account targets (users) for an attack simulation campaign for a tenant.
 
 ## Permissions
 

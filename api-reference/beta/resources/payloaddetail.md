@@ -7,13 +7,15 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# emailIdentity resource type
+# payloadDetail resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details about a payload.
+
+Base type of [emailPayloadDetail](../resources/emailpayloaddetail.md).
 
 ## Properties
 

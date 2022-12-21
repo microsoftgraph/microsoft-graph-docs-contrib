@@ -1,6 +1,6 @@
 ---
 title: "accountTargetContent resource type"
-description: "Represents included or excluded users from an attack simulation training campaign."
+description: "Represents included or excluded users for an attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,20 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents included or excluded users from an attack simulation training campaign.
+Represents included or excluded users for an attack simulation training campaign.
+
+Base type of [addressBookAccountTargetContent](../resources/addressbookaccounttargetcontent.md) and [includeAllAccountTargetContent](../resources/includeallaccounttargetcontent.md).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included user for an attack simulation campaigns.|
-|[Get excludedAccountTarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded user for an attack simulation campaigns.|
+|[Get excludedAccountTarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded account targets (users) for an attack simulation campaign for a tenant.|
+|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included account targets (users) for an attack simulation campaign for a tenant.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](#accounttargetcontenttype-values)|Type of account target content. Possible values are: `unknown`, `addressBook`, `includeAll`, `unknownFutureValue`.|
+|type|[accountTargetContentType](#accounttargetcontenttype-values)| The type of account target content. Possible values are: `unknown`, `addressBook`, `includeAll`, `unknownFutureValue`.|
 
 ### accountTargetContentType values
 

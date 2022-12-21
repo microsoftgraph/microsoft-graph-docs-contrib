@@ -19,12 +19,12 @@ Represents the payload coachmark detail of a payload.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|coachmarkLocation|(../resources/coachmarklocation.md)|Coachmark location.|
-|description|String|Description about the coachmark.|
-|indicator|String|Coachmark indicator.|
+|coachmarkLocation|[coachmarkLocation](../resources/coachmarklocation.md)|The coachmark location.|
+|description|String|The description about the coachmark.|
+|indicator|String|The coachmark indicator.|
 |isValid|Boolean|Indicates whether the coachmark is valid or not.|
-|language|String|Coachmark language.|
-|order|String|Coachmark order.|
+|language|String|The coachmark language.|
+|order|String|The coachmark order.|
 
 ## Relationships
 

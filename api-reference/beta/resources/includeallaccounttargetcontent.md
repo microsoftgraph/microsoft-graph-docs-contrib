@@ -15,17 +15,11 @@ Represents all users of a tenant who should be selected for a targeted phishing 
 
 Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[includeAllAccountTargetContent](../resources/includeallaccounttargetcontent.md)|Get included user for an attack simulation campaigns.|
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values. Inherited from [accountTargetContent](../resources/accounttargetcontent.md)|Type of account target content. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`.|
+|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values)| The type of account target content. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).|
 
 ## Relationships
 

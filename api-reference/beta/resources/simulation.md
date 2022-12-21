@@ -116,7 +116,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|payload|[payload](../resources/payload.md)|Payload associated with a simulation while creation.|
+|payload|[payload](../resources/payload.md)|The payload associated with a simulation during its creation.|
 
 ## JSON representation
 
@@ -135,9 +135,7 @@ The following is a JSON representation of the resource.
   "attackType": "String",
   "automationId": "String",
   "completionDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -146,15 +144,11 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "isAutomated": "Boolean",
   "includedAccountTarget": {"@odata.type": "microsoft.graph.accountTargetContent"},
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "lastModifiedDateTime": "String (timestamp)",
   "launchDateTime": "String (timestamp)",
-  "payloadDeliveryPlatform": "microsoft.graph.payloadDeliveryPlatform",
-  "report": {
-    "@odata.type": "microsoft.graph.simulationReport"
-  },
+  "payloadDeliveryPlatform": {"@odata.type": "microsoft.graph.payloadDeliveryPlatform"},
+  "report": {"@odata.type": "microsoft.graph.simulationReport"},
   "status": "String"
 }
 ```
