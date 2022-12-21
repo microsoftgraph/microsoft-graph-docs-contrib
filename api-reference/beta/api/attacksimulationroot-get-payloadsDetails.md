@@ -111,8 +111,8 @@ Content-Type: application/json
             "indicator": "URL hyperlinking",
             "description": "URL hyperlinking hides the true URL behind text; the text can also look like another link",
             "language": "en",
-            "order": 0,
-            "isValid": "true",
+            "order": "0",
+            "isValid": true,
             "coachmarkLocation": {
                 "offset": 144,
                 "length": 6,
