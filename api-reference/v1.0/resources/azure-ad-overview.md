@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "dkershaw10"
 ms.prod: "identity-and-access"
 doc_type: conceptualPageType
+ms.date: 07/07/2022
 ---
 
 # Working with Azure Active Directory resources in Microsoft Graph

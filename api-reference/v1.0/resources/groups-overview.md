@@ -5,6 +5,7 @@ author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType
+ms.date: 11/16/2022
 ---
 
 # Working with groups in Microsoft Graph
@@ -117,6 +118,12 @@ Content-type: application/json
 }
 ```
 
+## Group membership
+
+Not all object types can be members of both Microsoft 365 and security groups.
+
+[!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
+
 ## Dynamic membership
 
 All types of groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any user's who leave the department are automatically removed from the group. 
@@ -160,7 +167,7 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 
 With the appropriate permissions, the app can read the profiles of groups that it obtains by following links in navigation properties; for example, `/groups/{id}/members`.
 
-For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
+For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions).
 
 ## Group-based licensing
 

@@ -23,7 +23,7 @@ Create an [assignment resource](../resources/educationassignmentresource.md). Yo
 - [educationMediaResource](../resources/educationmediaresource.md)
 - [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
-Every resource has an @odata.type property to indicate which type of resource is being created. 
+Every resource has an **@odata.type** property to indicate which type of resource is being created. 
 
 > [!IMPORTANT] 
 > Before you can upload an assignment resource, you must [set up the resources folder](../api/educationassignment-setupresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
@@ -711,7 +711,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationMediaResource"
+  "@odata.type": "microsoft.graph.educationTeamsAppResource"
 } -->
 ```http
 HTTP/1.1 201 Created

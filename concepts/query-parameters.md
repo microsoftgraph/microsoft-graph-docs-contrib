@@ -4,6 +4,7 @@ description: "Microsoft Graph provides optional query parameters that you can us
 author: "mumbi-o"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/08/2022
 ---
 
 # Use query parameters to customize responses
@@ -19,7 +20,7 @@ Query parameters can be [OData system query options](http://docs.oasis-open.org/
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
 > [!div class="nextstepaction"]
-> [Learn: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)
+> [Training module: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)
 
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query] and are supported in only GET operations.
@@ -63,18 +64,30 @@ The values of query parameters should be percent-encoded as per [RFC 3986](https
 
 For example, an unencoded URL looks like this:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-unencoded-url-example"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 ```
 
 The properly percent-encoded URL looks like this:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-percent.encoded-url-example"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
 The double-encoded URL looks like this:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-double.percent.encoded-url-example"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%27J%27%29
 ```
@@ -83,6 +96,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%
 
 For requests that use single quotes, if any parameter values also contain single quotes, those must be double escaped; otherwise, the request will fail due to invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-escaped-quotes-example"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
 ```
@@ -101,6 +118,10 @@ Use the `$count` query parameter to retrieve the count of the total number of it
 
 For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-count-example"
+}-->
 ```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
@@ -122,6 +143,10 @@ Normally, you can query either the properties of a resource or one of its relati
 
 The following example gets root drive information along with the top-level child items in a drive:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-expand-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
@@ -129,6 +154,10 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-expand+nested.select-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
@@ -150,6 +179,10 @@ Use the `$format` query parameter to specify the media format of the items retur
 
 For example, the following request returns the users in the organization in the json format:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-format-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
@@ -163,12 +196,20 @@ Use the `$orderby` query parameter to specify the sort order of the items return
 
 For example, the following request returns the users in the organization ordered by their display name:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-orderby-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
 
 You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-default.orderby-collection-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
@@ -177,6 +218,10 @@ To sort the results in ascending or descending order, append either `asc` or `de
 
 With some APIs, you can order results on multiple properties. For example, the following request orders the messages in the user's Inbox, first by the name of the person who sent it in descending order (Z to A), and then by subject in ascending order (default).
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-desc.orderby-collection-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
@@ -187,6 +232,10 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and **receivedDateTime** properties in descending order.
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-filter+orderby-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
@@ -205,6 +254,10 @@ Use the `$select` query parameter to return a set of properties that are differe
 
 For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-select-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
@@ -219,6 +272,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 Use the `$skip` query parameter to set the number of items to skip at the start of a collection.
 For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-skip-example"
+}-->
 ```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
@@ -239,7 +296,7 @@ The `$skiptoken` parameter contains an opaque token that references the next pag
 
 ## top parameter
 
-Use the `$top` query parameter to specify the page size of the result set. 
+Use the `$top` query parameter to specify the number of items to be included in the result.
 
 If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 
@@ -247,6 +304,10 @@ The minimum value of $top is 1 and the maximum depends on the corresponding API.
 
 For example, the following [list messages](/graph/api/user-list-messages) request returns the first five messages in the user's mailbox:
 
+<!-- {
+  "blockType": "request",
+  "name": "query-parameters-top-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
@@ -256,7 +317,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## Error handling for query parameters
 
-Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `$expand` on the `user/photo` relationship. 
+Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `$expand` on the `user/photo` relationship.
 
 ```http
 https://graph.microsoft.com/v1.0/me?$expand=photo
@@ -275,7 +336,7 @@ https://graph.microsoft.com/v1.0/me?$expand=photo
 }
 ```
 
-However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. 
+However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
 
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
