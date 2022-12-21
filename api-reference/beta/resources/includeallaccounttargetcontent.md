@@ -19,7 +19,7 @@ Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values)| The type of account target content. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).|
+|type|accountTargetContentType| The type of account target content. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).|
 
 ## Relationships
 
