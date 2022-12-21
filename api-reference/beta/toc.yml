@@ -15123,7 +15123,7 @@ items:
           - name: Get simulation included account targets
             href: api/attacksimulationroot-get-includedaccounttarget.md
           - name: Get simulation excluded account targets
-            href: apiattacksimulationroot-get-excludedaccounttarget.md
+            href: api/attacksimulationroot-get-excludedaccounttarget.md
         - name: Simulation automation
           items:
           - name: Simulation automation
