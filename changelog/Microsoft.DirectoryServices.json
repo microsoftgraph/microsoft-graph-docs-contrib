@@ -7,7 +7,7 @@
           "ApiChange": "Enumeration",
           "ChangedApiName": "layoutTemplateType",
           "ChangeType": "Addition",
-          "Description": "Added the [layoutTemplateType](https://learn.microsoft.com/en-us/graph/api/resources/layoutTemplateType?view=graph-rest-beta) resource.",
+          "Description": "Added the **layoutTemplateType** enumeration.",
           "Target": "layoutTemplateType"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource. Configure this property to disable protections preventing [user consent for risky apps](/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource. Configure this property to disable protections preventing [user consent for risky apps](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).",
           "Target": "authorizationPolicy"
         }
       ],
@@ -343,7 +343,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "disableSmsSignIn",
           "ChangeType": "Addition",
-          "Description": "Added the [disableSmsSignIn](https://learn.microsoft.com/en-us/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0) method to the [phoneAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/phoneAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Description": "Added the [disableSmsSignIn](https://learn.microsoft.com/en-us/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0) method to the [phoneAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/phoneAuthenticationMethod?view=graph-rest-1.0) resource.",
           "Target": "phoneAuthenticationMethod"
         },
         {
@@ -351,7 +351,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "enableSmsSignIn",
           "ChangeType": "Addition",
-          "Description": "Added the [enableSmsSignIn](https://learn.microsoft.com/en-us/graph/api/phoneauthenticationmethod-enablesmssignin?view=graph-rest-1.0) method to the [phoneAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/phoneAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Description": "Added the [enableSmsSignIn](https://learn.microsoft.com/en-us/graph/api/phoneauthenticationmethod-enablesmssignin?view=graph-rest-1.0) method to the [phoneAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/phoneAuthenticationMethod?view=graph-rest-1.0) resource.",
           "Target": "phoneAuthenticationMethod"
         },
         {
@@ -577,7 +577,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reprocess",
           "ChangeType": "Addition",
-          "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/accessPackageAssignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0) method to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource.",
           "Target": "accessPackageAssignment"
         },
         {
@@ -585,7 +585,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reprocess",
           "ChangeType": "Addition",
-          "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-1.0) method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
           "Target": "accessPackageAssignmentRequest"
         }
       ],
@@ -1383,7 +1383,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionHandler",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource. Use this object to define the stage of an access package assignment request when the [custom access package workflow extension](customaccesspackageworkflowextension.md) runs.",
+          "Description": "Added the [customExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource. Use this object to define the stage of an access package assignment request when the [custom access package workflow extension](https://learn.microsoft.com/en-us/graph/api/resources/customaccesspackageworkflowextension?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0) runs.",
           "Target": "customExtensionHandler"
         },
         {
@@ -1391,7 +1391,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "accessPackageCustomExtensionStage",
           "ChangeType": "Addition",
-          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type. This enumeration type defines the supported stages an access package assignment request when a [custom access package workflow extension](customaccesspackageworkflowextension.md) can be run.",
+          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type. This enumeration type defines the supported stages an access package assignment request when a [custom access package workflow extension](https://learn.microsoft.com/en-us/graph/api/resources/customaccesspackageworkflowextension?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0) can be run.",
           "Target": "accessPackageCustomExtensionStage"
         },
         {
@@ -1407,7 +1407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionHandlerInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionHandlerInstance](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type. This read-only property lists the collection of [custom workflow extension](customaccesspackageworkflowextension.md) instances being run on an assignment request",
+          "Description": "Added the [customExtensionHandlerInstance](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type. This read-only property lists the collection of [custom workflow extension](https://learn.microsoft.com/en-us/graph/api/resources/customaccesspackageworkflowextension?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0) instances being run on an assignment request",
           "Target": "customExtensionHandlerInstance"
         },
         {
@@ -1511,7 +1511,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "promote",
           "ChangeType": "Addition",
-          "Description": "Added the [promote](https://learn.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-beta) method to the [domain](https://learn.microsoft.com/en-us/graph/api/domain?view=graph-rest-beta) resource.",
+          "Description": "Added the [promote](https://learn.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-beta) method to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource.",
           "Target": "domain"
         }
       ],
@@ -1651,7 +1651,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "promote",
           "ChangeType": "Addition",
-          "Description": "Added the [promote](https://learn.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-1.0) method to the [domain](https://learn.microsoft.com/en-us/graph/api/domain?view=graph-rest-1.0) resource.",
+          "Description": "Added the [promote](https://learn.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-1.0) method to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
           "Target": "domain"
         }
       ],
@@ -1727,7 +1727,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyConfigurationBase](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationbase?view=graph-rest-beta) resource.",
+          "Description": "Added the **crossTenantAccessPolicyConfigurationBase** resource.",
           "Target": "crossTenantAccessPolicyConfigurationBase"
         },
         {
@@ -2434,7 +2434,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "validatePassword",
           "ChangeType": "Addition",
-          "Description": "Added the [validatePassword](https://learn.microsoft.com/en-us/graph/api/user-validatePassword?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [validatePassword](https://learn.microsoft.com/en-us/graph/api/user-validatePassword?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         },
         {
@@ -2994,7 +2994,7 @@
        "ApiChange": "Method",
        "ChangedApiName": "reprocess",
        "ChangeType": "Addition",
-       "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta) action to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/accesspackageassignment?view=graph-rest-beta) resource.",
+       "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta) action to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) resource.",
        "Target": "reprocess"
      },
      {
@@ -3948,7 +3948,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityProviders",
           "ChangeType": "Addition",
-          "Description": "Added the operation [availableProviderTypes](https://learn.microsoft.com/graph/api/resources/identityprovider-list-availableprovidertypes.md?view=graph-rest-1.0&preserve-view=true) to list the available identity providers available for use in an Azure Active Directory tenant.",
+          "Description": "Added the operation [availableProviderTypes](https://learn.microsoft.com/en-us/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-1.0) to list the available identity providers available for use in an Azure Active Directory tenant.",
           "Target": "availableProviderTypes"
         },
         {
@@ -3956,7 +3956,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationFlowsPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationFlowsPolicy](https://learn.microsoft.com/graph/api/resources/authenticationflowspolicy.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [authenticationFlowsPolicy](https://learn.microsoft.com/graph/api/resources/authenticationflowspolicy?view=graph-rest-1.0) resource type.",
           "Target": "authenticationFlowsPolicy"
         },
         {
@@ -3964,7 +3964,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "selfServiceSignUpAuthenticationFlowConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [selfServiceSignUpAuthenticationFlowConfiguration](https://learn.microsoft.com/graph/api/resources/selfservicesignupauthenticationflowconfiguration.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [selfServiceSignUpAuthenticationFlowConfiguration](https://learn.microsoft.com/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-1.0) resource type.",
           "Target": "selfServiceSignUpAuthenticationFlowConfiguration"
         },
         {
@@ -3972,7 +3972,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [identityUserFlow](https://learn.microsoft.com/graph/api/resources/identityuserflow.md?view=graph-rest-1.0&preserve-view=true) base resource type.",
+          "Description": "Added the [identityUserFlow](https://learn.microsoft.com/graph/api/resources/identityuserflow?view=graph-rest-1.0) base resource type.",
           "Target": "b2xIdentityUserFlow"
         },
         {
@@ -3980,7 +3980,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "b2xIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [b2xIdentityUserFlow](https://learn.microsoft.com/graph/api/resources/b2xidentityuserflow.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [b2xIdentityUserFlow](https://learn.microsoft.com/graph/api/resources/b2xidentityuserflow?view=graph-rest-1.0) resource type.",
           "Target": "b2xIdentityUserFlow"
         },
         {
@@ -4012,7 +4012,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityUserFlowAttributeAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [identityUserFlowAttributeAssignment](https://learn.microsoft.com/graph/api/resources/identityuserflowattributeassignment.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [identityUserFlowAttributeAssignment](https://learn.microsoft.com/graph/api/resources/identityuserflowattributeassignment?view=graph-rest-1.0) resource type.",
           "Target": "identityUserFlowAttributeAssignment"
         },
         {
@@ -4020,7 +4020,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userAttributeValuesItem",
           "ChangeType": "Addition",
-          "Description": "Added the [userAttributeValuesItem](https://learn.microsoft.com/graph/api/resources/userattributevaluesitem.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [userAttributeValuesItem](https://learn.microsoft.com/graph/api/resources/userattributevaluesitem?view=graph-rest-1.0) resource type.",
           "Target": "userAttributeValuesItem"
         },
         {
@@ -4028,7 +4028,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assignmentOrder",
           "ChangeType": "Addition",
-          "Description": "Added the [assignmentorder](https://learn.microsoft.com/graph/api/resources/assignmentorder.md?view=graph-rest-1.0&preserve-view=true) resource type that represents the order that attributes should be collected within a user flow during sign-up.",
+          "Description": "Added the [assignmentorder](https://learn.microsoft.com/graph/api/resources/assignmentorder?view=graph-rest-1.0) resource type that represents the order that attributes should be collected within a user flow during sign-up.",
           "Target": "userAttributeValuesItem"
         },
         {
@@ -4036,7 +4036,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityUserFlowAttributeAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the operations [getOrder](https://learn.microsoft.com/graph/api/resources/identityuserflowattributeassignment-getorder.md?view=graph-rest-1.0&preserve-view=true) and [setOrder](https://learn.microsoft.com/graph/api/resources/identityuserflowattributeassignment-setorder.md?view=graph-rest-1.0&preserve-view=true) that get the current order of attributes being collected or to set a new order for attributes to be collected during sign-up.",
+          "Description": "Added the operations [getOrder](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-1.0) and [setOrder](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-1.0) that get the current order of attributes being collected or to set a new order for attributes to be collected during sign-up.",
           "Target": "getOrder, setOrder"
         },
         {
@@ -4044,7 +4044,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityApiConnector",
           "ChangeType": "Addition",
-          "Description": "Added the [identityApiConnector](https://learn.microsoft.com/graph/api/resources/identityapiconnector.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [identityApiConnector](https://learn.microsoft.com/graph/api/resources/identityapiconnector?view=graph-rest-1.0) resource type.",
           "Target": "identityApiConnector"
         },
         {
@@ -4076,7 +4076,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pkcs12Certificate",
           "ChangeType": "Addition",
-          "Description": "Added the [pkcs12Certificate](https://learn.microsoft.com/graph/api/resources/pkcs12certificate.md?view=graph-rest-1.0&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
+          "Description": "Added the [pkcs12Certificate](https://learn.microsoft.com/graph/api/resources/pkcs12certificate?view=graph-rest-1.0) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
           "Target": "pkcs12certificate"
         },
         {
