@@ -44,7 +44,7 @@ Represents a defined collection of Azure resource information that can be used t
 |inUse|Boolean|When `true`, the Azure network connection is in use. When `false`, the connection is not in use. You cannot delete a connection that’s in use. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
 |managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|Specifies which services manage the Azure network connection. Possible values are: `windows365`, `devBox,` `unknownFutureValue`. Read-only.|
 |organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU that’s configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
-|virtualNetworkLocation|String|Indicates resource location of the target virtual network(Readonly, computed value).|
+|virtualNetworkLocation|String|Indicates resource location of the virtual target network (Read-only, computed value).|
 |resourceGroupId|String|The ID of the target resource group. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}`.|
 |subnetId|String|The ID of the target subnet. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}`.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
