@@ -107,7 +107,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesAccidentalDeletionPrevention",
           "ChangeType": "Addition",
-          "Description": "Added the [onPremisesAccidentalDeletionPrevention](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesAccidentalDeletionPrevention?view=graph-rest-beta) resource type.",
+          "Description": "Added the [onPremisesAccidentalDeletionPrevention](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesAccidentalDeletionPrevention?view=graph-rest-beta) resource type.",
           "Target": "onPremisesAccidentalDeletionPrevention"
         },
         {
@@ -115,7 +115,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesDirectorySynchronizationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource type.",
           "Target": "onPremisesDirectorySynchronizationConfiguration"
         },
         {
@@ -123,7 +123,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesDirectorySynchronizationFeature",
           "ChangeType": "Addition",
-          "Description": "Added the [onPremisesDirectorySynchronizationFeature](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationFeature?view=graph-rest-beta) resource type.",
+          "Description": "Added the [onPremisesDirectorySynchronizationFeature](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationFeature?view=graph-rest-beta) resource type.",
           "Target": "onPremisesDirectorySynchronizationFeature"
         },
         {
@@ -131,7 +131,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "onPremisesSynchronization",
           "ChangeType": "Addition",
-          "Description": "Added the **onPremisesSynchronization** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Description": "Added the **onPremisesSynchronization** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
           "Target": "directory"
         },
         {
@@ -139,7 +139,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesDirectorySynchronization",
           "ChangeType": "Addition",
-          "Description": "Added the [onPremisesDirectorySynchronization](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronization?view=graph-rest-beta) resource.",
+          "Description": "Added the [onPremisesDirectorySynchronization](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronization?view=graph-rest-beta) resource.",
           "Target": "onPremisesDirectorySynchronization"
         }
       ],
@@ -269,7 +269,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicationFilter",
           "ChangeType": "Addition",
-          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) resource.",
+          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) resource.",
           "Target": "conditionalAccessApplications"
         },
         {
@@ -277,7 +277,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "servicePrincipalFilter",
           "ChangeType": "Addition",
-          "Description": "Added the **servicePrincipalFilter** property to the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessclientapplications?view=graph-rest-beta) resource.",
+          "Description": "Added the **servicePrincipalFilter** property to the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessclientapplications?view=graph-rest-beta) resource.",
           "Target": "conditionalAccessClientApplications"
         }
       ],
@@ -429,7 +429,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appId",
           "ChangeType": "Addition",
-          "Description": "Added support for addressing an [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta) using the application **appId** as the alternate key. You can now address an application via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Description": "Added support for addressing an [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-beta) using the application **appId** as the alternate key. You can now address an application via either the primary key **id** or the alternate key **appId** as the path parameter.",
           "Target": "application"
         }
       ],
@@ -1651,7 +1651,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "promote",
           "ChangeType": "Addition",
-          "Description": "Added the [promote](https://docs.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/domain?view=graph-rest-1.0) resource.",
+          "Description": "Added the [promote](https://learn.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-1.0) method to the [domain](https://learn.microsoft.com/en-us/graph/api/domain?view=graph-rest-1.0) resource.",
           "Target": "domain"
         }
       ],
@@ -7573,7 +7573,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appRoleAssignedResources",
           "ChangeType": "Addition",
-          "Description": "Added the **appRoleAssignedResources** relationship to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the **appRoleAssignedResources** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
@@ -12146,7 +12146,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appId",
           "ChangeType": "Addition",
-          "Description": "Added support for addressing a [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta) using the **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Description": "Added support for addressing a [servicePrincipal](https://learn.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta) using the **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
           "Target": "servicePrincipal"
         }
       ],
