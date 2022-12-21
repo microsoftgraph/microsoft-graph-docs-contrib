@@ -22,7 +22,7 @@ Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accountTargetEmails|String collection|List of user emails targeted for an attack simulation training campaign.|
-|type|[accountTargetContentType](../resources/accountTargetContent.md#accountTargetContentType-values)| The type of account target content contains targeted user email addresses. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).|
+|type|accountTargetContentType| The type of account target content contains targeted user email addresses. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).|
 
 ## Relationships
 
