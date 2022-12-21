@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the group's members. A group can different object types as members. For more information about supported member types for different groups, see [Group membership](/graph/groups-overview#group-membership).
 
-This operation is transitive and returns a flat list of all nested members. An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error.
+This operation is transitive and returns a flat list of all nested members. An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the `Request_UnsupportedQuery` code.
 
 ## Permissions
 
@@ -62,7 +62,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
-An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the "Invalid search request." error message. For example, `/groups/{id}}/transitiveMembers/microsoft.graph.group` when the group is a Microsoft 365 group will return this error, because Microsoft 365 groups cannot have other groups as members.
+ An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the `Request_UnsupportedQuery` code. For example, `/groups/{id}}/transitiveMembers/microsoft.graph.group` when the group is a Microsoft 365 group will return this error, because Microsoft 365 groups cannot have other groups as members.
 
 ## Examples
 
