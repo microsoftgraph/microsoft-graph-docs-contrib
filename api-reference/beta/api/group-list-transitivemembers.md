@@ -62,7 +62,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
-An attempt to filter by an unsupported OData cast returns a `400 Bad Request` error with the "Invalid search request." error message. For example, `/groups/{id}}/transitiveMembers/microsoft.graph.group` when the group is a Microsoft 365 group will return this error, because Microsoft 365 groups cannot have other groups as members.
+An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the "Invalid search request." error message. For example, `/groups/{id}}/transitiveMembers/microsoft.graph.group` when the group is a Microsoft 365 group will return this error, because Microsoft 365 groups cannot have other groups as members.
 
 ## Examples
 
