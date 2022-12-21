@@ -9,15 +9,15 @@ doc_type: conceptualPageType
 
 # Get Microsoft Teams applications content within assignments
 
-The EdTech community has a rich set of tools and applications that are used in Education, you can integrate your tool to be added to assignments as a resource for teachers and students to use.  
+The Education Tech community has a rich set of tools and applications that are used in Education, you can integrate your tool to be added to assignments as a resource for teachers and students to use.  
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
 ## Creating a Microsoft Teams application
 
-TODO: Link to how to create apps in Teams.
-TODO: ask Richard about it; https://github.com/microsoft/edu-assignments-apps-sample
-or is there a better resource for it?
+TODO: Link to how to create apps in Teams(https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/create-new-project?pivots=visual-studio-code).
+
+This [application sample](https://github.com/microsoft/edu-assignments-apps-sample) demonstrates some best practices for Teams Apps integrated with assignments.
 
 ## Requirements
 
