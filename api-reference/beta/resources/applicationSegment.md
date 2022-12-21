@@ -18,8 +18,9 @@ This is an abstract type noting the application segment types when publishing an
 
 ## Properties
 
-None.
-
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String|The unique identifier for the CORS configuration that is assigned to a CORS rule by Azure AD. Not nullable. Read-only. Supports `$filter` (`eq`).  |
 
 ## JSON representation
 
