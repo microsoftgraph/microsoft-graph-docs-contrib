@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.localizationpriority: high
 ms.prod: "users"
 ms.custom: scenarios:getting-started
+ms.date: 11/11/2022
 ---
 
 # Overview of users in Microsoft Graph

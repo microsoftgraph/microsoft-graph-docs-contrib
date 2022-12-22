@@ -4,6 +4,7 @@ description: "Learn how to use Microsoft Graph APIs to develop code to create a 
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Manage access to resources using the entitlement management APIs in Microsoft Graph
