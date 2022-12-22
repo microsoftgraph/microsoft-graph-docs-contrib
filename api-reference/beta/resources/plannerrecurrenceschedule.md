@@ -13,25 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerRecurrenceSchedule** represents a schedule for task recurrence within Planner. At present this includes a recurrence pattern definition (`pattern`), a start date for that pattern (`patternStartDateTime`), and a system-generated property indicating the next occurrence date (`nextOccurrenceDateTime`).
+**plannerRecurrenceSchedule** represents a schedule for task recurrence within Planner. At present this includes a recurrence pattern definition (`pattern`), a start date for that pattern (`patternStartDateTime`), and a system-generated property indicating the next occurrence date (`nextOccurrenceDateTime`). To define a recurrence schedule, clients must specify the `pattern` and `patternStartDateTime`; the service will calculate the `nextOccurrenceDateTime`.
 
-The **pattern** is a [recurrencePattern](recurrencePattern.md). Please see below [Planner-specific notes about the recurrencePattern](#planner-specific-notes-about-the-recurrencepattern)
+The **pattern** is a [recurrencePattern](../resources/recurrencePattern.md). Please see below [Planner-specific notes about the recurrencePattern](#planner-specific-notes-about-the-recurrencepattern).
 
-The **patternStartDateTime** indicates the starting date and time of the series as a `DateTimeOffset`. This provides consistency with all of Planner's other date properties, e.g. **plannerTask.dueDateTime** (whose value is calculated from the `pattern` and the `patternStartDateTime`). A non-null value must be assigned to `patternStartDateTime` whenever the `pattern` property is used. Clients should generally re-assign this value when making a change to the `recurrence.schedule.pattern` to indicate the starting date of the new pattern, however if clients do not include a value then the service will generally continue the series using a sane default value based on the schedule (see notes and clarifications below).
+The **patternStartDateTime** indicates the starting date and time of the series, as a `DateTimeOffset`. A non-null value must be assigned to `patternStartDateTime` whenever the `pattern` property is used -- currently the only way to define recurrence. Clients should generally re-assign this value when making a change to the `recurrence.schedule.pattern` to indicate the starting date of the new pattern, however if clients do not include a value then the service will continue the series using a sane default value based on the schedule (see notes and clarifications below).
 
-The pattern and pattern start date may be null to accommodate future scenarios that define a recurrence schedule in a different way. A possible future scenario might provide a different means of specifying dates of recurrence which is not algorithmic and may not be appropriate to describe with the word "pattern". Consumers of **plannerRecurrenceSchedule** should be able to accommodate null values for the `pattern` and `patternStartDateTime` property, and understand that there may be a different, _new_ mechanism for specifying dates of recurrence.
+The **nextOccurrenceDateTime** is a read-only system-generated field. It provides the service-calculated date that will be used as the `dueDateTime` for the next task in the series. The nextOccurrenceDateTime is calculated from the `pattern` along with either the `patternStartDateTime` or an _anchor value_ that tracks the originally scheduled date of the given task.
 
-The **nextOccurrenceDateTime** provides the service-calculated date that will be used as the `dueDateTime` for the next task in the series (future scenarios may apply the value to the next task's `task.startDateTime` rather than `task.dueDateTime`). Today, the nextOccurrenceDateTime is calculated from the `pattern` along with either the `patternStartDateTime` or an _anchor value_ that tracks the current originally scheduled date of the given task. For future recurrence models, the `nextOccurrenceDateTime` may be calculated from other future properties, or may be null if recurrence ends automatically or if the next occurrence cannot be calculated. After `nextInSeriesTaskId` is set -- meaning that the new task has been created -- the new task's `dueDateTime` may be edited and this value on the old task will not be updated; thus this value becomes only a historical record. The service may or may not delete this value when it becomes stale.
-
-Note that Planner does not utilize the **recurrenceRange** resource type at this time.
+Planner does not utilize the **recurrenceRange** resource type at this time.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|pattern|[recurrencePattern](../resources/recurrencepattern.md)|The pattern for recurrence. Must be assigned a value while it is the only supported schedule type, and `patternStartDateTime`e below must also be specified. May be null in future scenarios with different schedule specifications.|
-|patternStartDateTime|DateTimeOffset|The start date for the recurrence pattern. Must be assigned a value when `pattern` is specified.|
-|nextOccurrenceDateTime|DateTimeOffset|The next date for this `schedule`: when a new task is instantiated to continue the recurrence series, this date will be used for the new task's `dueDateTime`.|
+|pattern|[recurrencePattern](../resources/recurrencepattern.md)|The pattern for recurrence. Must be assigned a value, and `patternStartDateTime` below must also be specified.|
+|patternStartDateTime|DateTimeOffset|The start date for the recurrence pattern. Must be assigned a value along with `pattern`.|
+|nextOccurrenceDateTime|DateTimeOffset|The next date for this `schedule`: when a new task is instantiated to continue the recurrence series, this date will be used for the new task's `dueDateTime`. Auto-generated by the service, read-only.|
 
 ## Relationships
 
@@ -71,10 +69,11 @@ Planner-specific restrictions for **recurrencePattern**:
 
 Clarifications about **recurrencePattern**:
 
-- Whenever any property within recurrencePattern is changed, all relevant pattern properties must be specified. For example, a pattern with `type` `daily` and `interval` `1` cannot be patched with just `interval` `2`: doing so will result in a 400 Bad Request. `type` `daily` must also be specified, even though the type is not changing. This is normal behavior for the **recurrencePattern** resource type, however within Planner this is uncommon for complex properties. Note, assigning null to unused properties is optional: for example, for the daily pattern you could assign `month` to `null` or not assign it. Planner will return responses that explicitly include these properties with null assignments.
+- Whenever any property within recurrencePattern is changed, all relevant pattern properties must be specified. For example, a pattern with `type` `daily` and `interval` `1` cannot be patched with only `interval` `2`: doing so will result in a 400 Bad Request. `type` `daily` must also be specified, even though the type is not changing. This is normal behavior for the **recurrencePattern** resource type, though some other properties within Planner work differently.
+- Unused properties are automatically assigned a default value. For example, the `month` property is only used for yearly patterns, with valid values 1 through 12. However, daily, weekly, and monthly patterns will have 0 assigned to the month property. Enums properties, `firstDayOfWeek` and `index`, get default values corresponding to the first enum value: `sunday` and `first`, respectively.
 - For `absoluteMonthly` patterns, if the selected `dayOfMonth` does not exist in a particular month, the _last_ day of the month will be substituted.
-  - Example: if `dayOfMonth` is 31 and we are recurring for April, the recurrence will appear on April 30.
-  - Example: if `dayOfMonth` is 29 or 30 or 31 and we are recurring for February, the recurrence will appear on the _last_ day of February.
+  - Example: if `dayOfMonth` is 31 and we are recurring for April, the selected date will be April 30.
+  - Example: if `dayOfMonth` is 29 or 30 or 31 and we are recurring for February, the selected date will be the _last_ day of February.
 - Similarly, for `absoluteYearly` patterns, the 29th of February will be replaced by the 28th of February in non-leap years.
 - The `firstDayOfWeek` property is used to distinguish between what is considered _this week_ and what is considered _next week_. This comes into play when _changing_ a weekly pattern. The _next_ task will be scheduled for _next_ week; and `firstDayOfWeek` determines when _next_ week begins. Here is an example, with one _Given_ and 3 alternate _When/Then_ results.
   - Given: existing `pattern` is weekly every Wednesday with `firstDayOfWeek` Sunday; the `dueDateTime` is Wed 2/2.
@@ -86,7 +85,7 @@ Clarifications about **recurrencePattern**:
 
 ## Notes about the schedule and due date
 
-The `dueDateTime` may be edited by clients to have a different value, without affecting the schedule and the `nextOccurrenceDateTime`. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series will appear as originally scheduled, unless the `pattern` and/or `patternStartDateTime` are explicitly updated. Thus, postponing the due date will _not_ result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting will occur: knowing _today's date_ is relevant for calculating the next meeting date, but it is not relevant for calculating the next task due date.
+The `dueDateTime` may be edited by clients to have a different value, without affecting the schedule and the `nextOccurrenceDateTime`. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series will appear as originally scheduled, unless the `pattern` and/or `patternStartDateTime` are explicitly updated. Thus, postponing the due date will _not_ result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting will occur: knowing _today's date_ is relevant for calculating the next meeting or event date, but it is not relevant for calculating the next task due date.
 
 Here is a single _Given_ with three distinct _When/Then_ possibilities, to illustrate:
 

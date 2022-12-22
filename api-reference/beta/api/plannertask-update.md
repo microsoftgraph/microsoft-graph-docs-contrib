@@ -192,11 +192,11 @@ Content-type: application/json
       "pattern": {
         "type": "daily",
         "interval": 3,
-        "firstDayOfWeek": null,
-        "dayOfMonth": null,
+        "firstDayOfWeek": "sunday",
+        "dayOfMonth": 0,
         "daysOfWeek": [],
-        "index": null,
-        "month": null
+        "index": "first",
+        "month": 0
       },
       "patternStartDateTime": "2022-02-22T02:10:33Z",
       "nextOccurrenceDateTime": "2022-02-25T02:10:33Z"
