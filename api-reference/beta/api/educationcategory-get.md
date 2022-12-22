@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve an [educationCategory](../resources/educationcategory.md) object. This operation can be performed by teacher, student and system.
+Retrieve an [educationCategory](../resources/educationcategory.md) object. Only teachers, students, and applications can perform this operation.
 
 ## Permissions
 

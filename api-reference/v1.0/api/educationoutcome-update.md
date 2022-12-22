@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Update the properties of an [educationOutcome](../resources/educationoutcome.md) object. This operation can only be performed by the teacher.
+Update the properties of an [educationOutcome](../resources/educationoutcome.md) object. Only teachers can perform this operation.
 
 ## Permissions
 

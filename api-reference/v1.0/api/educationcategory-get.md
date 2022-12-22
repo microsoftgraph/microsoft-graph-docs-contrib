@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve an [educationCategory](../resources/educationcategory.md) object. This operation can be performed by teacher, student and system.
+Retrieve an [educationCategory](../resources/educationcategory.md) object. Only teachers, students, and applications can perform this operation.
 
 ## Permissions 
 
