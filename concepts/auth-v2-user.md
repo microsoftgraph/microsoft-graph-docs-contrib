@@ -5,6 +5,7 @@ author: "jackson-woods"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
+ms.date: 10/05/2022
 ---
 
 # Get access on behalf of a user

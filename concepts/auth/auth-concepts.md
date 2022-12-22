@@ -5,6 +5,7 @@ author: "jackson-woods"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
+ms.date: 12/08/2022
 ---
 
 # Authentication and authorization basics

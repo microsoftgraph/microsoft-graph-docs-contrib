@@ -5,6 +5,7 @@ author: "jumasure"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 12/02/2022
 ---
 
 # Set up notifications for changes in resource data
@@ -25,96 +26,7 @@ An app can also subscribe to change notifications that include resource data, to
 
 ## Supported resources
 
-Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
-
-- Cloud printing [printer][]
-- Cloud printing [printTaskDefinition][]
-- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
-- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
-- [group][]
-- Microsoft 365 group [conversation][]
-- Outlook [event][]
-- Outlook [message][]
-- Outlook personal [contact][]
-- Security [alert][]
-- SharePoint [list][]
-- Teams [callRecord][]
-- Teams [channel][]
-- Teams [chat][]
-- Teams [chatMessage][]
-- Teams [conversationMember][]
-- Teams [presence][]
-- Teams [onlineMeeting][]
-- Teams [team][]
-- [To Do task][]
-- [user][]
-
-### Sample scenarios
-
-You can create a subscription for the following scenarios:
-
-
-|Scenario  |Query  |
-|---------|---------|
-|To a specific Outlook folder such as the Inbox     |   `me/mailFolders('inbox')/messages`      |
-|To a top-level resource     | `/me/messages` <br/> `/me/contacts` <br/> `/me/events` <br/> `/users` <br/> `/groups` <br/> `/communications/callRecords`        |
-|To a specific resource instance     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeetings/{meeting-id}`       |
-|To any folder in a user's personal OneDrive     |  `/drives/{id}/root` <br/> `/drives/{id}/root/subfolder`      |
-|To the root folder of a SharePoint/OneDrive for Business drive     |   `/drive/root`      |
-| Or to a new [Security API](security-concept-overview.md) alert |`/security/alerts?$filter=status eq 'newAlert'` <br/> `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`|
-|To the tasks in a user's To Do list|`/me/todo/lists/{todoTaskListId}/tasks`|
-
-### Azure AD resource limitations
-
-Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:
-
-> [!NOTE]
-> These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
-
-- Maximum subscription quotas:
-
-  - Per app (for all tenants combined): 50,000 total subscriptions
-  - Per tenant (for all applications combined): 1000 total subscriptions across all apps
-  - Per app and tenant combination: 100 total subscriptions
-
-When any limit is exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
-
-- Azure AD B2C tenants are not supported.
-
-- Change notification for user entities are not supported for personal Microsoft accounts.
-
-- A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.
-
-### Outlook resource limitations
-
-A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
-
-### Teams resource limitations
-
-Each Teams resource has different subscription quotas.
-
-- For subscriptions to **callRecords**:
-  - Per organization: 100 total subscriptions
-
-- For subscriptions to **chatMessages** (channels or chats):
-  - Per app and channel or chat combination: 1 subscription
-  - Per organization: 10,000 total subscriptions
-
-- For subscriptions to **channels**:
-  - Per app and team combination: 1 subscription
-  - Per organization: 10,000 total subscriptions
-
-- For subscriptions to **chats**:
-  - Per app and chat combination: 1 subscription
-  - Per organization: 10,000 total subscriptions
-
-- For subscriptions to **teams**:
-  - Per app and team combination: 1 subscription
-  - Per organization: 10,000 total subscriptions
-  
-- For subscriptions to **conversationMembers**:
-  - Per app and team combination: 1 subscription
-  - Per organization: 10,000 total subscriptions
+[!INCLUDE [change-notifications-supported-resources-expanded](includes/change-notifications-supported-resources-expanded.md)]
 
 ## Subscription lifetime
 
@@ -145,9 +57,14 @@ The client must store the subscription ID to correlate change notifications with
 
 #### Subscription request example
 
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
@@ -206,6 +123,10 @@ The client can renew a subscription with a specific expiration date of up to thr
 
 #### Subscription renewal example
 
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example-renewal"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
 Content-Type: application/json
@@ -221,6 +142,10 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/gra
 
 The client can stop receiving change notifications by deleting the subscription using its ID.
 
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example-delete"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
@@ -317,40 +242,37 @@ You can optionally configure the firewall that protects your notification URL to
 
 The following table lists the latency to expect between an event happening in the service and the delivery of the change notification.
 
-| Resource | Average latency | Maximum latency |
-|:-----|:-----|:-----|
-|[alert][] | Less than 3 minutes | 5 minutes |
-|[callRecord][] | Less than 15 minutes | 60 minutes |
-|[channel][] | Less than 10 seconds | 60 minutes |
-|[chat][] | Less than 10 seconds | 60 minutes |
-|[chatMessage][] | Less than 10 seconds | 1 minute |
-|[contact][] | Unknown | Unknown |
-|[conversation][] | Unknown | Unknown |
-|[conversationMember][] | Less than 10 seconds | 60 minutes |
-|[driveItem][] | Less than 1 minute | 5 minutes |
-|[event][] | Unknown | Unknown |
-|[group][] | Less than 2 minutes | 15 minutes |
-|[list][] | Less than 1 minute | 5 minutes |
-|[message][] | Unknown | Unknown |
-|[onlineMeeting][] | Less than 10 seconds | 1 minute |
-|[presence][] | Less than 10 seconds | 1 minute |
-|[printer][] | Less than 1 minute | 5 minutes |
-|[printTaskDefinition][] | Less than 1 minute | 5 minutes |
-|[team][] | Less than 10 seconds | 60 minutes |
-|[todoTask][] | Less than 2 minutes | 15 minutes |
-|[user][] | Less than 2 minutes | 15 minutes |
+| Resource                | Average latency      | Maximum latency |
+|:-------------------------|:----------------------|:-----------------|
+| [alert][]               | Less than 3 minutes  | 5 minutes       |
+| [callRecord][]          | Less than 15 minutes | 60 minutes      |
+| [channel][]             | Less than 10 seconds | 60 minutes      |
+| [chat][]                | Less than 10 seconds | 60 minutes      |
+| [chatMessage][]         | Less than 10 seconds | 1 minute        |
+| [contact][]             | Unknown              | Unknown         |
+| [conversation][]        | Unknown              | Unknown         |
+| [conversationMember][]  | Less than 10 seconds | 60 minutes      |
+| [driveItem][]           | Less than 1 minute   | 5 minutes       |
+| [event][]               | Unknown              | Unknown         |
+| [group][]               | Less than 2 minutes  | 15 minutes      |
+| [list][]                | Less than 1 minute   | 5 minutes       |
+| [message][]             | Unknown              | Unknown         |
+| [onlineMeeting][]       | Less than 10 seconds | 1 minute        |
+| [presence][]            | Less than 10 seconds | 1 minute        |
+| [printer][]             | Less than 1 minute   | 5 minutes       |
+| [printTaskDefinition][] | Less than 1 minute   | 5 minutes       |
+| [team][]                | Less than 10 seconds | 60 minutes      |
+| [todoTask][]            | Less than 2 minutes  | 15 minutes      |
+| [user][]                | Less than 2 minutes  | 15 minutes      |
 
 > [!NOTE]
 > The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription)
-- [Get subscription](/graph/api/subscription-get)
-- [Create subscription](/graph/api/subscription-post-subscriptions)
-- [changeNotification](/graph/api/resources/changenotification) resource type
+- [subscription resource type](/graph/api/resources/subscription)
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
-- [Change notifications and change tracking training module](/training/modules/msgraph-changenotifications-trackchanges)
+- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact
