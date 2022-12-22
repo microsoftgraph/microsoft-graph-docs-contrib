@@ -108,6 +108,6 @@ Content-type: application/json
 
 See [other example](/graph/api/educationassignment-post-resources#example-7-create-an-educationteamsappresource) on how to create and attach the Teams app into an assignment.
 
-# Permissions
+## Permissions
 
 Assignments API supports both delegated (per user) and AppOnly (per App) permission. For ease of use for the student and teacher Apponly is preferred as this allows for only approval of your app to retrieve data.
