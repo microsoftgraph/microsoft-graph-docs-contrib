@@ -159,7 +159,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "topicModelingSettings",
 			"ChangeType": "Addition",
-			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-1.0) resource to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicmodelingsettings?view=graph-rest-1.0) resource to the microsoft.graph.security subnamespace.",
 			"Target": "topicModelingSettings"
 		  },
 		  {
@@ -367,7 +367,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "topicModelingSettings",
 			"ChangeType": "Addition",
-			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicmodelingsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "topicModelingSettings"
 		  },
 		  {
