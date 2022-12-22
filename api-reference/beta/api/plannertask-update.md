@@ -87,11 +87,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
     "category4": false
   },
   "recurrence": {
-    "@odata.type": "#microsoft.graph.plannerTaskRecurrence",
     "schedule": {
-      "@odata.type": "#microsoft.graph.plannerRecurrenceSchedule",
       "pattern": {
-        "odata.type": "#microsoft.graph.recurrencePattern",
         "type": "daily",
         "interval": 3
       },
@@ -187,12 +184,15 @@ Content-type: application/json
   },
   "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh",
   "recurrence": {
+    "@odata.type": "#microsoft.graph.plannerTaskRecurrence",
     "seriesId": "qOqWwPLt4U-LIsWV5ByUuA",
     "occurrenceId": 1,
     "previousInSeriesTaskId": null,
     "nextInSeriesTaskId": null,
     "schedule": {
+      "@odata.type": "#microsoft.graph.plannerRecurrenceSchedule",
       "pattern": {
+        "odata.type": "#microsoft.graph.recurrencePattern",
         "type": "daily",
         "interval": 3,
         "firstDayOfWeek": "sunday",
