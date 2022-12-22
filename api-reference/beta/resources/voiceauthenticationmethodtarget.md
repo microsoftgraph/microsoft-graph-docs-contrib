@@ -20,7 +20,7 @@ A collection of groups enabled to use voice call authentication via the [voice c
 |:---|:---|:---|
 |id|String|Object ID of an Azure AD group.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. **Not supported**.|
-|targetType|authenticationMethodTargetType|The possible values are: `group`, and `unknownFutureValue`. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|
+|targetType|authenticationMethodTargetType|Possible values are: `group`, and `unknownFutureValue`. From December 2022, targeting individual users using `user` is no longer recommended. Existing targets will remain but we recommend to move the individual users to a targeted group. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|
 
 ## Relationships
 None.
