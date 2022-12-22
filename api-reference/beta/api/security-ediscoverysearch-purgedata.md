@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete Microsoft Teams messages contained in a [eDiscovery search](../resources/security-ediscoverysearch.md).
+Delete Microsoft Teams messages contained in a [eDiscovery search](../resources/security-ediscoverysearch.md). 
 
 >**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
 
