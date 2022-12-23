@@ -49,8 +49,8 @@ Inherits from [entity](../resources/entity.md).
 |payloadTags|String collection|Free text tags for a payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|source|[simulationContentSource](../resources/simulation.md#simulationContentSource-values)|Simulation content source. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `tenant`, `global`, `unknownFutureValue`.|
-|status|[simulationContentStatus](../resources/simulation.md#simulationContentStatus-values)|Simulation content status. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md) Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `tenant`, `global`, `unknownFutureValue`.|
+|status|[simulationContentStatus](../resources/simulation.md#simulationcontentsource-values)|Simulation content status. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md) Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |theme|[payloadTheme](#payloadtheme-values)|The theme of a payload.|Possible values are: `unknown`, `accountActivation`, etc|
 
 ### payloadTheme values
