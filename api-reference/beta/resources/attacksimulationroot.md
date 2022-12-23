@@ -20,6 +20,7 @@ Namespace: microsoft.graph
 |[Get simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) |Get an attack simulation campaigns for a tenant.|
 |[Create simulations](../api/attacksimulationroot-create-simulation.md)|[simulation](../resources/simulation.md)|Create a new attack simulation campaigns for a tenant.|
 |[Update simulations](../api/attacksimulationroot-update-simulation.md)|[simulation](../resources/simulation.md)|Update a attack simulation campaigns for a tenant.|
+|[Delete simulations](../api/attacksimulationroot-delete-simulation.md)|[simulation](../resources/simulation.md)|Delete a attack simulation campaigns for a tenant.|
 |[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
 |[Get simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) |Get an attack simulation automations for a tenant.|
 |[List payloads](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get the payload resources from the payloads navigation property.|

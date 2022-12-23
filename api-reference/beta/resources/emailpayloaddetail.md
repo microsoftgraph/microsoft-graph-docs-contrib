@@ -23,11 +23,11 @@ Inherits from [payloadDetail](../resources/payloaddetail.md).
 |:---|:---|:---|
 |coachmarks|[payloadCoachmark](../resources/payloadcoachmark.md)|Payload coachmark details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
 |content|String|Payload content details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
-|fromEmail|String|The email address of the user.|
-|fromName|String|The display name of the user.|
-|isExternalSender|String|Email address of the user.|
-|phishingUrl|String|The phishing URL used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
-|subject|String|Email address of the user.|
+|fromEmail|String|Email address of the user.|
+|fromName|String|Display name of the user.|
+|isExternalSender|Boolean|Email address of the user.|
+|phishingUrl|String|Phishing url used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
+|subject|String|Email address subject sent to the user.|
 
 ## Relationships
 

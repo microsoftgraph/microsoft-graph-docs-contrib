@@ -28,17 +28,18 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
-|brand|[payloadBrand](#payloadbrand-values)|The brand of a payload.|
-|complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.|
+|technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
+|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload.| Possible values are: `unknown`, `americanExpress`, etc|
+|complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.|Possible values are: `unknown`, `low`, `medium`, `high` and `unknownFutureValue`|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
-|createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|deliveryPlatform|[payloadDeliveryPlatform](#payloaddeliveryplatform-values)|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`. |
+|createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload.|
+|platform|[payloadDeliveryPlatform](#payloaddeliveryplatform-values)|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`. 
 |description|String|Description of the attack simulation and training campaign payload.|
 |detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
 |displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
 |id|String|Unique identifier for the attack simulation and training campaign payload. Inherited from [entity](../resources/entity.md).|
-|industry|[payloadIndustry](#payloadindustry-values)|The industry of a payload.|
+|industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload.|Possible values are: `unknown`, `businessServices`, etc|
+|isAutomated|Boolean|Flag that represents if the attack simulation and training campaign payload was created from a automation flow. Supports `$filter` and `$orderby`. |
 |isAutomated|Boolean|Indicates whether the attack simulation and training campaign payload was created from an automation flow. Supports `$filter` and `$orderby`. |
 |isControversial|Boolean|Indicates whether the payload is controversial. |
 |isCurrentEvent|Boolean|Indicates whether the payload is from any recent event. |
@@ -48,9 +49,9 @@ Inherits from [entity](../resources/entity.md).
 |payloadTags|String collection|Free text tags for a payload.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|source|[simulationContentSource](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|status|[simulationContentStatus](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md) Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload.|
+|source|[simulationContentSource](../resources/simulation.md#simulationContentSource-values)|Simulation content source. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `tenant`, `global`, `unknownFutureValue`.|
+|status|[simulationContentStatus](../resources/simulation.md#simulationContentStatus-values)|Simulation content status. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md) Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload.|Possible values are: `unknown`, `accountActivation`, etc|
 
 ### payloadTheme values
 
@@ -172,12 +173,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.payload",
-    "attackTechnique": {"@odata.type": "microsoft.graph.simulationAttackType"},
+    "technique": {"@odata.type": "microsoft.graph.simulationAttackType"},
     "brand": {"@odata.type": "microsoft.graph.payloadBrand"},
     "complexity": {"@odata.type": "microsoft.graph.payloadComplexity"},
     "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
     "createdDateTime": "String (timestamp)",
-    "deliveryPlatform": "String",
     "description": "String",
     "detail": {"@odata.type": "microsoft.graph.payloadDetail"},
     "displayName": "String",

@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationOperation resource type"
-description: "Represents an attack simulation training operation."
+description: "Represents the status of a long-running attack simulation training operation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an attack simulation training operation.
+Represents the status of a long-running attack simulation training operation.
 
 Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
@@ -27,13 +27,13 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
-|id|String|The unique identifier for the training. Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|Operation created date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|id|String|The unique identifier for the operation. Inherited from [entity](../resources/entity.md).|
 |lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
-|percentageCompleted|Int32| Percentage of completion for the respective operation.|
-|resourceLocation|String|URI of the resource that the operation is performed on. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
-|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
-|statusDetail|String|Details about the status of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|percentageCompleted|Int32| Percentage of completion of the respective operation.|
+|resourceLocation|String|URI of the resource location Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|status|longRunningOperationStatus|Operation status. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|statusDetail|String|Status detail of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |tenantId|String|Tenant identifier.|
 |type|attackSimulationOperationType|The attack simulation operation type. Possible values are: `unknown`, `createSimulation`, `updateSimulation`.|
 
