@@ -366,3 +366,53 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+### Example 5: Use $filter to retrieve specific users based on value of a property.
+
+In this example, we use `$filter` query parameter along with endswith clause to retrieve a users having specific value added in `mail` attribute. For example filter and return all users with mail address ending with contoso.com.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_user_filter"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$count=true&ConsistencyLevel=eventual&$filter=endsWith(mail,'@contoso.com')
+```
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "@odata.count": 1350,
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@contoso.com')&ConsistencyLevel=eventual&$skiptoken=m~AQAnOzEyN2NjN2I3NTQzYzQ0YzA4NjlhYjU5MzUzYmNhNGI2OzswOzA7",
+    "value": [
+        {
+            "businessPhones": [],
+            "displayName": "Phantom Space",
+            "givenName": "Space",
+            "jobTitle": null,
+            "mail": "Space.Phantom@cloudezzy.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": "Phantom",
+            "userPrincipalName": "Space.Phantom@contoso.com",
+            "id": "00111916-c5c5-4dd2-9e31-aab96af7511e"
+        }
+    ]
+}
+```
