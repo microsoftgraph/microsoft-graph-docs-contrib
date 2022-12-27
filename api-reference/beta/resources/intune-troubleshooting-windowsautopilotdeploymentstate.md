@@ -1,7 +1,7 @@
 ---
 title: "windowsAutopilotDeploymentState enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
@@ -25,6 +25,7 @@ Not yet documented
 |successWithTimeout|4|Not yet documented|
 |notAttempted|5|Not yet documented|
 |disabled|6|Not yet documented|
+
 
 
 

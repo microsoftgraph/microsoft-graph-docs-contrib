@@ -1,7 +1,7 @@
 ---
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 ---
@@ -19,3 +19,4 @@ Microsoft Intune app protection policies help protect your company data and prev
 You can use Intune app protection policies to help protect your company’s data. Because Intune app protection policies can be used independent of any mobile-device management (MDM) solution, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department.
 
 Use Graph resources to manage app protection polices in Intune. See the table of content for a list of resources.
+

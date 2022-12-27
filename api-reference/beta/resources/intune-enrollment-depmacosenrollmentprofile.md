@@ -1,7 +1,7 @@
 ---
 title: "depMacOSEnrollmentProfile resource type"
 description: "The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -151,6 +151,7 @@ Here is a JSON representation of the resource.
   "enableRestrictEditing": true
 }
 ```
+
 
 
 
