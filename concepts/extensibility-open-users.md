@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 09/11/2022
 ---
 
 # Add custom data to users using open extensions
