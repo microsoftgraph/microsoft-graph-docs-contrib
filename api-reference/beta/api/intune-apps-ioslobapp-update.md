@@ -79,7 +79,6 @@ The following table shows the properties that are required when you create the [
 |expirationDateTime|DateTimeOffset|The expiration time.|
 |versionNumber|String|The version number of iOS Line of Business (LoB) app.|
 |buildNumber|String|The build number of iOS Line of Business (LoB) app.|
-|identityVersion|String|The identity version. This property is being deprecated in 2211(November 2022)|
 
 
 
@@ -93,7 +92,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1508
+Content-length: 1460
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -142,8 +141,7 @@ Content-length: 1508
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
-  "buildNumber": "Build Number value",
-  "identityVersion": "Identity Version value"
+  "buildNumber": "Build Number value"
 }
 ```
 
@@ -152,7 +150,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1680
+Content-Length: 1632
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -204,8 +202,7 @@ Content-Length: 1680
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
-  "buildNumber": "Build Number value",
-  "identityVersion": "Identity Version value"
+  "buildNumber": "Build Number value"
 }
 ```
 

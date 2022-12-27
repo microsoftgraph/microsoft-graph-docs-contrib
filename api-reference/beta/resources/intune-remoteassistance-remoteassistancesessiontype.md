@@ -1,6 +1,6 @@
 ---
 title: "remoteAssistanceSessionType enum type"
-description: "Type of the remote assist session that was held. Possible values are: `viewOnly`, `fullControl`"
+description: "Type of the remote assist session that was held. Possible values are: `viewOnly`, `fullControl`, `elevation`, `unattended`"
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Type of the remote assist session that was held. Possible values are: `viewOnly`, `fullControl`
+Type of the remote assist session that was held. Possible values are: `viewOnly`, `fullControl`, `elevation`, `unattended`
 
 ## Members
 |Member|Value|Description|
@@ -23,6 +23,7 @@ Type of the remote assist session that was held. Possible values are: `viewOnly`
 |viewOnly|0|This status denotes a view only session between helper and sharer.|
 |fullControl|1|This status denotes a session where helper was able to take full control of the sharer's device.|
 |elevation|2|This status denotes a session where helper was able to take administrative actions on the sharer's device.|
+|unattended|3|This status denotes a session where helper was able to take actions in a device, without sharer user.|
 
 
 

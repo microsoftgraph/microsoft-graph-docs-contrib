@@ -26,6 +26,7 @@ The Group Policy migration report.
 |[Delete groupPolicyMigrationReport](../api/intune-gpanalyticsservice-grouppolicymigrationreport-delete.md)|None|Deletes a [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md).|
 |[Update groupPolicyMigrationReport](../api/intune-gpanalyticsservice-grouppolicymigrationreport-update.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|Update the properties of a [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.|
 |[createMigrationReport action](../api/intune-gpanalyticsservice-grouppolicymigrationreport-createmigrationreport.md)|String|Not yet documented|
+|[updateScopeTags action](../api/intune-gpanalyticsservice-grouppolicymigrationreport-updatescopetags.md)|String|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

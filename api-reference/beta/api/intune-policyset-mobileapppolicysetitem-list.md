@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 821
+Content-Length: 1213
 
 {
   "value": [
@@ -79,10 +79,19 @@ Content-Length: 821
       ],
       "intent": "required",
       "settings": {
-        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-        "vpnConfigurationId": "Vpn Configuration Id value",
-        "uninstallOnDeviceRemoval": true,
-        "isRemovable": true
+        "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showReboot",
+        "restartSettings": {
+          "@odata.type": "microsoft.graph.winGetAppRestartSettings",
+          "gracePeriodInMinutes": 4,
+          "countdownDisplayBeforeRestartInMinutes": 6,
+          "restartNotificationSnoozeDurationInMinutes": 10
+        },
+        "installTimeSettings": {
+          "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
+          "useLocalTime": true,
+          "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+        }
       }
     }
   ]

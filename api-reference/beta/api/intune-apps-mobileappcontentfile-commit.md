@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune-apps-fileencryptioninfo.md)|File encryption info parameter key.|
+|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune-apps-fileencryptioninfo.md)|The file encryption info parameter key. A PowerShell script example of the file upload process using the ProfileVersion1 encryption scheme can be found at https://aka.ms/fileencryptioninfo.|
 
 
 
