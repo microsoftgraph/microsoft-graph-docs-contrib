@@ -65,6 +65,9 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 }
 ```
 
+## Code samples
+
+
 ## See also
 
 - [teamsAppInstallation](teamsappinstallation.md)
