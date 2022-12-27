@@ -44,7 +44,7 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ## Relationships
 
-| Relationship | Type	| Description |
+| Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |appDefinitions|[teamsAppDefinition](teamsappdefinition.md) collection| The details for each version of the app. |
 
@@ -67,6 +67,9 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ## Code samples
 
+| Sample name | Description | C# | Node.js |
+| --- | --- | --- | --- |
+| AppCatalog sample | This sample illustrates how you programmatically manage lifecycle for your Teams app in catalog by calling Microsoft Graph APIs. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/nodejs) |
 
 ## See also
 
