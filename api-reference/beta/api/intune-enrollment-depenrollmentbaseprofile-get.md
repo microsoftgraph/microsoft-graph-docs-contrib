@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1151
+Content-Length: 1218
 
 {
   "value": {
@@ -93,7 +93,10 @@ Content-Length: 1151
     "privacyPaneDisabled": true,
     "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
-    "configurationWebUrl": true
+    "configurationWebUrl": true,
+    "enabledSkipKeys": [
+      "Enabled Skip Keys value"
+    ]
   }
 }
 ```
