@@ -1,11 +1,11 @@
 ---
-title: "Person component in the Microsoft Graph Toolkit"
+title: "Person component in Microsoft Graph Toolkit"
 description: "The person component is used to display a person or contact by using their photo, name, and/or email address."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Person component in the Microsoft Graph Toolkit
+# Person component in Microsoft Graph Toolkit
 
 The person component is used to display a person or contact by using their photo, name, email address, or any other person details.
 
@@ -202,7 +202,7 @@ The following properties are available on the config object.
 
 | Property | Description |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Indicates whether the person component can use the Microsoft Graph personal contacts API to search for contact details and photos. Default value is `true`.  |
+| useContactApis | `boolean` - Indicates whether the person component can use Microsoft Graph personal contacts API to search for contact details and photos. Default value is `true`.  |
 
 ## Microsoft Graph permissions
 
