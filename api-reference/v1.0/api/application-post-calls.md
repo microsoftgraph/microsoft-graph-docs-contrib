@@ -1249,7 +1249,6 @@ The following shows an example that requires a **joinMeetingId** and a **passcod
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "join-meeting-with-join-meeting-id-and-passcode",
@@ -1289,6 +1288,7 @@ Content-Type: application/json
 ```
 
 #### Response
+
 <!-- {
   "blockType": "response",
   "name": "join-meeting-with-join-meeting-id-and-passcode",
@@ -1371,7 +1371,6 @@ The following shows an example that requires a **joinMeetingId** but doesn't req
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "join-meeting-with-join-meeting-id-and-without-passcode",
