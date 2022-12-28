@@ -587,6 +587,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "establishing",
@@ -728,6 +729,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "establishing",
