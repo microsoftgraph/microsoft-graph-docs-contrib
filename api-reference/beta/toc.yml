@@ -14429,6 +14429,14 @@ items:
             href: resources/meetingactivitystatistics.md
           - name: List activity statistics
             href: api/activitystatistics-list.md
+      - name: Pronouns settings (preview)
+        items:
+        - name: Pronouns settings
+          href: resources/pronounssettings.md
+        - name: List
+          href: api/organizationsettings-list-pronounssettings.md
+        - name: Update
+          href: api/pronounssettings-update.md
     - name: Personal contacts
       displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
