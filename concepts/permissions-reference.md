@@ -2142,7 +2142,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read.All_        | Read all users’ tasks and tasklist | Allows the app to read all users’ tasks and task lists in your organization, without a signed-in user | Yes  | No |
+| _Tasks.Read.All_        | Read all users’ tasks and tasklist | Allows the app to read all users’ tasks and task lists in your organization without a signed-in user | Yes  | No |
 | _Tasks.ReadWrite.All_   | Read and write all users’ tasks and tasklists | Allows the app to create, read, update and delete all users’ tasks and task lists in your organization, without a signed-in user | Yes  | No |
 
 ### Remarks
