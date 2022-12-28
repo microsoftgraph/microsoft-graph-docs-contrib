@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "directory-management"
+ms.date: 02/11/2022
 ---
 
 # Assign, update, list, or remove custom security attributes using the Microsoft Graph API (preview)

@@ -29,7 +29,7 @@ Represents a Microsoft Authenticator authentication methods policy. Authenticati
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method. Expanded by default.|
+|includeTargets|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method. Expanded by default.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

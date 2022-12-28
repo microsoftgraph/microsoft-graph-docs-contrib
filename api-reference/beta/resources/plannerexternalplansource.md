@@ -11,7 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains information about the relationship of a [plannerPlan](plannerplan.md) to a user experience outside of Planner. Plans in Planner can be surfaced in or synced with other experiences to track work in the context of that experience. Data in the plannerExternalPlanSource can be displayed in a user interface, used for sync information utilized by external services, or used to simply point to where a plan was created in an external service. The combination of contextScenarioId and externalObjectId is enforced to be unique within a tenant. If creation is called with an existing contextScenarioId and externalObjectId, the existing object is returned with no modifications. This type derives from [plannerPlanCreation](plannerPlanCreation.md).
+Contains information about the relationship of a [plannerPlan](plannerplan.md) to a user experience outside of Planner. This allows surfacing or syncing plans in Planner with other experiences to track work in the context of that experience. 
+
+You can display data in a **plannerExternalPlanSource** in a user interface to sync information for an external service, or to simply point to where a plan was created in the external service. 
+
+The combination of the **contextScenarioId** and **externalObjectId** properties is unique within a tenant. If creation is called with existing **contextScenarioId** and **externalObjectId** values, the existing object is returned with no modifications.
+
+This type is derived from [plannerPlanCreation](plannerPlanCreation.md).
 
 ## Properties
 |Property|Type|Description|

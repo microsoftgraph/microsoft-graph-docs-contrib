@@ -5,6 +5,7 @@ author: "jumasure"
 ms.localizationpriority: high
 ms.prod: "change-notifications"
 ms.custom: graphiamtop20
+ms.date: 12/02/2022
 ---
 
 # Reduce missing subscriptions and change notifications

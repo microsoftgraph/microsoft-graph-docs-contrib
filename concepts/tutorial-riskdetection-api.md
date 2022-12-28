@@ -4,6 +4,7 @@ description: "Learn how to generate a risky sign-in and remediate the risk statu
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
+ms.date: 11/01/2022
 ---
 
 # Identify and remediate risks using Microsoft Graph

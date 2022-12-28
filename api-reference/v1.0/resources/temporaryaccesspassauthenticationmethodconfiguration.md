@@ -33,7 +33,7 @@ Represents a Temporary Access Pass authentication methods policy that defines th
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
