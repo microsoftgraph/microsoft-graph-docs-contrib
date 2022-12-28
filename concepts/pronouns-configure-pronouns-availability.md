@@ -1,5 +1,5 @@
 ---
-title: "Enabling or disabling pronouns (preview)"
+title: "Customize pronouns availability (preview) (preview)"
 description: "Configure availability of pronouns by using the REST API pronounsSettings resource."
 author: "aymen-ms"
 ms.localizationpriority: high
@@ -7,9 +7,9 @@ ms.prod: "people"
 ms.custom: scenarios:getting-started
 ---
 
-# Enabling or disabling pronouns settings in Microsoft 365 (preview)
+# Manage access to pronouns using APIs in Microsoft Graph (preview)
 
-If you are a global administrator, you have the ability to enable or disable the display of pronouns in your organization. By default, pronouns are **disabled**. If you enable pronouns, users will be able to add and update pronouns in Microsoft apps and services.
+If you are a global administrator, you have the ability to turn on or off the display of pronouns in your organization. By default, pronouns are **off**. If you turn pronouns on, users will be able to add and update pronouns in Microsoft 365.
 
 > [!NOTE]
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ## Disabling pronouns in your organization
 
-Use the `patch` operation to make pronouns unavailable in Microsoft apps and services in your organization.
+Use the `patch` operation to make pronouns unavailable in your organization.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
@@ -94,4 +94,4 @@ Content-Type: application/json
 
 ## Important
 
-When pronouns are turned off in your organization, pronouns will be hidden in Microsoft apps and services. However, the data may persist on Microsoft servers for up to 30 days. If you decide to re-enable pronouns within that period, any previously hidden pronouns that have not yet been deleted will became visible again.
+When pronouns are turned off in your organization, pronouns will be hidden in Microsoft 365 and the process of deleting pronouns, added by users, will begin. However, the data may persist on Microsoft servers for up to 30 days. If you decide to re-enable pronouns within that period, any previously hidden pronouns that have not yet been deleted will be visible again.
