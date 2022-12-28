@@ -128,7 +128,7 @@ Content-Type: application/json
   "truncated": true,
   "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
-} -->
+}-->
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -581,7 +581,7 @@ Content-Type: application/json
   "truncated": true,
   "name": "create-group-call-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
-} -->
+}-->
 
 ```http
 HTTP/1.1 201 Created
@@ -722,7 +722,7 @@ Content-Type: application/json
   "truncated": true,
   "name": "create-group-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
-} -->
+}-->
 
 ```http
 HTTP/1.1 201 Created
@@ -1585,7 +1585,7 @@ Content-Type: application/json
   "truncated": true,
   "name": "create-call-service-hosted-media-2",
   "@odata.type": "microsoft.graph.call"
-} -->
+}-->
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -1756,14 +1756,14 @@ Content-Type: application/json
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. 
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "name": "create-call-service-hosted-media-3",
   "@odata.type": "microsoft.graph.call"
-} -->
+}-->
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
