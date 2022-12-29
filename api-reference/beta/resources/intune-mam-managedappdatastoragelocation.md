@@ -25,9 +25,3 @@ Storage locations where managed apps can potentially store their data
 |box|3|Box|
 |localStorage|6|Local storage on the device|
 |photoLibrary|7|The device's photo library|
-
-
-
-
-
-

@@ -190,9 +190,3 @@ Content-Length: 1852
   "category": "Category value"
 }
 ```
-
-
-
-
-
-

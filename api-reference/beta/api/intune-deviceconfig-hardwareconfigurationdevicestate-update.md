@@ -105,9 +105,3 @@ Content-Length: 459
   "configurationError": "Configuration Error value"
 }
 ```
-
-
-
-
-
-

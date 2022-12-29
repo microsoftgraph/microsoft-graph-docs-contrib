@@ -37,9 +37,3 @@ Not yet documented
 |activateDeviceEsim|14|Name of action to Activate eSIM on the device.|
 |collectDiagnostics|15|Name of the collectDiagnostics action.|
 |initiateMobileDeviceManagementKeyRecovery|16|Name of action to initiate MDM key recovery|
-
-
-
-
-
-

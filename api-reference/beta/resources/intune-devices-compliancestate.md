@@ -27,9 +27,3 @@ Compliance state.
 |error|4|Error.|
 |inGracePeriod|254|Device is non-compliant but still has access to corporate resources|
 |configManager|255|Managed by Config Manager|
-
-
-
-
-
-

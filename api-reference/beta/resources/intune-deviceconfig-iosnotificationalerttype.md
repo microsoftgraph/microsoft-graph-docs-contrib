@@ -24,9 +24,3 @@ Notification Settings Alert Type.
 |banner|1|Banner.|
 |modal|2|Modal.|
 |none|3|None.|
-
-
-
-
-
-

@@ -22,9 +22,3 @@ Administrator configured device compliance state Enum
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|0|Set compliance state based on other compliance polices|
 |nonCompliant|1|Set compliance to nonCompliant|
-
-
-
-
-
-

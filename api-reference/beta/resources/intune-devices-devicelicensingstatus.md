@@ -36,9 +36,3 @@ Indicates the device licensing status after Windows device based subscription ha
 |deviceLicenseRemoveFailed|13|This status is set when the device license removing fails.|
 |unknownFutureValue|14|This is put here as a place holder for future extension.|
 |unknown|-1|Default. Set to unknown when status cannot be determined.|
-
-
-
-
-
-

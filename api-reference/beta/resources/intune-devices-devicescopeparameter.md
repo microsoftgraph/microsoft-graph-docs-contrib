@@ -23,9 +23,3 @@ Device scope configuration parameter. It will be expend in future to add more pa
 |none|0|Device Scope parameter is not set|
 |scopeTag|1|use Scope Tag as parameter for the device scope configuration.|
 |unknownFutureValue|2|Placeholder value for future expansion.|
-
-
-
-
-
-

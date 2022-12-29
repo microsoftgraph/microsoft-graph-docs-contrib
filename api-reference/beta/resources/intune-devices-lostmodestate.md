@@ -22,9 +22,3 @@ State of lost mode, indicating if lost mode is enabled or disabled
 |:---|:---|:---|
 |disabled|0|Lost mode is disabled.|
 |enabled|1|Lost mode is enabled.|
-
-
-
-
-
-

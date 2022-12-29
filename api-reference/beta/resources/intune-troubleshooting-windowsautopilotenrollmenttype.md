@@ -27,8 +27,3 @@ Not yet documented
 |azureADJoinedWithWhiteGlove|6|Not yet documented|
 |offlineDomainJoinedWithWhiteGlove|7|Not yet documented|
 |offlineDomainJoinedWithOfflineAutopilotProfile|8|Not yet documented|
-
-
-
-
-

@@ -28,9 +28,3 @@ The set of available platforms for the OperationApprovalPolicy
 |windows10AndLater|16|Windows 10 and later|
 |windows81AndLater|32|Windows 8.1 and later|
 |windows10X|64|Windows 10X|
-
-
-
-
-
-

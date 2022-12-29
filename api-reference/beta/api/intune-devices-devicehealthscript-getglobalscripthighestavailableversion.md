@@ -66,9 +66,3 @@ Content-Length: 68
   "value": "Get Global Script Highest Available Version value"
 }
 ```
-
-
-
-
-
-

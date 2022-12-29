@@ -22,9 +22,3 @@ Not yet documented
 |:---|:---|:---|
 |offline|0|Not yet documented|
 |online|1|Not yet documented|
-
-
-
-
-
-

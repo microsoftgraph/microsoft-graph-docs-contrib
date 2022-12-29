@@ -281,9 +281,3 @@ Here is a JSON representation of the resource.
   "referencingConfigurationPolicyCount": 1024
 }
 ```
-
-
-
-
-
-

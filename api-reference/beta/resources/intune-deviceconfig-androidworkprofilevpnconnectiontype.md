@@ -30,9 +30,3 @@ Android Work Profile VPN connection type.
 |microsoftTunnel|7|Microsoft Tunnel.|
 |netMotionMobility|8|NetMotion Mobility.|
 |microsoftProtect|9|Microsoft Protect.|
-
-
-
-
-
-

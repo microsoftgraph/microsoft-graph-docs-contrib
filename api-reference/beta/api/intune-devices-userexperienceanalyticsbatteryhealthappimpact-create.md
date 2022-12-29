@@ -99,9 +99,3 @@ Content-Length: 357
   "batteryUsagePercentage": 7.333333333333333
 }
 ```
-
-
-
-
-
-

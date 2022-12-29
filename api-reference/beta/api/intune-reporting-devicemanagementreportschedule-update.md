@@ -129,7 +129,3 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
-
-
-

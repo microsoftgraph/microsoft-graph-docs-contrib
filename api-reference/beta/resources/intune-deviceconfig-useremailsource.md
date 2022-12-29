@@ -22,9 +22,3 @@ Possible values for username source or email source.
 |:---|:---|:---|
 |userPrincipalName|0|User principal name.|
 |primarySmtpAddress|1|Primary SMTP address.|
-
-
-
-
-
-

@@ -81,9 +81,3 @@ Content-Length: 31
   "value": "Reject value"
 }
 ```
-
-
-
-
-
-

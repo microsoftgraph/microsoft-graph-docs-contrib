@@ -26,9 +26,3 @@ The type of VPN security association integrity algorithm
 |sha2_384|3|SHA2-384|
 |sha2_512|4|SHA2-512|
 |md5|5|MD5|
-
-
-
-
-
-

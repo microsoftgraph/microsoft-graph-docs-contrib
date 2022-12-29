@@ -22,9 +22,3 @@ Edge kiosk type
 |:---|:---|:---|
 |publicBrowsing|0|public-browsing|
 |fullScreen|1|fullscreen|
-
-
-
-
-
-

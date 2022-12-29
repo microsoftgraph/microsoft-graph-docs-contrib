@@ -27,9 +27,3 @@ Tenant mobile device management subscription state.
 |deleted|4|Deleted|
 |blocked|5|Blocked|
 |lockedOut|8|LockedOut|
-
-
-
-
-
-

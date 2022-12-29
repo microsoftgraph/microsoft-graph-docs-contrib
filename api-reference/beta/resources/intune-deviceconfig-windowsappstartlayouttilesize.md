@@ -25,9 +25,3 @@ The tile size of Windows app in the start layout.
 |medium|2|Medium 2x2.|
 |wide|3|Wide 4x2.|
 |large|4|Large 4x4.|
-
-
-
-
-
-

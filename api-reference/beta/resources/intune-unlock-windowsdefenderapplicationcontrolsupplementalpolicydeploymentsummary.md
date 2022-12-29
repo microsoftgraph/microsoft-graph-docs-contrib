@@ -49,9 +49,3 @@ Here is a JSON representation of the resource.
   "failedDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

@@ -24,9 +24,3 @@ MacOS Software Update Category
 |configurationDataFile|1|A configuration data file update|
 |firmware|2|A firmware update|
 |other|3|All other update types|
-
-
-
-
-
-

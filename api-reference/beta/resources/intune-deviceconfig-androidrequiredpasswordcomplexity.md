@@ -24,9 +24,3 @@ The password complexity types that can be set on Android. One of: NONE, LOW, MED
 |low|1|The required password complexity on the device is of type low as defined by the Android documentation.|
 |medium|2|The required password complexity on the device is of type medium as defined by the Android documentation.|
 |high|3|The required password complexity on the device is of type high as defined by the Android documentation.|
-
-
-
-
-
-

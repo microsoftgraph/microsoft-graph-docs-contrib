@@ -111,9 +111,3 @@ Content-Length: 455
   "unknownDeviceCount": 2
 }
 ```
-
-
-
-
-
-

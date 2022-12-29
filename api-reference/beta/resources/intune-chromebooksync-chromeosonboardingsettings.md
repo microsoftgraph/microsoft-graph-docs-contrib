@@ -58,9 +58,3 @@ Here is a JSON representation of the resource.
   "lastDirectorySyncDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

@@ -21,7 +21,3 @@ Supported operators for unary management condition expressions
 |Member|Value|Description|
 |:---|:---|:---|
 |not|0|Negates the evaluation of the operand.|
-
-
-
-

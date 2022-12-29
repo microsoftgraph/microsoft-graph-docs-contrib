@@ -27,9 +27,3 @@ Contains all supported file system detection type.
 |version|4|Version value type.|
 |sizeInMB|5|Size detection type.|
 |doesNotExist|6|The specified file or folder does not exist.|
-
-
-
-
-
-

@@ -26,9 +26,3 @@ Supported evaluation results for filter.
 |inconclusive|3|Inconclusive.|
 |failure|4|Failure.|
 |notEvaluated|5|NotEvaluated.|
-
-
-
-
-
-

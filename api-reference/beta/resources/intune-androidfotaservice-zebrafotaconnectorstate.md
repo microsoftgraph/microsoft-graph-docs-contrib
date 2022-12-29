@@ -24,9 +24,3 @@ Represents various states for Zebra FOTA connector.
 |connected|1|Connected state indicates that Intune is linked to Zebra Update Services for the current tenant.|
 |disconnected|2|Disconnected state indicates that the account was connected in the past and later disconnected.|
 |unknownFutureValue|99|Unknown future enum value.|
-
-
-
-
-
-

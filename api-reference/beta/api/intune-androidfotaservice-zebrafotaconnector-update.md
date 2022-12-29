@@ -96,9 +96,3 @@ Content-Length: 355
   "fotaAppsApproved": true
 }
 ```
-
-
-
-
-
-

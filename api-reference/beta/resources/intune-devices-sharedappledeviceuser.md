@@ -44,9 +44,3 @@ Here is a JSON representation of the resource.
   "dataUsed": 1024
 }
 ```
-
-
-
-
-
-

@@ -23,9 +23,3 @@ Metered Connection Limit Settings.
 |unrestricted|0|Unrestricted|
 |fixed|1|Fixed|
 |variable|2|Variable|
-
-
-
-
-
-

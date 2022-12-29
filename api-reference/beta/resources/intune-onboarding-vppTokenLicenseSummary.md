@@ -46,9 +46,3 @@ Here is a JSON representation of the resource.
   "usedLicenseCount": 1024
 }
 ```
-
-
-
-
-
-

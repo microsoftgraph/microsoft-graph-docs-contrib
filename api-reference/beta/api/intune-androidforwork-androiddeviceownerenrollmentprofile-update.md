@@ -154,9 +154,3 @@ Content-Length: 1153
   "isTeamsDeviceProfile": true
 }
 ```
-
-
-
-
-
-

@@ -24,9 +24,3 @@ FileVault State
 |driveEncryptedByUser|1|FileVault has been enabled by user and is not being managed by policy|
 |userDeferredEncryption|2|FileVault policy is successfully installed but user has not started encryption|
 |escrowNotEnabled|4|FileVault recovery key escrow is not enabled|
-
-
-
-
-
-

@@ -120,9 +120,3 @@ Content-Length: 662
   "assetPublisher": "Asset Publisher value"
 }
 ```
-
-
-
-
-
-

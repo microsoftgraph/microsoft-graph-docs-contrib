@@ -103,9 +103,3 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
-
-
-
-
-

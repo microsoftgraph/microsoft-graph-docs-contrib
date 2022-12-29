@@ -151,9 +151,3 @@ Content-Length: 1004
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
-
-
-
-
-

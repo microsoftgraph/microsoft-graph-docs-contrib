@@ -99,9 +99,3 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
-
-
-
-
-
-

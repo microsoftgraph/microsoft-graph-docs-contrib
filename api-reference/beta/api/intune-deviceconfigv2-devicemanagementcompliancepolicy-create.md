@@ -113,9 +113,3 @@ Content-Length: 517
   "isAssigned": true
 }
 ```
-
-
-
-
-
-

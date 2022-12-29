@@ -70,9 +70,3 @@ Here is a JSON representation of the resource.
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

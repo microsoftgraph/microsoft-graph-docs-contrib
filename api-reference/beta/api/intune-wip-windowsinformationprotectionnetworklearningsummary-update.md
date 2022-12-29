@@ -87,9 +87,3 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
-
-
-
-

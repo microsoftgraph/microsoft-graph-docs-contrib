@@ -31,9 +31,3 @@ Supported platform types for policies.
 |windows10XProfile|8|Windows10XProfile.|
 |androidAOSP|9|AndroidAOSPProfile.|
 |all|100|All platforms.|
-
-
-
-
-
-

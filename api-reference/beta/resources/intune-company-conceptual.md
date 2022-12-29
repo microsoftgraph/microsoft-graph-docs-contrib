@@ -19,4 +19,3 @@ You can deploy Intune terms and conditions to user groups to explain how enrollm
 You can create and deploy multiple policies containing different terms and conditions. You can also produce versions of the same terms and conditions in different languages and then deploy these to their appropriate groups.
 
 Use Graph resources to manage company terms and conditions in Intune. See the table of content for a list of resources.
-

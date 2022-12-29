@@ -23,9 +23,3 @@ Windows Hello for Business pin usage options
 |allowed|0|Allowed the usage of certain pin rule|
 |required|1|Enforce the usage of certain pin rule|
 |disallowed|2|Forbit the usage of certain pin rule|
-
-
-
-
-
-

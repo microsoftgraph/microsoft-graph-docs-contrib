@@ -17,5 +17,3 @@ Namespace: microsoft.graph
 You can import PFX certificates using Microsoft Graph API for Intune.
 
 Use Graph resources to manage certificates in Intune. See the table of content for a list of resources.
-
-

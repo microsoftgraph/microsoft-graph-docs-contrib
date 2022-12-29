@@ -24,9 +24,3 @@ Possible values for the file format of a report
 |pdf|1|PDF Format (Deprecate later)|
 |json|2|JSON Format|
 |unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-
-
-

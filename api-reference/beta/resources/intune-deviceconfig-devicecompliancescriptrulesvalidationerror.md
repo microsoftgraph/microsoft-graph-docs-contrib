@@ -52,9 +52,3 @@ Error code for rule validation.
 |unrecognizedLocale|29|Unrecognized locale error.|
 |unknown|30|Unknown error.|
 |remediationStringsMissing|31|Remediation strings missing error.|
-
-
-
-
-
-

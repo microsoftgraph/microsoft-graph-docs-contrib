@@ -291,9 +291,3 @@ Here is a JSON representation of the resource.
   "mtuSizeInBytes": 1024
 }
 ```
-
-
-
-
-
-

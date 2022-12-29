@@ -25,9 +25,3 @@ Indicates the device scope status after the device scope has been enabled. Possi
 |insufficientData|2|Indicates the device scope is enabled but there is insufficient data to calculate results. The system requires information from at least 5 devices before calculations can occur.|
 |completed|3|Device scope is enabled and finished recalculating the report metric. Device scope is now ready to be used.|
 |unknownFutureValue|4|Placeholder value for future expansion.|
-
-
-
-
-
-

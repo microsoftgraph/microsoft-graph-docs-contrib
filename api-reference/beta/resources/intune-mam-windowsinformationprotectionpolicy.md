@@ -231,9 +231,3 @@ Here is a JSON representation of the resource.
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
-
-
-
-
-
-

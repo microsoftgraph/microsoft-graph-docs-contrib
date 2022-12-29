@@ -194,9 +194,3 @@ Content-Length: 1933
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
 }
 ```
-
-
-
-
-
-

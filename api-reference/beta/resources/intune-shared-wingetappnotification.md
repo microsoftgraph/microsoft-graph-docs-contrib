@@ -24,9 +24,3 @@ Contains value for notification status.
 |showReboot|1|Only show restart notification and suppress other notifications.|
 |hideAll|2|Hide all notifications.|
 |unknownFutureValue|3|Unknown future value, reserved for future usage as expandable enum.|
-
-
-
-
-
-

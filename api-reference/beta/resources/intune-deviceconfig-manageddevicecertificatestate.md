@@ -96,9 +96,3 @@ Here is a JSON representation of the resource.
   "certificateErrorCode": 1024
 }
 ```
-
-
-
-
-
-

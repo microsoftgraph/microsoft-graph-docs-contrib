@@ -24,9 +24,3 @@ Possible values for App update on Windows10 recurrence.
 |daily|1|Daily.|
 |weekly|2|Weekly.|
 |monthly|3|Monthly.|
-
-
-
-
-
-

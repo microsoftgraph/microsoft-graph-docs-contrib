@@ -30,9 +30,3 @@ Template subtype
 |firewallSharedAppList|7|Endpoint security firewall shared app subtype|
 |firewallSharedIpList|8|Endpoint security firewall shared ip range list subtype|
 |firewallSharedPortlist|9|Endpoint security firewall shared port range list subtype|
-
-
-
-
-
-

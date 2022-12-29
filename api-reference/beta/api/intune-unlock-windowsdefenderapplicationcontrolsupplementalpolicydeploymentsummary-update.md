@@ -87,9 +87,3 @@ Content-Length: 215
   "failedDeviceCount": 1
 }
 ```
-
-
-
-
-
-

@@ -25,9 +25,3 @@ Indicates the type of return code.
 |softReboot|2|Soft-reboot is required.|
 |hardReboot|3|Hard-reboot is required.|
 |retry|4|Retry.|
-
-
-
-
-
-

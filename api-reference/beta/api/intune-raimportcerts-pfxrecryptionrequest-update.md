@@ -115,9 +115,3 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
-
-
-
-
-

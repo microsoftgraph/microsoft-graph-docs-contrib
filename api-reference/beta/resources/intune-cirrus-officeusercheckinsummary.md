@@ -41,8 +41,3 @@ Here is a JSON representation of the resource.
   "failedUserCount": 1024
 }
 ```
-
-
-
-
-

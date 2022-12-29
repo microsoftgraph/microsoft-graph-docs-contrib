@@ -141,9 +141,3 @@ Content-Length: 987
   "patchVersion": "Patch Version value"
 }
 ```
-
-
-
-
-
-

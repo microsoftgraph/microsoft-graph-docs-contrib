@@ -129,9 +129,3 @@ Content-Length: 769
   "defaultLocale": "Default Locale value"
 }
 ```
-
-
-
-
-
-

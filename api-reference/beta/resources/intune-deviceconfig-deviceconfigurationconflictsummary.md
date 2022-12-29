@@ -63,9 +63,3 @@ Here is a JSON representation of the resource.
   "deviceCheckinsImpacted": 1024
 }
 ```
-
-
-
-
-
-

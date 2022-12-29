@@ -118,9 +118,3 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
-
-
-
-
-

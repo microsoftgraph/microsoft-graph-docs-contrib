@@ -23,9 +23,3 @@ Restrict managed app notification
 |allow|0|Share all notifications.|
 |blockOrganizationalData|1|Do not share Orgnizational data in notifications.|
 |block|2|Do not share notifications.|
-
-
-
-
-
-

@@ -157,8 +157,3 @@ Content-Length: 1594
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
-
-
-
-

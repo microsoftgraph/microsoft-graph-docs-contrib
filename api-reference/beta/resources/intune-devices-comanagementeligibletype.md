@@ -27,9 +27,3 @@ Not yet documented
 |ineligible|5|Not yet documented|
 |scheduledForEnrollment|6|Devices scheduled for Co-Management enrollment|
 |unknownFutureValue|7|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-
-
-

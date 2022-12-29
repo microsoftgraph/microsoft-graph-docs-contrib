@@ -96,9 +96,3 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
-
-
-
-
-

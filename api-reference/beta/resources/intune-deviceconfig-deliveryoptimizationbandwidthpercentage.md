@@ -45,9 +45,3 @@ Here is a JSON representation of the resource.
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
-
-
-
-
-
-

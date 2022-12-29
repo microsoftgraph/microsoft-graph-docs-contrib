@@ -104,9 +104,3 @@ Content-Length: 334
   "maxValue": 8
 }
 ```
-
-
-
-
-
-

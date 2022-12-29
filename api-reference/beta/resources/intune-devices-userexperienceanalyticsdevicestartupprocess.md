@@ -58,9 +58,3 @@ Here is a JSON representation of the resource.
   "startupImpactInMs": 1024
 }
 ```
-
-
-
-
-
-

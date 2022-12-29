@@ -23,9 +23,3 @@ Provider type for per-app VPN.
 |notConfigured|0|Tunnel traffic is not explicitly configured.|
 |appProxy|1|Tunnel traffic at the application layer.|
 |packetTunnel|2|Tunnel traffic at the IP layer.|
-
-
-
-
-
-

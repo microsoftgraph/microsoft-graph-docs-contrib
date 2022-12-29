@@ -106,9 +106,3 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
-

@@ -31,9 +31,3 @@ Represents the different type of operators which can be used to craft the Assign
 |notIn|8|NotIn.|
 |endsWith|9|EndsWith.|
 |notEndsWith|10|NotEndsWith.|
-
-
-
-
-
-

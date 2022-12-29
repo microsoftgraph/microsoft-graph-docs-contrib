@@ -24,9 +24,3 @@ Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUse
 |administrators|1|Administrators|
 |administratorsAndPowerUsers|2|Administrators and Power Users|
 |administratorsAndInteractiveUsers|3|Administrators and Interactive Users |
-
-
-
-
-
-

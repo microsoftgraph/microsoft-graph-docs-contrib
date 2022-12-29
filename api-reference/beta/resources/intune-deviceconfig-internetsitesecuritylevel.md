@@ -24,9 +24,3 @@ Possible values for internet site security level.
 |medium|1|Medium.|
 |mediumHigh|2|Medium-High.|
 |high|3|High.|
-
-
-
-
-
-

@@ -22,9 +22,3 @@ Contains rule types for Win32 LOB apps.
 |:---|:---|:---|
 |detection|0|Detection rule.|
 |requirement|1|Requirement rule.|
-
-
-
-
-
-

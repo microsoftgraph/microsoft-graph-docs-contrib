@@ -41,9 +41,3 @@ Possible values for Miracast channel.
 |oneHundredFiftySeven|157|OneHundredFifty-Seven.|
 |oneHundredSixtyOne|161|OneHundredSixty-One.|
 |oneHundredSixtyFive|165|OneHundredSixty-Five.|
-
-
-
-
-
-

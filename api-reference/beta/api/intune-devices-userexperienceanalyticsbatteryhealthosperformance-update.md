@@ -99,9 +99,3 @@ Content-Length: 359
   "averageBatteryAgeInDays": 7
 }
 ```
-
-
-
-
-
-

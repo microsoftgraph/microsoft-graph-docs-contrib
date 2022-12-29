@@ -102,9 +102,3 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
-
-
-
-
-

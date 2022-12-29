@@ -80,8 +80,3 @@ Here is a JSON representation of the resource.  Note: The response object shown 
   "activeDirectoryDomainName": "String"
 }
 ```
-
-
-
-
-

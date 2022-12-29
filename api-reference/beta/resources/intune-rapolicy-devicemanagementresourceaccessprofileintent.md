@@ -22,9 +22,3 @@ The administrator intent for the assignment of the profile.
 |:---|:---|:---|
 |apply|0|Apply the profile.|
 |remove|1|Remove the profile from devices that have installed the profile.|
-
-
-
-
-
-

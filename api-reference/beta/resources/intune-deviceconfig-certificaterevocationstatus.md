@@ -25,9 +25,3 @@ Certificate Revocation Status.
 |issued|2|Revocation command issued.|
 |failed|3|Revocation failed.|
 |revoked|4|Revoked.|
-
-
-
-
-
-

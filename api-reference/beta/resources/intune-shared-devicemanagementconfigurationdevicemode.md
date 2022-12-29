@@ -22,8 +22,3 @@ Describes applicability for the mode the device is in
 |:---|:---|:---|
 |none|0|No Device Mode specified|
 |kiosk|1|Device must be in kiosk mode for this setting to apply|
-
-
-
-
-

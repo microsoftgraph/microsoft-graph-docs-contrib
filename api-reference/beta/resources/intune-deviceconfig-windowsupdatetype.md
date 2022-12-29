@@ -26,9 +26,3 @@ Which branch devices will receive their updates from
 |windowsInsiderBuildFast|3|Windows Insider build - Fast|
 |windowsInsiderBuildSlow|4|Windows Insider build - Slow|
 |windowsInsiderBuildRelease|5|Release Windows Insider build|
-
-
-
-
-
-

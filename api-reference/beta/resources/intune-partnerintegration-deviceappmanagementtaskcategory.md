@@ -22,9 +22,3 @@ Device app management task category.
 |:---|:---|:---|
 |unknown|0|Unknown source.|
 |advancedThreatProtection|1|Windows Defender ATP Threat & Vulnerability Management.|
-
-
-
-
-
-

@@ -39,9 +39,3 @@ Windows privacy data category specifier for privacy data access.
 |tasks|16|Let apps access Task Scheduler. Added in Windows 10, version 1703.|
 |syncWithDevices|17|Let apps automatically share and sync info with wireless devices that don’t explicitly pair with user’s device. Added in Windows 10, version 1607.|
 |trustedDevices|18|Let apps access trusted devices. Added in Windows 10, version 1607.|
-
-
-
-
-
-

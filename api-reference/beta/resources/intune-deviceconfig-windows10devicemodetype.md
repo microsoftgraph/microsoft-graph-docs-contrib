@@ -22,9 +22,3 @@ Windows 10 Device Mode type.
 |:---|:---|:---|
 |standardConfiguration|0|Standard Configuration|
 |sModeConfiguration|1|S Mode Configuration|
-
-
-
-
-
-

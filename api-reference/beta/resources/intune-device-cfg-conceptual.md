@@ -15,5 +15,3 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Use the Microsoft Intune Device Configuration workload to manage settings and features on all of the devices you manage. See the table of content for a list of resources.
-
-

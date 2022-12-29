@@ -22,9 +22,3 @@ Process identifier types for MacOS Privacy Preferences
 |:---|:---|:---|
 |bundleID|1|Indicates an app with a bundle ID.|
 |path|2|Indicates a file path for a process.|
-
-
-
-
-
-

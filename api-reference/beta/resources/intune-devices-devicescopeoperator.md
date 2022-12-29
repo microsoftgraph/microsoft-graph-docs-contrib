@@ -23,9 +23,3 @@ Device scope configuration query operator. Possible values are: equals, notEqual
 |none|0|No operator set for the device scope configuration.|
 |equals|1|Operator for the device configuration query to be used (Equals).|
 |unknownFutureValue|2|Placeholder value for future expansion enums such as notEquals, contains, notContains, greaterThan, lessThan.|
-
-
-
-
-
-

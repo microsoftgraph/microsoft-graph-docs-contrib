@@ -24,9 +24,3 @@ Mobile device management authority.
 |intune|1|Intune|
 |sccm|2|SCCM|
 |office365|3|Office365|
-
-
-
-
-
-

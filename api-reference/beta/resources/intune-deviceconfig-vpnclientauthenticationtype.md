@@ -22,9 +22,3 @@ The type of VPN client authentication type
 |:---|:---|:---|
 |userAuthentication|0|User Authentication|
 |deviceAuthentication|1|Device Authentication|
-
-
-
-
-
-

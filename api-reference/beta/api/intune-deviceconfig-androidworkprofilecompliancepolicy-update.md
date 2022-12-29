@@ -176,9 +176,3 @@ Content-Length: 1633
   "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
-
-
-
-
-
-

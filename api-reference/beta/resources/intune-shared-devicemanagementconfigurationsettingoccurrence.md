@@ -40,8 +40,3 @@ Here is a JSON representation of the resource.
   "maxDeviceOccurrence": 1024
 }
 ```
-
-
-
-
-

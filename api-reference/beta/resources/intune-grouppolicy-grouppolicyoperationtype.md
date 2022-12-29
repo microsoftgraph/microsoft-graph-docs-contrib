@@ -27,9 +27,3 @@ Type of Group Policy operation.
 |removeLanguageFiles|4|Group Policy remove language(ADML) files operation type.|
 |updateLanguageFiles|5|Group Policy update language(ADML) files operation type.|
 |remove|6|Group Policy remove uploaded file operation type.|
-
-
-
-
-
-

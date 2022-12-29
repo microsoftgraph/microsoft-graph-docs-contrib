@@ -351,9 +351,3 @@ Here is a JSON representation of the resource.
   "minimumCount": 1024
 }
 ```
-
-
-
-
-
-

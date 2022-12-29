@@ -164,9 +164,3 @@ Content-Length: 1130
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
-
-
-
-
-
-

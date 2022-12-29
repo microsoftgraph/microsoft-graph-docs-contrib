@@ -24,9 +24,3 @@ Wired Network authentication method.
 |usernameAndPassword|1|Use username and password for authentication.|
 |derivedCredential|2|Use Derived Credential for authentication.|
 |unknownFutureValue|3|Sentinel member for cases where the client cannot handle the new enum values.|
-
-
-
-
-
-

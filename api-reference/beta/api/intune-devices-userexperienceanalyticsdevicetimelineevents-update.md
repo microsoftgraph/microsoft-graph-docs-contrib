@@ -102,9 +102,3 @@ Content-Length: 442
   "eventAdditionalInformation": "Event Additional Information value"
 }
 ```
-
-
-
-
-
-

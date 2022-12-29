@@ -23,9 +23,3 @@ Windows DnF update inventory sync state.
 |pending|0|Pending sync.|
 |success|1|Successful sync.|
 |failure|2|Failed sync.|
-
-
-
-
-
-

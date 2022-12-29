@@ -91,9 +91,3 @@ Content-Length: 257
   "metricType": "Metric Type value"
 }
 ```
-
-
-
-
-
-

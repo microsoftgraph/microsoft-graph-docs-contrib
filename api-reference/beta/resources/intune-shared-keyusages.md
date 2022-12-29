@@ -22,9 +22,3 @@ Key Usage Options.
 |:---|:---|:---|
 |keyEncipherment|1|Key Encipherment Usage.|
 |digitalSignature|2|Digital Signature Usage.|
-
-
-
-
-
-

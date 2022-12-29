@@ -42,9 +42,3 @@ Here is a JSON representation of the resource.
   "tenantAttachDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

@@ -24,9 +24,3 @@ Not yet documented
 |informational|1|Not yet documented|
 |warning|2|Not yet documented|
 |error|3|Not yet documented|
-
-
-
-
-
-

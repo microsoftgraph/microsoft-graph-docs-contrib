@@ -21,9 +21,3 @@ Enum for the template type used for collecting logs
 |Member|Value|Description|
 |:---|:---|:---|
 |predefined|0|Predefined template for what will be collected|
-
-
-
-
-
-

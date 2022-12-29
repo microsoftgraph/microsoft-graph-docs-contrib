@@ -25,9 +25,3 @@ Not yet documented
 |dmaProtectionRequired|2|DMA protection required|
 |hyperVNotSupportedForGuestVM|4|HyperV not supported for Guest VM|
 |hyperVNotAvailable|8|HyperV feature is not available|
-
-
-
-
-
-

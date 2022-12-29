@@ -22,9 +22,3 @@ Not yet documented
 |:---|:---|:---|
 |administrator|0|Not yet documented|
 |standard|1|Not yet documented|
-
-
-
-
-
-

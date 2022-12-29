@@ -27,9 +27,3 @@ Indicates device event level. Possible values are: None, Verbose, Information, W
 |error|4|Indicates that the device event level is error.|
 |critical|5|Indicates that the device event level is critical.|
 |unknownFutureValue|6|Placeholder value for future expansion.|
-
-
-
-
-
-

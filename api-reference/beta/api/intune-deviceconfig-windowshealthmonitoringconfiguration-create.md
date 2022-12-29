@@ -159,9 +159,3 @@ Content-Length: 1416
   "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
-
-
-
-
-

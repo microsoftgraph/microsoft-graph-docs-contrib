@@ -108,9 +108,3 @@ Content-Length: 464
   "meanTimeToFailureInMinutes": 10
 }
 ```
-
-
-
-
-
-

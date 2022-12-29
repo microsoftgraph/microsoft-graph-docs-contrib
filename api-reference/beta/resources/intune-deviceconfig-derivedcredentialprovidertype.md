@@ -25,9 +25,3 @@ Provider type for Derived Credentials.
 |purebred|2|Purebred - Defense Information Systems Agency.|
 |xTec|3|Xtec - AuthentX.|
 |intercede|4|Intercede.|
-
-
-
-
-
-

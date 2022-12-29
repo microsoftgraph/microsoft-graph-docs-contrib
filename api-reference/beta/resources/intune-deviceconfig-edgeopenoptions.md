@@ -25,9 +25,3 @@ Possible values for the EdgeOpensWith setting.
 |newTabPage|2|NewTabPage.|
 |previousPages|3|PreviousPages.|
 |specificPages|4|SpecificPages.|
-
-
-
-
-
-

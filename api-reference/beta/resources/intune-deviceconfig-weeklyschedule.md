@@ -30,9 +30,3 @@ Possible values for a weekly schedule.
 |friday|7|Friday.|
 |saturday|8|Saturday.|
 |noScheduledScan|9|No Scheduled Scan|
-
-
-
-
-
-

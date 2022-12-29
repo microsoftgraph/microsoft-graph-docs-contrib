@@ -24,9 +24,3 @@ Access Level in Exchange.
 |allow|1|Allow the device access to Exchange.|
 |block|2|Block the device from accessing Exchange.|
 |quarantine|3|Quarantine the device in Exchange.|
-
-
-
-
-
-

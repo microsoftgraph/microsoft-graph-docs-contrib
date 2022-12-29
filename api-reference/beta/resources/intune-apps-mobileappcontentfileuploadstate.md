@@ -36,9 +36,3 @@ Contains properties for upload request states.
 |commitFilePending|301|Not yet documented|
 |commitFileFailed|302|Not yet documented|
 |commitFileTimedOut|303|Not yet documented|
-
-
-
-
-
-

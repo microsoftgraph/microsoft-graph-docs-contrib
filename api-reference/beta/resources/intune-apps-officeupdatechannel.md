@@ -26,9 +26,3 @@ The Enum to specify the Office365 Updates Channel.
 |firstReleaseCurrent|3|Not yet documented|
 |firstReleaseDeferred|4|Not yet documented|
 |monthlyEnterprise|5|Not yet documented|
-
-
-
-
-
-

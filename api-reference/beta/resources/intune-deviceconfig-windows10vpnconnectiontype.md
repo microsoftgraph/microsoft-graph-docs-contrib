@@ -33,9 +33,3 @@ VPN connection types.
 |ciscoAnyConnect|10|Cisco AnyConnect|
 |unknownFutureValue|11|Sentinel member for cases where the client cannot handle the new enum values.|
 |microsoftTunnel|12|Microsoft Tunnel connection type|
-
-
-
-
-
-

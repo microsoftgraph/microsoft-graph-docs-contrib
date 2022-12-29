@@ -24,9 +24,3 @@ Mdm Support Status of the setting.
 |supported|1|Setting is supported.|
 |unsupported|2|Setting is unsupported.|
 |deprecated|3|Setting is depcrecated.|
-
-
-
-
-
-

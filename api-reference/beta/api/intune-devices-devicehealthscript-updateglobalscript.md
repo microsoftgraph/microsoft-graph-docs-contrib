@@ -81,9 +81,3 @@ Content-Length: 45
   "value": "Update Global Script value"
 }
 ```
-
-
-
-
-
-

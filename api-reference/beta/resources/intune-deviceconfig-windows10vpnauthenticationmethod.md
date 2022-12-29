@@ -24,9 +24,3 @@ Windows 10 VPN connection types.
 |usernameAndPassword|1|Use username and password for authentication.|
 |customEapXml|2|Authentication method is specified in custom EAP XML.|
 |derivedCredential|3|Use Derived Credential for authentication.|
-
-
-
-
-
-

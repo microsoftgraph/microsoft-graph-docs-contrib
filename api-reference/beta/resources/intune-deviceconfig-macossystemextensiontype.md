@@ -23,9 +23,3 @@ Flag enum representing the allowed macOS system extension types.
 |driverExtensionsAllowed|1|Enables driver extensions.|
 |networkExtensionsAllowed|2|Enables network extensions.|
 |endpointSecurityExtensionsAllowed|4|Enables endpoint security extensions.|
-
-
-
-
-
-

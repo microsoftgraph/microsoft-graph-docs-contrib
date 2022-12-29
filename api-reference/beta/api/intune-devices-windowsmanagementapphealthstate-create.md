@@ -96,9 +96,3 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
-
-
-
-
-

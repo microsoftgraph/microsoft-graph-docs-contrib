@@ -23,9 +23,3 @@ State Management Setting.
 |notConfigured|0|Not configured.|
 |blocked|1|Blocked.|
 |allowed|2|Allowed.|
-
-
-
-
-
-

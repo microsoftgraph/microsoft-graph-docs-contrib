@@ -81,9 +81,3 @@ Content-Length: 32
   "value": "Approve value"
 }
 ```
-
-
-
-
-
-

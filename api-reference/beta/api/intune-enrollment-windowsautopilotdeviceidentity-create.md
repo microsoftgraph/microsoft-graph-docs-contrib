@@ -157,9 +157,3 @@ Content-Length: 1420
   "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
 }
 ```
-
-
-
-
-
-

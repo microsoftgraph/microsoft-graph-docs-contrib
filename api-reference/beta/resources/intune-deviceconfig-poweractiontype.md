@@ -25,9 +25,3 @@ Power action types
 |sleep|2|Put device in sleep state|
 |hibernate|3|Put device in hibernate state|
 |shutdown|4|Shutdown device|
-
-
-
-
-
-

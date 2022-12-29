@@ -24,9 +24,3 @@ Android Device Owner possible values for states of the device's plugged-in power
 |ac|1|Power source is an AC charger.|
 |usb|2|Power source is a USB port.|
 |wireless|3|Power source is wireless.|
-
-
-
-
-
-

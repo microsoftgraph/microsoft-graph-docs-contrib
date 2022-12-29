@@ -22,9 +22,3 @@ Represents source of assignment.
 |:---|:---|:---|
 |direct|0|Direct indicates a direct assignment.|
 |policySets|1|PolicySets indicates assignment was made via PolicySet assignment.|
-
-
-
-
-
-

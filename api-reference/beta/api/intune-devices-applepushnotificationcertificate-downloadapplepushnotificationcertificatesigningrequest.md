@@ -66,9 +66,3 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
-
-
-
-
-
-

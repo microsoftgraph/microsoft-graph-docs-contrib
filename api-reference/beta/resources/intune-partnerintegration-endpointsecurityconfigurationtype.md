@@ -27,9 +27,3 @@ The endpoint security policy type.
 |endpointDetectionAndResponse|4|Endpoint detection and response.|
 |attackSurfaceReduction|5|Attack surface reduction.|
 |accountProtection|6|Account protection.|
-
-
-
-
-
-

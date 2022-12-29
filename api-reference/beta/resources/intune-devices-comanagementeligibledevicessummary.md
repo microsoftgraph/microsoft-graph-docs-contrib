@@ -48,9 +48,3 @@ Here is a JSON representation of the resource.
   "ineligibleCount": 1024
 }
 ```
-
-
-
-
-
-

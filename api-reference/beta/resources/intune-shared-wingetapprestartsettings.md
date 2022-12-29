@@ -42,9 +42,3 @@ Here is a JSON representation of the resource.
   "restartNotificationSnoozeDurationInMinutes": 1024
 }
 ```
-
-
-
-
-
-

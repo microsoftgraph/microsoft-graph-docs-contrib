@@ -95,9 +95,3 @@ Content-Length: 404
   "installIntent": "required"
 }
 ```
-
-
-
-
-
-

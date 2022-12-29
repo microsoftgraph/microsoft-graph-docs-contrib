@@ -79,9 +79,3 @@ Content-Length: 65
   "@odata.type": "#microsoft.graph.deviceManagementReports"
 }
 ```
-
-
-
-
-
-

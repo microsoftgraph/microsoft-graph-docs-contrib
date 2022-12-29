@@ -587,9 +587,3 @@ Content-Length: 9194
   "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
-
-
-
-
-
-

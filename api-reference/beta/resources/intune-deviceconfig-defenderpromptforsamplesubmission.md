@@ -25,9 +25,3 @@ Possible values for prompting user for samples submission.
 |promptBeforeSendingPersonalData|2|Send safe samples automatically.|
 |neverSendData|3|Never send data.|
 |sendAllDataWithoutPrompting|4|Send all data without prompting.|
-
-
-
-
-
-

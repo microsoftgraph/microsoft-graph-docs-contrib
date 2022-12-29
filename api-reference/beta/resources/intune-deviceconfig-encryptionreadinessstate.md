@@ -22,9 +22,3 @@ Encryption readiness state
 |:---|:---|:---|
 |notReady|0|Not ready|
 |ready|1|Ready|
-
-
-
-
-
-

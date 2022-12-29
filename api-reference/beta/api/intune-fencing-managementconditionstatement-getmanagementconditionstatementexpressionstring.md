@@ -70,7 +70,3 @@ Content-Length: 126
   }
 }
 ```
-
-
-
-

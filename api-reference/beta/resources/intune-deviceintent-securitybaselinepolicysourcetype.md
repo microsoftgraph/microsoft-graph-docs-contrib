@@ -22,9 +22,3 @@ Authoring source of a policy
 |:---|:---|:---|
 |deviceConfiguration|0|Not yet documented|
 |deviceIntent|1|Not yet documented|
-
-
-
-
-
-

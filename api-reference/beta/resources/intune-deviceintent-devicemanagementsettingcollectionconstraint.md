@@ -43,9 +43,3 @@ Here is a JSON representation of the resource.
   "maximumLength": 1024
 }
 ```
-
-
-
-
-
-

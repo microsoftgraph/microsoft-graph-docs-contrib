@@ -96,9 +96,3 @@ Content-Length: 377
   "connectorVersion": "Connector Version value"
 }
 ```
-
-
-
-
-
-

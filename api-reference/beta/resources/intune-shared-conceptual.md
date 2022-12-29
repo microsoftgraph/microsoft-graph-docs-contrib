@@ -17,4 +17,3 @@ Namespace: microsoft.graph
 These endpoints are used in multiple Microsoft Graph API for Intune workflows.  The intent, purpose, and permissions required to use a given resource varies according to the specific workflow and context of the underlying call.  In addition, certain methods, properties, and actions are supported only for specific workflows.
 
 Graph resources are shared between Intune workflows. See the table of content for a list of resources.
-

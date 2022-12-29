@@ -51,9 +51,3 @@ Here is a JSON representation of the resource.
   "errorCode": 1024
 }
 ```
-
-
-
-
-
-

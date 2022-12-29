@@ -26,9 +26,3 @@ Partner state of this tenant.
 |terminated|3|Partner connection is terminated.|
 |rejected|4|Partner messages are rejected.|
 |unresponsive|5|Partner is unresponsive.|
-
-
-
-
-
-

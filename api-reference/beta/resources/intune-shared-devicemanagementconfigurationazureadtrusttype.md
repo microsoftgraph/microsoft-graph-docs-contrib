@@ -24,8 +24,3 @@ Required AAD Trust Type
 |azureAdJoined|1|AAD Joined Trust Type|
 |addWorkAccount|2|AddWorkAccount|
 |mdmOnly|4|MDM only|
-
-
-
-
-

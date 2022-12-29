@@ -84,9 +84,3 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
-
-
-
-
-

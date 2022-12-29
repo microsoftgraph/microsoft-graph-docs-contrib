@@ -90,9 +90,3 @@ Content-Length: 197
   "available": true
 }
 ```
-
-
-
-
-
-

@@ -26,9 +26,3 @@ TV content rating labels in France
 |agesAbove12|3|The -12 classification is not recommended for children under 12|
 |agesAbove16|4|The -16 classification is not recommended for children under 16|
 |agesAbove18|5|The -18 classification is not recommended for persons under 18|
-
-
-
-
-
-

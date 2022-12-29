@@ -117,9 +117,3 @@ Content-Length: 394
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
-

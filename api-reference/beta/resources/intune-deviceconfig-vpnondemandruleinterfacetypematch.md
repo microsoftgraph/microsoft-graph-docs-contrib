@@ -24,9 +24,3 @@ VPN On-Demand Rule Connection network interface type.
 |ethernet|1|Ethernet.|
 |wiFi|2|WiFi.|
 |cellular|3|Cellular.|
-
-
-
-
-
-

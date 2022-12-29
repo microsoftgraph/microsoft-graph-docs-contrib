@@ -73,9 +73,3 @@ Content-Length: 21
   "value": true
 }
 ```
-
-
-
-
-
-

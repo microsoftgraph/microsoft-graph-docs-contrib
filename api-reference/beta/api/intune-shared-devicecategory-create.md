@@ -96,15 +96,3 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

@@ -27,9 +27,3 @@ Apple network interface type.
 |firstEthernet|4|First Ethernet.|
 |secondEthernet|5|Second Ethernet.|
 |thirdEthernet|6|Third Ethernet.|
-
-
-
-
-
-

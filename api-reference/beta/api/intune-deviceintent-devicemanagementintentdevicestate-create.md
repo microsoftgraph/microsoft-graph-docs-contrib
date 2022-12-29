@@ -99,9 +99,3 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
-
-
-
-
-

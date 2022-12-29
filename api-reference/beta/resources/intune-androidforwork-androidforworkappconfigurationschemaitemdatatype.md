@@ -28,9 +28,3 @@ Data type for a configuration item inside an Android for Work application's cust
 |bundle|5|Not yet documented|
 |bundleArray|6|Not yet documented|
 |hidden|7|Not yet documented|
-
-
-
-
-
-

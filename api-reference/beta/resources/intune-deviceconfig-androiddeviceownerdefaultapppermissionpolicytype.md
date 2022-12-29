@@ -24,9 +24,3 @@ Android Device Owner default app permission policy type.
 |prompt|1|Prompt.|
 |autoGrant|2|Auto grant.|
 |autoDeny|3|Auto deny.|
-
-
-
-
-
-

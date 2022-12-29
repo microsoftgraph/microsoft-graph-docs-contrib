@@ -41,9 +41,3 @@ Here is a JSON representation of the resource.
   "maximumCacheSizePercentage": 1024
 }
 ```
-
-
-
-
-
-

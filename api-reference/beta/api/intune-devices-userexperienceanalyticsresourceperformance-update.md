@@ -120,9 +120,3 @@ Content-Length: 633
   "averageSpikeTimeScore": 5
 }
 ```
-
-
-
-
-
-

@@ -99,9 +99,3 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
-
-
-
-
-
-

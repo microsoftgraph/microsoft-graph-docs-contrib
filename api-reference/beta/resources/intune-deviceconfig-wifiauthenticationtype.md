@@ -25,9 +25,3 @@ Wi-Fi Authentication Type Settings.
 |machine|2|Machine Authentication|
 |machineOrUser|3|Machine or User Authentication|
 |guest|4|Guest Authentication|
-
-
-
-
-
-

@@ -23,9 +23,3 @@ Possible values of Secure Boot with DMA
 |notConfigured|0|Not configured, no operation|
 |withoutDMA|1|Turns on VBS with Secure Boot|
 |withDMA|3|Turns on VBS with Secure Boot and DMA|
-
-
-
-
-
-

@@ -135,8 +135,3 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
-
-
-
-
-

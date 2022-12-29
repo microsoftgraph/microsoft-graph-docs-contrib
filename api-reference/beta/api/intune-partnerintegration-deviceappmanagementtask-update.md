@@ -110,9 +110,3 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
-
-
-
-
-

@@ -22,9 +22,3 @@ An enum representing the Android SafetyNet attestation evaluation types.
 |:---|:---|:---|
 |basic|0|Default value. Typical measurements and reference data were used.|
 |hardwareBacked|1|Hardware-backed security features (such as Key Attestation) were used.|
-
-
-
-
-
-

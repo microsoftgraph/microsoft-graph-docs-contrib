@@ -30,9 +30,3 @@ Supported platform types.
 |androidWorkProfile|7|Android Work Profile.|
 |unknown|8|Unknown.|
 |androidAOSP|9|Android AOSP.|
-
-
-
-
-
-
