@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Content-Type   |application/json         |
 
 ## Request body
-[!INCLUDE `[table-intro](../../includes/update-property-table-intro.md)`]
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
