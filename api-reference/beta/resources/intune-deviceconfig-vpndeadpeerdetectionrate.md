@@ -24,9 +24,3 @@ Determines how often to check if a peer connection is still alive
 |none|1|None|
 |low|2|Low|
 |high|3|High|
-
-
-
-
-
-

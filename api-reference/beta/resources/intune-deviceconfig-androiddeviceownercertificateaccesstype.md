@@ -23,9 +23,3 @@ An enum representing possible values for cross profile data sharing.
 |userApproval|0|Require user approval for all apps|
 |specificApps|1|Pre-grant certificate access for specific apps (require user approval for other apps).|
 |unknownFutureValue|2|Unknown future value for evolvable enum patterns.|
-
-
-
-
-
-

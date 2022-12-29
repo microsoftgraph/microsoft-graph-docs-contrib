@@ -27,9 +27,3 @@ State of the action on the device
 |done|4|Action completed without errors.|
 |failed|5|Action failed|
 |notSupported|6|Action is not supported.|
-
-
-
-
-
-

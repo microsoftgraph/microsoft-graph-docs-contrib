@@ -42,8 +42,3 @@ Here is a JSON representation of the resource.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
-
-
-
-

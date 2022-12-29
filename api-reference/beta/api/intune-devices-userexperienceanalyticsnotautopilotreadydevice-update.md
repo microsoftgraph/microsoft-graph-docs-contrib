@@ -108,9 +108,3 @@ Content-Length: 470
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
-
-
-
-
-
-

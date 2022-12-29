@@ -29,9 +29,3 @@ Chassis type.
 |tablet|101|Mobile tablet.|
 |mobileOther|102|Other mobile.|
 |mobileUnknown|103|Unknown mobile.|
-
-
-
-
-
-

@@ -99,9 +99,3 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
-
-
-
-
-

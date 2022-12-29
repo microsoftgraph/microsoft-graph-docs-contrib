@@ -24,9 +24,3 @@ Possible values of the ConfigurationUsage list.
 |required|1|Required.|
 |allowed|2|Optional.|
 |notConfigured|3|Not Configured.|
-
-
-
-
-
-

@@ -24,9 +24,3 @@ Supported values for the derived credential issuer.
 |entrustDatacard|1|Entrust|
 |purebred|2|Purebred|
 |xTec|3|XTec|
-
-
-
-
-
-

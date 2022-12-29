@@ -22,9 +22,3 @@ Character set which is to be used for a user's app PIN
 |:---|:---|:---|
 |numeric|0|Numeric characters|
 |alphanumericAndSymbol|1|Alphanumeric and symbolic characters|
-
-
-
-
-
-

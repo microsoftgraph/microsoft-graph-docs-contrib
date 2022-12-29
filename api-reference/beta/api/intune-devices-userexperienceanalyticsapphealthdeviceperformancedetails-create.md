@@ -102,9 +102,3 @@ Content-Length: 454
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
-
-
-
-
-

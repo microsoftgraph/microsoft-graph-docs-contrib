@@ -23,9 +23,3 @@ An enum representing possible values for kiosk customization system navigation.
 |notConfigured|0|Not configured; this value defaults to STATUS_BAR_UNSPECIFIED.|
 |notificationsAndSystemInfoEnabled|1|System info and notifications are shown on the status bar in kiosk mode.|
 |systemInfoOnly|2|Only system info is shown on the status bar in kiosk mode.|
-
-
-
-
-
-

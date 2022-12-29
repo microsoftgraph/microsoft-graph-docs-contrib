@@ -75,9 +75,3 @@ Content-Length: 57
   "value": "Get Oma Setting Plain Text Value value"
 }
 ```
-
-
-
-
-
-

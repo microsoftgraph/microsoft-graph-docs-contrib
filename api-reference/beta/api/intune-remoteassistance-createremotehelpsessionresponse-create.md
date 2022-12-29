@@ -85,9 +85,3 @@ Content-Length: 148
   "sessionType": "takeFullControl"
 }
 ```
-
-
-
-
-
-

@@ -25,9 +25,3 @@ App configuration key types.
 |realType|2|Not yet documented|
 |booleanType|3|Not yet documented|
 |tokenType|4|Not yet documented|
-
-
-
-
-
-

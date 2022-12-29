@@ -75,7 +75,3 @@ Here is a JSON representation of the resource.
   "radiusInMeters": 4.2
 }
 ```
-
-
-
-

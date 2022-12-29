@@ -24,9 +24,3 @@ Device enrollment join type.
 |azureADJoined|1|The device is joined by Azure AD.|
 |azureADRegistered|2|The device is registered by Azure AD.|
 |hybridAzureADJoined|3|The device is joined by hybrid Azure AD.|
-
-
-
-
-
-

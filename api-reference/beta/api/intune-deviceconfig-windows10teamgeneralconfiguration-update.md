@@ -211,9 +211,3 @@ Content-Length: 2187
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
-
-
-
-
-
-

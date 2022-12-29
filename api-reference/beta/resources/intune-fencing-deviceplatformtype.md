@@ -29,7 +29,3 @@ Supported platform types.
 |windows10AndLater|6|Windows 10 and later.|
 |androidWorkProfile|7|Android Work Profile.|
 |unknown|8|Unknown.|
-
-
-
-

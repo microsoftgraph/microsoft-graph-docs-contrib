@@ -96,9 +96,3 @@ Content-Length: 361
   "serverImageDigest": "Server Image Digest value"
 }
 ```
-
-
-
-
-
-

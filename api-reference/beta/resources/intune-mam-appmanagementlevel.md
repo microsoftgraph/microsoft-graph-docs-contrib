@@ -28,9 +28,3 @@ Management levels for apps
 |androidOpenSourceProjectUserAssociated|16|Android Open Source Project (AOSP) devices|
 |androidOpenSourceProjectUserless|32|Android Open Source Project (AOSP) userless devices|
 |unknownFutureValue|64|Place holder for evolvable enum|
-
-
-
-
-
-

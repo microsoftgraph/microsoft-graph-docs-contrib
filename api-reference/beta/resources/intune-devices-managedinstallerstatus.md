@@ -22,9 +22,3 @@ ManagedInstallerStatus
 |:---|:---|:---|
 |disabled|0|Managed Installer is Disabled|
 |enabled|1|Managed Installer is Enabled|
-
-
-
-
-
-

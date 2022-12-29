@@ -24,9 +24,3 @@ Type of Group Policy operation status.
 |inProgress|1|Group Policy in progress operation status.|
 |success|2|Group Policy successful operation status.|
 |failed|3|Group Policy failed operation status.|
-
-
-
-
-
-

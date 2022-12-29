@@ -71,9 +71,3 @@ Here is a JSON representation of the resource.
   "priority": 1024
 }
 ```
-
-
-
-
-
-

@@ -24,9 +24,3 @@ The type of Windows kiosk app.
 |store|1|Store App.|
 |desktop|2|Desktop App.|
 |aumId|3|Input by AUMID.|
-
-
-
-
-
-

@@ -874,9 +874,3 @@ Content-Length: 11117
   "kioskModeAppType": "appStoreApp"
 }
 ```
-
-
-
-
-
-

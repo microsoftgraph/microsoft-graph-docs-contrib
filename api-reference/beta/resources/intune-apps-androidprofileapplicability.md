@@ -23,9 +23,3 @@ Android profile applicability
 |default|0|Not yet documented|
 |androidWorkProfile|1|Not yet documented|
 |androidDeviceOwner|2|Not yet documented|
-
-
-
-
-
-

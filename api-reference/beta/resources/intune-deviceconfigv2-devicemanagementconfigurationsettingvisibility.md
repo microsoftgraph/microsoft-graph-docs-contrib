@@ -23,9 +23,3 @@ Supported setting types
 |none|0|Not visible|
 |settingsCatalog|1|Visible to setting catalog UX|
 |template|2|Visible to template|
-
-
-
-
-
-

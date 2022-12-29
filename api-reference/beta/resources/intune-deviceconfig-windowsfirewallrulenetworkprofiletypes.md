@@ -24,9 +24,3 @@ Flags representing which network profile types apply to a firewall rule.
 |domain|1|The profile for networks that are connected to domains.|
 |private|2|The profile for private networks.|
 |public|4|The profile for public networks.|
-
-
-
-
-
-

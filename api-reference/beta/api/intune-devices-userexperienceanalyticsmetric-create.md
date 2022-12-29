@@ -87,9 +87,3 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
-
-
-
-
-
-

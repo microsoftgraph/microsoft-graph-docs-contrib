@@ -23,9 +23,3 @@ Device app management task priority.
 |none|0|No priority set.|
 |high|1|High priority.|
 |low|2|Low priority.|
-
-
-
-
-
-

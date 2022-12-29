@@ -114,7 +114,3 @@ Content-Length: 539
   "radiusInMeters": 4.666666666666667
 }
 ```
-
-
-
-

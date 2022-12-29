@@ -43,8 +43,3 @@ Here is a JSON representation of the resource.
   "minimumValue": 1024
 }
 ```
-
-
-
-
-

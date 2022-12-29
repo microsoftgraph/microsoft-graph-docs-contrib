@@ -23,9 +23,3 @@ Portal to which admin syncs available Microsoft Store for Business apps. This is
 |none|0|This option is not available for the account|
 |companyPortal|1|Intune Company Portal only.|
 |privateStore|2|MSFB Private store only.|
-
-
-
-
-
-

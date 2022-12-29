@@ -97,9 +97,3 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
-
-
-
-
-

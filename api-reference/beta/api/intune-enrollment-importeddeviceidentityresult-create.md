@@ -106,9 +106,3 @@ Content-Length: 529
   "status": true
 }
 ```
-
-
-
-
-
-

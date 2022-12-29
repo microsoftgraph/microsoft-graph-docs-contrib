@@ -82,7 +82,3 @@ Content-Length: 475
   }
 }
 ```
-
-
-
-

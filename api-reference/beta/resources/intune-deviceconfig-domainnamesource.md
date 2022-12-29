@@ -22,9 +22,3 @@ Domainname source.
 |:---|:---|:---|
 |fullDomainName|0|Full domain name.|
 |netBiosDomainName|1|net bios domain name.|
-
-
-
-
-
-

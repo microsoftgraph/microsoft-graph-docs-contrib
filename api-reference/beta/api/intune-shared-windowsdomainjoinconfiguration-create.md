@@ -127,15 +127,3 @@ Content-Length: 667
   "organizationalUnit": "Organizational Unit value"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

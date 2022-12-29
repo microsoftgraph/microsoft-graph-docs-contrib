@@ -24,9 +24,3 @@ Models and Manufactures meatadata for managed devices in the account
 |manufacturer|1|Manufacturer warranty|
 |contractual|2|Contractual warranty|
 |unknownFutureValue|255|Unknown future value|
-
-
-
-
-
-

@@ -24,9 +24,3 @@ Represents the level to which app data is encrypted for managed apps
 |afterDeviceRestart|1|App data is encrypted when the device is restarted.|
 |whenDeviceLockedExceptOpenFiles|2|App data associated with this policy is encrypted when the device is locked, except data in files that are open|
 |whenDeviceLocked|3|App data associated with this policy is encrypted when the device is locked|
-
-
-
-
-
-

@@ -24,9 +24,3 @@ Windows VPN connection type.
 |f5EdgeClient|1|F5 Edge Client.|
 |dellSonicWallMobileConnect|2|Dell SonicWALL Mobile Connection.|
 |checkPointCapsuleVpn|3|Check Point Capsule VPN.|
-
-
-
-
-
-

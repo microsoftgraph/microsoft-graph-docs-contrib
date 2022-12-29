@@ -25,9 +25,3 @@ Processor architecture
 |x64|2|X64|
 |arm|3|ARM|
 |arM64|4|ARM64|
-
-
-
-
-
-

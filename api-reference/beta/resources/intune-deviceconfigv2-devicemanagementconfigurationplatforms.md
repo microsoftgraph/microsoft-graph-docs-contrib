@@ -28,9 +28,3 @@ Supported platform types.
 |windows10|32|Windows 10.|
 |linux|128|Linux.|
 |unknownFutureValue|1073741824|Sentinel member for cases where the client cannot handle the new enum values.|
-
-
-
-
-
-

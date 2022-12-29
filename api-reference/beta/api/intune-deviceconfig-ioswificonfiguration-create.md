@@ -183,9 +183,3 @@ Content-Length: 1663
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
-
-
-
-
-

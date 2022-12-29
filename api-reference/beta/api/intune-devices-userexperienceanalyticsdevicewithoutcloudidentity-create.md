@@ -87,9 +87,3 @@ Content-Length: 228
   "azureAdDeviceId": "Azure Ad Device Id value"
 }
 ```
-
-
-
-
-
-

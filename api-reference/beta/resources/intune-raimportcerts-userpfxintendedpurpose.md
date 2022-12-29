@@ -25,9 +25,3 @@ Supported values for the intended purpose of a user PFX certificate.
 |smimeSigning|2|Valid for S/MIME signing.|
 |vpn|4|Valid for use in VPN.|
 |wifi|8|Valid for use in WiFi.|
-
-
-
-
-
-

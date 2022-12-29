@@ -26,9 +26,3 @@ Indicates the severity of the anomaly. Eg: anomaly severity can be high, medium,
 |informational|3|Indicates the anomaly is of informational severity.|
 |other|4|Indicates the severity of anomaly is undefined.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-
-
-

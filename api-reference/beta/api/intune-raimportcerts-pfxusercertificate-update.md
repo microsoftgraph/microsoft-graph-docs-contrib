@@ -130,9 +130,3 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
-
-
-
-
-
-

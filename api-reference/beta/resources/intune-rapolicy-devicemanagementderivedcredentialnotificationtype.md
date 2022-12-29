@@ -23,9 +23,3 @@ Supported values for the notification type to use.
 |none|0|None|
 |companyPortal|1|Company Portal|
 |email|2|Email|
-
-
-
-
-
-

@@ -24,9 +24,3 @@ Possible values for ApplicationGuardEnabledOptions
 |enabledForEdge|1|Enabled For Edge|
 |enabledForOffice|2|Enabled For Office|
 |enabledForEdgeAndOffice|3|Enabled For Edge And Office|
-
-
-
-
-
-

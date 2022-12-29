@@ -138,9 +138,3 @@ Content-Length: 763
   "status": "eligible"
 }
 ```
-
-
-
-
-
-

@@ -66,9 +66,3 @@ Content-Length: 18
   "value": 2
 }
 ```
-
-
-
-
-
-

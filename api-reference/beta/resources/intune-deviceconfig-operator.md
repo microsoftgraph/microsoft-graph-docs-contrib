@@ -45,9 +45,3 @@ Operator for rules.
 |orderedSetEquals|22|OrderedSetEquals operator.|
 |subsetOf|23|SubsetOf operator.|
 |excludesAll|24|ExcludesAll operator.|
-
-
-
-
-
-

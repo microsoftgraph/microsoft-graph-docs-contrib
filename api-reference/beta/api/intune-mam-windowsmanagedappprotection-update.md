@@ -167,9 +167,3 @@ Content-Length: 1625
   "periodOfflineBeforeAccessCheck": "-PT17.1357909S"
 }
 ```
-
-
-
-
-
-

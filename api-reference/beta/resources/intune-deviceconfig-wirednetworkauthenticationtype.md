@@ -26,9 +26,3 @@ Wired Network Authentication Type Settings.
 |machineOrUser|3|Machine or User Authentication|
 |guest|4|Guest Authentication|
 |unknownFutureValue|5|Sentinel member for cases where the client cannot handle the new enum values.|
-
-
-
-
-
-

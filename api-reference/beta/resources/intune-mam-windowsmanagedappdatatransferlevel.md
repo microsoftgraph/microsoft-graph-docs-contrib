@@ -22,9 +22,3 @@ Data can be transferred from/to these classes of apps
 |:---|:---|:---|
 |allApps|0|All apps.|
 |none|1|No apps.|
-
-
-
-
-
-

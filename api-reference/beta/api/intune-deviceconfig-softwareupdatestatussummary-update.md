@@ -126,9 +126,3 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
-
-
-
-
-
-

@@ -24,9 +24,3 @@ Possible values of Credential Guard settings.
 |enableWithUEFILock|1|Turns on Credential Guard with UEFI lock.|
 |enableWithoutUEFILock|2|Turns on Credential Guard without UEFI lock.|
 |disable|3|Disables Credential Guard. This is the default OS value.|
-
-
-
-
-
-

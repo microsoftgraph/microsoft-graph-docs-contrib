@@ -23,9 +23,3 @@ Not yet documented
 |none|0|Token Type is None|
 |dep|1|Token Type is Dep.|
 |appleSchoolManager|2|Token Type is Apple School Manager|
-
-
-
-
-
-

@@ -105,9 +105,3 @@ Content-Length: 387
   "totalImpactInMs2": 0
 }
 ```
-
-
-
-
-
-

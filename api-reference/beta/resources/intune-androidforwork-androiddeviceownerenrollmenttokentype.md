@@ -22,9 +22,3 @@ The enrollment token type for an enrollment profile.
 |:---|:---|:---|
 |default|0|Default token type.|
 |corporateOwnedDedicatedDeviceWithAzureADSharedMode|1|Token type for Azure AD shared dedicated device enrollment. It applies to CorporateOwnedDedicatedDevice enrollment mode only.|
-
-
-
-
-
-

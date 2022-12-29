@@ -73,9 +73,3 @@ Here is a JSON representation of the resource.
   "limit": 1024
 }
 ```
-
-
-
-
-
-

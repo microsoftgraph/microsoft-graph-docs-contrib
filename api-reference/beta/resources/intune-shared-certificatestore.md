@@ -22,9 +22,3 @@ CertificateStore types
 |:---|:---|:---|
 |user|1|Not yet documented|
 |machine|2|Not yet documented|
-
-
-
-
-
-

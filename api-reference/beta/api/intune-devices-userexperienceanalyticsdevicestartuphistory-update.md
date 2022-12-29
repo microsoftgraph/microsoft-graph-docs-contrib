@@ -129,9 +129,3 @@ Content-Length: 729
   "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
-
-
-
-
-
-

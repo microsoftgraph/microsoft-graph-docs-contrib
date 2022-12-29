@@ -75,9 +75,3 @@ Here is a JSON representation of the resource.
   "notApplicableUserCount": 1024
 }
 ```
-
-
-
-
-
-

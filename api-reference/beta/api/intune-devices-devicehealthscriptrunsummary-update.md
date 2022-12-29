@@ -114,9 +114,3 @@ Content-Length: 592
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
-
-
-
-
-

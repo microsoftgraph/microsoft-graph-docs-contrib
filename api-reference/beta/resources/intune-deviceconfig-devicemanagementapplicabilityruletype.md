@@ -22,9 +22,3 @@ Supported Applicability rule types for Device Configuration
 |:---|:---|:---|
 |include|0|Include|
 |exclude|1|Exclude|
-
-
-
-
-
-

@@ -104,9 +104,3 @@ Content-Length: 594
   "certificate": "Certificate value"
 }
 ```
-
-
-
-
-
-

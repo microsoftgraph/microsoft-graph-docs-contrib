@@ -114,9 +114,3 @@ Here is a JSON representation of the resource.
   "periodOfflineBeforeAccessCheck": "String (duration)"
 }
 ```
-
-
-
-
-
-

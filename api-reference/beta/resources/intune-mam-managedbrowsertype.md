@@ -22,9 +22,3 @@ Type of managed browser
 |:---|:---|:---|
 |notConfigured|0|Not configured|
 |microsoftEdge|1|Microsoft Edge|
-
-
-
-
-
-

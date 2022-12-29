@@ -23,9 +23,3 @@ Wi-Fi Security Types for Android.
 |open|0|Open (No Authentication).|
 |wpaEnterprise|1|WPA-Enterprise. Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.|
 |wpa2Enterprise|2|WPA2-Enterprise. Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.|
-
-
-
-
-
-

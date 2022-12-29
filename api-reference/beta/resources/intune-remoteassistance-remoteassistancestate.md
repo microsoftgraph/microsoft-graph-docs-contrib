@@ -22,9 +22,3 @@ State of remote assistance for the account
 |:---|:---|:---|
 |disabled|1|Remote assistance is disabled for the account. With this value, Quick Assist remote assistance sessions are not allowed for the account.|
 |enabled|2|Remote assistance is enabled for the account. With this value, enterprise Quick Assist remote assistance features are provided.|
-
-
-
-
-
-

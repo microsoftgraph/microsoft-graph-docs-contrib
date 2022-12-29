@@ -48,9 +48,3 @@ Here is a JSON representation of the resource.
   "lastUploadVersion": 1024
 }
 ```
-
-
-
-
-
-

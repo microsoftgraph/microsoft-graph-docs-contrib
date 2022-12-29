@@ -220,9 +220,3 @@ Content-Length: 1836
   "minimumCount": 12
 }
 ```
-
-
-
-
-
-

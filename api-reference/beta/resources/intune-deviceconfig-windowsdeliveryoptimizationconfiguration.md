@@ -147,9 +147,3 @@ Here is a JSON representation of the resource.
   "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 1024
 }
 ```
-
-
-
-
-
-

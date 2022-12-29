@@ -24,9 +24,3 @@ The endpoint security configuration applicable platform.
 |macOS|1|MacOS.|
 |windows10AndLater|2|Windows 10 and later.|
 |windows10AndWindowsServer|3|Windows 10 and Windows Server.|
-
-
-
-
-
-

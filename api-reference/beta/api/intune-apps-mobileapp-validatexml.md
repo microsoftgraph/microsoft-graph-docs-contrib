@@ -81,9 +81,3 @@ Content-Length: 37
   "value": "Validate Xml value"
 }
 ```
-
-
-
-
-
-

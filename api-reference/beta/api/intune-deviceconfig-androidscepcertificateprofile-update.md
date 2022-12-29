@@ -203,9 +203,3 @@ Content-Length: 1919
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
-
-
-
-
-

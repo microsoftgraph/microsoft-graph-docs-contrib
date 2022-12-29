@@ -35,8 +35,3 @@ Not yet documented
 |holographicForBusiness|12|Not yet documented|
 |windowsMultiSession|13|Not yet documented|
 |surfaceHub|14|Not yet documented|
-
-
-
-
-

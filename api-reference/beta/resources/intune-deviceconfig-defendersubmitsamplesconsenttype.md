@@ -24,9 +24,3 @@ Possible values for DefenderSubmitSamplesConsentType
 |alwaysPrompt|1|Always prompt|
 |neverSend|2|Never send|
 |sendAllSamplesAutomatically|3|Send all samples automatically|
-
-
-
-
-
-

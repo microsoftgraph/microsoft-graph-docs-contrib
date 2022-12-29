@@ -24,9 +24,3 @@ Determine the access level to specific Windows privacy data category.
 |forceAllow|1|Apps will be allowed to access the specified privacy data.|
 |forceDeny|2|Apps will be denied to access specified privacy data.|
 |userInControl|3|Users will be prompted when apps try to access specified privacy data.|
-
-
-
-
-
-

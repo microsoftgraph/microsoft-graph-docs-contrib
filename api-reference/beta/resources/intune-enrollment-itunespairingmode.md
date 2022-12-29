@@ -23,9 +23,3 @@ Not yet documented
 |disallow|0|Pairing is not allowed|
 |allow|1|Pairing allowed|
 |requiresCertificate|2|Certificate required to pair with iTunes|
-
-
-
-
-
-

@@ -31,9 +31,3 @@ Android keyguard feature.
 |face|8|Face authentication on secure keyguard screens.|
 |iris|9|Iris authentication on secure keyguard screens.|
 |biometrics|10|All biometric authentication on secure keyguard screens.|
-
-
-
-
-
-

@@ -103,9 +103,3 @@ Content-Length: 115
   "value": "Z2V0R3JvdXBQb2xpY3lTZXR0aW5nc0RldmljZVNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDYzMDIzNDI3MQ=="
 }
 ```
-
-
-
-
-
-

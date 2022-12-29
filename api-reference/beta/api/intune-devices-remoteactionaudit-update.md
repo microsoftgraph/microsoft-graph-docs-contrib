@@ -108,9 +108,3 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
-
-
-
-
-

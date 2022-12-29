@@ -114,9 +114,3 @@ Content-Length: 496
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
-

@@ -91,9 +91,3 @@ Content-Length: 264
   "pubSubEncryption": "Pub Sub Encryption value"
 }
 ```
-
-
-
-
-
-

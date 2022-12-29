@@ -27,9 +27,3 @@ Not yet documented
 |notAssigned|4|Not assigned|
 |pending|5|Pending assignment|
 |failed|6| Assignment failed|
-
-
-
-
-
-

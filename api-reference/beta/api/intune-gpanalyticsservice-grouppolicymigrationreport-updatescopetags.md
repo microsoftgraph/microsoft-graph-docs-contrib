@@ -83,9 +83,3 @@ Content-Length: 42
   "value": "Update Scope Tags value"
 }
 ```
-
-
-
-
-
-

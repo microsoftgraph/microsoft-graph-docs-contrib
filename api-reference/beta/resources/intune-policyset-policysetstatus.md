@@ -26,9 +26,3 @@ The enum to specify the status of PolicySet.
 |success|3|All PolicySet items are deployed. Doesn’t mean that all deployment succeeded. |
 |error|4|PolicySet processing completely failed.|
 |notAssigned|5|PolicySet/PolicySetItem is not assigned to any group.|
-
-
-
-
-
-

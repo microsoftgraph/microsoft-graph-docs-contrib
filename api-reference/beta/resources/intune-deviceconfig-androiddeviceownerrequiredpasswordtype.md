@@ -29,9 +29,3 @@ Android Device Owner policy required password type.
 |alphanumericWithSymbols|6|At least alphanumeric with symbols.|
 |lowSecurityBiometric|7|Low security biometrics based password required.|
 |customPassword|8|Custom password set by the admin.|
-
-
-
-
-
-

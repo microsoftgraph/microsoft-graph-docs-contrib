@@ -48,9 +48,3 @@ Setting type of the group policy.
 |scheduledTasks|25|ScheduledTasks setting type|
 |shortcutSettings|26|ShortcutSettings setting type|
 |startMenuSettings|27|StartMenuSettings setting type|
-
-
-
-
-
-

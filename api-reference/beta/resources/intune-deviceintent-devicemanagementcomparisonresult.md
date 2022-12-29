@@ -25,9 +25,3 @@ Setting comparison result type
 |notEqual|2|The setting values are not equal|
 |added|3|The setting is added|
 |removed|4|The setting is removed|
-
-
-
-
-
-

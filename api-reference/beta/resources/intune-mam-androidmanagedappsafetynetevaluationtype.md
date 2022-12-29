@@ -22,9 +22,3 @@ An admin enforced Android SafetyNet evaluation type requirement on a managed app
 |:---|:---|:---|
 |basic|0|Require basic evaluation|
 |hardwareBacked|1|Require hardware backed evaluation|
-
-
-
-
-
-

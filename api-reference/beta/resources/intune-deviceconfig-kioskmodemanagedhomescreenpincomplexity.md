@@ -23,9 +23,3 @@ Complexity of PIN for Managed Home Screen sign-in session.
 |notConfigured|0|Not configured.|
 |simple|1|Numeric values only.|
 |complex|2|Alphanumerical value.|
-
-
-
-
-
-

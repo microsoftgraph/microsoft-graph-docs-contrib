@@ -99,9 +99,3 @@ Content-Length: 349
   "impactValue": 3.6666666666666665
 }
 ```
-
-
-
-
-
-

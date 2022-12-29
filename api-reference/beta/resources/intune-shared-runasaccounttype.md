@@ -22,9 +22,3 @@ Indicates the type of execution context the app runs in.
 |:---|:---|:---|
 |system|0|System context|
 |user|1|User context|
-
-
-
-
-
-

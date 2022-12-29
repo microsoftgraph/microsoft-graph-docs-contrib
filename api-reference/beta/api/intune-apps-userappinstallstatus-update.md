@@ -96,9 +96,3 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
-
-
-
-
-

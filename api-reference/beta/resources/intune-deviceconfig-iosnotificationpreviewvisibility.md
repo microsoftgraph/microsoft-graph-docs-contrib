@@ -24,9 +24,3 @@ Determines when notification previews are visible on an iOS device. Previews can
 |alwaysShow|1|Always show notification previews.|
 |hideWhenLocked|2|Only show notification previews when the device is unlocked.|
 |neverShow|3|Never show notification previews.|
-
-
-
-
-
-

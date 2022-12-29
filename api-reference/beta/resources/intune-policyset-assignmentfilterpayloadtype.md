@@ -22,9 +22,3 @@ Represents the payload type AssignmentFilter is being assigned to.
 |:---|:---|:---|
 |notSet|0|NotSet|
 |enrollmentRestrictions|1|EnrollmentRestrictions|
-
-
-
-
-
-

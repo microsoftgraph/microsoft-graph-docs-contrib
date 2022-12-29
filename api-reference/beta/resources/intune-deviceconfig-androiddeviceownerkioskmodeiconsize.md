@@ -26,9 +26,3 @@ Android Device Owner Kiosk Mode managed home screen icon size.
 |regular|3|Regular icon size.|
 |large|4|Large icon size.|
 |largest|5|Largest icon size.|
-
-
-
-
-
-

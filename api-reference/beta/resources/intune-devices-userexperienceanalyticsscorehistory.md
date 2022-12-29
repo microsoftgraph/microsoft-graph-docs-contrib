@@ -78,9 +78,3 @@ Here is a JSON representation of the resource.
   "restartScore": 1024
 }
 ```
-
-
-
-
-
-

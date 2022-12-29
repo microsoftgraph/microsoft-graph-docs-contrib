@@ -99,9 +99,3 @@ Content-Length: 399
   "description": "Description value"
 }
 ```
-
-
-
-
-
-

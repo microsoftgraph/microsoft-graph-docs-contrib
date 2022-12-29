@@ -114,9 +114,3 @@ Content-Length: 675
   "osCheckFailedPercentage": 7.666666666666667
 }
 ```
-
-
-
-
-
-

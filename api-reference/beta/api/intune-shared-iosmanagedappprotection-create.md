@@ -262,13 +262,3 @@ Content-Length: 2795
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
-
-
-
-
-
-
-
-
-
-

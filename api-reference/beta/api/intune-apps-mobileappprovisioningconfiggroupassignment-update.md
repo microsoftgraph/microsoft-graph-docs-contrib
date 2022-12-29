@@ -84,9 +84,3 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
-
-
-
-
-

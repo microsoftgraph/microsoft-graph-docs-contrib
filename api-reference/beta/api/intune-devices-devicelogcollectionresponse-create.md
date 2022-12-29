@@ -108,9 +108,3 @@ Content-Length: 575
   "enrolledByUser": "Enrolled By User value"
 }
 ```
-
-
-
-
-
-

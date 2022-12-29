@@ -108,9 +108,3 @@ Content-Length: 476
   "healthStatus": "insufficientData"
 }
 ```
-
-
-
-
-
-

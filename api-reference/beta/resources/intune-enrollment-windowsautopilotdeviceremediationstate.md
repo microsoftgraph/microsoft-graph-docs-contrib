@@ -25,9 +25,3 @@ Device remediation status, indicating whether or not hardware has been changed f
 |automaticRemediationRequired|2|Hardware change detected on client. Additional remediation is required.|
 |manualRemediationRequired|3|Hardware change detected on client that could not resolved automatically. Additional remediation is required.|
 |unknownFutureValue|4|Marks the end of known enum values, and allows for additional values in the future.|
-
-
-
-
-
-

@@ -23,9 +23,3 @@ Possible values of Android Kiosk Mode.
 |notConfigured|0|Not configured|
 |singleAppMode|1|Run in single-app mode|
 |multiAppMode|2|Run in multi-app mode|
-
-
-
-
-
-

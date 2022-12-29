@@ -17,4 +17,3 @@ Namespace: microsoft.graph
 Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.   
 
 Graph resources are available to manage role-based access control in Intune. See the table of content for a list of resources.
-

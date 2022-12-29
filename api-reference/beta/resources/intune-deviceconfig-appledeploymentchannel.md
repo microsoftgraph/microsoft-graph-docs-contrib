@@ -22,9 +22,3 @@ Indicates the channel used to deploy the configuration profile. Available choice
 |:---|:---|:---|
 |deviceChannel|0|Send payload down over Device Channel.|
 |userChannel|1|Send payload down over User Channel.|
-
-
-
-
-
-

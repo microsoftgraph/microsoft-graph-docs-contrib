@@ -23,9 +23,3 @@ Android Device Owner Enrollment Profile types.
 |notConfigured|0|Not configured; this value is ignored.|
 |dedicatedDevice|1|Dedicated device.|
 |fullyManaged|2|Fully managed.|
-
-
-
-
-
-

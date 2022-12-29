@@ -70,9 +70,3 @@ Here is a JSON representation of the resource.
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
-
-
-
-
-

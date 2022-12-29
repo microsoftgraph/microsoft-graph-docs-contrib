@@ -108,9 +108,3 @@ Content-Length: 560
   "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00"
 }
 ```
-
-
-
-
-
-

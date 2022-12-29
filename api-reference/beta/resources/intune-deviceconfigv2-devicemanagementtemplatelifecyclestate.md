@@ -26,9 +26,3 @@ Describes current lifecycle state of a template
 |superseded|30|Superseded|
 |deprecated|40|Deprecated|
 |retired|50|Retired|
-
-
-
-
-
-

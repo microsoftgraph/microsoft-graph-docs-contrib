@@ -22,9 +22,3 @@ Contains value for delivery optimization priority.
 |:---|:---|:---|
 |notConfigured|0|Not configured or background normal delivery optimization priority.|
 |foreground|1|Foreground delivery optimization priority.|
-
-
-
-
-
-

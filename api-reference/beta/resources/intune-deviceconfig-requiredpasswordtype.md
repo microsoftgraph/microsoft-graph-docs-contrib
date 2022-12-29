@@ -23,9 +23,3 @@ Possible values of required passwords.
 |deviceDefault|0|Device default value, no intent.|
 |alphanumeric|1|Alphanumeric password required.|
 |numeric|2|Numeric password required.|
-
-
-
-
-
-

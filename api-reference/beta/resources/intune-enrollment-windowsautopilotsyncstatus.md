@@ -24,9 +24,3 @@ Not yet documented
 |inProgress|1|Sync is in progress|
 |completed|2|Sync completed.|
 |failed|3|Sync failed.|
-
-
-
-
-
-

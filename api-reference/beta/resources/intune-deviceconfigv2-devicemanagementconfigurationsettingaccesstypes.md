@@ -27,9 +27,3 @@ Not yet documented
 |get|8|Not yet documented|
 |replace|16|Not yet documented|
 |execute|32|Not yet documented|
-
-
-
-
-
-

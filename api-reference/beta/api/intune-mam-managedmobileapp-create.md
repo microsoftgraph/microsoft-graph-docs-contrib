@@ -97,9 +97,3 @@ Content-Length: 276
   "version": "Version value"
 }
 ```
-
-
-
-
-
-

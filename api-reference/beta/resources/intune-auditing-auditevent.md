@@ -110,9 +110,3 @@ Here is a JSON representation of the resource.
   "category": "String"
 }
 ```
-
-
-
-
-
-

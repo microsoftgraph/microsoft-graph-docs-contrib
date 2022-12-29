@@ -42,9 +42,3 @@ Not yet documented
 |updateError|-2016330697|Not yet documented|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Not yet documented|
 |updateScanFailed|-2016324062|Not yet documented|
-
-
-
-
-
-

@@ -22,9 +22,3 @@ Not yet documented
 |:---|:---|:---|
 |none|0|Not yet documented|
 |omitSilverlightPolicyReferences|1|Not yet documented|
-
-
-
-
-
-

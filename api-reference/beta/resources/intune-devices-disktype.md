@@ -24,9 +24,3 @@ Not yet documented
 |hdd|1|Enum member for HDD devices|
 |ssd|2|Enum member for SSD devices|
 |unknownFutureValue|3|Evolvable enum member|
-
-
-
-
-
-

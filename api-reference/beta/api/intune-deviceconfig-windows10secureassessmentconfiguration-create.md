@@ -174,9 +174,3 @@ Content-Length: 1575
   "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
-
-
-
-
-
-

@@ -22,9 +22,3 @@ Device management features.
 |:---|:---|:---|
 |none|0|Unknown device management features.|
 |microsoftManagedDesktop|1|Microsoft Managed Desktop|
-
-
-
-
-
-

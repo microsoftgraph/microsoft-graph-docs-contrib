@@ -70,9 +70,3 @@ Here is a JSON representation of the resource.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

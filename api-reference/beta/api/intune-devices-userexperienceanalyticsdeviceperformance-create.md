@@ -141,9 +141,3 @@ Content-Length: 788
   "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
-
-
-
-
-
-

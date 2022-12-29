@@ -28,9 +28,3 @@ Represents the state of Zebra FOTA deployment.
 |pendingCancel|5|Admin has requested to cancel a deployment but Zebra has not confirmed cancellation.|
 |canceled|6|Deployment has been successfully canceled by Zebra.|
 |unknownFutureValue|99|Unknown future enum value.|
-
-
-
-
-
-

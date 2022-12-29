@@ -23,9 +23,3 @@ Not yet documented
 |unknown|0|Unknown enrollment type|
 |device|1|Device enrollment type|
 |user|2|User enrollment type|
-
-
-
-
-
-

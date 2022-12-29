@@ -43,9 +43,3 @@ Here is a JSON representation of the resource.
   "value": "4.2"
 }
 ```
-
-
-
-
-
-

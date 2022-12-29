@@ -22,9 +22,3 @@ Encryption state
 |:---|:---|:---|
 |notEncrypted|0|Not encrypted|
 |encrypted|1|Encrypted|
-
-
-
-
-
-

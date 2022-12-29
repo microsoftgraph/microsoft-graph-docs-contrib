@@ -23,9 +23,3 @@ Indicates the supported oems of hardware configuration
 |dell|1|Dell|
 |surface|2|Surface|
 |surfaceDock|3|Surface dock|
-
-
-
-
-
-

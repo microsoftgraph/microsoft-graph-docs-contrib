@@ -187,9 +187,3 @@ Content-Length: 1714
   "updateTimeWindowUtcOffsetInMinutes": 2
 }
 ```
-
-
-
-
-
-

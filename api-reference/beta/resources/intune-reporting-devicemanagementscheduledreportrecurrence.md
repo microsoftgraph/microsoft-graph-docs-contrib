@@ -24,7 +24,3 @@ Possible values for the recurrence of a scheduled report
 |daily|1|Daily|
 |weekly|2|Weekly|
 |monthly|3|Monthly|
-
-
-
-

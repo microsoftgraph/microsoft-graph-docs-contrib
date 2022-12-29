@@ -24,9 +24,3 @@ Locations which can be used to bring data into organization documents
 |sharePoint|2|SharePoint Online|
 |camera|3|The device's camera|
 |photoLibrary|4|The device's photo library|
-
-
-
-
-
-

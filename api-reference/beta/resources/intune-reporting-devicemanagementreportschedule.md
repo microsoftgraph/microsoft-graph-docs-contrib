@@ -78,7 +78,3 @@ Here is a JSON representation of the resource.
   "format": "String"
 }
 ```
-
-
-
-

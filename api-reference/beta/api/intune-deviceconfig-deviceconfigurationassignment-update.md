@@ -112,9 +112,3 @@ Content-Length: 521
   "intent": "remove"
 }
 ```
-
-
-
-
-
-

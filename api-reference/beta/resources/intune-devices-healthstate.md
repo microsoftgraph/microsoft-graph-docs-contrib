@@ -23,9 +23,3 @@ Indicates health state of the Windows management app.
 |unknown|0|Unknown state.|
 |healthy|1|Healthy state.|
 |unhealthy|2|Unhealthy state.|
-
-
-
-
-
-

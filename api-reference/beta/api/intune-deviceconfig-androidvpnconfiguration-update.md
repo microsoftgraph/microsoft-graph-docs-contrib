@@ -216,9 +216,3 @@ Content-Length: 1923
   "authenticationMethod": "usernameAndPassword"
 }
 ```
-
-
-
-
-
-

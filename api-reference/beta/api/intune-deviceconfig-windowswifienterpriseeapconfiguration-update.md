@@ -266,9 +266,3 @@ Content-Length: 2867
   "authenticationType": "user"
 }
 ```
-
-
-
-
-
-

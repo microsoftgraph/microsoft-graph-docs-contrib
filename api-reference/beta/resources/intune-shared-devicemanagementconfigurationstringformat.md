@@ -35,8 +35,3 @@ Not yet documented
 |json|12|Not yet documented|
 |dateTime|13|Not yet documented|
 |surfaceHub|14|Not yet documented|
-
-
-
-
-

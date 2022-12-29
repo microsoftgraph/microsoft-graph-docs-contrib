@@ -26,9 +26,3 @@ Subject Name Format Options for Apple devices.
 |commonNameIncludingEmail|3|Common Name Including Email.|
 |commonNameAsIMEI|5|Common Name As IMEI.|
 |commonNameAsSerialNumber|6|Common Name As Serial Number.|
-
-
-
-
-
-

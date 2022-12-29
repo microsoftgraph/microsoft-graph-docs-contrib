@@ -22,9 +22,3 @@ Possible types of Application
 |:---|:---|:---|
 |universal|1|The windows universal application|
 |desktop|2|The windows desktop application|
-
-
-
-
-
-

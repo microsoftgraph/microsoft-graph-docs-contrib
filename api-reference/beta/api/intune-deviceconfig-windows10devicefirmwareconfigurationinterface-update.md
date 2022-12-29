@@ -214,9 +214,3 @@ Content-Length: 1926
   "wakeOnPower": "enabled"
 }
 ```
-
-
-
-
-
-

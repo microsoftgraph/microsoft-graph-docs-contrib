@@ -63,9 +63,3 @@ Here is a JSON representation of the resource.
   "notAssignedDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

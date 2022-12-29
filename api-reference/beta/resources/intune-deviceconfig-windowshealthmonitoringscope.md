@@ -24,9 +24,3 @@ Device health monitoring scope
 |healthMonitoring|1|Basic events for windows device health monitoring|
 |bootPerformance|2|Boot performance events|
 |windowsUpdates|4|Windows updates events|
-
-
-
-
-
-

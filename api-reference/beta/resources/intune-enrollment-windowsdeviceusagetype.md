@@ -22,9 +22,3 @@ Not yet documented
 |:---|:---|:---|
 |singleUser|0|Single User Device Type|
 |shared|1|Shared Device Type|
-
-
-
-
-
-

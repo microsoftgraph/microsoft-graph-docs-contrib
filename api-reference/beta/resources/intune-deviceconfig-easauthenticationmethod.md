@@ -23,9 +23,3 @@ Exchange Active Sync authentication method.
 |usernameAndPassword|0|Authenticate with a username and password.|
 |certificate|1|Authenticate with a certificate.|
 |derivedCredential|2|Authenticate with derived credential.|
-
-
-
-
-
-

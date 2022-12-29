@@ -169,9 +169,3 @@ Content-Length: 1436
   "usernameSource": "userPrincipalName"
 }
 ```
-
-
-
-
-
-

@@ -22,9 +22,3 @@ Not yet documented
 |:---|:---|:---|
 |deviceConfiguration|0|Not yet documented|
 |deviceIntent|1|Not yet documented|
-
-
-
-
-
-

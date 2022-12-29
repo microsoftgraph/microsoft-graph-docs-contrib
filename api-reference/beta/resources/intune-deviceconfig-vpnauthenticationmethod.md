@@ -25,9 +25,3 @@ VPN Authentication Method.
 |sharedSecret|2|Use Shared Secret for Authentication.  Only valid for iOS IKEv2.|
 |derivedCredential|3|Use Derived Credential for Authentication.|
 |azureAD|4|Use Azure AD for authentication.|
-
-
-
-
-
-

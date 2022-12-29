@@ -26,9 +26,3 @@ Diffie Hellman Group values for Windows10 VPN policies with IKEv2 connection typ
 |ecp256|3|ECP256|
 |ecp384|4|ECP384|
 |group24|5|Group24|
-
-
-
-
-
-

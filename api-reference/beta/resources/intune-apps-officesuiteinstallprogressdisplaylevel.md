@@ -22,9 +22,3 @@ The Enum to specify the level of display for the Installation Progress Setup UI 
 |:---|:---|:---|
 |none|0|Not yet documented|
 |full|1|Not yet documented|
-
-
-
-
-
-

@@ -33,9 +33,3 @@ Describes the TemplateFamily for the Template entity
 |singlePlatformRestriction|10|Indicates that configuration is of type single platform restriction which refers to types of devices a user is allowed to enroll.|
 |unknownFutureValue|11|Unknown future value|
 |enrollmentNotificationsConfiguration|12|Indicates that configuration is of type Enrollment Notification which refers to types of notification a user receives during enrollment.|
-
-
-
-
-
-

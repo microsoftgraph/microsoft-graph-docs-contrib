@@ -26,9 +26,3 @@ Contains all supported registry data detection type.
 |string|3|String value type.|
 |integer|4|Integer value type.|
 |version|5|Version value type.|
-
-
-
-
-
-

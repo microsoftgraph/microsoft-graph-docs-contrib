@@ -25,9 +25,3 @@ The enrollment mode for an enrollment profile.
 |corporateOwnedWorkProfile|2|Not yet documented|
 |corporateOwnedAOSPUserlessDevice|3|Corporate owned, userless Android Open Source Project (AOSP) device, without Google Mobile Services.|
 |corporateOwnedAOSPUserAssociatedDevice|4|Corporate owned, user-associated Android Open Source Project (AOSP) device, without Google Mobile Services.|
-
-
-
-
-
-

@@ -35,8 +35,3 @@ Possible ways of adding a mobile device to management.
 |androidEnterpriseDedicatedDevice|15|Android Enterprise Dedicated Device|
 |androidEnterpriseFullyManaged|16|Android Enterprise Fully Managed|
 |androidEnterpriseCorporateWorkProfile|17|Android Enterprise Corporate Work Profile|
-
-
-
-
-

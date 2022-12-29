@@ -43,9 +43,3 @@ Here is a JSON representation of the resource.
   "activeHoursEnd": "String (time of day)"
 }
 ```
-
-
-
-
-
-

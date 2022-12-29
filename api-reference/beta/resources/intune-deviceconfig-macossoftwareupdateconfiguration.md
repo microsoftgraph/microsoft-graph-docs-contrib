@@ -121,9 +121,3 @@ Here is a JSON representation of the resource.
   "updateTimeWindowUtcOffsetInMinutes": 1024
 }
 ```
-
-
-
-
-
-

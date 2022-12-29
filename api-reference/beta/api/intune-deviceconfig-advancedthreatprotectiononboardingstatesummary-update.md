@@ -105,9 +105,3 @@ Content-Length: 380
   "notAssignedDeviceCount": 6
 }
 ```
-
-
-
-
-
-

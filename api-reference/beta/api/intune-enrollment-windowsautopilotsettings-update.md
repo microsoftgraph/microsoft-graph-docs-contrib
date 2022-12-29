@@ -90,9 +90,3 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
-
-
-
-
-
-

@@ -22,9 +22,3 @@ Windows 10 Application type.
 |:---|:---|:---|
 |desktop|0|Desktop.|
 |universal|1|Universal.|
-
-
-
-
-
-

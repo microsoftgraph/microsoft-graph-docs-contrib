@@ -66,9 +66,3 @@ Content-Length: 59
   "value": "https://example.com/generateDownloadUrl/"
 }
 ```
-
-
-
-
-
-

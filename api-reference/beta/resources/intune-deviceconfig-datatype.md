@@ -35,9 +35,3 @@ Data types for rules.
 |stringArray|12|String array data type.|
 |dateTimeArray|13|DateTime array data type.|
 |versionArray|14|Version array data type.|
-
-
-
-
-
-

@@ -152,9 +152,3 @@ Content-Length: 1134
   "batteryHealthState": "insufficientData"
 }
 ```
-
-
-
-
-
-

@@ -23,9 +23,3 @@ Scope of the group policy setting.
 |unknown|0|Device scope unknown|
 |device|1|Device scope|
 |user|2|User scope|
-
-
-
-
-
-

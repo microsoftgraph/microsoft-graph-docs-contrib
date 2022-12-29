@@ -54,9 +54,3 @@ Here is a JSON representation of the resource.
   "speed": "4.2"
 }
 ```
-
-
-
-
-
-

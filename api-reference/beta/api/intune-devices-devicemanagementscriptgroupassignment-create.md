@@ -86,9 +86,3 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
-
-
-
-
-

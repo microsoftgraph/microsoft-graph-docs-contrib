@@ -39,9 +39,3 @@ Apple VPN connection type.
 |microsoftTunnel|16|Microsoft Tunnel.|
 |netMotionMobility|17|NetMotion Mobility.|
 |microsoftProtect|18|Microsoft Protect.|
-
-
-
-
-
-

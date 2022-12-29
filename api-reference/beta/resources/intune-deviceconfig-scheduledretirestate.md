@@ -23,9 +23,3 @@ Cancel or confirm scheduled retire
 |cancelRetire|0|CancelRetire|
 |confirmRetire|1|ConfirmRetire|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-
-
-

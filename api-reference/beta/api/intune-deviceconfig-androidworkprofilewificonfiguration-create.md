@@ -165,9 +165,3 @@ Content-Length: 1391
   "wiFiSecurityType": "wpaEnterprise"
 }
 ```
-
-
-
-
-
-

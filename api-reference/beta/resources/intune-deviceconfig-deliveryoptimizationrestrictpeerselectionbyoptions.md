@@ -22,9 +22,3 @@ Values to restrict peer selection by.
 |:---|:---|:---|
 |notConfigured|0|Not configured.|
 |subnetMask|1|Subnet mask.|
-
-
-
-
-
-

@@ -99,9 +99,3 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
-
-
-
-
-

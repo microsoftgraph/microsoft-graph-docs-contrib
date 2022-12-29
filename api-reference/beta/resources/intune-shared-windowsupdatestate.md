@@ -66,9 +66,3 @@ Here is a JSON representation of the resource.
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

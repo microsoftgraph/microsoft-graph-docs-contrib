@@ -99,9 +99,3 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
-
-
-
-
-
-

@@ -160,9 +160,3 @@ Content-Length: 1326
   "payload": "cGF5bG9hZA=="
 }
 ```
-
-
-
-
-
-

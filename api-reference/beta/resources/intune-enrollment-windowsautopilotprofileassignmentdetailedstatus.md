@@ -27,9 +27,3 @@ Not yet documented
 |windowsPcProfileNotSupported|4|Indicates that a Windows PC AutoPilot Profile is assigned to a device that is not Windows PC.|
 |surfaceHub2SProfileNotSupported|5|Indicates that a surface Hub 2S  AutoPilot Profile is assigned to a device that is not surface Hub 2S.|
 |unknownFutureValue|99|Placeholder for evolvable enum, but this enum is never returned to the caller, so it shouldn't be necessary.|
-
-
-
-
-
-

@@ -22,9 +22,3 @@ BitLockerRecoveryInformationType types
 |:---|:---|:---|
 |passwordAndKey|1|Store recovery passwords and key packages.|
 |passwordOnly|2|Store recovery passwords only.|
-
-
-
-
-
-

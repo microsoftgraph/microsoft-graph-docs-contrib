@@ -81,9 +81,3 @@ Content-Length: 40
   "value": "Cancel Approval value"
 }
 ```
-
-
-
-
-
-

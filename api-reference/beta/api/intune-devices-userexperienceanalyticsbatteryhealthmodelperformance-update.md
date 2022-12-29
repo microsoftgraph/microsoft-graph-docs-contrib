@@ -102,9 +102,3 @@ Content-Length: 382
   "modelBatteryHealthScore": 7
 }
 ```
-
-
-
-
-
-

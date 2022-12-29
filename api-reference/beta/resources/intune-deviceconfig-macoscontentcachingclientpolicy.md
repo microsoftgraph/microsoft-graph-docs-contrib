@@ -25,9 +25,3 @@ Determines which clients a content cache will serve.
 |clientsWithSamePublicIpAddress|2|Content caches will provide content to devices that share the same public IP address.|
 |clientsInCustomLocalNetworks|3|Content caches will provide content to devices in contentCachingClientListenRanges.|
 |clientsInCustomLocalNetworksWithFallback|4|Content caches will provide content to devices in contentCachingClientListenRanges, contentCachingPeerListenRanges, and contentCachingParents.|
-
-
-
-
-
-

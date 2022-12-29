@@ -60,9 +60,3 @@ Here is a JSON representation of the resource.
   "batteryUsagePercentage": "4.2"
 }
 ```
-
-
-
-
-
-

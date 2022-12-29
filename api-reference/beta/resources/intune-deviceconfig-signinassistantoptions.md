@@ -22,9 +22,3 @@ Values for the SignInAssistantSettings.
 |:---|:---|:---|
 |notConfigured|0|Not configured - wlidsvc Start will be set to SERVICE_DEMAND_START.|
 |disabled|1|Disabled - wlidsvc Start will be set to SERVICE_DISABLED.|
-
-
-
-
-
-

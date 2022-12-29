@@ -66,9 +66,3 @@ Content-Length: 26
   "value": "pending"
 }
 ```
-
-
-
-
-
-

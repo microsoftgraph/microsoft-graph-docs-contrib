@@ -24,9 +24,3 @@ Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen
 |administrators|1|User display name, domain and user names|
 |administratorsAndPowerUsers|2|User display name only|
 |administratorsAndInteractiveUsers|3|Do not display user information|
-
-
-
-
-
-

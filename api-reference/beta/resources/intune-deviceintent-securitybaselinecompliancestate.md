@@ -26,9 +26,3 @@ Security Baseline Compliance State
 |notSecure|3|Not secure state|
 |error|4|Error state|
 |conflict|5|Conflict state|
-
-
-
-
-
-

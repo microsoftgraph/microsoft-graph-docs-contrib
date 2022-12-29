@@ -100,9 +100,3 @@ Content-Length: 501
   "sourceId": "Source Id value"
 }
 ```
-
-
-
-
-
-

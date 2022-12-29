@@ -26,9 +26,3 @@ Not yet documented
 |modelRegression|4|Not yet documented|
 |manufacturerRegression|5|Not yet documented|
 |operatingSystemVersionRegression|6|Not yet documented|
-
-
-
-
-
-

@@ -153,9 +153,3 @@ Content-Length: 1251
   "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
-
-
-
-
-

@@ -22,8 +22,3 @@ Not yet documented
 |application|3|Not yet documented|
 |appModel|7|Not yet documented|
 |configurationPolicy|12|Not yet documented|
-
-
-
-
-

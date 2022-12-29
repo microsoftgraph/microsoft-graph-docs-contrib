@@ -109,9 +109,3 @@ Content-Length: 561
   "sessionExpirationDateTime": "2016-12-31T23:59:57.5564522-08:00"
 }
 ```
-
-
-
-
-
-
