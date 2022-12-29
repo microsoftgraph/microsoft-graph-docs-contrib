@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List the [educationSubmissionResource](../resources/educationsubmissionresource.md) objects that have officially been submitted for grading. 
+List the [educationSubmissionResource](../resources/educationsubmissionresource.md) objects that have officially been submitted for grading. Only teachers, students, and applications with application permissions can perform this operation.
 
 The student who owns the submission cannot change the submitted list without resubmitting the assignment. This is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment.
 

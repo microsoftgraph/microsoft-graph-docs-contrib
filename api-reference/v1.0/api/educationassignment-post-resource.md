@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create an [assignment resource](../resources/educationassignmentresource.md). You can create the following types of assignment resources:
+Create an [assignment resource](../resources/educationassignmentresource.md). Only teachers can perform this operation.
+
+You can create the following types of assignment resources:
 
 - [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
@@ -21,7 +23,7 @@ Create an [assignment resource](../resources/educationassignmentresource.md). Yo
 - [educationMediaResource](../resources/educationmediaresource.md)
 - [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
-Every resource has an **@odata.type** property to indicate which type of resource is being created. 
+Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
 > [!IMPORTANT] 
 > Before you can upload an assignment resource, you must [set up the resources folder](../api/educationassignment-setupresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
