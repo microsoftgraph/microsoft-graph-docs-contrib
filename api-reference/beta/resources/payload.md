@@ -26,8 +26,8 @@ Inherits from [entity](../resources/entity.md).
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
+| Property | Type        | Description |
+|:-------------|:------------|:------------|
 |brand|[payloadBrand](#payloadbrand-values)|The branch of a payload.| Possible values are: `unknown`, `americanExpress`, etc|
 |complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.|Possible values are: `unknown`, `low`, `medium`, `high` and `unknownFutureValue`|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
