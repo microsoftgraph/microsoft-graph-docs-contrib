@@ -1,11 +1,11 @@
 ---
-title: "Tasks component in the Microsoft Graph Toolkit"
+title: "Tasks component in Microsoft Graph Toolkit"
 description: "The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Tasks component in the Microsoft Graph Toolkit
+# Tasks component in Microsoft Graph Toolkit
 
 The Tasks component enables the user to view, add, remove, complete, or edit tasks from Microsoft Planner.  
 

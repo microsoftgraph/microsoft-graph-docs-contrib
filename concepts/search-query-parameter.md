@@ -4,6 +4,7 @@ description: "Microsoft Graph supports the $search OData query parameter to rest
 author: "mumbi-o"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/08/2022
 ---
 
 # Use the $search query parameter

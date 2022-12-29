@@ -5,6 +5,7 @@ author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.prod: "governance"
+ms.date: 12/07/2022
 ---
 
 # Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph
