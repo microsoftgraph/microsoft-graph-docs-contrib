@@ -27,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!IMPORTANT]
 > To add members to a role-assignable group, the calling user must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
+> When an application queries a relationship that returns a directoryObject type collection, if it does not have permission to read or write to the directory object (i.e. users). With this behaviour applications can request the least privileged permissions they need (i.e. User.ReadWrite.All) to add members to a group, rather than rely on the set of Directory.* permissions. For details, see Limited information returned for inaccessible member objects.
 
 ## HTTP request
 
