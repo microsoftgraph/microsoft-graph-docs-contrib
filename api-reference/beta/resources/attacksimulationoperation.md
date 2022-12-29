@@ -35,15 +35,15 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |status|longRunningOperationStatus|Operation status. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |statusDetail|String|Status detail of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |tenantId|String|Tenant identifier.|
-|type|attackSimulationOperationType|The attack simulation operation type. Possible values are: `unknown`, `createSimulation`, `updateSimulation`.|
+|type|attackSimulationOperationType|The attack simulation operation type. Possible values are: `createSimulation`, `updateSimulation`, `unknownFutureValue`.|
 
 ### attackSimulationOperationType values
 
 |Member|Description |
 |:---|:---|
-|unknown| The operation is not defined. |
 |createSimulation| The simulation creation operation. |
 |updateSimulation| The simulation update operation. |
+|unknownFutureValue| The operation is not defined. |
 
 ## Relationships
 

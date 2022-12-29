@@ -42,9 +42,6 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Authorization  |Bearer {token}. Required.|
 |Content-Type   |application/json         |
 
-## Request body
-In the request body, supply a JSON representation of **simulation** object.
-
 ## Response
 If successful, this method returns `204 No Content` response code in the response.
 

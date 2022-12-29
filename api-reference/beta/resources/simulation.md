@@ -31,6 +31,8 @@ Inherits from [entity](../resources/entity.md).
 |[Update simulation](../api/attacksimulationroot-update-simulation.md)|[simulation](../resources/simulation.md)|Update the properties of a [simulation](../resources/simulation.md) object.|
 |[Delete simulation](../api/attacksimulationroot-delete-simulation.md)|None|Delete a [simulation](../resources/simulation.md) object.|
 |[Get payload](../api/attacksimulationroot-get-payload.md)|None|Get a [payload](../resources/payload.md) object.|
+|[Get excludedAccountTarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded account targets (users) for an attack simulation campaign for a tenant.|
+|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included account targets (users) for an attack simulation campaign for a tenant.|
 
 ## Properties
 
@@ -108,8 +110,8 @@ Inherits from [entity](../resources/entity.md).
 |Member|Description |
 |:---|:---|
 |unknown| The simulation content source is not defined. |
-|tenant| The simulation content source is tenant. |
 |global| The simulation content status is global. |
+|tenant| The simulation content source is tenant. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
