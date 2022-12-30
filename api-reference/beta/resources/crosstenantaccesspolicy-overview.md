@@ -4,7 +4,8 @@ description: "Cross-tenant access settings let you manage both B2B collaboration
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: resourcePageType
+doc_type: conceptualPageType
+ms.date: 09/13/2022
 ---
 
 # Cross-tenant access settings API overview

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "conceptualPageType"
+ms.date: 01/25/2022
 ---
 
 # Working with the authentication methods usage report API

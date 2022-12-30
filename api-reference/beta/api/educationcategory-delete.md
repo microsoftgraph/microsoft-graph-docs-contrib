@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an existing category.
+Delete an existing category. Only teachers can perform this operation.
 
 ## Permissions
 
