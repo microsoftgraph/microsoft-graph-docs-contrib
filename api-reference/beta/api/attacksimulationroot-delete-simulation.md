@@ -42,6 +42,9 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Authorization  |Bearer {token}. Required.|
 |Content-Type   |application/json         |
 
+## Request body
+Do not supply a request body for this method.
+
 ## Response
 If successful, this method returns `204 No Content` response code in the response.
 

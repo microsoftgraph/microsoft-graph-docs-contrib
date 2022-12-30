@@ -26,17 +26,17 @@ Inherits from [entity](../resources/entity.md).
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload.| Possible values are: `unknown`, `americanExpress`, etc|
-|complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.|Possible values are: `unknown`, `low`, `medium`, `high` and `unknownFutureValue`|
+| Property | Type        | Description |
+|:-------------|:------------|:------------|
+|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `americanExpress`, etc|
+|complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.Possible values are: `unknown`, `low`, `medium`, `high` and `unknownFutureValue`|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload.|
 |description|String|Description of the attack simulation and training campaign payload.|
 |detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
 |displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
 |id|String|Unique identifier for the attack simulation and training campaign payload. Inherited from [entity](../resources/entity.md).|
-|industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload.|Possible values are: `unknown`, `businessServices`, etc|
+|industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload. Possible values are: `unknown`, `businessServices`, etc|
 |isAutomated|Boolean|Indicates whether the attack simulation and training campaign payload was created from an automation flow. Supports `$filter` and `$orderby`. |
 |isControversial|Boolean|Indicates whether the payload is controversial. |
 |isCurrentEvent|Boolean|Indicates whether the payload is from any recent event. |
@@ -50,7 +50,7 @@ Inherits from [entity](../resources/entity.md).
 |source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `tenant`, `global`, `unknownFutureValue`.|
 |status|[simulationContentStatus](../resources/simulation.md#simulationcontentsource-values)|Simulation content status. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md) Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
-|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload.|Possible values are: `unknown`, `accountActivation`, etc|
+|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `accountActivation`, etc|
 
 ### payloadTheme values
 

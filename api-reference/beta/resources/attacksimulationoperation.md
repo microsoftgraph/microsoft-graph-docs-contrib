@@ -43,7 +43,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |:---|:---|
 |createSimulation| The simulation creation operation. |
 |updateSimulation| The simulation update operation. |
-|unknownFutureValue| The operation is not defined. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 

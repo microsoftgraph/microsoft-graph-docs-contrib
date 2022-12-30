@@ -17,13 +17,6 @@ Represents included or excluded users for an attack simulation training campaign
 
 Base type of [addressBookAccountTargetContent](../resources/addressbookaccounttargetcontent.md) and [includeAllAccountTargetContent](../resources/includeallaccounttargetcontent.md).
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get excludedAccountTarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded account targets (users) for an attack simulation campaign for a tenant.|
-|[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included account targets (users) for an attack simulation campaign for a tenant.|
-
 ## Properties
 
 |Property|Type|Description|
