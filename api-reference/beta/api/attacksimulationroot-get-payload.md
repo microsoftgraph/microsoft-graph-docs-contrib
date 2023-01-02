@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get payload
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Get an attack simulation campaign payload for a tenant.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -56,11 +58,13 @@ GET /security/attackSimulation/payloads/{payloadId}?$select={property}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response

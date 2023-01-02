@@ -26,8 +26,8 @@ Inherits from [payloadDetail](../resources/payloaddetail.md).
 |fromEmail|String|Email address of the user.|
 |fromName|String|Display name of the user.|
 |isExternalSender|Boolean|Email address of the user.|
-|phishingUrl|String|Phishing url used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
-|subject|String|Email address subject sent to the user.|
+|phishingUrl|String|Phishing URL used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
+|subject|String|The subject of the email address sent to the user.|
 
 ## Relationships
 
