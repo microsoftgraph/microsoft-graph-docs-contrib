@@ -44,7 +44,6 @@ In the request body, supply a JSON representation of the [privilegedAccessGroupE
 
 You can specify the following properties when creating a **privilegedAccessGroupEligibilityScheduleRequest**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |principalId|String|The id of the principal to which the assignment is granted. Required.|
