@@ -29,7 +29,8 @@ Describes which technology this setting can be deployed with
 |exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel|
 |linuxMdm|1024|Setting can be deployed through the Linux Mdm channel|
 |enrollment|4096|Setting can be deployed through device enrollment.|
-|unknownFutureValue|1073741824|Sentinel member for cases where the client cannot handle the new enum values.|
+|endpointPrivilegeManagement|8192|Setting can be deployed using the Endpoint privilege management channel|
+|unknownFutureValue|16384|Evolvable enumeration sentinel value. Do not use.|
 
 
 

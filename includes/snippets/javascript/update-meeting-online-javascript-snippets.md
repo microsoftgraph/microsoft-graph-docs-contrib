@@ -12,10 +12,10 @@ const client = Client.init(options);
 
 const event = {
   isOnlineMeeting: true,
-  onlineMeetingProvider: "teamsForBusiness"
+  onlineMeetingProvider: 'teamsForBusiness'
 };
 
-let res = await client.api('/me/events/AAMkADAGu0AABIGYDaAAA=')
+await client.api('/me/events/AAMkADAGu0AABIGYDaAAA=')
 	.update(event);
 
 ```

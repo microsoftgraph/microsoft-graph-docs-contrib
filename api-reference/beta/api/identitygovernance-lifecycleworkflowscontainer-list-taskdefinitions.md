@@ -302,7 +302,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request. Because the **category** can be one of `joiner`, `joiner,leaver`, or `leaver`, the request must match categories that are `joiner` or `joiner,leaver` to retrieve all tasks supported for "joiner" workflows.
+The following is an example of a request. Because the **category** is a flagged enumeration that can be one of `joiner`, `joiner,leaver`, or `leaver`, the `has` operator checks tasks where the category includes "joiner".
 
 
 # [HTTP](#tab/http)
@@ -312,19 +312,19 @@ The following is an example of a request. Because the **category** can be one of
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions?$filter=category eq 'joiner,leaver' OR category eq 'joiner'
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions?$filter=category has 'joiner'
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskdefinition-filter-category-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-taskdefinition-filter-category-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-taskdefinition-filter-category-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

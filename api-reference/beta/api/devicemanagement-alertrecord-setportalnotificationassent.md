@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set a single portal notification status to published by modifying the **isPortalNotificationSent** property to `true` for the user specified in the request.
+Set the status of the specified notification on the Microsoft EndPoint Manager admin center as sent, by modifying the **isPortalNotificationSent** property to `true`.
 
 ## Permissions
 
@@ -55,6 +55,8 @@ If successful, this action returns a `204 No Content` response code.
 
 The following is an example of a request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "alertrecordthis.setportalnotificationassent"
@@ -63,6 +65,33 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/6c46a7ba-e78a-45e5-a81c-179ab8fd3e8e/setPortalNotificationAsSent
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/alertrecordthissetportalnotificationassent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/alertrecordthissetportalnotificationassent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/alertrecordthissetportalnotificationassent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/alertrecordthissetportalnotificationassent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/alertrecordthissetportalnotificationassent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/alertrecordthissetportalnotificationassent-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
