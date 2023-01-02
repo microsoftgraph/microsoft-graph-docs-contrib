@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "accountTargetContentType",
           "ChangeType": "Addition",
           "Description": "Added the **accountTargetContentType** enumeration type.",
@@ -12,7 +12,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "accountType",
           "ChangeType": "Addition",
           "Description": "Added the **accountType** enumeration type.",
@@ -20,7 +20,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "addressBookAccountType",
           "ChangeType": "Addition",
           "Description": "Added the **addressBookAccountType** enumeration type.",
@@ -28,7 +28,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "attackSimulationOperationType",
           "ChangeType": "Addition",
           "Description": "Added the **attackSimulationOperationType** enumeration type.",
@@ -36,7 +36,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "coachmarkLocationType",
           "ChangeType": "Addition",
           "Description": "Added the **coachmarkLocationType** enumeration type.",
@@ -44,15 +44,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "longRunningOperationStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the **longRunningOperationStatus** enumeration type.",
-          "Target": "longRunningOperationStatus"
-        },
-        {
-          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "payloadBrand",
           "ChangeType": "Addition",
           "Description": "Added the **payloadBrand** enumeration type.",
@@ -60,7 +52,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "payloadComplexity",
           "ChangeType": "Addition",
           "Description": "Added the **payloadComplexity** enumeration type.",
@@ -68,7 +60,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "payloadIndustry",
           "ChangeType": "Addition",
           "Description": "Added the **payloadIndustry** enumeration type.",
@@ -76,7 +68,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "payloadSource",
           "ChangeType": "Addition",
           "Description": "Added the **payloadSource** enumeration type.",
@@ -84,7 +76,7 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "payloadStatus",
           "ChangeType": "Addition",
           "Description": "Added the **payloadStatus** enumeration type.",
@@ -92,11 +84,27 @@
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "payloadTheme",
           "ChangeType": "Addition",
           "Description": "Added the **payloadTheme** enumeration type.",
           "Target": "payloadTheme"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationContentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationContentStatus** enumeration type.",
+          "Target": "simulationContentStatus"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationContentSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationContentSource** enumeration type.",
+          "Target": "simulationContentSource"
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
@@ -159,31 +167,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attackSimulationOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [attackSimulationOperation](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationoperation?view=graph-rest-beta) resource",
+          "Description": "Added the [attackSimulationOperation](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationoperation?view=graph-rest-beta) resource and a supported method.",
           "Target": "attackSimulationOperation"
-        },
-        {
-          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Resource",
-          "ChangedApiName": "operations",
-          "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationroot?view=graph-rest-beta) resource.",
-          "Target": "attackSimulationRoot"
-        },
-        {
-          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Resource",
-          "ChangedApiName": "payloads",
-          "ChangeType": "Addition",
-          "Description": "Added the **payloads** relationship to the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) resource.",
-          "Target": "attackSimulationRoot"
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
           "ApiChange": "Resource",
           "ChangedApiName": "longRunningOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [longRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/longrunningoperation?view=graph-rest-beta) resource",
+          "Description": "Added the [longRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/longrunningoperation?view=graph-rest-beta) resource type.",
           "Target": "longRunningOperation"
         },
         {
@@ -191,15 +183,39 @@
           "ApiChange": "Resource",
           "ChangedApiName": "payload",
           "ChangeType": "Addition",
-          "Description": "Added the [payload](https://learn.microsoft.com/en-us/graph/api/resources/payload?view=graph-rest-beta) resource",
+          "Description": "Added the [payload](https://learn.microsoft.com/en-us/graph/api/resources/payload?view=graph-rest-beta) resource and supported methods.",
           "Target": "payload"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationroot?view=graph-rest-beta) resource.",
+          "Target": "attackSimulationRoot"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "payloads",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloads** relationship to the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationroot?view=graph-rest-beta) resource.",
+          "Target": "attackSimulationRoot"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "payload",
+          "ChangeType": "Addition",
+          "Description": "Added the **payload** relationship to the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
         },
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
           "ApiChange": "Property",
           "ChangedApiName": "durationInDays",
           "ChangeType": "Addition",
-          "Description": "Added the `durationInDays` property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Added the **durationInDays** property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -207,7 +223,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "excludedAccountTarget",
           "ChangeType": "Addition",
-          "Description": "Added the `excludedAccountTarget` property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Added the **excludedAccountTarget** property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -215,15 +231,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "includedAccountTarget",
           "ChangeType": "Addition",
-          "Description": "Added the `includedAccountTarget` property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
-          "Target": "simulation"
-        },
-        {
-          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Resource",
-          "ChangedApiName": "payload",
-          "ChangeType": "Addition",
-          "Description": "Added the **payload** relationship to the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Added the **includedAccountTarget** property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         }
       ],

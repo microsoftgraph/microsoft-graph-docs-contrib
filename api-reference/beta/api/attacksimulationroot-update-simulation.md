@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Update an attack simulation campaign for a tenant.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -34,15 +35,18 @@ PATCH /security/attackSimulation/simulations/{simulationId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 |Header         |Value                    |
 |---------------|-------------------------|
 |Authorization  |Bearer {token}. Required.|
 |Content-Type   |application/json         |
 
 ## Request body
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
@@ -61,9 +65,9 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |status|[simulationStatus](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
 
-
 ## Response
-If successful, this method returns `202 Accepted` response code and a tracking header named `location` in the response.
+
+If successful, this method returns a `202 Accepted` response code and a tracking header named `location` in the response.
 
 ## Examples
 

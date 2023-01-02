@@ -23,13 +23,14 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List payload](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get a list of attack simulation payload for a tenant.|
 |[Get payload](../api/attacksimulationroot-get-payload.md)|[payload](../resources/payload.md)|Get an attack simulation payload for a tenant.|
+|[Get payloadDetail](../api/attacksimulationroot-get-payloadsdetails.md)|[payloadDetail](../resources/payloaddetail.md)|Get an attack simulation campaign payload detail for a tenant.|
 
 ## Properties
 
 | Property | Type        | Description |
 |:-------------|:------------|:------------|
 |brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `americanExpress`, etc|
-|complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.Possible values are: `unknown`, `low`, `medium`, `high` and `unknownFutureValue`|
+|complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.Possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload.|
 |description|String|Description of the attack simulation and training campaign payload.|
@@ -44,11 +45,11 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |payloadTags|String collection|Free text tags for a payload.|
-|platform|payloadDeliveryPlatform|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`. 
+|platform|payloadDeliveryPlatform|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md). Possible values are: `unknown`, `tenant`, `global`, `unknownFutureValue`.|
-|status|[simulationContentStatus](../resources/simulation.md#simulationcontentsource-values)|Simulation content status. Supports `$filter` and `$orderby`.Inherited from [simulation](../resources/simulation.md) Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `tenant`, `global`, `unknownFutureValue`. Inherited from [simulation](../resources/simulation.md).|
+|status|[simulationContentStatus](../resources/simulation.md#simulationcontentsource-values)|Simulation content status. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`. Inherited from [simulation](../resources/simulation.md).|
 |technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `accountActivation`, etc|
 
@@ -63,30 +64,30 @@ Inherits from [entity](../resources/entity.md).
 |billing| Payload tax etc bill details|
 |cleanUpMail| Payload mail cleanup details|
 |controversial| Payload controversial information|
-|documentReceived| Payload tells the document has been received|
-|expense| Payload contains expense related details|
-|fax| Payload contains fax specific details|
-|financeReport| Payload contains FinanceReport|
-|incomingMessages| Payload contains IncomingMessages details|
-|invoice| Payload contains Invoice details|
-|itemReceived| Payload contains ItemReceived details|
-|loginAlert| Payload contains LoginAlert information|
-|mailReceived| Payload contains MailReceived information|
-|password| Payload with password details|
-|payment| Payload with Payment details|
-|payroll| Payload with Payroll specific details|
-|personalizedOffer| Payload with PersonalizedOffer details|
-|quarantine| Payload with Quarantine related details|
-|remoteWork| Payload related to as RemoteWork|
-|reviewMessage| Payload requesting to ReviewMessage|
-|securityUpdate| Payload mentioning SecurityUpdate required|
-|serviceSuspended| Payload mentioning ServiceSuspended|
-|signatureRequired| Payload telling SignatureRequired|
-|upgradeMailboxStorage| Payload asking to UpgradeMailboxStorage|
-|verifyMailbox| Payload asking to VerifyMailbox|
-|voicemail| Payload with Voicemail details|
-|advertisement| Payload with advertisement details|
-|employeeEngagement| Payload with EmployeeEngagement details|
+|documentReceived| Payload tells that the document has been received.|
+|expense| Payload contains expense-related details.|
+|fax| Payload contains fax-specific details.|
+|financeReport| Payload contains a finance report.|
+|incomingMessages| Payload contains details about incoming messages.|
+|invoice| Payload contains invoice details.|
+|itemReceived| Payload contains details about an item received.|
+|loginAlert| Payload contains login alert information.|
+|mailReceived| Payload contains information about a mail received.|
+|password| Payload with password details.|
+|payment| Payload with payment details.|
+|payroll| Payload with payroll-specific details.|
+|personalizedOffer| Payload with details about a personalized offer.|
+|quarantine| Payload with quarantine-related details.|
+|remoteWork| Payload related to as remote work.|
+|reviewMessage| Payload with a review message request|
+|securityUpdate| Payload mentioning that a security update is required.|
+|serviceSuspended| Payload mentioning that a service has been suspended.|
+|signatureRequired| Payload telling that a signature is required.|
+|upgradeMailboxStorage| Payload asking to upgrade the mailbox storage.|
+|verifyMailbox| Payload asking for mailbox verification.|
+|voicemail| Payload with voicemail details.|
+|advertisement| Payload with advertisement details.|
+|employeeEngagement| Payload with employee engagement details.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### payloadBrand values
@@ -94,52 +95,52 @@ Inherits from [entity](../resources/entity.md).
 |Member|Description |
 |:---|:---|
 |unknown| Payload brand as unknown|
-|other| Payload brand as Other|
-|americanExpress| Payload brand as AmericanExpress|
-|capitalOne| Payload brand as CapitalOne|
-|dhl| Payload brand as DHL|
-|docuSign| Payload brand as DocuSign|
-|dropbox| Payload brand as Dropbox|
-|facebook| Payload brand as Facebook|
-|firstAmerican| Payload brand as FirstAmerican|
-|microsoft| Payload brand as Microsoft|
-|netflix| Payload brand as Netflix|
-|scotiabank| Payload brand as Scotiabank|
-|sendGrid| Payload brand as SendGrid|
-|stewartTitle| Payload brand as StewartTitle|
-|tesco| Payload brand as Tesco|
-|wellsFargo| Payload brand as WellsFargo|
-|syrinxCloud| Payload brand as SyrinxCloud|
-|adobe| Payload brand as Adobe|
-|teams| Payload brand as Teams|
-|zoom| Payload brand as Zoom|
+|other| Payload brand as other.|
+|americanExpress| Payload brand as American Express.|
+|capitalOne| Payload brand as Capital One.|
+|dhl| Payload brand as DHL.|
+|docuSign| Payload brand as DocuSign.|
+|dropbox| Payload brand as Dropbox.|
+|facebook| Payload brand as Facebook.|
+|firstAmerican| Payload brand as First American.|
+|microsoft| Payload brand as Microsoft.|
+|netflix| Payload brand as Netflix.|
+|scotiabank| Payload brand as Scotiabank.|
+|sendGrid| Payload brand as SendGrid.|
+|stewartTitle| Payload brand as Stewart Title.|
+|tesco| Payload brand as Tesco.|
+|wellsFargo| Payload brand as Wells Fargo.|
+|syrinxCloud| Payload brand as SyrinxCloud.|
+|adobe| Payload brand as Adobe.|
+|teams| Payload brand as Teams.|
+|zoom| Payload brand as Zoom.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### payloadIndustry values
 
 |Member|Description |
 |:---|:---|
-|unknown| Payload industry as unknown|
-|other| Payload industry as other|
-|banking| Payload industry as banking|
-|businessServices| Payload industry as businessServices|
-|consumerServices| Payload industry as consumerServices|
-|education| Payload industry as education|
-|energy| Payload industry as energy|
-|construction| Payload industry as construction|
-|consulting| Payload industry as consulting|
-|financialServices| Payload industry as financialServices|
-|government| Payload industry as government|
-|hospitality| Payload industry as hospitality|
-|insurance| Payload industry as insurance|
-|legal| Payload industry as legal|
-|courierServices| Payload industry as courierServices|
-|IT| Payload industry as IT|
-|healthcare| Payload industry as healthcare|
-|manufacturing| Payload industry as manufacturing|
-|retail| Payload industry as retail|
-|telecom| Payload industry as telecom|
-|realEstate| Payload industry as realEstate|
+|unknown| Payload industry as unknown.|
+|other| Payload industry as other.|
+|banking| Payload industry as banking.|
+|businessServices| Payload industry as business services.|
+|consumerServices| Payload industry as consumer services.|
+|education| Payload industry as education.|
+|energy| Payload industry as energy.|
+|construction| Payload industry as construction.|
+|consulting| Payload industry as consulting.|
+|financialServices| Payload industry as financial services.|
+|government| Payload industry as government.|
+|hospitality| Payload industry as hospitality.|
+|insurance| Payload industry as insurance.|
+|legal| Payload industry as legal.|
+|courierServices| Payload industry as courier services.|
+|IT| Payload industry as IT.|
+|healthcare| Payload industry as healthcare.|
+|manufacturing| Payload industry as manufacturing.|
+|retail| Payload industry as retail.|
+|telecom| Payload industry as telecom.|
+|realEstate| Payload industry as real estate.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### payloadComplexity values
@@ -147,13 +148,13 @@ Inherits from [entity](../resources/entity.md).
 |Member|Description |
 |:---|:---|
 |unknown| The payload complexity is not defined. |
-|low| The payload complexity low. |
-|medium| The payload complexity is medoum. |
+|low| The payload complexity is low. |
+|medium| The payload complexity is medium. |
 |high| The payload complexity is high. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
-
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

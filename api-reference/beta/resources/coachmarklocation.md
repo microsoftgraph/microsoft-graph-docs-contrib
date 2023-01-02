@@ -16,11 +16,12 @@ Namespace: microsoft.graph
 Represents details about a coachmark location.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |length|Int32|Length of coachmark.|
 |offset|Int32|Offset of coachmark.|
-|type|coachmarkLocationType|Type of coachmark location.The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
+|type|coachmarkLocationType|Type of coachmark location. The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
 
 ### coachmarkLocationType values
 
@@ -35,6 +36,7 @@ Represents details about a coachmark location.
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
