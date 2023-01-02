@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentSchedule resource type"
-description: "**TODO: Add Description**"
+description: "Represents the schedule of privileged access to a group relationship assignment."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
-
+Represents the schedule of privileged access to a group relationship assignment.
 
 Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).
 
@@ -24,7 +23,7 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |[Get privilegedAccessGroupAssignmentSchedule](../api/privilegedaccessgroupassignmentschedule-get.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md)|Read the properties and relationships of a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.|
 |[Update privilegedAccessGroupAssignmentSchedule](../api/privilegedaccessgroupassignmentschedule-update.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md)|Update the properties of a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.|
 |[Delete privilegedAccessGroupAssignmentSchedule](../api/privilegedaccessgroup-delete-assignmentschedules.md)|None|Delete a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.|
-|[filterByCurrentUser](../api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) collection|**TODO: Add Description**|
+|[filterByCurrentUser](../api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) collection|Return assignment schedules for privileged access for calling principal.|
 |[List privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedulerequest-list-targetschedule.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|Get the privilegedAccessGroupEligibilitySchedule resources from the activatedUsing navigation property.|
 |[Add privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupassignmentschedule-post-activatedusing.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Add activatedUsing by posting to the activatedUsing collection.|
 |[Remove privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupassignmentschedule-delete-activatedusing.md)|None|Remove a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.|
@@ -38,24 +37,18 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessId|privilegedAccessGroupRelationships|**TODO: Add Description**.The possible values are: `owner`, `member`, `unknownFutureValue`.|
-|assignmentType|privilegedAccessGroupAssignmentType|**TODO: Add Description**.The possible values are: `assigned`, `activated`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
-|createdUsing|String|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
-|groupId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|memberType|privilegedAccessGroupMemberType|**TODO: Add Description**.The possible values are: `direct`, `group`, `unknownFutureValue`.|
-|modifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
-|principalId|String|**TODO: Add Description**|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
-|status|String|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
+|accessId|privilegedAccessGroupRelationships|The id of privileged access relationship to the group. Required. The possible values are: `owner`, `member`.|
+|assignmentType|privilegedAccessGroupAssignmentType|A read-only value to represent the assignment is granted through activation, or direct assignment. Required. The possible values are: `assigned`, `activated`.|
+|groupId|String|The id of the group representing the scope of the assignment. Optional.|
+|memberType|privilegedAccessGroupMemberType|A read-only value to represent whether the assignment is derived from group assignment or not. Thus, it can further imply whether the privileged access schedule can be managed by the caller or not. Required. The possible values are: `direct`, `group`.|
+|principalId|String|The id of the principal to which the assignment is granted. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|**TODO: Add Description**|
-|group|[group](../resources/group.md)|**TODO: Add Description**|
-|principal|[directoryObject](../resources/directoryobject.md)|**TODO: Add Description**|
+|activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request is to Activate an assignment, the navigation property represents the eligibility which enforces the eligible policies for the activation. Otherwise, it is null.|
+|group|[group](../resources/group.md)|Property referencing the directory object that is the scope of the assignment. Provided so callers can get the directory object using $expand at the same time as getting the schedule.|
+|principal|[directoryObject](../resources/directoryobject.md)|Property referencing the assigned principal. Provided so callers can get the principal using $expand at the same time as getting the schedule.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

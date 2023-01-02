@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessScheduleRequest resource type"
-description: "**TODO: Add Description**"
+description: "Represents a request for asynchronized operations to create, update, delete, extend, renew, activate, or deactivate a privileged access eligibility or assignment."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
-This is an abstract type.
-
+Represents a request for asynchronized operations to create, update, delete, extend, renew, activate, or deactivate a privileged access eligibility or assignment. This is an abstract type derived from the base abstract request type.
 
 Inherits from [request](../resources/request.md).
 
@@ -24,24 +22,15 @@ Inherits from [request](../resources/request.md).
 |[Get privilegedAccessScheduleRequest](../api/privilegedaccessschedulerequest-get.md)|[privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md)|Read the properties and relationships of a [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) object.|
 |[Update privilegedAccessScheduleRequest](../api/privilegedaccessschedulerequest-update.md)|[privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md)|Update the properties of a [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) object.|
 |[Delete privilegedAccessScheduleRequest](../api/privilegedaccessschedulerequest-delete.md)|None|Delete a [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) object.|
-|[stop](../api/privilegedaccessschedulerequest-stop.md)|None|**TODO: Add Description**|
-|[recordDecisions](../api/privilegedaccessschedulerequest-recorddecisions.md)|None|**TODO: Add Description**|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|scheduleRequestActions|**TODO: Add Description**.The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`.|
-|approvalId|String|**TODO: Add Description** Inherited from [request](../resources/request.md).|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [request](../resources/request.md).|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [request](../resources/request.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [request](../resources/request.md).|
-|customData|String|**TODO: Add Description** Inherited from [request](../resources/request.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isValidationOnly|Boolean|**TODO: Add Description**|
-|justification|String|**TODO: Add Description**|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|**TODO: Add Description**|
-|status|String|**TODO: Add Description** Inherited from [request](../resources/request.md).|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|**TODO: Add Description**|
+|action|scheduleRequestActions|Represents the asynchronized operation the request is carrying for the assignment. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`. Required.|
+|isValidationOnly|Boolean|Represents whether the request just intends to evaluate the payload without writing to the system. This can be used in UI to enable or disable scenarios. Default value is false. Optional.|
+|justification|String|Represents the justification the caller provided. Optional.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the schedule details that the request is trying to change for the privileged access eligibility. The scheduleInfo can represent a single occurrence, or multiple recurring instances. Optional.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Represents the ticket information provided by the caller for tracking purpose, if it is required. Optional.|
 
 ## Relationships
 None.

@@ -49,21 +49,69 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object in the response body.
 
 ## Examples
+Note: this method requires either the principalId or groupId filter property.
 
-### Request
-The following is an example of a request.
+### Example 1
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_privilegedaccessgroupassignmentschedule"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules/{privilegedAccessGroupAssignmentScheduleId}
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=groupId eq '14b9e371-5c2c-4ee5-a4a5-2980060d4f4e'
 ```
 
 
-### Response
-The following is an example of the response
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedAccessGroupAssignmentSchedule"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentSchedule",
+    "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
+    "scheduleInfo": {
+      "@odata.type": "microsoft.graph.requestSchedule"
+    },
+    "createdDateTime": "String (timestamp)",
+    "modifiedDateTime": "String (timestamp)",
+    "createdUsing": "String",
+    "status": "String",
+    "principalId": "String",
+    "accessId": "String",
+    "groupId": "String",
+    "memberType": "String",
+    "assignmentType": "String"
+  }
+}
+```
+
+### Example 2
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_privilegedaccessgroupassignmentschedule"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules/filterByCurrentUser(on='principal')
+```
+
+
+#### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

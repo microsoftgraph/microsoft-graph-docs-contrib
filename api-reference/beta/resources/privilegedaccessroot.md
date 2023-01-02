@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessRoot resource type"
-description: "**TODO: Add Description**"
+description: "Privileged access root contains navigation elements related to access management providers which include group."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
-
+Privileged access root contains navigation elements related to access management providers which include group.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -30,12 +29,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|Identifier of privileged access root. Required. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[privilegedAccessGroup](../resources/privilegedaccessgroup.md)|**TODO: Add Description**|
+|group|[privilegedAccessGroup](../resources/privilegedaccessgroup.md)|The navigation entity which contains the privileged access group APIs.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

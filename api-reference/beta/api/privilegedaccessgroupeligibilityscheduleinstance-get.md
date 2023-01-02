@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/{privilegedAccessGroupEligibilityScheduleInstanceId}
-GET /identityGovernance/privilegedAccess/group/assignmentScheduleInstances/{privilegedAccessGroupAssignmentScheduleInstanceId}/activatedUsing
 ```
 
 ## Optional query parameters
@@ -50,21 +49,23 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md) object in the response body.
 
 ## Examples
+Note: this method requires either the principalId or groupId filter property.
+
+### Example 1: Get all privileged access eligibility schedule instances for a specific privileged access group.
 
 ### Request
-The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_privilegedaccessgroupeligibilityscheduleinstance"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/{privilegedAccessGroupEligibilityScheduleInstanceId}
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc'
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -79,14 +80,14 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance",
-    "id": "772d5185-39b7-58be-4915-137ffaa7e42e",
-    "startDateTime": "String (timestamp)",
-    "endDateTime": "String (timestamp)",
-    "principalId": "String",
-    "accessId": "String",
-    "groupId": "String",
-    "memberType": "String",
-    "eligibilityScheduleId": "String"
+    "id": "b88fc7b0-a4ff-45fc-82c4-1d31a807315e",
+    "accessId": "member",
+    "principalId": "c277c8cb-6bb7-42e5-a17f-0add9a718151",
+    "groupId": "d5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc",
+    "startDateTime": "2020-08-27T18:58:35.967Z",
+    "endDateTime": "2020-08-29T18:57:38Z",
+    "memberType": "Direct",
+    "memberEligibilityScheduleId": "04e755d8-488a-4abb-a27f-19091d73c970"
   }
 }
 ```

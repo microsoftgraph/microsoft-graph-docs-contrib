@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessScheduleInstance resource type"
-description: "**TODO: Add Description**"
+description: "A privilegedAccessScheduleInstance represents the actual provisioned instance of privileged access."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+A privilegedAccessScheduleInstance represents the actual provisioned instance of privileged access.
 This is an abstract type.
 
 
@@ -28,9 +28,9 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
+|endDateTime|DateTimeOffset|The end date of the schedule instance. Required.|
+|id|String|The id of privileged access schedule instance. Required. Inherited from [entity](../resources/entity.md).|
+|startDateTime|DateTimeOffset|When this instance starts. Required.|
 
 ## Relationships
 None.

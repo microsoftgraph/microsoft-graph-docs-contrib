@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilitySchedule resource type"
-description: "**TODO: Add Description**"
+description: "The eligibility schedules to activate a just-in-time privileged access."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
-
+The eligibility schedules to activate a just-in-time privileged access. It represents the schedule of privileged access to a group relationship eligibility.
 
 Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).
 
@@ -24,7 +23,7 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |[Get privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedule-get.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Read the properties and relationships of a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.|
 |[Update privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedule-update.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Update the properties of a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.|
 |[Delete privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedulerequest-delete-targetschedule.md)|None|Delete a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.|
-|[filterByCurrentUser](../api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|**TODO: Add Description**|
+|[filterByCurrentUser](../api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|Return eligibility schedule for privileged access for calling principal.|
 |[List group](../api/user-list-joinedgroups.md)|[group](../resources/group.md) collection|Get the group resources from the group navigation property.|
 |[Add group](../api/privilegedaccessgroupeligibilityschedule-post-group.md)|[group](../resources/group.md)|Add group by posting to the group collection.|
 |[Remove group](../api/privilegedaccessgroupeligibilityschedule-delete-group.md)|None|Remove a [group](../resources/group.md) object.|
@@ -35,22 +34,16 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessId|privilegedAccessGroupRelationships|**TODO: Add Description**.The possible values are: `owner`, `member`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
-|createdUsing|String|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
-|groupId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|memberType|privilegedAccessGroupMemberType|**TODO: Add Description**.The possible values are: `direct`, `group`, `unknownFutureValue`.|
-|modifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
-|principalId|String|**TODO: Add Description**|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
-|status|String|**TODO: Add Description** Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
+|accessId|privilegedAccessGroupRelationships|*The id of privileged access relationship to the group. Required. The possible values are: `owner`, `member`.|
+|groupId|String|The id of the group representing the scope of the assignment. Optional.|
+|memberType|privilegedAccessGroupMemberType|A read-only value to represent the assignment is derived from group assignment or not. Thus it can further imply whether the privileged access schedule can be managed by the caller or not. Required. The possible values are: `direct`, `group`.|
+|principalId|String|The id of the principal to which the assignment is granted. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[group](../resources/group.md)|**TODO: Add Description**|
-|principal|[directoryObject](../resources/directoryobject.md)|**TODO: Add Description**|
+|group|[group](../resources/group.md)|Property referencing the directory object that is the scope of the assignment. Provided so callers can get the directory object using $expand at the same time as getting the schedule.|
+|principal|[directoryObject](../resources/directoryobject.md)|Property referencing the assigned principal. Provided so callers can get the principal using $expand at the same time as getting the schedule.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

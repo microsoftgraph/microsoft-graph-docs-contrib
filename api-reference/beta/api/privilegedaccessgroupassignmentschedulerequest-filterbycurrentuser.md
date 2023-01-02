@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentScheduleRequest: filterByCurrentUser"
-description: "**TODO: Add Description**"
+description: "Retrieve the requests for privileged access to a group relationship assignment for a particular principal."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Retrieve the requests for privileged access to a group relationship assignment for a particular principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|assignmentScheduleRequestFilterByCurrentUserOptions|**TODO: Add Description**|
+|on|assignmentScheduleRequestFilterByCurrentUserOptions|Filter used to query assignmentScheduleRequests. The possible values are `principal`, `createdBy`, `approver`, `unknownFutureValue`. Required.|
 
 
 ## Request headers
@@ -56,20 +56,21 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 
 ## Examples
 
+### Example 1: A user queries all of their requests that are pending approval on a specific privileged access group.
+
 ### Request
-The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "privilegedaccessgroupassignmentschedulerequestthis.filterbycurrentuser"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequests/filterByCurrentUser(on='principal')?$filter=status eq 'PendingApproval' and groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc'
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -85,28 +86,29 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest",
-      "id": "String (identifier)",
-      "status": "String",
-      "completedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "approvalId": "String",
-      "customData": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "action": "String",
-      "isValidationOnly": "Boolean",
-      "justification": "String",
-      "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
-      },
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "targetScheduleId": "String"
+      "id": "12345",  
+      "accessId": "member",
+      "principalId": "c277c8cb-6bb7-42e5-a17f-0add9a718151",  
+      "groupId": "d5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc",
+      "status": "PendingApproval",
+      "createdDateTIme": "2022-02-26T08:00:00.000Z",
+      "completedDateTIme": null,
+      "isValidationOnly": false,
+      "action": "SelfActivate",  
+      "scheduleInfo":
+        {
+          "startDateTime": "2022-04-01T08:00:00.000Z",
+          "expiration":
+            {
+              "type": "AfterDuration",
+              "duration" : "PT8H",
+            }
+        },
+      "justification":"Activate access",
+      "ticketInfo":
+        {
+          "ticketNumber": "09876"
+        }
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilityScheduleRequest: filterByCurrentUser"
-description: "**TODO: Add Description**"
+description: "Retrieve the eligibility requests for privileged access to a group relationship assignment for a particular principal."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Retrieve the eligibility requests for privileged access to a group relationship assignment for a particular principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|eligibilityScheduleRequestFilterByCurrentUserOptions|**TODO: Add Description**|
+|on|eligibilityScheduleRequestFilterByCurrentUserOptions|Filter used to query eligibilityScheduleRequests. The possible values are `principal`, `createdBy`, `approver`, `unknownFutureValue`. Required.|
 
 
 ## Request headers
@@ -64,12 +64,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

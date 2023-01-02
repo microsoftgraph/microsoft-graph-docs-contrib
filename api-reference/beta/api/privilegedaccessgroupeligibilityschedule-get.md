@@ -31,10 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /identityGovernance/privilegedAccess/group/eligibilitySchedules/{privilegedAccessGroupEligibilityScheduleId}
-GET /identityGovernance/privilegedAccess/group/assignmentSchedules/{privilegedAccessGroupAssignmentScheduleId}/activatedUsing
-GET /identityGovernance/privilegedAccess/group/assignmentScheduleRequests/{privilegedAccessGroupAssignmentScheduleRequestId}/targetSchedule
-GET /identityGovernance/privilegedAccess/group/assignmentScheduleRequests/{privilegedAccessGroupAssignmentScheduleRequestId}/activatedUsing
-GET /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/{privilegedAccessGroupEligibilityScheduleRequestId}/targetSchedule
 ```
 
 ## Optional query parameters
@@ -53,8 +49,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object in the response body.
 
 ## Examples
+Note: this method requires either the principalId or groupId filter property.
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -62,12 +59,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules/{privilegedAccessGroupEligibilityScheduleId}
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules?$filter=groupId eq '14b9e371-5c2c-4ee5-a4a5-2980060d4f4e'
 ```
 
 
-### Response
-The following is an example of the response
+#### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

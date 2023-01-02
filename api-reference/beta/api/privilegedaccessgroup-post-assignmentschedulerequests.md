@@ -44,23 +44,12 @@ In the request body, supply a JSON representation of the [privilegedAccessGroupA
 
 You can specify the following properties when creating a **privilegedAccessGroupAssignmentScheduleRequest**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|status|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Required.|
-|approvalId|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|customData|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|action|scheduleRequestActions|**TODO: Add Description** Inherited from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md). The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. Optional.|
-|isValidationOnly|Boolean|**TODO: Add Description** Inherited from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md). Optional.|
-|justification|String|**TODO: Add Description** Inherited from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md). Optional.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|**TODO: Add Description** Inherited from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md). Optional.|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|**TODO: Add Description** Inherited from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md). Optional.|
-|principalId|String|**TODO: Add Description** Optional.|
-|accessId|privilegedAccessGroupRelationships|**TODO: Add Description**. The possible values are: `owner`, `member`, `unknownFutureValue`. Optional.|
-|groupId|String|**TODO: Add Description** Optional.|
-|targetScheduleId|String|**TODO: Add Description** Optional.|
-
+|principalId|String|The id of the principal to which the assignment is granted. Required.|
+|accessId|privilegedAccessGroupRelationships|The id of privileged access relationship to the group. The possible values are: `owner`, `member`. Required.|
+|groupId|String|The id of the group representing the scope of the assignment. Optional.|
+|targetScheduleId|String|The id of schedule which gets created from request. Optional.|
 
 
 ## Response
@@ -69,8 +58,11 @@ If successful, this method returns a `201 Created` response code and a [privileg
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Example 1: Create Assignment Schedule Request
+
+In the following request, an assignment schedule request is created to assign an active member access.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_privilegedaccessgroupassignmentschedulerequest_from_"
@@ -82,32 +74,24 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest",
-  "status": "String",
-  "completedDateTime": "String (timestamp)",
-  "approvalId": "String",
-  "customData": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "action": "String",
-  "isValidationOnly": "Boolean",
-  "justification": "String",
-  "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
-  },
-  "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
-  },
-  "principalId": "String",
-  "accessId": "String",
-  "groupId": "String",
-  "targetScheduleId": "String"
+  "accessId": "member", 
+  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
+  "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7", 
+  "action": "adminAssign", 
+  "scheduleInfo": { 
+      "startDateTime": "2022-12-08T07:43:00.000Z", 
+      "expiration": { 
+          "type": "afterDuration", 
+          "duration": "PT2H" 
+      } 
+  }, 
+  "justification": "Assign active member access."
 }
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

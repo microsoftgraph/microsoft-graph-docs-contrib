@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentSchedule: filterByCurrentUser"
-description: "**TODO: Add Description**"
+description: "Retrieve the schedules of privileged access to a group relationship assignment for which the signed-in user is the principal."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Retrieve the schedules of privileged access to a group relationship assignment for which the signed-in user is the principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|assignmentScheduleFilterByCurrentUserOptions|**TODO: Add Description**|
+|on|assignmentScheduleFilterByCurrentUserOptions|Filter used to query assignmentSchedules. The possible values are `principal`, `unknownFutureValue`. Required.|
 
 
 ## Request headers
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/a
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

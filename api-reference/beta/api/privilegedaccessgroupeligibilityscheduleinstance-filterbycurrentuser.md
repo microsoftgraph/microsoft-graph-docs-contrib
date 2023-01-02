@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilityScheduleInstance: filterByCurrentUser"
-description: "**TODO: Add Description**"
+description: "Retrieve the eligibility schedule instances of privileged access to a group relationship assignment for the calling principal."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Retrieve the eligibility schedule instances of privileged access to a group relationship assignment for the calling principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|eligibilityScheduleInstanceFilterByCurrentUserOptions|**TODO: Add Description**|
+|on|eligibilityScheduleInstanceFilterByCurrentUserOptions|Filter used to query eligibilityScheduleInstances. The possible values are `principal`, `unknownFutureValue`. Required.|
 
 
 ## Request headers
@@ -55,6 +55,51 @@ Do not supply a request body for this method.
 If successful, this function returns a `200 OK` response code and a [privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md) collection in the response body.
 
 ## Examples
+Note: This method requires either the principalId or groupId filter property.
+
+### Example 1
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "privilegedaccessgroupeligibilityscheduleinstancethis.filterbycurrentuser"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser(on='principal')
+```
+
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance",
+      "id": "String (identifier)",
+      "startDateTime": "String (timestamp)",
+      "endDateTime": "String (timestamp)",
+      "principalId": "String",
+      "accessId": "String",
+      "groupId": "String",
+      "memberType": "String",
+      "eligibilityScheduleId": "String"
+    }
+  ]
+}
+```
 
 ### Request
 The following is an example of a request.
@@ -64,12 +109,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

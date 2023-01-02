@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessSchedule resource type"
-description: "**TODO: Add Description**"
+description: "A privilegedAccessSchedule represents the schedule of privileged access."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+A privilegedAccessSchedule represents the schedule of privileged access. The schedule object will drive the creation and deletion of privilegedAccessScheduleInstance.
+
 This is an abstract type.
 
 
@@ -28,12 +29,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdUsing|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|modifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|When the schedule was created. Optional.|
+|createdUsing|String|The id of the request which creates the schedule. Optional.|
+|id|String|The id of privileged access schedule. Required. Inherited from [entity](../resources/entity.md).|
+|modifiedDateTime|DateTimeOffset|When the schedule was last modified. Optional.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the schedule details of the privileged access assignment. The scheduleInfo can represent a single occurrence, or multiple recurring instances. Required.|
+|status|String|The status of the privileged access schedule eligibility request. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable. Supports $filter (eq, ne). Optional.|
 
 ## Relationships
 None.

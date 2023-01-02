@@ -49,8 +49,11 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) object in the response body.
 
 ## Examples
+This method requires either the principalId or groupId filter property.
 
-### Request
+### Example 1
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -58,12 +61,55 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleInstances/{privilegedAccessGroupAssignmentScheduleInstanceId}
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleInstances?$filter=groupId eq '14b9e371-5c2c-4ee5-a4a5-2980060d4f4e'
 ```
 
 
-### Response
-The following is an example of the response
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedAccessGroupAssignmentScheduleInstance"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentScheduleInstance",
+    "id": "48fe5560-de56-2750-ae7c-2bbf1da9e452",
+    "startDateTime": "String (timestamp)",
+    "endDateTime": "String (timestamp)",
+    "principalId": "String",
+    "accessId": "String",
+    "groupId": "String",
+    "memberType": "String",
+    "assignmentType": "String",
+    "assignmentScheduleId": "String"
+  }
+}
+```
+
+### Example 2
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_privilegedaccessgroupassignmentscheduleinstance"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleInstances/filterByCurrentUser(on='principal')
+```
+
+
+#### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
