@@ -16,12 +16,13 @@ Represents a request for asynchronized operations to create, update, delete, ext
 Inherits from [request](../resources/request.md).
 
 ## Methods
-|Method|Return type|Description|
+None.
+<!-- |Method|Return type|Description|
 |:---|:---|:---|
 |[List privilegedAccessScheduleRequests](../api/privilegedaccessschedulerequest-list.md)|[privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) collection|Get a list of the [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) objects and their properties.|
 |[Get privilegedAccessScheduleRequest](../api/privilegedaccessschedulerequest-get.md)|[privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md)|Read the properties and relationships of a [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) object.|
 |[Update privilegedAccessScheduleRequest](../api/privilegedaccessschedulerequest-update.md)|[privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md)|Update the properties of a [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) object.|
-|[Delete privilegedAccessScheduleRequest](../api/privilegedaccessschedulerequest-delete.md)|None|Delete a [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) object.|
+|[Delete privilegedAccessScheduleRequest](../api/privilegedaccessschedulerequest-delete.md)|None|Delete a [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md) object.| -->
 
 ## Properties
 |Property|Type|Description|

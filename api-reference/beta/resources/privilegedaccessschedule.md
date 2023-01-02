@@ -19,12 +19,13 @@ This is an abstract type.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
+None.
+<!-- |Method|Return type|Description|
 |:---|:---|:---|
 |[List privilegedAccessSchedules](../api/privilegedaccessschedule-list.md)|[privilegedAccessSchedule](../resources/privilegedaccessschedule.md) collection|Get a list of the [privilegedAccessSchedule](../resources/privilegedaccessschedule.md) objects and their properties.|
 |[Get privilegedAccessSchedule](../api/privilegedaccessschedule-get.md)|[privilegedAccessSchedule](../resources/privilegedaccessschedule.md)|Read the properties and relationships of a [privilegedAccessSchedule](../resources/privilegedaccessschedule.md) object.|
 |[Update privilegedAccessSchedule](../api/privilegedaccessschedule-update.md)|[privilegedAccessSchedule](../resources/privilegedaccessschedule.md)|Update the properties of a [privilegedAccessSchedule](../resources/privilegedaccessschedule.md) object.|
-|[Delete privilegedAccessSchedule](../api/privilegedaccessschedule-delete.md)|None|Delete a [privilegedAccessSchedule](../resources/privilegedaccessschedule.md) object.|
+|[Delete privilegedAccessSchedule](../api/privilegedaccessschedule-delete.md)|None|Delete a [privilegedAccessSchedule](../resources/privilegedaccessschedule.md) object.| -->
 
 ## Properties
 |Property|Type|Description|
