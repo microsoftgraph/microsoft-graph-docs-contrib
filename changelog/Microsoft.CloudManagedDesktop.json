@@ -53,56 +53,6 @@
         {
             "ChangeList": [
                 {
-                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
-                    "ApiChange": "Enumeration",
-                    "ChangedApiName": "cloudPcProvisioningType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcProvisioningType** enumeration type.",
-                    "Target": "cloudPcProvisioningType"
-                },
-                {
-                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "servicePlanId",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `servicePlanId` property to the [cloudPcManagementGroupAssignmentTarget](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcManagementGroupAssignmentTarget?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcManagementGroupAssignmentTarget"
-                },
-                {
-                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "provisioningType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `provisioningType` property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcProvisioningPolicy"
-                },
-                {
-                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcSharedUseServicePlan",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcSharedUseServicePlan](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource",
-                    "Target": "cloudPcSharedUseServicePlan"
-                },
-                {
-                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "sharedUseServicePlans",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **sharedUseServicePlans** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
-                    "Target": "virtualEndpoint"
-                }
-            ],
-            "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2022-09-19T09:37:24.8161707Z",
-            "WorkloadArea": "Devices and apps",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
                     "Id": "234823ab-d3b3-4ad6-9eab-0db8fe3d93a7",
                     "ApiChange": "Member",
                     "ChangedApiName": "udpConnectivityCheckStunUrlNotAllowListed",
