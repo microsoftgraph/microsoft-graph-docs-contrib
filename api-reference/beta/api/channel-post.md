@@ -19,7 +19,7 @@ You can add a maximum of 200 members when you create a private channel.
 
 > [!NOTE]
 > This API has a `[known issue](../../../concepts/known-issues.md#create-channel)` related to using special characters in channel name.
-  
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
