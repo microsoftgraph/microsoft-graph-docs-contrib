@@ -13,14 +13,14 @@ var staffIds = new List<String>()
 
 var startDateTime = new DateTimeTimeZone
 {
-	DateTime = "2022-01-25T00: 00: 00",
-	TimeZone = "India Standard Time"
+	DateTime = "2022-01-25T00:00:00",
+	TimeZone = "India Standard Time"
 };
 
 var endDateTime = new DateTimeTimeZone
 {
-	DateTime = "2022-01-26T17: 00: 00",
-	TimeZone = "Pacific Standard Time"
+	DateTime = "2022-01-26T17:00:00",
+	TimeZone = "Pacific Standard Time"
 };
 
 await graphClient.BookingBusinesses["{bookingBusiness-id}"]

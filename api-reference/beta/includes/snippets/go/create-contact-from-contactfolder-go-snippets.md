@@ -21,7 +21,7 @@ requestBody.SetGivenName(&givenName)
 initials := "initials-value"
 requestBody.SetInitials(&initials) 
 
-result, err := graphClient.Me().ContactFoldersById("contactFolder-id").Contacts().Post(requestBody)
+result, err := graphClient.Me().ContactFoldersById("contactFolder-id").Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

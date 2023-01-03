@@ -28,8 +28,10 @@ None.
 |category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|When a workflow was created.|
 |description|String|A string that describes the purpose of the workflow.|
-|displayName|String|A string to identify the workflow. |
+|displayName|String|A string to identify the workflow.|
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines when and for who the workflow will run.|
+|isEnabled|Boolean|Whether the workflow is enabled or disabled. If this setting is `true`, the workflow can be run on demand or on schedule when **isSchedulingEnabled** is `true`.|
+|isSchedulingEnabled|Boolean|If `true`, the Lifecycle Workflow engine executes the workflow based on the schedule defined by tenant settings. Cannot be `true` for a disabled workflow (where **isEnabled** is `false`).|
 |lastModifiedDateTime|DateTimeOffset|When the workflow was last modified.|
 
 ## Relationships
@@ -62,6 +64,8 @@ The following is a JSON representation of the resource.
   "executionConditions": {
     "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
   },
+  "isEnabled": "Boolean",
+  "isSchedulingEnabled": "Boolean",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```

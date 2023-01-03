@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Planner().TasksById("plannerTask-id").ProgressTaskBoardFormat().Get()
+result, err := graphClient.Planner().TasksById("plannerTask-id").ProgressTaskBoardFormat().Get(context.Background(), nil)
 
 
 ```

@@ -63,18 +63,18 @@ The following is an example of a request.
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
 Content-Type: application/json
 
-{ 
-    "staffIds": [ 
-        "311a5454-08b2-4560-ba1c-f715e938cb79" 
-    ], 
-    "startDateTime": { 
-        "dateTime": "2022-01-25T00: 00: 00", 
-        "timeZone": "India Standard Time" 
-    }, 
-    "endDateTime": { 
-        "dateTime": "2022-01-26T17: 00: 00", 
-        "timeZone": "Pacific Standard Time" 
-    } 
+{
+    "staffIds": [
+        "311a5454-08b2-4560-ba1c-f715e938cb79"
+    ],
+    "startDateTime": {
+        "dateTime": "2022-01-25T00:00:00",
+        "timeZone": "India Standard Time"
+    },
+    "endDateTime": {
+        "dateTime": "2022-01-26T17:00:00",
+        "timeZone": "Pacific Standard Time"
+    }
 }
 ```
 
@@ -88,6 +88,18 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusiness-getstaffavailability-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingbusiness-getstaffavailability-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-getstaffavailability-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/bookingbusiness-getstaffavailability-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

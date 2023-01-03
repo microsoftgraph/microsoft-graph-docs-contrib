@@ -19,38 +19,22 @@ $accessContainer->setAccessContainerType(new DelegatedAdminAccessContainerType('
 $requestBody->setAccessContainer($accessContainer);
 $accessDetails = new DelegatedAdminAccessDetails();
 $unifiedRolesUnifiedRole1 = new UnifiedRole();
-$additionalData = [
-'roleDefinitionId' => '29232cdf-9323-42fd-ade2-1d097af3e4de', 
-];
-$unifiedRolesUnifiedRole1->setAdditionalData($additionalData);
-
+$unifiedRolesUnifiedRole1->setRoleDefinitionId('29232cdf-9323-42fd-ade2-1d097af3e4de');
 
 
 $unifiedRolesArray []= $unifiedRolesUnifiedRole1;
 $unifiedRolesUnifiedRole2 = new UnifiedRole();
-$additionalData = [
-'roleDefinitionId' => 'f2ef992c-3afb-46b9-b7cf-a126ee74c451', 
-];
-$unifiedRolesUnifiedRole2->setAdditionalData($additionalData);
-
+$unifiedRolesUnifiedRole2->setRoleDefinitionId('f2ef992c-3afb-46b9-b7cf-a126ee74c451');
 
 
 $unifiedRolesArray []= $unifiedRolesUnifiedRole2;
 $unifiedRolesUnifiedRole3 = new UnifiedRole();
-$additionalData = [
-'roleDefinitionId' => '729827e3-9c14-49f7-bb1b-9608f156bbb8', 
-];
-$unifiedRolesUnifiedRole3->setAdditionalData($additionalData);
-
+$unifiedRolesUnifiedRole3->setRoleDefinitionId('729827e3-9c14-49f7-bb1b-9608f156bbb8');
 
 
 $unifiedRolesArray []= $unifiedRolesUnifiedRole3;
 $unifiedRolesUnifiedRole4 = new UnifiedRole();
-$additionalData = [
-'roleDefinitionId' => '3a2c62db-5318-420d-8d74-23affee5d9d5', 
-];
-$unifiedRolesUnifiedRole4->setAdditionalData($additionalData);
-
+$unifiedRolesUnifiedRole4->setRoleDefinitionId('3a2c62db-5318-420d-8d74-23affee5d9d5');
 
 
 $unifiedRolesArray []= $unifiedRolesUnifiedRole4;

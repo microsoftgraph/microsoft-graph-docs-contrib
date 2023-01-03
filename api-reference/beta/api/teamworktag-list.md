@@ -1,9 +1,9 @@
 ---
 title: "List teamworkTags"
 description: "Get a list of the teamworkTag objects and their properties."
-author: "anniecolonna"
+author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [tags](../resources/teamworktag.md) objects and their properties.
+Get a list of the [tag](../resources/teamworktag.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,11 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|TeamworkTag.Read, TeamworkTag.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
-
-## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|members|[teamworkTag](../resources/teamworktag.md) collection|Tags assigned to a team.|
 
 ## HTTP request
 
@@ -39,7 +34,7 @@ GET /teams/{team-Id}/tags
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|

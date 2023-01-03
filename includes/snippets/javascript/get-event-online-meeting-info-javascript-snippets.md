@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/events/AAMkADAGu0AABIGYDZAAA=')
+let event = await client.api('/me/events/AAMkADAGu0AABIGYDZAAA=')
 	.select('isOnlineMeeting,onlineMeetingProvider,onlineMeeting')
 	.get();
 

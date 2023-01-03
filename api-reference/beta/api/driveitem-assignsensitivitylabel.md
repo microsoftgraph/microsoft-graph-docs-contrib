@@ -12,16 +12,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Asynchronously assign a sensitivity label to a [driveItem][item-resource].
+Asynchronously assign a sensitivity label to a [driveItem][item-resource]. 
+
+This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. 
+
+For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
+
+> [!NOTE] 
+> Before you call this API with application permissions, you must request access. To request access, fill out the [request form](https://aka.ms/PreviewSPOPremiumAPI). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)                                                             |
-|:--------------------------------------|:--------------------------------------------------------------------------------------------------------|
-|Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All                                               |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                                                                    |
-|Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                                                |
+|Permission type                        | Permissions (from least to most privileged)                                            |
+|:--------------------------------------|:---------------------------------------------------------------------------------------|
+|Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                               |
+|Delegated (personal Microsoft account) | Not supported.                                                                         |
+|Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                               |
 
 ## HTTP request
 
@@ -53,7 +60,7 @@ In the request body, provide the ID for the sensitivity label that is to be assi
 | Name                | Value        |Description          |
 |:--------------------|:-----------------------|:---------------------------------|
 | sensitivityLabelId  | String  | Required. ID of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
-| assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
+| assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta&preserve-view=true#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
 | justificationText   | String | Optional. Justification text for audit purposes. Required when downgrading/removing a label.  |
 
 ## Response
@@ -62,6 +69,7 @@ If successful, the API returns a `202 Accepted` HTTP response code with an empty
 For more details about how to monitor the progress of an assign sensitivity label operation, see [monitoring long-running operations](/graph/long-running-actions-overview).
 
 In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the operation.
+Also, Few Irm Protected sensitivity labels cannot be updated by Application and need delegated user access to validate if the user has proper rights, For these scenario the API will throw `Not Supported` response code.
 
 The following table lists the possible values for the error types.
 
@@ -78,7 +86,9 @@ The following table lists the possible values for the error types.
 
 The following is an example of a request.
 
-<!-- { "blockType": "request", "name": "assignSensitivityLabel", "tags": "service.graph" } -->
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "assignSensitivityLabel", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
 ``` http
 POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
 Content-Type: application/json
@@ -89,6 +99,13 @@ Content-Type: application/json
   "justificationText": "test_justification"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assignsensitivitylabel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

@@ -12,7 +12,7 @@ description := "Lifetime Achievement award from the International Association of
 requestBody.SetDescription(&description) 
 displayName := "Lifetime Achievement Award For Excellence in Branding"
 requestBody.SetDisplayName(&displayName) 
-issuedDate := "Date"
+issuedDate := date
 requestBody.SetIssuedDate(&issuedDate) 
 issuingAuthority := "International Association of Branding Management"
 requestBody.SetIssuingAuthority(&issuingAuthority) 
@@ -21,7 +21,7 @@ requestBody.SetThumbnailUrl(&thumbnailUrl)
 webUrl := "https://www.iabm.io"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Awards().Post(requestBody)
+result, err := graphClient.Me().Profile().Awards().Post(context.Background(), requestBody, nil)
 
 
 ```

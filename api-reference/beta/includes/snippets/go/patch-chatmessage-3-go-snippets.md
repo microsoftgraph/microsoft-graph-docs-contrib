@@ -18,7 +18,7 @@ importance := graphmodels.NORMAL_CHATMESSAGEIMPORTANCE
 requestBody.SetImportance(&importance) 
 locale := "en-us"
 requestBody.SetLocale(&locale) 
-from := graphmodels.Newfrom()
+from := graphmodels.NewChatMessageFromIdentitySet()
 application := null
 from.SetApplication(&application) 
 device := null
@@ -88,8 +88,12 @@ reactions := []graphmodels.ChatMessageReactionable {
 
 }
 requestBody.SetReactions(reactions)
+messageHistory := []graphmodels.ChatMessageHistoryItemable {
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(requestBody)
+}
+requestBody.SetMessageHistory(messageHistory)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

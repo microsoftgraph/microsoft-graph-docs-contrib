@@ -11,7 +11,7 @@ requestBody := graphmodels.NewContinuousAccessEvaluationPolicy()
 migrate := true
 requestBody.SetMigrate(&migrate) 
 
-graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(requestBody)
+result, err := graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```
