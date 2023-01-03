@@ -1,7 +1,7 @@
 ---
 title: "List history"
 description: "Get the riskyUserHistoryItems from the history navigation property."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

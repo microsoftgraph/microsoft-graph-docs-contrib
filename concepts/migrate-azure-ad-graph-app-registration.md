@@ -4,6 +4,7 @@ description: "Describes app registration, permission, and consent migration from
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Review app registration, permissions, and consent

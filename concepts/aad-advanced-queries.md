@@ -4,6 +4,7 @@ description: "Azure AD directory objects support advanced query capabilities to 
 author: "Licantrop0"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 11/23/2022
 ---
 
 # Advanced query capabilities on Azure AD directory objects

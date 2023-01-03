@@ -4,6 +4,7 @@ description: "Before Azure AD Graph is retired, you can use these options to con
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Configure required Azure AD Graph permissions for an app registration
@@ -336,9 +337,9 @@ Create a new PowerShell script named **updatePermissions.ps1** and add the follo
 
 #### Request
 
-# [Azure AD Graph permissions only](#tab/powershell)
+# [Azure AD Graph permissions only](#tab/updatepermissions-azureadgraph-powershell)
 [!INCLUDE [addAzureADPermissions](includes/azure-ad-graph-migration-scripts/azureadgraphpermissions.md)]
-# [Azure AD and Microsoft Graph permissions](#tab/powershell-1)
+# [Azure AD and Microsoft Graph permissions](#tab/updatepermissions-azureadgraph-msgraph-powershell)
 [!INCLUDE [addAzureAD+MicrosoftGraphPermissions](includes/azure-ad-graph-migration-scripts/azureadgraph-microsoftgraph-permissions.md)]
 
 ---
