@@ -345,7 +345,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "moveToCatalog",
           "ChangeType": "Addition",
-          "Description": "Added the [moveToCatalog](https://learn.microsoft.com/en-us/graph/api/accessPackage?view=graph-rest-beta) method to the [accessPackage](https://learn.microsoft.com/en-us/graph/api/accessPackage?view=graph-rest-beta) resource.",
+          "Description": "Added the [moveToCatalog](https://learn.microsoft.com/en-us/graph/api/accesspackage-movetocatalog?view=graph-rest-beta) method to the [accessPackage](https://learn.microsoft.com/en-us/graph/api/resources/accesspackage?view=graph-rest-beta) resource.",
           "Target": "accessPackage"
         }
       ],

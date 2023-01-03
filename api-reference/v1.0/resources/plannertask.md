@@ -1,6 +1,6 @@
 ---
 title: "plannerTask resource type"
-description: "The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a plan and can be assigned to a bucket in a plan. Each task object has a details object which can contain more information about the task. See overview for more information regarding relationships between group, plan and task."
+description: "Represents a Planner task in Microsoft 365."
 ms.localizationpriority: high
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](planner-overview.md) for more information regarding relationships between group, plan and task.
+Represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. For more information about relationships between group, plan, and task, See [Use the Planner REST API](planner-overview.md).
 
 
 ## Methods
@@ -57,7 +57,7 @@ The **plannerTask** resource represents a Planner task in Microsoft 365. A Plann
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -82,7 +82,7 @@ Here is a JSON representation of the resource.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "dueDateTime": "String (timestamp)",
-  "hasDescription": true,
+  "hasDescription": "Boolean",
   "id": "String (identifier)",
   "orderHint": "String",
   "percentComplete": "Int32",

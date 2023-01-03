@@ -28,7 +28,7 @@ You can retrieve the next page of results by sending the URL value of the `@odat
 https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
 ```
 
-Microsoft Graph will continue to return a reference to the next page of results in the `@odata.nextLink` property with each response until all pages of the results have been read. To read all results, you must continue to all Microsoft Graph with the `@odata.nextLink` property returned in each response until the `@odata.nextLink` property is no longer returned.
+Microsoft Graph will continue to return a reference to the next page of results in the `@odata.nextLink` property with each response until all pages of the results have been read. To read all results, you must continue to call Microsoft Graph with the `@odata.nextLink` property returned in each response until the `@odata.nextLink` property is no longer returned.
 
 >**Important:** You should include the entire URL in the `@odata.nextLink` property in your request for the next page of results. Depending on the API that the query is being performed against, the `@odata.nextLink` URL value will contain either a `$skiptoken` or a `$skip` query parameter. The URL also contains all the other query parameters present in the original request. Do not try to extract the `$skiptoken` or `$skip` value and use it in a different request. 
 
