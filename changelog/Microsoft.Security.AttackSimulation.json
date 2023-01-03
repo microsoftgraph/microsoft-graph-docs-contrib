@@ -53,22 +53,6 @@
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
           "ApiChange": "Enum type",
-          "ChangedApiName": "payloadSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **payloadSource** enumeration type.",
-          "Target": "payloadSource"
-        },
-        {
-          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "payloadStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the **payloadStatus** enumeration type.",
-          "Target": "payloadStatus"
-        },
-        {
-          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enum type",
           "ChangedApiName": "payloadTheme",
           "ChangeType": "Addition",
           "Description": "Added the **payloadTheme** enumeration type.",
