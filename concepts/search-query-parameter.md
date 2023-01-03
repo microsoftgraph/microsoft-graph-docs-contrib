@@ -4,6 +4,7 @@ description: "Microsoft Graph supports the $search OData query parameter to rest
 author: "mumbi-o"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/08/2022
 ---
 
 # Use the $search query parameter
@@ -23,6 +24,10 @@ If you do a search on messages and specify only a value without specific message
 
 The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
 
+<!-- {
+  "blockType": "request",
+  "name": "search_my_messages"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
@@ -63,6 +68,10 @@ Searches on people occur on both the **displayName** and **emailAddress** proper
 
 The following request does a search for a person named "Irene McGowen" in the **displayName** and **emailAddress** properties in each person in the **people** collection of the signed-in user. Because a person named "Irene McGowan" is relevant to the signed-in user, the information for "Irene McGowan" is returned.
 
+<!-- {
+  "blockType": "request",
+  "name": "search_my_people"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
@@ -142,7 +151,7 @@ For example:
   "name": "search_groups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo OR mail:onevideo"
+GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo" OR "mail:onevideo"
 ```
 
 # [C#](#tab/csharp)
