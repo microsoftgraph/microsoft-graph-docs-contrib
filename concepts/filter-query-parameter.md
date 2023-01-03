@@ -4,6 +4,7 @@ description: "Learn how to use the $filter OData query parameter and its operato
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/08/2022
 ---
 
 # Use the $filter query parameter
@@ -57,12 +58,20 @@ collection.Any(property => property.subProperty == "value-to-match")
 
 For example, the **imAddresses** property of the `user` resource contains a collection of String primitive types. The following query retrieves only users with an imAddress of `admin@contoso.com`.
 
+<!-- {
+  "blockType": "request",
+  "name": "filter-query-parameter-string-collection-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(i:i eq 'admin@contoso.com')
 ```
 
 The **assignedLicenses** property of the `user` resource contains a collection of **assignedLicense** objects, a complex type with two properties, **skuId** and **disabledPlans**. The following query retrieves only users with an assigned license identified by the **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
 
+<!-- {
+  "blockType": "request",
+  "name": "filter-query-parameter-complex-collection-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
@@ -70,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuI
 To negate the result of the expression inside the `any` clause, use the `not` operator, not the `ne` operator. For example, the following query retrieves only users who aren't assigned the **imAddress** of `admin@contoso.com`.
 >**Note:** For directory objects like users, the `not` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
 
+<!-- {
+  "blockType": "request",
+  "name": "filter-query-parameter-complex-collection-advancedquery-example"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(i:i eq 'admin@contoso.com'))&$count=true
 ConsistencyLevel: eventual

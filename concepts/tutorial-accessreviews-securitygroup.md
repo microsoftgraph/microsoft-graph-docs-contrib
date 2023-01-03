@@ -4,6 +4,7 @@ description: "Learn how to use the access reviews API to review access to a secu
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Review access to your security groups using the access reviews API in Microsoft Graph
