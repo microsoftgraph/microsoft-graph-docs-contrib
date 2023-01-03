@@ -4,6 +4,7 @@ description: "Learn how to migrate yor apps from Azure Active Directory (Azure A
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Migrate your apps from Azure AD Graph to Microsoft Graph

@@ -749,6 +749,7 @@ Namespace: microsoft.graph
 |signin|
 |user|
 |unknownFutureValue|
+|servicePrincipal|
 
 ### riskDetectionTimingType values
 
@@ -1458,6 +1459,8 @@ Possible values for user account types (group membership), per Windows definitio
 |hidden|
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
 |m365DAdminDismissedDetection|
 
 ### riskEventTypes values
@@ -2154,6 +2157,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|teamMember|
 
 ### answerInputType values 
 
