@@ -27,7 +27,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 |:---      |:---  |:---         |
 |displayName|String|The name for the supported region. Read-only.|
 |id|String|The unique identifier for the supported region. Read-only.|
-|regionGroup|[cloudPcRegionGroup](#cloudpcregiongroup-values)|The geographic group this region belongs to. Multiple regions can belong to one region group. For example, the Europe region group contains the Northern Europe and Western Europe regions. A customer can select a region group when provisioning a Cloud PC. The Cloud PC will be put under one of the regions under the group based on resource status. Possible values are: `default`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `euap`, `usGovernment`, `usGovernmentDod`, `norway`, `switzerland`，`southKorea`, `unknownFutureValue`. Read-only.|
+|regionGroup|[cloudPcRegionGroup](#cloudpcregiongroup-values)|The geographic group this region belongs to. Multiple regions can belong to one region group. For example, the Europe region group contains the Northern Europe and Western Europe regions. A customer can select a region group when provisioning a Cloud PC. The Cloud PC will be put under one of the regions under the group based on resource capacity. The region with more quota will be chosen. Possible values are: `default`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `euap`, `usGovernment`, `usGovernmentDod`, `norway`, `switzerland`，`southKorea`, `unknownFutureValue`. Read-only.|
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
 |supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`, `unknownFutureValue`. Read-only.|
 
@@ -58,13 +58,13 @@ Represents a supported region to establish an Azure network connection for Cloud
 | asia               | The region belongs to the region group: Asia.                                      |
 | india              | The region belongs to the region group: India.                                     |
 | southAmerica       | The region belongs to the region group: South America.                             |
+| euap               | The region belongs to the region group: Early Update Access Program Regions.       |
 | usGovernment       | The region belongs to the region group: US Government.                             |
 | usGovernmentDod    | The region belongs to the region group: US Government Department of Defense (DOD). |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                  |
 | norway             | The region belongs to the region group: Norway.                                    |
 | switzerland        | The region belongs to the region group: Switzerland.                               |
 | southKorea         | The region belongs to the region group: South Korea.                               |
-| uae                | The region belongs to the region group: UAE.                                       |
 
 ## Relationships
 
