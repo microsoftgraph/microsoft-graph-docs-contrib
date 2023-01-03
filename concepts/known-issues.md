@@ -153,7 +153,7 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 ### Create channel
 
-When you create a channel, if you use special characters in your channel name, the [Get filesFolder](../api-reference/beta/api/channel-get-filesfolder.md) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
+When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
 
 - Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
 - Start with an underscore (_) or period (.), or end with a period (.).
