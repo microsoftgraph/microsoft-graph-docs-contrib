@@ -15,13 +15,10 @@ Create a new [channel](../resources/channel.md) in a team, as specified in the r
 
 If you're creating a private channel, you can add a maximum of 200 members.
 
-> [!IMPORTANT]
->
-> If you use special characters in your channel name, the [Get filesFolder](channel-get-filesfolder.md) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
->
-> - Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
-> - Start with an underscore (_) or period (.), or end with a period (.).
+> [!NOTE]
+> This API has a `[known issue](../../../concepts/known-issues.md#create-channel)` related to using special characters in channel name.
 
+ 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
