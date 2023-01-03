@@ -59,6 +59,7 @@ The following table shows the properties that can be updated for the [cloudPcPro
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
 |imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
 |windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|The Windows operation system settings for the provisioned Cloud PCs with this provisioning policy, such as operation system language setting.|
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are dedicated and shared. It will be dedicated by default if it's not specified when creating provisioningPolicy. The possible values are: `dedicated`, `shared`, `unknownFutureValue`.|
 
 ## Response
 

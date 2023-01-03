@@ -133,7 +133,8 @@ Content-Type: application/json
     "windowsSettings": {
       "language": "en-US"
     },
-    "managedBy": "windows365"
+    "managedBy": "windows365",
+    "provisioningType": "dedicated"
 }
 ```
 
@@ -224,7 +225,8 @@ Content-Type: application/json
           }
       }
     ],
-    "managedBy": "windows365"
+    "managedBy": "windows365",
+    "provisioningType": "dedicated"
 }
 ```
 
@@ -312,6 +314,7 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
-    }
+    },
+    "provisioningType": "dedicated"
 }
 ```

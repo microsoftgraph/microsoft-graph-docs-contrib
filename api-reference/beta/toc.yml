@@ -10530,6 +10530,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC shared use service plan
+          href: resources/cloudpcshareduseserviceplan.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-shareduseserviceplans.md
+          - name: Get
+            href: api/cloudpcshareduseserviceplan-get.md
         - name: Cloud PC snapshot
           href: resources/cloudpcsnapshot.md
           items:
@@ -12417,28 +12424,28 @@ items:
               href: api/riskyusers-confirmcompromised.md
             - name: Dismiss
               href: api/riskyusers-dismiss.md
-          - name: Service principal risk detection
+            - name: Service principal risk detection
             items:
-            - name: Risk detection
+            - name: Service principal risk detection
               href: resources/serviceprincipalriskdetection.md
-            - name: List
-              href: api/identityprotectionroot-list-serviceprincipalriskdetections.md
-            - name: Get
+            - name: List service principal risk detections
+              href: api/serviceprincipalriskdetection-list.md
+            - name: Get service principal risk detection
               href: api/serviceprincipalriskdetection-get.md
           - name: Risky service principal
             items:
             - name: Risky service principal
               href: resources/riskyserviceprincipal.md
             - name: List risky service principals
-              href: api/identityprotectionroot-list-riskyserviceprincipals.md
+              href: api/riskyserviceprincipals-list.md
             - name: Get risky service principal
-              href: api/riskyserviceprincipal-get.md
+              href: api/riskyserviceprincipals-get.md
             - name: List history
               href: api/riskyserviceprincipal-list-history.md
             - name: Confirm compromised
-              href: api/riskyserviceprincipal-confirmcompromised.md
+              href: api/riskyserviceprincipals-confirmcompromised.md
             - name: Dismiss
-              href: api/riskyserviceprincipal-dismiss.md
+              href: api/riskyserviceprincipals-dismiss.md
         - name: Identity provider
           items:
           - name: Identity provider base
