@@ -32,6 +32,12 @@ In general, subscription operations require read permission to the resource. For
 | Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
 | Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [printer][], [printTaskDefinition][], [team][] |
 
+## Code sample
+
+| Sample Name           | Description | C#  | JavaScript   |
+|:---------------------|:--------------|:---------|:--------|
+|Change Notification| Describes how to send change notifications to user presence in Teams based on user presence status.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)|
+
 ## See also
 
 - [subscription resource type](subscription.md)

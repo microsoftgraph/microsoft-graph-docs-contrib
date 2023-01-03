@@ -67,6 +67,12 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## Code sample
+
+| Sample Name           | Description | C#  | JavaScript   |
+|:---------------------|:--------------|:---------|:--------|
+|Graph API Teams App Installation Life Cycle | Describes how to use Teams App Installation Life Cycle by calling Microsoft Graph APIs. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-app-installation-lifecycle/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-app-installation-lifecycle/nodejs)|
+
 ## See also
 
 - [teamsApp](teamsapp.md)

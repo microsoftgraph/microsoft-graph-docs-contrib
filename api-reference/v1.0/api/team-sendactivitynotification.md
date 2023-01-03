@@ -538,7 +538,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -551,3 +550,9 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+## Code sample
+
+| Sample Name           | Description | C#  | JavaScript   |
+|:---------------------|:--------------|:---------|:--------|
+|Activity Feed Notification| Describes how to send activity feed notification using Graph API in a Teams Tab.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)|

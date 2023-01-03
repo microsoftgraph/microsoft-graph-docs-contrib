@@ -212,6 +212,12 @@ Here is a JSON representation of the resource
 }
 ```
 
+## Code sample
+
+| Sample Name           | Description | C#  | JavaScript   |
+|:---------------------|:--------------|:---------|:--------|
+|Graph Bulk Meetings | Demonstrates how to create Teams meetings in bulk using Graph api. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-bulk-meetings/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-bulk-meetings/nodejs)|
+
 ## See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)

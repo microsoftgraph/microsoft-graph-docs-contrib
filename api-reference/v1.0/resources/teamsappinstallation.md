@@ -61,6 +61,7 @@ The following is a JSON representation of the resource.
   "id": "string"
 }
 ```
+
 ## Code sample
 
 | Sample Name           | Description | C#  | JavaScript   |

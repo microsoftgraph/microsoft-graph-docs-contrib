@@ -65,6 +65,12 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 }
 ```
 
+## Code sample
+
+| Sample Name           | Description | C#  | JavaScript   |
+|:---------------------|:--------------|:---------|:--------|
+|Graph API Teams App Catalog Life Cycle | Describes how to how to programmatically manage lifecycle for your teams App in catalog by calling Microsoft Graph APIs. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-appcatalog-lifecycle/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-appcatalog-lifecycle/nodejs)|
+
 ## See also
 
 - [teamsAppInstallation](teamsappinstallation.md)
