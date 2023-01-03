@@ -119,7 +119,7 @@ Content-type: application/json
     "determination": "MultiStagedAttack",
     "status": "Active",
     "severity": "Medium",
-    "tags": [
+    "customTags": [
       "Demo"
     ],
     "comments": [
