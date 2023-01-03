@@ -29,8 +29,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Property | Type        | Description |
 |:-------------|:------------|:------------|
-|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `other`, `americanExpress`, ``dhl`, `docuSign`, `dropbox`, `facebook`, `firstAmerican`, `microsoft`, `netflix`, `scotiabank`, ``stewartTitle`, `tesco`, `wellsFargo`, `syrinxCloud`, `adobe`, `teams`, `zoom`
-|
+|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `other`, `americanExpress`, `capitalOne`, `dhl`, `docuSign`, `dropbox`, `facebook`, `firstAmerican`, `microsoft`, `netflix`, `scotiabank`, `stewartTitle`, `tesco`, `wellsFargo`, `syrinxCloud`, `adobe`, `teams`, `zoom`, `unknownFutureValue`. |
 |complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.Possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload.|
@@ -38,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 |detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
 |displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
 |id|String|Unique identifier for the attack simulation and training campaign payload. Inherited from [entity](../resources/entity.md).|
-|industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload. Possible values are: `banking`, `businessServices`, `consumerServices`, `courierServices`, `education`, `energy`, `construction`, `consulting`, `financialServices`, `government`, `healthcare`, `hospitality`, `insurance`, `legal`, `IT`, `manufacturing`, `other`, `retail`, `telecom`, `realEstate`, `unknown`, `unknownFutureValue`|
+|industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload. Possible values are: `unknown`, `other`, `banking`, `businessServices`, `consumerServices`, `education`, `energy`, `construction`, `consulting`, `financialServices`, `government`, `hospitality`, `insurance`, `legal`, `courierServices`, `IT`, `healthcare`, `manufacturing`, `retail`, `telecom`, `realEstate`, `unknownFutureValue`.|
 |isAutomated|Boolean|Indicates whether the attack simulation and training campaign payload was created from an automation flow. Supports `$filter` and `$orderby`. |
 |isControversial|Boolean|Indicates whether the payload is controversial. |
 |isCurrentEvent|Boolean|Indicates whether the payload is from any recent event. |
@@ -52,21 +51,20 @@ Inherits from [entity](../resources/entity.md).
 |source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `tenant`, `global`, `unknownFutureValue`. Inherited from [simulation](../resources/simulation.md).|
 |status|[simulationContentStatus](../resources/simulation.md#simulationcontentsource-values)|Simulation content status. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`. Inherited from [simulation](../resources/simulation.md).|
 |technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
-|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `other`, `accountActivation`, `accountVerification`, `billing`, `cleanUpMail`, `controversial`, `documentReceived`, `expense`, ``incomingMessages`, `invoice`, `itemReceived`, `loginAlert`, `mailReceived`, `password`, `payment`, `payroll`, `personalizedOffer`, `quarantine`, `remoteWork`, `reviewMessage`, `securityUpdate`, `serviceSuspended`, `signatureRequired`, `upgradeMailboxStorage`, `verifyMailbox`, `voicemail`, `advertisement`, `employeeEngagement`
-|
+|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `other`, `accountActivation`, `accountVerification`, `billing`, `cleanUpMail`, `controversial`, `documentReceived`, `expense`, `incomingMessages`, `invoice`, `itemReceived`, `loginAlert`, `mailReceived`, `password`, `payment`, `payroll`, `personalizedOffer`, `quarantine`, `remoteWork`, `reviewMessage`, `securityUpdate`, `serviceSuspended`, `signatureRequired`, `upgradeMailboxStorage`, `verifyMailbox`, `voicemail`, `advertisement`, `employeeEngagement`, `unknownFutureValue`.|
 
 ### payloadTheme values
 
 |Member|Description |
 |:---|:---|
-|accountActivation| Payload as of theme account activation.|
-|accountVerification| Payload theme is of account verfication .|
-|advertisement| Payload with advertisement details.|
+|unknown| The payload theme is not defined. |
+|other| The payload is other.|
+|accountActivation| Payload theme is of account activation.|
+|accountVerification| Payload theme is of account verification.|
 |billing| Payload theme is of billing type.|
 |cleanUpMail| Payload mail cleanup details.|
 |controversial| Payload controversial information.|
 |documentReceived| Payload tells that the document has been received.|
-|employeeEngagement| Payload with employee engagement details.|
 |expense| Payload contains expense-related details.|
 |fax| Payload contains fax-specific details.|
 |financeReport| Payload contains a finance report.|
@@ -75,28 +73,29 @@ Inherits from [entity](../resources/entity.md).
 |itemReceived| Payload contains details about an item received.|
 |loginAlert| Payload contains login alert information.|
 |mailReceived| Payload contains information about a mail received.|
-|other| The payload is other.|
 |password| Payload with password details.|
 |payment| Payload with payment details.|
 |payroll| Payload with payroll-specific details.|
 |personalizedOffer| Payload with details about a personalized offer.|
 |quarantine| Payload with quarantine-related details.|
 |remoteWork| Payload related to as remote work.|
-|reviewMessage| Payload with a review message request|
+|reviewMessage| Payload with a review message request.|
 |securityUpdate| Payload mentioning that a security update is required.|
 |serviceSuspended| Payload mentioning that a service has been suspended.|
 |signatureRequired| Payload telling that a signature is required.|
 |upgradeMailboxStorage| Payload asking to upgrade the mailbox storage.|
 |verifyMailbox| Payload asking for mailbox verification.|
 |voicemail| Payload with voicemail details.|
-|unknown| The payload theme is not defined. |
+|advertisement| Payload with advertisement details.|
+|employeeEngagement| Payload with employee engagement details.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### payloadBrand values
 
 |Member|Description |
 |:---|:---|
-|adobe| Payload brand as Adobe.|
+|unknown| Payload brand as unknown.|
+|other| Payload brand as other.|
 |americanExpress| Payload brand as American Express.|
 |capitalOne| Payload brand as Capital One.|
 |dhl| Payload brand as DHL.|
@@ -106,43 +105,42 @@ Inherits from [entity](../resources/entity.md).
 |firstAmerican| Payload brand as First American.|
 |microsoft| Payload brand as Microsoft.|
 |netflix| Payload brand as Netflix.|
-|other| Payload brand as other.|
 |scotiabank| Payload brand as Scotiabank.|
 |sendGrid| Payload brand as SendGrid.|
 |stewartTitle| Payload brand as Stewart Title.|
-|syrinxCloud| Payload brand as SyrinxCloud.|
-|teams| Payload brand as Teams.|
 |tesco| Payload brand as Tesco.|
 |wellsFargo| Payload brand as Wells Fargo.|
-|unknown| Payload brand as unknown|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|syrinxCloud| Payload brand as Syrinx Cloud.|
+|adobe| Payload brand as Adobe.|
+|teams| Payload brand as Teams.|
 |zoom| Payload brand as Zoom.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### payloadIndustry values
 
 |Member|Description |
 |:---|:---|
+|unknown| Payload industry as unknown.|
+|other| Payload industry as other.|
 |banking| Payload industry as banking.|
 |businessServices| Payload industry as business services.|
-|construction| Payload industry as construction.|
-|consulting| Payload industry as consulting.|
 |consumerServices| Payload industry as consumer services.|
-|courierServices| Payload industry as courier services.|
 |education| Payload industry as education.|
 |energy| Payload industry as energy.|
+|construction| Payload industry as construction.|
+|consulting| Payload industry as consulting.|
 |financialServices| Payload industry as financial services.|
 |government| Payload industry as government.|
-|healthcare| Payload industry as healthcare.|
 |hospitality| Payload industry as hospitality.|
 |insurance| Payload industry as insurance.|
-|IT| Payload industry as IT.|
 |legal| Payload industry as legal.|
+|courierServices| Payload industry as courier services.|
+|IT| Payload industry as IT.|
+|healthcare| Payload industry as healthcare.|
 |manufacturing| Payload industry as manufacturing.|
-|other| Payload industry as other.|
 |retail| Payload industry as retail.|
 |telecom| Payload industry as telecom.|
 |realEstate| Payload industry as real estate.|
-|unknown| Payload industry as unknown.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### payloadComplexity values
