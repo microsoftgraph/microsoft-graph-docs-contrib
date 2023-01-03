@@ -31,7 +31,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcSharedUseServicePlan",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcSharedUseServicePlan](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource",
+                    "Description": "Added the cloudPcSharedUseServicePlan resource",
                     "Target": "cloudPcSharedUseServicePlan"
                 },
                 {
