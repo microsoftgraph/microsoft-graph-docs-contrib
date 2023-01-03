@@ -16,7 +16,7 @@ Create a new [channel](../resources/channel.md) in a team, as specified in the r
 If you're creating a private channel, you can add a maximum of 200 members.
 
 > [!NOTE]
-> This API has a [known issue](/Graph/Known-Issues#create-channel) related to using special characters in channel name.
+> The [Get filesFolder](/graph/api/channel-get-filesfolder) API has a [known issue](/Graph/Known-Issues#create-channel) related to using special characters in channel name.
 
 ## Permissions
 
