@@ -10563,7 +10563,7 @@ items:
             href: api/cloudpcusersetting-delete.md
           - name: Assign
             href: api/cloudpcusersetting-assign.md
-        - name: Monitoring admin issues
+        - name: Alert monitoring
           items:
           - name: Monitoring
             href: resources/devicemanagement-monitoring.md
@@ -12699,6 +12699,24 @@ items:
                 href: api/smsAuthenticationMethodConfiguration-update.md
               - name: Delete
                 href: api/smsAuthenticationMethodConfiguration-delete.md
+            - name: Voice call policy
+              href: resources/voiceAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/voiceAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/voiceAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/voiceAuthenticationMethodConfiguration-delete.md
+            - name: Third-party software OATH policy
+              href: resources/softwareoathAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/softwareoathAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/softwareoathAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/softwareoathAuthenticationMethodConfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -15732,7 +15750,7 @@ items:
           href: api/documentsetversion-delete.md
         - name: Restore
           href: api/documentsetversion-restore.md
-      - name: Pages
+      - name: Pages (preview)
         items:
         - name: Site page
           href: resources/sitepage.md
@@ -15796,7 +15814,7 @@ items:
           href: api/list-list-operations.md
         - name: Get operation
           href: api/richlongrunningoperation-get.md
-      - name: Site permission
+      - name: Site permission (preview)
         items:
         - name: Permission
           href: resources/permission.md

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Currently, subscriptions are enabled for the following resources.
 
-> **Note** Subscriptions marked with an asterisk (*) are supported in the `/beta` endpoint only.
+> **Note** Subscriptions to resources marked with an asterisk (*) are supported on the `/beta` endpoint only.
 
 - An [alert][] from the Microsoft Graph Security API.
 - A [baseTask][] (deprecated) of a user in Microsoft To-Do.*
