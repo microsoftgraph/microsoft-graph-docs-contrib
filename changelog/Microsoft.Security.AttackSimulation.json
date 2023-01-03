@@ -13,22 +13,6 @@
         {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
           "ApiChange": "Enum type",
-          "ChangedApiName": "accountType",
-          "ChangeType": "Addition",
-          "Description": "Added the **accountType** enumeration type.",
-          "Target": "accountType"
-        },
-        {
-          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "addressBookAccountType",
-          "ChangeType": "Addition",
-          "Description": "Added the **addressBookAccountType** enumeration type.",
-          "Target": "addressBookAccountType"
-        },
-        {
-          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
-          "ApiChange": "Enum type",
           "ChangedApiName": "attackSimulationOperationType",
           "ChangeType": "Addition",
           "Description": "Added the **attackSimulationOperationType** enumeration type.",

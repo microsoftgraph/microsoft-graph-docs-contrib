@@ -110,7 +110,7 @@ Inherits from [entity](../resources/entity.md).
 |Member|Description |
 |:---|:---|
 |unknown| The simulation content source is not defined. |
-|global| The simulation content status is global. |
+|global| The simulation content source is global. |
 |tenant| The simulation content source is tenant. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 

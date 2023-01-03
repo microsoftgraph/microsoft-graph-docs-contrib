@@ -34,10 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /security/attackSimulation/simulations
 ```
 
-## Optional query parameters
-
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
-
 ## Request headers
 
 |Header         |Value                    |

@@ -1,6 +1,6 @@
 ---
 title: "List payloads"
-description: "Get a list of attack simulation campaigns payload."
+description: "Get a list of attack simulation campaigns payload. Api expects mandatory parameter **source** to filter and query the respective data source."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of attack simulation campaigns payload.
+Get a list of attack simulation campaigns payload. Api expects mandatory parameter **source** to filter and query the respective data source.
 
 ## Permissions
 
