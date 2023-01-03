@@ -113,6 +113,12 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## Code sample
+
+| Sample Name           | Description | C#  | JavaScript   |
+|:---------------------|:--------------|:---------|:--------|
+|Graph API Chat Life Cycle| Describes how to use Teams App Chat Life Cycle by calling Microsoft Graph APIs.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/nodejs)|
+
 ## See also
 
 - [channel](channel.md)
