@@ -5,6 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 10/05/2022
 ---
 
 # Assign reviewers to your access review using the Microsoft Graph API

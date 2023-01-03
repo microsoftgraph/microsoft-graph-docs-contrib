@@ -1,7 +1,7 @@
 ---
 title: "Update emailAuthenticationMethodConfiguration"
 description: "Update the properties of an emailAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

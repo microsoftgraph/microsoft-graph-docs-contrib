@@ -5,6 +5,7 @@ author: AlexFilipin
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 12/08/2022
 ---
 
 # Configure the employeeLeaveDateTime property for a user

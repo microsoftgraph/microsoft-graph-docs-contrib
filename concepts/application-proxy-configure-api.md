@@ -5,6 +5,7 @@ author: "FaithOmbongi"
 ms.topic: "conceptual"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 01/11/2022
 ---
 
 # Configure Application Proxy using the Microsoft Graph API

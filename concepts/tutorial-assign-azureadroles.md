@@ -4,6 +4,7 @@ description: "Learn how to create a role-assignable security group for IT Helpde
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph
