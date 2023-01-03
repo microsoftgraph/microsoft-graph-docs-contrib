@@ -4,6 +4,7 @@ description: "Learn how to use the access reviews API to review external/guest u
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph

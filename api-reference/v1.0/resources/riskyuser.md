@@ -1,7 +1,7 @@
 ---
 title: "riskyUser resource type"
 description: "risky users item"
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

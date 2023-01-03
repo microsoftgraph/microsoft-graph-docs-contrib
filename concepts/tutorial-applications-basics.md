@@ -5,6 +5,7 @@ author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
+ms.date: 12/08/2022
 ---
 
 # Manage an Azure AD application using Microsoft Graph

@@ -4,6 +4,7 @@ description: "Learn how to use the access reviews API to periodically review use
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Review access to privileged roles using the access reviews API in Microsoft Graph

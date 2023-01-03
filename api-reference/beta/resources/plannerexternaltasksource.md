@@ -11,7 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains information about the relationship of a [plannerTask](plannerTask.md) to a user experience outside of Planner. Tasks in Planner can be surfaced in or synced with other experiences to track work in the context of that experience. Data in the plannerExternalTaskSource can be displayed in a user interface, used for sync information utilized by external services, or used to simply point to where a task was created in an external service. The combination of contextScenarioId and externalObjectId is enforced to be unique within a tenant. If creation is called with an existing contextScenarioId and externalObjectId, the existing object is returned with no modifications. This type derives from [plannerTaskCreation](plannerTaskCreation.md).
+Contains information about the relationship of a [plannerTask](plannerTask.md) to a user experience outside of Planner. This allows surfacing or syncing tasks in Planner with other experiences to track work in the context of that experience. 
+
+You can display data in a **plannerExternalTaskSource** in a user interface to sync information for an external service, or to simply point to where a task was created in the external service. 
+
+The combination of the **contextScenarioId** and **externalObjectId** properties is unique within a tenant. If creation is called with existing **contextScenarioId** and **externalObjectId** values, the existing object is returned with no modifications. 
+
+This type is derived from [plannerTaskCreation](plannerTaskCreation.md).
 
 ## Properties
 |Property|Type|Description|
