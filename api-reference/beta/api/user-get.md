@@ -1,5 +1,5 @@
 ---
-title: "Get a user"
+title: "Get user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Get a user
+# Get user
 
 Namespace: microsoft.graph
 
@@ -405,8 +405,54 @@ Content-type: application/json
     "customSecurityAttributes": null
 }
 ```
+### Example 5: Use `$filter` to retrieve specific users based on a property value
 
-### Example 5: Get the value of a schema extension for a user
+This example shows how to use the `$filter` query parameter along with the `endswith` clause to retrieve a user with a specific value in the **mail** attribute. This request filters and returns all users with a mail address ending with contoso.com.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_user_filter"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$count=true&ConsistencyLevel=eventual&$filter=endsWith(mail,'@contoso.com')
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "@odata.count": 1350,
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@contoso.com')&ConsistencyLevel=eventual&$skiptoken=m~AQAnOzEyN2NjN2I3NTQzYzQ0YzA4NjlhYjU5MzUzYmNhNGI2OzswOzA7",
+    "value": [
+        {
+            "businessPhones": [],
+            "displayName": "Phantom Space",
+            "givenName": "Space",
+            "jobTitle": null,
+            "mail": "Space.Phantom@cloudezzy.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": "Phantom",
+            "userPrincipalName": "Space.Phantom@contoso.com",
+            "id": "00111916-c5c5-4dd2-9e31-aab96af7511e"
+        }
+    ]
+}
+
+### Example 6: Get the value of a schema extension for a user
 
 In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
 
@@ -470,9 +516,6 @@ Content-type: application/json
     }
 }
 ```
-
-
-
 
 ## See also
 
