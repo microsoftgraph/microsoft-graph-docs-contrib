@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mobileContainedApp",
           "ChangeType": "Addition",
-          "Description": "Added the [mobileContainedApp](https://learn.microsoft.com/graph/api/resources/intune-mobileContainedApp?view=graph-rest-1.0) resource",
+          "Description": "Added the [mobileContainedApp](https://learn.microsoft.com/graph/api/resources/intune-apps-mobilecontainedapp.md?view=graph-rest-1.0) resource",
           "Target": "mobileContainedApp"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsMicrosoftEdgeApp",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsMicrosoftEdgeApp](https://learn.microsoft.com/graph/api/resources/intune-windowsMicrosoftEdgeApp?view=graph-rest-1.0) resource",
+          "Description": "Added the [windowsMicrosoftEdgeApp](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsmicrosoftedgeapp?view=graph-rest-1.0) resource",
           "Target": "windowsMicrosoftEdgeApp"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsUniversalAppXContainedApp",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsUniversalAppXContainedApp](https://learn.microsoft.com/graph/api/resources/intune-windowsUniversalAppXContainedApp?view=graph-rest-1.0) resource",
+          "Description": "Added the [windowsUniversalAppXContainedApp](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsUniversalAppXContainedApp?view=graph-rest-1.0) resource",
           "Target": "windowsUniversalAppXContainedApp"
         },
         {
