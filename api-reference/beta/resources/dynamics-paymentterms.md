@@ -29,7 +29,7 @@ Represents a [payment term](../resources/dynamics-paymentterms.md) in Dynamics 3
 ## Properties
 | Property	                   | Type	  |Description                                                |
 |:-----------------------------|:-------|:----------------------------------------------------------|
-|calculateDiscountOnCreditMemos|boolean |Specifies if the discount should be applied to credit memos. **True** indicates a discount will be given, **false** indicates a discount will not be given.|
+|calculateDiscountOnCreditMemos|Boolean |Specifies whether the discount should be applied to credit memos. `True` indicates a discount will be given; `false`* indicates a discount will not be given.|
 |code                          |string  |Specifies the payment term code.                           |
 |discountDateCalculation       |string  |Specifies the formula that is used to calculate the date that a payment must be made in order to obtain a discount.|
 |discountPercent               |decimal |Specifies the discount percentage that is applied for early payment of an invoice amount.|
