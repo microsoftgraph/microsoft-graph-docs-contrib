@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsAppXAppAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-windowsAppXAppAssignmentSettings?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsAppXAppAssignmentSettings?view=graph-rest-1.0) resource type.",
           "Target": "windowsAppXAppAssignmentSettings"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mobileContainedApp",
           "ChangeType": "Addition",
-          "Description": "Added the [mobileContainedApp](https://learn.microsoft.com/graph/api/resources/intune-apps-mobilecontainedapp.md?view=graph-rest-1.0) resource",
+          "Description": "Added the [mobileContainedApp](https://learn.microsoft.com/graph/api/resources/intune-apps-mobilecontainedappview=graph-rest-1.0) resource",
           "Target": "mobileContainedApp"
         },
         {
@@ -129,7 +129,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditActivityTypes",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditActivityTypes](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getAuditActivityTypes](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-getauditactivitytypes?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
           "Target": "auditEvent"
         },
         {
@@ -137,7 +137,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditCategories",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-getauditcategories?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
           "Target": "auditEvent"
         }
       ],
@@ -155,7 +155,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "macOSMicrosoftDefenderApp",
           "ChangeType": "Addition",
-          "Description": "Added the [macOSMicrosoftDefenderApp](https://learn.microsoft.com/graph/api/resources/intune-macOSMicrosoftDefenderApp?view=graph-rest-beta) resource",
+          "Description": "Added the [macOSMicrosoftDefenderApp](https://learn.microsoft.com/graph/api/resources/intune-apps-macOSMicrosoftDefenderApp?view=graph-rest-beta) resource",
           "Target": "macOSMicrosoftDefenderApp"
         },
         {
@@ -9915,7 +9915,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "runSchedule",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [deviceHealthScriptAssignment](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta) entity:, **runSchedule** from [runSchedule](https://learn.microsoft.com/graph/api/resources/runSchedule.md?view=graph-rest-beta) to [deviceHealthScriptRunSchedule](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptrunschedule?view=graph-rest-beta), ",
+          "Description": "Changed the type of the following properties on the [deviceHealthScriptAssignment](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta) entity:, **runSchedule** from [runSchedule](https://learn.microsoft.com/graph/api/resources/runScheduleview=graph-rest-beta) to [deviceHealthScriptRunSchedule](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptrunschedule?view=graph-rest-beta), ",
           "Target": "deviceHealthScriptAssignment,runSchedule,deviceHealthScriptRunSchedule"
         },
         {
