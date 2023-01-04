@@ -189,7 +189,7 @@ The search API has the following limitations:
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. The following table lists the combinations that are supported.
 
 | Entity Type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
-|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|
+|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
 |  acronym    |     True   |     -      |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
 |  bookmark    |     -      |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
 |  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
