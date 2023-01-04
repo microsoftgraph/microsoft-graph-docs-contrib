@@ -164,7 +164,7 @@ An active participant is represented as follows:
 
 ## Code sample
 
-| Sample Name           | Description | C#  | JavaScript   |
+| **Sample name** | **Description** | **C#**  | **Node.js**   |
 |:---------------------|:--------------|:---------|:--------|
 |Graph Meeting Notification | Demonstrates how to use  online meeting subscription and sends you the notifications in chat using bot. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/nodejs)|
 

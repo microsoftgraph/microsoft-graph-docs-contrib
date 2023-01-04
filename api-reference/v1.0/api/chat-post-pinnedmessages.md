@@ -114,6 +114,6 @@ Content-Type: application/json
 
 ## Code sample
 
-| Sample Name           | Description | C#  | JavaScript   |
+| **Sample name** | **Description** | **C#**  | **Node.js**   |
 |:---------------------|:--------------|:---------|:--------|
 |Graph Pinned Message| Demonstrates how to pin messages in chat using Graph api. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-pinned-messages/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-pinned-messages/nodejs)|

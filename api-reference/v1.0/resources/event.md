@@ -205,7 +205,7 @@ Here is a JSON representation of the resource
 
 ## Code sample
 
-| Sample Name           | Description | C#  | JavaScript   |
+| **Sample name** | **Description** | **C#**  | **Node.js**   |
 |:---------------------|:--------------|:---------|:--------|
 |Graph Bulk Meetings | Demonstrates how to create Teams meetings in bulk using Graph api. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-bulk-meetings/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-bulk-meetings/nodejs)|
 

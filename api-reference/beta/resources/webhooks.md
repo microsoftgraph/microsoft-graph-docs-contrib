@@ -34,7 +34,7 @@ In general, subscription operations require read permission to the resource. For
 
 ## Code sample
 
-| Sample Name           | Description | C#  | JavaScript   |
+| **Sample name** | **Description** | **C#**  | **Node.js**   |
 |:---------------------|:--------------|:---------|:--------|
 |Change Notification| Describes how to send change notifications to user presence in Teams based on user presence status.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)|
 
