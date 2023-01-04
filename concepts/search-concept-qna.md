@@ -1,0 +1,82 @@
+---
+title: "Use the Microsoft Search API to search qnas"
+description: "Find out how to use the Microsoft Search API in Microsoft Graph to search qnas."
+author: "njerigrevious"
+ms.localizationpriority: medium
+ms.prod: "search"
+---
+
+# Use the Microsoft Search API to search qnas
+
+You can use the Microsoft Search API in Microsoft Graph to search qnas. Administrators can create qnas in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
+
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
+
+After qnas are created, to search for them, in the [searchRequest](/graph/api/resources/searchrequest), in the **entityTypes** property, specify `qna` as the value.
+
+## Example: Search qnas
+
+### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "qna"
+      ],
+      "query": {
+        "queryString":"what is Microsoft Azure"
+      }
+    }
+  ]
+}
+```
+
+### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+  {
+   "@odata.type": "#microsoft.graph.searchResponse",
+   "hitsContainers": [
+    {
+     "@odata.type": "#microsoft.graph.searchHitsContainer",
+     "hits": [
+      {
+        "hitId": "2364ebd9-cd11-4f47-b785-fe378c6233f3",
+        "rank": 1,
+        "resource": {
+          "@odata.type": "#microsoft.graph.search.qna",
+          "id": "2364ebd9-cd11-4f47-b785-fe378c6233f3",
+          "displayName": "what is Microsoft Azure",
+          "description": "Microsoft Azure is a cloud computing platform and an online portal that allows you to access and manage cloud services and resources provided by Microsoft.",
+          "webUrl": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-azure/"
+        }
+      }
+     ],
+     "total": 1,
+     "moreResultsAvailable": false
+    }
+   ]
+  }
+ ]
+}
+```
+
+## Known issues
+
+- Sorting, aggregation and pagination are not supported for qna searches.
+- Combination search with other entity types is not supported. 
+
+## Next steps
+
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)
