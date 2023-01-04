@@ -151,7 +151,7 @@
 				  "ApiChange": "Method",
 				  "ChangedApiName": "PATCH",
 				  "ChangeType": "Addition",
-				  "Description": "Added an [udpate](https://learn.microsoft.com/en-us/graph/api/pronounssettings-update?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://docs.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource, to update the tenant-level settings for pronouns",
+				  "Description": "Added the [udpate](https://learn.microsoft.com/en-us/graph/api/pronounssettings-update?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://docs.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource, to update the tenant-level settings for pronouns",
 				  "Target": "pronounsSettings"
 			  },
 			  {
