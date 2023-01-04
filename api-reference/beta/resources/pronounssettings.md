@@ -1,6 +1,6 @@
 ---
 title: "pronounsSettings resource type"
-description: "This resource represents a Setting to control the availability of Pronouns in the tenant"
+description: "Represents a setting to control the availability of pronouns in the tenant"
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
