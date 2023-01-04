@@ -373,12 +373,11 @@ This example shows how to use the `$filter` query parameter along with the `ends
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_filter"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$count=true&ConsistencyLevel=eventual&$filter=endsWith(mail,'@contoso.com')
 ```
 
