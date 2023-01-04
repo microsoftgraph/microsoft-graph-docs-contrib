@@ -92,7 +92,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "martind@contoso.onmicrosoft.com"
+          "address": "frannis@contoso.onmicrosoft.com"
         }
       }
     ],
