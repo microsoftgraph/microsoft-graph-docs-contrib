@@ -30,7 +30,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | openShiftsEnabled			        |Boolean  | Indicates whether open shifts are enabled for the schedule.             | 
 | provisionStatus       |operationStatus    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
 | provisionStatusCode   |string  | Additional information about why schedule provisioning failed. |
- swapShiftsRequestsEnabled			        |Boolean| Indicates whether swap shifts requests are enabled for the schedule.             |
+  |swapShiftsRequestsEnabled			        |Boolean| Indicates whether swap shifts requests are enabled for the schedule.             |
 | timeClockEnabled			        |Boolean  | Indicates whether time clock is enabled for the schedule.             |
 | timeOffRequestsEnabled			        |Boolean | Indicates whether time off requests are enabled for the schedule.             | 
 | timeZone 		        |string  | Indicates the time zone of the schedule team using tz database format. Required.|
