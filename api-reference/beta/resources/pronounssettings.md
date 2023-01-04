@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List pronounsSettings](../api/organizationsettings-list-pronounssettings.md)|[pronounsSettings](../resources/pronounssettings.md)|Get the _settings_ in [pronounsSettings](../resources/pronounssettings.md) object for displaying pronouns in an organization.|
-|[Update pronounsSettings](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) resource to mangage the display of pronouns in an organization.|
+|[Update pronounsSettings](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) resource to manage the display of pronouns in an organization.|
 
 ## Properties
 |Property|Type|Description|
