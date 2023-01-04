@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
+ms.date: 09/02/2022
 ---
 
 # Azure AD policy overview

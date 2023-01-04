@@ -4,6 +4,7 @@ description: "Learn how to use the $filter OData query parameter and its operato
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/08/2022
 ---
 
 # Use the $filter query parameter

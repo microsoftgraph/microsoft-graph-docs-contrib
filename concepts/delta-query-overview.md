@@ -4,6 +4,7 @@ description: "Use delta query to enable applications to discover newly created, 
 author: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 08/12/2022
 ---
 
 # Use delta query to track changes in Microsoft Graph data
