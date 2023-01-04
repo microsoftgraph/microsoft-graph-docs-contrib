@@ -1,5 +1,5 @@
 ---
-title: "Get a user"
+title: "Get user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Get a user
+# Get user
 
 Namespace: microsoft.graph
 
@@ -367,9 +367,9 @@ Content-type: application/json
   ]
 }-->
 
-### Example 5: Use $filter to retrieve specific users based on value of a property.
+### Example 5: Use `$filter` to retrieve specific users based on a property value
 
-In this example, we use `$filter` query parameter along with endswith clause to retrieve a users having specific value added in `mail` attribute. For example filter and return all users with mail address ending with contoso.com.
+This example shows how to use the `$filter` query parameter along with the `endswith` clause to retrieve a user with a specific value in the **mail** attribute. This request filters and returns all users with a mail address ending with contoso.com.
 
 #### Request
 
@@ -381,8 +381,6 @@ In this example, we use `$filter` query parameter along with endswith clause to 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$count=true&ConsistencyLevel=eventual&$filter=endsWith(mail,'@contoso.com')
 ```
-
----
 
 #### Response
 <!-- {
