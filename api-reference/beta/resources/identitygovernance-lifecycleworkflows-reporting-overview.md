@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AlexFilipin"
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 11/17/2022
 ---
 
 # Lifecycle Workflow reporting API Overview

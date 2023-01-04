@@ -114,7 +114,7 @@ items:
             href: tutorial-applications-basics.md
           - name: Validation differences for signInAudience
             href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
-          - name: Grant and revoke permissions
+          - name: Grant or revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
           - name: Automate SAML-based SSO configuration
@@ -123,6 +123,8 @@ items:
             href: application-proxy-configure-api.md
           - name: Automate provisioning
             href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
+          - name: Generate proof of possession tokens for rolling keys
+            href: application-rollkey-prooftoken.md
       - name: Accessing data at scale
         items:
           - name: Microsoft Graph Data Connect overview
