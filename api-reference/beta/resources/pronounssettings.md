@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|`true` if the specified settings are enabled for the organization; `false` if the specified settings are disabled for all users. Default is `false`.|
+|isEnabledInOrganization|Boolean| Indicates whether the specified setting is enabled or disabled for the organization. Default value is `false`.|
 
 ## Relationships
 None.
