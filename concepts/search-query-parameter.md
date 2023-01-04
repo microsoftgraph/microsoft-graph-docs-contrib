@@ -24,6 +24,7 @@ If you do a search on messages and specify only a value without specific message
 
 The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "search_my_messages"

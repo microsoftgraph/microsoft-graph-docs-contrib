@@ -70,8 +70,6 @@ This example specifies a KQL query which does the following:
 
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery"

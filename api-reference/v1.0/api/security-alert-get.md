@@ -50,8 +50,6 @@ If successful, this method returns a `200 OK` response code and an [alert](../re
 ### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["da637578995287051192_756343937"],

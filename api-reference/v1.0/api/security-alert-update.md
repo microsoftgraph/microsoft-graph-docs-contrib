@@ -60,8 +60,6 @@ If successful, this method returns a `200 OK` response code and an updated [aler
 The following is an example of a request.
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["da637551227677560813_-961444813"],
