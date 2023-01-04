@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsAppXAppAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsappxappassignmentsettings?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-1.0) resource type.",
           "Target": "windowsAppXAppAssignmentSettings"
         },
         {
