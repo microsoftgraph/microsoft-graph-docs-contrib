@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 ---
 
 #### Response
-The following is an example of the response which includes a **mailSearchFolder** that is a child folder under the Inbox. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response, which includes a **mailSearchFolder** that is a child folder under the Inbox. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -207,7 +207,7 @@ Content-type: application/json
 
 ### Example 2: Include hidden folders in the signed-in user's mailbox
 
-The next example uses the `includeHiddenFolders` query parameter to get a list of mail folders including hidden mail folders. The response includes the "Clutters" folder that has the **isHidden** set to true.
+This example uses the `includeHiddenFolders` query parameter to get a list of mail folders including hidden mail folders. The response includes the "Clutters" folder that has the **isHidden** set to `true`.
 
 #### Request
 
