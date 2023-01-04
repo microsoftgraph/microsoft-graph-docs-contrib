@@ -383,6 +383,7 @@ GET https://graph.microsoft.com/v1.0/users?$count=true&ConsistencyLevel=eventual
 ```
 
 #### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
