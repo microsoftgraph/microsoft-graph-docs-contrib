@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Property",
+          "ChangedApiName": "v15_0",
+          "ChangeType": "Addition",
+          "Description": "Added the `v15_0` property to the [iosMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-1.0) resource.",
+          "Target": "iosMinimumOperatingSystem"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsAppXAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-windowsAppXAppAssignmentSettings?view=graph-rest-1.0) resource type.",
+          "Target": "windowsAppXAppAssignmentSettings"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "containedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **containedApps** relationship to the [mobileAppContent](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-1.0) resource.",
+          "Target": "mobileAppContent"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileContainedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [mobileContainedApp](https://learn.microsoft.com/graph/api/resources/intune-mobileContainedApp?view=graph-rest-1.0) resource",
+          "Target": "mobileContainedApp"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsMicrosoftEdgeApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsMicrosoftEdgeApp](https://learn.microsoft.com/graph/api/resources/intune-windowsMicrosoftEdgeApp?view=graph-rest-1.0) resource",
+          "Target": "windowsMicrosoftEdgeApp"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "committedContainedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **committedContainedApps** relationship to the [windowsUniversalAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-1.0) resource.",
+          "Target": "windowsUniversalAppX"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsUniversalAppXContainedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsUniversalAppXContainedApp](https://learn.microsoft.com/graph/api/resources/intune-windowsUniversalAppXContainedApp?view=graph-rest-1.0) resource",
+          "Target": "windowsUniversalAppXContainedApp"
+        },
+        {
+          "Id": "9226e379-f9ee-495d-b6f1-fd9ffbb0502b",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeCompanyPortalLink",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeCompanyPortalLink` member to the **notificationTemplateBrandingOptions** enumeration.",
+          "Target": "notificationTemplateBrandingOptions"
+        },
+        {
+          "Id": "30eff121-2961-43e2-90c8-8f0137ddddbb",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicesWithoutCompliancePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicesWithoutCompliancePolicyReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-04T17:32:27.4508092Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "787f07b7-7f12-45f6-9681-9eb3909b535e",
           "ApiChange": "Resource",
           "ChangedApiName": "auditActor",
@@ -502,7 +584,7 @@
           "ChangedApiName": "v13_0",
           "ChangeType": "Addition",
           "Description": "Added the `v13_0` property to the [macOSMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-apps-macosminimumoperatingsystem?view=graph-rest-beta) resource.",
-          "Target": "macOSMinimumOperatingSystem" 
+          "Target": "macOSMinimumOperatingSystem"
         },
         {
           "Id": "e7737123-5578-4b32-85c1-098f20742117",
@@ -1107,7 +1189,7 @@
       "SubArea": "Corporate management"
     },
     {
-    "ChangeList": [
+      "ChangeList": [
         {
           "Id": "fef42d93-a0d9-4d71-aa73-f02ed7171f7d",
           "ApiChange": "Property",
@@ -1467,7 +1549,7 @@
       "CreatedDateTime": "2022-08-17T15:18:01.980486Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -1477,7 +1559,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **diskType** enumeration type.",
           "Target": "diskType"
-        }, 
+        },
         {
           "Id": "4fefb14c-a22d-4e6e-9820-3e73c079a7a2",
           "ApiChange": "Enumeration",
@@ -1517,7 +1599,7 @@
       "CreatedDateTime": "2022-07-25T18:53:32.7807195Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
-    },      
+    },
     {
       "ChangeList": [
         {
