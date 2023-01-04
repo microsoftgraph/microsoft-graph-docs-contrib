@@ -416,7 +416,7 @@ This example shows how to use the `$filter` query parameter along with the `ends
   "name": "get_user_filter"
 } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users?$count=true&ConsistencyLevel=eventual&$filter=endsWith(mail,'@contoso.com')
+GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual&$filter=endsWith(mail,'@contoso.com')
 ```
 
 #### Response
@@ -431,8 +431,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users",
     "@odata.count": 1350,
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@contoso.com')&ConsistencyLevel=eventual&$skiptoken=m~AQAnOzEyN2NjN2I3NTQzYzQ0YzA4NjlhYjU5MzUzYmNhNGI2OzswOzA7",
     "value": [
