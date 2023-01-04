@@ -451,6 +451,7 @@ Content-type: application/json
         }
     ]
 }
+```
 
 ### Example 6: Get the value of a schema extension for a user
 
