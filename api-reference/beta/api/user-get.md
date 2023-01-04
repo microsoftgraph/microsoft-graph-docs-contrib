@@ -424,7 +424,8 @@ GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.user",
+  "name": "get_user_filter"
 } -->
 ```http
 HTTP/1.1 200 OK
