@@ -1,15 +1,16 @@
 ---
-title: "Create and manage an Azure AD application using Microsoft Graph"
-description: "Learn how to use the applications API in Microsoft Graph to manage your applications."
+title: "Manage an Azure AD application using Microsoft Graph"
+description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
+ms.date: 12/08/2022
 ---
 
-# Create and manage an Azure AD application
+# Manage an Azure AD application using Microsoft Graph
 
-Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure AD or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
+Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
 
 Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you'll learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
 
@@ -18,7 +19,7 @@ Many settings for apps are recorded as objects that can be accessed, updated, or
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in an _Application Administrator_ role or a user allowed to create and manage applications in the tenant.
++ Sign in to [Graph Explorer](https://aka.ms/ge) as a user in an _Application Administrator_ role or a user allowed to create and manage applications in the tenant.
 
 ## Register an application with Azure AD
 
@@ -161,8 +162,7 @@ You'll configure the following basic properties for the app.
 
 + Add tags for categorization in the organization. Also, use the `HideApp` tag to hide the app from My Apps and the Microsoft 365 Launcher.
 + Add basic information including the logo, terms of service, and privacy statement.
-+ Limit app sign-in to only assigned identities.
-
++ Store contact information about the application
 
 # [HTTP](#tab/http)
 <!-- {
@@ -193,7 +193,7 @@ Content-type: application/json
             "https://localhost"
         ]
     },
-    "appRoleAssignmentRequired": true
+    "serviceManagementReference": "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
 }
 ```
 
@@ -222,6 +222,21 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+## Limit app sign-in to only assigned identities
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-grant-approleassignmentrequired"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-1418d6908bcd
+{
+    "appRoleAssignmentRequired": true
+}
+```
 
 
 ## Assign permissions to an app
@@ -456,6 +471,7 @@ Least privilege delegated permission: `Application.Read.All` and `AppRoleAssignm
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-1418d6908bcd/appRoleAssignedTo
+Content-Type: application/json
 
 {
     "principalId": "b8afc02cb-4d62-4dba-b536-9f6d73e9e26",
@@ -481,11 +497,219 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-grant-approleassignmentrequired-create-assignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+## Create app roles
+
+### Create app roles on an application object
+
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/bbd46130-e957-4c38-a116-d4d02afd1057
+Content-Type: application/json
+
+{
+    "appRoles": [
+        {
+            "allowedMemberTypes": [
+                "User",
+                "Application"
+            ],
+            "description": "Survey.Read",
+            "displayName": "Survey.Read",
+            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
+            "isEnabled": false,
+            "origin": "Application",
+            "value": "Survey.Read"
+        }
+    ]
+}
+```
+
+
+### Create app roles on a service principal object
+
+When updating the appRoles in a service principal, you can only add to or update the existing collection. You cannot use this method to delete an appRole whose origin is the backing application. Therefore, the service principal can expose more, but not less, appRoles than the backing application.
+
+In the following request, the `Survey.Read` appRole originates from the application object.
+
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7
+Content-Type: application/json
+
+{
+    "appRoles": [
+        {
+            "allowedMemberTypes": [
+                "User"
+            ],
+            "description": "Survey.ReadWrite.All",
+            "displayName": "Survey.ReadWrite.All",
+            "id": "3ce57053-0ebf-42d8-bf7c-74161a450e4b",
+            "isEnabled": true,
+            "value": "Survey.ReadWrite.All"
+        },
+        {
+            "allowedMemberTypes": [
+                "User",
+                "Application"
+            ],
+            "description": "Survey.Read",
+            "displayName": "Survey.Read",
+            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
+            "isEnabled": false,
+            "origin": "Application",
+            "value": "Survey.Read"
+        }
+    ]
+}
+```
+
+## Manage application ownership
+
+As a best practice, we recommend auditing the apps in your tenant to ensure that there aren't any ownerless apps and service principals, and that all apps and service principals have least two owners.
+
+### Identify ownerless apps
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+This request also returns the count of the apps that match the filter condition.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-ownerless-apps"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications?$filter=owners/$count eq 0&$count=true
+ConsistencyLevel: eventual
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-ownerless-apps-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-ownerless-apps-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-ownerless-apps-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-ownerless-apps-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-ownerless-apps-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-ownerless-apps-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Identify ownerless service principals or without at least two owners
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+This request also returns the count of the apps that match the filter condition.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-ownerless-serviceprincipals"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=owners/$count eq 0 or owners/$count eq 1&$count=true
+ConsistencyLevel: eventual
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-ownerless-serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-ownerless-serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-ownerless-serviceprincipals-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-ownerless-serviceprincipals-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-ownerless-serviceprincipals-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-ownerless-serviceprincipals-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Assign an owner to an app
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-assign-app-owner"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/applications/7b45cf6d-9083-4eb2-92c4-a7e090f1fc40/owners/$ref
+Content-Type: application/json
+
+{
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/8afc02cb-4d62-4dba-b536-9f6d73e9be26"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-assign-app-owner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-assign-app-owner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-assign-app-owner-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-assign-app-owner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-assign-app-owner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-assign-app-owner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

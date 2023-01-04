@@ -43,7 +43,7 @@
           "ApiChange": "Authentication",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Change",
-          "Description": "Enabled validation on the sender tenant ID for the [Update chatMessage](https://learn.microsoft.com/en-us/graph/api/update-chatmessage) operation. With this change, only the tenant of the user who sent the message can perform data loss prevention updates on the chat message; that is, change the **policyViolation** property on the chat message.",
+          "Description": "Enabled validation on the sender tenant ID for the [Update chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-update) operation. With this change, only the tenant of the user who sent the message can perform data loss prevention updates on the chat message; that is, change the **policyViolation** property on the chat message.",
           "Target": "chatMessage"
         }
       ],
@@ -2454,7 +2454,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": " Shifts"
+      "SubArea": "Shift management"
     },
     {
       "ChangeList": [
