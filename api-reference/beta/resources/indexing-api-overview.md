@@ -36,8 +36,8 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 The following are current known limitations:
 
 - Organizations are limited to a maximum of 10 connections (reach out if you need more).
-- You can create up to twenty-five `externalItem` resources items per second.
-- An application is limited to twenty-five concurrent operations on a connection.
+- You can create up to 25 `externalItem` resources items per second.
+- An application is limited to 25 concurrent operations on a connection.
 - Connections have a capacity limit of 5,000,000 items or ~350 GB of data.
 - Maximum size of an `externalItem` entity is 4 MB.
 - Sorting results is not supported.
