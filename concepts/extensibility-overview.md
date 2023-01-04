@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.localizationpriority: high
 ms.prod: "extensions"
 ms.custom: graphiamtop20
+ms.date: 11/17/2022
 ---
 
 # Add custom data to resources using extensions

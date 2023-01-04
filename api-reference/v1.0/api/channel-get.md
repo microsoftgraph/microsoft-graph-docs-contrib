@@ -37,7 +37,7 @@ GET /teams/{team-id}/channels/{channel-id}
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
