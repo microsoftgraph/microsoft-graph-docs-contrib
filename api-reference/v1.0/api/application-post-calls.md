@@ -1124,8 +1124,9 @@ Content-Type: application/json
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join scheduled meeting with application hosted media
-Update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below.
+Update the media config with the [appHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown in the following example.
 
+#### Request
 <!-- {
   "blockType": "request",
   "name": "join-scheduled-meeting-app-hosted-media",
