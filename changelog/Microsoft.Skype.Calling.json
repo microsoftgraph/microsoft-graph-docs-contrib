@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "joinMeetingIdMeetingInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [joinMeetingIdMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/joinMeetingIdMeetingInfo?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [joinMeetingIdMeetingInfo](https://learn.microsoft.com/en-us/graph/api/resources/joinMeetingIdMeetingInfo?view=graph-rest-1.0) resource type.",
           "Target": "joinMeetingIdMeetingInfo"
         }
       ],
@@ -15,8 +15,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-12-19T17:47:14.2823035Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
