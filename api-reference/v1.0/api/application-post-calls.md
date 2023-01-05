@@ -357,7 +357,7 @@ Content-Type: application/json
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
 #### Request
-The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
+The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name, and tenant ID must be replaced with actual values to make the example work.
 
 
 # [HTTP](#tab/http)
@@ -585,7 +585,7 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Location: https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
 
 {
@@ -644,7 +644,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "myParticipantId": "c9a65b85-a223-44ae-8cdb-29395458323f",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
 }
 ```
 
@@ -727,7 +727,7 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Location: https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
 
 {
@@ -788,7 +788,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "myParticipantId": "c9a65b85-a223-44ae-8cdb-29395458323f",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
 }
 ```
 
@@ -796,14 +796,14 @@ Content-Type: application/json
 To join the scheduled meeting we will need to get the thread ID, message ID, organizer ID and the tenant ID in which the meeting is scheduled.
 This information can be obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
-The values of authorization token, callback url, application ID, application name, user ID, user name and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
+The values of authorization token, callback url, application ID, application name, user ID, user name, and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
 
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
 #### Request
 
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "join-scheduled-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -1127,7 +1127,7 @@ Content-Type: application/json
 Update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below.
 
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "join-scheduled-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -1177,7 +1177,7 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Location: https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
 
 {
@@ -1233,7 +1233,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
   "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "mediaState": null,
@@ -1247,9 +1247,12 @@ Content-Type: application/json
 
 
 ### Example 7: Join a scheduled meeting with joinMeetingId and passcode
+
 The following shows an example that requires a **joinMeetingId** and a **passcode** to join an existing meeting. You can retrieve these properties from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
 #### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -1258,7 +1261,7 @@ The following shows an example that requires a **joinMeetingId** and a **passcod
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/communications/calls
+POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
 
 {
@@ -1291,6 +1294,8 @@ Content-Type: application/json
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "name": "join-meeting-with-join-meeting-id-and-passcode",
@@ -1299,7 +1304,7 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Location: https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
 
 {
@@ -1356,7 +1361,7 @@ Content-Type: application/json
   "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
   "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "mediaState": null,
@@ -1369,9 +1374,12 @@ Content-Type: application/json
 ```
 
 ### Example 8: Join a scheduled meeting with joinMeetingId
+
 The following shows an example that requires a **joinMeetingId** but doesn't require a **passcode** to join an existing meeting. You can retrieve the **joinMeetingId** property from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
 #### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -1380,7 +1388,7 @@ The following shows an example that requires a **joinMeetingId** but doesn't req
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/communications/calls
+POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
 
 {
@@ -1413,6 +1421,8 @@ Content-Type: application/json
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "name": "join-meeting-with-join-meeting-id-and-without-passcode",
@@ -1421,7 +1431,7 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Location: https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
 
 {
@@ -1478,7 +1488,7 @@ Content-Type: application/json
   "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
   "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "mediaState": null,
