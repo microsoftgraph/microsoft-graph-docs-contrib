@@ -4,6 +4,7 @@ description: "Find best practices for maintaining optimal performance of the Mic
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/11/2022
 ---
 
 # Microsoft Graph throttling guidance

@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Contains information that allows you to join an existing meeting with a **joinMeetingId** and a **passcode** (if required). You can retrieve these properties from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
 Inherits from [meetingInfo](../resources/meetinginfo.md).
