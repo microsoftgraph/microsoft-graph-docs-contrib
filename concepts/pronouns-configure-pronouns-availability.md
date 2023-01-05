@@ -16,7 +16,7 @@ If you are a global administrator, you can turn on or off the display of pronoun
 
 ## Confirm your current settings
 
-Use the [get](/graph/api/pronounssettings-get?view=graph-rest-beta&preserve-view=true) operation to return the current configuration of pronouns in your organization.
+Use the [get](/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&preserve-view=true) operation to return the current configuration of pronouns in your organization.
 
 In this example, pronouns are disabled: 
 
@@ -57,7 +57,7 @@ Content-Type: application/json
   "isEnabledInOrganization": true
 }
 ```
-If successful, the response returns a `200 OK` response code and a [**pronounsSettings**](/graph/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) object in the response body.
+If successful, the response returns a `200 OK` response code and a [**pronounsSettings**](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) object in the response body.
 
 ``` http
 HTTP/1.1 200 OK
@@ -81,7 +81,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [**pronounsSettings**](/graph/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) object in the response body.
+If successful, the response returns a `200 OK` response code and a [**pronounsSettings**](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) object in the response body.
 
 ``` http
 HTTP/1.1 200 OK
