@@ -24,7 +24,7 @@ In this example, pronouns are disabled:
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
 ```
 
-If successful, the response returns a `200 OK` response code and a [**pronounsSettings**](/graph/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) object in the response body.
+If successful, the response returns a `200 OK` response code and a [**pronounsSettings**](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) object in the response body.
 
 ``` http
 HTTP/1.1 200 OK
