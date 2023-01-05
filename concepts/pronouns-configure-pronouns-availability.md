@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Manage access to pronouns using APIs in Microsoft Graph (preview)
 
-If you are a global administrator, you have the ability to turn on or off the display of pronouns in your organization. By default, pronouns are **off**. If you turn pronouns on, users will be able to add and update pronouns in Microsoft 365.
+If you are a global administrator, you can turn on or off the display of pronouns in your organization. By default, pronouns are **off**. If you turn pronouns on, users will be able to add and update pronouns in Microsoft 365.
 
 > [!NOTE]
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
