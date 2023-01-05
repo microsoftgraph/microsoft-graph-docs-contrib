@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Connect to assignments and grades
 
-In recent years, Microsoft Teams for education has become an essential solution that supports educators and students. Assignment and grade applications are a core part of Teams for education, and provide the central workflow that educators use to assign, assess, grade, and provide feedback to students around the world.
+In recent years, Microsoft Teams for education has become an essential solution that supports educators and students. Assignment and grade are a core part of Teams for education, and provide the central workflow that educators use to assign, assess, grade, and provide feedback to students around the world.
 
 Microsoft Graph provides a set of integration points that enable you to customize and extend the experience for educators, admins, and students when they work with assignments and grades.
 
