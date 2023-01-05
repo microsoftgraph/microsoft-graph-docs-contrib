@@ -37,7 +37,7 @@ Content-Type: application/json
  
 ## Scenarios
 
-You can either make pronouns available or unavailable in Microsoft apps and services in your organization.
+You can either make pronouns available or unavailable in your organization.
 
 |Scenario | isEnabledInOrganization|
 |:---|:---|
@@ -47,7 +47,7 @@ You can either make pronouns available or unavailable in Microsoft apps and serv
 
 ## Enabling pronouns in your organization
 
-Use the [patch](/graph/api/pronounssettings-update?view=graph-rest-beta&preserve-view=true) operation to allow showing pronouns in Microsoft apps and services in your organization.
+Use the [patch](/graph/api/pronounssettings-update?view=graph-rest-beta&preserve-view=true) operation to enable showing pronouns in your organization.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
@@ -94,4 +94,6 @@ Content-Type: application/json
 
 ## Important
 
-When pronouns are turned off in your organization, pronouns will be hidden in Microsoft 365 and the process of deleting pronouns, added by users, will begin. However, the data may persist on Microsoft servers for up to 30 days. If you decide to re-enable pronouns within that period, any previously hidden pronouns that have not yet been deleted will be visible again.
+When you turn pronouns on or off, it can take up to six hours for users to see changes. For example, if you turn pronouns on, users won’t be able to see the option to add pronouns on their profile for up to six hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to six hours. 
+
+When you turn pronouns off, the pronouns data deletion process can take up to 30 days to complete. If you decide to turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers will be made visible in Microsoft 365 experiences, such as profile cards. 
