@@ -1,40 +1,40 @@
 ---
-title: "Connecting with assignments and grades"
-description: "Learn how to connect your tool with assignments and grades."
+title: "Connect to assignments and grades"
+description: "Get started using Microsoft Graph to extend the assignment and grade experience for Teams for education."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Connecting with Assignments and Grades
+# Connect to assignments and grades
 
-In the last couple of years Teams Education has become an essential part of educators and students life. One core part of Teams Education is the Assignments and Grades applications, which is the central workflow used by Educators to assign, asses, grade and provide feedback to students around the world.
+In recent years, Microsoft Teams for education has become an essential solution that supports educators and students. Assignment and grade applications are a core part of Teams for education, and provide the central workflow that educators use to assign, assess, grade, and provide feedback to students around the world.
 
-We have built a set of integration points for your use to customize and extend the experiences for educators, admin and students when work with Assignments and Grades, and this post will highlight areas that we currently support.
+Microsoft Graph provides a set of integration points that enable you to customize and extend the experience for educators, admins, and students when they work with assignments and grades.
 
-## Getting Started
+## Get started
 
-Assignments and Grades is a Team Application that is available for all users of Teams EDU. For Partners that needs a demo / development tenant of Teams can follow the steps here to [Set up an EDU development environment](/graph/msgraph-onboarding-overview).
+All Teams for education users have access to assignment and grade functionality. To set up a demo or development tenant for Teams to start building your custom solutions, see [Set up an EDU development environment](/graph/msgraph-onboarding-overview).
 
-## What scenario do you want to support?
+## Scenarios
 
-There are multiple ways for you to read and update data, and integrate your app with Assignments. Depending on your needs you can use one or more combinations of integration points and API’s to interact with Assigments.
+You can read and update data and integrate your app with assignments and grades in multiple ways. The following are some key scenarios that you can apply, in one or more combinations, to integrate with assigments and grades.
 
-[I need to get data from Assignments and grades for my tool](/graph/msgraph-customer-assignmentgradedatafortool).
+- [Get data from assignments and grades](/graph/msgraph-customer-assignmentgradedatafortool).
 
-I want to generate a report from Assignment Data.
+- Generate a report from assignment data
 
-I need a direct link to an assignment.
+- Get a direct link to an assignment
 
-I need to create Assignments from my external tool.
+- Create assignments from an external tool
 
-I have a webapp that needs to create assignments with links back to my website.
+- Enable a web app to create assignments with links back to a website
 
-I want to show my Teams App content within Assignments.
+- Show Teams app content within assignments
 
-I want to update the grades in Assignments from my App.
+- Update the grades in assignments from an app
 
-I want to create assignments with my teams app content from my app.
+- Create assignments with Teams app content from an app
 
-I want to build a tool to download all resources from a set of assignments at the end of the grade period.
+- Build a tool to download all resources from a set of assignments at the end of a grade period
