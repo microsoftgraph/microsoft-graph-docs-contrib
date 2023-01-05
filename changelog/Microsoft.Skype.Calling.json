@@ -9,6 +9,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [joinMeetingIdMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/joinMeetingIdMeetingInfo?view=graph-rest-1.0) resource type.",
           "Target": "joinMeetingIdMeetingInfo"
+        },
+        {
+          "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calls.JoinGroupCalls.Chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission Calls.JoinGroupCalls.Chat which can be used with the Create call method.",
+          "Target": "call"
         }
       ],
       "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
