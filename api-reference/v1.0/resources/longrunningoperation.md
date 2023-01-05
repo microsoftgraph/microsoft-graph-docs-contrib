@@ -16,9 +16,9 @@ The status of a long-running operation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The start time of the operation.|
-|id|String|The unique identifier of the operation |
-|lastActionDateTime|DateTimeOffset|The time of the last action in the operation.|
+|createdDateTime|DateTimeOffset|The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String|The unique identifier of the operation. |
+|lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |resourceLocation|String| URI of the resource that the operation is performed on. |
 |status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 |statusDetail|String|Details about the status of the operation.|
@@ -26,7 +26,7 @@ The status of a long-running operation.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -39,8 +39,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.longRunningOperation",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "resourceLocation": "String",
   "status": "String",
