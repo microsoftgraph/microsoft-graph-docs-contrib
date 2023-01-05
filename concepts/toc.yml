@@ -317,11 +317,11 @@ items:
                 href: msgraph-onboarding-msteams.md
               - name: Use Graph Explorer with education APIs
                 href: msgraph-onboarding-graphexplorer.md
-          - name: Connecting with Assignments and Grades
+          - name: Connect to assignments and grades
             items:
               - name: Overview
                 href: msgraph-customer-scenarios.md
-              - name: Assignments and Grades data
+              - name: Get assignment and grade data
                 href: msgraph-customer-assignmentgradedatafortool.md
       - name: Extensions
         items:
