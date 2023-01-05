@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1390
+Content-length: 1496
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -80,6 +80,7 @@ Content-length: 1390
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
+    "auditActorType": "Audit Actor Type value",
     "userPermissions": [
       "User Permissions value"
     ],
@@ -109,6 +110,7 @@ Content-length: 1390
         }
       ],
       "type": "Type value",
+      "auditResourceType": "Audit Resource Type value",
       "resourceId": "Resource Id value"
     }
   ],
@@ -121,7 +123,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1545
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -131,6 +133,7 @@ Content-Length: 1439
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
+    "auditActorType": "Audit Actor Type value",
     "userPermissions": [
       "User Permissions value"
     ],
@@ -160,12 +163,15 @@ Content-Length: 1439
         }
       ],
       "type": "Type value",
+      "auditResourceType": "Audit Resource Type value",
       "resourceId": "Resource Id value"
     }
   ],
   "category": "Category value"
 }
 ```
+
+
 
 
 

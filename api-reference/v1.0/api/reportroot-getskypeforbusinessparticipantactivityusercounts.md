@@ -81,7 +81,7 @@ The following is an example of the request.
   "name": "reportroot_getskypeforbusinessparticipantactivityusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessParticipantActivityUserCounts(period='D7')
 ```
 

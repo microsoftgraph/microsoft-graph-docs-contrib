@@ -1,7 +1,7 @@
 ---
 title: "updatableAsset resource type"
 description: "Represents an asset that can receive updates."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

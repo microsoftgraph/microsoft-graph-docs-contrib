@@ -2,7 +2,7 @@
 title: "cloudAppSecuritySessionControl resource type"
 description: "Session control used to enforce cloud app security checks."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -17,8 +17,8 @@ Session control used to enforce cloud app security checks. Inehrits from [Condit
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |cloudAppSecurityType|cloudAppSecuritySessionControlType| Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. For more information, see [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad). |
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 
 ## Relationships
 

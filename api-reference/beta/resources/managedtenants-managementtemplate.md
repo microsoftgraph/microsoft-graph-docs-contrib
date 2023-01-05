@@ -1,9 +1,9 @@
 ---
 title: "managementTemplate resource type"
 description: "Represents a group of actions and setting that can be performed against a managed tenant."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

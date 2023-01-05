@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a device registered in the directory. Devices are created in the cloud using the Device Registration Service or by Intune. They're used by conditional access policies for multi-factor authentication. These devices can range from desktop and laptop machines to phones and tablets. Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview). This resource is an open type that allows other properties to be passed in.
+This resource is an open type that allows other properties to be passed in. You can also add your own data to custom properties as [extensions](/graph/extensibility-overview).
 
 ## Methods
 
@@ -25,8 +25,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |[List devices](../api/device-list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
 |[Update device](../api/device-update.md) | [device](device.md)  |Update the properties of the device object. |
 |[Delete device](../api/device-delete.md) | None |Delete the device object. |
-|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a direct member of. |
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a member of. This operation is transitive. |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a direct member of. |
+|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a member of. This operation is transitive. |
 |[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
 |[List registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
 |[List usageRights](../api/device-list-usagerights.md) | [usageRight](usageright.md) collection | Get a collection of usage rights granted to the device.|
@@ -43,7 +43,7 @@ This resource lets you add your own data to custom properties using [extensions]
 ## Properties
 
 > [!IMPORTANT]
-> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#device-properties).
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -52,7 +52,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values) and `$orderBy`. |
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
-|deviceId|String| Identifier set by Azure Device Registration Service at the time of registration. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
+|deviceId|String| Unique Identifier set by Azure Device Registration Service at the time of registration. This is an alternate key that can be used to reference the device object. Also Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
 |deviceMetadata|String| For internal use only. Set to `null`. |
 |deviceOwnership|String|Ownership of the device. This property is set by Intune. Possible values are: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| For internal use only. |
@@ -73,10 +73,10 @@ This resource lets you add your own data to custom properties using [extensions]
 |onPremisesSyncEnabled|Boolean|`true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; `null` if this object has never been synced from an on-premises directory (default). Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). |
 |operatingSystem|String| The type of operating system on the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`, and `eq` on `null` values). |
 |operatingSystemVersion|String| Operating system version of the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`, and `eq` on `null` values). |
-|physicalIds|String collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
+|physicalIds|String collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`, `/$count eq 0`, `/$count ne 0`. |
 |profileType|String|The profile type of the device. Possible values: `RegisteredDevice` (default), `SecureVM`, `Printer`, `Shared`, `IoT`.|
 |registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|systemLabels|String collection| List of labels applied to the device by the system. |
+|systemLabels|String collection| List of labels applied to the device by the system. Supports `$filter` (`/$count eq 0`, `/$count ne 0`). |
 |hostnames|String collection| List of hostNames for the device.|
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: `Workplace` (indicates *bring your own personal devices*), `AzureAd` (Cloud only joined devices), `ServerAd` (on-premises domain joined devices joined to Azure AD). For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
 |name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
@@ -91,10 +91,10 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |commands | [command](command.md) collection | Set of commands sent to this device.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable. |
-|memberOf|[directoryObject](directoryobject.md) collection|Groups that this device is a member of. Read-only. Nullable. Supports `$expand`. |
+|memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this device is a member of. Read-only. Nullable. Supports `$expand`. |
 |registeredOwners|[directoryObject](directoryobject.md) collection| The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports `$expand`. |
 |registeredUsers|[directoryObject](directoryobject.md) collection| Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports `$expand`. |
-|transitiveMemberOf |[directoryObject](directoryobject.md) collection| Groups that this device is a member of. This operation is transitive. Supports `$expand`.  |
+|transitiveMemberOf |[directoryObject](directoryobject.md) collection| Groups and administrative units that this device is a member of. This operation is transitive. Supports `$expand`.  |
 |usageRights|[usageRight](usageright.md) collection|Represents the usage rights a device has been granted. |
 
 ## JSON representation

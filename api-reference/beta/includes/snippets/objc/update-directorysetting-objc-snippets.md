@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/settings/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphDirectorySetting *directorySetting = [[MSGraphDirectorySetting alloc] init];
 NSMutableArray *valuesList = [[NSMutableArray alloc] init];
 MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"name-value"];
-[values setValue:@"value-value"];
+[values setName:@"CustomBlockedWordsList"];
+[values setValue:@"Contoso"];
 [valuesList addObject: values];
 [directorySetting setValues:valuesList];
 

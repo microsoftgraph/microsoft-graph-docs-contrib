@@ -1,7 +1,8 @@
 ---
 title: "Get change notifications delivered in different ways"
 description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
-author: "Jumaodhiss"
+author: "jumasure"
+ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
 ---
@@ -109,7 +110,7 @@ Steps:
 1. Select the **Key Vault** suggestion. The Key Vault creation page will load.
 1. On the Key Vault creation page, click **Create**.  
 1. Fill in the Key Vault creation details, and then click **Review + Create** and **Create**.  
-1. Go to the newly crated key vault using the **Go to resource** from the notification.  
+1. Go to the newly created key vault using the **Go to resource** from the notification.  
 1. Copy the **DNS name**; you will need it for the next step.  
 1. Go to **Secrets** and click **+ Generate/Import**.  
 1. Give a name to the secret, and keep the name for later; you will need it for the next step. For the value, paste in the connection string you generated at the Event Hubs step. Click **Create**.  

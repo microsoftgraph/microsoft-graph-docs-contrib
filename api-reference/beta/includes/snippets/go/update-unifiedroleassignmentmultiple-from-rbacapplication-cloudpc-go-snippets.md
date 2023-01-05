@@ -7,16 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUnifiedRoleAssignmentMultiple()
+requestBody := graphmodels.NewUnifiedRoleAssignmentMultiple()
 displayName := "NewName"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "A new roleAssignment"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.UnifiedRoleAssignmentMultipleRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-unifiedRoleAssignmentMultipleId := "unifiedRoleAssignmentMultiple-id"
-graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignmentsById("unifiedRoleAssignmentMultiple-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

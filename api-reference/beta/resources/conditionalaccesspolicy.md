@@ -2,7 +2,7 @@
 title: "conditionalAccessPolicy resource type"
 description: "Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

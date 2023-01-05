@@ -10,7 +10,7 @@ var recipients = new List<DriveRecipient>()
 {
 	new DriveRecipient
 	{
-		Email = "ryan@contoso.org"
+		Email = "robin@contoso.org"
 	}
 };
 
@@ -30,7 +30,7 @@ var password = "password123";
 var expirationDateTime = "2018-07-15T14:00:00Z";
 
 await graphClient.Me.Drive.Items["{driveItem-id}"]
-	.Invite(recipients,requireSignIn,roles,sendInvitation,message,expirationDateTime,password)
+	.Invite(recipients,requireSignIn,roles,sendInvitation,message,null,expirationDateTime,password)
 	.Request()
 	.PostAsync();
 

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-accessReviewId := "accessReview-id"
-graphClient.AccessReviewsById(&accessReviewId).SendReminder().Post(options)
+
+graphClient.AccessReviewsById("accessReview-id").SendReminder().Post(context.Background(), nil)
 
 
 ```

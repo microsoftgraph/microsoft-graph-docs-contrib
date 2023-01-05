@@ -64,6 +64,7 @@ The following table shows the properties that are required when you create the [
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|configureWifi|Boolean|Boolean that indicates that the Wi-Fi network should be configured during device provisioning. When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks. When set to FALSE or undefined, other Wi-Fi related properties will be ignored. Default value is TRUE. Returned by default.|
 |wifiSsid|String|String that contains the wi-fi login ssid|
 |wifiPassword|String|String that contains the wi-fi login password|
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. Possible values are: `none`, `wpa`, `wep`.|
@@ -81,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 922
+Content-length: 948
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -104,6 +105,7 @@ Content-length: 922
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "configureWifi": true,
   "wifiSsid": "Wifi Ssid value",
   "wifiPassword": "Wifi Password value",
   "wifiSecurityType": "wpa",
@@ -116,7 +118,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1094
+Content-Length: 1120
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -142,12 +144,15 @@ Content-Length: 1094
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "configureWifi": true,
   "wifiSsid": "Wifi Ssid value",
   "wifiPassword": "Wifi Password value",
   "wifiSecurityType": "wpa",
   "wifiHidden": true
 }
 ```
+
+
 
 
 

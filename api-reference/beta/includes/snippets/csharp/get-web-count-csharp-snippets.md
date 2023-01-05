@@ -6,10 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("$count", "true"),
+	new QueryOption("$search", "\"displayName:Web\"")
+};
+
 var applications = await graphClient.Applications
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
-	.Search("displayName:Web")
 	.GetAsync();
 
 ```

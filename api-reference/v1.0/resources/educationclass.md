@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 | [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Read the properties and relationships of an [educationClass](../resources/educationclass.md) object. |
 | [Update educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Update the properties of an [educationClass](../resources/educationclass.md) object.                 |
 | [Delete educationClass](../api/educationclass-delete.md) | None                                                        | Delete an [educationClass](../resources/educationclass.md) object.                                  |
-| [delta](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) collection | Get incremental changes to the resource collection.                                                  |
+| [Get delta](../api/educationclass-delta.md)                  | [educationClass](educationclass.md) collection              | Get incremental changes for **educationClasses**.                                          |
 
 ## Properties
 
@@ -47,10 +47,14 @@ Inherits from [entity](../resources/entity.md).
 
 | Relationship | Type                                                          | Description                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
+| assignments  | [educationAssignment](educationAssignment.md) collection | All assignments associated with this class. Nullable.     |
 | group        | [group](../resources/group.md)                                | The underlying Microsoft 365 group object.                |
 | members      | [educationUser](../resources/educationuser.md) collection     | All users in the class. Nullable.                         |
 | schools      | [educationSchool](../resources/educationschool.md) collection | All schools that this class is associated with. Nullable. |
 | teachers     | [educationUser](../resources/educationuser.md) collection     | All teachers in the class. Nullable.                      |
+|assignmentCategories| [educationCategory](educationcategory.md) collection | All categories associated with this class. Nullable. |
+|assignmentDefaults| [educationAssignmentDefaults](educationassignmentdefaults.md) collection | Specifies class-level defaults respected by new assignments created in the class. |
+|assignmentSettings| [educationAssignmentSettings](educationassignmentsettings.md) collection | Specifies class-level assignments settings. |
 
 ## JSON representation
 

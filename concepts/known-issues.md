@@ -1,6 +1,6 @@
 ---
 title: "Known issues with Microsoft Graph"
-description: "This article describes known issues with Microsoft Graph."
+description: "This article describes known issues and limitations with Microsoft Graph and provides workarounds when possible."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
 ---
@@ -17,7 +17,7 @@ For information about the latest updates to the Microsoft Graph API, see the [Mi
 
 ### Some limitations apply to the application and servicePrincipal resources
 
-Changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resources are currently in development. The following is a summary of current limitations and in-development API features.
+Changes to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources are currently in development. The following is a summary of current limitations and in-development API features.
 
 Current limitations:
 
@@ -52,7 +52,8 @@ We are working to fix this issue as soon as possible, so that pre-consent will w
 
 In the meantime, to unblock development and testing, you can use the following workaround.
 
->**Note:** This is not a permanent solution and is only intended to unblock development. This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
+> [!NOTE]
+> This is not a permanent solution and is only intended to unblock development. This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
 
 1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
@@ -148,17 +149,20 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 [Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group soft deletion.
 
+## Channel
+
+### Create channel
+
+When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
+
+- Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
+- Start with an underscore (_) or period (.), or end with a period (.).
+
 ## Cloud communications 
 
 ### View meeting details menu is not available on Microsoft Teams client
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
-
-## Compliance
-
-### Subject rights request API permissions are not currently available
-
-The Subject rights request API entities within the Microsoft Graph privacy API currently do not have permissions available. This issue may prevent users from seeing permissions and consenting to the use of the API in their environment. 
 
 ## Contacts
 
@@ -251,7 +255,7 @@ Directory resources, such as **device**, **group**, and **user**, currently limi
 
 ### Owner must be specified when updating a schemaExtension definition using Microsoft Graph Explorer
 
-When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appId` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
 
 ### Filtering on schema extension properties is not supported on all entity types
 
@@ -298,11 +302,11 @@ Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Micr
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
-The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on distribution lists or security groups, including via GET operations, will result in an error.
+The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on security groups, including via GET operations, will result in an error.
 
 ### Removing a group owner also removes the user as a group member
 
-When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for a group that is associated with a [team](/graph/api/resources/team), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 ## Identity and access
 
@@ -318,6 +322,10 @@ The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API might re
 + If there are **claimsMappingPolicy** objects to retrieve, your app must consent to both permissions. If not, a `403 Forbidden` error is returned.
 
 In the future, either permission will be sufficient to call both methods.
+
+### Non-Windows devices can't be updated by an app with application permissions
+
+When an app with application permissions attempts to update any properties of the device object where the **operationSystem** property isn't `Windows`, apart from the **extensionAttributes** property, the [Update device](/graph/api/device-update) API returns a `400 Bad request` error code with the error message "Properties other than ExtendedAttribute1..15 can be modified only on windows devices.". Use delegated permissions to update the properties of non-Windows devices.
 
 ## JSON batching
 
@@ -344,7 +352,7 @@ JSON batch requests are currently limited to 20 individual requests.
 * Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
 
-For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
+For more details, visit [Throttling and batching](/graph/throttling#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -373,7 +381,7 @@ In both the v1.0 and beta endpoints, the response to `GET /users/id/messages` in
 
 ## Reports
 
-### Azure AD activity reports can return an error
+### License check errors for Azure AD activity reports
 
 When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
 
@@ -395,12 +403,13 @@ This error might also occur when retrieving the **signInActivity** property of t
 This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
 
 
+## Sites and lists (SharePoint)
+
+### Follow/unfollow sites is not in sync with SharePoint following
+
+When querying [followed sites](/graph/api/sites-list-followed) through Microsoft Graph, the response might have incorrect results and those results might not match the results from following content in SharePoint. As a temporary workaround, you can use the [Following people and content REST API](/sharepoint/dev/general-development/following-people-and-content-rest-api-reference-for-sharepoint).
+
 ## Teamwork (Microsoft Teams)
-
-### GET /teams is not supported
-
-To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams).
 
 ### Unable to filter team members by roles
 Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
@@ -416,35 +425,61 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
 ### Installation of apps that require resource-specific consent permissions is not supported
-The following API calls do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
-- [Add app to team](/graph/api/team-post-installedapps.md)
-- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
-- [Add app to chat](/graph/api/chat-post-installedapps.md)
+The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
+- [Add app to team](/graph/api/team-post-installedapps)
+- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade)
+- [Add app to chat](/graph/api/chat-post-installedapps)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
+
+### Unable to access a cross-tenant shared channel when the request URL contains tenants/{cross-tenant-id}
+The API calls for [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) and [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) return the **@odata.id** property which you can use to access the channel and run other operations on the [channel](/graph/api/resources/channel.md) object. If you call the URL returned from the **@odata.id** property, the request fails with the following error when it tries to access the cross-tenant shared [channel](/graph/api/resources/channel.md):
+```http
+GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
+        "innerError": {
+            "date": "2022-03-08T07:33:50",
+            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
+            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
+        }
+    }
+}
+```
+To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel.md).
+
+### TeamworkAppSettings permissions are not visible in the Azure portal
+The permissions TeamworkAppSettings.Read.All and TeamworkAppSettings.ReadWrite.All are currently being rolled out and might not be visible in Azure Portal yet. To consent to these permissions, please use an authorize request as follows:
+
+```http
+GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
+```
 
 ## Users
 
-### Use the dollar ($) symbol in the userPrincipalName
+### Encode number (#) symbols in userPrincipalName
 
-Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`.
+The **userPrincipalName** of guest users added through Azure AD B2B often contains the number (#) character. Using `$filter` on a **userPrincipalName** that contains the # symbol, for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, returns a `400 Bad request` HTTP error response. To filter by the **userPrincipalName**, encode the # character using its UTF-8 equivalent (`%23`), for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
 
 ### Access to user resources is delayed after creation
 
-Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages, and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a `404` HTTP error response.
+Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages, and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a `404 Not Found` HTTP error response.
 
 ### Access to a user's profile photo is limited
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
-Failure to read or update a photo, in this case, results in the following error:
+1. Reading and updating a user's profile photo is only possible if the user has a mailbox. Failure to read or update a photo, in this case, results in the following error:
 
-```javascript
-{
-  "error": {
-    "code": "ErrorNonExistentMailbox",
-    "message": "The SMTP address has no mailbox associated with it."
-  }
-}
-```
+    ```html
+    {
+      "error": {
+        "code": "ErrorNonExistentMailbox",
+        "message": "The SMTP address has no mailbox associated with it."
+      }
+    }
+    ``` 
+2. Any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
+3. Managing users' photos through the [profilePhoto resource](/graph/api/resources/profilephoto) of the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ### Revoke sign-in sessions returns wrong HTTP code
 
@@ -453,6 +488,10 @@ The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions) shoul
 ### Incomplete objects are returned when using getByIds request
 
 Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids) should return full objects. However, currently [user](/graph/api/resources/user) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
+
+### showInAddressList property is out of sync with Microsoft Exchange
+
+When querying users through Microsoft Graph, the **showInAddressList** property may not indicate the same status shown in Microsoft Exchange. We recommend you manage this functionality directly with Microsoft Exchange through the Microsoft 365 admin center and not to use this property in Microsoft Graph.
 
 ## Query parameters 
 
@@ -475,9 +514,9 @@ The following limitations apply to query parameters:
 * `$search`:
   * Full-text search is only available for a subset of entities, such as messages.
   * Cross-workload searching is not supported.
-  * Searching is not supported on Azure AD B2C tenants.
+  * Searching is not supported in Azure AD B2C tenants.
 * `$count`:
-  * Not supported on Azure AD B2C tenants.
+  * Not supported in Azure AD B2C tenants.
   * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
 * Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 

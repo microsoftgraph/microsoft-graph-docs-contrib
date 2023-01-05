@@ -60,7 +60,7 @@ var contentInfo = new ContentInfo
 var labelingOptions = new LabelingOptions
 {
 	AssignmentMethod = AssignmentMethod.Standard,
-	LabelId = Guid.Parse("97309856-9c28-4ac6-9382-5f8bc20c457b"),
+	LabelId = "97309856-9c28-4ac6-9382-5f8bc20c457b",
 	DowngradeJustification = null,
 	ExtendedProperties = new List<KeyValuePair>()
 	{

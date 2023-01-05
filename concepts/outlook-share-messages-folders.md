@@ -1,6 +1,6 @@
 ---
-title: "Get Outlook messages in a shared or delegated folder"
-description: "Outlook lets customers share mail folders with one another and provide read, create, modify, or delete access to individual folders. Outlook also allows a customer to delegate another user to act on the customer's behalf."
+title: "Get Outlook messages in a shared or delegated folder using the Outlook mail API"
+description: "Use the Outlook mail API to share mail folders with others and manage access to folders. You can also delegate another user to act on your behalf."
 author: "abheek-das"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Get Outlook messages in a shared or delegated folder
 
-Outlook lets customers share mail folders with one another and provide "read", "create", "modify", or "delete" access to individual folders. Outlook also allows a customer to delegate another user to act on the customer's behalf, and access specific mail folders or the customer's entire mailbox; this is also known as "delegation" in Outlook.
+Outlook lets customers share mail folders with one another and provide read, create, modify, or delete access to individual folders. Outlook also allows a customer to delegate another user to act on the customer's behalf, and access specific mail folders or the customer's entire mailbox; this is also known as "delegation" in Outlook.
 
 Programmatically, Microsoft Graph supports getting messages in mail folders that have been shared by other users, as well as getting the shared folders themselves. The support also applies to folders that have been delegated.
 
@@ -62,7 +62,5 @@ If Garth has not shared his Inbox with John, nor has he delegated his mailbox to
 
 ## Next steps
 
-Find out more about:
-
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0.
+- [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0

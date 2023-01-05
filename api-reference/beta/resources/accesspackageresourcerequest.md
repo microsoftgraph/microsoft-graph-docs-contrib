@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages, or to remove a resource from a catalog that is no longer needed by the access packages.
+In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package resource request is a request to add a [resource](accesspackageresource.md) to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages, update a resource in a catalog to have different attribute requirements, or to remove a resource from a catalog that is no longer needed by the access packages.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
-| [Create accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
+| [List accessPackageResourceRequests](../api/entitlementmanagement-list-accesspackageresourcerequests.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
+| [Create accessPackageResourceRequest](../api/entitlementmanagement-post-accesspackageresourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
 
 ## Properties
 
@@ -33,14 +33,14 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |justification|String|The requestor's justification for adding or removing the resource.|
 |requestState|String| The outcome of whether the service was able to add the resource to the catalog.  The value is `Delivered` if the resource was added or removed. Read-Only.|
 |requestStatus|String|Read-only.|
-|requestType|String|Use `AdminAdd` to add a resource, if the caller is an administrator or resource owner, or `AdminRemove` to remove a resource. |
+|requestType|String|Use `AdminAdd` to add a resource, if the caller is an administrator or resource owner, `AdminUpdate` to update a resource, or `AdminRemove` to remove a resource. |
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackageResource|[accessPackageResource](accesspackageresource.md)| Nullable.|
-|requestor|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable.|
+|requestor|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
 

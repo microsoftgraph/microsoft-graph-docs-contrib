@@ -13,7 +13,9 @@ const client = Client.init(options);
 const administrativeUnit = {
     displayName: 'Seattle District Technical Schools',
     description: 'Seattle district technical schools administration',
-    visibility: 'HiddenMembership'
+    membershipType: 'Dynamic',
+    membershipRule: '(user.country -eq \"United States\")',
+    membershipRuleProcessingState: 'On'
 };
 
 await client.api('/administrativeUnits')

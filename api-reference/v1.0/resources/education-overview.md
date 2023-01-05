@@ -87,6 +87,7 @@ The assignment APIs support the following scenarios:
 - [Submit assignment](../api/educationsubmission-submit.md)
 - [Unsubmit assignment](../api/educationsubmission-unsubmit.md)
 - [Return grades and feedback to student](../api/educationsubmission-return.md)
+- [Get assignment details](../api/educationuser-list-assignments.md)
 
 The following are some common use cases for the assignment-related education APIs.
 

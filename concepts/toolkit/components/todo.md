@@ -1,11 +1,11 @@
 ---
-title: "To Do component in the Microsoft Graph Toolkit"
+title: "To Do component in Microsoft Graph Toolkit"
 description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To-Do."
 ms.localizationpriority: medium
-author: shweaver-MSFT
+author: sebastienlevert
 ---
 
-# To Do component in the Microsoft Graph Toolkit
+# To Do component in Microsoft Graph Toolkit
 
 The To Do component is used to enable the signed-in user to view, add, remove, complete, and/or edit tasks from Microsoft To Do using the To Do API in Microsoft Graph.
 
@@ -88,7 +88,7 @@ mgt-todo {
 }
 ````
 
-To learn more, see [styling components](https://docs.microsoft.com/graph/toolkit/style.md).
+To learn more, see [styling components](/graph/toolkit/customize-components/style).
 
 ## Events
 
@@ -127,8 +127,8 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Configuration | Permission | API |
 | ------------- | ---------- | --- |
-| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
-| `targetId` not set | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` not set | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
 | create, update or delete task | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## Authentication

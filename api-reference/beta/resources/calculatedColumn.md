@@ -1,12 +1,13 @@
 ---
 author: JeremyKelley
-description: "The calculatedColumn on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
+description: The calculatedColumn on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site.
 ms.date: 09/11/2017
 title: CalculatedColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
+
 # CalculatedColumn resource type
 
 Namespace: microsoft.graph
@@ -18,6 +19,7 @@ The **calculatedColumn** on a [columnDefinition](columndefinition.md) resource i
 ## JSON representation
 
 Here is a JSON representation of a **calculatedColumn** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.calculatedColumn" } -->
 
 ```json
@@ -30,16 +32,16 @@ Here is a JSON representation of a **calculatedColumn** resource.
 
 ## Properties
 
-| Property name  | Type    | Description
-|:---------------|:--------|:--------------------------------------------------
-| **format**     | string  | For `dateTime` output types, the format of the value. Must be one of `dateOnly` or `dateTime`.
-| **formula**    | string  | The formula used to compute the value for this column.
-| **outputType** | string  | The output type used to format values in this column. Must be one of `boolean`, `currency`, `dateTime`, `number`, or `text`.
+| Property       | Type   | Description                                                                                                                  |
+| :------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------- |
+| **format**     | string | For `dateTime` output types, the format of the value. Must be one of `dateOnly` or `dateTime`.                               |
+| **formula**    | string | The formula used to compute the value for this column.                                                                       |
+| **outputType** | string | The output type used to format values in this column. Must be one of `boolean`, `currency`, `dateTime`, `number`, or `text`. |
 
 SharePoint formulas use a syntax similar to Excel formulas.
 See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.
 
-[SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
+[SPFormulas]: https://support.office.com/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
 <!--
 {
@@ -51,5 +53,3 @@ See [Examples of common formulas in SharePoint Lists][SPFormulas] for more infor
   "suppressions": []
 }
 -->
-
-

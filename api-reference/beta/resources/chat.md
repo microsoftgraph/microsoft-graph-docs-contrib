@@ -55,9 +55,12 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | **Operations** |||
 |[List operations on chat](../api/chat-list-operations.md) | [teamsAsyncOperation](teamsAsyncOperation.md) collection | Get the list of async operations that ran or are running on the chat.|
 |[Get operation on chat](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Get a single async operation that ran or is running on the chat.|
+| **Pinned messages** |||
+|[List pinned messages](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of pinned messages in a chat.|
+|[Pin a message](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in a chat.|
+|[Unpin a message](../api/chat-delete-pinnedmessages.md)|None|Unpin a message from a chat.|
 
->**Note:** When using application permissions, be sure you know how you're going to get the chat ID. Because listing chats with application permissions is not supported, 
-not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
+>**Note:** When using application permissions, be sure you know how to get the chat ID. Because listing chats with application permissions is not supported, not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
 
 ## Properties
 
@@ -71,7 +74,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
-| webUrl| String | A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only.|
+| webUrl| String | The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.|
 
 
 ### chatType values 
@@ -88,15 +91,17 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
+| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. Null if no messages have been sent in the chat. Currently, only the [list chats](../api/chat-list.md) operation supports this property.|
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
+| operations | [teamsAsyncOperation](teamsasyncoperation.md) collection | A collection of all the Teams async operations that ran or are running on the chat. Nullable. |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
-| operations | [teamsAsyncOperation](teamsasyncoperation.md) collection | A collection of all the Teams async operations that ran or are running on the chat. Nullable. 
-| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. Null if no messages have been sent in the chat. Currently, only the [list chats](../api/chat-list.md) operation supports this property.|
+| pinnedMessages | [pinnedChatMessageInfo](pinnedchatmessageinfo.md) collection | A collection of all the pinned messages in the chat. Nullable. |
+| tabs | [teamsTab](teamstab.md) collection | A collection of all the tabs in the chat. Nullable. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

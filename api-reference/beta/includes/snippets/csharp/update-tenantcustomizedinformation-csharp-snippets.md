@@ -13,6 +13,11 @@ var tenantCustomizedInformation = new Microsoft.Graph.ManagedTenants.TenantCusto
 	{
 		new TenantContactInformation
 		{
+			Name = "String",
+			Title = "String",
+			Email = "String",
+			Phone = "String",
+			Notes = "String"
 		}
 	},
 	Website = "String"

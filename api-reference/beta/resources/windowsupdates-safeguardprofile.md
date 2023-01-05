@@ -1,7 +1,7 @@
 ---
 title: "safeguardProfile resource type"
 description: "Describes the issue(s) against which the service safeguards devices."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

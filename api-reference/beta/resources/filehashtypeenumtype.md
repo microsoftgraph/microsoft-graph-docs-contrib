@@ -3,7 +3,7 @@ title: "fileHashType enum"
 description: "Enum for file hash types."
 ms.localizationpriority: medium
 doc_type: enumPageType
-ms.prod: ""
+ms.prod: security
 author: "preetikr"
 ---
 

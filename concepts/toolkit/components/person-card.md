@@ -1,11 +1,11 @@
 ---
-title: "Person-Card component in the Microsoft Graph Toolkit"
+title: "Person-Card component in Microsoft Graph Toolkit"
 description: "A Person-Card component is a component to display more information relating to a person."
 ms.localizationpriority: medium
-author: vogtn
+author: sebastienlevert
 ---
 
-# Person-Card component in the Microsoft Graph Toolkit
+# Person-Card component in Microsoft Graph Toolkit
 
 A Person-Card component is a responsive component to display more information related to a person. It is generally used as a flyout on the `mgt-person` component.
 
@@ -37,7 +37,7 @@ The following properties are available on the config object.
 
 | Property | Description |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Indicates whether the person card component can use the Microsoft Graph Contact API to search for contact details and photos. Default value is `true`.  |
+| useContactApis | `boolean` - Indicates whether the person card component can use Microsoft Graph Contact API to search for contact details and photos. Default value is `true`.  |
 | sections | `object` - Configures what sections are shown in the person card.  |
 
 ### Person card sections
@@ -57,6 +57,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 | mailMessages | `boolean` - Indicates whether the person card messages section is shown. Default value is `true`.  |
 | files | `boolean` - Indicates whether the person card files section is shown. Default value is `true`.  |
 | profile | `boolean` - Indicates whether the person card profile section is shown. Default value is `true`.  |
+| lock-tab-navigation | `boolean` - Allows the locking of navigation using tabs so that it does not flow out of the card section. Default value is `false`.  |
 
 To disable a section, simply set the property to `false` in your app initialization code:
 ```ts
@@ -91,6 +92,7 @@ By default, the `mgt-person` component will pass the person details to the `mgt-
 | inherit-details   | None.                  | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                      |
 | user-id | string | Allows developers to supply user-id to retrieve data shown on person-card component |
 | person-query | string | Allows developers to supply person-query to retrieve data shown on person-card component |
+| person-card | string | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`.
 
 
 ## Templates
@@ -151,6 +153,16 @@ mgt-person {
   --person-card-details-item-font-size: 20px;
   --person-card-details-item-color: #3abf0a;
   --person-card-background-color: #000000;
+  --person-card-contact-link-color: #ff0000;
+  --person-card-contact-link-hover-color: #00ff00;
+  --person-card-show-more-color: #ff0000;
+  --person-card-show-more-hover-color: #00ff00;
+  --person-card-base-links-color: #ff0000;
+  --person-card-base-links-hover-color: #00ff00;
+  --person-card-tab-nav-color: #ff0000;
+  --person-card-active-org-member-color: #ff0000;
+  --person-card-nav-back-arrow-hover-color: #00ff00;
+  --person-card-nav-back-arrow-color: #ff0000;
 }
 ```
 
@@ -170,6 +182,7 @@ The Person-Card control uses the following Microsoft Graph APIs and permissions.
 | `sections.organization.showWorksWith` set (default) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Organization |
 | `sections.mailMessages` enabled (default) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Messages |
 | `sections.files` enabled (default) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files |
+| `sections.profile` enabled (default) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true) | Profile |
 
 The `MgtPersonCard` class also exposes a `getScopes` static method that returns an array of scopes required for the person card to function based on the global person card configuration.
 

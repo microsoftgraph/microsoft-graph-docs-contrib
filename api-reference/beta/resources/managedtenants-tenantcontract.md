@@ -1,9 +1,9 @@
 ---
 title: "tenantContract resource type"
 description: "Represents relationship information between a tenant and the managing entity."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

@@ -7,8 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-educationUserId := "educationUser-id"
-graphClient.Education().UsersById(&educationUserId).Patch(options)
+requestBody := graphmodels.NewEducationUser()
+displayName := "Rogelio Cazares"
+requestBody.SetDisplayName(&displayName) 
+givenName := "Rogelio"
+requestBody.SetGivenName(&givenName) 
+middleName := "Fernando"
+requestBody.SetMiddleName(&middleName) 
+surname := "Cazares"
+requestBody.SetSurname(&surname) 
+
+graphClient.Education().UsersById("educationUser-id").Patch(requestBody)
 
 
 ```

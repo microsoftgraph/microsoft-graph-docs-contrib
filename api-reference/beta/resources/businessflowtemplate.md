@@ -1,5 +1,5 @@
 ---
-title: "businessFlowTemplate resource type"
+title: "businessFlowTemplate resource type (deprecated)"
 description: "In the Azure AD access reviews feature, the `businesFlowTemplate` represents an Azure AD business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review."
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -7,11 +7,13 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# businessFlowTemplate resource type
+# businessFlowTemplate resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 In the Azure AD [access reviews](accessreviews-root.md) feature, the **businesFlowTemplate** represents an Azure AD business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review.
 

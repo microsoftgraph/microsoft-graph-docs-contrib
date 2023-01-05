@@ -7,19 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageAssignmentRequest()
+requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "AdminAdd"
-requestBody.SetRequestType(&requestType)
-accessPackageAssignment := msgraphsdk.NewAccessPackageAssignment()
+requestBody.SetRequestType(&requestType) 
+accessPackageAssignment := graphmodels.NewaccessPackageAssignment()
+target := graphmodels.Newtarget()
+email := "user@contoso.com"
+target.SetEmail(&email) 
+accessPackageAssignment.SetTarget(target)
+assignmentPolicyId := "2264bf65-76ba-417b-a27d-54d291f0cbc8"
+accessPackageAssignment.SetAssignmentPolicyId(&assignmentPolicyId) 
+accessPackageId := "a914b616-e04e-476b-aa37-91038f0b165b"
+accessPackageAssignment.SetAccessPackageId(&accessPackageId) 
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
-accessPackageAssignment.SetAdditionalData(map[string]interface{}{
-	"assignmentPolicyId": "2264bf65-76ba-417b-a27d-54d291f0cbc8",
-	"accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b",
-}
-options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(options)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(requestBody)
 
 
 ```

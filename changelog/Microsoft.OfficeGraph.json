@@ -3,11 +3,61 @@
     {
       "ChangeList": [
         {
+          "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemInsightsSettings",
+          "ChangeType": "Change",
+          "Description": "Renamed the **itemInsightsSettings** resource as [insightsSettings](https://learn.microsoft.com/graph/api/resources/insightssettings?view=graph-rest-beta) resource.",
+          "Target": "insightsSettings"
+        },
+        {
+          "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "itemInsights",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **itemInsights** navigation property of [organizationSettings](https://learn.microsoft.com/graph/api/resources/organizationsettings?view=graph-rest-beta) from **itemInsightsSettings**  to [insightsSettings](https://learn.microsoft.com/graph/api/resources/insightsettings?view=graph-rest-beta).",
+          "Target": "organizationSettings"
+        },
+        {
+          "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "peopleInsights",
+          "ChangeType": "Addition",
+          "Description": "Added a **peopleInsights** navigation property of the [insightsSettings](https://learn.microsoft.com/graph/api/resources/insightsettings?view=graph-rest-beta) type to [organizationSettings](https://learn.microsoft.com/graph/api/resources/organizationsettings?view=graph-rest-beta).",
+          "Target": "organizationSettings"
+        },
+        {
+          "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
+          "ApiChange": "Method",
+          "ChangedApiName": "insightsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added a [list](https://learn.microsoft.com/graph/api/organizationsettings-list-peopleinsights?view=graph-rest-beta) operation to [insightsSettings](https://learn.microsoft.com/graph/api/resources/insightsettings?view=graph-rest-beta) to list settings for people insights.",
+          "Target": "insightsSettings"
+        },
+        {
+          "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
+          "ApiChange": "Method",
+          "ChangedApiName": "insightsSettings",
+          "ChangeType": "Addition",
+          "Description": "Add functionality to the [update](https://learn.microsoft.com/graph/api/insightsSettings-update?view=graph-rest-beta) operation to update [insightsSettings](https://learn.microsoft.com/graph/api/resources/insightsettings?view=graph-rest-beta) for people insights.",
+          "Target": "insightsSettings"
+        }
+      ],
+      "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-06T00:00:00.000Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Insights"
+    }, 
+    {
+      "ChangeList": [
+        {
           "Id": "6bd25da3-69ed-11eb-8539-acd03a94fa95",
           "ApiChange": "Resource",
           "ChangedApiName": "userSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [userSettings](https://docs.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource type.",
           "Target": "userSettings"
         },
         {
@@ -15,7 +65,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "itemInsights",
           "ChangeType": "Addition",
-          "Description": "Added the **itemInsights** navigation property to the [userSettings](https://docs.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **itemInsights** navigation property to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
           "Target": "userSettings"
         },
         {
@@ -23,7 +73,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userInsightsSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [userInsightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the [userInsightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource type.",
           "Target": "userInsightsSettings"
         },
         {
@@ -31,7 +81,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "itemInsights",
           "ChangeType": "Addition",
-          "Description": "Added the **GET** operation to the [userInsightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **GET** operation to the [userInsightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource.",
           "Target": "userInsightsSettings"
         },
         {
@@ -39,7 +89,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "itemInsights",
           "ChangeType": "Addition",
-          "Description": "Added the **PATCH** operation to the [userInsightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **PATCH** operation to the [userInsightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource.",
           "Target": "userInsightsSettings"
         }
       ],

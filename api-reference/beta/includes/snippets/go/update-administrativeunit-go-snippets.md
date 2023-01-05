@@ -7,18 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAdministrativeUnit()
-displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
-description := "description-value"
-requestBody.SetDescription(&description)
-visibility := "visibility-value"
-requestBody.SetVisibility(&visibility)
-options := &msgraphsdk.AdministrativeUnitRequestBuilderPatchOptions{
-	Body: requestBody,
+requestBody := graphmodels.NewAdministrativeUnit()
+additionalData := map[string]interface{}{
+	"membershipType" : "Dynamic", 
+	"membershipRule" : "(user.country -eq \"United States\")", 
+	"membershipRuleProcessingState" : "On", 
 }
-administrativeUnitId := "administrativeUnit-id"
-graphClient.AdministrativeUnitsById(&administrativeUnitId).Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.AdministrativeUnitsById("administrativeUnit-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

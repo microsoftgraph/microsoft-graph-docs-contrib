@@ -7,20 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewConversationThread()
+requestBody := graphmodels.NewConversationThread()
 topic := "Take your wellness days and rest"
-requestBody.SetTopic(&topic)
-requestBody.SetPosts( []Post {
-	msgraphsdk.NewPost(),
-	SetAdditionalData(map[string]interface{}{
-	}
+requestBody.SetTopic(&topic) 
+
+
+post := graphmodels.NewPost()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
+content := "Waiting for the summer holidays."
+body.SetContent(&content) 
+post.SetBody(body)
+
+posts := []graphmodels.Postable {
+	post,
+
 }
-options := &msgraphsdk.ThreadsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-conversationId := "conversation-id"
-result, err := graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Threads().Post(options)
+requestBody.SetPosts(posts)
+
+result, err := graphClient.GroupsById("group-id").ConversationsById("conversation-id").Threads().Post(requestBody)
 
 
 ```

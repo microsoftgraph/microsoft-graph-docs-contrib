@@ -9,9 +9,17 @@ author: DarrelMiller
 
 The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios. You can add and remove middleware components. It is important to note that the order in which middleware components run is significant.
 
+<!-- markdownlint-disable MD051 -->
 ## [C#](#tab/csharp)
 
 ```csharp
+// using Azure.Identity;
+// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+var interactiveCredential = new InteractiveBrowserCredential(...);
+
+var authProvider = new TokenCredentialAuthProvider(
+    interactiveCredential, scopes);
+
 var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
 
 // Remove a default handler
@@ -36,16 +44,32 @@ var messages = await customGraphClient.Me.Messages.Request()
 ## [TypeScript](#tab/typeScript)
 
 ```typescript
-// Create a custom auth provider
-let authProvider = new SimpleAuthProvider(accessToken);
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    AuthorizationCodeCredential
+} = require("@azure/identity");
+
+const credential = new AuthorizationCodeCredential(
+    "<YOUR_TENANT_ID>",
+    "<YOUR_CLIENT_ID>",
+    "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
+    "<REDIRECT_URL>"
+);
+
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
 // Create an authentication handler that uses custom auth provider
-let authHandler = new MicrosoftGraph.AuthenticationHandler(authProvider);
+const authHandler = new MicrosoftGraph.AuthenticationHandler(authProvider);
 
 // Create a custom logging handler
-let loggingHandler = new CustomLoggingHandler();
+const loggingHandler = new CustomLoggingHandler();
 
 // Create a standard HTTP message handler
-let httpHandler = new MicrosoftGraph.HTTPMessageHandler();
+const httpHandler = new MicrosoftGraph.HTTPMessageHandler();
 
 // Use setNext to chain handlers together
 // auth -> logging -> http
@@ -59,27 +83,9 @@ const client = MicrosoftGraph.Client.initWithMiddleware({
   middleware: authHandler,
 });
 
-let response: PageCollection = await client
+const response: PageCollection = await client
   .api('/me/messages?$top=10&$select=sender,subject')
   .get();
-```
-
-### SimpleAuthProvider.ts
-
-```typescript
-import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
-
-export default class SimpleAuthProvider implements AuthenticationProvider {
-  private accessToken: string;
-
-  constructor(accessToken: string) {
-    this.accessToken = accessToken;
-  }
-
-  getAccessToken = async (): Promise<string> => {
-    return this.accessToken;
-  }
-}
 ```
 
 ### CustomLoggingHandler.ts
@@ -103,18 +109,35 @@ export default class CustomLoggingHandler implements Middleware {
 ## [Java](#tab/java)
 
 ```java
+import com.azure.identity.InteractiveBrowserCredential;
+import com.azure.identity.InteractiveBrowserCredentialBuilder;
+import com.microsoft.graph.authentication.TokenCredentialAuthProvider;
+import com.microsoft.graph.httpcore.HttpClients;
+
+import okhttp3.OkHttpClient;
+
+final List<String> scopes = Arrays.asList("User.Read");
+
+final InteractiveBrowserCredential credential =
+    new InteractiveBrowserCredentialBuilder()
+        .clientId("clientId")
+        .redirectUrl("redirectUrl")
+        .build();
+
+final TokenCredentialAuthProvider authProvider =
+    new TokenCredentialAuthProvider(scopes, credential);
 // you can configure any OkHttpClient option and add interceptors
 // Note: com.microsoft.graph:microsoft-graph:3.0 or above is required
 // for a complete description of available configuration options https://square.github.io/okhttp/4.x/okhttp/okhttp3/-ok-http-client/-builder/
-final OkHttpClient httpClient = HttpClients.createDefault(authenticationProvider)
-                                .newBuilder()
-                                .followSslRedirects(false) // sample configuration to apply to client
-                                .build();
+final OkHttpClient httpClient = HttpClients.createDefault(authProvider)
+    .newBuilder()
+    .followSslRedirects(false) // sample configuration to apply to client
+    .build();
 
 final GraphServiceClient graphServiceClient = GraphServiceClient
-                .builder()
-                .httpClient(httpClient)
-                .buildClient();
+    .builder()
+    .httpClient(httpClient)
+    .buildClient();
 ```
 
 ## [Go](#tab/Go)
@@ -123,8 +146,8 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ```go
 import (
-    a "github.com/microsoft/kiota/authentication/go/azure"
-    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    a "github.com/microsoft/kiota-authentication-azure-go"
+    khttp "github.com/microsoft/kiota-http-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
     core "github.com/microsoftgraph/msgraph-sdk-go-core"
 )
@@ -137,7 +160,7 @@ defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefault
 
 // Get instance of custom middleware
 // Implement a custom middleware by implementing the Middleware interface
-// https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
+// https://github.com/microsoft/kiota-http-go/blob/main/middleware.go
 allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
 
 // Create an HTTP client with the middleware
@@ -235,13 +258,14 @@ const client = MicrosoftGraph.Client.initWithMiddleware({
 
 ## [Java](#tab/java)
 
-```Java
+```java
 final int proxyPort = 8080;
 final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.hostname", proxyPort);
 
 // The section below configures the proxy for the Azure Identity client
 // and is only needed if you rely on Azure Identity for authentication
 final ProxyOptions pOptions = new ProxyOptions(ProxyOptions.Type.HTTP, proxyInetAddress);
+pOptions.setCredentials("username", "password");
 final HttpClientOptions clientOptions = new HttpClientOptions();
 clientOptions.setProxyOptions(pOptions);
 final HttpClient azHttpClient = HttpClient.createDefault(clientOptions);
@@ -294,6 +318,38 @@ final GraphServiceClient graphServiceClient =
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-The Microsoft Graph SDK for Go does not currently support HTTP proxy. See [this GitHub issue](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15) for more details.
+```go
+import (
+   a "github.com/microsoft/kiota-authentication-azure-go"
+   khttp "github.com/microsoft/kiota-http-go"
+   msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+   core "github.com/microsoftgraph/msgraph-sdk-go-core"
+)
+
+// Auth provider
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
+
+// Get default middleware from SDK
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
+
+// Get instance of custom middleware
+// Implement a custom middleware by implementing the Middleware interface
+// https://github.com/microsoft/kiota-http-go/blob/main/middleware.go
+allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
+
+// Create an HTTP client with the middleware
+httpClient := core.GetClientWithAuthenticatedProxySettings("http:://proxy-url", "username", "password", allMiddleware...)
+
+// A client that does not require user and password auth can use
+httpClient := core.GetClientWithProxySettings("http:://proxy-url", allMiddleware...)
+
+// Create the adapter
+// Passing nil values causes the adapter to use default implementations
+adapter, err :=
+    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
+        auth, nil, nil, httpClient)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+```
 
 ---

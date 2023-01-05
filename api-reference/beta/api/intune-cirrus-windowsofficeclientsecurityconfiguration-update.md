@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -141,6 +141,8 @@ Content-Length: 1077
   ]
 }
 ```
+
+
 
 
 

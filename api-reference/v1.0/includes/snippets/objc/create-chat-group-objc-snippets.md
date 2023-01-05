@@ -27,7 +27,7 @@ NSMutableArray *rolesList = [[NSMutableArray alloc] init];
 [membersList addObject: members];
 MSGraphConversationMember *members = [[MSGraphConversationMember alloc] init];
 NSMutableArray *rolesList = [[NSMutableArray alloc] init];
-[rolesList addObject: @"owner"];
+[rolesList addObject: @"guest"];
 [members setRoles:rolesList];
 [membersList addObject: members];
 [chat setMembers:membersList];

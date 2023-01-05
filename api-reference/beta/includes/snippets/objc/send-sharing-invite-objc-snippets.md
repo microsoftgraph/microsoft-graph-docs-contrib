@@ -15,7 +15,7 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSMutableArray *recipientsList = [[NSMutableArray alloc] init];
 MSGraphDriveRecipient *recipients = [[MSGraphDriveRecipient alloc] init];
-[recipients setEmail:@"ryan@contoso.org"];
+[recipients setEmail:@"robin@contoso.org"];
 [recipientsList addObject: recipients];
 payloadDictionary[@"recipients"] = recipientsList;
 

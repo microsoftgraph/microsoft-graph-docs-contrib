@@ -61,7 +61,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |expirationDateTime|DateTimeOffset|The expiration time.|
 |versionNumber|String|The version number of iOS Line of Business (LoB) app.|
 |buildNumber|String|The build number of iOS Line of Business (LoB) app.|
-|identityVersion|String|The identity version.|
+|identityVersion|String|The identity version. This property is being deprecated in 2211(November 2022)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -128,7 +128,8 @@ Here is a JSON representation of the resource.
     "v11_0": true,
     "v12_0": true,
     "v13_0": true,
-    "v14_0": true
+    "v14_0": true,
+    "v15_0": true
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
@@ -136,6 +137,8 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
+
+
 
 
 

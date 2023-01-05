@@ -8,13 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 headers := map[string]string{
-	"Prefer": "return=representation"
+	"Prefer": "return=representation",
 }
-options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
-	H: headers,
+configuration := &graphconfig.TiIndicatorRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
-tiIndicatorId := "tiIndicator-id"
-graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+requestBody := graphmodels.NewTiIndicator()
+additionalInformation := "additionalInformation-after-update"
+requestBody.SetAdditionalInformation(&additionalInformation) 
+confidence := int32(42)
+requestBody.SetConfidence(&confidence) 
+description := "description-after-update"
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Security().TiIndicatorsById("tiIndicator-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

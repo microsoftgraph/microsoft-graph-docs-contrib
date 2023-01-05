@@ -1,6 +1,6 @@
 ---
 title: "plannerTask resource type"
-description: "The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a plan and can be assigned to a bucket in a plan. Each task object has a details object which can contain more information about the task. See overview for more information regarding relationships between group, plan and task."
+description: "Represents a Planner task in Microsoft 365."
 ms.localizationpriority: high
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](planner-overview.md) for more information regarding relationships between group, plan and task.
+Represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. For more information about relationships between group, plan, and task, See [Use the Planner REST API](planner-overview.md).
 
 
 ## Methods
@@ -41,6 +41,7 @@ The **plannerTask** resource represents a Planner task in Microsoft 365. A Plann
 |id|String|Read-only. ID of the task. It is 28 characters long and case-sensitive. [Format validation](planner-identifiers-disclaimer.md) is done on the service.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
+|priority|Int32|Priority of the task. The valid range of values is between `0` and `10`, with the increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2`, `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Additionally, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|This sets the type of preview that shows up on the task. The possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Number of external references that exist on the task.|
@@ -56,7 +57,7 @@ The **plannerTask** resource represents a Planner task in Microsoft 365. A Plann
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -69,25 +70,26 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "activeChecklistItemCount": 1024,
+  "activeChecklistItemCount": "Int32",
   "appliedCategories": {"@odata.type": "microsoft.graph.plannerAppliedCategories"},
   "assigneePriority": "String",
   "assignments": {"@odata.type": "microsoft.graph.plannerAssignments"},
   "bucketId": "String",
-  "checklistItemCount": 1024,
+  "checklistItemCount": "Int32",
   "completedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "completedDateTime": "String (timestamp)",
   "conversationThreadId": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "dueDateTime": "String (timestamp)",
-  "hasDescription": true,
+  "hasDescription": "Boolean",
   "id": "String (identifier)",
   "orderHint": "String",
-  "percentComplete": 1024,
+  "percentComplete": "Int32",
+  "priority": "Int32",
   "planId": "String",
   "previewType": "String",
-  "referenceCount": 1024,
+  "referenceCount": "Int32",
   "startDateTime": "String (timestamp)",
   "title": "String"
 }

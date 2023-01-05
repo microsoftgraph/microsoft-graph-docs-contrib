@@ -28,7 +28,7 @@ Derived from [attachment](attachment.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String|The content type of the attachment. Optional.|
+|contentType|String|The content type of the attachment. Returned as `null` by default, when not set explicitly. Optional.|
 |id|String|The attachment ID.  Read-only.|
 |isFolder|Boolean|Specifies whether the attachment is a link to a folder. Must set this to true if **sourceUrl** is a link to a folder. Optional.|
 |isInline|Boolean|Set to true if the attachment appears inline in the body of the embedding object. Optional.|
