@@ -19,8 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                                                                          |
-| Delegated (personal Microsoft account) | Not Supported.                                                                          |
+| Delegated (work or school account)     | Not supported.                                                                          |
+| Delegated (personal Microsoft account) | Not supported.                                                                          |
 | Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
 
 > **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the table above.
@@ -1172,8 +1172,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "join-meeting-app-hosted-media",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": "true"
 }-->
 
 ```http
