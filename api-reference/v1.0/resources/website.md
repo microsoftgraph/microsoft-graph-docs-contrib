@@ -35,9 +35,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "type": "String",
   "address": "string",
-  "displayName": "string"
+  "displayName": "string",
+  "type": "String"
 }
 
 ```
