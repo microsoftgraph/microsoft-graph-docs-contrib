@@ -1,5 +1,5 @@
 ---
-title: "Customize pronouns availability (preview) (preview)"
+title: "Customize pronouns availability (preview)"
 description: "Configure the availability of pronouns by using the REST API pronounsSettings resource."
 author: "aymen-ms"
 ms.localizationpriority: high
