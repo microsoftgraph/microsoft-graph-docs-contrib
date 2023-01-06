@@ -57,21 +57,18 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentPolicy",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
   "allowedTargetScope": "String",
   "automaticRequestSettings": {
     "@odata.type": "microsoft.graph.accessPackageAutomaticRequestSettings"
   },
-  "specificAllowedTargets": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
   "expiration": {
     "@odata.type": "microsoft.graph.expirationPattern"
   },
+  "id": "String (identifier)",
+  "modifiedDateTime": "String (timestamp)"
   "requestorSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"
   },
@@ -81,8 +78,12 @@ The following is a JSON representation of the resource.
   "reviewSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
   },
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "specificAllowedTargets": [
+    {
+      "@odata.type": "microsoft.graph.singleUser"
+    }
+  ],
+ 
 }
 ```
 
