@@ -1,6 +1,6 @@
 ---
 title: "meetingInfo resource type"
-description: "An abstract class that contains meeting specific information."
+description: "An abstract class that contains meeting-specific information."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract class that contains meeting specific information.
+An abstract class that contains meeting-specific information.
 
 To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) in combination with the [chatInfo](./chatinfo.md), the [tokenMeetingInfo](tokenmeetinginfo.md), or the [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md).
 
