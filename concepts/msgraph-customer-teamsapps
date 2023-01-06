@@ -27,7 +27,7 @@ For details about the requirements for integrating with the assignments flow in 
 
 After you create and publish your Teams app, before you can integrate with assignments, your app must be enabled. To request to have your app enabled, complete this [form](https://aka.ms/AssignmentsAppRequest).
 
-## Launch the application
+## Add your Teams app to an assignment
 
 Your Teams app can be added as an **assignment** resource.
 
