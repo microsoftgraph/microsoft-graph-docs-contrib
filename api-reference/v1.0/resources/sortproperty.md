@@ -17,8 +17,9 @@ Indicates the order to sort search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|name|String|The name of the property to sort on. Required.|
 |isDescending|Boolean|`True` if the sort order is descending. Default is `false`, with the sort order as ascending. Optional.|
+|name|String|The name of the property to sort on. Required.|
+
 
 ## JSON representation
 
