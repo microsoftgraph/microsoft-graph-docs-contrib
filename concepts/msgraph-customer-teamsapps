@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Integrate your Teams app with education assignments
 
-The education community has a rich set of tools and applications that enhance the experience for educators and users. You can use Microsoft Graph APIs to make your solution available to teachers and students by integrating with assignments.  
+The education community has a rich set of tools and applications that enhance the experience for educators and users. You can use Microsoft Graph APIs to make your solution available to teachers and students by integrating your app with assignments in Teams.  
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
