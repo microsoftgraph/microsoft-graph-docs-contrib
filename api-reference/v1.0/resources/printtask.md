@@ -32,8 +32,9 @@ For details about how to use this resource to add pull printing support to Unive
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|trigger|[printTaskTrigger](printtasktrigger.md)|The printTaskTrigger that triggered this task's execution. Read-only.|
 |definition|[printTaskDefinition](printtaskdefinition.md)|The printTaskDefinition that was used to create this task. Read-only.|
+|trigger|[printTaskTrigger](printtasktrigger.md)|The printTaskTrigger that triggered this task's execution. Read-only.|
+
 
 ## JSON representation
 The following is a JSON representation of the resource.
