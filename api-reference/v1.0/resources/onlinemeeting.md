@@ -27,9 +27,9 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 | Property              | Type                                          | Description                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
 | allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera.                          |
 | allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
 | allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
 | attendeeReport | Stream | The content stream of the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
