@@ -545,7 +545,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) method to the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) method to the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessGroupAssignmentScheduleRequest"
         },
         {
@@ -553,7 +553,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) method to the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) method to the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessGroupEligibilityScheduleRequest"
         },
         {
@@ -561,7 +561,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentSchedule?view=graph-rest-beta) method to the [privilegedAccessGroupAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentSchedule?view=graph-rest-beta) resource.",
+          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentSchedule?view=graph-rest-beta) method to the [privilegedAccessGroupAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentSchedule?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessGroupAssignmentSchedule"
         },
         {
@@ -569,7 +569,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-beta) method to the [privilegedAccessGroupAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-beta) resource.",
+          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-beta) method to the [privilegedAccessGroupAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessGroupAssignmentScheduleInstance"
         },
         {
@@ -577,7 +577,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) method to the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) method to the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessGroupAssignmentScheduleRequest"
         },
         {
@@ -585,7 +585,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilitySchedule?view=graph-rest-beta) method to the [privilegedAccessGroupEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilitySchedule?view=graph-rest-beta) resource.",
+          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilitySchedule?view=graph-rest-beta) method to the [privilegedAccessGroupEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilitySchedule?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessGroupEligibilitySchedule"
         },
         {
@@ -593,7 +593,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-beta) method to the [privilegedAccessGroupEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-beta) resource.",
+          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-beta) method to the [privilegedAccessGroupEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessGroupEligibilityScheduleInstance"
         },
         {
@@ -601,7 +601,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) method to the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) method to the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessGroupEligibilityScheduleRequest"
         },
         {
