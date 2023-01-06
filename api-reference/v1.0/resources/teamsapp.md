@@ -29,10 +29,10 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
-| externalId          | string   | The ID of the catalog provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | The name of the catalog app provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
 | distributionMethod  | teamsAppDistributionMethod     | The method of distribution for the app. Read-only.|
+| externalId          | string   | The ID of the catalog provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
+| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
 
 ### teamsAppDistributionMethod values
 

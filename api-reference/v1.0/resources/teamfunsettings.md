@@ -18,10 +18,10 @@ Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowGiphy|Boolean|If set to true, enables Giphy use.|
-|giphyContentRating|String (enum)|Giphy content rating. Possible values are: `moderate`, `strict`.|
-|allowStickersAndMemes|Boolean|If set to true, enables users to include stickers and memes.|
 |allowCustomMemes|Boolean|If set to true, enables users to include custom memes.|
+|allowGiphy|Boolean|If set to true, enables Giphy use.|
+|allowStickersAndMemes|Boolean|If set to true, enables users to include stickers and memes.|
+|giphyContentRating|String (enum)|Giphy content rating. Possible values are: `moderate`, `strict`.|
 
 ## JSON representation
 
