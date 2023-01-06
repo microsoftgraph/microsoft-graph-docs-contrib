@@ -7,34 +7,24 @@
           "ApiChange": "Resource",
           "ChangedApiName": "joinMeetingIdSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [joinMeetingIdSettings](https://docs.microsoft.com/en-us/graph/api/resources/joinMeetingIdSettings?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [joinMeetingIdSettings](https://learn.microsoft.com/en-us/graph/api/resources/joinmeetingidsettings?view=graph-rest-1.0) resource type.",
           "Target": "joinMeetingIdSettings"
+        },
+        {
+          "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+          "ApiChange": "Property",
+          "ChangedApiName": "joinMeetingIdSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **joinMeetingIdSettings** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
         }
       ],
       "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-12-19T17:44:20.7449096Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "6c854522-7330-48db-aea1-449d0a98c292",
-          "ApiChange": "Property",
-          "ChangedApiName": "joinMeetingIdSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the `joinMeetingIdSettings` property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
-          "Target": "onlineMeeting"
-        }
-      ],
-      "Id": "6c854522-7330-48db-aea1-449d0a98c292",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-12-19T17:44:20.7458102Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Online meeting"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [

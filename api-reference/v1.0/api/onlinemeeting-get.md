@@ -244,9 +244,9 @@ You can retrieve meeting information via meeting ID with either a user or applic
 
 #### Request
 
-> **Note:** The meeting ID has been truncated for readability.
+The following is an example of a request that uses a user (delegated) token.
 
-The following is an example of a request. The following request uses a user token.
+> **Note:** The meeting ID has been truncated for readability.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get-onlinemeeting-user-token","sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"]} -->
@@ -345,7 +345,7 @@ You can retrieve meeting information via JoinWebUrl by using either a user or ap
 
 #### Request
 
-The following is an example of a request. The following request uses a user token.
+The following is an example of a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get-onlinemeeting-joinurl-user-token", "sampleKeys": ["https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d"]} -->
@@ -443,28 +443,42 @@ Content-Type: application/json
 ```
 
 ### Example 4: Retrieve an online meeting by joinMeetingId
-You can retrieve meeting information via the **joinMeetingId** by using either a user or an application token.
+
+You can retrieve meeting information via the **joinMeetingId** by using either a user (delegated) or an application token.
 
 #### Request
 
-The following request uses a user token.
-<!-- { "blockType": "ignored" } -->
+The following is an example of a request that uses a user (delegated) token.
+<!-- {
+  "blockType": "request",
+  "name": "get-an-online-meeting-by-joinmeetingid"
+} -->
 ```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
 ```
 
 The following request uses an app token.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
+GET https://graph.microsoft.com/v1.0/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
 ```
 
 #### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. 
-```json
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "value": [
         {
@@ -517,7 +531,7 @@ The following example shows a request to download an attendee report.
 
 #### Request
 
-The following is an example of a request. The following request uses delegated permission.
+The following is an example of a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {

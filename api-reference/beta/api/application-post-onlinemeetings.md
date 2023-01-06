@@ -279,28 +279,20 @@ The following is an example of the response.
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
 ### Example 3: Create an online meeting that requires a passcode
 
 The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+
 #### Request
 
 The following is an example of a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode is not supported.
+
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-with-passcode"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -323,7 +315,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
@@ -376,9 +368,15 @@ Content-Type: application/json
 ### Example 4: Create an online meeting that does not require a passcode
 
 When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
+
 #### Request
 
 The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-without-passcode"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -414,7 +412,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
@@ -462,3 +460,17 @@ Content-Type: application/json
   }
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create onlineMeeting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
