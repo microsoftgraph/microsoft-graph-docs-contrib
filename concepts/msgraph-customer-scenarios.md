@@ -31,7 +31,7 @@ You can read and update data and integrate your app with assignments and grades 
 
 - Enable a web app to create assignments with links back to a website
 
-- Show Teams app content within assignments
+- Integrate your Teams app with education assignments
 
 - Update the grades in assignments from an app
 
