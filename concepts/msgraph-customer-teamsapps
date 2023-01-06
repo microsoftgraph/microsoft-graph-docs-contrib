@@ -1,5 +1,5 @@
 ---
-title: "Show teams applications content in assignments"
+title: "Show Teams app content within assignments"
 description: "Use Microsoft Graph to get Microsoft Teams applications content in assignments."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
@@ -7,42 +7,40 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Get Microsoft Teams applications content within assignments
+# Show Teams app content within assignments
 
-The education tech community has a rich set of tools and applications that are used in education, you can integrate your tool to be added to assignments as a resource for teachers and students to use.  
+The education community has a rich set of tools and applications that enhance the experience for educators and users. You can use Microsoft Graph APIs to make your solution available to teachers and students by integrating with assignments.  
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
-## Creating a Microsoft Teams application
+## Create a Microsoft Teams app
 
-Microsoft Teams offers a collection of apps that are provided by Microsoft or external services. The apps can be tabs, bots, message extensions or resources.
+Microsoft Teams offers a collection of apps that are provided by Microsoft or external services. The apps can be tabs, bots, message extensions, or resources.
 
-You can see more detailed information on [how to create apps in Teams].(https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/create-new-project?pivots=visual-studio-code).
+To get started building your own Teams app, see [Create a new Teams app](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/create-new-project?pivots=visual-studio-code).
 
-This [application sample](https://github.com/microsoft/edu-assignments-apps-sample) demonstrates some best practices for Teams Apps integrated with assignments.
+For best practices for integrating your Teams app with assignments, see the [assignment apps sample](https://github.com/microsoft/edu-assignments-apps-sample).
 
-## Requirements
+For details about the requirements for integrating with the assignments flow in Teams, see [Assignment app integration requirements](https://aka.ms/AssignmentsRequirements).
 
-In addition to being a Teams App, **assignments** does have a set of additional requirements to be used within Assignments. See [the assignments requirements](https://aka.ms/AssignmentsRequirements) for using Teams Apps in Assignments.
+## Request to enable your Teams app for assignment flows
 
-## Enabling Microsoft Teams application
-
-After you have created and published your app for Assignments, Teams needs to enable the app for the Assignment App. Fill out this [form](https://aka.ms/AssignmentsAppRequest) to get your app enabled.
+After you create and publish your Teams app, before you can integrate with assignments, your app must be enabled. To request to have your app enabled, complete this [form](https://aka.ms/AssignmentsAppRequest).
 
 ## Launch the application
 
 Your Teams app can be added as an **assignment** resource.
 
-1. Get the application `id` using this endpoint and don't supply a request body for this method.
+1. Get the application **id** using this endpoint. Do not supply a request body.
 
 ```http
 GET /appCatalogs/teamsApps?$filter=displayName eq 'APPLICATION NAME'
 ```
 
-2. Attach the Teams App to an assignment
+2. Attach the Teams app to an assignment.
 
-#### Request
-The following is an example of the request. Use the `id` from the previous request and set into `appId` property below.
+**Request**
+The following is an example of the request. Use the **id** from the previous request for the **appId** property value.
 
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
@@ -61,7 +59,8 @@ Content-type: application/json
 }
 ```
 
-#### Response
+**Response**
+
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -104,10 +103,10 @@ Content-type: application/json
 }
 ```
 
-3. The Teams App is now added into the assignment and available to launch by students.
+3. The Teams App is now added to the assignment and is available for students to launch.
 
-See [other example](/graph/api/educationassignment-post-resources#example-7-create-an-educationteamsappresource) on how to create and attach the Teams app into an assignment.
+For an example that shows how to integrate a Teams app with an assignment, see [Example 7: Create an educationTeamsAppResource](/graph/api/educationassignment-post-resources#example-7-create-an-educationteamsappresource).
 
 ## Permissions
 
-Assignments API supports both delegated (per user) and AppOnly (per App) permission. For ease of use for the student and teacher Apponly is preferred as this allows for only approval of your app to retrieve data.
+The assignments API supports both delegated (per user) and app-only (per app) permissions. For ease of use for the student and teacher, app-only permissions are preferred. This allows for approval of your app only to retrieve data.
