@@ -19,20 +19,9 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List privilegedAccessGroupAssignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) collection|Get a list of the [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) objects and their properties.|
-<!-- |[Create privilegedAccessGroupAssignmentSchedule](../api/privilegedaccessgroup-post-assignmentschedules.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md)|Create a new [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.| -->
 |[Get privilegedAccessGroupAssignmentSchedule](../api/privilegedaccessgroupassignmentschedule-get.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md)|Read the properties and relationships of a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.|
-<!-- |[Update privilegedAccessGroupAssignmentSchedule](../api/privilegedaccessgroupassignmentschedule-update.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md)|Update the properties of a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.| -->
-<!-- |[Delete privilegedAccessGroupAssignmentSchedule](../api/privilegedaccessgroup-delete-assignmentschedules.md)|None|Delete a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.| -->
 |[filterByCurrentUser](../api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) collection|Return assignment schedules for privileged access for calling principal.|
-|[List privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedulerequest-list-targetschedule.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|Get the privilegedAccessGroupEligibilitySchedule resources from the activatedUsing navigation property.|
-<!-- |[Add privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupassignmentschedule-post-activatedusing.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Add activatedUsing by posting to the activatedUsing collection.| -->
-<!-- |[Remove privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupassignmentschedule-delete-activatedusing.md)|None|Remove a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.| -->
-<!-- |[List group](../api/user-list-joinedgroups.md)|[group](../resources/group.md) collection|Get the group resources from the group navigation property.| -->
-<!-- |[Add group](../api/privilegedaccessgroupassignmentschedule-post-group.md)|[group](../resources/group.md)|Add group by posting to the group collection.| -->
-<!-- |[Remove group](../api/privilegedaccessgroupassignmentschedule-delete-group.md)|None|Remove a [group](../resources/group.md) object.| -->
-|[List principal](../api/user-list-createdobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the principal navigation property.|
-|[Add principal](../api/privilegedaccessgroupassignmentschedule-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
-|[Remove principal](../api/privilegedaccessgroupassignmentschedule-delete-principal.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
+|[List privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroup-list-eligibilityschedules)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|Get the privilegedAccessGroupEligibilitySchedule resources from the activatedUsing navigation property.|
 
 ## Properties
 |Property|Type|Description|

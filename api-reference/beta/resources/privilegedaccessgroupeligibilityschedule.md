@@ -18,18 +18,9 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List privilegedAccessGroupEligibilitySchedules](../api/privilegedaccessgroupeligibilityschedulerequest-list-targetschedule.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|Get a list of the [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) objects and their properties.|
-<!-- |[Create privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedulerequest-post-targetschedule.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Create a new [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.| -->
+|[List privilegedAccessGroupEligibilitySchedules](../api/privilegedaccessgroup-list-eligibilityschedules.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|Get a list of the [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) objects and their properties.|
 |[Get privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedule-get.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Read the properties and relationships of a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.|
-<!-- |[Update privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedule-update.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Update the properties of a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.| -->
-<!-- |[Delete privilegedAccessGroupEligibilitySchedule](../api/privilegedaccessgroupeligibilityschedulerequest-delete-targetschedule.md)|None|Delete a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object.| -->
 |[filterByCurrentUser](../api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser.md)|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|Return eligibility schedule for privileged access for calling principal.|
-<!-- |[List group](../api/user-list-joinedgroups.md)|[group](../resources/group.md) collection|Get the group resources from the group navigation property.| -->
-<!-- |[Add group](../api/privilegedaccessgroupeligibilityschedule-post-group.md)|[group](../resources/group.md)|Add group by posting to the group collection.| -->
-<!-- |[Remove group](../api/privilegedaccessgroupeligibilityschedule-delete-group.md)|None|Remove a [group](../resources/group.md) object.| -->
-|[List principal](../api/user-list-createdobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the principal navigation property.|
-|[Add principal](../api/privilegedaccessgroupeligibilityschedule-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
-|[Remove principal](../api/privilegedaccessgroupeligibilityschedule-delete-principal.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
 
 ## Properties
 |Property|Type|Description|
