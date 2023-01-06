@@ -17,11 +17,12 @@ Session control to enforce sign-in frequency. Inherits from [conditionalAccessSe
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.|
+|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |type          |signinFrequencyType| Possible values are: `days`, `hours`.|
 |value         |Int32        | The number of `days` or `hours`.|
-|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.|
-|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
+
 
 ## Relationships
 
