@@ -2454,7 +2454,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": " Shifts"
+      "SubArea": "Shift management"
     },
     {
       "ChangeList": [
@@ -3711,7 +3711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
-          "Description": "Removed DELETE /groups/{id}/channels/{id} , use DELETE /teams/{id}/channels/{id} instead.",
+          "Description": "Removed DELETE /groups/{id}/channels/{id}. Use DELETE /teams/{id}/channels/{id} instead.",
           "Target": ""
         },
         {

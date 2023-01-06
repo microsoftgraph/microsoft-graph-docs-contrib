@@ -1,7 +1,7 @@
 ---
 title: "riskyUserHistoryItem resource type"
 description: "Represents the risk history of an Azure Active Directory (Azure AD) user as determined by Azure AD Identity Protection."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
