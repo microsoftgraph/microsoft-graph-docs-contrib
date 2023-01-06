@@ -20,6 +20,7 @@ Specifies the **joinMeetingId**, the meeting passcode, and the requirement for t
 | isPasscodeRequired  | Boolean   | Indicates whether a passcode is required to join a meeting when using **joinMeetingId**. Optional. |
 | joinMeetingId       | String    | The meeting ID to be used to join a meeting. Optional. Read-only. |
 | passcode            | String    | The passcode to join a meeting.  Optional. Read-only. |
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

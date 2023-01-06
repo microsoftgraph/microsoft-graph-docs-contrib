@@ -286,31 +286,25 @@ The following is an example of the response.
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
 ### Example 3: Create an online meeting that requires a passcode
 
 The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+
 #### Request
 
 The following is an example of a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode is not supported.
+
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-with-passcode"
+}-->
+
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
 Content-Type: application/json
+
 {
   "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
   "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
@@ -326,8 +320,9 @@ Content-Type: application/json
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
@@ -335,8 +330,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4086-17cc-42e7-85f4-f03880d6')/onlineMeetings/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f4086-17cc-42e7-85f4-f03880d6')/onlineMeetings/$entity",
   "audioConferencing": {
     "tollNumber": "+12525478",
     "tollFreeNumber": "+18690588",
@@ -362,8 +358,6 @@ Content-Type: application/json
           "displayName": "Mario Rogers"
         }
       },
-yuyaolian-msft marked this conversation as resolved.
-Show resolved
       "role": "presenter",
       "upn": "upn-value"
     }
@@ -380,13 +374,20 @@ Show resolved
 ### Example 4: Create an online meeting that does not require a passcode
 
 When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
+
 #### Request
 
 The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-without-passcode"
+}-->
+
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
 Content-Type: application/json
+
 {
   "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
   "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
@@ -397,11 +398,12 @@ Content-Type: application/json
 }
 ```
 
-or
+OR
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
 Content-Type: application/json
+
 {
   "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
   "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
@@ -414,8 +416,9 @@ Content-Type: application/json
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
@@ -423,8 +426,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f4053f86-17cc-85f4-f0389ac980d6')/onlineMeetings/$entity",
   "audioConferencing": {
     "tollNumber": "+12525478",
     "tollFreeNumber": "+186390588",
@@ -462,3 +466,17 @@ Content-Type: application/json
   }
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create onlineMeeting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
