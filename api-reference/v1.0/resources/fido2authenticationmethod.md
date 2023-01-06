@@ -24,14 +24,13 @@ A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-i
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The authentication method identifier.|
-|displayName|String|The display name of the key as given by the user.|
-|createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user.|
 |aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.|
-|model|String|The manufacturer-assigned model of the FIDO2 security key.|
 |attestationCertificates|String collection|The attestation certificate(s) attached to this security key.|
 |attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. Possible values are: `attested`, or `notAttested`.|
-
+|createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user.|
+|displayName|String|The display name of the key as given by the user.|
+|id|String|The authentication method identifier.|
+|model|String|The manufacturer-assigned model of the FIDO2 security key.|
 
 ## Relationships
 None.

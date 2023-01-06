@@ -17,10 +17,10 @@ Contains a tenant score and description for an individual control.
 
 |Name |Type |Description |
 |:--|:--|:--|
-|controlName|String|Control unique name.|
-|score|Double|Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).|
 |controlCategory|String|Control action category (Identity, Data, Device, Apps, Infrastructure).|
+|controlName|String|Control unique name.|
 |description|String| Description of the control.|
+|score|Double|Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).|
 
 ## JSON representation
 
