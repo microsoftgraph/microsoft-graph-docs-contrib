@@ -1,13 +1,13 @@
 ---
-title: "Show Teams app content within assignments"
-description: "Use Microsoft Graph to get Microsoft Teams applications content in assignments."
+title: "Integrate your Teams app with education assignments"
+description: "Use Microsoft Graph to add your Microsoft Teams app content to assignments."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Show Teams app content within assignments
+# Integrate your Teams app with education assignments
 
 The education community has a rich set of tools and applications that enhance the experience for educators and users. You can use Microsoft Graph APIs to make your solution available to teachers and students by integrating with assignments.  
 
