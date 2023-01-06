@@ -20,9 +20,9 @@ One of the following [permissions](/graph/permissions-reference#calls-permission
 
 | Scenario                 | Permissions                                  |
 |:------------------------------------|:---------------------------------------------|
+| Call records             | CallRecords.Read.All |
 | Calling                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Meetings                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
-| Call records             | CallRecords.Read.All |
 | Presences             | Presence.Read, Presence.Read.All |
 
 ## Common use cases

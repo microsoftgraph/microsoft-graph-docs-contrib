@@ -19,8 +19,8 @@ Delegated permission classifications can be used in combination with user consen
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| id | String | A unique identifier for the **delegatedPermissionClassification** Key. Not nullable. Read-only. |
 | classification | permissionClassificationType | The classification value being given. Possible value: `low`. Does not support `$filter`. |
+| id | String | A unique identifier for the **delegatedPermissionClassification** Key. Not nullable. Read-only. |
 | permissionId | String | The unique identifier (**id**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Does not support `$filter`. |
 | permissionName | String | The claim value (**value**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Does not support `$filter`. |
 
