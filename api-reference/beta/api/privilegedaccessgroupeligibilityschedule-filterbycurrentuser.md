@@ -148,7 +148,7 @@ Content-Type: application/json
         "startDateTime": "2022-02-09T14:48:00.000Z",
         "expiration":{
           "@odata.type": "#microsoft.graph.expirationPattern",
-          "type": "NoExpiration"
+          "type": "noExpiration"
           "endDateTime": null,
           "duration": null
         },
