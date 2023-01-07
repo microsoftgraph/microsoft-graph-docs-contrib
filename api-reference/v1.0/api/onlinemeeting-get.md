@@ -531,7 +531,7 @@ The following example shows a request to download an attendee report.
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following request uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {
