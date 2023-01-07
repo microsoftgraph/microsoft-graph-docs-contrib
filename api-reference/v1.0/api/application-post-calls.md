@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 #### Request
-The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
+The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 
 # [HTTP](#tab/http)
@@ -359,7 +359,7 @@ Content-Type: application/json
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
 #### Request
-The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name, and tenant ID must be replaced with actual values to make the example work.
+The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted locally by the application. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 
 # [HTTP](#tab/http)
@@ -795,10 +795,10 @@ Content-Type: application/json
 ```
 
 ### Example 5: Join scheduled meeting with service hosted media
-To join the scheduled meeting we will need to get the thread ID, message ID, organizer ID and the tenant ID in which the meeting is scheduled.
-This information can be obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
+To join the scheduled meeting, you need to get the thread ID, message ID, organizer ID, and the tenant ID in which the meeting is scheduled.
+You can get this information by using the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
-The values of authorization token, callback url, application ID, application name, user ID, user name, and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
+The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
 
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
