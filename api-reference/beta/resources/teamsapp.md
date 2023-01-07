@@ -67,17 +67,13 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 }
 ```
 
-## Code samples
-
-| Sample name | Description | C# | Node.js |
-| --- | --- | --- | --- |
-| AppCatalog sample | This sample illustrates how you programmatically manage lifecycle for your Teams app in catalog by calling Microsoft Graph APIs. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/nodejs) |
-
 ## See also
 
 - [teamsAppInstallation](teamsappinstallation.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
+- [App catalog sample (C#)]https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp
+- [App catalog sample (Node.JS)]https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/nodejs
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
