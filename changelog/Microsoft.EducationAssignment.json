@@ -1849,7 +1849,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Schools,Classes,Users,Assignments,Submissions",
           "ChangeType": "Addition",
-          "Description": "Added support for education scenarios, including the following resources:, [Schools](https://learn.microsoft.com/en-us/graph/api/resources/educationschool?view=graph-rest-beta), [Classes](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-beta), [Users](https://learn.microsoft.com/en-us/graph/api/resources/educationuser?view=graph-rest-beta), [Assignments](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta), [Submissions](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta), See the resource topics for details about the methods that are available.",
+          "Description": "Added support for education scenarios, including the following resources: [Schools](https://learn.microsoft.com/en-us/graph/api/resources/educationschool?view=graph-rest-beta), [Classes](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-beta), [Users](https://learn.microsoft.com/en-us/graph/api/resources/educationuser?view=graph-rest-beta), [Assignments](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta), [Submissions](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta), See the resource topics for details about the methods that are available.",
           "Target": "Schools,Classes,Users,Assignments,Submissions"
         }
       ],

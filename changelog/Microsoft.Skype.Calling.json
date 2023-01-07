@@ -1884,7 +1884,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recordingInfo,callRoute,incomingContext",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [recordingInfo](https://learn.microsoft.com/en-us/graph/api/resources/recordinginfo?view=graph-rest-1.0), [callRoute](https://learn.microsoft.com/en-us/graph/api/resources/callRoute?view=graph-rest-1.0), [incomingContext](https://learn.microsoft.com/en-us/graph/api/resources/incomingcontext?view=graph-rest-1.0)",
+          "Description": "Added new complex types: [recordingInfo](https://learn.microsoft.com/en-us/graph/api/resources/recordinginfo?view=graph-rest-1.0), [callRoute](https://learn.microsoft.com/en-us/graph/api/resources/callRoute?view=graph-rest-1.0), [incomingContext](https://learn.microsoft.com/en-us/graph/api/resources/incomingcontext?view=graph-rest-1.0)",
           "Target": "recordingInfo,callRoute,incomingContext"
         },
         {
@@ -2020,7 +2020,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teleconferenceDeviceQuality,teleconferenceDeviceMediaQuality,teleconferenceDeviceAudioQuality,teleconferenceDeviceVideoQuality,teleconferenceDeviceScreenSharingQuality",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [teleconferenceDeviceQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicequality), [teleconferenceDeviceMediaQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicemediaquality), [teleconferenceDeviceAudioQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedeviceaudioquality), [teleconferenceDeviceVideoQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicevideoquality), [teleconferenceDeviceScreenSharingQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicescreensharingquality).",
+          "Description": "Added new complex types: [teleconferenceDeviceQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicequality), [teleconferenceDeviceMediaQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicemediaquality), [teleconferenceDeviceAudioQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedeviceaudioquality), [teleconferenceDeviceVideoQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicevideoquality), [teleconferenceDeviceScreenSharingQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicescreensharingquality).",
           "Target": "teleconferenceDeviceQuality,teleconferenceDeviceMediaQuality,teleconferenceDeviceAudioQuality,teleconferenceDeviceVideoQuality,teleconferenceDeviceScreenSharingQuality"
         }
       ],

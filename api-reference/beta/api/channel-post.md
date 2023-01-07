@@ -15,9 +15,10 @@ Namespace: microsoft.graph
 
 Create a new [channel](../resources/channel.md) in a team, as specified in the request body. When you create a channel, the maximum length of the channel's `displayName` is 50 characters. This is the name that appears to the user in Microsoft Teams.
 
-> **Note**: While creating a channel, you can only add one member per shared channel; however, you can add up to 200 members per private channel.
+You can add a maximum of 200 members when you create a private channel.
 
-
+> [!NOTE]
+> Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
 
 ## Permissions
 
