@@ -12,7 +12,7 @@ You can use the Microsoft Search API in Microsoft Graph to search qnas. Administ
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-After qnas are created, to search for them, in the [searchRequest](/graph/api/resources/searchrequest), in the **entityTypes** property, specify `qna` as the value.
+Once you create your QnAs, you can use the Graph Search API to search for them. To do this, specify `qna` as the value in the **entityTypes** property in your search request body and then provide a relevant query string. See below for an example.
 
 ## Example: Search qnas
 
@@ -76,6 +76,7 @@ Content-type: application/json
 
 - Sorting, aggregation and pagination are not supported for qna searches.
 - Combination search with other entity types is not supported. 
+- Markdown is currently not supported for the qna description. Please use plain text.
 
 ## Next steps
 
