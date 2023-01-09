@@ -1,7 +1,7 @@
 ---
 title: "Delete emailAuthenticationMethodConfiguration"
 description: "Deletes an emailAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
