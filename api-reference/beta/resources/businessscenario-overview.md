@@ -38,7 +38,7 @@ Each service supported through business scenarios provide configurations in the 
 
 ## Creating and managing data for a business scenario
 
-Each service supported through business scenarios provide access to data within a scenario. Applications need to be listed as an owner in the scenario to work with the data in a scenario. Additionally applications need to have the `BusinessScenarioData.Read.OwnedBy` permission to be able to read the data, and the `BusinessScenarioData.ReadWrite.OwnedBy` permission to be able to create new data, or to modify previously created data. For more details, see the following service-specific topics:
+Each service supported through business scenarios provide access to data within a scenario. Applications need to be listed as an owner in the scenario to work with the data in a scenario. Additionally, applications need to have the `BusinessScenarioData.Read.OwnedBy` permission to be able to read the data, and the `BusinessScenarioData.ReadWrite.OwnedBy` permission to be able to create new data, or to modify previously created data. For more details, see the following service-specific topics:
 
 * [Planner](businessscenario-planner-overview.md), with the following supported entities:
   * [businessScenarioTask](businessscenariotask.md)
