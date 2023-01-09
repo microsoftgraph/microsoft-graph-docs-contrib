@@ -15,11 +15,13 @@ You can download resources for a set of assignments for end of the year archivin
 
 ## API for assignment information for class
 
-[Get assignment information](/graph/api/educationassignment-get): Provides the information about the assignment with in the class.
+User can get the properties and relationships of an assignment. [Get assignment information](/graph/api/educationassignment-get) provides the information about the assignment with in the class.
 
-This [filter](/graph/query-parameters#filter-parameter) [OData query parameter](/graph/query-parameters) can be used to handle the assignment information as needed.
+Required [filters](/graph/query-parameters#filter-parameter) like date or categories and [OData query parameter](/graph/query-parameters) are used to handle the assignment information as needed.
 
 ## Get assignment and submission resource information
+
+Retrieve the properties for education assignment and submission resource.
 
 -[Get assignment resource information](/graph/api/educationassignmentresource-get): Gives the assignment resource information.
 
@@ -27,7 +29,7 @@ This [filter](/graph/query-parameters#filter-parameter) [OData query parameter](
 
 ## Get submission feedback information
 
-Use [submission feedback information](/graph/education-upload-feedback-resource-overview) api for the information on the user's submission feedback.
+Education API in Microsoft Graph uses feedback resources folder to upload files. Use [submission feedback information](/graph/education-upload-feedback-resource-overview) api for the information on the user's submission feedback.
 
 [List outcomes](/graph/api/educationsubmission-list-outcomes) helps to retrieve the list for the education outcome objects.
 
