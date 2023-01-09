@@ -13,20 +13,14 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for all activity types. Activities provide read-only information about the run of flows either in the past or currently running.
+Represents an abstract base type for all activity types. The **industryDataRunActivity** represents the current or file state of the activity within a single [industryDataRun](industrydata-industrydatarun.md).
 
-Industry data automates a run every 12 hours. Each of these runs is represented by an [industryDataRun](industrydata-industrydatarun.md). All flows that are active at the time of the run start are included in the run.
-
-Individual flows are represented by this resource.
-
-Status:
-
-- `inProgress`: Actively executing
-- `completed`: Completed without any errors or warnings
-- `completedWithErrors`: Completed but errors were found
-- `completedWithWarnings`: Completed but only warnings were found
-- `skipped`: Activity added after Run started
-- `failed`: Canceled by system
+- `inProgress`: The activity is being executed by the current [industryDataRun](industrydata-industrydatarun.md).
+- `completed`: The activity was successfully executed.
+- `completedWithErrors`: The activity ran to completion but encountered one or more error conditions during execution.
+- `completedWithWarnings`: The activity ran to completion but encountered one or more warning conditions during execution.
+- `skipped`: The activity was not executed by the [industryDataRun](industrydata-industrydatarun.md).
+- `failed`: The activity encountered an unrecoverable error during execution.
 
 ## Properties
 

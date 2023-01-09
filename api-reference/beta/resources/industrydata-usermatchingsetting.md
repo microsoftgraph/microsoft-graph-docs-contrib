@@ -1,6 +1,6 @@
 ---
 title: "userMatchingSetting resource type"
-description: "Represents the matching setting rules for a roleGroup."
+description: "Represents the rules for matching a user in a roleGroup with a user object from Azure Active Directory."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,20 +13,21 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the matching setting rules for a [roleGroup](industrydata-rolegroup.md).
+Represents the rules for matching a user in a [roleGroup](industrydata-rolegroup.md) with a [user](../resources/user.md) object from Azure Active Directory.
+Represents the matching setting rules for a .
 
 ## Properties
 
-| Property         | Type                                                                                                                     | Description                                                                         |
-| :--------------- | :----------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
+| Property         | Type                                                                                                        | Description                                                                                              |
+| :--------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------- |
 | matchTarget      | [microsoft.graph.industryData.userMatchTargetReferenceValue](industrydata-usermatchtargetreferencevalue.md) | The `RefUserMatchTarget` for matching a user from the source with an Azure Active Directory user object. |
-| priorityOrder    | Int32                                                                                                                    | The priority order to apply when a user has multiple `RefRole` codes assigned.        |
-| sourceIdentifier | [microsoft.graph.industryData.identifierTypeReferenceValue](industrydata-identifiertypereferencevalue.md)   | The `RefIdentifierType` that uniquely identifies a user in the source data.           |
+| priorityOrder    | Int32                                                                                                       | The priority order to apply when a user has multiple `RefRole` codes assigned.                           |
+| sourceIdentifier | [microsoft.graph.industryData.identifierTypeReferenceValue](industrydata-identifiertypereferencevalue.md)   | The `RefIdentifierType` that uniquely identifies a user in the source data.                              |
 
 ## Relationships
 
-| Relationship | Type                                                | Description                            |
-| :----------- | :-------------------------------------------------- | :------------------------------------- |
+| Relationship | Type                                                                | Description                                     |
+| :----------- | :------------------------------------------------------------------ | :---------------------------------------------- |
 | roleGroup    | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md) | The **roleGroup** that these settings apply to. |
 
 ## JSON representation
@@ -42,8 +43,12 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.userMatchingSetting",
-  "matchTarget": {"@odata.type": "microsoft.graph.industryData.userMatchTargetReferenceValue"},
+  "matchTarget": {
+    "@odata.type": "microsoft.graph.industryData.userMatchTargetReferenceValue"
+  },
   "priorityOrder": "Int32",
-  "sourceIdentifier": {"@odata.type": "microsoft.graph.industryData.identifierTypeReferenceValue"}
+  "sourceIdentifier": {
+    "@odata.type": "microsoft.graph.industryData.identifierTypeReferenceValue"
+  }
 }
 ```

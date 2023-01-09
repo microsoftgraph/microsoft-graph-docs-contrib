@@ -51,7 +51,7 @@ _For more information, see [FileValidateOperation](industrydata-filevalidateoper
 
 #### Validating Uploaded Files
 
-Once the files have been uploaded, call `validate()` to validate the uploaded files and finalize the upload session. Once the files have been validated, they're moved to an internal container for processing by an `industryDataInboundFlow`.
+Once the files have been uploaded, call `validate()` to validate the uploaded files and finalize the upload session. Once the files have been validated, they're moved to an internal container for processing by an `inboundFlow`.
 
 The `validate()` action is a long-running operation. The link to the operation is returned in the `Location` header. Once validation is complete, the results can be obtained through the `Location` URI.
 

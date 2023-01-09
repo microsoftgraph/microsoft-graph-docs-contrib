@@ -17,7 +17,7 @@ Represents an abstract base type for all flows that bring data into the canonica
 
 Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
 
-A **industryDataInboundFlow** represents an activity that gets executed by the service. The `dataDomain` property defines the type of data being imported and is used determine the common data model format it will be stored in.
+A **inboundFlow** represents an activity that gets executed by the service. 
 
 The following data is required before using this resource:
 
