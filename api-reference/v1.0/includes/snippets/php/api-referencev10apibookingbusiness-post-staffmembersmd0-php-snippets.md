@@ -138,6 +138,7 @@ $workingHoursArray []= $workingHours5;
 $requestBody->setWorkingHours($workingHoursArray);
 
 
+'isEmailNotificationEnabled' => false,
 ];
 $requestBody->setAdditionalData($additionalData);
 
