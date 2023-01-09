@@ -811,8 +811,6 @@ result, err := client.Me().Get(nil)
 
 Not applicable.
 
-```
-
 ---
 
 ## Next steps
