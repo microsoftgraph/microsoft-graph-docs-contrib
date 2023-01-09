@@ -19,11 +19,11 @@ Read the properties and relationships of a [yearTimePeriodDefinition](../resourc
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                 |
-| :------------------------------------- | :---------------------------------------------------------- |
-| Delegated (work or school account)     | EduAdministration.Read, EduAdministration.ReadWrite         |
-| Delegated (personal Microsoft account) | Not supported.                                              |
-| Application                            | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                             |
+| :------------------------------------- | :---------------------------------------------------------------------- |
+| Delegated (work or school account)     | IndustryData-TimePeriod.Read.All, IndustryData-TimePeriod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                          |
+| Application                            | IndustryData-TimePeriod.Read.All, IndustryData-TimePeriod.ReadWrite.All |
 
 ## HTTP request
 

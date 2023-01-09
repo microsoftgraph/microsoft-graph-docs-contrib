@@ -19,11 +19,11 @@ Delete an [inboundFlow](../resources/industrydata-inboundflow.md) object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                 |
-| :------------------------------------- | :---------------------------------------------------------- |
-| Delegated (work or school account)     | EduAdministration.Read, EduAdministration.ReadWrite         |
-| Delegated (personal Microsoft account) | Not supported.                                              |
-| Application                            | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | IndustryData-InboundFlow.ReadWrite.All      |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | IndustryData-InboundFlow.ReadWrite.All      |
 
 ## HTTP request
 
