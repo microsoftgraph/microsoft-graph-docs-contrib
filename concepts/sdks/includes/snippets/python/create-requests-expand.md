@@ -1,6 +1,8 @@
 <!-- markdownlint-disable MD041 -->
 
-```py
+```python
+# GET https://graph.microsoft.com/v1.0/me/messages/{message-id}?$expand=attachments
+
 query_params = MessagesRequestBuilder.MessagesRequestBuilderGetQueryParameters(
     expand=['attachments',]
 )
@@ -9,7 +11,7 @@ request_config = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfigur
     query_parameters=query_params,
 )
 
-messages = asyncio.run(client.users_by_id('userId')
-                       .messages()
+messages = asyncio.run(client.me()
+                       .messages_by_id('msgId')
                        .get(request_configuration=request_config))
 ```

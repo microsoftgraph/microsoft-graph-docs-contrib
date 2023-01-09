@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
-<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD025 MD051 -->
 
 # Make API calls using the Microsoft Graph SDKs
 
@@ -316,6 +316,12 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-headers.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-headers.md)]
+
 ---
 
 ## Provide custom query parameters
@@ -343,5 +349,12 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-queryparams.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+TODO
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-queryparams.md)]
 
 ---

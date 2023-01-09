@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD041 -->
 
-```py
-message = asyncio.run(client.users_by_id('userId').messages_by_id('msgId').delete())
+```python
+# DELETE https://graph.microsoft.com/v1.0/me/messages/{message-id}
+
+asyncio.run(client.me().messages_by_id('msgId').delete())
 ```

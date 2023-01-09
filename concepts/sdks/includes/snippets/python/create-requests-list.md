@@ -1,21 +1,17 @@
 <!-- markdownlint-disable MD041 -->
 
-```py
-import asyncio
-from azure.identity.aio import ClientSecretCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-from msgraph import GraphRequestAdapter
-from msgraph import GraphServiceClient
+```python
+# GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject&$filter=<some condition>&orderBy=receivedDateTime
 
-credential = ClientSecretCredential(
-    'tenant_id',
-    'client_id',
-    'client_secret'
+query_params = MessagesRequestBuilder.MessagesRequestBuilderGetQueryParameters(
+    select=['sender', 'subject'],
+    filter='<filter condition>',
+    orderby=['receivedDateTime']
 )
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-request_adapter = GraphRequestAdapter(auth_provider)
-client = GraphServiceClient(request_adapter)
-
-user = asyncio.run(client.users.get())
-print(user.display_name)
+request_config = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfiguration(
+    query_parameters= query_params
+)
+messages = asyncio.run(client.me()
+                       .messages()
+                       .get(request_configuration=request_config))
 ```

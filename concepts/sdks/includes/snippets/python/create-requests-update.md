@@ -1,9 +1,14 @@
 <!-- markdownlint-disable MD041 -->
 
-```py
-updated = Message()
+```python
+# PATCH https://graph.microsoft.com/v1.0/teams/{team-id}
+team = Team()
 
-updated.subject = "Meet for Lunch at 1?"
+fun_settings = TeamFunSettings()
+fun_settings.allow_giphy = True
+fun_settings.giphy_content_rating = GiphyRatingType.Strict
 
-msg = asyncio.run(client.users_by_id('userId').messages_by_id('msgId').patch(updated))
+team.fun_settings = fun_settings
+
+asyncio.run(client.teams_by_id('teamId').patch(team))
 ```

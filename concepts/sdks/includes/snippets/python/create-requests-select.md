@@ -1,17 +1,16 @@
 <!-- markdownlint-disable MD041 -->
 
-```py
-query_params = MessagesRequestBuilder.MessagesRequestBuilderGetQueryParameters(
-    select=['subject',], skip=1, top=5
+```python
+# GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
+
+query_params = MeRequestBuilder.MeRequestBuilderGetQueryParameters(
+    select=['displayName', 'jobTitle']
 )
 
-request_config = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfiguration(
+request_config = MeRequestBuilder.MeRequestBuilderGetRequestConfiguration(
     query_parameters=query_params,
 )
 
-messages = asyncio.run(client.users_by_id('userId')
-                       .messages()
+user = asyncio.run(client.me()
                        .get(request_configuration=request_config))
-for msg in messages.value:
-    print(msg.subject, msg.id, msg.from_escaped)
 ```
