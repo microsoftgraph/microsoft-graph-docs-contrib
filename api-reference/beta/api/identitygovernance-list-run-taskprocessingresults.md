@@ -72,7 +72,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta//identityGovernance/lifecycleWorkflows/workflows/519266d1-784e-4139-8033-9878968ffdbd/runs/90ff9d1b-8fad-456b-9eb0-8f52a7af71ab/taskProcessingResults
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/519266d1-784e-4139-8033-9878968ffdbd/runs/90ff9d1b-8fad-456b-9eb0-8f52a7af71ab/taskProcessingResults
 ```
 
 ### Response
@@ -160,7 +160,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta//identityGovernance/lifecycleWorkflows/workflows/519266d1-784e-4139-8033-9878968ffdbd/runs/90ff9d1b-8fad-456b-9eb0-8f52a7af71ab/taskProcessingResults?$select=id,failureReason,processingStatus,subject,task
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/519266d1-784e-4139-8033-9878968ffdbd/runs/90ff9d1b-8fad-456b-9eb0-8f52a7af71ab/taskProcessingResults?$select=id,failureReason,processingStatus,subject,task
 ```
 
 ### Response
