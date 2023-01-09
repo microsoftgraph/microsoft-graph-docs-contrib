@@ -92,16 +92,16 @@ The following table shows the properties that are required when you create the m
 |subscriberCarrier|String|Subscriber Carrier. This property is read-only.|
 |meid|String|MEID. This property is read-only.|
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes. This property is read-only.|
-|freeStorageSpaceInBytes|Int64|Free Storage in Bytes. This property is read-only.|
+|freeStorageSpaceInBytes|Int64|Free Storage in Bytes. Default value is 0. Read-only. This property is read-only.|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. This property is read-only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |requireUserEnrollmentApproval|Boolean|Reports if the managed iOS device is user approval enrollment. This property is read-only.|
 |managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date. This property is read-only.|
-|iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.|
-|udid|String|Unique Device Identifier for iOS and macOS devices. This property is read-only.|
-|notes|String|Notes on the device created by IT Admin|
+|iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. Return default value null in LIST managedDevices. Real value only returned in singel device GET call with device id and included in select parameter. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
+|udid|String|Unique Device Identifier for iOS and macOS devices. Return default value null in LIST managedDevices. Real value only returned in singel device GET call with device id and included in select parameter. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
+|notes|String|Notes on the device created by IT Admin. Return default value null in LIST managedDevices. Real value only returned in singel device GET call with device id and included in select parameter. Supports: $select.  $Search is not supported.|
 |ethernetMacAddress|String|Ethernet MAC. This property is read-only.|
-|physicalMemoryInBytes|Int64|Total Memory in Bytes. This property is read-only.|
+|physicalMemoryInBytes|Int64|Total Memory in Bytes. Return default value 0 in LIST managedDevices. Real value only returned in singel device GET call with device id and included in select parameter. Supports: $select. Default value is 0. Read-only. This property is read-only.|
 
 
 
@@ -340,6 +340,7 @@ Content-Length: 4991
   "physicalMemoryInBytes": 5
 }
 ```
+
 
 
 

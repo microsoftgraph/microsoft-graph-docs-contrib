@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Teamwork.Migrate.All, ChannelMessage.ReadWrite.All |
+| Application                            | Teamwork.Migrate.All |
 
 > **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
@@ -182,7 +182,8 @@ Content-type: application/json
     "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -314,7 +315,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -442,7 +444,8 @@ Content-type: application/json
     ],
     "onBehalfOf": null,
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -566,7 +569,8 @@ Content-type: application/json
     ],
     "onBehalfOf": null,
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -679,7 +683,8 @@ Content-type: application/json
     },
     "attachments": [],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -688,7 +693,9 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
+> **Notes:**
+> * The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
+> * The maximum possible size of hosted content is 4 MB.
 
 **contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`.
 
@@ -816,7 +823,8 @@ Content-type: application/json
     ],
     "onBehalfOf": null,
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -952,7 +960,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -992,7 +1001,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -1089,7 +1099,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -1221,7 +1232,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -1355,7 +1367,8 @@ Content-type: application/json
     ],
     "onBehalfOf": null,
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 

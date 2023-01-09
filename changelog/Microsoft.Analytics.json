@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemInsightsSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **itemInsightsSettings** entity and the following operations: ,  [Get itemInsightSettings](https://learn.microsoft.com/en-us/graph/api/iteminsightssettings-get?view=graph-rest-beta) ,  [Update itemInsightSettings](https://learn.microsoft.com/en-us/graph/api/iteminsightssettings-update?view=graph-rest-beta)",
+          "Description": "Added the **itemInsightsSettings** entity and the following operations: [Get itemInsightSettings](https://learn.microsoft.com/en-us/graph/api/iteminsightssettings-get?view=graph-rest-beta),  [Update itemInsightSettings](https://learn.microsoft.com/en-us/graph/api/iteminsightssettings-update?view=graph-rest-beta)",
           "Target": "Get itemInsightSettings,Update itemInsightSettings"
         }
       ],
@@ -59,7 +59,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "profileCardProperty",
           "ChangeType": "Addition",
-          "Description": "Added the **profileCardProperty** entity and the following operations: ,  [List](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-profilecardproperties) ,  [Create](https://learn.microsoft.com/en-us/graph/api/organizationsettings-post-profilecardproperties) ,  [Get](https://learn.microsoft.com/en-us/graph/api/profilecardproperty-get?view=graph-rest-beta) ,  [Update](https://learn.microsoft.com/en-us/graph/api/profilecardproperty-update?view=graph-rest-beta) ,  [Delete](https://learn.microsoft.com/en-us/graph/api/profilecardproperty-delete).",
+          "Description": "Added the **profileCardProperty** entity and the following operations: [List](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-profilecardproperties),  [Create](https://learn.microsoft.com/en-us/graph/api/organizationsettings-post-profilecardproperties),  [Get](https://learn.microsoft.com/en-us/graph/api/profilecardproperty-get?view=graph-rest-beta),  [Update](https://learn.microsoft.com/en-us/graph/api/profilecardproperty-update?view=graph-rest-beta),  [Delete](https://learn.microsoft.com/en-us/graph/api/profilecardproperty-delete).",
           "Target": "List,Create,Get,Update,Delete"
         }
       ],
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workingWith,trendingAround",
           "ChangeType": "Deletion",
-          "Description": "Removed the following entities:, **workingWith**, **trendingAround**, ",
+          "Description": "Removed the following entities: **workingWith**, **trendingAround**, ",
           "Target": ""
         }
       ],

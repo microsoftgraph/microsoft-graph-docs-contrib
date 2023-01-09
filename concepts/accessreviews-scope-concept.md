@@ -5,6 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 06/30/2022
 ---
 
 # Configure the scope of your access review using the Microsoft Graph API

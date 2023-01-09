@@ -16,7 +16,16 @@ items:
     - name: Get access without a user
       href: /graph/auth-v2-service?context=graph/api/beta
     - name: Permissions
-      href: /graph/permissions-reference?context=graph/api/beta
+      items:
+      - name: Overview
+        displayName: Microsoft Graph permissions
+        href: /graph/permissions-overview?context=graph/api/1.0
+      - name: Permissions reference
+        displayName: Microsoft Graph permissions list
+        href: /graph/permissions-reference?context=graph/api/1.0
+      - name: Azure AD built-in roles
+        displayName: Microsoft Graph permissions
+        href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
     - name: Manage app access (CSPs)
       href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
     - name: Limit mailbox access
@@ -186,6 +195,8 @@ items:
       href: /graph/sdks/customize-client?context=graph/api/beta
     - name: Choose an authentication provider
       href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+    - name: Connect to national clouds
+      href: /graph/sdks/national-clouds?context=graph/api/beta
     - name: Create requests
       href: /graph/sdks/create-requests?context=graph/api/beta
     - name: Page through a collection
@@ -1747,47 +1758,29 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
-      - name: Records management (preview)
+      - name: Subject rights request
         items:
         - name: Overview
-          href: resources/security-recordsManagement-overview.md
-        - name: Retention label
-          href: resources/security-retentionlabel.md
+          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+        - name: Subject rights request
+          href: resources/subjectrightsrequest.md
           items:
           - name: List
-            href: api/security-retentionlabel-list.md
+            href: api/subjectrightsrequest-list.md
           - name: Create
-            href: api/security-retentionlabel-post.md
+            href: api/subjectrightsrequest-post.md
           - name: Get
-            href: api/security-retentionlabel-get.md
+            href: api/subjectrightsrequest-get.md
           - name: Update
-            href: api/security-retentionlabel-update.md
-          - name: Delete
-            href: api/security-retentionlabel-delete.md
-        - name: Retention event
-          href: resources/security-retentionevent.md
-          items:
-          - name: List
-            href: api/security-retentionevent-list.md
-          - name: Create
-            href: api/security-retentionevent-post.md
-          - name: Get
-            href: api/security-retentionevent-get.md
-          - name: Delete
-            href: api/security-retentionevent-delete.md
-        - name: Retention event type
-          href: resources/security-retentioneventtype.md
-          items:
-          - name: List
-            href: api/security-retentioneventtype-list.md
-          - name: Create
-            href: api/security-retentioneventtype-post.md
-          - name: Get
-            href: api/security-retentioneventtype-get.md
-          - name: Update
-            href: api/security-retentioneventtype-update.md
-          - name: Delete
-            href: api/security-retentioneventtype-delete.md
+            href: api/subjectrightsrequest-update.md
+          - name: Get final report
+            href: api/subjectrightsrequest-getfinalreport.md
+          - name: Get final attachment
+            href: api/subjectrightsrequest-getfinalattachment.md
+          - name: List notes
+            href: api/subjectrightsrequest-list-notes.md
+          - name: Create note
+            href: api/subjectrightsrequest-post-notes.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -1925,6 +1918,55 @@ items:
     - name: Device and app management
       expanded: true
       items:
+      - name: Browser management (preview)
+        displayName: Edge, Internet Explorer, IE mode, site list
+        items:
+        - name: Overview
+          href: resources/browser-edge-api-overview.md
+        - name: Browser site list
+          items:
+          - name: Browser site list
+            href: resources/browsersitelist.md
+          - name: List
+            href: api/internetexplorermode-list-sitelists.md
+          - name: Create
+            href: api/internetexplorermode-post-sitelists.md
+          - name: Get
+            href: api/browsersitelist-get.md
+          - name: Update
+            href: api/browsersitelist-update.md
+          - name: Delete
+            href: api/internetexplorermode-delete-sitelists.md
+          - name: Publish
+            href: api/browsersitelist-publish.md
+        - name: Browser site
+          items:
+          - name: Browser site
+            href: resources/browsersite.md
+          - name: List
+            href: api/browsersitelist-list-sites.md
+          - name: Create
+            href: api/browsersitelist-post-sites.md
+          - name: Get
+            href: api/browsersite-get.md
+          - name: Update
+            href: api/browsersite-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sites.md
+        - name: Shared cookie
+          items:
+          - name: Shared cookie
+            href: resources/browsersharedcookie.md
+          - name: List
+            href: api/browsersitelist-list-sharedcookies.md
+          - name: Create
+            href: api/browsersitelist-post-sharedcookies.md
+          - name: Get
+            href: api/browsersharedcookie-get.md
+          - name: Update
+            href: api/browsersharedcookie-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sharedcookies.md
       - name: Cloud printing
         items:
         - name: Print
@@ -2548,6 +2590,8 @@ items:
               href: api/intune-apps-macoslobapp-delete.md
             - name: Update
               href: api/intune-apps-macoslobapp-update.md
+          - name: macOS LOB app assignment settings
+            href: resources/intune-apps-macoslobappassignmentsettings.md
           - name: macOS LOB child app
             href: resources/intune-apps-macoslobchildapp.md
           - name: macOS mdatp app
@@ -2563,6 +2607,19 @@ items:
               href: api/intune-apps-macosmdatpapp-delete.md
             - name: Update
               href: api/intune-apps-macosmdatpapp-update.md
+          - name: macOS microsoft defender app
+            href: resources/intune-apps-macosmicrosoftdefenderapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macosmicrosoftdefenderapp-list.md
+            - name: Get
+              href: api/intune-apps-macosmicrosoftdefenderapp-get.md
+            - name: Create
+              href: api/intune-apps-macosmicrosoftdefenderapp-create.md
+            - name: Delete
+              href: api/intune-apps-macosmicrosoftdefenderapp-delete.md
+            - name: Update
+              href: api/intune-apps-macosmicrosoftdefenderapp-update.md
           - name: macOS microsoft edge app
             href: resources/intune-apps-macosmicrosoftedgeapp.md
             items:
@@ -8197,6 +8254,8 @@ items:
               href: api/intune-devices-manageddevice-movedevicestoou.md
             - name: removeDeviceFirmwareConfigurationInterfaceManagement action
               href: api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md
+            - name: initiateMobileDeviceManagementKeyRecovery action
+              href: api/intune-devices-manageddevice-initiatemobiledevicemanagementkeyrecovery.md
             - name: downloadAppDiagnostics action
               href: api/intune-devices-manageddevice-downloadappdiagnostics.md
           - name: Managed device architecture
@@ -8723,6 +8782,8 @@ items:
               href: api/intune-devices-userexperienceanalyticsdevicescope-update.md
             - name: triggerDeviceScopeAction action
               href: api/intune-devices-userexperienceanalyticsdevicescope-triggerdevicescopeaction.md
+          - name: User experience analytics device scope summary
+            href: resources/intune-devices-userexperienceanalyticsdevicescopesummary.md
           - name: User experience analytics device scores
             href: resources/intune-devices-userexperienceanalyticsdevicescores.md
             items:
@@ -8870,15 +8931,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsoverview-get.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsoverview-update.md
-          - name: User experience analytics regression summary
-            href: resources/intune-devices-userexperienceanalyticsregressionsummary.md
-            items:
-            - name: Get
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-get.md
-            - name: Update
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-update.md
-            - name: summarizeDeviceRegressionPerformance
-              href: api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance.md
           - name: User experience analytics remote connection
             href: resources/intune-devices-userexperienceanalyticsremoteconnection.md
             items:
@@ -9128,6 +9180,8 @@ items:
               href: api/intune-mam-devicemanagementreports-update.md
             - name: getMobileApplicationManagementAppRegistrationSummaryReport action
               href: api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappregistrationsummaryreport.md
+            - name: getMobileApplicationManagementAppConfigurationReport action
+              href: api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappconfigurationreport.md
           - name: Device platform type
             href: resources/intune-wip-deviceplatformtype.md
           - name: Intune branding profile
@@ -9589,6 +9643,8 @@ items:
               href: api/intune-onboarding-devicemanagementpartner-delete.md
             - name: Update
               href: api/intune-onboarding-devicemanagementpartner-update.md
+            - name: terminate action
+              href: api/intune-onboarding-devicemanagementpartner-terminate.md
           - name: Device management partner app type
             href: resources/intune-onboarding-devicemanagementpartnerapptype.md
           - name: Device management partner assignment
@@ -10118,8 +10174,6 @@ items:
             href: resources/intune-shared-keyusages.md
           - name: Key/value pair
             href: resources/intune-shared-keyvaluepair.md
-          - name: macOS LOB app assignment settings
-            href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
             href: resources/intune-shared-macosvppappassignmentsettings.md
           - name: Managed device owner type
@@ -10364,60 +10418,8 @@ items:
             href: api/manageddevice-setcloudpcreviewstatus.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
-        - name: Cloud PC device image
-          href: resources/cloudpcdeviceimage.md
-          items:
-          - name: List
-            href: api/virtualendpoint-list-deviceimages.md
-          - name: Get
-            href: api/cloudpcdeviceimage-get.md
-          - name: Create
-            href: api/virtualendpoint-post-deviceimages.md
-          - name: Delete
-            href: api/cloudpcdeviceimage-delete.md
-          - name: Get source images
-            href: api/cloudpcdeviceimage-getsourceimages.md
-          - name: Reupload
-            href: api/cloudpcdeviceimage-reupload.md
-        - name: Cloud PC gallery image
-          href: resources/cloudpcgalleryimage.md
-          items:
-          - name: List
-            href: api/virtualendpoint-list-galleryimages.md
-          - name: Get
-            href: api/cloudpcgalleryimage-get.md
-        - name: Cloud PC Azure network connection
-          href: resources/cloudpconpremisesconnection.md
-          items:
-          - name: List
-            href: api/virtualendpoint-list-onpremisesconnections.md
-          - name: Get
-            href: api/cloudpconpremisesconnection-get.md
-          - name: Create
-            href: api/virtualendpoint-post-onpremisesconnections.md
-          - name: Update
-            href: api/cloudpconpremisesconnection-update.md
-          - name: Delete
-            href: api/cloudpconpremisesconnection-delete.md
-          - name: Run health checks
-            href: api/cloudpconpremisesconnection-runhealthcheck.md
-          - name: Update Active Directory domain password
-            href: api/cloudpconpremisesconnection-updateaddomainpassword.md
-        - name: Cloud PC provisioning policy
-          href: resources/cloudpcprovisioningpolicy.md
-          items:
-          - name: List
-            href: api/virtualendpoint-list-provisioningpolicies.md
-          - name: Get
-            href: api/cloudpcprovisioningpolicy-get.md
-          - name: Create
-            href: api/virtualendpoint-post-provisioningpolicies.md
-          - name: Update
-            href: api/cloudpcprovisioningpolicy-update.md
-          - name: Delete
-            href: api/cloudpcprovisioningpolicy-delete.md
-          - name: Assign
-            href: api/cloudpcprovisioningpolicy-assign.md
+          - name: Retry partner agent installation
+            href: api/cloudpc-retrypartneragentinstallation.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:
@@ -10427,26 +10429,104 @@ items:
             href: api/cloudpcauditevent-get.md
           - name: Get audit activity types
             href: api/cloudpcauditevent-getauditactivitytypes.md
-        - name: Cloud PC user setting
-          href: resources/cloudpcusersetting.md
+        - name: Cloud PC Azure network connection
+          href: resources/cloudpconpremisesconnection.md
           items:
           - name: List
-            href: api/virtualendpoint-list-usersettings.md
-          - name: Get
-            href: api/cloudpcusersetting-get.md
+            href: api/virtualendpoint-list-onpremisesconnections.md
           - name: Create
-            href: api/virtualendpoint-post-usersettings.md
+            href: api/virtualendpoint-post-onpremisesconnections.md
+          - name: Get
+            href: api/cloudpconpremisesconnection-get.md
           - name: Update
-            href: api/cloudpcusersetting-update.md
+            href: api/cloudpconpremisesconnection-update.md
           - name: Delete
-            href: api/cloudpcusersetting-delete.md
-          - name: Assign
-            href: api/cloudpcusersetting-assign.md
-        - name: Cloud PC supported region
-          href: resources/cloudpcsupportedregion.md
+            href: api/cloudpconpremisesconnection-delete.md
+          - name: Run health checks
+            href: api/cloudpconpremisesconnection-runhealthcheck.md
+          - name: Update Active Directory domain password
+            href: api/cloudpconpremisesconnection-updateaddomainpassword.md
+        - name: Cloud PC cross-cloud government organization mapping
+          href: resources/cloudpccrosscloudgovernmentorganizationmapping.md
+          items:
+          - name: Create
+            href: api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md
+          - name: Get
+            href: api/cloudpccrosscloudgovernmentorganizationmapping-get.md
+        - name: Cloud PC device image
+          href: resources/cloudpcdeviceimage.md
           items:
           - name: List
-            href: api/virtualendpoint-list-supportedregions.md
+            href: api/virtualendpoint-list-deviceimages.md
+          - name: Create
+            href: api/virtualendpoint-post-deviceimages.md
+          - name: Get
+            href: api/cloudpcdeviceimage-get.md
+          - name: Delete
+            href: api/cloudpcdeviceimage-delete.md
+          - name: Get source images
+            href: api/cloudpcdeviceimage-getsourceimages.md
+          - name: Re-upload
+            href: api/cloudpcdeviceimage-reupload.md
+        - name: Cloud PC external partner setting
+          href: resources/cloudpcexternalpartnersetting.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-externalpartnersettings.md
+          - name: Create
+            href: api/virtualendpoint-post-externalpartnersettings.md
+          - name: Get
+            href: api/cloudpcexternalpartnersetting-get.md
+          - name: Update
+            href: api/cloudpcexternalpartnersetting-update.md
+        - name: Cloud PC gallery image
+          href: resources/cloudpcgalleryimage.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-galleryimages.md
+          - name: Get
+            href: api/cloudpcgalleryimage-get.md
+        - name: Cloud PC organization settings
+          href: resources/cloudpcorganizationsettings.md
+          items:
+          - name: Get
+            href: api/cloudpcorganizationsettings-get.md
+          - name: Update
+            href: api/cloudpcorganizationsettings-update.md
+        - name: Cloud PC provisioning policy
+          href: resources/cloudpcprovisioningpolicy.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-provisioningpolicies.md
+          - name: Create
+            href: api/virtualendpoint-post-provisioningpolicies.md
+          - name: Get
+            href: api/cloudpcprovisioningpolicy-get.md
+          - name: Update
+            href: api/cloudpcprovisioningpolicy-update.md
+          - name: Delete
+            href: api/cloudpcprovisioningpolicy-delete.md
+          - name: Assign
+            href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC reports
+          href: resources/cloudpcreports.md
+          items:
+          - name: Create export job
+            href: api/cloudpcreports-post-exportjobs.md
+          - name: Get export job
+            href: api/cloudpcexportjob-get.md
+          - name: Get daily aggregated remote conneciton reports
+            href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+          - name: Get historical remote conneciton reports
+            href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+          - name: Get real time remote connection latency
+            href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
+          - name: Get real time remote connection status
+            href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+          - name: Get shared use license usage reports
+            href: api/cloudpcreports-getshareduselicenseusagereport.md
+          - name: Get total aggregated remote connection reports
+            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
         - name: Cloud PC service plan
           href: resources/cloudpcserviceplan.md
           items:
@@ -10459,52 +10539,57 @@ items:
             href: api/virtualendpoint-list-snapshots.md
           - name: Get
             href: api/cloudpcsnapshot-get.md
-          - name: Get subscriptions
-            href: api/cloudpcsnapshot-getsubscriptions.md
           - name: Get storage accounts
             href: api/cloudpcsnapshot-getstorageaccounts.md
-        - name: Cloud PC organization settings
-          href: resources/cloudpcorganizationsettings.md
-          items:
-          - name: Get
-            href: api/cloudpcorganizationsettings-get.md
-          - name: Update
-            href: api/cloudpcorganizationsettings-update.md
-        - name: Cloud PC cross-cloud government organization mapping
-          href: resources/cloudpccrosscloudgovernmentorganizationmapping.md
-          items:
-          - name: Get
-            href: api/cloudpccrosscloudgovernmentorganizationmapping-get.md
-          - name: Create
-            href: api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md
-        - name: Cloud PC external partner setting
-          href: resources/cloudpcexternalpartnersetting.md
+          - name: Get subscriptions
+            href: api/cloudpcsnapshot-getsubscriptions.md
+        - name: Cloud PC supported region
+          href: resources/cloudpcsupportedregion.md
           items:
           - name: List
-            href: api/virtualendpoint-list-externalpartnersettings.md
-          - name: Get
-            href: api/cloudpcexternalpartnersetting-get.md
-          - name: Create
-            href: api/virtualendpoint-post-externalpartnersettings.md
-          - name: Update
-            href: api/cloudpcexternalpartnersetting-update.md
-        - name: Cloud PC reports
-          href: resources/cloudpcreports.md
+            href: api/virtualendpoint-list-supportedregions.md
+        - name: Cloud PC user setting
+          href: resources/cloudpcusersetting.md
           items:
-          - name: Get export job
-            href: api/cloudpcexportjob-get.md
-          - name: Create export job
-            href: api/cloudpcreports-post-exportjobs.md
-          - name: Get daily aggregated remote conneciton reports
-            href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-          - name: Get real time remote connection latency
-            href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-          - name: Get real time remote connection status
-            href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-          - name: Get historical remote conneciton reports
-            href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
-          - name: Get total aggregated remote conneciton reports
-            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+          - name: List
+            href: api/virtualendpoint-list-usersettings.md
+          - name: Create
+            href: api/virtualendpoint-post-usersettings.md
+          - name: Get
+            href: api/cloudpcusersetting-get.md
+          - name: Update
+            href: api/cloudpcusersetting-update.md
+          - name: Delete
+            href: api/cloudpcusersetting-delete.md
+          - name: Assign
+            href: api/cloudpcusersetting-assign.md
+        - name: Alert monitoring
+          items:
+          - name: Monitoring
+            href: resources/devicemanagement-monitoring.md
+            displayName: Microsoft Endpoint Manager admin center alerts
+          - name: Alert record
+            href: resources/devicemanagement-alertrecord.md
+            items:
+            - name: List
+              href: api/devicemanagement-alertrecord-list.md
+            - name: Get
+              href: api/devicemanagement-alertrecord-get.md
+            - name: Get portal notifications
+              href: api/devicemanagement-alertrecord-getportalnotifications.md
+            - name: Set portal notification as sent
+              href: api/devicemanagement-alertrecord-setportalnotificationassent.md
+          - name: Alert rule
+            href: resources/devicemanagement-alertrule.md
+            items:
+            - name: List
+              href: api/devicemanagement-alertrule-list.md
+            - name: Create
+              href: api/devicemanagement-alertrule-post.md
+            - name: Get
+              href: api/devicemanagement-alertrule-get.md
+            - name: Update
+              href: api/devicemanagement-alertrule-update.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10618,32 +10703,6 @@ items:
               href: api/windowsupdates-operationalinsightsconnection-get.md
             - name: Delete
               href: api/windowsupdates-resourceconnection-delete.md
-      - name: Monitoring (preview)
-        href: resources/devicemanagement-monitoring.md
-        displayName: Overview
-        items:
-        - name: Alert record
-          href: resources/devicemanagement-alertrecord.md
-          items:
-          - name: List
-            href: api/devicemanagement-alertrecord-list.md
-          - name: Get
-            href: api/devicemanagement-alertrecord-get.md
-          - name: Get portal notifications
-            href: api/devicemanagement-alertrecord-getportalnotifications.md
-          - name: Set portal notification as sent
-            href: api/devicemanagement-alertrecord-setportalnotificationassent.md
-        - name: Alert rule
-          href: resources/devicemanagement-alertrule.md
-          items:
-          - name: List
-            href: api/devicemanagement-alertrule-list.md
-          - name: Create
-            href: api/devicemanagement-alertrule-post.md
-          - name: Get
-            href: api/devicemanagement-alertrule-get.md
-          - name: Update
-            href: api/devicemanagement-alertrule-update.md
       - name: Multi-tenant management (preview)
         items:
         - name: Managed tenant
@@ -11913,13 +11972,13 @@ items:
               href: api/orgcontact-list-memberof.md
             - name: Get manager
               href: api/orgcontact-get-manager.md
-          - name: Subscribed sku
-            href: resources/subscribedsku.md
-            items:
-            - name: List subscribedSkus
-              href: api/subscribedsku-list.md
-            - name: Get subscribedSku
-              href: api/subscribedsku-get.md
+        - name: On-premises directory synchronization
+          href: resources/onpremisesdirectorysynchronization.md
+          items:
+          - name: Get
+            href: api/onpremisesdirectorysynchronization-get.md
+          - name: Update
+            href: api/onpremisesdirectorysynchronization-update.md
         - name: Mobility management policy (Preview)
           href: resources/mobilitymanagementpolicy.md
           items:
@@ -11968,6 +12027,8 @@ items:
               href: api/unifiedroledefinition-update.md
             - name: Delete role definition
               href: api/unifiedroledefinition-delete.md
+            - name: List assigned principals
+              href: api/unifiedroledefinition-assignedprincipals.md
           - name: Role assignment
             href: resources/unifiedroleassignment.md
             items:
@@ -12008,6 +12069,13 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
+        - name: Subscribed sku
+          href: resources/subscribedsku.md
+          items:
+          - name: List subscribedSkus
+            href: api/subscribedsku-list.md
+          - name: Get subscribedSku
+            href: api/subscribedsku-get.md
         - name: Tenant information
           href: resources/tenantinformation.md
           items:
@@ -12146,7 +12214,7 @@ items:
             - name: List usage
               href: api/authenticationstrengthpolicy-usage.md
           - name: Authentication combination configurations
-            items: 
+            items:
             - name: Authentication combination configuration
               href: resources/authenticationcombinationconfiguration.md
             - name: FIDO2 combination configuration
@@ -12631,6 +12699,24 @@ items:
                 href: api/smsAuthenticationMethodConfiguration-update.md
               - name: Delete
                 href: api/smsAuthenticationMethodConfiguration-delete.md
+            - name: Voice call policy
+              href: resources/voiceAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/voiceAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/voiceAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/voiceAuthenticationMethodConfiguration-delete.md
+            - name: Third-party software OATH policy
+              href: resources/softwareoathAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/softwareoathAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/softwareoathAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/softwareoathAuthenticationMethodConfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -13183,6 +13269,8 @@ items:
               href: api/accesspackage-delete-incompatiblegroup.md
             - name: List access packages incompatible with
               href: api/accesspackage-list-accesspackagesincompatiblewith.md
+            - name: Move to catalog
+              href: api/accesspackage-movetocatalog.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
@@ -14965,7 +15053,7 @@ items:
           href: api/securityaction-get.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
-      - name: Advanced hunting (preview)
+      - name: Advanced hunting
         items:
         - name: Run hunting query
           href: api/security-security-runhuntingquery.md
@@ -14975,7 +15063,7 @@ items:
           href: resources/security-huntingrowresult.md
         - name: Single property schema
           href: resources/security-singlepropertyschema.md
-      - name: Alerts and incidents (preview)
+      - name: Alerts and incidents
         items:
         - name: Alert
           items:
@@ -15233,7 +15321,7 @@ items:
             href: api/security-ediscoverycase-delete-searches.md
           - name: Estimate statistics
             href: api/security-ediscoverysearch-estimatestatistics.md
-          - name: Purge data (preview)
+          - name: Purge data
             href: api/security-ediscoverysearch-purgedata.md
           - name: List custodian sources
             href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15382,6 +15470,47 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Records management (preview)
+        items:
+        - name: Overview
+          href: resources/security-recordsManagement-overview.md
+        - name: Retention label
+          href: resources/security-retentionlabel.md
+          items:
+          - name: List
+            href: api/security-retentionlabel-list.md
+          - name: Create
+            href: api/security-retentionlabel-post.md
+          - name: Get
+            href: api/security-retentionlabel-get.md
+          - name: Update
+            href: api/security-retentionlabel-update.md
+          - name: Delete
+            href: api/security-retentionlabel-delete.md
+        - name: Retention event
+          href: resources/security-retentionevent.md
+          items:
+          - name: List
+            href: api/security-retentionevent-list.md
+          - name: Create
+            href: api/security-retentionevent-post.md
+          - name: Get
+            href: api/security-retentionevent-get.md
+          - name: Delete
+            href: api/security-retentionevent-delete.md
+        - name: Retention event type
+          href: resources/security-retentioneventtype.md
+          items:
+          - name: List
+            href: api/security-retentioneventtype-list.md
+          - name: Create
+            href: api/security-retentioneventtype-post.md
+          - name: Get
+            href: api/security-retentioneventtype-get.md
+          - name: Update
+            href: api/security-retentioneventtype-update.md
+          - name: Delete
+            href: api/security-retentioneventtype-delete.md
       - name: Secure score
         href: resources/securescores.md
         items:
@@ -15621,7 +15750,7 @@ items:
           href: api/documentsetversion-delete.md
         - name: Restore
           href: api/documentsetversion-restore.md
-      - name: Page
+      - name: Pages (preview)
         items:
         - name: Site page
           href: resources/sitepage.md
@@ -15631,10 +15760,50 @@ items:
           href: api/sitepage-create.md
         - name: Get
           href: api/sitepage-get.md
+        - name: Update
+          href: api/sitepage-update.md
         - name: Delete
           href: api/sitepage-delete.md
         - name: Publish
           href: api/sitepage-publish.md
+        - name: Horizontal section
+          items:
+          - name: Horizontal section
+            href: resources/horizontalsection.md
+          - name: List
+            href: api/horizontalsection-list.md
+          - name: Get
+            href: api/horizontalsection-get.md
+          - name: Column
+            items:
+            - name: Horizontal section column
+              href: resources/horizontalsectioncolumn.md
+            - name: List
+              href: api/horizontalsectioncolumn-list.md
+            - name: Get
+              href: api/horizontalsectioncolumn-get.md
+        - name: Vertical section
+          items:
+          - name: Vertical section
+            href: resources/verticalsection.md
+          - name: Get
+            href: api/verticalsection-get.md
+        - name: Web part
+          items:
+          - name: Web part
+            href: resources/webpart.md
+          - name: Text web part
+            href: resources/textwebpart.md
+          - name: Standard WebPart
+            href: resources/standardwebpart.md
+          - name: List
+            href: api/webpart-list.md
+          - name: Get 
+            href: api/webpart-get.md
+          - name: Get position
+            href: api/webpart-getposition.md
+          - name: Get by position
+            href: api/sitepage-getwebpartsbyposition.md
       - name: Rich long-running operation
         items:
         - name: Rich long-running operation
@@ -15645,7 +15814,7 @@ items:
           href: api/list-list-operations.md
         - name: Get operation
           href: api/richlongrunningoperation-get.md
-      - name: Site permission
+      - name: Site permission (preview)
         items:
         - name: Permission
           href: resources/permission.md
@@ -16171,12 +16340,14 @@ items:
             href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Set presence
             href: api/presence-setpresence.md
-          - name: Clear presencedevice
+          - name: Clear presence
             href: api/presence-clearpresence.md
           - name: Set user preferred presence
             href: api/presence-setuserpreferredpresence.md
           - name: Clear user preferred presence
             href: api/presence-clearuserpreferredpresence.md
+          - name: Set user status message
+            href: api/presence-setstatusmessage.md
       - name: Devices (preview)
         items:
         - name: Provisioned device
