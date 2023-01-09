@@ -4,6 +4,7 @@ description: "Business scenarios API allows creation and management of business 
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "business-scenarios"
+doc_type: conceptualPageType
 ---
 
 # Use the business scenarios API in Microsoft Graph (preview)
