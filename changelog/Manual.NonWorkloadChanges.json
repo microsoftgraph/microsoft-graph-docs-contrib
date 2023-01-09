@@ -329,7 +329,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,Get incremental changes to groups,Get incremental changes to messages in a folder,Get incremental changes to users",
           "ChangeType": "Addition",
-          "Description": "Add delta function support to v1.0. Add to the following entities to perform [delta query](delta-query-overview.md):, contact, contactFolder, event, group, mailFolder, message, user, See the following for examples:, [Get incremental changes to groups](delta-query-groups.md), [Get incremental changes to messages in a folder](delta-query-messages.md), [Get incremental changes to users](delta-query-users.md)",
+          "Description": "Add delta function support to v1.0. Add to the following entities to perform [delta query](delta-query-overview.md): contact, contactFolder, event, group, mailFolder, message, user, See the following for examples: [Get incremental changes to groups](delta-query-groups.md), [Get incremental changes to messages in a folder](delta-query-messages.md), [Get incremental changes to users](delta-query-users.md)",
           "Target": "delta query,Get incremental changes to groups,Get incremental changes to messages in a folder,Get incremental changes to users"
         }
       ],
@@ -563,7 +563,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions,Add custom data to groups using Schema Extensions (preview)",
           "ChangeType": "Addition",
-          "Description": "Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#3-schema-extensions).  This is supported on the following resources:, administrative unit, calendar event, device, group, message, organization, personal contact, post, user, See the following example:, [Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md)",
+          "Description": "Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#3-schema-extensions).  This is supported on the following resources: administrative unit, calendar event, device, group, message, organization, personal contact, post, user, See the following example: [Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md)",
           "Target": "schema extensions,Add custom data to groups using Schema Extensions (preview)"
         },
         {
@@ -589,7 +589,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "open extensions,Add custom data to users using open extensions (preview)",
           "ChangeType": "Addition",
-          "Description": "Added resources that support [open extensions](extensibility-overview.md#4-open-extensions): , administrative unit, device, group, organization, user, See the following example:, [Add custom data to users using open extensions (preview)](extensibility-open-users.md)",
+          "Description": "Added resources that support [open extensions](extensibility-overview.md#4-open-extensions): administrative unit, device, group, organization, user, See the following example: [Add custom data to users using open extensions (preview)](extensibility-open-users.md)",
           "Target": "open extensions,Add custom data to users using open extensions (preview)"
         }
       ],
@@ -625,7 +625,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,Get incremental changes to groups (preview),Get incremental changes to messages in a folder (preview),Get incremental changes to users (preview)",
           "ChangeType": "Addition",
-          "Description": "A new delta function add to the following entities to perform [delta query](delta-query-overview.md):, contact, contactFolder, event, group, mailFolder, message, user, See the following for examples:, [Get incremental changes to groups (preview)](delta-query-groups.md), [Get incremental changes to messages in a folder (preview)](delta-query-messages.md), [Get incremental changes to users (preview)](delta-query-users.md)",
+          "Description": "A new delta function add to the following entities to perform [delta query](delta-query-overview.md): contact, contactFolder, event, group, mailFolder, message, user, See the following for examples: [Get incremental changes to groups (preview)](delta-query-groups.md), [Get incremental changes to messages in a folder (preview)](delta-query-messages.md), [Get incremental changes to users (preview)](delta-query-users.md)",
           "Target": "delta query,Get incremental changes to groups (preview),Get incremental changes to messages in a folder (preview),Get incremental changes to users (preview)"
         }
       ],
