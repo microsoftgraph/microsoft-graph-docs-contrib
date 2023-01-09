@@ -29,6 +29,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 |[Delete](../api/identityproviderbase-delete.md)|None|Delete the Apple identity provider configuration.|
 |[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
 
+
 ## Properties
 
 |Property|Type|Description|

@@ -18,9 +18,9 @@ A term. This represents a designated portion of the academic year. It is used wi
 | Property    | Type   | Description                       |
 | :---------- | :----- | :-------------------------------- |
 | displayName | String | Display name of the term.         |
+| endDate     | Date   | End of the term.                  |
 | externalId  | String | ID of term in the syncing system. |
 | startDate   | Date   | Start of the term.                |
-| endDate     | Date   | End of the term.                  |
 
 ## Relationships
 
