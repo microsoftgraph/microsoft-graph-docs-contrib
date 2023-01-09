@@ -1145,7 +1145,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "recurrence",
           "ChangeType": "Addition",
-          "Description": "Added the `recurrence` property to the [plannerTask](https://docs.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the `recurrence` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1153,7 +1153,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskRecurrence",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskRecurrence](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskRecurrence?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskRecurrence?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskRecurrence"
         },
         {
@@ -1161,7 +1161,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRecurrenceSchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerRecurrenceSchedule](https://docs.microsoft.com/en-us/graph/api/resources/plannerRecurrenceSchedule?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerRecurrenceSchedule](https://learn.microsoft.com/en-us/graph/api/resources/plannerRecurrenceSchedule?view=graph-rest-beta) resource type.",
           "Target": "plannerRecurrenceSchedule"
         },
         {
@@ -1169,7 +1169,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recurrencePattern",
           "ChangeType": "Addition",
-          "Description": "Added the [recurrencePattern](https://docs.microsoft.com/en-us/graph/api/resources/recurrencePattern?view=graph-rest-beta) resource type.",
+          "Description": "Added the [recurrencePattern](https://learn.microsoft.com/en-us/graph/api/resources/recurrencePattern?view=graph-rest-beta) resource type.",
           "Target": "recurrencePattern"
         },
         {
