@@ -53,12 +53,14 @@ The following properties are inherited from **[baseItem][]**.
 
 | Property name            | Type              | Description
 |:-------------------------|:------------------|:------------------------------
-| **id**                   | string            | The unique identifier of the item. Read-only.
-| **name**                 | string            | The name of the item.
 | **createdBy**            | [identitySet][]   | Identity of the creator of this item. Read-only.
 | **createdDateTime**      | DateTimeOffset    | The date and time the item was created. Read-only.
 | **description**          | string            | The descriptive text for the item.
-| **eTag**                 | string            | ETag for the item. Read-only.                                                          |
+| **eTag**                 | string            | ETag for the item. 
+| **id**                   | string            | The unique identifier of the item. Read-only.
+| **name**                 | string            | The name of the item.
+
+Read-only.                                                          |
 | **lastModifiedBy**       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
 | **lastModifiedDateTime** | DateTimeOffset    | The date and time the item was last modified. Read-only.
 | **parentReference**      | [itemReference][] | Parent information, if the item has a parent. Read-write.
@@ -71,10 +73,10 @@ The **list** resource has the following relationships to other resources.
 
 | Relationship name | Type                             | Description
 |:------------------|:---------------------------------|:----------------------
-| **drive**         | [drive][]                        | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
-| **items**         | Collection([listItem][])         | All items contained in the list.
 | **columns**       | Collection([columnDefinition][]) | The collection of field definitions for this list.
 | **contentTypes**  | Collection([contentType][])      | The collection of content types present in this list.
+| **drive**         | [drive][]                        | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+| **items**         | Collection([listItem][])         | All items contained in the list.
 | **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list. 
 | **subscriptions** | Collection([subscription][])     | The set of subscriptions on the list.
 
