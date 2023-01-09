@@ -80,7 +80,8 @@ Content-Type: application/json
 The following is an example of the response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": false,
+  "@odata.type": "microsoft.graph.pronounsSettings"
 }
 -->
 ``` http
