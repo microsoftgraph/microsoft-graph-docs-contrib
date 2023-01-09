@@ -55,6 +55,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
+| id | string | The unique identifier of the team. The group has the same ID as the team. This property is read-only, and is inherited from the base entity type. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
