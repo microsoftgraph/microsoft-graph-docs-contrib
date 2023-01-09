@@ -9,14 +9,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [longRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/longRunningOperation?view=graph-rest-beta) resource",
           "Target": "longRunningOperation"
-        },
-        {
-          "Id": "739b203a-9f18-4aa4-9937-9f9ef30a5a9d",
-          "ApiChange": "Resource",
-          "ChangedApiName": "external",
-          "ChangeType": "Addition",
-          "Description": "Added the [external](https://docs.microsoft.com/en-us/graph/api/resources/external?view=graph-rest-beta) resource",
-          "Target": "external"
         }
       ],
       "Id": "739b203a-9f18-4aa4-9937-9f9ef30a5a9d",
