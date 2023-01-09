@@ -5,6 +5,7 @@ author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
+ms.date: 12/08/2022
 ---
 
 # Manage an Azure AD application using Microsoft Graph
@@ -237,67 +238,6 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 }
 ```
 
-
-## Assign permissions to an app
-
-While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
-
-Least privilege delegated permission: `Application.ReadWrite.All`
-
-# [HTTP](#tab/http)
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-application-basics-assign-permissions"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7a76e98
-Content-Type: application/json
-
-{
-    "requiredResourceAccess": [
-        {
-            "resourceAppId": "00000002-0000-0000-c000-000000000000",
-            "resourceAccess": [
-                {
-                    "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
-                    "type": "Scope"
-                },
-                {
-                    "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
-                    "type": "Role"
-                }
-            ]
-        }
-    ]
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-assign-permissions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-assign-permissions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-assign-permissions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-assign-permissions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-assign-permissions-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 After assigning these permissions, request for admin consent.

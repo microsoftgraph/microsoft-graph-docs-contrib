@@ -1,7 +1,7 @@
 ---
 title: "Get history"
 description: "Read the properties and relationships of a riskyUserHistoryItem object."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

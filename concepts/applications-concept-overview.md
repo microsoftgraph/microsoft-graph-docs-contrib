@@ -5,6 +5,7 @@ author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: scenarios:getting-started
+ms.date: 06/15/2022
 ---
 
 # Applications API overview

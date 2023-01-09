@@ -3503,3 +3503,20 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |enabledForCount|
 |enabledForPercentage|
+|enabledForPercentage|
+|unknownFutureValue|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:-----|
+|group|
+|unknownFutureValue|
+
+### authenticationMethodsPolicyMigrationState values
+
+|Member|
+|:-----|
+|premigration|
+|migrationInProgress|
+|migrationComplete|

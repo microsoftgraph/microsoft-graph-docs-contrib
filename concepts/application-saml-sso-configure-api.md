@@ -5,6 +5,7 @@ author: "AllisonAm"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
+ms.date: 12/08/2022
 ---
 
 # Configure SAML-based single sign-on for your application using the Microsoft Graph API

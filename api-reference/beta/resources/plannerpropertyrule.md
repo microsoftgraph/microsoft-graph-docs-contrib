@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base type of all entity rule definitions for Microsoft Planner. For more details, see [plannerTaskPropertyRule](plannertaskpropertyrule.md).
+An abstract base type of all entity rule definitions for Microsoft Planner. 
+
+Base type of [plannerTaskPropertyRule](plannertaskpropertyrule.md).
 
 ## Properties
 

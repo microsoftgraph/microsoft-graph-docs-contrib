@@ -4,6 +4,7 @@ description: "Use delta query to discover changes without fetching the entire se
 author: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/17/2022
 ---
 
 # Get incremental changes for groups
