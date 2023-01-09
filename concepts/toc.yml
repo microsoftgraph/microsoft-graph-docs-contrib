@@ -846,7 +846,7 @@ items:
       - name: Use SDKs
         items:
           - name: Overview
-            href: sdks/sdks-overview.md 
+            href: sdks/sdks-overview.md
             displayName: SDK, SDKs, Microsoft Graph SDK
           - name: Install an SDK
             href: sdks/sdk-installation.md
