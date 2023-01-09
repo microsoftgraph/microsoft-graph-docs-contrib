@@ -96,4 +96,4 @@ Content-Type: application/json
 
 When you turn pronouns on or off, it can take up to six hours for users to see changes. For example, if you turn pronouns on, users won’t be able to see the option to add pronouns on their profile for up to six hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to six hours. 
 
-When you turn pronouns off, the pronouns data deletion process can take up to 30 days to complete. If you decide to turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers will be made visible in Microsoft 365 experiences, such as profile cards. 
+When you turn pronouns off, all the pronouns data created by users will be deleted, the data deletion process could take up to 30 days to complete. If you decide to turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers will be made visible in Microsoft 365 experiences, such as profile cards.
