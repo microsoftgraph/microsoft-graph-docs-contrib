@@ -25,15 +25,15 @@ When the request completes successfully, the status will be "succeeded" and the 
 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
-|id|string |Unique operation id.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes which type of operation is being described.|
-|createdDateTime|DateTimeOffset |Time when the operation was created.|
-|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
-|lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
 |attemptsCount|Int32|Number of times the operation was attempted before being marked successful or failed.|
+|createdDateTime|DateTimeOffset |Time when the operation was created.|
+|error|[operationError](operationerror.md)|Any error that causes the async operation to fail.|
+|id|string |Unique operation id.|
+|lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes which type of operation is being described.|
+|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
 |targetResourceId|guid |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
 |targetResourceLocation|string|The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.|
-|error|[operationError](operationerror.md)|Any error that causes the async operation to fail.|
 
 ## JSON representation
 
