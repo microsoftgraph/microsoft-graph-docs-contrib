@@ -6193,15 +6193,15 @@
           "ApiChange": "Property",
           "ChangedApiName": "teamsAppId",
           "ChangeType": "Addition",
-          "Description": "Added the **teamsAppId** property to the [chatMessageAttachment](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageAttachment?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **teamsAppId** property to the [chatMessageAttachment](https://learn.microsoft.com/graph/api/resources/chatMessageAttachment?view=graph-rest-v1.0) resource.",
           "Target": "chatMessageAttachment"
         }
       ],
       "Id": "5e52d67e-88f8-464f-8aff-d9ae40acf056",
       "Cloud": "prd",
-      "Version": "beta",
+      "Version": "v1.0",
       "CreatedDateTime": "2022-01-10T10:11:41.458Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
   ]
