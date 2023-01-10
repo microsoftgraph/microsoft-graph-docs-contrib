@@ -65,7 +65,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_yeartimeperioddefinition"
+  "name": "update_yeartimeperioddefinition",
+  "sampleKeys": ["ebf18762-ab92-487e-21d1-08daddab28bb"]
 }
 -->
 
@@ -83,8 +84,6 @@ Content-length: 242
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

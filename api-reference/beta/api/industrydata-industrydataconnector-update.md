@@ -64,19 +64,20 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_azuredatalakeconnector"
+  "name": "update_azuredatalakeconnector",
+  "sampleKeys": ["51dca0a0-85f6-4478-f526-08daddab2271"]
 }
 -->
 
 ```http
 PATCH /external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
+Content-type: application/json
+
 {
     "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",
     "displayName": "API Monitor 60201009"
 }
 ```
-
-### Response
 
 ### Response
 

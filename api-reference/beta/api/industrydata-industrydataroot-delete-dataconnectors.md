@@ -58,12 +58,13 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_azuredatalakeconnector"
+  "name": "delete_azuredatalakeconnector",
+  "sampleKeys": ["8c010e87-c28b-4350-bdc1-65ec29258b93"]
 }
 -->
 
 ```http
-DELETE /external/industryData/dataConnectors/8c010e87-c28b-4350-bdc1-65ec29258b93
+DELETE https://graph.microsoft.com/beta/external/industryData/dataConnectors/8c010e87-c28b-4350-bdc1-65ec29258b93
 ```
 
 ### Response

@@ -62,7 +62,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_longrunningoperation"
+  "name": "get_longrunningoperation",
+  "sampleKeys": ["581b2ef8-dda2-4a3e-bb62-df13fd4a5808"]
 }
 -->
 

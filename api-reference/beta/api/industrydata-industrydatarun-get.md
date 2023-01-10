@@ -62,7 +62,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_industrydatarun"
+  "name": "get_industrydatarun",
+  "sampleKeys": ["918d4a8f-599b-4f6a-b409-e892855db534"]
 }
 -->
 

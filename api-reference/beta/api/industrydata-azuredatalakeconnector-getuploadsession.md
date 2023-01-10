@@ -67,7 +67,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "azuredatalakeconnectorthis.getuploadsession"
+  "name": "azuredatalakeconnectorthis.getuploadsession",
+  "sampleKeys": ["51dca0a0-85f6-4478-f526-08daddab2271"]
 }
 -->
 

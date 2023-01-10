@@ -58,7 +58,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_inboundflow"
+  "name": "delete_inboundflow",
+  "sampleKeys": ["0c629a1a-a85c-4365-bdf0-623a32ca69cb"]
 }
 -->
 
