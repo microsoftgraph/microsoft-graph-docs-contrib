@@ -21,7 +21,7 @@ Additionally, industry data provides resources that you can use to retrieve stat
 
 Industry data is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process will combine and normalize the imported data to land in the Azure Data Lake of the tenant.
 
-:::image type="content" source="../../../concepts/images/industryData-overview-1.png" alt-text="Graphic that shows industryData overview." lightbox="../../../concepts/images/industryData-overview-1.png":::
+:::image type="content" source="../../images/industrydata-overview.png" alt-text="Graphic that shows industryData overview." lightbox="../../images/industrydata-overview.png":::
 
 First, connect to the data of your institution. Define an inbound flow: Create **sourceSystemDefinition**, **dataConnector**, and **yearTimePeriodDefinition**. By default, your inbound flow will activate twice (2x) daily (called a _run_).
 
