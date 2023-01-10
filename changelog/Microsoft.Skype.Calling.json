@@ -27,6 +27,7 @@
       "SubArea": "Calls and online meetings"
     },
     {
+      "ChangeList": [
           "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
           "ApiChange": "Resource",
           "ChangedApiName": "joinMeetingIdSettings",
