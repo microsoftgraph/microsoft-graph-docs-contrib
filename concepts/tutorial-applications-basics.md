@@ -240,63 +240,6 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 
 
-After assigning these permissions, request for admin consent.
-
-## Grant permissions to an app
-
-When you assign permissions to the app, you must also grant admin consent through the Azure portal. However, Microsoft Graph also allows you to grant permissions to the app without requiring interactive consent.
-
-When you grant an application permission to an app, you create an **app role assignment**. When you grant a delegated permission to an app, you create a **delegated permission grant**.
-
-### Create an app role assignment
-
-The following request grants the client service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, an app role of ID `df021288-bdef-4463-88db-98f22de89214`, that's exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`.
-
-Least privilege delegated permission: `Application.Read.All` and `AppRoleAssignment.ReadWrite.All`
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-application-basics-grant-approles"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/7ea9e944-71ce-443d-811c-71e8047b557a/appRoleAssignedTo
-Content-Type: application/json
-
-{
-    "principalId": "b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94",
-    "resourceId": "7ea9e944-71ce-443d-811c-71e8047b557a",
-    "appRoleId": "df021288-bdef-4463-88db-98f22de89214"
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-grant-approles-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-grant-approles-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-grant-approles-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-grant-approles-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-grant-approles-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ### Create a delegated permission grant on behalf of one principal
 
 The following request grants a service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, two scopes that are exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`, on behalf of a principal identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5` in the tenant.
