@@ -27,6 +27,30 @@
       "SubArea": "Calls and online meetings"
     },
     {
+          "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+          "ApiChange": "Resource",
+          "ChangedApiName": "joinMeetingIdSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [joinMeetingIdSettings](https://learn.microsoft.com/en-us/graph/api/resources/joinmeetingidsettings?view=graph-rest-1.0) resource type.",
+          "Target": "joinMeetingIdSettings"
+        },
+        {
+          "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+          "ApiChange": "Property",
+          "ChangedApiName": "joinMeetingIdSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **joinMeetingIdSettings** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-09T17:44:20.7449096Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
       "ChangeList": [
         {
           "Id": "f1e8f2ba-e5b1-4104-88be-1ed7f6f44904",
