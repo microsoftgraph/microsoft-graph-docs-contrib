@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
 
-sokallan_listChannel
->**Note:** Guest users who are not a part of private/shared channels are not able to see the same in the response for this API.
+>**Note:** Guest users can't see private or shared channels that they aren't members of in the response for this API.
 
 
 ## Permissions
