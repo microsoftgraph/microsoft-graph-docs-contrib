@@ -507,7 +507,7 @@ Content-type: application/json
 
 #### Request
 
-In the following example, the pre-defined **customAccessPackageWorkflowExtension** object is triggered when an access package assigned request is created and when it's granted.  The identifier provided within the **customExtension** field is the **customAccessPackageWorkflowExtension** object's id.
+In the following example, the pre-defined **customAccessPackageWorkflowExtension** object is triggered when an access package assigned request is created and when it's granted.  The identifier provided within the **customExtension** field is the **customAccessPackageWorkflowExtension** object's ID.
 
 
 # [HTTP](#tab/http)
