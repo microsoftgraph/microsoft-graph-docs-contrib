@@ -1,40 +1,39 @@
 ---
 title: "How to download all resources from a set of assignments"
-description: "Use Microsoft Graph to create assignments with teams app resource using your own application"
+description: "Use Microsoft Graph to create assignments with a Teams app resource using your own application."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# How to download all resources from a set of assignments at the end of the grade period
+# How to download all resources from a set of assignments
 
-You can download resources for a set of assignments for end of the year archiving or for external access for review of feedback given to students, you can use Graph API to download all resources stored in SharePoint.
+This article describes how to use the Microsoft Graph APIs to download all SharePoint resources from a set of assignments at the end of a grade period, which can be beneficial for end of year archiving or for external access for review of feedback given to students.
 
-> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
+> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
-## API for assignment information for class
+## Get class assignment information
 
-User can get the properties and relationships of an assignment. [Get assignment information](/graph/api/educationassignment-get) provides the information about the assignment with in the class.
-
-Required [filters](/graph/query-parameters#filter-parameter) like date or categories and [OData query parameter](/graph/query-parameters) are used to handle the assignment information as needed.
+The assignment information is linked to a class. You can use the [Get educationAssignment](/graph/api/educationassignment-get) API to retrieve information about class assignments. Additionally, you can use the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Get assignment and submission resource information
 
-Retrieve the properties for education assignment and submission resource.
+Assignments and submissions are an important part in the interaction between teachers and students' actions. You can use the following APIs to retrieve information about assignment and submission resources:
 
--[Get assignment resource information](/graph/api/educationassignmentresource-get): Gives the assignment resource information.
-
--[Get submission resource information](/graph/api/educationsubmissionresource-get): Gives the submission resource information.
+- [Get educationAssignmentResource](/graph/api/educationassignmentresource-get) to retrieve the properties of an [education assignment resource](graph/api/resources/educationassignmentresource) associated with an assignment
+- [Get educationSubmissionResource](/graph/api/educationsubmissionresource-get) to retrieve the properties of a specific resource associated with a [submission](graph/api/resources/educationsubmissionresource)
 
 ## Get submission feedback information
 
-Education API in Microsoft Graph uses feedback resources folder to upload files. Use [submission feedback information](/graph/education-upload-feedback-resource-overview) api for the information on the user's submission feedback.
+The education API in Microsoft Graph uses feedback resource folders as a destination for feedback files. You can use the [submission feedback information](/graph/education-upload-feedback-resource-overview) API to get information on the user's submission feedback.
 
 [List outcomes](/graph/api/educationsubmission-list-outcomes) helps to retrieve the list for the education outcome objects.
 
-## Information to download files from SharePoint
+## Download files from SharePoint
 
-The [list of assignment resources](/graph/api/educationassignment-list-resources) response gives the information on driveid and item inside the fileUrl property.
+Before you can download the SharePoint resources, you need the **driveId** and **itemId** that related to each assignment resource. You can use the [List educationAssignmentResources](/graph/api/educationassignment-list-resources) response object to extract information about the corresponding **driveId** and **itemId** from the **fileUrl** property.
 
-Download the contents of the file from sharepoint using [DriveItem](/graph/api/driveitem-get-content) with file property. Also, for specific topic use [downloading files in JavaScrip apps](/graph/api/driveitem-get-content#downloading-files-in-javascript-apps).
+Finally, you can use the [Download file](/graph/api/driveitem-get-content) API to download the contents of the file from SharePoint. Note that only [driveItems](graph/api/resources/driveitem) with the **file** property can be downloaded.
+
+Alternatively, you can download the files from a JavaScript app. For more details, see [Downloading files in JavaScript apps](/graph/api/driveitem-get-content#downloading-files-in-javascript-apps).

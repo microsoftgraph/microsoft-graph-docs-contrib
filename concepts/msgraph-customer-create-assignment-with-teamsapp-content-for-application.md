@@ -1,34 +1,34 @@
 ---
-title: "Create assignments with adding Teams App as a resource using your own application"
-description: "Use Microsoft Graph to create assignments with teams app resource using your own application"
+title: "Share assignments with embedded Teams applications"
+description: "Use Microsoft Graph to create assignments with Teams app resource using your own application."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Create assignments with adding Teams app as a resource using your own application
+# Share assignments with embedded Teams applications
 
-If you want to create an assignment and attach a Teams app as a resource from your own application to add more functionalities, this can be done using Graph API.
+In this article, you will learn how to use the Microsoft Graph APIs to create an assignment and attach a Teams app as a resource from your own application to add more functionalities.
 
-> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
+> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
-## APIs to use for installing applications to the Teams
+## APIs to use for installing applications in a Microsoft Teams team
 
-Use the following APIs to install the application to the Teams:
+Use the following APIs to install the application in a specific Microsoft Teams team:
 
-- [List apps in Teams](/graph/api/team-list-installedapps): Lists the apps in Teams for user.
-- [Get installed apps in Teams](/graph/api/team-get-installedapps): Lists information about installed apps.
-- [Add app to Teams](/graph/api/team-post-installedapps): Information on how to add an app to Teams.
+- [List apps in team](/graph/api/team-list-installedapps): Retrieve a list of apps installed in the specified team.
+- [Get app installed in team](/graph/api/team-get-installedapps): Retrieve an app installed in the specified team.
+- [Add app to team](/graph/api/team-post-installedapps): Install an app to the specified team.
 
-## Creating the new assignment 
+## Create the new assignment
 
-Use [Assignment Creation](/graph/api/educationclass-post-assignment) for user to create the new assignments for the class.
+An assignment represents a task or unit of work assigned to a student or team member in a class as part of their study. You can use the [Create educationAssignment](/graph/api/educationclass-post-assignment) API to create the new assignments for the class.
 
-## Creating an app resource
+## Create an app resource
 
-Use the [create teams app resource](/graph/api/educationassignment-post-resources#example-7-create-an-educationteamsappresource) endpoint to create and load the resource into an assignment. You will need to provide an [educationResource](/graph/api/resources/educationteamsappresource) for the request body.
+An education Teams app resource allows education service users to create and share assignments with embedded Teams applications. You can use the [Create educationAssignmentResource](/graph/api/educationassignment-post-resources#example-7-create-an-educationteamsappresource) API to create and load the resource into an assignment. This operation requires you to provide an [educationTeamsAppResource](/graph/api/resources/educationteamsappresource) in the request body.
 
 ## Permissions
 
-Adding Teams app as a resource to your assignments would require the teacher role.
+The teacher role is required to add the Teams app as a resource to your assignments.
