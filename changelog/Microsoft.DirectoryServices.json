@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inboundOutboundPolicyConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [inboundOutboundPolicyConfiguration](https://docs.microsoft.com/graph/resources/inboundoutboundpolicyconfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [inboundOutboundPolicyConfiguration](https://docs.microsoft.com/graph/api/resources/inboundoutboundpolicyconfiguration?view=graph-rest-beta) resource.",
           "Target": "inboundOutboundPolicyConfiguration"
         }
       ],
