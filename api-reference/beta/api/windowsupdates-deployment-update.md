@@ -42,7 +42,7 @@ PATCH /admin/windows/updates/deployments/{deploymentId}
 ## Request body
 In the request body, supply a JSON representation of the [deployment](../resources/windowsupdates-deployment.md) object.
 
-The following table shows the properties that can be set when you update the [deployment](../resources/windowsupdates-deployment.md).
+The following table shows the properties that can be set when you update a [deployment](../resources/windowsupdates-deployment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,11 +56,13 @@ If successful, this method returns a `202 Accepted` response code and an updated
 
 ## Examples
 
-### Example: Pause a deployment
+### Example 1: Pause a deployment
 
-In this example, the deployment is paused by updating the `requestedValue` of the deployment `state`.
+In this example, the deployment is paused by updating the **requestedValue** of the deployment **state**.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -112,6 +114,8 @@ Content-Type: application/json
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -146,11 +150,13 @@ Content-Type: application/json
 }
 ```
 
-### Example: Update deployment settings to add a monitoring rule
+### Example 2: Update deployment settings to add a monitoring rule
 
-In this example, the `settings` property of the deployment is updated to add a monitoring rule.
+In this example, the **settings** property of the deployment is updated to add a monitoring rule.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -209,6 +215,8 @@ Content-Type: application/json
 
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

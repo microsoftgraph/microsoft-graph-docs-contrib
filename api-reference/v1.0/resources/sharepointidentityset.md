@@ -22,8 +22,8 @@ For usage information, see [driveItem][].
 | device      | [identity][]           | The device associated with this action. Optional. |
 | group       | [identity][]           | The group associated with this action. Optional. |
 | user        | [identity][]           | The user associated with this action. Optional. |
-| siteUser    | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
 | siteGroup   | [sharePointIdentity][] | The SharePoint group associated with this action. Optional. |
+| siteUser    | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
 
 ## JSON representation
 

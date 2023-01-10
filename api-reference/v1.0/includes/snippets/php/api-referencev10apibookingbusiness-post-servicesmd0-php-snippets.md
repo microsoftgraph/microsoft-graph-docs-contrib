@@ -95,6 +95,8 @@ $requestBody->setIsLocationOnline(true);
 
 $requestBody->setSmsNotificationsEnabled(true);
 
+$requestBody->setLanguageTag('en-US');
+
 $requestBody->setIsHiddenFromCustomers(false);
 
 $requestBody->setNotes('Home-cooked special');
@@ -119,6 +121,8 @@ $schedulingPolicy->setTimeSlotInterval(new \DateInterval('PT1H'));
 
 $requestBody->setSchedulingPolicy($schedulingPolicy);
 $requestBody->setStaffMemberIds(['d90d1e8c-5cfe-48cf-a2d5-966267375b6a', '2f5f8794-0b29-45b5-b56a-2eb5ff7aa880', ]);
+
+$requestBody->setIsAnonymousJoinEnabled(false);
 
 $additionalData = [
 'defaultPriceType@odata.type' => '#microsoft.graph.bookingPriceType', 
