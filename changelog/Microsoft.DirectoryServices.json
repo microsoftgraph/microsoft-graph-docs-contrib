@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "cc852635-bf4e-4f5c-a1d3-3aea76cbaca1",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Clarified description of preferredTokenSigningKeyThumbprint",
+          "Target": "servicePrincipal"
+        }
+      ], 
+      "Id": "cc852635-bf4e-4f5c-a1d3-3aea76cbaca1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-10T01:43:40Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
           "ApiChange": "Enumeration",
           "ChangedApiName": "layoutTemplateType",
