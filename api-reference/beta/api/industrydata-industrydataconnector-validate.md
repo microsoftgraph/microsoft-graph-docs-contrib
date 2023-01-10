@@ -59,7 +59,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "industrydataconnectorthis.validate"
+  "name": "industrydataconnectorthis.validate",
+  "sampleKeys": ["8c010e87-c28b-4350-bdc1-65ec29258b93"]
 }
 -->
 
@@ -70,8 +71,6 @@ POST https://graph.microsoft.com/beta/external/industryData/dataConnectors/8c010
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

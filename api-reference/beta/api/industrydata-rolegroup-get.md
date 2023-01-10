@@ -62,7 +62,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_rolegroup"
+  "name": "get_rolegroup",
+  "sampleKeys": ["students"]
 }
 -->
 

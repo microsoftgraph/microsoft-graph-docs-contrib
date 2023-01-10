@@ -63,7 +63,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_sourcesystemdefinition"
+  "name": "get_sourcesystemdefinition",
+  "sampleKeys": ["0190210e-8827-4747-6f2b-08dacc885e72"]
 }
 -->
 

@@ -62,7 +62,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_inboundflow"
+  "name": "get_inboundflow",
+  "sampleKeys": ["7bd62d17-8c37-4494-f68d-08daddab2911"]
 }
 -->
 

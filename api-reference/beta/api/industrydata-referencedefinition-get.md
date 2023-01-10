@@ -62,7 +62,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_referencedefinition"
+  "name": "get_referencedefinition",
+  "sampleKeys": ["RefAcademicSubject-01"]
 }
 -->
 

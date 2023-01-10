@@ -63,7 +63,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_yeartimeperioddefinition"
+  "name": "get_yeartimeperioddefinition",
+  "sampleKeys": ["ebf18762-ab92-487e-21d1-08daddab28bb"]
 }
 -->
 
