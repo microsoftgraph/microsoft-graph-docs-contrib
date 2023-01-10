@@ -40,6 +40,7 @@ GET /appCatalogs/teamsApps?$filter=displayName eq 'APPLICATION NAME'
 2. Attach the Teams app to an assignment.
 
 **Request**
+
 The following is an example of the request. Use the **id** from the previous request for the **appId** property value.
 
 ```http
