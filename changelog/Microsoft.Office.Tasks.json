@@ -501,7 +501,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanContext,plannerPlanContextDetails,plannerPlanContextCollection,plannerPlanContextDetailsCollection,plannerFavoritePlanReference,plannerRecentPlanReference,plannerFavoritePlanReferenceCollection,plannerRecentPlanReferenceCollection",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [plannerPlanContext](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontext?view=graph-rest-beta), [plannerPlanContextDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta), [plannerPlanContextCollection](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontextcollection?view=graph-rest-beta), [plannerPlanContextDetailsCollection](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontextdetailscollection?view=graph-rest-beta), [plannerFavoritePlanReference](https://learn.microsoft.com/en-us/graph/api/resources/plannerfavoriteplanreference?view=graph-rest-beta), [plannerRecentPlanReference](https://learn.microsoft.com/en-us/graph/api/resources/plannerrecentplanreference?view=graph-rest-beta), [plannerFavoritePlanReferenceCollection](https://learn.microsoft.com/en-us/graph/api/resources/plannerfavoriteplanreferencecollection?view=graph-rest-beta), [plannerRecentPlanReferenceCollection](https://learn.microsoft.com/en-us/graph/api/resources/plannerrecentplanreferencecollection?view=graph-rest-beta)",
+          "Description": "Added new complex types: [plannerPlanContext](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontext?view=graph-rest-beta), [plannerPlanContextDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta), [plannerPlanContextCollection](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontextcollection?view=graph-rest-beta), [plannerPlanContextDetailsCollection](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontextdetailscollection?view=graph-rest-beta), [plannerFavoritePlanReference](https://learn.microsoft.com/en-us/graph/api/resources/plannerfavoriteplanreference?view=graph-rest-beta), [plannerRecentPlanReference](https://learn.microsoft.com/en-us/graph/api/resources/plannerrecentplanreference?view=graph-rest-beta), [plannerFavoritePlanReferenceCollection](https://learn.microsoft.com/en-us/graph/api/resources/plannerfavoriteplanreferencecollection?view=graph-rest-beta), [plannerRecentPlanReferenceCollection](https://learn.microsoft.com/en-us/graph/api/resources/plannerrecentplanreferencecollection?view=graph-rest-beta)",
           "Target": "plannerPlanContext,plannerPlanContextDetails,plannerPlanContextCollection,plannerPlanContextDetailsCollection,plannerFavoritePlanReference,plannerRecentPlanReference,plannerFavoritePlanReferenceCollection,plannerRecentPlanReferenceCollection"
         },
         {
@@ -559,7 +559,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "task,plan,bucket,taskDetails,planDetails,taskBoardTaskFormat,planTaskBoard",
           "ChangeType": "Deletion",
-          "Description": "Removed the following entities:, **task**, **plan**, **bucket**, **taskDetails**, **planDetails**, **taskBoardTaskFormat**, **planTaskBoard**",
+          "Description": "Removed the following entities: **task**, **plan**, **bucket**, **taskDetails**, **planDetails**, **taskBoardTaskFormat**, **planTaskBoard**",
           "Target": ""
         }
       ],

@@ -27,7 +27,6 @@ An aggregation of information about a person from across mail and contacts. Peop
 |companyName|String|The name of the person's company.|
 |department|String|The person's department.|
 |displayName|String|The person's display name.|
-|scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) collection|The person's email addresses.|
 |givenName|String|The person's given name.|
 |id|String|The person's unique identifier. Read-only.|
 |imAddress|String|The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.|
@@ -39,6 +38,7 @@ An aggregation of information about a person from across mail and contacts. Peop
 |phones|[phone](phone.md) collection|The person's phone numbers.|
 |postalAddresses|[location](location.md) collection|The person's addresses.|
 |profession|String|The person's profession.|
+|scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) collection|The person's email addresses.|
 |surname|String|The person's surname.|
 |userPrincipalName|String|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
 |websites|[website](website.md) collection|The person's websites.|

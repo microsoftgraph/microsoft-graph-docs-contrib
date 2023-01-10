@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content horizontalSections = graphClient.sites("{sitesId}").pages("{sitePageId}").canvasLayout().horizontalSections()
+HorizontalSectionCollectionPage horizontalSections = graphClient.sites("{sitesId}").pages("{sitePageId}").canvasLayout().horizontalSections()
 	.buildRequest()
 	.get();
 
