@@ -6193,7 +6193,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "teamsAppId",
           "ChangeType": "Addition",
-          "Description": "Added the **teamsAppId** property to the [chatMessageAttachment](https://learn.microsoft.com/graph/api/resources/chatMessageAttachment?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **teamsAppId** property to the [chatMessageAttachment](https://learn.microsoft.com/graph/api/resources/chatMessageAttachment?view=graph-rest-1.0) resource.",
           "Target": "chatMessageAttachment"
         }
       ],
