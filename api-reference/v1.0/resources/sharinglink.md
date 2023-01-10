@@ -41,9 +41,9 @@ Here is a JSON representation of the resource.
 | Property    | Type          | Description
 |:------------|:--------------|:-------------------------------------
 | application | [identity][]  | The app the link is associated with.
-| type        | String        | The type of the link created.
-| scope       | String        | The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant.
 | preventsDownload | Boolean       | If true then the user can only use this link to view the item on the web, and cannot use it to download the contents of the item. Only for OneDrive for Business and SharePoint.
+| scope       | String        | The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant.
+| type        | String        | The type of the link created.
 | webHtml     | String        | For `embed` links, this property contains the HTML code for an `<iframe>` element that will embed the item in a webpage.
 | webUrl      | String        | A URL that opens the item in the browser on the OneDrive website.
 

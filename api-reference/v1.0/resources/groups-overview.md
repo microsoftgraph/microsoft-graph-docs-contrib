@@ -5,6 +5,7 @@ author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType
+ms.date: 11/16/2022
 ---
 
 # Working with groups in Microsoft Graph
@@ -116,6 +117,12 @@ Content-type: application/json
     "securityEnabled": true
 }
 ```
+
+## Group membership
+
+Not all object types can be members of both Microsoft 365 and security groups.
+
+[!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
 ## Dynamic membership
 

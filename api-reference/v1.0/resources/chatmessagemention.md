@@ -34,8 +34,8 @@ For a fuller context of the example, see [List channel message replies](../api/c
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|Int32|Index of an entity being mentioned in the specified **chatMessage**. Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.|
-|mentionText|string|String used to represent the mention. For example, a user's display name, a team name.|
 |mentioned|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|The entity (user, application, team, or channel) that was @mentioned.|
+|mentionText|string|String used to represent the mention. For example, a user's display name, a team name.|
 
 
 ## JSON representation

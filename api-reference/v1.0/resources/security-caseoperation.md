@@ -1,6 +1,6 @@
 ---
 title: "caseOperation resource type"
-description: "An abstract entity that represents a long-running process."
+description: "An abstract entity that represents a long-running eDiscovery process."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -11,17 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-
-
-Inherits from [entity](../resources/entity.md).
-
-An abstract entity that represents a long-running eDiscovery process. It contains a common set of properties that are shared among inheriting entities.  Entities that derive from **caseOperation** include:
+An abstract entity that represents a long-running eDiscovery process. It contains a common set of properties that are shared among inheriting entities. Entities that derive from **caseOperation** include:
 
 - [Index operation](../resources/security-ediscoveryindexoperation.md)
 - [Hold operation](../resources/security-ediscoveryholdoperation.md)
 - [Estimate operation](../resources/security-ediscoveryestimateoperation.md)
 - [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
 - [Tag operation](../resources/security-ediscoverytagoperation.md)
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -49,7 +47,7 @@ An abstract entity that represents a long-running eDiscovery process. It contain
 | applyTags | The operation represents bulk tagging documents in a review set for the specified review set query. |
 | contentExport | The operation represents a content export from a review set. |
 | convertToPdf | The operation represents converting documents to PDFs with redactions. |
-| estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for business. |
+| estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for Business. |
 | holdUpdate | The operation represent updating legal hold (apply/remove) for custodians and non-custodial data sources.
 | index | The operation represents indexing data sources of custodians and non-custodial data sources to make them searchable. |
 | purgeData | The operation represents purging content from the source workloads. |
@@ -81,17 +79,17 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.caseOperation",
-  "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)",
+  "action": "String",  
   "completedDateTime": "String (timestamp)",
-  "action": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "percentProgress": "Integer",
-  "status": "String",
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "percentProgress": "Int32",
   "resultInfo": {
     "@odata.type": "microsoft.graph.resultInfo"
-  }
+  },
+  "status": "String"
 }
 ```
