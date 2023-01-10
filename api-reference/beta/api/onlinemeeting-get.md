@@ -327,7 +327,7 @@ The following is an example of the response.
 ```
 
 ### Example 3: Retrieve an online meeting by joinWebUrl
-You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID isn't known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a seperate application needs to retrieve meeting details as a follow-up action.
+You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID isn't known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a separate application needs to retrieve meeting details as a follow-up action.
 
 #### Request
 
@@ -399,12 +399,16 @@ The following is an example of the response.
 ```
 
 ### Example 4: Retrieve an online meeting by joinMeetingId
+
 You can retrieve meeting information via the **joinMeetingId** by using either a user or an application token.
 
 #### Request
 
-The following request uses a user token.
-<!-- { "blockType": "ignored" } -->
+The following is an example of a request that uses a user (delegated) token.
+<!-- {
+  "blockType": "request",
+  "name": "get-an-online-meeting-by-joinmeetingid"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
 ```
@@ -419,9 +423,17 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. 
+> **Note:** The response object shown here might be shortened for readability.
 
-```json
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "value": [
         {
