@@ -17,7 +17,7 @@ The education community has a rich set of tools and applications that enhance th
 
 Microsoft Teams offers a collection of apps that are provided by Microsoft or external services. The apps can be tabs, bots, message extensions, or resources.
 
-To get started building your own Teams app, see [Create a new Teams app](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/create-new-project?pivots=visual-studio-code).
+To get started building your own Teams app, see [Create a new Teams app](/microsoftteams/platform/toolkit/create-new-project?pivots=visual-studio-code).
 
 For best practices for integrating your Teams app with assignments, see the [assignment apps sample](https://github.com/microsoft/edu-assignments-apps-sample).
 
