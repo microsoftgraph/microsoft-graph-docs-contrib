@@ -1,6 +1,6 @@
 ---
 title: "businessScenario resource type"
-description: "Represents a scenario which collects relevant data and configuration for a specific problem domain."
+description: "Represents a scenario that collects relevant data and configuration for a specific problem domain."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "business-scenarios"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a scenario which collects relevant data and configuration for a specific problem domain. For more details about business scenarios, see [Business scenarios API overview](/graph/businessscenarios-concept-overview).
+Represents a scenario that collects relevant data and configuration for a specific problem domain. For more details about business scenarios, see [Business scenarios API overview](/graph/businessscenarios-concept-overview).
 
 Inherits from [entity](../resources/entity.md).
 
