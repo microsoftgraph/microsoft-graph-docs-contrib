@@ -8,11 +8,11 @@ ms.prod: "business-scenarios"
 
 # Configuring task rules in Planner (preview)
 
-Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them. Task rules can be specified for tasks created from various sources, such as [business scenarios](/graph/api/resources/businessscenario-planner-overview).
+The Planner API in Microsoft Graph supports rules, which allow customization of what can and can't be done on tasks. Task rules can be specified for tasks created from various sources, such as [business scenarios](/graph/api/resources/businessscenario-planner-overview).
 
-Task property rules are represented by [plannerTaskPropertyRule](/graph/api/resources/plannertaskpropertyrule) entity and describe the allowed actions at the task-level and rules around each configurable property.
+Task property rules are represented by the [plannerTaskPropertyRule](/graph/api/resources/plannertaskpropertyrule) entity and describe the allowed actions at the task-level and rules around each configurable property.
 
-Depending on the specific entry, the rules specify either a collection of values or a [fieldRules](/graph/api/resources/plannerfieldrules). Field rules specify a collection of values as default, and provides separate collection of values for override conditions. For any collection of values, the specified values are what is allowed, omitted values aren't allowed.
+Depending on the specific entry, the rules specify either a collection of values or a [fieldRules](/graph/api/resources/plannerfieldrules) object. Field rules specify a collection of values as default, and provide a separate collection of values for override conditions. For any collection of values, the specified values are what is allowed; omitted values aren't allowed.
 
 In this article, you will learn the behaviors associated with each entry and the override conditions supported by each property.
 
@@ -20,7 +20,7 @@ In this article, you will learn the behaviors associated with each entry and the
 
 ### delete
 
-Specifies if the task can be deleted. Accepted values are:
+Specifies whether the task can be deleted. Accepted values are:
 
 * `block`: Task can't be deleted.
 * `allow`: Task can be deleted.
@@ -29,7 +29,7 @@ The collection must contain only one of these values.
 
 ### move
 
-Specifies if the task can be moved. This only includes a task moving between [buckets](/graph/api/resources/plannerbucket) and [plans](/graph/api/resources/plannerplan) with the same or different [containers](/graph/api/resources/plannerplancontainer). However, it doesn't include other operations similar to moves, which can be configured independently, such as assignments, ordering of the task, percent complete, priority etc. Accepted values are:
+Specifies whether the task can be moved. This only includes a task moving between [buckets](/graph/api/resources/plannerbucket) and [plans](/graph/api/resources/plannerplan) with the same or different [containers](/graph/api/resources/plannerplancontainer). However, it doesn't include other operations similar to moves, which can be configured independently, such as assignments, ordering of the task, percent complete, or priority. Accepted values are:
 
 * `block`: Task can't be moved.
 * `moveBetweenBuckets`: Task can only be moved between the buckets of the plan it is in.
@@ -40,7 +40,7 @@ The collection must contain only one of these values.
 
 ### order
 
-Specifies if the task can be reordered in shared views. Accepted values are:
+Specifies whether the task can be reordered in shared views. Accepted values are:
 
 * `block`: Task can't be reordered.
 * `allow`: Task can be reordered.
@@ -101,7 +101,7 @@ This property supports the following override conditions. If an override doesn't
 
 ### dueDate
 
-Specifies if the task due date can be changed. Accepted values are:
+Specifies whether the task due date can be changed. Accepted values are:
 
 * `block`: Task due date can't be changed.
 * `allow`: Task due date can be changed, added, or removed.
@@ -110,7 +110,7 @@ The collection must contain only one of these values.
 
 ### notes
 
-Specifies if the task notes can be changed. Accepted values are:
+Specifies whether the task notes can be changed. Accepted values are:
 
 * `block`: Task notes can't be changed.
 * `allow`: Task notes can be changed.
@@ -119,19 +119,19 @@ The collection must contain only one of these values.
 
 ### percentComplete
 
-Specifies if the task percentComplete property can be changed. Accepted values are:
+Specifies whether the task **percentComplete** property can be changed. Accepted values are:
 
 * `block`: The task **percentComplete** property can't be changed.
-* `setToComplete`: The task **percentComplete**  property can be set to `100`.
-* `setToInProgress`: The task **percentComplete**  property can be set to values from `1` to `99`.
-* `setToNotStarted`: The task **percentComplete**  property can be set to `0`.
-* `allow`: The task **percentComplete**  property can be changed.
+* `setToComplete`: The task **percentComplete** property can be set to `100`.
+* `setToInProgress`: The task **percentComplete** property can be set to values from `1` to `99`.
+* `setToNotStarted`: The task **percentComplete** property can be set to `0`.
+* `allow`: The task **percentComplete** property can be changed.
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
 ### previewType
 
-Specifies if the task preview type can be changed. Accepted values are:
+Specifies whether the task preview type can be changed. Accepted values are:
 
 * `block`: Task preview type can't be changed.
 * `allow`: Task preview type can be changed.
@@ -140,7 +140,7 @@ The collection must contain only one of these values.
 
 ### priority
 
-Specifies if the task priority can be changed. Accepted values are:
+Specifies whether the task priority can be changed. Accepted values are:
 
 * `block`: Task priority can't be changed.
 * `allow`: Task priority can be changed.
@@ -149,7 +149,7 @@ The collection must contain only one of these values.
 
 ### references
 
-References property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Accepted values are:
+The**references** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Accepted values are:
 
 * `block`: Task references can't be changed.
 * `add`: New references can be added.
@@ -158,14 +158,14 @@ References property is configured with [fieldRules](/graph/api/resources/planner
 
 The collection can specify either a single `allow` or `block` value, or any combination of other values.
 
-This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property applies instead. The **defaultRules** must be specified.
+This property supports the following override conditions. If an override doesn't have rules specified, the values specified for the **defaultRules** property apply instead. The **defaultRules** must be specified.
 
 * `userCreated`: Rules apply if the task reference was created by a user.
 * `applicationCreated`: Rules apply if the task reference was created using application permissions.
 
 ### startDate
 
-Specifies if the task start date can be changed. Accepted values are:
+Specifies whether the task start date can be changed. Accepted values are:
 
 * `block`: Task start date can't be changed.
 * `allow`: Task start date can be changed.
@@ -174,7 +174,7 @@ The collection must contain only one of these values.
 
 ### title
 
-Specifies if the task title can be changed. Accepted values are:
+Specifies whether the task title can be changed. Accepted values are:
 
 * `block`: Task title can't be changed.
 * `allow`: Task title can be changed.
