@@ -455,9 +455,9 @@ Content-Type: application/json
 
 ## Manage application ownership
 
-As a best practice, we recommend auditing the apps in your tenant to ensure that there aren't any ownerless apps and service principals, and that all apps and service principals have least two owners.
+As a best practice, all apps and service principals should have at least two owners. We recommend auditing the apps in your tenant to ensure that there aren't any ownerless apps and service principals, or those at risk of being ownerless.
 
-### Identify ownerless apps
+### Identify ownerless apps or apps with one owner
 
 Least privilege delegated permission: `Application.ReadWrite.All`
 
@@ -472,7 +472,7 @@ This request also returns the count of the apps that match the filter condition.
   "name": "tutorial-application-basics-ownerless-apps"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applications?$filter=owners/$count eq 0&$count=true
+GET https://graph.microsoft.com/v1.0/applications?$filter=owners/$count eq 0 or owners/$count eq 1&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -503,7 +503,7 @@ ConsistencyLevel: eventual
 ---
 
 
-### Identify ownerless service principals or without at least two owners
+### Identify ownerless service principals and service principals with one owner
 
 Least privilege delegated permission: `Application.ReadWrite.All`
 
@@ -596,6 +596,25 @@ Content-Type: application/json
 
 ---
 
+### Assign an owner to a service principal
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+The following request references the service principal using its **appId**. `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-assign-serviceprincipal-owner"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/servicePrincipals(appId='46e6adf4-a9cf-4b60-9390-0ba6fb00bf6b')/owners/$ref
+Content-Type: application/json
+
+{
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/8afc02cb-4d62-4dba-b536-9f6d73e9be26"
+}
+```
 
 ## See also
 
