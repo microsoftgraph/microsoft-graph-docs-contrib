@@ -132,50 +132,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(privilegedAccessGroupEligibilitySchedule)",
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
-      "id": "3be58d9b-3d87-4cb5-b6c9-bcd825841f52",  
-      "accessId": "member",
-      "principalId": "c277c8cb-6bb7-42e5-a17f-0add9a718151",
-      "createdUsing" : "7e62cb14-72db-4816-af40-6af092399422",
-      "groupId": "d5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc",
-      "memberType": "Direct",
-      "currentStartDateTime": "2022-02-09T14:48:00.000Z",  
-      "currentEndDateTime": null,
-      "scheduleInfo":{
-        "@odata.type": "#microsoft.graph.requestSchedule",
-        "startDateTime": "2022-02-09T14:48:00.000Z",
-        "expiration":{
-          "@odata.type": "#microsoft.graph.expirationPattern",
-          "type": "noExpiration"
-          "endDateTime": null,
-          "duration": null
-        },
-        "recurrence": null
+  {
+    "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
+    "id": "14b9e371-5c2c-4ee5-a4a5-2980060d4f4e_member_f9003cf6-8905-4c69-a9f8-fd6d04caec69",
+    "createdDateTime": "2022-03-14T19:26:07.06Z",
+    "modifiedDateTime": "0001-01-01T08:00:00Z",
+    "createdUsing": "f9003cf6-8905-4c69-a9f8-fd6d04caec69",
+    "status": "Provisioned",
+    "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+    "accessId": "member",
+    "groupId": "14b9e371-5c2c-4ee5-a4a5-2980060d4f4e",
+    "memberType": "direct",
+    "scheduleInfo": {
+      "startDateTime": "2022-03-14T19:26:07.06Z",
+      "recurrence": null,
+      "expiration": {
+        "type": "afterDateTime",
+        "endDateTime": "2023-03-14T19:25:46.4Z",
+        "duration": null
       }
-    },
-    {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
-      "id": "27fcfaed-61a4-46d2-aa33-7e0322bcc1f9",  
-      "accessId": "member",
-      "principalId": "c277c8cb-6bb7-42e5-a17f-0add9a718151",  
-      "groupId": "d5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc",
-      "memberType": "Group",
-      "currentStartDateTime": "2022-02-09T14:48:00.000Z",  
-      "currentEndDateTime": "2022-02-09T22:48:00.000Z",
-      "scheduleInfo":{
-        "@odata.type": "#microsoft.graph.requestSchedule",
-        "startDateTime": "2022-02-09T14:48:00.000Z",
-        "expiration":{
-          "@odata.type": "#microsoft.graph.expirationPattern",
-          "type": "Duration",
-          "endDateTime": null,
-          "duration" : "PT8H"
-        },
-        "recurrence": null
-      }
-    },
+    }
+  }
   ]
 }
 ```
