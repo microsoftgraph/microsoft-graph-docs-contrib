@@ -127,9 +127,10 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
+            "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
             "startDateTime": {
                 "dateTime": "2018-04-30T13:00:00.0000000Z",
@@ -222,9 +223,10 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
+            "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
             "startDateTime": {
                 "dateTime": "2018-05-01T12:00:00.0000000Z",

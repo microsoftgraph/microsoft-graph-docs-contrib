@@ -152,6 +152,7 @@ The following table shows the properties that are required when you create the d
 |requireClass3Biometrics|Boolean|Require user to apply Class 3 Biometrics on their Android device.|
 |requirePinAfterBiometricChange|Boolean|A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.|
 |fingerprintAndBiometricEnabled|Boolean|Indicate to the client to enable both biometrics and fingerprints for the app.|
+|minimumWarningSdkVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. (iOS only)|
 
 
 
@@ -165,7 +166,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 5790
+Content-length: 5858
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -295,7 +296,8 @@ Content-length: 5790
   "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
   "requireClass3Biometrics": true,
   "requirePinAfterBiometricChange": true,
-  "fingerprintAndBiometricEnabled": true
+  "fingerprintAndBiometricEnabled": true,
+  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
 }
 ```
 
@@ -304,7 +306,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5962
+Content-Length: 6030
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -437,7 +439,8 @@ Content-Length: 5962
   "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
   "requireClass3Biometrics": true,
   "requirePinAfterBiometricChange": true,
-  "fingerprintAndBiometricEnabled": true
+  "fingerprintAndBiometricEnabled": true,
+  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
 }
 ```
 
