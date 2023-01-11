@@ -8,9 +8,9 @@ ms.prod: "microsoft-teams"
 
 # How to write an interactive message app within your own application?
 
-This article shows how you can embed the Microsoft Teams experience within your own application, so users do not need to constantly switch between your own application and the Microsoft Teams application. Instead, users can read and send Microsoft Teams messages directly within your own application.
+This article shows how you can embed the Microsoft Teams experience within your own application, so users do not need to constantly switch between your own application and the Microsoft Teams application.  Instead, users can read and send Microsoft Teams messages directly within your own application.
 
-To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times. In this article, we will show how you can do a one-time retrieval for the existing messages, cache them, and then use change notifications to get only the subsequent messages.
+To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times.  In this article, we will show how you can do a one-time retrieval for the existing messages, cache them, and then use change notifications to get only the subsequent messages.
 
 ## Overview
 
@@ -22,19 +22,19 @@ At a high level, the example consists of the following:
 - [Step 4: Retrieve messages](#step-4-retrieve-messages)
 - [Step 5: Cache messages](#step-5-cache-messages)
 - [Step 6: Subscribe to change notifications](#step-6-subscribe-to-change-notifications)
-- [Step 7: Renew change notifications subscriptions](#step-7-renew-change-notifications-subscriptions)
-- [Step 8: Receive and decrypt change notifications](#step-8-receive-and-decrypt-change-notifications)
+- [Step 7: Receive and decrypt change notifications](#step-7-receive-and-decrypt-change-notifications)
+- [Step 8: Renew change notifications subscriptions](#step-8-renew-change-notifications-subscriptions)
 - [Step 9: Get and set viewpoints](#step-9-get-and-set-viewpoints)
 
 ## Step 1: Design and setup the architecture
 
 The system diagram below shows the suggested high-level architecture. It has three components that should be added to your existing application system if not already:
 
-1. There is a **server component** that is ready to make API requests (e.g., POST chats, POST messages, etc.) to and process API requests (e.g., change notifications) from Microsoft Teams APIs. To learn how to set it up, please visit the [Quick Start](https://developer.microsoft.com/graph/quick-start), [Tutorials](/graph/tutorials), and [Authentication and authorization basics](/graph/auth/auth-concepts) first.
-2. There is a **cache** that is ready to cache messages. To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times, by storing messages in this cache. You do not want to be surprised by the API consumption bill later, so make sure you do not skip building this cache. To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
-3. There is a new **chat user interface (UI)** that can communicate with the server component to get user inputs and display messages. The server component would communicate to it when there is a new message. One way to implement the communication is using ASP.NET's [SignalR](/aspnet/signalr/overview/getting-started/introduction-to-signalr).
+1. There is a new **chat user interface (UI)** that gets user inputs and displays messages.  It makes API requests (e.g. POST/GET chats, POST/GET messages, etc.) to Microsoft Teams APIs.  It also gets new messages in real time from the server component (described below).  If this is your first time using Microsoft Teams or Graph APIs, you can get started with [Quick Start](https://developer.microsoft.com/graph/quick-start), [Tutorials](/graph/tutorials), and [Authentication and authorization basics](/graph/auth/auth-concepts).
 
-Please note that this is a *service-to-service* architecture, with Microsoft Teams APIs communicating with the server component, not directly with the UI. There are two benefits of having the server component in between in the backend. One benefit is that it can persist all historical messages in the cache in the backend, so your UI can be lightweight; caching all (not just the recent) messages on the UI layer may not be feasible when you have many messages. Another benefit is that when Microsoft Teams APIs send the change notifications (see [Step 6](#step-6-subscribe-to-change-notifications) below), it requires an URL, and your UI, such as the users' mobile phone, may not have an URL. The server component, however, can simply have a webhook URL.
+2. There is a **server component** that subscribes and listens to change notifications in real time from Microsoft Teams APIs for new messages.  It is needed because when Microsoft Teams APIs send the change notifications (see [Step 7](#step-7-receive-and-decrypt-change-notifications) below), it requires a webhook URL to send the change notifications to, and your UI, such as the users’ mobile phone, may not have an URL.  The server component, however, has a stable webhook URL.  The new messages are pushed from the server component to the chat UI, using communication methods such as ASP.NET's [SignalR](/aspnet/signalr/overview/getting-started/introduction-to-signalr).  
+(You may also choose to have the server component, instead of the chat UI, making all the API requests (e.g. POST/GET chats, POST/GET messages, etc.) to Microsoft Teams APIs, and caching all the messages.  For example, if you have another backend system component that also needs to make those API requests, such as for compliance and audit purposes, then you may choose to centralize the API requests and caching in the server component instead.)
+3. There is a **cache** that persists messages.  To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times, by storing messages in this cache.  You do not want to be surprised by the API consumption bill later, so make sure you do not skip building this cache.  To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
 
 Once these system components are all set up, you can start using Microsoft Teams APIs as described in the following steps. ![System Diagram](images/teams-how-to-write-interactive-message-app-system-diagram.png)
 
@@ -418,7 +418,7 @@ Content-type: application/json
 ```
 When designing the user experience, please take into account that, for most messages, it takes up to 3 seconds (TODO: to be confirmed after getting access to Jarvis charts) for Microsoft Graph to detect a change and send its change notification.
 
-## Step 7: Renew change notifications subscriptions
+## Step 8: Renew change notifications subscriptions
 
 For security reasons, subscriptions for chatMessage expire in 60 minutes, as described on [subscription resource type](/graph/api/resources/subscription?#maximum-length-of-subscription-per-resource-type). We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions. Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their `expirationDateTime`, as described on [Update subscription](/graph/api/subscription-update?#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications. Below is an example.
 
@@ -441,7 +441,7 @@ Content-type: application/json
 }
 ```
 
-## Step 8: Receive and decrypt change notifications
+## Step 7: Receive and decrypt change notifications
 
 Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the `notificationUrl` (provided in the subscription creation above). For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Update subscription](/graph/api/subscription-update).
 
