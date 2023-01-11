@@ -1,6 +1,6 @@
 ---
 title: "Use the business scenarios API in Microsoft Graph (preview)"
-description: "Business scenarios API allows creation and management of business scenarios that configure and manage integration of data into Microsoft Graph."
+description: "The business scenarios API allows for the creation and management of business scenarios that configure and manage the integration of data into Microsoft Graph."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "business-scenarios"
@@ -11,27 +11,27 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The business scenarios API allows creation and management of business scenarios that configure and manage integration of data into Microsoft Graph.
+The business scenarios API allows for the creation and management of business scenarios that configure and manage the integration of data into Microsoft Graph.
 
 ## Structure of a business scenario
 
-A business scenario is represented by the [businessScenario](businessscenario.md) entity. A **businessScenario** resource specifies general information about the scenario, the apps that use that scenario, and configurations for entities that apps can manage to support the scenario. Apps can identify their instance of **businessScenario** by the **uniqueName** property using a reverse domain name format.
+A business scenario is represented by the [businessScenario](businessscenario.md) entity. A **businessScenario** resource specifies general information about the scenario, the apps that use that scenario, and configurations for entities that apps can manage to support the scenario. Apps can identify the instance of **businessScenario** by the **uniqueName** property using a reverse domain name format.
 
 ### Entities available in business scenarios
 
-The business scenarios API is designed to allow Microsoft Graph services to extend it to support service-specific scenarios of their app developer customers.
+The business scenarios API is designed to allow Microsoft Graph services to extend it to support service-specific scenarios that are specific to customers.
 
 Currently, [Planner](businessscenario-planner-overview.md) has extended the API. The API supports custom scenario data for Planner in the [businessScenarioTask](businessscenariotask.md) entity.
 
 ## Creating a business scenario
 
-Business scenarios can be created by applications using the delegated permission `BusinessScenarioConfig.ReadWrite.OwnedBy`. Creating a business scenario requires specifying a display name and a unique name. Unique name should be in the reverse DNS format to prevent conflict between independent scenarios. The reverse DNS format takes the domain name the scenario creator owns and reverses it. For example, if a developer owning `apps.contoso.com` creates a scenario, the unique name of the scenario should start with `com.contoso.apps`. Then further segments can be added to differentiate scenarios or groups of scenarios, for example `com.contoso.apps.customerSupport.ticketManagement`. The unique name of the scenario must be distinct from every other scenario deployed in a tenant.
+Business scenarios can be created by applications using the delegated permission `BusinessScenarioConfig.ReadWrite.OwnedBy`. Creating a business scenario requires specifying a display name and a unique name. The unique name should be in the reverse DNS format to prevent conflict between independent scenarios. The reverse DNS format takes the domain name the scenario creator owns and reverses it. For example, if a developer who owns `apps.contoso.com` creates a scenario, the unique name of the scenario should start with `com.contoso.apps`. Then further segments can be added to differentiate scenarios or groups of scenarios; for example, `com.contoso.apps.customerSupport.ticketManagement`. The unique name of the scenario must be distinct from every other scenario deployed in a tenant.
 
 For more information, see [Create businessScenario](../api/solutionsroot-post-businessscenarios.md).
 
 ## Configuring behaviors for entities
 
-Each service supported through business scenarios provide configurations in the scenario. Applications need to have the `BusinessScenarioConfig.Read.OwnedBy` permission to be able to access these configurations, and the `BusinessScenarioConfig.ReadWrite.OwnedBy` permission to be able to change them. Each configuration is specific for the service. For more details, see the following service-specific topics:
+Each service supported through business scenarios provides configurations in the scenario. Applications need to have the `BusinessScenarioConfig.Read.OwnedBy` permission to be able to access these configurations, and the `BusinessScenarioConfig.ReadWrite.OwnedBy` permission to be able to change them. Each configuration is specific for the service. For more details, see the following service-specific topics:
 
 * [Planner](businessscenario-planner-overview.md) provides the following configurations:
   * [plannerPlanConfiguration](plannerplanconfiguration.md)
@@ -39,7 +39,7 @@ Each service supported through business scenarios provide configurations in the 
 
 ## Creating and managing data for a business scenario
 
-Each service supported through business scenarios provide access to data within a scenario. Applications need to be listed as an owner in the scenario to work with the data in a scenario. Additionally, applications need to have the `BusinessScenarioData.Read.OwnedBy` permission to be able to read the data, and the `BusinessScenarioData.ReadWrite.OwnedBy` permission to be able to create new data, or to modify previously created data. For more details, see the following service-specific topics:
+Each service supported through business scenarios provides access to data within a scenario. Applications need to be listed as an owner in a scenario to work with the data in the scenario. Applications also need to have the `BusinessScenarioData.Read.OwnedBy` permission to be able to read the data, and the `BusinessScenarioData.ReadWrite.OwnedBy` permission to be able to create new data, or to modify previously created data. For more details, see the following service-specific topics:
 
 * [Planner](businessscenario-planner-overview.md), with the following supported entities:
   * [businessScenarioTask](businessscenariotask.md)
