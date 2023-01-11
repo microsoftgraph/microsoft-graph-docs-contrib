@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
-          "ApiChange": "Resource",
+          "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
           "ChangeType": "Addition",
           "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
@@ -12,7 +12,7 @@
         },
         {
           "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
-          "ApiChange": "Resource",
+          "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
           "ChangeType": "Addition",
           "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inboundOutboundPolicyConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [inboundOutboundPolicyConfiguration](https://docs.microsoft.com/graph/resources/inboundoutboundpolicyconfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [inboundOutboundPolicyConfiguration](https://docs.microsoft.com/graph/api/resources/inboundoutboundpolicyconfiguration?view=graph-rest-beta) resource.",
           "Target": "inboundOutboundPolicyConfiguration"
         }
       ],
