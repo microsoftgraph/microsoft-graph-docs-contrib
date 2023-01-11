@@ -1,6 +1,6 @@
 ---
 title: "How to download all resources from a set of assignments"
-description: "Use Microsoft Graph to create assignments with a Teams app resource using your own application."
+description: "Use Microsoft Graph to to download all SharePoint resources from a set of assignments."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
@@ -26,7 +26,7 @@ Assignments and submissions are an important part in the interaction between tea
 
 ## Get submission feedback information
 
-The education API in Microsoft Graph uses feedback resource folders as a destination for feedback files. You can use the [submission feedback information](/graph/education-upload-feedback-resource-overview) API to get information on the user's submission feedback.
+The education API in Microsoft Graph uses feedback resource folders as a destination for feedback files. You can use the [submission feedback information](/graph/education-upload-feedback-resource-overview) to get information on the user's submission feedback.
 
 [List outcomes](/graph/api/educationsubmission-list-outcomes) helps to retrieve the list for the education outcome objects.
 
