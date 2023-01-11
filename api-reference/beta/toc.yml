@@ -15774,6 +15774,12 @@ items:
             href: api/horizontalsection-list.md
           - name: Get
             href: api/horizontalsection-get.md
+          - name: Create
+            href: api/horizontalsection-create.md
+          - name: Update
+            href: api/horizontalsection-update.md
+          - name: Delete
+            href: api/horizontalsection-delete.md
           - name: Column
             items:
             - name: Horizontal section column
@@ -15788,6 +15794,12 @@ items:
             href: resources/verticalsection.md
           - name: Get
             href: api/verticalsection-get.md
+          - name: Create
+            href: api/verticalsection-create.md
+          - name: Update
+            href: api/verticalsection-update.md
+          - name: Delete
+            href: api/verticalsection-delete.md
         - name: Web part
           items:
           - name: Web part

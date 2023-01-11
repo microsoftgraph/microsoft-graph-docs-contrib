@@ -114,10 +114,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.verticalSection",
-    "emphasis": "neutral"
-  }
+  "@odata.type": "#microsoft.graph.verticalSection",
+  "emphasis": "neutral"
 }
 ```
 
@@ -175,14 +173,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.verticalSection",
-    "emphasis": "neutral",
-    "webparts":[{
-      "@odata.type": "#microsoft.graph.textWebPart",
-      "id": "1212fc8d-dd6b-408a-8d5d-9f1cc787efbb",
-      "innerHtml": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel.</p>"
-    }]
-  }
+  "emphasis": "neutral",
+  "webparts":[{
+    "@odata.type": "#microsoft.graph.textWebPart",
+    "id": "1212fc8d-dd6b-408a-8d5d-9f1cc787efbb",
+    "innerHtml": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel.</p>"
+  }]
 }
 ```
