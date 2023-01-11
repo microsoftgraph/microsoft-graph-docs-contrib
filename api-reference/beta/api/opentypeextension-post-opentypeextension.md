@@ -81,7 +81,7 @@ POST /groups/{groupId}/events/{eventId}/extensions
 POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
 POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
 POST /organization/{organizationId}/extensions
-POST /users/{userIdd|userPrincipalName}/contacts/{contactId}/extensions
+POST /users/{userId|userPrincipalName}/contacts/{contactId}/extensions
 POST /users/{userId|userPrincipalName}/extensions
 POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions
 POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
@@ -193,7 +193,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-1-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
