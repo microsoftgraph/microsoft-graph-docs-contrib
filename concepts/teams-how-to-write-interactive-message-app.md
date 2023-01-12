@@ -47,19 +47,30 @@ Before sending a new [chatMessage](/graph/api/resources/chatmessage), a [chat](/
 POST https://graph.microsoft.com/v1.0/chats
 Content-Type: application/json
 {
-  "chatType": "oneOnOne",
-  "members": [
+    "chatType": "group",
+    "members": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "roles": [
+                "owner"
+            ],
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('adams@contoso.com ')"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "roles": [
+                "owner"
+            ],
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('gradyA@contoso.com ')"
+        },
     {
-      "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "roles": ["owner"],
-      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
-    },
-    {
-      "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "roles": ["owner"],
-      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
-    }
-  ]
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "roles": [
+                "owner"
+            ],
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('4562bcc8-c436-4f95-b7c0-4f8ce89dca5e')"
+        }
+    ]
 }
 ```
 ### Respose
@@ -74,6 +85,18 @@ Content-Type: application/json
     "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
     "chatType": "oneOnOne"
 }
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
+    "id": "19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2",
+    "topic": null,
+    "createdDateTime": "2023-01-11T01:34:18.929Z",
+    "lastUpdatedDateTime": "2023-01-11T01:34:18.929Z",
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab1234aaa12345a123aa12aa12aaaa1a9%40thread.v2/0?tenantId=4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1",
+    "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1",
+    "viewpoint": null,
+    "onlineMeetingInfo": null
+}
 ```
 ## Step 3: Send a message in the chat
 
@@ -81,7 +104,7 @@ Members within the chat can then send messages to each other. Below is an exampl
 
 ### Request
 ```http
-POST https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
+POST https://graph.microsoft.com/v1.0/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages
 Content-type: application/json
 {
   "body": {
@@ -94,39 +117,36 @@ Content-type: application/json
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
-    "id": "1616990032035",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19:b1234aaa12345a123aa12aa12aaaa1a9%40thread.v2')/messages/$entity",
+    "id": "1673482643198",
     "replyToId": null,
-    "etag": "1616990032035",
+    "etag": "1673482643198",
     "messageType": "message",
-    "createdDateTime": "2021-03-29T03:53:52.035Z",
-    "lastModifiedDateTime": "2021-03-29T03:53:52.035Z",
+    "createdDateTime": "2023-01-12T00:17:23.198Z",
+    "lastModifiedDateTime": "2023-01-12T00:17:23.198Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
-    "chatId": null,
+    "chatId": "19:b1234aaa12345a123aa12aa12aaaa1a@thread.v2",
     "importance": "normal",
     "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990032035?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990032035&parentMessageId=1616990032035",
+    "webUrl": null,
+    "channelIdentity": null,
     "policyViolation": null,
     "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
         "user": {
-            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Robin Kline",
+            "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+            "displayName": "John Smith",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
         "contentType": "text",
-        "content": "Hello World"
-    },
-    "channelIdentity": {
-        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
-        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+        "content": "Hello world"
     },
     "attachments": [],
     "mentions": [],
