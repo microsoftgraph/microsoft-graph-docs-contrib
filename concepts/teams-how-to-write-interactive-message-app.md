@@ -242,82 +242,82 @@ Typical interactive messaging apps display only the most recent messages by defa
 ```http
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages?$top=2&$filter=lastModifiedDateTime gt 2021-03-17T07:13:28.000z&$orderBy=createdDateTime desc
 ```
-### Response (TODO: Updated up to here, but not below)
+### Response
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('87d349ed-44d7-43e1-9a83-5f2406dee5bd')/chats('19%3Ab1234aaa12345a123aa12aa12aaaa1a9%40thread.v2')/messages",
     "@odata.count": 2,
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages?$top=2&$filter=lastModifiedDateTime+gt+2021-03-17T07%3a13%3a28.000z&$orderBy=createdDateTime+desc&$skiptoken=A111wwAwAA1ww1AwA1wwA1Aww111AA1wAwAAwAAwAAAwA1w1AAAwAAwww1Aww1AwAAwwAAA1AA1wAwAAw111wA11AAAww11Aw1wwww1wAwwwAAwwAwAwAAw1",
     "value": [
         {
-            "id": "1616964509832",
+            "id": "1673543687527",
             "replyToId": null,
-            "etag": "1616964509832",
+            "etag": "1673543687527",
             "messageType": "message",
-            "createdDateTime": "2021-03-28T20:48:29.832Z",
-            "lastModifiedDateTime": "2021-03-28T20:48:29.832Z",
+            "createdDateTime": "2023-01-12T17:14:47.527Z",
+            "lastModifiedDateTime": "2023-01-12T17:14:47.527Z",
             "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
-            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+            "chatId": "19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2",
             "importance": "normal",
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
-            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "id": "6789f158-72b1-4a63-9959-1f006381132b",
+                    "displayName": "Adele Vance",
+                    "userIdentityType": "aadUser",
+                    "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
                 }
             },
             "body": {
-                "contentType": "text",
-                "content": "Hello world"
+                "contentType": "html",
+                "content": "<p>Good morning, world!</p>"
             },
             "attachments": [],
             "mentions": [],
             "reactions": []
         },
         {
-            "id": "1615971548136",
+            "id": "1673482643198",
             "replyToId": null,
-            "etag": "1615971548136",
+            "etag": "1673482643198",
             "messageType": "message",
-            "createdDateTime": "2021-03-17T08:59:08.136Z",
-            "lastModifiedDateTime": "2021-03-17T08:59:08.136Z",
+            "createdDateTime": "2023-01-12T00:17:23.198Z",
+            "lastModifiedDateTime": "2023-01-12T00:17:23.198Z",
             "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
-            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+            "chatId": "19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2",
             "importance": "normal",
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
-            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+                    "displayName": "John Smith",
+                    "userIdentityType": "aadUser",
+                    "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
                 }
             },
             "body": {
-                "contentType": "html",
-                "content": "<div><div><div><span><img height=\"63\" src=\"https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv/$value\" width=\"67\" style=\"vertical-align:bottom; width:67px; height:63px\"></span></div></div></div>"
+                "contentType": "text",
+                "content": "Hello world"
             },
             "attachments": [],
             "mentions": [],
@@ -393,9 +393,11 @@ Some messages are [**system messages**](/graph/system-messages). For example, th
 
 ## Step 5: Cache messages
 
-Each message you get it through [getAllMessages](/microsoftteams/export-teams-content#how-to-access-teams-export-apis) or [change notification](/graph/api/resources/changenotificationcollection) is subject to charge by Microsoft Graph, so you will want to avoid reading the same message multiple times. We recommend caching the messages on your server. To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
+Each message you get it through [getAllMessages](/microsoftteams/export-teams-content#how-to-access-teams-export-apis) or [change notification](/graph/api/resources/changenotificationcollection) is subject to charge by Microsoft Graph, so you will want to avoid reading the same message multiple times. We recommend caching messages for at least a few hours so a user can quickly reopen a chat they visited a few minutes ago.  However, you should not cache longer than what’s allowed per your organizational retention policies. 
 
-## Step 6: Subscribe to change notifications
+To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
+
+## Step 6: Subscribe to change notifications (TODO: Updated up to here, but not below)
 
 Microsoft Graph offers several kinds of change notifications for messages:
 
