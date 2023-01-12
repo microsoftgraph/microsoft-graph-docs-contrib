@@ -136,8 +136,9 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id)",
     "value": [
-     {   "id": "6bb70a30-124a-4666-b9b8-6ae178d4f791" 
-        }
+     {   
+        "id": "6bb70a30-124a-4666-b9b8-6ae178d4f791" 
+    }
     ],
 }
 ```
