@@ -1327,6 +1327,48 @@
       "CreatedDateTime": "2022-12-09T20:25:18.7873044Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7f321a9a-aa22-4bd3-8390-7739a47b1709",
+          "ApiChange": "Member",
+          "ChangedApiName": "driveItem",
+          "ChangeType": "Addition",
+          "Description": "Added the `driveItem` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        },
+        {
+          "Id": "7f321a9a-aa22-4bd3-8390-7739a47b1709",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerPlanAccessLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerPlanAccessLevel** enumeration type.",
+          "Target": "plannerPlanAccessLevel"
+        },
+        {
+          "Id": "7f321a9a-aa22-4bd3-8390-7739a47b1709",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerSharedWithContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerSharedWithContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerSharedWithContainer?view=graph-rest-beta) resource type.",
+          "Target": "plannerSharedWithContainer"
+        },
+        {
+          "Id": "7f321a9a-aa22-4bd3-8390-7739a47b1709",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharedWithContainers",
+          "ChangeType": "Addition",
+          "Description": "Added the `sharedWithContainers` property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "7f321a9a-aa22-4bd3-8390-7739a47b1709",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-12T00:48:02.4923089Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
