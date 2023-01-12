@@ -331,8 +331,6 @@ items:
                 href: msgraph-customer-create-assignment-with-teamsapp-content-for-application.md
               - name: How to download all resources from a set of assignments
                 href: msgraph-customer-build-tool-to-download-all-the-resources-from-assignment.md
-              - name: I have a webapp that needs to create assignments with links back to my website
-                href: /microsoftteams/platform/concepts/build-and-test/share-to-teams-from-web-apps
       - name: Extensions
         items:
           - name: Overview
