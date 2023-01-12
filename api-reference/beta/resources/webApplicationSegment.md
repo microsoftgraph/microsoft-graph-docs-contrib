@@ -1,6 +1,6 @@
 ---
 title: "webApplicationSegment resource type"
-description: "Represents onPremisesApplicationSegment object when publishing an on-premises wildcard application with Azure AD Application Proxy."
+description: "Represents webApplicationSegment object when publishing an on-premises wildcard application with Azure AD Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinshah"
 ms.prod: "applications"
@@ -38,14 +38,13 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.onPremisesApplicationSegment",
-  "externalUrl": "String",
-  "internalUrl": "String",
   "alternateUrl": "String",
   "corsConfigurations": [
     {
       "@odata.type": "microsoft.graph.corsConfiguration_v2"
     }
-  ]
+  ],
+  "externalUrl": "String",
+  "internalUrl": "String"
 }
 ```
