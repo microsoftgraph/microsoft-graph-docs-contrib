@@ -25,7 +25,7 @@ Plan configuration is represented by the [plannerPlanConfiguration](plannerplanc
 
 ### Task configuration
 
-Task configuration is represented by the [plannerTaskConfiguration](plannertaskconfiguration.md) entity. In task configuration, the application can configure the policies that restrict the access to the applications and users that use the tasks managed by the scenario. The policies are grouped by [roles](plannerrelationshipbasedusertype.md). Each role identifies a group of callers, and each group can have different rules specified for them. The rules that apply to a specific call are picked in the following order. Only the first specified rules apply if the request modifies a task.
+Task configuration is represented by the [plannerTaskConfiguration](plannertaskconfiguration.md) entity. In task configuration, the application can configure the policies that restrict the access to the applications and users that use the tasks managed by the scenario. The policies are grouped by [roles](plannerrelationshipbasedusertype.md). Each role identifies a group of callers, and each group can have different rules specified for them. The rules that apply to a specific call are picked in the following order. Only the first specified rules apply when a request modifies a task.
 
 - `taskAssignees`: Applies if the target task is assigned to the user who makes the call.
 - `groupOwners`: Applies if the user who makes the call is an owner of the container that the plan of the target task is in.
