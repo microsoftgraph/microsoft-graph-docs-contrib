@@ -43,18 +43,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.corsConfiguration_v2",
-  "resource": "String",
-  "allowedOrigins": [
-    "String"
-  ],
   "allowedHeaders": [
     "String"
   ],
   "allowedMethods": [
     "String"
   ],
-  "maxAgeInSeconds": "Integer"
+  "allowedOrigins": [
+    "String"
+  ],
+  "id": "String",
+  "maxAgeInSeconds": "Integer",
+  "resource": "String"
 }
 ```
 
