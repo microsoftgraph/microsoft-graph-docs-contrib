@@ -206,11 +206,11 @@ The search API has the following limitations:
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **acronym**,**bookmark**,**message**, **chatMessage**, **event**, **person**, **qna** or **externalItem**.
+- The search API does not support custom sort for **acronym**,**bookmark**,**message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
-- The search API does not support aggregations for **acronym**,**bookmark**,**message**, **event**, **site**, **person**, **qna** or **drive**.
+- The search API does not support aggregations for **acronym**,**bookmark**,**message**, **event**, **site**, **person**, **qna**, or **drive**.
 
-- The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna** or **externalItem**.
+- The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
