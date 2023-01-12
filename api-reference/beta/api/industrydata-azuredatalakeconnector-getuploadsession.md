@@ -43,7 +43,7 @@ The following table shows the parameters that can be used with this function.
 
 | Parameter    | Type    | Description                                                                                                                               |
 | :----------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| resetSession | Boolean | `True` indicates that a new [fileUploadSession](../resources/industrydata-fileuploadsession.md) with an empty container will be returned. |
+| resetSession | Boolean | `True` indicates that a new [fileUploadSession](../resources/industrydata-fileuploadsession.md) with an empty container is returned.      |
 
 ## Request headers
 

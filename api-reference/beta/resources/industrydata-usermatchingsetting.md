@@ -14,7 +14,6 @@ Namespace: microsoft.graph.industryData
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the rules for matching a user in a [roleGroup](industrydata-rolegroup.md) with a [user](../resources/user.md) object from Azure Active Directory.
-Represents the matching setting rules for a .
 
 ## Properties
 

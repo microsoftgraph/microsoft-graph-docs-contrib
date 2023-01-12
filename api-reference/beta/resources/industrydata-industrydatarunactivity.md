@@ -1,6 +1,6 @@
 ---
 title: "industryDataRunActivity resource type"
-description: "Represents an abstract base type for all activity types."
+description: "An abstract base type for all activity types."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for all activity types. The **industryDataRunActivity** represents the current or file state of the activity within a single [industryDataRun](industrydata-industrydatarun.md).
+An abstract base type for all activity types. This resource represents the current or file state of the activity within a single [industryDataRun](industrydata-industrydatarun.md).
 
-- `inProgress`: The activity is being executed by the current [industryDataRun](industrydata-industrydatarun.md).
-- `completed`: The activity was successfully executed.
-- `completedWithErrors`: The activity ran to completion but encountered one or more error conditions during execution.
-- `completedWithWarnings`: The activity ran to completion but encountered one or more warning conditions during execution.
-- `skipped`: The activity was not executed by the [industryDataRun](industrydata-industrydatarun.md).
-- `failed`: The activity encountered an unrecoverable error during execution.
+- `inProgress`: The current [industryDataRun](industrydata-industrydatarun.md) is running the activity.
+- `completed`: The activity was successfully run.
+- `completedWithErrors`: The activity ran to completion but encountered one or more error conditions during the run.
+- `completedWithWarnings`: The activity ran to completion but encountered one or more warning conditions during the run.
+- `skipped`: The [industryDataRun](industrydata-industrydatarun.md) didn't run the activity.
+- `failed`: The activity encountered an unrecoverable error during the run.
 
 ## Properties
 
@@ -34,7 +34,7 @@ Represents an abstract base type for all activity types. The **industryDataRunAc
 
 | Relationship | Type                                                         | Description                      |
 | :----------- | :----------------------------------------------------------- | :------------------------------- |
-| activity     | [industryDataActivity](industrydata-industrydataactivity.md) | The flow this activity executed. |
+| activity     | [industryDataActivity](industrydata-industrydataactivity.md) | The flow that was run by this activity. |
 
 ## JSON representation
 
