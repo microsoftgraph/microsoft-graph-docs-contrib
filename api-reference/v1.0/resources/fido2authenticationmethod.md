@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method.
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
