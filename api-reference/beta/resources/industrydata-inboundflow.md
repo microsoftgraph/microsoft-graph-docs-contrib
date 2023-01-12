@@ -1,6 +1,6 @@
 ---
 title: "inboundFlow resource type"
-description: "Represents an abstract base type for all flows that bring data into the canonical store in the Azure Data Lake."
+description: "An abstract base type for all flows that bring data into the canonical store in the Azure Data Lake."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for all flows that bring data into the canonical store in the Azure Data Lake. An **inboundFlow** represents an activity that gets executed by the service.
+An abstract base type for all flows that bring data into the canonical store in the Azure Data Lake. An **inboundFlow** represents an activity that a service runs.
 
 The following data is required before using this resource:
 
@@ -21,7 +21,7 @@ The following data is required before using this resource:
 - [dataConnector](../api/industrydata-industrydataroot-post-dataconnectors.md)
 - [yearTimePeriodDefinition](../api/industrydata-industrydataroot-post-years.md)
 
-By default, your inbound flow will activate twice (2x) daily. For more details, see [industryDataRun](industrydata-industrydatarun.md).
+By default, your inbound flow activates twice (2x) daily. For more details, see [industryDataRun](industrydata-industrydatarun.md).
 
 Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
 
@@ -49,7 +49,7 @@ Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
 
 | Relationship  | Type                                                                 | Description                                                                                  |
 | :------------ | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| dataConnector | [industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system. |
+| dataConnector | [industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system.     |
 | year          | [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to.                            |
 
 ## JSON representation

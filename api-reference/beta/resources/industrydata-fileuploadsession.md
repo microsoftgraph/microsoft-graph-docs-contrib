@@ -22,7 +22,7 @@ The **industryDataAzureDataLakeConnector** uses CSV files uploaded to a secure c
 | Property                    | Type           | Description                                               |
 | :-------------------------- | :------------- | :-------------------------------------------------------- |
 | containerExpirationDateTime | DateTimeOffset | The expiration date and time for the container.           |
-| containerId                 | String         | The container ID where the files will be uploaded.        |
+| containerId                 | String         | The container ID where the files are uploaded.            |
 | sessionExpirationDateTime   | DateTimeOffset | The expiration date and time for the file upload session. |
 | sessionUrl                  | String         | The Azure Storage SAS URI to upload source files to.      |
 

@@ -31,7 +31,7 @@ For more information:
   - To review and download sample set of SDS V2.1 CSV files, [see the SDS GitHub Repository](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples).
 
 > [!NOTE]
-> After the initial upload during the creation of the inbound flow, you'll need to always supply the same set of files for subsequent uploads, regardless of data changes made in the optional files or not. If you do not the system will determine that the records are no longer active and will mark them as such.
+> After the initial upload during the creation of the inbound flow, you'll need to always supply the same set of files for subsequent uploads, regardless of the data changes made in the optional files or not. If you miss this configuration, the system determines that the records are no longer active and marks them as such.
 
 #### Get Data Connector List
 
@@ -39,7 +39,7 @@ Retrieves the list of `industryDataAzureDataLakeConnector` to supply to the `get
 
 #### Request an Upload Session
 
-The `industryDataAzureDataLakeConnector` uses CSV files uploaded to a secure container. This container only lives for a finite period of time. The container is created by calling `getUploadSesion()`. The customer then uploads the required CSV files to the provided SAS URI in `sessionUri`.
+The `industryDataAzureDataLakeConnector` uses CSV files uploaded to a secure container. This container only lives for a finite period of time. The container is created by calling `getUploadSession()`. The customer then uploads the required CSV files to the provided SAS URI in `sessionUri`.
 
 _For more information, see [FileUploadSession](industrydata-fileuploadsession.md)_
 
@@ -63,7 +63,7 @@ _For more information, see [FileValidateOperation](industrydata-filevalidateoper
 
 | Method                                                                                       | Return type                                                                                              | Description                                                                                                          |
 | :------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| [Create azureDataLakeConnector](../api/industrydata-industrydataroot-post-dataconnectors.md) | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-industrydataconnector.md)             | Create a new [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object.                                |
+| [Create azureDataLakeConnector](../api/industrydata-azuredatalakeconnector-post.md) | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)             | Create a new [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object.                                |
 | [List azureDataLakeConnectors](../api/industrydata-azuredatalakeconnector-list.md)           | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md) collection | Get a list of the [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) objects and their properties.     |
 | [Get azureDataLakeConnector](../api/industrydata-azuredatalakeconnector-get.md)              | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)            | Read the properties and relationships of an [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object. |
 | [Update azureDataLakeConnector](../api/industrydata-azuredatalakeconnector-update.md)        | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)            | Update the properties of an [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object.                 |
