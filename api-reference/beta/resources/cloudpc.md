@@ -47,7 +47,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |:---|:---|:---|
 |aadDeviceId|String|The Azure Active Directory (Azure AD) device ID of the Cloud PC.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC is able to be connected or not.|
-|diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncryped`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`.|
+|diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
@@ -73,10 +73,10 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Member|Description|
 |:---|:---|
-|notAvailable|The Cloud PC is not provisioned, or in a state that encryption is not available.|
-|notEncryped|The Cloud PC should be encryped, but the encryption is not done yet (reserved, should not happen).|
-|encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using platform managed key. This is the default if customer managed key is not enabled.|
-|encryptedUsingCustomerManagedKey|The Cloud PC is encrypted using customer managed key.|
+|notAvailable|The Cloud PC is not provisioned, or in a state where encryption is not available.|
+|notEncryped|The Cloud PC should be encrypted, but the encryption is not done yet (reserved, should not happen).|
+|encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using platform managed key. This is the default value if the customer-managed key is not enabled.|
+|encryptedUsingCustomerManagedKey|The Cloud PC is encrypted using the customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcStatus values
