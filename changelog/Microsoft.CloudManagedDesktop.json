@@ -15,7 +15,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "diskEncryptionState",
                     "ChangeType": "Addition",
-                    "Description": "Added the `diskEncryptionState` property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPC?view=graph-rest-beta) resource.",
+                    "Description": "Added the `diskEncryptionState` property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 }
             ],
