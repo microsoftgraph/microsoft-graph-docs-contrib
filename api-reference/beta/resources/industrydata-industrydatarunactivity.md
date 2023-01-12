@@ -15,11 +15,11 @@ Namespace: microsoft.graph.industryData
 
 Represents an abstract base type for all activity types. The **industryDataRunActivity** represents the current or file state of the activity within a single [industryDataRun](industrydata-industrydatarun.md).
 
-- `inProgress`: The activity is being executed by the current [industryDataRun](industrydata-industrydatarun.md).
-- `completed`: The activity was successfully executed.
+- `inProgress`: The activity is being performed by the current [industryDataRun](industrydata-industrydatarun.md).
+- `completed`: The activity was successfully performed.
 - `completedWithErrors`: The activity ran to completion but encountered one or more error conditions during execution.
 - `completedWithWarnings`: The activity ran to completion but encountered one or more warning conditions during execution.
-- `skipped`: The activity was not executed by the [industryDataRun](industrydata-industrydatarun.md).
+- `skipped`: The activity was not performed by the [industryDataRun](industrydata-industrydatarun.md).
 - `failed`: The activity encountered an unrecoverable error during execution.
 
 ## Properties

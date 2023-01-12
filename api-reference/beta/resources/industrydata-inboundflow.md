@@ -13,11 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for all flows that bring data into the canonical store in the Azure Data Lake.
-
-Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
-
-A **inboundFlow** represents an activity that gets executed by the service. 
+Represents an abstract base type for all flows that bring data into the canonical store in the Azure Data Lake. An **inboundFlow** represents an activity that gets executed by the service.
 
 The following data is required before using this resource:
 
@@ -26,6 +22,8 @@ The following data is required before using this resource:
 - [yearTimePeriodDefinition](../api/industrydata-industrydataroot-post-years.md)
 
 By default, your inbound flow will activate twice (2x) daily. For more details, see [industryDataRun](industrydata-industrydatarun.md).
+
+Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
 
 ## Methods
 
@@ -70,8 +68,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFlow",
+  "dataDomain": "String",  
   "displayName": "String",
-  "dataDomain": "String",
   "effectiveDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",
   "readinessStatus": "String"
