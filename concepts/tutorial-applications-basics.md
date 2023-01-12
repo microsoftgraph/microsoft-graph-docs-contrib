@@ -717,3 +717,4 @@ Content-Type: application/json
 ## See also
 
 + [Properties of an enterprise application (service principal)](/azure/active-directory/manage-apps/application-properties)
++ [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate)
