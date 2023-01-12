@@ -24205,7 +24205,7 @@ items:
             href: api/businessscenario-update.md
           - name: Delete
             href: api/solutionsroot-delete-businessscenarios.md
-        - name: Integrating with plans and tasks
+        - name: Integrating with Planner plans and tasks
           href: resources/businessscenario-planner-overview.md
         - name: Business scenario in Planner
           items:
