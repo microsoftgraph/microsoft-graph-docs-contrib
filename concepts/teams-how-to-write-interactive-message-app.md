@@ -397,54 +397,68 @@ Each message you get it through [getAllMessages](/microsoftteams/export-teams-co
 
 To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
 
-## Step 6: Subscribe to change notifications (TODO: Updated up to here, but not below)
+## Step 6: Subscribe to change notifications
 
-Microsoft Graph offers several kinds of change notifications for messages:
-
+Microsoft Graph offers several kinds of change notifications for messages, as specified by the corresponding `resource` properties.
 - per-chat:
   - `"resource": "/chats/{id}/messages"`
 - per-user, across all chats:
   - `"resource": "/users/{id}/chats/getAllMessages"`
-- per-tenant:
+- per-tenant, across all chats:
   - `"resource": "/chats/getAllMessages?model=A"`
-- per-app:
+- per-app, across all chats in a tenant where the app is installed:
   - `"resource": "/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages"`
 
-If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, consider how many different chats you'll need to track. If you use per-chat change notifications, there's a [limit](/graph/webhooks#teams-resource-limitations) (e.g. 10,000) on the number of [subscriptions](/graph/api/resources/subscription?view=graph-rest-beta). Instead, consider subscribing to per-app or per-tenant, which covers all the messages in the chats of your Microsoft Teams app or tenant. Furthermore, unless you are using per-user, the notes about access control logic described in [Step 4](#step-4-retrieve-messages) above are applicable to the change notifications here as well.
+If you want to track only specific chats, **per-chat** would be an option, but your should consider how many different chats you’ll need to track. There’s a [limit](/graph/webhooks#teams-resource-limitations) (e.g. 10,000) on the number of per-chat change notifications [subscriptions](/graph/api/resources/subscription). Instead, consider subscribing to **per-tenant** or **per-app**, which covers all the messages in the chats of your Microsoft Teams tenant or app.  All these three methods require you to implement the **access control logic** yourself.  That is, you would need to check whether the users are [members](/graph/api/chat-list-members) of the chats and show and hide the chats as they join or leave the chats accordingly.  This means that you would also need to create a [subscription for membership changes](/graph/teams-changenotifications-chatmembership) if you want these changes in real time.  Alternatively, to avoid implementing the access control logic yourself, you can use the per-user method, but at the expense of a larger cache storing the same chats multiple times for multiple users.
 
-Below is an example to get all messages **per-tenant**. More details can be found on [Create subscription](/graph/api/subscription-post-subscriptions). As mentioned at the bottom of [Create subscription](/graph/api/subscription-post-subscriptions), before trying the example below, the subscription notification endpoint (specified in the notificationUrl property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a `400 Bad Request` error.
+When creating the subscription, make sure that `includeResourceData` property is set to be true, and that you have specified the `encryptionCertificate` and `encryptionCertificateId` properties.  Otherwise, the encrypted content (in [Step 7](#step-7-receive-and-decrypt-change-notifications)) would not be returned in the change notifications.  See [Set up change notifications that include resource data](/graph/webhooks#notification-endpoint-validation) for details.
+
+Change notification subscriptions have consumption charges (see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses) for details).
+
+Below is an example to get all messages **per-user**. More details can be found on [Create subscription](/graph/api/subscription-post-subscriptions). As mentioned at the bottom of [Create subscription](/graph/api/subscription-post-subscriptions), before trying the example below, the subscription notification endpoint (specified in the notificationUrl property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+
+When designing the user experience, please take into account that, for most messages, it takes up to 4 seconds for Microsoft Graph to detect a change and send its change notification.
 
 ### Request
-
-```http
+```json
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
-
 {
-    "resource": "/chats/{id}/messages",
-    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
-    "changeType": "created,updated,deleted",
-    "includeResourceData": true,
-    "encryptionCertificate": "{base64encodedCertificate}",
-    "encryptionCertificateId": "{customId}",
-    "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-    "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/send/lifecycleNotifications",
-    "clientState": "{secretClientState}"
+  "changeType": "created,updated,deleted",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+  "resource": "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B",
+  "expirationDateTime": "2023-01-10T18:56:49.112603+00:00",
+  "clientState": "ClientSecret",
+  "includeResourceData": true,
+  "encryptionCertificate": "MMMM/sMMMsssMsMMMsMMsMMMs4sMMsM4ssMsMsMMMss4ssMMMssssssM4s4MMMsMMMMMMMMsMMMMMMMssMMsMMMMMMMMM4MMMMMsMMMMMMMssMMsMMMMMMMMMM4MMMssMsMMMMMMMs4MMMMsMM4sssMsM4MsMMMsMssMMsMsMMM4MMssMMMsMssMMsMsMMMsMMssMMMsMsMsMMssMsMMMMMMMsM4MMMss4ssMMMsMMssM4MsMsM4Ms4sM4MssMssMsMssMMMMMMsMMMMMsMMsssMMMMMMMMMssMMMMMMMMsMssMMMMM4ssMMs4sMsM/+MM4444s4M/+4sss4MMMMMsMsMsss/s/sMMsMss4sMsMMMss4M4Ms44M4M4MsssssM4M4MMMM444Mss4+s4M44MsssMMMs4Ms4MsMMsMMsMsMMM4sMMMMsssMssssMMss44MMs+MMssMsMsM4sMMs4MsMsM4ssM4MMMsMMs4sMMM4MsM+MsMss+sMsMM4sMM4sMMM4ss4ssssMMMsssM4MMssM+MsM/sMMss4MsMMM44+/MMMsMs4s44M++ssssssMMs/MsMMMMsMMssMsssssMMss4MMMsM4s4MssMsMssMsMMMMMMs4sMMssMsMMMM/ss4sMMsMMsMMMsMMMMMsssM4MMsMMMsMMMMMsssMMsMsMMssMsMMMsMMMMMMMsMsMsMMMsMMMMMMMsMsMMMMMsMMMMMMMsMMMMMsMsMsMsMMMMMMMsMMssMsMMMMsMsM4Ms+sMssMs4sMsMsssM4M4Ms4MMMMMMMMMssssMMMsssMsMMMMsMMMMMMs4sssM4MMMMMMsMMMMMMsMMsssssMMsMs4sM4MsMs4sM4Mss44ssM4ss44ssMsssM4sssMsM4MssMMsM44sMMsMMM4MM4MsMM4MMMMsM4MMM4MMMMMsMMssMsMsMMMsM4MsMsMsMM4sssMsMsMMMsMMMMMMMMMMM4s4sMM4Ms4sssssMsMsMM4sMsssMMssM4MMMMMMMMsMMMMMMMMsMM4MMssMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4M4MMMMMMsMMMMMMsMMsssssMMsMs4sM4MsMs4ssMMsM4MsM4MsMM4MMsMMM4sMMsMMMMMsMsMMMM4MMsssMM4MMMMsMM4sssMsMsMMMMMsMMM4MsMssMMMMsssMsMMMMssMsMMsMM4sMssM4MssMMsMM4sMssssM4ssMMsM44sMMsMMM4MM4MsMM4MMMMsM4MMM4MMMMMsMMssMsMsMMMsM4MsMsMsMM4sssMsMsMMMsMMMMMMMMMMM4s4sMM4Ms4ssss4MsMsMM4sMsssMMssM4MMMMMMMMsMMMMMMMMsMM4MMssMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4M4MM4MM4MsMsMMMMMsM4M4ssMMMssssMMMMMsM/s4MsMMMMsMMMM4MMs4MMMMMMsMsMsMMMM4MMMMsMsMssMMssMMsssMssM4ss4MssM4ssMMssssssMMsss4ss44sssMsMsMMMM4MssMsMMMMMMMMMMMsssMMsMMMMMM/sMM4sMssM4MssM4ssMMss4MsMsMsM44sM4MssMssMsMsM4MMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMM4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMs4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMs4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMM4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsMM4MM4MsMsMMMMsMMMsMMMMssMssss4s+MMM44MMMsMsMM4MM4MsMMMMMMMMMMsMMMMMMsMMMsssMsMMMMsMMsMMMssssssM4s4MMMsMMMMMMMMMMMM4MMMMssss444MsMsMMM44MM/444sMMMs4sMsMM4sMMMssMM4+M4sssMs+MsMMMMM/M/s4MMssM4ssss/4MMMsssMsMMss44sMsss4++ss/4s+s4sMs+4sM4MsM/4/MssMMMsMssMs4MsMss4MMsMsMssssssMMM4MsMM4s+MMM4M4sMMMMs4s4sMMMMsM444ssM4MMsssMMMMsM4MsMsMMM4sMsMs4sMsMMMMMs4MsMsMsMsM4sMs4sMMMMMsssMssMsMsMMss4MMM4sMsM4sMMssMMsM44MM4ss4s4Ms44sMMM4ssss4Ms4sMM4MMMMM4MMs+ss4MsMssMss4s==",
+  "encryptionCertificateId": "44M4444M4444M4M44MM4444MM4444MMMM44MM4M4"
 }
 ```
 ### Response:
-
-```
+```json
 HTTP/1.1 201 Created
 Content-type: application/json
-
 {
-    ...
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
+  "id": "88aa8a88-88a8-88a8-8888-88a8aa88a88a",
+  "resource": "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B",
+  "applicationId": "aa8aaaa8-8aa8-88a8-888a-aaaa8a8aa88a",
+  "changeType": "created,updated,deleted",
+  "clientState": "ClientSecret",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+  "notificationQueryOptions": null,
+  "lifecycleNotificationUrl": null,
+  "expirationDateTime": "2023-01-10T18:56:49.112603Z",
+  "creatorId": "8888a8a8-8a88-888a-88aa-8a888a88888a",
+  "includeResourceData": true,
+  "latestSupportedTlsVersion": "v1_2",
+  "encryptionCertificate": "MMMM/sMMMsssMsMMMsMMsMMMs4sMMsM4ssMsMsMMMss4ssMMMssssssM4s4MMMsMMMMMMMMsMMMMMMMssMMsMMMMMMMMM4MMMMMsMMMMMMMssMMsMMMMMMMMMM4MMMssMsMMMMMMMs4MMMMsMM4sssMsM4MsMMMsMssMMsMsMMM4MMssMMMsMssMMsMsMMMsMMssMMMsMsMsMMssMsMMMMMMMsM4MMMss4ssMMMsMMssM4MsMsM4Ms4sM4MssMssMsMssMMMMMMsMMMMMsMMsssMMMMMMMMMssMMMMMMMMsMssMMMMM4ssMMs4sMsM/+MM4444s4M/+4sss4MMMMMsMsMsss/s/sMMsMss4sMsMMMss4M4Ms44M4M4MsssssM4M4MMMM444Mss4+s4M44MsssMMMs4Ms4MsMMsMMsMsMMM4sMMMMsssMssssMMss44MMs+MMssMsMsM4sMMs4MsMsM4ssM4MMMsMMs4sMMM4MsM+MsMss+sMsMM4sMM4sMMM4ss4ssssMMMsssM4MMssM+MsM/sMMss4MsMMM44+/MMMsMs4s44M++ssssssMMs/MsMMMMsMMssMsssssMMss4MMMsM4s4MssMsMssMsMMMMMMs4sMMssMsMMMM/ss4sMMsMMsMMMsMMMMMsssM4MMsMMMsMMMMMsssMMsMsMMssMsMMMsMMMMMMMsMsMsMMMsMMMMMMMsMsMMMMMsMMMMMMMsMMMMMsMsMsMsMMMMMMMsMMssMsMMMMsMsM4Ms+sMssMs4sMsMsssM4M4Ms4MMMMMMMMMssssMMMsssMsMMMMsMMMMMMs4sssM4MMMMMMsMMMMMMsMMsssssMMsMs4sM4MsMs4sM4Mss44ssM4ss44ssMsssM4sssMsM4MssMMsM44sMMsMMM4MM4MsMM4MMMMsM4MMM4MMMMMsMMssMsMsMMMsM4MsMsMsMM4sssMsMsMMMsMMMMMMMMMMM4s4sMM4Ms4sssssMsMsMM4sMsssMMssM4MMMMMMMMsMMMMMMMMsMM4MMssMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4M4MMMMMMsMMMMMMsMMsssssMMsMs4sM4MsMs4ssMMsM4MsM4MsMM4MMsMMM4sMMsMMMMMsMsMMMM4MMsssMM4MMMMsMM4sssMsMsMMMMMsMMM4MsMssMMMMsssMsMMMMssMsMMsMM4sMssM4MssMMsMM4sMssssM4ssMMsM44sMMsMMM4MM4MsMM4MMMMsM4MMM4MMMMMsMMssMsMsMMMsM4MsMsMsMM4sssMsMsMMMsMMMMMMMMMMM4s4sMM4Ms4ssss4MsMsMM4sMsssMMssM4MMMMMMMMsMMMMMMMMsMM4MMssMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4M4MM4MM4MsMsMMMMMsM4M4ssMMMssssMMMMMsM/s4MsMMMMsMMMM4MMs4MMMMMMsMsMsMMMM4MMMMsMsMssMMssMMsssMssM4ss4MssM4ssMMssssssMMsss4ss44sssMsMsMMMM4MssMsMMMMMMMMMMMsssMMsMMMMMM/sMM4sMssM4MssM4ssMMss4MsMsMsM44sM4MssMssMsMsM4MMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMM4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMs4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMs4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMM4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsMM4MM4MsMsMMMMsMMMsMMMMssMssss4s+MMM44MMMsMsMM4MM4MsMMMMMMMMMMsMMMMMMsMMMsssMsMMMMsMMsMMMssssssM4s4MMMsMMMMMMMMMMMM4MMMMssss444MsMsMMM44MM/444sMMMs4sMsMM4sMMMssMM4+M4sssMs+MsMMMMM/M/s4MMssM4ssss/4MMMsssMsMMss44sMsss4++ss/4s+s4sMs+4sM4MsM/4/MssMMMsMssMs4MsMss4MMsMsMssssssMMM4MsMM4s+MMM4M4sMMMMs4s4sMMMMsM444ssM4MMsssMMMMsM4MsMsMMM4sMsMs4sMsMMMMMs4MsMsMsMsM4sMs4sMMMMMsssMssMsMsMMss4MMM4sMsM4sMMssMMsM44MM4ss4s4Ms44sMMM4ssss4Ms4sMM4MMMMM4MMs+ss4MsMssMss4s==",
+  "encryptionCertificateId": "44M4444M4444M4M44MM4444MM4444MMMM44MM4M4",
+  "notificationUrlAppId": null
 }
 ```
-When designing the user experience, please take into account that, for most messages, it takes up to 3 seconds (TODO: to be confirmed after getting access to Jarvis charts) for Microsoft Graph to detect a change and send its change notification.
 
-## Step 8: Renew change notifications subscriptions
+## Step 8: Renew change notifications subscriptions (TODO: Updated up to here, but not below)
 
 For security reasons, subscriptions for chatMessage expire in 60 minutes, as described on [subscription resource type](/graph/api/resources/subscription?#maximum-length-of-subscription-per-resource-type). We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions. Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their `expirationDateTime`, as described on [Update subscription](/graph/api/subscription-update?#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications. Below is an example.
 
