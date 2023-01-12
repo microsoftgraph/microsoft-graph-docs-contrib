@@ -68,7 +68,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.expirationPattern"
   },
   "id": "String (identifier)",
-  "modifiedDateTime": "String (timestamp)"
+  "modifiedDateTime": "String (timestamp)",
   "requestorSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"
   },
