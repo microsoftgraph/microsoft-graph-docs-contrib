@@ -1,6 +1,6 @@
 ---
-title: "Use the Microsoft Search API to search qnas"
-description: "Find out how to use the Microsoft Search API in Microsoft Graph to search qnas."
+title: "Use the Microsoft Search API to search questions and answers"
+description: "Find out how to use the Microsoft Search API in Microsoft Graph to search Q&As."
 author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -8,13 +8,13 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search questions and answers
 
-You can use the Microsoft Search API in Microsoft Graph to search qnas. QnAs represents questions and answers ([Q&As](../api-reference/beta/resources/search-qna.md)) in Microsoft Search. Administrators can create qnas in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
+You can use the Microsoft Search API in Microsoft Graph to search questions and answers (Q&As). The [**qna**](/graph/api/resources/search-qna) resource represents Q&As in Microsoft Search. Administrators can create Q&As in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-After you create your QnAs, you can use the Microsoft Graph Search API to search for them. To do this, specify `qna` as the value in the **entityTypes** property in your search request body and then provide a relevant query string, as shown in the following example.
+After you create your Q&As, you can use the Microsoft Graph Search API to search for them. To do this, specify `qna` as the value in the **entityTypes** property in your search request body and then provide a relevant query string, as shown in the following example.
 
-## Example: Search qnas
+## Example: Search Q&As
 
 ### Request
 
@@ -74,9 +74,9 @@ Content-type: application/json
 
 ## Known issues
 
-- Sorting, aggregation, and pagination are not supported for [qna](../api-reference/beta/resources/search-qna.md) searches.
+- Sorting, aggregation, and pagination are not supported for [qna]((/graph/api/resources/search-qna) searches.
 - Combination search with other entity types is not supported. 
-- Markdown is currently not supported for the qna description. Instead, use plain text.
+- Markdown is currently not supported for the **qna** description. Instead, use plain text.
 
 ## Next steps
 
