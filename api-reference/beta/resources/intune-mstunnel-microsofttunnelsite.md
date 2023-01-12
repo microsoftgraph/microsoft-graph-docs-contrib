@@ -1,7 +1,7 @@
 ---
 title: "microsoftTunnelSite resource type"
 description: "Entity that represents a Microsoft Tunnel site"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -40,7 +40,6 @@ Entity that represents a Microsoft Tunnel site
 |upgradeAutomatically|Boolean|The site's automatic upgrade setting. True for automatic upgrades, false for manual control|
 |upgradeAvailable|Boolean|The site provides the state of when an upgrade is available|
 |internalNetworkProbeUrl|String|The site's Internal Network Access Probe URL|
-|enableCertificatePinning|Boolean|When set to true, certificate pinning will be enforced on connections between the Microsoft Tunnel server and Microsoft Tunnel clients. When set to false, certificate pinning will be disabled.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance|
 
 ## Relationships
@@ -70,14 +69,8 @@ Here is a JSON representation of the resource.
   "upgradeAutomatically": true,
   "upgradeAvailable": true,
   "internalNetworkProbeUrl": "String",
-  "enableCertificatePinning": true,
   "roleScopeTagIds": [
     "String"
   ]
 }
 ```
-
-
-
-
-

@@ -539,10 +539,12 @@ items:
             href: search-concept-custom-types.md
           - name: Search people
             href: search-concept-person.md
-          - name: Search bookmarks
-            href: search-concept-bookmark.md
           - name: Search acronyms
             href: search-concept-acronym.md
+          - name: Search bookmarks
+            href: search-concept-bookmark.md
+          - name: Search qnas
+            href: search-concept-qna.md
           - name: Search with application permissions
             href: search-concept-searchall.md
           - name: Manage admin search answers (preview)
