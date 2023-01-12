@@ -23,6 +23,9 @@ The business scenarios API is designed to allow Microsoft Graph services to exte
 
 Currently, [Planner](businessscenario-planner-overview.md) has extended the API. The API supports custom scenario data for Planner in the [businessScenarioTask](businessscenariotask.md) entity.
 
+> [!Note]
+> Have a scenario that requires bringing in custom data as entities to another Microsoft 365 service? [Suggest the feature or vote for existing feature requests](https://developer.microsoft.com/en-us/graph/support).
+
 ## Creating a business scenario
 
 Business scenarios can be created by applications using the delegated permission `BusinessScenarioConfig.ReadWrite.OwnedBy`. Creating a business scenario requires specifying a display name and a unique name. The unique name should be in the reverse DNS format to prevent conflict between independent scenarios. The reverse DNS format takes the domain name the scenario creator owns and reverses it. For example, if a developer who owns `apps.contoso.com` creates a scenario, the unique name of the scenario should start with `com.contoso.apps`. Then further segments can be added to differentiate scenarios or groups of scenarios; for example, `com.contoso.apps.customerSupport.ticketManagement`. The unique name of the scenario must be distinct from every other scenario deployed in a tenant.
