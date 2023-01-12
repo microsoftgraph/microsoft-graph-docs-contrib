@@ -1521,7 +1521,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannersssignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
