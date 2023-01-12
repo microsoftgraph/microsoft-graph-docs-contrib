@@ -51,7 +51,7 @@ Each service supported through business scenarios provides access to data within
 
 Applications that own a business scenario can delete the scenario if they have the `BusinessScenarioConfig.ReadWrite.OwnedBy` permission. Deleting the scenario removes all the data associated with the scenario as well.
 
-For more information, see [Delete businessScenario](../api/solutionsroot-delete-businessscenarios.md).
+For more information, see [Delete businessScenario](../api/businessscenario-delete.md).
 
 ## Common use cases
 
