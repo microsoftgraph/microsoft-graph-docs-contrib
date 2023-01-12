@@ -2,7 +2,7 @@
 title: "searchResponse resource type"
 description: "Represents results from a search query, and the terms used for the query. "
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

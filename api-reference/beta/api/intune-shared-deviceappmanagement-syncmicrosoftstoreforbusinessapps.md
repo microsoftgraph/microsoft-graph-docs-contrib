@@ -1,7 +1,7 @@
 ---
 title: "syncMicrosoftStoreForBusinessApps action"
 description: "Syncs Intune account with Microsoft Store For Business"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -60,14 +60,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-
-
-
-
-

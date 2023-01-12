@@ -1,7 +1,7 @@
 ---
 title: "remoteAction enum type"
 description: "Remote actions Intune supports."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -48,8 +48,4 @@ Remote actions Intune supports.
 |disable|25|Indicate user initiates an action to disable the device.|
 |reenable|26|Indicate user initiates an action to reenable the device.|
 |moveDeviceToOrganizationalUnit|27|Indicate user initiates an action to move the device to a new organizational unit.|
-
-
-
-
-
+|initiateMobileDeviceManagementKeyRecovery|28|Add device action of InitiateMobileDeviceManagementKeyRecovery|

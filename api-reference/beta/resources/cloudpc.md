@@ -40,6 +40,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
+|[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
 
 ## Properties
 
@@ -61,6 +62,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
+|partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
@@ -74,7 +76,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |Member|Description|
 |:---|:---|
 |notAvailable|The Cloud PC is not provisioned, or in a state where encryption is not available.|
-|notEncryped|The Cloud PC should be encrypted, but the encryption is not done yet (reserved, should not happen).|
+|notEncrypted|The Cloud PC should be encrypted, but the encryption is not done yet (reserved, should not happen).|
 |encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using platform managed key. This is the default value if the customer-managed key is not enabled.|
 |encryptedUsingCustomerManagedKey|The Cloud PC is encrypted using the customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
@@ -122,6 +124,7 @@ The following is a JSON representation of the resource.
   "managedDeviceName": "String",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
+  "partnerAgentInstallResults": "String",
   "onPremisesConnectionName": "String",
   "servicePlanId": "String",
   "servicePlanType": "String",

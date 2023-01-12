@@ -36,7 +36,8 @@ const plannerTaskDetails = {
       isChecked: true,
     },
     'a93c93c5-10a6-4167-9551-8bafa09967a7': null
-  }
+  },
+  description: 'Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links'
 };
 
 await client.api('/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details')

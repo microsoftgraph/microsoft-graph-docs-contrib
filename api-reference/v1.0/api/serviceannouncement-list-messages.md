@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceupdatemessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceupdatemessage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-serviceupdatemessage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -133,7 +129,7 @@ Content-Type: application/json
         }
       ],
       "body": {
-        "contentType": "Text",
+        "contentType": "Html",
         "content": "Updated January 07, 2021: Based on learnings from our early rings, we have made the decision to make additional changes to the code before we proceed with the rollout. We will update the Message center post once we re-start the rollout......"
       },
       "viewPoint": null

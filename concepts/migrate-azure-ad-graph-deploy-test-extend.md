@@ -4,6 +4,7 @@ description: "Describes how to migrate Azure Active Directory (Azure AD) Graph a
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Deploy, test, and extend

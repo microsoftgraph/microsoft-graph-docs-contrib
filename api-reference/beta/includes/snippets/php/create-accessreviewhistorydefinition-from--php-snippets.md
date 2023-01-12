@@ -19,34 +19,10 @@ $requestBody->setAccessReviewHistoryDecisionFilter(new AccessReviewHistoryDecisi
 $requestBody->setAccessReviewHistoryDecisionFilter(new AccessReviewHistoryDecisionFilter('notnotified'));
 ]);
 
-$scheduleSettings = new AccessReviewHistoryScheduleSettings();
-$scheduleSettings->setReportRange('P1M');
+$requestBody->setReviewHistoryPeriodStartDateTime(new DateTime('2021-01-01T00:00:00Z'));
 
-$scheduleSettingsRecurrence = new PatternedRecurrence();
-$scheduleSettingsRecurrencePattern = new RecurrencePattern();
-$scheduleSettingsRecurrencePattern->setType(new RecurrencePatternType('monthly'));
+$requestBody->setReviewHistoryPeriodEndDateTime(new DateTime('2021-04-30T23:59:59Z'));
 
-$scheduleSettingsRecurrencePattern->setInterval(1);
-
-
-$scheduleSettingsRecurrence->setPattern($scheduleSettingsRecurrencePattern);
-$scheduleSettingsRecurrenceRange = new RecurrenceRange();
-$scheduleSettingsRecurrenceRange->setType(new RecurrenceRangeType('noend'));
-
-$scheduleSettingsRecurrenceRange->setStartDate('2018-08-03T21:02:30.667Z');
-
-$additionalData = [
-'count' => 0,
-];
-$scheduleSettingsRecurrenceRange->setAdditionalData($additionalData);
-
-
-
-$scheduleSettingsRecurrence->setRange($scheduleSettingsRecurrenceRange);
-
-$scheduleSettings->setRecurrence($scheduleSettingsRecurrence);
-
-$requestBody->setScheduleSettings($scheduleSettings);
 $scopesAccessReviewScope1 = new AccessReviewScope();
 $scopesAccessReviewScope1->set@odatatype('#microsoft.graph.accessReviewQueryScope');
 

@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -142,7 +142,7 @@ The following table shows the properties that are required when you create the [
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
 |passwordBlockKeyguard|Boolean|Indicates whether or not the keyguard is disabled.|
-|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 7 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`, `face`, `iris`, `biometrics`.|
+|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 11 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`, `face`, `iris`, `biometrics`.|
 |passwordExpirationDays|Int32|Indicates the amount of time that a password can be set for before it expires and a new password will be required. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinimumLetterCharacters|Int32|Indicates the minimum number of letter characters required for device password. Valid values 1 to 16|
@@ -745,8 +745,3 @@ Content-Length: 10262
   "workProfilePasswordRequireUnlock": "daily"
 }
 ```
-
-
-
-
-

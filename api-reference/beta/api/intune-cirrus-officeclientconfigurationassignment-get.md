@@ -2,7 +2,7 @@
 title: "Get officeClientConfigurationAssignment"
 description: "Read properties and relationships of the officeClientConfigurationAssignment object."
 localization_priority: Normal
-author: "dougeby"
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -75,8 +75,3 @@ Content-Length: 250
   }
 }
 ```
-
-
-
-
-
