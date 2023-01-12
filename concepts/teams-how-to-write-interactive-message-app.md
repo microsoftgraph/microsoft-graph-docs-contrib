@@ -73,7 +73,7 @@ Content-Type: application/json
     ]
 }
 ```
-### Respose
+### Response
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -219,26 +219,30 @@ Content-type: application/json
 
 Messages can be retrieved using the `GET` HTTP method on the [chatMessages](/graph/api/resources/chatmessage) resource.
 
-To minimize costs for you and to increase response time for your application, you should avoid reading the same message multiple times. Thus, retrieving messages using the `GET` HTTP method described in this step should only be used initially as a one-time export or when you need to restore your system during rare occasions. Otherwise, you should rely on your cache (see [Step 5](#step-5-cache-messages) below) and change notifications (see [Step 6](#step-6-subscribe-to-change-notifications) below).
+To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times.  Thus, retrieving messages using the `GET` HTTP method described in this step should only be used initially as a one-time export or when the change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notifications-subscriptions) below) have expired and you want to resync the messages again.  Otherwise, you should rely on your cache (see [Step 5](#step-5-cache-messages) below) and change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notifications-subscriptions) below).
 
 Microsoft Graph offers several ways to retrieve chat messages:
 
 - [per-chat](/graph/api/chat-list-messages):
   - `GET /chats/{chat-id}/messages`
-- [per-user, across all chats](/graph/api/chatmessage-get):
-  - `GET /users/{user-id | user-principal-name}/chats/getAllMessages`
-- [per-user, for a given chat](/graph/api/chatmessage-get):
+- [per-user, per-chat](/graph/api/chatmessage-get):
   - `GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages`
+- [per-user, getAllMessages across all chats](/graph/api/chatmessage-get):
+  - `GET /users/{user-id | user-principal-name}/chats/getAllMessages`
 
-If you want to show all of a user's chats, per-user is the place to start. If you want to track only specific chats, per-chat may be a better option, but you would need to implement the **access control logic** yourself. That is, you would need to check whether the users are [members](/graph/api/chat-list-members) of the chats and let only members access the chats to which they belong.
+If you want to track only specific chats, **per-chat** would be an option, but you would need to implement the **access control logic** yourself.  That is, you would need to check whether the users are [members](/graph/api/chat-list-members) of the chats and show and hide the chats as they join or leave the chats accordingly. Alternatively, to avoid implementing the access control logic yourself, you can use either one of the **per-user** methods.  With the **“per-user, getAllMessages across all chats”** method, it has consumption charges (see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses) for details) and the API calls should be made from the backend server with “[Application](/graph/auth/auth-concepts)” permissions.  With the **“per-user, per-chat”** method, however, the API calls can be made directly from the UI with “[Delegated](/graph/auth/auth-concepts)” permissions, as depicted in the architecture in [Step 1](#step-1-design-and-setup-the-architecture) above.
 
-Below is an example of **per-chat**. By default, the returned list of messages is sorted by lastModifiedDateTime. However, for this example, sorting by [createdDateTime](/graph/api/chat-list-messages?#example-3-list-chat-messages-sorted-by-creation-date) is more appropriate. The sorting is specified in the `orderBy` query parameter in the request.
+Different methods have different **throttling limits**, as listed on [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits).  For example, for “per-chat” and “per-user, per-chat” methods, each has a limit of 30 requests per second (rps) per app per tenant.  If a tenant of your app has 50 users and each user has 15 chats on average, and you want to retrieve messages for all users and all chats at the start of your system, then you would need 50 x 15 = 750 requests and you should spread out the request over 750 / 30 = 25 seconds.
+
+Below is an example of **per-chat**. By default, the returned list of messages is sorted by `lastModifiedDateTime`. However, for this example, sorting by [createdDateTime](/graph/api/chat-list-messages?#example-3-list-chat-messages-sorted-by-creation-date) is more appropriate. The sorting is specified in the `orderBy` query parameter in the request.
+
+Typical interactive messaging apps display only the most recent messages by default, and users can then load older messages by paging through scrolling on clicking.  To retrieve only the messages that you need, all three methods above support filters (e.g. $top=10, $filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z).  You should not retrieve and persist messages older than what’s allowed per your organizational retention policies.
 
 ### Request
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime desc
+```http
+GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages?$top=2&$filter=lastModifiedDateTime gt 2021-03-17T07:13:28.000z&$orderBy=createdDateTime desc
 ```
-### Response
+### Response (TODO: Updated up to here, but not below)
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
