@@ -6,13 +6,13 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search qnas
+# Use the Microsoft Search API to search questions and answers
 
-You can use the Microsoft Search API in Microsoft Graph to search qnas. Administrators can create qnas in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
+You can use the Microsoft Search API in Microsoft Graph to search qnas. QnAs represents questions and answers ([Q&As](../api-reference/beta/resources/search-qna.md)) in Microsoft Search. Administrators can create qnas in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-Once you create your QnAs, you can use the Graph Search API to search for them. To do this, specify `qna` as the value in the **entityTypes** property in your search request body and then provide a relevant query string. See below for an example.
+After you create your QnAs, you can use the Microsoft Graph Search API to search for them. To do this, specify `qna` as the value in the **entityTypes** property in your search request body and then provide a relevant query string, as shown in the following example.
 
 ## Example: Search qnas
 
@@ -74,7 +74,7 @@ Content-type: application/json
 
 ## Known issues
 
-- Sorting, aggregation, and pagination are not supported for qna searches.
+- Sorting, aggregation, and pagination are not supported for [qna](../api-reference/beta/resources/search-qna.md) searches.
 - Combination search with other entity types is not supported. 
 - Markdown is currently not supported for the qna description. Instead, use plain text.
 
