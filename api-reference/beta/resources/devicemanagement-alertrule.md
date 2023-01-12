@@ -19,6 +19,8 @@ When the threshold of an **alertRule** is reached, an [alertRecord](devicemanage
 
 For more information, see the [monitoring](devicemanagement-monitoring.md) resource.
 
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List alertRules](../api/devicemanagement-alertrule-list.md)|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md) collection|Get a list of the [alertRule](../resources/devicemanagement-alertrule.md) objects and their properties.|

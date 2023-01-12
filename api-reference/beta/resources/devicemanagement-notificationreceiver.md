@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Represents the locale and contact information provided by a user in a [notification channel](../resources/devicemanagement-notificationchannel.md).
 
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
+
 ## Properties
 
 |Property|Type|Description|
