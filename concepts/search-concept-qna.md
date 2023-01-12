@@ -74,9 +74,9 @@ Content-type: application/json
 
 ## Known issues
 
-- Sorting, aggregation and pagination are not supported for qna searches.
+- Sorting, aggregation, and pagination are not supported for qna searches.
 - Combination search with other entity types is not supported. 
-- Markdown is currently not supported for the qna description. Please use plain text.
+- Markdown is currently not supported for the qna description. Instead, use plain text.
 
 ## Next steps
 
