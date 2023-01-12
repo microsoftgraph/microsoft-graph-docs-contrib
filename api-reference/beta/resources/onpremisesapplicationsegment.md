@@ -37,14 +37,13 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.onPremisesApplicationSegment",
-  "externalUrl": "String",
-  "internalUrl": "String",
   "alternateUrl": "String",
-  "corsConfigurations": [
+    "corsConfigurations": [
     {
       "@odata.type": "microsoft.graph.corsConfiguration"
     }
-  ]
+  ],
+  "externalUrl": "String",
+  "internalUrl": "String",
 }
 ```
