@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "conceptualPageType"
+ms.date: 11/11/2022
 ---
 
 # Working with the Azure AD entitlement management API

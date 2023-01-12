@@ -71,7 +71,7 @@ Here's a simple to-do list with the first item completed.
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
 
-Note that the `<p>` tags above each include a `data-id` attribute. This makes it easier to update the check box note tags. For example, the following request marks the spring planting to-do item as completed.
+For example, the following request marks the second to-do item as completed.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
@@ -81,7 +81,7 @@ Authorization: Bearer {token}
 
 [
    {
-    'target':'#spring',
+    'target':'p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}',
     'action':'replace',
     'content':'<p data-tag="to-do:completed"  data-id="spring">Plant peas and spinach</p>'
   }
