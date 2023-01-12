@@ -138,7 +138,7 @@ Content-Type: application/json
     "value": [
      {   
         "id": "6bb70a30-124a-4666-b9b8-6ae178d4f791" 
-    }
+        }
     ],
 }
 ```
