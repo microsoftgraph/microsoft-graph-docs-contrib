@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ipSegmentConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [ipSegmentConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/ipSegmentConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [ipSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/ipSegmentConfiguration?view=graph-rest-beta) resource type.",
           "Target": "ipSegmentConfiguration"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "segmentsConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the `segmentsConfiguration` property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Description": "Added the `segmentsConfiguration` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
           "Target": "onPremisesPublishing"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "segmentConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [segmentConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/segmentConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [segmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/segmentConfiguration?view=graph-rest-beta) resource type.",
           "Target": "segmentConfiguration"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webSegmentConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [webSegmentConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/webSegmentConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [webSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/webSegmentConfiguration?view=graph-rest-beta) resource type.",
           "Target": "webSegmentConfiguration"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationSegment",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationSegment](https://docs.microsoft.com/en-us/graph/api/resources/applicationSegment?view=graph-rest-beta) resource",
+          "Description": "Added the [applicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/applicationSegment?view=graph-rest-beta) resource",
           "Target": "applicationSegment"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "corsConfiguration_v2",
           "ChangeType": "Addition",
-          "Description": "Added the [corsConfiguration_v2](https://docs.microsoft.com/en-us/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource",
+          "Description": "Added the [corsConfiguration_v2](https://learn.microsoft.com/en-us/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource",
           "Target": "corsConfiguration_v2"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ipApplicationSegment",
           "ChangeType": "Addition",
-          "Description": "Added the [ipApplicationSegment](https://docs.microsoft.com/en-us/graph/api/resources/ipApplicationSegment?view=graph-rest-beta) resource",
+          "Description": "Added the [ipApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/ipApplicationSegment?view=graph-rest-beta) resource",
           "Target": "ipApplicationSegment"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isDefaultAccessEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the `isDefaultAccessEnabled` property to the [onPremisesPublishingProfile](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesPublishingProfile?view=graph-rest-beta) resource.",
+          "Description": "Added the `isDefaultAccessEnabled` property to the [onPremisesPublishingProfile](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishingProfile?view=graph-rest-beta) resource.",
           "Target": "onPremisesPublishingProfile"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webApplicationSegment",
           "ChangeType": "Addition",
-          "Description": "Added the [webApplicationSegment](https://docs.microsoft.com/en-us/graph/api/resources/webApplicationSegment?view=graph-rest-beta) resource",
+          "Description": "Added the [webApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationSegment?view=graph-rest-beta) resource",
           "Target": "webApplicationSegment"
         }
       ],
@@ -79,7 +79,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-10-21T22:34:51.3287778Z",
-      "WorkloadArea": "Application",
+      "WorkloadArea": "Applications",
       "SubArea": ""
     },
     {
