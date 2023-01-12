@@ -15,14 +15,14 @@ In this article, you will learn how to use the Microsoft Graph APIs to create an
 
 ## APIs to use for installing applications in a Microsoft Teams team
 
-Before trying to attach any application into an assignment you need to make sure that the required app is installed for your team. You can get installed apps information by using the following APIs:
+Before you can attach any application into an assignment, you need to make sure that the required app is installed in your team. You can use the following APIs to retrieve information about the installed apps in a team:
 
-- [List apps in team](/graph/api/team-list-installedapps): Retrieve a list of apps installed in the specified team.
-- [Get specific app installed in team](/graph/api/team-get-installedapps): Retrieve an app information already installed in the specified team.
+- [List apps in a team](/graph/api/team-list-installedapps): Retrieve a list of apps installed in the specified team.
+- [Get a specific app installed in a team](/graph/api/team-get-installedapps): Retrieve an app information already installed in the specified team.
 
-You must look for the required app in the [apps catalog](/graph/api/appcatalogs-list-teamsapps), in case it is not installed yet in the specific team use the following API to install the application for your Microsoft Teams team:
+You must look for the required app in the [app catalog](/graph/api/appcatalogs-list-teamsapps); in case it is not installed yet in the specific team, you can use the following API to install the application in your team:
 
-- [Add app to team](/graph/api/team-post-installedapps): Install an app to the specified team.
+- [Add an app to a team](/graph/api/team-post-installedapps): Install an app to the specified team.
 
 ## Create the new assignment
 
