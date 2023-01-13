@@ -20,7 +20,7 @@ Inherits from [authenticationEventHandlerResult](../resources/authenticationeven
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|calloutDateTime|DateTimeOffset|Date and time (UTC) the API transaction was initiated. Example: midnight on Jan 1, 2014 is reported as 2014-01-01T00:00:00Z.|
+|calloutDateTime|DateTimeOffset|When the API transaction was initiated. The date and time information uses ISO 8601 format and is always in UTC time. Example: midnight on Jan 1, 2014, is reported as `2014-01-01T00:00:00Z`.|
 |customExtensionId|String|Identifier of the custom extension that was called.|
 |errorCode|Int32|Error code that was returned when the API transaction failed.|
 |httpStatus|Int32|The HTTP status code that was returned by the target API endpoint.|
