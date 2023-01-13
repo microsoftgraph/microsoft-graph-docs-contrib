@@ -48,9 +48,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
-  "id": "String (Identifier)",
   "displayName": "String",
   "createdDateTime": "String",
+  "id": "String (Identifier)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"}
 }
 ```
