@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "containerFilter",
           "ChangeType": "Addition",
-          "Description": "Added the [containerFilter](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-containerFilter?view=graph-rest-beta) resource type.",
+          "Description": "Added the [containerFilter](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-containerFilter?view=graph-rest-beta) resource type.",
           "Target": "containerFilter"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "groupFilter",
           "ChangeType": "Addition",
-          "Description": "Added the [groupFilter](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-groupFilter?view=graph-rest-beta) resource type.",
+          "Description": "Added the [groupFilter](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-groupFilter?view=graph-rest-beta) resource type.",
           "Target": "groupFilter"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "containerFilter",
           "ChangeType": "Addition",
-          "Description": "Added the `containerFilter` property to the [synchronizationRule](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
+          "Description": "Added the `containerFilter` property to the [synchronizationRule](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
           "Target": "synchronizationRule"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "groupFilter",
           "ChangeType": "Addition",
-          "Description": "Added the `groupFilter` property to the [synchronizationRule](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
+          "Description": "Added the `groupFilter` property to the [synchronizationRule](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
           "Target": "synchronizationRule"
         }
       ],
