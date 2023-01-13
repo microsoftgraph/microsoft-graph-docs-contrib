@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Update assignment and grade data
 
-Education institutions have custom tools to update assignment and grade data. For example, a user might need to create an assignment or update a grade (outcome) with a custom tool for students to submit them. You can use education APIs in Microsoft Graph to update assignments and grades. 
+Education institutions have custom tools to update assignment and grade data. For example, a teacher might need to make an update to an assignment before students submit them, or make a change to a grade (outcome) by using a custom tool. 
 
 Before you can update data, you must get the relevant class and member information.
 
