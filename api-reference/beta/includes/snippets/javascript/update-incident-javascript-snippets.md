@@ -13,7 +13,7 @@ const client = Client.init(options);
 const incident = {
     classification: 'TruePositive',
     determination: 'MultiStagedAttack',
-    tags: [
+    customTags: [
       'Demo'
     ]
 };

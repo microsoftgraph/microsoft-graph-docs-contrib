@@ -202,8 +202,8 @@ This resource supports:
 |schools|String collection|A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`.|
 |securityIdentifier| String | Security identifier (SID) of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |showInAddressList|Boolean|**Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
-|skills|String collection|A list for the user to enumerate their skills. <br><br>Returned only on `$select`.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset. <br><br>Returned only on `$select`.|
+|skills|String collection|A list for the user to enumerate their skills. <br><br>Returned only on `$select`.|
 |state|String|The state or province in the user's address. Maximum length is 128 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |streetAddress|String|The street address of the user's place of business. Maximum length is 1024 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |surname|String|The user's surname (family name or last name). Maximum length is 64 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
@@ -268,14 +268,14 @@ For example: Cameron is administrator of a directory for an elementary school in
 
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
-|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
+|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. Supports `$expand`. |
 |authentication|[authentication](../resources/authentication.md)| The authentication methods that are supported for the user.|
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
-|calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
 |calendars|[calendar](calendar.md) collection|The user's calendars. Read-only. Nullable.|
+|calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
 |contactFolders|[contactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
 |contacts|[contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that were created by the user. Read-only. Nullable.|
