@@ -87,6 +87,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | SharePoint                        | ✔                                | ✔                                          |
 | Teams                             | ✔                                | ✔                                          |
 | Users                             | ✔                                | ✔                                          |
+| Microsoft To Do                   | ✔                                | ➖                                         |
 
 For more information about the availability of Microsoft 365 usage reports in national clouds, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report).
 
