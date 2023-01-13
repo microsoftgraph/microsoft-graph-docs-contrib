@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 > [!Note]
 > Currently the business scenario API supports only Planner. The API allows app developers to define a [configuration for a Planner plan](/graph/api/resources/plannerplanconfiguration?view=graph-rest-beta&preserve-view=true) to host scenario-specific tasks, and bring in custom data in each [scenario-specific task](/graph/api/resources/businessscenariotask?view=graph-rest-beta&preserve-view=true). 
 >
-> Have a scenario that requires bringing in custom data as entities to another Microsoft 365 service? [Suggest the feature or vote for existing feature requests](https://developer.microsoft.com/en-us/graph/support).
+> Do you have a scenario that requires bringing in custom data as entities to another Microsoft 365 service? [Suggest the feature or vote for existing feature requests](https://developer.microsoft.com/en-us/graph/support).
 
 ## Methods
 
