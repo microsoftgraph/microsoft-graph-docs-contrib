@@ -1,6 +1,6 @@
 ---
 title: "Get links to assignments and submissions"
-description: "Use Microsoft Graph APIs to get a deep link to the assignments for use in custom tools."
+description: "Use Microsoft Graph APIs to get deep links to assignments for use in custom tools."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Get links to assignments and submissions
 
-Education institutions have custom tools for students and users who need to get a deep link to the assignment, so students can directly view more details or complete a given assignment. You can use education APIs in Microsoft Graph to get links to assignments and submissions. Before you can get links to assignments and submissions, you must get the relevant class and member information.
+Education institutions have custom tools for students and users to view details about or complete assignments. You can use education APIs in Microsoft Graph to get deep links to assignments and submissions for use in custom tools. Before you can get links to assignments and submissions, you must get the relevant class and member information.
 
  > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
@@ -26,7 +26,7 @@ After you get the relevant class and member information, you can get the assignm
 
 The [assignment webUrl property](/graph/api/resources/educationassignment#properties) returns the authenticated deep link to selected assignments. If the user is within Teams, the assignments will open directly with this deep link URL.
 
-The following example describes how to get the deep link URL for the given assignment.
+The following example describes how to get the deep link URL for a given assignment.
 
 #### Request
 
@@ -79,14 +79,14 @@ Content-length: 279
     }
 }
 ```
-The webUrl property in the above response provides the deep link URL for the given assignment.
+The **webUrl** property in the response provides the deep link URL for the assignment.
 
 
 ## Get a deep link for the submission
 
-The [submission webUrl property](/graph/api/resources/educationsubmission#properties) returns an authenticated deep link to a submission. Currently, the `webUrl` property for submission is only available in beta version.
+The [submission webUrl property](/graph/api/resources/educationsubmission#properties) returns an authenticated deep link to a submission. Currently, the **webUrl** property for submissions is only available in the beta endpoing.
 
-The following example describes how to get the deep link URL for the given submission.
+The following example describes how to get the deep link URL for a given submission.
 
 #### Request
 
@@ -138,8 +138,8 @@ Content-type: application/json
     }
 }
 ```
-The webUrl property in the above response provides the deep link URL for the given submission.
+The **webUrl** property in the response provides the deep link URL for the submission.
 
 ## Permissions
 
-Assignments APIs support both delegated and application permissions. We recommend using application permissions because that permits your app only to retrieve data.
+The assignments APIs support both delegated and application permissions. We recommend using application permissions because that permits your app only to retrieve data.
