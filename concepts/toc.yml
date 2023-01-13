@@ -326,11 +326,16 @@ items:
               - name: Get assignment and grade data
                 href: msgraph-customer-assignmentgradedatafortool.md
               - name: How to download all resources from a set of assignments
-                href: msgraph-customer-build-tool-to-download-all-the-resources-from-assignment.md
+                href: msgraph-tool-to-download-all-resources.md
               - name: Integrate your Teams app with education assignments
                 href: msgraph-customer-teamsapps.md
               - name: Share assignments with an embedded Teams application
-                href: msgraph-customer-create-assignment-with-teamsapp-content-for-application.md
+                href: msgraph-create-assignmentwithteamsapp-content.md
+              - name: Get links to assignments and submissions
+                href: msgraph-assignment-deeplink-for-tool.md
+              - name: Update assignment and grade data
+                href: msgraph-update-assignment-gradefortool.md
+                
       - name: Extensions
         items:
           - name: Overview

@@ -22,7 +22,9 @@ All Teams for education users have access to assignment and grade functionality.
 You can read and update data and integrate your app with assignments and grades in multiple ways. The following are some key scenarios that you can apply, in one or more combinations, to integrate with assignments and grades.
 
 - [Get data from assignments and grades](/graph/msgraph-customer-assignmentgradedatafortool)
+- [Get links to assignments and submissions](/graph/msgraph-assignment-deeplink-for-tool)
 - [Integrate your Teams app with education assignments](/graph/msgraph-customer-teamsapps.md)
-- [Share assignments with an embedded Teams application](/graph/msgraph-customer-create-assignment-with-teamsapp-content-for-application.md)
-- [How to download all resources from a set of assignments](/graph/msgraph-customer-build-tool-to-download-all-the-resources-from-assignment.md).
-- [I have a web app that needs to create assignments with links back to my website](/microsoftteams/platform/concepts/build-and-test/share-to-teams-from-web-apps).
+- [Update assignment and grade data](/graph/msgraph-update-assignment-gradefortool)
+- [Share assignments with an embedded Teams application](/graph/msgraph-create-assignmentwithteamsapp-content)
+- [How to download all resources from a set of assignments](/graph/msgraph-tool-to-download-all-resources)
+- [I have a web app that needs to create assignments with links back to my website](/microsoftteams/platform/concepts/build-and-test/share-to-teams-from-web-apps)
