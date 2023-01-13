@@ -18,8 +18,7 @@ Indicates the handler result of this authentication event.
 This is an abstract type.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
