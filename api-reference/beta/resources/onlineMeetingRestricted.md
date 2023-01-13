@@ -19,8 +19,8 @@ Specified restricted experience reasons for a participant.
 
 | Property        | Type    | Description|
 |:----------------|:--------|:----------|
-| videoDisabled     | [onlineMeetingVideoDisabledReason](#onlineMeetingVideoDisabledReason-values) | Specifies the reason if participant's video is disabled. |
-| contentSharingDisabled     | [onlineMeetingContentSharingDisabledreason](#onlineMeetingContentSharingDisabledreason-values) | Specifies the reason if shared content from the participant is disabled. |
+| videoDisabled     | [onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values) | Specifies the reason if participant's video is disabled. |
+| contentSharingDisabled     | [onlineMeetingContentSharingDisabledreason](#onlinemeetingcontentsharingdisabledreason-values) | Specifies the reason if shared content from the participant is disabled. |
 
 ### onlineMeetingVideoDisabledReason values
 
