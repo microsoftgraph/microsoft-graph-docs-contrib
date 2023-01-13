@@ -331,10 +331,6 @@ items:
                 href: msgraph-customer-teamsapps.md
               - name: Share assignments with an embedded Teams application
                 href: msgraph-create-assignmentwithteamsapp-content.md
-              - name: Get links to assignments and submissions
-                href: msgraph-assignment-deeplink-for-tool.md
-              - name: Update assignment and grade data
-                href: msgraph-update-assignment-gradefortool.md
                 
       - name: Extensions
         items:
