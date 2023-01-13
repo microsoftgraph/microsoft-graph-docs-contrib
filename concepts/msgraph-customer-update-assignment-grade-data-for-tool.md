@@ -28,20 +28,20 @@ After you get the relevant class and member information, you can get the assignm
 
 All assignment and student information is linked to class and submission information, respectively. The following APIs retrieve information about class assignments and submissions:
 
-- [educationAssignment resource type](/graph/api/resources/educationassignment): Lists all the methods available for assignments in a class. User can get all the [educationAssignmentResource](/graph/api/educationassignment-list-resources) objects associated within an assignment.
+- [educationAssignment resource type](/graph/api/resources/educationassignment): Lists all the methods available for assignments in a class. A user can get all the [educationAssignmentResource](/graph/api/educationassignment-list-resources) objects associated within an assignment.
 - [educationSubmission resource type](/graph/api/resources/educationsubmission): A `submissionId` is created for every student for whom an assignment is published. You can use this API to get the submission status - for example, whether it was turned in and graded, ([resources](/graph/api/educationsubmissionresource-get)) submitted by the student, and the grade ([outcome](/graph/api/resources/educationoutcome)) for the submission.
 
 ## Update grade (outcome) data
 
-User can update the properties of an educationOutcome object. Existing properties that are not included in the request body will maintain their previous values. Only teachers can perform this operation.
+Users can update the properties of an **educationOutcome** object. Existing properties that are not included in the request body will maintain their previous values. Only teachers can perform this operation.
 
 The following example describes on how to update a points outcome.
 
-#### Request
+### Request
 
 The following example shows the request.
 
-**Note:** Request body needs to be supplied only with the values of the fields that needs to be updated.
+>**Note:** The request body should only include the values of the fields that need to be updated.
 
 ```
 PATCH https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/submissions/d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7/outcomes/9c0f2850-ff8f-4fd6-b3ac-e23077b59141
@@ -55,7 +55,7 @@ Content-type: application/json
     }
 }
 ```
-#### Response
+### Response
 
 The following example shows the resposnse.
 
@@ -83,7 +83,7 @@ Content-type: application/json
 }
 ```
 
-Above request provides an updated educationOutcome object in the response body.
+This request returns an updated **educationOutcome** object in the response body.
 
 ## Permissions
 
