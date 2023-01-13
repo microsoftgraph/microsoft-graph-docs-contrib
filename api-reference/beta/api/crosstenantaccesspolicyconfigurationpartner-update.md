@@ -62,7 +62,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Configure inbound trust settings to accept MFA, compliant, and Hybrid Azure AD Joined devices from a partner organization
+### Example 1: Configure inbound trust settings
+
+The following example configures the partner-specific policy by setting the inbound trust settings to accept MFA, compliant, and Hybrid Azure AD Joined devices from the partner tenant.
 
 #### Request
 
@@ -98,13 +100,15 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Configure automaticUserConsent settings to consent for B2B collaboration on behalf of your users and accept admin consent for another partner tenant's users
+### Example 2: Configure automaticUserConsent settings 
+
+The following example configures the partner-specific policy by consenting for B2B collaboration on behalf of your users and accepting admin consent for the partner's users.
 
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "update_crosstenantaccesspolicyconfigurationpartner"
+  "name": "update_crosstenantaccesspolicyconfigurationpartner_automaticuserconsentsettings"
 }
 -->
 
