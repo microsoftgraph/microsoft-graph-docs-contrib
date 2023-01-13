@@ -1,6 +1,78 @@
 {
   "changelog": [
     {
+      "ChageList": [
+        {
+          "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "chatMessageFromIdentitySet",
+          "ChangeType": "Change",
+          "Description": "Changing type of property `user` from `IdentitySet` to `TeamworkUserIdentitySet`.",
+          "Target": "user"
+        }
+      ],
+      "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChageList": [
+        {
+          "Id": "4c336ec2-2fa7-42e8-8aea-941251981e93",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "chatMessageFromIdentitySet",
+          "ChangeType": "Change",
+          "Description": "Changing type of property `user` from `IdentitySet` to `TeamworkUserIdentitySet`.",
+          "Target": "user"
+        }
+      ],
+      "Id": "4c336ec2-2fa7-42e8-8aea-941251981e93",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-13T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChageList": [
+        {
+          "Id": "1e5ea407-c4ec-42fc-a09e-b7849f7dd9f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamworkUserIdentity",
+          "ChangeType": "Addition",
+          "Description": "Adding `tenantId` property to teamworkUserIdentity",
+          "Target": "teamworkUserIdentity"
+        }
+      ],
+      "Id": "1e5ea407-c4ec-42fc-a09e-b7849f7dd9f6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChageList": [
+        {
+          "Id": "bc4785cb-8b28-40f8-b726-e459f4375b23",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamworkUserIdentity",
+          "ChangeType": "Addition",
+          "Description": "Adding `tenantId` property to teamworkUserIdentity",
+          "Target": "teamworkUserIdentity"
+        }
+      ],
+      "Id": "bc4785cb-8b28-40f8-b726-e459f4375b23",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-13T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
@@ -6011,8 +6083,8 @@
       "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },    
-	  {
+    },
+    {
       "ChangeList": [
         {
           "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
@@ -6046,7 +6118,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-10-20T20:34:40.595Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "" 
+      "SubArea": ""
     },
     {
       "ChangeList": [
