@@ -1,7 +1,7 @@
 ---
 title: "Get educationAssignment"
 description: "Get the properties and relationships of an assignment."
-author: "cristobal-buenrostro"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -13,13 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an [assignment](../resources/educationassignment.md). 
+Get the properties and relationships of an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -33,7 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{id}/assignments/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the  `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+
 
 The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
 

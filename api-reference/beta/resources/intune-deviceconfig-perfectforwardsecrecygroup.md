@@ -1,7 +1,7 @@
 ---
 title: "perfectForwardSecrecyGroup enum type"
 description: "Forward Secrecy Group values for Windows10 VPN policies with IKEv2 connection type."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -27,9 +27,3 @@ Forward Secrecy Group values for Windows10 VPN policies with IKEv2 connection ty
 |ecp384|4|ECP384|
 |pfsMM|5|PFSMM|
 |pfs24|6|PFS24|
-
-
-
-
-
-

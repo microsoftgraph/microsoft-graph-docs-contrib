@@ -1,9 +1,9 @@
 ---
-title: List printConnectors
-description: Retrieve a list of connectors.
-author: braedenp-msft
+title: "List printConnectors"
+description: "Retrieve a list of connectors."
+author: "braedenp-msft"
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.prod: "cloud-printing"
 doc_type: apiPageType
 ---
 
@@ -23,8 +23,8 @@ To use the Universal Print service, the user or app's tenant must have an active
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not Supported. |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ GET /print/connectors
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Exceptions
-Some operators are not supported: `$count`, `$search`, `$filter`.
+The following operators are not supported: `$count`, `$search`, `$filter`.
 
 ## Request headers
 | Name      |Description|
@@ -45,10 +45,14 @@ Some operators are not supported: `$count`, `$search`, `$filter`.
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [printConnector](../resources/printconnector.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [printConnector](../resources/printconnector.md) objects in the response body.
+
 ## Example
+
 ### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)

@@ -1,7 +1,7 @@
 ---
 title: "chromeOSOnboardingSettings resource type"
 description: "Entity that represents a Chromebook tenant settings"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -58,9 +58,3 @@ Here is a JSON representation of the resource.
   "lastDirectorySyncDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

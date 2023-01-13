@@ -14,7 +14,7 @@ $requestBody->setDisplayName('testprogram3 new name');
 
 
 
-$graphServiceClient->programsById('program-id')->patch($requestBody);
+$requestResult = $graphServiceClient->programsById('program-id')->patch($requestBody);
 
 
 ```

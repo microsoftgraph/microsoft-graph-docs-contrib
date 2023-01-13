@@ -50,7 +50,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
+  "sampleKeys": ["inbox", "AQAABHg9by8="],
   "name": "get_messagerule"
 }-->
 ```msgraph-interactive

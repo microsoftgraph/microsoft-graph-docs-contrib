@@ -1,7 +1,7 @@
 ---
 title: "Create zebraFotaDeployment"
 description: "Create a new zebraFotaDeployment object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [zebraFotaDeployment](../resources/intune-androidfotaservice-zebrafotadeployment.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/zebraFotaDeployments
 Content-type: application/json
-Content-length: 1936
+Content-length: 2024
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaDeployment",
@@ -78,6 +78,7 @@ Content-length: 1936
     "deviceModel": "Device Model value",
     "updateType": "latest",
     "timeZoneOffsetInMinutes": 7,
+    "firmwareTargetArtifactDescription": "Firmware Target Artifact Description value",
     "firmwareTargetBoardSupportPackageVersion": "Firmware Target Board Support Package Version value",
     "firmwareTargetPatch": "Firmware Target Patch value",
     "firmwareTargetOsVersion": "Firmware Target Os Version value",
@@ -127,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1985
+Content-Length: 2073
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaDeployment",
@@ -139,6 +140,7 @@ Content-Length: 1985
     "deviceModel": "Device Model value",
     "updateType": "latest",
     "timeZoneOffsetInMinutes": 7,
+    "firmwareTargetArtifactDescription": "Firmware Target Artifact Description value",
     "firmwareTargetBoardSupportPackageVersion": "Firmware Target Board Support Package Version value",
     "firmwareTargetPatch": "Firmware Target Patch value",
     "firmwareTargetOsVersion": "Firmware Target Os Version value",
@@ -182,9 +184,3 @@ Content-Length: 1985
   }
 }
 ```
-
-
-
-
-
-

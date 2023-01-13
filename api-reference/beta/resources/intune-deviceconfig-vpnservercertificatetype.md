@@ -1,7 +1,7 @@
 ---
 title: "vpnServerCertificateType enum type"
 description: "The type of certificate the VPN server will present to the VPN client for authentication"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -24,9 +24,3 @@ The type of certificate the VPN server will present to the VPN client for authen
 |ecdsa256|1|ECDSA256|
 |ecdsa384|2|ECDSA384|
 |ecdsa521|3|ECDSA521|
-
-
-
-
-
-

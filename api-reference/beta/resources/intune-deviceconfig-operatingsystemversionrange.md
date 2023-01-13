@@ -1,7 +1,7 @@
 ---
 title: "operatingSystemVersionRange resource type"
 description: "Operating System version range."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -42,9 +42,3 @@ Here is a JSON representation of the resource.
   "highestVersion": "String"
 }
 ```
-
-
-
-
-
-

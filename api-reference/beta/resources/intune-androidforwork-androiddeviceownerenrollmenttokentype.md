@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerEnrollmentTokenType enum type"
 description: "The enrollment token type for an enrollment profile."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -22,9 +22,3 @@ The enrollment token type for an enrollment profile.
 |:---|:---|:---|
 |default|0|Default token type.|
 |corporateOwnedDedicatedDeviceWithAzureADSharedMode|1|Token type for Azure AD shared dedicated device enrollment. It applies to CorporateOwnedDedicatedDevice enrollment mode only.|
-
-
-
-
-
-
