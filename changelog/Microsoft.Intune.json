@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Property",
+          "ChangedApiName": "v15_0",
+          "ChangeType": "Addition",
+          "Description": "Added the `v15_0` property to the [iosMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-1.0) resource.",
+          "Target": "iosMinimumOperatingSystem"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsAppXAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsAppXAppAssignmentSettings resource type.",
+          "Target": "windowsAppXAppAssignmentSettings"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "containedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **containedApps** relationship to the [mobileAppContent](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-1.0) resource.",
+          "Target": "mobileAppContent"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileContainedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the mobileContainedApp resource",
+          "Target": "mobileContainedApp"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsMicrosoftEdgeApp",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsMicrosoftEdgeApp resource",
+          "Target": "windowsMicrosoftEdgeApp"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "committedContainedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **committedContainedApps** relationship to the [windowsUniversalAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-1.0) resource.",
+          "Target": "windowsUniversalAppX"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsUniversalAppXContainedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsUniversalAppXContainedApp resource",
+          "Target": "windowsUniversalAppXContainedApp"
+        },
+        {
+          "Id": "9226e379-f9ee-495d-b6f1-fd9ffbb0502b",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeCompanyPortalLink",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeCompanyPortalLink` member to the **notificationTemplateBrandingOptions** enumeration.",
+          "Target": "notificationTemplateBrandingOptions"
+        },
+        {
+          "Id": "30eff121-2961-43e2-90c8-8f0137ddddbb",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicesWithoutCompliancePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicesWithoutCompliancePolicyReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-04T17:32:27.4508092Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5321afac-b6a5-4946-88c0-8d0964aca730",
           "ApiChange": "Property",
           "ChangedApiName": "isTeamsDeviceProfile",
