@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsAppXAppAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the windowsAppXAppAssignmentSettings resource type.",
+          "Description": "Added the [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-windowsAppXAppAssignmentSettings?view=graph-rest-1.0) resource type.",
           "Target": "windowsAppXAppAssignmentSettings"
         },
         {
@@ -21191,7 +21191,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicableArchitectures",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsappx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/windowsarchitecture?view=graph-rest-beta) to String, ",
+          "Description": "Changed the type of the following properties on the [windowsAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsappx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsarchitecture?view=graph-rest-beta) to String, ",
           "Target": "windowsAppX,windowsArchitecture"
         },
         {
@@ -21207,7 +21207,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicableArchitectures",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsPhone81AppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/windowsarchitecture?view=graph-rest-beta) to String, ",
+          "Description": "Changed the type of the following properties on the [windowsPhone81AppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsarchitecture?view=graph-rest-beta) to String, ",
           "Target": "windowsPhone81AppX,windowsArchitecture"
         },
         {
@@ -21223,7 +21223,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicableArchitectures,applicableDeviceTypes",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsUniversalAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/windowsarchitecture?view=graph-rest-beta) to String, **applicableDeviceTypes** from [windowsDeviceType](https://learn.microsoft.com/graph/api/resources/windowsdevicetype?view=graph-rest-beta) to String, ",
+          "Description": "Changed the type of the following properties on the [windowsUniversalAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsarchitecture?view=graph-rest-beta) to String, **applicableDeviceTypes** from [windowsDeviceType](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsDeviceType?view=graph-rest-beta) to String, ",
           "Target": "windowsUniversalAppX,windowsArchitecture,windowsDeviceType"
         },
         {
@@ -21423,7 +21423,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicableArchitecture",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsPackageInformation](https://learn.microsoft.com/graph/api/resources/intune-apps-windowspackageinformation?view=graph-rest-beta) complex type: **applicableArchitecture** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/windowsarchitecture?view=graph-rest-beta) to String, ",
+          "Description": "Changed the type of the following properties on the [windowsPackageInformation](https://learn.microsoft.com/graph/api/resources/intune-apps-windowspackageinformation?view=graph-rest-beta) complex type: **applicableArchitecture** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsarchitecture?view=graph-rest-beta) to String, ",
           "Target": "windowsPackageInformation,windowsArchitecture"
         },
         {
