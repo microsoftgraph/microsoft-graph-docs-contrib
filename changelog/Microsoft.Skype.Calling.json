@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onlineMeetingRestricted",
           "ChangeType": "Addition",
-          "Description": "Added the [onlineMeetingRestricted](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeetingRestricted?view=graph-rest-beta) resource type.",
+          "Description": "Added the [onlineMeetingRestricted](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingRestricted?view=graph-rest-beta) resource type.",
           "Target": "onlineMeetingRestricted"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "watermarkProtectionValues",
           "ChangeType": "Addition",
-          "Description": "Added the [watermarkProtectionValues](https://docs.microsoft.com/en-us/graph/api/resources/watermarkProtectionValues?view=graph-rest-beta) resource type.",
+          "Description": "Added the [watermarkProtectionValues](https://learn.microsoft.com/en-us/graph/api/resources/watermarkProtectionValues?view=graph-rest-beta) resource type.",
           "Target": "watermarkProtectionValues"
         }
       ],
