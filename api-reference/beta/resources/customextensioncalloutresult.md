@@ -24,7 +24,7 @@ Inherits from [authenticationEventHandlerResult](../resources/authenticationeven
 |customExtensionId|String|Identifier of the custom extension that was called.|
 |errorCode|Int32|Error code that was returned when the API transaction failed.|
 |httpStatus|Int32|The HTTP status code that was returned by the target API endpoint.|
-|numberOfAttempts|Int32|The number of API calls to the customer's API.|
+|numberOfAttempts|Int32|The number of API calls to the customer's API which represents an API endpoint that a customer has created for the purpose of extending Azure AD authentication experience.|
 
 ## Relationships
 None.
