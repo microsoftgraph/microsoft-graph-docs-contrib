@@ -21,9 +21,9 @@ Inherits from [authenticationEventHandlerResult](../resources/authenticationeven
 |Property|Type|Description|
 |:---|:---|:---|
 |calloutDateTime|DateTimeOffset|Date and time (UTC) the API transaction was initiated. Example: midnight on Jan 1, 2014 is reported as 2014-01-01T00:00:00Z.|
-|customExtensionId|String|ID of the custom extension that was called.|
-|errorCode|Int32|Error code that was generated as a result of a failure with the API transaction of the last attempt.|
-|httpStatus|Int32|The HTTP status code returned by the target API endpoint of the last attempt.|
+|customExtensionId|String|Identifier of the custom extension that was called.|
+|errorCode|Int32|Error code that was returned when the API transaction failed.|
+|httpStatus|Int32|The HTTP status code that was returned by the target API endpoint.|
 |numberOfAttempts|Int32|The number of API calls to the customer's API.|
 
 ## Relationships
