@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("select", "id,expand=webparts"));
 
-Content response = graphClient.sites("{sitesId}").pages("{sitePageId}").canvasLayout().horizontalSections().{horizontalSectionId}().columns().{horizontalSectionColumnId}()
+HorizontalSectionColumn horizontalSectionColumn = graphClient.sites("{sitesId}").pages("{sitePageId}").canvasLayout().horizontalSections("{horizontalSectionId}").columns("{horizontalSectionColumnId}")
 	.buildRequest( requestOptions )
 	.get();
 

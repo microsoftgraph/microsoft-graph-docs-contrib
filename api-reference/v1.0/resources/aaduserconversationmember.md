@@ -60,13 +60,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "id": "string (identifier)",
   "displayName" : "string",
-  "visibleHistoryStartDateTime": "string (timestamp)",
-  "roles" : ["string"],
-  "userId" : "string",
   "email" : "string",
-  "tenantId": "string"
+  "id": "string (identifier)", 
+  "roles" : ["string"],
+  "tenantId": "string",
+  "userId" : "string",
+  "visibleHistoryStartDateTime": "string (timestamp)"
 }
 ```
 

@@ -15,14 +15,11 @@ Namespace: microsoft.graph.deviceManagement
 
 Represents the entry point to access all resources related to alerts in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
-The monitoring APIs provide a programmatic alert experience in the Microsoft Endpoint Manager admin center. A Microsoft Endpoint Manager admin can create an [alert rule](devicemanagement-alertrule.md) with preferred notification channels, and receive alerts when conditions set as thresholds in alert rules are met. Notification channels may include email and Microsoft Endpoint Manager admin center notifications. Each alert is recorded as an [alert record](devicemanagement-alertrecord.md). Admins can review alert records to learn about alert impact, severity, status, and more. 
+The alert monitoring API provide a programmatic alert experience in the Microsoft Endpoint Manager admin center. A Microsoft Endpoint Manager admin can create an [alert rule](devicemanagement-alertrule.md) with preferred notification channels, and receive alerts when conditions set as thresholds in alert rules are met. Notification channels may include email and Microsoft Endpoint Manager admin center notifications. Each alert is recorded as an [alert record](devicemanagement-alertrecord.md). Admins can review alert records to learn about alert impact, severity, status, and more. 
 
-Only the role of Windows 365 admin has access to the monitoring APIs. Admins also need a role of global admin, Intune admin, or Cloud PC admin to successfully make API calls.
+Only the role of Windows 365 admin has access to the alert monitoring API. Admins also need a role of global admin, Intune admin, or Cloud PC admin to successfully make API calls.
 
-> [!Note]
-> Currently this API set supports only [Windows 365](/windows-365/overview) and Cloud PC scenarios. It allows admins to set up rules to alert issues with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections.
->
-> Have a different scenario that can use additional programmatic alert support on the Microsoft Endpoint Manager admin center? [Suggest the feature or vote for existing feature requests](https://developer.microsoft.com/en-us/graph/support).
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
 
 ## Properties
 
