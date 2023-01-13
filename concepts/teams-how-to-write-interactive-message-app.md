@@ -420,7 +420,7 @@ Below is an example to get all messages **per-user**. More details can be found 
 When designing the user experience, please take into account that, for most messages, it takes up to 4 seconds for Microsoft Graph to detect a change and send its change notification.
 
 ### Request
-```json
+```
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 {
@@ -435,7 +435,7 @@ Content-type: application/json
 }
 ```
 ### Response:
-```json
+```
 HTTP/1.1 201 Created
 Content-type: application/json
 {
@@ -458,16 +458,121 @@ Content-type: application/json
 }
 ```
 
-## Step 8: Renew change notifications subscriptions (TODO: Updated up to here, but not below)
+## Step 7: Receive and decrypt change notifications
 
-For security reasons, subscriptions for chatMessage expire in 60 minutes, as described on [subscription resource type](/graph/api/resources/subscription?#maximum-length-of-subscription-per-resource-type). We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions. Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their `expirationDateTime`, as described on [Update subscription](/graph/api/subscription-update?#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications. Below is an example.
+Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the `notificationUrl` (provided in the subscription creation above).  For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications).
+
+Make sure that you have specified the `resource` property when creating the subscription (in [Step 6](#step-6-subscribe-to-change-notifications)).  Otherwise, the encrypted content would not be returned.  See [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications) for details.
+
+### Request (sent by Microsoft Graph)
+
+```http
+POST https://webhook.azurewebsites.net/api/send/myNotifyClient
+Content-type: application/json
+{
+  "value": [
+    {
+      "subscriptionId": "88aa8a88-88a8-88a8-8888-88a8aa88a88a",
+      "changeType": "created",
+      "clientState": "ClientSecret",
+      "subscriptionExpirationDateTime": "2023-01-10T11:03:37.0068432-08:00",
+      "resource": "chats('19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2')/messages('1677774058888')",
+      "resourceData": {
+        "id": "1677774058888",
+        "@odata.type": "#Microsoft.Graph.chatMessage",
+        "@odata.id": "chats('19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2')/messages('1677774058888')"
+      },
+      "encryptedContent": {
+        "data": "sMMsMsMM+3MMMs8MMsMMsss5M+M0+8sMMsM96MM/8MMMsM4MM12sMsssMMsssMsMMssMs8Mss6sssMMsM2ssssssssMss7sssMs4s35ssMs+0ss1sssMsMssMMMMsssss5MsMssssss+sMsMMMM8s4M3MMsMssM54s1ssssMs4ssMsss3MMM8M4sM+3MMss7MM8sMsMMMs3sssss5MssMss6s+Ms7sMssMMssMsMMss1sMs2sM6sss6sMssssMss7s1MMs7/Msssss5M9M7sMsMMMsMs+MMs+MsMMsMsMMMMsMMMss1M2ssMM8M3sMMMsMss2MMMMsM+ss0M+sssMM4M+sMsM69sMs+sMsssM+MMsMsMM/ssssMMMMMss/s6/47Ms0s5Ms6MsssM2sss4MMMMMMsMsMMM+s8MssMsMMssMMs+MMMM56ss0sMM+sssMsss1ssMsMs21s3MssM9ssMsss9M2+MM3sMMMMMM7MM770MMM2MMsssM11MsssMssMsMsMM2sM1s+84MMs6sss8MsMMsMMsMM3MMssMss1MssMsMsMMMMsMsssMMsssM1sssssM9MMM6s4MMss524sMMMssMs4ss3/+ssssss8MMs2ssMMs2MsMsMMssM8MMMMsMM0sss4MMs/sMsMMs0sMMsssss135sssss9+sssMsMMsMsssMsMsMsMsMM7Ms+MssMsMM1sMssss5s64sMss6sMs6sM0MMs3s29MMssM62ssMsMMssMsM0ssssssss+sM1MsM3sMM9sssssMMMsssMMsMsMsssMssssssMsMssMMMsM8Ms5MsssMM9ss/4MssMs3s5M81sMMssssMMMssMMs7Ms2M9M+7MsssMss6sM0sssM7M0ssMssssMMsMMs9s4MsMsMM6MMsMMssMMssM+Mss6MM8MMM6MM1s75MsssMMsM+MMMs2s9M1MMMsMMs1MssMsssssssMs8MsMsMMMMMM7sMsss0MssMsMMssMMM/sM0M01s2M7MsssssMs37MMs140sMMM0ssMMM/ssMMs3sMsM+Ms+sMMsM3MMssMssMsssss6MMssMMMs1MMMMMsssMs0sM9sMMMss+sssss2sssMssMsMMM1MssMMMs8MMMssssMM99ssMsssMssss2Ms5sMs1/5MMssssMsMM3MMMMM1MsMsMsMMsMMssMsMMsssssMs9Mss6Mss+sM+73Msss0ssMsss8sMssMssssssssssMM9MMMMsMMMMMMMM5MMMM27sM+ssMG",
+        "dataSignature": "sMM+sss2sMssMMsMMMMMMMM6ssMs93MssMMM8sMMMMM=",
+        "dataKey": "MMsMMMMMss7sssM34sMMsMMsMssMss7MssMssss+MM+4sMsssMss6Msss9sMssMssMsssMM0+MMsss0sMs8MMsMssss2MMMMsMsssMMsMsM3MssMs9ss5sssMMsMssMsMMM6MMssMsM1M+MMMMsMss3MMsssMs9s0ssMs/1sM6ssMMssM+Ms9MsssMMM8MMssssMMs2s94MsMssMMM92/MMMs4Ms8/ssssssMs5+0s+Ms2M7sMMMMsMMsMsMs+5MMM3sssMsMMMsM8sMss+MssssMsMs/MMsMM5ssssM8M0s0MM06sssMMsMM4MsssMMsMssMM9M9MsMMMMM7sMsMM==",
+        "encryptionCertificateId": "44M4444M4444M4M44MM4444MM4444MMMM44MM4M4",
+        "encryptionCertificateThumbprint": "07M3411M4904M3M78MM8211MM4589MMMM47MM7M6"
+      },
+      "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
+    }
+  ],
+  "validationTokens": [
+    "ssM0sMMsMsMMM1MsMMMssMssMsMMMsM1MsMsMss1sMM6Ms1MMMMMMM5MMsssMs9ssM1sMs9MsMMMMsssssMsMsssMMM6Ms1MMMMMMM5MMsssMs9ssM1sMs9MsMMMMsssssM9.ssMssMMsMsMsMsssMMMsMs04M2M2MMM1MMMsMMs4MM1sM2MsMMM5MsM3MsMsMMMss3MsMsMssMMsssssM3M0ss53sM5ss3ssMs5ssM8sMMMsMsM3Ms0sMMMsMMMsMMMsMMM3Ms0sMsMsMMMsMMMsMsMsMssssMM0MsssMsssMsssMsMsMMMsMsMsMsM2MsMsMsM3MMMsMsM4sMM6MMM3MsM2MMM1MMssMMssMsssMMMsM1sMssM5MMs4ssMsMMssMMMMM2MsMMMsMMsMMM0sMMMssMMsMMM6MsMsMsMsMsMsMMMsMMMsMMssMs05MMssMMMsMMssMMM0MMM4MsMsMsMssMssMMMsMsssMsMsMssssMM6Mss0sMMsMs8ss3MsMsssssMss3MsssM0MsM0MsMsMMssMMMsMsMsMMMsMs1sMMssMMM2MMMsMMMsMMMsMM8sMMMssMMsMsMsMsMsMsMsMM1sMsssMMMsMMMsMsssMM1sMMMsMMM0M2M2MMssMMMssMM6MsMsMMMsMMM3MMsMMMMMMsMMsMM4MsMsMsMsMssMsMMsMMMsM05MsMssMMssMMM5sMsMMMMMMsMsMsM1MsM6MsMsMsMsMsM1MMM3MMMsMMM5Ms1sM2M1MMMsMMM0MMMsMsM1MsMsMsMsMMM6MsM0MsMsMMssMMMsMsMsMMMsMs1sMMssMMM2MMMsMMMsMMMsMMMsMsM0sMM6MssMMs1sMMMssMsMMMMMssMMss16MMMsMMM2MMMsMsMsMsMssM.s16ssMMM97sM_MMs_ss8s8s3MMs95ssMMM8M6ss4M4Ms3sMMMs-M_7ss80MMMsss6ssM0sMM20MsMMs15sMM_ssMsssMMMs9ssM0M_sss5sMssMsMss4s-M-8Ms1ssM8sMsMMss9sMsMsMMMMMMMsMs6MMss2MMMsMMss0MMssMMssMssMMMMMMMMsMs817ssssssMss8MMMssMMMMsss0sMs1ssM0sM1ssMMMs6MMMMss6ss_sMMss3M4MM3sMss45s4s8MMss6s75ssMsM5sssMM0MMMMMM_1ssMMMMsMMMssMs44sMs4MssM5s-__ss5MMs6sMM_MMss5MsMMMM"
+  ]
+}
+```
+### Decrypted content
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/$metadata#chats('19%3Ab1234aaa12345a123aa12aa12aaaa1a9%40thread.v2')/messages/$entity",
+  "id": "1677774058888",
+  "replyToId": null,
+  "etag": "1677774058888",
+  "messageType": "message",
+  "createdDateTime": "2023-01-10T18:07:30.302Z",
+  "lastModifiedDateTime": "2023-01-10T18:07:30.302Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": "",
+  "summary": null,
+  "chatId": "19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "userIdentityType": "aadUser",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+      "displayName": "John Smith",
+      "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
+    }
+  },
+  "body": {
+    "contentType": "html",
+    "content": "<p>Hello world</p>"
+  },
+  "channelIdentity": null,
+  "attachments": [
+    
+  ],
+  "mentions": [
+    
+  ],
+  "onBehalfOf": null,
+  "policyViolation": null,
+  "reactions": [
+    
+  ],
+  "messageHistory": [
+    
+  ],
+  "replies": [
+    
+  ],
+  "hostedContents": [
+    
+  ],
+  "eventDetail": null
+}
+```
+Change notifications are sometimes delivered out of order, due to their asynchronous nature. If your application requires the resources to be sorted in a particular order, make sure you are sorting the decrypted content by the appropriate property. For example, if the messages should be displayed in chronological order in your chat application, you will sort the decrypted [chatMessage](/graph/api/resources/chatmessage) by createdDateTime.
+
+When a chat message is edited, a change notification is sent for the edit, with an updated `lastEditedDateTime`.  Your chat application should display the edited message instead of the original message, if it is meant to display the latest version of messages.
+
+The notes about `contentType`, images, data loss prevention (DLP), and retention policies described in [Step 4: Retrieve messages](#step-4-retrieve-messages) above are applicable to the decrypted messages here as well.
+
+## Step 8: Renew change notifications subscriptions
+
+For security reasons, subscriptions for [chatMessage](/graph/api/resources/chatmessage) expire in 60 minutes, as described on [subscription resource type](/graph/api/resources/subscription?#maximum-length-of-subscription-per-resource-type).  We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions.  Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their `expirationDateTime` property, as described on [Update subscription](/graph/api/subscription-update?#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications.
+
+If a subscription has expired before it gets renewed, some change notifications might have been missed, so you should resync the messages by repeating [Step 4: Retrieve messages](#step-4-retrieve-messages) again.
+
+Below is an example of a subscription renewal.
 
 ### Request
 ```http
-PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
+PATCH https://graph.microsoft.com/v1.0/subscriptions/88aa8a88-88a8-88a8-8888-88a8aa88a88a
 Content-type: application/json
 {
-   "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
+   "expirationDateTime":"2023-01-12T18:23:45.9356913Z"
 }
 ```
 ### Response
@@ -475,63 +580,24 @@ Content-type: application/json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-  ...
-  "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
-  ...
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
+    "id": "88aa8a88-88a8-88a8-8888-88a8aa88a88a",
+    "resource": "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages",
+    "applicationId": "aa8aaaa8-8aa8-88a8-888a-aaaa8a8aa88a",
+    "changeType": "created",
+    "clientState": null,
+    "notificationUrl": "https://function-ms-teams-subscription-webhook-z2a2ig2bfq-uc.a.run.app",
+    "notificationQueryOptions": null,
+    "lifecycleNotificationUrl": null,
+    "expirationDateTime": "2023-01-12T21:59:59.711Z",
+    "creatorId": "8888a8a8-8a88-888a-88aa-8a888a88888a",
+    "includeResourceData": null,
+    "latestSupportedTlsVersion": "v1_2",
+    "encryptionCertificate": null,
+    "encryptionCertificateId": null,
+    "notificationUrlAppId": null
 }
 ```
-
-## Step 7: Receive and decrypt change notifications
-
-Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the `notificationUrl` (provided in the subscription creation above). For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Update subscription](/graph/api/subscription-update).
-
-### Request (sent by Microsoft Graph)
-
-```http
-POST https://webhook.azurewebsites.net/api/send/myNotifyClient
-Content-type: application/json
-
-{
-    "validationTokens": [
-        "eyJ0eXAiOiJKV1QiL1dCI6I....."
-    ],
-    "value": [
-        {
-            "resource":"teams('{id}')/channels(' {id} ')/messages('{id}')"
-            "encryptedContent": {
-                "data": "zotuEncwI9pBgKeF....",
-                "dataSignature": "E/GsVEUAza2/A+iO/vMME=….",
-                "dataKey": "lXMs2rLdpx/uCB4iZv2ahU23X/..."
-            }
-        }
-    ]
-}
-```
-### Decrypted content
-```json
-{
-  "body": {
-    "contentType": "text",
-    "content": "Hello world!"
-  },
-  "id" : "...",
-  "createdDateTime": "2020-02-13...",
-  "from": {
-      "user": {
-          "id": "{guid}",
-          "displayName": "Megan Bowen",
-          "userIdentityType" : "aadUser"
-      }
-   }
-}
-```
-
-Change notifications are sometimes delivered out of order, due to their asynchronous nature. If your application requires the resources to be sorted in a particular order, make sure you are sorting the decrypted content by the appropriate property. For example, if the messages should be displayed in chronological order in your chat application, you will sort the decrypted [chatMessage](/graph/api/resources/chatmessage) by `createdDateTime`.
-
-When a chat message is edited, a change notification is sent for the edit, with an updated `lastEditedDateTime`. Your chat application should display the edited message instead of the original message, if it is meant to display the latest version of messages.
-
-The notes about `contentType`, images, data loss preventin (DLP), and system messages described in [Step 4](#step-4-retrieve-messages) above are applicable to the decrypted messages here as well.
-
 ## Step 9: Get and set viewpoints
 
 A [viewpoint](/graph/api/resources/chatviewpoint) in a chat marks the timestamp at which the chat was last read by the users, so users can easily tell that any messages under the viewpoint are unread.
@@ -549,7 +615,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
-    "id": "19:b8577894a63548969c5c92bb9c80c5e1@thread.v2",
+    "id": "19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2",
     "topic": "test group 1",
     "createdDateTime": "2021-04-06T19:49:52.431Z",
     "lastUpdatedDateTime": "2021-04-06T19:54:04.306Z",
@@ -568,7 +634,7 @@ To update the viewpoint of a chat, use the `PATCH` HTTP method on the viewpoint 
 
 ### Request
 ```http
-PATCH /chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/viewpoint
+PATCH /chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/viewpoint
 Content-type: application/json
 
 {
