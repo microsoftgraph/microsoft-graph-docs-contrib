@@ -1,6 +1,6 @@
 ---
 title: "authenticationEventHandlerResult resource type"
-description: "Indicates the handler result of this authentication event."
+description: "An abstract type that defines the result of authentication to event listeners in Azure AD sign-ins."
 author: "junrlin"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
