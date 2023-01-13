@@ -62,8 +62,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "allowedToUseSSPR": true,
   "allowedToSignUpEmailBasedSubscriptions": true,
+  "allowedToUseSSPR": true,
   "allowEmailVerifiedUsersToJoinOrganization": true,
   "allowInvitesFrom": "String",
   "blockMsolPowerShell": true,
