@@ -1,7 +1,7 @@
 {
   "changelog": [
     {
-      "ChageList": [
+      "ChangeList": [
         {
           "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
           "ApiChange": "Property",
@@ -27,7 +27,7 @@
       "SubArea": ""
     },
     {
-      "ChageList": [
+      "ChangeList": [
        {
           "Id": "4c336ec2-2fa7-42e8-8aea-941251981e93",
           "ApiChange": "Property",
