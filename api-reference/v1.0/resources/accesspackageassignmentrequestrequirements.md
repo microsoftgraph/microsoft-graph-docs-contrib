@@ -35,12 +35,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestRequirements",
-  "policyId": "String",
-  "policyDisplayName": "String",
-  "policyDescription": "String",
+  "allowCustomAssignmentSchedule": "Boolean",
   "isApprovalRequiredForAdd": "Boolean",
   "isApprovalRequiredForUpdate": "Boolean",
-  "allowCustomAssignmentSchedule": "Boolean",
+  "policyDisplayName": "String",
+  "policyDescription": "String",
+  "policyId": "String",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
   }
