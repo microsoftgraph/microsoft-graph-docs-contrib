@@ -20,7 +20,7 @@ Indicates detailed information about the applied event listeners or listeners th
 |:---|:---|:---|
 |eventType|authenticationEventType|The type of authentication event that triggered the custom extension request. The possible values are: `tokenIssuanceStart`, `pageRenderStart`, `unknownFutureValue`.|
 |executedListenerId|String|ID of the Event Listener that was executed.|
-|handlerResult|[authenticationEventHandlerResult](../resources/authenticationeventhandlerresult.md)|The handler result of this authentication event.|
+|handlerResult|[authenticationEventHandlerResult](../resources/authenticationeventhandlerresult.md)|The result from the listening client, such as an Azure Logic App, of this authentication event.|
 
 ## Relationships
 None.
