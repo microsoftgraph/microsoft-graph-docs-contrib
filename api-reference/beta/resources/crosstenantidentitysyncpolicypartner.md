@@ -28,7 +28,7 @@ Defines the cross-tenant policy for synchronization of users from a partner tena
 |:---|:---|:---|
 |displayName|String|Display name for the cross-tenant user synchronization policy. Use the name of the partner Azure AD tenant to easily identify the policy. Optional.|
 |tenantId|String|Tenant identifier for the partner Azure AD organization. Read-only.|
-|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant. |
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant. Key. |
 
 ## Relationships
 None.
@@ -37,7 +37,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "keyProperty": "tenantId",
   "@odata.type": "microsoft.graph.crossTenantIdentitySyncPolicyPartner",
   "openType": false
 }
@@ -45,7 +45,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-  "tenantId": "String",
+  "tenantId": "String (identifier)",
   "displayName": "String",
   "userSyncInbound": {
     "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
