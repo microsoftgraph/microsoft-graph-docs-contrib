@@ -2171,6 +2171,13 @@ items:
             href: resources/intune-apps-mobileappinstalltimesettings.md
           - name: Mobile app publishing state
             href: resources/intune-apps-mobileapppublishingstate.md
+          - name: Mobile contained app
+            href: resources/intune-apps-mobilecontainedapp.md
+            items:
+            - name: List
+              href: api/intune-apps-mobilecontainedapp-list.md
+            - name: Get
+              href: api/intune-apps-mobilecontainedapp-get.md
           - name: Mobile LOB app
             href: resources/intune-apps-mobilelobapp.md
             items:
@@ -2261,10 +2268,25 @@ items:
             href: resources/intune-apps-win32lobappruleoperator.md
           - name: Win32 LOB app rule type
             href: resources/intune-apps-win32lobappruletype.md
+          - name: Windows AppX app assignment settings
+            href: resources/intune-apps-windowsappxappassignmentsettings.md
           - name: Windows architecture
             href: resources/intune-apps-windowsarchitecture.md
           - name: Windows device type
             href: resources/intune-apps-windowsdevicetype.md
+          - name: Windows microsoft edge app
+            href: resources/intune-apps-windowsmicrosoftedgeapp.md
+            items:
+            - name: List
+              href: api/intune-apps-windowsmicrosoftedgeapp-list.md
+            - name: Get
+              href: api/intune-apps-windowsmicrosoftedgeapp-get.md
+            - name: Create
+              href: api/intune-apps-windowsmicrosoftedgeapp-create.md
+            - name: Delete
+              href: api/intune-apps-windowsmicrosoftedgeapp-delete.md
+            - name: Update
+              href: api/intune-apps-windowsmicrosoftedgeapp-update.md
           - name: Windows minimum operating system
             href: resources/intune-apps-windowsminimumoperatingsystem.md
           - name: Windows mobile MSI
@@ -2293,6 +2315,19 @@ items:
               href: api/intune-apps-windowsuniversalappx-delete.md
             - name: Update
               href: api/intune-apps-windowsuniversalappx-update.md
+          - name: Windows universal AppX contained app
+            href: resources/intune-apps-windowsuniversalappxcontainedapp.md
+            items:
+            - name: List
+              href: api/intune-apps-windowsuniversalappxcontainedapp-list.md
+            - name: Get
+              href: api/intune-apps-windowsuniversalappxcontainedapp-get.md
+            - name: Create
+              href: api/intune-apps-windowsuniversalappxcontainedapp-create.md
+            - name: Delete
+              href: api/intune-apps-windowsuniversalappxcontainedapp-delete.md
+            - name: Update
+              href: api/intune-apps-windowsuniversalappxcontainedapp-update.md
         - name: Company terms
           href: resources/intune-company-conceptual.md
           items:
