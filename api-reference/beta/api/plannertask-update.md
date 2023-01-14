@@ -87,11 +87,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
     "category4": false
   },
   "recurrence": {
-    "@odata.type": "#microsoft.graph.plannerTaskRecurrence",
     "schedule": {
-      "@odata.type": "#microsoft.graph.plannerRecurrenceSchedule",
       "pattern": {
-        "odata.type": "#microsoft.graph.recurrencePattern",
         "type": "daily",
         "interval": 3
       },

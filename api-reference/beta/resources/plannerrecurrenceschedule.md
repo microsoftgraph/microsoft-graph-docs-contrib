@@ -50,10 +50,10 @@ The following is a JSON representation of the resource.
     "type": "weekly",
     "interval": 1,
     "firstDayOfWeek": "sunday",
-    "dayOfMonth": null,
+    "dayOfMonth": 0,
     "daysOfWeek": ["monday","wednesday","friday"],
-    "index": null,
-    "month": null
+    "index": "first",
+    "month": 0
   },
   "patternStartDateTime": "2022-02-22T02:10:33Z",
   "nextOccurrenceDateTime": "2022-04-29T02:10:33Z"
