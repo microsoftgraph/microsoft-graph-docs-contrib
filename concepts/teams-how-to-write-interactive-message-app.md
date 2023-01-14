@@ -606,7 +606,7 @@ To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/
 
 ### Request
 ```http
-GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
+GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2
 ```
 
 ### Response
@@ -616,33 +616,39 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
     "id": "19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2",
-    "topic": "test group 1",
-    "createdDateTime": "2021-04-06T19:49:52.431Z",
-    "lastUpdatedDateTime": "2021-04-06T19:54:04.306Z",
+    "topic": null,
+    "createdDateTime": "2023-01-11T01:34:18.929Z",
+    "lastUpdatedDateTime": "2023-01-11T01:34:18.929Z",
     "chatType": "group",
-    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab1234aaa12345a123aa12aa12aaaa1a9%40thread.v2/0?tenantId=4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1",
+    "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1",
     "onlineMeetingInfo": null,
     "viewpoint": {
-        "isHidden": true,
-        "lastMessageReadDateTime": "2021-05-06T23:55:07.191Z"
+        "isHidden": false,
+        "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
     }
 }
 ```
+The viewpoint of a chat for a user is updated when the user [marks the chat as read](/graph/api/chat-markchatreadforuser), [marks the chat as unread](/graph/api/chat-markchatunreadforuser), [hides the chat](/chat-hideforuser), or [unhide the chat](/graph/api/chat-unhideforuser).
 
-To update the viewpoint of a chat, use the `PATCH` HTTP method on the viewpoint resource. Here is an example.
+## Cost estimation
 
-### Request
-```http
-PATCH /chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/viewpoint
-Content-type: application/json
+For the most up-to-date pricing, please see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses).
 
-{
-    "viewpoint": {
-        "lastMessageReadDateTime" : "2022-03-28T20:10:28.131Z"
-    }
-}
-```
+As of January 2023, when this document was written, retrieving messages “per-user, per-chat” ([Step 4](#step-4-retrieve-messages)) has no consumptions charges.  Only change notifications ([Step 6](#step-6-subscribe-to-change-notifications) to [Step 8](#step-8-renew-change-notifications-subscriptions)) have consumption charges, and it’s $0.00075 per message.  Thus, suppose your app has 50 users, each user receives messages from 20 users, and each user sends 300 messages per month, then the estimated costs would be about:
+- 50 recipients x (20 senders x 300 messages/month/sender)/recipient x $0.00075/message
+= 300,000 messages/month x $0.00075/message
+= $225/month.
+
+## Summary
+
+Using the steps above, you can build an interactive message app within your own application.  Initially, the chat UI calls `GET /users/{user-id}/chats/{chat-id}/messages` to get only the recent messages needed to be displayed on the chat UI.  It then gets new messages in real time from the server component, which subscribes and listens to change notifications for the new messages.
+
+To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times, by caching the messages. We recommend caching messages for at least a few hours so a user can quickly reopen a chat they visited a few minutes ago.  However, you should not cache longer than what’s allowed per your organizational retention policies. To simplify security, we recommend not sharing caches between users.
+
+Change notification subscriptions for [chatMessage](/graph/api/resources/chatmessage) expire in 60 minutes, so we recommend renewing every 30 minutes.  In case of an expiration, you would call `GET /users/{user-id}/chats/{chat-id}/messages` again to get the most up-to-date messages and refresh the cache.
+
+By following these guidelines, if your app has 50 users, each user receives messages from 20 users, and each user sends 300 messages per month, then the estimated costs would be about $225/month.
 
 ## Tips and additional information
 
@@ -651,9 +657,10 @@ You can also add more advanced features in your chat application by:
 - [Adding reactions to chat messages](/graph/api/chatmessage-setreaction), such as thumbs up and smileys.
 - [Adding images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples), so messages can contact rich contents.
 - [Adding mentions to chat messages](/graph/api/resources/chatmessagemention), so specific users can be tagged with "@".
-- [Enabling resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent), so users have access to only chats that are meant for them.
 - [Hiding a chat from users](/graph/api/chat-hideforuser) to declutter the chat list.
 - [Removing a member from a chat](/graph/api/chat-delete-members) when it is no longer needed to them.
+- [Checking chat membership](/graph/api/chat-list), in case users have joined or left chat groups, especially if they can do that outside of your app.
+- [Subscribe to change notifications of other resources](/graph/teams-change-notification-in-microsoft-teams-overview), such as chats and membership, not just messages.
 - [Installing an app within chat](/graph/api/chat-post-installedapps), so users can use the app within the chat
 - [Pinning a tab in the chat](/graph/api/chat-post-tabs), so users can switch to the app easily
 
