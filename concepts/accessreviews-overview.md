@@ -5,6 +5,7 @@ author: "FaithOmbongi"
 ms.localizationpriority: medium 
 ms.prod: "governance" 
 doc_type: conceptualPageType 
+ms.date: 08/24/2022
 --- 
 
 # Overview of the access reviews API

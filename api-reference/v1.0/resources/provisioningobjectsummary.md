@@ -25,7 +25,6 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|provisioningAction|provisioningAction|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Azure AD activity list.|
 |activityDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |changeId|String|Unique ID of this change in this cycle.|
 |cycleId|String|Unique ID per job iteration.|
@@ -34,11 +33,12 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 |initiatedBy|[initiator](initiator.md)|Details of who initiated this provisioning.|
 |jobId|String|The unique ID for the whole provisioning job.|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Details of each property that was modified in this provisioning action on this object.|
+|provisioningAction|provisioningAction|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Azure AD activity list.|
+|provisioningStatusInfo|[provisioningStatusInfo](provisioningstatusinfo.md)|Details of provisioning status.|
 |provisioningSteps|[provisioningStep](provisioningstep.md) collection|Details of each step in provisioning.|
 |servicePrincipal|[servicePrincipal](provisioningserviceprincipal.md) collection|Represents the service principal used for provisioning.|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|Details of source object being provisioned.|
 |sourceSystem|[provisioningSystem](provisioningsystem.md)|Details of source system of the object being provisioned.|
-|provisioningStatusInfo|[provisioningStatusInfo](provisioningstatusinfo.md)|Details of provisioning status.|
 |targetIdentity|[provisionedIdentity](provisionedidentity.md)|Details of target object being provisioned.|
 |targetSystem|[provisioningSystem](provisioningsystem.md)|Details of target system of the object being provisioned.|
 |tenantId|String|Unique Azure AD tenant ID.|

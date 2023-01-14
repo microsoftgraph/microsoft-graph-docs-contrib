@@ -149,15 +149,20 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 [Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group soft deletion.
 
+## Channel
+
+### Create channel
+
+When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
+
+- Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
+- Start with an underscore (_) or period (.), or end with a period (.).
+
 ## Cloud communications 
 
 ### View meeting details menu is not available on Microsoft Teams client
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
-
-### Presenter role cannot be assigned to non-Azure AD participants
-
-Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported. Such requests will be accepted by the [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method, but the role will not be applied when the participant joins the online meeting. The [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method will reject the request and return a `400 Bad Request` error. 
 
 ## Contacts
 

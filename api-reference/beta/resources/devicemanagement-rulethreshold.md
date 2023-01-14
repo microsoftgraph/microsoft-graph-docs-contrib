@@ -13,7 +13,9 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about the threshold settings of an alert rule.
+Represents details about the threshold settings of an [alert rule](devicemanagement-alertrule.md).
+
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
 
 ## Properties
 

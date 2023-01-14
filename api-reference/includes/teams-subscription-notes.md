@@ -41,7 +41,7 @@ You must use the `Prefer: include-unknown-enum-members` request header to get th
 Specify the `model` query parameter in the **resource** property in the request body.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 
 {
