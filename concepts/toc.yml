@@ -502,7 +502,7 @@ items:
             href: item-insights-overview.md
           - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
-          - name: Customize pronouns availability (preview)
+          - name: Enable or disable pronouns display (preview)
             href: pronouns-configure-pronouns-availability.md
       - name: Personal contacts
         items:
