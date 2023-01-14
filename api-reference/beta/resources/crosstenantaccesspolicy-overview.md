@@ -52,7 +52,7 @@ Inbound trust settings also enable you to trust devices that are compliant, or h
 
 ## Inbound cross-tenant sync in cross-tenant access settings
 
-You can enable cross-tenant synchronization to synchronize users from a partner tenant.  Cross-tenant synchronization is one-way synchronization service in Azure AD that automates creating, updating, and deleting B2B collaboration users across tenants in an organization. You create a user synchronization policy to streamline collaboration between users in multi-tenant organizations. Partner user synchronization settings are defined using the [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) resource type.
+You can enable cross-tenant synchronization to synchronize users from a partner tenant. Cross-tenant synchronization is a one-way synchronization service in Azure AD that automates creating, updating, and deleting B2B collaboration users across tenants in an organization. You create a user synchronization policy to streamline collaboration between users in multi-tenant organizations. Partner user synchronization settings are defined using the [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) resource type.
 
 ## Collaborate with organizations using Azure Active Directory in different Microsoft clouds
 
