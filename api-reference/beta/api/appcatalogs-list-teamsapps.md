@@ -333,7 +333,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df
 
 #### Response
 
-The following is an example of a response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -418,7 +418,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitio
 
 #### Response
 
-The following is an example of a response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
