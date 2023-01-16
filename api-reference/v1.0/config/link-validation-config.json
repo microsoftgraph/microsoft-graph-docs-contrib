@@ -6,6 +6,7 @@
         "/cloud-app-security",
         "/concepts",
         "/defender-for-identity",
+        "/deployedge",
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
@@ -27,9 +28,9 @@
         "/skypeforbusiness",
         "/sharepoint",
         "/universal-print",
+        "/training",
         "/troubleshoot",
         "/windows",
-        "/windows-hardware",
-        "/deployedge"
+        "/windows-hardware"
     ]
 }

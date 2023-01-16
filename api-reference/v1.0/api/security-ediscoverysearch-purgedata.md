@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 # ediscoverySearch: purgeData
 Namespace: microsoft.graph.security
 
-Permanently delete Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
+Delete Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 >**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
 

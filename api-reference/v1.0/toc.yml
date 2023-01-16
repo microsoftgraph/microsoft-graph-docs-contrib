@@ -2171,6 +2171,13 @@ items:
             href: resources/intune-apps-mobileappinstalltimesettings.md
           - name: Mobile app publishing state
             href: resources/intune-apps-mobileapppublishingstate.md
+          - name: Mobile contained app
+            href: resources/intune-apps-mobilecontainedapp.md
+            items:
+            - name: List
+              href: api/intune-apps-mobilecontainedapp-list.md
+            - name: Get
+              href: api/intune-apps-mobilecontainedapp-get.md
           - name: Mobile LOB app
             href: resources/intune-apps-mobilelobapp.md
             items:
@@ -2261,10 +2268,25 @@ items:
             href: resources/intune-apps-win32lobappruleoperator.md
           - name: Win32 LOB app rule type
             href: resources/intune-apps-win32lobappruletype.md
+          - name: Windows AppX app assignment settings
+            href: resources/intune-apps-windowsappxappassignmentsettings.md
           - name: Windows architecture
             href: resources/intune-apps-windowsarchitecture.md
           - name: Windows device type
             href: resources/intune-apps-windowsdevicetype.md
+          - name: Windows microsoft edge app
+            href: resources/intune-apps-windowsmicrosoftedgeapp.md
+            items:
+            - name: List
+              href: api/intune-apps-windowsmicrosoftedgeapp-list.md
+            - name: Get
+              href: api/intune-apps-windowsmicrosoftedgeapp-get.md
+            - name: Create
+              href: api/intune-apps-windowsmicrosoftedgeapp-create.md
+            - name: Delete
+              href: api/intune-apps-windowsmicrosoftedgeapp-delete.md
+            - name: Update
+              href: api/intune-apps-windowsmicrosoftedgeapp-update.md
           - name: Windows minimum operating system
             href: resources/intune-apps-windowsminimumoperatingsystem.md
           - name: Windows mobile MSI
@@ -2293,6 +2315,19 @@ items:
               href: api/intune-apps-windowsuniversalappx-delete.md
             - name: Update
               href: api/intune-apps-windowsuniversalappx-update.md
+          - name: Windows universal AppX contained app
+            href: resources/intune-apps-windowsuniversalappxcontainedapp.md
+            items:
+            - name: List
+              href: api/intune-apps-windowsuniversalappxcontainedapp-list.md
+            - name: Get
+              href: api/intune-apps-windowsuniversalappxcontainedapp-get.md
+            - name: Create
+              href: api/intune-apps-windowsuniversalappxcontainedapp-create.md
+            - name: Delete
+              href: api/intune-apps-windowsuniversalappxcontainedapp-delete.md
+            - name: Update
+              href: api/intune-apps-windowsuniversalappxcontainedapp-update.md
         - name: Company terms
           href: resources/intune-company-conceptual.md
           items:
@@ -4830,13 +4865,6 @@ items:
               href: api/orgcontact-get-manager.md
             - name: Get member objects
               href: api/directoryobject-getmemberobjects.md
-          - name: Subscribed SKU
-            href: resources/subscribedsku.md
-            items:
-            - name: List subscribedSkus
-              href: api/subscribedsku-list.md
-            - name: Get subscribedSku
-              href: api/subscribedsku-get.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
@@ -4864,6 +4892,13 @@ items:
               href: api/unifiedroleassignment-get.md
             - name: Delete
               href: api/unifiedroleassignment-delete.md
+        - name: Subscribed SKU
+          href: resources/subscribedsku.md
+          items:
+          - name: List subscribedSkus
+            href: api/subscribedsku-list.md
+          - name: Get subscribedSku
+            href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
@@ -6601,15 +6636,74 @@ items:
       items:
       - name: Overview
         href: resources/security-api-overview.md
-      - name: Alert
-        href: resources/alert.md
+      - name: Advanced hunting
         items:
-        - name: List alerts
-          href: api/alert-list.md
-        - name: Get alert
-          href: api/alert-get.md
-        - name: Update alert
-          href: api/alert-update.md
+        - name: Run hunting query
+          href: api/security-security-runhuntingquery.md
+        - name: Hunting query results
+          href: resources/security-huntingqueryresults.md
+        - name: Hunting row result
+          href: resources/security-huntingrowresult.md
+        - name: Single property schema
+          href: resources/security-singlepropertyschema.md
+      - name: Alerts and incidents
+        items:
+        - name: Alert
+          items:
+          - name: Alert
+            href: resources/security-alert.md
+          - name: List alerts
+            href: api/security-list-alerts_v2.md
+          - name: Get alert
+            href: api/security-alert-get.md
+          - name: Update alert
+            href: api/security-alert-update.md
+          - name: Create comment for alert
+            href: api/security-alert-post-comments.md
+        - name: Alert evidence
+          items:
+          - name: Alert evidence
+            href: resources/security-alertevidence.md
+          - name: Analyzed message evidence
+            href: resources/security-analyzedMessageEvidence.md
+          - name: Cloud application evidence
+            href: resources/security-cloudApplicationEvidence.md
+          - name: Device evidence
+            href: resources/security-deviceEvidence.md
+          - name: File evidence
+            href: resources/security-fileEvidence.md
+          - name: IP evidence
+            href: resources/security-ipEvidence.md
+          - name: Mailbox evidence
+            href: resources/security-mailboxEvidence.md
+          - name: Mail cluster evidence
+            href: resources/security-mailClusterEvidence.md
+          - name: OAuth application evidence
+            href: resources/security-oauthApplicationEvidence.md
+          - name: Process evidence
+            href: resources/security-processEvidence.md
+          - name: Registry key evidence
+            href: resources/security-registryKeyEvidence.md
+          - name: Registry value evidence
+            href: resources/security-registryValueEvidence.md
+          - name: Security group evidence
+            href: resources/security-securityGroupEvidence.md
+          - name: URL evidence
+            href: resources/security-urlEvidence.md
+          - name: User evidence
+            href: resources/security-userEvidence.md
+        - name: Incident
+          items:
+          - name: Incident
+            href: resources/security-incident.md
+          - name: List incidents
+            href: api/security-list-incidents.md
+          - name: Get incident
+            href: api/security-incident-get.md
+          - name: Update incident
+            href: api/security-incident-update.md
+          - name: Create comment for incident
+            href: api/security-incident-post-comments.md
       - name: eDiscovery
         items:
         - name: Case
@@ -6817,6 +6911,16 @@ items:
             href: api/informationprotection-post-threatassessmentrequests.md
           - name: Get
             href: api/threatassessmentrequest-get.md
+      - name: Legacy alert
+        items:
+        - name: Alert
+          href: resources/alert.md
+        - name: List alerts
+          href: api/alert-list.md
+        - name: Get alert
+          href: api/alert-get.md
+        - name: Update alert
+          href: api/alert-update.md
       - name: Secure score
         href: resources/securescore.md
         items:

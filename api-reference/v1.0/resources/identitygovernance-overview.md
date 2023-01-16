@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 08/27/2022
 ---
 
 # Overview of Azure AD Identity Governance using Microsoft Graph
