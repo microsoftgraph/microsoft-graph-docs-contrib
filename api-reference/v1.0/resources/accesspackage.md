@@ -65,11 +65,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackage",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "isHidden": "Boolean",
   "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String", 
+  "id": "String (identifier)",
+  "isHidden": "Boolean",
   "modifiedDateTime": "String (timestamp)"
 }
 ```
