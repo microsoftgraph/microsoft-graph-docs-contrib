@@ -32,6 +32,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| allowAccessToMeetingChatHistory | Boolean | Indicates whether attendees can access meeting chat history. |
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
@@ -114,6 +115,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 }-->
 ```json
 {
+  "allowAccessToMeetingChatHistory": "Boolean",
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
