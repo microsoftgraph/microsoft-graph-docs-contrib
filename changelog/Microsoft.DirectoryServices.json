@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationDefault"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inboundOutboundPolicyConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [inboundOutboundPolicyConfiguration](https://docs.microsoft.com/graph/api/resources/inboundoutboundpolicyconfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [inboundOutboundPolicyConfiguration](https://learn.microsoft.com/graph/api/resources/inboundoutboundpolicyconfiguration?view=graph-rest-beta) resource.",
           "Target": "inboundOutboundPolicyConfiguration"
         }
       ],
