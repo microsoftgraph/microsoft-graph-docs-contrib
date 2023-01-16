@@ -330,8 +330,7 @@ items:
               - name: Integrate your Teams app with education assignments
                 href: msgraph-customer-teamsapps.md
               - name: Share assignments with an embedded Teams application
-                href: msgraph-create-assignmentwithteamsapp-content.md
-                
+                href: msgraph-create-assignmentwithteamsapp-content.md     
       - name: Extensions
         items:
           - name: Overview
