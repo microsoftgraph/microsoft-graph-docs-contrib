@@ -2203,6 +2203,13 @@ Possible values for user account types (group membership), per Windows definitio
 |notNotified|
 |unknownFutureValue|
 
+### weakAlgorithms values 
+
+|Member|
+|:---|
+|rsaSha1|
+|unknownFutureValue|
+
 ### authenticationProtocol values 
 
 |Member|
