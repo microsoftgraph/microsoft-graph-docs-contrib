@@ -41,11 +41,11 @@ The following is a JSON representation of the resource.
 ```json
 {
   "applicationVersion": "String",
+  "azureADAppId": "String",
+  "communicationServiceId": "String",
   "headerValue": "String",
   "platform": "String",
-  "productFamily": "String",
-  "communicationServiceId": "String",
-  "azureADAppId": "String"
+  "productFamily": "String"
 }
 ```
 
