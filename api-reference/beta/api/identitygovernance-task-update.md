@@ -7,13 +7,13 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update workflow (lifecycle workflow)
+# Update task (within a workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object.
+Update the properties of a [task](../resources/identitygovernance-task.md) object.
 
 ## Permissions
 
@@ -107,4 +107,3 @@ Content-length: 454
 ``` http
 HTTP/1.1 204 No Content
 ```
-
