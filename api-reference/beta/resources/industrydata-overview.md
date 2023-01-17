@@ -68,14 +68,20 @@ You can integrate industry data APIs with 3rd-party apps. To enable this integra
 - For permissions via a consent process, see [Microsoft Graph permissions reference](/graph/permissions-reference)
 - For steps to resolve common errors, see [Resolve Microsoft Graph authorization errors](/graph/resolve-auth-errors)
 
-> **Note:** We have plans to expand out the scopes that are specific to industry data; however, until then the industry data APIs support the following existing Microsoft Graph permissions.
-
-| Permissions                     | Type        | Description                                                                                                    |
-| ------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------- |
-| EduAdministration.Read          | Delegated   | Allows the app to read the state and settings of all Microsoft education apps on behalf of a signed-in user.   |
-| EduAdministration.ReadWrite     | Delegated   | Allows the app to manage the state and settings of all Microsoft education apps on behalf of a signed-in user. |
-| EduAdministration.Read.All      | Application | Read the state and settings of all Microsoft education apps.                                                   |
-| EduAdministration.ReadWrite.All | Application | Manage the state and settings of all Microsoft education apps.                                                 |
+| Permissions Scope                         | Description                                               | Delegated | Application | Admin Consent |
+| ----------------------------------------- | --------------------------------------------------------- | --------- | ----------- | ------------- |
+| IndustryData.ReadBasic.All                | Read basic Industry Data service and resource definitions | Yes       | Yes         | No            |
+| IndustryData-DataConnector.Read.All       | View data connector definitions                           | Yes       | Yes         | Yes           |
+| IndustryData-DataConnector.ReadWrite.All  | Manage data connector definitions                         | Yes       | Yes         | Yes           |
+| IndustryData-DataConnector.Upload.All     | Upload files to a data connector                          | Yes       | Yes         | Yes           |
+| IndustryData-InboundFlow.Read.All         | View inbound flow definitions                             | Yes       | Yes         | Yes           |
+| IndustryData-InboundFlow.ReadWrite.All    | Manage inbound flow definitions                           | Yes       | Yes         | Yes           |
+| IndustryData-ReferenceDefinition.Read.All | View Reference Definitions                                | Yes       | Yes         | Yes           |
+| IndustryData-Run.Read.All                 | View current and previous Runs                            | Yes       | Yes         | Yes           |
+| IndustryData-SourceSystem.Read.All        | View Source System definitions                            | Yes       | Yes         | Yes           |
+| IndustryData-SourceSystem.ReadWrite.All   | Manage Source System definitions                          | Yes       | Yes         | Yes           |
+| IndustryData-TimePeriod.Read.All          | Read Time Period definitions                              | Yes       | Yes         | Yes           |
+| IndustryData-TimePeriod.ReadWrite.All     | Manage Time Period definitions                            | Yes       | Yes         | Yes           |
 
 ## Concepts
 
@@ -146,16 +152,32 @@ Transformation of the data is often shaped by each individual user's role within
 }
 ```
 
-## Scenarios
+### Data Connectors
 
-### Most common
+A [industryDataConnector](industrydata-industrydataconnector.md) acts as a bridge between a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) and [inboundFlow](industrydata-inboundflow.md). It is responsible for acquiring data from an external source and providing the data to inbound data flows.
 
-The two most common scenarios are _Upload and Validate CSV Data_ and _Run Health and Monitoring_.
+#### Uploading and Validating CSV Data
 
-- [Upload and Validate CSV Data](resources/industrydata-azuredatalakeconnector.md)
-- [Run Health and Monitoring](resources/industrydata-industrydatarun.md)
+For more information:
 
-### Other scenarios
+- [Data Ingestion with SDS v2.1 CSV](schooldatasync/Data-Ingestion-with-SDS-v2.1-CSV.md)
+- [SDS V2.1 CSV file format](schooldatasync/sds-v2.1-csv-file-format.md)
+  - File names and column headers are case-sensitive
+  - CSV files must be in UTF-8 format
+  - We don't accept line breaks in incoming data.
+  - To review and download sample set of SDS V2.1 CSV files, [see the SDS GitHub Repository](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples).
 
-- [Create inbound flow](resources/industrydata-inboundflow.md)
-- [Edit inbound flow](resources/industrydata-inboundflow.md)
+> [!IMPORTANT]
+> The [industryDataConnector](industrydata-industrydataconnector.md) does not accept delta changes so each upload session must contain the complete data set. Supplying only partial or delta data will result in any missing records being transitioned to an inactive state.
+
+##### Request an Upload Session
+
+The [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) uses CSV files uploaded to a secure container. This container lives within the context of a single [fileUploadSession](industrydata-fileuploadsession.md) and is automatically destroyed after data validation or the **fileUploadSession** expires.
+
+The current **fileUploadSession** is retrieved from an **azureDataLakeConnector** via the [getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md). The **getUploadSession** function returns the SAS URL for uploading the CSV files.
+
+##### Validating Uploaded Files
+
+Once all CSV data has been successfully uploaded, the data must be validated before any inbound data flows can being processing the data. This is accomplished by calling the [validate](../api/industrydata-industrydataconnector-validate.md) action of the **azureDataLakeConnector**. This will finalize the upload session and validate that all required files were provided and properly formed. Once validated, the data becomes available for processing by inbound data files.
+
+The **validate** action is a long-running [fileValidateOperation](industrydata-fileValidateOperation.md). A link to the **fileValidateOperation** is returned in the `Location` header of the **validate** response. The **fileValidateOperation** provides the current status and final validation results.
