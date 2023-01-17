@@ -21,7 +21,7 @@ Additionally, industry data provides resources that you can use to retrieve stat
 
 Industry data is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process will combine and normalize the imported data to land in the Azure Data Lake of the tenant.
 
-:::image type="content" source="../../images/industrydata-overview.png" alt-text="Graphic that shows industryData overview." lightbox="../../images/industrydata-overview.png":::
+:::image type="content" source="../../../concepts/images/industrydata-overview.png" alt-text="Graphic that shows industryData overview." lightbox="../../../concepts/images/industrydata-overview.png":::
 
 First, connect to the data of your institution. Define an inbound flow: Create **sourceSystemDefinition**, **dataConnector**, and **yearTimePeriodDefinition**. By default, your inbound flow will activate twice (2x) daily (called a _run_).
 
@@ -67,21 +67,6 @@ You can integrate industry data APIs with 3rd-party apps. To enable this integra
 - To read and write resources on behalf of a user, see [Get access on behalf of a user](/graph/auth-v2-user)
 - For permissions via a consent process, see [Microsoft Graph permissions reference](/graph/permissions-reference)
 - For steps to resolve common errors, see [Resolve Microsoft Graph authorization errors](/graph/resolve-auth-errors)
-
-| Permissions Scope                         | Description                                               | Delegated | Application | Admin Consent |
-| ----------------------------------------- | --------------------------------------------------------- | --------- | ----------- | ------------- |
-| IndustryData.ReadBasic.All                | Read basic Industry Data service and resource definitions | Yes       | Yes         | No            |
-| IndustryData-DataConnector.Read.All       | View data connector definitions                           | Yes       | Yes         | Yes           |
-| IndustryData-DataConnector.ReadWrite.All  | Manage data connector definitions                         | Yes       | Yes         | Yes           |
-| IndustryData-DataConnector.Upload.All     | Upload files to a data connector                          | Yes       | Yes         | Yes           |
-| IndustryData-InboundFlow.Read.All         | View inbound flow definitions                             | Yes       | Yes         | Yes           |
-| IndustryData-InboundFlow.ReadWrite.All    | Manage inbound flow definitions                           | Yes       | Yes         | Yes           |
-| IndustryData-ReferenceDefinition.Read.All | View Reference Definitions                                | Yes       | Yes         | Yes           |
-| IndustryData-Run.Read.All                 | View current and previous Runs                            | Yes       | Yes         | Yes           |
-| IndustryData-SourceSystem.Read.All        | View Source System definitions                            | Yes       | Yes         | Yes           |
-| IndustryData-SourceSystem.ReadWrite.All   | Manage Source System definitions                          | Yes       | Yes         | Yes           |
-| IndustryData-TimePeriod.Read.All          | Read Time Period definitions                              | Yes       | Yes         | Yes           |
-| IndustryData-TimePeriod.ReadWrite.All     | Manage Time Period definitions                            | Yes       | Yes         | Yes           |
 
 ## Concepts
 

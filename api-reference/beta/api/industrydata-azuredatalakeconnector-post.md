@@ -7,13 +7,13 @@ ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Create industryDataConnector
+# Create azureDataLakeConnector
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
+Create a new [azureDataLakeConnector](../resources/industrydata-azureDataLakeConnector.md) object.
 
 ## Permissions
 
@@ -45,9 +45,9 @@ POST /external/industryData/dataConnectors
 
 ## Request body
 
-In the request body, supply a JSON representation of the [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
+In the request body, supply a JSON representation of the [azureDataLakeConnector](../resources/industrydata-azureDataLakeConnector.md) object.
 
-You can specify the following properties when you create an **industryDataConnector**.
+You can specify the following properties when you create an **azureDataLakeConnector**.
 
 | Property    | Type   | Description                               |
 | :---------- | :----- | :---------------------------------------- |
@@ -55,7 +55,7 @@ You can specify the following properties when you create an **industryDataConnec
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [azureDataLakeConnector](../resources/industrydata-azureDataLakeConnector.md) object in the response body.
 
 ## Examples
 
@@ -65,7 +65,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_industrydataconnector_from_"
+  "name": "create_azureDataLakeConnector_from_"
 }
 -->
 
@@ -90,7 +90,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.industryDataConnector"
+  "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector"
 }
 -->
 

@@ -1,6 +1,6 @@
 ---
 title: "industryDataRun: getStatistics"
-description: "Calculate statistics for a run group."
+description: "Calculate statistics for a run."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculate statistics for a run group.
+Function for retrieving statistics for an [industryDataRun](industrydata-industrydatarun.md).
 
 ## Permissions
 
@@ -33,8 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/runs/{industryDataRunId}/getStatistics
+GET /external/industryData/runs/{industryDataRunId}/getStatistics()
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -64,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/runs/918d4a8f-599b-4f6a-b409-e892855db534/getStatistics
+GET /external/industryData/runs/918d4a8f-599b-4f6a-b409-e892855db534/getStatistics
 ```
 
 ### Response

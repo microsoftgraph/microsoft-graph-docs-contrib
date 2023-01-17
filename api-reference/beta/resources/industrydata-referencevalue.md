@@ -15,47 +15,18 @@ Namespace: microsoft.graph.industryData
 
 An abstract type that represents a pointer to an entry in the [referenceDefinition](industrydata-referencedefinition.md) collection with a specific reference type.
 
-The **referenceValue** is designed to simplify the selection of the **referenceDefinition** and to reduce the developer configuration by only requiring the **code** value. The type of reference value is defined by the **referenceValue** type, removing ambiguity about which **referenceDefinition** is expected for a particular property.
-
 Base type of [identifierTypeReferenceValue](industrydata-identifiertypereferencevalue.md), [roleReferenceValue](industrydata-rolereferencevalue.md), [userMatchTargetReferenceValue](industrydata-usermatchtargetreferencevalue.md), and [yearReferenceValue](industrydata-yearreferencevalue.md).
-
-#### Example Usage
-
-The `userMatchingSettings.sourceIdentifier` property takes a `industryDataIdentifierTypeReferenceValue` type. This is a `industryDataReferenceValue` type bound to a `RefIdentifierType` reference definition.
-
-Selecting the desired `RefIdentifierType` can be done either by providing a `code` value
-
-```json
-"sourceIdentifier": {
-    "code": "username"
-},
-```
-
-or binding the `industryDataReferenceDefinition` entity directly.
-
-```json
-"sourceIdentifier": {
-    "value@odata.bind": "external/industryData/referenceDefinitions/RefIdentifierType-username"
-},
-```
-
-| Type                                                                                        | ReferenceType        |
-| ------------------------------------------------------------------------------------------- | -------------------- |
-| [identifierTypeReferenceValue](industrydata-identifiertypereferencevalue.md)   | `RefIdentifierType`  |
-| [roleReferenceValue](industrydata-rolereferencevalue.md)                       | `RefRole`            |
-| [userMatchTargetReferenceValue](industrydata-usermatchtargetreferencevalue.md) | `RefUserMatchTarget` |
-| [yearReferenceValue](industrydata-yearreferencevalue.md)                       | `RefAcademicYear`    |
 
 ## Properties
 
-| Property | Type   | Description                                        |
-| :------- | :----- | :------------------------------------------------- |
+| Property | Type   | Description                                            |
+| :------- | :----- | :----------------------------------------------------- |
 | code     | String | The code of the desired **referenceDefinition** entry. |
 
 ## Relationships
 
-| Relationship | Type                                                                    | Description                                        |
-| :----------- | :---------------------------------------------------------------------- | :------------------------------------------------- |
+| Relationship | Type                                                       | Description                                            |
+| :----------- | :--------------------------------------------------------- | :----------------------------------------------------- |
 | value        | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. |
 
 ## JSON representation

@@ -65,7 +65,7 @@ The following is an example of a request.
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/external/industryData/years/0c629a1a-a85c-4365-bdf0-623a32ca69cb
+DELETE /external/industryData/years/0c629a1a-a85c-4365-bdf0-623a32ca69cb
 ```
 
 ### Response
@@ -80,49 +80,4 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
-```
-
-### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.yearTimePeriodDefinition"
-}
--->
-
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
-    "id": "aa050107-5784-4a8e-1876-08daddab21bc",
-    "displayName": "Rostering source",
-    "vendor": null,
-    "userMatchingSettings": [
-        {
-            "priorityOrder": 0,
-            "sourceIdentifier": {
-                "code": "username"
-            },
-            "matchTarget": {
-                "code": "userPrincipalName"
-            }
-        },
-        {
-            "priorityOrder": 1,
-            "sourceIdentifier": {
-                "code": "username"
-            },
-            "matchTarget": {
-                "code": "userPrincipalName"
-            }
-        }
-    ]
-}
 ```
