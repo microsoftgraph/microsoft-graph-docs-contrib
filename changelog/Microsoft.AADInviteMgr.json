@@ -1,0 +1,22 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "a4242614-2ce3-47da-993c-bc13880676bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "resetRedemption",
+          "ChangeType": "Addition",
+          "Description": "Added the **resetRedemption** property to the [invitation](https://docs.microsoft.com/en-us/graph/api/resources/invitation?view=graph-rest-1.0) resource.",
+          "Target": "invitation"
+        }
+      ],
+      "Id": "a4242614-2ce3-47da-993c-bc13880676bf",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-11-30T21:52:01.9215253Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
+  ]
+}

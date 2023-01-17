@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/01/2022
 ---
 
 # Add custom data to groups using schema extensions 

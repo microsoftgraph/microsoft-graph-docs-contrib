@@ -25,6 +25,7 @@ The following authentication methods are derived from the **authenticationMethod
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from a policy.|
 |id|String|The policy name.|
 |state|authenticationMethodState|The state of the policy. Possible values are: `enabled`, `disabled`.|
 
