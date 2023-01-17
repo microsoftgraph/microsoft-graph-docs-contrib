@@ -69,7 +69,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_update_workflow"
+  "name": "lifecycleworkflows_update_task"
 }
 -->
 ``` http
