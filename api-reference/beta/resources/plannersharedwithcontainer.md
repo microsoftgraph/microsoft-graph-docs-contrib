@@ -18,26 +18,29 @@ Represents the relationship of a planner Plan to a planner Container. Plans can 
 Inherits from [plannerPlanContainer](plannerplancontainer.md).
 
 ## Properties
+
 |Property|Type|Description|
-|:---|:---|:---|
-|accessLevel|plannerPlanAccessLevel|The maxmimum access level the shared container can provide to the plan. The possible values are: `readAccess`, `readWriteAccess`, `fullAccess`, `unknownFutureValue`.|
-|containerId|String|The identifier of the resource that contains the plan. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md).|
-|type|plannerContainerType|The type of the resource that contains the plan. Possible values are: `group`, `unknownFutureValue`, `roster`, `project`, and `driveItem`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`, `driveItem`. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md).|
-|url|String|The full canonical URL of the container. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md).|
+|:-------|:---|:----------|
+| accessLevel| plannerPlanAccessLevel | The maxmimum access level the shared container can provide to the plan. The possible values are: `readAccess`, `readWriteAccess`, `fullAccess`, `unknownFutureValue`. |
+| containerId | String | The identifier of the resource that contains the plan. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md). |
+| type | plannerContainerType | The type of the resource that contains the plan. Possible values are: `group`, `unknownFutureValue`, `roster`, `project`, and `driveItem`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`, `driveItem`. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md). |
+| url | String | The full canonical URL of the container. Optional. Inherited from [plannerPlanContainer](plannerplancontainer.md). |
 
 ### plannerPlanAccessLevel values
-The access level represents the level of access a plan can infer from the container.
-|Type|Description|
-|----|-----------|
-|readAccess| The highest level of access that a user can gain through this relationship will be read access to the plan. |
-|readWriteAccess| The highest level of access that a user can gain through this relationship will be read and write access to the plan. |
-|fullAccess| The highest level of access that a user can gain through this relationship will be full access to the plan. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+
+|Member|Description|
+|:-----|:----------|
+| readAccess | The highest level of access that a user can gain through this relationship will be read access to the plan. |
+| readWriteAccess | The highest level of access that a user can gain through this relationship will be read and write access to the plan. |
+| fullAccess | The highest level of access that a user can gain through this relationship will be full access to the plan. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
