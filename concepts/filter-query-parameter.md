@@ -294,3 +294,9 @@ Hiding because the latest iteration of the report doesn't include these properti
 ## See also
 
 + [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
+
+
+<!-- Links -->
+
+[odata-query]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
+[graph-explorer]: https://developer.microsoft.com/graph/graph-explorer

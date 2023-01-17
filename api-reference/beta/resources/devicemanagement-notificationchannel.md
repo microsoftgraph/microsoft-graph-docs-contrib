@@ -13,7 +13,9 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about the notification channels of an alert rule selected by a user.
+Represents information about the notification channels of an [alert rule](../resources/devicemanagement-alertrule.md) selected by a user.
+
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
 
 ## Properties
 
