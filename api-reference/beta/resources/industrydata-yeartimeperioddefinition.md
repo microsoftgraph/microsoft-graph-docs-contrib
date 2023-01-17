@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents annual time periods such as academic or fiscal years. This resource allows the association of incoming data to be associated to a year to help build historical data, day-by-day, year-over-year, as time progresses. In the case of data domain for education rostering this is commonly referred to as an academic year. The approach is aligned to an academic year vs. a calendar year.
+Represents annual time periods such as academic or fiscal years. This resource allows the association of incoming data to a year to help build historical data, day-by-day, year-over-year, as time progresses. In the case of data domain for education rostering, this is commonly referred to as an academic year. The approach is aligned to an academic year versus a calendar year.
 
 ## Methods
 

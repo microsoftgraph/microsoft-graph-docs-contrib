@@ -15,6 +15,8 @@ Namespace: microsoft.graph.industryData
 
 Represents an abstract type that provides the resources to establish a connection with a data source.
 
+Base type of [fileDataConnector](../resources/industrydata-filedataconnector.md).
+
 ## Methods
 
 | Method                                                                                        | Return type                                                                                            | Description                                                                                                        |

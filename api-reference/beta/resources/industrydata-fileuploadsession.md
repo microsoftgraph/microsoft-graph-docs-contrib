@@ -15,15 +15,15 @@ Namespace: microsoft.graph.industryData
 
 Represents the file upload session that contains details about the session and container.
 
-The **industryDataAzureDataLakeConnector** uses CSV files uploaded to a secure container that lives only for a finite period of time and is created by calling [azureDataLakeConnector: getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md). You can then upload the required CSV files to the provided shared access signature (SAS) URI in **sessionUri**.
+The [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) uses CSV files uploaded to a secure container that lives only for a finite period of time and is created by calling [azureDataLakeConnector: getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md). You can then upload the required CSV files to the provided shared access signature (SAS) URI in **sessionUri**.
 
 ## Properties
 
 | Property                    | Type           | Description                                               |
 | :-------------------------- | :------------- | :-------------------------------------------------------- |
-| containerExpirationDateTime | DateTimeOffset | The expiration date and time for the container.           |
+| containerExpirationDateTime | DateTimeOffset | The expiration date and time for the container. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.          |
 | containerId                 | String         | The container ID where the files are uploaded.            |
-| sessionExpirationDateTime   | DateTimeOffset | The expiration date and time for the file upload session. |
+| sessionExpirationDateTime   | DateTimeOffset | The expiration date and time for the file upload session. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | sessionUrl                  | String         | The Azure Storage SAS URI to upload source files to.      |
 
 ## Relationships

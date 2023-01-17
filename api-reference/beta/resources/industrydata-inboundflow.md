@@ -21,9 +21,11 @@ The following data is required before using this resource:
 - [dataConnector](../api/industrydata-industrydataroot-post-dataconnectors.md)
 - [yearTimePeriodDefinition](../api/industrydata-industrydataroot-post-years.md)
 
-By default, your inbound flow activates twice (2x) daily. For more details, see [industryDataRun](industrydata-industrydatarun.md).
+By default, the inbound flow activates twice (2x) daily. For more details, see [industryDataRun](industrydata-industrydatarun.md).
 
 Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
+
+Base type of [inboundFileFlow](../resources/industrydata-inboundfileflow.md).
 
 ## Methods
 
@@ -39,7 +41,7 @@ Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
 
 | Property           | Type            | Description                                                                                                                                                                                                                                            |
 | :----------------- | :-------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                   |
+| dataDomain         | inboundDomain   | The broad category of data that this flow imports. The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                   |
 | displayName        | String          | The name of the activity. Inherited from [industryDataActivity](industrydata-industrydataactivity.md).                                                                                                                                                 |
 | effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.             |
 | expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.               |
@@ -50,7 +52,7 @@ Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
 | Relationship  | Type                                                                 | Description                                                                                  |
 | :------------ | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
 | dataConnector | [industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system.     |
-| year          | [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to.                            |
+| year          | [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data brought in via this flow applies to.                                  |
 
 ## JSON representation
 
