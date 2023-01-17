@@ -129,8 +129,7 @@ Content-Type: application/json
     {
       "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
-      "name": "Test App",
-      "version": "1.0.1",
+      "displayName": "Test App",
       "distributionMethod": "Organization"
     }
   ]
@@ -200,8 +199,7 @@ Content-Type: application/json
     {
       "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
-      "name": "Test App",
-      "version": "1.0.1",
+      "displayName": "Test App",
       "distributionMethod": "Organization"
     }
   ]
@@ -342,8 +340,7 @@ Content-Type: application/json
     {
       "id": "876df28f-2e78-423b-94a5-44181bd0e225",
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
-      "name": "Test App",
-      "version": "1.0.1",
+      "displayName": "Test App",
       "distributionMethod": "Organization",
       "appDefinitions": [
         {
@@ -580,7 +577,3 @@ Content-Type: application/json
 - [List apps installed in a team](team-list-installedapps.md)
 - [List apps installed in a chat](chat-list-installedapps.md)
 - [List apps installed in the personal scope of a user](userteamwork-list-installedapps.md)
-
-
-
-
