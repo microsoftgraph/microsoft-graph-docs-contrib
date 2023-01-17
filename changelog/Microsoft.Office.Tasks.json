@@ -1335,7 +1335,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1343,7 +1343,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1351,7 +1351,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-beta) resource.",
           "Target": "plannerPlanDetails"
         },
         {
@@ -1359,7 +1359,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         },
         {
@@ -1367,7 +1367,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1375,7 +1375,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
@@ -1383,7 +1383,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerBucketTaskBoardTaskFormat"
         },
         {
@@ -1391,7 +1391,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerProgressTaskBoardTaskFormat"
         },
         {
@@ -1399,7 +1399,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1407,7 +1407,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1415,7 +1415,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-beta) resource.",
           "Target": "plannerPlanDetails"
         },
         {
@@ -1423,7 +1423,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         },
         {
@@ -1431,7 +1431,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1439,7 +1439,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
@@ -1447,7 +1447,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerBucketTaskBoardTaskFormat"
         },
         {
@@ -1455,7 +1455,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerProgressTaskBoardTaskFormat"
         },
         {
@@ -1463,14 +1463,14 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerRoster](https://learn.microsoft.com/en-us/graph/api/resources/plannerroster?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerRoster](https://learn.microsoft.com/en-us/graph/api/resources/plannerroster?view=graph-rest-beta) resource.",
           "Target": "plannerRoster"
         }
       ],
       "Id": "c31056e4-ae34-4a4e-acd3-d660d4a5266c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2023-01-10T00:00:00",
+      "CreatedDateTime": "2023-01-17T00:00:00",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
@@ -1481,7 +1481,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1489,7 +1489,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1497,7 +1497,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [planner](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [planner](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-1.0) resource.",
           "Target": "plannerPlanDetails"
         },
         {
@@ -1505,7 +1505,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) resource.",
           "Target": "plannerTaskDetails"
         },
         {
@@ -1513,7 +1513,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-1.0) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1521,7 +1521,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
@@ -1529,7 +1529,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerBucketTaskBoardTaskFormat"
         },
         {
@@ -1537,7 +1537,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.Read.All` to the read operations of [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerProgressTaskBoardTaskFormat"
         },
         {
@@ -1545,7 +1545,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1553,7 +1553,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1561,7 +1561,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-1.0) resource.",
           "Target": "plannerPlanDetails"
         },
         {
@@ -1569,7 +1569,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) resource.",
           "Target": "plannerTaskDetails"
         },
         {
@@ -1577,7 +1577,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-1.0) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1585,7 +1585,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
@@ -1593,7 +1593,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerBucketTaskBoardTaskFormat"
         },
         {
@@ -1601,14 +1601,14 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission of `Tasks.ReadWrite.All` to the read and write operations of [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerProgressTaskBoardTaskFormat"
         }
       ],
       "Id": "17dccbf8-ac36-44d2-8c03-90abef046e63",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-01-10T00:00:00",
+      "CreatedDateTime": "2023-01-17T00:00:00",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     }
