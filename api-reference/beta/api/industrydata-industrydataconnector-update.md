@@ -74,8 +74,8 @@ PATCH /external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
 Content-type: application/json
 
 {
-    "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",
-    "displayName": "API Monitor 60201009"
+  "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",
+  "displayName": "API Monitor 60201009"
 }
 ```
 

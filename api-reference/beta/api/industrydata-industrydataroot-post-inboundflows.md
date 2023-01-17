@@ -79,12 +79,12 @@ Content-length: 246
 
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
+  "dataConnector@odata.bind": "https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271",
   "dataDomain": "educationRostering",
   "displayName": "Inbound rostering flow",
   "effectiveDateTime": "2023-03-12T16:40:46.924769+05:30",
   "expirationDateTime": "2023-03-13T16:40:46.924769+05:30",
-  "year@odata.bind": "https://graph.microsoft.com/beta/external/industryData/years/ebf18762-ab92-487e-21d1-08daddab28bb",
-  "dataConnector@odata.bind": "https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271"
+  "year@odata.bind": "https://graph.microsoft.com/beta/external/industryData/years/ebf18762-ab92-487e-21d1-08daddab28bb"
 }
 ```
 
@@ -106,12 +106,12 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-    "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
-    "displayName": "Inbound rostering fow",
-    "readinessStatus": "ready",
-    "dataDomain": "educationRostering",
-    "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
-    "expirationDateTime": "2023-03-13T11:10:46.924769Z"
+  "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
+  "dataDomain": "educationRostering",
+  "displayName": "Inbound rostering fow",
+  "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
+  "expirationDateTime": "2023-03-13T11:10:46.924769Z",
+  "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
+  "readinessStatus": "ready"
 }
 ```

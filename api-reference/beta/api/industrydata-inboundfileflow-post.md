@@ -60,7 +60,7 @@ You can specify the following properties when you create an **inboundFileFlow**.
 | displayName        | String                                                                            | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                         |
 | effectiveDateTime  | DateTimeOffset                                                                    | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
 | expirationDateTime | DateTimeOffset                                                                    | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.   |
-| dataConnector      | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                 |
+| dataConnector      | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                     |
 | year               | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                                            |
 
 ## Response
@@ -86,12 +86,12 @@ Content-length: 246
 
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-  "displayName": "String",
+  "dataConnector@odata.bind": "https://graph.microsoft.com/beta/external/industryData/dataConnectors/{dataConnectorId}",
   "dataDomain": "String",
+  "displayName": "String",
   "effectiveDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",
-  "year@odata.bind": "https://graph.microsoft.com/beta/external/industryData/years/{yearId}",
-  "dataConnector@odata.bind": "https://graph.microsoft.com/beta/external/industryData/dataConnectors/{dataConnectorId}"
+  "year@odata.bind": "https://graph.microsoft.com/beta/external/industryData/years/{yearId}"
 }
 ```
 

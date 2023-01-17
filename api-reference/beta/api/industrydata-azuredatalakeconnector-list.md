@@ -88,19 +88,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/dataConnectors",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/external/industryData/dataConnectors?$skiptoken=id-%27ff8c6a87-31d2-43ad-e990-08dacc85e8cd%27",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
-            "id": "51dca0a0-85f6-4478-f526-08daddab2271",
-            "displayName": "Rostering connector"
-        },
-        {
-            "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
-            "id": "f02aa680-4cdc-4d57-f4e1-08daddab2271",
-            "displayName": "CSV connector"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/dataConnectors",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/external/industryData/dataConnectors?$skiptoken=id-%27ff8c6a87-31d2-43ad-e990-08dacc85e8cd%27",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+      "displayName": "Rostering connector",
+      "id": "51dca0a0-85f6-4478-f526-08daddab2271"
+    },
+    {
+      "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+      "displayName": "CSV connector",
+      "id": "f02aa680-4cdc-4d57-f4e1-08daddab2271"
+    }
+  ]
 }
 ```

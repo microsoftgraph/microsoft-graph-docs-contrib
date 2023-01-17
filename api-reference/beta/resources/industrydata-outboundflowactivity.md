@@ -19,16 +19,16 @@ Inherits from [industryDataRunActivity](industrydata-industrydatarunactivity.md)
 
 ## Properties
 
-| Property      | Type                                                       | Description                                                                                                                                                                                                                                                                        |
-| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Property      | Type                                          | Description                                                                                                                                                                                                                                                           |
+| :------------ | :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | blockingError | [microsoft.graph.publicError](publicerror.md) | An error object to diagnose critical failures in an activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md).                                                                                                                      |
-| displayName   | String                                                     | The name of the running flow. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md).                                                                                                                                                      |
-| status        | industryDataActivityStatus                                 | The current status of the activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md). The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| displayName   | String                                        | The name of the running flow. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md).                                                                                                                                                      |
+| status        | industryDataActivityStatus                    | The current status of the activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md). The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 
-| Relationship | Type                                                                      | Description                                                                                                                          |
-| :----------- | :------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------- |
+| Relationship | Type                                                         | Description                                                                                                                |
+| :----------- | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | activity     | [industryDataActivity](industrydata-industrydataactivity.md) | The flow that was run by this activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md). |
 
 ## JSON representation
@@ -47,7 +47,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.outboundFlowActivity",
-  "blockingError": { "@odata.type": "microsoft.graph.publicError" },
+  "blockingError": {
+    "@odata.type": "microsoft.graph.publicError"
+  },
   "displayName": "String",
   "status": "String"
 }

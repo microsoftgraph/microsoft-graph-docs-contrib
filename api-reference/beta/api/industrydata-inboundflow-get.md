@@ -89,12 +89,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-    "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
-    "displayName": "Inbound Flow",
-    "readinessStatus": "ready",
-    "dataDomain": "educationRostering",
-    "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
-    "expirationDateTime": "2023-03-13T11:10:46.924769Z"
+  "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
+  "dataDomain": "educationRostering",
+  "displayName": "Inbound Flow",
+  "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
+  "expirationDateTime": "2023-03-13T11:10:46.924769Z",
+  "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
+  "readinessStatus": "ready"
 }
 ```

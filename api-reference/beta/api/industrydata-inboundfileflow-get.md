@@ -19,10 +19,10 @@ Read the properties and relationships of an [inboundFileFlow](../resources/indus
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                   |
-| :------------------------------------- | :---------------------------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                               |
+| :------------------------------------- | :------------------------------------------------------------------------ |
 | Delegated (work or school account)     | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                |
+| Delegated (personal Microsoft account) | Not supported.                                                            |
 | Application                            | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All |
 
 ## HTTP request
@@ -89,12 +89,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-    "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
-    "displayName": "Inbound Flow",
-    "readinessStatus": "ready",
-    "dataDomain": "educationRostering",
-    "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
-    "expirationDateTime": "2023-03-13T11:10:46.924769Z"
+  "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
+  "dataDomain": "educationRostering",
+  "displayName": "Inbound Flow",
+  "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
+  "expirationDateTime": "2023-03-13T11:10:46.924769Z",
+  "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
+  "readinessStatus": "ready"
 }
 ```

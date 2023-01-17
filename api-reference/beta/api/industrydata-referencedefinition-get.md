@@ -89,13 +89,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "RefAcademicSubject-01",
-    "referenceType": "RefAcademicSubject",
-    "code": "01",
-    "source": "microsoft.com",
-    "isDisabled": false,
-    "sortIndex": 10,
-    "createdDateTime": "0001-01-01T00:00:00Z",
-    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+  "code": "01",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "id": "RefAcademicSubject-01",
+  "isDisabled": false,
+  "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+  "referenceType": "RefAcademicSubject",
+  "sortIndex": 10,
+  "source": "microsoft.com"
 }
 ```

@@ -19,16 +19,16 @@ Transformation of the data is often shaped by each individual user's role within
 
 ## Methods
 
-| Method                                                                     | Return type                                                                                 | Description                                                                                            |
-| :------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| Method                                                                     | Return type                                                                    | Description                                                                               |
+| :------------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
 | [List roleGroups](../api/industrydata-industrydataroot-list-rolegroups.md) | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md) collection | Get a list of the [roleGroup](industrydata-rolegroup.md) objects and their properties.    |
 | [Get roleGroup](../api/industrydata-rolegroup-get.md)                      | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md)            | Read the properties and relationships of a [roleGroup](industrydata-rolegroup.md) object. |
 
 ## Properties
 
-| Property    | Type                                                                                                          | Description                                  |
-| :---------- | :------------------------------------------------------------------------------------------------------------ | :------------------------------------------- |
-| displayName | String                                                                                                        | The name of the role group.                  |
+| Property    | Type                                                                                             | Description                                  |
+| :---------- | :----------------------------------------------------------------------------------------------- | :------------------------------------------- |
+| displayName | String                                                                                           | The name of the role group.                  |
 | roles       | [microsoft.graph.industryData.roleReferenceValue](industrydata-rolereferencevalue.md) collection | The set of roles included in the role group. |
 
 ## Relationships
@@ -52,7 +52,9 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.industryData.roleGroup",
   "displayName": "String",
   "roles": [
-    { "@odata.type": "microsoft.graph.industryData.roleReferenceValue" }
+    {
+      "@odata.type": "microsoft.graph.industryData.roleReferenceValue"
+    }
   ]
 }
 ```

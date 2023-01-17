@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | IndustryData-SourceSystem.ReadWrite.All     |
 
-
 ## HTTP request
 
 <!-- {
@@ -76,7 +75,7 @@ Content-Type: application/json
 Content-length: 250
 
 {
-   "vendor": "LMS Vendor"
+  "vendor": "LMS Vendor"
 }
 ```
 

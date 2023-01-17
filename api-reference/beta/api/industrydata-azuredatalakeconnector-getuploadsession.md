@@ -41,9 +41,9 @@ GET /external/industryData/dataConnectors/{industryDataConnectorId}/microsoft.gr
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
-| Parameter    | Type    | Description                                                                                                                               |
-| :----------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| resetSession | Boolean | `True` indicates that a new [fileUploadSession](../resources/industrydata-fileuploadsession.md) with an empty container is returned.      |
+| Parameter    | Type    | Description                                                                                                                          |
+| :----------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------- |
+| resetSession | Boolean | `True` indicates that a new [fileUploadSession](../resources/industrydata-fileuploadsession.md) with an empty container is returned. |
 
 ## Request headers
 
@@ -94,9 +94,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "sessionUrl": "https://azureBlobSas.example/",
-    "sessionExpirationDateTime": "2022-12-14T20:07:39.5792917Z",
-    "containerId": "40fe691e-a4b8-4b47-8c86-08daddab241e",
-    "containerExpirationDateTime": "2022-12-16T06:07:39.3096785Z"
+  "containerExpirationDateTime": "2022-12-16T06:07:39.3096785Z",
+  "containerId": "40fe691e-a4b8-4b47-8c86-08daddab241e",
+  "sessionExpirationDateTime": "2022-12-14T20:07:39.5792917Z",
+  "sessionUrl": "https://azureBlobSas.example/"
 }
 ```

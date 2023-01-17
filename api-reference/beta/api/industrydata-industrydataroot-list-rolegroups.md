@@ -90,20 +90,20 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "staff",
       "displayName": "Staff",
+      "id": "staff",
       "roles": [
         {
           "code": "faculty"
         },
         {
           "code": "teacher"
-        },
+        }
       ]
     },
     {
-      "id": "students",
       "displayName": "Students",
+      "id": "students",
       "roles": [
         {
           "code": "student"

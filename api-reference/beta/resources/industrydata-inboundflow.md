@@ -41,7 +41,7 @@ Base type of [inboundFileFlow](../resources/industrydata-inboundfileflow.md).
 
 | Property           | Type            | Description                                                                                                                                                                                                                                            |
 | :----------------- | :-------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataDomain         | inboundDomain   | The broad category of data that this flow imports. The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                   |
+| dataDomain         | inboundDomain   | The broad category of data that this flow imports. The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                                |
 | displayName        | String          | The name of the activity. Inherited from [industryDataActivity](industrydata-industrydataactivity.md).                                                                                                                                                 |
 | effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.             |
 | expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.               |
@@ -49,10 +49,10 @@ Base type of [inboundFileFlow](../resources/industrydata-inboundfileflow.md).
 
 ## Relationships
 
-| Relationship  | Type                                                                 | Description                                                                                  |
-| :------------ | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| dataConnector | [industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system.     |
-| year          | [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data brought in via this flow applies to.                                  |
+| Relationship  | Type                                                                 | Description                                                                              |
+| :------------ | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
+| dataConnector | [industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. |
+| year          | [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data brought in via this flow applies to.                              |
 
 ## JSON representation
 
@@ -70,7 +70,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFlow",
-  "dataDomain": "String",  
+  "dataDomain": "String",
   "displayName": "String",
   "effectiveDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",

@@ -86,68 +86,67 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
   "value": [
     {
-      "id": "RefEmailAddressType-home",
-      "referenceType": "RefEmailAddressType",
       "code": "home",
-      "source": "ceds.ed.gov",
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "id": "RefEmailAddressType-home",
       "isDisabled": false,
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+      "referenceType": "RefEmailAddressType",
       "sortIndex": 10,
-      "createdDateTime": "0001-01-01T00:00:00Z",
-      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      "source": "ceds.ed.gov"
     },
     {
-      "id": "RefGradeLevel-01",
-      "referenceType": "RefGradeLevel",
       "code": "01",
-      "source": "ceds.ed.gov",
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "id": "RefGradeLevel-01",
       "isDisabled": false,
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+      "referenceType": "RefGradeLevel",
       "sortIndex": 60,
-      "createdDateTime": "0001-01-01T00:00:00Z",
-      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      "source": "ceds.ed.gov"
     },
     {
-      "id": "RefGradeLevel-02",
-      "referenceType": "RefGradeLevel",
       "code": "02",
-      "source": "ceds.ed.gov",
-      "isDisabled": false,
-      "sortIndex": 70,
       "createdDateTime": "0001-01-01T00:00:00Z",
-      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
-    },
-    {
-      "id": "RefGradeLevel-undergraduate",
+      "id": "RefGradeLevel-02",
+      "isDisabled": false,
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z",
       "referenceType": "RefGradeLevel",
+      "sortIndex": 70,
+      "source": "ceds.ed.gov"
+    },
+    {
       "code": "undergraduate",
-      "source": "microsoft.com",
+      "createdDateTime": "0001-01-01T00:00:00Z",
+      "id": "RefGradeLevel-undergraduate",
       "isDisabled": false,
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+      "referenceType": "RefGradeLevel",
       "sortIndex": 270,
-      "createdDateTime": "0001-01-01T00:00:00Z",
-      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      "source": "microsoft.com"
     },
     {
-      "id": "RefIdentifierType-username",
-      "referenceType": "RefIdentifierType",
       "code": "username",
-      "source": "imsglobal.org",
-      "isDisabled": false,
-      "sortIndex": 40,
       "createdDateTime": "0001-01-01T00:00:00Z",
-      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      "id": "RefIdentifierType-username",
+      "isDisabled": false,
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+      "referenceType": "RefIdentifierType",
+      "sortIndex": 40,
+      "source": "imsglobal.org"
     },
     {
-      "id": "RefOrgType-academicTrust",
-      "referenceType": "RefOrgType",
       "code": "academicTrust",
-      "source": "microsoft.com",
-      "isDisabled": false,
-      "sortIndex": 140,
       "createdDateTime": "0001-01-01T00:00:00Z",
-      "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      "id": "RefOrgType-academicTrust",
+      "isDisabled": false,
+      "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+      "referenceType": "RefOrgType",
+      "sortIndex": 140,
+      "source": "microsoft.com"
     }
   ]
 }

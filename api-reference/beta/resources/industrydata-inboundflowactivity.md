@@ -47,7 +47,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFlowActivity",
-  "blockingError": { "@odata.type": "microsoft.graph.publicError" },
+  "blockingError": {
+    "@odata.type": "microsoft.graph.publicError"
+  },
   "displayName": "String",
   "status": "String"
 }

@@ -89,8 +89,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "students",
   "displayName": "Students",
+  "id": "students",
   "roles": [
     {
       "code": "student"

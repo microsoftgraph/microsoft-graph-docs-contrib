@@ -90,54 +90,54 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "0190210e-8827-4747-6f2b-08dacc885e72",
       "displayName": "Rostering Source",
-      "vendor": null,
+      "id": "0190210e-8827-4747-6f2b-08dacc885e72",
       "userMatchingSettings": [
         {
+          "matchTarget": {
+            "code": "userPrincipalName"
+          },
           "priorityOrder": 0,
           "sourceIdentifier": {
             "code": "username"
-          },
-          "matchTarget": {
-            "code": "userPrincipalName"
           }
         },
         {
+          "matchTarget": {
+            "code": "userPrincipalName"
+          },
           "priorityOrder": 1,
           "sourceIdentifier": {
             "code": "username"
-          },
-          "matchTarget": {
-            "code": "userPrincipalName"
           }
         }
-      ]
+      ],
+      "vendor": null
     },
     {
-      "id": "019845e8-47af-4b91-6ab8-08dad8f43b1a",
       "displayName": "Admin Source",
-      "vendor": null,
+      "id": "019845e8-47af-4b91-6ab8-08dad8f43b1a",
       "userMatchingSettings": [
         {
+          "matchTarget": {
+            "code": "userPrincipalName"
+          },
           "priorityOrder": 0,
           "sourceIdentifier": {
             "code": "username"
-          },
-          "matchTarget": {
-            "code": "userPrincipalName"
           }
         },
         {
+          "matchTarget": {
+            "code": "userPrincipalName"
+          },
           "priorityOrder": 1,
           "sourceIdentifier": {
             "code": "username"
-          },
-          "matchTarget": {
-            "code": "userPrincipalName"
           }
         }
-      ]
+      ],
+      "vendor": null
     }
   ]
 }

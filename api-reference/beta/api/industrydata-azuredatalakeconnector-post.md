@@ -99,8 +99,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
-    "id": "51dca0a0-85f6-4478-f526-08daddab2271",
-    "displayName": "CSV connector"
+  "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+  "displayName": "CSV connector",
+  "id": "51dca0a0-85f6-4478-f526-08daddab2271"
 }
 ```

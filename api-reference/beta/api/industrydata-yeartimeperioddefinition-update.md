@@ -76,8 +76,8 @@ Content-Type: application/json
 Content-length: 242
 
 {
-    "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
-    "displayName": "Fiscal Year 2022",
+  "displayName": "Fiscal Year 2022",
+  "id": "ebf18762-ab92-487e-21d1-08daddab28bb"
 }
 ```
 

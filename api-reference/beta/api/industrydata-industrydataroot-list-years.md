@@ -89,16 +89,16 @@ Content-Type: application/json
 
 {
   "value": [
-      {
-          "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
-          "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
-          "displayName": "Fiscal Year 2022",
-          "startDate": "2022-09-01",
-          "endDate": "2023-06-15",
-          "year": {
-              "code": "2022"
-          }
+    {
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
+      "displayName": "Fiscal Year 2022",
+      "endDate": "2023-06-15",
+      "id": "ebf18762-ab92-487e-21d1-08daddab28bb",
+      "startDate": "2022-09-01",
+      "year": {
+        "code": "2022"
       }
+    }
   ]
 }
 ```

@@ -73,8 +73,8 @@ PATCH https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dc
 Content-type: application/json
 
 {
-    "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",
-    "displayName": "API Monitor 60201009"
+  "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",
+  "displayName": "API Monitor 60201009"
 }
 ```
 

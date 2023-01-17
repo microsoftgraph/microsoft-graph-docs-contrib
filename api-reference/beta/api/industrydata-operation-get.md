@@ -90,36 +90,36 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.industryData.fileValidateOperation",
-  "id": "d194fa3e-18c9-47a1-0fb1-08dad8e7a876",
   "createdDateTime": "2022-12-14T05:54:35.400029Z",
-  "lastActionDateTime": "2022-12-14T05:54:43.8410226Z",
-  "status": "succeeded",
-  "statusDetail": null,
-  "resourceLocation": "https://graph.microsoft.com/beta/industryData/dataConnectors/022da4a0-c239-4b07-abed-08dad8e7a07a",
-  "validatedFiles": [],
   "errors": [
     {
       "code": "RequiredFileNotFound",
-      "message": "When trying to validate required file orgs.csv encountered RequiredFileNotFound error.",
-      "target": "orgs.csv",
+      "details": [],
       "innerError": null,
-      "details": []
+      "message": "When trying to validate required file orgs.csv encountered RequiredFileNotFound error.",
+      "target": "orgs.csv"
     }
   ],
+  "id": "d194fa3e-18c9-47a1-0fb1-08dad8e7a876",
+  "lastActionDateTime": "2022-12-14T05:54:43.8410226Z",
+  "resourceLocation": "https://graph.microsoft.com/beta/industryData/dataConnectors/022da4a0-c239-4b07-abed-08dad8e7a07a",
+  "status": "succeeded",
+  "statusDetail": null,
+  "validatedFiles": [],
   "warnings": [
     {
       "code": "OptionalFileNotFound",
-      "message": "When trying to validate file classes.csv encountered OptionalFileNotFound error.",
-      "target": "classes.csv",
+      "details": [],
       "innerError": null,
-      "details": []
+      "message": "When trying to validate file classes.csv encountered OptionalFileNotFound error.",
+      "target": "classes.csv"
     },
     {
       "code": "OptionalFileNotFound",
-      "message": "When trying to validate file enrollments.csv encountered OptionalFileNotFound error.",
-      "target": "enrollments.csv",
+      "details": [],
       "innerError": null,
-      "details": []
+      "message": "When trying to validate file enrollments.csv encountered OptionalFileNotFound error.",
+      "target": "enrollments.csv"
     }
   ]
 }

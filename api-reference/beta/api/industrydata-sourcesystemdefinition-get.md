@@ -19,10 +19,10 @@ Read the properties and relationships of a [sourceSystemDefinition](../resources
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                   |
-| :------------------------------------- | :---------------------------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                                 |
+| :------------------------------------- | :-------------------------------------------------------------------------- |
 | Delegated (work or school account)     | IndustryData-SourceSystem.Read.All, IndustryData-SourceSystem.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                |
+| Delegated (personal Microsoft account) | Not supported.                                                              |
 | Application                            | IndustryData-SourceSystem.Read.All, IndustryData-SourceSystem.ReadWrite.All |
 
 ## HTTP request
@@ -90,28 +90,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "0190210e-8827-4747-6f2b-08dacc885e72",
   "displayName": "Rostering Source",
-  "vendor": null,
+  "id": "0190210e-8827-4747-6f2b-08dacc885e72",
   "userMatchingSettings": [
     {
+      "matchTarget": {
+        "code": "userPrincipalName"
+      },
       "priorityOrder": 0,
       "sourceIdentifier": {
         "code": "username"
-      },
-      "matchTarget": {
-        "code": "userPrincipalName"
       }
     },
     {
+      "matchTarget": {
+        "code": "userPrincipalName"
+      },
       "priorityOrder": 1,
       "sourceIdentifier": {
         "code": "username"
-      },
-      "matchTarget": {
-        "code": "userPrincipalName"
       }
     }
-  ]
+  ],
+  "vendor": null
 }
 ```
