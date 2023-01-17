@@ -15,12 +15,6 @@ Namespace: microsoft.graph.industryData
 
 An abstract base type for all flows that bring data into the canonical store in the Azure Data Lake. An **inboundFlow** represents an activity that a service runs.
 
-The following data is required before using this resource:
-
-- [sourceSystemDefinition](../api/industrydata-industrydataroot-post-sourcesystems.md)
-- [dataConnector](../api/industrydata-industrydataroot-post-dataconnectors.md)
-- [yearTimePeriodDefinition](../api/industrydata-industrydataroot-post-years.md)
-
 By default, the inbound flow activates twice (2x) daily. For more details, see [industryDataRun](industrydata-industrydatarun.md).
 
 Inherits from [industryDataActivity](industrydata-industrydataactivity.md).
@@ -29,13 +23,13 @@ Base type of [inboundFileFlow](../resources/industrydata-inboundfileflow.md).
 
 ## Methods
 
-| Method                                                                            | Return type                                                                        | Description                                                                                    |
-| :-------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| [Create inboundFlow](../api/industrydata-industrydataroot-post-inboundflows.md)   | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Create a new [inboundFlow](industrydata-inboundflow.md) object.                                |
-| [List inboundFlows](../api/industrydata-industrydataroot-list-inboundflows.md)    | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md) collection | Get a list of the [inboundFlow](industrydata-inboundflow.md) objects and their properties.     |
-| [Get inboundFlow](../api/industrydata-inboundflow-get.md)                         | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Read the properties and relationships of an [inboundFlow](industrydata-inboundflow.md) object. |
-| [Update inboundFlow](../api/industrydata-inboundflow-update.md)                   | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Update the properties of an [inboundFlow](industrydata-inboundflow.md) object.                 |
-| [Delete inboundFlow](../api/industrydata-industrydataroot-delete-inboundflows.md) | None                                                                               | Delete an [inboundFlow](industrydata-inboundflow.md) object.                                   |
+| Method                                                          | Return type                                                                        | Description                                                                                    |
+| :-------------------------------------------------------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| [Create inboundFlow](../api/industrydata-inboundflow-post.md)   | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Create a new [inboundFlow](industrydata-inboundflow.md) object.                                |
+| [List inboundFlows](../api/industrydata-inboundflow-list.md)    | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md) collection | Get a list of the [inboundFlow](industrydata-inboundflow.md) objects and their properties.     |
+| [Get inboundFlow](../api/industrydata-inboundflow-get.md)       | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Read the properties and relationships of an [inboundFlow](industrydata-inboundflow.md) object. |
+| [Update inboundFlow](../api/industrydata-inboundflow-update.md) | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Update the properties of an [inboundFlow](industrydata-inboundflow.md) object.                 |
+| [Delete inboundFlow](../api/industrydata-inboundflow-delete.md) | None                                                                               | Delete an [inboundFlow](industrydata-inboundflow.md) object.                                   |
 
 ## Properties
 

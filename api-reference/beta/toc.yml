@@ -1923,15 +1923,15 @@ items:
           href: resources/industrydata-industrydataconnector.md
           items:
             - name: List
-              href: api/industrydata-industrydataroot-list-industrydataconnectors.md
+              href: api/industrydata-industrydataconnector-list.md
             - name: Create
-              href: api/industrydata-industrydataroot-post-industrydataconnectors.md
+              href: api/industrydata-industrydataconnector-post.md
             - name: Get
               href: api/industrydata-industrydataconnector-get.md
             - name: Update
               href: api/industrydata-industrydataconnector-update.md
             - name: Delete
-              href: api/industrydata-industrydataroot-delete-industrydataconnectors.md
+              href: api/industrydata-industrydataconnector-delete.md
             - name: Upload data files
               href: api/industrydata-azuredatalakeconnector-getuploadsession.md
             - name: Validate
@@ -1940,71 +1940,71 @@ items:
           href: resources/industrydata-inboundflow.md
           items:
             - name: List
-              href: api/industrydata-industrydataroot-list-inboundflows.md
+              href: api/industrydata-inboundflow-list.md
             - name: Create
-              href: api/industrydata-industrydataroot-post-inboundflows.md
+              href: api/industrydata-inboundflow-post.md
             - name: Get
               href: api/industrydata-inboundflow-get.md
             - name: Update
               href: api/industrydata-inboundflow-update.md
             - name: Delete
-              href: api/industrydata-industrydataroot-delete-inboundflows.md
+              href: api/industrydata-inboundflow-delete.md
         - name: Source systems
           href: resources/industrydata-sourcesystemdefinition.md
           items:
             - name: List
-              href: api/industrydata-industrydataroot-list-sourcesystemdefinitions.md
+              href: api/industrydata-sourcesystemdefinition-list.md
             - name: Create
-              href: api/industrydata-industrydataroot-post-sourcesystemdefinitions.md
+              href: api/industrydata-sourcesystemdefinition-post.md
             - name: Get
               href: api/industrydata-sourcesystemdefinition-get.md
             - name: Update
               href: api/industrydata-sourcesystemdefinition-update.md
             - name: Delete
-              href: api/industrydata-industrydataroot-delete-sourcesystemdefinitions.md
+              href: api/industrydata-sourcesystemdefinition-delete.md
         - name: Time periods
           href: resources/industrydata-yeartimeperioddefinition.md
           items:
             - name: List
-              href: api/industrydata-industrydataroot-list-yeartimeperioddefinitions.md
+              href: api/industrydata-yeartimeperioddefinition-list.md
             - name: Create
-              href: api/industrydata-industrydataroot-post-yeartimeperioddefinitions.md
+              href: api/industrydata-yeartimeperioddefinition-post.md
             - name: Get
               href: api/industrydata-yeartimeperioddefinition-get.md
             - name: Update
               href: api/industrydata-yeartimeperioddefinition-update.md
             - name: Delete
-              href: api/industrydata-industrydataroot-delete-yeartimeperioddefinitions.md
+              href: api/industrydata-yeartimeperioddefinition-delete.md
         - name: Long-running operations
           href: resources/industrydata-longrunningoperation.md
           items:
             - name: List
-              href: api/industrydata-industrydataroot-list-longrunningoperations.md
+              href: api/industrydata-longrunningoperation-list.md
             - name: Get
               href: api/industrydata-longrunningoperation-get.md
         - name: Reference definitions
           href: resources/industrydata-referencedefinition.md
           items:
             - name: List
-              href: api/industrydata-industrydataroot-list-referencedefinitions.md
+              href: api/industrydata-referencedefinition-list.md
             - name: Get
               href: api/industrydata-referencedefinition-get.md
         - name: Role groups
           href: resources/industrydata-rolegroup.md
           items:
             - name: List
-              href: api/industrydata-industrydataroot-list-rolegroups.md
+              href: api/industrydata-rolegroup-list.md
             - name: Get
               href: api/industrydata-rolegroup-get.md
         - name: Activities
           href: resources/industrydata-industrydatarun.md
           items:
             - name: List
-              href: api/industrydata-industrydataroot-list-industrydataruns.md
+              href: api/industrydata-industrydatarun-list.md
             - name: Get
               href: api/industrydata-industrydatarun-get.md
             - name: Get statistics
-              href: api/industrydata-industrydatarunstatistics.md
+              href: api/industrydata-industrydatarun-getstatistics.md
     - name: Device and app management
       expanded: true
       items:

@@ -19,10 +19,10 @@ Transformation of the data is often shaped by each individual user's role within
 
 ## Methods
 
-| Method                                                                     | Return type                                                                    | Description                                                                               |
-| :------------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| [List roleGroups](../api/industrydata-industrydataroot-list-rolegroups.md) | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md) collection | Get a list of the [roleGroup](industrydata-rolegroup.md) objects and their properties.    |
-| [Get roleGroup](../api/industrydata-rolegroup-get.md)                      | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md)            | Read the properties and relationships of a [roleGroup](industrydata-rolegroup.md) object. |
+| Method                                                   | Return type                                                                    | Description                                                                               |
+| :------------------------------------------------------- | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| [List roleGroups](../api/industrydata-rolegroup-list.md) | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md) collection | Get a list of the [roleGroup](industrydata-rolegroup.md) objects and their properties.    |
+| [Get roleGroup](../api/industrydata-rolegroup-get.md)    | [microsoft.graph.industryData.roleGroup](industrydata-rolegroup.md)            | Read the properties and relationships of a [roleGroup](industrydata-rolegroup.md) object. |
 
 ## Properties
 

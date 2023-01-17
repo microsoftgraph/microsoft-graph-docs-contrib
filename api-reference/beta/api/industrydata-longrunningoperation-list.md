@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [long-running operations](../resources/longrunningoperation.md) and their statuses.
+Get a list of [long-running operations](../resources/industrydata-longrunningoperation.md) and their statuses.
 
 ## Permissions
 

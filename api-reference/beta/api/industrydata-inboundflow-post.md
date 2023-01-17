@@ -15,6 +15,12 @@ Namespace: microsoft.graph.industryData
 
 Create a new [inboundFlow](../resources/industrydata-inboundflow.md) object.
 
+The following prerequisite resources are required when creating an **inboundFlow**
+
+- [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)
+- [dataConnector](../resources/industrydata-industrydataconnector.md)
+- [yearTimePeriodDefinition](../resources/industrydata-yearTimePeriodDefinition.md)
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

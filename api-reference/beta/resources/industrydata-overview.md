@@ -95,25 +95,15 @@ The **dataDomain** property defines the type of data being imported and determin
 
 ### Reference Definitions
 
-**referenceDefinition** represents an enumerated value. Each supported industry domain receives a distinct collection of default and customers can further customize them by overriding default values or adding new values to the tenant.
+A [referenceDefinition](industrydata-referencedefinition.md) represents an enumerated value. Each supported industry domain receives a distinct collection of definitions. **referenceDefinition** resources are used extensively throughout the system, both for configuration and transformation, where the potential values are specific to a given industry. Each **referenceDefinition** uses a composite identifier of `{referenceType}-{code}` to provide a consistent experience across customer tenants.
 
-**referenceDefinitions** are used extensively throughout the system, both for configuration and validating data during transformation.
+#### Reference values
 
-Each **referenceDefinition** uses a composite identifier of `{referenceType}-{code}`. The approach provides a more natural developer experience as most code values are defined by a standards body, and will be recognizable to developers in that industry domain.
-
-[Retrieving referenceDefinition](resources/industrydata-referencedefinition.md)
-
-### Reference values
-
-When the API requires the developer to provide a **referenceDefinition**, it uses a type derived from **industryDataReferenceValue**.
-
-The **industryDataReferenceValue** is designed to simplify selecting [referenceDefinition](resources/industrydata-referencedefinition.md) and to reduce developer configuration by only requiring the **code** value. The type of reference value is defined by the **industryDataReferenceValue** type, eliminating potential confusing as to which **referenceDefinition** a given property is expecting.
+Types based on [referenceValue](industrydata-referencevalue.md) provide a simplified developer experience for binding [referenceDefinition](industrydata-referencedefinition.md) resources. Each **referenceValue** type is bound to a single reference type, allowing developers to provide only the **code** portion of the referencing definition as a simple string and eliminating potential confusion as to which type of **referenceDefinition** a given property is expecting.
 
 #### Example usage
 
-The **userMatchingSettings.sourceIdentifier** property takes a **industryDataIdentifierTypeReferenceValue** type. This is a **industryDataReferenceValue** type bound to a `RefIdentifierType` reference definition.
-
-Selecting the desired `RefIdentifierType` can be done either by providing a **code** value
+The **userMatchingSettings.sourceIdentifier** property takes a [identifierTypeReferenceValue](industrydata-identifierTypeReferenceValue.md) type which binds to the `RefIdentifierType` **referenceType**.
 
 ```json
 "sourceIdentifier": {
@@ -121,7 +111,7 @@ Selecting the desired `RefIdentifierType` can be done either by providing a **co
 },
 ```
 
-or binding the **industryDataReferenceDefinition** entity directly.
+A **referenceDefinition** may also be bound directly using via the **value** property
 
 ```json
 "sourceIdentifier": {
@@ -131,9 +121,7 @@ or binding the **industryDataReferenceDefinition** entity directly.
 
 ### Role groups
 
-Transformation of the data is often shaped by each individual user's role within an organization. These roles are defined as reference definitions. Given the number of potential roles, binding each role individual would result in a tedious user experience. [Role groups](resources/industrydata-rolegroup.md) are simply a collection of role values used to provide a convenient way to reference multiple reference definitions. The default role groups are _Students_ and _Staff_.
-
-#### Get the staff role group
+Transformation of the data is often shaped by each individual user's role within an organization. These roles are defined as reference definitions. Given the number of potential roles, binding each role individual would result in a tedious user experience. [Role groups](industrydata-rolegroup.md) are simply a collection of `RefRole` codes.
 
 ```json
 {
@@ -172,7 +160,7 @@ For more information:
 
 ##### Request an Upload Session
 
-The [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) uses CSV files uploaded to a secure container. This container lives within the context of a single [fileUploadSession](industrydata-fileuploadsession.md) and is automatically destroyed after data validation or the **fileUploadSession** expires.
+The [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) uses CSV files uploaded to a secure container. This container lives within the context of a single [fileUploadSession](industrydata-fileuploadsession.md) and is automatically destroyed after data validation or the **fileUploadSession** expires.
 
 The current **fileUploadSession** is retrieved from an **azureDataLakeConnector** via the [getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md). The **getUploadSession** function returns the SAS URL for uploading the CSV files.
 

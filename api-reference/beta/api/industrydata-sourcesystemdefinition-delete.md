@@ -1,19 +1,19 @@
 ---
-title: "Delete yearTimePeriodDefinition"
-description: "Delete a yearTimePeriodDefinition object."
+title: "Delete sourceSystemDefinition"
+description: "Delete a sourceSystemDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Create yearTimePeriodDefinition
+# Create sourceSystemDefinition
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [yearTimePeriodDefinition](../resources/industrydata-yearTimePeriodDefinition.md) object.
+Delete a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | IndustryData-TimePeriod.ReadWrite.All       |
+| Delegated (work or school account)     | IndustryData-SourceSystem.ReadWrite.All     |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | IndustryData-TimePeriod.ReadWrite.All       |
+| Application                            | IndustryData-SourceSystem.ReadWrite.All     |
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-POST /external/industryData/years
+POST /external/industryData/sourceSystems/{sourceSystemDefinitionId}
 ```
 
 ## Request headers
@@ -59,13 +59,13 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_yearTimePeriodDefinition_from_",
+  "name": "create_sourcesystemdefinition_from_",
   "sampleKeys": ["0c629a1a-a85c-4365-bdf0-623a32ca69cb"]
 }
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/external/industryData/years/0c629a1a-a85c-4365-bdf0-623a32ca69cb
+DELETE https://graph.microsoft.com/beta/external/industryData/sourceSystems/0c629a1a-a85c-4365-bdf0-623a32ca69cb
 ```
 
 ### Response
@@ -91,7 +91,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.yearTimePeriodDefinition"
+  "@odata.type": "microsoft.graph.industryData.sourceSystemDefinition"
 }
 -->
 
@@ -100,7 +100,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/years/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/sourceSystems/$entity",
     "id": "aa050107-5784-4a8e-1876-08daddab21bc",
     "displayName": "Rostering source",
     "vendor": null,
