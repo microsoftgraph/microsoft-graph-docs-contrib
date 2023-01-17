@@ -82,23 +82,23 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_inboundFileFlow_from_"
+  "name": "create_inboundflow_from_"
 }
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/external/industryData/inboundFileFlows
+POST https://graph.microsoft.com/beta/external/industryData/inboundFlows
 Content-Type: application/json
 Content-length: 246
 
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-  "dataConnector@odata.bind": "https://graph.microsoft.com/beta/external/industryData/dataConnectors/{dataConnectorId}",
-  "dataDomain": "String",
-  "displayName": "String",
-  "effectiveDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
-  "year@odata.bind": "https://graph.microsoft.com/beta/external/industryData/years/{yearId}"
+  "dataConnector@odata.bind": "https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271",
+  "dataDomain": "educationRostering",
+  "displayName": "Inbound rostering flow",
+  "effectiveDateTime": "2023-03-12T16:40:46.924769+05:30",
+  "expirationDateTime": "2023-03-13T16:40:46.924769+05:30",
+  "year@odata.bind": "https://graph.microsoft.com/beta/external/industryData/years/ebf18762-ab92-487e-21d1-08daddab28bb"
 }
 ```
 
@@ -111,7 +111,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.inboundFileFlow"
+  "@odata.type": "microsoft.graph.industryData.inboundFlow"
 }
 -->
 
@@ -121,10 +121,11 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-  "displayName": "String",
-  "readinessStatus": "String",
-  "dataDomain": "String",
-  "effectiveDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)"
+  "dataDomain": "educationRostering",
+  "displayName": "Inbound rostering fow",
+  "effectiveDateTime": "2023-03-12T11:10:46.924769Z",
+  "expirationDateTime": "2023-03-13T11:10:46.924769Z",
+  "id": "7bd62d17-8c37-4494-f68d-08daddab2911",
+  "readinessStatus": "ready"
 }
 ```
