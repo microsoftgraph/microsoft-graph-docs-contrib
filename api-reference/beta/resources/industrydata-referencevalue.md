@@ -1,6 +1,6 @@
 ---
 title: "referenceValue resource type"
-description: "Represents a pointer to an entry in the referenceDefinitions collection."
+description: "An abstract type that represents a pointer to an entry in the referenceDefinitions collection."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a pointer to a [referenceDefinition](industrydata-referencedefinition.md) with a specific `referenceType`.
+An abstract type that represents a pointer to an entry in the [referenceDefinition](industrydata-referencedefinition.md) collection with a specific reference type.
 
-This is an abstract type.
+The **referenceValue** is designed to simplify the selection of the **referenceDefinition** and to reduce the developer configuration by only requiring the **code** value. The type of reference value is defined by the **referenceValue** type, removing ambiguity about which **referenceDefinition** is expected for a particular property.
 
-The **industryDataReferenceValue** is designed to simplify selecting **referenceDefinition** and to reduce developer configuration by only requiring the `code` value. The type of reference value is defined by the **industryDataReferenceValue** type, eliminating potential confusing as to which **referenceDefinition** a given property is expecting.
+Base type of [identifierTypeReferenceValue](industrydata-identifiertypereferencevalue.md), [roleReferenceValue](industrydata-rolereferencevalue.md), [userMatchTargetReferenceValue](industrydata-usermatchtargetreferencevalue.md), and [yearReferenceValue](industrydata-yearreferencevalue.md).
 
 #### Example Usage
 
@@ -50,13 +50,13 @@ or binding the `industryDataReferenceDefinition` entity directly.
 
 | Property | Type   | Description                                        |
 | :------- | :----- | :------------------------------------------------- |
-| code     | String | The code of the desired referenceDefinition entry. |
+| code     | String | The code of the desired **referenceDefinition** entry. |
 
 ## Relationships
 
 | Relationship | Type                                                                    | Description                                        |
 | :----------- | :---------------------------------------------------------------------- | :------------------------------------------------- |
-| value        | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound referenceDefinition entity. |
+| value        | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. |
 
 ## JSON representation
 

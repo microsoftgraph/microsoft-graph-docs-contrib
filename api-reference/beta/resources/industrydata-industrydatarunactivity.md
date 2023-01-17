@@ -22,6 +22,8 @@ An abstract base type for all activity types. This resource represents the curre
 - `skipped`: The [industryDataRun](industrydata-industrydatarun.md) didn't run the activity.
 - `failed`: The activity encountered an unrecoverable error during the run.
 
+Base type of [inboundFlowActivity](../resources/industrydata-inboundflowactivity.md) and [outboundFlowActivity](../resources/industrydata-outboundflowactivity.md).
+
 ## Properties
 
 | Property      | Type                                          | Description                                                                                                                                                                        |

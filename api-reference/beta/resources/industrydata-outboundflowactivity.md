@@ -29,7 +29,7 @@ Inherits from [industryDataRunActivity](industrydata-industrydatarunactivity.md)
 
 | Relationship | Type                                                                      | Description                                                                                                                          |
 | :----------- | :------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------- |
-| activity     | [industryDataActivity](industrydata-industrydataactivity.md) | The flow performed by this activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md). |
+| activity     | [industryDataActivity](industrydata-industrydataactivity.md) | The flow that was run by this activity. Inherited from [industryDataRunActivity](industrydata-industrydatarunactivity.md). |
 
 ## JSON representation
 

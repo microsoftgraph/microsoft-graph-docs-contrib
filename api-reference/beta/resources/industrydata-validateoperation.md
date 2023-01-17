@@ -1,6 +1,6 @@
 ---
 title: "validateOperation resource type"
-description: "Represents an abstract type for the asynchronous operation results from any operation that validates data."
+description: "Represents an abstract type for the asynchronous operation that results from any operation that validates data."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,19 +13,21 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract type for the asynchronous operation results from any operation that validates data.
+Represents an abstract type for the asynchronous operation that results from any operation that validates data.
+
+Base type of [fileValidateOperation](../resources/industrydata-filevalidateoperation.md).
 
 ## Properties
 
-| Property           | Type                                                     | Description                                                                                                                                                                                                                            |
-| :----------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdDateTime    | DateTimeOffset                                           | The date and time when this operation was created.md).                                                                                                                                                                                 |
-| errors             | [microsoft.graph.publicError](publicerror.md) collection | Set of errors discovered through validation.                                                                                                                                                                                           |
-| lastActionDateTime | DateTimeOffset                                           | The date and time when the last action was performed on this operation.md).                                                                                                                                                            |
-| resourceLocation   | String                                                   | The canonical URL of the resource.md).                                                                                                                                                                                                 |
-| status             | longRunningOperationStatus                               | The status of the long-running operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.md).The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
-| statusDetail       | String                                                   | The detail about the status value.md).                                                                                                                                                                                                 |
-| warnings           | [microsoft.graph.publicError](publicerror.md) collection | Set of warnings discovered through validation.                                                                                                                                                                                         |
+| Property           | Type                                                     | Description                                                                                                                          |
+|-:------------------|-:--------------------------------------------------------|-:------------------------------------------------------------------------------------------------------------------------------------|
+| createdDateTime    | DateTimeOffset                                           | The date and time when this operation was created.                                                                                   |
+| errors             | [microsoft.graph.publicError](publicerror.md) collection | Set of errors discovered through validation.                                                                                         |
+| lastActionDateTime | DateTimeOffset                                           | The date and time when the last action was run on this operation.                                                              |
+| resourceLocation   | String                                                   | The canonical URL of the resource.                                                                                                   |
+| status             | longRunningOperationStatus                               | The status of the long-running operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
+| statusDetail       | String                                                   | The detail about the status value.                                                                                                   |
+| warnings           | [microsoft.graph.publicError](publicerror.md) collection | Set of warnings discovered through validation.                                                                                       |
 
 ## Relationships
 

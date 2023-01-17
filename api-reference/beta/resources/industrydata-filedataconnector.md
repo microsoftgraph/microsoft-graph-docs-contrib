@@ -17,6 +17,8 @@ Represents an abstract type that provides the resources to establish a connectio
 
 Inherits from [industryDataConnector](industrydata-industrydataconnector.md).
 
+Base type of [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md).
+
 ## Properties
 
 | Property    | Type   | Description                                                                                                    |

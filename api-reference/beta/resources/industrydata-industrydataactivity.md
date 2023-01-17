@@ -15,11 +15,13 @@ Namespace: microsoft.graph.industryData
 
 Represents an abstract base type for all activities that are run by the underlying scheduler.
 
+Base type of [inboundFlow](../resources/industrydata-inboundflow.md).
+
 ## Properties
 
 | Property        | Type            | Description                                                                                                                                                               |
 | :-------------- | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| displayName     | String          | The name of the activity.                                                                                                                                                 |
+| displayName     | String          | The name of the activity. Maximum supported length is 100 characters.                                                                                                                                                 |
 | readinessStatus | readinessStatus | The state of the activity from creation through to ready to do work. The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
 
 ## Relationships

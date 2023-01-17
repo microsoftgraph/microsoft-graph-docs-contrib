@@ -1,6 +1,6 @@
 ---
 title: "sourceSystemDefinition resource type"
-description: "Represents an external source of data in the real world."
+description: "Represents an external data source in the real world."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external source of data in the real world. The data that is ingested is associated to a source system to identify the record owner.
+Represents an external data source in the real world. The data that is ingested is associated to a source system to identify the record owner.
 
 ## Methods
 
