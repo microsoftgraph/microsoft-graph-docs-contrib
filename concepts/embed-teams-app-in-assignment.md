@@ -15,7 +15,7 @@ This article describes how to use Microsoft Graph to embed a Teams app in an ass
 
 ## Install the application in your team
 
-Before you can embed an application in an assignment, you need to make sure that the app is installed in your team. You can use the following APIs to get information about the appsinstalled in a team:
+Before you can embed an application in an assignment, you need to make sure that the app is installed in your team. You can use the following APIs to get information about the apps installed in a team:
 
 - [List apps in a team](/graph/api/team-list-installedapps): Get a list of apps installed in the specified team.
 - [Get a specific app installed in a team](/graph/api/team-get-installedapps): Get information about an app installed in the specified team.
