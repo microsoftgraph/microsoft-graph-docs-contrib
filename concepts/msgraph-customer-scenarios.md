@@ -23,6 +23,6 @@ You can read and update data and integrate your app with assignments and grades 
 
 - [Get data from assignments and grades](/graph/msgraph-customer-assignmentgradedatafortool)
 - [Integrate your Teams app with education assignments](/graph/msgraph-customer-teamsapps.md)
-- [Embed a Teams app in an assignment](/graph/msgraph-create-assignmentwithteamsapp-content)
-- [How to download all resources from a set of assignments](/graph/msgraph-tool-to-download-all-resources)
+- [Embed a Teams app in an assignment](/graph/embed-teams-app-in-assignment)
+- [Download all resources from a set of assignments](/graph/download-resources-from-assignment)
 - [I have a web app that needs to create assignments with links back to my website](/microsoftteams/platform/concepts/build-and-test/share-to-teams-from-web-apps)
