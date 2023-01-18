@@ -262,6 +262,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
+    
     {
       "ChangeList": [
         {
@@ -6243,7 +6244,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "devices,Delete registered owner,Delete registered user",
           "ChangeType": "Addition",
-          "Description": "Added the following operations to [devices](https://learn.microsoft.com/en-us/graph/api/resources/device): ,  [Delete registered owner](https://learn.microsoft.com/en-us/graph/api/device-delete-registeredowners?view=graph-rest-1.0) ,  [Delete registered user](https://learn.microsoft.com/en-us/graph/api/device-delete-registeredusers)",
+          "Description": "Added the following operations to [devices](https://learn.microsoft.com/en-us/graph/api/resources/device): [Delete registered owner](https://learn.microsoft.com/en-us/graph/api/device-delete-registeredowners?view=graph-rest-1.0),  [Delete registered user](https://learn.microsoft.com/en-us/graph/api/device-delete-registeredusers)",
           "Target": "devices,Delete registered owner,Delete registered user"
         },
         {
@@ -6343,7 +6344,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessPolicy",
           "ChangeType": "Addition",
-          "Description": "Added new entity types:, [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicy), ",
+          "Description": "Added new entity types: [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicy), ",
           "Target": "conditionalAccessPolicy"
         },
         {
@@ -6351,7 +6352,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessConditionSet,conditionalAccessGrantControls",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
+          "Description": "Added new complex types: [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
           "Target": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessConditionSet,conditionalAccessGrantControls"
         },
         {
@@ -6393,7 +6394,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connector,Get connector,List memberOf,List connectors,Add connector to connectorGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [connector](https://learn.microsoft.com/en-us/graph/api/resources/connector?view=graph-rest-beta) entity and the following actions: ,  [Get connector](https://learn.microsoft.com/en-us/graph/api/connector-get?view=graph-rest-beta) ,  [List memberOf](https://learn.microsoft.com/en-us/graph/api/connector-list-memberof?view=graph-rest-beta) ,  [List connectors](https://learn.microsoft.com/en-us/graph/api/connector-list?view=graph-rest-beta) ,  [Add connector to connectorGroup](https://learn.microsoft.com/en-us/graph/api/connector-post-memberof?view=graph-rest-beta)",
+          "Description": "Added the [connector](https://learn.microsoft.com/en-us/graph/api/resources/connector?view=graph-rest-beta) entity and the following actions: [Get connector](https://learn.microsoft.com/en-us/graph/api/connector-get?view=graph-rest-beta),  [List memberOf](https://learn.microsoft.com/en-us/graph/api/connector-list-memberof?view=graph-rest-beta),  [List connectors](https://learn.microsoft.com/en-us/graph/api/connector-list?view=graph-rest-beta),  [Add connector to connectorGroup](https://learn.microsoft.com/en-us/graph/api/connector-post-memberof?view=graph-rest-beta)",
           "Target": "connector,Get connector,List memberOf,List connectors,Add connector to connectorGroup"
         },
         {
@@ -6401,7 +6402,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectorGroup,Get connectorGroup,Assign an application,List applications,List connectorGroups,Add connector,List connectors,Create connectorGroup,Update connectorGroup,Delete connectorGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [connectorGroup](https://learn.microsoft.com/en-us/graph/api/resources/connectorgroup?view=graph-rest-beta) entity and the following actions: ,  [Get connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-get?view=graph-rest-beta) ,  [Assign an application](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post-applications?view=graph-rest-beta) ,  [List applications](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list-applications?view=graph-rest-beta)  ,  [List connectorGroups](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list?view=graph-rest-beta) ,  [Add connector](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post-members?view=graph-rest-beta) ,  [List connectors](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list-members?view=graph-rest-beta) ,  [Create connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post?view=graph-rest-beta) , [Update connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-update?view=graph-rest-beta) ,  [Delete connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-delete?view=graph-rest-beta)",
+          "Description": "Added the [connectorGroup](https://learn.microsoft.com/en-us/graph/api/resources/connectorgroup?view=graph-rest-beta) entity and the following actions: [Get connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-get?view=graph-rest-beta),  [Assign an application](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post-applications?view=graph-rest-beta),  [List applications](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list-applications?view=graph-rest-beta),  [List connectorGroups](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list?view=graph-rest-beta),  [Add connector](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post-members?view=graph-rest-beta),  [List connectors](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list-members?view=graph-rest-beta),  [Create connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post?view=graph-rest-beta), [Update connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-update?view=graph-rest-beta),  [Delete connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-delete?view=graph-rest-beta)",
           "Target": "connectorGroup,Get connectorGroup,Assign an application,List applications,List connectorGroups,Add connector,List connectors,Create connectorGroup,Update connectorGroup,Delete connectorGroup"
         },
         {
@@ -7617,7 +7618,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationDetail,keyValue,networkLocationDetail",
           "ChangeType": "Addition",
-          "Description": "Added new entities: , [authenticationDetail](https://learn.microsoft.com/en-us/graph/api/resources/authenticationDetail?view=graph-rest-beta), [keyValue](https://learn.microsoft.com/en-us/graph/api/resources/keyValue?view=graph-rest-beta), [networkLocationDetail](https://learn.microsoft.com/en-us/graph/api/resources/networkLocationDetail?view=graph-rest-beta)",
+          "Description": "Added new entities: [authenticationDetail](https://learn.microsoft.com/en-us/graph/api/resources/authenticationDetail?view=graph-rest-beta), [keyValue](https://learn.microsoft.com/en-us/graph/api/resources/keyValue?view=graph-rest-beta), [networkLocationDetail](https://learn.microsoft.com/en-us/graph/api/resources/networkLocationDetail?view=graph-rest-beta)",
           "Target": "authenticationDetail,keyValue,networkLocationDetail"
         },
         {
@@ -7789,7 +7790,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessPolicy",
           "ChangeType": "Addition",
-          "Description": "Added new entity types:, [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicy), ",
+          "Description": "Added new entity types: [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicy), ",
           "Target": "conditionalAccessPolicy"
         },
         {
@@ -7797,7 +7798,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessDeviceStates,conditionalAccessConditionSet,conditionalAccessGrantControls",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessDeviceStates](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDeviceStates), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
+          "Description": "Added new complex types: [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessDeviceStates](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDeviceStates), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
           "Target": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessDeviceStates,conditionalAccessConditionSet,conditionalAccessGrantControls"
         },
         {
@@ -12338,23 +12339,41 @@
       "WorkloadArea": "Application",
       "SubArea": ""
     },
-     {
-      "ChangeList": [
-        {
-          "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
-          "ApiChange": "Property",
-          "ChangedApiName": "deviceId",
-          "ChangeType": "Addition",
-          "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
-          "Target": "device"
-        }
-      ],
-      "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
-    }
+    {
+    "ChangeList": [
+      {
+        "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+        "ApiChange": "Property",
+        "ChangedApiName": "deviceId",
+        "ChangeType": "Addition",
+        "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
+        "Target": "device"
+      }
+    ],
+    "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+    "Cloud": "Prod",
+    "Version": "v1.0",
+    "CreatedDateTime": "2023-01-13T00:00:00.077762Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
+  },
+  {
+    "ChangeList": [
+      {
+        "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+        "ApiChange": "Property",
+        "ChangedApiName": "defaultUsageLocation",
+        "ChangeType": "Addition",
+        "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+        "Target": "organization"
+      }
+    ],
+    "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+    "Cloud": "Prod",
+    "Version": "v1.0",
+    "CreatedDateTime": "2023-01-13T05:29:04.5101503Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
+  }
   ]
 }

@@ -264,6 +264,8 @@ None.
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
 
+---
+
 ## Browser management permissions
 
 #### Delegated permissions
@@ -291,6 +293,42 @@ None.
 
 * _BrowserSiteLists.Read.All_: List all browser site lists, without a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
 * _BrowserSiteLists.ReadWrite.All_: Delete a browser site list, without a signed-in user (`DELETE /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
+
+---
+
+## Business scenarios permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|BusinessScenarioConfig.Read.All|Read business scenario configurations|Allows the app to read the configurations for the business scenarios of your organization, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.Read.OwnedBy|Read business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.All|Read and write business scenario configurations|Allows the app to read and write the configurations for the business scenarios of your organization, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioData.Read.OwnedBy|Read all data for business scenarios this app creates or owns|Allows the app to read all data associated with the business scenarios it owns. Data access will be attributed to the signed-in user.|Yes|No|
+|BusinessScenarioData.ReadWrite.OwnedBy|Read and write all data for business scenarios this app creates or owns|Allows the app to fully manage all data associated with the business scenarios it owns. Data access and changes will be attributed to the signed-in user.|Yes|No|
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|BusinessScenarioConfig.Read.OwnedBy|Read all business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write all business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioData.Read.OwnedBy|Read data for all business scenarios this app creates or owns|Allows the app to read the data associated with the business scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioData.ReadWrite.OwnedBy|Read and write data for all business scenarios this app creates or owns|Allows the app to fully manage the data associated with the business scenarios it owns, without a signed-in user.|Yes|
+
+### Example usage
+
+#### Delegated
+
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Create a new business scenario (`POST /solutions/businessScenarios`)
+* _BusinessScenarioConfig.Read.All_: Get a list of all business scenarios in an organization (`GET /solutions/businessScenarios`)
+
+#### Application
+
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Update the Planner plan configuration for a business scenario (`PATCH /solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration`)
+* _BusinessScenarioData.ReadWrite.OwnedBy_: Delete a Planner task in a business scenario (`DELETE /solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks/M60dlXLEkk-ZocLUTDvBSpcAGRaa`)
 
 ---
 
@@ -2173,31 +2211,38 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Read user's tasks and task lists (preview) | Allows the app to read the signed-in user's tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. | No | Yes |
+| _Tasks.Read_ | Read user's tasks and task lists | Allows the app to read the signed-in user's tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. | No | Yes |
 | _Tasks.Read.Shared_ | Read user and shared tasks (preview) | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
-| _Tasks.ReadWrite_ | Create, read, update, and delete user's tasks and task lists (preview) | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. | No | Yes |
+| _Tasks.ReadWrite_ | Create, read, update, and delete user's tasks and task lists | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. | No | Yes |
 | _Tasks.ReadWrite.Shared_ | Read and write user and shared tasks (preview) | Allows the app to create, read, update, and delete tasks a user has permissions to, including their own and shared tasks. | No | No |
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Tasks.Read.All_ | Read all users' tasks and tasklist | Allows the app to read all users' tasks and task lists in your organization, without a signed-in user. | Yes |
+| _Tasks.ReadWrite.All_ | Read and write all users' tasks and tasklists | Allows the app to create, read, update and delete all users' tasks and task lists in your organization, without a signed-in user | Yes |
+
 
 ### Remarks
-_Tasks_ permissions are used to control access for To Do tasks and Outlook tasks(deprecated). Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
+_Tasks_ permissions are used to control access for To Do tasks, Planner tasks, and Outlook tasks(deprecated).
 
 _Shared_ permissions are currently only supported for work or school accounts. Even with _Shared_ permissions, reads and writes may fail if the user who owns the shared content has not granted the accessing user permissions to modify content within the folder.
 
 ### Example usage
 #### Delegated
 
-* _Tasks.Read_: Get all tasks in a user's mailbox (`GET /me/outlook/tasks`).
+* _Tasks.Read_: Get all Planner tasks assigned to the current user (`GET /me/planner/tasks`).
 * _Tasks.Read.Shared_: Access tasks in a folder shared to you by another user in your organization (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
-* _Tasks.ReadWrite_: Add an event to the user's default task folder (`POST /me/outlook/tasks`).
-* _Tasks.Read_: Get all uncompleted tasks in a user's mailbox (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
-* _Tasks.ReadWrite_: Update a task in a user's mailbox (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
+* _Tasks.ReadWrite_: Create a Planner task (`POST /planner/tasks`).
 * _Tasks.ReadWrite.Shared_: Complete a task on behalf of another user (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+#### Application
+
+* _Tasks.Read.All_: Get all Planner plans in a group (`GET /groups/{id}/planner/plans`)
+* _Tasks.ReadWrite.All_: Delete a Planner task (`Delete /planner/tasks/{id}`)
 
 ---
 

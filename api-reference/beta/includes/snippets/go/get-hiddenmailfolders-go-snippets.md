@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestIncludeHiddenFolders := true
 
-requestParameters := &graphconfig.MailFoldersRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeMailFoldersRequestBuilderGetQueryParameters{
 	IncludeHiddenFolders: &requestIncludeHiddenFolders,
 }
-configuration := &graphconfig.MailFoldersRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMailFoldersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -3711,7 +3711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
-          "Description": "Removed DELETE /groups/{id}/channels/{id} , use DELETE /teams/{id}/channels/{id} instead.",
+          "Description": "Removed DELETE /groups/{id}/channels/{id}. Use DELETE /teams/{id}/channels/{id} instead.",
           "Target": ""
         },
         {

@@ -217,7 +217,7 @@ The relative yearly pattern causes an event to repeat on the same day of the wee
 
 ## Recurrence ranges
 
-The second part of a recurrence is the range. This specifies how long the pattern repeats. For example, an event could end after 10 occurrences, by a specific date, or could have no end. A range is represented in the API by the [recurrenceRange resource](/graph/api/resources/recurrencepattern).
+The second part of a recurrence is the range. This specifies how long the pattern repeats. For example, an event could end after 10 occurrences, by a specific date, or could have no end. A range is represented in the API by the [recurrenceRange resource](/graph/api/resources/recurrencerange).
 
 Depending on the type of range, certain fields of **recurrenceRange** are required or ignored.
 
