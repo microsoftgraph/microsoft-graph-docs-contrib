@@ -162,8 +162,54 @@ In below table, the ranking is still maintained, but we collapse first on Filena
 |Notebook|James|Science|6|
 |Notebook|Andy|Culture|7|
 
+## Expected Response
+When using collapseProperties, the response will contain an "isCollapsed" Boolean field for each result that represents the collapse state of that result.
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [
+                "note"
+            ],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "94149344-55e4-4678-b22a-b37a9ed1ffff",
+                            "rank": 1,
+                            "isCollapsed": true,
+                            "summary": "",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.listItem",
+                                "sharepointIds": {
+                                    "listId": "9b786f01-4668-4862-8bbf-443159c0ffff",
+                                    "listItemId": "3"
+                                },
+                                "id": "94149344-55e4-4678-b22a-b37a9ed1ffff",
+                                "createdDateTime": "2012-10-10T12:07:57Z",
+                                "lastModifiedDateTime": "2022-11-30T08:38:47Z",
+                                "parentReference": {
+                                    "id": "01PPFMTLYPOGQADPQCOJAJTXZLKETTQP6F",
+                                    "siteId": "microsoftapc-my.sharepoint.com,5b8af7a0-0c23-4719-ab6c-457c2104ea8a,2e4df0d0-c83a-473b-bed1-2d2046966d31"
+                                },
+                                "webUrl": "https://microsoftapc-my.sharepoint.com/Documents/Notes"
+                            }
+                        }
+                    ],
+                    "total": 4281349,
+                    "moreResultsAvailable": true
+                }
+            ]
+        }
+    ],
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)"
+}
+```
 ## Known limitations
-- The **collapseProperties** property is not supported for the following resources: **message**, **chatMessage**, **event**, **person**, **bookmark** or **acronym**.
+- The **collapseProperties** property is not supported for the following resources: **message**,**chatMessage**, **event**, **person**, **externalItem**, **bookmark**, **acronym** or **qna**.
 
 ## Next steps
 
