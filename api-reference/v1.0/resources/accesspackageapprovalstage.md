@@ -37,19 +37,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.accessPackageApprovalStage",
   "durationBeforeAutomaticDenial": "String (duration)",
-  "isApproverJustificationRequired": "Boolean",
-  "isEscalationEnabled": "Boolean",
   "durationBeforeEscalation": "String (duration)",
-  "primaryApprovers": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
-  "fallbackPrimaryApprovers": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
   "escalationApprovers": [
     {
       "@odata.type": "microsoft.graph.singleUser"
@@ -59,7 +47,20 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.singleUser"
     }
+  ],
+  "fallbackPrimaryApprovers": [
+    {
+      "@odata.type": "microsoft.graph.singleUser"
+    }
+  ],
+  "isApproverJustificationRequired": "Boolean",
+  "isEscalationEnabled": "Boolean",
+  "primaryApprovers": [
+    {
+      "@odata.type": "microsoft.graph.singleUser"
+    }
   ]
+  
 }
 ```
 

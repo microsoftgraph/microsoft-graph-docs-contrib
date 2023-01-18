@@ -1,7 +1,7 @@
 ---
 title: "hardwareConfigurationFormat enum type"
 description: "Indicates the supported oems of hardware configuration"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,8 +23,3 @@ Indicates the supported oems of hardware configuration
 |dell|1|Dell|
 |surface|2|Surface|
 |surfaceDock|3|Surface dock|
-
-
-
-
-

@@ -2695,6 +2695,22 @@ Possible values for user account types (group membership), per Windows definitio
 |delinked           |
 |unknownFutureValue |  
 
+### plannerExternalTaskSourceDisplayType values
+
+|Member|
+|:---|
+|none|
+|default|
+|unknownFutureValue|
+
+### plannerCreationSourceKind values
+
+|Member|
+|:---|
+|none|
+|external|
+|publication|
+|unknownFutureValue|
 
 ### policyScope values
 
@@ -3046,7 +3062,7 @@ Possible values for user account types (group membership), per Windows definitio
 |externalGuest|
 |unknownFutureValue|
 |scheduler|
-|member|
+|teamMember|
 
 ### bookingReminderRecipients values 
 
@@ -3446,6 +3462,40 @@ Possible values for user account types (group membership), per Windows definitio
 |actionUndefined|
 |unknownFutureValue|
 
+### plannerRelationshipUserRoles values
+
+|Member|
+|:---|
+|defaultRules|
+|groupOwners|
+|groupMembers|
+|taskAssignees|
+|applications|
+|unknownFutureValue|
+
+### plannerRuleKind values
+
+|Member|
+|:---|
+|taskRule|
+|bucketRule|
+|planRule|
+|unknownFutureValue|
+
+### plannerUserRoleKind values
+
+|Member|
+|:---|
+|relationship|
+|unknownFutureValue|
+
+### plannerTaskTargetKind values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
 ### onPremisesDirectorySynchronizationDeletionPreventionType values
 
 |Member|
@@ -3453,4 +3503,20 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |enabledForCount|
 |enabledForPercentage|
+|enabledForPercentage|
 |unknownFutureValue|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:-----|
+|group|
+|unknownFutureValue|
+
+### authenticationMethodsPolicyMigrationState values
+
+|Member|
+|:-----|
+|premigration|
+|migrationInProgress|
+|migrationComplete|

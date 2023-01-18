@@ -17,8 +17,8 @@ Contains various different scores based on different scopes (for example, averag
 
 |Property |Type |Description |
 |:--|:--|:--|
-|basis|String|Scope type. The possible values are: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 |averageScore|Double|Average score within specified basis.|
+|basis|String|Scope type. The possible values are: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 
 ## JSON representation
 

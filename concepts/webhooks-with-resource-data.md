@@ -4,6 +4,7 @@ description: "Microsoft Graph uses a webhook mechanism to deliver change notific
 author: "jumasure"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
+ms.date: 12/02/2022
 ---
 
 # Set up change notifications that include resource data

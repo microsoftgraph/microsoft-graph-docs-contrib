@@ -3,7 +3,9 @@ title: "Microsoft Graph permissions reference "
 description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests."
 author: "jackson-woods"
 ms.localizationpriority: high
+ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 12/09/2022
 ---
 
 # Microsoft Graph permissions reference
@@ -262,6 +264,8 @@ None.
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
 
+---
+
 ## Browser management permissions
 
 #### Delegated permissions
@@ -289,6 +293,42 @@ None.
 
 * _BrowserSiteLists.Read.All_: List all browser site lists, without a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
 * _BrowserSiteLists.ReadWrite.All_: Delete a browser site list, without a signed-in user (`DELETE /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
+
+---
+
+## Business scenarios permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|BusinessScenarioConfig.Read.All|Read business scenario configurations|Allows the app to read the configurations for the business scenarios of your organization, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.Read.OwnedBy|Read business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.All|Read and write business scenario configurations|Allows the app to read and write the configurations for the business scenarios of your organization, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioData.Read.OwnedBy|Read all data for business scenarios this app creates or owns|Allows the app to read all data associated with the business scenarios it owns. Data access will be attributed to the signed-in user.|Yes|No|
+|BusinessScenarioData.ReadWrite.OwnedBy|Read and write all data for business scenarios this app creates or owns|Allows the app to fully manage all data associated with the business scenarios it owns. Data access and changes will be attributed to the signed-in user.|Yes|No|
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|BusinessScenarioConfig.Read.OwnedBy|Read all business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write all business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioData.Read.OwnedBy|Read data for all business scenarios this app creates or owns|Allows the app to read the data associated with the business scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioData.ReadWrite.OwnedBy|Read and write data for all business scenarios this app creates or owns|Allows the app to fully manage the data associated with the business scenarios it owns, without a signed-in user.|Yes|
+
+### Example usage
+
+#### Delegated
+
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Create a new business scenario (`POST /solutions/businessScenarios`)
+* _BusinessScenarioConfig.Read.All_: Get a list of all business scenarios in an organization (`GET /solutions/businessScenarios`)
+
+#### Application
+
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Update the Planner plan configuration for a business scenario (`PATCH /solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration`)
+* _BusinessScenarioData.ReadWrite.OwnedBy_: Delete a Planner task in a business scenario (`DELETE /solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks/M60dlXLEkk-ZocLUTDvBSpcAGRaa`)
 
 ---
 
@@ -1923,6 +1963,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
 | _Acronym.Read.All_ | Read all acronyms | Allows the app to read all acronyms on behalf of a signed-in user. | No | No |
 | _Bookmark.Read.All_ | Read all bookmarks | Allows the app to read all bookmarks on behalf of a signed-in user. | No | No |
+| _QnA.Read.All_ | Read all qnas | Allows the app to read all question and answer sets on behalf of a signed-in user. | No | No |
 | _ExternalConnection.Read.All_ | Read all external connections | Allows the app to read all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.All_ | Read and write all external connections | Allows the app to read and write all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections | Allows the app to read and write external connections on behalf of a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. | Yes | No |
@@ -2142,7 +2183,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 None.
 
 ### Remarks
-_Tasks_ permissions are used to control access for To Do tasks and Outlook tasks(deprecated). Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
+_Tasks_ permissions are used to control access for To Do tasks, Planner tasks, and Outlook tasks(deprecated).
 
 _Shared_ permissions are currently only supported for work or school accounts. Even with _Shared_ permissions, reads and writes may fail if the user who owns the shared content has not granted the accessing user permissions to modify content within the folder.
 

@@ -25,9 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/transitiveMemberOf
+GET /servicePrincipals(appId='{appId}')/transitiveMemberOf
 ```
 ## Optional query parameters
 
