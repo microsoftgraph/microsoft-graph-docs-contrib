@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Function for retrieving statistics for an [industryDataRun](industrydata-industrydatarun.md).
+Function for retrieving statistics for an [industryDataRun](../resources/industrydata-industrydatarun.md).
 
 ## Permissions
 
