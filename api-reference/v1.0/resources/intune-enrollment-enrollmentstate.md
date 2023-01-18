@@ -1,7 +1,7 @@
 ---
 title: "enrollmentState enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,8 +23,3 @@ Not yet documented
 |pendingReset|2|Enrolled but it's enrolled via enrollment profile and the enrolled profile is different from the assigned profile.|
 |failed|3|Not enrolled and there is enrollment failure record.|
 |notContacted|4|Device is imported but not enrolled.|
-
-
-
-
-

@@ -54,15 +54,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
+  "completedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "requestType": "String",
-  "state": "String",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "completedDateTime": "String (timestamp)",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
+  },
+  "state": "String",
+  "status": "String"
 }
 ```
 

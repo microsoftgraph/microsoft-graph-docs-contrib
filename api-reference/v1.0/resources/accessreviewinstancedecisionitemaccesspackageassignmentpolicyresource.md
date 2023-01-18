@@ -41,11 +41,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "type": "String",
+  "accessPackageDisplayName": "String",
   "accessPackageId": "String",
-  "accessPackageDisplayName": "String"
+  "displayName": "String",
+  "id": "String (identifier)",
+  "type": "String"
 }
 ```
 

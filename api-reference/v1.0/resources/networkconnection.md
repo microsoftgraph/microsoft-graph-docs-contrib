@@ -19,8 +19,8 @@ Contains stateful information about the network connection related to the alert.
 |:---------------|:--------|:----------|
 |applicationName|String|Name of the application managing the network connection (for example, Facebook or SMTP).|
 |destinationAddress|String|Destination IP address (of the network connection).|
-|destinationLocation|String|Location (by IP address mapping) associated with the destination of a network connection.|
 |destinationDomain|String|Destination domain portion of the destination URL. (for example 'www.contoso.com').|
+|destinationLocation|String|Location (by IP address mapping) associated with the destination of a network connection.|
 |destinationPort|String|Destination port (of the network connection).|
 |destinationUrl|String|Network connection URL/URI string - excluding parameters. (for example 'www.contoso.com/products/default.html')|
 |direction|connectionDirection|Network connection direction. Possible values are: `unknown`, `inbound`, `outbound`.|
