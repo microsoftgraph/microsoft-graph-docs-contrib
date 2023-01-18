@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(10)
 
-requestParameters := &graphconfig.AttributeSetsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DirectoryAttributeSetsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.AttributeSetsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DirectoryAttributeSetsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(5)
 
-requestParameters := &graphconfig.MessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.MessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
