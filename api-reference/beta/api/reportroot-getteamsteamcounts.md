@@ -59,7 +59,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 If successful, this method returns a `302 Found` response that redirects to a pre-authenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Pre-authenticated download URLs are only valid for a short period (a few minutes) and do not require an `Authorization` header.
 
 The CSV file has the following headers for columns:
 
