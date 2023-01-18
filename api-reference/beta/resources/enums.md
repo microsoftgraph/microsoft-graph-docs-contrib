@@ -3643,6 +3643,40 @@ Possible values for user account types (group membership), per Windows definitio
 |actionUndefined|
 |unknownFutureValue|
 
+### plannerRelationshipUserRoles values
+
+|Member|
+|:---|
+|defaultRules|
+|groupOwners|
+|groupMembers|
+|taskAssignees|
+|applications|
+|unknownFutureValue|
+
+### plannerRuleKind values
+
+|Member|
+|:---|
+|taskRule|
+|bucketRule|
+|planRule|
+|unknownFutureValue|
+
+### plannerUserRoleKind values
+
+|Member|
+|:---|
+|relationship|
+|unknownFutureValue|
+
+### plannerTaskTargetKind values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
 ### onPremisesDirectorySynchronizationDeletionPreventionType values
 
 |Member|
@@ -3650,4 +3684,20 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |enabledForCount|
 |enabledForPercentage|
+|enabledForPercentage|
 |unknownFutureValue|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:-----|
+|group|
+|unknownFutureValue|
+
+### authenticationMethodsPolicyMigrationState values
+
+|Member|
+|:-----|
+|premigration|
+|migrationInProgress|
+|migrationComplete|

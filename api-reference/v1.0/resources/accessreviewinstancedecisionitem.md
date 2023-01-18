@@ -60,24 +60,24 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-  "id": "String (identifier)",
   "accessReviewId": "String",
-  "reviewedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "reviewedDateTime": "String (timestamp)",
-  "decision": "String",
-  "justification": "String",
   "appliedBy": {
     "@odata.type": "microsoft.graph.userIdentity"
   },
   "appliedDateTime": "String (timestamp)",
   "applyResult": "String",
-  "recommendation": "String",
+  "decision": "String",
+  "id": "String (identifier)",
+  "justification": "String",
   "principal": {
     "@odata.type": "microsoft.graph.identity"
   },
   "principalLink": "String",
+  "reviewedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
+  "reviewedDateTime": "String (timestamp)",
+  "recommendation": "String",
   "resource": {
     "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
   },

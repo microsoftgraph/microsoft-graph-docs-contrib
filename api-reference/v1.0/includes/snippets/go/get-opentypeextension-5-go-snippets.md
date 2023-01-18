@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "Extensions/any"
 
-requestParameters := &graphconfig.MessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeMessagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Expand: [] string {"Extensions($filter=id%20eq%20'Com.Contoso.Referral')"},
 }
-configuration := &graphconfig.MessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

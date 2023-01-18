@@ -5,6 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 11/23/2022
 ---
 
 # Configure the arguments for built-in Lifecycle Workflow tasks
