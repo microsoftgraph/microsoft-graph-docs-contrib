@@ -21,6 +21,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | :------------------------------------------------ | :---------------------------------------------------------- |
 | [Get root site][]                                 | GET /sites/root                                             |
 | [Get site][]                                      | GET /sites/{site-id}                                        |
+| [Get_all_sites_multigeo][]                        | GET /sites/getAllSites                                      |
 | [Get site by path][]                              | GET /sites/{hostname}:/{site-path}                          |
 | [Get site for a group][]                          | GET /groups/{group-id}/sites/root                           |
 | [Get analytics][]                                 | GET /sites/{site-id}/analytics                              |
@@ -44,6 +45,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 
 [Get site]: ../api/site-get.md
+[Get_all_sites_multigeo]: ../api/site_list_all_multigeo_sites.md
 [Get root site]: ../api/site-get.md
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
