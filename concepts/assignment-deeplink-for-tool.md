@@ -28,7 +28,7 @@ The [assignment webUrl property](/graph/api/resources/educationassignment#proper
 
 The following example describes how to get the deep link URL for a given assignment.
 
-#### Request
+### Request
 
 The following example shows the request.
 
@@ -36,9 +36,9 @@ The following example shows the request.
 GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b
 ```
 
-#### Response
+### Response
 
-The following example shows the resposnse.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -84,11 +84,11 @@ The **webUrl** property in the response provides the deep link URL for the assig
 
 ## Get a deep link for the submission
 
-The [submission webUrl property](/graph/api/resources/educationsubmission#properties) returns an authenticated deep link to a submission. Currently, the **webUrl** property for submissions is only available in the beta endpoing.
+The [submission webUrl property](/graph/api/resources/educationsubmission#properties) returns an authenticated deep link to a submission. Currently, the **webUrl** property for submissions is only available in the beta endpoint.
 
 The following example describes how to get the deep link URL for a given submission.
 
-#### Request
+### Request
 
 The following example shows the request.
 
@@ -96,7 +96,7 @@ The following example shows the request.
 Get https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5
 ```
 
-#### Response
+### Response
 
 The following example shows the resposnse.
 
