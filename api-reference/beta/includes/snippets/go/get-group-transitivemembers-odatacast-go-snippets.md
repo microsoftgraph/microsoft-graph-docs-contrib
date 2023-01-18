@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
 
 requestCount := true
 
-requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 }
-configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
