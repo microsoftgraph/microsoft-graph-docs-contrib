@@ -324,13 +324,13 @@ items:
               - name: Overview
                 href: msgraph-customer-scenarios.md
               - name: Get assignment and grade data
-                href: msgraph-customer-assignmentgradedatafortool.md
+                href: connect-to-assignments-and-grades.md
               - name: Integrate your Teams app with education assignments
                 href: msgraph-customer-teamsapps.md
               - name: Get links to assignments and submissions
-                href: assignment-deeplink-for-tool.md
+                href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
-                href: update-assignment-grade-for-tool.md
+                href: update-assignment-and-grade-data.md
       - name: Extensions
         items:
           - name: Overview
