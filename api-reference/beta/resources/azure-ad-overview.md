@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "identity-and-access"
 author: "dkershaw10"
+ms.date: 11/29/2022
 ---
 
 # Working with Azure Active Directory resources in Microsoft Graph
@@ -41,7 +42,7 @@ The following table lists some common use cases for Azure AD resources.
 | Manage and monitor time-bound privileged access to directory and Azure resources for administrators and IT professionals with Privileged Identity Management (PIM). | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [What is Azure AD Privileged Identity Management?](/azure/active-directory/active-directory-privileged-identity-management-configure)|
 | Monitor identity risk events like users signing in from malware-infected devices or from unfamiliar locations. | [Identity Protection Service API](../resources/identityprotection-overview.md) | [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory risk events](/azure/active-directory/active-directory-reporting-risk-events) |
 | **Manage devices** | | |
-| Manage devices registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication. | [device](../resources/device.md) | [Getting started with Azure Active Directory device registration](/azure/active-directory/active-directory-device-registration-overview) |
+| Manage devices registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication. | [device](../resources/device.md) | [Getting started with Azure Active Directory device registration](/mem/intune/enrollment/).<br/><br/>[What is Intune?](/mem/intune/fundamentals/what-is-intune)<br/><br/>[Enroll devices for management in Intune](/mem/intune/enrollment/) |
 | **App management** | | |
 | Manage app configuration in a developer tenant. | [application](../resources/application.md) | [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/active-directory-application-objects) |
 | Manage apps installed in a tenant. | [servicePrinicpal](../resources/serviceprincipal.md) | [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/active-directory-application-objects) |

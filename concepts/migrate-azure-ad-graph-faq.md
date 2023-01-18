@@ -4,6 +4,7 @@ description: "Provides answers to frequently asked questions about migrating fro
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Azure AD Graph to Microsoft Graph migration FAQ
