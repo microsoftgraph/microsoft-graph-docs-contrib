@@ -41,25 +41,25 @@ Represents a Cloud PC provisioning policy.
 |imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows:<ul><li>publisher: Microsoftwindowsdesktop.</li> <li>offer: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 and 19h2-ent-cpc-os.</li></ul>|
 |imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
 |localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. If the local admin option is enabled, the end user can be an admin of the Cloud PC device. Read-only.|
-|managedBy|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|Specifies which services manage the Azure network connection. Possible values are: `windows365`, `devBox`. Read-only.|
-|microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|The specific settings for the Microsoft Managed Desktop, which enables customers to get a managed device experience for the Cloud PC. Before you can enable Microsoft Managed Desktop, an admin must configure it.|
+|managedBy|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|Specifies which services manage the Azure network connection. Possible values are: `windows365`, `devBox`, `unknownFutureValue`. Read-only.|
+|microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftmanageddesktop.md)|The specific settings for the Microsoft Managed Desktop, which enables customers to get a managed device experience for the Cloud PC. Before you can enable Microsoft Managed Desktop, an admin must configure it.|
 |onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
-|provisioningType|[cloudPcProvisioningType](#cloudpcprovisioningtype-values)|Specifies the type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are dedicated and shared. It will be dedicated by default if it's not specified when creating provisioningPolicy. The possible values are: `dedicated`, `shared`.|
+|provisioningType|[cloudPcProvisioningType](#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs using this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create a **cloudPcProvisioningPolicy**. Possible values are: `dedicated`, `shared`, `unknownFutureValue`.|
 |windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific Windows settings to configure while creating Cloud PCs for this provisioning policy.|
 
 ### cloudPcProvisioningType values
 
-|Membername|Value|Description|
-|:---|:---|:---|
-|`dedicated`|0|Default value. Indicates the policy should use the dedicated, per user licenses for the provisioning policy when provisioning Cloud PCs for users.|
-|`shared`|1|Indicates using the Shared use licenses for the provisioning policy when provisioning Cloud PCs forusers.|
-|`unknownFutureValue`|2|Evolvable enumeration sentinel value.Do not use.|
+| Member              | Description                                                                           |
+|:--------------------|:--------------------------------------------------------------------------------------|
+| dedicated           | Indicates that a dedicated license is used for provisioning Cloud PCs. Default value. |
+| shared              | Indicates that a shared license is used for provisioning Cloud PCs.                   |
+| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                     |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection|A defined collection of provisioning policy assignments. Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned. Returned only on `$expand`. See an [example](../api/cloudpcprovisioningpolicy-get.md) of getting the assignments relationship. |
+|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection|A defined collection of provisioning policy assignments. Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned. Returned only on `$expand`. For an example about how to get the assignments relationship, see [Get cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-get.md). |
 
 ## JSON representation
 
@@ -83,19 +83,18 @@ The following is a JSON representation of the resource.
   "domainJoinConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
   },
-  "gracePeriodInHours": "Integer",
+  "gracePeriodInHours": "Int32",
   "id": "String (identifier)",
   "imageDisplayName": "String",
   "imageId": "String",
   "imageType": "String",
   "localAdminEnabled": "Boolean",
   "managedBy": "String",
-  "provisioningType": "String",
   "microsoftManagedDesktop": {
-    "type": "String",
-    "profile": "String"
+    "@odata.type": "microsoft.graph.microsoftManagedDesktop"
   },
   "onPremisesConnectionId": "String",
+  "provisioningType": "String",
   "windowsSettings": {
     "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
   }

@@ -4,7 +4,7 @@
             "ChangeList": [
                 {
                     "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
-                    "ApiChange": "Enumeration",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcProvisioningType",
                     "ChangeType": "Addition",
                     "Description": "Added the **cloudPcProvisioningType** enumeration type.",
@@ -15,7 +15,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "servicePlanId",
                     "ChangeType": "Addition",
-                    "Description": "Added the `servicePlanId` property to the [cloudPcManagementGroupAssignmentTarget](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcManagementGroupAssignmentTarget?view=graph-rest-beta) resource.",
+                    "Description": "Added the **servicePlanId** property to the [cloudPcManagementGroupAssignmentTarget](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcManagementGroupAssignmentTarget?view=graph-rest-beta) resource.",
                     "Target": "cloudPcManagementGroupAssignmentTarget"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "provisioningType",
                     "ChangeType": "Addition",
-                    "Description": "Added the `provisioningType` property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Description": "Added the **provisioningType** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                     "Target": "cloudPcProvisioningPolicy"
                 },
                 {
@@ -31,15 +31,15 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcSharedUseServicePlan",
                     "ChangeType": "Addition",
-                    "Description": "Added the cloudPcSharedUseServicePlan resource",
+                    "Description": "Added the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and supported methods.",
                     "Target": "cloudPcSharedUseServicePlan"
                 },
                 {
                     "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Relationship",
                     "ChangedApiName": "sharedUseServicePlans",
                     "ChangeType": "Addition",
-                    "Description": "Added the **sharedUseServicePlans** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Description": "Added the **sharedUseServicePlans** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
                     "Target": "virtualEndpoint"
                 }
             ],
