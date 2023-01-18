@@ -325,7 +325,7 @@ items:
                 href: msgraph-customer-scenarios.md
               - name: Get assignment and grade data
                 href: msgraph-customer-assignmentgradedatafortool.md
-              - name: How to download all resources from a set of assignments
+              - name: Download all resources from a set of assignments
                 href: msgraph-tool-to-download-all-resources.md
               - name: Integrate your Teams app with education assignments
                 href: msgraph-customer-teamsapps.md
