@@ -10089,8 +10089,6 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
-              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -18643,6 +18641,8 @@ items:
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
             href: api/manageddevice-getcloudpcreviewstatus.md
+          - name: Get supported remote actions
+            href: api/cloudpc-getsupportedcloudpcremoteactions.md
           - name: Reboot
             href: api/cloudpc-reboot.md
           - name: Rename
