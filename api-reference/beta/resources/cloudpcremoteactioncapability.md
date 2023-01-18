@@ -1,47 +1,47 @@
 ---
 title: "cloudPcRemoteActionCapability resource type"
-description: "The action name and capability of a supported Cloud PC remote action. This is the element type of the returned list of GetSupportedCloudPcRemoteActions API."
+description: "Represents the action name and capability of a supported Cloud PC remote action."
 author: "hanky0301"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcPartnerAgentInstallResult resource type
+# cloudPcRemoteActionCapability resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The action name and capability of a supported Cloud PC remote action. This is the element type of the returned list of GetSupportedCloudPcRemoteActions API.
+Represents the action name and capability of a supported Cloud PC remote action.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionName|[actionName](#cloudpcremoteactionname-values)|The name of the supported Cloud PC remote action. Possible values are: unknown, restart, rename, restore, resize, reprovision, troubleShoot, changeUserAccountType, placeUnderReview. Default value is unknown.|
-|actionCapability|[actionCapability](#actioncapability-values)|The capability to perform a Cloud PC remote action, indicates state of the supported action. Possible values are: enabled, disabled. Default value is enabled.|
+|actionCapability|[actionCapability](#actioncapability-values)|Indicates the state of the supported action capability to perform a Cloud PC remote action. Possible values are: `enabled`, `disabled`. Default value is `enabled`.|
+|actionName|[cloudPcRemoteActionName](#cloudpcremoteactionname-values)|The name of the supported Cloud PC remote action. Possible values are: `unknown`, `restart`, `rename`, `restore`, `resize`, `reprovision`, `troubleShoot`, `changeUserAccountType`, `placeUnderReview`. Default value is `unknown`.|
 
 ### cloudPcRemoteActionName values
 
 |Member|Description|
 |:---|:---|
-|unknown|Default. Set to unknown if the remote action name is unknown and not in the list.|
-|restart|Indicates that the remote action name is restart. IT admin can trigger this action to restart a Cloud PC.|
-|rename|Indicates that the remote action name is rename. IT admin can trigger this action to update a Cloud PC's displayName.|
-|resize|Indicates that the remote action name is resize. IT admin can trigger this action to upgrade or downgrade a Cloud PC by changing its service plan. For example, from 2 vCPU to 4 vCPU.|
-|restore|Indicates that the remote action name is restore. IT admin can trigger this action to restore a Cloud PC to a previous state from a shapshot.|
-|reprovision|Indicates that the remote action name is reprovision. IT admin can trigger this action to re-create a Cloud PC by a given Cloud PC id if any unresolvable issues occurrs.|
-|changeUserAccountType|Indicates that the remote action name is changeUserAccountType. IT admin can trigger this action to change the account type of a Cloud PC's user. For example, from standard user to admin.|
-|troubleshoot|Indicates that the remote action name is troubleshoot. IT admin can trigger this action to check the Cloud PC and SessionHost health status.|
-|placeUnderReview|Indicates that the remote action name is placeUnderReview. When IT admin considers a Cloud PC suspicious, he can trigger this action to set the Cloud PC to review state or set it back.|
+|unknown|Indicates the remote action name as `unknown` when the remote action name is unknown and not in the list. Default.|
+|restart|Indicates the remote action name as `restart`. Use this action to restart a Cloud PC.|
+|rename|Indicates the remote action name as `rename`. Use this action to update the display name of a Cloud PC.|
+|resize|Indicates the remote action name as `resize`. Use this action to upgrade or downgrade a Cloud PC by changing its service plan. For example, from 2 vCPU to 4 vCPU.|
+|restore|Indicates the remote action name as `restore`. Use this action to restore a Cloud PC to a previous state from a snapshot.|
+|reprovision|Indicates the remote action name as `reprovision`. Use this action to re-create a Cloud PC by a given Cloud PC ID if any unresolvable issue occurs.|
+|changeUserAccountType|Indicates the remote action name as `changeUserAccountType`. Use this action to change the account type of the user of a Cloud PC. For example, from a standard user to an administrator.|
+|troubleshoot|Indicates the remote action name as `troubleshoot`. Use this action to check the health status of the Cloud PC and the session host.|
+|placeUnderReview|Indicates the remote action name as `placeUnderReview`. Use this action to set the Cloud PC to review state or set it back, when the Cloud PC is considered suspicious.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 #### actionCapability values
 
 |Member|Description|
 |:---|:---|
-|enabled|Default. Indicates that the remote action is allowed to be performed on the Cloud PC.|
+|enabled|Indicates that the remote action is allowed to run on the Cloud PC. Default.|
 |disabled|Indicates that the remote action is currently disabled for the Cloud PC.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
@@ -61,7 +61,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcRemoteActionCapability",
-  "actionName": "String",
-  "actionCapability": "String"
+  "actionCapability": "String",
+  "actionName": "String"
 }
 ```

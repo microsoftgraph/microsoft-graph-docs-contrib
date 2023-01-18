@@ -2578,7 +2578,7 @@
             "ChangList": [
                 {
                     "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
-                    "ApiChange": "EnumType",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcRemoteActionName",
                     "ChangeType": "Addition",
                     "Description": "Added the **cloudPcRemoteActionName** enumeration type.",
@@ -2586,7 +2586,7 @@
                 },
                 {
                     "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
-                    "ApiChange": "EnumType",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "actionCapability",
                     "ChangeType": "Addition",
                     "Description": "Added the **actionCapability** enumeration type.",
@@ -2605,7 +2605,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getSupportedCloudPcRemoteActions",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getSupportedCloudPcRemoteActions](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-getsupportedcloudpcremoteactions?view=graph-rest-beta) method to the [cloudPC](https://review.learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getSupportedCloudPcRemoteActions](https://learn.microsoft.com/en-us/graph/api/cloudpc-getsupportedcloudpcremoteactions?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 }
             ],
