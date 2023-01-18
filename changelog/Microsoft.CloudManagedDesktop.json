@@ -2705,6 +2705,24 @@
         {
             "ChangeList": [
               {
+                "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                "ApiChange": "Property",
+                "ChangedApiName": "virtualNetworkLocation",
+                "ChangeType": "Addition",
+                "Description": "Added the **virtualNetworkLocation** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+              }
+            ],
+            "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-01-17T04:14:41.3424906Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
                 "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
                 "ApiChange": "Method",
                 "ChangedApiName": "retryPartnerAgentInstallation",
