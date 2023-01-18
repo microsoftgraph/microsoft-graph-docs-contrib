@@ -23,7 +23,7 @@ At a high level, the example consists of the following:
 - [Step 5: Cache messages](#step-5-cache-messages)
 - [Step 6: Subscribe to change notifications](#step-6-subscribe-to-change-notifications)
 - [Step 7: Receive and decrypt change notifications](#step-7-receive-and-decrypt-change-notifications)
-- [Step 8: Renew change notifications subscriptions](#step-8-renew-change-notifications-subscriptions)
+- [Step 8: Renew change notifications subscriptions](#step-8-renew-change-notification-subscriptions)
 - [Step 9: Get and set viewpoints](#step-9-get-and-set-viewpoints)
 
 ## Step 1: Design and setup the architecture
@@ -152,7 +152,7 @@ Content-type: application/json
 
 Messages can be retrieved using the `GET` HTTP method on the [chatMessages](/graph/api/resources/chatmessage) resource.
 
-To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times.  Thus, retrieving messages using the `GET` HTTP method described in this step should only be used initially as a one-time export or when the change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notifications-subscriptions) below) have expired and you want to resync the messages again.  Otherwise, you should rely on your cache (see [Step 5](#step-5-cache-messages) below) and change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notifications-subscriptions) below).
+To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times.  Thus, retrieving messages using the `GET` HTTP method described in this step should only be used initially as a one-time export or when the change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notification-subscriptions) below) have expired and you want to resync the messages again.  Otherwise, you should rely on your cache (see [Step 5](#step-5-cache-messages) below) and change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notification-subscriptions) below).
 
 Microsoft Graph offers several ways to retrieve chat messages:
 
@@ -163,13 +163,13 @@ Microsoft Graph offers several ways to retrieve chat messages:
 - [per-user, getAllMessages across all chats](/graph/api/chatmessage-get):
   - `GET /users/{user-id | user-principal-name}/chats/getAllMessages`
 
-If you want to track only specific chats, **per-chat** would be an option, but you would need to implement the **access control logic** yourself.  That is, you would need to check whether the users are [members](/graph/api/chat-list-members) of the chats and show and hide the chats as they join or leave the chats accordingly. Alternatively, to avoid implementing the access control logic yourself, you can use either one of the **per-user** methods.  With the **“per-user, getAllMessages across all chats”** method, it has consumption charges (see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses) for details) and the API calls should be made from the backend server with “[Application](/graph/auth/auth-concepts)” permissions.  With the **“per-user, per-chat”** method, however, the API calls can be made directly from the UI with “[Delegated](/graph/auth/auth-concepts)” permissions, as depicted in the architecture in [Step 1](#step-1-design-and-setup-the-architecture) above.
+If you want to track only specific chats, **"per-chat"** would be an option, but you would need to implement the **access control logic** yourself.  That is, you would need to check whether the users are [members](/graph/api/chat-list-members) of the chats, and show and hide the chats as they join or leave the chats accordingly. Alternatively, to avoid implementing the access control logic yourself, you can use either one of the **"per-user"** methods.  With the **"per-user, getAllMessages across all chats"** method, it has consumption charges (see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses) for details) and the API calls should be made from the backend server with “[Application](/graph/auth/auth-concepts)” permissions.  With the **"per-user, per-chat"** method, however, the API calls can be made directly from the UI with “[Delegated](/graph/auth/auth-concepts)” permissions, as depicted in the suggested architecture in [Step 1](#step-1-design-and-setup-the-architecture) above.
 
-Different methods have different **throttling limits**, as listed on [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits).  For example, for “per-chat” and “per-user, per-chat” methods, each has a limit of 30 requests per second (rps) per app per tenant.  If a tenant of your app has 50 users and each user has 15 chats on average, and you want to retrieve messages for all users and all chats at the start of your system, then you would need 50 x 15 = 750 requests and you should spread out the request over 750 / 30 = 25 seconds.
+Different methods have different **throttling limits**, as listed on [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits).  For example, for “per-chat” and “per-user, per-chat” methods, each has a limit of 30 requests per second (rps) per app per tenant.  Thus, suppose a tenant of your app has 50 users and each user has 15 chats on average, and you want to retrieve messages for all users and all chats at the start of your system, then you would need 50 x 15 = 750 requests, and thus you should spread out the requests over 750 / 30 = 25 seconds.
 
-Below is an example of **per-chat**. By default, the returned list of messages is sorted by `lastModifiedDateTime`. However, for this example, sorting by [createdDateTime](/graph/api/chat-list-messages?#example-3-list-chat-messages-sorted-by-creation-date) is more appropriate. The sorting is specified in the `orderBy` query parameter in the request.
+Below is an example of **"per-user, per-chat"**. By default, the returned list of messages is sorted by `lastModifiedDateTime`. However, for this example, sorting by [createdDateTime](/graph/api/chat-list-messages?#example-3-list-chat-messages-sorted-by-creation-date) is more appropriate. The **sorting** is specified in the `orderBy` query parameter in the request.
 
-Typical interactive messaging apps display only the most recent messages by default, and users can then load older messages by paging through scrolling on clicking.  To retrieve only the messages that you need, all three methods above support filters (e.g. $top=10, $filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z).  You should not retrieve and persist messages older than what’s allowed per your organizational retention policies.
+Typical interactive messaging apps display only the most recent messages by default, and users can then load older messages by paging through scrolling on clicking.  To retrieve only the messages that you need, all three methods above also support **filtering** (e.g. `$top=10`, `$filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z`).  You should not retrieve and persist messages older than what is allowed per your organizational retention policies.
 
 ### Request
 ```http
@@ -260,9 +260,9 @@ Content-type: application/json
 }
 ```
 
-The `contentType` can be either `text` or `html`, so make sure your application can display both accordingly.
+As shown in the example above, the `contentType` can be either `text` or `html`, so make sure your application can display both accordingly.
 
-To get **images** embedded in the chat message, you will make a second call to retrieve [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent), as described on [Get chatMessageHostedContent](/graph/api/chatmessagehostedcontent-get)
+To get **images** embedded in the chat message, you will make a second call to retrieve [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent), as described on [Get chatMessageHostedContent](/graph/api/chatmessagehostedcontent-get).
 
 If you are also running a **data loss prevention (DLP)** app, which monitors chats for messages that contain data that users are not supposed to send, you will use [chatMessage.policyViolation.dlpAction](/graph/api/resources/chatmessagepolicyviolation) to hide or flag the messages accordingly. The valid values are `None`, `NotifySender`, and `BlockAccess`. Currently, `BlockAccessExternal` is not used today and is ignored by Microsoft Teams. Please refer to [chatMessagePolicyViolation resource type](/graph/api/resources/chatmessagepolicyviolation) for the definition of these values.
 
@@ -326,7 +326,7 @@ Some messages are [**system messages**](/graph/system-messages). For example, th
 
 ## Step 5: Cache messages
 
-Each message you get it through [getAllMessages](/microsoftteams/export-teams-content#how-to-access-teams-export-apis) or [change notification](/graph/api/resources/changenotificationcollection) is subject to charge by Microsoft Graph, so you will want to avoid reading the same message multiple times. We recommend caching messages for at least a few hours so a user can quickly reopen a chat they visited a few minutes ago.  However, you should not cache longer than what’s allowed per your organizational retention policies. 
+Each message you get from [getAllMessages](/microsoftteams/export-teams-content#how-to-access-teams-export-apis) or [change notification](/graph/api/resources/changenotificationcollection) is subject to be charged by Microsoft Graph, so you will want to avoid reading the same message multiple times. We recommend caching messages for at least a few hours so a user can quickly reopen a chat that they have recently visited.  However, you should not cache longer than what is allowed per your organizational retention policies. 
 
 To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
 
@@ -342,18 +342,18 @@ Microsoft Graph offers several kinds of change notifications for messages, as sp
 - per-app, across all chats in a tenant where the app is installed:
   - `"resource": "/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages"`
 
-If you want to track only specific chats, **per-chat** would be an option, but your should consider how many different chats you’ll need to track. There’s a [limit](/graph/webhooks#teams-resource-limitations) (e.g. 10,000) on the number of per-chat change notifications [subscriptions](/graph/api/resources/subscription). Instead, consider subscribing to **per-tenant** or **per-app**, which covers all the messages in the chats of your Microsoft Teams tenant or app.  All these three methods require you to implement the **access control logic** yourself.  That is, you would need to check whether the users are [members](/graph/api/chat-list-members) of the chats and show and hide the chats as they join or leave the chats accordingly.  This means that you would also need to create a [subscription for membership changes](/graph/teams-changenotifications-chatmembership) if you want these changes in real time.  Alternatively, to avoid implementing the access control logic yourself, you can use the per-user method, but at the expense of a larger cache storing the same chats multiple times for multiple users.
+If you want to track only specific chats, **"per-chat"** would be an option, but your should consider how many different chats you’ll need to track. There’s a [limit](/graph/webhooks#teams-resource-limitations) (e.g. 10,000) on the number of per-chat change notifications [subscriptions](/graph/api/resources/subscription). Instead, consider subscribing to **"per-tenant"** or **"per-app"**, which covers all the messages in the chats of your Microsoft Teams tenant or app.  All these three methods require you to implement the **access control logic** yourself.  That is, you would need to check whether the users are [members](/graph/api/chat-list-members) of the chats, and show and hide the chats as they join or leave the chats accordingly.  This means that you would also need to create a [subscription for membership changes](/graph/teams-changenotifications-chatmembership) if you want these changes in real time.  Alternatively, to avoid implementing the access control logic yourself, you can use the **"per-user"** method, but at the expense of a larger cache storing the same chats multiple times for multiple users.
 
-When creating the subscription, make sure that `includeResourceData` property is set to be true, and that you have specified the `encryptionCertificate` and `encryptionCertificateId` properties.  Otherwise, the encrypted content (in [Step 7](#step-7-receive-and-decrypt-change-notifications)) would not be returned in the change notifications.  See [Set up change notifications that include resource data](/graph/webhooks#notification-endpoint-validation) for details.
+When creating the subscription, make sure that `includeResourceData` property is set to be `true`, and that you have specified the `encryptionCertificate` and `encryptionCertificateId` properties.  Otherwise, the encrypted content (in [Step 7](#step-7-receive-and-decrypt-change-notifications)) would not be returned in the change notifications.  See [Set up change notifications that include resource data](/graph/webhooks#notification-endpoint-validation) for details.
 
-Change notification subscriptions have consumption charges (see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses) for details).
+Change notification subscriptions have consumption charges.  See [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses) for details.
 
-Below is an example to get all messages **per-user**. More details can be found on [Create subscription](/graph/api/subscription-post-subscriptions). As mentioned at the bottom of [Create subscription](/graph/api/subscription-post-subscriptions), before trying the example below, the subscription notification endpoint (specified in the notificationUrl property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+Below is an example to get all messages **"per-user"**. More details can be found on [Create subscription](/graph/api/subscription-post-subscriptions). As mentioned at the bottom of [Create subscription](/graph/api/subscription-post-subscriptions), before trying the example below, the subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If the validation fails, the request to create the subscription returns a `400 Bad Request` error.
 
 When designing the user experience, please take into account that, for most messages, it takes up to 4 seconds for Microsoft Graph to detect a change and send its change notification.
 
 ### Request
-```
+```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 {
@@ -368,7 +368,7 @@ Content-type: application/json
 }
 ```
 ### Response:
-```
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 {
@@ -393,9 +393,9 @@ Content-type: application/json
 
 ## Step 7: Receive and decrypt change notifications
 
-Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the `notificationUrl` (provided in the subscription creation above).  For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications).
+Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the `notificationUrl` (provided in the subscription creation in [Step 6](#step-6-subscribe-to-change-notifications) above).  For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications).
 
-Make sure that you have specified the `resource` property when creating the subscription (in [Step 6](#step-6-subscribe-to-change-notifications)).  Otherwise, the encrypted content would not be returned.  See [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications) for details.
+As mentioned earlier, when creating the subscription (in [Step 6](#step-6-subscribe-to-change-notifications)), make sure that `includeResourceData` property is set to be `true`, and that you have specified the `encryptionCertificate` and `encryptionCertificateId` properties.  Otherwise, the encrypted content (in [Step 7](#step-7-receive-and-decrypt-change-notifications)) would not be returned in the change notifications.  See [Set up change notifications that include resource data](/graph/webhooks#notification-endpoint-validation) for details.
 
 ### Request (sent by Microsoft Graph)
 
@@ -486,13 +486,13 @@ Content-type: application/json
   "eventDetail": null
 }
 ```
-Change notifications are sometimes delivered out of order, due to their asynchronous nature. If your application requires the resources to be sorted in a particular order, make sure you are sorting the decrypted content by the appropriate property. For example, if the messages should be displayed in chronological order in your chat application, you will sort the decrypted [chatMessage](/graph/api/resources/chatmessage) by createdDateTime.
+Change notifications are sometimes delivered out of order, due to their asynchronous nature. If your application requires the resources to be sorted in a particular order, make sure you are sorting the decrypted content by the appropriate property. For example, if the messages should be displayed in chronological order in your chat application, you should sort the decrypted [chatMessage](/graph/api/resources/chatmessage)s by `createdDateTime`.
 
 When a chat message is edited, a change notification is sent for the edit, with an updated `lastEditedDateTime`.  Your chat application should display the edited message instead of the original message, if it is meant to display the latest version of messages.
 
 The notes about `contentType`, images, data loss prevention (DLP), and retention policies described in [Step 4: Retrieve messages](#step-4-retrieve-messages) above are applicable to the decrypted messages here as well.
 
-## Step 8: Renew change notifications subscriptions
+## Step 8: Renew change notification subscriptions
 
 For security reasons, subscriptions for [chatMessage](/graph/api/resources/chatmessage) expire in 60 minutes, as described on [subscription resource type](/graph/api/resources/subscription?#maximum-length-of-subscription-per-resource-type).  We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions.  Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their `expirationDateTime` property, as described on [Update subscription](/graph/api/subscription-update?#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications.
 
@@ -509,7 +509,7 @@ Content-type: application/json
 }
 ```
 ### Response
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
@@ -522,7 +522,7 @@ Content-type: application/json
     "notificationUrl": "https://function-ms-teams-subscription-webhook-z2a2ig2bfq-uc.a.run.app",
     "notificationQueryOptions": null,
     "lifecycleNotificationUrl": null,
-    "expirationDateTime": "2023-01-12T21:59:59.711Z",
+    "expirationDateTime": "2023-01-12T18:23:45.9356913Z",
     "creatorId": "8888a8a8-8a88-888a-88aa-8a888a88888a",
     "includeResourceData": null,
     "latestSupportedTlsVersion": "v1_2",
@@ -535,7 +535,7 @@ Content-type: application/json
 
 A [viewpoint](/graph/api/resources/chatviewpoint) in a chat marks the timestamp at which the chat was last read by the users, so users can easily tell that any messages under the viewpoint are unread.
 
-To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/api/chat-get) resource. Here is an example.
+To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/api/chat-get) resource. Below is an example.
 
 ### Request
 ```http
@@ -562,13 +562,13 @@ Content-type: application/json
     }
 }
 ```
-The viewpoint of a chat for a user is updated when the user [marks the chat as read](/graph/api/chat-markchatreadforuser), [marks the chat as unread](/graph/api/chat-markchatunreadforuser), [hides the chat](/chat-hideforuser), or [unhide the chat](/graph/api/chat-unhideforuser).
+The viewpoint of a chat for a user is updated whenever the user [marks the chat as read](/graph/api/chat-markchatreadforuser), [marks the chat as unread](/graph/api/chat-markchatunreadforuser), [hides the chat](/chat-hideforuser), or [unhide the chat](/graph/api/chat-unhideforuser).
 
 ## Cost estimation
 
 For the most up-to-date pricing, please see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses).
 
-As of January 2023, when this document was written, retrieving messages “per-user, per-chat” ([Step 4](#step-4-retrieve-messages)) has no consumptions charges.  Only change notifications ([Step 6](#step-6-subscribe-to-change-notifications) to [Step 8](#step-8-renew-change-notifications-subscriptions)) have consumption charges, and it’s $0.00075 per message.  Thus, suppose your app has 50 users, each user receives messages from 20 users, and each user sends 300 messages per month, then the estimated costs would be about:
+As of January 2023, when this document was written, retrieving messages “per-user, per-chat” ([Step 4](#step-4-retrieve-messages)) has no consumptions charges (but has throttling limits as described in [Step 4](#step-4-retrieve-messages)).  Only change notifications ([Step 6](#step-6-subscribe-to-change-notifications) to [Step 8](#step-8-renew-change-notification-subscriptions)) have consumption charges, and it’s $0.00075 per message.  Thus, suppose your app has 50 users, each user receives messages from 20 users, and each user sends 300 messages per month, then the estimated costs would be about:
 - 50 recipients x (20 senders x 300 messages/month/sender)/recipient x $0.00075/message
 = 300,000 messages/month x $0.00075/message
 = $225/month.
@@ -577,7 +577,7 @@ As of January 2023, when this document was written, retrieving messages “per-u
 
 Using the steps above, you can build an interactive message app within your own application.  Initially, the chat UI calls `GET /users/{user-id}/chats/{chat-id}/messages` to get only the recent messages needed to be displayed on the chat UI.  It then gets new messages in real time from the server component, which subscribes and listens to change notifications for the new messages.
 
-To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times, by caching the messages. We recommend caching messages for at least a few hours so a user can quickly reopen a chat they visited a few minutes ago.  However, you should not cache longer than what’s allowed per your organizational retention policies. To simplify security, we recommend not sharing caches between users.
+To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times, by caching the messages. We recommend caching messages for at least a few hours so a user can quickly reopen a chat that they have recently visited.  However, you should not cache longer than what is allowed per your organizational retention policies. To simplify security, we recommend not sharing caches between users.
 
 Change notification subscriptions for [chatMessage](/graph/api/resources/chatmessage) expire in 60 minutes, so we recommend renewing every 30 minutes.  In case of an expiration, you would call `GET /users/{user-id}/chats/{chat-id}/messages` again to get the most up-to-date messages and refresh the cache.
 
@@ -589,11 +589,11 @@ You can also add more advanced features in your chat application by:
 
 - [Adding reactions to chat messages](/graph/api/chatmessage-setreaction), such as thumbs up and smileys.
 - [Adding images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples), so messages can contain rich contents.
-- [Adding mentions to chat messages](/graph/api/resources/chatmessagemention), so specific users can be tagged with "@".
+- [Adding "mentions" to chat messages](/graph/api/resources/chatmessagemention), so specific users can be tagged with "@".
 - [Hiding a chat from users](/graph/api/chat-hideforuser) to declutter the chat list.
 - [Removing a member from a chat](/graph/api/chat-delete-members) when it is no longer needed to them.
 - [Checking chat membership](/graph/api/chat-list), in case users have joined or left chat groups, especially if they can do that outside of your app.
-- [Subscribe to change notifications of other resources](/graph/teams-change-notification-in-microsoft-teams-overview), such as chats and membership, not just messages.
+- [Subscribe to change notifications of other resources](/graph/teams-change-notification-in-microsoft-teams-overview), such as chats and memberships, not just messages.
 - [Installing an app within chat](/graph/api/chat-post-installedapps), so users can use the app within the chat
 - [Pinning a tab in the chat](/graph/api/chat-post-tabs), so users can switch to the app easily
 
