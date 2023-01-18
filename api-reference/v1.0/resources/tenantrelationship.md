@@ -3,7 +3,7 @@ title: "tenantRelationship resource type"
 description: "Represent the various type of tenant relationships."
 author: "koravva"
 ms.localizationpriority: medium
-ms.prod: "Granular-delegated-admin-privileges"
+ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
 ---
 
