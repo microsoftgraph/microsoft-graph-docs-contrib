@@ -72,6 +72,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "@odata.type": "Collection(microsoft.graph.cloudPcRemoteActionCapability)",
   "truncated": true
 }
 -->
