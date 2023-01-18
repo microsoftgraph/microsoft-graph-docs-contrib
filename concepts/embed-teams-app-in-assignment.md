@@ -1,15 +1,15 @@
 ---
 title: "Share assignments with an embedded Teams application"
-description: "Use Microsoft Graph to create assignments with Teams app resource using your own application."
+description: "Learn how to use Microsoft Graph to embed a Teams app resource in an assignment."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Share assignments with an embedded Teams application
+# Embed a Teams app in an assignment
 
-This article describes how to use the Microsoft Graph APIs to create an assignment and attach a Teams app as a resource from your own application to add more functionalities.
+This article describes how to use Microsoft Graph to embed a Teams app in an assignment to add additional functionality.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to test the APIs mentioned in this article.
 
