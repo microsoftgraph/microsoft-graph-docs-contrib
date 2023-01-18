@@ -18,7 +18,7 @@ In linguistics, pronouns are words that refer to someone in a sentence without u
 
 Global administrators can enable and turn on the display of pronouns for an organization, allowing users to optionally add and manage pronouns on their profile cards in Outlook on the web. They can also disable and turn off the display of pronouns for everyone in the organization. By default, pronouns are disabled.
 
-Once pronouns are enabled, a user can add pronouns to the profile card. Pronouns appear by the user's name on the card in Outlook, and as the feature continues to roll out, across other Microsoft 365 apps that display profile cards. Pronouns are displayed only internally within the organization. 
+Once pronouns are enabled, a user can add pronouns to the profile card. Pronouns appear by the user's name on the card in Outlook and Teams. Pronouns are displayed only internally within the organization. Anyone that has an account in the organization, including guest accounts, can see pronouns on profile cards.
 
 ## Confirm your current settings
 
