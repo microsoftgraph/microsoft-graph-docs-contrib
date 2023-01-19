@@ -505,7 +505,7 @@ Content-type: application/json
 }
 ```
 
-#### Resolve multiple aadUserIds by using a bulk operation
+##### Resolve multiple aadUserIds by using a bulk operation
 
 Use the [directoryObject: getByIds](/graph/api/directoryobject-getbyids) API to get multiple user objects based on a list of Azure AD user IDs in the request body. This example uses the **aadUserId** collection from step 1 as the request body. You can include up to 999 IDs in this bulk operation.
 
