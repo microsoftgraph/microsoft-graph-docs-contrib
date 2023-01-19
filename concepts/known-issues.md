@@ -404,7 +404,7 @@ This error is due to intermittent license check failures, which we are working t
 
 ## Security
 
-### Missing user principal name in Identity Protection security alerts
+### UPN missing in Identity Protection security alerts
 
 The user principal name (UPN) is missing from Azure AD Identity Protection security alerts.
 
