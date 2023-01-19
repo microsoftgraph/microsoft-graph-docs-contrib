@@ -17,14 +17,14 @@ Represents metadata for a long running operation.
 
 ## Properties
 
-| Property           | Type                       | Description                                                                                                            |
-| :----------------- | :------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| createdDateTime    | DateTimeOffset             | Time when this operation was created.                                                                                  |
-| id                 | String                     | Operation identifier. Inherits from [entity](../resources/entity.md).                                                  |
-| lastActionDateTime | DateTimeOffset             | Time when last action was performed on this operation.                                                                 |
-| resourceLocation   | String                     | Canonical url of the resource.                                                                                         |
-| status             | longRunningOperationStatus | Status of the operation.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
-| statusDetail       | String                     | Detail about the status value.                                                                                         |
+| Property           | Type                       | Description                                                                                                             |
+| :----------------- | :------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| createdDateTime    | DateTimeOffset             | Time when this operation was created.                                                                                   |
+| id                 | String                     | Operation identifier. Inherits from [entity](../resources/entity.md).                                                   |
+| lastActionDateTime | DateTimeOffset             | Time when last action was performed on this operation.                                                                  |
+| resourceLocation   | String                     | Canonical url of the resource.                                                                                          |
+| status             | longRunningOperationStatus | Status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
+| statusDetail       | String                     | Detail about the status value.                                                                                          |
 
 ## Relationships
 

@@ -23,7 +23,7 @@ Base type of [inboundActivityResults](industrydata-inboundactivityresults.md).
 | :---------- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activityId  | String                     | The identifier for the activity that is being reported on.                                                                                                                                   |
 | displayName | String                     | The display name of the underlying flow.                                                                                                         |
-| status      | industryDataActivityStatus | The latest status of the activity in the run. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| status      | microsoft.graph.industryData.industryDataActivityStatus | The latest status of the activity in the run. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 

@@ -15,11 +15,11 @@ Namespace: microsoft.graph.industryData
 
 Create a new [inboundFlow](../resources/industrydata-inboundflow.md) object.
 
-The following prerequisite resources are required when creating an **inboundFlow**
+The following prerequisite resources are required when you create an **inboundFlow**:
 
-- [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)
 - [dataConnector](../resources/industrydata-industrydataconnector.md)
-- [yearTimePeriodDefinition](../resources/industrydata-yearTimePeriodDefinition.md)
+- [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)
+- [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)
 
 ## Permissions
 
@@ -57,7 +57,7 @@ You can specify the following properties when you create an **inboundFlow**.
 
 | Property           | Type           | Description                                                                                                                                                                                                                                          |
 | :----------------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataDomain         | inboundDomain  | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
+| dataDomain         | microsoft.graph.industryData.inboundDomain  | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
 | displayName        | String         | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                         |
 | effectiveDateTime  | DateTimeOffset | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
 | expirationDateTime | DateTimeOffset | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.   |

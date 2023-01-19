@@ -15,21 +15,21 @@ Namespace: microsoft.graph.industryData
 
 Industry data API is intended to be a multi-vertical, cross-industry platform. In the current release, it is highly tailored to the education industry, powering the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 from student information systems (SIS) / student management systems (SMS).
 
-Additionally, industry data provides resources that you can use to retrieve statistics, after the data is processed, and assist with monitoring and troubleshooting.
+Industry data provides resources that you can use to retrieve statistics, after the data is processed, and assist with monitoring and troubleshooting.
 
 ## Overview
 
-Industry data is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process will combine and normalize the imported data to land in the Azure Data Lake of the tenant.
+Industry data is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process combines and normalizes the imported data to land in the Azure Data Lake of the tenant.
 
 :::image type="content" source="../../../concepts/images/industrydata-overview.png" alt-text="Graphic that shows industryData overview." lightbox="../../../concepts/images/industrydata-overview.png":::
 
-First, connect to the data of your institution. Define an inbound flow: Create **sourceSystemDefinition**, **dataConnector**, and **yearTimePeriodDefinition**. By default, your inbound flow will activate twice (2x) daily (called a _run_).
+First, connect to the data of your institution. Define an inbound flow: Create **sourceSystemDefinition**, **dataConnector**, and **yearTimePeriodDefinition**. By default, the inbound flow activates twice (2x) daily (called a _run_).
 
 When the run starts, it connects to the **sourceSystemDefinition** and **dataConnector** of the inbound flow, and performs basic validation. Basic validation ensures that the connection is correct, for [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) as a source, or the filenames and headers are correct for CSV as a source.
 
 Next, the system transforms the data for import in preparation for advanced validation. As part of the data transformation, the data is associated based on the configured **yearTimePeriodDefinition**.
 
-Additionally, the system stores the latest copy of the Azure AD of the tenant into the Azure Data Lake. The copy of the Azure AD assists with user matching between the **sourceSystemDefinition** and the Azure AD user object. At this stage, the match link is written only to the Azure Data Lake.
+The system stores then the latest copy of the Azure AD of the tenant into the Azure Data Lake. The copy of the Azure AD assists with user matching between the **sourceSystemDefinition** and the Azure AD user object. At this stage, the match link is written only to the Azure Data Lake.
 
 Next, the inbound flow performs advanced validation to determine data health. The validation focuses on identifying errors and/or warnings. Validation follows the concept of bringing in good data and keeping out bad data.
 
@@ -70,13 +70,13 @@ You can integrate industry data APIs with 3rd-party apps. To enable this integra
 
 ## Concepts
 
-Industry data APIs power School Data Sync which is a data transformation engine. It imports data sets in from external sources (SIS / SMS), transforms the data into a common data model, and writes the transformed data to various external services, like users and groups to Azure AD, and ability to create a team based group.
+Industry data APIs power School Data Sync which is a data transformation engine. It imports data sets from external sources (SIS / SMS), transforms the data into a common data model, and writes the transformed data to various external services, like users and groups to Azure AD, and ability to create a team based group.
 
 The following articles are to help with some basics that are specific to industry data APIs.
 
 ### Data domain
 
-The **dataDomain** property defines the type of data being imported and determines the common data model format it will be stored in. Today, the only supported **dataDomain** is `educationRostering`.
+The **dataDomain** property defines the type of data that is imported and determines the common data model format for it to be stored in. Today, the only supported **dataDomain** is `educationRostering`.
 
 ### Reference Definitions
 
@@ -88,7 +88,7 @@ Types based on [referenceValue](industrydata-referencevalue.md) provide a simpli
 
 #### Example usage
 
-The **userMatchingSettings.sourceIdentifier** property takes a [identifierTypeReferenceValue](industrydata-identifierTypeReferenceValue.md) type which binds to the `RefIdentifierType` **referenceType**.
+The **userMatchingSettings.sourceIdentifier** property takes a [identifierTypeReferenceValue](industrydata-identifiertypereferencevalue.md) type that binds to the `RefIdentifierType` **referenceType**.
 
 ```json
 "sourceIdentifier": {
@@ -96,7 +96,7 @@ The **userMatchingSettings.sourceIdentifier** property takes a [identifierTypeRe
 },
 ```
 
-A **referenceDefinition** may also be bound directly using via the **value** property
+A **referenceDefinition** might also be bound directly using the **value** property.
 
 ```json
 "sourceIdentifier": {
@@ -127,7 +127,7 @@ Transformation of the data is often shaped by each individual user's role within
 
 ### Data Connectors
 
-A [industryDataConnector](industrydata-industrydataconnector.md) acts as a bridge between a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) and [inboundFlow](industrydata-inboundflow.md). It is responsible for acquiring data from an external source and providing the data to inbound data flows.
+An [industryDataConnector](industrydata-industrydataconnector.md) acts as a bridge between a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) and [inboundFlow](industrydata-inboundflow.md). It is responsible for acquiring data from an external source and providing the data to inbound data flows.
 
 #### Uploading and Validating CSV Data
 
@@ -138,10 +138,10 @@ For more information:
   - File names and column headers are case-sensitive
   - CSV files must be in UTF-8 format
   - We don't accept line breaks in incoming data.
-  - To review and download sample set of SDS V2.1 CSV files, [see the SDS GitHub Repository](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples).
+  - To review and download sample set of SDS V2.1 CSV files, see the [SDS GitHub repository](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples).
 
 > [!IMPORTANT]
-> The [industryDataConnector](industrydata-industrydataconnector.md) does not accept delta changes so each upload session must contain the complete data set. Supplying only partial or delta data will result in any missing records being transitioned to an inactive state.
+> The [industryDataConnector](industrydata-industrydataconnector.md) doesn't accept delta changes so each upload session must contain the complete data set. Supplying only partial or delta data results in the transition of any missing records to an inactive state.
 
 ##### Request an Upload Session
 
@@ -151,6 +151,6 @@ The current **fileUploadSession** is retrieved from an **azureDataLakeConnector*
 
 ##### Validating Uploaded Files
 
-Once all CSV data has been successfully uploaded, the data must be validated before any inbound data flows can being processing the data. This is accomplished by calling the [validate](../api/industrydata-industrydataconnector-validate.md) action of the **azureDataLakeConnector**. This will finalize the upload session and validate that all required files were provided and properly formed. Once validated, the data becomes available for processing by inbound data files.
+Once all CSV data has been successfully uploaded, the data must be validated before any inbound data flows can being processing the data. This is accomplished by calling the [validate](../api/industrydata-industrydataconnector-validate.md) action of the **azureDataLakeConnector** that finalizes the upload session and validates that all required files were provided and properly formed. Once validated, the data becomes available for processing by inbound data files.
 
-The **validate** action is a long-running [fileValidateOperation](industrydata-fileValidateOperation.md). A link to the **fileValidateOperation** is returned in the `Location` header of the **validate** response. The **fileValidateOperation** provides the current status and final validation results.
+The **validate** action is a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). A link to the **fileValidateOperation** is returned in the `Location` header of the **validate** response. The **fileValidateOperation** provides the current status and final validation results.

@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-POST /external/industryData/sourceSystems/{sourceSystemDefinitionId}
+DELETE /external/industryData/sourceSystems/{sourceSystemDefinitionId}
 ```
 
 ## Request headers
@@ -41,7 +41,6 @@ POST /external/industryData/sourceSystems/{sourceSystemDefinitionId}
 | Name          | Description                 |
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
-| Content-Type  | application/json. Required. |
 
 ## Request body
 

@@ -1,6 +1,6 @@
 ---
-title: "Call records enum values"
-description: "Microsoft Graph industry data enumeration values"
+title: "Industry data enum values"
+description: "Microsoft Graph industry data subnamespace enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -11,46 +11,48 @@ author: "mlafleur"
 
 Namespace: microsoft.graph.industryData
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 ### inboundDomain values
 
-| Member
-|:--------------
-| educationRostering
-| unknownFutureValue
+| Member             |
+|:-------------------|
+| educationRostering |
+| unknownFutureValue |
 
 ### industryDataActivityStatus values
 
-| Member
-|:--------------
-| inProgress
-| skipped
-| failed
-| completed
-| completedWithErrors
-| completedWithWarnings
-| unknownFutureValue
+| Member                |
+|:----------------------|
+| inProgress            |
+| skipped               |
+| failed                |
+| completed             |
+| completedWithErrors   |
+| completedWithWarnings |
+| unknownFutureValue    |
 
 ### industryDataRunStatus values
 
-| Member
-|:--------------
-| running
-| failed
-| completed
-| completedWithErrors
-| completedWithWarnings
-| unknownFutureValue
+| Member                |
+|:----------------------|
+| running               |
+| failed                |
+| completed             |
+| completedWithErrors   |
+| completedWithWarnings |
+| unknownFutureValue    |
 
 ### readinessStatus values
 
-| Member
-|:--------------
-| notReady
-| ready
-| failed
-|disabled
-|expired
-| unknownFutureValue
+| Member             |
+|:-------------------|
+| notReady           |
+| ready              |
+| failed             |
+| disabled           |
+| expired            |
+| unknownFutureValue |
 
 <!--
 {
