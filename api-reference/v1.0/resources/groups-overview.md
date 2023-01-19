@@ -94,7 +94,7 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 
 **Mail-enabled security groups** are used in the same way as security groups, but can be used to send emails to group members. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
 
-The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
+The following JSON object shows a sample representation of a security group when you call the Microsoft Graph groups API.
 
 ```http
 HTTP/1.1 201 Created
@@ -146,6 +146,10 @@ The **groupType** property must also include the `"DynamicMembership"` value in 
 
 The following example request creates a new Microsoft 365 group that can only include employees in the Marketing department.
 
+<!-- {
+  "blockType": "request",
+  "name": "groups_overview_createdynamicgroup"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json

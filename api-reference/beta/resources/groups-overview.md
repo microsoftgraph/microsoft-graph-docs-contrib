@@ -96,6 +96,10 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 
 The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
 
+<!-- {
+  "blockType": "request",
+  "name": "groups_overview_createdynamicgroup"
+}-->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
