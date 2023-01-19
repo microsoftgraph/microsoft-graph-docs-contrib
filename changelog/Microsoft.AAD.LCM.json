@@ -338,7 +338,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Addition",
-          "Description": "Added the **PATCH** operation to the [task](https://learn.microsoft.com/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
+          "Description": "Added the **PATCH** operation to the [task](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
           "Target": "task"
         },
         {
