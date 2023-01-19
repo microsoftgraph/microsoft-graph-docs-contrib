@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "subject eq 'let''s meet for lunch?'"
 
-requestParameters := &graphconfig.MessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeMessagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.MessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'"
 
-requestParameters := &graphconfig.ServicePrincipalRiskDetectionsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityProtectionServicePrincipalRiskDetectionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ServicePrincipalRiskDetectionsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityProtectionServicePrincipalRiskDetectionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
