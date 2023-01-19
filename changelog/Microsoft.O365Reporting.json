@@ -1917,6 +1917,40 @@
 		"CreatedDateTime": "2022-10-12T00:00:00",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
-	}
+	},
+	{
+		"ChangeList": [
+	  {
+		  "Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getFormsUserActivityCounts",
+		  "ChangeType": "Deletion",
+		  "Description": "Added the [getFormsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getFormsUserActivityCounts?view=graph-rest-beta) method.",
+		  "Target": "getFormsUserActivityCounts"
+	  },
+	  {
+		  "Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getFormsUserActivityUserCounts",
+		  "ChangeType": "Deletion",
+		  "Description": "Added the [getFormsUserActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getFormsUserActivityUserCounts?view=graph-rest-beta) method.",
+		  "Target": "getFormsUserActivityUserCounts"
+	  },
+	  {
+		  "Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getFormsUserActivityUserDetail",
+		  "ChangeType": "Deletion",
+		  "Description": "Added the [getFormsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getFormsUserActivityUserDetail?view=graph-rest-beta) method.",
+		  "Target": "getFormsUserActivityUserDetail"
+	  }
+	  ],
+	  "Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
+	  "Cloud": "prd",
+	  "Version": "beta",
+	  "CreatedDateTime": "2022-11-29T00:00:00",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+  }
   ]
 }
