@@ -1,6 +1,6 @@
 ---
 title: "industryDataRun: getStatistics"
-description: "Calculate statistics for a run."
+description: "Get statistics for an industryDataRun."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Function for retrieving statistics for an [industryDataRun](../resources/industrydata-industrydatarun.md).
+Get statistics for an [industryDataRun](../resources/industrydata-industrydatarun.md).
 
 ## Permissions
 
@@ -68,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET /external/industryData/runs/918d4a8f-599b-4f6a-b409-e892855db534/getStatistics
+GET https://graph.microsoft.com/beta/external/industryData/runs/918d4a8f-599b-4f6a-b409-e892855db534/getStatistics
 ```
 
 ### Response

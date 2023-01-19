@@ -30,7 +30,7 @@ Base type of [inboundFlowActivity](../resources/industrydata-inboundflowactivity
 | :------------ | :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | blockingError | [microsoft.graph.publicError](publicerror.md) | An error object to diagnose critical failures in an activity.                                                                                                                      |
 | displayName   | String                                        | The name of the running flow.                                                                                                                                                      |
-| status        | industryDataActivityStatus                    | The current status of the activity. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| status        | microsoft.graph.industryData.industryDataActivityStatus                    | The current status of the activity. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 

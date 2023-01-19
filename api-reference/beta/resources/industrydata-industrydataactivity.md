@@ -22,7 +22,7 @@ Base type of [inboundFlow](../resources/industrydata-inboundflow.md).
 | Property        | Type            | Description                                                                                                                                                               |
 | :-------------- | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | displayName     | String          | The name of the activity. Maximum supported length is 100 characters.                                                                                                                                                 |
-| readinessStatus | readinessStatus | The state of the activity from creation through to ready to do work. The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
+| readinessStatus | microsoft.graph.industryData.readinessStatus | The state of the activity from creation through to ready to do work. The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
 
 ## Relationships
 

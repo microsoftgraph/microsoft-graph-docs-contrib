@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents a pointer to an entry in the [referenceDefinition](industrydata-referencedefinition.md) collection with a specific reference type.
+An abstract type that represents a pointer to an entry in the [referenceDefinitions](industrydata-referencedefinition.md) collection with a specific reference type.
 
 Base type of [identifierTypeReferenceValue](industrydata-identifiertypereferencevalue.md), [roleReferenceValue](industrydata-rolereferencevalue.md), [userMatchTargetReferenceValue](industrydata-usermatchtargetreferencevalue.md), and [yearReferenceValue](industrydata-yearreferencevalue.md).
 

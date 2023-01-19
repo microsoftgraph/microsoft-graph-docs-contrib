@@ -41,7 +41,7 @@ For details about how statistics can assist with health and monitoring a run gro
 | displayName   | String                        | The name of the run for rendering in a user interface.                                                                                                                                                                                                        |
 | endDateTime   | DateTimeOffset                | The date and time when the run finished or null if the run is still in-progress. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`. |
 | startDateTime | DateTimeOffset                | The date and time when the run started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`.                                          |
-| status        | industryDataRunStatus         | The current status of the run. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`.                                                                                               |
+| status        | microsoft.graph.industryData.industryDataRunStatus         | The current status of the run. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`.                                                                                               |
 
 ## Relationships
 

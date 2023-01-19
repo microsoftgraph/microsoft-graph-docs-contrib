@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-POST /external/industryData/years{yearTimePeriodDefinitionId}
+DELETE /external/industryData/years/{yearTimePeriodDefinitionId}
 ```
 
 ## Request headers
@@ -41,7 +41,6 @@ POST /external/industryData/years{yearTimePeriodDefinitionId}
 | Name          | Description                 |
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
-| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -65,7 +64,7 @@ The following is an example of a request.
 -->
 
 ```http
-DELETE /external/industryData/years/0c629a1a-a85c-4365-bdf0-623a32ca69cb
+DELETE https://graph.microsoft.com/beta/external/industryData/years/0c629a1a-a85c-4365-bdf0-623a32ca69cb
 ```
 
 ### Response

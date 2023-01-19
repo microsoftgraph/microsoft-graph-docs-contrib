@@ -76,13 +76,13 @@ Content-length: 246
 
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
-  "displayName": "Updated flow name",
+  "displayName": "Updated flow name"
 }
 ```
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

@@ -63,7 +63,7 @@ The following is an example of a request.
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}
+DELETE https://graph.microsoft.com/beta/external/industryData/inboundFlows/7bd62d17-8c37-4494-f68d-08daddab2911
 ```
 
 ### Response
