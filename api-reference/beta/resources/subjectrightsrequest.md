@@ -56,6 +56,8 @@ Inherits from [entity](../resources/entity.md).
 |stages|[subjectRightsRequestStageDetail](../resources/subjectrightsrequeststagedetail.md) collection|Information about the different stages for the request.|
 |status|subjectRightsRequestStatus|The status of the request. Possible values are: `active`, `closed`, `unknownFutureValue`.|
 |type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
+|approvers|[identitySet](../resources/identityset.md) collection|Collection of identities that can approve the request.|
+|collaborators|[identitySet](../resources/identityset.md) collection|Collection of identities that can collaborate on the request.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -137,6 +139,12 @@ The following is a JSON representation of the resource.
             }
         }
     ],
+    "approvers": [{
+        "@odata.type": "microsoft.graph.identitySet"
+    }],
+    "collaborators": [{
+        "@odata.type": "microsoft.graph.identitySet"
+    }],
     "siteLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
     },
