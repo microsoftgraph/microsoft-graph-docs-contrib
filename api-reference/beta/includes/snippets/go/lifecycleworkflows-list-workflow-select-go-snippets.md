@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "category eq 'leaver'"
 
-requestParameters := &graphconfig.WorkflowsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id","category","displayName","isEnabled","isSchedulingEnabled"},
 }
-configuration := &graphconfig.WorkflowsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -70,29 +70,30 @@ Here is a JSON representation of the resource.
 ```json
 {
  "@odata.type": "#microsoft.graph.accessReviewInstance",
- "id": "string (identifier)",
+ "contactedReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewer"
+    }
+  ],
  "displayName": "string",
- "startDateTime": "string (timestamp)",
  "endDateTime": "string (timestamp)",
- "status": "string",
- "scope": {
-    "@odata.type": "microsoft.graph.accessReviewScope"
-  },
+ "fallbackReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "id": "string (identifier)",
   "reviewers": [
     {
       "@odata.type": "microsoft.graph.accessReviewReviewerScope"
     }
   ],
-  "fallbackReviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
-    }
-  ],
-  "contactedReviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewer"
-    }
-  ]
+  "scope": {
+    "@odata.type": "microsoft.graph.accessReviewScope"
+  },
+  "startDateTime": "string (timestamp)",
+  "status": "string"
+  
 }
 ```
 
