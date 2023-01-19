@@ -96,10 +96,6 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 
 The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
 
-<!-- {
-  "blockType": "request",
-  "name": "groups_overview_createdynamicgroup"
-}-->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -150,8 +146,12 @@ The **groupType** property must also include the `"DynamicMembership"` value in 
 
 The following example request creates a new Microsoft 365 group that can only include employees in the Marketing department.
 
+<!-- {
+  "blockType": "request",
+  "name": "groups_overview_createdynamicgroup"
+}-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups
+POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
 
 {
