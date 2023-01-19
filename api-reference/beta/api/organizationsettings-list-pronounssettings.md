@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization. For more information on settings to manage pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](../../../concepts/pronouns-configure-pronouns-availability.md)
+Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization. For more information on settings to manage pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/concepts/pronouns-configure-pronouns-availability.md)
 
 ## Permissions
 
