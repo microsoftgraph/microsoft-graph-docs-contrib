@@ -548,9 +548,6 @@ Content-type: application/json
 
 You can now merge the responses from step 1 and step 2 to join the IDs (**aadUserId** in the alerts response and **id** in the **getByIds** response) to craft an alerts collection with the UPN included.
 
-#### Design considerations
-As you use this workaround, please consider best practices for interacting with the Graph API. Here is helpful link: 
-
 > [!NOTE]
 > As a best practice, be aware of the throttling limits for Microsoft Graph APIs. For details, see [Microsoft Graph throttling guidane](https://learn.microsoft.com/en-us/graph/throttling). 
 
