@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.CloudPcUserSettingRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DeviceManagementVirtualEndpointUserSettingItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"assignments"},
 }
-configuration := &graphconfig.CloudPcUserSettingRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceManagementVirtualEndpointUserSettingItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
