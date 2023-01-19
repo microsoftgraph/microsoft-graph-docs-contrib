@@ -78,20 +78,8 @@ Content-Type: application/json
 Content-length: 454
 
 {
-    "category": "joiner,leaver",
-    "continueOnError": false,
     "description": "Add user to selected groups",
     "displayName": "Update marketing day 1 add users to Group set up",
-    "executionSequence": 1,
-    "id": "eb0b8bc2-7756-4429-8ce8-b9f09063cf54",
-    "isEnabled": true,
-    "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
-    "arguments": [
-        {
-            "name": "groupID",
-            "value": "1624be55-d924-491e-ac72-401f6f961e4d"
-        }
-    ]
 }
 ```
 

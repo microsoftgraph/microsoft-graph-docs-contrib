@@ -21678,8 +21678,6 @@ items:
               href: api/identitygovernance-workflow-update.md
             - name: Delete
               href: api/identitygovernance-workflow-delete.md
-            - name: Update task
-              href: api/identitygovernance-task-update.md
             - name: List deleted workflows
               href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
             - name: Get a deleted workflow
@@ -21712,6 +21710,8 @@ items:
                 href: api/identitygovernance-workflow-list-task.md
               - name: Get task
                 href: api/identitygovernance-task-get.md
+              - name: Update task
+                href: api/identitygovernance-task-update.md  
             - name: Reports
               displayName: Lifecycle Workflows
               items:
