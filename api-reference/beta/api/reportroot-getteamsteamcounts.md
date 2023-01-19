@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsTeamCounts"
-description: "Get the Teams Team count by Teams type."
+description: "Get the Teams team count by team type."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the Teams Team count by Teams type.
+Get the Teams team count by team type.
 
 ## Permissions
 
