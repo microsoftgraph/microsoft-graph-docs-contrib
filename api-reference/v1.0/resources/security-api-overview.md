@@ -88,7 +88,7 @@ Alerts from the following providers are available via this **alert** resource. S
 
 \*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you will get Microsoft Defender for Identity alerts only if you have joined Unified SecOps and connected Microsoft Defender for Identity into Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/defender-for-identity/mcas-integration).
 
-\*\*\*\* Azure AD Identity Protection alerts only include user object IDs. The **userPrincipalName** (UPN) property is not included in GET request responses. This issue does not impact any of the other providers. For details and a workaround, see [Known issues](/graph/known-issues#un-missing-in-identity-protection-security-alerts).
+\*\*\*\* Azure AD Identity Protection alerts only include user object IDs. The **userPrincipalName** (UPN) property is not included in GET request responses. This issue does not impact any of the other providers. For details and a workaround, see [Known issues](/graph/known-issues#upn-missing-in-identity-protection-security-alerts).
 
 ## Attack simulation and training
 
