@@ -187,6 +187,18 @@ Content-Type: application/json
             "displayName": "srradmin@contoso.com"
         }
     },
+    "approvers": [
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
+    ],    
+    "collaborators": []
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
+    ],    
     "lastModifiedBy": {
         "user": {
             "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
