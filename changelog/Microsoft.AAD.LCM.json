@@ -157,14 +157,6 @@
         },
         {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
-          "ApiChange": "Method",
-          "ChangedApiName": "PATCH",
-          "ChangeType": "Addition",
-          "Description": "Added the **PATCH** operation to the [task](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
-          "Target": "task"
-        },
-        {
-          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
           "ApiChange": "Enumeration",
           "ChangedApiName": "valueType",
           "ChangeType": "Addition",
