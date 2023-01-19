@@ -40,7 +40,7 @@ In the request URL, provide the following parameters with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n*, where *n* represents the number of days over which the report is aggregated. Required. |
 
 > **Note:** You need to set either **period** or **date** in the request URL.
 ## Optional query parameters
@@ -57,9 +57,9 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 ### CSV
 
-If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
+If successful, this method returns a `302 Found` response that redirects to a pre-authenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Pre-authenticated download URLs are only valid for a short period (a few minutes) and do not require an `Authorization` header.
 
 The CSV file has the following headers for columns:
 
