@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents _settings_ to control the availability of pronouns in the tenant. By default, pronouns are **disabled**. If enabled, users can add and update pronouns in Microsoft 365.
+Represents the _settings_ that manage the support of pronouns in an organization. By default, pronouns are **disabled**. If enabled, users can optionally add or update their pronouns.
+
+For more information about enabling pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](../../../concepts/pronouns-configure-pronouns-availability.md)
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean| Indicates whether the specified setting is enabled or disabled for the organization. Default value is `false`.|
+|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization, `false` otherwise. The default is `false`.|
 
 ## Relationships
 None.
