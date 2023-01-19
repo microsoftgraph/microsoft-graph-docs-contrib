@@ -88,7 +88,7 @@ Alerts from the following providers are available via this **alert** resource. S
 
 \*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you will get Microsoft Defender for Identity alerts only if you have joined Unified SecOps and connected Microsoft Defender for Identity into Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/defender-for-identity/mcas-integration).
 
-\*\*\*\* Azure Active Directory Identity protection alerts only has user object ID in their alerts. Due to a recent service issue, the userPrincipalName (UPN) property is no longer present in the response to GET requests to the security /alerts API. This issue does not impact any of the other providers. We are providing a workaround that can be utilized by developers in their client applications and PowerShell scripts.
+\*\*\*\* Azure AD Identity Protection alerts only include user object IDs. The **userPrincipalName** (UPN) property is not included in GET request responses. This issue does not impact any of the other providers. For details and a workaround, see [Known issues](/graph/known-issues#un-missing-in-identity-protection-security-alerts).
 
 ## Attack simulation and training
 
@@ -153,114 +153,6 @@ The following are some of the most popular requests for working with the Microso
 
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security entities.
-
-
-## Missing user principal name in IPC security alerts and workaround solution
-
-At a high level, the workaround involves:
-1.	Requesting a security alert or listing security alerts (as usual). Extract the Azure AD (AAD) user identifier for each security alert record in the response.
-2.	Call a different Microsoft Graph API to resolve the AAD user identifier into a UPN.  This will require your application to be granted an additional permission.
-3.	Merge the results from #1 and #2 to get the desired security alert response details together with the user principal name.  If paging through results, return to #1 and get the next page of results.
-We’ll walk you through the steps in more detail below.
-Step 1: Retrieve the IPC provider’s security alerts and extract the AAD IDs
-Request
-GET https://graph.microsoft.com/v1.0/security/alerts?$filter=vendorInformation/provider eq 'IPC'&$top=10 
- 
-Response 
-In this example the response is a collection of alerts from the IPC provider.  (The response object shown here is shortened for readability.) 
-{ 
-    "value": [ 
-    { 
-      "activityGroupName": "activityGroupName-value", 
-      "assignedTo": "assignedTo-value", 
-      "azureSubscriptionId": "azureSubscriptionId-value", 
-      "azureTenantId": "azureTenantId-value", 
-      "category": "category-value", 
-      "closedDateTime": "datetime-value", 
-      "userStates": [ 
-             { 
-                    "aadUserId":"84b80893-8749-40a3-97b7-68513b600544"
-              } 
-        ]
-    }, 
-    { 
-      "activityGroupName": "activityGroupName-value 2", 
-      "assignedTo": "assignedTo-value 2", 
-      "azureSubscriptionId": "azureSubscriptionId-value", 
-      "azureTenantId": "azureTenantId-value", 
-      "category": "category-value", 
-      "closedDateTime": "datetime-value", 
-      "userStates": [ 
-             { 
-                    "aadUserId":"5d6059b6-368d-45f8-91e1-8e07d485f1d0" 
-              } 
-       ] 
-     } 
-   ] 
-} 
- 
-From the GET /alerts response above, create a collection of the aadUserIds like below.  You’ll need this for the request payload for the next step.
-[ 
-        "84b80893-8749-40a3-97b7-68513b600544", 
-        "5d6059b6-368d-45f8-91e1-8e07d485f1d0"
-]
-
-Step 2: Resolve user AAD IDs into UPNs by calling Microsoft Graph
-NOTE: To call the API used to retrieve UPNs by AAD IDs, you’ll need to grant your application an additional permission.  The permission is different depending on whether the app is using delegated or application permissions.
-•	Delegated Permission:  User.ReadBasic.All
-•	Application Permission: User.Read.All
-
-There are 2 API options here – resolving a single ID at a time or resolving IDs in bulk.  If you are listing alerts and paging through those results, use of the bulk operation is highly recommended.
-
-Resolving a single aadUserId
-Use the Get User API to retrieve a single user object and its UPN for '84b80893-8749-40a3-97b7-68513b600544’: 
-
-Request
-GET https://graph.microsoft.com/v1.0/users/84b80893-8749-40a3-97b7-68513b600544?$select=id,userPrincipalName 
-
-Response 
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,userPrincipalName)/$entity",
-    "id": "84b80893-8749-40a3-97b7-68513b600544",
-    "userPrincipalName": "MeganB@contoso.com"
-}
- 
-Resolving multiple aadUserIds using a bulk operation
-Use the getByIds API to get multiple user objects based on a list of AAD user IDs supplied in the request payload.  In this example, we’ll using the aadUserId collection we created at the end of step 1 as the request payload.  You can supply up to 999 IDs in this bulk operation:
-
-Request 
-POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds?$select=id,userPrincipalName
-
-Content-type: application/json   
-{
-    "ids": [
-        "84b80893-8749-40a3-97b7-68513b600544",
-        "5d6059b6-368d-45f8-91e1-8e07d485f1d0"
-    ]
-}
-
-Response
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects(id,userPrincipalName)",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.user",
-            "id": "84b80893-8749-40a3-97b7-68513b600544",
-            "userPrincipalName": "MeganB@contoso.com"
-        },
-        {
-            "@odata.type": "#microsoft.graph.user",
-            "id": "5d6059b6-368d-45f8-91e1-8e07d485f1d0",
-            "userPrincipalName": "AdeleV@contoso.com"
-        }
-    ]
-}
-
-Step 3: Merge the results
-At this point, you can now merge the responses from step 1 and step 2, joining on the IDs (aadUserId in the alerts response and id in the getByIds response) to craft an alerts collection with UPN “re-instated”.
-Design Considerations
-As you use this workaround, please consider best practices for interacting with the Graph API. Here is helpful link: https://learn.microsoft.com/en-us/graph/throttling For example, here is helpful link: https://learn.microsoft.com/en-us/graph/throttling 
-
 
 ## Resources
 
