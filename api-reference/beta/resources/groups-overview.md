@@ -140,6 +140,8 @@ The following example shows shows a complete rule.
 
 `"membershipRule": "user.department -eq \"Marketing\""`.
 
+You can combine multiple expressions in a rule using the `and`, `or`, and `not` operators.
+
 The **groupType** property must also include the `"DynamicMembership"` value in the collection. The dynamic membership rule can be turned on or off through the **membershipRuleProcessingState** property. You can update a group with assigned membership to have dynamic membership.
 
 The following example request creates a new Microsoft 365 group that can only include employees in the Marketing department.
