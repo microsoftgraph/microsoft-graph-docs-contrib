@@ -404,15 +404,17 @@ This error is due to intermittent license check failures, which we are working t
 
 ## Security
 
-### UPN missing in Identity Protection security alerts
+### Identity Protection security alerts do not return the userPrincipalName property
 
-The user principal name (UPN) is missing from Azure AD Identity Protection security alerts.
+The **userPrincipalName** property is no longer returned in responses to GET operation requests to the alerts API from the Azure AD Identity Protection security provider. This issue does not affect any other security providers.
 
-As a workaround, to get the UPN:
+As a workaround, to get the user principal name (UPN):
 
 1.	Request a security alert or list security alerts. Extract the Azure AD user identifier for each security alert record in the response.
 2.	Call Microsoft Graph to resolve the Azure AD user identifier into a UPN. This requires your application to be granted an additional permission.
 3.	Merge the results to get the security alert response details together with the UPN. If you're paging through results, repeat the steps for each page of results.
+
+You can use this workaround in client applications and PowerShell scripts. Because the client application that calls the alerts API works on a per-tenant basis, the security risk is minimal.
 
 #### Step 1: Retrieve the Identity Protection provider’s security alerts and extract the Azure AD IDs
 
