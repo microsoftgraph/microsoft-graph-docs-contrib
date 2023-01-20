@@ -14,13 +14,14 @@ Namespace: microsoft.graph
 Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingBusiness](../resources/bookingbusiness.md) and send a message to the involved customer and staff members.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -28,12 +29,15 @@ One of the following permissions is required to call this API. To learn more, in
 POST /solutions/bookingBusinesses/{id}/appointments/{id}/cancel
 
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameter.
 
 | Parameter	   | Type	|Description|
@@ -41,17 +45,22 @@ In the request body, provide a JSON object with the following parameter.
 |cancellationMessage|String|A message to acknowledge with the customer that the **appointment** has been cancelled.|
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 If you attempt to cancel an **appointment** that doesn't exist, this method returns a `404 Not found`.
 
 ## Example
+
 The following is an example of how to call this API.
+
 ### Request
+
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["AAMkADKoAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel
@@ -63,7 +72,9 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following is an example of the response.
+
 <!-- {
   "blockType": "response"
 } -->

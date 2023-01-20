@@ -13,9 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Non-custodial data sources let you add data to a case without having to associate it to a custodian. To learn more, visit [Add non-custodial data sources to an Advanced eDiscovery case
-](/microsoft-365/compliance/non-custodial-data-sources)
-
+Enables the addition of data to an eDiscovery case without associating it with a custodian. For details, see [Add non-custodial data sources to an eDiscovery (Premium) case](/microsoft-365/compliance/non-custodial-data-sources).
 
 Inherits from [dataSourceContainer](../resources/security-datasourcecontainer.md).
 
@@ -29,18 +27,18 @@ Inherits from [dataSourceContainer](../resources/security-datasourcecontainer.md
 |[release](../api/security-ediscoverynoncustodialdatasource-release.md)|None|Release a non-custodial data source from a case.|
 |[applyHold](../api/security-ediscoverynoncustodialdatasource-applyhold.md)|None|Start the process of applying hold to eDiscovery non-custodial data sources.|
 |[removeHold](../api/security-ediscoverynoncustodialdatasource-removehold.md)|None|Start the process of removing hold from eDiscovery non-custodial data sources.|
-|[List ediscoveryIndexOperation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property.|
+|[List ediscoveryIndexOperation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get a list of the [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) associated with an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Created date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|displayName|String|Display name of the noncustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
+|createdDateTime|DateTimeOffset|Created date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.security.datasourcecontainer](../resources/security-datasourcecontainer.md).|
+|displayName|String|Display name of the noncustodialDataSource. Inherited from [microsoft.graph.security.datasourcecontainer](../resources/security-datasourcecontainer.md).|
 |id|String|Unique identifier of the nonCustodialDataSource. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Last modified date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|releasedDateTime|DateTimeOffset|Date and time that the nonCustodialDataSource was released from the case. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|status|String|Latest status of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md). Possible values are: `Active`, `Released`.|
-|holdStatus|String|The hold status of the nonCustodialDataSource.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|lastModifiedDateTime|DateTimeOffset|Last modified date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.security.datasourcecontainer](../resources/security-datasourcecontainer.md).|
+|releasedDateTime|DateTimeOffset|Date and time that the nonCustodialDataSource was released from the case. Inherited from [microsoft.graph.security.datasourcecontainer](../resources/security-datasourcecontainer.md).|
+|status|microsoft.graph.security.dataSourceContainerStatus|Latest status of the nonCustodialDataSource. Inherited from [microsoft.graph.security.datasourcecontainer](../resources/security-datasourcecontainer.md). Possible values are: `Active`, `Released`.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the nonCustodialDataSource.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ## Relationships
 |Relationship|Type|Description|

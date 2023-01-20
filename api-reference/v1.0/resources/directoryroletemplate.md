@@ -2,7 +2,7 @@
 title: "directoryRoleTemplate resource type"
 description: "Represents a directory role template."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

@@ -16,7 +16,7 @@ $params = @{
 		Content = "You have moved up the queue"
 	}
 	Recipient = @{
-		"@odata.type" = "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient"
+		"@odata.type" = "microsoft.graph.aadUserNotificationRecipient"
 		UserId = "jacob@contoso.com"
 	}
 	TemplateParameters = @(

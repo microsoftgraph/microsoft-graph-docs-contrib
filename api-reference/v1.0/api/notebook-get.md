@@ -53,21 +53,19 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_notebook"
+  "name": "get_notebook",
+  "sampleKeys": ["1-e13f257d-78c6-46cf-ae8c-13686517ac5f"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/1-e13f257d-78c6-46cf-ae8c-13686517ac5f
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-notebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-notebook-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-notebook-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -78,8 +76,8 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-notebook-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-notebook-powershell-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-notebook-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

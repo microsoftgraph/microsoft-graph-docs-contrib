@@ -21,14 +21,17 @@ Mobile phones can be used for both SMS and voice calls, depending on the tenant 
 
 An office phone can only receive voice calls, not SMS messages.
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all of this user's phoneAuthenticationMethod objects. |
-| [Get](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of phoneAuthenticationMethod object. |
-| [Update](../api/phoneauthenticationmethod-update.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Update phoneAuthenticationMethod object. |
-| [Delete](../api/phoneauthenticationmethod-delete.md) | None | Delete phoneAuthenticationMethod object. |
+| [List phoneMethods](../api/authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all of this user's phoneAuthenticationMethod objects. |
+| [Get phoneAuthenticationMethod](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of phoneAuthenticationMethod object. |
+|[Create phoneMethod](../api/authentication-post-phonemethods.md)|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Create a user's phoneAuthenticationMethod object.|
+| [Update phoneAuthenticationMethod](../api/phoneauthenticationmethod-update.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Update phoneAuthenticationMethod object. |
+| [Delete phoneAuthenticationMethod](../api/phoneauthenticationmethod-delete.md) | None | Delete phoneAuthenticationMethod object. |
 |[Disable SMS signin](../api/phoneauthenticationmethod-disablesmssignin.md)|None|Turn off SMS sign-in for a user.|
 |[Enable SMS signin](../api/phoneauthenticationmethod-enablesmssignin.md)|None|Turn on SMS sign-in for a user.|
 
@@ -41,7 +44,17 @@ An office phone can only receive voice calls, not SMS messages.
 |phoneType|authenticationPhoneType|The type of this phone. Possible values are: `mobile`, `alternateMobile`, or `office`.|
 |smsSignInState|authenticationMethodSignInState|Whether a phone is ready to be used for SMS sign-in or not. Possible values are: `notSupported`, `notAllowedByPolicy`, `notEnabled`, `phoneNumberNotUnique`, `ready`, or `notConfigured`, `unknownFutureValue`.|
 
-### smsSignInState values
+### authenticationPhoneType values
+
+Phones can be of three types, the following are the possible values.
+
+|Value|Description|
+|--------|-----------|
+|mobile|A primary mobile phone, usable for SMS and voice calls.|
+|alternateMobile|An alternate or backup mobile phone, usable for SMS and voice calls.|
+|office|An office phone or landline, usable only for voice calls.|
+
+### authenticationMethodSignInState values
 
 The SMS sign-in state property gives information about whether or not a phone number is ready to sign in via SMS. The following are the possible values.
 

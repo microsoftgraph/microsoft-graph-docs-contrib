@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Confirm one or more [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects as compromised. This action sets the targeted service principal account's risk level to `high`. When the risk level of the service principal is confirmed as compromised, the service principal object is disabled and its **disabledByMicrosoftStatus** property is updated.
+Confirm one or more [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects as compromised. This action sets the targeted service principal account's risk level to `high`.
 
->**Note:** Using the riskyServicePrincipal API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,6 +67,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/riskyserviceprincipal-confirmcompromised-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,16 +76,20 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/riskyserviceprincipal-confirmcompromised-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/riskyserviceprincipal-confirmcompromised-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/riskyserviceprincipal-confirmcompromised-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/riskyserviceprincipal-confirmcompromised-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/riskyserviceprincipal-confirmcompromised-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/riskyserviceprincipal-confirmcompromised-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

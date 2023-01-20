@@ -1,7 +1,7 @@
 ---
 title: "accessReviewnotificationrecipientqueryscope resource type"
 description: "Specifies a list of users who will receive notifications for access reviews."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -19,9 +19,8 @@ Inherits from [accessReviewNotificationRecipientScope](../resources/accessreview
 | Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
 | query | String | Represents the query for who the recipients are. For example, `/groups/{group id}/members` for group members and `/users/{user id}` for a specific user. |
-| queryType | String | Indicates the type of query. Allowed value is `MicrosoftGraph`. |
 | queryRoot | String | In the scenario where reviewers need to be specified dynamically, indicates the relative source of the query. This property is only required if a relative query (that is, `./manager`) is specified. |
-
+| queryType | String | Indicates the type of query. Allowed value is `MicrosoftGraph`. |
 
 ## Relationships
 None.
@@ -37,7 +36,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.accessReviewNotificationRecipientQueryScope",
   "query": "String",
+  "queryRoot": "String",
   "queryType": "String",
-  "queryRoot": "String"
 }
 ```

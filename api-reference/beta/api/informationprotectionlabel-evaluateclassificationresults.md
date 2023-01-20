@@ -1,17 +1,19 @@
 ---
-title: "informationProtectionLabel: evaluateClassificationResults"
-description: "Evaluate which label to apply based on existing content info and a classification result."
+title: "informationProtectionLabel: evaluateClassificationResults (deprecated)"
+description: "Evaluate which label to apply based on existing content info and a classification result. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# informationProtectionLabel: evaluateClassificationResults
+# informationProtectionLabel: evaluateClassificationResults (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
@@ -66,7 +68,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Purview Information Protection policy label configuration in Office 365 Security and Compliance Center. |
+| classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Purview Information Protection policy label configuration in Microsoft 365 Security and Compliance Center. |
 
 ## Response
 
@@ -109,16 +111,13 @@ User-agent: ContosoLOBApp/1.0
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-evaluateclassificationresults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-evaluateclassificationresults-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateclassificationresults-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -131,6 +130,10 @@ User-agent: ContosoLOBApp/1.0
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateclassificationresults-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/informationprotectionlabel-evaluateclassificationresults-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

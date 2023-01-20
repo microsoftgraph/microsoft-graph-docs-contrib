@@ -1,7 +1,7 @@
 ---
 title: "List zebraFotaArtifacts"
 description: "List properties and relationships of the zebraFotaArtifact objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [zebraFotaArtifact](../resources/intune-androidfotaservice-zebrafotaartifact.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 421
+Content-Length: 464
 
 {
   "value": [
@@ -71,12 +71,9 @@ Content-Length: 421
       "osVersion": "Os Version value",
       "patchVersion": "Patch Version value",
       "boardSupportPackageVersion": "Board Support Package Version value",
-      "releaseNotesUrl": "https://example.com/releaseNotesUrl/"
+      "releaseNotesUrl": "https://example.com/releaseNotesUrl/",
+      "description": "Description value"
     }
   ]
 }
 ```
-
-
-
-

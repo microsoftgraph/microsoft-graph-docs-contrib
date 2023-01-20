@@ -17,6 +17,8 @@ Retrieve the list of [messages](../resources/chatmessage.md) (without the replie
 
 To get the replies for a message, call the [list message replies](chatmessage-list-replies.md) or the [get message reply](chatmessage-get.md) API.
 
+This method supports federation. To list channel messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).
+
 > **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 
 ## Permissions
@@ -80,21 +82,19 @@ The following is an example of the request with $top query option and without op
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_listchannelmessages_1"
+  "name": "get_listchannelmessages_1",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?top=3
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-listchannelmessages-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-listchannelmessages-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-listchannelmessages-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -107,6 +107,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-listchannelmessages-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-listchannelmessages-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,7 +186,8 @@ Content-type: application/json
                     }
                 }
             ],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616963377068",
@@ -221,7 +226,8 @@ Content-type: application/json
             "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616883610266",
@@ -260,6 +266,7 @@ Content-type: application/json
                 }
             },
             "reactions": [],
+            "messageHistory": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
@@ -289,13 +296,15 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_listchannelmessages_2"
+  "name": "get_listchannelmessages_2",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?top=3
 
 Prefer: include-unknown-enum-members
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-listchannelmessages-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -306,6 +315,18 @@ Prefer: include-unknown-enum-members
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-listchannelmessages-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -381,7 +402,8 @@ Content-type: application/json
                     }
                 }
             ],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616963377068",
@@ -419,7 +441,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616883610266",
@@ -449,6 +472,7 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": [],
+            "messageHistory": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
@@ -478,21 +502,19 @@ The following request uses `$top` to return one channel message per page, and `$
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_listchannelmessages_3"
+  "name": "get_listchannelmessages_3",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$top=1&$expand=replies
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-listchannelmessages-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-listchannelmessages-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-listchannelmessages-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -505,6 +527,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-listchannelmessages-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-listchannelmessages-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -567,6 +593,7 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": [],
+            "messageHistory": [],
             "replies@odata.count": 3,
             "replies@odata.nextLink": "https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/replies?$skiptoken=MSwwLDE2NDQ0MzkzODAxNDU",
             "replies": [
@@ -606,7 +633,8 @@ Content-type: application/json
                     },
                     "attachments": [],
                     "mentions": [],
-                    "reactions": []
+                    "reactions": [],
+                    "messageHistory": []
                 },
                 {
                     "id": "1616989750004",
@@ -644,7 +672,8 @@ Content-type: application/json
                     },
                     "attachments": [],
                     "mentions": [],
-                    "reactions": []
+                    "reactions": [],
+                    "messageHistory": []
                 },
                 {
                     "id": "1616989747416",
@@ -682,7 +711,8 @@ Content-type: application/json
                     },
                     "attachments": [],
                     "mentions": [],
-                    "reactions": []
+                    "reactions": [],
+                    "messageHistory": []
                 }
             ]
         }

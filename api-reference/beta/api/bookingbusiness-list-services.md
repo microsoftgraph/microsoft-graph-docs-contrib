@@ -49,21 +49,19 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_services_1"
+  "name": "get_services_1",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-services-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-services-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-services-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -76,6 +74,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-services-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-services-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -101,7 +103,7 @@ Content-type: application/json
             "id": "f9b9121f-aed7-4c8c-bb3a-a1796a0b0b2d",
             "displayName": "Initial service",
             "defaultDuration": "PT10M",
-            "defaultPrice": 0,
+            "defaultPrice": 0.0,
             "defaultPriceType": "notSet",
             "description": "Not sure how to choose? Let us introduce you to our traditional family recipes.",
             "languageTag": "en-US",
@@ -145,7 +147,7 @@ Content-type: application/json
             "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "displayName": "Catered bento",
             "defaultDuration": "PT30M",
-            "defaultPrice": 10,
+            "defaultPrice": 10.0,
             "defaultPriceType": "fixedPrice",
             "description": "Catered individual bento box lunch",
             "languageTag": "en-US",
@@ -195,7 +197,7 @@ Content-type: application/json
             "id": "635a7b7c-4230-4d3b-a42b-698e89927528",
             "displayName": "Kaiseki",
             "defaultDuration": "PT1H30M",
-            "defaultPrice": 30,
+            "defaultPrice": 30.0,
             "defaultPriceType": "fixedPrice",
             "description": "Individual kaiseki lunch delivery",
             "languageTag": "en-US",

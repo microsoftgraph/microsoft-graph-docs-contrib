@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-timeOffReasonId := "timeOffReason-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeOffReasonsById(&timeOffReasonId).Get()
+
+result, err := graphClient.TeamsById("team-id").Schedule().TimeOffReasonsById("timeOffReason-id").Get(context.Background(), nil)
 
 
 ```

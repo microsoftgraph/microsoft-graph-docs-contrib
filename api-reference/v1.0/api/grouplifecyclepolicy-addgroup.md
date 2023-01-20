@@ -56,7 +56,9 @@ If successful, this method returns `200 OK` response code. If the group is added
 
 ## Example
 
-#### Request
+### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "ignored",
@@ -72,7 +74,9 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "ignored" } -->
 

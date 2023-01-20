@@ -1,7 +1,7 @@
 ---
 title: "Create federationConfiguration"
 description: "Create a new internalDomainFederation object."
-author: "akgoel23"
+author: "rahul-nagraj23"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Domain.ReadWrite.All|
 
-The calling user or app must be assigned the Global Administrator [Azure AD role](/azure/active-directory/roles/permissions-reference).
+The calling user must be assigned the Global Administrator [Azure AD role](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 
@@ -83,9 +83,12 @@ If successful, this method returns a `201 Created` response code and an [interna
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_internaldomainfederation_from_"
+  "name": "create_internaldomainfederation_from_",
+  "sampleKeys": ["contoso.com"]
 }
 -->
 
@@ -109,6 +112,33 @@ Content-Type: application/json
   "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-internaldomainfederation-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-internaldomainfederation-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-internaldomainfederation-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-internaldomainfederation-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-internaldomainfederation-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-internaldomainfederation-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

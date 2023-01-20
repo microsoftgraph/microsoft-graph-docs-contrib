@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationAssignmentSettings()
+requestBody := graphmodels.NewEducationAssignmentSettings()
 submissionAnimationDisabled := true
-requestBody.SetSubmissionAnimationDisabled(&submissionAnimationDisabled)
-educationClassId := "educationClass-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentSettings().Patch(requestBody)
+requestBody.SetSubmissionAnimationDisabled(&submissionAnimationDisabled) 
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

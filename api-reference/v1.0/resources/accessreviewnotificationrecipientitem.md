@@ -1,7 +1,7 @@
 ---
 title: "accessReviewNotificationRecipientItem resource type"
 description: "Defines users or groups who will receive notifications access review notifications."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -17,8 +17,8 @@ Represents an Azure AD [access review](accessreviewsv2-overview.md) notification
 
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
-| notificationTemplateType  |String  | Indicates the type of access review email to be sent. Supported template type is `CompletedAdditionalRecipients`, which sends review completion notifications to the recipients.|
 | notificationRecipientScope |[accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md)  | Determines the recipient of the notification email.|
+| notificationTemplateType  |String  | Indicates the type of access review email to be sent. Supported template type is `CompletedAdditionalRecipients`, which sends review completion notifications to the recipients.|
 
 ## Relationships
 None.

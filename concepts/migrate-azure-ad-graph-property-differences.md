@@ -4,6 +4,7 @@ description: "Describes property differences between Azure AD Graph resources (e
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Property differences between Azure AD Graph and Microsoft Graph
@@ -22,7 +23,11 @@ Because the [user](#user-property-differences) and [group](#group-property-diffe
 
 ## User property differences
 
-The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. 
+
+The Microsoft Graph v1.0 endpoint returns a limited set of user properties by default, while Azure AD Graph returns all properties. To read other properties that aren't returned by default, specify them in a `$select` query. For more information, see the [user resource type](/graph/api/resources/user).
+
+The following table lists the additional property differences.
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|

@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Users
 
 $params = @{
 	PasswordProfile = @{
-		ForceChangePasswordNextSignIn = $false
+		ForceChangePasswordNextSignIn = $true
 		Password = "xWwvJ]6NMw+bWH-d"
 	}
 }

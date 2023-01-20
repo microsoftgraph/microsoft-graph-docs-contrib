@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstanceDecisionItemServicePrincipalResource resource type"
 description: "Represents service principals whose access to a resource is represented through an accessReviewInstanceDecisionItem object."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -39,9 +39,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessreviewinstancedecisionitemserviceprincipalresource",
-  "id": "String (identifier)",
+  "appId": "String",
   "displayName": "String",
-  "type": "String",
-  "appId": "String"
+  "id": "String (identifier)",
+  "type": "String"
 }
 ```

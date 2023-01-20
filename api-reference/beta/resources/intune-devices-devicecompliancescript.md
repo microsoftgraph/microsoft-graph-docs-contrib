@@ -1,7 +1,7 @@
 ---
 title: "deviceComplianceScript resource type"
 description: "Intune will provide customer the ability to run their Powershell Compliance scripts (detection) on the enrolled windows 10 Azure Active Directory joined devices."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -38,7 +38,7 @@ Intune will provide customer the ability to run their Powershell Compliance scri
 |detectionScriptContent|Binary|The entire content of the detection powershell script|
 |createdDateTime|DateTimeOffset|The timestamp of when the device compliance script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of when the device compliance script was modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-devices-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
 |runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device compliance script|
@@ -77,7 +77,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-

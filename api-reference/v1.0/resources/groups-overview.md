@@ -5,6 +5,7 @@ author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType
+ms.date: 11/16/2022
 ---
 
 # Working with groups in Microsoft Graph
@@ -91,7 +92,7 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 
 **Security groups** are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users, other security groups, devices, and service principals as members.
 
-**Mail-enabled security groups** are used in the same way as security groups, but with the added feature of a shared mailbox. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
+**Mail-enabled security groups** are used in the same way as security groups, but can be used to send emails to group members. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
 
 The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
 
@@ -116,6 +117,12 @@ Content-type: application/json
     "securityEnabled": true
 }
 ```
+
+## Group membership
+
+Not all object types can be members of both Microsoft 365 and security groups.
+
+[!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
 ## Dynamic membership
 
@@ -150,7 +157,7 @@ To learn more about formulating membership rules, see [Dynamic membership rules 
 
 ## Other types of groups
 
-Microsoft 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Microsoft 365 group conversations are disabled. To learn more, see [Yammer developer API docs](https://developer.yammer.com/docs).
+Microsoft 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Microsoft 365 group conversations are disabled. To learn more, see [Yammer developer API docs](/rest/api/yammer).
 
 ## Group search limitations for guest users in organizations
 
@@ -160,16 +167,13 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 
 With the appropriate permissions, the app can read the profiles of groups that it obtains by following links in navigation properties; for example, `/groups/{id}/members`.
 
-For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
+For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions).
 
 ## Group-based licensing
 
 You can use group-based licensing to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups and Microsoft 365 groups that have `securityEnabled=TRUE`. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Common use cases
-
-Using Microsoft Graph, you can perform the following common operations.
-
 
 Using Microsoft Graph, you can perform the following common operations on groups.
 

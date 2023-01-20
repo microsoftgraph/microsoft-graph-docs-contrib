@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsBatteryHealthDevicePerformance resource type"
 description: "The user experience analytics battery health device performance entity contains device level battery information."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -38,7 +38,7 @@ The user experience analytics battery health device performance entity contains 
 |estimatedRuntimeInMinutes|Int32|The estimated runtime of the device when the battery is fully charged. Unit in minutes. Valid values -2147483648 to 2147483647|
 |batteryAgeInDays|Int32|Estimated battery age. Unit in days. Valid values -2147483648 to 2147483647|
 |deviceBatteryHealthScore|Int32|A weighted average of a device’s maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The overall battery health status of the device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The overall battery health status of the device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -66,7 +66,3 @@ Here is a JSON representation of the resource.
   "healthStatus": "String"
 }
 ```
-
-
-
-

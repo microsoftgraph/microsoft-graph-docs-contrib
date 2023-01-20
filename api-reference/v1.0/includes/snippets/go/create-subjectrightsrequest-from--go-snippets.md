@@ -7,35 +7,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSubjectRightsRequest()
-type := "microsoft.graph.subjectRightsRequestType"
-requestBody.SetType(&type)
-dataSubjectType := "microsoft.graph.dataSubjectType"
-requestBody.SetDataSubjectType(&dataSubjectType)
-requestBody.SetRegulations( []String {
+requestBody := graphmodels.NewSubjectRightsRequest()
+type := graphmodels.SUBJECTRIGHTSREQUESTTYPE_GRAPH_MICROSOFT_SUBJECTRIGHTSREQUESTTYPE 
+requestBody.SetType(&type) 
+dataSubjectType := graphmodels.DATASUBJECTTYPE_GRAPH_MICROSOFT_DATASUBJECTTYPE 
+requestBody.SetDataSubjectType(&dataSubjectType) 
+regulations := []string {
 	"String",
+
 }
+requestBody.SetRegulations(regulations)
 displayName := "String"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "String"
-requestBody.SetDescription(&description)
-internalDueDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
-requestBody.SetInternalDueDateTime(&internalDueDateTime)
-dataSubject := msgraphsdk.NewDataSubject()
-requestBody.SetDataSubject(dataSubject)
+requestBody.SetDescription(&description) 
+internalDueDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
+requestBody.SetInternalDueDateTime(&internalDueDateTime) 
+dataSubject := graphmodels.NewDataSubject()
 firstName := "String"
-dataSubject.SetFirstName(&firstName)
+dataSubject.SetFirstName(&firstName) 
 lastName := "String"
-dataSubject.SetLastName(&lastName)
+dataSubject.SetLastName(&lastName) 
 email := "String"
-dataSubject.SetEmail(&email)
+dataSubject.SetEmail(&email) 
 residency := "String"
-dataSubject.SetResidency(&residency)
-dataSubject.SetAdditionalData(map[string]interface{}{
-	"phoneNumber": "String",
-	"SSN": "String",
+dataSubject.SetResidency(&residency) 
+additionalData := map[string]interface{}{
+	"phoneNumber" : "String", 
+	"sSN" : "String", 
 }
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(requestBody)
+dataSubject.SetAdditionalData(additionalData)
+requestBody.SetDataSubject(dataSubject)
+
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

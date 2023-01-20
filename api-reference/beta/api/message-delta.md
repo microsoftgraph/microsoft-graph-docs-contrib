@@ -29,18 +29,30 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
+
 ## HTTP request
+
+To get all changes in messages in the specified [mailFolder](../resources/mailfolder.md):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
 GET /users/{id}/mailFolders/{id}/messages/delta
 ```
 
+To specifically get only created, updated, or deleted messages in the specified **mailFolder**:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailfolders/{id}/messages/delta?changeType=created
+GET /users/{id}/mailfolders/{id}/messages/delta?changeType=created
+GET /me/mailfolders/{id}/messages/delta?changeType=updated
+GET /users/{id}/mailfolders/{id}/messages/delta?changeType=updated
+GET /me/mailfolders/{id}/messages/delta?changeType=deleted
+GET /users/{id}/mailfolders/{id}/messages/delta?changeType=deleted
+```
+
 ## Query parameters
 
-Tracking changes in messages incurs a round of one or more **delta** function calls. If you use any query parameter 
-(other than `$deltatoken` and `$skiptoken`), you must specify 
-it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
+Tracking changes in messages incurs a round of one or more **delta** function calls. If you use any [OData system query option](/graph/query-parameters#odata-system-query-options) or the custom query option, `changeType`, you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
 into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. 
 You only need to specify any desired query parameters once upfront. 
 In subsequent requests, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already 
@@ -50,6 +62,7 @@ includes the encoded, desired parameters.
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same message collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same message collection. |
+| changeType | string | A custom query option to filter the delta response based on the type of change. Supported values are `created`, `updated` or `deleted`.|
 
 ### OData query parameters
 
@@ -94,16 +107,13 @@ GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
 
 Prefer: odata.maxpagesize=2
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/message-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

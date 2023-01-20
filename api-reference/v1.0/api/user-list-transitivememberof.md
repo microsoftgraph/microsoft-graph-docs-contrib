@@ -17,11 +17,11 @@ Get [groups](../resources/group.md), [directory roles](../resources/directoryrol
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Directory.Read.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                  |
+| :------------------------------------- | :--------------------------------------------------------------------------- |
+| Delegated (work or school account)     | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                               |
+| Application                            | Directory.Read.All, Directory.ReadWrite.All                                  |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -68,37 +68,31 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/transitiveMemberOf
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivememberof-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivememberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-transitivememberof-javascript-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitivememberof-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-transitivememberof-powershell-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-transitivememberof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-transitivememberof-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -145,7 +139,7 @@ The following is an example of the request.
   "name": "get_count_only"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/$count
 ConsistencyLevel: eventual
 ```
@@ -176,7 +170,7 @@ The following is an example of the request.
   "name": "get_count_only"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
 ```
@@ -207,7 +201,7 @@ The following is an example of the request.
   "name": "get_tier_count"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:tier"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
@@ -252,7 +246,7 @@ The following is an example of the request.
   "name": "list_users_transitivememberof_startswith"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```

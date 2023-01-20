@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).GetActiveKey()(trustFrameworkKeySet-id).Get()
+
+result, err := graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").GetActiveKey().Get(context.Background(), nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "androidFotaDeploymentAssignment resource type"
 description: "Describes deployment security group to assign a deployment to. The backend will expand the security Group ID to extract device serial numbers prior sending a create deployment request to Zebra."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -20,7 +20,8 @@ Describes deployment security group to assign a deployment to. The backend will 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| Key for the Android FOTA Assignment entity|
+|id|String|A unique identifier assigned to each Android FOTA Assignment entity|
+|displayName|String|The display name of the Azure AD security group used for the assignment.|
 |target|[androidFotaDeploymentAssignmentTarget](../resources/intune-androidfotaservice-androidfotadeploymentassignmenttarget.md)|The AAD Group we are deploying firmware updates to|
 
 ## Relationships
@@ -37,13 +38,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.androidFotaDeploymentAssignment",
   "id": "String (identifier)",
+  "displayName": "String",
   "target": {
     "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
     "groupId": "String"
   }
 }
 ```
-
-
-
-

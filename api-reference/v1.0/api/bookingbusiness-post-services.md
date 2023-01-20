@@ -44,7 +44,8 @@ If successful, this method returns a `201 Created` response code and a [bookingS
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services
@@ -93,6 +94,7 @@ Content-type: application/json
     "displayName":"Bento",
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "languageTag": "en-US",
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
     "postBuffer":"PT10M",
@@ -109,7 +111,8 @@ Content-type: application/json
     "staffMemberIds":[
         "d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
         "2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
-    ]
+    ],
+    "isAnonymousJoinEnabled": false
 }
 ```
 
@@ -131,15 +134,17 @@ Content-type: application/json
     "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "displayName": "Bento",
     "defaultDuration": "PT1H30M",
-    "defaultPrice": 10,
+    "defaultPrice": 10.0,
     "defaultPriceType": "fixedPrice",
     "description": "Individual bento box lunch delivery",
+    "languageTag": "",
     "isHiddenFromCustomers": false,
     "notes": "Home-cooked special",
     "preBuffer": "PT5M",
     "postBuffer": "PT10M",
     "staffMemberIds": [],
     "isLocationOnline": true,
+    "isAnonymousJoinEnabled": false,
     "smsNotificationsEnabled": true,
     "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {

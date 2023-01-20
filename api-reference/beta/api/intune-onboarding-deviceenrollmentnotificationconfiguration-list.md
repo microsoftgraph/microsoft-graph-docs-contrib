@@ -1,7 +1,7 @@
 ---
 title: "List deviceEnrollmentNotificationConfigurations"
 description: "List properties and relationships of the deviceEnrollmentNotificationConfiguration objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceEnrollmentNotificationConfiguration](../resources/intune-onboarding-deviceenrollmentnotificationconfiguration.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 798
+Content-Length: 882
 
 {
   "value": [
@@ -80,13 +80,12 @@ Content-Length: 798
       "platformType": "ios",
       "templateType": "push",
       "notificationMessageTemplateId": "eba3ed57-ed57-eba3-57ed-a3eb57eda3eb",
+      "notificationTemplates": [
+        "Notification Templates value"
+      ],
       "brandingOptions": "includeCompanyLogo",
       "defaultLocale": "Default Locale value"
     }
   ]
 }
 ```
-
-
-
-
