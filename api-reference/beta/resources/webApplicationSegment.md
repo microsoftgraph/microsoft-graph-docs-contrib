@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('$applicationObjectId')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/$entity",
+  "@odata.type": "microsoft.graph.webApplicationSegment",
   "alternateUrl": "String",
   "corsConfigurations": [
     {
