@@ -22,13 +22,13 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List pronounsSettings](../api/organizationsettings-list-pronounssettings.md)|[pronounsSettings](../resources/pronounssettings.md)|Get the _settings_ in [pronounsSettings](../resources/pronounssettings.md) object for displaying pronouns in an organization.|
-|[Update pronounsSettings](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) resource to manage the display of pronouns in an organization.|
+|[List pronounsSettings](../api/organizationsettings-list-pronounssettings.md)|[pronounsSettings](../resources/pronounssettings.md)|Get the properties from the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
+|[Update pronounsSettings](../api/pronounssettings-update.md)|[pronounsSettings](../resources/pronounssettings.md)|Update the properties of a [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization, `false` otherwise. The default is `false`.|
+|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization, `false` otherwise. The default is `false`, and pronouns are disabled.|
 
 ## Relationships
 None.

@@ -24,7 +24,7 @@ Enabling pronouns in an organization facilitates associating users with their pr
 - Pronouns are displayed only internally within the organization. 
 - Anyone that has an account in the organization, including guest accounts, can see pronouns on profile cards. 
 
-The end user experience with pronouns may evolve over time. For more current information about the end user experience with pronouns, see [Pronouns in Microsoft 365](https://support.microsoft.com/en-us/topic/232c3bfb-a947-4310-86db-b22d63663d85).
+The end user experience with pronouns may evolve over time. For current information about the end user experience with pronouns, see [Pronouns in Microsoft 365](https://support.microsoft.com/en-us/topic/232c3bfb-a947-4310-86db-b22d63663d85).
 
 ## Confirm your current settings
 
