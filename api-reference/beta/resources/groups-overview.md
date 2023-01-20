@@ -178,6 +178,8 @@ The request returns a `201 Created` response code and the newly created group ob
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
+HTTP/1.1 201 Created
+Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
