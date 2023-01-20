@@ -1,5 +1,5 @@
 ---
-title: "Update certificate credentials for an app or service principal using Microsoft Graph"
+title: "Add a certificate to an app or service principal using Microsoft Graph"
 description: "Learn how to update an app's certificate credentials programmatically using Microsoft Graph."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
