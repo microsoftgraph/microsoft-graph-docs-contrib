@@ -49,7 +49,6 @@ In the request body, supply the values for relevant fields that should be update
 
 |Property|Type|Description|
 |:---|:---|:---|
-|contentQuery|String|KQL query that specifies content to be held in the specified locations. For more information about KQL in eDiscovery, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions). To hold all content in the specified locations, leave **contentQuery** blank. |
 |description|String| The legal hold description. |
 |displayName|String| The display name of the legal hold. |
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |

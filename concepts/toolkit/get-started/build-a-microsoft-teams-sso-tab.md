@@ -9,7 +9,7 @@ author: sebastienlevert
 
 This topic describes how to use the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single-page app with single sign-on (SSO) and does require a backend. If you're implementing a Teams tab with interactive sign in, see [Build a Microsoft Teams Tab](./build-a-microsoft-teams-tab.md).
 
-Building an SSO tab involves the following steps: 
+Building an SSO tab involves the following steps:
 
 1. Add the Microsoft Graph Toolkit.
 1. Create the auth popup page.
@@ -28,8 +28,8 @@ To use the Toolkit and the Teams SDK via the loaders, add the reference in a scr
 
 ```HTML
 <!-- Microsoft Teams sdk must be referenced before the toolkit -->
-<script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/teams-js@2/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
 ```
 
 # [npm](#tab/npm)
@@ -53,8 +53,8 @@ The following is an example of a basic page that handles the auth flow in the po
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+    <script src="https://unpkg.com/@microsoft/teams-js@2/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
   </head>
 
   <body>
@@ -84,7 +84,7 @@ Your tab needs to run as a registered Azure AD application to get an access toke
 
     - Set **Name** to `Node.js Teams SSO` (or a name of your choice).
     - Set **Supported account types** to **Accounts in any organizational directory and personal Microsoft accounts**.
-    - Under **Redirect URI**, set the first dropdown to `Single Page Application` and set the value to the auth page URL you created in the previous step; for example, `https://myapp.ngrok.io/tabauth`. 
+    - Under **Redirect URI**, set the first dropdown to `Single Page Application` and set the value to the auth page URL you created in the previous step; for example, `https://myapp.ngrok.io/tabauth`.
 
 1. From the app overview page, copy the value of the **Application (client) ID** for later. You will need this value when you create a new provider and in your backend.
 
@@ -112,17 +112,17 @@ Your tab needs to run as a registered Azure AD application to get an access toke
     - User consent display name: `Teams can access the user profile and make requests on the user's behalf`
     - User consent description: `Enable Teams to call this app’s APIs with the same rights as the user.`
     - State: **Enabled**
-    
-    Your API URL should look like this: `api://myapp.ngrok.io/{appID}/access_as_user`. 
+
+    Your API URL should look like this: `api://myapp.ngrok.io/{appID}/access_as_user`.
 
 1. Next, add two client applications. This is for the Teams desktop/mobile clients and the web client. Under the **Authorized client applications** section, select **Add a client application**. Fill in the Client ID and select the scope you created. Then select **Add application**. Do this for the followings IDs:
-    
+
     - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346
     - 1fec8e78-bce4-4aaf-ab1b-5451cc387264
 
 ## Create the backend
 
-The backend can be any backend that enables exchanging the Microsoft Teams authentication token with a token that can be used to call Microsoft Graph via the [on-behalf-of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow). 
+The backend can be any backend that enables exchanging the Microsoft Teams authentication token with a token that can be used to call Microsoft Graph via the [on-behalf-of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow).
 
 For reference, see the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node).
 
@@ -252,7 +252,7 @@ For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to you
 Add the `mgt-teams-msal2-provider` in your HTML.
 
 ```HTML
-<mgt-teams-msal2-provider 
+<mgt-teams-msal2-provider
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="/tabauth"
   scopes="User.Read,Mail.ReadBasic"
@@ -288,7 +288,7 @@ Replace `<YOUR_CLIENT_ID>` with the client ID for your application, replace the 
 
 ## Add components
 
-Now, you're ready to add any of the Microsoft Graph Toolkit components. 
+Now, you're ready to add any of the Microsoft Graph Toolkit components.
 
 You can add components to your HTML as you normally would. For example, to add the `Person` component, add the following code to your HTML.
 

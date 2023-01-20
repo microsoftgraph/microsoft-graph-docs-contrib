@@ -1,9 +1,9 @@
 ---
-title: List printConnectors
-description: Retrieve a list of connectors.
-author: nilakhan
+title: "List printConnectors"
+description: "Retrieve a list of connectors."
+author: "nilakhan"
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.prod: "cloud-printing"
 doc_type: apiPageType
 ---
 
@@ -20,8 +20,8 @@ To use the Universal Print service, the user or app's tenant must have an active
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not Supported. |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| Not supported. |
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ GET /print/connectors
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Exceptions
-Some operators are not supported: `$count`, `$search`, `$filter`.
+The following operators are not supported: `$count`, `$search`, `$filter`.
 
 ## Request headers
 | Name      |Description|
@@ -54,6 +54,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +95,10 @@ GET https://graph.microsoft.com/v1.0/print/connectors
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

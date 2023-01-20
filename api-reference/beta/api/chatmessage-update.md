@@ -13,6 +13,7 @@ ms.prod: "microsoft-teams"
 
 
 Update a [chatMessage](../resources/chatMessage.md) object. 
+
 All properties of a **chatMessage** can be updated in delegated permissions scenarios, 
 except for read-only properties and the **policyViolation** property.
 Only the **policyViolation** property of a **chatMessage** can be updated in application permissions scenarios.
@@ -80,12 +81,14 @@ specifying only the **policyViolation** property.
 
 ## Response body
 For applications that use delegated permissions:
-If successful, this method returns a `204 NoContent` response.
+If successful, this method returns a `204 No Content` response.
 
 For applications that use application permissions:
 If successful, this method returns a `200 OK` response.
 
-## Example for updating policyViolation by using application permissions
+## Examples
+
+### Example 1: Update policyViolation using application permissions
 
 #### Request
 
@@ -164,7 +167,7 @@ HTTP/1.1 200 OK
 }-->
 
 
-## Example for updating any property of a message by using delegated permissions
+### Example 2: Update any property of a message using delegated permissions
 
 #### Request
 
@@ -204,7 +207,8 @@ Content-Type: application/json
   },
   "attachments": [],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -247,7 +251,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the mentions of a message by using delegated permissions
+### Example 3: Update the mentions of a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
 
@@ -315,7 +320,8 @@ Content-Type: application/json
       }
     }
   ],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -358,7 +364,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the content with attachments of a message by using delegated permissions
+### Example 4: Update the content with attachments of a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
@@ -413,7 +420,8 @@ Content-Type: application/json
     }
   ],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -456,7 +464,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the reactions in a message by using delegated permissions
+### Example 5: Update the reactions in a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
 
@@ -614,6 +623,136 @@ Content-Type: application/json
           "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
           "displayName": null,
           "userIdentityType": "aadUser"
+        }
+      }
+    }
+  ],
+  "messageHistory": [
+    {
+      "modifiedDateTime": "2018-10-21T08:10:30.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "angry",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:32.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "laugh",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T02:17:14.67Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T02:34:40.3Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "4c9041b7-449a-40f7-8855-56da239b9fd1",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:25.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:31.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "heart",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:33.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "sad",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:34.489Z",
+      "actions": "surprised",
+      "reaction": {
+        "reactionType": "sad",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
         }
       }
     }

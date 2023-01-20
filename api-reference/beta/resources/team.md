@@ -55,24 +55,25 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|displayName|string| The name of the team. |
-|description|string| An optional description for the team. Maximum length: 1024 characters. |
+| id | string | The unique identifier of the team. The group has the same ID as the team. This property is read-only, and is inherited from the base entity type. |
+|classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
-|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
-|visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
+|createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|description|string| An optional description for the team. Maximum length: 1024 characters. |
+|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Settings to configure team discoverability by others.|
+|displayName|string| The name of the team. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |internalId | string | A unique ID for the team that has been used in a few places such as the audit log/[Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Whether this team is in read-only mode. |
+|isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
-|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Settings to configure team discoverability by others.|
-|webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
-|classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
-|isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
-|createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
 |summary|[teamSummary](teamsummary.md)| Contains summary information about the team, including number of owners, members, and guests. |
 |tenantId |string | The ID of the Azure Active Directory tenant. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
+|webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 
 ### Instance attributes
 
@@ -116,23 +117,24 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+  "classification": "String",
+  "createdDateTime": "DateTimeOffset",
+  "description": "String",
+  "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
+  "displayName": "String",
+  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
+  "internalId": "String",
+  "isArchived": "Boolean",
+  "isMembershipLimitedToOwners": "Boolean",
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
-  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
-  "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
-  "internalId": "string",
-  "isArchived": false,
-  "webUrl": "string (URL)",
-  "displayName": "string",
-  "description": "string",
-  "classification": "string",
-  "specialization": "string",
-  "visibility": "string",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
-  "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "dateTimeOffset",
-  "summary":  {"@odata.type": "microsoft.graph.teamSummary"}
+  "specialization": "String",
+  "summary": {"@odata.type": "microsoft.graph.teamSummary"},
+  "tenantId": "String",
+  "visibility": "String",
+  "webUrl": "String (URL)"
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "List managedIOSLobApps"
 description: "List properties and relationships of the managedIOSLobApp objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1704
+Content-Length: 1728
 
 {
   "value": [
@@ -101,7 +101,8 @@ Content-Length: 1704
         "v11_0": true,
         "v12_0": true,
         "v13_0": true,
-        "v14_0": true
+        "v14_0": true,
+        "v15_0": true
       },
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "versionNumber": "Version Number value",
@@ -110,7 +111,3 @@ Content-Length: 1704
   ]
 }
 ```
-
-
-
-
