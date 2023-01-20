@@ -34,10 +34,10 @@ The [List chats](../api-reference/v1.0/api/chat-list.md) doesn't support `OrderB
 The [Get chat](../api-reference/v1.0/api/chat-get.md) api doesn't support chats with meetings associated with them in application context in the `Microsoft Graph for US Government L4` national cloud.
 
 ### Meeting transcript api's
-All the api's associated with [meeting transcripts](../api/resources/calltranscript.md) are not supported in the `Microsoft Graph for US Government L4` national cloud.
+Api's associated with [meeting transcripts](../api/resources/calltranscript.md) are not supported in the `Microsoft Graph for US Government L4` national cloud.
 Following api's are included.
-[List transcripts](../api-reference/v1.0/api/onlinemeeting-list-transcripts.md) 
-[Get transcript](../api-reference/v1.0/api/calltranscript-get.md) 
+[List transcripts](../api-reference/beta/api/onlinemeeting-list-transcripts.md) 
+[Get transcript](../api-reference/beta/api/calltranscript-get.md) 
 
 ### Soft delete a message
 
