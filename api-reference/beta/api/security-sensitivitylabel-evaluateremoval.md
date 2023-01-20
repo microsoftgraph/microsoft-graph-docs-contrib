@@ -86,7 +86,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "sensitivitylabelthis.evaluateremoval"
+  "name": "sensitivitylabelthis.evaluateremoval",
+  "sampleKeys": ["bob@contoso.com"]
 }
 -->
 ```http

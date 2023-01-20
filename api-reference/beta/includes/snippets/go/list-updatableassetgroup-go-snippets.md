@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "isof('microsoft.graph.windowsUpdates.updatableAssetGroup')"
 
-requestParameters := &graphconfig.UpdatableAssetsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.AdminWindowsUpdatesUpdatableAssetsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.UpdatableAssetsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.AdminWindowsUpdatesUpdatableAssetsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Get(context.Background(), configuration)
 
 
 ```

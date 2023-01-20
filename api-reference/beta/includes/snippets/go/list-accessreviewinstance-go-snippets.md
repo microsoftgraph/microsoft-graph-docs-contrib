@@ -11,15 +11,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestTop := int32(100)
 requestSkip := int32(0)
 
-requestParameters := &graphconfig.InstancesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceAccessReviewsDefinitionItemInstancesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.InstancesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceAccessReviewsDefinitionItemInstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").Instances().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").Instances().Get(context.Background(), configuration)
 
 
 ```

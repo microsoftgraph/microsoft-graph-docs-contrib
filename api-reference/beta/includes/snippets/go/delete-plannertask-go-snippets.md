@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"If-Match": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
-configuration := &graphconfig.PlannerTaskRequestBuilderDeleteRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphconfig.PlannerTaskItemRequestBuilderDeleteRequestConfiguration{
 	Headers: headers,
 }
 
-graphClient.Planner().TasksById("plannerTask-id").DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.Planner().TasksById("plannerTask-id").Delete(context.Background(), configuration)
 
 
 ```

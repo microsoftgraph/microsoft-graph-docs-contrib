@@ -21,7 +21,7 @@ principalIds := []string {
 }
 requestBody.SetPrincipalIds(principalIds)
 
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Post(requestBody)
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

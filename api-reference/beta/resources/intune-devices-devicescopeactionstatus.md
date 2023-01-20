@@ -1,7 +1,7 @@
 ---
 title: "deviceScopeActionStatus enum type"
 description: "Indicates the status of the attempted device scope action"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,7 +23,3 @@ Indicates the status of the attempted device scope action
 |failed|0|Indicates the device scope action failed to trigger.|
 |succeeded|1|Indicates the device scope action was successfully triggered.|
 |unknownFutureValue|2|Placeholder value for future expansion.|
-
-
-
-

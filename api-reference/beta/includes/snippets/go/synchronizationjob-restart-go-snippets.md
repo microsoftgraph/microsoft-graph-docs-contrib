@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Authorization": "Bearer <token>",
-}
-configuration := &graphconfig.RestartRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Authorization", "Bearer <token>")
+
+configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemMicrosoft.graph.restartRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewRestartPostRequestBody()
@@ -19,7 +19,7 @@ resetScope := graphmodels.WATERMARK, ESCROWS, QUARANTINESTATE_SYNCHRONIZATIONJOB
 criteria.SetResetScope(&resetScope) 
 requestBody.SetCriteria(criteria)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Restart().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Restart().Post(context.Background(), requestBody, configuration)
 
 
 ```

@@ -5,6 +5,7 @@ author: "dkershaw10"
 ms.localizationpriority: high
 ms.prod: "users"
 ms.custom: scenarios:getting-started
+ms.date: 11/11/2022
 ---
 
 # Overview of users in Microsoft Graph
@@ -63,4 +64,4 @@ Looking for the API reference for this service?
 ## Next steps
 
 - The [user resource type](/graph/api/resources/users).
-- Build your skills and [learn how to work with users through Microsoft Graph](/learn/modules/msgraph-access-user-data).
+- Training module: Build your skills and [learn how to work with users through Microsoft Graph](/training/modules/msgraph-access-user-data).

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Authorization": "Bearer {token}",
-}
-configuration := &graphconfig.SwapShiftsChangeRequestsRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Authorization", "Bearer {token}")
+
+configuration := &graphconfig.TeamItemScheduleSwapShiftsChangeRequestsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewSwapShiftsChangeRequest()
@@ -23,7 +23,7 @@ requestBody.SetRecipientUserId(&recipientUserId)
 recipientShiftId := "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c"
 requestBody.SetRecipientShiftId(&recipientShiftId) 
 
-result, err := graphClient.TeamsById("team-id").Schedule().SwapShiftsChangeRequests().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().SwapShiftsChangeRequests().Post(context.Background(), requestBody, configuration)
 
 
 ```

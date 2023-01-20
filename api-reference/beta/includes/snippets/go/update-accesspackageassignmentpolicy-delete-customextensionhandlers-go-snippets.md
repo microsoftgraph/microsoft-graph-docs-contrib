@@ -7,39 +7,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAccessPackageAssignmentPolicie()
+requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
+id := "4540a08f-8ab5-43f6-a923-015275799197"
+requestBody.SetId(&id) 
+displayName := "policy with custom access package workflow extension"
+requestBody.SetDisplayName(&displayName) 
+description := "Run specified custom access package workflow extension at different stages."
+requestBody.SetDescription(&description) 
+accessPackageId := "ba5807c7-2aa9-4c8a-907e-4a17ee587500"
+requestBody.SetAccessPackageId(&accessPackageId) 
+requestApprovalSettings := null
+requestBody.SetRequestApprovalSettings(&requestApprovalSettings) 
+requestorSettings := graphmodels.NewRequestorSettings()
+acceptRequests := true
+requestorSettings.SetAcceptRequests(&acceptRequests) 
+scopeType := "AllExistingDirectorySubjects"
+requestorSettings.SetScopeType(&scopeType) 
+allowedRequestors := []graphmodels.UserSetable {
+
+}
+requestorSettings.SetAllowedRequestors(allowedRequestors)
+requestBody.SetRequestorSettings(requestorSettings)
+accessReviewSettings := null
+requestBody.SetAccessReviewSettings(&accessReviewSettings) 
+customExtensionHandlers := []graphmodels.CustomExtensionHandlerable {
+
+}
+requestBody.SetCustomExtensionHandlers(customExtensionHandlers)
 additionalData := map[string]interface{}{
-	"id" : "4540a08f-8ab5-43f6-a923-015275799197", 
-	"displayName" : "policy with custom access package workflow extension", 
-	"description" : "Run specified custom access package workflow extension at different stages.", 
-	"accessPackageId" : "ba5807c7-2aa9-4c8a-907e-4a17ee587500", 
 expiration := graphmodels.New()
 type := "afterDuration"
 expiration.SetType(&type) 
 duration := "P365D"
 expiration.SetDuration(&duration) 
 	requestBody.SetExpiration(expiration)
-	requestApprovalSettings := null
-requestBody.SetRequestApprovalSettings(&requestApprovalSettings) 
-requestorSettings := graphmodels.New()
-	acceptRequests := true
-requestorSettings.SetAcceptRequests(&acceptRequests) 
-scopeType := "AllExistingDirectorySubjects"
-requestorSettings.SetScopeType(&scopeType) 
-	allowedRequestors := []graphmodels.able {
-
-	}
-	requestorSettings.SetAllowedRequestors(allowedRequestors)
-	requestBody.SetRequestorSettings(requestorSettings)
-	accessReviewSettings := null
-requestBody.SetAccessReviewSettings(&accessReviewSettings) 
-	customExtensionHandlers := []graphmodels.able {
-
-	}
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
 
 
 ```

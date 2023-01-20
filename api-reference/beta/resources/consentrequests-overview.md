@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "psignoret"
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 09/28/2022
 ---
 
 # Azure Active Directory consent requests
@@ -60,7 +61,8 @@ The following directory roles are required for a calling application.
 
 ## See also
 
-- [Configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow?preserve-view=true)
+- Learn more about how to [configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+- Understand the user and admin consent flows in the [Azure AD application consent experiences](/azure/active-directory/develop/application-consent-experience).
 
 
 <!--

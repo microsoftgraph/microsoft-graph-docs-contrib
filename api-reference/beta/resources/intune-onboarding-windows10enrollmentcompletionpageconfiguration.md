@@ -1,7 +1,7 @@
 ---
 title: "windows10EnrollmentCompletionPageConfiguration resource type"
 description: "Windows 10 Enrollment Status Page Configuration"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -50,6 +50,7 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
 |selectedMobileAppIds|String collection|Selected applications to track the installation status|
 |allowNonBlockingAppInstallation|Boolean|Install all required apps as non blocking apps during white glove|
+|installQualityUpdates|Boolean|Allows quality updates installation during OOBE|
 |trackInstallProgressForAutopilotOnly|Boolean|Only show installation progress for Autopilot enrollment scenarios|
 |disableUserStatusTrackingAfterFirstUser|Boolean|Only show installation progress for first user post enrollment|
 
@@ -91,11 +92,8 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "allowNonBlockingAppInstallation": true,
+  "installQualityUpdates": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
-
-
-

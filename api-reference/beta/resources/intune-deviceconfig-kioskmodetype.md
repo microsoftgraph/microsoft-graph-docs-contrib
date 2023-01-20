@@ -1,7 +1,7 @@
 ---
 title: "kioskModeType enum type"
 description: "Possible values of Android Kiosk Mode."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,7 +23,3 @@ Possible values of Android Kiosk Mode.
 |notConfigured|0|Not configured|
 |singleAppMode|1|Run in single-app mode|
 |multiAppMode|2|Run in multi-app mode|
-
-
-
-

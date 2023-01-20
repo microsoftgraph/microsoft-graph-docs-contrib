@@ -1,7 +1,7 @@
 ---
 title: "ingestionSource enum type"
 description: "Category Ingestion source"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -24,7 +24,3 @@ Category Ingestion source
 |custom|1|Indicates the category is ingested by IT admin with sufficient permissions through custom ingestion process|
 |builtIn|2|Indicates the category is ingested through system ingestion process|
 |unknownFutureValue|3|Unknown future enum value|
-
-
-
-

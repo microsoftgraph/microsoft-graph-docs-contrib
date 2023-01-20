@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestIncludeHiddenFolders := true
 
-requestParameters := &graphconfig.ChildFoldersRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeMailFolderItemChildFoldersRequestBuilderGetQueryParameters{
 	IncludeHiddenFolders: &requestIncludeHiddenFolders,
 }
-configuration := &graphconfig.ChildFoldersRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMailFolderItemChildFoldersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Get(context.Background(), configuration)
 
 
 ```

@@ -82,6 +82,8 @@ isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline) 
 smsNotificationsEnabled := true
 requestBody.SetSmsNotificationsEnabled(&smsNotificationsEnabled) 
+languageTag := "en-US"
+requestBody.SetLanguageTag(&languageTag) 
 isHiddenFromCustomers := false
 requestBody.SetIsHiddenFromCustomers(&isHiddenFromCustomers) 
 notes := "Home-cooked special"
@@ -108,6 +110,8 @@ staffMemberIds := []string {
 
 }
 requestBody.SetStaffMemberIds(staffMemberIds)
+isAnonymousJoinEnabled := false
+requestBody.SetIsAnonymousJoinEnabled(&isAnonymousJoinEnabled) 
 additionalData := map[string]interface{}{
 	"defaultPriceType@odata.type" : "#microsoft.graph.bookingPriceType", 
 	"defaultReminders@odata.type" : "#Collection(microsoft.graph.bookingReminder)", 
@@ -115,7 +119,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Services().Post(requestBody)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Services().Post(context.Background(), requestBody, nil)
 
 
 ```

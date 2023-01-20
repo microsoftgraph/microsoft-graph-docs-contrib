@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppAssignment"
 description: "Read properties and relationships of the mobileAppAssignment object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 636
+Content-Length: 1091
 
 {
   "value": {
@@ -76,15 +76,22 @@ Content-Length: 636
       "deviceAndAppManagementAssignmentFilterType": "include"
     },
     "settings": {
-      "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
-      "useDeviceContext": true
+      "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
+      "notifications": "showReboot",
+      "restartSettings": {
+        "@odata.type": "microsoft.graph.winGetAppRestartSettings",
+        "gracePeriodInMinutes": 4,
+        "countdownDisplayBeforeRestartInMinutes": 6,
+        "restartNotificationSnoozeDurationInMinutes": 10
+      },
+      "installTimeSettings": {
+        "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
+        "useLocalTime": true,
+        "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+      }
     },
     "source": "policySets",
     "sourceId": "Source Id value"
   }
 }
 ```
-
-
-
-

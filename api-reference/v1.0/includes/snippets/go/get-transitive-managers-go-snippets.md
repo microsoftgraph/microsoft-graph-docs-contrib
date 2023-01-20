@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
 
 requestCount := true
 
@@ -23,7 +23,7 @@ configuration := &graphconfig.MeRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().Get(context.Background(), configuration)
 
 
 ```

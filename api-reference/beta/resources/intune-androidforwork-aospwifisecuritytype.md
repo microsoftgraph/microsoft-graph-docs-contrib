@@ -1,7 +1,7 @@
 ---
 title: "aospWifiSecurityType enum type"
 description: "This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,7 +23,3 @@ This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenario
 |none|0|No security type.|
 |wpa|1|WPA-Pre-shared-key|
 |wep|2|WEP-Pre-shared-key|
-
-
-
-

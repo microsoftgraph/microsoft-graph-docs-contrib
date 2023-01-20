@@ -22,6 +22,8 @@ isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline) 
 optOutOfCustomerEmail := false
 requestBody.SetOptOutOfCustomerEmail(&optOutOfCustomerEmail) 
+anonymousJoinWebUrl := null
+requestBody.SetAnonymousJoinWebUrl(&anonymousJoinWebUrl) 
 postBuffer , err := abstractions.ParseISODuration("PT10M")
 requestBody.SetPostBuffer(&postBuffer) 
 preBuffer , err := abstractions.ParseISODuration("PT5M")
@@ -220,7 +222,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Appointments().Post(requestBody)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Appointments().Post(context.Background(), requestBody, nil)
 
 
 ```

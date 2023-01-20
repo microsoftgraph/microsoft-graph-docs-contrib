@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.CallRecordRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.CommunicationsCallRecordItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"sessions($expand=segments)"},
 }
-configuration := &graphconfig.CallRecordRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.CommunicationsCallRecordItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Communications().CallRecordsById("callRecord-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Communications().CallRecordsById("callRecord-id").Get(context.Background(), configuration)
 
 
 ```

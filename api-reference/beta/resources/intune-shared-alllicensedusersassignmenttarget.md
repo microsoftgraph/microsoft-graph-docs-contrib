@@ -1,7 +1,7 @@
 ---
 title: "allLicensedUsersAssignmentTarget resource type"
 description: "Represents an assignment to all licensed users in the tenant."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -43,7 +43,3 @@ Here is a JSON representation of the resource.
   "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
-
-
-
-

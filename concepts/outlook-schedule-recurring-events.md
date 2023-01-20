@@ -1,7 +1,7 @@
 ---
 title: "Schedule repeating appointments as recurring events in Outlook"
 description: "Create recurring events by using the recurrence rule, which includes the recurrence pattern - how often an event repeats - and the recurrence range - for how long."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
@@ -217,7 +217,7 @@ The relative yearly pattern causes an event to repeat on the same day of the wee
 
 ## Recurrence ranges
 
-The second part of a recurrence is the range. This specifies how long the pattern repeats. For example, an event could end after 10 occurrences, by a specific date, or could have no end. A range is represented in the API by the [recurrenceRange resource](/graph/api/resources/recurrencepattern).
+The second part of a recurrence is the range. This specifies how long the pattern repeats. For example, an event could end after 10 occurrences, by a specific date, or could have no end. A range is represented in the API by the [recurrenceRange resource](/graph/api/resources/recurrencerange).
 
 Depending on the type of range, certain fields of **recurrenceRange** are required or ignored.
 
@@ -234,7 +234,7 @@ The numbered range causes an event to occur a fixed number of times (based on th
 
 | Property | Relevance | Description |
 |----------|-----------|-------------|
-| **numberOfOccurences** | Required | Specifies the number of occurrences. Must be a positive integer. |
+| **numberOfOccurrences** | Required | Specifies the number of occurrences. Must be a positive integer. |
 | **recurrenceTimeZone** | Optional | Specifies the time zone for the **startDate** property. If not specified, the time zone of the event is used. |
 | **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
 | **type** | Required | Must be set to `numbered`. |
