@@ -34,14 +34,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.onPremisesApplicationSegment",
-  "externalUrl": "String",
-  "internalUrl": "String",
-  "alternateUrl": "String",
-  "corsConfigurations": [
-    {
-      "@odata.type": "microsoft.graph.corsConfiguration_v2"
-    }
-  ]
+ "@odata.type": "#microsoft.graph.identityGovernance.webSegmentConfiguration"
 }
 ```
