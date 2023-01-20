@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "microsoft.graph.countryNamedLocation/countriesAndRegions/any"
 
-requestParameters := &graphconfig.NamedLocationsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.NamedLocationsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityConditionalAccessNamedLocationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

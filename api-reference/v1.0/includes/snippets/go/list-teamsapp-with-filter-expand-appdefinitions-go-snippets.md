@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "id eq '876df28f-2e78-423b-94a5-44181bd0e225'"
 
-requestParameters := &graphconfig.TeamsAppsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.AppCatalogsTeamsAppsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Expand: [] string {"appDefinitions"},
 }
-configuration := &graphconfig.TeamsAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.AppCatalogsTeamsAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

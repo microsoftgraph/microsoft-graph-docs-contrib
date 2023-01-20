@@ -53,13 +53,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignment",
-  "id": "String (identifier)",
-  "state": "String",
-  "status": "String",
   "expiredDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
+  },
+  "state": "String",
+  "status": "String"
 }
 ```
 
