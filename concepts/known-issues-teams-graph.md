@@ -14,11 +14,11 @@ This article lists down the implementation differences among different teamwork 
 
 ### List messages in a chat
 
-The [List messages in a chat API](../api-reference/v1.0/api/chat-list-messages.md) doesn't support `OrderBy` parameter in the `Microsoft Graph for US Government L4` national cloud.
+The [List messages in a chat API](../api-reference/v1.0/api/chat-list-messages.md) doesn't support `OrderBy` parameter in the `Microsoft 365 GCC` environment in `Microsoft Graph for US Government L4` national cloud.
 
 ### Api's for managing apps installed in a user's personal scope
 
-Api's to manage apps installed in a user's personal scope are not supported in Application context in the `Microsoft Graph for US Government L4` cloud.
+Api's to manage apps installed in a user's personal scope are not supported in Application context in the `Microsoft 365 GCC High` environment in `Microsoft Graph for US Government L4` cloud.
 Following api's are included.
 [List apps installed for user](../api-reference/v1.0/api/userteamwork-list-installedapps.md) 
 [Install app for user](../api-reference/v1.0/api/userteamwork-post-installedapps.md) 
@@ -31,7 +31,7 @@ Following api's are included.
 The [List chats](../api-reference/v1.0/api/chat-list.md) doesn't support `OrderBy` parameter in the `Microsoft Graph for US Government L4` national cloud.
 
 ### Get Chat
-The [Get chat](../api-reference/v1.0/api/chat-get.md) api doesn't support chats with meetings associated with them in application context in the `Microsoft Graph for US Government L4` national cloud.
+The [Get chat](../api-reference/v1.0/api/chat-get.md) api doesn't support chats with meetings associated with them in application context in the `Microsoft 365 GCC High` environment in the `Microsoft Graph for US Government L4` national cloud.
 
 ### Meeting transcript api's
 Api's associated with [meeting transcripts](../api/resources/calltranscript.md) are not supported in the `Microsoft Graph for US Government L4` national cloud.
@@ -41,4 +41,4 @@ Following api's are included.
 
 ### Soft delete a message
 
-The [Soft delete a message](../api-reference/beta/api/chatmessage-softdelete.md) api doesn't work in the `Microsoft Graph for US Government L4` national cloud.
+The [Soft delete a message](../api-reference/beta/api/chatmessage-softdelete.md) api doesn't work in the `Microsoft 365 GCC High` environment in `Microsoft Graph for US Government L4` national cloud.
