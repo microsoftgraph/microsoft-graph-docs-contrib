@@ -169,6 +169,34 @@ Content-type: application/json
 }
 ```
 
+The request returns a `201 Created` response code and the newly created group object in the response body.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
+```http
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "id": "6f7cd676-5445-47c4-9c2b-c47da4671da2",
+    "createdDateTime": "2023-01-20T07:00:31Z",
+    "description": "Marketing department folks",
+    "displayName": "Marketing department",
+    "groupTypes": [
+        "Unified",
+        "DynamicMembership"
+    ],
+    "mail": "marketing@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "marketing",
+    "membershipRule": "user.department -eq \"Marketing\"",
+    "membershipRuleProcessingState": "On"
+}
+```
+
 To learn more about formulating membership rules, see [Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-membership).
 
 > [!NOTE]

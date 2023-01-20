@@ -302,20 +302,7 @@ Content-type: application/json
 }
 ```
 
-To remove the value of the schema extension from the user object, set the property to `null`. For example:
-
-<!-- {
-  "blockType": "request",
-  "name": "update_schemaextension_properties_delete"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
-Content-type: application/json
-
-{
-    "ext55gb1l09_msLearnCourses": null
-}
-```
+To remove the value of the schema extension from the user object, set the **ext55gb1l09_msLearnCourses** property to `null`.
 
 #### Response
 
