@@ -147,7 +147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "settings,Get,Update",
           "ChangeType": "Addition",
-          "Description": "Added the settings entity and the following CRUD methods: \u003Cbr\u003E [Get](https://learn.microsoft.com/en-us/graph/api/user-get-settings?view=graph-rest-beta) \u003Cbr\u003E [Update](https://learn.microsoft.com/en-us/graph/api/user-update-settings?view=graph-rest-beta)",
+          "Description": "Added the settings entity and the following CRUD methods: \u003Cbr\u003E Get https://learn.microsoft.com/en-us/graph/api/user-get-settings?view=graph-rest-beta \u003Cbr\u003E Update https://learn.microsoft.com/en-us/graph/api/user-update-settings?view=graph-rest-beta",
           "Target": "settings,Get,Update"
         }
       ],
