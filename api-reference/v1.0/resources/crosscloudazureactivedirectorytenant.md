@@ -2,7 +2,7 @@
 title: "crossCloudAzureActiveDirectoryTenant resource type"
 description: "The crossCloudAzureActiveDirectoryTenant type identifies another Azure Active Directory tenant in a different cloud as an identity source for a connected organization."
 ms.localizationpriority: medium
-author: "fsheik"
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
