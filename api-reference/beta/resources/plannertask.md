@@ -44,6 +44,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |id|String|Read-only. ID of the task. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
+|specifiedCompletionRequirements|[plannerTaskCompletionRequirements](plannerTaskCompletionRequirements.md)|Read only. Flags enum, representing all the requirements specified on the task. [plannerTaskCompletionRequirementDetails](plannerTaskCompletionRequirementDetails.md) in [plannerTaskDetails](plannertaskdetails.md) has details of the requirements specified, if any. |
 |priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
@@ -90,6 +91,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "orderHint": "String",
   "percentComplete": "Int32",
+  "specifiedCompletionRequirements": {"@odata.type": "microsoft.graph.plannerTaskCompletionRequirements"},
   "priority": "Int32",
   "planId": "String",
   "previewType": "String",
