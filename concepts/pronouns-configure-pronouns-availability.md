@@ -14,7 +14,7 @@ If you are a global administrator, you can turn on or off the display of pronoun
 
 Using the Microsoft Graph API, you can enable, disable, or get settings that manage pronouns in an organization, such as controlling the display within the organization of any pronouns users may have set up for themselves.
 
-In linguistics, pronouns are words that refer to someone in a sentence without using their names, such as "she", "her, "he", "him", "they", and "them". Microsoft 365 supports pronouns to give users more ways to express themselves, and communicate with or about others with respect. Use of correct pronouns can be especially important to LGBTQI+ community members, and sharing pronouns helps people avoid guessing or making assumptions about gender identity based solely on names or initial observations of the person.
+Pronouns, in this context, are words used to replace a person's name in a sentence. Pronouns and their gender-neutral versions exist in many languages. For example, in English, "she", "her, "he", "him", and the gender-neutral "they", and "them" are common pronouns. Correctly using someone’s pronouns shows inclusion and respect. Sharing pronouns helps people avoid guessing or making assumptions based solely on names or initial observations of the person. In a hybrid, multicultural work or school environment, the simple act of using the right pronouns can help build trust and improve communication among one another.
 
 Global administrators can enable or disable pronouns for everyone in the organization, using the Microsoft 365 Admin Center or Microsoft Graph API as described below. By default, pronouns are disabled.
 
