@@ -1,6 +1,6 @@
 ---
-author: JeremyKelley
-title: List resource
+author: "JeremyKelley"
+title: "List resource"
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "The list resource represents a list in a site."
@@ -43,29 +43,27 @@ All examples below are relative to a site, for example, `https://graph.microsoft
 
 The **list** resource has the following properties.
 
-| Property name    | Type                             | Description
-|:-----------------|:---------------------------------|:---------------------------
-| **displayName**  | string                           | The displayable title of the list.
-| **list**         | [listInfo][]                     | Provides additional details about the list.
-| **system**       | [systemFacet][]                  | If present, indicates that this is a system-managed list. Read-only.
+| Property name   | Type            | Description                                                          |
+|:----------------|:----------------|:---------------------------------------------------------------------|
+| **displayName** | string          | The displayable title of the list.                                   |
+| **list**        | [listInfo][]    | Provides additional details about the list.                          |
+| **system**      | [systemFacet][] | If present, indicates that this is a system-managed list. Read-only. |
 
 The following properties are inherited from **[baseItem][]**.
 
-| Property name            | Type              | Description
-|:-------------------------|:------------------|:------------------------------
-| **createdBy**            | [identitySet][]   | Identity of the creator of this item. Read-only.
-| **createdDateTime**      | DateTimeOffset    | The date and time the item was created. Read-only.
-| **description**          | string            | The descriptive text for the item.
-| **eTag**                 | string            | ETag for the item. 
-| **id**                   | string            | The unique identifier of the item. Read-only.
-| **name**                 | string            | The name of the item.
-
-Read-only.                                                          |
-| **lastModifiedBy**       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
-| **lastModifiedDateTime** | DateTimeOffset    | The date and time the item was last modified. Read-only.
-| **parentReference**      | [itemReference][] | Parent information, if the item has a parent. Read-write.
-| **sharepointIds**        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| **webUrl**               | string (url)      | URL that displays the item in the browser. Read-only.
+| Property name            | Type              | Description                                                              |
+|:-------------------------|:------------------|:-------------------------------------------------------------------------|
+| **createdBy**            | [identitySet][]   | Identity of the creator of this item. Read-only.                         |
+| **createdDateTime**      | DateTimeOffset    | The date and time the item was created. Read-only.                       |
+| **description**          | string            | The descriptive text for the item.                                       |
+| **eTag**                 | string            | ETag for the item.                                                       |
+| **id**                   | string            | The unique identifier of the item. Read-only.                            |
+| **name**                 | string            | The name of the item. Read-only.                                         |
+| **lastModifiedBy**       | [identitySet][]   | Identity of the last modifier of this item. Read-only.                   |
+| **lastModifiedDateTime** | DateTimeOffset    | The date and time the item was last modified. Read-only.                 |
+| **parentReference**      | [itemReference][] | Parent information, if the item has a parent. Read-write.                |
+| **sharepointIds**        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only. |
+| **webUrl**               | string (url)      | URL that displays the item in the browser. Read-only.                    |
 
 ## Relationships
 
