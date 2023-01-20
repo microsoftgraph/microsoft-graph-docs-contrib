@@ -25,23 +25,25 @@ To complete this tutorial, you need the following resources and privileges:
 - Have a signed certificate that you'll use to authenticate the app. This article uses a self-signed certificate for demonstration purposes. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).
 
 > [!CAUTION]
-> Self-signed certificates are not trusted by default and they can be difficult to maintain. Also, they may use outdated hash and cipher suites that may not be strong. For better security, purchase a certificate signed by a well-known certificate authority.
+> While the use of certificates is highly recommended over secrets, we don't recommend using self-signed certificates. They can reduce the security bar of your application due to various factors like use of an outdated hash and cipher suites or lack of validation. We recommend procuring certificates from a well known trusted certificate authority.
 
 ## Read the certificate details
 
-To add a certificate programmatically using Microsoft Graph, you need the certificate's thumbprint and key.
+To add a certificate programmatically using Microsoft Graph, you need the certificate's key. You can optionally add the certificate thumbprint.
 
-### Get the certificate thumbprint
+### [Optional] Get the certificate thumbprint
 
-To read the certificate's thumbprint using PowerShell, run the following request. Save the value for the thumbprint.
+It isn't required to add the certificate thumprint to the request payload. If you want to add the thumbprint, you can run the following PowerShell request to read the certificate thumbprint. This request assumes that you generated and exported the certificate to your local drive.
 
 #### Request
 
 ```powershell-interactive
-Get-PfxCertificate -Filepath "C:\Users\admin\Desktop\20230112.cer" ## Replace the file path with the source of your certificate
+Get-PfxCertificate -Filepath "C:\Users\admin\Desktop\20230112.cer" | Out-File -FilePath "C:\Users\admin\Desktop\20230112.cer.thumbprint.txt" ## Replace the file path with the source of your certificate
 ```
 
 #### Response
+
+The output that's saved in the *.txt* file can be similar to the following.
 
 ```powershell
 Thumbprint                                Subject
@@ -51,15 +53,17 @@ Thumbprint                                Subject
 
 ### Get the certificate key
 
-To read the certificate's key using PowerShell, run the following request. Save the value for the key.
+To read the certificate's key using PowerShell, run the following request.
 
 #### Request
 
 ```powershell-interactive
-[convert]::ToBase64String((Get-Content C:\Users\admin\Desktop\20230112.cer -Encoding byte)) ## Replace the file path with the location of your certificate
+[convert]::ToBase64String((Get-Content C:\Users\admin\Desktop\20230112.cer -Encoding byte))  | Out-File -FilePath "C:\Users\admin\Desktop\20230112.key.txt" ## Replace the file path with the location of your certificate
 ```
 
 #### Response
+
+The output that's saved in the *.txt* file can be similar to the following.
 
 ```powershell
 MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMjAeFw0yMzAxMTIwODExNTZaFw0yNDAxMTIwODMxNTZaMBMxETAPBgNVBAMMCDIwMjMwMTEyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseKf1weEacJ67D6/v2dC9+3ZKCWs6ptdElRkSsD6B2uR2eCye5gq7jqXZZEC6eizNio7ATsozpSm04YSgzmPgyItIkRWz6//S84WDfIKWeh06RvH8Bid9D1q1BiOiJcaFOB4aa5mNijqE0p3de93ZXTEAWpROWSCdlqp9iFiV7BGEVY/1yw7nhczRj1ytLgz7Bh4KAG5OF5QR684RQtegYNS21qBe/GPYaG6bcHZncA0rpqzX02dIJXSso30LDGTo7/JjA/OQraTa5IbF63rI4/7c2ZCaoJlkyaH6h8q+Vl5GvJwhjaCNk7QU2Z5DC8+jYnqinkU3MoX2RKgG9iyxQIDAQABo1AwTjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBTCTHKgygs8PRMZvOBxYslBbZzSTTANBgkqhkiG9w0BAQsFAAOCAQEAXIaTjjVmgfMCq0UEgN1xpYW5uRu+sypHYKujDUs7pOrqsxnhvxSIo4ZSb9/mmUM0YO/LNMB7gvtUCOJIPjflE3mKksueYnBt8o3d2vmZuEwGjG8vyJFlZ2vOPeeiO7GiBEBHASPnvsdvvA0kJgTQUl52jFRTKcKfkS7GX9qtsBU0Zu0w8zzz97SBvBuroiijvbgXWV13r/LSNyIUSkVYf0uJsogdpN9iK964m7LVkxl6SjeEIBDedG+7WMIBsIUy0xz6MmyvfSohz3oNP4jHt7pJ9TyxnvDlaxQPUbuIL+DaXVkKRm1V3GgIpKTBqMzTf4tCpy7rpUZbhcwAFw6h9A==
@@ -71,14 +75,14 @@ MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgy
 
 The following request adds the certificate details to an app. The settings are as follows:
 
-- The value of **customKeyIdentifier** is the certificate thumbprint.
 - The **startDateTime** is the date when or after the certificate was created.
 - The **endDateTime** can be a maximum of one year from the **startDateTime**. If unspecified, the system will automatically assign a date one year after the startDateTime.
-- The type and usage must be `AsymmetricX509Cert` and `Verify` respectively.
-- Assign the certificate subject name to the displayName property.
+- The **type** and **usage** must be `AsymmetricX509Cert` and `Verify` respectively.
+- Assign the certificate subject name to the **displayName** property.
+- The **key** is the Base64 encoded calue that you generated in the previous step.
 
 > [!NOTE]
-> If your app has an existing valid certificate that you want to continue using for authentication, include both the current and new certificate details in the app's **keyCredentials** object. Including only the new certificate details replaces the existing certificate with the new one.
+> If your app has an existing valid certificate that you want to continue using for authentication, include both the current and new certificate details in the app's **keyCredentials** object. Since this a PATCH call which by protocol replaces the contents of the property with the new values, including only the new certificate will replace the existing certificates with the new one.
 
 The following example adds a new certificate and replaces any existing certificates.
 
@@ -93,7 +97,6 @@ Content-type: application/json
 {
     "keyCredentials": [
         {
-            "customKeyIdentifier": "5A126608ED1A1366F714A4A62B7015F3262840F1",
             "endDateTime": "2024-01-11T15:31:26Z",
             "startDateTime": "2023-01-12T15:31:26Z",
             "type": "AsymmetricX509Cert",
@@ -112,10 +115,12 @@ The following example adds a new certificate without replacing the existing cert
   "name": "applications_howto_add_certificate"
 }-->
 ```http
+PATCH https://graph.microsoft.com/v1.0/applications/bb77f42f-dacb-4ece-b3e6-285e63c24d52
+Content-type: application/json
+
 {
     "keyCredentials": [
         {
-            "customKeyIdentifier": "021099593B26FFE991F202143937D062943FE691",
             "endDateTime": "2024-01-11T15:31:26Z",
             "startDateTime": "2023-01-12T09:31:26Z",
             "type": "AsymmetricX509Cert",
