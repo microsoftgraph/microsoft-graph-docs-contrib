@@ -67,7 +67,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossCloudAzureActiveDirectoryTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [crossCloudAzureActiveDirectoryTarget](https://learn.microsoft.com/en-us/graph/api/resources/crosscloudazureactivedirectorytarget?view=graph-rest-beta) resource. Use this in Azure AD Entitlement Management connected organizations to refer to an Azure Active Directory tenant in another cloud.",
+          "Description": "Added the [crossCloudAzureActiveDirectoryTarget](https://learn.microsoft.com/en-us/graph/api/resources/crosscloudazureactivedirectorytenant?view=graph-rest-beta) resource. Use this in Azure AD Entitlement Management connected organizations to refer to an Azure Active Directory tenant in another cloud.",
           "Target": "crossCloudAzureActiveDirectoryTarget"
         }
       ],
