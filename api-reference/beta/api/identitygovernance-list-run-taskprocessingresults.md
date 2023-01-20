@@ -72,7 +72,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/519266d1-784e-4139-8033-9878968ffdbd/runs/90ff9d1b-8fad-456b-9eb0-8f52a7af71ab/taskProcessingResults
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc/runs/33bf1a9c-2b26-49b6-996f-ca416c518341/taskProcessingResults
 ```
 
 ### Response
@@ -90,57 +90,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('519266d1-784e-4139-8033-9878968ffdbd')/runs('90ff9d1b-8fad-456b-9eb0-8f52a7af71ab')/taskProcessingResults",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc')/runs('33bf1a9c-2b26-49b6-996f-ca416c518341')/taskProcessingResults",
     "value": [
         {
-            "completedDateTime": "2023-01-04T17:01:49.9898834Z",
-            "createdDateTime": "2023-01-04T17:01:45.9668228Z",
-            "id": "85a0a8cb-2cc0-4f75-8655-69ff4351e086",
+            "completedDateTime": "2023-01-20T17:16:03.4863553Z",
+            "createdDateTime": "2023-01-20T17:16:00.9095011Z",
+            "id": "7a21089f-ec13-4e9c-997e-b31f4e59d41e",
             "processingStatus": "completed",
-            "startedDateTime": "2023-01-04T17:01:49.402984Z",
+            "startedDateTime": "2023-01-20T17:16:02.8025169Z",
             "failureReason": null,
             "subject": {
-                "id": "d8f1592e-5067-4ff8-a55a-a0acc8447563"
+                "id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
             },
             "task": {
-                "category": "joiner",
+                "category": "joiner,leaver",
                 "continueOnError": false,
-                "description": "Send onboarding reminder email to user’s manager",
-                "displayName": "Send onboarding reminder email",
-                "executionSequence": 1,
-                "id": "c91d58de-f4be-48e7-8fea-c9308bf2cb23",
+                "description": "Add user to selected groups",
+                "displayName": "Add User To Groups",
+                "executionSequence": 3,
+                "id": "c8dbaed8-3d23-4e5a-8f65-130767639667",
                 "isEnabled": true,
-                "taskDefinitionId": "3C860712-2D37-42A4-928F-5C93935D26A1",
-                "arguments": []
-            }
-        },
-        {
-            "completedDateTime": "2023-01-04T17:01:50.3968105Z",
-            "createdDateTime": "2023-01-04T17:01:46.0878008Z",
-            "id": "a7036fcd-7587-4aab-9518-c6e9cb35d1cb",
-            "processingStatus": "canceled",
-            "startedDateTime": null,
-            "failureReason": null,
-            "subject": {
-                "id": "d8f1592e-5067-4ff8-a55a-a0acc8447563"
-            },
-            "task": {
-                "category": "joiner",
-                "continueOnError": false,
-                "description": "Generate Temporary Access Pass and send via email to user's manager",
-                "displayName": "Generate TAP and Send Email",
-                "executionSequence": 2,
-                "id": "92c0bdc2-ed3f-484d-971f-8032afe86cd8",
-                "isEnabled": true,
-                "taskDefinitionId": "1b555e50-7f65-41d5-b514-5894a026d10d",
+                "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
                 "arguments": [
                     {
-                        "name": "tapLifetimeMinutes",
-                        "value": "60"
-                    },
-                    {
-                        "name": "tapIsUsableOnce",
-                        "value": "true"
+                        "name": "groupID",
+                        "value": "1624be55-d924-491e-ac72-401f6f961e4d"
                     }
                 ]
             }
@@ -160,7 +134,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/519266d1-784e-4139-8033-9878968ffdbd/runs/90ff9d1b-8fad-456b-9eb0-8f52a7af71ab/taskProcessingResults?$select=id,failureReason,processingStatus,subject,task
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc/runs/33bf1a9c-2b26-49b6-996f-ca416c518341/taskProcessingResults?$select=id,failureReason,processingStatus,subject
 ```
 
 ### Response
@@ -178,57 +152,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('519266d1-784e-4139-8033-9878968ffdbd')/runs('90ff9d1b-8fad-456b-9eb0-8f52a7af71ab')/taskProcessingResults(id,failureReason,processingStatus,subject,task)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc')/runs('33bf1a9c-2b26-49b6-996f-ca416c518341')/taskProcessingResults(id,failureReason,processingStatus,subject)",
     "value": [
         {
-            "completedDateTime": "2023-01-04T17:01:49.9898834Z",
-            "createdDateTime": "2023-01-04T17:01:45.9668228Z",
-            "id": "85a0a8cb-2cc0-4f75-8655-69ff4351e086",
+            "id": "7a21089f-ec13-4e9c-997e-b31f4e59d41e",
             "processingStatus": "completed",
-            "startedDateTime": "2023-01-04T17:01:49.402984Z",
             "failureReason": null,
             "subject": {
-                "id": "d8f1592e-5067-4ff8-a55a-a0acc8447563"
+                "id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
             },
             "task": {
-                "category": "joiner",
+                "category": "joiner,leaver",
                 "continueOnError": false,
-                "description": "Send onboarding reminder email to user’s manager",
-                "displayName": "Send onboarding reminder email",
-                "executionSequence": 1,
-                "id": "c91d58de-f4be-48e7-8fea-c9308bf2cb23",
+                "description": "Add user to selected groups",
+                "displayName": "Add User To Groups",
+                "executionSequence": 3,
+                "id": "c8dbaed8-3d23-4e5a-8f65-130767639667",
                 "isEnabled": true,
-                "taskDefinitionId": "3C860712-2D37-42A4-928F-5C93935D26A1",
-                "arguments": []
-            }
-        },
-        {
-            "completedDateTime": "2023-01-04T17:01:50.3968105Z",
-            "createdDateTime": "2023-01-04T17:01:46.0878008Z",
-            "id": "a7036fcd-7587-4aab-9518-c6e9cb35d1cb",
-            "processingStatus": "canceled",
-            "startedDateTime": null,
-            "failureReason": null,
-            "subject": {
-                "id": "d8f1592e-5067-4ff8-a55a-a0acc8447563"
-            },
-            "task": {
-                "category": "joiner",
-                "continueOnError": false,
-                "description": "Generate Temporary Access Pass and send via email to user's manager",
-                "displayName": "Generate TAP and Send Email",
-                "executionSequence": 2,
-                "id": "92c0bdc2-ed3f-484d-971f-8032afe86cd8",
-                "isEnabled": true,
-                "taskDefinitionId": "1b555e50-7f65-41d5-b514-5894a026d10d",
+                "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
                 "arguments": [
                     {
-                        "name": "tapLifetimeMinutes",
-                        "value": "60"
-                    },
-                    {
-                        "name": "tapIsUsableOnce",
-                        "value": "true"
+                        "name": "groupID",
+                        "value": "1624be55-d924-491e-ac72-401f6f961e4d"
                     }
                 ]
             }
