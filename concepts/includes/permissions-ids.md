@@ -47,6 +47,8 @@ ms.topic: include
 | AppRoleAssignment.ReadWrite.All                         | Delegated   | 84bccea3-f856-4a8a-967b-dbe0a3d53a64 |
 | AttackSimulation.Read.All                               | Application | 93283d0a-6322-4fa8-966b-8c121624760d |
 | AttackSimulation.Read.All                               | Delegated   | 104a7a4b-ca76-4677-b7e7-2f4bc482f381 |
+| AttackSimulation.ReadWrite.All                          | Application | e125258e-8c8a-42a8-8f55-ab502afa52f3 |
+| AttackSimulation.ReadWrite.All                          | Delegated   | 27608d7c-2c66-4cad-a657-951d575f5a60 |
 | AuditLog.Read.All                                       | Application | b0afded3-3588-46d8-8b3d-9842eff778da |
 | AuditLog.Read.All                                       | Delegated   | e4c9e354-4dc5-45b8-9e7c-e1393b0b1a20 |
 | AuthenticationContext.Read.All                          | Application | 381f742f-e1f8-4309-b4ab-e3d91ae4c5c1 |
