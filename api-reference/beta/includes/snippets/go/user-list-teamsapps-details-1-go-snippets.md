@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.UserScopeTeamsAppInstallationRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.UserItemTeamworkInstalledAppItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsAppDefinition"},
 }
-configuration := &graphconfig.UserScopeTeamsAppInstallationRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemTeamworkInstalledAppItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.UsersById("user-id").Teamwork().InstalledAppsById("userScopeTeamsAppInstallation-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.UsersById("user-id").Teamwork().InstalledAppsById("userScopeTeamsAppInstallation-id").Get(context.Background(), configuration)
 
 
 ```

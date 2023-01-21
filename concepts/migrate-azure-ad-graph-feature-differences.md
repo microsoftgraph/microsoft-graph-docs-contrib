@@ -4,6 +4,7 @@ description: "Describes feature differences between Azure Active Directory (Azur
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Feature differences between Azure AD Graph and Microsoft Graph

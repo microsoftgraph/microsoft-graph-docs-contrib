@@ -5,6 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 10/05/2022
 ---
 
 # Assign reviewers to your access review using the Microsoft Graph API
@@ -14,6 +15,9 @@ The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-overview)
 The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) resource.  In addition, you can specify fallback reviewers by using the **fallbackReviewers** property. These properties are not required when you create a self-review (where users review their own access).
 
 To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of **accessReviewReviewerScope**. For descriptions of these properties, see the [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope) resource type.
+
+> [!NOTE]
+> Review of Privileged Access Groups will only assign active owners as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owners when the review begins, the fallback reviewers will be assigned to the review.
 
 ## Example 1: A self-review
 

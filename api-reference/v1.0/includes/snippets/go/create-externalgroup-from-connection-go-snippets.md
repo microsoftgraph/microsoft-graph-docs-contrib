@@ -15,7 +15,7 @@ requestBody.SetDisplayName(&displayName)
 description := "The product marketing team"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.External().ConnectionsById("externalConnection-id").Groups().Post(requestBody)
+result, err := graphClient.External().ConnectionsById("externalConnection-id").Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

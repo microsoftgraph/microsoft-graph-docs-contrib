@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "isEnabled eq true"
 
-requestParameters := &graphconfig.LanguagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityB2cUserFlowItemLanguagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.LanguagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityB2cUserFlowItemLanguagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").Languages().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").Languages().Get(context.Background(), configuration)
 
 
 ```

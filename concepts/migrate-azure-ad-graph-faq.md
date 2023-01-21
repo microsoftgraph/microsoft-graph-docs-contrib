@@ -4,6 +4,7 @@ description: "Provides answers to frequently asked questions about migrating fro
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Azure AD Graph to Microsoft Graph migration FAQ
@@ -135,7 +136,7 @@ If you still need to configure Azure AD Graph permissions for your applications,
 
 For examples using the listed workarounds, see [Use Microsoft Graph to configure required Azure AD Graph permissions for an app registration](migrate-azure-ad-graph-configure-permissions.md)
 
->**Note:** Adding Azure AD Graph permissions using these workarounds won't be supported after retirement of the Azure AD Graph. Any app using Azure AD Graph will still stop functioning after the retirement.
+>**Note:** Adding Azure AD Graph permissions using these workarounds won't be supported after retirement of the Azure AD Graph. Any app using Azure AD Graph will stop functioning after the retirement.
 
 
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Policies().CrossTenantAccessPolicy().Default().ResetToSystemDefault().Post()
+graphClient.Policies().CrossTenantAccessPolicy().Default().ResetToSystemDefault().Post(context.Background(), nil)
 
 
 ```

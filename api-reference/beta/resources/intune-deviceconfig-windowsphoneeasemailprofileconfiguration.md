@@ -1,7 +1,7 @@
 ---
 title: "windowsPhoneEASEmailProfileConfiguration resource type"
 description: "By providing configurations in this profile you can instruct the native email client on Windows Phone to communicate with an Exchange server and get email, contacts, calendar, and tasks. Furthermore, you can also specify how much email to sync and how often the device should sync."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -127,9 +127,3 @@ Here is a JSON representation of the resource.
   "requireSsl": true
 }
 ```
-
-
-
-
-
-

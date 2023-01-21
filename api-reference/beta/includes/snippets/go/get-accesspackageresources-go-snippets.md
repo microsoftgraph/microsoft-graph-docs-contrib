@@ -10,15 +10,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "resourceType eq 'Application'"
 
-requestParameters := &graphconfig.AccessPackageResourcesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageCatalogItemAccessPackageResourcesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Expand: [] string {"accessPackageResourceScopes"},
 }
-configuration := &graphconfig.AccessPackageResourcesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageCatalogItemAccessPackageResourcesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").AccessPackageResources().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").AccessPackageResources().Get(context.Background(), configuration)
 
 
 ```

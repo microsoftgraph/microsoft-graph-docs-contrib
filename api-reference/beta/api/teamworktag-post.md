@@ -1,7 +1,7 @@
 ---
 title: "Create teamworkTag"
 description: "Create a new teamworkTag object."
-author: "anniecolonna"
+author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -47,7 +47,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the tag. The value can't be more than 40 characters.|
-|members| [teamworkTagMember](../resources/teamworktagmember.md) collection |Members of the team to add to the tag. Set the user identifier property of each member. Members count shouldn't be more than 25.|
+|members| [teamworkTagMember](../resources/teamworktagmember.md) collection | The unique identifier for the members of the team to add to the tag. The members count shouldn't be more than 25.|
 
 
 
@@ -127,7 +127,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.teamworkTag",
   "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
   "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
-  "displayName": "Financee",
+  "displayName": "Finance",
   "memberCount": 2,
   "tagType": "standard"
 }

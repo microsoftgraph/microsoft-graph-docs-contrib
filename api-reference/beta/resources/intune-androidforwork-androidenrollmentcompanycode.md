@@ -1,7 +1,7 @@
 ---
 title: "androidEnrollmentCompanyCode resource type"
 description: "A class to hold specialty enrollment data used for enrolling via Google's Android Management API, such as Token, Url, and QR code content"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -46,9 +46,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

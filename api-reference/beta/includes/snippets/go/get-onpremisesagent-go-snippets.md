@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.OnPremisesAgentRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.OnPremisesPublishingProfileItemAgentItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"agentGroups"},
 }
-configuration := &graphconfig.OnPremisesAgentRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.OnPremisesPublishingProfileItemAgentItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").AgentsById("onPremisesAgent-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").AgentsById("onPremisesAgent-id").Get(context.Background(), configuration)
 
 
 ```

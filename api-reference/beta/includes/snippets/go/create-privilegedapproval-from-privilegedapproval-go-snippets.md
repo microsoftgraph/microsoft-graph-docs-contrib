@@ -19,7 +19,7 @@ requestBody.SetApprovalState(&approvalState)
 approvalDuration , err := abstractions.ParseISODuration("datetime-value")
 requestBody.SetApprovalDuration(&approvalDuration) 
 
-result, err := graphClient.PrivilegedApproval().Post(requestBody)
+result, err := graphClient.PrivilegedApproval().Post(context.Background(), requestBody, nil)
 
 
 ```

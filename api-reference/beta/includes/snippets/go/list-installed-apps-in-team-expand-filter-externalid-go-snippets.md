@@ -10,15 +10,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 
-requestParameters := &graphconfig.InstalledAppsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemInstalledAppsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp","teamsAppDefinition"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.InstalledAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemInstalledAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").InstalledApps().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").InstalledApps().Get(context.Background(), configuration)
 
 
 ```

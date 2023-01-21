@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").ColumnsById("columnDefinition-id").Delete()
+graphClient.SitesById("site-id").ContentTypesById("contentType-id").ColumnsById("columnDefinition-id").Delete(context.Background(), nil)
 
 
 ```

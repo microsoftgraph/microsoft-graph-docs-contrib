@@ -10,15 +10,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "members/any"
 
-requestParameters := &graphconfig.ChatsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.UserItemChatsRequestBuilderGetQueryParameters{
 	Expand: [] string {"members"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ChatsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemChatsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.UsersById("user-id").Chats().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.UsersById("user-id").Chats().Get(context.Background(), configuration)
 
 
 ```

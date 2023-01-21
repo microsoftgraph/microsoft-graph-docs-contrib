@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.ContactsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeContactsRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","emailAddresses"},
 }
-configuration := &graphconfig.ContactsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Contacts().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
 
 
 ```

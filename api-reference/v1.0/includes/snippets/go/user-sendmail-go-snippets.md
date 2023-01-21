@@ -21,7 +21,7 @@ message.SetBody(body)
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "fannyd@contoso.onmicrosoft.com"
+address := "frannis@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
@@ -47,7 +47,7 @@ requestBody.SetMessage(message)
 saveToSentItems := false
 requestBody.SetSaveToSentItems(&saveToSentItems) 
 
-graphClient.Me().SendMail().Post(requestBody)
+graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

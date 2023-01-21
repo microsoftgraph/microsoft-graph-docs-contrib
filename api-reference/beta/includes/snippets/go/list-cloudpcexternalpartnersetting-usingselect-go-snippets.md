@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.ExternalPartnerSettingsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DeviceManagementVirtualEndpointExternalPartnerSettingsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","partnerId","enableConnection"},
 }
-configuration := &graphconfig.ExternalPartnerSettingsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceManagementVirtualEndpointExternalPartnerSettingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Get(context.Background(), configuration)
 
 
 ```

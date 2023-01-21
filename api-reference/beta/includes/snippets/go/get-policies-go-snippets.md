@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'"
 
-requestParameters := &graphconfig.PoliciesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityConditionalAccessPoliciesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.PoliciesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityConditionalAccessPoliciesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Get(context.Background(), configuration)
 
 
 ```

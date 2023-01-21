@@ -1,7 +1,7 @@
 ---
 title: "List androidStoreApps"
 description: "List properties and relationships of the androidStoreApp objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [androidStoreApp](../resources/intune-apps-androidstoreapp.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1319
+Content-Length: 1457
 
 {
   "value": [
@@ -94,6 +94,12 @@ Content-Length: 1319
         "v4_4": true,
         "v5_0": true,
         "v5_1": true,
+        "v6_0": true,
+        "v7_0": true,
+        "v7_1": true,
+        "v8_0": true,
+        "v8_1": true,
+        "v9_0": true,
         "v10_0": true,
         "v11_0": true
       }
@@ -101,8 +107,3 @@ Content-Length: 1319
   ]
 }
 ```
-
-
-
-
-

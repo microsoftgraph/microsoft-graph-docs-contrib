@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 isViewingBeforeAcceptanceRequired := true
 requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequired) 
 
-graphClient.IdentityGovernance().TermsOfUse().AgreementsById("agreement-id").Patch(requestBody)
+result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById("agreement-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

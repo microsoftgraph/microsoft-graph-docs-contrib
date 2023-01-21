@@ -1,7 +1,7 @@
 ---
 title: "microsoftTunnelConfiguration resource type"
 description: "Entity that represents a collection of Microsoft Tunnel settings"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -29,20 +29,22 @@ Entity that represents a collection of Microsoft Tunnel settings
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The MicrosoftTunnelConfiguration's Id|
-|displayName|String|The MicrosoftTunnelConfiguration's display name|
-|description|String|The MicrosoftTunnelConfiguration's description|
+|id|String|The unique identifier for the configuration id. Supports: $delete, $update. $Insert, $skip, $top is not supported. Read-only.|
+|displayName|String|The display name for the server configuration. This property is required when a server is created.|
+|description|String|The configuration's description (optional)|
 |network|String|The subnet that will be used to allocate virtual address for the clients|
 |dnsServers|String collection|The DNS servers that will be used by the clients|
 |defaultDomainSuffix|String|The Default Domain appendix that will be used by the clients|
-|routesInclude|String collection|The routs that will be routed by the server|
-|routesExclude|String collection|Subsets of the routes that will not be routed by the server|
+|routesInclude|String collection|The routes that will be routed by the server. This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.|
+|routesExclude|String collection|Subsets of the routes that will not be routed by the server. This property is going to be deprecated with the option of using the new property, 'RouteExcludes'.|
+|routeIncludes|String collection|The routes that will be routed by the server|
+|routeExcludes|String collection|Subsets of the routes that will not be routed by the server|
 |splitDNS|String collection|The domains that will be resolved using the provided dns servers|
 |listenPort|Int32|The port that both TCP and UPD will listen over on the server|
-|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
-|lastUpdateDateTime|DateTimeOffset|When the MicrosoftTunnelConfiguration was last updated|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
-|disableUdpConnections|Boolean|When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to tansfer data.|
+|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) collection|Additional settings that may be applied to the server|
+|lastUpdateDateTime|DateTimeOffset|When the configuration was last updated|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance|
+|disableUdpConnections|Boolean|When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to transfer data.|
 
 ## Relationships
 None
@@ -72,6 +74,12 @@ Here is a JSON representation of the resource.
   "routesExclude": [
     "String"
   ],
+  "routeIncludes": [
+    "String"
+  ],
+  "routeExcludes": [
+    "String"
+  ],
   "splitDNS": [
     "String"
   ],
@@ -90,9 +98,3 @@ Here is a JSON representation of the resource.
   "disableUdpConnections": true
 }
 ```
-
-
-
-
-
-

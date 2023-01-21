@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
 
 requestCount := true
 requestFilter := "startswith(displayName,%20'a')"
 
-requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DeviceItemTransitiveMemberOfMicrosoft.graph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	OrderBy: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceItemTransitiveMemberOfMicrosoft.graph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group().Get(context.Background(), configuration)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementConfigurationReferredSettingInformation resource type"
 description: "Referred setting information about reusable setting"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -38,9 +38,3 @@ Here is a JSON representation of the resource.
   "settingDefinitionId": "String"
 }
 ```
-
-
-
-
-
-

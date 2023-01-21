@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingEnrollmentTypeConstraint resource type"
 description: "Constraint that enforces the enrollment types applied to a setting"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -43,9 +43,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

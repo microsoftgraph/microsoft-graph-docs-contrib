@@ -1,7 +1,7 @@
 ---
 title: "List depMacOSEnrollmentProfiles"
 description: "List properties and relationships of the depMacOSEnrollmentProfile objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2226
+Content-Length: 2299
 
 {
   "value": [
@@ -92,6 +92,9 @@ Content-Length: 2226
       "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
       "configurationWebUrl": true,
+      "enabledSkipKeys": [
+        "Enabled Skip Keys value"
+      ],
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,
@@ -119,9 +122,3 @@ Content-Length: 2226
   ]
 }
 ```
-
-
-
-
-
-

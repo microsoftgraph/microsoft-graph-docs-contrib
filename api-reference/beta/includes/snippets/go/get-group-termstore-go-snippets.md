@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SiteItemTermStoreGroupItemRequestBuilderGetQueryParameters{
 	Select: [] string {"*","parentSiteId"},
 }
-configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SiteItemTermStoreGroupItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").TermStore().GroupsById("group-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.SitesById("site-id").TermStore().GroupsById("group-id").Get(context.Background(), configuration)
 
 
 ```

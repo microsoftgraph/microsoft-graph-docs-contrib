@@ -1,7 +1,7 @@
 ---
 title: "hardwareConfiguration resource type"
 description: "Intune will provide customer the ability to configure hardware/bios settings on the enrolled windows 10 Azure Active Directory joined devices."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -77,9 +77,3 @@ Here is a JSON representation of the resource.
   "perDevicePasswordDisabled": true
 }
 ```
-
-
-
-
-
-

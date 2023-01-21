@@ -1,7 +1,7 @@
 ---
 title: "settingSourceType enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -22,9 +22,3 @@ Not yet documented
 |:---|:---|:---|
 |deviceConfiguration|0|Not yet documented|
 |deviceIntent|1|Not yet documented|
-
-
-
-
-
-
