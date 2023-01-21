@@ -24302,6 +24302,8 @@ items:
           href: resources/plannerroster.md
         - name: Create roster
           href: api/planner-post-rosters.md
+        - name: Get roster
+          href: api/plannerroster-get.md
         - name: Delete roster
           href: api/plannerroster-delete.md
         - name: List roster's members
