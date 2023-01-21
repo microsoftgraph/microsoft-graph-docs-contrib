@@ -13,13 +13,15 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Industry data API is intended to be a multi-vertical, cross-industry platform. In the current release, it is highly tailored to the education industry, powering the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 from student information systems (SIS) / student management systems (SMS).
+The industry data API is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azue Data Lake data store, normalizes the data, and exports it in outbound flows. In the current release, the API is highly tailored to the education industry.
 
-Industry data provides resources that you can use to retrieve statistics, after the data is processed, and assist with monitoring and troubleshooting.
+The API provides resources that you can use to retrieve statistics after the data is processed, and assist with monitoring and troubleshooting.
 
-## Overview
+## Overview of application in education
 
-Industry data is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process combines and normalizes the imported data to land in the Azure Data Lake of the tenant.
+<!-- Industry data is an ETL (Extract-Transform-Load) engine. It can be visualized as a bow-tie represented by multiple incoming and outgoing flows. A single transformation process combines and normalizes the imported data to land in the Azure Data Lake of the tenant. -->
+
+In the current release, the industry data API is highly tailored to the education industry, powering the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data <!-- and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into the organization's Azure Data Lake. After normalizing the data in Azure Data Lake, it exports the data in multiple outbound flows, synchronizing data with [Education Insights](https://support.microsoft.com/en-us/topic/leader-s-guide-to-education-insights-premium-8738d1b1-4e1c-49bd-9e8d-b5292474c347) and [Education Data Lake Export](/SchoolDataSync/enable-education-data-lake-export).
 
 :::image type="content" source="../../../concepts/images/industrydata-overview.png" alt-text="Graphic that shows industryData overview." lightbox="../../../concepts/images/industrydata-overview.png":::
 
