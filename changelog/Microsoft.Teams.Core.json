@@ -5312,9 +5312,9 @@
       "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db8",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-08-23T08:14:02.5231411Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "CreatedDateTime": "2023-01-20T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     },
     {
       "ChangeList": [
