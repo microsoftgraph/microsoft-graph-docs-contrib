@@ -4,14 +4,6 @@
       "ChangeList": [
         {
           "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "ipSegmentConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [ipSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/ipSegmentConfiguration?view=graph-rest-beta) resource type.",
-          "Target": "ipSegmentConfiguration"
-        },
-        {
-          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
           "ApiChange": "Property",
           "ChangedApiName": "segmentsConfiguration",
           "ChangeType": "Addition",
@@ -49,14 +41,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [corsConfiguration_v2](https://learn.microsoft.com/en-us/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource",
           "Target": "corsConfiguration_v2"
-        },
-        {
-          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "ipApplicationSegment",
-          "ChangeType": "Addition",
-          "Description": "Added the [ipApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/ipApplicationSegment?view=graph-rest-beta) resource",
-          "Target": "ipApplicationSegment"
         },
         {
           "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
