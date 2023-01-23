@@ -188,6 +188,14 @@
           "Target": "customTaskExtensionOperationStatus"
         },
         {
+          "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the **Update** operation to the [task](https://learn.microsoft.com/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
+          "Target": "task"
+        },
+        {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtensionCallbackConfiguration",
