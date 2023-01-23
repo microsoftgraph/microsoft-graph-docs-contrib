@@ -3711,7 +3711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
-          "Description": "Removed DELETE /groups/{id}/channels/{id} , use DELETE /teams/{id}/channels/{id} instead.",
+          "Description": "Removed DELETE /groups/{id}/channels/{id}. Use DELETE /teams/{id}/channels/{id} instead.",
           "Target": ""
         },
         {
@@ -5289,6 +5289,32 @@
       "CreatedDateTime": "2022-04-26T00:34:47.4910041Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db8",
+          "ApiChange": "Method",
+          "ChangedApiName": "softDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [softDelete](https://learn.microsoft.com/en-us/graph/api/softDelete?view=graph-rest-1.0) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db8",
+          "ApiChange": "Method",
+          "ChangedApiName": "undoSoftDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [undoSoftDelete](https://learn.microsoft.com/en-us/graph/api/undoSoftDelete?view=graph-rest-1.0) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-20T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     },
     {
       "ChangeList": [
