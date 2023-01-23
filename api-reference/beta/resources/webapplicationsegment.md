@@ -33,7 +33,7 @@ Inherits from [applicationSegment](applicationsegment.md).
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.onPremisesApplicationSegment"
+  "@odata.type": "microsoft.graph.webApplicationSegment"
 }
 -->
 ``` json
