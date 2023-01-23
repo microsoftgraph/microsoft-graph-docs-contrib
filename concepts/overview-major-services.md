@@ -121,6 +121,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Education | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](education-concept-overview.md) |
+| Industry Data | Education        | Provides information relevant for education scenarios, including schools, classes, students, teachers, insights and analytics scenarios. Enables ISVs to build applications for the management and movement of Student Information System user and roster data.  | [Industry Data overview](industrydata-concept-overview.md) |
 
 ## Business applications
 
