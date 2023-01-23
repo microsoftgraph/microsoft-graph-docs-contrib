@@ -74,7 +74,7 @@ For the possible resource path values for each supported resource, see [Use the 
 | **presence**        | 60 minutes (1 hour) |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
-| **todoTask**              | 4230 minutes (under 3 days)    |
+| **todoTask**              | 4230 minutes (under 3 days)<br/><br/>**Note:** Webhooks for this resources are only available in the worldwide endpoint and no other national clouds.    |
 | **baseTask** (deprecated) | 4230 minutes (under 3 days)    |
 
 
