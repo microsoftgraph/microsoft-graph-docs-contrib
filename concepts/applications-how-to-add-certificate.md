@@ -65,8 +65,10 @@ To read the certificate's key using PowerShell, run the following request.
 
 The output that's saved in the *.txt* file can be similar to the following.
 
+> **Note:** The key shown here has been shortened for readability.
+
 ```powershell
-MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMjAeFw0yMzAxMTIwODExNTZaFw0yNDAxMTIwODMxNTZaMBMxETAPBgNVBAMMCDIwMjMwMTEyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseKf1weEacJ67D6/v2dC9+3ZKCWs6ptdElRkSsD6B2uR2eCye5gq7jqXZZEC6eizNio7ATsozpSm04YSgzmPgyItIkRWz6//S84WDfIKWeh06RvH8Bid9D1q1BiOiJcaFOB4aa5mNijqE0p3de93ZXTEAWpROWSCdlqp9iFiV7BGEVY/1yw7nhczRj1ytLgz7Bh4KAG5OF5QR684RQtegYNS21qBe/GPYaG6bcHZncA0rpqzX02dIJXSso30LDGTo7/JjA/OQraTa5IbF63rI4/7c2ZCaoJlkyaH6h8q+Vl5GvJwhjaCNk7QU2Z5DC8+jYnqinkU3MoX2RKgG9iyxQIDAQABo1AwTjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBTCTHKgygs8PRMZvOBxYslBbZzSTTANBgkqhkiG9w0BAQsFAAOCAQEAXIaTjjVmgfMCq0UEgN1xpYW5uRu+sypHYKujDUs7pOrqsxnhvxSIo4ZSb9/mmUM0YO/LNMB7gvtUCOJIPjflE3mKksueYnBt8o3d2vmZuEwGjG8vyJFlZ2vOPeeiO7GiBEBHASPnvsdvvA0kJgTQUl52jFRTKcKfkS7GX9qtsBU0Zu0w8zzz97SBvBuroiijvbgXWV13r/LSNyIUSkVYf0uJsogdpN9iK964m7LVkxl6SjeEIBDedG+7WMIBsIUy0xz6MmyvfSohz3oNP4jHt7pJ9TyxnvDlaxQPUbuIL+DaXVkKRm1V3GgIpKTBqMzTf4tCpy7rpUZbhcwAFw6h9A==
+MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMjAeFw0yMzAxMTIwODExNTZaFw0yNDAxMTIwODMxNTZaMBMxETAPBgNVBAMMCDIwMjMwMTEyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseKf1weEacJ67D6/...dG+7WMIBsIUy0xz6MmyvfSohz3oNP4jHt7pJ9TyxnvDlaxQPUbuIL+DaXVkKRm1V3GgIpKTBqMzTf4tCpy7rpUZbhcwAFw6h9A==
 ```
 
 ## Add the certificate details using Microsoft Graph
@@ -86,6 +88,8 @@ The following request adds the certificate details to an app. The settings are a
 
 The following example adds a new certificate and replaces any existing certificates.
 
+> **Note:** The key shown here has been shortened for readability.
+
 <!-- {
   "blockType": "request",
   "name": "applications_howto_add_certificate"
@@ -101,7 +105,7 @@ Content-type: application/json
             "startDateTime": "2023-01-12T15:31:26Z",
             "type": "AsymmetricX509Cert",
             "usage": "Verify",
-            "key": "MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMjAeFw0yMzAxMTIwODExNTZaFw0yNDAxMTIwODMxNTZaMBMxETAPBgNVBAMMCDIwMjMwMTEyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseKf1weEacJ67D6/v2dC9+3ZKCWs6ptdElRkSsD6B2uR2eCye5gq7jqXZZEC6eizNio7ATsozpSm04YSgzmPgyItIkRWz6//S84WDfIKWeh06RvH8Bid9D1q1BiOiJcaFOB4aa5mNijqE0p3de93ZXTEAWpROWSCdlqp9iFiV7BGEVY/1yw7nhczRj1ytLgz7Bh4KAG5OF5QR684RQtegYNS21qBe/GPYaG6bcHZncA0rpqzX02dIJXSso30LDGTo7/JjA/OQraTa5IbF63rI4/7c2ZCaoJlkyaH6h8q+Vl5GvJwhjaCNk7QU2Z5DC8+jYnqinkU3MoX2RKgG9iyxQIDAQABo1AwTjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBTCTHKgygs8PRMZvOBxYslBbZzSTTANBgkqhkiG9w0BAQsFAAOCAQEAXIaTjjVmgfMCq0UEgN1xpYW5uRu+sypHYKujDUs7pOrqsxnhvxSIo4ZSb9/mmUM0YO/LNMB7gvtUCOJIPjflE3mKksueYnBt8o3d2vmZuEwGjG8vyJFlZ2vOPeeiO7GiBEBHASPnvsdvvA0kJgTQUl52jFRTKcKfkS7GX9qtsBU0Zu0w8zzz97SBvBuroiijvbgXWV13r/LSNyIUSkVYf0uJsogdpN9iK964m7LVkxl6SjeEIBDedG+7WMIBsIUy0xz6MmyvfSohz3oNP4jHt7pJ9TyxnvDlaxQPUbuIL+DaXVkKRm1V3GgIpKTBqMzTf4tCpy7rpUZbhcwAFw6h9A==",
+            "key": "base64MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMjAeFw0yMzAxMTIwODExNTZaFw0yNDAxMTIwODMxNTZaMBMxETAPBgNVBAMMCDIwMjMwMTEyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseKf1weEacJ67D6/...laxQPUbuIL+DaXVkKRm1V3GgIpKTBqMzTf4tCpy7rpUZbhcwAFw6h9A==",
             "displayName": "CN=20230112"
         }
     ]
@@ -109,6 +113,8 @@ Content-type: application/json
 ```
 
 The following example adds a new certificate without replacing the existing certificate that's identified by thumbprint `52ED9B5038A47B9E2E2190715CC238359D4F8F73`.
+
+> **Note:** The key shown here has been shortened for readability.
 
 <!-- {
   "blockType": "request",
@@ -125,14 +131,14 @@ Content-type: application/json
             "startDateTime": "2023-01-12T09:31:26Z",
             "type": "AsymmetricX509Cert",
             "usage": "Verify",
-            "key": "MIIDADCCAeigAwIBAgIQejfrj3S974xI//npv7hFHTANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExNDAeFw0yMzAxMTIwOTA4NThaFw0yNDAxMTIwOTI4NThaMBMxETAPBgNVBAMMCDIwMjMwMTE0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt5vEj6j1l5wOVHR4eDGe77HWslaIVJ1NqxrXPmoF5z2kFZcy7cJy+/KkoK2cyVouSp9C2BYvbauebThyTDtwdTs3YXKFavL4gagV6XbdIev1/KW3eHU04JgHBE4q+v7rEcKGbHMITmmau3nfJh0ox9jdSnXRZOElblqzd8o0/MXBFKXf3X/wEGX3TJqruJEcO0EkpWuELiQ2DP45DxRMK/iAZmr9VK8GZcNcoOldYCm29XLgy2gBRCExRWPmeWg9FXWqU5eNLcJhNo4aYBlfoxK6oDkd8SLltUgeWE92X1H2b8/12nMSC3hdVCmEp/9SUfEFX9seBgW6vW89x9G+MQIDAQABo1AwTjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBTalZOgXzC2abRxVxlIZhuzogLWrDANBgkqhkiG9w0BAQsFAAOCAQEAe2+yNeGfr7f7OLGDx/5K1nda4xm9UEN1h9KarBtm1pPUQysGZgeLtCdBCo5hO49luGCPebTJS2f8n5+lMSWN2BmvHS6rj4s0/WbIRrAhu7L6+LF2DzSGBCQdOf1msZXeNi81J+qolEBYgRHBxdNpcGsY4PnmRdSHSLjMXCGOt70JRV3OMqsH+8cd+qEXmWl4+cgi+it3Wbp1OnuXPA10imutONWnwCVg6EAxnZdAxPrGRfJoYK+qDqTBYiMkrpcWszR8p+R+U7sboj+kUvmFzXI+Ge73Liu8egL2NzOHHpO43calWgq36a9YW1yhBQR1ioEchu6jmudW3rF6ktmVqQ==",
+            "key": "base64MIIDADCCAeigAwIBAgIQejfrj3S974xI//npv7hFHTANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExNDAeFw0yMzAxMTIwOTA4NThaFw0yNDAxMTIwOTI4NThaMBMxETAPBgNVBAMMCDIwMjMwMTE0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt5vEj6j1l5wOVHR4eDGe77HWslaIVJ1NqxrXPm/...+R+U7sboj+kUvmFzXI+Ge73Liu8egL2NzOHHpO43calWgq36a9YW1yhBQR1ioEchu6jmudW3rF6ktmVqQ==",
             "displayName": "CN=20230114"
         },
         {
             "customKeyIdentifier": "52ED9B5038A47B9E2E2190715CC238359D4F8F73",
             "type": "AsymmetricX509Cert",
             "usage": "Verify",
-            "key": "MIIDADCCAeigAwIBAgIQfoIvchhpToxKEPI4iMrU1TANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMzAeFw0yMzAxMTIwODI3NTJaFw0yNDAxMTIwODQ3NTJaMBMxETAPBgNVBAMMCDIwMjMwMTEzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw+iqg1nMjYmFcFJh/yEFdfwQHumc9RQj1bXlp5Wea5wdQGBw0SjHJ06ldLnZ/NBdBAy59XmpQeEmKUp4YIs8CXmv3JzYzZkiskXyPbI8rMI28v4EWFCloV3v1cClIuKLlf5+Nh6kcuJ6SkW7CR0Ax6VC6VHpFWnEAjO06m1hTC1fQaGVMq9Y4UcN+SdxaPNlysln73AeCttfuSgNUNTXgqAtKY38qNt8RjIuReJHh7Mt1GeQ2bjzabMBVwGSCkOFo4aMWX9/Lun0mZs8rG9k5bGvN6UXPpHXFuGiXQyfPQhG7stQ8mAlGhSy9noy75KZ7kjx/VXQrtrufGJ6X+Y+zQIDAQABo1AwTjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBSTepbcvleV8j4M8uHLDxxlv/7RODANBgkqhkiG9w0BAQsFAAOCAQEAWU0mAt+ded58CFVlzEe9Ed/BYl7H3PyaWULF2bp76rmEO7xxx5zjayuRtf91Z3jtT2GhDR+t/LNcW+Y6RKp/1Vga6dPqplPusRKbIJUF2nuzLADmgAlw9anpRn/TyMIuazfZi7BuNrztTujVoProJDqBJ9DSEpDziYwaAIBPbKPiqKXcxW9/VZ8QnDreN900nVBOa9IruOvyLo69gHED6MTpUH4CXAqIhImaPzy0L8Pl85K93okI5UOlipd53Evzzp0WR6VyN1xhovGjFblu37zwYNEsoW9KE6w9s5UcPABmfeJ9s8aXOelINAMt6z/S5X6qoEOyJBgtfpSBANWAdA==",
+            "key": "base64MIIDADCCAeigAwIBAgIQfoIvchhpToxKEPI4iMrU1TANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMzAeFw0yMzAxMTIwODI3NTJaFw0yNDAxMTIwODQ3NTJaMBMxETAPBgNVBAMMCDIwMjMwMTEzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw+iqg1nMjYmFcFJh/.../S5X6qoEOyJBgtfpSBANWAdA==",
             "displayName": "CN=20230113"
         }
     ]
