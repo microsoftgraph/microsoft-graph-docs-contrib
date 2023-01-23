@@ -449,7 +449,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharepoint,sites,fieldDefinition,columnDefinition,siteCollectionId,siteId,site,sharepointIds,listItemId,listItem,sharepointIds,columnSet,listItem,fields,site",
           "ChangeType": "Change",
-          "Description": "Removed the **sharepoint** navigation properties. Sites are now accessed directly through the **sites** navigation property. ,  Removed the **fieldDefinition** resource. It has been replaced by **columnDefinition**. ,  Removed the **siteCollectionId** and **siteId** properties from **site**. Use **sharepointIds** instead. ,  Removed the **listItemId** property from **listItem**. Use **sharepointIds** instead. ,  Renamed the **columnSet** property on **listItem** to **fields**. ,  Changed **site** resources to use the SharePoint hostname as part of their ID.",
+          "Description": "Removed the **sharepoint** navigation properties. Sites are now accessed directly through the **sites** navigation property.  Removed the **fieldDefinition** resource. It has been replaced by **columnDefinition**. Removed the **siteCollectionId** and **siteId** properties from **site**. Use **sharepointIds** instead. Removed the **listItemId** property from **listItem**. Use **sharepointIds** instead. Renamed the **columnSet** property on **listItem** to **fields**. Changed **site** resources to use the SharePoint hostname as part of their ID.",
           "Target": ""
         },
         {
@@ -457,7 +457,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "booleanColumn,calculatedColumn,choiceColumn,dateTimeColumn,lookupColumn,numberColumn,personOrGroupColumn,textColumn,displayName,site,columns,site,list,listItem,sharedDriveItem,sharepointIds,list,listItem,site,columnDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the **booleanColumn**, **calculatedColumn**, **choiceColumn**, **dateTimeColumn**, **lookupColumn**, **numberColumn**, **personOrGroupColumn**, and **textColumn** resource types. ,  Added the **displayName** property to **site**. ,  Added the **columns** navigation property to **site**. ,  Added the **list** and **listItem** navigation properties to **sharedDriveItem**. ,  Added the **sharepointIds** property to **list** and **listItem**, and **site**. ,  Added the **columnDefinition** resource type.",
+          "Description": "Added the **booleanColumn**, **calculatedColumn**, **choiceColumn**, **dateTimeColumn**, **lookupColumn**, **numberColumn**, **personOrGroupColumn**, and **textColumn** resource types. Added the **displayName** property to **site**. Added the **columns** navigation property to **site**. Added the **list** and **listItem** navigation properties to **sharedDriveItem**. Added the **sharepointIds** property to **list** and **listItem**, and **site**. Added the **columnDefinition** resource type.",
           "Target": ""
         }
       ],

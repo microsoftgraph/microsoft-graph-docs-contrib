@@ -20,7 +20,7 @@ var message = new Message
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "fannyd@contoso.onmicrosoft.com"
+				Address = "frannis@contoso.onmicrosoft.com"
 			}
 		}
 	},

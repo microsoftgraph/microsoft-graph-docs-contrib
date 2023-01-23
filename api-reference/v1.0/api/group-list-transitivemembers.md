@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of the group's members. A group can have users, devices, organizational contacts, and other groups as members. This operation is transitive and returns a flat list of all nested members.
+Get a list of the group's members. A group can different object types as members. For more information about supported member types for different groups, see [Group membership](../resources/groups-overview.md#group-membership).
+
+This operation is transitive and returns a flat list of all nested members. An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the `Request_UnsupportedQuery` code.
 
 ## Permissions
 
@@ -57,6 +59,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+
+ An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the `Request_UnsupportedQuery` code. For example, `/groups/{id}}/transitiveMembers/microsoft.graph.group` when the group is a Microsoft 365 group will return this error, because Microsoft 365 groups cannot have other groups as members.
 
 ## Examples
 
@@ -137,8 +141,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "ignored",
   "name": "get_group_transitivemembers_count"
@@ -149,28 +151,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers/$count
 ConsistencyLevel: eventual
 ```
 
-# [C#](#tab/csharp)
-
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-transitivemembers-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-transitivemembers-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sample-code](../includes/snippets/objc/get-group-transitivemembers-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-
-[!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivemembers-count-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 The following is an example of the response.
@@ -180,7 +160,6 @@ The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "applications"
 zone_pivot_groups: grant-api-permissions
 ms.custom: template-how-to
+ms.date: 12/09/2022
 ---
 
 # Grant or revoke API permissions programmatically
