@@ -94,14 +94,6 @@
         {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
           "ApiChange": "Resource",
-          "ChangedApiName": "usersProcessingSummary",
-          "ChangeType": "Addition",
-          "Description": "Added the [usersProcessingSummary](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-usersProcessingSummary?view=graph-rest-beta) resource and its associated methods.",
-          "Target": "usersProcessingSummary"
-        },
-        {
-          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
-          "ApiChange": "Resource",
           "ChangedApiName": "run",
           "ChangeType": "Addition",
           "Description": "Added the [run](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-run?view=graph-rest-beta) resource and its associated methods.",
