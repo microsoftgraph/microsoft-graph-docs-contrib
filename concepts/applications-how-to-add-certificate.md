@@ -5,7 +5,7 @@ author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
-ms.date: 12/21/2022
+ms.date: 01/24/2022
 ---
 
 # Add a certificate to an app using Microsoft Graph
