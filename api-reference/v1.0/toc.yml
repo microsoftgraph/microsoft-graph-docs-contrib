@@ -7602,6 +7602,10 @@ items:
             href: api/sharedwithchannelteaminfo-delete.md
           - name: List allowed members
             href: api/sharedwithchannelteaminfo-list-allowedmembers.md
+          - name: Delete message
+            href: api/chatmessage-softdelete.md
+          - name: Undo message deletion
+            href: api/chatmessage-undosoftdelete.md
         - name: Chat
           href: resources/chat.md
           items:
@@ -7664,6 +7668,10 @@ items:
             href: api/chatmessage-post-replies.md
           - name: Update message
             href: api/chatmessage-update.md
+          - name: Delete message
+            href: api/chatmessage-softdelete.md
+          - name: Undo message deletion
+            href: api/chatmessage-undosoftdelete.md
           - name: List hosted content
             href: api/chatmessage-list-hostedcontents.md
           - name: Get messages across all channels
