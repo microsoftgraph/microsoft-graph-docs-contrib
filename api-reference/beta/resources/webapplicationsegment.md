@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [webApplicationSegment](webApplicationSegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.
+Represents a [webApplicationSegment](webapplicationsegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.
 
-Inherits from [applicationSegment](applicationSegment.md).
+Inherits from [applicationSegment](applicationsegment.md).
 
 ## Properties
 
