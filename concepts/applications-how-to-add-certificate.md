@@ -10,7 +10,7 @@ ms.date: 01/24/2022
 
 # Add a certificate to an app using Microsoft Graph
 
-Azure Active Directory (Azure AD) supports three types of credentials to authenticate apps and service principals: *passwords* (app secret), *certificates*, and *federated identity credentials*. If you can't use federated identity credentials for your app, we strongly recommend that you use certificates instead of secrets.
+Azure Active Directory (Azure AD) supports three types of credentials to authenticate apps and service principals: *passwords* (app secrets), *certificates*, and *federated identity credentials*. If you can't use federated identity credentials for your app, we strongly recommend that you use certificates instead of secrets.
 
 You can [add or remove certificates using the Azure portal](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). However, in automation scenarios, you may need to automate the certificate rollover for your app or service principal. 
 
@@ -29,11 +29,11 @@ To complete this tutorial, you need the following resources and privileges:
 
 ## Read the certificate details
 
-To add a certificate programmatically using Microsoft Graph, you need the certificate's key. You can optionally add the certificate thumbprint.
+To add a certificate programmatically using Microsoft Graph, you need the certificate's key. You can optionally add the certificate's thumbprint.
 
 ### [Optional] Get the certificate thumbprint
 
-It isn't required to add the certificate thumprint to the request payload. If you want to add the thumbprint, you can run the following PowerShell request to read the certificate thumbprint. This request assumes that you generated and exported the certificate to your local drive.
+It isn't required to add the certificate thumbprint to the request payload. If you want to add the thumbprint, you can run the following PowerShell request to read the certificate's thumbprint. This request assumes that you generated and exported the certificate to your local drive.
 
 #### Request
 
@@ -81,7 +81,7 @@ The following request adds the certificate details to an app. The settings are a
 - The **endDateTime** can be a maximum of one year from the **startDateTime**. If unspecified, the system will automatically assign a date one year after the startDateTime.
 - The **type** and **usage** must be `AsymmetricX509Cert` and `Verify` respectively.
 - Assign the certificate subject name to the **displayName** property.
-- The **key** is the Base64 encoded calue that you generated in the previous step.
+- The **key** is the Base64 encoded value that you generated in the previous step.
 
 > [!NOTE]
 > If your app has an existing valid certificate that you want to continue using for authentication, include both the current and new certificate details in the app's **keyCredentials** object. Since this a PATCH call which by protocol replaces the contents of the property with the new values, including only the new certificate will replace the existing certificates with the new one.
