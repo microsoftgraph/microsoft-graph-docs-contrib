@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 Represents a [webSegmentConfiguration](websegmentconfiguration.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.
 
-Inherits from [segmentsConfiguration](segmentsconfiguration.md).
+Inherits from [segmentsConfiguration](segmentconfiguration.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|applicationSegments|[webApplicationSegment](webApplicationSegment.md) collection|Represents a [webApplicationSegment](webApplicationSegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.|
+|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|Represents a [webApplicationSegment](webapplicationsegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.|
 
 
 ## JSON representation
