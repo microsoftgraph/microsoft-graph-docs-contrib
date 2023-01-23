@@ -2,6 +2,7 @@
 title: "Configure required Azure AD Graph permissions for an app registration"
 description: "Before Azure AD Graph is retired, you can use these options to configure required permissions for your app registration."
 author: "FaithOmbongi"
+ms.reviewer: "dkershaw"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022

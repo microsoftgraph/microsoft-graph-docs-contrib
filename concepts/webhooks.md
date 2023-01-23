@@ -1,7 +1,8 @@
 ---
 title: "Set up notifications for changes in resource data"
 description: "Microsoft Graph APIs use a webhook mechanism to deliver change notifications to clients. Client apps use change notifications to update their state upon changes."
-author: "jumasure"
+author: "FaithOmbongi
+ms.reviewer: "jumasure"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20

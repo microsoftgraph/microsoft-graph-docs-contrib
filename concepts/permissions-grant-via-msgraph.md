@@ -1,7 +1,8 @@
 ---
 title: "Grant or revoke API permissions programmatically"
 description: "Learn how to use Microsoft Graph to programmatically grant and revoke delegated and application API permissions for an app. This method is an alternative to interactive admin consent."
-author: "psignoret"
+author: "FaithOmbongi"
+ms.reviewer: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "applications"
 zone_pivot_groups: grant-api-permissions

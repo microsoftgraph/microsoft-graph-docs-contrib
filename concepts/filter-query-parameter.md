@@ -1,7 +1,8 @@
 ---
 title: "Use the $filter query parameter to filter a collection of objects"
 description: "Learn how to use the $filter OData query parameter and its operators against different types of properties in Microsoft Graph."
-author: "FaithOmbongi"
+author: "FaithOmbongi
+ms.reviewer: "Luca.Spolidoro"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 12/08/2022
