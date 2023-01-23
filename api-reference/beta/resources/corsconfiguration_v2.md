@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the CORS settings for the [webApplicationSegment](webApplicationSegment.md) resource when publishing an on-premises application through Azure AD Application Proxy. For more information, see [Understand and solve Azure Active Directory Application Proxy CORS issues](/azure/active-directory/app-proxy/application-proxy-understand-cors-issues).
+Represents the CORS settings for the [webApplicationSegment](webapplicationaegment.md) resource when publishing an on-premises application through Azure AD Application Proxy. For more information, see [Understand and solve Azure Active Directory Application Proxy CORS issues](/azure/active-directory/app-proxy/application-proxy-understand-cors-issues).
 
 
 ## Properties
