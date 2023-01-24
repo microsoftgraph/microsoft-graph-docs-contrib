@@ -7,7 +7,7 @@ ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Create yearTimePeriodDefinition
+# Delete yearTimePeriodDefinition
 
 Namespace: microsoft.graph.industryData
 

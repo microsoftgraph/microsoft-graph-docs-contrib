@@ -26,10 +26,10 @@ Inherits from [validateOperation](industrydata-validateoperation.md).
 ## Properties
 
 | Property           | Type                                                     | Description                                                                                                                          |
-|--:-----------------|--:-------------------------------------------------------|--:-----------------------------------------------------------------------------------------------------------------------------------|
+|--------------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset                                           | The date and time when this operation was created.                                                                                   |
 | errors             | [microsoft.graph.publicError](publicerror.md) collection | Set of errors discovered through validation.                                                                                         |
-| lastActionDateTime | DateTimeOffset                                           | The date and time when the last action was run on this operation.                                                              |
+| lastActionDateTime | DateTimeOffset                                           | The date and time when the last action was run on this operation.                                                                    |
 | resourceLocation   | String                                                   | The canonical URL of the resource.                                                                                                   |
 | status             | longRunningOperationStatus                               | The status of the long-running operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
 | statusDetail       | String                                                   | The detail about the status value.                                                                                                   |

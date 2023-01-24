@@ -19,7 +19,7 @@ The API provides resources that you can use to retrieve statistics after the dat
 
 ## Overview of application in education
 
-In the current release, the industry data API is highly tailored to the education industry, powering the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data <!-- and synchronizing organizations, users and users associations, and groups with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into the organization's Azure Data Lake. After normalizing the data in Azure Data Lake, it exports the data in multiple outbound flows, synchronizing data with [Education Insights](https://support.microsoft.com/en-us/topic/leader-s-guide-to-education-insights-premium-8738d1b1-4e1c-49bd-9e8d-b5292474c347) and [Education Data Lake Export](/SchoolDataSync/enable-education-data-lake-export).
+In the current release, the industry data API is highly tailored to the education industry, powering the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into the organization's Azure Data Lake. After normalizing the data in Azure Data Lake, it utilizes the data in multiple outbound flows, synchronizing data with [Insights for Education Leaders](https://support.microsoft.com/topic/leader-s-guide-to-education-insights-premium-8738d1b1-4e1c-49bd-9e8d-b5292474c347) and [Education Data Lake Export](/SchoolDataSync/enable-education-data-lake-export) for custom analtyics scenarios.
 
 :::image type="content" source="../../../concepts/images/industrydata-overview.png" alt-text="Graphic that shows industryData overview." lightbox="../../../concepts/images/industrydata-overview.png":::
 
@@ -48,13 +48,13 @@ For the data that passed validation, the process uses the configured **yearTimeP
 At the end of each run, **industryDataRunStatistics** are available to determine data health.
 
 - Error and warnings related to **industryDataRunStatistics** will be produced to help provide an initial understanding of data health.
-<!-- - When investigating data health, _industryData_ provides ability to download a log file that contains information based on the errors and warnings found to begin the data investigation process to correct the data in the source system.
+- When investigating data health, _industryData_ provides ability to download a log file that contains information based on the errors and warnings found to begin the data investigation process to correct the data in the source system.
 
-After investigating and addressing any data errors and/or warnings, or are comfortable with the current state of the data health, then you can enable the scenarios with the data that is now in the Education data lake. When enabling a scenario to use this data, the scenario will create an outbound flow. Outbound flows are defined by Microsoft 365 provisioning, Insights & Analytics.
+After investigating and addressing any data errors and/or warnings, or are comfortable with the current state of the data health, then you can enable the scenarios with the data that is now in the Education data lake. When enabling a scenario to use this data, the scenario will create an outbound flow. <!-- Outbound flows are defined by Microsoft 365 provisioning, Insights & Analytics. -->
 
-Microsoft 365 Provisioning outbound flows help with simplifying management of users and classes. Only active and matched users are included in the data that will be used to write the link to the AAD user object between the SIS/ SMS and their sections for groups and Teams classrooms.
+<!-- Microsoft 365 Provisioning outbound flows help with simplifying management of users and classes. Only active and matched users are included in the data that will be used to write the link to the AAD user object between the SIS/ SMS and their sections for groups and Teams classrooms. -->
 
-Insights & Analytics help provide analysis for student progress and activity within their classes. Guided by this data, educators have the information they need to ensure that their students' emotional, social, and academic needs are being met. -->
+Insights & Analytics help provide analysis for student progress and activity within their classes. Guided by this data, educators have the information they need to ensure that their students' emotional, social, and academic needs are being met.
 
 For more information, see the sections School Data Sync, SDS prerequisites, and SDS core concepts of the [School Data Sync Overview](/schooldatasync/school-data-sync-overview.md) on the platform and architecture.
 
@@ -133,8 +133,8 @@ An [industryDataConnector](industrydata-industrydataconnector.md) acts as a brid
 
 For more information:
 
-- [Data Ingestion with SDS v2.1 CSV](schooldatasync/Data-Ingestion-with-SDS-v2.1-CSV.md)
-- [SDS V2.1 CSV file format](schooldatasync/sds-v2.1-csv-file-format.md):
+- [Data Ingestion with SDS v2.1 CSV](https://learn.microsoft.com/schooldatasync/data-ingestion-with-sds-v2.1-csv)
+- [SDS V2.1 CSV file format](https://learn.microsoft.com/schooldatasync/sds-v2.1-csv-file-format):
   - File names and column headers are case-sensitive.
   - CSV files must be in UTF-8 format.
   - No line breaks in incoming data.
@@ -155,6 +155,6 @@ Once all CSV data has been successfully uploaded, the data must be validated bef
 
 The **validate** action is a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). A link to the **fileValidateOperation** is returned in the `Location` header of the **validate** response. The **fileValidateOperation** provides the current status and final validation results.
 
-
 ## See also
+
 [Overview of the industry data API in Microsoft Graph](/graph/industrydata-concept-overview)

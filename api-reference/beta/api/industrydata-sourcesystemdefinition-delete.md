@@ -7,7 +7,7 @@ ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Create sourceSystemDefinition
+# Delete sourceSystemDefinition
 
 Namespace: microsoft.graph.industryData
 
