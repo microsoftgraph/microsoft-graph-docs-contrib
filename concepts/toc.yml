@@ -117,6 +117,9 @@ items:
           - name: Grant or revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
+          - name: Add a certificate to an app
+            displayName: app-only authentication
+            href: applications-how-to-add-certificate.md
           - name: Automate SAML-based SSO configuration
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
