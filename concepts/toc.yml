@@ -412,27 +412,8 @@ items:
                   - name: Assign Azure AD roles with PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
-      - name: Industry Data
-        items:
-          - name: Overview
-            href: industrydata-concept-overview.md
-            displayName: industry data
-          - name: Set up an EDU development environment
-            items:
-              - name: Overview
-                href: msgraph-onboarding-overview.md
-              - name: Join the Microsoft Partner Network
-                href: msgraph-onboarding-mpn.md
-              - name: Set up an EDU dev tenant
-                href: msgraph-onboarding-devtenant.md
-              - name: Set up an EDU demo tenant
-                href: msgraph-onboarding-edutenant.md
-              - name: Set up School Data Sync
-                href: https://sds.microsoft.com
-              - name: Set up Microsoft Teams
-                href: msgraph-onboarding-msteams.md
-              - name: Use Graph Explorer with industry data APIs
-                href: msgraph-onboarding-graphexplorer.md   
+      - name: Industry data ETL (preview)
+        href: industrydata-concept-overview.md
       - name: Mail
         items:
           - name: Overview
