@@ -13,7 +13,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the user resources for which a workflow has run, or will run, for.
+Lists the user who are currently filling the execution conditions of a [workflow](../resources/identitygovernance-workflow.md). Users who initially fall under the scope of the execution conditions, but are updated to no longer meet the conditions after it's scheduled to run, will remain on the list for a short period of time before being removed. If the execution scope is changed, users who initially met the conditions of the workflow but no longer do so will be cleared from the list after a short period of time, and new users who meet the conditions for the workflow will be listed.
+
+This API call requires scheduling to be enabled for the workflow. For information on this property, see: [Workflow Properties](../resources/identitygovernance-workflow.md#properties).
 
 ## Permissions
 
@@ -21,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All, User.ReadBasic.All|
+|Delegated (work or school account)|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All and User.ReadBasic.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All, User.Read.All|
+|Application|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All and User.Read.All|
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -94,11 +96,100 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users",
     "value": [
         {
-            "displayName": "Chris Andersen",
-            "givenName": "Chris",
+            "id": "6bb70a30-124a-4666-b9b8-6ae178d4f791",
+            "deletedDateTime": null,
+            "accountEnabled": true,
+            "ageGroup": null,
+            "businessPhones": [],
+            "city": null,
+            "createdDateTime": "2023-01-10T19:23:04Z",
+            "creationType": null,
+            "companyName": "W325Q",
+            "consentProvidedForMinor": null,
+            "country": null,
+            "department": "Marketing",
+            "displayName": "Leopold Butters Scotch",
+            "employeeId": null,
+            "employeeHireDate": "2023-01-10T05:00:00Z",
+            "employeeLeaveDateTime": null,
+            "employeeType": null,
+            "faxNumber": null,
+            "givenName": "Butters",
+            "imAddresses": [],
+            "infoCatalogs": [],
+            "isManagementRestricted": null,
+            "isResourceAccount": null,
+            "jobTitle": "Marketing Analyst",
+            "legalAgeGroupClassification": null,
             "mail": null,
-            "surname": "Andersen",
-            "userPrincipalName": "ChrisAndersen@w325q.onmicrosoft.com",
+            "mailNickname": "ButtersScotch",
+            "mobilePhone": null,
+            "onPremisesDistinguishedName": null,
+            "officeLocation": null,
+            "onPremisesDomainName": null,
+            "onPremisesImmutableId": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSamAccountName": null,
+            "onPremisesSyncEnabled": null,
+            "onPremisesUserPrincipalName": null,
+            "otherMails": [],
+            "passwordPolicies": null,
+            "postalCode": null,
+            "preferredDataLocation": null,
+            "preferredLanguage": null,
+            "proxyAddresses": [],
+            "refreshTokensValidFromDateTime": "2023-01-10T19:23:04Z",
+            "securityIdentifier": "S-1-12-1-1807157808-1181094474-3781867705-2448938104",
+            "showInAddressList": null,
+            "signInSessionsValidFromDateTime": "2023-01-10T19:23:04Z",
+            "state": null,
+            "streetAddress": null,
+            "surname": "Scotch",
+            "usageLocation": null,
+            "userPrincipalName": "ButtersScotch@w325q.onmicrosoft.com",
+            "externalUserConvertedOn": null,
+            "externalUserState": null,
+            "externalUserStateChangeDateTime": null,
+            "userType": "Member",
+            "employeeOrgData": null,
+            "assignedLicenses": [],
+            "assignedPlans": [],
+            "authorizationInfo": {
+                "certificateUserIds": []
+            },
+            "deviceKeys": [],
+            "identities": [
+                {
+                    "signInType": "userPrincipalName",
+                    "issuer": "w325q.onmicrosoft.com",
+                    "issuerAssignedId": "ButtersScotch@w325q.onmicrosoft.com"
+                }
+            ],
+            "onPremisesExtensionAttributes": {
+                "extensionAttribute1": null,
+                "extensionAttribute2": null,
+                "extensionAttribute3": null,
+                "extensionAttribute4": null,
+                "extensionAttribute5": null,
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": null,
+                "extensionAttribute11": null,
+                "extensionAttribute12": null,
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            },
+            "onPremisesProvisioningErrors": [],
+            "passwordProfile": {
+                "password": null,
+                "forceChangePasswordNextSignIn": true,
+                "forceChangePasswordNextSignInWithMfa": false
+            },
+            "provisionedPlans": []
         }
     ]
 }
