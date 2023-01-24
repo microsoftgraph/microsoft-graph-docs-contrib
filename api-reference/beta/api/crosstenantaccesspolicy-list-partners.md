@@ -1,6 +1,6 @@
 ---
 title: "List partners"
-description: "Get a list of all partner configurations within a cross-tenant access policy. List the user synchronization policy for all partner configurations."
+description: "Get a list of all partner configurations within a cross-tenant access policy. You can also use the $expand parameter to list the user synchronization policy for all partner configurations."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all partner configurations within a cross-tenant access policy. List the user synchronization policy for all partner configurations.
+Get a list of all partner configurations within a cross-tenant access policy. You can also use the `$expand` parameter to list the user synchronization policy for all partner configurations.
 
 ## Permissions
 
