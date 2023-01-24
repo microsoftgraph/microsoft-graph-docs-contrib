@@ -5,11 +5,12 @@ summary: Learn how to authenticate and work with permissions to securely access 
 
 metadata: 
   ms.topic: landing-page
-  ms.date: 05/07/2020
-  author: CelesteDG
+  ms.date: 12/08/2022
+  author: FaithOmbongi
   services: active-directory
   ms.service: active-directory
   ms.workload: identity
+  ms.author: ombongifaith
   ms.reviewer: jawoods  
   ms.custom: graphiamtop20   
 
