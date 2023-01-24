@@ -677,7 +677,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isCollapsed",
           "ChangeType": "Addition",
-          "Description": "Added the `isCollapsed` property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-beta) resource.",
+          "Description": "Added the **isCollapsed** property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-beta) resource.",
           "Target": "searchHit"
         }
       ],
