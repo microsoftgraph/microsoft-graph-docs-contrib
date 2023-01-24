@@ -2,6 +2,7 @@
 title: "Get change notifications delivered in different ways"
 description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
 author: "FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: "jumasure"
 ms.prod: "change-notifications"
 ms.localizationpriority: high

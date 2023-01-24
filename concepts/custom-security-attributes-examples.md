@@ -2,6 +2,7 @@
 title: "Assign, update, or remove custom security attributes (preview)"
 description: "Learn how to assign, update, or remove custom security attributes for users and applications (service principals) using the Microsoft Graph API."
 author: "rolyon"
+ms.author: Robert.Lyon
 ms.reviewer: Robert.Lyon
 ms.localizationpriority: medium
 ms.topic: how-to

@@ -2,6 +2,7 @@
 title: "Advanced query capabilities on Azure AD directory objects"
 description: "Azure AD directory objects support advanced query capabilities to efficiently access data."
 author: "FaithOmbongi"
+ms.author: ombongifaith
 ms.reviewer: "Luca.Spolidoro"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started

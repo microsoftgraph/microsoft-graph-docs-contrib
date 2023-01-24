@@ -2,6 +2,7 @@
 title: "Add custom data to groups using schema extensions"
 description: "Follow the steps in this example to register a schema extension definition, create a group with extended data, and update custom data in an existing group."
 author: "FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: "dkershaw"
 ms.prod: "extensions"
 ms.localizationpriority: high

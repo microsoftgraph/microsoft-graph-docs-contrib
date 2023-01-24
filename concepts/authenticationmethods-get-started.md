@@ -2,6 +2,7 @@
 title: "Get started with the Microsoft Graph authentication methods API"
 description: "Learn how to manage your users' authentication methods and get users registered to do multi-factor authentication (MFA) and self-service password reset (SSPR)."
 author: "FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: "mmcla"
 ms.localizationpriority: high
 ms.prod: "identity-and-sign-in"

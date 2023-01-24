@@ -2,6 +2,7 @@
 title: "Overview of Microsoft Graph permissions"
 description: "Microsoft Graph exposes granular permissions that help you control the access that apps have to Microsoft Graph resources, like users, groups, and mail. Learn more about working with Microsoft Graph permissions to allow your app to access your data securely."
 author: "FaithOmbongi"
+ms.author: ombongifaith
 ms.reviewer: "jackson-woods"
 ms.localizationpriority: high
 ms.prod: "applications"

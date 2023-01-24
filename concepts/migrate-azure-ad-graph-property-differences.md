@@ -2,6 +2,7 @@
 title: "Property differences between Azure AD Graph and Microsoft Graph"
 description: "Describes property differences between Azure AD Graph resources (entities) and Microsoft Graph, in order to help migrate apps accordingly."
 author: "FaithOmbongi"
+ms.author: ombongifaith
 ms.reviewer: "dkershaw"
 ms.localizationpriority: medium
 ms.prod: "applications"

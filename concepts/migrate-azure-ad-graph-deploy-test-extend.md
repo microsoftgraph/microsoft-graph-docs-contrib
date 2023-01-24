@@ -2,6 +2,7 @@
 title: "Deploy, test, and extend migrated apps"
 description: "Describes how to migrate Azure Active Directory (Azure AD) Graph apps to use the Microsoft Graph API (REST); this discusses step 3: deploy, test, and extend."
 author: "FaithOmbongi"
+ms.author: ombongifaith
 ms.reviewer: "dkershaw"
 ms.localizationpriority: medium
 ms.prod: "applications"

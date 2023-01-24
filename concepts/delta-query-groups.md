@@ -2,6 +2,7 @@
 title: "Get incremental changes for groups"
 description: "Use delta query to discover changes without fetching the entire set of groups to compare changes. Example shows a series of requests to track changes to groups."
 author: "FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
