@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ed1e8b28-8fc9-4e8d-b90b-322b07ad18dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "ed1e8b28-8fc9-4e8d-b90b-322b07ad18dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-16T00:21:48.2950259Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
           "ApiChange": "Resource",
           "ChangedApiName": "printerShareViewpoint",
