@@ -18,7 +18,7 @@ Represents a collection of allowed resource actions and the conditions that must
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |allowedResourceActions|String collection| Set of tasks that can be performed on a resource. Required. |
-|condition|String| Optional constraints that must be met for the permission to be effective. |
+|condition|String| Optional constraints that must be met for the permission to be effective. Not supported for custom roles.|
 |excludedResourceActions|String collection| Set of tasks that may not be performed on a resource. Not yet supported. |
 
 ### allowedResourceActions property
@@ -64,6 +64,8 @@ The following is an example of a role permission with a condition that the princ
     ]
 
 ```
+
+Conditions aren't supported for custom roles.
 
 ## JSON representation
 

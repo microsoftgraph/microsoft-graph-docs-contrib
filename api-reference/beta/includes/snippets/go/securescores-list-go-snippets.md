@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(1)
 
-requestParameters := &graphconfig.SecureScoresRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SecuritySecureScoresRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.SecureScoresRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SecuritySecureScoresRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

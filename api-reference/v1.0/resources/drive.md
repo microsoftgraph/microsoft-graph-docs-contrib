@@ -58,9 +58,9 @@ Users without a OneDrive license may not have a default drive available.
 | bundles      | [driveItem][] collection             | Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
 | following    | [driveItem][] collection             | The list of items the user is following. Only in OneDrive for Business.
 | items        | [driveItem][] collection             | All items contained in the drive. Read-only. Nullable.
+| list         | [list][]                             | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
 | root         | [driveItem][]                        | The root folder of the drive. Read-only.
 | special      | [driveItem][] collection             | Collection of common folders available in OneDrive. Read-only. Nullable.
-| list         | [list][]                             | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
 
 ## JSON representation
 

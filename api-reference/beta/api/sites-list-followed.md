@@ -24,23 +24,17 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
-
-This method is accessible only through OneDrive for Business.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-Get a list of the sites followed by a target user, based on its ID.
 
-```http
-GET /users/{user-id}/followedSites
-```
-**Note:** To access another targeted user's list of followed sites, you need application permissions.
+>**Note:** This method is accessible only through OneDrive for Business.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
