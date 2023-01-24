@@ -2,7 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
-        
+        {
+          "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the **Update** operation to the [task](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
+          "Target": "task"
+        }
+     ],
+     "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
+     "Cloud": "Prod",
+     "Version": "beta",
+     "CreatedDateTime": "2023-01-24T00:00:00.4220905Z",
+     "WorkloadArea": "Identity and access",
+     "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
           "ApiChange": "Relationship",
@@ -178,14 +195,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **customTaskExtensionOperationStatus** enumeration.",
           "Target": "customTaskExtensionOperationStatus"
-        },
-        {
-          "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
-          "ApiChange": "Method",
-          "ChangedApiName": "PATCH",
-          "ChangeType": "Addition",
-          "Description": "Added the **Update** operation to the [task](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
-          "Target": "task"
         },
         {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
