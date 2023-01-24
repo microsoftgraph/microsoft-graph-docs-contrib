@@ -183,7 +183,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "initiateOnDemandProactiveRemediation",
           "ChangeType": "Addition",
-          "Description": "Added the [initiateOnDemandProactiveRemediation](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [initiateOnDemandProactiveRemediation](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -799,7 +799,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "initiateMobileDeviceManagementKeyRecovery",
           "ChangeType": "Addition",
-          "Description": "Added the [initiateMobileDeviceManagementKeyRecovery](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [initiateMobileDeviceManagementKeyRecovery](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -871,7 +871,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "endRemoteHelpSession",
           "ChangeType": "Addition",
-          "Description": "Added the [endRemoteHelpSession](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [endRemoteHelpSession](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -1291,7 +1291,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "enrollNowAction",
           "ChangeType": "Addition",
-          "Description": "Added the [enrollNowAction](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [enrollNowAction](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -1991,7 +1991,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createRemoteHelpSession",
           "ChangeType": "Addition",
-          "Description": "Added the [createRemoteHelpSession](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [createRemoteHelpSession](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -1999,7 +1999,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "requestRemoteHelpSessionAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [requestRemoteHelpSessionAccess](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [requestRemoteHelpSessionAccess](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -2007,7 +2007,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllowedRemoteHelpActions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllowedRemoteHelpActions](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAllowedRemoteHelpActions](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -2015,7 +2015,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveRemoteHelpSession",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveRemoteHelpSession](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [retrieveRemoteHelpSession](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -2283,7 +2283,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "downloadAppDiagnostics",
           "ChangeType": "Addition",
-          "Description": "Added the [downloadAppDiagnostics](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [downloadAppDiagnostics](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -2291,7 +2291,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "appDiagnostics",
           "ChangeType": "Addition",
-          "Description": "Added the [appDiagnostics](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the [appDiagnostics](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) resource.",
           "Target": "managedDevice"
         },
         {
@@ -22181,7 +22181,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "azureActiveDirectoryDeviceId,deviceCategory,deviceRegistrationState,managementAgent",
           "ChangeType": "Change",
-          "Description": "Added the **azureActiveDirectoryDeviceId**, **deviceCategory**, **deviceRegistrationState** and **managementAgent** properties to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-onboarding-manageddevice?view=graph-rest-beta) entity.",
+          "Description": "Added the **azureActiveDirectoryDeviceId**, **deviceCategory**, **deviceRegistrationState** and **managementAgent** properties to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) entity.",
           "Target": "managedDevice"
         },
         {
