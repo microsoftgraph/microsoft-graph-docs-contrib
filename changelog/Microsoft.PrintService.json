@@ -19157,14 +19157,6 @@
         {
           "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
           "ApiChange": "Resource",
-          "ChangedApiName": "printUsage",
-          "ChangeType": "Addition",
-          "Description": "Added the [printUsage](https://learn.microsoft.com/en-us/graph/api/resources/printUsage?view=graph-rest-beta) resource type",
-          "Target": "printUsage"
-        },
-        {
-          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
-          "ApiChange": "Resource",
           "ChangedApiName": "printUsageByUser",
           "ChangeType": "Addition",
           "Description": "Added the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource type",
@@ -19741,7 +19733,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getUserArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getUserArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Description": "Added the [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getUserArchivedPrintJobs?view=graph-rest-1.0) method to the reports resource.",
           "Target": "reportRoot"
         },
         {
@@ -19749,7 +19741,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getGroupArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getGroupArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Description": "Added the [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getGroupArchivedPrintJobs?view=graph-rest-1.0) method to the reports resource.",
           "Target": "reportRoot"
         },
         {
@@ -19757,7 +19749,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPrinterArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getPrinterArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Description": "Added the [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getPrinterArchivedPrintJobs?view=graph-rest-1.0) method to the reports resource.",
           "Target": "reportRoot"
         }
       ],
@@ -20171,7 +20163,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser",
           "ChangeType": "Change",
-          "Description": "Added new permission requirements to: [Get printUsageSummaryByPrinter](https://learn.microsoft.com/en-us/graph/api/printusagesummarybyprinter-get?view=graph-rest-beta), [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByPrinter](https://learn.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta), [List monthlyPrintUsageSummariesByPrinter](https://learn.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta), [Get printUsageSummaryByUser](https://learn.microsoft.com/en-us/graph/api/printusagesummarybyuser-get?view=graph-rest-beta), [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta), [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByUser](https://learn.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta), [List monthlyPrintUsageSummariesByUser](https://learn.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta)",
+          "Description": "Added new permission requirements to: [Get printUsageSummaryByPrinter](https://learn.microsoft.com/en-us/graph/api/printusagebyprinter-get?view=graph-rest-beta), [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByPrinter](https://learn.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta), [List monthlyPrintUsageSummariesByPrinter](https://learn.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta), [Get printUsageSummaryByUser](https://learn.microsoft.com/en-us/graph/api/printusagesummarybyuser-get?view=graph-rest-beta), [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta), [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByUser](https://learn.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta), [List monthlyPrintUsageSummariesByUser](https://learn.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta)",
           "Target": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser"
         },
         {
