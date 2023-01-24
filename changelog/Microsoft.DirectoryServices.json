@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundOutboundPolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **inboundOutboundPolicyConfiguration** resource.",
+          "Target": "inboundOutboundPolicyConfiguration"
+        }
+      ],
+      "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-23T00:00:00.1309263Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
           "ApiChange": "Property",
           "ChangedApiName": "segmentsConfiguration",
@@ -68,7 +102,7 @@
     },
     {
       "ChangeList": [
-        {
+       {
           "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
           "ApiChange": "Enumeration",
           "ChangedApiName": "layoutTemplateType",
@@ -158,6 +192,40 @@
       "WorkloadArea": "Applications",
       "SubArea": ""
     },    
+    {
+      "ChangeList": [
+        {
+          "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantIdentitySyncPolicyPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantIdentitySyncPolicyPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantIdentitySyncPolicyPartner"
+        },
+        {
+          "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantUserSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantUserSyncInbound](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantusersyncinbound?view=graph-rest-beta) resource.",
+          "Target": "crossTenantUserSyncInbound"
+        },
+        {
+          "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identitySynchronization",
+          "ChangeType": "Relationship",
+          "Description": "Added the **identitySynchronization** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        }
+      ],
+      "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-23T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {
@@ -328,6 +396,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
+    
     {
       "ChangeList": [
         {
@@ -12404,23 +12473,41 @@
       "WorkloadArea": "Application",
       "SubArea": ""
     },
-     {
-      "ChangeList": [
-        {
-          "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
-          "ApiChange": "Property",
-          "ChangedApiName": "deviceId",
-          "ChangeType": "Addition",
-          "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
-          "Target": "device"
-        }
-      ],
-      "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
-    }
+    {
+    "ChangeList": [
+      {
+        "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+        "ApiChange": "Property",
+        "ChangedApiName": "deviceId",
+        "ChangeType": "Addition",
+        "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
+        "Target": "device"
+      }
+    ],
+    "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+    "Cloud": "Prod",
+    "Version": "v1.0",
+    "CreatedDateTime": "2023-01-13T00:00:00.077762Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
+  },
+  {
+    "ChangeList": [
+      {
+        "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+        "ApiChange": "Property",
+        "ChangedApiName": "defaultUsageLocation",
+        "ChangeType": "Addition",
+        "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+        "Target": "organization"
+      }
+    ],
+    "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+    "Cloud": "Prod",
+    "Version": "v1.0",
+    "CreatedDateTime": "2023-01-13T05:29:04.5101503Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
+  }
   ]
 }
