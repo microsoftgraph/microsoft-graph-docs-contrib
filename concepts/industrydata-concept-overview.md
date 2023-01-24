@@ -7,7 +7,7 @@ ms.prod: "industrydata"
 ms.custom: scenarios:getting-started
 ---
 
-# Overview of the Industry data API in Microsoft Graph (preview)
+# Overview of the industry data API in Microsoft Graph (preview)
 
 The industry data API is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. Use the API to retrieve statistics after the data is processed, and assist with monitoring and troubleshooting.
 

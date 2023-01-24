@@ -78,7 +78,7 @@ The following articles are to help with some basics that are specific to industr
 
 The **dataDomain** property defines the type of data that is imported and determines the common data model format for it to be stored in. Today, the only supported **dataDomain** is `educationRostering`.
 
-### Reference Definitions
+### Reference definitions
 
 A [referenceDefinition](industrydata-referencedefinition.md) represents an enumerated value. Each supported industry domain receives a distinct collection of definitions. **referenceDefinition** resources are used extensively throughout the system, both for configuration and transformation, where the potential values are specific to a given industry. Each **referenceDefinition** uses a composite identifier of `{referenceType}-{code}` to provide a consistent experience across customer tenants.
 
@@ -125,32 +125,36 @@ Transformation of the data is often shaped by each individual user's role within
 }
 ```
 
-### Data Connectors
+### Industry data connectors
 
 An [industryDataConnector](industrydata-industrydataconnector.md) acts as a bridge between a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) and [inboundFlow](industrydata-inboundflow.md). It is responsible for acquiring data from an external source and providing the data to inbound data flows.
 
-#### Uploading and Validating CSV Data
+#### Upload and validate CSV data
 
 For more information:
 
 - [Data Ingestion with SDS v2.1 CSV](schooldatasync/Data-Ingestion-with-SDS-v2.1-CSV.md)
-- [SDS V2.1 CSV file format](schooldatasync/sds-v2.1-csv-file-format.md)
-  - File names and column headers are case-sensitive
-  - CSV files must be in UTF-8 format
-  - We don't accept line breaks in incoming data.
+- [SDS V2.1 CSV file format](schooldatasync/sds-v2.1-csv-file-format.md):
+  - File names and column headers are case-sensitive.
+  - CSV files must be in UTF-8 format.
+  - No line breaks in incoming data.
   - To review and download sample set of SDS V2.1 CSV files, see the [SDS GitHub repository](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples).
 
 > [!IMPORTANT]
 > The [industryDataConnector](industrydata-industrydataconnector.md) doesn't accept delta changes so each upload session must contain the complete data set. Supplying only partial or delta data results in the transition of any missing records to an inactive state.
 
-##### Request an Upload Session
+##### Request an upload session
 
 The [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) uses CSV files uploaded to a secure container. This container lives within the context of a single [fileUploadSession](industrydata-fileuploadsession.md) and is automatically destroyed after data validation or the **fileUploadSession** expires.
 
 The current **fileUploadSession** is retrieved from an **azureDataLakeConnector** via the [getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md). The **getUploadSession** function returns the SAS URL for uploading the CSV files.
 
-##### Validating Uploaded Files
+##### Validate uploaded files
 
 Once all CSV data has been successfully uploaded, the data must be validated before any inbound data flows can being processing the data. This is accomplished by calling the [validate](../api/industrydata-industrydataconnector-validate.md) action of the **azureDataLakeConnector** that finalizes the upload session and validates that all required files were provided and properly formed. Once validated, the data becomes available for processing by inbound data files.
 
 The **validate** action is a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). A link to the **fileValidateOperation** is returned in the `Location` header of the **validate** response. The **fileValidateOperation** provides the current status and final validation results.
+
+
+## See also
+[Overview of the industry data API in Microsoft Graph](/graph/industrydata-concept-overview)
