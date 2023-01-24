@@ -6167,7 +6167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [teamSummary](https://docs.microsoft.com/en-us/graph/api/resources/teamSummary?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [teamSummary](https://learn.microsoft.com/en-us/graph/api/resources/teamSummary?view=graph-rest-v1.0) resource type.",
           "Target": "teamSummary"
         },
         {
@@ -6175,15 +6175,15 @@
           "ApiChange": "Property",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the **summary** property to [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **summary** property to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-v1.0) resource.",
           "Target": "team"
         }
       ],
       "Id": "3e77b3b8-1396-49ab-b2d0-a26bef7ddb8e",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-12-15T23:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "CreatedDateTime": "2023-01-23T23:18:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
   ]
