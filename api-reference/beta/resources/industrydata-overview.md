@@ -56,7 +56,7 @@ After investigating and addressing any data errors and/or warnings, or are comfo
 
 Insights & Analytics help provide analysis for student progress and activity within their classes. Guided by this data, educators have the information they need to ensure that their students' emotional, social, and academic needs are being met.
 
-For more information, see the sections School Data Sync, SDS prerequisites, and SDS core concepts of the [School Data Sync Overview](/schooldatasync/school-data-sync-overview.md) on the platform and architecture.
+For more information, see the sections School Data Sync, SDS prerequisites, and SDS core concepts of the [School Data Sync Overview](/schooldatasync/school-data-sync-overview) on the platform and architecture.
 
 ## Registration, permissions, and authorization
 
@@ -133,8 +133,8 @@ An [industryDataConnector](industrydata-industrydataconnector.md) acts as a brid
 
 For more information:
 
-- [Data Ingestion with SDS v2.1 CSV](https://learn.microsoft.com/schooldatasync/data-ingestion-with-sds-v2.1-csv)
-- [SDS V2.1 CSV file format](https://learn.microsoft.com/schooldatasync/sds-v2.1-csv-file-format):
+- [Data Ingestion with SDS v2.1 CSV](/schooldatasync/data-ingestion-with-sds-v2.1-csv)
+- [SDS V2.1 CSV file format](/schooldatasync/sds-v2.1-csv-file-format):
   - File names and column headers are case-sensitive.
   - CSV files must be in UTF-8 format.
   - No line breaks in incoming data.
