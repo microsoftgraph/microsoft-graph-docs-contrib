@@ -62,7 +62,7 @@ This method supports optional OData query parameters to help customize the respo
 - There is limited support for `$filter`:
   - For tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
   - For tracking changes on a specific resource: `$filter=isof({resource})`. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.application')'`.
-  - Note: these filter types cannot be combined, e.g. `$filter=isof({resource}) or id eq '{id}` is not supported. 
+  - Note: these filter types can be combined, e.g. `$filter=isof({resource type}) or id eq '{id}`, that provides an **intersection** of objects specified by `{resource type}` and `{id}`. 
 
 ## Request headers
 
