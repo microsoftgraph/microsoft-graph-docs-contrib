@@ -20028,6 +20028,8 @@ items:
             href: api/directoryobject-getbyids.md
           - name: Validate properties
             href: api/directoryobject-validateproperties.md
+          - name: Get delta
+            href: api/directoryobject-delta.md
         - name: Directory role
           href: resources/directoryrole.md
           items:
