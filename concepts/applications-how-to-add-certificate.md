@@ -22,11 +22,11 @@ This article provides guidance for using Microsoft Graph and PowerShell scripts 
 To complete this tutorial, you need the following resources and privileges:
 
 - An active Azure AD tenant.
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) as a user in an *Application Administrator* role or a user allowed to create and manage applications in the tenant.
-- Have a signed certificate that you'll use to authenticate the app. This article uses a self-signed certificate for demonstration purposes. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).
+- An API client such as [Graph Explorer](https://aka.ms/ge). Sign in as a user in an *Application Administrator* role or a user who is allowed to create and manage applications in the tenant.
+- A signed certificate that you'll use to authenticate the app. This article uses a self-signed certificate for demonstration purposes. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).
 
 > [!CAUTION]
-> While the use of certificates is highly recommended over secrets, we don't recommend using self-signed certificates. They can reduce the security bar of your application due to various factors like use of an outdated hash and cipher suites or lack of validation. We recommend procuring certificates from a well known trusted certificate authority.
+> The use of certificates is highly recommended over secrets; however, we don't recommend using self-signed certificates. They can reduce the security bar of your application due to various factors like use of an outdated hash and cipher suites or lack of validation. We recommend procuring certificates from a well known trusted certificate authority.
 
 ## Read the certificate details
 
@@ -34,7 +34,7 @@ To add a certificate programmatically using Microsoft Graph, you need the certif
 
 ### [Optional] Get the certificate thumbprint
 
-It isn't required to add the certificate thumbprint to the request payload. If you want to add the thumbprint, you can run the following PowerShell request to read the certificate's thumbprint. This request assumes that you generated and exported the certificate to your local drive.
+It's optional to add the certificate thumbprint to the request payload. If you want to add the thumbprint, you can run the following PowerShell request to read the certificate's thumbprint. This request assumes that you generated and exported the certificate to your local drive.
 
 #### Request
 
@@ -85,7 +85,7 @@ The following request adds the certificate details to an app. The settings are a
 - The **key** is the Base64 encoded value that you generated in the previous step.
 
 > [!NOTE]
-> If your app has an existing valid certificate that you want to continue using for authentication, include both the current and new certificate details in the app's **keyCredentials** object. Since this a PATCH call which by protocol replaces the contents of the property with the new values, including only the new certificate will replace the existing certificates with the new one.
+> If your app has an existing valid certificate that you want to continue using for authentication, include both the current and new certificate details in the app's **keyCredentials** object. Because this a PATCH call, which by protocol replaces the contents of the property with the new values, including only the new certificate will replace the existing certificates with the new one.
 
 The following example adds a new certificate and replaces any existing certificates.
 
@@ -154,7 +154,7 @@ HTTP/1.1 204 No Content
 
 ## Test app-only authentication
 
-You can test the app-only authentication using Microsoft Graph PowerShell as shown in the following example.
+You can test the app-only authentication using Microsoft Graph PowerShell, as shown in the following example.
 
 ### Request
 
@@ -202,4 +202,4 @@ ClientTimeout         : 00:05:00
 
 ## Conclusion
 
-You've used Microsoft Graph to update certificate credentials for an app object. This process is a programmatic alternative to using the Azure portal. You can also update certificate credentials for a service principal following a similar process and calling the `https://graph.microsoft.com/v1.0/servicePrincipals/` endpoint.
+You've used Microsoft Graph to update certificate credentials for an app object. This process is a programmatic alternative to using the Azure portal. You can also update certificate credentials for a service principal by following a similar process and calling the `https://graph.microsoft.com/v1.0/servicePrincipals/` endpoint.
