@@ -153,7 +153,7 @@ import (
     "github.com/Azure/azure-sdk-for-go/sdk/azcore/cloud"
     "github.com/Azure/azure-sdk-for-go/sdk/azcore/policy"
     "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    auth "github.com/microsoft/kiota-authentication-azure-go"
+    auth "github.com/microsoftgraph/msgraph-sdk-go-core/authentication"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
