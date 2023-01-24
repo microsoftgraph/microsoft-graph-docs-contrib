@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "userConsentRequests/any"
 
-requestParameters := &graphconfig.AppConsentRequestRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.AppConsentRequestRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

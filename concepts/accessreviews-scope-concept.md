@@ -5,6 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 06/30/2022
 ---
 
 # Configure the scope of your access review using the Microsoft Graph API
@@ -185,7 +186,7 @@ This review won't include B2B direct connect users in teams with shared channels
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')",
+    "query": "/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}' and catalogId eq 'id')",
     "queryType": "MicrosoftGraph"
 }
 ```

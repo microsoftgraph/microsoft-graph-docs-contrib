@@ -10,13 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewSitePage()
 title := "sample"
 requestBody.SetTitle(&title) 
-additionalData := map[string]interface{}{
-	showComments := true
+showComments := true
 requestBody.SetShowComments(&showComments) 
-	showRecommendedPages := false
+showRecommendedPages := false
 requestBody.SetShowRecommendedPages(&showRecommendedPages) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").Patch(context.Background(), requestBody, nil)
 

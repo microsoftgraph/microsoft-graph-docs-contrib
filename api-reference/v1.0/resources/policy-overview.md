@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
+ms.date: 09/02/2022
 ---
 
 # Azure AD policy overview
@@ -27,5 +28,5 @@ Azure Active Directory (Azure AD) uses policies to control Azure AD feature beha
 
 ## Next steps
 
-* Review the different policy resouce types listed above and their various methods.
+* Review the different policy resource types listed above and their various methods.
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
