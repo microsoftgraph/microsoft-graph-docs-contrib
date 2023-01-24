@@ -117,6 +117,9 @@ items:
           - name: Grant or revoke permissions
             displayName: grant delegated and application permissions
             href: permissions-grant-via-msgraph.md
+          - name: Add a certificate to an app
+            displayName: app-only authentication
+            href: applications-how-to-add-certificate.md
           - name: Automate SAML-based SSO configuration
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
@@ -330,7 +333,15 @@ items:
               - name: Get links to assignments and submissions
                 href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
+<<<<<<< HEAD
                 href: update-assignment-and-grade-data.md
+=======
+                href: update-assignment-and-grade-data.md               
+              - name: Download all resources from a set of assignments
+                href: download-resources-from-assignment.md
+              - name: Share assignments with an embedded Teams application
+                href: embed-teams-app-in-assignment.md
+>>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
       - name: Extensions
         items:
           - name: Overview
