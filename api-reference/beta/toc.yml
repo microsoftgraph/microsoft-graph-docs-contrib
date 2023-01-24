@@ -23384,26 +23384,38 @@ items:
             href: resources/simulation.md
           - name: List
             href: api/attacksimulationroot-list-simulations.md
+          - name: Create
+            href: api/attacksimulationroot-create-simulation.md
           - name: Get
             href: api/attacksimulationroot-get-simulations.md
+          - name: Update
+            href: api/attacksimulationroot-update-simulation.md
+          - name: Delete
+            href: api/attacksimulationroot-delete-simulation.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
             href: api/simulationreportoverview-get.md
-        - name: Simulation automation
+          - name: Get excluded account targets
+            href: api/attacksimulationroot-get-excludedaccounttarget.md
+          - name: Get included account targets
+            href: api/attacksimulationroot-get-includedaccounttarget.md
+        - name: Attack simulation operation
           items:
-          - name: Simulation automation
-            href: resources/simulationautomation.md
-          - name: List
-            href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Attack simulation operation
+            href: resources/attacksimulationoperation.md
           - name: Get
-            href: api/attacksimulationroot-get-simulationautomations.md
-        - name: Simulation automation run
+            href: api/attacksimulationroot-get-operation.md
+        - name: Payload
           items:
-          - name: Simulation automation run
-            href: resources/simulationautomationrun.md
+          - name: Payload
+            href: resources/payload.md
           - name: List
-            href: api/simulationautomation-list-runs.md
+            href: api/attacksimulationroot-list-payloads.md
+          - name: Get
+            href: api/attacksimulationroot-get-payload.md
+          - name: Get payload detail
+            href: api/attacksimulationroot-get-payloadsdetails.md
         - name: Reports
           items:
           - name: Attack simulation reports
@@ -23426,7 +23438,21 @@ items:
             - name: Training user coverage
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
-              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md        
+        - name: Simulation automation
+          items:
+          - name: Simulation automation
+            href: resources/simulationautomation.md
+          - name: List
+            href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
+        - name: Simulation automation run
+          items:
+          - name: Simulation automation run
+            href: resources/simulationautomationrun.md
+          - name: List
+            href: api/simulationautomation-list-runs.md
       - name: eDiscovery (preview)
         items:
         - name: Case
@@ -24288,6 +24314,8 @@ items:
           href: resources/plannerroster.md
         - name: Create roster
           href: api/planner-post-rosters.md
+        - name: Get roster
+          href: api/plannerroster-get.md
         - name: Delete roster
           href: api/plannerroster-delete.md
         - name: List roster's members

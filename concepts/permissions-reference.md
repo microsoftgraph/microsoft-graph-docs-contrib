@@ -342,6 +342,7 @@ None.
 | _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | No |
 | _Calendars.ReadWrite_ |Have full access to user calendars |Allows the app to create, read, update, and delete events in user calendars. |No | Yes |
 | _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No | No |
+| _Calendars.ReadBasic_ |Read basic details of user calendars |Allows the app to read events in user calendars, except for properties such as body, attachments, and extensions.|Yes | No |
 
 <br/>
 
@@ -351,6 +352,7 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Calendars.Read_ |Read calendars in all mailboxes |Allows the app to read events of all calendars without a signed-in user. |Yes |
 |_Calendars.ReadWrite_ |Read and write calendars in all mailboxes |Allows the app to create, read, update, and delete events of all calendars without a signed-in user. |Yes |
+| _Calendars.ReadBasic.All_ |Read basic details of calendars in all mailboxes|Allows the app to read events of all calendars, except for properties such as body, attachments, and extensions, without a signed-in user. |Yes |
 
 > **Important**
 Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not to all the mailboxes in the organization, even if the app has been granted the application permissions of Calendars.Read or Calendars.ReadWrite.
@@ -2021,6 +2023,7 @@ Search configuration permissions are only valid for work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AttackSimulation.Read.All_ |Read attack simulation data of an organization | Allows the app to read attack simulation and training data for an organization for the signed-in user. |  Yes | No |
+| _AttackSimulation.ReadWrite.All_ |Read, create, and update attack simulation data of an organization |Allows the app to read, create, and update attack simulation and training data for an organization for the signed-in user. |  Yes | No |
 | _SecurityActions.Read.All_        |  Read your organization's security actions | Allows the app to read your organization’s security actions on behalf of the signed-in user. | Yes  | No |
 | _SecurityActions.ReadWrite.All_   | Read and update your organization's security actions | Allows the app to read or update your organization’s security actions on behalf of the signed-in user.  | Yes  | No |
 | _SecurityAlert.Read.All_ | Read alerts | Allows the app to read alerts, on behalf of the signed-in user. | Yes | No |
@@ -2038,7 +2041,8 @@ Search configuration permissions are only valid for work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _AttackSimulation.Read.All_ |Read attack simulation data of an organization | Allows the app to read attack simulation and training data for an organization without a signed-in user.|  Yes |
-| _SecurityActions.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security actions. | Yes  |
+| _AttackSimulation.ReadWrite.All_ |Read, create, and update all attack simulation data of an organization | Allows the app to read, create, and update attack simulation and training data for an organization without a signed-in user.|  Yes |
+| _SecurityActions.Read.All_        |  Read and write your organization’s security events |Allows the app to create other applications, and fully manage those applications (read, update, update application secrets and delete), without a signed-in user. | Yes  |
 | _SecurityActions.ReadWrite.All_   | Create and read your organization's security actions | Allows the app to read or create security actions, without a signed-in user. | Yes  |
 | _SecurityAlert.Read.All_ | Read all alerts | Allows the app to read all alerts, without a signed-in user. | Yes |
 | _SecurityAlert.ReadWrite.All_ | Read and write to all alerts | Allows the app to read and write to all alerts, without a signed-in user. | Yes |
