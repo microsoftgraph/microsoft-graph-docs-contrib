@@ -26,7 +26,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.microsoft.graph.segmentConfiguration"
+  "@odata.type": "microsoft.graph.segmentConfiguration"
 }
 -->
 ``` json
