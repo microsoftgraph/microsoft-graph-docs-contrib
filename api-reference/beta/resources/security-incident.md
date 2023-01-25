@@ -45,6 +45,10 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
 |customTags|String collection|Array of custom tags associated with an incident.|
+|systemTags|String|The system tags accocisted with the incident|
+|description|String|a string describing the incident|
+|recommendedActions|String|A string that represents the actions that are reccomnded to take in order to resolve the incident|
+|recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting kql queries related to the incdient|
 
 
 ### incidentStatus values 
@@ -95,7 +99,17 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.security.alertComment"
     }
-  ]
+  ],
+  "systemTags" : [
+    "String"
+  ],
+  "description" : "String",
+  "recommendedActions" : "String",
+  "recommendedHuntingQueries" : [
+	{
+		"kqlText" : "String"
+	}
+]
 }
 ```
 

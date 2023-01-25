@@ -60,6 +60,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |threatDisplayName|String|The threat associated with this alert.|
 |threatFamilyName|String|Threat family associated with this alert.|
 |title|String|Brief identifying string value describing the alert.|
+|systemTags|String|The system tags accocisted with the alert|
 
 ### alertClassification values 
 
@@ -209,6 +210,10 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.security.alertEvidence"
     }
+  ],
+  "systemTags" : [
+    "String",
+    "String"
   ]
 }
 ```
