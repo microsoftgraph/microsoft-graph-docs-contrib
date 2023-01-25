@@ -26,6 +26,7 @@ All the session controls inherit from [conditionalAccessSessionControl](conditio
 |disableResilienceDefaults|Boolean| Session control that determines whether it is acceptable for Azure AD to extend existing sessions based on information collected prior to an outage or not.|
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Session control to define whether to persist cookies or not. All apps should be selected for this session control to work correctly. |
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
+|secureSignInSession|[secureSignInSessionControl](secureSignInSessionControl.md)|Session control to require sign in sessions to be bound to a device.|
 
 ## Relationships
 
@@ -56,7 +57,8 @@ The following is a JSON representation of the resource.
   "continuousAccessEvaluation": {"@odata.type": "microsoft.graph.continuousAccessEvaluationSessionControl"},
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
   "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
-  "disableResilienceDefaults": false
+  "disableResilienceDefaults": false,
+  "secureSignInSession": {"@odata.type": "microsoft.graph.secureSignInSessionControl"},
 }
 ```
 
