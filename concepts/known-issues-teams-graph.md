@@ -1,12 +1,12 @@
 ---
-title: "Implementation differences in national clouds for the teamwork and communications APIs"
+title: "Teamwork and communications API implementation differences in national clouds"
 description: "Learn about implementation differences in the national clouds for the Teamwork and communications APIs."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ---
 
-# Implementation differences in national clouds for the teamwork and communications APIs
+# Teamwork and communications API implementation differences in national clouds
 
 This article describes implementation differences between the Microsoft Graph global endpoint and the different national clouds for the teamwork and communications APIs.
 
