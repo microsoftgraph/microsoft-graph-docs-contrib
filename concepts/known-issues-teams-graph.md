@@ -1,44 +1,45 @@
 ---
-title: "Implementation differences in national clouds for the Teamwork and communications API"
-description: "This article describes known issues and limitations with Microsoft Graph and provides workarounds when possible."
+title: "Implementation differences in national clouds for the Teamwork and communications APIs"
+description: "Learn about implementation differences in the national clouds for the Teamwork and communications APIs."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
+doc_type: conceptualPageType
 ---
 
 # Implementation differences in national clouds for the Teamwork and communications APIs
 
-This article lists down the implementation differences among different teamwork and communications api's in different national clouds.
+This article describes implementation differences between the Microsoft Graph global endpoint and the different national clouds for the teamwork and communications APIs.
 
-## API wise implementation differences
+## List messages in a chat API doesn't support `OrderBy`
 
+The [List messages in a chat](/graph/api/chat-list-messages) API doesn't support the `OrderBy` OData query parameter in the Microsoft 365 GCC environment in Microsoft Graph for US Government L4 national cloud.
 
-### List messages in a chat
+## List chats API doesn't support `OrderBy`
 
-The [List messages in a chat API](../api-reference/v1.0/api/chat-list-messages.md) doesn't support `OrderBy` parameter in the `Microsoft 365 GCC` environment in `Microsoft Graph for US Government L4` national cloud.
+The [List chats](/graph/api/chat-list) API doesn't support the `OrderBy` OData query parameter in the Microsoft Graph for US Government L4 national cloud.
 
-### Api's for managing apps installed in a user's personal scope
+## APIs for managing apps installed in a user's personal scope are not supported
 
-Api's to manage apps installed in a user's personal scope are not supported in Application context in the `Microsoft 365 GCC High` environment in `Microsoft Graph for US Government L4` cloud.
-Following api's are included.
-[List apps installed for user](../api-reference/v1.0/api/userteamwork-list-installedapps.md) 
-[Install app for user](../api-reference/v1.0/api/userteamwork-post-installedapps.md) 
-[Get app installed for user](../api-reference/v1.0/api/userteamwork-get-installedapps.md) 
-[Get chat between user and app](../api-reference/v1.0/api/userscopeteamsappinstallation-get-chat.md) 
-[Upgrade installed app for user](../api-reference/v1.0/api/userteamwork-teamsappinstallation-upgrade.md) 
-[Uninstall app for user](../api-reference/v1.0/api/userteamwork-delete-installedapps.md) 
+APIs for managing apps installed in a user's personal scope are not supported in application context in the Microsoft 365 GCC High environment in the Microsoft Graph for US Government L4 cloud. This includes the following APIs:
 
-### List chats
-The [List chats](../api-reference/v1.0/api/chat-list.md) doesn't support `OrderBy` parameter in the `Microsoft Graph for US Government L4` national cloud.
+- [List apps installed for user](/graph/api/userteamwork-list-installedapps) 
+- [Install app for user](/graph/api/userteamwork-post-installedapps) 
+- [Get app installed for user](/graph/api/userteamwork-get-installedapps) 
+- [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat) 
+- [Upgrade installed app for user](/graph/api/userteamwork-teamsappinstallation-upgrade) 
+- [Uninstall app for user](/graph/api/userteamwork-delete-installedapps) 
 
-### Get Chat
-The [Get chat](../api-reference/v1.0/api/chat-get.md) api doesn't support chats with meetings associated with them in application context in the `Microsoft 365 GCC High` environment in the `Microsoft Graph for US Government L4` national cloud.
+## Get chat doesn't support chats with meetings
 
-### Meeting transcript api's
-Api's associated with [meeting transcripts](../api/resources/calltranscript.md) are not supported in the `Microsoft Graph for US Government L4` national cloud.
-Following api's are included.
-[List transcripts](../api-reference/beta/api/onlinemeeting-list-transcripts.md) 
-[Get transcript](../api-reference/beta/api/calltranscript-get.md) 
+The [Get chat](graph/api/chat-get) API doesn't support chats with meetings associated with them in application context in the Microsoft 365 GCC High environment in the Microsoft Graph for US Government L4 national cloud.
 
-### Soft delete a message
+## Meeting transcript APIs are not supported
 
-The [Soft delete a message](../api-reference/beta/api/chatmessage-softdelete.md) api doesn't work in the `Microsoft 365 GCC High` environment in `Microsoft Graph for US Government L4` national cloud.
+APIs associated with [meeting transcripts](/graph/api/resources/calltranscript) are not supported in the Microsoft Graph for US Government L4 national cloud. This includes the following APIs:
+
+- [List transcripts](/graph/api/onlinemeeting-list-transcripts) 
+- [Get transcript](/graph/api/calltranscript-get) 
+
+## Soft delete a message is not supported
+
+The [Soft delete a message](/graph/api/chatmessage-softdelete) API doesn't work in the Microsoft 365 GCC High environment in Microsoft Graph for US Government L4 national cloud.
