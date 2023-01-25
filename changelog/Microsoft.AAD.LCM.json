@@ -21,6 +21,24 @@
     {
       "ChangeList": [
         {
+          "Id": "e55bcffe-051d-4fd2-81d9-ee7885dc1442",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the **GET** operation to the [run resource type](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-run?view=graph-rest-beta).",
+          "Target": "run"
+        }
+      ],
+      "Id": "e55bcffe-051d-4fd2-81d9-ee7885dc1442",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-25T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
           "ApiChange": "Relationship",
           "ChangedApiName": "lifecycleWorkflows",
