@@ -22,10 +22,10 @@ Represents the CORS settings for the [webApplicationSegment](webapplicationsegme
 |:-------------|:------------|:------------|
 |allowedHeaders|String Collection|The request headers that the origin domain may specify on the CORS request. The wildcard character `*` indicates that any header beginning with the specified prefix is allowed.|
 |allowedMethods|String Collection|The HTTP request methods that the origin domain may use for a CORS request.|
-|allowedOrigins|String Collection|The origin domains that are permitted to make a request against the service via CORS. The origin domain is the domain from which the request originates. The origin must be an exact case-sensitive match with the origin that the user age sends to the service. |
+|allowedOrigins|String Collection|The origin domains that are permitted to make a request against the service via CORS. The origin domain is the domain from which the request originates. The origin must be an exact case-sensitive match with the origin that the user agent sends to the service. |
 |id|String|The unique identifier for the CORS configuration that is assigned to a CORS rule by Azure AD. Not nullable. Read-only. Supports `$filter` (`eq`).  |
 |maxAgeInSeconds|Integer|The maximum amount of time that a browser should cache the response to the preflight **OPTIONS** request.|
-|resource|String|Resource within the application segment for which CORS permissions are granted. `/` grants permission for whole app segment.|
+|resource|String|Resource within the application segment for which CORS permissions are granted. `/` grants permission for the whole app segment.|
 
 
 ## JSON representation
