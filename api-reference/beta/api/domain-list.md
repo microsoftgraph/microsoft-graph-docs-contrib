@@ -27,10 +27,46 @@ One of the following permissions is required to call this API. To learn more, in
 The work or school account needs to belong to one of the following roles:
 
 * Global Administrator
-* Domain Name Administrator
+* User Administrator
+* Helpdesk Administrator
+* Service Support Administrator
+* Billing Administrator
+* Mailbox Administrator
+* Partner Tier1 Support
 * Partner Tier2 Support
+* Directory Readers
+* Directory Writers
+* AdHoc License Administrator
+* Application Administrator
+* Security Reader
+* Security Administrator
+* Privileged Role Administrator
+* Cloud Application Administrator
+* Customer LockBox Access Approver
+* Dynamics 365 Administrator
+* Power BI Administrator
+* Azure Information Protection Administrator
+* Desktop Analytics Administrator
+* License Administrator
+* Microsoft Managed Desktop Administrator
+* Privileged Authentication Administrator
+* Teams Communications Administrator
+* Teams Communications Support Engineer
+* Authentication Administrator
+* Teams Communications Support Specialist
+* Teams Administrator
+* Insights Administrator
+* Compliance Data Administrator
+* Security Operator
+* Kaizala Administrator
 * Global Reader
-* User
+* Volume Licensing Business Center User
+* Volume Licensing Service Center User
+* Modern Commerce User
+* Microsoft Store for Business User
+* Directory Reviewer
+* Domain Name Administrator
+* Users
 * Guest User
 * Restricted Guest User
 
