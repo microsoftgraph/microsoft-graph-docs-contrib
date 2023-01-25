@@ -1,18 +1,18 @@
 ---
-title: "Implementation differences in national clouds for the Teamwork and communications APIs"
+title: "Implementation differences in national clouds for the teamwork and communications APIs"
 description: "Learn about implementation differences in the national clouds for the Teamwork and communications APIs."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ---
 
-# Implementation differences in national clouds for the Teamwork and communications APIs
+# Implementation differences in national clouds for the teamwork and communications APIs
 
 This article describes implementation differences between the Microsoft Graph global endpoint and the different national clouds for the teamwork and communications APIs.
 
 ## List messages in a chat API doesn't support `OrderBy`
 
-The [List messages in a chat](/graph/api/chat-list-messages) API doesn't support the `OrderBy` OData query parameter in the Microsoft 365 GCC environment in Microsoft Graph for US Government L4 national cloud.
+The [List messages in a chat](/graph/api/chat-list-messages) API doesn't support the `OrderBy` OData query parameter in the Microsoft 365 GCC environment in the Microsoft Graph for US Government L4 national cloud.
 
 ## List chats API doesn't support `OrderBy`
 
