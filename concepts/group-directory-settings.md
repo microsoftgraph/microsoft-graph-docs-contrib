@@ -3,6 +3,7 @@ title: "Overview of group (directory) settings"
 description: "Use group (directory) settings to configure tenant-wide or object-specific settings in your tenant."
 author: "FaithOmbongi"
 ms.localizationpriority: high
+ms.date: 06/08/2022
 ---
 
 # Overview of group (directory) settings

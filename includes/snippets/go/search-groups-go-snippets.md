@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-requestSearch := "\"displayName:OneVideo OR mail:onevideo\""
+requestSearch := "\"displayName:OneVideo\" OR \"mail:onevideo\""
 
 requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
