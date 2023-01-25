@@ -53,7 +53,7 @@ The following is a JSON representation of the resource.
   "allowedOrigins": [
     "String"
   ],
-  "id": "String",
+  "id": "String (identifier)",
   "maxAgeInSeconds": "Integer",
   "resource": "String"
 }
