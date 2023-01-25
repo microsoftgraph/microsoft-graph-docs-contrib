@@ -1,7 +1,7 @@
 ---
 title: "windowsArchitecture enum type"
 description: "Contains properties for Windows architecture."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -26,9 +26,3 @@ Contains properties for Windows architecture.
 |arm|4|Whether or not the Arm Windows architecture type is supported.|
 |neutral|8|Whether or not the Neutral Windows architecture type is supported.|
 |arm64|16|Whether or not the Arm64 Windows architecture type is supported.|
-
-
-
-
-
-

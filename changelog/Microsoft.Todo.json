@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "startDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **startDateTime** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **startDateTime** property to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
           "Target": "todoTask"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [attachmentInfo](https://docs.microsoft.com/en-us/graph/api/resources/attachmentinfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the [attachmentInfo](https://learn.microsoft.com/en-us/graph/api/resources/attachmentinfo?view=graph-rest-beta) resource type.",
           "Target": "attachmentInfo"
         },
         {
@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentSession",
           "ChangeType": "Addition",
-          "Description": "Added the [attachmentSession](https://docs.microsoft.com/en-us/graph/api/resources/attachmentsession?view=graph-rest-beta) resource type.",
+          "Description": "Added the [attachmentSession](https://learn.microsoft.com/en-us/graph/api/resources/attachmentsession?view=graph-rest-beta) resource type.",
           "Target": "attachmentSession"
         },
         {
@@ -41,7 +41,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentBase",
           "ChangeType": "Addition",
-          "Description": "Added the [attachmentBase](https://docs.microsoft.com/en-us/graph/api/resources/attachmentbase?view=graph-rest-beta) resource type.",
+          "Description": "Added the [attachmentBase](https://learn.microsoft.com/en-us/graph/api/resources/attachmentbase?view=graph-rest-beta) resource type.",
           "Target": "attachmentBase"
         },
         {
@@ -49,7 +49,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskFileAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the [taskFileAttachment](https://docs.microsoft.com/en-us/graph/api/resources/taskfileattachment?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [taskFileAttachment](https://learn.microsoft.com/en-us/graph/api/resources/taskfileattachment?view=graph-rest-beta) resource and supported methods.",
           "Target": "taskFileAttachment"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hasAttachments",
           "ChangeType": "Addition",
-          "Description": "Added the **hasAttachments** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
+          "Description": "Added the **hasAttachments** property to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
           "Target": "todoTask"
         },
         {
@@ -65,7 +65,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "attachments",
           "ChangeType": "Addition",
-          "Description": "Added the **attachments** relationship to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
+          "Description": "Added the **attachments** relationship to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
           "Target": "todoTask"
         }
       ],
@@ -83,7 +83,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "checklistItem",
           "ChangeType": "Addition",
-          "Description": "Added the [checklistItem](https://docs.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-1.0) resource type",
+          "Description": "Added the [checklistItem](https://learn.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-1.0) resource type",
           "Target": "checklistItem"
         },
         {
@@ -91,7 +91,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "categories",
           "ChangeType": "Addition",
-          "Description": "Added the **categories** property to [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Description": "Added the **categories** property to [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
           "Target": "todoTask"
         },
         {
@@ -99,7 +99,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "checklistItems",
           "ChangeType": "Addition",
-          "Description": "Added the **checklistItems** relationship to [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Description": "Added the **checklistItems** relationship to [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
           "Target": "todoTask"
         }
       ],
@@ -117,7 +117,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "checklistItem",
           "ChangeType": "Addition",
-          "Description": "Added the [checklistItem](https://docs.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-beta) resource type",
+          "Description": "Added the [checklistItem](https://learn.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-beta) resource type",
           "Target": "checklistItem"
         },
         {
@@ -125,7 +125,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "categories",
           "ChangeType": "Addition",
-          "Description": "Added the **categories** property to [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **categories** property to [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
           "Target": "todoTask"
         },
         {
@@ -133,7 +133,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "checklistItems",
           "ChangeType": "Addition",
-          "Description": "Added the **checklistItems** relationship to [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **checklistItems** relationship to [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
           "Target": "todoTask"
         }
       ],
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "todoTask, change notifications",
           "ChangeType": "Addition",
-          "Description": "Added [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](https://learn.microsoft.com/en-us/graph/webhooks).",
           "Target": "todoTask, change notifications"
         }
       ],
@@ -169,7 +169,7 @@
           "ApiChange":"Resource",
           "ChangedApiName":"todo",
           "ChangeType":"Addition",
-          "Description":"Added the [todo](https://docs.microsoft.com/en-us/graph/api/resources/todo?view=graph-rest-1.0) resource type",
+          "Description":"Added the [todo](https://learn.microsoft.com/en-us/graph/api/resources/todo?view=graph-rest-1.0) resource type",
           "Target":"todo"
         },
         {
@@ -177,7 +177,7 @@
           "ApiChange":"Resource",
           "ChangedApiName":"todoTaskList",
           "ChangeType":"Addition",
-          "Description":"Added the [todoTaskList](https://docs.microsoft.com/en-us/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource type",
+          "Description":"Added the [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource type",
           "Target":"todoTaskList"
         },
         {
@@ -185,7 +185,7 @@
           "ApiChange":"Resource",
           "ChangedApiName":"todoTask",
           "ChangeType":"Addition",
-          "Description":"Added the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource type",
+          "Description":"Added the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource type",
           "Target":"todoTask"
         },
         {
@@ -193,7 +193,7 @@
           "ApiChange":"Resource",
           "ChangedApiName":"linkedResource",
           "ChangeType":"Addition",
-          "Description":"Added the [linkedResource](https://docs.microsoft.com/en-us/graph/api/resources/linkedResource?view=graph-rest-1.0) resource type",
+          "Description":"Added the [linkedResource](https://learn.microsoft.com/en-us/graph/api/resources/linkedResource?view=graph-rest-1.0) resource type",
           "Target":"linkedResource"
         },
         {
@@ -233,7 +233,7 @@
           "ApiChange":"Method",
           "ChangedApiName":"delta",
           "ChangeType":"Addition",
-          "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/todoTaskList-delta?view=graph-rest-1.0) method to the [todoTaskList](https://docs.microsoft.com/en-us/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource",
+          "Description":"Added the [delta](https://learn.microsoft.com/en-us/graph/api/todoTaskList-delta?view=graph-rest-1.0) method to the [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource",
           "Target":"todoTaskList"
         },
         {
@@ -241,7 +241,7 @@
           "ApiChange":"Method",
           "ChangedApiName":"delta",
           "ChangeType":"Addition",
-          "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/todoTask-delta?view=graph-rest-1.0) method to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource",
+          "Description":"Added the [delta](https://learn.microsoft.com/en-us/graph/api/todoTask-delta?view=graph-rest-1.0) method to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource",
           "Target":"todoTask"
         }
       ],
@@ -259,7 +259,7 @@
           "ApiChange":"Relationship",
           "ChangedApiName":"todo",
           "ChangeType":"Addition",
-          "Description":"Added the **todo** relationship to [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource",
+          "Description":"Added the **todo** relationship to [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource",
           "Target":"user"
         }
       ],

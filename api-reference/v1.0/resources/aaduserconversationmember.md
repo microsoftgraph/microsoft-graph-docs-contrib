@@ -37,12 +37,12 @@ This type inherits from [conversationMember](conversationmember.md).
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |
-|roles| string collection | The roles for that user. |
-|userId| string | The guid of the user. |
 |email| string  | The email address of the user. |
+|id|String| Read-only. Unique ID of the user.|
+|roles| string collection | The roles for that user. |
 |tenantId| string  | TenantId which the Azure AD user belongs to. |
+|userId| string | The guid of the user. |
 |visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
 
 ## JSON representation
@@ -60,13 +60,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "id": "string (identifier)",
   "displayName" : "string",
-  "visibleHistoryStartDateTime": "string (timestamp)",
-  "roles" : ["string"],
-  "userId" : "string",
   "email" : "string",
-  "tenantId": "string"
+  "id": "string (identifier)", 
+  "roles" : ["string"],
+  "tenantId": "string",
+  "userId" : "string",
+  "visibleHistoryStartDateTime": "string (timestamp)"
 }
 ```
 

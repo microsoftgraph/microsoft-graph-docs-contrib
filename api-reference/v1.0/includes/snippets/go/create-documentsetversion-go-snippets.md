@@ -13,7 +13,7 @@ requestBody.SetComment(&comment)
 shouldCaptureMinorVersion := false
 requestBody.SetShouldCaptureMinorVersion(&shouldCaptureMinorVersion) 
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").DocumentSetVersions().Post(requestBody)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").DocumentSetVersions().Post(context.Background(), requestBody, nil)
 
 
 ```

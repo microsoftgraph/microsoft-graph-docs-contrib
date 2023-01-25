@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.DeviceRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DeviceItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","extensionAttributes"},
 }
-configuration := &graphconfig.DeviceRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DevicesById("device-id").Get(context.Background(), configuration)
 
 
 ```

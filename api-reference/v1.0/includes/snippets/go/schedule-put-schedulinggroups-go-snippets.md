@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-}
-configuration := &graphconfig.SchedulingGroupRequestBuilderPutRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+
+configuration := &graphconfig.TeamItemScheduleSchedulingGroupItemRequestBuilderPutRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewSchedulingGroup()
@@ -26,7 +26,7 @@ requestBody.SetIsActive(&isActive)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().SchedulingGroupsById("schedulingGroup-id").PutWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+graphClient.TeamsById("team-id").Schedule().SchedulingGroupsById("schedulingGroup-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

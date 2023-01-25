@@ -12,7 +12,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AnswerPostRequestBody();
 $requestBody->setCallbackUri('https://bot.contoso.com/api/calls');
 
-$requestBody->setAcceptedModalities(['audio', ]);
+$requestBody->setAcceptedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
 $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');

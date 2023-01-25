@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.SitesById("site-id").PermissionsById("permission-id").Delete()
+graphClient.SitesById("site-id").PermissionsById("permission-id").Delete(context.Background(), nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewSecureScoreControlProfile()
 controlStateUpdates := "controlStateUpdates-value"
 requestBody.SetControlStateUpdates(&controlStateUpdates) 
 
-graphClient.Security().SecureScoreControlProfilesById("secureScoreControlProfile-id").Patch(requestBody)
+result, err := graphClient.Security().SecureScoreControlProfilesById("secureScoreControlProfile-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

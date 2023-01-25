@@ -1,7 +1,7 @@
 ---
 title: "windowsPhone81ImportedPFXCertificateProfile resource type"
 description: "Windows 8.1 Phone and Mobile PFX Import certificate profile"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -114,9 +114,3 @@ Here is a JSON representation of the resource.
   "intendedPurpose": "String"
 }
 ```
-
-
-
-
-
-

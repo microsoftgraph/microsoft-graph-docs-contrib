@@ -20,7 +20,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollections().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollections().Post(context.Background(), requestBody, nil)
 
 
 ```

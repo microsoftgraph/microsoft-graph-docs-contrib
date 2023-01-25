@@ -19,7 +19,7 @@ requestBody.SetVersion(&version)
 sourceImageResourceId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage"
 requestBody.SetSourceImageResourceId(&sourceImageResourceId) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -65,7 +65,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
 var authCodeCredential = new AuthorizationCodeCredential(
     tenantId, clientId, clientSecret, authorizationCode, options);
 
@@ -170,7 +170,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -184,11 +183,7 @@ cred, err := azidentity.NewAuthorizationCodeCredential(
     },
 )
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```
@@ -224,7 +219,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
 var clientSecretCredential = new ClientSecretCredential(
     tenantId, clientId, clientSecret, options);
 
@@ -250,7 +245,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
 var clientCertCredential = new ClientCertificateCredential(
     tenantId, clientId, clientCertificate, options);
 
@@ -327,7 +322,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -338,11 +332,7 @@ cred, err := azidentity.NewClientSecretCredential(
     nil,
 )
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```
@@ -482,7 +472,7 @@ Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) =>
     return Task.FromResult(0);
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.devicecodecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
 var deviceCodeCredential = new DeviceCodeCredential(
     callback, tenantId, clientId, options);
 
@@ -560,7 +550,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -572,11 +561,7 @@ cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredential
     },
 })
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```
@@ -678,7 +663,7 @@ var options = new InteractiveBrowserCredentialOptions
     RedirectUri = new Uri("http://localhost"),
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(options);
 
 var graphClient = new GraphServiceClient(interactiveCredential, scopes);
@@ -754,7 +739,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -764,11 +748,7 @@ cred, err := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveB
     RedirectURL: "REDIRECT_URL",
 })
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```
@@ -800,7 +780,7 @@ var options = new TokenCredentialOptions
 var userName = "adelev@contoso.com";
 var password = "P@ssword1!";
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
 var userNamePasswordCredential = new UsernamePasswordCredential(
     userName, password, tenantId, clientId, options);
 
@@ -856,7 +836,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -868,11 +847,7 @@ cred, err := azidentity.NewUsernamePasswordCredential(
     nil,
 )
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```

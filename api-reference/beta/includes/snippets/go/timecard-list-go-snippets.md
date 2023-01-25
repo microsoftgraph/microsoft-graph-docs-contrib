@@ -11,15 +11,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestTop := int32(2)
 requestFilter := "state eq 'clockedOut'"
 
-requestParameters := &graphconfig.TimeCardsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TimeCardsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().Get(context.Background(), configuration)
 
 
 ```

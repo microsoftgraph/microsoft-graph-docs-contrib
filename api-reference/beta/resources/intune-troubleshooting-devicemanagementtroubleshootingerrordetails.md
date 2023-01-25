@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementTroubleshootingErrorDetails resource type"
 description: "Object containing detailed information about the error and its remediation."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -50,7 +50,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-

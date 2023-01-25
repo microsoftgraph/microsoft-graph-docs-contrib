@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestQuery := "Adventure"
 
-requestParameters := &graphconfig.BookingBusinessesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SolutionsBookingBusinessesRequestBuilderGetQueryParameters{
 	Query: &requestQuery,
 }
-configuration := &graphconfig.BookingBusinessesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SolutionsBookingBusinessesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Solutions().BookingBusinesses().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Solutions().BookingBusinesses().Get(context.Background(), configuration)
 
 
 ```

@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "VideoTeleconferenceId eq '123456789'"
 
-requestParameters := &graphconfig.OnlineMeetingsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.CommunicationsOnlineMeetingsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.OnlineMeetingsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.CommunicationsOnlineMeetingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Communications().OnlineMeetings().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Communications().OnlineMeetings().Get(context.Background(), configuration)
 
 
 ```

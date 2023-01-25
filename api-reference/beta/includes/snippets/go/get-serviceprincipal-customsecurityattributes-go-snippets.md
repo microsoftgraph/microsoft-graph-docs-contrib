@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.ServicePrincipalRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.ServicePrincipalItemRequestBuilderGetQueryParameters{
 	Select: [] string {"customSecurityAttributes"},
 }
-configuration := &graphconfig.ServicePrincipalRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ServicePrincipalItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Get(context.Background(), configuration)
 
 
 ```

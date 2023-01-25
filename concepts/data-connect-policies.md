@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Data Connect policies and billing"
 description: "Learn about Azure policies supported for an app built with Microsoft 365 data and the bill associated with the Azure Synapse or Azure Data Factory you are using."
-author: "fercobo-msft"
+author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---

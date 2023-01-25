@@ -17,7 +17,7 @@ configuration := &graphconfig.PrivilegedRoleAssignmentsRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.PrivilegedRoleAssignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.PrivilegedRoleAssignments().Get(context.Background(), configuration)
 
 
 ```

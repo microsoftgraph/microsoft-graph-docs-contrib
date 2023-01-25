@@ -1,7 +1,7 @@
 ---
 title: "windowsPackageInformation resource type"
 description: "Contains properties for the package information for a Windows line of business app."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -65,9 +65,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

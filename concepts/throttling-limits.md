@@ -35,7 +35,7 @@ The preceding limits apply to the following resources:
 
 - [educationAssignment](/graph/api/resources/educationassignment)
 - [educationSubmission](/graph/api/resources/educationsubmission)
-- [trending](/graph/api/resources/trending)
+- [trending](/graph/api/resources/insights-trending)
 - [educationResource](/graph/api/resources/educationresource)
 
 ## Cloud communication service limits
@@ -237,10 +237,10 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-- [people](/graph/api/resources/people)
-- [sharedInsight](/graph/api/resources/sharedinsight)
-- [trending](/graph/api/resources/trending)
-- [usedInsight](/graph/api/resources/usedinsight)
+- [people](/graph/api/resources/insightssettings)
+- [sharedInsight](/graph/api/resources/insights-shared)
+- [trending](/graph/api/resources/insights-trending)
+- [usedInsight](/graph/api/resources/insights-used)
 
 ## Intune service limits
 
@@ -328,7 +328,8 @@ Limits are expressed as requests per second (rps).
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
-A maximum of 3000 messages per app per day can be sent to a given channel.
+A maximum of 3000 messages per app per day can be sent to a given channel 
+(except when using [migration mode](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
@@ -398,8 +399,8 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 
 The preceding limits apply to the following resources:
 
-- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
-- [userActivity](/graph/api/resources/useractivity)
+- [activityHistoryItem](/graph/api/resources/projectrome-historyitem)
+- [userActivity](/graph/api/resources/projectrome-activity)
 
 ## Security detections and incidents service limits
 
@@ -412,6 +413,13 @@ The following limits apply to any request on `/security`.
 | Any operation on `secureScore` or `secureScorecontrolProfile` | 10,000 API requests in a 10 minute period |
 | Any operation on `secureScore` or `secureScorecontrolProfile` | 4 concurrent requests |
 
+## Security eDiscovery service limits
+
+The following limits apply to any request on `/security/eDiscoveryCases`.
+
+| Operation                  | Limit per app per tenant     |
+|----------------------------|------------------------------|
+| Any | 5 requests per minute |
 
 ## Service Communications service limits
 The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.

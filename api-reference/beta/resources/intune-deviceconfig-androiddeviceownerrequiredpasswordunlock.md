@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerRequiredPasswordUnlock enum type"
 description: "An enum representing possible values for required password unlock."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,9 +23,3 @@ An enum representing possible values for required password unlock.
 |deviceDefault|0|Timeout period before strong authentication is required is set to the device's default.|
 |daily|1|Timeout period before strong authentication is required is set to 24 hours.|
 |unkownFutureValue|2|Unknown future value (reserved, not used right now)|
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyUploadedDefinitionFileStatus enum type"
 description: "Type of Group Policy uploaded definition file status."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -27,9 +27,3 @@ Type of Group Policy uploaded definition file status.
 |removalInProgress|4|Group Policy uploaded definition file removal in progress.|
 |uploadFailed|5|Group Policy uploaded definition file upload failed.|
 |removalFailed|6|Group Policy uploaded definition file removal failed.|
-
-
-
-
-
-

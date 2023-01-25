@@ -11,15 +11,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestTop := int32(100)
 requestSkip := int32(0)
 
-requestParameters := &graphconfig.DecisionsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MePendingAccessReviewInstanceItemDecisionsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.DecisionsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MePendingAccessReviewInstanceItemDecisionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().PendingAccessReviewInstancesById("accessReviewInstance-id").Decisions().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().PendingAccessReviewInstancesById("accessReviewInstance-id").Decisions().Get(context.Background(), configuration)
 
 
 ```

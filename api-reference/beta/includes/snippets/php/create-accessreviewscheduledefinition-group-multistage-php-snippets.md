@@ -86,16 +86,6 @@ $requestBody->setStageSettings($stageSettingsArray);
 
 
 $settings = new AccessReviewScheduleSettings();
-$settings->setMailNotificationsEnabled(true);
-
-$settings->setReminderNotificationsEnabled(true);
-
-$settings->setJustificationRequiredOnApproval(true);
-
-$settings->setDefaultDecisionEnabled(false);
-
-$settings->setDefaultDecision('None');
-
 $settings->setInstanceDurationInDays(4);
 
 $settingsRecurrence = new PatternedRecurrence();

@@ -7,23 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
 
 requestCount := true
 
-requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DirectoryDeletedItemsMicrosoft.graph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	OrderBy: [] string {"deletedDateTime asc"},
 	Select: [] string {"id","DisplayName","deletedDateTime"},
 }
-configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DirectoryDeletedItemsMicrosoft.graph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().DeletedItems().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Directory().DeletedItems().Group().Get(context.Background(), configuration)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "macOSContentCachingClientPolicy enum type"
 description: "Determines which clients a content cache will serve."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -25,9 +25,3 @@ Determines which clients a content cache will serve.
 |clientsWithSamePublicIpAddress|2|Content caches will provide content to devices that share the same public IP address.|
 |clientsInCustomLocalNetworks|3|Content caches will provide content to devices in contentCachingClientListenRanges.|
 |clientsInCustomLocalNetworksWithFallback|4|Content caches will provide content to devices in contentCachingClientListenRanges, contentCachingPeerListenRanges, and contentCachingParents.|
-
-
-
-
-
-
