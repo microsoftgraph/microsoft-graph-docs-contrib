@@ -555,7 +555,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getDevicesWithoutCompliancePolicyReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getDevicesWithoutCompliancePolicyReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Added the [getDevicesWithoutCompliancePolicyReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta) resource.",
           "Target": "deviceManagementReports"
         }
       ],
@@ -613,7 +613,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditActivityTypes",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditActivityTypes](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getAuditActivityTypes](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
           "Target": "auditEvent"
         },
         {
@@ -621,7 +621,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditCategories",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
           "Target": "auditEvent"
         }
       ],
@@ -655,7 +655,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setScheduledRetireState",
           "ChangeType": "Addition",
-          "Description": "Added the [setScheduledRetireState](https://learn.microsoft.com/graph/api/intune-deviceCompliancePolicy?view=graph-rest-beta) method to the [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/intune-deviceCompliancePolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [setScheduledRetireState](https://learn.microsoft.com/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) method to the [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) resource.",
           "Target": "deviceCompliancePolicy"
         },
         {
@@ -663,7 +663,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setScheduledRetireState",
           "ChangeType": "Deletion",
-          "Description": "Removed the **setScheduledRetireState** method from the [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/intune-deviceCompliancePolicy?view=graph-rest-beta) resource.",
+          "Description": "Removed the **setScheduledRetireState** method from the [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) resource.",
           "Target": "deviceCompliancePolicy"
         },
         {
@@ -711,7 +711,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reorder",
           "ChangeType": "Addition",
-          "Description": "Added the [reorder](https://learn.microsoft.com/graph/api/intune-deviceManagementConfigurationPolicy?view=graph-rest-beta) method to the [deviceManagementConfigurationPolicy](https://learn.microsoft.com/graph/api/intune-deviceManagementConfigurationPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [reorder](https://learn.microsoft.com/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy?view=graph-rest-beta) method to the [deviceManagementConfigurationPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy?view=graph-rest-beta) resource.",
           "Target": "deviceManagementConfigurationPolicy"
         },
         {
@@ -1147,7 +1147,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getNoncompliantDevicesToRetire",
           "ChangeType": "Addition",
-          "Description": "Added the [getNoncompliantDevicesToRetire](https://learn.microsoft.com/graph/api/intune-deviceCompliancePolicy?view=graph-rest-beta) method to the [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/intune-deviceCompliancePolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [getNoncompliantDevicesToRetire](https://learn.microsoft.com/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) method to the [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) resource.",
           "Target": "deviceCompliancePolicy"
         },
         {
