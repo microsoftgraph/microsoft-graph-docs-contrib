@@ -33,7 +33,7 @@ APIs for managing apps installed in a user's personal scope are not supported in
 
 ## Get chat doesn't support chats with meetings
 
-The [Get chat](graph/api/chat-get) API doesn't support chats with meetings associated with them in application context in the Microsoft 365 GCC High environment in the Microsoft Graph for US Government L4 national cloud.
+The [Get chat](/graph/api/chat-get) API doesn't support chats with meetings associated with them in application context in the Microsoft 365 GCC High environment in the Microsoft Graph for US Government L4 national cloud.
 
 ## Meeting transcript APIs are not supported
 
