@@ -8,7 +8,9 @@ doc_type: conceptualPageType
 
 # Teamwork and communications API implementation differences in national clouds
 
-This article describes implementation differences between the Microsoft Graph global endpoint and the different national clouds for the teamwork and communications APIs.
+This article describes teamwork and communications API implementation differences between the Microsoft Graph global endpoint and the national clouds.
+
+For general information about national cloud availability for Microsoft Graph APIs, see [National cloud deployments](/graph/deployments).
 
 ## List messages in a chat API doesn't support `OrderBy`
 
