@@ -21722,6 +21722,8 @@ items:
                 href: api/identitygovernance-workflow-list-task.md
               - name: Get task
                 href: api/identitygovernance-task-get.md
+              - name: Update task
+                href: api/identitygovernance-task-update.md  
             - name: Reports
               displayName: Lifecycle Workflows
               items:
