@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appliedEventListeners",
           "ChangeType": "Addition",
-          "Description": "Added the `appliedEventListeners` property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **appliedEventListeners** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         }
       ],

@@ -1,6 +1,6 @@
 ---
 title: "customExtensionCalloutResult resource type"
-description: "Indicates the result of an API request to the custom extension endpoint. This object is used by the appliedEventListeners object of sign-ins."
+description: "Indicates the result of an an API request to the custom extension endpoint. This object is used by the appliedEventListeners object of sign-ins. This object is used by the appliedEventListeners object of sign-ins."
 author: "junrlin"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"

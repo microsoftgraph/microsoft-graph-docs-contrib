@@ -121,18 +121,17 @@ The following is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"
     }
   ],
-<<<<<<< HEAD
   "appliedEventListeners": [
     {
       "@odata.type": "microsoft.graph.appliedAuthenticationEventListener"
-=======
+    }
+  ],
   "authenticationAppDeviceDetails": {
       "@odata.type": "microsoft.graph.authenticationAppDeviceDetails"
   },
   "authenticationAppPolicyEvaluationDetails": [
     {
       "@odata.type": "microsoft.graph.authenticationAppPolicyDetails"
->>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
     }
   ],
   "authenticationDetails": [
