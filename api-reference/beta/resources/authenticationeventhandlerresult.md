@@ -1,6 +1,6 @@
 ---
 title: "authenticationEventHandlerResult resource type"
-description: "Indicates the handler result of this authentication event."
+description: "An abstract type that defines the result of authentication to event listeners in Azure AD sign-ins."
 author: "junrlin"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,13 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the handler result of this authentication event.
-
-This is an abstract type.
+An abstract type that defines the result of authentication to event listeners in Azure AD sign-ins. This abstract type is inherited by the [customExtensionCalloutResult](../resources/customextensioncalloutresult.md) resource type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+None.
 
 ## Relationships
 None.

@@ -33,7 +33,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |appDisplayName|String|The application name displayed in the Azure Portal. Supports `$filter` (`eq` and `startsWith` operators only).|
 |appId|String|The application identifier in Azure Active Directory. Supports `$filter` (`eq` operator only).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that are triggered by the corresponding sign-in activity.|
-|appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the applied event listeners or listeners that were triggered by the corresponding events in an authentication activity.|
+|appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, that were triggered by the corresponding events in the sign-in event.|
 |authenticationContextClassReferences|[authenticationContext](authenticationcontext.md) collection|Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in.|
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and additional details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
