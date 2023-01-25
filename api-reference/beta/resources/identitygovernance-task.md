@@ -25,6 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List tasks](../api/identitygovernance-workflow-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get a list of the [task](../resources/identitygovernance-task.md) objects and their properties.|
 |[Get task](../api/identitygovernance-task-get.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Read the properties and relationships of a [task](../resources/identitygovernance-task.md) object.|
+|[Update task](../api/identitygovernance-task-update.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|update the properties of a [task](../resources/identitygovernance-task.md) object.|
 
 
 ## Properties
