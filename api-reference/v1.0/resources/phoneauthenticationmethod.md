@@ -19,6 +19,8 @@ Mobile phones can be used for both SMS and voice calls, depending on the tenant 
 
 An office phone can only receive voice calls, not SMS messages.
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+
 ## Methods
 
 | Method       | Return Type | Description |

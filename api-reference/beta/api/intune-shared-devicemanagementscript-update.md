@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementScript"
 description: "Update the properties of a deviceManagementScript object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -81,10 +81,7 @@ Content-length: 443
 {
   "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
-  "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
+  "description": "Description value", 
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
@@ -120,13 +117,3 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
-
-
-
-
-
-
-
-
-
