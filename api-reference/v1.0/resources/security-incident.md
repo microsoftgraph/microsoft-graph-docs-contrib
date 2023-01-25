@@ -50,7 +50,8 @@ Because piecing the individual alerts together to gain insight into an attack ca
 
 | Member              | Description                                                                                                           |
 | :-------------------| :-------------------------------------------------------------------------------------------------------------------- |
-| active			        | The incident is in active state.                                                                                      |
+| active			  | The incident is in active state.                                                                                      |
+| inProgress          | The incident is in mitigation progress.                                                                               |
 | resolved            | The incident is in resolved state.                                                                                    |
 | redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property. |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                     |
