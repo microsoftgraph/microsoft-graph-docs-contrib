@@ -796,6 +796,24 @@
       "CreatedDateTime": "2022-08-26T16:03:39.5633059Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    }, 	  
+    {
+      "ChangeList": [
+        {
+          "Id": "00e009a6-0eaf-423f-9ed2-fe86808382ac",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.ReadBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `User.ReadBasic.All` application permission to read a basic set of profile properties of other users in your organization without a signed-in user.",
+          "Target": "user"
+        }
+      ],
+      "Id": "00e009a6-0eaf-423f-9ed2-fe86808382ac",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-25T00:00:00.0123959Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
     },
     {
       "ChangeList": [
