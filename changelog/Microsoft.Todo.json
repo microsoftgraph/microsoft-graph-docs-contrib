@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hasAttachments",
           "ChangeType": "Addition",
-          "Description": "Added the `hasAttachments` property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Description": "Added the **hasAttachments** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
           "Target": "todoTask"
         },
         {
