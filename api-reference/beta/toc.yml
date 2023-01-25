@@ -20610,6 +20610,18 @@ items:
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
               href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
+          - name: Partner user sync settings
+            items:
+            - name: Cross-tenant access partner user sync settings
+              href: resources/crosstenantidentitysyncpolicypartner.md
+            - name: Create
+              href: api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
+            - name: Get
+              href: api/crosstenantidentitysyncpolicypartner-get.md
+            - name: Update
+              href: api/crosstenantidentitysyncpolicypartner-update.md
+            - name: Delete
+              href: api/crosstenantidentitysyncpolicypartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -21710,6 +21722,8 @@ items:
                 href: api/identitygovernance-workflow-list-task.md
               - name: Get task
                 href: api/identitygovernance-task-get.md
+              - name: Update task
+                href: api/identitygovernance-task-update.md  
             - name: Reports
               displayName: Lifecycle Workflows
               items:
@@ -24304,6 +24318,8 @@ items:
           href: resources/plannerroster.md
         - name: Create roster
           href: api/planner-post-rosters.md
+        - name: Get roster
+          href: api/plannerroster-get.md
         - name: Delete roster
           href: api/plannerroster-delete.md
         - name: List roster's members
