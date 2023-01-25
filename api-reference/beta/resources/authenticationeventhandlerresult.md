@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 An abstract type that defines the result of authentication to event listeners in Azure AD sign-ins. This abstract type is inherited by the [customExtensionCalloutResult](../resources/customextensioncalloutresult.md) resource type.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
 None.
 
 ## Relationships
