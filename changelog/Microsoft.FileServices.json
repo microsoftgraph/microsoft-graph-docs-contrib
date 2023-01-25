@@ -1199,7 +1199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemPreviewInfo",
           "ChangeType": "Addition",
-          "Description": "Added new complex type:, [itemPreviewInfo](https://learn.microsoft.com/en-us/graph/api/resources/itempreviewinfo?view=graph-rest-beta), ",
+          "Description": "Added new complex type: [itemPreviewInfo](https://learn.microsoft.com/en-us/graph/api/resources/itempreviewinfo?view=graph-rest-beta), ",
           "Target": "itemPreviewInfo"
         },
         {
@@ -1265,7 +1265,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baseItemVersion,driveItemVersion,listItemVersion",
           "ChangeType": "Addition",
-          "Description": "Added new entities:, [baseItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/baseitemversion?view=graph-rest-1.0), [driveItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/driveitemversion?view=graph-rest-1.0), [listItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/listitemversion?view=graph-rest-1.0), ",
+          "Description": "Added new entities: [baseItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/baseitemversion?view=graph-rest-1.0), [driveItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/driveitemversion?view=graph-rest-1.0), [listItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/listitemversion?view=graph-rest-1.0), ",
           "Target": "baseItemVersion,driveItemVersion,listItemVersion"
         },
         {
@@ -1273,7 +1273,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publicationFacet",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [publicationFacet](https://learn.microsoft.com/en-us/graph/api/resources/publicationfacet?view=graph-rest-1.0), ",
+          "Description": "Added new complex types: [publicationFacet](https://learn.microsoft.com/en-us/graph/api/resources/publicationfacet?view=graph-rest-1.0), ",
           "Target": "publicationFacet"
         },
         {
@@ -1511,7 +1511,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "configuratorUrl,webHtml,sharingLink,folderView,view,folder,listItem,driveItem,list,drive",
           "ChangeType": "Change",
-          "Description": "Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. ,  Added the **folderView** resource type and the **view** property to the **folder** resource type. ,  Added the **listItem** navigation property to **driveItem**. ,  Added the **list** navigation property to **drive**.",
+          "Description": "Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. Added the **folderView** resource type and the **view** property to the **folder** resource type.  Added the **listItem** navigation property to **driveItem**. Added the **list** navigation property to **drive**.",
           "Target": ""
         }
       ],
@@ -1537,7 +1537,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sourceItemId,thumbnail,siteUrl,sharepointIds,sharedBy,sharedDateTime,shared,shared,remoteItem,sharepointIds,drive,itemReference,lastAccessedDateTime,fileSystemInfo,driveItem,site,sharedDriveItem,parentReference,baseItem",
           "ChangeType": "Addition",
-          "Description": "Added the **sourceItemId** property to **thumbnail**. ,  Added the **siteUrl** property to **sharepointIds**. ,  Added the **sharedBy** and **sharedDateTime** properties to **shared**. ,  Added the **shared** property to **remoteItem**. ,  Added the **sharepointIds** property to **drive** and **itemReference**. ,  Added **lastAccessedDateTime** to **fileSystemInfo**. ,  Added the **driveItem** and **site** navigation properties to **sharedDriveItem**. ,  Added the **parentReference** property to **baseItem**.",
+          "Description": "Added the **sourceItemId** property to **thumbnail**. Added the **siteUrl** property to **sharepointIds**. Added the **sharedBy** and **sharedDateTime** properties to **shared**. Added the **shared** property to **remoteItem**. Added the **sharepointIds** property to **drive** and **itemReference**. Added **lastAccessedDateTime** to **fileSystemInfo**. Added the **driveItem** and **site** navigation properties to **sharedDriveItem**. Added the **parentReference** property to **baseItem**.",
           "Target": ""
         },
         {
@@ -1545,7 +1545,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "driveItem,sharedDriveItem,baseItem,identity",
           "ChangeType": "Change",
-          "Description": "Changed **driveItem** and **sharedDriveItem** to inherit from **baseItem**. ,  Marked **identity** as an Open Type.",
+          "Description": "Changed **driveItem** and **sharedDriveItem** to inherit from **baseItem**. Marked **identity** as an Open Type.",
           "Target": ""
         }
       ],

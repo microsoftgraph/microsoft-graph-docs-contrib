@@ -1,7 +1,7 @@
 ---
 title: "deviceScopeActionResult resource type"
 description: "The result of the triggered device scope action."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -44,8 +44,3 @@ Here is a JSON representation of the resource.
   "failedMessage": "String"
 }
 ```
-
-
-
-
-
