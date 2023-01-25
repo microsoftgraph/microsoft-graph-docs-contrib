@@ -1,6 +1,6 @@
 ---
 title: "segmentConfiguration resource type"
-description: "Represents segmentsConfiguration object when publishing an on-premises wildcard application with Azure AD Application Proxy."
+description: "An abstract type for defining application segments when publishing an on-premises wildcard application with Azure AD Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinshah"
 ms.prod: "applications"
