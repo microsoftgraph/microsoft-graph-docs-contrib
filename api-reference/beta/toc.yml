@@ -18752,24 +18752,29 @@ items:
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
         - name: Cloud PC reports
-          href: resources/cloudpcreports.md
           items:
-          - name: Create export job
-            href: api/cloudpcreports-post-exportjobs.md
-          - name: Get export job
-            href: api/cloudpcexportjob-get.md
-          - name: Get daily aggregated remote conneciton reports
-            href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-          - name: Get historical remote conneciton reports
-            href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
-          - name: Get real time remote connection latency
-            href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-          - name: Get real time remote connection status
-            href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-          - name: Get shared use license usage reports
-            href: api/cloudpcreports-getshareduselicenseusagereport.md
-          - name: Get total aggregated remote connection reports
-            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+            - name: Cloud PC reports
+              href: resources/cloudpcreports.md
+            - name: Get daily aggregated remote connection reports
+              href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+            - name: Get historical remote conneciton reports
+              href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+            - name: Get real time remote connection latency
+              href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
+            - name: Get real time remote connection status
+              href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+            - name: Get shared-use license usage report
+              href: api/cloudpcreports-getshareduselicenseusagereport.md
+            - name: Get total aggregated remote connection reports
+              href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+            - name: Export to download report
+              items:
+              - name: Cloud PC export job
+                href: resources/cloudpcexportjob.md
+              - name: Create export job
+                href: api/cloudpcreports-post-exportjobs.md
+              - name: Get export job
+                href: api/cloudpcexportjob-get.md
         - name: Cloud PC service plan
           href: resources/cloudpcserviceplan.md
           items:
