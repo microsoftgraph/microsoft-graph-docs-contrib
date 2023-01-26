@@ -1,6 +1,6 @@
 ---
 title: "applicationSegment resource type"
-description: "Represents applicationsegment object when publishing an on-premises wildcard application with Azure AD Application Proxy."
+description: "An abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Azure AD Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinshah"
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type noting the application segment types when publishing an on-premises wildcard application with Azure AD Application Proxy. The following types are derived from this abstract type:
+This is an abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Azure AD Application Proxy. The following types are derived from this abstract type:
 + [webaApplicationSegment](webapplicationsegment.md)
 
 ## Properties
