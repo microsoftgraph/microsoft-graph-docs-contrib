@@ -621,7 +621,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditCategories",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",          
           "Target": "auditEvent"
         }
       ],
@@ -639,7 +639,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "macOSMicrosoftDefenderApp",
           "ChangeType": "Addition",
-          "Description": "Added the [macOSMicrosoftDefenderApp](https://learn.microsoft.com/graph/api/resources/intune-macOSMicrosoftDefenderApp?view=graph-rest-beta) resource",
+          "Description": "Added the macOSMicrosoftDefenderApp resource",
           "Target": "macOSMicrosoftDefenderApp"
         },
         {
@@ -727,7 +727,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "terminate",
           "ChangeType": "Addition",
-          "Description": "Added the [terminate](https://learn.microsoft.com/graph/api/intune-deviceManagementPartner?view=graph-rest-beta) method to the [deviceManagementPartner](https://learn.microsoft.com/graph/api/intune-deviceManagementPartner?view=graph-rest-beta) resource.",
+          "Description": "Added the terminate method to the deviceManagementPartner resource.",
           "Target": "deviceManagementPartner"
         },
         {
@@ -751,7 +751,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledForEnrollmentCount",
           "ChangeType": "Addition",
-          "Description": "Added the `scheduledForEnrollmentCount` property to the [comanagementEligibleDevicesSummary](https://learn.microsoft.com/graph/api/resources/intune-devices-devicemanagement-getcomanagementeligibledevicessummary?view=graph-rest-beta) resource.",
+          "Description": "Added the `scheduledForEnrollmentCount` property to the comanagementEligibleDevicesSummary resource.",
           "Target": "comanagementEligibleDevicesSummary"
         },
         {
@@ -767,7 +767,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsDeviceScopeSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsDeviceScopeSummary](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsDeviceScopeSummary?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsDeviceScopeSummary resource type.",
           "Target": "userExperienceAnalyticsDeviceScopeSummary"
         },
         {
@@ -807,7 +807,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summarizeDeviceRegressionPerformance",
           "ChangeType": "Deletion",
-          "Description": "Removed the **summarizeDeviceRegressionPerformance** method from the [userExperienceAnalyticsRegressionSummary](https://learn.microsoft.com/graph/api/intune-userExperienceAnalyticsRegressionSummary?view=graph-rest-beta) resource.",
+          "Description": "Removed the **summarizeDeviceRegressionPerformance** method from the userExperienceAnalyticsRegressionSummary resource.",
           "Target": "userExperienceAnalyticsRegressionSummary"
         },
         {
@@ -921,7 +921,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v6_0",
           "ChangeType": "Addition",
-          "Description": "Added the `v6_0` property to the [androidMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Description": "Added the `v6_0` property to the androidMinimumOperatingSystem resource.",
           "Target": "androidMinimumOperatingSystem"
         },
         {
@@ -929,7 +929,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v7_0",
           "ChangeType": "Addition",
-          "Description": "Added the `v7_0` property to the [androidMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Description": "Added the `v7_0` property to the androidMinimumOperatingSystem resource.",
           "Target": "androidMinimumOperatingSystem"
         },
         {
@@ -937,7 +937,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v7_1",
           "ChangeType": "Addition",
-          "Description": "Added the `v7_1` property to the [androidMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Description": "Added the `v7_1` property to the androidMinimumOperatingSystem resource.",
           "Target": "androidMinimumOperatingSystem"
         },
         {
@@ -945,7 +945,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v8_0",
           "ChangeType": "Addition",
-          "Description": "Added the `v8_0` property to the [androidMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Description": "Added the `v8_0` property to the androidMinimumOperatingSystem resource.",
           "Target": "androidMinimumOperatingSystem"
         },
         {

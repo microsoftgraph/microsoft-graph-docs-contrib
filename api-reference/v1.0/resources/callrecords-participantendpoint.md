@@ -37,9 +37,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"},
   "feedback": {"@odata.type": "microsoft.graph.callRecords.userFeedback"},
-  "identity": {"@odata.type": "microsoft.graph.identitySet"}
+  "identity": {"@odata.type": "microsoft.graph.identitySet"},
+  "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"}
 }
 ```
 
