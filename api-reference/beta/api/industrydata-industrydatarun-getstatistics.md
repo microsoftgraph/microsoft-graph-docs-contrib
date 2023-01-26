@@ -92,32 +92,32 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.industryData.industryDataRunStatistics",
   "activityStatistics": [
     {
-      "count": "154390",
+      "count": 154390,
       "role": "student"
     },
     {
-      "count": "59820",
+      "count": 59820,
       "role": "teacher"
     }
   ],
   "inboundTotals": {
-    "errors": "0",
-    "groups": "565987",
+    "errors": 0,
+    "groups": 565987,
     "matchedPeopleByRole": [
       {
-        "count": "154390",
+        "count": 154390,
         "role": "student"
       },
       {
-        "count": "59820",
+        "count": 59820,
         "role": "teacher"
       }
     ],
-    "memberships": "1235120",
-    "organizations": "16",
-    "people": "278473",
+    "memberships": 1235120,
+    "organizations": 16,
+    "people": 278473,
     "unmatchedPeopleByRole": [],
-    "warnings": "0"
+    "warnings": 0
   },
   "runId": "918d4a8f-599b-4f6a-b409-e892855db534",
   "status": "completed"

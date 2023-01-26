@@ -76,7 +76,7 @@ Content-length: 104
 
 {
     "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
-    "displayName": "CSV connector"
+    "displayName": "CSV connector",
     "sourceSystem@odata.bind": "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')"
 }
 ```
