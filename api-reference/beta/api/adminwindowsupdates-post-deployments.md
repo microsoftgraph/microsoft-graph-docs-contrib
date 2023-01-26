@@ -70,10 +70,12 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
   "audience": {
+    "id": "55de2cc5-3c18-476e-ac69-b704733efeb5"
   },
   "content": {
     "@odata.type": "microsoft.graph.windowsUpdates.catalogContent",
     "catalogEntry": {
+      "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry", 
       "@odata.id": "catalog/entries/1"
     }
   },
@@ -143,26 +145,15 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
   "id": "b5171742-1742-b517-4217-17b5421717b5",
+  "createdDateTime": "2023-01-26T05:08:38.118213Z",
+  "lastModifiedDateTime": "2023-01-26T05:08:38Z",
   "state": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
     "value": "offering",
-    "reasons": [
-      {
-        "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
-        "value": "offeringByRequest"
-      }
-    ],
+    "reasons": [],
     "requestedValue": "none",
-    "effectiveSinceDate": "String (timestamp)"
-  },
-  "audience": {
-    "id": "1",
-    "members": []
   },
   "content": {
     "@odata.type": "microsoft.graph.windowsUpdates.catalogContent",
-    "catalogEntry": {
-      "@odata.id": "catalog/entries/1"
     }
   },
   "settings": {
@@ -187,8 +178,5 @@ Content-Type: application/json
     "userExperience": null,
     "safeguard": null
   },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
