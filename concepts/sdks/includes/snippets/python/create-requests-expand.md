@@ -11,7 +11,7 @@ request_config = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfigur
     query_parameters=query_params,
 )
 
-messages = asyncio.run(client.me()
+messages = asyncio.run(client.me
                        .messages_by_id('msgId')
                        .get(request_configuration=request_config))
 ```
