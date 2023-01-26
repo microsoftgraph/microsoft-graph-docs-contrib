@@ -76,14 +76,7 @@ Content-length: 570
   },
   "deploymentSettings": {
     "contentApplicability": {
-      "offerWhileRecommendedBy": ["Microsoft"],
-      "safeguard": {
-        "disabledSafeguardProfiles": [
-          {
-              "category": "likelyIssues"
-          }
-        ]
-      }
+      "offerWhileRecommendedBy": ["Microsoft"]
     },
     "schedule": {
       "startDateTime": "2020-06-09T10:00:00Z",
@@ -106,7 +99,7 @@ The following is an example of the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
@@ -125,15 +118,8 @@ Content-Type: application/json
   },
   "deploymentSettings": {
     "contentApplicability": {
-      "offerWhileRecommendedBy": ["Microsoft"],
-      "safeguard": {
-        "disabledSafeguardProfiles": [
-          {
-              "category": "likelyIssues"
-          }
-        ]
-      }
-    },
+      "offerWhileRecommendedBy": ["Microsoft"]
+     },
     "schedule": {
       "startDateTime": "2020-06-09T10:00:00Z",
       "gradualRollout": {
