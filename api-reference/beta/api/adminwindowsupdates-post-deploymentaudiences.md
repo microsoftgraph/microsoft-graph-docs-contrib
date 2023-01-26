@@ -37,17 +37,9 @@ POST /admin/windows/updates/deploymentAudiences
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.
-
-You can specify the following properties when you create a **deploymentAudience**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|The assets to exclude from the audience.|
-|members|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|The assets to include in the audience.|
+Do not supply a request body for this method.
 
 ## Response
 
