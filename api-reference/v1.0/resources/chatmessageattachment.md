@@ -41,10 +41,10 @@ An entity of type `chatMessageAttachment` is returned as part of the [Get channe
 
 ```json
 {
-  "id": "string (identifier)",
+  "content": "string",
   "contentType": "string",
   "contentUrl": "string",
-  "content": "string",
+  "id": "string (identifier)",
   "name": "string",
   "thumbnailUrl": "string"
 }

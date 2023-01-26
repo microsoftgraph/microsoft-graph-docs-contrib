@@ -2661,7 +2661,7 @@
             "SubArea": "Cloud PC"
         },
         {
-            "ChangList": [
+            "ChangeList": [
                 {
                     "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
                     "ApiChange": "Enum type",

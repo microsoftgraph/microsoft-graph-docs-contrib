@@ -36,11 +36,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "sourceId": "String",
-  "targetId": "String",
   "errorDetails": {
     "@odata.type": "microsoft.graph.genericError"
-  }
+  },
+  "sourceId": "String",
+  "targetId": "String"
 }
 ```
 
