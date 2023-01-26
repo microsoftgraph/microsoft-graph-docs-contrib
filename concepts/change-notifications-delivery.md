@@ -29,7 +29,7 @@ Using Azure Event Hubs to receive change notifications differs from webhooks in 
 
 This section will walk you through the setup of required Azure services.
 
-#### Option 1: Using the Azure CLI
+# [Use Azure CLI](#tab/change-notifications-eventhubs-azure-cli)
 
 The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate adminstrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
@@ -68,7 +68,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 > **Note:** The script provided here is compatible with Linux based shells, Windows WSL, and Azure Cloud Shell. It will require some updates to run in Windows shells.
 
-#### Option 2: Using the Azure Portal
+# [Use the Azure portal](#tab/change-notifications-eventhubs--azure-portal)
 
 ##### Configuring the Azure Event Hub
 
@@ -116,6 +116,9 @@ Steps:
 1. Give a name to the secret, and keep the name for later; you will need it for the next step. For the value, paste in the connection string you generated at the Event Hubs step. Click **Create**.  
 1. Click **Access Policies** and **+ Add Access Policy**.  
 1. For **Secret permissions**, select **Get**, and for **Select Principal**, select **Microsoft Graph Change Tracking**. Click **Add**.  
+
+
+---
 
 ### Creating the subscription and receiving notifications
 
