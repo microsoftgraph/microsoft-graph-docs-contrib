@@ -38,7 +38,7 @@ Base type of [fileDataConnector](../resources/industrydata-filedataconnector.md)
 
 | Relationship | Type                                                             | Description                                                    |
 | :----------- | :--------------------------------------------------------------- | :------------------------------------------------------------- |
-| sourceSystem | [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. |
+| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. |
 
 ## JSON representation
 

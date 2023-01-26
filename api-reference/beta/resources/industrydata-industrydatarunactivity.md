@@ -36,7 +36,7 @@ Base type of [inboundFlowActivity](../resources/industrydata-inboundflowactivity
 
 | Relationship | Type                                                         | Description                      |
 | :----------- | :----------------------------------------------------------- | :------------------------------- |
-| activity     | [industryDataActivity](industrydata-industrydataactivity.md) | The flow that was run by this activity. |
+| activity     | [microsoft.graph.industryData.industryDataActivity](industrydata-industrydataactivity.md) | The flow that was run by this activity. |
 
 ## JSON representation
 

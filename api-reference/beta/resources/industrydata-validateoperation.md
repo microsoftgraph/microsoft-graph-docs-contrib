@@ -15,19 +15,22 @@ Namespace: microsoft.graph.industryData
 
 Represents an abstract type for the asynchronous operation that results from any operation that validates data.
 
+Inherits from [longRunningOperation](../resources/longrunningoperation.md).
+
 Base type of [fileValidateOperation](../resources/industrydata-filevalidateoperation.md).
 
 ## Properties
 
-|           Property |                                                     Type |                                                                                                                          Description |
-| -----------------: | -------------------------------------------------------: | -----------------------------------------------------------------------------------------------------------------------------------: |
-|    createdDateTime |                                           DateTimeOffset |                                                                                   The date and time when this operation was created. |
-|             errors | [microsoft.graph.publicError](publicerror.md) collection |                                                                                         Set of errors discovered through validation. |
-| lastActionDateTime |                                           DateTimeOffset |                                                                    The date and time when the last action was run on this operation. |
-|   resourceLocation |                                                   String |                                                                                                   The canonical URL of the resource. |
-|             status |                               longRunningOperationStatus | The status of the long-running operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
-|       statusDetail |                                                   String |                                                                                                   The detail about the status value. |
-|           warnings | [microsoft.graph.publicError](publicerror.md) collection |                                                                                       Set of warnings discovered through validation. |
+| Property           | Type                                                     | Description                                                                                                                                                                                                       |
+|:-------------------|:---------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| createdDateTime    | DateTimeOffset                                           | The date and time when this operation was created. Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                   |
+| errors             | [microsoft.graph.publicError](publicerror.md) collection | Set of errors discovered through validation.                                                                                                                                                                      |
+| id                 | String                                                   | The unique identifier for the operation. Inherited from [entity](../resources/entity.md).                                                                                                                         |
+| lastActionDateTime | DateTimeOffset                                           | The date and time when the last action was run on this operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                    |
+| resourceLocation   | String                                                   | The canonical URL of the resource. Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                                   |
+| status             | longRunningOperationStatus                               | The status of the long-running operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md). Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
+| statusDetail       | String                                                   | The detail about the status value. Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                                   |
+| warnings           | [microsoft.graph.publicError](publicerror.md) collection | Set of warnings discovered through validation.                                                                                                                                                                    |
 
 ## Relationships
 

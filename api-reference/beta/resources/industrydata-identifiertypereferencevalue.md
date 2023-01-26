@@ -27,7 +27,7 @@ Inherits from [referenceValue](industrydata-referencevalue.md).
 
 | Relationship | Type                                                       | Description                                                                                                            |
 | :----------- | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| value        | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [referenceValue](industrydata-referencevalue.md) |
+| value        | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [referenceValue](industrydata-referencevalue.md) |
 
 ## JSON representation
 
