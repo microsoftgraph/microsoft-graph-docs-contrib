@@ -3,7 +3,7 @@ title: "sourceSystemDefinition resource type"
 description: "Represents an external data source in the real world."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

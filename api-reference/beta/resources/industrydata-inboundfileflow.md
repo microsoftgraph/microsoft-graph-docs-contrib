@@ -3,7 +3,7 @@ title: "inboundFileFlow resource type"
 description: "Represents a flow to import data via a set of files into the canonical store."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

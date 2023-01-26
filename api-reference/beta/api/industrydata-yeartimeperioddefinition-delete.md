@@ -3,7 +3,7 @@ title: "Delete yearTimePeriodDefinition"
 description: "Delete a yearTimePeriodDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_yearTimePeriodDefinition_from_",
+  "name": "delete_yearTimePeriodDefinition_from_",
   "sampleKeys": ["0c629a1a-a85c-4365-bdf0-623a32ca69cb"]
 }
 -->

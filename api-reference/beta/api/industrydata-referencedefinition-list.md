@@ -3,7 +3,7 @@ title: "List referenceDefinitions"
 description: "Get a list of the referenceDefinition objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -86,6 +86,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {

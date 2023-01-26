@@ -3,7 +3,7 @@ title: "industryDataRoot resource type"
 description: "Represents the entry point to all industry data resources."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

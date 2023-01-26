@@ -3,7 +3,7 @@ title: "Update yearTimePeriodDefinition"
 description: "Update the properties of a yearTimePeriodDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 

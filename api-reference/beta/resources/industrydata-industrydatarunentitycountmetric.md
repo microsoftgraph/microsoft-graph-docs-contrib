@@ -3,7 +3,7 @@ title: "industryDataRunEntityCountMetric resource type"
 description: "Represents the measure of total, active, and inactive entries for a single entity."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

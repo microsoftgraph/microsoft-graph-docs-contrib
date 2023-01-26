@@ -1,9 +1,11 @@
 ---
-title: "Microsoft Graph services and features"
+title: "Major services and features in Microsoft Graph"
 description: "Learn how Microsoft Graph's network of Microsoft 365 services and features manage, protect, and extract data to support a wide range of scenarios."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
+ms.prod: "industry-data-etl"
 ms.custom: scenarios:getting-started
+doc_type: conceptual
 ---
 
 # Major services and features in Microsoft Graph
@@ -12,7 +14,7 @@ Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows
 
 ## Users and groups
 
-At the core of Microsoft Graph are the concepts of the user and group. 
+At the core of Microsoft Graph are the concepts of the user and group.
 
 A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. It is the focal point whose identity is protected and access is well-managed. The user's data is what drives businesses. Microsoft Graph services make this data available to businesses in rich contexts, real-time updates, and deep insights, and always only with the appropriate permissions.
 
@@ -20,7 +22,7 @@ A Microsoft 365 _group_ is the fundamental entity that lets users collaborate. I
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](azuread-users-concept-overview.md)|
+| Users | Azure Active Directory (Azure AD) and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](azuread-users-concept-overview.md)|
 |Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | A Microsoft 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Microsoft 365 groups in Microsoft Graph](office365-groups-concept-overview.md) |
 
 ## Connecting users' data, Microsoft 365 services, and your apps

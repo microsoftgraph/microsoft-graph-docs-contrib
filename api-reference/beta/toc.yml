@@ -22046,11 +22046,11 @@ items:
               href: api/agreement-post-files.md
             - name: List localized files
               href: api/agreement-list-files.md
-    - name: Industry Data ETL (preview)
+    - name: Industry data ETL (preview)
       items:
         - name: Overview
           href: resources/industrydata-overview.md
-        - name: Inbound data Flows
+        - name: Inbound data flow
           href: resources/industrydata-inboundflow.md
           items:
             - name: Create
@@ -22063,7 +22063,7 @@ items:
               href: api/industrydata-inboundflow-list.md
             - name: Update
               href: api/industrydata-inboundflow-update.md
-        - name: Industry data Connectors
+        - name: Industry data connector
           href: resources/industrydata-industrydataconnector.md
           items:
             - name: Create
@@ -22080,7 +22080,7 @@ items:
               href: api/industrydata-azuredatalakeconnector-getuploadsession.md
             - name: Validate
               href: api/industrydata-industrydataconnector-validate.md
-        - name: Industry data runs
+        - name: Industry data run
           href: resources/industrydata-industrydatarun.md
           items:
             - name: Get
@@ -22089,7 +22089,28 @@ items:
               href: api/industrydata-industrydatarun-list.md
             - name: Get statistics
               href: api/industrydata-industrydatarun-getstatistics.md
-        - name: Source system definitions
+        - name: Long running operation
+          href: resources/industrydata-longrunningoperation.md
+          items:
+            - name: Get
+              href: api/industrydata-longrunningoperation-get.md
+            - name: List
+              href: api/industrydata-longrunningoperation-list.md
+        - name: Reference definition
+          href: resources/industrydata-referencedefinition.md
+          items:
+            - name: Get
+              href: api/industrydata-referencedefinition-get.md
+            - name: List
+              href: api/industrydata-referencedefinition-list.md
+        - name: Role group
+          href: resources/industrydata-rolegroup.md
+          items:
+            - name: Get
+              href: api/industrydata-rolegroup-get.md
+            - name: List
+              href: api/industrydata-rolegroup-list.md
+        - name: Source system definition
           href: resources/industrydata-sourcesystemdefinition.md
           items:
             - name: Create
@@ -22102,28 +22123,7 @@ items:
               href: api/industrydata-sourcesystemdefinition-list.md
             - name: Update
               href: api/industrydata-sourcesystemdefinition-update.md
-        - name: Long running operations
-          href: resources/industrydata-longrunningoperation.md
-          items:
-            - name: Get
-              href: api/industrydata-longrunningoperation-get.md
-            - name: List
-              href: api/industrydata-longrunningoperation-list.md
-        - name: Reference definitions
-          href: resources/industrydata-referencedefinition.md
-          items:
-            - name: Get
-              href: api/industrydata-referencedefinition-get.md
-            - name: List
-              href: api/industrydata-referencedefinition-list.md
-        - name: Role groups
-          href: resources/industrydata-rolegroup.md
-          items:
-            - name: Get
-              href: api/industrydata-rolegroup-get.md
-            - name: List
-              href: api/industrydata-rolegroup-list.md
-        - name: Year time period definitions
+        - name: Year time period definition
           href: resources/industrydata-yeartimeperioddefinition.md
           items:
             - name: Create

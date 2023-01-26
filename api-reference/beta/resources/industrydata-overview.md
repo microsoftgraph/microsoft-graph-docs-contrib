@@ -3,7 +3,7 @@ title: "Use the industry data API as an extract, transform, and load (ETL) engin
 description: "The industry data API is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: conceptual
 ---
 
@@ -19,7 +19,7 @@ The API provides resources that you can use to retrieve statistics after the dat
 
 ## Overview of application in education
 
-In the current release, the industry data API is highly tailored to the education industry, powering the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into the organization's Azure Data Lake. After normalizing the data in Azure Data Lake, it utilizes the data in multiple outbound flows, synchronizing data with [Insights for Education Leaders](https://support.microsoft.com/topic/leader-s-guide-to-education-insights-premium-8738d1b1-4e1c-49bd-9e8d-b5292474c347) and [Education Data Lake Export](/SchoolDataSync/enable-education-data-lake-export) for custom analtyics scenarios.
+In the current release, the industry data API is highly tailored to the education industry, powering the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into the organization's Azure Data Lake. After normalizing the data in Azure Data Lake, it utilizes the data in multiple outbound flows, synchronizing data with [Insights for Education Leaders](https://support.microsoft.com/topic/leader-s-guide-to-education-insights-premium-8738d1b1-4e1c-49bd-9e8d-b5292474c347) and [Education Data Lake Export](/schooldatasync/enable-education-data-lake-export) for custom analtyics scenarios.
 
 ![Conceptual view of the IndustryData ETL process](/graph/images/industrydata-overview.png)
 

@@ -3,7 +3,7 @@ title: "Delete industryDataConnector"
 description: "Delete an industryDataConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 

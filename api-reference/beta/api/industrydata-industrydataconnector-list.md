@@ -3,7 +3,7 @@ title: "List industryDataConnector"
 description: "Get the industryDataConnector resources from the dataConnector navigation property."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
