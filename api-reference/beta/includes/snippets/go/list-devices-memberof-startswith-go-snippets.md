@@ -16,7 +16,7 @@ requestFilter := "startswith(displayName,%20'A')"
 
 requestParameters := &graphconfig.DeviceItemMemberOfMicrosoft.graph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
-	OrderBy: [] string {"displayName"},
+	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
 configuration := &graphconfig.DeviceItemMemberOfMicrosoft.graph.groupRequestBuilderGetRequestConfiguration{

@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new AttributeSetsRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new AttributeSetsRequestBuilderGetQueryParameters();
-$queryParameters->orderBy = ["id"];
+$queryParameters->orderby = ["id"];
 
 $requestConfiguration->queryParameters = $queryParameters;
 
