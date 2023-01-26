@@ -35,7 +35,8 @@ Content-type: application/json
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "catalog/entries/1"
         }
     },
     "settings": {
@@ -75,9 +76,7 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
         }
     },
     "settings": {
@@ -148,8 +147,6 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
         }
     },
     "settings": {
@@ -216,8 +213,6 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
         }
     },
     "settings": {

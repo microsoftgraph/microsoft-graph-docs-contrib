@@ -15,14 +15,15 @@ Deployments have the following key aspects:
 
 1. Content: The update available to deploy from the catalog. This is represented by the **content** property of the [deployableContent](/graph/api/resources/windowsupdates-deployablecontent) type.
 2. Audience: The devices to receive content. This is an **audience** relationship of the [deploymentAudience](/graph/api/resources/windowsupdates-deploymentaudience) type.
-3. Settings: The settings governing how and when content should be delivered to devices. This is represented by the **settings** property of the [deploymentSettings](/graph/api/resources/windowsupdates-deploymentsettings) type.
-4. State: The current state of the deployment within its lifecycle. This is represented by the **state** property of the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) type.
+3. Policy: The entity that governs the deployment of content to an associated deployment audience.  This is a **policy** relationship of the [updatePolicy](/graph/api/resources/windowsupdates-updatepolicy) type.
+4. Settings: The settings governing how and when content should be delivered to devices. This is represented by the **settings** property of the [deploymentSettings](/graph/api/resources/windowsupdates-deploymentsettings) type.
+5. State: The current state of the deployment within its lifecycle. This is represented by the **state** property of the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) type.
 
 ## Create a deployment with content and an audience
 
 Because content and audience are key to the definition of a deployment, you are required to assign both at the time of creation. While content and audience assignments cannot be changed later, device membership within an audience can.
 
-To learn more about creating a deployment, see [Deploy a feature update](windowsupdates-deploy-update.md) and [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).
+To learn more about creating a deployment, see [Deploy a feature update](windowsupdates-deploy-update.md), [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md), and [Manage driver updates](windowsupdates-manage-driver-updates.md).
 
 ## Configure settings
 
@@ -80,4 +81,4 @@ You can assign a device to multiple deployments at one time. These deployments c
 
 When you assign a device to two deployments for content of different update categories (for example, a feature update and an expedited quality update), the deployment service offers content in a sequence according to Microsoft’s recommendation.
 
-When you assign a device to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021), the deployment service offers the content that is higher ranked by Microsoft. For feature updates and quality updates, more recent updates are higher ranked. This behavior does not apply if one of the deployments is still scheduled for the device and is not ready to offer content. In that case, the other deployment delivers content to the device.
+When you assign a device to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021, or driver version 1.0.0.0 published January 2023 and 1.0.0.1 published February 2023), the deployment service offers the content that is higher ranked by Microsoft. For feature updates and quality updates, more recent updates are higher ranked. For driver updates, applicable updates are typically ranked by version and publication date.  This behavior does not apply if one of the deployments is still scheduled for the device and is not ready to offer content. In that case, the other deployment delivers content to the device.

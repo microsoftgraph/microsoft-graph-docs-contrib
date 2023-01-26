@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 When deploying an update using the deployment service, you can schedule the deployment so that devices receive the update at a future date.
 
-Scheduling features are compatible with [deployments](windowsupdates-deployments.md) of Windows 10 feature updates.
+Scheduling features are compatible with [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates.
 
 ## Schedule a deployment to start at a future date
 
@@ -28,7 +28,8 @@ Content-type: application/json
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "catalog/entries/1"
         }
     },
     "settings": {
@@ -63,8 +64,6 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
         }
     },
     "settings": {
@@ -102,7 +101,8 @@ Content-type: application/json
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "catalog/entries/1"
         }
     },
     "settings": {
@@ -142,8 +142,6 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
         }
     },
     "settings": {
@@ -182,7 +180,8 @@ Content-type: application/json
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "catalog/entries/1"
         }
     },
     "settings": {
@@ -222,8 +221,6 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry": {
-            "@odata.id": "catalog/entries/1"
         }
     },
     "settings": {
