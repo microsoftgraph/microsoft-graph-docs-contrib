@@ -181,7 +181,7 @@ result, err := client.Me().Get(nil)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-You can choose from any of the classes listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [EnvironmentCredential](/python/api/azure-identity/azure.identity.aio.environmentcredential?view=azure-python&preserve-view=true).
+You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true).
 
 ```python
 from azure.identity.aio import AuthorizationCodeCredential
@@ -337,7 +337,7 @@ result, err := client.Me().Get(nil)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-You can choose from any of the classes listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [EnvironmentCredential](/python/api/azure-identity/azure.identity.aio.environmentcredential?view=azure-python&preserve-view=true).
+You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true).
 
 ```python
 from azure.identity.aio import ClientSecretCredential
