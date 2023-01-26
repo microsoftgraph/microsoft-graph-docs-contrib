@@ -1,7 +1,7 @@
 ---
 title: "List audio routing groups"
 description: "Retrieve a list of audioRoutingGroup objects."
-author: "mkhribech"
+author: "hanknguyen"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List audio routing groups
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of **audioRoutingGroup** objects.
 
@@ -58,7 +56,7 @@ The following is an example of a request.
   "name": "get-audioRoutingGroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
+GET https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups
 ```
 
 # [C#](#tab/csharp)
@@ -134,5 +132,3 @@ Content-Length: 302
   ]
 }
 -->
-
-

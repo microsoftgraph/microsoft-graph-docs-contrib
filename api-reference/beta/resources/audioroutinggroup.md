@@ -1,7 +1,7 @@
 ---
 title: "audioRoutingGroup resource type"
 description: "The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation."
-author: "ananmishr"
+author: "hanknguyen"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation.
 
 > **Note:** [ConfigureMixer](../api/participant-configuremixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
@@ -21,7 +19,8 @@ The audio routing group stores a private audio route between participants in a m
 
 | Method                                                  | Return Type                               | Description                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
-| [Get audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Read properties and relationships of audioRoutingGroup object.|
+| [Create](../api/audioroutinggroup-get.md)               | [audioRoutingGroup](audioroutinggroup.md) | Create audioRoutingGroup object.             |
+| [Get](../api/audioroutinggroup-get.md)                  | [audioRoutingGroup](audioroutinggroup.md) | Read properties and relationships of audioRoutingGroup object.|
 | [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Update receivers list.                       |
 | [Delete](../api/audioroutinggroup-delete.md)            | None                                      | Delete the audio routing group.              |
 
@@ -38,7 +37,7 @@ The audio routing group stores a private audio route between participants in a m
 > - `oneToOne` - sources and receivers have only one participant each.
 > - `multicast` - source has one participant but there are multiple receivers. Receivers list may be updated.
 
-> **Note:** If you create many audio routing groups (e.g. a bot per participant), only the audio of the top 4 dominant speakers is forwarded. It means even with customized audio routing group, if the speaker is not loud enough in the main mixer, he/she cannot be heard by the bot even if there is a private audio group just for this speaker and the bot.
+> **Note:** If you create many audio routing groups (e.g., a bot per participant), only the audio of the top 4 dominant speakers is forwarded. For example, if the speaker is not loud enough in the main mixer of a customized audio routing group, the bot will not hear it, even if there is a private audio group just for this speaker and the bot.
 
 ## Relationships
 None
@@ -74,5 +73,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

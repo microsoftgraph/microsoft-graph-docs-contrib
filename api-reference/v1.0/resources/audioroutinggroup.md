@@ -19,7 +19,8 @@ The audio routing group stores a private audio route between participants in a m
 
 | Method                                                  | Return Type                               | Description                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
-| [Get audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Read properties and relationships of audioRoutingGroup object.|
+| [Create](../api/audioroutinggroup-get.md)               | [audioRoutingGroup](audioroutinggroup.md) | Create audioRoutingGroup object.             |
+| [Get](../api/audioroutinggroup-get.md)                  | [audioRoutingGroup](audioroutinggroup.md) | Read properties and relationships of audioRoutingGroup object.|
 | [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Update receivers list.                       |
 | [Delete](../api/audioroutinggroup-delete.md)            | None                                      | Delete the audio routing group.              |
 
@@ -36,7 +37,7 @@ The audio routing group stores a private audio route between participants in a m
 > - `oneToOne` - sources and receivers have only one participant each.
 > - `multicast` - source has one participant but there are multiple receivers. Receivers list may be updated.
 
-> **Note:** If you create many audio routing groups (e.g. a bot per participant), only the audio of the top 4 dominant speakers is forwarded. It means even with customized audio routing group, if the speaker is not loud enough in the main mixer, he/she cannot be heard by the bot even if there is a private audio group just for this speaker and the bot.
+> **Note:** If you create many audio routing groups (e.g., a bot per participant), only the audio of the top 4 dominant speakers is forwarded. For example, if the speaker is not loud enough in the main mixer of a customized audio routing group, the bot will not hear it, even if there is a private audio group just for this speaker and the bot.
 
 ## Relationships
 None
