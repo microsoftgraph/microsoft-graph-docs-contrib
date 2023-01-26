@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &graphconfig.DirectoryAttributeSetsRequestBuilderGetQueryParameters{
-	OrderBy: [] string {"id"},
+	Orderby: [] string {"id"},
 }
 configuration := &graphconfig.DirectoryAttributeSetsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

@@ -16,7 +16,7 @@ requestFilter := "startswith(displayName,%20'a')"
 
 requestParameters := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.userRequestBuilderGetQueryParameters{
 	Count: &requestCount,
-	OrderBy: [] string {"displayName"},
+	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
 configuration := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.userRequestBuilderGetRequestConfiguration{

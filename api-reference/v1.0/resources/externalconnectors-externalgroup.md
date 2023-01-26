@@ -52,8 +52,8 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "id": "String (identifier)",
+  "description": "String",
   "displayName": "String",
-  "description": "String"
+  "id": "String (identifier)"
 }
 ```
