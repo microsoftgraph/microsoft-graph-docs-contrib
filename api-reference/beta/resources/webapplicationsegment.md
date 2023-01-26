@@ -25,6 +25,7 @@ Inherits from [applicationSegment](applicationsegment.md).
 |externalUrl|String |The published external URL for the application segment; for example, `https://intranet.contoso.com/`.|
 |id|String|The unique identifier that is assigned to an applicationSegment by Azure AD. Not nullable. Read-only. Supports `$filter` (`eq`). Inherited from [applicationSegment](applicationsegment.md).|
 |internalUrl|String |The internal URL of the application segment; for example, `https://intranet/`.|
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
