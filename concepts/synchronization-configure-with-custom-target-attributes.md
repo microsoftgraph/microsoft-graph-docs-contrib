@@ -5,8 +5,8 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
+ms.date: 07/20/2022
 ---
-
 # Configure synchronization with custom target attributes
 
 Namespace: microsoft.graph
