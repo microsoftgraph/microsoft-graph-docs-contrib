@@ -74,6 +74,7 @@ Here is a JSON representation of the resource.
   "isStateSessionEnabled": true,
   "isTranslateHostHeaderEnabled": true,
   "isTranslateLinksInBodyEnabled": true,
+  "onPremisesApplicationSegments":[{"@odata.type":"microsoft.graph.onPremisesApplicationSegment"}],
   "segmentsConfiguration":{"@odata.type":"microsoft.graph.segmentConfiguration"},
   "singleSignOnSettings": {"@odata.type": "microsoft.graph.onPremisesPublishingSingleSignOn"},
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
