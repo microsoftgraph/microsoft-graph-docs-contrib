@@ -11,7 +11,7 @@ query_params = MessagesRequestBuilder.MessagesRequestBuilderGetQueryParameters(
 request_config = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfiguration(
     query_parameters= query_params
 )
-messages = asyncio.run(client.me()
-                       .messages()
+messages = asyncio.run(client.me
+                       .messages
                        .get(request_configuration=request_config))
 ```

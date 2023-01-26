@@ -7,7 +7,7 @@ request_config = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfigur
     headers={'Prefer': 'outlook.timezone="Pacific Standard Time"'},
 )
 
-events = asyncio.run(client.me()
-                     .events()
+events = asyncio.run(client.me
+                     .events
                      .get(request_configuration=request_config))
 ```

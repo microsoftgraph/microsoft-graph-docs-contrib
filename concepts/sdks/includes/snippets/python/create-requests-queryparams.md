@@ -12,7 +12,7 @@ request_config = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetRequest
     query_parameters=query_params,
 )
 
-calendar = asyncio.run(client.me()
-                       .calendar_view()
+calendar = asyncio.run(client.me
+                       .calendar_view
                        .get(request_configuration=request_config))
 ```

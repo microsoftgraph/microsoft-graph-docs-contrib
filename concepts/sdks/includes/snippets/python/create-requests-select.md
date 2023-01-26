@@ -11,6 +11,6 @@ request_config = MeRequestBuilder.MeRequestBuilderGetRequestConfiguration(
     query_parameters=query_params,
 )
 
-user = asyncio.run(client.me()
-                       .get(request_configuration=request_config))
+user = asyncio.run(client.me
+                   .get(request_configuration=request_config))
 ```
