@@ -6,7 +6,5 @@
 calendar = Calendar()
 calendar.name = "Volunteer"
 
-new_calendar = asyncio.run(client.me()
-                           .calendars()
-                           .post(calendar))
+new_calendar = asyncio.run(client.me.calendars.post(calendar))
 ```
