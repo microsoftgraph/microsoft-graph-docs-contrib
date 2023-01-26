@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appliedAuthenticationEventListener",
           "ChangeType": "Addition",
-          "Description": "Added the [appliedAuthenticationEventListener](https://docs.microsoft.com/en-us/graph/api/resources/appliedAuthenticationEventListener?view=graph-rest-beta) resource type.",
+          "Description": "Added the [appliedAuthenticationEventListener](https://learn.microsoft.com/en-us/graph/api/resources/appliedAuthenticationEventListener?view=graph-rest-beta) resource type.",
           "Target": "appliedAuthenticationEventListener"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationEventHandlerResult",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationEventHandlerResult](https://docs.microsoft.com/en-us/graph/api/resources/authenticationEventHandlerResult?view=graph-rest-beta) resource type.",
+          "Description": "Added the [authenticationEventHandlerResult](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventHandlerResult?view=graph-rest-beta) resource type.",
           "Target": "authenticationEventHandlerResult"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionCalloutResult",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionCalloutResult](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionCalloutResult?view=graph-rest-beta) resource type.",
+          "Description": "Added the [customExtensionCalloutResult](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCalloutResult?view=graph-rest-beta) resource type.",
           "Target": "customExtensionCalloutResult"
         },
         {
