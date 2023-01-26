@@ -29,7 +29,7 @@ Base type of [azureDataLakeConnector](../resources/industrydata-azuredatalakecon
 
 | Relationship | Type                                                             | Description                                                                                                                                   |
 | :----------- | :--------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
-| sourceSystem | [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [industryDataConnector](industrydata-industrydataconnector.md). |
+| sourceSystem | [microsoft.graph.industryData.sourceSystemDefinition](industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [industryDataConnector](industrydata-industrydataconnector.md). |
 
 ## JSON representation
 

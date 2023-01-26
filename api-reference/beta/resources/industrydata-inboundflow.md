@@ -45,8 +45,8 @@ Base type of [inboundFileFlow](../resources/industrydata-inboundfileflow.md).
 
 | Relationship  | Type                                                                 | Description                                                                              |
 | :------------ | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
-| dataConnector | [industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. |
-| year          | [yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data brought in via this flow applies to.                              |
+| dataConnector | [microsoft.graph.industryData.industryDataConnector](industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. |
+| year          | [microsoft.graph.industryData.yearTimePeriodDefinition](industrydata-yeartimeperioddefinition.md) | The year that the data brought in via this flow applies to.                              |
 
 ## JSON representation
 

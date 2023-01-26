@@ -27,7 +27,7 @@ Base type of [identifierTypeReferenceValue](industrydata-identifiertypereference
 
 | Relationship | Type                                                       | Description                                            |
 | :----------- | :--------------------------------------------------------- | :----------------------------------------------------- |
-| value        | [referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. |
+| value        | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. |
 
 ## JSON representation
 
