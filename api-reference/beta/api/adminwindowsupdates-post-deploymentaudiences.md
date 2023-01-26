@@ -64,20 +64,7 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
-Content-Type: application/json
-Content-length: 208
-
-{
-  "@odata.type": "#microsoft.graph.windowsUpdates.deploymentAudience",
-  "members": [
-    {"@odata.id": "/beta/directoryObjects/1"}
-  ],
-  "exclusions": [
-    {"@odata.id": "/beta/directoryObjects/2"}
-  ]
-}
 ```
-
 
 ### Response
 The following is an example of the response.
@@ -95,11 +82,40 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deploymentAudience",
   "id": "7f960f66-b6ed-6d54-f24a-9b1021a1d17f",
-  "members": [
-    {"@odata.id": "/beta/directoryObjects/1"}
-  ],
-  "exclusions": [
-    {"@odata.id": "/beta/directoryObjects/2"}
+}
+```
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_deploymentaudience_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/7f960f66-b6ed-6d54-f24a-9b1021a1d17f/updateAudience
+Content-Type: application/json
+Content-length: 208
+
+{
+  "addMembers": [
+      {
+        "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+        "id": "983f03cd-03cd-983f-cd03-3f98cd033f98"
+      }
   ]
 }
+```
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.windowsUpdates.deploymentAudience"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
 ```
