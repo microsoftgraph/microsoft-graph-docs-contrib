@@ -33,19 +33,18 @@ Inherits from [applicationSegment](applicationsegment.md).
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.webApplicationSegment"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.webApplicationSegment",
+  "baseType": "microsoft.graph.applicationSegment",
+  "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "microsoft.graph.webApplicationSegment",
-  "alternateUrl": "String",
-  "corsConfigurations": [
-    {
-      "@odata.type": "microsoft.graph.corsConfiguration_v2"
-    }
-  ],
+  "@odata.type": "#microsoft.graph.webApplicationSegment",
+  "id": "String (identifier)",
+  "internalUrl": "String",
   "externalUrl": "String",
-  "internalUrl": "String"
+  "alternateUrl": "String"
 }
 ```
