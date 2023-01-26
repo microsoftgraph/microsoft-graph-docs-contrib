@@ -1,6 +1,6 @@
 ---
 title: "directoryObject: delta"
-description: "Get newly created, updated, or deleted directoryObjects without having to perform a full read of the entire directoryObject collection."
+description: "Get newly created, updated, or deleted directory objects without having to perform a full read of the entire directoryObject collection."
 ms.localizationpriority: medium
 author: "jessezhu"
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted directoryObjects without having to perform a full read of the entire directoryObject collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted directory objects without having to perform a full read of the entire directoryObject collection. For more information about the delta function, see [Using Delta Query](/graph/delta-query-overview) for details.
 
 ## Permissions
 
@@ -23,36 +23,16 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                                         |
 | Application                            | Must have the read permission of each type specified in the $filter parameter. |
 
-> **Note:** The `$filter` parameter is required, along with the read all permissions of each type specified. For example, for `https://graph.microsoft.com/beta/directoryObjects/delta/?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.application')'`, both User.Read.All and Application.Read.All are required. 
 
 ## HTTP request
 
-To begin tracking changes, you make a request including the delta function on the directoryObjects resource, along with the required $filter parameter.
+Track changes for a collection of a directory object type. The _{resource-type}_ must be a fully qualified OData cast, for example, `microsoft.graph.group`.
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /directoryObjects/delta?$filter=isof('{resource type}')
+GET /directoryObjects/delta?$filter=isof('{resource-type}')
 ```
 
-or 
-
-```http
-GET /directoryObjects/delta?$filter=id eq '{id}'
-```
-
-## Query parameters
-
-Tracking changes in directoryObjects incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
-
-You only need to specify any desired query parameters once upfront.
-
-In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
-
-| Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                   |
-| :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same group collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection. |
-| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same group collection.                                                                                                                                                         |
 
 ### OData query parameters
 
@@ -108,9 +88,12 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 > **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-4) below.
 
-### Example
+## Examples
 
-#### Request 1
+
+### Example 1: Retreve changes for a collection of users and groups
+
+#### Request
 
 The following is an example of the request using the `$filter=isof('{resource type}')` parameter on users and groups. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
@@ -123,15 +106,12 @@ The following is an example of the request using the `$filter=isof('{resource ty
 GET https://graph.microsoft.com/beta/directoryObjects/delta?filter=isof('microsoft.graph.user') or isof('microsoft.graph.group')
 ```
 
----
 
-#### Response 1
+#### Response
 
-The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=isof('{resource type}')`:
+The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=isof('{resource type}')`. Note the presence of the _members@delta_ property which includes the ids of member objects in the group.
 
 > **Note:** The response object shown here might be shortened for readability.
->
-> Note the presence of the _members@delta_ property which includes the ids of member objects in the group.
 
 <!-- {
   "blockType": "response",
@@ -188,9 +168,11 @@ Content-type: application/json
 }
 ```
 
-#### Request 2
+### Example 2: Retrieve a collection of changes for a directory object
 
-The next example shows the request using the `$filter=id eq '{id}'` parameter on a group id. There is no `$select` parameter, so a default set of properties is tracked and returned.
+#### Request
+
+The following example shows the request using the `$filter=id eq '{id}'` parameter. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
 <!-- {
   "blockType": "request",
@@ -201,9 +183,8 @@ The next example shows the request using the `$filter=id eq '{id}'` parameter on
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'
 ```
 
----
 
-#### Response 2
+#### Response
 
 The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`:
 
@@ -247,9 +228,11 @@ Content-type: application/json
 }
 ```
 
-#### Request 3
+### Example 3: Retrieve changes to specific properties for a collection of users and groups
 
-The next example shows the initial request selecting one property each from a user and group for change tracking, with default response behavior:
+#### Request
+
+The following example shows the initial request selecting one property each from a user and group for change tracking, with default response behavior:
 
 <!-- {
   "blockType": "request",
@@ -260,9 +243,8 @@ The next example shows the initial request selecting one property each from a us
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.group')&$select=microsoft.graph.user/surname,microsoft.graph.group/displayName
 ```
 
----
 
-#### Response 3
+#### Response
 
 The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization. Note that both properties are included in the response and it is not known which ones have changed since the `@odata.deltaLink` was obtained.
 
@@ -295,9 +277,11 @@ Content-type: application/json
 }
 ```
 
-#### Request 4
+### Example 4: Retrieve specific properties only if they changed for a collection of users and groups
 
-The next example shows the initial request selecting one property each from a user and group for change tracking, with alternative minimal response behavior:
+#### Request
+
+The following example shows the initial request selecting one property each from a user and group for change tracking, with alternative minimal response behavior:
 
 <!-- {
   "blockType": "request",
@@ -309,9 +293,8 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isof('micros
 Prefer: return=minimal
 ```
 
----
 
-#### Response 4
+#### Response
 
 The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization. Note that the `microsoft.graph.user/surname` property is not included, which means it has not changed since the last delta query; `microsoft.graph.group/displayName` is included which means its value has changed.
 
