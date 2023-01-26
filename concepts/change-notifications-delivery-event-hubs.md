@@ -1,5 +1,5 @@
 ---
-title: "Get change notifications delivered in different ways"
+title: "Get change notifications delivered through Event Hubs"
 description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
 author: "jumasure"
 ms.prod: "change-notifications"
@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
 ---
 
-# Get change notifications delivered in different ways
+# Get change notifications delivered through Event Hubs
 
 Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notification URL.  
 
