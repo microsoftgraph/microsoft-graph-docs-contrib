@@ -20,7 +20,7 @@ This is an abstract type that exposes properties used to configure segment confi
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|The unique identifier that is assigned to aa application segment by Azure AD. Not nullable. Read-only. Supports `$filter` (`eq`).  |
+|id|String|The unique identifier that is assigned to an application segment by Azure AD. Not nullable. Read-only. Supports `$filter` (`eq`).  |
 
 ## JSON representation
 
