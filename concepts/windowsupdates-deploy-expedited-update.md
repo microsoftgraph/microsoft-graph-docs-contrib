@@ -123,7 +123,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments/$entity",
+    "@odata.type": "#microsoft.graph.windowsUpdates.deployment,
     "id": "b5171742-1742-b517-4217-17b5421717b5",
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)",    
