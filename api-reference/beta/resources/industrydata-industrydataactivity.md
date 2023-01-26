@@ -3,7 +3,7 @@ title: "industryDataActivity resource type"
 description: "Represents an abstract base type for all activities that are run by the underlying scheduler."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

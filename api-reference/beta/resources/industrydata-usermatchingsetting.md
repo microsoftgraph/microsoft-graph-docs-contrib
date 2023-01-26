@@ -3,7 +3,7 @@ title: "userMatchingSetting resource type"
 description: "Represents the rules for matching a user in a roleGroup with a user object from Azure Active Directory."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "azureDataLakeConnector resource type"
 description: "Represents a way to connect data uploaded to an Azure Data Lake."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

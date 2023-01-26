@@ -3,7 +3,7 @@ title: "List roleGroups"
 description: "Get a list of the roleGroup objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 

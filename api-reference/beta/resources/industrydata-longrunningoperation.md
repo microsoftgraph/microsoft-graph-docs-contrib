@@ -3,7 +3,7 @@ title: "longRunningOperation resource type"
 description: "Represents metadata for long running operation."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

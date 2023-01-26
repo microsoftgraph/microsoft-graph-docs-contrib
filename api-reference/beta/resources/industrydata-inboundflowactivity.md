@@ -3,7 +3,7 @@ title: "inboundFlowActivity resource type"
 description: "Represents details about the run of an inbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

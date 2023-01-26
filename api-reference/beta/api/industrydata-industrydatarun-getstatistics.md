@@ -3,7 +3,7 @@ title: "industryDataRun: getStatistics"
 description: "Get statistics for an industryDataRun."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 

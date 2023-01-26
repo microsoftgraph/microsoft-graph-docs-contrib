@@ -3,7 +3,7 @@ title: "identifierTypeReferenceValue resource type"
 description: "Represents a RefIdentifierType typed ReferenceDefinition."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industrydata"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
