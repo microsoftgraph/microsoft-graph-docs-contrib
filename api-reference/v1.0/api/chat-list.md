@@ -59,6 +59,9 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
+> [!NOTE]
+> $top query may not return all chats in one response based on $top value. Caller should use nextlink to fetch all chats.
+
 ## Request headers
 
 | Header       | Value |
