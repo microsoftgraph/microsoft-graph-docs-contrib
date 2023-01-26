@@ -83,20 +83,6 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
       }
     ],
-    "exclusions": [
-      {
-        "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset",
-        "@odata.id": "/beta/admin/windows/updatableAsset/2"
-      }
-    ],
-    "id": "eacc9a79-884b-a728-91f7-9f3630aa9542",
-    "members": [
-      {
-        "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset",
-        "@odata.id": "/beta/admin/windows/updatableAsset/1"
-      }
-    ]
   }
 }
 ```
-
