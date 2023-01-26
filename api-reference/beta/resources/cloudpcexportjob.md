@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the export job created for downloading reports.
+Represents the export job for downloading a specified Cloud PC report.
 
 ## Methods
 | Method                                                              | Return type                                          | Description                                                                                             |
 | :------------------------------------------------------------------ | :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-| [Create cloudPcExportJob](../api/cloudpcreports-post-exportjobs.md) | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object.                               |
+| [Create cloudPcExportJob](../api/cloudpcreports-post-exportjobs.md) | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object to initiate downloading the entire or specified portion of a report. |
 | [Get cloudPcExportJob](../api/cloudpcexportjob-get.md)              | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Read the properties and relationships of a [cloudPcExportJob](../resources/cloudpcexportjob.md) object. |
 
 ## Properties
@@ -30,9 +30,9 @@ Represents the export job created for downloading reports.
 | filter             | String                                                   | The filter applied on the report.                                                                                                                                                       |
 | format             | String                                                   | The format of the exported report.                                                                                                                                                      |
 | id                 | String                                                   | The unique identifier for the report. Read-only.                                                                                                                                        |
-| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`. |
-| requestDateTime    | DateTimeOffset                                           | The date and time when the export job was requested.                                                                                                                                        |
-| select             | String collection                                        | The selected columns of the report.                                                                                                                                                     |
+| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, or `unknownFutureValue`. |
+| requestDateTime    | DateTimeOffset                                           | The date and time when the export job was requested.  |
+| select             | String collection                                        | The selected columns of the report.   |
 
 ### cloudPcExportJobStatus values
 

@@ -19,7 +19,7 @@ Deleting a **plannerRoster** will also delete the plan and all tasks in the plan
 
 * The **plannerRoster** doesn't contain a plan 24 hours after its creation. Membership information will be completely erased within 30 days of this deletion.
 * The **plannerRoster** doesn't have any users remaining in the membership list because the last user removed themselves. Roster, its plan and all contained tasks will be deleted within 30 days of this operation.
-* The **plannerRoster** doesn't have any users remaining in the membership list because the last user was permanently deleted. Roster, its plan and all contained tasks will be deleted immediately. Deleted users are permanently erased wihtin 30 days of their deletion; however, tenant administrators can also choose to permanently delete users without this delay.
+* The **plannerRoster** doesn't have any users remaining in the membership list because the last user was permanently deleted. Roster, its plan and all contained tasks will be deleted immediately. Deleted users are permanently erased within 30 days of their deletion; however, tenant administrators can also choose to permanently delete users without this delay.
 
 
 ## Methods

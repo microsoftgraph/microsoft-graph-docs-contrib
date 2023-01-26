@@ -122,7 +122,6 @@ HTTP/1.1 204 No Content
 #### Request
 
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -164,7 +163,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

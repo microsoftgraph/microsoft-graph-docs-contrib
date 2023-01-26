@@ -17,6 +17,11 @@ Represents a scenario that collects relevant data and configuration for a specif
 
 Inherits from [entity](../resources/entity.md).
 
+> [!Note]
+> Currently the business scenario API supports only Planner. The API allows app developers to define a [configuration for a Planner plan](/graph/api/resources/plannerplanconfiguration?view=graph-rest-beta&preserve-view=true) to host scenario-specific tasks, and bring in custom data in each [scenario-specific task](/graph/api/resources/businessscenariotask?view=graph-rest-beta&preserve-view=true). 
+>
+> Do you have a scenario that requires bringing in custom data as entities to another Microsoft 365 service? [Suggest the feature or vote for existing feature requests](https://developer.microsoft.com/en-us/graph/support).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -25,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create businessScenario](../api/solutionsroot-post-businessscenarios.md)|[businessScenario](../resources/businessscenario.md)|Create a new [businessScenario](../resources/businessscenario.md) object.|
 |[Get businessScenario](../api/businessscenario-get.md)|[businessScenario](../resources/businessscenario.md)|Read the properties and relationships of a [businessScenario](../resources/businessscenario.md) object.|
 |[Update businessScenario](../api/businessscenario-update.md)|[businessScenario](../resources/businessscenario.md)|Update the properties of a [businessScenario](../resources/businessscenario.md) object.|
-|[Delete businessScenario](../api/solutionsroot-delete-businessscenarios.md)|None|Delete a [businessScenario](../resources/businessscenario.md) object. The deletion of a scenario causes all data associated with the scenario to be deleted.|
+|[Delete businessScenario](../api/businessscenario-delete.md)|None|Delete a [businessScenario](../resources/businessscenario.md) object. The deletion of a scenario causes all data associated with the scenario to be deleted.|
 |[Get businessScenarioPlanner](../api/businessscenarioplanner-get.md)|[businessScenarioPlanner](../resources/businessscenarioplanner.md)|Read the properties and relationships of a [businessScenarioPlanner](../resources/businessscenarioplanner.md) object.|
 
 ## Properties
