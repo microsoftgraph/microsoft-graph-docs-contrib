@@ -45,11 +45,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "microsoft.graph.webApplicationSegment",
   "alternateUrl": "String",
-  "corsConfigurations": [
-    {
-      "@odata.type": "microsoft.graph.corsConfiguration_v2"
-    }
-  ],
   "externalUrl": "String",
   "internalUrl": "String"
 }
