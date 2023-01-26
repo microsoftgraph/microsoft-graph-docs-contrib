@@ -45,8 +45,6 @@ PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|audience|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Specifies the audience to target. Optional.|
-|complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Compliance changes like content approvals which result in the automatic creation of deployments using the **audience** and **deploymentSettings** of the policy. Optional.|
 |complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|Rules for governing the automatic creation of compliance changes. Optional.|
 |deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings for governing how to deploy **content**. Optional.|
 
