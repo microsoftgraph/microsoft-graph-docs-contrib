@@ -123,7 +123,7 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
