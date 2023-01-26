@@ -34,6 +34,11 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
- "@odata.type": "#microsoft.graph.webSegmentConfiguration"
+ "@odata.type": "#microsoft.graph.webSegmentConfiguration",
+ "applicationSegments": [
+    {
+      "@odata.type": "microsoft.graph.webApplicationSegment"
+    }
+  ],
 }
 ```
