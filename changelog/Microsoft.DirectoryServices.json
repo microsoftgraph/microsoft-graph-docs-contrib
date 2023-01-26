@@ -170,14 +170,6 @@
         },
         {
           "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
-          "ApiChange": "Property",
-          "ChangedApiName": "isDefaultAccessEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the `isDefaultAccessEnabled` property to the [onPremisesPublishingProfile](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishingProfile?view=graph-rest-beta) resource.",
-          "Target": "onPremisesPublishingProfile"
-        },
-        {
-          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
           "ApiChange": "Resource",
           "ChangedApiName": "webApplicationSegment",
           "ChangeType": "Addition",
