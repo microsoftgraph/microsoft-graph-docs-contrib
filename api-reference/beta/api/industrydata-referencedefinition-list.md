@@ -97,7 +97,7 @@ Content-Type: application/json
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
       "referenceType": "RefEmailAddressType",
       "sortIndex": 10,
-      "source": "ceds.ed.gov"
+      "source": "CEDS"
     },
     {
       "code": "01",
@@ -107,7 +107,7 @@ Content-Type: application/json
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
       "referenceType": "RefGradeLevel",
       "sortIndex": 60,
-      "source": "ceds.ed.gov"
+      "source": "CEDS"
     },
     {
       "code": "02",
@@ -117,7 +117,7 @@ Content-Type: application/json
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
       "referenceType": "RefGradeLevel",
       "sortIndex": 70,
-      "source": "ceds.ed.gov"
+      "source": "CEDS"
     },
     {
       "code": "undergraduate",
@@ -127,7 +127,7 @@ Content-Type: application/json
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
       "referenceType": "RefGradeLevel",
       "sortIndex": 270,
-      "source": "microsoft.com"
+      "source": "Contoso"
     },
     {
       "code": "username",
@@ -137,7 +137,7 @@ Content-Type: application/json
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
       "referenceType": "RefIdentifierType",
       "sortIndex": 40,
-      "source": "imsglobal.org"
+      "source": "IMS Global"
     },
     {
       "code": "academicTrust",
@@ -147,7 +147,7 @@ Content-Type: application/json
       "lastModifiedDateTime": "0001-01-01T00:00:00Z",
       "referenceType": "RefOrgType",
       "sortIndex": 140,
-      "source": "microsoft.com"
+      "source": "Contoso"
     }
   ]
 }
