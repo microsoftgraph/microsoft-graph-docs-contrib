@@ -3105,7 +3105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceScopeActionResult",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceScopeActionResult](https://learn.microsoft.com/graph/api/resources/intune-deviceScopeActionResult?view=graph-rest-beta) resource type.",
+          "Description": "Added the deviceScopeActionResult resource type.",
           "Target": "deviceScopeActionResult"
         },
         {
