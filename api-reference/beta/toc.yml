@@ -18868,29 +18868,29 @@ items:
             href: api/windowsupdates-deployment-update.md
           - name: Delete deployment
             href: api/windowsupdates-deployment-delete.md
-          - name: Deployable content
-            items:
-            - name: Catalog content
-              href: resources/windowsupdates-catalogcontent.md
-          - name: Deployment audience
-            href: resources/windowsupdates-deploymentaudience.md
-            items:
-            - name: List
-              href: api/adminwindowsupdates-list-deploymentaudiences.md
-            - name: Create
-              href: api/adminwindowsupdates-post-deploymentaudiences.md
-            - name: Get
-              href: api/windowsupdates-deploymentaudience-get.md
-            - name: Delete
-              href: api/windowsupdates-deploymentaudience-delete.md
-            - name: List members
-              href: api/windowsupdates-deploymentaudience-list-members.md
-            - name: List exclusions
-              href: api/windowsupdates-deploymentaudience-list-exclusions.md
-            - name: Update members and exclusions
-              href: api/windowsupdates-deploymentaudience-updateaudience.md
-            - name: Update by ID
-              href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+        - name: Deployable content
+          items:
+          - name: Catalog content
+            href: resources/windowsupdates-catalogcontent.md
+        - name: Deployment audience
+          href: resources/windowsupdates-deploymentaudience.md
+          items:
+          - name: List
+            href: api/adminwindowsupdates-list-deploymentaudiences.md
+          - name: Create
+            href: api/adminwindowsupdates-post-deploymentaudiences.md
+          - name: Get
+            href: api/windowsupdates-deploymentaudience-get.md
+          - name: Delete
+            href: api/windowsupdates-deploymentaudience-delete.md
+          - name: List members
+            href: api/windowsupdates-deploymentaudience-list-members.md
+          - name: List exclusions
+            href: api/windowsupdates-deploymentaudience-list-exclusions.md
+          - name: Update members and exclusions
+            href: api/windowsupdates-deploymentaudience-updateaudience.md
+          - name: Update by ID
+            href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
         - name: Update policy
           href: resources/windowsupdates-updatepolicy.md
           items:
