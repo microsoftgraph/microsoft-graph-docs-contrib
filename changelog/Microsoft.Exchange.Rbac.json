@@ -61,14 +61,6 @@
         {
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRbacResourceScope",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRbacResourceScope](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacResourceScope?view=graph-rest-beta) resource",
-          "Target": "unifiedRbacResourceScope"
-        },
-        {
-          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleAssignment",
           "ChangeType": "Addition",
           "Description": "Added the [unifiedRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) resource",
