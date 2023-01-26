@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new ChatsRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new ChatsRequestBuilderGetQueryParameters();
-$queryParameters->orderBy = ["lastMessagePreview/createdDateTime desc"];
+$queryParameters->orderby = ["lastMessagePreview/createdDateTime desc"];
 
 $requestConfiguration->queryParameters = $queryParameters;
 
