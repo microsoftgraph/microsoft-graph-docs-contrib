@@ -1,6 +1,6 @@
 ---
 title: "webSegmentConfiguration resource type"
-description: "Represents webSegmentConfiguration object when publishing an on-premises wildcard application with Azure AD Application Proxy."
+description: "Represents application segments for an on-premises wildcard application published through Azure AD Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinshah"
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [webSegmentConfiguration](websegmentconfiguration.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.
+A [webSegmentConfiguration](websegmentconfiguration.md) object represents application segments for an on-premises wildcard application published through Azure AD Application Proxy.
 
 Inherits from [segmentsConfiguration](segmentconfiguration.md).
 
@@ -21,7 +21,7 @@ Inherits from [segmentsConfiguration](segmentconfiguration.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|Represents a [webApplicationSegment](webapplicationsegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.|
+|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|A collection of application segments for an on-premises wildcard application published through Azure AD Application Proxy. It includes the internal URL, external URL, alternate URLs, and cors configurations. |
 
 
 ## JSON representation
