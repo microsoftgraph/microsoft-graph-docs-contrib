@@ -1,6 +1,6 @@
 ---
 title: "webApplicationSegment resource type"
-description: "Represents webApplicationSegment object when publishing an on-premises wildcard application with Azure AD Application Proxy."
+description: "Represents the segment configurations that are allowed for an on-premises wildcard application published through Azure AD Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinshah"
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [webApplicationSegment](webapplicationsegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.
+A [webApplicationSegment](webapplicationsegment.md) object represents the segment configurations that are allowed for an on-premises wildcard application published through Azure AD Application Proxy.
 
 Inherits from [applicationSegment](applicationsegment.md).
 
@@ -21,10 +21,14 @@ Inherits from [applicationSegment](applicationsegment.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|alternateUrl|String|If you're configuring a traffic manager in front of multiple App Proxy application segments, contains the user-friendly URL that will point to the traffic manager.|
-|corsConfigurations|[corsConfiguration_v2](corsconfiguration_v2.md) collection|CORS Rule definition for a particular application segment.|
-|externalUrl|String |The published external URL for the application segment; for example, https://intranet.contoso.com./|
-|internalUrl|String |The internal URL of the application segment; for example, https://intranet/.|
+|alternateUrl|String|If you're configuring a traffic manager in front of multiple App Proxy application segments, this property contains the user-friendly URL that will point to the traffic manager.|
+|externalUrl|String |The published external URL for the application segment; for example, `https://intranet.contoso.com/`.|
+|id|String|The unique identifier that is assigned to an applicationSegment by Azure AD. Not nullable. Read-only. Supports `$filter` (`eq`). Inherited from [applicationSegment](applicationsegment.md).|
+|internalUrl|String |The internal URL of the application segment; for example, `https://intranet/`.|
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|corsConfigurations|[corsConfiguration_v2](corsconfiguration_v2.md) collection|A collection of CORS Rule definitions for a particular application segment.|
 
 
 
@@ -33,18 +37,19 @@ Inherits from [applicationSegment](applicationsegment.md).
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.webApplicationSegment",
-  "baseType": "microsoft.graph.applicationSegment",
-  "openType": false
+  "@odata.type": "microsoft.graph.webApplicationSegment"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.webApplicationSegment",
-  "id": "String (identifier)",
-  "internalUrl": "String",
+  "@odata.type": "microsoft.graph.webApplicationSegment",
+  "alternateUrl": "String",
+  "corsConfigurations": [
+    {
+      "@odata.type": "microsoft.graph.corsConfiguration_v2"
+    }
+  ],
   "externalUrl": "String",
-  "alternateUrl": "String"
+  "internalUrl": "String"
 }
 ```
