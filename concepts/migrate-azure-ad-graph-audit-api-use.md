@@ -3,7 +3,7 @@ title: "Examine Azure AD Graph APIs app usage"
 description: "Describes how to audit Azure Active Directory (Azure AD) Graph APIs to migrate an app to Microsoft Graph API."
 author: "FaithOmbongi"
 ms.author: ombongifaith
-ms.reviewer: "dkershaw"
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
