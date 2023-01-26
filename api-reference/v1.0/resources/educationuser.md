@@ -95,26 +95,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.educationUser",
-  "id": "String (identifier)",
-  "primaryRole": "String",
-  "middleName": "String",
-  "externalSource": "String",
-  "externalSourceDetail": "String",
-  "residenceAddress": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "mailingAddress": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "student": {
-    "@odata.type": "microsoft.graph.educationStudent"
-  },
-  "teacher": {
-    "@odata.type": "microsoft.graph.educationTeacher"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
   "accountEnabled": "Boolean",
   "assignedLicenses": [
     {
@@ -127,32 +107,52 @@ The following is a JSON representation of the resource.
     }
   ],
   "businessPhones": ["String"],
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "department": "String",
   "displayName": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
   "givenName": "String",
+  "id": "String (identifier)",
   "mail": "String",
+  "mailingAddress": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
   "mailNickname": "String",
+  "middleName": "String",
   "mobilePhone": "String",
+  "officeLocation": "String",
+  "onPremisesInfo": {
+    "@odata.type": "microsoft.graph.educationOnPremisesInfo"
+  },
   "passwordPolicies": "String",
   "passwordProfile": {
     "@odata.type": "microsoft.graph.passwordProfile"
   },
-  "officeLocation": "String",
   "preferredLanguage": "String",
+  "primaryRole": "String",
   "provisionedPlans": [
     {
       "@odata.type": "microsoft.graph.provisionedPlan"
     }
   ],
   "refreshTokensValidFromDateTime": "String (timestamp)",
+  "residenceAddress": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
   "showInAddressList": "Boolean",
+  "student": {
+    "@odata.type": "microsoft.graph.educationStudent"
+  },
   "surname": "String",
+  "teacher": {
+    "@odata.type": "microsoft.graph.educationTeacher"
+  },
   "usageLocation": "String",
   "userPrincipalName": "String",
-  "userType": "String",
-  "onPremisesInfo": {
-    "@odata.type": "microsoft.graph.educationOnPremisesInfo"
-  }
+  "userType": "String"
 }
 ```
 
