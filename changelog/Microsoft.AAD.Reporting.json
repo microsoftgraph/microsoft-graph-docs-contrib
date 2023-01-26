@@ -287,6 +287,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the signin resource.",
 =======
           "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the [signin](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
@@ -294,6 +295,9 @@
 =======
           "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the [signin](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the signin resource.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "signIn"
         },
         {
@@ -303,6 +307,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the signIn resource.",
 =======
           "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
@@ -310,6 +315,9 @@
 =======
           "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the signIn resource.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "signIn"
         }
       ],
@@ -1263,6 +1271,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the **outlookM365** and **outlook2019** properties to the getEmailAppUsageVersionsUserCounts entity.",
 =======
           "Description": "Added the **outlookM365** and **outlook2019** properties to the **getEmailAppUsageVersionsUserCounts** entity.",
@@ -1270,6 +1279,10 @@
 =======
           "Description": "Added the **outlookM365** and **outlook2019** properties to the **getEmailAppUsageVersionsUserCounts** entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the **outlookM365** and **outlook2019** properties to the getEmailAppUsageVersionsUserCounts entity.",
+
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "getEmailAppUsageVersionsUserCounts"
         }
       ],
@@ -1375,6 +1388,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added **networkDisplayName** property to the yammerGroupsActivityDetail entity.",
 =======
           "Description": "Added **networkDisplayName** property to the [yammerGroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-beta) entity.",
@@ -1382,6 +1396,10 @@
 =======
           "Description": "Added **networkDisplayName** property to the [yammerGroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added **networkDisplayName** property to the yammerGroupsActivityDetail entity.",
+
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "yammerGroupsActivityDetail"
         }
       ],
@@ -1401,6 +1419,7 @@
           "ChangeType": "Change",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles.",
 =======
           "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](https://learn.microsoft.com/en-us/graph/reportroot-authorization).",
@@ -1408,6 +1427,10 @@
 =======
           "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](https://learn.microsoft.com/en-us/graph/reportroot-authorization).",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles.",
+
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
@@ -1427,6 +1450,7 @@
           "ChangeType": "Change",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role.",
 =======
           "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](https://learn.microsoft.com/en-us/graph/reportroot-authorization).",
@@ -1434,6 +1458,9 @@
 =======
           "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](https://learn.microsoft.com/en-us/graph/reportroot-authorization).",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
@@ -1453,6 +1480,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the mailboxUsageDetail entity.",
 =======
           "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the [mailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/mailbox-usage-reports?view=graph-rest-beta) entity.",
@@ -1460,6 +1488,9 @@
 =======
           "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the [mailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/mailbox-usage-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the mailboxUsageDetail entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1477,6 +1508,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the **ownerPrincipalName** property to the oneDriveUsageAccountDetail entity.",
 =======
           "Description": "Added the **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](https://learn.microsoft.com/en-us/graph/api/resources/onedrive-usage-reports?view=graph-rest-beta) entity.",
@@ -1484,6 +1516,9 @@
 =======
           "Description": "Added the **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](https://learn.microsoft.com/en-us/graph/api/resources/onedrive-usage-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the **ownerPrincipalName** property to the oneDriveUsageAccountDetail entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "oneDriveUsageAccountDetail"
         },
         {
@@ -1493,6 +1528,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the **ownerPrincipalName** property to the sharePointSiteUsageDetail entity.",
 =======
           "Description": "Added the **ownerPrincipalName** property to the [sharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-beta) entity.",
@@ -1500,6 +1536,9 @@
 =======
           "Description": "Added the **ownerPrincipalName** property to the [sharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the **ownerPrincipalName** property to the sharePointSiteUsageDetail entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "sharePointSiteUsageDetail"
         },
         {
@@ -1527,6 +1566,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added **deletedItemCount** property to the mailboxUsageDetail entity.",
 =======
           "Description": "Added **deletedItemCount** property to the [mailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/mailbox-usage-reports?view=graph-rest-beta) entity.",
@@ -1534,6 +1574,9 @@
 =======
           "Description": "Added **deletedItemCount** property to the [mailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/mailbox-usage-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added **deletedItemCount** property to the mailboxUsageDetail entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1543,6 +1586,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added **deletedItemSizeInBytes** property to the mailboxUsageDetail entity.",
 =======
           "Description": "Added **deletedItemSizeInBytes** property to the [mailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/mailbox-usage-reports?view=graph-rest-beta) entity.",
@@ -1550,6 +1594,9 @@
 =======
           "Description": "Added **deletedItemSizeInBytes** property to the [mailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/mailbox-usage-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added **deletedItemSizeInBytes** property to the mailboxUsageDetail entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1577,6 +1624,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added new reports for retrieving user registration and usage information: \u003Cul\u003E\u003Cli\u003E[reportroot-getcredentialusagesummary](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.\u003C/li\u003E\u003Cli\u003E[reportroot-getcredentialuserregistrationcount](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-credentialuserregistrationdetails](https://learn.microsoft.com/en-us/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E reportroot-list-usercredentialusagedetails - Reports usage of self-service password reset for a user.\u003C/li\u003E\u003C/ul\u003E",
 =======
           "Description": "Added new reports for retrieving user registration and usage information: \u003Cul\u003E\u003Cli\u003E[reportroot-getcredentialusagesummary](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.\u003C/li\u003E\u003Cli\u003E[reportroot-getcredentialuserregistrationcount](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-credentialuserregistrationdetails](https://learn.microsoft.com/en-us/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-usercredentialusagedetails](https://learn.microsoft.com/en-us/graph/api/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.\u003C/li\u003E\u003C/ul\u003E",
@@ -1584,6 +1632,9 @@
 =======
           "Description": "Added new reports for retrieving user registration and usage information: \u003Cul\u003E\u003Cli\u003E[reportroot-getcredentialusagesummary](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.\u003C/li\u003E\u003Cli\u003E[reportroot-getcredentialuserregistrationcount](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-credentialuserregistrationdetails](https://learn.microsoft.com/en-us/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-usercredentialusagedetails](https://learn.microsoft.com/en-us/graph/api/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.\u003C/li\u003E\u003C/ul\u003E",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added new reports for retrieving user registration and usage information: \u003Cul\u003E\u003Cli\u003E[reportroot-getcredentialusagesummary](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.\u003C/li\u003E\u003Cli\u003E[reportroot-getcredentialuserregistrationcount](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-credentialuserregistrationdetails](https://learn.microsoft.com/en-us/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E reportroot-list-usercredentialusagedetails - Reports usage of self-service password reset for a user.\u003C/li\u003E\u003C/ul\u003E",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "reportroot-getcredentialusagesummary,reportroot-getcredentialuserregistrationcount,reportroot-list-credentialuserregistrationdetails,reportroot-list-usercredentialusagedetails"
         }
       ],
@@ -1603,6 +1654,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added **ownerPrincipalName** property to the oneDriveUsageAccountDetail entity.",
 =======
           "Description": "Added **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](https://learn.microsoft.com/en-us/graph/api/resources/onedrive-usage-reports?view=graph-rest-beta) entity.",
@@ -1610,6 +1662,9 @@
 =======
           "Description": "Added **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](https://learn.microsoft.com/en-us/graph/api/resources/onedrive-usage-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added **ownerPrincipalName** property to the oneDriveUsageAccountDetail entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "oneDriveUsageAccountDetail"
         },
         {
@@ -1619,6 +1674,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added **ownerPrincipalName** property to the sharePointSiteUsageDetail entity.",
 =======
           "Description": "Added **ownerPrincipalName** property to the [sharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-beta) entity.",
@@ -1626,6 +1682,9 @@
 =======
           "Description": "Added **ownerPrincipalName** property to the [sharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added **ownerPrincipalName** property to the sharePointSiteUsageDetail entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "sharePointSiteUsageDetail"
         }
       ],
@@ -1795,6 +1854,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the **siteId** property to the sharePointSiteUsageDetail entity.",
 =======
           "Description": "Added the **siteId** property to the [sharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-beta) entity.",
@@ -1802,6 +1862,9 @@
 =======
           "Description": "Added the **siteId** property to the [sharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the **siteId** property to the sharePointSiteUsageDetail entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "sharePointSiteUsageDetail"
         }
       ],
@@ -1821,6 +1884,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the **activatedOnSharedComputer** property to the userActivationCounts entity.",
 =======
           "Description": "Added the **activatedOnSharedComputer** property to the [userActivationCounts](https://learn.microsoft.com/en-us/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-beta) entity.",
@@ -1828,6 +1892,9 @@
 =======
           "Description": "Added the **activatedOnSharedComputer** property to the [userActivationCounts](https://learn.microsoft.com/en-us/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the **activatedOnSharedComputer** property to the userActivationCounts entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "userActivationCounts"
         },
         {
@@ -1837,6 +1904,7 @@
           "ChangeType": "Addition",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Description": "Added the **sharedComputerActivation** property to the office365ActivationsUserCounts entity.",
 =======
           "Description": "Added the **sharedComputerActivation** property to the [office365ActivationsUserCounts](https://learn.microsoft.com/en-us/graph/api/resources/office-365-activations-reports?view=graph-rest-beta) entity.",
@@ -1844,6 +1912,9 @@
 =======
           "Description": "Added the **sharedComputerActivation** property to the [office365ActivationsUserCounts](https://learn.microsoft.com/en-us/graph/api/resources/office-365-activations-reports?view=graph-rest-beta) entity.",
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
+=======
+          "Description": "Added the **sharedComputerActivation** property to the office365ActivationsUserCounts entity.",
+>>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
           "Target": "office365ActivationsUserCounts"
         }
       ],

@@ -50,12 +50,12 @@ The following is a JSON representation of the resource.
       "accessType": "grant"
     }
   ],
+  "content": {
+    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent"
+  },
   "id": "String (identifier)",
   "properties": {
     "@odata.type": "microsoft.graph.externalConnectors.properties"
-  },
-  "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent"
   }
 }
 ```

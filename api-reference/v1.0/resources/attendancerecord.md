@@ -44,16 +44,16 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.attendanceRecord",
-  "emailAddress": "String",
-  "totalAttendanceInSeconds": "Int32",
-  "role": "String(None|Attendee|Presenter|Organizer)",
-  "identity": {
-    "@odata.type": "#microsoft.graph.identity"
-  },
   "attendanceIntervals": [
     {
       "@odata.type": "#microsoft.graph.attendanceInterval"
     }
-  ]
+  ],
+  "emailAddress": "String",
+  "identity": {
+    "@odata.type": "#microsoft.graph.identity"
+  },
+  "role": "String(None|Attendee|Presenter|Organizer)",
+  "totalAttendanceInSeconds": "Int32"
 }
 ```
