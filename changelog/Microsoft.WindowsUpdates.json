@@ -757,15 +757,15 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "GET",
                     "ChangeType": "Change",
-                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List azureADDevice resources](https://learn.microsoft.com/en-us/graph/api/adminwindowsupdates-list-updatableassets-azureaddevice?view=graph-rest-beta) method.",
-                    "Target": "azureADDevice"/
+                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List azureADDevice resources](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updates-list-updatableassets-azureaddevice?view=graph-rest-beta) method.",
+                    "Target": "azureADDevice"
                 },
                 {
                     "Id": "70c6491e-6681-4424-ad7b-8f95111d72e7",
                     "ApiChange": "Method",
                     "ChangedApiName": "GET",
                     "ChangeType": "Change",
-                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List updatableAssetGroup resources](https://learn.microsoft.com/en-us/graph/api/adminwindowsupdates-list-updatableassets-updatableassetgroup?view=graph-rest-beta) method.",
+                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List updatableAssetGroup resources](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updates-list-updatableassets-updatableassetgroup?view=graph-rest-beta) method.",
                     "Target": "updatableAssetGroup"
                 },
                 {
