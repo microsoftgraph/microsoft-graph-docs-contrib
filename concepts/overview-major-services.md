@@ -3,7 +3,6 @@ title: "Major services and features in Microsoft Graph"
 description: "Learn how Microsoft Graph's network of Microsoft 365 services and features manage, protect, and extract data to support a wide range of scenarios."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "industry-data-etl"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
 ---

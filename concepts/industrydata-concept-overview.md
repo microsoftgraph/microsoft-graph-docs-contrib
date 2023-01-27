@@ -18,7 +18,7 @@ In the current release, the API is highly tailored to the education industry.
 
 ### Build applications that upload and monitor
 
-Most education software developers learn early on that class roster is one of the key pieces of information they need to run their application, and it's typically locked away inside a school Student Information System (SIS). Any time teachers bring a new application into their classroom, they spend time manually importing roster data into the app. Many independent software vendors (ISVs) address this by connecting with a SIS to import roster data. With hundreds of Student Information Systems with proprietary formats, this can become a challenge.
+Most education software developers learn early on that class roster is one of the key pieces of information they need to run their application, and it's typically locked away inside a school student information system (SIS). Any time teachers bring a new application into their classroom, they spend time manually importing roster data into the app. Many independent software vendors (ISVs) address this by connecting with a SIS to import roster data. With hundreds of student information systems with proprietary formats, this can become a challenge.
 
 [Microsoft School Data Sync](https://sds.microsoft.com/), combined with the industry data API, addresses this challenge for application developers and schools. The following are some of the scenarios that the industry data API enables:
 
@@ -27,9 +27,9 @@ Most education software developers learn early on that class roster is one of th
 
 ### Enable school admins to manage identity and roster sync using School Data Sync (preview)
 
-Use the industry data API to manage end-to-end synchronization scenarios with School Data Sync. 
+Use the industry data API to manage end-to-end synchronization scenarios with School Data Sync.
 
-School Data Sync helps automate the process of importing and synchronizing student identity and roster data from an SIS <!--with Azure Active Directory (Azure AD) and Microsoft 365. When the information is synchronized, you can use the Education roster APIs to read the roster information into the applications-->. A system integrator setting up integration of a school's SIS with School Data Sync can use the industry data API to set up synchronization from either a .CSV file or a supported SIS API connector.
+School Data Sync helps automate the process of importing and synchronizing student identity and roster data from an SIS <!--with Azure Active Directory (Azure AD) and Microsoft 365. When the information is synchronized, you can use the Education roster APIs to read the roster information into the applications-->. A system integrator who configures the integration of a SIS of a school with School Data Sync can use the industry data API to set up synchronization from either a .CSV file or a supported SIS API connector.
 
 ## API reference
 
@@ -41,5 +41,5 @@ Looking for the API reference for this service?
 
 - To learn more about the industry data APIs as tailored to the education sector, see [Use the industry data API as an extract, transform, and load (ETL) engine](/graph/api/resources/industry-data-overview?view=graph-rest-beta&preserve-view=true).
 - Learn more about [education scenarios in Microsoft Graph](education-concept-overview.md).
-- Set up an education demo developer tenant, [School Data Sync](msgraph-onboarding-sds.md), [Microsoft Teams](msgraph-onboarding-msteams.md), and [try the eduation APIs in Graph Explorer](msgraph-onboarding-graphexplorer.md).
+- Set up an education demo developer tenant, [School Data Sync](msgraph-onboarding-sds.md), [Microsoft Teams](msgraph-onboarding-msteams.md), and [try the education APIs in Graph Explorer](msgraph-onboarding-graphexplorer.md).
 - Try the industry data APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
