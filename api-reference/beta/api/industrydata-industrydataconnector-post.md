@@ -65,7 +65,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_industrydataconnector_from_"
+  "name": "create_industrydataconnector_from_dataConnectors"
 }
 -->
 

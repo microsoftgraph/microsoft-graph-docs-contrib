@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/runs/{industryDataRunId}/getStatistics()
+GET /external/industryData/runs/{industryDataRunId}/getStatistics
 ```
 
 ## Optional query parameters

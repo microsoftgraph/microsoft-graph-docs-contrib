@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /external/industryData/inboundFlows/{inboundFlowId}
+PATCH /external/industryData/inboundFlows/7bd62d17-8c37-4494-f68d-08daddab2911
 ```
 
 ## Request headers
@@ -70,15 +70,15 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}
+PATCH https://graph.microsoft.com/beta/external/industryData/inboundFlows/7bd62d17-8c37-4494-f68d-08daddab2911
 Content-Type: application/json
 Content-length: 246
 
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFlow",
-  "displayName": "String",
-  "effectiveDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)"
+  "displayName": "My Inbound Flow",
+  "effectiveDateTime": "2022-03-12T16:40:46.924769+05:30",
+  "expirationDateTime": "2023-03-12T16:40:46.924769+05:30"
 }
 ```
 

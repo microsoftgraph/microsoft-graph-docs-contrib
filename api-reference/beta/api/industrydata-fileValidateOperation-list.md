@@ -1,5 +1,5 @@
 ---
-title: "List longRunningOperations"
+title: "List fileValidateOperations"
 description: "Get a list of long-running operations and their statuses."
 author: "mlafleur"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
-# List longRunningOperations
+# List fileValidateOperations
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [long-running operations](../resources/longrunningoperation.md) and their statuses.
+Get a list of [file validation operations](../resources/industrydata-fileValidateOperation.md) and their statuses.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [longRunningOperation](../resources/longrunningoperation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [fileValidateOperation](../resources/industrydata-fileValidateOperation.md) objects in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_longrunningoperation"
+  "name": "list_fileValidateOperation"
 }
 -->
 
@@ -79,7 +79,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.longRunningOperation)"
+  "@odata.type": "Collection(microsoft.graph.industryData.fileValidateOperation)"
 }
 -->
 

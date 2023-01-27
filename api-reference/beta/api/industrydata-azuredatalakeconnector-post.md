@@ -65,7 +65,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_azureDataLakeConnector_from_"
+  "name": "create_azureDataLakeConnector_from_dataConnectors"
 }
 -->
 

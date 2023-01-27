@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 Represents metadata for a long running operation.
 
+## Methods
+
+| Method                                                                         | Return type                                                                | Description                                                                                          |
+| :----------------------------------------------------------------------------- | :------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| [List longRunningOperations](../api/industrydata-longRunningOperation-list.md) | [microsoft.graph.longRunningOperation](longRunningOperation.md) collection | Get a list of the [longRunningOperations](longRunningOperation.md) objects and their properties.     |
+| [Get longRunningOperation](../api/industrydata-longRunningOperation-get.md)   | [microsoft.graph.longRunningOperation](longRunningOperation.md)            | Read the properties and relationships of an [longRunningOperations](longRunningOperation.md) object. |
+
 ## Properties
 
 | Property           | Type                       | Description                                                                                                             |

@@ -1,6 +1,6 @@
 ---
 title: "identifierTypeReferenceValue resource type"
-description: "Represents a RefIdentifierType typed ReferenceDefinition."
+description: "Represents a pointer to a RefIdentifierType entry in a collection of referenceDefinition objects."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a RefIdentifierType typed ReferenceDefinition.
+Represents a pointer to a RefIdentifierType entry in a collection of referenceDefinition objects.
 
 Inherits from [referenceValue](industrydata-referencevalue.md).
 
@@ -25,8 +25,8 @@ Inherits from [referenceValue](industrydata-referencevalue.md).
 
 ## Relationships
 
-| Relationship | Type                                                       | Description                                                                                                            |
-| :----------- | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| Relationship | Type                                                                                    | Description                                                                                                            |
+| :----------- | :-------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
 | value        | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [referenceValue](industrydata-referencevalue.md) |
 
 ## JSON representation

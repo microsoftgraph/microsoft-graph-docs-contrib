@@ -68,7 +68,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_yeartimeperioddefinition_from_"
+  "name": "create_yeartimeperioddefinition_from_years"
 }
 -->
 

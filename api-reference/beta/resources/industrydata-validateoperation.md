@@ -19,10 +19,17 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 Base type of [fileValidateOperation](../resources/industrydata-filevalidateoperation.md).
 
+## Methods
+
+| Method                                                                  | Return type                                                                                    | Description                                                                                                |
+| :---------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| [List validateOperation](../api/industrydata-validateOperation-list.md) | [microsoft.graph.industryData.validateOperation](industrydata-validateOperation.md) collection | Get a list of the [validateOperations](industrydata-validateOperation.md) objects and their properties.    |
+| [Get validateOperation](../api/industrydata-validateOperation-get.md)   | [microsoft.graph.industryData.validateOperation](industrydata-validateOperation.md)            | Read the properties and relationships of an [validateOperation](industrydata-validateOperation.md) object. |
+
 ## Properties
 
 | Property           | Type                                                     | Description                                                                                                                                                                                                       |
-|:-------------------|:---------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------- | :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdDateTime    | DateTimeOffset                                           | The date and time when this operation was created. Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                   |
 | errors             | [microsoft.graph.publicError](publicerror.md) collection | Set of errors discovered through validation.                                                                                                                                                                      |
 | id                 | String                                                   | The unique identifier for the operation. Inherited from [entity](../resources/entity.md).                                                                                                                         |

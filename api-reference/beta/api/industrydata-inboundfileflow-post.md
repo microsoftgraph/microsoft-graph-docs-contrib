@@ -76,7 +76,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_inboundflow_from_"
+  "name": "create_inboundflow_from_inboundFlows"
 }
 -->
 

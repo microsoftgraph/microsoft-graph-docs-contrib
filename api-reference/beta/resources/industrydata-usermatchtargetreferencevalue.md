@@ -1,6 +1,6 @@
 ---
 title: "userMatchTargetReferenceValue resource type"
-description: "Represents a RefUserMatchTarget typed ReferenceDefinition."
+description: "Represents a pointer to a RefUserMatchTarget entry in a collection of referenceDefinition objects."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a RefUserMatchTarget typed ReferenceDefinition.
+Represents a pointer to a RefUserMatchTarget entry in a collection of referenceDefinition objects.
 
 Inherits from [referenceValue](industrydata-referencevalue.md).
 

@@ -67,7 +67,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_sourcesystemdefinition_from_"
+  "name": "create_sourcesystemdefinition_from_sourceSystems"
 }
 -->
 
