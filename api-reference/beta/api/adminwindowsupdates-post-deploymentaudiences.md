@@ -37,9 +37,15 @@ POST /admin/windows/updates/deploymentAudiences
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.
+
+You can specify the following properties when you create a **deploymentAudience**.
+
+|Property|Type|Description|
+|:---|:---|:---|
 
 ## Response
 
@@ -56,6 +62,11 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
+Content-Type: application/json
+Content-length: 4
+
+{
+}
 ```
 
 ### Response
@@ -87,7 +98,7 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/7f960f66-b6ed-6d54-f24a-9b1021a1d17f/updateAudience
 Content-Type: application/json
-Content-length: 208
+Content-length: 173
 
 {
   "addMembers": [
@@ -109,5 +120,5 @@ The following is an example of the response.
 }
 -->
 ``` http
-HTTP/1.1 202 Accepted
+HTTP/1.1 202 Created
 ```
