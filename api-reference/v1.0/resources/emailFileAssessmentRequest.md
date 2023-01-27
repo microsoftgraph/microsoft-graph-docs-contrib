@@ -57,15 +57,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "contentData": "String",
-  "destinationRoutingReason": "String",
-  "recipientEmail": "String",
   "category": "String",
+  "contentData": "String",
   "contentType": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
+  "destinationRoutingReason": "String",
   "expectedAssessment": "String",
   "id": "String (identifier)",
+  "recipientEmail": "String",
   "requestSource": "String",
   "status": "String"
 }
