@@ -87,38 +87,3 @@ Content-Type: application/json
   "id": "7f960f66-b6ed-6d54-f24a-9b1021a1d17f",
 }
 ```
-
-### Request
-The following is an example of a request.
-<!-- {
-  "blockType": "request",
-  "name": "create_deploymentaudience_from_"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/7f960f66-b6ed-6d54-f24a-9b1021a1d17f/updateAudience
-Content-Type: application/json
-Content-length: 173
-
-{
-  "addMembers": [
-      {
-        "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-        "id": "983f03cd-03cd-983f-cd03-3f98cd033f98"
-      }
-  ]
-}
-```
-
-### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.deploymentAudience"
-}
--->
-``` http
-HTTP/1.1 202 Created
-```
