@@ -154,7 +154,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -168,11 +167,7 @@ cred, err := azidentity.NewAuthorizationCodeCredential(
     },
 )
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```
@@ -313,7 +308,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -324,11 +318,7 @@ cred, err := azidentity.NewClientSecretCredential(
     nil,
 )
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```
@@ -549,7 +539,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -561,11 +550,7 @@ cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredential
     },
 })
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```
@@ -696,7 +681,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -706,11 +690,7 @@ cred, err := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveB
     RedirectURL: "REDIRECT_URL",
 })
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```
@@ -786,7 +766,6 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -798,11 +777,7 @@ cred, err := azidentity.NewUsernamePasswordCredential(
     nil,
 )
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
 ```

@@ -144,7 +144,6 @@ import (
     "fmt"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -161,19 +160,7 @@ if err != nil {
     return
 }
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-if err != nil {
-    fmt.Printf("Error authentication provider: %v\n", err)
-    return
-}
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-if err != nil {
-    fmt.Printf("Error creating adapter: %v\n", err)
-    return
-}
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 ```
 
 # [Python](#tab/Python)

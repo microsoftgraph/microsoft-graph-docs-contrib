@@ -50,12 +50,12 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String",
-  "isSelfServiceRegistrationAllowed": "Boolean",
+  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ],
   "isAttestationEnforced": "Boolean",
+  "isSelfServiceRegistrationAllowed": "Boolean",
   "keyRestrictions": {
     "@odata.type": "microsoft.graph.fido2KeyRestrictions"
   },
-  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
+  "state": "String"
 }
 ```

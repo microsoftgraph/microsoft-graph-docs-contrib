@@ -3,6 +3,226 @@
     {
       "ChangeList": [
         {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Property",
+          "ChangedApiName": "v15_0",
+          "ChangeType": "Addition",
+          "Description": "Added the `v15_0` property to the [iosMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-1.0) resource.",
+          "Target": "iosMinimumOperatingSystem"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsAppXAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-windowsAppXAppAssignmentSettings?view=graph-rest-1.0) resource type.",
+          "Target": "windowsAppXAppAssignmentSettings"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "containedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **containedApps** relationship to the [mobileAppContent](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-1.0) resource.",
+          "Target": "mobileAppContent"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileContainedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the mobileContainedApp resource",
+          "Target": "mobileContainedApp"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsMicrosoftEdgeApp",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsMicrosoftEdgeApp resource",
+          "Target": "windowsMicrosoftEdgeApp"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "committedContainedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **committedContainedApps** relationship to the [windowsUniversalAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-1.0) resource.",
+          "Target": "windowsUniversalAppX"
+        },
+        {
+          "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsUniversalAppXContainedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsUniversalAppXContainedApp resource",
+          "Target": "windowsUniversalAppXContainedApp"
+        },
+        {
+          "Id": "9226e379-f9ee-495d-b6f1-fd9ffbb0502b",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeCompanyPortalLink",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeCompanyPortalLink` member to the **notificationTemplateBrandingOptions** enumeration.",
+          "Target": "notificationTemplateBrandingOptions"
+        },
+        {
+          "Id": "30eff121-2961-43e2-90c8-8f0137ddddbb",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicesWithoutCompliancePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicesWithoutCompliancePolicyReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "0b855a64-516c-4b72-aa93-39322a979233",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-04T17:32:27.4508092Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5321afac-b6a5-4946-88c0-8d0964aca730",
+          "ApiChange": "Property",
+          "ChangedApiName": "isTeamsDeviceProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the `isTeamsDeviceProfile` property to the [androidDeviceOwnerEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerEnrollmentProfile"
+        },
+        {
+          "Id": "576e7443-79e3-47e5-9933-3a59fb0455c7",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityVersion",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `identityVersion` property from the [iosLobApp](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobapp?view=graph-rest-beta) resource.",
+          "Target": "iosLobApp"
+        },
+        {
+          "Id": "3311fa02-15bb-4a82-801d-17dbe6665995",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "winGetAppNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **winGetAppNotification** enumeration type.",
+          "Target": "winGetAppNotification"
+        },
+        {
+          "Id": "3311fa02-15bb-4a82-801d-17dbe6665995",
+          "ApiChange": "Resource",
+          "ChangedApiName": "winGetAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [winGetAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppAssignmentSettings?view=graph-rest-beta) resource type.",
+          "Target": "winGetAppAssignmentSettings"
+        },
+        {
+          "Id": "3311fa02-15bb-4a82-801d-17dbe6665995",
+          "ApiChange": "Resource",
+          "ChangedApiName": "winGetAppInstallTimeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [winGetAppInstallTimeSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppInstallTimeSettings?view=graph-rest-beta) resource type.",
+          "Target": "winGetAppInstallTimeSettings"
+        },
+        {
+          "Id": "3311fa02-15bb-4a82-801d-17dbe6665995",
+          "ApiChange": "Resource",
+          "ChangedApiName": "winGetAppRestartSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [winGetAppRestartSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppRestartSettings?view=graph-rest-beta) resource type.",
+          "Target": "winGetAppRestartSettings"
+        },
+        {
+          "Id": "3dfff494-eec8-41c2-8763-086c93d50bc0",
+          "ApiChange": "Member",
+          "ChangedApiName": "linux",
+          "ChangeType": "Addition",
+          "Description": "Added the `linux` member to the **enrollmentRestrictionPlatformType** enumeration.",
+          "Target": "enrollmentRestrictionPlatformType"
+        },
+        {
+          "Id": "3dfff494-eec8-41c2-8763-086c93d50bc0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sideLoadingKeys",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sideLoadingKeys** relationship from the [deviceAppManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-beta) resource.",
+          "Target": "deviceAppManagement"
+        },
+        {
+          "Id": "3dfff494-eec8-41c2-8763-086c93d50bc0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sideLoadingKey",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sideLoadingKey** resource type.",
+          "Target": "sideLoadingKey"
+        },
+        {
+          "Id": "d0f5aab1-a5ca-43a8-b67a-83fd1fb0e809",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceEventLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceEventLevel** enumeration type.",
+          "Target": "deviceEventLevel"
+        },
+        {
+          "Id": "d0f5aab1-a5ca-43a8-b67a-83fd1fb0e809",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsDeviceTimelineEvents",
+          "ChangeType": "Addition",
+          "Description": "Added the **userExperienceAnalyticsDeviceTimelineEvents** relationship to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "d0f5aab1-a5ca-43a8-b67a-83fd1fb0e809",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsDeviceTimelineEvents",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsDeviceTimelineEvents](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsDeviceTimelineEvents?view=graph-rest-beta) resource",
+          "Target": "userExperienceAnalyticsDeviceTimelineEvents"
+        },
+        {
+          "Id": "2dd53ab4-ed69-4be8-9996-0b8daf273d48",
+          "ApiChange": "Property",
+          "ChangedApiName": "enabledSkipKeys",
+          "ChangeType": "Addition",
+          "Description": "Added the `enabledSkipKeys` property to the [depEnrollmentBaseProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta) resource.",
+          "Target": "depEnrollmentBaseProfile"
+        },
+        {
+          "Id": "0432a145-a2b8-4601-9de0-cca0cf090e76",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateScopeTags",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateScopeTags](https://learn.microsoft.com/graph/api/intune-groupPolicyMigrationReport?view=graph-rest-beta) method to the [groupPolicyMigrationReport](https://learn.microsoft.com/graph/api/intune-groupPolicyMigrationReport?view=graph-rest-beta) resource.",
+          "Target": "groupPolicyMigrationReport"
+        },
+        {
+          "Id": "354137ad-a8be-48b1-afa4-962ea8c0883a",
+          "ApiChange": "Property",
+          "ChangedApiName": "enableCertificatePinning",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `enableCertificatePinning` property from the [microsoftTunnelSite](https://learn.microsoft.com/graph/api/resources/microsoftTunnelSite?view=graph-rest-beta) resource.",
+          "Target": "microsoftTunnelSite"
+        },
+        {
+          "Id": "90295c3e-b9ad-4c96-8c0c-132330ecd8fd",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicesWithoutCompliancePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicesWithoutCompliancePolicyReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "5321afac-b6a5-4946-88c0-8d0964aca730",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-27T19:38:22.6051064Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "787f07b7-7f12-45f6-9681-9eb3909b535e",
           "ApiChange": "Resource",
           "ChangedApiName": "auditActor",
@@ -47,7 +267,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditActivityTypes",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditActivityTypes](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the getAuditActivityTypes method to the auditEvent resource.",
           "Target": "auditEvent"
         },
         {
@@ -55,7 +275,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditCategories",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the getAuditCategories method to the auditEvent resource.",
           "Target": "auditEvent"
         }
       ],
@@ -73,7 +293,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "macOSMicrosoftDefenderApp",
           "ChangeType": "Addition",
-          "Description": "Added the [macOSMicrosoftDefenderApp](https://learn.microsoft.com/graph/api/resources/intune-macOSMicrosoftDefenderApp?view=graph-rest-beta) resource",
+          "Description": "Added the macOSMicrosoftDefenderApp resource",
           "Target": "macOSMicrosoftDefenderApp"
         },
         {
@@ -89,7 +309,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setScheduledRetireState",
           "ChangeType": "Addition",
-          "Description": "Added the [setScheduledRetireState](https://learn.microsoft.com/graph/api/intune-deviceCompliancePolicy?view=graph-rest-beta) method to the [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/intune-deviceCompliancePolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the setScheduledRetireState method to the deviceCompliancePolicy resource.",
           "Target": "deviceCompliancePolicy"
         },
         {
@@ -97,7 +317,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setScheduledRetireState",
           "ChangeType": "Deletion",
-          "Description": "Removed the **setScheduledRetireState** method from the [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/intune-deviceCompliancePolicy?view=graph-rest-beta) resource.",
+          "Description": "Removed the **setScheduledRetireState** method from the deviceCompliancePolicy resource.",
           "Target": "deviceCompliancePolicy"
         },
         {
@@ -137,7 +357,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getEncryptionReportForDevices",
           "ChangeType": "Addition",
-          "Description": "Added the [getEncryptionReportForDevices](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Added the getEncryptionReportForDevices method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -145,7 +365,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reorder",
           "ChangeType": "Addition",
-          "Description": "Added the [reorder](https://learn.microsoft.com/graph/api/intune-deviceManagementConfigurationPolicy?view=graph-rest-beta) method to the [deviceManagementConfigurationPolicy](https://learn.microsoft.com/graph/api/intune-deviceManagementConfigurationPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the reorder method to the deviceManagementConfigurationPolicy resource.",
           "Target": "deviceManagementConfigurationPolicy"
         },
         {
@@ -161,7 +381,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "terminate",
           "ChangeType": "Addition",
-          "Description": "Added the [terminate](https://learn.microsoft.com/graph/api/intune-deviceManagementPartner?view=graph-rest-beta) method to the [deviceManagementPartner](https://learn.microsoft.com/graph/api/intune-deviceManagementPartner?view=graph-rest-beta) resource.",
+          "Description": "Added the terminate method to the deviceManagementPartner resource.",
           "Target": "deviceManagementPartner"
         },
         {
@@ -185,7 +405,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledForEnrollmentCount",
           "ChangeType": "Addition",
-          "Description": "Added the `scheduledForEnrollmentCount` property to the [comanagementEligibleDevicesSummary](https://learn.microsoft.com/graph/api/resources/intune-devices-devicemanagement-getcomanagementeligibledevicessummary?view=graph-rest-beta) resource.",
+          "Description": "Added the `scheduledForEnrollmentCount` property to the comanagementEligibleDevicesSummary resource.",
           "Target": "comanagementEligibleDevicesSummary"
         },
         {
@@ -201,7 +421,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsDeviceScopeSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsDeviceScopeSummary](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsDeviceScopeSummary?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsDeviceScopeSummary resource type.",
           "Target": "userExperienceAnalyticsDeviceScopeSummary"
         },
         {
@@ -233,7 +453,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "initiateMobileDeviceManagementKeyRecovery",
           "ChangeType": "Addition",
-          "Description": "Added the [initiateMobileDeviceManagementKeyRecovery](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the initiateMobileDeviceManagementKeyRecovery method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -241,7 +461,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summarizeDeviceRegressionPerformance",
           "ChangeType": "Deletion",
-          "Description": "Removed the **summarizeDeviceRegressionPerformance** method from the [userExperienceAnalyticsRegressionSummary](https://learn.microsoft.com/graph/api/intune-userExperienceAnalyticsRegressionSummary?view=graph-rest-beta) resource.",
+          "Description": "Removed the **summarizeDeviceRegressionPerformance** method from the userExperienceAnalyticsRegressionSummary resource.",
           "Target": "userExperienceAnalyticsRegressionSummary"
         },
         {
@@ -249,7 +469,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "userExperienceAnalyticsSummarizedDeviceScopes",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsSummarizedDeviceScopes](https://learn.microsoft.com/graph/api/intune-deviceManagement?view=graph-rest-beta) method to the [deviceManagement](https://learn.microsoft.com/graph/api/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Description": "Added the userExperienceAnalyticsSummarizedDeviceScopes method to the deviceManagement resource.",
           "Target": "deviceManagement"
         },
         {
@@ -297,7 +517,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getMobileApplicationManagementAppConfigurationReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getMobileApplicationManagementAppConfigurationReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Added the getMobileApplicationManagementAppConfigurationReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -305,7 +525,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "endRemoteHelpSession",
           "ChangeType": "Addition",
-          "Description": "Added the [endRemoteHelpSession](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the endRemoteHelpSession method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -355,7 +575,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v6_0",
           "ChangeType": "Addition",
-          "Description": "Added the `v6_0` property to the [androidMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Description": "Added the `v6_0` property to the androidMinimumOperatingSystem resource.",
           "Target": "androidMinimumOperatingSystem"
         },
         {
@@ -363,7 +583,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v7_0",
           "ChangeType": "Addition",
-          "Description": "Added the `v7_0` property to the [androidMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Description": "Added the `v7_0` property to the androidMinimumOperatingSystem resource.",
           "Target": "androidMinimumOperatingSystem"
         },
         {
@@ -371,7 +591,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v7_1",
           "ChangeType": "Addition",
-          "Description": "Added the `v7_1` property to the [androidMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Description": "Added the `v7_1` property to the androidMinimumOperatingSystem resource.",
           "Target": "androidMinimumOperatingSystem"
         },
         {
@@ -379,7 +599,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v8_0",
           "ChangeType": "Addition",
-          "Description": "Added the `v8_0` property to the [androidMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Description": "Added the `v8_0` property to the androidMinimumOperatingSystem resource.",
           "Target": "androidMinimumOperatingSystem"
         },
         {
@@ -502,7 +722,7 @@
           "ChangedApiName": "v13_0",
           "ChangeType": "Addition",
           "Description": "Added the `v13_0` property to the [macOSMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-apps-macosminimumoperatingsystem?view=graph-rest-beta) resource.",
-          "Target": "macOSMinimumOperatingSystem" 
+          "Target": "macOSMinimumOperatingSystem"
         },
         {
           "Id": "e7737123-5578-4b32-85c1-098f20742117",
@@ -1107,7 +1327,7 @@
       "SubArea": "Corporate management"
     },
     {
-    "ChangeList": [
+      "ChangeList": [
         {
           "Id": "fef42d93-a0d9-4d71-aa73-f02ed7171f7d",
           "ApiChange": "Property",
@@ -1467,7 +1687,7 @@
       "CreatedDateTime": "2022-08-17T15:18:01.980486Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -1477,7 +1697,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **diskType** enumeration type.",
           "Target": "diskType"
-        }, 
+        },
         {
           "Id": "4fefb14c-a22d-4e6e-9820-3e73c079a7a2",
           "ApiChange": "Enumeration",
@@ -1517,7 +1737,7 @@
       "CreatedDateTime": "2022-07-25T18:53:32.7807195Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
-    },      
+    },
     {
       "ChangeList": [
         {
@@ -20971,7 +21191,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicableArchitectures",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsappx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/windowsarchitecture?view=graph-rest-beta) to String, ",
+          "Description": "Changed the type of the following properties on the [windowsAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsappx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsarchitecture?view=graph-rest-beta) to String, ",
           "Target": "windowsAppX,windowsArchitecture"
         },
         {
@@ -20987,7 +21207,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicableArchitectures",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsPhone81AppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/windowsarchitecture?view=graph-rest-beta) to String, ",
+          "Description": "Changed the type of the following properties on the [windowsPhone81AppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsarchitecture?view=graph-rest-beta) to String, ",
           "Target": "windowsPhone81AppX,windowsArchitecture"
         },
         {
@@ -21003,7 +21223,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicableArchitectures,applicableDeviceTypes",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsUniversalAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/windowsarchitecture?view=graph-rest-beta) to String, **applicableDeviceTypes** from [windowsDeviceType](https://learn.microsoft.com/graph/api/resources/windowsdevicetype?view=graph-rest-beta) to String, ",
+          "Description": "Changed the type of the following properties on the [windowsUniversalAppX](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta) entity: **applicableArchitectures** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsarchitecture?view=graph-rest-beta) to String, **applicableDeviceTypes** from [windowsDeviceType](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsDeviceType?view=graph-rest-beta) to String, ",
           "Target": "windowsUniversalAppX,windowsArchitecture,windowsDeviceType"
         },
         {
@@ -21203,7 +21423,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicableArchitecture",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsPackageInformation](https://learn.microsoft.com/graph/api/resources/intune-apps-windowspackageinformation?view=graph-rest-beta) complex type: **applicableArchitecture** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/windowsarchitecture?view=graph-rest-beta) to String, ",
+          "Description": "Changed the type of the following properties on the [windowsPackageInformation](https://learn.microsoft.com/graph/api/resources/intune-apps-windowspackageinformation?view=graph-rest-beta) complex type: **applicableArchitecture** from [windowsArchitecture](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsarchitecture?view=graph-rest-beta) to String, ",
           "Target": "windowsPackageInformation,windowsArchitecture"
         },
         {

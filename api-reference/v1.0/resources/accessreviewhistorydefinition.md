@@ -59,18 +59,17 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "reviewHistoryPeriodStartDateTime": "String (timestamp)",
-  "reviewHistoryPeriodEndDateTime": "String (timestamp)",
-  "status": "String",
-  "decisions": [
-    "String"
-  ],
-  "createdDateTime": "String (timestamp)",
   "createdBy": {
     "@odata.type": "microsoft.graph.userIdentity"
   },
+  "createdDateTime": "String (timestamp)",
+  "decisions": [
+    "String"
+  ],
+  "displayName": "String",
+  "id": "String (identifier)",
+  "reviewHistoryPeriodEndDateTime": "String (timestamp)",
+  "reviewHistoryPeriodStartDateTime": "String (timestamp)",
   "scopes": [
     {
       "@odata.type": "microsoft.graph.accessReviewScope"
@@ -78,6 +77,7 @@ The following is a JSON representation of the resource.
   ],
   "scheduleSettings": {
     "@odata.type": "microsoft.graph.accessReviewHistoryScheduleSettings"
-  }
+  },
+  "status": "String",
 }
 ```

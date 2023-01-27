@@ -146,7 +146,7 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ```go
 import (
-    a "github.com/microsoft/kiota-authentication-azure-go"
+    a "github.com/microsoftgraph/msgraph-sdk-go-core/authentication"
     khttp "github.com/microsoft/kiota-http-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
     core "github.com/microsoftgraph/msgraph-sdk-go-core"

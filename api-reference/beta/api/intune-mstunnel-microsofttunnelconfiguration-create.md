@@ -1,7 +1,7 @@
 ---
 title: "Create microsoftTunnelConfiguration"
 description: "Create a new microsoftTunnelConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ The following table shows the properties that are required when you create the m
 |routeExcludes|String collection|Subsets of the routes that will not be routed by the server|
 |splitDNS|String collection|The domains that will be resolved using the provided dns servers|
 |listenPort|Int32|The port that both TCP and UPD will listen over on the server|
-|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
+|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) collection|Additional settings that may be applied to the server|
 |lastUpdateDateTime|DateTimeOffset|When the configuration was last updated|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance|
 |disableUdpConnections|Boolean|When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to transfer data.|
@@ -166,8 +166,3 @@ Content-Length: 943
   "disableUdpConnections": true
 }
 ```
-
-
-
-
-
