@@ -25,14 +25,14 @@ Inherits from [fileDataConnector](industrydata-filedataconnector.md).
 | [List azureDataLakeConnectors](../api/industrydata-azuredatalakeconnector-list.md)    | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md) collection | Get a list of the [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) objects and their properties.     |
 | [Get azureDataLakeConnector](../api/industrydata-azuredatalakeconnector-get.md)       | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)            | Read the properties and relationships of an [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object. |
 | [Update azureDataLakeConnector](../api/industrydata-azuredatalakeconnector-update.md) | [microsoft.graph.industryData.azureDataLakeConnector](industrydata-azuredatalakeconnector.md)            | Update the properties of an [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object.                 |
-| [Delete azureDataLakeConnector](../api/industrydata-azuredatalakeconnector-delete.md) | None                                                                                                     | Deletes an [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object.                                  |
-| [getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md)    | [microsoft.graph.industryData.fileUploadSession](industrydata-fileuploadsession.md)                      | Retrieves an upload session used to supply file-based data to an inbound flow.                                       |
+| [Delete azureDataLakeConnector](../api/industrydata-azuredatalakeconnector-delete.md) | None                                                                                                     | Delete an [azureDataLakeConnector](industrydata-azuredatalakeconnector.md) object.                                  |
+| [getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md)    | [microsoft.graph.industryData.fileUploadSession](industrydata-fileuploadsession.md)                      | Retrieve an upload session used to supply file-based data to an inbound flow.                                       |
 
 ## Properties
 
 | Property    | Type   | Description                                                                                                |
 | :---------- | :----- | :--------------------------------------------------------------------------------------------------------- |
-| displayName | String | Name of the data connector. Inherited from industryDataConnector](industrydata-industrydataconnector.md). |
+| displayName | String | Name of the data connector. Inherited from [industryDataConnector](industrydata-industrydataconnector.md). |
 
 ## Relationships
 

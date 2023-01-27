@@ -22050,7 +22050,7 @@ items:
       items:
         - name: Overview
           href: resources/industrydata-overview.md
-        - name: Inbound data flow
+        - name: Inbound flow
           href: resources/industrydata-inboundflow.md
           items:
             - name: Create

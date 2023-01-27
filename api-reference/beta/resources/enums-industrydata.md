@@ -13,6 +13,8 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Enum values for the industry data API in Microsoft Graph.
+
 ### inboundDomain values
 
 | Member             |
