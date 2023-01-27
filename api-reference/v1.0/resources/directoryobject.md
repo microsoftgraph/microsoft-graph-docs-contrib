@@ -21,7 +21,6 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 + [device](device.md)
 + [group](group.md)
 + [orgContact](orgcontact.md)
-+ [oauth2PermissionGrant](oauth2permissiongrant.md)
 + [servicePrincipal](serviceprincipal.md)
 + [user](user.md)
 
