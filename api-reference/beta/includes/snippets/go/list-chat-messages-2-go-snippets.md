@@ -13,7 +13,7 @@ requestFilter := "lastModifiedDateTime ge 2022-09-22T00:00:00.000Z and lastModif
 
 requestParameters := &graphconfig.ChatItemMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
-	OrderBy: [] string {"lastModifiedDateTime desc"},
+	Orderby: [] string {"lastModifiedDateTime desc"},
 	Filter: &requestFilter,
 }
 configuration := &graphconfig.ChatItemMessagesRequestBuilderGetRequestConfiguration{
