@@ -293,6 +293,10 @@ Content-Type: application/json
 
 ### Create app roles on an application object
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-create-serviceprincipal-approles"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/bbd46130-e957-4c38-a116-d4d02afd1057
 Content-Type: application/json
@@ -322,6 +326,10 @@ When updating the appRoles in a service principal, you can only add to or update
 
 In the following request, the `Survey.Read` appRole originates from the application object.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-create-serviceprincipal-approles"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7
 Content-Type: application/json
