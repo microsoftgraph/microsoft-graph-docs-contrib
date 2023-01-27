@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the user processing result of a [run](../resources/identitygovernance-run.md) object.
+Get the user processing result of a user processing result of a [run](../resources/identitygovernance-run.md).
 
 ## Permissions
 
@@ -39,6 +39,7 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 -->
 ``` http
 GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/{runId}/userProcessingResults/{userProcessingResultId}
+GET 
 ```
 
 ## Optional query parameters
@@ -206,4 +207,3 @@ Content-Type: application/json
     }
 }
 ```
-
