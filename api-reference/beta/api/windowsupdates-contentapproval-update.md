@@ -90,9 +90,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
   "id": "bba2a340-1e32-b5ed-186e-678e16033319",
-  "@odata.context": "https://graph.microsoft.com/beta/admin/windows/updates/$metadata#complianceChange/$entity",
-  "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
-  "id": "bba2a340-1e32-b5ed-186e-678e16033319",
   "createdDateTime": "2020-06-09T10:00:00Z",
   "isRevoked": true,
   "revokedDateTime": "2020-06-09T11:00:00Z",

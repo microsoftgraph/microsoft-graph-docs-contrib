@@ -72,7 +72,9 @@ Content-length: 570
   "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
   "content": {
     "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-    "catalogEntry": { "@odata.id": "catalog/entries/1" }
+    "catalogEntry": {
+      "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry", 
+      "id": "catalog/entries/1"
   },
   "deploymentSettings": {
     "contentApplicability": {
@@ -103,9 +105,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
-  "id": "bba2a340-1e32-b5ed-186e-678e16033319",
-  "@odata.context": "https://graph.microsoft.com/beta/admin/windows/updates/$metadata#complianceChange/$entity",
   "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
   "id": "bba2a340-1e32-b5ed-186e-678e16033319",
   "createdDateTime": "2020-06-09T10:00:00Z",
