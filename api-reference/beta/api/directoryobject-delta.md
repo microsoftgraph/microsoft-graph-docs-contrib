@@ -31,6 +31,7 @@ The following table shows the least privileged permission by each permission typ
 | [servicePrincipal](../resources/serviceprincipal.md)     | ServicePrincipal.Read.All | ServicePrincipal.Read.All | Not supported |
 | [user](../resources/user.md)           | User.Read.All | User.Read.All | Not supported |
 
+> **Note:** To complete a delta query on the `appRoleAssignment` resource, both the `appRoleAssignment` and `user` resources must be specified in the $filter parameter.
 
 ## HTTP request
 
