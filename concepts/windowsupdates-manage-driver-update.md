@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](windowsupdates-deployments) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on managing the deployments of driver updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update).  For information on deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update).
 
-When devices enrolled in the Windows Update for Business Deployment Service scan Windows Update, the deployment service collects scan results of applicable drivers that are better than what is currently installed on the device.  The service then catalogs them to be browsed, approved, and scheduled for deployment.  Only content that has been approved using the deployment service will be offered to devices as long as it remains enrolled in driver management.
+When devices enrolled in the Windows Update for Business deployment service scan Windows Update, the deployment service collects scan results of applicable drivers that are better than what is currently installed on the device.  The service then catalogs them to be browsed, approved, and scheduled for deployment.  Only content that has been approved using the deployment service will be offered to devices as long as it remains enrolled in driver management.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ When devices enrolled in the Windows Update for Business Deployment Service scan
 
 ## Step 1: Enroll devices in driver management
 
-When you enroll a device in driver management, the deployment service becomes the authority for driver updates coming from Windows Update. As a result, devices do not receive drivers from Windows Update until a deployment is manually created or they are added to a driver update policy with approvals.
+When you enroll a device in driver management, the deployment service becomes the authority for driver updates coming from Windows Update. As a result, devices do not receive drivers from Windows Update until a deployment is created or they are added to a driver update policy with approvals.
 
 ### Request
 ``` http
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ## Step 3: Assign devices to the deployment audience
 
-After a [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). When the deployment audience is successfully updated, the Windows Update for Business Deployment Service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
+After a [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) is created, you can assign devices to the deployment audience. When the deployment audience is successfully updated, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
 
 The following example shows how to add Azure AD devices as members of the deployment audience.
 
@@ -268,7 +268,7 @@ HTTP/1.1 204 No Content
 
 ## Unenroll from driver management
 
-When you unenroll a device from management [unenroll assets](/graph/api/windowsupdates-updatableasset-unenrollassets), by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. If the device is assigned to any deployments for the given update category, it does not receive that content. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
 
 
 ### Request

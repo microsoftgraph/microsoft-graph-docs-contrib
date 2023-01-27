@@ -17,6 +17,8 @@ Today, the deployment service supports enrollment in management of Windows 10/11
 
 When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices do not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](windowsupdates-deployments). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist). For driver enrollment, see [enroll devices in driver management](windowsupdates-manage-driver-update#Step-1:-Enroll-devices-in-driver-management).
 
+The following example shows how to enroll a device in feature update management.
+
 ### Request
 
 ``` http
@@ -82,7 +84,7 @@ Content-Type: application/json
 
 ## Unenroll from management by the service or unregister from the service 
 
-When you unenroll a device from management by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. If the device is assigned to any deployments for the given update category, it does not receive that content. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
 
 ### Request
 
