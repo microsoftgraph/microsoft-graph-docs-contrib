@@ -34,8 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/windows/updates/deployments/{deploymentId}/audience/exclusions
+GET /admin//windows/updates/deploymentAudiences/{deploymentAudienceId}/exclusions
 ```
+## Optional query parameters
+This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
+
+To use a query parameter on a property that is not inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full resource type for the property. For example, to select [azureADDevice](../resources/windowsupdates-azureaddevice.md) `errors`, use `$select=microsoft.graph.windowsUpdates.azureADDevice/errors`.
 
 ## Request headers
 |Name|Description|
@@ -60,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5/audience/exclusions
+GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/be0538f6-91d8-4b4a-8dbc-d6f9b70da20b/exclusions
 ```
 
 # [C#](#tab/csharp)
