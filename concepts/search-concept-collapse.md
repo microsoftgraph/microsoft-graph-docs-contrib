@@ -162,8 +162,8 @@ In below table, the ranking is still maintained, but we collapse first on Filena
 |Notebook|James|Science|6|
 |Notebook|Andy|Culture|7|
 
-## Expected Response
-When using collapseProperties, the response will contain an "isCollapsed" Boolean field for each result that represents the collapse state of that result.
+## Expected response
+When you use **collapseProperties**, the response contains an **isCollapsed** Boolean property for each result. This property indicates the collapse state of the result.
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
