@@ -1104,6 +1104,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
+
 {
     "subject": null,
     "body": {
@@ -1136,6 +1137,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
     "id": "1616991851162",
