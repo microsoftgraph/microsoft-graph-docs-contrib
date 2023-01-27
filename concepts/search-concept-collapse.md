@@ -17,14 +17,16 @@ You can use the Microsoft Search API in Microsoft Graph to collapse items in a s
 - **listItem**
 - **externalItem**
 
-| Scenarios | Description | Sample |
-| :----     | :----       | :----  |
-|**Basic Collapse**|Collapse by any single queryable and either sortable or refineable property. This limit value must be an integer between 1 and 32767.|"collapseProperties":[{"fields":["filename"],"limit":3}]|
-|**Compound Collapse**|Collapse by compound fields of properties. There is no built-in maximum size for number of fields, but at least two fields need to be nominated. This limit value must be an integer between 1 and 32767.|"collapseProperties":[{"fields":["filename","author"],"limit":2}]|
-|**Multi-level Collapse**|Collapse by level-by-level collapseProperty. There is no built-in maximum size for number of levels, but at least two levels need to be specified. For the limit value of each level must be an integer between 1 and 32767, and must be equal or less than upper-level limit value. |"collapseProperties":[{"fields":["filename"],"limit":3},{"fields":["author"],"limit":1}]|
+The following table lists the collapse scenarios that you can enable.
 
-## Examples of using collapseProperties
-The following table shows a sample list in SharePoint. The next set of examples use this list to show how the collapseProperties property works.
+| Scenarios | Description | Example |
+| :----     | :----       | :----  |
+|**Basic collapse**|Collapse by any single queryable and either sortable or refineable property. This limit value must be an integer between 1 and 32767.|`"collapseProperties":[{"fields":["filename"],"limit":3}]`|
+|**Compound collapse**|Collapse by compound fields of properties. There is no maximum number of fields, but at least two fields must be specified. This limit value must be an integer between 1 and 32767.|`"collapseProperties":[{"fields":["filename","author"],"limit":2}]`|
+|**Multi-level collapse**|Collapse by level-by-level **collapseProperty**. There is no maximum number of levels, but at least two levels must be specified. The limit value of each level must be an integer between 1 and 32767, and must be equal to or less than the upper-level limit value. |`"collapseProperties":[{"fields":["filename"],"limit":3},{"fields":["author"],"limit":1}]`|
+
+## Examples
+The following table shows a sample list in SharePoint. The examples in this section use this list to show how the **collapseProperties** property works.
 
 | Filename | Author | Subject | Rank |
 | :----: | :----: | :----: | :----: |
@@ -67,7 +69,7 @@ Content-Type: application/json
     ]
 }
 ```
-Group the items based on **Filename** and show the top three (hence "limit": 3) for each group. As you can see in the below table, the ranking is maintained, and the top three rows and last 3 rows are kept but rows 4 and 5 are excluded because the collapseProperties limit is 3.
+Group the items based on **Filename** and show the top three ("limit": 3) for each group. As you can see in the following table, the ranking is maintained. The top three and last three rows remain, but rows four and five are excluded because the **collapseProperties** limit is 3.
 
 | Filename | Author | Subject | Rank |
 | :----: | :----: | :----: | :----: |
@@ -110,7 +112,7 @@ Content-Type: application/json
     ]
 }
 ```
-In below table, the ranking is still maintained, but we collapse by two properties simultaneously to find unique combinations of Filename and Author. This results in keeping the first 4 rows and excluding row 5 because combination of Note (Filename) and James (Author) is only allowed up to 2 times. Additionally, last 3 rows are kept for the same reason.
+In the following table, the ranking is maintained, but the results are collapsed by two properties simultaneously to find unique combinations of Filename and Author. This results in keeping the first four rows and excluding row five, because the combination of Note (Filename) and James (Author) is only allowed up to 2 times. The last three rows remain for the same reason.
 
 | Filename | Author | Subject | Rank |
 | :----: | :----: | :----: | :----: |
@@ -159,7 +161,7 @@ Content-Type: application/json
     ]
 }
 ```
-In below table, the ranking is still maintained, but we collapse first on Filename and then do a second collapse on Author. For the first level collapse on Filename with a limit of 3, this results in keeping the first 3 rows excluding rows 4 and 5 and keeping the last 3 rows as is. And then for the second level collapse with a limit of 1, we don't need to change the first 3 rows we kept because each has a unique Author value, but we do need to exclude row 8 because James is listed again as Author and we only need unique values for that property.
+In the following table, the ranking is maintained, but the results are collapsed first on Filename and then on Author. For the first -evel collapse on Filename, with a limit of 3, the first three rows remain, rows four and five are removed, and the last three rows remain as is. For the second-level collapse with a limit of 1, the first three rows don't change because each has a unique Author value. Row eight is excluded because James is listed again as Author and that property must have unique values.
 
 | Filename | Author | Subject | Rank |
 | :---- | :---- | :---- | :---- |
@@ -169,8 +171,9 @@ In below table, the ranking is still maintained, but we collapse first on Filena
 |Notebook|James|Science|6|
 |Notebook|Andy|Culture|7|
 
-## Expected response
+## Response
 When you use **collapseProperties**, the response contains an **isCollapsed** Boolean property for each result. This property indicates the collapse state of the result.
+
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
