@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # directoryObject: delta
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Namespace: microsoft.graph
 
 Get newly created, updated, or deleted directory objects without having to perform a full read of the entire directoryObject collection. For more information about the delta function, see [Using Delta Query](/graph/delta-query-overview) for details.
@@ -39,6 +41,12 @@ Track changes for a collection of a directory object type. The _{resource-type}_
 GET /directoryObjects/delta?$filter=isof('{resource-type}')
 ```
 
+Track changes for a directory object.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /directoryObjects/delta?$filter=id eq '{id}'
+```
 
 ### OData query parameters
 
@@ -83,7 +91,7 @@ By default, requests using a `@odata.deltaLink` or `@odata.nextLink` return the 
 - If the property has not changed, the old value is included in the response.
 - If the property has never been set before it will not be included in the response at all.
 
-> **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values - as shown in the [second example](#request-3) below.
+> **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values - as shown in [Example 3](#example-3-retrieve-changes-to-specific-properties-for-a-collection-of-users-and-groups).
 
 #### Alternative: return only the changed properties
 
@@ -92,7 +100,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property has not changed, the property is not included in the response at all. (Different from the default behavior.)
 
-> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-4) below.
+> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See [Example 4](#example-4-retrieve-specific-properties-only-if-they-changed-for-a-collection-of-users-and-groups).
 
 ## Examples
 

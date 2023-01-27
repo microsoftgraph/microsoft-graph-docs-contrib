@@ -357,6 +357,8 @@ items:
           href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
+        - name: Get delta via directoryObjects
+          href: api/directoryobject-delta.md
       - name: App role assignment
         href: resources/approleassignment.md
         items:
@@ -366,6 +368,8 @@ items:
           href: api/user-post-approleassignments.md
         - name: Remove
           href: api/user-delete-approleassignments.md
+        - name: Get delta via directoryObjects
+          href: api/directoryobject-delta.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -654,6 +658,8 @@ items:
           href: api/group-delete-owners.md
         - name: Get delta
           href: api/group-delta.md
+        - name: Get delta via directoryObjects
+          href: api/directoryobject-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
         - name: List joined teams
@@ -720,6 +726,8 @@ items:
           href: api/group-post-approleassignments.md
         - name: Remove
           href: api/group-delete-approleassignments.md
+        - name: Get delta via directoryObjects
+          href: api/directoryobject-delta.md
       - name: Attachment
         items:
         - name: Attachment
@@ -907,6 +915,8 @@ items:
           href: api/application-delete.md
         - name: Get delta
           href: api/application-delta.md
+        - name: Get delta via directoryObjects
+          href: api/directoryobject-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: List deleted applications owned by user
@@ -1028,6 +1038,8 @@ items:
           href: api/directory-deleteditems-restore.md
         - name: Get delta
           href: api/serviceprincipal-delta.md
+        - name: Get delta via directoryObjects
+          href: api/directoryobject-delta.md
         - name: List created objects
           href: api/serviceprincipal-list-createdobjects.md
         - name: List owned objects
@@ -4676,6 +4688,8 @@ items:
             href: api/directory-post-administrativeunits.md
           - name: Get
             href: api/administrativeunit-get.md
+          - name: Get delta via directoryObjects
+            href: api/directoryobject-delta.md
           - name: Update
             href: api/administrativeunit-update.md
           - name: Delete
@@ -4726,6 +4740,8 @@ items:
         - name: Device
           href: resources/device.md
           items:
+          - name: Get delta via directoryObjects
+            href: api/directoryobject-delta.md
           - name: List devices
             href: api/device-list.md
           - name: Create device
@@ -4800,6 +4816,8 @@ items:
             href: api/directoryrole-list-scopedmembers.md
           - name: Get delta
             href: api/directoryrole-delta.md
+          - name: Get delta via directoryObjects
+            href: api/directoryobject-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:
@@ -4848,6 +4866,8 @@ items:
             href: api/orgcontact-get.md
           - name: Get delta
             href: api/orgcontact-delta.md
+          - name: Get delta via directoryObjects
+            href: api/directoryobject-delta.md
           - name: Groups
             href: resources/group.md
             items:
