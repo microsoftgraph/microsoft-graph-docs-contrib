@@ -15,13 +15,19 @@ Get newly created, updated, or deleted directory objects without having to perfo
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following table shows the least privileged permission by each permission type (delegated or application) for each resource type that is supported by the required $filter parameter. The permission of each resource type specified in the $filter parameter is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
+| Supported resource                     | Delegated (work or school account) | Application | Delegated (personal Microsoft account) |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | Must have the read permission of each type specified in the $filter parameter. |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | Must have the read permission of each type specified in the $filter parameter. |
+| [application](../resources/application.md)     | Application.Read.All | Application.Read.All | Not supported |
+| [administrativeUnit](../resources/administrativeunit.md)     | AdministrativeUnit.Read.All | AdministrativeUnit.Read.All | Not supported |
+| [appRoleAssignment](../resources/approleassignment.md)     | AppRoleAssignment.Read.All | AppRoleAssignment.Read.All | Not supported |
+| [device](../resources/device.md)     | Device.Read.All | Device.Read.All | Not supported |
+| [directoryRole](../resources/directoryrole.md)     | DirectoryRole.Read.All | DirectoryRole.Read.All | Not supported |
+| [group](../resources/group.md)         | Group.Read.All | Group.Read.All | Not supported |
+| [orgContact](../resources/orgcontact.md)     | OrgContact.Read.All | OrgContact.Read.All | Not supported |
+| [servicePrincipal](../resources/serviceprincipal.md)     | ServicePrincipal.Read.All | ServicePrincipal.Read.All | Not supported |
+| [user](../resources/user.md)           | User.Read.All | User.Read.All | Not supported |
 
 
 ## HTTP request
@@ -40,9 +46,9 @@ This method supports optional OData query parameters to help customize the respo
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned. This must be accompanied with the required `$filter` parameter.
 - There is limited support for `$filter`:
-  - For tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
-  - For tracking changes on a specific resource: `$filter=isof({resource})`. For example, `https://graph.microsoft.com/beta/groups/delta/?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.application')'`.
-  - Note: these filter types can be combined, e.g. `$filter=isof({resource type}) or id eq '{id}`, that provides an **intersection** of objects specified by `{resource type}` and `{id}`. 
+  - For tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/directoryObjects/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
+  - For tracking changes on a specific resource: `$filter=isof({resource})`. For example, `https://graph.microsoft.com/beta/directoryObjects/delta/?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.application')'`.
+  - Note: these filter types can be combined, e.g. `$filter=isof({resource type}) or id eq '{id}`, that provides an **intersection** of objects specified by matching `{resource type}` and `{id}`. 
 
 ## Request headers
 
@@ -326,3 +332,4 @@ Content-type: application/json
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for groups](/graph/delta-query-groups).
+- [Get incremental changes for users](/graph/delta-query-users).
