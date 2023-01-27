@@ -1,6 +1,6 @@
 ---
-title: "Use the Microsoft Search API to collapseProperties search results"
-description: "You can use the Microsoft Search API collapseProperties property in Microsoft Graph to collapseProperties search results by taking a spec parameter. Only supported on file type."
+title: "Use the Microsoft Search API to collapse search results"
+description: "Use the Microsoft Graph Search API collapseProperties property to collapse search results."
 author: "cxiang"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -8,7 +8,14 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to collapse search results
 
-You can use the Microsoft Search API in Microsoft Graph to collapse items in search result set, which can display these results in a concise, readable way. You can specify the criteria for collapsing by using **collapseProperties** property in a [searchRequest](/graph/api/resources/searchrequest) object, which contains one or more collapseProperty parameter that point out fields set to be collapsed and a limit size. The **collapseProperties** property is supported for following entity types: site, drive, driveItem, list, listItem and externalItem.
+You can use the Microsoft Search API in Microsoft Graph to collapse items in a search result set. This allows you to display results in a concise, readable way. You can specify the criteria for collapsing by using the **collapseProperties** property in a [searchRequest](/graph/api/resources/searchrequest) object, which contains one or more **collapseProperty** parameters to set fields to be collapsed and limit the size of the results. The **collapseProperties** property is supported for the following entity types: 
+
+- **site**
+- **drive**
+- **driveItem**
+- **list**
+- **listItem**
+- **externalItem**
 
 | Scenarios | Description | Sample |
 | :----     | :----       | :----  |
