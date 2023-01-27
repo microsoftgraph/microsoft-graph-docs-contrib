@@ -2,10 +2,12 @@
 title: "Use privileged identity management (PIM) to update Azure AD rules"
 description: "Learn how to use the PIM API in Microsoft Graph to update Azure AD rules."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "governance"
-ms.date: 01/05/2022
+ms.date: 12/07/2022
 ---
 
 # Use privileged identity management (PIM) APIs in Microsoft Graph to update Azure AD rules
