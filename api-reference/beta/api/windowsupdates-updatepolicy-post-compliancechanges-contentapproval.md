@@ -75,6 +75,7 @@ Content-length: 570
     "catalogEntry": {
       "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry", 
       "id": "catalog/entries/1"
+    }
   },
   "deploymentSettings": {
     "contentApplicability": {
