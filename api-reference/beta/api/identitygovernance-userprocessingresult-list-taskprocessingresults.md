@@ -301,7 +301,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresult_select"
+  "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresults"
 }
 -->
 ``` http
@@ -387,7 +387,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresult_select"
+  "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresults_select"
 }
 -->
 ``` http
