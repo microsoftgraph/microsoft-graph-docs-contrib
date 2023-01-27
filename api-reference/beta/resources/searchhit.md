@@ -23,6 +23,7 @@ Represents a single result within the list of search results.
 |:-------------|:------------|:------------|
 |hitId|String|The internal identifier for the item. The format of the identifier varies based on the entity type. For details, see [hitId format](#hitid-format).|
 |rank|Int32|The rank or the order of the result.|
+|isCollapsed|Boolean|The collapse state of current result, if collapseProperties is used.|
 |contentSource|String|The name of the content source which the **externalItem** is part of .|
 |summary|String|A summary of the result, if a summary is available.|
 |resultTemplateId|String|ID of the result template for rendering the search result. This ID must map to a display layout in the **resultTemplates** dictionary, included in the [searchresponse](searchresponse.md) as well.|
