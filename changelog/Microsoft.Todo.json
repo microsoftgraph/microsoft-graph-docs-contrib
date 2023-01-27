@@ -44,14 +44,6 @@
         },
         {
           "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
-          "ApiChange": "Property",
-          "ChangedApiName": "startDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **startDateTime** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
-          "Target": "todoTask"
-        },
-        {
-          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
           "ApiChange": "Relationship",
           "ChangedApiName": "attachments",
           "ChangeType": "Addition",
