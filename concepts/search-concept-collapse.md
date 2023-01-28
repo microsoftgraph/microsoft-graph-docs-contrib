@@ -219,7 +219,7 @@ Content-type: application/json
 }
 ```
 ## Known limitations
-- The **collapseProperties** property is not supported for the following resources: **message**,**chatMessage**, **event**, **person**, **externalItem**, **bookmark**, **acronym** or **qna**.
+The **collapseProperties** property is not supported for the following resources: **message**,**chatMessage**, **event**, **person**, **externalItem**, **bookmark**, **acronym** or **qna**.
 
 ## Next steps
 
