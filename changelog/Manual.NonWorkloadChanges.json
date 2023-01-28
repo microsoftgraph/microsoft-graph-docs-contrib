@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryCase,reviewSet,reviewSetQuery",
           "ChangeType": "Addition",
-          "Description": "Introduced the compliance eDiscovery API, including the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverycase?view=graph-rest-beta), [reviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-betaa), and [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewsetquery?view=graph-rest-beta), and operations.",
+          "Description": "Introduced the compliance eDiscovery API, including the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverycase?view=graph-rest-beta), [reviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta), and [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewsetquery?view=graph-rest-beta), and operations.",
           "Target": "ediscoveryCase,reviewSet,reviewSetQuery"
         }
       ],
