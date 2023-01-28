@@ -18673,8 +18673,9 @@ items:
           - name: Get audit activity types
             href: api/cloudpcauditevent-getauditactivitytypes.md
         - name: Cloud PC Azure network connection
-          href: resources/cloudpconpremisesconnection.md
           items:
+          - name: Cloud PC on-premises connection
+            href: resources/cloudpconpremisesconnection.md
           - name: List
             href: api/virtualendpoint-list-onpremisesconnections.md
           - name: Create
@@ -21678,13 +21679,15 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Lifecycle Workflows (preview)
+        - name: Lifecycle workflows (preview)
           displayName: LCW, Identity Governance, Joiner, Mover, Leaver
-          href: resources/identitygovernance-lifecycleworkflows-overview.md
           items:
+          - name: Overview
+            href: resources/identitygovernance-lifecycleworkflows-overview.md
           - name: Workflows
-            href: resources/identitygovernance-workflow.md
             items:
+            - name: Workflow
+              href: resources/identitygovernance-workflow.md
             - name: List
               href: api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md
             - name: Create
