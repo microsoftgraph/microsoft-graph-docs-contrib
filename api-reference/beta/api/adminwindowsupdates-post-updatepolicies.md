@@ -72,7 +72,7 @@ Content-length: 835
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
   "audience": {
-    "@odata.id": "deploymentAudiences/1"
+    "id": "8c4eb1eb-d7a3-4633-8e2f-f926e82df08e"
   },
   "complianceChanges": [
     {
@@ -115,37 +115,35 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
-  "id": "a7aa99c1-34a2-850c-5223-7816fde70713",
-  "audience": {
-    "@odata.id": "deploymentAudiences/1"
-  },
-  "complianceChanges": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval"
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetagraphbetarefreshtest/$metadata#admin/windows/updates/updatePolicies/$entity",
+    "id": "1b35b81b-f839-4951-882a-1fbfc6446409",
+    "createdDateTime": "String (timestamp)",
+    "autoEnrollmentUpdateCategories": [],
+    "complianceChangeRules": [
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
+            "createdDateTime": "String (timestamp)",
+            "lastEvaluatedDateTime": "String (timestamp)",
+            "lastModifiedDateTime": "String (timestamp)",
+            "durationBeforeDeploymentStart": "P7D",
+            "contentFilter": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+            }
+        }
+    ],
+    "deploymentSettings": {
+        "monitoring": null,
+        "contentApplicability": null,
+        "userExperience": null,
+        "expedite": null,
+        "schedule": {
+            "startDateTime": "String (timestamp)",
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P1D",
+                "devicesPerOffer": 0
+            }
+        }
     }
-  ],
-  "complianceChangeRules": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
-      "contentFilter": {
-          "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
-      },
-      "durationBeforeDeploymentStart": "P7D",
-      "createdDateTime": "2020-06-09T10:00:00Z",
-      "lastEvaluatedDateTime": "2020-06-09T10:00:00Z",
-      "lastModifiedDateTime": "2020-06-09T10:00:00Z"
-    }
-  ],
-  "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
-    "schedule": {
-      "gradualRollout": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
-        "durationBetweenOffers": "P1D",
-        "devicePerOffer": 1000
-      }
-    }
-  }
 }
 ```
