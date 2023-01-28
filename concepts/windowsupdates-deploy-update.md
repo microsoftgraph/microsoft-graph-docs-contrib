@@ -81,7 +81,7 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-            "id": "catalog/entries/1"
+            "id": "cd45877c-87a9-4ed1-b184-fd89230207b1"
         }
     },
     "settings": {
