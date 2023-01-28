@@ -50,7 +50,7 @@ Get or set a display name for a [print job](/graph/api/resources/printjob?view=g
 
 ### Identity and access | Identity and sign-in
 - Use the [cross-tenant identity sync policy](/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-beta&preserve-view=true) to synchronize users from a partner tenant. The policy streamlines collaboration between users in a multi-tenant organization, by automating creating, updating, and deleting users from one tenant to another.
-- [Get](/graph/api/crosstenantaccesspolicyconfigurationdefault-get?view=graph-rest-beta&tabs=http) the default settings for automatic user consent in the [inbound/outbound policy configuration](/graph/api/resources/inboundoutboundpolicyconfiguration?view=graph-rest-beta&preserve-view=true) for cross-tenant access.
+- [Get](/graph/api/crosstenantaccesspolicyconfigurationdefault-get?view=graph-rest-beta&preserve-view=true) the default settings for automatic user consent in the [inbound/outbound policy configuration](/graph/api/resources/inboundoutboundpolicyconfiguration?view=graph-rest-beta&preserve-view=true) for cross-tenant access.
 
 
 ### Security | Attack simulation and training
