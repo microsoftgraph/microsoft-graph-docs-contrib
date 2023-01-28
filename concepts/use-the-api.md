@@ -1,7 +1,6 @@
 ---
 title: "Use the Microsoft Graph API"
 description: "Learn how to register your app and get authentication tokens for a user or service before you make requests to the Microsoft Graph API."
-author: "jackson-woods"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
