@@ -66,7 +66,6 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713/complianceChanges
 Content-Type: application/json
-Content-length: 570
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
@@ -74,18 +73,15 @@ Content-length: 570
     "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
     "catalogEntry": {
       "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry", 
-      "id": "catalog/entries/1"
+      "id": "6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4"
     }
   },
-  "deploymentSettings": {
-    "contentApplicability": {
-      "offerWhileRecommendedBy": ["Microsoft"]
-    },
+  "deploymentSettings": {},
     "schedule": {
-      "startDateTime": "2020-06-09T10:00:00Z",
+      "startDateTime": "String (timestamp)",
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
-        "endDateTime": "2020-06-16T10:00:00Z"
+        "endDateTime": "String (timestamp)"
       }
     }
   }
@@ -106,30 +102,21 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
-  "id": "bba2a340-1e32-b5ed-186e-678e16033319",
-  "createdDateTime": "2020-06-09T10:00:00Z",
-  "isRevoked": false,
-  "revokedDateTime": null,
-  "updatePolicy": { "@odata.id": "updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713" },
-  "content": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-    "catalogEntry": { "@odata.id": "catalog/entries/1" }
-  },
-  "deploymentSettings": {
-    "contentApplicability": {
-      "offerWhileRecommendedBy": ["Microsoft"]
-     },
-    "schedule": {
-      "startDateTime": "2020-06-09T10:00:00Z",
-      "gradualRollout": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
-        "endDateTime": "2020-06-16T10:00:00Z"
-      }
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetagraphbetarefreshtest/$metadata#admin/windows/updates/updatePolicies('a7aa99c1-34a2-850c-5223-7816fde70713')/complianceChanges/$entity",
+    "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
+    "id": "6b73d038-68bc-4f0b-8b94-72a26f1e879d",
+    "createdDateTime": "String (timestamp)",
+    "isRevoked": false,
+    "revokedDateTime": "String (timestamp)",
+    "content": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
+    },
+    "deploymentSettings": {
+        "schedule": null,
+        "monitoring": null,
+        "contentApplicability": null,
+        "userExperience": null,
+        "expedite": null
     }
-  },
-  "deployments": [
-      { "@odata.id": "deployments/1" }
-  ]
 }
 ```
