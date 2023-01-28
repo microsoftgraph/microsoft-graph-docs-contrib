@@ -143,7 +143,73 @@
       "CreatedDateTime": "2022-11-09T21:02:17.1897204Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
-    },    
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Property",
+          "ChangedApiName": "segmentsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `segmentsConfiguration` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "segmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [segmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/segmentConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "segmentConfiguration"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webSegmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [webSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/webSegmentConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "webSegmentConfiguration"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/applicationSegment?view=graph-rest-beta) resource",
+          "Target": "applicationSegment"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "corsConfiguration_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the [corsConfiguration_v2](https://learn.microsoft.com/en-us/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource",
+          "Target": "corsConfiguration_v2"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webApplicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [webApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationSegment?view=graph-rest-beta) resource",
+          "Target": "webApplicationSegment"
+        },
+        {
+      "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+      "ApiChange": "Property",
+      "ChangedApiName": "onPremisesApplicationSegments",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **onPremisesApplicationSegments** property of the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource. The **onPremisesApplicationSegments** property will stop returning data on June 1, 2023. Use the **segmentsConfiguration** property instead.",
+      "Target": "onPremisesPublishing"
+    }
+      ],
+      "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-26T00:00:00.3287778Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },   
     {
       "ChangeList": [
         {
