@@ -21772,8 +21772,6 @@ items:
                   href: api/identitygovernance-run-list-userprocessingresults.md
                 - name: Get user processing result
                   href: api/identitygovernance-userprocessingresult-get.md
-                - name: List task processing results
-                  href: api/identitygovernance-run-list-taskprocessingresults.md
               - name: Task processing result
                 items:
                 - name: Task processing result
