@@ -13,9 +13,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lists the user who are currently filling the execution conditions of a [workflow](../resources/identitygovernance-workflow.md). Users who initially fall under the scope of the execution conditions, but are updated to no longer meet the conditions after it's scheduled to run, will remain on the list for a short period of time before being removed. If the execution scope is changed, users who initially met the conditions of the workflow but no longer do so will be cleared from the list after a short period of time, and new users who meet the conditions for the workflow will be listed.
+Lists the user who are currently filling the execution conditions of a [workflow](../resources/identitygovernance-workflow.md). Users who initially fall under the scope of the execution conditions, but are updated to no longer meet the conditions after it's scheduled to run, will remain on the list for a short period of time before being removed. If the execution scope is changed, users who initially met it's conditions, but no longer do so will be cleared from the list after a short period of time. New users who meet the conditions for the workflow will then be listed.
 
-This API call requires scheduling to be enabled for the workflow. For information on this property, see: [Workflow Properties](../resources/identitygovernance-workflow.md#properties).
+This API call requires workflow scheduling to be enabled. For information on this property, see: [Workflow Properties](../resources/identitygovernance-workflow.md#properties).
 
 ## Permissions
 
@@ -108,13 +108,13 @@ Content-Type: application/json
             "consentProvidedForMinor": null,
             "country": null,
             "department": "Marketing",
-            "displayName": "Leopold Butters Scotch",
+            "displayName": "Chris Andersen",
             "employeeId": null,
             "employeeHireDate": "2023-01-10T05:00:00Z",
             "employeeLeaveDateTime": null,
             "employeeType": null,
             "faxNumber": null,
-            "givenName": "Butters",
+            "givenName": "Chris",
             "imAddresses": [],
             "infoCatalogs": [],
             "isManagementRestricted": null,
@@ -145,9 +145,9 @@ Content-Type: application/json
             "signInSessionsValidFromDateTime": "2023-01-10T19:23:04Z",
             "state": null,
             "streetAddress": null,
-            "surname": "Scotch",
+            "surname": "Andersen",
             "usageLocation": null,
-            "userPrincipalName": "ButtersScotch@w325q.onmicrosoft.com",
+            "userPrincipalName": "ChrisAndersen@w325q.onmicrosoft.com",
             "externalUserConvertedOn": null,
             "externalUserState": null,
             "externalUserStateChangeDateTime": null,
@@ -163,7 +163,7 @@ Content-Type: application/json
                 {
                     "signInType": "userPrincipalName",
                     "issuer": "w325q.onmicrosoft.com",
-                    "issuerAssignedId": "ButtersScotch@w325q.onmicrosoft.com"
+                    "issuerAssignedId": "ChrisAndersen@w325q.onmicrosoft.com"
                 }
             ],
             "onPremisesExtensionAttributes": {
