@@ -151,6 +151,7 @@ Content-type: application/json
     "firstActivityDateTime": "2021-04-26T07:45:50.116Z",
     "lastActivityDateTime": "2021-05-02T07:56:58.222Z",
     "comments": [],
-    "evidence": []
+    "evidence": [],
+    "systemTags" : []
 }
 ```

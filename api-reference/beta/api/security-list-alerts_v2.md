@@ -264,6 +264,9 @@ Content-type: application/json
                 "roles": [],
                 "tags": [],
             }
+        ],
+        "systemTags" : [
+            "Defender Experts"
         ]
     }
   ]
