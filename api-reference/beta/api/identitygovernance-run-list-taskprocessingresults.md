@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the task processing results in a run report from a workflow
+### Example 1: Get the task processing results in a run report from a workflow 
 
 ### Request
 
