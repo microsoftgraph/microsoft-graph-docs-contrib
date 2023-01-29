@@ -33,10 +33,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "isPublisherAttested": "Boolean",
-  "isCertifiedByMicrosoft": "Boolean",
   "certificationDetailsUrl": "String",
-  "lastCertificationDateTime": "DateTimeOffset",
-  "certificationExpirationDateTime": "DateTimeOffset"
+  "certificationExpirationDateTime": "DateTimeOffset",
+  "isCertifiedByMicrosoft": "Boolean",
+  "isPublisherAttested": "Boolean",
+  "lastCertificationDateTime": "DateTimeOffset"
 }
 ```

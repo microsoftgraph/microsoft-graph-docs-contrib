@@ -116,6 +116,11 @@ Content-Type: application/json
     "isCompliantDeviceAccepted": false,
     "isHybridAzureADJoinedDeviceAccepted": false,
   },
+  "automaticUserConsentSettings":
+  {
+    "inboundAllowed": false,
+    "outboundAllowed": false
+  },
   "b2bCollaborationOutbound":
   {
     "usersAndGroups":

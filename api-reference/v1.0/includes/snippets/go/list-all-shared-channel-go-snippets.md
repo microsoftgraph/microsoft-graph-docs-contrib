@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "membershipType eq 'shared'"
 
-requestParameters := &graphconfig.AllChannelsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemAllChannelsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.AllChannelsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemAllChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
