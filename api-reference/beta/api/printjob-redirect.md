@@ -130,6 +130,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#printJob",
   "@odata.type": "#microsoft.graph.printJob",
   "id": "44354",
+  "displayName": "testjob", 
   "createdDateTime": "2020-06-30T17:19:09Z",
   "createdBy": {
     "id": "",

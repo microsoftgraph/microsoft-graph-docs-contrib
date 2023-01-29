@@ -25,9 +25,9 @@ Represents this tenant's email OTP authentication methods policy. Authentication
 
 |Property|Type|Description|
 |:---|:---|:---|
+|allowExternalIdToUseEmailOtp|externalEmailOtpState|Determines whether email OTP is usable by external users for authentication. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. Tenants in the `default` state who did not use public preview will automatically have email OTP enabled beginning in October 2021.|
 |id|String|The authentication method policy identifier. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |state|authenticationMethodState|Indicates whether this authentication method is enabled or not. Possible values are: `enabled`, `disabled`.|
-|allowExternalIdToUseEmailOtp|externalEmailOtpState|Determines whether email OTP is usable by external users for authentication. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. Tenants in the `default` state who did not use public preview will automatically have email OTP enabled beginning in October 2021.|
 
 ## Relationships
 
@@ -50,9 +50,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-  "id": "String (identifier)",
-  "state": "String",
   "allowExternalIdToUseEmailOtp": "String",
-  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
+  "id": "String (identifier)",
+  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ],
+  "state": "String"
 }
 ```

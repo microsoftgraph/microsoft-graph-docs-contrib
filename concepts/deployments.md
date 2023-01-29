@@ -80,7 +80,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Privileged identity management    | ✔                                | ✔                                          |
 | Planner                           | ✔                                | ✔                                          |
 | Reports                           | ➖                                | ➖                                          |
-| Search (Microsoft Search)         | ✔                                | ➖                                          |
+| Search (Microsoft Search)         | ✔                                | ✔                                          |
 | Security                          | ✔                                | ✔                                          |
 | Service health and communications | ✔                                | ✔                                          |
 | Service principals                | ✔                                | ➖                                         |
