@@ -3,6 +3,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "480c1168-9d96-48b4-9d42-2781f21249fc",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "supportedSolution",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `supportedSolution` property to the [cloudPcServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcServicePlan?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcServicePlan"
+                }
+            ],
+            "Id": "480c1168-9d96-48b4-9d42-2781f21249fc",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-01-29T08:08:16.1240301Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "7a3d023d-8aa8-438c-afa7-f7f488623deb",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcReportName",
