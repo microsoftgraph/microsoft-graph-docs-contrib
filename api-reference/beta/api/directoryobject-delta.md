@@ -31,7 +31,7 @@ The following table shows the least privileged permission by each permission typ
 | [servicePrincipal](../resources/serviceprincipal.md)     | ServicePrincipal.Read.All | ServicePrincipal.Read.All | Not supported |
 | [user](../resources/user.md)           | User.Read.All | User.Read.All | Not supported |
 
-> **Note:** To complete a delta query on the `appRoleAssignment` resource, both the `appRoleAssignment` and `user` resources must be specified in the $filter parameter.
+> **Note:** To complete a delta query on the `appRoleAssignment` resource, at minimum both the `appRoleAssignment` and `user` resources must be specified in the $filter parameter, with the option of also including groups or service principals if desired. Note that all resources specified will be returned.
 
 ## HTTP request
 
@@ -54,10 +54,10 @@ GET /directoryObjects/delta?$filter=id eq '{id}'
 This method supports optional OData query parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned. This must be accompanied with the required `$filter` parameter.
-- There is limited support for `$filter`:
+- There are only two `$filter` clauses supported:
   - For tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/directoryObjects/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
   - For tracking changes on a specific resource: `$filter=isof({resource})`. For example, `https://graph.microsoft.com/beta/directoryObjects/delta/?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.application')'`.
-  - Note: these filter types can be combined, e.g. `$filter=isof({resource type}) or id eq '{id}`, that provides an **intersection** of objects specified by matching `{resource type}` and `{id}`. 
+  - Note: these filter types can be combined, e.g. `$filter=isof('{resource type}') or id eq '{id}`, that provides an **intersection** of objects specified by matching `{resource type}` and `{id}`. 
 
 ## Request headers
 
