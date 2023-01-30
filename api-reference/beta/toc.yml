@@ -23454,7 +23454,7 @@ items:
           - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
           - name: Get
-            href: apisimulationAutomation-get.md
+            href: api/simulationAutomation-get.md
         - name: Simulation automation run
           items:
           - name: Simulation automation run
