@@ -39,7 +39,6 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 -->
 ``` http
 GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/{runId}/userProcessingResults/{userProcessingResultId}
-GET 
 ```
 
 ## Optional query parameters
