@@ -704,7 +704,14 @@ result, err := client.Me().Get(nil)
 
 # [Python](#tab/Python)
 
-Not applicable.
+```python
+from azure.identity import InteractiveBrowserCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+
+# Create authentication provider object. Used to authenticate request
+credential = InteractiveBrowserCredential()
+scopes = ['https://graph.microsoft.com/.default']
+auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
 
 ---
 
