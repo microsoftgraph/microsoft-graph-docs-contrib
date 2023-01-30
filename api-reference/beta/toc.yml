@@ -23399,7 +23399,7 @@ items:
           - name: Create
             href: api/attacksimulationroot-post-simulation.md
           - name: Get
-            href: api/attacksimulationroot-get-simulations.md
+            href: api/simulations-get.md
           - name: Update
             href: api/simulation-update.md
           - name: Delete
