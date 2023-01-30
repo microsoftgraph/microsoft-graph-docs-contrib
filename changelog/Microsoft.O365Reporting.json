@@ -1922,7 +1922,7 @@
 		"ChangeList": [
 			{
 			  "Id": "a02cfa95-915d-411a-8acb-557c8d8aa659",
-			  "ApiChange": "Method",
+			  "ApiChange": "Property",
 			  "ChangedApiName": "getOffice365GroupsActivityCounts",
 			  "ChangeType": "Addition",
 			  "Description": "Added the **teamsChannelMessages**, **teamsMeetingsOrganized** property to the **getOffice365GroupsActivityCounts** resource.",
@@ -1930,7 +1930,7 @@
 			},
 			{
 			  "Id": "a02cfa95-915d-411a-8acb-557c8d8aa659",
-			  "ApiChange": "Method",
+			  "ApiChange": "Property",
 			  "ChangedApiName": "getOffice365GroupsActivityDetail",
 			  "ChangeType": "Addition",
 			  "Description": "Added the **teamsChannelMessagesCount**, **teamsMeetingsOrganizedCount** property to the **getOffice365GroupsActivityDetail** resource.",
