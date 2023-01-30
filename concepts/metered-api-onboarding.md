@@ -37,20 +37,31 @@ To enable an application to call Azure-metered APIs or take advantage of Azure-m
 
 Use the following steps to create and link a Microsoft.GraphServices/accounts Azure Resource to your application:
 1. Sign in to https://portal.azure.com
-2. Go to Subscriptions or open [Subscriptions - Microsoft Azure](https://portal.azure.com/#view/Microsoft_Azure_Billing/SubscriptionsBlade)
-![Azure Subscriptions in the Azure Portal](images/metered-apis/azure-subscription.png)
-3. On the **Subscriptions** page, choose the subscription that you will use for your API consumption charges.
-![Choose an Azure Subscription for API consumption charges](images/metered-apis/choose-subscription.png)
-4. When the subscription opens, on the left pane choose Resource Providers, search for "graph", select **Microsoft.GraphServices**, and choose Register.
-![Register the Microsoft.GraphServices resource provider](images/metered-apis/resource-providers.png)
-5. Go back to the home page, choose **Cloud Shell**, and then choose **Bash**.
+
+2. Choose **Cloud Shell**, and if given a choice, choose **PowerShell**.
 ![Choose Cloud Shell](images/metered-apis/cloud-shell.png)
 Note: If you're using Cloud Shell for the first time you might need to create a storage account.  Select an Azure subscription, choose **Create** and follow the instructions to create a storage account.
 ![May need to create a storage account to access Cloud Shell](images/metered-apis/no-storage.png)
-6. Copy the command below, paste into Cloud Shell and replace the highlighted text with your own value, type <**Enter**>. The result will be a JSON representation of your Microsoft.GraphServices/accounts resource.
 
-```Cloud Shell
-az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{\"appId\": \"<GUID>\"}" --latest-include-preview --location Global –subscription <GUID>
+3. If you have multiple Azure subscriptions see [Use multiple Azure subscriptions](https://learn.microsoft.com/powershell/azure/manage-subscriptions-azureps?view=azps-9.3.0) for information on setting the active subscription, otherwise continue to the next step.
+
+4. To register the **Microsoft.GraphServices** resource provider to your active subscription so an Azure resource can be created, copy the command below, paste into Cloud Shell and type  <**Enter**>.
+```PowerShell
+Register-AzResourceProvider -ProviderNamespace Microsoft.GraphServices
+```
+
+5. Copy the command below, paste into Cloud Shell and replace the highlighted text with your own value, type <**Enter**>. The result will be a JSON representation of your Microsoft.GraphServices/accounts resource.
+
+Before executing the command, replace the following parameters with your own values:
+| Parameter | Description |
+|:--------------------------|:----------------------------------------|
+| myRG | The name you wish to give to the Azure resource group |
+| myGraphAppBilling | The name you wish to give to this resource instance |
+| myAppGUID | The Application (client) ID of the application being enabled |
+| mySubscriptionGUID | The ID of the Azure Subscription that will receive billing events | 
+
+```PowerShell
+az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId\`": `"myAppGUID`"}" --latest-include-preview --location Global –subscription mySubscriptionGUID
 ```
 
 ![Successfully associated application to Azure Subscription](images/metered-apis/cloud-shell-success.png)
