@@ -58,6 +58,7 @@ The request should be a JSON object with the following properties.
 |expirationDateTime|DateTimeOffset|Optional. A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
 |password|String|Optional.The password of the sharing link that is set by the creator.|
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
+|sendNotification|Boolean|Optional. If true, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint.|
 
 ### Link types
 
