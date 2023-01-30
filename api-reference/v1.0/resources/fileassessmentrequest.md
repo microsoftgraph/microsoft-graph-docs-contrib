@@ -57,12 +57,12 @@ The following is a JSON representation of the resource.
 ```json
 {
   "contentData": "String",
-  "fileName": "String",
   "category": "String",
   "contentType": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "expectedAssessment": "String",
+  "fileName": "String",
   "id": "String (identifier)",
   "requestSource": "String",
   "status": "String"

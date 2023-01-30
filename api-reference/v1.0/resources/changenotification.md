@@ -48,20 +48,20 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.changeNotification",
-  "id": "String (identifier)",
-  "subscriptionId": "Guid",
-  "subscriptionExpirationDateTime": "String (timestamp)",
-  "clientState": "String",
   "changeType": "String",
-  "resource": "String",
-  "tenantId": "Guid",
+  "clientState": "String",
   "encryptedContent": {
     "@odata.type": "microsoft.graph.changeNotificationEncryptedContent"
   },
+  "id": "String (identifier)",
   "lifecycleEvent": "String",
+  "resource": "String",
   "resourceData": {
     "@odata.type": "microsoft.graph.resourceData"
-  }
+  },
+  "subscriptionExpirationDateTime": "String (timestamp)",
+  "subscriptionId": "Guid",
+  "tenantId": "Guid"
 }
 ```
 

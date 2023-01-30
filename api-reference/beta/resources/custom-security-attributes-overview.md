@@ -59,6 +59,8 @@ Custom security attributes can be assigned to the following objects by using the
 + [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 + [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
 
+For examples of working with custom security attributes on supported resources, see [Assign, update, or remove custom security attributes using Microsoft Graph](/graph/custom-security-attributes-examples).
+
 ## Limits and constraints
 
 For a list of the limits and constraints for custom security attributes, see [Limits and constraints](/azure/active-directory/fundamentals/custom-security-attributes-overview#limits-and-constraints).
