@@ -6960,7 +6960,7 @@ items:
           - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
           - name: Get
-            href: api/attacksimulationroot-get-simulationautomations.md
+            href: api/simulationAutomation-get.md
         - name: Simulation automation run
           items:
           - name: Simulation automation run
