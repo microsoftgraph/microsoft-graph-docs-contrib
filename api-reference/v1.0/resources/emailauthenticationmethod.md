@@ -47,8 +47,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethod",
-  "id": "String (identifier)",
-  "emailAddress": "String"
+  "emailAddress": "String",
+  "id": "String (identifier)"
 }
 ```
 

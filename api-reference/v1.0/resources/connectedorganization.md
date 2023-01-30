@@ -57,16 +57,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.connectedOrganization",
-  "id": "String (identifier)",
-  "displayName": "String",
   "description": "String",
+  "displayName": "String",
   "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "identitySources": [
     {
       "@odata.type": "microsoft.graph.azureActiveDirectoryTenant"
     }
   ],
+  "modifiedDateTime": "String (timestamp)",
   "state": "String"
 }
 ```
