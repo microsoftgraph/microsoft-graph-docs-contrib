@@ -126,7 +126,7 @@ Not all object types can be members of both Microsoft 365 and security groups.
 
 ### Dynamic membership
 
-All types of groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any user's who leave the department are automatically removed from the group.
+Microsoft 365 and security groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any user's who leave the department are automatically removed from the group.
 
 Only users and devices are supported as members in dynamic membership groups. You can create a dynamic membership group for devices or users, but not both.
 
