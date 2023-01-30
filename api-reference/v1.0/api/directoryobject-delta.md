@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted directory objects without having to perform a full read of the entire directoryObject collection. For more information about the delta function, see [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted directory objects without having to perform a full read of the entire directoryObject collection. For more information about the delta function, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 ## Permissions
 
-The following table shows the least privileged permission by each permission type (delegated or application) for each resource type that is supported by the required $filter parameter. The permission of each resource type specified in the $filter parameter is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following table shows the least privileged permission that's required by each resource type when calling this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource                     | Delegated (work or school account) | Application | Delegated (personal Microsoft account) |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
@@ -29,15 +29,21 @@ The following table shows the least privileged permission by each permission typ
 | [servicePrincipal](../resources/serviceprincipal.md)     | ServicePrincipal.Read.All | ServicePrincipal.Read.All | Not supported |
 | [user](../resources/user.md)           | User.Read.All | User.Read.All | Not supported |
 
-> **Note:** To complete a delta query on the `appRoleAssignment` resource, both the `appRoleAssignment` and `user` resources must be specified in the $filter parameter.
-
 ## HTTP request
 
-Track changes for a collection of a directory object type. The _{resource-type}_ must be a fully qualified OData cast, for example, `microsoft.graph.group`.
+Track changes for a collection of a directory object type.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryObjects/delta?$filter=isof('{resource-type}')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.application')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.administrativeUnit')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.appRoleAssignment')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.device')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.directoryRole')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.group')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.orgContact')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.servicePrincipal')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.user')
 ```
 
 Track changes for a directory object.
@@ -51,19 +57,17 @@ GET /directoryObjects/delta?$filter=id eq '{id}'
 
 This method supports optional OData query parameters to help customize the response.
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned. This must be accompanied with the required `$filter` parameter.
-- There is limited support for `$filter`:
-  - For tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/directoryObjects/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
-  - For tracking changes on a specific resource: `$filter=isof({resource})`. For example, `https://graph.microsoft.com/v1.0/directoryObjects/delta/?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.application')'`.
-  - Note: these filter types can be combined, e.g. `$filter=isof({resource type}) or id eq '{id}`, that provides an **intersection** of objects specified by matching `{resource type}` and `{id}`. 
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.
+- When filtering multiple objects, for example, `/directoryObjects/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`, there is a limit of 50 filter expressions.
+- You can combine the `$filter` syntaxes. For example, `$filter=isof('{resource type}') or id eq '{id}'`.
 
 ## Request headers
 
-| Name          | Description                                                                                                                                                                    |
-| :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer &lt;token&gt;                                                                                                                                                           |
-| Content-Type  | application/json                                                                                                                                                               |
-| Prefer        | return=minimal <br><br>Specifying this header with a request that uses a `@odata.deltaLink` would return only the object properties that have changed since the last round. Optional. |
+| Name | Description |
+|:--|:--|
+| Authorization | Bearer &lt;token&gt; |
+| Content-Type | application/json |
+| Prefer | return=minimal <br><br>Specifying this header with a request that uses a `@odata.deltaLink` returns only the object's properties that have changed since the last round. Optional. |
 
 ## Request body
 
@@ -94,17 +98,16 @@ By default, requests using a `@odata.deltaLink` or `@odata.nextLink` return the 
 
 #### Alternative: return only the changed properties
 
-Adding an optional request header - `prefer:return=minimal` - results in the following behavior:
+Adding an optional `prefer:return=minimal` request header results in the following behavior:
 
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
-- If the property has not changed, the property is not included in the response at all. (Different from the default behavior.)
+- If the property has not changed, the property is not included in the response at all. This is different from the default behavior.
 
 > **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See [Example 4](#example-4-retrieve-specific-properties-only-if-they-changed-for-a-collection-of-users-and-groups).
 
 ## Examples
 
-
-### Example 1: Retreve changes for a collection of users and groups
+### Example 1: Retrieve changes for a collection of users and groups
 
 #### Request
 
