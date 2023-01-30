@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
 |[Create simulation](../api/attacksimulationroot-post-simulation.md)|[simulation](../resources/simulation.md)|Create a new [simulation](../resources/simulation.md) object.|
-|[Get simulation](../api/attacksimulationroot-get-simulations.md)|[simulation](../resources/simulation.md)|Get an attack simulation campaign for a tenant.|
+|[Get simulation](../api/simulation-get.md)|[simulation](../resources/simulation.md)|Get an attack simulation campaign for a tenant.|
 |[Update simulation](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update the properties of a [simulation](../resources/simulation.md) object.|
 |[Delete simulation](../api/simulation-delete.md)|None|Delete a [simulation](../resources/simulation.md) object.|
 |[Get payload](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|

@@ -6948,7 +6948,7 @@ items:
           - name: List
             href: api/attacksimulationroot-list-simulations.md
           - name: Get
-            href: api/simulations-get.md
+            href: api/simulation-get.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
