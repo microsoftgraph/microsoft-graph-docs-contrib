@@ -1246,7 +1246,6 @@
           "ChangedApiName": "outlookM365,outlook2019",
           "ChangeType": "Addition",
           "Description": "Added the **outlookM365** and **outlook2019** properties to the getEmailAppUsageVersionsUserCounts entity.",
-
           "Target": "getEmailAppUsageVersionsUserCounts"
         }
       ],
@@ -1351,7 +1350,6 @@
           "ChangedApiName": "networkDisplayName",
           "ChangeType": "Addition",
           "Description": "Added **networkDisplayName** property to the yammerGroupsActivityDetail entity.",
-
           "Target": "yammerGroupsActivityDetail"
         }
       ],
@@ -1370,7 +1368,6 @@
           "ChangedApiName": "Authorization for APIs to read Microsoft 365 usage reports",
           "ChangeType": "Change",
           "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles.",
-
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
