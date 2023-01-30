@@ -12,9 +12,9 @@ Microsoft Graph includes APIs that are both available at no additional cost with
 
 ## Working principles
 These are the working principles that guide our approach to Microsoft 365 API endpoints on Microsoft Graph.
--Customer Data ownership: Customer data belongs to the customer. Learn more about how [Microsoft categorizes customer data](https://www.microsoft.com/en-us/trust-center/privacy/customer-data-definitions#:~:text=It%20includes%20customer%20content%2C%20which%20is%20the%20data,site%20content%2C%20or%20instant%20messaging%20conversations.%20Personal%20data). 
+- Customer Data ownership: Customer data belongs to the customer. Learn more about how [Microsoft categorizes customer data](https://www.microsoft.com/en-us/trust-center/privacy/customer-data-definitions#:~:text=It%20includes%20customer%20content%2C%20which%20is%20the%20data,site%20content%2C%20or%20instant%20messaging%20conversations.%20Personal%20data). 
 Reasonable access: We include access to Customer content, within [defined limits](throttling-limits.md), in our user license, and provide developer experiences and documentation focused on cohesion, simplicity, and transparency – around reasonable usage, throttling limits, and pricing. 
--Trust: We understand the importance of the trust our developers, partners, and customers place in us. A change to a generally available API would always follow our [breaking change policy](versioning-and-support.md). 
+- Trust: We understand the importance of the trust our developers, partners, and customers place in us. A change to a generally available API would always follow our [breaking change policy](versioning-and-support.md). 
 Ecosystem health: We strive for a balance between platform access and cost to ensure the health of our current and future ecosystem. 
 
 ## Categories of services 
