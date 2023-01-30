@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsTeamCounts"
-description: "Get the Teams team count by team type."
+description: "Get the number of teams of a particular type in an instance of Microsoft Teams."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
