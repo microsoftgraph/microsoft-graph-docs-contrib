@@ -327,7 +327,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/directoryObject?view=graph-rest-beta) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/directoryObject?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-beta) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-beta) resource.",
           "Target": "directoryObject"
         }
       ],
@@ -345,7 +345,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/directoryObject?view=graph-rest-1.0) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/directoryObject?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-1.0) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
           "Target": "directoryObject"
         }
       ],
