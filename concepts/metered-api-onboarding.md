@@ -1,6 +1,6 @@
 ---
 title: "Onboard to Microsoft Graph Azure-metered APIs"
-description: "Provides instructions to onboard an app for calling Azure-metered APIs in Microsoft Graph."
+description: "Provides instructions to onboard an app for calling Microsoft Azure-metered APIs and services."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Onboard to Microsoft Graph Azure-metered APIs
 
-Some APIs and services included in Microsoft Graph are metered by Azure-meters and require payment for use. 
+Some APIs and services included in Microsoft Graph are metered and require payment for use. 
 
 Examples of APIs that are currently metered include:
 - Teams [chat](/graph/api/chats-getallmessages.md) / [channel](/graph/api/channel-getallmessages.md) export
@@ -33,15 +33,13 @@ Before accessing Microsoft Graph Azure-metered APIs and services, you must compl
 - If the APIs you plan to use are Protected APIs, submit the [request form for Teams](teams-protected-apis.md) or [request form for SharePoint](https://aka.ms/PreviewSPOPremiumAPI) depending on which APIs you are calling.
 
 ## Enabling an application
-To enable an application to call Azure-metered APIs or take advantage of Azure-metered services it must be associated with an Azure Subscription. To create this association, an Azure resource of type Microsoft.GraphServices/accounts needs to be created to connect the application registration to a subscription. The Azure resource will map 1:1 with an Azure Active Directory application registration. 
+To enable an application to call Azure-metered APIs or take advantage of Azure-metered services it must be associated with an Azure Subscription. To create this association, an Azure resource of type **Microsoft.GraphServices/accounts** needs to be created to connect the application registration to a subscription. The Azure resource will map 1:1 with an Azure Active Directory application registration. 
 
 Use the following steps to create and link a Microsoft.GraphServices/accounts Azure Resource to your application:
 1. Sign in to https://portal.azure.com
 
 2. Choose **Cloud Shell**, and if given a choice, choose **PowerShell**.
-![Choose Cloud Shell](images/metered-apis/cloud-shell.png)
 Note: If you're using Cloud Shell for the first time you might need to create a storage account.  Select an Azure subscription, choose **Create** and follow the instructions to create a storage account.
-![May need to create a storage account to access Cloud Shell](images/metered-apis/no-storage.png)
 
 3. If you have multiple Azure subscriptions see [Use multiple Azure subscriptions](https://learn.microsoft.com/powershell/azure/manage-subscriptions-azureps?view=azps-9.3.0) for information on setting the active subscription, otherwise continue to the next step.
 
@@ -67,7 +65,7 @@ az resource create --resource-group myRG --name myGraphAppBilling --resource-typ
 ![Successfully associated application to Azure Subscription](images/metered-apis/cloud-shell-success.png)
 
 ## Consuming metered APIs in your app
-After you have enabled your app to consume Microsoft Graph Azure-metered APIs and services, the app can start to successfully make API calls for metered APIs. Charges generated from those requests will be charged to the Azure Subscription associated with the app.
+After you have enabled your app to consume Microsoft Graph Azure-metered APIs and services, the app can start making API calls for metered APIs. Charges generated from those requests will be charged to the Azure Subscription associated with the app.
 
 Cost and usage of Azure-metered APIs and services can be monitoring through [Azure Cost Management + Billing](https://learn.microsoft.com/azure/cost-management-billing/). This provides access to costs within the subscription, which can be split based on application, calling tenant, or meter.
 
