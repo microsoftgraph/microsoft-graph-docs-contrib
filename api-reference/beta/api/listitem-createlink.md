@@ -58,7 +58,7 @@ The following table shows the parameters that can be used with this action.
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
-|sendNotification|Boolean|Optional. If true, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint.|
+|sendNotification|Boolean|Optional. If true, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint for now.|
 
 ### Link types
 
@@ -96,7 +96,7 @@ The response will be `201 Created` if a new sharing link is created for the list
 ### Example 1: Create an anonymous sharing link
 The following example requests a sharing link to be created for the listItem specified by {itemId} in the list specified {listId}.
 The sharing link is configured to be read-only and usable by anyone with the link.
-
+For OneDrive for Business and SharePoint user, we can use sendNotification parameter to create a sharing link and send this sharing link to the recipients with your email.
 #### Request
 
 
@@ -117,7 +117,8 @@ Content-Type: application/json
     {
       "@odata.type": "microsoft.graph.driveRecipient"
     }
-  ]
+  ],
+  "sendNotification": true
 }
 ```
 
