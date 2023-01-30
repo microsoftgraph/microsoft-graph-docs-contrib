@@ -11,9 +11,9 @@ The following is the list of APIs that are Azure-metered and require an Azure Su
 
 | API | Protected API form |
 |:--------------------------|:----------------------------------------|
-| Teams [chat](/graph/api/chats-getallmessages.md) export |
-| Teams [channel](/graph/api/channel-getallmessages.md) export |
-| Teams chat / channel [change notifications](/graph/api/subscription-post-subscriptions.md) |
-| Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions.md) |
-| Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update.md) |
-| SharePoint [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md) |
+| Teams [chat](/graph/api/chats-getallmessages.md) export | [Microsoft Teams request](teams-protected-apis.md) |
+| Teams [channel](/graph/api/channel-getallmessages.md) export | [Microsoft Teams request](teams-protected-apis.md) |
+| Teams chat / channel [change notifications](/graph/api/subscription-post-subscriptions.md) | [Microsoft Teams request](teams-protected-apis.md) |
+| Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions.md) | [Microsoft Teams request](teams-protected-apis.md) |
+| Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update.md) | [Microsoft Teams request](teams-protected-apis.md) |
+| SharePoint [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md) | [SharePoint request](https://aka.ms/PreviewSPOPremiumAPI) |
