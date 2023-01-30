@@ -943,7 +943,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time",
           "ChangeType": "Addition",
-          "Description": "Added the [getSchedule](https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](https://learn.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](https://learn.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](https://learn.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support getting the free/busy, availability information for users, distribution lists, and resources for a given period of time",
+          "Description": "Added the [getSchedule](https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](https://learn.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](https://learn.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](https://learn.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support getting the free/busy, availability information for users, distribution lists, and resources for a given period of time.",
           "Target": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time"
         }
       ],

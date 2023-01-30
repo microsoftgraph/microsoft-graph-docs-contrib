@@ -148,7 +148,7 @@ The following example adds a new certificate without replacing the existing cert
 
 <!-- {
   "blockType": "request",
-  "name": "applications_howto_add_certificate"
+  "name": "applications_howto_append_certificate"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/bb77f42f-dacb-4ece-b3e6-285e63c24d52

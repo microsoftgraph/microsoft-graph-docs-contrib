@@ -1281,8 +1281,11 @@
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
 =======
           "Description": "Added the **outlookM365** and **outlook2019** properties to the getEmailAppUsageVersionsUserCounts entity.",
+<<<<<<< HEAD
 
 >>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
+=======
+>>>>>>> d103f1f9c65bedf5985a9865ed89fca586dc5eed
           "Target": "getEmailAppUsageVersionsUserCounts"
         }
       ],
@@ -1398,8 +1401,11 @@
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
 =======
           "Description": "Added **networkDisplayName** property to the yammerGroupsActivityDetail entity.",
+<<<<<<< HEAD
 
 >>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
+=======
+>>>>>>> d103f1f9c65bedf5985a9865ed89fca586dc5eed
           "Target": "yammerGroupsActivityDetail"
         }
       ],
@@ -1429,8 +1435,11 @@
 >>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
 =======
           "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles.",
+<<<<<<< HEAD
 
 >>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
+=======
+>>>>>>> d103f1f9c65bedf5985a9865ed89fca586dc5eed
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
