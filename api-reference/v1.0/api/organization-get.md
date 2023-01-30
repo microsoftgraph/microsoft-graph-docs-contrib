@@ -126,7 +126,7 @@ Content-type: application/json
     "marketingNotificationEmails": [],
     "onPremisesLastSyncDateTime": null,
     "onPremisesSyncEnabled": null,
-    "partnerTenantType": "String",
+    "partnerTenantType": "ResellerPartnerDelegatedAdmin",
     "postalCode": null,
     "preferredLanguage": "en",
     "securityComplianceNotificationMails": [],
