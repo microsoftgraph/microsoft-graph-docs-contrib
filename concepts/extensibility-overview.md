@@ -1,11 +1,13 @@
 ---
 title: "Add custom data to resources using extensions"
 description: "You can extend Microsoft Graph with your own application data. Add custom properties for storing custom data in Microsoft Graph resources without requiring an external data store."
-author: "dkershaw10"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.prod: "extensions"
 ms.custom: graphiamtop20
-ms.date: 11/17/2022
+ms.date: 01/24/2022
 ---
 
 # Add custom data to resources using extensions
@@ -25,9 +27,9 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 
 ## Why add custom data to Microsoft Graph?
 
-* As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
-* Alternatively, you might want to retain your app’s existing user profile store, and add an app-specific identifier to the **user** resource.
-* As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this custom data in Microsoft Graph.
+- As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
+- Alternatively, you might want to retain your app’s existing user profile store, and add an app-specific identifier to the **user** resource.
+- As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this custom data in Microsoft Graph.
 
 ## Custom data options in Microsoft Graph
 
@@ -448,13 +450,20 @@ For the list of resource types that support schema extensions, see [Choose an ex
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 
 - If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you've verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format *{domainName}*_*{schemaName}*. For example, if your vanity domain is `contoso.com`, you can define an **id** of `contoso_mySchema`. This option is highly recommended.
-- If you don’t have a verified vanity domain, you can set the **id** to a schema name (without a domain name prefix). For example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext{8-random-alphanumeric-chars}_{schema-name}`. For example, `extkvbmkofy_mySchema`.
+- Alternatively, you can set the **id** to a schema name (without a domain name prefix). For example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext{8-random-alphanumeric-chars}_{schema-name}`. For example, `extkvbmkofy_mySchema`.
 
 The **id** will be the name of the complex type that will store your data on the extended resource instance.
 
 Once a schema extension is registered, it's available to be used by all applications in the same tenant as the associated owner application (when in the `InDevelopment` state) or by all applications in any tenant (when in the `Available` state). Like directory extensions, authorized apps have the ability to read and write data on any extensions defined on the target object.
 
 Unlike open extensions, you manage the [schema extension definitions](/graph/api/resources/schemaextension) and their data on the extended resource instance as separate sets of API operations. To manage the schema extension data on the extended resource instance, use the same REST request that you use to manage the resource instance.
+
+- Use POST to store data in the schema extension property when you're creating a new user.
+- Use PATCH to either store data in the schema extension property or update or delete the stored data.
+    - To delete data from a property, set its value to `null`.
+    - To delete data from *all* properties, set its value to `null`. If all properties are `null`, the schema extension object is also deleted.
+    - To update any property, you must specify all properties in the request body. Otherwise, Microsoft Graph will update the unspecified properties to `null`.
+- Use GET to read the schema extension properties for all users or individual users in the tenant.
 
 ##### Create a schema extension definition
 
@@ -744,6 +753,12 @@ For the list of resource types that support Microsoft Graph open extensions, see
 
 Open extensions, together with their data, are accessible through the **extensions** navigation property of the resource instance. They allow you to group related properties for easier access and management.
 
+Open extension definitions are created and managed on the fly on user objects. They're considered unique for each user, and it's not required to apply a universally consistent pattern for all users. For example, in the same tenant:
+
+- The user object for Adele can have an open extension named *socialSettings* that has three properties: **linkedInProfile**, **skypeId**, and **xboxGamertag**.
+- The user object for Bruno can have no open extension property.
+- The user object for Alex can have an open extension named *socialSettings* with five properties: **theme**, **color**, **language**, **font**, and **fontSize**.
+
 The **extensionName** property is the only *pre-defined*, writable property in an open extension. When creating an open extension, you must assign the **extensionName** property a name that is unique within the tenant. One way to do this is to use a reverse domain name system (DNS) format that is dependent on *your own domain*, for example, `Com.Contoso.ContactInfo`. **Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name**.
 
 ##### Create an open extension
@@ -944,6 +959,8 @@ If a multi-tenant application creates additional directory extensions in an app 
 -->
 
 ### Considerations for using schema extensions
+
+A schema extension must have an owner app. Ownership of the schema extension cannot be reassigned to another app.
 
 Deleting a schema extension definition without setting the schema extension to `null` makes the property and its associated user data undiscoverable.
 

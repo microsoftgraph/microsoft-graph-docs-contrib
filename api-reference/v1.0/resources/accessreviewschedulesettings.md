@@ -41,23 +41,24 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewScheduleSettings",
-  "mailNotificationsEnabled": "Boolean",
-  "reminderNotificationsEnabled": "Boolean",
-  "justificationRequiredOnApproval": "Boolean",
-  "defaultDecisionEnabled": "Boolean",
-  "defaultDecision": "String",
-  "instanceDurationInDays": "Integer",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedRecurrence"
-  },
-  "autoApplyDecisionsEnabled": "Boolean",
+  
   "applyActions": [
     {
       "@odata.type": "microsoft.graph.removeAccessApplyAction"
     }
   ],
+  "autoApplyDecisionsEnabled": "Boolean",
+  "defaultDecision": "String",
+  "defaultDecisionEnabled": "Boolean",
+  "decisionHistoriesForReviewersEnabled": "Boolean",
+  "instanceDurationInDays": "Integer",
+  "justificationRequiredOnApproval": "Boolean",
+  "mailNotificationsEnabled": "Boolean",
   "recommendationsEnabled": "Boolean",
-  "decisionHistoriesForReviewersEnabled": "Boolean"
+  "recurrence": {
+    "@odata.type": "microsoft.graph.patternedRecurrence"
+  },
+  "reminderNotificationsEnabled": "Boolean"
 }
 ```
 
