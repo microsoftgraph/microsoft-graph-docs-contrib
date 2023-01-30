@@ -22930,7 +22930,7 @@ items:
             href: api/reportroot-getteamsteamactivitycounts.md
           - name: Get team activity distribution counts
             href: api/reportroot-getteamsteamactivitydistributioncounts.md
-          - name: Get team team counts
+          - name: Get team counts
             href: api/reportroot-getteamsteamcounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the Teams team count by team type.
+Get the number of teams of a particular type in an instance of Microsoft Teams.
 
 ## Permissions
 
@@ -52,6 +52,10 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
 
 ## Response
 
