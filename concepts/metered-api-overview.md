@@ -1,6 +1,6 @@
 ---
-title: "Metered APIs in Microsoft Graph"
-description: "Provides an overview of metered APIs on Microsoft Graph."
+title: "Azure-metered APIs and services in Microsoft Graph"
+description: "Provides an overview of Azure-metered APIs and services on Microsoft Graph."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Metered APIs in Microsoft Graph
 
-Microsoft Graph includes APIs that are both available at no additional cost with service licenses as well as APIs that are metered. Metered APIs incur a cost per API call made.
+Microsoft Graph includes APIs that are both available at no additional cost with user subscription licenses as well as APIs and services that are metered with an Azure-meter. Azure-metered APIs and services incur a costs based on usage, this may be per API call made, per object returned in an API call, or other measurable mechanisms.
 
 ## Working principles
 These are the working principles that guide our approach to Microsoft 365 API endpoints on Microsoft Graph.
@@ -26,12 +26,14 @@ Standard: This category includes the broad set of APIs used to perform “CRUD�
 
 High-Capacity APIs: We want to ensure that our customers and developers have access to data at scale. This category includes purpose-built, bulk-export services like [Teams Export APIs](https://docs.microsoft.com/microsoftteams/export-teams-content#license-requirements-for-teams-export-apis) and [Microsoft Graph Data Connect](https://developer.microsoft.com/graph/data-connect), bulk-import capabilities such as [Microsoft Graph Connectors](https://developer.microsoft.com/graph/connectors), and future bulk export or import endpoints.
 
-Advanced APIs: The third category represents access to data that’s enriched or aggregated by Microsoft or offers access to advanced functionality extended directly from Microsoft 365 infrastructure, [Azure Communication Services](https://azure.microsoft.com/en-us/products/communication-services/#overview) is an example of this.
+Advanced APIs: The third category represents access to data that’s enriched or aggregated by Microsoft or offers access to advanced functionality extended directly from Microsoft 365 infrastructure, [Azure Communication Services](https://azure.microsoft.com/products/communication-services/#overview) is an example of this.
 
 ## Accessing metered APIs
-In order to access metered APIs on Microsoft Graph an application must be associated with an active Microsoft Azure Subscription. For instructions on associating an app to a subscription please see [Onboard to Microsoft Graph Metered APIs](metered-api-onboarding.md).
+In order to access Azure-metered APIs and services on Microsoft Graph an application must be associated with an active Microsoft Azure Subscription. For instructions on associating an app to a subscription please see [Onboard to Microsoft Graph Metered APIs](metered-api-onboarding.md).
 
 ## Developer considerations when using metered APIs
-When building an app that leverages metered APIs it is important to remember that metered APIs may return errors related to your subscription status in addition to other more common errors. See [Microsoft Graph errors and resource types](errors.md) for more information on error types in Microsoft Graph.
+When building an app that leverages Azure-metered APIs it is important to remember that Azure-metered APIs may return errors related to your subscription status in addition to other more common errors. See [Microsoft Graph errors and resource types](errors.md) for more information on error types in Microsoft Graph.
 
 ## Next steps
+- Explore the [list of Azure-metered APIs and services](metered-api-list.md)
+- [Onboard to Microsoft Graph Azure-metered APIs](metered-api-onboarding.md)
