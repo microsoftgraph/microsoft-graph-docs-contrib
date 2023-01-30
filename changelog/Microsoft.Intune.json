@@ -15769,8 +15769,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "(https://learn.microsoft.com/graph/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig?view=graph-rest-beta) function on (https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)",
           "ChangeType": "Deletion",
-          "Description": "Removed the exportMobileConfig](https://learn.microsoft.com/graph/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig?view=graph-rest-beta) function on [enrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)",
-          "Target": "(https://learn.microsoft.com/graph/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig?view=graph-rest-beta) function on (https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)"
+          "Description": "Removed the exportMobileConfig function on enrollmentProfile",
+          "Target": ""
         },
         {
           "Id": "bb3560f9-6809-4b82-8128-5955dfcb888e",
