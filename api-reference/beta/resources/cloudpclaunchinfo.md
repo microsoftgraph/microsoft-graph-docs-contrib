@@ -20,8 +20,8 @@ Contains the information to connect a [cloudPC](../resources/cloudpc.md).
 |:---|:---|:---|
 |cloudPcId|String|The unique identifier of the Cloud PC.|
 |cloudPcLaunchUrl|String|The connect URL of the Cloud PC.|
-|windows365SwitchCompatible|Boolean|Whether Cloud PC support switch.|
-|windows365SwitchNotCompatibleReason|String|The reason Cloud PC does not support switch.|
+|windows365SwitchCompatible|Boolean|Indicate if the Cloud PC supports switch functionality. If the value is true, it supports. If the value is false, it doesn't support.|
+|windows365SwitchNotCompatibleReason|String|Indicate the reason Cloud PC doesn't support switch. "CPCOsVersionNotMeetRequirement" indicates user needs to update their CloudPc OS version. "CPCHardwareNotMeetRequirement" indicates the cloud pc needs more cpu or ram to support the functionality.|
 
 ## Relationships
 None.
