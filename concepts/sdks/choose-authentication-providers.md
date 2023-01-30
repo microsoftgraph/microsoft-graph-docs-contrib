@@ -565,6 +565,7 @@ from kiota_authentication_azure.azure_identity_authentication_provider import Az
 credential = DeviceCodeCredential(client_id = 'CLIENT_ID')
 scopes = ['https://graph.microsoft.com/.default']
 auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
+```
 
 ---
 
@@ -712,6 +713,7 @@ from kiota_authentication_azure.azure_identity_authentication_provider import Az
 credential = InteractiveBrowserCredential()
 scopes = ['https://graph.microsoft.com/.default']
 auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
+```
 
 ---
 
@@ -806,6 +808,7 @@ from kiota_authentication_azure.azure_identity_authentication_provider import Az
 credential = UsernamePasswordCredential(CLIENT_ID, USERNAME, PASSWORD)
 scopes = ['https://graph.microsoft.com/.default']
 auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
+```
 
 ---
 
