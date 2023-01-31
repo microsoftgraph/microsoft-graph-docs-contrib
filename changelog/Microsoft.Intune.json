@@ -7809,7 +7809,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contentCachingMaxSizeBytes,contentCachingPort",
           "ChangeType": "Change",
-          "Description": "Changed the following properties on the [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta) entity: **contentCachingMaxSizeBytes** from required to optional, **contentCachingPort** from required to optional, ",
+          "Description": "Changed the following properties on the macOSDeviceFeaturesConfiguration entity: **contentCachingMaxSizeBytes** from required to optional, **contentCachingPort** from required to optional, ",
           "Target": "macOSDeviceFeaturesConfiguration"
         },
         {
@@ -7817,7 +7817,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "softwareUpdatesForceDelayed",
           "ChangeType": "Deletion",
-          "Description": "Removed the **softwareUpdatesForceDelayed** property from the [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) entity",
+          "Description": "Removed the **softwareUpdatesForceDelayed** property from the macOSGeneralDeviceConfiguration entity",
           "Target": "macOSGeneralDeviceConfiguration"
         },
         {
@@ -7825,7 +7825,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "targetDisplayVersion,targetPublisher",
           "ChangeType": "Addition",
-          "Description": "Added the **targetDisplayVersion** and **targetPublisher** properties to the [mobileAppRelationship](/graph/api/resources/intune-apps-mobileapprelationship?view=graph-rest-beta) entity",
+          "Description": "Added the **targetDisplayVersion** and **targetPublisher** properties to the mobileAppRelationship entity",
           "Target": "mobileAppRelationship"
         },
         {
@@ -7833,7 +7833,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayVersion",
           "ChangeType": "Addition",
-          "Description": "Added the **displayVersion** property to the [win32LobApp](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta) entity",
+          "Description": "Added the **displayVersion** property to the win32LobApp entity",
           "Target": "win32LobApp"
         },
         {
@@ -7841,7 +7841,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "productStatus,isVirtualMachine,tamperProtectionEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **productStatus**, **isVirtualMachine** and **tamperProtectionEnabled** properties to the [windowsProtectionState](/graph/api/resources/intune-devices-windowsprotectionstate?view=graph-rest-beta) entity",
+          "Description": "Added the **productStatus**, **isVirtualMachine** and **tamperProtectionEnabled** properties to the windowsProtectionState entity",
           "Target": "windowsProtectionState"
         },
         {
@@ -7849,7 +7849,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "userBasedVirtualLan,authenticationPeriodInSeconds,authenticationRetryDelayPeriodInSeconds,eapolStartPeriodInSeconds,maximumEAPOLStartMessages,maximumAuthenticationFailures,cacheCredentials,authenticationType",
           "ChangeType": "Addition",
-          "Description": "Added the **userBasedVirtualLan**, **authenticationPeriodInSeconds**, **authenticationRetryDelayPeriodInSeconds**, **eapolStartPeriodInSeconds**, **maximumEAPOLStartMessages**, **maximumAuthenticationFailures**, **cacheCredentials** and **authenticationType** properties to the [windowsWifiEnterpriseEAPConfiguration](/graph/api/resources/intune-deviceconfig-windowswifienterpriseeapconfiguration?view=graph-rest-beta) entity",
+          "Description": "Added the **userBasedVirtualLan**, **authenticationPeriodInSeconds**, **authenticationRetryDelayPeriodInSeconds**, **eapolStartPeriodInSeconds**, **maximumEAPOLStartMessages**, **maximumAuthenticationFailures**, **cacheCredentials** and **authenticationType** properties to the windowsWifiEnterpriseEAPConfiguration entity",
           "Target": "windowsWifiEnterpriseEAPConfiguration"
         },
         {
@@ -7857,7 +7857,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "configurationPolicies,configurationSettings,configurationCategories,configManagerCollections",
           "ChangeType": "Addition",
-          "Description": "Added the **configurationPolicies**, **configurationSettings**, **configurationCategories** and **configManagerCollections** navigation properties to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) entity",
+          "Description": "Added the **configurationPolicies**, **configurationSettings**, **configurationCategories** and **configManagerCollections** navigation properties to the deviceManagement entity",
           "Target": "deviceManagement"
         },
         {
@@ -7865,7 +7865,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "blockedSkus",
           "ChangeType": "Addition",
-          "Description": "Added the **blockedSkus** property to the [deviceEnrollmentPlatformRestriction](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestriction?view=graph-rest-beta) complex type",
+          "Description": "Added the **blockedSkus** property to the deviceEnrollmentPlatformRestriction complex type",
           "Target": "deviceEnrollmentPlatformRestriction"
         },
         {
@@ -7873,7 +7873,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "previewVisibility",
           "ChangeType": "Addition",
-          "Description": "Added the **previewVisibility** property to the [iosNotificationSettings](/graph/api/resources/intune-deviceconfig-iosnotificationsettings?view=graph-rest-beta) complex type",
+          "Description": "Added the **previewVisibility** property to the iosNotificationSettings complex type",
           "Target": "iosNotificationSettings"
         },
         {
@@ -7881,7 +7881,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isEncrypted",
           "ChangeType": "Addition",
-          "Description": "Added the **isEncrypted** property to the [omaSetting](/graph/api/resources/intune-deviceconfig-omasetting?view=graph-rest-beta) complex type",
+          "Description": "Added the **isEncrypted** property to the omaSetting complex type",
           "Target": "omaSetting"
         },
         {
@@ -7889,7 +7889,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "corporateOwnedAOSPUserlessDevice",
           "ChangeType": "Addition",
-          "Description": "Added the **corporateOwnedAOSPUserlessDevice** member to the [androidDeviceOwnerEnrollmentMode](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentmode?view=graph-rest-beta) enum type",
+          "Description": "Added the **corporateOwnedAOSPUserlessDevice** member to the androidDeviceOwnerEnrollmentMode enum type",
           "Target": "androidDeviceOwnerEnrollmentMode"
         },
         {
@@ -7897,7 +7897,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "warn,disable",
           "ChangeType": "Addition",
-          "Description": "Added the **warn** and **disable** members to the [defenderAttackSurfaceType](/graph/api/resources/intune-deviceconfig-defenderattacksurfacetype?view=graph-rest-beta) enum type",
+          "Description": "Added the **warn** and **disable** members to the defenderAttackSurfaceType enum type",
           "Target": "defenderAttackSurfaceType"
         },
         {
@@ -7905,7 +7905,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "warn,notConfigured",
           "ChangeType": "Addition",
-          "Description": "Added the **warn** and **notConfigured** members to the [defenderProtectionType](/graph/api/resources/intune-deviceconfig-defenderprotectiontype?view=graph-rest-beta) enum type",
+          "Description": "Added the **warn** and **notConfigured** members to the defenderProtectionType enum type",
           "Target": "defenderProtectionType"
         },
         {
@@ -7913,7 +7913,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "firewallSharedAppList,firewallSharedIpList,firewallSharedPortlist",
           "ChangeType": "Addition",
-          "Description": "Added the **firewallSharedAppList**, **firewallSharedIpList** and **firewallSharedPortlist** members to the [deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta) enum type",
+          "Description": "Added the **firewallSharedAppList**, **firewallSharedIpList** and **firewallSharedPortlist** members to the deviceManagementTemplateSubtype enum type",
           "Target": "deviceManagementTemplateSubtype"
         },
         {
@@ -7921,7 +7921,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "firewallSharedSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **firewallSharedSettings** member to the [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype?view=graph-rest-beta) enum type",
+          "Description": "Added the **firewallSharedSettings** member to the deviceManagementTemplateType enum type",
           "Target": "deviceManagementTemplateType"
         },
         {
@@ -7929,7 +7929,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "upgradeFailed",
           "ChangeType": "Addition",
-          "Description": "Added the **upgradeFailed** member to the [microsoftTunnelServerHealthStatus](/graph/api/resources/intune-mstunnel-microsofttunnelserverhealthstatus?view=graph-rest-beta) enum type",
+          "Description": "Added the **upgradeFailed** member to the microsoftTunnelServerHealthStatus enum type",
           "Target": "microsoftTunnelServerHealthStatus"
         }
       ],
@@ -8345,7 +8345,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "uninstallOnDeviceRemoval",
           "ChangeType": "Addition",
-          "Description": "Added the **uninstallOnDeviceRemoval** property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-macosvppappassignmentsettings?view=graph-rest-beta) complex type",
+          "Description": "Added the **uninstallOnDeviceRemoval** property to the macOsVppAppAssignmentSettings complex type",
           "Target": "macOsVppAppAssignmentSettings"
         },
         {
@@ -8361,7 +8361,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "universalResourceIdentifier",
           "ChangeType": "Addition",
-          "Description": "Added the **universalResourceIdentifier** member to the [subjectAlternativeNameType](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta) enum type",
+          "Description": "Added the **universalResourceIdentifier** member to the subjectAlternativeNameType enum type",
           "Target": "subjectAlternativeNameType"
         }
       ],
@@ -8431,7 +8431,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "textInputQuestion",
           "ChangeType": "Addition",
-          "Description": "Added new complex types: [textInputQuestion](https://learn.microsoft.com/graph/api/resources/textInputQuestion?view=graph-rest-beta), ",
+          "Description": "Added new complex types: textInputQuestion",
           "Target": "textInputQuestion"
         },
         {
@@ -8447,7 +8447,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getAvailableExtensionProperties",
           "ChangeType": "Addition",
-          "Description": "Added the [getAvailableExtensionProperties](https://learn.microsoft.com/graph/api/resources/getAvailableExtensionProperties?view=graph-rest-beta) action",
+          "Description": "Added the getAvailableExtensionProperties action",
           "Target": "getAvailableExtensionProperties"
         },
         {
@@ -8455,7 +8455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getObjectsById",
           "ChangeType": "Addition",
-          "Description": "Added the [getObjectsById](https://learn.microsoft.com/graph/api/resources/getObjectsById?view=graph-rest-beta) action",
+          "Description": "Added the getObjectsById action",
           "Target": "getObjectsById"
         },
         {
@@ -8759,7 +8759,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "size4096",
           "ChangeType": "Addition",
-          "Description": "Added the **size4096** member to the [keySize](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-keysize?view=graph-rest-beta) enum type",
+          "Description": "Added the **size4096** member to the keySize enum type",
           "Target": "keySize"
         },
         {
@@ -8877,7 +8877,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "List printers,Get printer,Update printer,Delete printer,List allowedGroups (printer),List allowedUsers (printer),Create allowedGroup (printer),Create allowedUser (printer),Delete allowedGroup (printer),Delete allowedUser (printer),getCapabilities (printer),List connectors (printer),List jobs (printer),Create job (printer),resetDefaults (printer),List shares,Get printerShare,Create printerShare,Update printerShare,Delete printerShare,List allowedGroups (printerShare),List allowedUsers (printerShare),Create allowedGroup (printerShare),Create allowedUser (printerShare),Delete allowedGroup (printerShare),Delete allowedUser (printerShare),Create printJob,Get printJob,uploadData (printDocument),startPrintJob (printJob),cancelPrintJob (printJob)",
           "ChangeType": "Change",
-          "Description": "Added new permission requirements to: \u003Cul\u003E\u003Cli\u003E[List printers](https://learn.microsoft.com/graph/api/print-list-printers?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get printer](https://learn.microsoft.com/graph/api/printer-get?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Update printer](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete printer](https://learn.microsoft.com/graph/api/printer-delete?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List allowedGroups (printer)](https://learn.microsoft.com/graph/api/printer-list-allowedgroups?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List allowedUsers (printer)](https://learn.microsoft.com/graph/api/printer-list-allowedusers?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create allowedGroup (printer)](https://learn.microsoft.com/graph/api/printer-post-allowedgroups?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create allowedUser (printer)](https://learn.microsoft.com/graph/api/printer-post-allowedusers?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete allowedGroup (printer)](https://learn.microsoft.com/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete allowedUser (printer)](https://learn.microsoft.com/graph/api/printer-delete-alloweduser?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[getCapabilities (printer)](https://learn.microsoft.com/graph/api/printer-getcapabilities?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List connectors (printer)](https://learn.microsoft.com/graph/api/printer-list-connectors?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List jobs (printer)](https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create job (printer)](https://learn.microsoft.com/graph/api/printer-post-jobs?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[resetDefaults (printer)](https://learn.microsoft.com/graph/api/printer-resetdefaults?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List shares](https://learn.microsoft.com/graph/api/print-list-shares?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get printerShare](https://learn.microsoft.com/graph/api/printershare-get?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create printerShare](https://learn.microsoft.com/graph/api/print-post-shares?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Update printerShare](https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete printerShare](https://learn.microsoft.com/graph/api/printershare-delete?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List allowedGroups (printerShare)](https://learn.microsoft.com/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List allowedUsers (printerShare)](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create allowedGroup (printerShare)](https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create allowedUser (printerShare)](https://learn.microsoft.com/graph/api/printershare-post-allowedusers?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete allowedGroup (printerShare)](https://learn.microsoft.com/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete allowedUser (printerShare)](https://learn.microsoft.com/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create printJob](https://learn.microsoft.com/graph/api/printer-post-jobs?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get printJob](https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[uploadData (printDocument)](https://learn.microsoft.com/graph/api/printdocument-uploaddata?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[startPrintJob (printJob)](https://learn.microsoft.com/graph/api/printjob-startprintjob?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[cancelPrintJob (printJob)](https://learn.microsoft.com/graph/api/printjob-cancelprintjob?view=graph-rest-beta)\u003C/li\u003E\u003C/ul\u003E",
+          "Description": "Added new permission requirements to: \u003Cul\u003E\u003Cli\u003E[List printers](https://learn.microsoft.com/graph/api/print-list-printers?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get printer](https://learn.microsoft.com/graph/api/printer-get?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Update printer](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete printer](https://learn.microsoft.com/graph/api/printer-delete?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003EList allowedGroups (printer)\u003C/li\u003E\u003Cli\u003E[List allowed users\u003C/li\u003E\u003Cli\u003ECreate allowedGroup (printer)\u003C/li\u003E\u003Cli\u003ECreate allowedUser (printer)\u003C/li\u003E\u003Cli\u003EDelete allowedGroup (printer)\u003C/li\u003E\u003Cli\u003EDelete allowedUser (printer)\u003C/li\u003E\u003Cli\u003E[getCapabilities (printer)](https://learn.microsoft.com/graph/api/printer-getcapabilities?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List connectors (printer)](https://learn.microsoft.com/graph/api/printer-list-connectors?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List jobs (printer)](https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create job (printer)](https://learn.microsoft.com/graph/api/printer-post-jobs?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003EresetDefaults (printer)\u003C/li\u003E\u003Cli\u003E[List shares](https://learn.microsoft.com/graph/api/print-list-shares?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get printerShare](https://learn.microsoft.com/graph/api/printershare-get?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create printerShare](https://learn.microsoft.com/graph/api/print-post-shares?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Update printerShare](https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete printerShare](https://learn.microsoft.com/graph/api/printershare-delete?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List allowedGroups (printerShare)](https://learn.microsoft.com/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List allowedUsers (printerShare)](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create allowedGroup (printerShare)](https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create allowedUser (printerShare)](https://learn.microsoft.com/graph/api/printershare-post-allowedusers?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete allowedGroup (printerShare)](https://learn.microsoft.com/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete allowedUser (printerShare)](https://learn.microsoft.com/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create printJob](https://learn.microsoft.com/graph/api/printer-post-jobs?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get printJob](https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003EuploadData (printDocument)\u003C/li\u003E\u003Cli\u003EstartPrintJob (printJob)\u003C/li\u003E\u003Cli\u003EcancelPrintJob (printJob)\u003C/li\u003E\u003C/ul\u003E",
           "Target": "List printers,Get printer,Update printer,Delete printer,List allowedGroups (printer),List allowedUsers (printer),Create allowedGroup (printer),Create allowedUser (printer),Delete allowedGroup (printer),Delete allowedUser (printer),getCapabilities (printer),List connectors (printer),List jobs (printer),Create job (printer),resetDefaults (printer),List shares,Get printerShare,Create printerShare,Update printerShare,Delete printerShare,List allowedGroups (printerShare),List allowedUsers (printerShare),Create allowedGroup (printerShare),Create allowedUser (printerShare),Delete allowedGroup (printerShare),Delete allowedUser (printerShare),Create printJob,Get printJob,uploadData (printDocument),startPrintJob (printJob),cancelPrintJob (printJob)"
         },
         {
