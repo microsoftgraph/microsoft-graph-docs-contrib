@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"X-MS-CloudPC-USGovCloudTenantAADToken": "{token}",
-}
-configuration := &graphconfig.CrossCloudGovernmentOrganizationMappingRequestBuilderGetRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("X-MS-CloudPC-USGovCloudTenantAADToken", "{token}")
+
+configuration := &graphconfig.DeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMappingRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
