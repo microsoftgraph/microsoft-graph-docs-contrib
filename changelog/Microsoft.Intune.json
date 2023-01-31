@@ -1033,7 +1033,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "routeIncludes",
           "ChangeType": "Addition",
-          "Description": "Added the `routeIncludes` property to the [microsoftTunnelConfiguration](https://learn.microsoft.com/graph/api/resources/microsoftTunnelConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the `routeIncludes` property to the microsoftTunnelConfiguration resource.",
           "Target": "microsoftTunnelConfiguration"
         },
         {
@@ -1349,7 +1349,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetAppAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [winGetAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppAssignmentSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the winGetAppAssignmentSettings resource type.",
           "Target": "winGetAppAssignmentSettings"
         },
         {
@@ -1357,7 +1357,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetAppInstallExperience",
           "ChangeType": "Addition",
-          "Description": "Added the [winGetAppInstallExperience](https://learn.microsoft.com/graph/api/resources/intune-winGetAppInstallExperience?view=graph-rest-beta) resource type.",
+          "Description": "Added the winGetAppInstallExperience resource type.",
           "Target": "winGetAppInstallExperience"
         },
         {
@@ -1365,7 +1365,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetAppInstallTimeSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [winGetAppInstallTimeSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppInstallTimeSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the winGetAppInstallTimeSettings resource type.",
           "Target": "winGetAppInstallTimeSettings"
         },
         {
@@ -1373,7 +1373,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetAppRestartSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [winGetAppRestartSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppRestartSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the winGetAppRestartSettings resource type.",
           "Target": "winGetAppRestartSettings"
         },
         {
@@ -1381,7 +1381,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetApp",
           "ChangeType": "Addition",
-          "Description": "Added the [winGetApp](https://learn.microsoft.com/graph/api/resources/intune-winGetApp?view=graph-rest-beta) resource",
+          "Description": "Added the winGetApp resource",
           "Target": "winGetApp"
         },
         {
@@ -1445,7 +1445,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dataProcessorServiceForWindowsFeaturesOnboarding",
           "ChangeType": "Addition",
-          "Description": "Added the [dataProcessorServiceForWindowsFeaturesOnboarding](https://learn.microsoft.com/graph/api/resources/intune-dataProcessorServiceForWindowsFeaturesOnboarding?view=graph-rest-beta) resource type.",
+          "Description": "Added the dataProcessorServiceForWindowsFeaturesOnboarding resource type.",
           "Target": "dataProcessorServiceForWindowsFeaturesOnboarding"
         },
         {
@@ -1589,7 +1589,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getZebraFotaDeploymentReport",
           "ChangeType": "Deletion",
-          "Description": "Removed the **getZebraFotaDeploymentReport** method from the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Removed the **getZebraFotaDeploymentReport** method from the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -1597,7 +1597,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getZebraFotaDeploymentReport",
           "ChangeType": "Addition",
-          "Description": "Added the getZebraFotaDeploymentReport method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Added the getZebraFotaDeploymentReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -3129,7 +3129,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsDeviceScope",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsDeviceScope](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsDeviceScope?view=graph-rest-beta) resource",
+          "Description": "Added the userExperienceAnalyticsDeviceScope resource",
           "Target": "userExperienceAnalyticsDeviceScope"
         },
         {
@@ -3169,7 +3169,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceEnrollmentNotificationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceEnrollmentNotificationConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceEnrollmentNotificationConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the deviceEnrollmentNotificationConfiguration resource",
           "Target": "deviceEnrollmentNotificationConfiguration"
         },
         {
@@ -3193,7 +3193,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidDeviceOwnerUserFacingMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [androidDeviceOwnerUserFacingMessage](https://learn.microsoft.com/graph/api/resources/intune-androidDeviceOwnerUserFacingMessage?view=graph-rest-beta) resource type.",
+          "Description": "Added the androidDeviceOwnerUserFacingMessage resource type.",
           "Target": "androidDeviceOwnerUserFacingMessage"
         },
         {
@@ -3267,7 +3267,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsDriverUpdateProfileInventorySyncStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsDriverUpdateProfileInventorySyncStatus](https://learn.microsoft.com/graph/api/resources/intune-windowsDriverUpdateProfileInventorySyncStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the windowsDriverUpdateProfileInventorySyncStatus resource type.",
           "Target": "windowsDriverUpdateProfileInventorySyncStatus"
         },
         {
@@ -3331,7 +3331,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantAttachRBACState",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantAttachRBACState](https://learn.microsoft.com/graph/api/resources/intune-tenantAttachRBACState?view=graph-rest-beta) resource type.",
+          "Description": "Added the tenantAttachRBACState resource type.",
           "Target": "tenantAttachRBACState"
         },
         {
@@ -3347,7 +3347,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantAttachRBAC",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantAttachRBAC](https://learn.microsoft.com/graph/api/resources/intune-tenantAttachRBAC?view=graph-rest-beta) resource",
+          "Description": "Added the tenantAttachRBAC resource",
           "Target": "tenantAttachRBAC"
         },
         {
@@ -3379,7 +3379,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementConfigurationSecretSettingValue",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementConfigurationSecretSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSecretSettingValue?view=graph-rest-beta) resource type.",
+          "Description": "Added the deviceManagementConfigurationSecretSettingValue resource type.",
           "Target": "deviceManagementConfigurationSecretSettingValue"
         },
         {
@@ -3491,7 +3491,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aospDeviceOwnerScepCertificateProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [aospDeviceOwnerScepCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-aospDeviceOwnerScepCertificateProfile?view=graph-rest-beta) resource",
+          "Description": "Added the aospDeviceOwnerScepCertificateProfile resource",
           "Target": "aospDeviceOwnerScepCertificateProfile"
         },
         {
@@ -3499,7 +3499,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aospDeviceOwnerWiFiConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [aospDeviceOwnerWiFiConfiguration](https://learn.microsoft.com/graph/api/resources/intune-aospDeviceOwnerWiFiConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the aospDeviceOwnerWiFiConfiguration resource",
           "Target": "aospDeviceOwnerWiFiConfiguration"
         },
         {
@@ -3507,7 +3507,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsWiredNetworkConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsWiredNetworkConfiguration](https://learn.microsoft.com/graph/api/resources/intune-windowsWiredNetworkConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the windowsWiredNetworkConfiguration resource",
           "Target": "windowsWiredNetworkConfiguration"
         },
         {
@@ -3589,7 +3589,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aospDeviceOwnerPkcsCertificateProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [aospDeviceOwnerPkcsCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-aospDeviceOwnerPkcsCertificateProfile?view=graph-rest-beta) resource",
+          "Description": "Added the aospDeviceOwnerPkcsCertificateProfile resource",
           "Target": "aospDeviceOwnerPkcsCertificateProfile"
         },
         {
@@ -3597,7 +3597,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aospDeviceOwnerTrustedRootCertificate",
           "ChangeType": "Addition",
-          "Description": "Added the [aospDeviceOwnerTrustedRootCertificate](https://learn.microsoft.com/graph/api/resources/intune-aospDeviceOwnerTrustedRootCertificate?view=graph-rest-beta) resource",
+          "Description": "Added the aospDeviceOwnerTrustedRootCertificate resource",
           "Target": "aospDeviceOwnerTrustedRootCertificate"
         },
         {
@@ -3647,7 +3647,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "durationInMinutes",
           "ChangeType": "Addition",
-          "Description": "Added the **durationInMinutes** parameter to the [playLostModeSound](https://learn.microsoft.com/graph/api/intune-managedDevice-playLostModeSound?view=graph-rest-beta) method.",
+          "Description": "Added the **durationInMinutes** parameter to the playLostModeSound method.",
           "Target": "playLostModeSound"
         },
         {
@@ -3655,7 +3655,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "macOSDmgApp",
           "ChangeType": "Addition",
-          "Description": "Added the [macOSDmgApp](https://learn.microsoft.com/graph/api/resources/intune-macOSDmgApp?view=graph-rest-beta) resource type.",
+          "Description": "Added the macOSDmgApp resource type.",
           "Target": "macOSDmgApp"
         },
         {
