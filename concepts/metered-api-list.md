@@ -7,7 +7,7 @@ ms.custom: scenarios:getting-started
 ---
 
 # List of Microsoft Graph Metered APIs
-The following is the list of APIs that are Azure-metered and require an Azure Subscription associated with an application before they can be called. See [Metered APIs in Microsoft Graph](metered-api-overview.md) for more information.
+The following is the list of APIs that are Azure-metered and require an Azure Subscription associated with an application before they can be called. See [Metered APIs in Microsoft Graph](metered-api-overview.md) for more information. Some Microsoft Graph Azure-metered APIs may also require submitting a protected API request.  For those APIs the link to the submission form is included in the table.
 
 | API | Protected API form |
 |:--------------------------|:----------------------------------------|

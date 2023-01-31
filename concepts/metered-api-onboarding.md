@@ -61,6 +61,27 @@ Before executing the command, replace the following parameters with your own val
 ```PowerShell
 az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId\`": `"myAppGUID`"}" --latest-include-preview --location Global –subscription mySubscriptionGUID
 ```
+Successful result example
+```
+{
+  "extendedLocation": null,
+  "id": "/subscriptions/ea52c74a-a217-45e6-a5a8-5ca8150a386a/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+  "identity": null,
+  "kind": null,
+  "location": "Global",
+  "managedBy": null,
+  "name": "myGraphAppBilling",
+  "plan": null,
+  "properties": {
+    "appId": "9cdd1e90-604c-4319-b329-5d204063e235",
+    "billingPlanId": "ca11ab5c-e527-4930-97d5-48f3ff0e128c"
+  },
+  "resourceGroup": "myRG",
+  "sku": null,
+  "tags": null,
+  "type": "microsoft.graphservices/accounts"
+}
+```
 
 ![Successfully associated application to Azure Subscription](images/metered-apis/cloud-shell-success.png)
 
