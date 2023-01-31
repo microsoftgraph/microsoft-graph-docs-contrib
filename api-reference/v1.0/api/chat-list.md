@@ -15,7 +15,7 @@ Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
 
->**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](../../../concepts/known-issues-teamwork-communications.md) 
+>**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](../../../concepts/teamwork-national-cloud-differences.md) 
 
 ## Permissions
 
