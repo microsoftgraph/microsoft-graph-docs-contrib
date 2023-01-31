@@ -90,8 +90,6 @@ Successful result example
 }
 ```
 
-![Successfully associated application to Azure Subscription](images/metered-apis/cloud-shell-success.png)
-
 ## Consuming metered APIs in your app
 After you have enabled your app to consume Microsoft Graph Azure-metered APIs and services, the app can start making API calls for metered APIs. Charges generated from those requests will be charged to the Azure Subscription associated with the app.
 
