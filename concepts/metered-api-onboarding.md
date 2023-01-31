@@ -41,7 +41,7 @@ Use the following steps to create and link a Microsoft.GraphServices/accounts Az
 2. Choose **Cloud Shell**, and if given a choice, choose **PowerShell**.
 Note: If you're using Cloud Shell for the first time you might need to create a storage account.  Select an Azure subscription, choose **Create** and follow the instructions to create a storage account.
 
-3. If you have multiple Azure subscriptions see [Use multiple Azure subscriptions](https://learn.microsoft.com/powershell/azure/manage-subscriptions-azureps?view=azps-9.3.0) for information on setting the active subscription, otherwise continue to the next step.
+3. If you have multiple Azure subscriptions see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps) for information on setting the active subscription, otherwise continue to the next step.
 
 4. To register the **Microsoft.GraphServices** resource provider to your active subscription so an Azure resource can be created, copy the command below, paste into Cloud Shell and type  <**Enter**>.
 ```PowerShell
@@ -51,6 +51,7 @@ Register-AzResourceProvider -ProviderNamespace Microsoft.GraphServices
 5. Copy the command below, paste into Cloud Shell and replace the highlighted text with your own value, type <**Enter**>. The result will be a JSON representation of your Microsoft.GraphServices/accounts resource.
 
 Before executing the command, replace the following parameters with your own values:
+
 | Parameter | Description |
 |:--------------------------|:----------------------------------------|
 | myRG | The name you wish to give to the Azure resource group |
@@ -93,8 +94,8 @@ Successful result example
 ## Consuming metered APIs in your app
 After you have enabled your app to consume Microsoft Graph Azure-metered APIs and services, the app can start making API calls for metered APIs. Charges generated from those requests will be charged to the Azure Subscription associated with the app.
 
-Cost and usage of Azure-metered APIs and services can be monitoring through [Azure Cost Management + Billing](https://learn.microsoft.com/azure/cost-management-billing/). This provides access to costs within the subscription, which can be split based on application, calling tenant, or meter.
+Cost and usage of Azure-metered APIs and services can be monitoring through [Azure Cost Management + Billing](/azure/cost-management-billing/). This provides access to costs within the subscription, which can be split based on application, calling tenant, or meter.
 
 ## Receiving a bill for Microsoft Graph Azure-metered API and service usage
-After the subscription billing cycle runs, typically on the 5th day of the month, a subscription owner or users with role-based permissions can download an invoice. For details, see [View and download your Azure invoice | Microsoft Docs](https://docs.microsoft.com/azure/cost-management-billing/understand/download-azure-invoice).
-The invoice will include details that allow you to understand the amount of usage your application generates and for multi-tenant applications where that usage is happening. For more details, see [Understand your Azure invoice | Microsoft Docs](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice).
+After the subscription billing cycle runs, typically on the 5th day of the month, a subscription owner or users with role-based permissions can download an invoice. For details, see [View and download your Azure invoice | Microsoft Docs](/azure/cost-management-billing/understand/download-azure-invoice).
+The invoice will include details that allow you to understand the amount of usage your application generates and for multi-tenant applications where that usage is happening. For more details, see [Understand your Azure invoice | Microsoft Docs](/azure/cost-management-billing/understand/understand-invoice).
