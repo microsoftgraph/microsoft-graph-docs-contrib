@@ -83,8 +83,8 @@ Content-Type: application/json
     "isRevoked": false,
     "updatePolicy": { "@odata.id": "updatePolicies/983f03cd-03cd-983f-cd03-3f98cd033f98" },
     "content": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry": { "@odata.id": "catalog/entries/1" }
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "f341705b-0b15-4ce3-aaf2-6a1681d78606
     },
     "deploymentSettings": {
       "contentApplicability": {
@@ -106,7 +106,7 @@ Content-Type: application/json
       }
     },
     "deployments": [
-        { "@odata.id": "deployments/1" }
+        { "id": "e481b11b-3b18-4282-906e-9d7efd27711d" }
     ]
   }
 }
