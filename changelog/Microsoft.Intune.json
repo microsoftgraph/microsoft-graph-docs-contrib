@@ -3663,7 +3663,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "macOSIncludedApp",
           "ChangeType": "Addition",
-          "Description": "Added the [macOSIncludedApp](https://learn.microsoft.com/graph/api/resources/intune-macOSIncludedApp?view=graph-rest-beta) resource type.",
+          "Description": "Added the macOSIncludedApp resource type.",
           "Target": "macOSIncludedApp"
         },
         {
@@ -3687,7 +3687,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidDeviceOwnerSystemUpdateFreezePeriod",
           "ChangeType": "Addition",
-          "Description": "Added the [androidDeviceOwnerSystemUpdateFreezePeriod](https://learn.microsoft.com/graph/api/resources/intune-androidDeviceOwnerSystemUpdateFreezePeriod?view=graph-rest-beta) resource type.",
+          "Description": "Added the androidDeviceOwnerSystemUpdateFreezePeriod resource type.",
           "Target": "androidDeviceOwnerSystemUpdateFreezePeriod"
         },
         {
@@ -3751,7 +3751,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "skipToken",
           "ChangeType": "Addition",
-          "Description": "Added the **skipToken** parameter to the [getQuietTimePolicyUsersReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getQuietTimePolicyUsersReport?view=graph-rest-beta) method.",
+          "Description": "Added the **skipToken** parameter to the getQuietTimePolicyUsersReport method.",
           "Target": "getQuietTimePolicyUsersReport"
         },
         {
@@ -3777,7 +3777,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "description",
           "ChangeType": "Addition",
-          "Description": "Added the **description** parameter to the [createCopy](https://learn.microsoft.com/graph/api/intune-deviceManagementIntent-createCopy?view=graph-rest-beta) method.",
+          "Description": "Added the **description** parameter to the createCopy method.",
           "Target": "createCopy"
         },
         {
@@ -3937,7 +3937,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hardwareConfigurationAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [hardwareConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfigurationAssignment?view=graph-rest-beta) resource type.",
+          "Description": "Added the hardwareConfigurationAssignment resource type.",
           "Target": "hardwareConfigurationAssignment"
         },
         {
@@ -3945,7 +3945,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hardwarePasswordInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [hardwarePasswordInfo](https://learn.microsoft.com/graph/api/resources/intune-hardwarePasswordInfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the hardwarePasswordInfo resource type.",
           "Target": "hardwarePasswordInfo"
         },
         {
@@ -3953,7 +3953,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hardwareConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [hardwareConfiguration](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the hardwareConfiguration resource type.",
           "Target": "hardwareConfiguration"
         },
         {
@@ -3961,7 +3961,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hardwareConfigurationRunSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [hardwareConfigurationRunSummary](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfigurationRunSummary?view=graph-rest-beta) resource type.",
+          "Description": "Added the hardwareConfigurationRunSummary resource type.",
           "Target": "hardwareConfigurationRunSummary"
         },
         {
@@ -3969,7 +3969,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hardwareConfigurationDeviceState",
           "ChangeType": "Addition",
-          "Description": "Added the [hardwareConfigurationDeviceState](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfigurationDeviceState?view=graph-rest-beta) resource type.",
+          "Description": "Added the hardwareConfigurationDeviceState resource type.",
           "Target": "hardwareConfigurationDeviceState"
         },
         {
@@ -3977,7 +3977,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hardwareConfigurationUserState",
           "ChangeType": "Addition",
-          "Description": "Added the [hardwareConfigurationUserState](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfigurationUserState?view=graph-rest-beta) resource type.",
+          "Description": "Added the hardwareConfigurationUserState resource type.",
           "Target": "hardwareConfigurationUserState"
         },
         {
@@ -4009,7 +4009,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "assign",
           "ChangeType": "Addition",
-          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-hardwareConfiguration-assign?view=graph-rest-beta) method to the [hardwareConfiguration](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the assign method to the hardwareConfiguration resource.",
           "Target": "hardwareConfiguration"
         },
         {
@@ -4089,7 +4089,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "ownerAccessToken",
           "ChangeType": "Addition",
-          "Description": "Added the **ownerAccessToken** parameter to the [connect](https://learn.microsoft.com/graph/api/intune-chromeOSOnboardingSettings-connect?view=graph-rest-beta) method.",
+          "Description": "Added the **ownerAccessToken** parameter to the connect method.",
           "Target": "connect"
         },
         {
@@ -4097,7 +4097,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "disconnect",
           "ChangeType": "Addition",
-          "Description": "Added the [disconnect](https://learn.microsoft.com/graph/api/intune-chromeOSOnboardingSettings-disconnect?view=graph-rest-beta) method to the [chromeOSOnboardingSettings](https://learn.microsoft.com/graph/api/resources/intune-chromeOSOnboardingSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the disconnect method to the chromeOSOnboardingSettings resource.",
           "Target": "chromeOSOnboardingSettings"
         },
         {
@@ -4105,7 +4105,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "serviceAccountCredentials",
           "ChangeType": "Deletion",
-          "Description": "Removed the **serviceAccountCredentials** parameter from the [connect](https://learn.microsoft.com/graph/api/intune-chromeOSOnboardingSettings-connect?view=graph-rest-beta) method.",
+          "Description": "Removed the **serviceAccountCredentials** parameter from the connect method.",
           "Target": "connect"
         },
         {
@@ -4113,7 +4113,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "connect",
           "ChangeType": "Deletion",
-          "Description": "Removed the **connect** method from the [connect](https://learn.microsoft.com/graph/api/resources/intune-connect?view=graph-rest-beta) resource.",
+          "Description": "Removed the **connect** method from the connect resource.",
           "Target": "connect"
         },
         {
@@ -4297,7 +4297,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "reportSchedules",
           "ChangeType": "Deletion",
-          "Description": "Removed the **reportSchedules** relationship from the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Removed the **reportSchedules** relationship from the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -4427,7 +4427,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsUpdateRolloutSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsUpdateRolloutSettings](https://learn.microsoft.com/graph/api/resources/intune-windowsUpdateRolloutSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the windowsUpdateRolloutSettings resource type.",
           "Target": "windowsUpdateRolloutSettings"
         },
         {
@@ -4571,7 +4571,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "batteryHealthMetrics",
           "ChangeType": "Addition",
-          "Description": "Added the **batteryHealthMetrics** relationship to the [userExperienceAnalyticsBaseline](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBaseline?view=graph-rest-beta) resource.",
+          "Description": "Added the **batteryHealthMetrics** relationship to the userExperienceAnalyticsBaseline resource.",
           "Target": "userExperienceAnalyticsBaseline"
         },
         {
@@ -4579,7 +4579,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsBatteryHealthDevicePerformance",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsBatteryHealthDevicePerformance](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthDevicePerformance?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsBatteryHealthDevicePerformance resource type.",
           "Target": "userExperienceAnalyticsBatteryHealthDevicePerformance"
         },
         {
@@ -4595,7 +4595,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsBatteryHealthOsPerformance",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsBatteryHealthOsPerformance](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthOsPerformance?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsBatteryHealthOsPerformance resource type.",
           "Target": "userExperienceAnalyticsBatteryHealthOsPerformance"
         },
         {
@@ -4603,7 +4603,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsBatteryHealthAppImpact",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsBatteryHealthAppImpact](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthAppImpact?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsBatteryHealthAppImpact resource type.",
           "Target": "userExperienceAnalyticsBatteryHealthAppImpact"
         },
         {
@@ -4611,7 +4611,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsBatteryHealthCapacityDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsBatteryHealthCapacityDetails](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthCapacityDetails?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsBatteryHealthCapacityDetails resource type.",
           "Target": "userExperienceAnalyticsBatteryHealthCapacityDetails"
         },
         {
@@ -4619,7 +4619,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsBatteryHealthRuntimeDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsBatteryHealthRuntimeDetails](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthRuntimeDetails?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsBatteryHealthRuntimeDetails resource type.",
           "Target": "userExperienceAnalyticsBatteryHealthRuntimeDetails"
         },
         {
