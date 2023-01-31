@@ -4627,7 +4627,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsBatteryHealthDeviceAppImpact",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsBatteryHealthDeviceAppImpact](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthDeviceAppImpact?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsBatteryHealthDeviceAppImpact resource type.",
           "Target": "userExperienceAnalyticsBatteryHealthDeviceAppImpact"
         },
         {
@@ -4635,7 +4635,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory resource type.",
           "Target": "userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory"
         },
         {
@@ -4643,7 +4643,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "persistEsimDataPlan",
           "ChangeType": "Addition",
-          "Description": "Added the **persistEsimDataPlan** parameter to the [executeAction](https://learn.microsoft.com/graph/api/intune-managedDevice-executeAction?view=graph-rest-beta) method.",
+          "Description": "Added the **persistEsimDataPlan** parameter to the executeAction method.",
           "Target": "executeAction"
         },
         {
@@ -4683,7 +4683,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementCompliancePolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementCompliancePolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the deviceManagementCompliancePolicy resource type.",
           "Target": "deviceManagementCompliancePolicy"
         },
         {
@@ -4691,7 +4691,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementComplianceScheduledActionForRule",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementComplianceScheduledActionForRule](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementComplianceScheduledActionForRule?view=graph-rest-beta) resource type.",
+          "Description": "Added the deviceManagementComplianceScheduledActionForRule resource type.",
           "Target": "deviceManagementComplianceScheduledActionForRule"
         },
         {
@@ -4699,7 +4699,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementComplianceActionItem",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementComplianceActionItem](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementComplianceActionItem?view=graph-rest-beta) resource type.",
+          "Description": "Added the deviceManagementComplianceActionItem resource type.",
           "Target": "deviceManagementComplianceActionItem"
         },
         {
@@ -4731,7 +4731,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getDeviceConfigurationPolicyStatusSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [getDeviceConfigurationPolicyStatusSummary](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getDeviceConfigurationPolicyStatusSummary?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Added the getDeviceConfigurationPolicyStatusSummary method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -4739,7 +4739,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "assign",
           "ChangeType": "Addition",
-          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-deviceManagementCompliancePolicy-assign?view=graph-rest-beta) method to the [deviceManagementCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementCompliancePolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the assign method to the deviceManagementCompliancePolicy resource.",
           "Target": "deviceManagementCompliancePolicy"
         },
         {
@@ -4747,7 +4747,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setScheduledActions",
           "ChangeType": "Addition",
-          "Description": "Added the [setScheduledActions](https://learn.microsoft.com/graph/api/intune-deviceManagementCompliancePolicy-setScheduledActions?view=graph-rest-beta) method to the [deviceManagementCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementCompliancePolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the setScheduledActions method to the deviceManagementCompliancePolicy resource.",
           "Target": "deviceManagementCompliancePolicy"
         },
         {
@@ -4909,7 +4909,7 @@
           "ApiChange": "EntityType",
           "ChangedApiName": "windowsDriverUpdateInventory",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsDriverUpdateInventory](https://learn.microsoft.com/graph/api/resources/intune-windowsDriverUpdateInventory?view=graph-rest-beta) resource",
+          "Description": "Added the windowsDriverUpdateInventory resource",
           "Target": "windowsDriverUpdateInventory"
         },
         {
@@ -4925,7 +4925,7 @@
           "ApiChange": "EntityType",
           "ChangedApiName": "windowsDriverUpdateProfileAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsDriverUpdateProfileAssignment](https://learn.microsoft.com/graph/api/resources/intune-windowsDriverUpdateProfileAssignment?view=graph-rest-beta) resource",
+          "Description": "Added the windowsDriverUpdateProfileAssignment resource",
           "Target": "windowsDriverUpdateProfileAssignment"
         },
         {
@@ -4941,7 +4941,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "reports",
           "ChangeType": "Deletion",
-          "Description": "Removed the **reports** relationship from [deviceManagement](https://learn.microsoft.com/graph/api/resources/deviceManagement?view=graph-rest-beta) resource.",
+          "Description": "Removed the **reports** relationship from deviceManagement resource.",
           "Target": "deviceManagement"
         },
         {
@@ -4965,7 +4965,7 @@
           "ApiChange": "EntityType",
           "ChangedApiName": "deviceManagementReports",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource",
+          "Description": "Added the deviceManagementReports resource",
           "Target": "deviceManagementReports"
         },
         {
@@ -4973,7 +4973,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "getRemoteAssistanceMonitorActiveSessionsReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getRemoteAssistanceMonitorActiveSessionsReport](https://learn.microsoft.com/graph/api/intune-getRemoteAssistanceMonitorActiveSessionsReport?view=graph-rest-beta) method to the [getRemoteAssistanceMonitorActiveSessionsReport](https://learn.microsoft.com/graph/api/intune-getRemoteAssistanceMonitorActiveSessionsReport?view=graph-rest-beta) resource.",
+          "Description": "Added the getRemoteAssistanceMonitorActiveSessionsReport method to the getRemoteAssistanceMonitorActiveSessionsReport resource.",
           "Target": "getRemoteAssistanceMonitorActiveSessionsReport"
         },
         {
@@ -4981,7 +4981,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "getRemoteAssistanceMonitorAvgSessionTimeReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getRemoteAssistanceMonitorAvgSessionTimeReport](https://learn.microsoft.com/graph/api/intune-getRemoteAssistanceMonitorAvgSessionTimeReport?view=graph-rest-beta) method to the [getRemoteAssistanceMonitorAvgSessionTimeReport](https://learn.microsoft.com/graph/api/intune-getRemoteAssistanceMonitorAvgSessionTimeReport?view=graph-rest-beta) resource.",
+          "Description": "Added the getRemoteAssistanceMonitorAvgSessionTimeReport method to the getRemoteAssistanceMonitorAvgSessionTimeReport resource.",
           "Target": "getRemoteAssistanceMonitorAvgSessionTimeReport"
         },
         {
@@ -4989,7 +4989,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "getRemoteAssistanceMonitorTotalSessionsReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getRemoteAssistanceMonitorTotalSessionsReport](https://learn.microsoft.com/graph/api/intune-getRemoteAssistanceMonitorTotalSessionsReport?view=graph-rest-beta) method to the [getRemoteAssistanceMonitorTotalSessionsReport](https://learn.microsoft.com/graph/api/intune-getRemoteAssistanceMonitorTotalSessionsReport?view=graph-rest-beta) resource.",
+          "Description": "Added the getRemoteAssistanceMonitorTotalSessionsReport method to the getRemoteAssistanceMonitorTotalSessionsReport resource.",
           "Target": "getRemoteAssistanceMonitorTotalSessionsReport"
         },
         {
@@ -4997,7 +4997,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "getRemoteAssistanceSessionsReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getRemoteAssistanceSessionsReport](https://learn.microsoft.com/graph/api/intune-getRemoteAssistanceSessionsReport?view=graph-rest-beta) method to the [getRemoteAssistanceSessionsReport](https://learn.microsoft.com/graph/api/intune-getRemoteAssistanceSessionsReport?view=graph-rest-beta) resource.",
+          "Description": "Added the getRemoteAssistanceSessionsReport method to the getRemoteAssistanceSessionsReport resource.",
           "Target": "getRemoteAssistanceSessionsReport"
         },
         {
@@ -5029,7 +5029,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "queryByPlatformType",
           "ChangeType": "Addition",
-          "Description": "Added the [queryByPlatformType](https://learn.microsoft.com/graph/api/intune-queryByPlatformType?view=graph-rest-beta) method to the [queryByPlatformType](https://learn.microsoft.com/graph/api/intune-queryByPlatformType?view=graph-rest-beta) resource.",
+          "Description": "Added the queryByPlatformType method to the queryByPlatformType resource.",
           "Target": "queryByPlatformType"
         },
         {
@@ -5133,7 +5133,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "executeAction",
           "ChangeType": "Deletion",
-          "Description": "Removed the **executeAction** method from the [executeAction](https://learn.microsoft.com/graph/api/intune-executeAction?view=graph-rest-beta) resource.",
+          "Description": "Removed the **executeAction** method from the executeAction resource.",
           "Target": "executeAction"
         },
         {
@@ -5141,7 +5141,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "executeAction",
           "ChangeType": "Addition",
-          "Description": "Added the [executeAction](https://learn.microsoft.com/graph/api/intune-executeAction?view=graph-rest-beta) method to the [executeAction](https://learn.microsoft.com/graph/api/intune-executeAction?view=graph-rest-beta) resource.",
+          "Description": "Added the executeAction method to the executeAction resource.",
           "Target": "executeAction"
         },
         {
@@ -5165,7 +5165,7 @@
           "ApiChange": "ComplexType",
           "ChangedApiName": "deviceManagementConfigurationExchangeOnlineSettingApplicability",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementConfigurationExchangeOnlineSettingApplicability](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationExchangeOnlineSettingApplicability?view=graph-rest-beta) resource type.",
+          "Description": "Added the deviceManagementConfigurationExchangeOnlineSettingApplicability resource type.",
           "Target": "deviceManagementConfigurationExchangeOnlineSettingApplicability"
         },
         {
@@ -5189,7 +5189,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "getCompliancePoliciesReportForDevice",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompliancePoliciesReportForDevice](https://learn.microsoft.com/graph/api/intune-getCompliancePoliciesReportForDevice?view=graph-rest-beta) method to the [getCompliancePoliciesReportForDevice](https://learn.microsoft.com/graph/api/intune-getCompliancePoliciesReportForDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the getCompliancePoliciesReportForDevice method to the getCompliancePoliciesReportForDevice resource.",
           "Target": "getCompliancePoliciesReportForDevice"
         },
         {
@@ -5197,7 +5197,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "getCompliancePolicyDevicesReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompliancePolicyDevicesReport](https://learn.microsoft.com/graph/api/intune-getCompliancePolicyDevicesReport?view=graph-rest-beta) method to the [getCompliancePolicyDevicesReport](https://learn.microsoft.com/graph/api/intune-getCompliancePolicyDevicesReport?view=graph-rest-beta) resource.",
+          "Description": "Added the [getCompliancePolicyDevicesReport](https://learn.microsoft.com/graph/api/intune-getCompliancePolicyDevicesReport?view=graph-rest-beta) method to the getCompliancePolicyDevicesReport resource.",
           "Target": "getCompliancePolicyDevicesReport"
         },
         {
