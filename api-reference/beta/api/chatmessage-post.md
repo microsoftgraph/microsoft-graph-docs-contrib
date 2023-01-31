@@ -1419,6 +1419,18 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+
+# [JavaScript](#tab/javascript)
+
+# [Java](#tab/java)
+
+# [Go](#tab/go)
+
+# [PowerShell](#tab/powershell)
+
+# [PHP](#tab/php)
+
 ---
 
 #### Response
