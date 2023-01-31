@@ -17,7 +17,7 @@ Retrieve the list of [callTranscript](../resources/calltranscript.md) objects as
 
 > **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
->**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](../../../concepts/known-issues-teams-graph.md) 
+>**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](../../../concepts/known-issues-teamwork-communications.md) 
 
 ## Permissions
 

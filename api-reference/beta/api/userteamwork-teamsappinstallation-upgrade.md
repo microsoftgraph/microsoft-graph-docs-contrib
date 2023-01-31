@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Upgrade an [app installation](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md) to the latest version of the app.
 
->**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](../../../concepts/known-issues-teams-graph.md) 
+>**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](../../../concepts/known-issues-teamwork-communications.md) 
 
 ## Permissions
 
