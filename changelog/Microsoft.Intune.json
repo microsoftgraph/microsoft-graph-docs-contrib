@@ -5197,7 +5197,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "getCompliancePolicyDevicesReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompliancePolicyDevicesReport](https://learn.microsoft.com/graph/api/intune-getCompliancePolicyDevicesReport?view=graph-rest-beta) method to the getCompliancePolicyDevicesReport resource.",
+          "Description": "Added the getCompliancePolicyDevicesReport method to the getCompliancePolicyDevicesReport resource.",
           "Target": "getCompliancePolicyDevicesReport"
         },
         {
@@ -5205,7 +5205,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "getCompliancePolicyDeviceSummaryReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompliancePolicyDeviceSummaryReport](https://learn.microsoft.com/graph/api/intune-getCompliancePolicyDeviceSummaryReport?view=graph-rest-beta) method to the [getCompliancePolicyDeviceSummaryReport](https://learn.microsoft.com/graph/api/intune-getCompliancePolicyDeviceSummaryReport?view=graph-rest-beta) resource.",
+          "Description": "Added the getCompliancePolicyDeviceSummaryReport method to the getCompliancePolicyDeviceSummaryReport resource.",
           "Target": "getCompliancePolicyDeviceSummaryReport"
         },
         {
@@ -5471,7 +5471,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "appGroupType",
           "ChangeType": "Addition",
-          "Description": "Added the **appGroupType** parameter to the [targetApps](https://learn.microsoft.com/graph/api/intune-targetedManagedAppConfiguration-targetApps?view=graph-rest-beta) method.",
+          "Description": "Added the **appGroupType** parameter to the targetApps method.",
           "Target": "targetApps"
         },
         {
@@ -5759,7 +5759,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsCloudIdentityDevicesSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsCloudIdentityDevicesSummary](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsCloudIdentityDevicesSummary?view=graph-rest-beta) resource type.",
+          "Description": "Added the userExperienceAnalyticsCloudIdentityDevicesSummary resource type.",
           "Target": "userExperienceAnalyticsCloudIdentityDevicesSummary"
         },
         {
@@ -5839,7 +5839,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceEnrollmentPlatformRestrictionConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceEnrollmentPlatformRestrictionConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceEnrollmentPlatformRestrictionConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the deviceEnrollmentPlatformRestrictionConfiguration resource type.",
           "Target": "deviceEnrollmentPlatformRestrictionConfiguration"
         },
         {
@@ -5855,7 +5855,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getEnrollmentConfigurationPoliciesByDevice",
           "ChangeType": "Addition",
-          "Description": "Added the [getEnrollmentConfigurationPoliciesByDevice](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getEnrollmentConfigurationPoliciesByDevice?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Added the getEnrollmentConfigurationPoliciesByDevice method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6039,7 +6039,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "payloadCompatibleAssignmentFilter",
           "ChangeType": "Addition",
-          "Description": "Added the [payloadCompatibleAssignmentFilter](https://learn.microsoft.com/graph/api/resources/intune-payloadCompatibleAssignmentFilter?view=graph-rest-beta) resource type.",
+          "Description": "Added the payloadCompatibleAssignmentFilter resource type.",
           "Target": "payloadCompatibleAssignmentFilter"
         },
         {
@@ -6047,7 +6047,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assignmentFilterSupportedProperty",
           "ChangeType": "Addition",
-          "Description": "Added the [assignmentFilterSupportedProperty](https://learn.microsoft.com/graph/api/resources/intune-assignmentFilterSupportedProperty?view=graph-rest-beta) resource type.",
+          "Description": "Added the assignmentFilterSupportedProperty resource type.",
           "Target": "assignmentFilterSupportedProperty"
         },
         {
@@ -6071,7 +6071,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPlatformSupportedProperties",
           "ChangeType": "Addition",
-          "Description": "Added the [getPlatformSupportedProperties](https://learn.microsoft.com/graph/api/intune-deviceAndAppManagementAssignmentFilter-getPlatformSupportedProperties?view=graph-rest-beta) method to the [deviceAndAppManagementAssignmentFilter](https://learn.microsoft.com/graph/api/resources/intune-deviceAndAppManagementAssignmentFilter?view=graph-rest-beta) resource.",
+          "Description": "Added the getPlatformSupportedProperties method to the deviceAndAppManagementAssignmentFilter resource.",
           "Target": "deviceAndAppManagementAssignmentFilter"
         },
         {
@@ -6079,7 +6079,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getSupportedProperties",
           "ChangeType": "Addition",
-          "Description": "Added the [getSupportedProperties](https://learn.microsoft.com/graph/api/intune-deviceAndAppManagementAssignmentFilter-getSupportedProperties?view=graph-rest-beta) method to the [deviceAndAppManagementAssignmentFilter](https://learn.microsoft.com/graph/api/resources/intune-deviceAndAppManagementAssignmentFilter?view=graph-rest-beta) resource.",
+          "Description": "Added the getSupportedProperties method to the deviceAndAppManagementAssignmentFilter resource.",
           "Target": "deviceAndAppManagementAssignmentFilter"
         },
         {
@@ -6113,7 +6113,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementReports",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource type.",
+          "Description": "Added the deviceManagementReports resource type.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6121,7 +6121,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementExportJob",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementExportJob](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementExportJob?view=graph-rest-1.0) resource type.",
+          "Description": "Added the deviceManagementExportJob resource type.",
           "Target": "deviceManagementExportJob"
         },
         {
@@ -6153,7 +6153,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getDeviceNonComplianceReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getDeviceNonComplianceReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getDeviceNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getDeviceNonComplianceReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6161,7 +6161,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPolicyNonComplianceReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getPolicyNonComplianceReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getPolicyNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getPolicyNonComplianceReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6169,7 +6169,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPolicyNonComplianceMetadata",
           "ChangeType": "Addition",
-          "Description": "Added the [getPolicyNonComplianceMetadata](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getPolicyNonComplianceMetadata?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getPolicyNonComplianceMetadata method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6177,7 +6177,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPolicyNonComplianceSummaryReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getPolicyNonComplianceSummaryReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getPolicyNonComplianceSummaryReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getPolicyNonComplianceSummaryReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6185,7 +6185,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getSettingNonComplianceReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getSettingNonComplianceReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getSettingNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getSettingNonComplianceReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6193,7 +6193,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getReportFilters",
           "ChangeType": "Addition",
-          "Description": "Added the [getReportFilters](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getReportFilters?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getReportFilters method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6201,7 +6201,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getHistoricalReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getHistoricalReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getHistoricalReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getHistoricalReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6209,7 +6209,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getConfigurationPolicyNonComplianceSummaryReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getConfigurationPolicyNonComplianceSummaryReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getConfigurationPolicyNonComplianceSummaryReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getConfigurationPolicyNonComplianceSummaryReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
