@@ -1025,7 +1025,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "routeExcludes",
           "ChangeType": "Addition",
-          "Description": "Added the `routeExcludes` property to the [microsoftTunnelConfiguration](https://learn.microsoft.com/graph/api/resources/microsoftTunnelConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the `routeExcludes` property to the microsoftTunnelConfiguration resource.",
           "Target": "microsoftTunnelConfiguration"
         },
         {
