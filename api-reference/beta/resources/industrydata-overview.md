@@ -68,6 +68,14 @@ You can integrate industry data APIs with 3rd-party apps. To enable this integra
 - For permissions via a consent process, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 - For steps to resolve common errors, see [Resolve Microsoft Graph authorization errors](/graph/resolve-auth-errors).
 
+## Common use cases
+
+| Use cases                                                   | REST resources                                                                | See also                                                                                         |
+| :---------------------------------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
+| Define a source of inbound data                             | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | [Methods of sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md#methods) |
+| Create a connector to retrieve data from an Azure Data Lake | [azureDataLakeConnector](../resources/industrydata-azureDataLakeConnector.md) | [Methods of azureDataLakeConnector](../resources/industrydata-azureDataLakeConnector.md#methods) |
+| Create an activity to import a fdelimited data set          | [inboundFileFlow](../resources/industrydata-inboundFileFlow.md)               | [Methods of inboundFileFlow](../resources/industrydata-inboundFileFlow.md#methods)               |
+
 ## Concepts
 
 Industry data APIs power School Data Sync which is a data transformation engine. It imports data sets from external sources (SIS/SMS), transforms the data into a common data model, and writes the transformed data to various external services, like users and groups to Azure AD, and ability to create a team based group.

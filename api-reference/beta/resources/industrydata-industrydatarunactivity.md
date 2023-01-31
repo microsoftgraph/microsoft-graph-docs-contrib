@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base type for all activity types. This resource represents the current or file state of the activity within a single [industryDataRun](industrydata-industrydatarun.md).
+An abstract base type for all activity types. This resource represents the current or file state of the activity within a single [industryDataRun](industrydata-industrydatarun.md). Possible statuses for a run are:
 
 - `inProgress`: The current [industryDataRun](industrydata-industrydatarun.md) is running the activity.
 - `completed`: The activity was successfully run.
@@ -26,16 +26,16 @@ Base type of [inboundFlowActivity](../resources/industrydata-inboundflowactivity
 
 ## Properties
 
-| Property      | Type                                          | Description                                                                                                                                                                        |
-| :------------ | :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockingError | [microsoft.graph.publicError](publicerror.md) | An error object to diagnose critical failures in an activity.                                                                                                                      |
-| displayName   | String                                        | The name of the running flow.                                                                                                                                                      |
-| status        | microsoft.graph.industryData.industryDataActivityStatus                    | The current status of the activity. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| Property      | Type                                                    | Description                                                                                                                                                                        |
+| :------------ | :------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| blockingError | [microsoft.graph.publicError](publicerror.md)           | An error object to diagnose critical failures in an activity.                                                                                                                      |
+| displayName   | String                                                  | The name of the running flow.                                                                                                                                                      |
+| status        | microsoft.graph.industryData.industryDataActivityStatus | The current status of the activity. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 
-| Relationship | Type                                                         | Description                      |
-| :----------- | :----------------------------------------------------------- | :------------------------------- |
+| Relationship | Type                                                                                      | Description                             |
+| :----------- | :---------------------------------------------------------------------------------------- | :-------------------------------------- |
 | activity     | [microsoft.graph.industryData.industryDataActivity](industrydata-industrydataactivity.md) | The flow that was run by this activity. |
 
 ## JSON representation
