@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aggregatedInboundStatistics",
           "ChangeType": "Addition",
-          "Description": "Added the [aggregatedInboundStatistics](https://learn.microsoft.com/en-us/graph/api/resources/aggregatedInboundStatistics?view=graph-rest-beta) resource",
+          "Description": "Added the [aggregatedInboundStatistics](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-aggregatedInboundStatistics?view=graph-rest-beta) resource",
           "Target": "aggregatedInboundStatistics"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileUploadSession",
           "ChangeType": "Addition",
-          "Description": "Added the [fileUploadSession](https://learn.microsoft.com/en-us/graph/api/resources/fileUploadSession?view=graph-rest-beta) resource",
+          "Description": "Added the [fileUploadSession](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-fileUploadSession?view=graph-rest-beta) resource",
           "Target": "fileUploadSession"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identifierTypeReferenceValue",
           "ChangeType": "Addition",
-          "Description": "Added the [identifierTypeReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/identifierTypeReferenceValue?view=graph-rest-beta) resource",
+          "Description": "Added the [identifierTypeReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-identifierTypeReferenceValue?view=graph-rest-beta) resource",
           "Target": "identifierTypeReferenceValue"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inboundActivityResults",
           "ChangeType": "Addition",
-          "Description": "Added the [inboundActivityResults](https://learn.microsoft.com/en-us/graph/api/resources/inboundActivityResults?view=graph-rest-beta) resource",
+          "Description": "Added the [inboundActivityResults](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-inboundActivityResults?view=graph-rest-beta) resource",
           "Target": "inboundActivityResults"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataActivityStatistics",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataActivityStatistics](https://learn.microsoft.com/en-us/graph/api/resources/industryDataActivityStatistics?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataActivityStatistics](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataActivityStatistics?view=graph-rest-beta) resource",
           "Target": "industryDataActivityStatistics"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataRunEntityCountMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataRunEntityCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/industryDataRunEntityCountMetric?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataRunEntityCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRunEntityCountMetric?view=graph-rest-beta) resource",
           "Target": "industryDataRunEntityCountMetric"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataRunRoleCountMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataRunRoleCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/industryDataRunRoleCountMetric?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataRunRoleCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRunRoleCountMetric?view=graph-rest-beta) resource",
           "Target": "industryDataRunRoleCountMetric"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataRunStatistics",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataRunStatistics](https://learn.microsoft.com/en-us/graph/api/resources/industryDataRunStatistics?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataRunStatistics](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRunStatistics?view=graph-rest-beta) resource",
           "Target": "industryDataRunStatistics"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "referenceValue",
           "ChangeType": "Addition",
-          "Description": "Added the [referenceValue](https://learn.microsoft.com/en-us/graph/api/resources/referenceValue?view=graph-rest-beta) resource",
+          "Description": "Added the [referenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-referenceValue?view=graph-rest-beta) resource",
           "Target": "referenceValue"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roleReferenceValue",
           "ChangeType": "Addition",
-          "Description": "Added the [roleReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/roleReferenceValue?view=graph-rest-beta) resource",
+          "Description": "Added the [roleReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-roleReferenceValue?view=graph-rest-beta) resource",
           "Target": "roleReferenceValue"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userMatchingSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [userMatchingSetting](https://learn.microsoft.com/en-us/graph/api/resources/userMatchingSetting?view=graph-rest-beta) resource",
+          "Description": "Added the [userMatchingSetting](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-userMatchingSetting?view=graph-rest-beta) resource",
           "Target": "userMatchingSetting"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userMatchTargetReferenceValue",
           "ChangeType": "Addition",
-          "Description": "Added the [userMatchTargetReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/userMatchTargetReferenceValue?view=graph-rest-beta) resource",
+          "Description": "Added the [userMatchTargetReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-userMatchTargetReferenceValue?view=graph-rest-beta) resource",
           "Target": "userMatchTargetReferenceValue"
         },
         {
@@ -135,7 +135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "yearReferenceValue",
           "ChangeType": "Addition",
-          "Description": "Added the [yearReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/yearReferenceValue?view=graph-rest-beta) resource",
+          "Description": "Added the [yearReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-yearReferenceValue?view=graph-rest-beta) resource",
           "Target": "yearReferenceValue"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureDataLakeConnector",
           "ChangeType": "Addition",
-          "Description": "Added the [azureDataLakeConnector](https://learn.microsoft.com/en-us/graph/api/resources/azureDataLakeConnector?view=graph-rest-beta) resource",
+          "Description": "Added the [azureDataLakeConnector](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-azureDataLakeConnector?view=graph-rest-beta) resource",
           "Target": "azureDataLakeConnector"
         },
         {
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileDataConnector",
           "ChangeType": "Addition",
-          "Description": "Added the [fileDataConnector](https://learn.microsoft.com/en-us/graph/api/resources/fileDataConnector?view=graph-rest-beta) resource",
+          "Description": "Added the [fileDataConnector](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-fileDataConnector?view=graph-rest-beta) resource",
           "Target": "fileDataConnector"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileValidateOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [fileValidateOperation](https://learn.microsoft.com/en-us/graph/api/resources/fileValidateOperation?view=graph-rest-beta) resource",
+          "Description": "Added the [fileValidateOperation](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-fileValidateOperation?view=graph-rest-beta) resource",
           "Target": "fileValidateOperation"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inboundFileFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [inboundFileFlow](https://learn.microsoft.com/en-us/graph/api/resources/inboundFileFlow?view=graph-rest-beta) resource",
+          "Description": "Added the [inboundFileFlow](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-inboundFileFlow?view=graph-rest-beta) resource",
           "Target": "inboundFileFlow"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inboundFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [inboundFlow](https://learn.microsoft.com/en-us/graph/api/resources/inboundFlow?view=graph-rest-beta) resource",
+          "Description": "Added the [inboundFlow](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-inboundFlow?view=graph-rest-beta) resource",
           "Target": "inboundFlow"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inboundFlowActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [inboundFlowActivity](https://learn.microsoft.com/en-us/graph/api/resources/inboundFlowActivity?view=graph-rest-beta) resource",
+          "Description": "Added the [inboundFlowActivity](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-inboundFlowActivity?view=graph-rest-beta) resource",
           "Target": "inboundFlowActivity"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataActivity](https://learn.microsoft.com/en-us/graph/api/resources/industryDataActivity?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataActivity](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataActivity?view=graph-rest-beta) resource",
           "Target": "industryDataActivity"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataConnector",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataConnector](https://learn.microsoft.com/en-us/graph/api/resources/industryDataConnector?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataConnector](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataConnector?view=graph-rest-beta) resource",
           "Target": "industryDataConnector"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataRoot](https://learn.microsoft.com/en-us/graph/api/resources/industryDataRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataRoot](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRoot?view=graph-rest-beta) resource",
           "Target": "industryDataRoot"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataRun",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataRun](https://learn.microsoft.com/en-us/graph/api/resources/industryDataRun?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataRun](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRun?view=graph-rest-beta) resource",
           "Target": "industryDataRun"
         },
         {
@@ -223,7 +223,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "industryDataRunActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [industryDataRunActivity](https://learn.microsoft.com/en-us/graph/api/resources/industryDataRunActivity?view=graph-rest-beta) resource",
+          "Description": "Added the [industryDataRunActivity](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRunActivity?view=graph-rest-beta) resource",
           "Target": "industryDataRunActivity"
         },
         {
@@ -231,7 +231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "outboundFlowActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [outboundFlowActivity](https://learn.microsoft.com/en-us/graph/api/resources/outboundFlowActivity?view=graph-rest-beta) resource",
+          "Description": "Added the [outboundFlowActivity](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-outboundFlowActivity?view=graph-rest-beta) resource",
           "Target": "outboundFlowActivity"
         },
         {
@@ -239,7 +239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "referenceDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [referenceDefinition](https://learn.microsoft.com/en-us/graph/api/resources/referenceDefinition?view=graph-rest-beta) resource",
+          "Description": "Added the [referenceDefinition](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-referenceDefinition?view=graph-rest-beta) resource",
           "Target": "referenceDefinition"
         },
         {
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roleGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [roleGroup](https://learn.microsoft.com/en-us/graph/api/resources/roleGroup?view=graph-rest-beta) resource",
+          "Description": "Added the [roleGroup](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-roleGroup?view=graph-rest-beta) resource",
           "Target": "roleGroup"
         },
         {
@@ -255,7 +255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sourceSystemDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [sourceSystemDefinition](https://learn.microsoft.com/en-us/graph/api/resources/sourceSystemDefinition?view=graph-rest-beta) resource",
+          "Description": "Added the [sourceSystemDefinition](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-sourceSystemDefinition?view=graph-rest-beta) resource",
           "Target": "sourceSystemDefinition"
         },
         {
@@ -263,7 +263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "validateOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [validateOperation](https://learn.microsoft.com/en-us/graph/api/resources/validateOperation?view=graph-rest-beta) resource",
+          "Description": "Added the [validateOperation](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-validateOperation?view=graph-rest-beta) resource",
           "Target": "validateOperation"
         },
         {
@@ -271,7 +271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "yearTimePeriodDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [yearTimePeriodDefinition](https://learn.microsoft.com/en-us/graph/api/resources/yearTimePeriodDefinition?view=graph-rest-beta) resource",
+          "Description": "Added the [yearTimePeriodDefinition](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-yearTimePeriodDefinition?view=graph-rest-beta) resource",
           "Target": "yearTimePeriodDefinition"
         },
         {
@@ -279,7 +279,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "validate",
           "ChangeType": "Addition",
-          "Description": "Added the [validate](https://learn.microsoft.com/en-us/graph/api/validate?view=graph-rest-beta) resource",
+          "Description": "Added the [validate](https://learn.microsoft.com/en-us/graph/api/industrydata-industrydataconnector-validate?view=graph-rest-beta) resource",
           "Target": "validate"
         },
         {
@@ -287,7 +287,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getStatistics",
           "ChangeType": "Addition",
-          "Description": "Added the [getStatistics](https://learn.microsoft.com/en-us/graph/api/getStatistics?view=graph-rest-beta) resource",
+          "Description": "Added the [getStatistics](https://learn.microsoft.com/en-us/graph/api/industrydata-industrydatarun-getstatistics?view=graph-rest-beta) resource",
           "Target": "getStatistics"
         },
         {
@@ -295,7 +295,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getUploadSession",
           "ChangeType": "Addition",
-          "Description": "Added the [getUploadSession](https://learn.microsoft.com/en-us/graph/api/getUploadSession?view=graph-rest-beta) resource",
+          "Description": "Added the [getUploadSession](https://learn.microsoft.com/en-us/graph/api/industrydata-azuredatalakeconnector-getuploadsession?view=graph-rest-beta) resource",
           "Target": "getUploadSession"
         }
       ],
