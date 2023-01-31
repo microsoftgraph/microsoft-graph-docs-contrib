@@ -1597,7 +1597,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getZebraFotaDeploymentReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getZebraFotaDeploymentReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Description": "Added the getZebraFotaDeploymentReport method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -1613,7 +1613,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "createRemoteHelpSessionResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [createRemoteHelpSessionResponse](https://learn.microsoft.com/graph/api/resources/intune-createRemoteHelpSessionResponse?view=graph-rest-beta) resource",
+          "Description": "Added the createRemoteHelpSessionResponse resource",
           "Target": "createRemoteHelpSessionResponse"
         },
         {
@@ -1621,7 +1621,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedDevice",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-beta) resource",
+          "Description": "Added the managedDevice resource",
           "Target": "managedDevice"
         },
         {
@@ -1629,7 +1629,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "requestRemoteHelpSessionAccessResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [requestRemoteHelpSessionAccessResponse](https://learn.microsoft.com/graph/api/resources/intune-requestRemoteHelpSessionAccessResponse?view=graph-rest-beta) resource",
+          "Description": "Added the requestRemoteHelpSessionAccessResponse resource",
           "Target": "requestRemoteHelpSessionAccessResponse"
         },
         {
@@ -1637,7 +1637,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retrieveRemoteHelpSessionResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveRemoteHelpSessionResponse](https://learn.microsoft.com/graph/api/resources/intune-retrieveRemoteHelpSessionResponse?view=graph-rest-beta) resource",
+          "Description": "Added the retrieveRemoteHelpSessionResponse resource",
           "Target": "retrieveRemoteHelpSessionResponse"
         },
         {
@@ -1645,7 +1645,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createRemoteHelpSession",
           "ChangeType": "Addition",
-          "Description": "Added the [createRemoteHelpSession](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the createRemoteHelpSession method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -1653,7 +1653,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "requestRemoteHelpSessionAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [requestRemoteHelpSessionAccess](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the requestRemoteHelpSessionAccess method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -1661,7 +1661,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllowedRemoteHelpActions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllowedRemoteHelpActions](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the getAllowedRemoteHelpActions method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -1669,7 +1669,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveRemoteHelpSession",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveRemoteHelpSession](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the retrieveRemoteHelpSession method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -1711,7 +1711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsDevicePerformance",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsDevicePerformance](https://learn.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsDevicePerformance?view=graph-rest-1.0) resource",
+          "Description": "Added the userExperienceAnalyticsDevicePerformance resource",
           "Target": "userExperienceAnalyticsDevicePerformance"
         },
         {
@@ -1793,7 +1793,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidDeviceOwnerSilentCertificateAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [androidDeviceOwnerSilentCertificateAccess](https://learn.microsoft.com/graph/api/resources/intune-androidDeviceOwnerSilentCertificateAccess?view=graph-rest-beta) resource type.",
+          "Description": "Added the androidDeviceOwnerSilentCertificateAccess resource type.",
           "Target": "androidDeviceOwnerSilentCertificateAccess"
         },
         {
@@ -1913,7 +1913,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationTemplates",
           "ChangeType": "Addition",
-          "Description": "Added the `notificationTemplates` property to the [deviceEnrollmentNotificationConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceEnrollmentNotificationConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the `notificationTemplates` property to the deviceEnrollmentNotificationConfiguration resource.",
           "Target": "deviceEnrollmentNotificationConfiguration"
         },
         {
@@ -1921,7 +1921,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerliftDownloadRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [powerliftDownloadRequest](https://learn.microsoft.com/graph/api/resources/intune-powerliftDownloadRequest?view=graph-rest-beta) resource type.",
+          "Description": "Added the powerliftDownloadRequest resource type.",
           "Target": "powerliftDownloadRequest"
         },
         {
@@ -1929,7 +1929,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerliftIncidentMetadata",
           "ChangeType": "Addition",
-          "Description": "Added the [powerliftIncidentMetadata](https://learn.microsoft.com/graph/api/resources/intune-powerliftIncidentMetadata?view=graph-rest-beta) resource type.",
+          "Description": "Added the powerliftIncidentMetadata resource type.",
           "Target": "powerliftIncidentMetadata"
         },
         {
@@ -1937,7 +1937,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "downloadAppDiagnostics",
           "ChangeType": "Addition",
-          "Description": "Added the [downloadAppDiagnostics](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the downloadAppDiagnostics method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -1945,7 +1945,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "appDiagnostics",
           "ChangeType": "Addition",
-          "Description": "Added the [appDiagnostics](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the appDiagnostics method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -1961,7 +1961,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayName",
           "ChangeType": "Addition",
-          "Description": "Added the `displayName` property to the [androidFotaDeploymentAssignment](https://learn.microsoft.com/graph/api/resources/intune-androidFotaDeploymentAssignment?view=graph-rest-beta) resource.",
+          "Description": "Added the `displayName` property to the androidFotaDeploymentAssignment resource.",
           "Target": "androidFotaDeploymentAssignment"
         },
         {
@@ -1969,7 +1969,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "description",
           "ChangeType": "Addition",
-          "Description": "Added the `description` property to the [zebraFotaArtifact](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaArtifact?view=graph-rest-beta) resource.",
+          "Description": "Added the `description` property to the zebraFotaArtifact resource.",
           "Target": "zebraFotaArtifact"
         },
         {
@@ -2009,7 +2009,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "groupPolicyUploadedPresentation",
           "ChangeType": "Addition",
-          "Description": "Added the [groupPolicyUploadedPresentation](https://learn.microsoft.com/graph/api/resources/intune-groupPolicyUploadedPresentation?view=graph-rest-beta) resource",
+          "Description": "Added the groupPolicyUploadedPresentation resource",
           "Target": "groupPolicyUploadedPresentation"
         },
         {
@@ -2017,7 +2017,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enableCertificatePinning",
           "ChangeType": "Addition",
-          "Description": "Added the `enableCertificatePinning` property to the [microsoftTunnelSite](https://learn.microsoft.com/graph/api/resources/microsoftTunnelSite?view=graph-rest-beta) resource.",
+          "Description": "Added the `enableCertificatePinning` property to the microsoftTunnelSite resource.",
           "Target": "microsoftTunnelSite"
         },
         {
@@ -2077,7 +2077,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getNoncompliantDevicesAndSettingsReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getNoncompliantDevicesAndSettingsReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getnoncompliantdevicesandsettingsreport?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-androidfotaservice-devicemanagementreports?view=graph-rest-beta) resource.",
+          "Description": "Added the [getNoncompliantDevicesAndSettingsReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getnoncompliantdevicesandsettingsreport?view=graph-rest-beta) method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -2335,7 +2335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsManagedAppProtection",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-windowsManagedAppProtection?view=graph-rest-beta) resource",
+          "Description": "Added the windowsManagedAppProtection resource",
           "Target": "windowsManagedAppProtection"
         },
         {
@@ -2359,7 +2359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementReports",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource",
+          "Description": "Added the deviceManagementReports resource",
           "Target": "deviceManagementReports"
         },
         {
@@ -2599,7 +2599,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "iosiPadOSWebClip",
           "ChangeType": "Addition",
-          "Description": "Added the [iosiPadOSWebClip](https://learn.microsoft.com/graph/api/resources/intune-iosiPadOSWebClip?view=graph-rest-beta) resource",
+          "Description": "Added the iosiPadOSWebClip resource",
           "Target": "iosiPadOSWebClip"
         },
         {
@@ -2607,7 +2607,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsWebApp",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsWebApp](https://learn.microsoft.com/graph/api/resources/intune-windowsWebApp?view=graph-rest-beta) resource",
+          "Description": "Added the windowsWebApp resource",
           "Target": "windowsWebApp"
         }
       ],
@@ -2761,7 +2761,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidFotaDeploymentAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [androidFotaDeploymentAssignment](https://learn.microsoft.com/graph/api/resources/intune-androidFotaDeploymentAssignment?view=graph-rest-beta) resource type.",
+          "Description": "Added the androidFotaDeploymentAssignment resource type.",
           "Target": "androidFotaDeploymentAssignment"
         },
         {
@@ -2769,7 +2769,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidFotaDeploymentAssignmentTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [androidFotaDeploymentAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-androidFotaDeploymentAssignmentTarget?view=graph-rest-beta) resource type.",
+          "Description": "Added the androidFotaDeploymentAssignmentTarget resource type.",
           "Target": "androidFotaDeploymentAssignmentTarget"
         },
         {
@@ -2825,7 +2825,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "zebraFotaDeploymentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [zebraFotaDeploymentSettings](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaDeploymentSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the zebraFotaDeploymentSettings resource type.",
           "Target": "zebraFotaDeploymentSettings"
         },
         {
@@ -2833,7 +2833,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "zebraFotaDeploymentStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [zebraFotaDeploymentStatus](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaDeploymentStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the zebraFotaDeploymentStatus resource type.",
           "Target": "zebraFotaDeploymentStatus"
         },
         {
@@ -2953,7 +2953,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "zebraFotaArtifact",
           "ChangeType": "Addition",
-          "Description": "Added the [zebraFotaArtifact](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaArtifact?view=graph-rest-beta) resource",
+          "Description": "Added the zebraFotaArtifact resource",
           "Target": "zebraFotaArtifact"
         },
         {
@@ -2961,7 +2961,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "zebraFotaConnector",
           "ChangeType": "Addition",
-          "Description": "Added the [zebraFotaConnector](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaConnector?view=graph-rest-beta) resource",
+          "Description": "Added the zebraFotaConnector resource",
           "Target": "zebraFotaConnector"
         },
         {
@@ -2969,7 +2969,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "zebraFotaDeployment",
           "ChangeType": "Addition",
-          "Description": "Added the [zebraFotaDeployment](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaDeployment?view=graph-rest-beta) resource",
+          "Description": "Added the zebraFotaDeployment resource",
           "Target": "zebraFotaDeployment"
         },
         {
