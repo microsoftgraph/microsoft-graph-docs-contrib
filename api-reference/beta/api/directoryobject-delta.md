@@ -57,6 +57,8 @@ Track changes for a directory object.
 GET /directoryObjects/delta?$filter=id eq '{id}'
 ```
 
+> **Note:** Id filtering is not supported on the `appRoleAssignment` resource.
+
 ### OData query parameters
 
 This method supports optional OData query parameters to help customize the response.
