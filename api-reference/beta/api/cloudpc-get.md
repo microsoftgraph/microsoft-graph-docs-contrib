@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 To get the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
 ``` http
-GET /me/cloudPCs{id}
+GET /me/cloudPCs/{id}
 GET /users/{userId}/cloudPCs/{id}
 ```
 

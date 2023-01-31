@@ -39,18 +39,18 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "name": "String",
-  "type": "String",
-  "isSearchable": "Boolean",
-  "isRetrievable": "Boolean",
-  "isQueryable": "Boolean",
-  "isRefinable": "Boolean",
   "aliases": [
     "String"
   ],
+  "isQueryable": "Boolean",
+  "isRefinable": "Boolean",
+  "isRetrievable": "Boolean",
+  "isSearchable": "Boolean",
   "labels": [
     "String"
-  ]
+  ],
+  "name": "String",
+  "type": "String"
 }
 ```
 

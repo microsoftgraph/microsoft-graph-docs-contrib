@@ -1,5 +1,5 @@
 ---
-title: "onPremisesApplicationSegment resource type"
+title: "onPremisesApplicationSegment resource type (deprecated)"
 description: "Represents onPremisesApplicationSegment object when publishing an on-premises wildcard application with Azure AD Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinshah"
@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
-# onPremisesApplicationSegment resource type
+# onPremisesApplicationSegment resource type (deprecated)
 
 Namespace: microsoft.graph
 
@@ -37,14 +37,13 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.onPremisesApplicationSegment",
-  "externalUrl": "String",
-  "internalUrl": "String",
   "alternateUrl": "String",
-  "corsConfigurations": [
+    "corsConfigurations": [
     {
       "@odata.type": "microsoft.graph.corsConfiguration"
     }
-  ]
+  ],
+  "externalUrl": "String",
+  "internalUrl": "String",
 }
 ```

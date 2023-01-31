@@ -33,10 +33,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fido2KeyRestrictions",
-  "isEnforced": "Boolean",
-  "enforcementType": "String",
   "aaGuids": [
     "String"
-  ]
+  ],
+  "enforcementType": "String",
+  "isEnforced": "Boolean"
 }
 ```
