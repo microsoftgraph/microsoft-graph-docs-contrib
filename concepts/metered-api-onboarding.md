@@ -65,7 +65,7 @@ Successful result example
 ```
 {
   "extendedLocation": null,
-  "id": "/subscriptions/ea52c74a-a217-45e6-a5a8-5ca8150a386a/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+  "id": "/subscriptions/c771ae10-b7c4-4030-a87e-cca9e154c340/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
   "identity": null,
   "kind": null,
   "location": "Global",
@@ -73,11 +73,18 @@ Successful result example
   "name": "myGraphAppBilling",
   "plan": null,
   "properties": {
-    "appId": "9cdd1e90-604c-4319-b329-5d204063e235",
-    "billingPlanId": "ca11ab5c-e527-4930-97d5-48f3ff0e128c"
+    "appId": "51aafae2-c3a6-4b94-8443-7ea2a66aa873",
+    "billingPlanId": "104e68e7-a17c-4474-a4e0-f633b8c3a19b",
+    "provisioningState": "Succeeded"
   },
   "resourceGroup": "myRG",
   "sku": null,
+  "systemData": {
+    "createdAt": "2023-01-31T00:12:20.7893671Z",
+    "createdByType": "User",
+    "lastModifiedAt": "2023-01-31T00:12:20.7893671Z",
+    "lastModifiedByType": "User"
+  },
   "tags": null,
   "type": "microsoft.graphservices/accounts"
 }
