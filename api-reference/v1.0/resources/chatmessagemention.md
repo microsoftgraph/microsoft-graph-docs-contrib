@@ -50,8 +50,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": 1024,
-  "mentionText": "string",
-  "mentioned": {"@odata.type": "microsoft.graph.chatMessageMentionedIdentitySet"}
+  "mentioned": {"@odata.type": "microsoft.graph.chatMessageMentionedIdentitySet"},
+  "mentionText": "string"
  }
 ```
 
