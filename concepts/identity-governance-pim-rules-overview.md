@@ -2,6 +2,8 @@
 title: "Overview of rules for Azure AD roles in privileged identity management (PIM) APIs"
 description: "Learn how Azure AD rules in PIM are structures in Microsoft Graph and how they map with Azure portal descriptions."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.prod: "governance"

@@ -74,15 +74,15 @@ The following is a JSON representation of the resource.
     "id":"String (identifier)",
     "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
     "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "returnedDateTime":"String (timestamp)",
+    "reassignedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "reassignedDateTime":"String (timestamp)",
     "resourcesFolderUrl":"String",
+    "returnedDateTime":"String (timestamp)",
     "status":"string",
     "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
     "submittedDateTime":"String (timestamp)",
     "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)",
-    "reassignedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "reassignedDateTime":"String (timestamp)"
+    "unsubmittedDateTime":"String (timestamp)"
 }
 ```
 

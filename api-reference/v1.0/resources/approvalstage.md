@@ -51,15 +51,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.approvalStage",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "status": "String",
   "assignedToMe": "Boolean",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "justification": "String",
   "reviewedBy": {
     "@odata.type": "microsoft.graph.identity"
   },
   "reviewedDateTime": "String (timestamp)",
   "reviewResult": "String",
-  "justification": "String"
+  "status": "String"
 }
 ```
