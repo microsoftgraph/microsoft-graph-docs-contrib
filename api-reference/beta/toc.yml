@@ -1916,7 +1916,6 @@ items:
         - name: Delete
           href: api/bookingstaffmember-delete.md 
     - name: Device and app management
-      expanded: true
       items:
       - name: Browser management (preview)
         displayName: Edge, Internet Explorer, IE mode, site list
@@ -22063,6 +22062,19 @@ items:
               href: api/industrydata-inboundflow-list.md
             - name: Update
               href: api/industrydata-inboundflow-update.md
+            - name: Inbound file flow
+              href: resources/industrydata-inboundfileflow.md
+              items:
+                - name: Create
+                  href: api/industrydata-inboundfileflow-post.md
+                - name: Delete
+                  href: api/industrydata-inboundfileflow-delete.md
+                - name: Get
+                  href: api/industrydata-inboundfileflow-get.md
+                - name: List
+                  href: api/industrydata-inboundfileflow-list.md
+                - name: Update
+                  href: api/industrydata-inboundfileflow-update.md              
         - name: Industry data connector
           href: resources/industrydata-industrydataconnector.md
           items:
@@ -22076,10 +22088,25 @@ items:
               href: api/industrydata-industrydataconnector-list.md
             - name: Update
               href: api/industrydata-industrydataconnector-update.md
-            - name: Get upload session
-              href: api/industrydata-azuredatalakeconnector-getuploadsession.md
             - name: Validate
               href: api/industrydata-industrydataconnector-validate.md
+            - name: Azure Data Lake Connector 
+              href: resources/industrydata-azureDataLakeConnector .md
+              items:
+                - name: Create
+                  href: api/industrydata-azureDataLakeConnector -post.md
+                - name: Delete
+                  href: api/industrydata-azureDataLakeConnector -delete.md
+                - name: Get
+                  href: api/industrydata-azureDataLakeConnector -get.md
+                - name: List
+                  href: api/industrydata-azureDataLakeConnector -list.md
+                - name: Update
+                  href: api/industrydata-azureDataLakeConnector -update.md
+                - name: Get upload session
+                  href: api/industrydata-azuredatalakeconnector-getuploadsession.md
+                - name: Validate
+                  href: api/industrydata-industrydataconnector-validate.md
         - name: Industry data run
           href: resources/industrydata-industrydatarun.md
           items:
