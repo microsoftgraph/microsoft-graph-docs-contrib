@@ -2,8 +2,11 @@
 title: "Review access to privileged roles using the access reviews API in Microsoft Graph"
 description: "Learn how to use the access reviews API to periodically review users and groups with access to privileged roles, including both active and eligible roles."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Review access to privileged roles using the access reviews API in Microsoft Graph

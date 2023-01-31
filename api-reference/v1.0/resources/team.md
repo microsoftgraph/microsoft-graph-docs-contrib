@@ -53,8 +53,9 @@ For more information about working with groups and members in teams, see [Use th
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
+| id | string | The unique identifier of the team. The group has the same ID as the team. This property is read-only, and is inherited from the base entity type. |
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
+|classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
 |description|string| An optional description for the team. Maximum length: 1024 characters. |
 |displayName|string| The name of the team. |
@@ -65,6 +66,7 @@ For more information about working with groups and members in teams, see [Use th
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
+|summary|[teamSummary](teamsummary.md)| Contains summary information about the team, including number of owners, members, and guests. |
 |tenantId |string | The ID of the Azure Active Directory tenant. |
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |

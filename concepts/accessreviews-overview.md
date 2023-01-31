@@ -2,9 +2,12 @@
 title: "Overview of the access reviews API" 
 description: "Use the access reviews API to programmatically review access to your Azure AD resources to ensure that the right identities have the right access to the right resources." 
 author: "FaithOmbongi" 
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium 
 ms.prod: "governance" 
 doc_type: conceptualPageType 
+ms.date: 08/24/2022
 --- 
 
 # Overview of the access reviews API

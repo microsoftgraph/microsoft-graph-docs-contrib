@@ -1,10 +1,13 @@
 ---
 title: "Configure the arguments for built-in Lifecycle Workflow tasks"
 description: "Configure the arguments for built-in Lifecycle Workflow tasks. Learn the allowed configurations for the arguments property of various built-in tasks in Lifecycle Workflows."
-author: "AlexFilipin"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: alexander.filipin
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 11/23/2022
 ---
 
 # Configure the arguments for built-in Lifecycle Workflow tasks

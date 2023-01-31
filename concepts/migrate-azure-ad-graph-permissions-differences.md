@@ -2,8 +2,11 @@
 title: "Permissions differences between Azure AD Graph and Microsoft Graph"
 description: "Describes permissions differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API (REST)."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Permissions differences between Azure AD Graph and Microsoft Graph

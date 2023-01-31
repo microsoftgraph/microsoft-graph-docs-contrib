@@ -1,9 +1,12 @@
 ---
 title: "Get incremental changes for users"
 description: "Use delta query to discover changes without fetching the entire set of users to compare changes. Example shows a series of requests to track changes to users."
-author: "jumasure"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/17/2022
 ---
 
 # Get incremental changes for users

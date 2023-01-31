@@ -1,10 +1,13 @@
 ---
 title: "Users in Microsoft Graph"
 description: "Use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user in your organization."
-author: "dkershaw10"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: yuan.karppanen
 ms.localizationpriority: high
 ms.prod: "users"
 ms.custom: scenarios:getting-started
+ms.date: 11/11/2022
 ---
 
 # Overview of users in Microsoft Graph
