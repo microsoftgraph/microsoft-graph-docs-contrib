@@ -7431,7 +7431,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getCompliancePolicyNonComplianceReport,deviceManagementReports",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompliancePolicyNonComplianceReport](/graph/api/intune-reporting-devicemanagementreports-getcompliancepolicynoncompliancereport?view=graph-rest-beta\u0026preserve-view=true) action on [deviceManagementReports](/graph/api/resources/intune-rapolicy-devicemanagementreports?view=graph-rest-beta\u0026preserve-view=true)",
+          "Description": "Added the getCompliancePolicyNonComplianceReport action on deviceManagementReports",
           "Target": "getCompliancePolicyNonComplianceReport,deviceManagementReports"
         },
         {
@@ -7439,7 +7439,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getComplianceSettingNonComplianceReport,deviceManagementReports",
           "ChangeType": "Addition",
-          "Description": "Added the [getComplianceSettingNonComplianceReport](/graph/api/intune-reporting-devicemanagementreports-getcompliancesettingnoncompliancereport?view=graph-rest-beta\u0026preserve-view=true) action on [deviceManagementReports](/graph/api/resources/intune-rapolicy-devicemanagementreports?view=graph-rest-beta\u0026preserve-view=true)",
+          "Description": "Added the getComplianceSettingNonComplianceReport action on deviceManagementReports",
           "Target": "getComplianceSettingNonComplianceReport,deviceManagementReports"
         },
         {
@@ -7447,7 +7447,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getAssignmentFiltersStatusDetails,deviceManagement",
           "ChangeType": "Addition",
-          "Description": "Added the [getAssignmentFiltersStatusDetails](/graph/api/intune-policyset-devicemanagement-getassignmentfiltersstatusdetails?view=graph-rest-beta\u0026preserve-view=true) action on [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta\u0026preserve-view=true)",
+          "Description": "Added the getAssignmentFiltersStatusDetails action on deviceManagement",
           "Target": "getAssignmentFiltersStatusDetails,deviceManagement"
         },
         {
@@ -7455,7 +7455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "validateFilter,deviceAndAppManagementAssignmentFilter",
           "ChangeType": "Addition",
-          "Description": "Added the [validateFilter](o:validateFilter:Collection(microsoft.graph.deviceAndAppManagementAssignmentFilter?view=graph-rest-beta\u0026preserve-view=true)?view=graph-rest-beta\u0026preserve-view=true) action on [deviceAndAppManagementAssignmentFilter](/graph/api/resources/intune-policyset-deviceandappmanagementassignmentfilter?view=graph-rest-beta\u0026preserve-view=true) collection",
+          "Description": "Added the validateFilter action on deviceAndAppManagementAssignmentFilter collection",
           "Target": "validateFilter,deviceAndAppManagementAssignmentFilter"
         },
         {
@@ -7463,7 +7463,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "summarizeDeviceResourcePerformance,userExperienceAnalyticsResourcePerformance",
           "ChangeType": "Addition",
-          "Description": "Added the [summarizeDeviceResourcePerformance](o:summarizeDeviceResourcePerformance:Collection(microsoft.graph.userExperienceAnalyticsResourcePerformance?view=graph-rest-beta\u0026preserve-view=true)?view=graph-rest-beta\u0026preserve-view=true) function on [userExperienceAnalyticsResourcePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsresourceperformance?view=graph-rest-beta\u0026preserve-view=true) collection",
+          "Description": "Added the summarizeDeviceResourcePerformance function on userExperienceAnalyticsResourcePerformance collection",
           "Target": "summarizeDeviceResourcePerformance,userExperienceAnalyticsResourcePerformance"
         },
         {
@@ -7471,7 +7471,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "kioskModeAppOrderEnabled,kioskModeAppsInFolderOrderedByName,kioskModeGridHeight,kioskModeGridWidth,kioskModeLockHomeScreen,kioskModeManagedFolders,kioskModeAppPositions",
           "ChangeType": "Addition",
-          "Description": "Added the **kioskModeAppOrderEnabled**, **kioskModeAppsInFolderOrderedByName**, **kioskModeGridHeight**, **kioskModeGridWidth**, **kioskModeLockHomeScreen**, **kioskModeManagedFolders** and **kioskModeAppPositions** properties to the [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **kioskModeAppOrderEnabled**, **kioskModeAppsInFolderOrderedByName**, **kioskModeGridHeight**, **kioskModeGridWidth**, **kioskModeLockHomeScreen**, **kioskModeManagedFolders** and **kioskModeAppPositions** properties to the androidDeviceOwnerGeneralDeviceConfiguration entity",
           "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
         },
         {
@@ -7479,7 +7479,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "workProfileAllowAppInstallsFromUnknownSources",
           "ChangeType": "Addition",
-          "Description": "Added the **workProfileAllowAppInstallsFromUnknownSources** property to the [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **workProfileAllowAppInstallsFromUnknownSources** property to the androidWorkProfileGeneralDeviceConfiguration entity",
           "Target": "androidWorkProfileGeneralDeviceConfiguration"
         },
         {
@@ -7487,7 +7487,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "associatedDomains",
           "ChangeType": "Addition",
-          "Description": "Added the **associatedDomains** property to the [appleVpnConfiguration](/graph/api/resources/intune-deviceconfig-applevpnconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **associatedDomains** property to the appleVpnConfiguration entity",
           "Target": "appleVpnConfiguration"
         },
         {
@@ -7495,7 +7495,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "windows10EnrollmentCompletionPageConfigurationId,deviceSetupStatus,accountSetupStatus",
           "ChangeType": "Addition",
-          "Description": "Added the **windows10EnrollmentCompletionPageConfigurationId**, **deviceSetupStatus** and **accountSetupStatus** properties to the [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **windows10EnrollmentCompletionPageConfigurationId**, **deviceSetupStatus** and **accountSetupStatus** properties to the deviceManagementAutopilotEvent entity",
           "Target": "deviceManagementAutopilotEvent"
         },
         {
@@ -7503,7 +7503,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "errorCode",
           "ChangeType": "Addition",
-          "Description": "Added the **errorCode** property to the [deviceManagementAutopilotPolicyStatusDetail](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **errorCode** property to the deviceManagementAutopilotPolicyStatusDetail entity",
           "Target": "deviceManagementAutopilotPolicyStatusDetail"
         },
         {
@@ -7511,7 +7511,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "uxBehavior",
           "ChangeType": "Addition",
-          "Description": "Added the **uxBehavior** property to the [deviceManagementConfigurationSettingDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **uxBehavior** property to the deviceManagementConfigurationSettingDefinition entity",
           "Target": "deviceManagementConfigurationSettingDefinition"
         },
         {
@@ -7519,7 +7519,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "blockMovingMessagesToOtherEmailAccounts,blockSendingEmailFromThirdPartyApps,blockSyncingRecentlyUsedEmailAddresses,requireSmime",
           "ChangeType": "Change",
-          "Description": "Changed the following properties on the [iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity: **blockMovingMessagesToOtherEmailAccounts** from required to optional, **blockSendingEmailFromThirdPartyApps** from required to optional, **blockSyncingRecentlyUsedEmailAddresses** from required to optional, **requireSmime** from required to optional, ",
+          "Description": "Changed the following properties on the iosEasEmailProfileConfiguration entity: **blockMovingMessagesToOtherEmailAccounts** from required to optional, **blockSendingEmailFromThirdPartyApps** from required to optional, **blockSyncingRecentlyUsedEmailAddresses** from required to optional, **requireSmime** from required to optional, ",
           "Target": "iosEasEmailProfileConfiguration"
         },
         {
@@ -7527,7 +7527,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applePersonalizedAdsBlocked",
           "ChangeType": "Addition",
-          "Description": "Added the **applePersonalizedAdsBlocked** property to the [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **applePersonalizedAdsBlocked** property to the iosGeneralDeviceConfiguration entity",
           "Target": "iosGeneralDeviceConfiguration"
         },
         {
@@ -7535,7 +7535,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "maximumRequiredOsVersion,maximumWarningOsVersion,maximumWipeOsVersion",
           "ChangeType": "Addition",
-          "Description": "Added the **maximumRequiredOsVersion**, **maximumWarningOsVersion** and **maximumWipeOsVersion** properties to the [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **maximumRequiredOsVersion**, **maximumWarningOsVersion** and **maximumWipeOsVersion** properties to the managedAppProtection entity",
           "Target": "managedAppProtection"
         },
         {
@@ -7543,7 +7543,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "dependsOnAppCount",
           "ChangeType": "Addition",
-          "Description": "Added the **dependsOnAppCount** property to the [mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **dependsOnAppCount** property to the mobileAppDependency entity",
           "Target": "mobileAppDependency"
         },
         {
@@ -7551,7 +7551,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "metricType",
           "ChangeType": "Addition",
-          "Description": "Added the **metricType** property to the [userExperienceAnalyticsMetricHistory](/graph/api/resources/intune-devices-userexperienceanalyticsmetrichistory?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **metricType** property to the userExperienceAnalyticsMetricHistory entity",
           "Target": "userExperienceAnalyticsMetricHistory"
         },
         {
@@ -7559,7 +7559,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "defenderBlockPersistenceThroughWmiType,applicationGuardAllowCameraMicrophoneRedirection,applicationGuardCertificateThumbprints",
           "ChangeType": "Addition",
-          "Description": "Added the **defenderBlockPersistenceThroughWmiType**, **applicationGuardAllowCameraMicrophoneRedirection** and **applicationGuardCertificateThumbprints** properties to the [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **defenderBlockPersistenceThroughWmiType**, **applicationGuardAllowCameraMicrophoneRedirection** and **applicationGuardCertificateThumbprints** properties to the windows10EndpointProtectionConfiguration entity",
           "Target": "windows10EndpointProtectionConfiguration"
         },
         {
@@ -7567,7 +7567,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "userExperienceAnalyticsDevicesWithoutCloudIdentity,userExperienceAnalyticsResourcePerformance,microsoftTunnelServerLogCollectionResponses,windowsQualityUpdateProfiles,windowsUpdateCatalogItems",
           "ChangeType": "Addition",
-          "Description": "Added the **userExperienceAnalyticsDevicesWithoutCloudIdentity**, **userExperienceAnalyticsResourcePerformance**, **microsoftTunnelServerLogCollectionResponses**, **windowsQualityUpdateProfiles** and **windowsUpdateCatalogItems** navigation properties to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **userExperienceAnalyticsDevicesWithoutCloudIdentity**, **userExperienceAnalyticsResourcePerformance**, **microsoftTunnelServerLogCollectionResponses**, **windowsQualityUpdateProfiles** and **windowsUpdateCatalogItems** navigation properties to the deviceManagement entity",
           "Target": "deviceManagement"
         },
         {
@@ -7575,7 +7575,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "assignmentFilterEvaluationStatusDetails",
           "ChangeType": "Addition",
-          "Description": "Added the **assignmentFilterEvaluationStatusDetails** navigation property to the [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **assignmentFilterEvaluationStatusDetails** navigation property to the managedDevice entity",
           "Target": "managedDevice"
         },
         {
@@ -7583,7 +7583,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationMethods",
           "ChangeType": "Addition",
-          "Description": "Added the **authenticationMethods** navigation property to the [reportRoot](/graph/api/resources/intune-shared-reportroot?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **authenticationMethods** navigation property to the reportRoot entity",
           "Target": "reportRoot"
         },
         {
@@ -7591,7 +7591,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "usageRights",
           "ChangeType": "Addition",
-          "Description": "Added the **usageRights** navigation property to the [user](/graph/api/resources/intune-shared-user?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **usageRights** navigation property to the user entity",
           "Target": "user"
         },
         {
@@ -7599,7 +7599,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resourcePerformanceMetrics,appHealthMetrics",
           "ChangeType": "Addition",
-          "Description": "Added the **resourcePerformanceMetrics** and **appHealthMetrics** navigation properties to the [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **resourcePerformanceMetrics** and **appHealthMetrics** navigation properties to the userExperienceAnalyticsBaseline entity",
           "Target": "userExperienceAnalyticsBaseline"
         },
         {
@@ -7607,7 +7607,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "v10_0,v11_0",
           "ChangeType": "Addition",
-          "Description": "Added the **v10_0** and **v11_0** properties to the [androidMinimumOperatingSystem](/graph/api/resources/intune-apps-androidminimumoperatingsystem?view=graph-rest-beta\u0026preserve-view=true) complex type",
+          "Description": "Added the **v10_0** and **v11_0** properties to the androidMinimumOperatingSystem complex type",
           "Target": "androidMinimumOperatingSystem"
         },
         {
