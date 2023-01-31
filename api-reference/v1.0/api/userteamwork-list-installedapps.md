@@ -16,7 +16,7 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
->**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](../../../concepts/teamwork-national-cloud-differences.md) 
+>**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](/graph/teamwork-national-cloud-differences) 
 
 ## Permissions
 

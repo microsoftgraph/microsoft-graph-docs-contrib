@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Uninstall an [app](../resources/teamsappinstallation.md) from the personal scope of the specified [user](../resources/user.md).
 
->**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](../../../concepts/teamwork-national-cloud-differences.md) 
+>**Note:** This API works differently in one or more national clouds. For details, see [national cloud behavior differences](/graph/teamwork-national-cloud-differences) 
 
 ## Permissions
 
