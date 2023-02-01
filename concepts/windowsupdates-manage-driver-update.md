@@ -9,13 +9,13 @@ doc_type: conceptualPageType
 
 # Manage driver approvals using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](windowsupdates-deployments) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on managing the deployments of driver updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update).  For information on deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](windowsupdates-deployments) of Windows 10 and Windows 11 feature updates, expedited security updates, and driver updates. This topic focuses on managing the deployments of driver updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update). For information about deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update).
 
 When devices enrolled in the Windows Update for Business deployment service scan Windows Update, the deployment service collects scan results of applicable drivers that are better than what is currently installed on the device.  The service then catalogs them to be browsed, approved, and scheduled for deployment.  Only content that has been approved using the deployment service will be offered to devices as long as it remains enrolled in driver management.
 
 ## Prerequisites
 
-* Devices meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).
+Devices must meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).
 
 ## Step 1: Enroll devices in driver management
 
@@ -52,9 +52,9 @@ HTTP/1.1 202 Accepted
 
 ## Step 2: Create a deployment audience for receiving updates
 
-Once devices are enrolled and managed by the deployement service they can be placed into audiences for a [deployment](/graph/api/resources/windowsupdates-deployment).  Deployment audiences specifies content to deploy, how and when to deploy the content, and the targeted devices.
+After devices are enrolled and managed by the deployement service, they can be placed into audiences for a [deployment](/graph/api/resources/windowsupdates-deployment).  Deployment audiences specify content to deploy, how and when to deploy the content, and the targeted devices.
 
-Below is an example of creating a deployment audience. The targeted devices are specified in the next step.
+The following example shows how to create a deployment audience. The targeted devices are specified in the next step.
 
 ### Request
 ```http
@@ -113,7 +113,7 @@ HTTP/1.1 202 Accepted
 
 ## Step 4: Create an update policy
 
-After devices are added to a deployment audience, you can create an [update policy](/graph/api/resources/windowsupdates-updatepolicy) that governs the deployment of content to the associated deployment audiences.  The update policy is a high-level template so content can be deployed in a similar way for a given audience without having to create, manage, and relate individual deployments.  Content is deployed to the devices in the associated audiences when a content approval is added to the policy.
+After devices are added to a deployment audience, you can create an [update policy](/graph/api/resources/windowsupdates-updatepolicy) that governs the deployment of content to the associated deployment audiences. The update policy is a high-level template so content can be deployed in a similar way for a given audience without having to create, manage, and relate individual deployments. Content is deployed to the devices in the associated audiences when a content approval is added to the policy.
 
 The following example shows how to create an update policy and assign an existing deployment audience to it.
 
@@ -199,7 +199,7 @@ Content-type: application/json
 
 ## Step 5: Create driver approval
 
-Deployments for driver updates are created and enforced on a policy through [compliance changes](/graph/api/resources/windowsupdates-compliance).  [Content approvals](/graph/api/esources/windowsupdates-contentapproval) for driver updates are added to a policy by specifying the [catalog entry](/graph/api/resources/windowsupdates-catalogentry) associated to a specific driver update. Content will only be delivered to devices in the deployment audiences associated with the update policy once approved.
+Deployments for driver updates are created and enforced on a policy through [compliance changes](/graph/api/resources/windowsupdates-compliance). [Content approvals](/graph/api/esources/windowsupdates-contentapproval) for driver updates are added to a policy by specifying the [catalog entry](/graph/api/resources/windowsupdates-catalogentry) associated to a specific driver update. Content will only be delivered to devices in the deployment audiences associated with the update policy when approved.
 
 The following example shows how to add a content approval to an existing policy.
 
@@ -247,7 +247,7 @@ Content-type: application/json
 
 ## During a driver deployment
 
-While a deployment is in progress, you can update its audience members as well as prevent the content from being offered to devices if they haven't already received it by setting the isRevoked property to true.  This is the auditable way to pause a deployment and will automatically populate the revokedBy and revokedDateTime properties.  To resume offering the content, a new approval will need to be created.
+While a deployment is in progress, you can update its audience members, as well as prevent the content from being offered to devices if they haven't already received it, by setting the **isRevoked** property to `true`.  This is the auditable way to pause a deployment and will automatically populate the **revokedBy** and **revokedDateTime** properties. To resume offering the content, create a new approval.
 
 ### Request
 
