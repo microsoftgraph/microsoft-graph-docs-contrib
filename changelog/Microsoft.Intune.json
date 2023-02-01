@@ -14195,7 +14195,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceType",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceType** property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **deviceType** property to the windowsAutopilotDeploymentProfile entity",
           "Target": "windowsAutopilotDeploymentProfile"
         },
         {
@@ -14349,7 +14349,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enableWhiteGlove",
           "ChangeType": "Addition",
-          "Description": "Added the **enableWhiteGlove** property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **enableWhiteGlove** property to the windowsAutopilotDeploymentProfile entity",
           "Target": "windowsAutopilotDeploymentProfile"
         },
         {
@@ -14415,7 +14415,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appleVppTokenTroubleshootingEvent,appLogCollectionRequest,windowsUpdateState",
           "ChangeType": "Addition",
-          "Description": "Added new entities: [appleVppTokenTroubleshootingEvent](https://learn.microsoft.com/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta), [appLogCollectionRequest](https://learn.microsoft.com/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta), [windowsUpdateState](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdatestate?view=graph-rest-beta), ",
+          "Description": "Added new entities: [appleVppTokenTroubleshootingEvent](https://learn.microsoft.com/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta), [appLogCollectionRequest](https://learn.microsoft.com/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta), windowsUpdateState",
           "Target": "appleVppTokenTroubleshootingEvent,appLogCollectionRequest,windowsUpdateState"
         },
         {
@@ -14487,7 +14487,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "runAs32Bit",
           "ChangeType": "Addition",
-          "Description": "Added the **runAs32Bit** property to the [deviceManagementScript](https://learn.microsoft.com/graph/api/resources/intune-devices-devicemanagementscript?view=graph-rest-beta) entity",
+          "Description": "Added the **runAs32Bit** property to the deviceManagementScript entity",
           "Target": "deviceManagementScript"
         },
         {
@@ -14567,7 +14567,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appLogCollectionRequests",
           "ChangeType": "Addition",
-          "Description": "Added the **appLogCollectionRequests** navigation property to the [mobileAppTroubleshootingEvent](https://learn.microsoft.com/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) entity",
+          "Description": "Added the **appLogCollectionRequests** navigation property to the mobileAppTroubleshootingEvent entity",
           "Target": "mobileAppTroubleshootingEvent"
         }
       ],
@@ -14601,7 +14601,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceAndAppManagementAssignedRoleIds",
           "ChangeType": "Addition",
-          "Description": "Added new complex types: [deviceAndAppManagementAssignedRoleIds](https://learn.microsoft.com/graph/api/resources/intune-rbac-deviceandappmanagementassignedroleids?view=graph-rest-beta), ",
+          "Description": "Added new complex types: deviceAndAppManagementAssignedRoleIds",
           "Target": "deviceAndAppManagementAssignedRoleIds"
         },
         {
@@ -14965,7 +14965,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "autopilotDeviceStream,importedWindowsAutopilotDeviceIdentityUpload",
           "ChangeType": "Addition",
-          "Description": "Added the [autopilotDeviceStream](https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream?view=graph-rest-beta) function on [importedWindowsAutopilotDeviceIdentityUpload](https://learn.microsoft.com/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta)",
+          "Description": "Added the autopilotDeviceStream function on importedWindowsAutopilotDeviceIdentityUpload",
           "Target": "autopilotDeviceStream,importedWindowsAutopilotDeviceIdentityUpload"
         },
         {
@@ -15461,7 +15461,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "userId,userPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added the **userId** and **userPrincipalName** properties to the [deviceCompliancePolicyState](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancepolicystate?view=graph-rest-beta) entity",
+          "Description": "Added the **userId** and **userPrincipalName** properties to the deviceCompliancePolicyState entity",
           "Target": "deviceCompliancePolicyState"
         },
         {
@@ -15469,7 +15469,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "userId,userPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added the **userId** and **userPrincipalName** properties to the [deviceConfigurationState](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-deviceconfigurationstate?view=graph-rest-beta) entity",
+          "Description": "Added the **userId** and **userPrincipalName** properties to the deviceConfigurationState entity",
           "Target": "deviceConfigurationState"
         },
         {
@@ -15729,7 +15729,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "importedAppleDeviceIdentity",
           "ChangeType": "Deletion",
-          "Description": "Removed the importAppleDeviceIdentityList action on [importedAppleDeviceIdentity](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-importedappledeviceidentity?view=graph-rest-beta) collection",
+          "Description": "Removed the importAppleDeviceIdentityList action on importedAppleDeviceIdentity collection",
           "Target": "importedAppleDeviceIdentity"
         },
         {
@@ -15737,7 +15737,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "updateDeviceProfileAssignment,enrollmentProfile",
           "ChangeType": "Deletion",
-          "Description": "Removed the [updateDeviceProfileAssignment](https://learn.microsoft.com/graph/api/intune-corpenrollment-enrollmentprofile-updatedeviceprofileassignment?view=graph-rest-beta) action on [enrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)",
+          "Description": "Removed the updateDeviceProfileAssignment action on enrollmentProfile",
           "Target": "updateDeviceProfileAssignment,enrollmentProfile"
         },
         {
@@ -15745,7 +15745,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrollmentProfile",
           "ChangeType": "Deletion",
-          "Description": "Removed the setDefaultProfile action on [enrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)",
+          "Description": "Removed the setDefaultProfile action on enrollmentProfile",
           "Target": "enrollmentProfile"
         },
         {
@@ -15753,7 +15753,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "depOnboardingSetting",
           "ChangeType": "Deletion",
-          "Description": "Removed the shareForSchoolDataSyncService action on [depOnboardingSetting](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta)",
+          "Description": "Removed the shareForSchoolDataSyncService action on depOnboardingSetting",
           "Target": "depOnboardingSetting"
         },
         {
@@ -15761,7 +15761,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "depOnboardingSetting",
           "ChangeType": "Deletion",
-          "Description": "Removed the unshareForSchoolDataSyncService action on [depOnboardingSetting](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta)",
+          "Description": "Removed the unshareForSchoolDataSyncService action on depOnboardingSetting",
           "Target": "depOnboardingSetting"
         },
         {
@@ -15945,7 +15945,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "language,enrollmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **language** and **enrollmentSettings** properties to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **language** and **enrollmentSettings** properties to the windowsAutopilotDeploymentProfile entity",
           "Target": "windowsAutopilotDeploymentProfile"
         },
         {
@@ -16303,7 +16303,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enrollmentStatusScreenSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **enrollmentStatusScreenSettings** property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **enrollmentStatusScreenSettings** property to the windowsAutopilotDeploymentProfile entity",
           "Target": "windowsAutopilotDeploymentProfile"
         },
         {
@@ -16319,7 +16319,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "assignments",
           "ChangeType": "Addition",
-          "Description": "Added the **assignments** navigation property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **assignments** navigation property to the windowsAutopilotDeploymentProfile entity",
           "Target": "windowsAutopilotDeploymentProfile"
         },
         {
@@ -16327,7 +16327,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "networkAccessConfigurations",
           "ChangeType": "Addition",
-          "Description": "Added the **networkAccessConfigurations** navigation property to the [windowsDomainJoinConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta) entity",
+          "Description": "Added the **networkAccessConfigurations** navigation property to the windowsDomainJoinConfiguration entity",
           "Target": "windowsDomainJoinConfiguration"
         },
         {
@@ -16581,7 +16581,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidManagedStoreAppConfigurationSchemaItem,deviceAndAppManagementData,loggedOnUser,macOSFirewallApplication,macOSLobChildApp,macOSMinimumOperatingSystem,windowsAppXAppAssignmentSettings,windowsUniversalAppXAppAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added new complex types: [androidManagedStoreAppConfigurationSchemaItem](https://learn.microsoft.com/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem?view=graph-rest-beta), [deviceAndAppManagementData](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deviceandappmanagementdata?view=graph-rest-beta), [loggedOnUser](https://learn.microsoft.com/graph/api/resources/intune-devices-loggedonuser?view=graph-rest-beta), [macOSFirewallApplication](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macosfirewallapplication?view=graph-rest-beta), [macOSLobChildApp](https://learn.microsoft.com/graph/api/resources/intune-apps-macoslobchildapp?view=graph-rest-beta), [macOSMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-apps-macosminimumoperatingsystem?view=graph-rest-beta), [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsappxappassignmentsettings?view=graph-rest-beta), [windowsUniversalAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsuniversalappxappassignmentsettings?view=graph-rest-beta), ",
+          "Description": "Added new complex types: [androidManagedStoreAppConfigurationSchemaItem](https://learn.microsoft.com/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem?view=graph-rest-beta), [deviceAndAppManagementData](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deviceandappmanagementdata?view=graph-rest-beta), [loggedOnUser](https://learn.microsoft.com/graph/api/resources/intune-devices-loggedonuser?view=graph-rest-beta), [macOSFirewallApplication](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macosfirewallapplication?view=graph-rest-beta), [macOSLobChildApp](https://learn.microsoft.com/graph/api/resources/intune-apps-macoslobchildapp?view=graph-rest-beta), [macOSMinimumOperatingSystem](https://learn.microsoft.com/graph/api/resources/intune-apps-macosminimumoperatingsystem?view=graph-rest-beta), [windowsAppXAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsappxappassignmentsettings?view=graph-rest-beta), windowsUniversalAppXAppAssignmentSettings",
           "Target": "androidManagedStoreAppConfigurationSchemaItem,deviceAndAppManagementData,loggedOnUser,macOSFirewallApplication,macOSLobChildApp,macOSMinimumOperatingSystem,windowsAppXAppAssignmentSettings,windowsUniversalAppXAppAssignmentSettings"
         },
         {
