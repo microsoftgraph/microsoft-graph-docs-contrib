@@ -1,5 +1,5 @@
 ---
-title: "List execution scope of a workflow (in Lifecycle Workflows)"
+title: "List executionScope of a workflow (in Lifecycle Workflows)"
 description: "Get a list of the user objects in scope of execution for a workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List execution scope of a workflow
+# List executionScope of a workflow (in Lifecycle Workflows)
 
 Namespace: microsoft.graph.identityGovernance
 
