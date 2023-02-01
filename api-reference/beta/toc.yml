@@ -18909,13 +18909,13 @@ items:
           href: resources/windowsupdates-compliancechange.md
           items: 
           - name: List
-              href: api/windowsupdates-updatepolicy-list-compliancechanges.md
+            href: api/windowsupdates-updatepolicy-list-compliancechanges.md
           - name: Get
-              href: api/windowsupdates-compliancechange-get.md
+            href: api/windowsupdates-compliancechange-get.md
           - name: Update
-              href: api/windowsupdates-compliancechange-update.md
+            href: api/windowsupdates-compliancechange-update.md
           - name: Delete
-              href: api/windowsupdates-compliancechange-delete.md
+            href: api/windowsupdates-compliancechange-delete.md
           - name: Content approval
             href: resources/windowsupdates-contentapproval.md
             items:
