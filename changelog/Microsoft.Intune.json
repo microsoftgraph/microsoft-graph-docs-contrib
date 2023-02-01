@@ -18331,7 +18331,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "iosLobAppAssignmentSettings,iosSingleSignOnSettings,iosStoreAppAssignmentSettings,iosVppAppAssignmentSettings,mobileAppAssignmentSettings,proxiedDomain,windowsInformationProtectionProxiedDomainCollection,windowsStoreForBusinessAppAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added new complex types: [iosLobAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappassignmentsettings?view=graph-rest-beta), [iosSingleSignOnSettings](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iossinglesignonsettings?view=graph-rest-beta), [iosStoreAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-iosstoreappassignmentsettings?view=graph-rest-beta), [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-iosvppappassignmentsettings?view=graph-rest-beta), [mobileAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappassignmentsettings?view=graph-rest-beta), [proxiedDomain](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-proxieddomain?view=graph-rest-beta), [windowsInformationProtectionProxiedDomainCollection](https://learn.microsoft.com/graph/api/resources/intune-mam-windowsinformationprotectionproxieddomaincollection?view=graph-rest-beta), [windowsStoreForBusinessAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsstoreforbusinessappassignmentsettings?view=graph-rest-beta), ",
+          "Description": "Added new complex types: [iosLobAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappassignmentsettings?view=graph-rest-beta), [iosSingleSignOnSettings](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iossinglesignonsettings?view=graph-rest-beta), [iosStoreAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-iosstoreappassignmentsettings?view=graph-rest-beta), [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-iosvppappassignmentsettings?view=graph-rest-beta), [mobileAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappassignmentsettings?view=graph-rest-beta), proxiedDomain, [windowsInformationProtectionProxiedDomainCollection](https://learn.microsoft.com/graph/api/resources/intune-mam-windowsinformationprotectionproxieddomaincollection?view=graph-rest-beta), windowsStoreForBusinessAppAssignmentSettings",
           "Target": "iosLobAppAssignmentSettings,iosSingleSignOnSettings,iosStoreAppAssignmentSettings,iosVppAppAssignmentSettings,mobileAppAssignmentSettings,proxiedDomain,windowsInformationProtectionProxiedDomainCollection,windowsStoreForBusinessAppAssignmentSettings"
         },
         {
@@ -19143,7 +19143,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enableAuthenticationViaCompanyPortal",
           "ChangeType": "Change",
-          "Description": "Added the **enableAuthenticationViaCompanyPortal** property to the [depEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-depenrollmentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **enableAuthenticationViaCompanyPortal** property to the depEnrollmentProfile entity",
           "Target": "depEnrollmentProfile"
         },
         {
@@ -19493,7 +19493,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "defaultDeviceCompliancePolicy,deviceConfigurationUserStateSummary,deviceManagementScriptDeviceState,deviceManagementScriptRunSummary,deviceManagementScriptUserState,iosUpdateDeviceStatus,windowsManagedDevice,windowsManagementAppHealthState,windowsManagementAppHealthSummary",
           "ChangeType": "Addition",
-          "Description": "Added new entities: [defaultDeviceCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-defaultdevicecompliancepolicy?view=graph-rest-beta), [deviceConfigurationUserStateSummary](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-deviceconfigurationuserstatesummary?view=graph-rest-beta), [deviceManagementScriptDeviceState](https://learn.microsoft.com/graph/api/resources/intune-devicefe-devicemanagementscriptdevicestate?view=graph-rest-beta), [deviceManagementScriptRunSummary](https://learn.microsoft.com/graph/api/resources/intune-devicefe-devicemanagementscriptrunsummary?view=graph-rest-beta), [deviceManagementScriptUserState](https://learn.microsoft.com/graph/api/resources/intune-devicefe-devicemanagementscriptuserstate?view=graph-rest-beta), [iosUpdateDeviceStatus](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iosupdatedevicestatus?view=graph-rest-beta), [windowsManagedDevice](https://learn.microsoft.com/graph/api/resources/intune-devicefe-windowsmanageddevice?view=graph-rest-beta), [windowsManagementAppHealthState](https://learn.microsoft.com/graph/api/resources/intune-devicefe-windowsmanagementapphealthstate?view=graph-rest-beta), [windowsManagementAppHealthSummary](https://learn.microsoft.com/graph/api/resources/intune-devicefe-windowsmanagementapphealthsummary?view=graph-rest-beta), ",
+          "Description": "Added new entities: [defaultDeviceCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-defaultdevicecompliancepolicy?view=graph-rest-beta), [deviceConfigurationUserStateSummary](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-deviceconfigurationuserstatesummary?view=graph-rest-beta), deviceManagementScriptDeviceState, deviceManagementScriptRunSummary, deviceManagementScriptUserState, [iosUpdateDeviceStatus](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iosupdatedevicestatus?view=graph-rest-beta), windowsManagedDevice, windowsManagementAppHealthState, windowsManagementAppHealthSummary",
           "Target": "defaultDeviceCompliancePolicy,deviceConfigurationUserStateSummary,deviceManagementScriptDeviceState,deviceManagementScriptRunSummary,deviceManagementScriptUserState,iosUpdateDeviceStatus,windowsManagedDevice,windowsManagementAppHealthState,windowsManagementAppHealthSummary"
         },
         {
@@ -19517,7 +19517,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "user",
           "ChangeType": "Deletion",
-          "Description": "Removed the wipeByDeviceTag action on [user](https://learn.microsoft.com/graph/api/resources/intune-devicefe-user?view=graph-rest-beta)",
+          "Description": "Removed the wipeByDeviceTag action on user",
           "Target": "user"
         },
         {
@@ -19549,7 +19549,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "instanceDisplayName,settingPlatform",
           "ChangeType": "Change",
-          "Description": "Removed the **instanceDisplayName** and **settingPlatform** properties from the [complianceSettingStateSummary](https://learn.microsoft.com/graph/api/resources/compliancesettingstatesummary?view=graph-rest-beta) entity",
+          "Description": "Removed the **instanceDisplayName** and **settingPlatform** properties from the complianceSettingStateSummary entity",
           "Target": "complianceSettingStateSummary"
         },
         {
@@ -19565,7 +19565,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "excludeGroup",
           "ChangeType": "Change",
-          "Description": "Added the **excludeGroup** property to the [deviceCompliancePolicyGroupAssignment](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancepolicygroupassignment?view=graph-rest-beta) entity",
+          "Description": "Added the **excludeGroup** property to the deviceCompliancePolicyGroupAssignment entity",
           "Target": "deviceCompliancePolicyGroupAssignment"
         },
         {
@@ -19605,7 +19605,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enforceSignatureCheck,fileName",
           "ChangeType": "Change",
-          "Description": "Added the **enforceSignatureCheck** and **fileName** properties to the [deviceManagementScript](https://learn.microsoft.com/graph/api/resources/intune-devicefe-devicemanagementscript?view=graph-rest-beta) entity",
+          "Description": "Added the **enforceSignatureCheck** and **fileName** properties to the deviceManagementScript entity",
           "Target": "deviceManagementScript"
         },
         {
@@ -19717,7 +19717,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "availableVersion",
           "ChangeType": "Change",
-          "Description": "Added the **availableVersion** property to the [windowsManagementApp](https://learn.microsoft.com/graph/api/resources/intune-devicefe-windowsmanagementapp?view=graph-rest-beta) entity",
+          "Description": "Added the **availableVersion** property to the windowsManagementApp entity",
           "Target": "windowsManagementApp"
         },
         {
@@ -19725,7 +19725,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "onboardingStatus,deployedVersion,lastModifiedTime",
           "ChangeType": "Change",
-          "Description": "Removed the **onboardingStatus**, **deployedVersion** and **lastModifiedTime** properties from the [windowsManagementApp](https://learn.microsoft.com/graph/api/resources/intune-devicefe-windowsmanagementapp?view=graph-rest-beta) entity",
+          "Description": "Removed the **onboardingStatus**, **deployedVersion** and **lastModifiedTime** properties from the windowsManagementApp entity",
           "Target": "windowsManagementApp"
         },
         {
@@ -19733,7 +19733,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "packageIdentityName",
           "ChangeType": "Change",
-          "Description": "Added the **packageIdentityName** property to the [windowsStoreForBusinessApp](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsstoreforbusinessapp?view=graph-rest-beta) entity",
+          "Description": "Added the **packageIdentityName** property to the windowsStoreForBusinessApp entity",
           "Target": "windowsStoreForBusinessApp"
         },
         {
@@ -19773,7 +19773,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "runSummary,deviceRunStates,userRunStates",
           "ChangeType": "Change",
-          "Description": "Added the **runSummary**, **deviceRunStates** and **userRunStates** navigation properties to the [deviceManagementScript](https://learn.microsoft.com/graph/api/resources/intune-devicefe-devicemanagementscript?view=graph-rest-beta) entity",
+          "Description": "Added the **runSummary**, **deviceRunStates** and **userRunStates** navigation properties to the deviceManagementScript entity",
           "Target": "deviceManagementScript"
         },
         {
@@ -19781,7 +19781,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "runStates",
           "ChangeType": "Change",
-          "Description": "Removed the **runStates** navigation property from the [deviceManagementScript](https://learn.microsoft.com/graph/api/resources/intune-devicefe-devicemanagementscript?view=graph-rest-beta) entity",
+          "Description": "Removed the **runStates** navigation property from the deviceManagementScript entity",
           "Target": "deviceManagementScript"
         },
         {
@@ -19813,7 +19813,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "healthSummary,healthStates",
           "ChangeType": "Change",
-          "Description": "Added the **healthSummary** and **healthStates** navigation properties to the [windowsManagementApp](https://learn.microsoft.com/graph/api/resources/intune-devicefe-windowsmanagementapp?view=graph-rest-beta) entity",
+          "Description": "Added the **healthSummary** and **healthStates** navigation properties to the windowsManagementApp entity",
           "Target": "windowsManagementApp"
         },
         {
@@ -19821,7 +19821,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicationId,appName,platformId,userFailures,deviceFailures",
           "ChangeType": "Change",
-          "Description": "Added the **applicationId**, **appName**, **platformId**, **userFailures** and **deviceFailures** properties to the [appInstallationFailure](https://learn.microsoft.com/graph/api/resources/intune-apps-appinstallationfailure?view=graph-rest-beta) complex type",
+          "Description": "Added the **applicationId**, **appName**, **platformId**, **userFailures** and **deviceFailures** properties to the appInstallationFailure complex type",
           "Target": "appInstallationFailure"
         },
         {
@@ -19829,7 +19829,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "encryptionMethod,startupAuthenticationRequired,startupAuthenticationBlockWithoutTpmChip,startupAuthenticationTpmUsage,startupAuthenticationTpmPinUsage,startupAuthenticationTpmKeyUsage,startupAuthenticationTpmPinAndKeyUsage,recoveryOptions,prebootRecoveryEnableMessageAndUrl",
           "ChangeType": "Change",
-          "Description": "Added the **encryptionMethod**, **startupAuthenticationRequired**, **startupAuthenticationBlockWithoutTpmChip**, **startupAuthenticationTpmUsage**, **startupAuthenticationTpmPinUsage**, **startupAuthenticationTpmKeyUsage**, **startupAuthenticationTpmPinAndKeyUsage**, **recoveryOptions** and **prebootRecoveryEnableMessageAndUrl** properties to the [bitLockerSystemDrivePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-bitlockersyst?view=graph-rest-betarivepolicy) complex type",
+          "Description": "Added the **encryptionMethod**, **startupAuthenticationRequired**, **startupAuthenticationBlockWithoutTpmChip**, **startupAuthenticationTpmUsage**, **startupAuthenticationTpmPinUsage**, **startupAuthenticationTpmKeyUsage**, **startupAuthenticationTpmPinAndKeyUsage**, **recoveryOptions** and **prebootRecoveryEnableMessageAndUrl** properties to the bitLockerSystemDrivePolicy complex type",
           "Target": "bitLockerSystemDrivePolicy"
         },
         {
@@ -19879,7 +19879,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "New entities:Removed properties:Renamed properties:New properties:",
           "ChangeType": "Change",
-          "Description": "Application API update. This is first set of changes including property renaming and restructuring of the [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-beta) entity., **New entities:** [api](https://learn.microsoft.com/graph/api/resources/api?view=graph-rest-beta]), [informationalUrl](https://learn.microsoft.com/graph/api/resources/informationalurl?view=graph-rest-beta), [installedClient](https://learn.microsoft.com/graph/api/resources/installedclient?view=graph-rest-beta), [permissionScope](https://learn.microsoft.com/graph/api/resources/permissionscope?view=graph-rest-beta), [preauthorizedApplication](https://learn.microsoft.com/graph/api/resources/preauthorizedapplication?view=graph-rest-beta), [web](https://learn.microsoft.com/graph/api/resources/web?view=graph-rest-beta)., **Removed properties:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions., **Renamed properties:** appId to id, identifierUris to applicationAliases, availableToOtherTenants to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, publicClient to allowPublicClient, replyUrls to redirectUrls., **New properties:** tags.",
+          "Description": "Application API update. This is first set of changes including property renaming and restructuring of the [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-beta) entity., **New entities:** api, [informationalUrl](https://learn.microsoft.com/graph/api/resources/informationalurl?view=graph-rest-beta), installedClient, [permissionScope](https://learn.microsoft.com/graph/api/resources/permissionscope?view=graph-rest-beta), [preauthorizedApplication](https://learn.microsoft.com/graph/api/resources/preauthorizedapplication?view=graph-rest-beta), web, **Removed properties:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions., **Renamed properties:** appId to id, identifierUris to applicationAliases, availableToOtherTenants to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, publicClient to allowPublicClient, replyUrls to redirectUrls., **New properties:** tags.",
           "Target": "application,api,), (https://learn.microsoft.com/graph/api/resources/informationalurl?view=graph-rest-beta), (https://learn.microsoft.com/graph/api/resources/installedclient?view=graph-rest-beta), (https://learn.microsoft.com/graph/api/resources/permissionscope?view=graph-rest-beta), (https://learn.microsoft.com/graph/api/resources/preauthorizedapplication?view=graph-rest-beta), (https://learn.microsoft.com/graph/api/resources/web?view=graph-rest-beta)., **Removed properties:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions., **Renamed properties:** appId to id, identifierUris to applicationAliases, availableToOtherTenants to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, publicClient to allowPublicClient, replyUrls to redirectUrls., **New properties:** tags."
         }
       ],
@@ -19923,7 +19923,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidForWorkMobileAppConfiguration,cartToClassAssociation,deviceCompliancePolicySettingStateSummary,eBookInstallSummary,eBookVppGroupAssignment,iosUpdateConfiguration,remoteAssistancePartner,windows10EndpointProtectionConfiguration,windowsDeviceMalwareState,windowsInformationProtectionAppLearningSummary,windowsMalwareInformation,windowsProtectionState",
           "ChangeType": "Addition",
-          "Description": "Added new entities: [androidForWorkMobileAppConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-androidforworkmobileappconfiguration?view=graph-rest-beta), [cartToClassAssociation](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-carttoclassassociation?view=graph-rest-beta), [deviceCompliancePolicySettingStateSummary](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary?view=graph-rest-beta), [eBookInstallSummary](https://learn.microsoft.com/graph/api/resources/intune-books-ebookinstallsummary?view=graph-rest-beta), [eBookVppGroupAssignment](https://learn.microsoft.com/graph/api/resources/intune-books-ebookvppgroupassignment?view=graph-rest-beta), [iosUpdateConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iosupdateconfiguration?view=graph-rest-beta), [remoteAssistancePartner](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-beta), [windows10EndpointProtectionConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta), [windowsDeviceMalwareState](https://learn.microsoft.com/graph/api/resources/intune-endpointprotection-windowsdevicemalwarestate?view=graph-rest-beta), [windowsInformationProtectionAppLearningSummary](https://learn.microsoft.com/graph/api/resources/intune-wip-windowsinformationprotectionapplearningsummary?view=graph-rest-beta), [windowsMalwareInformation](https://learn.microsoft.com/graph/api/resources/intune-endpointprotection-windowsmalwareinformation?view=graph-rest-beta), [windowsProtectionState](https://learn.microsoft.com/graph/api/resources/intune-endpointprotection-windowsprotectionstate?view=graph-rest-beta), ",
+          "Description": "Added new entities: [androidForWorkMobileAppConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-androidforworkmobileappconfiguration?view=graph-rest-beta), [cartToClassAssociation](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-carttoclassassociation?view=graph-rest-beta), [deviceCompliancePolicySettingStateSummary](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary?view=graph-rest-beta), [eBookInstallSummary](https://learn.microsoft.com/graph/api/resources/intune-books-ebookinstallsummary?view=graph-rest-beta), eBookVppGroupAssignment, [iosUpdateConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iosupdateconfiguration?view=graph-rest-beta), [remoteAssistancePartner](https://learn.microsoft.com/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-beta), [windows10EndpointProtectionConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta), windowsDeviceMalwareState, [windowsInformationProtectionAppLearningSummary](https://learn.microsoft.com/graph/api/resources/intune-wip-windowsinformationprotectionapplearningsummary?view=graph-rest-beta), windowsMalwareInformation, windowsProtectionState",
           "Target": "androidForWorkMobileAppConfiguration,cartToClassAssociation,deviceCompliancePolicySettingStateSummary,eBookInstallSummary,eBookVppGroupAssignment,iosUpdateConfiguration,remoteAssistancePartner,windows10EndpointProtectionConfiguration,windowsDeviceMalwareState,windowsInformationProtectionAppLearningSummary,windowsMalwareInformation,windowsProtectionState"
         },
         {
@@ -20043,7 +20043,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "setting,platformType",
           "ChangeType": "Change",
-          "Description": "Added the **setting** and **platformType** properties to the [complianceSettingStateSummary](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-compliancesettingstatesummary?view=graph-rest-beta) entity",
+          "Description": "Added the **setting** and **platformType** properties to the complianceSettingStateSummary entity",
           "Target": "complianceSettingStateSummary"
         },
         {
@@ -20291,7 +20291,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "eBook",
           "ChangeType": "Change",
-          "Description": "Added the **eBook** navigation property to the [eBookGroupAssignment](https://learn.microsoft.com/graph/api/resources/intune-books-ebookgroupassignment?view=graph-rest-beta) entity",
+          "Description": "Added the **eBook** navigation property to the eBookGroupAssignment entity",
           "Target": "eBookGroupAssignment"
         },
         {
