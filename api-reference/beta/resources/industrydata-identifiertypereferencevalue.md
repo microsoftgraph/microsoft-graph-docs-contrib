@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a pointer to a RefIdentifierType entry in a collection of referenceDefinition objects.
+Represents a pointer to a `RefIdentifierType` entry in a collection of [referenceDefinition](industrydata-referencedefinition.md) objects.
 
 Inherits from [referenceValue](industrydata-referencevalue.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "List sourceSystemDefinition"
+title: "List sourceSystemDefinitions"
 description: "Get a list of the sourceSystemDefinition objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
-# List sourceSystemDefinition
+# List sourceSystemDefinitions
 
 Namespace: microsoft.graph.industryData
 

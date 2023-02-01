@@ -1,19 +1,19 @@
 ---
-title: "Get longRunningOperation"
-description: "Read the properties and relationships of a longRunningOperation object."
+title: "Get fileValidateOperation"
+description: "Read the properties and relationships of a fileValidateOperation object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
-# Get longRunningOperations
+# Get fileValidateOperations
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [longRunningOperation](../resources/longrunningoperation.md) object.
+Read the properties and relationships of a [fileValidateOperation](../resources/industrydata-filevalidateoperation.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/operations/{longRunningOperationId}
+GET /external/industryData/operations/{fileValidateOperationId}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [longRunningOperation](../resources/longrunningoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [fileValidateOperation](../resources/industrydata-filevalidateoperation.md) object in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_longrunningoperation",
+  "name": "get_fileValidateOperation",
   "sampleKeys": ["581b2ef8-dda2-4a3e-bb62-df13fd4a5808"]
 }
 -->
@@ -80,7 +80,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.longRunningOperation"
+  "@odata.type": "microsoft.graph.industryData.fileValidateOperation"
 }
 -->
 
@@ -89,13 +89,38 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.longRunningOperation",
+  "@odata.type": "#microsoft.graph.industryData.fileValidateOperation",
   "createdDateTime": "2022-12-14T05:54:35.400029Z",
+  "errors": [
+    {
+      "code": "RequiredFileNotFound",
+      "details": [],
+      "innerError": null,
+      "message": "When trying to validate required file orgs.csv encountered RequiredFileNotFound error.",
+      "target": "orgs.csv"
+    }
+  ],
   "id": "d194fa3e-18c9-47a1-0fb1-08dad8e7a876",
   "lastActionDateTime": "2022-12-14T05:54:43.8410226Z",
   "resourceLocation": "https://graph.microsoft.com/beta/industryData/dataConnectors/022da4a0-c239-4b07-abed-08dad8e7a07a",
   "status": "succeeded",
   "statusDetail": null,
+  "validatedFiles": [],
+  "warnings": [
+    {
+      "code": "OptionalFileNotFound",
+      "details": [],
+      "innerError": null,
+      "message": "When trying to validate file classes.csv encountered OptionalFileNotFound error.",
+      "target": "classes.csv"
+    },
+    {
+      "code": "OptionalFileNotFound",
+      "details": [],
+      "innerError": null,
+      "message": "When trying to validate file enrollments.csv encountered OptionalFileNotFound error.",
+      "target": "enrollments.csv"
+    }
   ]
 }
 ```
