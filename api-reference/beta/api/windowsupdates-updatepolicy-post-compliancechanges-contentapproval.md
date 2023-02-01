@@ -83,8 +83,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
         "endDateTime": "String (timestamp)"
       }
-    }
-  }
+   }
 }
 ```
 

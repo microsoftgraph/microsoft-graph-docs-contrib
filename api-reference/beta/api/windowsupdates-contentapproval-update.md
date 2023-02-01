@@ -96,7 +96,7 @@ Content-Type: application/json
   "updatePolicy": { "@odata.id": "updatePolicies/983f03cd-03cd-983f-cd03-3f98cd033f98" },
   "content": {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-            "id": "f341705b-0b15-4ce3-aaf2-6a1681d78606
+            "id": "f341705b-0b15-4ce3-aaf2-6a1681d78606"
   },
   "deploymentSettings": {
     "contentApplicability": {
