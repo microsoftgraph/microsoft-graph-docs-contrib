@@ -9219,7 +9219,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidDeviceOwnerEnrollmentMode,androidDeviceOwnerKioskModeFolderIcon,androidDeviceOwnerKioskModeIconSize,androidDeviceOwnerKioskModeScreenOrientation,deviceLogCollectionTemplateType,microsoftLauncherDockPresence,microsoftLauncherSearchBarPlacement,microsoftTunnelServerHealthStatus",
           "ChangeType": "Addition",
-          "Description": "Added new enum types: [androidDeviceOwnerEnrollmentMode](https://learn.microsoft.com/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentmode?view=graph-rest-beta), [androidDeviceOwnerKioskModeFolderIcon](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon?view=graph-rest-beta), [androidDeviceOwnerKioskModeIconSize](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize?view=graph-rest-beta), [androidDeviceOwnerKioskModeScreenOrientation](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation?view=graph-rest-beta), [deviceLogCollectionTemplateType](https://learn.microsoft.com/graph/api/resources/intune-devices-devicelogcollectiontemplatetype?view=graph-rest-beta), [microsoftLauncherDockPresence](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-microsoftlauncherdockpresence?view=graph-rest-beta), [microsoftLauncherSearchBarPlacement](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-microsoftlaunchersearchbarplacement?view=graph-rest-beta), [microsoftTunnelServerHealthStatus](https://learn.microsoft.com/graph/api/resources/microsoftTunnelServerHealthStatus?view=graph-rest-beta), ",
+          "Description": "Added new enum types: [androidDeviceOwnerEnrollmentMode](https://learn.microsoft.com/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentmode?view=graph-rest-beta), [androidDeviceOwnerKioskModeFolderIcon](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon?view=graph-rest-beta), [androidDeviceOwnerKioskModeIconSize](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize?view=graph-rest-beta), [androidDeviceOwnerKioskModeScreenOrientation](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation?view=graph-rest-beta), [deviceLogCollectionTemplateType](https://learn.microsoft.com/graph/api/resources/intune-devices-devicelogcollectiontemplatetype?view=graph-rest-beta), [microsoftLauncherDockPresence](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-microsoftlauncherdockpresence?view=graph-rest-beta), [microsoftLauncherSearchBarPlacement](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-microsoftlaunchersearchbarplacement?view=graph-rest-beta), microsoftTunnelServerHealthStatus",
           "Target": "androidDeviceOwnerEnrollmentMode,androidDeviceOwnerKioskModeFolderIcon,androidDeviceOwnerKioskModeIconSize,androidDeviceOwnerKioskModeScreenOrientation,deviceLogCollectionTemplateType,microsoftLauncherDockPresence,microsoftLauncherSearchBarPlacement,microsoftTunnelServerHealthStatus"
         },
         {
@@ -9501,7 +9501,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "printerDocumentConfiguration",
           "ChangeType": "Change",
-          "Description": "Renamed properties on the [printerDocumentConfiguration](https://learn.microsoft.com/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta) complex type: \u003Cul\u003E\u003Cli\u003EprintQuality -\u003E quality\u003C/li\u003E\u003Cli\u003EprintResolutionInDpi -\u003E dpi\u003C/li\u003E\u003Cli\u003EduplexConfiguration -\u003E duplexMode\u003C/li\u003E\u003Cli\u003EcolorConfiguration -\u003E colorMode\u003C/li\u003E\u003C/ul\u003E",
+          "Description": "Renamed properties on the printerDocumentConfiguration complex type: \u003Cul\u003E\u003Cli\u003EprintQuality -\u003E quality\u003C/li\u003E\u003Cli\u003EprintResolutionInDpi -\u003E dpi\u003C/li\u003E\u003Cli\u003EduplexConfiguration -\u003E duplexMode\u003C/li\u003E\u003Cli\u003EcolorConfiguration -\u003E colorMode\u003C/li\u003E\u003C/ul\u003E",
           "Target": "printerDocumentConfiguration"
         },
         {
@@ -9509,7 +9509,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "printerDocumentConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added properties to the [printerDocumentConfiguration](https://learn.microsoft.com/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta) complex type: \u003Cul\u003E\u003Cli\u003EinputBin\u003C/li\u003E\u003Cli\u003EoutputBin\u003C/li\u003E\u003Cli\u003EmediaSize\u003C/li\u003E\u003Cli\u003Emargin\u003C/li\u003E\u003Cli\u003EmediaType\u003C/li\u003E\u003Cli\u003Efinishings\u003C/li\u003E\u003Cli\u003EpagesPerSheet\u003C/li\u003E\u003Cli\u003EmultipageLayout\u003C/li\u003E\u003Cli\u003Ecollate\u003C/li\u003E\u003Cli\u003Escaling\u003C/li\u003E\u003C/ul\u003E",
+          "Description": "Added properties to the printerDocumentConfiguration complex type: \u003Cul\u003E\u003Cli\u003EinputBin\u003C/li\u003E\u003Cli\u003EoutputBin\u003C/li\u003E\u003Cli\u003EmediaSize\u003C/li\u003E\u003Cli\u003Emargin\u003C/li\u003E\u003Cli\u003EmediaType\u003C/li\u003E\u003Cli\u003Efinishings\u003C/li\u003E\u003Cli\u003EpagesPerSheet\u003C/li\u003E\u003Cli\u003EmultipageLayout\u003C/li\u003E\u003Cli\u003Ecollate\u003C/li\u003E\u003Cli\u003Escaling\u003C/li\u003E\u003C/ul\u003E",
           "Target": "printerDocumentConfiguration"
         },
         {
@@ -9583,7 +9583,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationTransformConstant,code,comanagementEligibleType,dataType,deviceAndAppManagementAssignmentFilterType,deviceManagementCertificationAuthority,diffieHellmanGroup,macOSContentCachingClientPolicy,macOSContentCachingParentSelectionPolicy,macOSContentCachingPeerPolicy,macOSContentCachingType,managedAppPhoneNumberRedirectLevel,microsoftLauncherDockPresence,microsoftLauncherSearchBarPlacement,operator,perfectForwardSecrecyGroup,win32LobAppFileSystemOperationType,win32LobAppRegistryRuleOperationType,win32LobAppRuleOperator,win32LobAppRuleType,win32LobPowerShellScriptRuleOperationType",
           "ChangeType": "Addition",
-          "Description": "Added new enum types: [authenticationTransformConstant](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-authenticationtransformconstant?view=graph-rest-beta), [code](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-code?view=graph-rest-beta), [comanagementEligibleType](https://learn.microsoft.com/graph/api/resources/intune-devices-comanagementeligibletype?view=graph-rest-beta), [dataType](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-datatype?view=graph-rest-beta), [deviceAndAppManagementAssignmentFilterType](https://learn.microsoft.com/graph/api/resources/intune-shared-deviceandappmanagementassignmentfiltertype?view=graph-rest-beta), [deviceManagementCertificationAuthority](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicemanagementcertificationauthority?view=graph-rest-beta), [diffieHellmanGroup](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-diffiehellmangroup?view=graph-rest-beta), [macOSContentCachingClientPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoscontentcachingclientpolicy?view=graph-rest-beta), [macOSContentCachingParentSelectionPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy?view=graph-rest-beta), [macOSContentCachingPeerPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoscontentcachingpeerpolicy?view=graph-rest-beta), [macOSContentCachingType](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoscontentcachingtype?view=graph-rest-beta), [managedAppPhoneNumberRedirectLevel](https://learn.microsoft.com/graph/api/resources/intune-mam-managedappphonenumberredirectlevel?view=graph-rest-beta), [microsoftLauncherDockPresence](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-microsoftlauncherdockpresence?view=graph-rest-beta), [microsoftLauncherSearchBarPlacement](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-microsoftlaunchersearchbarplacement?view=graph-rest-beta), [operator](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-operator?view=graph-rest-beta), [perfectForwardSecrecyGroup](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-perfectforwardsecrecygroup?view=graph-rest-beta), [win32LobAppFileSystemOperationType](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappfilesystemoperationtype?view=graph-rest-beta), [win32LobAppRegistryRuleOperationType](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappregistryruleoperationtype?view=graph-rest-beta), [win32LobAppRuleOperator](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappruleoperator?view=graph-rest-beta), [win32LobAppRuleType](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappruletype?view=graph-rest-beta), [win32LobPowerShellScriptRuleOperationType](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobpowershellscriptruleoperationtype?view=graph-rest-beta), ",
+          "Description": "Added new enum types: [authenticationTransformConstant](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-authenticationtransformconstant?view=graph-rest-beta), [code](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-code?view=graph-rest-beta), [comanagementEligibleType](https://learn.microsoft.com/graph/api/resources/intune-devices-comanagementeligibletype?view=graph-rest-beta), [dataType](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-datatype?view=graph-rest-beta), [deviceAndAppManagementAssignmentFilterType](https://learn.microsoft.com/graph/api/resources/intune-shared-deviceandappmanagementassignmentfiltertype?view=graph-rest-beta), [deviceManagementCertificationAuthority](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicemanagementcertificationauthority?view=graph-rest-beta), [diffieHellmanGroup](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-diffiehellmangroup?view=graph-rest-beta), [macOSContentCachingClientPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoscontentcachingclientpolicy?view=graph-rest-beta), [macOSContentCachingParentSelectionPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy?view=graph-rest-beta), [macOSContentCachingPeerPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoscontentcachingpeerpolicy?view=graph-rest-beta), [macOSContentCachingType](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macoscontentcachingtype?view=graph-rest-beta), [managedAppPhoneNumberRedirectLevel](https://learn.microsoft.com/graph/api/resources/intune-mam-managedappphonenumberredirectlevel?view=graph-rest-beta), [microsoftLauncherDockPresence](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-microsoftlauncherdockpresence?view=graph-rest-beta), [microsoftLauncherSearchBarPlacement](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-microsoftlaunchersearchbarplacement?view=graph-rest-beta), [operator](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-operator?view=graph-rest-beta), [perfectForwardSecrecyGroup](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-perfectforwardsecrecygroup?view=graph-rest-beta), [win32LobAppFileSystemOperationType](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappfilesystemoperationtype?view=graph-rest-beta), [win32LobAppRegistryRuleOperationType](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappregistryruleoperationtype?view=graph-rest-beta), [win32LobAppRuleOperator](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappruleoperator?view=graph-rest-beta), [win32LobAppRuleType](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappruletype?view=graph-rest-beta), win32LobPowerShellScriptRuleOperationType",
           "Target": "authenticationTransformConstant,code,comanagementEligibleType,dataType,deviceAndAppManagementAssignmentFilterType,deviceManagementCertificationAuthority,diffieHellmanGroup,macOSContentCachingClientPolicy,macOSContentCachingParentSelectionPolicy,macOSContentCachingPeerPolicy,macOSContentCachingType,managedAppPhoneNumberRedirectLevel,microsoftLauncherDockPresence,microsoftLauncherSearchBarPlacement,operator,perfectForwardSecrecyGroup,win32LobAppFileSystemOperationType,win32LobAppRegistryRuleOperationType,win32LobAppRuleOperator,win32LobAppRuleType,win32LobPowerShellScriptRuleOperationType"
         },
         {
@@ -9965,7 +9965,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "featureFlightedConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added new entities: [featureFlightedConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-featureflightedconfiguration?view=graph-rest-beta), ",
+          "Description": "Added new entities: featureFlightedConfiguration",
           "Target": "featureFlightedConfiguration"
         },
         {
@@ -10419,7 +10419,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windows10XProfile",
           "ChangeType": "Addition",
-          "Description": "Added the **windows10XProfile** member to the [policyPlatformType](https://learn.microsoft.com/graph/api/resources/intune-shared-policyplatformtype?view=graph-rest-beta) enum type",
+          "Description": "Added the **windows10XProfile** member to the policyPlatformType enum type",
           "Target": "policyPlatformType"
         }
       ],
@@ -10453,7 +10453,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationManagerActionResult,deviceHealthScriptRemediationSummary,deviceManagementSettingSddlConstraint,iosAzureAdSingleSignOnExtension,macOSAssociatedDomainsKeyValuePair",
           "ChangeType": "Addition",
-          "Description": "Added new complex types: [configurationManagerActionResult](https://learn.microsoft.com/graph/api/resources/intune-devices-configurationmanageractionresult?view=graph-rest-beta), [deviceHealthScriptRemediationSummary](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptremediationsummary?view=graph-rest-beta), [deviceManagementSettingSddlConstraint](https://learn.microsoft.com/graph/api/resources/intune-deviceintent-devicemanagementsettingsddlconstraint?view=graph-rest-beta), [iosAzureAdSingleSignOnExtension](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iosazureadsinglesignonextension?view=graph-rest-beta), [macOSAssociatedDomainsKeyValuePair](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macosassociateddomainskeyvaluepair?view=graph-rest-beta), ",
+          "Description": "Added new complex types: [configurationManagerActionResult](https://learn.microsoft.com/graph/api/resources/intune-devices-configurationmanageractionresult?view=graph-rest-beta), [deviceHealthScriptRemediationSummary](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptremediationsummary?view=graph-rest-beta), [deviceManagementSettingSddlConstraint](https://learn.microsoft.com/graph/api/resources/intune-deviceintent-devicemanagementsettingsddlconstraint?view=graph-rest-beta), [iosAzureAdSingleSignOnExtension](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iosazureadsinglesignonextension?view=graph-rest-beta), macOSAssociatedDomainsKeyValuePair",
           "Target": "configurationManagerActionResult,deviceHealthScriptRemediationSummary,deviceManagementSettingSddlConstraint,iosAzureAdSingleSignOnExtension,macOSAssociatedDomainsKeyValuePair"
         },
         {
@@ -10727,7 +10727,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerDocumentConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [printerDocumentConfiguration](https://learn.microsoft.com/graph/api/resources/printerdocumentconfiguration) complex type.",
+          "Description": "Added the printerDocumentConfiguration complex type.",
           "Target": "printerDocumentConfiguration"
         },
         {
@@ -10807,7 +10807,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printUsageSummaryByPrinter",
           "ChangeType": "Addition",
-          "Description": "Added the [printUsageSummaryByPrinter](https://learn.microsoft.com/graph/api/resources/printusagesummarybyprinter) entity.",
+          "Description": "Added the printUsageSummaryByPrinter entity.",
           "Target": "printUsageSummaryByPrinter"
         },
         {
@@ -10815,7 +10815,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printUsageSummaryByUser",
           "ChangeType": "Addition",
-          "Description": "Added the [printUsageSummaryByUser](https://learn.microsoft.com/graph/api/resources/printusagesummarybyuser) entity.",
+          "Description": "Added the printUsageSummaryByUser entity.",
           "Target": "printUsageSummaryByUser"
         }
       ],
@@ -11067,7 +11067,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidDeviceOwnerImportedPFXCertificateProfile,intune-device-comanagementEligibleDeviceEntity,comanagementEligibleSummaryEntity",
           "ChangeType": "Addition",
-          "Description": "Added new entities: [androidDeviceOwnerImportedPFXCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile?view=graph-rest-beta), [intune-device-comanagementEligibleDeviceEntity](https://learn.microsoft.com/graph/api/resources/comanagementEligibleDeviceEntity?view=graph-rest-beta), [comanagementEligibleSummaryEntity](https://learn.microsoft.com/graph/api/resources/intune-device-comanagementEligibleSummaryEntity?view=graph-rest-beta), ",
+          "Description": "Added new entities: [androidDeviceOwnerImportedPFXCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile?view=graph-rest-beta), intune-device-comanagementEligibleDeviceEntity, comanagementEligibleSummaryEntity",
           "Target": "androidDeviceOwnerImportedPFXCertificateProfile,intune-device-comanagementEligibleDeviceEntity,comanagementEligibleSummaryEntity"
         },
         {
@@ -11187,7 +11187,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "settingStates",
           "ChangeType": "Addition",
-          "Description": "Added the **settingStates** property to the [managedDeviceMobileAppConfigurationState](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-managedDeviceMobileAppConfigurationState?view=graph-rest-beta) entity",
+          "Description": "Added the **settingStates** property to the managedDeviceMobileAppConfigurationState entity",
           "Target": "managedDeviceMobileAppConfigurationState"
         },
         {
@@ -12307,7 +12307,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,macManagedAppProtection",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-macmanagedappprotection-haspayloadlinks.md) action on [macManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-policyset-macmanagedappprotection) collection",
+          "Description": "Added the hasPayloadLinks action on macManagedAppProtection collection",
           "Target": "hasPayloadLinks,macManagedAppProtection"
         },
         {
@@ -12323,7 +12323,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,iosLobAppProvisioningConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) action on [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration) collection",
+          "Description": "Added the hasPayloadLinks action on iosLobAppProvisioningConfiguration collection",
           "Target": "hasPayloadLinks,iosLobAppProvisioningConfiguration"
         },
         {
@@ -12339,7 +12339,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,deviceManagementScript",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-devicemanagementscript-haspayloadlinks.md) action on [deviceManagementScript](https://learn.microsoft.com/graph/api/resources/intune-devices-devicemanagementscript) collection",
+          "Description": "Added the hasPayloadLinks action on deviceManagementScript collection",
           "Target": "hasPayloadLinks,deviceManagementScript"
         },
         {
@@ -12363,7 +12363,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,windowsAutopilotDeploymentProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md) action on [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile) collection",
+          "Description": "Added the hasPayloadLinks action on windowsAutopilotDeploymentProfile collection",
           "Target": "hasPayloadLinks,windowsAutopilotDeploymentProfile"
         },
         {
@@ -13049,7 +13049,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "autopilotDeviceStream,importedWindowsAutopilotDeviceIdentityUpload",
           "ChangeType": "Deletion",
-          "Description": "Removed the [autopilotDeviceStream](https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream?view=graph-rest-beta) function on [importedWindowsAutopilotDeviceIdentityUpload](https://learn.microsoft.com/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta)",
+          "Description": "Removed the autopilotDeviceStream function on importedWindowsAutopilotDeviceIdentityUpload",
           "Target": "autopilotDeviceStream,importedWindowsAutopilotDeviceIdentityUpload"
         },
         {
@@ -13637,7 +13637,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "roleScopeTagIds",
           "ChangeType": "Addition",
-          "Description": "Added the **roleScopeTagIds** property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **roleScopeTagIds** property to the windowsAutopilotDeploymentProfile entity",
           "Target": "windowsAutopilotDeploymentProfile"
         },
         {
@@ -13701,7 +13701,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unknown",
           "ChangeType": "Addition",
-          "Description": "Added the **unknown** member to the [devicePlatformType](https://learn.microsoft.com/graph/api/resources/intune-shared-deviceplatformtype?view=graph-rest-beta) enum type",
+          "Description": "Added the **unknown** member to the devicePlatformType enum type",
           "Target": "devicePlatformType"
         },
         {
@@ -14139,7 +14139,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "roleScopeTagIds",
           "ChangeType": "Addition",
-          "Description": "Added the **roleScopeTagIds** property to the [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) entity",
+          "Description": "Added the **roleScopeTagIds** property to the iosLobAppProvisioningConfiguration entity",
           "Target": "iosLobAppProvisioningConfiguration"
         },
         {
