@@ -41,24 +41,8 @@ This method supports the `$select`, `$top`, `$skip`, and `$filter` OData query p
 The default page size for this API is 100 **accessReviewScheduleDefinition** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ### Use the $filter query parameter
-The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition. Use the following format for the request:
 
-```http
-GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
-```
-
-The value of `{object}` can be one of the following:
-
-|Value|Description|
-|:---     |:---       |
-|/groups  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|
-|/groups/{group id}  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|
-|./members  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|
-|accessPackageAssignments  |List every accessReviewScheduleDefinition on an access package.|
-|roleAssignmentScheduleInstances  |List every accessReviewScheduleDefinition for service principals assigned to a privileged role.|
-
-The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
-
+[!INCLUDE [accessreviews-definition-filter-scope](../../includes/accessreviews-definition-filter-scope.md)]
 
 ## Request headers
 None.
