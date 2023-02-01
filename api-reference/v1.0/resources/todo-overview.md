@@ -15,7 +15,7 @@ Use the Microsoft Graph To Do API to create an app that connects with tasks acro
 * Sync your app’s existing tasks with To Do and create a single task view for better prioritization and manageability.
 * Manage To Do tasks in a custom business application.
 
-Currently, the API supports only permissions delegated by the signed-in user.
+The API supports both delegated and application permissions.
  
 Before starting with the To Do API, take a look at the resources and how they relate to one another.
 
