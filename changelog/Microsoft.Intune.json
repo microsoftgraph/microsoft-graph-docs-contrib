@@ -16693,7 +16693,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "syncApps,appleVolumePurchaseProgramToken",
           "ChangeType": "Deletion",
-          "Description": "Removed the [syncApps](https://learn.microsoft.com/graph/api/intune-onboarding-applevolumepurchaseprogramtoken-syncapps?view=graph-rest-beta) action on [appleVolumePurchaseProgramToken](https://learn.microsoft.com/graph/api/resources/intune-onboarding-applevolumepurchaseprogramtoken?view=graph-rest-beta)",
+          "Description": "Removed the syncApps action on appleVolumePurchaseProgramToken",
           "Target": "syncApps,appleVolumePurchaseProgramToken"
         },
         {
@@ -17773,7 +17773,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enableAuthenticationViaCompanyPortal",
           "ChangeType": "Change",
-          "Description": "Removed the **enableAuthenticationViaCompanyPortal** property from the [depEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-depenrollmentprofile?view=graph-rest-beta) entity",
+          "Description": "Removed the **enableAuthenticationViaCompanyPortal** property from the depEnrollmentProfile entity",
           "Target": "depEnrollmentProfile"
         },
         {
@@ -17797,7 +17797,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enableAuthenticationViaCompanyPortal",
           "ChangeType": "Change",
-          "Description": "Added the **enableAuthenticationViaCompanyPortal** property to the [enrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **enableAuthenticationViaCompanyPortal** property to the enrollmentProfile entity",
           "Target": "enrollmentProfile"
         },
         {
@@ -17991,7 +17991,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrollmentProfile",
           "ChangeType": "Addition",
-          "Description": "Added the setDefaultProfile action on [enrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)",
+          "Description": "Added the setDefaultProfile action on enrollmentProfile",
           "Target": "enrollmentProfile"
         },
         {
@@ -17999,7 +17999,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "depOnboardingSetting",
           "ChangeType": "Addition",
-          "Description": "Added the shareForSchoolDataSyncService action on [depOnboardingSetting](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta)",
+          "Description": "Added the shareForSchoolDataSyncService action on depOnboardingSetting",
           "Target": "depOnboardingSetting"
         },
         {
@@ -18007,7 +18007,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "depOnboardingSetting",
           "ChangeType": "Addition",
-          "Description": "Added the unshareForSchoolDataSyncService action on [depOnboardingSetting](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta)",
+          "Description": "Added the unshareForSchoolDataSyncService action on depOnboardingSetting",
           "Target": "depOnboardingSetting"
         },
         {
@@ -18047,7 +18047,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "passcode",
           "ChangeType": "Change",
-          "Description": "Changed the following properties on the [androidDeviceComplianceLocalActionLockDeviceWithPasscode](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionlockdevicewithpasscode?view=graph-rest-beta) entity: **passcode** from required to optional, ",
+          "Description": "Changed the following properties on the androidDeviceComplianceLocalActionLockDeviceWithPasscode entity: **passcode** from required to optional, ",
           "Target": "androidDeviceComplianceLocalActionLockDeviceWithPasscode"
         },
         {
@@ -18323,7 +18323,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidDeviceComplianceLocalActionLockDeviceWithPasscode,iosLobAppProvisioningConfigurationAssignment,iosVppEBookAssignment,managedDeviceMobileAppConfigurationAssignment,managedEBookAssignment,managedMobileApp,mobileAppAssignment,termsAndConditionsAssignment,vppToken,windows10PFXImportCertificateProfile,windowsAssignedAccessProfile,windowsDomainJoinConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added new entities: [androidDeviceComplianceLocalActionLockDeviceWithPasscode](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionlockdevicewithpasscode?view=graph-rest-beta), [iosLobAppProvisioningConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfigurationassignment?view=graph-rest-beta), [iosVppEBookAssignment](https://learn.microsoft.com/graph/api/resources/intune-books-iosvppebookassignment?view=graph-rest-beta), [managedDeviceMobileAppConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-apps-manageddevicemobileappconfigurationassignment?view=graph-rest-beta), [managedEBookAssignment](https://learn.microsoft.com/graph/api/resources/intune-books-managedebookassignment?view=graph-rest-beta), [managedMobileApp](https://learn.microsoft.com/graph/api/resources/intune-mam-managedmobileapp?view=graph-rest-beta), [mobileAppAssignment](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta), [termsAndConditionsAssignment](https://learn.microsoft.com/graph/api/resources/intune-companyterms-termsandconditionsassignment?view=graph-rest-beta), [vppToken](https://learn.microsoft.com/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta), [windows10PFXImportCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10pfximportcertificateprofile?view=graph-rest-beta), [windowsAssignedAccessProfile](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsassignedaccessprofile?view=graph-rest-beta), [windowsDomainJoinConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta), ",
+          "Description": "Added new entities: androidDeviceComplianceLocalActionLockDeviceWithPasscode, [iosLobAppProvisioningConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfigurationassignment?view=graph-rest-beta), [iosVppEBookAssignment](https://learn.microsoft.com/graph/api/resources/intune-books-iosvppebookassignment?view=graph-rest-beta), [managedDeviceMobileAppConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-apps-manageddevicemobileappconfigurationassignment?view=graph-rest-beta), [managedEBookAssignment](https://learn.microsoft.com/graph/api/resources/intune-books-managedebookassignment?view=graph-rest-beta), [managedMobileApp](https://learn.microsoft.com/graph/api/resources/intune-mam-managedmobileapp?view=graph-rest-beta), [mobileAppAssignment](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta), [termsAndConditionsAssignment](https://learn.microsoft.com/graph/api/resources/intune-companyterms-termsandconditionsassignment?view=graph-rest-beta), [vppToken](https://learn.microsoft.com/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta), [windows10PFXImportCertificateProfile](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10pfximportcertificateprofile?view=graph-rest-beta), windowsAssignedAccessProfile, windowsDomainJoinConfiguration",
           "Target": "androidDeviceComplianceLocalActionLockDeviceWithPasscode,iosLobAppProvisioningConfigurationAssignment,iosVppEBookAssignment,managedDeviceMobileAppConfigurationAssignment,managedEBookAssignment,managedMobileApp,mobileAppAssignment,termsAndConditionsAssignment,vppToken,windows10PFXImportCertificateProfile,windowsAssignedAccessProfile,windowsDomainJoinConfiguration"
         },
         {
@@ -18347,7 +18347,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assign,iosLobAppProvisioningConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-apps-ioslobappprovisioningconfiguration-assign?view=graph-rest-beta) action on [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta)",
+          "Description": "Added the assign action on iosLobAppProvisioningConfiguration",
           "Target": "assign,iosLobAppProvisioningConfiguration"
         },
         {
@@ -18435,7 +18435,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "gracePeriodInMinutes",
           "ChangeType": "Change",
-          "Description": "Added the **gracePeriodInMinutes** property to the [androidDeviceComplianceLocalActionBase](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionbase?view=graph-rest-beta) entity",
+          "Description": "Added the **gracePeriodInMinutes** property to the androidDeviceComplianceLocalActionBase entity",
           "Target": "androidDeviceComplianceLocalActionBase"
         },
         {
@@ -18659,7 +18659,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceCompliancePolicy",
           "ChangeType": "Change",
-          "Description": "Added the **deviceCompliancePolicy** navigation property to the [deviceCompliancePolicyGroupAssignment](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancepolicygroupassignment?view=graph-rest-beta) entity",
+          "Description": "Added the **deviceCompliancePolicy** navigation property to the deviceCompliancePolicyGroupAssignment entity",
           "Target": "deviceCompliancePolicyGroupAssignment"
         },
         {
@@ -18675,7 +18675,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "assignments",
           "ChangeType": "Change",
-          "Description": "Added the **assignments** navigation property to the [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) entity",
+          "Description": "Added the **assignments** navigation property to the iosLobAppProvisioningConfiguration entity",
           "Target": "iosLobAppProvisioningConfiguration"
         },
         {
@@ -18771,7 +18771,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enterpriseCloudResources,enterpriseInternalProxyServers,enterpriseIPRanges,enterpriseNetworkDomainNames,enterpriseProxyServers,neutralDomainResources",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [windowsNetworkIsolationPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsnetworkisolationpolicy?view=graph-rest-beta) complex type: **enterpriseCloudResources** from [windowsNetworkIsolationCloudResourceCollection](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsnetworkisolationcloudresourcecollection?view=graph-rest-beta) to [proxiedDomain](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-proxieddomain?view=graph-rest-beta) collection, **enterpriseInternalProxyServers** from windowsNetworkIsolationResourceCollection to String collection, **enterpriseIPRanges** from windowsNetworkIsolationIPRangeCollection to [ipRange](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iprange?view=graph-rest-beta) collection, **enterpriseNetworkDomainNames** from windowsNetworkIsolationResourceCollection to String collection, **enterpriseProxyServers** from windowsNetworkIsolationResourceCollection to String collection, **neutralDomainResources** from windowsNetworkIsolationResourceCollection to String collection, ",
+          "Description": "Changed the type of the following properties on the [windowsNetworkIsolationPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsnetworkisolationpolicy?view=graph-rest-beta) complex type: **enterpriseCloudResources** from windowsNetworkIsolationCloudResourceCollection to proxiedDomain collection, **enterpriseInternalProxyServers** from windowsNetworkIsolationResourceCollection to String collection, **enterpriseIPRanges** from windowsNetworkIsolationIPRangeCollection to ipRange collection, **enterpriseNetworkDomainNames** from windowsNetworkIsolationResourceCollection to String collection, **enterpriseProxyServers** from windowsNetworkIsolationResourceCollection to String collection, **neutralDomainResources** from windowsNetworkIsolationResourceCollection to String collection, ",
           "Target": "windowsNetworkIsolationPolicy,windowsNetworkIsolationCloudResourceCollection,proxiedDomain,ipRange"
         }
       ],
@@ -18813,7 +18813,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assign,windowsAutopilotDeploymentProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeploymentprofile-assign?view=graph-rest-beta) action on [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta)",
+          "Description": "Added the assign action on windowsAutopilotDeploymentProfile",
           "Target": "assign,windowsAutopilotDeploymentProfile"
         },
         {
@@ -18845,7 +18845,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "depOnboardingSetting",
           "ChangeType": "Addition",
-          "Description": "Added the uploadDepToken action on [depOnboardingSetting](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta) collection",
+          "Description": "Added the uploadDepToken action on depOnboardingSetting collection",
           "Target": "depOnboardingSetting"
         },
         {
@@ -18853,7 +18853,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "depOnboardingSetting",
           "ChangeType": "Addition",
-          "Description": "Added the syncWithAppleDeviceEnrollmentProgram action on [depOnboardingSetting](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta) collection",
+          "Description": "Added the syncWithAppleDeviceEnrollmentProgram action on depOnboardingSetting collection",
           "Target": "depOnboardingSetting"
         },
         {
@@ -18893,7 +18893,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "depOnboardingSetting",
           "ChangeType": "Addition",
-          "Description": "Added the getEncryptionPublicKey function on [depOnboardingSetting](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta) collection",
+          "Description": "Added the getEncryptionPublicKey function on depOnboardingSetting collection",
           "Target": "depOnboardingSetting"
         },
         {
@@ -19135,7 +19135,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "automaticallyUpdateApps,countryOrRegion",
           "ChangeType": "Change",
-          "Description": "Added the **automaticallyUpdateApps** and **countryOrRegion** properties to the [appleVolumePurchaseProgramToken](https://learn.microsoft.com/graph/api/resources/intune-apps-applevolumepurchaseprogramtoken?view=graph-rest-beta) entity",
+          "Description": "Added the **automaticallyUpdateApps** and **countryOrRegion** properties to the appleVolumePurchaseProgramToken entity",
           "Target": "appleVolumePurchaseProgramToken"
         },
         {
