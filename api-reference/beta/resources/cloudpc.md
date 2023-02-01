@@ -76,9 +76,9 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Member|Description|
 |:---|:---|
-|notAvailable|The Cloud PC is not provisioned, or in a state where encryption is not available.|
+|notAvailable|The Cloud PC is not provisioned, or is in a state where encryption is not available.|
 |notEncrypted|The Cloud PC should be encrypted, but the encryption is not done yet (reserved, should not happen).|
-|encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using platform managed key. This is the default value if the customer-managed key is not enabled.|
+|encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using a platform managed key. This is the default value if the customer-managed key is not enabled.|
 |encryptedUsingCustomerManagedKey|The Cloud PC is encrypted using the customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
