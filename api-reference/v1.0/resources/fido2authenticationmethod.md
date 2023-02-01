@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method.
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -48,15 +49,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
   "aaGuid": "String",
-  "model": "String",
   "attestationCertificates": [
     "String"
   ],
-  "attestationLevel": "String"
+  "attestationLevel": "String",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "model": "String"
 }
 ```
 

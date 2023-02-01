@@ -36,18 +36,18 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestorSettings",
-  "enableTargetsToSelfAddAccess": "Boolean",
-  "enableTargetsToSelfUpdateAccess": "Boolean",
-  "enableTargetsToSelfRemoveAccess": "Boolean",
   "allowCustomAssignmentSchedule": "Boolean",
   "enableOnBehalfRequestorsToAddAccess": "Boolean",
-  "enableOnBehalfRequestorsToUpdateAccess": "Boolean",
   "enableOnBehalfRequestorsToRemoveAccess": "Boolean",
+  "enableOnBehalfRequestorsToUpdateAccess": "Boolean",
+  "enableTargetsToSelfAddAccess": "Boolean",
+  "enableTargetsToSelfRemoveAccess": "Boolean",
+  "enableTargetsToSelfUpdateAccess": "Boolean",
   "onBehalfRequestors": [
     {
       "@odata.type": "microsoft.graph.singleUser"
     }
-  ]
+  ],
 }
 ```
 

@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 Represents an email address registered to a user. Email as an authentication method is available only for self-service password reset (SSPR). Users may only have one email authentication method.
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -46,8 +47,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethod",
-  "id": "String (identifier)",
-  "emailAddress": "String"
+  "emailAddress": "String",
+  "id": "String (identifier)"
 }
 ```
 
