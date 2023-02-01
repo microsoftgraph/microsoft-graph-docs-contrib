@@ -13,7 +13,7 @@ $requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new UserRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
-$queryParameters->orderBy = ["displayName"];
+$queryParameters->orderby = ["displayName"];
 $queryParameters->search = "\"displayName:tier\"";
 $queryParameters->select = ["displayName","id"];
 

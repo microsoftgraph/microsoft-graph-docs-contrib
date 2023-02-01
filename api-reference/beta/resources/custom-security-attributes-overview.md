@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: conceptualPageType
+ms.date: 04/01/2022
 ---
 
 # Overview of custom security attributes using the Microsoft Graph API (Preview)
@@ -57,6 +58,8 @@ Custom security attributes can be assigned to the following objects by using the
 
 + [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 + [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
+
+For examples of working with custom security attributes on supported resources, see [Assign, update, or remove custom security attributes using Microsoft Graph](/graph/custom-security-attributes-examples).
 
 ## Limits and constraints
 

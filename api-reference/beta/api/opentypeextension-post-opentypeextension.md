@@ -81,7 +81,7 @@ POST /groups/{groupId}/events/{eventId}/extensions
 POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
 POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
 POST /organization/{organizationId}/extensions
-POST /users/{userIdd|userPrincipalName}/contacts/{contactId}/extensions
+POST /users/{userId|userPrincipalName}/contacts/{contactId}/extensions
 POST /users/{userId|userPrincipalName}/extensions
 POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions
 POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions

@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementPartner resource type"
 description: "Entity which represents a connection to device management partner."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -25,6 +25,7 @@ Entity which represents a connection to device management partner.
 |[Create deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-create.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Create a new [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
 |[Delete deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-delete.md)|None|Deletes a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
 |[Update deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-update.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
+|[terminate action](../api/intune-onboarding-devicemanagementpartner-terminate.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -80,8 +81,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-

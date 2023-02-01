@@ -33,16 +33,16 @@ Note that the `bundle` resource type itself is not an entity of its own, and is 
 
 | Property name | Type      | Description
 |:--------------|:----------|:------------------------------------------------
-| childCount    | Int32     | Number of children contained immediately within this container.
-| album         | [album][] | If the bundle is an [album][], then the `album` property is included
+| album         | [album][] | If the bundle is an [album][], then the `album` property is included|
+| childCount    | Int32     | Number of children contained immediately within this container.|
 
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.bundle" } -->
 ```json
 {
-  "childCount": 3,
   "album": { "@odata.type": "microsoft.graph.album" },
+  "childCount": 3
 }
 ```
 

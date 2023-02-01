@@ -27,8 +27,8 @@ A category that can be applied to assignments.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|Unique identifier for the category.|
 |displayName|String|Unique identifier for the category.|
+|id|String|Unique identifier for the category.|
 
 ## JSON representation
 
@@ -44,8 +44,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
   "displayName": "String",
+  "id": "String (identifier)"
 }
 
 ```

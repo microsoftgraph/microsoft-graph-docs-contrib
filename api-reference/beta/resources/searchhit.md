@@ -2,7 +2,7 @@
 title: "searchHit resource type"
 description: "Description of searchHit entity"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
@@ -21,12 +21,13 @@ Represents a single result within the list of search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|contentSource|String|The name of the content source that the **externalItem** is part of.|
 |hitId|String|The internal identifier for the item. The format of the identifier varies based on the entity type. For details, see [hitId format](#hitid-format).|
+|isCollapsed|Boolean|Indicates whether the current result is collapses when the **collapseProperties** property is used.|
 |rank|Int32|The rank or the order of the result.|
-|contentSource|String|The name of the content source which the **externalItem** is part of .|
-|summary|String|A summary of the result, if a summary is available.|
-|resultTemplateId|String|ID of the result template for rendering the search result. This ID must map to a display layout in the **resultTemplates** dictionary, included in the [searchresponse](searchresponse.md) as well.|
 |resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
+|resultTemplateId|String|ID of the result template for rendering the search result. This ID must map to a display layout in the **resultTemplates** dictionary, included in the [searchresponse](searchresponse.md) as well.|
+|summary|String|A summary of the result, if a summary is available.|
 |_id (deprecated)|String| Renamed as **hitId**. The internal identifier for the item.|
 |_score (deprecated)|Int32|Renamed as **rank**. The score or the order of the result.|
 |_summary (deprecated)|String|Renamed as **summary**. A summary of the result (if summary is available).|

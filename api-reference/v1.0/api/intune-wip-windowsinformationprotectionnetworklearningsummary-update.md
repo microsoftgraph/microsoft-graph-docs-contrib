@@ -1,7 +1,7 @@
 ---
 title: "Update windowsInformationProtectionNetworkLearningSummary"
 description: "Update the properties of a windowsInformationProtectionNetworkLearningSummary object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -85,10 +85,3 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsAnomalySeverityOverview resource type"
 description: "The user experience analytics anomaly severity overview entity contains the count information for each severity of anomaly."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -20,11 +20,10 @@ The user experience analytics anomaly severity overview entity contains the coun
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lowSeverityAnomalyCount|Int32|The number of low severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
-|mediumSeverityAnomalyCount|Int32|The number of medium severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
-|highSeverityAnomalyCount|Int32|The number of high severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
-|informationalSeverityAnomalyCount|Int32|The number of informational severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
-|otherSeverityAnomalyCount|Int32|The number of anomalies which have been detected with undefined severity. Valid values -2147483648 to 2147483647|
+|lowSeverityAnomalyCount|Int32|Indicates count of low severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
+|mediumSeverityAnomalyCount|Int32|Indicates count of medium severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
+|highSeverityAnomalyCount|Int32|Indicates count of high severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
+|informationalSeverityAnomalyCount|Int32|Indicates count of informational severity anomalies which have been detected. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None
@@ -42,12 +41,6 @@ Here is a JSON representation of the resource.
   "lowSeverityAnomalyCount": 1024,
   "mediumSeverityAnomalyCount": 1024,
   "highSeverityAnomalyCount": 1024,
-  "informationalSeverityAnomalyCount": 1024,
-  "otherSeverityAnomalyCount": 1024
+  "informationalSeverityAnomalyCount": 1024
 }
 ```
-
-
-
-
-

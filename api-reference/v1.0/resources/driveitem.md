@@ -19,7 +19,7 @@ There are two primary ways of addressing a **driveItem** resource:
 * By the **driveItem** unique identifier using `drive/items/{item-id}`
 * By file system path using `/drive/root:/path/to/file`
 
-For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems).
+For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems). 
 
 **driveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
@@ -196,10 +196,10 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
-  "id": "string (identifier)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "eTag": "string",
+  "id": "string (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",

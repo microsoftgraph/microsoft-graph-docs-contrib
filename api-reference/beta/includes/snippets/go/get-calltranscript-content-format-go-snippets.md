@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFormat := "text/vtt"
 
-requestParameters := &graphconfig.ContentRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.UserItemOnlineMeetingItemTranscriptItemContentRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphconfig.ContentRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemOnlineMeetingItemTranscriptItemContentRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

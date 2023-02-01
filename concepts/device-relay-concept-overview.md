@@ -2,8 +2,8 @@
 title: "Device relay API in Microsoft Graph (preview)"
 description: "Use the Microsoft Graph device relay APIs to enable users to transfer an experience from one device to another or enhance it by using multiple devices at once."
 ms.localizationpriority: medium
-author: "FaithOmbongi"
-ms.prod: "cross-device-experiences"
+ms.prod: "project-rome"
+ms.custom: scenarios:getting-started
 ---
 
 # Device relay API in Microsoft Graph (preview)

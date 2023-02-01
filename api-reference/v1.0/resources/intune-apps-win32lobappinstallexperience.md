@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppInstallExperience resource type"
 description: "Contains installation experience properties for a Win32 App"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -38,10 +38,3 @@ Here is a JSON representation of the resource.
   "deviceRestartBehavior": "String"
 }
 ```
-
-
-
-
-
-
-

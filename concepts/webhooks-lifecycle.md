@@ -1,9 +1,13 @@
 ---
 title: "Reduce missing subscriptions and change notifications"
 description: "Apps subscribing to change notifications might get their subscriptions removed and miss some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow."
-author: "jumasure"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jumasure
 ms.localizationpriority: high
+ms.prod: "change-notifications"
 ms.custom: graphiamtop20
+ms.date: 12/02/2022
 ---
 
 # Reduce missing subscriptions and change notifications

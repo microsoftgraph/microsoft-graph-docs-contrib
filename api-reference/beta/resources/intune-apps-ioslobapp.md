@@ -1,7 +1,7 @@
 ---
 title: "iosLobApp resource type"
 description: "Contains properties and inherited properties for iOS Line Of Business apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -61,7 +61,6 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |expirationDateTime|DateTimeOffset|The expiration time.|
 |versionNumber|String|The version number of iOS Line of Business (LoB) app.|
 |buildNumber|String|The build number of iOS Line of Business (LoB) app.|
-|identityVersion|String|The identity version.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -133,12 +132,6 @@ Here is a JSON representation of the resource.
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
-  "buildNumber": "String",
-  "identityVersion": "String"
+  "buildNumber": "String"
 }
 ```
-
-
-
-
-

@@ -56,15 +56,15 @@ where files are shared, and where tabs are added.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
+|createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |description|String|Optional textual description for the channel.|
-|displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
+|displayName|String|Channel name as it will appear to the user in Microsoft Teams. The maximum length is 50 characters.|
+|email|String| The email address for sending messages to the channel. Read-only.|
 |id|String|The channel's unique identifier. Read-only.|
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
-|email|String| The email address for sending messages to the channel. Read-only.|
-|webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 |membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
-|createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |tenantId |string | The ID of the Azure Active Directory tenant. |
+|webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 
 ### channelMembershipType values
 
@@ -74,6 +74,7 @@ where files are shared, and where tabs are added.
 | private            | Channel can have members that are a subset of all the members on the parent team. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                 |
 | shared             | Members can be directly added to the channel without adding them to the team.     |
+
 
 ### Instance attributes
 
@@ -91,12 +92,12 @@ For a POST request example, see [Request (create channel in migration state)](/m
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
-|tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
-|members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
+|members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
+|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
 |sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|
+|tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 
 ## JSON representation
 
@@ -113,14 +114,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "createdDateTime": "string (timestamp)",
   "description": "string",
   "displayName": "string",
+  "email": "string",
   "id": "string (identifier)",
   "isFavoriteByDefault": true,
-  "email": "string",
-  "webUrl": "string",
   "membershipType": "String",
-  "createdDateTime": "string (timestamp)"
+  "webUrl": "string"
 }
 ```
 

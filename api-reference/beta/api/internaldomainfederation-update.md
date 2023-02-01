@@ -1,7 +1,7 @@
 ---
 title: "Update internalDomainFederation"
 description: "Update the properties of an internalDomainFederation object."
-author: "akgoel23"
+author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

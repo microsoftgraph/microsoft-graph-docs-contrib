@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "mlafleur"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -13,6 +13,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:  
 
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                            | <!-- fake header-->                                                                                                                                                                                                                                                                                                    |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [educationClass](/graph/api/resources/educationclass) <li> [educationCourse](/graph/api/resources/educationcourse) <li> [educationOnPremisesInfo](/graph/api/resources/educationonpremisesinfo) <li> [educationOrganization](/graph/api/resources/educationorganization) <li> educationRelatedContact <li> [educationRoot](/graph/api/resources/educationroot) </ul> | <ul><li> [educationSchool](/graph/api/resources/educationschool) <li> [educationStudent](/graph/api/resources/educationstudent) <li> [educationTeacher](/graph/api/resources/educationteacher) <li> [educationTerm](/graph/api/resources/educationterm) <li> [educationUser](/graph/api/resources/educationuser) </ul> |
+| <!-- fake header--> | <!-- fake header--> |
+|---|---|
+| <ul> <li> [educationClass](/graph/api/resources/educationclass) <li> [educationCourse](/graph/api/resources/educationcourse) <li> [educationOnPremisesInfo](/graph/api/resources/educationonpremisesinfo) <li> [educationOrganization](/graph/api/resources/educationorganization) <li> [educationRelatedContact](/graph/api/resources/relatedcontact) <li> [educationRoot](/graph/api/resources/educationroot) </ul> | <ul><li> [educationSchool](/graph/api/resources/educationschool) <li> [educationStudent](/graph/api/resources/educationstudent) <li> [educationTeacher](/graph/api/resources/educationteacher) <li> [educationTerm](/graph/api/resources/educationterm) <li> [educationUser](/graph/api/resources/educationuser) </ul> |
