@@ -24608,6 +24608,20 @@ items:
               href: resources/callrecords-pstncalllogrow.md
             - name: List PSTN calls
               href: api/callrecords-callrecord-getpstncalls.md
+            - name: PSTN blocked users
+              href: resources/callrecords-pstnblockeduserslogrow.md
+            - name: List blocked users
+              href: api/callrecords-callrecord-getpstnblockeduserslog.md
+            - name: PSTN conference dialout report
+              href: resources/callrecords-pstnonlinemeetingdialoutreport.md
+            - name: Get conference dialout report
+              href: api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md
+          - name: SMS
+            items:
+            - name: SMS log row
+              href: resources/callrecords-smslogrow.md
+            - name: List SMS
+              href: api/callrecords-callrecord-getsmslog.md
           - name: Session
             items:
             - name: Session

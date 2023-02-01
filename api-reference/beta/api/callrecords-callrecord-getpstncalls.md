@@ -67,7 +67,6 @@ The following example shows how to get a collection of records for PSTN calls th
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -91,20 +90,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 [!INCLUDE [sample-code](../includes/snippets/java/callrecord-getpstncalls-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/callrecord-getpstncalls-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/callrecord-getpstncalls-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/callrecord-getpstncalls-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### Response
 
@@ -122,7 +108,9 @@ HTTP/1.1 200 OK
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.callRecords.pstnCallLogRow)",
     "@odata.count": 1000,
-    "value": [{
+    "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000",
+    "value": [
+        {
             "id": "9c4984c7-6c3c-427d-a30c-bd0b2eacee90",
             "callId": "1835317186_112562680@61.221.3.176",
             "userId": "db03c14b-06eb-4189-939b-7cbf3a20ba27",
@@ -144,14 +132,18 @@ HTTP/1.1 200 OK
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
             "inventoryType": "Subscriber",
-			"operator": "Microsoft",
-			"callDurationSource": "microsoft"
-        }],
-    "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
+            "operator": "Microsoft",
+            "callDurationSource": "microsoft",
+            "otherPartyCountryCode": "US"
+        }
+    ]
 }
 ```
 
 ## See also
 
-* [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report).
-* [Direct routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md).
+- [Get aggregated report of the audio conferencing dial-out](callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)
+- [Get log of users who are blocked from making PSTN calls](callrecords-callrecord-getpstnblockeduserslog.md)
+- [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)
+- [Get log of direct routing calls](callrecords-callrecord-getdirectroutingcalls.md)
+- [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
