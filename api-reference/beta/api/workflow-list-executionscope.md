@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve the execution scope (users that fall under scope to be processed) of a workflow
+### Example 1: Retrieve the users that fall in scope of a workflow
 
 #### Request
 

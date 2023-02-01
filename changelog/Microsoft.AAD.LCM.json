@@ -25,8 +25,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the **List** operation to the [workflowExecutionConditions](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowexecutionconditions?view=graph-rest-beta) resource.",
-          "Target": "workflowExecutionConditions"
+          "Description": "Added the **List** operation to [retrieve users that are in scope of execution conditions of a workflow](https://learn.microsoft.com/en-us/graph/api/identitygovernance-list-executionscope?view=graph-rest-beta) in Lifecycle Workflows.",
+          "Target": "workflow"
         }
      ],
      "Id": "66538043-58e5-48fb-82d7-a603551c232f",
