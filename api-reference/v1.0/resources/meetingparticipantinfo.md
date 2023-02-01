@@ -18,8 +18,8 @@ Information about a participant in a meeting.
 | Property | Type                          | Description                                                                         |
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
 | identity | [identitySet](identityset.md) | Identity information of the participant.                                            |
-| role     | onlineMeetingRole             | Specifies the participant's role in the meeting.  Possible values are `attendee`, `presenter`, `producer`, and `unknownFutureValue`.|
 | role     | [onlineMeetingRole](#onlinemeetingrole-values)     | Specifies the participant's role in the meeting.|
+| upn      | String                        | User principal name of the participant.                                             |
 
 ### onlineMeetingRole values
 
