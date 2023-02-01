@@ -27,8 +27,8 @@ Inherits from [validateOperation](industrydata-validateoperation.md).
 
 | Method                                                                            | Return type                                                                                              | Description                                                                                                          |
 | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| [List fileValidateOperations](../api/industrydata-fileValidateOperations-list.md) | [microsoft.graph.industryData.fileValidateOperations](industrydata-fileValidateOperations.md) collection | Get a list of the [fileValidateOperations](industrydata-fileValidateOperations.md) objects and their properties.     |
-| [Get fileValidateOperation](../api/industrydata-fileValidateOperations-get.md)    | [microsoft.graph.industryData.fileValidateOperations](industrydata-fileValidateOperations.md)            | Read the properties and relationships of an [fileValidateOperations](industrydata-fileValidateOperations.md) object. |
+| [List fileValidateOperations](../api/industrydata-filevalidateoperations-list.md) | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md) collection | Get a list of the [fileValidateOperation](industrydata-filevalidateoperation.md) objects and their properties.     |
+| [Get fileValidateOperation](../api/industrydata-filevalidateoperations-get.md)    | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md)            | Read the properties and relationships of an [fileValidateOperation](industrydata-filevalidateoperation.md) object. |
 
 ## Properties
 

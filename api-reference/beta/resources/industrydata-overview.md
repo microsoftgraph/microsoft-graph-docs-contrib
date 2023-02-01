@@ -159,9 +159,9 @@ The current file upload session is retrieved from an **azureDataLakeConnector** 
 
 ##### Validate uploaded files
 
-Uploaded data files must validated before an inbound flow can process the data. The validation process finalizes the current **fileUploadSession** and verifies that all required files are present and properly. Validation is initiated by calling the [industryDataConnector: validate](../api/industrydata-industrydataconnector-validate.md) action of the **azureDataLakeConnector**.
+Uploaded data files must be validated before an inbound flow can process the data. The validation process finalizes the current **fileUploadSession** and verifies that all required files are present and properly. Validation is initiated by calling the [industryDataConnector: validate](../api/industrydata-industrydataconnector-validate.md) action of the **azureDataLakeConnector**.
 
-The **validate** action creates a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). The URI for the **fileValidateOperation** is provided in the `Location` header of the response. The **fileValidateOperation** URI may be polled to track the it's status and, one complete, any errors or warnings encountered during validation.
+The **validate** action creates a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). The URI for the **fileValidateOperation** is provided in the `Location` header of the response. You can use this URI to track the status of the long-running operation, and once complete, any errors or warnings encountered during validation.
 
 ## What's new
 

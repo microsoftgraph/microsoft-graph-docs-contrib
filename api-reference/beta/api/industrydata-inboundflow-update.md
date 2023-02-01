@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /external/industryData/inboundFlows/7bd62d17-8c37-4494-f68d-08daddab2911
+PATCH /external/industryData/inboundFlows/{inboundFlowId}
 ```
 
 ## Request headers

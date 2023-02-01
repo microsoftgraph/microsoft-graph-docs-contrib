@@ -1,6 +1,6 @@
 ---
 title: "List fileValidateOperations"
-description: "Get a list of long-running operations and their statuses."
+description: "Get a list of long-running file validation operations and their statuses."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [file validation operations](../resources/industrydata-fileValidateOperation.md) and their statuses.
+Get a list of  long-running [file validation operations](../resources/industrydata-filevalidateoperation.md) and their statuses.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [fileValidateOperation](../resources/industrydata-fileValidateOperation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [fileValidateOperation](../resources/industrydata-filevalidateoperation.md) objects in the response body.
 
 ## Examples
 
