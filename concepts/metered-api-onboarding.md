@@ -17,9 +17,9 @@ Examples of APIs that are currently metered include:
 - Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update.md)
 - SharePoint [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md)
 
-See [List of Microsoft Graph Azure-metered APIs](metered-api-list.md) for the full list of APIs that may require payment.
+See [List of Microsoft Graph Azure-metered APIs](metered-api-list.md) for the full list of metered APIs that may require payment.
 
-To consume Azure-metered APIs and services, the Azure Active Directory registration for the application consuming the APIs must be associated to an Azure Subscription which will be billed for any consumption related charges. Creating the assocation will enable the following Azure Cost Management and Billing experiences: Cost Analysis, Budgets and Alerts, and Export CSV. These instructions will outline the process of completing this association.
+To consume Azure-metered APIs and services, the Azure Active Directory application registration consuming the APIs must be associated to an Azure Subscription which will be billed for any metered charges. In addition to enabling usage of metered APIs, the association allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of this application. These instructions will outline the process of completing this association.
 
 ## Current limitations
 - Microsoft Graph Azure-metered APIs and services are not currently available in national cloud deployments. See [National cloud deployments](deployments.md) for more information on national clouds.
@@ -33,24 +33,18 @@ Before accessing Microsoft Graph Azure-metered APIs and services, you must compl
 - If the APIs you plan to use are Protected APIs, submit the [request form for Teams](teams-protected-apis.md) or [request form for SharePoint](https://aka.ms/PreviewSPOPremiumAPI) depending on which APIs you are calling.
 
 ## Enabling an application
-To enable an application to call Azure-metered APIs or take advantage of Azure-metered services it must be associated with an Azure Subscription. To create this association, an Azure resource of type **Microsoft.GraphServices/accounts** needs to be created to connect the application registration to a subscription. The Azure resource will map 1:1 with an Azure Active Directory application registration. 
+To enable an application to use Microsoft Graph Azure-metered APIs or services it must be associated with an Azure Subscription. To create this association, an Azure resource of type **Microsoft.GraphServices/accounts** needs to be created to connect the application registration to a subscription. The Azure resource connects a single Azure Active Directory application registration with the Azure Subscription where the application's usage of metered APIs is billed. 
 
 Use the following steps to create and link a Microsoft.GraphServices/accounts Azure Resource to your application:
-1. Sign in to https://portal.azure.com
+Note: The following steps can be completed either by signing in to https://portal.azure.com and choosing **Cloud Shell** or using your local Azure command-line interface. When using Cloud Shell for the first time you might need to create a storage account.  Select an Azure subscription, choose **Create** and follow the instructions to create a storage account.
 
-2. Choose **Cloud Shell**, and if given a choice, choose **PowerShell**.
-Note: If you're using Cloud Shell for the first time you might need to create a storage account.  Select an Azure subscription, choose **Create** and follow the instructions to create a storage account.
+1. If you have multiple Azure subscriptions see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps) for information on setting the active subscription, otherwise continue to the next step.
 
-3. If you have multiple Azure subscriptions see [Use multiple Azure subscriptions](https://learn.microsoft.com/powershell/azure/manage-subscriptions-azureps) for information on setting the active subscription, otherwise continue to the next step.
-
-4. To register the **Microsoft.GraphServices** resource provider to your active subscription so an Azure resource can be created, copy the command below, paste into Cloud Shell and type  <**Enter**>.
+2. Use **az provider register** to register the **Microsoft.GraphServices** resource provider on your active subscription so an Azure resource can be created. Copy the command below, paste into your command-line interface and type  <**Enter**>.
 ```PowerShell
-Register-AzResourceProvider -ProviderNamespace Microsoft.GraphServices
+az provider register --namespace Microsoft.GraphServices
 ```
-
-5. Copy the command below, paste into Cloud Shell and replace the highlighted text with your own value, type <**Enter**>. The result will be a JSON representation of your Microsoft.GraphServices/accounts resource.
-
-Before executing the command, replace the following parameters with your own values:
+3. Use **az resource create** to create a new instance of the **Microosft.GraphServices/accounts** resource type to associate your app registration with the active subscription. Copy the command below, paste into your command-line interface and replace the parameters listed in the table below with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the newly created resource.
 
 | Parameter | Description |
 |:--------------------------|:----------------------------------------|
@@ -63,7 +57,7 @@ Before executing the command, replace the following parameters with your own val
 az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId\`": `"myAppGUID`"}" --latest-include-preview --location Global –subscription mySubscriptionGUID
 ```
 
-A successful result will look something like this:
+A successful JSON result will look something like this:
 
 ```
 {
@@ -94,10 +88,11 @@ A successful result will look something like this:
 ```
 
 ## Consuming metered APIs in your app
-After you have enabled your app to consume Microsoft Graph Azure-metered APIs and services, the app can start making API calls for metered APIs. Charges generated from those requests will be charged to the Azure Subscription associated with the app.
+Once you have associated your app registration and subscription, your app can start using metered Microsoft Graph APIs and services. Charges generated from those requests will be charged to the Azure Subscription associated with the app.
+Note: Your application may need to request a new OAuth access token before requests to metered APIs will be allowed.
 
-Cost and usage of Azure-metered APIs and services can be monitoring through [Azure Cost Management + Billing](https://learn.microsoft.com/azure/cost-management-billing/). This provides access to costs within the subscription, which can be split based on application, calling tenant, or meter.
+Cost and usage of Azure-metered APIs and services can be monitoring through [Azure Cost Management + Billing](/azure/cost-management-billing/). This provides access to costs within the subscription, which can be split based on application, calling tenant, or meter.
 
 ## Receiving a bill for Microsoft Graph Azure-metered API and service usage
-After the subscription billing cycle runs, typically on the 5th day of the month, a subscription owner or users with role-based permissions can download an invoice. For details, see [View and download your Azure invoice | Microsoft Docs](https://learn.microsoft.com/azure/cost-management-billing/understand/download-azure-invoice).
-The invoice will include details that allow you to understand the amount of usage your application generates and for multi-tenant applications where that usage is happening. For more details, see [Understand your Azure invoice | Microsoft Docs](https://learn.microsoft.com/azure/cost-management-billing/understand/understand-invoice).
+After the subscription billing cycle runs, typically on the 5th day of the month, a subscription owner or users with role-based permissions can download an invoice. For details, see [View and download your Azure invoice | Microsoft Docs](/azure/cost-management-billing/understand/download-azure-invoice).
+The invoice will include details that allow you to understand the amount of usage your application generates and for multi-tenant applications where that usage is happening. For more details, see [Understand your Azure invoice | Microsoft Docs](/azure/cost-management-billing/understand/understand-invoice).
