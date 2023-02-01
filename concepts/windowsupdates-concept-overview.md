@@ -41,7 +41,7 @@ Additionally, devices managed by the deployment service must:
 
 ## Enroll devices to be managed
 
-To start using the deployment service, [enroll devices in update management](windowsupdates-enroll.md) and [enroll devices in driver management](windowsupdates-manage-driver-update#Step-1:-Enroll-devices-in-driver-management).
+To start using the deployment service, [enroll devices in update management](windowsupdates-enroll.md) and [enroll devices in driver management](windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
 
 ## Approve and schedule Windows content delivered from Windows Update
 
