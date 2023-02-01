@@ -1619,7 +1619,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "recurrence",
           "ChangeType": "Addition",
-          "Description": "Added the `recurrence` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **recurrence** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1648,7 +1648,7 @@
         },
         {
           "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "recurrencePatternType",
           "ChangeType": "Addition",
           "Description": "Added the **recurrencePatternType** enumeration type.",
@@ -1656,7 +1656,7 @@
         },
         {
           "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "weekIndex",
           "ChangeType": "Addition",
           "Description": "Added the **weekIndex** enumeration type.",
@@ -1664,7 +1664,7 @@
         },
         {
           "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "dayOfWeek",
           "ChangeType": "Addition",
           "Description": "Added the **dayOfWeek** enumeration type.",
