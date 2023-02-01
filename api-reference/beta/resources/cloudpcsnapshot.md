@@ -43,7 +43,7 @@ Inherits from [entity](../resources/entity.md).
 |ready|The snapshot is ready to restore the Cloud PC device.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
-### cloudpcSnapshotType values
+### cloudPcSnapshotType values
 
 Describe the type of cloud pc snapshot.
 
