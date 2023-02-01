@@ -1,5 +1,5 @@
 ---
-title: "List yearTimePeriodDefinition"
+title: "List yearTimePeriodDefinitions"
 description: "Get a list of the yearTimePeriodDefinition objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
-# List yearTimePeriodDefinition
+# List yearTimePeriodDefinitions
 
 Namespace: microsoft.graph.industryData
 

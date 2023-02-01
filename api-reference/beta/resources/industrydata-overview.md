@@ -72,9 +72,9 @@ You can integrate industry data APIs with 3rd-party apps. To enable this integra
 
 | Use cases                                                   | REST resources                                                                | See also                                                                                         |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
+| Create an activity to import a delimited data set          | [inboundFileFlow](../resources/industrydata-inboundfileflow.md)               | [Methods of inboundFileFlow](../resources/industrydata-inboundfileflow.md#methods)               |
+| Create a connector to retrieve data from an Azure Data Lake | [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) | [Methods of azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md#methods) |
 | Define a source of inbound data                             | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | [Methods of sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md#methods) |
-| Create a connector to retrieve data from an Azure Data Lake | [azureDataLakeConnector](../resources/industrydata-azureDataLakeConnector.md) | [Methods of azureDataLakeConnector](../resources/industrydata-azureDataLakeConnector.md#methods) |
-| Create an activity to import a fdelimited data set          | [inboundFileFlow](../resources/industrydata-inboundFileFlow.md)               | [Methods of inboundFileFlow](../resources/industrydata-inboundFileFlow.md#methods)               |
 
 ## Concepts
 

@@ -1,5 +1,5 @@
 ---
-title: "List industryDataConnector"
+title: "List industryDataConnectors"
 description: "Get the industryDataConnector resources from the dataConnector navigation property."
 author: "mlafleur"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
-# List industryDataConnector
+# List industryDataConnectors
 
 Namespace: microsoft.graph.industryData
 
