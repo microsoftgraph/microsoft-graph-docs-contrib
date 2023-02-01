@@ -2,7 +2,7 @@
 title: "plannerTaskCompletionRequirements enum type"
 description: "Flag enum representing the completion requirements on task."
 ms.localizationpriority: medium
-author: "TarkanSevilmis"
+author: "prasad5596"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
@@ -20,6 +20,6 @@ Flag enum representing the completion requirements on [plannerTask](plannertask.
 |:---|:---|:---|
 |none|0|No requirement.|
 |checklistCompletion|1|Some or All of checklist items are required to be checked.|
-|unknownFutureValue|2|The unknownFutureValue for evolvable enum.|
+|unknownFutureValue|2|Supports future values.|
 
 

@@ -1,7 +1,7 @@
 ---
 title: "plannerChecklistRequirement resource type"
 description: "Represents a checklist completion requirement on task."
-author: "TarkanSevilmis"
+author: "prasad5596"
 ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: resourcePageType

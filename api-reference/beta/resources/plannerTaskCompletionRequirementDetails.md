@@ -1,7 +1,7 @@
 ---
 title: "plannerTaskCompletionRequirementDetails resource type"
 description: "This is the structure that stores requirements for the task completion"
-author: "TarkanSevilmis"
+author: "prasad5596"
 ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is the structure that stores requirements for the [plannerTask](plannertask.md) completion.
+Represents the detail information about [completionRequirements](plannerTaskCompletionRequirements.md) for the [plannerTask](plannertask.md).
 
 ## Properties
 
