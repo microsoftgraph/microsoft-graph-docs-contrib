@@ -8097,6 +8097,20 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: File attachment
+        items:
+        - name: File attachment
+          href: resources/taskfileattachment.md
+        - name: List
+          href: api/todotask-list-attachments.md
+        - name: Get
+          href: api/taskfileattachment-get.md
+        - name: Delete
+          href: api/taskfileattachment-delete.md
+        - name: Attach all file sizes
+          href: api/taskfileattachment-createuploadsession.md
+        - name: Attach small file
+          href: api/todotask-post-attachments.md
       - name: Checklist item
         href: resources/checklistitem.md
         items:
