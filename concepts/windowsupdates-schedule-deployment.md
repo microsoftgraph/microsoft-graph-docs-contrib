@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 When deploying an update using the deployment service, you can schedule the deployment so that devices receive the update at a future date.
 
-Scheduling features are compatible with [deployments](windowsupdates-deployments) of Windows 10/11 feature updates.
+Scheduling features are compatible with [deployments](/graph/windowsupdates-deployments) of Windows 10/Windows 11 feature updates.
 
 ## Schedule a deployment to start at a future date
 
