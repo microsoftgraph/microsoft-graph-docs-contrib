@@ -18905,29 +18905,30 @@ items:
             href: api/windowsupdates-updatepolicy-update.md
           - name: Delete
             href: api/windowsupdates-updatepolicy-delete.md
-          - name: Compliance change
+        - name: Compliance change
+          href: resources/windowsupdates-compliancechange.md
+          items: 
+          - name: List
+              href: api/windowsupdates-updatepolicy-list-compliancechanges.md
+          - name: Get
+              href: api/windowsupdates-compliancechange-get.md
+          - name: Update
+              href: api/windowsupdates-compliancechange-update.md
+          - name: Delete
+              href: api/windowsupdates-compliancechange-delete.md
+          - name: Content approval
+            href: resources/windowsupdates-contentapproval.md
             items:
             - name: List
-              href: api/windowsupdates-updatepolicy-list-compliancechanges.md
+              href: api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md
+            - name: Create
+              href: api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md
             - name: Get
-              href: api/windowsupdates-compliancechange-get.md
+              href: api/windowsupdates-contentapproval-get.md
             - name: Update
-              href: api/windowsupdates-compliancechange-update.md
+              href: api/windowsupdates-contentapproval-update.md
             - name: Delete
-              href: api/windowsupdates-compliancechange-delete.md
-            - name: Content approval
-              href: resources/windowsupdates-contentapproval.md
-              items:
-              - name: List
-                href: api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md
-              - name: Create
-                href: api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md
-              - name: Get
-                href: api/windowsupdates-contentapproval-get.md
-              - name: Update
-                href: api/windowsupdates-contentapproval-update.md
-              - name: Delete
-                href: api/windowsupdates-contentapproval-delete.md
+              href: api/windowsupdates-contentapproval-delete.md
         - name: Updatable asset
           href: resources/windowsupdates-updatableasset.md
           items:
