@@ -122,7 +122,8 @@ The collection must contain only one of these values.
 Specifies whether the task **percentComplete** property can be changed. Accepted values are:
 
 * `block`: The task **percentComplete** property can't be changed.
-* `setToComplete`: The task **percentComplete** property can be set to `100`.
+* `setToComplete`: The task **percentComplete** property can be set to `100` after completion requirements are met.
+* `overrideRequirementsAndSetToComplete`: The task **percentComplete** property can be set to `100` even if completion requirements are not met.
 * `setToInProgress`: The task **percentComplete** property can be set to values from `1` to `99`.
 * `setToNotStarted`: The task **percentComplete** property can be set to `0`.
 * `allow`: The task **percentComplete** property can be changed.
