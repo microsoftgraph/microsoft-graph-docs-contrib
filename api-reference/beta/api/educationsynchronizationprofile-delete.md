@@ -1,5 +1,5 @@
 ---
-title: "Delete a educationSynchronizationProfile"
+title: "Delete a educationSynchronizationProfile (deprecated)"
 description: "Delete a school data synchronization profile in the tenant based on the identifier."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Delete a educationSynchronizationProfile
+# Delete a educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Delete a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 

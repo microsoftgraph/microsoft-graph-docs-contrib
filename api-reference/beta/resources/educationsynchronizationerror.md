@@ -1,5 +1,5 @@
 ---
-title: "educationSynchronizationError resource type"
+title: "educationSynchronizationError resource type (deprecated)"
 description: "Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD)."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationError resource type
+# educationSynchronizationError resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD).
 

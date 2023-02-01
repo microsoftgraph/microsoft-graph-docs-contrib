@@ -1,5 +1,5 @@
 ---
-title: "educationSynchronizationDataProvider resource type"
+title: "educationSynchronizationDataProvider resource type (deprecated)"
 description: "Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema. "
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationDataProvider resource type
+# educationSynchronizationDataProvider resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Represents the data provider to use as the synchronization source for a [educationSynchronizationProfile].
 

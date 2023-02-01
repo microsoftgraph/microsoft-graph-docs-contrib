@@ -19396,36 +19396,36 @@ items:
           href: resources/educationrubricoutcome.md
         - name: Update outcome
           href: api/educationoutcome-update.md
-      - name: Synchronization profile
+      - name: Synchronization profile (deprecated)
         href: resources/educationsynchronizationprofile.md
         items:
-        - name: List profile
+        - name: List profile (deprecated)
           href: api/educationsynchronizationprofile-list.md
-        - name: Create profile
+        - name: Create profile (deprecated)
           href: api/educationsynchronizationprofile-post.md
-        - name: Get profile
+        - name: Get profile (deprecated)
           href: api/educationsynchronizationprofile-get.md
-        - name: Delete profile
+        - name: Delete profile (deprecated)
           href: api/educationsynchronizationprofile-delete.md
-        - name: Start sync
+        - name: Start sync (deprecated)
           href: api/educationsynchronizationprofile-start.md
-        - name: Pause sync
+        - name: Pause sync (deprecated)
           href: api/educationsynchronizationprofile-pause.md
-        - name: Resume sync
+        - name: Resume sync (deprecated)
           href: api/educationsynchronizationprofile-resume.md
-        - name: Reset sync
+        - name: Reset sync (deprecated)
           href: api/educationsynchronizationprofile-reset.md
-        - name: Get upload URL
+        - name: Get upload URL (deprecated)
           href: api/educationsynchronizationprofile-uploadurl.md
-      - name: Synchronization profile status
+      - name: Synchronization profile status (deprecated)
         href: resources/educationsynchronizationprofilestatus.md
         items:
-        - name: Get
+        - name: Get (deprecated)
           href: api/educationsynchronizationprofilestatus-get.md
-      - name: Synchronization errors
+      - name: Synchronization errors (deprecated)
         href: resources/educationsynchronizationerror.md
         items:
-        - name: Get
+        - name: Get (deprecated)
           href: api/educationsynchronizationerrors-get.md
     - name: Extensions
       items:

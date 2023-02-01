@@ -1,5 +1,5 @@
 ---
-title: "educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource"
+title: "educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource (deprecated)"
 description: "When OAuth2 Client Credentials Grant is to be used to connect to the data provider, this connection settings type should be used to set up the profile."
 ms.localizationpriority: medium
 author: "mmast-msft"
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
+# educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 When [OAuth2 Client Credentials Grant](https://tools.ietf.org/html/rfc6749#section-4.4) is to be used to connect to the data provider, this connection settings type should be used to set up the profile.
 

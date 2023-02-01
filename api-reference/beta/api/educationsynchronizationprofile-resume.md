@@ -1,5 +1,5 @@
 ---
-title: "Resume sync on an educationSynchronizationProfile"
+title: "Resume sync on an educationSynchronizationProfile (deprecated)"
 description: "Resume the sync of a specific school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Resume sync on an educationSynchronizationProfile
+# Resume sync on an educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 

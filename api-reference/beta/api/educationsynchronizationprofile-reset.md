@@ -1,5 +1,5 @@
 ---
-title: "Reset sync on an educationSynchronizationProfile"
+title: "Reset sync on an educationSynchronizationProfile (deprecated)"
 description: "Reset the sync of a specific school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Reset sync on an educationSynchronizationProfile
+# Reset sync on an educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Reset the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 

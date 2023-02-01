@@ -1,5 +1,5 @@
 ---
-title: "educationSynchronizationProfileStatus resource type"
+title: "educationSynchronizationProfileStatus resource type (deprecated)"
 description: "Represents the synchronization status of a school data synchronization profile."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationProfileStatus resource type
+# educationSynchronizationProfileStatus resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Represents the synchronization status of a school data [synchronization profile](educationsynchronizationprofile.md).
 

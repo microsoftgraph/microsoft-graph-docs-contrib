@@ -1,5 +1,5 @@
 ---
-title: "Get the status of an educationSynchronizationProfile"
+title: "Get the status of an educationSynchronizationProfile (deprecated)"
 description: "Get the status of a specific school data synchronization profile in the tenant. The response will indicate the status of the sync."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Get the status of an educationSynchronizationProfile
+# Get the status of an educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Get the status of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. The response will indicate the status of the sync.
 

@@ -1,5 +1,5 @@
 ---
-title: "Get educationSynchronizationErrors"
+title: "Get educationSynchronizationErrors (deprecated)"
 description: "Get the errors generated during validation and/or during a sync of a specific school data synchronization profile in the tenant. "
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Get educationSynchronizationErrors
+# Get educationSynchronizationErrors (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Get the errors generated during validation and/or during a sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 

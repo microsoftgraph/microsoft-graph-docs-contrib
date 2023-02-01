@@ -1,5 +1,5 @@
 ---
-title: "educationSynchronizationCustomizations resource type"
+title: "educationSynchronizationCustomizations resource type (deprecated)"
 description: "Contains the list of entities to sync and their customizations, if any."
 ms.localizationpriority: medium
 author: "mmast-msft"
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationCustomizations resource type
+# educationSynchronizationCustomizations resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Contains the list of entities to sync and their customizations, if any.
 

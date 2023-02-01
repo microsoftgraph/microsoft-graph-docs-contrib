@@ -1,5 +1,5 @@
 ---
-title: "Update an educationSynchronizationProfile"
+title: "Update an educationSynchronizationProfile (deprecated)"
 description: "Update properties for an existing school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Update an educationSynchronizationProfile
+# Update an educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 

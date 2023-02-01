@@ -1,5 +1,5 @@
 ---
-title: "educationSynchronizationLicenseAssignment resource type"
+title: "educationSynchronizationLicenseAssignment resource type (deprecated)"
 description: "Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationLicenseAssignment resource type
+# educationSynchronizationLicenseAssignment resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts.
 

@@ -1,5 +1,5 @@
 ---
-title: "educationSynchronizationCustomization resource type"
+title: "educationSynchronizationCustomization resource type (deprecated)"
 description: "Provides settings for customizing the school data profile synchronization of the resource entities. The customization can be applied to all the entities being synchronized. "
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationCustomization resource type
+# educationSynchronizationCustomization resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Provides settings for customizing the school data profile synchronization of the resource entities. The customization can be applied to all the entities being synchronized.
 

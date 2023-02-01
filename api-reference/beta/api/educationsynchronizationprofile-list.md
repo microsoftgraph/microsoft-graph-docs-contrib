@@ -1,5 +1,5 @@
 ---
-title: "List educationSynchronizationProfiles"
+title: "List educationSynchronizationProfiles (deprecated)"
 description: "Retrieve the collection of school data synchronization profiles in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List educationSynchronizationProfiles
+# List educationSynchronizationProfiles (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Retrieve the collection of school data [synchronization profiles](../resources/educationsynchronizationprofile.md) in the tenant.
 
