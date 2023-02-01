@@ -18673,8 +18673,9 @@ items:
           - name: Get audit activity types
             href: api/cloudpcauditevent-getauditactivitytypes.md
         - name: Cloud PC Azure network connection
-          href: resources/cloudpconpremisesconnection.md
           items:
+          - name: Cloud PC on-premises connection
+            href: resources/cloudpconpremisesconnection.md
           - name: List
             href: api/virtualendpoint-list-onpremisesconnections.md
           - name: Create
@@ -18752,24 +18753,29 @@ items:
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
         - name: Cloud PC reports
-          href: resources/cloudpcreports.md
           items:
-          - name: Create export job
-            href: api/cloudpcreports-post-exportjobs.md
-          - name: Get export job
-            href: api/cloudpcexportjob-get.md
-          - name: Get daily aggregated remote conneciton reports
-            href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-          - name: Get historical remote conneciton reports
-            href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
-          - name: Get real time remote connection latency
-            href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-          - name: Get real time remote connection status
-            href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-          - name: Get shared use license usage reports
-            href: api/cloudpcreports-getshareduselicenseusagereport.md
-          - name: Get total aggregated remote connection reports
-            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+            - name: Cloud PC reports
+              href: resources/cloudpcreports.md
+            - name: Get daily aggregated remote connection reports
+              href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+            - name: Get historical remote conneciton reports
+              href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+            - name: Get real time remote connection latency
+              href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
+            - name: Get real time remote connection status
+              href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+            - name: Get shared-use license usage report
+              href: api/cloudpcreports-getshareduselicenseusagereport.md
+            - name: Get total aggregated remote connection reports
+              href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+            - name: Export to download report
+              items:
+              - name: Cloud PC export job
+                href: resources/cloudpcexportjob.md
+              - name: Create export job
+                href: api/cloudpcreports-post-exportjobs.md
+              - name: Get export job
+                href: api/cloudpcexportjob-get.md
         - name: Cloud PC service plan
           href: resources/cloudpcserviceplan.md
           items:
@@ -20610,6 +20616,18 @@ items:
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
               href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
+          - name: Partner user sync settings
+            items:
+            - name: Cross-tenant access partner user sync settings
+              href: resources/crosstenantidentitysyncpolicypartner.md
+            - name: Create
+              href: api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
+            - name: Get
+              href: api/crosstenantidentitysyncpolicypartner-get.md
+            - name: Update
+              href: api/crosstenantidentitysyncpolicypartner-update.md
+            - name: Delete
+              href: api/crosstenantidentitysyncpolicypartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -21661,13 +21679,15 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Lifecycle Workflows (preview)
+        - name: Lifecycle workflows (preview)
           displayName: LCW, Identity Governance, Joiner, Mover, Leaver
-          href: resources/identitygovernance-lifecycleworkflows-overview.md
           items:
-          - name: Workflows
-            href: resources/identitygovernance-workflow.md
+          - name: Overview
+            href: resources/identitygovernance-lifecycleworkflows-overview.md
+          - name: Workflow
             items:
+            - name: Workflow
+              href: resources/identitygovernance-workflow.md
             - name: List
               href: api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md
             - name: Create
@@ -21688,7 +21708,7 @@ items:
               href: api/identitygovernance-workflow-restore.md
             - name: Activate (run on-demand)
               href: api/identitygovernance-workflow-activate.md
-            - name: Workflow versions
+            - name: Workflow version
               items:
               - name: Workflow version
                 href: resources/identitygovernance-workflowversion.md
@@ -21702,7 +21722,7 @@ items:
                 href: api/identitygovernance-workflowversion-list-tasks.md
               - name: Get task for a workflow version
                 href: api/identitygovernance-task-get.md
-            - name: Workflow tasks
+            - name: Workflow task
               items:
               - name: Workflow task
                 href: resources/identitygovernance-task.md
@@ -21710,6 +21730,8 @@ items:
                 href: api/identitygovernance-workflow-list-task.md
               - name: Get task
                 href: api/identitygovernance-task-get.md
+              - name: Update task
+                href: api/identitygovernance-task-update.md  
             - name: Reports
               displayName: Lifecycle Workflows
               items:
@@ -21725,7 +21747,7 @@ items:
                   href: api/identitygovernance-userprocessingresult-summary.md
                 - name: List task processing results
                   href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
-              - name: Task reports
+              - name: Task report
                 href: resources/identitygovernance-taskreport.md
                 items:
                 - name: List task reports
@@ -21734,29 +21756,31 @@ items:
                   href: api/identitygovernance-taskreport-summary.md
                 - name: List task processing results
                   href: api/identitygovernance-taskreport-list-taskprocessingresults.md
-              - name: Workflow runs
-                href: resources/identitygovernance-run.md
+              - name: Workflow run
                 items:
+                - name: Run
+                  href: resources/identitygovernance-run.md
                 - name: List runs
                   href: api/identitygovernance-workflow-list-runs.md
                 - name: Get runs
                   href: api/identitygovernance-run-get.md
                 - name: Get summary
                   href: api/identitygovernance-run-summary.md
+                - name: List task processing results
+                  href: api/identitygovernance-run-list-taskprocessingresults.md  
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
                 - name: Get user processing result
                   href: api/identitygovernance-userprocessingresult-get.md
-                - name: List task processing results
-                  href: api/identitygovernance-run-list-taskprocessingresults.md
-              - name: Task processing results
-                href: resources/identitygovernance-taskprocessingresult.md
+              - name: Task processing result
                 items:
+                - name: Task processing result
+                  href: resources/identitygovernance-taskprocessingresult.md
                 - name: Resume
                   href: api/identitygovernance-taskprocessingresult-resume.md
-          - name: Workflow templates
+          - name: Workflow template
             items:
-            - name: Workflow templates
+            - name: Workflow template
               href: resources/identitygovernance-workflowtemplate.md
             - name: List
               href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
@@ -21786,7 +21810,7 @@ items:
               href: api/identitygovernance-customtaskextension-delete.md
           - name: Settings
             items:
-            - name: Settings
+            - name: Lifecycle management settings
               href: resources/identitygovernance-lifecyclemanagementsettings.md
             - name: Get
               href: api/identitygovernance-lifecyclemanagementsettings-get.md
@@ -23372,26 +23396,38 @@ items:
             href: resources/simulation.md
           - name: List
             href: api/attacksimulationroot-list-simulations.md
+          - name: Create
+            href: api/attacksimulationroot-create-simulation.md
           - name: Get
             href: api/attacksimulationroot-get-simulations.md
+          - name: Update
+            href: api/attacksimulationroot-update-simulation.md
+          - name: Delete
+            href: api/attacksimulationroot-delete-simulation.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
             href: api/simulationreportoverview-get.md
-        - name: Simulation automation
+          - name: Get excluded account targets
+            href: api/attacksimulationroot-get-excludedaccounttarget.md
+          - name: Get included account targets
+            href: api/attacksimulationroot-get-includedaccounttarget.md
+        - name: Attack simulation operation
           items:
-          - name: Simulation automation
-            href: resources/simulationautomation.md
-          - name: List
-            href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Attack simulation operation
+            href: resources/attacksimulationoperation.md
           - name: Get
-            href: api/attacksimulationroot-get-simulationautomations.md
-        - name: Simulation automation run
+            href: api/attacksimulationroot-get-operation.md
+        - name: Payload
           items:
-          - name: Simulation automation run
-            href: resources/simulationautomationrun.md
+          - name: Payload
+            href: resources/payload.md
           - name: List
-            href: api/simulationautomation-list-runs.md
+            href: api/attacksimulationroot-list-payloads.md
+          - name: Get
+            href: api/attacksimulationroot-get-payload.md
+          - name: Get payload detail
+            href: api/attacksimulationroot-get-payloadsdetails.md
         - name: Reports
           items:
           - name: Attack simulation reports
@@ -23414,7 +23450,21 @@ items:
             - name: Training user coverage
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
-              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md        
+        - name: Simulation automation
+          items:
+          - name: Simulation automation
+            href: resources/simulationautomation.md
+          - name: List
+            href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
+        - name: Simulation automation run
+          items:
+          - name: Simulation automation run
+            href: resources/simulationautomationrun.md
+          - name: List
+            href: api/simulationautomation-list-runs.md
       - name: eDiscovery (preview)
         items:
         - name: Case
@@ -24276,6 +24326,8 @@ items:
           href: resources/plannerroster.md
         - name: Create roster
           href: api/planner-post-rosters.md
+        - name: Get roster
+          href: api/plannerroster-get.md
         - name: Delete roster
           href: api/plannerroster-delete.md
         - name: List roster's members

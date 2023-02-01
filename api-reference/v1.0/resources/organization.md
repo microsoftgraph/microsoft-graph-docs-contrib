@@ -56,6 +56,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | marketingNotificationEmails | String collection | Not nullable. |
 | onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced. Nullable. `null` if this object has never been synced from an on-premises directory (default). |
+| partnerTenantType | partnerTenantType | The type of partnership this tenant has with Microsoft. The possible values are: `microsoftSupport`, `syndicatePartner`, `breadthPartner`, `breadthPartnerDelegatedAdmin`, `resellerPartnerDelegatedAdmin`, `valueAddedResellerPartnerDelegatedAdmin`, `unknownFutureValue`. Nullable. For more information about the possible types, see [partnerTenantType values](#partnertenanttype-values).|
 | postalCode | String | Postal code of the address for the organization. |
 | preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 Code; for example, `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | The privacy profile of an organization. |
@@ -65,7 +66,20 @@ This resource lets you add your own data to custom properties using [extensions]
 | state | String | State name of the address for the organization. |
 | street | String | Street name of the address for organization. |
 | technicalNotificationMails | String collection | Not nullable. |
+| tenantType | String | Not nullable. The tenant type option that was selected when the tenant was created. The possible values are: <li> `AAD` - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. <li> `AAD B2C` A customer identity access management (CIAM) service that serves business-to-consumer (B2C) scenarios.  |
 | verifiedDomains | [VerifiedDomain](verifieddomain.md) collection | The collection of domains associated with this tenant. Not nullable. |
+
+### partnerTenantType values
+
+| Member | Description |
+|-----------------------------------------|----------------------------------------------------------------------------|
+| microsoftSupport | Legacy support tenant of Microsoft that was used to provide administrative support to all customer tenants. |
+| breadthPartner | The partner can provide administrative support for their customers. However, the partner is not allowed to resell to or request delegated admin permissions from customers. |
+| breadthPartnerDelegatedAdmin | Similar to Breadth Partner except they can request for delegated admin permissions (DAP) from customer tenants. |
+| syndicatePartner | The partner exclusively resells and manages Microsoft 365 and Intune for their customers. The customer cannot buy additional subscriptions directly or through other Microsoft partners. |
+| resellerPartnerDelegatedAdmin | The partner that can resell and manage Microsoft 365 and Intune for their customers. There is no exclusivity clause like for syndication partners. The customer can buy additional direct subscriptions directly from Microsoft or through other Microsoft partners. |
+| valueAddedResellerPartnerDelegatedAdmin | Are Tier 2 partners. They are Microsoft partners that have a relationship with another Microsoft partner such as a reseller. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -105,6 +119,7 @@ Here is a JSON representation of the resource.
   "marketingNotificationEmails": ["string"],
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
+  "partnerTenantType": "String",
   "postalCode": "string",
   "preferredLanguage": "string",
   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
@@ -114,6 +129,7 @@ Here is a JSON representation of the resource.
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
+  "tenantType": "string",
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 ```

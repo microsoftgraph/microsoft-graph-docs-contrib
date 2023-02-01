@@ -37,14 +37,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.bookingQuestionAnswer",
-  "questionId": "String",
-  "question": "String",
+  "answer": "String",
   "answerInputType": {"@odata.type": "microsoft.graph.answerInputType"},
   "answerOptions": [
     "String"
   ],
   "isRequired": "Boolean",
-  "answer": "String",
+  "question": "String",
+  "questionId": "String",
   "selectedOptions": [
     "String"
   ]

@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.educationTeacher",
-  "teacherNumber": "String",
-  "externalId": "String"
+  "externalId": "String",
+  "teacherNumber": "String"
 }
 ```
