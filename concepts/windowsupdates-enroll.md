@@ -15,7 +15,7 @@ Today, the deployment service supports enrollment in management of Windows 10/11
 
 ## Enroll the device in update management
 
-When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices do not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](windowsupdates-deployments). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist). For driver enrollment, see [enroll devices in driver management](windowsupdates-manage-driver-update#Step-1:-Enroll-devices-in-driver-management).
+When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices do not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](/graph/windowsupdates-deployments). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist). For driver enrollment, see [enroll devices in driver management](/graph/windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
 
 The following example shows how to enroll a device in feature update management.
 
