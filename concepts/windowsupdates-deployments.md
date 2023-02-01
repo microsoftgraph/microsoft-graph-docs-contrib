@@ -23,7 +23,7 @@ Deployments have the following key aspects:
 
 Because content and audience are key to the definition of a deployment, you are required to assign both at the time of creation. While content and audience assignments cannot be changed later, device membership within an audience can.
 
-To learn more about creating a deployment, see [Deploy a feature update](windowsupdates-deploy-update), [Deploy an expedited security update](windowsupdates-deploy-expedited-update), and [Manage driver update](windowsupdates-manage-driver-update).
+To learn more about creating a deployment, see [Deploy a feature update](/graph/windowsupdates-deploy-update), [Deploy an expedited security update](/graph/windowsupdates-deploy-expedited-update), and [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
 ## Configure settings
 
