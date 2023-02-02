@@ -46,7 +46,7 @@ PATCH /deviceManagement/virtualEndpoint/organizationSettings
 |Property|Type|Description|
 |:---|:---|:---|
 |enableMEMAutoEnroll|Boolean|Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endpoint Manager(MEM). The default value is `false`. Optional.|
-|enableSingleSignOn|Boolean|Describe the provisioned Cloud PC can be accessed by single sign-on option when TRUE, indicates the provisioned Cloud PC don't support this feature when FALSE, Default value is false. Through single sign-on, Windows 365 users can authenticate to Azure AD with passwordless options (like FIDO keys) to access their Cloud PC.|
+|enableSingleSignOn|Boolean|Describe the provisioned Cloud PC can be accessed by single sign-on option when TRUE, indicates the provisioned Cloud PC don't support this feature when FALSE, Default value is false. Through single sign-on, Windows 365 users can authenticate to Azure AD with passwordless options (like FIDO keys) to access their Cloud PC. Optional.|
 |osVersion|cloudPcOperatingSystem|The version of the operating system (OS) to provision on Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`. Optional.|
 |userAccountType|cloudPcUserAccountType|The account type of the user on provisioned Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`. Optional.|
 |windowsSettings|cloudPcWindowsSettings|The settings to apply to Windows while creating Cloud PCs for this organization. The default language value is `en-US`.|
