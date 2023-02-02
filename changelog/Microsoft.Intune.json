@@ -20315,7 +20315,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "outlook",
           "ChangeType": "Change",
-          "Description": "Removed the **outlook** navigation property from the [user](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-user?view=graph-rest-beta) entity",
+          "Description": "Removed the **outlook** navigation property from the user entity",
           "Target": "user"
         },
         {
@@ -20323,7 +20323,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "healthStates",
           "ChangeType": "Change",
-          "Description": "Removed the **healthStates** navigation property from the [windowsManagementApp](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsmanagementapp?view=graph-rest-beta) entity",
+          "Description": "Removed the **healthStates** navigation property from the windowsManagementApp entity",
           "Target": "windowsManagementApp"
         },
         {
@@ -20331,7 +20331,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "androidForWorkRestrictions",
           "ChangeType": "Change",
-          "Description": "Added the **androidForWorkRestrictions** property to the [defaultDeviceEnrollmentRestrictions](https://learn.microsoft.com/graph/api/resources/intune-onboarding-defaultdeviceenrollmentrestrictions?view=graph-rest-beta) complex type",
+          "Description": "Added the **androidForWorkRestrictions** property to the defaultDeviceEnrollmentRestrictions complex type",
           "Target": "defaultDeviceEnrollmentRestrictions"
         },
         {
@@ -20381,7 +20381,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidForWorkCompliancePolicy,deviceComplianceSettingState,deviceInstallState,deviceManagementScript,deviceManagementScriptGroupAssignment,deviceManagementScriptState,eBookGroupAssignment,iosVppEBook,managedEBook,userInstallStateSummary,windowsManagementApp,windowsManagementAppHealthState",
           "ChangeType": "Addition",
-          "Description": "Added new entities: [androidForWorkCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta), [deviceComplianceSettingState](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancesettingstate?view=graph-rest-beta), [deviceInstallState](https://learn.microsoft.com/graph/api/resources/intune-books-deviceinstallstate?view=graph-rest-beta), [deviceManagementScript](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicemanagementscript?view=graph-rest-beta), [deviceManagementScriptGroupAssignment](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicemanagementscriptgroupassignment?view=graph-rest-beta), [deviceManagementScriptState](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicemanagementscriptstate?view=graph-rest-beta), [eBookGroupAssignment](https://learn.microsoft.com/graph/api/resources/intune-books-ebookgroupassignment?view=graph-rest-beta), [iosVppEBook](https://learn.microsoft.com/graph/api/resources/intune-books-iosvppebook?view=graph-rest-beta), [managedEBook](https://learn.microsoft.com/graph/api/resources/intune-books-managedebook?view=graph-rest-beta), [userInstallStateSummary](https://learn.microsoft.com/graph/api/resources/intune-books-userinstallstatesummary?view=graph-rest-beta), [windowsManagementApp](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsmanagementapp?view=graph-rest-beta), [windowsManagementAppHealthState](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsmanagementapphealthstate?view=graph-rest-beta), ",
+          "Description": "Added new entities: [androidForWorkCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta), [deviceComplianceSettingState](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancesettingstate?view=graph-rest-beta), [deviceInstallState](https://learn.microsoft.com/graph/api/resources/intune-books-deviceinstallstate?view=graph-rest-beta), deviceManagementScript, deviceManagementScriptGroupAssignment, deviceManagementScriptState, eBookGroupAssignment, [iosVppEBook](https://learn.microsoft.com/graph/api/resources/intune-books-iosvppebook?view=graph-rest-beta), [managedEBook](https://learn.microsoft.com/graph/api/resources/intune-books-managedebook?view=graph-rest-beta), [userInstallStateSummary](https://learn.microsoft.com/graph/api/resources/intune-books-userinstallstatesummary?view=graph-rest-beta), windowsManagementApp, windowsManagementAppHealthState",
           "Target": "androidForWorkCompliancePolicy,deviceComplianceSettingState,deviceInstallState,deviceManagementScript,deviceManagementScriptGroupAssignment,deviceManagementScriptState,eBookGroupAssignment,iosVppEBook,managedEBook,userInstallStateSummary,windowsManagementApp,windowsManagementAppHealthState"
         },
         {
@@ -20429,7 +20429,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assign,deviceManagementScript",
           "ChangeType": "Addition",
-          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicemanagementscript-assign?view=graph-rest-beta) action on [deviceManagementScript](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicemanagementscript?view=graph-rest-beta)",
+          "Description": "Added the assign action on deviceManagementScript",
           "Target": "assign,deviceManagementScript"
         },
         {
@@ -20437,7 +20437,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "syncLicenses,appleVolumePurchaseProgramToken",
           "ChangeType": "Addition",
-          "Description": "Added the [syncLicenses](https://learn.microsoft.com/graph/api/intune-onboarding-applevolumepurchaseprogramtoken-synclicenses?view=graph-rest-beta) action on [appleVolumePurchaseProgramToken](https://learn.microsoft.com/graph/api/resources/intune-apps-applevolumepurchaseprogramtoken?view=graph-rest-beta)",
+          "Description": "Added the syncLicenses action on appleVolumePurchaseProgramToken",
           "Target": "syncLicenses,appleVolumePurchaseProgramToken"
         },
         {
@@ -20453,7 +20453,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "downloadApplePushNotificationCertificateSigningRequest,applePushNotificationCertificate",
           "ChangeType": "Addition",
-          "Description": "Added the [downloadApplePushNotificationCertificateSigningRequest](https://learn.microsoft.com/graph/api/intune-deviceconfig-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-beta) function on [applePushNotificationCertificate](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-applepushnotificationcertificate?view=graph-rest-beta)",
+          "Description": "Added the downloadApplePushNotificationCertificateSigningRequest function on applePushNotificationCertificate",
           "Target": "downloadApplePushNotificationCertificateSigningRequest,applePushNotificationCertificate"
         },
         {
@@ -20597,7 +20597,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "bindingParameter,mobileApp,collection,status",
           "ChangeType": "Change",
-          "Description": "Changed the following properties on the [getMobileAppCount](https://learn.microsoft.com/graph/api/intune-apps-mobileapp-getmobileappcount?view=graph-rest-beta) entity: **bindingParameter** from **mobileApp** to a **collection** of *mobileApp*, **status** from a GUID to a String, ",
+          "Description": "Changed the following properties on the getMobileAppCount entity: **bindingParameter** from **mobileApp** to a **collection** of *mobileApp*, **status** from a GUID to a String, ",
           "Target": "getMobileAppCount"
         },
         {
@@ -20605,7 +20605,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "vpnConfigurationId",
           "ChangeType": "Change",
-          "Description": "Added the **vpnConfigurationId** property to the [mobileAppGroupAssignment](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileappgroupassignment?view=graph-rest-beta) entity",
+          "Description": "Added the **vpnConfigurationId** property to the mobileAppGroupAssignment entity",
           "Target": "mobileAppGroupAssignment"
         },
         {
@@ -20613,7 +20613,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "fromEmailAddress",
           "ChangeType": "Change",
-          "Description": "Removed the **fromEmailAddress** property from the [notificationMessageTemplate](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-notificationmessagetemplate?view=graph-rest-beta) entity",
+          "Description": "Removed the **fromEmailAddress** property from the notificationMessageTemplate entity",
           "Target": "notificationMessageTemplate"
         },
         {
@@ -20677,7 +20677,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "productKey,licenseType",
           "ChangeType": "Change",
-          "Description": "Added the **productKey** and **licenseType** properties to the [windowsStoreForBusinessApp](https://learn.microsoft.com/graph/api/resources/intune-apps-windowsstoreforbusinessapp?view=graph-rest-beta) entity",
+          "Description": "Added the **productKey** and **licenseType** properties to the windowsStoreForBusinessApp entity",
           "Target": "windowsStoreForBusinessApp"
         },
         {
@@ -20709,7 +20709,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "osMinimumVersion,osMaximumVersion",
           "ChangeType": "Change",
-          "Description": "Added the **osMinimumVersion** and **osMaximumVersion** properties to the [deviceEnrollmentPlatformRestrictions](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestrictions?view=graph-rest-beta) complex type",
+          "Description": "Added the **osMinimumVersion** and **osMaximumVersion** properties to the deviceEnrollmentPlatformRestrictions complex type",
           "Target": "deviceEnrollmentPlatformRestrictions"
         },
         {
@@ -20717,7 +20717,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isSharedDevice,sharedDeviceCachedUsers",
           "ChangeType": "Change",
-          "Description": "Added the **isSharedDevice** and **sharedDeviceCachedUsers** properties to the [hardwareInformation](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-hardwareinformation?view=graph-rest-beta) complex type",
+          "Description": "Added the **isSharedDevice** and **sharedDeviceCachedUsers** properties to the hardwareInformation complex type",
           "Target": "hardwareInformation"
         },
         {
@@ -20799,7 +20799,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assign,iosLobAppProvisioningConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-apps-ioslobappprovisioningconfiguration-assign?view=graph-rest-beta) action on [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta)",
+          "Description": "Added the assign action on iosLobAppProvisioningConfiguration",
           "Target": "assign,iosLobAppProvisioningConfiguration"
         },
         {
@@ -20887,7 +20887,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "wipeManagedAppRegistrationByDeviceTag,user",
           "ChangeType": "Addition",
-          "Description": "Added the [wipeManagedAppRegistrationByDeviceTag](https://learn.microsoft.com/graph/api/intune-mam-user-wipemanagedappregistrationbydevicetag?view=graph-rest-beta) action on [user](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-user?view=graph-rest-beta)",
+          "Description": "Added the wipeManagedAppRegistrationByDeviceTag action on user",
           "Target": "wipeManagedAppRegistrationByDeviceTag,user"
         },
         {
@@ -20951,7 +20951,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicationCount,failedApplicationCount,appInstallFailures",
           "ChangeType": "Change",
-          "Description": "Removed the **applicationCount**, **failedApplicationCount** and **appInstallFailures** properties from the [appReportingOverviewStatus](https://learn.microsoft.com/graph/api/resources/appreportingoverviewstatus?view=graph-rest-beta) entity",
+          "Description": "Removed the **applicationCount**, **failedApplicationCount** and **appInstallFailures** properties from the appReportingOverviewStatus entity",
           "Target": "appReportingOverviewStatus"
         },
         {
@@ -20959,7 +20959,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharedIPadMaximumUserCount,enableSharedIPad",
           "ChangeType": "Change",
-          "Description": "Added the **sharedIPadMaximumUserCount** and **enableSharedIPad** properties to the [depEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-depenrollmentprofile?view=graph-rest-beta) entity",
+          "Description": "Added the **sharedIPadMaximumUserCount** and **enableSharedIPad** properties to the depEnrollmentProfile entity",
           "Target": "depEnrollmentProfile"
         },
         {
@@ -20967,7 +20967,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "shareTokenWithSchoolDataSyncService,lastSyncErrorCode",
           "ChangeType": "Change",
-          "Description": "Added the **shareTokenWithSchoolDataSyncService** and **lastSyncErrorCode** properties to the [depOnboardingSetting](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta) entity",
+          "Description": "Added the **shareTokenWithSchoolDataSyncService** and **lastSyncErrorCode** properties to the depOnboardingSetting entity",
           "Target": "depOnboardingSetting"
         },
         {
