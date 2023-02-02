@@ -92,6 +92,14 @@ You may be wondering: "I can use the PowerShell SDK to register an app, so that 
 
 ---
 
+```bash
+# DER format
+base64 -w 0 ClientCert.cer
+
+# PEM format
+openssl x509 -in ClientCert.pem -outform der | base64 -w 0
+```
+
 ## Authenticate
 
 You should have three pieces of information after completing the configuration steps above.
@@ -104,7 +112,6 @@ We'll use this information to test authentication. Open PowerShell and run the f
 
 ```bash
 mgc login --client-id YOUR_APP_ID --tenant-id YOUR_TENANT_ID --certificate-name "YOUR_CERT_SUBJECT" --strategy ClientCertificate
-Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT ## Or -CertificateThumbprint instead of -CertificateName
 ```
 
 If the command succeeds, you'll see `Welcome To Microsoft Graph!`. Run `Get-MgContext` to verify that you've authenticated with app-only. The output should look like the following.
