@@ -50,8 +50,8 @@ az provider register --namespace Microsoft.GraphServices
 |:--------------------------|:----------------------------------------|
 | myRG | The name you wish to give to the Azure resource group |
 | myGraphAppBilling | The name you wish to give to this resource instance |
-| myAppGUID | The Application (client) ID of the application being enabled |
-| mySubscriptionGUID | The ID of the Azure Subscription that will receive billing events | 
+| myAppGUID | The Application (client) ID of the application being enabled, provided as a string parameter for example 00000000-0000-0000-0000-000000000000 |
+| mySubscriptionGUID | The ID of the Azure Subscription that will receive billing events, provided as a string parameter for example 00000000-0000-0000-0000-000000000000 | 
 
 ```PowerShell
 az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId\`": `"myAppGUID`"}" --latest-include-preview --location Global –subscription mySubscriptionGUID
