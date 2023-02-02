@@ -7,7 +7,7 @@ ms.reviewer: dkershaw
 ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 11/08/2022
+ms.date: 02/02/2023
 ---
 
 # Add custom data to users using open extensions
