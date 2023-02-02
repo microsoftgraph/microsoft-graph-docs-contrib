@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.accessReviewReviewerScope",
   "query": "String",
-  "queryType": "String",
-  "queryRoot": "String"
+  "queryRoot": "String",
+  "queryType": "String"
 }
 ```

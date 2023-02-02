@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Tasks.ReadWrite|
-|Application|Not supported|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -51,6 +51,7 @@ If successful, this method returns a `200 OK` response code and a [todoTask](../
 
 ### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +93,10 @@ GET https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a3
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the request.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +108,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tasks/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tasks/$entity",
     "@odata.etag": "W/\"s8/ERWT3WEeFpBGD0bDgAA+TWq9g==\"",
     "importance": "low",
     "isReminderOn": false,
@@ -123,6 +127,10 @@ Content-Type: application/json
     },
     "dueDateTime": {
         "dateTime": "2020-08-25T04:00:00.0000000",
+        "timeZone": "UTC"
+    },
+    "startDateTime": {
+        "dateTime": "2020-06-23T04:00:00.0000000",
         "timeZone": "UTC"
     }
 }
