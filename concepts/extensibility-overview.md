@@ -183,7 +183,7 @@ The 15 extension attributes are already predefined in Microsoft Graph and their 
 
 ### Directory (Azure AD) extensions
 
-[Directory extensions](/graph/api/resources/extensionProperty) provide developers with a strongly-typed, discoverable and filterable extension experience for directory objects.
+[Directory extensions](/graph/api/resources/extensionProperty) provide developers with a strongly typed, discoverable and filterable extension experience for directory objects.
 
 Directory extensions are first registered on an application through the [Create extensionProperty](/graph/api/application-post-extensionproperty) operation and must be explicitly targeted to specific and supported directory objects. After the application has been consented to by a user or an admin, the extension properties become immediately accessible in the tenant. All authorized applications in the tenant can read and write data on any extension properties defined on an instance of the target directory object.
 
@@ -458,7 +458,7 @@ If a multi-tenant application creates additional directory extensions in an app 
 
 ### Schema extensions
 
-[Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you define your schema extension. Then, use it to extend supported resource instances with strongly-typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
+[Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you define your schema extension. Then, use it to extend supported resource instances with strongly typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
 
 For the list of resource types that support schema extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
@@ -760,7 +760,7 @@ Content-type: application/json
 
 #### Considerations for using schema extensions
 
-A schema extension must have an owner app. Ownership of the schema extension cannot be reassigned to another app.
+A schema extension must have an owner app. Ownership of the schema extension can't be reassigned to another app.
 
 Deleting a schema extension definition without setting the schema extension to `null` makes the property and its associated user data undiscoverable.
 
@@ -772,7 +772,7 @@ To verify: Can you recover a schema extension definition by creating one with ex
 
 ### Open extensions
 
-[Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly-typed, discoverable, or filterable.
+[Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly typed, discoverable, or filterable.
 
 For the list of resource types that support Microsoft Graph open extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
@@ -790,7 +790,7 @@ You define and manage open extensions on the fly on resource instances. They're 
 
 ##### Create an open extension
 
-The following example shows an open extension definition with three properties and how the custom properties and associated data is presented on a resource instance.
+The following example shows an open extension definition with three properties and how the custom properties and associated data are presented on a resource instance.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -946,14 +946,14 @@ The table below contrasts and compares the extension types, which should help yo
 | Capability | Extension attributes 1-15 | Directory extensions | Schema extensions | Open extensions |
 |--|--|--|--|--|
 | Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] |
-| Strongly-typed | No | Yes | Yes | No |
+| Strongly typed | No | Yes | Yes | No |
 | Filterable | Yes | Yes | Yes | No |
 | Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
 | Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
 | Usable for customizing token claims | Yes | [Yes][DirectoryExt-CustomClaims] | No | No |
 | Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
-| Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
+| Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2 Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
 
 > [!NOTE]
 > 
