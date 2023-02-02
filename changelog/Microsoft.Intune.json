@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "addApps",
           "ChangeType": "Addition",
-          "Description": "Added the [addApps](https://learn.microsoft.com/graph/api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings?view=graph-rest-beta) method to the [androidManagedStoreAccountEnterpriseSettings](https://learn.microsoft.com/graph/api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings?view=graph-rest-beta) resource.",
+          "Description": "Added the addApps method to the androidManagedStoreAccountEnterpriseSettings resource.",
           "Target": "androidManagedStoreAccountEnterpriseSettings"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceNowAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceNowAuthenticationMethod](https://learn.microsoft.com/graph/api/resources/serviceNowAuthenticationMethod?view=graph-rest-beta) resource type.",
+          "Description": "Added the serviceNowAuthenticationMethod resource type.",
           "Target": "serviceNowAuthenticationMethod"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceNowOauthSecretAuthentication",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceNowOauthSecretAuthentication](https://learn.microsoft.com/graph/api/resources/serviceNowOauthSecretAuthentication?view=graph-rest-beta) resource type.",
+          "Description": "Added the serviceNowOauthSecretAuthentication resource type.",
           "Target": "serviceNowOauthSecretAuthentication"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceNowConnection",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceNowConnection](https://learn.microsoft.com/graph/api/resources/serviceNowConnection?view=graph-rest-beta) resource",
+          "Description": "Added the serviceNowConnection resource",
           "Target": "serviceNowConnection"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsDeviceTimelineEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [userExperienceAnalyticsDeviceTimelineEvent](https://learn.microsoft.com/graph/api/resources/resources/intune-devices-userexperienceanalyticsdevicetimeline?view=graph-rest-beta) resource",
+          "Description": "Added the userExperienceAnalyticsDeviceTimelineEvent resource",
           "Target": "userExperienceAnalyticsDeviceTimelineEvent"
         },
         {
@@ -303,7 +303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectorStatusDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [connectorStatusDetails](https://learn.microsoft.com/graph/api/resources/intune-connectorStatusDetails?view=graph-rest-beta) resource type.",
+          "Description": "Added the connectorStatusDetails resource type.",
           "Target": "connectorStatusDetails"
         },
         {
