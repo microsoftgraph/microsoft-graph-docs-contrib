@@ -119,4 +119,6 @@ HTTP/1.1 201 Created
   "tocPath": ""
 }-->
 
+## see also
 
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

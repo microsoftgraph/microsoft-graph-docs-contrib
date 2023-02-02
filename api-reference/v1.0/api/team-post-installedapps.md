@@ -124,4 +124,6 @@ HTTP/1.1 200 OK
 }
 -->
 
+## see also
 
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

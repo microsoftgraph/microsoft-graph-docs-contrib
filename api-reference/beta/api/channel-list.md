@@ -302,3 +302,6 @@ Content-length: 262
   ]
 }
 -->
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

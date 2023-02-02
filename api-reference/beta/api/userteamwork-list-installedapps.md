@@ -323,4 +323,4 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-- [Microsoft Graph service-specific throttling limits](/concepts/throttling-limits.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

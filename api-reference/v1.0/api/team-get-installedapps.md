@@ -209,4 +209,4 @@ Content-type: application/json
 
 ## See also
 
-- [Microsoft Graph service-specific throttling limits](/concepts/throttling-limits.md)
+[Microsoft Graph service-specific throttling limits](/concepts/throttling-limits.md)
