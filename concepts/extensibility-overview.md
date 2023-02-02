@@ -7,7 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.prod: "extensions"
 ms.custom: graphiamtop20
-ms.date: 07/24/2022
+ms.date: 02/02/2023
 ---
 
 # Add custom data to resources using extensions
