@@ -8,7 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create updatePolicy
-Namespace: microsoft.graph.windowsUpdates
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
