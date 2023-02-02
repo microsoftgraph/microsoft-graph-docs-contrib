@@ -10,8 +10,6 @@ ms.custom: graphiamtop20
 ms.date: 02/02/2023
 ---
 
-
-
 # Add custom data to groups using schema extensions 
 
 This article demonstrates how to use *schema extensions*.
