@@ -1,16 +1,16 @@
 ---
-title: "How to write an interactive message app within your own application?"
+title: "How to embed the Microsoft Teams experience within your own application?"
 description: "This article shows how you can embed the Microsoft Teams experience within your own application, so users do not need to constantly switch between your own application and the Microsoft Teams application. Instead, users can read and send Microsoft Teams messages directly within your own application."
 author: "erichui-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# How to write an interactive message app within your own application?
+# How to embed the Microsoft Teams experience within your own application?
 
 This article shows how you can embed the Microsoft Teams experience within your own application, so users do not need to constantly switch between your own application and the Microsoft Teams application.  Instead, users can read and send Microsoft Teams messages directly within your own application.
 
-To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times from Microsoft Graph.  In this article, we will show how you can do a one-time retrieval for the existing messages, cache them, and then use change notifications to get only the subsequent messages.
+To improve the response time for your application and to potentially lower the costs for you, you should minimize reading the same message multiple times from Microsoft Graph.  In this article, we will show how you can do a one-time retrieval for the existing messages, cache them, and then use change notifications to get only the subsequent messages.
 
 ## Overview
 
@@ -32,12 +32,14 @@ The system diagram below shows the suggested high-level architecture. It has thr
 
 1. There is a new **chat user interface (UI)** that gets user inputs and displays messages.  It makes API requests (e.g. `POST`/`GET` chats, `POST`/`GET` messages, etc.) to Microsoft Teams APIs.  It also gets new messages in real time from the server component (described below).  If this is your first time using Microsoft Teams or Graph APIs, you can get started with [Quick Start](https://developer.microsoft.com/graph/quick-start), [Tutorials](/graph/tutorials), and [Authentication and authorization basics](/graph/auth/auth-concepts).
 
-2. There is a **server component** that subscribes and listens to change notifications in real time from Microsoft Teams APIs for new messages.  It is needed because when Microsoft Teams APIs send the change notifications (see [Step 7](#step-7-receive-and-decrypt-change-notifications) below), a webhook URL is required to listen for the change notifications, and your UI, such as the users’ mobile phone, may not have an URL.  The server component, however, has a stable webhook URL.  The new messages are then pushed from the server component to the chat UI, using communication methods such as ASP.NET's [SignalR](/aspnet/signalr/overview/getting-started/introduction-to-signalr).
+2. There is a **server component** that subscribes and listens to change notifications in real time from Microsoft Teams APIs for new messages.  When Microsoft Teams APIs send change notifications (see [Step 7](#step-7-receive-and-decrypt-change-notifications) below), a webhook URL is required to listen to the change notifications, and your UI, such as the users’ mobile phone, may not have such a URL.  The server component, however, has a stable webhook URL.  The new messages are then pushed from the server component to the chat UI, using communication methods such as ASP.NET's [SignalR](/aspnet/signalr/overview/getting-started/introduction-to-signalr).
 
 > [!NOTE]
-> You may also choose to have the server component, instead of the chat UI, making all the API requests (e.g. `POST`/`GET` chats, `POST`/`GET` messages, etc.) to Microsoft Teams APIs, and caching all the messages.  For example, if you have another backend system component that also needs to make those API requests, such as for compliance and audit purposes, then you may choose to centralize the API requests and caching in the server component instead.)
+> You may also choose to have the server component, instead of the chat UI, make all the API requests (e.g. `POST`/`GET` chats, `POST`/`GET` messages, etc.) to Microsoft Teams APIs, and cache all the messages.  For example, if you have another backend system component that also needs to make those API requests, such as for compliance and audit purposes, then you may choose to centralize the API requests and caching in the server component instead.
 
-3. There is a **cache** that persists messages.  To increase response time for your application and to potentially minimize costs for you, you should avoid reading the same message multiple times, by storing messages in this cache.  You do not want to be surprised by the API consumption bill later, so make sure you do not skip building this cache.  To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
+3. There is a **cache** that persists messages.  To improve the response time for your application and to potentially lower the costs for you, you should minimize reading the same message multiple times, by storing messages in this cache.  You do not want to be surprised by the API consumption bill later, so make sure you do not skip building this cache.  To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
+
+Some of the Microsoft Teams APIs mentioned above have licensing and payment requirements.  Please visit [Licensing and payment requirements for the Microsoft Teams API](/graph/teams-licenses) for details.
 
 Once these system components are all set up, you can start using Microsoft Teams APIs, as described in the following steps. ![System Diagram](images/teams-how-to-write-interactive-message-app-system-diagram.png)
 
@@ -57,16 +59,16 @@ Content-Type: application/json
             "roles": [
                 "owner"
             ],
-            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('adams@contoso.com ')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('adams@contoso.com')"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "roles": [
                 "owner"
             ],
-            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('gradyA@contoso.com ')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('gradyA@contoso.com')"
         },
-    {
+        {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "roles": [
                 "owner"
@@ -153,7 +155,7 @@ Content-type: application/json
 
 Messages can be retrieved using the `GET` HTTP method on the [chatMessages](/graph/api/resources/chatmessage) resource.
 
-To increase response time for your application, to avoid throttling (described below), and to potentially minimize costs for you, you should avoid reading the same message multiple times from Microsoft Graph.  Thus, retrieving messages using the `GET` HTTP method described in this step should only be used initially as a one-time export, or when the change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notification-subscriptions) below) have expired and you want to resync the messages again.  Otherwise, you should rely on your cache (see [Step 5](#step-5-cache-messages) below) and change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notification-subscriptions) below).
+To improve the response time for your application, to minimize throttling (described below), and to potentially lower the costs for you, you should minimize reading the same message multiple times from Microsoft Graph.  Thus, retrieving messages using the `GET` HTTP method described in this step should only be used initially as a one-time export, or when the change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notification-subscriptions) below) have expired and you want to resync the messages again.  Otherwise, you should rely on your cache (see [Step 5](#step-5-cache-messages) below) and change notifications ([Steps 6](#step-6-subscribe-to-change-notifications) to [8](#step-8-renew-change-notification-subscriptions) below).
 
 Microsoft Graph offers several ways to retrieve chat messages:
 
@@ -327,7 +329,7 @@ Some messages are [**system messages**](/graph/system-messages). For example, th
 
 ## Step 5: Cache messages
 
-Each message you get from [getAllMessages](/microsoftteams/export-teams-content#how-to-access-teams-export-apis) or [change notification](/graph/api/resources/changenotificationcollection) is subject to be charged by Microsoft Graph, so you will want to avoid reading the same message multiple times. We recommend caching messages for at least a few hours so a user can quickly reopen a chat that they have recently visited.  However, you should not cache longer than what is allowed per your organizational retention policies. 
+Each message you get from [getAllMessages](/microsoftteams/export-teams-content#how-to-access-teams-export-apis) or [change notification](/graph/api/resources/changenotificationcollection) is subject to be charged by Microsoft Graph, so you will want to minimize reading the same message multiple times. We recommend caching messages for at least a few hours so a user can quickly reopen a chat that they have recently visited.  However, you should not cache longer than what is allowed per your organizational retention policies. 
 
 To learn how to set up a cache, please visit [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
 
@@ -578,7 +580,7 @@ As of January 2023, when this document was written, retrieving messages “per-u
 
 Using the steps above, you can build an interactive message app within your own application.  Initially, the chat UI calls `GET /users/{user-id}/chats/{chat-id}/messages` to get only the recent messages needed to be displayed on the chat UI.  It then gets new messages in real time from the server component, which subscribes and listens to change notifications for the new messages.
 
-To increase response time for your application, to avoid throttling, and to potentially minimize costs for you, you should avoid reading the same message multiple times from Microsoft Graph, by caching the messages and relying on change notifications instead of the `GET` APIs for new messages. We recommend caching messages for at least a few hours so a user can quickly reopen a chat that they have recently visited.  However, you should not cache longer than what is allowed per your organizational retention policies. To simplify security, we recommend not sharing caches between users.
+To improve the response time for your application, to avoid throttling, and to potentially lower the costs for you, you should minimize reading the same message multiple times from Microsoft Graph, by caching the messages and relying on change notifications instead of the `GET` APIs for new messages. We recommend caching messages for at least a few hours so a user can quickly reopen a chat that they have recently visited.  However, you should not cache longer than what is allowed per your organizational retention policies. To simplify security, we recommend not sharing caches between users.
 
 Change notification subscriptions for [chatMessage](/graph/api/resources/chatmessage) expire in 60 minutes, so we recommend renewing every 30 minutes.  In case of an expiration, you would call `GET /users/{user-id}/chats/{chat-id}/messages` again to get the most up-to-date messages and refresh the cache.
 
