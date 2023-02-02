@@ -101,7 +101,8 @@ Content-Type: application/json
             "mail": null,
             "surname": "Andersen",
             "userPrincipalName": "CAndersen@w325q.onmicrosoft.com"    
-       }        
+       }  
+    ],      
 }
 ```
 
