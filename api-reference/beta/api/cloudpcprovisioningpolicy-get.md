@@ -125,7 +125,7 @@ Content-Type: application/json
         "domainJoinType": "hybridAzureADJoin",
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
     },
-    "enableSingleSignOn": "true",
+    "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
@@ -207,7 +207,7 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
-    "enableSingleSignOn": "true",
+    "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
@@ -304,7 +304,7 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
-    "enableSingleSignOn": "true",
+    "enableSingleSignOn": true,
     "gracePeriodInHours": 2,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "myCustomImage",
