@@ -151,3 +151,6 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
+## See also
+
+[Microsoft Teams service limits](../../../concepts/throttling-limits.md#microsoft-teams-service-limits)
