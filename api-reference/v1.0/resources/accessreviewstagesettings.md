@@ -34,25 +34,26 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewStageSettings",
-  "stageId": "String",
   "dependsOn": [
     "String"
   ],
   "durationInDays": "Integer",
-  "recommendationsEnabled": "Boolean",
   "decisionsThatWillMoveToNextStage": [
     "String"
-  ],
-  "reviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
-    }
   ],
   "fallbackReviewers": [
     {
       "@odata.type": "microsoft.graph.accessReviewReviewerScope"
     }
-  ]
+  ],
+  "recommendationsEnabled": "Boolean",
+  
+  "reviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "stageId": "String"
 }
 ```
 

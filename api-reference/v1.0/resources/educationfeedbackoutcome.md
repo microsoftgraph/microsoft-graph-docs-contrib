@@ -23,8 +23,8 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|Unique identifier for the educationFeedbackOutcome.|
 |feedback|[educationFeedback](educationfeedback.md)|Teacher's written feedback to the student.|
+|id|String|Unique identifier for the educationFeedbackOutcome.|
 |publishedFeedback|[educationFeedback](educationfeedback.md)|A copy of the feedback property that is made when the grade is released to the student.|
 
 ## Relationships
@@ -46,8 +46,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
   "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
+  "id": "String (identifier)",
   "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }
 ```

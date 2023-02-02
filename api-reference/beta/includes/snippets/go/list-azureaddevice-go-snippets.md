@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "isof('microsoft.graph.windowsUpdates.azureADDevice')"
 
-requestParameters := &graphconfig.UpdatableAssetsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.AdminWindowsUpdatesUpdatableAssetsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.UpdatableAssetsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.AdminWindowsUpdatesUpdatableAssetsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

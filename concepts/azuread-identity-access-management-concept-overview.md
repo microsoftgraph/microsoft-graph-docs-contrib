@@ -1,7 +1,9 @@
 ---
 title: "Azure AD identity and access management API overview"
 description: "Use Azure Active Directory (Azure AD) to manage identities and devices and control access in on-premises, hybrid, and cloud environments."
-author: "jackson-woods"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.prod: "identity-and-access"
 ms.custom: scenarios:getting-started
