@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new RoleAssignmentsRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new RoleAssignmentsRequestBuilderGetQueryParameters();
-$queryParameters->filter  = " principalIds/any";
+$queryParameters->filter = " principalIds/any";
 
 $requestConfiguration->queryParameters = $queryParameters;
 

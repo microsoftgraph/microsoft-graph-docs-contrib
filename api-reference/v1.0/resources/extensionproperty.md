@@ -76,12 +76,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.extensionProperty",
-  "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
   "appDisplayName": "String",
-  "name": "String",
   "dataType": "String",
+  "deletedDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "isSyncedFromOnPremises": "Boolean",
+  "name": "String",
   "targetObjects": [
     "String"
   ]

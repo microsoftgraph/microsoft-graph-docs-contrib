@@ -49,15 +49,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
   "aaGuid": "String",
-  "model": "String",
   "attestationCertificates": [
     "String"
   ],
-  "attestationLevel": "String"
+  "attestationLevel": "String",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "model": "String"
 }
 ```
 
