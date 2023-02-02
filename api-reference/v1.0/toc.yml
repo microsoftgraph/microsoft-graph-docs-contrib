@@ -47,10 +47,10 @@ items:
       - name: Use query parameters
         displayName: OData query parameters, OData
         href: /graph/query-parameters?context=graph/api/1.0
-      - name: Use $filter
+      - name: Use filter
         displayName: OData query parameters, OData
         href: /graph/filter-query-parameter?context=graph/api/1.0
-      - name: Use $search
+      - name: Use search
         displayName: OData query parameters, OData
         href: /graph/search-query-parameter?context=graph/api/1.0
       - name: Advanced query capabilities
@@ -7955,6 +7955,20 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: File attachment
+        items:
+        - name: File attachment
+          href: resources/taskfileattachment.md
+        - name: List
+          href: api/todotask-list-attachments.md
+        - name: Get
+          href: api/taskfileattachment-get.md
+        - name: Delete
+          href: api/taskfileattachment-delete.md
+        - name: Attach all file sizes
+          href: api/taskfileattachment-createuploadsession.md
+        - name: Attach small file
+          href: api/todotask-post-attachments.md
       - name: Checklist item
         href: resources/checklistitem.md
         items:

@@ -274,6 +274,7 @@ Content-Type: application/json
   ]
 }
 ```
+>**Note:** Call establishing/established notifications may arrive out of order.
 
 #### Notification - established
 
@@ -304,6 +305,7 @@ Content-Type: application/json
   ]
 }
 ```
+>**Note:** Call establishing/established notifications may arrive out of order.
 
 ### Example 2: Answer VOIP call with application hosted media
 
@@ -449,6 +451,7 @@ Content-Type: application/json
   ]
 }
 ```
+>**Note:** Call establishing/established notifications may arrive out of order.
 
 #### Notification - established
 
@@ -479,6 +482,7 @@ Content-Type: application/json
   ]
 }
 ```
+>**Note:** Call establishing/established notifications may arrive out of order.
 
 #### Notification - content sharing started
 
