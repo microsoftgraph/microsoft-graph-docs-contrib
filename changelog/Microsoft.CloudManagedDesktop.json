@@ -15,7 +15,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "regionGroup",
               "ChangeType": "Addition",
-              "Description": "Added the `regionGroup` property to the [cloudPcDomainJoinConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
+              "Description": "Added the `regionGroup` property to the [cloudPcDomainJoinConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
               "Target": "cloudPcDomainJoinConfiguration"
             },
             {
@@ -23,7 +23,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "regionGroup",
               "ChangeType": "Addition",
-              "Description": "Added the `regionGroup` property to the [cloudPcSupportedRegion](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSupportedRegion?view=graph-rest-beta) resource.",
+              "Description": "Added the `regionGroup` property to the [cloudPcSupportedRegion](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSupportedRegion?view=graph-rest-beta) resource.",
               "Target": "cloudPcSupportedRegion"
             }
                    ],
