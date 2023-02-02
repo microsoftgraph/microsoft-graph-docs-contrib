@@ -593,6 +593,14 @@
           "Target": "entityType"
         },
         {
+          "Id": "f69b59bf-58e7-41f2-a598-d6e050ce75c7",
+          "ApiChange": "Member",
+          "ChangedApiName": "qna",
+          "ChangeType": "Addition",
+          "Description": "Added the **qna** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
           "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
           "ApiChange": "Member",
           "ChangedApiName": "chatMessage",
