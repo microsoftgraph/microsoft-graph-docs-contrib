@@ -85,7 +85,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Service health and communications | ✔                                | ✔                                          |
 | Service principals                | ✔                                | ➖                                         |
 | SharePoint                        | ✔                                | ✔                                          |
-| Teams                             | ✔                                | ✔                                          |
+| Teams                             | ✔                                | ➖                                          |
 | Users                             | ✔                                | ✔                                          |
 
 For more information about the availability of Microsoft 365 usage reports in national clouds, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report).
