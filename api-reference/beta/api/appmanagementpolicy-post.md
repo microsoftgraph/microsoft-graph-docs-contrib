@@ -40,6 +40,8 @@ POST /policies/appManagementPolicies
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
+> [!IMPORTANT]
+> Service principals with a createdDateTime `null` are treated as having being created on 01/01/2019.
 ## Request body
 
 In the request body, provide a JSON representation of an [appManagementPolicy](../resources/appManagementPolicy.md).
