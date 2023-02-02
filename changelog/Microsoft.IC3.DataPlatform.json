@@ -3,6 +3,42 @@
         {
             "ChangeList": [
                 {
+                    "Id": "588cac11-3d88-4e1d-a284-af3b1ceb6cbf",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "sessions",
+                    "ChangeType": "Change",
+                    "Description": "Change maximum page size to 60 sessions for a [callRecords query](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0).",
+                    "Target": "callRecord"
+                }
+            ],
+            "Id": "588cac11-3d88-4e1d-a284-af3b1ceb6cbf",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "",
+            "WorkloadArea": "Teamwork and communications",
+            "SubArea": "Calls and online meetings"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "62e788b4-e9ae-42ab-8318-a7732199d52c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "sessions",
+                    "ChangeType": "Change",
+                    "Description": "Change maximum page size to 60 sessions for a [callRecords query](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-api-overview?view=graph-rest-beta).",
+                    "Target": "callRecord"
+                }
+            ],
+            "Id": "62e788b4-e9ae-42ab-8318-a7732199d52c",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "",
+            "WorkloadArea": "Teamwork and communications",
+            "SubArea": "Calls and online meetings"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "1ab47202-a340-49ba-b47b-f53b7eeb1604",
                     "ApiChange": "Property",
                     "ChangedApiName": "azureADAppId",
