@@ -20879,7 +20879,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "updateTargetedSecurityGroups,mdmWindowsInformationProtectionPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [updateTargetedSecurityGroups](https://learn.microsoft.com/graph/api/intune-mam?view=graph-rest-betamwindowsinformationprotectionpolicy-updatetargetedsecuritygroups) action on [mdmWindowsInformationProtectionPolicy](https://learn.microsoft.com/graph/api/resources/intune-mam?view=graph-rest-betamwindowsinformationprotectionpolicy)",
+          "Description": "Added the updateTargetedSecurityGroups action on mdmWindowsInformationProtectionPolicy",
           "Target": "updateTargetedSecurityGroups,mdmWindowsInformationProtectionPolicy"
         },
         {
@@ -21071,7 +21071,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Change",
-          "Description": "Added the **expirationDateTime** property to the [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) entity",
+          "Description": "Added the **expirationDateTime** property to the iosLobAppProvisioningConfiguration entity",
           "Target": "iosLobAppProvisioningConfiguration"
         },
         {
@@ -21079,7 +21079,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expiration",
           "ChangeType": "Change",
-          "Description": "Removed the **expiration** property from the [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) entity",
+          "Description": "Removed the **expiration** property from the iosLobAppProvisioningConfiguration entity",
           "Target": "iosLobAppProvisioningConfiguration"
         },
         {
@@ -21151,7 +21151,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "initiatedByUserPrincipalName,deviceOwnerUserPrincipalName,deviceIMEI,actionState",
           "ChangeType": "Change",
-          "Description": "Added the **initiatedByUserPrincipalName**, **deviceOwnerUserPrincipalName**, **deviceIMEI** and **actionState** properties to the [remoteActionAudit](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-remoteactionaudit?view=graph-rest-beta) entity",
+          "Description": "Added the **initiatedByUserPrincipalName**, **deviceOwnerUserPrincipalName**, **deviceIMEI** and **actionState** properties to the remoteActionAudit entity",
           "Target": "remoteActionAudit"
         },
         {
@@ -21375,7 +21375,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicationId,appName,platformId,userFailures,deviceFailures",
           "ChangeType": "Change",
-          "Description": "Removed the **applicationId**, **appName**, **platformId**, **userFailures** and **deviceFailures** properties from the [appInstallationFailure](https://learn.microsoft.com/graph/api/resources/intune-apps-appinstallationfailure?view=graph-rest-beta) complex type",
+          "Description": "Removed the **applicationId**, **appName**, **platformId**, **userFailures** and **deviceFailures** properties from the appInstallationFailure complex type",
           "Target": "appInstallationFailure"
         },
         {
@@ -21465,7 +21465,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assign,iosLobAppProvisioningConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-apps-ioslobappprovisioningconfiguration-assign?view=graph-rest-beta) action on the [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) entity",
+          "Description": "Added the assign action on the iosLobAppProvisioningConfiguration entity",
           "Target": "assign,iosLobAppProvisioningConfiguration"
         },
         {
@@ -21537,7 +21537,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime,description,lastModifiedDateTime,displayName,version",
           "ChangeType": "Change",
-          "Description": "Added the **createdDateTime**, **description**, **lastModifiedDateTime**, **displayName** and **version** properties to the [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) entity",
+          "Description": "Added the **createdDateTime**, **description**, **lastModifiedDateTime**, **displayName** and **version** properties to the iosLobAppProvisioningConfiguration entity",
           "Target": "iosLobAppProvisioningConfiguration"
         },
         {
@@ -21665,7 +21665,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "groupAssignments,deviceStatuses,userStatuses",
           "ChangeType": "Change",
-          "Description": "Added the **groupAssignments**, **deviceStatuses** and **userStatuses** navigation properties to the [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) entity",
+          "Description": "Added the **groupAssignments**, **deviceStatuses** and **userStatuses** navigation properties to the iosLobAppProvisioningConfiguration entity",
           "Target": "iosLobAppProvisioningConfiguration"
         },
         {
@@ -21723,7 +21723,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appReportingOverviewStatus,deviceComplianceDeviceOverview,deviceConfigurationDeviceOverview,deviceManagementExchangeOnpremisesPolicy,iosDeviceFeaturesConfiguration,iosEducationDeviceConfiguration,iosLobAppProvisioningConfiguration,onpremisesConditionalAccessSettings,sharedPCConfiguration,windows10EnterpriseModernAppManagementConfiguration,windows10SecureAssessmentConfiguration,windows10WindowsInformationProtectionConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added new entities: [appReportingOverviewStatus](https://learn.microsoft.com/graph/api/resources/intune-apps-appreportingoverviewstatus?view=graph-rest-beta), [deviceComplianceDeviceOverview](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-beta), [deviceConfigurationDeviceOverview](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-beta), [deviceManagementExchangeOnpremisesPolicy](https://learn.microsoft.com/graph/api/resources/intune-onboarding-devicemanagementexchangeonpremisespolicy?view=graph-rest-beta), [iosDeviceFeaturesConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-beta), [iosEducationDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-ioseducationdeviceconfiguration?view=graph-rest-beta), [iosLobAppProvisioningConfiguration](https://learn.microsoft.com/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta), [onpremisesConditionalAccessSettings](https://learn.microsoft.com/graph/api/resources/intune-onboarding-onpremisesconditionalaccesssettings?view=graph-rest-beta), [sharedPCConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-beta), [windows10EnterpriseModernAppManagementConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration?view=graph-rest-beta), [windows10SecureAssessmentConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10secureassessmentconfiguration?view=graph-rest-beta), [windows10WindowsInformationProtectionConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10windowsinformationprotectionconfiguration?view=graph-rest-beta)",
+          "Description": "Added new entities: appReportingOverviewStatus, [deviceComplianceDeviceOverview](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-beta), [deviceConfigurationDeviceOverview](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-beta), [deviceManagementExchangeOnpremisesPolicy](https://learn.microsoft.com/graph/api/resources/intune-onboarding-devicemanagementexchangeonpremisespolicy?view=graph-rest-beta), [iosDeviceFeaturesConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-beta), [iosEducationDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-ioseducationdeviceconfiguration?view=graph-rest-beta), iosLobAppProvisioningConfiguration, [onpremisesConditionalAccessSettings](https://learn.microsoft.com/graph/api/resources/intune-onboarding-onpremisesconditionalaccesssettings?view=graph-rest-beta), [sharedPCConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-beta), [windows10EnterpriseModernAppManagementConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration?view=graph-rest-beta), [windows10SecureAssessmentConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windows10secureassessmentconfiguration?view=graph-rest-beta), windows10WindowsInformationProtectionConfiguration",
           "Target": "appReportingOverviewStatus,deviceComplianceDeviceOverview,deviceConfigurationDeviceOverview,deviceManagementExchangeOnpremisesPolicy,iosDeviceFeaturesConfiguration,iosEducationDeviceConfiguration,iosLobAppProvisioningConfiguration,onpremisesConditionalAccessSettings,sharedPCConfiguration,windows10EnterpriseModernAppManagementConfiguration,windows10SecureAssessmentConfiguration,windows10WindowsInformationProtectionConfiguration"
         },
         {
@@ -21827,7 +21827,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isDefault,lastModifiedDateTime,locale,messageTemplate,subject",
           "ChangeType": "Change",
-          "Description": "Added the **isDefault**, **lastModifiedDateTime**, **locale**, **messageTemplate** and **subject** properties to the[localizedNotificationMessage](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-localizednotificationmessage?view=graph-rest-beta) entity.",
+          "Description": "Added the **isDefault**, **lastModifiedDateTime**, **locale**, **messageTemplate** and **subject** properties to the localizedNotificationMessage entity.",
           "Target": "localizedNotificationMessage"
         },
         {
@@ -21835,7 +21835,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "azureActiveDirectoryDeviceId,deviceCategory,deviceRegistrationState,managementAgent",
           "ChangeType": "Change",
-          "Description": "Added the **azureActiveDirectoryDeviceId**, **deviceCategory**, **deviceRegistrationState** and **managementAgent** properties to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-onboarding-manageddevice?view=graph-rest-beta) entity.",
+          "Description": "Added the **azureActiveDirectoryDeviceId**, **deviceCategory**, **deviceRegistrationState** and **managementAgent** properties to the managedDevice entity.",
           "Target": "managedDevice"
         },
         {
