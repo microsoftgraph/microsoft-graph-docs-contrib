@@ -22,7 +22,7 @@ For more information about GDAP, see:
 
 ## GDAP workflow
 
-### GDAP relationship status transition
+### Lifecycle of a GDAP relationship
 
 The status of the Delegated Admin relationship transitions as follows:
 
@@ -33,7 +33,7 @@ The status of the Delegated Admin relationship transitions as follows:
 3. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: lockForApproval)
 4. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: terminate)
 
->**Note:** After running the [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) API with the `lockForApproval` action, build the customer invitation link by using the following URI template, where *{adminRelationshipID}* is the ID of admin relationship request.
+>After running the [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) API with the `lockForApproval` action, build the customer invitation link by using the following URI template, where *{adminRelationshipID}* is the ID of admin relationship request.
 >
 >`https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/{adminRelationshipID}`
 
@@ -88,7 +88,7 @@ This section describes the ways that Microsoft partners can use the GDAP APIs to
 | Get service management details for a delegated admin customer | [List serviceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md) |
 
 
-### GDAP Relationship Access Assignment Status Transition
+### Lifecycle of a GDAP Relationship Access Assignment
 
 The status of the Delegated Admin access assignment. The status transitions are as follows:
 
