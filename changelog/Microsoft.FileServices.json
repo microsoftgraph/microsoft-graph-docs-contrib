@@ -3020,26 +3020,42 @@
     {
       "ChangeList": [
         {
-          "Id": "557d653c-c7ab-4bb1-ba69-147ade728bde",
+          "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
           "ApiChange": "Method",
           "ChangedApiName": "createLink",
           "ChangeType": "Deletion",
-          "Description": "Removed the **createLink** method from the [listItem](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) resource.",
-          "Target": "listItem"
+          "Description": "Removed the **createLink** method from the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
         },
         {
-          "Id": "557d653c-c7ab-4bb1-ba69-147ade728bde",
+          "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
           "ApiChange": "Method",
           "ChangedApiName": "createLink",
           "ChangeType": "Addition",
-          "Description": "Added the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) method to the [listItem](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) resource.",
+          "Description": "Added the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
+          "ApiChange": "Method",
+          "ChangedApiName": "createLink",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **createLink** method from the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Target": "listItem"
+        },
+        {
+          "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
+          "ApiChange": "Method",
+          "ChangedApiName": "createLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) method to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
           "Target": "listItem"
         }
       ],
-      "Id": "557d653c-c7ab-4bb1-ba69-147ade728bde",
+      "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-02-02T09:52:20.2821586Z",
+      "CreatedDateTime": "2023-02-02T10:39:05.8609784Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     }
