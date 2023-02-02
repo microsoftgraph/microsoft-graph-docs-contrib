@@ -30,9 +30,9 @@ Examples of external groups are business units and work teams.
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
+| description | String | The description of the external group. Optional.      |
 | displayName | String | The friendly name of the external group. Optional.                                                                       |
-| description | String | The description of the external group. Optional.        
+| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |  
 
 ## Relationships
 
@@ -52,8 +52,8 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "id": "String (identifier)",
+  "description": "String",
   "displayName": "String",
-  "description": "String"
+  "id": "String (identifier)"
 }
 ```

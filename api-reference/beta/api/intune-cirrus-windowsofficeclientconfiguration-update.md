@@ -2,7 +2,7 @@
 title: "Update windowsOfficeClientConfiguration"
 description: "Patch a specific non-security policy payload."
 localization_priority: Normal
-author: "dougeby"
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -139,8 +139,3 @@ Content-Length: 1069
   ]
 }
 ```
-
-
-
-
-

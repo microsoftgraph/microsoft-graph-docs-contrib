@@ -28,9 +28,9 @@ chatMessageHostedContent derives from [teamworkHostedContent](teamworkhostedcont
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id            |String       | Read-only. Represents the chat message hosted content identifier.|
 |contentBytes  |Edm.Binary   | Write-only. When posting new chat message hosted content, represents the bytes of the payload. These are represented as a base64Encoded string.|
 |contentType   |String       | Write-only. When posting new chat message hosted content, represents the type of content, such as image/png.|
+|id            |String       | Read-only. Represents the chat message hosted content identifier.|
 
 ### Instance attributes
 
@@ -61,9 +61,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@microsoft.graph.temporaryId": "String (identifier)",
-  "id": "String (identifier)",
   "contentBytes": "String (binary)",
-  "contentType": "String"
+  "contentType": "String",
+  "id": "String (identifier)"
 }
 ```
 
