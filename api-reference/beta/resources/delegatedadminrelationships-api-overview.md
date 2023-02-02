@@ -24,7 +24,7 @@ For more information about GDAP, see:
 
 ## GDAP workflow
 
-### Lifecycle of a GDAP relationship
+### Lifecycle of a GDAP Relationship
 
 The status of the Delegated Admin relationship transitions as follows:
 
