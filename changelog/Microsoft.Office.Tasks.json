@@ -1637,38 +1637,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [plannerRecurrenceSchedule](https://learn.microsoft.com/en-us/graph/api/resources/plannerRecurrenceSchedule?view=graph-rest-beta) resource type.",
           "Target": "plannerRecurrenceSchedule"
-        },
-        {
-          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "recurrencePattern",
-          "ChangeType": "Addition",
-          "Description": "Added the [recurrencePattern](https://learn.microsoft.com/en-us/graph/api/resources/recurrencePattern?view=graph-rest-beta) resource type.",
-          "Target": "recurrencePattern"
-        },
-        {
-          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "recurrencePatternType",
-          "ChangeType": "Addition",
-          "Description": "Added the **recurrencePatternType** enumeration type.",
-          "Target": "recurrencePatternType"
-        },
-        {
-          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "weekIndex",
-          "ChangeType": "Addition",
-          "Description": "Added the **weekIndex** enumeration type.",
-          "Target": "weekIndex"
-        },
-        {
-          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "dayOfWeek",
-          "ChangeType": "Addition",
-          "Description": "Added the **dayOfWeek** enumeration type.",
-          "Target": "dayOfWeek"
         }
       ],
       "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
