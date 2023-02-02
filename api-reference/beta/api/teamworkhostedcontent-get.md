@@ -187,3 +187,4 @@ Content-type: image/png
 
 - [Get icons of a Teams app](teamsappicon-get.md)
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Microsoft Graph service-specific throttling limits](/concepts/throttling-limits.md)

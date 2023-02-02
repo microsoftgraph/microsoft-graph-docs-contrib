@@ -352,3 +352,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+- [Microsoft Graph service-specific throttling limits](/concepts/throttling-limits.md)
