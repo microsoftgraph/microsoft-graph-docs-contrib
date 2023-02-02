@@ -14,7 +14,7 @@
             "Id": "588cac11-3d88-4e1d-a284-af3b1ceb6cbf",
             "Cloud": "Prod",
             "Version": "v1.0",
-            "CreatedDateTime": "",
+            "CreatedDateTime": "2023-02-01T23:11:04.628237Z",
             "WorkloadArea": "Teamwork and communications",
             "SubArea": "Calls and online meetings"
         },
@@ -32,7 +32,7 @@
             "Id": "62e788b4-e9ae-42ab-8318-a7732199d52c",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "",
+            "CreatedDateTime": "2023-02-01T23:11:04.628237Z",
             "WorkloadArea": "Teamwork and communications",
             "SubArea": "Calls and online meetings"
         },
