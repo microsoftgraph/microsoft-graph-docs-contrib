@@ -15,20 +15,20 @@ Namespace: microsoft.graph
 
 Removes a [horizontalSection][] from the [sitePage][]
 
-[horizontalSection]: ../resources/horizontalSection.md
-[sitePage]: ../resources/sitepage.md
+[horizontalsection]: ../resources/horizontalSection.md
+[sitepage]: ../resources/sitepage.md
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
->**Note:** To delete an item, the user must have granted the application write access to the item to be deleted.
+> **Note:** To delete an item, the user must have granted the application write access to the item to be deleted.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.ReadWrite.All                         |
 
 ## HTTP request
 
@@ -57,6 +57,7 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 ```http
 DELETE /sites/{site-id}/pages/{page-id}/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
+
 ##### Response
 
 <!-- { "blockType": "response" } -->
