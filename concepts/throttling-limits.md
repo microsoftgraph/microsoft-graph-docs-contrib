@@ -304,8 +304,8 @@ Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
 |------------------------------------------------------|---------------------------------|------------|
-| GET [team](/graph/api-reference/v1.0/api/team-get), [channel](/graph/api-reference/v1.0/api/channel-get), [tab](/graph/api-reference/v1.0/api/channel-list-tabs), [installedApps](/graph/api-reference/v1.0/api/userteamwork-get-installedapps), [appCatalogs](/graph/api-reference/v1.0/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
-| POST/PUT [channel](/graph/api-reference/v1.0/api/channel-post), [tab](/graph/api-reference/v1.0/api/channel-post-tabs), installedApps, appCatalogs    |  30 rps                         | 300 rps  |
+| GET [team](/graph/api/team-get), [channel](/graph/api/api/channel-get), [tab](/graph/api/api/channel-list-tabs), [installedApps](/graph/api/api/userteamwork-get-installedapps), [appCatalogs](/graph/api/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
+| POST/PUT [channel](/graph/api/api/channel-post), [tab](/graph/api/api/channel-post-tabs), installedApps, appCatalogs    |  30 rps                         | 300 rps  |
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
