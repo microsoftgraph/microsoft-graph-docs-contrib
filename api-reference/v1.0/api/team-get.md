@@ -153,4 +153,4 @@ Content-type: application/json
 
 ## See also
 
-[Microsoft Teams service limits](../../../concepts/throttling-limits.md#microsoft-teams-service-limits)
+[Microsoft Teams service limits](/concepts/throttling-limits.md#microsoft-teams-service-limits)
