@@ -191,7 +191,7 @@ For the list of resource types that can be specified as target objects for a dir
 
 #### Developer experience
 
-Directory extension definitions are managed through the [extensionProperty](/graph/api/resources/extensionproperty) resource and its associated methods. The data is managed through the same REST requests that you use to manage the resource instance.
+Directory extension definitions are managed through the [extensionProperty](/graph/api/resources/extensionproperty) resource and its associated methods. The data is managed through the REST API requests that you use to manage the resource instance.
 
 ##### Define the directory extension
 
@@ -965,9 +965,9 @@ The table below contrasts and compares the extension types, which should help yo
 >
 > You can manage all extensions when you're signed in with a work or school account. Additionally, you can manage open extensions for the following resources when signed-in with a personal Microsoft account: **event**, **post**, **group**, **message**, **contact**, and **user**.
 
-## Permissions
+## Permissions and privileges
 
-The same [permissions](./permissions-reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource. For example, for an app to update any user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
+The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, for an app to update any user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* Microsoft Graph permission.
 
 ## Known limitations
 
@@ -977,7 +977,6 @@ For known limitations using extensions, see the [extensions section](known-issue
 
 - [Add custom data to users using open extensions](extensibility-open-users.md)
 - [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
-
 
 <!-- Links -->
 
