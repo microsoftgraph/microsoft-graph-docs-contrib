@@ -735,3 +735,9 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+### Example 8: List groups and $expand members
+
+This is an exmaple of how you can request a list of groups in your tenant with the option to expand members to see group memberships.
+#### Request
+GET /groups?$expand=members
