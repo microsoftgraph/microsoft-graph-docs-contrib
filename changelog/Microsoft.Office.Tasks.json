@@ -1619,7 +1619,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "recurrence",
           "ChangeType": "Addition",
-          "Description": "Added the `recurrence` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **recurrence** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
