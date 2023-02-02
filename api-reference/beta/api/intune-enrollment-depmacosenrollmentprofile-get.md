@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2179
+Content-Length: 1860
 
 {
   "value": {
@@ -106,19 +106,11 @@ Content-Length: 2179
     "chooseYourLockScreenDisabled": true,
     "accessibilityScreenDisabled": true,
     "autoUnlockWithWatchDisabled": true,
+    "skipPrimarySetupAccountCreation": true,
+    "setPrimarySetupAccountAsRegularUser": true,
     "dontAutoPopulatePrimaryAccountInfo": true,
-    "lockPrimaryAccountInfo": true,
-    "managedLocalUserShortName": true,
     "primaryAccountFullName": "Primary Account Full Name value",
     "primaryAccountUserName": "Primary Account User Name value",
-    "requestRequiresNetworkTether": true,
-    "setPrimarySetupAccountAsRegularUser": true,
-    "skipPrimarySetupAccountCreation": true,
-    "isLocalPrimaryAccount": true,
-    "isPrimaryUser": true,
-    "primaryUser": "Primary User value",
-    "primaryUserFullName": "Primary User Full Name value",
-    "prefillAccountInfo": true,
     "enableRestrictEditing": true
   }
 }
