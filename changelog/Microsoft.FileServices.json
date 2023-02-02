@@ -3024,7 +3024,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createLink",
           "ChangeType": "Deletion",
-          "Description": "Removed the **createLink** method from the [listItem](https://learn.microsoft.com/en-us/graph/api/listItem?view=graph-rest-beta) resource.",
+          "Description": "Removed the **createLink** method from the [listItem](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) resource.",
           "Target": "listItem"
         },
         {
@@ -3032,7 +3032,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createLink",
           "ChangeType": "Addition",
-          "Description": "Added the [createLink](https://learn.microsoft.com/en-us/graph/api/listItem?view=graph-rest-beta) method to the [listItem](https://learn.microsoft.com/en-us/graph/api/listItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) method to the [listItem](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) resource.",
           "Target": "listItem"
         }
       ],
