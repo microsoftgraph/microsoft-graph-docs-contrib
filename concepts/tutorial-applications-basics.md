@@ -235,6 +235,7 @@ Least privilege delegated permission: `Application.ReadWrite.All`
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-1418d6908bcd
+
 {
     "appRoleAssignmentRequired": true
 }

@@ -177,6 +177,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect work profile password before the device is wiped. Valid values 4 to 11|
 |workProfilePasswordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the work profile password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |workProfilePasswordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a work profile must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
+|locateDeviceUserlessDisabled|Boolean|Indicates whether or not LocateDevice for userless (COSU) devices is disabled.|
+|locateDeviceLostModeEnabled|Boolean|Indicates whether or not LocateDevice for devices with lost mode (COBO, COPE) is enabled.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -460,6 +462,8 @@ Here is a JSON representation of the resource.
   "workProfilePasswordPreviousPasswordCountToBlock": 1024,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 1024,
   "workProfilePasswordRequiredType": "String",
-  "workProfilePasswordRequireUnlock": "String"
+  "workProfilePasswordRequireUnlock": "String",
+  "locateDeviceUserlessDisabled": true,
+  "locateDeviceLostModeEnabled": true
 }
 ```
