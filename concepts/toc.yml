@@ -333,21 +333,12 @@ items:
               - name: Get links to assignments and submissions
                 href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
-<<<<<<< HEAD
-<<<<<<< HEAD
                 href: update-assignment-and-grade-data.md
-=======
-=======
->>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
                 href: update-assignment-and-grade-data.md               
               - name: Download all resources from a set of assignments
                 href: download-resources-from-assignment.md
               - name: Share assignments with an embedded Teams application
                 href: embed-teams-app-in-assignment.md
-<<<<<<< HEAD
->>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
-=======
->>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
       - name: Extensions
         items:
           - name: Overview
