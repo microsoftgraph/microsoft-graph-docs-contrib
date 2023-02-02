@@ -1,6 +1,6 @@
 ---
 title: "onlineMeetingRestricted resource type"
-description: "Specifies the reasons if the participant is having a restricted experience."
+description: "Indicates reason(s) why media content from this participant is restricted."
 author: "zihzhan"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specified restricted experience reasons for a participant.
+Indicates reason(s) why media content from this participant is restricted.
 
 ## Properties
 
 | Property        | Type    | Description|
 |:----------------|:--------|:----------|
-| videoDisabled     | [onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values) | Specifies the reason if participant's video is disabled. |
-| contentSharingDisabled     | [onlineMeetingContentSharingDisabledreason](#onlinemeetingcontentsharingdisabledreason-values) | Specifies the reason if shared content from the participant is disabled. |
+| videoDisabled     | [onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values) | Specifies the reason why video from this participant is disabled. |
+| contentSharingDisabled     | [onlineMeetingContentSharingDisabledreason](#onlinemeetingcontentsharingdisabledreason-values) | Specifies the reason why shared content from this participant is disabled. |
 
 ### onlineMeetingVideoDisabledReason values
 
