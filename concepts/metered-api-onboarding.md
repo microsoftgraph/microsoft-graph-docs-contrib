@@ -22,7 +22,7 @@ See [List of Microsoft Graph Azure-metered APIs](metered-api-list.md) for the fu
 To consume Azure-metered APIs and services, the Azure Active Directory application registration consuming the APIs must be associated to an Azure Subscription which will be billed for any metered charges. In addition to enabling usage of metered APIs, the association allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of this application. These instructions will outline the process of completing this association.
 
 ## Current limitations
-- Microsoft Graph Azure-metered APIs and services are not currently available in national cloud deployments. See [National cloud deployments](deployments.md) for more information on national clouds.
+- Microsoft Graph Azure-metered APIs and services are not currently available in national cloud deployments including Microsoft 365 GCC deployments accessed through the worldwide Microsoft Graph endpoint. See [National cloud deployments](deployments.md) for more information on national clouds.
 - The target application must be a confidential client application (for example, web app, web API, or daemon / service). Public client applications are not supported (desktop apps, mobile apps).
 
 ## Prerequisites for accessing metered APIs
