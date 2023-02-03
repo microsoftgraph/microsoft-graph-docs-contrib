@@ -54,8 +54,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.industryData.yearTimePeriodDefinition",
   "displayName": "String",
-  "endDate": "Date",
-  "startDate": "Date",
+  "endDate": "String (date)",
+  "startDate": "String (date)",
   "year": {
     "@odata.type": "microsoft.graph.industryData.yearReferenceValue"
   }
