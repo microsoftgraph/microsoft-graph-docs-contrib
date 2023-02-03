@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents configurations of tenant domains that are federated with Azure AD. Use this resource to configure federation settings when setting up federation with Azure AD. For information on federation, see [What is federation with Azure AD?](/azure/active-directory/hybrid/whatis-fed).
+Represents configurations of tenant domains that are federated and verified with Azure AD. Use this resource to configure federation settings when setting up federation with Azure AD. For information on federation, see [What is federation with Azure AD?](/azure/active-directory/hybrid/whatis-fed).
 
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).

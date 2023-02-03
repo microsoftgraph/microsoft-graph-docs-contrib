@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const printJob = {
+  displayName: 'testjob',
   configuration: {
     feedOrientation: 'longEdgeFirst',
     pageRanges: [
