@@ -44,9 +44,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "displayName": "String",
   "id": "String (identifier)",
-  "type": "String",
-  "displayName": "String"
+  "type": "String"
 }
 ```
 

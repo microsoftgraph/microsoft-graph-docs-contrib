@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestSkip := int32(20)
 
-requestParameters := &graphconfig.EventsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeEventsRequestBuilderGetQueryParameters{
 	Orderby: [] string {"createdDateTime"},
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.EventsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeEventsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

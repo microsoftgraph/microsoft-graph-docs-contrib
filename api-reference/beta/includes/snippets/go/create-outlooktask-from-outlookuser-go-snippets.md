@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "outlook.timezone=\"Pacific Standard Time\"",
-}
-configuration := &graphconfig.TasksRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
+configuration := &graphconfig.MeOutlookTasksRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOutlookTask()

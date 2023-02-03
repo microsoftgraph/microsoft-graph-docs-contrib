@@ -40,6 +40,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
+|[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
 
 ## Properties
@@ -48,6 +49,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |:---|:---|:---|
 |aadDeviceId|String|The Azure Active Directory (Azure AD) device ID of the Cloud PC.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC is able to be connected or not.|
+|diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
@@ -69,6 +71,16 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, and `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
+
+### cloudPcDiskEncryptionState values
+
+|Member|Description|
+|:---|:---|
+|notAvailable|The Cloud PC is not provisioned, or is in a state where encryption is not available.|
+|notEncrypted|The Cloud PC should be encrypted, but the encryption is not done yet (reserved, should not happen).|
+|encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using a platform managed key. This is the default value if the customer-managed key is not enabled.|
+|encryptedUsingCustomerManagedKey|The Cloud PC is encrypted using the customer-managed key.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcStatus values
 
@@ -126,6 +138,7 @@ The following is a JSON representation of the resource.
   "osVersion": "String",
   "lastRemoteActionResult": "String",
   "lastLoginResult": "String",
-  "connectivityResult": "String"
+  "connectivityResult": "String",
+  "diskEncryptionState": "String"
 }
 ```

@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "(requestState eq 'PendingApproval')"
 
-requestParameters := &graphconfig.AccessPackageAssignmentRequestsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageAssignmentRequestsRequestBuilderGetQueryParameters{
 	Expand: [] string {"requestor($expand=connectedOrganization)"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.AccessPackageAssignmentRequestsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageAssignmentRequestsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
