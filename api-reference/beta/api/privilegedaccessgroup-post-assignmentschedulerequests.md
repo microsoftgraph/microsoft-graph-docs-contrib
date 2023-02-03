@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [privileg
 
 ## Examples
 
-### Example 1: Create Assignment Schedule Request
+### Example 1: Create an assignment schedule request
 
 In the following request, an assignment schedule request is created to assign an active member access.
 
