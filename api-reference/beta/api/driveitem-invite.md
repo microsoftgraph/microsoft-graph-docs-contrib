@@ -64,7 +64,7 @@ In the request body, provide a JSON object with the following parameters.
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
 | sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
 | roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
-| expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
+| expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. ExpirationDateTime is only appliciable for sharingLink permissions. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only
 
 ## Example
