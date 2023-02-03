@@ -1,5 +1,5 @@
 ---
-title: "List privilegedAccessGroupAssignmentScheduleRequests"
+title: "List assignmentScheduleRequests"
 description: "Get a list of the privilegedAccessGroupAssignmentScheduleRequest objects and their properties."
 author: "mandardalvi"
 ms.localizationpriority: medium
