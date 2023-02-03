@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilityScheduleInstance: filterByCurrentUser"
-description: "Retrieve the eligibility schedule instances of privileged access to a group relationship assignment for the calling principal."
+description: "Return instances of membership and ownership eligibility schedules for the calling principal."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
