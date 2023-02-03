@@ -1,7 +1,7 @@
 ---
 title: "Deploy an expedited security update using the Windows Update for Business deployment service"
 description: "Follow these steps to deploy expedited Windows security updates to devices in an Azure AD tenant in case of an emergency by using the Windows Update for Business deployment service."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Deploy an expedited security update using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10 feature updates and expedited security updates. This topic focuses on deployments of expedited security updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on deployments of expedited security updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).  For infomation about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
 Expediting a security update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible. It can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal. However, while it can help to achieve compliance targets against a specific security update, it is not designed to be used every month. Instead, consider using [compliance deadlines for updates](/windows/deployment/update/wufb-compliancedeadlines).
 
@@ -98,11 +98,17 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.expeditedQualityUpdateReference",
-        "releaseDate": "YYYY-MM-DD"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
+            "id": "catalog/entries/1"
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "expedite": {
+            "isExpedited": true
+        },
         "userExperience": {
             "daysUntilForcedReboot": 2
         }
@@ -117,37 +123,29 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+    "@odata.type": "#microsoft.graph.windowsUpdates.deployment,
     "id": "b5171742-1742-b517-4217-17b5421717b5",
+    "createdDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)",    
     "state": {
-        "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
-        "value": "offering",
-        "reasons": [
-            {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
-                "value": "offeringByRequest"
-            }
-        ],
+        "effectiveValue": "offering",
         "requestedValue": "none",
-        "effectiveSinceDate": "String (timestamp)"
+        "reasons": []
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.expeditedQualityUpdateReference",
-        "releaseDate": "YYYY-MM-DDT00:00:00Z",
-        "classification": "security",
-        "equivalentContent": "latestSecurity"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "schedule": null,
+        "monitoring": null,
+        "contentApplicability": null,
         "userExperience": {
             "daysUntilForcedReboot": 2
         },
-        "monitoring": null,
-        "rollout": null,
-        "safeguard": null
-    },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)"
+        "expedite": {
+            "isExpedited": true
+        }
+    }
 }
 ```
 

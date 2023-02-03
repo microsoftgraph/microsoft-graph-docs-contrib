@@ -1,8 +1,11 @@
 ---
 title: "Microsoft Graph permissions reference "
 description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests."
-author: "jackson-woods"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: high
+ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 12/09/2022
@@ -342,6 +345,7 @@ None.
 | _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | No |
 | _Calendars.ReadWrite_ |Have full access to user calendars |Allows the app to create, read, update, and delete events in user calendars. |No | Yes |
 | _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No | No |
+| _Calendars.ReadBasic_ |Read basic details of user calendars |Allows the app to read events in user calendars, except for properties such as body, attachments, and extensions.|Yes | No |
 
 <br/>
 
@@ -351,6 +355,7 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Calendars.Read_ |Read calendars in all mailboxes |Allows the app to read events of all calendars without a signed-in user. |Yes |
 |_Calendars.ReadWrite_ |Read and write calendars in all mailboxes |Allows the app to create, read, update, and delete events of all calendars without a signed-in user. |Yes |
+| _Calendars.ReadBasic.All_ |Read basic details of calendars in all mailboxes|Allows the app to read events of all calendars, except for properties such as body, attachments, and extensions, without a signed-in user. |Yes |
 
 > **Important**
 Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not to all the mailboxes in the organization, even if the app has been granted the application permissions of Calendars.Read or Calendars.ReadWrite.
@@ -813,6 +818,24 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Directory recommendations permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DirectoryRecommendations.Read.All_ | Read all recommendations | Allows the  app to read recommendations on behalf of the signed-in user. | Yes | No |
+| _DirectoryRecommendations.ReadWrite.All_ | Manage all recommendations | Allows the  app to read and write recommendations on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _DirectoryRecommendations.Read.All_ | Read all recommendations | Allows the  app to read recommendations without a signed-in user. | Yes |
+| _DirectoryRecommendations.ReadWrite.All_ | Manage all recommendations | Allows the  app to read and write recommendations without a signed-in user. | Yes |
 
 ---
 
@@ -1819,7 +1842,6 @@ _ProgramControl.Read.All_ and _ProgramControl.ReadWrite.All_ are valid only for 
 
 For an app with delegated permissions to read programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.  For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
----
 ## Records management permissions
 
 #### Delegated permissions
@@ -2021,6 +2043,7 @@ Search configuration permissions are only valid for work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AttackSimulation.Read.All_ |Read attack simulation data of an organization | Allows the app to read attack simulation and training data for an organization for the signed-in user. |  Yes | No |
+| _AttackSimulation.ReadWrite.All_ |Read, create, and update attack simulation data of an organization |Allows the app to read, create, and update attack simulation and training data for an organization for the signed-in user. |  Yes | No |
 | _SecurityActions.Read.All_        |  Read your organization's security actions | Allows the app to read your organization’s security actions on behalf of the signed-in user. | Yes  | No |
 | _SecurityActions.ReadWrite.All_   | Read and update your organization's security actions | Allows the app to read or update your organization’s security actions on behalf of the signed-in user.  | Yes  | No |
 | _SecurityAlert.Read.All_ | Read alerts | Allows the app to read alerts, on behalf of the signed-in user. | Yes | No |
@@ -2038,7 +2061,8 @@ Search configuration permissions are only valid for work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _AttackSimulation.Read.All_ |Read attack simulation data of an organization | Allows the app to read attack simulation and training data for an organization without a signed-in user.|  Yes |
-| _SecurityActions.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security actions. | Yes  |
+| _AttackSimulation.ReadWrite.All_ |Read, create, and update all attack simulation data of an organization | Allows the app to read, create, and update attack simulation and training data for an organization without a signed-in user.|  Yes |
+| _SecurityActions.Read.All_        |  Read and write your organization’s security events |Allows the app to create other applications, and fully manage those applications (read, update, update application secrets and delete), without a signed-in user. | Yes  |
 | _SecurityActions.ReadWrite.All_   | Create and read your organization's security actions | Allows the app to read or create security actions, without a signed-in user. | Yes  |
 | _SecurityAlert.Read.All_ | Read all alerts | Allows the app to read all alerts, without a signed-in user. | Yes |
 | _SecurityAlert.ReadWrite.All_ | Read and write to all alerts | Allows the app to read and write to all alerts, without a signed-in user. | Yes |
@@ -2173,14 +2197,18 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Read user’s tasks and task lists (preview) | Allows the app to read the signed-in user’s tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. | No | Yes |
+| _Tasks.Read_ | Read user’s tasks and task lists | Allows the app to read the signed-in user’s tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. | No | Yes |
 | _Tasks.Read.Shared_ | Read user and shared tasks (preview) | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
-| _Tasks.ReadWrite_ | Create, read, update, and delete user’s tasks and task lists (preview) | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. | No | Yes |
+| _Tasks.ReadWrite_ | Create, read, update, and delete user’s tasks and task lists | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. | No | Yes |
 | _Tasks.ReadWrite.Shared_ | Read and write user and shared tasks (preview) | Allows the app to create, read, update, and delete tasks a user has permissions to, including their own and shared tasks. | No | No |
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Tasks.Read.All_ | Read all users’ tasks and tasklist | Allows the app to read all users’ tasks and task lists in your organization, without a signed-in user. | Yes |
+| _Tasks.ReadWrite.All_ | Read and write all users’ tasks and tasklists | Allows the app to create, read, update and delete all users’ tasks and task lists in your organization, without a signed-in user | Yes |
+
 
 ### Remarks
 _Tasks_ permissions are used to control access for To Do tasks, Planner tasks, and Outlook tasks(deprecated).
@@ -2190,14 +2218,17 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 ### Example usage
 #### Delegated
 
-* _Tasks.Read_: Get all tasks in a user's mailbox (`GET /me/outlook/tasks`).
+* _Tasks.Read_: Get all Planner tasks assigned to the current user (`GET /me/planner/tasks`).
 * _Tasks.Read.Shared_: Access tasks in a folder shared to you by another user in your organization (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
-* _Tasks.ReadWrite_: Add an event to the user's default task folder (`POST /me/outlook/tasks`).
-* _Tasks.Read_: Get all uncompleted tasks in a user's mailbox (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
-* _Tasks.ReadWrite_: Update a task in a user's mailbox (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
+* _Tasks.ReadWrite_: Create a Planner task (`POST /planner/tasks`).
 * _Tasks.ReadWrite.Shared_: Complete a task on behalf of another user (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+#### Application
+
+* _Tasks.Read.All_: Get all Planner plans in a group (`GET /groups/{id}/planner/plans`)
+* _Tasks.ReadWrite.All_: Delete a Planner task (`Delete /planner/tasks/{id}`)
 
 ---
 
@@ -2636,6 +2667,7 @@ Threat hunting permissions are valid only on work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read.All_ |    Read all users' full profiles | Allows the app to read the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.| Yes |
+| _User.ReadBasic.All_ |    Read all users' basic profiles | Allows the app to read a basic set of profile properties of other users in your organization without a signed-in user. Includes display name, first and last name, email address, open extensions, and photo. | Yes |
 | _User.ReadWrite.All_ |   Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | Yes |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, without a signed-in user. | Yes |
 | _User.Export.All_       |    Export users' data | Allows the app to export organizational users' data, without a signed-in user.| Yes |

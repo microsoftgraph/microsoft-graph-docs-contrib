@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(5)
 
-requestParameters := &graphconfig.FilesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SecurityCasesEdiscoveryCaseItemReviewSetItemFilesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.FilesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SecurityCasesEdiscoveryCaseItemReviewSetItemFilesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -1,7 +1,7 @@
 ---
 title: "Get resourceConnection"
 description: "Read the properties and relationships of a resourceConnection object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

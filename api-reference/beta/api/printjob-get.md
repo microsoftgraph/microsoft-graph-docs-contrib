@@ -103,6 +103,7 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
   "id": "5182",
+  "displayName": "testjob", 
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
   "createdBy": {},
   "status": {
@@ -163,6 +164,7 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs(tasks())/$entity",
   "id": "5182",
+  "displayName": "testjob", 
   "createdDateTime": "2020-06-30T17:18:52.3930472Z",
   "createdBy": {
     "id": "",
@@ -236,6 +238,7 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())/$entity",
   "id": "31216",
+  "displayName": "testjob",   
   "createdDateTime": "2020-06-26T04:20:06.5715544Z",
   "createdBy": {
     "id": "",
