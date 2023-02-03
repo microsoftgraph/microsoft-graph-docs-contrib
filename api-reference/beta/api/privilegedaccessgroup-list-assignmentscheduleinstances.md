@@ -1,5 +1,5 @@
 ---
-title: "List privilegedAccessGroupAssignmentScheduleInstances"
+title: "List assignmentScheduleInstances"
 description: "Get a list of the privilegedAccessGroupAssignmentScheduleInstance objects and their properties."
 author: "mandardalvi"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List privilegedAccessGroupAssignmentScheduleInstances
+# List assignmentScheduleInstances
 Namespace: microsoft.graph
 
 Get a list of the [privilegedAccessGroupAssignmentScheduleInstance](../resources/privilegedaccessgroupassignmentscheduleinstance.md) objects and their properties.
