@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A privilegedAccessSchedule represents the schedule of privileged access. The schedule object will drive the creation and deletion of privilegedAccessScheduleInstance.
-
-This is an abstract type.
+An abstract type that exposes properties relating to the schedule of assigned and eligible membership and ownership to groups that are governed by PIM. This abstract type is inherited by the following derived types:
++ [privilegedAccessGroupAssignmentSchedule](privilegedaccessgroupassignmentschedule.md)
++ [privilegedAccessGroupEligibilitySchedule](privilegedaccessgroupeligibilityschedule.md)
 
 
 Inherits from [entity](../resources/entity.md).
