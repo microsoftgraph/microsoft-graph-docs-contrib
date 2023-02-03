@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilityScheduleRequest: cancel"
-description: "Cancel a pending privileged access eligibility request."
+description: "Cancel an eligibility assignment request to a group whose membership and ownership are governed by PIM."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
