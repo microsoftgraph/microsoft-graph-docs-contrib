@@ -13,7 +13,7 @@ $requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new GroupRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
-$queryParameters->orderBy = ["displayName"];
+$queryParameters->orderby = ["displayName"];
 $queryParameters->filter = "startswith(displayName,%20'a')";
 
 $headers = [

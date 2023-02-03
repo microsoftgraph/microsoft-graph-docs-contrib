@@ -1,7 +1,7 @@
 ---
 title: "Windows updates API overview"
 description: "The Windows Update for Business deployment service gives control to your organization over the updates offered to your devices."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -19,24 +19,29 @@ IT professionals and management tool vendors alike can use the deployment servic
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update.
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s).
 
-Today, the deployment service supports managing Windows feature updates and expediting Windows security updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview).
+Today, the deployment service supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview).
 
 ## Prerequisites
 
 To use the deployment service, your organization must have one of the following subscriptions:
-* Windows 10 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
-* Windows 10 Education A3 or A5 (included in Microsoft 365 A3 or A5)
+* Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
+* Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
 * Windows Virtual Desktop Access E3 or E5
 * Microsoft 365 Business Premium
 
 Additionally, devices managed by the deployment service must:
-* Be Azure AD joined or Hybrid AD joined
-* Run one of the following Windows 10 editions: Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Pro Education
 * Have installed Windows 10 version 1709 or later
+* Be Azure AD joined or Hybrid AD joined
+* Have one of the following Windows 10 or Windows 11 editions installed:
+    Pro
+    Enterprise
+    Education
+    Pro Education
+    Pro for Workstations
 
 ## Enroll devices to be managed
 
-To start using the deployment service, [enroll devices in update management](windowsupdates-enroll.md).
+To start using the deployment service, [enroll devices in update management](/graph/windowsupdates-enroll.md) and [enroll devices in driver management](/graph/windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
 
 ## Approve and schedule Windows content delivered from Windows Update
 
@@ -69,4 +74,4 @@ To learn more, see [Manage monitoring rules for a deployment](windowsupdates-man
 
 Looking for the API reference for this service?
 
-See [Windows updates API in Microsoft Graph beta](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true).
+See [Windows updates API in Microsoft Graph beta](/graph/api/resources/adminwindowsupdates?view=graph-rest-beta&preserve-view=true).
