@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [privileg
 
 ### Example 1: Create an eligible schedule request
 
-In the following request, an eligible schedule request is created to assign an eligible owner access.
+The following request creates an eligibility schedule request to make a principal eligible to be a group owner. The eligible ownership expires after two hours.
 
 #### Request
 <!-- {
