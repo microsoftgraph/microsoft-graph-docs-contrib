@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [privilegedAcc
 ## Examples
 Note: this method requires either the principalId or groupId filter property.
 
-### Example 1
+### Example 1: Retrieve an assignment schedule that's scoped to a group
 
 #### Request
 <!-- {
