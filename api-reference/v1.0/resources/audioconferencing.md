@@ -42,8 +42,8 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "dialinUrl": "String",
   "conferenceId": "String",
+  "dialinUrl": "String",
   "tollFreeNumbers": [ "String" ],
   "tollNumbers": [ "String" ]
 }

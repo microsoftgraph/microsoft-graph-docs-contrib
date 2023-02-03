@@ -70,24 +70,24 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.educationSchool",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "externalSource": "String",
-  "externalSourceDetail": "String",
-  "principalEmail": "String",
-  "principalName": "String",
-  "externalPrincipalId": "String",
-  "lowestGrade": "String",
-  "highestGrade": "String",
-  "schoolNumber": "String",
-  "externalId": "String",
-  "phone": "String",
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  }
+  "description": "String",
+  "displayName": "String",
+  "externalId": "String",
+  "externalPrincipalId": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "highestGrade": "String",
+  "id": "String (identifier)",
+  "lowestGrade": "String",
+  "phone": "String",
+  "principalEmail": "String",
+  "principalName": "String",
+  "schoolNumber": "String"
 }
 ```

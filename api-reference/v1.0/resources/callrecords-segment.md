@@ -26,8 +26,8 @@ api with `$expand=sessions($expand=segments)` or the [List session](../api/callr
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|caller|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that initiated this segment.|
 |callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that answered this segment.|
+|caller|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that initiated this segment.|
 |endDateTime|DateTimeOffset|UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Failure information associated with the segment if it failed.|
 |id|String|Unique identifier for the segment. Read-only.|
@@ -53,13 +53,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
-  "caller": {"@odata.type": "microsoft.graph.callRecords.endpoint"},
   "callee": {"@odata.type": "microsoft.graph.callRecords.endpoint"},
+  "caller": {"@odata.type": "microsoft.graph.callRecords.endpoint"},
+  "endDateTime": "String (timestamp)",
   "failureInfo": {"@odata.type": "microsoft.graph.callRecords.failureInfo"},
+  "id": "String (identifier)",
   "media": [{"@odata.type": "microsoft.graph.callRecords.media"}],
-  "startDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)"
+  "startDateTime": "String (timestamp)"
 }
 ```
 
