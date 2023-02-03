@@ -101,7 +101,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetagraphbetarefreshtest/$metadata#admin/windows/updates/updatePolicies('a7aa99c1-34a2-850c-5223-7816fde70713')/complianceChanges/$entity",
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
     "id": "6b73d038-68bc-4f0b-8b94-72a26f1e879d",
     "createdDateTime": "String (timestamp)",

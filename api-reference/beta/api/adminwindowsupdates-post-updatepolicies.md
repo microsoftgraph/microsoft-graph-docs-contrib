@@ -115,7 +115,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetagraphbetarefreshtest/$metadata#admin/windows/updates/updatePolicies/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
     "id": "1b35b81b-f839-4951-882a-1fbfc6446409",
     "createdDateTime": "String (timestamp)",
     "autoEnrollmentUpdateCategories": [],
