@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroup resource type"
-description: "The navigation entity which contains the privileged access group APIs."
+description: "The entry point for all resources related to Privileged Identity Management (PIM) for groups."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
