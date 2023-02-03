@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ea886698-6713-4541-a994-fe34ac144002",
+          "ApiChange": "Member",
+          "ChangedApiName": "coorganizer",
+          "ChangeType": "Addition",
+          "Description": "Added the **coorganizer** member to the **onlineMeetingRole** enumeration.",
+          "Target": "onlineMeetingRole"
+        }
+      ],
+      "Id": "ea886698-6713-4541-a994-fe34ac144002",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-02T18:25:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
           "ApiChange": "Resource",
           "ChangedApiName": "joinMeetingIdMeetingInfo",
