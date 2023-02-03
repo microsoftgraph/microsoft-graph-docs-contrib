@@ -1,14 +1,14 @@
 ---
 title: "Create deployment"
 description: "Create a new deployment object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
 
 # Create deployment
-Namespace: microsoft.graph.windowsUpdates
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,9 +46,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md) , [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md)|
-
-
+|audience|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Specifies the audience to target.|
+|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [catalogContent](../resources/windowsupdates-catalogcontent.md).|
 
 ## Response
 
@@ -69,28 +68,35 @@ POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-  "content": {
-    "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-    "version": "20H2"
-  },
-  "settings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-    "rollout": {
-      "devicesPerOffer": 100
-    },
-    "monitoring": {
-      "monitoringRules": [
-        {
-          "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
-          "signal": "rollback",
-          "threshold": 5,
-          "action": "pauseDeployment"
+    "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+    "content": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "f341705b-0b15-4ce3-aaf2-6a1681d78606"
         }
-      ]
+    },
+    "settings": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P7D",
+                "devicePerOffer": 100
+            }
+        },
+        "monitoring": {
+            "monitoringRules": [
+                {
+                    "signal": "rollback",
+                    "threshold": 5,
+                    "action": "pauseDeployment"
+                }
+            ]
+        }
     }
-  }
 }
+
 ```
 
 # [C#](#tab/csharp)
@@ -119,8 +125,6 @@ Content-Type: application/json
 
 ---
 
-
-
 ### Response
 
 <!-- {
@@ -136,29 +140,24 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
   "id": "b5171742-1742-b517-4217-17b5421717b5",
+  "createdDateTime": "2023-01-26T05:08:38.118213Z",
+  "lastModifiedDateTime": "2023-01-26T05:08:38Z",
   "state": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
     "value": "offering",
-    "reasons": [
-      {
-        "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
-        "value": "offeringByRequest"
-      }
-    ],
+    "reasons": [],
     "requestedValue": "none",
-    "effectiveSinceDate": "String (timestamp)"
-    },
+  },
   "content": {
-    "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-    "version": "20H2"
+    "@odata.type": "microsoft.graph.windowsUpdates.catalogContent",
   },
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-    "rollout": {
-      "devicesPerOffer": 100,
-      "durationBetweenOffers": "P7D",
-      "startDateTime": null,
-      "endDateTime": null
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+    "schedule": {
+      "gradualRollout": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+        "durationBetweenOffers": "P1D",
+        "devicePerOffer": 1000
+      }
     },
     "monitoring": {
       "monitoringRules": [
@@ -173,8 +172,5 @@ Content-Type: application/json
     "userExperience": null,
     "safeguard": null
   },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

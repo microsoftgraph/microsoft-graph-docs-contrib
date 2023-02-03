@@ -1,14 +1,14 @@
 ---
 title: "Create operationalInsightsConnection"
 description: "Create a new operationalInsightsConnection object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
 
 # Create operationalInsightsConnection
-Namespace: microsoft.graph.windowsUpdates
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,14 +1,14 @@
 ---
 title: "List resourceConnections"
 description: "Get a list of the resourceConnection objects and their properties."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
 
 # List resourceConnections
-Namespace: microsoft.graph.windowsUpdates
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

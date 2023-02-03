@@ -1,22 +1,20 @@
 ---
-title: "List updatableAssets"
-description: "Get a list of updatableAsset objects and their properties."
-author: "aarononeal"
+title: "List azureADDevice resources"
+description: "Get a list of azureADDevice objects and their properties."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
 
-# List updatableAssets
-Namespace: microsoft.graph.windowsUpdates
+# List azureADDevice resources
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [updatableAsset](../resources/windowsupdates-updatableasset.md) objects and their properties.
+Get a list of [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.
 
-Listing updatable assets returns **updatableAsset** resources of the following derived types: [azureADDevice](../resources/windowsupdates-azureADDevice.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetGroup.md).
-
-Use [list azureADDevice resources](windowsupdates-updates-list-updatableassets-azureaddevice.md) or [list updatableAssetGroup resources](windowsupdates-updates-list-updatableassets-updatableassetgroup.md) to filter and get resources of only one of the derived types.
+This operation filters on the fully qualified resource type, `microsoft.graph.windowsUpdates.azureADDevice`, which inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,13 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/windows/updates/updatableAssets
+GET /admin/windows/updates/updatableAssets/microsoft.graph.windowsUpdates.azureADDevice
 ```
 
 ## Optional query parameters
 This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
 
-To use a query parameter on a property that is not inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full resource type for the property. For example, to apply `$select` on the **errors** property of [azureADDevice](../resources/windowsupdates-azureaddevice.md), use `$select=microsoft.graph.windowsUpdates.azureADDevice/errors`.
+To use a query parameter on a property that is not inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full resource type. For example, to select the **errors** property, use `$select=microsoft.graph.windowsUpdates.azureADDevice/errors`.
 
 ## Request headers
 |Name|Description|
@@ -52,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [updatableAsset](../resources/windowsupdates-updatableasset.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects in the response body.
 
 ## Examples
 
@@ -61,39 +59,38 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_updatableasset_fromupdates"
+  "name": "list_azureaddevice"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
+GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/microsoft.graph.windowsUpdates.azureADDevice
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-updatableasset-fromupdates-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-azureaddevice-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-updatableasset-fromupdates-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-azureaddevice-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-fromupdates-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-azureaddevice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-fromupdates-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-azureaddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-updatableasset-fromupdates-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-azureaddevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-updatableasset-fromupdates-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-azureaddevice-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 ### Response
@@ -101,7 +98,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.windowsUpdates.updatableAsset)"
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.azureADDevice)"
 }
 -->
 ``` http
@@ -120,6 +117,22 @@ Content-Type: application/json
           "updateCategory": "feature"
         }
       ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+      "id": "90b91efa-6d46-42cd-ad4d-381831773a85",
+      "errors": [],
+      "enrollments": []
+    },
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+      "id": "0ee3eb63-caf3-44ce-9769-b83188cc683d",
+      "errors": [
+        {
+          "@odata.type": "microsoft.graph.windowsUpdates.azureADDeviceRegistrationError"
+        }
+      ],
+      "enrollments": []
     }
   ]
 }

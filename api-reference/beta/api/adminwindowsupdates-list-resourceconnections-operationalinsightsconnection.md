@@ -1,14 +1,14 @@
 ---
 title: "List operationalInsightsConnections"
 description: "Get a list of the operationalInsightsConnection objects and their properties."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
 
 # List operationalInsightsConnections
-Namespace: microsoft.graph.windowsUpdates
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
