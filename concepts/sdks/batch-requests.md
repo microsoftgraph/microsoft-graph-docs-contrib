@@ -200,6 +200,7 @@ import (
     "github.com/microsoftgraph/msgraph-sdk-go/me"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
+
 // Use the request builder to generate a regular
 // request to /me
 meRequest, _ := client.Me().
@@ -571,7 +572,8 @@ batchResponse, _ := batch.Send(context.Background(), client.GetAdapter())
 
 // De-serialize response based on known return type
 event, _ := msgraphgocore.GetBatchResponseById[models.Eventable](
-    batchResponse, *addEventRequestItem.GetId(), models.CreateEventFromDiscriminatorValue)
+    batchResponse, *addEventRequestItem.GetId(),
+    models.CreateEventFromDiscriminatorValue)
 fmt.Printf("New event created with ID: %s\n", *(event.GetId()))
 
 // For collections, must use the *CollectionResponseable class to deserialize
