@@ -5297,7 +5297,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "softDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [softDelete](https://learn.microsoft.com/en-us/graph/api/softDelete?view=graph-rest-1.0) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Description": "Added the [softDelete](https://learn.microsoft.com/en-us/graph/api/chatmessage-softDelete?view=graph-rest-1.0) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
           "Target": "chatMessage"
         },
         {
@@ -5305,7 +5305,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "undoSoftDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [undoSoftDelete](https://learn.microsoft.com/en-us/graph/api/undoSoftDelete?view=graph-rest-1.0) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Description": "Added the [undoSoftDelete](https://learn.microsoft.com/en-us/graph/api/chatmessage-undoSoftDelete?view=graph-rest-1.0) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
           "Target": "chatMessage"
         }
       ],
@@ -6183,6 +6183,24 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-23T23:18:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "5e52d67e-88f8-464f-8aff-d9ae40acf056",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamsAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** property to the [chatMessageAttachment](https://learn.microsoft.com/graph/api/resources/chatMessageAttachment?view=graph-rest-1.0) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "5e52d67e-88f8-464f-8aff-d9ae40acf056",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-26T10:11:41.458Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }

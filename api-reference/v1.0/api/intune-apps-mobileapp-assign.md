@@ -61,7 +61,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assign
 
 Content-type: application/json
-Content-length: 1050
+Content-length: 449
 
 {
   "mobileAppAssignments": [
@@ -73,21 +73,8 @@ Content-length: 1050
         "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       },
       "settings": {
-        "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
-        "notifications": "showReboot",
-        "restartSettings": {
-          "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
-          "gracePeriodInMinutes": 4,
-          "countdownDisplayBeforeRestartInMinutes": 6,
-          "restartNotificationSnoozeDurationInMinutes": 10
-        },
-        "installTimeSettings": {
-          "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
-          "useLocalTime": true,
-          "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-          "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
-        },
-        "deliveryOptimizationPriority": "foreground"
+        "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+        "useDeviceContext": true
       }
     }
   ]
