@@ -30,7 +30,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier of privileged access root. Required. Inherited from [entity](../resources/entity.md).|
+|id|String|Identifier for an object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
