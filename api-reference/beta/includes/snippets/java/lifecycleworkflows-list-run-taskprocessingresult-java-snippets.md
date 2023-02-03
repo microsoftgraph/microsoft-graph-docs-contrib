@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-TaskProcessingResultCollectionPage taskProcessingResults = graphClient.identityGovernance().lifecycleWorkflows().workflows("14879e66-9ea9-48d0-804d-8fea672d0341").runs("72885f91-2cf0-44b1-b3ed-bd145af0192c").userProcessingResults("78b83505-6967-4168-a7ea-4921c0543ce9").taskProcessingResults()
+TaskProcessingResultCollectionPage taskProcessingResults = graphClient.identityGovernance().lifecycleWorkflows().workflows("a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc").runs("33bf1a9c-2b26-49b6-996f-ca416c518341").taskProcessingResults()
 	.buildRequest()
 	.get();
 
