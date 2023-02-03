@@ -47,6 +47,8 @@ POST /teamwork/sendActivityNotificationToRecipients
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
+> **Note**: The token provided must be at least 45 minutes away from expiry. The API call will return a `412 Precondition Failed` response if the token expires within 45 minutes.
+
 ## Request body
 
 In the request body, supply JSON representation of the parameters.

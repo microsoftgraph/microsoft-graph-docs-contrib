@@ -1,7 +1,7 @@
 ---
 title: "Get depMacOSEnrollmentProfile"
 description: "Read properties and relationships of the depMacOSEnrollmentProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2112
+Content-Length: 1860
 
 {
   "value": {
@@ -94,6 +94,9 @@ Content-Length: 2112
     "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
     "configurationWebUrl": true,
+    "enabledSkipKeys": [
+      "Enabled Skip Keys value"
+    ],
     "registrationDisabled": true,
     "fileVaultDisabled": true,
     "iCloudDiagnosticsDisabled": true,
@@ -103,25 +106,12 @@ Content-Length: 2112
     "chooseYourLockScreenDisabled": true,
     "accessibilityScreenDisabled": true,
     "autoUnlockWithWatchDisabled": true,
+    "skipPrimarySetupAccountCreation": true,
+    "setPrimarySetupAccountAsRegularUser": true,
     "dontAutoPopulatePrimaryAccountInfo": true,
-    "lockPrimaryAccountInfo": true,
-    "managedLocalUserShortName": true,
     "primaryAccountFullName": "Primary Account Full Name value",
     "primaryAccountUserName": "Primary Account User Name value",
-    "requestRequiresNetworkTether": true,
-    "setPrimarySetupAccountAsRegularUser": true,
-    "skipPrimarySetupAccountCreation": true,
-    "isLocalPrimaryAccount": true,
-    "isPrimaryUser": true,
-    "primaryUser": "Primary User value",
-    "primaryUserFullName": "Primary User Full Name value",
-    "prefillAccountInfo": true,
     "enableRestrictEditing": true
   }
 }
 ```
-
-
-
-
-

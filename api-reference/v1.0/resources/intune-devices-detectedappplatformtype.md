@@ -1,7 +1,7 @@
 ---
 title: "detectedAppPlatformType enum type"
 description: "Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0)."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -29,7 +29,4 @@ Indicates the operating system / platform of the discovered application.  Some p
 |androidDeviceAdministrator|8|Indicates that the platform of the detected application is Android device administrator.|
 |androidWorkProfile|9|Indicates that the platform of the detected application is Android work profile.|
 |androidDedicatedAndFullyManaged|10|Indicates that the platform of the detected application is Android dedicated and fully managed.|
-
-
-
-
+|unknownFutureValue|11|Evolvable enumeration sentinel value. Do not use.|

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Accept-Language": "0",
-}
-configuration := &graphconfig.BrandingRequestBuilderGetRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Accept-Language", "0")
+
+configuration := &graphconfig.OrganizationItemBrandingRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

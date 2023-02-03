@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object.
+Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object. Only teachers and students can perform this operation.
 
 ## Permissions
 
@@ -61,10 +61,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/rubrics/bf040af7-a5ff-4abe-a8c8-1bdc532344c2
 ```
-
-## Optional query parameters
-
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationrubric-csharp-snippets.md)]

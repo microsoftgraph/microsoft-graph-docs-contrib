@@ -144,6 +144,7 @@ Content-Type: application/json
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
+      "durationInDays": 4,
       "isAutomated": false,
       "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
       "payloadDeliveryPlatform": "email"

@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Add a [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list.
 
-Only the student assigned to the submission can perform this operation.
+Only teachers and students can perform this operation.
 
-The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`. 
+The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`.
 
 To create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail.
 
@@ -196,7 +196,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationlinkresource-from-educationsubmission-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

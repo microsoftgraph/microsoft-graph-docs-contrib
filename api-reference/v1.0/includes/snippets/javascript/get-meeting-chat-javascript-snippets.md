@@ -10,7 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let chat = await client.api('/chats/19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2')
+let chat = await client.api('/chats/19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2')
+	.expand('lastMessagePreview')
 	.get();
 
 ```

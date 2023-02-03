@@ -77,7 +77,7 @@ This resource supports:
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 |iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
 |id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Case-sensitive and read-only.|
-|importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
+|importance|String|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
 |isDraft|Boolean|Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.|

@@ -8,12 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-requestRequiresReview := true
+requestRequiresreview := true
 
-requestParameters := &graphconfig.TeamsAppsRequestBuilderPostQueryParameters{
-	RequiresReview: &requestRequiresReview,
+requestParameters := &graphconfig.AppCatalogsTeamsAppsRequestBuilderPostQueryParameters{
+	Requiresreview: &requestRequiresreview,
 }
-configuration := &graphconfig.TeamsAppsRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.AppCatalogsTeamsAppsRequestBuilderPostRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

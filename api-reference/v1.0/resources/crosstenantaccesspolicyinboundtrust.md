@@ -37,8 +37,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyInboundTrust",
-  "isMfaAccepted": "Boolean",
   "isCompliantDeviceAccepted": "Boolean",
-  "isHybridAzureADJoinedDeviceAccepted": "Boolean"
+  "isHybridAzureADJoinedDeviceAccepted": "Boolean",
+  "isMfaAccepted": "Boolean"
 }
 ```

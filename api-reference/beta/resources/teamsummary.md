@@ -33,9 +33,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "guestsCount": "Integer",
-    "membersCount": "Integer",
-    "ownersCount": "Integer",
+    "guestsCount": "Int32",
+    "membersCount": "Int32",
+    "ownersCount": "Int32"
 }
 ```
 
