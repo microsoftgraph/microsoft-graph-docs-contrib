@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentScheduleRequest: cancel"
-description: "Cancel a pending privileged access assignment request."
+description: "Cancel an access assignment request to a group whose membership and ownership are governed by PIM."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
