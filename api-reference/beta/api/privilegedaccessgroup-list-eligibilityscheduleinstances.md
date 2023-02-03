@@ -1,5 +1,5 @@
 ---
-title: "List privilegedAccessGroupEligibilityScheduleInstances"
+title: "List eligibilityScheduleInstances"
 description: "Get a list of the privilegedAccessGroupEligibilityScheduleInstance objects and their properties."
 author: "mandardalvi"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List privilegedAccessGroupEligibilityScheduleInstances
+# List eligibilityScheduleInstances
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
