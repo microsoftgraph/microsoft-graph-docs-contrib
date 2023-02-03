@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the privileged access group. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier of an object in PIM governance for a group. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
