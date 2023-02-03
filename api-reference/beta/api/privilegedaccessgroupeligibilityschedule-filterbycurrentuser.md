@@ -57,7 +57,7 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 ## Examples
 Note: this method requires either the principalId or groupId filter property.
 
-### Example 1
+### Example 1: Retrieve eligibility schedules for the calling principal
 
 #### Request
 The following is an example of a request.
