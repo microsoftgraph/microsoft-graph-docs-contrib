@@ -4,7 +4,7 @@ description: "The recurrence pattern and range."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "harini84"
+author: "iamgirishck"
 ---
 
 # patternedRecurrence resource type

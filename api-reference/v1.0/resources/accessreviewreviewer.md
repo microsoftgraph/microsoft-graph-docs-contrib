@@ -1,7 +1,7 @@
 ---
 title: "accessReviewReviewer resource type"
 description: "Represents a reviewer who was contacted for an access review."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -37,10 +37,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewReviewer",
-  "id": "String",
-  "displayName": "String",
-  "userPrincipalName": "String",
   "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String",
+  "userPrincipalName": "String"
 }
 ```
 

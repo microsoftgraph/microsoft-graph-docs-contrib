@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.FeatureRolloutPolicyRequestBuilderGetQueryParameters{
-	Expand: "appliesTo",
+requestParameters := &graphconfig.PoliciesFeatureRolloutPolicieItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"appliesTo"},
 }
-options := &msgraphsdk.FeatureRolloutPolicyRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.PoliciesFeatureRolloutPolicieItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-featureRolloutPolicyId := "featureRolloutPolicy-id"
-result, err := graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).Get(options)
+
+result, err := graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").Get(context.Background(), configuration)
 
 
 ```

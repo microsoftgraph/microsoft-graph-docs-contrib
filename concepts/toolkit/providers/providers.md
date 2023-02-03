@@ -2,12 +2,12 @@
 title: "Microsoft Graph Toolkit providers"
 description: "The Microsoft Graph Toolkit providers enable authentication and Microsoft Graph access for all components."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # Microsoft Graph Toolkit providers
 
-The Microsoft Graph Toolkit providers enable your application to authenticate with Microsoft Identity and access Microsoft Graph in only few lines of code. Each provider handles user authentication and acquiring the access tokens to call Microsoft Graph APIs, so that you don't have to write this code yourself. 
+The Microsoft Graph Toolkit providers enable your application to authenticate with Microsoft Identity and access Microsoft Graph in only few lines of code. Each provider handles user authentication and acquiring the access tokens to call Microsoft Graph APIs, so that you don't have to write this code yourself.
 
 You can use the providers on their own, without components, to quickly implement authentication for your app and make calls to Microsoft Graph via the JavaScript client SDK.
 
@@ -18,11 +18,12 @@ The Toolkit includes the following providers.
 |Providers|Description|
 |---------|-----------|
 |[MSAL](./msal.md)|Uses msal.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.|
-|[MSAL2](./msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph in a web application. | 
+|[MSAL2](./msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph in a web application. |
 |[Electron](./electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps.|
 |[SharePoint](./sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./teams.md)|Uses msal.js to sign in users and acquire tokens on the client in Microsoft Teams tabs.|
 |[Teams MSAL2](./teams-msal2.md)|Uses msal-browser to sign in users and acquire tokens in Microsoft Teams tabs. Supports Single Sign-On with custom backend. |
+|[TeamsFx](./teamsfx.md)|Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
 |[Proxy](./proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 
@@ -35,7 +36,7 @@ To use a provider in your app, you need to initialize a new provider and then se
 You can use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MSAL2 provider.
 
 ```HTML
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
 <mgt-msal2-provider client-id="YOUR_CLIENT_ID"></mgt-msal2-provider>
 ```
 
@@ -56,7 +57,7 @@ Providers.globalProvider = new Msal2Provider({
 We recommend adding all the permission scopes your application needs to the `scopes` attribute or property when initializing your provider (this does not apply to the [SharePoint provider](../providers/sharepoint.md)). This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of permissions requested by all components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MSAL2 Provider.
 
 ```HTML
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
 <mgt-msal2-provider client-id="YOUR_CLIENT_ID"
                    scopes="user.read,people.read"
                    ></mgt-msal2-provider>
@@ -185,7 +186,7 @@ if (TeamsProvider.isAvailable) {
 When you have the right providers initialized for your application, you can add the Toolkit's [Login component](../components/login.md) to easily and quickly implement user login and logout. The component works with the provider to handle all of the authentication logic and login/logout functionality. The following example uses the MSAL2 provider and the Login component.
 
 ```HTML
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
 <mgt-msal2-provider client-id="YOUR_CLIENT_ID"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```

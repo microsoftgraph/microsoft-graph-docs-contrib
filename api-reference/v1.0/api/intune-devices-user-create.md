@@ -1,7 +1,7 @@
 ---
 title: "Create user"
 description: "Create a new user object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [user](../resources/intune-devices-user.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users
+POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [user](..
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1.0/users
+POST https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users
 Content-type: application/json
 Content-length: 46
 
@@ -79,6 +79,3 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
-
-
-

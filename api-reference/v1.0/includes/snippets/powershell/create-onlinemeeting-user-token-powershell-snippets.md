@@ -12,6 +12,7 @@ $params = @{
 	Subject = "User Token Meeting"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
 ```

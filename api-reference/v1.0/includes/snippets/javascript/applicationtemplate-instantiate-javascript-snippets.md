@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const applicationServicePrincipal = {
-  displayName: 'My custom name'
+    displayName: 'Azure AD SAML Toolkit'
 };
 
-await client.api('/applicationTemplates/{id}/instantiate')
+await client.api('/applicationTemplates/229946b9-a9fb-45b8-9531-efa47453ac9e/instantiate')
 	.post(applicationServicePrincipal);
 
 ```

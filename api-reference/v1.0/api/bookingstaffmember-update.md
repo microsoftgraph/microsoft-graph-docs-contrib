@@ -39,19 +39,22 @@ PATCH /solutions/bookingBusinesses/{id}/staffMembers/{id}
 |availabilityIsAffectedByPersonalCalendar|Boolean|True means that if the staff member is a Microsoft 365 user, the Microsoft Bookings API uses the staff member's personal calendar in Microsoft 365 as well as the **workingHours** property to determine availability. |
 |displayName|String|The name of the staff member, as displayed to customers.|
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address is used if the **sendConfirmationsToOwner** property is set to `true` in the scheduling policy of the business.|
-|role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|isEmailNotificationEnabled|Boolean|`True` indicates that a staff member will be notified via email when a booking assigned to them is created or changed.|
+|role|bookingStaffRole| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`, `unknownFutureValue`, `scheduler`, `teamMember`. |
 |timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 |useBusinessHours|Boolean|True means the staff member's availability is determined by the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHouse** property setting.|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+
 ## Example
 ### Request
 The following example changes the staff member's schedule to have Mondays off.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "8ee1c803-a1fa-406d-8259-7ab53233f148"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148

@@ -12,8 +12,12 @@ const client = Client.init(options);
 
 const cloudPcOrganizationSettings = {
   '@odata.type': '#microsoft.graph.cloudPcOrganizationSettings',
+  enableMEMAutoEnroll: true,
+  osVersion: 'windows11',
   userAccountType: 'standardUser',
-  osVersion: 'windows11'
+  windowsSettings: {
+    language: 'en-US'
+  }
 };
 
 await client.api('/deviceManagement/virtualEndpoint/organizationSettings')

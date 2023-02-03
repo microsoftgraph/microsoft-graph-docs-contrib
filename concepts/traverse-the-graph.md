@@ -27,7 +27,7 @@ https://graph.microsoft.com/beta/$metadata
 
 The metadata allows you to see and understand the Microsoft Graph data model, including the entity types, complex types, and enumerations that make up the resources represented in the request and response packets. 
 
-The metadata also supports defining types, methods, and enumerations in corresponding OData namespaces. The majority of the Microsoft Graph API is defined in the OData namespace, `microsoft.graph`.
+The metadata also supports defining types, methods, and enumerations in corresponding OData namespaces. The majority of the Microsoft Graph API is defined in the OData namespace, `microsoft.graph`. A few APIs are defined in subnamespaces, for example, `microsoft.graph.callRecords`.
 
 You can use the metadata to learn the relationships between entities in Microsoft Graph and establish URLs that navigate between those entities.
 

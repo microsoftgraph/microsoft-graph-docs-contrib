@@ -1,7 +1,7 @@
 ---
 title: "wifiAuthenticationType enum type"
 description: "Wi-Fi Authentication Type Settings."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -25,7 +25,3 @@ Wi-Fi Authentication Type Settings.
 |machine|2|Machine Authentication|
 |machineOrUser|3|Machine or User Authentication|
 |guest|4|Guest Authentication|
-
-
-
-

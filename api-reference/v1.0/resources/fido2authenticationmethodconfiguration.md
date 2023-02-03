@@ -34,7 +34,7 @@ Represents a FIDO2 authentication methods policy. Authentication methods policie
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -50,12 +50,12 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String",
-  "isSelfServiceRegistrationAllowed": "Boolean",
+  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ],
   "isAttestationEnforced": "Boolean",
+  "isSelfServiceRegistrationAllowed": "Boolean",
   "keyRestrictions": {
     "@odata.type": "microsoft.graph.fido2KeyRestrictions"
   },
-  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
+  "state": "String"
 }
 ```

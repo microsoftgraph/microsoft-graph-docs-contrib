@@ -2,7 +2,7 @@
 title: "searchResponse resource type"
 description: "Description of the searchResponse"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
@@ -18,6 +18,8 @@ Represents results from a search query, and the terms used for the query.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
+|queryAlterationResponse|[alterationResponse](alterationresponse.md)|Provides information related to spelling corrections in the alteration response.|
+|resultTemplates|[resultTemplate](resulttemplate.md) collection|A dictionary of **resultTemplateIds** and associated values, which include the name and JSON schema of the result templates.|
 |searchTerms|String collection|Contains the search terms sent in the initial search query.|
 
 ## JSON representation
@@ -36,6 +38,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
+  "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}],
   "searchTerms": ["String"]
 }
 ```

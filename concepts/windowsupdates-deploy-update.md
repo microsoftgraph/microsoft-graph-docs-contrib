@@ -1,6 +1,6 @@
 ---
 title: "Deploy a feature update using the Windows Update for Business deployment service"
-description: "With the Windows Update for Business deployment service, you can deploy Windows feature updates to devices in an Azure AD tenant."
+description: "Follow these steps to deploy Windows feature updates to devices in an Azure AD tenant by using the Windows Update for Business deployment service."
 author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"

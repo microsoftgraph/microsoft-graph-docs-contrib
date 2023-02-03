@@ -1,10 +1,9 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: drive resource type
+description: The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 ms.localizationpriority: high
 ms.prod: "sharepoint"
-description: "The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint."
 doc_type: resourcePageType
 ---
 
@@ -19,17 +18,16 @@ Users without a OneDrive license may not have a default drive available.
 
 ## Methods
 
-|                        Common task                         |         HTTP method         |
-| :--------------------------------------------------------- | :-------------------------- |
-| [Get Drive metadata of another Drive][drive-get]           | `GET /drives/{drive-id}`    |
-| [Get root folder for user's default Drive][item-get]       | `GET /drive/root`           |
-| [List children under the Drive][item-children]             | `GET /drive/root/children`  |
-| [List changes for all Items in the Drive][item-changes]    | `GET /drive/root/delta`     |
-| [List user's followed driveItems][drive-following]         | `Get /drive/following`       |
-| [Search for Items in the Drive][item-search]               | `GET /drive/root/search`    |
-| [Access special folder](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
+|                        Method                              |         Return type         | Description |
+| :--------------------------------------------------------- | :-------------------------- |-------------|
+| [Get drive][drive-get]                                     | drive                       | Get metadata about a drive |
+| [Get drive root][item-get]                                 | [driveItem][]               | Get root folder of a drive |
+| [List followed items][drive-following]                     | [driveItem][] collection    | List the user's followed driveItems |
+| [List children][item-children]                             | [driveItem][] collection    | List children of the root folder of a drive |
+| [List changes][item-changes]                               | [driveItem][] collection    | List changes for all driveItems in the Drive |
+| [Search][item-search]                                      | [driveItem][] collection    | Search for driveItems in a drive |
+| [Get special folder](../api/drive-get-specialfolder.md)    | [driveItem][]               | Access a special folder by its canonical name |
 
-In the previous table, the examples use `/drive`, but other paths are valid too.
 
 ## Properties
 
@@ -57,11 +55,12 @@ In the previous table, the examples use `/drive`, but other paths are valid too.
 
 | Relationship | Type                                 | Description
 |:-------------|:-------------------------------------|:-----------------------
-| following    | [DriveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
-| items        | [DriveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
-| root         | [DriveItem](driveitem.md)            | The root folder of the drive. Read-only.
-| special      | [DriveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
-| list         | [List](list.md)                      | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
+| bundles      | [driveItem][] collection             | Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
+| following    | [driveItem][] collection             | The list of items the user is following. Only in OneDrive for Business.
+| items        | [driveItem][] collection             | All items contained in the drive. Read-only. Nullable.
+| list         | [list][]                             | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
+| root         | [driveItem][]                        | The root folder of the drive. Read-only.
+| special      | [driveItem][] collection             | Collection of common folders available in OneDrive. Read-only. Nullable.
 
 ## JSON representation
 
@@ -93,48 +92,57 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 ```json
 {
-  "id": "string",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
   "following": [{"@odata.type": "microsoft.graph.driveItem"}],
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "items": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "quota": { "@odata.type": "microsoft.graph.quota" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "system": { "@odata.type": "microsoft.graph.systemFacet" },
-  "webUrl": "url"
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+  "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"},
+  "special": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "system": {"@odata.type": "microsoft.graph.systemFacet"},
+  "webUrl": "string",
+
 }
 ```
 
+[bundle]: bundle.md
+[driveItem]: driveItem.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
+[list]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
+[drive-following]: ../api/drive-list-following.md
 [drive-get]: ../api/drive-get.md
 [item-get]: ../api/driveitem-get.md
 [item-changes]: ../api/driveitem-delta.md
 [item-search]: ../api/driveitem-search.md
 [item-children]: ../api/driveitem-list-children.md
-[drive-following]: ../api/drive-list-following.md
 
 
-<!-- {
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/drive.md:
-      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
-  ],
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive": "#"
+  },
+  "suppressions": []
+}
+-->
+
 

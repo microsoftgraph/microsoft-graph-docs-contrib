@@ -27,6 +27,7 @@ $params = @{
 	IsCurrent = $true
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfilePosition -UserId $userId -BodyParameter $params
 
 ```

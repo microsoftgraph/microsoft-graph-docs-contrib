@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.OnlineMeetingsRequestBuilderGetQueryParameters{
-	Filter: "VideoTeleconferenceId%20eq%20'123456789'",
+
+requestFilter := "VideoTeleconferenceId eq '123456789'"
+
+requestParameters := &graphconfig.CommunicationsOnlineMeetingsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.OnlineMeetingsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.CommunicationsOnlineMeetingsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Communications().OnlineMeetings().Get(options)
+
+result, err := graphClient.Communications().OnlineMeetings().Get(context.Background(), configuration)
 
 
 ```

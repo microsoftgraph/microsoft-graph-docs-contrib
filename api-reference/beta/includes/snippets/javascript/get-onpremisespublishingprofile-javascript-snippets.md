@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let onPremisesPublishingProfile = await client.api('/onPremisesPublishingProfiles/provisioning')
 	.version('beta')
-	.expand('agentGroups')
+	.expand('publishedResources,agents,agentGroups')
 	.get();
 
 ```

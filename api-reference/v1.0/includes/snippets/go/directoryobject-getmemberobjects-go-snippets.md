@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewGetMemberObjectsPostRequestBody()
 securityEnabledOnly := true
-requestBody.SetSecurityEnabledOnly(&securityEnabledOnly)
-options := &msgraphsdk.GetMemberObjectsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.DirectoryObjectsById(&directoryObjectId).GetMemberObjects().Post(options)
+requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
+
+result, err := graphClient.DirectoryObjectsById("directoryObject-id").GetMemberObjects().Post(context.Background(), requestBody, nil)
 
 
 ```

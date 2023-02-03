@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsAppHealthDevicePerformance resource type"
 description: "The user experience analytics device performance entity contains device performance details."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -39,7 +39,7 @@ The user experience analytics device performance entity contains device performa
 |meanTimeToFailureInMinutes|Int32|The mean time to failure for the device in minutes. Valid values -2147483648 to 2147483647|
 |deviceAppHealthScore|Double|The app health score of the device. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |deviceAppHealthStatus|String|The overall app health status of the device.|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 |deviceId|String|The id of the device.|
 |deviceDisplayName|String|The name of the device.|
 
@@ -72,7 +72,3 @@ Here is a JSON representation of the resource.
   "deviceDisplayName": "String"
 }
 ```
-
-
-
-

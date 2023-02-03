@@ -2,7 +2,7 @@
 title: "authorizationPolicy resource type"
 description: "Represents a policy that can control authorization settings of Azure Active Directory."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -62,15 +62,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
-  "description": "String",
-  "displayName": "String",
-  "blockMsolPowerShell": true,
-  "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
-  "allowedToUseSSPR": true,
   "allowedToSignUpEmailBasedSubscriptions": true,
+  "allowedToUseSSPR": true,
   "allowEmailVerifiedUsersToJoinOrganization": true,
   "allowInvitesFrom": "String",
+  "blockMsolPowerShell": true,
+  "description": "String",
+  "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
+  "displayName": "String",
+  "id": "String (identifier)",
   "guestUserRoleId": "Guid"
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstanceDecisionItemAzureRoleResource resource type"
 description: "Represents Azure resource roles for which access is represented through an accessReviewInstanceDecisionItem object."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -40,11 +40,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",
-  "id": "String (identifier)",
   "displayName": "String",
-  "type": "String",
+  "id": "String (identifier)",
   "scope": {
     "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
-  }
+  },
+  "type": "String",
 }
 ```

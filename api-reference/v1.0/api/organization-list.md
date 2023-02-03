@@ -55,16 +55,13 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organization-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -79,10 +76,15 @@ GET https://graph.microsoft.com/v1.0/organization
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-organization-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-organization-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,25 +96,92 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "assignedPlans": [
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization",
+    "value": [
         {
-          "assignedDateTime": "2017-07-29T02:16:28Z",
-          "capabilityStatus": "Enabled",
-          "service": "SharePoint",
-          "servicePlanId": "5dbe027f-2339-4123-9542-606e4d348a72"
+            "id": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "deletedDateTime": null,
+            "businessPhones": [
+                "425-555-0100"
+            ],
+            "city": null,
+            "country": null,
+            "countryLetterCode": "NL",
+            "createdDateTime": "2021-08-02T10:30:06Z",
+            "defaultUsageLocation": "String",
+            "displayName": "Contoso",
+            "isMultipleDataLocationsForServicesEnabled": null,
+            "marketingNotificationEmails": [],
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSyncEnabled": null,
+            "partnerTenantType": "ResellerPartnerDelegatedAdmin",
+            "postalCode": null,
+            "preferredLanguage": "en",
+            "securityComplianceNotificationMails": [],
+            "securityComplianceNotificationPhones": [],
+            "state": null,
+            "street": null,
+            "technicalNotificationMails": [
+                "admin@contoso.com"
+            ],
+            "tenantType": "AAD",
+            "directorySizeQuota": {
+                "used": 698,
+                "total": 50000
+            },
+            "assignedPlans": [
+                {
+                    "assignedDateTime": "2022-04-03T02:46:42Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "Adallom",
+                    "servicePlanId": "932ad362-64a8-4783-9106-97849a1a30b9"
+                },
+                {
+                    "assignedDateTime": "2022-04-03T02:46:42Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "MultiFactorService",
+                    "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0"
+                },
+                {
+                    "assignedDateTime": "2021-08-02T10:36:57Z",
+                    "capabilityStatus": "Enabled",
+                    "service": "exchange",
+                    "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318"
+                },
+                {
+                    "assignedDateTime": "2021-08-02T10:36:02Z",
+                    "capabilityStatus": "Deleted",
+                    "service": "SCO",
+                    "servicePlanId": "882e1d05-acd1-4ccb-8708-6ee03664b117"
+                }
+            ],
+            "privacyProfile": {
+                "contactEmail": "",
+                "statementUrl": ""
+            },
+            "provisionedPlans": [
+                {
+                    "capabilityStatus": "Deleted",
+                    "provisioningStatus": "Success",
+                    "service": "Adallom"
+                },
+                {
+                    "capabilityStatus": "Enabled",
+                    "provisioningStatus": "Success",
+                    "service": "exchange"
+                }
+            ],
+            "verifiedDomains": [
+                {
+                    "capabilities": "Email, OfficeCommunicationsOnline",
+                    "isDefault": true,
+                    "isInitial": true,
+                    "name": "Contoso.onmicrosoft.com",
+                    "type": "Managed"
+                }
+            ]
         }
-      ],
-      "businessPhones": [
-        "8006427676"
-      ],
-      "city": "redmond",
-      "country": null,
-      "countryLetterCode": "US",
-      "displayName": "Contoso"
-    }
-  ]
+    ]
 }
 ```
 

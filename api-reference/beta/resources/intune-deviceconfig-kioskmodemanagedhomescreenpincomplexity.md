@@ -1,7 +1,7 @@
 ---
 title: "kioskModeManagedHomeScreenPinComplexity enum type"
 description: "Complexity of PIN for Managed Home Screen sign-in session."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,7 +23,3 @@ Complexity of PIN for Managed Home Screen sign-in session.
 |notConfigured|0|Not configured.|
 |simple|1|Numeric values only.|
 |complex|2|Alphanumerical value.|
-
-
-
-

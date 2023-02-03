@@ -1,6 +1,6 @@
 ---
 title: "profilePhoto resource type"
-description: "A profile photo of a user, group or an Outlook contact accessed from Exchange Online or Azure Active Directory (AAD). It's binary data not encoded in base-64."
+description: "Repesents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "people"
@@ -13,20 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A profile photo of a user, group or an Outlook contact accessed from Exchange Online or Azure Active Directory (AAD). It's binary data not encoded in base-64.
+Repesents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD). The data is binary and not encoded in base-64.
 
-The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240',
-'360x360','432x432', '504x504', and '648x648'. On AAD, photos can be any dimension.
+The supported sizes of HD photos on Exchange Online are as follows: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`,
+`360x360`,`432x432`, `504x504`, and `648x648`. In Azure AD, photos can be any dimension.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (**profilePhoto** properties). |
-|[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any. |
+|[Update profilePhoto](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, team or contact. The photo should be in binary. It replaces the existing photo, if any. |
 
 > [!NOTE]
-> 
 > Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## Properties
@@ -37,7 +36,7 @@ The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64
 |width|int32|The width of the photo. Read-only.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
@@ -55,7 +54,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "240X240",
+  "id": "String",
   "height": 240,
   "width": 240
 }

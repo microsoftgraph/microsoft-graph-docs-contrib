@@ -1,7 +1,7 @@
 ---
 title: "hardwareConfigurationDeviceState resource type"
 description: "Contains properties for device run state of the hardware configuration"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -31,11 +31,11 @@ Contains properties for device run state of the hardware configuration
 |:---|:---|:---|
 |id|String|Key of the hardware configuration script device state entity. This property is read-only.|
 |deviceName|String|The name of the device|
-|osVersion|String|Operating system version of the device.|
+|osVersion|String|Operating system version of the device (E.g. 10.0.19042.1165, 10.0.19042.1288 etc.)|
 |upn|String|User Principal Name (UPN).|
 |internalVersion|Int32|The Policy internal version|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the hardware configuration executed|
-|configurationState|[runState](../resources/intune-shared-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |configurationOutput|String|Output of the hardware configuration execution|
 |configurationError|String|Error from the hardware configuration execution|
 
@@ -64,7 +64,3 @@ Here is a JSON representation of the resource.
   "configurationError": "String"
 }
 ```
-
-
-
-

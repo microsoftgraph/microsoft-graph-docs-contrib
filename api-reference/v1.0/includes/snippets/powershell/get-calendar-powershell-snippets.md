@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Calendar
 
-Get-MgUserCalendar -UserId $userId
+# A UPN can also be used as -UserId.
+Get-MgUserDefaultCalendar -UserId $userId
 
 ```

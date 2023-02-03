@@ -1,7 +1,7 @@
 ---
 title: "Update applePushNotificationCertificate"
 description: "Update the properties of a applePushNotificationCertificate object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -51,6 +51,8 @@ The following table shows the properties that are required when you create the [
 |topicIdentifier|String|Topic Id.|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time for Apple push notification certificate.|
 |expirationDateTime|DateTimeOffset|The expiration date and time for Apple push notification certificate.|
+|certificateUploadStatus|String|The certificate upload status.|
+|certificateUploadFailureReason|String|The reason the certificate upload failed.|
 |certificateSerialNumber|String|Certificate serial number. This property is read-only.|
 |certificate|String|Not yet documented|
 
@@ -66,13 +68,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 336
+Content-length: 481
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
   "appleIdentifier": "Apple Identifier value",
   "topicIdentifier": "Topic Identifier value",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "certificateUploadStatus": "Certificate Upload Status value",
+  "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
   "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
@@ -83,7 +87,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 449
+Content-Length: 594
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -92,10 +96,9 @@ Content-Length: 449
   "topicIdentifier": "Topic Identifier value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "certificateUploadStatus": "Certificate Upload Status value",
+  "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
   "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
-
-
-

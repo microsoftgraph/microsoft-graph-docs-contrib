@@ -36,8 +36,11 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |isOnPremPublishingEnabled|Boolean| Indicates if the application is currently being published via Application Proxy or not. This is pre-set by the system. Read-only. |
 |isPersistentCookieEnabled|Boolean| Indicates if the Persistent cookie flag should be set in the HTTP response headers. Keep this value set to `false`. Only use this setting for applications that can't share cookies between processes. For more information about cookie settings, see [Cookie settings for accessing on-premises applications in Azure Active Directory](/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings). Default value is `false`. |
 |isSecureCookieEnabled|Boolean| Indicates if the Secure cookie flag should be set in the HTTP response headers. Set this value to `true` to transmit cookies over a secure channel such as an encrypted HTTPS request. Default value is `true`.|
+|isStateSessionEnabled|Boolean| Indicates whether validation of the state parameter when the client uses the OAuth 2.0 authorization code grant flow is enabled. This setting allows admins to specify whether they want to enable CSRF protection for their apps. |
 |isTranslateHostHeaderEnabled|Boolean| Indicates if the application should translate urls in the reponse headers. Keep this value as `true` unless your application required the original host header in the authentication request. Default value is `true`.|
 |isTranslateLinksInBodyEnabled|Boolean| Indicates if the application should translate urls in the application body. Keep this value as `false` unless you have hardcoded HTML links to other on-premises applications and don't use custom domains. For more information, see [Link translation with Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation). Default value is `false`.|
+|onPremisesApplicationSegments (deprecated)| [onPremisesApplicationSegment](onpremisesapplicationsegment.md) collection| Represents the application segment collection for an on-premises wildcard application. This property is deprecated and will stop returning data on June 1, 2023. Use **segmentsConfiguration** instead. |
+|segmentsConfiguration|[segmentConfiguration](segmentconfiguration.md)| Represents the collection of application segments for an on-premises wildcard application that's published through Azure AD Application Proxy.|
 |singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Represents the single sign-on configuration for the on-premises application. |
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Details of the certificate associated with the application when a custom domain is in use. `null` when using the default domain. Read-only.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| The associated key credential for the custom domain used. |
@@ -68,12 +71,15 @@ Here is a JSON representation of the resource.
   "isOnPremPublishingEnabled": true,
   "isPersistentCookieEnabled": true,
   "isSecureCookieEnabled": true,
+  "isStateSessionEnabled": true,
   "isTranslateHostHeaderEnabled": true,
   "isTranslateLinksInBodyEnabled": true,
+  "onPremisesApplicationSegments":[{"@odata.type":"microsoft.graph.onPremisesApplicationSegment"}],
+  "segmentsConfiguration":{"@odata.type":"microsoft.graph.segmentConfiguration"},
   "singleSignOnSettings": {"@odata.type": "microsoft.graph.onPremisesPublishingSingleSignOn"},
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
   "verifiedCustomDomainKeyCredential": {"@odata.type": "microsoft.graph.keyCredential"},
-  "verifiedCustomDomainPasswordCredential": {"@odata.type": "microsoft.graph.passwordCredential"},
+  "verifiedCustomDomainPasswordCredential": {"@odata.type": "microsoft.graph.passwordCredential"}
 }
 
 ```

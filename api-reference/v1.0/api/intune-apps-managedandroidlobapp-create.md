@@ -1,7 +1,7 @@
 ---
 title: "Create managedAndroidLobApp"
 description: "Create a new managedAndroidLobApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -82,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1193
+Content-length: 1307
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -117,6 +117,12 @@ Content-length: 1193
     "v4_4": true,
     "v5_0": true,
     "v5_1": true,
+    "v6_0": true,
+    "v7_0": true,
+    "v7_1": true,
+    "v8_0": true,
+    "v8_1": true,
+    "v9_0": true,
     "v10_0": true,
     "v11_0": true
   },
@@ -130,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1365
+Content-Length: 1479
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -168,6 +174,12 @@ Content-Length: 1365
     "v4_4": true,
     "v5_0": true,
     "v5_1": true,
+    "v6_0": true,
+    "v7_0": true,
+    "v7_1": true,
+    "v8_0": true,
+    "v8_1": true,
+    "v9_0": true,
     "v10_0": true,
     "v11_0": true
   },
@@ -175,6 +187,3 @@ Content-Length: 1365
   "versionCode": "Version Code value"
 }
 ```
-
-
-

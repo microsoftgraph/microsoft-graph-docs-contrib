@@ -8,6 +8,9 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 TodoTask todoTask = new TodoTask();
 todoTask.title = "A new task";
+LinkedList<String> categoriesList = new LinkedList<String>();
+categoriesList.add("Important");
+todoTask.categories = categoriesList;
 LinkedList<LinkedResource> linkedResourcesList = new LinkedList<LinkedResource>();
 LinkedResource linkedResources = new LinkedResource();
 linkedResources.webUrl = "http://microsoft.com";

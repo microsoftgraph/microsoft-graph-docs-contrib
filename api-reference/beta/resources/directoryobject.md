@@ -1,6 +1,6 @@
 ---
 title: "directoryObject resource type"
-description: "Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types."
+description: "Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types generally referred to as directory objects."
 ms.localizationpriority: high
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -13,7 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory object. The **directoryObject** type is the base type for many other directory entity types.
+Represents an Azure Active Directory object. The **directoryObject** type is the base type for the following directory entity types generally referred to as directory objects:
+
++ [application](application.md)
++ [administrativeUnit](administrativeunit.md)
++ [appRoleAssignment](approleassignment.md)
++ [directoryObject](directoryobject.md)
++ [directoryRole](directoryrole.md)
++ [device](device.md)
++ [group](group.md)
++ [orgContact](orgcontact.md)
++ [oauth2PermissionGrant](oauth2permissiongrant.md)
++ [servicePrincipal](serviceprincipal.md)
++ [user](user.md)
 
 This resource supports:
 
@@ -37,6 +49,7 @@ This resource supports:
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. |
 |id|String|The unique identifier for the object. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only.|
 
 ## Relationships

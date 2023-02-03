@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let profile = await client.api('/me/profile')
 	.version('beta')
-	.expand('skills($select=displayName)')
+	.expand('names($select=first,last),skills($select=displayName)')
 	.get();
 
 ```
