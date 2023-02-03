@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilitySchedule resource type"
-description: "The eligibility schedules to activate a just-in-time privileged access."
+description: "Represents the schedule of eligible ownership and membership to groups that are governed by PIM."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
