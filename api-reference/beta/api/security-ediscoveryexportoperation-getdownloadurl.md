@@ -8,6 +8,8 @@ doc_type: "apiPageType"
 ---
 
 # ediscoveryExportOperation: getDownloadUrl
+We are depreciating the getDownloadUrl from April 2023. Please refer exportFileMetadata parameter in the response of operation by ID URL. 
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
