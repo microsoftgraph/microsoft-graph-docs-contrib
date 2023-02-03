@@ -185,7 +185,7 @@ items:
           - name: Overview
             href: webhooks.md
             displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-          - name: "Training module: Change notifications tutorial"
+          - name: "Training module: Use change notifications"
             href: /training/modules/msgraph-changenotifications-trackchanges
           - name: Change notifications through webhooks
             href: change-notifications-delivery-webhooks.md
