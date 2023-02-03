@@ -50,7 +50,7 @@ If successful, this function returns a `200 OK` response code and a [shiftWorkCl
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "cloudpcthis.getShiftWorkCloudPcAccessState"
+  "name": "cloudpc.getShiftWorkCloudPcAccessState"
 }
 -->
 ``` http
@@ -70,9 +70,7 @@ Content-Type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.shiftWorkCloudPcAccessState",
-    "value": {
-        "noLicensesAvailable"
-    }
+    "value": "noLicensesAvailable"
 }
 ```
 
