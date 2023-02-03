@@ -97,7 +97,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Retrieve an assignment schedule that's scoped to a principal
 
 #### Request
 <!-- {
