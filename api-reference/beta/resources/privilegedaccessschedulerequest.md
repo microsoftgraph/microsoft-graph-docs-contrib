@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a request for asynchronized operations to create, update, delete, extend, renew, activate, or deactivate a privileged access eligibility or assignment. This is an abstract type derived from the base abstract request type.
+An abstract type that exposes properties used to configure access eligibility and assignment in privileged identity management (PIM) governance operations for groups.
+
+This is an abstract type from which the [privilegedAccessGroupAssignmentScheduleRequest](privilegedaccessgroupassignmentschedulerequest.md) and [privilegedAccessGroupEligibilityScheduleRequest](privilegedaccessgroupeligibilityschedulerequest.md) resource types inherit.
 
 Inherits from [request](../resources/request.md).
 
