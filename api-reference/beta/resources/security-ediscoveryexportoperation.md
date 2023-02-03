@@ -20,19 +20,19 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md)|String| Returns the URL for the export. This function will be depreciated from April, 2023.|
+|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md)|String| Returns the URL for the export. This function will be deprecated from April, 2023.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
-|azureBlobContainer|String| The name of the Azure storage location where the export will be stored. This only applies to exports stored in your own Azure storage location. Please note we are depricating the parameter in April,2023. |
-|azureBlobToken|String| The SAS token for the Azure storage location.  This only applies to exports stored in your own Azure storage location. Please note we are depricating the parameter in April,2023. |
+|azureBlobContainer|String| The name of the Azure storage location where the export will be stored. This only applies to exports stored in your own Azure storage location. Please note we are deprecating the parameter in April,2023. |
+|azureBlobToken|String| The SAS token for the Azure storage location.  This only applies to exports stored in your own Azure storage location. Please note we are deprecating the parameter in April,2023. |
 |completedDateTime|DateTimeOffset| The date and time the export was completed.|
 |createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation.|
 |createdDateTime|DateTimeOffset| The date and time the export was created.|
 |description|String| The description provided for the export.|
-|exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`. Please note fileInfo option value will be depricated from April,2023. It will always be included in further operations automatically. |
+|exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`. Please note fileInfo option value will be deprecated from April,2023. It will always be included in further operations automatically. |
 |exportStructure|microsoft.graph.security.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. |
 |outputName|String| The name provided for the export.|
@@ -82,7 +82,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
->**Note:**: We will be depreciating outputFolderId, azureBlobContainer, azureBlobToken in April,2023
+>**Note:**: We will be deprecating outputFolderId, azureBlobContainer, azureBlobToken in April,2023
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryExportOperation",

@@ -49,9 +49,9 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |outputName|String| Name of the export. Required. |
 |description|String| Description of the export |
-|azureBlobContainer|String| when you export to your own Azure storage account, this is the container URL. Please note we will be depricating the parameter from April,2023. |
-|azureBlobToken|String| when you export to your own Azure storage account, SAS token for the container URL. Please note we will be depricating the parameter from April,2023. |
-|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`. Please note we will be depricating the value fileInfo from April,2023 as it will by default be included.|
+|azureBlobContainer|String| when you export to your own Azure storage account, this is the container URL. Please note we will be deprecating the parameter from April,2023. |
+|azureBlobToken|String| when you export to your own Azure storage account, SAS token for the container URL. Please note we will be deprecating the parameter from April,2023. |
+|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`. Please note we will be deprecating the value fileInfo from April,2023 as it will by default be included.|
 |exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
 ## Response
 
