@@ -29,11 +29,11 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|scheduleRequestActions|Represents the asynchronized operation the request is carrying for the assignment. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`. Required.|
-|isValidationOnly|Boolean|Represents whether the request just intends to evaluate the payload without writing to the system. This can be used in UI to enable or disable scenarios. Default value is false. Optional.|
-|justification|String|Represents the justification the caller provided. Optional.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the schedule details that the request is trying to change for the privileged access eligibility. The scheduleInfo can represent a single occurrence, or multiple recurring instances. Optional.|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Represents the ticket information provided by the caller for tracking purpose, if it is required. Optional.|
+|action|scheduleRequestActions| Represents the type of operation on the access assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. Required.|
+|isValidationOnly|Boolean|Represents whether the request intends to evaluate the payload without writing to the system. This can be used in UI to enable or disable scenarios. The default value is `false`. Optional.|
+|justification|String|Represents the justification for the request. Optional.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the access assignment or eligibility request. The request can be for a single occurrence or multiple recurring instances. Optional.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Represents the ticket information provided by the caller for tracking purposes. Optional.|
 
 ## Relationships
 None.
