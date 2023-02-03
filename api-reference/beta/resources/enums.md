@@ -2800,16 +2800,6 @@ Possible values for user account types (group membership), per Windows definitio
 |member|
 |unknownFutureValue|
 
-### recurrencePatternType values
-
-|Member|
-|:---|
-|daily|
-|weekly|
-|absoluteMonthly|
-|relativeMonthly|
-|absoluteYearly|
-|relativeYearly|
 
 ### recurrenceRangeType values
 
