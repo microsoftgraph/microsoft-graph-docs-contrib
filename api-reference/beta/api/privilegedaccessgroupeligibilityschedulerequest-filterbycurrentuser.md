@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilityScheduleRequest: filterByCurrentUser"
-description: "Retrieve the eligibility requests for privileged access to a group relationship assignment for a particular principal."
+description: "In PIM for groups, retrieve the requests for membership or ownership eligibilities for the calling principal to groups that are governed by PIM."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
