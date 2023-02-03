@@ -2801,59 +2801,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 
-### recurrenceRangeType values
-
-|Member|
-|:---|
-|endDate|
-|noEnd|
-|numbered|
-
-### roleAssignmentScheduleFilterByCurrentUserOptions values
-
-|Member|
-|:---|
-|principal|
-|unknownFutureValue|
-
-### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values
-
-|Member|
-|:---|
-|principal|
-|unknownFutureValue|
-
-### roleAssignmentScheduleRequestFilterByCurrentUserOptions values
-
-|Member|
-|:---|
-|principal|
-|createdBy|
-|approver|
-|unknownFutureValue|
-
-### roleEligibilityScheduleFilterByCurrentUserOptions values
-
-|Member|
-|:---|
-|principal|
-|unknownFutureValue|
-
-### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values
-
-|Member|
-|:---|
-|principal|
-|unknownFutureValue|
-
-### roleEligibilityScheduleRequestFilterByCurrentUserOptions values
-
-|Member|
-|:---|
-|principal|
-|createdBy|
-|approver|
-|unknownFutureValue|
 
 ### scheduleRequestActions values
 
