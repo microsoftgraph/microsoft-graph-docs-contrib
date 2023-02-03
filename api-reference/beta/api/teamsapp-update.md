@@ -143,3 +143,7 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
 ```
+
+## see also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

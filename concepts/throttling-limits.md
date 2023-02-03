@@ -304,13 +304,13 @@ Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
 |------------------------------------------------------|---------------------------------|------------|
-| GET [team](/graph/api/team-get), [channel](/graph/api/api/channel-get), [tab](/graph/api/api/channel-list-tabs), [installedApps](/graph/api/api/userteamwork-get-installedapps), [appCatalogs](/graph/api/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
-| POST/PUT [channel](/graph/api/api/channel-post), [tab](/graph/api/api/channel-post-tabs), installedApps, appCatalogs    |  30 rps                         | 300 rps  |
-| PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
-| DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
-| GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams | 10 rps | 100 rps  |
-| PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
+| GET [team](/graph/api/team-get), [channel](/graph/api/channel-get), [tab](/graph/api/channel-list-tabs), [installedApps](/graph/api/userteamwork-get-installedapps), [appCatalogs](/graph/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
+| POST/PUT [channel](/graph/api/channel-post), [tab](/graph/api/channel-post-tabs), [installedApps](/graph/api/userteamwork-post-installedapps.md), [appCatalogs] (/graph/api/teamsapp-publish.)    |  30 rps                         | 300 rps  |
+| PATCH [team](/graph/api/team-update), [channel](/graph/api/channel-patch), tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
+| DELETE [channel](/graph/api/channel-delete), [tab](/graph/api/chat-delete-tabs), [installedApps](/graph/api/chat-delete-installedapps), [appCatalogs](/graph/api/teamsapp-delete)      |  15 rps                         | 150 rps  |
+| GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
+| POST /[teams](/graph/api/team-post.md) | 10 rps | 100 rps  |
+| PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams), clone | 6 rps | 150 rps  |
 | GET channel message  | 20 rps | 200 rps |
 | GET 1:1/group chat message  | 20 rps | 200 rps |
 | POST channel message | 50 rps | 500 rps |

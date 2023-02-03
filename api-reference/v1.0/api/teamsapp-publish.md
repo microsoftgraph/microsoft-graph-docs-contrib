@@ -235,3 +235,7 @@ Content-type: application/json
     "createdBy": null
 }
 ```
+
+## see also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
