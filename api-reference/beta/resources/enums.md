@@ -2775,14 +2775,6 @@ Possible values for user account types (group membership), per Windows definitio
 |approver|
 |unknownFutureValue|
 
-### expirationPatternType values
-
-|Member|
-|:---|
-|notSpecified|
-|noExpiration|
-|afterDateTime|
-|afterDuration|
 
 ### privilegedAccessGroupAssignmentType values
 
