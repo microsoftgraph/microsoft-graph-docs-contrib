@@ -5335,8 +5335,8 @@ items:
                 href: api/appManagementPolicy-post-appliesTo.md
               - name: List appliesTo
                 href: api/appManagementPolicy-list-appliesTo.md
-	      - name: Delete appliesTo
-	      	href: api/appmanagementpolicy-delete-appliesto.md
+              - name: Delete appliesTo
+                href: api/appmanagementpolicy-delete-appliesTo.md
           - name: Authentication flows policy
             items:
             - name: Authentication flows policy
