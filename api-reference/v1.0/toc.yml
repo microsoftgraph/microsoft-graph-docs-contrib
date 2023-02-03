@@ -5091,6 +5091,38 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Application authentication method policy
+            items:
+            - name: Overview
+              href: resources/applicationAuthenticationMethodPolicy.md
+            - name: Tenant app management policy
+              items:
+              - name: Tenant app management policy
+                href: resources/tenantAppManagementPolicy.md
+              - name: Get
+                href: api/tenantAppManagementPolicy-get.md
+              - name: Update
+                href: api/tenantAppManagementPolicy-update.md
+            - name: App management policy
+              items:
+              - name: App management policy
+                href: resources/appManagementPolicy.md
+              - name: List
+                href: api/appManagementPolicy-list.md
+              - name: Get
+                href: api/appManagementPolicy-get.md
+              - name: Create
+                href: api/appManagementPolicy-post.md
+              - name: Update
+                href: api/appManagementPolicy-update.md
+              - name: Delete
+                href: api/appManagementPolicy-delete.md
+              - name: Create appliesTo
+                href: api/appManagementPolicy-post-appliesTo.md
+              - name: List appliesTo
+                href: api/appManagementPolicy-list-appliesTo.md
+	      - name: Delete appliesTo
+	      	href: api/appmanagementpolicy-delete-appliesto.md
           - name: Authentication flows policy
             items:
             - name: Authentication flows policy

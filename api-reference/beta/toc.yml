@@ -11818,7 +11818,7 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
-          - name: Application authentication method policy (preview)
+          - name: Application authentication method policy
             items:
             - name: Overview
               href: resources/applicationAuthenticationMethodPolicy.md
@@ -11848,6 +11848,8 @@ items:
                 href: api/appManagementPolicy-post-appliesTo.md
               - name: List appliesTo
                 href: api/appManagementPolicy-list-appliesTo.md
+	      - name: Delete appliesTo
+	      	href: api/appmanagementpolicy-delete-appliesto.md
           - name: Authentication events policy
             items:
             - name: Authentication events policy

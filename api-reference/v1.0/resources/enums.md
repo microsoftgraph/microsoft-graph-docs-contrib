@@ -11,6 +11,23 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### appCredentialRestrictionType values
+
+|Member|
+|:-----|
+|passwordAddition|
+|passwordLifetime|
+|symmetricKeyAddition|
+|symmetricKeyLifetime|
+|unknownFutureValue|
+
+### appKeyCredentialRestrictionType values
+
+|Member|
+|:-----|
+|asymmetricKeyLifetime|
+|unknownFutureValue|
+
 ### accessPackageAssignmentFilterByCurrentUserOptions values
 
 |Member|
