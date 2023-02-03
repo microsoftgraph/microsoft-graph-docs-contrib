@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationshipCustomerParticipant resource type"
 description: "Represents identification details of a customer in a delegated admin relationship."
-author: "adtangir"
+author: "koravva"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # delegatedAdminRelationshipCustomerParticipant resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents identification details of a customer in a delegated admin relationship.
 

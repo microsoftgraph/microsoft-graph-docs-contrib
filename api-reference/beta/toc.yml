@@ -11655,7 +11655,7 @@ items:
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
-        - name: Granular delegated admin privileges (preview)
+        - name: Granular delegated admin privileges
           items:
           - name: Overview
             displayName: GDAP, Partner Center, CSP, VAR

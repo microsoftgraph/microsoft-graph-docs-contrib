@@ -4665,6 +4665,67 @@ items:
       - name: Overview
         displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
+      - name: Customer relationship management
+        items:
+        - name: Granular delegated admin privileges
+          items:
+          - name: Overview
+            displayName: GDAP, Partner Center, CSP, VAR
+            href: resources/delegatedadminrelationships-api-overview.md
+          - name: Delegated admin relationships
+            href: resources/delegatedadminrelationship.md
+            items:
+            - name: Create
+              href: api/tenantrelationship-post-delegatedadminrelationships.md
+            - name: List
+              href: api/tenantrelationship-list-delegatedadminrelationships.md
+            - name: Get
+              href: api/delegatedadminrelationship-get.md
+            - name: Update
+              href: api/delegatedadminrelationship-update.md
+            - name: Delete
+              href: api/delegatedadminrelationship-delete.md
+          - name: Delegated admin access assignments
+            href: resources/delegatedadminaccessassignment.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post-accessassignments.md
+            - name: List
+              href: api/delegatedadminrelationship-list-accessassignments.md
+            - name: Get
+              href: api/delegatedadminaccessassignment-get.md
+            - name: Update
+              href: api/delegatedadminaccessassignment-update.md
+            - name: Delete
+              href: api/delegatedadminaccessassignment-delete.md
+          - name: Delegated admin relationship requests
+            href: resources/delegatedadminrelationshiprequest.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post-requests.md
+            - name: List
+              href: api/delegatedadminrelationship-list-requests.md
+            - name: Get
+              href: api/delegatedadminrelationshiprequest-get.md
+          - name: Delegated admin relationship operations
+            href: resources/delegatedadminrelationshipoperation.md
+            items:
+            - name: List
+              href: api/delegatedadminrelationship-list-operations.md
+            - name: Get
+              href: api/delegatedadminrelationshipoperation-get.md
+          - name: Delegated admin customer
+            href: resources/delegatedadmincustomer.md
+            items:
+            - name: List
+              href: api/tenantrelationship-list-delegatedadmincustomers.md
+            - name: Get
+              href: api/delegatedadmincustomer-get.md
+            - name: Service management details
+              href: resources/delegatedadminservicemanagementdetail.md
+              items:
+              - name: List
+                href: api/delegatedadmincustomer-list-servicemanagementdetails.md
       - name: Directory management
         items:
         - name: Administrative unit
