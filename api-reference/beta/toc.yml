@@ -11866,6 +11866,41 @@ items:
             href: api/directoryobject-getbyids.md
           - name: Validate properties
             href: api/directoryobject-validateproperties.md
+        - name: Directory recommendations
+          displayName: Recommendations, Azure AD recommendations
+          items:
+          - name: Recommendations
+            items:
+            - name: Recommendation
+              href: resources/recommendation.md
+            - name: List
+              href: api/directory-list-recommendation.md
+            - name: Get
+              href: api/recommendation-get.md
+            - name: Complete
+              href: api/recommendation-complete.md
+            - name: Dismiss
+              href: api/recommendation-dismiss.md
+            - name: Postpone
+              href: api/recommendation-postpone.md
+            - name: Reactivate
+              href: api/recommendation-reactivate.md
+          - name: Impacted resources
+            items:
+            - name: Impacted resource
+              href: resources/impactedresource.md
+            - name: List
+              href: api/recommendation-list-impactedresources.md
+            - name: Get
+              href: api/impactedresource-get.md
+            - name: Complete
+              href: api/impactedresource-complete.md
+            - name: Dismiss
+              href: api/impactedresource-dismiss.md
+            - name: Postpone
+              href: api/impactedresource-postpone.md
+            - name: Reactivate
+              href: api/impactedresource-reactivate.md
         - name: Directory role
           href: resources/directoryrole.md
           items:
