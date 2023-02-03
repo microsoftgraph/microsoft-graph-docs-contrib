@@ -35,7 +35,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[privilegedAccessGroup](../resources/privilegedaccessgroup.md)|The navigation entity which contains the privileged access group APIs.|
+|group|[privilegedAccessGroup](../resources/privilegedaccessgroup.md)|A group that's governed through Privileged Identity Management (PIM).|
 
 ## JSON representation
 The following is a JSON representation of the resource.
