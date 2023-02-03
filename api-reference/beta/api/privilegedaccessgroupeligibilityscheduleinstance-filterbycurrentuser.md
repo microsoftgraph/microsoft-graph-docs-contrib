@@ -56,7 +56,7 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 
 ## Examples
 
-### Example 1
+### Example 1: Retrieve schedule instances for the calling principal
 
 #### Request
 The following is an example of a request.
