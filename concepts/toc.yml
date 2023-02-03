@@ -775,6 +775,8 @@ items:
                 href: webhooks-lifecycle.md
               - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
+              - name: Get notifications through webhooks
+                href: change-notifications-delivery-webhooks.md
               - name: Get notifications through Event Hubs
                 href: change-notifications-delivery-event-hubs.md
               - name: Change notifications for cloud printing

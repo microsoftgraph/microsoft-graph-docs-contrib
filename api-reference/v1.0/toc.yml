@@ -84,6 +84,8 @@ items:
         href: /graph/webhooks-lifecycle?context=graph/api/1.0
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/1.0
+      - name: Get notifications through webhooks
+        href: /graph/change-notifications-delivery-webhooks.md?context=graph/api/1.0
       - name: Get notifications through Event Hubs
         href: /graph/change-notifications-delivery-event-hubs?context=graph/api/1.0
       - name: Change notifications for cloud printing
