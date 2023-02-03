@@ -494,6 +494,93 @@ final EventCollectionResponse events = batchResponseContent.getResponseById(cale
 System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
+### [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    msgraphgocore "github.com/microsoftgraph/msgraph-sdk-go-core"
+    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/models"
+    "github.com/thlib/go-timezone-local/tzlocal"
+)
+
+now := time.Now()
+nowMidnight := time.Date(now.Year(), now.Month(), now.Day(),
+    0, 0, 0, 0, time.Local)
+timeZone, _ := tzlocal.RuntimeTZ()
+
+// 5:00 PM
+startDateTime := nowMidnight.Add(time.Hour * 17)
+// 5:30 PM
+endDateTime := startDateTime.Add(time.Minute * 30)
+graphDateTimeFormat := "2006-01-02T15:04:05"
+
+newEvent := models.NewEvent()
+subject := "File end-of-day report"
+newEvent.SetSubject(&subject)
+
+start := models.NewDateTimeTimeZone()
+startString := startDateTime.Format(graphDateTimeFormat)
+start.SetDateTime(&startString)
+start.SetTimeZone(&timeZone)
+newEvent.SetStart(start)
+
+end := models.NewDateTimeTimeZone()
+endString := endDateTime.Format(graphDateTimeFormat)
+end.SetDateTime(&endString)
+end.SetTimeZone(&timeZone)
+newEvent.SetEnd(end)
+
+addEventRequest, _ := client.Me().
+    Events().
+    ToPostRequestInformation(context.Background(), newEvent, nil)
+
+viewStart := nowMidnight.Format(time.RFC3339)
+viewEnd := nowMidnight.Add(time.Hour * 24).Format(time.RFC3339)
+query := me.CalendarViewRequestBuilderGetQueryParameters{
+    StartDateTime: &viewStart,
+    EndDateTime:   &viewEnd,
+    Select:        []string{"subject", "id"},
+}
+
+// Use the request builder to generate a regular
+// request to /me/calendarview?startDateTime="start"&endDateTime="end"
+eventsRequest, _ := client.Me().
+    CalendarView().
+    ToGetRequestInformation(context.Background(),
+        &me.CalendarViewRequestBuilderGetRequestConfiguration{
+            QueryParameters: &query,
+        })
+
+// Build the batch
+batch := msgraphgocore.NewBatchRequest(client.GetAdapter())
+
+// Force the requests to execute in order, so that the request for
+// today's events will include the new event created.
+
+// First request, no dependency
+addEventRequestItem, _ := batch.AddBatchRequestStep(*addEventRequest)
+
+// Second request, depends on addEventRequestId
+eventsRequestItem, _ := batch.AddBatchRequestStep(*eventsRequest)
+eventsRequestItem.DependsOnItem(addEventRequestItem)
+
+batchResponse, _ := batch.Send(context.Background(), client.GetAdapter())
+
+// De-serialize response based on known return type
+event, _ := msgraphgocore.GetBatchResponseById[models.Eventable](
+    batchResponse, *addEventRequestItem.GetId(), models.CreateEventFromDiscriminatorValue)
+fmt.Printf("New event created with ID: %s\n", *(event.GetId()))
+
+// For collections, must use the *CollectionResponseable class to deserialize
+events, _ := msgraphgocore.GetBatchResponseById[models.EventCollectionResponseable](
+    batchResponse, *eventsRequestItem.GetId(),
+    models.CreateEventCollectionResponseFromDiscriminatorValue)
+fmt.Printf("You have %d events on your calendar today\n", len(events.GetValue()))
+```
+
 ---
 
 ## Implementing batching using BatchRequestContent, BatchRequestStep, and HttpRequestMessage
@@ -584,92 +671,3 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
 }
 
 ```
-
-### [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-```go
-import (
-    msgraphgocore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/me"
-    "github.com/microsoftgraph/msgraph-sdk-go/models"
-    "github.com/thlib/go-timezone-local/tzlocal"
-)
-
-now := time.Now()
-nowMidnight := time.Date(now.Year(), now.Month(), now.Day(),
-    0, 0, 0, 0, time.Local)
-timeZone, _ := tzlocal.RuntimeTZ()
-
-// 5:00 PM
-startDateTime := nowMidnight.Add(time.Hour * 17)
-// 5:30 PM
-endDateTime := startDateTime.Add(time.Minute * 30)
-graphDateTimeFormat := "2006-01-02T15:04:05"
-
-newEvent := models.NewEvent()
-subject := "File end-of-day report"
-newEvent.SetSubject(&subject)
-
-start := models.NewDateTimeTimeZone()
-startString := startDateTime.Format(graphDateTimeFormat)
-start.SetDateTime(&startString)
-start.SetTimeZone(&timeZone)
-newEvent.SetStart(start)
-
-end := models.NewDateTimeTimeZone()
-endString := endDateTime.Format(graphDateTimeFormat)
-end.SetDateTime(&endString)
-end.SetTimeZone(&timeZone)
-newEvent.SetEnd(end)
-
-addEventRequest, _ := client.Me().
-    Events().
-    ToPostRequestInformation(context.Background(), newEvent, nil)
-
-viewStart := nowMidnight.Format(time.RFC3339)
-viewEnd := nowMidnight.Add(time.Hour * 24).Format(time.RFC3339)
-query := me.CalendarViewRequestBuilderGetQueryParameters{
-    StartDateTime: &viewStart,
-    EndDateTime:   &viewEnd,
-    Select:        []string{"subject", "id"},
-}
-
-// Use the request builder to generate a regular
-// request to /me/calendarview?startDateTime="start"&endDateTime="end"
-eventsRequest, _ := client.Me().
-    CalendarView().
-    ToGetRequestInformation(context.Background(),
-        &me.CalendarViewRequestBuilderGetRequestConfiguration{
-            QueryParameters: &query,
-        })
-
-// Build the batch
-batch := msgraphgocore.NewBatchRequest(client.GetAdapter())
-
-// Force the requests to execute in order, so that the request for
-// today's events will include the new event created.
-
-// First request, no dependency
-addEventRequestItem, _ := batch.AddBatchRequestStep(*addEventRequest)
-
-// Second request, depends on addEventRequestId
-eventsRequestItem, _ := batch.AddBatchRequestStep(*eventsRequest)
-eventsRequestItem.DependsOnItem(addEventRequestItem)
-
-batchResponse, _ := batch.Send(context.Background(), client.GetAdapter())
-
-// De-serialize response based on known return type
-event, _ := msgraphgocore.GetBatchResponseById[models.Eventable](
-    batchResponse, *addEventRequestItem.GetId(), models.CreateEventFromDiscriminatorValue)
-fmt.Printf("New event created with ID: %s\n", *(event.GetId()))
-
-// For collections, must use the *CollectionResponseable class to deserialize
-events, _ := msgraphgocore.GetBatchResponseById[models.EventCollectionResponseable](
-    batchResponse, *eventsRequestItem.GetId(),
-    models.CreateEventCollectionResponseFromDiscriminatorValue)
-fmt.Printf("You have %d events on your calendar today\n", len(events.GetValue()))
-```
-
----
