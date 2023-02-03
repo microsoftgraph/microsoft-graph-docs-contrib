@@ -56,7 +56,7 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 
 ## Examples
 
-### Example 1: A user queries all of their requests that are pending approval on a specific privileged access group.
+### Example 1: Retrieve a principal's requests scoped to a specific group and that are pending approval
 
 ### Request
 <!-- {
