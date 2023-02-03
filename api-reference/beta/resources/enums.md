@@ -2751,17 +2751,6 @@ Possible values for user account types (group membership), per Windows definitio
 |approver|
 |unknownFutureValue|
 
-### dayOfWeek values
-
-|Member|
-|:---|
-|sunday|
-|monday|
-|tuesday|
-|wednesday|
-|thursday|
-|friday|
-|saturday|
 
 ### eligibilityScheduleFilterByCurrentUserOptions values
 
