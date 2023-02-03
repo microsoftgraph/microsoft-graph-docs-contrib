@@ -46,10 +46,10 @@ You can specify the following properties when creating a **privilegedAccessGroup
 
 |Property|Type|Description|
 |:---|:---|:---|
-|principalId|String|The id of the principal to which the assignment is granted. Required.|
-|accessId|privilegedAccessGroupRelationships|The id of privileged access relationship to the group. The possible values are: `owner`, `member`. Required.|
-|groupId|String|The id of the group representing the scope of the assignment. Optional.|
-|targetScheduleId|String|The id of the schedule which gets created from the request. Optional.|
+|accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership eligibility relationship to the group. The possible values are: `owner`, `member`. Required.|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Optional.|
+|principalId|String|The identifier of the principal whose membership or ownership eligibility to the group is managed through PIM for groups. Required.|
+|targetScheduleId|String|The identifier of the schedule that's created from the request. Optional.|
 
 
 ## Response
