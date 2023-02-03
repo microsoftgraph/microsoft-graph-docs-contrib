@@ -620,7 +620,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,assignedLicenses)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,assignedLicenses,members())",
   "value": [
     {
       "id": "5caf712c-8483-4b3d-8384-d8da988c0ca4",
