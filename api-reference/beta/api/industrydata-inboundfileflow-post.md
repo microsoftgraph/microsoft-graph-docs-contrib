@@ -105,7 +105,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.inboundFlow"
+  "@odata.type": "microsoft.graph.industryData.inboundFileFlow"
 }
 -->
 
