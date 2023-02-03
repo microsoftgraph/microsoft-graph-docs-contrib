@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The schedule requests for operations to create, update, delete, extend, and renew an eligibility. It represents the privileged access schedule request for a group relationship eligibility.
+Represents requests for operations to create, update, delete, extend, and renew group membership and ownership eligibility in PIM for groups.
 
 Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md).
 
