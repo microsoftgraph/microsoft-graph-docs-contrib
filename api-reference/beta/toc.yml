@@ -22049,7 +22049,7 @@ items:
       items:
         - name: Overview
           href: resources/industrydata-overview.md
-        - name: Azure data lake connector 
+        - name: Azure Data Lake connector 
           href: resources/industrydata-azuredatalakeconnector.md
           items:
             - name: List
