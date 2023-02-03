@@ -40,7 +40,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
-|[Get shift work cloudPc's access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md)|[shiftWorkCloudPcAccessState](../resources/shiftWorkCloudPcAccessState.md)|Get the access state of the shift work Cloud PC.|
+|[Get shift work cloudPc's access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md)|[shiftWorkCloudPcAccessState](#shiftWorkCloudPcAccessState-values)|Get the access state of the shift work Cloud PC.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
 
@@ -98,6 +98,19 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
+### shiftWorkCloudPcAccessState values
+
+|Member|Description|
+|:---|:---|
+|unassigned|Default. Set to unassigned if the Cloud PC is not consuming any shared use licenses.|
+|noLicensesAvailable|Indicates the shift work Cloud PC cannot be assigned any sharedUseLicenses as all shared use licenses are in use as of now.|
+|activationFailed|Indicates the shift work Cloud PC activation failed after user requested the shift work Cloud PC.|
+|active|Indicates the shift work Cloud PC is in active state with a shared use license assigned and the user could connect to this Cloud PC.|
+|activating|Indicates the shift work Cloud PC is in activating state after the user requests to connect this Cloud PC, service is working on starting the Cloud PC.|
+|waitlisted|Indicates the shift work Cloud PC is in waitlisted state after the user requests to connect this Cloud PC and all shared use licenses are being actively used.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
 
 ## Relationships
 
