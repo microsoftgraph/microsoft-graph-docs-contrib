@@ -15312,7 +15312,7 @@ items:
           items:
           - name: List case operations
             href: api/security-ediscoverycase-list-operations.md
-          - name: Get case opreation by id
+          - name: Get case operation by ID
             href: api/security-caseoperation-get.md
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
