@@ -105,7 +105,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: A user gets all their current member eligibility schedules for a specific privileged access group.
+### Example 2: Retrieve eligibility schedules for the principal and filter by a group and accessId
 
 #### Request
 <!-- {
