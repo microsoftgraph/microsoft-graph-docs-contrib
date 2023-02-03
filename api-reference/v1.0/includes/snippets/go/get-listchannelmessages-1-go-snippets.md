@@ -7,9 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Get(nil)
+
+requestTop := int32(3)
+
+requestParameters := &graphconfig.TeamItemChannelItemMessagesRequestBuilderGetQueryParameters{
+	Top: &requestTop,
+}
+configuration := &graphconfig.TeamItemChannelItemMessagesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Get(context.Background(), configuration)
 
 
 ```

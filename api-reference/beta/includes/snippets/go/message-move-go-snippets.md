@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewMovePostRequestBody()
 destinationId := "deleteditems"
-requestBody.SetDestinationId(&destinationId)
-options := &msgraphsdk.MoveRequestBuilderPostOptions{
-	Body: requestBody,
-}
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Move().Post(options)
+requestBody.SetDestinationId(&destinationId) 
+
+result, err := graphClient.Me().MessagesById("message-id").Move().Post(context.Background(), requestBody, nil)
 
 
 ```

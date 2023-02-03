@@ -24,6 +24,7 @@ $params = @{
 	}
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserPlanner -UserId $userId -BodyParameter $params
 
 ```

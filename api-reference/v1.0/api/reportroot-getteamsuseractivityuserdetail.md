@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+>**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -51,6 +51,10 @@ In the request URL, provide one of the following parameters with a valid value.
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
@@ -60,6 +64,8 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns:
 
 - Report Refresh Date
+- Tenant Display Name
+- Shared Channel Tenant Display Names
 - User Id
 - User Principal Name
 - Last Activity Date
@@ -70,12 +76,33 @@ The CSV file has the following headers for columns:
 - Private Chat Message Count
 - Call Count
 - Meeting Count
+- Post Messages
+- Reply Messages
+- Urgent Messages
+- Meetings Organized Count
+- Meetings Attended Count
+- Ad Hoc Meetings Organized Count
+- Ad Hoc Meetings Attended Count
+- Scheduled One-time Meetings Organized Count
+- Scheduled One-time Meetings Attended Count
+- Scheduled Recurring Meetings Organized Count
+- Scheduled Recurring Meetings Attended Count
+- Audio Duration
+- Video Duration
+- Screen Share Duration
+- Audio Duration In Seconds
+- Video Duration In Seconds
+- Screen Share Duration In Seconds
 - Has Other Action
+- Is Licensed
 - Report Period
+
+> [!NOTE] 
+> The values in the Meetings Organized Count might not be the sum of the Ad Hoc Meetings Organized Count, Scheduled One-time Meetings Organized Count, and Scheduled Recurring Meetings Organized Count that a user organized during the specified time period. This is because the Unclassified meetings value is not included in the output CSV file. For details, see [Microsoft Teams user activity report](/microsoftteams/teams-analytics-and-reports/user-activity-report).
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -85,12 +112,12 @@ The following is an example of the request.
   "name": "reportroot_getteamsuseractivityuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(period='D7')
 ```
 
 
-#### Response
+### Response
 
 The following is an example of the response.
 
@@ -114,7 +141,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
@@ -127,4 +154,3 @@ Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,De
   "suppressions": [
   ]
 }-->
-

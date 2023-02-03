@@ -11,6 +11,7 @@ $params = @{
 	Color = "preset9"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
 
 ```

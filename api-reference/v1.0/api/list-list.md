@@ -15,10 +15,6 @@ Get the collection of [lists][] for a [site][].
 Lists with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
 
-[system]: ../resources/systemfacet.md
-[lists]: ../resources/list.md
-[site]: ../resources/site.md
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,9 +31,25 @@ One of the following permissions is required to call this API. To learn more, in
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [list][] objects in the response body. 
+
 ## Example
 
 ### Request
+
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -46,16 +58,13 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-lists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-lists-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/enum-lists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -70,10 +79,16 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 [!INCLUDE [sample-code](../includes/snippets/powershell/enum-lists-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/enum-lists-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -106,6 +121,11 @@ Content-type: application/json
   ]
 }
 ```
+
+[system]: ../resources/systemfacet.md
+[list]: ../resources/list.md
+[lists]: ../resources/list.md
+[site]: ../resources/site.md
 
 <!-- {
   "type": "#page.annotation",

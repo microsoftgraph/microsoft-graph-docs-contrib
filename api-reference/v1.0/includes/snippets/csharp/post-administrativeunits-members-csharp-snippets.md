@@ -6,12 +6,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = new DirectoryObject
+var directoryObject = new Group
 {
-	Id = "{id}"
+	Description = "Self help community for golf",
+	DisplayName = "Golf Assist",
+	GroupTypes = new List<String>()
+	{
+		"Unified"
+	},
+	MailEnabled = true,
+	MailNickname = "golfassist",
+	SecurityEnabled = false
 };
 
-await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].Members.References
+await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].Members
 	.Request()
 	.AddAsync(directoryObject);
 

@@ -17,6 +17,7 @@ $params = @{
 	)
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserOnlineMeetingRegistrationCustomQuestion -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingRegistrationQuestionId $meetingRegistrationQuestionId -BodyParameter $params
 
 ```

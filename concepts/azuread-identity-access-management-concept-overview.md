@@ -1,10 +1,13 @@
 ---
 title: "Azure AD identity and access management API overview"
-description: "Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Azure AD to manage identities and control access in on-premises, hybrid, and cloud environments.  "
-author: "jackson-woods"
+description: "Use Azure Active Directory (Azure AD) to manage identities and devices and control access in on-premises, hybrid, and cloud environments."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.prod: "identity-and-access"
 ms.custom: scenarios:getting-started
+ms.date: 06/22/2022
 ---
 
 # Azure AD identity and access management API overview
@@ -67,9 +70,9 @@ Today, Microsoft Graph gives easy access to customers of Azure AD Premium P2 to 
 
 Review access to groups, applications, and even privileged roles in your organization. [Access reviews](/graph/api/resources/accessreviews-root) is featured in Azure AD Premium P2.
 
-### Activate users into privileged roles (preview)
+### Activate users into privileged roles
 
-Use the [Privileged Identity Management (PIM) API](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) to activate administrator privilege on demand. Enforce mandatory justification of role activation, and multifactor authentication for actors in privileged roles.
+Use the [Privileged Identity Management (PIM) API](/graph/api/resources/rolemanagement) to activate administrator privilege on demand. Enforce mandatory justification of role activation, and multifactor authentication for actors in privileged roles.
 
 ## API reference
 

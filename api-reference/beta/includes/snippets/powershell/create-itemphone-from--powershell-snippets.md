@@ -11,6 +11,7 @@ $params = @{
 	Number = "+7 499 342 22 13"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfilePhone -UserId $userId -BodyParameter $params
 
 ```

@@ -20,10 +20,12 @@ The following authentication methods are derived from the **authenticationMethod
 + [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
 + [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
 + [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from a policy.|
 |id|String|The policy name.|
 |state|authenticationMethodState|The state of the policy. Possible values are: `enabled`, `disabled`.|
 

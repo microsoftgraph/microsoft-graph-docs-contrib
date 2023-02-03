@@ -3,7 +3,7 @@ title: "workPosition resource type"
 description: "workPosition resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.prod: people-and-workplace-intelligence
 doc_type: "resourcePageType"
 ---
 
@@ -17,7 +17,6 @@ Represents detailed information about work positions associated with a user's [p
 
 This resource type inherits from [itemFacet](itemfacet.md).
 
-## Methods
 
 ## Methods
 |Method|Return type|Description|

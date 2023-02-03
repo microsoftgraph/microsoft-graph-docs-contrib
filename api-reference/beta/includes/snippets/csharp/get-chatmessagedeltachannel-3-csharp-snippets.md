@@ -13,7 +13,7 @@ var queryOptions = new List<QueryOption>()
 
 var delta = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
 	.Delta()
-	.Request()
+	.Request( queryOptions )
 	.GetAsync();
 
 ```

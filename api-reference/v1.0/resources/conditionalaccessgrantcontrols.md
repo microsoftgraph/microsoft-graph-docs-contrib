@@ -17,9 +17,9 @@ Represents grant controls that must be fulfilled to pass the policy.
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| operator | String | Defines the relationship of the grant controls. Possible values: `AND`, `OR`. |
 | builtInControls | conditionalAccessGrantControl collection | List of values of built-in controls required by the policy. Possible values: `block`, `mfa`, `compliantDevice`, `domainJoinedDevice`, `approvedApplication`, `compliantApplication`, `passwordChange`, `unknownFutureValue`. |
 | customAuthenticationFactors | String collection | List of custom controls IDs required by the policy. For more information, see [Custom controls](/azure/active-directory/conditional-access/controls). |
+| operator | String | Defines the relationship of the grant controls. Possible values: `AND`, `OR`. |
 | termsOfUse | String collection | List of [terms of use](/graph/api/resources/agreement) IDs required by the policy. |
 
 ### Special considerations when using `passwordChange` as a control

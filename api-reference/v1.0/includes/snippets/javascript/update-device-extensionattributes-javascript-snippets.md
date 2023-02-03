@@ -16,7 +16,7 @@ const device = {
     }
 };
 
-await client.api('/devices/{id}')
+await client.api('/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac')
 	.update(device);
 
 ```

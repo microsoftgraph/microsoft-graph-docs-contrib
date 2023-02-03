@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.MailFoldersRequestBuilderGetQueryParameters{
-	IncludeHiddenFolders: true,
+
+requestIncludehiddenfolders := true
+
+requestParameters := &graphconfig.MeMailFoldersRequestBuilderGetQueryParameters{
+	Includehiddenfolders: &requestIncludehiddenfolders,
 }
-options := &msgraphsdk.MailFoldersRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.MeMailFoldersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().MailFolders().Get(options)
+
+result, err := graphClient.Me().MailFolders().Get(context.Background(), configuration)
 
 
 ```

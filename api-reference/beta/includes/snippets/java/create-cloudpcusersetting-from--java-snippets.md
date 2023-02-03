@@ -10,6 +10,10 @@ CloudPcUserSetting cloudPcUserSetting = new CloudPcUserSetting();
 cloudPcUserSetting.displayName = "Example";
 cloudPcUserSetting.selfServiceEnabled = false;
 cloudPcUserSetting.localAdminEnabled = true;
+CloudPcRestorePointSetting restorePointSetting = new CloudPcRestorePointSetting();
+restorePointSetting.frequencyInHours = 16;
+restorePointSetting.userRestoreEnabled = true;
+cloudPcUserSetting.restorePointSetting = restorePointSetting;
 
 graphClient.deviceManagement().virtualEndpoint().userSettings()
 	.buildRequest()

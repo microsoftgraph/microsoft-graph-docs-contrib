@@ -8,11 +8,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var extensionProperty = new ExtensionProperty
 {
-	Name = "extensionName",
-	DataType = "string",
+	Name = "jobGroup",
+	DataType = "String",
 	TargetObjects = new List<String>()
 	{
-		"Application"
+		"User"
 	}
 };
 

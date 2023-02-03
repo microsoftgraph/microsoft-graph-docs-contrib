@@ -2,7 +2,7 @@
 title: "unifiedRoleAssignment resource type"
 description: "A role assignment is the link between a role definition and a principal at a particular scope for the purpose of granting access."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
@@ -22,6 +22,7 @@ Providing either a directoryScopeId or an appScopeId is required.
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List unifiedRoleAssignment](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read a list of unifiedRoleAssignment objects and their properties. |
+| [List transitiveRoleAssignments](../api/rbacapplication-list-transitiveroleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get direct and transitive unifiedRoleAssignments assigned to a specific principal. Specifying principalId is required. |
 | [Get unifiedRoleAssignment](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read properties and relationships of unifiedRoleAssignment object. |
 | [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignment collection. |
 | [Delete unifiedRoleAssignment](../api/unifiedroleassignment-delete.md) | None | Delete unifiedRoleAssignment object. |

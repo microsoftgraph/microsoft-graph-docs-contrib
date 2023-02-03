@@ -15,6 +15,7 @@ $params = @{
 	Initials = "initials-value"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserContactFolderContact -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
 
 ```

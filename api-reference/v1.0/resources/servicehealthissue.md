@@ -59,12 +59,12 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |extendedRecovery|This status indicates that corrective action is in progress to restore the service to most users but will take some time to reach all the affected systems. You might also see this status if a temporary fix is made to reduce impact while a permanent fix is waiting to be applied.|
 |falsePositive|After a detailed investigation, the service is confirmed to be healthy and operating as designed. No impact to the service was observed or the cause of the incident originated outside of the service. Incidents and advisories with this status appear in the history view until they expire (after the period of time stated in the final post for that event).|
 |investigationSuspended|If our detailed investigation of a potential issue results in a request for additional information from customers to allow the service team to investigate further, you'll see this status. If service team need you to act, they'll let you know what data or logs they need.|
-|resolved|The Microsoft Windows service status that corresponds to service restored.|
-|mitigatedExternal|The Windows service status that corresponds to restoring service.|
-|mitigated|The Windows service status that corresponds to extended recovery.|
-|resolvedExternal|The Windows service status that corresponds to investigation suspended.|
-|confirmed|The Windows service status that corresponds to service interruption.|
-|reported|The Windows service status that corresponds to investigating.|
+|resolved|Reserved for future use.|
+|mitigatedExternal|Reserved for future use.|
+|mitigated|Reserved for future use.|
+|resolvedExternal|Reserved for future use.|
+|confirmed|Reserved for future use.|
+|reported|Reserved for future use.|
 
 ## Relationships
 None.

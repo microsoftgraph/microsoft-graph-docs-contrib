@@ -15,11 +15,11 @@ Use the Microsoft Graph To Do API to create an app that connects with tasks acro
 * Sync your app’s existing tasks with To Do and create a single task view for better prioritization and manageability.
 * Manage To Do tasks in a custom business application.
 
-Currently, the API supports only permissions delegated by the signed-in user.
+The API supports both delegated and application permissions.
  
 Before starting with the To Do API, take a look at the resources and how they relate to one another.
 
-![To Do API entities](/graph/images/todo-api-entities.png)
+![Screenshot highlighting To Do API entities. Screenshot shows list of task lists on the left, tasks within a specific task list in the center and, on the right, checklist items and linked resource along with other task properties.](/graph/images/tasks-api-entities.png)
 
 ## Task list
 
@@ -34,6 +34,13 @@ GET /me/todo/lists
 A [todoTask](./todotask.md) represents a task, i.e. a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
+```
+
+## Checklist item 
+
+A [checklistItem](checklistitem.md) represents a subtask in a bigger [todoTask](./todotask.md). **ChecklistItem** allows breaking down a complex task into more actionable, smaller tasks. To get a **checklistItem** from a task, make the following HTTP request:
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItems}
 ```
 
 ## Linked resource

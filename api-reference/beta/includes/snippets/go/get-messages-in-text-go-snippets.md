@@ -7,17 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
-	Select: "subject,body,bodyPreview,uniqueBody",
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.body-content-type=\"text\"")
+
+requestParameters := &graphconfig.MeMessagesRequestBuilderGetQueryParameters{
+	Select: [] string {"subject","body","bodyPreview","uniqueBody"},
 }
-headers := map[string]string{
-	"Prefer": "outlook.body-content-type="text""
+configuration := &graphconfig.MeMessagesRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.MessagesRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.Me().Messages().Get(options)
+
+result, err := graphClient.Me().Messages().Get(context.Background(), configuration)
 
 
 ```

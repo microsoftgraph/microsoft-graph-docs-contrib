@@ -1,11 +1,11 @@
 ---
-title: "People component in the Microsoft Graph Toolkit"
+title: "People component in Microsoft Graph Toolkit"
 description: "You can use the `mgt-people` web component to display a group of people or contacts by using their photos or initials."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
-# People component in the Microsoft Graph Toolkit
+# People component in Microsoft Graph Toolkit
 
 You can use the `mgt-people` web component to display a group of people or contacts by using their photos or initials. By default, it will display the most frequent contacts for the signed in user.
 
@@ -53,7 +53,7 @@ The `mgt-people` component defines the following CSS custom properties.
 mgt-people {
   --list-margin: 8px 4px 8px 8px; /* Margin for component */
   --avatar-margin: 0 4px 0 0; /* Margin for each person */
-  --color: #000000 /* Text color *?
+  --color: #000000 /* Text color */
 }
 ```
 

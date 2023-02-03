@@ -20,6 +20,7 @@ $params = @{
 	}
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
 
 ```

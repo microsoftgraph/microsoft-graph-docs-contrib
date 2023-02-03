@@ -37,6 +37,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callEndedEventMessageDetail",
+  "callDuration": "String (duration)",
+  "callEventType": "String",
   "callId": "String",
   "callParticipants": [
     {
@@ -45,9 +47,7 @@ The following is a JSON representation of the resource.
   ],
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
-  },
-  "callDuration": "String (duration)",
-  "callEventType": "String"
+  }
 }
 ```
 

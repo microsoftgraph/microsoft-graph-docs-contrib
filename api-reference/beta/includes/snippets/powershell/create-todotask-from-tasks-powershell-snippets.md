@@ -8,6 +8,9 @@ Import-Module Microsoft.Graph.Users
 
 $params = @{
 	Title = "A new task"
+	Categories = @(
+		"Important"
+	)
 	LinkedResources = @(
 		@{
 			WebUrl = "http://microsoft.com"
@@ -17,6 +20,7 @@ $params = @{
 	)
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
 
 ```

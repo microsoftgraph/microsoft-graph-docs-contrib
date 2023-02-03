@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "outlook.timezone="Pacific Standard Time""
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
+configuration := &graphconfig.MeOutlookTaskItemRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
-options := &msgraphsdk.OutlookTaskRequestBuilderGetOptions{
-	H: headers,
-}
-outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Get(options)
+
+result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Get(context.Background(), configuration)
 
 
 ```

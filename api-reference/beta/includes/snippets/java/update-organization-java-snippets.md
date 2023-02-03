@@ -24,7 +24,7 @@ LinkedList<String> technicalNotificationMailsList = new LinkedList<String>();
 technicalNotificationMailsList.add("tech@contoso.com");
 organization.technicalNotificationMails = technicalNotificationMailsList;
 
-graphClient.organization("{id}")
+graphClient.organization("84841066-274d-4ec0-a5c1-276be684bdd3")
 	.buildRequest()
 	.patch(organization);
 

@@ -1,7 +1,7 @@
 ---
 title: "Create hardwareConfigurationDeviceState"
 description: "Create a new hardwareConfigurationDeviceState object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -50,11 +50,11 @@ The following table shows the properties that are required when you create the h
 |:---|:---|:---|
 |id|String|Key of the hardware configuration script device state entity. This property is read-only.|
 |deviceName|String|The name of the device|
-|osVersion|String|Operating system version of the device.|
+|osVersion|String|Operating system version of the device (E.g. 10.0.19042.1165, 10.0.19042.1288 etc.)|
 |upn|String|User Principal Name (UPN).|
 |internalVersion|Int32|The Policy internal version|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the hardware configuration executed|
-|configurationState|[runState](../resources/intune-shared-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |configurationOutput|String|Output of the hardware configuration execution|
 |configurationError|String|Error from the hardware configuration execution|
 
@@ -105,7 +105,3 @@ Content-Length: 459
   "configurationError": "Configuration Error value"
 }
 ```
-
-
-
-

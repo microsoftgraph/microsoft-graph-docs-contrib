@@ -12,44 +12,57 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingService](../resources/bookingservice.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}/services/{id}
 ```
+
 ## Optional query parameters
+
 This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [bookingService](../resources/bookingservice.md) object in the response body.
+
 ## Example
+
 ### Request
+
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 
 ### Response
+
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -67,9 +80,10 @@ Content-type: application/json
     "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "displayName": "Bento",
     "defaultDuration": "PT30M",
-    "defaultPrice": 10,
+    "defaultPrice": 10.0,
     "defaultPriceType": "fixedPrice",
     "description": "Individual bento box lunch delivery",
+    "languageTag": "en-US",
     "isHiddenFromCustomers": false,
     "notes": "Home-cooked special",
     "preBuffer": "PT5M",
@@ -77,6 +91,7 @@ Content-type: application/json
     "staffMemberIds": [],
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "isAnonymousJoinEnabled": false,
     "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "customQuestions" : [
         {

@@ -1,7 +1,7 @@
 ---
 title: "principalResourceMembershipsScope resource type"
 description: "Allows for the selection of access review scope to review access of the selected principals to the selected resources."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

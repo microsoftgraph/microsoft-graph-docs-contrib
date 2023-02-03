@@ -1,6 +1,6 @@
 ---
-title: "Enabling human-centric notification experiences using Microsoft Graph notifications (deprecated)"
-description: "The Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints."
+title: "Enabling human-centric notification experiences (deprecated)"
+description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation."
 ms.localizationpriority: high
 ms.prod: "notifications"
 ms.custom: scenarios:getting-started
@@ -10,13 +10,13 @@ author: "merzink"
 # Enabling human-centric notification experiences using Microsoft Graph notifications (deprecated)
 
 > [!IMPORTANT]
-> The Microsoft Graph notifications API is deprecated and will stop returning data by the end of January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Notifications are one of the most effective ways to reengage with your application users. A great notification experience can help open a near real-time communication channel between you and your users, and that in turn can increase app engagement at the right time, make users more productive, and alert them to important events or required actions.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/cmpPFhrS8ZA]
 
-Today, users can access your applications and services via a wide variety of platforms and form factors. This mix of devices requires that you understand and support multiplatform notification systems, map users to endpoints, and maintain notification state across devices. 
+Today, users can access your applications and services via a wide variety of platforms and form factors. This mix of devices requires that you understand and support multiplatform notification systems, map users to endpoints, and maintain notification state across devices.
 
 Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. The Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints.
 

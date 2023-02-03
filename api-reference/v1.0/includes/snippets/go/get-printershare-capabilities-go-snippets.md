@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.PrinterShareRequestBuilderGetQueryParameters{
-	Select: "id,displayName,capabilities",
+requestParameters := &graphconfig.PrintShareItemRequestBuilderGetQueryParameters{
+	Select: [] string {"id","displayName","capabilities"},
 }
-options := &msgraphsdk.PrinterShareRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.PrintShareItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-printerShareId := "printerShare-id"
-result, err := graphClient.Print().SharesById(&printerShareId).Get(options)
+
+result, err := graphClient.Print().SharesById("printerShare-id").Get(context.Background(), configuration)
 
 
 ```

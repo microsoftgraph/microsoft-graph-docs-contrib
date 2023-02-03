@@ -3,7 +3,7 @@ title: printerStatus resource type
 description: Represents the processing status of the printer, including any errors.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 

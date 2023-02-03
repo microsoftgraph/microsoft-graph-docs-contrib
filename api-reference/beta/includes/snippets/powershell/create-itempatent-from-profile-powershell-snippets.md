@@ -14,6 +14,7 @@ $params = @{
 	WebUrl = "https://patents.gov/3954432633"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfilePatent -UserId $userId -BodyParameter $params
 
 ```

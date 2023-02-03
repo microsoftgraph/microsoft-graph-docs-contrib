@@ -1,12 +1,13 @@
 ---
-author: "ananmishr"
-description: "The Audio resource groups audio-related properties on an item into a single structure."
+author: ananmishr
+description: The Audio resource groups audio-related properties on an item into a single structure.
 ms.date: 09/10/2017
 title: Audio
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---
+
 # Audio facet
 
 Namespace: microsoft.graph
@@ -23,6 +24,7 @@ The **Audio** resource is only supported on OneDrive Personal.
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->
+
 ```json
 {
   "album": "string",
@@ -46,8 +48,8 @@ The **Audio** resource is only supported on OneDrive Personal.
 
 ## Properties
 
-| Property name         | Type    | Description                                                          |
-|:----------------------|:--------|:---------------------------------------------------------------------|
+| Property              | Type    | Description                                                          |
+| :-------------------- | :------ | :------------------------------------------------------------------- |
 | **album**             | string  | The title of the album for this audio file.                          |
 | **albumArtist**       | string  | The artist named on the album for the audio file.                    |
 | **artist**            | string  | The performing artist for the audio file.                            |
@@ -81,5 +83,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-
