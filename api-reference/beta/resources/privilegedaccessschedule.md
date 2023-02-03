@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessSchedule resource type"
-description: "A privilegedAccessSchedule represents the schedule of privileged access."
+description: "An abstract type that exposes properties relating to the schedule of assigned and eligible ownership and membership to groups that are governed by PIM."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
