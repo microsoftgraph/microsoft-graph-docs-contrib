@@ -1,7 +1,9 @@
 ---
 title: Automate employee offboarding tasks after their last day of work using Lifecycle Workflows APIs
 description: Learn how to automate employee offboarding tasks after their last day of work using Lifecycle Workflows APIs in Microsoft Graph. 
-author: AlexFilipin
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType

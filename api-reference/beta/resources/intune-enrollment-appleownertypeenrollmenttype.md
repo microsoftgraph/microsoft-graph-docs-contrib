@@ -21,7 +21,7 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|The owner type. Possible values are: `unknown`, `company`, `personal`.|
-|enrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|The enrollment type. Possible values are: `unknown`, `device`, `user`.|
+|enrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|The enrollment type. Possible values are: `unknown`, `device`, `user`, `accountDrivenUserEnrollment`, `webDeviceEnrollment`, `unknownFutureValue`.|
 
 ## Relationships
 None
