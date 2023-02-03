@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentSchedule: filterByCurrentUser"
-description: "Retrieve the schedules of privileged access to a group relationship assignment for which the signed-in user is the principal."
+description: "In PIM for groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
