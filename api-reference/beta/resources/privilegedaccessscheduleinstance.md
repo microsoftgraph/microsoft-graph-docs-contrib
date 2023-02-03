@@ -30,8 +30,8 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|endDateTime|DateTimeOffset|The end date of the schedule instance. Required.|
-|id|String|The id of privileged access schedule instance. Required. Inherited from [entity](../resources/entity.md).|
+|endDateTime|DateTimeOffset|When the schedule instance ends. Required.|
+|id|String|The identifier of the access assignment schedule instance. Required. Inherited from [entity](../resources/entity.md).|
 |startDateTime|DateTimeOffset|When this instance starts. Required.|
 
 ## Relationships
