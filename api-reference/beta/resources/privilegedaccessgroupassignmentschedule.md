@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentSchedule resource type"
-description: "Represents the schedule of privileged access to a group relationship assignment."
+description: "Represents the schedule of membership or ownership assignments to groups that are governed by PIM."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
