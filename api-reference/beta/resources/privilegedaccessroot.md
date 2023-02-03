@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessRoot resource type"
-description: "Privileged access root contains navigation elements related to access management providers which include group."
+description: "Represents the entry point for resources related to privileged identity management (PIM)."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
