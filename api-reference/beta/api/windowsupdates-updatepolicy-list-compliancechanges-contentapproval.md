@@ -84,7 +84,7 @@ Content-Type: application/json
       "updatePolicy": { "@odata.id": "updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713" },
       "content": {
           "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-          "catalogEntry": { "@odata.id": "catalog/entries/1" }
+          "catalogEntry": { "id": "de41eaac-10ce-47bb-890e-300c81214929" }
       },
       "deploymentSettings": {
         "contentApplicability": {
@@ -106,7 +106,7 @@ Content-Type: application/json
         }
       },
       "deployments": [
-          { "@odata.id": "deployments/1" }
+          { "id": "89c97b65-86cd-45b2-afef-1e4b187f61ce" }
       ]
     }
   ]
