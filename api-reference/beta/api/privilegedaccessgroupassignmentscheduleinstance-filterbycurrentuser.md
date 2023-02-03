@@ -35,7 +35,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentScheduleInstances/filte
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
