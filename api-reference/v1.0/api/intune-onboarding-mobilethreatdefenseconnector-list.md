@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 536
+Content-Length: 922
 
 {
   "value": [
@@ -67,12 +67,19 @@ Content-Length: 536
       "id": "e4bede14-de14-e4be-14de-bee414debee4",
       "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
       "partnerState": "available",
+      "androidMobileApplicationManagementEnabled": true,
+      "iosMobileApplicationManagementEnabled": true,
       "androidEnabled": true,
       "iosEnabled": true,
+      "windowsEnabled": true,
       "androidDeviceBlockedOnMissingPartnerData": true,
       "iosDeviceBlockedOnMissingPartnerData": true,
+      "windowsDeviceBlockedOnMissingPartnerData": true,
       "partnerUnsupportedOsVersionBlocked": true,
-      "partnerUnresponsivenessThresholdInDays": 6
+      "partnerUnresponsivenessThresholdInDays": 6,
+      "allowPartnerToCollectIOSApplicationMetadata": true,
+      "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
+      "microsoftDefenderForEndpointAttachEnabled": true
     }
   ]
 }
