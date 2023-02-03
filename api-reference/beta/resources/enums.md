@@ -2817,16 +2817,6 @@ Possible values for user account types (group membership), per Windows definitio
 |selfRenew|
 |unknownFutureValue|
 
-### weekIndex values
-
-|Member|
-|:---|
-|first|
-|second|
-|third|
-|fourth|
-|last|
-
 ### roleAssignmentScheduleRequestFilterByCurrentUserOptions values
 
 |Member|
