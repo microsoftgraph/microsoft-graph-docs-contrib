@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessScheduleRequest resource type"
-description: "Represents a request for asynchronized operations to create, update, delete, extend, renew, activate, or deactivate a privileged access eligibility or assignment."
+description: "An abstract type that exposes properties used to configure access eligibility and assignment in privileged identity management (PIM) governance operations for groups."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
