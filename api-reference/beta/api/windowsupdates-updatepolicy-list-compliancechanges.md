@@ -75,15 +75,50 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.complianceChange",
-      "id": "fcb57826-daaa-c8ac-bf9d-137b74a90a14",
-      "createdDateTime": "2020-06-09T10:00:00Z",
-      "isRevoked": true,
-      "revokedDateTime": "2020-06-09T11:00:00Z",
-      "updatePolicy": { "@odata.id": "updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713" }
-    }
-  ]
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
+            "id": "4ab02d3d-b63b-46ac-8b28-b4c415802f5c",
+            "createdDateTime": "String (timestamp)",
+            "isRevoked": false,
+            "revokedDateTime": "String (timestamp)",
+            "content": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+                "catalogEntry": {
+                    "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
+                    "id": "a706fb9c8feea46242f0b0d9e7d718406fc99bd19ce1471f7a386e8436cad7ba",
+                    "displayName": "Microsoft Corporation - System Hardware Update - 6/3/2022",
+                    "deployableUntilDateTime": null,
+                    "releaseDateTime": "String (timestamp)",
+                    "description": "String",
+                    "driverClass": "String",
+                    "provider": "String",
+                    "setupInformationFile": null,
+                    "manufacturer": "String",
+                    "version": "String",
+                    "versionDateTime": "String (timestamp)Z"
+                }
+            },
+            "deploymentSettings": {
+                "monitoring": null,
+                "userExperience": null,
+                "expedite": null,
+                "schedule": {
+                    "startDateTime": "String (timestamp)",
+                    "gradualRollout": {
+                        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                        "durationBetweenOffers": "P1D",
+                        "devicesPerOffer": 0
+                    }
+                },
+                "contentApplicability": {
+                    "offerWhileRecommendedBy": [
+                        "microsoft"
+                    ],
+                    "safeguard": null
+                }
+            }
+        }
+    ]
 }
 ```
