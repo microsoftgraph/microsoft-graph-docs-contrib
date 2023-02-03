@@ -100,7 +100,9 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Example 2: Retrieve schedule instances for the calling principal and filter by the group and accessId
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
