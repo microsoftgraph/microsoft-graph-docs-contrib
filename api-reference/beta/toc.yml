@@ -13530,6 +13530,8 @@ items:
               href: api/identitygovernance-workflow-update.md
             - name: Delete
               href: api/identitygovernance-workflow-delete.md
+            - name: List users in scope
+              href: api/workflow-list-executionscope.md
             - name: List deleted workflows
               href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
             - name: Get a deleted workflow
