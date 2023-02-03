@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationEventType** enumeration type.",
+          "Target": "authenticationEventType"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appliedAuthenticationEventListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [appliedAuthenticationEventListener](https://learn.microsoft.com/en-us/graph/api/resources/appliedAuthenticationEventListener?view=graph-rest-beta) resource type.",
+          "Target": "appliedAuthenticationEventListener"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationEventHandlerResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationEventHandlerResult](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventHandlerResult?view=graph-rest-beta) resource type.",
+          "Target": "authenticationEventHandlerResult"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionCalloutResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionCalloutResult](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCalloutResult?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionCalloutResult"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Property",
+          "ChangedApiName": "appliedEventListeners",
+          "ChangeType": "Addition",
+          "Description": "Added the **appliedEventListeners** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-30T22:13:27.8065468Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationAppAdminConfiguration",
