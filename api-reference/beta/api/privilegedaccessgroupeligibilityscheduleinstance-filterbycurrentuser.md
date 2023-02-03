@@ -55,7 +55,6 @@ Do not supply a request body for this method.
 If successful, this function returns a `200 OK` response code and a [privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md) collection in the response body.
 
 ## Examples
-Note: This method requires either the principalId or groupId filter property.
 
 ### Example 1
 
