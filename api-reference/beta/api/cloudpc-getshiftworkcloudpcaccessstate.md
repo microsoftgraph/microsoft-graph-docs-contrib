@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [shiftWorkCloudPcAccessState](../resources/shiftWorkCloudPcAccessState.md) for the shift work cloudPc.
+Get the [shiftWorkCloudPcAccessState](../resources/cloudpc.md#shiftworkcloudpcaccessstate-values) for the shift work cloudPc.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [shiftWorkCloudPcAccessState](../resources/shiftWorkCloudPcAccessState.md) object in the response body.
+If successful, this function returns a `200 OK` response code and a [shiftWorkCloudPcAccessState](../resources/cloudpc.md#shiftworkcloudpcaccessstate-values) object in the response body.
 
 ## Examples
 
