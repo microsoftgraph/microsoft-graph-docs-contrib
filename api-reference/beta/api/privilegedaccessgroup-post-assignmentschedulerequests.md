@@ -1,5 +1,5 @@
 ---
-title: "Create privilegedAccessGroupAssignmentScheduleRequest"
+title: "Create assignmentScheduleRequest"
 description: "Create a new privilegedAccessGroupAssignmentScheduleRequest object."
 author: "mandardalvi"
 ms.localizationpriority: medium
