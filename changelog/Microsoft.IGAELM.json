@@ -1,5 +1,95 @@
 ﻿{
   "changelog": [
+      {
+        "ChangeList": [
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAnswer",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAnswer](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAnswer?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAnswer"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAnswerChoice",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAnswerChoice](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAnswerChoice?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAnswerChoice"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAnswerString",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAnswerString](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAnswerString?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAnswerString"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "questions",
+          "ChangeType": "Addition",
+          "Description": "Added the [questions](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-1.0) resource",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageLocalizedText",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageLocalizedText](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageLocalizedText?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageLocalizedText"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "questions",
+          "ChangeType": "Addition",
+          "Description": "Added the **questions** relationship to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "answers",
+          "ChangeType": "Addition",
+          "Description": "Added the `answers` property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageMultipleChoiceQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageMultipleChoiceQuestion](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageMultipleChoiceQuestion?view=graph-rest-1.0) resource",
+          "Target": "accessPackageMultipleChoiceQuestion"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageQuestion](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-1.0) resource",
+          "Target": "accessPackageQuestion"
+        },
+        {
+          "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageTextInputQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageTextInputQuestion](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageTextInputQuestion?view=graph-rest-1.0) resource",
+          "Target": "accessPackageTextInputQuestion"
+        }
+      ],
+      "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-03T17:53:43.5042993Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    },
     {
       "ChangeList": [
         {
