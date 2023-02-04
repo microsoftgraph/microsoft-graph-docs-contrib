@@ -1,7 +1,7 @@
 ---
 title: "Create iosLobApp"
 description: "Create a new iosLobApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [iosLobApp](../resources/intune-apps-ioslobapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -77,7 +77,6 @@ The following table shows the properties that are required when you create the i
 |expirationDateTime|DateTimeOffset|The expiration time.|
 |versionNumber|String|The version number of iOS Line of Business (LoB) app.|
 |buildNumber|String|The build number of iOS Line of Business (LoB) app.|
-|identityVersion|String|The identity version. This property is being deprecated in 2211(November 2022)|
 
 
 
@@ -91,7 +90,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1508
+Content-length: 1480
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -136,12 +135,12 @@ Content-length: 1508
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v16_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
-  "buildNumber": "Build Number value",
-  "identityVersion": "Identity Version value"
+  "buildNumber": "Build Number value"
 }
 ```
 
@@ -150,7 +149,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1680
+Content-Length: 1652
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -198,16 +197,11 @@ Content-Length: 1680
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v16_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
-  "buildNumber": "Build Number value",
-  "identityVersion": "Identity Version value"
+  "buildNumber": "Build Number value"
 }
 ```
-
-
-
-
-

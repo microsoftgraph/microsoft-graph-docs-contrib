@@ -8,12 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-requestFilter  := " principalIds/any"
+requestFilter := " principalIds/any"
 
-requestParameters := &graphconfig.RoleAssignmentsRequestBuilderGetQueryParameters{
-	Filter : &requestFilter ,
+requestParameters := &graphconfig.RoleManagementDeviceManagementRoleAssignmentsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-configuration := &graphconfig.RoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RoleManagementDeviceManagementRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

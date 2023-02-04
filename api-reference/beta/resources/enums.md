@@ -11,6 +11,83 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### recommendationCategory values 
+
+|Member|
+|:---|
+|identityBestPractice|
+|identitySecureScore|
+|unknownFutureValue|
+
+### recommendationFeatureAreas values 
+
+|Member|
+|:---|
+|users|
+|groups|
+|devices|
+|applications|
+|accessReviews|
+|conditionalAccess|
+|governance|
+|unknownFutureValue|
+
+### recommendationPriority values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+
+### recommendationStatus values 
+
+|Member|
+|:---|
+|active|
+|completedBySystem|
+|completedByUser|
+|dismissed|
+|postponed|
+|unknownFutureValue|
+
+### recommendationType values 
+
+|Member|
+|:---|
+|adfsAppsMigration|
+|enableDesktopSSO|
+|enablePHS|
+|enableProvisioning|
+|switchFromPerUserMFA|
+|tenantMFA|
+|thirdPartyApps|
+|turnOffPerUserMFA|
+|useAuthenticatorApp|
+|useMyApps|
+|staleApps|
+|staleAppCreds|
+|applicationCredentialExpiry|
+|servicePrincipalKeyExpiry|
+|adminMFAV2|
+|blockLegacyAuthentication|
+|integratedApps|
+|mfaRegistrationV2|
+|pwagePolicyNew|
+|passwordHashSync|
+|oneAdmin|
+|roleOverlap|
+|selfServicePasswordReset|
+|signinRiskPolicy|
+|userRiskPolicy|
+|verifyAppPublisher|
+|privateLinkForAAD|
+|appRoleAssignmentsGroups|
+|appRoleAssignmentsUsers|
+|managedIdentity|
+|overprivilegedApps|
+|unknownFutureValue|
+
 ### layoutTemplateType values
 
 | Member             |
@@ -3462,12 +3539,47 @@ Possible values for user account types (group membership), per Windows definitio
 |actionUndefined|
 |unknownFutureValue|
 
+### plannerRelationshipUserRoles values
+
+|Member|
+|:---|
+|defaultRules|
+|groupOwners|
+|groupMembers|
+|taskAssignees|
+|applications|
+|unknownFutureValue|
+
+### plannerRuleKind values
+
+|Member|
+|:---|
+|taskRule|
+|bucketRule|
+|planRule|
+|unknownFutureValue|
+
+### plannerUserRoleKind values
+
+|Member|
+|:---|
+|relationship|
+|unknownFutureValue|
+
+### plannerTaskTargetKind values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
 ### onPremisesDirectorySynchronizationDeletionPreventionType values
 
 |Member|
 |:-----|
 |disabled|
 |enabledForCount|
+|enabledForPercentage|
 |enabledForPercentage|
 |unknownFutureValue|
 
@@ -3485,3 +3597,11 @@ Possible values for user account types (group membership), per Windows definitio
 |premigration|
 |migrationInProgress|
 |migrationComplete|
+
+### authenticationEventType values
+
+|Member|
+|:---|
+|tokenIssuanceStart|
+|pageRenderStart|
+|unknownFutureValue|

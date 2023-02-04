@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.Read|
 |Delegated (personal Microsoft account)|Tasks.Read|
-|Application|Not supported|
+|Application|Tasks.ReadWrite.All  |
 
 ## HTTP request
 
