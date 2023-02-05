@@ -23,7 +23,7 @@ by providing a [delta](../api/contactfolder-delta.md) function.
 |:---------------|:--------|:----------|
 |[Get contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Get a contact folder by using the contact folder ID.|
 |[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Update **contactFolder** object. |
-|[Delete](../api/contactfolder-delete.md) | None |Delete **contactFolder** object. |
+|[Delete](../api/contactfolder-delete.md) | None |Delete a **contactFolder** object. |
 |[List childFolders](../api/contactfolder-list-childfolders.md) |[contactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
 |[Create child contactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Create a new **contactFolder** as a child of a specified folder.|
 |[delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.|
