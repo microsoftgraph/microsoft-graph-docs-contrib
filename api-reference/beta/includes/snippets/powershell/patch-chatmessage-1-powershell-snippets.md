@@ -32,6 +32,8 @@ $params = @{
 	)
 	Reactions = @(
 	)
+	MessageHistory = @(
+	)
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params

@@ -1,0 +1,94 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "plannerRelationshipUserRoles",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerRelationshipUserRoles** enumeration type.",
+          "Target": "plannerRelationshipUserRoles"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "plannerRuleKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerRuleKind** enumeration type.",
+          "Target": "plannerRuleKind"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "plannerUserRoleKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerUserRoleKind** enumeration type.",
+          "Target": "plannerUserRoleKind"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenario",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenario](https://learn.microsoft.com/en-us/graph/api/resources/businessscenario?view=graph-rest-beta) resource and supported methods.",
+          "Target": "businessScenario"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenarioGroupTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenarioGroupTarget](https://learn.microsoft.com/en-us/graph/api/resources/businessscenariogrouptarget?view=graph-rest-beta) resource type.",
+          "Target": "businessScenarioGroupTarget"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenarioPlanner",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenarioPlanner](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioplanner?view=graph-rest-beta) resource and supported methods.",
+          "Target": "businessScenarioPlanner"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenarioPlanReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenarioPlanReference](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioplanreference?view=graph-rest-beta) resource type.",
+          "Target": "businessScenarioPlanReference"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenarioProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenarioProperties](https://learn.microsoft.com/en-us/graph/api/resources/businessscenarioproperties?view=graph-rest-beta) resource type.",
+          "Target": "businessScenarioProperties"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenarioTask",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenarioTask](https://learn.microsoft.com/en-us/graph/api/resources/businessscenariotask?view=graph-rest-beta) resource and supported methods.",
+          "Target": "businessScenarioTask"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenarioTaskTargetBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenarioTaskTargetBase](https://learn.microsoft.com/en-us/graph/api/resources/businessscenariotasktargetbase?view=graph-rest-beta) resource type.",
+          "Target": "businessScenarioTaskTargetBase"
+        }
+      ],
+      "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-10T23:04:43.2913535Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": "Business scenarios"
+    }
+  ]
+}

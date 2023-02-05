@@ -62,39 +62,33 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 The following Microsoft Graph features are generally available on the `/v1.0` endpoint across all national cloud deployments, except where noted.
 
-| Microsoft Graph features          | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
-|-----------------------------------|-----------------------------------|--------------------------------------------|
-| Access reviews                    | ✔                                | ✔                                          |
-| Applications                      | ✔                                | ➖                                          |
-| Change notifications (webhooks)   | ✔                                | ✔                                          |
-| Delta query                       | ✔                                | ✔                                          |
-| Directory extensions              | ✔                                | ✔                                          |
-| Excel                             | ✔                                | ➖                                          |
-| Groups                            | ✔                                | ✔                                          |
-| OneDrive                          | ✔                                | ✔\*                                        |
-| Open type extensions              | ✔                                | ➖                                          |
-| Organizational contacts           | ✔                                | ➖                                          |
-| Outlook Calendar                  | ✔                                | ✔                                          |
-| Outlook Mail                      | ✔                                | ✔                                          |
-| Personal Contacts                 | ✔                                | ✔                                          |
-| Privileged identity management    | ✔                                | ✔                                          |
-| Planner                           | ✔                                | ✔                                          |
-| Reports                           | ➖                                | ➖                                          |
-| Search (Microsoft Search)         | ✔                                | ➖                                          |
-| Security                          | ✔                                | ✔                                          |
-| Service health and communications | ✔                                | ✔                                          |
-| Service principals                | ✔                                | ➖                                         |
-| SharePoint                        | ✔                                | ✔                                          |
-| Teams                             | ✔                                | ✔                                          |
-| Users                             | ✔                                | ✔                                          |
+| Microsoft Graph features            | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
+|-------------------------------------|-----------------------------------|--------------------------------------------|
+| Access reviews                      | ✔                                | ✔                                          |
+| Applications and service principals | ✔                                | ✔                                          |
+| Change notifications (webhooks)     | ✔                                | ✔                                          |
+| Delta query                         | ✔                                | ✔                                          |
+| Directory extensions                | ✔                                | ✔                                          |
+| Excel                               | ✔                                | ➖                                         |
+| Groups                              | ✔                                | ✔                                          |
+| OneDrive                            | ✔                                | ✔\*                                        |
+| Open type extensions                | ✔                                | ✔                                          |
+| Organizational contacts             | ✔                                | ✔                                          |
+| Outlook Calendar                    | ✔                                | ✔                                          |
+| Outlook Mail                        | ✔                                | ✔                                          |
+| Personal Contacts                   | ✔                                | ✔                                          |
+| Privileged identity management      | ✔                                | ✔                                          |
+| Planner                             | ✔                                | ✔                                          |
+| Reports (Azure AD activity reports) | ✔                                | ✔                                          |
+| Reports (Microsoft 365 reports)     | ➖                               | ➖                                         |
+| Search (Microsoft Search)           | ✔                                | ✔                                          |
+| Security                            | ✔                                | ✔                                          |
+| Service health and communications   | ✔                                | ✔                                          |
+| SharePoint                          | ✔                                | ✔                                          |
+| Teams                               | ✔                                | ✔                                          |
+| Users                               | ✔                                | ✔                                          |
 
 For more information about the availability of Microsoft 365 usage reports in national clouds, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report).
-
-The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China. `v1.0` endpoints for these features are available in Microsoft Cloud for US Government only:
-
-- Organizational contacts
-- Applications
-- Service principals
 
 (\*) Limited support for Exchange and OneDrive services only. Azure AD services aren't supported.
 

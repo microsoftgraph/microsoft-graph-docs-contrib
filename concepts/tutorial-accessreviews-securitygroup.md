@@ -2,8 +2,11 @@
 title: "Review access to your security groups using the access reviews API in Microsoft Graph"
 description: "Learn how to use the access reviews API to review access to a security group in your Azure AD tenant and test API calls before you automate them into scripts or apps."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Review access to your security groups using the access reviews API in Microsoft Graph

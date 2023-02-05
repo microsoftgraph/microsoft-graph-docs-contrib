@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AlexFilipin"
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 11/29/2022
 ---
 
 # Overview of Lifecycle Workflows APIs
@@ -52,7 +53,12 @@ Each workflow contains general descriptive information such as it's identifier, 
 
 Workflow tasks are specific actions that run automatically when a workflow is triggered. Lifecycle Workflows defines the following preconfigured and read-only tasks that are allowed for the specified workflow categories. These task definitions show the settings for the task type, guiding you as you create tasks for your workflow.
 
+<!-- Comment out CRR until we can resolve the links problem
+
 [!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
+-->
+
+[!INCLUDE [lifecycle-workflows-tasks-table](../includes/identitygovernance-lifecycleworkflows-tasks-table.md)]
 
 Use the [taskDefinition resource type](identitygovernance-taskdefinition.md) and its associated methods to discover all the predefined tasks that you can configure for your workflow and the settings for the properties The [task](identitygovernance-task.md) resource type and its associated GET methods allow you to view the tasks that are configured for your workflow.
 
@@ -118,7 +124,7 @@ Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagem
 
 ## License checks
 
-The Lifecycle Workflows feature, including the API, is included in the Azure AD Premium P2 license. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/what-are-lifecycle-workflows.md#license-requirements).
+The Lifecycle Workflows feature, including the API, is included in the Azure AD Premium P2 license. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
 
 ## Role and application permission authorization checks
 

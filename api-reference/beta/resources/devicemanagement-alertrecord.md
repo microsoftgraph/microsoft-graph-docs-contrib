@@ -13,7 +13,13 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This entity represents the record of an alert event triggered by a rule. When the threshold of an alert rule is reached, a record of the alert event will be generated and stored, and administrators will receive notifications via defined notification channels.
+Represents the record of an alert event in the Microsoft Endpoint Manager admin center triggered by an [alertRule](devicemanagement-alertrule.md). 
+
+When the threshold of an **alertRule** is reached, an **alertRecord** is generated and stored, and administrators receive notifications via defined notification channels.
+
+For more information, see the [monitoring](devicemanagement-monitoring.md) resource.
+
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
 
 ## Methods
 
@@ -21,14 +27,14 @@ This entity represents the record of an alert event triggered by a rule. When th
 |:---|:---|:---|
 |[List alertRecords](../api/devicemanagement-alertrecord-list.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md) collection|Get a list of the [alertRecord](../resources/devicemanagement-alertrecord.md) objects and their properties.|
 |[Get alertRecord](../api/devicemanagement-alertrecord-get.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md)|Read the properties and relationships of an [alertRecord](../resources/devicemanagement-alertrecord.md) object.|
-|[getPortalNotifications](../api/devicemanagement-alertrecord-getportalnotifications.md)|[microsoft.graph.deviceManagement.portalNotification](../resources/devicemanagement-portalnotification.md) collection|Get a list of all portal notifications that one or more users can access.|
-|[setPortalNotificationAsSent](../api/devicemanagement-alertrecord-setportalnotificationassent.md)|None|Set a single portal notification status to published.|
+|[getPortalNotifications](../api/devicemanagement-alertrecord-getportalnotifications.md)|[microsoft.graph.deviceManagement.portalNotification](../resources/devicemanagement-portalnotification.md) collection|Get a list of all portal notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.|
+|[setPortalNotificationAsSent](../api/devicemanagement-alertrecord-setportalnotificationassent.md)|None|Set the status of the specified notification on the Microsoft EndPoint Manager admin center as sent.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertImpact|[microsoft.graph.deviceManagement.alertImpact](../resources/devicemanagement-alertimpact.md)|The impact of the alert event. Consists of a number followed by the aggregation type. For example, `6 Count` and `12 AffectedCloudPcPercentage`.|
+|alertImpact|[microsoft.graph.deviceManagement.alertImpact](../resources/devicemanagement-alertimpact.md)|The impact of the alert event. Consists of a number followed by the aggregation type. For example, `6 affectedCloudPcCount` means that 6 Cloud PCs are affected. `12 affectedCloudPcPercentage` means 12% of Cloud PCs are affected.|
 |alertRuleId|String|The corresponding ID of the alert rule.|
 |alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](../resources/devicemanagement-alertrule.md#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
 |detectedDateTime|DateTimeOffset|The date and time when the alert event was detected. The Timestamp type represents date and time information using ISO 8601 format. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|

@@ -1,10 +1,13 @@
 ---
 title: "Configure the arguments for built-in Lifecycle Workflow tasks"
 description: "Configure the arguments for built-in Lifecycle Workflow tasks. Learn the allowed configurations for the arguments property of various built-in tasks in Lifecycle Workflows."
-author: "AlexFilipin"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: alexander.filipin
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 11/23/2022
 ---
 
 # Configure the arguments for built-in Lifecycle Workflow tasks
@@ -20,7 +23,7 @@ This article provides guidance on the allowed configuration for the **arguments*
 | Task description | taskDefinitionId | arguments |
 |--|--|--|
 | Send welcome email to new hire | 70b29d51-b59a-4773-9280-8841dfd3f2ea | None |
-| Generate Temporary Access Pass and send via email to user's manager | 1b555e50-7f65-41d5-b514-5894a026d10d | name: `tapLifetimeMinutes`<br/>value: `10` upto `43000`<br/><br/>name: `tapIsUsableOnce`<br/>name: `true` or `false`<br/><br/>Prerequisites: <br/><ol><li>The user must be assigned a manager.<li>The user's manager must have their mail enabled.<li>The temporary access pass (TAP) policy must be enabled in the tenant and the user enabled to use the TAP authentication method. For more information, see [temporaryAccessPassAuthenticationMethodConfiguration resource type](/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration). </ol> |
+| Generate Temporary Access Pass and send via email to user's manager | 1b555e50-7f65-41d5-b514-5894a026d10d | name: `tapLifetimeMinutes`<br/>value: `10` upto `43000`<br/><br/>name: `tapIsUsableOnce`<br/>value: `true` or `false`<br/><br/>Prerequisites: <br/><ol><li>The user must be assigned a manager.<li>The user's manager must have their mail enabled.<li>The temporary access pass (TAP) policy must be enabled in the tenant and the user enabled to use the TAP authentication method. For more information, see [temporaryAccessPassAuthenticationMethodConfiguration resource type](/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration). </ol> |
 | Add user to groups | 22085229-5809-45e8-97fd-270d28d66910 | name: `groupID`<br/>value: a valid group ID or a comma-separated list of groups to which the user will be added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"` |
 | Add user to teams | e440ed8d-25a1-4618-84ce-091ed5be5594 | name: `teamID`<br/>value: a valid group ID or a comma-separated list of teams to which the user will be added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"` |
 | Enable user account | 6fc52c9d-398b-4305-9763-15f42c1676fc | None |

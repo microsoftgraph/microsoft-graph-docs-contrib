@@ -21,6 +21,7 @@ Represents requirements that a caller must fulfill in order to successfully crea
 |policyDescription|String|The description of the policy that the user is trying to request access using.|
 |policyDisplayName|String|The display name of the policy that the user is trying to request access using.|
 |policyId|String|The identifier of the policy that these requirements are associated with. This identifier can be used when creating a new assignment request.|
+| questions | [accessPackageQuestion](../resources/accesspackagequestion.md) collection | Questions that are configured on the policy. The questions can be required or optional; callers can determine whether a question is required or optional based on the **isRequired** property on **accessPackageQuestion**. |
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|Schedule restrictions enforced, if any.|
 
 ## Relationships
@@ -35,15 +36,20 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestRequirements",
-  "policyId": "String",
-  "policyDisplayName": "String",
-  "policyDescription": "String",
+  "allowCustomAssignmentSchedule": "Boolean",
   "isApprovalRequiredForAdd": "Boolean",
   "isApprovalRequiredForUpdate": "Boolean",
-  "allowCustomAssignmentSchedule": "Boolean",
+  "policyDisplayName": "String",
+  "policyDescription": "String",
+  "policyId": "String",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
+  },
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageQuestion"
+    }
+  ]
 }
 ```
 
