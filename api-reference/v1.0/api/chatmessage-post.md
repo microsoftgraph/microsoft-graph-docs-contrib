@@ -1096,6 +1096,8 @@ The following is an example of the request.
 > **Note:** When specifying a Teams app to attribute a card to, the Azure AD app ID used to make the call must match the Azure AD app ID of the Teams app. The Azure AD app ID of the Teams app can be specified in the *webApplicationInfo* section of the app's manifest. Refer to the following documentation on the current [Teams app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 >
 > Furthermore, the app specified in the payload must be installed either for the user sending the message or in the chat or channel in which the message is being sent.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_9"
@@ -1124,6 +1126,33 @@ Content-type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-9-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-9-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-9-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-9-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-9-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-9-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
