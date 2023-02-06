@@ -1,14 +1,16 @@
 ---
-title: "Teamwork and communications API implementation differences in national clouds"
+title: "Microsoft Teams API implementation differences in national clouds"
 description: "Learn about implementation differences in the national clouds for the Teamwork and communications APIs."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ---
 
-# Teamwork and communications API implementation differences in national clouds
+# Microsoft Teams API implementation differences in national clouds
 
-This article describes teamwork and communications API implementation differences between the Microsoft Graph global endpoint and the national clouds.
+This article describes Microsoft Teams API implementation differences between the Microsoft Graph global endpoint and the Microsoft Graph for US Government L4 cloud, including the Microsoft 365 GCC and Microsoft 365 GCC High environments.
+
+>**Note:** Microsoft Teams APIs are not available in the Microsoft Cloud China operated by 21Vianet national cloud.
 
 For general information about national cloud availability for Microsoft Graph APIs, see [National cloud deployments](/graph/deployments).
 
