@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowUserRequestsForAppAccess|Boolean|Indicates whether Teams users are allowed to request admins for access to certain Teams Apps.|
+|allowUserRequestsForAppAccess|Boolean|Indicates whether Teams users are allowed to request admins for access to certain Teams apps.|
 |isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
 
 ## Relationships
