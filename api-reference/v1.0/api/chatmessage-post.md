@@ -1400,13 +1400,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A7fb82b685f9c457296a0ab6a1d98b4c1%40thread.v2')/messages/$entity",
-    "id": "1675459368894",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphsumanach/$metadata#chats('19%3A7fb82b685f9c457296a0ab6a1d98b4c1%40thread.v2')/messages/$entity",
+    "id": "1675459162626",
     "replyToId": null,
-    "etag": "1675459368894",
+    "etag": "1675459162626",
     "messageType": "message",
-    "createdDateTime": "2023-02-03T21:22:48.894Z",
-    "lastModifiedDateTime": "2023-02-03T21:22:48.894Z",
+    "createdDateTime": "2023-02-03T21:19:22.626Z",
+    "lastModifiedDateTime": "2023-02-03T21:19:22.626Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
@@ -1430,7 +1430,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<emoji alt=\"😶‍🌫️\"></emoji>"
+        "content": "<emoji id=\"faceinclouds\" alt=\"😶‍🌫️\" title=\"Face in clouds\"></emoji>"
     },
     "attachments": [],
     "mentions": [],
