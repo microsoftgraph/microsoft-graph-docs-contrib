@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 | Property      | Type              | Description
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | Unique identifier of the drive instance that contains the driveItem. Only returned if item is located in a [drive][]. Read-only.
-| driveType     | String            | Identifies the type of drive. Only returned if item is location in a [drive][].  See [drive][] resource for values.
+| driveType     | String            | Identifies the type of drive. Only returned if item is located in a [drive][].  See [drive][] resource for values.
 | id            | String            | Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
 | name          | String            | The name of the item being referenced. Read-only.
 | path          | String            | Path that can be used to navigate to the item. Read-only.
