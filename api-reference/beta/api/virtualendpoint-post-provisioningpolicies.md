@@ -89,7 +89,6 @@ Content-Type: application/json
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
     },
     "enableSingleSignOn": true,
-    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Windows-10 19h1-evd",
     "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
     "imageType":"gallery",
