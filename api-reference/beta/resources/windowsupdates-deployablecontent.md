@@ -1,7 +1,7 @@
 ---
 title: "deployableContent resource type"
 description: "Represents content that is deployable by the service."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
@@ -17,7 +17,7 @@ Represents content that is deployable by the service.
 
 This is an abstract type. 
 
-Base type for [softwareUpdateReference](../resources/windowsupdates-softwareupdatereference.md).
+Base type for [catalogContent](../resources/windowsupdates-catalogcontent.md).
 
 ## Properties
 None.

@@ -79,7 +79,8 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Personal Contacts                   | ✔                                | ✔                                          |
 | Privileged identity management      | ✔                                | ✔                                          |
 | Planner                             | ✔                                | ✔                                          |
-| Reports                             | ➖                               | ➖                                         |
+| Reports (Azure AD activity reports) | ✔                                | ✔                                          |
+| Reports (Microsoft 365 reports)     | ➖                               | ➖                                         |
 | Search (Microsoft Search)           | ✔                                | ✔                                          |
 | Security                            | ✔                                | ✔                                          |
 | Service health and communications   | ✔                                | ✔                                          |

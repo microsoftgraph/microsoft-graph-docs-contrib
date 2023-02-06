@@ -3,6 +3,128 @@
     {
       "ChangeList": [
         {
+          "Id": "4a5f06b8-6d5d-41aa-80b4-54324f8c685a",
+          "ApiChange": "Property",
+          "ChangedApiName": "roleScopeTagIds",
+          "ChangeType": "Addition",
+          "Description": "Added the `roleScopeTagIds` property to the [notificationMessageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/intune-notificationMessageTemplate?view=graph-rest-1.0) resource.",
+          "Target": "notificationMessageTemplate"
+        },
+        {
+          "Id": "14428d7b-230f-4f1f-bf42-fa44b1881f7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsUniversalAppXAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsUniversalAppXAppAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUniversalAppXAppAssignmentSettings?view=graph-rest-1.0) resource type.",
+          "Target": "windowsUniversalAppXAppAssignmentSettings"
+        },
+        {
+          "Id": "14428d7b-230f-4f1f-bf42-fa44b1881f7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosiPadOSWebClip",
+          "ChangeType": "Addition",
+          "Description": "Added the [iosiPadOSWebClip](https://learn.microsoft.com/en-us/graph/api/resources/intune-iosiPadOSWebClip?view=graph-rest-1.0) resource",
+          "Target": "iosiPadOSWebClip"
+        },
+        {
+          "Id": "14428d7b-230f-4f1f-bf42-fa44b1881f7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsWebApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsWebApp](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsWebApp?view=graph-rest-1.0) resource",
+          "Target": "windowsWebApp"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAndAppManagementData",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceAndAppManagementData](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceAndAppManagementData?view=graph-rest-1.0) resource type.",
+          "Target": "deviceAndAppManagementData"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementPartnerAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementPartnerAssignment](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceManagementPartnerAssignment?view=graph-rest-1.0) resource type.",
+          "Target": "deviceManagementPartnerAssignment"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupsRequiringPartnerEnrollment",
+          "ChangeType": "Addition",
+          "Description": "Added the `groupsRequiringPartnerEnrollment` property to the [deviceManagementPartner](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceManagementPartner?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementPartner"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPartnerToCollectIOSApplicationMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowPartnerToCollectIOSApplicationMetadata` property to the [mobileThreatDefenseConnector](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileThreatDefenseConnector?view=graph-rest-1.0) resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPartnerToCollectIOSPersonalApplicationMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowPartnerToCollectIOSPersonalApplicationMetadata` property to the [mobileThreatDefenseConnector](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileThreatDefenseConnector?view=graph-rest-1.0) resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "androidMobileApplicationManagementEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagementEnabled` property to the [mobileThreatDefenseConnector](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileThreatDefenseConnector?view=graph-rest-1.0) resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "iosMobileApplicationManagementEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `iosMobileApplicationManagementEnabled` property to the [mobileThreatDefenseConnector](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileThreatDefenseConnector?view=graph-rest-1.0) resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "microsoftDefenderForEndpointAttachEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForEndpointAttachEnabled` property to the [mobileThreatDefenseConnector](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileThreatDefenseConnector?view=graph-rest-1.0) resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "windowsDeviceBlockedOnMissingPartnerData",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsDeviceBlockedOnMissingPartnerData` property to the [mobileThreatDefenseConnector](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileThreatDefenseConnector?view=graph-rest-1.0) resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "windowsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsEnabled` property to the [mobileThreatDefenseConnector](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileThreatDefenseConnector?view=graph-rest-1.0) resource.",
+          "Target": "mobileThreatDefenseConnector"
+        }
+      ],
+      "Id": "3efc0e2f-4f89-46dd-900d-a571dd7033e8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-26T03:28:35.6530846Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d980ad13-4f39-4938-9fc0-d8a428aa6000",
           "ApiChange": "Method",
           "ChangedApiName": "addApps",

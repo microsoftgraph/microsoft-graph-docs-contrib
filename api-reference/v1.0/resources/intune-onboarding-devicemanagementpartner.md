@@ -37,6 +37,7 @@ Entity which represents a connection to device management partner.
 |isConfigured|Boolean|Whether device management partner is configured or not|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be removed|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be marked as NonCompliant|
+|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md) collection|User groups that specifies whether enrollment is through partner.|
 
 ## Relationships
 None
@@ -60,6 +61,15 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "isConfigured": true,
   "whenPartnerDevicesWillBeRemovedDateTime": "String (timestamp)",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "String"
+      }
+    }
+  ]
 }
 ```
