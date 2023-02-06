@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 909
 
 {
   "value": {
@@ -74,7 +74,16 @@ Content-Length: 590
     "displayName": "Display Name value",
     "isConfigured": true,
     "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-    "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+    "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+    "groupsRequiringPartnerEnrollment": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+        "target": {
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+          "collectionId": "Collection Id value"
+        }
+      }
+    ]
   }
 }
 ```
