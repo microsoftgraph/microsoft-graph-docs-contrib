@@ -1517,6 +1517,14 @@
           "ChangeType": "Change",
           "Description": "Changed the region value format from GUID to 3-letter region code.",
           "Target": "searchResponse"
+        },
+        {
+          "Id": "304326e5-a2ef-478d-9a27-cd7b950dfbaa",
+          "ApiChange": "Member",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
+          "Target": "entityType"
         }
       ],
       "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
