@@ -1516,7 +1516,7 @@
           "ChangedApiName": "region",
           "ChangeType": "Change",
           "Description": "Changed the region value format from GUID to 3-letter region code.",
-          "Target": "searchResponse"
+          "Target": "searchRequest"
         },
         {
           "Id": "304326e5-a2ef-478d-9a27-cd7b950dfbaa",
