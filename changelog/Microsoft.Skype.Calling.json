@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowParticipantsToChangeName",
           "ChangeType": "Addition",
-          "Description": "Added the `allowParticipantsToChangeName` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowParticipantsToChangeName** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
