@@ -12510,40 +12510,92 @@
       "SubArea": ""
     },
     {
-    "ChangeList": [
-      {
-        "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
-        "ApiChange": "Property",
-        "ChangedApiName": "deviceId",
-        "ChangeType": "Addition",
-        "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
-        "Target": "device"
-      }
-    ],
-    "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
-    "Cloud": "Prod",
-    "Version": "v1.0",
-    "CreatedDateTime": "2023-01-13T00:00:00.077762Z",
-    "WorkloadArea": "Identity and access",
-    "SubArea": "Directory management"
-  },
-  {
-    "ChangeList": [
-      {
-        "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
-        "ApiChange": "Property",
-        "ChangedApiName": "defaultUsageLocation",
-        "ChangeType": "Addition",
-        "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
-        "Target": "organization"
-      }
-    ],
-    "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
-    "Cloud": "Prod",
-    "Version": "v1.0",
-    "CreatedDateTime": "2023-01-13T05:29:04.5101503Z",
-    "WorkloadArea": "Identity and access",
-    "SubArea": "Directory management"
-  }
+      "ChangeList": [
+        {
+          "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
+          "Target": "device"
+        }
+      ],
+      "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultUsageLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T05:29:04.5101503Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the **partnerTenantType** enumeration type.",
+          "Target": "partnerTenantType"
+        },
+        {
+          "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+          "ApiChange": "Property",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the `partnerTenantType` property to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-12T17:56:44.23698Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the **partnerTenantType** enumeration type.",
+          "Target": "partnerTenantType"
+        },
+        {
+          "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+          "ApiChange": "Property",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the `partnerTenantType` property to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-30T17:56:44.238139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
   ]
 }

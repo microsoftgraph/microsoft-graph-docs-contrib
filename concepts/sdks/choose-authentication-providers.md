@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: MichaelMainer
 ---
 
-<!-- markdownlint-disable MD001 MD024 MD025 -->
+<!-- markdownlint-disable MD001 MD024 MD051 -->
 
 # Choose a Microsoft Graph authentication provider based on scenario
 
@@ -145,22 +145,6 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Android](#tab/Android)
-
-Not applicable.
-
-# [Objective-C](#tab/Objective-C)
-
-Not applicable.
-
-# [PHP](#tab/PHP)
-
-Not yet available. Please support or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
-# [Ruby](#tab/Ruby)
-
-Not available, yet. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -186,6 +170,24 @@ cred, err := azidentity.NewAuthorizationCodeCredential(
 client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
+```
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true).
+
+```python
+from azure.identity.aio import AuthorizationCodeCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+
+credential=AuthorizationCodeCredential(
+    tenant_id = 'TENANT_ID',
+    client_id = 'CLIENT_ID',
+    authorization_code = 'AUTH_CODE',
+    redirect_uri = 'REDIRECT_URL')
+auth_provider = AzureIdentityAuthenticationProvider(credential)
 ```
 
 ---
@@ -297,22 +299,6 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Android](#tab/Android)
-
-Not applicable.
-
-# [Objective-C](#tab/Objective-C)
-
-Not applicable.
-
-# [PHP](#tab/PHP)
-
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
-# [Ruby](#tab/Ruby)
-
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -335,6 +321,23 @@ cred, err := azidentity.NewClientSecretCredential(
 client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
+```
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true).
+
+```python
+from azure.identity.aio import ClientSecretCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+
+credential=ClientSecretCredential(
+    tenant_id = 'TENANT_ID',
+    client_id = 'CLIENT_ID',
+    client_secret = 'CLIENT_SECRET')
+auth_provider = AzureIdentityAuthenticationProvider(credential)
 ```
 
 ---
@@ -414,27 +417,29 @@ final GraphServiceClient graphClient = GraphServiceClient
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Android](#tab/Android)
-
-Not applicable.
-
-# [Objective-C](#tab/Objective-C)
-
-Not applicable.
-
-# [PHP](#tab/PHP)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
-# [Ruby](#tab/Ruby)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+For details on the library see [OnBehalfOfCredential Class](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true).
+
+```python
+from azure.identity.aio import OnBehalfOfCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+
+credential=OnBehalfOfCredential(
+    tenant_id = 'TENANT_ID',
+    client_id = 'CLIENT_ID',
+    client_secret = 'CLIENT_SECRET',
+    user_assertion = 'USER_ASSERTION')
+auth_provider = AzureIdentityAuthenticationProvider(credential)
+```
 
 ---
 
@@ -525,22 +530,6 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Android](#tab/Android)
-
-Not applicable.
-
-# [Objective-C](#tab/Objective-C)
-
-Not applicable.
-
-# [PHP](#tab/PHP)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
-# [Ruby](#tab/Ruby)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -564,6 +553,18 @@ cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredential
 client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
+```
+
+# [Python](#tab/Python)
+
+```python
+from azure.identity import DeviceCodeCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+
+# Create authentication provider object. Used to authenticate request
+credential = DeviceCodeCredential(client_id = 'CLIENT_ID')
+scopes = ['https://graph.microsoft.com/.default']
+auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
 ```
 
 ---
@@ -614,23 +615,11 @@ Not applicable.
 
 Not applicable.
 
-# [Android](#tab/Android)
-
-Not applicable.
-
-# [Objective-C](#tab/Objective-C)
-
-Not applicable.
-
-# [PHP](#tab/PHP)
-
-Not applicable.
-
-# [Ruby](#tab/Ruby)
-
-Not applicable.
-
 # [Go](#tab/Go)
+
+Not applicable.
+
+# [Python](#tab/Python)
 
 Not applicable.
 
@@ -691,45 +680,6 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Android](#tab/Android)
-
-```java
-final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
-                .clientId(clientId)
-                .redirectUrl("http://localhost:8765")
-                .build();
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, interactiveBrowserCredential);
-
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
-
-# [Objective-C](#tab/Objective-C)
-
-```objectivec
-NSError *error = nil;
-MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID"
-error:&error];
-
-MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProviderOptions alloc] initWithScopes:<array-of-scopes-for-which-you-need-access-token>];
-
- MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication
- andOptions:authProviderOptions];
-```
-
-# [PHP](#tab/PHP)
-
-Not applicable.
-
-# [Ruby](#tab/Ruby)
-
-Not applicable.
-
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -751,6 +701,18 @@ cred, err := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveB
 client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
+```
+
+# [Python](#tab/Python)
+
+```python
+from azure.identity import InteractiveBrowserCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+
+# Create authentication provider object. Used to authenticate request
+credential = InteractiveBrowserCredential()
+scopes = ['https://graph.microsoft.com/.default']
+auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
 ```
 
 ---
@@ -811,22 +773,6 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Android](#tab/Android)
-
-Not applicable.
-
-# [Objective-C](#tab/Objective-C)
-
-Not applicable.
-
-# [PHP](#tab/PHP)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
-# [Ruby](#tab/Ruby)
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -850,6 +796,18 @@ cred, err := azidentity.NewUsernamePasswordCredential(
 client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
 
 result, err := client.Me().Get(nil)
+```
+
+# [Python](#tab/Python)
+
+```python
+from azure.identity import UsernamePasswordCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+
+# Create authentication provider object. Used to authenticate request
+credential = UsernamePasswordCredential(CLIENT_ID, USERNAME, PASSWORD)
+scopes = ['https://graph.microsoft.com/.default']
+auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
 ```
 
 ---
