@@ -21,10 +21,6 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 >
 > The extensions mentioned in this article are not similar to Azure AD [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with directory extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-directory-extensions).
 
-
-> [!div class="nextstepaction"]
-> [Training module: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
-
 ## Why add custom data to Microsoft Graph?
 
 - As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
@@ -975,6 +971,7 @@ For known limitations using extensions, see the [extensions section](known-issue
 
 ## Next steps
 
+- [Training module: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
 - [Add custom data to users using open extensions](extensibility-open-users.md)
 - [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 

@@ -21,9 +21,6 @@ Query parameters can be [OData system query options](http://docs.oasis-open.org/
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
-> [!div class="nextstepaction"]
-> [Training module: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)
-
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query] and are supported in only GET operations.
 
@@ -794,3 +791,4 @@ However, it is important to note that query parameters specified in a request mi
 - [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
 - [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
 - [Query parameter limitations](known-issues.md#query-parameters)
+- [Training module: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)
