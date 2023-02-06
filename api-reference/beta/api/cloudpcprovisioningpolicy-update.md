@@ -54,11 +54,11 @@ The following table shows the properties that can be updated for the [cloudPcPro
 |displayName|String|The display name for the provisioning policy. |
 |description|String|The provisioning policy description.|
 |domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory.|
-|enableSingleSignOn|Boolean|`True` if the provisioned Cloud PC can be accessed by single sign-on. `False`, indicates that the provisioned Cloud PC doesn't support this feature. Default value is `false`. Through single sign-on, Windows 365 users can authenticate to Azure Active Directory with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional.|
-|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
+|enableSingleSignOn|Boolean|`True` if the provisioned Cloud PC can be accessed by single sign-on. `False` indicates that the provisioned Cloud PC doesn't support this feature. Default value is `false`. Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional.|
+|imageDisplayName|String|The display name for the OS image you're provisioning.|
 |imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows: <ul><li>publisher: Microsoftwindowsdesktop.</li> <li>offer: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 and 19h2-ent-cpc-os.</li></ul>|
-|imageDisplayName|String|The display name for the OS image you’re provisioning.|
 |imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
+|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
 |windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|The Windows operation system settings for the provisioned Cloud PCs with this provisioning policy, such as operation system language setting.|
 
 ## Response
@@ -69,6 +69,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,8 +122,9 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
