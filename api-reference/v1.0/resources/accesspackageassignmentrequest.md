@@ -27,6 +27,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
 |completedDateTime|DateTimeOffset|The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter`.|
 |id|String|Read-only.|
@@ -62,7 +63,13 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
   },
   "state": "String",
-  "status": "String"
+  "status": "String",
+  "answers": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageAnswerString"
+    }
+  ]
+
 }
 ```
 
