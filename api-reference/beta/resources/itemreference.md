@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: "The ItemReference resource provides information necessary to address a DriveItem via the API."
+description: "The ItemReference resource provides information necessary to address a DriveItem or ListItem via the API."
 ms.date: 09/10/2017
 title: ItemReference
 ms.localizationpriority: medium
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 
 Namespace: microsoft.graph
 
-The **ItemReference** resource provides information necessary to address a [driveItem](driveitem.md) via the API.
+The **ItemReference** resource provides information necessary to address a [driveItem](driveitem.md) or a [listItem](listitem.md) via the API.
 
 ## JSON representation
 
@@ -40,14 +40,14 @@ Here is a JSON representation of the resource
 
 | Property      | Type              | Description
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | String            | Unique identifier of the drive instance that contains the item. Read-only.
-| driveType     | String            | Identifies the type of drive. See [drive][] resource for values.
-| id            | String            | Unique identifier of the item in the drive. Read-only.
+| driveId       | String            | Unique identifier of the drive instance that contains the driveItem. Only returned if item is located in a [drive][]. Read-only.
+| driveType     | String            | Identifies the type of drive. Only returned if item is location in a [drive][].  See [drive][] resource for values.
+| id            | String            | Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
 | name          | String            | The name of the item being referenced. Read-only.
 | path          | String            | Path that can be used to navigate to the item. Read-only.
 | shareId       | String            | A unique identifier for a shared resource that can be accessed via the [Shares][] API.
 | sharepointIds | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| siteId        | String            | For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an [opaque string that consists of three identifiers](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) of the site. <br>For OneDrive, this property is not populated.
+| siteId        | String            | For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an [opaque string that consists of three identifiers](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) of the site. <br>For OneDrive, this property is not populated.
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
