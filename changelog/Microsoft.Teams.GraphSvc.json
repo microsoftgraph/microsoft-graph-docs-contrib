@@ -775,7 +775,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowUserRequestsForAppAccess",
           "ChangeType": "Addition",
-          "Description": "Added the `allowUserRequestsForAppAccess` property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowUserRequestsForAppAccess** property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource.",
           "Target": "teamsAppSettings"
         }
       ],
