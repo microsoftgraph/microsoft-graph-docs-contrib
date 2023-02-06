@@ -11,7 +11,8 @@ The Microsoft Graph client is designed to make it simple to make calls to Micros
 
 The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages. The authentication provider will handle acquiring access tokens for the application. Many different authentication providers are available for each language and platform. The different authentication providers support different client scenarios. For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).
 
-<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD025 MD051 -->
+
 # [C#](#tab/CS)
 
 ```csharp
@@ -105,32 +106,6 @@ GraphServiceClient graphClient = GraphServiceClient
         .buildClient();
 ```
 
-# [Objective-C](#tab/Objective-C)
-
-```objectivec
-// Create the authenticationProvider.
-NSError *error = nil;
-MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID"
-error:&error];
-MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProviderOptions alloc] initWithScopes:<array-of-scopes-for-which-you-need-access-token>];
- MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication
- andOptions:authProviderOptions];
-
-// Create the client with the authenticationProvider and create a request to the /me resource.
-MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me"]]];
-
-// Create the task to send the request and handle the response.
-MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
-    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-
-    //Do something
-
-    }];
-
-[meDataTask execute];
-```
-
 # [PHP](#tab/PHP)
 
 ```php
@@ -186,6 +161,22 @@ if err != nil {
 }
 
 client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
+```
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+```py
+from azure.identity.aio import EnvironmentCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+from msgraph import GraphRequestAdapter, GraphServiceClient
+
+credential=EnvironmentCredential()
+auth_provider = AzureIdentityAuthenticationProvider(credential)
+
+adapter = GraphRequestAdapter(auth_provider)
+client = GraphServiceClient(adapter)
 ```
 
 ---
