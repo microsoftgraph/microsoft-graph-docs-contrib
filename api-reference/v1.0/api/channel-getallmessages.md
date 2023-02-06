@@ -199,3 +199,7 @@ HTTP/1.1 200 OK
     ]
 }
 ```
+
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
