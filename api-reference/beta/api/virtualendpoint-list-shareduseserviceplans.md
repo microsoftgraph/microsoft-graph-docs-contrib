@@ -1,5 +1,5 @@
 ---
-title: "List sharedUseServicePlans"
+title: "List cloudPcSharedUseServicePlans"
 description: "Get a list of the cloudPcSharedUseServicePlan objects and their properties."
 author: "GuoanTang"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List sharedUseServicePlans
+# List cloudPcSharedUseServicePlans
 
 Namespace: microsoft.graph
 
@@ -37,7 +37,8 @@ GET /deviceManagement/virtualEndpoint/sharedUseServicePlans
 ```
 
 ## Optional query parameters
-This method supports `$select`, `$filter`, `$orderBy`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select`, `$filter`, `$orderBy`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

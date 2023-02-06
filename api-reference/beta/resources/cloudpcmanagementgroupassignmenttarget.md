@@ -21,7 +21,7 @@ Inherits from [cloudPcManagementAssignmentTarget](../resources/cloudpcmanagement
 |Property|Type|Description|
 |:---|:---|:---|
 |groupId|String|The ID of the target group for the assignment. |
-|servicePlanId|String|The unique identifier for the service plan that indicates which size of the Cloud PC to provision for the user. Use a null value, when the **provisioningType** is `dedicated`.|
+|servicePlanId|String|The unique identifier for the service plan that indicates which size of the Cloud PC to provision for the user. Use a `null` value, when the **provisioningType** is `dedicated`.|
 
 ## Relationships
 
