@@ -25,7 +25,7 @@ Represents the information about the property which is supported in crafting the
 |name|String|Name of the property.|
 |propertyRegexConstraint|String|Regex string to do validation on the property value.|
 |supportedOperators|[assignmentFilterOperator](../resources/intune-policyset-assignmentfilteroperator.md) collection|List of all supported operators on this property.|
-|supportedValues|String collection|List of all supported values for this propery, empty if everything is supported.|
+|supportedValues|String collection|List of all supported values for this property, empty if everything is supported.|
 
 ## Relationships
 None

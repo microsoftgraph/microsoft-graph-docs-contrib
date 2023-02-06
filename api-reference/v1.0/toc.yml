@@ -47,10 +47,10 @@ items:
       - name: Use query parameters
         displayName: OData query parameters, OData
         href: /graph/query-parameters?context=graph/api/1.0
-      - name: Use $filter
+      - name: Use filter
         displayName: OData query parameters, OData
         href: /graph/filter-query-parameter?context=graph/api/1.0
-      - name: Use $search
+      - name: Use search
         displayName: OData query parameters, OData
         href: /graph/search-query-parameter?context=graph/api/1.0
       - name: Advanced query capabilities
@@ -1880,6 +1880,19 @@ items:
               href: api/intune-books-iosvppebookassignment-delete.md
             - name: Update
               href: api/intune-books-iosvppebookassignment-update.md
+          - name: iOS ipad os web clip
+            href: resources/intune-apps-iosipadoswebclip.md
+            items:
+            - name: List
+              href: api/intune-apps-iosipadoswebclip-list.md
+            - name: Get
+              href: api/intune-apps-iosipadoswebclip-get.md
+            - name: Create
+              href: api/intune-apps-iosipadoswebclip-create.md
+            - name: Delete
+              href: api/intune-apps-iosipadoswebclip-delete.md
+            - name: Update
+              href: api/intune-apps-iosipadoswebclip-update.md
           - name: macOS LOB app
             href: resources/intune-apps-macoslobapp.md
             items:
@@ -2315,6 +2328,8 @@ items:
               href: api/intune-apps-windowsuniversalappx-delete.md
             - name: Update
               href: api/intune-apps-windowsuniversalappx-update.md
+          - name: Windows universal AppX app assignment settings
+            href: resources/intune-apps-windowsuniversalappxappassignmentsettings.md
           - name: Windows universal AppX contained app
             href: resources/intune-apps-windowsuniversalappxcontainedapp.md
             items:
@@ -2328,6 +2343,19 @@ items:
               href: api/intune-apps-windowsuniversalappxcontainedapp-delete.md
             - name: Update
               href: api/intune-apps-windowsuniversalappxcontainedapp-update.md
+          - name: Windows web app
+            href: resources/intune-apps-windowswebapp.md
+            items:
+            - name: List
+              href: api/intune-apps-windowswebapp-list.md
+            - name: Get
+              href: api/intune-apps-windowswebapp-get.md
+            - name: Create
+              href: api/intune-apps-windowswebapp-create.md
+            - name: Delete
+              href: api/intune-apps-windowswebapp-delete.md
+            - name: Update
+              href: api/intune-apps-windowswebapp-update.md
         - name: Company terms
           href: resources/intune-company-conceptual.md
           items:
@@ -3330,6 +3358,27 @@ items:
           items:
           - name: Action state
             href: resources/intune-devices-actionstate.md
+          - name: App log collection download details
+            href: resources/intune-devices-applogcollectiondownloaddetails.md
+          - name: App log collection request
+            href: resources/intune-devices-applogcollectionrequest.md
+            items:
+            - name: List
+              href: api/intune-devices-applogcollectionrequest-list.md
+            - name: Get
+              href: api/intune-devices-applogcollectionrequest-get.md
+            - name: Create
+              href: api/intune-devices-applogcollectionrequest-create.md
+            - name: Delete
+              href: api/intune-devices-applogcollectionrequest-delete.md
+            - name: Update
+              href: api/intune-devices-applogcollectionrequest-update.md
+            - name: createDownloadUrl action
+              href: api/intune-devices-applogcollectionrequest-createdownloadurl.md
+          - name: App log decryption algorithm
+            href: resources/intune-devices-applogdecryptionalgorithm.md
+          - name: App log upload state
+            href: resources/intune-devices-apploguploadstate.md
           - name: Apple push notification certificate
             href: resources/intune-devices-applepushnotificationcertificate.md
             items:
@@ -3423,6 +3472,8 @@ items:
             href: resources/intune-devices-devicemanagementsubscriptionstate.md
           - name: Device operating system summary
             href: resources/intune-devices-deviceoperatingsystemsummary.md
+          - name: Device protection overview
+            href: resources/intune-devices-deviceprotectionoverview.md
           - name: Device registration state
             href: resources/intune-devices-deviceregistrationstate.md
           - name: Disk type
@@ -3442,6 +3493,19 @@ items:
               href: api/intune-notification-localizednotificationmessage-update.md
           - name: Locate device action result
             href: resources/intune-devices-locatedeviceactionresult.md
+          - name: Malware state for windows device
+            href: resources/intune-devices-malwarestateforwindowsdevice.md
+            items:
+            - name: List
+              href: api/intune-devices-malwarestateforwindowsdevice-list.md
+            - name: Get
+              href: api/intune-devices-malwarestateforwindowsdevice-get.md
+            - name: Create
+              href: api/intune-devices-malwarestateforwindowsdevice-create.md
+            - name: Delete
+              href: api/intune-devices-malwarestateforwindowsdevice-delete.md
+            - name: Update
+              href: api/intune-devices-malwarestateforwindowsdevice-update.md
           - name: Managed device
             href: resources/intune-devices-manageddevice.md
             items:
@@ -3504,6 +3568,19 @@ items:
             href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
           - name: Management agent type
             href: resources/intune-devices-managementagenttype.md
+          - name: Mobile app troubleshooting event
+            href: resources/intune-devices-mobileapptroubleshootingevent.md
+            items:
+            - name: List
+              href: api/intune-devices-mobileapptroubleshootingevent-list.md
+            - name: Get
+              href: api/intune-devices-mobileapptroubleshootingevent-get.md
+            - name: Create
+              href: api/intune-devices-mobileapptroubleshootingevent-create.md
+            - name: Delete
+              href: api/intune-devices-mobileapptroubleshootingevent-delete.md
+            - name: Update
+              href: api/intune-devices-mobileapptroubleshootingevent-update.md
           - name: Notification message template
             href: resources/intune-notification-notificationmessagetemplate.md
             items:
@@ -3521,6 +3598,8 @@ items:
               href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
           - name: Notification template branding options
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
+          - name: Os version count
+            href: resources/intune-devices-osversioncount.md
           - name: Remote lock action result
             href: resources/intune-devices-remotelockactionresult.md
           - name: Reset passcode action result
@@ -3544,6 +3623,8 @@ items:
               href: api/intune-devices-user-removealldevicesfrommanagement.md
           - name: User experience analytics health state
             href: resources/intune-devices-userexperienceanalyticshealthstate.md
+          - name: Windows defender product status
+            href: resources/intune-devices-windowsdefenderproductstatus.md
           - name: Windows defender scan action result
             href: resources/intune-devices-windowsdefenderscanactionresult.md
           - name: Windows device account
@@ -3552,6 +3633,63 @@ items:
             href: resources/intune-devices-windowsdeviceadaccount.md
           - name: Windows device Azure AD account
             href: resources/intune-devices-windowsdeviceazureadaccount.md
+          - name: Windows device health state
+            href: resources/intune-devices-windowsdevicehealthstate.md
+          - name: Windows device malware state
+            href: resources/intune-devices-windowsdevicemalwarestate.md
+            items:
+            - name: List
+              href: api/intune-devices-windowsdevicemalwarestate-list.md
+            - name: Get
+              href: api/intune-devices-windowsdevicemalwarestate-get.md
+            - name: Create
+              href: api/intune-devices-windowsdevicemalwarestate-create.md
+            - name: Delete
+              href: api/intune-devices-windowsdevicemalwarestate-delete.md
+            - name: Update
+              href: api/intune-devices-windowsdevicemalwarestate-update.md
+          - name: Windows malware category
+            href: resources/intune-devices-windowsmalwarecategory.md
+          - name: Windows malware category count
+            href: resources/intune-devices-windowsmalwarecategorycount.md
+          - name: Windows malware execution state
+            href: resources/intune-devices-windowsmalwareexecutionstate.md
+          - name: Windows malware execution state count
+            href: resources/intune-devices-windowsmalwareexecutionstatecount.md
+          - name: Windows malware information
+            href: resources/intune-devices-windowsmalwareinformation.md
+            items:
+            - name: List
+              href: api/intune-devices-windowsmalwareinformation-list.md
+            - name: Get
+              href: api/intune-devices-windowsmalwareinformation-get.md
+            - name: Create
+              href: api/intune-devices-windowsmalwareinformation-create.md
+            - name: Delete
+              href: api/intune-devices-windowsmalwareinformation-delete.md
+            - name: Update
+              href: api/intune-devices-windowsmalwareinformation-update.md
+          - name: Windows malware name count
+            href: resources/intune-devices-windowsmalwarenamecount.md
+          - name: Windows malware overview
+            href: resources/intune-devices-windowsmalwareoverview.md
+          - name: Windows malware severity
+            href: resources/intune-devices-windowsmalwareseverity.md
+          - name: Windows malware severity count
+            href: resources/intune-devices-windowsmalwareseveritycount.md
+          - name: Windows malware state
+            href: resources/intune-devices-windowsmalwarestate.md
+          - name: Windows malware state count
+            href: resources/intune-devices-windowsmalwarestatecount.md
+          - name: Windows malware threat state
+            href: resources/intune-devices-windowsmalwarethreatstate.md
+          - name: Windows protection state
+            href: resources/intune-devices-windowsprotectionstate.md
+            items:
+            - name: Get
+              href: api/intune-devices-windowsprotectionstate-get.md
+            - name: Update
+              href: api/intune-devices-windowsprotectionstate-update.md
         - name: Mobile app management (MAM)
           href: resources/intune-mam-conceptual.md
           items:
@@ -3900,6 +4038,8 @@ items:
               href: api/intune-onboarding-compliancemanagementpartner-update.md
           - name: Compliance management partner assignment
             href: resources/intune-onboarding-compliancemanagementpartnerassignment.md
+          - name: Device and app management data
+            href: resources/intune-onboarding-deviceandappmanagementdata.md
           - name: Device app management
             href: resources/intune-onboarding-deviceappmanagement.md
             items:
@@ -4019,6 +4159,8 @@ items:
               href: api/intune-onboarding-devicemanagementpartner-terminate.md
           - name: Device management partner app type
             href: resources/intune-onboarding-devicemanagementpartnerapptype.md
+          - name: Device management partner assignment
+            href: resources/intune-onboarding-devicemanagementpartnerassignment.md
           - name: Device management partner tenant state
             href: resources/intune-onboarding-devicemanagementpartnertenantstate.md
           - name: Enablement
@@ -4243,7 +4385,7 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md      
       - name: Service health and communications
         items:
         - name: Overview
@@ -4665,6 +4807,67 @@ items:
       - name: Overview
         displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
+      - name: Customer relationship management
+        items:
+        - name: Granular delegated admin privileges
+          items:
+          - name: Overview
+            displayName: GDAP, Partner Center, CSP, VAR
+            href: resources/delegatedadminrelationships-api-overview.md
+          - name: Delegated admin relationships
+            href: resources/delegatedadminrelationship.md
+            items:
+            - name: Create
+              href: api/tenantrelationship-post-delegatedadminrelationships.md
+            - name: List
+              href: api/tenantrelationship-list-delegatedadminrelationships.md
+            - name: Get
+              href: api/delegatedadminrelationship-get.md
+            - name: Update
+              href: api/delegatedadminrelationship-update.md
+            - name: Delete
+              href: api/delegatedadminrelationship-delete.md
+          - name: Delegated admin access assignments
+            href: resources/delegatedadminaccessassignment.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post-accessassignments.md
+            - name: List
+              href: api/delegatedadminrelationship-list-accessassignments.md
+            - name: Get
+              href: api/delegatedadminaccessassignment-get.md
+            - name: Update
+              href: api/delegatedadminaccessassignment-update.md
+            - name: Delete
+              href: api/delegatedadminaccessassignment-delete.md
+          - name: Delegated admin relationship requests
+            href: resources/delegatedadminrelationshiprequest.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post-requests.md
+            - name: List
+              href: api/delegatedadminrelationship-list-requests.md
+            - name: Get
+              href: api/delegatedadminrelationshiprequest-get.md
+          - name: Delegated admin relationship operations
+            href: resources/delegatedadminrelationshipoperation.md
+            items:
+            - name: List
+              href: api/delegatedadminrelationship-list-operations.md
+            - name: Get
+              href: api/delegatedadminrelationshipoperation-get.md
+          - name: Delegated admin customer
+            href: resources/delegatedadmincustomer.md
+            items:
+            - name: List
+              href: api/tenantrelationship-list-delegatedadmincustomers.md
+            - name: Get
+              href: api/delegatedadmincustomer-get.md
+            - name: Service management details
+              href: resources/delegatedadminservicemanagementdetail.md
+              items:
+              - name: List
+                href: api/delegatedadmincustomer-list-servicemanagementdetails.md
       - name: Directory management
         items:
         - name: Administrative unit
@@ -6759,7 +6962,7 @@ items:
           items:
           - name: List case operations
             href: api/security-ediscoverycase-list-operations.md
-          - name: Get case opreation by id
+          - name: Get case operation by ID
             href: api/security-caseoperation-get.md
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
