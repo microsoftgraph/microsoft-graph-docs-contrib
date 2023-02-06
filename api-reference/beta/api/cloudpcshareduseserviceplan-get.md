@@ -37,7 +37,7 @@ GET /deviceManagement/virtualEndpoint/sharedUseServicePlans/{cloudPcSharedUseSer
 
 ## Optional query parameters
 
-This method supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response.. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
