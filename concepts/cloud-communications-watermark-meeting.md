@@ -1,5 +1,5 @@
 ---
-title: "Watermark meeting in the cloud communications API"
+title: "Support for Watermark for sensitive Teams meetings in the cloud communications APIs"
 author: ""
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -7,19 +7,13 @@ ms.prod: "cloud-communications"
 
 # Watermark meeting
 
-Organizer can set the option for enabling watermark on different contents during scheduling. Based on the setting, the participant will see watermark on shared content or/and video feeds when meeting is in progress.
+For a description of the Watermark meetings feature, licensing and policy requirements to use the feature, please read [Watermark meetings](https://learn.microsoft.com/en-us/microsoftteams/watermark-meeting-content-video).
 
-Organizer experience in meeting option:
-![screenshot](images/communications-watermark-meeting-option.png)
-
-In-meeting attendee experience:
-![screenshot](images/communications-watermark-in-meeting-experience.png)
+A new [watermarkProtection](/graph/api/resources/onlinemeeting) property is added to [onlinemeeting](/graph/api/resources/onlinemeeting) to indicate the Watermark options.
 
 ### Code or REST operation examples
 
-#### Create an online meeting with new meeting options.
-
-Use Case 1: The organizer has Teams Enterprise license
+#### Create an online meeting with new meeting options
 
 ```json
 POST /me/onlineMeetings
@@ -35,76 +29,41 @@ POST /me/onlineMeetings
 
 HTTP/1.1 200 OK
 ```
-
-Use Case 2: The organizer doesn't have TE license
-
-```json
-POST /me/onlineMeetings
-{
-  "subject": "meeting",
-  "startDateTime": "2022-07-01T22:57:47.6388574Z",
-  "endDateTime": "2022-07-01T23:57:47.6388574Z",
-  "watermarkProtection": {
-    "isEnabledForContentSharing": true,
-    "isEnabledForVideo": false,
-  }
-}
-
-```
-Api returns an error
-
-```json
-{
-"error": {
-    "code": "Forbidden",
-    "message": "You don't have Teams Enterprise license to update watermarkProtection."
-    }
-}
-```
-
 
 #### Update meeting options
-
-Use Case 1: The organizer has TE license
+Please note updating the Watermark properties will have no affect on meeting calls that have already started.
 
 ```json
 PATCH /me/onlineMeetings/{meetingId}
 {
-"watermarkProtection": {
-    "isEnabledForContentSharing" : true,
-    "isEnabledForVideo" : false,
-  },
+   "watermarkProtection": {
+      "isEnabledForContentSharing" : true,
+      "isEnabledForVideo" : false,
+   },
+}
+
+HTTP/1.1 200 OK
+```
+#### Get meeting options
+
+```json
+GET /me/onlineMeetings/{meetingId}
+{
+   ...
+   "watermarkProtection": {
+      "isEnabledForContentSharing" : true,
+      "isEnabledForVideo" : false,
+   },
 }
 
 HTTP/1.1 200 OK
 ```
 
-Use Case 2: The organizer doesn't have TE license
+#### Restricted Experience when joining Watermark meetings using the Cloud Communications APIs
 
-```json
-PATCH /me/onlineMeetings/{meetingId}
-{
-"watermarkProtection": {
-    "isEnabledForContentSharing" : true,
-    "isEnabledForVideo" : false,
-  },
-}
+When a watermark is in use, applications using the [Cloud Communications Calling APIs](/graph/api/application-post-calls) will get a restricted media experience.
 
-```
-Api returns an error
-
-```json
-{
-"error": {
-    "code": "Forbidden",
-    "message": "You don't have Teams Enterprise license to update watermarkProtection."
-    }
-}
-```
-
-#### Get list of participants in a call
-
-Gets list of all participants in a call. If the meeting has watermark applied to any of the contents, then all the participants who have joined the meeting from an unsupported client will have the field isAudioOnlyExperience true and will not be able to see the watermarked content.
+To indicate this restricted media experience, each [participant](graph/api/resources/participant) in the [list participants api](/graph/api/call-list-participants) will have a new [restrictedExperience](graph/api/resources/participant) property, which shows watermarkProtection as the reason for the restricted media experience.
 
 
 ````JSON
