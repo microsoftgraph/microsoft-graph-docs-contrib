@@ -775,14 +775,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureCommunicationServicesUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [azureCommunicationServicesUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-beta) resource",
+          "Description": "Added the [azureCommunicationServicesUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-beta) resource.",
           "Target": "azureCommunicationServicesUserConversationMember"
         }
       ],
       "Id": "0d00d1b1-db8b-490d-b3c2-73ca296139df",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-11-10T21:39:35.4042034Z",
+      "CreatedDateTime": "2023-02-06T21:39:35.4042034Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
