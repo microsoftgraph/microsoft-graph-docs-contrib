@@ -37,10 +37,10 @@ The following is a JSON representation of a **documentSet** resource.
 
 ```json
 {
-  "shouldPrefixNameToFile": true,
   "allowedContentTypes": [{ "@type": "microsoft.graph.contentTypeInfo" }],
   "defaultContents": [{ "@type": "microsoft.graph.documentSetContent" }],
   "propagateWelcomePageChanges": false,
+  "shouldPrefixNameToFile": true,
   "welcomePageUrl": "string"
 }
 ```
