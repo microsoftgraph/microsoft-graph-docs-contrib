@@ -49,7 +49,7 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 |originalFiles| Include copies of the original files - exclude this option when generating reports only. |
 |text| Include raw extracted text files for each document. |
 |pdfReplacement| If redacted PDF files are generated during review, these files are available for export. You can choose to export the redacted PDFs instead of the original native files by including this option. |
-|fileInfo| Deprecating this member from April 2023 as summary and load file will always be included. |
+|fileInfo| Include the summary and load file - this should always be included. |
 |tags| Include document tags that were applied during review in the load file. |
 
 ### exportFileStructure values
