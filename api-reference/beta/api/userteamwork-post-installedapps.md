@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
 
->**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences) 
+>**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
 ## Permissions
 

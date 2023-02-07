@@ -19,7 +19,7 @@ Retrieving the transcript returns the metadata of the single transcript associat
 
 > **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
->**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences) 
+>**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
 ## Permissions
 
