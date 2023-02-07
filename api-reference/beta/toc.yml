@@ -16793,19 +16793,6 @@ items:
             href: api/chatmessage-setreaction.md
           - name: Unset message reaction
             href: api/chatmessage-unsetreaction.md
-          - name: Conversation member
-            href: resources/conversationmember.md
-            items:
-            - name: Anonymous guest
-              href: resources/anonymousguestconversationmember.md
-            - name: Azure Communication Services user
-              href: resources/azurecommunicationservicesuserconversationmember.md
-            - name: Microsoft account user
-              href: resources/microsoftaccountuserconversationmember.md
-            - name: Skype for Business user
-              href: resources/skypeforbusinessuserconversationmember.md
-            - name: Skype user
-              href: resources/skypeuserconversationmember.md
         - name: Chat message
           href: resources/chatmessage.md
           items:
