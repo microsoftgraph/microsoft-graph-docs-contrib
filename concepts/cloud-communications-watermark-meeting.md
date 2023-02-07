@@ -65,7 +65,7 @@ HTTP/1.1 200 OK
 
 When a watermark is in use, applications using the [Cloud Communications Calling APIs](/graph/api/application-post-calls) will get a restricted media experience.
 
-To indicate this restricted media experience, each [participant](graph/api/resources/participant) in the [list participants api](/graph/api/call-list-participants) will have a new [restrictedExperience](graph/api/resources/participant) property, which shows [watermarkProtection](/graph/api/resources/onlinemeetingRestricted) as the reason for the restricted media experience.
+To indicate this restricted media experience, each [participant](graph/api/resources/participant) in the [call roster](/graph/api/application-post-calls?view=graph-rest-1.0&tabs=http#notification---roster) and the [list participants api](/graph/api/call-list-participants) will have a new [restrictedExperience](graph/api/resources/participant) property, which shows [watermarkProtection](/graph/api/resources/onlinemeetingRestricted) as the reason for the restricted media experience.
 
 
 ````JSON
