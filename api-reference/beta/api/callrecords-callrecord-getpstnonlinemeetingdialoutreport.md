@@ -1,6 +1,6 @@
 ---
 title: "callRecord: getPstnOnlineMeetingDialoutReport"
-description: "Get aggregated report of usage and money spent for the audio conferencing dial-out service"
+description: "Get aggregated report of the usage and money spent for the audio conferencing dial-out service, as a collection of pstnOnlineMeetingDialoutReport entries."
 author: "radoslag"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -8,11 +8,12 @@ doc_type: apiPageType
 ---
 
 # callRecord: getPstnOnlineMeetingDialoutReport
+
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period, as a collection of [PstnOnlineMeetingDialoutReport](../resources/callrecords-pstnonlinemeetingdialoutreport.md) entries.
+Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period, as a collection of [pstnOnlineMeetingDialoutReport](../resources/callrecords-pstnonlinemeetingdialoutreport.md) entries.
 The report is aggregated by user, user location, destination context (domestic/international), currency.
 
 The report includes:

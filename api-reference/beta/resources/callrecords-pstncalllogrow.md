@@ -42,10 +42,10 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |inventoryType|String|User's phone number type, such as a service of toll-free number.|
 |licenseCapability|String|The license used for the call.|
 |operator|String|The telecommunications operator which provided PSTN services for this call. This may be Microsoft, or it may be a third-party operator via the [Operator Connect Program](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398).|
-|otherPartyCountryCode|String|Country code of the caller in case of incoming call or callee in case of outgoing call ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)).|
+|otherPartyCountryCode|String|Country code of the caller in case of an incoming call, or callee in case of an outgoing call. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |startDateTime|DateTimeOffset|Call start time.|
-|tenantCountryCode|String|Country code of the tenant ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)).|
-|usageCountryCode|String|Country code of the user ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)).|
+|tenantCountryCode|String|Country code of the tenant. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|usageCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
 |userId|String|Calling user's ID in Graph (GUID). This and other user info will be null/empty for bot call types (ucap_in, ucap_out).|
 |userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address.|
@@ -68,29 +68,29 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callRecords.pstnCallLogRow",
-  "id": "String (identifier)",
-  "callId": "String",
-  "userId": "String",
-  "userPrincipalName": "String",
-  "userDisplayName": "String",
-  "startDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
-  "duration": "Integer",
-  "charge": "Double",
-  "callType": "String",
-  "currency": "String",
+  "callDurationSource": "String",
   "calleeNumber": "String",
-  "usageCountryCode": "String",
-  "tenantCountryCode": "String",
-  "connectionCharge": "Double",
   "callerNumber": "String",
+  "callId": "String",
+  "callType": "String",
+  "charge": "Double",
+  "conferenceId": "String",
+  "connectionCharge": "Double",
+  "currency": "String",
   "destinationContext": "String",
   "destinationName": "String",
-  "conferenceId": "String",
-  "licenseCapability": "String",
+  "duration": "Int32",
+  "endDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "inventoryType": "String",
+  "licenseCapability": "String",
   "operator": "String",
-  "callDurationSource": "String",
-  "otherPartyCountryCode": "String"
+  "otherPartyCountryCode": "String",
+  "startDateTime": "String (timestamp)",
+  "tenantCountryCode": "String",
+  "usageCountryCode": "String",
+  "userDisplayName": "String",
+  "userId": "String",
+  "userPrincipalName": "String"
 }
 ```

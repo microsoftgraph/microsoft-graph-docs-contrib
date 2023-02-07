@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "pstnUserBlockMode",
           "ChangeType": "Addition",
           "Description": "Added the **pstnUserBlockMode** enumeration type.",
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "otherPartyCountryCode",
           "ChangeType": "Addition",
-          "Description": "Added the `otherPartyCountryCode` property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta) resource.",
+          "Description": "Added the **otherPartyCountryCode** property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta) resource.",
           "Target": "directRoutingLogRow"
         },
         {
@@ -23,8 +23,16 @@
           "ApiChange": "Property",
           "ChangedApiName": "userCountryCode",
           "ChangeType": "Addition",
-          "Description": "Added the `userCountryCode` property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta) resource.",
+          "Description": "Added the **userCountryCode** property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta) resource.",
           "Target": "directRoutingLogRow"
+        },
+        {
+          "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+          "ApiChange": "Property",
+          "ChangedApiName": "otherPartyCountryCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **otherPartyCountryCode** property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta) resource.",
+          "Target": "pstnCallLogRow"
         },
         {
           "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
@@ -33,14 +41,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [pstnBlockedUsersLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstnblockeduserslogrow?view=graph-rest-beta) resource type.",
           "Target": "pstnBlockedUsersLogRow"
-        },
-        {
-          "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
-          "ApiChange": "Property",
-          "ChangedApiName": "otherPartyCountryCode",
-          "ChangeType": "Addition",
-          "Description": "Added the `otherPartyCountryCode` property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta) resource.",
-          "Target": "pstnCallLogRow"
         },
         {
           "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",

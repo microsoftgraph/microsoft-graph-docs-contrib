@@ -1,6 +1,6 @@
 ---
 title: "callRecord: getSmsLog"
-description: "Get log of sent/received SMS"
+description: "Get the log of a sent/received SMS as a collection of smsLogRow entries."
 author: "radoslag"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -8,11 +8,12 @@ doc_type: apiPageType
 ---
 
 # callRecord: getSmsLog
+
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get log of sent/received SMS as a collection of [smsLogRow](../resources/callrecords-smslogrow.md) entries.
+Get the log of a sent/received SMS as a collection of [smsLogRow](../resources/callrecords-smslogrow.md) entries.
 
 ## Permissions
 
