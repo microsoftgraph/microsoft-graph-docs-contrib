@@ -21,12 +21,12 @@ The following table shows the least privileged permission that's required by eac
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | [application](../resources/application.md)     | Application.Read.All | Application.Read.All | Not supported |
 | [administrativeUnit](../resources/administrativeunit.md)     | AdministrativeUnit.Read.All | AdministrativeUnit.Read.All | Not supported |
-| [appRoleAssignment](../resources/approleassignment.md)     | AppRoleAssignment.Read.All | AppRoleAssignment.Read.All | Not supported |
+| [appRoleAssignment](../resources/approleassignment.md)     | User.Read.All | User.Read.All | Not supported |
 | [device](../resources/device.md)     | Device.Read.All | Device.Read.All | Not supported |
-| [directoryRole](../resources/directoryrole.md)     | DirectoryRole.Read.All | DirectoryRole.Read.All | Not supported |
+| [directoryRole](../resources/directoryrole.md)     | RoleManagement.Read.Directory | RoleManagement.Read.Directory | Not supported |
 | [group](../resources/group.md)         | Group.Read.All | Group.Read.All | Not supported |
 | [orgContact](../resources/orgcontact.md)     | OrgContact.Read.All | OrgContact.Read.All | Not supported |
-| [servicePrincipal](../resources/serviceprincipal.md)     | ServicePrincipal.Read.All | ServicePrincipal.Read.All | Not supported |
+| [servicePrincipal](../resources/serviceprincipal.md)     | Application.Read.All | Application.Read.All | Not supported |
 | [user](../resources/user.md)           | User.Read.All | User.Read.All | Not supported |
 
 ## HTTP request
@@ -46,7 +46,7 @@ GET /directoryObjects/delta?$filter=isof('microsoft.graph.servicePrincipal')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.user')
 ```
 
-> **Note:** To complete a delta query on the `appRoleAssignment` resource, at minimum both the `appRoleAssignment` and `user` resources must be specified in the $filter parameter, with the option of also including groups or service principals if desired. Note that all resources specified will be returned.
+> **Note:** To complete a delta query on the `appRoleAssignment` resource, at minimum both the `appRoleAssignment` and `user` resources must be specified in the $filter parameter, with the option of also including groups or service principals if desired (the read all permissions of the additional resources will be required). Note that all resources specified will be returned.
 
 Track changes for a directory object.
 
