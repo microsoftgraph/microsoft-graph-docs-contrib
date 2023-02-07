@@ -1,13 +1,12 @@
 ---
 author: JeremyKelley
 description: "Provides information necessary to address a driveItem or listItem via the API."
-ms.date: 09/10/2017
-title: ItemReference
+title: itemReference
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---
-# ItemReference resource type
+# itemReference resource type
 
 Namespace: microsoft.graph
 
