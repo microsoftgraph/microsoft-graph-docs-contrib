@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getFormsUserActivityUserCounts"
-description: "Get a report that provides the total number of users performing Microsoft Forms activities who are designers or responders over a selected period."
+description: "Get a report that provides the total number of designers or responders who perform Microsoft Forms activities over a selected period."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "haoyli"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that provides the total number of users performing Microsoft Forms activities who are designers or responders over a selected period.
+Get a report that provides the total number of designers or responders who perform Microsoft Forms activities over a selected period.
 
 ## Permissions
 
