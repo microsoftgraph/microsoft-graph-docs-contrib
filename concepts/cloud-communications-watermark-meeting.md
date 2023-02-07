@@ -13,7 +13,7 @@ A new [watermarkProtection](/graph/api/resources/onlinemeeting) property is adde
 
 ### Code or REST operation examples
 
-#### Create an online meeting with new meeting options
+#### Create an online meeting with the new Watermark option
 
 ```json
 POST /me/onlineMeetings
@@ -30,8 +30,10 @@ POST /me/onlineMeetings
 HTTP/1.1 200 OK
 ```
 
-#### Update meeting options
-Please note updating the Watermark properties will have no affect on meeting calls that have already started.
+#### Update Watermark option in an onlinemeeting
+
+>[!NOTE]
+> * Updating the Watermark properties will have no affect on meeting calls that have already started.
 
 ```json
 PATCH /me/onlineMeetings/{meetingId}
@@ -44,7 +46,7 @@ PATCH /me/onlineMeetings/{meetingId}
 
 HTTP/1.1 200 OK
 ```
-#### Get meeting options
+#### Get the Watermark option in an onlinemeeting
 
 ```json
 GET /me/onlineMeetings/{meetingId}
