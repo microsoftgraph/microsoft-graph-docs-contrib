@@ -3,6 +3,224 @@
     {
       "ChangeList": [
         {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "alertSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **alertSeverity** enumeration type.",
+          "Target": "alertSeverity"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "longRunningOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **longRunningOperationStatus** enumeration type.",
+          "Target": "longRunningOperationStatus"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleManagementAlerts",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleManagementAlerts** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource.",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invalidLicenseAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [invalidLicenseAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/invalidLicenseAlertConfiguration?view=graph-rest-beta) resource",
+          "Target": "invalidLicenseAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invalidLicenseAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [invalidLicenseAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/invalidLicenseAlertIncident?view=graph-rest-beta) resource",
+          "Target": "invalidLicenseAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "longRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [longRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/longRunningOperation?view=graph-rest-beta) resource",
+          "Target": "longRunningOperation"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "noMfaOnRoleActivationAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [noMfaOnRoleActivationAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/noMfaOnRoleActivationAlertConfiguration?view=graph-rest-beta) resource",
+          "Target": "noMfaOnRoleActivationAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "noMfaOnRoleActivationAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [noMfaOnRoleActivationAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/noMfaOnRoleActivationAlertIncident?view=graph-rest-beta) resource",
+          "Target": "noMfaOnRoleActivationAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redundantAssignmentAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redundantAssignmentAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redundantAssignmentAlertConfiguration?view=graph-rest-beta) resource",
+          "Target": "redundantAssignmentAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redundantAssignmentAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [redundantAssignmentAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/redundantAssignmentAlertIncident?view=graph-rest-beta) resource",
+          "Target": "redundantAssignmentAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleManagementAlert",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/roleManagementAlert?view=graph-rest-beta) resource",
+          "Target": "roleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration?view=graph-rest-beta) resource",
+          "Target": "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident?view=graph-rest-beta) resource",
+          "Target": "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sequentialActivationRenewalsAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [sequentialActivationRenewalsAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/sequentialActivationRenewalsAlertConfiguration?view=graph-rest-beta) resource",
+          "Target": "sequentialActivationRenewalsAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sequentialActivationRenewalsAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [sequentialActivationRenewalsAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/sequentialActivationRenewalsAlertIncident?view=graph-rest-beta) resource",
+          "Target": "sequentialActivationRenewalsAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "staleSignInAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [staleSignInAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/staleSignInAlertConfiguration?view=graph-rest-beta) resource",
+          "Target": "staleSignInAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "staleSignInAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [staleSignInAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/staleSignInAlertIncident?view=graph-rest-beta) resource",
+          "Target": "staleSignInAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/tooManyGlobalAdminsAssignedToTenantAlertConfiguration?view=graph-rest-beta) resource",
+          "Target": "tooManyGlobalAdminsAssignedToTenantAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tooManyGlobalAdminsAssignedToTenantAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [tooManyGlobalAdminsAssignedToTenantAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/tooManyGlobalAdminsAssignedToTenantAlertIncident?view=graph-rest-beta) resource",
+          "Target": "tooManyGlobalAdminsAssignedToTenantAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementAlert",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertConfiguration?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleManagementAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementAlertDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementAlertDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertDefinition?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleManagementAlertDefinition"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleManagementAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Method",
+          "ChangedApiName": "refresh",
+          "ChangeType": "Addition",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Method",
+          "ChangedApiName": "refresh",
+          "ChangeType": "Addition",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Method",
+          "ChangedApiName": "remediate",
+          "ChangeType": "Addition",
+          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlertIncident?view=graph-rest-beta) method to the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlertIncident"
+        }
+      ],
+      "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-31T17:44:49.9324302Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleAssignmentScheduleRequests",
