@@ -21,21 +21,21 @@ Represents a general ledger entry in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:-------------|:-------------|:----------|
-|[Get generalLedgerEntries](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntries|Get a general ledger (G/L) entry object.|
+|[Get generalLedgerEntries](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntries|Get a general ledger entry object.|
 
 ## Properties
 | Property	         | Type	                 |Description                                  |
 |:-------------------|:----------------------|:--------------------------------------------|
-|accountId           |GUID                   |Specifies the accountId of the G/L entry.    |
-|accountNumber       |string |Specifies the accountNumber of the G/L entry. The maximum size is 20.|
-|creditAmount        |numeric                |Specifies the creditAmount of the G/L entry. |
-|debitAmount         |numeric                |Specifies the debitAmount of the G/L entry.  |
-|description         |string |Specifies the description of the G/L entry. The maximum size is 50.  |
-|documentNumber      |string |Specifies the document number of the G/L entry. The maximum size is 20.|
-|documentType        |string                 |Specifies the document type of the G/L entry.|
-|id                  |numeric                |The unique ID of the G/L entry.              |
-|lastModifiedDateTime|datetime               |The last date time when the G/L entry was modified.|
-|postingDate         |date                   |Specifies the posting date of the G/L entry. |
+|accountId           |GUID                   |Specifies the account ID of the general ledger entry.    |
+|accountNumber       |string |Specifies the account number of the general ledger entry. The maximum size is 20 characters.|
+|creditAmount        |numeric                |Specifies the credit amount of the general ledger entry. |
+|debitAmount         |numeric                |Specifies the debit amount of the general ledger entry.  |
+|description         |string |Specifies the description of the general ledger entry. The maximum size is 50 characters.  |
+|documentNumber      |string |Specifies the document number of the general ledger entry. The maximum size is 20 characters.|
+|documentType        |string                 |Specifies the document type of the general ledger entry.|
+|id                  |numeric                |The unique identifier for the general ledger entry.              |
+|lastModifiedDateTime|datetime               |The last date time when the general ledger entry was modified.|
+|postingDate         |date                   |Specifies the posting date of the general ledger entry. |
 
 
 ## Relationships
@@ -56,8 +56,8 @@ The following is a JSON representation of the resource.
   "documentNumber": "String",
   "documentType": "String",
   "id": "Int",
-  "lastModifiedDateTime": "Datetime"
-  "postingDate": "Date",
+  "lastModifiedDateTime": "Datetime",
+  "postingDate": "Date"
 }
 ```
 
