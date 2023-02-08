@@ -27,10 +27,7 @@ You'll need an X.509 certificate installed in your user's trusted store on the m
 
 ### Register the application
 
-You can register the application either in the [Azure Active Directory portal](https://aad.portal.azure.com), or using the Microsoft Graph CLI.
-
-<!-- markdownlint-disable MD025 MD051 -->
-# [Portal](#tab/azure-portal)
+You can register the application in the [Azure Active Directory portal](https://aad.portal.azure.com).
 
 1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and sign in using a Microsoft 365 tenant organization admin.
 
@@ -60,46 +57,6 @@ You can register the application either in the [Azure Active Directory portal](h
 
 1. Select **Certificates & secrets** under **Manage**, then select the **Certificates** tab. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
 
-# [PowerShell](#tab/powershell)
-<!-- markdownlint-enable MD025 MD051 -->
-
-> [!NOTE]
-> You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
-
-You may be wondering: "I can use the PowerShell SDK to register an app, so that I can use the PowerShell SDK?" Yes! In this case, you're using the PowerShell SDK with delegated access, logging in as an administrator, and creating the app registration. Then, using that app registration, you're able to use the PowerShell SDK with app-only access, allowing for unattended scripts.
-
-1. Use a text editor to create a new file named **RegisterAppOnly.ps1**. Paste the following code into the file.
-
-    :::code language="powershell" source="RegisterAppOnly.ps1":::
-
-1. Save the file. Open PowerShell in the directory that contains **RegisterAppOnly.ps1** and run the following command.
-
-    ```powershell
-    .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
-    ```
-
-1. Open your browser as prompted. Sign in with an administrator account and accept the permissions.
-
-1. Review the output for the prompt `Please go to the following URL in your browser to provide admin consent`. Copy the URL provided and paste it in your browser. Sign in with an administrator account to grant admin consent to your newly registered application.
-
-    > [!NOTE]
-    > After granting admin consent, the browser will redirect back to `http://localhost` and display a **Not Found** error. This error can be ignored as long as the URL contains `admin_consent=True`.
-
-1. Review the rest of the PowerShell output for `Connect-MgGraph` command pre-filled with the values for your app registration.
-
-    > [!TIP]
-    > If the script returns an error stating `New-MgServicePrincipal : Unable to find target address`, re-run the script with the additional `-TenantId` parameter. For details, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
-
----
-
-```bash
-# DER format
-base64 -w 0 ClientCert.cer
-
-# PEM format
-openssl x509 -in ClientCert.pem -outform der | base64 -w 0
-```
-
 ## Authenticate
 
 You should have three pieces of information after completing the configuration steps above.
@@ -114,71 +71,76 @@ We'll use this information to test authentication. Open PowerShell and run the f
 mgc login --client-id YOUR_APP_ID --tenant-id YOUR_TENANT_ID --certificate-name "YOUR_CERT_SUBJECT" --strategy ClientCertificate
 ```
 
-If the command succeeds, you'll see `Welcome To Microsoft Graph!`. Run `Get-MgContext` to verify that you've authenticated with app-only. The output should look like the following.
+Alternatively, you can use the certificate thumbprint instead of the subject.
 
-```powershell
-ClientId              : YOUR_APP_ID
-TenantId              : YOUR_TENANT_ID
-CertificateThumbprint :
-Scopes                : {Group.Read.All, User.Read.All}
-AuthType              : AppOnly
-CertificateName       : YOUR_CERT_SUBJECT
-Account               :
-AppName               : Graph PowerShell Script
-ContextScope          : Process
+```bash
+mgc login --client-id YOUR_APP_ID --tenant-id YOUR_TENANT_ID --certificate-thumb-print "YOUR_CERT_THUMBPRINT" --strategy ClientCertificate
 ```
 
-## Create the script
+## List users and groups
 
-Create a new file named **GraphAppOnly.ps1** and add the following code.
+Run the following command to list the first 50 users in your tenant, formatted as a table.
 
-```powershell
-# Authenticate
-Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
-
-Write-Host "USERS:"
-Write-Host "======================================================"
-# List first 50 users
-Get-MgUser -Property "id,displayName" -PageSize 50 | Format-Table DisplayName, Id
-
-Write-Host "GROUPS:"
-Write-Host "======================================================"
-# List first 50 groups
-Get-MgGroup -Property "id,displayName" -PageSize 50 | Format-Table DisplayName, Id
-
-# Disconnect
-Disconnect-MgGraph
+```bash
+mgc users list --select displayName,id --top 50 --output TABLE
 ```
 
-Replace the placeholders in the `Connect-MgGraph` command with your information. Save the file, then open PowerShell in the directory where you created the file. Run the script with the following command.
+The command returns users' display names and IDs in a table.
 
-```powershell
-.\GraphAppOnly.ps1
+```bash
+┌────────────────────────────────────┬──────────────────────────────────────────────────┐
+│ displayName                        │ id                                               │
+├────────────────────────────────────┼──────────────────────────────────────────────────┤
+│ Conf Room Adams                    │ 70214bd8-c3eb-4ec4-8c3e-9027b2764c52             │
+│ Adele Vance                        │ 05fb57bf-2653-4396-846d-2f210a91d9cf             │
+│ MOD Administrator                  │ 965d30b5-f1ba-4f59-90f0-4d81dfb1aa42             │
+│ Alex Wilber                        │ a36fe267-a437-4d24-b39e-7344774d606c             │
+│ Allan Deyoung                      │ 54cebbaa-2c56-47ec-b878-c8ff309746b0             │
+└────────────────────────────────────┴──────────────────────────────────────────────────┘
 ```
 
-The script outputs a list of users and groups similar to the output below (truncated for brevity).
+Run the following command to list the first 50 groups in your tenant, formatted as JSON.
 
-```powershell
-Welcome To Microsoft Graph!
-USERS:
-======================================================
+```bash
+mgc groups list --select displayName,id --top 50
+```
 
-DisplayName              Id
------------              --
-Conf Room Adams          88d1ba68-8ff5-4de2-90ed-768c00abcfae
-Adele Vance              3103c7b9-cfe6-4cd3-a696-f88909b9a609
-MOD Administrator        da3a885e-2d97-41de-9347-5271ef321b58
-...
+The command returns groups' display names and IDs in JSON format.
 
-GROUPS:
-======================================================
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(displayName,id)",
+  "value": [
+    {
+      "displayName": "Parents of Contoso",
+      "id": "1a0405b3-57d1-48fc-ad18-6cb63b350826"
+    },
+    {
+      "displayName": "Digital Initiative Public Relations",
+      "id": "22cf3814-dbef-4eb0-abe3-759b320b7d76"
+    },
+    {
+      "displayName": "Communications",
+      "id": "268360c5-ad3a-44c0-b35c-cef473609d9d"
+    },
+    {
+      "displayName": "Paralegals",
+      "id": "2fb31b50-4c46-4ae9-8177-19347e68ce8e"
+    },
+    {
+      "displayName": "Leadership",
+      "id": "364fad81-7c37-455d-94bb-7d5a209c42fe"
+    },
+  ]
+}
+```
 
-DisplayName                         Id
------------                         --
-App Development                     06dce3e5-d310-4add-ab2c-be728fb9076e
-All Employees                       1a1cd42d-9801-4e9d-9b77-5215886174ef
-Mark 8 Project Team                 2bf1b0d0-81f6-4e80-b971-d1db69f8d651
-...
+## Logout
+
+Finally, logout of the CLI.
+
+```bash
+mgc logout
 ```
 
 ## See also
