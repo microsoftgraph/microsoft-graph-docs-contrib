@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
 
 requestCount := true
 
-requestParameters := &graphconfig.AppRoleAssignedResourcesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeAppRoleAssignedResourcesRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Select: [] string {"displayName","accountEnabled","servicePrincipalType","signInAudience"},
 }
-configuration := &graphconfig.AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeAppRoleAssignedResourcesRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

@@ -57,11 +57,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.conversationMember",
+  "displayName": "String",
   "id": "String (identifier)",
   "roles": [
     "String"
   ],
-  "displayName": "String",
   "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```

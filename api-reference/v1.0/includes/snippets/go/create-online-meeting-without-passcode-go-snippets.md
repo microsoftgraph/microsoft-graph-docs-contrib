@@ -14,13 +14,10 @@ endDateTime , err := time.Parse(time.RFC3339, "2019-07-12T15:00:34.2464912-07:00
 requestBody.SetEndDateTime(&endDateTime) 
 subject := "User meeting in Microsoft Teams channel."
 requestBody.SetSubject(&subject) 
-additionalData := map[string]interface{}{
-joinMeetingIdSettings := graphmodels.New()
-	isPasscodeRequired := false
+joinMeetingIdSettings := graphmodels.NewJoinMeetingIdSettings()
+isPasscodeRequired := false
 joinMeetingIdSettings.SetIsPasscodeRequired(&isPasscodeRequired) 
-	requestBody.SetJoinMeetingIdSettings(joinMeetingIdSettings)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetJoinMeetingIdSettings(joinMeetingIdSettings)
 
 result, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
 

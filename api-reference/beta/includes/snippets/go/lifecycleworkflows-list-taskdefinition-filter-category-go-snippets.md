@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "category has 'joiner'"
 
-requestParameters := &graphconfig.TaskDefinitionsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsTaskDefinitionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TaskDefinitionsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsTaskDefinitionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -2226,3 +2226,62 @@ Possible values for user account types (group membership), per Windows definitio
 |succeeded|
 |failed|
 |unknownFutureValue|
+
+### delegatedAdminAccessAssignmentStatus values 
+
+|Member|
+|:---|
+|pending|
+|active|
+|deleting|
+|deleted|
+|error|
+|unknownFutureValue|
+
+### delegatedAdminAccessContainerType values 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipOperationType values 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestAction values 
+
+|Member|
+|:---|
+|lockForApproval|
+|terminate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestStatus values 
+
+|Member|
+|:---|
+|created|
+|pending|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipStatus values 
+
+|Member|
+|:---|
+|activating|
+|active|
+|approvalPending|
+|approved|
+|created|
+|expired|
+|expiring|
+|terminated|
+|terminating|
+|terminationRequested|
+|unknownFutureValue|

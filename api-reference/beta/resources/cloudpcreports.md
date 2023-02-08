@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents the Windows 365 Cloud PC-related reports, including the Windows 365 Cloud PC remote connections report.
 
+Use a method in the [Methods](#methods) section to get the corresponding report data in the response. Alternatively, you can use the [cloudPCExportJob](cloudpcexportjob.md) resource and specify a storage account URL to download the specfic report.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

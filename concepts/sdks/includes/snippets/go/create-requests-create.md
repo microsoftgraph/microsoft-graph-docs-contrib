@@ -6,6 +6,7 @@
 import (
     calendars "github.com/microsoftgraph/msgraph-sdk-go/me/calendars"
     graph "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+    "context"
 )
 
 calendar := graph.NewCalendar()
@@ -16,5 +17,5 @@ options := calendars.CalendarsRequestBuilderPostOptions{
     Body: calendar,
 }
 
-result, err := client.Me().Calendars().Post(&options)
+result, err := client.Me().Calendars().Post(context.Background(), &options)
 ```

@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new ApplicationsRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new ApplicationsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "owners/$count eq 0";
+$queryParameters->filter = "owners/$count eq 0 or owners/$count eq 1";
 $queryParameters->count = true;
 
 $headers = [

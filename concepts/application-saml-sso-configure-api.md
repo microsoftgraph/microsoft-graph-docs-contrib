@@ -1,7 +1,9 @@
 ---
 title: "Use Microsoft Graph APIs to configure SAML-based single sign-on"
 description: "Follow these steps to create and configure a SAML-based single sign-on (SSO) for your application in Azure AD using the Microsoft Graph API."
-author: "AllisonAm"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: alamaral
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
@@ -144,7 +146,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-saml-sso-applicationtemplateinstantiate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

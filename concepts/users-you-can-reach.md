@@ -1,9 +1,7 @@
 ---
 title: "Users you can reach with Microsoft Graph"
 description: "Use the Microsoft Graph API to build Microsoft 365 applications that connect users to personal services, work services, and school services."
-author: "dkershaw10"
 ms.localizationpriority: high
-ms.prod: "applications"
 ---
 
 # Users you can reach with Microsoft Graph

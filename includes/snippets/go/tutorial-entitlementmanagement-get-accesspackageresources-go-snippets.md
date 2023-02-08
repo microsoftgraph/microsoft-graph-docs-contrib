@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "(displayName eq 'Marketing resources')"
 
-requestParameters := &graphconfig.AccessPackageResourcesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageCatalogItemAccessPackageResourcesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.AccessPackageResourcesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageCatalogItemAccessPackageResourcesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

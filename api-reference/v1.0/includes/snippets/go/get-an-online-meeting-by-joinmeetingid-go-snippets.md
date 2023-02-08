@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "joinMeetingIdSettings/joinMeetingId eq '1234567890'"
 
-requestParameters := &graphconfig.OnlineMeetingsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeOnlineMeetingsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.OnlineMeetingsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeOnlineMeetingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
