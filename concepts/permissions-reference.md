@@ -821,6 +821,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Directory recommendations permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DirectoryRecommendations.Read.All_ | Read all recommendations | Allows the  app to read recommendations on behalf of the signed-in user. | Yes | No |
+| _DirectoryRecommendations.ReadWrite.All_ | Manage all recommendations | Allows the  app to read and write recommendations on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _DirectoryRecommendations.Read.All_ | Read all recommendations | Allows the  app to read recommendations without a signed-in user. | Yes |
+| _DirectoryRecommendations.ReadWrite.All_ | Manage all recommendations | Allows the  app to read and write recommendations without a signed-in user. | Yes |
+
+---
+
 ## Domain permissions
 
 #### Delegated permissions
@@ -1824,7 +1842,6 @@ _ProgramControl.Read.All_ and _ProgramControl.ReadWrite.All_ are valid only for 
 
 For an app with delegated permissions to read programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.  For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
----
 ## Records management permissions
 
 #### Delegated permissions
