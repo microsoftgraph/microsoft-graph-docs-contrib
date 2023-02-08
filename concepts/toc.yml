@@ -279,6 +279,8 @@ items:
                 href: windowsupdates-deploy-update.md
               - name: Deploy an expedited update
                 href: windowsupdates-deploy-expedited-update.md
+              - name: Manage driver update
+                href: windowsupdates-manage-driver-update.md                
               - name: Schedule a deployment
                 href: windowsupdates-schedule-deployment.md
               - name: Manage safeguards
