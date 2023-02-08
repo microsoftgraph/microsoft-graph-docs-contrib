@@ -1,6 +1,6 @@
 ---
-title: "Azure-metered APIs and services in Microsoft Graph"
-description: "Provides an overview of Azure-metered APIs and services on Microsoft Graph."
+title: "Metered Microsoft 365 APIs and services on Microsoft Graph"
+description: "Provides an overview of metered Microsoft 365 APIs and services on Microsoft Graph."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Metered APIs in Microsoft Graph
 
-Microsoft Graph includes APIs that are both available at no additional cost with user subscription licenses as well as APIs and services that are metered. Microsoft Graph Azure-metered APIs and services incur costs based on usage, this may be per API call made, per object returned in an API call, or other measurable mechanisms.
+Microsoft Graph includes APIs that are both available at no additional cost with user subscription licenses as well as APIs and services that are metered. Metered Microsoft 365 APIs and services incur costs based on usage, this may be per API call made, per object returned in an API call, or other measurable mechanisms.
 
 ## Guiding principles
 These are the principles that guide our approach to Microsoft 365 API endpoints on Microsoft Graph.
@@ -33,9 +33,9 @@ The third category represents access to data that’s enriched or aggregated by 
 In order to access metered Microsoft 365 APIs and services an application must be associated with an active Microsoft Azure Subscription. For instructions on associating an app to a subscription please see [Onboard to Microsoft Graph Metered APIs](metered-api-onboarding.md).
 
 ## Developer considerations when using metered APIs
-- When building an app that leverages Azure-metered APIs it is important to remember that Azure-metered APIs may return errors related to your subscription status in addition to other more common errors. See [Microsoft Graph errors and resource types](errors.md) for more information on error types in Microsoft Graph.
+- When building an app that leverages metered Microsoft 365 APIs and services it is important to remember that the APIs may return errors related to your subscription status in addition to other more common errors. See [Microsoft Graph errors and resource types](errors.md) for more information on error types in Microsoft Graph.
 - Metered APIs are billed according to how much usage occurs on the API. Developers should understand the metering unit to understand how to estimate costs associated with a particular API.
 
 ## Next steps
-- Explore the [list of Azure-metered APIs and services](metered-api-list.md)
-- [Onboard to Microsoft Graph Azure-metered APIs](metered-api-onboarding.md)
+- Explore the [list of metered Microsoft 365 APIs and services](metered-api-list.md)
+- [Onboard to metered Microsoft 365 APIs and services](metered-api-onboarding.md)
