@@ -164,14 +164,10 @@ An active participant is represented as follows:
 - The **Id** property corresponds to participant ID, which is a unique identifier assigned to each participant in the meeting call.
 - The **Identity** property corresponds to the **communicationsIdentitySet**. For details, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta&preserve-view=true).
 
-## Code sample
-
-| **Sample name** | **Description** | **C#**  | **Node.js**   |
-|:---------------------|:--------------|:---------|:--------|
-|Graph Meeting Notification | Demonstrates how to use  online meeting subscription and sends you the notifications in chat using bot. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/nodejs)|
-
 ## See also
 
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - [Online meeting resource](/graph/api/resources/onlineMeeting)
+- [Graph Meeting Notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
+- [Graph Meeting Notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)

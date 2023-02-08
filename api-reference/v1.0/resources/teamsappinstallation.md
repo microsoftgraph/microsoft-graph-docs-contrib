@@ -62,18 +62,14 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## Code sample
-
-| **Sample name** | **Description** | **C#**  | **Node.js**   |
-|:---------------------|:--------------|:---------|:--------|
-|Graph API Teams App Installation Life Cycle | Describes how to use Teams App Installation Life Cycle by calling Microsoft Graph APIs. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-app-installation-lifecycle/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-app-installation-lifecycle/nodejs)|
-
 ## See also
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
 - [userScopeTeamsAppInstallation](../resources/userscopeteamsappinstallation.md)
+- [Graph API Teams App Installation Life Cycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-app-installation-lifecycle/csharp)
+- [Graph API Teams App Installation Life Cycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-app-installation-lifecycle/nodejs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -28,17 +28,13 @@ In general, subscription operations require read permission to the resource. For
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][]                                        |
 | Application                            | [alert][], [callRecord][], [channel][], [chatMessage][], [contact][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [printer][], [printTaskDefinition][], [team][], [user][]|
 
-## Code sample
-
-| **Sample name** | **Description** | **C#**  | **Node.js**   |
-|:---------------------|:--------------|:---------|:--------|
-|Change Notification| Describes how to send change notifications to user presence in Teams based on user presence status.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)|
-
 ## See also
 
 - [subscription resource type](./subscription.md)
 - [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](/graph/webhooks-lifecycle)
+- [Change Notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/csharp)
+- [Change Notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)
 
 <!-- Links -->
 [chat]: ./chat.md

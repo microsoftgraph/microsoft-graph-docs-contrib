@@ -311,12 +311,6 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-## Code sample
-
-| **Sample name** | **Description** | **C#**  | **Node.js**   |
-|:---------------------|:--------------|:---------|:--------|
-|Change Notifications Team or Channel| Demonstrates use of Team or Channel subscription that posts notifications when user create, edit, or delete a team or channel using Graph api. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)|
-
 ## See also
 
 - [Microsoft Graph change notifications](webhooks.md)
@@ -325,3 +319,5 @@ For notifications without resource data, the payload looks like the following. T
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
+- [Change Notifications Team or Channel C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)
+- [Change Notifications Team or Channel Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)
