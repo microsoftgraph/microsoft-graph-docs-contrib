@@ -19,10 +19,10 @@ items:
       items:
       - name: Overview
         displayName: Microsoft Graph permissions
-        href: /graph/permissions-overview?context=graph/api/1.0
+        href: /graph/permissions-overview?context=graph/api/beta
       - name: Permissions reference
         displayName: Microsoft Graph permissions list
-        href: /graph/permissions-reference?context=graph/api/1.0
+        href: /graph/permissions-reference?context=graph/api/beta
       - name: Azure AD built-in roles
         displayName: Microsoft Graph permissions
         href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
@@ -219,6 +219,18 @@ items:
         href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
       - name: App-only authentication
         href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+    - name: Use the CLI
+      items:
+      - name: CLI overview
+        href: /graph/cli/overview?context=graph/api/beta
+      - name: Install the CLI
+        href: /graph/cli/installation?context=graph/api/beta
+      - name: Get started
+        href: /graph/cli/get-started?context=graph/api/beta
+      - name: Navigate the CLI
+        href: /graph/cli/navigating?context=graph/api/beta
+      - name: App-only authentication
+        href: /graph/cli/app-only?context=graph/api/beta
   - name: Use the toolkit
     items:
     - name: Overview
@@ -21731,7 +21743,7 @@ items:
               - name: Get task
                 href: api/identitygovernance-task-get.md
               - name: Update task
-                href: api/identitygovernance-task-update.md  
+                href: api/identitygovernance-task-update.md
             - name: Reports
               displayName: Lifecycle Workflows
               items:
@@ -21767,7 +21779,7 @@ items:
                 - name: Get summary
                   href: api/identitygovernance-run-summary.md
                 - name: List task processing results
-                  href: api/identitygovernance-run-list-taskprocessingresults.md  
+                  href: api/identitygovernance-run-list-taskprocessingresults.md
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
                 - name: Get user processing result
@@ -23450,7 +23462,7 @@ items:
             - name: Training user coverage
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
-              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md        
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
         - name: Simulation automation
           items:
           - name: Simulation automation
@@ -24091,7 +24103,7 @@ items:
             href: resources/standardwebpart.md
           - name: List
             href: api/webpart-list.md
-          - name: Get 
+          - name: Get
             href: api/webpart-get.md
           - name: Get position
             href: api/webpart-getposition.md

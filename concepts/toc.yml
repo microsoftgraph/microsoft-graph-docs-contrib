@@ -333,7 +333,7 @@ items:
               - name: Get links to assignments and submissions
                 href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
-                href: update-assignment-and-grade-data.md               
+                href: update-assignment-and-grade-data.md
               - name: Download all resources from a set of assignments
                 href: download-resources-from-assignment.md
               - name: Share assignments with an embedded Teams application
@@ -936,6 +936,18 @@ items:
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+          - name: Use the CLI
+            items:
+              - name: CLI overview
+                href: cli/overview.md
+              - name: Install the CLI
+                href: cli/installation.md
+              - name: Get started
+                href: cli/get-started.md
+              - name: Navigate the CLI
+                href: cli/navigating.md
+              - name: App-only authentication
+                href: cli/app-only.md
       - name: Use the toolkit
         items:
           - name: Overview
