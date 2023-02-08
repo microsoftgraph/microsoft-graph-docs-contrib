@@ -14,7 +14,7 @@ If you are a global administrator, you can turn on or off the display of pronoun
 
 > [!IMPORTANT]
 >
-> This is prerelease documentation. The capabilities for this article are associated with [roadmap IDs 83382 and 115511](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns), and are not currently available in production environments. For availability information, refer to the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns).
+> This is prerelease documentation. The capabilities for this article are associated with [roadmap IDs 83382/115511](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns) and are not currently available in production environments. For availability information, refer to the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns).
 > 
 Using the Microsoft Graph API, you can enable, disable, or get settings that manage pronouns in an organization, such as controlling the display within the organization of any pronouns users may have set up for themselves.
 
