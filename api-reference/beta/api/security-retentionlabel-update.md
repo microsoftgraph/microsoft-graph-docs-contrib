@@ -78,19 +78,11 @@ Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
-  "displayName": "String",
-  "behaviorDuringRetentionPeriod": "String",
-  "actionAfterRetentionPeriod": "String",
-  "retentionTrigger": "String",
   "retentionDuration": {
     "@odata.type": "microsoft.graph.security.retentionDuration"
   },
-  "isInUse": "Boolean",
   "descriptionForAdmins": "String",
   "descriptionForUsers": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
   "labelToBeApplied": "String",
   "defaultRecordBehavior": "String"
 }
@@ -139,24 +131,11 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
   "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
-  "displayName": "String",
-  "behaviorDuringRetentionPeriod": "String",
-  "actionAfterRetentionPeriod": "String",
-  "retentionTrigger": "String",
   "retentionDuration": {
     "@odata.type": "microsoft.graph.security.retentionDuration"
   },
-  "isInUse": "Boolean",
   "descriptionForAdmins": "String",
   "descriptionForUsers": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
   "labelToBeApplied": "String",
   "defaultRecordBehavior": "String"
 }
