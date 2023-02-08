@@ -3,7 +3,7 @@ title: "retentionDurationForever resource type"
 description: "Represents that content will be retained permanently and will not be deleted."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 

@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "yyuank"
 ms.prod: "users"
 doc_type: conceptualPageType
+ms.date: 11/16/2022
 ---
 
 # Working with users in Microsoft Graph
@@ -129,7 +130,7 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 
 With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
 
-For more information about search limitations for guest users, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
+For more information about search limitations for guest users, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions).
 
 ## Common properties
 

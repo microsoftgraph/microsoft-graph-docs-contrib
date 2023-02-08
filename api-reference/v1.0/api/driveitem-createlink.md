@@ -50,7 +50,7 @@ The request should be a JSON object with the following properties.
 | **type**     | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
 | **password** | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.
 | **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
-| **scope** | string | Optional. The scope of link to create. Either `anonymous` or `organization`. |
+| **scope** | string | Optional. The scope of link to create. Either `anonymous`, `organization`, or `users`. |
 
 
 ### Link types
@@ -72,6 +72,7 @@ If the **scope** parameter is not specified, the default link type for the organ
 |:---------------|:------------------------------------------------------------
 | `anonymous`    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
 | `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
+| `users`        | Share only with people you choose inside or outside the organization.
 
 
 ## Response

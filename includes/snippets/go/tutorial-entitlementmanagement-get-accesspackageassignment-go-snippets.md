@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'"
 
-requestParameters := &graphconfig.AccessPackageAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Expand: [] string {"target","accessPackageAssignmentResourceRoles"},
 }
-configuration := &graphconfig.AccessPackageAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

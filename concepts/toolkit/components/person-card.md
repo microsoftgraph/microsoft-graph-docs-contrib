@@ -1,11 +1,11 @@
 ---
-title: "Person-Card component in the Microsoft Graph Toolkit"
+title: "Person-Card component in Microsoft Graph Toolkit"
 description: "A Person-Card component is a component to display more information relating to a person."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Person-Card component in the Microsoft Graph Toolkit
+# Person-Card component in Microsoft Graph Toolkit
 
 A Person-Card component is a responsive component to display more information related to a person. It is generally used as a flyout on the `mgt-person` component.
 
@@ -37,7 +37,7 @@ The following properties are available on the config object.
 
 | Property | Description |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Indicates whether the person card component can use the Microsoft Graph Contact API to search for contact details and photos. Default value is `true`.  |
+| useContactApis | `boolean` - Indicates whether the person card component can use Microsoft Graph Contact API to search for contact details and photos. Default value is `true`.  |
 | sections | `object` - Configures what sections are shown in the person card.  |
 
 ### Person card sections

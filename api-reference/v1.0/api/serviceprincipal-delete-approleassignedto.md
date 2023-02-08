@@ -25,10 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
+DELETE /servicePrincipals/{id}/appRoleAssignedTo/{appRoleAssignment-id}
+DELETE /servicePrincipals(appId='{appId}')/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 
 > [!NOTE]

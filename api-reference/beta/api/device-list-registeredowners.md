@@ -28,9 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredOwners
+GET /devices(deviceId='{deviceId}')/registeredOwners
 ```
 
 > Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of [educationCategory](../resources/educationcategory.md) objects.
+Retrieve a list of [educationCategory](../resources/educationcategory.md) objects. Only teachers can perform this operation.
 
 ## Permissions
 

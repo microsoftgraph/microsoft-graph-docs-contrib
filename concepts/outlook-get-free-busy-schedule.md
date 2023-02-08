@@ -185,7 +185,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Be aware of the following limits and error condition:
 
 - **getSchedule** can support looking up free/busy information for up to 20 entities at once. This limit applies to the number of users identified individually or as members of a distribution list, and to the number of resources as well.
-- The time period to look up must be less than 42 days.
+- The time period to look up must be less than 62 days.
 - If **getSchedule** cannot identify a specified user or resource, it returns a single schedule item and indicates the error. 
 
 

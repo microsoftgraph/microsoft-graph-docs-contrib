@@ -25,9 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## HTTP Request
+
+`{servicePrincipalId}` refers to the **id** of the service principal object. **id** is referred to as the **Object ID** of the enterprise application in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
+POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/restart
 ```
 
 ## Request headers

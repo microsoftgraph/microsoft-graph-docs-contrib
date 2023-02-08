@@ -16,8 +16,8 @@ Namespace: microsoft.graph.
 Reply to the sender of a [message](../resources/message.md) using either JSON or MIME format.
 
 When using JSON format:
-- Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+* Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP `400 Bad Request` error.
+* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 
 When using MIME format:
 - Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
@@ -66,15 +66,15 @@ When specifying the body in MIME format, provide the MIME content with the appli
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
-If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
+If the request body includes malformed MIME content, this method returns a `400 Bad Request` response code and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 ### Example 1: Reply to a message in JSON format
 The following example includes a comment and adds a recipient to the reply message.
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 
@@ -137,8 +137,8 @@ Content-Type: application/json
 ---
 
 
-##### Response
-Here is an example of the response.
+#### Response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -150,8 +150,8 @@ HTTP/1.1 202 Accepted
 ```
 
 ### Example 2: Reply to a message in MIME format
-##### Request
-
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "message_reply_mime_beta"
@@ -165,8 +165,8 @@ UmVjZWl2ZWQ6IGZyb20gY29udG9zby5jb20gKDEwLjE5NC4yNDEuMTk3KSBieSAKY29udG9zby5jb20g
 
 ```
 
-##### Response
-Here is an example of the response.
+#### Response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

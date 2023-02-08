@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestQuery := "Adventure"
 
-requestParameters := &graphconfig.BookingBusinessesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SolutionsBookingBusinessesRequestBuilderGetQueryParameters{
 	Query: &requestQuery,
 }
-configuration := &graphconfig.BookingBusinessesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SolutionsBookingBusinessesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

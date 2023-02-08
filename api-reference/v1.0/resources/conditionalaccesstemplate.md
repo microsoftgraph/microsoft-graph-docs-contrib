@@ -46,12 +46,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.conditionalAccessTemplate",
+  "description": "String",
+  "details": {
+    "@odata.type": "microsoft.graph.conditionalAccessPolicyDetail",
   "id": "String (identifier)",
   "name": "String",
-  "description": "String",
-  "scenarios": "String",
-  "details": {
-    "@odata.type": "microsoft.graph.conditionalAccessPolicyDetail"
+  "scenarios": "String"
   }
 }
 ```

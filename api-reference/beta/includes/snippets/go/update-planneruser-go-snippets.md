@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-	"If-Match": "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"",
-}
-configuration := &graphconfig.PlannerRequestBuilderPatchRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+headers.Add("If-Match", "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"")
+
+configuration := &graphconfig.MePlannerRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerUser()

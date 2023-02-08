@@ -51,7 +51,7 @@ PATCH /security/incidents/{incidentId}
 |classification|microsoft.graph.security.alertClassification|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |status|microsoft.graph.security.incidentStatus|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
-|tags|String collection|Array of custom tags associated with an incident.|
+|customTags|String collection|Array of custom tags associated with an incident.|
 
 
 ## Response
@@ -77,7 +77,7 @@ Content-Type: application/json
 {
     "classification": "TruePositive",
     "determination": "MultiStagedAttack",
-    "tags": [
+    "customTags": [
       "Demo"
     ]
 }
@@ -138,7 +138,7 @@ Content-Type: application/json
     "determination": "MultiStagedAttack",
     "status": "Active",
     "severity": "Medium",
-    "tags": [
+    "customTags": [
       "Demo"
     ],
     "comments": [

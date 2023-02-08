@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md).
+Retrieve the properties of a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md).
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
@@ -43,6 +43,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+### For administrative units:
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

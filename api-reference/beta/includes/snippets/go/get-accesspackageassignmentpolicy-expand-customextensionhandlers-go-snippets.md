@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.AccessPackageAssignmentPolicyRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageAssignmentPolicieItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"customExtensionHandlers($expand=customExtension)"},
 }
-configuration := &graphconfig.AccessPackageAssignmentPolicyRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageAssignmentPolicieItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

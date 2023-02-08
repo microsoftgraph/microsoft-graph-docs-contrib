@@ -46,11 +46,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.checklistItem",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
   "checkedDateTime": "String (timestamp)",
-  "isChecked": "Boolean",
-  "id": "String (identifier)"
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isChecked": "Boolean"
 }
 ```
 

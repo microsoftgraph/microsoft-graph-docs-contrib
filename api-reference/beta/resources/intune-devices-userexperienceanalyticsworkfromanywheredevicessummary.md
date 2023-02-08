@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsWorkFromAnywhereDevicesSummary resource type"
 description: "The user experience analytics Work From Anywhere metrics devices summary."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -80,8 +80,3 @@ Here is a JSON representation of the resource.
   "devicesWithoutAutopilotProfileAssigned": 1024
 }
 ```
-
-
-
-
-

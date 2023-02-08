@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var topic = new TeamworkActivityTopic
 {
 	Source = TeamworkActivityTopicSource.EntityUrl,
-	Value = "https://graph.microsoft.com/beta/teams/{teamId}"
+	Value = "https://graph.microsoft.com/v1.0/teams/{teamId}"
 };
 
 var activityType = "taskCreated";

@@ -32,9 +32,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewHistoryScheduleSettings",
-  "reportRange": "String",
   "recurrence": {
     "@odata.type": "microsoft.graph.patternedRecurrence"
-  }
+  },
+  "reportRange": "String"
+  
 }
 ```
