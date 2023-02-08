@@ -1,6 +1,6 @@
 ---
 title: "pstnCallLogRow resource type"
-description: "Represents a row of data in the Public Switch Telephone Network (PSTN) call log."
+description: "Represents a row of data in the public switched telephone network (PSTN) call log."
 author: "williamlooney"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a row of data in the Public Switch Telephone Network (PSTN) call log. Each row maps to one call.
+Represents a row of data in the public switched telephone network (PSTN) call log. Each row maps to one call.
 
 ## Methods
 
@@ -33,7 +33,7 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |charge|Double|Amount of money or cost of the call that is charged to your account.|
 |conferenceId|String|ID of the audio conference.|
 |connectionCharge|Double|Connection fee price.|
-|currency|String|Type of currency used to calculate the cost of the call ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)).|
+|currency|String|Type of currency used to calculate the cost of the call. For details, see [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).|
 |destinationContext|String|Whether the call was domestic (within a country or region) or international (outside a country or region) based on the user's location.|
 |destinationName|String|Country or region dialed.|
 |duration|Int32|How long the call was connected, in seconds.|
@@ -43,11 +43,11 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |licenseCapability|String|The license used for the call.|
 |operator|String|The telecommunications operator which provided PSTN services for this call. This may be Microsoft, or it may be a third-party operator via the [Operator Connect Program](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398).|
 |startDateTime|DateTimeOffset|Call start time.|
-|tenantCountryCode|String|Country code of the tenant, [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
-|usageCountryCode|String|Country code of the user, [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|tenantCountryCode|String|Country code of the tenant. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|usageCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
 |userId|String|Calling user's ID in Graph. GUID. This and other user info will be null/empty for bot call types (ucap_in, ucap_out).|
-|userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address.|
+|userPrincipalName|String|The user principal name (sign-in name) in Azure Active Directory. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
 
 ## Relationships
 
@@ -67,29 +67,29 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callRecords.pstnCallLogRow",
-  "id": "String (identifier)",
+  "callDurationSource": "String",
   "callId": "String",
-  "userId": "String",
-  "userPrincipalName": "String",
-  "userDisplayName": "String",
-  "startDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
-  "duration": "Integer",
-  "charge": "Double",
   "callType": "String",
-  "currency": "String",
   "calleeNumber": "String",
-  "usageCountryCode": "String",
-  "tenantCountryCode": "String",
-  "connectionCharge": "Double",
   "callerNumber": "String",
+  "charge": "Double",
+  "conferenceId": "String",
+  "connectionCharge": "Double",
+  "currency": "String",
   "destinationContext": "String",
   "destinationName": "String",
-  "conferenceId": "String",
-  "licenseCapability": "String",
+  "duration": "Integer",
+  "endDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "inventoryType": "String",
+  "licenseCapability": "String",
   "operator": "String",
-  "callDurationSource": "String"
+  "startDateTime": "String (timestamp)",
+  "tenantCountryCode": "String",
+  "usageCountryCode": "String",
+  "userDisplayName": "String",
+  "userId": "String",
+  "userPrincipalName": "String"
 }
 ```
 
