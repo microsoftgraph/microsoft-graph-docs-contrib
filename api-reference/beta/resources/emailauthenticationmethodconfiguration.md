@@ -1,7 +1,7 @@
 ---
 title: "emailAuthenticationMethodConfiguration resource type"
 description: "Represents an email OTP authentication methods policy"
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
@@ -20,13 +20,14 @@ Represents this tenant's email OTP authentication methods policy. Authentication
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-get.md)|[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)|Read the properties and relationships of an emailAuthenticationMethodConfiguration object.|
-|[Update emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-update.md)|[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)|Update the properties of an emailAuthenticationMethodConfiguration object.|
-|[Delete emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-delete.md)|None|Deletes an emailAuthenticationMethodConfiguration object.|
+|[Update emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-update.md)|None|Update the properties of an emailAuthenticationMethodConfiguration object.|
+|[Delete emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-delete.md)|None|Reverts the emailAuthenticationMethodConfiguration object to its default configuration.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |state|authenticationMethodState|Indicates whether this authentication method is enabled or not. Possible values are: `enabled`, `disabled`.|
 |allowExternalIdToUseEmailOtp|externalEmailOtpState|Determines whether email OTP is usable by external users for authentication. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. Tenants in the `default` state who did not use public preview will automatically have email OTP enabled beginning in October 2021.|
@@ -35,7 +36,7 @@ Represents this tenant's email OTP authentication methods policy. Authentication
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 ## JSON representation
 
@@ -54,6 +55,11 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ],
   "allowExternalIdToUseEmailOtp": "String",
   "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
 }

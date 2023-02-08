@@ -75,7 +75,7 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 
 ### Exact match required
 
-If **isExactMatchRequired**` is `true` for a property, the full string value will be indexed. **isExactMatchRequired** can only be set to `true` for non-searchable properties.
+If **isExactMatchRequired** is `true` for a property, the full string value will be indexed. **isExactMatchRequired** can only be set to `true` for non-searchable properties.
 
 For example, the **ticketId** property is both queryable and specifies exact matching.
 - Querying `ticketId:CTS-ce913b61` will return the item with a ticket ID property **CTS-ce913b61**.

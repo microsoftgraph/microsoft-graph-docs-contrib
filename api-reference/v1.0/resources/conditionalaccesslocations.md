@@ -17,8 +17,8 @@ Represents locations included in and excluded from the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| includeLocations | String collection | Location IDs in scope of policy unless explicitly excluded, `All`, or `AllTrusted`. |
 | excludeLocations | String collection | Location IDs excluded from scope of policy. |
+| includeLocations | String collection | Location IDs in scope of policy unless explicitly excluded, `All`, or `AllTrusted`. |
 
 ## JSON representation
 

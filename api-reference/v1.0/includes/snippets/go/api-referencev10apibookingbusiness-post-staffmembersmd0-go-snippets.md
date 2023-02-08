@@ -128,6 +128,8 @@ timeSlots := []graphmodels.Objectable {
 		,
 
 	}
+	isEmailNotificationEnabled := false
+requestBody.SetIsEmailNotificationEnabled(&isEmailNotificationEnabled) 
 }
 requestBody.SetAdditionalData(additionalData)
 

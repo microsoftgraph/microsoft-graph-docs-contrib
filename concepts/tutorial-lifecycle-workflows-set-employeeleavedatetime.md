@@ -1,10 +1,13 @@
 ---
 title: Set employeeLeaveDateTime
 description: Configure the employeeLeaveDateTime property for a user object using Microsoft Graph. 
-author: AlexFilipin
+author: "FaithOmbongi"
+ms.reviewer: Alexander.Filipin
+ms.author: ombongifaith
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 12/08/2022
 ---
 
 # Configure the employeeLeaveDateTime property for a user
@@ -17,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|User-LifeCycleInfo.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account)|User.Read.All and User-LifeCycleInfo.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|User-LifeCycleInfo.ReadWrite.All|
+|Application|User.Read.All and User-LifeCycleInfo.ReadWrite.All|
 
 For delegated scenarios, the admin must also have the Global Administrator [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 

@@ -1,7 +1,7 @@
 ---
 title: "Delete internalDomainFederation"
 description: "Delete an internalDomainFederation object."
-author: "akgoel23"
+author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

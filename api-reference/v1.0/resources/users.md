@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "yyuank"
 ms.prod: "users"
 doc_type: conceptualPageType
+ms.date: 11/16/2022
 ---
 
 # Working with users in Microsoft Graph

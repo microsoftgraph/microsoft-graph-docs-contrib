@@ -32,9 +32,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.externalDomainFederation",
-  "issuerUri": "String",
+  "displayName": "String",
   "domainName": "String",
-  "displayName": "String"
+  "issuerUri": "String"
 }
 ```
 

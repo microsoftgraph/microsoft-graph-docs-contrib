@@ -733,6 +733,58 @@
       "CreatedDateTime": "2022-10-11T09:44:21.690374Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f72df18-71b7-4b7e-acaf-b7e0757d65be",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "chatMessageActions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessageActions** enumeration type.",
+          "Target": "chatMessageActions"
+        },
+        {
+          "Id": "3f72df18-71b7-4b7e-acaf-b7e0757d65be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMessageHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageHistoryItem?view=graph-rest-beta) resource type.",
+          "Target": "chatMessageHistoryItem"
+        },
+        {
+          "Id": "3f72df18-71b7-4b7e-acaf-b7e0757d65be",
+          "ApiChange": "Property",
+          "ChangedApiName": "messageHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the **messageHistory** property to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "3f72df18-71b7-4b7e-acaf-b7e0757d65be",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-30T22:13:37.3506829Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0d00d1b1-db8b-490d-b3c2-73ca296139df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureCommunicationServicesUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureCommunicationServicesUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-beta) resource.",
+          "Target": "azureCommunicationServicesUserConversationMember"
+        }
+      ],
+      "Id": "0d00d1b1-db8b-490d-b3c2-73ca296139df",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-06T21:39:35.4042034Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }

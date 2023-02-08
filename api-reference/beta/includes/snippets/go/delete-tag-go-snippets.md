@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestForcedelete := true
 
-requestParameters := &graphconfig.TagRequestBuilderDeleteQueryParameters{
+requestParameters := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteQueryParameters{
 	Forcedelete: &requestForcedelete,
 }
-configuration := &graphconfig.TagRequestBuilderDeleteRequestConfiguration{
+configuration := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

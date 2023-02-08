@@ -79,12 +79,12 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 ### chatType values 
 
-| Member             | Value | Description               |
-| :----------------- | :---- | :------------------------ |
-|oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members cannot be removed/added.|
-|group               | 1     | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
-|meeting             | 2     | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
-|unknownFutureValue  | 3     | Evolvable enumeration sentinel value. Do not use. |
+| Member             | Description               |
+| :----------------- | :------------------------ |
+|oneOnOne            | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members cannot be removed/added.|
+|group               | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
+|meeting             | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
+|unknownFutureValue  | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 
@@ -111,19 +111,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "topic": "string",
-  "createdDateTime": "dateTimeOffset",
-  "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "string",
-  "webUrl": "string",
-  "tenantId": "string",
+  "createdDateTime": "dateTimeOffset",
+  "id": "string (identifier)",
+  "lastUpdatedDateTime": "dateTimeOffset",  
+  "onlineMeetingInfo": {
+    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
+  },
+  "tenantId": "string",  
+  "topic": "string",
   "viewpoint": {
     "@odata.type": "microsoft.graph.chatViewpoint"
   },
-  "onlineMeetingInfo": {
-    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
-  }
+  "webUrl": "string"
 }
 ```
 

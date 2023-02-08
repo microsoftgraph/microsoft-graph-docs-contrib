@@ -22,10 +22,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
+
+You can address the directory role using either its **id** or **roleTemplateId**.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryroles/{role-id}/scopedMembers
-GET /directoryroles/roleTemplateId={roleTemplateId}/scopedMembers
+GET /directoryRoles(roleTemplateId='{roleTemplateId}')/scopedMembers
 ```
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -129,7 +132,7 @@ The following is an example of a request for a directory role with **roleTemplat
   "name": "get_scopedmembers_directoryrole_templateId"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=fdd7a751-b60b-444a-984c-02652fe8fa1c/scopedMembers
+GET https://graph.microsoft.com/v1.0/directoryRoles(roleTemplateId='fdd7a751-b60b-444a-984c-02652fe8fa1c')/scopedMembers
 ```
 
 

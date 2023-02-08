@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementConfigurationPlatforms enum type"
 description: "Supported platform types."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -28,8 +28,3 @@ Supported platform types.
 |windows10|32|Windows 10.|
 |linux|128|Linux.|
 |unknownFutureValue|1073741824|Sentinel member for cases where the client cannot handle the new enum values.|
-
-
-
-
-

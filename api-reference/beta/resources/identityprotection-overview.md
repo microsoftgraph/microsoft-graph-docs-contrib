@@ -5,6 +5,7 @@ author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: conceptualPageType
+ms.date: 12/06/2022
 ---
 
 # Use the Microsoft Graph identity protection APIs
@@ -50,7 +51,13 @@ For specific guidance and additional information, see [Identify and remediate ri
 
 ## What licenses do I need?
 
-Azure AD Identity Protection is a premium feature. You need an Azure AD Premium P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with an Azure AD Premium P2 license.
+Azure AD Identity Protection is a premium feature. You need specific licenses to access full details. 
+
+### For users
+You need an Azure AD Premium P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with an Azure AD Premium P2 license. 
+
+### For service principals
+You need a Workload Identities Premium license to access the Microsoft Graph [servicePrincipalRiskDetection API](serviceprincipalriskdetection.md) (Tenants without that license receive limited risk information). The [riskyServicePrincipals API](riskyserviceprincipal.md) is only available with an Entra Workload Identity Premium license.
 
 ## How much data is available?
 

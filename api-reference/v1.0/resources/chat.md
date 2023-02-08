@@ -97,19 +97,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "topic": "string",
   "createdDateTime": "dateTimeOffset",
-  "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "string",
-  "webUrl": "string",
+  "id": "string (identifier)",
+  "lastUpdatedDateTime": "dateTimeOffset",
+  "onlineMeetingInfo": {
+    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
+  },
   "tenantId": "string",
+  "topic": "string",
+  
   "viewpoint": {
     "@odata.type": "microsoft.graph.chatViewpoint"
   },
-  "onlineMeetingInfo": {
-    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
-  }
+  "webUrl": "string",
 }
 ```
 

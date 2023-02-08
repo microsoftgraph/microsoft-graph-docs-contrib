@@ -1,7 +1,7 @@
 ---
 title: "Get iosLobAppProvisioningConfiguration"
 description: "Read properties and relationships of the iosLobAppProvisioningConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -87,12 +87,3 @@ Content-Length: 592
   }
 }
 ```
-
-
-
-
-
-
-
-
-

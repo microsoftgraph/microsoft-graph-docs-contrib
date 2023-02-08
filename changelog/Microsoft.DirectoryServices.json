@@ -1,5 +1,123 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundOutboundPolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **inboundOutboundPolicyConfiguration** resource.",
+          "Target": "inboundOutboundPolicyConfiguration"
+        }
+      ],
+      "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-23T00:00:00.1309263Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+       {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "layoutTemplateType",
+          "ChangeType": "Addition",
+          "Description": "Added the **layoutTemplateType** enumeration.",
+          "Target": "layoutTemplateType"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageLayoutConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [loginPageLayoutConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/loginPageLayoutConfiguration?view=graph-rest-beta) resource.",
+          "Target": "loginPageLayoutConfiguration"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCSS",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCSS** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCSSRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCSSRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerLogo",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerLogo** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerLogoRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerLogoRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageLayoutConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **loginPageLayoutConfiguration** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        }
+      ],
+      "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-06T08:43:38.2274156Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+     },
+     {
+      "ChangeList": [
+        {
+          "Id": "b1bc594e-31eb-4773-a14b-0048cb782f24",
+          "ApiChange": "Member",
+          "ChangedApiName": "oAuthToken",
+          "ChangeType": "Addition",
+          "Description": "Added the `oAuthToken` member to the **singleSignOnMode** enumeration.",
+          "Target": "singleSignOnMode"
+        }
+      ],
+      "Id": "b1bc594e-31eb-4773-a14b-0048cb782f24",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-25T22:29:56.4129094Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+     },	  
      {
       "ChangeList": [
         {
@@ -25,7 +143,165 @@
       "CreatedDateTime": "2022-11-09T21:02:17.1897204Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
-    },    
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Property",
+          "ChangedApiName": "segmentsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `segmentsConfiguration` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "segmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [segmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/segmentConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "segmentConfiguration"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webSegmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [webSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/webSegmentConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "webSegmentConfiguration"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/applicationSegment?view=graph-rest-beta) resource",
+          "Target": "applicationSegment"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "corsConfiguration_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the [corsConfiguration_v2](https://learn.microsoft.com/en-us/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource",
+          "Target": "corsConfiguration_v2"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webApplicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [webApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationSegment?view=graph-rest-beta) resource",
+          "Target": "webApplicationSegment"
+        },
+        {
+      "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+      "ApiChange": "Property",
+      "ChangedApiName": "onPremisesApplicationSegments",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **onPremisesApplicationSegments** property of the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource. The **onPremisesApplicationSegments** property will stop returning data on June 1, 2023. Use the **segmentsConfiguration** property instead.",
+      "Target": "onPremisesPublishing"
+    }
+      ],
+      "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-26T00:00:00.3287778Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },   
+    {
+      "ChangeList": [
+        {
+          "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantIdentitySyncPolicyPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantIdentitySyncPolicyPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantIdentitySyncPolicyPartner"
+        },
+        {
+          "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantUserSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantUserSyncInbound](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantusersyncinbound?view=graph-rest-beta) resource.",
+          "Target": "crossTenantUserSyncInbound"
+        },
+        {
+          "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identitySynchronization",
+          "ChangeType": "Relationship",
+          "Description": "Added the **identitySynchronization** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        }
+      ],
+      "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-23T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "onPremisesDirectorySynchronizationDeletionPreventionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesDirectorySynchronizationDeletionPreventionType** enumeration type.",
+          "Target": "onPremisesDirectorySynchronizationDeletionPreventionType"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesAccidentalDeletionPrevention",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesAccidentalDeletionPrevention](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesAccidentalDeletionPrevention?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesAccidentalDeletionPrevention"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronizationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronizationFeature",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronizationFeature](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationFeature?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesDirectorySynchronizationFeature"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "onPremisesSynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSynchronization** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronization](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronization?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronization"
+        }
+      ],
+      "Id": "6effe3ea-1af5-41a3-9e88-80adcf9af7d4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-07T08:56:56.555588Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
@@ -51,7 +327,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource. Configure this property to disable protections preventing [user consent for risky apps](/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource. Configure this property to disable protections preventing [user consent for risky apps](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).",
           "Target": "authorizationPolicy"
         }
       ],
@@ -138,6 +414,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
+    
     {
       "ChangeList": [
         {
@@ -145,7 +422,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "applicationFilter",
           "ChangeType": "Addition",
-          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) resource.",
+          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) resource.",
           "Target": "conditionalAccessApplications"
         },
         {
@@ -153,7 +430,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "servicePrincipalFilter",
           "ChangeType": "Addition",
-          "Description": "Added the **servicePrincipalFilter** property to the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessclientapplications?view=graph-rest-beta) resource.",
+          "Description": "Added the **servicePrincipalFilter** property to the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessclientapplications?view=graph-rest-beta) resource.",
           "Target": "conditionalAccessClientApplications"
         }
       ],
@@ -219,7 +496,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "disableSmsSignIn",
           "ChangeType": "Addition",
-          "Description": "Added the [disableSmsSignIn](https://learn.microsoft.com/en-us/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0) method to the [phoneAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/phoneAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Description": "Added the [disableSmsSignIn](https://learn.microsoft.com/en-us/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0) method to the [phoneAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/phoneAuthenticationMethod?view=graph-rest-1.0) resource.",
           "Target": "phoneAuthenticationMethod"
         },
         {
@@ -227,7 +504,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "enableSmsSignIn",
           "ChangeType": "Addition",
-          "Description": "Added the [enableSmsSignIn](https://learn.microsoft.com/en-us/graph/api/phoneauthenticationmethod-enablesmssignin?view=graph-rest-1.0) method to the [phoneAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/phoneAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Description": "Added the [enableSmsSignIn](https://learn.microsoft.com/en-us/graph/api/phoneauthenticationmethod-enablesmssignin?view=graph-rest-1.0) method to the [phoneAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/phoneAuthenticationMethod?view=graph-rest-1.0) resource.",
           "Target": "phoneAuthenticationMethod"
         },
         {
@@ -305,7 +582,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appId",
           "ChangeType": "Addition",
-          "Description": "Added support for addressing an [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta) using the application **appId** as the alternate key. You can now address an application via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Description": "Added support for addressing an [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-beta) using the application **appId** as the alternate key. You can now address an application via either the primary key **id** or the alternate key **appId** as the path parameter.",
           "Target": "application"
         }
       ],
@@ -453,7 +730,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reprocess",
           "ChangeType": "Addition",
-          "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/accessPackageAssignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0) method to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource.",
           "Target": "accessPackageAssignment"
         },
         {
@@ -461,7 +738,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reprocess",
           "ChangeType": "Addition",
-          "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-1.0) method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
           "Target": "accessPackageAssignmentRequest"
         }
       ],
@@ -602,6 +879,24 @@
       "Version": "beta",
       "CreatedDateTime": "2022-08-26T16:03:39.5633059Z",
       "WorkloadArea": "Applications",
+      "SubArea": ""
+    }, 	  
+    {
+      "ChangeList": [
+        {
+          "Id": "00e009a6-0eaf-423f-9ed2-fe86808382ac",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.ReadBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `User.ReadBasic.All` application permission to read a basic set of profile properties of other users in your organization without a signed-in user.",
+          "Target": "user"
+        }
+      ],
+      "Id": "00e009a6-0eaf-423f-9ed2-fe86808382ac",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-25T00:00:00.0123959Z",
+      "WorkloadArea": "User",
       "SubArea": ""
     },
     {
@@ -1259,7 +1554,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionHandler",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource. Use this object to define the stage of an access package assignment request when the [custom access package workflow extension](customaccesspackageworkflowextension.md) runs.",
+          "Description": "Added the [customExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource. Use this object to define the stage of an access package assignment request when the [custom access package workflow extension](https://learn.microsoft.com/en-us/graph/api/resources/customaccesspackageworkflowextension?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0) runs.",
           "Target": "customExtensionHandler"
         },
         {
@@ -1267,7 +1562,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "accessPackageCustomExtensionStage",
           "ChangeType": "Addition",
-          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type. This enumeration type defines the supported stages an access package assignment request when a [custom access package workflow extension](customaccesspackageworkflowextension.md) can be run.",
+          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type. This enumeration type defines the supported stages an access package assignment request when a [custom access package workflow extension](https://learn.microsoft.com/en-us/graph/api/resources/customaccesspackageworkflowextension?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0) can be run.",
           "Target": "accessPackageCustomExtensionStage"
         },
         {
@@ -1283,7 +1578,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionHandlerInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionHandlerInstance](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type. This read-only property lists the collection of [custom workflow extension](customaccesspackageworkflowextension.md) instances being run on an assignment request",
+          "Description": "Added the [customExtensionHandlerInstance](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type. This read-only property lists the collection of [custom workflow extension](https://learn.microsoft.com/en-us/graph/api/resources/customaccesspackageworkflowextension?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0) instances being run on an assignment request",
           "Target": "customExtensionHandlerInstance"
         },
         {
@@ -1387,7 +1682,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "promote",
           "ChangeType": "Addition",
-          "Description": "Added the [promote](https://learn.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-beta) method to the [domain](https://learn.microsoft.com/en-us/graph/api/domain?view=graph-rest-beta) resource.",
+          "Description": "Added the [promote](https://learn.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-beta) method to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource.",
           "Target": "domain"
         }
       ],
@@ -1523,6 +1818,24 @@
     {
       "ChangeList": [
         {
+          "Id": "91714c66-fa98-485a-a393-c2c6396e0ed5",
+          "ApiChange": "Method",
+          "ChangedApiName": "promote",
+          "ChangeType": "Addition",
+          "Description": "Added the [promote](https://learn.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-1.0) method to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+          "Target": "domain"
+        }
+      ],
+      "Id": "91714c66-fa98-485a-a393-c2c6396e0ed5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-11-30T00:53:51.6122157Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
           "ApiChange": "Permission",
           "ChangedApiName": "EntitlementManagement.ReadWrite.All",
@@ -1585,7 +1898,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyConfigurationBase](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationbase?view=graph-rest-beta) resource.",
+          "Description": "Added the **crossTenantAccessPolicyConfigurationBase** resource.",
           "Target": "crossTenantAccessPolicyConfigurationBase"
         },
         {
@@ -2292,7 +2605,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "validatePassword",
           "ChangeType": "Addition",
-          "Description": "Added the [validatePassword](https://learn.microsoft.com/en-us/graph/api/user-validatePassword?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [validatePassword](https://learn.microsoft.com/en-us/graph/api/user-validatePassword?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         },
         {
@@ -2852,7 +3165,7 @@
        "ApiChange": "Method",
        "ChangedApiName": "reprocess",
        "ChangeType": "Addition",
-       "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta) action to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/accesspackageassignment?view=graph-rest-beta) resource.",
+       "Description": "Added the [reprocess](https://learn.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta) action to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) resource.",
        "Target": "reprocess"
      },
      {
@@ -3806,7 +4119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityProviders",
           "ChangeType": "Addition",
-          "Description": "Added the operation [availableProviderTypes](https://learn.microsoft.com/graph/api/resources/identityprovider-list-availableprovidertypes.md?view=graph-rest-1.0&preserve-view=true) to list the available identity providers available for use in an Azure Active Directory tenant.",
+          "Description": "Added the operation [availableProviderTypes](https://learn.microsoft.com/en-us/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-1.0) to list the available identity providers available for use in an Azure Active Directory tenant.",
           "Target": "availableProviderTypes"
         },
         {
@@ -3814,7 +4127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationFlowsPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationFlowsPolicy](https://learn.microsoft.com/graph/api/resources/authenticationflowspolicy.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [authenticationFlowsPolicy](https://learn.microsoft.com/graph/api/resources/authenticationflowspolicy?view=graph-rest-1.0) resource type.",
           "Target": "authenticationFlowsPolicy"
         },
         {
@@ -3822,7 +4135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "selfServiceSignUpAuthenticationFlowConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [selfServiceSignUpAuthenticationFlowConfiguration](https://learn.microsoft.com/graph/api/resources/selfservicesignupauthenticationflowconfiguration.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [selfServiceSignUpAuthenticationFlowConfiguration](https://learn.microsoft.com/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-1.0) resource type.",
           "Target": "selfServiceSignUpAuthenticationFlowConfiguration"
         },
         {
@@ -3830,7 +4143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [identityUserFlow](https://learn.microsoft.com/graph/api/resources/identityuserflow.md?view=graph-rest-1.0&preserve-view=true) base resource type.",
+          "Description": "Added the [identityUserFlow](https://learn.microsoft.com/graph/api/resources/identityuserflow?view=graph-rest-1.0) base resource type.",
           "Target": "b2xIdentityUserFlow"
         },
         {
@@ -3838,7 +4151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "b2xIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [b2xIdentityUserFlow](https://learn.microsoft.com/graph/api/resources/b2xidentityuserflow.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [b2xIdentityUserFlow](https://learn.microsoft.com/graph/api/resources/b2xidentityuserflow?view=graph-rest-1.0) resource type.",
           "Target": "b2xIdentityUserFlow"
         },
         {
@@ -3870,7 +4183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityUserFlowAttributeAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [identityUserFlowAttributeAssignment](https://learn.microsoft.com/graph/api/resources/identityuserflowattributeassignment.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [identityUserFlowAttributeAssignment](https://learn.microsoft.com/graph/api/resources/identityuserflowattributeassignment?view=graph-rest-1.0) resource type.",
           "Target": "identityUserFlowAttributeAssignment"
         },
         {
@@ -3878,7 +4191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userAttributeValuesItem",
           "ChangeType": "Addition",
-          "Description": "Added the [userAttributeValuesItem](https://learn.microsoft.com/graph/api/resources/userattributevaluesitem.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [userAttributeValuesItem](https://learn.microsoft.com/graph/api/resources/userattributevaluesitem?view=graph-rest-1.0) resource type.",
           "Target": "userAttributeValuesItem"
         },
         {
@@ -3886,7 +4199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assignmentOrder",
           "ChangeType": "Addition",
-          "Description": "Added the [assignmentorder](https://learn.microsoft.com/graph/api/resources/assignmentorder.md?view=graph-rest-1.0&preserve-view=true) resource type that represents the order that attributes should be collected within a user flow during sign-up.",
+          "Description": "Added the [assignmentorder](https://learn.microsoft.com/graph/api/resources/assignmentorder?view=graph-rest-1.0) resource type that represents the order that attributes should be collected within a user flow during sign-up.",
           "Target": "userAttributeValuesItem"
         },
         {
@@ -3894,7 +4207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityUserFlowAttributeAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the operations [getOrder](https://learn.microsoft.com/graph/api/resources/identityuserflowattributeassignment-getorder.md?view=graph-rest-1.0&preserve-view=true) and [setOrder](https://learn.microsoft.com/graph/api/resources/identityuserflowattributeassignment-setorder.md?view=graph-rest-1.0&preserve-view=true) that get the current order of attributes being collected or to set a new order for attributes to be collected during sign-up.",
+          "Description": "Added the operations [getOrder](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-1.0) and [setOrder](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-1.0) that get the current order of attributes being collected or to set a new order for attributes to be collected during sign-up.",
           "Target": "getOrder, setOrder"
         },
         {
@@ -3902,7 +4215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityApiConnector",
           "ChangeType": "Addition",
-          "Description": "Added the [identityApiConnector](https://learn.microsoft.com/graph/api/resources/identityapiconnector.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [identityApiConnector](https://learn.microsoft.com/graph/api/resources/identityapiconnector?view=graph-rest-1.0) resource type.",
           "Target": "identityApiConnector"
         },
         {
@@ -3934,7 +4247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pkcs12Certificate",
           "ChangeType": "Addition",
-          "Description": "Added the [pkcs12Certificate](https://learn.microsoft.com/graph/api/resources/pkcs12certificate.md?view=graph-rest-1.0&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
+          "Description": "Added the [pkcs12Certificate](https://learn.microsoft.com/graph/api/resources/pkcs12certificate?view=graph-rest-1.0) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
           "Target": "pkcs12certificate"
         },
         {
@@ -3942,7 +4255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pkcs12CertificateInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [pkcs12CertificateInformation](https://learn.microsoft.com/graph/api/resources/pkcs12CertificateInformation.md?view=graph-rest-1.0&preserve-view=true) resource type that represents the public information of a PKCS12 (.pfx) certificate.",
+          "Description": "Added the [pkcs12CertificateInformation](https://learn.microsoft.com/graph/api/resources/pkcs12CertificateInformation?view=graph-rest-1.0) resource type that represents the public information of a PKCS12 (.pfx) certificate.",
           "Target": "uploadClientCertificate"
         },
         {
@@ -3958,7 +4271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityApiConnector",
           "ChangeType": "Addition",
-          "Description": "Added the operation [uploadClientCertificate](https://learn.microsoft.com/graph/api/resources/identityapiconnector-uploadclientcertificate.md?view=graph-rest-1.0&preserve-view=true) to upload a client certificate (.pfx) to an API connector configuration.",
+          "Description": "Added the operation [uploadClientCertificate](https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-1.0) to upload a client certificate (.pfx) to an API connector configuration.",
           "Target": "uploadClientCertificate"
         },
         {
@@ -3966,7 +4279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userFlowLanguageConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [userFlowLanguageConfiguration](https://learn.microsoft.com/graph/api/resources/userflowlanguageconfiguration.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [userFlowLanguageConfiguration](https://learn.microsoft.com/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-1.0) resource type.",
           "Target": "userFlowLanguageConfiguration"
         },
         {
@@ -4058,7 +4371,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pkcs12certificate",
           "ChangeType": "Addition",
-          "Description": "Added the [pkcs12certificate](https://learn.microsoft.com/graph/api/resources/pkcs12certificate.md?view=graph-rest-beta&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
+          "Description": "Added the [pkcs12certificate](https://learn.microsoft.com/graph/api/resources/pkcs12certificate?view=graph-rest-beta) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
           "Target": "pkcs12certificate"
         },
         {
@@ -5225,7 +5538,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityApiConnector",
           "ChangeType": "Addition",
-          "Description": "Added the [identityApiConnector](https://learn.microsoft.com/graph/api/resources/identityapiconnector.md?view=graph-rest-beta&preserve-view=true) object which represents configuration used to call web APIs. Added methods for listing, getting, creating, updating, and deleting API connectors.",
+          "Description": "Added the [identityApiConnector](https://learn.microsoft.com/graph/api/resources/identityapiconnector?view=graph-rest-beta) object which represents configuration used to call web APIs. Added methods for listing, getting, creating, updating, and deleting API connectors.",
           "Target": "identityApiConnector"
         },
         {
@@ -5471,7 +5784,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAnswer",
           "ChangeType": "Addition",
-          "Description": "Added the new [accessPackageAnswer](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageanswer?view=graph-rest-beta\u0026preserve-view=true) complex type, including two subtypes [accessPackageAnswerChoice](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageanswerchoice?view=graph-rest-beta\u0026preserve-view=true) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring?view=graph-rest-beta\u0026preserve-view=true).",
+          "Description": "Added the new [accessPackageAnswer](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageanswer?view=graph-rest-beta) complex type, including two subtypes [accessPackageAnswerChoice](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageanswerchoice?view=graph-rest-beta) and [accessPackageAnswerString](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageanswerstring?view=graph-rest-beta).",
           "Target": "accessPackageAnswer"
         },
         {
@@ -5531,7 +5844,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delegatedPermissionClassifications",
           "ChangeType": "Addition",
-          "Description": "Added [delegatedPermissionClassifications](https://learn.microsoft.com/graph/api/resources/delegatedpermissionclassification?view=graph-rest-1.0&preserve-view=true) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Description": "Added [delegatedPermissionClassifications](https://learn.microsoft.com/graph/api/resources/delegatedpermissionclassification?view=graph-rest-1.0) navigation to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
           "Target": "servicePrincipal"
         }
       ],
@@ -5739,7 +6052,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "IdentityUserFlow.ReadWrite.All,IdentityUserFlow.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the **IdentityUserFlow.ReadWrite.All** and **IdentityUserFlow.Read.All** permissions to the [Permissions reference](permissions-reference.md#policy-permissions).",
+          "Description": "Added the **IdentityUserFlow.ReadWrite.All** and **IdentityUserFlow.Read.All** permissions to the [Permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference#policy-permissions).",
           "Target": "Permissions reference"
         },
         {
@@ -5755,7 +6068,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Policy.ReadWrite.AuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).",
+          "Description": "Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference#policy-permissions).",
           "Target": "Permissions reference"
         }
       ],
@@ -6101,7 +6414,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "devices,Delete registered owner,Delete registered user",
           "ChangeType": "Addition",
-          "Description": "Added the following operations to [devices](https://learn.microsoft.com/en-us/graph/api/resources/device): ,  [Delete registered owner](https://learn.microsoft.com/en-us/graph/api/delete-registeredowners) ,  [Delete registered user](https://learn.microsoft.com/en-us/graph/api/delete-registeredusers)",
+          "Description": "Added the following operations to [devices](https://learn.microsoft.com/en-us/graph/api/resources/device): [Delete registered owner](https://learn.microsoft.com/en-us/graph/api/device-delete-registeredowners?view=graph-rest-1.0),  [Delete registered user](https://learn.microsoft.com/en-us/graph/api/device-delete-registeredusers)",
           "Target": "devices,Delete registered owner,Delete registered user"
         },
         {
@@ -6201,7 +6514,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessPolicy",
           "ChangeType": "Addition",
-          "Description": "Added new entity types:, [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicy), ",
+          "Description": "Added new entity types: [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicy), ",
           "Target": "conditionalAccessPolicy"
         },
         {
@@ -6209,7 +6522,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessConditionSet,conditionalAccessGrantControls",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
+          "Description": "Added new complex types: [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
           "Target": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessConditionSet,conditionalAccessGrantControls"
         },
         {
@@ -6251,7 +6564,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connector,Get connector,List memberOf,List connectors,Add connector to connectorGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [connector](https://learn.microsoft.com/en-us/graph/api/resources/connector?view=graph-rest-beta) entity and the following actions: ,  [Get connector](https://learn.microsoft.com/en-us/graph/api/connector-get?view=graph-rest-beta) ,  [List memberOf](https://learn.microsoft.com/en-us/graph/api/connector-list-memberof?view=graph-rest-beta) ,  [List connectors](https://learn.microsoft.com/en-us/graph/api/connector-list?view=graph-rest-beta) ,  [Add connector to connectorGroup](https://learn.microsoft.com/en-us/graph/api/connector-post-memberof?view=graph-rest-beta)",
+          "Description": "Added the [connector](https://learn.microsoft.com/en-us/graph/api/resources/connector?view=graph-rest-beta) entity and the following actions: [Get connector](https://learn.microsoft.com/en-us/graph/api/connector-get?view=graph-rest-beta),  [List memberOf](https://learn.microsoft.com/en-us/graph/api/connector-list-memberof?view=graph-rest-beta),  [List connectors](https://learn.microsoft.com/en-us/graph/api/connector-list?view=graph-rest-beta),  [Add connector to connectorGroup](https://learn.microsoft.com/en-us/graph/api/connector-post-memberof?view=graph-rest-beta)",
           "Target": "connector,Get connector,List memberOf,List connectors,Add connector to connectorGroup"
         },
         {
@@ -6259,7 +6572,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectorGroup,Get connectorGroup,Assign an application,List applications,List connectorGroups,Add connector,List connectors,Create connectorGroup,Update connectorGroup,Delete connectorGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [connectorGroup](https://learn.microsoft.com/en-us/graph/api/resources/connectorgroup?view=graph-rest-beta) entity and the following actions: ,  [Get connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-get?view=graph-rest-beta) ,  [Assign an application](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post-applications?view=graph-rest-beta) ,  [List applications](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list-applications?view=graph-rest-beta)  ,  [List connectorGroups](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list?view=graph-rest-beta) ,  [Add connector](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post-members?view=graph-rest-beta) ,  [List connectors](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list-members?view=graph-rest-beta) ,  [Create connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post?view=graph-rest-beta) , [Update connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-update?view=graph-rest-beta) ,  [Delete connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-delete?view=graph-rest-beta)",
+          "Description": "Added the [connectorGroup](https://learn.microsoft.com/en-us/graph/api/resources/connectorgroup?view=graph-rest-beta) entity and the following actions: [Get connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-get?view=graph-rest-beta),  [Assign an application](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post-applications?view=graph-rest-beta),  [List applications](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list-applications?view=graph-rest-beta),  [List connectorGroups](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list?view=graph-rest-beta),  [Add connector](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post-members?view=graph-rest-beta),  [List connectors](https://learn.microsoft.com/en-us/graph/api/connectorgroup-list-members?view=graph-rest-beta),  [Create connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-post?view=graph-rest-beta), [Update connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-update?view=graph-rest-beta),  [Delete connectorGroup](https://learn.microsoft.com/en-us/graph/api/connectorgroup-delete?view=graph-rest-beta)",
           "Target": "connectorGroup,Get connectorGroup,Assign an application,List applications,List connectorGroups,Add connector,List connectors,Create connectorGroup,Update connectorGroup,Delete connectorGroup"
         },
         {
@@ -6447,7 +6760,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "regionalAndLanguageSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [regionalAndLanguageSettings](https://learn.microsoft.com/en-us/graph/api/resources/regionandlanguagesettings) entity.",
+          "Description": "Added the [regionalAndLanguageSettings](https://learn.microsoft.com/en-us/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta) entity.",
           "Target": "regionalAndLanguageSettings"
         },
         {
@@ -6455,7 +6768,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "regionalFormatOverrides",
           "ChangeType": "Addition",
-          "Description": "Added the [regionalFormatOverrides](https://learn.microsoft.com/en-us/graph/api/resources/regionalformatoverrides) complex type.",
+          "Description": "Added the [regionalFormatOverrides](https://learn.microsoft.com/en-us/graph/api/resources/regionalformatoverrides?view=graph-rest-beta) complex type.",
           "Target": "regionalFormatOverrides"
         },
         {
@@ -6463,7 +6776,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "regionalAndLanguageSettings-get,regionalAndLanguageSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [regionalAndLanguageSettings-get](https://learn.microsoft.com/en-us/graph/api/regionalandlanguagesettings-get) function on the [regionalAndLanguageSettings](https://learn.microsoft.com/en-us/graph/api/resources/regionalandlanguagesettings) resource.",
+          "Description": "Added the [regionalAndLanguageSettings-get](https://learn.microsoft.com/en-us/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta) function on the [regionalAndLanguageSettings](https://learn.microsoft.com/en-us/graph/api/resources/regionalandlanguagesettings) resource.",
           "Target": "regionalAndLanguageSettings-get,regionalAndLanguageSettings"
         },
         {
@@ -6471,7 +6784,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "regionalAndLanguageSettings-update,regionalAndLanguageSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [regionalAndLanguageSettings-update](https://learn.microsoft.com/en-us/graph/api/regionalandlanguagesettings-update) function on the [regionalAndLanguageSettings](https://learn.microsoft.com/en-us/graph/api/resources/regionalandlanguagesettings) resource.",
+          "Description": "Added the [regionalAndLanguageSettings-update](https://learn.microsoft.com/en-us/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta) function on the [regionalAndLanguageSettings](https://learn.microsoft.com/en-us/graph/api/resources/regionalandlanguagesettings) resource.",
           "Target": "regionalAndLanguageSettings-update,regionalAndLanguageSettings"
         },
         {
@@ -6479,7 +6792,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "regionalAndLanguageSettings,userSettings",
           "ChangeType": "Change",
-          "Description": "Added the [regionalAndLanguageSettings](https://learn.microsoft.com/en-us/graph/api/resources/regionalandlanguagesettings) relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings) resource.",
+          "Description": "Added the **regionalAndLanguageSettings** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings) resource.",
           "Target": "regionalAndLanguageSettings,userSettings"
         },
         {
@@ -6555,7 +6868,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "group",
           "ChangeType": "Addition",
-          "Description": "Added support for [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) to the **group** resource in [Microsoft Cloud China operated by 21Vianet](deployments.md).",
+          "Description": "Added support for [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) to the **group** resource in [Microsoft Cloud China operated by 21Vianet](https://learn.microsoft.com/en-us/graph/deployments).",
           "Target": "subscription,Microsoft Cloud China operated by 21Vianet"
         }
       ],
@@ -6597,7 +6910,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "EntitlementManagement.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added delegated permission [EntitlementManagement.Read.All](permissions-reference.md#entitlement-management-permissions).",
+          "Description": "Added delegated permission [EntitlementManagement.Read.All](https://learn.microsoft.com/en-us/graph/permissions-reference#entitlement-management-permissions).",
           "Target": "EntitlementManagement.Read.All"
         },
         {
@@ -6647,7 +6960,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "AppRoleAssignment.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added app-only and delegated permissions [AppRoleAssignment.ReadWrite.All](permissions-reference.md#application-resource-permissions).",
+          "Description": "Added app-only and delegated permissions [AppRoleAssignment.ReadWrite.All](https://learn.microsoft.com/en-us/graph/permissions-reference#application-resource-permissions).",
           "Target": "AppRoleAssignment.ReadWrite.All"
         }
       ],
@@ -6673,7 +6986,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "user",
           "ChangeType": "Addition",
-          "Description": "Added support for [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) to the **user** resource in [Microsoft Cloud China operated by 21Vianet](deployments.md).",
+          "Description": "Added support for [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) to the **user** resource in [Microsoft Cloud China operated by 21Vianet](https://learn.microsoft.com/en-us/graph/deployments).",
           "Target": "subscription,Microsoft Cloud China operated by 21Vianet"
         }
       ],
@@ -6831,7 +7144,7 @@
           "ApiChange": "method",
           "ChangedApiName": "$top,$skiptoken",
           "ChangeType": "Addition",
-          "Description": "Added support for the **$top** and **$skiptoken** filters to support pagination on the [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list) method.",
+          "Description": "Added support for the **$top** and **$skiptoken** filters to support pagination on the [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/provisioningobjectsummary-list) method.",
           "Target": "List provisioningObjectSummary"
         }
       ],
@@ -7001,7 +7314,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "latestSupportedTlsVersion",
           "ChangeType": "Addition",
-          "Description": "Added the **latestSupportedTlsVersion** property to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://developer.microsoft.comhttps://learn.microsoft.com/en-us/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/).",
+          "Description": "Added the **latestSupportedTlsVersion** property to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/).",
           "Target": "subscription,Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1"
         },
         {
@@ -7085,7 +7398,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "List provisioningObjectSummary",
           "ChangeType": "Addition",
-          "Description": "Added the servicePrincipal property to [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta).",
+          "Description": "Added the servicePrincipal property to [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/provisioningobjectsummary-list?view=graph-rest-beta).",
           "Target": "List provisioningObjectSummary"
         }
       ],
@@ -7139,7 +7452,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appRoleAssignments,appRoleAssignedTo,appRoleAssignments,appRoleAssignedTo",
           "ChangeType": "Change",
-          "Description": "Updated the behavior of the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal.md) to return the roles as documented. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.",
+          "Description": "Updated the behavior of the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal) to return the roles as documented. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.",
           "Target": "servicePrincipal"
         },
         {
@@ -7165,7 +7478,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Limited information returned for inaccessible member objects",
           "ChangeType": "Addition",
-          "Description": "Added support for returning a limited amount of information when your application does not have access to some of the types in a response\u0027s collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).",
+          "Description": "Added support for returning a limited amount of information when your application does not have access to some of the types in a response\u0027s collection. For more details, see [Limited information returned for inaccessible member objects](https://learn.microsoft.com/en-us/graph/permissions-overview#limited-information-returned-for-inaccessible-member-objects).",
           "Target": "Limited information returned for inaccessible member objects"
         }
       ],
@@ -7207,7 +7520,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "GroupMember.Read.All,GroupMember.ReadWrite.All,group",
           "ChangeType": "Addition",
-          "Description": "Added new delegated and application permissions [GroupMember.Read.All](permissions-reference.md#group-permissions) and [GroupMember.ReadWrite.All](permissions-reference.md#group-permissions) to get and update the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Description": "Added new delegated and application permissions [GroupMember.Read.All](https://learn.microsoft.com/en-us/graph/permissions-reference#group-permissions) and [GroupMember.ReadWrite.All](https://learn.microsoft.com/en-us/graph/permissions-reference#group-permissions) to get and update the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
           "Target": "GroupMember.Read.All,GroupMember.ReadWrite.All,group"
         },
         {
@@ -7215,7 +7528,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "group",
           "ChangeType": "Addition",
-          "Description": "Added new application permission [Group.Create](permissions-reference.md#group-permissions) to create the **group** resource.",
+          "Description": "Added new application permission [Group.Create](https://learn.microsoft.com/en-us/graph/permissions-reference#group-permissions) to create the **group** resource.",
           "Target": "Group.Create"
         },
         {
@@ -7431,7 +7744,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appRoleAssignedResources",
           "ChangeType": "Addition",
-          "Description": "Added the **appRoleAssignedResources** relationship to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the **appRoleAssignedResources** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
@@ -7475,7 +7788,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationDetail,keyValue,networkLocationDetail",
           "ChangeType": "Addition",
-          "Description": "Added new entities: , [authenticationDetail](https://learn.microsoft.com/en-us/graph/api/resources/authenticationDetail?view=graph-rest-beta), [keyValue](https://learn.microsoft.com/en-us/graph/api/resources/keyValue?view=graph-rest-beta), [networkLocationDetail](https://learn.microsoft.com/en-us/graph/api/resources/networkLocationDetail?view=graph-rest-beta)",
+          "Description": "Added new entities: [authenticationDetail](https://learn.microsoft.com/en-us/graph/api/resources/authenticationDetail?view=graph-rest-beta), [keyValue](https://learn.microsoft.com/en-us/graph/api/resources/keyValue?view=graph-rest-beta), [networkLocationDetail](https://learn.microsoft.com/en-us/graph/api/resources/networkLocationDetail?view=graph-rest-beta)",
           "Target": "authenticationDetail,keyValue,networkLocationDetail"
         },
         {
@@ -7597,7 +7910,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "orgContact,personal contacts",
           "ChangeType": "Addition",
-          "Description": "Added new [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](outlook-contacts-concept-overview.md)",
+          "Description": "Added new [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](https://learn.microsoft.com/en-us/graph/outlook-contacts-concept-overview)",
           "Target": "orgContact,personal contacts"
         },
         {
@@ -7647,7 +7960,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessPolicy",
           "ChangeType": "Addition",
-          "Description": "Added new entity types:, [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicy), ",
+          "Description": "Added new entity types: [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicy), ",
           "Target": "conditionalAccessPolicy"
         },
         {
@@ -7655,7 +7968,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessDeviceStates,conditionalAccessConditionSet,conditionalAccessGrantControls",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessDeviceStates](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDeviceStates), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
+          "Description": "Added new complex types: [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessDeviceStates](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDeviceStates), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
           "Target": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessDeviceStates,conditionalAccessConditionSet,conditionalAccessGrantControls"
         },
         {
@@ -7811,7 +8124,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "List provisioningObjectSummary",
           "ChangeType": "Change",
-          "Description": "Changed the [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) namespace.",
+          "Description": "Changed the [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/provisioningobjectsummary-list?view=graph-rest-beta) namespace.",
           "Target": "List provisioningObjectSummary"
         },
         {
@@ -7899,7 +8212,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "checkMemberObjects,servicePrincipal",
           "ChangeType": "Addition",
-          "Description": "Added the [checkMemberObjects](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) operation for the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprinciple?view=graph-rest-beta) resource.",
+          "Description": "Added the [checkMemberObjects](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) operation for the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
           "Target": "checkMemberObjects,servicePrincipal"
         },
         {
@@ -7915,7 +8228,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permissions for reading organizational contacts",
           "ChangeType": "Addition",
-          "Description": "Added delegated and application [permissions for reading organizational contacts](permissions-reference.md#organizational-contact-permissions): OrgContact.Read.All",
+          "Description": "Added delegated and application [permissions for reading organizational contacts](https://learn.microsoft.com/en-us/graph/permissions-reference#organizational-contact-permissions): OrgContact.Read.All",
           "Target": "permissions for reading organizational contacts"
         },
         {
@@ -7973,7 +8286,7 @@
           "ApiChange": "method",
           "ChangedApiName": "directoryDefinition: discover",
           "ChangeType": "Addition",
-          "Description": "Added the [directoryDefinition: discover](https://learn.microsoft.com/en-us/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) method.",
+          "Description": "Added the [directoryDefinition: discover](https://learn.microsoft.com/en-us/graph/api/directorydefinition-discover?view=graph-rest-beta) method.",
           "Target": "directoryDefinition: discover"
         },
         {
@@ -8057,7 +8370,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationTemplate,instantiate,list,get",
           "ChangeType": "Addition",
-          "Description": "Introduced the new resource type [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md), [list](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md) and [get](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.",
+          "Description": "Introduced the new resource type [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate). This resource type supports [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate), [list](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-instantiate) and [get](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-get) applications from the Azure AD application gallery.",
           "Target": "applicationTemplate,instantiate,list,get"
         },
         {
@@ -8065,7 +8378,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "detailsInfo,initiator,modifiedProperty,provisionedIdentity,provisioningObjectsummary,provisioningStep,provisioningsystemDetails,statusBase",
           "ChangeType": "Addition",
-          "Description": "Added new resources: \u003C/br\u003E [detailsInfo](https://learn.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-beta)\u003C/br\u003E [initiator](https://learn.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-beta)\u003C/br\u003E [modifiedProperty](https://learn.microsoft.com/en-us/graph/api/resources/modifiedProperty?view=graph-rest-beta)\u003C/br\u003E [provisionedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-beta)\u003C/br\u003E [provisioningObjectsummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)\u003C/br\u003E [provisioningStep](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-beta)\u003C/br\u003E [provisioningsystemDetails](https://learn.microsoft.com/en-us/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)\u003C/br\u003E [statusBase](https://learn.microsoft.com/en-us/graph/api/resources/statusBase?view=graph-rest-beta)",
+          "Description": "Added new resources: [detailsInfo](https://learn.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-beta), [initiator](https://learn.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-beta), [modifiedProperty](https://learn.microsoft.com/en-us/graph/api/resources/modifiedProperty?view=graph-rest-beta), [provisionedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-beta), [provisioningObjectsummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta), [provisioningStep](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-beta), [provisioningsystemDetails](https://learn.microsoft.com/en-us/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta), [statusBase](https://learn.microsoft.com/en-us/graph/api/resources/statusBase?view=graph-rest-beta)",
           "Target": "detailsInfo,initiator,modifiedProperty,provisionedIdentity,provisioningObjectsummary,provisioningStep,provisioningsystemDetails,statusBase"
         },
         {
@@ -8073,7 +8386,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "List provisioningObjectSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) operation\u003C/br\u003E",
+          "Description": "Added the [List provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/provisioningobjectsummary-list?view=graph-rest-beta) operation.",
           "Target": "List provisioningObjectSummary"
         }
       ],
@@ -8203,7 +8516,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "trustFrameworkPolicy,Azure Active Directory B2C,create,list,get,update,delete",
           "ChangeType": "Addition",
-          "Description": "Introduced a new resource type [trustFrameworkPolicy](https://learn.microsoft.com/en-us/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta) to support [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview). This resource type supports  [create](https://learn.microsoft.com/en-us/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [list](https://learn.microsoft.com/en-us/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [get](https://learn.microsoft.com/en-us/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [update](https://learn.microsoft.com/en-us/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), and [delete](https://learn.microsoft.com/en-us/graph/api/trustframerkpolicy-delete?view=graph-rest-beta) operations.",
+          "Description": "Introduced a new resource type [trustFrameworkPolicy](https://learn.microsoft.com/en-us/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta) to support [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview). This resource type supports  [create](https://learn.microsoft.com/en-us/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [list](https://learn.microsoft.com/en-us/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [get](https://learn.microsoft.com/en-us/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [update](https://learn.microsoft.com/en-us/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), and [delete](https://learn.microsoft.com/en-us/graph/api/trustframeworkpolicy-delete?view=graph-rest-beta) operations.",
           "Target": "trustFrameworkPolicy,Azure Active Directory B2C,create,list,get,update,delete"
         }
       ],
@@ -8221,7 +8534,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "audit logs APIs for Azure AD",
           "ChangeType": "Addition",
-          "Description": "Introduced the new **audit logs APIs for Azure AD** providing activity logs for directory management tasks through [directoryAudit](https://learn.microsoft.com/en-us/graph/api/resources/directoryAudit?view=graph-rest-1.0) and sign-in activity through [signIns](https://learn.microsoft.com/en-us/graph/api/resources/signIns?view=graph-rest-1.0).",
+          "Description": "Introduced the new **audit logs APIs for Azure AD** providing activity logs for directory management tasks through [directoryAudit](https://learn.microsoft.com/en-us/graph/api/resources/directoryAudit?view=graph-rest-1.0) and sign-in activity through [signIns](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-1.0).",
           "Target": "directoryAudit,signIns"
         }
       ],
@@ -8273,7 +8586,7 @@
           "ApiChange": "method",
           "ChangedApiName": "Confirm riskyUsers compromised",
           "ChangeType": "Addition",
-          "Description": "Introduced [Confirm riskyUsers compromised](https://learn.microsoft.com/en-us/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta) method, which allows admins to confirm users as compromised in Azure AD Identity Protection.",
+          "Description": "Introduced [Confirm riskyUsers compromised](https://learn.microsoft.com/en-us/graph/api/riskyusers-confirmcompromised?view=graph-rest-beta) method, which allows admins to confirm users as compromised in Azure AD Identity Protection.",
           "Target": "Confirm riskyUsers compromised"
         },
         {
@@ -8281,7 +8594,7 @@
           "ApiChange": "method",
           "ChangedApiName": "Dismiss riskyUsers",
           "ChangeType": "Addition",
-          "Description": "Introduced [Dismiss riskyUsers](https://learn.microsoft.com/en-us/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta) method, which allows admins to dismiss users marked as risky in Azure AD Identity Protection.",
+          "Description": "Introduced [Dismiss riskyUsers](https://learn.microsoft.com/en-us/graph/api/riskyusers-dismiss?view=graph-rest-beta) method, which allows admins to dismiss users marked as risky in Azure AD Identity Protection.",
           "Target": "Dismiss riskyUsers"
         },
         {
@@ -8419,7 +8732,7 @@
           "ApiChange": "method",
           "ChangedApiName": "users,groups,devices",
           "ChangeType": "Addition",
-          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivemembersof?view=graph-rest-1.0), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivemembersof?view=graph-rest-beta) and [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivemembersof?view=graph-rest-1.0).",
+          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivememberof?view=graph-rest-1.0), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivememberof?view=graph-rest-beta) and [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivememberof?view=graph-rest-1.0).",
           "Target": "users,groups,devices"
         },
         {
@@ -8631,7 +8944,7 @@
           "ApiChange": "method",
           "ChangedApiName": "users,groups,devices,service principals",
           "ChangeType": "Addition",
-          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivemembersof?view=graph-rest-beta), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivemembersof?view=graph-rest-beta), [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivemembersof?view=graph-rest-beta) and [service principals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta).",
+          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivememberof?view=graph-rest-beta), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivememberof?view=graph-rest-beta), [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivememberof?view=graph-rest-beta) and [service principals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta).",
           "Target": "users,groups,devices,service principals"
         },
         {
@@ -8639,7 +8952,7 @@
           "ApiChange": "method",
           "ChangedApiName": "membership",
           "ChangeType": "Addition",
-          "Description": "Added method memberOf to get a devices direct [membership](https://learn.microsoft.com/en-us/graph/api/device-list-members?view=graph-rest-beta). This method has been added for getting the list of memberships including nested memberships.",
+          "Description": "Added method memberOf to get a devices direct [membership](https://learn.microsoft.com/en-us/graph/api/device-list-memberof?view=graph-rest-beta). This method has been added for getting the list of memberships including nested memberships.",
           "Target": "membership"
         },
         {
@@ -8707,7 +9020,7 @@
           "ApiChange": "method",
           "ChangedApiName": "users,groups,devices,service principals",
           "ChangeType": "Addition",
-          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivemembersof?view=graph-rest-beta), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivemembersof?view=graph-rest-beta), [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivemembersof?view=graph-rest-beta) and [service principals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta).",
+          "Description": "Added new method transitiveMemberOf on [users](https://learn.microsoft.com/en-us/graph/api/user-list-transitivememberof?view=graph-rest-beta), [groups](https://learn.microsoft.com/en-us/graph/api/group-list-transitivememberof?view=graph-rest-beta), [devices](https://learn.microsoft.com/en-us/graph/api/device-list-transitivememberof?view=graph-rest-beta) and [service principals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta).",
           "Target": "users,groups,devices,service principals"
         },
         {
@@ -8715,7 +9028,7 @@
           "ApiChange": "method",
           "ChangedApiName": "membership",
           "ChangeType": "Addition",
-          "Description": "Added method memberOf to get a devices direct [membership](https://learn.microsoft.com/en-us/graph/api/device-list-members?view=graph-rest-beta). This method has been added for getting the list of memberships including nested memberships.",
+          "Description": "Added method memberOf to get a devices direct [membership](https://learn.microsoft.com/en-us/graph/api/device-list-memberof?view=graph-rest-beta). This method has been added for getting the list of memberships including nested memberships.",
           "Target": "membership"
         },
         {
@@ -8817,7 +9130,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,directoryObject",
           "ChangeType": "Addition",
-          "Description": "Added [delta query](delta-query-overview.md) capability for [directoryObject](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-beta)",
+          "Description": "Added [delta query](https://learn.microsoft.com/en-us/graph/delta-query-overview) capability for [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryobject?view=graph-rest-beta)",
           "Target": "delta query,directoryObject"
         }
       ],
@@ -8835,7 +9148,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta,directoryRole,change tracking using delta query",
           "ChangeType": "Addition",
-          "Description": "Added [delta](https://learn.microsoft.com/en-us/graph/api/directoryrole-delta?view=graph-rest-1.0) function for [directoryRole](https://learn.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-1.0) to support [change tracking using delta query](delta-query-overview.md).",
+          "Description": "Added **delta** function for [directoryRole](https://learn.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-1.0) to support [change tracking using delta query](https://learn.microsoft.com/en-us/graph/delta-query-overview).",
           "Target": "delta,directoryRole,change tracking using delta query"
         }
       ],
@@ -8925,7 +9238,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permissions topic",
           "ChangeType": "Addition",
-          "Description": "New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](permissions-reference.md#application-resource-permissions).",
+          "Description": "New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](https://learn.microsoft.com/en-us/graph/permissions-reference#application-resource-permissions).",
           "Target": "permissions topic"
         },
         {
@@ -10291,7 +10604,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "approvalWorkflowProvider",
           "ChangeType": "Addition",
-          "Description": "Added the [approvalWorkflowProvider](https://learn.microsoft.com/en-us/graph/api/resources/approvalWorkflowProvider?view=graph-rest-beta) resource type.",
+          "Description": "Added the **approvalWorkflowProvider** resource type.",
           "Target": "approvalWorkflowProvider"
         },
         {
@@ -10299,7 +10612,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [businessFlow](https://learn.microsoft.com/en-us/graph/api/resources/businessFlow?view=graph-rest-beta) resource type.",
+          "Description": "Added the **businessFlow** resource type.",
           "Target": "businessFlow"
         },
         {
@@ -10307,7 +10620,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "businessFlowSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [businessFlowSettings](https://learn.microsoft.com/en-us/graph/api/resources/businessFlowSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the **businessFlowSettings** resource type.",
           "Target": "businessFlowSettings"
         },
         {
@@ -10315,7 +10628,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governancePolicyTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [governancePolicyTemplate](https://learn.microsoft.com/en-us/graph/api/resources/governancePolicyTemplate?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governancePolicyTemplate** resource type.",
           "Target": "governancePolicyTemplate"
         },
         {
@@ -10379,7 +10692,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "directoryRoleAccessReviewPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [directoryRoleAccessReviewPolicy](https://learn.microsoft.com/en-us/graph/api/resources/directoryRoleAccessReviewPolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the **directoryRoleAccessReviewPolicy** resource type.",
           "Target": "directoryRoleAccessReviewPolicy"
         },
         {
@@ -10515,7 +10828,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governancePolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [governancePolicy](https://learn.microsoft.com/en-us/graph/api/resources/governancePolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governancePolicy** resource type.",
           "Target": "governancePolicy"
         },
         {
@@ -10523,7 +10836,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governanceCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [governanceCriteria](https://learn.microsoft.com/en-us/graph/api/resources/governanceCriteria?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governanceCriteria** resource type.",
           "Target": "governanceCriteria"
         },
         {
@@ -10531,7 +10844,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "groupMembershipGovernanceCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [groupMembershipGovernanceCriteria](https://learn.microsoft.com/en-us/graph/api/resources/groupMembershipGovernanceCriteria?view=graph-rest-beta) resource type.",
+          "Description": "Added the **groupMembershipGovernanceCriteria** resource type.",
           "Target": "groupMembershipGovernanceCriteria"
         },
         {
@@ -10539,7 +10852,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roleMembershipGovernanceCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [roleMembershipGovernanceCriteria](https://learn.microsoft.com/en-us/graph/api/resources/roleMembershipGovernanceCriteria?view=graph-rest-beta) resource type.",
+          "Description": "Added the **roleMembershipGovernanceCriteria** resource type.",
           "Target": "roleMembershipGovernanceCriteria"
         },
         {
@@ -10547,7 +10860,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userGovernanceCriteria",
           "ChangeType": "Addition",
-          "Description": "Added the [userGovernanceCriteria](https://learn.microsoft.com/en-us/graph/api/resources/userGovernanceCriteria?view=graph-rest-beta) resource type.",
+          "Description": "Added the **userGovernanceCriteria** resource type.",
           "Target": "userGovernanceCriteria"
         },
         {
@@ -10555,7 +10868,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governanceNotificationPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [governanceNotificationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/governanceNotificationPolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governanceNotificationPolicy** resource type.",
           "Target": "governanceNotificationPolicy"
         },
         {
@@ -10563,7 +10876,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governanceNotificationTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [governanceNotificationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/governanceNotificationTemplate?view=graph-rest-beta) resource type.",
+          "Description": "Added the **governanceNotificationTemplate** resource type.",
           "Target": "governanceNotificationTemplate"
         },
         {
@@ -10699,7 +11012,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "recordDecisions",
           "ChangeType": "Addition",
-          "Description": "Added the [recordDecisions](https://learn.microsoft.com/en-us/graph/api/businessFlow-recordDecisions?view=graph-rest-beta) method to the [businessFlow](https://learn.microsoft.com/en-us/graph/api/resources/businessFlow?view=graph-rest-beta) resource.",
+          "Description": "Added the **recordDecisions** method to the **businessFlow** resource.",
           "Target": "businessFlow"
         }
       ],
@@ -12004,7 +12317,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appId",
           "ChangeType": "Addition",
-          "Description": "Added support for addressing a [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta) using the **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Description": "Added support for addressing a [servicePrincipal](https://learn.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta) using the **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
           "Target": "servicePrincipal"
         }
       ],
@@ -12157,6 +12470,130 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-28T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a4b3144c-145e-4d0d-8bed-1a41f62f4221",
+          "ApiChange": "Property",
+          "ChangedApiName": "roleTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [directoryRole](https://learn.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-1.0) using **roleTemplateId* as the alternate key. You can now address a directoryRole via either the primary key **id** or the alternate key **roleTemplateId** as the path parameter.",
+          "Target": "directoryRole"
+        }
+      ],
+      "Id": "a4b3144c-145e-4d0d-8bed-1a41f62f4221",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db47d34d-9ef1-4e79-84be-0f28107e485e",
+          "ApiChange": "Property",
+          "ChangedApiName": "appId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing an [servicePrincipal](https://learn.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0) using the service principal **appId** as the alternate key. You can now address a service principal via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "db47d34d-9ef1-4e79-84be-0f28107e485e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-07T00:00:00.077762Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
+          "Target": "device"
+        }
+      ],
+      "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultUsageLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T05:29:04.5101503Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the **partnerTenantType** enumeration type.",
+          "Target": "partnerTenantType"
+        },
+        {
+          "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+          "ApiChange": "Property",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the `partnerTenantType` property to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-12T17:56:44.23698Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the **partnerTenantType** enumeration type.",
+          "Target": "partnerTenantType"
+        },
+        {
+          "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+          "ApiChange": "Property",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the `partnerTenantType` property to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-30T17:56:44.238139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }

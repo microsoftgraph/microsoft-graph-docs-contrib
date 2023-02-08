@@ -32,7 +32,8 @@ const chatMessage = {
   },
   attachments: [],
   mentions: [],
-  reactions: []
+  reactions: [],
+  messageHistory: []
 };
 
 await client.api('/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19:a21b0b0c05194ebc9e30000000000f61@thread.skype')

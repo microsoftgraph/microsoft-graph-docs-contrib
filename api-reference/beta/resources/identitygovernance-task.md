@@ -25,6 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List tasks](../api/identitygovernance-workflow-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get a list of the [task](../resources/identitygovernance-task.md) objects and their properties.|
 |[Get task](../api/identitygovernance-task-get.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Read the properties and relationships of a [task](../resources/identitygovernance-task.md) object.|
+|[Update task](../api/identitygovernance-task-update.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|update the properties of a [task](../resources/identitygovernance-task.md) object.|
 
 
 ## Properties
@@ -33,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |arguments|[microsoft.graph.keyValuePair](../resources/keyvaluepair.md) collection|Arguments included within the task. <br/> For guidance to configure this property, see [Configure the arguments for built-in Lifecycle Workflow tasks](/graph/identitygovernance-lifecycleworkflows-task-arguments). Required.|
 |category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. This property is multi-valued and the same task can apply to both `joiner` and `leaver` categories.<br><br>Supports `$filter`(`eq`, `ne`).|
-|continueOnError|Boolean|A boolean value that determines if the failure of this task stops the subsequent workflows from running. Optional.|
+|continueOnError|Boolean|A boolean value that specifies whether, if this task fails, the workflow will stop, and subsequent tasks will not run. Optional.|
 |description|String|A string that describes the purpose of the task for administrative use. Optional.|
 |displayName|String|A unique string that identifies the task. Required.<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |executionSequence|Int32|An integer that states in what order the task will run in a workflow.<br><br>Supports `$orderby`.|
