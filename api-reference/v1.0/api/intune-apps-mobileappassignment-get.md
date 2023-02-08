@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 975
+Content-Length: 400
 
 {
   "value": {
@@ -72,21 +72,8 @@ Content-Length: 975
       "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
     },
     "settings": {
-      "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
-      "notifications": "showReboot",
-      "restartSettings": {
-        "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
-        "gracePeriodInMinutes": 4,
-        "countdownDisplayBeforeRestartInMinutes": 6,
-        "restartNotificationSnoozeDurationInMinutes": 10
-      },
-      "installTimeSettings": {
-        "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
-        "useLocalTime": true,
-        "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-        "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
-      },
-      "deliveryOptimizationPriority": "foreground"
+      "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+      "useDeviceContext": true
     }
   }
 }

@@ -20,9 +20,9 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|downloadUrl|String|Download SAS Url for completed AppLogUploadRequest|
-|decryptionKey|String|DecryptionKey as string|
-|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm for Content. Possible values are: `aes256`.|
+|downloadUrl|String|Download SAS (Shared Access Signature) Url for completed app log request.|
+|decryptionKey|String|Decryption key that used to decrypt the log.|
+|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|Decryption algorithm for Content. Default is ASE256. Possible values are: `aes256`, `unknownFutureValue`.|
 
 ## Relationships
 None
