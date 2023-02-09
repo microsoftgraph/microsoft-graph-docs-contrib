@@ -11,6 +11,7 @@ requestBody := graphmodels.NewExtensionProperty()
 name := "jobGroup"
 requestBody.SetName(&name) 
 dataType := "String"
+isMultiValued := true,
 requestBody.SetDataType(&dataType) 
 targetObjects := []string {
 	"User",

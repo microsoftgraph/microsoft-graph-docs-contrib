@@ -48,6 +48,7 @@ In the request body, provide an [extensionProperty](../resources/extensionproper
 |:-------------|:------------|:------------|
 |dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
 |name|String| Name of the extension property. Not nullable. |
+|isMultiValued|Boolean| Creates a multi-valued directory extension property named `extension_{appid}_jobGroupTracker`. <br> Requires a directory extension definition same as single valued extension attribute as a prerequisite before `isMultiValued` is set.|
 |targetObjects|String collection| The Microsoft Graph resources that can use the extension property. All values must be in PascalCase. The following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`AdministrativeUnit`</li><li>`Application`</li><li>`Device`</li><li>`Organization`</li></ul>|
 
 
@@ -74,6 +75,7 @@ Content-type: application/json
 {
     "name": "jobGroup",
     "dataType": "String",
+    "isMultiValued": true,
     "targetObjects": [
         "User"
     ]
@@ -127,6 +129,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "appDisplayName": "b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.",
     "dataType": "String",
+    "isMultiValued": true, 
     "isSyncedFromOnPremises": false,
     "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
     "targetObjects": [

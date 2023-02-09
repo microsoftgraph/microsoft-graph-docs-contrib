@@ -14,6 +14,8 @@ $requestBody->setName('jobGroup');
 
 $requestBody->setDataType('String');
 
+$requestBody->setIsMultiValued(true);
+
 $requestBody->setTargetObjects(['User', ]);
 
 

@@ -10,6 +10,7 @@ var extensionProperty = new ExtensionProperty
 {
 	Name = "jobGroup",
 	DataType = "String",
+    isMultiValued: true,
 	TargetObjects = new List<String>()
 	{
 		"User"
