@@ -55,5 +55,3 @@ The [Soft delete a message](/graph/api/chatmessage-softdelete) API doesn't work 
 ### Channel based APIs are not supported in the context of shared channels
 
 All the [channels](/graph/api/resources/channel) based APIs are not supported in the context of shared channels in the Microsoft Graph for US Government L4 national cloud.
-
-## Microsoft Graph for US Government L5 cloud
