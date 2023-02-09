@@ -97,6 +97,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|movingRegion|Indicates that Cloud PC is being moved from one region to another one.|
 
 ## Relationships
 
