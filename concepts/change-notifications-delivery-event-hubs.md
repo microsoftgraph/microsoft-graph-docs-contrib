@@ -9,7 +9,7 @@ ms.custom: graphiamtop20, devx-track-azurecli
 
 # Receive change notifications through Azure Event Hubs
 
-It can be challenging to take advantage of webhooks to receive change notifications in high throughput scenarios or when the receiver cannot expose a publicly available notification URL. As an alternative, you can use Azure Event Hubs.
+Webhooks may not be suitable for receiving change notifications in high throughput scenarios or when the receiver cannot expose a publicly available notification URL. As an alternative, you can use Azure Event Hubs.
 
 Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources across a large set of organizations.
 
