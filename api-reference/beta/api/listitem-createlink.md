@@ -58,7 +58,8 @@ The following table shows the parameters that can be used with this action.
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
-|sendNotification|Boolean|Optional. If true, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint.|
+|sendNotification|Boolean|If `true`, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint. `false` is by default. Optional.|
+| retainInheritedPermissions |  boolean                       | If `true`, any current existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. `true` is by default. Optional. |
 
 ### Link types
 
@@ -97,6 +98,8 @@ The response will be `201 Created` if a new sharing link is created for the list
 The following example requests a sharing link to be created for the listItem specified by {itemId} in the list specified {listId}.
 The sharing link is configured to be read-only and usable by anyone with the link.
 For OneDrive for Business and SharePoint user, use sendNotification parameter to create a sharingLink, sharingLink is then sent to recipients via email.
+All existing permissions are removed when sharing for the first time if retainInheritedPermissions is false.
+
 #### Request
 
 
@@ -118,7 +121,8 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.driveRecipient"
     }
   ],
-  "sendNotification": true
+  "sendNotification": true,
+  "retainInheritedPermissions": false
 }
 ```
 
