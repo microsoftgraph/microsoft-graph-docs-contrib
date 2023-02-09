@@ -859,6 +859,42 @@
 			"SubArea": ""
 		},
 		{
+			"ChangeList": [
+				{
+					"Id": "44849e53-2f9a-4ab0-8d01-9d173f751133",
+					"ApiChange": "Member",
+					"ChangedApiName": "inProgress",
+					"ChangeType": "Addition",
+					"Description": "Added the `inProgress` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-1.0#incidentstatus-values) enumeration.",
+					"Target": "incidentStatus"
+				}
+			],
+			"Id": "44849e53-2f9a-4ab0-8d01-9d173f751133",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "2674744f-725e-4e6b-9768-5766b3713d2c",
+					"ApiChange": "Member",
+					"ChangedApiName": "inProgress",
+					"ChangeType": "Addition",
+                    "Description": "Added the `inProgress` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta#incidentstatus-values) enumeration.",
+                    "Target": "incidentStatus"
+				}
+			],
+			"Id": "2674744f-725e-4e6b-9768-5766b3713d2c",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		}
+		{
 			"changelist": [
 				{
 					"Id": "5e2a1ba7-ae0d-4dcb-937a-4d16e338a3cb",
