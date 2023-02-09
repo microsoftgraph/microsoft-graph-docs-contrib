@@ -14701,6 +14701,15 @@ items:
             href: api/adminreportsettings-get.md
           - name: Update
             href: api/adminreportsettings-update.md
+        - name: Froms activity
+          href: resources/microsoft-forms-usage-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getformsuseractivityuserdetail.md
+          - name: Get activity counts
+            href: api/reportroot-getformsuseractivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getformsuseractivityusercounts.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
