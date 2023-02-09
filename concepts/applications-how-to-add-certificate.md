@@ -28,7 +28,7 @@ To complete this tutorial, you need the following resources and privileges:
 > [!CAUTION]
 > The use of certificates is highly recommended over secrets; however, we don't recommend using self-signed certificates. They can reduce the security bar of your application due to various factors like use of an outdated hash and cipher suites or lack of validation. We recommend procuring certificates from a well known trusted certificate authority.
 
-## Read the certificate details
+## Step 1: Read the certificate details
 
 To add a certificate programmatically using Microsoft Graph, you need the certificate's key. You can optionally add the certificate's thumbprint.
 
@@ -72,7 +72,7 @@ The output that's saved in the *.txt* file can be similar to the following.
 MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMjAeFw0yMzAxMTIwODExNTZaFw0yNDAxMTIwODMxNTZaMBMxETAPBgNVBAMMCDIwMjMwMTEyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseKf1weEacJ67D6/...dG+7WMIBsIUy0xz6MmyvfSohz3oNP4jHt7pJ9TyxnvDlaxQPUbuIL+DaXVkKRm1V3GgIpKTBqMzTf4tCpy7rpUZbhcwAFw6h9A==
 ```
 
-## Add the certificate details using Microsoft Graph
+## Step 2: Add the certificate details using Microsoft Graph
 
 ### Request
 
@@ -210,7 +210,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Test app-only authentication
+## Step 3: Test app-only authentication
 
 You can test the app-only authentication using Microsoft Graph PowerShell, as shown in the following example.
 
