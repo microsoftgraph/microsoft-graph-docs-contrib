@@ -48,6 +48,17 @@ The preceding limits apply to the following resources:
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
+### Call Records
+
+| Limit Type      | Limit    |
+| -------------- | ------------ |
+| Per Tenant | 10,000 requests per 20 seconds |
+| Per Application per Tenant  | 1,500 requests per 20 seconds |
+| Per Call Record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
+
+The preceding limits apply to the following resources:
+
+- [callRecord](/graph/api/resources/callrecords-callrecord)
 
 ## Excel service limits
 
