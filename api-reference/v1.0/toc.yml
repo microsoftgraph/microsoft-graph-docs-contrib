@@ -1338,8 +1338,11 @@ items:
       - name: Overview
         href: resources/webhooks.md
       - name: Subscription
-        href: resources/subscription.md
         items:
+        - name: Subscription
+          href: resources/subscription.md
+        - name: Change notification collection
+          href: resources/changenotificationcollection.md
         - name: List subscription
           href: api/subscription-list.md
         - name: Get subscription

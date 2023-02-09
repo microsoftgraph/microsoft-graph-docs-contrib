@@ -9,11 +9,11 @@ ms.custom: graphiamtop20, devx-track-azurecli
 
 # Get change notifications through Azure Event Hubs
 
-Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notification URL.  
+It can be challenging to take advantage of webhooks to receive change notifications in high throughput scenarios or when the receiver cannot expose a publicly available notification URL. As an alternative, you can use Azure Event Hubs.
 
-This change notifications delivery mode is available for all resources that support Microsoft Graph change notifications.
+Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources across a large set of organizations.
 
-Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources accross a large set of organizations.
+This article walks you through managing your Microsoft Graph subscription and receiving change notifications through Azure Event Hubs.
 
 ## Using Azure Event Hubs to receive change notifications
 

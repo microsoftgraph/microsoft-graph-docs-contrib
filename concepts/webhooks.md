@@ -12,10 +12,13 @@ ms.date: 12/02/2022
 
 # Set up notifications for changes in resource data
 
-The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
+Change notifications enable applications to be alerted when data changes or is created in Microsoft Graph. When a resource is created, updated, or deleted, Microsoft Graph submits an HTTP POST to a specified client endpoint. The client endpoint listens for these messages and acts on them based on the logic defined by your business requirements.
 
-After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
+## What can you get notifications for?
 
+You can get notifications on messages, calendar events, users, groups, OneDrive files, and more. This allows you to stay up to date and in sync with data that is accessible via Microsoft Graph. It also allows you to avoid implementing a polling infrastructure where you submit requests to Microsoft Graph at regular intervals to get the most recent changes.
+
+The first step to start receiving change notifications is to first create a subscription. After Microsoft Graph accepts the subscription request and the subscription is activated, Microsoft Graph pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  

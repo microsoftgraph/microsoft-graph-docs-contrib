@@ -1542,8 +1542,11 @@ items:
         displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         href: resources/webhooks.md
       - name: Subscription
-        href: resources/subscription.md
         items:
+        - name: Subscription
+          href: resources/subscription.md
+        - name: Change notification collection
+          href: resources/changenotificationcollection.md
         - name: List
           href: api/subscription-list.md
         - name: Create
