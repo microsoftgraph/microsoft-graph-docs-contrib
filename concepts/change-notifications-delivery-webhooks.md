@@ -73,7 +73,7 @@ A change notification payload sent to your app can contain a collection of chang
 
 ### Change notification example
 
-This section shows an example of a notification for a new message. When the user receives an email, Microsoft Graph sends a change notification object to the client app as shown in the following example. See [changeNotificationCollection](/graph/api/resources/changenotificationcollection) and the related [changeNotification](changenotification.md) for details of the notification payload.
+This section shows an example of a notification for a new message. When the user receives an email, Microsoft Graph sends a change notification object to the client app as shown in the following example. See [changeNotificationCollection](/graph/api/resources/changenotificationcollection) and the related [changeNotification](/graph/api/resources/changenotification) for details of the notification payload.
 
 When many changes occur, Microsoft Graph may send multiple notifications that correspond to different subscriptions in the same `POST` request.
 
