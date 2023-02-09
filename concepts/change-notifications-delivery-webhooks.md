@@ -10,7 +10,7 @@ ms.custom: graphiamtop20, devx-track-azurecli
 
 A webhook is a HTTP-based user-defined callback API that you can set up in your infrastructure to receive change notifications and events from a service, such as Microsoft Graph. You must configure the webhook using a well-known and accessible HTTPS-secured endpoint.
 
-To receive change notifications through webhooks, you need to create a subscription to the resource for which you want to be notified of changes. While the subscription is valid, Microsoft Graph will send a notification to your app whenever a change is detected on the resource.
+To receive change notifications through webhooks, you need to create a subscription to the resource for which you want to be notified of changes. While the subscription is valid, Microsoft Graph sends a notification to your app whenever a change is detected on the resource.
 
 This article walks you through managing your Microsoft Graph subscription and receiving change notifications through webhooks.
 
@@ -22,7 +22,7 @@ Before you can receive Microsoft Graph change notifications, you must first crea
 
 1. Microsoft Graph verifies the request.
 
-    - If the request is valid, Microsoft Graph sends a validation token to the notification URL. This is a request for the client to validate the notification URL.
+    - If the request is valid, Microsoft Graph sends a validation token to the notification URL for the client app to validate the notification URL.
     - If the request is invalid, Microsoft Graph sends an error response with an error code and details.
 
 1. When the client receives the notification URL validation request, the client responds with the validation token in plain text as explained later in this article.
@@ -65,7 +65,7 @@ Each subscription has a unique **subscriptionId**, even if you have multiple sub
 
 ## Receive notifications
 
-While the subscription is valid and there are changes to the resource that you subscribed to, Microsoft Graph sends a `POST` request to the **notificationUrl** with details of the changes. This is the **change notification**.
+While the subscription is valid and there are changes to the resource that you subscribed to, Microsoft Graph sends a `POST` request to the **notificationUrl** with details of the changes. This payload is the **change notification**.
 
 A change notification payload sent to your app can contain a collection of change notifications relating to your subscriptions.
 
@@ -102,25 +102,25 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
 
 Your service should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification:
 
-1. After receiving the change notification, send a 2xx class code back to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it will try to resend the change notification a number of times, for a period of up to 4 hours; after that, the change notification will be discarded and won't be delivered. If the client app consistently doesn't respond within 3 seconds, the notifications might be subject to throttling.
+1. After receiving the change notification, send a 2xx class code back to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it tries to resend the change notification multiple times, for up to 4 hours. If Microsoft Graph still doesn't receive a 2xx code within the period, it discards the change notification. If the client app consistently doesn't respond within 3 seconds, the notifications might be subject to throttling.
 
-    If your service can take more than 3 seconds to process the change notification, it should persist the notification, return a `202 - Accepted` status code in the response to Microsoft Graph, then process the notifications at its capacity. If the notification is not persisted, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
+    If your service can take more than 3 seconds to process the change notification, it should persist the notification, return a `202 - Accepted` status code in the response to Microsoft Graph, then process the notifications at its capacity. If the notification isn't persisted, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
-    If your service is expected to take less than 3 seconds, it should process the notifications and return a `200 - OK` status code to Microsoft Graph. If the notification is not processed correctly, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
+    If your service is expected to take less than 3 seconds, it should process the notifications and return a `200 - OK` status code to Microsoft Graph. If the notification isn't processed correctly, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
-    If there's a mismatch, do not consider the change notification as valid. It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
+    If there's a mismatch, don't consider the change notification as valid. It's possible that the change notification hasn't originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
 
 1. Update your client app based on your business logic.
 
 ## Renew a subscription
 
-There a number of reasons why you may need to renew a subscription. For more information, see [lifecycle notifications](/graph/webhooks-lifecycle).
+There are many reasons why you may need to renew a subscription. For more information, see [lifecycle notifications](/graph/webhooks-lifecycle).
 
-When you subscribe to lifecycle notifications, Microsoft Graph will alert you when a subscription is almost expiring and should be renewed. If you don't subscribe to lifecycle notifications, you can use the **subscriptionExpirationDateTime** to monitor when your app should send a subscription renewal request.
+When you subscribe to lifecycle notifications, Microsoft Graph alerts you when a subscription is almost expiring and should be renewed. If you don't subscribe to lifecycle notifications, you can use the **subscriptionExpirationDateTime** to monitor when your app should send a subscription renewal request.
 
-To renew the subscription, the **expirationDateTime** property is required. If you don't renew a subscription in time, Microsoft Graph will delete the subscription and you'll no longer receive change notification for the subscription.
+To renew the subscription, the **expirationDateTime** property is required. If you don't renew a subscription in time, Microsoft Graph deletes the subscription, and the app won't receive future change notifications for the subscription.
 
 ### Subscription renewal request
 
@@ -141,7 +141,7 @@ If the subscription renewal request is successful, Microsoft Graph returns a `20
 
 ## Delete a subscription
 
-If the client app no longer wants to receive change notifications, they can delete the subscription using its subscriptionId as follows:
+If the client app no longer wants change notifications, it can delete the subscription using its **subscriptionId** as follows:
 
 <!-- {
   "blockType": "request",
@@ -152,6 +152,15 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 
 If successful, Microsoft Graph returns a `204 No Content` code.
+
+## Summary
+
+This section is a summary of the processes involved in receiving change notifications through webhooks.
+
+1. Send a POST request to the `/subscriptions` endpoint to create a subscription.
+2. Microsoft Graph validates the webhook notification endpoint before it completes the subscription creation process. A unique **subscriptionId** is linked to the subscription.
+3. While the subscription is still valid, and there are changes to the resource that you subscribed to, Microsoft Graph sends change notifications to the **notificationUrl** endpoint.
+4. Always renew the subscription to keep it valid and to continue receiving the changes that you subscribed to.
 
 ## See also
 
