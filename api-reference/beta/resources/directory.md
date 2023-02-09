@@ -46,6 +46,7 @@ Inherits from [entity](entity.md).
 | featureRolloutPolicies             | [featureRolloutPolicy](featurerolloutpolicy.md) collection                               | Nullable.                                                                                                                 |
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.            |
+| recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.             |
 
 ## JSON representation
 

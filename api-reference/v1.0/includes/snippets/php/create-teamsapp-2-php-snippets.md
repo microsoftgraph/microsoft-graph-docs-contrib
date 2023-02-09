@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new TeamsAppsRequestBuilderPostRequestConfiguration();
 
 $queryParameters = new TeamsAppsRequestBuilderPostQueryParameters();
-$queryParameters->requiresReview = true;
+$queryParameters->requiresreview = true;
 
 $requestConfiguration->queryParameters = $queryParameters;
 

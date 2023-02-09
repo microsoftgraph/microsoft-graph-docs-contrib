@@ -48,16 +48,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.agreementFileProperties",
-  "id": "String (identifier)",
-  "fileName": "String",
-  "language": "String",
-  "isDefault": "Boolean",
-  "isMajorVersion": "Boolean",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "fileData": {
     "@odata.type": "microsoft.graph.agreementFileData"
-  }
+  },
+  "fileName": "String",
+  "id": "String (identifier)",
+  "isDefault": "Boolean",
+  "isMajorVersion": "Boolean",
+  "language": "String"
 }
 ```
 

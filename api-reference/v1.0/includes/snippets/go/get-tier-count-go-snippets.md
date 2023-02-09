@@ -16,7 +16,7 @@ requestSearch := "\"displayName:tier\""
 
 requestParameters := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.userRequestBuilderGetQueryParameters{
 	Count: &requestCount,
-	OrderBy: [] string {"displayName"},
+	Orderby: [] string {"displayName"},
 	Search: &requestSearch,
 	Select: [] string {"displayName","id"},
 }

@@ -2,6 +2,8 @@
 title: "Manage an Azure AD application using Microsoft Graph"
 description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
@@ -233,114 +235,52 @@ Least privilege delegated permission: `Application.ReadWrite.All`
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-1418d6908bcd
+
 {
     "appRoleAssignmentRequired": true
 }
 ```
 
+## Assign permissions to an app
 
+While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
 
-### Create a delegated permission grant on behalf of all principals
+Least privilege delegated permission: `Application.ReadWrite.All`
 
-The following request grants a service principal identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`, two scopes that are exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`, on behalf of all principals in the tenant.
-
-Least privilege delegated permission: `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All`
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "tutorial-application-basics-grant-scopes-allprincipals"
+  "name": "tutorial-application-basics-assign-permissions"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
+PATCH https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7a76e98
 Content-Type: application/json
-
 {
-    "clientId": "b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94",
-    "consentType": "AllPrincipal",
-    "resourceId": "7ea9e944-71ce-443d-811c-71e8047b557a",
-    "scope": "User.Read.All Group.Read.All"
+    "requiredResourceAccess": [
+        {
+            "resourceAppId": "00000002-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+                    "type": "Scope"
+                },
+                {
+                    "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
+                    "type": "Role"
+                }
+            ]
+        }
+    ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-grant-scopes-allprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-grant-scopes-allprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-grant-scopes-allprincipals-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-grant-scopes-allprincipals-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-grant-scopes-allprincipals-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-grant-scopes-allprincipals-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-## Assign users and groups to an application
-
-You might want users and groups to first be assigned the application before they're able to access it. To implement this access control list, create an app role assignment for the users or groups to the app. Only users and security groups, including security groups with dynamic memberships, are supported. You can use the default app role of `00000000-0000-0000-0000-000000000000`.
-
-Least privilege delegated permission: `Application.Read.All` and `AppRoleAssignment.ReadWrite.All`
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-application-basics-grant-approleassignmentrequired-create-assignment"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3-1418d6908bcd/appRoleAssignedTo
-Content-Type: application/json
-
-{
-    "principalId": "b8afc02cb-4d62-4dba-b536-9f6d73e9e26",
-    "resourceId": "89473e09-0737-41a1-a0c3-1418d6908bcd",
-    "appRoleId": "00000000-0000-0000-0000-000000000000"
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-grant-approleassignmentrequired-create-assignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-grant-approleassignmentrequired-create-assignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-grant-approleassignmentrequired-create-assignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-grant-approleassignmentrequired-create-assignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-grant-approleassignmentrequired-create-assignment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ## Create app roles
 
 ### Create app roles on an application object
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-create-serviceprincipal-approles"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/bbd46130-e957-4c38-a116-d4d02afd1057
 Content-Type: application/json
@@ -363,90 +303,28 @@ Content-Type: application/json
 }
 ```
 
-
-### Create app roles on a service principal object
-
-When updating the appRoles in a service principal, you can only add to or update the existing collection. You cannot use this method to delete an appRole whose origin is the backing application. Therefore, the service principal can expose more, but not less, appRoles than the backing application.
-
-In the following request, the `Survey.Read` appRole originates from the application object.
-
-```http
-PATCH https://graph.microsoft.com/beta/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7
-Content-Type: application/json
-
-{
-    "appRoles": [
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "Survey.ReadWrite.All",
-            "displayName": "Survey.ReadWrite.All",
-            "id": "3ce57053-0ebf-42d8-bf7c-74161a450e4b",
-            "isEnabled": true,
-            "value": "Survey.ReadWrite.All"
-        },
-        {
-            "allowedMemberTypes": [
-                "User",
-                "Application"
-            ],
-            "description": "Survey.Read",
-            "displayName": "Survey.Read",
-            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
-            "isEnabled": false,
-            "origin": "Application",
-            "value": "Survey.Read"
-        }
-    ]
-}
-```
-
-## Manage application ownership
-
-As a best practice, all apps and service principals should have at least two owners. We recommend auditing the apps in your tenant to ensure that there aren't any ownerless apps and service principals, or those at risk of being ownerless.
-
-### Identify ownerless apps or apps with one owner
-
-Least privilege delegated permission: `Application.ReadWrite.All`
-
-This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-This request also returns the count of the apps that match the filter condition.
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-application-basics-ownerless-apps"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applications?$filter=owners/$count eq 0 or owners/$count eq 1&$count=true
-ConsistencyLevel: eventual
-```
-
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-ownerless-apps-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-application-basics-create-serviceprincipal-approles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-ownerless-apps-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-application-basics-create-serviceprincipal-approles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-ownerless-apps-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-application-basics-create-serviceprincipal-approles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-ownerless-apps-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-application-basics-create-serviceprincipal-approles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-ownerless-apps-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-application-basics-create-serviceprincipal-approles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-ownerless-apps-php-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
