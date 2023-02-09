@@ -1,6 +1,6 @@
 ---
 title: "pstnCallLogRow resource type"
-description: "Represents a row of data in the Public Switch Telephone Network (PSTN) call log."
+description: "Represents a row of data in the public switched telephone network (PSTN) call log."
 author: "williamlooney"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a row of data in the Public Switch Telephone Network (PSTN) call log. Each row maps to one call.
+Represents a row of data in the public switched telephone network (PSTN) call log. Each row maps to one call.
 
 ## Methods
 
@@ -48,7 +48,7 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |usageCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
 |userId|String|The unique identifier (GUID) of the user in Azure Active Directory. This and other user info will be null/empty for bot call types (ucap_in, ucap_out).|
-|userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address.|
+|userPrincipalName|String|The user principal name (sign-in name) in Azure Active Directory. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
 
 ## Relationships
 

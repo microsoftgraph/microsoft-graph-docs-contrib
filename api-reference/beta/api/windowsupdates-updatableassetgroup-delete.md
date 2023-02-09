@@ -1,7 +1,7 @@
 ---
 title: "Delete updatableAssetGroup"
 description: "Delete an updatableAssetGroup object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{updatableAssetGroupId}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5
 ```
 
 # [C#](#tab/csharp)
