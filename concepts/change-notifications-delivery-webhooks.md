@@ -1,14 +1,12 @@
 ---
-title: "Get change notifications through webhooks"
+title: "Receive change notifications through webhooks"
 description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through webhooks."
 author: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
 ---
 
-# Get change notifications through webhooks
-
-Your app can receive Microsoft Graph change notifications through **webhooks**.
+# Receive change notifications through webhooks
 
 A webhook is a HTTP-based user-defined callback API that you can set up in your infrastructure to receive change notifications and events from a service, such as Microsoft Graph. You must configure the webhook using a well-known and accessible HTTPS-secured endpoint.
 
@@ -18,13 +16,13 @@ This article walks you through managing your Microsoft Graph subscription and re
 
 ## Create a subscription
 
-Before you can receive Microsoft Graph change notifications, you must first create a subscription. The subscription process is as follows:
+Before you can receive Microsoft Graph change notifications, you must first create a subscription. The process to set up a valid subscription involves both the client app and Microsoft Graph as follows:
 
 1. The client app sends a subscription request to subscribe to changes on a specific resource.
 
 1. Microsoft Graph verifies the request.
 
-    - If the request is valid, Microsoft Graph sends a validation token to the notification URL.
+    - If the request is valid, Microsoft Graph sends a validation token to the notification URL. This is a request for the client to validate the notification URL.
     - If the request is invalid, Microsoft Graph sends an error response with an error code and details.
 
 1. When the client receives the notification URL validation request, the client responds with the validation token in plain text as explained later in this article.
@@ -52,7 +50,7 @@ Content-Type: application/json
 }
 ```
 
-Setting the **clientState** property will allow you to confirm that change notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
+The **clientState** property is required. Setting this property allows your service to confirm that change notifications you receive originate from Microsoft Graph. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription) object in the body.
 
