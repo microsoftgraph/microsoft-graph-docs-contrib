@@ -3021,18 +3021,18 @@
       "ChangeList": [
         {
           "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
-          "ApiChange": "Property",
+          "ApiChange": "Parameter",
           "ChangedApiName": "sendNotification",
           "ChangeType": "Addition",
-          "Description": "Added the **sendNotification** properties on the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Description": "Added the **sendNotification** Parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
           "Target": "createLink,driveItem"
         },
         {
           "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
-          "ApiChange": "Property",
+          "ApiChange": "Parameter",
           "ChangedApiName": "sendNotification",
           "ChangeType": "Addition",
-          "Description": "Added the **sendNotification** properties on the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listitem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Description": "Added the **sendNotification** Parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listitem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
           "Target": "createLink,listItem"
         }
       ],
