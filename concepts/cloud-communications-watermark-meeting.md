@@ -11,12 +11,21 @@ For a description of the Watermark meetings feature, licensing and policy requir
 
 A new [watermarkProtection](/graph/api/resources/onlinemeeting) property is added to [onlinemeeting](/graph/api/resources/onlinemeeting) to indicate the Watermark options.
 
-### Code or REST operation examples
+## Code or REST operation examples
 
-#### Create an online meeting with the new Watermark option
+### Create an online meeting with the new Watermark option
 
-```json
+#### Request
+
+```http
 POST /me/onlineMeetings
+```
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 {
   "subject": "meeting",
   "startDateTime": "2022-07-01T22:57:47.6388574Z",
@@ -26,30 +35,24 @@ POST /me/onlineMeetings
     "isEnabledForVideo": false,
   }
 }
-
-HTTP/1.1 200 OK
 ```
 
-#### Update Watermark option in an onlinemeeting
+### Update Watermark option in an onlinemeeting
 
->[!NOTE]
-> * Updating the Watermark properties will have no affect on meeting calls that have already started.
+> [!NOTE]
+> Updating the Watermark properties will have no affect on meeting calls that have already started.
 
-```json
+#### Request
+
+```http
 PATCH /me/onlineMeetings/{meetingId}
-{
-   "watermarkProtection": {
-      "isEnabledForContentSharing" : true,
-      "isEnabledForVideo" : false,
-   },
-}
-
-HTTP/1.1 200 OK
 ```
-#### Get the Watermark option in an onlinemeeting
 
-```json
-GET /me/onlineMeetings/{meetingId}
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 {
    ...
    "watermarkProtection": {
@@ -57,20 +60,46 @@ GET /me/onlineMeetings/{meetingId}
       "isEnabledForVideo" : false,
    },
 }
-
-HTTP/1.1 200 OK
 ```
 
-#### Restricted Experience when joining Watermark meetings using the Cloud Communications APIs
+### Get the Watermark option in an onlinemeeting
+
+#### Request
+
+```http
+GET /me/onlineMeetings/{meetingId}
+```
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+   ...
+   "watermarkProtection": {
+      "isEnabledForContentSharing" : true,
+      "isEnabledForVideo" : false,
+   },
+}
+```
+
+### Restricted Experience when joining Watermark meetings using the Cloud Communications APIs
 
 When a watermark is in use, applications using the [Cloud Communications Calling APIs](/graph/api/application-post-calls) will get a restricted media experience.
 
 To indicate this restricted media experience, each [participant](graph/api/resources/participant) in the [call roster](/graph/api/application-post-calls?view=graph-rest-1.0&tabs=http#notification---roster) and the [list participants api](/graph/api/call-list-participants) will have a new [restrictedExperience](graph/api/resources/participant) property, which shows [watermarkProtection](/graph/api/resources/onlinemeetingRestricted) as the reason for the restricted media experience.
 
 
-````JSON
-GET https://graph.microsoft.com/beta/communications/calls/d6a1a5a9-e1a5-456f-afd6-83f6ef949e51/participants
+#### Request
 
+```http
+GET https://graph.microsoft.com/beta/communications/calls/{callId}/participants
+```
+
+#### Response
+
+````http
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
@@ -102,7 +131,7 @@ Content-Type: application/json
                "@odata.type":"#microsoft.graph.identitySet",
                "guest":{
                   "@odata.type":"#microsoft.graph.identity",
-                  "id":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+                  "id":"9714e06e-8c29-4703-8e89-9c3cdaa56391",
                   "displayName":"AnonymousUser1"
                }
             },
@@ -122,7 +151,7 @@ Content-Type: application/json
                "guest":{
                   "@odata.type":"#microsoft.graph.identity",
                   "id":"38ef1c9d-6a01-4bc2-b5aa-5535952298f7",
-                  "displayName":"AnonymousUser1"
+                  "displayName":"AnonymousUser2"
                }
             },
          },
@@ -133,6 +162,6 @@ Content-Type: application/json
          }
       }
    ],
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#communications/calls('d6a1a5a9-e1a5-456f-afd6-83f6ef949e51')/participants"
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#communications/calls{callId}/participants"
 }
 ````
