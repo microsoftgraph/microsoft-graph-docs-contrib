@@ -139,7 +139,7 @@ Delta query is currently supported for the following resources. Note that some r
 | **Resource collection**                                        | **API**                                                                                                                                            |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                     |
-| Administrative units (preview)                                 | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource      |
+| Administrative units                                           | [delta](/graph/api/administrativeunit-delta) function of the [administrativeUnit](/graph/api/resources/administrativeunit) resource      |
 | Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                    |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Directory objects                                              | [delta](/graph/api/directoryobject-delta) function of the [directoryObject](/graph/api/resources/directoryObject) resource |
