@@ -18,6 +18,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |id|string| A unique identifier. |
+|deletedTeams|collection(deletedTeam)| Deleted teams. |
 
 ## Relationships
 
