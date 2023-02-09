@@ -969,24 +969,6 @@
 			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
 			"WorkloadArea": "Security",
 			"SubArea": "Alerts and incidents"
-		},
-		{
-			"ChangeList": [
-				{
-					"Id": "2674744f-725e-4e6b-9768-5766b3713d2c",
-					"ApiChange": "Member",
-					"ChangedApiName": "inProgress",
-					"ChangeType": "Addition",
-                    "Description": "Added the `inProgress` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta#incidentstatus-values) enumeration.",
-                    "Target": "incidentStatus"
-				}
-			],
-			"Id": "2674744f-725e-4e6b-9768-5766b3713d2c",
-			"Cloud": "Prod",
-			"Version": "v1.0",
-			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
-			"WorkloadArea": "Security",
-			"SubArea": "Alerts and incidents"
 		}
 	]
 }
