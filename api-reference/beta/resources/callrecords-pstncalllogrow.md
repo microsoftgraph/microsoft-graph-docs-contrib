@@ -30,9 +30,9 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |callerNumber|String|Number of the user or bot who made the call ([E.164](https://en.wikipedia.org/wiki/E.164)).|
 |callId|String|Call identifier. Not guaranteed to be unique.|
 |callType|String|Whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference.|
-|charge|Double|Amount of money or cost of the call that is charged to your account.|
+|charge|Decimal|Amount of money or cost of the call that is charged to your account.|
 |conferenceId|String|ID of the audio conference.|
-|connectionCharge|Double|Connection fee price.|
+|connectionCharge|Decimal|Connection fee price.|
 |currency|String|Type of currency used to calculate the cost of the call ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)).|
 |destinationContext|String|Whether the call was `Domestic` (within a country or region) or `International` (outside a country or region) based on the user's location.|
 |destinationName|String|Country or region dialed.|
@@ -47,7 +47,7 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |tenantCountryCode|String|Country code of the tenant. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |usageCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
-|userId|String|Calling user's ID in Graph (GUID). This and other user info will be null/empty for bot call types (ucap_in, ucap_out).|
+|userId|String|The unique identifier (GUID) of the user in Azure Active Directory. This and other user info will be null/empty for bot call types (ucap_in, ucap_out).|
 |userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address.|
 
 ## Relationships
@@ -73,9 +73,9 @@ The following is a JSON representation of the resource.
   "callerNumber": "String",
   "callId": "String",
   "callType": "String",
-  "charge": "Double",
+  "charge": "Decimal",
   "conferenceId": "String",
-  "connectionCharge": "Double",
+  "connectionCharge": "Decimal",
   "currency": "String",
   "destinationContext": "String",
   "destinationName": "String",

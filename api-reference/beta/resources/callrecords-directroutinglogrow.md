@@ -46,7 +46,7 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 |trunkFullyQualifiedDomainName|String|Fully qualified domain name of the session border controller.|
 |userCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
-|userId|String|Calling user's ID in Graph (GUID). This and other user info will be null/empty for bot call types.|
+|userId|String|The unique identifier (GUID) of the user in Azure Active Directory. This and other user info will be null/empty for bot call types.|
 |userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address.|
 
 ## Relationships
