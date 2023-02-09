@@ -29,7 +29,7 @@ To consume metered Microsoft 365 APIs and services, the Azure Active Directory a
 Before accessing metered Microsoft 365 APIs and services, you must complete the following prerequisite steps:
 - Create an application registration in Azure Active Directory for the application that will be making calls to the metered Microsoft 365 APIs and services.
 - If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now in the same tenant as the application registration.
-- Make sure that you have permissions for managing both the application registration and the Azure Subscription you wish to use.
+- You must have contributor permissions to the active Azure Subscription you wish to use as well as application owner permissions for the target application registration.
 - If the APIs you plan to use are Protected APIs, submit the [request form for Teams](teams-protected-apis.md) or [request form for SharePoint](https://aka.ms/PreviewSPOPremiumAPI) depending on which APIs you are calling.
 
 ## Enabling an application

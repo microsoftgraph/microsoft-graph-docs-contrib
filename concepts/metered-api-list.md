@@ -17,3 +17,4 @@ The following is the list of metered Microsoft 365 APIs and services. Calling th
 | Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions.md) | [Microsoft Teams API Licensing and Payment Requirements](teams-licenses.md) | [Microsoft Teams request](teams-protected-apis.md) |
 | Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update.md) | [Microsoft Teams API Licensing and Payment Requirements](teams-licenses.md) | [Microsoft Teams request](teams-protected-apis.md) |
 | SharePoint [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md) | Coming Soon | [SharePoint preview enrollment form](https://aka.ms/PreviewSPOPremiumAPI) |
+| eDiscovery [addToReviewSet](/graph/api/security-ediscoveryreviewset-addtoreviewset) | Coming Soon | Not required |
