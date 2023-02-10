@@ -65,9 +65,9 @@ where files are shared, and where tabs are added.
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 |membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
-|channelSummary|[channelSummary](../resources/channelSummary.md)|Contains summary information about the channel, including number of guests, members, and owners, and whether the channel includes members from other tenants. This property is only rendered if it is specified in the `$select` clause of the Get channel API.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
+|summary|[summary](../resources/channelSummary.md)|Contains summary information about the channel, including number of guests, members, owners and an indicator for members from other tenants. The `summary` property will only be rendered if it is specified in the $select clause of the Get channel API.|
 |tenantId |string | The ID of the Azure Active Directory tenant. |
 
 ### channelMembershipType values
