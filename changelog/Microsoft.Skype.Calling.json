@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "onlineMeetingContentSharingDisabledReason",
           "ChangeType": "Addition",
           "Description": "Added the **onlineMeetingContentSharingDisabledReason** enumeration type.",
@@ -12,7 +12,7 @@
         },
         {
           "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "onlineMeetingVideoDisabledReason",
           "ChangeType": "Addition",
           "Description": "Added the **onlineMeetingVideoDisabledReason** enumeration type.",
@@ -39,8 +39,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-12-19T17:48:36.7409742Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [

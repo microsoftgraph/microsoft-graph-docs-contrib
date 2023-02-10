@@ -1,6 +1,6 @@
 ---
 title: "watermarkProtectionValues resource type"
-description: "Specifies if watermark is to be applied for different entities."
+description: "Represents restricted experience reasons for a participant."
 author: "zihzhan"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specified restricted experience reasons for a participant.
+Represents restricted experience reasons for a participant.
 
 ## Properties
 
-| Property                   | Type                                                         | Description                                                                                 |
-|----------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| isEnabledForContentSharing         | Boolean   | Specify the value to apply watermark to any shared content.	       |
-| isEnabledForVideo    | Boolean   | Specify the value to apply watermark to everyone's video feed.	 |
+| Property                   | Type    | Description                                                    |
+|:---------------------------|:--------|:---------------------------------------------------------------|
+| isEnabledForContentSharing | Boolean | Specifies the value to apply watermark to any shared content.  |
+| isEnabledForVideo          | Boolean | Specify the value to apply watermark to everyone's video feed. |
 
 ## JSON representation
 
