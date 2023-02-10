@@ -18,17 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List sequentialActivationRenewalsAlertConfigurations](../api/sequentialactivationrenewalsalertconfiguration-list.md)|[sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md) collection|Get a list of the [sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md) objects and their properties.|
-|[Get sequentialActivationRenewalsAlertConfiguration](../api/sequentialactivationrenewalsalertconfiguration-get.md)|[sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md)|Read the properties and relationships of a [sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md) object.|
-|[Update sequentialActivationRenewalsAlertConfiguration](../api/sequentialactivationrenewalsalertconfiguration-update.md)|[sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md)|Update the properties of a [sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md) object.|
-|[Delete sequentialActivationRenewalsAlertConfiguration](../api/sequentialactivationrenewalsalertconfiguration-delete.md)|None|Delete a [sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md) object.|
-|[List unifiedRoleManagementAlertDefinition](../api/unifiedrolemanagementalert-list-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get the unifiedRoleManagementAlertDefinition resources from the alertDefinition navigation property.|
-|[Add unifiedRoleManagementAlertDefinition](../api/sequentialactivationrenewalsalertconfiguration-post-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Add alertDefinition by posting to the alertDefinition collection.|
-|[Remove unifiedRoleManagementAlertDefinition](../api/sequentialactivationrenewalsalertconfiguration-delete-alertdefinition.md)|None|Remove an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

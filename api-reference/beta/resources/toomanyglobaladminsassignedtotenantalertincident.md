@@ -18,15 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List tooManyGlobalAdminsAssignedToTenantAlertIncidents](../api/toomanyglobaladminsassignedtotenantalertincident-list.md)|[tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md) collection|Get a list of the [tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md) objects and their properties.|
-|[Get tooManyGlobalAdminsAssignedToTenantAlertIncident](../api/toomanyglobaladminsassignedtotenantalertincident-get.md)|[tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md)|Read the properties and relationships of a [tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md) object.|
-|[Update tooManyGlobalAdminsAssignedToTenantAlertIncident](../api/toomanyglobaladminsassignedtotenantalertincident-update.md)|[tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md)|Update the properties of a [tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md) object.|
-|[Delete tooManyGlobalAdminsAssignedToTenantAlertIncident](../api/toomanyglobaladminsassignedtotenantalertincident-delete.md)|None|Delete a [tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md) object.|
-|[remediate](../api/toomanyglobaladminsassignedtotenantalertincident-remediate.md)|None|**TODO: Add Description**|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

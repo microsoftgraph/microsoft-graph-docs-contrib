@@ -18,15 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List noMfaOnRoleActivationAlertIncidents](../api/nomfaonroleactivationalertincident-list.md)|[noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md) collection|Get a list of the [noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md) objects and their properties.|
-|[Get noMfaOnRoleActivationAlertIncident](../api/nomfaonroleactivationalertincident-get.md)|[noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md)|Read the properties and relationships of a [noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md) object.|
-|[Update noMfaOnRoleActivationAlertIncident](../api/nomfaonroleactivationalertincident-update.md)|[noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md)|Update the properties of a [noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md) object.|
-|[Delete noMfaOnRoleActivationAlertIncident](../api/nomfaonroleactivationalertincident-delete.md)|None|Delete a [noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md) object.|
-|[remediate](../api/nomfaonroleactivationalertincident-remediate.md)|None|**TODO: Add Description**|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

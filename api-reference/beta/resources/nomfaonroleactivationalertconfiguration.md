@@ -18,17 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List noMfaOnRoleActivationAlertConfigurations](../api/nomfaonroleactivationalertconfiguration-list.md)|[noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md) collection|Get a list of the [noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md) objects and their properties.|
-|[Get noMfaOnRoleActivationAlertConfiguration](../api/nomfaonroleactivationalertconfiguration-get.md)|[noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md)|Read the properties and relationships of a [noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md) object.|
-|[Update noMfaOnRoleActivationAlertConfiguration](../api/nomfaonroleactivationalertconfiguration-update.md)|[noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md)|Update the properties of a [noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md) object.|
-|[Delete noMfaOnRoleActivationAlertConfiguration](../api/nomfaonroleactivationalertconfiguration-delete.md)|None|Delete a [noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md) object.|
-|[List unifiedRoleManagementAlertDefinition](../api/unifiedrolemanagementalert-list-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get the unifiedRoleManagementAlertDefinition resources from the alertDefinition navigation property.|
-|[Add unifiedRoleManagementAlertDefinition](../api/nomfaonroleactivationalertconfiguration-post-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Add alertDefinition by posting to the alertDefinition collection.|
-|[Remove unifiedRoleManagementAlertDefinition](../api/nomfaonroleactivationalertconfiguration-delete-alertdefinition.md)|None|Remove an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

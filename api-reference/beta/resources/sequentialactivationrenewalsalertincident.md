@@ -18,15 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List sequentialActivationRenewalsAlertIncidents](../api/sequentialactivationrenewalsalertincident-list.md)|[sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md) collection|Get a list of the [sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md) objects and their properties.|
-|[Get sequentialActivationRenewalsAlertIncident](../api/sequentialactivationrenewalsalertincident-get.md)|[sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md)|Read the properties and relationships of a [sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md) object.|
-|[Update sequentialActivationRenewalsAlertIncident](../api/sequentialactivationrenewalsalertincident-update.md)|[sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md)|Update the properties of a [sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md) object.|
-|[Delete sequentialActivationRenewalsAlertIncident](../api/sequentialactivationrenewalsalertincident-delete.md)|None|Delete a [sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md) object.|
-|[remediate](../api/sequentialactivationrenewalsalertincident-remediate.md)|None|**TODO: Add Description**|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

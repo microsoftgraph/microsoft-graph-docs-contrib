@@ -18,15 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List staleSignInAlertIncidents](../api/stalesigninalertincident-list.md)|[staleSignInAlertIncident](../resources/stalesigninalertincident.md) collection|Get a list of the [staleSignInAlertIncident](../resources/stalesigninalertincident.md) objects and their properties.|
-|[Get staleSignInAlertIncident](../api/stalesigninalertincident-get.md)|[staleSignInAlertIncident](../resources/stalesigninalertincident.md)|Read the properties and relationships of a [staleSignInAlertIncident](../resources/stalesigninalertincident.md) object.|
-|[Update staleSignInAlertIncident](../api/stalesigninalertincident-update.md)|[staleSignInAlertIncident](../resources/stalesigninalertincident.md)|Update the properties of a [staleSignInAlertIncident](../resources/stalesigninalertincident.md) object.|
-|[Delete staleSignInAlertIncident](../api/stalesigninalertincident-delete.md)|None|Delete a [staleSignInAlertIncident](../resources/stalesigninalertincident.md) object.|
-|[remediate](../api/stalesigninalertincident-remediate.md)|None|**TODO: Add Description**|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

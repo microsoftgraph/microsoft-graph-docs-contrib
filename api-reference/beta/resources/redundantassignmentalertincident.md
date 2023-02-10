@@ -18,15 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List redundantAssignmentAlertIncidents](../api/redundantassignmentalertincident-list.md)|[redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md) collection|Get a list of the [redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md) objects and their properties.|
-|[Get redundantAssignmentAlertIncident](../api/redundantassignmentalertincident-get.md)|[redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md)|Read the properties and relationships of a [redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md) object.|
-|[Update redundantAssignmentAlertIncident](../api/redundantassignmentalertincident-update.md)|[redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md)|Update the properties of a [redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md) object.|
-|[Delete redundantAssignmentAlertIncident](../api/redundantassignmentalertincident-delete.md)|None|Delete a [redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md) object.|
-|[remediate](../api/redundantassignmentalertincident-remediate.md)|None|**TODO: Add Description**|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

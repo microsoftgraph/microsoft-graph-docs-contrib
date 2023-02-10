@@ -18,17 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List invalidLicenseAlertConfigurations](../api/invalidlicensealertconfiguration-list.md)|[invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md) collection|Get a list of the [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md) objects and their properties.|
-|[Get invalidLicenseAlertConfiguration](../api/invalidlicensealertconfiguration-get.md)|[invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md)|Read the properties and relationships of an [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md) object.|
-|[Update invalidLicenseAlertConfiguration](../api/invalidlicensealertconfiguration-update.md)|[invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md)|Update the properties of an [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md) object.|
-|[Delete invalidLicenseAlertConfiguration](../api/invalidlicensealertconfiguration-delete.md)|None|Delete an [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md) object.|
-|[List unifiedRoleManagementAlertDefinition](../api/unifiedrolemanagementalert-list-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get the unifiedRoleManagementAlertDefinition resources from the alertDefinition navigation property.|
-|[Add unifiedRoleManagementAlertDefinition](../api/invalidlicensealertconfiguration-post-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Add alertDefinition by posting to the alertDefinition collection.|
-|[Remove unifiedRoleManagementAlertDefinition](../api/invalidlicensealertconfiguration-delete-alertdefinition.md)|None|Remove an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

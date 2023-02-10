@@ -18,17 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List tooManyGlobalAdminsAssignedToTenantAlertConfigurations](../api/toomanyglobaladminsassignedtotenantalertconfiguration-list.md)|[tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md) collection|Get a list of the [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md) objects and their properties.|
-|[Get tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../api/toomanyglobaladminsassignedtotenantalertconfiguration-get.md)|[tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md)|Read the properties and relationships of a [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md) object.|
-|[Update tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../api/toomanyglobaladminsassignedtotenantalertconfiguration-update.md)|[tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md)|Update the properties of a [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md) object.|
-|[Delete tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../api/toomanyglobaladminsassignedtotenantalertconfiguration-delete.md)|None|Delete a [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md) object.|
-|[List unifiedRoleManagementAlertDefinition](../api/unifiedrolemanagementalert-list-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get the unifiedRoleManagementAlertDefinition resources from the alertDefinition navigation property.|
-|[Add unifiedRoleManagementAlertDefinition](../api/toomanyglobaladminsassignedtotenantalertconfiguration-post-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Add alertDefinition by posting to the alertDefinition collection.|
-|[Remove unifiedRoleManagementAlertDefinition](../api/toomanyglobaladminsassignedtotenantalertconfiguration-delete-alertdefinition.md)|None|Remove an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

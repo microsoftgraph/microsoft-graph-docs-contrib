@@ -18,17 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List redundantAssignmentAlertConfigurations](../api/redundantassignmentalertconfiguration-list.md)|[redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md) collection|Get a list of the [redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md) objects and their properties.|
-|[Get redundantAssignmentAlertConfiguration](../api/redundantassignmentalertconfiguration-get.md)|[redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md)|Read the properties and relationships of a [redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md) object.|
-|[Update redundantAssignmentAlertConfiguration](../api/redundantassignmentalertconfiguration-update.md)|[redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md)|Update the properties of a [redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md) object.|
-|[Delete redundantAssignmentAlertConfiguration](../api/redundantassignmentalertconfiguration-delete.md)|None|Delete a [redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md) object.|
-|[List unifiedRoleManagementAlertDefinition](../api/unifiedrolemanagementalert-list-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get the unifiedRoleManagementAlertDefinition resources from the alertDefinition navigation property.|
-|[Add unifiedRoleManagementAlertDefinition](../api/redundantassignmentalertconfiguration-post-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Add alertDefinition by posting to the alertDefinition collection.|
-|[Remove unifiedRoleManagementAlertDefinition](../api/redundantassignmentalertconfiguration-delete-alertdefinition.md)|None|Remove an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

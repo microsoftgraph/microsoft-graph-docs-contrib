@@ -23,10 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleManagementAlertIncidents](../api/unifiedrolemanagementalert-list-alertincidents.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Get a list of the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) objects and their properties.|
-|[Create unifiedRoleManagementAlertIncident](../api/unifiedrolemanagementalert-post-alertincidents.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md)|Create a new [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object.|
 |[Get unifiedRoleManagementAlertIncident](../api/unifiedrolemanagementalertincident-get.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md)|Read the properties and relationships of an [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object.|
-|[Update unifiedRoleManagementAlertIncident](../api/unifiedrolemanagementalertincident-update.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md)|Update the properties of an [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object.|
-|[Delete unifiedRoleManagementAlertIncident](../api/unifiedrolemanagementalert-delete-alertincidents.md)|None|Delete an [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object.|
 |[remediate](../api/unifiedrolemanagementalertincident-remediate.md)|None|**TODO: Add Description**|
 
 ## Properties

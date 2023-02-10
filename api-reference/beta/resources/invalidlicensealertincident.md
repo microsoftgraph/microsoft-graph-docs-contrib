@@ -18,15 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List invalidLicenseAlertIncidents](../api/invalidlicensealertincident-list.md)|[invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md) collection|Get a list of the [invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md) objects and their properties.|
-|[Get invalidLicenseAlertIncident](../api/invalidlicensealertincident-get.md)|[invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md)|Read the properties and relationships of an [invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md) object.|
-|[Update invalidLicenseAlertIncident](../api/invalidlicensealertincident-update.md)|[invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md)|Update the properties of an [invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md) object.|
-|[Delete invalidLicenseAlertIncident](../api/invalidlicensealertincident-delete.md)|None|Delete an [invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md) object.|
-|[remediate](../api/invalidlicensealertincident-remediate.md)|None|**TODO: Add Description**|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

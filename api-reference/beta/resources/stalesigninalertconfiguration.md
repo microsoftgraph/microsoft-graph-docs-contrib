@@ -18,17 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List staleSignInAlertConfigurations](../api/stalesigninalertconfiguration-list.md)|[staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md) collection|Get a list of the [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md) objects and their properties.|
-|[Get staleSignInAlertConfiguration](../api/stalesigninalertconfiguration-get.md)|[staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md)|Read the properties and relationships of a [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md) object.|
-|[Update staleSignInAlertConfiguration](../api/stalesigninalertconfiguration-update.md)|[staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md)|Update the properties of a [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md) object.|
-|[Delete staleSignInAlertConfiguration](../api/stalesigninalertconfiguration-delete.md)|None|Delete a [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md) object.|
-|[List unifiedRoleManagementAlertDefinition](../api/unifiedrolemanagementalert-list-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get the unifiedRoleManagementAlertDefinition resources from the alertDefinition navigation property.|
-|[Add unifiedRoleManagementAlertDefinition](../api/stalesigninalertconfiguration-post-alertdefinition.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Add alertDefinition by posting to the alertDefinition collection.|
-|[Remove unifiedRoleManagementAlertDefinition](../api/stalesigninalertconfiguration-delete-alertdefinition.md)|None|Remove an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

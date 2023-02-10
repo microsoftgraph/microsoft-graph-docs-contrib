@@ -18,15 +18,6 @@ Namespace: microsoft.graph
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List rolesAssignedOutsidePrivilegedIdentityManagementAlertIncidents](../api/rolesassignedoutsideprivilegedidentitymanagementalertincident-list.md)|[rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md) collection|Get a list of the [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md) objects and their properties.|
-|[Get rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../api/rolesassignedoutsideprivilegedidentitymanagementalertincident-get.md)|[rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md)|Read the properties and relationships of a [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md) object.|
-|[Update rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../api/rolesassignedoutsideprivilegedidentitymanagementalertincident-update.md)|[rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md)|Update the properties of a [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md) object.|
-|[Delete rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../api/rolesassignedoutsideprivilegedidentitymanagementalertincident-delete.md)|None|Delete a [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](../resources/rolesassignedoutsideprivilegedidentitymanagementalertincident.md) object.|
-|[remediate](../api/rolesassignedoutsideprivilegedidentitymanagementalertincident-remediate.md)|None|**TODO: Add Description**|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
