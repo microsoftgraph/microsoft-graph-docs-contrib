@@ -17,6 +17,12 @@ Represents a report of usage and money spent for the audio conferencing dial-out
 
 All dial-out calls/duration/charge is counted under a meeting organizer. It's not necessarily the same person who dialed out.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [getPstnOnlineMeetingDialoutReport](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md) | [microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) collection | Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of [pstnOnlineMeetingDialoutReport](../resources/callrecords-pstnonlinemeetingdialoutreport.md) entries. |
+
 ## Properties
 
 |Property|Type|Description|

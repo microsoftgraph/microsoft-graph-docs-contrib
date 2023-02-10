@@ -66,7 +66,7 @@ If there are more than 1000 entries in the date range, the body also includes an
 The following example shows how to get a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1000 calls in that date range.
 
 ### Request
-
+The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -93,8 +93,8 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 ---
 
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
