@@ -749,14 +749,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the **summary** property to [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the **summary** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         }
       ],
       "Id": "8A36C99E-BF27-45D1-9888-F55420EEB5C2",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2022-03-14T20:18:40.595Z",
+      "CreatedDateTime": "2023-02-10T20:18:40.595Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
