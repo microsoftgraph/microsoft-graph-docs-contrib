@@ -8,9 +8,9 @@ ms.custom: scenarios:getting-started
 
 # List of Microsoft Graph Metered APIs
 
-This article provides a list of metered Microsoft 365 APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Metered APIs in Microsoft Graph](metered-api-overview.md). Some metered Microsoft 365 APIs and services might also require submitting a protected API request. For those APIs, the link to the submission form is included in the table.
+This article provides a list of metered Microsoft 365 APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Metered APIs in Microsoft Graph](metered-api-overview.md). Some metered Microsoft 365 APIs and services might also require that you submit a protected API request. For those APIs, the link to the submission form is included in the table.
 
-| API | Billing and License information | Protected API form |
+| API | Billing and license information | Protected API form |
 |:--------------------------|:--------------------------|:----------------------------------------|
 | Teams [chat](/graph/api/chats-getallmessages.md) export | [Microsoft Teams API Licensing and Payment Requirements](teams-licenses.md) | [Microsoft Teams request](teams-protected-apis.md) |
 | Teams [channel](/graph/api/channel-getallmessages.md) export | [Microsoft Teams API Licensing and Payment Requirements](teams-licenses.md) | [Microsoft Teams request](teams-protected-apis.md) |
@@ -18,4 +18,4 @@ This article provides a list of metered Microsoft 365 APIs and services in Micro
 | Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions.md) | [Microsoft Teams API Licensing and Payment Requirements](teams-licenses.md) | [Microsoft Teams request](teams-protected-apis.md) |
 | Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update.md) | [Microsoft Teams API Licensing and Payment Requirements](teams-licenses.md) | [Microsoft Teams request](teams-protected-apis.md) |
 | SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md) | Coming Soon | [SharePoint preview enrollment form](https://aka.ms/PreviewSPOPremiumAPI) |
-| eDiscovery [addToReviewSet](/graph/api/security-ediscoveryreviewset-addtoreviewset) | Coming Soon | Not required |
+| eDiscovery [addToReviewSet](/graph/api/security-ediscoveryreviewset-addtoreviewset) | Coming soon | Not required |
