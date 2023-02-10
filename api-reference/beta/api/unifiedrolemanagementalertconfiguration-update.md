@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertConfiguration
 PATCH /identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedRoleManagementAlertConfigurationId}
 ```
 
@@ -56,7 +55,7 @@ PATCH /identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedRoleM
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -68,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertConfiguration
+PATCH https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedrolemanagementalertconfigurationId}
 Content-Type: application/json
 
 {
@@ -90,16 +89,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.unifiedRoleManagementAlertConfiguration",
-  "id": "130f67aa-869d-66ef-035b-0c1e657b21d3",
-  "alertDefinitionId": "String",
-  "scopeType": "String",
-  "scopeId": "String",
-  "isEnabled": "Boolean"
-}
+HTTP/1.1 204 No Content
 ```
 

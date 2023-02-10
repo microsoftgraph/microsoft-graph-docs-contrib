@@ -30,9 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertDefinition
 GET /identityGovernance/roleManagementAlerts/alertDefinitions/{unifiedRoleManagementAlertDefinitionId}
-GET /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertConfiguration/alertDefinition
 ```
 
 ## Optional query parameters
@@ -60,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertDefinition
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertDefinitions/{unifiedRoleManagementAlertDefinitionId}
 ```
 
 

@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -84,6 +84,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 

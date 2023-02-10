@@ -46,19 +46,13 @@ PATCH /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAler
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|alertDefinitionId|String|**TODO: Add Description** Required.|
-|scopeId|String|**TODO: Add Description** Required.|
-|scopeType|String|**TODO: Add Description** Required.|
-|incidentCount|Int32|**TODO: Add Description** Optional.|
-|isActive|Boolean|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastScannedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|isActive|Boolean|**TODO: Add Description** Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -74,13 +68,7 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/a
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleManagementAlert",
-  "alertDefinitionId": "String",
-  "scopeId": "String",
-  "scopeType": "String",
-  "incidentCount": "Integer",
-  "isActive": "Boolean",
-  "lastScannedDateTime": "String (timestamp)"
+  "isActive": "Boolean"
 }
 ```
 
@@ -94,19 +82,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.unifiedRoleManagementAlert",
-  "id": "01db0bdd-5aa2-8611-4d9e-e5cd2ca70699",
-  "alertDefinitionId": "String",
-  "scopeId": "String",
-  "scopeType": "String",
-  "incidentCount": "Integer",
-  "isActive": "Boolean",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastScannedDateTime": "String (timestamp)"
-}
+HTTP/1.1 204 No Content
 ```
 

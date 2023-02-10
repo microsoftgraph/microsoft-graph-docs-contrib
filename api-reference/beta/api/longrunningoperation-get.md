@@ -30,8 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/authentication/operations/{longRunningOperationId}
-GET /users/{usersId}/authentication/operations/{longRunningOperationId}
 GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}
 ```
 
@@ -60,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/authentication/operations/{longRunningOperationId}
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}
 ```
 
 
