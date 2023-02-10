@@ -1,7 +1,9 @@
 ---
 title: "Assign reviewers to your access review using the Microsoft Graph API"
 description: "Use the access reviews API in Microsoft Graph to assign access reviewers such as specific users, members or owners of a group, people managers, or app owners."
-author: "jyothig123"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
