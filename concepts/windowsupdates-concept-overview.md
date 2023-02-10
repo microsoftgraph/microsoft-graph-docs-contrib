@@ -19,7 +19,7 @@ IT professionals and management tool vendors alike can use the deployment servic
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update.
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s).
 
-Today, the deployment service supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview). [Windows Update for Business reports](wufb-reports-overview.md) is integrated with the deployment service to enable per deployment reporting, monitoring, and troubleshooting.
+Today, the deployment service supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview). To track the progress and status of your deployments, see [Windows Update for Business reports](wufb-reports-overview.md) which has integrated with the deployment service to enable per deployment reporting, monitoring, and troubleshooting.
 
 ## Prerequisites
 
@@ -45,11 +45,11 @@ Feature updates add new features and functionality to Windows 10 and Windows 11 
 
 ## Quality Updates
 
-Quality updates deliver both security and non-security fixes, including security updates, critical updates, servicing stack updates, and driver updates.  They are typically released on the second Tuesday of each month, but they can be released at any time.  Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes for a specific feature update, including any out-of-band security fixes and any servicing stack updates that might have been released previously.
+Quality updates released by Microsoft deliver both security and non-security fixes. Windows Update for Business for Business helps devices to take security updates through Expedite. Security Updates are typically released on the second Tuesday of each month, with an exception of Out-of-Band security updates that can be released at any time. Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes released for your specific OS version.
 
 ## Drivers and firmware
 
-Driver and firmware updates are published to Windows Update by independant hardware vendors and original equipment manufacturers who continuously build new drivers and firmware or update existing ones.  The deployment service will only show you driver and firmware updates that are applicable and better (normally by version number or version date) than what is currently installed on your devices .  The service takes the guess work out of identifying what drivers and firmware updates apply to your devices and lets you focus on approving content that will help keep your devices protected and productive.
+Driver and firmware updates are published to Windows Update by independent hardware vendors and original equipment manufacturers who continuously build new drivers and firmware or update existing ones.  The deployment service will only show you driver and firmware updates that are applicable and better (normally by version number or version date) than what is currently installed on your devices .  The service takes the guess work out of identifying what drivers and firmware updates apply to your devices and lets you focus on approving content that will help keep your devices protected and productive.
 
 ## Capabilities of the Windows Update for Business deployment service
 
@@ -68,7 +68,7 @@ The deployment service simplifies reviewing, approving, scheduling, and deployin
 
 ## Gradual rollout
 
-Stage deployments over a period of days or weeks by specifying [gradual rollout settings](/graph/api/resources/windowsupdates-gradualrolloutsettings). If you choose to deploy an update over a period of time, the deployment service automatically optimizes the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
+Stage deployments over a period of days or weeks by specifying [gradual rollout settings](/graph/api/resources/windowsupdates-gradualrolloutsettings). If you choose to deploy an update over a period of time, the deployment service automatically optimizes the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue.
 
 ## Expedite
 
@@ -91,3 +91,4 @@ To learn more, see [Manage monitoring rules for a deployment](windowsupdates-man
 Looking for the API reference for this service?
 
 See [Windows updates API in Microsoft Graph beta](/graph/api/resources/adminwindowsupdates?view=graph-rest-beta&preserve-view=true).
+
