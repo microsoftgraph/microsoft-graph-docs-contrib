@@ -42,6 +42,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
+|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform bulk resize for a set of Cloud PCs which passed BulkResizePreview. If some devices cannot be resized, then they will be marked as resize failed, while others will proceed to be provisioned.|
 
 ## Properties
 
@@ -97,6 +98,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|resizePendingLicense|Indicates that the Cloud PC resize is triggered, has not been licensed with target license, pending customer action.|
 
 ## Relationships
 
