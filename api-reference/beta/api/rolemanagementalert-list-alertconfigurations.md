@@ -1,6 +1,6 @@
 ---
 title: "List unifiedRoleManagementAlertConfiguration"
-description: "Get the unifiedRoleManagementAlertConfiguration resources from the alertConfiguration navigation property."
+description: "Get a list of the unifiedRoleManagementAlertConfiguration objects and their properties."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the unifiedRoleManagementAlertConfiguration resources from the alertConfiguration navigation property.
+Get a list of the [unifiedRoleManagementAlertConfiguration](../resources/unifiedRoleManagementAlertConfiguration.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertConfiguration
+GET /identityGovernance/roleManagementAlerts/alertConfigurations
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertConfiguration
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations
 ```
 
 

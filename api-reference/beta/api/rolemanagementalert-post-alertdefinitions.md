@@ -1,6 +1,6 @@
 ---
 title: "List unifiedRoleManagementAlertDefinition"
-description: "Get the unifiedRoleManagementAlertDefinition resources from the alertDefinition navigation property."
+description: "Get a list of the unifiedRoleManagementAlertDefinition objects and their properties."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the unifiedRoleManagementAlertDefinition resources from the alertDefinition navigation property.
+Get a list of the [unifiedRoleManagementAlertDefinition](../resources/unifiedRoleManagementAlertDefinition.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertConfiguration/alertDefinition
+GET /identityGovernance/roleManagementAlerts/alertDefinitions
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object in the response body.
 
 ## Examples
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertConfiguration/alertDefinition
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertDefinitions
 ```
 
 
