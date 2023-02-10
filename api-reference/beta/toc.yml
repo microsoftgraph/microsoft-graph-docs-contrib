@@ -11873,8 +11873,9 @@ items:
             href: api/directoryobject-getbyids.md
           - name: Validate properties
             href: api/directoryobject-validateproperties.md
-        - name: Directory recommendations
+        - name: Directory recommendations (preview)
           displayName: Recommendations, Azure AD recommendations
+          href: resources/recommendations-api-overview.md
           items:
           - name: Recommendations
             items:
