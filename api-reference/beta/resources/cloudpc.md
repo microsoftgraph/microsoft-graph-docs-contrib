@@ -42,6 +42,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
+|[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate selected a bulk of [cloudPC](../resources/cloudpc.md) to see if their states meet the requirements to perform Bulk Resize.|
 
 ## Properties
 

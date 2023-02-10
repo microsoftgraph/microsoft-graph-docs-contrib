@@ -10451,6 +10451,8 @@ items:
             href: api/cloudpc-troubleshoot.md
           - name: Retry partner agent installation
             href: api/cloudpc-retrypartneragentinstallation.md
+          - name: Validate bulk resize
+            href: api/cloudpc-validatebulkresize.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:
