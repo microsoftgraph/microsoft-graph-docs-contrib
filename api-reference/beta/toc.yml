@@ -16476,24 +16476,24 @@ items:
               href: resources/callrecords-directroutinglogrow.md
             - name: List direct routing calls
               href: api/callrecords-callrecord-getdirectroutingcalls.md
-          - name: PSTN calls
+          - name: PSTN blocked users log row
             items:
-            - name: PSTN log row
+              - name: PSTN blocked users log row
+                href: resources/callrecords-pstnblockeduserslogrow.md
+              - name: Get PSTN blocked users log
+                href: api/callrecords-callrecord-getpstnblockeduserslog.md
+          - name: PSTN call log row
+            items:
+            - name: PSTN call log row
               href: resources/callrecords-pstncalllogrow.md
-            - name: List PSTN calls
+            - name: Get PSTN calls
               href: api/callrecords-callrecord-getpstncalls.md
-            - name: PSTN blocked users log row
-              items:
-                - name: PSTN blocked users log row
-                  href: resources/callrecords-pstnblockeduserslogrow.md
-                - name: Get PSTN blocked users log
-                  href: api/callrecords-callrecord-getpstnblockeduserslog.md
-            - name: PSTN online meeting dial-out report
-              items:
-                - name: PSTN online meeting dial-out report
-                  href: resources/callrecords-pstnonlinemeetingdialoutreport.md
-                - name: Get PSTN online meeting dial-out report
-                  href: api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md
+          - name: PSTN online meeting dial-out report
+            items:
+              - name: PSTN online meeting dial-out report
+                href: resources/callrecords-pstnonlinemeetingdialoutreport.md
+              - name: Get PSTN online meeting dial-out report
+                href: api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md
           - name: Session
             items:
             - name: Session

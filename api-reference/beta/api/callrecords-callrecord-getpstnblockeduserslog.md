@@ -1,6 +1,6 @@
 ---
 title: "callRecord: getPstnBlockedUsersLog"
-description: "Get the log of users, who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams, as a collection of pstnBlockedUsersLogRow entries."
+description: "Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of pstnBlockedUsersLogRow entries."
 author: "radoslag"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the log of users, who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams, as a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries. The log includes information about each blocked user, such as their assigned phone number and the reason they were blocked/unblocked from making calls.
+Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries. The log includes information about each blocked user such as their assigned phone number and the reason they were blocked/unblocked from making calls.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this function.
 |toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
 
 > [!IMPORTANT]
-> The **fromDateTime** and **toDateTime** values cannot be more than a date range of 90 days.
+> The **fromDateTime** and **toDateTime** values can't be more than a date range of 90 days.
 
 ## Request headers
 
@@ -62,15 +62,16 @@ Do not supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries in the response body.
   
-If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+If the function returns more than 1000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
 
-The following example shows how to get a collection of records for PSTN blocked users that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 2 records. Please assume there are more than 1000 records in that date range.
+The following example shows how to get a collection of records for PSTN blocked users that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in the first response, and an `@odata.nextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 2 records.
 
 ### Request
 
-The following is an example of a request:
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "callrecordthis.getpstnblockeduserslog"
@@ -84,7 +85,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnBlockedUs
 
 ### Response
 
-The following is an example of the response:
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
