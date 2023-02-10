@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update permission
 Namespace: microsoft.graph
 
-Update the [permission](../resources/permission.md) object on a site.
+Update an application [permission](../resources/permission.md) object on a site. Note that user site permissions cannot be updated with this endpoint.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
