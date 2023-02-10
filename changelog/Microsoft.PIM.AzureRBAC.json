@@ -191,7 +191,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "refresh",
           "ChangeType": "Addition",
-          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlert"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "refresh",
           "ChangeType": "Addition",
-          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlert"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "remediate",
           "ChangeType": "Addition",
-          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlertIncident?view=graph-rest-beta) method to the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
+          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlertIncident?view=graph-rest-beta) method to the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlertIncident"
         }
       ],
