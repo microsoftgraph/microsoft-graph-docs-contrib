@@ -58,7 +58,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
-| watermarkProtection | [watermarkProtectionValues](watermarkProtectionValues.md)     | Specifies if watermark is to be applied for different entities. |
+| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies if watermark applies for different entities. |
 | autoAdmittedUsers (deprecated) | String | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
 | capabilities (deprecated) | meetingCapabilities collection | The list of meeting capabilities. Possible values are: `questionAndAnswer`,`unknownFutureValue`. |
 
