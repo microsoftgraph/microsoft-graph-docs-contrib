@@ -48,7 +48,7 @@ az provider register --namespace Microsoft.GraphServices
 
 | Parameter | Description |
 |:--------------------------|:----------------------------------------|
-| myRG | The name you wish to give to the Azure resource group |
+| myRG | The name of an existing Azure resource group to add the newly created resource to |
 | myGraphAppBilling | The name you wish to give to this resource instance |
 | myAppGUID | The Application (client) ID of the application being enabled, provided as a string parameter for example 00000000-0000-0000-0000-000000000000 |
 | mySubscriptionGUID | The ID of the Azure Subscription that will receive billing events, provided as a string parameter for example 00000000-0000-0000-0000-000000000000 | 
