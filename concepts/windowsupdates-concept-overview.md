@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Windows updates API overview
 
-The Windows Update for Business deployment service provides control over device updates through the ability to approve, schedule, and safeguard content delivered by Windows Update.
+The Windows Update for Business deployment service provides control over updates through the ability to approve, schedule, and safeguard content delivered by Windows Update to managed devices.
 
 ## Why use the Windows Update for Business deployment service?
 
@@ -19,7 +19,7 @@ IT professionals and management tool vendors alike can use the deployment servic
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update.
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s).
 
-Today, the deployment service supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview).
+Today, the deployment service supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview). [Windows Update for Business reports](wufb-reports-overview.md) is integrated with the deployment service to enable per deployment reporting, monitoring, and troubleshooting.
 
 ## Prerequisites
 
@@ -39,28 +39,44 @@ Additionally, devices managed by the deployment service must:
     Pro Education
     Pro for Workstations
 
-## Enroll devices to be managed
+## Feature Updates
 
-To start using the deployment service, [enroll devices in update management](/graph/windowsupdates-enroll.md) and [enroll devices in driver management](/graph/windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
+Feature updates add new features and functionality to Windows 10 and Windows 11 .  The deployment service can be utilized to deploy an in support Feature update version to keep devices on the same version of Windows or you can use Feature updates to upgrade devices that run Windows 10 to Windows 11.  When you use feature updates to deploy Windows 11, you can target the policy to Windows 10 devices that meet the Windows 11 [minimum requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/) to upgrade them to Windows 11. Devices that don’t meet the requirements for Windows 11 won’t install the update and remain at their current Windows 10 version.
 
-## Approve and schedule Windows content delivered from Windows Update
+## Quality Updates
 
-The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. An updates catalog exists to provide a view tailored for approvals, helping you focus on approval decisions that matter and avoiding the need to sort through deep lists of related updates.
+Quality updates deliver both security and non-security fixes, including security updates, critical updates, servicing stack updates, and driver updates.  They are typically released on the second Tuesday of each month, but they can be released at any time.  Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes for a specific feature update, including any out-of-band security fixes and any servicing stack updates that might have been released previously.
 
-Once you choose an update to deploy, you can schedule deployments to start at a future time, or deploy over a period of time. If you choose to deploy an update over a period of time, the deployment service automatically optimizes the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
+## Drivers and firmware
 
-Learn more about the deployment service:
-* [Software updates](windowsupdates-software-updates.md)
-* [Deployments](windowsupdates-deployments.md)
-* [Schedule a deployment](windowsupdates-schedule-deployment.md)
+Driver and firmware updates are published to Windows Update by independant hardware vendors and original equipment manufacturers who continuously build new drivers and firmware or update existing ones.  The deployment service will only show you driver and firmware updates that are applicable and better (normally by version number or version date) than what is currently installed on your devices .  The service takes the guess work out of identifying what drivers and firmware updates apply to your devices and lets you focus on approving content that will help keep your devices protected and productive.
 
-## Immediately deploy an update when critical needs arise
+## Capabilities of the Windows Update for Business deployment service
+
+The deployment service is designed for IT Pros who are looking for more control than is provided through deferral policies and deployment rings. The service provides the following capabilities:
+
+|Capabilities | Quality updates | Feature updates | Drivers and firmware|
+|---|---|---|---|
+|Approval and scheduling | | Yes | Yes |
+|Gradual rollout | | Yes | |
+|Expedite | Yes | | |
+|Safeguard holds| | Yes | |
+
+## Approval and scheduling
+
+The deployment service simplifies reviewing, approving, scheduling, and deploying [content](/graph/api/resources/windowsupdates-catalogcontent) for a diverse device ecosystem. A [catalog](/graph/api/resources/windowsupdates-catalog) of content and [applicable content] exists to provide a view tailored for approvals, helping you focus on approval decisions that matter and avoiding the need to sort through deep lists of related updates.  Once you choose an update to deploy, you can schedule deployments to start at a future time.
+
+## Gradual rollout
+
+Stage deployments over a period of days or weeks by specifying [gradual rollout settings](/graph/api/resources/windowsupdates-gradualrolloutsettings). If you choose to deploy an update over a period of time, the deployment service automatically optimizes the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
+
+## Expedite
 
 In the case of a critical security issue, you can use the deployment service to bypass a standard update policy and expedite deployment of a security update.
 
 To learn more, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).
 
-## Protect devices by default
+## Safeguard holds
 
 Enjoy the benefit of [safeguard holds](/windows/deployment/update/safeguard-holds) that prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise. For deployments of Windows 11, the deployment service extends these safeguard holds to further protect devices. Microsoft uses machine learning algorithms to monitor the breadth of the Windows ecosystem as devices upgrade to Windows 11. For devices that are identified to be at a higher risk of experiencing a post-upgrade issue, the deployment service applies early safeguards to protect these devices while the issue is investigated and confirmed.
 
