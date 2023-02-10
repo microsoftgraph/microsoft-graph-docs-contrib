@@ -16200,6 +16200,8 @@ items:
           href: api/plannerroster-get.md
         - name: Delete roster
           href: api/plannerroster-delete.md
+        - name: Get roster's member
+          href: api/plannerrostermember-get.md
         - name: List roster's members
           href: api/plannerroster-list-members.md
         - name: Add a member to roster
