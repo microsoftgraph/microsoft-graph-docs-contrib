@@ -25,13 +25,14 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| id| String| The transcript's unique identifier. Read-only.|
-| createdDateTime| dateTimeOffset|  Date and time at which the transcript was created. Read-only.|
-| content| Stream| A field representing the content of the transcript. Read-only.|
+| content| Stream| A field that represents the content of the transcript. Read-only.|
+| createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+| id| String| The unique identifier for the transcript. Read-only.|
+
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -41,8 +42,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "createdDateTime": "dateTimeOffset",
-  "content": "stream"
+  "content": "stream",
+  "createdDateTime": "dateTimeOffset",  
+  "id": "string (identifier)"
 }
 ```
