@@ -8,7 +8,7 @@ ms.prod: "cloud-communications"
 
 # Watermark for sensitive Teams meetings
 
-This article describes how to use the cloud communications API in Microsoft Graph to manage the watermark option for sensitive Microsoft Teams meetings. For a description of the watermark meetings feature, licensing, and policy requirements to use this feature, see [Require a watermark for sensitive Teams meetings](https://learn.microsoft.com/en-us/microsoftteams/watermark-meeting-content-video).
+This article describes how to use the cloud communications API in Microsoft Graph to manage the watermark option for sensitive Microsoft Teams meetings. For a description of the watermark meetings feature, licensing, and policy requirements to use this feature, see [Require a watermark for sensitive Teams meetings](https://learn.microsoft.com/microsoftteams/watermark-meeting-content-video).
 
 The [onlineMeeting](/graph/api/resources/onlinemeeting) resource contains the [watermarkProtection](/graph/api/resources/onlinemeeting) property to indicate the watermark option for a sensitive Teams meeting.
 
@@ -18,7 +18,7 @@ Use the following REST calls to manage watermark protection in sensitive Teams m
 
 ### Create an online meeting with the watermark option
 
-The following example shows the watermark properties configured for a new **onlineMeeting**. For more details about how to create an online meeting, see [Create onlineMeeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta).
+The following example shows the watermark properties configured for a new **onlineMeeting**. For more details about how to create an online meeting, see [Create onlineMeeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true).
 
 #### Request
 
@@ -44,7 +44,7 @@ Content-type: application/json
 
 ### Update the watermark option in an online meeting
 
-The following example shows how to update the watermark properties of an **onlineMeeting**. For more details about how to update an online meeting, see [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta).
+The following example shows how to update the watermark properties of an **onlineMeeting**. For more details about how to update an online meeting, see [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true).
 
 > [!NOTE]
 > Updating the watermark properties has no affect on meeting calls that have already started.
@@ -71,7 +71,7 @@ Content-type: application/json
 
 ### Get the watermark option in an online meeting
 
-The following example shows how to get an **onlineMeeting** with its watermark properties. For more details about how to get an online meeting, see [Get onlineMeeting](/graph/api/onlinemeeting-get?view=graph-rest-beta).
+The following example shows how to get an **onlineMeeting** with its watermark properties. For more details about how to get an online meeting, see [Get onlineMeeting](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true).
 
 #### Request
 
@@ -97,7 +97,7 @@ Content-type: application/json
 
 When a watermark is in use, applications using the [cloud communications calling APIs](/graph/api/application-post-calls) get a restricted media experience.
 
-To indicate this restricted experience, each [participant](/graph/api/resources/participant) in the [call roster](/graph/api/application-post-calls?view=graph-rest-1.0#notification---roster) and the [list participants API](/graph/api/call-list-participants) have a new [restrictedExperience](/graph/api/resources/participant) property that shows [watermarkProtection](/graph/api/resources/onlinemeetingrestricted) as the reason for the restricted media experience.
+To indicate this restricted experience, each [participant](/graph/api/resources/participant) in the [call roster](/graph/api/application-post-calls?view=graph-rest-1.0&preserve-view=true#notification---roster) and the [list participants API](/graph/api/call-list-participants) have a new [restrictedExperience](/graph/api/resources/participant) property that shows [watermarkProtection](/graph/api/resources/onlinemeetingrestricted) as the reason for the restricted media experience.
 
 #### Request
 
