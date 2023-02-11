@@ -1,7 +1,7 @@
 ---
 title: "Watermark for sensitive Teams meetings"
 description: "Use the cloud communications API in Microsoft Graph to manage a watermark for sensitive Microsoft Teams meetings."
-author: ""
+author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
@@ -53,6 +53,13 @@ The following example shows how to update the watermark properties of an **onlin
 
 ```http
 PATCH /me/onlineMeetings/{meetingId}
+{
+   ...
+   "watermarkProtection": {
+      "isEnabledForContentSharing" : true,
+      "isEnabledForVideo" : false
+   },
+}
 ```
 
 #### Response
@@ -97,7 +104,7 @@ Content-type: application/json
 
 When a watermark is in use, applications using the [cloud communications calling APIs](/graph/api/application-post-calls) get a restricted media experience.
 
-To indicate this restricted experience, each [participant](/graph/api/resources/participant) in the [call roster](/graph/api/application-post-calls?view=graph-rest-1.0&preserve-view=true#notification---roster) and the [list participants API](/graph/api/call-list-participants) have a new [restrictedExperience](/graph/api/resources/participant) property that shows [watermarkProtection](/graph/api/resources/onlinemeetingrestricted) as the reason for the restricted media experience.
+To indicate this restricted experience, each [participant](/graph/api/resources/participant) in the [call roster](/graph/api/application-post-calls?view=graph-rest-beta&preserve-view=true#notification---roster) and the [list participants API](/graph/api/call-list-participants) have a new [restrictedExperience](/graph/api/resources/participant) property that shows [watermarkProtection](/graph/api/resources/onlinemeetingrestricted) as the reason for the restricted media experience.
 
 #### Request
 

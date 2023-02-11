@@ -1,7 +1,7 @@
 ---
 title: "onlineMeetingRestricted resource type"
 description: "Indicates the reason(s) why media content from a participant is restricted."
-author: "zihzhan"
+author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

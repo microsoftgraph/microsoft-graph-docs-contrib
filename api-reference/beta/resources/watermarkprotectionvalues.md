@@ -1,7 +1,7 @@
 ---
 title: "watermarkProtectionValues resource type"
 description: "Represents restricted experience reasons for a participant."
-author: "zihzhan"
+author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
