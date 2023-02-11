@@ -8,7 +8,7 @@ ms.prod: "cloud-communications"
 
 # Watermark for sensitive Teams meetings
 
-This article describes how to use the cloud communications API in Microsoft Graph to manage the watermark option for sensitive Microsoft Teams meetings. For a description of the watermark meetings feature, licensing, and policy requirements to use this feature, see [Require a watermark for sensitive Teams meetings](https://learn.microsoft.com/microsoftteams/watermark-meeting-content-video).
+This article describes how to use the cloud communications API in Microsoft Graph to manage the watermark option for sensitive Microsoft Teams meetings. For a description of the watermark meetings feature, licensing, and policy requirements to use this feature, see [Require a watermark for sensitive Teams meetings](/microsoftteams/watermark-meeting-content-video).
 
 The [onlineMeeting](/graph/api/resources/onlinemeeting) resource contains the [watermarkProtection](/graph/api/resources/onlinemeeting) property to indicate the watermark option for a sensitive Teams meeting.
 
