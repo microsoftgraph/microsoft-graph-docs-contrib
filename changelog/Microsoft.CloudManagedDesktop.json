@@ -29,33 +29,168 @@
         {
             "ChangeList": [
                 {
+                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcProvisioningType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcProvisioningType** enumeration type.",
+                    "Target": "cloudPcProvisioningType"
+                },
+                {
+                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "servicePlanId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **servicePlanId** property to the [cloudPcManagementGroupAssignmentTarget](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcManagementGroupAssignmentTarget?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcManagementGroupAssignmentTarget"
+                },
+                {
+                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "provisioningType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **provisioningType** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcSharedUseServicePlan",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and supported methods.",
+                    "Target": "cloudPcSharedUseServicePlan"
+                },
+                {
+                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "sharedUseServicePlans",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **sharedUseServicePlans** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-02-08T09:37:24.8161707Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                  "Id": "8827a05e-a654-47ca-b983-b28ba096b325",
+                  "ApiChange": "Enumeration",
+                  "ChangedApiName": "cloudPcDiskEncryptionState",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcDiskEncryptionState** enumeration type.",
+                  "Target": "cloudPcDiskEncryptionState"
+                },
+                {
+                    "Id": "8827a05e-a654-47ca-b983-b28ba096b325",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "diskEncryptionState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **diskEncryptionState** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "8827a05e-a654-47ca-b983-b28ba096b325",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-01-31T03:22:16.0013428Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "rpaBox",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `rpaBox` member to the **cloudPcManagementService** enumeration.",
+                    "Target": "cloudPcManagementService"
+                },
+                {
+                    "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcRegionGroup",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcRegionGroup** enumeration type.",
+                    "Target": "cloudPcRegionGroup"
+                },
+                {
+                    "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "regionGroup",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **regionGroup** property to the [cloudPcSupportedRegion](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSupportedRegion"
+                }
+            ],
+            "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-01-04T02:22:10.3002588Z",     
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "7a3d023d-8aa8-438c-afa7-f7f488623deb",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcReportName",
+                    "ChangeType": "Change",
+                    "Description": "Added the ´sharedUseLicenseUsageReport´ and ´sharedUseLicenseUsageRealTimeReport´ members to the **cloudPcReportName** enumeration type.",
+                    "Target": "cloudPcReportName"
+                },
+                {
+                    "Id": "7a3d023d-8aa8-438c-afa7-f7f488623deb",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getSharedUseLicenseUsageReport",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                }
+            ],
+            "Id": "7a3d023d-8aa8-438c-afa7-f7f488623deb",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-01-03T10:36:40.1525853Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "234823ab-d3b3-4ad6-9eab-0db8fe3d93a7",
                     "ApiChange": "Member",
                     "ChangedApiName": "udpConnectivityCheckStunUrlNotAllowListed",
                     "ChangeType": "Addition",
                     "Description": "Added the `udpConnectivityCheckStunUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
                     "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
-                  },
-                  {
+                },
+                {
                     "Id": "234823ab-d3b3-4ad6-9eab-0db8fe3d93a7",
                     "ApiChange": "Member",
                     "ChangedApiName": "udpConnectivityCheckUnknownError",
                     "ChangeType": "Addition",
                     "Description": "Added the `udpConnectivityCheckUnknownError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
                     "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
-                  }
+                }
             ],
             "Id": "234823ab-d3b3-4ad6-9eab-0db8fe3d93a7",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2022-12-13 06:39:59.1876103Z",
-            "WorkloadArea": "Devices and apps",
+            "CreatedDateTime": "2022-12-13T06:39:59.1876103Z",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
                 {
-
                     "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
                     "ApiChange": "Enumeration",
                     "ChangedApiName": "cloudPcExportJobStatus",
@@ -140,7 +275,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-10-19T00:47:20.8868626Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -166,7 +301,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-10-17T09:33:40.1525853Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -184,7 +319,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-30T03:28:25.1876103Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -234,7 +369,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T09:01:07.071541Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -268,7 +403,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-01T05:50:11.4106474Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -294,7 +429,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-06-13T16:28:33.6983912Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2629,46 +2764,106 @@
         },
         {
             "ChangeList": [
-              {
-                "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
-                "ApiChange": "Method",
-                "ChangedApiName": "retryPartnerAgentInstallation",
-                "ChangeType": "Addition",
-                "Description": "Added the [retryPartnerAgentInstallation](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
-                "Target": "cloudPC"
-              },
-              {
-                "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
-                "ApiChange": "Property",
-                "ChangeApiName": "partnerAgentInstallResults",
-                "ChangeType": "Addition",
-                "Description": "Added the **partnerAgentInstallResults** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
-                "Target": "cloudPC"
-              },
-              {
-                "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
-                "ApiChange": "EnumType",
-                "ChangedApiName": "cloudPcPartnerAgentInstallStatus",
-                "ChangeType": "Addition",
-                "Description": "Added the **cloudPcPartnerAgentInstallStatus** enumeration type.",
-                "Target": "cloudPcPartnerAgentInstallStatus"
-              },
-              {
-                "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
-                "ApiChange": "EnumType",
-                "ChangedApiName": "cloudPcPartnerAgentName",
-                "ChangeType": "Addition",
-                "Description": "Added the **cloudPcPartnerAgentName** enumeration type.",
-                "Target": "cloudPcPartnerAgentName"
-              },
-              {
-                "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
-                "ApiChange": "Resource",
-                "ChangedApiName": "cloudPcPartnerAgentInstallResult",
-                "ChangeType": "Addition",
-                "Description": "Added the [cloudPcPartnerAgentInstallResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPartnerAgentInstallResult?view=graph-rest-beta) resource type.",
-                "Target": "cloudPcPartnerAgentInstallResult"
-              }
+                {
+                    "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcRemoteActionName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcRemoteActionName** enumeration type.",
+                    "Target": "cloudPcRemoteActionName"
+                },
+                {
+                    "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "actionCapability",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **actionCapability** enumeration type.",
+                    "Target": "actionCapability"
+                },
+                {
+                    "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcRemoteActionCapability",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcRemoteActionCapability](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRemoteActionCapability?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcRemoteActionCapability"
+                },
+                {
+                    "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getSupportedCloudPcRemoteActions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getSupportedCloudPcRemoteActions](https://learn.microsoft.com/en-us/graph/api/cloudpc-getsupportedcloudpcremoteactions?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "0f5b75ca-75b9-4645-8cd8-eda9f01a3a79",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-01-17T18:36:40.43263Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "virtualNetworkLocation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **virtualNetworkLocation** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcOnPremisesConnection"
+                }
+            ],
+            "Id": "0761fa9b-d6c7-41cb-8f1c-749379d1055d",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-01-17T04:14:41.3424906Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "retryPartnerAgentInstallation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [retryPartnerAgentInstallation](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
+                    "ApiChange": "Property",
+                    "ChangeApiName": "partnerAgentInstallResults",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **partnerAgentInstallResults** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcPartnerAgentInstallStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcPartnerAgentInstallStatus** enumeration type.",
+                    "Target": "cloudPcPartnerAgentInstallStatus"
+                },
+                {
+                    "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcPartnerAgentName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcPartnerAgentName** enumeration type.",
+                    "Target": "cloudPcPartnerAgentName"
+                },
+                {
+                    "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcPartnerAgentInstallResult",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcPartnerAgentInstallResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPartnerAgentInstallResult?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcPartnerAgentInstallResult"
+                }
             ],
             "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
             "Cloud": "Prod",

@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "category eq 'leaver'"
 
-requestParameters := &graphconfig.WorkflowsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsDeletedItemsWorkflowsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","category","displayName","description","version"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.WorkflowsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsDeletedItemsWorkflowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

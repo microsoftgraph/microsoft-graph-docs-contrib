@@ -43,7 +43,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
+|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`.|
 |customTags|String collection|Array of custom tags associated with an incident.|
 
 
@@ -53,6 +53,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 | :-------------------| :-------------------------------------------------------------------------------------------------------------------- |
 | active			        | The incident is in active state.                                                                                      |
 | resolved            | The incident is in resolved state.                                                                                    |
+| inProgress          | The incident is in mitigation progress.                                                                               |
 | redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property. |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                     |
 

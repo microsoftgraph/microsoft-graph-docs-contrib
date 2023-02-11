@@ -69,7 +69,7 @@ POST /administrativeUnits/{id}/members
 In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
 
 ### Creating a new group
-The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit. 
+The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit.
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
@@ -87,7 +87,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 If successful, adding an existing object (using `$ref`) returns `204 No Content` response code. It does not return anything in the response body. 
 
-When creating a new group (without `$ref`), this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
+When creating a new group (without `$ref`), this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body. The response includes only the default properties of the group. You must supply the `"@odata.type" : "#microsoft.graph.group"` line in the request body to explicitly identify the new member as a group. A request body without the correct @odata.type returns a `400 Bad Request` error message.
 
 ## Examples
 ### Example 1: Add an existing user or group
@@ -155,7 +155,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Create a new group
-The following example creates a new group in the administrative unit.
+The following example creates a new group in the administrative unit. You must supply the `"@odata.type" : "#microsoft.graph.group"` line in the request body to explicitly identify the new member as a group. A request body without the correct @odata.type returns a `400 Bad Request` error message.
 
 #### Request
 The following is an example of the request.
@@ -168,10 +168,9 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 Content-type: application/json
-Content-length: 244
 
 {
-  "@odata.type": "#Microsoft.Graph.Group",
+  "@odata.type": "#microsoft.graph.group",
   "description": "Self help community for golf",
   "displayName": "Golf Assist",
   "groupTypes": [

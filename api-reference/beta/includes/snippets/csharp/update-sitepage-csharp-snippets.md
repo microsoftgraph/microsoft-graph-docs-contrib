@@ -9,11 +9,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var sitePage = new SitePage
 {
 	Title = "sample",
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"showComments", "true"},
-		{"showRecommendedPages", "false"}
-	}
+	ShowComments = true,
+	ShowRecommendedPages = false
 };
 
 await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"]

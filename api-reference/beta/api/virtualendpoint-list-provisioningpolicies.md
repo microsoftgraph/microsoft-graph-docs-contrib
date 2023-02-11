@@ -134,7 +134,8 @@ Content-Type: application/json
       "windowsSettings": {
         "language": "en-US"
       },
-      "managedBy": "windows365"
+      "managedBy": "windows365",
+      "provisioningType": "dedicated"
     }
   ]
 }

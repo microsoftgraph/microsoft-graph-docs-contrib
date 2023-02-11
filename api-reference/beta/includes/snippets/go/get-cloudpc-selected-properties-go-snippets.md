@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.CloudPCRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DeviceManagementVirtualEndpointCloudPCItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"},
 }
-configuration := &graphconfig.CloudPCRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceManagementVirtualEndpointCloudPCItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

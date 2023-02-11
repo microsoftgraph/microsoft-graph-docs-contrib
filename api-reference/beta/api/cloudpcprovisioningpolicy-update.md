@@ -51,8 +51,8 @@ The following table shows the properties that can be updated for the [cloudPcPro
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name for the provisioning policy. |
 |description|String|The provisioning policy description.|
+|displayName|String|The display name for the provisioning policy. |
 |domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory.|
 |enableSingleSignOn|Boolean|`True` if the provisioned Cloud PC can be accessed by single sign-on. `False` indicates that the provisioned Cloud PC doesn't support this feature. Default value is `false`. Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional.|
 |imageDisplayName|String|The display name for the OS image you're provisioning.|

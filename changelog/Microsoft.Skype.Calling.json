@@ -3,6 +3,76 @@
     {
       "ChangeList": [
         {
+          "Id": "ea886698-6713-4541-a994-fe34ac144002",
+          "ApiChange": "Member",
+          "ChangedApiName": "coorganizer",
+          "ChangeType": "Addition",
+          "Description": "Added the **coorganizer** member to the **onlineMeetingRole** enumeration.",
+          "Target": "onlineMeetingRole"
+        }
+      ],
+      "Id": "ea886698-6713-4541-a994-fe34ac144002",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-02T18:25:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "joinMeetingIdMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [joinMeetingIdMeetingInfo](https://learn.microsoft.com/en-us/graph/api/resources/joinMeetingIdMeetingInfo?view=graph-rest-1.0) resource type.",
+          "Target": "joinMeetingIdMeetingInfo"
+        },
+        {
+          "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calls.JoinGroupCalls.Chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calls.JoinGroupCalls.Chat` to the [create](https://learn.microsoft.com/en-us/graph/api/application-post-calls?view=graph-rest-1.0) operation of the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-09T17:47:14.2823035Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+          "ApiChange": "Resource",
+          "ChangedApiName": "joinMeetingIdSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [joinMeetingIdSettings](https://learn.microsoft.com/en-us/graph/api/resources/joinmeetingidsettings?view=graph-rest-1.0) resource type.",
+          "Target": "joinMeetingIdSettings"
+        },
+        {
+          "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+          "ApiChange": "Property",
+          "ChangedApiName": "joinMeetingIdSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **joinMeetingIdSettings** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-09T17:44:20.7449096Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f1e8f2ba-e5b1-4104-88be-1ed7f6f44904",
           "ApiChange": "Resource",
           "ChangedApiName": "broadcastMeetingCaptionSettings",
@@ -1884,7 +1954,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recordingInfo,callRoute,incomingContext",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [recordingInfo](https://learn.microsoft.com/en-us/graph/api/resources/recordinginfo?view=graph-rest-1.0), [callRoute](https://learn.microsoft.com/en-us/graph/api/resources/callRoute?view=graph-rest-1.0), [incomingContext](https://learn.microsoft.com/en-us/graph/api/resources/incomingcontext?view=graph-rest-1.0)",
+          "Description": "Added new complex types: [recordingInfo](https://learn.microsoft.com/en-us/graph/api/resources/recordinginfo?view=graph-rest-1.0), [callRoute](https://learn.microsoft.com/en-us/graph/api/resources/callRoute?view=graph-rest-1.0), [incomingContext](https://learn.microsoft.com/en-us/graph/api/resources/incomingcontext?view=graph-rest-1.0)",
           "Target": "recordingInfo,callRoute,incomingContext"
         },
         {
@@ -2020,7 +2090,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teleconferenceDeviceQuality,teleconferenceDeviceMediaQuality,teleconferenceDeviceAudioQuality,teleconferenceDeviceVideoQuality,teleconferenceDeviceScreenSharingQuality",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [teleconferenceDeviceQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicequality), [teleconferenceDeviceMediaQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicemediaquality), [teleconferenceDeviceAudioQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedeviceaudioquality), [teleconferenceDeviceVideoQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicevideoquality), [teleconferenceDeviceScreenSharingQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicescreensharingquality).",
+          "Description": "Added new complex types: [teleconferenceDeviceQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicequality), [teleconferenceDeviceMediaQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicemediaquality), [teleconferenceDeviceAudioQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedeviceaudioquality), [teleconferenceDeviceVideoQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicevideoquality), [teleconferenceDeviceScreenSharingQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicescreensharingquality).",
           "Target": "teleconferenceDeviceQuality,teleconferenceDeviceMediaQuality,teleconferenceDeviceAudioQuality,teleconferenceDeviceVideoQuality,teleconferenceDeviceScreenSharingQuality"
         }
       ],

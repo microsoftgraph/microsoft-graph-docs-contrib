@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "userDisplayName eq 'MyTestUser1'"
 
-requestParameters := &graphconfig.RiskyUsersRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityProtectionRiskyUsersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.RiskyUsersRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityProtectionRiskyUsersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

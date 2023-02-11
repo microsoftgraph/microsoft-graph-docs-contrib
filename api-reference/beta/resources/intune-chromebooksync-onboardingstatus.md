@@ -1,7 +1,7 @@
 ---
 title: "onboardingStatus enum type"
 description: "The onboarding status of the tenant."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -26,8 +26,3 @@ The onboarding status of the tenant.
 |failed|3|Failed|
 |offboarding|4|Offboarding|
 |unknownFutureValue|99|UnknownFutureValue|
-
-
-
-
-
