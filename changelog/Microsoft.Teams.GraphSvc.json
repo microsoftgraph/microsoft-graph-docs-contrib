@@ -789,6 +789,48 @@
     {
       "ChangeList": [
         {
+          "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousGuestConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousGuestConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-1.0) resource",
+          "Target": "anonymousGuestConversationMember"
+        },
+        {
+          "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAccountUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAccountUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-1.0) resource",
+          "Target": "microsoftAccountUserConversationMember"
+        },
+        {
+          "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-1.0) resource",
+          "Target": "skypeForBusinessUserConversationMember"
+        },
+        {
+          "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/skypeUserConversationMember?view=graph-rest-1.0) resource",
+          "Target": "skypeUserConversationMember"
+        }
+      ],
+      "Id": "a5644561-748b-44f7-a733-76b07ae1a05e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-02-10T20:38:02.3901715Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cad0e01c-70dd-4286-a1be-4dc95a248aec",
           "ApiChange": "Property",
           "ChangedApiName": "allowUserRequestsForAppAccess",
@@ -800,7 +842,7 @@
       "Id": "cad0e01c-70dd-4286-a1be-4dc95a248aec",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-02-08T22:01:09.3277508Z",
+      "CreatedDateTime": "2023-02-10T22:01:09.3277508Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
