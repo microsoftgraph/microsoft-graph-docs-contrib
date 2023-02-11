@@ -35,6 +35,7 @@ Represents a Cloud PC provisioning policy.
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy.|
 |domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory.|
+|enableSingleSignOn|Boolean|`True` if the provisioned Cloud PC can be accessed by single sign-on. `False` indicates that the provisioned Cloud PC doesn't support this feature. Default value is `false`. Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional.|
 |gracePeriodInHours|Int32|The number of hours to wait before reprovisioning/deprovisioning happens. Read-only.|
 |id|String|Unique identifier for the Cloud PC provisioning policy. Read-only.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
@@ -83,6 +84,7 @@ The following is a JSON representation of the resource.
   "domainJoinConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
   },
+  "enableSingleSignOn": "Boolean",
   "gracePeriodInHours": "Int32",
   "id": "String (identifier)",
   "imageDisplayName": "String",
