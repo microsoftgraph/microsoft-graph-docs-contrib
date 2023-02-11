@@ -41,7 +41,7 @@ Additionally, devices managed by the deployment service must:
 
 ## Feature Updates
 
-Feature updates add new features and functionality to Windows 10 and Windows 11 .  The deployment service can be utilized to deploy an in support Feature update version to keep devices on the same version of Windows or you can use Feature updates to upgrade devices that run Windows 10 to Windows 11.  When you use feature updates to deploy Windows 11, you can target the policy to Windows 10 devices that meet the Windows 11 [minimum requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/) to upgrade them to Windows 11. Devices that don’t meet the requirements for Windows 11 won’t install the update and remain at their current Windows 10 version.
+Feature updates add new features and functionality to Windows 10 and Windows 11 . The deployment service can be utilized to deploy a feature update of a supported Windows OS version. When you deploy a feature update to your devices, those devices will stay pinned to the version specified in the deployment until you target them with a new deployment that upgrades their current OS version.  To deploy Windows 11, you can target current Windows 11 devices and Windows 10 devices that meet the Windows 11 [minimum requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/). Devices that don’t meet the requirements for Windows 11 won’t install the update and remain at their current Windows 10 version.
 
 ## Quality Updates
 
