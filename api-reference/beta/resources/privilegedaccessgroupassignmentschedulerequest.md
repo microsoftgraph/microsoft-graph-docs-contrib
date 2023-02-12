@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The schedule requests for operations to create, update, delete, extend, and renew an assignment.
+Represents requests for operations to create, update, delete, extend, and renew a membership or ownership assignment in PIM for groups. The privilegedAccessGroupAssignmentScheduleRequest object is also created when an authorized principal requests a just-in-time activation of an eligible access assignment to a group's membership or ownership.
 
 Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md).
 
