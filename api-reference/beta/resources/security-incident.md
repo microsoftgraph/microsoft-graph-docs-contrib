@@ -46,8 +46,8 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`.|
 |customTags|String collection|Array of custom tags associated with an incident.|
 |systemTags|String|The system tags accocisted with the incident|
-|description|String|A reach text string describing the incident (HTML)|
-|recommendedActions|String|A reach text string that represents the actions that are reccomnded to take in order to resolve the incident (HTML)|
+|description|String|A reach text string describing the incident (could be an HTML)|
+|recommendedActions|String|A reach text string that represents the actions that are reccomnded to take in order to resolve the incident (could be an HTML)|
 |recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting kql queries related to the incdient|
 
 
