@@ -5102,6 +5102,13 @@ items:
             href: api/subscribedsku-list.md
           - name: Get subscribedSku
             href: api/subscribedsku-get.md
+        - name: On-premises directory synchronization
+          href: resources/onpremisesdirectorysynchronization.md
+          items:
+          - name: Get
+            href: api/onpremisesdirectorysynchronization-get.md
+          - name: Update
+            href: api/onpremisesdirectorysynchronization-update.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
