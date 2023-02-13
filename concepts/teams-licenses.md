@@ -145,7 +145,7 @@ A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Contr
 
 This view offers a convenient way to observe API consumption per day over a period of time. 
 
-You can also use the pie charts near the bottom to further break down the costs for analysis. Note that for Microsoft Graph metered APIs, the **Resource GUID** is the app ID; **Resource Groups** or **Resource Tags** are not supported. 
+You can also use the pie charts near the bottom to further break down the costs for analysis. Note that for Microsoft Graph metered APIs, the **Resource GUID** is the app ID; **Resource Groups** or **Resource Tags** are also available. 
 
 ![Screenshot of the Cost Management and Billing page in the Azure portal](images/cost-analysis-sample.png)
 
