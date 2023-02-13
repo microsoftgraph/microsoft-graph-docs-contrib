@@ -153,6 +153,15 @@ Content-Type: application/json
                 "targetType": "group",
                 "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
             }
+          "companionAppschange // PLACEHOLDER" : {
+            "state": "enabled",
+              "includeTarget": {
+                "targetType": "group",
+                "id": "all_users"
+            },
+            "excludeTarget": {
+                "targetType": "group",
+                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
         }
     }
 }
