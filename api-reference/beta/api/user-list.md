@@ -937,7 +937,9 @@ GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual
 #### Response
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
 } -->
 ```http
 HTTP/1.1 200 OK
