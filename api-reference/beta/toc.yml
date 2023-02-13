@@ -10569,6 +10569,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC shared-use service plan
+          href: resources/cloudpcshareduseserviceplan.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-shareduseserviceplans.md
+          - name: Get
+            href: api/cloudpcshareduseserviceplan-get.md
         - name: Cloud PC snapshot
           href: resources/cloudpcsnapshot.md
           items:
@@ -11866,8 +11873,9 @@ items:
             href: api/directoryobject-getbyids.md
           - name: Validate properties
             href: api/directoryobject-validateproperties.md
-        - name: Directory recommendations
+        - name: Directory recommendations (preview)
           displayName: Recommendations, Azure AD recommendations
+          href: resources/recommendations-api-overview.md
           items:
           - name: Recommendations
             items:
@@ -16199,6 +16207,8 @@ items:
           href: api/plannerroster-get.md
         - name: Delete roster
           href: api/plannerroster-delete.md
+        - name: Get roster's member
+          href: api/plannerrostermember-get.md
         - name: List roster's members
           href: api/plannerroster-list-members.md
         - name: Add a member to roster
