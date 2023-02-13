@@ -28,6 +28,48 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Global Administrator
+* User Administrator
+* Helpdesk Administrator
+* Service Support Administrator
+* Billing Administrator
+* User
+* Mailbox Administrator
+* Partner Tier1 Support
+* Partner Tier2 Support
+* Directory Readers
+* Directory Writers
+* Application Administrator
+* Security Reader
+* Security Administrator
+* Privileged Role Administrator
+* Cloud Application Administrator
+* Customer LockBox Access Approver
+* Dynamics 365 Administrator
+* Power BI Administrator
+* Azure Information Protection Administrator
+* Desktop Analytics Administrator
+* License Administrator
+* Microsoft Managed Desktop Administrator
+* Authentication Administrator
+* Privileged Authentication Administrator
+* Teams Communications Administrator
+* Teams Communications Support Engineer
+* Teams Communications Support Specialist
+* Teams Administrator
+* Insights Administrator
+* Compliance Data Administrator
+* Security Operator
+* Kaizala Administrator
+* Global Reader
+* Volume Licensing Business Center User
+* Volume Licensing Service Center User
+* Modern Commerce User
+* Microsoft Store for Business User
+* Directory Reviewer
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
