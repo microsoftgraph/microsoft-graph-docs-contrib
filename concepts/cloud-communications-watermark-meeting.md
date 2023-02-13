@@ -31,6 +31,7 @@ POST /me/onlineMeetings
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "subject": "meeting",
   "startDateTime": "2022-07-01T22:57:47.6388574Z",
@@ -53,6 +54,7 @@ The following example shows how to update the watermark properties of an **onlin
 
 ```http
 PATCH /me/onlineMeetings/{meetingId}
+
 {
    ...
    "watermarkProtection": {
@@ -67,6 +69,7 @@ PATCH /me/onlineMeetings/{meetingId}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
    ...
    "watermarkProtection": {
@@ -91,6 +94,7 @@ GET /me/onlineMeetings/{meetingId}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
    ...
    "watermarkProtection": {
@@ -117,6 +121,7 @@ GET https://graph.microsoft.com/beta/communications/calls/{callId}/participants
 ````http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
    "value":[
      {
