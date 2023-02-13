@@ -59,7 +59,7 @@ Custom security attributes can be assigned to the following objects by using the
 + [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 + [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
 
-For examples of working with custom security attributes on supported resources, see [Assign, update, or remove custom security attributes using Microsoft Graph](/graph/custom-security-attributes-examples).
+For examples of working with custom security attributes, see [Examples: Assign, update, list, or remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples).
 
 ## Limits and constraints
 
@@ -83,6 +83,6 @@ Using custom security attributes requires an Azure AD Premium P1 or P2 license.
 ## Next steps
 
 + [customSecurityAttributeDefinition resource type](/graph/api/resources/customsecurityattributedefinition)
-+ [Assign, update, or remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples)
++ [Examples: Assign, update, list, or remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples)
 + [What are custom security attributes in Azure AD?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
 

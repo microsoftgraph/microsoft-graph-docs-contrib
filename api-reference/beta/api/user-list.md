@@ -902,6 +902,90 @@ Content-type: application/json
 
 > **Note:** You can also apply `$filter` on the schema extension property to retrieve objects where a property in the collection matches a specified value. The syntax is `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. For example, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. The `eq` and `not` operators are supported.
 
+### Example 13: List all users with a custom security attribute that equals a value
+
+The following example shows how to list all users with an attribute that equals a value. The example retrieves users with an `AppCountry` attribute that equals `Canada`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+
+User #1
+
+- Attribute set: `Marketing`
+- Attribute: `AppCountry`
+- Attribute data type: Collection of Strings
+- Attribute value: `["India","Canada"]`
+
+User #2
+
+- Attribute set: `Marketing`
+- Attribute: `AppCountry`
+- Attribute data type: Collection of Strings
+- Attribute value: `["Canada","Mexico"]`
+
+To get custom security attribute assignments, the calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.Read.All* or *CustomSecAttributeAssignment.ReadWrite.All* permission.
+
+For examples of working with custom security attributes, see [Examples: Assign, update, list, or remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "customsecurityattribute_filter_users_equals_value"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,customSecurityAttributes)",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "dbaf3778-4f81-4ea0-ac1c-502a293c12ac",
+            "displayName": "Jiya",
+            "customSecurityAttributes": {
+                "Engineering": {
+                    "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+                    "Datacenter@odata.type": "#Collection(String)",
+                    "Datacenter": [
+                        "India"
+                    ]
+                },
+                "Marketing": {
+                    "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+                    "AppCountry@odata.type": "#Collection(String)",
+                    "AppCountry": [
+                        "India",
+                        "Canada"
+                    ],
+                    "EmployeeId": "KX19476"
+                }
+            }
+        },
+        {
+            "id": "6bac433c-48c6-4213-a316-1428de32701b",
+            "displayName": "Jana",
+            "customSecurityAttributes": {
+                "Marketing": {
+                    "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+                    "AppCountry@odata.type": "#Collection(String)",
+                    "AppCountry": [
+                        "Canada",
+                        "Mexico"
+                    ],
+                    "EmployeeId": "GS46982"
+                }
+            }
+        }
+    ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
