@@ -365,7 +365,7 @@ items:
             displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
-              - name: Examples: Custom security attributes (preview)
+              - name: "Examples: Custom security attributes (preview)"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
