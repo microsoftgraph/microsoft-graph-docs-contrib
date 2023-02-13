@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
+
 ## HTTP request
 
 <!-- {
