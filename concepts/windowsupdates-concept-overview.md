@@ -19,7 +19,7 @@ IT professionals and management tool vendors alike can use the deployment servic
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update.
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s).
 
-Today, the deployment service supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview). To track the progress and status of your deployments, see [Windows Update for Business reports](wufb-reports-overview.md) which has integrated with the deployment service to enable per deployment reporting, monitoring, and troubleshooting.
+Today, the deployment service supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview). To track the progress and status of your deployments, see [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview.md) which has integrated with the deployment service to enable per deployment reporting, monitoring, and troubleshooting.
 
 ## Prerequisites
 
