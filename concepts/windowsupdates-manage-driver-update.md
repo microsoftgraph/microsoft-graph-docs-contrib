@@ -19,7 +19,7 @@ Devices must meet the [prerequisites for the deployment service](windowsupdates-
 
 ## Step 1: Enroll devices in driver management
 
-When you enroll a device in driver management, the deployment service becomes the authority for driver updates coming from Windows Update. As a result, devices do not receive drivers from Windows Update until a deployment is created or they are added to a driver update policy with approvals.  To enroll a device, you must provide an [azureADDevice id](/graph/api/resources/windowsupdates-azureaddevice).
+When you enroll a device in driver management, the deployment service becomes the authority for driver updates coming from Windows Update. As a result, devices do not receive drivers from Windows Update until a deployment is created or they are added to a driver update policy with approvals. To enroll a device, you must provide an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) ID.
 
 ### Request
 ``` http
