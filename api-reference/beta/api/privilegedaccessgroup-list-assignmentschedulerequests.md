@@ -36,7 +36,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -81,28 +81,36 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest",
-      "id": "34e963f6-150f-cf79-678c-6fcaf978bb49",
-      "status": "String",
-      "completedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "approvalId": "String",
-      "customData": "String",
+      "id": "6aacaee8-4089-4048-9510-3119367fc943",
+      "status": "Provisioned",
+      "completedDateTime": "2023-02-07T07:05:53.7895614Z",
+      "createdDateTime": "2023-02-07T07:05:55.3404527Z",
+      "approvalId": null,
+      "customData": null,
       "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "3cce9d87-3986-4f19-8335-7ed075408ca2"
+        }
       },
-      "action": "String",
-      "isValidationOnly": "Boolean",
-      "justification": "String",
+      "action": "adminAssign",
+      "isValidationOnly": false,
+      "justification": "Retrieve requests",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2023-02-07T06:57:55.6183972Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "afterDateTime",
+            "endDateTime": "2023-02-07T19:56:00Z",
+            "duration": null
       },
       "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
+        "ticketNumber": null,
+        "ticketSystem": null
       },
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "targetScheduleId": "String"
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "accessId": "member",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "targetScheduleId": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_6aacaee8-4089-4048-9510-3119367fc943"
     }
   ]
 }
