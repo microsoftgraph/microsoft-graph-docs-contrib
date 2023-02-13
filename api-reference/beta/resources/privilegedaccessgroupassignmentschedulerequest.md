@@ -27,10 +27,23 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessId|privilegedAccessGroupRelationships|The identifier of membership or ownership assignment relationship to the group. Required. The possible values are: `owner`, `member`, `unknownFutureValue`.|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups.|
-|principalId|String|The identifier of the principal whose membership or ownership assignment to the group is managed through PIM for groups. Required.|
-|targetScheduleId|String|The identifier of the schedule that's created from the membership or ownership assignment request. Optional.|
+|accessId|privilegedAccessGroupRelationships|The id of privileged access relationship to the group. Required. The possible values are: `owner`, `member`.|
+|action|String|Represents the type of the operation on the role assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`. <br/><ul><li>`adminAssign`: For administrators to assign roles to principals.</li><li>`adminRemove`: For administrators to remove principals from roles.</li><li> `adminUpdate`: For administrators to change existing role assignments.</li><li>`adminExtend`: For administrators to extend expiring assignments.</li><li>`adminRenew`: For administrators to renew expired assignments.</li><li>`selfActivate`: For principals to activate their assignments.</li><li>`selfDeactivate`: For principals to deactivate their active assignments.</li></ul>|
+|approvalId|String|The identifier of the approval of the request. Inherited from [request](../resources/request.md).|
+|completedDateTime|DateTimeOffset|The request completion date time. Inherited from [request](../resources/request.md).|
+|createdBy|[identitySet](../resources/identityset.md)|The principal that created this request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`, and on `null` values).|
+|createdDateTime|DateTimeOffset|The request creation date time. Inherited from [request](../resources/request.md). Read-only.|
+|customData|String|Free text field to define any custom data for the request. Not used. Inherited from [request](../resources/request.md).|
+|groupId|String|The id of the group representing the scope of the assignment. Optional.|
+|id|String|The unique identifier for the **privilegedAccessGroupAssignmentScheduleRequest** object. Key, not nullable, Read-only. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
+|isValidationOnly|Boolean|Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
+|justification|String|A message provided by users and administrators when create they create the **privilegedAccessGroupAssignmentScheduleRequest** object.|
+|principalId|String|Identifier of the principal that has been granted the assignment. Supports `$filter` (`eq`, `ne`).|
+|roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that is being assigned to the principal. Supports `$filter` (`eq`, `ne`).|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment. Recurring schedules are currently unsupported.|
+|status|String|The status of the role assignment request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`).|
+|targetScheduleId|String|Identifier of the schedule object that's linked to the assignment request. Supports `$filter` (`eq`, `ne`).|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system.|
 
 ## Relationships
 |Relationship|Type|Description|
