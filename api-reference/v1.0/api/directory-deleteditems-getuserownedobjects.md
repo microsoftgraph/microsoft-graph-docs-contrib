@@ -90,7 +90,7 @@ Content-type: application/json
     {
       "@odata.type": "#microsoft.graph.group",
       "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
-      "deletedDateTime": 2018-04-01T12: 39: 16Z,
+      "deletedDateTime": 2018-04-01T12:39:16Z,
       "classification": null,
       "createdDateTime": "2017-03-22T12:39:16Z",
       "description": null,
