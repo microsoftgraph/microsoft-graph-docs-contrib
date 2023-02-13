@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the rules for resolving a URL to the ID of an [externalItem](microsoft.graph.externalConnectors.externalItem](externalconnectors-externalitem.md).
+Defines the rules for resolving a URL to the ID of an [externalItem](externalconnectors-externalitem.md).
 
 This is an abstract type.
 
