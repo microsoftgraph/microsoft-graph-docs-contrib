@@ -254,6 +254,7 @@ Least privilege delegated permission: `Application.ReadWrite.All`
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7a76e98
 Content-Type: application/json
+
 {
     "requiredResourceAccess": [
         {
