@@ -5,7 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: conceptualPageType
-ms.date: 04/01/2022
+ms.date: 02/14/2023
 ---
 
 # Overview of custom security attributes using the Microsoft Graph API (Preview)
