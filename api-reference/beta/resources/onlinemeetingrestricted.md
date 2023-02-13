@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "contentSharingDisabled": {"@odata.type": "microsoft.graph.onlineMeetingContentSharingDisabledReason"},
-  "videoDisabled": {"@odata.type": "microsoft.graph.onlineMeetingVideoDisabledReason"},
+  "videoDisabled": {"@odata.type": "microsoft.graph.onlineMeetingVideoDisabledReason"}
 }
 ```
 

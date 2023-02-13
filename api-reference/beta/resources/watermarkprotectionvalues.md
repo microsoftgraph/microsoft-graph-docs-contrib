@@ -1,6 +1,6 @@
 ---
 title: "watermarkProtectionValues resource type"
-description: "Represents restricted experience reasons for a participant."
+description: "Represents restricted media experience reasons for a participant."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents restricted experience reasons for a participant.
+Represents restricted media experience reasons for a participant.
 
 ## Properties
 
