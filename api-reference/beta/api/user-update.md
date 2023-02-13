@@ -306,7 +306,7 @@ The following example shows how to assign a custom security attribute with a str
 
 To assign custom security attributes, the calling principal must be assigned the Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
 
-For examples of working with custom security attributes, see [Examples: Assign, update, list, or remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+For examples of custom security attribute assignments, see [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples).
 
 #### Request
 

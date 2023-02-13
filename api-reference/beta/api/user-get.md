@@ -318,7 +318,7 @@ Attribute #4
 
 To get custom security attribute assignments, the calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.Read.All* or *CustomSecAttributeAssignment.ReadWrite.All* permission.
 
-For examples of working with custom security attributes, see [Examples: Assign, update, list, or remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+For examples of custom security attribute assignments, see [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples).
 
 #### Request
 

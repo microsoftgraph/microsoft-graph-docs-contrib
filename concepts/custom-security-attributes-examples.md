@@ -1,6 +1,6 @@
 ---
-title: "Examples: Assign, update, list, or remove custom security attributes using the Microsoft Graph API (preview)"
-description: "Learn how to assign, update, or remove custom security attributes for users and applications (service principals) using the Microsoft Graph API."
+title: "Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API (preview)"
+description: "Learn how to assign, update, list, or remove custom security attribute assignments for users and applications (service principals) using the Microsoft Graph API."
 author: "rolyon"
 ms.author: rolyon
 ms.reviewer: rolyon
@@ -10,20 +10,20 @@ ms.prod: "directory-management"
 ms.date: 02/11/2022
 ---
 
-# Examples: Assign, update, list, or remove custom security attributes using the Microsoft Graph API (preview)
+# Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API (preview)
 
 > [!IMPORTANT]
 > The custom security attributes feature is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 [Custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects.
 
-This article provides examples of how to assign, update, list, or remove different types of custom security attributes for users and applications (service principals). To assign, update, or remove custom security attributes, you must use the `PATCH` operation in an [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) or [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true) request.
+This article provides examples of how to assign, update, list, or remove different types of custom security attributes for users and applications (service principals). To assign, update, or remove custom security attribute assignments, you must use the `PATCH` operation in the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) or [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true) API. To list custom security attribute assignments, you use the [Get user](/graph/api/user-get?view=graph-rest-beta&preserve-view=true), [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true), [Get servicePrincipal](/graph/api/serviceprincipal-get?view=graph-rest-beta&preserve-view=true), or [List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-beta&preserve-view=true) API.
 
 ## Permissions
 
 ### Assign, update, or remove
 
-To assign, update, or remove custom security attributes, the calling principal must be assigned the following Azure AD role. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+To assign, update, or remove custom security attribute assignments, the calling principal must be assigned the following Azure AD role. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 - [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
 
@@ -32,11 +32,11 @@ Also, the calling principal must be granted the following permissions.
 - [CustomSecAttributeAssignment.ReadWrite.All](permissions-reference.md#custom-security-attributes-permissions)
 - [User.Read.All](permissions-reference.md#user-permissions)
 
-Permissions to read, assign, update, or remove custom security attributes for an application is granted by *CustomSecAttributeAssignment.ReadWrite.All*. Permissions to read the resource object, such as users, is granted separately using resource object permissions, such as *User.Read.All*.
+Permissions to read, assign, update, or remove custom security attribute assignments for an application is granted by *CustomSecAttributeAssignment.ReadWrite.All*. Permissions to read the resource object, such as users, is granted separately using resource object permissions, such as *User.Read.All*.
 
 ### List
 
-To list or read custom security attributes, the calling principal must be assigned one of the following Azure AD roles. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+To list or read custom security attribute assignments, the calling principal must be assigned one of the following Azure AD roles. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 - [Attribute Assignment Reader](/azure/active-directory/roles/permissions-reference#attribute-reader)
 - [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
@@ -46,7 +46,7 @@ Also, the calling principal must be granted the following permissions.
 - [CustomSecAttributeAssignment.Read.All](permissions-reference.md#custom-security-attributes-permissions)
 - [User.Read.All](permissions-reference.md#user-permissions)
 
-Permissions to read custom security attributes for an application is granted by *CustomSecAttributeAssignment.Read.All*. Permissions to read the resource object, such as users, is granted separately using resource object permissions, such as *User.Read.All*.
+Permissions to read custom security attribute assignments for an application is granted by *CustomSecAttributeAssignment.Read.All*. Permissions to read the resource object, such as users, is granted separately using resource object permissions, such as *User.Read.All*.
 
 ## Assign custom security attributes
 
@@ -698,9 +698,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List all users with a custom security attribute that equals a value
+### Example 2: List all users with a custom security attribute assignment that equals a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with an attribute that equals a value. The example retrieves users with an `AppCountry` attribute that equals `Canada`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
@@ -779,9 +779,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 3: List all users with a custom security attribute that starts with a value
+### Example 3: List all users with a custom security attribute assignment that starts with a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with an attribute that starts with a value. The example retrieves users with an `EmployeeId` attribute that starts with `GS`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that starts with a value. The example retrieves users with a custom security attribute named `EmployeeId` with a value that starts with `GS`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
@@ -839,9 +839,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 4: List all users with a custom security attribute that does not equal a value
+### Example 4: List all users with a custom security attribute assignment that does not equal a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with an attribute that does not equal a value. The example retrieves users with an `AppCountry` attribute that does not equal `Canada`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that does not equal a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that does not equal `Canada`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
