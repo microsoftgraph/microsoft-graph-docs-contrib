@@ -39,17 +39,17 @@ Additionally, devices managed by the deployment service must:
     Pro Education
     Pro for Workstations
 
-## Feature Updates
+## Feature updates
 
-Feature updates add new features and functionality to Windows 10 and Windows 11 . The deployment service can be utilized to deploy a feature update of a supported Windows OS version. When you successfully deploy a feature update to your devices, those devices will be updated to the version specified in the deployment and stay at that version until you target them with a new deployment that upgrades their current OS version.  To deploy Windows 11, you can target current Windows 11 devices and Windows 10 devices that meet the Windows 11 [minimum requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/). Devices that don’t meet the requirements for Windows 11 won’t install the update and remain at their current Windows 10 version.
+Feature updates add new features and functionality to Windows 10 and Windows 11. You can use the deployment service to deploy a feature update of a supported Windows OS version. When you successfully deploy a feature update to your devices, those devices will be updated to the version specified in the deployment and stay at that version until you target them with a new deployment that upgrades their current operating system version. To deploy Windows 11, you can target current Windows 11 devices and Windows 10 devices that meet the Windows 11 [minimum requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/). Devices that don’t meet the requirements for Windows 11 won’t install the update and will remain at their current Windows 10 version.
 
-## Quality Updates
+## Quality updates
 
-Quality updates released by Microsoft deliver both security and non-security fixes. Windows Update for Business for Business helps devices to take security updates through Expedite. Security Updates are typically released on the second Tuesday of each month, with an exception of Out-of-Band security updates that can be released at any time. Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes released for your specific OS version.
+Quality updates released by Microsoft deliver both security and non-security fixes. Windows Update for Business helps devices to take security updates through Expedite. Security updates are typically released on the second Tuesday of each month, although out-of-band security updates can be released at any time. Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes released for your specific operating system version.
 
 ## Drivers and firmware
 
-Driver and firmware updates are published to Windows Update by independent hardware vendors and original equipment manufacturers who continuously build new drivers and firmware or update existing ones.  The deployment service will only show you driver and firmware updates that are applicable and better (normally by version number or version date) than what is currently installed on your devices .  The service takes the guess work out of identifying what drivers and firmware updates apply to your devices and lets you focus on approving content that will help keep your devices protected and productive.
+Driver and firmware updates are published to Windows Update by independent hardware vendors and original equipment manufacturers, who continuously build new drivers and firmware or update existing ones. The deployment service will only show you driver and firmware updates that are applicable and better (normally by version number or version date) than what is currently installed on your devices . The service takes the guess work out of identifying what drivers and firmware updates apply to your devices and lets you focus on approving content that will help keep your devices protected and productive.
 
 ## Capabilities of the Windows Update for Business deployment service
 
@@ -64,11 +64,11 @@ The deployment service is designed for IT Pros who are looking for more control 
 
 ## Approval and scheduling
 
-The deployment service simplifies reviewing, approving, scheduling, and deploying [content](/graph/api/resources/windowsupdates-catalogcontent) for a diverse device ecosystem. A [catalog](/graph/api/resources/windowsupdates-catalog) of content and [applicable content] exists to provide a view tailored for approvals, helping you focus on approval decisions that matter and avoiding the need to sort through deep lists of related updates.  Once you choose an update to deploy, you can schedule deployments to start at a future time.
+The deployment service simplifies reviewing, approving, scheduling, and deploying [content](/graph/api/resources/windowsupdates-catalogcontent) for a diverse device ecosystem. A [catalog](/graph/api/resources/windowsupdates-catalog) of content and [applicable content] exists to provide a view tailored for approvals, helping you focus on approval decisions that matter without a need to sort through deep lists of related updates. After you choose an update to deploy, you can schedule deployments to start at a future time.
 
 ## Gradual rollout
 
-Stage deployments over a period of days or weeks by specifying [gradual rollout settings](/graph/api/resources/windowsupdates-gradualrolloutsettings). If you choose to deploy an update over a period of time, the deployment service automatically optimizes the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue.
+Stage deployments over a period of days or weeks by specifying [gradual rollout settings](/graph/api/resources/windowsupdates-gradualrolloutsettings). If you choose to deploy an update over a period of time, the deployment service automatically optimizes the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment, to minimize the number of devices that might encounter an unexpected update issue.
 
 ## Expedite
 
