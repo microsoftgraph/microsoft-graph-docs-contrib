@@ -28,17 +28,17 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |Property|Type|Description|
 |:---|:---|:---|
 |accessId|privilegedAccessGroupRelationships|The identifier of membership or ownership assignment relationship to the group. Required. The possible values are: `owner`, `member`, `unknownFutureValue`.|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Optional.|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups.|
 |principalId|String|The identifier of the principal whose membership or ownership assignment to the group is managed through PIM for groups. Required.|
 |targetScheduleId|String|The identifier of the schedule that's created from the membership or ownership assignment request. Optional.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group. Otherwise, it is `null`.|
+|activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group. Otherwise, it is `null`. Supports `$expand`.|
 |group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment request through PIM for groups. Supports `$expand`.|
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM. Supports `$expand`.|
-|targetSchedule|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Schedule created by this request.|
+|targetSchedule|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Schedule created by this request. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
