@@ -40,7 +40,7 @@ Represents a participant in a call.
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
 | metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
-| restrictedExperience | [onlineMeetingRestricted](onlinemeetingrestricted.md)        | Indicates the reason(s) why media content from this participant is restricted. |
+| restrictedExperience | [onlineMeetingRestricted](onlinemeetingrestricted.md)        | Indicates the reason or reasons why media content from this participant is restricted. |
 
 ## Relationships
 
