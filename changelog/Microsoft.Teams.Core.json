@@ -6186,7 +6186,7 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
-	{
+	  {
       "ChangeList": [
         {
           "Id": "5e52d67e-88f8-464f-8aff-d9ae40acf056",
@@ -6201,6 +6201,42 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-26T10:11:41.458Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ae5b528b-38cf-473b-8e01-475844067c9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Update",
+          "Description": "Added new emoji support to message body **content** to the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource.",
+          "Target": "itemBody"
+        }
+      ],
+      "Id": "ae5b528b-38cf-473b-8e01-475844067c9c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-14T10:11:41.458Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "31b9ae7d-a747-4642-9779-1bd60e3951b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Update",
+          "Description": "Added new emoji support to message body **content** to the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-1.0) resource.",
+          "Target": "itemBody"
+        }
+      ],
+      "Id": "5e52d67e-88f8-464f-8aff-d9ae40acf056",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-14T10:11:41.458Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
