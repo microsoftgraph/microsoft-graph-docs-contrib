@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a pending privileged access eligibility request.
+Cancel an eligibility assignment request to a group whose membership and ownership are governed by PIM.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
