@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
@@ -34,7 +36,7 @@ GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -76,17 +78,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/$entity",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance",
       "id": "772d5185-39b7-58be-4915-137ffaa7e42e",
       "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "memberType": "String",
-      "eligibilityScheduleId": "String"
+      "endDateTime": null,
+      "accessId": null,
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "memberType": "Direct",
+    },
+    {
+      "id": "lAPpYvVpN0KRkAEhdxReEBLS8lac5ONCgpgBiOW-8JQ-1",
+      "startDateTime": "String (timestamp)",
+      "endDateTime": null,
+      "accessId": null,
+      "principalId": "56f2d212-e49c-42e3-8298-0188e5bef094",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "memberType": "Direct",
     }
   ]
 }
