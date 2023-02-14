@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequests/
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequestss/34e963f6-150f-cf79-678c-6fcaf978bb49
 ```
 
 
@@ -79,29 +79,38 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
     "id": "34e963f6-150f-cf79-678c-6fcaf978bb49",
-    "status": "String",
-    "completedDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)",
-    "approvalId": "String",
-    "customData": "String",
+    "status": "Provisioned",
+    "completedDateTime": "2023-01-11T11:50:06Z",
+    "createdDateTime": "2023-01-11T11:50:05.95Z",
+    "approvalId": null
+    "customData": null,
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+      "user": {
+            "displayName": null,
+            "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5"
     },
-    "action": "String",
-    "isValidationOnly": "Boolean",
-    "justification": "String",
+    "action": "adminAssign",
+    "isValidationOnly": false,
+    "justification": "Assign active member access.",
     "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2023-01-11T11:50:05.9999343Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "noExpiration",
+            "endDateTime": null,
+            "duration": null
+        }
     },
     "ticketInfo": {
-      "@odata.type": "microsoft.graph.ticketInfo"
+        "ticketNumber": null,
+        "ticketSystem": null
     },
-    "principalId": "String",
-    "accessId": "String",
-    "groupId": "String",
-    "targetScheduleId": "String"
+    "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+    "accessId": "member",
+    "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7",
+    "targetScheduleId": "34e963f6-150f-cf79-678c-6fcaf978bb49"
   }
 }
 ```
