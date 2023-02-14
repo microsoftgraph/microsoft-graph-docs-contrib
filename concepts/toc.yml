@@ -646,7 +646,7 @@ items:
                 href: cloud-communications-online-meeting-artifacts.md
               - name: Identify large gallery view participants
                 href: cloud-communications-identifylargegalleryview.md
-              - name: Watermark for sensitive Teams meetings
+              - name: Manage watermarks for sensitive meetings
                 href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
