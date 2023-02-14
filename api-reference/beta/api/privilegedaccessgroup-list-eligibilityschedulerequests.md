@@ -52,6 +52,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+### Example 1
+
 ### Request
 The following is an example of a request.
 <!-- {
@@ -114,6 +116,46 @@ Content-Type: application/json
       "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
       "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
       "targetScheduleId": "534b3d4d-3ba0-8429-3568-5e9cce6c2cbd"
+    }
+  ]
+}
+```
+
+### Example 2
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_privilegedaccessgroupeligibilityschedulerequest"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests$select=principalId,action,groupId
+```
+
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.privilegedAccessGroupEligibilityScheduleRequest)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/$entity",
+    "value": [
+    {
+      "action": "adminAssign",
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
     }
   ]
 }
