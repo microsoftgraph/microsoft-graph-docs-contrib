@@ -1,6 +1,6 @@
 ---
 title: "onlineMeetingRestricted resource type"
-description: "Indicates the reason(s) why media content from a participant is restricted."
+description: "Indicates the reason or reasons why media content from a participant is restricted."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the reason(s) why media content from a participant is restricted.
+Indicates the reason or reasons why media content from a participant is restricted.
 
 ## Properties
 
