@@ -904,7 +904,7 @@ Content-type: application/json
 
 ### Example 13: List all users with a custom security attribute assignment that equals a value
 
-The following example shows how to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 

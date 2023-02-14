@@ -700,7 +700,7 @@ Content-type: application/json
 
 ### Example 2: List all users with a custom security attribute assignment that equals a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
@@ -781,7 +781,7 @@ HTTP/1.1 200 OK
 
 ### Example 3: List all users with a custom security attribute assignment that starts with a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that starts with a value. The example retrieves users with a custom security attribute named `EmployeeId` with a value that starts with `GS`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that starts with a value. The example retrieves users with a custom security attribute named `EmployeeId` with a value that starts with `GS`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
@@ -841,7 +841,7 @@ HTTP/1.1 200 OK
 
 ### Example 4: List all users with a custom security attribute assignment that does not equal a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that does not equal a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that does not equal `Canada`. The filter is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that does not equal a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that does not equal `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
