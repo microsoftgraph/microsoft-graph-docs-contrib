@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with administrator roles, the app must be assigned the *Directory.AccessAsUser.All* delegated permission on behalf of the calling user, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privilged administrator roles, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 > - Your personal Microsoft account must be tied to an Azure AD tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 > - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
