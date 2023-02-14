@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
@@ -34,7 +36,7 @@ GET /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/{priv
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,7 +52,9 @@ If successful, this method returns a `200 OK` response code and a [privilegedAcc
 
 ## Examples
 
-### Request
+### Example 1
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -58,11 +62,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/534b3d4d-3ba0-8429-3568-5e9cce6c2cbd
 ```
 
 
-### Response
+#### Response
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -77,31 +81,67 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilityScheduleRequest",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/$entity",
     "id": "534b3d4d-3ba0-8429-3568-5e9cce6c2cbd",
-    "status": "String",
-    "completedDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)",
-    "approvalId": "String",
-    "customData": "String",
+    "status": "Revoked",
+    "completedDateTime": null,
+    "createdDateTime": "2022-04-12T09:12:18.187Z",
+    "approvalId": null,
+    "customData": null,
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "displayName": null,
+            "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5"
+        }
     },
-    "action": "String",
-    "isValidationOnly": "Boolean",
-    "justification": "String",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
+    "action": "adminRemove",
+    "isValidationOnly": "false",
+    "justification": null,
+    "scheduleInfo": null,
     "ticketInfo": {
-      "@odata.type": "microsoft.graph.ticketInfo"
+        "ticketNumber": null,
+        "ticketSystem": null
     },
-    "principalId": "String",
-    "accessId": "String",
-    "groupId": "String",
-    "targetScheduleId": "String"
+    "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+    "accessId": "member",
+    "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+    "targetScheduleId": null
   }
 }
 ```
 
+### Example 2
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_privilegedaccessgroupeligibilityschedulerequest"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/534b3d4d-3ba0-8429-3568-5e9cce6c2cbd?$select=principalId,action,groupId
+```
+
+
+#### Response
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedAccessGroupEligibilityScheduleRequest"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/$entity",
+    "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+    "action": "adminRemove",
+    "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d"
+}
+```
