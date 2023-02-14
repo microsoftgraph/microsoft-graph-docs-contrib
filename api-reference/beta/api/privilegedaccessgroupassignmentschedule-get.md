@@ -32,7 +32,11 @@ The calling app must also have the Global Administrator or Privileged Role Admin
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/assignmentSchedules/{privilegedAccessGroupAssignmentScheduleId}
+GET /identityGovernance/privilegedAccess/group/assignmentSchedules/?$filter=groupId eq {groupId}
+```
+
+``` http
+GET /identityGovernance/privilegedAccess/group/assignmentSchedulesfilterByCurrentUser(on='principal')
 ```
 
 ## Optional query parameters
@@ -51,7 +55,6 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object in the response body.
 
 ## Examples
-Note: this method requires either the principalId or groupId filter property.
 
 ### Example 1: Retrieve an assignment schedule that's scoped to a group
 
@@ -80,22 +83,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentSchedule",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentSchedule/$entity",
     "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
     "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
+      "startDateTime": "2022-04-11T11:50:06.343Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "noExpiration",
+            "endDateTime": null,
+            "duration": null
+        }
     },
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)",
-    "createdUsing": "String",
-    "status": "String",
-    "principalId": "String",
-    "accessId": "String",
-    "groupId": "String",
-    "memberType": "String",
-    "assignmentType": "String"
-  }
+    "createdDateTime": "2022-04-11T11:50:06.343Z",
+    "modifiedDateTime": null,
+    "createdUsing": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
+    "status": "Provisioned",
+    "assignmentType": "Assigned",
+    "memberType": "Direct",
+    "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+    "accessId": "member",
+    "groupId": "14b9e371-5c2c-4ee5-a4a5-2980060d4f4e",
 }
 ```
 
@@ -108,7 +115,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules/filterByCurrentUser(on='principal')
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules/$filter=principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
 ```
 
 
@@ -126,22 +133,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentSchedule",
-    "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentSchedule/$entity",
+    "id": "3cce9d87-3986-4f19-8335-7ed075408ca2",
     "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
+      "startDateTime": "2022-04-11T11:50:06.343Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "noExpiration",
+            "endDateTime": null,
+            "duration": null
+        }
     },
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)",
-    "createdUsing": "String",
-    "status": "String",
-    "principalId": "String",
-    "accessId": "String",
-    "groupId": "String",
-    "memberType": "String",
-    "assignmentType": "String"
-  }
+    "createdDateTime": "2022-04-11T11:50:06.343Z",
+    "modifiedDateTime": null,
+    "createdUsing": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+    "status": "Provisioned",
+    "assignmentType": "Assigned",
+    "memberType": "Direct",
+    "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+    "accessId": "member",
+    "groupId": "14b9e371-5c2c-4ee5-a4a5-2980060d4f4e",
 }
 ```
 
