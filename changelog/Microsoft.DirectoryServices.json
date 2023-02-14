@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "defaultAppManagementPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the **defaultAppManagementPolicy** navigation property to the [policies](https://learn.microsoft.com/en-us/graph/api/resources/policy-overview) singleton.",
+          "Description": "Added the **defaultAppManagementPolicy** navigation property to the [policies](https://learn.microsoft.com/en-us/graph/api/resources/policy-overview?view=graph-rest-v1.0) singleton.",
           "Target": "policies"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "appManagementPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **appManagementPolicies** navigation property to the [policies](https://learn.microsoft.com/en-us/graph/api/resources/policy-overview) singleton.",
+          "Description": "Added the **appManagementPolicies** navigation property to the [policies](https://learn.microsoft.com/en-us/graph/api/resources/policy-overview?view=graph-rest-v1.0) singleton.",
           "Target": "policies"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantAppManagementPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantAppManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/tenantAppManagementPolicy) resource and associated methods.",
+          "Description": "Added the [tenantAppManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/tenantAppManagementPolicy?view=graph-rest-v1.0) resource and associated methods.",
           "Target": "tenantAppManagementPolicy"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appManagementPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [appManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appManagementPolicy) resource and associated methods.",
+          "Description": "Added the [appManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appManagementPolicy?view=graph-rest-v1.0) resource and associated methods.",
           "Target": "appManagementPolicy"
         }
       ],
@@ -49,7 +49,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "appManagementPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **appManagementPolicies** navigation property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application) resource.",
+          "Description": "Added the **appManagementPolicies** navigation property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-v1.0) resource.",
           "Target": "application"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "appManagementPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **appManagementPolicies** navigation property to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal) resource.",
+          "Description": "Added the **appManagementPolicies** navigation property to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-v1.0) resource.",
           "Target": "serviecPrincipal"
         }
       ],
@@ -99,7 +99,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "keyCredentials",
           "ChangeType": "Addition",
-          "Description": "Added the **keyCredentials** property to the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appmanagementconfiguration) resource.",
+          "Description": "Added the **keyCredentials** property to the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appmanagementconfiguration?view=graph-rest-v1.0) resource.",
           "Target": "appManagementConfiguration"
         },
         {
@@ -107,7 +107,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "keyCredentialConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keycredentialconfiguration) resource.",
+          "Description": "Added the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keycredentialconfiguration?view=graph-rest-v1.0) resource.",
           "Target": "keyCredentialConfiguration"
         }
       ],
@@ -125,7 +125,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "customPasswordAddition",
           "ChangeType": "Addition",
-          "Description": "Added the `customPasswordAddition` member to the **appCredentialRestrictionType** enumeration. Use this new restriction for the [application authentication methods policy](https://learn.microsoft.com/en-us/graph/api/resources/applicationauthenticationmethodpolicy) to restrict all new custom (non-Azure AD generated) password secrets on applications or service principals.",
+          "Description": "Added the `customPasswordAddition` member to the **appCredentialRestrictionType** enumeration. Use this new restriction for the [application authentication methods policy](https://learn.microsoft.com/en-us/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-v1.0) to restrict all new custom (non-Azure AD generated) password secrets on applications or service principals.",
           "Target": "appCredentialRestrictionType"
         }
       ],
