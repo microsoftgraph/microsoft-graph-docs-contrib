@@ -24,6 +24,16 @@ The following example shows the watermark properties configured for a new **onli
 
 ```http
 POST /me/onlineMeetings
+
+{
+  "subject": "meeting",
+  "startDateTime": "2022-07-01T22:57:47.6388574Z",
+  "endDateTime": "2022-07-01T23:57:47.6388574Z",
+  "watermarkProtection": {
+    "isEnabledForContentSharing": true,
+    "isEnabledForVideo": false
+  }
+}
 ```
 
 #### Response
@@ -39,7 +49,8 @@ Content-type: application/json
   "watermarkProtection": {
     "isEnabledForContentSharing": true,
     "isEnabledForVideo": false
-  }
+  },
+  ...
 }
 ```
 
@@ -60,7 +71,7 @@ PATCH /me/onlineMeetings/{meetingId}
    "watermarkProtection": {
       "isEnabledForContentSharing" : true,
       "isEnabledForVideo" : false
-   },
+   }
 }
 ```
 
@@ -75,7 +86,7 @@ Content-type: application/json
    "watermarkProtection": {
       "isEnabledForContentSharing" : true,
       "isEnabledForVideo" : false
-   },
+   }
 }
 ```
 
@@ -100,7 +111,7 @@ Content-type: application/json
    "watermarkProtection": {
       "isEnabledForContentSharing" : true,
       "isEnabledForVideo" : false
-   },
+   }
 }
 ```
 
