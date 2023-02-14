@@ -1,7 +1,7 @@
 ---
 title: "Create federationConfiguration"
 description: "Create a new internalDomainFederation object."
-author: "rahul-nagraj23"
+author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

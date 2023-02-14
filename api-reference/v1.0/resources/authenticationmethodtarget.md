@@ -39,8 +39,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.authenticationMethodTarget",
   "id": "String (identifier)",
-  "targetType": "String",
   "isRegistrationRequired": "Boolean",
+  "targetType": "String",
   "useForSignIn": "Boolean"
 }
 ```

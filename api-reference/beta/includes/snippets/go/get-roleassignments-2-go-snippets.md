@@ -8,10 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-requestFilter  := " principalId eq 'f1847572-48aa-47aa-96a3-2ec61904f41f'"
+requestFilter := " principalId eq 'f1847572-48aa-47aa-96a3-2ec61904f41f'"
 
 requestParameters := &graphconfig.RoleManagementDirectoryRoleAssignmentsRequestBuilderGetQueryParameters{
-	Filter : &requestFilter ,
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.RoleManagementDirectoryRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

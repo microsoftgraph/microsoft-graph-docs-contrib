@@ -2,6 +2,8 @@
 title: "Microsoft Graph throttling guidance"
 description: "Find best practices for maintaining optimal performance of the Microsoft Graph service if an overwhelming number of requests occurs."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jameskitindi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 11/11/2022
@@ -22,8 +24,6 @@ Throttling limits vary based on the scenario. For example, if you are performing
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 <!-- markdownlint-enable MD034 -->
-> [!div class="nextstepaction"]
-> [Training module: Optimize network traffic with Microsoft Graph](/training/modules/optimize-network-traffic)
 
 <!-- markdownlint-disable MD026 -->
 ## What happens when throttling occurs?
@@ -101,4 +101,5 @@ If SDKs retry throttled requests automatically when they are not batched, thrott
 
 ## Next steps
 
-Identify the [throttling limits](throttling-limits.md) that apply for each Microsoft Graph resource.
+- Identify the [throttling limits](throttling-limits.md) that apply for each Microsoft Graph resource.
+- [Training module: Optimize network traffic with Microsoft Graph](/training/modules/optimize-network-traffic)

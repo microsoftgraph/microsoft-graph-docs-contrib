@@ -1,7 +1,7 @@
 ---
 title: "Get azureADDevice"
 description: "Read the properties of an azureADDevice object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

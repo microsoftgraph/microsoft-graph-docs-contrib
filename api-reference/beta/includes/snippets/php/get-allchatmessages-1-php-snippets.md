@@ -13,7 +13,7 @@ $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new MessagesRequestBuilderGetQueryParameters();
 $queryParameters->top = 2;
-$queryParameters->orderBy = ["createdDateTime desc"];
+$queryParameters->orderby = ["createdDateTime desc"];
 
 $requestConfiguration->queryParameters = $queryParameters;
 
