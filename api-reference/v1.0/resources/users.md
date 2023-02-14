@@ -53,7 +53,7 @@ The following table lists the sensitive actions on user objects. All users can r
 | Update user principal name | userPrincipalName |
 | Delete or restore users | Not applicable |
 
-## Who can reset passwords
+### Who can reset passwords
 
 In the following table, the columns list the roles that can reset passwords and invalidate refresh tokens. The rows list the roles for which their password can be reset.
 
@@ -86,7 +86,7 @@ All custom roles | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: 
 > - mobilePhone
 > - otherMails
 
-## Who can perform sensitive actions
+### Who can perform sensitive actions
 
 Some administrators can perform the following sensitive actions for some users. All users can read the sensitive properties.
 
