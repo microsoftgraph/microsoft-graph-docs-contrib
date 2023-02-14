@@ -50,7 +50,7 @@ You can specify the following properties when creating a **privilegedAccessGroup
 |:---|:---|:---|
 |accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership assignment relationship to the group. The possible values are: `owner`, `member`. Required.|
 |action|String|Represents the type of the operation on the role assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`. <br/><ul><li>`adminAssign`: For administrators to assign roles to principals.</li><li>`adminRemove`: For administrators to remove principals from roles.</li><li> `adminUpdate`: For administrators to change existing role assignments.</li><li>`adminExtend`: For administrators to extend expiring assignments.</li><li>`adminRenew`: For administrators to renew expired assignments.</li><li>`selfActivate`: For principals to activate their assignments.</li><li>`selfDeactivate`: For principals to deactivate their active assignments.</li></ul>|
-|customData|String|Free text field to define any custom data for the request. Not used. Inherited from [request](../resources/request.md).|
+|customData|String|Free text field to define any custom data for the request. Optional.|
 |groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Required.|
 |justification|String|A message provided by users and administrators when create they create the **privilegedAccessGroupAssignmentScheduleRequest** object. Optional.|
 |principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for groups. Required.|
@@ -140,6 +140,7 @@ Content-Type: application/json
   "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7",
   "targetScheduleId": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_6aacaee8-4089-4048-9510-3119367fc943"
 }
+```
 
 ### Example 2: User activates their eligible assignment for PIM for Groups
 
