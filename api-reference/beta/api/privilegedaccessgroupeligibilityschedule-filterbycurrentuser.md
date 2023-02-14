@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the eligibility schedules of privileged access to a group relationship assignment for which the signed-in user is the principal.
+Retrieve schedules of membership and ownership eligibility requests for the calling principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/eligibilitySchedules/filterByCurrentUser
+GET /identityGovernance/privilegedAccess/group/eligibilitySchedules/filterByCurrentUser(on='parameterValue')
 ```
 
 ## Function parameters
@@ -85,21 +87,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(privilegedAccessGroupEligibilitySchedule)",
   "value": [
     {
       "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
-      "id": "String (identifier)",
+      "id": "14b9e371-5c2c-4ee5-a4a5-2980060d4f4e_member_f9003cf6-8905-4c69-a9f8-fd6d04caec69",
+      "createdDateTime": "2022-03-14T19:26:07.06Z",
+      "modifiedDateTime": "0001-01-01T08:00:00Z",
+      "createdUsing": "f9003cf6-8905-4c69-a9f8-fd6d04caec69",
+      "status": "Provisioned",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+          "startDateTime": "2022-04-11T19:31:50.5613964Z",
+          "recurrence": null,
+          "expiration": {
+              "type": "noExpiration",
+              "endDateTime": null,
+              "duration": null
+          }
       },
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "createdUsing": "String",
-      "status": "String",
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "memberType": "String"
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "accessId": "member",
+      "groupId": "14b9e371-5c2c-4ee5-a4a5-2980060d4f4e",
+      "memberType": "direct"
     }
   ]
 }
