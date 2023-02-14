@@ -76,20 +76,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentScheduleInstance",
-      "id": "48fe5560-de56-2750-ae7c-2bbf1da9e452",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "memberType": "String",
-      "assignmentType": "String",
-      "assignmentScheduleId": "String"
-    }
-  ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleInstances",
+    "value": [
+        {
+            "id": "lAPpYvVpN0KRkAEhdxReEAWz5Gtet_xOv8wxvTtTpfg-1",
+            "principalId": "6be4b305-b75e-4efc-bfcc-31bd3b53a5f8",
+            "appScopeId": null,
+            "startDateTime": null,
+            "endDateTime": null,
+            "assignmentType": "Assigned",
+            "accessId": "member",
+            "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+            "memberType": "Direct",
+            "assignmentScheduleId": "lAPpYvVpN0KRkAEhdxReEAWz5Gtet_xOv8wxvTtTpfg-1"
+        },
+        {
+            "id": "lAPpYvVpN0KRkAEhdxReEBLS8lac5ONCgpgBiOW-8JQ-1",
+            "principalId": "56f2d212-e49c-42e3-8298-0188e5bef094",
+            "appScopeId": null,
+            "startDateTime": null,
+            "endDateTime": null,
+            "assignmentType": "Assigned",
+            "accessId": "member",
+            "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+            "memberType": "Direct",
+            "assignmentScheduleId": "lAPpYvVpN0KRkAEhdxReEBLS8lac5ONCgpgBiOW-8JQ-1"
+        }
+    ]
 }
 ```
 
