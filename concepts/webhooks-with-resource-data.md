@@ -619,4 +619,4 @@ decryptedPayload += decipher.final('utf8');
 - [Create subscription](/graph/api/subscription-post-subscriptions)
 - [Update subscription](/graph/api/subscription-update)
 - [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md)
-- [Change notifications for online meetings in Microsoft Graph](changenotifications-for-onlinemeeting.md) 
+- [Change notifications for online meetings in Microsoft Graph](changenotifications-for-onlinemeeting.md)

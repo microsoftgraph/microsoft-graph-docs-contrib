@@ -114,5 +114,5 @@ Content-Type: application/json
 
 ## See also
 
-- [Microsoft Graph Pinned Message C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-pinned-messages/csharp)
-- [Microsoft Graph Pinned Message Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-pinned-messages/nodejs)
+- [Microsoft Graph pinned message C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-pinned-messages/csharp)
+- [Microsoft Graph pinned message Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-pinned-messages/nodejs)

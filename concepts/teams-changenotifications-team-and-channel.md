@@ -319,5 +319,5 @@ For notifications without resource data, the payload looks like the following. T
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
-- [Change Notifications Team or Channel C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)
-- [Change Notifications Team or Channel Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)
+- [Change notifications team or channel C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)
+- [Change notifications team or channel Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)
