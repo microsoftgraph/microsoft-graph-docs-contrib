@@ -1,6 +1,6 @@
 ---
 title: "sharePointOneDriveOptions resource type"
-description: "Provides search content options while search with application permission."
+description: "Provides the search content options when a search is performed using application permissions."
 ms.localizationpriority: medium
 author: "yiwenwang"
 ms.prod: "search"
@@ -17,7 +17,7 @@ Provides the search content options when a search is performed using application
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|includeContent|searchContent| The type of search content. The possible values are: `privateContent`, `sharedContent`. Read-only. |
+|includeContent|searchContent| The type of search content. The possible values are: `privateContent`, `sharedContent`, `unknownFutureValue`. Read-only. |
 
 ## JSON representation
 
