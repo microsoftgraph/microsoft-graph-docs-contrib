@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilityScheduleInstance resource type"
-description: "The instances of eligibility schedules to activate a just-in-time privileged access."
+description: "Represents an instance of a provisioned membership or ownership assignment in PIM for groups."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
