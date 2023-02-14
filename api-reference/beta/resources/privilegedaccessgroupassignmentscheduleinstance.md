@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an instance of privilegedAccessGroupAssignmentSchedule.
+Represents an instance of a provisioned membership or ownership assignment in PIM for groups.
 
 Inherits from [privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md).
 
