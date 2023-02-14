@@ -15,10 +15,6 @@ accidentalDeletionPrevention.SetSynchronizationPreventionType(&synchronizationPr
 alertThreshold := int32(500)
 accidentalDeletionPrevention.SetAlertThreshold(&alertThreshold) 
 configuration.SetAccidentalDeletionPrevention(accidentalDeletionPrevention)
-synchronizationInterval , err := abstractions.ParseISODuration("PT30M")
-configuration.SetSynchronizationInterval(&synchronizationInterval) 
-customerRequestedSynchronizationInterval , err := abstractions.ParseISODuration("PT1H")
-configuration.SetCustomerRequestedSynchronizationInterval(&customerRequestedSynchronizationInterval) 
 requestBody.SetConfiguration(configuration)
 features := graphmodels.NewOnPremisesDirectorySynchronizationFeature()
 groupWriteBackEnabled := true
