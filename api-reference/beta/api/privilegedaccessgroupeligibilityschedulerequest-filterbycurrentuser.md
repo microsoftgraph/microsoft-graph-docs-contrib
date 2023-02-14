@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the eligibility requests for privileged access to a group relationship assignment for a particular principal.
+In PIM for groups, retrieve the requests for membership or ownership eligibilities for the calling principal to groups that are governed by PIM.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/filterByCurrentUser
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/filterByCurrentUser(on='parameterValue')
 ```
 
 ## Function parameters
@@ -82,31 +84,42 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/$entity",
   "value": [
     {
       "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilityScheduleRequest",
-      "id": "String (identifier)",
-      "status": "String",
-      "completedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "approvalId": "String",
-      "customData": "String",
+      "id": "50877283-9d40-433c-bab8-7986dc10458a",
+      "status": "Provisioned",
+      "createdDateTime": "2022-04-12T09:05:41.807Z",
+      "completedDateTime": "2022-04-12T09:05:41.853Z",
+      "approvalId": null,
+      "customData": null,
       "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+          "user": {
+              "displayName": null,
+              "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5"
+          }
       },
-      "action": "String",
-      "isValidationOnly": "Boolean",
-      "justification": "String",
+      "action": "adminAssign",
+      "isValidationOnly": "false",
+      "justification": "Assign eligibility to user for PIM for Groups membership.",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+          "startDateTime": "2022-04-12T09:05:41.8532931Z",
+          "recurrence": null,
+          "expiration": {
+              "type": "afterDateTime",
+              "endDateTime": "2024-04-10T00:00:00Z",
+              "duration": null
+          }
       },
       "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
+          "ticketNumber": null,
+          "ticketSystem": null
       },
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "targetScheduleId": "String"
+      "accessId": "member",
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "targetScheduleId": "50877283-9d40-433c-bab8-7986dc10458a"
     }
   ]
 }
