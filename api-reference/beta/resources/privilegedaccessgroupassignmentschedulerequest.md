@@ -49,14 +49,8 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |Relationship|Type|Description|
 |:---|:---|:---|
 |activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group. Otherwise, it is `null`. Supports `$expand`.|
-|createdDateTime|DateTimeOffset|When the schedule was created. Optional.|
-|createdUsing|String|The identifier of the access assignment or eligibility request that creates this schedule. Optional.|
 |group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment request through PIM for groups. Supports `$expand`.|
-|id|String|The identifier of the schedule. Required. Inherited from [entity](../resources/entity.md).|
-|modifiedDateTime|DateTimeOffset|When the schedule was last modified. Optional.|
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM. Supports `$expand`.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the period of the access assignment or eligibility. The scheduleInfo can represent a single occurrence or multiple recurring instances. Required.|
-|status|String|The status of the access assignment or eligibility request. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable. Optional.|
 |targetSchedule|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Schedule created by this request. Supports `$expand`.|
 
 ## JSON representation
