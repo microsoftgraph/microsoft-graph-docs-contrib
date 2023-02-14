@@ -34,7 +34,7 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |createdBy|[identitySet](../resources/identityset.md)|The principal that created this request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`, and on `null` values).|
 |createdDateTime|DateTimeOffset|The request creation date time. Inherited from [request](../resources/request.md). Read-only.|
 |customData|String|Free text field to define any custom data for the request. Not used. Inherited from [request](../resources/request.md).|
-|groupId|String|The id of the group representing the scope of the assignment. Optional.|
+|groupId|String|The id of the group representing the scope of the assignment. Required.|
 |id|String|The unique identifier for the **privilegedAccessGroupAssignmentScheduleRequest** object. Key, not nullable, Read-only. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 |isValidationOnly|Boolean|Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when create they create the **privilegedAccessGroupAssignmentScheduleRequest** object.|
@@ -49,8 +49,14 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |Relationship|Type|Description|
 |:---|:---|:---|
 |activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group. Otherwise, it is `null`. Supports `$expand`.|
+|createdDateTime|DateTimeOffset|When the schedule was created. Optional.|
+|createdUsing|String|The identifier of the access assignment or eligibility request that creates this schedule. Optional.|
 |group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment request through PIM for groups. Supports `$expand`.|
+|id|String|The identifier of the schedule. Required. Inherited from [entity](../resources/entity.md).|
+|modifiedDateTime|DateTimeOffset|When the schedule was last modified. Optional.|
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM. Supports `$expand`.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the period of the access assignment or eligibility. The scheduleInfo can represent a single occurrence or multiple recurring instances. Required.|
+|status|String|The status of the access assignment or eligibility request. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable. Optional.|
 |targetSchedule|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Schedule created by this request. Supports `$expand`.|
 
 ## JSON representation
