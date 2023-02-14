@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*.
+
 ## HTTP request
 
 You can address the device using either its **id** or **deviceId**.

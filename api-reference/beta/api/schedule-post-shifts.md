@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md).
 
+The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
