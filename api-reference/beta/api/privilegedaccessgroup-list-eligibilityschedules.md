@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
@@ -34,7 +36,7 @@ GET /identityGovernance/privilegedAccess/group/eligibilitySchedules
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -49,6 +51,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) objects in the response body.
 
 ## Examples
+
+### Example 1
 
 ### Request
 The following is an example of a request.
@@ -76,24 +80,69 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilitySchedules/$entity",
   "value": [
     {
       "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
       "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+          "startDateTime": "2022-04-12T14:44:50.287Z",
+          "recurrence": null,
+          "expiration": {
+              "type": "afterDateTime",
+              "endDateTime": "2024-04-10T00:00:00Z",
+              "duration": null
+          }
       },
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "createdUsing": "String",
-      "status": "String",
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "memberType": "String",
-      "eligibilityType": "String"
+      "createdUsing": "77f71919-62f3-4d0c-9f88-0a0391b665cd",
+      "createdDateTime": "2022-04-12T14:44:50.287Z",
+      "modifiedDateTime": "0001-01-01T08:00:00Z",
+      "status": "Provisioned",
+      "memberType": "Direct",
+      "accessId": "member",
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
     }
   ]
 }
 ```
 
+### Example 2
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_privilegedaccessgroupeligibilityschedule"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules?$select=accessId,principalId,groupId
+```
+
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.privilegedAccessGroupEligibilitySchedule)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilitySchedules/$entity",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
+      "accessId": "member",
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+    }
+  ]
+}
+```
