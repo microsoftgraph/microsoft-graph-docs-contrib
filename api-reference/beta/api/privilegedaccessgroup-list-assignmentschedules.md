@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
 
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
+
 ## HTTP request
 
 <!-- {
@@ -34,7 +36,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentSchedules
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -81,17 +83,23 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentSchedule",
       "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2022-04-11T11:50:06.343Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "noExpiration",
+            "endDateTime": null,
+            "duration": null
+        }
       },
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
+      "createdDateTime": "2023-01-11T11:50:06.343Z",
+      "modifiedDateTime": null,
       "createdUsing": "String",
-      "status": "String",
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "memberType": "String",
-      "assignmentType": "String"
+      "status": "Provisioned",
+      "accessId": "member",
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "memberType": "Direct",
+      "assignmentType": "Assigned"
     }
   ]
 }
