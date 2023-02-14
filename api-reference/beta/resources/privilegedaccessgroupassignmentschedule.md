@@ -25,11 +25,11 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessId|privilegedAccessGroupRelationships|The id of privileged access relationship to the group. Required. The possible values are: `owner`, `member`.|
-|assignmentType|privilegedAccessGroupAssignmentType|A read-only value to represent the assignment is granted through activation, or direct assignment. Required. The possible values are: `assigned`, `activated`.|
-|groupId|String|The id of the group representing the scope of the assignment. Optional.|
-|memberType|privilegedAccessGroupMemberType|A read-only value to represent whether the assignment is derived from group assignment or not. Thus, it can further imply whether the privileged access schedule can be managed by the caller or not. Required. The possible values are: `direct`, `group`.|
-|principalId|String|The id of the principal to which the assignment is granted. Required.|
+|accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership assignment to the group that is governed by PIM. Required. The possible values are: `owner`, `member`, `unknownFutureValue`.|
+|assignmentType|privilegedAccessGroupAssignmentType|Indicates whether the membership or ownership assignment for the principal is granted through activation or direct assignment. Required. The possible values are: `assigned`, `activated`, `unknownFutureValue`.|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Optional. |
+|memberType|privilegedAccessGroupMemberType|Indicates whether the assignment is derived from a direct group assignment or through a transitive assignment. The possible values are: `direct`, `group`, `unknownFutureValue`.|
+|principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for groups. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
