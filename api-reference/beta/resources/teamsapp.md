@@ -74,8 +74,6 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 - [teamsTab](../resources/teamstab.md)
 - [App catalog sample (C#)](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp)
 - [App catalog sample (Node.JS)](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/nodejs)
-- [Graph API Teams App Catalog Life Cycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-appcatalog-lifecycle/csharp)
-- [Graph API Teams App Catalog Life Cycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-appcatalog-lifecycle/nodejs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
