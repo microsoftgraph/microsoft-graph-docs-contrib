@@ -84,7 +84,7 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directory"
+  "name": "restore_directory_deleteditem"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
