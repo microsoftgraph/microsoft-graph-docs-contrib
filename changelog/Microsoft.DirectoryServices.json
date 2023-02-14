@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Synchronization.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `Synchronization.ReadWrite.All` application and permission to configure synchronization settings.",
+          "Target": "synchronization"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Synchronization.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `Synchronization.Read.All` application and permission to read synchronization settings.",
+          "Target": "synchronization"
+        }
+      ],
+      "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-14T00:00:00.0123959Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
           "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
