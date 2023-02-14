@@ -1511,28 +1511,68 @@
     {
       "ChangeList": [
         {
-          "Id": "0817dfcc-a6ad-4b60-8239-fdd8572934c0",
-          "ApiChange": "Property",
-          "ChangedApiName": "region",
-          "ChangeType": "Change",
-          "Description": "Changed the region value format from GUID to 3-letter region code.",
-          "Target": "searchRequest"
-        },
-        {
           "Id": "304326e5-a2ef-478d-9a27-cd7b950dfbaa",
           "ApiChange": "Member",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
           "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
           "Target": "entityType"
-        }
+        },
+        {
+          "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "searchContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **searchContent** enumeration type.",
+          "Target": "searchContent"
+        },
+        {
+          "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "region",
+          "ChangeType": "Change",
+          "Description": "Added the **region** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharePointOneDriveOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointOneDriveOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointOneDriveOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointOneDriveOptions](https://learn.microsoft.com/en-us/graph/api/resources/sharePointOneDriveOptions?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointOneDriveOptions"
+        },
+        {
+            "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Files.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Files.Read.All` application permission to the [searchEntity: query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method.",
+            "Target": "query"
+         },
+         {
+            "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Sites.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Sites.Read.All` application permission to the [searchEntity: query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method.",
+            "Target": "query"
+         }
       ],
       "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-02-06T04:11:04.628137Z",
       "WorkloadArea": "Search",
-      "SubArea": ""
+      "SubArea": "Query"
     }
   ]
 }
