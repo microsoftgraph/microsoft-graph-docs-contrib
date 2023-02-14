@@ -245,6 +245,8 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
 
+Assigning permissions doesn't automatically grant them to the app. You must still grant admin consent using the Azure portal. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
+
 Least privilege delegated permission: `Application.ReadWrite.All`
 
 <!-- {
@@ -254,6 +256,7 @@ Least privilege delegated permission: `Application.ReadWrite.All`
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7a76e98
 Content-Type: application/json
+
 {
     "requiredResourceAccess": [
         {
