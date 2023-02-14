@@ -143,5 +143,5 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- [Graph API Channel Life Cycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
-- [Graph API Channel Life Cycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)
+- [Microsoft Graph API Channel Life Cycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
+- [Microsoft Graph API Channel Life Cycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)
