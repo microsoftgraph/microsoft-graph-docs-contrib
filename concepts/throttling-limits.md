@@ -48,7 +48,7 @@ The preceding limits apply to the following resources:
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
-### Call records service limits
+### Call records limits
 
 The limits listed in the following table apply to the following resource:
 
