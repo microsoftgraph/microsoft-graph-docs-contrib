@@ -1,12 +1,12 @@
 ---
-title: "Watermark for sensitive Teams meetings"
+title: "Manage watermarks for sensitive Teams meetings"
 description: "Use the cloud communications API in Microsoft Graph to manage a watermark for sensitive Microsoft Teams meetings."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
-# Watermark for sensitive Teams meetings
+# Manage watermarks for sensitive Teams meetings
 
 This article describes how to use the cloud communications API in Microsoft Graph to manage the watermark option for sensitive Microsoft Teams meetings. For a description of the watermark meetings feature, licensing, and policy requirements to use this feature, see [Require a watermark for sensitive Teams meetings](/microsoftteams/watermark-meeting-content-video).
 
@@ -14,7 +14,7 @@ The [onlineMeeting](/graph/api/resources/onlinemeeting) resource contains the [w
 
 ## Scenario-based examples for watermark protection
 
-Use the following REST calls to manage watermark protection in sensitive Teams meetings.
+Use the following REST calls to manage watermark protection for sensitive Teams meetings.
 
 ### Create an online meeting with the watermark option
 
@@ -59,7 +59,7 @@ Content-type: application/json
 The following example shows how to update the watermark properties of an **onlineMeeting**. For more details about how to update an online meeting, see [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true).
 
 > [!NOTE]
-> Updating the watermark properties has no affect on meeting calls that have already started.
+> Updating the watermark properties has no effect on meeting calls that have already started.
 
 #### Request
 
