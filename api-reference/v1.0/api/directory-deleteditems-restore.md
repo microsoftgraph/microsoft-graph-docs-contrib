@@ -40,9 +40,9 @@ The calling app must be assigned one of the following [Azure AD roles](/azure/ac
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | User.ReadWrite.All |
 
-To restore users with administrator roles in delegated scenarios, the calling user must also be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+To restore users with privileged administrator roles in delegated scenarios, the app must be assigned with Directory.AccessAsUser.All delegated permission, and the calling user must also be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 
-In app-only scenarios, the *User.ReadWrite.All* application permission isn't enough privilege to restore deleted users with administrator roles. The app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+In app-only scenarios, the *User.ReadWrite.All* application permission isn't enough privilege to restore deleted users with privilged administrator roles. The app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 
 ### For groups:
 
