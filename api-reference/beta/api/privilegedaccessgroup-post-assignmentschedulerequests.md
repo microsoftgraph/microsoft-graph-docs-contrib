@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|PrivilegedAccess.ReadWrite.AzureADGroup|
 
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
+
 ## HTTP request
 
 <!-- {
@@ -46,11 +48,15 @@ You can specify the following properties when creating a **privilegedAccessGroup
 
 |Property|Type|Description|
 |:---|:---|:---|
-|principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for groups. Required.|
 |accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership assignment relationship to the group. The possible values are: `owner`, `member`. Required.|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Optional.|
-|targetScheduleId|String|The identifier of the schedule that's created from the request. Optional.|
-
+|action|String|Represents the type of the operation on the role assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`. <br/><ul><li>`adminAssign`: For administrators to assign roles to principals.</li><li>`adminRemove`: For administrators to remove principals from roles.</li><li> `adminUpdate`: For administrators to change existing role assignments.</li><li>`adminExtend`: For administrators to extend expiring assignments.</li><li>`adminRenew`: For administrators to renew expired assignments.</li><li>`selfActivate`: For principals to activate their assignments.</li><li>`selfDeactivate`: For principals to deactivate their active assignments.</li></ul>|
+|customData|String|Free text field to define any custom data for the request. Not used. Inherited from [request](../resources/request.md).|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Required.|
+|justification|String|A message provided by users and administrators when create they create the **privilegedAccessGroupAssignmentScheduleRequest** object. Optional.|
+|principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for groups. Required.|
+|roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that is being assigned to the principal. Required.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment for PIM for groups. Recurring schedules are currently unsupported. Required.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system. Optional.|
 
 ## Response
 
@@ -60,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [privileg
 
 ### Example 1: Create an assignment schedule request
 
-In the following request, an assignment schedule request is created to assign an active member access.
+The following request creates an assignment schedule request to assign a principal active membership to the specified group. The active membership expires after two hours.
 
 #### Request
 <!-- {
@@ -73,7 +79,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest",
   "accessId": "member", 
   "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
   "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7", 
@@ -104,29 +109,113 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest",
+  "@odata.type": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
   "id": "34e963f6-150f-cf79-678c-6fcaf978bb49",
-  "status": "String",
-  "completedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)",
-  "approvalId": "String",
-  "customData": "String",
+  "status": "Provisioned",
+  "completedDateTime": "2023-02-07T07:05:55.3404527Z",
+  "createdDateTime": "2023-02-07T07:05:53.7895614Z",
+  "approvalId": null,
+  "customData": null,
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+      "user": {
+          "id": "3cce9d87-3986-4f19-8335-7ed075408ca2"
+      }
   },
-  "action": "String",
-  "isValidationOnly": "Boolean",
-  "justification": "String",
+  "action": "adminAssign",
+  "isValidationOnly": "false",
+  "justification": "Assign active member access.",
   "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
+      "startDateTime": "2023-02-07T07:05:55.3404527Z",
+      "expiration": {
+        "type": "afterDuration",
+         "duration": "PT2H"
+      }
   },
   "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
+      "ticketNumber": null,
+      "ticketSystem": null
   },
-  "principalId": "String",
-  "accessId": "String",
-  "groupId": "String",
-  "targetScheduleId": "String"
+  "accessId": "member", 
+  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
+  "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7",
+  "targetScheduleId": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_6aacaee8-4089-4048-9510-3119367fc943"
+}
+
+### Example 2: User activates their eligible assignment for PIM for Groups
+
+In the following request, a user identified by **principalId** `3cce9d87-3986-4f19-8335-7ed075408ca2` activates their *eligible role* to group managed by PIM identified by **grouId** `2b5ed229-4072-478d-9504-a047ebd4b07d`.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
+Content-Type: application/json
+
+{
+  "accessId": "member", 
+  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
+  "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d", 
+  "action": "selfActivate", 
+  "scheduleInfo": { 
+      "startDateTime": "2023-02-08T07:43:00.000Z", 
+      "expiration": { 
+          "type": "afterDuration", 
+          "duration": "PT2H" 
+      } 
+  }, 
+  "justification": "Activate assignment."
+}
+```
+
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
+  "id": "6aacaee8-4089-4048-9510-3119367fc943",
+  "status": "Provisioned",
+  "completedDateTime": "2023-02-07T07:05:55.3404527Z",
+  "createdDateTime": "2023-02-07T07:05:53.7895614Z",
+  "approvalId": null,
+  "customData": null,
+  "createdBy": {
+      "user": {
+          "id": "3cce9d87-3986-4f19-8335-7ed075408ca2"
+      }
+  },
+  "action": "selfActivate",
+  "isValidationOnly": "false",
+  "justification": "Activate assignment.",
+  "scheduleInfo": {
+      "startDateTime": "2023-02-07T07:05:55.3404527Z",
+      "expiration": {
+        "type": "afterDuration",
+         "duration": "PT2H"
+      }
+  },
+  "ticketInfo": {
+      "ticketNumber": null,
+      "ticketSystem": null
+  },
+  "accessId": "member", 
+  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
+  "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+  "targetScheduleId": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_6aacaee8-4089-4048-9510-3119367fc943"
 }
 ```
 
