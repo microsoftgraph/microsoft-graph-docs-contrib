@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the schedules of privileged access to a group relationship assignment for which the signed-in user is the principal.
+In PIM for groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/assignmentSchedules/filterByCurrentUser
+GET /identityGovernance/privilegedAccess/group/assignmentSchedules/filterByCurrentUser(on='parameterValue')
 ```
 
 ## Function parameters
@@ -64,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules/filterByCurrentUser(on='principal')
 ```
 
 
@@ -82,22 +84,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
+    "value": [
     {
       "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentSchedule",
-      "id": "String (identifier)",
+      "id": "lAPpYvVpN0KRkAEhdxReEJ2SvT9WjGJEhR4OuaezoqU-1",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+          "startDateTime": "2023-01-11T19:31:50.5613964Z",
+          "recurrence": null,
+          "expiration": {
+              "type": "noExpiration",
+              "endDateTime": null,
+              "duration": null
+          }
       },
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "createdUsing": "String",
-      "status": "String",
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "memberType": "String",
-      "assignmentType": "String"
+      "createdDateTime": null,
+      "modifiedDateTime": null,
+      "createdUsing": null,
+      "status": "Provisioned",
+      "accessId": "member",
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "memberType": "Direct",
+      "assignmentType": "Assigned"
     }
   ]
 }
