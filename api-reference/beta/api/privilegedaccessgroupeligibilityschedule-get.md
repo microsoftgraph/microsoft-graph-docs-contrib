@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
@@ -34,7 +36,7 @@ GET /identityGovernance/privilegedAccess/group/eligibilitySchedules/{privilegedA
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -49,7 +51,6 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) object in the response body.
 
 ## Examples
-Note: this method requires either the principalId or groupId filter property.
 
 #### Request
 The following is an example of a request.
@@ -59,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules?$filter=groupId eq '14b9e371-5c2c-4ee5-a4a5-2980060d4f4e'
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules/37bf27ec-70a7-60e0-8239-aa3ffa7719ac
 ```
 
 
@@ -77,20 +78,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilitySchedules/$entity",
     "id": "37bf27ec-70a7-60e0-8239-aa3ffa7719ac",
     "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2022-04-11T11:50:06.343Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "noExpiration",
+            "endDateTime": null,
+            "duration": null
+        }
     },
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)",
-    "createdUsing": "String",
-    "status": "String",
-    "principalId": "String",
-    "accessId": "String",
-    "groupId": "String",
-    "memberType": "String"
+    "createdUsing": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+    "createdDateTime": "2022-04-11T11:50:06.343Z",
+    "modifiedDateTime": null,
+    "status": "Provisioned",
+    "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+    "accessId": "member",
+    "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+    "memberType": "Direct"
   }
 }
 ```
