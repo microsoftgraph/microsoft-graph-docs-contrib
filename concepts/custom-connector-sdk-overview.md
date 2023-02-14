@@ -17,7 +17,7 @@ The SDK includes the framework and contract components to help you write the cod
 The connectors SDK enables you to create custom Microsoft Graph connectors directly within the Visual Studio integrated development environment (IDE). It provides everything you need to build, debug, and deploy your custom connector.
 
 >[!Note]
-> Microsoft Graph connectors SDK (preview) is currently available in the Targeted Release Ring. Join the targeted release ring using the [instructions](/microsoft-365/admin/manage/release-options-in-office-365).
+> Microsoft Graph connectors SDK (preview) is currently available in the targeted release ring. To join the targeted release ring, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
 
 ## Components
 
