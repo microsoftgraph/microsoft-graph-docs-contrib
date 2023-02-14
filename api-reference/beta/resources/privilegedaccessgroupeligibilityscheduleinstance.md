@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The instances of eligibility schedules to activate a just-in-time privileged access. It represents an instance of privilegedAccessGroupEligibilitySchedule.
+Represents an instance of a provisioned membership or ownership assignment in PIM for groups.
 
 Inherits from [privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md).
 
@@ -27,9 +27,12 @@ Inherits from [privilegedAccessScheduleInstance](../resources/privilegedaccesssc
 |:---|:---|:---|
 |accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership eligibility relationship to the group. Required. The possible values are: `owner`, `member`.|
 |eligibilityScheduleId|String|The identifier of the [privilegedAccessGroupEligibilitySchedule](privilegedaccessgroupeligibilityschedule.md) from which this instance was created. Required.|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Optional.|
+|endDateTime|DateTimeOffset|When the schedule instance ends. Required.|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Required.|
+|id|String|The identifier of the access assignment schedule instance. Required. Inherited from [entity](../resources/entity.md).|
 |memberType|privilegedAccessGroupMemberType|Indicates whether the assignment is derived from a group assignment. It can further imply whether the calling principal can manage the assignment schedule. Required. The possible values are: `direct`, `group`, `unknownFutureValue`.|
 |principalId|String|The identifier of the principal whose membership or ownership eligibility to the group is managed through PIM for groups. Required.|
+|startDateTime|DateTimeOffset|When this instance starts. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
