@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the eligibility schedule instances of privileged access to a group relationship assignment for the calling principal.
+Return instances of membership and ownership eligibility schedules for the calling principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedAccess.ReadWrite.AzureADGroup, PrivilegedAccess.Read.AzureADGroup|
+|Application|PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup|
+
+The calling app must also have the Global Administrator or Privileged Role Administrator role.
 
 ## HTTP request
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser(on='parameterValue')
 ```
 
 ## Function parameters
@@ -87,60 +89,15 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance",
-      "id": "String (identifier)",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "memberType": "String",
-      "eligibilityScheduleId": "String"
+      "id": "8MYkhImhnkm70CbBdTyW1BbHHAdHgZdDpbqyEFlRzAs-1-e",
+      "startDateTime": "2022-04-12T14:44:50.287Z",
+      "endDateTime": "2024-04-10T00:00:00Z",
+      "memberType": "Direct",
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "accessId": "member",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "eligibilityScheduleId": "77f71919-62f3-4d0c-9f88-0a0391b665cd"
     }
   ]
 }
 ```
-
-### Example 2: Retrieve schedule instances for the calling principal and filter by the group and accessId
-
-#### Request
-The following is an example of a request.
-<!-- {
-  "blockType": "request",
-  "name": "privilegedaccessgroupeligibilityscheduleinstancethis.filterbycurrentuser"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser(on='principal')
-```
-
-
-### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance)"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance",
-      "id": "String (identifier)",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "principalId": "String",
-      "accessId": "String",
-      "groupId": "String",
-      "memberType": "String",
-      "eligibilityScheduleId": "String"
-    }
-  ]
-}
-```
-
