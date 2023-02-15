@@ -20,7 +20,7 @@ These are the principles that guide our approach to Microsoft 365 API endpoints 
 ## Categories of services 
 With the working principles in place, there are three categories of use cases represented in Microsoft Graph. Note that these categories are useful for illustration but don’t reflect any formal naming or branding. 
 
-### Standard 
+### Standard APIs
 This category includes the broad set of APIs used to perform standard operations (e.g. create, read, update, delete) on customer content and administrative endpoints for service configuration. We continue to define and update the limits of reasonable access based on documented usage thresholds to protect our customer experience and encourage good API usage patterns. Access to this category of APIs within the defined limits is included as part of the user license without any additional costs. This is the default category that most endpoints will exist in.
 
 ### High-capacity APIs
@@ -29,13 +29,13 @@ We want to ensure that our customers and developers have access to data at scale
 ### Advanced APIs
 The third category represents access to data that’s enriched or aggregated by Microsoft or offers access to advanced functionality extended directly from Microsoft 365 infrastructure, [Azure Communication Services](https://azure.microsoft.com/products/communication-services/#overview) is an example of this.
 
-## Accessing metered APIs
-In order to access metered Microsoft 365 APIs and services an application must be associated with an active Microsoft Azure Subscription. For instructions on associating an app to a subscription please see [Onboard to Microsoft Graph Metered APIs](metered-api-onboarding.md).
+## Access metered APIs
+To access metered Microsoft 365 APIs and services, an application must be associated with an active Microsoft Azure subscription. For details about how to associated an app to a subscription, see [Onboard to Microsoft Graph metered APIs](metered-api-onboarding.md).
 
 ## Considerations for using metered APIs
 - When building an app that leverages metered Microsoft 365 APIs and services it is important to remember that the APIs may return errors related to your subscription status in addition to other more common errors. See [Microsoft Graph errors and resource types](errors.md) for more information on error types in Microsoft Graph.
 - Metered APIs are billed according to how much usage occurs on the API. Developers should understand the metering unit to understand how to estimate costs associated with a particular API.
 
-## Next steps
-- Explore the [list of metered Microsoft 365 APIs and services](/graph/metered-api-list)
+## See also
+- [List of metered Microsoft 365 APIs and services](/graph/metered-api-list)
 - [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding)
