@@ -279,6 +279,8 @@ items:
                 href: windowsupdates-deploy-update.md
               - name: Deploy an expedited update
                 href: windowsupdates-deploy-expedited-update.md
+              - name: Manage driver update
+                href: windowsupdates-manage-driver-update.md                
               - name: Schedule a deployment
                 href: windowsupdates-schedule-deployment.md
               - name: Manage safeguards
@@ -363,7 +365,7 @@ items:
             displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
-              - name: Manage custom security attributes (preview)
+              - name: "Examples: Custom security attributes (preview)"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
@@ -644,6 +646,8 @@ items:
                 href: cloud-communications-online-meeting-artifacts.md
               - name: Identify large gallery view participants
                 href: cloud-communications-identifylargegalleryview.md
+              - name: Manage watermarks for sensitive meetings
+                href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
               - name: Subscribe for teams, chats, channels
@@ -736,10 +740,10 @@ items:
               - name: Use query parameters
                 href: query-parameters.md
                 displayName: OData query parameters, OData
-              - name: Use $filter
+              - name: Use filter
                 displayName: OData query parameters, OData
                 href: filter-query-parameter.md
-              - name: Use $search
+              - name: Use search
                 displayName: OData query parameters, OData
                 href: search-query-parameter.md
               - name: Advanced query capabilities
