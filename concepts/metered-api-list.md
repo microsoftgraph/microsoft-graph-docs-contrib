@@ -1,12 +1,12 @@
 ---
-title: "List of metered Microsoft 365 APIs and services"
-description: "The list of metered Microsoft 365 APIs and services on Microsoft Graph."
+title: "Metered Microsoft 365 APIs and services"
+description: "Get a list of metered Microsoft 365 APIs and services in Microsoft Graph."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
-# List of Microsoft Graph Metered APIs
+# Metered Microsoft 365 APIs and services
 
 This article provides a list of metered Microsoft 365 APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Metered APIs in Microsoft Graph](metered-api-overview.md). 
 
@@ -24,6 +24,6 @@ Some metered Microsoft 365 APIs and services might also require that you submit 
 
 ## See also
 
-- [Metered APIs in Microsoft Graph](/graph/metered-api-overview)
+- [Overview of metered APIs in Microsoft Graph](/graph/metered-api-overview)
 - [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding)
 
