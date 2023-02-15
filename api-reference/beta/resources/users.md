@@ -56,9 +56,9 @@ The following table lists the sensitive actions on user objects. All users can r
 | Update user principal name | userPrincipalName |
 | Delete or restore users | Not applicable |
 
-### Who can reset passwords?
+### Who can reset passwords
 
-In the following table, the columns list the roles that can reset passwords. The rows list the roles for which their password can be reset.
+In the following table, the columns list the roles that can reset passwords and invalidate refresh tokens. The rows list the roles for which their password can be reset.
 
 The following table is for roles assigned at the scope of a tenant. For roles assigned at the scope of an administrative unit, [further restrictions apply](/azure/active-directory/roles/admin-units-assign-roles#roles-that-can-be-assigned-with-administrative-unit-scope).
 
@@ -79,32 +79,36 @@ User<br/>(no admin role) | :heavy_check_mark: | :heavy_check_mark: | :heavy_chec
 User<br/>(no admin role, but member or owner of a role-assignable group) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | :heavy_check_mark: | :heavy_check_mark:
 User Admin | &nbsp; | &nbsp; | &nbsp; | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
 Usage Summary Reports Reader | &nbsp; | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
+All custom roles | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
 
 \* A Global Administrator cannot remove their own Global Administrator assignment. This is to prevent a situation where an organization has 0 Global Administrators.
 
 > [!NOTE]
-> The ability to reset a password includes the ability to update the following sensitive attributes required for [self-service password reset](/azure/active-directory/authentication/concept-sspr-howitworks):
+> The ability to reset a password includes the ability to update the following sensitive properties required for [self-service password reset](/azure/active-directory/authentication/concept-sspr-howitworks):
 > - businessPhones
 > - mobilePhone
 > - otherMails
 
-### Who can update sensitive attributes?
+### Who can perform sensitive actions
 
-Some administrators can update the following sensitive attributes for some users. All users can read these sensitive attributes.
+Some administrators can perform the following sensitive actions for some users. All users can read the sensitive properties.
 
-- accountEnabled
-- businessPhones
-- mobilePhone
-- onPremisesImmutableId
-- otherMails
-- passwordProfile
-- userPrincipalName
+| Sensitive action | Sensitive property name |
+| --- | --- |
+| Disable or enable users | `accountEnabled` |
+| Update business phone | `businessPhones` |
+| Update mobile phone | `mobilePhone` |
+| Update on-premises immutable ID | `onPremisesImmutableId` |
+| Update other emails | `otherMails` |
+| Update password profile | `passwordProfile` |
+| Update user principal name | `userPrincipalName` |
+| Delete or restore users | Not applicable |
 
-In the following table, the columns list the roles that can update the sensitive attributes. The rows list the roles for which their sensitive attributes can be updated.
+In the following table, the columns list the roles that can perform sensitive actions. The rows list the roles for which the sensitive action can be performed upon.
 
 The following table is for roles assigned at the scope of a tenant. For roles assigned at the scope of an administrative unit, [further restrictions apply](/azure/active-directory/roles/admin-units-assign-roles#roles-that-can-be-assigned-with-administrative-unit-scope).
 
-Role that sensitive attributes can be updated | Auth Admin | User Admin | Privileged Auth Admin | Global Admin
+Role that sensitive action can be performed upon | Auth Admin | User Admin | Privileged Auth Admin | Global Admin
 ------ | ------ | ------ | ------ | ------
 Auth Admin | :heavy_check_mark: | &nbsp; | :heavy_check_mark: | :heavy_check_mark:
 Directory Readers | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
@@ -121,6 +125,8 @@ User<br/>(no admin role) | :heavy_check_mark: | :heavy_check_mark: | :heavy_chec
 User<br/>(no admin role, but member or owner of a role-assignable group) | &nbsp; | &nbsp; | :heavy_check_mark: | :heavy_check_mark:
 User Admin | &nbsp; | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
 Usage Summary Reports Reader | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
+All custom roles | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
+
 
 ## User and group search limitations for guest users in organizations
 
