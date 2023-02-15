@@ -1,12 +1,12 @@
 ---
-title: "Metered Microsoft 365 APIs and services on Microsoft Graph"
+title: "Overview of metered APIs in Microsoft Graph"
 description: "Provides an overview of metered Microsoft 365 APIs and services on Microsoft Graph."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
-# Metered APIs in Microsoft Graph
+# Overview of metered APIs in Microsoft Graph
 
 Microsoft Graph includes APIs that are both available at no additional cost with user subscription licenses as well as APIs and services that are metered. Metered Microsoft 365 APIs and services incur costs based on usage. The costs might be incurred be per API call made, per object returned in an API call, or through other measures.
 
