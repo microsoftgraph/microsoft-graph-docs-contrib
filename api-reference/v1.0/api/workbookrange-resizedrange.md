@@ -1,6 +1,6 @@
 ---
 title: "workbookRange: resizedRange"
-description: "Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."
+description: "Get a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."
 ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
+Get a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
