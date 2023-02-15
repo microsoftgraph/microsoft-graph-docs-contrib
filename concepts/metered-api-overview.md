@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Metered APIs in Microsoft Graph
 
-Microsoft Graph includes APIs that are both available at no additional cost with user subscription licenses as well as APIs and services that are metered. Metered Microsoft 365 APIs and services incur costs based on usage. The costs might be incurred be per API call made, per object returned in an API call, or other measures.
+Microsoft Graph includes APIs that are both available at no additional cost with user subscription licenses as well as APIs and services that are metered. Metered Microsoft 365 APIs and services incur costs based on usage. The costs might be incurred be per API call made, per object returned in an API call, or through other measures.
 
 ## Guiding principles
 These are the principles that guide our approach to Microsoft 365 API endpoints on Microsoft Graph.
