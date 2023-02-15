@@ -165,10 +165,10 @@ This section describes how to look up the number of messages in your Microsoft T
 
 One way is to call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail) API.
 
-Another way is to use the [Microsoft Teams Admin Center](http://admin.teams.microsoft.com/) as follows:
+Another way is to use the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/) as follows:
 
-1. You must be either a global admin, global reader, or Teams service admin to view the report in the [Microsoft Teams Admin Center](http://admin.teams.microsoft.com/). See [Use Teams administrator roles to manage Teams](/microsoftteams/using-admin-roles) to read about getting admin roles and permissions.
-2. In the left navigation of the [Microsoft Teams Admin Center](http://admin.teams.microsoft.com/), select **Analytics & reports** > **Usage reports**.
+1. You must be either a global admin, global reader, or Teams service admin to view the report in the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/). See [Use Teams administrator roles to manage Teams](/microsoftteams/using-admin-roles) to read about getting admin roles and permissions.
+2. In the left navigation of the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/), select **Analytics & reports** > **Usage reports**.
 3. On the **View reports** tab, under **Report**, select **Teams user activity**.
 4. Under **Date range**, select a range.
 5. Select **Run report**.
