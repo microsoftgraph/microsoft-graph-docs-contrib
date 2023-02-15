@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-}
-configuration := &graphconfig.ShiftRequestBuilderPutRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+
+configuration := &graphconfig.TeamItemScheduleShiftItemRequestBuilderPutRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewShift()

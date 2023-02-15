@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 To get the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
 ``` http
-GET /me/cloudPCs{id}
+GET /me/cloudPCs/{id}
 GET /users/{userId}/cloudPCs/{id}
 ```
 
@@ -156,7 +156,8 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared"
+    "provisioningType": "shared",
+    "diskEncryptionState": "notAvailable"
 }
 ```
 
@@ -345,6 +346,7 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared"
+    "provisioningType": "shared",
+    "diskEncryptionState": "notAvailable"
 }
 ```

@@ -186,7 +186,8 @@ Content-type: application/json
                     }
                 }
             ],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616963377068",
@@ -225,7 +226,8 @@ Content-type: application/json
             "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616883610266",
@@ -264,6 +266,7 @@ Content-type: application/json
                 }
             },
             "reactions": [],
+            "messageHistory": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
@@ -399,7 +402,8 @@ Content-type: application/json
                     }
                 }
             ],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616963377068",
@@ -437,7 +441,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616883610266",
@@ -467,6 +472,7 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": [],
+            "messageHistory": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
@@ -587,6 +593,7 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": [],
+            "messageHistory": [],
             "replies@odata.count": 3,
             "replies@odata.nextLink": "https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/replies?$skiptoken=MSwwLDE2NDQ0MzkzODAxNDU",
             "replies": [
@@ -626,7 +633,8 @@ Content-type: application/json
                     },
                     "attachments": [],
                     "mentions": [],
-                    "reactions": []
+                    "reactions": [],
+                    "messageHistory": []
                 },
                 {
                     "id": "1616989750004",
@@ -664,7 +672,8 @@ Content-type: application/json
                     },
                     "attachments": [],
                     "mentions": [],
-                    "reactions": []
+                    "reactions": [],
+                    "messageHistory": []
                 },
                 {
                     "id": "1616989747416",
@@ -702,7 +711,8 @@ Content-type: application/json
                     },
                     "attachments": [],
                     "mentions": [],
-                    "reactions": []
+                    "reactions": [],
+                    "messageHistory": []
                 }
             ]
         }

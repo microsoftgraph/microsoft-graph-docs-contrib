@@ -1,9 +1,12 @@
 ---
 title: "Azure Active Directory (Azure AD) Graph app migration checklist"
 description: "Use this checklist to migrate your apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph."
-author: "dkershaw10"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Azure AD Graph app migration planning checklist

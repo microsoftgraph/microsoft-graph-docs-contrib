@@ -11,7 +11,7 @@ requestBody := graphmodels.NewSendActivityNotificationToRecipientsPostRequestBod
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
-value := "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+value := "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}"
 topic.SetValue(&value) 
 requestBody.SetTopic(topic)
 activityType := "pendingFinanceApprovalRequests"

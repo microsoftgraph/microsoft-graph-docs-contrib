@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+You can address the directory role using either its **id** or **roleTemplateId**.
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /directoryRoles/{role-id}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
+DELETE /directoryRoles(roleTemplateId='{roleTemplateId}')/members/{id}/$ref
 ```
 > [!CAUTION]
 > If `/$ref` is not appended to the request and the calling app has permissions to manage the member object, the object will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
@@ -114,15 +114,13 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request. Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.
 
-<!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
-
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "delete_directoryobject_from_directoryrole_templateId"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-73c1-4d4c-880a-6edb90606fd8/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
+DELETE https://graph.microsoft.com/beta/directoryRoles(roleTemplateId='9f06204d-73c1-4d4c-880a-6edb90606fd85')/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 
 

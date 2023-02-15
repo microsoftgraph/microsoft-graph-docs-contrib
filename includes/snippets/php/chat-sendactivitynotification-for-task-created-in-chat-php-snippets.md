@@ -13,7 +13,7 @@ $requestBody = new SendActivityNotificationPostRequestBody();
 $topic = new TeamworkActivityTopic();
 $topic->setSource(new TeamworkActivityTopicSource('entityurl'));
 
-$topic->setValue('https://graph.microsoft.com/beta/chats/{chatId}');
+$topic->setValue('https://graph.microsoft.com/v1.0/chats/{chatId}');
 
 
 $requestBody->setTopic($topic);

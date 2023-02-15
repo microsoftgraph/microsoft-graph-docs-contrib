@@ -13,7 +13,7 @@ $requestBody = new SendActivityNotificationToRecipientsPostRequestBody();
 $topic = new TeamworkActivityTopic();
 $topic->setSource(new TeamworkActivityTopicSource('entityurl'));
 
-$topic->setValue('https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}');
+$topic->setValue('https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}');
 
 
 $requestBody->setTopic($topic);

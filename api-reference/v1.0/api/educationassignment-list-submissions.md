@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List all the submissions associated with an [assignment](../resources/educationassignment.md). 
+List all the submissions associated with an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with.
 

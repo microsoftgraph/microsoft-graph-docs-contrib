@@ -85,7 +85,8 @@ const bookingStaffMemberBase = {
                 }
             ]
         }
-    ]
+    ],
+    isEmailNotificationEnabled: false
 };
 
 await client.api('/solutions/bookingBusinesses/{id}/staffMembers')

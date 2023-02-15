@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.UnifiedRoleAssignmentMultipleRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.RoleManagementCloudPCRoleAssignmentItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"roleDefinition"},
 }
-configuration := &graphconfig.UnifiedRoleAssignmentMultipleRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RoleManagementCloudPCRoleAssignmentItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

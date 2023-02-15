@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [user](../resources/user.md) object. Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) to see properties they can manage.
+Update the properties of a [user](../resources/user.md) object. Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - To update user properties, such as **businessPhones**, **mobilePhone** and **otherMails** for users with more privileged administrator roles, applications need to be assigned the *Directory.AccessAsUser.All* delegated permission and either the Global Admin role or the Privileged Auth Admin role. For more information about who can update sensitive properties or reset passwords, see [Authorization and privileges](/graph/api/resources/users#authorization-and-privileges).
+> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privilged administrator roles, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 > - Your personal Microsoft account must be tied to an Azure AD tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 > - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
@@ -331,6 +331,8 @@ Content-type: application/json
 ---
 
 
+To remove the value of the schema extension from the user object, set the **ext55gb1l09_msLearnCourses** property to `null`.
+
 #### Response
 
 <!-- {
@@ -339,17 +341,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-
->**Note:** To remove the value of the schema extension from the user object, set the property to `null`. For example:
->
->```http
->PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
->Content-type: application/json
->
->{
->    "ext55gb1l09_msLearnCourses": null
->}
->```
 
 ## See also
 

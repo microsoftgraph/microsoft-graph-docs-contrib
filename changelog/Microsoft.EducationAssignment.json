@@ -1,5 +1,23 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "9bc3c118-c0b7-43ed-8fa8-679f566fea64",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationTeamsAppResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationTeamsAppResource](https://learn.microsoft.com/en-us/graph/api/resources/educationteamsappresource?view=graph-rest-1.0) resource type.",
+          "Target": "educationTeamsAppResource"
+        }
+      ],
+      "Id": "9bc3c118-c0b7-43ed-8fa8-679f566fea64",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-20T14:48:15.2227943Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
      {
       "ChangeList": [
         {
@@ -397,8 +415,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "reassign",
           "ChangeType": "Addition",
-          "Description": "Added the [reassign](https://learn.microsoft.com/en-us/graph/api/reassign?view=graph-rest-1.0) method to the [reassign](https://learn.microsoft.com/en-us/graph/api/reassign?view=graph-rest-1.0) resource.",
-          "Target": "reassign"
+          "Description": "Added the [reassign](https://learn.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-1.0) method to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
+          "Target": "educationSubmission"
         }
       ],
       "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
@@ -535,7 +553,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reassign",
           "ChangeType": "Addition",
-          "Description": "Added the [reassign](https://learn.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-beta) method to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/educationsubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [reassign](https://learn.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-beta) method to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
           "Target": "educationSubmission"
         }
       ],
@@ -671,7 +689,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationAssignmentGroupRecipient",
           "ChangeType": "Addition",
-          "Description": "Added the [educationAssignmentGroupRecipient](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentGroupRecipient?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **educationAssignmentGroupRecipient** resource type.",
           "Target": "educationAssignmentGroupRecipient"
         },
         {
@@ -735,7 +753,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationItemBody",
           "ChangeType": "Addition",
-          "Description": "Added the [educationItemBody](https://learn.microsoft.com/en-us/graph/api/resources/educationItemBody?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **educationItemBody** resource type.",
           "Target": "educationItemBody"
         },
         {
@@ -1077,7 +1095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationMakeCodeResource",
           "ChangeType": "Change",
-          "Description": "Removed the **educationMakeCodeResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Removed the **educationMakeCodeResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationMakeCodeResource"
         },
         {
@@ -1085,7 +1103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationOneNoteResource",
           "ChangeType": "Change",
-          "Description": "Removed the **educationOneNoteResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Removed the **educationOneNoteResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationOneNoteResource"
         },
         {
@@ -1093,7 +1111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationFormResource",
           "ChangeType": "Change",
-          "Description": "Removed the **educationFormResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Removed the **educationFormResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationFormResource"
         },
         {
@@ -1101,7 +1119,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releasedBy",
           "ChangeType": "Change",
-          "Description": "Removed the **releasedBy** property from the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Removed the **releasedBy** property from the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationSubmission"
         },
         {
@@ -1109,7 +1127,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releasedDateTime",
           "ChangeType": "Change",
-          "Description": "Removed the **releasedDateTime** property from the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Removed the **releasedDateTime** property from the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationSubmission"
         },
         {
@@ -1117,7 +1135,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getResourcesFolderUrl",
           "ChangeType": "Change",
-          "Description": "Removed the [getResourcesFolderUrl](https://learn.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Removed the [getResourcesFolderUrl](https://learn.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "getResourcesFolderUrl"
         }
       ],
@@ -1251,7 +1269,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationMakeCodeResource",
           "ChangeType": "Change",
-          "Description": "Deprecated the **educationMakeCodeResource** resource type and will stop supporting it from May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Deprecated the **educationMakeCodeResource** resource type and will stop supporting it from May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationMakeCodeResource"
         },
         {
@@ -1259,7 +1277,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releasedBy",
           "ChangeType": "Change",
-          "Description": "Deprecated the **releasedBy** property from the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource and will stop returning data on May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Deprecated the **releasedBy** property from the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource and will stop returning data on May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationSubmission"
         },
         {
@@ -1267,7 +1285,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releasedDateTime",
           "ChangeType": "Change",
-          "Description": "Deprecated the **releasedDateTime** property from the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource and and will stop returning data on May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Deprecated the **releasedDateTime** property from the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource and and will stop returning data on May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationSubmission"
         },
         {
@@ -1275,7 +1293,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "meAssignments",
           "ChangeType": "Change",
-          "Description": "Deprecated the **me/assignments** endpoint. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Deprecated the **me/assignments** endpoint. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "educationAssignment"
         },
         {
@@ -1283,7 +1301,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getResourcesFolderUrl",
           "ChangeType": "Change",
-          "Description": "Deprecated the [getResourcesFolderUrl](https://learn.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Description": "Deprecated the [getResourcesFolderUrl](https://learn.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "getResourcesFolderUrl"
         }
       ],
@@ -1501,7 +1519,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mkcd,projectId,url,hostWebUrl",
           "ChangeType": "Change",
-          "Description": "Changed property names **mkcd** to **projectId** and **url** to **hostWebUrl** in [educationMakeCodeResource](https://learn.microsoft.com/en-us/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) resource.",
+          "Description": "Changed property names **mkcd** to **projectId** and **url** to **hostWebUrl** in **educationMakeCodeResource** resource.",
           "Target": "educationMakeCodeResource"
         }
       ],
@@ -1559,7 +1577,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationMakeCodeResource",
           "ChangeType": "Addition",
-          "Description": "Added the new [educationMakeCodeResource](https://learn.microsoft.com/en-us/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) resource.",
+          "Description": "Added the new **educationMakeCodeResource** resource.",
           "Target": "educationMakeCodeResource"
         },
         {
@@ -1659,7 +1677,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationFormResource",
           "ChangeType": "Addition",
-          "Description": "Add the new [educationFormResource](https://learn.microsoft.com/en-us/graph/api/resources/educationFormResource?view=graph-rest-beta) resource.",
+          "Description": "Add the new **educationFormResource** resource.",
           "Target": "educationFormResource"
         },
         {
@@ -1831,7 +1849,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Schools,Classes,Users,Assignments,Submissions",
           "ChangeType": "Addition",
-          "Description": "Added support for education scenarios, including the following resources:, [Schools](https://learn.microsoft.com/en-us/graph/api/resources/educationschool?view=graph-rest-beta), [Classes](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-beta), [Users](https://learn.microsoft.com/en-us/graph/api/resources/educationuser?view=graph-rest-beta), [Assignments](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta), [Submissions](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta), See the resource topics for details about the methods that are available.",
+          "Description": "Added support for education scenarios, including the following resources: [Schools](https://learn.microsoft.com/en-us/graph/api/resources/educationschool?view=graph-rest-beta), [Classes](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-beta), [Users](https://learn.microsoft.com/en-us/graph/api/resources/educationuser?view=graph-rest-beta), [Assignments](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta), [Submissions](https://learn.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta), See the resource topics for details about the methods that are available.",
           "Target": "Schools,Classes,Users,Assignments,Submissions"
         }
       ],

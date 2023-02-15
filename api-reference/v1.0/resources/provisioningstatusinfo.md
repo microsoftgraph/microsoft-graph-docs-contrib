@@ -18,8 +18,8 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|provisioningResult| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 |errorInfo|[provisioningErrorInfo](provisioningErrorInfo.md)| If status is not success/ skipped details for the error are contained in this.|
+|status|provisioningResult| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
 

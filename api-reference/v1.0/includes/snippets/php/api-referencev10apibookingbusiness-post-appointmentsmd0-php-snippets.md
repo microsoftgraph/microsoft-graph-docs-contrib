@@ -29,6 +29,8 @@ $requestBody->setIsLocationOnline(true);
 
 $requestBody->setOptOutOfCustomerEmail(false);
 
+$requestBody->setAnonymousJoinWebUrl(null);
+
 $requestBody->setPostBuffer(new \DateInterval('PT10M'));
 
 $requestBody->setPreBuffer(new \DateInterval('PT5M'));

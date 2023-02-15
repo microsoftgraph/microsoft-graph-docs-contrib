@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---
-# media resouce type
+# media resource type
 
 Contains metadata about the media (audio or video) drive item.
 

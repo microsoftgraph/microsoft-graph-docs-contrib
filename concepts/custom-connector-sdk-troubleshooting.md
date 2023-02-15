@@ -46,11 +46,45 @@ If you see any RPC errors during the communication between the Microsoft Graph c
 
 If the error code is **Unknown**, there's likely an unhandled exception in your connector code. Make sure that you send a response with success/failure operation status in all cases.
 
+## Locating the log file for your custom connector
+
+If you're using the [GraphConnectorsTemplate](https://marketplace.visualstudio.com/items?itemName=ms-graph-connectors.graphConnectors) to develop your custom connector, the **AppData** folder of the current user account is used to store logs by default. You can also provide an absolute path for storing logs in the **ConnectorServer.cs** file of the template. The user account should have access to the absolute path you've provided.
+
+The following are the locations of the log path, depending on your use case:
+
+- Connector not hosted as a Windows service:
+
+    ``` Path
+    C:\Users\{User Account}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
+    ```
+
+- Connector hosted as a Windows service under the LOCAL SYSTEM account:
+
+    ``` Path
+    C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
+    ```
+
+- Connector hosted as a Windows service under the virtual account:
+
+    ``` Path
+    C:\Windows\ServiceProfiles\{Network Service Name}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
+    ```
+
+- Connector hosted as a Windows service under the LOCAL SYSTEM account:
+
+    ``` Path
+    C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
+    ```
+
+>[!Note]
+>- **GraphConnectorsTemplate v2.1** and above supports storing logs for connectors hosted as a Windows service.
+>- Make sure you provide a unique connector name in the **ConnectorServer.cs** file to ensure that logs for each unique connector are stored separately.
+
 ## Errors with hosting a connector as a Windows service
 
-### Service failed to start due to Access denied error
+### Service failed to start due to access denied error
 
-Use the following steps to make sure that the path of the executable is accessible to the LocalSystem account.
+Use the following steps to make sure that the path of the executable is accessible to the LocalService account.
 
 1. Right-click the folder that contains the executable and choose **Properties**.
 
@@ -78,4 +112,4 @@ You can also reach out to the [Microsoft Graph Connectors team](mailto:Microsoft
 
 ## See also
 
-* [Best practices](/graph/custom-connector-sdk-best-practices)
+- [Best practices](/graph/custom-connector-sdk-best-practices)

@@ -3,7 +3,7 @@ title: "retentionDuration resource type"
 description: "An abstract type that represents how long an item will be retained before it can be deleted."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
