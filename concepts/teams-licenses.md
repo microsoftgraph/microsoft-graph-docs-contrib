@@ -27,7 +27,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Active pricing events for these APIs started on July 5th, 2022. We require applications to follow the instructions on [Onboard to metered Microsoft 365 APIs and services] (/graph/metered-api-onboarding) to set up an active Azure subscription for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
+> Active pricing events for these APIs started on July 5th, 2022. We require applications to follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
 
 > [!NOTE]
 > Most of these APIs are also [Protected APIs](/graph/teams-protected-apis), which require approvals from Microsoft before you can use them.  If your application is using any of the Protected APIs, please also submit a request for approvals by completing [this form](https://aka.ms/teamsgraph/requestaccess).  For more details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -128,7 +128,7 @@ in excess of the seeded capacity will fail.
 
 In October 2021 we [communicated](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) upcoming charges for the consumption of these APIs; on July 5, 2022, these prices take effect as [previously announced](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). 
 
-If your applications are or will be calling any of these APIs, we require applications to follow the instructions on [Onboard to metered Microsoft 365 APIs and services] (/graph/metered-api-onboarding) to set up an active Azure subscription for billing purposes.
+If your applications are or will be calling any of these APIs, we require applications to follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for billing purposes.
 
 Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
 
@@ -151,33 +151,33 @@ You can also use the pie charts near the bottom to further break down the costs 
 
 For more details about cost management, see [Cost Management + Billing documentation](/azure/cost-management-billing/).
 
-## Monitor the number of messages for the metered Microsoft Teams APIs
+## Monitor the number of messages billed for the metered Microsoft Teams APIs
 
-This section describes how to monitor the number of messages for the metered Microsoft Teams APIs.  Unlike the previous section, this allows you to analyze also the usage of the messages within the seeded capacity, not just above the seeded capacity for billing, if applicable to the selected licensing models.
+This section describes how to monitor the number of messages billed for the metered Microsoft Teams APIs.  Unlike the previous section, this allows you to analyze also the usage of the messages within the seeded capacity, not just above the seeded capacity for billing, if applicable to the selected licensing models.
 
 A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can set up a report, in CSV format, with the billing details for the entire subscription.  The CSV file can be exported periodically (e.g. daily, weekly, monthly).  Please see [Tutorial: Create and manage exported data](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal) for a tutorial video and other related details.
 
-## Estimate the number of messages
+## Estimate the number of messages in your Microsoft Teams
 
 This section describes how to look up the number of messages in your Microsoft Teams.  This is useful when you haven't used the metered APIs yet and just want to have a high level estimate of what the cost would be when you start using the metered APIs.
 
 One way is to call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail) API.
 
-Another way is to use the [Microsoft Teams Admin Center] (http://admin.teams.microsoft.com/) as follows:
+Another way is to use the [Microsoft Teams Admin Center](http://admin.teams.microsoft.com/) as follows:
 
-1. You must be either a global admin, global reader, or Teams service admin to view the report in the [Microsoft Teams Admin Center] (http://admin.teams.microsoft.com/). See [Use Teams administrator roles to manage Teams](/microsoftteams/using-admin-roles) to read about getting admin roles and permissions.
-2. In the left navigation of the [Microsoft Teams Admin Center] (http://admin.teams.microsoft.com/), select **Analytics & reports** > **Usage reports**.
+1. You must be either a global admin, global reader, or Teams service admin to view the report in the [Microsoft Teams Admin Center](http://admin.teams.microsoft.com/). See [Use Teams administrator roles to manage Teams](/microsoftteams/using-admin-roles) to read about getting admin roles and permissions.
+2. In the left navigation of the [Microsoft Teams Admin Center](http://admin.teams.microsoft.com/), select **Analytics & reports** > **Usage reports**.
 3. On the **View reports** tab, under **Report**, select **Teams user activity**.
 4. Under **Date range**, select a range.
 5. Select **Run report**.
 
-![Screenshot of the Teams User Activity report](TODO)
+![Screenshot of the Teams User Activity report](images/teams-user-activity-report-sample.png)
 
 ## Frequently asked questions
 
 |    Scenario    | Details |
 |:-------------------------|:--------|
-| Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, follow the instructions on [Onboard to metered Microsoft 365 APIs and services] (/graph/metered-api-onboarding) to set up an active Azure subscription for billing purposes. 
+| Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for billing purposes. 
 | What should I expect after setting up an Azure subscription? | Billing will be effective immediately.  You can monitor the costs as described in the [View costs billed for the metered Microsoft Teams APIs](#viewr-costs-billed-for-the-metered-microsoft-teams-apis) section above. |
 | Do I need to provide an Azure subscription if my application is not calling metered APIs? | It is recommended as most scenarios use metered APIs, see also: [protected APIs](/graph/teams-protected-apis). |
 | What happens if no Azure subscription is provided? | • No payment-related errors if the application is not calling metered APIs. <br> • If no model is being passed, the `evaluation model` value will be used by default. <br> • If calling a metered API passing `model=A`, a Microsoft 365 E5 eligible license and Azure subscription should be provided. <br> • If passing `model=B` when calling metered APIs, an active Azure subscription should be provided. <br> |
