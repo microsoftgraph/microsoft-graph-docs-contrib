@@ -26,6 +26,38 @@ One of the following permissions is required to call this API. To learn more, in
 
 > Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Global Administrator
+* User
+* Directory Readers
+* Directory Writers
+* Application Administrator
+* Security Reader
+* Security Administrator
+* Privileged Role Administrator
+* Cloud Application Administrator
+* Customer LockBox Access Approver
+* Dynamics 365 Administrator
+* Power BI Administrator
+* Azure Information Protection Administrator
+* Desktop Analytics Administrator
+* License Administrator
+* Microsoft Managed Desktop Administrator
+* Teams Communications Administrator
+* Teams Communications Support Engineer
+* Teams Communications Support Specialist
+* Teams Administrator
+* Insights Administrator
+* Compliance Data Administrator
+* Security Operator
+* Kaizala Administrator
+* Global Reader
+* Directory Reviewer
+* Guest User
+* Restricted Guest User
+* User Administrator
+
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
