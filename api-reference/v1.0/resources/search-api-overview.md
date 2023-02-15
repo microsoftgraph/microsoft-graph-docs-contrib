@@ -187,7 +187,7 @@ The search API has the following limitations:
 
 - The search API does not support xrank for **message**,**chatMessage**, **event**, **person**, or **externalItem**.
 
-- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
+- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
 ## See also
 
