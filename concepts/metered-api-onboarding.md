@@ -26,7 +26,9 @@ Before you can access metered Microsoft 365 APIs and services, you must complete
 - Create an application registration in Azure Active Directory (Azure AD) for the application that will be making calls to the metered Microsoft 365 APIs and services.
 - If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now in the tenant that includes the application registration.
 - You must have contributor permissions to the active Azure subscription you want to use, as well as application owner permissions for the target application registration.
-- If you plan to use protected APIs, submit the [request form for Teams](teams-protected-apis.md) or [request form for SharePoint](https://aka.ms/PreviewSPOPremiumAPI), depending on which APIs you are calling.
+- If you plan to use protected APIs, submit a request form, as applicable:
+  - [Teams protected API request form](https://aka.ms/teamsgraph/requestaccess)
+  - [SharePoint protected API request form](https://aka.ms/PreviewSPOPremiumAPI)
 
 ## Enable an application
 To enable an application to use metered Microsoft 365 APIs or services, it must be associated with an Azure subscription. To create this association, you must create an Azure resource of type **Microsoft.GraphServices/accounts**. The Azure resource connects a single Azure AD application registration with the Azure subscription where the application's usage of metered APIs is billed. 
@@ -56,7 +58,7 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
   | myAppGUID | The Application (client) ID of the application being enabled, provided as a string parameter; for example, 00000000-0000-0000-0000-000000000000. |
   | mySubscriptionGUID | The ID of the Azure subscription that will receive billing events, provided as a string parameter; for example, 00000000-0000-0000-0000-000000000000. | 
 
-A successful JSON result will look something like this:
+  A successful JSON result will look something like this:
 
     ```
     {
