@@ -33,9 +33,13 @@ The third category represents access to data that’s enriched or aggregated by 
 To access metered Microsoft 365 APIs and services, an application must be associated with an active Microsoft Azure subscription. For details about how to associated an app to a subscription, see [Onboard to Microsoft Graph metered APIs](metered-api-onboarding.md).
 
 ## Considerations for using metered APIs
-- When building an app that leverages metered Microsoft 365 APIs and services it is important to remember that the APIs may return errors related to your subscription status in addition to other more common errors. See [Microsoft Graph errors and resource types](errors.md) for more information on error types in Microsoft Graph.
-- Metered APIs are billed according to how much usage occurs on the API. Developers should understand the metering unit to understand how to estimate costs associated with a particular API.
+
+Keep the following considerations in mind when you use metered Microsoft 365 APIs and services:
+
+- Metered APIs can return errors related to your subscription status in addition to other common errors. For details about Microsoft Graph errors, see [Microsoft Graph errors and resource types](errors.md).
+- Metered APIs are billed according to API usage. Be sure to understand the metering unit so that you can estimate the costs associated with a particular API.
 
 ## See also
+
 - [List of metered Microsoft 365 APIs and services](/graph/metered-api-list)
 - [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding)
