@@ -32,9 +32,9 @@ The JSON blob contains the types of resources expected in the response, the unde
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
 |queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags related to spelling correction. Optional. |
-|region|string|Required for searches that use application permissions. Represents the geographic location for the search. For details, see [Get the region value](/graph/search-concept-searchAll). |
+|region|String|The geographic location for the search. Required for searches that use application permissions. For details, see [Get the region value](/graph/search-concept-searchall). |
 |resultTemplateOptions|[resultTemplateOption](resulttemplateoption.md) collection|Provides the search result template options to render search results from connectors.|
-|sharePointOneDriveOptions|[sharePointOneDriveOptions](sharePointOneDriveOptions.md)|Indicates the kind of contents to be searched when a search is performed using application permissions. Optional.|
+|sharePointOneDriveOptions|[sharePointOneDriveOptions](sharepointonedriveoptions.md)|Indicates the kind of contents to be searched when a search is performed using application permissions. Optional.|
 |size|Int32|The size of the page to be retrieved.The maximum value is 1000. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 
