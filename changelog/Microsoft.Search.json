@@ -149,7 +149,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Microsoft Search API,querying,indexing",
           "ChangeType": "Addition",
-          "Description": "Added the [Microsoft Search API](https://learn.microsoft.com/en-us/graph/search-concept-overview) that constitutes [querying](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) and [indexing](https://learn.microsoft.com/en-us/graph/api/resource/indexing-api-overview?view=graph-rest-beta) capabilities.",
+          "Description": "Added the [Microsoft Search API](https://learn.microsoft.com/en-us/graph/search-concept-overview) that constitutes [querying](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) and [indexing](https://learn.microsoft.com/en-us/graph/api/resources/indexing-api-overview?view=graph-rest-beta) capabilities.",
           "Target": "Microsoft Search API,querying,indexing"
         },
         {
