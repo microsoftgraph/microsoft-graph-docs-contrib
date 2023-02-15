@@ -1,6 +1,6 @@
 ---
 title: "Overview of metered APIs in Microsoft Graph"
-description: "Provides an overview of metered Microsoft 365 APIs and services on Microsoft Graph."
+description: "Get an introduction to metered Microsoft 365 APIs and services in Microsoft Graph."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
