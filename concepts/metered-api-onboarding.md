@@ -8,29 +8,25 @@ ms.custom: scenarios:getting-started
 
 # Onboard to metered Microsoft 365 APIs and services
 
-Some APIs and services included in Microsoft Graph are metered and require payment for use. 
+Some Microsoft 365 APIs and services in Microsoft Graph are metered and require payment for use. For a current list of APIs that require payment, see [Metered Microsoft 365 APIs and services](metered-api-list.md).
 
-Examples of APIs that are currently metered include:
-- Teams [chat](/graph/api/chats-getallmessages.md) / [channel](/graph/api/channel-getallmessages.md) export
-- Teams chat / channel [change notifications](/graph/api/subscription-post-subscriptions.md)
-- Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions.md)
-- Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update.md)
-- SharePoint [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md)
+To consume metered Microsoft 365 APIs and services, the application registration for the Azure Active Directory application that consumes the APIs must be associated with an Azure subscription. This subscription will be billed for any metered charges. This association also allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of the application. This article describes how to associate your application with an Azure subscription.
 
-See [List of metered Microsoft 365 APIs](metered-api-list.md) for the full list of Microsoft 365 APIs that may require payment.
+## Known limitations
 
-To consume metered Microsoft 365 APIs and services, the Azure Active Directory application registration consuming the APIs must be associated to an Azure Subscription which will be billed for any metered charges. In addition to enabling usage of metered APIs, the association allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of this application. These instructions will outline the process of completing this association.
+The following limitations apply to metered APIs:
 
-## Current limitations
-- Metered Microsoft 365 APIs and services are not currently available in national cloud deployments including Microsoft 365 GCC deployments accessed through the worldwide Microsoft Graph endpoint. See [National cloud deployments](deployments.md) for more information on national clouds.
-- The target application must be a confidential client application (for example, web application, web API, or daemon / service). Public client applications are not supported (desktop applications, mobile applications).
+- Metered Microsoft 365 APIs and services are not currently available in national cloud deployments, including Microsoft 365 GCC deployments accessed through the worldwide Microsoft Graph endpoint. For details about national clouds, see [National cloud deployments](deployments.md).
+- The target application must be a confidential client application (for example, web application, web API, or daemon/service). Public client applications (desktop and mobile applications) are not supported.
 
-## Prerequisites for accessing metered APIs
-Before accessing metered Microsoft 365 APIs and services, you must complete the following prerequisite steps:
+## Prerequisites
+
+Before you can access metered Microsoft 365 APIs and services, you must complete the following steps:
+
 - Create an application registration in Azure Active Directory for the application that will be making calls to the metered Microsoft 365 APIs and services.
-- If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now in the same tenant as the application registration.
-- You must have contributor permissions to the active Azure Subscription you wish to use as well as application owner permissions for the target application registration.
-- If the APIs you plan to use are Protected APIs, submit the [request form for Teams](teams-protected-apis.md) or [request form for SharePoint](https://aka.ms/PreviewSPOPremiumAPI) depending on which APIs you are calling.
+- If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now in the tenant that includes the application registration.
+- You must have contributor permissions to the active Azure subscription you want to use, as well as application owner permissions for the target application registration.
+- If you plan to use protected APIs, submit the [request form for Teams](teams-protected-apis.md) or [request form for SharePoint](https://aka.ms/PreviewSPOPremiumAPI), depending on which APIs you are calling.
 
 ## Enabling an application
 To enable an application to use metered Microsoft 365 APIs or services it must be associated with an Azure Subscription. To create this association, an Azure resource of type **Microsoft.GraphServices/accounts** needs to be created to connect the application registration to a subscription. The Azure resource connects a single Azure Active Directory application registration with the Azure Subscription where the application's usage of metered APIs is billed. 
