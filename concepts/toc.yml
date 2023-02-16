@@ -415,7 +415,7 @@ items:
             displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
-              - name: Manage custom security attributes (preview)
+              - name: "Examples: Custom security attributes (preview)"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
@@ -696,6 +696,8 @@ items:
                 href: cloud-communications-online-meeting-artifacts.md
               - name: Identify large gallery view participants
                 href: cloud-communications-identifylargegalleryview.md
+              - name: Manage watermarks for sensitive meetings
+                href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
               - name: Subscribe for teams, chats, channels
@@ -712,6 +714,8 @@ items:
             href: teams-licenses.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Implementation differences in national clouds
+            href: teamwork-national-cloud-differences.md
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
