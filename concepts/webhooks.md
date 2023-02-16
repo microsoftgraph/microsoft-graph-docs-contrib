@@ -357,12 +357,22 @@ The following table lists the latency to expect between an event happening in th
 > [!NOTE]
 > The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
+## Additional resources
+
+- [Get change notifications through webhooks](./change-notifications-delivery-webhooks.md)
+- [Get change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
+- [Notifications with resource data](./webhooks-with-resource-data.md)
+- [Lifecycle notifications](./webhooks-lifecycle.md)
+- Tutorials
+    - [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
+    - [Change notifications for Outloook resources](./outlook-change-notifications-overview.md)
+    - [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
+
 ## See also
 
 - [subscription resource type](/graph/api/resources/subscription)
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
 - [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation
