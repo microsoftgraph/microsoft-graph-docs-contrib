@@ -25,7 +25,6 @@ The calling user must be assigned one of the following [Azure AD roles](/azure/a
 
 - Security Administrator
 - External Identity Provider Administrator
-- Global Administrator
 
 ## HTTP request
 
