@@ -17,7 +17,7 @@ Provides the search content options when a search is performed using application
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|includeContent|searchContent| The type of search content. The possible values are: `privateContent`, `sharedContent`, `unknownFutureValue`. Read-only. |
+|includeContent|searchContent| The type of search content. The possible values are: `sharedContent`, `privateContent`, `unknownFutureValue`. Read-only. |
 
 ## JSON representation
 
