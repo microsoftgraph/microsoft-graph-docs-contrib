@@ -198,9 +198,9 @@ items:
           - name: Tutorials
             displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
             items:
-            - name: Change notifications for cloud printing
+            - name: Notifications for cloud printing
               href: universal-print-webhook-notifications.md
-            - name: Change notifications for Microsoft Teams resources
+            - name: Notifications for Microsoft Teams resources
               items:
                 - name: Notification types and payloads
                   href: teams-change-notification-in-microsoft-teams-overview.md
@@ -215,7 +215,7 @@ items:
                   href: teams-changenotifications-chat.md
                 - name: Chat membership
                   href: teams-changenotifications-chatMembership.md
-            - name: Change notifications for Outlook resources
+            - name: Notifications for Outlook resources
               href: outlook-change-notifications-overview.md
       - name: Change tracking
         items:
