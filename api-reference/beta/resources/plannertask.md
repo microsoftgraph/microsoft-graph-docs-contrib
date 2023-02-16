@@ -23,6 +23,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |[Get plannerTask](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read properties and relationships of **plannerTask** object.|
 |[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update **plannerTask** object. |
 |[Delete](../api/plannertask-delete.md) | None |Delete **plannerTask** object. |
+|[delta](../api/plannertask-delta.md)|[plannerTask](../resources/plannertask.md) collection| Get newly created, updated, or deleted **plannerTask** objects in either a **plannerPlan** or assigned to the signed in user without having to perform a full read of the entire resource collection. |
 
 ## Properties
 | Property	   | Type	|Description|

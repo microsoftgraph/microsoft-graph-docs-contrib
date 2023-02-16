@@ -1,0 +1,119 @@
+---
+title: "plannerBucket: delta"
+description: "Get newly created, updated, or deleted buckets in a planner plan without having to perform a full read of the entire resource collection. See Using Delta Query for details."
+author: "AnubhavKumarSingh"
+ms.localizationpriority: medium
+ms.prod: "tasks-and-plans"
+doc_type: apiPageType
+---
+
+# plannerBucket: delta
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get newly created, updated, or deleted buckets in a planner plan without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Tasks.Read                                  |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | Tasks.Read.All                              |
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /planner/plans/{plan-id}/buckets/delta
+```
+
+### Query parameters
+
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter
+(other than `$deltatoken` and `$skiptoken`), you must specify
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters
+into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
+You only need to specify any desired query parameters once upfront.
+In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already
+includes the encoded, desired parameters.
+
+| Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                                    |
+| :-------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection. |
+| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.                                                                                                                                                                |
+
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this function returns a `200 OK` response code and a [plannerBucket](../resources/plannerbucket.md) collection in the response body. The response also includes a nextLink URL or a deltaLink URL.
+
+- If a `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
+
+- If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
+
+See:</br>
+
+- [Using Delta Query](/graph/delta-query-overview) for more details</br>
+- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
+
+## Examples
+
+### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "plannerbucketthis.delta"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/buckets/delta
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.plannerBucket)"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#plannerBucket",
+  "@odata.deltaLink": "https://graph.microsoft.com/beta/planner/plans('-W4K7hIak0WlAwgJCn1sEWQABgjH')/buckets?deltatoken=0%257eaa6c4c81-656f-40e8-a2c5-60f4116fa9a4",
+  "value": [
+    {
+      "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBASCc=\"",
+      "id": "iz1mmIxX7EK0Yj7DmRsMs2QAEDXH",,
+      "name": "This is a bucket",
+      "planId": "-W4K7hIak0WlAwgJCn1sEWQABgjH",
+      "orderHint": "8585371316800245114P\\",
+    }
+  ]
+}
+```
