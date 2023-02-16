@@ -664,6 +664,8 @@ items:
             href: teams-licenses.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Implementation differences in national clouds
+            href: teamwork-national-cloud-differences.md
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
