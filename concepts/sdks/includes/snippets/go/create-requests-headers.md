@@ -5,6 +5,7 @@
 
 import (
     events "github.com/microsoftgraph/msgraph-sdk-go/me/events"
+    "context"
 )
 
 options := events.EventsRequestBuilderGetOptions{
@@ -13,5 +14,5 @@ options := events.EventsRequestBuilderGetOptions{
     },
 }
 
-result, err := client.Me().Events().Get(&options)
+result, err := client.Me().Events().Get(context.Background(), &options)
 ```

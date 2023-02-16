@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new ChildFoldersRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new ChildFoldersRequestBuilderGetQueryParameters();
-$queryParameters->includeHiddenFolders = true;
+$queryParameters->includehiddenfolders = true;
 
 $requestConfiguration->queryParameters = $queryParameters;
 

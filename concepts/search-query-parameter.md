@@ -1,7 +1,9 @@
 ---
 title: "Use the $search query parameter in Microsoft Graph"
 description: "Microsoft Graph supports the $search OData query parameter to restrict the results of a request to match a search criterion."
-author: "mumbi-o"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 12/08/2022
@@ -59,6 +61,124 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 ---
 
+Alternatively, you can search messages by specifying message property names in the following table, that are recognized by the Keyword Query Language (KQL) syntax. These property names correspond to properties defined in the **message** entity of Microsoft Graph. Outlook and other Microsoft 365 applications such as SharePoint support KQL syntax, providing the convenience of a common discovery domain for their data stores.
+
+| Searchable email property | Description                                                                                                                                                             | Example                                                                                                                          |
+| :------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| **attachment**            | The names of files attached to an email message.                                                                                                                        | [GET][search-att-example] `../me/messages?$search="attachment:api-catalog.md"`                                                   |
+| **bcc**                   | The **bcc** field of an email message, specified as an SMTP address, display name, or alias.                                                                            | [GET][search-bcc-example] `../me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`                     |
+| **body**                  | The body of an email message.                                                                                                                                           | [GET][search-body-example] `../me/messages?$search="body:excitement"`                                                            |
+| **cc**                    | The **cc** field of an email message, specified as an SMTP address, display name, or alias.                                                                             | [GET][search-cc-example] `../me/messages?$search="cc:danas"&$select=subject,ccRecipients`                                        |
+| **from**                  | The sender of an email message, specified as an SMTP address, display name, or alias.                                                                                   | [GET][search-from-example] `../me/messages?$search="from:randiw"&$select=subject,from`                                           |
+| **hasAttachment**         | True if an email message contains an attachment that is not an inline attachment, false otherwise.                                                                      | [GET][search-from-example] `../me/messages?$search="hasAttachments:true"`                                                        |
+| **importance**            | The importance of an email message, which a sender can specify when sending a message. The possible values are `low`, `medium`, or `high`.                              | [GET][search-imp-example] `../me/messages?$search="importance:high"&$select=subject,importance`                                  |
+| **kind**                  | The type of message. The possible values are `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks`, or `voicemail`. | [GET][search-kind-example] `../me/messages?$search="kind:voicemail"`                                                             |
+| **participants**          | The **from**, **to**, **cc**, and **bcc** fields of an email message, specified as an SMTP address, display name, or alias.                                             | [GET][search-part-example] `../me/messages?$search="participants:danas"`                                                         |
+| **received**              | The date that an email message was received by a recipient.                                                                                                             | [GET][search-rcvd-example] `../me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`                       |
+| **recipients**            | The **to**, **cc**, and **bcc** fields of an email meesage, specified as an SMTP address, display name, or alias.                                                       | [GET][search-rcpts-example] `../me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients` |
+| **sent**                  | The date that an email message was sent by the sender.                                                                                                                  | [GET][search-sent-example] `../me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`                               |
+| **size**                  | The size of an item in bytes.                                                                                                                                           | [GET][search-size-example] `../me/messages?$search="size:1..500000"`                                                             |
+| **subject**               | The text in the subject line of an email message. .                                                                                                                     | [GET][search-sbj-example] `../me/messages?$search="subject:has"&$select=subject`                                                 |
+| **to**                    | The **to** field of an email message, specified as an SMTP address, display name, or alias.                                                                             | [GET][search-to-example]`.../me/messages?$search="to:randiw"&$select=subject,toRecipients`                                       |
+
+For more information about searchable email properties, KQL syntax, supported operators, and tips on searching, see the following articles:
+
+- [Searchable properties in Exchange](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
+
+- [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+- [Message properties and search operators for In-Place eDiscovery in Exchange 2016](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators)
+
+## Using $search on person collections
+
+You can use the Microsoft Graph [People API](/graph/api/resources/person) to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter. A `$search` request returns up to 250 results.
+
+Searches on people occur on both the **displayName** and **emailAddress** properties of the [person](/graph/api/resources/person) resource.
+
+The following request does a search for a person named "Irene McGowen" in the **displayName** and **emailAddress** properties in each person in the **people** collection of the signed-in user. Because a person named "Irene McGowan" is relevant to the signed-in user, the information for "Irene McGowan" is returned.
+
+<!-- {
+  "blockType": "request",
+  "name": "search_my_people"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
+```
+
+The following example shows the response.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "value": [
+       {
+           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
+           "displayName": "Irene McGowan",
+           "givenName": "Irene",
+           "surname": "McGowan",
+           "birthday": "",
+           "personNotes": "",
+           "isFavorite": false,
+           "jobTitle": "Auditor",
+           "companyName": null,
+           "yomiCompany": "",
+           "department": "Finance",
+           "officeLocation": "12/1110",
+           "profession": "",
+           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
+           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "scoredEmailAddresses": [
+               {
+                   "address": "irenem@contoso.onmicrosoft.com",
+                   "relevanceScore": -16.446060612802224
+               }
+           ],
+           "phones": [
+               {
+                   "type": "Business",
+                   "number": "+1 412 555 0109"
+               }
+           ],
+           "postalAddresses": [],
+           "websites": [],
+           "personType": {
+               "class": "Person",
+               "subclass": "OrganizationUser"
+           }
+       }
+   ]
+}
+```
+
+To learn more about the People API, see [Get information about relevant people](./people-insights-overview.md#search-people).  
+
+## Using $search on directory object collections
+
+Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search implementation does **not** support `contains`. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
+
+- **Spaces**: `hello world` => `hello`, `world`
+- **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
+- **Symbols**⁽²⁾: `hello.world` => `hello`, `.`, `world`, `helloworld`
+- **Numbers**: `hello123world` => `hello`, `123`, `world`
+
+⁽¹⁾ Currently, tokenization only works when the casing is changing from lowercase to uppercase, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` is two tokens: `hello`, `world`.
+⁽²⁾ Tokenization logic also combines words that are separated only by symbols; for example, searching for `helloworld` will find `hello-world` and `hello.world`.
+
+> [!NOTE]
+>
+> - After tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` will match search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
+> - The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
+For example:
+
+
+<!-- {
+  "blockType": "request",
+  "name": "search_groups"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo" OR "mail:onevideo"
+```
 
 This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
 
