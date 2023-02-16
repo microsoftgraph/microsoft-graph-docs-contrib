@@ -36,7 +36,7 @@
         },
         {
           "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "onPremisesSynchronization",
           "ChangeType": "Addition",
           "Description": "Added the **onPremisesSynchronization** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
