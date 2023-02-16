@@ -52,59 +52,67 @@ Successful requests return `200 OK` response codes; the response object includes
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_directory_deleteditem_getuserownedobjects"
+}-->
 ``` http
 POST https://graph.microsoft.com/v1.0/directory/deletedItems/getUserOwnedObjects
 Content-type: application/json
-```
 
-``` json
 {
   "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
   "type":"Group"
 }
 ```
 
-###### Response
+### Response
 
 Here is an example of the response. Note: This response object may be truncated for brevity. All supported properties are returned
 from actual calls.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
 ``` http
-HTTP/1.1 200
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-"value": [
-          {
-              "@odata.type": "#microsoft.graph.group",
-              "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
-              "deletedDateTime": 2018-04-01T12:39:16Z,
-              "classification": null,
-              "createdDateTime": "2017-03-22T12:39:16Z",
-              "description": null,
-              "displayName": "Test",
-              "groupTypes": [
-                  "Unified"
-              ],
-              "mail": "Test@contoso.com",
-              "mailEnabled": true,
-              "mailNickname": "Test",
-              "membershipRule": null,
-              "membershipRuleProcessingState": null,
-              "preferredDataLocation": null,
-              "preferredLanguage": null,
-              "proxyAddresses": [
-                  "SMTP:Test@contoso.com"
-              ],
-              "renewedDateTime": "2017-09-22T22:30:39Z",
-              "securityEnabled": false,
-              "theme": null,
-              "visibility": "Public"
-          } 
-        ]
- }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
+      "deletedDateTime": "2018-04-01T12:39:16Z",
+      "classification": null,
+      "createdDateTime": "2017-03-22T12:39:16Z",
+      "description": null,
+      "displayName": "Test",
+      "groupTypes": [
+        "Unified"
+      ],
+      "mail": "Test@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Test",
+      "membershipRule": null,
+      "membershipRuleProcessingState": null,
+      "preferredDataLocation": null,
+      "preferredLanguage": null,
+      "proxyAddresses": [
+        "SMTP:Test@contoso.com"
+      ],
+      "renewedDateTime": "2017-09-22T22:30:39Z",
+      "securityEnabled": false,
+      "theme": null,
+      "visibility": "Public"
+    }
+  ]
+}
 ```
