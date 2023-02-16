@@ -333,7 +333,7 @@ The following table lists the latency to expect between an event happening in th
 
 | Resource                | Average latency      | Maximum latency |
 |:-------------------------|:----------------------|:-----------------|
-| [alert][]               | Less than 3 minutes  | 5 minutes       |
+| [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
 | [callRecord][]          | Less than 15 minutes | 60 minutes      |
 | [channel][]             | Less than 10 seconds | 60 minutes      |
 | [chat][]                | Less than 10 seconds | 60 minutes      |
@@ -354,8 +354,7 @@ The following table lists the latency to expect between an event happening in th
 | [todoTask][]            | Less than 2 minutes  | 15 minutes      |
 | [user][]                | Less than 2 minutes  | 15 minutes      |
 
-> [!NOTE]
-> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+<sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
 ## Additional resources
 
