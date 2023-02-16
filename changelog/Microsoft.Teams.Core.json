@@ -6210,8 +6210,8 @@
           "Id": "ae5b528b-38cf-473b-8e01-475844067c9c",
           "ApiChange": "Property",
           "ChangedApiName": "content",
-          "ChangeType": "Update",
-          "Description": "Added new emoji support to message body **content** to the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Added new emoji support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource.",
           "Target": "itemBody"
         },
         {
@@ -6232,14 +6232,6 @@
     },
     {
       "ChangeList": [
-        {
-          "Id": "31b9ae7d-a747-4642-9779-1bd60e3951b8",
-          "ApiChange": "Property",
-          "ChangedApiName": "content",
-          "ChangeType": "Update",
-          "Description": "Added new emoji support to message body **content** to the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-1.0) resource.",
-          "Target": "itemBody"
-        },
         {
           "Id": "31b9ae7d-a747-4642-9779-1bd60e3951b8",
           "ApiChange": "Permission",
