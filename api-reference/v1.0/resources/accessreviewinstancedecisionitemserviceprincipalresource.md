@@ -39,9 +39,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessreviewinstancedecisionitemserviceprincipalresource",
-  "id": "String (identifier)",
+  "appId": "String",
   "displayName": "String",
-  "type": "String",
-  "appId": "String"
+  "id": "String (identifier)",
+  "type": "String"
 }
 ```

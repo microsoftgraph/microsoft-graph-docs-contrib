@@ -36,7 +36,7 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
 * Don't add a period at the end of the notification title, to be consistent with all other notification settings in Teams.
 * Make the relationship between the notification and its content clear to the user. For example, when a user receives a notification for approving a leave, the notification should redirect them to the corresponding section of the app. If the notification pertains to removal or deletion of entities, such as users and tasks, direct the recipient to the content and indicate the required action.
 * Make sure that the feed experience is self-contained. For example, any pop-ups and modals must remain in the app.
-* Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
+* Verify that your app does not send more than 20 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 20.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
     > [!NOTE]

@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "roleDefinitionId eq 'b5c08161-a7af-481c-ace2-a20a69a48fb1'"
 
-requestParameters := &graphconfig.RoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.RoleManagementCloudPCRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.RoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RoleManagementCloudPCRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

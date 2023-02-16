@@ -2,7 +2,7 @@
 title: "List riskDetection"
 description: "Retrieve the properties of a collection of **riskDetection** object."
 ms.localizationpriority: medium
-author: "ebasseri"
+author: "tracyshi"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

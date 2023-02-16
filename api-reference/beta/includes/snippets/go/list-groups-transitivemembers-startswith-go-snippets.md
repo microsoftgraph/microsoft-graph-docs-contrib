@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
 
 requestCount := true
 requestFilter := "startswith(displayName,%20'a')"
 
-requestParameters := &graphconfig.UserRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.userRequestBuilderGetQueryParameters{
 	Count: &requestCount,
-	OrderBy: [] string {"displayName"},
+	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.UserRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.userRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

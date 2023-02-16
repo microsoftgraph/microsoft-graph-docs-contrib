@@ -22,6 +22,8 @@ The following is the precedence for how session states are aggregated:
 * User-configured > app-configured (user-configured state overrides others)
 * Among app-configured: DoNotDisturb > Busy > Available > Away
 
+> **Note:** When a user presence changes in Microsoft Graph, because the Teams client uses poll mode, it will take a few minutes to update the presence status.
+
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
 

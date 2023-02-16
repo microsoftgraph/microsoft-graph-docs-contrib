@@ -35,7 +35,7 @@ The following table shows the relationship between different entity types that c
 #### Request
 
 ```HTTP
-POST https://graph.microsoft.com/v1.0/search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -49,9 +49,9 @@ Content-Type: application/json
       "query": {
         "queryString": "contoso"
       },
-      "contentSource":[
+      "contentSources":[
         "/external/connections/*"
-      ]
+      ],
       "from": 0,
       "size": 25
     }

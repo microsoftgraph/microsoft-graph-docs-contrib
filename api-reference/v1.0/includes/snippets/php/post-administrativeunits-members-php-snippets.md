@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new MembersPostRequestBody();
 $additionalData = [
-'@odata.type' => '#Microsoft.Graph.Group', 
+'@odata.type' => '#microsoft.graph.group', 
 'description' => 'Self help community for golf', 
 'displayName' => 'Golf Assist', 
 'groupTypes' => ['Unified', ],

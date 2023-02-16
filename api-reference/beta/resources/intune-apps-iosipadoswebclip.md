@@ -1,7 +1,7 @@
 ---
 title: "iosiPadOSWebClip resource type"
 description: "Contains properties and inherited properties for iOS web apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -52,8 +52,8 @@ Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|appUrl|String|The web app URL.|
-|useManagedBrowser|Boolean|Whether or not to use managed browser. When true, the app will be required to be opened in an Intune-protected browser. When false, the app will not be required to be opened in an Intune-protected browser.|
+|appUrl|String|Indicates iOS/iPadOS web clip app URL. Example: "https://www.contoso.com"|
+|useManagedBrowser|Boolean|Whether or not to use managed browser. When TRUE, the app will be required to be opened in Microsoft Edge. When FALSE, the app will not be required to be opened in Microsoft Edge. By default, this property is set to FALSE.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -106,8 +106,3 @@ Here is a JSON representation of the resource.
   "useManagedBrowser": true
 }
 ```
-
-
-
-
-

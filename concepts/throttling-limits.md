@@ -2,6 +2,8 @@
 title: "Microsoft Graph service-specific throttling limits"
 description: "Identify the throttling limits for each Microsoft Graph service to apply best practices to manage throttling in your application."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jameskitindi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -46,6 +48,17 @@ The preceding limits apply to the following resources:
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
+### Call records limits
+
+The limits listed in the following table apply to the following resource:
+
+- [callRecord](/graph/api/resources/callrecords-callrecord)
+
+| Limit type      | Limit    |
+| -------------- | ------------ |
+| Per tenant | 10,000 requests per 20 seconds |
+| Per application per tenant  | 1,500 requests per 20 seconds |
+| Per call record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
 
 ## Excel service limits
 
@@ -328,7 +341,8 @@ Limits are expressed as requests per second (rps).
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
-A maximum of 3000 messages per app per day can be sent to a given channel.
+A maximum of 3000 messages per app per day can be sent to a given channel 
+(except when using [migration mode](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).

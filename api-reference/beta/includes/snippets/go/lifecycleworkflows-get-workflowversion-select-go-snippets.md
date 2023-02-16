@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.WorkflowVersionRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemVersionItemRequestBuilderGetQueryParameters{
 	Select: [] string {"category","displayName","versionNumber","executionConditions"},
 	Expand: [] string {"tasks"},
 }
-configuration := &graphconfig.WorkflowVersionRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemVersionItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

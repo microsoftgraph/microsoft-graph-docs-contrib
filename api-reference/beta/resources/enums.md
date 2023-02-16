@@ -11,6 +11,91 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### recommendationCategory values 
+
+|Member|
+|:---|
+|identityBestPractice|
+|identitySecureScore|
+|unknownFutureValue|
+
+### recommendationFeatureAreas values 
+
+|Member|
+|:---|
+|users|
+|groups|
+|devices|
+|applications|
+|accessReviews|
+|conditionalAccess|
+|governance|
+|unknownFutureValue|
+
+### recommendationPriority values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+
+### recommendationStatus values 
+
+|Member|
+|:---|
+|active|
+|completedBySystem|
+|completedByUser|
+|dismissed|
+|postponed|
+|unknownFutureValue|
+
+### recommendationType values 
+
+|Member|
+|:---|
+|adfsAppsMigration|
+|enableDesktopSSO|
+|enablePHS|
+|enableProvisioning|
+|switchFromPerUserMFA|
+|tenantMFA|
+|thirdPartyApps|
+|turnOffPerUserMFA|
+|useAuthenticatorApp|
+|useMyApps|
+|staleApps|
+|staleAppCreds|
+|applicationCredentialExpiry|
+|servicePrincipalKeyExpiry|
+|adminMFAV2|
+|blockLegacyAuthentication|
+|integratedApps|
+|mfaRegistrationV2|
+|pwagePolicyNew|
+|passwordHashSync|
+|oneAdmin|
+|roleOverlap|
+|selfServicePasswordReset|
+|signinRiskPolicy|
+|userRiskPolicy|
+|verifyAppPublisher|
+|privateLinkForAAD|
+|appRoleAssignmentsGroups|
+|appRoleAssignmentsUsers|
+|managedIdentity|
+|overprivilegedApps|
+|unknownFutureValue|
+
+### layoutTemplateType values
+
+| Member             |
+|:--------------------|
+| default            |
+| verticalSplit      |
+| unknownFutureValue |
+
 ### conditionalAccessExternalTenantsMembershipKind values
 
 |Member|
@@ -949,6 +1034,46 @@ Namespace: microsoft.graph
 |alternateMobileCall|
 |fido|
 |appPassword|
+|unknownFutureValue|
+
+### authenticationAppAdminConfiguration values
+
+|Member|
+|:---|
+|notApplicable|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### authenticationAppEvaluation values
+
+|Member|
+|:---|
+|success|
+|failure|
+|unknownFutureValue|
+
+### authenticationAppPolicyStatus values
+
+|Member|
+|:---|
+|unknown|
+|appLockOutOfDate|
+|appLockEnabled|
+|appLockDisabled|
+|appContextOutOfDate|
+|appContextShown|
+|appContextNotShown|
+|locationContextOutOfDate|
+|locationContextShown|
+|locationContextNotShown|
+|numberMatchOutOfDate|
+|numberMatchCorrectNumberEntered|
+|numberMatchIncorrectNumberEntered|
+|numberMatchDeny|
+|tamperResistantHardwareOutOfDate|
+|tamperResistantHardwareUsed|
+|tamperResistantHardwareNotUsed|
 |unknownFutureValue|
 
 ### authenticationMethodKeyStrength values
@@ -2647,6 +2772,22 @@ Possible values for user account types (group membership), per Windows definitio
 |delinked           |
 |unknownFutureValue |  
 
+### plannerExternalTaskSourceDisplayType values
+
+|Member|
+|:---|
+|none|
+|default|
+|unknownFutureValue|
+
+### plannerCreationSourceKind values
+
+|Member|
+|:---|
+|none|
+|external|
+|publication|
+|unknownFutureValue|
 
 ### policyScope values
 
@@ -2998,7 +3139,7 @@ Possible values for user account types (group membership), per Windows definitio
 |externalGuest|
 |unknownFutureValue|
 |scheduler|
-|member|
+|teamMember|
 
 ### bookingReminderRecipients values 
 
@@ -3398,4 +3539,69 @@ Possible values for user account types (group membership), per Windows definitio
 |actionUndefined|
 |unknownFutureValue|
 
+### plannerRelationshipUserRoles values
 
+|Member|
+|:---|
+|defaultRules|
+|groupOwners|
+|groupMembers|
+|taskAssignees|
+|applications|
+|unknownFutureValue|
+
+### plannerRuleKind values
+
+|Member|
+|:---|
+|taskRule|
+|bucketRule|
+|planRule|
+|unknownFutureValue|
+
+### plannerUserRoleKind values
+
+|Member|
+|:---|
+|relationship|
+|unknownFutureValue|
+
+### plannerTaskTargetKind values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
+### onPremisesDirectorySynchronizationDeletionPreventionType values
+
+|Member|
+|:-----|
+|disabled|
+|enabledForCount|
+|enabledForPercentage|
+|enabledForPercentage|
+|unknownFutureValue|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:-----|
+|group|
+|unknownFutureValue|
+
+### authenticationMethodsPolicyMigrationState values
+
+|Member|
+|:-----|
+|premigration|
+|migrationInProgress|
+|migrationComplete|
+
+### authenticationEventType values
+
+|Member|
+|:---|
+|tokenIssuanceStart|
+|pageRenderStart|
+|unknownFutureValue|

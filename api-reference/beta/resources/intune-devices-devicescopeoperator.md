@@ -1,7 +1,7 @@
 ---
 title: "deviceScopeOperator enum type"
 description: "Device scope configuration query operator. Possible values are: equals, notEquals, contains, notContains, greaterThan, lessThan. Default value: equals."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,8 +23,3 @@ Device scope configuration query operator. Possible values are: equals, notEqual
 |none|0|No operator set for the device scope configuration.|
 |equals|1|Operator for the device configuration query to be used (Equals).|
 |unknownFutureValue|2|Placeholder value for future expansion enums such as notEquals, contains, notContains, greaterThan, lessThan.|
-
-
-
-
-
