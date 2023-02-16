@@ -388,7 +388,7 @@ The following table lists the latency to expect between an event happening in th
 [list]: /graph/api/resources/list
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
-[To Do task]: /graph/api/resources/todotask
+[todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
