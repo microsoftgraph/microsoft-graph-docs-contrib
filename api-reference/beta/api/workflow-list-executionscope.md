@@ -13,9 +13,13 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lists the users who are in the scope of the execution conditions of a [workflow](../resources/identitygovernance-workflow.md). Users who initially fall in the scope of the execution conditions, but are updated to no longer meet the conditions after it's scheduled to run, will remain on the list for a short period of time before being removed. If the execution scope is changed, users who initially met it's conditions, but no longer do so will be cleared from the list after a short period of time. New users who meet the conditions for the workflow will then be listed.
+List the users that currently meet the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) regardless of whether they have already been processed by the [workflow](../resources/identitygovernance-workflow.md).
 
-This API call requires workflow scheduling to be enabled.
+The users are not determined in real time in the course of the API call, but periodically in the backend, there will be delays until the result is accurate if the execution conditions have been changed recently, relevant attributes on the user have been changed recently or the [time based trigger](../resources/identitygovernance-timebasedattributetrigger) has been reached recently.
+
+Since the [time based trigger](../resources/identitygovernance-timebasedattributetrigger) is a time window that looks back three days, the result of this API call will also return users whose execution day is slightly in the past.
+
+No results are retruned for workflwos with [on-demand execution conditions](../resources/identitygovernance-ondemandexecutiononly.md).
 
 ## Permissions
 
