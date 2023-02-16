@@ -19,7 +19,9 @@ The users are not determined in real time in the course of the API call, but per
 
 Since the [time based trigger](../resources/identitygovernance-timebasedattributetrigger) is a time window that looks back three days, the result of this API call will also return users whose execution day is slightly in the past.
 
-No results are retruned for workflwos with [on-demand execution conditions](../resources/identitygovernance-ondemandexecutiononly.md).
+No results are retruned for workflows if the schedule is disabled.
+
+No results are retruned for workflows with [on-demand execution conditions](../resources/identitygovernance-ondemandexecutiononly.md).
 
 ## Permissions
 
