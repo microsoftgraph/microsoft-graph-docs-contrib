@@ -109,7 +109,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBASCc=\"",
-      "id": "iz1mmIxX7EK0Yj7DmRsMs2QAEDXH",,
+      "id": "iz1mmIxX7EK0Yj7DmRsMs2QAEDXH",
       "name": "This is a bucket",
       "planId": "-W4K7hIak0WlAwgJCn1sEWQABgjH",
       "orderHint": "8585371316800245114P\\",

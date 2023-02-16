@@ -197,7 +197,6 @@ Content-Type: application/json
         "version": "1-TaskDetails @@@@@@@@@@@@@@@D"
       }
     },
-    ...
   ]
 }
 ```
@@ -330,7 +329,6 @@ Content-Type: application/json
         "version": "1-TaskDetails @@@@@@@@@@@@@@@D"
       }
     },
-    ...
   ]
 }
 ```

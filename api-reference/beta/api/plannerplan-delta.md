@@ -92,27 +92,13 @@ Content-Type: application/json
     {
       "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBASCc=\"",
       "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
       "title": "Test plan",
-      "contexts": {
-        "@odata.type": "microsoft.graph.plannerPlanContextCollection"
-      },
       "container": {
         "@odata.type": "microsoft.graph.plannerPlanContainer",
         "url": "https://graph.microsoft.com/beta/planner/rosters/-W4K7hIak0WlAwgJCn1sEWQABgjH",
         "containerId": "-W4K7hIak0WlAwgJCn1sEWQABgjH",
         "type": "roster"
-      },
-      "creationSource": {
-        "@odata.type": "microsoft.graph.plannerPlanCreation"
-      },
-      "sharedWithContainers": [
-        {
-          "@odata.type": "microsoft.graph.plannerSharedWithContainer"
-        }
-      ]
+      }
     }
   ]
 }
@@ -154,27 +140,13 @@ Content-Type: application/json
     {
       "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBASCc=\"",
       "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
       "title": "Test plan",
-      "contexts": {
-        "@odata.type": "microsoft.graph.plannerPlanContextCollection"
-      },
       "container": {
          "@odata.type": "microsoft.graph.plannerPlanContainer",
          "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
          "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
          "type": "group"
-      },
-      "creationSource": {
-        "@odata.type": "microsoft.graph.plannerPlanCreation"
-      },
-      "sharedWithContainers": [
-        {
-          "@odata.type": "microsoft.graph.plannerSharedWithContainer"
-        }
-      ]
+      }
     }
   ]
 }
