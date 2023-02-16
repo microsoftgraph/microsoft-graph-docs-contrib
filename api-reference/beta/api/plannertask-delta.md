@@ -3,7 +3,7 @@ title: "plannerTask: delta"
 description: "Get newly created, updated, or deleted tasks in either a planner plan or assigned to the signed in user without having to perform a full read of the entire resource collection. See Using Delta Query for details."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
-ms.prod: "tasks-and-plans"
+ms.prod: "planner"
 doc_type: apiPageType
 ---
 

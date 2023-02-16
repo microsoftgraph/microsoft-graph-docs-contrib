@@ -3,7 +3,7 @@ title: "plannerBucket: delta"
 description: "Get newly created, updated, or deleted buckets in a planner plan without having to perform a full read of the entire resource collection. See Using Delta Query for details."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
-ms.prod: "tasks-and-plans"
+ms.prod: "planner"
 doc_type: apiPageType
 ---
 
