@@ -10,7 +10,7 @@ ms.prod: "search"
 
 This article describes how you can use application permissions with the Microsoft Search API in Microsoft Graph to search SharePoint content. Application permissions are different than delegated permissions in that they enable the application owner to search all content in their SharePoint sites. 
 
-Performing a search with application permission is limited to one geographic region. You must specify a value for the **region** property in your request when you use application permissions to run a search.For details about how to get the **region** value, see [Get the region value](/sharepoint/dev/docs/solution-guidance/multigeo-discovery).
+Performing a search with application permission is limited to one geographic region. You must specify a value for the **region** property in your request when you use application permissions to run a search.For details about how to get the **region** value, see [Get the region value](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 By default, private content search is disabled for customers with application permissions. For details about how to enable private content search, see [Example 2: Include all private content](#example-2-include-all-private-content).
 
