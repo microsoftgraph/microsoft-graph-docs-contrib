@@ -1225,7 +1225,7 @@ Content-type: application/json
 
 The following is an example of the request.
 
-> **Note:** The base64Encoded value for the **contentBytes** property was truncated for readability.
+> **Note:** The Base64-encoded value for the **contentBytes** property is truncated for readability.
 
 <!-- {
   "blockType": "request",
