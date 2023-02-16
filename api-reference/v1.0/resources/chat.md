@@ -119,7 +119,7 @@ The following is a JSON representation of the resource.
 - [channel](channel.md)
 - [chatMessage](chatmessage.md)
 - [Chat lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/csharp)
-- [Chat lifecycle  Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/nodejs)
+- [Chat lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/nodejs)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
