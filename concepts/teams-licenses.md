@@ -161,7 +161,7 @@ A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Contr
 
 ## Estimate the number of messages in your Microsoft Teams
 
-This section describes how to look up the number of messages in your Microsoft Teams.  This is useful when you haven't used the metered APIs yet and just want to have a high level estimate of what the cost would be when you start using the metered APIs.
+This section describes how to look up the number of messages in your Microsoft Teams.  This is useful when you haven't used the metered APIs yet and just want to have a high level estimate of what the cost would be when you start using the metered APIs.  Please note that if a message is retrieved through the metered APIs multitple times, it will be billed multiple times, so keep that in mind when estimating the cost based on the number of messages in your Microsoft Teams.  When using the metered APIs, it is recommended to use filters (e.g. `$top=10`, `$filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z`) and/or [change notifications](/graph/teams-change-notification-in-microsoft-teams-overview) to avoid retrieving the same message multiple times.
 
 One way is to call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail) API.
 
