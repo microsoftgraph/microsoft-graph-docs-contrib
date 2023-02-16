@@ -1,7 +1,7 @@
 ---
 title: "Create registeredUser"
 description: "Add a registered user for the device."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
