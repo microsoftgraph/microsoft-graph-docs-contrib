@@ -802,7 +802,7 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 > - No rights to reset user passwords.
 > - Updating another user's **businessPhones**, **mobilePhone**, or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Message Center Reader and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD available roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
 > - No rights to delete resources (including users or groups).
-> - Specifically excludes create or update for resources not listed above. This includes: application, oAauth2Permissiongrant, appRoleAssignment, device, servicePrincipal, organization, domains, and so on.
+> - Specifically excludes create or update for resources not listed above. This includes: application, oAuth2PermissionGrant, appRoleAssignment, device, servicePrincipal, organization, domains, and so on.
 
 
 ### Example usage
@@ -818,6 +818,24 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Directory recommendations permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DirectoryRecommendations.Read.All_ | Read all recommendations | Allows the  app to read recommendations on behalf of the signed-in user. | Yes | No |
+| _DirectoryRecommendations.ReadWrite.All_ | Manage all recommendations | Allows the  app to read and write recommendations on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _DirectoryRecommendations.Read.All_ | Read all recommendations | Allows the  app to read recommendations without a signed-in user. | Yes |
+| _DirectoryRecommendations.ReadWrite.All_ | Manage all recommendations | Allows the  app to read and write recommendations without a signed-in user. | Yes |
 
 ---
 
@@ -1824,7 +1842,6 @@ _ProgramControl.Read.All_ and _ProgramControl.ReadWrite.All_ are valid only for 
 
 For an app with delegated permissions to read programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.  For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
----
 ## Records management permissions
 
 #### Delegated permissions
