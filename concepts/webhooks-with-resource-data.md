@@ -605,12 +605,6 @@ let decryptedPayload = decipher.update(base64encodedPayload, 'base64', 'utf8');
 decryptedPayload += decipher.final('utf8');
 ```
 
-## Code sample
-
-| **Sample name** | **Description** | **C#**  | **Node.js**   |
-|:---------------------|:--------------|:---------|:--------|
-|Graph Meeting Notification | Demonstrates how to use  online meeting subscription and sends you the notifications in chat using bot. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/nodejs)|
-
 ## See also
 
 - [Set up notifications for changes in user data](webhooks.md)
@@ -620,3 +614,5 @@ decryptedPayload += decipher.final('utf8');
 - [Update subscription](/graph/api/subscription-update)
 - [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md)
 - [Change notifications for online meetings in Microsoft Graph](changenotifications-for-onlinemeeting.md)
+- [Graph meeting notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
+- [Graph meeting notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/nodejs)
