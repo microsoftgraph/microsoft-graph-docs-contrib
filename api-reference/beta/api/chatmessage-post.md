@@ -1458,7 +1458,7 @@ Content-type: application/json
         "device": null,
         "user": {
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Sumana Chakrabarti",
+            "displayName": "Test user",
             "userIdentityType": "aadUser"
         }
     },
