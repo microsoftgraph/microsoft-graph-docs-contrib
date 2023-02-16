@@ -3141,6 +3141,32 @@
       "SubArea": ""
   },
   {
+    "ChangeList": [
+        {
+            "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+            "ApiChange": "Method",
+            "ChangedApiName": "activateServicePlan",
+            "ChangeType": "Removal",
+            "Description": "Removed the previously deprecated **activateServicePlan** method (`/users/{id | userPrincipalName}/activateServicePlan` endpoint) from the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method stopped returning data on June 30th, 2022.",
+            "Target": "user"
+        },
+        {
+            "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+            "ApiChange": "Method",
+            "ChangedApiName": "activateService",
+            "ChangeType": "Removal",
+            "Description": "Removed the previously deprecated **activateService** method (`/organization/{id}/activateService` endpoint) from the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method stopped returning data on June 30th, 2022.",
+            "Target": "organization"
+        }
+    ],
+    "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2023-02-24T00:00:00.353Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
+  },
+  {
       "ChangeList": [
           {
               "Id": "3dc0432a-06f5-11ec-88de-83063b88343d",
