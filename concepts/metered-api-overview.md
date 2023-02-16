@@ -41,5 +41,5 @@ Keep the following considerations in mind when you use metered Microsoft 365 API
 
 ## See also
 
-- [List of metered Microsoft 365 APIs and services](/graph/metered-api-list)
+- [Metered Microsoft 365 APIs and services](/graph/metered-api-list)
 - [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding)
