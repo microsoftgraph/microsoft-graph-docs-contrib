@@ -125,7 +125,10 @@ Content-Type: application/json
                     "id": "all_users",
                     "targetType": "group",
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
-                }
+                },
+                "systemCredentialPreferences": {
+            "@odata.type": "microsoft.graph.systemCredentialPreferences"
+                
             ]
         }
     },
