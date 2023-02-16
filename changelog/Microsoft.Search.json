@@ -1511,15 +1511,7 @@
     {
       "ChangeList": [
         {
-          "Id": "304326e5-a2ef-478d-9a27-cd7b950dfbaa",
-          "ApiChange": "Member",
-          "ChangedApiName": "chatMessage",
-          "ChangeType": "Addition",
-          "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
-          "Target": "entityType"
-        },
-        {
-          "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
+          "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
           "ApiChange": "Enum type",
           "ChangedApiName": "searchContent",
           "ChangeType": "Addition",
@@ -1530,7 +1522,7 @@
           "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
           "ApiChange": "Property",
           "ChangedApiName": "region",
-          "ChangeType": "Change",
+          "ChangeType": "Addition",
           "Description": "Added the **region** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
           "Target": "searchRequest"
         },
