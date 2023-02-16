@@ -169,5 +169,5 @@ An active participant is represented as follows:
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - [Online meeting resource](/graph/api/resources/onlineMeeting)
-- [Microsoft Graph meeting notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
-- [Microsoft Graph meeting notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
+- [Meeting notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
+- [Meeting notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
