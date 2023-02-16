@@ -47,16 +47,16 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 >**Note:** 
 > + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
 > + When the `$levels` parameter is not specified, only the immediate manager is returned.  
-> + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`.
+> + You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`.
 > + `$levels` parameter is only supported on a single user (`/users/{id}` or `me` endpoints) and not on the entire list of users.
-> + `$levels` requires the **ConsistencyLevel** header set to `eventual` and `$count=true` in query string. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+> + `$levels` requires the **ConsistencyLevel** header set to `eventual`. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| ConsistencyLevel | eventual. Required when the request includes the `$count=true` query string. |
+| ConsistencyLevel | eventual. Required when the request includes the `$levels=n` in the `$expand` query parameter. |
 
 ## Request body
 
@@ -144,7 +144,7 @@ The following example shows a request to get the manager chain up to the root le
   "name": "get_transitive_managers"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
+GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName
 ConsistencyLevel: eventual
 ```
 
