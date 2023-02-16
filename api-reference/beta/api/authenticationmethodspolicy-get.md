@@ -127,8 +127,7 @@ Content-Type: application/json
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
                 },
                 "systemCredentialPreferences": {
-            "@odata.type": "microsoft.graph.systemCredentialPreferences"
-                
+            "@odata.type": "microsoft.graph.systemCredentialPreferences"                
             ]
         }
     },
