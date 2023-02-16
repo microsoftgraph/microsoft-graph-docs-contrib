@@ -60,33 +60,33 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
 
   A successful JSON result will look something like this:
 
-    ```
-    {
-      "extendedLocation": null,
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
-      "identity": null,
-      "kind": null,
-      "location": "Global",
-      "managedBy": null,
-      "name": "myGraphAppBilling",
-      "plan": null,
-      "properties": {
-        "appId": "00000000-0000-0000-0000-000000000000",
-        "billingPlanId": "00000000-0000-0000-0000-000000000000",
-        "provisioningState": "Succeeded"
-      },
-      "resourceGroup": "myRG",
-      "sku": null,
-      "systemData": {
-        "createdAt": "2023-01-31T00:12:20.7893671Z",
-        "createdByType": "User",
-        "lastModifiedAt": "2023-01-31T00:12:20.7893671Z",
-      "lastModifiedByType": "User"
-    },
-    "tags": null,
-    "type": "microsoft.graphservices/accounts"
-  }
-  ```
+```
+{
+  "extendedLocation": null,
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+  "identity": null,
+  "kind": null,
+  "location": "Global",
+  "managedBy": null,
+  "name": "myGraphAppBilling",
+  "plan": null,
+  "properties": {
+    "appId": "00000000-0000-0000-0000-000000000000",
+    "billingPlanId": "00000000-0000-0000-0000-000000000000",
+    "provisioningState": "Succeeded"
+  },
+  "resourceGroup": "myRG",
+  "sku": null,
+  "systemData": {
+    "createdAt": "2023-01-31T00:12:20.7893671Z",
+    "createdByType": "User",
+    "lastModifiedAt": "2023-01-31T00:12:20.7893671Z",
+    "lastModifiedByType": "User"
+  },
+  "tags": null,
+  "type": "microsoft.graphservices/accounts"
+}
+```
 
 ## Consume metered APIs in your application
 After you associate your application registration and subscription, your application can start using metered Microsoft 365 APIs and services. Costs generated from those requests will be charged to the Azure subscription associated with the application.
