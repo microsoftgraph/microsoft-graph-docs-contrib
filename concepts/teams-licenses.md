@@ -27,7 +27,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Active pricing events for these APIs started on July 5th, 2022.  Please follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for each of your application for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
+> Billing for these APIs started on July 5th, 2022.  Please follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for each of your application for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
 
 > [!NOTE]
 > Most of these APIs are also [Protected APIs](/graph/teams-protected-apis), which require approvals from Microsoft before you can use them.  If your application is using any of the Protected APIs, please also submit a request for approvals by completing [this form](https://aka.ms/teamsgraph/requestaccess).  For more details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -153,15 +153,15 @@ For more details about cost management, see [Cost Management + Billing documenta
 
 ## Monitor the number of messages billed for the metered Microsoft Teams APIs
 
-This section describes how to monitor the number of messages billed for the metered Microsoft Teams APIs.  Unlike the previous section, this allows you to analyze also the usage of the messages within the seeded capacity, not just above the seeded capacity for billing, if applicable to the selected licensing models.
+This section describes how to monitor the number of messages billed for the metered Microsoft Teams APIs.  Unlike with Cost Analysis (described above), this allows you to analyze also the usage of the messages within the seeded capacity, not just above the seeded capacity for billing, if applicable to the selected licensing models.
 
-A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can set up a report, in CSV format, with the billing details for the entire subscription.  The CSV file can be exported periodically (e.g. daily, weekly, monthly).  Please see [Tutorial: Create and manage exported data](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal) for a tutorial video and other related details.
+A subscription owner, or anyone with required [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can set up a report, in CSV format, with the billing details for the entire subscription.  The report can be exported periodically (e.g. daily, weekly, monthly).  Please see [Tutorial: Create and manage exported data](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal) for a tutorial video and other related details.
 
 ![Screenshot of Export CSV file](images/teams-export-csv-sample.png)
 
 ## Estimate the number of messages in your Microsoft Teams
 
-This section describes how to look up the number of messages in your Microsoft Teams.  This is useful when you haven't used the metered APIs yet and just want to have a high level estimate of what the cost would be when you start using the metered APIs.  Please note that if a message is retrieved through the metered APIs multitple times, it will be billed multiple times, so keep that in mind when estimating the cost based on the number of messages in your Microsoft Teams.  When using the metered APIs, it is recommended to use filters (e.g. `$top=10`, `$filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z`) and/or [change notifications](/graph/teams-change-notification-in-microsoft-teams-overview) to avoid retrieving the same message multiple times.
+This section describes how to look up the number of messages in your Microsoft Teams.  This is useful when you considering using the metered APIs and want to estimate the cost for using these APIs.  Please note that if a message is retrieved through the metered APIs multitple times, it will be billed multiple times, so keep that in mind when estimating the cost based on the number of messages in your Microsoft Teams.  For example, if you called `getAllMessages` (without any filters) yesterday to get all the messages in your Microsoft Teams, and then call it again (without any filters) today, all messages older than today will be billed twice.  Thus, when using the metered APIs, it is recommended to use filters (e.g. `$top=10`, `$filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z`) and/or [change notifications](/graph/teams-change-notification-in-microsoft-teams-overview) to avoid retrieving the same message multiple times.
 
 One way is to call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail) API.
 
