@@ -74,9 +74,11 @@ See:</br>
 
 ## Examples
 
-### Request
+### Example 1: Get delta on buckets in a plan
 
-The following is an example of a request.
+The following example shows a request for delta on **plannerBucket** objects in by a **plannerPlan**.
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -88,7 +90,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/buckets/delta
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 

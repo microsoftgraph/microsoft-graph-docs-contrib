@@ -54,9 +54,11 @@ If successful, this function returns a `200 OK` response code and a [plannerPlan
 
 ## Examples
 
-### Request
+### Example 1: Get delta on plans in a plannerRoster
 
-The following is an example of a request for delta on plannerPlan objects contained by a plannerRoster object.
+The following example shows a request for delta on **plannerPlan** objects contained by a **plannerRoster**.
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -65,10 +67,10 @@ The following is an example of a request for delta on plannerPlan objects contai
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/planner/rosters/{plannerRosterId}/plans/delta
+GET https://graph.microsoft.com/beta/planner/rosters/-W4K7hIak0WlAwgJCn1sEWQABgjH/plans/delta
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -104,7 +106,11 @@ Content-Type: application/json
 }
 ```
 
-The following is an example of a request for delta on plannerPlan objects contained by a group object.
+### Example 2: Get delta on plans in a group
+
+The following example shows a request for delta on **plannerPlan** objects contained by a group.
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -116,7 +122,7 @@ The following is an example of a request for delta on plannerPlan objects contai
 GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874/planner/plans/delta
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 

@@ -69,9 +69,11 @@ If successful, this function returns a `200 OK` response code and a [plannerTask
 
 ## Examples
 
-### Request
+### Example 1: Get delta on tasks in a plannerPlan
 
-The following is an example of a request for the delta on tasks in a plannerPlan.
+The following example shows a request for the delta on **plannerTask** objects in a **plannerPlan**.
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -83,7 +85,7 @@ The following is an example of a request for the delta on tasks in a plannerPlan
 GET https://graph.microsoft.com/beta/planner/tasks/delta
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -201,9 +203,11 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Example 2: Get delta on tasks assigned to a user
 
-The following is an example of a request for the delta on tasks assigned to a user.
+The following example shows a request for the delta on **plannerTask** objects assigned to a user.
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -215,7 +219,7 @@ The following is an example of a request for the delta on tasks assigned to a us
 GET https://graph.microsoft.com/beta/me/planner/tasks/delta
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 
