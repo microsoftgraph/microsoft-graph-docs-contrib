@@ -20,6 +20,7 @@ The custom authentication strength enforced in a Conditional Access policy.
 |:---|:---|:---|
 |authenticationStrengthId|String|Identifier of the authentication strength.|
 |displayName|String|The name of the authentication strength.|
+|authenticationStrengthResult|Result of the authentication strength. The possible values are: `notSet`, `skippedForProofUp`, `satisfied`, `singleChallengeRequired`, `multipleChallengesRequired`, `singleRegistrationRequired`, `multipleRegistrationsRequired`, `cannotSatisfyDueToCombinationConfiguration`, `cannotSatisfy`, `unknownFutureValue`.|
 
 ## Relationships
 None.
