@@ -1,37 +1,35 @@
 ---
-title: "Get signIn"
+title: "Get application credential last used activity date"
 doc_type: apiPageType
-description: "Get a signIn object that contains all sign-ins for an Azure Active Directory tenant."
+description: "Get a appCredentialSignInActivity object that contains recent activity of an application credential."
 localization_priority: Normal
-author: "khotz"
+author: "madansr7"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Get signIn
+# Get appCredentialSignInActivity
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant. This includes sign-ins where a user is asked to enter a username or password, and session tokens.
+Get a [appCredentialSignInActivity](../resources/appCredentialSignInActivity.md) object that contains recent activity of an application credential.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All | 
-
-In addition, apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | AuditLog.Read.All, Directory.Read.All       |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /auditLogs/signIns/{id}
+GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/{id}
 ```
 
 ## Optional query parameters
@@ -40,8 +38,8 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -50,11 +48,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [signIn](../resources/signin.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [signIn](../resources/appCredentialSignInActivity.md) object in the response body.
 
 ## Examples
 
-### Example 1: User signs in using MFA, which is triggered by a conditional access policy. Primary authentication is through FIDO.
+### Example 1: Get appCredentialSignInActivities by entity id.
 
 #### Request
 
@@ -67,22 +65,8 @@ The following is an example of the request.
   "name": "get_signin_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
+GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/{id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 The following is an example of the response.
@@ -101,112 +85,25 @@ Content-length: 211
 
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-    "value": [
-        {
-            "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
-            "userDisplayName": "Test contoso",
-            "userPrincipalName": "testaccount1@contoso.com",
-            "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
-            "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
-            "appDisplayName": "Graph explorer",
-            "authenticationRequirement": "MultifactorAuthentication",
-            "ipAddress": "131.107.159.37",
-            "clientAppUsed": "Browser",
-            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
-            "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
-            "conditionalAccessStatus": "notApplied",
-            "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-            "isInteractive": true,
-            "tokenIssuerName": "",
-            "tokenIssuerType": "AzureAD",
-            "processingTimeInMilliseconds": 541,
-            "riskDetail": "none",
-            "riskLevelAggregated": "none",
-            "riskLevelDuringSignIn": "none",
-            "riskState": "none",
-            "riskEventTypes": [],
-            "riskEventTypes_v2": [],
-            "resourceDisplayName": "Microsoft Graph",
-            "resourceId": "00000003-0000-0000-c000-000000000000",
-            "authenticationMethodsUsed": [],
-            "alternateSignInName": "testaccount2@contoso.com",
-            "servicePrincipalName": null,
-            "servicePrincipalId": "",
-            "mfaDetail": null,
-            "status": {
-                "errorCode": 0,
-                "failureReason": null,
-                "additionalDetails": null
-            },
-            "deviceDetail": {
-                "deviceId": "",
-                "displayName": null,
-                "operatingSystem": "Windows 10",
-                "browser": "Edge 80.0.361",
-                "isCompliant": null,
-                "isManaged": null,
-                "trustType": null
-            },
-            "location": {
-                "city": "Redmond",
-                "state": "Washington",
-                "countryOrRegion": "US",
-                "geoCoordinates": {
-                    "altitude": null,
-                    "latitude": 47.68050003051758,
-                    "longitude": -122.12094116210938
-                }
-            },
-            "appliedConditionalAccessPolicies": [
-                {
-                    "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
-                    "displayName": "SharePoint limited access for guest workers",
-                    "enforcedGrantControls": [],
-                    "enforcedSessionControls": [],
-                    "result": "notEnabled",
-                    "conditionsSatisfied": "none",
-                    "conditionsNotSatisfied": "none"
-                },
-                {
-                    "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
-                    "displayName": "Medium signin risk block",
-                    "enforcedGrantControls": [],
-                    "enforcedSessionControls": [],
-                    "result": "notEnabled",
-                    "conditionsSatisfied": "none",
-                    "conditionsNotSatisfied": "none"
-                },
-               
-            ],
-            "authenticationProcessingDetails": [],
-            "networkLocationDetails": [],
-            "authenticationDetails": [
-                    {
-			  "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
-			  "authenticationMethod":"FIDO2",
-			  "authenticationMethodDetail":"1G54395783",
-			  "succeeded":true,
-			  "authenticationStepResultDetail":"methodSucceeded",
-			  "authenticationStepRequirement":"Primary authentication"
-			},
-			{
-			  "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
-			  "authenticationMethod":"Claim in access token",
-			  "authenticationMethodDetail":null,
-			  "succeeded":true,
-			  "authenticationStepResultDetail":"methodSucceeded",
-			  "authenticationStepRequirement":"MFA"
-			}
-            ],
-            "authenticationRequirementPolicies": []
-        }
-    ]
+  "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u",
+  "keyId": "83f45296-fb8f-4aaa-a399-ac51084e02b7",
+  "keyType":"certificate",
+  "keyUsage": "sign",
+  "appId": "f4d9654f-0305-4072-878c-8bf266dfe146",
+  "appObjectId": "6920caa5-1cae-4bc8-bf59-9c0b8495d240",
+  "servicePrincipalObjectId": "cf533854-9fb7-4c01-9c0e-f68922ada8b6",
+  "resourceId": "a89dc091-a671-4da4-9fcf-3ef06bdf3ac3",
+  "credentialOrigin": "application",
+  "expirationDate": "2021-04-01T21:36:48-8:00",
+  "signInActivity": {
+    "lastSignInDateTime": "2021-04-01T00:00:00-8:00",
+    "lastSignInRequestId": "b0a282a3-68ec-4ec8-aef0-290ed4350271"
+  }
 }
+
 ```
 
-### Example 2: User signs in with only primary authentication. Primary authentication is through cloud password.
+### Example 2:  Get appCredentialSignInActivities for a credential by keyId
 
 #### Request
 
@@ -214,122 +111,77 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_signin_2"
-}-->
+
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
+GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filter=keyId eq '{keyId}'
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
 
 The following is an example of the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.signIn"
-} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u",
+  "keyId": "83f45296-fb8f-4aaa-a399-ac51084e02b7",
+  "keyType":"secret",
+  "keyUsage": "sign",
+  "appId": "f4d9654f-0305-4072-878c-8bf266dfe146",
+  "appObjectId": "6920caa5-1cae-4bc8-bf59-9c0b8495d240",
+  "servicePrincipalObjectId": "cf533854-9fb7-4c01-9c0e-f68922ada8b6",
+  "resourceId": "a89dc091-a671-4da4-9fcf-3ef06bdf3ac3",
+  "credentialOrigin": "application",
+  "expirationDate": "2021-04-01T21:36:48-8:00",
+  "signInActivity": {
+    "lastSignInDateTime": "2021-04-01T00:00:00-8:00",
+    "lastSignInRequestId": "b0a282a3-68ec-4ec8-aef0-290ed4350271"
+  }
+}
+```
+
+
+### Example 3:  Get appCredentialSignInActivities for an application by appId
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filter=appId eq '{appId}'
+```
+
+
+
+#### Response
+
+The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 211
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-  "value": [
-    {
-      "id":"b01b1726-0147-425e-a7f7-21f252050400",
-      "createdDateTime":"2018-11-06T18:48:33.8527147Z",
-      "userDisplayName":"Jon Doe",
-      "userPrincipalName":"jdoe@contoso.com",
-      "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
-      "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
-      "appDisplayName":"Azure Portal",
-       "authenticationRequirement": "singleFactorAuthentication",
-      "ipAddress":"207.254.19.10",
-      "clientAppUsed":"Browser",
-      "authenticationDetails": [
-        {
-          "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
-          "authenticationMethod":"Password",
-          "authenticationMethodDetail":"Cloud password",
-          "succeeded":true,
-          "authenticationStepResultDetail":"methodSucceeded",
-          "authenticationStepRequirement":"Primary authentication"
-        }
-      ],
-      "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
-      "conditionalAccessStatus":"applied",
-      "isInteractive":true,
-      "tokenIssuerName":null,
-      "tokenIssuerType":"AzureAD",
-      "processingTimeInMilliseconds":100,
-      "riskDetail":"none",
-      "riskLevelAggregated":"none",
-      "riskLevelDuringsignIn":"none",
-      "riskState":"none",
-      "riskEventTypes":[],
-      "resourceDisplayName":"windows azure service management api",
-      "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
-      "status":{},
-      "deviceDetail": {
-        "deviceId":null,
-        "displayName":null,
-        "operatingSystem":"Windows 7",
-        "browser":"Chrome 63.0.3239",
-        "isCompliant":null,
-        "isManaged":null,
-        "trustType":null
-      },
-      "location": {
-        "city":"Lithia Springs",
-        "state":"Georgia",
-        "countryOrRegion":"US",
-        "geoCoordinates": {
-          "altitude":null,
-          "latitude":33.7930908203125,
-          "longitude":-84.445358276367188
-        }
-      },
-      "appliedConditionalAccessPolicies": [
-        {
-          "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
-          "displayName":"MFA policy",
-          "enforcedGrantControls": [
-            "Mfa",
-            "RequireCompliantDevice"
-          ],
-          "enforcedSessionControls":[],
-          "result":"notApplied"
-        },
-        {
-          "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
-          "displayName":"PipelineTest4",
-          "enforcedGrantControls":[],
-          "enforcedSessionControls":[],
-          "result":"notEnabled"
-        }
-      ],
-      "authenticationProcessingDetails":[],
-      "networkLocationDetails":[]
-    }
-  ]
+  "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u",
+  "keyId": "83f45296-fb8f-4aaa-a399-ac51084e02b7",
+  "keyType":"secret",
+  "keyUsage": "sign",
+  "appId": "f4d9654f-0305-4072-878c-8bf266dfe146",
+  "resourceId": "a89dc091-a671-4da4-9fcf-3ef06bdf3ac3",
+  "credentialOrigin": "application",
+  "expirationDate": "2021-04-01T21:36:48-8:00",
+  "signInActivity": {
+    "lastSignInDateTime": "2021-04-01T00:00:00-8:00",
+    "lastSignInRequestId": "guid1"
+  }
 }
+
+```
 ```
