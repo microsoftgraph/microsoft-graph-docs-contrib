@@ -1,10 +1,10 @@
 ---
 title: "governanceRuleSetting resource type"
 description: "Represents the rules that the role settings are composed of."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "shauliu"
+ms.prod: "governance"
+author: "rkarim-ms"
 ---
 
 # governanceRuleSetting resource type
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Represents the rules that the role settings are composed of.
 

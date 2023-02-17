@@ -1,8 +1,8 @@
 ---
 title: "mediaStream resource type"
 description: "The mediaStream type"
-localization_priority: Normal
-author: "stephenjust"
+ms.localizationpriority: medium
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -17,6 +17,7 @@ Represents information about a media stream between two endpoints in a call.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|audioCodec|microsoft.graph.callRecords.audioCodec|Codec name used to encode audio for transmission on the network. Possible values are: `unknown`, `invalid`, `cn`, `pcma`, `pcmu`, `amrWide`, `g722`, `g7221`, `g7221c`, `g729`, `multiChannelAudio`, `muchv2`, `opus`, `satin`, `satinFullband`, `rtAudio8`, `rtAudio16`, `silk`, `silkNarrow`, `silkWide`, `siren`, `xmsRTA`, `unknownFutureValue`.|
 |averageAudioDegradation|Double|Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.|
 |averageAudioNetworkJitter|Duration|Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
 |averageBandwidthEstimate|Int64|Average estimated bandwidth available between two endpoints in bits per second.|
@@ -28,7 +29,7 @@ Represents information about a media stream between two endpoints in a call.
 |averageVideoFrameLossPercentage|Double|Average percentage of video frames lost as displayed to the user.|
 |averageVideoFrameRate|Double|Average frames per second received for a video stream, computed over the duration of the session.|
 |averageVideoPacketLossRate|Double|Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.|
-|endDateTime|DateTimeOffset|UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|endDateTime|DateTimeOffset|UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |lowFrameRateRatio|Double|Fraction of the call where frame rate is less than 7.5 frames per second.|
 |lowVideoProcessingCapabilityRatio|Double|Fraction of the call that the client is running less than 70% expected video processing capability.|
 |maxAudioNetworkJitter|Duration|Maximum of audio network jitter computed over each of the 20 second windows during the session, denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
@@ -38,9 +39,10 @@ Represents information about a media stream between two endpoints in a call.
 |maxRoundTripTime|Duration|Maximum network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
 |packetUtilization|Int64|Packet count for the stream.|
 |postForwardErrorCorrectionPacketLossRate|Double|Packet loss rate after FEC has been applied aggregated across all video streams and codecs.|
-|startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Indicates the direction of the media stream. Possible values are: `callerToCallee`, `calleeToCaller`.|
 |streamId|String|Unique identifier for the stream.|
+|videoCodec|microsoft.graph.callRecords.videoCodec|Codec name used to encode video for transmission on the network. Possible values are: `unknown`, `invalid`, `av1`, `h263`, `h264`, `h264s`, `h264uc`, `h265`, `rtvc1`, `rtVideo`, `xrtvc1`, `unknownFutureValue`.|
 |wasMediaBypassed|Boolean|True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.|
 
 
@@ -59,6 +61,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "audioCodec": "String",
   "averageAudioDegradation": "Double",
   "averageAudioNetworkJitter": "String (duration)",
   "averageBandwidthEstimate": 1024,
@@ -83,6 +86,7 @@ The following is a JSON representation of the resource.
   "startDateTime": "String (timestamp)",
   "streamDirection": "String",
   "streamId": "String",
+  "videoCodec": "String",
   "wasMediaBypassed": true
 }
 ```

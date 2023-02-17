@@ -1,12 +1,13 @@
 ---
 author: JeremyKelley
-description: "The baseItemVersion resource represents a previous version of an item or entity."
+description: The baseItemVersion resource represents a previous version of an item or entity.
 ms.date: 09/17/2017
 title: BaseItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
+
 # BaseItemVersion resource type
 
 Namespace: microsoft.graph
@@ -14,7 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **baseItemVersion** resource represents a previous version of an item or entity.
-
 
 ## JSON representation
 
@@ -32,13 +32,12 @@ The **baseItemVersion** resource represents a previous version of an item or ent
 
 ## Properties
 
-|      Property name       |                         Type                         |                               Description                               |
+| Property                 | Type                                                 | Description                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
-
 
 <!--
 {
@@ -50,5 +49,3 @@ The **baseItemVersion** resource represents a previous version of an item or ent
   "suppressions": []
 }
 -->
-
-

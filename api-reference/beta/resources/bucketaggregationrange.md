@@ -1,8 +1,8 @@
 ---
 title: "bucketAggregationRange resource type"
-description: "Enables to specify some manual ranges in the aggregation request. This in only applicable to non string refiners : numeric and dates."
-localization_priority: Normal
-author: "nmoreau"
+description: "Specifies the lower and upper limit to a range for aggregating search results. Applies only to refiners of the date or numeric type"
+ms.localizationpriority: medium
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the lower and upper limit to a range for aggregating search results. Applies to only refiners of the date or numeric type.
+Specifies the lower and upper limit to a range for aggregating search results. Applies only to refiners of the date or numeric type.
 
 ## Properties
 

@@ -1,9 +1,9 @@
 ---
 title: "sizeRange resource type"
 description: "Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply."
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "abheek-das"
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: "Remove educationCategory"
-description: "Remove an existing educationCategory from this educationAssignment"
-localization_priority: Normal
+description: "Remove an existing educationCategory from this educationAssignment."
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
+ms.collection: "education"
 doc_type: apiPageType
 ---
 
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an [educationCategory](../resources/educationcategory.md) from an [educationAssignment](../resources/educationassignment.md).
+Remove an [educationCategory](../resources/educationcategory.md) from an [educationAssignment](../resources/educationassignment.md). Only teachers can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,31 +34,27 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "add_educationcategory_to_educationassignment"
+  "name": "add_educationcategory_to_educationassignment",
+  "sampleKeys": ["11021", "19002", "ec98f158-341d-4fea-9f8c-14a250d489ac"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
-##### Response
+### Response
 The following is an example of the response. 
-
->**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
-
 
 <!-- {
   "blockType": "ignored",

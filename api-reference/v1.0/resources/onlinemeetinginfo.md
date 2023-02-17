@@ -1,7 +1,7 @@
 ---
 title: "onlineMeetingInfo resource type"
 description: "Details for an attendee to join the meeting online."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ananmishr"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"

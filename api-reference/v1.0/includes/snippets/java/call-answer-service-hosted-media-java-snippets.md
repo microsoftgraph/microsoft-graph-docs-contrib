@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String callbackUri = "https://bot.contoso.com/api/calls";
 
-LinkedList<String> acceptedModalitiesList = new LinkedList<String>();
-acceptedModalitiesList.add("audio");
+LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
+acceptedModalitiesList.add(Modality.AUDIO);
 
 ServiceHostedMediaConfig mediaConfig = new ServiceHostedMediaConfig();
 LinkedList<MediaInfo> preFetchMediaList = new LinkedList<MediaInfo>();
@@ -24,7 +24,14 @@ preFetchMediaList.add(preFetchMedia1);
 mediaConfig.preFetchMedia = preFetchMediaList;
 
 graphClient.communications().calls("57DAB8B1894C409AB240BD8BEAE78896")
-	.answer(callbackUri,mediaConfig,acceptedModalitiesList)
+	.answer(CallAnswerParameterSet
+		.newBuilder()
+		.withCallbackUri(callbackUri)
+		.withMediaConfig(mediaConfig)
+		.withAcceptedModalities(acceptedModalitiesList)
+		.withParticipantCapacity(null)
+		.withCallOptions(null)
+		.build())
 	.buildRequest()
 	.post();
 

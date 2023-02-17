@@ -2,8 +2,8 @@
 title: integerRange resource type
 description: Represents an inclusive range of integers described by two Int64 boundaries.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "inferenceClassificationOverride resource type"
 description: "Represents a user's override for how incoming messages from a specific sender should always be classified as."
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "abheek-das"
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 

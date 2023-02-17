@@ -1,9 +1,7 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/11/2017
 title: Create a SharePoint List
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType
@@ -22,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.Manage.All                            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+| Application                            | Sites.Manage.All                            |
 
 ## HTTP request
 
@@ -32,13 +30,31 @@ One of the following permissions is required to call this API. To learn more, in
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
-In the request body, supply a JSON representation of the [list][] resource to create.
+In the request body, supply a JSON representation of a [list][] object.
 
-## Example
+## Response
 
-Here is an example of how to create a new generic list.
+If successful, this method returns a `201 Created` response code and a [list][] object in the response body. 
+
+## Examples
+
+### Request
+
+The following is an example of how to create a new generic list.
+
+> **Note:** Custom columns are optional.
+
+In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.
+If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.
 
 
 # [HTTP](#tab/http)
@@ -65,6 +81,7 @@ Content-Type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -73,29 +90,34 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-list-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-list-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-list-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-list-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-**Note:** Custom columns are optional.
+### Response
 
-In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.
-If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.
+The following is an example of the response.
 
-## Response
-
-If successful, this method returns a [list][] in the response body for the created list.
+> **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -118,8 +140,6 @@ Content-type: application/json
 }
 ```
 
-**Note:** The response object is truncated for clarity.
-Default properties will be returned from the actual call.
 
 [list]: ../resources/list.md
 [site]: ../resources/site.md

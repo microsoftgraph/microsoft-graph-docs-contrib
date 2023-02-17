@@ -1,7 +1,7 @@
 ---
 title: "Create managedIOSStoreApp"
 description: "Create a new managedIOSStoreApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Create a new [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -87,7 +87,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1295
+Content-length: 1355
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -130,7 +130,10 @@ Content-length: 1295
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true,
+    "v15_0": true,
+    "v16_0": true
   }
 }
 ```
@@ -140,7 +143,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1467
+Content-Length: 1527
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -186,13 +189,10 @@ Content-Length: 1467
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true,
+    "v15_0": true,
+    "v16_0": true
   }
 }
 ```
-
-
-
-
-
-

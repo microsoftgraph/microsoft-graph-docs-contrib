@@ -1,11 +1,10 @@
 ---
-author: JeremyKelley
-description: "The Identity resource represents an identity of an actor."
-ms.date: 09/14/2017
-title: Identity
-localization_priority: Normal
+author: "JeremyKelley"
+title: "identity resource type"
+description: "Represents an identity of an actor."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: files
 ---
 # identity resource type
 
@@ -13,8 +12,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **Identity** resource represents an identity of an _actor_.
-For example, an actor can be a user, device, or application.
+Represents an identity of an _actor_. For example, an actor can be a user, device, or application.
+
+In some circumstances, the unique identifier for the actor might not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+
+## Properties
+
+| Property            | Type   | Description                                                                                                                                                                                                                                                                                                           |
+|:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| displayName         | String | The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).  |
+| id                  | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
+| tenantId            | String | Unique identity of the tenant (optional).                                                                                                                                                                                                                                                                             |
 
 ## JSON representation
 
@@ -28,19 +36,6 @@ For example, an actor can be a user, device, or application.
   "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
 }
 ```
-
-## Properties
-
-| Property            | Type   | Description                                                                                                                                                                                                                                                                                                           |
-|:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).  |
-| id                  | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | Unique identity of the tenant (optional).                                                                                                                                                                                                                                                                             |
-
-## Remarks
-
-In some circumstances, the unique identifier for the actor may not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

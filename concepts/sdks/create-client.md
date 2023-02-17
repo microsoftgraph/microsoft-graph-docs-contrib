@@ -1,7 +1,7 @@
 ---
 title: "Create a Microsoft Graph client"
 description: "Describes how to create a client to use to make calls to Microsoft Graph. Includes how to set up authentication and select a sovereign cloud."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
 ---
 
@@ -9,89 +9,101 @@ author: MichaelMainer
 
 The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph. You can use a single client instance for the lifetime of the application. For information about how to add and install the Microsoft Graph client package into your project, see  [Install the SDK](sdk-installation.md).
 
-The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages. The authentication provider will handle acquiring access tokens for the application. Many different authentication providers are available for each language and platform. The different application providers support different client scenarios. For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).
+The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages. The authentication provider will handle acquiring access tokens for the application. Many different authentication providers are available for each language and platform. The different authentication providers support different client scenarios. For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).
+
+<!-- markdownlint-disable MD025 MD051 -->
 
 # [C#](#tab/CS)
 
 ```csharp
-// Build a client application.
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create("INSERT-CLIENT-APP-ID")
-            .Build();
-// Create an authentication provider by passing in a client application and graph scopes.
-DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, graphScopes);
-// Create a new instance of GraphServiceClient with the authentication provider.
-GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+var scopes = new[] { "User.Read" };
+
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
+
+// Value from app registration
+var clientId = "YOUR_CLIENT_ID";
+
+// using Azure.Identity;
+var options = new TokenCredentialOptions
+{
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+};
+
+// Callback function that receives the user prompt
+// Prompt contains the generated device code that you must
+// enter during the auth process in the browser
+Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
+    Console.WriteLine(code.Message);
+    return Task.FromResult(0);
+};
+
+// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
+var deviceCodeCredential = new DeviceCodeCredential(
+    callback, tenantId, clientId, options);
+
+var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
 
 ```javascript
-const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-	redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    DeviceCodeCredential
+} = require("@azure/identity");
 
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
+const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
 ```
 
 # [Java](#tab/Java)
 
 ```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NATIONAL_CLOUD);
+final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
+        .clientId(CLIENT_ID)
+        .clientSecret(CLIENT_SECRET)
+        .tenantId(TENANT_GUID)
+        .build();
 
-IGraphServiceClient graphClient = GraphServiceClient
-				.builder()
-				.authenticationProvider(authProvider)
-				.buildClient();
+final TokenCredentialAuthProvider tokenCredAuthProvider =
+        new TokenCredentialAuthProvider(SCOPES, clientSecretCredential);
+
+final GraphServiceClient graphClient = GraphServiceClient
+        .builder()
+        .authenticationProvider(tokenCredAuthProvider)
+        .buildClient();
 ```
 
 # [Android](#tab/Android)
 
 ```java
-PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "INSERT-CLIENT-APP-ID");
+final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
+        .clientId(CLIENT_ID)
+        .redirectUrl("http://localhost:8765")
+        .build();
 
-MSALAuthenticationProvider msalAuthenticationProvider = new MSALAuthenticationProvider(
-    getActivity(),
-    getApplication(),
-    publicClientApplication,
-    scopes);
+final TokenCredentialAuthProvider tokenCredAuthProvider =
+        new TokenCredentialAuthProvider(SCOPES, interactiveBrowserCredential);
 
-IGraphServiceClient graphClient = GraphServiceClient
-				.builder()
-				.authenticationProvider(authProvider)
-				.buildClient();
-```
-
-# [Objective-C](#tab/Objective-C)
-
-```objc
-// Create the authenticationProvider.
-NSError *error = nil;
-MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID" 
-error:&error];
-MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProviderOptions alloc] initWithScopes:<array-of-scopes-for-which-you-need-access-token>];
- MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication 
- andOptions:authProviderOptions];
-
-// Create the client with the authenticationProvider and create a request to the /me resource.
-MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me"]]];
-
-// Create the task to send the request and handle the response.
-MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
-	completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-
-	//Do something
-
-	}];
-
-[meDataTask execute];
+GraphServiceClient graphClient = GraphServiceClient
+        .builder()
+        .authenticationProvider(tokenCredAuthProvider)
+        .buildClient();
 ```
 
 # [PHP](#tab/PHP)
@@ -118,7 +130,53 @@ $graph->setAccessToken($accessToken);
 
 // Make a call to /me Graph resource.
 $user = $graph->createRequest("GET", "/me")
-				->setReturnType(Model\User::class)
-				->execute();
+              ->setReturnType(Model\User::class)
+              ->execute();
 ```
+
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    "context"
+    "fmt"
+
+    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+)
+
+cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredentialOptions{
+    ClientID: "CLIENT_ID",
+    UserPrompt: func(ctx context.Context, message azidentity.DeviceCodeMessage) error {
+        fmt.Println(message.Message)
+        return nil
+    },
+})
+
+if err != nil {
+    fmt.Printf("Error creating credentials: %v\n", err)
+    return
+}
+
+client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
+```
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+```py
+from azure.identity.aio import EnvironmentCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+from msgraph import GraphRequestAdapter, GraphServiceClient
+
+credential=EnvironmentCredential()
+auth_provider = AzureIdentityAuthenticationProvider(credential)
+
+adapter = GraphRequestAdapter(auth_provider)
+client = GraphServiceClient(adapter)
+```
+
 ---

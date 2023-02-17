@@ -2,7 +2,7 @@
 title: "List alerts"
 description: "Retrieve a list of alert objects."
 author: "preetikr"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "security"
 doc_type: apiPageType
 ---
@@ -46,19 +46,21 @@ This method supports the following [OData query parameters](/graph/query-paramet
 - `$top` - Returns the aggregated top results from each security API provider.  
 - `$filter`
 
-The following table lists the `$filter` keywords by each vendor name.
+The following table lists the `$filter` keywords by each vendor name. Even though some of these products have been rebranded, the API is yet to be updated. Filter keywords will continue to use the legacy names until further notice. See the [changelog](https://developer.microsoft.com/graph/changelog) for updates.
 
 | Vendor name      |$filter keyword|
 |:----------|:----------|
-| Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
+| Microsoft Defender for Identity | Azure Advanced Threat Protection | 
 | Azure Security Center | ASC |
-| Microsoft Cloud App Security | MCAS |
+| Microsoft Defender for Cloud Apps | MCAS |
 | Azure Active Directory Identity Protection | IPC |
 | Azure Sentinel | Azure Sentinel |
-| Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
+| Microsoft Defender for Endpoint | Microsoft Defender ATP |
 | Office 365 | Not currently supported. |
 
-To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
+> **Note:** Some providers might not support `$filter` keywords.
+
+To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
 > **Note:** The `$top` OData query parameter has a limit of 1000 alerts. We recommend that you include only `$top` and not `$skip` in your first GET query. You can use `@odata.nextLink` for pagination. If you need to use `$skip`, it has a limit of 500 alerts. For example, `/security/alerts?$top=10&$skip=500` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=501` will return a `400 Bad Request` response code. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 
@@ -91,6 +93,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,12 +102,20 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alerts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-alerts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alerts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-alerts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -114,7 +125,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,17 +1,19 @@
 ---
-title: "informationProtectionContentLabel resource type"
-description: "Describes the informationProtectionContentLabel object that defines MIP metadata on an object."
-localization_priority: Normal
+title: "informationProtectionContentLabel resource type (deprecated)"
+description: "Describes the informationProtectionContentLabel object that defines MIP metadata on an object. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# informationProtectionContentLabel resource type
+# informationProtectionContentLabel resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Describes the informationProtectionContentLabel object that defines MIP metadata on an object. **informationProtectionContentLabel** is returned by the [extractLabel](../api/informationprotectionlabel-extractLabel.md) API resolve to the label that is currently applied to a file. 
 
@@ -20,7 +22,7 @@ Describes the informationProtectionContentLabel object that defines MIP metadata
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |assignmentMethod|String| Possible values are: `standard`, `privileged`, `auto`.|
-|creationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|creationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |label|[labelDetails](labeldetails.md)| Details on the label that is currently applied to the file. |
 
 ## JSON representation

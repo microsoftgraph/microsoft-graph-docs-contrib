@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/concepts/changelog.md",
+      "redirect_url": "https://developer.microsoft.com/graph/changelog",
+      "redirect_document_id": false
+    }
+  ]
+}

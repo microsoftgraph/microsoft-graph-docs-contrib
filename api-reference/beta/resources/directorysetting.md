@@ -1,9 +1,9 @@
 ---
 title: "directorySetting resource type"
 description: "Directory settings can be created based on the available directorySettingTemplates, and changed from their preset defaults."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -13,17 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Directory settings can be created based on the available [directorySettingTemplates](directorysettingtemplate.md), and changed from their preset defaults. These settings can govern entity or feature behaviors, both at a tenant-wide level or at a specific entity level. When the same setting is defined at both the tenant-wide and specific entity level, the specific entity level setting may opt-out from the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but a specific group setting may opt-out and not allow guests to be invited by members of the group. Currently system defined settings are only govern Office groups behavior.
+Directory settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guest users are allowed to be group owners.
 
-> **Note**: The /beta version of the directorySetting resource type only applies to groups. The /v1.0 version has been renamed to groupSetting.
+By default, all entities inherit the preset defaults. To change the default settings, you must create a new settings object using the [directorySettingTemplates](directorysettingtemplate.md). When the same setting is defined at both the tenant-wide and to a specific group, the entity-level setting overrides the tenant-wide setting. For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but an individual group setting can override and not allow guests to be invited by members of the group.
+
+> [!TIP]
+> The `/v1.0` version of this resource is named [groupSetting](/graph/api/resources/groupsetting?view=graph-rest-1.0&preserve-view=true).
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template.|
+|[Create setting](../api/group-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate.|
 |[Get setting](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
-|[List settings](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
+|[List settings](../api/group-list-settings.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
 |[Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)	|Update a setting object. Only settingValues can be changed in an update.|
 |[Delete setting](../api/directorysetting-delete.md) | None |Delete a setting object. |
 
@@ -33,7 +36,7 @@ Directory settings can be created based on the available [directorySettingTempla
 |displayName|string|Display name of this group of settings, which comes from the associated template. Read-only.|
 |id|string| Unique identifier for these settings. Read-only.|
 |templateId|string| Unique identifier for the template used to create this group of settings. Read-only.|
-|values|[settingValue](settingvalue.md) collection| Collection of name value pairs. Must contain and set all the settings defined in the template.|
+|values|[settingValue](settingvalue.md) collection| Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced [directorySettingTemplates](directorysettingtemplate.md) object.|
 
 ## Relationships
 None

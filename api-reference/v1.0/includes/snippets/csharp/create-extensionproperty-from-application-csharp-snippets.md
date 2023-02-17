@@ -8,15 +8,15 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var extensionProperty = new ExtensionProperty
 {
-	Name = "extensionName",
-	DataType = "string",
+	Name = "jobGroup",
+	DataType = "String",
 	TargetObjects = new List<String>()
 	{
-		"Application"
+		"User"
 	}
 };
 
-await graphClient.Applications["{id}"].ExtensionProperties
+await graphClient.Applications["{application-id}"].ExtensionProperties
 	.Request()
 	.AddAsync(extensionProperty);
 

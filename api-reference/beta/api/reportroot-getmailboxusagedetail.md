@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getMailboxUsageDetail"
 description: "Get details about mailbox usage."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -77,11 +77,13 @@ The CSV file has the following headers for columns.
 - Prohibit Send/Receive Quota (Byte)
 - Deleted Item Count
 - Deleted Item Size (Byte)
+- Deleted Item Quota (Byte)
+- Has Archive
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[mailboxUsageDetail](../resources/mailboxusagedetail.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 The default page size for this request is 200 items.
 
@@ -130,7 +132,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Deleted Item Count,Deleted Item Size (Byte),Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Deleted Item Count,Deleted Item Size (Byte),Deleted Item Quota (Byte),Has Archive,Report Period
 ```
 
 ### JSON
@@ -140,7 +142,6 @@ The following is an example that returns JSON.
 #### Request
 
 The following is an example of the request.
-
 
 <!-- {
   "blockType": "ignored",
@@ -156,12 +157,12 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailboxUsageDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -170,7 +171,6 @@ Content-Type: application/json
 Content-Length: 526
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxUsageDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
@@ -184,6 +184,8 @@ Content-Length: 526
       "storageUsedInBytes": 10414748704, 
       "deletedItemCount": 138481,
       "deletedItemSizeInBytes": 10414748704, 
+      "deletedItemQuota": 107374182400,
+      "hasArchive": true,
       "issueWarningQuotaInBytes": 10522698752, 
       "prohibitSendQuotaInBytes": 10630040576, 
       "prohibitSendReceiveQuotaInBytes": 10737418240, 

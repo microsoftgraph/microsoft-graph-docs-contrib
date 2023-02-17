@@ -1,7 +1,7 @@
 ---
 title: "Create depIOSEnrollmentProfile"
 description: "Create a new depIOSEnrollmentProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Create a new [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -56,9 +56,8 @@ The following table shows the properties that are required when you create the d
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportPhoneNumber|String|Support phone number Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -68,7 +67,6 @@ The following table shows the properties that are required when you create the d
 |termsAndConditionsDisabled|Boolean|Indicates if 'Terms and Conditions' setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |touchIdDisabled|Boolean|Indicates if touch id setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |applePayDisabled|Boolean|Indicates if Apple pay setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|zoomDisabled|Boolean|Indicates if zoom setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |siriDisabled|Boolean|Indicates if siri setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -76,6 +74,7 @@ The following table shows the properties that are required when you create the d
 |screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|String|Sets a literal or name pattern. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |configurationWebUrl|Boolean|URL for setup assistant login Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|enabledSkipKeys|String collection|enabledSkipKeys contains all the enabled skip keys as strings Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
@@ -95,6 +94,16 @@ The following table shows the properties that are required when you create the d
 |preferredLanguageScreenDisabled|Boolean|Indicates if Preferred language screen is disabled|
 |deviceToDeviceMigrationDisabled|Boolean|Indicates if Device To Device Migration is disabled|
 |welcomeScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
+|passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled|
+|zoomDisabled|Boolean|Indicates if zoom setup pane is disabled|
+|restoreCompletedScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
+|updateCompleteScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
+|forceTemporarySession|Boolean|Indicates if temporary sessions is enabled|
+|temporarySessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
+|userSessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
+|passcodeLockGracePeriodInSeconds|Int32|Indicates timeout before locked screen requires the user to enter the device passocde to unlock it|
+|carrierActivationUrl|String|Carrier URL for activating device eSIM.|
+|userlessSharedAadModeEnabled|Boolean|Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-shared-ios|
 
 
 
@@ -108,7 +117,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 2024
+Content-length: 2438
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -121,7 +130,6 @@ Content-length: 2024
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "Support Phone Number value",
@@ -131,7 +139,6 @@ Content-length: 2024
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -139,6 +146,9 @@ Content-length: 2024
   "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
   "configurationWebUrl": true,
+  "enabledSkipKeys": [
+    "Enabled Skip Keys value"
+  ],
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -163,7 +173,17 @@ Content-length: 2024
   "expressLanguageScreenDisabled": true,
   "preferredLanguageScreenDisabled": true,
   "deviceToDeviceMigrationDisabled": true,
-  "welcomeScreenDisabled": true
+  "welcomeScreenDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
+  "restoreCompletedScreenDisabled": true,
+  "updateCompleteScreenDisabled": true,
+  "forceTemporarySession": true,
+  "temporarySessionTimeoutInSeconds": 0,
+  "userSessionTimeoutInSeconds": 11,
+  "passcodeLockGracePeriodInSeconds": 0,
+  "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+  "userlessSharedAadModeEnabled": true
 }
 ```
 
@@ -172,7 +192,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2073
+Content-Length: 2487
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -186,7 +206,6 @@ Content-Length: 2073
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "Support Phone Number value",
@@ -196,7 +215,6 @@ Content-Length: 2073
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -204,6 +222,9 @@ Content-Length: 2073
   "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
   "configurationWebUrl": true,
+  "enabledSkipKeys": [
+    "Enabled Skip Keys value"
+  ],
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -228,12 +249,16 @@ Content-Length: 2073
   "expressLanguageScreenDisabled": true,
   "preferredLanguageScreenDisabled": true,
   "deviceToDeviceMigrationDisabled": true,
-  "welcomeScreenDisabled": true
+  "welcomeScreenDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
+  "restoreCompletedScreenDisabled": true,
+  "updateCompleteScreenDisabled": true,
+  "forceTemporarySession": true,
+  "temporarySessionTimeoutInSeconds": 0,
+  "userSessionTimeoutInSeconds": 11,
+  "passcodeLockGracePeriodInSeconds": 0,
+  "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+  "userlessSharedAadModeEnabled": true
 }
 ```
-
-
-
-
-
-

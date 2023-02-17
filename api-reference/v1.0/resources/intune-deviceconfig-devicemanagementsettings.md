@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettings resource type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -18,7 +18,7 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceComplianceCheckinThresholdDays|Int32|The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120|
+|deviceComplianceCheckinThresholdDays|Int32|The number of days a device is allowed to go without checking in to remain compliant.|
 |isScheduledActionEnabled|Boolean|Is feature enabled or not for scheduled action for rule.|
 |secureByDefault|Boolean|Device should be noncompliant when there is no compliance policy targeted when this is true|
 
@@ -40,12 +40,3 @@ Here is a JSON representation of the resource.
   "secureByDefault": true
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Create managedAndroidLobApp"
 description: "Create a new managedAndroidLobApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Create a new [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -74,11 +74,11 @@ The following table shows the properties that are required when you create the m
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |packageId|String|The package identifier.|
-|identityName|String|The Identity Name.|
+|identityName|String|The Identity Name. This property is deprecated starting in February 2023 (Release 2302).|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of managed Android Line of Business (LoB) app.|
 |versionCode|String|The version code of managed Android Line of Business (LoB) app.|
-|identityVersion|String|The identity version.|
+|identityVersion|String|The identity version. This property is deprecated starting in February 2023 (Release 2302).|
 
 
 
@@ -92,7 +92,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1548
+Content-length: 1588
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -141,7 +141,9 @@ Content-length: 1548
     "v7_1": true,
     "v8_0": true,
     "v8_1": true,
-    "v9_0": true
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
@@ -154,7 +156,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1720
+Content-Length: 1760
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -206,16 +208,12 @@ Content-Length: 1720
     "v7_1": true,
     "v8_0": true,
     "v8_1": true,
-    "v9_0": true
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
   "identityVersion": "Identity Version value"
 }
 ```
-
-
-
-
-
-

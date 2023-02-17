@@ -1,15 +1,17 @@
 ---
 title: "Make API calls using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph HTTP requests using the SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
+
+<!-- markdownlint-disable MD025 MD051 -->
 
 # Make API calls using the Microsoft Graph SDKs
 
 The Microsoft Graph SDK service libraries provide a client class that you can use as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Users["user-id"].Manager`) and the other accepts a path string (for example, `api("/users/user-id/manager")`). When you have a request object, you can specify a variety of options such as filtering and sorting, and finally, you select the type of operation you want to perform.
 
-There is also the [Microsoft Graph PowerShell SDK](../powershell/get-started.md), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](../powershell/navigating.md).
+There is also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating).
 
 ## Read information from Microsoft Graph
 
@@ -30,6 +32,18 @@ To read information from Microsoft Graph, you first need to create a request obj
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
+
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-read.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-read.md)]
 
 ---
 
@@ -54,11 +68,25 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-select.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-select.md)]
+
 ---
 
 ## Retrieve a list of entities
 
 Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter will request that the server provide the list of entities sorted by the specified properties.
+
+[!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
 # [C#](#tab/CS)
 
@@ -75,6 +103,18 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
+
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-list.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-list.md)]
 
 ---
 
@@ -100,11 +140,23 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-index.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-index.md)]
+
 ---
 
 ## Use $expand to access related entities
 
-You can use the `$expand` filter to request a related entity, or collection of entities, at the same that you request the main entity.
+You can use the `$expand` filter to request a related entity, or collection of entities, at the same time that you request the main entity.
 
 # [C#](#tab/CS)
 
@@ -121,6 +173,18 @@ You can use the `$expand` filter to request a related entity, or collection of e
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
+
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-expand.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-expand.md)]
 
 ---
 
@@ -144,6 +208,18 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
 
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-delete.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-delete.md)]
+
 ---
 
 ## Make a POST request to create a new entity
@@ -165,6 +241,18 @@ For SDKs that support a fluent style, new items can be added to collections with
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
+
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-create.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-create.md)]
 
 ---
 
@@ -188,6 +276,18 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-update.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-update.md)]
+
 ---
 
 ## Use HTTP headers to control request behavior
@@ -210,11 +310,23 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-headers.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-headers.md)]
+
 ---
 
 ## Provide custom query parameters
 
-For SDKs that support a fluent style, you can provide custom query parameter values by using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell, defined query parameters for a given API are exposed as parameters to the corresponding command.
+For SDKs that support a fluent style, you can provide custom query parameter values by using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell and Go, defined query parameters for a given API are exposed as parameters to the corresponding command.
 
 # [C#](#tab/CS)
 
@@ -231,5 +343,18 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
+
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-queryparams.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+TODO
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-queryparams.md)]
 
 ---

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var @event = await graphClient.Me.Events["AAMkADAGu0AABIGYDZAAA="]
+var @event = await graphClient.Me.Events["{event-id}"]
 	.Request()
 	.Select("isOnlineMeeting,onlineMeetingProvider,onlineMeeting")
 	.GetAsync();

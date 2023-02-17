@@ -1,8 +1,8 @@
 ---
 title: "mobileAppTroubleshootingAppStateHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # mobileAppTroubleshootingAppStateHistory resource type
 
 Namespace: microsoft.graph
-
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -26,7 +24,7 @@ Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubles
 |occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|Action type for Intune Application. Possible values are: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|runState|[runState](../resources/intune-troubleshooting-runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |errorCode|String|Error code for the failure, empty if no failure.|
 
 ## Relationships
@@ -62,9 +60,3 @@ Here is a JSON representation of the resource.
   "errorCode": "String"
 }
 ```
-
-
-
-
-
-

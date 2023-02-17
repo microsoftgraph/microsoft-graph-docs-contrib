@@ -1,7 +1,7 @@
 ---
 title: "plannerProgressTaskBoardTaskFormat resource type"
-description: "The **plannerProgressTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Progress view of the Task Board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress and Complete). Each task will have one **plannerProgressTaskBoardTaskFormat** object associated with it."
-localization_priority: Normal
+description: "Represents the information used to render a task correctly in the progress view of the task board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress, and Complete)."
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerProgressTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Progress view of the Task Board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress and Complete). Each [task](plannertask.md) will have one **plannerProgressTaskBoardTaskFormat** object associated with it.
+Represents the information used to render a task correctly in the progress view of the task board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress, and Complete). Each [task](plannertask.md) will have one **plannerProgressTaskBoardTaskFormat** object associated with it.
 
 
 ## Methods
@@ -26,15 +26,15 @@ The **plannerProgressTaskBoardTaskFormat** resource represents the information u
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the resource. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
-|orderHint|String|Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined [here](planner-order-hint-format.md).|
+|id|String| Read-only. ID of the resource. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|orderHint|String|Hint value used to order the task on the progress view of the task board. For details about the supported format, see [Using order hints in Planner](planner-order-hint-format.md).|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -49,7 +49,6 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "orderHint": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -2,7 +2,7 @@
 title: "Using order hints in Planner"
 description: "`)"
 author: "TarkanSevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: conceptualPageType
 ---

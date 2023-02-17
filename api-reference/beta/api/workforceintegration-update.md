@@ -1,7 +1,7 @@
 ---
 title: "Update workforceintegration"
 description: "Update the properties of a workforceintegration object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |WorkforceIntegration.ReadWrite.All |
+| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teamwork/workforceIntegrations
+PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## Request headers
@@ -74,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teamwork/workforceIntegrations
+PATCH https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceIntegrationId}
 Content-type: application/json
 
 {
@@ -89,6 +89,7 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,8 +98,20 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-workforceintegration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-workforceintegration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -108,7 +121,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -224,6 +237,119 @@ HTTP/1.1 200 OK
 }
 ```
 
+### Example 4: Shifts synchronous call back to the workforce integration endpoint when enabled for real time notifications on timeCard changes.
+
+#### Request
+
+The following is an example of the request. 
+```
+POST https://foobarWorkforceIntegration.com/foobar/v1/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/update
+Accept-Language: en-us
+X-MS-WFMPassthrough: foobarvalue
+Content-type: application/json
+{
+   "requests":[
+      {
+         "id":"1",
+         "method":"POST",
+         "url":"/timecards",
+         "headers":{
+            "X-MS-Transaction-ID":"1"
+         },
+         "body":{
+            "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
+            "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
+            "createdDateTime":"2019-03-18T00:00:00.000Z",
+            "createdBy":{
+               "user":{
+                  "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
+                  "displayName":"Dwight Schrute"
+               }
+            },
+            "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
+            "lastModifiedBy":{
+               "user":{
+                  "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
+                  "displayName":"Dwight Schrute"
+               }
+            },
+            "state":"onBreak",
+            "clockIn":{
+               "dateTime":"2019-03-18T00:00:00.000Z",
+               "atApprovedLocation":true,
+               "notes":null
+            },
+            "clockOut":null,
+            "breaks":[
+               {
+                  "id":"string",
+                  "notes":{
+                     "content":"Lunch break",
+                     "contentType":"text"
+                  },
+                  "start":{
+                     "dateTime":"2019-03-18T00:00:00.000Z",
+                     "atApprovedLocation":true,
+                     "notes":{
+                        "content":"Started my break 5 minutes early",
+                        "contentType":"text"
+                     }
+                  },
+                  "end":null
+               }
+            ],
+            "notes":null,
+            "originalEntry":{
+               "clockIn":{
+                  "dateTime":"2019-03-18T00:00:00.000Z",
+                  "atApprovedLocation":true,
+                  "notes":null
+               },
+               "clockOut":null,
+               "breaks":[
+                  {
+                     "id":"4591109b-a618-3e0d-e6a0-d42b25b7231f",
+                     "notes":{
+                        "content":"Lunch break",
+                        "contentType":"text"
+                     },
+                     "start":{
+                        "dateTime":"2019-03-18T00:00:00.000Z",
+                        "atApprovedLocation":true,
+                        "notes":{
+                           "content":"Started my break 5 minutes early",
+                           "contentType":"text"
+                        }
+                     },
+                     "end":null
+                  }
+               ]
+            }
+         }
+      }
+   ]
+}
+
+```
+#### Response
+
+The following is an example of the response.
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "responses":[
+    {
+      "id": "1",
+      "status": 200,
+      "body":{
+        "eTag": "4000ee23-0000-0700-0000-5d1415f60000",
+        "error": null
+      }
+    }
+  ]
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

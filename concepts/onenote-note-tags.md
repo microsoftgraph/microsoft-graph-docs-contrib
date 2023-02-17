@@ -1,12 +1,12 @@
 ---
-title: "Use note tags in OneNote pages"
-description: " Enterprise notebooks on Microsoft 365"
+title: "Use note tags on OneNote pages by using the OneNote API"
+description: "Use the data-tag attribute to add and update built-in note tags on a OneNote page. Learn how to work with note tags on lists and how to retrieve note tags."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 ---
 
-# Use note tags in OneNote pages
+# Use note tags on OneNote pages
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
@@ -71,9 +71,9 @@ Here's a simple to-do list with the first item completed.
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
 
-Note that the `<p>` tags above each include a `data-id` attribute. This makes it easier to update the check box note tags. For example, the following request marks the spring planting to-do item as completed.
+For example, the following request marks the second to-do item as completed.
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -81,7 +81,7 @@ Authorization: Bearer {token}
 
 [
    {
-    'target':'#spring',
+    'target':'p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}',
     'action':'replace',
     'content':'<p data-tag="to-do:completed"  data-id="spring">Plant peas and spinach</p>'
   }
@@ -263,7 +263,7 @@ A `data-tag` attribute in the output HTML always includes a shape value, and it 
 
 Note that the `data-tag` attribute defined at the list level is pushed to its list items. For more information about using note tags with lists, see [Note tags on lists](#note-tags-on-lists).
 
-> **Note:**
+> [!NOTE]
 > In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`. The `title` element doesn't return any note tag information.
 
 
@@ -360,8 +360,5 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Update OneNote page content](onenote-update-page.md)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "deviceGeoLocation resource type"
 description: "Device location"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -54,9 +54,3 @@ Here is a JSON representation of the resource.
   "speed": "4.2"
 }
 ```
-
-
-
-
-
-

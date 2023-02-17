@@ -1,7 +1,7 @@
 ---
 title: "openShiftChangeRequest resource type"
 description: "Represents a type of shift request to claim an open shift in a schedule."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
@@ -44,8 +44,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openShiftChangeRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.openShiftChangeRequest"
 }-->
 
 ```json

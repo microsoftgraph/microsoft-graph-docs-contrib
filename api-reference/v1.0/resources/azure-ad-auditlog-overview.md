@@ -1,10 +1,11 @@
 ---
 title: "Activity reports API overview"
 description: "Use the activity reports API in Microsoft Graph to access the reports that Azure Active Directory creates to help you track user activity in a tenant."
-localization_priority: Priority
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: conceptualPageType
+ms.date: 09/16/2022
 ---
 
 # Activity reports API overview
@@ -13,12 +14,14 @@ Namespace: microsoft.graph
 
 Azure Active Directory (Azure AD) tracks user activity and creates reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
 
+The availability of these activity reports is governed by the Azure AD data retention policies. For more information, see [data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+
 ## What are Azure AD activity logs?
 
-Azure AD provides three types of activity reports:
+Azure AD provides the following types of activity reports:
 
-- audit logs
-- sign-in logs
+- Directory audits
+- Sign-ins
 
 ### Directory audits
 
@@ -57,16 +60,14 @@ To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/detail
 
 ## Next Steps
 
-- [Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites. 
-- Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- [Register your app](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites. 
+- To learn how to retrieve audit logs while authenticated using certificates, see [Tutorial: Get data using the Azure Active Directory reporting API with certificates](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).   
 - Review [directoryAudit](directoryaudit.md) resource and actions.
 - Review [signIn](signin.md) resource and actions. 
 <!--
 {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /api-reference/beta/resources/azure-ad-auditlog-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
-

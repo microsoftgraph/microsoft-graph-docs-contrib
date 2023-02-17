@@ -1,10 +1,10 @@
 ---
 title: "chatMessageAttachment resource type"
 description: "Represents an attachment to a chat message entity."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "clearab"
+ms.prod: "microsoft-teams"
+author: "RamjotSingh"
 ---
 
 # chatMessageAttachment resource type
@@ -21,11 +21,13 @@ An entity of type `chatMessageAttachment` is returned as part of the [Get channe
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string| Read-only. Unique id of the attachment.|
-|contentType| string | The media type of the content attachment. It can have the following values: <br><ul><li>`reference`: Attachment is a link to another file. Populate the contentURL with the link to the object.</li><li>Any contentTypes supported by the Bot Framework's [Attachment object](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: A code snippet. </li><li>`application/vnd.microsoft.card.announcement`: An announcement header. </li>|
+|contentType| string | The media type of the content attachment. It can have the following values: <br><ul><li>`reference`: Attachment is a link to another file. Populate the contentURL with the link to the object.</li><li>Any contentTypes supported by the Bot Framework's [Attachment object](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: A code snippet. </li><li>`application/vnd.microsoft.card.announcement`: An announcement header. </li>|
 |contentUrl|string|URL for the content of the attachment. Supported protocols: http, https, file and data.|
 |content|string|The content of the attachment. If the attachment is a [rich card](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference), set the property to the rich card object. This property and contentUrl are mutually exclusive.|
 |name|string|Name of the attachment.|
+|teamsAppId| string |The ID of the Teams app that is associated with the attachment. The property is specifically used to attribute a Teams message card to the specified app.|
 |thumbnailUrl| string |URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.|
+
 
 ## JSON representation
  The following is a JSON representation of the resource
@@ -35,7 +37,8 @@ An entity of type `chatMessageAttachment` is returned as part of the [Get channe
   "optionalProperties": [
     "thumbnailUrl",
     "content",
-    "contentUrl"
+    "contentUrl",
+    "teamsAppId"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.chatMessageAttachment"
@@ -48,6 +51,7 @@ An entity of type `chatMessageAttachment` is returned as part of the [Get channe
   "contentUrl": "string",
   "content": "string",
   "name": "string",
+  "teamsAppId": "string",
   "thumbnailUrl": "string"
 }
 

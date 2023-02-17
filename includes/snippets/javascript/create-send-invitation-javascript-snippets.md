@@ -10,45 +10,45 @@ const options = {
 
 const client = Client.init(options);
 
-const event = Prefer: outlook.timezone="Pacific Standard Time"
+const event = Prefer: outlook.timezone='Pacific Standard Time'
 Content-type: application/json
 
 {
-  subject: "Christmas dinner",
+  subject: 'Christmas dinner',
   body: {
-    contentType: "HTML",
-    content: "Happy holidays!"
+    contentType: 'HTML',
+    content: 'Happy holidays!'
   },
   start: {
-      dateTime: "2019-12-25T18:00:00",
-      timeZone: "Pacific Standard Time"
+      dateTime: '2019-12-25T18:00:00',
+      timeZone: 'Pacific Standard Time'
   },
   end: {
-      dateTime: "2019-12-25T22:00:00",
-      timeZone: "Pacific Standard Time"
+      dateTime: '2019-12-25T22:00:00',
+      timeZone: 'Pacific Standard Time'
   },
-  location:{
-      displayName:"Alex' home"
+  location: {
+      displayName: 'Alex\' home'
   },
   attendees: [
     {
       emailAddress: {
-        address:"meganb@contoso.onmicrosoft.com",
-        name: "Megan Bowen"
+        address: 'meganb@contoso.onmicrosoft.com',
+        name: 'Megan Bowen'
       },
-      type: "required"
+      type: 'required'
     },
     {
       emailAddress: {
-        address:"ChristieC@contoso.onmicrosoft.com",
-        name: "Christie Cline"
+        address: 'ChristieC@contoso.onmicrosoft.com',
+        name: 'Christie Cline'
       },
-      type: "required"
+      type: 'required'
     }
   ]
 };
 
-let res = await client.api('/me/calendars/AAMkADRpAABf0JlzAAA=/events')
+await client.api('/me/calendars/AAMkADRpAABf0JlzAAA=/events')
 	.post(event);
 
 ```

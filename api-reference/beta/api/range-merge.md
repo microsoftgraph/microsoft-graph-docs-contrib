@@ -2,7 +2,7 @@
 title: "Range: merge"
 description: "Merge the range cells into one region in the worksheet."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/merge
-POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
-POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
+POST /me/drive/items/{id}/workbook/names/{name}/range/merge
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/merge
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/merge
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/merge
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/merge
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 ```
 ## Request headers
@@ -61,12 +64,12 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/merge
 Content-type: application/json
-Content-length: 20
 
 {
   "across": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-merge-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,8 +78,8 @@ Content-length: 20
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-merge-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/range-merge-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-merge-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -85,9 +88,7 @@ Content-length: 20
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

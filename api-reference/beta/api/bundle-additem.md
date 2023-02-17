@@ -1,9 +1,8 @@
 ---
-author: JeremyKelley
-ms.author: jeremyke
-title: Add item to a bundle
-description: Add item to a bundle of driveItems
-localization_priority: Normal
+author: "JeremyKelley"
+title: "Add item to a bundle"
+description: "Add item to a bundle of driveItems."
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -39,26 +38,26 @@ POST /drive/bundles/{bundle-id}/children
 
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer \{token\}. Required. |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json. Required.|
 
 ## Request body
 
-The request body includes the identifier for an item that should be added to the bundle's children collection.
+In the request body, supply a JSON representation of a [driveItem][] object.
 
 ## Response
 
-If successful, the response is `204 No Content`.
+If successful, this method returns a `204 No Content` response code.
 
-Read the [Error Responses][error-response] topic for more information about how errors are returned.
+For information about error responses, see [Microsoft Graph error responses and resource types][error-response].
 
 ## Example
 
 ### Request
 
-This request will add an existing item to the specified bundle.
+The following is an example of a request that adds an existing item to the specified bundle.
 
 
-# [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "add-to-bundle", "isCollection": true, "@odata.type": "microsoft.graph.driveItem", "tags": "onedrive.only" } -->
 
 ```http
@@ -69,22 +68,11 @@ Content-Type: application/json
   "id": "123456!87"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/add-to-bundle-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-to-bundle-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/add-to-bundle-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response" } -->
 

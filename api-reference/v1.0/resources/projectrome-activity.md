@@ -1,7 +1,7 @@
 ---
 title: "activity resource type"
 description: "Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 author: "ailae"
 doc_type: resourcePageType
@@ -32,20 +32,21 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|userTimezone | String | Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.|
-|createdDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was created on the server. |
-|lastModifiedDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was modified on the server. |
-|id | String | Server-generated ID used for URL addressing.|
-|appActivityId | String | Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.|
-|activitySourceHost | String | Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.|
-|appDisplayName | String | Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.|
 |activationUrl | String | Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.|
-|fallbackUrl | String | Optional. URL used to launch the activity in a web-based app, if available.|
-|contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
-|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Required. The object containing information to render the activity in the UX.|
+|activitySourceHost | String | Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.|
+|appActivityId | String | Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.|
+|appDisplayName | String | Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.|
 |contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](https://schema.org) syntax.|
+|contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
+|createdDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was created on the server. |
 |expirationDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object expired on the server.|
+|fallbackUrl | String | Optional. URL used to launch the activity in a web-based app, if available.|
+|id | String | Server-generated ID used for URL addressing.|
+|lastModifiedDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was modified on the server. |
 |status | status | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
+|userTimezone | String | Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.|
+|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Required. The object containing information to render the activity in the UX.|
+
 
 ## Relationships
 

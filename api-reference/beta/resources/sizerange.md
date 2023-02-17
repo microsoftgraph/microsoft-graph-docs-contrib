@@ -1,10 +1,10 @@
 ---
 title: "sizeRange resource type"
 description: "Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.prod: mail
+author: "abheek-das"
 ---
 
 # sizeRange resource type

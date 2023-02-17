@@ -1,8 +1,8 @@
 ---
 title: "Outlook extended properties overview"
 description: "Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access "
-localization_priority: Priority
-author: "svpsiva"
+ms.localizationpriority: high
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: conceptualPageType
 ---
@@ -33,7 +33,7 @@ Or, in the following Microsoft 365 group resources:
 In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as
 Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
 need to access custom data for Outlook MAPI properties that are not already exposed in the
-[Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api).
+[Microsoft Graph API metadata](/graph/call-api#microsoft-graph-api-metadata).
 
 ## Types of extended properties
 
@@ -65,7 +65,7 @@ The next 2 tables describe these formats as applied to single and multi-value ex
 |:---------|:----------|:--------------|
 | "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a string name.         |
 | "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and a numeric identifier.  |
-| "{_type_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | Identifies a pre-defined property by its property tag. |
+| "{_type_} {_proptag_}"                    | ```"String 0x4001"```                                           | Identifies a pre-defined property by its property tag. |
 
 **Valid id formats for multi-value extended properties**
 
@@ -73,7 +73,7 @@ The next 2 tables describe these formats as applied to single and multi-value ex
 |:---------|:----------|:--------------|
 | "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) and a string name.         |
 | "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by the namespace (the GUID) and a numeric identifier.   |
-| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | Identifies a pre-defined property by its property tag. |
+| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002"```                                           | Identifies a pre-defined property by its property tag. |
 
 
 Use either of the named property formats to define a single-value or multi-value extended property as a custom property. Among the two formats, the first one that takes a string name (**Name**) is the preferred format for ease of reference. Named properties have their [property identifiers](/office/client-developer/outlook/mapi/mapi-property-identifier-overview) in the 0x8000-0xfffe range.
@@ -81,7 +81,7 @@ Use either of the named property formats to define a single-value or multi-value
 Use the proptag format to access properties predefined by MAPI, or by a client or server, and that have not already been exposed in Microsoft Graph. These properties have property identifiers in the 0x0001-0x7fff range. Do not try to define a custom property using the proptag format.
 
 You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID,
-in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx).
+in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](/openspecs/exchange_server_protocols/ms-oxprops/f6ab1613-aefe-447d-a49c-18217230b148).
 
 **Note** After you have chosen one format for the **id**, you should access that extended property by only that format.
 
@@ -96,5 +96,3 @@ Multi-value extended property operations:
 
 - [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty-get.md)
-
-

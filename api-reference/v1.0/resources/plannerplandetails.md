@@ -1,7 +1,7 @@
 ---
 title: "plannerPlanDetails resource type"
-description: "The **plannerPlanDetails** resource represents the additional information about a plan. Each plan object has a details object."
-localization_priority: Normal
+description: "Represents the additional information about a plan."
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-The **plannerPlanDetails** resource represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
-
+Represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
 
 ## Methods
 
@@ -25,16 +23,15 @@ The **plannerPlanDetails** resource represents the additional information about 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|An object that specifies the descriptions of the six categories that can be associated with tasks in the plan|
-|id|String| Read-only. ID of the plan details. It is 28 characters long and case-sensitive. [Format validation](planner-identifiers-disclaimer.md) is done on the service.|
-|sharedWith|[plannerUserIds](planneruserids.md)|Set of user ids that this plan is shared with. If you are leveraging Microsoft 365 groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group. |
+|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|An object that specifies the descriptions of the 25 categories that can be associated with tasks in the plan.|
+|id|String| The unique identifier for the plan details. It is 28 characters long and case-sensitive. [Format validation](planner-identifiers-disclaimer.md) is done on the service. Read-only.|
+|sharedWith|[plannerUserIds](planneruserids.md)|Set of user IDs that this plan is shared with. If you are leveraging Microsoft 365 groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection, although it is not required for them to access the plan owned by the group. |
 
 ## Relationships
-None
-
+None.
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -49,7 +46,6 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "sharedWith": {"@odata.type": "microsoft.graph.plannerUserIds"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

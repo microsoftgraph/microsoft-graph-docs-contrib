@@ -2,7 +2,7 @@
 title: "Table resource type"
 description: "Represents an Excel table."
 author: "lumine2008"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
@@ -21,8 +21,8 @@ Represents an Excel table.
 |[Get Table](../api/table-get.md) | [WorkbookTable](table.md) |Read properties and relationships of table object.|
 |[Create TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
 |[List columns](../api/table-list-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md) collection| Get a TableColumn object collection.|
-|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow](tablerow.md)| Create a new TableRow by posting to the rows collection.|
-|[List rows](../api/table-list-rows.md) |[WorkbookTableRow](tablerow.md) collection| Get a TableRow object collection.|
+|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow]( workbooktablerow.md)| Create a new TableRow by posting to the rows collection.|
+|[List rows](../api/table-list-rows.md) |[WorkbookTableRow]( workbooktablerow.md) collection| Get a TableRow object collection.|
 |[Update](../api/table-update.md) | [WorkbookTable](table.md)	|Update Table object. |
 |[Databodyrange](../api/table-databodyrange.md)|[Range](range.md)|Gets the range object associated with the data body of the table.|
 |[Headerrowrange](../api/table-headerrowrange.md)|[Range](range.md)|Gets the range object associated with header row of the table.|
@@ -38,23 +38,23 @@ Represents an Excel table.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|highlightFirstColumn|Boolean|Indicates whether the first column contains special formatting.	|
+|highlightLastColumn|Boolean|Indicates whether the last column contains special formatting.	|
 |id|string|Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and should not be parsed to any other type. Read-only.|
+|legacyId|String|Legacy Id used in older Excle clients. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and should not be parsed to any other type. Read-only.	
 |name|string|Name of the table.|
+|showBandedRows|Boolean|Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.	|
+|showBandedColumns|Boolean|Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.	|
+|showFilterButton|Boolean|Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.	|
 |showHeaders|boolean|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
 |showTotals|boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
 |style|string|Constant value that represents the Table style. The possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
-|highlightFirstColumn|Boolean|Indicates whether the first column contains special formatting.	|
-|highlightLastColumn|Boolean|Indicates whether the last column contains special formatting.	|
-|showBandedColumns|Boolean|Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.	|
-|showBandedRows|Boolean|Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.	|
-|showFilterButton|Boolean|Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.	|
-|legacyId|String|Legacy Id used in older Excle clients. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and should not be parsed to any other type. Read-only.	|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |columns|[WorkbookTableColumn](workbooktablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
-|rows|[WorkbookTableRow](tablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
+|rows|[WorkbookTableRow]( workbooktablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
 |sort|[WorkbookTableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
 |worksheet|[WorkbookWorksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
 

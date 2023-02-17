@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyUploadedDefinitionFile"
 description: "Update the properties of a groupPolicyUploadedDefinitionFile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -55,9 +55,9 @@ The following table shows the properties that are required when you create the [
 |targetNamespace|String|Specifies the URI used to identify the namespace within the ADMX file. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md). Possible values are: `admxBacked`, `admxIngested`.|
 |revision|String|The revision version associated with the file. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|fileName|String|The file name of the ADMX file without the path. For example: edge.admx Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |id|String|Key of the entity. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|fileName|String|The file name of the uploaded ADML file.|
 |status|[groupPolicyUploadedDefinitionFileStatus](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)|The upload status of the uploaded ADMX file. Possible values are: `none`, `uploadInProgress`, `available`, `assigned`, `removalInProgress`, `uploadFailed`, `removalFailed`.|
 |content|Binary|The contents of the uploaded ADMX file.|
 |uploadDateTime|DateTimeOffset|The uploaded time of the uploaded ADMX file.|
@@ -125,9 +125,9 @@ Content-Length: 1035
   "targetNamespace": "Target Namespace value",
   "policyType": "admxIngested",
   "revision": "Revision value",
+  "fileName": "File Name value",
   "id": "0ce1a8cf-a8cf-0ce1-cfa8-e10ccfa8e10c",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "fileName": "File Name value",
   "status": "uploadInProgress",
   "content": "Y29udGVudA==",
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00",
@@ -144,9 +144,3 @@ Content-Length: 1035
   ]
 }
 ```
-
-
-
-
-
-

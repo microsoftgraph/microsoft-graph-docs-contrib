@@ -1,9 +1,9 @@
 ---
 title: "defaultUserRolePermissions resource type"
 description: "Contains certain customizable permissions of default user role."
-localization_priority: Normal
-author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "DougKirschner"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -19,6 +19,7 @@ Contains certains customizable permissions of default user role in Azure AD.
 |:-------- |:---- |:----------- |
 | allowedToCreateApps | Boolean | Indicates whether the default user role can create applications. |  
 | allowedToCreateSecurityGroups | Boolean | Indicates whether the default user role can create security groups. |  
+| allowedToReadBitlockerKeysForOwnedDevice | Boolean | Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role. |
 | allowedToReadOtherUsers | Boolean | Indicates whether the default user role can read other users. |  
 
 ## Relationships
@@ -39,6 +40,7 @@ The following is a JSON representation of the resource.
 {
   "allowedToCreateApps": true,
   "allowedToCreateSecurityGroups": true,
+  "allowedToReadBitlockerKeysForOwnedDevice": true,
   "allowedToReadOtherUsers": true
 }
 ```

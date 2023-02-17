@@ -1,7 +1,7 @@
 ---
 title: "workforceIntegration resource type"
 description: "An instance of a workforce integration with shifts."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
@@ -33,8 +33,8 @@ An instance of a workforce integration with shifts.
 |displayName|String|Name of the workforce integration.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supports|string| The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
-|supportedEntities|string| This property will replace **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property will still be supported in beta for the time being. Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
+|supports|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
+|supportedEntities|workforceIntegrationSupportedEntities | This property has replaced **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property is still supported in beta for the time being. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
 |url|String| Workforce Integration URL for callbacks from the Shifts service.|
 
 ## Relationships
@@ -50,8 +50,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workforceIntegration",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.workforceIntegration"
 }-->
 
 ```json
@@ -61,6 +60,7 @@ The following is a JSON representation of the resource.
   "encryption": {"@odata.type": "microsoft.graph.workforceIntegrationEncryption"},
   "isActive": true,
   "supports": "string",
+  "supportedEntities": "string",
   "url": "String"
 }
 ```

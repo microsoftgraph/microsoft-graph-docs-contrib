@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
 title: Download a file
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
-description: "Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the file property can be downloaded."
+description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 doc_type: apiPageType
 ---
 # Download the contents of a DriveItem
 
 Namespace: microsoft.graph
 
-Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
+
+Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItems** with the **file** property can be downloaded.
 
 ## Permissions
 
@@ -33,6 +33,7 @@ GET /drives/{drive-id}/items/{item-id}/content
 GET /groups/{group-id}/drive/items/{item-id}/content
 GET /me/drive/root:/{item-path}:/content
 GET /me/drive/items/{item-id}/content
+GET /shares/{shareIdOrEncodedSharingUrl}/driveItem/content
 GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```
@@ -47,7 +48,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 Here is an example to download a complete file.
 
-
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
@@ -55,16 +56,13 @@ Here is an example to download a complete file.
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/download-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/download-item-content-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/download-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -84,12 +82,42 @@ Many HTTP client libraries will automatically follow the 302 redirection and sta
 
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+
+## Downloading files in JavaScript apps
+To download files in a JavaScript app, you cannot use the `/content` API, because this responds with a `302` redirect.
+A `302` redirect is explicitly prohibited when a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) _preflight_ is required, such as when providing the **Authorization** header.
+
+Instead, your app needs to select the `@microsoft.graph.downloadUrl` property, which returns the same URL that `/content` directs to.
+This URL can then be requested directly using XMLHttpRequest.
+Because these URLs are pre-authenticated, they can be retrieved without a CORS preflight request.
+
+### Example
+
+To retrieve the download URL for a file, first make a request that includes the `@microsoft.graph.downloadUrl` property:
+
+```http
+GET /drive/items/{item-ID}?select=id,@microsoft.graph.downloadUrl
+```
+
+This returns the ID and download URL for a file:
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "12319191!11919",
+  "@microsoft.graph.downloadUrl": "https://..."
+}
+```
+
+You can then make an XMLHttpRequest for the URL provided in `@microsoft.graph.downloadUrl` to retrieve the file.
 
 ## Partial range downloads
 

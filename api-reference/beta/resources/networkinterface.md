@@ -1,9 +1,10 @@
 ---
 title: "networkInterface resource type"
 description: "Represents a Network Interface Card (NIC) associated with this host."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "preetikr"
 ---
 
@@ -17,7 +18,7 @@ Represents a Network Interface Card (NIC) associated with this host.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|description|String|Description of the NIC (e.g. Ethernet adapter, Wireless LAN adapter Local Area Connection *<#>, etc.).|
+|description|String|Description of the NIC (e.g. Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).|
 |ipV4Address|String|Last IPv4 address associated with this NIC.|
 |ipV6Address|String|Last Public (aka global) IPv6 address associated with this NIC.|
 |localIpV6Address|String|Last local (link-local or site-local) IPv6 address associated with this NIC.|

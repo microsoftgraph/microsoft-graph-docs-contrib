@@ -2,7 +2,7 @@
 title: "Range: delete"
 description: "Deletes the cells associated with the range."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -24,9 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/delete
-POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
-POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
+POST /me/drive/items/{id}/workbook/names/{name}/range/delete
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/delete
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/delete
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/delete
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/delete
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
 ## Request headers
@@ -59,22 +62,18 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/delete
 Content-type: application/json
-Content-length: 28
 
 {
   "shift": "shift-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-delete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-delete-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/range-delete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

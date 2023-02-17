@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementDerivedCredentialSettingses"
 description: "List properties and relationships of the deviceManagementDerivedCredentialSettings objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -77,13 +77,3 @@ Content-Length: 347
   ]
 }
 ```
-
-
-
-
-
-
-
-
-
-

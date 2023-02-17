@@ -2,7 +2,7 @@
 title: "List educationSynchronizationProfiles"
 description: "Retrieve the collection of school data synchronization profiles in the tenant."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -22,12 +22,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite |
 |Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+|Application|EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /synchronizationProfiles
+GET /education/synchronizationProfiles
 ```
 
 ## Optional query parameters
@@ -46,21 +46,50 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 ##### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "list_synchronizationProfile"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-synchronizationprofile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-synchronizationprofile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-synchronizationprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-synchronizationprofile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-synchronizationprofile-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-synchronizationprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
   "isCollection": true
@@ -68,7 +97,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3296
 
 {
     "value": [
@@ -87,13 +115,11 @@ Content-length: 3296
                         "GradeHigh",
                         "Principal Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "section": {
                     "optionalPropertiesToSync": [],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
@@ -103,7 +129,6 @@ Content-length: 3296
                         "Email",
                         "Middle Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
@@ -112,19 +137,15 @@ Content-length: 3296
                         "Teacher Number",
                         "Middle Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "studentEnrollment": {
-                    "optionalPropertiesToSync": [],
                     "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "teacherRoster": {
-                    "optionalPropertiesToSync": [],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 }

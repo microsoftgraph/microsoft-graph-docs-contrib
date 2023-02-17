@@ -18,8 +18,15 @@ var acceptedModalities = new List<Modality>()
 	Modality.Audio
 };
 
-await graphClient.Communications.Calls["{id}"]
-	.Answer(callbackUri,mediaConfig,acceptedModalities)
+var callOptions = new IncomingCallOptions
+{
+	IsContentSharingNotificationEnabled = true
+};
+
+var participantCapacity = 200;
+
+await graphClient.Communications.Calls["{call-id}"]
+	.Answer(callbackUri,mediaConfig,acceptedModalities,participantCapacity,callOptions)
 	.Request()
 	.PostAsync();
 

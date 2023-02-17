@@ -1,7 +1,7 @@
 ---
 title: "Create windowsAutopilotDeviceIdentity"
 description: "Create a new windowsAutopilotDeviceIdentity object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Create a new [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -51,9 +51,8 @@ The following table shows the properties that are required when you create the w
 |:---|:---|:---|
 |id|String|The GUID for the object|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
-|orderIdentifier|String|Order Identifier of the Windows autopilot device - Deprecated|
 |groupTag|String|Group Tag of the Windows autopilot device.|
 |purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
@@ -67,9 +66,15 @@ The following table shows the properties that are required when you create the w
 |resourceName|String|Resource Name.|
 |skuNumber|String|SKU Number|
 |systemFamily|String|System Family|
-|azureActiveDirectoryDeviceId|String|AAD Device ID|
+|azureActiveDirectoryDeviceId|String|AAD Device ID - to be deprecated|
+|azureAdDeviceId|String|AAD Device ID|
 |managedDeviceId|String|Managed Device ID|
 |displayName|String|Display Name|
+|deviceAccountUpn|String|Surface Hub Device Account Upn|
+|deviceAccountPassword|String|Surface Hub Device Account Password|
+|deviceFriendlyName|String|Surface Hub Device Friendly Name|
+|remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Device Remediation State. Possible values are: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `manualRemediationRequired`, `unknownFutureValue`.|
+|remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState set time of Autopilot device.|
 
 
 
@@ -83,14 +88,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1075
+Content-length: 1371
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
   "deploymentProfileAssignmentStatus": "assignedInSync",
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
@@ -105,8 +109,14 @@ Content-length: 1075
   "skuNumber": "Sku Number value",
   "systemFamily": "System Family value",
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "azureAdDeviceId": "Azure Ad Device Id value",
   "managedDeviceId": "Managed Device Id value",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "deviceAccountUpn": "Device Account Upn value",
+  "deviceAccountPassword": "Device Account Password value",
+  "deviceFriendlyName": "Device Friendly Name value",
+  "remediationState": "noRemediationRequired",
+  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
 }
 ```
 
@@ -115,7 +125,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1124
+Content-Length: 1420
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -123,7 +133,6 @@ Content-Length: 1124
   "deploymentProfileAssignmentStatus": "assignedInSync",
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
@@ -138,13 +147,13 @@ Content-Length: 1124
   "skuNumber": "Sku Number value",
   "systemFamily": "System Family value",
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "azureAdDeviceId": "Azure Ad Device Id value",
   "managedDeviceId": "Managed Device Id value",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "deviceAccountUpn": "Device Account Upn value",
+  "deviceAccountPassword": "Device Account Password value",
+  "deviceFriendlyName": "Device Friendly Name value",
+  "remediationState": "noRemediationRequired",
+  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
 }
 ```
-
-
-
-
-
-

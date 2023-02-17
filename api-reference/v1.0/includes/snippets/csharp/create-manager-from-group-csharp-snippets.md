@@ -6,13 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = new DirectoryObject
-{
-	Id = "{id}"
-};
-
-await graphClient.Users["{id}"].Manager.Reference
+await graphClient.Users["{user-id}"].Manager.Reference
 	.Request()
-	.PutAsync(directoryObject);
+	.PutAsync("6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0");
 
 ```

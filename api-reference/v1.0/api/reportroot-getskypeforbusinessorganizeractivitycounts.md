@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSkypeForBusinessOrganizerActivityCounts"
 description: "Get usage trends on the number and type of conference sessions held and organized by users in your organization. Types of conference sessions include IM, audio/video, application sharing, web, dial-in/out - 3rd party, and Dial-in/out Microsoft."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -82,7 +82,7 @@ The following is an example of the request.
   "name": "reportroot_getskypeforbusinessorganizeractivitycounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessOrganizerActivityCounts(period='D7')
 ```
 

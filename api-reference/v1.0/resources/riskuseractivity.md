@@ -1,9 +1,9 @@
 ---
 title: "riskUserActivity resource type"
 description: "riskUserActivity detections"
-author: "cloudhandler"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "tracyshi"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

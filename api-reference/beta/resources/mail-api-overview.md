@@ -1,8 +1,8 @@
 ---
 title: "Use the Outlook mail REST API"
 description: "Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account."
-localization_priority: Priority
-author: "angelgolfer-ms"
+ms.localizationpriority: high
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: conceptualPageType
 ---
@@ -12,8 +12,7 @@ doc_type: conceptualPageType
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
-With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of
-the signed-in user or any user in a tenant. 
+With the appropriate delegated or application [mail permissions](/graph/permissions-reference#mail-permissions), your app can access the mail data of the signed-in user or any user in a tenant. For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
@@ -25,7 +24,7 @@ or the `me` shortcut alias for the signed-in user.
 Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
 Messages and mail folders are identified by their **id** property, obtainable from `GET` operations.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > In general, do not assume that **message** and **mailfolder** IDs are unique and always remain the same within a mailbox. They might change after certain
 actions such as copy or move. You can choose to use [immutable IDs](/graph/outlook-immutable-id) to retain the same ID as long as the message remains in the same mailbox, _with the exception of sending a draft message, and a few other scenarios_. See [lifetime of immutable IDs](/graph/outlook-immutable-id#lifetime-of-immutable-ids) for details.
 
@@ -54,17 +53,18 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Focused Inbox](../resources/manage-focused-inbox.md) |
 | Query for messages and get them in a search folder  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Methods of mailSearchFolder](../resources/mailsearchfolder.md#methods) |
 | Get the MIME content of a message or message attachment | [message](../resources/message.md) | [Get MIME content](/graph/outlook-get-mime-message) |
+| Send messages with MIME content | [message](../resources/message.md) | [Send MIME content](/graph/outlook-send-mime-message) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
 | Get language and time zone choices for a user | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user-get-mailboxsettings.md), <br> [Update user's mailbox settings](../api/user-update-mailboxsettings.md) |
 | Get MailTips of other recipients' special status, such as out-of-office | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Get MailTips](../api/user-getmailtips.md) |
-| Alert user if mentioned in other messages (preview) | [mention (preview)](../resources/mention.md) | [Get details of @-mentions in a message](../api/message-get.md#example-2) |
+| Alert user if mentioned in other messages (preview) | [mention (preview)](../resources/mention.md) | [Get details of @-mentions in a message](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message) |
 | Unsubscribe user from an email distribution list (preview) | [message (preview)](../resources/message.md) | [Unsubscribe](../api/message-unsubscribe.md) |
 | **Mail and folder management** | | |
 | Organize messages in a mail folder hierarchy | [mailFolder](../resources/mailfolder.md)  | [Methods of mailFolder](../resources/mailfolder.md#methods) |
 | Categorize messages | [outlookCategory](../resources/outlookcategory.md) | [Methods of outlookCategory](../resources/outlookcategory.md#methods) |
 | Use Inbox rules to automate actions such as forwarding specific incoming messages | [messageRule](../resources/messagerule.md) | [Methods of messageRule](../resources/messagerule.md#methods) |
-| Get Internet message headers of a message | [message](../resources/message.md) | [Get the **internetMessageHeaders** property of a message](../api/message-get.md#example-4). |
+| Get Internet message headers of a message | [message](../resources/message.md) | [Get the **internetMessageHeaders** property of a message](../api/message-get.md#example-4-get-internet-message-headers). |
 | Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query-parameters)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta-query-messages) |
@@ -72,6 +72,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** collection of the message. |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility-overview) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
+
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
@@ -84,6 +85,6 @@ The mail API can open up new ways for you to engage with users:
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
 
 

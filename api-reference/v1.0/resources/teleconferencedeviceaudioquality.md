@@ -1,7 +1,7 @@
 ---
 title: "teleconferenceDeviceAudioQuality resource type"
 description: "Video teleconferencing device audio quality data."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dongkyun"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"

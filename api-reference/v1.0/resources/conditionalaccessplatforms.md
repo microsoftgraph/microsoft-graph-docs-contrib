@@ -1,9 +1,9 @@
 ---
 title: "conditionalAccessPlatforms resource type"
 description: "Platforms included in and excluded from the policy scope."
-localization_priority: Normal
-author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "davidspooner"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -17,8 +17,8 @@ Platforms included in and excluded from the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|includePlatforms|String collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
-|excludePlatforms|String collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.|
+|excludePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `linux`, `all`, `unknownFutureValue`.|
+|includePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `linux`, `all`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -39,8 +39,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "includePlatforms": ["String"],
-  "excludePlatforms": ["String"]
+  "excludePlatforms": ["String"],
+  "includePlatforms": ["String"]
 }
 ```
 

@@ -12,6 +12,7 @@ var bookingStaffMember = new BookingStaffMember
 	DisplayName = "Dana Swope",
 	EmailAddress = "danas@contoso.com",
 	Role = BookingStaffRole.ExternalGuest,
+	TimeZone = "America/Chicago",
 	UseBusinessHours = true,
 	WorkingHours = new List<BookingWorkHours>()
 	{
@@ -101,6 +102,7 @@ var bookingStaffMember = new BookingStaffMember
 			}
 		}
 	},
+	IsEmailNotificationEnabled = false,
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"role@odata.type", "#microsoft.graph.bookingStaffRole"},
@@ -108,7 +110,7 @@ var bookingStaffMember = new BookingStaffMember
 	}
 };
 
-await graphClient.BookingBusinesses["{id}"].StaffMembers
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].StaffMembers
 	.Request()
 	.AddAsync(bookingStaffMember);
 

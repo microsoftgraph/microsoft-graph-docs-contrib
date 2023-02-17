@@ -2,7 +2,7 @@
 title: "personAnnotation resource type"
 description: "personAnnotation resource type"
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: resourcePageType
 ---

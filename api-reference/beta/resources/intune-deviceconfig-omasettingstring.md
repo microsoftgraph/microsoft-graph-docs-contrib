@@ -1,7 +1,7 @@
 ---
 title: "omaSettingString resource type"
 description: "OMA Settings String definition."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -26,6 +26,8 @@ Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|secretReferenceValueId|String|ReferenceId for looking up secret for decryption. This property is read-only. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|isEncrypted|Boolean|Indicates whether the value field is encrypted. This property is read-only. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|String|Value.|
 
 ## Relationships
@@ -44,12 +46,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
+  "secretReferenceValueId": "String",
+  "isEncrypted": true,
   "value": "String"
 }
 ```
-
-
-
-
-
-

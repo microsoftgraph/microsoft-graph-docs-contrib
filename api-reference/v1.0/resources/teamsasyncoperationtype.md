@@ -2,7 +2,7 @@
 title: "teamsAsyncOperationType enum type"
 description: "Types of teamsAsyncOperation. Members will be added here as more async operations are supported."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: enumPageType
 ---
@@ -17,12 +17,13 @@ Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added he
 
 ## Members
 
-| Member | Value| Description |
-|:---------------|:--------|:----------|
-|invalid|0|Invalid value.|
-|cloneTeam|1|Operation to clone a team.|
-|archiveTeam|2|Operation to archive a team.|
-|unarchiveTeam|3|Operation to restore an archived team.|
-|createTeam|3|Operation to create a team from scratch.|
-
-
+| Member | Description |
+|:---------------|:----------|
+|invalid|Invalid value.|
+|cloneTeam|Operation to clone a team.|
+|archiveTeam|Operation to archive a team.|
+|unarchiveTeam|Operation to restore an archived team.|
+|createTeam|Operation to create a team from scratch.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|teamifyGroup |Operation to create a team from a group. |
+|createChannel |Operation to create a channel in a team. |

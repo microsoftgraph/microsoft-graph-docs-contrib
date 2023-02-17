@@ -1,17 +1,19 @@
 ---
-title: "informationProtectionLabel: listLabels"
-description: "Retrieve a list of information protection labels."
-localization_priority: Normal
+title: "informationProtectionLabel: listLabels (deprecated)"
+description: "Retrieve a list of information protection labels. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# informationProtectionLabel: listLabels
+# informationProtectionLabel: listLabels (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Get a collection of [information protection labels](../resources/informationprotectionlabel.md) available to the user or to the organization.
 
@@ -73,6 +75,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-labels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,8 +84,20 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-labels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-labels-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-labels-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-labels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-labels-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-labels-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -92,7 +107,7 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -116,7 +131,8 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 1,
           "tooltip": "Data classified as Contoso General.",
-          "isActive": true
+          "isActive": true,
+          "parent": null
       },
       {
           "id": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
@@ -125,7 +141,8 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 2,
           "tooltip": "Data classificed as Contoso Confidential.",
-          "isActive": true
+          "isActive": true,
+          "parent": null
       },
       {
           "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
@@ -134,8 +151,28 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 3,
           "tooltip": "Data classified as Contoso Highly Confidential.",
-          "isActive": true
-      }
+          "isActive": true,
+          "parent": null
+      },
+      {
+            "id": "a20cbae4-0c05-448c-b342-cb6c618d0957",
+            "name": "Contoso Full Time Employees",
+            "description": "Consult Contoso data labeling policy for more details.",
+            "color": "",
+            "sensitivity": 4,
+            "tooltip": "Data classified as Contoso Highly Confidential for Contoso Full Time Employees",
+            "isActive": true,
+            "parent": {
+                "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
+                "name": "Highly Confidential",
+                "description": "Consult Contoso data labeling policy for more details.",
+                "color": "",
+                "sensitivity": 3,
+                "tooltip": "Data classified as Contoso Highly Confidential.",
+                "isActive": true,
+                "parent": null
+            }
+        }
   ]
 }
 ```

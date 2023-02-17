@@ -1,7 +1,7 @@
 ---
 title: "plannerPlanDetails resource type"
-description: "The **plannerPlanDetails** resource represents the additional information about a plan. Each plan object has a details object."
-localization_priority: Normal
+description: "Represents the additional information about a plan."
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerPlanDetails** resource represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
-
+Represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
 
 ## Methods
 
@@ -26,14 +25,13 @@ The **plannerPlanDetails** resource represents the additional information about 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|An object that specifies the descriptions of the six categories that can be associated with tasks in the plan|
-|id|String| Read-only. The ID of the plan details. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|An object that specifies the descriptions of the 25 categories that can be associated with tasks in the plan.|
+|contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|A collection of additional information associated with [plannerPlanContext](plannerplancontext.md) entries that are defined for the [plannerPlan](plannerplan.md) container. Read-only.|
+|id|String|The unique identifier for the plan details. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service. Read-only.|
 |sharedWith|[plannerUserIds](planneruserids.md)|The set of user IDs that this plan is shared with. If you are using Microsoft 365 groups, use the groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection, although it is not required in order for them to access the plan owned by the group. |
-|contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|Read-only. A collection of additional information associated with [plannerPlanContext](plannerplancontext.md) entries that are defined for the [plannerPlan](plannerplan.md) container. |
 
 ## Relationships
 None.
-
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -53,7 +51,6 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "sharedWith": {"@odata.type": "microsoft.graph.plannerUserIds"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

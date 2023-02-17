@@ -4,7 +4,7 @@ description: Deletes a vendor object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
@@ -52,7 +52,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 
 Here is an example of the request.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 ```
 
@@ -60,7 +60,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 
 Here is an example of the response. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

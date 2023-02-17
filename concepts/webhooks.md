@@ -1,23 +1,26 @@
 ---
-title: "Set up notifications for changes in user data"
-description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
-author: "davidmu1"
-ms.prod: "non-product-specific"
-localization_priority: Priority
+title: "Set up notifications for changes in resource data"
+description: "Microsoft Graph APIs use a webhook mechanism to deliver change notifications to clients. Client apps use change notifications to update their state upon changes."
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: jumasure
+ms.prod: "change-notifications"
+ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 12/02/2022
 ---
 
-# Set up notifications for changes in user data
+# Set up notifications for changes in resource data
 
-The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
+Change notifications enable applications to be alerted when data changes or is created in Microsoft Graph. When a resource is created, updated, or deleted, Microsoft Graph submits an HTTP POST to a specified client endpoint. The client endpoint listens for these messages and acts on them based on the logic defined by your business requirements.
 
-After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
+## What can you get notifications for?
 
+You can get notifications on messages, calendar events, users, groups, OneDrive files, and more. This allows you to stay up to date and in sync with data that is accessible via Microsoft Graph. It also allows you to avoid implementing a polling infrastructure where you submit requests to Microsoft Graph at regular intervals to get the most recent changes.
+
+The first step to start receiving change notifications is to first create a subscription. After Microsoft Graph accepts the subscription request and the subscription is activated, Microsoft Graph pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
- 
-> [!div class="nextstepaction"]
-> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
@@ -25,86 +28,11 @@ An app can also subscribe to change notifications that include resource data, to
 
 ## Supported resources
 
-Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
-
-- Outlook [message][]
-- Outlook [event][]
-- Outlook personal [contact][]
-- [list][]
-- [user][]
-- [group][]
-- Microsoft 365 group [conversation][]
-- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
-- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
-- Security [alert][]
-- Teams [callRecord][]
-- Teams [chatMessage][]
-- Teams [presence][] (preview)
-
-You can create a subscription to a specific Outlook folder such as the Inbox:
-`me/mailFolders('inbox')/messages`
-
-Or to a top-level resource:
-`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
-
-Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`
-
-Or to any folder in a user's personal OneDrive:
-`/drives/{id}/root`
-`/drives/{id}/root/subfolder`
-
-Or to the root folder of a SharePoint/OneDrive for Business drive:
-`/drive/root`
-
-Or to a new [Security API](security-concept-overview.md) alert:
-`/security/alerts?$filter=status eq 'newAlert'`,
-`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
-
-### Azure AD resource limitations
-
-Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:
-
-> **Note**: These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
-
-- Maximum subscription quotas:
-
-  - Per app (for all tenants combined): 50,000 total subscriptions
-  - Per tenant (for all applications combined): 1000 total subscriptions across all apps
-  - Per app and tenant combination: 100 total subscriptions
-
-When any limit is exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
-
-- Azure AD B2C tenants are not supported.
-
-- Change notification for user entities are not supported for personal Microsoft accounts.
-
-- A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.
-
-### Outlook resource limitations
-
-When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
-
-`/users/sh.o'neal@contoso.com/messages`
-
-Use: 
-
-`/users/{guid-user-id}/messages`
-
-### Teams resource limitations
-
-Each Teams resource has different subscription quotas.
-
-- For subscriptions to **callRecords**:
-  - Per organization: 100 total subscriptions
-
-- For subscriptions to **chatMessages** (channels or chats):
-  - Per app and channel or chat combination: 1 subscription
-  - Per organization: 10,000 total subscriptions
+[!INCLUDE [change-notifications-supported-resources-expanded](includes/change-notifications-supported-resources-expanded.md)]
 
 ## Subscription lifetime
 
-Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
+Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting change notifications.
 
@@ -131,9 +59,16 @@ The client must store the subscription ID to correlate change notifications with
 
 #### Subscription request example
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
@@ -143,15 +78,43 @@ Content-Type: application/json
 }
 ```
 
-The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0) for property definitions and values.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-subscriptions-example-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/change-notifications-subscriptions-example-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/change-notifications-subscriptions-example-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription) for property definitions and values.
 
 The `resource` property specifies the resource that will be monitored for changes. For example, you can create a subscription to a specific mail folder: `me/mailFolders('inbox')/messages` or on behalf of a user given by an administrator  consent: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 Although `clientState` is not required, you must include it to comply with our recommended change notification handling process. Setting this property will allow you to confirm that change notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
-If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
+If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription) object in the body.
 
-> **Note:** Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
+> [!NOTE]
+> Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
 
 #### Notification endpoint validation
 
@@ -164,7 +127,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
+1. The client must properly URL decode the `validationToken` query parameter provided in the preceding step, and escape any HTML/JavaScript.
 
    Escaping is a good practice because malicious actors can use the notification endpoint for cross-site scripting type of attacks.
 
@@ -174,11 +137,12 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
     - A status code of `HTTP 200 OK`.
     - A content type of `text/plain`.
-    - A body that includes the _decoded_ validation token.
+    - A body that includes the _URL decoded_ validation token. Simply reflect back the same string that was sent in the `validationToken` query parameter.
 
     The client should discard the validation token after providing it in the response.
 
-    > **Important:** If the client returns an encoded validation token, the validation will fail.
+    > [!IMPORTANT]
+    > If the client returns an encoded validation token, the validation fails.
 
 Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
 
@@ -190,6 +154,12 @@ The client can renew a subscription with a specific expiration date of up to thr
 
 #### Subscription renewal example
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example-renewal"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
 Content-Type: application/json
@@ -199,15 +169,75 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body. The subscription object includes the new `expirationDateTime` value.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-subscriptions-example-renewal-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-renewal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/change-notifications-subscriptions-example-renewal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-renewal-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-renewal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/change-notifications-subscriptions-example-renewal-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription) object in the body. The subscription object includes the new `expirationDateTime` value.
 
 ### Deleting a subscription
 
 The client can stop receiving change notifications by deleting the subscription using its ID.
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-subscriptions-example-delete"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-subscriptions-example-delete-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-delete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/change-notifications-subscriptions-example-delete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-delete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-delete-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/change-notifications-subscriptions-example-delete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 If successful, Microsoft Graph returns a `204 No Content` code.
 
@@ -215,7 +245,8 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 With a client subscribing to changes to a resource, Microsoft Graph sends a `POST` request to the notification URL whenever the resource changes. It sends notifications only for changes of the type that's specified in the subscription, for example, `created`.
 
-> **Note:** If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID. There is no guarantee that all change notifications in the `POST` request belong to a single subscription.
+> [!NOTE]
+> If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID. There is no guarantee that all change notifications in the `POST` request belong to a single subscription.
 
 ### Change notification example
 
@@ -251,17 +282,34 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
 
 Your process should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification:
 
-1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered.
+1. Your process should process every change notification it receives and send a 2xx class code. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it will try to publish the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered. If your process consistently does not respond within 3 seconds, your notification might be subject to throttling.
 
-    > **Note:** Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity. You are simply acknowledging the receipt of the change notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance. If the notification URL doesn't reply within 30 seconds for more than 10% of the requests from Microsoft Graph over a 10 minute period, all following notifications will be delayed and retried for a period of 4 hours. If a notification URL doesn't reply within 30 seconds for more than 20% of the requests from Microsoft Graph over a 10 minute period, all following notifications will be dropped.
+    If your processing is expected to take more than 3 seconds, you should persist the notification, return a `202 - Accepted` status code in your response to Microsoft Graph, then process the notifications. If the notification is not persisted, return a 5xx class code to indicate an error so the notification will be retried.
+
+    If your processing is expected to take less than 3 seconds, you should process the notifications and return a `200 - OK` status code in your response to Microsoft Graph. If the notification is not processes correctly, return a 5xx class code to indicate an error so the notification will be retried.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
-    > **Note:** If this isn't true, you should not consider this a valid change notification. It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
+    > [!NOTE]
+    > If this isn't true, you should not consider this a valid change notification. It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
 
 1. Update your application based on your business logic.
 
 Repeat for other change notifications in the request.
+
+### Throttling
+
+Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity. You are simply acknowledging the receipt of the change notification and preventing unnecessary retries. For most subscriptions, notifications are not subjected to any additional delay during publishing and all notifications are delivered within the SLA unless the service is experiencing an incident. However, if a subscription notification URL is slow or fails to response, notifications might be throttled for the host associated with the subscription. The following process is used to determine when to throttle and how to handle throttled endpoints.
+
+Notifications are published using an HTTP client with a 3 second timeout. Upon completion of publishing of a notification, regardless of outcome, the total time spent attempting to publish, including network latency, is tracked for the host associated with the notification URL. If the publishing time is greater than 2900 ms, the response is considered slow. The responses are accumulated for the host and the percentage of slow responses is calculated after 100 notifications have been received. When the percentage of slow responses reaches 10%, the host associated with the notification URL is flagged as a slow endpoint. Because slow endpoints are associated with the host in the notification URL, all notifications for all subscriptions associated with the host are considered for evaluation and are subjected to throttling.
+
+The evaluation continues in real time. If the publishing time for a host drops below 290 0ms, this non-slow response is included in the total count of responses, the percentage of slow responses is re-calculated, and the endpoint is re-evaluated. Additionally, the accumulation of responses is flushed every 10 minutes and the evaluation starts again, waiting for 100 notifications before evaluating an endpoint. Therefore, a temporary spike in network latency or publishing delay will recover after the delay is mitigated. A more persistent network latency or publishing delay greater than 2900 ms will be continually re-evaluated every 10 minutes. 
+
+While an endpoint is throttled, notifications are subjected to the following additional delays:
+-	Notifications are automatically offloaded to a set of workers dedicated to failed and throttled notifications and an additional delay of 10 minutes is incurred.
+-	Notifications are dropped if the throttled endpoint slow % is >= 15%.
+-	Notifications that failed to deliver due to an unsuccessful HTTP call are retried again in 10 minutes.
+
 
 ## Code samples
 
@@ -276,48 +324,72 @@ The following code samples are available on GitHub.
 
 You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
-> **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
+> [!NOTE]
+> The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
 ## Latency
 
 The following table lists the latency to expect between an event happening in the service and the delivery of the change notification.
 
-| Resource | Average latency | Maximum latency |
-|:-----|:-----|:-----|
-|[callRecord][] | Less than 15 minutes | 60 minutes |
-|[chatMessage][] | Less than 10 seconds | 1 minute |
-|[contact][] | Unknown | Unknown |
-|[driveItem][] | Less than 1 minute | 5 minutes |
-|[event][] | Unknown | Unknown |
-|[group][] | Less than 2 minutes | 15 minutes |
-|[conversation][] | Unknown | Unknown |
-|[list][] | Less than 1 minute | 5 minutes |
-|[message][] | Unknown | Unknown |
-|[alert][] | Less than 3 minutes | 5 minutes |
-|[presence][] (preview) | Less than 10 seconds | 1 minute |
-|[user][] | Less than 2 minutes | 15 minutes |
+| Resource                | Average latency      | Maximum latency |
+|:-------------------------|:----------------------|:-----------------|
+| [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
+| [callRecord][]          | Less than 15 minutes | 60 minutes      |
+| [channel][]             | Less than 10 seconds | 60 minutes      |
+| [chat][]                | Less than 10 seconds | 60 minutes      |
+| [chatMessage][]         | Less than 10 seconds | 1 minute        |
+| [contact][]             | Unknown              | Unknown         |
+| [conversation][]        | Unknown              | Unknown         |
+| [conversationMember][]  | Less than 10 seconds | 60 minutes      |
+| [driveItem][]           | Less than 1 minute   | 5 minutes       |
+| [event][]               | Unknown              | Unknown         |
+| [group][]               | Less than 2 minutes  | 15 minutes      |
+| [list][]                | Less than 1 minute   | 5 minutes       |
+| [message][]             | Unknown              | Unknown         |
+| [onlineMeeting][]       | Less than 10 seconds | 1 minute        |
+| [presence][]            | Less than 10 seconds | 1 minute        |
+| [printer][]             | Less than 1 minute   | 5 minutes       |
+| [printTaskDefinition][] | Less than 1 minute   | 5 minutes       |
+| [team][]                | Less than 10 seconds | 60 minutes      |
+| [todoTask][]            | Less than 2 minutes  | 15 minutes      |
+| [user][]                | Less than 2 minutes  | 15 minutes      |
 
->**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+<sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+
+## Additional resources
+
+- [Get change notifications through webhooks](./change-notifications-delivery-webhooks.md)
+- [Get change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
+- [Notifications with resource data](./webhooks-with-resource-data.md)
+- [Lifecycle notifications](./webhooks-lifecycle.md)
+- Tutorials
+    - [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
+    - [Change notifications for Outloook resources](./outlook-change-notifications-overview.md)
+    - [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
 
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
-- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
-- [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
+- [subscription resource type](/graph/api/resources/subscription)
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
+- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[group]: /graph/api/resources/group?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
-[user]: /graph/api/resources/user?view=graph-rest-1.0
-[alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[contact]: /graph/api/resources/contact
+[conversation]: /graph/api/resources/conversation
+[driveItem]: /graph/api/resources/driveitem
+[event]: /graph/api/resources/event
+[group]: /graph/api/resources/group
+[message]: /graph/api/resources/message
+[user]: /graph/api/resources/user
+[alert]: /graph/api/resources/alert
+[callRecord]: /graph/api/resources/callrecords-callrecord
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printer]: /graph/api/resources/printer
+[printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[todoTask]: /graph/api/resources/todotask
+[channel]: /graph/api/resources/channel
+[chat]: /graph/api/resources/chat
+[conversationMember]: /graph/api/resources/conversationmember
+[team]: /graph/api/resources/team
+[onlineMeeting]: /graph/api/resources/onlinemeeting

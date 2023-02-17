@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyMigrationReport"
 description: "Update the properties of a groupPolicyMigrationReport object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the [
 |totalSettingsCount|Int32|The total number of Group Policy Settings from GPO file.|
 |supportedSettingsCount|Int32|The number of Group Policy Settings supported by Intune.|
 |supportedSettingsPercent|Int32|The Percentage of Group Policy Settings supported by Intune.|
+|roleScopeTagIds|String collection|The list of scope tags for the configuration.|
 
 
 
@@ -74,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 Content-type: application/json
-Content-length: 544
+Content-length: 606
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyMigrationReport",
@@ -87,7 +88,10 @@ Content-length: 544
   "targetedInActiveDirectory": true,
   "totalSettingsCount": 2,
   "supportedSettingsCount": 6,
-  "supportedSettingsPercent": 8
+  "supportedSettingsPercent": 8,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -96,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 716
+Content-Length: 778
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyMigrationReport",
@@ -112,12 +116,9 @@ Content-Length: 716
   "targetedInActiveDirectory": true,
   "totalSettingsCount": 2,
   "supportedSettingsCount": 6,
-  "supportedSettingsPercent": 8
+  "supportedSettingsPercent": 8,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
-
-
-
-

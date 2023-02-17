@@ -2,8 +2,8 @@
 title: Create printerShare
 description: Creates a new printer share for the specified printer.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -38,11 +38,15 @@ POST /print/shares
 | Content-type  | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [printerShare](../resources/printershare.md) object.
+In the request body, supply a JSON representation of the [printerShare](../resources/printershare.md) object.
 
-The printer share's **id** and **createdDateTime** properties are set automatically upon resource creation, but the share name and associated printer must be included in the request.
+The following table shows the properties that can be provided when you create the [printerShare](../resources/printershare.md).
 
-The printer reference is set by using `@odata.bind` syntax, as shown in the example.
+|Property|Type|Description|Required?|
+|:---|:---|:---|:---|
+|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example.|Yes|
+|displayName|String|The name of the printer share that print clients should display. Maximum length allowed is 50 characters.|Yes|
+|allowAllUsers|Boolean|	If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|No|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [printerShare](../resources/printershare.md) object in the response body.
@@ -59,13 +63,13 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/shares
 Content-type: application/json
-Content-length: 114
 
 {
   "name": "name-value",
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from-print-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -74,15 +78,30 @@ Content-length: 114
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from-print-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from-print-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-printershare-from-print-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-printershare-from-print-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-printershare-from-print-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,12 +110,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 233
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
     "id": "7361c7c1-ff07-4565-9897-bef6895a7d04",
-    "name": "ShareName",
+    "displayName": "ShareName",
     "createdDateTime": "2020-02-04T00:00:00.0000000Z"
 }
 ```

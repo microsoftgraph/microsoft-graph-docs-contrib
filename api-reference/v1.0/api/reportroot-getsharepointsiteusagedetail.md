@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSharePointSiteUsageDetail"
 description: "Get details about SharePoint site usage."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -92,7 +92,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointsiteusageuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageDetail(period='D7')
 ```
 

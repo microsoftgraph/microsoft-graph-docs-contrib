@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
-description: "The Shared resource indicates a DriveItem has been shared with others."
-ms.date: 09/10/2017
 title: Shared
-localization_priority: Normal
+author: JeremyKelley
+description: The Shared resource indicates a DriveItem has been shared with others.
+ms.date: 09/10/2017
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: files
 ---
 # Shared resource type
 

@@ -8,16 +8,18 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var educationAssignment = new EducationAssignment
 {
-	DisplayName = "Week 1 reading assignment",
+	DisplayName = "Reading and review test 09.03 #5",
 	Instructions = new EducationItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "Read chapters 1 through 3"
+		Content = "Read chapter 5 and write your review"
 	},
-	DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z")
+	DueDateTime = DateTimeOffset.Parse("2021-09-10T00:00:00Z"),
+	AddedStudentAction = EducationAddedStudentAction.None,
+	AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndPublisher
 };
 
-await graphClient.Education.Classes["11021"].Assignments["19002"]
+await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"]
 	.Request()
 	.UpdateAsync(educationAssignment);
 

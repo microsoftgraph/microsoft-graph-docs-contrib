@@ -1,8 +1,8 @@
 ---
 title: "Get educationClass"
-description: "  group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members."
-localization_priority: Normal
-author: "mmast-msft"
+description: "Retrieve a class from the system."
+ms.localizationpriority: medium
+author: "mlafleur"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a class from the system. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students;  group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members.
+Retrieve a class from the system. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students; group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,9 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
+## Optional query parameters
+You can use `$select` to get specific group properties, including those that are not returned by default.
+
+For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -39,18 +41,22 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) object in the response body.
+
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass"
-}-->
+}
+-->
+
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
+GET https://graph.microsoft.com/v1.0/education/classes/7e4ec76c-8276-43ef-ba10-9aaa197cb212
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -59,57 +65,45 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationClass"
-} -->
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 224
+Content-Type: application/json
 
 {
-  "id": "11023",
-  "description": "English Level 2",
-  "classCode": "11023",
-  "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012",
-    }
-  },
-  "displayName": "English - Language 2",
-  "externalId": "301",
-  "externalName": "English Level 1",
-  "externalSource": "School of Fine Art",
-  "mailNickname": "fineartschool.net "
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes/$entity",
+    "id": "7e4ec76c-8276-43ef-ba10-9aaa197cb212",
+    "description": "Leadership 101 training",
+    "displayName": "Leadership 101",
+    "mailNickname": "Leadership101"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationClass",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->

@@ -1,94 +1,121 @@
 ---
 title: "Upload large files using the Microsoft Graph SDKs"
 description: "Provides guidance for uploading large files using the Microsoft Graph SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
 # Upload large files using the Microsoft Graph SDKs
 
-A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) to make it easier to upload large files. Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice. In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.
+A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) to make it easier to upload large files. Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice. In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.
+
+## Upload large file to OneDrive
 
 ## [C#](#tab/csharp)
 
 ```csharp
-using (var fileStream = System.IO.File.OpenRead(filePath))
+using var fileStream = System.IO.File.OpenRead(filePath);
+
+// Use properties to specify the conflict behavior
+// in this case, replace
+var uploadProps = new DriveItemUploadableProperties
 {
-    // Use properties to specify the conflict behavior
-    // in this case, replace
-    var uploadProps = new DriveItemUploadableProperties
+    AdditionalData = new Dictionary<string, object>
     {
-        ODataType = null,
-        AdditionalData = new Dictionary<string, object>
-        {
-            { "@microsoft.graph.conflictBehavior", "replace" }
-        }
-    };
-
-    // Create the upload session
-    // itemPath does not need to be a path to an existing item
-    var uploadSession = await graphClient.Me.Drive.Root
-        .ItemWithPath(itemPath)
-        .CreateUploadSession(uploadProps)
-        .Request()
-        .PostAsync();
-
-    // Max slice size must be a multiple of 320 KiB
-    int maxSliceSize = 320 * 1024;
-    var fileUploadTask =
-        new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
-
-    // Create a callback that is invoked after each slice is uploaded
-    IProgress<long> progress = new Progress<long>(progress => {
-        Console.WriteLine($"Uploaded {progress} bytes of {fileStream.Length} bytes");
-    });
-
-    try
-    {
-        // Upload the file
-        var uploadResult = await fileUploadTask.UploadAsync(progress);
-
-        if (uploadResult.UploadSucceeded)
-        {
-            // The ItemResponse object in the result represents the
-            // created item.
-            Console.WriteLine($"Upload complete, item ID: {uploadResult.ItemResponse.Id}");
-        }
-        else
-        {
-            Console.WriteLine("Upload failed");
-        }
+        { "@microsoft.graph.conflictBehavior", "replace" }
     }
-    catch (ServiceException ex)
-    {
-        Console.WriteLine($"Error uploading: {ex.ToString()}");
-    }
+};
+
+// Create the upload session
+// itemPath does not need to be a path to an existing item
+var uploadSession = await graphClient.Me.Drive.Root
+    .ItemWithPath(itemPath)
+    .CreateUploadSession(uploadProps)
+    .Request()
+    .PostAsync();
+
+// Max slice size must be a multiple of 320 KiB
+int maxSliceSize = 320 * 1024;
+var fileUploadTask =
+    new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
+
+var totalLength = fileStream.Length;
+// Create a callback that is invoked after each slice is uploaded
+IProgress<long> progress = new Progress<long>(prog => {
+    Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
+});
+
+try
+{
+    // Upload the file
+    var uploadResult = await fileUploadTask.UploadAsync(progress);
+
+    Console.WriteLine(uploadResult.UploadSucceeded ?
+        $"Upload complete, item ID: {uploadResult.ItemResponse.Id}" :
+        "Upload failed");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Error uploading: {ex.ToString()}");
 }
 ```
 
 ## [TypeScript](#tab/typescript)
 
 ```typescript
-const options: any = {
-    // Relative path from root to destination folder
-    path: itemPath,
-    // file is a File object, typically from an <input type="file"/>
-    fileName: file.name,
-    rangeSize: 320 * 1024
+const options: OneDriveLargeFileUploadOptions = {
+  // Relative path from root to destination folder
+  path: itemPath,
+  // file is a File object, typically from an <input type="file"/>
+  fileName: file.name,
+  rangeSize: 1024 * 1024,
+  uploadEventHandlers: {
+    // Called as each "slice" of the file is uploaded
+    progress: (range, e) => {
+      console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
+    }
   }
+};
 
-  try {
-    const uploadTask: MicrosoftGraph.OneDriveLargeFileUploadTask =
-      await MicrosoftGraph.OneDriveLargeFileUploadTask.create(client, file, options);
+try {
+  // Create FileUpload object
+  const fileObject = new FileUpload(file, file.name, file.size);
+  // Create a OneDrive upload task
+  const uploadTask = await OneDriveLargeFileUploadTask
+    .createTaskWithFileObject(client, fileObject, options);
 
-    const uploadedFile: DriveItem = await uploadTask.upload();
+  // Do the upload
+  const uploadResult: UploadResult = await uploadTask.upload();
 
-    console.log(JSON.stringify(`Uploaded file with ID: ${uploadedFile.id}`));
-    return `Uploaded file with ID: ${uploadedFile.id}`;
-  } catch (err) {
-    console.log(`Error uploading file: ${JSON.stringify(err)}`);
-    return `Error uploading file: ${JSON.stringify(err)}`;
-  }
+  // The response body will be of the corresponding type of the
+  // item being uploaded. For OneDrive, this is a DriveItem
+  const driveItem = uploadResult.responseBody as DriveItem;
+  console.log(`Uploaded file with ID: ${driveItem.id}`);
+  return `Uploaded file with ID: ${driveItem.id}`;
+} catch (err) {
+  console.log(`Error uploading file: ${JSON.stringify(err)}`);
+  return `Error uploading file: ${JSON.stringify(err)}`;
+}
+```
+
+As alternatives to using a `File` object to create a `FileUpload`, you can use a `ReadStream` object to create a `StreamUpload`.
+
+```typescript
+const fileName = "<FILE_NAME>";
+const stats = fs.statSync(`./test/sample_files/${fileName}`);
+const totalsize = stats.size;
+const readStream = fs.createReadStream(`./test/sample_files/${fileName}`);
+const fileObject = new StreamUpload(readStream, fileName, totalsize);
+```
+
+You can also create a custom implementation of the `FileObject` interface.
+
+```typescript
+interface FileObject<T> {
+  content: T;
+  name: string;
+  size: number;
+  sliceFile(range: Range): Promise<ArrayBuffer | Blob | Buffer>;
 }
 ```
 
@@ -101,7 +128,7 @@ InputStream fileStream = new FileInputStream(file);
 long streamSize = file.length();
 
 // Create a callback used by the upload provider
-IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
+IProgressCallback callback = new IProgressCallback() {
     @Override
     // Called after each slice of the file is uploaded
     public void progress(final long current, final long max) {
@@ -109,20 +136,11 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
             String.format("Uploaded %d bytes of %d total bytes", current, max)
         );
     }
-
-    @Override
-    public void success(final DriveItem result) {
-        System.out.println(
-            String.format("Uploaded file with ID: %s", result.id)
-        );
-    }
-
-    public void failure(final ClientException ex) {
-        System.out.println(
-            String.format("Error uploading file: %s", ex.getMessage())
-        );
-    }
 };
+
+DriveItemCreateUploadSessionParameterSet uploadParams =
+    DriveItemCreateUploadSessionParameterSet.newBuilder()
+        .withItem(new DriveItemUploadableProperties()).build();
 
 // Create an upload session
 UploadSession uploadSession = graphClient
@@ -132,28 +150,23 @@ UploadSession uploadSession = graphClient
     // itemPath like "/Folder/file.txt"
     // does not need to be a path to an existing item
     .itemWithPath(itemPath)
-    .createUploadSession(new DriveItemUploadableProperties())
+    .createUploadSession(uploadParams)
     .buildRequest()
     .post();
 
-ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
-    new ChunkedUploadProvider<DriveItem>
+LargeFileUploadTask<DriveItem> largeFileUploadTask =
+    new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
-// Config parameter is an array of integers
-// customConfig[0] indicates the max slice size
-// Max slice size must be a multiple of 320 KiB
-int[] customConfig = { 320 * 1024 };
-
 // Do the upload
-chunkedUploadProvider.upload(callback, customConfig);
+largeFileUploadTask.upload(0, null, callback);
 ```
 
 ---
 
 ## Resuming a file upload
 
-The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload). If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.
+The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload). If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.
 
 <!-- markdownlint-disable MD024 -->
 ### [C#](#tab/csharp)
@@ -165,7 +178,7 @@ fileUploadTask.ResumeAsync(progress);
 ### [TypeScript](#tab/typescript)
 
 ```typescript
-const resumedFile: DriveItem = await uploadTask.resume();
+const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 ```
 
 ### [Java](#tab/java)
@@ -174,4 +187,172 @@ const resumedFile: DriveItem = await uploadTask.resume();
 > The Java SDK does not currently support resuming in-progress downloads.
 
 ---
+
+## Upload large attachment to Outlook message
+
+### [C#](#tab/csharp)
+
+```csharp
+// Create message
+var draftMessage = new Message
+{
+    Subject = "Large attachment"
+};
+
+var savedDraft = await graphClient.Me
+    .Messages
+    .Request()
+    .AddAsync(draftMessage);
+
+using var fileStream = System.IO.File.OpenRead(filePath);
+var largeAttachment = new AttachmentItem
+{
+    AttachmentType = AttachmentType.File,
+    Name = "largefile.gif",
+    Size = fileStream.Length
+};
+
+var uploadSession = await graphClient.Me
+    .Messages[savedDraft.Id]
+    .Attachments
+    .CreateUploadSession(largeAttachment)
+    .Request()
+    .PostAsync();
+
+// Max slice size must be a multiple of 320 KiB
+int maxSliceSize = 320 * 1024;
+var fileUploadTask =
+    new LargeFileUploadTask<FileAttachment>(uploadSession, fileStream, maxSliceSize);
+
+var totalLength = fileStream.Length;
+// Create a callback that is invoked after each slice is uploaded
+IProgress<long> progress = new Progress<long>(prog => {
+    Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
+});
+
+try
+{
+    // Upload the file
+    var uploadResult = await fileUploadTask.UploadAsync(progress);
+
+    Console.WriteLine(uploadResult.UploadSucceeded ? "Upload complete" : "Upload failed");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Error uploading: {ex.ToString()}");
+}
+```
+
+### [TypeScript](#tab/typescript)
+
+```typescript
+// Create an attachment item payload
+// file is a File object
+const payload = {
+  AttachmentItem: {
+    attachmentType: 'file',
+    name: file.name,
+    size: file.size
+  }
+};
+
+const options: LargeFileUploadTaskOptions = {
+  rangeSize: 1024 * 1024,
+  // Called as each "slice" of the file is uploaded
+  uploadEventHandlers: {
+    progress: (range, e) => {
+      console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
+    }
+  }
+};
+
+try {
+  // Create a draft message
+  const draftMsg: Message = await client.api('/me/messages')
+    .post({
+      subject: 'Large file attachment'
+    });
+
+  // Create upload session using draft message's ID
+  const uploadSession = await LargeFileUploadTask
+    .createUploadSession(client,
+      `/me/messages/${draftMsg.id}/attachments/createUploadSession`,
+      payload);
+
+  // Create file upload
+  // Note you can use StreamUpload or custom implementation of FileObject instead
+  const fileObject = new FileUpload(file, file.name, file.size);
+
+  // Create upload task
+  const uploadTask = new LargeFileUploadTask(client, fileObject, uploadSession, options);
+
+  // Upload the file
+  const uploadResult: UploadResult = await uploadTask.upload();
+  return 'Attachment uploaded';
+} catch (err) {
+  console.log(`Error uploading file: ${JSON.stringify(err)}`);
+  return `Error uploading file: ${JSON.stringify(err)}`;
+}
+```
+
+### [Java](#tab/java)
+
+```java
+final String[] scopes = { "Mail.ReadWrite" };
+ensureGraphClient(scopes);
+
+final String localFilePath = "largefile.gif";
+
+final Message draftMessage = new Message();
+draftMessage.subject = "Large attachment";
+
+final Message savedDraft = graphClient
+    .me()
+    .messages()
+    .buildRequest()
+    .post(draftMessage);
+
+File file = new File(localFilePath);
+// Get an input stream for the file
+InputStream fileStream = new FileInputStream(file);
+
+final AttachmentItem largeAttachment = new AttachmentItem();
+largeAttachment.attachmentType = AttachmentType.FILE;
+largeAttachment.name = "largefile.gif";
+largeAttachment.size = file.length();
+
+final AttachmentCreateUploadSessionParameterSet upParams =
+    AttachmentCreateUploadSessionParameterSet.newBuilder()
+    .withAttachmentItem(largeAttachment)
+    .build();
+
+final UploadSession uploadSession = graphClient
+    .me()
+    .messages(savedDraft.id)
+    .attachments()
+    .createUploadSession(upParams)
+    .buildRequest()
+    .post();
+
+// Create a callback used by the upload provider
+IProgressCallback callback = new IProgressCallback() {
+    @Override
+    // Called after each slice of the file is uploaded
+    public void progress(final long current, final long max) {
+        System.out.println(
+            String.format("Uploaded %d bytes of %d total bytes", current, max)
+        );
+    }
+};
+
+LargeFileUploadTask<FileAttachment> uploadTask =
+    new LargeFileUploadTask<FileAttachment>
+        (uploadSession, graphClient, fileStream, file.length(), FileAttachment.class);
+
+// Do the upload
+uploadTask.upload(0, null, callback);
+```
+
+---
+
 <!-- markdownlint-enable MD024 -->

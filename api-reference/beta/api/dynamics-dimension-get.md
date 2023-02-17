@@ -4,7 +4,7 @@ description: Gets a dimension object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```
+```http
 GET /financials/companies/{id}/dimensions/{id}
 ```
 
@@ -48,18 +48,18 @@ If successful, this method returns a `200 OK` response code and a **dimensions**
 
 ## Example
 
-**Request**
+### Request
 
-Here is an example of the request.
-```json
+The following is an example of the request.
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {

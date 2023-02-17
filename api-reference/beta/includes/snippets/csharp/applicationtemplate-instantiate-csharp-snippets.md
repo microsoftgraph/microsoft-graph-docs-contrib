@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var displayName = "My custom name";
+var displayName = "testProperties";
 
-await graphClient.ApplicationTemplates["{id}"]
+await graphClient.ApplicationTemplates["{applicationTemplate-id}"]
 	.Instantiate(displayName)
 	.Request()
 	.PostAsync();

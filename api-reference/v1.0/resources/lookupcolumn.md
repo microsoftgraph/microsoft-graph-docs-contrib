@@ -1,11 +1,10 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The lookupColumn on a columnDefinition resource indicates that the column's values are looked up from another source in the site."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

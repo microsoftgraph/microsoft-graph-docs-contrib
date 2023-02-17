@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementAutopilotPolicyStatusDetail resource type"
 description: "Policy status detail item contained by an autopilot event."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # deviceManagementAutopilotPolicyStatusDetail resource type
 
 Namespace: microsoft.graph
-
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -35,6 +33,7 @@ Policy status detail item contained by an autopilot event.
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|The policy compliance status. Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
 |trackedOnEnrollmentStatus|Boolean|Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session|
 |lastReportedDateTime|DateTimeOffset|Timestamp of the reported policy status|
+|errorCode|Int32|The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.|
 
 ## Relationships
 None
@@ -55,12 +54,7 @@ Here is a JSON representation of the resource.
   "policyType": "String",
   "complianceStatus": "String",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "String (timestamp)"
+  "lastReportedDateTime": "String (timestamp)",
+  "errorCode": 1024
 }
 ```
-
-
-
-
-
-

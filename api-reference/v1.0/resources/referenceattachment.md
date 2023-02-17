@@ -1,9 +1,9 @@
 ---
 title: "referenceAttachment resource type"
 description: "A link to a file (such as a text file or Word document) on a OneDrive for Business cloud drive or other supported storage locations, attached to an event, message, or post."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 doc_type: resourcePageType
 ---
 
@@ -25,10 +25,10 @@ Derived from [attachment](attachment.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String|The content type of the attachment.|
+|contentType|String|The content type of the attachment. Returned as `null` by default, when not set explicitly. Optional.|
 |id|String|The attachment ID.  Read-only.|
 |isInline|Boolean|Set to true if the attachment appears inline in the body of the embedding object.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |name|String|The text that is displayed below the icon representing the embedded attachment. This does not need to be the actual file name.|
 |size|Int32|The size of the metadata that is stored on the message for the attachment in bytes. This value does not indicate the size of the actual file.|
 

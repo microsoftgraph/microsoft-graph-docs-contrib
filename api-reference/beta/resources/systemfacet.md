@@ -3,9 +3,9 @@ author: daspek
 description: <descripton>
 ms.date: 09/12/2017
 title: SystemFacet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
 # System facet
 

@@ -1,7 +1,7 @@
 ---
 title: "List deviceCompliancePolicies"
 description: "List properties and relationships of the deviceCompliancePolicy objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -83,12 +83,3 @@ Content-Length: 467
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

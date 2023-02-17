@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph error responses and resource types"
-description: "This topic describes some of the errors that can be returned in Microsoft Graph responses."
-localization_priority: Priority
+description: "Learn about errors that can be returned in Microsoft Graph responses. Errors are returned using standard HTTP status codes and a JSON error response object."
+ms.localizationpriority: high
 ---
 
 # Microsoft Graph error responses and resource types
@@ -47,7 +47,7 @@ named **error**. This object includes all the details of the error. You can use 
     "code": "invalidRange",
     "message": "Uploaded fragment overlaps with existing data.",
     "innerError": {
-      "requestId": "request-id",
+      "request-id": "request-id",
       "date": "date-time"
     }
   }
@@ -89,7 +89,7 @@ properties:
 }
 ```
 
-| Property name  | Value                  | Description\                                                                                               |
+| Property name  | Value                  | Description                                                                                                |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
 | **code**       | string                 | An error code string for the error that occurred                                                            |
 | **message**    | string                 | A developer ready message about the error that occurred. This should not be displayed to the user directly. |
@@ -150,7 +150,7 @@ For an example that shows how to properly handle errors, see
 
 The `message` property at the root contains an error message intended for the
 developer to read. Error messages are not localized and shouldn't be displayed
-directly to the user. When handling errors, your code should not key off of
+directly to the user. When handling errors, your code should not branch based on
 `message` values because they can change at any time, and they often contain
 dynamic information specific to the failed request. You should only code
 against error codes returned in `code` properties.
@@ -186,11 +186,13 @@ time, so it is important that all apps be able to handle the [basic error codes]
 | **maxItemCountExceeded**           | Max limit on number of Items is reached.
 | **maxQueryLengthExceeded**         | Max query length exceeded.
 | **maxStreamSizeExceeded**          | Maximum stream size exceeded.
-| **parameterIsTooLong**             | Parameter Exceeds Maximum Length.
-| **parameterIsTooSmall**            | Parameter is smaller then minimum value.
+| **parameterIsTooLong**             | Parameter exceeds maximum length.
+| **parameterIsTooSmall**            | Parameter is smaller than minimum value.
 | **pathIsTooLong**                  | Path exceeds maximum length.
 | **pathTooDeep**                    | Folder hierarchy depth limit reached.
 | **propertyNotUpdateable**          | Property not updateable.
+| **provisioningNotAllowed**         | Request requires account provisioning, which is not allowed.
+| **resourceBeingProvisioned**       | Requested resource is being provisioned.
 | **resyncApplyDifferences**         | Resync required. Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about.
 | **resyncRequired**                 | Resync is required.
 | **resyncUploadDifferences**        | Resync required. Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).

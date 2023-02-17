@@ -1,7 +1,7 @@
 ---
 title: "windowsPhone81AppXBundle resource type"
-description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps."
-author: "dougeby"
+description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps. Inherits from graph.windowsPhone81AppX (which is also to be deprecated at the same time)."
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps.
+Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps. Inherits from graph.windowsPhone81AppX (which is also to be deprecated at the same time).
 
 
 Inherits from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
@@ -130,7 +130,11 @@ Here is a JSON representation of the resource.
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "phoneProductIdentifier": "String",
   "phonePublisherId": "String",
@@ -154,15 +158,13 @@ Here is a JSON representation of the resource.
         "v10_1709": true,
         "v10_1803": true,
         "v10_1809": true,
-        "v10_1903": true
+        "v10_1903": true,
+        "v10_1909": true,
+        "v10_2004": true,
+        "v10_2H20": true,
+        "v10_21H1": true
       }
     }
   ]
 }
 ```
-
-
-
-
-
-

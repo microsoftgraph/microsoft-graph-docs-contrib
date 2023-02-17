@@ -1,15 +1,17 @@
 ---
 title: "Update calendarpermission"
 description: "Update the properties of calendarpermission object."
-localization_priority: Normal
-author: "sochowdh"
+author: "iamgirishck"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
 # Update calendarPermission
 
-Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.
+Namespace: microsoft.graph
+
+Update the permissions assigned to an existing sharee or delegate, through the corresponding <b>[calendarPermission](../resources/calendarpermission.md)</b> object for a calendar.
 
 ## Permissions
 
@@ -44,7 +46,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -64,7 +67,6 @@ If successful, this method returns a `200 OK` response code and an updated [cale
 
 The following example changes the permission level of the sharee, Adele, to `write`.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -80,6 +82,7 @@ Content-type: application/json
   "role": "write"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,22 +91,29 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-calendarpermission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-calendarpermission-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -117,7 +127,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",
@@ -143,4 +153,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

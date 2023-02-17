@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts"
 description: "Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -81,7 +81,7 @@ The following is an example of the request.
   "name": "reportroot_getskypeforbusinesspeertopeeractivityusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessPeerToPeerActivityUserCounts(period='D7')
 ```
 

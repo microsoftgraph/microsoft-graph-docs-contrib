@@ -10,12 +10,19 @@ var user = new User
 {
 	BusinessPhones = new List<String>()
 	{
-		"businessPhones-value"
+		"+1 425 555 0109"
 	},
-	OfficeLocation = "city-value"
+	OfficeLocation = "18/2111",
+	AuthorizationInfo = new AuthorizationInfo
+	{
+		CertificateUserIds = new List<String>()
+		{
+			"5432109876543210@mil"
+		}
+	}
 };
 
-await graphClient.Users["{id}"]
+await graphClient.Users["{user-id}"]
 	.Request()
 	.UpdateAsync(user);
 

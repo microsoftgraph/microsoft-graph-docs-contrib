@@ -1,7 +1,7 @@
 ---
 title: "SharePoint sites and content API overview"
-description: "SharePoint is your mobile, intelligent intranet. With SharePoint, users can share and manage content, knowledge, and applications to empower teamwork, find information, and collaborate across an organization. You can use the SharePoint REST API in Microsoft Graph to integrate your solutions with SharePoint sites and content."
-localization_priority: Priority
+description: "Use the SharePoint REST API in Microsoft Graph to integrate solutions with SharePoint sites and content that users collaborate on and share across an organization."
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 ms.custom: scenarios:getting-started
 ---
@@ -20,7 +20,7 @@ SharePoint sites power team collaboration and communication. Microsoft 365 group
 ### Unleash your data with SharePoint lists
 
 [Lists][list] are the foundation for data storage in SharePoint.
-[Create lists][create] to store a variety of business data, from a simple customer contact list to a custom business application, fronted with PowerApps.
+[Create lists][create] to store a variety of business data, from a simple customer contact list to a custom business application, fronted with Power Apps.
 When you use [columns][] to define your schema, SharePoint can protect the integrity of your data as well as enable  rich indexing, querying, and search capabilities.
 
 ### Bring the power of lists to your team's files
@@ -49,22 +49,22 @@ To learn about these models in more detail, visit the [SharePoint Dev Center][] 
 ## API reference
 Looking for the API reference for this service?
 
-- [SharePoint API in Microsoft Graph v1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
-- [SharePoint API in Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta)
+- [SharePoint API in Microsoft Graph v1.0](/graph/api/resources/sharepoint)
+- [SharePoint API in Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
-Get started with SharePoint in Microsoft Graph by learning more about [working with sites](/graph/api/resources/sharepoint?view=graph-rest-1.0).
+Get started with SharePoint in Microsoft Graph by learning more about [working with sites](/graph/api/resources/sharepoint).
 
-[list]: /graph/api/resources/list?view=graph-rest-1.0
-[columns]: /graph/api/resources/columndefinition?view=graph-rest-1.0
-[list type]: /graph/api/resources/listinfo?view=graph-rest-1.0
-[create]: /graph/api/list-create?view=graph-rest-1.0
-[querying]: /graph/api/listitem-get?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
-[OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
-[SharePoint Add-ins]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
+[list]: /graph/api/resources/list
+[columns]: /graph/api/resources/columndefinition
+[list type]: /graph/api/resources/listinfo
+[create]: /graph/api/list-create
+[querying]: /graph/api/listitem-get
+[drive]: /graph/api/resources/drive
+[OneDrive API]: /graph/api/resources/onedrive
+[SharePoint Framework]: /sharepoint/dev/spfx/sharepoint-framework-overview
+[SharePoint Add-ins]: /sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint Dev Center]: https://developer.microsoft.com/sharepoint
-[SharePoint Developer Docs]: https://aka.ms/spdev-docs
-[SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0
+[SharePoint Developer Docs]: /sharepoint/dev/
+[SharePoint]: /graph/api/resources/sharepoint

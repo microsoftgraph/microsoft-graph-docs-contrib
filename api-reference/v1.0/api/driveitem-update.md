@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Update a file or folder
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
-description: "Update the metadata for a DriveItem by ID or path."
+description: "Update the metadata for a driveItem by ID or path."
 doc_type: apiPageType
 ---
 # Update DriveItem properties
 
 Namespace: microsoft.graph
 
-Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
+Update the metadata for a [driveItem](../resources/driveitem.md) by ID or [path](/graph/onedrive-addressing-driveitems#path-based-addressing).
 
 You can also use update to [move an item](driveitem-move.md) to another parent by updating the item's **parentReference** property.
 
@@ -71,16 +70,13 @@ Content-type: application/json
   "name": "new-file-name.docx"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-item-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

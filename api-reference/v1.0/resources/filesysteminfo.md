@@ -1,9 +1,8 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FileSystemInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The FileSystemInfo resource contains properties that are reported by the device's local file system for the local version of an item."
 ms.prod: ""
 doc_type: resourcePageType

@@ -1,12 +1,13 @@
 ---
 author: daspek
-description: "The contentTypeOrder resource specifies in which order the Content Type will appear in the selection UI."
+description: The contentTypeOrder resource specifies in which order the Content Type will appear in the selection UI.
 ms.date: 09/13/2017
 title: ContentTypeOrder
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
+
 # ContentTypeOrder resource type
 
 Namespace: microsoft.graph
@@ -18,6 +19,7 @@ The **contentTypeOrder** resource specifies in which order the Content Type will
 ## JSON representation
 
 Here is a JSON representation of a **contentTypeOrder** resource.
+
 <!-- { "blockType": "resource", "@type": "microsoft.graph.contentTypeOrder", "@type.aka": "oneDrive.contentTypeOrderFacet" } -->
 
 ```json
@@ -29,10 +31,10 @@ Here is a JSON representation of a **contentTypeOrder** resource.
 
 ## Properties
 
-| Property name | Type    | Description
-|:--------------|:--------|:----------------------------------------------------
-| **default**   | boolean | Whether this is the default Content Type
-| **position**  | Int32   | Specifies the position in which the Content Type appears in the selection UI.
+| Property     | Type    | Description                                                                   |
+| :----------- | :------ | :---------------------------------------------------------------------------- |
+| **default**  | boolean | Whether this is the default Content Type                                      |
+| **position** | Int32   | Specifies the position in which the Content Type appears in the selection UI. |
 
 <!--
 {
@@ -44,5 +46,3 @@ Here is a JSON representation of a **contentTypeOrder** resource.
   "suppressions": []
 }
 -->
-
-

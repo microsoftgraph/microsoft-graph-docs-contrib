@@ -1,7 +1,7 @@
 ---
 title: "validateComplianceScript action"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -79,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 786
+Content-Length: 1045
 
 {
   "value": {
@@ -89,7 +89,9 @@ Content-Length: 786
         "@odata.type": "microsoft.graph.deviceComplianceScriptRule",
         "settingName": "Setting Name value",
         "operator": "and",
+        "deviceComplianceScriptRulOperator": "and",
         "dataType": "boolean",
+        "deviceComplianceScriptRuleDataType": "boolean",
         "operand": "Operand value"
       }
     ],
@@ -97,6 +99,7 @@ Content-Length: 786
       {
         "@odata.type": "microsoft.graph.deviceComplianceScriptError",
         "code": "jsonFileInvalid",
+        "deviceComplianceScriptRulesValidationError": "jsonFileInvalid",
         "message": "Message value"
       }
     ],
@@ -104,6 +107,7 @@ Content-Length: 786
       {
         "@odata.type": "microsoft.graph.deviceComplianceScriptRuleError",
         "code": "jsonFileInvalid",
+        "deviceComplianceScriptRulesValidationError": "jsonFileInvalid",
         "message": "Message value",
         "settingName": "Setting Name value"
       }
@@ -111,9 +115,3 @@ Content-Length: 786
   }
 }
 ```
-
-
-
-
-
-

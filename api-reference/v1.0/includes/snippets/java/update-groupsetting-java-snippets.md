@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GroupSetting groupSetting = new GroupSetting();
-groupSetting.displayName = "GroupSettings";
-groupSetting.templateId = "08d542b9-071f-4e16-94b0-74abb372e3d9";
 LinkedList<SettingValue> valuesList = new LinkedList<SettingValue>();
 SettingValue values = new SettingValue();
 values.name = "AllowToAddGuests";
-values.value = "false";
+values.value = "true";
 valuesList.add(values);
 groupSetting.values = valuesList;
 
-graphClient.groups("{id}").settings("{id}")
+graphClient.groups("0167b5af-f3d1-4910-82d2-398747fa381c").settings("fa6df613-159b-4f94-add2-7093f961900b")
 	.buildRequest()
 	.patch(groupSetting);
 

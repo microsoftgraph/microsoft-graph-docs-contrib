@@ -1,9 +1,9 @@
 ---
 title: "modifiedProperty resource type"
 description: "Indicates all the properties on an Azure AD resource that have been modified, including the old and new values."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "azure-ad"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

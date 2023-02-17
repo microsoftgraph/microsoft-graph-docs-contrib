@@ -2,7 +2,7 @@
 title: "toneInfo resource type"
 description: "A single DTMF event."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -18,7 +18,7 @@ A single DTMF event.
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
 | sequenceId | Int64 | An incremental identifier used for ordering DTMF events. |
-| tone | String | Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound` |
+| tone | tone | Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
 
 ## JSON representation
 

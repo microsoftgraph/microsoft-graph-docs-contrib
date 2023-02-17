@@ -1,9 +1,9 @@
 ---
 title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
-localization_priority: Normal
-author: "harini84"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "iamgirishck"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The recurrence pattern and range.
+The recurrence pattern and range. This shared object is used to define the recurrence of the following objects:
++ [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects in Azure AD access reviews APIs
++ [event](event.md) objects in the calendar API
++ [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) and [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) objects in PIM
++ [accessPackageAssignment](accesspackageassignment.md) objects in Azure AD entitlement management.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[RecurrencePattern](recurrencepattern.md)|The frequency of an event.|
-|range|[RecurrenceRange](recurrencerange.md)|The duration of an event.|
+|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li> Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.|
+|range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
 
 ## JSON representation
 

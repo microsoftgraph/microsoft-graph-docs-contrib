@@ -1,0 +1,57 @@
+---
+title: "bucketAggregationDefinition resource type"
+description: "Provides the details on how to generate the agregations in the results"
+ms.localizationpriority: medium
+author: "njerigrevious"
+ms.prod: "search"
+doc_type: "resourcePageType"
+---
+
+# bucketAggregationDefinition resource type
+
+Namespace: microsoft.graph
+
+Provides the details on how to generate the agregations in the results.
+
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|isDescending|Boolean|`True` to specify the sort order as descending. The default is `false`, with the sort order as ascending. Optional.|
+|minimumCount|Int32|The minimum number of items that should be present in the aggregation to be returned in a bucket. Optional.|
+|prefixFilter|String|A filter to define a matching criteria. The key should start with the specified prefix to be returned in the response. Optional.|
+|ranges|[bucketAggregationRange](bucketaggregationrange.md) collection|Specifies the manual ranges to compute the aggregations. This is only valid for non-string refiners of date or numeric type. Optional.|
+|sortBy|bucketAggregationSortProperty| The possible values are `count` to sort by the number of matches in the aggregation, `keyAsString`to sort alphabeticaly based on the key in the aggregation, `keyAsNumber` for numerical sorting based on the key in the aggregation. Required.
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.bucketAggregationDefinition",
+  "baseType": null
+}-->
+
+```json
+{
+  "isDescending": true,
+  "minimumCount": 1024,
+  "prefixFilter": "String",
+  "ranges": [{"@odata.type": "microsoft.graph.bucketAggregationRange"}],
+  "sortBy": "String"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "sortProperty resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

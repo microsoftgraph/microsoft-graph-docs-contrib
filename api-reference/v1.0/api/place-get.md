@@ -1,7 +1,7 @@
 ---
 title: "Get place"
 description: "Retrieve the properties and relationships of a place object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "apiPageType"
@@ -68,12 +68,14 @@ The following example specifies the **id** of a **room** to get its properties.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_room"
+  "name": "get_room",
+  "sampleKeys": ["979e9793-3e91-40eb-b18c-0ea937893956"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
+GET https://graph.microsoft.com/v1.0/places/979e9793-3e91-40eb-b18c-0ea937893956
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,12 +84,20 @@ GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-room-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-room-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-room-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-room-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -97,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 The following is an example of the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -112,36 +122,13 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.room",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "cf100@contoso.com",
-    "displayName": "Conf Room 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
-    },
-    "phone": "000-000-0000",
-    "nickname": "Conf Room",
-    "label": "100",
-    "capacity": "50",
-    "building": "1",
-    "floorNumber": 1,
-    "isManaged": true,
-    "isWheelchairAccessible": false,
-    "bookingType": "standard",
-    "tags": [
-      "bean bags"
-    ],
-    "audioDeviceName": null,
-    "videoDeviceName": null,
-    "displayDevice": "surface hub"
+    "@odata.type": "#microsoft.graph.roomList",
+    "id": "979e9793-3e91-40eb-b18c-0ea937893956",
+    "displayName": "Building 2 Rooms",
+    "address": null,
+    "geoCoordinates": null,
+    "phone": "",
+    "emailAddress": "Building2Rooms@M365x214355.onmicrosoft.com"
 }
 ```
 
@@ -154,12 +141,14 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roomlist"
+  "name": "get_roomlist",
+  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
+GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -168,12 +157,20 @@ GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-roomlist-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roomlist-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roomlist-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-roomlist-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -184,7 +181,7 @@ GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 
 The following is an example of the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -198,20 +195,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
-  "@odata.type": "#microsoft.graph.roomList",
-  "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
-  "displayName": "Building 1",
-  "address": {
-    "street": "4567 Main Street",
-    "city": "Buffalo",
-    "state": "NY",
-    "postalCode": "98052",
-    "countryOrRegion": "USA"
-  },
-  "geocoordinates": null,
-  "phone": null,
-  "emailAddress": "bldg1@contoso.com"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.roomList",
+    "id": "979e9793-3e91-40eb-b18c-0ea937893956",
+    "displayName": "Building 2 Rooms",
+    "address": null,
+    "geoCoordinates": null,
+    "phone": "",
+    "emailAddress": "Building2Rooms@M365x214355.onmicrosoft.com"
 }
 ```
 

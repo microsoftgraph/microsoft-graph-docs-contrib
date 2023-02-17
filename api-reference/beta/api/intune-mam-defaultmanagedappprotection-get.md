@@ -1,7 +1,7 @@
 ---
 title: "Get defaultManagedAppProtection"
 description: "Read properties and relationships of the defaultManagedAppProtection object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5300
+Content-Length: 6313
 
 {
   "value": {
@@ -101,6 +101,9 @@ Content-Length: 5300
     "printBlocked": true,
     "fingerprintBlocked": true,
     "disableAppPinIfDevicePinIsSet": true,
+    "maximumRequiredOsVersion": "Maximum Required Os Version value",
+    "maximumWarningOsVersion": "Maximum Warning Os Version value",
+    "maximumWipeOsVersion": "Maximum Wipe Os Version value",
     "minimumRequiredOsVersion": "Minimum Required Os Version value",
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
@@ -116,12 +119,14 @@ Content-Length: 5300
     "managedBrowser": "microsoftEdge",
     "maximumAllowedDeviceThreatLevel": "secured",
     "mobileThreatDefenseRemediationAction": "wipe",
+    "mobileThreatDefensePartnerPriority": "thirdPartyPartnerOverDefender",
     "blockDataIngestionIntoOrganizationDocuments": true,
     "allowedDataIngestionLocations": [
       "sharePoint"
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
     "dialerRestrictionLevel": "managedApps",
+    "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -180,13 +185,20 @@ Content-Length: 5300
     "customDialerAppPackageId": "Custom Dialer App Package Id value",
     "customDialerAppDisplayName": "Custom Dialer App Display Name value",
     "biometricAuthenticationBlocked": true,
-    "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
+    "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+    "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+    "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+    "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+    "deviceLockRequired": true,
+    "appActionIfDeviceLockNotSet": "wipe",
+    "connectToVpnOnLaunch": true,
+    "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
+    "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
+    "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
+    "requireClass3Biometrics": true,
+    "requirePinAfterBiometricChange": true,
+    "fingerprintAndBiometricEnabled": true,
+    "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
   }
 }
 ```
-
-
-
-
-
-

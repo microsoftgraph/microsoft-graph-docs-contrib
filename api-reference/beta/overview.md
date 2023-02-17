@@ -1,20 +1,21 @@
 ---
-title: "Microsoft Graph beta endpoint reference"
-description: "The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and are not yet generally available. We invite you to try these APIs and provide your feedback via the following channels:"
-localization_priority: Priority
+title: "Microsoft Graph REST API beta endpoint reference"
+description: "Documentation for the Microsoft Graph REST API beta endpoint, which includes APIs that are currently in preview and are not yet generally available."
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "non-product-specific"
 author: "angelgolfer-ms"
 ---
 
-# Microsoft Graph beta endpoint reference
+# Microsoft Graph REST API beta endpoint reference
 
-The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and are not yet generally available. We invite you to try these APIs and provide your feedback via the following channels:
+The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and aren't yet generally available. We invite you to try these APIs and provide your feedback via the following channels:
 
 - [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) - For feedback on the Preview APIs. Tag with `beta`.
-- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) - For questions or help with your code. Tag with `microsoftgraph`.
+- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-api) - For questions or help with your code. Tag with `microsoft-graph-api`.
 
-> **Note:** The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps. 
+> [!NOTE]
+> The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps.
 
 ## Call the beta endpoint
 

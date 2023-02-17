@@ -1,10 +1,10 @@
 ---
-title: Business Central API Overview
-description: Overview of why you want to integrate your solutions with Business Central APIs.
+title: "Dynamics 365 Business Central API overview (preview)"
+description: "Use Dynamics 365 Business Central, an all-in-one business management solution, to manage financials, automate your supply chain, and keep projects under budget."
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 ---
 
@@ -29,10 +29,7 @@ Microsoft Graph provides access to your financial reports. Connect BI tools and 
 Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](./auth/index.yml).
 
 ## API reference
+
 Looking for the API reference for this service?
 
-See [Dynamics 365 Business Central API in Microsoft Graph beta](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta).
-
-
-## Next steps
-Find out more about the [Business Central API and use cases](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta) supported in Microsoft Graph.
+- [Dynamics 365 Business Central API in Microsoft Graph beta](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta&preserve-view=true)

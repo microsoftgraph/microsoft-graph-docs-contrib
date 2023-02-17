@@ -1,22 +1,19 @@
 ---
-title: "DriveItemVersion resource type"
-description: "The **DriveItemVersion** resource represents a specific version of a DriveItem."
-localization_priority: Normal
+title: "driveItemVersion resource type"
+description: "Represents a specific version of a DriveItem."
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 author: "JeremyKelley"
 doc_type: resourcePageType
 ---
 
-# DriveItemVersion resource type
+# driveItemVersion resource type
 
 Namespace: microsoft.graph
 
-The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).
+Represents a specific version of a [driveItem](driveitem.md).
 
-
-## Tasks on DriveItemVersion resources
-
-The following tasks are available for driveItemVersion resources.
+The following tasks are available for **driveItemVersion** resources.
 
 |            Common task             |         HTTP method         |
 | :--------------------------------- | :-------------------------- |
@@ -31,6 +28,28 @@ The following tasks are available for driveItemVersion resources.
 [version-restore]: ../api/driveitemversion-restore.md
 
 In the previous table, the examples use `/drive`, but there are many valid requests.
+
+## Properties
+
+|      Property name       |                         Type                         |                               Description                               |
+| :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
+| **content**              | Stream                                               | The content stream for this version of the item.                        |
+| **id**                   | string                                               | The ID of the version. Read-only.                                       |
+| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
+| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
+| **size**                 | Int64                                                | Indicates the size of the content stream for this version of the item.  |
+
+
+## Instance attributes
+
+| Property name                     | Type   | Description
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft.graph.downloadUrl      | string | A URL that can be used to download this version of the file's content. Authentication is not required with this URL. Read-only.
+
+>**Notes:** 
+>The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL will only be available for a short period of time (1 hour) before it is invalidated.
+Removing file permissions for a user might not immediately invalidate the URL.
 
 ## JSON representation
 
@@ -48,20 +67,13 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
   "publication": { "@odata.type": "microsoft.graph.publicationFacet" },
-  "size": 12356
+  "size": 12356,
+
+  /* instance annotations */
+  "@microsoft.graph.downloadUrl": "url",
 }
 ```
 
-## Properties
-
-|      Property name       |                         Type                         |                               Description                               |
-| :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | The ID of the version. Read-only.                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
-| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
-| **size**                 | Int64                                                | Indicates the size of the content stream for this version of the item.  |
-| **content**              | Stream                                               | The content stream for this version of the item.                        |
 
 <!-- {
   "type": "#page.annotation",
@@ -70,4 +82,3 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
-

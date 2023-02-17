@@ -1,17 +1,19 @@
 ---
-title: "Get informationProtectionLabel"
-description: "Retrieve the properties and relationships of the specified informationProtectionLabel object."
-localization_priority: Normal
+title: "Get informationProtectionLabel (deprecated)"
+description: "Retrieve the properties and relationships of the specified informationProtectionLabel object. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# Get informationProtectionLabel
+# Get informationProtectionLabel (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
 
@@ -73,6 +75,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-informationprotectionlabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,8 +84,20 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-informationprotectionlabel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-informationprotectionlabel-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-informationprotectionlabel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-informationprotectionlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-informationprotectionlabel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-informationprotectionlabel-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -92,7 +107,7 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -106,14 +121,14 @@ Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels/$entity",
-    "id": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
-    "name": "LabelWithFooterAndHeaderActions_Tests",
-    "description": "",
-    "color": "",
-    "sensitivity": 12,
-    "tooltip": "LabelWithFooterAndHeaderActions_Tests",
-    "isActive": true
+  "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
+  "name": "Highly Confidential",
+  "description": "Consult Contoso data labeling policy for more details.",
+  "color": "",
+  "sensitivity": 3,
+  "tooltip": "Data classified as Contoso Highly Confidential.",
+  "isActive": true,
+  "parent": null
 }
 ```
 

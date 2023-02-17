@@ -1,7 +1,7 @@
 ---
 title: "managedAndroidLobApp resource type"
 description: "Contains properties and inherited properties for Managed Android Line Of Business apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -58,11 +58,11 @@ Inherits from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |packageId|String|The package identifier.|
-|identityName|String|The Identity Name.|
+|identityName|String|The Identity Name. This property is deprecated starting in February 2023 (Release 2302).|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of managed Android Line of Business (LoB) app.|
 |versionCode|String|The version code of managed Android Line of Business (LoB) app.|
-|identityVersion|String|The identity version.|
+|identityVersion|String|The identity version. This property is deprecated starting in February 2023 (Release 2302).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -134,16 +134,12 @@ Here is a JSON representation of the resource.
     "v7_1": true,
     "v8_0": true,
     "v8_1": true,
-    "v9_0": true
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "String",
   "versionCode": "String",
   "identityVersion": "String"
 }
 ```
-
-
-
-
-
-

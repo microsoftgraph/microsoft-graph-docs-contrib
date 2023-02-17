@@ -1,7 +1,7 @@
 ---
 title: "Range: insert"
 description: "Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/insert
-POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
-POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
+POST /me/drive/items/{id}/workbook/names/{name}/range/insert
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/insert
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/insert
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/insert
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/insert
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
 ## Request headers
@@ -61,12 +64,12 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/insert
 Content-type: application/json
-Content-length: 28
 
 {
   "shift": "shift-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-insert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,15 +78,15 @@ Content-length: 28
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-insert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/range-insert-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-insert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +95,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

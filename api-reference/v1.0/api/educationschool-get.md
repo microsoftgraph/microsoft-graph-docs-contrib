@@ -1,8 +1,8 @@
 ---
 title: "Get educationSchool"
-description: "Retrieve the properties and relationships of the school object."
-author: "mmast-msft"
-localization_priority: Normal
+description: "Read the properties and relationships of an educationSchool object."
+author: "mlafleur"
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -11,48 +11,63 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of the school object.
+Read the properties and relationships of an [educationSchool](../resources/educationschool.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduRoster.ReadBasic  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | EduRoster.ReadBasic                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
 ```http
-GET /education/schools
-GET /education/me/schools
-GET /education/users/schools
+GET /education/schools/{educationSchoolId}
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the same OData query parameters as [Get User](../api/user-get.md#optional-query-parameters). For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and an [educationSchool](../resources/educationschool.md) object in the response body.
-## Example
-##### Request
-The following is an example of the request.
+
+## Examples
+
+### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationschool"
-}-->
+}
+-->
+
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/schools/{school-id}
+GET https://graph.microsoft.com/v1.0/education/schools/f2598f43-629c-4ea9-9265-97a34839644e
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -61,48 +76,58 @@ GET https://graph.microsoft.com/v1.0/education/schools/{school-id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationschool-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationschool-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationschool-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationschool-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSchool"
-} -->
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 292
+Content-Type: application/json
 
 {
-  "principalEmail": "AmyRoebuck@contoso.com",
-  "principalName": "Amy Roebuck",
-  "externalPrincipalId": "14007",
-  "lowestGrade": "9",
-  "highestGrade": "12"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/schools/$entity",
+    "id": "f2598f43-629c-4ea9-9265-97a34839644e",
+    "displayName": "Business Training Camp",
+    "description": null,
+    "principalEmail": "aroebuck@principal.edu",
+    "principalName": "Amy Roebuck",
+    "externalPrincipalId": "14007",
+    "externalId": "10001",
+    "externalSource": "sis",
+    "externalSourceDetail": "SIS",
+    "phone": "555-123-4567",
+    "address": {
+        "city": "Redmond",
+        "countryOrRegion": "US",
+        "postalCode": "98052",
+        "state": "WA",
+        "street": "2 Microsoft Way"
+    }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationSchool",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->

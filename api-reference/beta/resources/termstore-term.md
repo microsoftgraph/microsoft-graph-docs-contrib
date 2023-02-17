@@ -2,8 +2,8 @@
 title: "term resource type"
 description: "Defines a term entity in a term store."
 author: mohitpcad
-localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 
@@ -31,19 +31,19 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Date and time of term creation. Read-only|
-|descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about term that is dependent on the languageTag|
-|id|String|Unique identifier of term. Read-Only|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection||Label metadata for a term|
-|lastModifiedDateTime|DateTimeOffset|Last date and time of term modification. Read-only|
-|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Collection of properties on the term|
+|createdDateTime|DateTimeOffset|Date and time of term creation. Read-only.|
+|descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about term that is dependent on the languageTag.|
+|id|String|Unique identifier of term. Read-Only.|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|Label metadata for a term.|
+|lastModifiedDateTime|DateTimeOffset|Last date and time of term modification. Read-only.|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Collection of properties on the term.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|Children of current term|
-|relations|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|To indicate which terms are related to the current term as either pinned or reused|
-|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The [set] in which the term is created|
+|children|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|Children of current term.|
+|relations|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|To indicate which terms are related to the current term as either pinned or reused.|
+|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The [set] in which the term is created.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

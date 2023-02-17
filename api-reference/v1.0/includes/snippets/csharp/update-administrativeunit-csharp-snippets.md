@@ -8,12 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var administrativeUnit = new AdministrativeUnit
 {
-	DisplayName = "displayName-value",
-	Description = "description-value",
-	Visibility = "visibility-value"
+	DisplayName = "Greater Seattle District Technical Schools"
 };
 
-await graphClient.Directory.AdministrativeUnits["{id}"]
+await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"]
 	.Request()
 	.UpdateAsync(administrativeUnit);
 

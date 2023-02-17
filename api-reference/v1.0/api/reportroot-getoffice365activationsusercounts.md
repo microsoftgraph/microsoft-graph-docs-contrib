@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOffice365ActivationsUserCounts"
 description: "Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -70,7 +70,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365activationsusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 ```
 

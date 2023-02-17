@@ -9,7 +9,8 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -36,7 +37,7 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
-  "git_repository_branch_open_to_public_contributors": "master",
+  "git_repository_branch_open_to_public_contributors": "main",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
@@ -44,19 +45,35 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure_docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
   "targets": {},
-  "JoinTOCPlugin": [
-    {
-      "ReferenceTOC": "api-reference/v1.0/toc.yml",
-      "ReferenceTOCUrl": "/graph/api/toc.json",
-      "ConceptualTOC": "concepts/toc.yml",
-      "ConceptualTOCUrl": "/graph/concepts/toc.json"
-    }
+  "type_mapping": {
+    "Conceptual": "Content",
+    "ManagedReference": "Content",
+    "RestApi": "Content",
+    "Tutorial": "Content"
+  },
+  "redirection_files": [
+    "redirects/.openpublishing.redirection.0820.json",
+    "redirects/.openpublishing.redirection.0920.json",
+    "redirects/.openpublishing.redirection.1120.json",
+    "redirects/.openpublishing.redirection.0721.json",
+    "redirects/.openpublishing.redirection.0121.json",
+    "redirects/.openpublishing.redirection.0921.json",
+    "redirects/.openpublishing.redirection.1121.json",
+    "redirects/.openpublishing.redirection.1221.json",
+    "redirects/.openpublishing.redirection.0522.json",
+    "redirects/.openpublishing.redirection.changedapi.json"
   ]
 }

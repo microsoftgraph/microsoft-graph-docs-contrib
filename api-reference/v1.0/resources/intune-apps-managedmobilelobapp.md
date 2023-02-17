@@ -1,7 +1,7 @@
 ---
 title: "managedMobileLobApp resource type"
 description: "An abstract base class containing properties for all managed mobile line of business apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -90,12 +90,3 @@ Here is a JSON representation of the resource.
   "size": 1024
 }
 ```
-
-
-
-
-
-
-
-
-

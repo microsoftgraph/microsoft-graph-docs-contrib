@@ -41,6 +41,8 @@ var bookingAppointment = new BookingAppointment
 	CustomerName = "Jordan Miller",
 	CustomerNotes = "Please be on time.",
 	CustomerPhone = "213-555-0199",
+	CustomerTimeZone = "America/Chicago",
+	SmsNotificationsEnabled = true,
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2018-05-01T12:30:00+00:00",
@@ -55,7 +57,9 @@ var bookingAppointment = new BookingAppointment
 	InvoiceId = "1001",
 	InvoiceStatus = BookingInvoiceStatus.Open,
 	InvoiceUrl = "theInvoiceUrl",
+	IsLocationOnline = true,
 	OptOutOfCustomerEmail = false,
+	AnonymousJoinWebUrl = null,
 	PostBuffer = new Duration("PT10M"),
 	PreBuffer = new Duration("PT5M"),
 	Price = 10,
@@ -130,6 +134,64 @@ var bookingAppointment = new BookingAppointment
 		DateTime = "2018-05-01T12:00:00+00:00",
 		TimeZone = "UTC"
 	},
+	MaximumAttendeesCount = 5,
+	FilledAttendeesCount = 1,
+	Customers = new List<BookingCustomerInformationBase>()
+	{
+		new BookingCustomerInformation
+		{
+			CustomerId = "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+			Name = "Jordan Miller",
+			EmailAddress = "jordanm@contoso.com",
+			Phone = "213-555-0199",
+			Notes = null,
+			Location = new Location
+			{
+				DisplayName = "Customer",
+				LocationEmailAddress = null,
+				LocationUri = "",
+				LocationType = null,
+				UniqueId = null,
+				UniqueIdType = null,
+				Address = new PhysicalAddress
+				{
+					Type = PhysicalAddressType.Home,
+					PostOfficeBox = "",
+					Street = "",
+					City = "",
+					State = "",
+					CountryOrRegion = "",
+					PostalCode = ""
+				},
+				Coordinates = new OutlookGeoCoordinates
+				{
+					Altitude = null,
+					Latitude = null,
+					Longitude = null,
+					Accuracy = null,
+					AltitudeAccuracy = null
+				}
+			},
+			TimeZone = "America/Chicago",
+			CustomQuestionAnswers = new List<BookingQuestionAnswer>()
+			{
+				new BookingQuestionAnswer
+				{
+					QuestionId = "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+					Question = "What is your age",
+					AnswerInputType = AnswerInputType.Text,
+					AnswerOptions = new List<String>()
+					{
+					},
+					IsRequired = true,
+					Answer = "25",
+					SelectedOptions = new List<String>()
+					{
+					}
+				}
+			}
+		}
+	},
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"invoiceStatus@odata.type", "#microsoft.graph.bookingInvoiceStatus"},
@@ -138,7 +200,7 @@ var bookingAppointment = new BookingAppointment
 	}
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Appointments
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].Appointments
 	.Request()
 	.AddAsync(bookingAppointment);
 

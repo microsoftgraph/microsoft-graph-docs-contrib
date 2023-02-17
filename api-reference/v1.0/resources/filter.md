@@ -1,9 +1,9 @@
 ---
 title: "Filter resource type"
 description: "Manages the filtering of a table's column."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
 ---
 

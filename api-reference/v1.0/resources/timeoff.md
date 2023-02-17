@@ -1,8 +1,8 @@
 ---
 title: "timeOff resource type"
-description: "A unit of non-work in the schedule."
+description: "Represents a unit of non-work in a schedule."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType_
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType_
 
 Namespace: microsoft.graph
 
-A unit of non-work in a schedule.
+Represents a unit of non-work in a [schedule](../resources/schedule.md).
 
 ## Methods
 
@@ -26,13 +26,13 @@ A unit of non-work in a schedule.
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |ID of the **timeOff**.|
-| userId 			|`string`      |ID of the user assigned to the **timeOff**. Required.|
-| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Required.|
+| createdDateTime		| DateTimeOffset        |The time stamp at which this **timeOff** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** that is viewable by managers. Required.|
-| createdDateTime		|`DateTimeOffset`        |The time stamp at which this **timeOff** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp at which this **timeOff** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| id			| String      |ID of the **timeOff**.|
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **timeOff**. |
+| lastModifiedDateTime		| DateTimeOffset        |The time stamp at which this **timeOff** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Required.|
+| userId 			| String      |ID of the user assigned to the **timeOff**. Required.|
 
 ## JSON representation
 
@@ -47,12 +47,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "userId": "string (identifier)",
   "createdDateTime": "String (timestamp)",
+  "draftTimeOff": {"@odata.type": "microsoft.graph.timeOffItem"},
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
-  "sharedTimeOff": {"@odata.type":"microsoft.graph.timeOffItem"},
-  "draftTimeOff": {"@odata.type":"microsoft.graph.timeOffItem"}
+  "sharedTimeOff": {"@odata.type": "microsoft.graph.timeOffItem"},
+  "userId": "String"
 }
 ```
 

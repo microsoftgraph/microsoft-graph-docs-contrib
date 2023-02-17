@@ -1,7 +1,7 @@
 ---
 title: "wipeManagedAppRegistrationByDeviceTag action"
 description: "Issues a wipe operation on an app registration with specified device tag."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Issues a wipe operation on an app registration with specified device tag.
 
-## Prerequisites
+## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -83,18 +83,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

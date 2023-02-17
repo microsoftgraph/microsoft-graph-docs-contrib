@@ -1,9 +1,9 @@
 ---
 title: "Get orgContact"
 description: "Retrieve the properties of an orgContact object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -52,8 +52,9 @@ The following is an example of the request.
   "name": "get_orgcontact"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/contacts/{id}
+GET https://graph.microsoft.com/v1.0/contacts/25caf6a2-d5cb-470d-8940-20ba795ef62d
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-orgcontact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -62,12 +63,20 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-orgcontact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-orgcontact-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-orgcontact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-orgcontact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-orgcontact-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-orgcontact-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -84,28 +93,50 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
 
 {
-  "addresses":[
-      {
-        "city": "string",
-        "countryOrRegion": "string",
-        "officeLocation": "string",
-        "postalCode": "string",
-        "state": "string",
-        "street": "string"
-      }
-  ],
-  "companyName": "companyName-value",
-  "department": "department-value",
-  "displayName": "displayName-value",
-  "phones":[
-      {
-        "type": "string",
-        "number": "string"
-      }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#contacts/$entity",
+    "id": "25caf6a2-d5cb-470d-8940-20ba795ef62d",
+    "deletedDateTime": null,
+    "companyName": "Adatum Corporation",
+    "department": null,
+    "displayName": "Adele Vance",
+    "proxyAddresses": [
+        "SMTP:AdeleVance@adatum.com"
+    ],
+    "givenName": "Adele",
+    "imAddresses": [],
+    "jobTitle": "Engagement manager",
+    "mail": "AdeleVance@adatum.com",
+    "mailNickname": "AdeleVance",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSyncEnabled": null,
+    "surname": "Vance",
+    "addresses": [
+        {
+            "city": null,
+            "countryOrRegion": "United States",
+            "officeLocation": null,
+            "postalCode": null,
+            "state": null,
+            "street": null
+        }
+    ],
+    "onPremisesProvisioningErrors": [],
+    "phones": [
+        {
+            "number": null,
+            "type": "businessFax"
+        },
+        {
+            "number": null,
+            "type": "mobile"
+        },
+        {
+            "number": null,
+            "type": "business"
+        }
+    ]
 }
 ```
 

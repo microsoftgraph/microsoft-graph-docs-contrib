@@ -8,10 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var oAuth2PermissionGrant = new OAuth2PermissionGrant
 {
-	Scope = "scope-value"
+	Scope = "User.ReadBasic.All Group.ReadWrite.All"
 };
 
-await graphClient.Oauth2PermissionGrants["{id}"]
+await graphClient.Oauth2PermissionGrants["{oAuth2PermissionGrant-id}"]
 	.Request()
 	.UpdateAsync(oAuth2PermissionGrant);
 

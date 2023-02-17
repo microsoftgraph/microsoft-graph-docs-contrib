@@ -1,7 +1,7 @@
 ---
 title: "rotateBitLockerKeysDeviceActionResult resource type"
 description: "RotateBitLockerKeys device action result"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -49,9 +49,3 @@ Here is a JSON representation of the resource.
   "errorCode": 1024
 }
 ```
-
-
-
-
-
-

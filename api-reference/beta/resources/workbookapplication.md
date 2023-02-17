@@ -1,7 +1,7 @@
 ---
 title: "workbookApplication resource type"
 description: "Represents the Excel workbookApplication that manages the workbook."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
