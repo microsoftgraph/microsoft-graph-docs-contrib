@@ -5,6 +5,7 @@ author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
+ms.custom: zt-include
 ---
 
 # Granular delegated admin privileges (GDAP) API overview
@@ -99,10 +100,15 @@ The status of the Delegated Admin access assignment. The status transitions are 
 1. [Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
 2. [Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
 
+<!-- Start of: Link to ZT guidance: H2 section -->
+
+[!INCLUDE [identity-governance-and-zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
+
 ## Permissions
 
 To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [granular delegated admin privileges permissions](/graph/permissions-reference#granular-delegated-admin-privileges-gdap-permissions).
-
 
 ## See also
 

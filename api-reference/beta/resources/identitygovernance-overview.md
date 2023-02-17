@@ -6,6 +6,7 @@ author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: conceptualPageType
 ms.date: 11/29/2022
+ms.custom: zt-include
 ---
 
 # Overview of Azure AD Identity Governance using Microsoft Graph
@@ -60,7 +61,7 @@ Terms of use can be a general company policy for all users in your organization;
 
 The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow you to configure the terms and conditions that users may need to accept and agree to before they can access your resources.
 
-<!-- Start of: Link to ZT guidance -->
+<!-- Start of: Link to ZT guidance: H2 section -->
 
 [!INCLUDE [identity-governance-and-zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
 

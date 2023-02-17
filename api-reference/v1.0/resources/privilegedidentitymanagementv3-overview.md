@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ms.date: 12/07/2022
+ms.custom: zt-include
 ---
 
 # Overview of role management through the privileged identity management (PIM) API
@@ -84,9 +85,11 @@ The following table lists scenarios for using PIM to manage Azure AD rules and t
 
 For more information about using Microsoft Graph to configure rules, see [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules).
 
-## PIM and identity security with Zero Trust
+<!-- Start of: Link to ZT guidance: H2 section -->
 
-PIM APIs support organizations to adopt a Zero Trust approach to secure the identities in their organization. For more information about Zero Trust, see [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#secure-privileged-access-with-privileged-identity-management).
+[!INCLUDE [identity-governance-and-zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
 
 ## Permissions and privileges
 
