@@ -11476,6 +11476,24 @@ items:
             items:
             - name: Get sign-in details
               href: api/applicationsignindetailedsummary-get.md
+        - name: Service principal activity
+          items:
+          - name: Service principal activity 
+            href: resources/servicePrincipalSignInActivity.md
+            items:
+            - name: Get service principal activity
+              href: api/serviceprincipal-lastuseddate-get.md
+            - name: List service principal activity
+              href: api/serviceprincipal-lastuseddate-list.md
+        - name: Application credential activity
+          items:
+          - name: Application credential activity
+            href: resources/appCredentialSignInActivity.md
+            items:
+            - name: Get application credential activity
+              href: api/application-credential-lastusedate-get.md
+            - name: List application credential activity
+              href: api/application-credential-lastusedate-list.md           
         - name: Registration and usage
           items:
           - name: Overview
