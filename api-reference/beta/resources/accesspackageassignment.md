@@ -36,6 +36,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |assignmentState|String|The state of the access package assignment. Possible values are `Delivering`, `Delivered`, or `Expired`. Read-only. Supports `$filter` (`eq`).|
 |assignmentStatus|String|More information about the assignment lifecycle.  Possible values include `Delivering`, `Delivered`, `NearExpiry1DayNotificationTriggered`, or `ExpiredNotificationTriggered`.  Read-only.|
 |catalogId|String|The identifier of the catalog containing the access package. Read-only.|
+|customExtensionCalloutInstances|[customExtensionCalloutInstance](customextensioncalloutinstance.md) collection|Information about all the custom extension calls that were made during assignment workflow, with status and correlation Id.|
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
@@ -74,7 +75,17 @@ The following is a JSON representation of the resource.
    "assignmentStatus":"ExpiredNotificationTriggered",
    "assignmentState":"Expired",
    "isExtended":false,
-   "expiredDateTime":"2019-04-25T23:45:40.42Z"
+   "expiredDateTime":"2019-04-25T23:45:40.42Z",
+  "customExtensionCalloutInstances": [
+    {
+      "id":"f46bfb39-dd15-4e2b-b438-7944178483ea",
+      "status": "callbackReceived",
+      "externalCorrelationId": "08585655445343654367255092454CU03",
+      "detail": "Resume-Request-User access has been successfully verified",
+      "error": null,
+      "customExtensionId": "D85449F6-E0C3-EB11-8504-4C1D967B1BFE"
+    }
+  ]
 }
 ```
 
