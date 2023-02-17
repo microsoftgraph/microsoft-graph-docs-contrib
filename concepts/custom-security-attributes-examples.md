@@ -723,7 +723,8 @@ User #2
   "name": "customsecurityattribute_filter_users_equals_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
+GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
+ConsistencyLevel: eventual
 ```
 
 #### Response
@@ -804,7 +805,8 @@ User #2
   "name": "customsecurityattribute_filter_users_starts_with_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual&$select=id,displayName,customSecurityAttributes&$filter=startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')
+GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')
+ConsistencyLevel: eventual
 ```
 
 #### Response
@@ -861,7 +863,8 @@ All other users
   "name": "customsecurityattribute_users_not_equal_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry ne 'Canada'
+GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry ne 'Canada'
+ConsistencyLevel: eventual
 ```
 
 #### Response
