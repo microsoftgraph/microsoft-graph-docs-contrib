@@ -1348,11 +1348,29 @@
     {
       "ChangeList": [
         {
+          "Id": "29c9d181-06c2-48c6-a364-4e03c068edc9",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.EnableDisableAccount.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `User.EnableDisableAccount.All` delegated and application permissions as the least privileged permissions required to enable and disable [user accounts](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta).",
+          "Target": "user"
+        }
+      ],
+      "Id": "29c9d181-06c2-48c6-a364-4e03c068edc9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-16T00:00:00.0123959Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
           "ApiChange": "Property",
           "ChangedApiName": "administrativeUnits",
           "ChangeType": "Addition",
-          "Description": "Added the **membershipRule** property to the [administrativeunit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Description": "Added the **membershipRule** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
           "Target": "administrativeUnit"
         },
         {
