@@ -1,21 +1,19 @@
 ---
-title: "Get change notifications delivered in different ways"
-description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
-author: "FaithOmbongi"
-ms.author: ombongifaith
-ms.reviewer: jumasure
+title: "Receive change notifications through Azure Event Hubs"
+description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through Azure Event Hubs."
+author: "jumasure"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
 ---
 
-# Get change notifications delivered in different ways
+# Receive change notifications through Azure Event Hubs
 
-Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notification URL.  
+Webhooks may not be suitable for receiving change notifications in high throughput scenarios or when the receiver cannot expose a publicly available notification URL. As an alternative, you can use Azure Event Hubs.
 
-This change notifications delivery mode is available for all resources that support Microsoft Graph change notifications.
+Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources across a large set of organizations.
 
-Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources accross a large set of organizations.
+This article walks you through managing your Microsoft Graph subscription and receiving change notifications through Azure Event Hubs.
 
 ## Using Azure Event Hubs to receive change notifications
 
@@ -31,7 +29,8 @@ Using Azure Event Hubs to receive change notifications differs from webhooks in 
 
 This section will walk you through the setup of required Azure services.
 
-#### Option 1: Using the Azure CLI
+<!-- Start of "Use Azure CLI" tab-->
+# [Use Azure CLI](#tab/change-notifications-eventhubs-azure-cli)
 
 The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate adminstrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
@@ -70,7 +69,10 @@ echo "Notification Url:\n${notificationUrl}"
 
 > **Note:** The script provided here is compatible with Linux based shells, Windows WSL, and Azure Cloud Shell. It will require some updates to run in Windows shells.
 
-#### Option 2: Using the Azure Portal
+<!-- End of "Use Azure CLI" tab-->
+
+<!-- Start of "Use the Azure portal" tab-->
+# [Use the Azure portal](#tab/change-notifications-eventhubs--azure-portal)
 
 ##### Configuring the Azure Event Hub
 
@@ -118,6 +120,9 @@ Steps:
 1. Give a name to the secret, and keep the name for later; you will need it for the next step. For the value, paste in the connection string you generated at the Event Hubs step. Click **Create**.  
 1. Click **Access Policies** and **+ Add Access Policy**.  
 1. For **Secret permissions**, select **Get**, and for **Select Principal**, select **Microsoft Graph Change Tracking**. Click **Add**.  
+
+<!-- End of "Use the Azure portal" tab-->
+---
 
 ### Creating the subscription and receiving notifications
 

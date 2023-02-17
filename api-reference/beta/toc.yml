@@ -74,50 +74,11 @@ items:
         displayName: throttling
         href: /training/modules/optimize-network-traffic
     - name: Change notifications
-      items:
-      - name: Overview
-        href: /graph/api/resources/webhooks?context=graph/api/beta
-        displayName: change notifications, WebHooks, set up notifications for changes in resource data
-      - name: Change notifications tutorial
-        href: /training/modules/msgraph-changenotifications-trackchanges
-      - name: Missing change notifications
-        href: /graph/webhooks-lifecycle?context=graph/api/beta
-      - name: Notifications with resource data
-        href: /graph/webhooks-with-resource-data?context=graph/api/beta
-      - name: Get notifications delivered different ways
-        href: /graph/change-notifications-delivery?context=graph/api/beta
-      - name: Change notifications for cloud printing
-        href: /graph/universal-print-webhook-notifications?context=graph/api/beta
-      - name: Change notifications for Microsoft Teams resources
-        items:
-        - name: Notification types and payloads
-          href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/beta
-          displayName: change notifications, Teams, Microsoft Teams
-        - name: Teams and channels
-          href: /graph/teams-changenotifications-team-and-channel?context=graph/api/beta
-        - name: Team and channel membership
-          href: /graph/teams-changenotifications-teamMembership?context=graph/api/beta
-        - name: Chat and channel messages
-          href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
-        - name: Chat
-          href: /graph/teams-changenotifications-chat?context=graph/api/beta
-        - name: Chat membership
-          href: /graph/teams-changenotifications-chatMembership?context=graph/api/beta
-      - name: Change notifications for Outlook resources
-        href: /graph/outlook-change-notifications-overview?context=graph/api/beta
+      displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+      href: /graph/webhooks?context=graph/api/beta
     - name: Change tracking
-      items:
-      - name: Overview
-        href: /graph/delta-query-overview?context=graph/api/beta
-        displayName: Delta query, track changes, change tracking
-      - name: Get changes to events (example)
-        href: /graph/delta-query-events?context=graph/api/beta
-      - name: Get changes to groups (example)
-        href: /graph/delta-query-groups?context=graph/api/beta
-      - name: Get changes to messages (example)
-        href: /graph/delta-query-messages?context=graph/api/beta
-      - name: Get changes to users (example)
-        href: /graph/delta-query-users?context=graph/api/beta
+      displayName: delta query
+      href: /graph/delta-query-overview?context=graph/api/beta
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
       href: /graph/extensibility-overview?context=graph/api/beta
@@ -1581,8 +1542,11 @@ items:
         displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         href: resources/webhooks.md
       - name: Subscription
-        href: resources/subscription.md
         items:
+        - name: Subscription
+          href: resources/subscription.md
+        - name: Change notification collection
+          href: resources/changenotificationcollection.md
         - name: List
           href: api/subscription-list.md
         - name: Create
