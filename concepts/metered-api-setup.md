@@ -6,7 +6,7 @@ ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
-# Onboard to metered Microsoft 365 APIs and services
+# Enable Microsoft 365 metered APIs and services
 
 Some Microsoft 365 APIs and services in Microsoft Graph are metered and require payment for use. For a current list of APIs that require payment, see [Metered Microsoft 365 APIs and services](metered-api-list.md).
 
