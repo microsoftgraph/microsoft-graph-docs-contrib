@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted Planner plan in either a group or a Planner roster without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
+Get newly created, updated, or deleted Planner plan in either a [group](../resources/group.md) or a Planner roster without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 ## Permissions
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request for delta on plannerPlan objects contained by a group object.
+The following is an example of a request for delta on **plannerPlan** objects contained by a **group** object.
 
 <!-- {
   "blockType": "request",

@@ -1,6 +1,6 @@
 ---
 title: "plannerTask: delta"
-description: "Get newly created, updated, or deleted tasks in either a planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection."
+description: "Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -192,7 +192,7 @@ Content-Type: application/json
         "id": "aSOQ0mveu06bTSkfnJQay2QAIn_l",
         "version": "1-TaskDetails @@@@@@@@@@@@@@@D"
       }
-    },
+    }
   ]
 }
 ```

@@ -55,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [plannerBucket](../resources/plannerbucket.md) collection in the response body. The response also includes an `@odata.nextLink` or a `@odata.deltaLink` URL.
+If successful, this function returns a `200 OK` response code and a [plannerBucket](../resources/plannerbucket.md) collection in the response body. The response also includes a `@odata.nextLink` or a `@odata.deltaLink` URL.
 
 - A `@odata.nextLink` URL in the response object indicates additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
 
@@ -108,7 +108,7 @@ Content-Type: application/json
       "id": "iz1mmIxX7EK0Yj7DmRsMs2QAEDXH",
       "name": "This is a bucket",
       "planId": "-W4K7hIak0WlAwgJCn1sEWQABgjH",
-      "orderHint": "8585371316800245114P\\",
+      "orderHint": "8585371316800245114P\\"
     }
   ]
 }
