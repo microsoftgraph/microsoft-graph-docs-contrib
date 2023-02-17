@@ -7,7 +7,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Synchronization.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the `Synchronization.ReadWrite.All` application and permission to configure synchronization settings.",
+          "Description": "Added the `Synchronization.ReadWrite.All` application and delegated permissions to configure [synchronization settings](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta).",
           "Target": "synchronization"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Synchronization.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the `Synchronization.Read.All` application and permission to read synchronization settings.",
+          "Description": "Added the `Synchronization.Read.All` application and delegated permissions to read [synchronization settings](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta).",
           "Target": "synchronization"
         }
       ],
