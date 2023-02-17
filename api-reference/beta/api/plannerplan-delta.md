@@ -1,6 +1,6 @@
 ---
 title: "plannerPlan: delta"
-description: "Get newly created, updated, or deleted planner plan in either a group or a planner roster without having to perform a full read of the entire resource collection. See Using Delta Query for details."
+description: "Get newly created, updated, or deleted planner plan in either a group or a planner roster without having to perform a full read of the entire resource collection."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted planner plan in either a group or a planner roster without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted Planner plan in either a [group](../resources/group.md) or a Planner roster without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 ## Permissions
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Tasks.Read                                  |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Tasks.Read.All                              |
 
 ## HTTP request
@@ -62,7 +62,8 @@ The following example shows a request for delta on **plannerPlan** objects conta
 
 <!-- {
   "blockType": "request",
-  "name": "plannerplanthis.delta"
+  "name": "plannerplanthis.delta",
+  "sampleKeys": ["{plannerRosterId}"]
 }
 -->
 
@@ -72,9 +73,9 @@ GET https://graph.microsoft.com/beta/planner/rosters/-W4K7hIak0WlAwgJCn1sEWQABgj
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +115,8 @@ The following example shows a request for delta on **plannerPlan** objects conta
 
 <!-- {
   "blockType": "request",
-  "name": "plannerplanthis.delta"
+  "name": "plannerplanthis.delta",
+  "sampleKeys": ["ebf3b108-5234-4e22-b93d-656d7dae5874"]
 }
 -->
 
@@ -124,9 +126,9 @@ GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

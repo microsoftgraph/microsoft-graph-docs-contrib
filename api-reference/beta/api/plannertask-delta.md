@@ -1,6 +1,6 @@
 ---
 title: "plannerTask: delta"
-description: "Get newly created, updated, or deleted tasks in either a planner plan or assigned to the signed in user without having to perform a full read of the entire resource collection. See Using Delta Query for details."
+description: "Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted tasks in either a planner plan or assigned to the signed in user without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 ## Permissions
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Tasks.Read                                  |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Tasks.Read.All                              |
 
 ## HTTP request
@@ -39,13 +39,7 @@ GET /me/planner/tasks/delta
 
 ### Query parameters
 
-Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter
-(other than `$deltatoken` and `$skiptoken`), you must specify
-it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters
-into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
-You only need to specify any desired query parameters once upfront.
-In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already
-includes the encoded, desired parameters.
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
 | Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                                    |
 | :-------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -87,7 +81,7 @@ GET https://graph.microsoft.com/beta/planner/tasks/delta
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -198,7 +192,7 @@ Content-Type: application/json
         "id": "aSOQ0mveu06bTSkfnJQay2QAIn_l",
         "version": "1-TaskDetails @@@@@@@@@@@@@@@D"
       }
-    },
+    }
   ]
 }
 ```
@@ -221,7 +215,7 @@ GET https://graph.microsoft.com/beta/me/planner/tasks/delta
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

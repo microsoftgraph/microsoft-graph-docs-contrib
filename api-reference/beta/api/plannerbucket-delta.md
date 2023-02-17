@@ -1,6 +1,6 @@
 ---
 title: "plannerBucket: delta"
-description: "Get newly created, updated, or deleted buckets in a planner plan without having to perform a full read of the entire resource collection. See Using Delta Query for details."
+description: "Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted buckets in a planner plan without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 ## Permissions
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Tasks.Read                                  |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Tasks.Read.All                              |
 
 ## HTTP request
@@ -35,13 +35,7 @@ GET /planner/plans/{plan-id}/buckets/delta
 
 ### Query parameters
 
-Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter
-(other than `$deltatoken` and `$skiptoken`), you must specify
-it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters
-into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
-You only need to specify any desired query parameters once upfront.
-In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already
-includes the encoded, desired parameters.
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
 | Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                                    |
 | :-------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -61,16 +55,15 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [plannerBucket](../resources/plannerbucket.md) collection in the response body. The response also includes a nextLink URL or a deltaLink URL.
+If successful, this function returns a `200 OK` response code and a [plannerBucket](../resources/plannerbucket.md) collection in the response body. The response also includes a `@odata.nextLink` or a `@odata.deltaLink` URL.
 
-- If a `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
+- A `@odata.nextLink` URL in the response object indicates additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
 
-- If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
+- A `@odata.deltaLink` URL in the response object indicates that no more data about the existing state of the resource is returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
 
-See:</br>
+For more details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
-- [Using Delta Query](/graph/delta-query-overview) for more details</br>
-- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
+For an example request, see [Get incremental changes for users](/graph/delta-query-users).
 
 ## Examples
 
@@ -82,7 +75,8 @@ The following example shows a request for delta on **plannerBucket** objects in 
 
 <!-- {
   "blockType": "request",
-  "name": "plannerbucketthis.delta"
+  "name": "plannerbucketthis.delta",
+  "sampleKeys": ["2txjA-BMZEq-bKi6Wfj5aGQAB1OJ"]
 }
 -->
 
@@ -92,7 +86,9 @@ GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +110,7 @@ Content-Type: application/json
       "id": "iz1mmIxX7EK0Yj7DmRsMs2QAEDXH",
       "name": "This is a bucket",
       "planId": "-W4K7hIak0WlAwgJCn1sEWQABgjH",
-      "orderHint": "8585371316800245114P\\",
+      "orderHint": "8585371316800245114P\\"
     }
   ]
 }
