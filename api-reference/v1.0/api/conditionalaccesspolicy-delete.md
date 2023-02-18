@@ -87,9 +87,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 
 ---
 
-
----
-
 ### Response
 
 The following is an example of the response.

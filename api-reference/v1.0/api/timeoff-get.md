@@ -92,9 +92,6 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOffId
 
 ---
 
----
-
-
 #### Response
 
 The following is an example of the response. 
