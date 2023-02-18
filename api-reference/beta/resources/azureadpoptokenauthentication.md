@@ -1,9 +1,9 @@
 ---
 title: "azureAdPopTokenAuthentication resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Defines the Azure AD Proof Of Possession (PoP) used to authentication with a workflow extension."
+author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,10 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
+Defines Proof Of Possession (PoP) token authetication model to authenticate a logic app with a [accessPackageAssignmentRequestWorkflowExtensions](../resources/accessPackageAssignmentRequestWorkflowExtensions.md) or a [accessPackageAssignmentWorkflowExtensions](../resources/accessPackageAssignmentWorkflowExtensions.md). Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
 
 ## Properties
 |Property|Type|Description|
