@@ -230,6 +230,96 @@ Content-type: application/json
 }
 ```
 
+### Example 3: Retrieve a policy that contains a verifiable credentials requirement
+
+#### Request
+
+The following is an example of a request to retrieve the collection of custom extension handlers that are defined for a policy and their associated custom workflow extension.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_accesspackageassignmentpolicy_with_verifiableCredentialSettings"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionHandlers($expand=customExtension)
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with verifiable credentials requirement",
+    "description": "Users must present the VerifiedCredentialExpert credential for access.",
+    "canExtend": true,
+    "durationInDays": 0,
+    "expirationDateTime": null,
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "accessReviewSettings": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingDirectorySubjects",
+        "acceptRequests": true,
+        "allowedRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": false,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": false,
+        "approvalMode": "NoApproval",
+        "approvalStages": []
+    },
+    "customExtensionHandlers": [],
+    "verifiableCredentialSettings": {
+      "credentialTypes":[{
+        "issuers": ["did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>…"],
+        "credentialType": "VerifiedCredentialExpert"
+      }]
+    }
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
