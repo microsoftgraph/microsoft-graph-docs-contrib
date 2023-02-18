@@ -10,7 +10,7 @@ ms.custom: scenarios:getting-started
 
 This article provides a list of metered Microsoft 365 APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Metered APIs in Microsoft Graph](metered-api-overview.md). 
 
-Some metered Microsoft 365 APIs and services might also require that you submit a protected API request. For those APIs, the link to the submission form is included in the table.
+Some metered Microsoft 365 APIs and services require additional validation beyond permissions and admin consent before you can use protected APIs, requiring to submit a protected API request.
 
 | API | Billing and license information | Protected API form |
 |:--------------------------|:--------------------------|:----------------------------------------|
