@@ -1,6 +1,6 @@
 ---
 title: "Get paymentTerms" 
-description: "Get a payment term object in Dynamics 365 Business Central."
+description: "Retrieve the properties and relationships of a paymentTerms object for Dynamics 365 Business Central."
 services: "project-madeira"
 documentationcenter: ""
 author: "SusanneWindfeldPedersen"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a payment term object in Dynamics 365 Business Central..
+Retrieve the properties and relationships of a [paymentTerms](../resources/dynamics-paymentterms.md) object for Dynamics 365 Business Central.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
