@@ -1,5 +1,5 @@
 ---
-title: "Onboard to metered Microsoft 365 APIs and services"
+title: "Enable Microsoft 365 metered APIs and services"
 description: "Provides instructions to onboard an application for calling metered Microsoft 365 APIs and services."
 author: "JeremyKelley"
 ms.localizationpriority: high
