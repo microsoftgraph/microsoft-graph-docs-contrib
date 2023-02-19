@@ -108,7 +108,7 @@ The following is a JSON representation of the resource.
   "recommendedActions" : "String",
   "recommendedHuntingQueries" : [
   {
-    "kqlText" : "String"
+    "@odata.type": "microsoft.graph.security.recommendedHuntingQuery"
   }
 ]
 }
