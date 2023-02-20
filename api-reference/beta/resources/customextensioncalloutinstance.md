@@ -1,9 +1,9 @@
 ---
 title: "customExtensionCalloutInstance resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Defines the custom extension callout instane record information, this is read only object"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines the custom extension callout instane record information.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customExtensionId|String|**TODO: Add Description**|
-|detail|String|**TODO: Add Description**|
-|externalCorrelationId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|status|customExtensionCalloutInstanceStatus|**TODO: Add Description**.The possible values are: `calloutSent`, `callbackReceived`, `calloutFailed`, `callbackTimedOut`, `waitingForCallback`, `unknownFutureValue`.|
+|customExtensionId|String|Identification of the custom extension triggered at this instance.|
+|detail|String|Detail provided by the customer during callback of the request instance.|
+|externalCorrelationId|String|Logic app unique run Id.|
+|id|String|Unique identifier for the callout instance. Read-only.|
+|status|customExtensionCalloutInstanceStatus|Status of request to custom extension..The possible values are: `calloutSent`, `callbackReceived`, `calloutFailed`, `callbackTimedOut`, `waitingForCallback`, `unknownFutureValue`.|
 
 ## Relationships
 None.
