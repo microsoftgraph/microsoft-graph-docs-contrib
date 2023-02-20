@@ -280,8 +280,15 @@ For more information about getting access to Microsoft Graph on behalf of a user
 - For information about using the Microsoft identity platform with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform documentation](/azure/active-directory/develop/active-directory-developers-guide).
 - For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](/azure/active-directory/develop/msal-overview).
 
-## See also
+## Additional resources
 
 - [Learn how to create a web app that calls Microsoft Graph under on behalf of a user](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user).
 - For samples using the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
 - [Prompt behavior in MSAL.js interactive requests](/azure/active-directory/develop/msal-js-prompt-behavior)
+
+## Next steps
+
+Next, learn how the app can get access and call Microsoft Graph without a user.
+
+> [!div class="nextstepaction"]
+> [Get access without a user >](./auth-v2-service.md)

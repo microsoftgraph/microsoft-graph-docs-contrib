@@ -14,8 +14,15 @@ ms.date: 12/09/2022
 
 [!INCLUDE [active-directory-develop-quickstart-register-app](includes/active-directory-develop-quickstart-register-app.md)]
 
-## Next steps
+## Additional resources
 
 - Learn more about [permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent) in the Microsoft identity platform or [how permissions work in Microsoft Graph](permissions-overview.md).
 - [Choose a quick start](/azure/active-directory/develop/#get-started) that walks you through adding core identity and access management (IAM) features to your applications and best practices for keeping your apps secure and available.
 - Learn more about the two Azure AD objects that represent a registered application and the relationship between them: [Application objects and service principal objects](/azure/active-directory/develop/app-objects-and-service-principals).
+
+## Next steps
+
+Next, learn how the app can get access and call Microsoft Graph on behalf of a user.
+
+> [!div class="nextstepaction"]
+> [Get access on behalf of a user >](./auth-v2-user.md)

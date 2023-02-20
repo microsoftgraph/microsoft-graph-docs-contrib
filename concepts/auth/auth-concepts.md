@@ -118,10 +118,17 @@ For a complete list of Microsoft client libraries, Microsoft server middleware, 
 
 You don't need to use an authentication library to get an access token. To learn about directly using the Microsoft identity platform endpoints without the help of an authentication library, see [Microsoft identity platform documentation libraries](#see-also).
 
-## See also
+## Additional resources
 
 - [Microsoft identity platform documentation](/azure/active-directory/develop/).
 - [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md).
 - [Overview of Microsoft Graph permissions](/graph/permissions-overview).
 - Use the [Get started](https://developer.microsoft.com/graph/get-started) page to find the libraries, samples, training content, and other resources for your favorite platform.
 - See our [Microsoft Graph samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) on GitHub.
+
+## Next steps
+
+Get started by registering your app.
+
+> [!div class="nextstepaction"]
+> [Register your application >](../auth-register-app-v2.md)
