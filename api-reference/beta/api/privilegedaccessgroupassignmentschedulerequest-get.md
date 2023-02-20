@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequestss/34e963f6-150f-cf79-678c-6fcaf978bb49
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequests/34e963f6-150f-cf79-678c-6fcaf978bb49
 ```
 
 
@@ -78,7 +78,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
     "id": "34e963f6-150f-cf79-678c-6fcaf978bb49",
     "status": "Provisioned",
@@ -90,6 +89,7 @@ Content-Type: application/json
       "user": {
             "displayName": null,
             "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5"
+      }
     },
     "action": "adminAssign",
     "isValidationOnly": false,
@@ -111,7 +111,6 @@ Content-Type: application/json
     "accessId": "member",
     "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7",
     "targetScheduleId": "34e963f6-150f-cf79-678c-6fcaf978bb49"
-  }
 }
 ```
 
