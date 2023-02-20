@@ -356,7 +356,7 @@ The following table lists the latency to expect between an event happening in th
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
-## Additional resources
+## Deployment resources
 
 - [Get change notifications through webhooks](./change-notifications-delivery-webhooks.md)
 - [Get change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
