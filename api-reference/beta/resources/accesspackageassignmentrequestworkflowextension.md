@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequestWorkflowExtension resource type"
-description: "Defines the attributes of a logic app, which can be called at various stages of an access package request and assignment cycle."
+description: "Defines the attributes of a logic app, which can be called at various stages of an access package request cycle."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the attributes of a logic app, which can be called at various stages of an access package request and assignment cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. The following use cases can be integrated with logic apps using this workflow:
+Defines the attributes of a logic app, which can be called at various stages of an access package request cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. The following use cases can be integrated with logic apps using this workflow:
 - When an [access package is requested](accesspackageassignmentrequest.md)
 - When an [access package request is granted](accesspackageassignmentrequest.md)
 - When an [access package request is approved](accesspackageassignmentrequest.md)
