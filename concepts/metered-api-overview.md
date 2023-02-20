@@ -24,13 +24,13 @@ With the working principles in place, there are three categories of use cases re
 This category includes the broad set of APIs used to perform standard operations (e.g. create, read, update, delete) on customer content and administrative endpoints for service configuration. We continue to define and update the limits of reasonable access based on documented usage thresholds to protect our customer experience and encourage good API usage patterns. Access to this category of APIs within the defined limits is included as part of the user license without any additional costs. This is the default category that most endpoints will exist in.
 
 ### High-capacity APIs
-We want to ensure that our customers and developers have access to data at scale. This category includes purpose-built, bulk-export services like [Teams Export APIs](/microsoftteams/export-teams-content#license-requirements-for-teams-export-apis) and future bulk export or import endpoints and Microsoft Graph services.
+We want to ensure that our customers and developers have access to data at scale. This category includes purpose-built, bulk export or import endpoints and Microsoft Graph services.
 
 ### Advanced APIs
 The third category represents access to data that’s enriched or aggregated by Microsoft or offers access to advanced functionality extended directly from Microsoft 365 infrastructure, [Azure Communication Services](https://azure.microsoft.com/products/communication-services/#overview) is an example of this.
 
 ## Access metered APIs
-To access metered Microsoft 365 APIs and services, an application must be associated with an active Microsoft Azure subscription. For details about how to associated an app to a subscription, see [Onboard to Microsoft Graph metered APIs](metered-api-onboarding.md).
+To access metered Microsoft 365 APIs and services, an application must be associated with an active Microsoft Azure subscription. For details about how to associate an app to a subscription, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup).
 
 ## Considerations for using metered APIs
 
@@ -42,4 +42,4 @@ Keep the following considerations in mind when you use metered Microsoft 365 API
 ## See also
 
 - [Metered Microsoft 365 APIs and services](/graph/metered-api-list)
-- [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding)
+- [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup)
