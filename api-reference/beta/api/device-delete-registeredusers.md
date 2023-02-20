@@ -76,9 +76,6 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredUsers/{id}/$ref
 
 ---
 
-
----
-
 ##### Response
 Here is an example of the response.
 <!-- {
