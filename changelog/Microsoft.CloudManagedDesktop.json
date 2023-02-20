@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "snapshotType",
                     "ChangeType": "Addition",
-                    "Description": "Added the `snapshotType` property to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta).",
+                    "Description": "Added the **snapshotType** property to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta).",
                     "Target": "cloudPcSnapshot"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "expirationDateTime",
                     "ChangeType": "Addition",
-                    "Description": "Added the `expirationDateTime` property to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta).",
+                    "Description": "Added the **expirationDateTime** property to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta).",
                     "Target": "cloudPcSnapshot"
                 },
                 {
