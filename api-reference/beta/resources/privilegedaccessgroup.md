@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The navigation entity which contains the privileged access group APIs.
+The entry point for all resources related to Privileged Identity Management (PIM) for groups.
 
 Inherits from [entity](../resources/entity.md).
 
