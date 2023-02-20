@@ -263,7 +263,7 @@ no examples available for ge and le
 | Operator (s) | Syntax                                                                                                         |
 |---------------|-----------------------------------------------------------------------------------------------------------------|
 | `eq`         | `~/servicePrincipals?$filter=appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47`*                  |
-| `not`        | `~/servicePrincipals?$filter=not(appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47)&$count=true`* |
+| `not`        | `~/servicePrincipals?$filter=not(appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47)`* |
 
 <!--
 ### For single complex types such as relationships
