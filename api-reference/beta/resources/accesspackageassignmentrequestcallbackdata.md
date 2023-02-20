@@ -22,6 +22,7 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |customExtensionStageInstanceId|String|Unique Id of the callout to the custom extension that was nade at a stage of request processing.|
+|customExtensionStageInstanceDetail|String|Details for the callback so that the admin or approver can see this information.|
 |stage|accessPackageCustomExtensionStage|Indicate at which stage the custom callout extension will be executed.The possible values are: `assignmentRequestCreated`, `assignmentRequestApproved`, `assignmentRequestGranted`, `assignmentRequestRemoved`, `assignmentFourteenDaysBeforeExpiration`, `assignmentOneDayBeforeExpiration`, `unknownFutureValue`.|
 |state|String|Allow extension to be able to deny or cancel the request submitted by the requestor. Supported values: `Denied`, `Canceled`. This property can only be set for `assignmentRequestCreated` stage.|
 
@@ -40,6 +41,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestCallbackData",
   "stage": "String",
   "customExtensionStageInstanceId": "String",
+  "customExtensionStageInstanceDetail": "String",
   "state": "String"
 }
 ```
