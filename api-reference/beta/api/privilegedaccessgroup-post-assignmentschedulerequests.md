@@ -54,7 +54,6 @@ You can specify the following properties when creating a **privilegedAccessGroup
 |groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Required.|
 |justification|String|A message provided by users and administrators when create they create the **privilegedAccessGroupAssignmentScheduleRequest** object. Optional.|
 |principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for groups. Required.|
-|roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that is being assigned to the principal. Required.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment for PIM for groups. Recurring schedules are currently unsupported. Required.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system. Optional.|
 
