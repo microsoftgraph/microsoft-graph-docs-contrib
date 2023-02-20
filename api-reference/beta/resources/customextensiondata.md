@@ -1,9 +1,10 @@
 ---
 title: "customExtensionData resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Defines the base type of the custom extension data which will be used and derived for custom extension callback data. This is an abstract type.
+"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+Defines the base type of the custom extension data which will be used and derived for custom extension callback data. This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
