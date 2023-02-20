@@ -125,9 +125,7 @@ Content-Type: application/json
                     "id": "all_users",
                     "targetType": "group",
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
-                },
-                "systemCredentialPreferences": {
-            "@odata.type": "microsoft.graph.systemCredentialPreferences"                
+                }             
             ]
         }
     },
@@ -203,6 +201,18 @@ Content-Type: application/json
             "state": "enabled",
             "allowExternalIdToUseEmailOtp": "default",
             "includeTargets": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.systemCredentialPreferences",
+            "id": "systemCredentialPreferences",
+            "state": "enabled",
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users"
+                }
+            ]
+            "excludeTargets": []
         }
     ]
 }

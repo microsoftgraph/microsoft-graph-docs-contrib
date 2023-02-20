@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of the [registrationEnforcemen
 |Property|Type|Description|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
-
+|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialPreferences.md)|Prompts user with the most preferred authenitcation method that they are registered with|
 ## Response
 If successful, this method returns a `200 OK` response code.
 
@@ -146,6 +146,9 @@ Content-Type: application/json
             }
         ]
     }
+  },
+  "systemCredentialPreferences": {
+    "@odata.type": "microsoft.graph.systemCredentialPreferences"
   }
 }
 ```
