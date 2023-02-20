@@ -97,7 +97,7 @@ Content-Type: application/json
         }
       },
       "action": "adminAssign",
-      "isValidationOnly": "false",
+      "isValidationOnly": false,
       "justification": "Assign eligibility to user for PIM for groups.",
       "scheduleInfo": {
           "startDateTime": "2022-04-12T09:05:41.8532931Z",
