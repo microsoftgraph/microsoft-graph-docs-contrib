@@ -27,6 +27,9 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Read properties and relationships of an accessPackageAssignmentPolicy object. |
 | [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Update the properties of an accessPackageAssignmentPolicy object. |
 | [Delete accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md) | | Delete an accessPackageAssignmentPolicy. |
+|[List customExtensionStageSettings](../api/accesspackageassignmentpolicy-list-customextensionstagesettings.md)|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|Get the customExtensionStageSetting resources from the customExtensionStageSettings navigation property.|
+|[Add customExtensionStageSetting](../api/accesspackageassignmentpolicy-post-customextensionstagesettings.md)|[customExtensionStageSetting](../resources/customextensionstagesetting.md)|Add customExtensionStageSettings by posting to the customExtensionStageSettings collection.|
+|[Remove customExtensionStageSettings](../api/accesspackageassignmentpolicy-delete-customextensionstagesettings.md)|None|Remove a [customExtensionStageSetting](../resources/customextensionstagesetting.md) object.|
 
 ## Properties
 
@@ -55,6 +58,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| The access package with this policy. Read-only. Nullable. Supports `$expand`.|
 |customExtensionHandlers|[customExtensionHandler](../resources/customextensionhandler.md) collection| The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.| 
+|customExtensionStageSettings|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.|
 
 
 
@@ -73,32 +77,46 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.accessPackageAssignmentPolicy",
-  "id": "String (identifier)",
-  "accessPackageId": "String",
-  "displayName": "String",
-  "description": "String",
-  "canExtend": "Boolean",
-  "durationInDays": "Integer",
-  "expirationDateTime": "String (timestamp)",
-  "createdBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "modifiedBy": "String",
-  "modifiedDateTime": "String (timestamp)",
-  "questions": [
-    {
-      "@odata.type": "microsoft.graph.accessPackageQuestion"
-    }
-  ],
-  "requestorSettings": {
-    "@odata.type": "microsoft.graph.requestorSettings"
-  },
-  "requestApprovalSettings": {
-    "@odata.type": "microsoft.graph.approvalSettings"
-  },
-  "accessReviewSettings": {
-    "@odata.type": "microsoft.graph.assignmentReviewSettings"
-  }
+   "@odata.type":"#microsoft.graph.accessPackageAssignmentPolicy",
+   "id":"String (identifier)",
+   "accessPackageId":"String",
+   "displayName":"String",
+   "description":"String",
+   "canExtend":"Boolean",
+   "durationInDays":"Integer",
+   "expirationDateTime":"String (timestamp)",
+   "createdBy":"String",
+   "createdDateTime":"String (timestamp)",
+   "modifiedBy":"String",
+   "modifiedDateTime":"String (timestamp)",
+   "questions":[
+      {
+         "@odata.type":"microsoft.graph.accessPackageQuestion"
+      }
+   ],
+   "requestorSettings":{
+      "@odata.type":"microsoft.graph.requestorSettings"
+   },
+   "requestApprovalSettings":{
+      "@odata.type":"microsoft.graph.approvalSettings"
+   },
+   "accessReviewSettings":{
+      "@odata.type":"microsoft.graph.assignmentReviewSettings"
+   },
+   "customExtensionStageSettings":[
+      {
+         "stage":"assignmentRequestCreated",
+         "customExtension":{
+            "id":"855cce6f-348a-4b6c-8dad-a5ddfce91d35"
+         }
+      },
+      {
+         "stage":"assignmentRequestApproved",
+         "customExtension":{
+            "id":"51fa2233-748b-4d21-9c78-ecb9e627679e"
+         }
+      }
+   ]
 }
 ```
 
