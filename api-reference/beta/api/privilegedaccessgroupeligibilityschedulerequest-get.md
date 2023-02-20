@@ -106,7 +106,6 @@ Content-Type: application/json
     "accessId": "member",
     "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
     "targetScheduleId": null
-  }
 }
 ```
 
