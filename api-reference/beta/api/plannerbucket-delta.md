@@ -67,11 +67,9 @@ For an example request, see [Get incremental changes for users](/graph/delta-que
 
 ## Examples
 
-### Example 1: Get delta on buckets in a plan
+The following example shows a request for delta on **plannerBucket** objects contained by a **plannerPlan**.
 
-The following example shows a request for delta on **plannerBucket** objects in by a **plannerPlan**.
-
-#### Request
+### Request
 
 <!-- {
   "blockType": "request",
@@ -84,7 +82,7 @@ The following example shows a request for delta on **plannerBucket** objects in 
 GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/buckets/delta
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 

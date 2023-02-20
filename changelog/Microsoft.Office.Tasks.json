@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerBucket?view=graph-rest-beta) method to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/plannerBucket?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerbucket-delta?view=graph-rest-beta) method to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerplan-delta?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerTask?view=graph-rest-beta) method to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannertask-delta?view=graph-rest-beta) method to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         }
       ],
