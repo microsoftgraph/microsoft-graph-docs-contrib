@@ -86,7 +86,7 @@ Content-Type: application/json
     {
       "id": "534b3d4d-3ba0-8429-3568-5e9cce6c2cbd",
       "status": "Provisioned",
-      "completedDateTime": "2022-04-12T09:05:41.853Z"
+      "completedDateTime": "2022-04-12T09:05:41.853Z",
       "createdDateTime": "2022-04-12T09:05:41.807Z",
       "approvalId": null,
       "customData": null,
