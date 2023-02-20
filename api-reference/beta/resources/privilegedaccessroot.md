@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessRoot resource type"
-description: "Represents the entry point for resources related to privileged identity management (PIM)."
+description: "Represents the entry point for resources related to Privileged Identity Management (PIM)."
 author: "mandardalvi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Privileged access root contains navigation elements related to access management providers which include group.
+Represents the entry point for resources related to Privileged Identity Management (PIM).
 
 Inherits from [entity](../resources/entity.md).
 
