@@ -102,6 +102,7 @@ Content-Type: application/json
             "type": "afterDateTime",
             "endDateTime": "2023-02-07T19:56:00Z",
             "duration": null
+        }
       },
       "ticketInfo": {
         "ticketNumber": null,
