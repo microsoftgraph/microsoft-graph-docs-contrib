@@ -214,8 +214,9 @@ These examples show how to use `$filter` to match against supported properties a
 
 > [!NOTE]
 >
-> 1. Examples marked with `*` are only supported with [advanced query capabilities](/graph/aad-advanced-queries).
-> 2. GUID and DateTimeOffset values aren't enclosed in quotes in `$filter` expressions.
+> <sup>*</sup> Examples marked with `*` are only supported with [advanced query capabilities](/graph/aad-advanced-queries).
+> 
+> GUID and DateTimeOffset values aren't enclosed in quotes in `$filter` expressions.
 
 ### For single primitive types like String, Int, and dates
 
