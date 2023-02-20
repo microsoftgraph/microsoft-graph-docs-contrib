@@ -121,7 +121,7 @@ Content-Type: application/json
       }
   },
   "action": "adminAssign",
-  "isValidationOnly": "false",
+  "isValidationOnly": false,
   "justification": "Assign active member access.",
   "scheduleInfo": {
       "startDateTime": "2023-02-07T07:05:55.3404527Z",
@@ -199,7 +199,7 @@ Content-Type: application/json
       }
   },
   "action": "selfActivate",
-  "isValidationOnly": "false",
+  "isValidationOnly": false,
   "justification": "Activate assignment.",
   "scheduleInfo": {
       "startDateTime": "2023-02-07T07:05:55.3404527Z",
