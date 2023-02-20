@@ -1,9 +1,9 @@
 ---
 title: "customExtensionStageSetting resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Defines the configuration of when to execute pre-defined custom extension and store the relationship in entity `accessPackageCustomExtensionStage`."
+author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "vikama-microsoft"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines the configuration of when to execute pre-defined custom extension and store the relationship in entity `accessPackageCustomExtensionStage`.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -33,13 +33,13 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|stage|accessPackageCustomExtensionStage|**TODO: Add Description**.The possible values are: `assignmentRequestCreated`, `assignmentRequestApproved`, `assignmentRequestGranted`, `assignmentRequestRemoved`, `assignmentFourteenDaysBeforeExpiration`, `assignmentOneDayBeforeExpiration`, `unknownFutureValue`.|
+|id|String| Identification for custom extension stage. Inherited from [entity](../resources/entity.md).|
+|stage|accessPackageCustomExtensionStage|Indicate at which stage the custom action will be executed..The possible values are: `assignmentRequestCreated`, `assignmentRequestApproved`, `assignmentRequestGranted`, `assignmentRequestRemoved`, `assignmentFourteenDaysBeforeExpiration`, `assignmentOneDayBeforeExpiration`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[customCalloutExtension](../resources/customcalloutextension.md)|**TODO: Add Description**|
+|customExtension|[customCalloutExtension](../resources/customcalloutextension.md)|Indicate which custom extension will be executed at this stage.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
