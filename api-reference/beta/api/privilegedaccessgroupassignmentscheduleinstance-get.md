@@ -82,7 +82,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleInstances/$entity",
     "id": "48fe5560-de56-2750-ae7c-2bbf1da9e452",
-    "startDateTime"" null,
+    "startDateTime": null,
     "endDateTime": null,
     "accessId": "member",
     "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
@@ -90,7 +90,6 @@ Content-Type: application/json
     "memberType": "Direct",
     "assignmentType": "Assigned",
     "assignmentScheduleId": "48fe5560-de56-2750-ae7c-2bbf1da9e452"
-  }
 }
 ```
 
