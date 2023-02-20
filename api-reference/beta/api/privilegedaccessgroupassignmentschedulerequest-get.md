@@ -84,7 +84,7 @@ Content-Type: application/json
     "status": "Provisioned",
     "completedDateTime": "2023-01-11T11:50:06Z",
     "createdDateTime": "2023-01-11T11:50:05.95Z",
-    "approvalId": null
+    "approvalId": null,
     "customData": null,
     "createdBy": {
       "user": {
