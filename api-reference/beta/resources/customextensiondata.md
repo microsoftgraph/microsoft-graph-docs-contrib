@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the base type of the custom extension data which will be used and derived for custom extension callback data. This is an abstract type.
+Defines the base type of the custom extension data which will be used and derived for [accessPackageAssignmentRequestCallbackData](../resources/accessPackageAssignmentRequestCallbackData.md). This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
