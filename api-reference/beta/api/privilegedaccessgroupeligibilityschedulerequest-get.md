@@ -95,7 +95,7 @@ Content-Type: application/json
         }
     },
     "action": "adminRemove",
-    "isValidationOnly": "false",
+    "isValidationOnly": false,
     "justification": null,
     "scheduleInfo": null,
     "ticketInfo": {
