@@ -59,5 +59,8 @@ The following is a JSON representation of the resource.
   "registrationEnforcement": {
     "@odata.type": "microsoft.graph.registrationEnforcement"
   } 
+  "systemCredentialPreferences": {
+    "@odata.type": "microsoft.graph.systemCredentialPreferences"
+  }
 }
 ```
