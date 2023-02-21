@@ -98,7 +98,7 @@ The response will be `201 Created` if a new sharing link is created for the **dr
 ### Example 1: Create an anonymous sharing link
 The following example requests a sharing link to be created for the **driveItem** specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
-For OneDrive for Business and SharePoint user, use sendNotification parameter to create a sharingLink, sharingLink is then sent to recipients via email.
+For OneDrive for Business and SharePoint users, use the sendNotification parameter to create a sharingLink, the sharingLink is then sent to recipients via email.
 All existing permissions are removed when sharing for the first time if retainInheritedPermissions is false.
 
 #### Request
