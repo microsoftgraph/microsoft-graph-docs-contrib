@@ -51,7 +51,7 @@ The request should be a JSON object with the following properties.
 | **password** | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.
 | **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
 | **scope** | string | Optional. The scope of link to create. Either `anonymous`, `organization`, or `users`. |
-| **retainInheritedPermissions** |  boolean                       | If `true`, any current existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. The default is `true`. Optional. |
+| **retainInheritedPermissions** |  boolean                       | If `true`, any current inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all current permissions are removed when sharing for the first time. The default is `true`. Optional. |
 
 
 ### Link types
