@@ -114,14 +114,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "createdDateTime": "string (timestamp)",
   "description": "string",
   "displayName": "string",
+  "email": "string",
   "id": "string (identifier)",
   "isFavoriteByDefault": true,
-  "email": "string",
-  "webUrl": "string",
   "membershipType": "String",
-  "createdDateTime": "string (timestamp)"
+  "webUrl": "string"
 }
 ```
 
