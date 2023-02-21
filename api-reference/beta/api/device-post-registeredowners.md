@@ -1,7 +1,7 @@
 ---
 title: "Create registeredOwner"
 description: "Add a user as a registered owner of the device."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
