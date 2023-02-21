@@ -108,7 +108,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_deleteditems"
+  "name": "list_directory_deleteditems"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
@@ -173,7 +173,7 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_deleteditems_count"
+  "name": "list_directory_deleteditems_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,displayName,deletedDateTime
