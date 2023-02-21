@@ -1,6 +1,6 @@
 ---
 title: "plannerPlan: delta"
-description: "Get newly created, updated, or deleted planner plan in either a group or a planner roster without having to perform a full read of the entire resource collection."
+description: "Get newly created, updated, or deleted Planner plan in either a group or a Planner roster without having to perform a full read of the entire resource collection."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted Planner plan in either a [group](../resources/group.md) or a Planner roster without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
+Get newly created, updated, or deleted Planner [plan](../resources/plannerplan.md) in either a [group](../resources/group.md) or a Planner [roster](../resources/plannerroster.md) without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 ## Permissions
 
@@ -60,10 +60,12 @@ The following example shows a request for delta on **plannerPlan** objects conta
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "plannerplanthis.delta",
-  "sampleKeys": ["{plannerRosterId}"]
+  "sampleKeys": ["-W4K7hIak0WlAwgJCn1sEWQABgjH"]
 }
 -->
 
@@ -112,6 +114,8 @@ Content-Type: application/json
 The following example shows a request for delta on **plannerPlan** objects contained by a group.
 
 #### Request
+
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
