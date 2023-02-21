@@ -45,10 +45,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.educationOrganization",
-  "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
   "externalSource": "String",
-  "externalSourceDetail": "String"
+  "externalSourceDetail": "String",
+  "id": "String (identifier)"
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "updatableAssetGroup: addMembersById"
 description: "Add members of the same type to an updatableAssetGroup."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -66,7 +66,7 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembersById
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5/addMembersById
 Content-Type: application/json
 
 {
