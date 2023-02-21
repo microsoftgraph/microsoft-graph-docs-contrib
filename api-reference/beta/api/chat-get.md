@@ -467,9 +467,6 @@ GET https://graph.microsoft.com/beta/chats/19:ebe3857aa388434bab0cad9d2e09f4de@t
 
 ---
 
----
-
-
 #### Response
 The following example shows the response.
 
