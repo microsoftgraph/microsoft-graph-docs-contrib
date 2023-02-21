@@ -101,8 +101,6 @@ GET https://graph.microsoft.com/v1.0/education/me/assignments
 
 ---
 
----
-
 #### Response
 
 The following is an example of the response. 
@@ -244,9 +242,6 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
----
-
 
 #### Response
 
@@ -392,9 +387,6 @@ GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-678
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
----
-
 
 #### Response
 
