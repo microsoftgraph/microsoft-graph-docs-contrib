@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
+Get newly created, updated, or deleted [buckets](../resources/plannerbucket.md) in a Planner [plan](../resources/plannerplan.md) without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 ## Permissions
 
@@ -35,12 +35,12 @@ GET /planner/plans/{plan-id}/buckets/delta
 
 ### Query parameters
 
-Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltaToken` and `$skipToken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
 | Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                                    |
 | :-------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection. |
-| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.                                                                                                                                                                |
+| $deltaToken     | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL, including this token in the first request of the next round of change tracking for that collection. |
+| $skipToken      | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.                                                                                                                                                                |
 
 ## Request headers
 
@@ -61,30 +61,28 @@ If successful, this function returns a `200 OK` response code and a [plannerBuck
 
 - A `@odata.deltaLink` URL in the response object indicates that no more data about the existing state of the resource is returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
 
-For more details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
-
-For an example request, see [Get incremental changes for users](/graph/delta-query-users).
+For more details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview). For an example about how to track changes to users, see [Get incremental changes for users](/graph/delta-query-users).
 
 ## Examples
 
-### Example 1: Get delta on buckets in a plan
+The following example shows a request for delta on **plannerBucket** objects contained by a **plannerPlan**.
 
-The following example shows a request for delta on **plannerBucket** objects in by a **plannerPlan**.
+### Request
 
-#### Request
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
   "name": "plannerbucketthis.delta",
-  "sampleKeys": ["2txjA-BMZEq-bKi6Wfj5aGQAB1OJ"]
+  "sampleKeys": ["-W4K7hIak0WlAwgJCn1sEWQABgjH"]
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/buckets/delta
+GET https://graph.microsoft.com/beta/planner/plans/-W4K7hIak0WlAwgJCn1sEWQABgjH/buckets/delta
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 
