@@ -8,6 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var printJob = new PrintJob
 {
+	DisplayName = "testjob",
 	Configuration = new PrintJobConfiguration
 	{
 		FeedOrientation = PrinterFeedOrientation.LongEdgeFirst,
