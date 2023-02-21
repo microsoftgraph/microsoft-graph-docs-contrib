@@ -23,7 +23,7 @@ This is an abstract type.
 |priority|Int32|The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated. |
 
 ## Relationships
-None.
+An existing subtype of the urlToItemResolverBase resource type is the [itemIdResolver resource type](externalconnectors-itemidresolver.md).
 
 ## JSON representation
 The following is a JSON representation of the resource.
