@@ -11,12 +11,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestTop := int32(100)
 requestSkip := int32(0)
 
-requestParameters := &graphconfig.PendingAccessReviewInstancesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MePendingAccessReviewInstancesRequestBuilderGetQueryParameters{
 	Expand: [] string {"definition"},
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.PendingAccessReviewInstancesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MePendingAccessReviewInstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

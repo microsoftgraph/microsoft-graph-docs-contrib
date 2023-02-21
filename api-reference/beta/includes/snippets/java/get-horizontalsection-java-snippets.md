@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("select", "id,expand=columns"));
 
-Content response = graphClient.sites("{sitesId}").pages("{sitePageId}").canvasLayout().horizontalSections().{horizontalSectionId}()
+HorizontalSection horizontalSection = graphClient.sites("{sitesId}").pages("{sitePageId}").canvasLayout().horizontalSections("{horizontalSectionId}")
 	.buildRequest( requestOptions )
 	.get();
 

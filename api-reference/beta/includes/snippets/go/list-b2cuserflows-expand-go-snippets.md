@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.B2cUserFlowsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityB2cUserFlowsRequestBuilderGetQueryParameters{
 	Expand: [] string {"identityProviders"},
 }
-configuration := &graphconfig.B2cUserFlowsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityB2cUserFlowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

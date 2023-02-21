@@ -36,10 +36,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyB2BSetting",
-  "usersAndGroups": {
+  "applications": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"
   },
-  "applications": {
+  "usersAndGroups": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"
   }
 }

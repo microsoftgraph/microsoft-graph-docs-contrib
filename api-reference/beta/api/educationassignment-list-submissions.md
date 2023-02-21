@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [submissions](../resources/educationsubmission.md) associated with an [assignment](../resources/educationassignment.md).
+List all the [submissions](../resources/educationsubmission.md) associated with an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 A teacher or an application with application permissions can get all the **submissions**, a student can only get **submissions** that they are associated with.
 
@@ -331,9 +331,6 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
----
-
 
 #### Response
 The following is an example of the response. 

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Returns a list of [educationAssignment](../resources/educationassignment.md) assigned to a [educationUser](../resources/educationuser.md) for all [classes](../resources/educationclass.md). 
+Returns a list of [educationAssignment](../resources/educationassignment.md) assigned to a [educationUser](../resources/educationuser.md) for all [classes](../resources/educationclass.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 This method allows a caller to find all the **assignments** belonging to a student or a teacher in a single call rather than having to request **assignments** from each **class**. The **assignment** list contains what is needed to get the detailed information for the **assignment** from within the **class** namespace. Use the methods defined for the **assignment** for all other operations.
 
@@ -98,8 +98,6 @@ GET https://graph.microsoft.com/v1.0/education/me/assignments
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-me-assignments-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -245,9 +243,6 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 ---
 
----
-
-
 #### Response
 
 If user tries to query a different user-id than his own, this method returns a `403 Forbidden` response code.
@@ -392,9 +387,6 @@ GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-678
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
----
-
 
 #### Response
 

@@ -159,7 +159,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "topicModelingSettings",
 			"ChangeType": "Addition",
-			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-1.0) resource to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicmodelingsettings?view=graph-rest-1.0) resource to the microsoft.graph.security subnamespace.",
 			"Target": "topicModelingSettings"
 		  },
 		  {
@@ -367,7 +367,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "topicModelingSettings",
 			"ChangeType": "Addition",
-			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicmodelingsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "topicModelingSettings"
 		  },
 		  {
@@ -417,7 +417,7 @@
 			"ApiChange": "Parameter",
 			"ChangedApiName": "purgeType",
 			"ChangeType": "Addition",
-			"Description": "Added the **purgeType** parameter to the [purgeData](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+			"Description": "Added the **purgeType** parameter to the [purgeData](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta) method.",
 			"Target": "purgeData"
 		  },
 		  {
@@ -425,7 +425,7 @@
 			"ApiChange": "Parameter",
 			"ChangedApiName": "purgeAreas",
 			"ChangeType": "Addition",
-			"Description": "Added the **purgeAreas** parameter to the [purgeData](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method.",
+			"Description": "Added the **purgeAreas** parameter to the [purgeData](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta) method.",
 			"Target": "purgeData"
 		  }
 		],
@@ -467,7 +467,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryPurgeDataOperation",
 			"ChangeType": "Addition",
-			"Description": "Added the [ediscoveryPurgeDataOperation](https://docs.microsoft.com/en-us/graph/api/resources/ediscoveryPurgeDataOperation?view=graph-rest-1.0) resource",
+			"Description": "Added the [ediscoveryPurgeDataOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryPurgeDataOperation?view=graph-rest-1.0) resource",
 			"Target": "ediscoveryPurgeDataOperation"
 		  },
 		  {
@@ -475,7 +475,7 @@
 			"ApiChange": "Method",
 			"ChangedApiName": "purgeData",
 			"ChangeType": "Addition",
-			"Description": "Added the [purgeData](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-1.0) method to the [ediscoverySearch](https://docs.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-1.0) resource.",
+			"Description": "Added the [purgeData](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverySearch?view=graph-rest-1.0) resource.",
 			"Target": "ediscoverySearch"
 		  }
 		],

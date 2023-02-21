@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.SitePageRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SiteItemPageItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","title"},
 	Expand: [] string {"webparts"},
 }
-configuration := &graphconfig.SitePageRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SiteItemPageItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

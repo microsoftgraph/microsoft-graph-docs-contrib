@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.DriveItemRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DriveItemItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"children"},
 }
-configuration := &graphconfig.DriveItemRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DriveItemItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

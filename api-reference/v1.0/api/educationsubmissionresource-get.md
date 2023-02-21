@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a specific resource associated with a [submission](../resources/educationsubmissionresource.md).
+Retrieve the properties of a specific resource associated with a [submission](../resources/educationsubmissionresource.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 This resource is in the "working" resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 

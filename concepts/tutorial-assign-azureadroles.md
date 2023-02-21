@@ -2,9 +2,11 @@
 title: "Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph"
 description: "Learn how to create a role-assignable security group for IT Helpdesk and use the PIM API to assign the security group eligibility to the User Administrator role."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.prod: "governance"
-ms.date: 11/01/2022
+ms.date: 12/20/2022
 ---
 
 # Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph

@@ -1,7 +1,9 @@
 ---
 title: "Configure the scope of your access review using the Microsoft Graph API"
 description: "Learn how to programmatically review the access that users, service principals, or groups have to your Azure AD resources by using the Microsoft Graph API."
-author: "jyothig123"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
@@ -186,7 +188,7 @@ This review won't include B2B direct connect users in teams with shared channels
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')",
+    "query": "/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}' and catalogId eq 'id')",
     "queryType": "MicrosoftGraph"
 }
 ```

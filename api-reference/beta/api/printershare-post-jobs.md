@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/print/shares/{id}/jobs
 Content-type: application/json
 
 {
+  "displayName": "testjob",
   "configuration": {
     "feedOrientation": "longEdgeFirst",
     "pageRanges": [
@@ -111,9 +112,6 @@ Content-type: application/json
 
 ---
 
-
----
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -130,6 +128,7 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printJobs/$entity",
   "id": "1825",
+  "displayName": "testjob", 
   "createdDateTime": "2020-10-14T05:16:49-07:00",
   "isFetchable": false,
   "redirectedFrom": null,

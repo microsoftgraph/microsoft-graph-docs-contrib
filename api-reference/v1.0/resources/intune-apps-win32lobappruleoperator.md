@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppRuleOperator enum type"
 description: "Contains properties for detection operator."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -25,8 +25,3 @@ Contains properties for detection operator.
 |greaterThanOrEqual|5|Greater than or equal operator.|
 |lessThan|8|Less than operator.|
 |lessThanOrEqual|9|Less than or equal operator.|
-
-
-
-
-

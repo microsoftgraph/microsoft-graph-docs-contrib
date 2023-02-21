@@ -43,19 +43,19 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.chatMessageInfo",
-  "id": "String (identifier)",
   "body": {
     "@odata.type": "microsoft.graph.itemBody"
+  },
+  "createdDateTime": "String (timestamp)",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
   },
   "from": {
     "@odata.type": "microsoft.graph.chatMessageFromIdentitySet"
   },
-  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "isDeleted": "Boolean",
-  "messageType": "String",
-  "eventDetail": {
-    "@odata.type": "microsoft.graph.eventMessageDetail"
-  }
+  "messageType": "String"
 }
 ```
 

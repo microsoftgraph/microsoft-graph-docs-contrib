@@ -32,9 +32,9 @@ This resource supports:
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The printTaskDefinition's identifier. Read-only.|
-|displayName|String|The name of the printTaskDefinition.|
 |createdBy|[appIdentity](appidentity.md)|The application that created the printTaskDefinition. Read-only.|
+|displayName|String|The name of the printTaskDefinition.|
+|id|String|The printTaskDefinition's identifier. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|

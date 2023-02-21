@@ -11,7 +11,7 @@ requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
 ApplicationCollectionPage applications = graphClient.applications()
 	.buildRequest( requestOptions )
-	.filter("owners/$count eq 0")
+	.filter("owners/$count eq 0 or owners/$count eq 1")
 	.get();
 
 ```
