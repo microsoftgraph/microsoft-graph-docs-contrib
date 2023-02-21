@@ -93,9 +93,6 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 
 ---
 
-
----
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

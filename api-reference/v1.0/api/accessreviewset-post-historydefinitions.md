@@ -61,19 +61,7 @@ The following table shows the required properties used to create an [accessRevie
 
 The **scopes** property of [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) is based on **accessReviewQueryScope**, a resource that allows you to configure different resources in it's **query** property. These resources then represent the scope of the history definition and dictate the type of review history data that is included in the downloadable CSV file which is generated when the history definition's [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) are created.
 
-Use the following format for the **query** property:
-
-```http
-/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
-```
-
-The value of `{object}` is one of the resources that can be configured in an **accessReviewScheduleDefinition**. For example, the following includes every accessReviewScheduleDefinition review result on individual groups (and excludes definitions scoped to all Microsoft 365 groups with guest users).
-
-```http
-/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
-```
-
-For more supported values, see Use the [$filter query parameter on accessReviewScheduleDefinition](accessreviewset-list-definitions.md#use-the-filter-query-parameter).
+[!INCLUDE [accessreviews-definition-filter-scope](../../includes/accessreviews-definition-filter-scope.md)]
 
 ## Response
 

@@ -74,50 +74,11 @@ items:
         displayName: throttling
         href: /training/modules/optimize-network-traffic
     - name: Change notifications
-      items:
-      - name: Overview
-        href: /graph/api/resources/webhooks?context=graph/api/beta
-        displayName: change notifications, WebHooks, set up notifications for changes in resource data
-      - name: Change notifications tutorial
-        href: /training/modules/msgraph-changenotifications-trackchanges
-      - name: Missing change notifications
-        href: /graph/webhooks-lifecycle?context=graph/api/beta
-      - name: Notifications with resource data
-        href: /graph/webhooks-with-resource-data?context=graph/api/beta
-      - name: Get notifications delivered different ways
-        href: /graph/change-notifications-delivery?context=graph/api/beta
-      - name: Change notifications for cloud printing
-        href: /graph/universal-print-webhook-notifications?context=graph/api/beta
-      - name: Change notifications for Microsoft Teams resources
-        items:
-        - name: Notification types and payloads
-          href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/beta
-          displayName: change notifications, Teams, Microsoft Teams
-        - name: Teams and channels
-          href: /graph/teams-changenotifications-team-and-channel?context=graph/api/beta
-        - name: Team and channel membership
-          href: /graph/teams-changenotifications-teamMembership?context=graph/api/beta
-        - name: Chat and channel messages
-          href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
-        - name: Chat
-          href: /graph/teams-changenotifications-chat?context=graph/api/beta
-        - name: Chat membership
-          href: /graph/teams-changenotifications-chatMembership?context=graph/api/beta
-      - name: Change notifications for Outlook resources
-        href: /graph/outlook-change-notifications-overview?context=graph/api/beta
+      displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+      href: /graph/webhooks?context=graph/api/beta
     - name: Change tracking
-      items:
-      - name: Overview
-        href: /graph/delta-query-overview?context=graph/api/beta
-        displayName: Delta query, track changes, change tracking
-      - name: Get changes to events (example)
-        href: /graph/delta-query-events?context=graph/api/beta
-      - name: Get changes to groups (example)
-        href: /graph/delta-query-groups?context=graph/api/beta
-      - name: Get changes to messages (example)
-        href: /graph/delta-query-messages?context=graph/api/beta
-      - name: Get changes to users (example)
-        href: /graph/delta-query-users?context=graph/api/beta
+      displayName: delta query
+      href: /graph/delta-query-overview?context=graph/api/beta
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
       href: /graph/extensibility-overview?context=graph/api/beta
@@ -1581,8 +1542,11 @@ items:
         displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         href: resources/webhooks.md
       - name: Subscription
-        href: resources/subscription.md
         items:
+        - name: Subscription
+          href: resources/subscription.md
+        - name: Change notification collection
+          href: resources/changenotificationcollection.md
         - name: List
           href: api/subscription-list.md
         - name: Create
@@ -10108,7 +10072,7 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)
+            - name: deviceManagementDerivedCredentialSettings
               href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -10569,6 +10533,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC shared-use service plan
+          href: resources/cloudpcshareduseserviceplan.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-shareduseserviceplans.md
+          - name: Get
+            href: api/cloudpcshareduseserviceplan-get.md
         - name: Cloud PC snapshot
           href: resources/cloudpcsnapshot.md
           items:
@@ -10631,7 +10602,7 @@ items:
         displayName: Windows updates
         items:
         - name: Updates
-          href: resources/windowsupdates-updates.md
+          href: resources/adminwindowsupdates.md
         - name: Catalog
           items:
           - name: Catalog
@@ -10640,44 +10611,88 @@ items:
             href: resources/windowsupdates-featureupdatecatalogentry.md
           - name: Quality update catalog entry
             href: resources/windowsupdates-qualityupdatecatalogentry.md
+          - name: Driver update catalog entry
+            href: resources/windowsupdates-driverupdatecatalogentry.md
           - name: List catalog entries
             href: api/windowsupdates-catalog-list-entries.md
         - name: Deployment
           href: resources/windowsupdates-deployment.md
           items:
           - name: List deployments
-            href: api/windowsupdates-updates-list-deployments.md
+            href: api/adminwindowsupdates-list-deployments.md
           - name: Create deployment
-            href: api/windowsupdates-updates-post-deployments.md
+            href: api/adminwindowsupdates-post-deployments.md
           - name: Get deployment
             href: api/windowsupdates-deployment-get.md
           - name: Update deployment
             href: api/windowsupdates-deployment-update.md
           - name: Delete deployment
             href: api/windowsupdates-deployment-delete.md
-          - name: Deployable content
+        - name: Deployable content
+          items:
+          - name: Catalog content
+            href: resources/windowsupdates-catalogcontent.md
+        - name: Deployment audience
+          href: resources/windowsupdates-deploymentaudience.md
+          items:
+          - name: List
+            href: api/adminwindowsupdates-list-deploymentaudiences.md
+          - name: Create
+            href: api/adminwindowsupdates-post-deploymentaudiences.md
+          - name: Get
+            href: api/windowsupdates-deploymentaudience-get.md
+          - name: Delete
+            href: api/windowsupdates-deploymentaudience-delete.md
+          - name: List members
+            href: api/windowsupdates-deploymentaudience-list-members.md
+          - name: List exclusions
+            href: api/windowsupdates-deploymentaudience-list-exclusions.md
+          - name: Update members and exclusions
+            href: api/windowsupdates-deploymentaudience-updateaudience.md
+          - name: Update by ID
+            href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+        - name: Update policy
+          href: resources/windowsupdates-updatepolicy.md
+          items:
+          - name: List
+            href: api/adminwindowsupdates-list-updatepolicies.md
+          - name: Create
+            href: api/adminwindowsupdates-post-updatepolicies.md
+          - name: Get
+            href: api/windowsupdates-updatepolicy-get.md
+          - name: Update
+            href: api/windowsupdates-updatepolicy-update.md
+          - name: Delete
+            href: api/windowsupdates-updatepolicy-delete.md
+        - name: Compliance change
+          href: resources/windowsupdates-compliancechange.md
+          items: 
+          - name: List
+            href: api/windowsupdates-updatepolicy-list-compliancechanges.md
+          - name: Get
+            href: api/windowsupdates-compliancechange-get.md
+          - name: Update
+            href: api/windowsupdates-compliancechange-update.md
+          - name: Delete
+            href: api/windowsupdates-compliancechange-delete.md
+          - name: Content approval
+            href: resources/windowsupdates-contentapproval.md
             items:
-            - name: Expedited quality update reference
-              href: resources/windowsupdates-expeditedqualityupdatereference.md
-            - name: Feature update reference
-              href: resources/windowsupdates-featureupdatereference.md
-          - name: Deployment audience
-            items:
-            - name: Deployment audience
-              href: resources/windowsupdates-deploymentaudience.md
-            - name: List members
-              href: api/windowsupdates-deploymentaudience-list-members.md
-            - name: List exclusions
-              href: api/windowsupdates-deploymentaudience-list-exclusions.md
-            - name: Update members and exclusions
-              href: api/windowsupdates-deploymentaudience-updateaudience.md
-            - name: Update by ID
-              href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+            - name: List
+              href: api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md
+            - name: Create
+              href: api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md
+            - name: Get
+              href: api/windowsupdates-contentapproval-get.md
+            - name: Update
+              href: api/windowsupdates-contentapproval-update.md
+            - name: Delete
+              href: api/windowsupdates-contentapproval-delete.md
         - name: Updatable asset
           href: resources/windowsupdates-updatableasset.md
           items:
           - name: List updatable assets
-            href: api/windowsupdates-updates-list-updatableassets.md
+            href: api/adminwindowsupdates-list-updatableassets.md
           - name: Get updatable asset
             href: api/windowsupdates-updatableasset-get.md
           - name: Delete updatable asset
@@ -10686,7 +10701,7 @@ items:
             href: resources/windowsupdates-azureaddevice.md
             items:
             - name: List Azure AD devices
-              href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
+              href: api/adminwindowsupdates-list-updatableassets-azureaddevice.md
             - name: Get Azure AD device
               href: api/windowsupdates-azureaddevice-get.md
             - name: Delete Azure AD device
@@ -10703,9 +10718,9 @@ items:
             href: resources/windowsupdates-updatableassetgroup.md
             items:
             - name: List updatable asset groups
-              href: api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md
+              href: api/adminwindowsupdates-list-updatableassets-updatableassetgroup.md
             - name: Create updatable asset group
-              href: api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md
+              href: api/adminwindowsupdates-post-updatableassets-updatableassetgroup.md
             - name: Get updatable asset group
               href: api/windowsupdates-updatableassetgroup-get.md
             - name: Delete updatable asset group
@@ -10724,7 +10739,7 @@ items:
           href: resources/windowsupdates-resourceconnection.md
           items:
           - name: List
-            href: api/windowsupdates-updates-list-resourceconnections.md
+            href: api/adminwindowsupdates-list-resourceconnections.md
           - name: Get
             href: api/windowsupdates-resourceconnection-get.md
           - name: Delete
@@ -10733,9 +10748,9 @@ items:
             href: resources/windowsupdates-operationalinsightsconnection.md
             items:
             - name: List
-              href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
+              href: api/adminwindowsupdates-list-resourceconnections-operationalinsightsconnection.md
             - name: Create
-              href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
+              href: api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
             - name: Get
               href: api/windowsupdates-operationalinsightsconnection-get.md
             - name: Delete
@@ -11611,7 +11626,7 @@ items:
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
-        - name: Granular delegated admin privileges (preview)
+        - name: Granular delegated admin privileges
           items:
           - name: Overview
             displayName: GDAP, Partner Center, CSP, VAR
@@ -11822,6 +11837,42 @@ items:
             href: api/directoryobject-getbyids.md
           - name: Validate properties
             href: api/directoryobject-validateproperties.md
+        - name: Directory recommendations (preview)
+          displayName: Recommendations, Azure AD recommendations
+          href: resources/recommendations-api-overview.md
+          items:
+          - name: Recommendations
+            items:
+            - name: Recommendation
+              href: resources/recommendation.md
+            - name: List
+              href: api/directory-list-recommendation.md
+            - name: Get
+              href: api/recommendation-get.md
+            - name: Complete
+              href: api/recommendation-complete.md
+            - name: Dismiss
+              href: api/recommendation-dismiss.md
+            - name: Postpone
+              href: api/recommendation-postpone.md
+            - name: Reactivate
+              href: api/recommendation-reactivate.md
+          - name: Impacted resources
+            items:
+            - name: Impacted resource
+              href: resources/impactedresource.md
+            - name: List
+              href: api/recommendation-list-impactedresources.md
+            - name: Get
+              href: api/impactedresource-get.md
+            - name: Complete
+              href: api/impactedresource-complete.md
+            - name: Dismiss
+              href: api/impactedresource-dismiss.md
+            - name: Postpone
+              href: api/impactedresource-postpone.md
+            - name: Reactivate
+              href: api/impactedresource-reactivate.md
         - name: Directory role
           href: resources/directoryrole.md
           items:
@@ -13486,6 +13537,8 @@ items:
               href: api/identitygovernance-workflow-update.md
             - name: Delete
               href: api/identitygovernance-workflow-delete.md
+            - name: List users in scope
+              href: api/workflow-list-executionscope.md
             - name: List deleted workflows
               href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
             - name: Get a deleted workflow
@@ -15321,7 +15374,7 @@ items:
           items:
           - name: List case operations
             href: api/security-ediscoverycase-list-operations.md
-          - name: Get case opreation by id
+          - name: Get case operation by ID
             href: api/security-caseoperation-get.md
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
@@ -16127,6 +16180,8 @@ items:
           href: api/plannerroster-get.md
         - name: Delete roster
           href: api/plannerroster-delete.md
+        - name: Get roster's member
+          href: api/plannerrostermember-get.md
         - name: List roster's members
           href: api/plannerroster-list-members.md
         - name: Add a member to roster
