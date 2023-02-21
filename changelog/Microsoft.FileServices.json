@@ -3024,7 +3024,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "sendNotification",
           "ChangeType": "Addition",
-          "Description": "Added the **sendNotification** Parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Description": "Added the `sendNotification` parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) method.",
           "Target": "createLink,driveItem"
         },
         {
