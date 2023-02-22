@@ -180,6 +180,56 @@ items:
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
+      - name: Change notifications
+        items: 
+          - name: Overview
+            href: webhooks.md
+            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+          - name: "Training module: Use change notifications"
+            href: /training/modules/msgraph-changenotifications-trackchanges
+          - name: Notifications through webhooks
+            href: change-notifications-delivery-webhooks.md
+          - name: Notifications through Azure Event Hubs
+            href: change-notifications-delivery-event-hubs.md
+          - name: Lifecycle notifications for subscriptions
+            href: webhooks-lifecycle.md
+          - name: Notifications with resource data (rich notifications)
+            href: webhooks-with-resource-data.md
+          - name: Tutorials
+            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+            items:
+            - name: Notifications for cloud printing
+              href: universal-print-webhook-notifications.md
+            - name: Notifications for Microsoft Teams resources
+              items:
+                - name: Notification types and payloads
+                  href: teams-change-notification-in-microsoft-teams-overview.md
+                  displayName: change notifications, Teams, Microsoft Teams
+                - name: Teams and channels
+                  href: teams-changenotifications-team-and-channel.md
+                - name: Team and channel membership
+                  href: teams-changenotifications-teamMembership.md
+                - name: Chat and channel messages
+                  href: teams-changenotifications-chatmessage.md
+                - name: Chat
+                  href: teams-changenotifications-chat.md
+                - name: Chat membership
+                  href: teams-changenotifications-chatMembership.md
+            - name: Notifications for Outlook resources
+              href: outlook-change-notifications-overview.md
+      - name: Change tracking
+        items:
+          - name: Overview
+            href: delta-query-overview.md
+            displayName: Delta query, change tracking, polling
+          - name: Get changes to events (example)
+            href: delta-query-events.md
+          - name: Get changes to groups (example)
+            href: delta-query-groups.md
+          - name: Get changes to messages (example)
+            href: delta-query-messages.md
+          - name: Get changes to users (example)
+            href: delta-query-users.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -664,6 +714,8 @@ items:
             href: teams-licenses.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Implementation differences in national clouds
+            href: teamwork-national-cloud-differences.md
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
@@ -767,50 +819,11 @@ items:
                 href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
-            items:
-              - name: Overview
-                href: webhooks.md
-                displayName: change notifications, WebHooks, set up notifications for changes in resource data
-              - name: "Training module: Change notifications tutorial"
-                href: /training/modules/msgraph-changenotifications-trackchanges
-              - name: Missing change notifications
-                href: webhooks-lifecycle.md
-              - name: Notifications with resource data
-                href: webhooks-with-resource-data.md
-              - name: Get notifications delivered different ways
-                href: change-notifications-delivery.md
-              - name: Change notifications for cloud printing
-                href: universal-print-webhook-notifications.md
-              - name: Change notifications for Microsoft Teams resources
-                items:
-                  - name: Notification types and payloads
-                    href: teams-change-notification-in-microsoft-teams-overview.md
-                    displayName: change notifications, Teams, Microsoft Teams
-                  - name: Teams and channels
-                    href: teams-changenotifications-team-and-channel.md
-                  - name: Team and channel membership
-                    href: teams-changenotifications-teamMembership.md
-                  - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md
-                  - name: Chat
-                    href: teams-changenotifications-chat.md
-                  - name: Chat membership
-                    href: teams-changenotifications-chatMembership.md
-              - name: Change notifications for Outlook resources
-                href: outlook-change-notifications-overview.md
+            displayName: rich notifications, basic notifications, webhooks, Azure Event Hubs, Azure Event Grids
+            href: webhooks.md
           - name: Change tracking
-            items:
-              - name: Overview
-                href: delta-query-overview.md
-                displayName: Delta query, track changes, change tracking
-              - name: Get changes to events (example)
-                href: delta-query-events.md
-              - name: Get changes to groups (example)
-                href: delta-query-groups.md
-              - name: Get changes to messages (example)
-                href: delta-query-messages.md
-              - name: Get changes to users (example)
-                href: delta-query-users.md
+            displayName: delta query, polling
+            href: delta-query-overview.md
           - name: Add custom data
             displayName: directory extensions, schema extensions, open extensions, extension attributes
             href: extensibility-overview.md
