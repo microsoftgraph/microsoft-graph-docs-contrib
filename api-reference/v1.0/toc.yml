@@ -7907,6 +7907,13 @@ items:
             href: /graph/teams-list-all-teams?context=graph/api/1.0
           - name: Complete migration for team
             href: api/team-completemigration.md
+          - name: Deleted team
+            href: resources/deletedteam.md
+            items:
+            - name: List
+              href: api/teamwork-list-deletedteams.md
+            - name: Get all messages
+              href: api/deletedteam-getallmessages.md
         - name: Tag
           href: resources/teamworktag.md
           items:
