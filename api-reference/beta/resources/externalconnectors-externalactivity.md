@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: resourcePageType
 ---
----
 
 # externalActivity resource type
 

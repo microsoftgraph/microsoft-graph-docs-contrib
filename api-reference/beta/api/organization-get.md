@@ -27,6 +27,55 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Global Administrator
+* User Administrator
+* User
+* Helpdesk Administrator
+* Service Support Administrator
+* Billing Administrator
+* Mailbox Administrator
+* Partner Tier1 Support
+* Partner Tier2 Support
+* Directory Readers
+* Directory Writers
+* AdHoc License Administrator
+* Application Administrator
+* Security Reader
+* Security Administrator
+* Privileged Role Administrator
+* Cloud Application Administrator
+* Customer LockBox Access Approver
+* Dynamics 365 Administrator
+* Power BI Administrator
+* Azure Information Protection Administrator
+* Customer LockBox Access Approver
+* Dynamics 365 Administrator
+* Power BI Administrator
+* Azure Information Protection Administrator
+* Desktop Analytics Administrator
+* License Administrator
+* Microsoft Managed Desktop Administrator
+* Authentication Administrator
+* Privileged Authentication Administrator
+* Teams Communications Administrator
+* Teams Communications Support Engineer
+* Teams Communications Support Specialist
+* Teams Administrator
+* Insights Administrator
+* Compliance Data Administrator
+* Security Operator
+* Kaizala Administrator
+* Global Reader
+* Volume Licensing Business Center User
+* Volume Licensing Service Center User
+* Modern Commerce User
+* Microsoft Store for Business User
+* Directory Reviewer
+* Guest User
+* Restricted Guest User
+
 > **Note**: Applications granted the User.Read permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization.  All other properties will return with `null` values. To read all properties, use Organization.Read.All.
 
 ## HTTP request
