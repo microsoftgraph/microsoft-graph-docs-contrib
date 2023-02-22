@@ -94,9 +94,6 @@ GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@t
 
 ---
 
-
----
-
 ### Response
 
 The following example shows the response.

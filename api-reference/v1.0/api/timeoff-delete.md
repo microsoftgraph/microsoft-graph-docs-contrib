@@ -88,10 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOf
 
 ---
 
-
----
-
-
 #### Response
 
 The following is an example of the response. 
