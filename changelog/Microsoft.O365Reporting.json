@@ -1925,7 +1925,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "teamsChannelMessages",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **teamsChannelMessages** property to the [getOffice365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta) resource.",
+			  "Description": "Added the **teamsChannelMessages** property to the [office365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta) resource.",
 			  "Target": "getOffice365GroupsActivityCounts"
 			},
 			{
@@ -1933,7 +1933,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "teamsMeetingsOrganized",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **teamsMeetingsOrganized** property to the [getOffice365GroupsActivityCounts(https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta) resource.",
+			  "Description": "Added the **teamsMeetingsOrganized** property to the [office365GroupsActivityCounts(https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta) resource.",
 			  "Target": "getOffice365GroupsActivityCounts"
 			},
 			{
@@ -1941,7 +1941,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "teamsChannelMessagesCount",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **teamsChannelMessagesCount** property to the [getOffice365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta) resource.",
+			  "Description": "Added the **teamsChannelMessagesCount** property to the [office365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta) resource.",
 			  "Target": "getOffice365GroupsActivityDetail"
 			},
 			{
@@ -1949,7 +1949,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "teamsMeetingsOrganizedCount",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **teamsMeetingsOrganizedCount** property to the [getOffice365GroupsActivityDetail(https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta) resource.",
+			  "Description": "Added the **teamsMeetingsOrganizedCount** property to the [office365GroupsActivityDetail(https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta) resource.",
 			  "Target": "getOffice365GroupsActivityDetail"
 			}
 		  ],
