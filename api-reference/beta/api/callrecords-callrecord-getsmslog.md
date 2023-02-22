@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /communications/callRecords/getSmsLog
+GET /communications/callRecords/getSmsLog(fromDateTime={fromDateTime},toDateTime={toDateTime})
 ```
 
 ## Function parameters
@@ -42,8 +42,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.|
-|toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
+|fromDateTime|DateTimeOffset|Start of time range to query (required parameter). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|toDateTime|DateTimeOffset|End of time range to query (required parameter). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 > [!IMPORTANT]
 > The **fromDateTime** and **toDateTime** values can't be more than a date range of 90 days.
