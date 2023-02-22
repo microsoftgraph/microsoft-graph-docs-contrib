@@ -18,8 +18,9 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|**TODO: Add Description**|
-|state|advancedConfigState|**TODO: Add Description**.The possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`.|
+|excludeTarget|[excludeTarget](../resources/excludetarget.md) collection|A single entity that is excluded from this feature.|
+|includeTarget|[includeTarget](../resources/excludetarget.md) collection|A single entity that is included in this feature.|
+|state|advancedConfigState|Enable or disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set and uses the default behavior of Azure AD for the setting. The default value is `disabled`.|
 
 ## Relationships
 None.
@@ -34,6 +35,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.systemCredentialPreferences",
+   "includeTargets": [
+    {
+      "@odata.type": "microsoft.graph.includeTarget"
+    }
+  ],
   "excludeTargets": [
     {
       "@odata.type": "microsoft.graph.excludeTarget"
