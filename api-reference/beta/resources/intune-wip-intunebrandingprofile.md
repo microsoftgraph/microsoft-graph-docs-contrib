@@ -56,6 +56,7 @@ This entity contains data which is used in customizing the tenant level appearan
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
+|disableDeviceCategorySelection|Boolean|Boolean that indicates if Device Category Selection will be shown in Company Portal|
 |showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
 |showConfigurationManagerApps|Boolean|Boolean that indicates if Configuration Manager Apps will be shown in Company Portal|
@@ -130,6 +131,7 @@ Here is a JSON representation of the resource.
       "action": "String"
     }
   ],
+  "disableDeviceCategorySelection": true,
   "showAzureADEnterpriseApps": true,
   "showOfficeWebApps": true,
   "showConfigurationManagerApps": true,

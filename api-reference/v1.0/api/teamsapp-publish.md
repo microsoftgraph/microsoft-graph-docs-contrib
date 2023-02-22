@@ -102,8 +102,6 @@ Content-type: application/zip
 
 ---
 
-
----
 For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
 #### Response
@@ -157,9 +155,6 @@ Content-type: application/zip
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-teamsapp-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 

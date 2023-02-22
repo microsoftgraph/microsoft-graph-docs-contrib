@@ -3,6 +3,130 @@
     {
       "ChangeList": [
         {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendation",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource and its associated methods. Azure AD recommendations are personalized and actionable insights for you to implement Azure AD best practices in your tenant.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationbase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "impactedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionStep",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionStep](https://learn.microsoft.com/en-us/graph/api/resources/actionStep?view=graph-rest-beta) resource.",
+          "Target": "actionStep"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionUrl](https://learn.microsoft.com/en-us/graph/api/resources/actionUrl?view=graph-rest-beta) resource.",
+          "Target": "actionUrl"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "recommendations",
+          "ChangeType": "Addition",
+          "Description": "Added the recommendations navigation property to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "DirectoryRecommendations.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `DirectoryRecommendations.Read.All` delegated and application permissions to the read operations of [Azure AD recommendations](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta).",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "DirectoryRecommendations.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `DirectoryRecommendations.ReadWrite.All` delegated and application permissions to the read and write operations of [Azure AD recommendations](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta).",
+          "Target": "recommendation"
+        }
+      ],
+      "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-02T00:00:00.601897Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationEventType** enumeration type.",
+          "Target": "authenticationEventType"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appliedAuthenticationEventListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [appliedAuthenticationEventListener](https://learn.microsoft.com/en-us/graph/api/resources/appliedAuthenticationEventListener?view=graph-rest-beta) resource type.",
+          "Target": "appliedAuthenticationEventListener"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationEventHandlerResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationEventHandlerResult](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventHandlerResult?view=graph-rest-beta) resource type.",
+          "Target": "authenticationEventHandlerResult"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionCalloutResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionCalloutResult](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCalloutResult?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionCalloutResult"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Property",
+          "ChangedApiName": "appliedEventListeners",
+          "ChangeType": "Addition",
+          "Description": "Added the **appliedEventListeners** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-30T22:13:27.8065468Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationAppAdminConfiguration",

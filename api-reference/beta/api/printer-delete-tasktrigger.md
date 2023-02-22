@@ -82,9 +82,6 @@ DELETE https://graph.microsoft.com/beta/print/printers/1a5f91a7-9bd1-4d5f-bb86-f
 
 ---
 
-
----
-
 ##### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

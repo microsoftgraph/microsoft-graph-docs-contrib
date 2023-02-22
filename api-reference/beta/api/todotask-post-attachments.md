@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Tasks.ReadWrite|
-|Application|Not supported.|
+|Application|Tasks.ReadWrite.All|
 
 ## HTTP request
 
