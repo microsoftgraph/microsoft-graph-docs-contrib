@@ -84,7 +84,7 @@ The following example shows a request to get the manager.
   "name": "get_manager_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
+GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
 
 # [C#](#tab/csharp)
@@ -154,7 +154,7 @@ The following example shows a request to get the manager chain up to the root le
   "name": "get_transitive_managers"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName
+GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName
 ConsistencyLevel: eventual
 ```
 
