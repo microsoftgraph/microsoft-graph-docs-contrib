@@ -16,7 +16,7 @@ ms.date: 02/22/2022
 
 An app can access Microsoft Graph using one of two ways: on behalf of a signed-in user, also called *delegated access*, or with its own identity, also called *app-only access*. This article walks you through how an app gets to [call Microsoft Graph on behalf of a user](./auth/auth-concepts.md#access-scenarios).
 
-This article walks you through the raw HTTP requests involved for your app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). The authorization and token requests detailed in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-libraries-msal) to get access tokens and call Microsoft Graph.
+This article shows the raw HTTP requests involved for your app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). The authorization and token requests detailed in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-libraries-msal) to get access tokens and call Microsoft Graph.
 
 ## Prerequisites
 
@@ -78,6 +78,8 @@ client_id=11111111-1111-1111-1111-111111111111
 ```bash
 curl --location -X POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?client_id=11111111-1111-1111-1111-111111111111&response_type=code&redirect_uri=https%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20User.Read%20Mail.Read&state=12345'
 ```
+
+---
 
 | Parameter     | Required    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -149,6 +151,8 @@ curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --data-urlencode 'client_secret=zHF8Q~Krjqh4r...''
 ```
 
+---
+
 | Parameter     | Required              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | tenant        | Required              | The `{tenant}` value in the path of the request can be used to control who can sign into the application. The allowed values are: <br><li>`common` for both Microsoft accounts and work or school accounts <li>`organizations` for work or school accounts only <li>`consumers` for Microsoft accounts only <li>tenant identifiers such as the tenant ID or domain name. <br/>For more detail, see [protocol basics](/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
@@ -207,6 +211,8 @@ curl --location 'https://graph.microsoft.com/v1.0/me' \
 --header 'Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw' \
 --data ''
 ```
+
+---
 
 A successful response will look similar to the following (some response headers have been removed).
 
@@ -275,6 +281,8 @@ curl --location 'https://login.microsoftonline.com/38d49456-54d4-455d-a8d6-c383c
 --data-urlencode 'grant_type=refresh_token' \
 --data-urlencode 'client_secret=jXoM3iz...'
 ```
+
+---
 
 | Parameter     | Required              | Description                                                                                                                                                                                                                                                                                                         |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
