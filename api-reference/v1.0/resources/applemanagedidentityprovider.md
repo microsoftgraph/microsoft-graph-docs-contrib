@@ -54,12 +54,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "String",
+    "certificateData": "String",
     "displayName": "String",
     "developerId": "String",
-    "serviceId": "String",
+    "id": "String",
     "keyId": "String",
-    "certificateData": "String"
+    "serviceId": "String"
 }
 ```
 

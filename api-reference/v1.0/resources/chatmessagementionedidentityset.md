@@ -37,17 +37,17 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.chatMessageMentionedIdentitySet",
-  "user": {
-    "@odata.type": "microsoft.graph.identity"
-  },
   "application": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "device": {
     "@odata.type": "microsoft.graph.identity"
   },
   "conversation": {
     "@odata.type": "microsoft.graph.teamworkConversationIdentity"
+  },
+  "device": {
+    "@odata.type": "microsoft.graph.identity"
+  },
+  "user": {
+    "@odata.type": "microsoft.graph.identity"
   }
 }
 ```

@@ -8,10 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-requestIncludeHiddenFolders := true
+requestIncludehiddenfolders := true
 
 requestParameters := &graphconfig.MeMailFoldersRequestBuilderGetQueryParameters{
-	IncludeHiddenFolders: &requestIncludeHiddenFolders,
+	Includehiddenfolders: &requestIncludehiddenfolders,
 }
 configuration := &graphconfig.MeMailFoldersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

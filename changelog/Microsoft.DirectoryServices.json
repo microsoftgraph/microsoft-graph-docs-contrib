@@ -103,6 +103,24 @@
      {
       "ChangeList": [
         {
+          "Id": "b1bc594e-31eb-4773-a14b-0048cb782f24",
+          "ApiChange": "Member",
+          "ChangedApiName": "oAuthToken",
+          "ChangeType": "Addition",
+          "Description": "Added the `oAuthToken` member to the **singleSignOnMode** enumeration.",
+          "Target": "singleSignOnMode"
+        }
+      ],
+      "Id": "b1bc594e-31eb-4773-a14b-0048cb782f24",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-25T22:29:56.4129094Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+     },	  
+     {
+      "ChangeList": [
+        {
           "Id": "7e11383c-72a9-465a-970d-471360f95418",
           "ApiChange": "Resource",
           "ChangedApiName": "servicePrincipalLockConfiguration",
@@ -125,7 +143,73 @@
       "CreatedDateTime": "2022-11-09T21:02:17.1897204Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
-    },    
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Property",
+          "ChangedApiName": "segmentsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `segmentsConfiguration` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "segmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [segmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/segmentConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "segmentConfiguration"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webSegmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [webSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/webSegmentConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "webSegmentConfiguration"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/applicationSegment?view=graph-rest-beta) resource",
+          "Target": "applicationSegment"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "corsConfiguration_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the [corsConfiguration_v2](https://learn.microsoft.com/en-us/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource",
+          "Target": "corsConfiguration_v2"
+        },
+        {
+          "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webApplicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [webApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationSegment?view=graph-rest-beta) resource",
+          "Target": "webApplicationSegment"
+        },
+        {
+      "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+      "ApiChange": "Property",
+      "ChangedApiName": "onPremisesApplicationSegments",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **onPremisesApplicationSegments** property of the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource. The **onPremisesApplicationSegments** property will stop returning data on June 1, 2023. Use the **segmentsConfiguration** property instead.",
+      "Target": "onPremisesPublishing"
+    }
+      ],
+      "Id": "c32c448f-6912-43cf-8f33-8de3079ff37b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-26T00:00:00.3287778Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },   
     {
       "ChangeList": [
         {
@@ -796,6 +880,24 @@
       "CreatedDateTime": "2022-08-26T16:03:39.5633059Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    }, 	  
+    {
+      "ChangeList": [
+        {
+          "Id": "00e009a6-0eaf-423f-9ed2-fe86808382ac",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.ReadBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `User.ReadBasic.All` application permission to read a basic set of profile properties of other users in your organization without a signed-in user.",
+          "Target": "user"
+        }
+      ],
+      "Id": "00e009a6-0eaf-423f-9ed2-fe86808382ac",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-25T00:00:00.0123959Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -1220,11 +1322,29 @@
     {
       "ChangeList": [
         {
+          "Id": "29c9d181-06c2-48c6-a364-4e03c068edc9",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.EnableDisableAccount.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `User.EnableDisableAccount.All` delegated and application permissions as the least privileged permissions required to enable and disable [user accounts](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta).",
+          "Target": "user"
+        }
+      ],
+      "Id": "29c9d181-06c2-48c6-a364-4e03c068edc9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-16T00:00:00.0123959Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
           "ApiChange": "Property",
           "ChangedApiName": "administrativeUnits",
           "ChangeType": "Addition",
-          "Description": "Added the **membershipRule** property to the [administrativeunit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Description": "Added the **membershipRule** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
           "Target": "administrativeUnit"
         },
         {
@@ -12408,40 +12528,92 @@
       "SubArea": ""
     },
     {
-    "ChangeList": [
-      {
-        "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
-        "ApiChange": "Property",
-        "ChangedApiName": "deviceId",
-        "ChangeType": "Addition",
-        "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
-        "Target": "device"
-      }
-    ],
-    "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
-    "Cloud": "Prod",
-    "Version": "v1.0",
-    "CreatedDateTime": "2023-01-13T00:00:00.077762Z",
-    "WorkloadArea": "Identity and access",
-    "SubArea": "Directory management"
-  },
-  {
-    "ChangeList": [
-      {
-        "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
-        "ApiChange": "Property",
-        "ChangedApiName": "defaultUsageLocation",
-        "ChangeType": "Addition",
-        "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
-        "Target": "organization"
-      }
-    ],
-    "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
-    "Cloud": "Prod",
-    "Version": "v1.0",
-    "CreatedDateTime": "2023-01-13T05:29:04.5101503Z",
-    "WorkloadArea": "Identity and access",
-    "SubArea": "Directory management"
-  }
+      "ChangeList": [
+        {
+          "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceId",
+          "ChangeType": "Addition",
+          "Description": "Added support for addressing a [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) using **deviceId* as the alternate key. You can now address a device via either the primary key **id** or the alternate key **deviceId** as the path parameter.",
+          "Target": "device"
+        }
+      ],
+      "Id": "f340cb07-80c1-487f-848e-380cb1d397f6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T00:00:00.077762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultUsageLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "e2d31838-cc0f-4811-a96d-a699e857d92a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T05:29:04.5101503Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the **partnerTenantType** enumeration type.",
+          "Target": "partnerTenantType"
+        },
+        {
+          "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+          "ApiChange": "Property",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the `partnerTenantType` property to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "a8a72aa0-464c-4b7f-b4d6-266a9e88d716",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-12T17:56:44.23698Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the **partnerTenantType** enumeration type.",
+          "Target": "partnerTenantType"
+        },
+        {
+          "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+          "ApiChange": "Property",
+          "ChangedApiName": "partnerTenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the `partnerTenantType` property to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "c3294a8d-9146-4edf-ba58-039a22f3d38c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-30T17:56:44.238139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
   ]
 }

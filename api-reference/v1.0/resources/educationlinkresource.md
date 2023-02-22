@@ -40,12 +40,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "link": "String",
   "createdBy": "String (User)",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "lastModifiedBy": "String (User)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "link": "String",
 }
 
 ```
