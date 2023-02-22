@@ -15,10 +15,6 @@ Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and t
 > [!TIP]
 > A more convenient way to retrieve attendance records is to get them in line with an attendance report by using the `expand` query option. For an example and more details, see [Get meetingAttendanceReport](meetingattendancereport-get.md).
 
-> [!WARNING]
->
->- This method can only return the 50 most recent records.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
