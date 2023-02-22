@@ -863,14 +863,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **deletedTeams** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0) resource.",
           "Target": "teamwork"
-        },
-        {
-          "Id": "02694965-8e9f-459a-ae7a-08d006fdb510",
-          "ApiChange": "Method",
-          "ChangedApiName": "getAllMessages",
-          "ChangeType": "Addition",
-          "Description": "Added the [getAllMessages](https://learn.microsoft.com/en-us/graph/api/deletedTeam?view=graph-rest-1.0) method to the [deletedTeam](https://learn.microsoft.com/en-us/graph/api/deletedTeam?view=graph-rest-1.0) resource.",
-          "Target": "deletedTeam"
         }
       ],
       "Id": "02694965-8e9f-459a-ae7a-08d006fdb510",
