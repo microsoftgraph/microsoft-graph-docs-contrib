@@ -16,6 +16,8 @@ You can use the Microsoft Search API in Microsoft Graph to request spelling corr
 
 The priority of spelling modification is higher than spelling suggestion if they are both enabled.
 
+If speller suggestion is disabled while speller modification is enabled, and there're results back in the search response for the original query with typo, speller suggestion can be returned in the response.
+
 All the user query strings should be the same to enable spelling corrections for searches of multiple entities.
 
 ## Example 1: Request spelling suggestions
