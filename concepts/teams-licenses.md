@@ -33,7 +33,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Billing for these APIs started on July 5th, 2022. Please follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for each of your application for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
+> Billing for these APIs started on July 5th, 2022. Please follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for each of your application for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing).
 
 > [!NOTE]
 > Most of these APIs are also [Protected APIs](/graph/teams-protected-apis), which require approvals from Microsoft before you can use them.  If your application is using any of the Protected APIs, please also submit a request for approvals by completing [this form](https://aka.ms/teamsgraph/requestaccess).  For more details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -160,7 +160,7 @@ A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Contr
 
 This view offers a convenient way to observe API consumption per day over a period of time. 
 
-You can also use the pie charts near the bottom to further break down the costs for analysis. Note that for Microsoft Graph metered APIs, the **Resource GUID** is the app ID; **Resource Groups** or **Resource Tags** are also available.
+You can also use the pie charts near the bottom to further break down the costs for analysis, using filters such as **Resource group name**, **Serive name**, and **Tags**.
 
 ![Screenshot of the Cost Management and Billing page in the Azure portal](images/cost-analysis-sample.png)
 
