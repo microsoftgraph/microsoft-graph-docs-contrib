@@ -94,8 +94,6 @@ GET https://graph.microsoft.com/beta/teams
 
 ---
 
----
-
 #### Response
 The following is an example of a response.
 
@@ -246,8 +244,6 @@ GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Tea
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-teams-filter-select-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
