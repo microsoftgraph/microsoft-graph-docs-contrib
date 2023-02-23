@@ -85,6 +85,40 @@
       "CreatedDateTime": "2022-10-04T06:31:57.402868Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Employee learning"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2994b86c-6ed7-48ed-b7ff-492aa53d2e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "employeeExperience",
+          "ChangeType": "Addition",
+          "Description": "Added the [employeeExperience](https://docs.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-1.0) resource",
+          "Target": "employeeExperience"
+        },
+        {
+          "Id": "2994b86c-6ed7-48ed-b7ff-492aa53d2e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "learningContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [learningContent](https://docs.microsoft.com/en-us/graph/api/resources/learningContent?view=graph-rest-1.0) resource",
+          "Target": "learningContent"
+        },
+        {
+          "Id": "2994b86c-6ed7-48ed-b7ff-492aa53d2e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "learningProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [learningProvider](https://docs.microsoft.com/en-us/graph/api/resources/learningProvider?view=graph-rest-1.0) resource",
+          "Target": "learningProvider"
+        }
+      ],
+      "Id": "2994b86c-6ed7-48ed-b7ff-492aa53d2e33",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-23T10:35:09.5603557Z",
+      "WorkloadArea": "Microsoft.Viva.Learning",
+      "SubArea": ""
     }
   ]
 }
