@@ -25,6 +25,8 @@ Represents a Cloud PC provisioning policy.
 |[Update cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-update.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Update the properties of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
 |[Delete cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-delete.md)|None|Delete a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
 |[Assign cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-assign.md)|None |Assign a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
+|[apply](../api/cloudpcprovisioningpolicy-apply.md)|None|Apply current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) config to all Cloud PC devices under this specified policy. Currently it only supports changing the region, more config modifications will be supported in the future.|
+|[applyConfig](../api/cloudpcprovisioningpolicy-applyconfig.md)|None|Perform [provisioning policy](../resources/cloudpcprovisioningpolicy.md) config update for a set of Cloud PC devices by their Ids, which supports retry and subset of Cloud PCs to initially test for Apply API.|
 
 ## Properties
 
