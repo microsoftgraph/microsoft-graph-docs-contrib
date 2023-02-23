@@ -477,6 +477,8 @@ items:
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
+        - name: Remove manager
+          href: api/user-delete-manager.md
       - name: Outlook settings
         items:
         - name: Mailbox settings
