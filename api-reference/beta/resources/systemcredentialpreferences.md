@@ -18,8 +18,8 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|excludeTarget|[excludeTarget](../resources/excludetarget.md) collection|A single entity that is excluded from this feature.|
-|includeTarget|[includeTarget](../resources/excludetarget.md) collection|A single entity that is included in this feature.|
+|excludeTarget|[excludeTarget](../resources/excludetarget.md) collection|Users and groups included in the system preferred authentication method experience|
+|includeTarget|[includeTarget](../resources/includetarget.md) collection|Users and groups excluded from the system preferred authentication method experience|
 |state|advancedConfigState|Enable or disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set and uses the default behavior of Azure AD for the setting. The default value is `disabled`.|
 
 ## Relationships

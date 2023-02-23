@@ -125,7 +125,7 @@ Content-Type: application/json
                     "id": "all_users",
                     "targetType": "group",
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
-                }             
+                }
             ]
         }
     },
@@ -211,7 +211,7 @@ Content-Type: application/json
                     "targetType": "group",
                     "id": "all_users"
                 }
-            ]
+            ],
             "excludeTargets": []
         }
     ]
