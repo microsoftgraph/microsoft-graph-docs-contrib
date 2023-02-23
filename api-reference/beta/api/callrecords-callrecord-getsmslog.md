@@ -109,7 +109,7 @@ Content-Type: application/json
             "sourceNumber": "+12818602122",
             "destinationNumber": "+12673173004",
             "sentDateTime": "2022-10-06T11:15:48.6113555Z",
-            "callCharge": 0.00,
+            "callCharge": 0,
             "currency": "USD",
             "smsType": "sms_in",
             "destinationContext": "Domestic",
