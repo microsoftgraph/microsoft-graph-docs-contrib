@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Add the large gallery view to a call. 
 
-For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see [Identify large gallery view participants in a roster](https://learn.microsoft.com/en-us/graph/cloud-communications-identifylargegalleryview).
+For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see [Identify large gallery view participants in a roster](https://learn.microsoft.com/graph/cloud-communications-identifylargegalleryview).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
