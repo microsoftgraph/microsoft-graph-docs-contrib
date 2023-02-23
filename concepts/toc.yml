@@ -193,7 +193,7 @@ items:
             href: change-notifications-delivery-event-hubs.md
           - name: Lifecycle notifications for subscriptions
             href: webhooks-lifecycle.md
-          - name: Notifications with resource data (rich notifications)
+          - name: Rich notifications
             href: webhooks-with-resource-data.md
           - name: Tutorials
             displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids

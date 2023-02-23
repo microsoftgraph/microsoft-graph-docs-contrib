@@ -16,7 +16,7 @@ A webhook is a HTTP-based user-defined callback API that you can set up in your 
 
 To receive change notifications through webhooks, you need to create a subscription to the resource for which you want to be notified of changes. While the subscription is valid, Microsoft Graph sends a notification to your app whenever a change is detected on the resource.
 
-This article walks you through managing your Microsoft Graph subscription and receiving change notifications through webhooks.
+The article guides you through the process of managing your Microsoft Graph subscription and how to receive change notifications through webhooks.
 
 ## Create a subscription
 
