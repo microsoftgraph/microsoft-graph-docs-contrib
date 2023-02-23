@@ -83,7 +83,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "domainJoinConfigurations",
                     "ChangeType": "Addition",
-                    "Description": "Added the `domainJoinConfigurations` member to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta)",
+                    "Description": "Added the **domainJoinConfigurations** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource",
                     "Target": "cloudPcProvisioningPolicy"
                 }
             ],
