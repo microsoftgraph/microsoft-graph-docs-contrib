@@ -12,15 +12,15 @@ ms.date: 12/02/2022
 
 # Set up notifications for changes in resource data
 
-The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
+Change notifications enable applications to be alerted when data changes or is created in Microsoft Graph. When a resource is created, updated, or deleted, Microsoft Graph submits an HTTP POST to a specified client endpoint. The client endpoint listens for these messages and acts on them based on the logic defined by your business requirements.
 
-After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
+## What can you get notifications for?
 
+You can get notifications on messages, calendar events, users, groups, OneDrive files, and more. This allows you to stay up to date and in sync with data that is accessible via Microsoft Graph. It also allows you to avoid implementing a polling infrastructure where you submit requests to Microsoft Graph at regular intervals to get the most recent changes.
+
+The first step to start receiving change notifications is to first create a subscription. After Microsoft Graph accepts the subscription request and the subscription is activated, Microsoft Graph pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
- 
-> [!div class="nextstepaction"]
-> [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
@@ -333,7 +333,7 @@ The following table lists the latency to expect between an event happening in th
 
 | Resource                | Average latency      | Maximum latency |
 |:-------------------------|:----------------------|:-----------------|
-| [alert][]               | Less than 3 minutes  | 5 minutes       |
+| [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
 | [callRecord][]          | Less than 15 minutes | 60 minutes      |
 | [channel][]             | Less than 10 seconds | 60 minutes      |
 | [chat][]                | Less than 10 seconds | 60 minutes      |
@@ -354,15 +354,24 @@ The following table lists the latency to expect between an event happening in th
 | [todoTask][]            | Less than 2 minutes  | 15 minutes      |
 | [user][]                | Less than 2 minutes  | 15 minutes      |
 
-> [!NOTE]
-> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+<sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+
+## Additional resources
+
+- [Get change notifications through webhooks](./change-notifications-delivery-webhooks.md)
+- [Get change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
+- [Notifications with resource data](./webhooks-with-resource-data.md)
+- [Lifecycle notifications](./webhooks-lifecycle.md)
+- Tutorials
+    - [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
+    - [Change notifications for Outloook resources](./outlook-change-notifications-overview.md)
+    - [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
 
 ## See also
 
 - [subscription resource type](/graph/api/resources/subscription)
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
 - [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation
@@ -378,7 +387,7 @@ The following table lists the latency to expect between an event happening in th
 [list]: /graph/api/resources/list
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
-[To Do task]: /graph/api/resources/todotask
+[todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember

@@ -52,7 +52,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 If successful, this method returns a `200 OK` or a `202 Accepted` response code.
 
-## Response headers
+### Response headers
 |Name|Description|
 |:---|:---|
 |Content-Type|application/json.|
