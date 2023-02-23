@@ -31,7 +31,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |id|String|The unique identifier for the operation. Inherited from [entity](../resources/entity.md).|
 |lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |percentageCompleted|Int32| Percentage of completion of the respective operation.|
-|resourceLocation|String|URI of the resource location Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|resourceLocation|String|URI of the resource location. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |status|longRunningOperationStatus|Operation status. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |statusDetail|String|Status detail of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |tenantId|String|Tenant identifier.|

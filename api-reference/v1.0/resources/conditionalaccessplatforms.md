@@ -39,8 +39,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "includePlatforms": ["String"],
-  "excludePlatforms": ["String"]
+  "excludePlatforms": ["String"],
+  "includePlatforms": ["String"]
 }
 ```
 

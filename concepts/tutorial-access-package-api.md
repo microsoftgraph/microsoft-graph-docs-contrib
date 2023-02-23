@@ -2,6 +2,8 @@
 title: "Manage access to resources using the entitlement management APIs in Microsoft Graph"
 description: "Learn how to use Microsoft Graph APIs to develop code to create a package of resources for a marketing campaign that internal users can self-service request."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Mark.Wahl
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
