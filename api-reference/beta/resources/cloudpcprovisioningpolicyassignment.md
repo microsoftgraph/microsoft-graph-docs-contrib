@@ -21,11 +21,11 @@ Represents a defined collection of provisioning policy assignments.
 |:---|:---|:---|
 |id|String|Unique Identifier for the provisioning policy assignment. Read-only. If `target` is a user group, then the ID is shown as {policyId}\_{groupId}.|
 |target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy. Currently, the only target supported for this policy is a user group. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md). |
-|`result`|`microsoft.graph.cloudPcManagementUserAssignmentResult`|The assignment result for the provisioning policy. This result include list of users in a group who was assigned with policy and license eventually. This property is ReadOnly.|No|No|Yes|
 
 ## Relationships
-
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|assignedUsers|[user](../resources/user.md) collection|The assignment targeted users for the provisioning policy. This list of users is computed based on assignments, licenses, group memberships, and policies. This property is ReadOnly. Supports $expand.|
 
 ## JSON representation
 
