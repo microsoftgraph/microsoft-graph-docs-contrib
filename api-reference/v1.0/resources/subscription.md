@@ -49,28 +49,7 @@ For the possible resource path values for each supported resource, see [Use the 
 
 ### Maximum length of subscription per resource type
 
-| Resource            | Maximum expiration time  |
-|:--------------------|:-------------------------|
-| Security **alert**     | 43200 minutes (under 30 days)  |
-| Teams **callRecord**    | 4230 minutes (under 3 days)  |
-| Teams **channel**    | 60 minutes (1 hour)  |
-| Teams **chat**    | 60 minutes (1 hour)  |
-| Teams **chatMessage**    | 60 minutes (1 hour)  |
-| Teams **conversationMember**    | 60 minutes (1 hour)  |
-| Teams **team**    | 60 minutes (1 hour)  |
-| Group **conversation** | 4230 minutes (under 3 days)    |
-| OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
-| SharePoint **list**    | 42300 minutes (under 30 days)    |
-| Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
-| **user**, **group**, other directory resources   | 41760 minutes (under 29 days)    |
-| **presence**        | 60 minutes (1 hour) |
-| Print **printer** | 4230 minutes (under 3 days)    |
-| Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
-| **todoTask**              | 4230 minutes (under 3 days)    |
-
-
-
-> **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
+[!INCLUDE [change-notifications-subscription-lifetime](../../../concepts/includes/change-notifications-subscription-lifetime.md)]
 
 ## Relationships
 
