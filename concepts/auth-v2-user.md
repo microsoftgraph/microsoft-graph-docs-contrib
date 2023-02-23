@@ -12,11 +12,9 @@ ms.date: 02/22/2022
 
 # Get access on behalf of a user
 
-*This article is part of a series on authentication and authorization for Microsoft Graph through the Microsoft identity platform. The preceding article is [Register an application with the Microsoft identity platform](auth-register-app-v2.md).*
-
 An app can access Microsoft Graph using one of two ways: on behalf of a signed-in user, also called *delegated access*, or with its own identity, also called *app-only access*. This article walks you through how an app gets to [call Microsoft Graph on behalf of a user](./auth/auth-concepts.md#access-scenarios).
 
-This article shows the raw HTTP requests involved for your app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). The authorization and token requests detailed in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-libraries-msal) to get access tokens and call Microsoft Graph.
+This article details the raw HTTP requests involved for your app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). The authorization and token requests detailed in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-libraries-msal) to get access tokens and call Microsoft Graph.
 
 ## Prerequisites
 
@@ -344,7 +342,7 @@ In this article, you walked through the low-level protocol details usually requi
 
 ## Next steps
 
-This article is part of the following series of articles on authenticaiton and authorization for Microsoft Graph through the Microsoft identity platform.
+This article is part of the following series of articles on authentication and authorization for Microsoft Graph through the Microsoft identity platform.
 
 1. Article 1: [Authentication and authorization basics](./auth/auth-concepts.md)
 1. Article 2: [Register an application with the Microsoft identity platform](./auth-register-app-v2.md)
