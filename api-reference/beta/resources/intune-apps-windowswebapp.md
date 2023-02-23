@@ -52,7 +52,7 @@ Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|appUrl|String|The web app URL.|
+|appUrl|String|Indicates the Windows web app URL. Example: "https://www.contoso.com"|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -78,7 +78,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_directory"
+  "name": "delete_directory_deleteditem"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}

@@ -1,7 +1,7 @@
 ---
 title: "updatableAsset: enrollAssetsById"
 description: "Enroll updatableAsset resources of the same type in update management by the deployment service."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to manage. Supports a subset of the values for **updateCategory**. Possible values are: `feature`, `unknownFutureValue`.|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to manage. Supports a subset of the values for **updateCategory**. Possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
 |memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 |ids|String collection|List of identifiers corresponding to the **updatableAsset** resources to enroll in update management by the service for the given **updateCategory**.|
 

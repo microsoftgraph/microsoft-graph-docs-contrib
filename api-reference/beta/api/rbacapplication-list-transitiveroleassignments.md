@@ -61,6 +61,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects in the response body.
 
+If your request doesn't include the **ConsistencyLevel** header set to `eventual`, this method returns `404 Not Found` response code.
+
 ## Examples
 For the examples in this section, consider the following role assignment scenario. A user named Alice has both direct and transitive role assignments as follows:
 
@@ -117,9 +119,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
----
-
 
 #### Response
 
@@ -288,9 +287,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
----
-
 
 #### Response
 
