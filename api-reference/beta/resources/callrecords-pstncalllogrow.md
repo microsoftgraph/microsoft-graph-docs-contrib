@@ -29,12 +29,12 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 |calleeNumber|String|Number of the user or bot who received the call ([E.164](https://en.wikipedia.org/wiki/E.164)).|
 |callerNumber|String|Number of the user or bot who made the call ([E.164](https://en.wikipedia.org/wiki/E.164)).|
 |callId|String|Call identifier. Not guaranteed to be unique.|
-|callType|String|Whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference.|
+|callType|String|Indicates whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference.|
 |charge|Decimal|Amount of money or cost of the call that is charged to your account.|
 |conferenceId|String|ID of the audio conference.|
 |connectionCharge|Decimal|Connection fee price.|
 |currency|String|Type of currency used to calculate the cost of the call ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)).|
-|destinationContext|String|Whether the call was `Domestic` (within a country or region) or `International` (outside a country or region) based on the user's location.|
+|destinationContext|String|Indicates whether the call was `Domestic` (within a country or region) or `International` (outside a country or region) based on the user's location.|
 |destinationName|String|Country or region dialed.|
 |duration|Int32|How long the call was connected, in seconds.|
 |endDateTime|DateTimeOffset|Call end time.|

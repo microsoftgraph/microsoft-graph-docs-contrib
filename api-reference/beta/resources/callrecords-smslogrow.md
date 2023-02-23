@@ -30,7 +30,7 @@ For those countries, the three or four last digits of the external phone number 
 |:---|:---|:---|
 |callCharge|Decimal|Amount of money or cost of the SMS that is charged.|
 |currency|String|Currency used to calculate the cost of the call. For details, see [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).|
-|destinationContext|String|Whether the SMS was `Domestic` (within a country or region) or `International` (outside a country or region) based on the user's location.|
+|destinationContext|String|Indicates whether the SMS was `Domestic` (within a country or region) or `International` (outside a country or region) based on the user's location.|
 |destinationName|String|Country or region of a phone number that received the SMS.|
 |destinationNumber|String|Partially obfuscated phone number that received the SMS. For details, see [E.164](https://en.wikipedia.org/wiki/E.164).|
 |id|String|Unique identifier (GUID) for the SMS.|
