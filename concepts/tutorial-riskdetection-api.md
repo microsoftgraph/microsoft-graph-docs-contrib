@@ -2,6 +2,8 @@
 title: "Identify and remediate risk using Microsoft Graph"
 description: "Learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA)."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 ms.date: 11/01/2022

@@ -3711,7 +3711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
-          "Description": "Removed DELETE /groups/{id}/channels/{id} , use DELETE /teams/{id}/channels/{id} instead.",
+          "Description": "Removed DELETE /groups/{id}/channels/{id}. Use DELETE /teams/{id}/channels/{id} instead.",
           "Target": ""
         },
         {
@@ -5293,6 +5293,32 @@
     {
       "ChangeList": [
         {
+          "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db8",
+          "ApiChange": "Method",
+          "ChangedApiName": "softDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [softDelete](https://learn.microsoft.com/en-us/graph/api/chatmessage-softDelete?view=graph-rest-1.0) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db8",
+          "ApiChange": "Method",
+          "ChangedApiName": "undoSoftDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [undoSoftDelete](https://learn.microsoft.com/en-us/graph/api/chatmessage-undoSoftDelete?view=graph-rest-1.0) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-20T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2de8f3b5-35b7-48e5-bd25-7997f021cd4c",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
@@ -6131,6 +6157,50 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-11-08T19:48:01.454Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e77b3b8-1396-49ab-b2d0-a26bef7ddb8e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamSummary](https://learn.microsoft.com/en-us/graph/api/resources/teamSummary?view=graph-rest-v1.0) resource type.",
+          "Target": "teamSummary"
+        },
+        {
+          "Id": "3e77b3b8-1396-49ab-b2d0-a26bef7ddb8e",
+          "ApiChange": "Property",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the **summary** property to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-v1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "3e77b3b8-1396-49ab-b2d0-a26bef7ddb8e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-23T23:18:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "5e52d67e-88f8-464f-8aff-d9ae40acf056",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamsAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** property to the [chatMessageAttachment](https://learn.microsoft.com/graph/api/resources/chatMessageAttachment?view=graph-rest-1.0) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "5e52d67e-88f8-464f-8aff-d9ae40acf056",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-26T10:11:41.458Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }

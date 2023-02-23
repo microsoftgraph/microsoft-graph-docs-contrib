@@ -26,8 +26,8 @@ Represents a Temporary Access Pass authentication methods policy that defines th
 |defaultLifetimeInMinutes|Int|Default lifetime in minutes for a Temporary Access Pass. Value can be any integer between the **minimumLifetimeInMinutes** and **maximumLifetimeInMinutes**.|
 |id|String|The identifier of the authentication method policy. Inherited from [entity](entity.md).|
 |isUsableOnce|Boolean	|If `true`, all the passes in the tenant will be restricted to one-time use. If `false`, passes in the tenant can be created to be either one-time use or reusable.|
-|minimumLifetimeInMinutes|Int|Minimum lifetime in minutes for any Temporary Access Pass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days).|
 |maximumLifetimeInMinutes|Int|Maximum lifetime in minutes for any Temporary Access Pass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days).|
+|minimumLifetimeInMinutes|Int|Minimum lifetime in minutes for any Temporary Access Pass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days).|
 |state|authenticationMethodState|Whether the Temporary Access Pass method is enabled in the tenant. Possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](authenticationmethodconfiguration.md). |
 
 ## Relationships

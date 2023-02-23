@@ -100,8 +100,6 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 ---
 
----
-
 #### Response
 
 The following is an example of the response. 
@@ -188,8 +186,6 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 
 ---
 
----
-
 #### Response
 
 The following is an example of the response.
@@ -269,7 +265,6 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 [!INCLUDE [sample-code](../includes/snippets/php/get-classcategories-delta-for-token-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
 
 ---
 

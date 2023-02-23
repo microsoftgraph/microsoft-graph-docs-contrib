@@ -50,8 +50,8 @@ PATCH /teamwork/teamsAppSettings
 
 |Property|Type|Description|
 |:---|:---|:---|
+|allowUserRequestsForAppAccess|Boolean|Indicates whether Teams users are allowed to request admins access to certain Teams apps.|
 |isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
-
 
 
 ## Response
@@ -68,7 +68,7 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_teamsappsettings"
+  "name": "update_teamsappsettings_1"
 }
 -->
 ``` http
@@ -81,32 +81,36 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamsappsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Response
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsappsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<!-- {
+  "blockType": "response"
+} -->
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-teamsappsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+```http
+HTTP/1.1 204 No Content
+```
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-teamsappsettings-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-teamsappsettings-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Request
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-teamsappsettings-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsappsettings_2"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
+Content-Type: application/json
 
+{
+  "@odata.type": "#microsoft.graph.teamsAppSettings",
+  "allowUserRequestsForAppAccess": "true"
+}
+```
 
 #### Response
 

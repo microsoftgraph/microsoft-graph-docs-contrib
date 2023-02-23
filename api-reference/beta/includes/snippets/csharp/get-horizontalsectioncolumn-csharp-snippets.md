@@ -11,7 +11,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("select", "id,expand=webparts")
 };
 
-var response = await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"].CanvasLayout.HorizontalSections["{UNKNOWN-id}"].Columns["{UNKNOWN-id}"]
+var horizontalSectionColumn = await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"].CanvasLayout.HorizontalSections["{horizontalSection-id}"].Columns["{horizontalSectionColumn-id}"]
 	.Request( queryOptions )
 	.GetAsync();
 

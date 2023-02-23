@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.TabsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemChannelItemTabsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp"},
 }
-configuration := &graphconfig.TabsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemChannelItemTabsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

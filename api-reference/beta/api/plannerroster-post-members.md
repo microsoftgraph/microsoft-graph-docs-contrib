@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|Tasks.ReadWrite.All|
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|Identifier of the .|
+|userId|String|Identifier of the user.|
 |tenantId|String|Identifier of the tenant the user belongs to. Optional. Currently roster members cannot be from different tenants.|
 |roles|String collection|Additional roles assigned to the user. Optional. Currently there are no additional roles available for users.|
 

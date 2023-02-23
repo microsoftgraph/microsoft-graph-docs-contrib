@@ -49,7 +49,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.adminConsentRequestPolicy",
   "isEnabled": "Boolean",
-  "version": "Integer",
   "notifyReviewers": "Boolean",
   "remindersEnabled": "Boolean",
   "requestDurationInDays": "Integer",
@@ -57,7 +56,8 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.accessReviewReviewerScope"
     }
-  ]
+  ],
+  "version": "Integer"
 }
 ```
 

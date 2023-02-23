@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "scopeId eq '/' and scopeType eq 'Directory'"
 
-requestParameters := &graphconfig.RoleManagementPolicyAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.PoliciesRoleManagementPolicyAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.RoleManagementPolicyAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.PoliciesRoleManagementPolicyAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

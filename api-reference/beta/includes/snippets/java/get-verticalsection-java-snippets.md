@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("select", "emphasis,expand=webparts"));
 
-Content verticalSection = graphClient.sites("{sitesId}").pages("{sitePageId}").canvasLayout().verticalSection()
+VerticalSection verticalSection = graphClient.sites("{sitesId}").pages("{sitePageId}").canvasLayout().verticalSection()
 	.buildRequest( requestOptions )
 	.get();
 

@@ -14,7 +14,7 @@ var queryOptions = new List<QueryOption>()
 var applications = await graphClient.Applications
 	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
-	.Filter("owners/$count eq 0")
+	.Filter("owners/$count eq 0 or owners/$count eq 1")
 	.GetAsync();
 
 ```
