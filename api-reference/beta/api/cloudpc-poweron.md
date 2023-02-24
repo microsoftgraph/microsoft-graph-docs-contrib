@@ -1,0 +1,81 @@
+---
+title: "cloudPC: power on"
+description: "Power on specific Cloud PC."
+author: "rbayetov"
+ms.localizationpriority: medium
+ms.prod: "cloud-pc"
+doc_type: apiPageType
+---
+
+# cloudPC: power on
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Perform power on for a Cloud PC. This is to cover Shift Work CloudPC for MEM admin scenarios.
+
+CloudPC will be allocated for assigned end user immediately. The API only targets IT admin consumers.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|CloudPC.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|CloudPC.ReadWrite.All|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+To power on the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
+
+``` http
+POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/poweron
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Example
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "poweron_cloudpc"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/831dd62e-cfa1-4d49-a3b4-58d4e9920f8e/poweron
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```

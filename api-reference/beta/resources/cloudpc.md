@@ -24,6 +24,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Change user account type](../api/cloudpc-changeuseraccounttype.md)|None|Change the account type of the user on a specific Cloud PC.|
 |[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
 |[Get remote action results](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
+|[Power on](../api/cloudpc-poweron.md)|None|Power on specific [cloudPC](../resources/cloudpc.md) object. Cover Shift Work CloudPC for MEM admin scenarios.|
+|[Power off](../api/cloudpc-poweroff.md)|None|Power off specific [cloudPC](../resources/cloudpc.md) object. Cover Shift Work CloudPC for MEM admin scenarios.|
 |[Reboot](../api/cloudpc-reboot.md)|None|Reboot a specific [cloudPC](../resources/cloudpc.md) object.|
 |[Rename](../api/cloudpc-rename.md)|None|Rename a specific [cloudPC](../resources/cloudpc.md) object. Use this API to update the **displayName** for the Cloud PC entity.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a [cloudPC](../resources/cloudpc.md) object.|

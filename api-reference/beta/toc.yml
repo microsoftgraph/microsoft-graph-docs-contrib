@@ -10395,6 +10395,10 @@ items:
             href: api/manageddevice-getcloudpcreviewstatus.md
           - name: Get supported remote actions
             href: api/cloudpc-getsupportedcloudpcremoteactions.md
+          - name: Power off
+            href: api/cloudpc-poweroff.md
+          - name: Power on
+            href: api/cloudpc-poweron.md
           - name: Reboot
             href: api/cloudpc-reboot.md
           - name: Rename
