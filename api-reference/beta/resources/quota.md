@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **quota** resource provides details about space constrains on a [drive](drive.md) resource.
+The **quota** resource provides details about space constrains on a [drive](drive.md) resource. The values will reflect the overall total/used unified storage quota across multiple Microsoft services.
 
 ## JSON representation
 

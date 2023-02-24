@@ -2051,6 +2051,18 @@ items:
             href: api/printtask-get.md
           - name: Update task
             href: api/printtaskdefinition-update-task.md
+        - name: Quota
+          items:
+          - name: UnifiedStorageQuota
+            items:
+            - name: Get
+              href: api/unifiedstoragequota-get.md
+          - name: UnifiedStorageQuotaServices
+            items:
+            - name: Get
+              href: api/servicestoragequotabreakdown-get.md
+            - name: List
+              href: api/servicestoragequotabreakdowns-list.md
         - name: Reports
           items:
           - name: Organized by printer

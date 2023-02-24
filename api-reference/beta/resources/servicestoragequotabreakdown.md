@@ -1,0 +1,53 @@
+---
+title: "serviceStorageQuotaBreakdown resource type"
+description: "The serviceStorageQuotaBreakdown resource represents a proportion of the unified storage quota associated with a specific service."
+author: "BarryShehadeh"
+ms.localizationpriority: medium
+ms.prod: "unified-storage-quota"
+doc_type: resourcePageType
+---
+
+# serviceStorageQuotaBreakdown resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+The serviceStorageQuotaBreakdown resource represents a proportion of the unified storage quota associated with a specific service.
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get serviceStorageQuotaBreakdown](../api/servicestoragequotabreakdown-get.md)|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md)|Read the properties and relationships of a [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|displayName|String|The name of the breakdown that can be displayed to users. Localized. Read-only.|
+|id|String|The id of the breakdown. Read-only.|
+|manageWebUrl|String|A URL that can be used in a browser to manage the breakdown. Read-only.|
+|used|Int64|The number of bytes this breakdown is consuming. Read-only.|
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.serviceStorageQuotaBreakdown",
+  "baseType": "microsoft.graph.storageQuotaBreakdown",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.serviceStorageQuotaBreakdown",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "manageWebUrl": "String",
+  "used": "Integer"
+}
+```
+
