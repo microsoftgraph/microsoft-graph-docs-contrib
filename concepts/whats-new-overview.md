@@ -21,7 +21,7 @@ Intune [January updates](https://developer.microsoft.com/en-us/graph/changelog/?
 Get the country code that represents the default service usage location of an [organization](/graph/api/resources/organization). 
 
 ### Security | Attack simulation and training
-- [Get](/graph/api/simulationAutomation-get) information about an [automated attack simulation](/graph/api/resources/simulationautomation) for a tenant.
+- [Get](/graph/api/simulationautomation-get) information about an [automated attack simulation](/graph/api/resources/simulationautomation) for a tenant.
 - [Get a list](/graph/api/simulationautomation-list-runs) of [automated runs of attack simulation](/graph/api/resources/simulationautomationrun) for a tenant.
 
 ### Tasks and plans

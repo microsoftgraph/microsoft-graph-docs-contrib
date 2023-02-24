@@ -63,7 +63,11 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 ## Examples
 
-### Request
+### Example 1: Update an attack simulation campaign
+
+The following example shows how to update an attack simulation campaign for a tenant.
+
+#### Request
 
 The following is an example of a request.
 
@@ -103,28 +107,33 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
-
-> **Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-
 ```http
 HTTP/1.1 202 Accepted
 ```
 
+### Example 2: Update an attack simulation campaign from draft to scheduled
 
-### Example
+The following example shows how to schedule an attack simulation campaign. The simulation request is validated when scheduling a simulation. All the required parameters need to be propagated in such request.
 
-####Example 1: Update simulation from draft to scheduled
-Simulation reques is validated during scheduling a simulation. All the required parameters need to be propogated in such request.
+#### Request
 
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_simulation_from_draft_to_scheduled",
+  "sampleKeys": ["2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc"]
+}
+-->
 ```http
 PATCH https://graph.microsoft.com/beta/security/attackSimulation/simulations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 Content-type: application/json
@@ -155,16 +164,33 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
 -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-####Example 2: Cancelling a simulation
-A simulation can be cancelled from `scheduled` and `running` state.
+### Example 3: Cancel an attack simulation campaign
 
+The following example shows how to cancel an attack simulation campaign for a tenant. You can cancel a simulation when its state is either `scheduled` or `running`.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_simulation_cancel",
+  "sampleKeys": ["2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc"]
+}
+-->
 ```http
 PATCH https://graph.microsoft.com/beta/security/attackSimulation/simulations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 Content-type: application/json
@@ -176,16 +202,33 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
 -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
+### Example 4: Exclude an attack simulation campaign
 
-####Example 3: Excluding a simulation
-A simulation can be excluded from any reporting for simulation is `cancelled` state only.
+The following example shows how to exclude an attack simulation campaign for a tenant. You can only exclude a simulation from any reporting when its state is `cancelled`.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_simulation_exclude",
+  "sampleKeys": ["2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc"]
+}
+-->
 ```http
 PATCH https://graph.microsoft.com/beta/security/attackSimulation/simulations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 Content-type: application/json
@@ -197,8 +240,14 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
 -->
 ```http
 HTTP/1.1 202 Accepted
