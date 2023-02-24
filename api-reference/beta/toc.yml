@@ -377,6 +377,10 @@ items:
           href: api/cloudpc-rename.md
         - name: Reprovision
           href: api/cloudpc-reprovision.md
+        - name: Start
+          href: api/cloudpc-start.md
+        - name: Stop
+          href: api/cloudpc-stop.md
         - name: Troubleshoot
           href: api/cloudpc-troubleshoot.md
       - name: Delegated permission grant

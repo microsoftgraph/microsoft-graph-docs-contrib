@@ -3,6 +3,31 @@
         {
             "ChangeList":[
                 {
+                    "Id": "2f259fea-fe5f-4a3f-984f-80afdebf768d",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "start",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [start](https://learn.microsoft.com/en-us/graph/api/cloudpc-start?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },                {
+                    "Id": "2f259fea-fe5f-4a3f-984f-80afdebf768d",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "stop",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [start](https://learn.microsoft.com/en-us/graph/api/cloudpc-stop?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id":"2f259fea-fe5f-4a3f-984f-80afdebf768d",
+            "Cloud":"Prod",
+            "Version":"beta",
+            "CreatedDateTime":"2023-02-24T13:48:16.9388044Z",
+            "WorkloadArea":"Users",
+            "SubArea":"Cloud PC"
+        },
+        {
+            "ChangeList":[
+                {
                     "Id":"11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
                     "ApiChange":"Property",
                     "ChangedApiName":"enableSingleSignOn",
