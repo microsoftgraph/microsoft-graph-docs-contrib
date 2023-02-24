@@ -25,12 +25,12 @@ Before proceeding with the steps in this article:
 
 ## Authentication and authorization steps
 
-The following are the basic steps when an app uses the authorization code flow to get an access token from the Microsoft identity platform endpoint, and authorization to call Microsoft Graph on behalf of a user:
+For your app to use the authorization code flow to get authorization and access to Microsoft Graph, you must follow these five steps:
 
 1. Register the app with Azure AD.
 2. Get authorization.
 3. Get an access token.
-4. Call Microsoft Graph with the access token.
+4. Use the access token to call Microsoft Graph
 5. Use a refresh token to get a new access token.
 
 ## 1. Register your app
