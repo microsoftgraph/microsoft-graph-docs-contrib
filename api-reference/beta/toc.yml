@@ -2062,7 +2062,7 @@ items:
             - name: Get
               href: api/servicestoragequotabreakdown-get.md
             - name: List
-              href: api/servicestoragequotabreakdowns-list.md
+              href: api/servicestoragequotabreakdown-list.md
         - name: Reports
           items:
           - name: Organized by printer

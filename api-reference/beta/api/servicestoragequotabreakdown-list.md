@@ -1,5 +1,5 @@
 ---
-title: "List serviceStorageQuotaBreakdowns"
+title: "List serviceStorageQuotaBreakdown"
 description: "Get a list of the serviceStorageQuotaBreakdown objects and their properties."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "unified-storage-quota"
 doc_type: apiPageType
 ---
 
-# List serviceStorageQuotaBreakdowns
+# List serviceStorageQuotaBreakdown
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
