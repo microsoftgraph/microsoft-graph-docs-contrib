@@ -130,8 +130,6 @@ If your applications are or will be calling any of the following APIs, they must
 
 Note that the organization that owns the app registration is responsible for the payment. The Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
 
-Billing cycle starts at the beginning of a calendar month, and ends at the end of that calendar month.
-
 ## Payment-related errors
 
 In the event that incorrect licensing is detected, the API call will fail and data will not be returned.
