@@ -98,10 +98,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.addressbookaccounttargetcontent",
-    "type" : "addressBook",
-    "accountTargetEmails" : [
-        "john@contoso.com"
-    ]
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "john@contoso.com"
+  ]
 }
 ```
