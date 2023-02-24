@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform provisioning policy config update for a set of Cloud PC devices by their Ids, which supports retry and subset of Cloud PCs to initially test for Apply API.
+Perform provisioning policy config update for a set of Cloud PC devices with providing Cloud PC ids, which supports retry and subset of Cloud PCs to initially test for Apply API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -69,7 +69,8 @@ Content-Type: application/json
 
 {
   "cloudPcIds": [
-    "String"
+    "52aa2645-36ee-47d2-9eb3-b8fbb17c3fc4",
+    "ff117b6c-e3e6-41be-9cae-eb6743249a30"
   ]
 }
 ```

@@ -7,15 +7,15 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "apply",
                     "ChangeType": "Addition",
-                    "Description": "Added the [apply](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Description": "Added the [apply](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                     "Target": "cloudPcProvisioningPolicy"
                 },
                 {
-                    "Id": "73fac662-2262-4969-89ac-0b67adbe2a5b",
+                    "Id": "73fac662-2262-4969-89ac-0b67adbe2a5b/
                     "ApiChange": "Method",
                     "ChangedApiName": "applyConfig",
                     "ChangeType": "Addition",
-                    "Description": "Added the [applyConfig](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Description": "Added the [applyConfig](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                     "Target": "cloudPcProvisioningPolicy"
                 }
             ],
