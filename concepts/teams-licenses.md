@@ -121,7 +121,7 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 
 On July 5, 2022, [billing changes for Teams APIs](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/) took effect. 
 
-If your applications are or will be calling any of the following APIs, they must follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for billing purposes.
+If your applications are or will be calling any of the following APIs, they must follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes.
 
 - [chatMessage](/graph/api/chatmessage-delta) – Change notifications API
 - [chats: getAllMessages](/graph/api/chats-getallmessages) – Export API
@@ -196,7 +196,7 @@ Another way is to use the [Microsoft Teams Admin Center](https://admin.teams.mic
 
 |    Scenario    | Details |
 |:-------------------------|:--------|
-| Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, follow the instructions on [Onboard to metered Microsoft 365 APIs and services](/graph/metered-api-onboarding) to set up an active Azure subscription for billing purposes. 
+| Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes. 
 | What should I expect after setting up an Azure subscription? | Billing will be effective immediately.  You can monitor the costs as described in the [View the costs billed for the metered Microsoft Teams APIs](#view-the-costs-billed-for-the-metered-microsoft-teams-apis) section above. |
 | Do I need to provide an Azure subscription if my application is not calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. See also [protected APIs](/graph/teams-protected-apis). |
 | What happens if no Azure subscription is provided? | • No payment-related errors will occur if the application is not calling metered APIs. <br> • If no model parameter is passed, the `evaluation model` value will be used by default. <br> • If calling a metered API passing `model=A`, provide a Microsoft 365 E5 eligible license and Azure subscription. <br> • If passing `model=B` when calling metered APIs, provide an active Azure subscription. <br> |
