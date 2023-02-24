@@ -12325,7 +12325,7 @@ items:
               href: api/authenticationstrengthpolicy-update.md
             - name: Delete
               href: api/authenticationstrengthroot-delete-policies.md
-            - name: Find by method mode
+            - name: Find by method mode (deprecated)
               href: api/authenticationstrengthpolicy-findbymethodmode.md
             - name: List usage
               href: api/authenticationstrengthpolicy-usage.md
@@ -12345,7 +12345,7 @@ items:
               href: api/authenticationcombinationconfiguration-update.md
             - name: Delete
               href: api/authenticationstrengthpolicy-delete-combinationconfigurations.md
-            - name: Update allowed combinations
+            - name: Update allowed combinations (deprecated)
               href: api/authenticationstrengthpolicy-updateallowedcombinations.md
           - name: Authentication method modes
             href: resources/authenticationmethodmodedetail.md

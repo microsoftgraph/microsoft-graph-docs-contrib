@@ -32,7 +32,7 @@ Retrieve the collection of **authenticationMethodModes** objects and their descr
 }
 -->
 ``` http
-GET /identity/conditionalAccess/authenticationStrengths/authenticationMethodModes
+GET /identity/conditionalAccess/authenticationStrength/authenticationMethodModes
 ```
 
 Retrieve the flat collection of authenticationCombinations objects, representing all the allowed combinations (allowedCombinations) in an authenticationStrengthPolicy object.
@@ -41,7 +41,7 @@ Retrieve the flat collection of authenticationCombinations objects, representing
 }
 -->
 ``` http
-GET /identity/conditionalAccess/authenticationStrengths/authenticationCombinations
+GET /identity/conditionalAccess/authenticationStrength/combinations
 ```
 
 ## Optional query parameters
@@ -74,7 +74,7 @@ The following is an example of a request to retrieve the collection of **authent
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/authenticationMethodModes
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/authenticationMethodModes
 ```
 
 # [C#](#tab/csharp)
@@ -213,7 +213,7 @@ The following is an example of a request to retrieve the flat collection of auth
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/authenticationCombinations
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/combinations
 ```
 
 # [C#](#tab/csharp)

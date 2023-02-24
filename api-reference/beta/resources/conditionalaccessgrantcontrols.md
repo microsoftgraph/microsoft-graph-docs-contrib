@@ -33,10 +33,6 @@ Consider the following when you use the `passwordChange` control:
 - The policy should target `all` applications, and not exclude any applications.
 - The policy cannot contain any other condition.
 
-### Known issue when using when using `authenticationStrength` control
-
-You can create or update a Conditional Access policy with `authenticationStrength` grant control. However, when reading the policy, the `authenticationStrength` information might be missing from the response.
-
 ## Relationships
 
 |Relationship|Type|Description|

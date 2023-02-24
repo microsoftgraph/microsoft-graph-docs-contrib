@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies
+POST https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies
 Content-Type: application/json
 Content-length: 239
 

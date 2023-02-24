@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies
+GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies
 ```
 
 # [C#](#tab/csharp)

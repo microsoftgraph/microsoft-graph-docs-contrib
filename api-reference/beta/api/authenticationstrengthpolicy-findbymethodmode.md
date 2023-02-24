@@ -7,10 +7,14 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# authenticationStrengthPolicy: findByMethodMode
+# authenticationStrengthPolicy: findByMethodMode (deprecated))
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!CAUTION] 
+  > The `findByMethodMode` function is only available in `/beta` and will not become available in `/v1.0`. To get a list of  [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) filtered to only include policies that include the authentication method mode specified in the request, use XXX instead
+
 
 Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
 

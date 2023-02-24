@@ -7,10 +7,14 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# authenticationStrengthPolicy: updateAllowedCombinations
+# authenticationStrengthPolicy: updateAllowedCombinations (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!CAUTION] 
+  > The `updateAllowedCombinations` function is only available in `/beta` and will not become available in `/v1.0`. To uUpdate the allowedCombinations property of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object use the [Update authenticationStrengthPolicy](authenticationstrengthpolicy-update.md) method.
+
 
 Update the allowedCombinations property of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. To update other properties of an authenticationStrengthPolicy object, use the [Update authenticationStrengthPolicy](authenticationstrengthpolicy-update.md) method.
 
