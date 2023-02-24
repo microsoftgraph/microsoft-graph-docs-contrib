@@ -339,8 +339,7 @@ In this article, you walked through the low-level protocol details usually requi
 
 MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections, allowing you to focus on the functionality of your application.
 
-<!-- Add links to a sample that shows how modules in an MSAL library handles Step 2-5 above in an app.
--->
+Microsoft has built and maintains a wide selection of code samples that demonstrate usage of supported authentication libraries with the Microsoft identity platform. To access these code samples, see the [Next steps](#next-steps).
 
 ## Next steps
 
@@ -351,7 +350,7 @@ This article is part of the following series of articles on authentication and a
 1. Article 3: [Get access on behalf of a user](./auth-v2-user.md)
 1. Article 4: [Get access without a user](./auth-v2-service.md)
 
-Next, learn how the app can get access and call Microsoft Graph without a user.
+Next, choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries, sign-in users, and call Microsoft Graph.
 
 > [!div class="nextstepaction"]
-> [Get access without a user >](./auth-v2-service.md)
+> [Microsoft identity platform code samples >](/azure/active-directory/develop/sample-v2-code)
