@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "cloudPcNamingTemplate",
                     "ChangeType": "Addition",
-                    "Description": "Added the `cloudPcNamingTemplate` property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Description": "Added the `cloudPcNamingTemplate` property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                     "Target": "cloudPcProvisioningPolicy"
                 }
             ],
