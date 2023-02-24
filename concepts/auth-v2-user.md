@@ -79,7 +79,7 @@ curl --location -X POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/
 
 ---
 
-##### Query parameters
+##### Parameters
 
 | Parameter     | Required    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -153,7 +153,7 @@ curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 
 ---
 
-##### Request body properties
+##### Parameters
 
 | Parameter     | Required              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -279,7 +279,7 @@ client_id=11111111-1111-1111-1111-111111111111
 # [cURL](#tab/curl)
 
 ```bash
-curl --location 'https://login.microsoftonline.com/38d49456-54d4-455d-a8d6-c383c71e0a6d/oauth2/v2.0/token' \
+curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=11111111-1111-1111-1111-111111111111' \
 --data-urlencode 'scope=User.Read Mail.Read' \
@@ -290,10 +290,11 @@ curl --location 'https://login.microsoftonline.com/38d49456-54d4-455d-a8d6-c383c
 
 ---
 
-##### Request body parameters
+##### Parameters
 
 | Parameter     | Required              | Description                                                                                                                                                                                                                                                                                                         |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| tenant        | Required              | The `{tenant}` value in the path of the request can be used to control who can sign into the application. The allowed values are: <br><li>`common` for both Microsoft accounts and work or school accounts <li>`organizations` for work or school accounts only <li>`consumers` for Microsoft accounts only <li>tenant identifiers such as the tenant ID or domain name. <br/>For more information, see [protocol basics](/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
 | client_id     | Required              | The Application (client) ID that the [registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned your app. Also referred to as **appId** in the Microsoft Graph application and service principal object.                                                                                                                                                                                             |
 | grant_type    | Required              | Must be `refresh_token`.                                                                                                                                                                                                                                                                                          |
 | scope         | Optional              | A space-separated list of permissions (scopes). Do not percent-encode the spaces. The permissions that your app requests must be equivalent to or a subset of the permissions that it requested in the original authorization code request in Step 2.                                                                                                                             |
