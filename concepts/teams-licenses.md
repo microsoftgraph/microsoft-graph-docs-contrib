@@ -109,7 +109,7 @@ The following APIs support evaluation mode.
 
 ## Seeded capacity
 
-Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;an app won't run out of seeded capacity if another app runs out.
+Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;an app won't run out of seeded capacity if another app runs out.  Seeded capacity is reset at the beginning of each calendar month, and unused amount does not get carried over to the next month.
 
 | Billing model | Use cases | Seeded capacity | License required | Azure subscription required |
 |:-----------|:---------------|:---------------|:-----------|:-----------|
@@ -129,6 +129,8 @@ If your applications are or will be calling any of the following APIs, they must
 - [Update chatMessage](/graph/api/chatmessage-update)
 
 Note that the organization that owns the app registration is responsible for the payment. The Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
+
+Billing cycle starts at the beginning of a calendar month, and ends at the end of that calendar month.
 
 ## Payment-related errors
 
