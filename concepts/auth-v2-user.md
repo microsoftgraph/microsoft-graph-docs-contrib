@@ -335,7 +335,9 @@ In addition to the OAuth 2.0 authorization code grant flow, the Microsoft identi
 
 ## Use the Microsoft Authentication Library (MSAL)
 
-In this article, you walked through the low-level protocol details usually required only when manually crafting and issuing raw HTTP requests to execute the authorization code flow. This process is good for testing but not for production apps. In production apps, use a [Microsoft-built and supported authentication library](/azure/active-directory/develop/msal-overview) to get security tokens and call protected web APIs such as Microsoft Graph.
+In this article, you walked through the low-level protocol details usually required only when manually crafting and issuing raw HTTP requests to execute the authorization code flow. This process is good for testing but not for production apps. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
+
+MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections, allowing you to focus on the functionality of your application.
 
 <!-- Add links to a sample that shows how modules in an MSAL library handles Step 2-5 above in an app.
 -->
