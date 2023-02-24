@@ -79,7 +79,7 @@ Content-Type: application/json
 {
   "displayName": "OneDrive",
   "id": "OneDrive",
-  "used": 102633320226
+  "used": 102633320226,
   "manageWebUrl": "String"
 }
 ```
