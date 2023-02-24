@@ -1718,6 +1718,8 @@ items:
               href: api/intune-apps-androidstoreapp-update.md
           - name: App configuration setting item
             href: resources/intune-apps-appconfigurationsettingitem.md
+          - name: Certificate status
+            href: resources/intune-apps-certificatestatus.md
           - name: Device app management
             href: resources/intune-apps-deviceappmanagement.md
             items:
@@ -3407,6 +3409,25 @@ items:
             href: resources/intune-devices-devicegeolocation.md
           - name: Device health attestation state
             href: resources/intune-devices-devicehealthattestationstate.md
+          - name: Device log collection request
+            href: resources/intune-devices-devicelogcollectionrequest.md
+          - name: Device log collection response
+            href: resources/intune-devices-devicelogcollectionresponse.md
+            items:
+            - name: List
+              href: api/intune-devices-devicelogcollectionresponse-list.md
+            - name: Get
+              href: api/intune-devices-devicelogcollectionresponse-get.md
+            - name: Create
+              href: api/intune-devices-devicelogcollectionresponse-create.md
+            - name: Delete
+              href: api/intune-devices-devicelogcollectionresponse-delete.md
+            - name: Update
+              href: api/intune-devices-devicelogcollectionresponse-update.md
+            - name: createDownloadUrl action
+              href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
+          - name: Device log collection template type
+            href: resources/intune-devices-devicelogcollectiontemplatetype.md
           - name: Device management
             href: resources/intune-auditing-devicemanagement.md
             items:
@@ -3483,6 +3504,8 @@ items:
               href: api/intune-devices-manageddevice-delete.md
             - name: Update
               href: api/intune-devices-manageddevice-update.md
+            - name: createDeviceLogCollectionRequest action
+              href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
             - name: retire action
               href: api/intune-devices-manageddevice-retire.md
             - name: wipe action
@@ -4349,7 +4372,7 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md      
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md
       - name: Service health and communications
         items:
         - name: Overview
