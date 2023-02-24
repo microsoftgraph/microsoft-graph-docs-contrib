@@ -228,3 +228,7 @@ Content-type: application/json
     "createdBy": null
 }
 ```
+
+## See also
+
+* [App catalog C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp)
