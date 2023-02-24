@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/getShiftWorkCloudPc
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.shiftWorkCloudPcAccessState"
+  "@odata.type": "string"
 }
 -->
 ``` http
@@ -69,7 +69,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.shiftWorkCloudPcAccessState",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Edm.String",
     "value": "noLicensesAvailable"
 }
 ```
