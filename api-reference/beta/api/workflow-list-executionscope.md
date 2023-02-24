@@ -13,11 +13,11 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the users that currently meet the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) regardless of whether they have already been processed by the [workflow](../resources/identitygovernance-workflow.md).
+List the users that meet the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) regardless of whether they have already been processed by the [workflow](../resources/identitygovernance-workflow.md).
 
-The users are not determined in real time in the course of the API call, but periodically in the backend, there will be delays until the result is accurate if the execution conditions have been changed recently, relevant attributes on the user have been changed recently or the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) has been reached recently.
+The users are periodically evaluated and not determined in real time in the course of the API call, there will be delays until the result is accurate if the execution conditions have been changed recently, relevant attributes on the user have been changed recently or the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) has been reached recently.
 
-Since the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) is a time window that looks back three days, the result of this API call will also return users whose execution day is slightly in the past.
+Since the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) is a time window that looks back two days, the result of this API call will also return users whose execution day is slightly in the past.
 
 No results are retruned for workflows if the schedule is disabled.
 
