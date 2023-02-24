@@ -160,7 +160,7 @@ A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Contr
 
 This view offers a convenient way to observe API consumption per day over a period of time. 
 
-You can also use the pie charts near the bottom to further break down the costs for analysis, using filters such as **Resource group name**, **Serive name**, and **Tags**.
+You can also use the pie charts near the bottom to further break down the costs for analysis, using the **Resource** and **Meter** filters.
 
 ![Screenshot of the Cost Management and Billing page in the Azure portal](images/cost-analysis-sample.png)
 
