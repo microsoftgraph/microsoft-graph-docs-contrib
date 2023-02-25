@@ -24,7 +24,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-list.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) collection|Get a list of the [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) objects and their properties.|
+|[List accessPackageCustomWorkflowExtensions](../api/accessPackageCustomWorkflowExtension-list.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) collection|Get a list of the [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) objects and their properties.|
 |[Get accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-get.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)|Read the properties and relationships of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
 |[Update accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-update.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)|Update the properties of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
 |[Delete accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-delete.md)|None|Delete an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
