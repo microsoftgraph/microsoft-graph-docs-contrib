@@ -1,27 +1,27 @@
 ---
-title: "Get accessPackageAssignmentRequestWorkflowExtension"
-description: "Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Get accessPackageCustomWorkflowExtension"
+description: "Read the properties and relationships of an accessPackageCustomWorkflowExtension object."
+author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get accessPackageAssignmentRequestWorkflowExtension
+# Get accessPackageCustomWorkflowExtension
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.
+Read the properties and relationships of an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|EntitlementManagement.Read.All EntitlementManagement.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|EntitlementManagement.Read.All EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /accessPackageAssignmentRequestWorkflowExtension
+GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/accessPackageAssignmentRequestWorkflowExtensions/{accessPackageCustomWorkflowExtensionId}
 ```
 
 ## Optional query parameters
@@ -50,20 +50,20 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Access Package Assignment Request Workflow Extension
+The following is an example of a access package assignment request workflow extension type request.
 <!-- {
-  "blockType": "request",
-  "name": "get_accesspackageassignmentrequestworkflowextension"
+  "blockType": "accessPackageAssignmentRequestWorkflowExtensionrequest",
+  "name": "get_accessPackageAssignmentRequestWorkflowExtension"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/accessPackageAssignmentRequestWorkflowExtension
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/accessPackageAssignmentRequestWorkflowExtensions/{accessPackageCustomWorkflowExtensionId}
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the access package assignment request workflow extension type response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -101,3 +101,50 @@ Content-Type: application/json
 }
 ```
 
+### Access Package Assignment Workflow Extension
+The following is an example of a access package assignment workflow extension type request.
+<!-- {
+  "blockType": "accessPackageAssignmentWorkflowExtensionrequest",
+  "name": "get_accessPackageAssignmentWorkflowExtension"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/accessPackageAssignmentRequestWorkflowExtensions/{accessPackageCustomWorkflowExtensionId}
+```
+
+
+### Response
+The following is an example of the access package assignment workflow extension type response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentWorkflowExtension"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.accessPackageAssignmentWorkflowExtension",
+    "id": "c0dd20c0-8e71-e35c-c2a8-926b673e09f8",
+    "authenticationConfiguration": {
+      "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
+    },
+    "clientConfiguration": {
+      "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
+    },
+    "description": "String",
+    "displayName": "String",
+    "endpointConfiguration": {
+      "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+    },
+    "createdBy": "String",
+    "lastModifiedBy": "String",
+    "createdDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)"
+  }
+}
+```
