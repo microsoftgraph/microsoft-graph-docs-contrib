@@ -7,13 +7,15 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessPackageAssignmentRequestWorkflowExtension resource type
+# accessPackageCustomWorkflowExtension resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the attributes of a logic app, which can be called at various stages of an access package request cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. The following use cases can be integrated with logic apps using this workflow:
+Defines the attributes of a logic app, which can be called at various stages of an access package request cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. 
+
+The following use cases can be integrated with logic apps using [access package assignment request](accesspackageassignmentrequest.md) workflow:
 - When an [access package is requested](accesspackageassignmentrequest.md)
 - When an [access package request is granted](accesspackageassignmentrequest.md)
 - When an [access package request is approved](accesspackageassignmentrequest.md)
@@ -25,10 +27,10 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageAssignmentRequestWorkflowExtensions](../api/accesspackageassignmentrequestworkflowextension-list.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) collection|Get a list of the [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) objects and their properties.|
-|[Get accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-get.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Read the properties and relationships of an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
-|[Update accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-update.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Update the properties of an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
-|[Delete accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-delete.md)|None|Delete an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
+|[List accessPackageCustomWorkflowExtensions](../api/accessPackageCustomWorkflowExtension-list.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) collection|Get a list of the [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) objects and their properties.|
+|[Get accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-get.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Read the properties and relationships of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
+|[Update accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-update.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Update the properties of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
+|[Delete accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-delete.md)|None|Delete an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
 
 ## Properties
 |Property|Type|Description|
