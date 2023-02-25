@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessPackageCustomWorkflowExtension resource type
+# accessPackageAssignmentRequestWorkflowExtension resource type
 
 Namespace: microsoft.graph
 
