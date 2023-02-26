@@ -24,10 +24,11 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageCustomWorkflowExtensions](../api/accessPackageCustomWorkflowExtension-list.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) collection|Get a list of the [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) objects and their properties.|
-|[Get accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-get.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)|Read the properties and relationships of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
-|[Update accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-update.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)|Update the properties of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
-|[Delete accessPackageCustomWorkflowExtension](../api/accessPackageCustomWorkflowExtension-delete.md)|None|Delete an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
+|[List accessPackageCustomWorkflowExtensions](../api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) collection|Get a list of the [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) objects and their properties.|
+|[Get accessPackageCustomWorkflowExtension](../api/accessPackagecustomworkflowextension-get.md#access-package-assignment)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)|Read the properties and relationships of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
+|[Create accessPackageCustomWorkflowExtension](../api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md#access-package-assignment)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)|Update the properties of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
+|[Update accessPackageCustomWorkflowExtension](../api/accessPackagecustomworkflowextension-update.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)|Update the properties of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
+|[Delete accessPackageCustomWorkflowExtension](../api/accessPackagecustomworkflowextension-delete.md)|None|Delete an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
 
 ## Properties
 |Property|Type|Description|
