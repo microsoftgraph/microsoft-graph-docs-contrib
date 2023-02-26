@@ -101,7 +101,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accesspackagecustomworkflowextension"
+  "@odata.type": "microsoft.graph.customCalloutExtension"
 }
 -->
 ``` http
@@ -171,7 +171,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accesspackagecustomworkflowextension"
+  "@odata.type": "microsoft.graph.customCalloutExtension"
 }
 -->
 ``` http

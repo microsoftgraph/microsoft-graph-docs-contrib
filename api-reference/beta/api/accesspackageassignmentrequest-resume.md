@@ -69,10 +69,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 Content-Type: application/json
 
 {
-  "source": "Contoso.SodCheckProcess"
+  "source": "Contoso.SodCheckProcess",
   "type": "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
   "data": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentRequestCallbackData"
+    "@odata.type": "microsoft.graph.accessPackageAssignmentRequestCallbackData",
     "stage": "AssignmentRequestCreated",
     "customExtensionStageInstanceId": "957d0c50-466b-4840-bb5b-c92cea7141ff",
     "customExtensionStageInstanceDetail": "This user is all verified"
@@ -104,10 +104,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 Content-Type: application/json
 
 {
-  "source": "Contoso.SodCheckProcess"
+  "source": "Contoso.SodCheckProcess",
   "type": "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
   "data": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentRequestCallbackData"
+    "@odata.type": "microsoft.graph.accessPackageAssignmentRequestCallbackData",
     "stage": "AssignmentRequestCreated",
     "customExtensionStageInstanceId": "857d0c50-466b-4840-bb5b-c92cea7141ff",
     "state": "denied",
