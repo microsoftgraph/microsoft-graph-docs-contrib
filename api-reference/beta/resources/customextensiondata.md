@@ -1,7 +1,6 @@
 ---
 title: "customExtensionData resource type"
-description: "Defines the base type of the custom extension data which will be used and derived for custom extension callback data. This is an abstract type.
-"
+description: "Defines the base type of the custom extension data which will be used and derived for custom extension callback data. This is an abstract type."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"

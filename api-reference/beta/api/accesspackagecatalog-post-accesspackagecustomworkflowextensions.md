@@ -1,6 +1,6 @@
 ---
 title: "Create accessPackageCustomWorkflowExtensions"
-description: "Create a new customAccessPackageWorkflowExtension object."
+description: "Create a new accessPackageCustomWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -63,12 +63,12 @@ If successful, this method returns a `201 Created` response code and a [accessPa
 ### Access package assignment request
 The following is an example of a access package assignment request custom workflow extension.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentrequestworkflowextension_from_"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackagecustomWorkflowExtensions
 Content-Type: application/json

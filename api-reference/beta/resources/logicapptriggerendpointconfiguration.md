@@ -1,7 +1,7 @@
 ---
 title: "logicAppTriggerEndpointConfiguration resource type"
 description: "The configuration details for the logic app's endpoint that is associated with a custom access package workflow extension."
-author: "currenmehta"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Delete accessPackageCustomWorkflowExtension"
 description: "Delete an accessPackageCustomWorkflowExtension object."
-author: "vikam-microsoft"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

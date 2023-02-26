@@ -1,7 +1,7 @@
 ---
 title: "Get accessPackageCustomWorkflowExtension"
 description: "Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object."
-author: "vikam-microsoft"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

@@ -27,9 +27,6 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Read properties and relationships of an accessPackageAssignmentPolicy object. |
 | [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Update the properties of an accessPackageAssignmentPolicy object. |
 | [Delete accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md) | | Delete an accessPackageAssignmentPolicy. |
-|[List customExtensionStageSettings](../api/accesspackageassignmentpolicy-list-customextensionstagesettings.md)|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|Get the customExtensionStageSetting resources from the customExtensionStageSettings navigation property.|
-|[Add customExtensionStageSetting](../api/accesspackageassignmentpolicy-post-customextensionstagesettings.md)|[customExtensionStageSetting](../resources/customextensionstagesetting.md)|Add customExtensionStageSettings by posting to the customExtensionStageSettings collection.|
-|[Remove customExtensionStageSettings](../api/accesspackageassignmentpolicy-delete-customextensionstagesettings.md)|None|Remove a [customExtensionStageSetting](../resources/customextensionstagesetting.md) object.|
 
 ## Properties
 

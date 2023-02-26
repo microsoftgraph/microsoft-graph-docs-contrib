@@ -362,7 +362,6 @@ To remove the collection of **customExtensionStageSettings** and their associate
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy_delete_customExtensionStageSettings"

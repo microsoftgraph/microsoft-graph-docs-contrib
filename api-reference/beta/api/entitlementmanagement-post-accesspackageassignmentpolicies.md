@@ -627,11 +627,12 @@ Content-type: application/json
 In the following example, the pre-defined **accessPackageCustomWorkflowExtension** object is triggered when an access package assigned request is created and when it's granted.  The identifier provided within the **customExtension** field is the **accessPackageCustomWorkflowExtension** object's ID.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_accessPackageCustomWorkflowExtension"
 }-->
+
+
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 Content-type: application/json
@@ -676,7 +677,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension stage settings for a policy](accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stageSettings-for-a-policy)
+The following is an example of the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension stage settings for a policy](accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stage-settings-for-a-policy)
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
