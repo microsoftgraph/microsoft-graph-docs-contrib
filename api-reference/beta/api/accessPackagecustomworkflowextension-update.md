@@ -1,7 +1,7 @@
 ---
 title: "Update accessPackageCustomtWorkflowExtension"
 description: "Update the properties of an accessPackageAssignmentRequestWorkflowExtension object."
-author: "vikam-microsoft"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -43,7 +43,6 @@ PUT /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Authentication type. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
