@@ -1,5 +1,5 @@
 ---
-title: "Get accessPackageAssignmentRequestWorkflowExtension"
+title: "Get accessPackageCustomWorkflowExtension"
 description: "Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object."
 author: "vikam-microsoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get accessPackageAssignmentRequestWorkflowExtension
+# Get accessPackageCustomWorkflowExtension
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
