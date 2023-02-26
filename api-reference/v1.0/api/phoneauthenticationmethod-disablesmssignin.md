@@ -107,10 +107,6 @@ POST https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-75
 
 ---
 
-
----
-
-
 ### Response
 
 The following is an example of the response.
