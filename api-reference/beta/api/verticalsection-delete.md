@@ -44,7 +44,7 @@ Do not supply a request body with this method.
 
 ## Response
 
-If successful, this call returns a `204 No Content` response to indicate that the resource was deleted and there was nothing to return.
+If successful, this call returns a `204 No Content`. It does not return anything in the response body.
 
 If the vertical section is not found, this method returns `404 Not Found`.
 
