@@ -1,27 +1,27 @@
 ---
-title: "Update accessPackageAssignmentRequestWorkflowExtension"
+title: "Update accessPackageCustomtWorkflowExtension"
 description: "Update the properties of an accessPackageAssignmentRequestWorkflowExtension object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "vikam-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update accessPackageAssignmentRequestWorkflowExtension
+# Update accessPackageCustomWorkflowExtension
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.
+Update the properties of an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|EntitlementManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|EntitlementManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /accessPackageAssignmentRequestWorkflowExtension
+PUT /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customAccessPackageWorkflowExtensionId}
 ```
 
 ## Request headers
@@ -46,53 +46,35 @@ PATCH /accessPackageAssignmentRequestWorkflowExtension
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|createdBy|String|**TODO: Add Description** Optional.|
-|lastModifiedBy|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|**TODO: Add Description** Optional.|
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Authentication type. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|description|String|Description for the accessPackageCustomWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|displayName|String|Display name for the accessPackageCustomWorkflowExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The timeout duration for callback. Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object in the response body.
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Access package assignment request
+The following is an example of a access package assignment request custom workflow extension.
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentrequestworkflowextension"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/accessPackageAssignmentRequestWorkflowExtension
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions/98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  },
-  "createdBy": "String",
-  "callbackConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
-  }
+  "displayName": "test_action_0124_email",
+  "description": "this is for graph testing only"
 }
 ```
 
@@ -110,26 +92,83 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+   "value":{
+      "@odata.type":"#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+      "id":"98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0",
+      "displayName":"test_action_0124_email",
+      "description":"this is for graph testing only",
+      "createdDateTime":"2022-01-24T21:48:57.15Z",
+      "lastModifiedDateTime":"2022-01-24T21:55:44.953Z",
+      "clientConfiguration":null,
+      "endpointConfiguration":{
+         "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
+         "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
+         "resourceGroupName":"test",
+         "logicAppWorkflowName":"elm-extension-email",
+         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/8ccffea766ae48e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
+      },
+      "authenticationConfiguration":{
+         "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
+      },
+      "callbackConfiguration":{
+         "@odata.type":"microsoft.graph.customExtensionCallbackConfiguration",
+         "durationBeforeTimeout":"PT1H"
+      }
+   }
+}
+```
+
+### Access package assignment
+The following is an example of a access package assignment custom workflow extension.
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentworkflowextension"
+}
+-->
+``` http
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions/78ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
+Content-Type: application/json
+
+{
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
-  "id": "c0dd20c0-8e71-e35c-c2a8-926b673e09f8",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  },
-  "createdBy": "String",
-  "lastModifiedBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "callbackConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
-  }
+  "displayName": "test_action_0127_email",
+  "description": "this is for graph testing only"
+}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+   "value":{
+      "@odata.type":"#microsoft.graph.accessPackageAssignmentWorkflowExtension",
+      "id":"78ffaec5-ae8e-4902-a434-5ffc5d3d3cd0",
+      "displayName":"test_action_0127_email",
+      "description":"this is for graph testing only",
+      "createdDateTime":"2022-01-24T21:48:57.15Z",
+      "lastModifiedDateTime":"2022-01-24T21:55:44.953Z",
+      "clientConfiguration":null,
+      "endpointConfiguration":{
+         "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
+         "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
+         "resourceGroupName":"test",
+         "logicAppWorkflowName":"elm-extension-email",
+         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/7ccffea766ae48e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
+      },
+      "authenticationConfiguration":{
+         "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
+      }
+   }
 }
 ```
 
