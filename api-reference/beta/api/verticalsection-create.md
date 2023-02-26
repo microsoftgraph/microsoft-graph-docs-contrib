@@ -1,6 +1,6 @@
 ---
 title: 'Create verticalSection'
-description: "Create a verticalSection in page"
+description: "Create a verticalSection in a page"
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
