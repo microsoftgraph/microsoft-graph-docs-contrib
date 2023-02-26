@@ -1,6 +1,6 @@
 ---
 title: 'Create horizontalSection'
-description: "Create a horizontalSection in page"
+description: "Create a horizontalSection in a page"
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
