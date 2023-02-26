@@ -565,14 +565,6 @@
         {
           "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
           "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageCustomWorkflowExtensions",
-          "ChangeType": "Addition",
-          "Description": "Added the **accessPackageCustomWorkflowExtensions** relationship to the [accessPackageCatalog](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageCatalog?view=graph-rest-beta) resource.",
-          "Target": "accessPackageCatalog"
-        },
-        {
-          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
-          "ApiChange": "Resource",
           "ChangedApiName": "customExtensionStageSetting",
           "ChangeType": "Addition",
           "Description": "Added the [customExtensionStageSetting](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionStageSetting?view=graph-rest-beta) resource",
