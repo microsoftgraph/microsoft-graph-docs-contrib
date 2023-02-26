@@ -247,31 +247,6 @@ The following is an example of a request to retrieve the collection of custom ex
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionStageSettings($expand=customExtension)
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentpolicy-expand-customExtensionStageSettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignmentpolicy-expand-customExtensionStageSettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentpolicy-expand-customExtensionStageSettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentpolicy-expand-customExtensionStageSettings-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackageassignmentpolicy-expand-customExtensionStageSettings-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-accesspackageassignmentpolicy-expand-customExtensionStageSettings-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
