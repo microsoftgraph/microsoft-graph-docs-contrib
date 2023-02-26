@@ -561,22 +561,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [accessPackageAssignmentWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentWorkflowExtension?view=graph-rest-beta) resource",
           "Target": "accessPackageAssignmentWorkflowExtension"
-        },
-        {
-          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "customExtensionStageSetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [customExtensionStageSetting](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionStageSetting?view=graph-rest-beta) resource",
-          "Target": "customExtensionStageSetting"
-        },
-        {
-          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
-          "ApiChange": "Method",
-          "ChangedApiName": "resume",
-          "ChangeType": "Addition",
-          "Description": "Added the [resume](https://learn.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest?view=graph-rest-beta) method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
-          "Target": "accessPackageAssignmentRequest"
         }
       ],
       "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
