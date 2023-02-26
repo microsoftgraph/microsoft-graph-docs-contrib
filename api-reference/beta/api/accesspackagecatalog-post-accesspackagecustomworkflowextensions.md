@@ -65,7 +65,7 @@ The following is an example of a access package assignment request custom workfl
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequestworkflowextension_from_"
+  "name": "create_accessPackagecustomWorkflowExtension"
 }
 -->
 
@@ -142,7 +142,7 @@ The following is an example of a access package assignment custom workflow exten
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentworkflowextension_from_"
+  "name": "create_accessPackagecustomWorkflowExtension"
 }
 -->
 ``` http

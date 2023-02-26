@@ -62,7 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 The following is an example of a on how to resume a resume that waiting for callback.
 <!-- {
   "blockType": "request",
-  "name": "accesspackageassignmentrequestthis.resume"
+  "name": "resume_accesspackageassignmentrequest"
 }
 -->
 ``` http
@@ -98,7 +98,7 @@ HTTP/1.1 204 No Content
 The following is an example to deny an assignment request which is waiting for callback which resuming the processing of a request. Request can not be denied at `assignmentRequestCreated` stage of callout.
 <!-- {
   "blockType": "request",
-  "name": "accesspackageassignmentrequestthis.resume"
+  "name": "resume_accesspackageassignmentrequest"
 }
 -->
 ``` http

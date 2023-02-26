@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines when to execute a [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md).
 
 
 Inherits from [entity](../resources/entity.md).
@@ -35,7 +35,7 @@ None
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[customCalloutExtension](../resources/customcalloutextension.md)|**TODO: Add Description**|
+|customExtension|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md)|Indicates which custom workflow extension will be executed at this stage. Nullable. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
