@@ -114,9 +114,6 @@ Content-type: application/json
 
 ---
 
-
----
-
 #### Response
 
 The following is an example of the response.
@@ -196,9 +193,6 @@ Content-type: application/json
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-private-channel-with-member-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 
@@ -365,9 +359,6 @@ Content-type: application/json
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-channel-with-moderation-settings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 

@@ -122,9 +122,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ---
 
-
----
-
 #### Response
 
 The following is an example of the response. 
@@ -221,9 +218,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-chats-expand-members-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 
@@ -619,9 +613,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ---
 
-
----
-
 #### Response
 
 The following is an example of the response. 
@@ -757,9 +748,6 @@ GET https://graph.microsoft.com/beta/chats?$orderBy=lastMessagePreview/createdDa
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-chats-orderby-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 
