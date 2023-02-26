@@ -1,9 +1,9 @@
 ---
 title: "Update unifiedRoleManagementAlertConfiguration"
 description: "Update the properties of an unifiedRoleManagementAlertConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleManagementAlert.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagementAlert.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -42,16 +42,12 @@ PATCH /identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedRoleM
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|alertDefinitionId|String|**TODO: Add Description** Optional.|
-|scopeType|String|**TODO: Add Description** Optional.|
-|scopeId|String|**TODO: Add Description** Optional.|
-|isEnabled|Boolean|**TODO: Add Description** Optional.|
-
-
+|alertDefinitionId|String|The identifier for an alert definition. Optional.|
+scopeType|String|The type of the scope where the alert is created. DirectoryRole is the only supported one for Azure AD Roles. New types like Application and Group may be introduced. Optional.|
+|scopeId|String|The id of the scope where the alert is related. For example, directory id, application id, etc. Optional.|
+|isEnabled|Boolean|True if the alert is enabled. Setting to false will disable scanning for the specific alert. Optional.|
 
 ## Response
 
@@ -67,18 +63,16 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedrolemanagementalertconfigurationId}
+PATCH https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleManagementAlertConfiguration",
-  "alertDefinitionId": "String",
-  "scopeType": "String",
-  "scopeId": "String",
-  "isEnabled": "Boolean"
+  "@odata.type":"#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
+  "isEnabled": "true",
+  "globalAdminCountThreshold": 7,
+  "percentageOfGlobalAdminsOutOfRolesThreshold": 70"
 }
 ```
-
 
 ### Response
 The following is an example of the response

@@ -1,9 +1,9 @@
 ---
 title: "List unifiedRoleManagementAlertIncidents"
 description: "Get a list of the unifiedRoleManagementAlertIncident objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertI
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,7 +50,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get the alert incidents with pagination for Azure AD roles under a resource scope like tenant.
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -58,11 +60,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertIncidents
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert/alertIncidents?$top=5
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -76,12 +78,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleManagementAlertIncident",
-      "id": "86b7ef51-2b79-b382-9658-8f1a01534620"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/roleManagementAlerts/alerts('DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert')/alertIncidents",
+    "value": [
+        {
+        "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
+        "id": "0645231d-16ba-4ebf-851a-0875df4052bd",
+        "assigneeId": "0645231d-16ba-4ebf-851a-0875df4052bd",
+        "assigneeDisplayName": "test-user",
+        "assigneeUserPrincipalName": "testUser@azrbac.ccsctp.net"
+        },
+    ]
+    "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert/alertIncidents?$top=5&$skip=5"
 }
 ```
 

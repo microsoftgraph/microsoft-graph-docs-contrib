@@ -1,9 +1,9 @@
 ---
 title: "List unifiedRoleManagementAlertDefinition"
 description: "Get a list of the unifiedRoleManagementAlertDefinition objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identityGovernance/roleManagementAlerts/alertDefinitions
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -80,16 +80,16 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.unifiedRoleManagementAlertDefinition",
       "id": "0d5b2e31-dfef-d26a-b4c6-fd7a94e1ba2d",
-      "displayName": "String",
-      "scopeType": "String",
-      "scopeId": "String",
-      "description": "String",
-      "severityLevel": "String",
-      "securityImpact": "String",
-      "mitigationSteps": "String",
-      "howToPrevent": "String",
-      "isRemediatable": "Boolean",
-      "isConfigurable": "Boolean"
+      "displayName": "There are too many global administrators",
+      "scopeType": "DirectoryRole",
+      "scopeId": "67b47f38-0f0b-4e62-a3be-859140c2061f",
+      "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
+      "severityLevel": "low",
+      "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
+      "mitigationSteps": "Review users and remove any that don't absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
+      "howToPrevent": "Assign users the least privileged role they need.",
+      "isRemediatable": true,
+      "isConfigurable": true
     }
   ]
 }

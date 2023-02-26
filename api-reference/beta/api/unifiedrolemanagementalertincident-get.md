@@ -1,9 +1,9 @@
 ---
 title: "Get unifiedRoleManagementAlertIncident"
 description: "Read the properties and relationships of an unifiedRoleManagementAlertIncident object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertI
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertIncidents/{unifiedRoleManagementAlertIncidentId}
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertIncidents/a9f38501-74ec-43ea-8663-6c538602150d
 ```
 
 
@@ -76,10 +76,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.unifiedRoleManagementAlertIncident",
-    "id": "86b7ef51-2b79-b382-9658-8f1a01534620"
-  }
+  "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
+  "id": "a9f38501-74ec-43ea-8663-6c538602150d",
+  "assigneeId": "a9f38501-74ec-43ea-8663-6c538602150d",
+  "assigneeDisplayName": "testUser1",
+  "assigneeUserPrincipalName": "testuser1@azrbac.ccsctp.net"
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "Update unifiedRoleManagementAlert"
 description: "Update the properties of an unifiedRoleManagementAlert object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleManagementAlert.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagementAlert.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -42,13 +42,9 @@ PATCH /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAler
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|isActive|Boolean|**TODO: Add Description** Required.|
-
-
+|isActive|Boolean|False by default. True if the alert is active. Set to false to dismiss the alert. Required.|
 
 ## Response
 
@@ -56,7 +52,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Dismiss an alert by specifying the alert id and setting the isActive to false.
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -64,16 +62,15 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}
+PATCH https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_StaleSignInAlert
 Content-Type: application/json
 
 {
-  "isActive": "Boolean"
+  "isActive": false
 }
 ```
 
-
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

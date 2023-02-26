@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/5c5670d6-a2c0-a394-ef42-882954856de5
 ```
 
 
@@ -79,11 +79,11 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.longRunningOperation",
     "id": "5c5670d6-a2c0-a394-ef42-882954856de5",
-    "createdDateTime": "String (timestamp)",
-    "lastActionDateTime": "String (timestamp)",
-    "resourceLocation": "String",
-    "status": "String",
-    "statusDetail": "String"
+    "createdDateTime": "2022-06-19T12-01-03.45Z",
+    "lastActionDateTime": "2022-06-19T12-01-03.48Z",
+    "resourceLocation": "https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_StaleSignInAlert",
+    "status": "running",
+    "statusDetail": "Running."
   }
 }
 ```

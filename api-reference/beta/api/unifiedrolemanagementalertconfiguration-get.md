@@ -1,9 +1,9 @@
 ---
 title: "Get unifiedRoleManagementAlertConfiguration"
 description: "Read the properties and relationships of an unifiedRoleManagementAlertConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedRoleMan
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedRoleManagementAlertConfigurationId}
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert
 ```
 
 
@@ -76,13 +76,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.unifiedRoleManagementAlertConfiguration",
-    "id": "130f67aa-869d-66ef-035b-0c1e657b21d3",
-    "alertDefinitionId": "String",
-    "scopeType": "String",
-    "scopeId": "String",
-    "isEnabled": "Boolean"
+  "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
+  "id": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
+  "alertDefinitionId": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
+  "scopeId": "67b47f38-0f0b-4e62-a3be-859140c2061f",
+  "scopeType": "DirectoryRole",
+  "isEnabled": true,
+  "globalAdminCountThreshold": 20,
+  "percentageOfGlobalAdminsOutOfRolesThreshold": 10,
+  "alertDefinition": {
+    "id": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
+    "displayName": "There are too many global administrators",
+    "scopeType": "DirectoryRole",
+    "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
+    "severityLevel": "low",
+    "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
+    "mitigationSteps": "Review users and remove any that don't absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
+    "isRemediatable": true,
+    "isConfigurable": true
   }
 }
 ```
