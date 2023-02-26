@@ -64,8 +64,7 @@ If successful, this method returns a `201 Created` response code and a [accessPa
 The following is an example of a access package assignment request custom workflow extension.
 
 <!-- {
-  "blockType": "request",
-  "name": "create_accessPackagecustomWorkflowExtension"
+  "blockType": "request"
 }
 -->
 
@@ -141,8 +140,7 @@ The following is an example of a access package assignment custom workflow exten
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "create_accessPackagecustomWorkflowExtension"
+  "blockType": "request"
 }
 -->
 ``` http

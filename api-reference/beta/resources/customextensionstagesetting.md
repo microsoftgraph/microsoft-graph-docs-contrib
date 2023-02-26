@@ -4,6 +4,7 @@ description: "Defines when to execute a access package custom workflow extension
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
+doc_type: resourcePageType
 ---
 
 # customExtensionStageSetting resource type
