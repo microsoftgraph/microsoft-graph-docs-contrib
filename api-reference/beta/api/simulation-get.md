@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get simulation
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -47,12 +48,14 @@ If successful, this method returns a `200 OK` response code and a [simulation](.
 
 ## Examples
 
-### Request
+### Example 1: Get an attack simulation campaign
+
+The following example shows how to get an attack simulation campaign for a tenant.
+
+#### Request
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_simulation"
@@ -62,10 +65,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a
 ```
 
----
-
-
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -107,48 +107,84 @@ Content-Type: application/json
 }
 ```
 
-### Example
+### Example 2: Get included account targets
 
-####Example 1: Get incuded account targets
+The following example shows how to get included account targets (users) for an attack simulation campaign for a tenant.
 
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_simulation_includedAccountTarget"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/includedAccountTarget
 ```
 
-### Response
+#### Response
 
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accountTargetContent"
+}
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.addressbookaccounttargetcontent",
-    "type" : "addressBook",
-    "accountTargetEmails" : [
-        "john@contoso.com"
-    ]
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "john@contoso.com"
+  ]
 }
 ```
 
-####Example 2: Get excuded account targets
+### Example 3: Get excluded account targets
 
+The following example shows how to get excluded account targets (users) for an attack simulation campaign for a tenant.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_simulation_excludedAccountTarget"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/excludedAccountTarget
 ```
 
-### Response
+#### Response
 
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accountTargetContent"
+}
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.addressbookaccounttargetcontent",
-    "type" : "addressBook",
-    "accountTargetEmails" : [
-        "alie@contoso.com"
-    ]
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "alie@contoso.com"
+  ]
 }
 ```

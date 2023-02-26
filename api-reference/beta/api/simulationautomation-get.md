@@ -51,8 +51,6 @@ If successful, this method returns a `200 OK` response code and a [simulationAut
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_simulationautomation"
@@ -61,8 +59,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomations/fbad62b0-b32d-b6ac-9f48-d84bbea08f96
 ```
----
-
 
 ### Response
 
@@ -101,4 +97,3 @@ Content-Type: application/json
     "nextRunDateTime": "2022-01-01T01:01:01.01Z"
 }
 ```
-
