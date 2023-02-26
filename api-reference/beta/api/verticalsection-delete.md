@@ -7,16 +7,13 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Delete a vertical section from a page
+# Delete vertical section from a page
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a [verticalSection][] from the [sitePage][]
-
-[verticalSection]: ../resources/verticalSection.md
-[sitePage]: ../resources/sitepage.md
+Removes a [verticalSection](../resources/verticalSection.md) from the [sitePage](../resources/sitepage.md).
 
 ## Permissions
 
@@ -37,6 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /sites/{site-id}/pages/{page-id}/canvasLayout/verticalSection
 ```
+
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization | Bearer \{token\}. Required. |
 
 ## Request body
 

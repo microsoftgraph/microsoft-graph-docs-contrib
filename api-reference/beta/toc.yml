@@ -15909,7 +15909,7 @@ items:
           - name: Get
             href: api/horizontalsection-get.md
           - name: Create
-            href: api/horizontalsection-create.md
+            href: api/sitepage-post-horizontalsection.md
           - name: Update
             href: api/horizontalsection-update.md
           - name: Delete
@@ -15929,7 +15929,7 @@ items:
           - name: Get
             href: api/verticalsection-get.md
           - name: Create
-            href: api/verticalsection-create.md
+            href: api/sitepage-post-verticalsection.md
           - name: Update
             href: api/verticalsection-update.md
           - name: Delete

@@ -7,16 +7,13 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Delete a horizontal section from a page
+# Delete horizontal section from a page
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a [horizontalSection][] from the [sitePage][]
-
-[horizontalsection]: ../resources/horizontalSection.md
-[sitepage]: ../resources/sitepage.md
+Removes a [horizontalSection]( ../resources/horizontalSection.md) from the [sitePage](../resources/sitepage.md).
 
 ## Permissions
 
@@ -37,6 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /sites/{site-id}/pages/{page-id}/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
+
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization | Bearer \{token\}. Required. |
 
 ## Request body
 
