@@ -22,7 +22,7 @@ The configuration details for the logic app's endpoint that is associated with a
 |logicAppWorkflowName|String|The name of the logic app.|
 |resourceGroupName|String|The Azure resource group name for the logic app.|
 |subscriptionId|String|Identifier of the Azure subscription for the logic app.|
-|url|String|Logic app trigger URL. Only required for App token scenarios where app is creationg [customCalloutExtension](../resources/customcalloutextension.md).|
+|url|String|Logic app trigger URL. Only required for App token scenarios where app is creating [customCalloutExtension](../resources/customcalloutextension.md).|
 
 ## JSON representation
 
