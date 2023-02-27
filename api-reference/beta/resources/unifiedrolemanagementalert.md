@@ -43,7 +43,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |alertConfiguration|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md)|The configuration of an alert for Azure AD roles. Pre-defined and cannot be created or deleted, but some configurations can be modified.|
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Contains description, impact, mitigation, prevention to describe alerts.|
-|alertIncidents|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Represents the actual alert incidents triggered in Privileged Identity Management (PIM)|.
+|alertIncidents|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Represents the actual alert incidents triggered in Privileged Identity Management (PIM).|
 
 ## JSON representation
 The following is a JSON representation of the resource.
