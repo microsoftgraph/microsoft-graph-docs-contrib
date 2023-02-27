@@ -14,7 +14,7 @@ ms.date: 02/22/2022
 
 An app can access Microsoft Graph using one of two ways: on behalf of a signed-in user, also called *delegated access*, or with its own identity, also called *app-only access*. This article details how an app gets to [call Microsoft Graph with its own identity](./auth/auth-concepts.md#access-scenarios).
 
-This article details the raw HTTP requests involved for your app to call Microsoft Graph with its own identity using a popular flow called the [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). The authorization and token requests detailed in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-libraries-msal) to get access tokens and call Microsoft Graph.
+This article details the raw HTTP requests involved for your app to call Microsoft Graph with its own identity using a popular flow called the [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). The authorization and token requests detailed in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-library-msal) to get access tokens and call Microsoft Graph.
 
 ## Prerequisites
 
@@ -100,6 +100,8 @@ GET https://login.microsoftonline.com/{tenant}/adminconsent
 curl --location --request POST 'https://login.microsoftonline.com/{tenant}/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&redirect_id=https%3A%2F%2Flocalhost%2Fmyapp%2Fpermissions&state=12345'
 ```
 
+---
+
 | Parameter     | Condition   | Description 
 |:--------------|:------------|:------------
 | tenant        | Required    | The directory tenant that you want to request permission from. The value can be in GUID or a friendly name format. If you don't know which tenant the user belongs to and you want to let them sign in with any tenant, use `common`.
@@ -169,6 +171,8 @@ curl --location 'https://login.microsoftonline.com/38d49456-54d4-455d-a8d6-c383c
 --form 'grant_type="client_credentials"'
 ```
 
+---
+
 | Parameter     | Condition | Description 
 |:--------------|:----------|:------------
 | tenant        | Required  | The directory tenant that you want to request permission from. The value can be in GUID or a friendly name format.
@@ -214,6 +218,8 @@ curl --location 'https://graph.microsoft.com/v1.0/users' \
 --header 'Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw' \
 --data ''
 ```
+
+---
 
 A successful response will look like this (some response headers have been removed):
 
