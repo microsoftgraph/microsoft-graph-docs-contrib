@@ -87,7 +87,7 @@ Content-Type: application/json
         "assigneeDisplayName": "test-user",
         "assigneeUserPrincipalName": "testUser@azrbac.ccsctp.net"
         }
-    ]
+    ],
     "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert/alertIncidents?$top=5&$skip=5"
 }
 ```
