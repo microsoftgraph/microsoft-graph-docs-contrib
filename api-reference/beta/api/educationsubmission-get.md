@@ -201,8 +201,6 @@ Prefer: include-unknown-enum-members
 
 ---
 
----
-
 #### Response
 The following is an example of the response. 
 

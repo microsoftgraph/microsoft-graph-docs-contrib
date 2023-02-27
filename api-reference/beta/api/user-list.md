@@ -931,7 +931,8 @@ For examples of custom security attribute assignments, see [Examples: Assign, up
   "name": "customsecurityattribute_filter_users_equals_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
+GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
+ConsistencyLevel: eventual
 ```
 
 #### Response
