@@ -70,7 +70,7 @@ Content-Type: application/json
   "@odata.type":"#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
   "isEnabled": "true",
   "globalAdminCountThreshold": 7,
-  "percentageOfGlobalAdminsOutOfRolesThreshold": 70"
+  "percentageOfGlobalAdminsOutOfRolesThreshold": 70
 }
 ```
 
