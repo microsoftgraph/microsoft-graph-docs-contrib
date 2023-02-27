@@ -1,9 +1,9 @@
 ---
 title: "roleManagementAlert resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an alert singleton that exposes alerts, alert definitions, and alert configuration."
+author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an alert singleton that exposes alerts, alert definitions, and alert configuration.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -28,15 +27,15 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier of an alert. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|alertConfigurations|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) collection|**TODO: Add Description**|
-|alertDefinitions|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|**TODO: Add Description**|
-|alerts|[unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) collection|**TODO: Add Description**|
-|operations|[longRunningOperation](../resources/longrunningoperation.md) collection|**TODO: Add Description**|
+|alertConfigurations|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) collection|The various configurations of an alert for Azure AD roles. Pre-defined and cannot be created or deleted, but some of the configurations can be modified.|
+|alertDefinitions|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Contain description, impact, mitigation, prevention to describe alerts.|
+|alerts|[unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) collection|Represents the alert entity.|
+|operations|[longRunningOperation](../resources/longrunningoperation.md) collection|Represents operations on resources which take a long time to complete and can run in the background until operation completion.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
