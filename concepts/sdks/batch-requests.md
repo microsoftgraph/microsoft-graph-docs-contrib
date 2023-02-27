@@ -29,31 +29,28 @@ This example shows how to send multiple requests in a batch that are not depende
 ```csharp
 // Use the request builder to generate a regular
 // request to /me
-var userRequest = graphClient.Me.Request();
+var userRequest = graphClient.Me.ToGetRequestInformation();
 
 var today = DateTime.Now.Date;
-var start = today.ToString("yyyy-MM-ddTHH:mm:ssK");
-var end = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
-
-var queryOptions = new List<QueryOption>
-{
-    new QueryOption("startDateTime", start),
-    new QueryOption("endDateTime", end)
-};
 
 // Use the request builder to generate a regular
 // request to /me/calendarview?startDateTime="start"&endDateTime="end"
-var eventsRequest = graphClient.Me.CalendarView.Request(queryOptions);
+var eventsRequest = graphClient.Me.CalendarView
+    .ToGetRequestInformation(requestConfiguration => 
+        {
+            requestConfiguration.QueryParameters.StartDateTime = today.ToString("yyyy-MM-ddTHH:mm:ssK");
+            requestConfiguration.QueryParameters.EndDateTime = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
+        });
 
 // Build the batch
-var batchRequestContent = new BatchRequestContent();
+var batchRequestContent = new BatchRequestContent(graphClient);
 
-// Using AddBatchRequestStep adds each request as a step
+// Using AddBatchRequestStepAsync adds each request as a step
 // with no specified order of execution
-var userRequestId = batchRequestContent.AddBatchRequestStep(userRequest);
-var eventsRequestId = batchRequestContent.AddBatchRequestStep(eventsRequest);
+var userRequestId = await batchRequestContent.AddBatchRequestStepAsync(userRequest);
+var eventsRequestId = await batchRequestContent.AddBatchRequestStepAsync(eventsRequest);
 
-var returnedResponse = await graphClient.Batch.Request().PostAsync(batchRequestContent);
+var returnedResponse = await graphClient.Batch.PostAsync(batchRequestContent);
 
 // De-serialize response based on known return type
 try
@@ -73,8 +70,8 @@ catch (ServiceException ex)
 try
 {
     var events = await returnedResponse
-        .GetResponseByIdAsync<UserCalendarViewCollectionResponse>(eventsRequestId);
-    Console.WriteLine($"You have {events.Value.CurrentPage.Count} events on your calendar today.");
+        .GetResponseByIdAsync<EventCollectionResponse>(eventsRequestId);
+    Console.WriteLine($"You have {events.Value.Count} events on your calendar today.");
 }
 catch (ServiceException ex)
 {
