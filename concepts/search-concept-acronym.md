@@ -78,8 +78,7 @@ Content-type: application/json
 ## Known issues
 
 - Sorting, aggregation, and pagination are not supported for acronym searches.
-- Combination search can only support in bookmark, qna and acronym. 
-
+- Combination search with non-Answer entityTypes (i.e. driveItem, list) is not supported. Only combination search with the other Answer entityTypes bookmarks, qna and acronym is supported.
 ## Next steps
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)
