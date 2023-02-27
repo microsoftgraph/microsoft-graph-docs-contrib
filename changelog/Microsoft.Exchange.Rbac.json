@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRbacApplication",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource",
+          "Description": "Added the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource type.",
           "Target": "unifiedRbacApplication"
         },
         {
