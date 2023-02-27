@@ -17,7 +17,7 @@ Represents an abstract type that provides the ability to launch a realistic phis
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List simulations](../api/simulation-list.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
-|[List simulationAutomations](../api/simulationautomations-list.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
+|[List simulationAutomations](../api/simulationautomation-list.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
 
 ## Properties
 None.
