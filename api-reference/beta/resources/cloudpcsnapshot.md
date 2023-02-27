@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the snapshot of the Cloud PC device at a specific point in time. Inherited from [entity](../resources/entity.md).|
 |lastRestoredDateTime|DateTimeOffset|The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|snapshotType| [cloudPcSnapshotType](#cloudpcsnapshottype-values)   | The type of snapshot, Indicates how the snapshot to be created. Possible values are `automatic`, `manual`. Default value is `automatic`.|
+|snapshotType| [cloudPcSnapshotType](#cloudpcsnapshottype-values)   | The type of snapshot, indicates how the snapshot to be created. Possible values are `automatic`, `manual`. Default value is `automatic`.|
 |status|[cloudPcSnapshotStatus](#cloudpcsnapshotstatus-values)|The status of the Cloud PC snapshot. The possible values are: `ready`, `unknownFutureValue`.|
 |expirationDateTime|DateTimeOffset| The date and time when the snapshot expires. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as'2014-01-01T00:00:00Z'.|
 
@@ -46,11 +46,11 @@ Inherits from [entity](../resources/entity.md).
 
 Indicates the type of Cloud PC snapshot.
 
-| Member name          | Value | Description                                           |
-| -------------------- | ----- | ----------------------------------------------------- |
-| `automatic`          | `0`   | Indicates snapshot is created automaticaly.           |
-| `manual`             | `1`   | Indicates snapshot is created manually.               |
-| `unknownFutureValue` | `2`   | Evolvable enumeration sentinel value. Do not use.     |
+| Member name          | Description                                           |
+| -------------------- | ----------------------------------------------------- |
+| `automatic`          | Indicates snapshot is created automaticaly.           |
+| `manual`             | Indicates snapshot is created manually.               |
+| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use.     |
 ## Relationships
 None.
 
