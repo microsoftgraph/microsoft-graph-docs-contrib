@@ -70,7 +70,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.accessPackageCustomWorkflowExtension)"
+  "@odata.type": "Collection(microsoft.graph.customCalloutExtension)"
 }
 -->
 ``` http

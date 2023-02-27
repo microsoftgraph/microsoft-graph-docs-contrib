@@ -83,7 +83,8 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"
 }
 -->
 ``` http
@@ -129,7 +130,7 @@ PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentWorkflowExtension",
   "displayName": "test_action_0127_email",
   "description": "this is for graph testing only"
 }
@@ -141,7 +142,8 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentWorkflowExtension"
 }
 -->
 ``` http
