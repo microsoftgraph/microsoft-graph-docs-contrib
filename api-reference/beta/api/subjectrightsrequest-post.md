@@ -64,8 +64,8 @@ The following table shows the properties that are required when you create the [
 |regulations|String collection|One or more regulations for the request.|
 | siteLocations| [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| The SharePoint and OneDrive site locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `access`, `tagForAction`, `unknownFutureValue`. The `delete` type is currently not supported.|
-|approvers|[identitySet](../resources/identityset.md) collection|Collection of identities that can approve the request.|
-|collaborators|[identitySet](../resources/identityset.md) collection|Collection of identities that can collaborate on the request.|
+|approvers|[user](../resources/user.md) collection|Collection of users that can approve the request.|
+|collaborators|[user](../resources/user.md) collection|Collection of users that can collaborate on the request.|
 
 ## Response
 
@@ -111,10 +111,7 @@ Content-Type: application/json
     },
     "approvers" : [
         {
-            "user": {
-                "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
-                "displayName": "srradmin@contoso.com"
-            }
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167"
         }
     ]
 }
@@ -198,15 +195,13 @@ Content-Type: application/json
         }
     },
     "approvers": [
-        "user": {
-            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
-            "displayName": "srradmin@contoso.com"
+        {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167"
         }
     ],    
     "collaborators": [
-        "user": {
-            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
-            "displayName": "srradmin@contoso.com"
+        {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167"
         }
     ],    
     "lastModifiedBy": {
