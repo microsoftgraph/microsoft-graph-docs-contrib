@@ -1,6 +1,6 @@
 ---
 title: "Update unifiedRoleManagementAlert"
-description: "Update the properties of an unifiedRoleManagementAlert object."
+description: "Dismiss a unifiedRoleManagementAlert object by setting the isActive property to false."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object.
+Dismiss a [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object by setting the isActive property to false.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
