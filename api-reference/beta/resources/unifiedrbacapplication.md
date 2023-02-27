@@ -30,6 +30,7 @@ Represents a role management container for unified role definitions and role ass
 None.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |resourceNamespaces|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Resource that represents a collection of related actions.|
