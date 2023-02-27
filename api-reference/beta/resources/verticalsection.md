@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                               | Return type                                        | Description                                                                                           |
 | :--------------------------------------------------- | :------------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
-| [Create verticalSection](../api/verticalsection-create.md)    | [verticalSection](../resources/verticalsection.md)            | Create a new [verticalSection](../resources/verticalsection.md) object. |
+| [Create verticalSection](../api/sitepage-post-verticalsection.md)    | [verticalSection](../resources/verticalsection.md)            | Create a new [verticalSection](../resources/verticalsection.md) object. |
 | [Delete verticalSection](../api/verticalsection-delete.md)    | [verticalSection](../resources/verticalsection.md)            | Delete a [verticalSection](../resources/verticalsection.md) object. |
 | [Get verticalSection](../api/verticalsection-get.md) | [verticalSection](../resources/verticalsection.md) | Read the properties and relationships of a [verticalSection](../resources/verticalsection.md) object. |
 | [List webParts](../api/webpart-list.md)              | [webPart](../resources/webPart.md) Collection      | Get a list of web parts associated with a [verticalSection](../resources/verticalSection.md) object.  |
