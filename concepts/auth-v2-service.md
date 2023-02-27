@@ -164,11 +164,12 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://login.microsoftonline.com/38d49456-54d4-455d-a8d6-c383c71e0a6d/oauth2/v2.0/token' \
---form 'client_id="ceb96a54-de95-49a0-b38c-c55263fcf421"' \
---form 'scope="https://graph.microsoft.com/.default"' \
---form 'client_secret="qWgdYAmab0YSkuL1qKv5bPX"' \
---form 'grant_type="client_credentials"'
+curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'client_id=535fb089-9ff3-47b6-9bfb-4f1264799865' \
+--data-urlencode 'scope=https://graph.microsoft.com/.default' \
+--data-urlencode 'client_secret=qWgdYAmab0YSkuL1qKv5bPX' \
+--data-urlencode 'grant_type=client_credentials'
 ```
 
 ---
