@@ -17,8 +17,6 @@ List the users that meet the [execution conditions](../resources/identitygoverna
 
 The workflow engine periodically evaluates the users that meet the execution conditions. The results will not be up to date if the execution conditions have been changed recently, relevant attributes on the user have been changed recently or the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) has been reached recently.
 
-Since the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) is a time window that looks back three days, the result of this API call will also return users whose execution day is slightly in the past.
-
 The API is only supported for workflows with [trigger and scope based](../resources/identitygovernance-triggerandscopebasedconditions.md) [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md). Furthermore, results are only returned if the workflows schedule (isSchedulingEnabled) is enabled.
 
 ## Permissions
