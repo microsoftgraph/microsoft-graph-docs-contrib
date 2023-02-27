@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start specific Cloud PC. This is to cover Shift Work CloudPC end user scenarios.
+Start your own Cloud PC. Currently, only Shift Work Cloud PC is supported
 
 ## Permissions
 
