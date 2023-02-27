@@ -77,6 +77,11 @@ The following is an example of a request to retrieve the collection of **authent
 -->
 ``` http
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/authenticationMethodModes
+``` (deprecated)
+
+Use the following instead: 
+``` http
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/authenticationMethodModes
 ```
 
 # [C#](#tab/csharp)
