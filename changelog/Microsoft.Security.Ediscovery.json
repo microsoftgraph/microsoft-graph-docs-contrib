@@ -501,7 +501,7 @@
 			"ApiChange": "Property",
 			"ChangedApiName": "exportFileMetadata",
 			"ChangeType": "Addition",
-			"Description": "Added the `exportFileMetadata` property to the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryExportOperation?view=graph-rest-beta) resource.",
+			"Description": "Added the **exportFileMetadata** property to the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryExportOperation?view=graph-rest-beta) resource.",
 			"Target": "ediscoveryExportOperation"
 		  }
 		],
