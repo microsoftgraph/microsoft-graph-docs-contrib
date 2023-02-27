@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List simulations](../api/simulations-list.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
-|[Get simulations](../api/simulations-list.md)|[simulation](../resources/simulation.md) |Get an attack simulation campaigns for a tenant.|
-|[Create simulations](../api/simulation-create.md)|[simulation](../resources/simulation.md)|Create a new attack simulation campaigns for a tenant.|
+|[List simulations](../api/simulation-list.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
+|[Get simulations](../api/simulation-list.md)|[simulation](../resources/simulation.md) |Get an attack simulation campaigns for a tenant.|
+|[Create simulations](../api/simulation-post.md)|[simulation](../resources/simulation.md)|Create a new attack simulation campaigns for a tenant.|
 |[Update simulations](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update a attack simulation campaigns for a tenant.|
 |[Delete simulations](../api/simulation-delete.md)|[simulation](../resources/simulation.md)|Delete a attack simulation campaigns for a tenant.|
 |[List simulationAutomations](../api/simulationautomation-list.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
