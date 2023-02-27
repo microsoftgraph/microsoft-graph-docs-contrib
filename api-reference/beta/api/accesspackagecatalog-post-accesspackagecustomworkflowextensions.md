@@ -81,7 +81,7 @@ Content-Type: application/json
          "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
          "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
          "resourceGroupName":"test",
-         "logicAppWorkflowName":"elm-extension-email",
+         "logicAppWorkflowName":"elm-extension-email"
       },
       "authenticationConfiguration":{
          "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
@@ -156,12 +156,13 @@ Content-Type: application/json
          "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
          "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
          "resourceGroupName":"test",
-         "logicAppWorkflowName":"elm-extension-email",
+         "logicAppWorkflowName":"elm-extension-email"
       },
       "authenticationConfiguration":{
          "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
       }
    }
+}
 ```
 
 
@@ -198,5 +199,6 @@ Content-Type: application/json
          "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
       }
    }
+}
 ```
 
