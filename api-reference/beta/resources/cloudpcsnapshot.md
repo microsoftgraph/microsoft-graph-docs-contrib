@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 
 Indicates the type of Cloud PC snapshot.
 
-| Member name          | Description                                           |
+| Member               | Description                                           |
 | -------------------- | ----------------------------------------------------- |
 | `automatic`          | Indicates snapshot is created automaticaly.           |
 | `manual`             | Indicates snapshot is created manually.               |
