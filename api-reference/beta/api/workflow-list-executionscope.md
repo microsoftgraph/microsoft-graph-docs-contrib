@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 List the users that meet the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) regardless of whether they have already been processed by the [workflow](../resources/identitygovernance-workflow.md).
 
-The users are periodically evaluated and not determined in real time in the course of the API call, there will be delays until the result is accurate if the execution conditions have been changed recently, relevant attributes on the user have been changed recently or the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) has been reached recently.
+The workflow engine periodically evaluates the users that meet the execution conditions. The results will not be up to date if the execution conditions have been changed recently, relevant attributes on the user have been changed recently or the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) has been reached recently.
 
 Since the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) is a time window that looks back three days, the result of this API call will also return users whose execution day is slightly in the past.
 
