@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
+<!-- markdownlint-disable MD024 MD051 -->
+
 # Use the Microsoft Graph SDKs to batch requests
 
 [Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request. The requests are combined in a single JSON payload, which is sent via POST to the `\$batch` endpoint. Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.
@@ -185,6 +187,66 @@ final EventCollectionResponse events = batchResponseContent.getResponseById(cale
 System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
+### [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    msgraphgocore "github.com/microsoftgraph/msgraph-sdk-go-core"
+    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/models"
+)
+
+// Use the request builder to generate a regular
+// request to /me
+meRequest, _ := client.Me().
+    ToGetRequestInformation(context.Background(), nil)
+
+now := time.Now()
+nowMidnight := time.Date(now.Year(), now.Month(), now.Day(),
+    0, 0, 0, 0, time.Local)
+
+startDateTime := nowMidnight.UTC().Format(time.RFC3339)
+endDateTime := nowMidnight.AddDate(0, 0, 1).UTC().Format(time.RFC3339)
+
+query := me.CalendarViewRequestBuilderGetQueryParameters{
+    StartDateTime: &startDateTime,
+    EndDateTime:   &endDateTime,
+    Select:        []string{"subject", "id"},
+}
+
+// Use the request builder to generate a regular
+// request to /me/calendarview?startDateTime="start"&endDateTime="end"
+eventsRequest, _ := client.Me().
+    CalendarView().
+    ToGetRequestInformation(context.Background(),
+        &me.CalendarViewRequestBuilderGetRequestConfiguration{
+            QueryParameters: &query,
+        })
+
+// Build the batch
+batch := msgraphgocore.NewBatchRequest(client.GetAdapter())
+
+// Using AddBatchRequestStep adds each request as a step
+// with no specified order of execution
+meRequestItem, _ := batch.AddBatchRequestStep(*meRequest)
+eventsRequestItem, _ := batch.AddBatchRequestStep(*eventsRequest)
+
+batchResponse, _ := batch.Send(context.Background(), client.GetAdapter())
+
+// De-serialize response based on known return type
+user, _ := msgraphgocore.GetBatchResponseById[models.Userable](
+    batchResponse, *meRequestItem.GetId(), models.CreateUserFromDiscriminatorValue)
+fmt.Printf("Hello %s\n", *(user.GetDisplayName()))
+
+// For collections, must use the *CollectionResponseable class to deserialize
+events, _ := msgraphgocore.GetBatchResponseById[models.EventCollectionResponseable](
+    batchResponse, *eventsRequestItem.GetId(),
+    models.CreateEventCollectionResponseFromDiscriminatorValue)
+fmt.Printf("You have %d events on your calendar today\n", len(events.GetValue()))
+```
+
 ---
 
 ## Batches with dependent requests
@@ -194,7 +256,6 @@ This example shows how to send multiple requests in a batch that are dependent o
 > [!NOTE]
 > If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.
 
-<!-- markdownlint-disable MD024 -->
 ### [C#](#tab/csharp)
 
 ```csharp
@@ -422,6 +483,94 @@ final EventCollectionResponse events = batchResponseContent.getResponseById(cale
 System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
+### [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    msgraphgocore "github.com/microsoftgraph/msgraph-sdk-go-core"
+    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/models"
+    "github.com/thlib/go-timezone-local/tzlocal"
+)
+
+now := time.Now()
+nowMidnight := time.Date(now.Year(), now.Month(), now.Day(),
+    0, 0, 0, 0, time.Local)
+timeZone, _ := tzlocal.RuntimeTZ()
+
+// 5:00 PM
+startDateTime := nowMidnight.Add(time.Hour * 17)
+// 5:30 PM
+endDateTime := startDateTime.Add(time.Minute * 30)
+graphDateTimeFormat := "2006-01-02T15:04:05"
+
+newEvent := models.NewEvent()
+subject := "File end-of-day report"
+newEvent.SetSubject(&subject)
+
+start := models.NewDateTimeTimeZone()
+startString := startDateTime.Format(graphDateTimeFormat)
+start.SetDateTime(&startString)
+start.SetTimeZone(&timeZone)
+newEvent.SetStart(start)
+
+end := models.NewDateTimeTimeZone()
+endString := endDateTime.Format(graphDateTimeFormat)
+end.SetDateTime(&endString)
+end.SetTimeZone(&timeZone)
+newEvent.SetEnd(end)
+
+addEventRequest, _ := client.Me().
+    Events().
+    ToPostRequestInformation(context.Background(), newEvent, nil)
+
+viewStart := nowMidnight.Format(time.RFC3339)
+viewEnd := nowMidnight.Add(time.Hour * 24).Format(time.RFC3339)
+query := me.CalendarViewRequestBuilderGetQueryParameters{
+    StartDateTime: &viewStart,
+    EndDateTime:   &viewEnd,
+    Select:        []string{"subject", "id"},
+}
+
+// Use the request builder to generate a regular
+// request to /me/calendarview?startDateTime="start"&endDateTime="end"
+eventsRequest, _ := client.Me().
+    CalendarView().
+    ToGetRequestInformation(context.Background(),
+        &me.CalendarViewRequestBuilderGetRequestConfiguration{
+            QueryParameters: &query,
+        })
+
+// Build the batch
+batch := msgraphgocore.NewBatchRequest(client.GetAdapter())
+
+// Force the requests to execute in order, so that the request for
+// today's events will include the new event created.
+
+// First request, no dependency
+addEventRequestItem, _ := batch.AddBatchRequestStep(*addEventRequest)
+
+// Second request, depends on addEventRequestId
+eventsRequestItem, _ := batch.AddBatchRequestStep(*eventsRequest)
+eventsRequestItem.DependsOnItem(addEventRequestItem)
+
+batchResponse, _ := batch.Send(context.Background(), client.GetAdapter())
+
+// De-serialize response based on known return type
+event, _ := msgraphgocore.GetBatchResponseById[models.Eventable](
+    batchResponse, *addEventRequestItem.GetId(),
+    models.CreateEventFromDiscriminatorValue)
+fmt.Printf("New event created with ID: %s\n", *(event.GetId()))
+
+// For collections, must use the *CollectionResponseable class to deserialize
+events, _ := msgraphgocore.GetBatchResponseById[models.EventCollectionResponseable](
+    batchResponse, *eventsRequestItem.GetId(),
+    models.CreateEventCollectionResponseFromDiscriminatorValue)
+fmt.Printf("You have %d events on your calendar today\n", len(events.GetValue()))
+```
+
 ---
 
 ## Implementing batching using BatchRequestContent, BatchRequestStep, and HttpRequestMessage
@@ -440,11 +589,19 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksToBeGenerated)
-        {            
-            List<string> _joinWebUrls = new List<string>();
-            //Total number of items per batch supported is 20
-            int maxNoBatchItems = 20;
-            try
+{
+    List<string> _joinWebUrls = new List<string>();
+    //Total number of items per batch supported is 20
+    int maxNoBatchItems = 20;
+    try
+    {
+        //valid GraphAccessToken is required to execute the call
+        var graphClient = GetAuthenticatedClient(GraphAccessToken);
+        var events = new List<OnlineMeetingCreateOrGetRequestBody>();
+        foreach (var item in meetingLinksToBeGenerated)
+        {
+            var externalId = Guid.NewGuid().ToString();
+            var @event = new OnlineMeetingCreateOrGetRequestBody
             {
                 //valid GraphAccessToken is required to execute the call
                 var graphClient = GetAuthenticatedClient(GraphAccessToken);
@@ -485,10 +642,31 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
                     batches.Add(batchRequestContent);
                 }
 
-                if (batches.Count == 0 && batchRequestContent != null)
-                {
-                    batches.Add(batchRequestContent);
-                }
+            };
+            events.Add(@event);
+        }
+        // if the requests are more than 20 limit, we need to create multiple batches of the BatchRequestContent
+        List<BatchRequestContent> batches = new List<BatchRequestContent>();
+        var batchRequestContent = new BatchRequestContent();
+        foreach (OnlineMeetingCreateOrGetRequestBody e in events)
+        {
+            //create online meeting for particular user or we can use /me as well
+            var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, $"https://graph.microsoft.com/v1.0/users/{userID}/onlineMeetings/createOrGet")
+            {
+                Content = new StringContent(JsonConvert.SerializeObject(e), Encoding.UTF8, "application/json")
+            };
+            BatchRequestStep requestStep = new BatchRequestStep(events.IndexOf(e).ToString(), httpRequestMessage, null);
+            batchRequestContent.AddBatchRequestStep(requestStep);
+            if (events.IndexOf(e) > 0 && ((events.IndexOf(e) + 1) % maxNoBatchItems == 0))
+            {
+                batches.Add(batchRequestContent);
+                batchRequestContent = new BatchRequestContent();
+            }
+        }
+        if (batchRequestContent.BatchRequestSteps.Count < maxNoBatchItems)
+        {
+            batches.Add(batchRequestContent);
+        }
 
                 foreach (BatchRequestContent batch in batches)
                 {
@@ -509,8 +687,12 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
             {
                 Console.WriteLine(ex.Message + ex.StackTrace);               
             }
-        }    
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message + ex.StackTrace);
+    }
+}
 
 ```
----
-<!-- markdownlint-enable MD024 -->
