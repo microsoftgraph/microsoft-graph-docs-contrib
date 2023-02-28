@@ -1,6 +1,6 @@
 ---
 title: "Manage pronouns settings for an organization using the Microsoft Graph API"
-description: "Using the Microsoft Graph API, you can enable, disable, or get settings that manage pronouns in an organization, such as controlling the display within the organization of any pronouns users may have set up for themselves."
+description: "Learn how to use Microsoft Graph APIs to enable, disable, or get settings that manage pronouns in an organization."
 author: "aymen-ms"
 ms.localizationpriority: high
 ms.prod: "people"
@@ -9,19 +9,19 @@ ms.custom: scenarios:getting-started
 
 # Manage pronouns settings for an organization using the Microsoft Graph API (preview)
 
-Using the Microsoft Graph API, you can enable, disable, or get settings that manage pronouns in an organization, such as controlling the display within the organization of any pronouns users may have set up for themselves.
+Using the Microsoft Graph API, you can enable, disable, or get settings that manage pronouns in an organization, such as controlling the display within the organization of any pronouns users might have set up for themselves.
 
 Pronouns, in this context, are words used to replace a person's name in a sentence. Pronouns and their gender-neutral versions exist in many languages. For example, in English, "she", "her, "he", "him", and the gender-neutral "they", and "them" are common pronouns. Correctly using someone’s pronouns shows inclusion and respect. Sharing pronouns helps people avoid guessing or making assumptions based solely on names or initial observations of the person. In a hybrid, multicultural work or school environment, the simple act of using the right pronouns can help build trust and improve communication among one another.
 
 Global administrators can enable or disable pronouns for everyone in the organization, using the Microsoft 365 Admin Center or Microsoft Graph API as described below. By default, pronouns are disabled.
 
 Enabling pronouns in an organization facilitates associating users with their preferred pronouns within the organization. This includes the following end user experiences:
-- Once pronouns are enabled, a user can optionally add and manage pronouns in the profile card in Outlook on the web and Teams. 
+- When pronouns are enabled, a user can optionally add and manage pronouns in the profile card in Outlook on the web and Teams. 
 - Pronouns appear by the user's name on the profile card in Outlook and Teams. 
 - Pronouns are displayed only internally within the organization. 
 - Anyone that has an account in the organization, including guest accounts, can see pronouns on profile cards. 
 
-The end user experience with pronouns may evolve over time. For current information about the end user experience with pronouns, see [Pronouns in Microsoft 365](https://support.microsoft.com/en-us/topic/232c3bfb-a947-4310-86db-b22d63663d85).
+The end user experience with pronouns might evolve over time. For current information about the end user experience with pronouns, see [Pronouns in Microsoft 365](https://support.microsoft.com/en-us/topic/232c3bfb-a947-4310-86db-b22d63663d85).
 
 ## Confirm your current settings
 
@@ -46,7 +46,7 @@ Content-Type: application/json
  
 ## Scenarios
 
-A prominent scenario that global administrators can enable is the display of any pronouns that users have set up in their profile cards.
+A common scenario that global administrators can enable is the display of any pronouns that users have set up in their profile cards.
 
 |Scenario | isEnabledInOrganization|
 |:---|:---|
