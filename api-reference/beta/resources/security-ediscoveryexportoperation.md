@@ -39,6 +39,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |percentProgress|Int32| The progress of the operation.|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+exportFileMetaData | [ExportFileMetaData](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for the metadata including the fileName, size and downloadUrl for the export|
 
 
 ### exportOptions values
@@ -65,13 +66,6 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |reviewSet|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|	Review set from where documents are exported.|
 |reviewSetQuery|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|The review set query which is used to filter the documents for export.|
 
-### exportFileMetadata values
-
-|Member| Description |
-|:---|:---|
-|fileName| Name of the file. |
-|size| Size of the file. |
-|downloadUrl| URL to download the export. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -107,7 +101,7 @@ The following is a JSON representation of the resource.
   "exportOptions": "String",
   "exportStructure": "String",
   "exportFileMetadata":{
-    "@odata.type":"microsoft.graph.exportFileMetadata"
+    "@odata.type":"microsoft.graph.security.ediscoveryExportFileMetadata"
   }
 }
 ```
