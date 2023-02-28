@@ -25,7 +25,7 @@ $requestBody->setLastMessageReadDateTime(new DateTime('2021-05-27T22:13:01.577Z'
 
 
 
-$graphServiceClient->chatsById('chat-id')->markChatUnreadForUser()->post($requestBody);
+$graphServiceClient->chatsById('chat-id')->microsoftGraphMarkChatUnreadForUser()->post($requestBody);
 
 
 ```

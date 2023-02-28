@@ -122,7 +122,6 @@ Content-type: application/json
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 
 #### Response
@@ -198,7 +197,6 @@ Prefer: return=representation
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

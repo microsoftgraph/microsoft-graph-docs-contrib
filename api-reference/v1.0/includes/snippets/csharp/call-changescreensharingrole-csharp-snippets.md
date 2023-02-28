@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var role = ScreenSharingRole.Viewer;
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphChangeScreenSharingRole.ChangeScreenSharingRolePostRequestBody
+{
+	Role = ScreenSharingRole.Viewer,
+};
+await graphClient.Communications.Calls["call-id"].MicrosoftGraphChangeScreenSharingRole.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.ChangeScreenSharingRole(role)
-	.Request()
-	.PostAsync();
 
 ```

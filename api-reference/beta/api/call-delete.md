@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 
 ---
 
-
 ### Response
 
 > **Note:** The response object shown here might be shortened for readability.

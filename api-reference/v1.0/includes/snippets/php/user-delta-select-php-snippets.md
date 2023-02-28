@@ -17,7 +17,7 @@ $queryParameters->select = ["displayName","jobTitle","mobilePhone"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->users()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->users()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 ---
 
 
-
 #### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -180,7 +179,6 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

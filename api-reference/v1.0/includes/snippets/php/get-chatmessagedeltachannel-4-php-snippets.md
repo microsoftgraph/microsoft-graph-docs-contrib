@@ -17,7 +17,7 @@ $queryParameters->deltatoken = "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5y
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

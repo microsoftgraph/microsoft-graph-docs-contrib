@@ -17,7 +17,7 @@ configuration := &graphconfig.EducationClasseItemAssignmentsMicrosoft.graph.delt
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().Delta().Get(context.Background(), configuration)
+result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().MicrosoftGraphDelta().Get(context.Background(), configuration)
 
 
 ```

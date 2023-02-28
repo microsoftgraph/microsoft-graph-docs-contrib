@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ---
 
 
-
 ### Response
 
 <!-- {

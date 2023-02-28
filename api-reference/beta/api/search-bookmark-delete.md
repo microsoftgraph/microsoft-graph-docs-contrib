@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/search/bookmarks/{bookmarkId}
 ---
 
 
-
 ### Response
 <!-- {
   "blockType": "response",

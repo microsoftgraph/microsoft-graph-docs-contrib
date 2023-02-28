@@ -17,7 +17,7 @@ $queryParameters->skiptoken = "pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->groups()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groups()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

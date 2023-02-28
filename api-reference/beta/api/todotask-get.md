@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a3
 ---
 
 
-
 ### Response
 
 The following is an example of the response.

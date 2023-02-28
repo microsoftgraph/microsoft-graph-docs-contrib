@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates/com.microsoft.teams.
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

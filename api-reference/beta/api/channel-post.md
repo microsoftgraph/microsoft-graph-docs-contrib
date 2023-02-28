@@ -276,7 +276,6 @@ Content-Type: application/json
 ---
 
 
-
 #### Response
 
 The following is an example of the response. The `Content-Location` header in the response specifies the path to the channel that is being provisioned.
@@ -447,7 +446,6 @@ Content-type: application/json
 ---
 
 
-
 #### Response
 
 The following is an example of the response.
@@ -535,7 +533,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

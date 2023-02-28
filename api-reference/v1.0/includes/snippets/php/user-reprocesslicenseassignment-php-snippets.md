@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->reprocessLicenseAssignment()->post();
+$requestResult = $graphServiceClient->usersById('user-id')->microsoftGraphReprocessLicenseAssignment()->post();
 
 
 ```

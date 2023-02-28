@@ -22,7 +22,7 @@ $requestBody->setRemoveExclusions(['String', ]);
 
 
 
-$graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->audience()->updateAudienceById()->post($requestBody);
+$graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->audience()->windowsUpdatesUpdateAudienceById()->post($requestBody);
 
 
 ```

@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 user.SetAdditionalData(additionalData)
 requestBody.SetUser(user)
 
-graphClient.ChatsById("chat-id").MarkChatReadForUser().Post(context.Background(), requestBody, nil)
+graphClient.ChatsById("chat-id").MicrosoftGraphMarkChatReadForUser().Post(context.Background(), requestBody, nil)
 
 
 ```

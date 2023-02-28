@@ -18,7 +18,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->contactFolders()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->contactFolders()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenan
 ---
 
 
-
 ### Response
 The following is an example of the response.
 <!-- {

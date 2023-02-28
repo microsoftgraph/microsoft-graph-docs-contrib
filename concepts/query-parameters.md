@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 
 ---
 
-
 The properly percent-encoded URL looks like this:
 
 
@@ -139,7 +138,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 ---
 
-
 The double-encoded URL looks like this:
 
 
@@ -177,7 +175,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Escaping single quotes
 
@@ -218,7 +215,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## count parameter
 
@@ -270,7 +266,6 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 ---
 
-
 The `$count` query parameter is supported for collections of the following frequently used resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only in [advanced queries](/graph/aad-advanced-queries):
 - [administrativeUnit](/graph/api/resources/administrativeunit)
 - [application](/graph/api/resources/application)
@@ -299,7 +294,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/query-parameters-expand-example-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -325,7 +320,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ---
 
 
-
 With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
 
 
@@ -339,7 +333,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/query-parameters-expand+nestedselect-example-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -363,7 +357,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 > [!NOTE]
 > + Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
@@ -418,7 +411,6 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 ---
 
-
 > [!NOTE]
 > The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
 
@@ -464,7 +456,6 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 
 ---
 
-
 You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
 
@@ -502,7 +493,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space; for example, `?$orderby=name%20desc`. If the sort order is not specified, the default (ascending order) is inferred.
 
@@ -543,7 +533,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 > [!NOTE]
 > When you specify `$filter` the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
@@ -586,7 +575,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 > [!NOTE] 
@@ -638,7 +626,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 ---
 
-
 > [!IMPORTANT]
 > In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 >
@@ -684,7 +671,6 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
 
@@ -745,7 +731,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 > [!NOTE]
 > The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.

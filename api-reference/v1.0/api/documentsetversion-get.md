@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents/items/2/document
 
 
 
-
 ### Response
 
 The following is an example of the response.

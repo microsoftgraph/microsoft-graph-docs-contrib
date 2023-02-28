@@ -14,17 +14,17 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestFilter := "startswith(displayName,%20'a')"
 
-requestParameters := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.userRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.GroupItemTransitiveMemberItemRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.userRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.GroupItemTransitiveMemberItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").TransitiveMembers().User().Get(context.Background(), configuration)
+result, err := graphClient.GroupsById("group-id").TransitiveMembersById("directoryObject-id").Get(context.Background(), configuration)
 
 
 ```

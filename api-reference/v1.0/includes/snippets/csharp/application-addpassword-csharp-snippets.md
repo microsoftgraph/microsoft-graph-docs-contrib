@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var passwordCredential = new PasswordCredential
+var requestBody = new Microsoft.Graph.Applications.Item.MicrosoftGraphAddPassword.AddPasswordPostRequestBody
 {
-	DisplayName = "Password friendly name"
+	PasswordCredential = new PasswordCredential
+	{
+		DisplayName = "Password friendly name",
+	},
 };
+var result = await graphClient.Applications["application-id"].MicrosoftGraphAddPassword.PostAsync(requestBody);
 
-await graphClient.Applications["{application-id}"]
-	.AddPassword(passwordCredential)
-	.Request()
-	.PostAsync();
 
 ```

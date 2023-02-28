@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionI
 ---
 
 
-
 ### Response
 Here is an example of the response. 
 <!-- {

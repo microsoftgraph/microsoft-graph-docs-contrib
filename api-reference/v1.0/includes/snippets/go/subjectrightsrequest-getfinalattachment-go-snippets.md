@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").GetFinalAttachment().Get(context.Background(), nil)
+graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").MicrosoftGraphGetFinalAttachment().Get(context.Background(), nil)
 
 
 ```

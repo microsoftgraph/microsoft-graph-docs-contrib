@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/operations/3
 ---
 
 
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 <!-- markdownlint-enable MD024 -->

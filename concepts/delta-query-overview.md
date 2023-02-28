@@ -107,7 +107,6 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 ---
 
-
 ## Resource representation in the delta query response
 
 - Newly created instances of a supported resource are represented in the delta query response using their standard representation.

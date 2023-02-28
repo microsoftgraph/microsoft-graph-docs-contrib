@@ -24,7 +24,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->devicesById('device-id')->memberOf()->group()->get($requestConfiguration);
+$requestResult = $graphServiceClient->devicesById('device-id')->memberOf()->microsoftGraphGroup()->get($requestConfiguration);
 
 
 ```

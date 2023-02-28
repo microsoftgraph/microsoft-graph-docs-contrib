@@ -15,7 +15,7 @@ UpdatableAssetCollectionResponse updatableAssetCollectionResponse = new Updatabl
 updatableAssetCollectionResponse.value = assetsList;
 UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
 
-graphClient.admin().windows().updates().updatableAssets("{updatableAssetGroupId}")
+graphClient.admin().windows().updates().updatableAssets("5c55730b-730b-5c55-0b73-555c0b73555c")
 	.removeMembers(UpdatableAssetRemoveMembersParameterSet
 		.newBuilder()
 		.withAssets(assetsList)

@@ -36,7 +36,7 @@ requestBody.SetMessage(message)
 comment := "Samantha, Randi, would you name the group please?"
 requestBody.SetComment(&comment) 
 
-graphClient.Me().MessagesById("message-id").Reply().Post(context.Background(), requestBody, nil)
+graphClient.Me().MessagesById("message-id").MicrosoftGraphReply().Post(context.Background(), requestBody, nil)
 
 
 ```

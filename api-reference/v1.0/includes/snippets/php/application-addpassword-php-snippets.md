@@ -17,7 +17,7 @@ $passwordCredential->setDisplayName('Password friendly name');
 $requestBody->setPasswordCredential($passwordCredential);
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->addPassword()->post($requestBody);
+$requestResult = $graphServiceClient->applicationsById('application-id')->microsoftGraphAddPassword()->post($requestBody);
 
 
 ```

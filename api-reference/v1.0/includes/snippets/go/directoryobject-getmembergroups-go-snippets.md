@@ -11,7 +11,7 @@ requestBody := graphmodels.NewGetMemberGroupsPostRequestBody()
 securityEnabledOnly := false
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
 
-result, err := graphClient.DirectoryObjectsById("directoryObject-id").GetMemberGroups().Post(context.Background(), requestBody, nil)
+result, err := graphClient.DirectoryObjectsById("directoryObject-id").MicrosoftGraphGetMemberGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

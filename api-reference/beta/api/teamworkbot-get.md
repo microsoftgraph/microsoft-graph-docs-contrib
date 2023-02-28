@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 ---
 
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

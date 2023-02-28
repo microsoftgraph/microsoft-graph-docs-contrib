@@ -123,7 +123,6 @@ Accept-Language: 0
 ---
 
 
-
 #### Response
 The following is an example of the response.
 
@@ -160,7 +159,7 @@ Content-Type: image/jpeg
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandinglocaliation-2-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

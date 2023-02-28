@@ -17,7 +17,7 @@ $queryParameters->deltatoken = "oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmv
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->users()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->users()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

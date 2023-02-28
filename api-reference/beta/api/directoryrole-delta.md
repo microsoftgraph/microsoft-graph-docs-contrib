@@ -121,7 +121,6 @@ GET https://graph.microsoft.com/beta/directoryRoles/delta
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- { 

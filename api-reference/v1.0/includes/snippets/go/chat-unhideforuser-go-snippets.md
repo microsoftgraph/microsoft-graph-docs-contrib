@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 user.SetAdditionalData(additionalData)
 requestBody.SetUser(user)
 
-graphClient.ChatsById("chat-id").UnhideForUser().Post(context.Background(), requestBody, nil)
+graphClient.ChatsById("chat-id").MicrosoftGraphUnhideForUser().Post(context.Background(), requestBody, nil)
 
 
 ```

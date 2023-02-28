@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var destinationId = "destinationId-value";
+var requestBody = new Microsoft.Graph.Me.MailFolders.Item.MicrosoftGraphCopy.CopyPostRequestBody
+{
+	DestinationId = "destinationId-value",
+};
+var result = await graphClient.Me.MailFolders["mailFolder-id"].MicrosoftGraphCopy.PostAsync(requestBody);
 
-await graphClient.Me.MailFolders["{mailFolder-id}"]
-	.Copy(destinationId)
-	.Request()
-	.PostAsync();
 
 ```

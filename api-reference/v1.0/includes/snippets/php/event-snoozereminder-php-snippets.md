@@ -19,7 +19,7 @@ $newReminderTime->setTimeZone('timeZone-value');
 $requestBody->setNewReminderTime($newReminderTime);
 
 
-$graphServiceClient->me()->eventsById('event-id')->snoozeReminder()->post($requestBody);
+$graphServiceClient->me()->eventsById('event-id')->microsoftGraphSnoozeReminder()->post($requestBody);
 
 
 ```

@@ -80,7 +80,6 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRight
 ---
 
 
-
 ### Response
 
 <!-- {

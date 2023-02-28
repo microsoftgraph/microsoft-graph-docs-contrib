@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/docum
 ---
 
 
-
 ### Response
 
 The following is an example of the response.

@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADIyAAAhrbPXAAA=
 ---
 
 
-
 ### Response
 Here is an example of the response.
 <!-- {

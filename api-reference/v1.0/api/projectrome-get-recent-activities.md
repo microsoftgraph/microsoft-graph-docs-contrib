@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

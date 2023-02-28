@@ -15,7 +15,7 @@ body.SetContent(&content)
 post.SetBody(body)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Reply().Post(context.Background(), requestBody, nil)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").MicrosoftGraphReply().Post(context.Background(), requestBody, nil)
 
 
 ```

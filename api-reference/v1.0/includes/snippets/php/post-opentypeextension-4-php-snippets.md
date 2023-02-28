@@ -39,7 +39,7 @@ $post->setExtensions($extensionsArray);
 $requestBody->setPost($post);
 
 
-$graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->reply()->post($requestBody);
+$graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->microsoftGraphReply()->post($requestBody);
 
 
 ```

@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 
 ---
 
-
 ### Response
 
 The following is an example of the response

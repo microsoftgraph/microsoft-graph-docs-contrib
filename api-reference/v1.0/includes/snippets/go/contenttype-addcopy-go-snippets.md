@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAddCopyPostRequestBody()
 contentType := "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 requestBody.SetContentType(&contentType) 
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ContentTypes().AddCopy().Post(context.Background(), requestBody, nil)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ContentTypes().MicrosoftGraphAddCopy().Post(context.Background(), requestBody, nil)
 
 
 ```

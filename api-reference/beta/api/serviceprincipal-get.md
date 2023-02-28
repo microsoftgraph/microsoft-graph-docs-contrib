@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 
 ---
 
-
 #### Response
 Here is an example of the response.
 
@@ -309,7 +308,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecuri
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

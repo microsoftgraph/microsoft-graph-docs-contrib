@@ -15,7 +15,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Custodians().ApplyHold().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Custodians().MicrosoftGraphSecurityApplyHold().Post(context.Background(), requestBody, nil)
 
 
 ```

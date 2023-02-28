@@ -27,7 +27,7 @@ $requestBody->setToRecipients($toRecipientsArray);
 
 
 
-$graphServiceClient->me()->messagesById('message-id')->forward()->post($requestBody);
+$graphServiceClient->me()->messagesById('message-id')->microsoftGraphForward()->post($requestBody);
 
 
 ```

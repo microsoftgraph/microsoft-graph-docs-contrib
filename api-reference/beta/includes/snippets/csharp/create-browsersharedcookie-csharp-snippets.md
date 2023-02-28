@@ -4,20 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var browserSharedCookie = new BrowserSharedCookie
+var requestBody = new BrowserSharedCookie
 {
+	OdataType = "#microsoft.graph.browserSharedCookie",
 	HostOrDomain = "www.microsoft.com",
 	SourceEnvironment = BrowserSharedCookieSourceEnvironment.InternetExplorer11,
 	DisplayName = "Microsoft Cookie",
 	HostOnly = true,
 	Comment = "A cookie for microsoft.com",
-	Path = "/"
+	Path = "/",
 };
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].SharedCookies.PostAsync(requestBody);
 
-await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].SharedCookies
-	.Request()
-	.AddAsync(browserSharedCookie);
 
 ```

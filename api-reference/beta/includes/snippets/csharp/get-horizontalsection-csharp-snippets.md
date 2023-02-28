@@ -4,15 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Sites["site-id"].Pages["sitePage-id"].CanvasLayout.HorizontalSections["horizontalSection-id"].GetAsync((requestConfiguration) =>
 {
-	new QueryOption("select", "id,expand=columns")
-};
+	requestConfiguration.QueryParameters.Select = new string []{ "id","expand=columns" };
+});
 
-var horizontalSection = await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"].CanvasLayout.HorizontalSections["{horizontalSection-id}"]
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

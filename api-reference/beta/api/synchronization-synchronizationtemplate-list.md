@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 ---
 
-
 ##### Response
 The following is an example of a response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.

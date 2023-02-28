@@ -110,7 +110,6 @@ Content-length: 33
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -188,7 +187,6 @@ Content-length: 33
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

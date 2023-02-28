@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/security/labels/retentionLabels
 ---
 
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

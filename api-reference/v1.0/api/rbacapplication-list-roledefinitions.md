@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 ---
 
 
-
 #### Response
 
 The following is an example of the response.
@@ -255,7 +254,6 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

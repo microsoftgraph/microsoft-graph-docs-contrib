@@ -18,7 +18,7 @@ $requestBody->setEndDateTime(new DateTime('2018-10-15T00:00:00.000Z'));
 
 
 
-$graphServiceClient->teamsById('team-id')->schedule()->share()->post($requestBody);
+$graphServiceClient->teamsById('team-id')->schedule()->microsoftGraphShare()->post($requestBody);
 
 
 ```

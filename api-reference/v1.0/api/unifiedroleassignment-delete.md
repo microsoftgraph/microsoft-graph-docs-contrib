@@ -110,7 +110,6 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 ---
 
 
-
 ### Response
 
 The following is an example of the response.

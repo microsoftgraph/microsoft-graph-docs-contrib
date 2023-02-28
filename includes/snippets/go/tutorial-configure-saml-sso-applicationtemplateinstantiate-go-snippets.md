@@ -11,7 +11,7 @@ requestBody := graphmodels.NewInstantiatePostRequestBody()
 displayName := "AWS Contoso"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.ApplicationTemplatesById("applicationTemplate-id").Instantiate().Post(context.Background(), requestBody, nil)
+result, err := graphClient.ApplicationTemplatesById("applicationTemplate-id").MicrosoftGraphInstantiate().Post(context.Background(), requestBody, nil)
 
 
 ```

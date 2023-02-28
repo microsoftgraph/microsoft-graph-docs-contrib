@@ -84,7 +84,7 @@ requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons)
 minimumAttendeePercentage := "100"
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
-result, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Me().MicrosoftGraphFindMeetingTimes().Post(context.Background(), requestBody, configuration)
 
 
 ```

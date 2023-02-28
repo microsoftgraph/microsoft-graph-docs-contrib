@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").Publish().Post(context.Background(), nil)
+graphClient.SitesById("site-id").ContentTypesById("contentType-id").MicrosoftGraphPublish().Post(context.Background(), nil)
 
 
 ```

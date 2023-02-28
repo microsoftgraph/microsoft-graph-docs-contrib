@@ -37,7 +37,7 @@ $requestBody->setPrompts($promptsArray);
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->playPrompt()->post($requestBody);
+$requestResult = $graphServiceClient->communications()->callsById('call-id')->microsoftGraphPlayPrompt()->post($requestBody);
 
 
 ```

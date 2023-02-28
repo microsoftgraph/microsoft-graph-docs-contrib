@@ -17,7 +17,7 @@ configuration := &graphconfig.TeamItemChannelItemMessagesMicrosoft.graph.delta()
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Delta().Get(context.Background(), configuration)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().MicrosoftGraphDelta().Get(context.Background(), configuration)
 
 
 ```

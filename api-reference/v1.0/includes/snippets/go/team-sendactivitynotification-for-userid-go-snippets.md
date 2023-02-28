@@ -36,7 +36,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.UsersById("user-id").Teamwork().SendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.UsersById("user-id").Teamwork().MicrosoftGraphSendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

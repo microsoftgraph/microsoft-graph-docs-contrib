@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/search/qnas/{qnaId}
 ---
 
 
-
 ### Response
 <!-- {
   "blockType": "response",

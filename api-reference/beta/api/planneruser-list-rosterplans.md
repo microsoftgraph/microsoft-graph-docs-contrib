@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/users/{usersId}/planner/rosterPlans
 ---
 
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->privilegedApproval()->myRequests()->get();
+$requestResult = $graphServiceClient->privilegedApprovalById('privilegedApproval-id')->get();
 
 
 ```

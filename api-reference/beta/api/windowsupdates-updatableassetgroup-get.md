@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c557
 ---
 
 
-
 ### Response
 
 <!-- {

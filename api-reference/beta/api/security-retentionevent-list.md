@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/security/triggers/retentionEvents
 ---
 
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

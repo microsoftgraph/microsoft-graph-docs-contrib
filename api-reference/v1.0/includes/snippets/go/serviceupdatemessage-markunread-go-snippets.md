@@ -15,7 +15,7 @@ messageIds := []string {
 }
 requestBody.SetMessageIds(messageIds)
 
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkUnread().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().MicrosoftGraphMarkUnread().Post(context.Background(), requestBody, nil)
 
 
 ```

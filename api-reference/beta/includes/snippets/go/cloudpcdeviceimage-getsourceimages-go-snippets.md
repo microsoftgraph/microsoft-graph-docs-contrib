@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().GetSourceImages().Get(context.Background(), nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImagesById("cloudPcDeviceImage-id").Get(context.Background(), nil)
 
 
 ```

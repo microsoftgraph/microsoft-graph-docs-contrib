@@ -40,7 +40,7 @@ $recipient->setAdditionalData($additionalData);
 $requestBody->setRecipient($recipient);
 
 
-$graphServiceClient->teamsById('team-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->teamsById('team-id')->microsoftGraphSendActivityNotification()->post($requestBody);
 
 
 ```

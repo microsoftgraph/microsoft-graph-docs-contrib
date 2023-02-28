@@ -63,10 +63,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationRepeatOffenders
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/securityreportsrootthisgetattacksimulationrepeatoffenders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securityreportsrootthisgetattacksimulationrepeatoffenders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,20 +71,7 @@ GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationRepeatO
 [!INCLUDE [sample-code](../includes/snippets/java/securityreportsrootthisgetattacksimulationrepeatoffenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/securityreportsrootthisgetattacksimulationrepeatoffenders-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/securityreportsrootthisgetattacksimulationrepeatoffenders-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/securityreportsrootthisgetattacksimulationrepeatoffenders-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 
 ### Response

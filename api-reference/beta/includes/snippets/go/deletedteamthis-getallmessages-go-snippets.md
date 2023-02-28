@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Teamwork().DeletedTeamsById("deletedTeam-id").Channels().GetAllMessages().Get(context.Background(), nil)
+result, err := graphClient.Teamwork().DeletedTeamsById("deletedTeam-id").ChannelsById("channel-id").Get(context.Background(), nil)
 
 
 ```

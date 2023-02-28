@@ -13,7 +13,7 @@ requestBody.SetCurrentPassword(&currentPassword)
 newPassword := "0eM85N54wFxWwvJ]"
 requestBody.SetNewPassword(&newPassword) 
 
-graphClient.Me().ChangePassword().Post(context.Background(), requestBody, nil)
+graphClient.Me().MicrosoftGraphChangePassword().Post(context.Background(), requestBody, nil)
 
 
 ```

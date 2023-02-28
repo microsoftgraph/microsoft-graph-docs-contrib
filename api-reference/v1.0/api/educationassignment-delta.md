@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 ---
 
 
-
 #### Response
 
 The following is an example of the response. 

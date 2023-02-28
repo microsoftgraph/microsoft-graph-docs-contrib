@@ -38,7 +38,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->calendar()->getSchedule()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->me()->calendar()->microsoftGraphGetSchedule()->post($requestBody, $requestConfiguration);
 
 
 ```

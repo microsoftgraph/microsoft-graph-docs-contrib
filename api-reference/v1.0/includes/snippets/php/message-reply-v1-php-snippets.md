@@ -40,7 +40,7 @@ $requestBody->setComment('Samantha, Randi, would you name the group please?');
 
 
 
-$graphServiceClient->me()->messagesById('message-id')->reply()->post($requestBody);
+$graphServiceClient->me()->messagesById('message-id')->microsoftGraphReply()->post($requestBody);
 
 
 ```

@@ -134,7 +134,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -214,7 +213,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -293,7 +291,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response
@@ -376,7 +373,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -449,7 +445,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-5-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -457,7 +453,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -25,7 +25,7 @@ configuration := &graphconfig.GroupItemMembersMicrosoft.graph.userRequestBuilder
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").Members().User().Get(context.Background(), configuration)
+result, err := graphClient.GroupsById("group-id").Members().MicrosoftGraphUser().Get(context.Background(), configuration)
 
 
 ```

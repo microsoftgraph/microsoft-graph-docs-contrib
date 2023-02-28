@@ -24,7 +24,7 @@ configuration := &graphconfig.DeviceItemTransitiveMemberOfMicrosoft.graph.groupR
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group().Get(context.Background(), configuration)
+result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().MicrosoftGraphGroup().Get(context.Background(), configuration)
 
 
 ```

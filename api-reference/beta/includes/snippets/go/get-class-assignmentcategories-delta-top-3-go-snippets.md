@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(3)
 
-requestParameters := &graphconfig.EducationClasseItemAssignmentCategoriesMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.EducationClasseItemAssignmentCategorieItemRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.EducationClasseItemAssignmentCategoriesMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.EducationClasseItemAssignmentCategorieItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentCategories().Delta().Get(context.Background(), configuration)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentCategoriesById("educationCategory-id").Get(context.Background(), configuration)
 
 
 ```

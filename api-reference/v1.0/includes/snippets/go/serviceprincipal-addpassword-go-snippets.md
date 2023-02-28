@@ -13,7 +13,7 @@ displayName := "Password friendly name"
 passwordCredential.SetDisplayName(&displayName) 
 requestBody.SetPasswordCredential(passwordCredential)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").AddPassword().Post(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").MicrosoftGraphAddPassword().Post(context.Background(), requestBody, nil)
 
 
 ```

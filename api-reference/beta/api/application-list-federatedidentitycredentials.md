@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3834
 ---
 
 
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

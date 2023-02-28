@@ -160,7 +160,7 @@ mediaQualityList := []graphmodels.TeleconferenceDeviceMediaQualityable {
 quality.SetMediaQualityList(mediaQualityList)
 requestBody.SetQuality(quality)
 
-graphClient.Communications().Calls().LogTeleconferenceDeviceQuality().Post(context.Background(), requestBody, nil)
+graphClient.Communications().Calls().MicrosoftGraphLogTeleconferenceDeviceQuality().Post(context.Background(), requestBody, nil)
 
 
 ```

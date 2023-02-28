@@ -24,7 +24,7 @@ configuration := &graphconfig.DeviceItemMemberOfMicrosoft.graph.groupRequestBuil
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").MemberOf().Group().Get(context.Background(), configuration)
+result, err := graphClient.DevicesById("device-id").MemberOf().MicrosoftGraphGroup().Get(context.Background(), configuration)
 
 
 ```

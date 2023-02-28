@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationMethodConfiguration = new VoiceAuthenticationMethodConfiguration
+var requestBody = new AuthenticationMethodConfiguration
 {
-	IsOfficePhoneAllowed = false
+	OdataType = "#microsoft.graph.voiceAuthenticationMethodConfiguration",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"isOfficePhoneAllowed" , "false"
+		},
+	},
 };
+var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["authenticationMethodConfiguration-id"].PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
-	.Request()
-	.UpdateAsync(authenticationMethodConfiguration);
 
 ```

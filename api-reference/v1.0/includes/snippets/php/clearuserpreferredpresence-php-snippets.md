@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new ClearUserPreferredPresencePostRequestBody();
 
 
-$graphServiceClient->usersById('user-id')->presence()->clearUserPreferredPresence()->post($requestBody);
+$graphServiceClient->usersById('user-id')->presence()->microsoftGraphClearUserPreferredPresence()->post($requestBody);
 
 
 ```

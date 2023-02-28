@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

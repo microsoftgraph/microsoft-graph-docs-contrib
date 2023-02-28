@@ -114,7 +114,6 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

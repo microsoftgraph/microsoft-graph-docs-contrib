@@ -23,7 +23,7 @@ $user->setAdditionalData($additionalData);
 $requestBody->setUser($user);
 
 
-$graphServiceClient->chatsById('chat-id')->markChatReadForUser()->post($requestBody);
+$graphServiceClient->chatsById('chat-id')->microsoftGraphMarkChatReadForUser()->post($requestBody);
 
 
 ```

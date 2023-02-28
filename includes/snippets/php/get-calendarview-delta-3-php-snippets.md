@@ -22,7 +22,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->calendarView()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->calendarView()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

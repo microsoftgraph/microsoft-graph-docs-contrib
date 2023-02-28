@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new SetUpFeedbackResourcesFolderPostRequestBody();
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->setUpFeedbackResourcesFolder()->post($requestBody);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->microsoftGraphSetUpFeedbackResourcesFolder()->post($requestBody);
 
 
 ```

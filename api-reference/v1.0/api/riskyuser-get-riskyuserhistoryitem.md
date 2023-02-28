@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/41a31b00-3b3b
 ---
 
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

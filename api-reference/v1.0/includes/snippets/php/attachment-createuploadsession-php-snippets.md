@@ -21,7 +21,7 @@ $attachmentItem->setSize(3483322);
 $requestBody->setAttachmentItem($attachmentItem);
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->attachments()->createUploadSession()->post($requestBody);
+$requestResult = $graphServiceClient->me()->messagesById('message-id')->attachments()->microsoftGraphCreateUploadSession()->post($requestBody);
 
 
 ```

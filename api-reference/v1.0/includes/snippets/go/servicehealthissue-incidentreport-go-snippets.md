@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Admin().ServiceAnnouncement().IssuesById("serviceHealthIssue-id").IncidentReport().Get(context.Background(), nil)
+graphClient.Admin().ServiceAnnouncement().IssuesById("serviceHealthIssue-id").MicrosoftGraphIncidentReport().Get(context.Background(), nil)
 
 
 ```

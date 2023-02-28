@@ -14,7 +14,7 @@ $requestBody->setComment('comment-value');
 
 
 
-$graphServiceClient->me()->messagesById('message-id')->replyAll()->post($requestBody);
+$graphServiceClient->me()->messagesById('message-id')->microsoftGraphReplyAll()->post($requestBody);
 
 
 ```

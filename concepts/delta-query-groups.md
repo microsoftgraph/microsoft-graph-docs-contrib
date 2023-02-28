@@ -83,7 +83,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 ---
 
-
 ### Initial response
 
 If successful, this method returns `200 OK` response code and [group](/graph/api/resources/group) collection object in the response body. If the entire set of groups is too large to fit in one response, a `@odata.nextLink` containing a state token will also be included.
@@ -169,7 +168,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### nextLink response
 
@@ -258,7 +256,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVA
 
 ---
 
-
 ### Final nextLink response
 
 When a `@odata.deltaLink` URL is returned, there's no more data about the existing state of group objects.  For future requests, the application uses the `@odata.deltaLink` URL to learn about other changes to groups. Save the `deltaToken` and use it in the subsequent request URL to discover more changes to groups.
@@ -333,7 +330,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### deltaLink response
 
@@ -451,7 +447,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 1. Microsoft Graph may return a response that contains just one group object, with a large list of members in the `members@delta` property:
 

@@ -88,12 +88,12 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=source eq 'Tenant'
 ```
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-payload-go-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-payload-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-payload-powershell-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-payload-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

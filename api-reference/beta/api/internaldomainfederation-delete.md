@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com/federationConfigurat
 ---
 
 
-
 ### Response
 <!-- {
   "blockType": "response",

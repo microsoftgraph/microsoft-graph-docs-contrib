@@ -13,7 +13,7 @@ requestBody.SetComment(&comment)
 sendResponse := true
 requestBody.SetSendResponse(&sendResponse) 
 
-graphClient.Me().EventsById("event-id").Accept().Post(context.Background(), requestBody, nil)
+graphClient.Me().EventsById("event-id").MicrosoftGraphAccept().Post(context.Background(), requestBody, nil)
 
 
 ```

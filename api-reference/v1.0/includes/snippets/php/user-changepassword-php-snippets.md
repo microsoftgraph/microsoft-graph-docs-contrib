@@ -16,7 +16,7 @@ $requestBody->setNewPassword('0eM85N54wFxWwvJ]');
 
 
 
-$graphServiceClient->me()->changePassword()->post($requestBody);
+$graphServiceClient->me()->microsoftGraphChangePassword()->post($requestBody);
 
 
 ```

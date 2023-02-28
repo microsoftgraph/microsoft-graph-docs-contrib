@@ -82,7 +82,6 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,s
 
 ---
 
-
 ### Initial response
 
 If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user) collection object in the response body. Assuming the entire set of users is too large, the response will also include a `@odata.nextLink` state token in an `@odata.nextLink` parameter.
@@ -168,7 +167,6 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ---
 
-
 ### nextLink response
 
 The response contains another `@odata.nextLink` with a new `skipToken` value, which indicates that more changes that were tracked for users are available. Use the `@odata.nextLink` URL in more requests until a `@odata.deltaLink` URL (in an `@odata.deltaLink` parameter) is returned in the final response, even if the value is an empty array.
@@ -242,7 +240,6 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwE
 
 ---
 
-
 ### Final nextLink response
 
 When a `@odata.deltaLink` URL is returned, there's no more data about the existing state of the user objects. For future requests, the application uses the `@odata.deltaLink` URL to learn about other changes to users. Save the `deltaToken` and use it in the subsequent request URL to discover more changes to users.
@@ -315,7 +312,6 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## deltaLink response
 

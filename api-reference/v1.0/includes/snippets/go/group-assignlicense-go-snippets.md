@@ -42,7 +42,7 @@ removeLicenses := []string {
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.GroupsById("group-id").AssignLicense().Post(context.Background(), requestBody, nil)
+result, err := graphClient.GroupsById("group-id").MicrosoftGraphAssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

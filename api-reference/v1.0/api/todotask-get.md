@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a3
 ---
 
 
-
 ### Response
 
 The following is an example of the request.

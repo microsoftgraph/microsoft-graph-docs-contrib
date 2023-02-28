@@ -51,7 +51,7 @@ internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
 message.SetInternetMessageHeaders(internetMessageHeaders)
 requestBody.SetMessage(message)
 
-graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
+graphClient.Me().MicrosoftGraphSendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

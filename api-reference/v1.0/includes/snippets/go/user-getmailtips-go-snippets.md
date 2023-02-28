@@ -17,7 +17,7 @@ requestBody.SetEmailAddresses(emailAddresses)
 mailTipsOptions := graphmodels.AUTOMATICREPLIES, MAILBOXFULLSTATUS_MAILTIPSTYPE 
 requestBody.SetMailTipsOptions(&mailTipsOptions) 
 
-result, err := graphClient.Me().GetMailTips().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MicrosoftGraphGetMailTips().Post(context.Background(), requestBody, nil)
 
 
 ```

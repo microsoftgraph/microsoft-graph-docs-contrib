@@ -85,7 +85,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->findMeetingTimes()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->me()->microsoftGraphFindMeetingTimes()->post($requestBody, $requestConfiguration);
 
 
 ```

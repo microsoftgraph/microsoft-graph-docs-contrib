@@ -47,7 +47,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->chatsById('chat-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->chatsById('chat-id')->microsoftGraphSendActivityNotification()->post($requestBody);
 
 
 ```

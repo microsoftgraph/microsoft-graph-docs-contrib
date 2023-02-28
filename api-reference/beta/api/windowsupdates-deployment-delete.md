@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/983f03
 ---
 
 
-
 ### Response
 
 <!-- {

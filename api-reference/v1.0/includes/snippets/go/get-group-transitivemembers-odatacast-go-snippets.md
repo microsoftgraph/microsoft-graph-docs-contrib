@@ -21,7 +21,7 @@ configuration := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.groupReq
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").TransitiveMembers().Group().Get(context.Background(), configuration)
+result, err := graphClient.GroupsById("group-id").TransitiveMembers().MicrosoftGraphGroup().Get(context.Background(), configuration)
 
 
 ```

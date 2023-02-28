@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->auditEvents()->getAuditActivityTypes()->get();
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->auditEventsById('cloudPcAuditEvent-id')->get();
 
 
 ```

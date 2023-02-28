@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/users/anirban@contoso.com/authentication/mi
 ---
 
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

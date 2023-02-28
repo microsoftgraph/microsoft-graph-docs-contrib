@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var appliesTo = await graphClient.Policies.AppManagementPolicies["{appManagementPolicy-id}"].AppliesTo
-	.Request()
-	.Select("id,appId,displayName,createdDateTime")
-	.GetAsync();
+var result = await graphClient.Policies.AppManagementPolicies["appManagementPolicy-id"].AppliesTo.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","appId","displayName","createdDateTime" };
+});
+
 
 ```

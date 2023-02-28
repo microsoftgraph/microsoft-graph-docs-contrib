@@ -49,7 +49,7 @@ attachments := []graphmodels.Attachmentable {
 message.SetAttachments(attachments)
 requestBody.SetMessage(message)
 
-graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
+graphClient.Me().MicrosoftGraphSendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

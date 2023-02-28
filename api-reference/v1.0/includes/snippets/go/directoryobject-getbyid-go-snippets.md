@@ -24,7 +24,7 @@ types := []string {
 }
 requestBody.SetTypes(types)
 
-result, err := graphClient.DirectoryObjects().GetByIds().Post(context.Background(), requestBody, nil)
+result, err := graphClient.DirectoryObjects().MicrosoftGraphGetByIds().Post(context.Background(), requestBody, nil)
 
 
 ```

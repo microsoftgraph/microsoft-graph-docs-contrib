@@ -48,7 +48,7 @@ $requestBody->setSaveToSentItems(false);
 
 
 
-$graphServiceClient->me()->sendMail()->post($requestBody);
+$graphServiceClient->me()->microsoftGraphSendMail()->post($requestBody);
 
 
 ```

@@ -17,7 +17,7 @@ size := int64(3483322)
 attachmentItem.SetSize(&size) 
 requestBody.SetAttachmentItem(attachmentItem)
 
-result, err := graphClient.Me().MessagesById("message-id").Attachments().CreateUploadSession().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MessagesById("message-id").Attachments().MicrosoftGraphCreateUploadSession().Post(context.Background(), requestBody, nil)
 
 
 ```

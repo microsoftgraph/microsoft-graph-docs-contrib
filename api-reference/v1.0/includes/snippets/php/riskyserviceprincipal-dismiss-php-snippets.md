@@ -14,7 +14,7 @@ $requestBody->setServicePrincipalIds(['9089a539-a539-9089-39a5-899039a58990', ])
 
 
 
-$graphServiceClient->identityProtection()->riskyServicePrincipals()->dismiss()->post($requestBody);
+$graphServiceClient->identityProtection()->riskyServicePrincipals()->microsoftGraphDismiss()->post($requestBody);
 
 
 ```

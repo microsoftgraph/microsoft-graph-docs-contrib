@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var appManagementPolicy = new AppManagementPolicy
+var requestBody = new AppManagementPolicy
 {
-	IsEnabled = false
+	IsEnabled = false,
 };
+var result = await graphClient.Policies.AppManagementPolicies["appManagementPolicy-id"].PatchAsync(requestBody);
 
-await graphClient.Policies.AppManagementPolicies["{appManagementPolicy-id}"]
-	.Request()
-	.UpdateAsync(appManagementPolicy);
 
 ```

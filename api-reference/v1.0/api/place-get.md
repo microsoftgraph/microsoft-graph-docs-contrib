@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/places/979e9793-3e91-40eb-b18c-0ea937893956
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -174,7 +173,6 @@ GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicroso
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

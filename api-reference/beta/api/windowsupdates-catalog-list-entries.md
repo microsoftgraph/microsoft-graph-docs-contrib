@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 ---
 
 
-
 ### Response
 
 <!-- {

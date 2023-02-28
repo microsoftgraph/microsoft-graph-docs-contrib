@@ -9,9 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
+$requestConfiguration = new DirectoryObjectRequestBuilderGetRequestConfiguration();
 
-$queryParameters = new GroupRequestBuilderGetQueryParameters();
+$queryParameters = new DirectoryObjectRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["displayName"];
 $queryParameters->filter = "startswith(displayName,%20'a')";
@@ -24,7 +24,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->devicesById('device-id')->transitiveMemberOf()->group()->get($requestConfiguration);
+$requestResult = $graphServiceClient->devicesById('device-id')->transitiveMemberOfById('directoryObject-id')->get($requestConfiguration);
 
 
 ```

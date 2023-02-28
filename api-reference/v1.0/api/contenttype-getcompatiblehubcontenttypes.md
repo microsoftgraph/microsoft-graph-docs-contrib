@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents/contentTypes/get
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

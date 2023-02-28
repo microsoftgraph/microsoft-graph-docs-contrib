@@ -65,6 +65,7 @@ If successful, this action returns a `200 OK` response code and a [impactedResou
 
 ### Request
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "impactedresourcethis.dismiss"
@@ -78,6 +79,16 @@ Content-Type: application/json
   "dismissReason": "Application is no longer needed."
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/impactedresourcethisdismiss-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/impactedresourcethisdismiss-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

@@ -84,7 +84,6 @@ POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySc
 ---
 
 
-
 ### Response
 <!-- {
   "blockType": "response",

@@ -27,7 +27,7 @@ $requestBody->setComment('Dana, hope you can make this meeting.');
 
 
 
-$graphServiceClient->me()->eventsById('event-id')->forward()->post($requestBody);
+$graphServiceClient->me()->eventsById('event-id')->microsoftGraphForward()->post($requestBody);
 
 
 ```

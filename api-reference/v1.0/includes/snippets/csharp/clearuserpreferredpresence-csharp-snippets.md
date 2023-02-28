@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Users["{user-id}"].Presence
-	.ClearUserPreferredPresence()
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Users.Item.Presence.MicrosoftGraphClearUserPreferredPresence.ClearUserPreferredPresencePostRequestBody
+{
+};
+await graphClient.Users["user-id"].Presence.MicrosoftGraphClearUserPreferredPresence.PostAsync(requestBody);
+
 
 ```

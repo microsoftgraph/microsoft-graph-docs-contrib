@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/me/authentication/softwareOathMethods/b1728
 ---
 
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

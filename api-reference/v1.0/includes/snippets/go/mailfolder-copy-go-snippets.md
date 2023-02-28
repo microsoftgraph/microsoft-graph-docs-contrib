@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCopyPostRequestBody()
 destinationId := "destinationId-value"
 requestBody.SetDestinationId(&destinationId) 
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").Copy().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").MicrosoftGraphCopy().Post(context.Background(), requestBody, nil)
 
 
 ```

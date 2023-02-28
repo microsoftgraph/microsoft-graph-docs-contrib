@@ -415,7 +415,6 @@ GET https://graph.microsoft.com/beta/chats?$expand=lastMessagePreview
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

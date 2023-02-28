@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/security/incidents/2972395
 ---
 
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

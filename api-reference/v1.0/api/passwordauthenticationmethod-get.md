@@ -110,7 +110,6 @@ GET https://graph.microsoft.com/v1.0/me/authentication/passwordMethods/28c10230-
 ---
 
 
-
 ### Response
 
 The following is an example of the response.

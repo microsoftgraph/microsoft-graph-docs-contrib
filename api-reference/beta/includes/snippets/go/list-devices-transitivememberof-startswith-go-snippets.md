@@ -14,17 +14,17 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestFilter := "startswith(displayName,%20'a')"
 
-requestParameters := &graphconfig.DeviceItemTransitiveMemberOfMicrosoft.graph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DeviceItemTransitiveMemberOfItemRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.DeviceItemTransitiveMemberOfMicrosoft.graph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceItemTransitiveMemberOfItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group().Get(context.Background(), configuration)
+result, err := graphClient.DevicesById("device-id").TransitiveMemberOfById("directoryObject-id").Get(context.Background(), configuration)
 
 
 ```

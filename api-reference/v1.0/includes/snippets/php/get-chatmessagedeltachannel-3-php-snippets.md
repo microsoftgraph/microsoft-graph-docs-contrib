@@ -17,7 +17,7 @@ $queryParameters->skiptoken = "8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDV
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

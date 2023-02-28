@@ -17,7 +17,7 @@ configuration := &graphconfig.GroupsMicrosoft.graph.delta()RequestBuilderGetRequ
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().Delta().Get(context.Background(), configuration)
+result, err := graphClient.Groups().MicrosoftGraphDelta().Get(context.Background(), configuration)
 
 
 ```

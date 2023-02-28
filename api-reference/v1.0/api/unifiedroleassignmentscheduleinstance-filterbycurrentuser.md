@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSche
 ---
 
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

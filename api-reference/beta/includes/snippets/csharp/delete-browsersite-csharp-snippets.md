@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].Sites["{browserSite-id}"]
-	.Request()
-	.DeleteAsync();
+await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].Sites["browserSite-id"].DeleteAsync();
+
 
 ```

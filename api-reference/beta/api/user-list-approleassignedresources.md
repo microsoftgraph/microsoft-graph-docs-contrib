@@ -92,7 +92,6 @@ ConsistencyLevel: eventual
 ---
 
 
-
 ### Response
 The following is an example of the response
 

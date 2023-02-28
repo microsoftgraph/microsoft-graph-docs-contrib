@@ -101,7 +101,6 @@ Content-length: 239
 ---
 
 
-
 ### Response
 The following is an example of the response
 <!-- {

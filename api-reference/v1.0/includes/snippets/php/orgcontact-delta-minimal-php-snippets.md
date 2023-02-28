@@ -22,7 +22,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->contacts()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->contacts()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

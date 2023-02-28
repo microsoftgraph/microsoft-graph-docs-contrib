@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationAssignmentDefaults = new EducationAssignmentDefaults
+var requestBody = new EducationAssignmentDefaults
 {
 	AddedStudentAction = EducationAddedStudentAction.AssignIfOpen,
 	AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndTeamOwners,
-	NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+	NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')",
 };
+var result = await graphClient.Education.Classes["educationClass-id"].AssignmentDefaults.PatchAsync(requestBody);
 
-await graphClient.Education.Classes["{educationClass-id}"].AssignmentDefaults
-	.Request()
-	.UpdateAsync(educationAssignmentDefaults);
 
 ```

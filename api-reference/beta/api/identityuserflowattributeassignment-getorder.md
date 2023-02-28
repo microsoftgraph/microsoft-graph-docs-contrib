@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAss
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

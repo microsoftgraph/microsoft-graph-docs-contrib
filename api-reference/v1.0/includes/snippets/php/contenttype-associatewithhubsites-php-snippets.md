@@ -16,7 +16,7 @@ $requestBody->setPropagateToExistingLists(false);
 
 
 
-$graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->associateWithHubSites()->post($requestBody);
+$graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->microsoftGraphAssociateWithHubSites()->post($requestBody);
 
 
 ```

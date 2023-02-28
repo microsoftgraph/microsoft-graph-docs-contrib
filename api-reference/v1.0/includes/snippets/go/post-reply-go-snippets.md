@@ -90,7 +90,7 @@ attachments := []graphmodels.Attachmentable {
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(context.Background(), requestBody, nil)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").MicrosoftGraphReply().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -40,7 +40,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.ChatsById("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.ChatsById("chat-id").MicrosoftGraphSendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

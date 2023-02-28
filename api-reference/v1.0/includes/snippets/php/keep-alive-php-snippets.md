@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->communications()->callsById('call-id')->keepAlive()->post();
+$graphServiceClient->communications()->callsById('call-id')->microsoftGraphKeepAlive()->post();
 
 
 ```

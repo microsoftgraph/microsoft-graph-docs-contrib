@@ -17,7 +17,7 @@ $queryParameters->select = ["displayName","jobTitle","mail"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->contacts()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->contacts()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->applicationsById('application-id')->unsetVerifiedPublisher()->post();
+$graphServiceClient->applicationsById('application-id')->microsoftGraphUnsetVerifiedPublisher()->post();
 
 
 ```

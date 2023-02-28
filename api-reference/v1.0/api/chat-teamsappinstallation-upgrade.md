@@ -83,7 +83,6 @@ POST https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@
 ---
 
 
-
 ### Response
 
 <!-- {

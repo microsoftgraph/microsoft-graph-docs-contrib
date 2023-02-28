@@ -115,7 +115,6 @@ Prefer: odata.maxpagesize=2
 ---
 
 
-
 ### Sample initial response
 
 The response includes two events and a `@odata.nextLink` response header with a `skipToken`. 
@@ -230,7 +229,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Sample second response 
 
@@ -348,7 +346,6 @@ Prefer: odata.maxpagesize=2
 
 ---
 
-
 ### Sample third and final response
 
 The third response returns the only remaining event in the calendar view, and a `@odata.deltaLink` URL which indicates 
@@ -443,7 +440,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### The next round: sample first response
 

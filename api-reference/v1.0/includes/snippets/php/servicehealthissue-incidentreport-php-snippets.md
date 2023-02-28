@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->admin()->serviceAnnouncement()->issuesById('serviceHealthIssue-id')->incidentReport()->get();
+$graphServiceClient->admin()->serviceAnnouncement()->issuesById('serviceHealthIssue-id')->microsoftGraphIncidentReport()->get();
 
 
 ```

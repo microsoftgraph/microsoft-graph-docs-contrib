@@ -29,7 +29,7 @@ requestBody.SetTargets(targets)
 callbackUri := "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 requestBody.SetCallbackUri(&callbackUri) 
 
-graphClient.Communications().CallsById("call-id").Redirect().Post(context.Background(), requestBody, nil)
+graphClient.Communications().CallsById("call-id").MicrosoftGraphRedirect().Post(context.Background(), requestBody, nil)
 
 
 ```

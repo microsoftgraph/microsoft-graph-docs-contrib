@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 ---
 
 
-
 #### Response
 <!-- {
   "blockType": "response",
