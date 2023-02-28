@@ -2278,3 +2278,11 @@ Possible values for user account types (group membership), per Windows definitio
 |terminating|
 |terminationRequested|
 |unknownFutureValue|
+
+### searchContent values 
+
+|Member|
+|:---|
+|sharedContent|
+|privateContent|
+|unknownFutureValue|
