@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a calendar group object.
+Retrieve the properties and relationships of a [calendar group](../resources/calendargroup.md) object.
 
 ## Permissions
 
@@ -38,7 +38,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -52,14 +52,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [calendarGroup](../resources/calendargroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [calendarGroup](../resources/calendargroup.md) object in the response body.
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
-
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,9 +97,11 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}
 ---
 
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -1,5 +1,57 @@
 {
-    "changelog": [
+    "changelog": [        
+        {
+            "ChangeList": [
+                {
+                    "Id": "a954cea4-2b1d-4be0-8767-537d7d9ec2f7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "snapshotType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **snapshotType** property to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta).",
+                    "Target": "cloudPcSnapshot"
+                },
+                {
+                    "Id": "a954cea4-2b1d-4be0-8767-537d7d9ec2f7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "expirationDateTime",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **expirationDateTime** property to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta).",
+                    "Target": "cloudPcSnapshot"
+                },
+                {
+                    "Id": "a954cea4-2b1d-4be0-8767-537d7d9ec2f7",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcSnapshotType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **expiraticloudPcSnapshotTypeonDateTime** enumeration type.",
+                    "Target": "cloudPcSnapshot"
+                }
+            ],
+            "Id": "a954cea4-2b1d-4be0-8767-537d7d9ec2f7",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-02-01T02:52:10.3002588Z",     
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+                {
+                "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
+                "ApiChange": "Property",
+                "ChangedApiName": "regionGroup",
+                "ChangeType": "Addition",
+                "Description": "Added the **regionGroup** property to the [cloudPcDomainJoinConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
+                "Target": "cloudPcDomainJoinConfiguration"
+                }
+            ],
+          "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-02-27T08:58:22.4957466Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+        },
         {
             "ChangeList":[
                 {
