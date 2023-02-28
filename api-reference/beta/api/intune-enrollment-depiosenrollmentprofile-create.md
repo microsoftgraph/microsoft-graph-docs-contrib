@@ -103,7 +103,7 @@ The following table shows the properties that are required when you create the d
 |userSessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
 |passcodeLockGracePeriodInSeconds|Int32|Indicates timeout before locked screen requires the user to enter the device passocde to unlock it|
 |carrierActivationUrl|String|Carrier URL for activating device eSIM.|
-|userlessSharedAadModeEnabled|Boolean|Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-shared-ios|
+|userlessSharedAadModeEnabled|Boolean|Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. [See here](/mem/intune/enrollment/device-enrollment-shared-ios)|
 
 
 
