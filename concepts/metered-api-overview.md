@@ -16,8 +16,8 @@ Whether metered or not, APIs in Microsoft Graph are provided based on the follow
 
 Metering some APIs helps to ensure the health of the current and future Microsoft Graph ecosystem by balancing platform access and cost. Microsoft will not charge for generally available APIs that are currently free without following the [breaking change policy](versioning-and-support.md).
 
-## Categories of APIs
-There are three categories of use cases represented in Microsoft Graph APIs.
+## API categories and metering
+Microsoft Graph APIs fall into three categories, and metering may apply based on the category of the API.
 
 ### Standard APIs
 Most Microsoft Graph APIs are standard APIs. These APIs perform standard operations (create, read, update, delete) on customer content and administrative endpoints. Reasonable access limits for these APIs are defined based on documented usage thresholds. This helps to ensure a positive customer experience and encourages efficient API usage patterns. Access to standard APIs within the defined usage thresholds is available as part of the user license without additional costs.
@@ -37,6 +37,13 @@ Keep the following considerations in mind when you use metered Microsoft 365 API
 
 - Metered APIs can return errors related to your subscription status in addition to other common errors. For details about Microsoft Graph errors, see [Microsoft Graph errors and resource types](errors.md).
 - Metered APIs are billed according to API usage. Be sure to understand the metering unit so that you can estimate the costs associated with a particular API.
+
+## Known limitations
+
+The following limitations apply to metered APIs:
+
+- Metered Microsoft 365 APIs and services are not currently available in national cloud deployments, including Microsoft 365 GCC deployments accessed through the worldwide Microsoft Graph endpoint. For details about national clouds, see [National cloud deployments](deployments.md).
+- The target application must be a confidential client application (for example, web application, web API, or daemon/service). Public client applications (desktop and mobile applications) are not supported.
 
 ## See also
 
