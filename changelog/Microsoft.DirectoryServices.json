@@ -61,6 +61,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d8d56f67-839e-42a2-a4f1-e493c1653729",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedCloudEndpoints",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedCloudEndpoints** property to the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-v1.0) resource. Use this property to enable B2B collaboration across Azure clouds. For example, between tenants in Azure Commercial and Azure Government clouds, and Azure Commercial and Azure China clouds. ",
+          "Target": "crossTenantAccessPolicy"
+        }
+      ],
+      "Id": "d8d56f67-839e-42a2-a4f1-e493c1653729",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-27:00:00.8027648Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }, 
+    {
+      "ChangeList": [
+        {
           "Id": "b93829d7-509b-43bf-9ff7-b9a17032bae6",
           "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
