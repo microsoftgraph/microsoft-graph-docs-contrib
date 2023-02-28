@@ -5,6 +5,7 @@ author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
+ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 11/23/2022
 ---
