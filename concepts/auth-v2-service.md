@@ -194,7 +194,7 @@ A successful response looks like this:
 
 ## 5. Use the access token to call Microsoft Graph
 
-After you have an access token, you can use it to call Microsoft Graph by including it in the `Authorization` header of a request. The following request gets all users in the tenant. The app must have the _User.Read.All_ permission to call this API.
+After you have an access token, the app uses it to call Microsoft Graph by attaching the access token as a **Bearer** token to the **Authorization** header in an HTTP request. The following request gets all users in the tenant. The app must have the _User.Read.All_ permission to call this API.
 
 # [HTTP](#tab/http)
 ```http
