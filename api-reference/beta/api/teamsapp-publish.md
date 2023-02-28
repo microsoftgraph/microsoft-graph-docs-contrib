@@ -87,6 +87,10 @@ Content-type: application/zip
 [Zip file containing a Teams app package]
 ```
 
+# [Csharp](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-teamsapp-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -143,6 +147,10 @@ POST https://graph.microsoft.com/beta/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
 ```
 
+# [Csharp](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-teamsapp-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -186,12 +194,13 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
 
 #### Request
 
-**HTTP**
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp_3",
   "sampleKeys": ["a761ad07-22ef-4a53-9feb-2837c8ad4a84", "YTc2MWFkMDctMjJlZi00YTUzLTlmZWItMjgzN2M4YWQ0YTg0IyMxLjEuOCMjU3VibWl0dGVk"]
 }-->
+
+# [HTTP](#tab/http)
 
 ```http
 PATCH https://graph.microsoft.com/beta/appCatalogs/teamsApps/a761ad07-22ef-4a53-9feb-2837c8ad4a84/appDefinitions/YTc2MWFkMDctMjJlZi00YTUzLTlmZWItMjgzN2M4YWQ0YTg0IyMxLjEuOCMjU3VibWl0dGVk
@@ -202,6 +211,10 @@ If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
   "publishingState":"published"
 }
 ```
+
+# [Csharp](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-teamsapp-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
