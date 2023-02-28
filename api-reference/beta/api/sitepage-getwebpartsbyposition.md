@@ -71,7 +71,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_webpart_by_position"
+  "name": "get_webparts_by_position"
 }
 -->
 
