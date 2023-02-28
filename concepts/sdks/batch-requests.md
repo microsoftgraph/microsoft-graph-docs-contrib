@@ -597,58 +597,24 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
     {
         //valid GraphAccessToken is required to execute the call
         var graphClient = GetAuthenticatedClient(GraphAccessToken);
-        var events = new List<OnlineMeetingCreateOrGetRequestBody>();
+        var events = new List<OnlineMeeting>();
         foreach (var item in meetingLinksToBeGenerated)
         {
             var externalId = Guid.NewGuid().ToString();
-            var @event = new OnlineMeetingCreateOrGetRequestBody
+            var @event = new OnlineMeeting
             {
-                //valid GraphAccessToken is required to execute the call
-                var graphClient = GetAuthenticatedClient(GraphAccessToken);
-                var events = new List<OnlineMeeting>();
-                foreach (var item in meetingLinksToBeGenerated)
-                {
-                    var externalId = Guid.NewGuid().ToString();
-                    var @event = new OnlineMeeting
-                    {
-                        StartDateTime = item.StartTime,
-                        EndDateTime = item.EndTime,
-                        Subject = "Test Meeting",
-                        ExternalId = externalId,
-                        
-                    };
-                    events.Add(@event);
-                }
-                // if the requests are more than 20 limit, we need to create multiple batches of the BatchRequestContent
-                List<BatchRequestContent> batches = new List<BatchRequestContent>();
-                var batchRequestContent = new BatchRequestContent(graphClient);
-                foreach (OnlineMeeting e in events)
-                { 
-                    //create online meeting for particular user or we can use /me as well
-                    var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, $"https://graph.microsoft.com/v1.0/users/{userID}/onlineMeetings/createOrGet")
-                    {
-                        Content = new StringContent(JsonConvert.SerializeObject(e), Encoding.UTF8, "application/json")
-                    };
-                    BatchRequestStep requestStep = new BatchRequestStep(events.IndexOf(e).ToString(), httpRequestMessage, null);
-                    batchRequestContent.AddBatchRequestStep(requestStep);
-                    if (events.IndexOf(e) > 0 && ((events.IndexOf(e) + 1) % maxNoBatchItems == 0))
-                    {
-                        batches.Add(batchRequestContent);
-                        batchRequestContent = new BatchRequestContent(graphClient);
-                    }
-                }
-                if (batchRequestContent.BatchRequestSteps.Count < maxNoBatchItems)
-                {
-                    batches.Add(batchRequestContent);
-                }
+                StartDateTime = item.StartTime,
+                EndDateTime = item.EndTime,
+                Subject = "Test Meeting",
+                ExternalId = externalId,
 
             };
             events.Add(@event);
         }
         // if the requests are more than 20 limit, we need to create multiple batches of the BatchRequestContent
         List<BatchRequestContent> batches = new List<BatchRequestContent>();
-        var batchRequestContent = new BatchRequestContent();
-        foreach (OnlineMeetingCreateOrGetRequestBody e in events)
+        var batchRequestContent = new BatchRequestContent(graphClient);
+        foreach (OnlineMeeting e in events)
         {
             //create online meeting for particular user or we can use /me as well
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, $"https://graph.microsoft.com/v1.0/users/{userID}/onlineMeetings/createOrGet")
@@ -660,7 +626,7 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
             if (events.IndexOf(e) > 0 && ((events.IndexOf(e) + 1) % maxNoBatchItems == 0))
             {
                 batches.Add(batchRequestContent);
-                batchRequestContent = new BatchRequestContent();
+                batchRequestContent = new BatchRequestContent(graphClient);
             }
         }
         if (batchRequestContent.BatchRequestSteps.Count < maxNoBatchItems)
@@ -668,24 +634,23 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
             batches.Add(batchRequestContent);
         }
 
-                foreach (BatchRequestContent batch in batches)
-                {
-                    BatchResponseContent response = null;
-                    response = await graphClient.Batch.Request().PostAsync(batch);
-                    Dictionary<string, HttpResponseMessage> responses = await response.GetResponsesAsync();
-                    foreach (string key in responses.Keys)
-                    {
-                        HttpResponseMessage httpResponse = await response.GetResponseByIdAsync(key);
-                        var responseContent = await httpResponse.Content.ReadAsStringAsync();
-                        JObject eventResponse = JObject.Parse(responseContent);
-                        //do something below
-                        Console.WriteLine(eventResponse["joinWebUrl"].ToString());                      
-                    }                 
-                }
-            }
-            catch (Exception ex)
+        if (batches.Count == 0 && batchRequestContent != null)
+        {
+            batches.Add(batchRequestContent);
+        }
+
+        foreach (BatchRequestContent batch in batches)
+        {
+            BatchResponseContent response = null;
+            response = await graphClient.Batch.Request().PostAsync(batch);
+            Dictionary<string, HttpResponseMessage> responses = await response.GetResponsesAsync();
+            foreach (string key in responses.Keys)
             {
-                Console.WriteLine(ex.Message + ex.StackTrace);               
+                HttpResponseMessage httpResponse = await response.GetResponseByIdAsync(key);
+                var responseContent = await httpResponse.Content.ReadAsStringAsync();
+                JObject eventResponse = JObject.Parse(responseContent);
+                //do something below
+                Console.WriteLine(eventResponse["joinWebUrl"].ToString());
             }
         }
     }
@@ -694,5 +659,6 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
         Console.WriteLine(ex.Message + ex.StackTrace);
     }
 }
+
 
 ```
