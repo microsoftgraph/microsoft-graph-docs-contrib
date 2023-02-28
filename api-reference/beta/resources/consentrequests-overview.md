@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "psignoret"
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 09/28/2022
 ---
 
 # Azure Active Directory consent requests

@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Delete an [educationRubric](../resources/educationrubric.md) object.
+Delete an [educationRubric](../resources/educationrubric.md) object. Only teachers can perform this operation.
 
 ## Permissions
 

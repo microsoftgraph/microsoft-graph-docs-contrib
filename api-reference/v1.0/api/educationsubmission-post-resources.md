@@ -11,11 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add an [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list.
+Add an [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list. Only teachers and students can perform this operation.
 
-Only the student assigned to the submission can perform this operation.
-
-The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`. 
+The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`.
 
 To create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail.
 

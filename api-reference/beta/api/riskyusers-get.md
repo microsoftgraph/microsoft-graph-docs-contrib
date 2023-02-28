@@ -2,7 +2,7 @@
 title: "Get riskyUser"
 description: "Retrieve the properties and relationships of a **riskyUser** object."
 ms.localizationpriority: medium
-author: "ebasseri"
+author: "tracyshi"
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 ---

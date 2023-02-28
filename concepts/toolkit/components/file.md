@@ -1,11 +1,11 @@
 ---
-title: "File component in the Microsoft Graph Toolkit"
+title: "File component in Microsoft Graph Toolkit"
 description: "The file component is used to display a file by showing the icon, and name"
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# File component in the Microsoft Graph Toolkit
+# File component in Microsoft Graph Toolkit
 
 The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview) by displaying information such as the file/folder name, an icon indicating the file type, and other properties such as the author, last modified date, or other details. You can provide the identifiers for a file and the component will generate the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
 

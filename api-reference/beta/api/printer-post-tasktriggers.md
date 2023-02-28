@@ -87,9 +87,6 @@ POST https://graph.microsoft.com/beta/print/printers/ae63f617-4856-4b45-8ea9-69d
 
 ---
 
-
----
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

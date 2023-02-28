@@ -21,6 +21,7 @@ const bookingAppointment = {
     },
     isLocationOnline: true,
     optOutOfCustomerEmail: false,
+    anonymousJoinWebUrl: null,
     postBuffer: 'PT10M',
     preBuffer: 'PT5M',
     price: 10.0,

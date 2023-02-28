@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.ProfileRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeProfileRequestBuilderGetQueryParameters{
 	Expand: [] string {"names($select=first,last)","skills($select=displayName)"},
 }
-configuration := &graphconfig.ProfileRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeProfileRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

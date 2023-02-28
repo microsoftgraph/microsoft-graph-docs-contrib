@@ -23,17 +23,20 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) |  Application.ReadWrite.All |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
-
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+
+You can also address the federated identity credential with either its **id** or **name**.
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+
+DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
+DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers

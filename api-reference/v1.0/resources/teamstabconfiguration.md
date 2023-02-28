@@ -21,8 +21,8 @@ In addition to the properties below, some tab provider applications specify addi
 
 |Property|Type|Description|
 |-|-|-|
-|  entityId   |   string |  Identifier for the entity hosted by the tab provider.     |
 |  contentUrl |   string |  Url used for rendering tab contents in Teams. Required.    |
+|  entityId   |   string |  Identifier for the entity hosted by the tab provider.     |
 |  removeUrl  |   string |  Url called by Teams client when a Tab is removed using the Teams Client.     |
 |  websiteUrl |   string |  Url for showing tab contents outside of Teams.     |
 

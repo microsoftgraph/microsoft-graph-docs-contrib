@@ -1405,6 +1405,108 @@
       "CreatedDateTime": "2022-09-01T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ce913b61-7449-4839-ab8d-fa3c74ba9f1a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isExactMatchRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isExactMatchRequired** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
+          "Target": "property"
+        }
+      ],
+      "Id": "ce913b61-7449-4839-ab8d-fa3c74ba9f1a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-18T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f01fd20e-9044-41f6-a7ad-e2ea44b3f51a",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Acronym.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Acronym.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
+          "Target": "query"
+        },
+        {
+          "Id": "c44293eb-d43b-4bd6-ae78-5de920a8e7f1",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Bookmark.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
+          "Target": "query"
+        },
+        {
+          "Id": "537a4b42-9b7e-418f-b58d-d4ce976af4fb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Chat.Read` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
+          "Target": "query"
+        },
+        {
+          "Id": "6b68b691-391b-4882-8396-73eb6bedd900",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChannelMessage.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `ChannelMessage.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-beta).",
+          "Target": "query"
+        }
+      ],
+      "Id": "e74764a8-1ae4-4af8-8f71-4a29af0fe5ed",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6b68b691-391b-4882-8396-73eb6bedd900",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Acronym.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Acronym.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
+          "Target": "query"
+        },
+        {
+          "Id": "c245dd45-240d-4f9e-9f8d-7d56972d0196",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Bookmark.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
+          "Target": "query"
+        },
+        {
+          "Id": "3068e2b1-d5eb-448c-bd8c-c60d170014b2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Chat.Read` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
+          "Target": "query"
+        },
+        {
+          "Id": "e281a86c-4ad1-475f-bb3d-5600d97bafbe",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChannelMessage.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `ChannelMessage.Read.All` to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method of [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchentity?view=graph-rest-v1.0).",
+          "Target": "query"
+        }
+      ],
+      "Id": "711a9d3d-7ef0-4b8a-a9c2-bbebbdea40d2",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

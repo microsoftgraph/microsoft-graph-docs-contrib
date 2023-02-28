@@ -1,7 +1,7 @@
 ---
 title: "List device transitive memberships"
 description: "Get groups and administrative units that the device is a member of."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.prod: "directory-management"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -27,10 +27,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /devices/{id | userPrincipalName}/transitiveMemberOf
+GET /devices(deviceId='{deviceId}')/transitiveMemberOf
 ```
 
 ## Optional query parameters

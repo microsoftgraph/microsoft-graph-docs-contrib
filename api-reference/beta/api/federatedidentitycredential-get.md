@@ -26,14 +26,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+
+You can also address the federated identity credential with either its **id** or **name**.
+<!-- { "blockType": "ignored" } -->
+```http
 GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
 GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+
+GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
+GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Optional query parameters

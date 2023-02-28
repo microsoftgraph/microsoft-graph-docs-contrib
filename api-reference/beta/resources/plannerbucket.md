@@ -1,6 +1,6 @@
 ---
 title: "plannerBucket resource type"
-description: "Represents a bucket for tasks in a plan in Microsoft 365. It is contained in a plannerPlan and can have a collection of plannerTasks."
+description: "Represents a bucket for tasks in a plan in Microsoft 365."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -29,9 +29,10 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the bucket. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|creationSource|[plannerBucketCreation](plannerbucketcreation.md)|  Contains information about the origin of the bucket.|
+|id|String| Read-only. Unique identifier for the bucket. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |name|String|Name of the bucket.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |planId|String|Plan ID to which the bucket belongs.|
 
 ## Relationships
@@ -54,6 +55,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "creationSource": {"@odata.type": "#microsoft.graph.plannerBucketCreation"},
   "id": "String (identifier)",
   "name": "String",
   "orderHint": "String",
@@ -73,5 +75,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
