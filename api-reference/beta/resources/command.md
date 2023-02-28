@@ -4,7 +4,7 @@ description: "Set of commands sent to a device."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "spunukol"
+author: "myra-ramdenbourg"
 ---
 
 # command resource type
