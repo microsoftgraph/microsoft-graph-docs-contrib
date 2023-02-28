@@ -712,7 +712,7 @@ items:
                 href: teams-create-group-and-team.md
               - name: List all teams
                 href: teams-list-all-teams.md
-          - name: Licensing and payment models
+          - name: Payment models and licensing requirements
             href: teams-licenses.md
           - name: Protected APIs
             href: teams-protected-apis.md
