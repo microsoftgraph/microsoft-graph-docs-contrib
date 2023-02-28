@@ -1,16 +1,18 @@
 ---
-title: "Enable Microsoft 365 metered APIs and services"
-description: "Provides instructions to onboard an application for calling metered Microsoft 365 APIs and services."
+title: "Enable metered Microsoft 365 APIs and services"
+description: "Find information about how to onboard an application to call metered Microsoft 365 APIs and services."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
-# Enable Microsoft 365 metered APIs and services
+# Enable metered Microsoft 365 APIs and services
 
 Some Microsoft 365 APIs and services in Microsoft Graph are metered and require payment for use. For a current list of APIs that require payment, see [Metered Microsoft 365 APIs and services](metered-api-list.md).
 
-To consume metered Microsoft 365 APIs and services, the application registration for the Azure Active Directory application that consumes the APIs must be associated with an Azure subscription. This subscription will be billed for any metered charges. This association also allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of the application. This article describes how to associate your application with an Azure subscription.
+To consume metered Microsoft 365 APIs and services, the application registration for the Azure Active Directory application that consumes the APIs must be associated with an Azure subscription. This subscription will be billed for any metered charges. This association also allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of the application. 
+
+This article describes how to associate your application with an Azure subscription.
 
 ## Known limitations
 
@@ -37,7 +39,7 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
 
 >**Note:** You can complete the following steps by signing in to https://portal.azure.com and choosing **Cloud Shell**, or by using your local Azure command-line interface. If you're using [Cloud Shell](/azure/cloud-shell/overview) for the first time, you might need to create a storage account. Select an Azure subscription, choose **Create**, and follow the instructions to create a storage account.
 
-1. If you have multiple Azure subscriptions, for information about setting the active subscription, se see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps); otherwise, go to the next step.
+1. If you have multiple Azure subscriptions, for information about setting the active subscription, see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps); otherwise, go to the next step.
 
 2. Use **az provider register** to register the **Microsoft.GraphServices** resource provider on your active subscription to create an Azure resource. Copy the following command into your command-line interface, and type  <**Enter**>.
 
@@ -100,3 +102,9 @@ You can monitor cost and usage of metered Microsoft 365 APIs and services throug
 After the subscription billing cycle runs, typically on the 5th day of the month, a subscription owner or users with role-based permissions can download an invoice. For details, see [View and download your Azure invoice](/azure/cost-management-billing/understand/download-azure-invoice).
 
 The invoice will include details that allow you to understand the amount of usage your application generates, and for multi-tenant applications, where that usage is happening. For details, see [Understand your Azure invoice](/azure/cost-management-billing/understand/understand-invoice).
+
+## See also
+
+- [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview)
+- [Metered Microsoft 365 APIs and services](/graph/metered-api-list)
+
