@@ -1,7 +1,7 @@
 ---
 title: "Get customAccessPackageWorkflowExtension"
 description: "Read the properties and relationships of a customAccessPackageWorkflowExtension object."
-author: "currenmehta"
+author: "currenmehta-zz"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

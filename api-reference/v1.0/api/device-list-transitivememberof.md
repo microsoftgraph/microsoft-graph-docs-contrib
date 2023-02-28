@@ -1,7 +1,7 @@
 ---
 title: "List device transitive memberships"
 description: "Get groups and administrative units that the device is a member of."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.prod: "directory-management"
 ms.localizationpriority: medium
 doc_type: apiPageType

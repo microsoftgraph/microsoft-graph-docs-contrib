@@ -241,6 +241,40 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 }
 ```
 
+## Assign permissions to an app
+
+While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
+
+Assigning permissions doesn't automatically grant them to the app. You must still grant admin consent using the Azure portal. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
+
+Least privilege delegated permission: `Application.ReadWrite.All`
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-assign-permissions"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7a76e98
+Content-Type: application/json
+
+{
+    "requiredResourceAccess": [
+        {
+            "resourceAppId": "00000002-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+                    "type": "Scope"
+                },
+                {
+                    "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
+                    "type": "Role"
+                }
+            ]
+        }
+    ]
+}
+```
 
 ## Create app roles
 
