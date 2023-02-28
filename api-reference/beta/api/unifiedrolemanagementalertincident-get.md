@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
 
+The calling user must be a member user or have the Privileged Role Administrator Azure AD role.
+
 ## HTTP request
 
 <!-- {

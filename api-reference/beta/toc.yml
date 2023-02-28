@@ -13772,6 +13772,49 @@ items:
               href: api/policyroot-list-rolemanagementpolicyassignments.md
             - name: Get
               href: api/unifiedrolemanagementpolicyassignment-get.md
+          - name: Role management alerts
+            items:
+            - name: Alerts
+              href: resources/unifiedrolemanagementalert.md
+            - name: List
+              href: api/rolemanagementalert-list-alerts.md
+            - name: Get
+              href: api/unifiedrolemanagementalert-get.md
+            - name: Refresh alert
+              href: api/unifiedrolemanagementalert-refresh.md
+            - name: Update alert
+              href: api/unifiedrolemanagementalert-update.md
+          - name: Role management alert definitions
+            href: resources/unifiedrolemanagementalertdefinition.md
+            items:
+            - name: List
+              href: api/rolemanagementalert-list-alertdefinitions.md
+            - name: Get
+              href: api/unifiedrolemanagementalertdefinition-get.md
+          - name: Role management alert configurations
+            items:
+            - name: Alert configurations
+              href: resources/unifiedrolemanagementalertconfiguration.md
+            - name: List
+              href: api/rolemanagementalert-list-alertconfigurations.md
+            - name: Get
+              href: api/unifiedrolemanagementalertconfiguration-get.md
+            - name: Update rule
+              href: api/unifiedrolemanagementalertconfiguration-update.md
+          - name: Role management alert incidents
+            href: resources/unifiedrolemanagementalertincident.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementalert-list-alertincidents.md
+            - name: Get
+              href: api/unifiedrolemanagementalertincident-get.md
+            - name: Remediate
+              href: api/unifiedrolemanagementalertincident-remediate.md
+          - name: Long running operations
+            href: resources/longrunningoperation.md
+            items:
+            - name: Get
+              href: api/longrunningoperation-get.md
         - name: Privileged Identity Management v2
           items:
           - name: Privileged Identity Management
