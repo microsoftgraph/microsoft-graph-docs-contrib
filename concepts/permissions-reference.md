@@ -2271,6 +2271,18 @@ Taxonomy permissions are valid only on work or school accounts.
 | _Team.Create_  | Create teams | Create teams, without a signed-in user. | Yes | No |
 | _Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
 
+## Team templates permissions
+
+#### Delegated permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamTemplates.Read_ | TeamTemplates.Read is "Sign-in and read Teams templates available for this user" | Allows read of the available Teams Templates for the user | No | No |
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamTemplates.Read.All_ | Read all available Teams Templates | Allows read of the available Teams Templates, without signed user	| No | No |
+
 ## Team settings permissions
 
 #### Delegated permissions
@@ -2286,6 +2298,7 @@ Taxonomy permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamSettings.Read.All_ | Read all teams' settings | Read this team's settings, without a signed-in user.	| Yes | No |
 | _TeamSettings.ReadWrite.All_ | Read and change all teams' settings. | Read and change all teams' settings, without a signed-in user.	| Yes | No |
+
 
 ## Teams activity permissions
 
