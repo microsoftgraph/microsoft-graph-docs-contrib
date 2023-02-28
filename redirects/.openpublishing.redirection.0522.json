@@ -59,16 +59,6 @@
       "source_path_from_root": "/api-reference/beta/api/passwordauthenticationmethod-resetpassword.md",
       "redirect_url": "/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta",
       "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/api-reference/beta/api/synchronization-synchronizationjob-provision-on-demand.md",
-      "redirect_url": "/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-beta",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/api-reference/beta/resources/synchronization-quarantine.md",
-      "redirect_url": "/graph/api/resources/synchronization-synchronizationquarantine?view=graph-rest-beta",
-      "redirect_document_id": true
     }
   ]
 }
