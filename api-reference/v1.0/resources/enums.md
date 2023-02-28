@@ -2286,4 +2286,11 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |enabledForCount|
 |enabledForPercentage|
+
+### searchContent values 
+
+|Member|
+|:---|
+|sharedContent|
+|privateContent|
 |unknownFutureValue|

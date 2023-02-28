@@ -565,6 +565,8 @@ items:
             href: item-insights-overview.md
           - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
+          - name: Enable or disable pronouns (preview)
+            href: pronouns-configure-pronouns-availability.md
       - name: Personal contacts
         items:
           - name: Overview
