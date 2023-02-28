@@ -12,7 +12,6 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Represents a user in a [team](team.md), a [channel](channel.md), or a [chat](chat.md).
-See also [aadUserConversationMember](aaduserconversationmember.md).
 
 ## Methods
 
