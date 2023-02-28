@@ -20,6 +20,8 @@ The following table lists the APIs that currently support payment models.
 | Update (DLP patch) | [Update channel](/graph/api/channel-patch)</br>[Update chat](/graph/api/chat-patch)</br>[Update chatMessage](/graph/api/chatmessage-update) |
 | [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions) | [channel](/graph/api/resources/channel)</br>[chat](/graph/api/resources/chat)</br>[chatMessage](/graph/api/resources/chatmessage)</br>[conversationMember](/graph/api/resources/conversationmember) |
 
+Billing for these APIs started on July 5th, 2022. To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
+
 ## Payment models
 
 The following payment models are available:
@@ -33,10 +35,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Billing for these APIs started on July 5th, 2022. Please follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for each of your application for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing).
-
-> [!NOTE]
-> Most of these APIs are also [Protected APIs](/graph/teams-protected-apis), which require approvals from Microsoft before you can use them.  If your application is using any of the Protected APIs, please also submit a request for approvals by completing [this form](https://aka.ms/teamsgraph/requestaccess).  For more details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> Most of these APIs are also [protected APIs](/graph/teams-protected-apis); you must get approval from Microsoft before you can use them. If your application is using protected APIs, please submit a [request for access](https://aka.ms/teamsgraph/requestaccess). For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ### `model=A` requirements
 
@@ -65,20 +64,20 @@ Guest users are exempt from these licensing requirements.
 Similarly, messages sent from outside the tenant (federated chat) are exempt.
 Consumption meters still apply.
 
-It is the responsibility of the tenant owner (not the app owner) to ensure users are properly licensed.
+It is the responsibility of the tenant owner (not the app owner) to ensure that users are properly licensed.
 Admins can use the Information protection license report in 
 [Teams admin center](https://admin.teams.microsoft.com/analytics/reports) 
 to see which users don't have a supported license.
 
 Many supported licenses offer free trials. 
 [Office 365 E5](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot%3aoverviewtab) 
-for instance has a `Free trial` link underneath the `Buy` button.
+for instance has a **Free trial** link under the **Buy** button.
 
 You can get a free Microsoft 365 E5 developer sandbox subscription with 25 user licenses 
 through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 > [!NOTE] 
-> The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) must be enabled before it can be licensed. Licenses can be managed in the [Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com). You can also assign licenses to a group account by using [PowerShell and Microsoft Graph](/azure/active-directory/enterprise-users/licensing-ps-examples).
+> The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) must be enabled before it can be licensed. You can manage licenses in the [Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com). You can also assign licenses to a group account by using [PowerShell and Microsoft Graph](/azure/active-directory/enterprise-users/licensing-ps-examples).
 
 ### `model=B` requirements
 
@@ -109,7 +108,7 @@ The following APIs support evaluation mode.
 
 ## Seeded capacity
 
-Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;an app won't run out of seeded capacity if another app runs out.  Seeded capacity is reset at the beginning of each calendar month, and unused amount does not get carried over to the next month.
+Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;an app won't run out of seeded capacity if another app runs out. Seeded capacity is reset at the beginning of each calendar month, and any unused amount does not get carried over to the next month.
 
 | Billing model | Use cases | Seeded capacity | License required | Azure subscription required |
 |:-----------|:---------------|:---------------|:-----------|:-----------|
@@ -121,9 +120,9 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 
 On July 5, 2022, [billing changes for Teams APIs](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/) took effect. 
 
-If your applications are or will be calling any of the following APIs, they must follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes.
+If your applications are or will be calling any of the following APIs, you must follow the steps described in [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes.
 
-- [chatMessage](/graph/api/chatmessage-delta) – Change notifications API
+- [chatMessage: delta](/graph/api/chatmessage-delta) – Change notifications API
 - [chats: getAllMessages](/graph/api/chats-getallmessages) – Export API
 - [channel: getAllMessages](/graph/api/channel-getallmessages) – Export API
 - [Update chatMessage](/graph/api/chatmessage-update)
@@ -166,27 +165,26 @@ You can also use the pie charts near the bottom to further break down the costs 
 
 For more details about cost management, see [Cost Management + Billing documentation](/azure/cost-management-billing/).
 
-## Monitor the number of messages billed for the metered Microsoft Teams APIs
+## Monitor the number of messages billed for the metered Teams APIs
 
-This section describes how to monitor the number of messages billed for the metered Microsoft Teams APIs.  Unlike with Cost Analysis (described above), this allows you to analyze also the usage of the messages within the seeded capacity, not just above the seeded capacity for billing, if applicable to the selected licensing models.
+This section describes how to monitor the number of messages billed for the metered Teams APIs. Unlike with cost analysis, this allows you to analyze the usage of  messages within the seeded capacity, not just those above the seeded capacity for billing, if applicable to the selected licensing models.
 
-A subscription owner, or anyone with required [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can set up a report, in CSV format, with the billing details for the entire subscription.  The report can be exported periodically (e.g. daily, weekly, monthly).  Please see [Tutorial: Create and manage exported data](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal) for a tutorial video and other related details.
+A subscription owner, or anyone with required [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can set up a report, in CSV format, with the billing details for the entire subscription. You can export the report periodically (daily, weekly, monthly). For details, see [Tutorial: Create and manage exported data](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
-![Screenshot of Export CSV file](images/teams-export-csv-sample.png)
+![Screenshot of an exported CSV file](images/teams-export-csv-sample.png)
 
-## Estimate the number of messages in your Microsoft Teams
+## Estimate the number of messages in your Teams
 
-This section describes how to look up the number of messages in your Microsoft Teams.  This is useful when you consider using the metered APIs and want to estimate the cost for using these APIs.  Please note that if a message is retrieved through the metered APIs multitple times, it will be billed multiple times, so keep that in mind when estimating the cost based on the number of messages in your Microsoft Teams.  For example, if you called `getAllMessages` (without any filters) yesterday to get all the messages in your Microsoft Teams, and then call it again (without any filters) today, all messages older than today will be billed twice.  Thus, when using the metered APIs, it is recommended to use filters (e.g. `$top=10`, `$filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z`) and/or [change notifications](/graph/teams-change-notification-in-microsoft-teams-overview) to avoid retrieving the same message multiple times.
+This section describes how to look up the number of messages in your Teams tenant. This can help you estimate the cost for using the metered APIs. Note that if a message is retrieved through metered APIs multitple times, it is billed multiple times. Keep this in mind when you estimate the cost based on the number of messages in your Teams tenant. For example, if you called `getAllMessages` (without any filters) yesterday, and then call it again (without any filters) today, all messages from earlier than today will be billed twice. For this reason, when using metered APIs, we recommend that you use filters (for example, `$top=10`, `$filter=lastModifiedDateTime gt 2019-03-17T07:13:28.000z`) or [change notifications](/graph/teams-change-notification-in-microsoft-teams-overview) to avoid retrieving the same message multiple times.
 
-One way is to call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail) API.
+You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail) API, or you can use the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/) as follows:
 
-Another way is to use the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/) as follows:
+> **Note:** You must be either a global admin, global reader, or Teams service admin to view the report in the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/). For details, see [Use Teams administrator roles to manage Teams](/microsoftteams/using-admin-roles).
 
-1. You must be either a global admin, global reader, or Teams service admin to view the report in the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/). See [Use Teams administrator roles to manage Teams](/microsoftteams/using-admin-roles) to read about getting admin roles and permissions.
-2. In the left navigation of the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/), select **Analytics & reports** > **Usage reports**.
-3. On the **View reports** tab, under **Report**, select **Teams user activity**.
-4. Under **Date range**, select a range.
-5. Select **Run report**.
+1. In the left pane, choose **Analytics & reports** > **Usage reports**.
+2. On the **View reports** tab, under **Report**, choose **Teams user activity**.
+3. Under **Date range**, select a range.
+4. Choose **Run report**.
 
 ![Screenshot of the Teams User Activity report](images/teams-user-activity-report-sample.png)
 
