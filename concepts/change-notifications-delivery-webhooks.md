@@ -161,11 +161,18 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 ## Throttling
 
-If a subscription notification URL is slow or fails to respond, and therefore Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it tries to resend the change notification multiple times, for up to 4 hours. In this case Microsoft Graph might throttle notifications for the host associated with the subscription.
+If a subscription notification URL is slow or fails to respond, and Microsoft Graph doesn't receive a 2xx class code within 3 seconds, Microsoft Graph tries to resend the change notification multiple times, for up to 4 hours. In this case Microsoft Graph might throttle notifications for the notification endpoint that's associated with the subscription.
 
-Notifications are published using an HTTP client with a 3-second timeout. If the publishing time is greater than 2900 ms, the response is considered slow. After 100 notifications have been received, the percentage of slow responses is calculated. If the percentage of slow responses reaches 10%, the host associated with the notification URL is flagged as a slow endpoint and all notifications for all subscriptions associated with the host are subjected to throttling. The evaluation continues in real time and the accumulation of responses is flushed every 10 minutes.
+#### How Microsoft Graph handles throttling for change notifications using webhooks
 
-While Microsoft Graph throttles an endpoint, notifications are subjected to an additional delay of 10 minutes and are offloaded to a set of workers dedicated to failed and throttled notifications. Notifications are dropped if the throttled endpoint slow percentage is greater than or equal to 15%. Notifications that failed to deliver due to an unsuccessful HTTP call are retried again in 10 minutes.
+Notifications are published using an HTTP client with a 3-second timeout.
+
+1. If the publishing time is greater than 2900 ms, the response is considered slow.
+1. The change notification service then calculates the percentage of slow responses after the endpoint receives 100 notifications.
+1. If the percentage of slow responses reaches 10%, the endpoint associated with the notification URL is flagged as a slow endpoint. All notifications for all subscriptions associated with the endpoint are subjected to throttling.
+1. The evaluation continues in real time and the accumulation of responses is flushed every 10 minutes.
+
+When Microsoft Graph throttles an endpoint, notifications are subjected to a delay of 10 minutes and are offloaded to workers dedicated to failed and throttled notifications. Notifications that failed to deliver due to an unsuccessful HTTP call are retried again in 10 minutes. Notifications are dropped if the throttled endpoint slow percentage is greater than or equal to 15%.
 
 ## Firewall configuration
 
