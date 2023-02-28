@@ -2675,7 +2675,7 @@ Threat hunting permissions are valid only on work or school accounts.
 | _User.Export.All_       |    Export users' data | Allows the app to export organizational users' data, without a signed-in user.| Yes |
 | _User.ManageIdentities.All_       |    Manage all user identities | Allows an application to read, update and delete identities that are associated with a user's account, without a signed in user. This controls which identities users can sign-in with. |  Yes |
 | _User-LifeCycleInfo.Read.All_       |    Read all users' lifecycle information | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. |  Yes |
-| _User-LifeCycleInfo.ReadWrite.All_       |    Read and write all users' lifecycle information | Allows the app to read and write the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. **Note:** The app also needs _User.Read.All_ permission to write to employeeLeaveDateTime |  Yes |
+| _User-LifeCycleInfo.ReadWrite.All_       |    Read and write all users' lifecycle information | Allows the app to read and write the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. |  Yes |
 
 ### Remarks
 
