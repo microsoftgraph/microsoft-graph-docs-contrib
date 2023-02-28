@@ -34,9 +34,10 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /security/attackSimulation/payloads/{payloadId}/detail
 ```
-## Optional query parameters
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
+## Optional query parameters
+
+This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
