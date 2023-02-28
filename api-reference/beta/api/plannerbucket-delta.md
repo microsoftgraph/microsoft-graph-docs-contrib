@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /planner/plans/{plan-id}/buckets/delta
 ```
 
-### Query parameters
+## Query parameters
 
-Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltaToken` and `$skipToken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltaToken` and `$skipToken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. You only need to specify any query parameters once upfront. In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. That URL already includes the encoded parameters.
 
 | Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                                    |
 | :-------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a [plannerBuck
 
 - A `@odata.deltaLink` URL in the response object indicates that no more data about the existing state of the resource is returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
 
-For more details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview). For an example about how to track changes to users, see [Get incremental changes for users](/graph/delta-query-users).
+For more details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview). For an example that shows how to track changes to users, see [Get incremental changes for users](/graph/delta-query-users).
 
 ## Examples
 
