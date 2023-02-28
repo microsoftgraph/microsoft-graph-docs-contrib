@@ -122,7 +122,7 @@ Content-Type: application/json
             "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
             "name": "AttackSimTest Payload",
             "description": "AttackSim Test Payload",
-            "attackType": "social",
+            "simulationAttackType": "social",
             "platform": "email",
             "isAutomated": null,
             "status": "draft",
@@ -130,7 +130,7 @@ Content-Type: application/json
             "language": "en",
             "predictedCompromiseRate": 20.0,
             "complexity": "medium",
-            "attackTechnique": "credentialHarvesting",
+            "technique": "credentialHarvesting",
             "createdBy": {
                 "email": "faiza@contoso.com",
                 "id": "121212",
