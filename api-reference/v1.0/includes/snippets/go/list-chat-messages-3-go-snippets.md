@@ -12,7 +12,7 @@ requestTop := int32(2)
 
 requestParameters := &graphconfig.ChatItemMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
-	OrderBy: [] string {"createdDateTime desc"},
+	Orderby: [] string {"createdDateTime desc"},
 }
 configuration := &graphconfig.ChatItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

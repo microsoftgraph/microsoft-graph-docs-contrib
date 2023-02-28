@@ -673,6 +673,24 @@
     {
       "ChangeList": [
         {
+          "Id": "76a83fe0-9c28-47eb-82ac-a9909d8af214",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCollapsed",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCollapsed** property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-beta) resource.",
+          "Target": "searchHit"
+        }
+      ],
+      "Id": "76a83fe0-9c28-47eb-82ac-a9909d8af214",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-27T08:44:58.7479522Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Analytics"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4039f744-de6c-4418-b4e9-868d99180b54",
           "ApiChange": "Property",
           "ChangedApiName": "region",

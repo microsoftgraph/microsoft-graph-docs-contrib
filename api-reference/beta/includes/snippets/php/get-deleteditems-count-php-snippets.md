@@ -13,7 +13,7 @@ $requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new GroupRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
-$queryParameters->orderBy = ["deletedDateTime asc"];
+$queryParameters->orderby = ["deletedDateTime asc"];
 $queryParameters->select = ["id","displayName","deletedDateTime"];
 
 $headers = [
