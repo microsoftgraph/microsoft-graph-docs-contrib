@@ -84,7 +84,7 @@ Content-type: application/zip
 [Zip file containing a Teams app package]
 ```
 
-# [Csharp](#tab/csharp)
+# [CSharp](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-teamsapp-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -144,7 +144,7 @@ POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
 ```
 
-# [Csharp](#tab/csharp)
+# [CSharp](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-teamsapp-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -209,7 +209,7 @@ If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
 }
 ```
 
-# [Csharp](#tab/csharp)
+# [CSharp](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-teamsapp-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
