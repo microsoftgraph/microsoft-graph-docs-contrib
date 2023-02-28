@@ -14,18 +14,18 @@ ms.date: 02/22/2022
 
 An app can access Microsoft Graph using one of two ways: on behalf of a signed-in user, also called *delegated access*, or with its own identity, also called *app-only access*. This article walks you through how an app gets to [call Microsoft Graph on behalf of a user](./auth/auth-concepts.md#access-scenarios).
 
-This article details the raw HTTP requests involved for your app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). The authorization and token requests detailed in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-library-msal) to get access tokens and call Microsoft Graph.
+This article details the raw HTTP requests involved for an app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). The authorization and token requests in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-library-msal) to get access tokens and call Microsoft Graph.
 
 ## Prerequisites
 
 Before proceeding with the steps in this article:
 
 1. Understand the authentication and authorization concepts in the Microsoft identity platform. For more information, see [Authentication and authorization basics](auth/auth-concepts.md).
-2. Register your app with Azure AD. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md).
+2. Register the app with Azure AD. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md).
 
 ## Authentication and authorization steps
 
-For your app to use the authorization code flow to get authorization and access to Microsoft Graph, you must follow these five steps:
+For an app to get authorization and access to Microsoft Graph using the authorization code flow, you must follow these five steps:
 
 1. Register the app with Azure AD.
 2. Get authorization.
@@ -33,7 +33,7 @@ For your app to use the authorization code flow to get authorization and access 
 4. Use the access token to call Microsoft Graph
 5. Use a refresh token to get a new access token.
 
-## 1. Register your app
+## 1. Register the app
 
 Before the app can use the Microsoft identity platform endpoint or call Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
 
@@ -41,13 +41,13 @@ From the app registration, save the following values:
 
 - The application (client) ID assigned by the app registration portal.
 - A client (application) secret, either a password or a public/private key pair (certificate). The client secret isn't required for native apps.
-- A redirect URI (or reply URL) for your app to receive responses from Azure AD.
+- A redirect URI (or reply URL) for the app to receive responses from Azure AD.
 
 ## 2. Get authorization
 
 The first step in the authorization code flow is for the user to authorize the app to act on their behalf.
 
-In the flow, the app redirects the user to the Microsoft identity platform `/authorize` endpoint. Through this endpoint, Azure AD will sign the user in and request their consent for the permissions that the app requests. After consent is obtained, Azure AD will return an authorization **code** to the app that redeems at the Microsoft identity platform `/token` endpoint for an access token.
+In the flow, the app redirects the user to the Microsoft identity platform `/authorize` endpoint. Through this endpoint, Azure AD signs the user in and requests their consent for the permissions that the app requests. After consent is obtained, Azure AD will return an authorization **code** to the app that redeems at the Microsoft identity platform `/token` endpoint for an access token.
 
 ### Authorization request
 
@@ -55,7 +55,7 @@ The following example shows a request to the `/authorize` endpoint.
 
 In the request URL, you call the `/authorize` endpoint and specify the required and recommended properties as query parameters.
 
-In the following example, the app requests the _User.Read_ and _Mail.Read_ Microsoft Graph permissions, which will allow the app to read the profile and mail of the signed-in user respectively. The _offline\_access_ permission is a standard OIDC scope that's requested so that the app can get a refresh token. The app can use the refresh token to get a new access token when the current one expires.
+In the following example, the app requests the _User.Read_ and _Mail.Read_ Microsoft Graph permissions, which allow the app to read the profile and mail of the signed-in user respectively. The _offline\_access_ permission is a standard OIDC scope that's requested so that the app can get a refresh token. The app can use the refresh token to get a new access token when the current one expires.
 
 # [HTTP](#tab/http)
 
@@ -86,21 +86,21 @@ curl --location -X POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/
 | tenant        | Required    | The `{tenant}` value in the path of the request can be used to control who can sign into the application. The allowed values are: <br><li>`common` for both Microsoft accounts and work or school accounts <li>`organizations` for work or school accounts only <li>`consumers` for Microsoft accounts only <li>tenant identifiers such as the tenant ID or domain name. <br/>For more information, see [protocol basics](/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
 | client_id     | Required    | The Application (client) ID that the [registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned the app. Also referred to as **appId** in the Microsoft Graph application and service principal object.                                                                                                                                                                                                                                                                                                                                                                                |
 | response_type | Required    | Must include `code` for the OAuth 2.0 authorization code flow.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| redirect_uri  | Recommended | The redirect URI of the app, where authentication responses can be sent and received by the app. It must exactly match one of the redirect URIs you registered in the app registration portal, except it must be URL encoded. For native and mobile apps, you should use the default value of `https://login.microsoftonline.com/common/oauth2/nativeclient`.                                                                                                                                    |
-| scope         | Required    | A space-separated list of the Microsoft Graph permissions that you want the user to consent to. Do not percent-encode the spaces. These permissions can include resource permissions, such as _User.Read_ and _Mail.Read_, and OIDC scopes, such as `offline_access`, which indicates that the app needs a refresh token for long-lived access to resources.                                                                                                                                                                                                                                                                                                                                                               |
+| redirect_uri  | Recommended | The redirect URI of the app, where authentication responses are sent to and received by the app. It must exactly match one of the redirect URIs you registered in the app registration portal, except it must be URL encoded. For native and mobile apps, you should use the default value of `https://login.microsoftonline.com/common/oauth2/nativeclient`.                                                                                                                                    |
+| scope         | Required    | A space-separated list of the Microsoft Graph permissions that you want the user to consent to. Don't percent-encode the spaces. These permissions can include resource permissions, such as _User.Read_ and _Mail.Read_, and OIDC scopes, such as `offline_access`, which indicates that the app needs a refresh token for long-lived access to resources.                                                                                                                                                                                                                                                                                                                                                               |
 | response_mode | Recommended | Specifies the method that should be used to send the resulting token back to the app. Can be `query` or `form_post`.                                                                                                                                                                                                                                                                                                                                                                               |
-| state         | Recommended | A value included in the request that will also be returned in the token response. It can be a string of any content that you wish. A randomly generated unique value is typically used for [preventing cross-site request forgery attacks](https://tools.ietf.org/html/rfc6749#section-10.12). This property is also used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.                                  |
+| state         | Recommended | A value included in the request that's also returned in the token response. It can be a string of any content that you wish. A randomly generated unique value is typically used for [preventing cross-site request forgery attacks](https://tools.ietf.org/html/rfc6749#section-10.12). This property is also used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.                                  |
 
 ### User consent experience
 
-After sending an authorization request, the user will be asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter. If the user hasn't consented to any of those permissions and if an administrator hasn't previously consented on behalf of all users in the organization, they'll be asked to consent to the required permissions. For more information about the Azure AD consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience).
+After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If the user hasn't consented to any of those permissions and if an administrator hasn't previously consented on behalf of all users in the organization, they're asked to consent to the required permissions. For more information about the Azure AD consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience).
 The following screenshot is an example of the consent dialog box presented for a Microsoft account user.
 
 :::image type="content" source="./images/auth-v2/v2-consumer-consent.png" alt-text="Consent dialog for Microsoft account." border="true":::
 
 ### Authorization response
 
-If the user consents to the permissions the app requested, the response will contain the authorization code in the `code` parameter. Here's an example of a successful response to the previous request. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
+If the user consents to the permissions the app requested, the response contains the authorization code in the `code` parameter. Here's an example of a successful response to the previous request. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
 
 ```
 HTTP/1.1 200 OK
@@ -118,7 +118,7 @@ https://localhost/myapp/?code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d&state=12345&
 
 ## 3. Get a token
 
-Your app uses the authorization `code` received in the previous step to request an access token by sending a `POST` request to the `/token` endpoint.
+The app uses the authorization `code` received in the previous step to request an access token by sending a `POST` request to the `/token` endpoint.
 
 ### Token request
 
@@ -160,14 +160,14 @@ curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 | tenant        | Required              | The `{tenant}` value in the path of the request can be used to control who can sign into the application. The allowed values are: <br><li>`common` for both Microsoft accounts and work or school accounts <li>`organizations` for work or school accounts only <li>`consumers` for Microsoft accounts only <li>tenant identifiers such as the tenant ID or domain name. <br/>For more information, see [protocol basics](/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
 | client_id     | Required              | The Application (client) ID that the [registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned the app. Also referred to as **appId** in the Microsoft Graph application and service principal object.                                                                                                                                                                                                                                                                                                                                                                                |
 | grant_type    | Required              | Must be `authorization_code` for the authorization code flow.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| scope         | Required              | A space-separated list of scopes. Do not percent-encode the spaces. The scopes that your app requests in this leg must be equivalent to or a subset of the scopes that it requested in the authorization leg in Step 2. If the scopes specified in this request span multiple resource servers, then the v2.0 endpoint will return a token for the resource specified in the first scope.                                                                                                                                                                   |
+| scope         | Required              | A space-separated list of scopes. Don't percent-encode the spaces. The scopes that your app requests in this leg must be equivalent to or a subset of the scopes that it requested in the authorization leg in Step 2. If the scopes specified in this request span multiple resource servers, then the v2.0 endpoint returns a token for the resource specified in the first scope.                                                                                                                                                                   |
 | code          | Required              | The authorization **code** that you acquired in the authorization leg in Step 2.                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | redirect_uri  | Required              | The same redirect URI value that was used to acquire the authorization **code** in Step 2.                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | client_secret | Required for web apps | The client secret that you created in the app registration portal for your app. It shouldn't be used in a native app, because client secrets can’t be reliably stored on devices. It's required for web apps and web APIs, which have the ability to store the client_secret securely on the server side.                                                                                                                                                                                  |
 
 ### Token response
 
-Although the access token is opaque to your app, the response contains a list of the permissions that the access token is good for in the `scope` parameter. The response is similar to the following sample.
+Although the access token is opaque to the app, the response contains a list of the permissions that the access token is good for in the `scope` parameter. The response is similar to the following sample.
 
 ```json
 HTTP/1.1 200 OK
@@ -220,7 +220,7 @@ curl --location 'https://graph.microsoft.com/v1.0/me' \
 
 ### Response
 
-A successful response will look similar to the following (some response headers have been removed).
+A successful response looks similar to the following (some response headers have been removed).
 
 ```
 HTTP/1.1 200 OK
@@ -297,13 +297,13 @@ curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 | tenant        | Required              | The `{tenant}` value in the path of the request can be used to control who can sign into the application. The allowed values are: <br><li>`common` for both Microsoft accounts and work or school accounts <li>`organizations` for work or school accounts only <li>`consumers` for Microsoft accounts only <li>tenant identifiers such as the tenant ID or domain name. <br/>For more information, see [protocol basics](/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
 | client_id     | Required              | The Application (client) ID that the [registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned your app. Also referred to as **appId** in the Microsoft Graph application and service principal object.                                                                                                                                                                                             |
 | grant_type    | Required              | Must be `refresh_token`.                                                                                                                                                                                                                                                                                          |
-| scope         | Optional              | A space-separated list of permissions (scopes). Do not percent-encode the spaces. The permissions that your app requests must be equivalent to or a subset of the permissions that it requested in the original authorization code request in Step 2.                                                                                                                             |
+| scope         | Optional              | A space-separated list of permissions (scopes). Don't percent-encode the spaces. The permissions that your app requests must be equivalent to or a subset of the permissions that it requested in the original authorization code request in Step 2.                                                                                                                             |
 | refresh_token | Required              | The refresh_token that your app acquired during the token request in Step 3.                                                                                                                                                                                                                                                     |
 | client_secret | Required for web apps | The client secret that you created in the app registration portal for your app. Don't use the secret in a native app, because client_secrets can’t be reliably stored on devices. It's required for web apps and web APIs, which have the ability to store the client_secret securely on the server side. |
 
 ### Response
 
-A successful token response will look similar to the following.
+A successful token response looks similar to the following.
 
 ```json
 HTTP/1.1 200 OK
