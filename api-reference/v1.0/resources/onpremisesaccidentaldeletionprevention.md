@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Contains the accidental deletion prevention configuration for a tenant. This configuration is geared at administrators who accidentally make an on-premises Active Directory change which results in deleting a large number of items on Azure Active Directory.
+Contains the accidental deletion prevention configuration for a tenant. This configuration is geared at administrators who accidentally make an on-premises Active Directory change which results in deleting a large number of objects on Azure Active Directory.
 
 ## Properties
 
@@ -41,4 +39,3 @@ The following is a JSON representation of the resource.
   "alertThreshold": "Integer"
 }
 ```
-

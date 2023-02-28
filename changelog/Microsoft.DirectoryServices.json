@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "onPremisesDirectorySynchronizationDeletionPreventionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesDirectorySynchronizationDeletionPreventionType** enumeration type.",
+          "Target": "onPremisesDirectorySynchronizationDeletionPreventionType"
+        },
+        {
+          "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesAccidentalDeletionPrevention",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesAccidentalDeletionPrevention](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesAccidentalDeletionPrevention?view=graph-rest-1.0) resource type.",
+          "Target": "onPremisesAccidentalDeletionPrevention"
+        },
+        {
+          "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronizationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronizationFeature",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronizationFeature](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationFeature?view=graph-rest-1.0) resource type.",
+          "Target": "onPremisesDirectorySynchronizationFeature"
+        },
+        {
+          "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "onPremisesSynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSynchronization** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesDirectorySynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesDirectorySynchronization](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronization?view=graph-rest-1.0) resource",
+          "Target": "onPremisesDirectorySynchronization"
+        }
+      ],
+      "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-27T12:47:30.2614679Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d8d56f67-839e-42a2-a4f1-e493c1653729",
           "ApiChange": "Property",
           "ChangedApiName": "allowedCloudEndpoints",
