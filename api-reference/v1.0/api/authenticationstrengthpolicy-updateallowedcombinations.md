@@ -1,7 +1,7 @@
 ---
 title: "authenticationStrengthPolicy: updateAllowedCombinations"
 description: "Update the allowedCombinations collection for a given authentication strength policy object."
-author: "mmcla"
+author: "mmcla; inbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -9,9 +9,6 @@ doc_type: apiPageType
 
 # authenticationStrengthPolicy: updateAllowedCombinations 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 
 Update the allowedCombinations property of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. To update other properties of an authenticationStrengthPolicy object, use the [Update authenticationStrengthPolicy](authenticationstrengthpolicy-update.md) method.
 
