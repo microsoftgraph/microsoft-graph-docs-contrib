@@ -39,7 +39,7 @@ GET /reports
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0&tabs=http#odata-query-parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
