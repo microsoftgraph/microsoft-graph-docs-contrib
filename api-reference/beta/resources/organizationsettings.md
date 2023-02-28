@@ -24,6 +24,7 @@ Contains settings that are applicable to the [organization](organization.md) or 
 | [List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccess.md) | [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) | Get the properties of a [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) object that specify access from Microsoft applications to Microsoft 365 user data in an organization. |
 | [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of an [insightsSettings](insightssettings.md) object for displaying or returning people insights in an organization. |
 | [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a **profileCardProperty** object collection. |
+| [List pronounsSettings](../api/organizationsettings-list-pronounssettings.md)|[pronounsSettings](../resources/pronounssettings.md) resource|Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
 
 ## Properties
 
@@ -39,6 +40,7 @@ None.
 |microsoftApplicationDataAccessSettings|[microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md)| Contains the properties that are configured by an administrator to specify access from Microsoft applications to Microsoft 365 data belonging to users in an organization. [List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccess.md) returns the _settings_ that specify the access. |
 |peopleInsights|[insightsSettings](insightssettings.md)| Contains the properties that are configured by an administrator for the visibility of a list of people [relevant and working with](/graph/people-example#including-a-person-as-relevant-or-working-with) a user in Microsoft 365. [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) returns the _settings_ to display or return people insights in an organization.|
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card. [Get organization settings](../api/organizationsettings-get.md) returns the properties configured for profile cards for the organization.|
+|pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
 
 
 ## JSON representation
