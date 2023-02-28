@@ -1,16 +1,18 @@
 ---
-title: "Enable Microsoft 365 metered APIs and services"
-description: "Provides instructions to onboard an application for calling metered Microsoft 365 APIs and services."
+title: "Enable metered Microsoft 365 APIs and services"
+description: "Find information about how to onboard an application to call metered Microsoft 365 APIs and services."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
-# Enable Microsoft 365 metered APIs and services
+# Enable metered Microsoft 365 APIs and services
 
 Some Microsoft 365 APIs and services in Microsoft Graph are metered and require payment for use. For a current list of APIs that require payment, see [Metered Microsoft 365 APIs and services](metered-api-list.md).
 
-To consume metered Microsoft 365 APIs and services, the application registration for the Azure Active Directory application that consumes the APIs must be associated with an Azure subscription. This subscription will be billed for any metered charges. This association also allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of the application. This article describes how to associate your application with an Azure subscription.
+To consume metered Microsoft 365 APIs and services, the application registration for the Azure Active Directory application that consumes the APIs must be associated with an Azure subscription. This subscription will be billed for any metered charges. This association also allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of the application. 
+
+This article describes how to associate your application with an Azure subscription.
 
 ## Known limitations
 
