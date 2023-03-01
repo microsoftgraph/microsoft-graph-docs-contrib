@@ -152,18 +152,22 @@ The following are the supported meeting events:
 
 **CallRosterUpdate** events include two properties, **activeParticipants@joined** to depict participants added to a meeting call and **activeParticipants@exited** for participants leaving the meeting call. 
 
-An active participant is represented as follows: 
+An active participant is represented as follows:
+
 ```json
 {
   "Id": "string",
   "Identity": "microsoft.graph.communicationsIdentitySet"
 }
 ```
+
 - The **Id** property corresponds to participant ID, which is a unique identifier assigned to each participant in the meeting call.
-- The **Identity** property corresponds to the **communicationsIdentitySet**. For details, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta).
+- The **Identity** property corresponds to the **communicationsIdentitySet**. For details, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta&preserve-view=true).
 
 ## See also
 
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - [Online meeting resource](/graph/api/resources/onlineMeeting)
+- [Meeting notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
+- [Meeting notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
