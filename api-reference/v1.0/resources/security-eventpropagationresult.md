@@ -16,7 +16,7 @@ Represents the status of a retention event creation request and additional infor
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.security.eventPropagationStatus|Indicates the status of the event creation request. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
+|status|microsoft.graph.security.eventPropagationStatus|Indicates the status of the event creation request. The possible values are: `none`, `inProcessing`, `failed`, `success`, `unknownFutureValue`.|
 |statusInformation|String|Additional information about the status of the event creation request.|
 |serviceName|String|The name of the workload associated with the event.|
 |location|String|The name of the specific location in the workload associated with the event.|
