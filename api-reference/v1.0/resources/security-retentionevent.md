@@ -34,7 +34,7 @@ To learn more about it, see [Start retention when an event occurs](/microsoft-36
 |description|String|Optional information about the event.|
 |displayName|String|Name of the event.|
 |eventPropagationResult|[microsoft.graph.security.eventPropagationResult](../resources/security-eventpropagationresult.md)|Represents the success status of a created event and additional information.|
-|eventQueries|[microsoft.graph.security.eventQueries](../resources/security-eventqueries.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
+|eventQueries|[microsoft.graph.security.eventQuery](../resources/security-eventquery.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
 |retentionEventStatus|[microsoft.graph.security.retentionEventStatus](../resources/security-retentioneventstatus.md) collection|Status of event propogation to the scoped locations after the event has been created.|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |id|String|Represents the unique ID of the user who created the retentionEvent. [entity](/graph/api/resources/entity).|
@@ -65,7 +65,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "eventQueries": [
     {
-      "@odata.type": "microsoft.graph.security.eventQueries"
+      "@odata.type": "microsoft.graph.security.eventQuery"
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",
