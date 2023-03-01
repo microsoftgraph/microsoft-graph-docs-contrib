@@ -46,7 +46,7 @@ Specify the following properties when creating a **retentionEvent**.
 |:---|:---|:---|
 |description|String|Optional information about the event.|
 |displayName|String|Name of the event.|
-|eventQueries|[microsoft.graph.security.eventQueries](../resources/security-eventqueries.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
+|eventQueries|[microsoft.graph.security.eventQuery](../resources/security-eventquery.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |retentionEventType|String|Name of the event type associated with the event.|
 
