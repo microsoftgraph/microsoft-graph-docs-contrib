@@ -131,6 +131,7 @@ Content-Type: application/json
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "statusDetails": null,
       "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
+      "provisioningType": "dedicated",
       "diskEncryptionState": "encryptedUsingPlatformManagedKey"
     }
   ]
