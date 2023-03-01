@@ -22,8 +22,6 @@ Namespace: microsoft.graph.security
 
 ### actionAfterRetentionPeriod values 
 
-
-
 |Member|
 |:---|
 |none|
@@ -33,8 +31,6 @@ Namespace: microsoft.graph.security
 
 ### behaviorDuringRetentionPeriod values 
 
-
-
 |Member|
 |:---|
 |doNotRetain|
@@ -43,10 +39,7 @@ Namespace: microsoft.graph.security
 |retainAsRegulatoryRecord|
 |unknownFutureValue|
 
-
 ### defaultRecordBehavior values 
-
-
 
 |Member|
 |:---|
@@ -56,8 +49,6 @@ Namespace: microsoft.graph.security
 
 
 ### eventPropagationStatus values 
-
-
 
 |Member|
 |:---|
@@ -69,8 +60,6 @@ Namespace: microsoft.graph.security
 
 ### eventStatusType values 
 
-
-
 |Member|
 |:---|
 |pending|
@@ -81,19 +70,13 @@ Namespace: microsoft.graph.security
 
 ### queryType values 
 
-
-
 |Member|
 |:---|
 |files|
 |messages|
 |unknownFutureValue|
 
-
-
 ### retentionTrigger values 
-
-
 
 |Member|
 |:---|
