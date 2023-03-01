@@ -2278,3 +2278,19 @@ Possible values for user account types (group membership), per Windows definitio
 |terminating|
 |terminationRequested|
 |unknownFutureValue|
+
+### onPremisesDirectorySynchronizationDeletionPreventionType values
+
+|Member|
+|:-----|
+|disabled|
+|enabledForCount|
+|enabledForPercentage|
+
+### searchContent values 
+
+|Member|
+|:---|
+|sharedContent|
+|privateContent|
+|unknownFutureValue|
