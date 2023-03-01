@@ -31,7 +31,6 @@ Represents an entity that holds the details about a learning provider in Viva le
 |:---|:---|:---|
 |displayName|String|The display name that appears in Viva Learning. Required.|
 |id|String|The unique identifier for the learning provider. Required.|
-|isEnabled|Boolean|The state of the provider. Optional.|
 |loginWebUrl|String|Authentication URL to access the courses for the provider. Optional.|
 |longLogoWebUrlForDarkTheme|String|The long logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |longLogoWebUrlForLightTheme|String|The long logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering  within the Viva Learning app. Required.|
@@ -59,7 +58,6 @@ The following is a JSON representation of the resource.
     "@odata.type": "#microsoft.graph.learningProvider",
     "displayName": "String",
     "id": "String (identifier)",
-    "isEnabled": "Boolean",
     "loginWebUrl": "String",
     "longLogoWebUrlForDarkTheme": "String",
     "longLogoWebUrlForLightTheme": "String",
