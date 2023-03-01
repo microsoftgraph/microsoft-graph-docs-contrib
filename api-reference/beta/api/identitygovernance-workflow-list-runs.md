@@ -1,5 +1,5 @@
 ---
-title: "List runs (for a lifecycle workflow)"
+title: "List runs"
 description: "Get a list of the run objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List runs (for a lifecycle workflow)
+# List runs
 
 Namespace: microsoft.graph.identityGovernance
 

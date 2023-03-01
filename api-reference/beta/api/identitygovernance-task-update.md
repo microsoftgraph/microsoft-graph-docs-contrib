@@ -1,5 +1,5 @@
 ---
-title: "Update task (within a workflow)"
+title: "Update task"
 description: "Update the properties of a task object within a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update task (within a workflow)
+# Update task
 
 Namespace: microsoft.graph.identityGovernance
 

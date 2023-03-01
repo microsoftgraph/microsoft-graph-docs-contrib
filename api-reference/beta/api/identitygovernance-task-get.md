@@ -1,5 +1,5 @@
 ---
-title: "Get task (in a lifecycle workflow)"
+title: "Get task"
 description: "Read the properties of a task object in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get task (in a lifecycle workflow)
+# Get task
 
 Namespace: microsoft.graph.identityGovernance
 

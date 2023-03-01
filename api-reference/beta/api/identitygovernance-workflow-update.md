@@ -1,5 +1,5 @@
 ---
-title: "Update workflow (lifecycle workflow)"
+title: "Update workflow"
 description: "Update the properties of a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update workflow (lifecycle workflow)
+# Update workflow
 
 Namespace: microsoft.graph.identityGovernance
 

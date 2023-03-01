@@ -1,5 +1,5 @@
 ---
-title: "List taskProcessingResult (for a taskReport)"
+title: "List taskProcessingResult"
 description: "Get a list of taskProcessingResult objects and their properties for a taskReport."
 author: "AlexFilipin"
 ms.localizationpriority: medium
