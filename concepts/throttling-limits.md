@@ -324,8 +324,7 @@ Limits are expressed as requests per second (rps).
 | POST tab for [channel](/graph/api/channel-post-tabs), [chat](/graph/api/chat-post-tabs)|  30 rps                         | 300 rps  |
 | POST installedApps for [chat](/graph/api/chat-post-installedapps), [user](/graph/api/userteamwork-post-installedapps), [team](/graph/api/team-post-installedapps) |  30 rps                         | 300 rps  |
  POST [appCatalogs](/graph/api/teamsapp-publish)    |  30 rps                         | 300 rps  |
-| PUT channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
-| PATCH [team](/graph/api/team-update), [channel](/graph/api/channel-patch), [tab](/graph/api/channel-patch-tabs), installedApps, appCatalogs |  30 rps                         | 300 rps  |
+| PATCH [team](/graph/api/team-update), [channel](/graph/api/channel-patch), [tab](/graph/api/channel-patch-tabs)|  30 rps                         | 300 rps  |
 | DELETE [channel](/graph/api/channel-delete) |  15 rps                         | 150 rps  |
 | DELETE tab for [chat](/graph/api/chat-delete-tabs), [channel](/graph/api/channel-delete-tabs.)  |  15 rps                         | 150 rps  |
 | DELETE   installedApps for [chat](/graph/api/chat-delete-installedapps), [user](/graph/api/userteamwork-delete-installedapps), [team](/graph/api/team-delete-installedapps)    |  15 rps                         | 150 rps  |
@@ -333,13 +332,13 @@ Limits are expressed as requests per second (rps).
 | GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
 | POST /[teams](/graph/api/team-post) | 10 rps | 100 rps  |
 | PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams), clone | 6 rps | 150 rps  |
+| POST /```{team-id}```/ [clone](/graph/api/team-clone) | 6 rps | 150 rps  |
 | GET [channel message](/graph/api/chatmessage-get)  | 20 rps | 200 rps |
 | GET 1:1/[group chat message](/graph/api/chat-get#example-3-get-a-chat-and-all-its-members)  | 20 rps | 200 rps |
 | POST [channel message](/graph/api/channel-post-messages) | 50 rps | 500 rps |
 | POST 1:1/[group chat message](/graph/api/chat-post#example-2-create-a-group-chat) | 20 rps | 200 rps |
 | GET /teams/```{team-id}```/[schedule](/graph/api/schedule-get) and all APIs under this path | 30 rps | 600 rps |
-| [POST](/graph/api/schedule-share), PATCH, [PUT](/graph//api/team-put-schedule) /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
-| DELETE /teams/```{team-id}```/[schedule](/graph/api/schedulinggroup-delete) and all APIs under this path | 15 rps | 150 rps |
+| [POST](/graph/api/schedule-share), [PUT](/graph//api/team-put-schedule) /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
 | POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | 5 rps | 50 rps |
 | POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | 5 rps | 50 rps |
 | POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | 5 rps | 50 rps |
