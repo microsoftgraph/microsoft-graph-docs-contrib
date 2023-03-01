@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Unmerge the range cells into separate cells.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,8 +33,8 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/unmerge
 POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/unmerge
-
 ```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -44,12 +45,12 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,13 +76,13 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 ---
 
 
-##### Response
-Here is an example of the response. 
+### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

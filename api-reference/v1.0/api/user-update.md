@@ -18,12 +18,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | User.ReadWrite, User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | User.ReadWrite    |
-|Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
+|Application | User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - To update user properties, such as **businessPhones**, **mobilePhone** and **otherMails** for users with more privileged administrator roles, applications need to be assigned the *Directory.AccessAsUser.All* delegated permission and either the Global Admin role or the Privileged Auth Admin role. For more information about who can update sensitive properties or reset passwords, see [Authorization and privileges](/graph/api/resources/users#authorization-and-privileges).
+> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privilged administrator roles, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 > - Your personal Microsoft account must be tied to an Azure AD tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 > - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
