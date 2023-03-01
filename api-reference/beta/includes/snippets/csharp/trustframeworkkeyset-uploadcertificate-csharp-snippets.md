@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.UploadCer
 {
 	Key = "key-value",
 };
-var result = await graphClient.TrustFramework.KeySets["trustFrameworkKeySet-id"].UploadCertificate.PostAsync(requestBody);
+var result = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].UploadCertificate.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new IdentityUserFlowAttribute
 {
 	Description = "Your new hobby",
 };
-var result = await graphClient.Identity.UserFlowAttributes["identityUserFlowAttribute-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.UserFlowAttributes["{identityUserFlowAttribute-id}"].PatchAsync(requestBody);
 
 
 ```

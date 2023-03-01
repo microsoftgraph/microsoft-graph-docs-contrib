@@ -19,7 +19,7 @@ var requestBody = new Microsoft.Graph.Models.Security.DataSource
 		},
 	},
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Searches["ediscoverySearch-id"].AdditionalSources.PostAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Searches["{ediscoverySearch-id}"].AdditionalSources.PostAsync(requestBody);
 
 
 ```

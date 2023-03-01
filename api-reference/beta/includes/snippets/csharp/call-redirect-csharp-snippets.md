@@ -31,7 +31,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Redirect.Re
 	},
 	CallbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
 };
-await graphClient.Communications.Calls["call-id"].Redirect.PostAsync(requestBody);
+await graphClient.Communications.Calls["{call-id}"].Redirect.PostAsync(requestBody);
 
 
 ```

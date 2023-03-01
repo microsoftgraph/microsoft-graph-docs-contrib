@@ -24,7 +24,7 @@ var requestBody = new TimeOff
 		Theme = ScheduleEntityTheme.Pink,
 	},
 };
-var result = await graphClient.Teams["team-id"].Schedule.TimesOff.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.TimesOff.PostAsync(requestBody);
 
 
 ```

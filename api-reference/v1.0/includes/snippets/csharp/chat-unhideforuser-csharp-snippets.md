@@ -19,7 +19,7 @@ var requestBody = new Microsoft.Graph.Chats.Item.UnhideForUser.UnhideForUserPost
 		},
 	},
 };
-await graphClient.Chats["chat-id"].UnhideForUser.PostAsync(requestBody);
+await graphClient.Chats["{chat-id}"].UnhideForUser.PostAsync(requestBody);
 
 
 ```

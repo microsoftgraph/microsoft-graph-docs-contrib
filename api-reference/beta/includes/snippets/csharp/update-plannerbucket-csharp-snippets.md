@@ -10,7 +10,7 @@ var requestBody = new PlannerBucket
 {
 	Name = "Development",
 };
-var result = await graphClient.Planner.Buckets["plannerBucket-id"].PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Planner.Buckets["{plannerBucket-id}"].PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");

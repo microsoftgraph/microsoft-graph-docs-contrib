@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Sites["site-id"].TermStore.Sets["set-id"].Terms["term-id"].DeleteAsync();
+await graphClient.Sites["{site-id}"].TermStore.Sets["{set-id}"].Terms["{term-id}"].DeleteAsync();
 
 
 ```

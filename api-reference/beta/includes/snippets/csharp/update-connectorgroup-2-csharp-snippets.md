@@ -11,7 +11,7 @@ var requestBody = new ConnectorGroup
 	Name = "name-value",
 	Region = ConnectorGroupRegion.Nam,
 };
-var result = await graphClient.OnPremisesPublishingProfiles["onPremisesPublishingProfile-id"].ConnectorGroups["connectorGroup-id"].PatchAsync(requestBody);
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups["{connectorGroup-id}"].PatchAsync(requestBody);
 
 
 ```

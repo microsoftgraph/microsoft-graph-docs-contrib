@@ -10,7 +10,7 @@ var requestBody = new SynchronizationJob
 {
 	TemplateId = "BoxOutDelta",
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].Synchronization.Jobs.PostAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs.PostAsync(requestBody);
 
 
 ```

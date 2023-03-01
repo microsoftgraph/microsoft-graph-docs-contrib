@@ -60,7 +60,7 @@ var requestBody = new PlannerTaskDetails
 	},
 	Description = "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links",
 };
-var result = await graphClient.Planner.Tasks["plannerTask-id"].Details.PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Planner.Tasks["{plannerTask-id}"].Details.PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");

@@ -27,7 +27,7 @@ var requestBody = new Microsoft.Graph.Users.Item.Teamwork.SendActivityNotificati
 		},
 	},
 };
-await graphClient.Users["user-id"].Teamwork.SendActivityNotification.PostAsync(requestBody);
+await graphClient.Users["{user-id}"].Teamwork.SendActivityNotification.PostAsync(requestBody);
 
 
 ```

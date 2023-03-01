@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].Attachments["attachmentBase-id"].DeleteAsync();
+await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].Attachments["{attachmentBase-id}"].DeleteAsync();
 
 
 ```

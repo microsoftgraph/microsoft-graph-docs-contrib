@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Beta.Identity.B2cUserFlows.Item.UserFlowId
 		},
 	},
 };
-await graphClient.Identity.B2cUserFlows["b2cIdentityUserFlow-id"].UserFlowIdentityProviders["identityProviderBase-id"].PatchAsync(requestBody);
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserFlowIdentityProviders["{identityProviderBase-id}"].PatchAsync(requestBody);
 
 
 ```

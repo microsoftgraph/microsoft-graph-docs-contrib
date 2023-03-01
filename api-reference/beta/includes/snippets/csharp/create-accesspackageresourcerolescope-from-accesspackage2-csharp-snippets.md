@@ -24,7 +24,7 @@ var requestBody = new AccessPackageResourceRoleScope
 		OriginSystem = "SharePointOnline",
 	},
 };
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["accessPackage-id"].AccessPackageResourceRoleScopes.PostAsync(requestBody);
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"].AccessPackageResourceRoleScopes.PostAsync(requestBody);
 
 
 ```

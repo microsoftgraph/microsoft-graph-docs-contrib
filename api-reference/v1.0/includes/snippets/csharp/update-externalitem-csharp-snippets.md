@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Models.ExternalConnectors.ExternalItem
 		},
 	},
 };
-var result = await graphClient.External.Connections["externalConnection-id"].Items["externalItem-id"].PatchAsync(requestBody);
+var result = await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PatchAsync(requestBody);
 
 
 ```

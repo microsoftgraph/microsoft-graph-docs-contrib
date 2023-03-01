@@ -37,7 +37,7 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronizatio
 		},
 	},
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].Synchronization.Secrets.PutAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Secrets.PutAsync(requestBody);
 
 
 ```

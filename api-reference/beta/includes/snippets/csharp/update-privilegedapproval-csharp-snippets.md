@@ -11,7 +11,7 @@ var requestBody = new PrivilegedApproval
 	ApprovalState = ApprovalState.Pending,
 	ApproverReason = "approverReason-value",
 };
-var result = await graphClient.PrivilegedApproval["privilegedApproval-id"].PatchAsync(requestBody);
+var result = await graphClient.PrivilegedApproval["{privilegedApproval-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new WorkPosition
 {
 	IsCurrent = true,
 };
-var result = await graphClient.Me.Profile.Positions["workPosition-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Profile.Positions["{workPosition-id}"].PatchAsync(requestBody);
 
 
 ```

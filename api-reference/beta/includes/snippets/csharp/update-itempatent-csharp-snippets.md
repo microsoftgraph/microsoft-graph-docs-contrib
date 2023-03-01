@@ -11,7 +11,7 @@ var requestBody = new ItemPatent
 	Number = "USPTO-3954432633",
 	WebUrl = "https://patents.gov/3954432633",
 };
-var result = await graphClient.Users["user-id"].Profile.Patents["itemPatent-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Profile.Patents["{itemPatent-id}"].PatchAsync(requestBody);
 
 
 ```

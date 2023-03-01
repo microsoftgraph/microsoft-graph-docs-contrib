@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.Item.GetMemberGroups
 {
 	SecurityEnabledOnly = false,
 };
-var result = await graphClient.DirectoryObjects["directoryObject-id"].GetMemberGroups.PostAsync(requestBody);
+var result = await graphClient.DirectoryObjects["{directoryObject-id}"].GetMemberGroups.PostAsync(requestBody);
 
 
 ```

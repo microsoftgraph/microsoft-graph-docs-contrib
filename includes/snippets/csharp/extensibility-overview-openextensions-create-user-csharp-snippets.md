@@ -26,7 +26,7 @@ var requestBody = new Extension
 		},
 	},
 };
-var result = await graphClient.Users["user-id"].Extensions.PostAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Extensions.PostAsync(requestBody);
 
 
 ```

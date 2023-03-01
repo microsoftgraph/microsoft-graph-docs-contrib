@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Reject.RejectPos
 {
 	Reason = RejectReason.None,
 };
-await graphClient.Communications.Calls["call-id"].Reject.PostAsync(requestBody);
+await graphClient.Communications.Calls["{call-id}"].Reject.PostAsync(requestBody);
 
 
 ```

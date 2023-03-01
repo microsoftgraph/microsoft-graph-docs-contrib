@@ -12,7 +12,7 @@ var requestBody = new Channel
 	Description = "This channel is where we debate all future architecture plans",
 	MembershipType = ChannelMembershipType.Standard,
 };
-var result = await graphClient.Teams["team-id"].Channels.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Channels.PostAsync(requestBody);
 
 
 ```

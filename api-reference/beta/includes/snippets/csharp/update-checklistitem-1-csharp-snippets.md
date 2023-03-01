@@ -10,7 +10,7 @@ var requestBody = new ChecklistItem
 {
 	DisplayName = "buy cake",
 };
-var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].ChecklistItems["checklistItem-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].ChecklistItems["{checklistItem-id}"].PatchAsync(requestBody);
 
 
 ```

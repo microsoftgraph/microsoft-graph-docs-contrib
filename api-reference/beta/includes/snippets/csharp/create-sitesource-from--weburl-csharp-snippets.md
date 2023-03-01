@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.SiteSource
 		WebUrl = "https://m365x809305.sharepoint.com/sites/Retail",
 	},
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].LegalHolds["ediscoveryHoldPolicy-id"].SiteSources.PostAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].LegalHolds["{ediscoveryHoldPolicy-id}"].SiteSources.PostAsync(requestBody);
 
 
 ```

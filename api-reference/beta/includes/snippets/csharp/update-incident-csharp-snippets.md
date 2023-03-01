@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.Incident
 		"Demo",
 	},
 };
-var result = await graphClient.Security.Incidents["incident-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.Incidents["{incident-id}"].PatchAsync(requestBody);
 
 
 ```

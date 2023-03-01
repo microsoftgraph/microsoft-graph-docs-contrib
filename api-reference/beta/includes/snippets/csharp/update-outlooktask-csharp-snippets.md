@@ -14,7 +14,7 @@ var requestBody = new OutlookTask
 		TimeZone = "Eastern Standard Time",
 	},
 };
-var result = await graphClient.Me.Outlook.Tasks["outlookTask-id"].PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Eastern Standard Time\"");
 });

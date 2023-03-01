@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Directory.Recommendations["recommendation-id"].Reactivate.PostAsync();
+var result = await graphClient.Directory.Recommendations["{recommendation-id}"].Reactivate.PostAsync();
 
 
 ```

@@ -18,7 +18,7 @@ var requestBody = new ConditionalAccessPolicy
 		},
 	},
 };
-var result = await graphClient.Identity.ConditionalAccess.Policies["conditionalAccessPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.ConditionalAccess.Policies["{conditionalAccessPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

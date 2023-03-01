@@ -26,7 +26,7 @@ var requestBody = new PlannerPlanDetails
 		Category3 = null,
 	},
 };
-var result = await graphClient.Planner.Plans["plannerPlan-id"].Details.PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Planner.Plans["{plannerPlan-id}"].Details.PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");

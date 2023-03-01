@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Education.SynchronizationProfiles["educationSynchronizationProfile-id"].DeleteAsync();
+await graphClient.Education.SynchronizationProfiles["{educationSynchronizationProfile-id}"].DeleteAsync();
 
 
 ```

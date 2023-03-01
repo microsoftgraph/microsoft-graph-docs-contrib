@@ -23,7 +23,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.LegalHold
 	},
 	DisplayName = "String",
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].LegalHolds.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].LegalHolds.PostAsync(requestBody);
 
 
 ```

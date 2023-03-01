@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.UserSource
 	Email = "adelev@contoso.com",
 	IncludedSources = Microsoft.Graph.Beta.Models.Ediscovery.SourceType.Mailbox,
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].LegalHolds["legalHold-id"].UserSources.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].LegalHolds["{legalHold-id}"].UserSources.PostAsync(requestBody);
 
 
 ```

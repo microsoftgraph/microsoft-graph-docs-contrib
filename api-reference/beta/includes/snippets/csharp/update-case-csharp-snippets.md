@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.Case
 	Description = "Updated description",
 	ExternalId = "Updated externalId",
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].PatchAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].PatchAsync(requestBody);
 
 
 ```

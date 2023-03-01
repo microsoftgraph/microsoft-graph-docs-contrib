@@ -10,7 +10,7 @@ var requestBody = new ServicePrincipal
 {
 	PreferredSingleSignOnMode = "saml",
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].PatchAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].PatchAsync(requestBody);
 
 
 ```

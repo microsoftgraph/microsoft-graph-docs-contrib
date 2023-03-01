@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Teamwork.WorkforceIntegrations["workforceIntegration-id"].DeleteAsync();
+await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegration-id}"].DeleteAsync();
 
 
 ```

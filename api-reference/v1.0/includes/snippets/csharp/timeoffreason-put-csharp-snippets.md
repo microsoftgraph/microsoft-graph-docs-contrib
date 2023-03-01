@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Teams.Item.Schedule.TimeOffReasons.Item.Ti
 		},
 	},
 };
-await graphClient.Teams["team-id"].Schedule.TimeOffReasons["timeOffReason-id"].PutAsync(requestBody, (requestConfiguration) =>
+await graphClient.Teams["{team-id}"].Schedule.TimeOffReasons["{timeOffReason-id}"].PutAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 });

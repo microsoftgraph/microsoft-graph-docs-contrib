@@ -15,7 +15,7 @@ var requestBody = new Contact
 	GivenName = "givenName-value",
 	Initials = "initials-value",
 };
-var result = await graphClient.Me.ContactFolders["contactFolder-id"].Contacts.PostAsync(requestBody);
+var result = await graphClient.Me.ContactFolders["{contactFolder-id}"].Contacts.PostAsync(requestBody);
 
 
 ```

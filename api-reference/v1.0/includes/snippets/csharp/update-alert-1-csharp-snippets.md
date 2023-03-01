@@ -26,7 +26,7 @@ var requestBody = new Alert
 		Vendor = "String",
 	},
 };
-var result = await graphClient.Security.Alerts["alert-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.Alerts["{alert-id}"].PatchAsync(requestBody);
 
 
 ```

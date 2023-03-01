@@ -11,7 +11,7 @@ var requestBody = new B2cIdentityUserFlow
 	IsLanguageCustomizationEnabled = true,
 	DefaultLanguageTag = "en",
 };
-var result = await graphClient.Identity.B2cUserFlows["b2cIdentityUserFlow-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].PatchAsync(requestBody);
 
 
 ```

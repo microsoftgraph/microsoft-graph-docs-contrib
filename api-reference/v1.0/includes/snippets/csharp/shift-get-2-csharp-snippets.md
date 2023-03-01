@@ -42,7 +42,7 @@ var requestBody = new ShiftPreferences
 		},
 	},
 };
-var result = await graphClient.Users["user-id"].Settings.ShiftPreferences.PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Settings.ShiftPreferences.PatchAsync(requestBody);
 
 
 ```

@@ -52,7 +52,7 @@ var requestBody = new TimeCard
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Schedule.TimeCards.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.TimeCards.PostAsync(requestBody);
 
 
 ```

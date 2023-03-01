@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Me.Messages.Item.Move.MovePostRequestBody
 {
 	DestinationId = "deleteditems",
 };
-var result = await graphClient.Me.Messages["message-id"].Move.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].Move.PostAsync(requestBody);
 
 
 ```

@@ -37,7 +37,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryHoldPolicy
 		},
 	},
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].LegalHolds.PostAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].LegalHolds.PostAsync(requestBody);
 
 
 ```

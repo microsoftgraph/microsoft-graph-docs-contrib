@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.CopyToDefault
 	},
 	DestinationFileName = "newname.txt",
 };
-await graphClient.Sites["site-id"].ContentTypes["contentType-id"].CopyToDefaultContentLocation.PostAsync(requestBody);
+await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].CopyToDefaultContentLocation.PostAsync(requestBody);
 
 
 ```

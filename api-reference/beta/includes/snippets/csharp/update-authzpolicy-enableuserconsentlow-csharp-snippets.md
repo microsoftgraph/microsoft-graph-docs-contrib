@@ -13,7 +13,7 @@ var requestBody = new AuthorizationPolicy
 		"managePermissionGrantsForSelf.microsoft-user-default-low",
 	},
 };
-var result = await graphClient.Policies.AuthorizationPolicy["authorizationPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.AuthorizationPolicy["{authorizationPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

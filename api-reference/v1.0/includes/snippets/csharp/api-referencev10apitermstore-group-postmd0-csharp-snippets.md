@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Models.TermStore.Group
 {
 	DisplayName = "myGroup",
 };
-var result = await graphClient.Sites["site-id"].TermStore.Groups.PostAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].TermStore.Groups.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new SecureScoreControlProfile
 {
 	ControlStateUpdates = "controlStateUpdates-value",
 };
-var result = await graphClient.Security.SecureScoreControlProfiles["secureScoreControlProfile-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.SecureScoreControlProfiles["{secureScoreControlProfile-id}"].PatchAsync(requestBody);
 
 
 ```

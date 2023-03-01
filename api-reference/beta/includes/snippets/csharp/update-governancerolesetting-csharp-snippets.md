@@ -17,7 +17,7 @@ var requestBody = new GovernanceRoleSetting
 		},
 	},
 };
-var result = await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleSettings["governanceRoleSetting-id"].PatchAsync(requestBody);
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleSettings["{governanceRoleSetting-id}"].PatchAsync(requestBody);
 
 
 ```

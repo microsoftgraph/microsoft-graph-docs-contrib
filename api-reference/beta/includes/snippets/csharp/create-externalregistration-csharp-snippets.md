@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.OnlineMeetings.Item.Registration.R
 		},
 	},
 };
-await graphClient.Me.OnlineMeetings["onlineMeeting-id"].Registration.PostAsync(requestBody);
+await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.PostAsync(requestBody);
 
 
 ```

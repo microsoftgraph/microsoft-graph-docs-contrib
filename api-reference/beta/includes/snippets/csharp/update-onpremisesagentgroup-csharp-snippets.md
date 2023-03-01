@@ -10,7 +10,7 @@ var requestBody = new OnPremisesAgentGroup
 {
 	DisplayName = "Group New Name",
 };
-var result = await graphClient.OnPremisesPublishingProfiles["onPremisesPublishingProfile-id"].AgentGroups["onPremisesAgentGroup-id"].PatchAsync(requestBody);
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].AgentGroups["{onPremisesAgentGroup-id}"].PatchAsync(requestBody);
 
 
 ```

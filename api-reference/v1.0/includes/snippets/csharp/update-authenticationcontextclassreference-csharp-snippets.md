@@ -12,7 +12,7 @@ var requestBody = new AuthenticationContextClassReference
 	Description = "Medium protection level defined for Contoso policy",
 	IsAvailable = true,
 };
-var result = await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences["authenticationContextClassReference-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences["{authenticationContextClassReference-id}"].PatchAsync(requestBody);
 
 
 ```

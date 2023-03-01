@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EmailThreatSubmission
 {
 	IsReportToMicrosoftEnabled = false,
 };
-var result = await graphClient.Security.ThreatSubmission.EmailThreatSubmissionPolicies["emailThreatSubmissionPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.ThreatSubmission.EmailThreatSubmissionPolicies["{emailThreatSubmissionPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

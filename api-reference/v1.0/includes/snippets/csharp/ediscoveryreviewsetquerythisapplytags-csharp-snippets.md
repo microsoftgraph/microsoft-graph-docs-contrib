@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Review
 		},
 	},
 };
-await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].Queries["ediscoveryReviewSetQuery-id"].SecurityApplyTags.PostAsync(requestBody);
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].Queries["{ediscoveryReviewSetQuery-id}"].SecurityApplyTags.PostAsync(requestBody);
 
 
 ```

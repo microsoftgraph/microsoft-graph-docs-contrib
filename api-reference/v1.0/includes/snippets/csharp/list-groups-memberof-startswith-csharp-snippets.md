@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Groups["group-id"].MemberOf.GraphGroup.GetAsync((requestConfiguration) =>
+var result = await graphClient.Groups["{group-id}"].MemberOf.GraphGroup.GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Count = true;
 	requestConfiguration.QueryParameters.Orderby = new string []{ "displayName" };

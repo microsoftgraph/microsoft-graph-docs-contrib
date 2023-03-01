@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Me.Events.Item.Decline.DeclinePostRequestB
 		},
 	},
 };
-await graphClient.Me.Events["event-id"].Decline.PostAsync(requestBody);
+await graphClient.Me.Events["{event-id}"].Decline.PostAsync(requestBody);
 
 
 ```

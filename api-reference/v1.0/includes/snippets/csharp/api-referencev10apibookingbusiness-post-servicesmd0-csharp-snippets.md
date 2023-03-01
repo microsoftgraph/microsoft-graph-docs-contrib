@@ -106,7 +106,7 @@ var requestBody = new BookingService
 		},
 	},
 };
-var result = await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].Services.PostAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Services.PostAsync(requestBody);
 
 
 ```

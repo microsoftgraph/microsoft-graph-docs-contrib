@@ -11,7 +11,7 @@ var requestBody = new CloudPcExternalPartnerSetting
 	OdataType = "#microsoft.graph.cloudPcExternalPartnerSetting",
 	EnableConnection = true,
 };
-var result = await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings["cloudPcExternalPartnerSetting-id"].PatchAsync(requestBody);
+var result = await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings["{cloudPcExternalPartnerSetting-id}"].PatchAsync(requestBody);
 
 
 ```

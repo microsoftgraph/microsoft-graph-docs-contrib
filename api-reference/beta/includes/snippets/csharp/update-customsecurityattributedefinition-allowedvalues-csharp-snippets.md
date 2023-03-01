@@ -27,7 +27,7 @@ var requestBody = new CustomSecurityAttributeDefinition
 		},
 	},
 };
-var result = await graphClient.Directory.CustomSecurityAttributeDefinitions["customSecurityAttributeDefinition-id"].PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Directory.CustomSecurityAttributeDefinitions["{customSecurityAttributeDefinition-id}"].PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("OData-Version", "4.01");
 });

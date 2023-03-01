@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.ServicePrincipals.Item.RemovePassword.Remo
 {
 	KeyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6"),
 };
-await graphClient.ServicePrincipals["servicePrincipal-id"].RemovePassword.PostAsync(requestBody);
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].RemovePassword.PostAsync(requestBody);
 
 
 ```

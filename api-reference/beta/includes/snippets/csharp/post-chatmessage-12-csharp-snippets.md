@@ -14,7 +14,7 @@ var requestBody = new ChatMessage
 		Content = "<emoji alt=\"😶‍🌫️\"></emoji>",
 	},
 };
-var result = await graphClient.Chats["chat-id"].Messages.PostAsync(requestBody);
+var result = await graphClient.Chats["{chat-id}"].Messages.PostAsync(requestBody);
 
 
 ```

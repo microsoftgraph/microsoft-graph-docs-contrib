@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Teamwork.Devices.Item.UpdateSoftware.
 	SoftwareType = TeamworkSoftwareType.TeamsClient,
 	SoftwareVersion = "1.0.96.22",
 };
-await graphClient.Teamwork.Devices["teamworkDevice-id"].UpdateSoftware.PostAsync(requestBody);
+await graphClient.Teamwork.Devices["{teamworkDevice-id}"].UpdateSoftware.PostAsync(requestBody);
 
 
 ```

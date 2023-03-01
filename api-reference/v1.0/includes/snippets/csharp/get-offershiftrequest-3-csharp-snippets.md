@@ -12,7 +12,7 @@ var requestBody = new OfferShiftRequest
 	SenderMessage = "Having a family emergency, could you take this shift for me?",
 	RecipientUserId = "fe278b61-21ac-4872-8b41-1962bbb98e3c",
 };
-var result = await graphClient.Teams["team-id"].Schedule.OfferShiftRequests.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Teams["{team-id}"].Schedule.OfferShiftRequests.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Authorization", "Bearer {token}");
 });

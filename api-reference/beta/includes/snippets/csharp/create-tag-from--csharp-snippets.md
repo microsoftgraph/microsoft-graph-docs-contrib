@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.Tag
 		},
 	},
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].Tags.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Tags.PostAsync(requestBody);
 
 
 ```

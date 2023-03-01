@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.TokenLifetimePolici
 		},
 	},
 };
-await graphClient.Applications["application-id"].TokenLifetimePolicies.PostAsync(requestBody);
+await graphClient.Applications["{application-id}"].TokenLifetimePolicies.PostAsync(requestBody);
 
 
 ```

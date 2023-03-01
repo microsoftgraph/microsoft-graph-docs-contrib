@@ -14,7 +14,7 @@ var requestBody = new ScopedRoleMembership
 		Id = "id-value",
 	},
 };
-var result = await graphClient.Directory.AdministrativeUnits["administrativeUnit-id"].ScopedRoleMembers.PostAsync(requestBody);
+var result = await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].ScopedRoleMembers.PostAsync(requestBody);
 
 
 ```

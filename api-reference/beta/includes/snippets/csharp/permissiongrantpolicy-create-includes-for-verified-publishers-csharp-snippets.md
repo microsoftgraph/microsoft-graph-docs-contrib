@@ -11,7 +11,7 @@ var requestBody = new PermissionGrantConditionSet
 	PermissionType = PermissionType.Delegated,
 	ClientApplicationsFromVerifiedPublisherOnly = true,
 };
-var result = await graphClient.Policies.PermissionGrantPolicies["permissionGrantPolicy-id"].Includes.PostAsync(requestBody);
+var result = await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Includes.PostAsync(requestBody);
 
 
 ```

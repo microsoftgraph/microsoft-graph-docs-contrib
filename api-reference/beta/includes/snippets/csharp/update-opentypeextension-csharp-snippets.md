@@ -33,7 +33,7 @@ var requestBody = new Extension
 		},
 	},
 };
-var result = await graphClient.Groups["group-id"].Threads["conversationThread-id"].Posts["post-id"].Extensions["extension-id"].PatchAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"].Extensions["{extension-id}"].PatchAsync(requestBody);
 
 
 ```

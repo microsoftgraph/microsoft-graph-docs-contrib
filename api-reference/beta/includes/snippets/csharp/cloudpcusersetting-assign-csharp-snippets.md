@@ -26,7 +26,7 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.User
 		},
 	},
 };
-await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["cloudPcUserSetting-id"].Assign.PostAsync(requestBody);
+await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["{cloudPcUserSetting-id}"].Assign.PostAsync(requestBody);
 
 
 ```

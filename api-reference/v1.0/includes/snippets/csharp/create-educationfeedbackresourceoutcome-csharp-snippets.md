@@ -20,7 +20,7 @@ var requestBody = new EducationOutcome
 		},
 	},
 };
-var result = await graphClient.Education.Classes["educationClass-id"].Assignments["educationAssignment-id"].Submissions["educationSubmission-id"].Outcomes.PostAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes.PostAsync(requestBody);
 
 
 ```

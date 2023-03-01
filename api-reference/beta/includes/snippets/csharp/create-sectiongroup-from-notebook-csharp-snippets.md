@@ -10,7 +10,7 @@ var requestBody = new SectionGroup
 {
 	DisplayName = "Section group name",
 };
-var result = await graphClient.Me.Onenote.Notebooks["notebook-id"].SectionGroups.PostAsync(requestBody);
+var result = await graphClient.Me.Onenote.Notebooks["{notebook-id}"].SectionGroups.PostAsync(requestBody);
 
 
 ```

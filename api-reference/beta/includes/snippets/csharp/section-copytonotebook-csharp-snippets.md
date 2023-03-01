@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Onenote.Sections.Item.CopyToNotebo
 	GroupId = "groupId-value",
 	RenameAs = "renameAs-value",
 };
-var result = await graphClient.Me.Onenote.Sections["onenoteSection-id"].CopyToNotebook.PostAsync(requestBody);
+var result = await graphClient.Me.Onenote.Sections["{onenoteSection-id}"].CopyToNotebook.PostAsync(requestBody);
 
 
 ```

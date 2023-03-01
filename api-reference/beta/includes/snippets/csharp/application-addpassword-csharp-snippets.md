@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.AddPassword.AddPass
 		DisplayName = "Password friendly name",
 	},
 };
-var result = await graphClient.Applications["application-id"].AddPassword.PostAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].AddPassword.PostAsync(requestBody);
 
 
 ```

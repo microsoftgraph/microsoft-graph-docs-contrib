@@ -30,7 +30,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPos
 	},
 	ParticipantCapacity = 200,
 };
-await graphClient.Communications.Calls["call-id"].Answer.PostAsync(requestBody);
+await graphClient.Communications.Calls["{call-id}"].Answer.PostAsync(requestBody);
 
 
 ```

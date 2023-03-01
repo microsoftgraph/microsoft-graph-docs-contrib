@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.DataSource
 		},
 	},
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].SourceCollections["sourceCollection-id"].AdditionalSources.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].SourceCollections["{sourceCollection-id}"].AdditionalSources.PostAsync(requestBody);
 
 
 ```

@@ -18,7 +18,7 @@ var requestBody = new MeetingRegistrationQuestion
 		"Other",
 	},
 };
-var result = await graphClient.Me.OnlineMeetings["onlineMeeting-id"].Registration.CustomQuestions["meetingRegistrationQuestion-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.CustomQuestions["{meetingRegistrationQuestion-id}"].PatchAsync(requestBody);
 
 
 ```

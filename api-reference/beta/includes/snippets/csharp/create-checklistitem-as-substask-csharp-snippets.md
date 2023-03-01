@@ -10,7 +10,7 @@ var requestBody = new ChecklistItem
 {
 	DisplayName = "Final sign-off from the team",
 };
-var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].ChecklistItems.PostAsync(requestBody);
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].ChecklistItems.PostAsync(requestBody);
 
 
 ```

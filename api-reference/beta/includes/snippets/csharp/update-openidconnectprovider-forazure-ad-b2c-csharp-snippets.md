@@ -16,7 +16,7 @@ var requestBody = new IdentityProviderBase
 		},
 	},
 };
-var result = await graphClient.Identity.IdentityProviders["identityProviderBase-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"].PatchAsync(requestBody);
 
 
 ```

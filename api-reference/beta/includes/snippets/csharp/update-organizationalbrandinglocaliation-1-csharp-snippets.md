@@ -11,7 +11,7 @@ var requestBody = new OrganizationalBranding
 	SignInPageText = "Default",
 	UsernameHintText = "DefaultHint",
 };
-var result = await graphClient.Organization["organization-id"].Branding.PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Organization["{organization-id}"].Branding.PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Accept-Language", "0");
 });

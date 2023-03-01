@@ -21,7 +21,7 @@ var requestBody = new UnifiedRoleDefinition
 		},
 	},
 };
-var result = await graphClient.RoleManagement.Directory.RoleDefinitions["unifiedRoleDefinition-id"].PatchAsync(requestBody);
+var result = await graphClient.RoleManagement.Directory.RoleDefinitions["{unifiedRoleDefinition-id}"].PatchAsync(requestBody);
 
 
 ```

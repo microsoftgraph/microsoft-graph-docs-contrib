@@ -33,7 +33,7 @@ var requestBody = new SchemaExtension
 		},
 	},
 };
-var result = await graphClient.SchemaExtensions["schemaExtension-id"].PatchAsync(requestBody);
+var result = await graphClient.SchemaExtensions["{schemaExtension-id}"].PatchAsync(requestBody);
 
 
 ```

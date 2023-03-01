@@ -10,7 +10,7 @@ var requestBody = new PermissionGrantPolicy
 {
 	DisplayName = "Custom permission grant policy",
 };
-var result = await graphClient.Policies.PermissionGrantPolicies["permissionGrantPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

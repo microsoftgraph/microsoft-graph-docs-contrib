@@ -11,7 +11,7 @@ var requestBody = new Event
 	IsOnlineMeeting = true,
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 };
-var result = await graphClient.Me.Events["event-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Events["{event-id}"].PatchAsync(requestBody);
 
 
 ```

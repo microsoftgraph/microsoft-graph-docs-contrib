@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.ServicePrincipals.Item.AddKey.AddKeyPostRe
 	},
 	Proof = "eyJ0eXAiOiJ...",
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].AddKey.PostAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].AddKey.PostAsync(requestBody);
 
 
 ```

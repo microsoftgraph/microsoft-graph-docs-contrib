@@ -46,7 +46,7 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Settings.ShiftPreferences.
 		},
 	},
 };
-await graphClient.Users["user-id"].Settings.ShiftPreferences.PutAsync(requestBody);
+await graphClient.Users["{user-id}"].Settings.ShiftPreferences.PutAsync(requestBody);
 
 
 ```

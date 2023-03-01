@@ -17,7 +17,7 @@ var requestBody = new DirectorySetting
 		},
 	},
 };
-var result = await graphClient.Settings["directorySetting-id"].PatchAsync(requestBody);
+var result = await graphClient.Settings["{directorySetting-id}"].PatchAsync(requestBody);
 
 
 ```

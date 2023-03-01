@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Beta.Policies.CrossTenantAccessPolicy.Part
 		},
 	},
 };
-await graphClient.Policies.CrossTenantAccessPolicy.Partners["crossTenantAccessPolicyConfigurationPartner-tenantId"].IdentitySynchronization.PutAsync(requestBody);
+await graphClient.Policies.CrossTenantAccessPolicy.Partners["{crossTenantAccessPolicyConfigurationPartner-tenantId}"].IdentitySynchronization.PutAsync(requestBody);
 
 
 ```

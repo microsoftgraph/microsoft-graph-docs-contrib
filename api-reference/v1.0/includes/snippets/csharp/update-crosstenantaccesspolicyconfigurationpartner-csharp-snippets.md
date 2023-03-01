@@ -15,7 +15,7 @@ var requestBody = new CrossTenantAccessPolicyConfigurationPartner
 		IsHybridAzureADJoinedDeviceAccepted = true,
 	},
 };
-var result = await graphClient.Policies.CrossTenantAccessPolicy.Partners["crossTenantAccessPolicyConfigurationPartner-tenantId"].PatchAsync(requestBody);
+var result = await graphClient.Policies.CrossTenantAccessPolicy.Partners["{crossTenantAccessPolicyConfigurationPartner-tenantId}"].PatchAsync(requestBody);
 
 
 ```

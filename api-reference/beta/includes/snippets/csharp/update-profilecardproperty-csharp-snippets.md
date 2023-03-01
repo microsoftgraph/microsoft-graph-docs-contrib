@@ -23,7 +23,7 @@ var requestBody = new ProfileCardProperty
 		},
 	},
 };
-var result = await graphClient.Organization["organization-id"].Settings.ProfileCardProperties["profileCardProperty-id"].PatchAsync(requestBody);
+var result = await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties["{profileCardProperty-id}"].PatchAsync(requestBody);
 
 
 ```

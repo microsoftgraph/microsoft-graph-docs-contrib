@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Models.Security.UnifiedGroupSource
 		},
 	},
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Custodians["ediscoveryCustodian-id"].UnifiedGroupSources.PostAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Custodians["{ediscoveryCustodian-id}"].UnifiedGroupSources.PostAsync(requestBody);
 
 
 ```

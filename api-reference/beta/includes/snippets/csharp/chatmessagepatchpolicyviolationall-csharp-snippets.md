@@ -23,7 +23,7 @@ var requestBody = new ChatMessage
 		DlpAction = ChatMessagePolicyViolationDlpActionTypes.BlockAccess,
 	},
 };
-var result = await graphClient.Teams["team-id"].Channels["channel-id"].Messages["chatMessage-id"].PatchAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].PatchAsync(requestBody);
 
 
 ```

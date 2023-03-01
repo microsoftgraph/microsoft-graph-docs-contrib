@@ -25,7 +25,7 @@ var requestBody = new AuthenticationCombinationConfiguration
 		},
 	},
 };
-var result = await graphClient.Identity.ConditionalAccess.AuthenticationStrengths.Policies["authenticationStrengthPolicy-id"].CombinationConfigurations.PostAsync(requestBody);
+var result = await graphClient.Identity.ConditionalAccess.AuthenticationStrengths.Policies["{authenticationStrengthPolicy-id}"].CombinationConfigurations.PostAsync(requestBody);
 
 
 ```

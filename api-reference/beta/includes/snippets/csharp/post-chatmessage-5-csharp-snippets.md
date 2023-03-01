@@ -28,7 +28,7 @@ var requestBody = new ChatMessage
 		},
 	},
 };
-var result = await graphClient.Chats["chat-id"].Messages.PostAsync(requestBody);
+var result = await graphClient.Chats["{chat-id}"].Messages.PostAsync(requestBody);
 
 
 ```

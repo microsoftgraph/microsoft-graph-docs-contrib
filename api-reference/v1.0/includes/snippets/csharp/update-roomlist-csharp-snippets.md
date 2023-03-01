@@ -28,7 +28,7 @@ var requestBody = new Place
 		AltitudeAccuracy = null,
 	},
 };
-var result = await graphClient.Places["place-id"].PatchAsync(requestBody);
+var result = await graphClient.Places["{place-id}"].PatchAsync(requestBody);
 
 
 ```

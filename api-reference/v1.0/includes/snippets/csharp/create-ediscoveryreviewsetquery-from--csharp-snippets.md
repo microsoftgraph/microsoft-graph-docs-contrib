@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Models.Security.EdiscoveryReviewSetQuery
 	DisplayName = "My Query 1",
 	ContentQuery = "(Author=\"edison\")",
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].Queries.PostAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].Queries.PostAsync(requestBody);
 
 
 ```

@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.ServicePrincipals.Item.Owners.Item.Ref.$re
 		},
 	},
 };
-await graphClient.ServicePrincipals["servicePrincipal-id"].Owners["directoryObject-id"].Ref.DeleteAsync(requestBody);
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Owners["{directoryObject-id}"].Ref.DeleteAsync(requestBody);
 
 
 ```

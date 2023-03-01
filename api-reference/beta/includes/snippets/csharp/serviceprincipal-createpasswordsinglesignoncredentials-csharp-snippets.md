@@ -25,7 +25,7 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.CreatePassword
 		},
 	},
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].CreatePasswordSingleSignOnCredentials.PostAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].CreatePasswordSingleSignOnCredentials.PostAsync(requestBody);
 
 
 ```

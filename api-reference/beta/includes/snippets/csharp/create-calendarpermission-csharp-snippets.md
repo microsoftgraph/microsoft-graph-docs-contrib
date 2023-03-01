@@ -17,7 +17,7 @@ var requestBody = new CalendarPermission
 	IsRemovable = true,
 	Role = CalendarRoleType.Read,
 };
-var result = await graphClient.Users["user-id"].Calendar.CalendarPermissions.PostAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Calendar.CalendarPermissions.PostAsync(requestBody);
 
 
 ```

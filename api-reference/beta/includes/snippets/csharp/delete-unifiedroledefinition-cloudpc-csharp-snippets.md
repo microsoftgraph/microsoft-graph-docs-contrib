@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.RoleManagement.CloudPC.RoleDefinitions["unifiedRoleDefinition-id"].DeleteAsync();
+await graphClient.RoleManagement.CloudPC.RoleDefinitions["{unifiedRoleDefinition-id}"].DeleteAsync();
 
 
 ```

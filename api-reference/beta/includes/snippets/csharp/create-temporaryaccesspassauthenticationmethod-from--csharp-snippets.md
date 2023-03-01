@@ -12,7 +12,7 @@ var requestBody = new TemporaryAccessPassAuthenticationMethod
 	LifetimeInMinutes = 60,
 	IsUsableOnce = false,
 };
-var result = await graphClient.Users["user-id"].Authentication.TemporaryAccessPassMethods.PostAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods.PostAsync(requestBody);
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Admin.Windows.Updates.UpdatePolicies["updatePolicy-id"].DeleteAsync();
+await graphClient.Admin.Windows.Updates.UpdatePolicies["{updatePolicy-id}"].DeleteAsync();
 
 
 ```

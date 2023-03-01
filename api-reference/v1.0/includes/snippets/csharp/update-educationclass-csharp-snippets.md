@@ -11,7 +11,7 @@ var requestBody = new EducationClass
 	Description = "History - World History 1",
 	DisplayName = "World History Level 1",
 };
-var result = await graphClient.Education.Classes["educationClass-id"].PatchAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].PatchAsync(requestBody);
 
 
 ```

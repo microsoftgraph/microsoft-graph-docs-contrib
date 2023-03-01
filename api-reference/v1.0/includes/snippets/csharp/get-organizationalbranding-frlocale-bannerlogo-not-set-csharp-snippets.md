@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Organization["organization-id"].Branding.Localizations["organizationalBrandingLocalization-id"].BannerLogo.GetAsync();
+await graphClient.Organization["{organization-id}"].Branding.Localizations["{organizationalBrandingLocalization-id}"].BannerLogo.GetAsync();
 
 
 ```

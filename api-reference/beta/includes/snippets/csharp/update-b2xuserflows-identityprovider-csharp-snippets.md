@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Identity.B2xUserFlows.Item.IdentityPr
 		},
 	},
 };
-await graphClient.Identity.B2xUserFlows["b2xIdentityUserFlow-id"].IdentityProviders["identityProvider-id"].PostAsync(requestBody);
+await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].IdentityProviders["{identityProvider-id}"].PostAsync(requestBody);
 
 
 ```

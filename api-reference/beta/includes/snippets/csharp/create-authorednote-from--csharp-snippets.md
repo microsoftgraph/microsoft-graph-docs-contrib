@@ -14,7 +14,7 @@ var requestBody = new AuthoredNote
 		ContentType = BodyType.Text,
 	},
 };
-var result = await graphClient.Privacy.SubjectRightsRequests["subjectRightsRequest-id"].Notes.PostAsync(requestBody);
+var result = await graphClient.Privacy.SubjectRightsRequests["{subjectRightsRequest-id}"].Notes.PostAsync(requestBody);
 
 
 ```

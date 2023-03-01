@@ -13,7 +13,7 @@ var requestBody = new EducationUser
 	MiddleName = "Fernando",
 	Surname = "Cazares",
 };
-var result = await graphClient.Education.Users["educationUser-id"].PatchAsync(requestBody);
+var result = await graphClient.Education.Users["{educationUser-id}"].PatchAsync(requestBody);
 
 
 ```

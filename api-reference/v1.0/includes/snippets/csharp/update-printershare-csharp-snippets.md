@@ -17,7 +17,7 @@ var requestBody = new PrinterShare
 		},
 	},
 };
-var result = await graphClient.Print.Shares["printerShare-id"].PatchAsync(requestBody);
+var result = await graphClient.Print.Shares["{printerShare-id}"].PatchAsync(requestBody);
 
 
 ```

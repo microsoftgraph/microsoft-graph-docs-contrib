@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.AppRoleAssignm
 		},
 	},
 };
-await graphClient.ServicePrincipals["servicePrincipal-id"].AppRoleAssignments.PostAsync(requestBody);
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppRoleAssignments.PostAsync(requestBody);
 
 
 ```

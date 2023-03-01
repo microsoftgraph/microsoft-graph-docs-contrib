@@ -11,7 +11,7 @@ var requestBody = new PersonCertification
 	IssuingAuthority = "International Academy of Marketing Excellence",
 	IssuingCompany = "International Academy of Marketing Excellence",
 };
-var result = await graphClient.Users["user-id"].Profile.Certifications["personCertification-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Profile.Certifications["{personCertification-id}"].PatchAsync(requestBody);
 
 
 ```

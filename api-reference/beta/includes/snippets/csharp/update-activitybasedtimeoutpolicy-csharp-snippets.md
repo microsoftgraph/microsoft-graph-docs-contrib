@@ -15,7 +15,7 @@ var requestBody = new ActivityBasedTimeoutPolicy
 	DisplayName = "displayName-value",
 	IsOrganizationDefault = true,
 };
-var result = await graphClient.Policies.ActivityBasedTimeoutPolicies["activityBasedTimeoutPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.ActivityBasedTimeoutPolicies["{activityBasedTimeoutPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

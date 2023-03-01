@@ -22,7 +22,7 @@ var requestBody = new Microsoft.Graph.Models.Security.EdiscoveryNoncustodialData
 		},
 	},
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].NoncustodialDataSources.PostAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].NoncustodialDataSources.PostAsync(requestBody);
 
 
 ```

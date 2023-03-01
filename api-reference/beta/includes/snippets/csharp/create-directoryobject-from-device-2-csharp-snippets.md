@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Devices.Item.RegisteredUsers.Item.Reg
 		},
 	},
 };
-await graphClient.Devices["device-id"].RegisteredUsers["directoryObject-id"].PostAsync(requestBody);
+await graphClient.Devices["{device-id}"].RegisteredUsers["{directoryObject-id}"].PostAsync(requestBody);
 
 
 ```

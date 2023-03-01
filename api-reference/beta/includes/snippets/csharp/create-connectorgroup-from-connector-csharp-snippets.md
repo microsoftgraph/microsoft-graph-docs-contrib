@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ReferenceCreate
 {
 	OdataId = "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}",
 };
-await graphClient.OnPremisesPublishingProfiles["onPremisesPublishingProfile-id"].Connectors["connector-id"].MemberOf.Ref.PostAsync(requestBody);
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].Connectors["{connector-id}"].MemberOf.Ref.PostAsync(requestBody);
 
 
 ```

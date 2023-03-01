@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.CancelMediaProce
 {
 	ClientContext = "clientContext-value",
 };
-var result = await graphClient.Communications.Calls["call-id"].CancelMediaProcessing.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].CancelMediaProcessing.PostAsync(requestBody);
 
 
 ```

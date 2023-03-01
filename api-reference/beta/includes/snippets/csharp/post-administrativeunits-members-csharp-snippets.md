@@ -36,7 +36,7 @@ var requestBody = new Microsoft.Graph.Beta.AdministrativeUnits.Item.Members.Memb
 		},
 	},
 };
-await graphClient.AdministrativeUnits["administrativeUnit-id"].Members.PostAsync(requestBody);
+await graphClient.AdministrativeUnits["{administrativeUnit-id}"].Members.PostAsync(requestBody);
 
 
 ```

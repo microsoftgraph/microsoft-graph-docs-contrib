@@ -34,7 +34,7 @@ var requestBody = new ConversationThread
 		},
 	},
 };
-var result = await graphClient.Groups["group-id"].Threads["conversationThread-id"].PatchAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].PatchAsync(requestBody);
 
 
 ```

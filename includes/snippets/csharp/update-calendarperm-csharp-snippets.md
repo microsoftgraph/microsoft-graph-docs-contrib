@@ -10,7 +10,7 @@ var requestBody = new CalendarPermission
 {
 	Role = CalendarRoleType.Write,
 };
-var result = await graphClient.Users["user-id"].Calendars["calendar-id"].CalendarPermissions["calendarPermission-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Calendars["{calendar-id}"].CalendarPermissions["{calendarPermission-id}"].PatchAsync(requestBody);
 
 
 ```

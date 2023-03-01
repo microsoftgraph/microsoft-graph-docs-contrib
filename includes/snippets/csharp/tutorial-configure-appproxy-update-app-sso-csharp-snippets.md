@@ -26,7 +26,7 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.Application
 		},
 	},
 };
-await graphClient.Applications["application-id"].PatchAsync(requestBody);
+await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
 
 ```

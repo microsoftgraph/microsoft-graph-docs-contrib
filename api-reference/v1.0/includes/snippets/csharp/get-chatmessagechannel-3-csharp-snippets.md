@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Teams["team-id"].Channels["channel-id"].Messages["chatMessage-id"].Replies["chatMessage-id1"].GetAsync();
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].Replies["{chatMessage-id1}"].GetAsync();
 
 
 ```

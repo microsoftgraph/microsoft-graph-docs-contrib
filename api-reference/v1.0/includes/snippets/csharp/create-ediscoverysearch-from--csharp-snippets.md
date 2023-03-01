@@ -29,7 +29,7 @@ var requestBody = new Microsoft.Graph.Models.Security.EdiscoverySearch
 		},
 	},
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Searches.PostAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Searches.PostAsync(requestBody);
 
 
 ```

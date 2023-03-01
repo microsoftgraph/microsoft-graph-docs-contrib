@@ -21,7 +21,7 @@ var requestBody = new Extension
 		},
 	},
 };
-var result = await graphClient.Me.Extensions["extension-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Extensions["{extension-id}"].PatchAsync(requestBody);
 
 
 ```

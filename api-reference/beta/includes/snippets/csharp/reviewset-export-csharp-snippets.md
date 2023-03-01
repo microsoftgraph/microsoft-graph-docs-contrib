@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.Revi
 	ExportOptions = Microsoft.Graph.Beta.Models.Ediscovery.ExportOptions.OriginalFiles | Microsoft.Graph.Beta.Models.Ediscovery.ExportOptions.FileInfo | Microsoft.Graph.Beta.Models.Ediscovery.ExportOptions.Tags,
 	ExportStructure = Microsoft.Graph.Beta.Models.Ediscovery.ExportFileStructure.Directory,
 };
-await graphClient.Compliance.Ediscovery.Cases["case-id"].ReviewSets["reviewSet-id"].EdiscoveryExport.PostAsync(requestBody);
+await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].EdiscoveryExport.PostAsync(requestBody);
 
 
 ```

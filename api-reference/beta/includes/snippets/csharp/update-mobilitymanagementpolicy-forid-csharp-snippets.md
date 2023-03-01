@@ -13,7 +13,7 @@ var requestBody = new MobilityManagementPolicy
 	DiscoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
 	TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx",
 };
-var result = await graphClient.Policies.MobileDeviceManagementPolicies["mobilityManagementPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

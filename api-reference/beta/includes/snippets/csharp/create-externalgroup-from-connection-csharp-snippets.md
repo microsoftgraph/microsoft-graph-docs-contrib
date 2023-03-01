@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalGro
 	DisplayName = "Contoso Marketing",
 	Description = "The product marketing team",
 };
-var result = await graphClient.External.Connections["externalConnection-id"].Groups.PostAsync(requestBody);
+var result = await graphClient.External.Connections["{externalConnection-id}"].Groups.PostAsync(requestBody);
 
 
 ```

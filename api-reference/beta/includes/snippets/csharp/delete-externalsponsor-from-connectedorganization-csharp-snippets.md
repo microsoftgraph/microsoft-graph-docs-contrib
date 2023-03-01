@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["connectedOrganization-id"].ExternalSponsors["directoryObject-id"].Ref.DeleteAsync();
+await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{connectedOrganization-id}"].ExternalSponsors["{directoryObject-id}"].Ref.DeleteAsync();
 
 
 ```

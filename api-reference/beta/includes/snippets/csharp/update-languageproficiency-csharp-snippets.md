@@ -10,7 +10,7 @@ var requestBody = new LanguageProficiency
 {
 	AllowedAudiences = AllowedAudiences.Organization,
 };
-var result = await graphClient.Me.Profile.Languages["languageProficiency-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Profile.Languages["{languageProficiency-id}"].PatchAsync(requestBody);
 
 
 ```

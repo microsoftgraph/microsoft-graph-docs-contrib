@@ -21,7 +21,7 @@ var requestBody = new ColumnDefinition
 		MaxLength = 255,
 	},
 };
-var result = await graphClient.Sites["site-id"].Lists["list-id"].Columns.PostAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Columns.PostAsync(requestBody);
 
 
 ```

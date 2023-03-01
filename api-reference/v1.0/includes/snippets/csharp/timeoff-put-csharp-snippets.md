@@ -33,7 +33,7 @@ var requestBody = new Microsoft.Graph.Teams.Item.Schedule.TimesOff.Item.TimesOff
 		},
 	},
 };
-await graphClient.Teams["team-id"].Schedule.TimesOff["timeOff-id"].PutAsync(requestBody, (requestConfiguration) =>
+await graphClient.Teams["{team-id}"].Schedule.TimesOff["{timeOff-id}"].PutAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 });

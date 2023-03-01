@@ -25,7 +25,7 @@ var requestBody = new Microsoft.Graph.Identity.B2xUserFlows.Item.Languages.Item.
 		},
 	},
 };
-await graphClient.Identity.B2xUserFlows["b2xIdentityUserFlow-id"].Languages["userFlowLanguageConfiguration-id"].OverridesPages["userFlowLanguagePage-id"].Content.PutAsync(requestBody);
+await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].Languages["{userFlowLanguageConfiguration-id}"].OverridesPages["{userFlowLanguagePage-id}"].Content.PutAsync(requestBody);
 
 
 ```

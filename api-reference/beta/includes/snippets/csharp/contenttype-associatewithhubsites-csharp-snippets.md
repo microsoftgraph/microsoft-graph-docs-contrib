@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Sites.Item.ContentTypes.Item.Associat
 	},
 	PropagateToExistingLists = false,
 };
-await graphClient.Sites["site-id"].ContentTypes["contentType-id"].AssociateWithHubSites.PostAsync(requestBody);
+await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].AssociateWithHubSites.PostAsync(requestBody);
 
 
 ```

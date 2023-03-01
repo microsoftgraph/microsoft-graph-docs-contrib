@@ -31,7 +31,7 @@ var requestBody = new AccessReviewStage
 		},
 	},
 };
-var result = await graphClient.IdentityGovernance.AccessReviews.Definitions["accessReviewScheduleDefinition-id"].Instances["accessReviewInstance-id"].Stages["accessReviewStage-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"].Stages["{accessReviewStage-id}"].PatchAsync(requestBody);
 
 
 ```

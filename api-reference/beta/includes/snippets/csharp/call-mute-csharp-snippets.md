@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Mute.MutePo
 {
 	ClientContext = "clientContext-value",
 };
-var result = await graphClient.Communications.Calls["call-id"].Mute.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].Mute.PostAsync(requestBody);
 
 
 ```

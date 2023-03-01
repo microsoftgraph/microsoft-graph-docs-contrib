@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudie
 		},
 	},
 };
-await graphClient.Admin.Windows.Updates.DeploymentAudiences["deploymentAudience-id"].WindowsUpdatesUpdateAudience.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.DeploymentAudiences["{deploymentAudience-id}"].WindowsUpdatesUpdateAudience.PostAsync(requestBody);
 
 
 ```

@@ -28,7 +28,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.PlayPrompt.PlayP
 		},
 	},
 };
-var result = await graphClient.Communications.Calls["call-id"].PlayPrompt.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].PlayPrompt.PostAsync(requestBody);
 
 
 ```

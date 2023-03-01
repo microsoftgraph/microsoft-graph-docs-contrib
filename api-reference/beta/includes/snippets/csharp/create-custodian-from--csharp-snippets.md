@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.Custodian
 	Email = "AdeleV@contoso.com",
 	ApplyHoldToSources = true,
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].Custodians.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Custodians.PostAsync(requestBody);
 
 
 ```

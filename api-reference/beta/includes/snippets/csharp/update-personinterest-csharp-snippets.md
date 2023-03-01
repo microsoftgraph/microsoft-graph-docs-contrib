@@ -13,7 +13,7 @@ var requestBody = new PersonInterest
 		"Sports",
 	},
 };
-var result = await graphClient.Me.Profile.Interests["personInterest-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Profile.Interests["{personInterest-id}"].PatchAsync(requestBody);
 
 
 ```

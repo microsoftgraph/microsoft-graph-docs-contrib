@@ -11,7 +11,7 @@ var requestBody = new InternalDomainFederation
 	DisplayName = "Contoso name change",
 	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp,
 };
-var result = await graphClient.Domains["domain-id"].FederationConfiguration["internalDomainFederation-id"].PatchAsync(requestBody);
+var result = await graphClient.Domains["{domain-id}"].FederationConfiguration["{internalDomainFederation-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -40,7 +40,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChang
 		},
 	},
 };
-var result = await graphClient.Admin.Windows.Updates.UpdatePolicies["updatePolicy-id"].ComplianceChanges.PostAsync(requestBody);
+var result = await graphClient.Admin.Windows.Updates.UpdatePolicies["{updatePolicy-id}"].ComplianceChanges.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Applications.Item.SetVerifiedPublisher.Set
 {
 	VerifiedPublisherId = "1234567",
 };
-await graphClient.Applications["application-id"].SetVerifiedPublisher.PostAsync(requestBody);
+await graphClient.Applications["{application-id}"].SetVerifiedPublisher.PostAsync(requestBody);
 
 
 ```

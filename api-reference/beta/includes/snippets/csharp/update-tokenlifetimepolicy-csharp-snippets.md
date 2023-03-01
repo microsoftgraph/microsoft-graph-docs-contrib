@@ -15,7 +15,7 @@ var requestBody = new TokenLifetimePolicy
 	DisplayName = "displayName-value",
 	IsOrganizationDefault = true,
 };
-var result = await graphClient.Policies.TokenLifetimePolicies["tokenLifetimePolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.TokenLifetimePolicies["{tokenLifetimePolicy-id}"].PatchAsync(requestBody);
 
 
 ```

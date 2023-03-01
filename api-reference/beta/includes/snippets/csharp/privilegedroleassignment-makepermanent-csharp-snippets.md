@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.PrivilegedRoleAssignments.Item.MakePe
 	TicketNumber = "ticketNumber-value",
 	TicketSystem = "ticketSystem-value",
 };
-var result = await graphClient.PrivilegedRoleAssignments["privilegedRoleAssignment-id"].MakePermanent.PostAsync(requestBody);
+var result = await graphClient.PrivilegedRoleAssignments["{privilegedRoleAssignment-id}"].MakePermanent.PostAsync(requestBody);
 
 
 ```

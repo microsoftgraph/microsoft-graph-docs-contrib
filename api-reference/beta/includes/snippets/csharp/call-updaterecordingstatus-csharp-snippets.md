@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.UpdateRecor
 	ClientContext = "clientContext-value",
 	Status = RecordingStatus.NotRecording | RecordingStatus.Recording | RecordingStatus.Failed,
 };
-var result = await graphClient.Communications.Calls["call-id"].UpdateRecordingStatus.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].UpdateRecordingStatus.PostAsync(requestBody);
 
 
 ```

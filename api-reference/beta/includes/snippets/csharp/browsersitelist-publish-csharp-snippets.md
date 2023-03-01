@@ -28,7 +28,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Edge.InternetExplorerMode.SiteL
 		},
 	},
 };
-var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].Publish.PostAsync(requestBody);
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].Publish.PostAsync(requestBody);
 
 
 ```

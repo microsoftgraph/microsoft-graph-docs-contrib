@@ -24,7 +24,7 @@ var requestBody = new Permission
 		},
 	},
 };
-var result = await graphClient.Sites["site-id"].Permissions.PostAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].Permissions.PostAsync(requestBody);
 
 
 ```

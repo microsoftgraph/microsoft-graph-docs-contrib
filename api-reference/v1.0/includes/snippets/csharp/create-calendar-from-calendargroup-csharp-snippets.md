@@ -10,7 +10,7 @@ var requestBody = new Calendar
 {
 	Name = "Marketing calendar",
 };
-var result = await graphClient.Me.CalendarGroups["calendarGroup-id"].Calendars.PostAsync(requestBody);
+var result = await graphClient.Me.CalendarGroups["{calendarGroup-id}"].Calendars.PostAsync(requestBody);
 
 
 ```

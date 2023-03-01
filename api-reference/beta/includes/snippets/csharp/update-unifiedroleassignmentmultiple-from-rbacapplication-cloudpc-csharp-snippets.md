@@ -11,7 +11,7 @@ var requestBody = new UnifiedRoleAssignmentMultiple
 	DisplayName = "NewName",
 	Description = "A new roleAssignment",
 };
-var result = await graphClient.RoleManagement.CloudPC.RoleAssignments["unifiedRoleAssignmentMultiple-id"].PatchAsync(requestBody);
+var result = await graphClient.RoleManagement.CloudPC.RoleAssignments["{unifiedRoleAssignmentMultiple-id}"].PatchAsync(requestBody);
 
 
 ```

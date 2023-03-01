@@ -37,7 +37,7 @@ var requestBody = new Microsoft.Graph.Beta.Chats.Item.SendActivityNotification.S
 		},
 	},
 };
-await graphClient.Chats["chat-id"].SendActivityNotification.PostAsync(requestBody);
+await graphClient.Chats["{chat-id}"].SendActivityNotification.PostAsync(requestBody);
 
 
 ```

@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.IdentityGovernance.AccessReviews.Definitio
 		},
 	},
 };
-await graphClient.IdentityGovernance.AccessReviews.Definitions["accessReviewScheduleDefinition-id"].Instances["accessReviewInstance-id"].Decisions["accessReviewInstanceDecisionItem-id"].PostAsync(requestBody);
+await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"].PostAsync(requestBody);
 
 
 ```

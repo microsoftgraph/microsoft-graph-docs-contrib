@@ -13,7 +13,7 @@ var requestBody = new LinkedResource
 	DisplayName = "Microsoft",
 	ExternalId = "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9",
 };
-var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].LinkedResources.PostAsync(requestBody);
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].LinkedResources.PostAsync(requestBody);
 
 
 ```

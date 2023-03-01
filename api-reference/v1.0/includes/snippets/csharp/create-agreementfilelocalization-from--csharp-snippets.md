@@ -18,7 +18,7 @@ var requestBody = new AgreementFileLocalization
 		Data = Convert.FromBase64String("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"),
 	},
 };
-var result = await graphClient.IdentityGovernance.TermsOfUse.Agreements["agreement-id"].Files.PostAsync(requestBody);
+var result = await graphClient.IdentityGovernance.TermsOfUse.Agreements["{agreement-id}"].Files.PostAsync(requestBody);
 
 
 ```

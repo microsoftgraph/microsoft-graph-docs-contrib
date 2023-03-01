@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participant
 	},
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
 };
-var result = await graphClient.Communications.Calls["call-id"].Participants["participant-id"].StartHoldMusic.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].Participants["{participant-id}"].StartHoldMusic.PostAsync(requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ var requestBody = new UnifiedRoleAssignmentMultiple
 		"2d5386a7-732f-44db-9cf8-f82dd2a1c0e0",
 	},
 };
-var result = await graphClient.RoleManagement.DeviceManagement.RoleAssignments["unifiedRoleAssignmentMultiple-id"].PatchAsync(requestBody);
+var result = await graphClient.RoleManagement.DeviceManagement.RoleAssignments["{unifiedRoleAssignmentMultiple-id}"].PatchAsync(requestBody);
 
 
 ```

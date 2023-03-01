@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Onenote.Pages.Item.CopyToSection.C
 	Id = "id-value",
 	GroupId = "groupId-value",
 };
-var result = await graphClient.Me.Onenote.Pages["onenotePage-id"].CopyToSection.PostAsync(requestBody);
+var result = await graphClient.Me.Onenote.Pages["{onenotePage-id}"].CopyToSection.PostAsync(requestBody);
 
 
 ```

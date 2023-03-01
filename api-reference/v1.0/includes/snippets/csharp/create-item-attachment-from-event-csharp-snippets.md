@@ -36,7 +36,7 @@ var requestBody = new Attachment
 		},
 	},
 };
-var result = await graphClient.Me.Events["event-id"].Attachments.PostAsync(requestBody);
+var result = await graphClient.Me.Events["{event-id}"].Attachments.PostAsync(requestBody);
 
 
 ```

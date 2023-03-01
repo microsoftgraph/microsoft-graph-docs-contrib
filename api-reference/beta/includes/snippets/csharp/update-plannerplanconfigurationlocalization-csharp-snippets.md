@@ -34,7 +34,7 @@ var requestBody = new PlannerPlanConfigurationLocalization
 		},
 	},
 };
-var result = await graphClient.Solutions.BusinessScenarios["businessScenario-id"].Planner.PlanConfiguration.Localizations["plannerPlanConfigurationLocalization-id"].PatchAsync(requestBody);
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration.Localizations["{plannerPlanConfigurationLocalization-id}"].PatchAsync(requestBody);
 
 
 ```

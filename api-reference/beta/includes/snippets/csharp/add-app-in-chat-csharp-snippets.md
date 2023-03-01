@@ -15,7 +15,7 @@ var requestBody = new TeamsAppInstallation
 		},
 	},
 };
-var result = await graphClient.Chats["chat-id"].InstalledApps.PostAsync(requestBody);
+var result = await graphClient.Chats["{chat-id}"].InstalledApps.PostAsync(requestBody);
 
 
 ```

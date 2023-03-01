@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Todo.Lists.Item.Tasks.Item.Attachm
 		Size = 3483322L,
 	},
 };
-var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].Attachments.CreateUploadSession.PostAsync(requestBody);
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
 
 ```

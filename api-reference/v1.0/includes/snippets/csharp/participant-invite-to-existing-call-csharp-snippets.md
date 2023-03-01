@@ -28,7 +28,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Inv
 	},
 	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
 };
-var result = await graphClient.Communications.Calls["call-id"].Participants.Invite.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].Participants.Invite.PostAsync(requestBody);
 
 
 ```

@@ -24,7 +24,7 @@ var requestBody = new ListItem
 		},
 	},
 };
-var result = await graphClient.Sites["site-id"].Lists["list-id"].Items.PostAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items.PostAsync(requestBody);
 
 
 ```

@@ -21,7 +21,7 @@ var requestBody = new GovernanceRoleAssignmentRequest
 		Type = "Once",
 	},
 };
-var result = await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleAssignmentRequests.PostAsync(requestBody);
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
 
 
 ```

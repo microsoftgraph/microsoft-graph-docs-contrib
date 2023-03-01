@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Attachments.CreateUp
 		Size = 3483322L,
 	},
 };
-var result = await graphClient.Me.Messages["message-id"].Attachments.CreateUploadSession.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
 
 ```

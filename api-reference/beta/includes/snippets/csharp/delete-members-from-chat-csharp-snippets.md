@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Chats["chat-id"].Members["conversationMember-id"].DeleteAsync();
+await graphClient.Chats["{chat-id}"].Members["{conversationMember-id}"].DeleteAsync();
 
 
 ```

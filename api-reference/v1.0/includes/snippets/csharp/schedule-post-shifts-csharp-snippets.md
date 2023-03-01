@@ -50,7 +50,7 @@ var requestBody = new Shift
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Schedule.Shifts.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.Shifts.PostAsync(requestBody);
 
 
 ```

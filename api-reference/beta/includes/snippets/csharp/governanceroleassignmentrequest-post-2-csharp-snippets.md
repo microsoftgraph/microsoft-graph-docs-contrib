@@ -22,7 +22,7 @@ var requestBody = new GovernanceRoleAssignmentRequest
 	},
 	LinkedEligibleRoleAssignmentId = "e327f4be-42a0-47a2-8579-0a39b025b394",
 };
-var result = await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleAssignmentRequests.PostAsync(requestBody);
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
 
 
 ```

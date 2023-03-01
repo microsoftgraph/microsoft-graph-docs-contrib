@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets
 		},
 	},
 };
-await graphClient.Admin.Windows.Updates.UpdatableAssets["updatableAsset-id"].WindowsUpdatesRemoveMembers.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].WindowsUpdatesRemoveMembers.PostAsync(requestBody);
 
 
 ```

@@ -11,7 +11,7 @@ var requestBody = new PlannerRosterMember
 	OdataType = "#microsoft.graph.plannerRosterMember",
 	UserId = "String",
 };
-var result = await graphClient.Planner.Rosters["plannerRoster-id"].Members.PostAsync(requestBody);
+var result = await graphClient.Planner.Rosters["{plannerRoster-id}"].Members.PostAsync(requestBody);
 
 
 ```

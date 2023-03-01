@@ -27,7 +27,7 @@ var requestBody = new Schedule
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Schedule.PutAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.PutAsync(requestBody);
 
 
 ```

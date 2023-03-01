@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Policies.FeatureRolloutPolicies["featureRolloutPolicy-id"].AppliesTo["directoryObject-id"].Ref.DeleteAsync();
+await graphClient.Policies.FeatureRolloutPolicies["{featureRolloutPolicy-id}"].AppliesTo["{directoryObject-id}"].Ref.DeleteAsync();
 
 
 ```

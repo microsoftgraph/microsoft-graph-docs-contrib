@@ -28,7 +28,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
 		},
 	},
 };
-var result = await graphClient.Admin.Windows.Updates.UpdatePolicies["updatePolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Admin.Windows.Updates.UpdatePolicies["{updatePolicy-id}"].PatchAsync(requestBody);
 
 
 ```

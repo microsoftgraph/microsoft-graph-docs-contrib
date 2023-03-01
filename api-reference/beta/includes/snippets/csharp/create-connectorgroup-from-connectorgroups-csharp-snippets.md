@@ -11,7 +11,7 @@ var requestBody = new ConnectorGroup
 	Name = "name-value",
 	IsDefault = false,
 };
-var result = await graphClient.OnPremisesPublishingProfiles["onPremisesPublishingProfile-id"].ConnectorGroups.PostAsync(requestBody);
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups.PostAsync(requestBody);
 
 
 ```

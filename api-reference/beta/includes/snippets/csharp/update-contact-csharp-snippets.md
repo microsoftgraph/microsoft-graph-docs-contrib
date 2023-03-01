@@ -25,7 +25,7 @@ var requestBody = new Contact
 		},
 	},
 };
-var result = await graphClient.Me.Contacts["contact-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Contacts["{contact-id}"].PatchAsync(requestBody);
 
 
 ```

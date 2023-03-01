@@ -11,7 +11,7 @@ var requestBody = new Group
 	Description = "Contoso Life v2.0",
 	DisplayName = "Contoso Life Renewed",
 };
-var result = await graphClient.Groups["group-id"].PatchAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].PatchAsync(requestBody);
 
 
 ```

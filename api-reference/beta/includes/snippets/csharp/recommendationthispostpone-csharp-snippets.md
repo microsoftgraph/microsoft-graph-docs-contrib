@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.DirectoryNamespace.Recommendations.It
 {
 	PostponeUntilDateTime = DateTimeOffset.Parse("2023-02-01T02:53:00Z"),
 };
-var result = await graphClient.Directory.Recommendations["recommendation-id"].Postpone.PostAsync(requestBody);
+var result = await graphClient.Directory.Recommendations["{recommendation-id}"].Postpone.PostAsync(requestBody);
 
 
 ```

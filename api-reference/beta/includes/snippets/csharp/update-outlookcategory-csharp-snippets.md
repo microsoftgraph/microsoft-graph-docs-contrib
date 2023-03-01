@@ -10,7 +10,7 @@ var requestBody = new OutlookCategory
 {
 	Color = CategoryColor.Preset15,
 };
-var result = await graphClient.Me.Outlook.MasterCategories["outlookCategory-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Outlook.MasterCategories["{outlookCategory-id}"].PatchAsync(requestBody);
 
 
 ```

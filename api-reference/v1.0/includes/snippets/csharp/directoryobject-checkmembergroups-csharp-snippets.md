@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.DirectoryObjects.Item.CheckMemberGroups.Ch
 		"c9103f26-f3cf-4004-a611-2a14e81b8f79",
 	},
 };
-var result = await graphClient.DirectoryObjects["directoryObject-id"].CheckMemberGroups.PostAsync(requestBody);
+var result = await graphClient.DirectoryObjects["{directoryObject-id}"].CheckMemberGroups.PostAsync(requestBody);
 
 
 ```

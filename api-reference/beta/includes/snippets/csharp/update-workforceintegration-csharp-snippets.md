@@ -19,7 +19,7 @@ var requestBody = new WorkforceIntegration
 	Url = "url-value",
 	Supports = WorkforceIntegrationSupportedEntities.None,
 };
-var result = await graphClient.Teamwork.WorkforceIntegrations["workforceIntegration-id"].PatchAsync(requestBody);
+var result = await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegration-id}"].PatchAsync(requestBody);
 
 
 ```

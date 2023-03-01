@@ -10,7 +10,7 @@ var requestBody = new OutlookTaskGroup
 {
 	Name = "Personal Tasks",
 };
-var result = await graphClient.Me.Outlook.TaskGroups["outlookTaskGroup-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Outlook.TaskGroups["{outlookTaskGroup-id}"].PatchAsync(requestBody);
 
 
 ```

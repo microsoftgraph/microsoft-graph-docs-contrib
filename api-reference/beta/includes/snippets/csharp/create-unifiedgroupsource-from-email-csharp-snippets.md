@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.UnifiedGroupSource
 	},
 	IncludedSources = Microsoft.Graph.Beta.Models.Ediscovery.SourceType.Mailbox | Microsoft.Graph.Beta.Models.Ediscovery.SourceType.Site,
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].Custodians["custodian-id"].UnifiedGroupSources.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Custodians["{custodian-id}"].UnifiedGroupSources.PostAsync(requestBody);
 
 
 ```

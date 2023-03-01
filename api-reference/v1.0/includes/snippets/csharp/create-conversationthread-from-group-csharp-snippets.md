@@ -32,7 +32,7 @@ var requestBody = new ConversationThread
 		},
 	},
 };
-var result = await graphClient.Groups["group-id"].Threads.PostAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Threads.PostAsync(requestBody);
 
 
 ```

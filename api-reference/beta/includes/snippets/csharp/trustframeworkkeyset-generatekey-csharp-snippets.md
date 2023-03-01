@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.GenerateK
 	Nbf = 1508969811L,
 	Exp = 1508969811L,
 };
-var result = await graphClient.TrustFramework.KeySets["trustFrameworkKeySet-id"].GenerateKey.PostAsync(requestBody);
+var result = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].GenerateKey.PostAsync(requestBody);
 
 
 ```

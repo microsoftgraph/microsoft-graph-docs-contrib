@@ -14,7 +14,7 @@ var requestBody = new GovernanceRoleAssignmentRequest
 	AssignmentState = "Eligible",
 	Type = "AdminRemove",
 };
-var result = await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleAssignmentRequests.PostAsync(requestBody);
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
 
 
 ```

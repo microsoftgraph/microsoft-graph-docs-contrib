@@ -15,7 +15,7 @@ var requestBody = new BrowserSite
 	AllowRedirect = false,
 	Comment = "Updating to Edge.",
 };
-var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].Sites["browserSite-id"].PatchAsync(requestBody);
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].Sites["{browserSite-id}"].PatchAsync(requestBody);
 
 
 ```

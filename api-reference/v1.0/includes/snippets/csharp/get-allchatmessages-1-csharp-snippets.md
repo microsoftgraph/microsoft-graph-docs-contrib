@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Chats["chat-id"].Messages.GetAsync((requestConfiguration) =>
+var result = await graphClient.Chats["{chat-id}"].Messages.GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Top = 2;
 });

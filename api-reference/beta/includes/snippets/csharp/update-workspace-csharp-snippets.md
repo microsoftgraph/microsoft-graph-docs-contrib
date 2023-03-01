@@ -28,7 +28,7 @@ var requestBody = new Place
 		},
 	},
 };
-var result = await graphClient.Places["place-id"].PatchAsync(requestBody);
+var result = await graphClient.Places["{place-id}"].PatchAsync(requestBody);
 
 
 ```

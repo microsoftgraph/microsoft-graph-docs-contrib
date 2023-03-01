@@ -43,7 +43,7 @@ var requestBody = new Event
 	IsOnlineMeeting = true,
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 };
-var result = await graphClient.Me.Calendars["calendar-id"].Events.PostAsync(requestBody);
+var result = await graphClient.Me.Calendars["{calendar-id}"].Events.PostAsync(requestBody);
 
 
 ```

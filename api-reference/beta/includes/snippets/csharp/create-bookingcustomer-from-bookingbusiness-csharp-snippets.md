@@ -47,7 +47,7 @@ var requestBody = new BookingCustomer
 		},
 	},
 };
-var result = await graphClient.BookingBusinesses["bookingBusiness-id"].Customers.PostAsync(requestBody);
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Customers.PostAsync(requestBody);
 
 
 ```

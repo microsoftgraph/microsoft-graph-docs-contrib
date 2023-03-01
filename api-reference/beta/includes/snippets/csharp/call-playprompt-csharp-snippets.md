@@ -29,7 +29,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.PlayPrompt.
 	},
 	Loop = false,
 };
-var result = await graphClient.Communications.Calls["call-id"].PlayPrompt.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].PlayPrompt.PostAsync(requestBody);
 
 
 ```

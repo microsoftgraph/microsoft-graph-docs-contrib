@@ -42,7 +42,7 @@ var requestBody = new Microsoft.Graph.Teams.Item.SendActivityNotification.SendAc
 		},
 	},
 };
-await graphClient.Teams["team-id"].SendActivityNotification.PostAsync(requestBody);
+await graphClient.Teams["{team-id}"].SendActivityNotification.PostAsync(requestBody);
 
 
 ```

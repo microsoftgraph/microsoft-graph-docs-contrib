@@ -14,7 +14,7 @@ var requestBody = new CrossTenantAccessPolicyConfigurationPartner
 		OutboundAllowed = true,
 	},
 };
-var result = await graphClient.Policies.CrossTenantAccessPolicy.Partners["crossTenantAccessPolicyConfigurationPartner-tenantId"].PatchAsync(requestBody);
+var result = await graphClient.Policies.CrossTenantAccessPolicy.Partners["{crossTenantAccessPolicyConfigurationPartner-tenantId}"].PatchAsync(requestBody);
 
 
 ```

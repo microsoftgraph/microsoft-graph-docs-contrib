@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Forwar
 		},
 	},
 };
-await graphClient.Groups["group-id"].Threads["conversationThread-id"].Posts["post-id"].Forward.PostAsync(requestBody);
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"].Forward.PostAsync(requestBody);
 
 
 ```

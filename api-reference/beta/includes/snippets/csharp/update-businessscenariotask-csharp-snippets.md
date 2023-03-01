@@ -17,7 +17,7 @@ var requestBody = new BusinessScenarioTask
 		ExternalObjectVersion = "000003",
 	},
 };
-var result = await graphClient.Solutions.BusinessScenarios["businessScenario-id"].Planner.Tasks["businessScenarioTask-id"].PatchAsync(requestBody);
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.Tasks["{businessScenarioTask-id}"].PatchAsync(requestBody);
 
 
 ```

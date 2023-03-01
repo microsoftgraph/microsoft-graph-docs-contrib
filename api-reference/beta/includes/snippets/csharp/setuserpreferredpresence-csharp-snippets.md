@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Presence.SetUserPreferredP
 	Activity = "DoNotDisturb",
 	ExpirationDuration = TimeSpan.Parse("PT8H"),
 };
-await graphClient.Users["user-id"].Presence.SetUserPreferredPresence.PostAsync(requestBody);
+await graphClient.Users["{user-id}"].Presence.SetUserPreferredPresence.PostAsync(requestBody);
 
 
 ```

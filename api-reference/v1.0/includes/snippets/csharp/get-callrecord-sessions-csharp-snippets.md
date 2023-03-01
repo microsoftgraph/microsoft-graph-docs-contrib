@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Communications.CallRecords["callRecord-id"].Sessions.GetAsync();
+var result = await graphClient.Communications.CallRecords["{callRecord-id}"].Sessions.GetAsync();
 
 
 ```

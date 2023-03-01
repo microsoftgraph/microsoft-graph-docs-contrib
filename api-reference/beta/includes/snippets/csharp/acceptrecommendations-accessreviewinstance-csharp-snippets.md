@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.PendingAccessReviewInstances["accessReviewInstance-id"].AcceptRecommendations.PostAsync();
+await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"].AcceptRecommendations.PostAsync();
 
 
 ```

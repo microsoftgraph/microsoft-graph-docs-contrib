@@ -10,7 +10,7 @@ var requestBody = new PersonAnnotation
 {
 	AllowedAudiences = AllowedAudiences.Organization,
 };
-var result = await graphClient.Users["user-id"].Profile.Notes["personAnnotation-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Profile.Notes["{personAnnotation-id}"].PatchAsync(requestBody);
 
 
 ```

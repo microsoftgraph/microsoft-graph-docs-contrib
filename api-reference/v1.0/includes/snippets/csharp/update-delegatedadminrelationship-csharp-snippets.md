@@ -37,7 +37,7 @@ var requestBody = new DelegatedAdminRelationship
 		},
 	},
 };
-var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["delegatedAdminRelationship-id"].PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["{delegatedAdminRelationship-id}"].PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("If-Match", "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"");
 });

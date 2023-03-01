@@ -11,7 +11,7 @@ var requestBody = new Schedule
 	Enabled = true,
 	TimeZone = "America/Chicago",
 };
-var result = await graphClient.Teams["team-id"].Schedule.PutAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.PutAsync(requestBody);
 
 
 ```

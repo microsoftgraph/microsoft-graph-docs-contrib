@@ -12,7 +12,7 @@ var requestBody = new TiIndicator
 	Confidence = 42,
 	Description = "description-after-update",
 };
-var result = await graphClient.Security.TiIndicators["tiIndicator-id"].PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Security.TiIndicators["{tiIndicator-id}"].PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 });

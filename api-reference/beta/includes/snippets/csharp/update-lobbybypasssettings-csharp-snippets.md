@@ -13,7 +13,7 @@ var requestBody = new OnlineMeeting
 		IsDialInBypassEnabled = true,
 	},
 };
-var result = await graphClient.Me.OnlineMeetings["onlineMeeting-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].PatchAsync(requestBody);
 
 
 ```

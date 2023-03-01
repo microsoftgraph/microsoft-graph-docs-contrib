@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Organization.Item.Branding.BrandingDeleteR
 		},
 	},
 };
-await graphClient.Organization["organization-id"].Branding.DeleteAsync(requestBody);
+await graphClient.Organization["{organization-id}"].Branding.DeleteAsync(requestBody);
 
 
 ```

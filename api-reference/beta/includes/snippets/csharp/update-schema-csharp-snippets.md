@@ -38,7 +38,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.Schema
 		},
 	},
 };
-var result = await graphClient.External.Connections["externalConnection-id"].Schema.PatchAsync(requestBody);
+var result = await graphClient.External.Connections["{externalConnection-id}"].Schema.PatchAsync(requestBody);
 
 
 ```

@@ -51,7 +51,7 @@ var requestBody = new EducationOutcome
 		},
 	},
 };
-var result = await graphClient.Education.Classes["educationClass-id"].Assignments["educationAssignment-id"].Submissions["educationSubmission-id"].Outcomes["educationOutcome-id"].PatchAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"].PatchAsync(requestBody);
 
 
 ```

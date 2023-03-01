@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.Forward.ForwardPostReq
 	},
 	Comment = "Dana, hope you can make this meeting.",
 };
-await graphClient.Me.Events["event-id"].Forward.PostAsync(requestBody);
+await graphClient.Me.Events["{event-id}"].Forward.PostAsync(requestBody);
 
 
 ```

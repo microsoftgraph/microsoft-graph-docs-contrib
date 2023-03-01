@@ -10,7 +10,7 @@ var requestBody = new Application
 {
 	DisplayName = "New display name",
 };
-var result = await graphClient.Applications["application-id"].PatchAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
 
 ```

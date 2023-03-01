@@ -41,7 +41,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participant
 		},
 	},
 };
-await graphClient.Communications.Calls["call-id"].Participants["participant-id"].PostAsync(requestBody);
+await graphClient.Communications.Calls["{call-id}"].Participants["{participant-id}"].PostAsync(requestBody);
 
 
 ```

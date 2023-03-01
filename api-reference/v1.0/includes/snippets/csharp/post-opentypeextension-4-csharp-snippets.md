@@ -44,7 +44,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Reply.
 		},
 	},
 };
-await graphClient.Groups["group-id"].Threads["conversationThread-id"].Posts["post-id"].Reply.PostAsync(requestBody);
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"].Reply.PostAsync(requestBody);
 
 
 ```

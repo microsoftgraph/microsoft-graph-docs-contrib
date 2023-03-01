@@ -10,7 +10,7 @@ var requestBody = new PublishedResource
 {
 	DisplayName = "Demo provisioning (updated)",
 };
-var result = await graphClient.OnPremisesPublishingProfiles["onPremisesPublishingProfile-id"].PublishedResources["publishedResource-id"].PatchAsync(requestBody);
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].PublishedResources["{publishedResource-id}"].PatchAsync(requestBody);
 
 
 ```

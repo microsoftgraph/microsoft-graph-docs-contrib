@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.AppCatalogs.TeamsApps["teamsApp-id"].AppDefinitions["teamsAppDefinition-id"].OutlineIcon.HostedContent.Content.GetAsync();
+await graphClient.AppCatalogs.TeamsApps["{teamsApp-id}"].AppDefinitions["{teamsAppDefinition-id}"].OutlineIcon.HostedContent.Content.GetAsync();
 
 
 ```

@@ -30,7 +30,7 @@ var requestBody = new PlannerPlanConfiguration
 		},
 	},
 };
-var result = await graphClient.Solutions.BusinessScenarios["businessScenario-id"].Planner.PlanConfiguration.PatchAsync(requestBody);
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration.PatchAsync(requestBody);
 
 
 ```

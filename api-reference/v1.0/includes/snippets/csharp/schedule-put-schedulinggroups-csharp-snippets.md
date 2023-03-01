@@ -25,7 +25,7 @@ var requestBody = new Microsoft.Graph.Teams.Item.Schedule.SchedulingGroups.Item.
 		},
 	},
 };
-await graphClient.Teams["team-id"].Schedule.SchedulingGroups["schedulingGroup-id"].PutAsync(requestBody, (requestConfiguration) =>
+await graphClient.Teams["{team-id}"].Schedule.SchedulingGroups["{schedulingGroup-id}"].PutAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 });

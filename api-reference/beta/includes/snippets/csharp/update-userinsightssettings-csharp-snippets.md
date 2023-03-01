@@ -10,7 +10,7 @@ var requestBody = new UserInsightsSettings
 {
 	IsEnabled = false,
 };
-var result = await graphClient.Users["user-id"].Settings.ItemInsights.PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Settings.ItemInsights.PatchAsync(requestBody);
 
 
 ```

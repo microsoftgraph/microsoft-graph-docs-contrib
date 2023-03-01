@@ -30,7 +30,7 @@ var requestBody = new Organization
 		"tech@contoso.com",
 	},
 };
-var result = await graphClient.Organization["organization-id"].PatchAsync(requestBody);
+var result = await graphClient.Organization["{organization-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -27,7 +27,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionLabel
 	LabelToBeApplied = "String",
 	DefaultRecordBehavior = Microsoft.Graph.Beta.Models.Security.DefaultRecordBehavior.StartLocked,
 };
-var result = await graphClient.Security.Labels.RetentionLabels["retentionLabel-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.Labels.RetentionLabels["{retentionLabel-id}"].PatchAsync(requestBody);
 
 
 ```

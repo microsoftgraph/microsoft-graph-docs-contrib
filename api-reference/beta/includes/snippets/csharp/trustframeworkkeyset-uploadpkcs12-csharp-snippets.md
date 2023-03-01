@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.UploadPkc
 	Key = "Base64-encoded-pfx-content",
 	Password = "password-value",
 };
-var result = await graphClient.TrustFramework.KeySets["trustFrameworkKeySet-id"].UploadPkcs12.PostAsync(requestBody);
+var result = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].UploadPkcs12.PostAsync(requestBody);
 
 
 ```

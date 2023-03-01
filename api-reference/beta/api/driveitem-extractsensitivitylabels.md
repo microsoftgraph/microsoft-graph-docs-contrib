@@ -87,7 +87,6 @@ POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

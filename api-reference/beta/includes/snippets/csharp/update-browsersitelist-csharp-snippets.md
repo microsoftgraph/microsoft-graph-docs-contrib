@@ -11,7 +11,7 @@ var requestBody = new BrowserSiteList
 	DisplayName = "Production Site List A",
 	Description = "Production site list for team A",
 };
-var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].PatchAsync(requestBody);
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].PatchAsync(requestBody);
 
 
 ```

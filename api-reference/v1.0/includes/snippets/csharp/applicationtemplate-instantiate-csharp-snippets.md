@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.ApplicationTemplates.Item.Instantiate.Inst
 {
 	DisplayName = "Azure AD SAML Toolkit",
 };
-var result = await graphClient.ApplicationTemplates["applicationTemplate-id"].Instantiate.PostAsync(requestBody);
+var result = await graphClient.ApplicationTemplates["{applicationTemplate-id}"].Instantiate.PostAsync(requestBody);
 
 
 ```

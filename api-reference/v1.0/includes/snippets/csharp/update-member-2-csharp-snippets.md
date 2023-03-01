@@ -14,7 +14,7 @@ var requestBody = new ConversationMember
 		"owner",
 	},
 };
-var result = await graphClient.Teams["team-id"].Members["conversationMember-id"].PatchAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Members["{conversationMember-id}"].PatchAsync(requestBody);
 
 
 ```

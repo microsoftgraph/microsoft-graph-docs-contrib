@@ -10,7 +10,7 @@ var requestBody = new UserAccountInformation
 {
 	CountryCode = "NO",
 };
-var result = await graphClient.Me.Profile.Account["userAccountInformation-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Profile.Account["{userAccountInformation-id}"].PatchAsync(requestBody);
 
 
 ```

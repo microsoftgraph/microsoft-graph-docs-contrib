@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.ApplicationTemplates.Item.Instantiate
 {
 	DisplayName = "testProperties",
 };
-var result = await graphClient.ApplicationTemplates["applicationTemplate-id"].Instantiate.PostAsync(requestBody);
+var result = await graphClient.ApplicationTemplates["{applicationTemplate-id}"].Instantiate.PostAsync(requestBody);
 
 
 ```

@@ -25,7 +25,7 @@ var requestBody = new ProfileCardProperty
 		},
 	},
 };
-var result = await graphClient.Organization["organization-id"].Settings.ProfileCardProperties.PostAsync(requestBody);
+var result = await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties.PostAsync(requestBody);
 
 
 ```

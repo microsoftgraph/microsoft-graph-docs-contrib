@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Policies.PermissionGrantPolicies["permissionGrantPolicy-id"].Includes["permissionGrantConditionSet-id"].DeleteAsync();
+await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Includes["{permissionGrantConditionSet-id}"].DeleteAsync();
 
 
 ```

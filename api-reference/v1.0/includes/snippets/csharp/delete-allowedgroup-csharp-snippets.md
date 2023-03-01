@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Print.Shares["printerShare-id"].AllowedGroups["group-id"].Ref.DeleteAsync();
+await graphClient.Print.Shares["{printerShare-id}"].AllowedGroups["{group-id}"].Ref.DeleteAsync();
 
 
 ```

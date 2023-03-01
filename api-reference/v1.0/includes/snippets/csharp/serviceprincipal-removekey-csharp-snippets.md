@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.ServicePrincipals.Item.RemoveKey.RemoveKey
 	KeyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6"),
 	Proof = "eyJ0eXAiOiJ...",
 };
-await graphClient.ServicePrincipals["servicePrincipal-id"].RemoveKey.PostAsync(requestBody);
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].RemoveKey.PostAsync(requestBody);
 
 
 ```

@@ -11,7 +11,7 @@ var requestBody = new BookingService
 	OdataType = "#microsoft.graph.bookingService",
 	DefaultDuration = TimeSpan.Parse("PT30M"),
 };
-var result = await graphClient.BookingBusinesses["bookingBusiness-id"].Services["bookingService-id"].PatchAsync(requestBody);
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services["{bookingService-id}"].PatchAsync(requestBody);
 
 
 ```

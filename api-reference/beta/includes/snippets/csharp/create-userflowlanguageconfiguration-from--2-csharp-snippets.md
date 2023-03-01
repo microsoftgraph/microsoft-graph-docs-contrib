@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Identity.B2cUserFlows.Item.Languages.
 		},
 	},
 };
-await graphClient.Identity.B2cUserFlows["b2cIdentityUserFlow-id"].Languages["userFlowLanguageConfiguration-id"].PutAsync(requestBody);
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].Languages["{userFlowLanguageConfiguration-id}"].PutAsync(requestBody);
 
 
 ```

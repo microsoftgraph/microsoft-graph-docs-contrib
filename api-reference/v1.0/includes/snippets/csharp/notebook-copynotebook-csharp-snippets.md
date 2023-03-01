@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Me.Onenote.Notebooks.Item.CopyNotebook.Cop
 	GroupId = "groupId-value",
 	RenameAs = "renameAs-value",
 };
-var result = await graphClient.Me.Onenote.Notebooks["notebook-id"].CopyNotebook.PostAsync(requestBody);
+var result = await graphClient.Me.Onenote.Notebooks["{notebook-id}"].CopyNotebook.PostAsync(requestBody);
 
 
 ```

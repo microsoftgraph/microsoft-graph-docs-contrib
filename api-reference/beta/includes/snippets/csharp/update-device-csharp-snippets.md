@@ -10,7 +10,7 @@ var requestBody = new Device
 {
 	AccountEnabled = false,
 };
-var result = await graphClient.Devices["device-id"].PatchAsync(requestBody);
+var result = await graphClient.Devices["{device-id}"].PatchAsync(requestBody);
 
 
 ```

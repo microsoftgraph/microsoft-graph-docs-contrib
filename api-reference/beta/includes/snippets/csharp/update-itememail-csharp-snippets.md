@@ -11,7 +11,7 @@ var requestBody = new ItemEmail
 	DisplayName = "Business Email",
 	Type = EmailType.Work,
 };
-var result = await graphClient.Users["user-id"].Profile.Emails["itemEmail-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Profile.Emails["{itemEmail-id}"].PatchAsync(requestBody);
 
 
 ```

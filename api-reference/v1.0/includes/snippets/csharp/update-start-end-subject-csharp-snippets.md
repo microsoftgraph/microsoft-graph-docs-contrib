@@ -12,7 +12,7 @@ var requestBody = new OnlineMeeting
 	EndDateTime = DateTimeOffset.Parse("2020-09-09T15:03:30.8566356-07:00"),
 	Subject = "Patch Meeting Subject",
 };
-var result = await graphClient.Me.OnlineMeetings["onlineMeeting-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["accessPackage-id"].IncompatibleAccessPackages["accessPackage-id1"].Ref.DeleteAsync();
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"].IncompatibleAccessPackages["{accessPackage-id1}"].Ref.DeleteAsync();
 
 
 ```

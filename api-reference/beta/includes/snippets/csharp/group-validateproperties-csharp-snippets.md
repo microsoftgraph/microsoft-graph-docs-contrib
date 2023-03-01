@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Groups.Item.ValidateProperties.Valida
 	MailNickname = "Myprefix_test_mysuffix",
 	OnBehalfOfUserId = Guid.Parse("onBehalfOfUserId-value"),
 };
-await graphClient.Groups["group-id"].ValidateProperties.PostAsync(requestBody);
+await graphClient.Groups["{group-id}"].ValidateProperties.PostAsync(requestBody);
 
 
 ```

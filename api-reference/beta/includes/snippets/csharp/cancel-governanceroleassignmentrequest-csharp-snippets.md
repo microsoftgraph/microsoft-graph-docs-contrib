@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleAssignmentRequests["governanceRoleAssignmentRequest-id"].Cancel.PostAsync();
+await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests["{governanceRoleAssignmentRequest-id}"].Cancel.PostAsync();
 
 
 ```

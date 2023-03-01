@@ -10,7 +10,7 @@ var requestBody = new IdentityProvider
 {
 	ClientSecret = "1111111111111",
 };
-var result = await graphClient.IdentityProviders["identityProvider-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityProviders["{identityProvider-id}"].PatchAsync(requestBody);
 
 
 ```

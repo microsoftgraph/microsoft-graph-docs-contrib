@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.NoncustodialDataSou
 		},
 	},
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].NoncustodialDataSources.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].NoncustodialDataSources.PostAsync(requestBody);
 
 
 ```

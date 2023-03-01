@@ -19,7 +19,7 @@ var requestBody = new Channel
 		AllowNewMessageFromConnectors = true,
 	},
 };
-var result = await graphClient.Teams["team-id"].Channels.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Channels.PostAsync(requestBody);
 
 
 ```

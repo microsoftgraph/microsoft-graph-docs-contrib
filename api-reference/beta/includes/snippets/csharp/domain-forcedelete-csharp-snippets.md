@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Domains.Item.ForceDelete.ForceDeleteP
 {
 	DisableUserAccounts = true,
 };
-await graphClient.Domains["domain-id"].ForceDelete.PostAsync(requestBody);
+await graphClient.Domains["{domain-id}"].ForceDelete.PostAsync(requestBody);
 
 
 ```

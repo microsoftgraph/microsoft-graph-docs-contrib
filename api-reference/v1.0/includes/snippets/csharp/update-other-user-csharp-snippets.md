@@ -14,7 +14,7 @@ var requestBody = new User
 	},
 	OfficeLocation = "18/2111",
 };
-var result = await graphClient.Users["user-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
 
 ```

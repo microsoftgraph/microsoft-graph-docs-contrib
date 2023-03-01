@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Models.ReferenceCreate
 {
 	OdataId = "https://graph.microsoft.com/v1.0/groups/{groupId}",
 };
-await graphClient.Print.Shares["printerShare-id"].AllowedGroups.Ref.PostAsync(requestBody);
+await graphClient.Print.Shares["{printerShare-id}"].AllowedGroups.Ref.PostAsync(requestBody);
 
 
 ```

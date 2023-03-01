@@ -29,7 +29,7 @@ var requestBody = new Application
 		},
 	},
 };
-var result = await graphClient.Applications["application-id"].PatchAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
 
 ```

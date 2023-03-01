@@ -22,7 +22,7 @@ var requestBody = new Microsoft.Graph.Models.Security.EdiscoveryCaseSettings
 		OdataType = "microsoft.graph.security.ocrSettings",
 	},
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Settings.PatchAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Settings.PatchAsync(requestBody);
 
 
 ```

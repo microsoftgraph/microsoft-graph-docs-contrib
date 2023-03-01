@@ -19,7 +19,7 @@ var requestBody = new BookingCustomerBase
 		},
 	},
 };
-var result = await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].Customers["bookingCustomerBase-id"].PatchAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomerBase-id}"].PatchAsync(requestBody);
 
 
 ```

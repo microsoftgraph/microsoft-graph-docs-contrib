@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.Chats.Item.MarkChatUnreadForUser.MarkChatU
 	},
 	LastMessageReadDateTime = DateTimeOffset.Parse("2021-05-27T22:13:01.577Z"),
 };
-await graphClient.Chats["chat-id"].MarkChatUnreadForUser.PostAsync(requestBody);
+await graphClient.Chats["{chat-id}"].MarkChatUnreadForUser.PostAsync(requestBody);
 
 
 ```

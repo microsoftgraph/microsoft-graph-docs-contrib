@@ -17,7 +17,7 @@ var requestBody = new ContentType
 	},
 	Group = "Document Set Content Types",
 };
-var result = await graphClient.Sites["site-id"].ContentTypes.PostAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].ContentTypes.PostAsync(requestBody);
 
 
 ```

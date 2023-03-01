@@ -26,7 +26,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 		},
 	},
 };
-var result = await graphClient.Admin.Windows.Updates.Deployments["deployment-id"].PatchAsync(requestBody);
+var result = await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].PatchAsync(requestBody);
 
 
 ```

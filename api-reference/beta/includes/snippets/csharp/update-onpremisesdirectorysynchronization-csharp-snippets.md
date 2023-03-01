@@ -23,7 +23,7 @@ var requestBody = new OnPremisesDirectorySynchronization
 		GroupWriteBackEnabled = true,
 	},
 };
-var result = await graphClient.Directory.OnPremisesSynchronization["onPremisesDirectorySynchronization-id"].PatchAsync(requestBody);
+var result = await graphClient.Directory.OnPremisesSynchronization["{onPremisesDirectorySynchronization-id}"].PatchAsync(requestBody);
 
 
 ```

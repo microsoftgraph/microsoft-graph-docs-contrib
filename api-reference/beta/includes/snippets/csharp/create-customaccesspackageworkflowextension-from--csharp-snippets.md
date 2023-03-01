@@ -37,7 +37,7 @@ var requestBody = new CustomAccessPackageWorkflowExtension
 		},
 	},
 };
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["accessPackageCatalog-id"].CustomAccessPackageWorkflowExtensions.PostAsync(requestBody);
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].CustomAccessPackageWorkflowExtensions.PostAsync(requestBody);
 
 
 ```

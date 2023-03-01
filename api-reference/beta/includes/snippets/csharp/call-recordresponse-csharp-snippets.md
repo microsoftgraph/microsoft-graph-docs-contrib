@@ -38,7 +38,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.RecordRespo
 		"*",
 	},
 };
-var result = await graphClient.Communications.Calls["call-id"].RecordResponse.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].RecordResponse.PostAsync(requestBody);
 
 
 ```

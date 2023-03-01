@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Groups["group-id"].ResetUnseenCount.PostAsync();
+await graphClient.Groups["{group-id}"].ResetUnseenCount.PostAsync();
 
 
 ```

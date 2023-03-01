@@ -10,7 +10,7 @@ var requestBody = new Program
 {
 	DisplayName = "testprogram3 new name",
 };
-var result = await graphClient.Programs["program-id"].PatchAsync(requestBody);
+var result = await graphClient.Programs["{program-id}"].PatchAsync(requestBody);
 
 
 ```

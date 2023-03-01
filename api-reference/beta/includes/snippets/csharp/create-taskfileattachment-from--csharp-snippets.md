@@ -18,7 +18,7 @@ var requestBody = new AttachmentBase
 		},
 	},
 };
-var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].Attachments.PostAsync(requestBody);
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].Attachments.PostAsync(requestBody);
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.BookingBusinesses["bookingBusiness-id"].StaffMembers["bookingStaffMember-id"].DeleteAsync();
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].StaffMembers["{bookingStaffMember-id}"].DeleteAsync();
 
 
 ```

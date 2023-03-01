@@ -15,7 +15,7 @@ var requestBody = new BrowserSharedCookie
 	HostOnly = true,
 	Comment = "Updating source environment.",
 };
-var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].SharedCookies["browserSharedCookie-id"].PatchAsync(requestBody);
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].SharedCookies["{browserSharedCookie-id}"].PatchAsync(requestBody);
 
 
 ```

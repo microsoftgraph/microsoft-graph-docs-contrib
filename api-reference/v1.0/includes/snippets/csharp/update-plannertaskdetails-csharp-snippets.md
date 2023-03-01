@@ -59,7 +59,7 @@ var requestBody = new PlannerTaskDetails
 		},
 	},
 };
-var result = await graphClient.Planner.Tasks["plannerTask-id"].Details.PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Planner.Tasks["{plannerTask-id}"].Details.PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");

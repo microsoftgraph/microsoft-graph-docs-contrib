@@ -13,7 +13,7 @@ var requestBody = new FeatureRolloutPolicy
 	IsEnabled = true,
 	IsAppliedToOrganization = false,
 };
-var result = await graphClient.Policies.FeatureRolloutPolicies["featureRolloutPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.FeatureRolloutPolicies["{featureRolloutPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

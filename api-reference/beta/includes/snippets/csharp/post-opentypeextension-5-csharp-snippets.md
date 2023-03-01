@@ -54,7 +54,7 @@ var requestBody = new Conversation
 		},
 	},
 };
-var result = await graphClient.Groups["group-id"].Conversations.PostAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Conversations.PostAsync(requestBody);
 
 
 ```

@@ -33,7 +33,7 @@ var requestBody = new Application
 	},
 	ServiceManagementReference = "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;",
 };
-var result = await graphClient.Applications["application-id"].PatchAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
 
 ```

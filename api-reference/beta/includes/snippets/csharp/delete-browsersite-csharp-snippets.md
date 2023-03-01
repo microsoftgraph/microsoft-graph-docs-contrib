@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].Sites["browserSite-id"].DeleteAsync();
+await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].Sites["{browserSite-id}"].DeleteAsync();
 
 
 ```

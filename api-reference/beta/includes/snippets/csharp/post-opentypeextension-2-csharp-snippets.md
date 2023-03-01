@@ -25,7 +25,7 @@ var requestBody = new Extension
 		},
 	},
 };
-var result = await graphClient.Me.Messages["message-id"].Extensions.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].Extensions.PostAsync(requestBody);
 
 
 ```

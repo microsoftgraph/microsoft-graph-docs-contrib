@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.EntitlementManagem
 		},
 	},
 };
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["accessPackageCatalog-id"].CustomAccessPackageWorkflowExtensions["customAccessPackageWorkflowExtension-id"].PutAsync(requestBody);
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].CustomAccessPackageWorkflowExtensions["{customAccessPackageWorkflowExtension-id}"].PutAsync(requestBody);
 
 
 ```

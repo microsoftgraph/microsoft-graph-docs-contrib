@@ -247,7 +247,6 @@ GET https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

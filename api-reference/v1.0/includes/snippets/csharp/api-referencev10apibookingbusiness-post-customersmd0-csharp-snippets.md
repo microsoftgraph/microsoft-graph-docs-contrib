@@ -59,7 +59,7 @@ var requestBody = new BookingCustomerBase
 		},
 	},
 };
-var result = await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].Customers.PostAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Customers.PostAsync(requestBody);
 
 
 ```

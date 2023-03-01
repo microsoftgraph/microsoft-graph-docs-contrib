@@ -44,7 +44,7 @@ var requestBody = new Microsoft.Graph.External.Connections.Item.Items.Item.Item
 		},
 	},
 };
-await graphClient.External.Connections["externalConnection-id"].Items["externalItem-id"].PutAsync(requestBody);
+await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PutAsync(requestBody);
 
 
 ```

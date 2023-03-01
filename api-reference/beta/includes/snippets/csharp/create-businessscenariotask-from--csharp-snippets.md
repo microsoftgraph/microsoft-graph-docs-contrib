@@ -32,7 +32,7 @@ var requestBody = new BusinessScenarioTask
 		ExternalBucketId = "deliveryBucket",
 	},
 };
-var result = await graphClient.Solutions.BusinessScenarios["businessScenario-id"].Planner.Tasks.PostAsync(requestBody);
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.Tasks.PostAsync(requestBody);
 
 
 ```

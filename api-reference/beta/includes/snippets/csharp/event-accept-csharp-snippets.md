@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.Accept.AcceptPostReque
 	Comment = "comment-value",
 	SendResponse = true,
 };
-await graphClient.Me.Events["event-id"].Accept.PostAsync(requestBody);
+await graphClient.Me.Events["{event-id}"].Accept.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new TeamworkTag
 {
 	DisplayName = "Finance",
 };
-var result = await graphClient.Teams["team-id"].Tags["teamworkTag-id"].PatchAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Tags["{teamworkTag-id}"].PatchAsync(requestBody);
 
 
 ```

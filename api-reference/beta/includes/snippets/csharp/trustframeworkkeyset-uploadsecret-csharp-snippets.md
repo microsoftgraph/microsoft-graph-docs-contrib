@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.UploadSec
 	Nbf = 1508969811L,
 	Exp = 1508973711L,
 };
-var result = await graphClient.TrustFramework.KeySets["trustFrameworkKeySet-id"].UploadSecret.PostAsync(requestBody);
+var result = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].UploadSecret.PostAsync(requestBody);
 
 
 ```

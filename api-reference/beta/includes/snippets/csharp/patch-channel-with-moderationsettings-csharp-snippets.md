@@ -18,7 +18,7 @@ var requestBody = new Channel
 		AllowNewMessageFromConnectors = true,
 	},
 };
-var result = await graphClient.Teams["team-id"].Channels["channel-id"].PatchAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].PatchAsync(requestBody);
 
 
 ```

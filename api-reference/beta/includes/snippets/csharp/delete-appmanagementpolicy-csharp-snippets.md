@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Policies.AppManagementPolicies["appManagementPolicy-id"].DeleteAsync();
+await graphClient.Policies.AppManagementPolicies["{appManagementPolicy-id}"].DeleteAsync();
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.DeletePassword
 {
 	Id = "5793aa3b-cca9-4794-679a240f8b58",
 };
-await graphClient.ServicePrincipals["servicePrincipal-id"].DeletePasswordSingleSignOnCredentials.PostAsync(requestBody);
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].DeletePasswordSingleSignOnCredentials.PostAsync(requestBody);
 
 
 ```

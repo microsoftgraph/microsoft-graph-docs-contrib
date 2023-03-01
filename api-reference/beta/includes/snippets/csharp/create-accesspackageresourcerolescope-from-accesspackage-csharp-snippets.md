@@ -27,7 +27,7 @@ var requestBody = new AccessPackageResourceRoleScope
 		OriginSystem = "AadGroup",
 	},
 };
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["accessPackage-id"].AccessPackageResourceRoleScopes.PostAsync(requestBody);
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"].AccessPackageResourceRoleScopes.PostAsync(requestBody);
 
 
 ```

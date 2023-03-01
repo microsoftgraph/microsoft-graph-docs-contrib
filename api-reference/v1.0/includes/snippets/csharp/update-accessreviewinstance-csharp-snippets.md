@@ -65,7 +65,7 @@ var requestBody = new AccessReviewInstance
 		},
 	},
 };
-var result = await graphClient.IdentityGovernance.AccessReviews.Definitions["accessReviewScheduleDefinition-id"].Instances["accessReviewInstance-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"].PatchAsync(requestBody);
 
 
 ```

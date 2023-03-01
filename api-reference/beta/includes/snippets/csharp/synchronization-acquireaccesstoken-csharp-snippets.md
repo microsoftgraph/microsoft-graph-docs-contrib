@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.Synchronization.Acq
 		},
 	},
 };
-await graphClient.Applications["application-id"].Synchronization.AcquireAccessToken.PostAsync(requestBody);
+await graphClient.Applications["{application-id}"].Synchronization.AcquireAccessToken.PostAsync(requestBody);
 
 
 ```

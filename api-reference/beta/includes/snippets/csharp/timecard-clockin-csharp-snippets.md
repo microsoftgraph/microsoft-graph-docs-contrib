@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.TimeCards.ClockIn
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Schedule.TimeCards.ClockIn.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.TimeCards.ClockIn.PostAsync(requestBody);
 
 
 ```

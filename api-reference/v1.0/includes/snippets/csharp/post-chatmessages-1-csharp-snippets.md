@@ -13,7 +13,7 @@ var requestBody = new ChatMessage
 		Content = "Hello world",
 	},
 };
-var result = await graphClient.Chats["chat-id"].Messages.PostAsync(requestBody);
+var result = await graphClient.Chats["{chat-id}"].Messages.PostAsync(requestBody);
 
 
 ```

@@ -21,7 +21,7 @@ var requestBody = new AdministrativeUnit
 		},
 	},
 };
-var result = await graphClient.AdministrativeUnits["administrativeUnit-id"].PatchAsync(requestBody);
+var result = await graphClient.AdministrativeUnits["{administrativeUnit-id}"].PatchAsync(requestBody);
 
 
 ```

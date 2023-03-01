@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 	IsEnabled = true,
 	IsSchedulingEnabled = true,
 };
-var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["workflow-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].PatchAsync(requestBody);
 
 
 ```

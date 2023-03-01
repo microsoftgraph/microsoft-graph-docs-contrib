@@ -12,7 +12,7 @@ var requestBody = new TimeOffReason
 	IconType = TimeOffReasonIconType.Plane,
 	IsActive = true,
 };
-var result = await graphClient.Teams["team-id"].Schedule.TimeOffReasons.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.TimeOffReasons.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.OnPr
 {
 	AdDomainPassword = "AdDomainPassword value",
 };
-await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["cloudPcOnPremisesConnection-id"].UpdateAdDomainPassword.PostAsync(requestBody);
+await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{cloudPcOnPremisesConnection-id}"].UpdateAdDomainPassword.PostAsync(requestBody);
 
 
 ```

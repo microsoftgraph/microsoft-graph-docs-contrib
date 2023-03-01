@@ -10,7 +10,7 @@ var requestBody = new AccessReview
 {
 	DisplayName = "TestReview new name",
 };
-var result = await graphClient.AccessReviews["accessReview-id"].PatchAsync(requestBody);
+var result = await graphClient.AccessReviews["{accessReview-id}"].PatchAsync(requestBody);
 
 
 ```

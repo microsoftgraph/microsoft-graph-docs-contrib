@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Models.ExternalConnectors.ExternalConnecti
 	Name = "Contoso HR Service Tickets",
 	Description = "Connection to index HR service tickets",
 };
-var result = await graphClient.External.Connections["externalConnection-id"].PatchAsync(requestBody);
+var result = await graphClient.External.Connections["{externalConnection-id}"].PatchAsync(requestBody);
 
 
 ```

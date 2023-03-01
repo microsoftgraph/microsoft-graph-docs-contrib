@@ -31,7 +31,7 @@ var requestBody = new OpenShift
 	},
 	DraftOpenShift = null,
 };
-var result = await graphClient.Teams["team-id"].Schedule.OpenShifts["openShift-id"].PatchAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.OpenShifts["{openShift-id}"].PatchAsync(requestBody);
 
 
 ```

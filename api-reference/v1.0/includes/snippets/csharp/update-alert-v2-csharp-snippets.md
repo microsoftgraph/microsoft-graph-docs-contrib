@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Models.Security.Alert
 	Determination = Microsoft.Graph.Models.Security.AlertDetermination.Malware,
 	Status = Microsoft.Graph.Models.Security.AlertStatus.InProgress,
 };
-var result = await graphClient.Security.Alerts_v2["alert-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.Alerts_v2["{alert-id}"].PatchAsync(requestBody);
 
 
 ```

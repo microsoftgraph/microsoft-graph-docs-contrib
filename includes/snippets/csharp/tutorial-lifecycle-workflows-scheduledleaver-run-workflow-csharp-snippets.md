@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows
 		},
 	},
 };
-await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["workflow-id"].IdentityGovernanceActivate.PostAsync(requestBody);
+await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].IdentityGovernanceActivate.PostAsync(requestBody);
 
 
 ```

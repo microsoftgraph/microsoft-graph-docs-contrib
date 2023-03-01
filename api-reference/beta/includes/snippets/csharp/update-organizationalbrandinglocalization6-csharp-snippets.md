@@ -11,7 +11,7 @@ var requestBody = new OrganizationalBrandingLocalization
 	BackgroundColor = "#00000F",
 	SignInPageText = "Welcome to Contoso France",
 };
-var result = await graphClient.Organization["organization-id"].Branding.Localizations["organizationalBrandingLocalization-id"].PatchAsync(requestBody);
+var result = await graphClient.Organization["{organization-id}"].Branding.Localizations["{organizationalBrandingLocalization-id}"].PatchAsync(requestBody);
 
 
 ```

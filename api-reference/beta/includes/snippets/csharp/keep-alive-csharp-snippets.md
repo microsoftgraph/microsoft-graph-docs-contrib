@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Communications.Calls["call-id"].KeepAlive.PostAsync();
+await graphClient.Communications.Calls["{call-id}"].KeepAlive.PostAsync();
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Users["user-id"].OnlineMeetings["onlineMeeting-id"].Transcripts["callTranscript-id"].Content.GetAsync();
+await graphClient.Users["{user-id}"].OnlineMeetings["{onlineMeeting-id}"].Transcripts["{callTranscript-id}"].Content.GetAsync();
 
 
 ```

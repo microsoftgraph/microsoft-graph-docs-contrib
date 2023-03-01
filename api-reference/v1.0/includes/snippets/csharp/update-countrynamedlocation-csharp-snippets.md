@@ -24,7 +24,7 @@ var requestBody = new NamedLocation
 		},
 	},
 };
-var result = await graphClient.Identity.ConditionalAccess.NamedLocations["namedLocation-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -12,7 +12,7 @@ var requestBody = new AuthenticationMethodConfiguration
 	Id = "Sms",
 	State = AuthenticationMethodState.Enabled,
 };
-var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["authenticationMethodConfiguration-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
 
 ```

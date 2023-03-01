@@ -12,7 +12,7 @@ var requestBody = new EducationAssignmentDefaults
 	AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndTeamOwners,
 	NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')",
 };
-var result = await graphClient.Education.Classes["educationClass-id"].AssignmentDefaults.PatchAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].AssignmentDefaults.PatchAsync(requestBody);
 
 
 ```

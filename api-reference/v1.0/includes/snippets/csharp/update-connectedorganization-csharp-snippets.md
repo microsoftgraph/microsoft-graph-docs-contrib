@@ -12,7 +12,7 @@ var requestBody = new ConnectedOrganization
 	Description = "Connected organization new description",
 	State = ConnectedOrganizationState.Configured,
 };
-var result = await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["connectedOrganization-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{connectedOrganization-id}"].PatchAsync(requestBody);
 
 
 ```

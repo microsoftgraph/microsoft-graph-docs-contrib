@@ -62,7 +62,7 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtec
 		IsDowngradeJustified = true,
 	},
 };
-var result = await graphClient.Users["user-id"].Security.InformationProtection.SensitivityLabels.SecurityEvaluateRemoval.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Users["{user-id}"].Security.InformationProtection.SensitivityLabels.SecurityEvaluateRemoval.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("User-Agent", "ContosoLOBApp/1.0");
 });

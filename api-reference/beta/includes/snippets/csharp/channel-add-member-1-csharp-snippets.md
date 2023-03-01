@@ -20,7 +20,7 @@ var requestBody = new ConversationMember
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Channels["channel-id"].Members.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members.PostAsync(requestBody);
 
 
 ```

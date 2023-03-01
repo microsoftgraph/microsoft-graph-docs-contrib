@@ -10,7 +10,7 @@ var requestBody = new PlannerPlan
 {
 	Title = "title-value",
 };
-var result = await graphClient.Planner.Plans["plannerPlan-id"].PatchAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Planner.Plans["{plannerPlan-id}"].PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");

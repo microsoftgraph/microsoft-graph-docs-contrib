@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Onenote.SectionGroups.Item.Section
 		},
 	},
 };
-await graphClient.Me.Onenote.SectionGroups["sectionGroup-id"].SectionGroups.PostAsync(requestBody);
+await graphClient.Me.Onenote.SectionGroups["{sectionGroup-id}"].SectionGroups.PostAsync(requestBody);
 
 
 ```

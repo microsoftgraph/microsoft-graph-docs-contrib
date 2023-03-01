@@ -33,7 +33,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.Team.TeamPutRequestBody
 		},
 	},
 };
-await graphClient.Groups["group-id"].Team.PutAsync(requestBody);
+await graphClient.Groups["{group-id}"].Team.PutAsync(requestBody);
 
 
 ```

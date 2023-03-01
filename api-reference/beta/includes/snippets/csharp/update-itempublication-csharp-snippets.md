@@ -11,7 +11,7 @@ var requestBody = new ItemPublication
 	Publisher = "International Association of Branding Management Publishing",
 	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg",
 };
-var result = await graphClient.Users["user-id"].Profile.Publications["itemPublication-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Profile.Publications["{itemPublication-id}"].PatchAsync(requestBody);
 
 
 ```

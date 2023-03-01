@@ -10,7 +10,7 @@ var requestBody = new AuthorizationPolicy
 {
 	AllowedToUseSSPR = true,
 };
-var result = await graphClient.Policies.AuthorizationPolicy["authorizationPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.AuthorizationPolicy["{authorizationPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

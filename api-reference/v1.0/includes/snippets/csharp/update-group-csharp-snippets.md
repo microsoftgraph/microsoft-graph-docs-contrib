@@ -17,7 +17,7 @@ var requestBody = new Group
 	MailEnabled = true,
 	MailNickname = "library-help",
 };
-var result = await graphClient.Groups["group-id"].PatchAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].PatchAsync(requestBody);
 
 
 ```

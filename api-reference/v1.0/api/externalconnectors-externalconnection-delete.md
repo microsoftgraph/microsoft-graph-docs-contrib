@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

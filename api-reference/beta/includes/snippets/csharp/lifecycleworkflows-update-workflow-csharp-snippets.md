@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 	IsEnabled = true,
 	IsSchedulingEnabled = false,
 };
-var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["workflow-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ReferenceCreate
 {
 	OdataId = "https://graph.microsoft.com/beta/groups/{id}",
 };
-await graphClient.AdministrativeUnits["administrativeUnit-id"].Members.Ref.PostAsync(requestBody);
+await graphClient.AdministrativeUnits["{administrativeUnit-id}"].Members.Ref.PostAsync(requestBody);
 
 
 ```

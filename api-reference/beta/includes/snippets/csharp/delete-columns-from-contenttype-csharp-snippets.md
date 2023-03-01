@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Sites["site-id"].ContentTypes["contentType-id"].Columns["columnDefinition-id"].DeleteAsync();
+await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].Columns["{columnDefinition-id}"].DeleteAsync();
 
 
 ```

@@ -14,7 +14,7 @@ var requestBody = new MessageRule
 		MarkImportance = Importance.High,
 	},
 };
-var result = await graphClient.Me.MailFolders["mailFolder-id"].MessageRules["messageRule-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules["{messageRule-id}"].PatchAsync(requestBody);
 
 
 ```

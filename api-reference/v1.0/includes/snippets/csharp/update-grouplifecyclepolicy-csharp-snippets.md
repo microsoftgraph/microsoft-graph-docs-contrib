@@ -12,7 +12,7 @@ var requestBody = new GroupLifecyclePolicy
 	ManagedGroupTypes = "Selected",
 	AlternateNotificationEmails = "admin@contoso.com",
 };
-var result = await graphClient.GroupLifecyclePolicies["groupLifecyclePolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.GroupLifecyclePolicies["{groupLifecyclePolicy-id}"].PatchAsync(requestBody);
 
 
 ```

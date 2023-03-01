@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Identity.B2xUserFlows.Item.UserAttributeAs
 		},
 	},
 };
-await graphClient.Identity.B2xUserFlows["b2xIdentityUserFlow-id"].UserAttributeAssignments.SetOrder.PostAsync(requestBody);
+await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].UserAttributeAssignments.SetOrder.PostAsync(requestBody);
 
 
 ```

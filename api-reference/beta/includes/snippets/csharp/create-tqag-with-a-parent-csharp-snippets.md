@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryReviewTag
 		},
 	},
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Tags.PostAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Tags.PostAsync(requestBody);
 
 
 ```

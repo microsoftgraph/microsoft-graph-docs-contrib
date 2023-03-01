@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participant
 	},
 	ClientContext = "clientContext-value",
 };
-var result = await graphClient.Communications.Calls["call-id"].Participants.MuteAll.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].Participants.MuteAll.PostAsync(requestBody);
 
 
 ```

@@ -28,7 +28,7 @@ var requestBody = new BookingAppointment
 		TimeZone = "UTC",
 	},
 };
-var result = await graphClient.BookingBusinesses["bookingBusiness-id"].Appointments["bookingAppointment-id"].PatchAsync(requestBody);
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Appointments["{bookingAppointment-id}"].PatchAsync(requestBody);
 
 
 ```

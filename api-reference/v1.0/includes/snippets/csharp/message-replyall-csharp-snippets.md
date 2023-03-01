@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Me.Messages.Item.ReplyAll.ReplyAllPostRequ
 {
 	Comment = "comment-value",
 };
-await graphClient.Me.Messages["message-id"].ReplyAll.PostAsync(requestBody);
+await graphClient.Me.Messages["{message-id}"].ReplyAll.PostAsync(requestBody);
 
 
 ```

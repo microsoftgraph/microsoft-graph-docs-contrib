@@ -43,7 +43,7 @@ var requestBody = new Microsoft.Graph.Beta.DirectoryNamespace.FederationConfigur
 		},
 	},
 };
-await graphClient.Directory.FederationConfigurations["identityProviderBase-id"].PostAsync(requestBody);
+await graphClient.Directory.FederationConfigurations["{identityProviderBase-id}"].PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new ConnectorGroup
 {
 	Name = "Connector Group Demo",
 };
-var result = await graphClient.OnPremisesPublishingProfiles["onPremisesPublishingProfile-id"].ConnectorGroups.PostAsync(requestBody);
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups.PostAsync(requestBody);
 
 
 ```

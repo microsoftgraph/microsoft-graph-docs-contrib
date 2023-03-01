@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Presence.SetStatusMessage.
 		},
 	},
 };
-await graphClient.Users["user-id"].Presence.SetStatusMessage.PostAsync(requestBody);
+await graphClient.Users["{user-id}"].Presence.SetStatusMessage.PostAsync(requestBody);
 
 
 ```

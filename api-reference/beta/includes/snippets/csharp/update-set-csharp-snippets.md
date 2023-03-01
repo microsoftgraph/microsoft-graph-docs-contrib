@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.TermStore.Set
 {
 	Description = "mySet",
 };
-var result = await graphClient.TermStore.Sets["set-id"].PatchAsync(requestBody);
+var result = await graphClient.TermStore.Sets["{set-id}"].PatchAsync(requestBody);
 
 
 ```

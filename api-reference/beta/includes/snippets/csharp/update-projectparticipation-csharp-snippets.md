@@ -15,7 +15,7 @@ var requestBody = new ProjectParticipation
 		WebUrl = "https://www.contoso.com",
 	},
 };
-var result = await graphClient.Me.Profile.Projects["projectParticipation-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Profile.Projects["{projectParticipation-id}"].PatchAsync(requestBody);
 
 
 ```

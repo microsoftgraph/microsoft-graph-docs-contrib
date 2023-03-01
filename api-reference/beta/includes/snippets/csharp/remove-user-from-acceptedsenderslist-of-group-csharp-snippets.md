@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Groups["group-id"].AcceptedSenders.Ref.DeleteAsync((requestConfiguration) =>
+await graphClient.Groups["{group-id}"].AcceptedSenders.Ref.DeleteAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Id = "https://graph.microsoft.com/beta/users/{user-id}";
 });

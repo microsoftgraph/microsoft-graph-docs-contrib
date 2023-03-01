@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.ServicePrincipals.Item.AddPassword.AddPass
 		DisplayName = "Password friendly name",
 	},
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].AddPassword.PostAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].AddPassword.PostAsync(requestBody);
 
 
 ```

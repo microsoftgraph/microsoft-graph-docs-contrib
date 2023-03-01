@@ -42,7 +42,7 @@ var requestBody = new Event
 	},
 	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7",
 };
-var result = await graphClient.Me.Calendars["calendar-id"].Events.PostAsync(requestBody);
+var result = await graphClient.Me.Calendars["{calendar-id}"].Events.PostAsync(requestBody);
 
 
 ```

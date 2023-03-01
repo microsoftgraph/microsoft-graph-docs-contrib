@@ -22,7 +22,7 @@ var requestBody = new ServicePrincipal
 		},
 	},
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].PatchAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].PatchAsync(requestBody);
 
 
 ```

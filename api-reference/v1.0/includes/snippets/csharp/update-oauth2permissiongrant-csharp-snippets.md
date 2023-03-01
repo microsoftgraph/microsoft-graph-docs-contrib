@@ -10,7 +10,7 @@ var requestBody = new OAuth2PermissionGrant
 {
 	Scope = "User.ReadBasic.All Group.ReadWrite.All",
 };
-var result = await graphClient.Oauth2PermissionGrants["oAuth2PermissionGrant-id"].PatchAsync(requestBody);
+var result = await graphClient.Oauth2PermissionGrants["{oAuth2PermissionGrant-id}"].PatchAsync(requestBody);
 
 
 ```

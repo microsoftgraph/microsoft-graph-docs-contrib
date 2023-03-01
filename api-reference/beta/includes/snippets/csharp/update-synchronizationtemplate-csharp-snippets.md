@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.Synchronization.Tem
 		},
 	},
 };
-await graphClient.Applications["application-id"].Synchronization.Templates["synchronizationTemplate-id"].PutAsync(requestBody, (requestConfiguration) =>
+await graphClient.Applications["{application-id}"].Synchronization.Templates["{synchronizationTemplate-id}"].PutAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Authorization", "Bearer <token>");
 });

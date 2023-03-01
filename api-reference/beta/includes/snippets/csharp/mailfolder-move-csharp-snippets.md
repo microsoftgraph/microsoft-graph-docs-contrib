@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.MailFolders.Item.Move.MovePostRequ
 {
 	DestinationId = "destinationId-value",
 };
-var result = await graphClient.Me.MailFolders["mailFolder-id"].Move.PostAsync(requestBody);
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].Move.PostAsync(requestBody);
 
 
 ```

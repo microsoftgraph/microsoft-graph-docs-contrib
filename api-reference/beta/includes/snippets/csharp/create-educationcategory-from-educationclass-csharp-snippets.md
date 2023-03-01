@@ -10,7 +10,7 @@ var requestBody = new EducationCategory
 {
 	DisplayName = "Quizzes",
 };
-var result = await graphClient.Education.Classes["educationClass-id"].AssignmentCategories.PostAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].AssignmentCategories.PostAsync(requestBody);
 
 
 ```

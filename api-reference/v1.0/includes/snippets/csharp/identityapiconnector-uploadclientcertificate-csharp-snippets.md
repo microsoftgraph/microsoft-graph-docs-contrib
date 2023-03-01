@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Identity.ApiConnectors.Item.UploadClientCe
 	Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
 	Password = "<password>",
 };
-var result = await graphClient.Identity.ApiConnectors["identityApiConnector-id"].UploadClientCertificate.PostAsync(requestBody);
+var result = await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"].UploadClientCertificate.PostAsync(requestBody);
 
 
 ```

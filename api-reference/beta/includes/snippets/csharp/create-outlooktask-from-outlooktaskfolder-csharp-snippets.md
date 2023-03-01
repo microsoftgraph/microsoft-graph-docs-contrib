@@ -20,7 +20,7 @@ var requestBody = new OutlookTask
 		TimeZone = "Pacific Standard Time",
 	},
 };
-var result = await graphClient.Me.Outlook.TaskFolders["outlookTaskFolder-id"].Tasks.PostAsync(requestBody);
+var result = await graphClient.Me.Outlook.TaskFolders["{outlookTaskFolder-id}"].Tasks.PostAsync(requestBody);
 
 
 ```

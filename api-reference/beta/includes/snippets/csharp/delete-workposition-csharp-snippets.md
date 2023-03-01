@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Profile.Positions["workPosition-id"].DeleteAsync();
+await graphClient.Me.Profile.Positions["{workPosition-id}"].DeleteAsync();
 
 
 ```

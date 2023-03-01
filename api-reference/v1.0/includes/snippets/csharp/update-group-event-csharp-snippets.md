@@ -13,7 +13,7 @@ var requestBody = new Event
 		DisplayName = "Conf Room 2",
 	},
 };
-var result = await graphClient.Groups["group-id"].Calendar.Events["event-id"].PatchAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Calendar.Events["{event-id}"].PatchAsync(requestBody);
 
 
 ```

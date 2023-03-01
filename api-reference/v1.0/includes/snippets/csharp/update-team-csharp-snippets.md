@@ -23,7 +23,7 @@ var requestBody = new Team
 		GiphyContentRating = GiphyRatingType.Strict,
 	},
 };
-var result = await graphClient.Teams["team-id"].PatchAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].PatchAsync(requestBody);
 
 
 ```

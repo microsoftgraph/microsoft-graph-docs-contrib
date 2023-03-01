@@ -18,7 +18,7 @@ var requestBody = new CloudPcUserSetting
 	},
 	LocalAdminEnabled = false,
 };
-var result = await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["cloudPcUserSetting-id"].PatchAsync(requestBody);
+var result = await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["{cloudPcUserSetting-id}"].PatchAsync(requestBody);
 
 
 ```

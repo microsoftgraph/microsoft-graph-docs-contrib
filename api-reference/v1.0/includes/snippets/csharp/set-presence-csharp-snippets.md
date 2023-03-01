@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Users.Item.Presence.SetPresence.SetPresenc
 	Activity = "Available",
 	ExpirationDuration = TimeSpan.Parse("PT1H"),
 };
-await graphClient.Users["user-id"].Presence.SetPresence.PostAsync(requestBody);
+await graphClient.Users["{user-id}"].Presence.SetPresence.PostAsync(requestBody);
 
 
 ```

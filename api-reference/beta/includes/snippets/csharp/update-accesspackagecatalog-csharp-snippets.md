@@ -10,7 +10,7 @@ var requestBody = new AccessPackageCatalog
 {
 	DisplayName = "Catalog One",
 };
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["accessPackageCatalog-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].PatchAsync(requestBody);
 
 
 ```

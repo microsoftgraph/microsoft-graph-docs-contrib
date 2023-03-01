@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Profile.WebAccounts["webAccount-id"].DeleteAsync();
+await graphClient.Me.Profile.WebAccounts["{webAccount-id}"].DeleteAsync();
 
 
 ```

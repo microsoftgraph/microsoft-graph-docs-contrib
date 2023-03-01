@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.DirectoryNamespace.DeletedItems.Item.Delet
 		},
 	},
 };
-await graphClient.Directory.DeletedItems["directoryObject-id"].PostAsync(requestBody);
+await graphClient.Directory.DeletedItems["{directoryObject-id}"].PostAsync(requestBody);
 
 
 ```

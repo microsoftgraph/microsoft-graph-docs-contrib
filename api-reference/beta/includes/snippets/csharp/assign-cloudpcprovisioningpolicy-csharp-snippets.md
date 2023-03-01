@@ -32,7 +32,7 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Prov
 		},
 	},
 };
-await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["cloudPcProvisioningPolicy-id"].Assign.PostAsync(requestBody);
+await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["{cloudPcProvisioningPolicy-id}"].Assign.PostAsync(requestBody);
 
 
 ```

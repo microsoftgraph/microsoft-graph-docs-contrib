@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Models.Security.EdiscoverySearch
 {
 	DisplayName = "Teams search",
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Searches["ediscoverySearch-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Searches["{ediscoverySearch-id}"].PatchAsync(requestBody);
 
 
 ```

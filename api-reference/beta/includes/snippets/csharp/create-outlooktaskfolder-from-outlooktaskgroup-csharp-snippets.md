@@ -10,7 +10,7 @@ var requestBody = new OutlookTaskFolder
 {
 	Name = "Cooking",
 };
-var result = await graphClient.Me.Outlook.TaskGroups["outlookTaskGroup-id"].TaskFolders.PostAsync(requestBody);
+var result = await graphClient.Me.Outlook.TaskGroups["{outlookTaskGroup-id}"].TaskFolders.PostAsync(requestBody);
 
 
 ```

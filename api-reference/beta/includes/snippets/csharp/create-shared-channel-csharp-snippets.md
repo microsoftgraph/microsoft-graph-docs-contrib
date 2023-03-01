@@ -29,7 +29,7 @@ var requestBody = new Channel
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Channels.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Channels.PostAsync(requestBody);
 
 
 ```

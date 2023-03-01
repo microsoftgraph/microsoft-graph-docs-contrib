@@ -23,7 +23,7 @@ var requestBody = new TeamsTab
 		},
 	},
 };
-var result = await graphClient.Chats["chat-id"].Tabs.PostAsync(requestBody);
+var result = await graphClient.Chats["{chat-id}"].Tabs.PostAsync(requestBody);
 
 
 ```

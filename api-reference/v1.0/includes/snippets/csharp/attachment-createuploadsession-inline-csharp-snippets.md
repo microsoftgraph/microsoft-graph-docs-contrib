@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Me.Messages.Item.Attachments.CreateUploadS
 		ContentId = "my_inline_picture",
 	},
 };
-var result = await graphClient.Me.Messages["message-id"].Attachments.CreateUploadSession.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
 
 ```

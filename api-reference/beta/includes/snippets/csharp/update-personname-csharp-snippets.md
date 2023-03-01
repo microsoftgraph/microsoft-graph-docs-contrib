@@ -10,7 +10,7 @@ var requestBody = new PersonName
 {
 	Nickname = "Kesha",
 };
-var result = await graphClient.Me.Profile.Names["personName-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Profile.Names["{personName-id}"].PatchAsync(requestBody);
 
 
 ```

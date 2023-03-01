@@ -16,7 +16,7 @@ var requestBody = new FederatedIdentityCredential
 		"api://AzureADTokenExchange",
 	},
 };
-var result = await graphClient.Applications["application-id"].FederatedIdentityCredentials.PostAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].FederatedIdentityCredentials.PostAsync(requestBody);
 
 
 ```

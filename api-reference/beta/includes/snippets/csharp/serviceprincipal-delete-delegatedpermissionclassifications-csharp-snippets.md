@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.ServicePrincipals["servicePrincipal-id"].DelegatedPermissionClassifications["delegatedPermissionClassification-id"].DeleteAsync();
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].DelegatedPermissionClassifications["{delegatedPermissionClassification-id}"].DeleteAsync();
 
 
 ```

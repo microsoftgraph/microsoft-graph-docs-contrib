@@ -11,7 +11,7 @@ var requestBody = new MailFolder
 	DisplayName = "displayName-value",
 	IsHidden = true,
 };
-var result = await graphClient.Me.MailFolders["mailFolder-id"].ChildFolders.PostAsync(requestBody);
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].ChildFolders.PostAsync(requestBody);
 
 
 ```

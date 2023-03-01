@@ -10,7 +10,7 @@ var requestBody = new DelegatedAdminRelationshipRequest
 {
 	Action = DelegatedAdminRelationshipRequestAction.LockForApproval,
 };
-var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["delegatedAdminRelationship-id"].Requests.PostAsync(requestBody);
+var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["{delegatedAdminRelationship-id}"].Requests.PostAsync(requestBody);
 
 
 ```

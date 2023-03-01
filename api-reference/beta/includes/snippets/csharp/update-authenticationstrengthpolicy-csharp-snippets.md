@@ -12,7 +12,7 @@ var requestBody = new AuthenticationStrengthPolicy
 	DisplayName = "FIDO2 only",
 	Description = "An auth strength allowing only FIDO2 security keys.",
 };
-var result = await graphClient.Policies.AuthenticationStrengthPolicies["authenticationStrengthPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.AuthenticationStrengthPolicies["{authenticationStrengthPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -21,7 +21,7 @@ var requestBody = new ConversationThread
 		},
 	},
 };
-var result = await graphClient.Groups["group-id"].Conversations["conversation-id"].Threads.PostAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Conversations["{conversation-id}"].Threads.PostAsync(requestBody);
 
 
 ```

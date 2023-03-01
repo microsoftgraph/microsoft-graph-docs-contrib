@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.DeviceManagement.Monitoring.AlertRecords["alertRecord-id"].DeviceManagementSetPortalNotificationAsSent.PostAsync();
+await graphClient.DeviceManagement.Monitoring.AlertRecords["{alertRecord-id}"].DeviceManagementSetPortalNotificationAsSent.PostAsync();
 
 
 ```

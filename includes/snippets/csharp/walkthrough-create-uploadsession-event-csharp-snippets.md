@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Me.Events.Item.Attachments.CreateUploadSes
 		Size = 3483322L,
 	},
 };
-var result = await graphClient.Me.Events["event-id"].Attachments.CreateUploadSession.PostAsync(requestBody);
+var result = await graphClient.Me.Events["{event-id}"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
 
 ```

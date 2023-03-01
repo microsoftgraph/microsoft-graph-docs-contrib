@@ -10,7 +10,7 @@ var requestBody = new CustomSecurityAttributeDefinition
 {
 	Status = "Deprecated",
 };
-var result = await graphClient.Directory.CustomSecurityAttributeDefinitions["customSecurityAttributeDefinition-id"].PatchAsync(requestBody);
+var result = await graphClient.Directory.CustomSecurityAttributeDefinitions["{customSecurityAttributeDefinition-id}"].PatchAsync(requestBody);
 
 
 ```

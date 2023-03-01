@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.Custodian
 {
 	ApplyHoldToSources = false,
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].Custodians["custodian-id"].PatchAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Custodians["{custodian-id}"].PatchAsync(requestBody);
 
 
 ```

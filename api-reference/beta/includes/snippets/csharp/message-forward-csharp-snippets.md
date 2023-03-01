@@ -25,7 +25,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Forward.ForwardPostR
 	},
 	Comment = "Dana, just want to make sure you get this.",
 };
-await graphClient.Me.Messages["message-id"].Forward.PostAsync(requestBody);
+await graphClient.Me.Messages["{message-id}"].Forward.PostAsync(requestBody);
 
 
 ```

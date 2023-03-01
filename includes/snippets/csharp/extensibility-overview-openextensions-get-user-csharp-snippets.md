@@ -27,7 +27,7 @@ var requestBody = new Microsoft.Graph.Users.Item.Extensions.Item.Extension
 		},
 	},
 };
-var result = await graphClient.Users["user-id"].Extensions["extension-id"].GetAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Extensions["{extension-id}"].GetAsync(requestBody);
 
 
 ```

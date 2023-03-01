@@ -17,7 +17,7 @@ var requestBody = new GroupSetting
 		},
 	},
 };
-var result = await graphClient.Groups["group-id"].Settings["groupSetting-id"].PatchAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Settings["{groupSetting-id}"].PatchAsync(requestBody);
 
 
 ```

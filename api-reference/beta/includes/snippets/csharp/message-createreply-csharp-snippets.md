@@ -32,7 +32,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.CreateReply.CreateRe
 	},
 	Comment = "Samantha, Randi, would you name the group if the project is approved, please?",
 };
-var result = await graphClient.Me.Messages["message-id"].CreateReply.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].CreateReply.PostAsync(requestBody);
 
 
 ```

@@ -15,7 +15,7 @@ var requestBody = new TokenIssuancePolicy
 	DisplayName = "displayName-value",
 	IsOrganizationDefault = true,
 };
-var result = await graphClient.Policies.TokenIssuancePolicies["tokenIssuancePolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.TokenIssuancePolicies["{tokenIssuancePolicy-id}"].PatchAsync(requestBody);
 
 
 ```

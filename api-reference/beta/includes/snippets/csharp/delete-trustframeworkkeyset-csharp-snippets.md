@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.TrustFramework.KeySets["trustFrameworkKeySet-id"].DeleteAsync();
+await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].DeleteAsync();
 
 
 ```

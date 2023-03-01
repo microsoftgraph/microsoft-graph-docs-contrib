@@ -16,7 +16,7 @@ var requestBody = new BrowserSite
 	CompatibilityMode = BrowserSiteCompatibilityMode.Default,
 	AllowRedirect = true,
 };
-var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].Sites.PostAsync(requestBody);
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].Sites.PostAsync(requestBody);
 
 
 ```

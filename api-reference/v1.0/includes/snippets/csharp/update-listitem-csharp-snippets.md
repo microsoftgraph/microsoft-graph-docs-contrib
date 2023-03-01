@@ -18,7 +18,7 @@ var requestBody = new FieldValueSet
 		},
 	},
 };
-var result = await graphClient.Sites["site-id"].Lists["list-id"].Items["listItem-id"].Fields.PatchAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].Fields.PatchAsync(requestBody);
 
 
 ```

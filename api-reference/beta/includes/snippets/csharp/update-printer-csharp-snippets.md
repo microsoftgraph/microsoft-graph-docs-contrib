@@ -16,7 +16,7 @@ var requestBody = new Printer
 		AltitudeInMeters = 3,
 	},
 };
-var result = await graphClient.Print.Printers["printer-id"].PatchAsync(requestBody);
+var result = await graphClient.Print.Printers["{printer-id}"].PatchAsync(requestBody);
 
 
 ```

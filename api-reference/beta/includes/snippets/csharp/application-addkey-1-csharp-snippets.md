@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.AddKey.AddKeyPostRe
 	PasswordCredential = null,
 	Proof = "eyJ0eXAiOiJ...",
 };
-var result = await graphClient.Applications["application-id"].AddKey.PostAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].AddKey.PostAsync(requestBody);
 
 
 ```

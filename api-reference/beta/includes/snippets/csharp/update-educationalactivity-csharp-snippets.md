@@ -22,7 +22,7 @@ var requestBody = new EducationalActivity
 		},
 	},
 };
-var result = await graphClient.Me.Profile.EducationalActivities["educationalActivity-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Profile.EducationalActivities["{educationalActivity-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -19,7 +19,7 @@ var requestBody = new AudioRoutingGroup
 		"550fae72-d251-43ec-868c-373732c2704f",
 	},
 };
-var result = await graphClient.Communications.Calls["call-id"].AudioRoutingGroups.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].AudioRoutingGroups.PostAsync(requestBody);
 
 
 ```

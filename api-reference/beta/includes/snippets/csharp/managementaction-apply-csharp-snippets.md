@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.Ma
 	TenantGroupId = "String",
 	ManagementTemplateId = "String",
 };
-var result = await graphClient.TenantRelationships.ManagedTenants.ManagementActions["managementAction-id"].ManagedTenantsApply.PostAsync(requestBody);
+var result = await graphClient.TenantRelationships.ManagedTenants.ManagementActions["{managementAction-id}"].ManagedTenantsApply.PostAsync(requestBody);
 
 
 ```

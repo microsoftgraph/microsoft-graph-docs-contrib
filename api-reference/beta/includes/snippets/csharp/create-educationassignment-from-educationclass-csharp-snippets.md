@@ -32,7 +32,7 @@ var requestBody = new EducationAssignment
 	Status = EducationAssignmentStatus.Draft,
 	AllowStudentsToAddResourcesToSubmission = true,
 };
-var result = await graphClient.Education.Classes["educationClass-id"].Assignments.PostAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments.PostAsync(requestBody);
 
 
 ```

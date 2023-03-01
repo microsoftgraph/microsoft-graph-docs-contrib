@@ -78,7 +78,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.TimeCards.Item.Ti
 		},
 	},
 };
-await graphClient.Teams["team-id"].Schedule.TimeCards["timeCard-id"].PutAsync(requestBody);
+await graphClient.Teams["{team-id}"].Schedule.TimeCards["{timeCard-id}"].PutAsync(requestBody);
 
 
 ```

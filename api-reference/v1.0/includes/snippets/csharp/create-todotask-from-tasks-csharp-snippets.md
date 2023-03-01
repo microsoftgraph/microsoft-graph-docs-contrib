@@ -23,7 +23,7 @@ var requestBody = new TodoTask
 		},
 	},
 };
-var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks.PostAsync(requestBody);
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks.PostAsync(requestBody);
 
 
 ```

@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ManagedTenants.TenantCustomize
 	},
 	Website = "String",
 };
-var result = await graphClient.TenantRelationships.ManagedTenants.TenantsCustomizedInformation["tenantCustomizedInformation-id"].PatchAsync(requestBody);
+var result = await graphClient.TenantRelationships.ManagedTenants.TenantsCustomizedInformation["{tenantCustomizedInformation-id}"].PatchAsync(requestBody);
 
 
 ```

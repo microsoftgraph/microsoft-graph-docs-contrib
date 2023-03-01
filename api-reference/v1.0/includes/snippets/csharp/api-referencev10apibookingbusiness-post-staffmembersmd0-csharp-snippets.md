@@ -122,7 +122,7 @@ var requestBody = new BookingStaffMemberBase
 		},
 	},
 };
-var result = await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].StaffMembers.PostAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].StaffMembers.PostAsync(requestBody);
 
 
 ```

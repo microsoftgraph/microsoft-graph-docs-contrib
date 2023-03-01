@@ -10,7 +10,7 @@ var requestBody = new ContactFolder
 {
 	DisplayName = "Family",
 };
-var result = await graphClient.Me.ContactFolders["contactFolder-id"].ChildFolders.PostAsync(requestBody);
+var result = await graphClient.Me.ContactFolders["{contactFolder-id}"].ChildFolders.PostAsync(requestBody);
 
 
 ```

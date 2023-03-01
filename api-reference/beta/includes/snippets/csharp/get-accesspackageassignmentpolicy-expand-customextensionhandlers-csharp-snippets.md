@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["accessPackageAssignmentPolicy-id"].GetAsync((requestConfiguration) =>
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["{accessPackageAssignmentPolicy-id}"].GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Expand = new string []{ "customExtensionHandlers($expand=customExtension)" };
 });

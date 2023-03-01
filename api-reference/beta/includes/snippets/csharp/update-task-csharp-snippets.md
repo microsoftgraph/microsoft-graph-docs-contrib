@@ -14,7 +14,7 @@ var requestBody = new PrintTask
 		Description = "completed",
 	},
 };
-var result = await graphClient.Print.TaskDefinitions["printTaskDefinition-id"].Tasks["printTask-id"].PatchAsync(requestBody);
+var result = await graphClient.Print.TaskDefinitions["{printTaskDefinition-id}"].Tasks["{printTask-id}"].PatchAsync(requestBody);
 
 
 ```

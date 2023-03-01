@@ -22,7 +22,7 @@ var requestBody = new UnifiedRoleDefinition
 		},
 	},
 };
-var result = await graphClient.RoleManagement.CloudPC.RoleDefinitions["unifiedRoleDefinition-id"].PatchAsync(requestBody);
+var result = await graphClient.RoleManagement.CloudPC.RoleDefinitions["{unifiedRoleDefinition-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new EducationAssignmentSettings
 {
 	SubmissionAnimationDisabled = true,
 };
-var result = await graphClient.Education.Classes["educationClass-id"].AssignmentSettings.PatchAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].AssignmentSettings.PatchAsync(requestBody);
 
 
 ```

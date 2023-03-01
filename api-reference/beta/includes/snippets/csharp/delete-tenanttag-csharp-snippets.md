@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.TenantRelationships.ManagedTenants.TenantTags["tenantTag-id"].DeleteAsync();
+await graphClient.TenantRelationships.ManagedTenants.TenantTags["{tenantTag-id}"].DeleteAsync();
 
 
 ```

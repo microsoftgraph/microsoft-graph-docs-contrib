@@ -34,7 +34,7 @@ var requestBody = new MessageRule
 		StopProcessingRules = true,
 	},
 };
-var result = await graphClient.Me.MailFolders["mailFolder-id"].MessageRules.PostAsync(requestBody);
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules.PostAsync(requestBody);
 
 
 ```

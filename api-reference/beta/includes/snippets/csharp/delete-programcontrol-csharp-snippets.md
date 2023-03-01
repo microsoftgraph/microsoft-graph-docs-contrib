@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.ProgramControls["programControl-id"].DeleteAsync();
+await graphClient.ProgramControls["{programControl-id}"].DeleteAsync();
 
 
 ```

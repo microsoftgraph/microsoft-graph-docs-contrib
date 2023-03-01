@@ -19,7 +19,7 @@ var requestBody = new User
 		},
 	},
 };
-var result = await graphClient.Users["user-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
 
 ```

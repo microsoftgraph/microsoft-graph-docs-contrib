@@ -10,7 +10,7 @@ var requestBody = new Message
 {
 	IsRead = true,
 };
-var result = await graphClient.Me.Messages["message-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.Revi
 		},
 	},
 };
-await graphClient.Compliance.Ediscovery.Cases["case-id"].ReviewSets["reviewSet-id"].Queries["reviewSetQuery-id"].EdiscoveryApplyTags.PostAsync(requestBody);
+await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].Queries["{reviewSetQuery-id}"].EdiscoveryApplyTags.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new TiIndicator
 {
 	Description = "description-updated",
 };
-var result = await graphClient.Security.TiIndicators["tiIndicator-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.TiIndicators["{tiIndicator-id}"].PatchAsync(requestBody);
 
 
 ```

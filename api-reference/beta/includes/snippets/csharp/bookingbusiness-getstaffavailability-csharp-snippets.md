@@ -23,7 +23,7 @@ var requestBody = new Microsoft.Graph.Beta.BookingBusinesses.Item.GetStaffAvaila
 		TimeZone = "Pacific Standard Time",
 	},
 };
-var result = await graphClient.BookingBusinesses["bookingBusiness-id"].GetStaffAvailability.PostAsync(requestBody);
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].GetStaffAvailability.PostAsync(requestBody);
 
 
 ```

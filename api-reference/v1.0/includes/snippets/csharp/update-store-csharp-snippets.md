@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Models.TermStore.Store
 {
 	DefaultLanguageTag = "en-US",
 };
-var result = await graphClient.Sites["site-id"].TermStore.PatchAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].TermStore.PatchAsync(requestBody);
 
 
 ```

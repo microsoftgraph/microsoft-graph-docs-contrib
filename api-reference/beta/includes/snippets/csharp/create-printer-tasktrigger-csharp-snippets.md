@@ -16,7 +16,7 @@ var requestBody = new PrintTaskTrigger
 		},
 	},
 };
-var result = await graphClient.Print.Printers["printer-id"].TaskTriggers.PostAsync(requestBody);
+var result = await graphClient.Print.Printers["{printer-id}"].TaskTriggers.PostAsync(requestBody);
 
 
 ```

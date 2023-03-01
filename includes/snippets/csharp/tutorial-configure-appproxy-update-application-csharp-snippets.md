@@ -21,7 +21,7 @@ var requestBody = new Application
 		HomePageUrl = "https://contosoiwaapp-contoso.msappproxy.net",
 	},
 };
-var result = await graphClient.Applications["application-id"].PatchAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
 
 ```

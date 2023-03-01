@@ -41,7 +41,7 @@ var requestBody = new Event
 		},
 	},
 };
-var result = await graphClient.Groups["group-id"].Events.PostAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Events.PostAsync(requestBody);
 
 
 ```

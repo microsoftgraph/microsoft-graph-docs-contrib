@@ -18,7 +18,7 @@ var requestBody = new Device
 		},
 	},
 };
-var result = await graphClient.Devices["device-id"].PatchAsync(requestBody);
+var result = await graphClient.Devices["{device-id}"].PatchAsync(requestBody);
 
 
 ```

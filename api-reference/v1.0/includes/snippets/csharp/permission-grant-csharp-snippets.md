@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Shares.Item.Permission.Grant.GrantPostRequ
 		"read",
 	},
 };
-var result = await graphClient.Shares["sharedDriveItem-id"].Permission.Grant.PostAsync(requestBody);
+var result = await graphClient.Shares["{sharedDriveItem-id}"].Permission.Grant.PostAsync(requestBody);
 
 
 ```

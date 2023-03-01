@@ -13,7 +13,7 @@ var requestBody = new Permission
 		"read",
 	},
 };
-var result = await graphClient.Sites["site-id"].Permissions["permission-id"].PatchAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].Permissions["{permission-id}"].PatchAsync(requestBody);
 
 
 ```

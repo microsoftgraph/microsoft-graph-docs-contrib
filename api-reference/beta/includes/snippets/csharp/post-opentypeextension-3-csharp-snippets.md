@@ -25,7 +25,7 @@ var requestBody = new Extension
 		},
 	},
 };
-var result = await graphClient.Groups["group-id"].Events["event-id"].Extensions.PostAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Events["{event-id}"].Extensions.PostAsync(requestBody);
 
 
 ```

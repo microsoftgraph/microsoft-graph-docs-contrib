@@ -40,7 +40,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.OpenShifts.Item.O
 		},
 	},
 };
-await graphClient.Teams["team-id"].Schedule.OpenShifts["openShift-id"].PutAsync(requestBody);
+await graphClient.Teams["{team-id}"].Schedule.OpenShifts["{openShift-id}"].PutAsync(requestBody);
 
 
 ```

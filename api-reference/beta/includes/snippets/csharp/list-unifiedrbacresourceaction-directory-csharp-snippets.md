@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.RoleManagement.Directory.ResourceNamespaces["unifiedRbacResourceNamespace-id"].ResourceActions.GetAsync();
+var result = await graphClient.RoleManagement.Directory.ResourceNamespaces["{unifiedRbacResourceNamespace-id}"].ResourceActions.GetAsync();
 
 
 ```

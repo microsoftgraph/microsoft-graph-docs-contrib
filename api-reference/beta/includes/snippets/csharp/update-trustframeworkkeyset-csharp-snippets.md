@@ -39,7 +39,7 @@ var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.KeySet
 		},
 	},
 };
-await graphClient.TrustFramework.KeySets["trustFrameworkKeySet-id"].PutAsync(requestBody);
+await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].PutAsync(requestBody);
 
 
 ```

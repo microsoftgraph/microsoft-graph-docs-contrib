@@ -11,7 +11,7 @@ var requestBody = new AuthenticationMethodConfiguration
 	OdataType = "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
 	State = AuthenticationMethodState.Enabled,
 };
-var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["authenticationMethodConfiguration-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -15,7 +15,7 @@ var requestBody = new ExtensionProperty
 		"User",
 	},
 };
-var result = await graphClient.Applications["application-id"].ExtensionProperties.PostAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].ExtensionProperties.PostAsync(requestBody);
 
 
 ```

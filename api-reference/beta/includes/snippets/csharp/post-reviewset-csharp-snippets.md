@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.ReviewSet
 {
 	DisplayName = "My Reviewset 3",
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].ReviewSets.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets.PostAsync(requestBody);
 
 
 ```

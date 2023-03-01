@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryReviewSetQu
 	DisplayName = "My Query 1 (update)",
 	ContentQuery = "(Author=\"edisons\")",
 };
-var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].Queries["ediscoveryReviewSetQuery-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].Queries["{ediscoveryReviewSetQuery-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -50,7 +50,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Reply.ReplyPostRe
 		},
 	},
 };
-await graphClient.Groups["group-id"].Threads["conversationThread-id"].Reply.PostAsync(requestBody);
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Reply.PostAsync(requestBody);
 
 
 ```

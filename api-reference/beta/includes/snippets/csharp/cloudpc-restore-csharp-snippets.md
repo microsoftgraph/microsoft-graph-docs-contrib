@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Clou
 {
 	CloudPcSnapshotId = "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8",
 };
-await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["cloudPC-id"].Restore.PostAsync(requestBody);
+await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"].Restore.PostAsync(requestBody);
 
 
 ```

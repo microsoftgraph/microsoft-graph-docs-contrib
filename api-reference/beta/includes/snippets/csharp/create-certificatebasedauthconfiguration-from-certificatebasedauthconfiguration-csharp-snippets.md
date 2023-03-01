@@ -22,7 +22,7 @@ var requestBody = new Microsoft.Graph.Beta.Organization.Item.CertificateBasedAut
 		},
 	},
 };
-await graphClient.Organization["organization-id"].CertificateBasedAuthConfiguration.PostAsync(requestBody);
+await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration.PostAsync(requestBody);
 
 
 ```

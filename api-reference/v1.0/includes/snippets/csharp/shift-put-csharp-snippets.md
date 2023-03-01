@@ -82,7 +82,7 @@ var requestBody = new Microsoft.Graph.Teams.Item.Schedule.Shifts.Item.Shift
 		},
 	},
 };
-await graphClient.Teams["team-id"].Schedule.Shifts["shift-id"].PutAsync(requestBody, (requestConfiguration) =>
+await graphClient.Teams["{team-id}"].Schedule.Shifts["{shift-id}"].PutAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");
 });

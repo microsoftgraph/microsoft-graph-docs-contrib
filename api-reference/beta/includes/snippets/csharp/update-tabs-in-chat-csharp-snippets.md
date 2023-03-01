@@ -10,7 +10,7 @@ var requestBody = new TeamsTab
 {
 	DisplayName = "My Contoso Tab - updated again",
 };
-var result = await graphClient.Chats["chat-id"].Tabs["teamsTab-id"].PatchAsync(requestBody);
+var result = await graphClient.Chats["{chat-id}"].Tabs["{teamsTab-id}"].PatchAsync(requestBody);
 
 
 ```

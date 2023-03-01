@@ -14,7 +14,7 @@ var requestBody = new BusinessScenario
 		"13eb9d8b-1d63-4153-9417-3a69ab200a78",
 	},
 };
-var result = await graphClient.Solutions.BusinessScenarios["businessScenario-id"].PatchAsync(requestBody);
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].PatchAsync(requestBody);
 
 
 ```

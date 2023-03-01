@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Policies.AuthenticationStrengthPolici
 		AuthenticationMethodModes.Password | AuthenticationMethodModes.Voice,
 	},
 };
-var result = await graphClient.Policies.AuthenticationStrengthPolicies["authenticationStrengthPolicy-id"].UpdateAllowedCombinations.PostAsync(requestBody);
+var result = await graphClient.Policies.AuthenticationStrengthPolicies["{authenticationStrengthPolicy-id}"].UpdateAllowedCombinations.PostAsync(requestBody);
 
 
 ```

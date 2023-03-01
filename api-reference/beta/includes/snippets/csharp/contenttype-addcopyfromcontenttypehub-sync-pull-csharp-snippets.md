@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Sites.Item.Lists.Item.ContentTypes.Ad
 {
 	ContentTypeId = "0x0101",
 };
-var result = await graphClient.Sites["site-id"].Lists["list-id"].ContentTypes.AddCopyFromContentTypeHub.PostAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].ContentTypes.AddCopyFromContentTypeHub.PostAsync(requestBody);
 
 
 ```

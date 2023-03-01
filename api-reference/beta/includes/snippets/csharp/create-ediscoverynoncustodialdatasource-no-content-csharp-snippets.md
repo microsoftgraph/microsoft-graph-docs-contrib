@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.S
 		},
 	},
 };
-await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Searches["ediscoverySearch-id"].NoncustodialSources["ediscoveryNoncustodialDataSource-id"].PostAsync(requestBody);
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Searches["{ediscoverySearch-id}"].NoncustodialSources["{ediscoveryNoncustodialDataSource-id}"].PostAsync(requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.SnoozeReminder.SnoozeR
 		TimeZone = "timeZone-value",
 	},
 };
-await graphClient.Me.Events["event-id"].SnoozeReminder.PostAsync(requestBody);
+await graphClient.Me.Events["{event-id}"].SnoozeReminder.PostAsync(requestBody);
 
 
 ```

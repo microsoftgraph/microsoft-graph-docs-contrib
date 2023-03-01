@@ -16,7 +16,7 @@ var requestBody = new GovernanceRoleAssignmentRequest
 	Reason = "Deactivate the role",
 	LinkedEligibleRoleAssignmentId = "cb8a533e-02d5-42ad-8499-916b1e4822ec",
 };
-var result = await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleAssignmentRequests.PostAsync(requestBody);
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
 
 
 ```

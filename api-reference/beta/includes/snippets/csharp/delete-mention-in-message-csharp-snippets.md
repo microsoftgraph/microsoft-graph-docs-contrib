@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Messages["message-id"].Mentions["mention-id"].DeleteAsync();
+await graphClient.Me.Messages["{message-id}"].Mentions["{mention-id}"].DeleteAsync();
 
 
 ```

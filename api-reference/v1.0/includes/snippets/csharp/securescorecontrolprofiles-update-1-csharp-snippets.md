@@ -28,7 +28,7 @@ var requestBody = new SecureScoreControlProfile
 		},
 	},
 };
-var result = await graphClient.Security.SecureScoreControlProfiles["secureScoreControlProfile-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.SecureScoreControlProfiles["{secureScoreControlProfile-id}"].PatchAsync(requestBody);
 
 
 ```

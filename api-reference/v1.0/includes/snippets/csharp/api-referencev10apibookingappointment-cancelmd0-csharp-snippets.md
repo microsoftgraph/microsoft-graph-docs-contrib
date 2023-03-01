@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Solutions.BookingBusinesses.Item.Appointme
 {
 	CancellationMessage = "Your appointment has been successfully cancelled. Please call us again.",
 };
-await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].Appointments["bookingAppointment-id"].Cancel.PostAsync(requestBody);
+await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Appointments["{bookingAppointment-id}"].Cancel.PostAsync(requestBody);
 
 
 ```

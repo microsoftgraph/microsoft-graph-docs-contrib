@@ -13,7 +13,7 @@ var requestBody = new SwapShiftsChangeRequest
 	RecipientUserId = "567c8ea5-9e32-422a-a663-8270201699cd",
 	RecipientShiftId = "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c",
 };
-var result = await graphClient.Teams["team-id"].Schedule.SwapShiftsChangeRequests.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Teams["{team-id}"].Schedule.SwapShiftsChangeRequests.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Authorization", "Bearer {token}");
 });

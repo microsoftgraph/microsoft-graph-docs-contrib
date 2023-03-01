@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Security.AttackSimulation.Simulations["simulation-id"].DeleteAsync();
+await graphClient.Security.AttackSimulation.Simulations["{simulation-id}"].DeleteAsync();
 
 
 ```

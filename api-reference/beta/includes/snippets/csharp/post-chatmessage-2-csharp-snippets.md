@@ -36,7 +36,7 @@ var requestBody = new ChatMessage
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Channels["channel-id"].Messages.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages.PostAsync(requestBody);
 
 
 ```

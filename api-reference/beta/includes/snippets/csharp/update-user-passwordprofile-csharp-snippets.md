@@ -14,7 +14,7 @@ var requestBody = new User
 		Password = "xWwvJ]6NMw+bWH-d",
 	},
 };
-var result = await graphClient.Users["user-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
 
 ```

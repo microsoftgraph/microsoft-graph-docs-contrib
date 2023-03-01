@@ -21,7 +21,7 @@ var requestBody = new EducationAssignmentResource
 		},
 	},
 };
-var result = await graphClient.Education.Classes["educationClass-id"].Assignments["educationAssignment-id"].Resources.PostAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Resources.PostAsync(requestBody);
 
 
 ```

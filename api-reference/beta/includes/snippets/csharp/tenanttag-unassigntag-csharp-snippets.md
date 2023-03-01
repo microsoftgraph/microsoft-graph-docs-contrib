@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.Te
 		"String",
 	},
 };
-var result = await graphClient.TenantRelationships.ManagedTenants.TenantTags["tenantTag-id"].ManagedTenantsUnassignTag.PostAsync(requestBody);
+var result = await graphClient.TenantRelationships.ManagedTenants.TenantTags["{tenantTag-id}"].ManagedTenantsUnassignTag.PostAsync(requestBody);
 
 
 ```

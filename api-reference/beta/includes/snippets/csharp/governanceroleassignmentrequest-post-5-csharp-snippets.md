@@ -20,7 +20,7 @@ var requestBody = new GovernanceRoleAssignmentRequest
 		EndDateTime = DateTimeOffset.Parse("2018-06-05T05:42:31.000Z"),
 	},
 };
-var result = await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleAssignmentRequests.PostAsync(requestBody);
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
 
 
 ```

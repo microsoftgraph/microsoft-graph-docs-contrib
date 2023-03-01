@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.SiteSource
 		WebUrl = "https://contoso.sharepoint.com/sites/HumanResources",
 	},
 };
-var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].Custodians["custodian-id"].SiteSources.PostAsync(requestBody);
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Custodians["{custodian-id}"].SiteSources.PostAsync(requestBody);
 
 
 ```

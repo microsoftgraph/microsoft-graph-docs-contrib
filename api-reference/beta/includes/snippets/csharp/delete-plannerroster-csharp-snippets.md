@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Planner.Rosters["plannerRoster-id"].DeleteAsync();
+await graphClient.Planner.Rosters["{plannerRoster-id}"].DeleteAsync();
 
 
 ```

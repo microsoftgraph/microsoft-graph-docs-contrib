@@ -10,7 +10,7 @@ var requestBody = new Chat
 {
 	Topic = "Group chat title update",
 };
-var result = await graphClient.Chats["chat-id"].PatchAsync(requestBody);
+var result = await graphClient.Chats["{chat-id}"].PatchAsync(requestBody);
 
 
 ```

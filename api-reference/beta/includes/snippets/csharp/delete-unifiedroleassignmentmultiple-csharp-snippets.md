@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.RoleManagement.DeviceManagement.RoleAssignments["unifiedRoleAssignmentMultiple-id"].DeleteAsync();
+await graphClient.RoleManagement.DeviceManagement.RoleAssignments["{unifiedRoleAssignmentMultiple-id}"].DeleteAsync();
 
 
 ```

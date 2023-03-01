@@ -26,7 +26,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 		"String",
 	},
 };
-await graphClient.Admin.Windows.Updates.Deployments["deployment-id"].Audience.WindowsUpdatesUpdateAudienceById.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].Audience.WindowsUpdatesUpdateAudienceById.PostAsync(requestBody);
 
 
 ```

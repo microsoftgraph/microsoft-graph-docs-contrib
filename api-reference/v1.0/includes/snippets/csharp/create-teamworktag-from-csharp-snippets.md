@@ -21,7 +21,7 @@ var requestBody = new TeamworkTag
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Tags.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Tags.PostAsync(requestBody);
 
 
 ```

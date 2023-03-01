@@ -36,7 +36,7 @@ var requestBody = new DelegatedAdminAccessAssignment
 		},
 	},
 };
-var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["delegatedAdminRelationship-id"].AccessAssignments.PostAsync(requestBody);
+var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["{delegatedAdminRelationship-id}"].AccessAssignments.PostAsync(requestBody);
 
 
 ```

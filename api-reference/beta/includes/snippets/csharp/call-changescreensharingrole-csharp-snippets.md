@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.ChangeScree
 {
 	Role = ScreenSharingRole.Viewer,
 };
-await graphClient.Communications.Calls["call-id"].ChangeScreenSharingRole.PostAsync(requestBody);
+await graphClient.Communications.Calls["{call-id}"].ChangeScreenSharingRole.PostAsync(requestBody);
 
 
 ```

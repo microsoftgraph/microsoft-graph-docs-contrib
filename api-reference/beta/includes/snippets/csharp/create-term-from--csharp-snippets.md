@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.TermStore.Term
 		},
 	},
 };
-var result = await graphClient.TermStore.Sets["set-id"].Children.PostAsync(requestBody);
+var result = await graphClient.TermStore.Sets["{set-id}"].Children.PostAsync(requestBody);
 
 
 ```

@@ -11,7 +11,7 @@ var requestBody = new IdentityProviderBase
 	OdataType = "#microsoft.graph.socialIdentityProvider",
 	DisplayName = "Apple",
 };
-var result = await graphClient.Identity.IdentityProviders["identityProviderBase-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"].PatchAsync(requestBody);
 
 
 ```

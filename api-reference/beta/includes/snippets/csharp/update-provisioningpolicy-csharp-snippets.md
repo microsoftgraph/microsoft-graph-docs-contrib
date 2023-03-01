@@ -20,7 +20,7 @@ var requestBody = new CloudPcProvisioningPolicy
 		Language = "en-US",
 	},
 };
-var result = await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["cloudPcProvisioningPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["{cloudPcProvisioningPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Attachments.CreateUp
 		ContentId = "my_inline_picture",
 	},
 };
-var result = await graphClient.Me.Messages["message-id"].Attachments.CreateUploadSession.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
 
 ```

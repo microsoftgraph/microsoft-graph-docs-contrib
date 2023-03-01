@@ -12,7 +12,7 @@ var requestBody = new OrganizationalBrandingLocalization
 	Id = "fr-FR",
 	SignInPageText = " ",
 };
-var result = await graphClient.Organization["organization-id"].Branding.Localizations.PostAsync(requestBody);
+var result = await graphClient.Organization["{organization-id}"].Branding.Localizations.PostAsync(requestBody);
 
 
 ```

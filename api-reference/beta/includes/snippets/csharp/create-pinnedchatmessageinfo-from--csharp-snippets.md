@@ -15,7 +15,7 @@ var requestBody = new PinnedChatMessageInfo
 		},
 	},
 };
-var result = await graphClient.Chats["chat-id"].PinnedMessages.PostAsync(requestBody);
+var result = await graphClient.Chats["{chat-id}"].PinnedMessages.PostAsync(requestBody);
 
 
 ```

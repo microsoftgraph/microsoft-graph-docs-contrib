@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Contacts["orgContact-id"].TransitiveReports.Count.GetAsync();
+await graphClient.Contacts["{orgContact-id}"].TransitiveReports.Count.GetAsync();
 
 
 ```

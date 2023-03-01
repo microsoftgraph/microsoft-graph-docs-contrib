@@ -16,7 +16,7 @@ var requestBody = new MailFolder
 		},
 	},
 };
-var result = await graphClient.Me.MailFolders["mailFolder-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].PatchAsync(requestBody);
 
 
 ```

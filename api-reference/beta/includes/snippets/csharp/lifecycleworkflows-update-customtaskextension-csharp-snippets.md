@@ -53,7 +53,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.CustomTaskE
 		TimeoutDuration = TimeSpan.Parse("PT20M"),
 	},
 };
-var result = await graphClient.IdentityGovernance.LifecycleWorkflows.CustomTaskExtensions["customTaskExtension-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.CustomTaskExtensions["{customTaskExtension-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -19,7 +19,7 @@ var requestBody = new PrintConnector
 		AltitudeInMeters = 3,
 	},
 };
-var result = await graphClient.Print.Connectors["printConnector-id"].PatchAsync(requestBody);
+var result = await graphClient.Print.Connectors["{printConnector-id}"].PatchAsync(requestBody);
 
 
 ```

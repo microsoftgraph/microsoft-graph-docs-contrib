@@ -11,7 +11,7 @@ var requestBody = new ContactFolder
 	ParentFolderId = "parentFolderId-value",
 	DisplayName = "displayName-value",
 };
-var result = await graphClient.Me.ContactFolders["contactFolder-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.ContactFolders["{contactFolder-id}"].PatchAsync(requestBody);
 
 
 ```

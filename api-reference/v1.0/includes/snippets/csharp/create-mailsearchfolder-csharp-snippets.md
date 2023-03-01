@@ -26,7 +26,7 @@ var requestBody = new MailFolder
 		},
 	},
 };
-var result = await graphClient.Me.MailFolders["mailFolder-id"].ChildFolders.PostAsync(requestBody);
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].ChildFolders.PostAsync(requestBody);
 
 
 ```

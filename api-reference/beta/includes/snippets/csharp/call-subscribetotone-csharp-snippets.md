@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.SubscribeTo
 {
 	ClientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54",
 };
-var result = await graphClient.Communications.Calls["call-id"].SubscribeToTone.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["{call-id}"].SubscribeToTone.PostAsync(requestBody);
 
 
 ```

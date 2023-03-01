@@ -53,7 +53,7 @@ var requestBody = new Simulation
 		},
 	},
 };
-var result = await graphClient.Security.AttackSimulation.Simulations["simulation-id"].PatchAsync(requestBody);
+var result = await graphClient.Security.AttackSimulation.Simulations["{simulation-id}"].PatchAsync(requestBody);
 
 
 ```

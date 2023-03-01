@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Policies.MobileDeviceManagementPolicies["mobilityManagementPolicy-id"].IncludedGroups["group-id"].Ref.DeleteAsync();
+await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"].IncludedGroups["{group-id}"].Ref.DeleteAsync();
 
 
 ```

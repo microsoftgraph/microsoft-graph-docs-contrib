@@ -15,7 +15,7 @@ var requestBody = new ColumnDefinition
 		},
 	},
 };
-var result = await graphClient.Sites["site-id"].ContentTypes["contentType-id"].Columns.PostAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].Columns.PostAsync(requestBody);
 
 
 ```

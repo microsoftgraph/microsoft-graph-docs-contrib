@@ -14,7 +14,7 @@ var requestBody = new PrintTaskDefinition
 		DisplayName = "Requesting App Display Name",
 	},
 };
-var result = await graphClient.Print.TaskDefinitions["printTaskDefinition-id"].PatchAsync(requestBody);
+var result = await graphClient.Print.TaskDefinitions["{printTaskDefinition-id}"].PatchAsync(requestBody);
 
 
 ```

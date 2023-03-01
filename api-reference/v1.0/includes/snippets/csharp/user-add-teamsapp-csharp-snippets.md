@@ -15,7 +15,7 @@ var requestBody = new UserScopeTeamsAppInstallation
 		},
 	},
 };
-var result = await graphClient.Users["user-id"].Teamwork.InstalledApps.PostAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Teamwork.InstalledApps.PostAsync(requestBody);
 
 
 ```

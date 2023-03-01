@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Onenote.Resources["onenoteResource-id"].Content.GetAsync();
+await graphClient.Me.Onenote.Resources["{onenoteResource-id}"].Content.GetAsync();
 
 
 ```

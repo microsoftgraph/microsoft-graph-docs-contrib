@@ -25,7 +25,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.CreateForward.Create
 	},
 	Comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved.",
 };
-var result = await graphClient.Me.Messages["message-id"].CreateForward.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].CreateForward.PostAsync(requestBody);
 
 
 ```

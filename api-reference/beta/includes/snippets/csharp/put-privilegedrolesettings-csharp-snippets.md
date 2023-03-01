@@ -49,7 +49,7 @@ var requestBody = new Microsoft.Graph.Beta.PrivilegedRoles.Item.Settings.Setting
 		},
 	},
 };
-await graphClient.PrivilegedRoles["privilegedRole-id"].Settings.PutAsync(requestBody);
+await graphClient.PrivilegedRoles["{privilegedRole-id}"].Settings.PutAsync(requestBody);
 
 
 ```

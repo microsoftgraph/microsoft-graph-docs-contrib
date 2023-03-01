@@ -15,7 +15,7 @@ var requestBody = new Domain
 		"OfficeCommunicationsOnline",
 	},
 };
-var result = await graphClient.Domains["domain-id"].PatchAsync(requestBody);
+var result = await graphClient.Domains["{domain-id}"].PatchAsync(requestBody);
 
 
 ```

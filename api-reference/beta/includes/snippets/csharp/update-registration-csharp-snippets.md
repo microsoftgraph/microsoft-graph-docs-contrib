@@ -25,7 +25,7 @@ var requestBody = new MeetingRegistration
 		},
 	},
 };
-var result = await graphClient.Me.OnlineMeetings["onlineMeeting-id"].Registration.PatchAsync(requestBody);
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.PatchAsync(requestBody);
 
 
 ```

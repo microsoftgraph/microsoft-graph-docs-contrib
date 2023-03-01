@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.R
 	},
 	AdditionalDataOptions = Microsoft.Graph.Beta.Models.Security.AdditionalDataOptions.LinkedFiles,
 };
-await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].SecurityAddToReviewSet.PostAsync(requestBody);
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].SecurityAddToReviewSet.PostAsync(requestBody);
 
 
 ```

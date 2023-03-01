@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.ApplicationTemplates.Item.Instantiate.Inst
 {
 	DisplayName = "Contoso IWA App",
 };
-var result = await graphClient.ApplicationTemplates["applicationTemplate-id"].Instantiate.PostAsync(requestBody);
+var result = await graphClient.ApplicationTemplates["{applicationTemplate-id}"].Instantiate.PostAsync(requestBody);
 
 
 ```

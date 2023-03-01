@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.EntitlementManagem
 		},
 	},
 };
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentRequests["accessPackageAssignmentRequest-id"].Cancel.PostAsync(requestBody);
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentRequests["{accessPackageAssignmentRequest-id}"].Cancel.PostAsync(requestBody);
 
 
 ```

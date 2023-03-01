@@ -21,7 +21,7 @@ var requestBody = new Printer
 		},
 	},
 };
-var result = await graphClient.Print.Printers["printer-id"].PatchAsync(requestBody);
+var result = await graphClient.Print.Printers["{printer-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -12,7 +12,7 @@ var requestBody = new AppRoleAssignment
 	ResourceId = Guid.Parse("076e8b57-bac8-49d7-9396-e3449b685055"),
 	AppRoleId = Guid.Parse("00000000-0000-0000-0000-000000000000"),
 };
-var result = await graphClient.Groups["group-id"].AppRoleAssignments.PostAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].AppRoleAssignments.PostAsync(requestBody);
 
 
 ```

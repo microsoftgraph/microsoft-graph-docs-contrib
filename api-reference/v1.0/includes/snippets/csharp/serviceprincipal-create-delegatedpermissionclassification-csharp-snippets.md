@@ -12,7 +12,7 @@ var requestBody = new DelegatedPermissionClassification
 	PermissionName = "User.Read",
 	Classification = PermissionClassificationType.Low,
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].DelegatedPermissionClassifications.PostAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].DelegatedPermissionClassifications.PostAsync(requestBody);
 
 
 ```

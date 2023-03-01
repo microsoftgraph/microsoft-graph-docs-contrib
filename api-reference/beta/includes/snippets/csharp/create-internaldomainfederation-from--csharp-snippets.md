@@ -22,7 +22,7 @@ var requestBody = new InternalDomainFederation
 	NextSigningCertificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
 	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp,
 };
-var result = await graphClient.Domains["domain-id"].FederationConfiguration.PostAsync(requestBody);
+var result = await graphClient.Domains["{domain-id}"].FederationConfiguration.PostAsync(requestBody);
 
 
 ```

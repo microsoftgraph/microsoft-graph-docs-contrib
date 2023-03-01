@@ -13,7 +13,7 @@ var requestBody = new AuthenticationCombinationConfiguration
 		AuthenticationMethodModes.Fido2,
 	},
 };
-var result = await graphClient.Identity.ConditionalAccess.AuthenticationStrengths.Policies["authenticationStrengthPolicy-id"].CombinationConfigurations["authenticationCombinationConfiguration-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.ConditionalAccess.AuthenticationStrengths.Policies["{authenticationStrengthPolicy-id}"].CombinationConfigurations["{authenticationCombinationConfiguration-id}"].PatchAsync(requestBody);
 
 
 ```

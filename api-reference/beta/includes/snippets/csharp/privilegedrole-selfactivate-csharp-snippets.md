@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.PrivilegedRoles.Item.SelfActivate.Sel
 	TicketNumber = "ticketNumber-value",
 	TicketSystem = "ticketSystem-value",
 };
-var result = await graphClient.PrivilegedRoles["privilegedRole-id"].SelfActivate.PostAsync(requestBody);
+var result = await graphClient.PrivilegedRoles["{privilegedRole-id}"].SelfActivate.PostAsync(requestBody);
 
 
 ```

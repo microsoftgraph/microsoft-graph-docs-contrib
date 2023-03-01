@@ -10,7 +10,7 @@ var requestBody = new MailFolder
 {
 	DisplayName = "displayName-value",
 };
-var result = await graphClient.Me.MailFolders["mailFolder-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Me.Events.Item.Cancel.CancelPostRequestBod
 {
 	Comment = "Cancelling for this week due to all hands",
 };
-await graphClient.Me.Events["event-id"].Cancel.PostAsync(requestBody);
+await graphClient.Me.Events["{event-id}"].Cancel.PostAsync(requestBody);
 
 
 ```

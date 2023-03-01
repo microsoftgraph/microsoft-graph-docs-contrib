@@ -13,7 +13,7 @@ var requestBody = new LinkedResource
 	ApplicationName = "Microsoft",
 	DisplayName = "Microsoft",
 };
-var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].LinkedResources["linkedResource-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].LinkedResources["{linkedResource-id}"].PatchAsync(requestBody);
 
 
 ```

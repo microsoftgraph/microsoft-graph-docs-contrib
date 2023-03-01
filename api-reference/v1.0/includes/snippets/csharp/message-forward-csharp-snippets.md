@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Me.Messages.Item.Forward.ForwardPostReques
 		},
 	},
 };
-await graphClient.Me.Messages["message-id"].Forward.PostAsync(requestBody);
+await graphClient.Me.Messages["{message-id}"].Forward.PostAsync(requestBody);
 
 
 ```

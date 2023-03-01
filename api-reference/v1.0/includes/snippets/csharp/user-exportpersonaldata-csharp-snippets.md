@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Users.Item.ExportPersonalData.ExportPerson
 {
 	StorageLocation = "storageLocation-value",
 };
-await graphClient.Users["user-id"].ExportPersonalData.PostAsync(requestBody);
+await graphClient.Users["{user-id}"].ExportPersonalData.PostAsync(requestBody);
 
 
 ```

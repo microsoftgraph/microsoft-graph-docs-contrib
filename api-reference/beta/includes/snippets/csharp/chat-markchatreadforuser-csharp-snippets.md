@@ -19,7 +19,7 @@ var requestBody = new Microsoft.Graph.Beta.Chats.Item.MarkChatReadForUser.MarkCh
 		},
 	},
 };
-await graphClient.Chats["chat-id"].MarkChatReadForUser.PostAsync(requestBody);
+await graphClient.Chats["{chat-id}"].MarkChatReadForUser.PostAsync(requestBody);
 
 
 ```

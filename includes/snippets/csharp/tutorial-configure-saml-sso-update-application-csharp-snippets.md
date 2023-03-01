@@ -20,7 +20,7 @@ var requestBody = new Application
 		"https://signin.aws.amazon.com/saml",
 	},
 };
-var result = await graphClient.Applications["application-id"].PatchAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
 
 ```

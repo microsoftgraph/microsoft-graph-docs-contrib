@@ -18,7 +18,7 @@ var requestBody = new EducationAssignment
 	AddedStudentAction = EducationAddedStudentAction.None,
 	AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndPublisher,
 };
-var result = await graphClient.Education.Classes["educationClass-id"].Assignments["educationAssignment-id"].PatchAsync(requestBody);
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].PatchAsync(requestBody);
 
 
 ```

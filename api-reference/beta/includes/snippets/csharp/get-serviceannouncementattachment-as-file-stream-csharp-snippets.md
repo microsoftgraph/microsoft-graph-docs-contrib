@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Admin.ServiceAnnouncement.Messages["serviceUpdateMessage-id"].Attachments["serviceAnnouncementAttachment-id"].Content.GetAsync();
+await graphClient.Admin.ServiceAnnouncement.Messages["{serviceUpdateMessage-id}"].Attachments["{serviceAnnouncementAttachment-id}"].Content.GetAsync();
 
 
 ```

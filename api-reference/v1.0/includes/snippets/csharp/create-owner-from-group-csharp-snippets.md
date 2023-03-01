@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Models.ReferenceCreate
 {
 	OdataId = "https://graph.microsoft.com/v1.0/users/{id}",
 };
-await graphClient.Groups["group-id"].Owners.Ref.PostAsync(requestBody);
+await graphClient.Groups["{group-id}"].Owners.Ref.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.DirectoryNamespace.Recommendations.It
 {
 	DismissReason = "Recommendations is not relevant for my organization because...",
 };
-var result = await graphClient.Directory.Recommendations["recommendation-id"].Dismiss.PostAsync(requestBody);
+var result = await graphClient.Directory.Recommendations["{recommendation-id}"].Dismiss.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Copy.CopyPostRequest
 {
 	DestinationId = "destinationId-value",
 };
-var result = await graphClient.Me.Messages["message-id"].Copy.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].Copy.PostAsync(requestBody);
 
 
 ```

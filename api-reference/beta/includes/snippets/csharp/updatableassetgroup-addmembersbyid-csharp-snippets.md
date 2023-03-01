@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets
 	},
 	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
 };
-await graphClient.Admin.Windows.Updates.UpdatableAssets["updatableAsset-id"].WindowsUpdatesAddMembersById.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].WindowsUpdatesAddMembersById.PostAsync(requestBody);
 
 
 ```

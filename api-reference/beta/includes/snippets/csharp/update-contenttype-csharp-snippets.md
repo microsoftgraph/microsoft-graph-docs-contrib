@@ -62,7 +62,7 @@ var requestBody = new ContentType
 		},
 	},
 };
-var result = await graphClient.Sites["site-id"].ContentTypes["contentType-id"].PatchAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].PatchAsync(requestBody);
 
 
 ```

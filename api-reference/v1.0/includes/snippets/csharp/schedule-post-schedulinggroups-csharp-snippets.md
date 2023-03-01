@@ -16,7 +16,7 @@ var requestBody = new SchedulingGroup
 		"2a4296b3-a28a-44ba-bc66-0274b9b95851",
 	},
 };
-var result = await graphClient.Teams["team-id"].Schedule.SchedulingGroups.PostAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].Schedule.SchedulingGroups.PostAsync(requestBody);
 
 
 ```

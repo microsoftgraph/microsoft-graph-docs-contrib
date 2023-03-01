@@ -17,7 +17,7 @@ var requestBody = new FederatedIdentityCredential
 		"api://AzureADTokenExchange",
 	},
 };
-var result = await graphClient.Applications["application-id"].FederatedIdentityCredentials["federatedIdentityCredential-id"].PatchAsync(requestBody);
+var result = await graphClient.Applications["{application-id}"].FederatedIdentityCredentials["{federatedIdentityCredential-id}"].PatchAsync(requestBody);
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Me.Messages["message-id"].CreateReply.PostAsync(null);
+var result = await graphClient.Me.Messages["{message-id}"].CreateReply.PostAsync(null);
 
 
 ```

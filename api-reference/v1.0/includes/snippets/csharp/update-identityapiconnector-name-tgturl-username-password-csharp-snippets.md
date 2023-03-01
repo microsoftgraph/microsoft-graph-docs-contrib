@@ -24,7 +24,7 @@ var requestBody = new IdentityApiConnector
 		},
 	},
 };
-var result = await graphClient.Identity.ApiConnectors["identityApiConnector-id"].PatchAsync(requestBody);
+var result = await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"].PatchAsync(requestBody);
 
 
 ```

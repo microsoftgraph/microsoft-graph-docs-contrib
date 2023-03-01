@@ -8,7 +8,6 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Me.AppRoleAssignedResources.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Count = true;
 	requestConfiguration.QueryParameters.Select = new string []{ "displayName","accountEnabled","servicePrincipalType","signInAudience" };
 	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
 });

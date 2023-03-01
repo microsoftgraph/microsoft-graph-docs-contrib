@@ -11,7 +11,7 @@ var requestBody = new ApprovalStage
 	ReviewResult = "Approve",
 	Justification = "OK",
 };
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentApprovals["approval-id"].Stages["approvalStage-id"].PatchAsync(requestBody);
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentApprovals["{approval-id}"].Stages["{approvalStage-id}"].PatchAsync(requestBody);
 
 
 ```

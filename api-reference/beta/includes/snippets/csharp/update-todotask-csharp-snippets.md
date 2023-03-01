@@ -14,7 +14,7 @@ var requestBody = new TodoTask
 		TimeZone = "Eastern Standard Time",
 	},
 };
-var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].PatchAsync(requestBody);
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].PatchAsync(requestBody);
 
 
 ```

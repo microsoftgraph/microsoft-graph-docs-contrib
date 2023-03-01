@@ -13,7 +13,7 @@ var requestBody = new CrossTenantIdentitySyncPolicyPartner
 		IsSyncAllowed = true,
 	},
 };
-var result = await graphClient.Policies.CrossTenantAccessPolicy.Partners["crossTenantAccessPolicyConfigurationPartner-tenantId"].IdentitySynchronization.PatchAsync(requestBody);
+var result = await graphClient.Policies.CrossTenantAccessPolicy.Partners["{crossTenantAccessPolicyConfigurationPartner-tenantId}"].IdentitySynchronization.PatchAsync(requestBody);
 
 
 ```

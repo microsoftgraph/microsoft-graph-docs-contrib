@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Me.MailFolders.Item.Copy.CopyPostRequestBo
 {
 	DestinationId = "destinationId-value",
 };
-var result = await graphClient.Me.MailFolders["mailFolder-id"].Copy.PostAsync(requestBody);
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].Copy.PostAsync(requestBody);
 
 
 ```

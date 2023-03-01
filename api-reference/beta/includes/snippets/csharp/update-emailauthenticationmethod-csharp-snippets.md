@@ -10,7 +10,7 @@ var requestBody = new EmailAuthenticationMethod
 {
 	EmailAddress = "kim@contoso.com",
 };
-var result = await graphClient.Users["user-id"].Authentication.EmailMethods["emailAuthenticationMethod-id"].PatchAsync(requestBody);
+var result = await graphClient.Users["{user-id}"].Authentication.EmailMethods["{emailAuthenticationMethod-id}"].PatchAsync(requestBody);
 
 
 ```

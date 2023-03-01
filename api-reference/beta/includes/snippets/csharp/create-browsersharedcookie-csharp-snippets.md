@@ -16,7 +16,7 @@ var requestBody = new BrowserSharedCookie
 	Comment = "A cookie for microsoft.com",
 	Path = "/",
 };
-var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].SharedCookies.PostAsync(requestBody);
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].SharedCookies.PostAsync(requestBody);
 
 
 ```

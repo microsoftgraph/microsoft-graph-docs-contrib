@@ -28,7 +28,7 @@ var requestBody = new Team
 		ShowInTeamsSearchAndSuggestions = true,
 	},
 };
-var result = await graphClient.Teams["team-id"].PatchAsync(requestBody);
+var result = await graphClient.Teams["{team-id}"].PatchAsync(requestBody);
 
 
 ```

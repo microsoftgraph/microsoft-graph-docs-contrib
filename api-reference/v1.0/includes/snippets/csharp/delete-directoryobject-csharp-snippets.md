@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.DirectoryObjects["directoryObject-id"].DeleteAsync();
+await graphClient.DirectoryObjects["{directoryObject-id}"].DeleteAsync();
 
 
 ```

@@ -27,7 +27,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.ReplyAll.ReplyAllPos
 	},
 	Comment = "Please take a look at the attached guidelines before you decide on the name.",
 };
-await graphClient.Me.Messages["message-id"].ReplyAll.PostAsync(requestBody);
+await graphClient.Me.Messages["{message-id}"].ReplyAll.PostAsync(requestBody);
 
 
 ```

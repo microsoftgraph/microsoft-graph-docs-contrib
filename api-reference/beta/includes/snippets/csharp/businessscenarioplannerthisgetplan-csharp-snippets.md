@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Solutions.BusinessScenarios.Item.Plan
 		},
 	},
 };
-var result = await graphClient.Solutions.BusinessScenarios["businessScenario-id"].Planner.GetPlan.PostAsync(requestBody);
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.GetPlan.PostAsync(requestBody);
 
 
 ```

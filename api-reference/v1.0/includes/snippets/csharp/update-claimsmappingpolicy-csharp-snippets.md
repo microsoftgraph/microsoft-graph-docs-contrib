@@ -10,7 +10,7 @@ var requestBody = new ClaimsMappingPolicy
 {
 	DisplayName = "UpdateClaimsPolicy",
 };
-var result = await graphClient.Policies.ClaimsMappingPolicies["claimsMappingPolicy-id"].PatchAsync(requestBody);
+var result = await graphClient.Policies.ClaimsMappingPolicies["{claimsMappingPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

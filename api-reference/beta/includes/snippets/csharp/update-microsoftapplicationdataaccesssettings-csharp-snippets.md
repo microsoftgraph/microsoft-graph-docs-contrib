@@ -10,7 +10,7 @@ var requestBody = new MicrosoftApplicationDataAccessSettings
 {
 	DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981",
 };
-var result = await graphClient.Organization["organization-id"].Settings.MicrosoftApplicationDataAccess.PatchAsync(requestBody);
+var result = await graphClient.Organization["{organization-id}"].Settings.MicrosoftApplicationDataAccess.PatchAsync(requestBody);
 
 
 ```

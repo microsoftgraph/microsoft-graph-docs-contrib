@@ -39,7 +39,7 @@ var requestBody = new PlannerPlanConfigurationLocalization
 		},
 	},
 };
-var result = await graphClient.Solutions.BusinessScenarios["businessScenario-id"].Planner.PlanConfiguration.Localizations.PostAsync(requestBody);
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration.Localizations.PostAsync(requestBody);
 
 
 ```

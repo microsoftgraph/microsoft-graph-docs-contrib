@@ -10,7 +10,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ReferenceCreate
 {
 	OdataId = "https://graph.microsoft.com/beta/users/alexd@contoso.com",
 };
-await graphClient.Groups["group-id"].RejectedSenders.Ref.PostAsync(requestBody);
+await graphClient.Groups["{group-id}"].RejectedSenders.Ref.PostAsync(requestBody);
 
 
 ```

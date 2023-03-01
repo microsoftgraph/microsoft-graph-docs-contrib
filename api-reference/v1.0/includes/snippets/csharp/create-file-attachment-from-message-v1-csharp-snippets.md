@@ -17,7 +17,7 @@ var requestBody = new Attachment
 		},
 	},
 };
-var result = await graphClient.Me.Messages["message-id"].Attachments.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["{message-id}"].Attachments.PostAsync(requestBody);
 
 
 ```

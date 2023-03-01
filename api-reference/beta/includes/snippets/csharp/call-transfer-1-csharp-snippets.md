@@ -36,7 +36,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Transfer.Tr
 		},
 	},
 };
-await graphClient.Communications.Calls["call-id"].Transfer.PostAsync(requestBody);
+await graphClient.Communications.Calls["{call-id}"].Transfer.PostAsync(requestBody);
 
 
 ```

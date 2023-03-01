@@ -13,7 +13,7 @@ var requestBody = new SitePage
 	ShowComments = true,
 	ShowRecommendedPages = false,
 };
-var result = await graphClient.Sites["site-id"].Pages["sitePage-id"].PatchAsync(requestBody);
+var result = await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"].PatchAsync(requestBody);
 
 
 ```

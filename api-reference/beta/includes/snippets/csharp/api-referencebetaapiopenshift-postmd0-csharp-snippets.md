@@ -50,7 +50,7 @@ var requestBody = new OpenShift
 		},
 	},
 };
-var result = await graphClient.Teams["team-id"].Schedule.OpenShifts.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Teams["{team-id}"].Schedule.OpenShifts.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Authorization", "Bearer {token}");
 });

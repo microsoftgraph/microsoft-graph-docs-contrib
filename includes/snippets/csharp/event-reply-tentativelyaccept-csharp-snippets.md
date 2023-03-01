@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Me.Events.Item.TentativelyAccept.Tentative
 	Comment = "I will probably be able to make it.",
 	SendResponse = true,
 };
-await graphClient.Me.Events["event-id"].TentativelyAccept.PostAsync(requestBody);
+await graphClient.Me.Events["{event-id}"].TentativelyAccept.PostAsync(requestBody);
 
 
 ```

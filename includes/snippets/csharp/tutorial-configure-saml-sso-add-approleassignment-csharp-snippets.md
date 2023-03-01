@@ -13,7 +13,7 @@ var requestBody = new AppRoleAssignment
 	AppRoleId = Guid.Parse("3a84e31e-bffa-470f-b9e6-754a61e4dc63"),
 	ResourceId = Guid.Parse("a750f6cf-2319-464a-bcc3-456926736a91"),
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].AppRoleAssignments.PostAsync(requestBody);
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppRoleAssignments.PostAsync(requestBody);
 
 
 ```

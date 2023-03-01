@@ -17,7 +17,7 @@ var requestBody = new Attachment
 		},
 	},
 };
-var result = await graphClient.Me.Outlook.Tasks["outlookTask-id"].Attachments.PostAsync(requestBody);
+var result = await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Attachments.PostAsync(requestBody);
 
 
 ```

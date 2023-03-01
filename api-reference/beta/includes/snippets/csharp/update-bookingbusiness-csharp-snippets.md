@@ -18,7 +18,7 @@ var requestBody = new BookingBusiness
 		AllowStaffSelection = true,
 	},
 };
-var result = await graphClient.BookingBusinesses["bookingBusiness-id"].PatchAsync(requestBody);
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].PatchAsync(requestBody);
 
 
 ```
