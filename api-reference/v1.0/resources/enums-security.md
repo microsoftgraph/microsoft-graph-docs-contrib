@@ -20,34 +20,6 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
-### actionAfterRetentionPeriod values 
-
-|Member|
-|:---|
-|none|
-|delete|
-|startDispositionReview|
-|unknownFutureValue|
-
-### behaviorDuringRetentionPeriod values 
-
-|Member|
-|:---|
-|doNotRetain|
-|retain|
-|retainAsRecord|
-|retainAsRegulatoryRecord|
-|unknownFutureValue|
-
-### defaultRecordBehavior values 
-
-|Member|
-|:---|
-|startLocked|
-|startUnlocked|
-|unknownFutureValue|
-
-
 ### eventPropagationStatus values 
 
 |Member|
@@ -76,15 +48,6 @@ Namespace: microsoft.graph.security
 |messages|
 |unknownFutureValue|
 
-### retentionTrigger values 
-
-|Member|
-|:---|
-|dateLabeled|
-|dateCreated|
-|dateModified|
-|dateOfEvent|
-|unknownFutureValue|
 
 
 <!--
