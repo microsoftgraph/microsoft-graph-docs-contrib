@@ -8,13 +8,13 @@ doc_type: apiPageType
 ---
 
 # Update learningProvider
+
 Namespace: microsoft.graph
-
-
 
 Update the properties of a [learningProvider](../resources/learningprovider.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,25 +34,24 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name that appears in Viva Learning. Required.|
 |loginWebUrl|String|Authentication URL to access the courses for the provider. Optional.|
-|longLogoWebUrlForDarkTheme|String|The long logo URL for the dark mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
-|longLogoWebUrlForLightTheme|String|The long logo URL for the light mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering  within the Viva Learning app. Required.|
-|squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
-|squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
-
-
+|longLogoWebUrlForDarkTheme|String|The long logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|longLogoWebUrlForLightTheme|String|The long logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 
 ## Response
 
@@ -61,7 +60,9 @@ If successful, this method returns a `204 No Content` response code in the respo
 ## Examples
 
 ### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_learningprovider"
@@ -82,8 +83,9 @@ Content-Type: application/json
 ```
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

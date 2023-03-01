@@ -1,6 +1,6 @@
 ---
 title: "Get learningContent"
-description: "Read the properties and relationships of a learningContent object."
+description: "Get the specified learningContent resource which represents the metadata of the specified provider's ingested content."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -10,11 +10,10 @@ doc_type: apiPageType
 # Get learningContent
 Namespace: microsoft.graph
 
-
-
-Read the properties and relationships of a [learningContent](../resources/learningcontent.md) object.
+Get the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -30,24 +29,29 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 For a specific learning content based on its ID (primary key):
+
 ``` http
 GET /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
 ```
 
 For a specific learning content based on its external ID (secondary key):
+
 ``` http
 GET /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -61,6 +65,7 @@ If successful, this method returns a `200 OK` response code and a [learningConte
 The following example shows a request that retrieves the metadata of a learning content based on its ID (primary key).
 
 #### Request
+
 The following example shows the request.
 
 <!-- {
@@ -74,8 +79,11 @@ GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/137273
 ```
 
 #### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -125,6 +133,7 @@ Content-type: application/json
 The following example shows a request that retrieves the metadata of a learning content based on its external ID (secondary key).
 
 #### Request
+
 The following example shows the request.
 
 <!-- {
@@ -138,8 +147,11 @@ GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/137273
 ```
 
 #### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

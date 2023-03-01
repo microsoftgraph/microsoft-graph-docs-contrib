@@ -39,7 +39,7 @@ Use the employee learning APIs to do the following:
 - [Push content metadata](../api/learningcontent-update.md) to Viva Learning to make content available within Viva Learning for consumption by users.  
 - [Get a list of the metadata of a provider's ingested content](../api/learningprovider-list-learningcontents.md) by using the **registrationId** of a provider.  
 - [Get the specified metadata of a provider's ingested content](../api/learningcontent-get.md) in Viva Learning.
-- [Delete the specfied metadata of a provider's ingested content](../api/learningprovider-delete-learningcontents.md).
+- [Delete the specified metadata of a provider's ingested content](../api/learningprovider-delete-learningcontents.md).
 
 >**Note**: Assignments and completed course records are not yet available in the employee learning API.
 

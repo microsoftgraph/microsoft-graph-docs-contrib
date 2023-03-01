@@ -93,7 +93,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "employeeExperience",
           "ChangeType": "Addition",
-          "Description": "Added the [employeeExperience](https://docs.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-1.0) resource",
+          "Description": "Added the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-1.0) resource type.",
           "Target": "employeeExperience"
         },
         {
@@ -101,7 +101,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "learningContent",
           "ChangeType": "Addition",
-          "Description": "Added the [learningContent](https://docs.microsoft.com/en-us/graph/api/resources/learningContent?view=graph-rest-1.0) resource",
+          "Description": "Added the [learningContent](https://learn.microsoft.com/en-us/graph/api/resources/learningContent?view=graph-rest-1.0) resource and supported methods.",
           "Target": "learningContent"
         },
         {
@@ -109,7 +109,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "learningProvider",
           "ChangeType": "Addition",
-          "Description": "Added the [learningProvider](https://docs.microsoft.com/en-us/graph/api/resources/learningProvider?view=graph-rest-1.0) resource",
+          "Description": "Added the [learningProvider](https://learn.microsoft.com/en-us/graph/api/resources/learningProvider?view=graph-rest-1.0) resource and supported methods.",
           "Target": "learningProvider"
         }
       ],
@@ -117,8 +117,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-02-23T10:35:09.5603557Z",
-      "WorkloadArea": "Microsoft.Viva.Learning",
-      "SubArea": ""
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Employee learning"
     }
   ]
 }

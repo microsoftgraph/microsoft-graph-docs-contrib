@@ -1,6 +1,6 @@
 ---
 title: "Delete learningContent"
-description: "Delete a learningContent object."
+description: "Delete the specified learningContent resource that represents the metadata of the specified provider's ingested content."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -8,11 +8,10 @@ doc_type: apiPageType
 ---
 
 # Delete learningContent
+
 Namespace: microsoft.graph
 
-
-
-Deletes a [learningContent](../resources/learningcontent.md) object.
+Delete the specified [learningContent](../resources/learningcontent.md) resource that represents the metadata of the specified provider's ingested content.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,21 +30,25 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 For a specific learning content based on its ID (primary key):
+
 ``` http
 DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
 ```
 
 For a specific learning content based on its external ID (secondary key):
+
 ``` http
 DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -73,7 +76,9 @@ DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/137
 ```
 
 #### Response
+
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -88,6 +93,7 @@ HTTP/1.1 204 No Content
 The following example shows a request that deletes a learning content resource based on its external ID (secondary key).
 
 #### Request
+
 The following example shows the request.
 
 <!-- {
@@ -101,7 +107,9 @@ DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/137
 ```
 
 #### Response
+
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
