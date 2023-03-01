@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 12/09/2022
+ms.date: 02/17/2022
 ---
 
 # Microsoft Graph permissions reference
@@ -2171,6 +2171,33 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 * _Sites.FullControl.All_: Complete access to SharePoint sites and lists.
 
 ---
+
+## Synchronization permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes | No |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes |
+
+### Example usage
+
+#### Delegated
+- _Synchronization.Read.All_: Get the list of subject rights request available to the user (`GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema`).
+- _Synchronization.ReadWrite.All_: Create a subject rights request (`PUT /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema`).
+
+#### Application
+- _Synchronization.Read.All_: Get the list of subject rights request available to the user (`GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/`).
+- _Synchronization.ReadWrite.All_: Create a subject rights request (`POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/starta`).
+
 
 ## Subject rights request permissions
 
