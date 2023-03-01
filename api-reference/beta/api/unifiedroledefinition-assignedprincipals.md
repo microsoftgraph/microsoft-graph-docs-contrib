@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory|
 
-If the caller does not have the permission to read properties for some of the objects included in the result set, the response will follow the [limited information returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects) pattern.
+If the caller does not have the permission to read properties for some of the objects included in the result set, the response will follow the [limited information returned for inaccessible member objects](/graph/permissions-overview#limited-information-returned-for-inaccessible-member-objects) pattern.
 
 To read the properties that may require permissions for the object, grant the permissions to retrieve information about the object. For more information, see permissions for [users](user-list.md#permissions), [groups](group-list.md#permissions), and [service principals](serviceprincipal-list.md#permissions).
 
@@ -71,7 +71,7 @@ This method supports the `$count`, `$select`, `$filter`, and `$orderBy` OData qu
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).|
+|ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).|
 
 ## Request body
 Do not supply a request body for this method.

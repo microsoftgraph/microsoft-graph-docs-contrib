@@ -1,14 +1,17 @@
 ---
-title: "Grant or revoke API permissions using Microsoft Graph"
-description: "Learn how to use Microsoft Graph to grant and revoke delegated and application API permissions for an app."
-author: "psignoret"
+title: "Grant or revoke API permissions programmatically"
+description: "Learn how to use Microsoft Graph to programmatically grant and revoke delegated and application API permissions for an app. This method is an alternative to interactive admin consent."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: psignoret, jackson.woods
 ms.localizationpriority: medium
 ms.prod: "applications"
 zone_pivot_groups: grant-api-permissions
 ms.custom: template-how-to
+ms.date: 12/09/2022
 ---
 
-# Grant or revoke API permissions using Microsoft Graph
+# Grant or revoke API permissions programmatically
 
 When you grant API permissions to a client app in Azure Active Directory (Azure AD), the permission grants are recorded as objects that can be accessed, updated, or deleted like your data. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 

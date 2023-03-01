@@ -89,9 +89,6 @@ POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332
 
 ---
 
----
-
-
 #### Response
 The following is an example of the response when `Prefer: include-unknown-enum-members` is NOT provided in the request header and the submission hasn't been returned before.
 
@@ -195,9 +192,6 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
----
-
 
 #### Response
 The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header and the submission hasn't been returned before.

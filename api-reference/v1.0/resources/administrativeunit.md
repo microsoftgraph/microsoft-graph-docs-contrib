@@ -57,8 +57,8 @@ This resource supports:
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) collection|The collection of open extensions defined for this administrative unit. Nullable.|
 |members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this administrative unit. Supports `$expand`.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for this administrative unit. Nullable.|
 |scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this administrative unit. |
 
 ## JSON representation

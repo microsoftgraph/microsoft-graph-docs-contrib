@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
+ms.date: 12/07/2022
 ---
 
 # Overview of role management through the privileged identity management (PIM) API

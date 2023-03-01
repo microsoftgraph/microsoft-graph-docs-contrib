@@ -1,8 +1,11 @@
 ---
 title: "Overview of Microsoft Graph permissions"
 description: "Microsoft Graph exposes granular permissions that help you control the access that apps have to Microsoft Graph resources, like users, groups, and mail. Learn more about working with Microsoft Graph permissions to allow your app to access your data securely."
-author: "jackson-woods"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: high
+ms.prod: "applications"
 ms.date: 12/07/2022
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
@@ -116,13 +119,42 @@ Because the app has permissions to access only user and group objects in the gro
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "permissions-overview-limitedinfo-example"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/permissions-overview-limitedinfo-example-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permissions-overview-limitedinfo-example-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/permissions-overview-limitedinfo-example-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissions-overview-limitedinfo-example-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permissions-overview-limitedinfo-example-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/permissions-overview-limitedinfo-example-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following object is an example of the response:
@@ -163,9 +195,10 @@ Microsoft Graph exposes granular permissions that allow an app to request only t
 Consider the following examples:
 
 - An app needs to only read the profile information of the signed-in user. The app requires only the *User.Read* permission, which is the least privileged permission to access the signed-in user's information. Granting the app the *User.ReadWrite* permission makes it over-privileged because the app doesn't need to update the user's profile.
-- An app needs to read the groups in the tenant without a signed-in user. The app requires only the *Group.Read.All* application permission, which is the least privileged permission to read groups in the tenant without a signed-in user..
+- An app needs to read the groups in the tenant without a signed-in user. The app requires only the *Group.Read.All* application permission, which is the least privileged permission to read groups in the tenant without a signed-in user.
+- An app needs to read or write to a calendar of the signed-in user. The app manages dynamic jobs, and syncs from the user’s Outlook calendar to keep the app up-to-date so to schedule jobs for the user. Even though [getting](/graph/api/event-delta) the user's calendar data requires *Calendars.Read*, [updating](/graph/api/user-post-events) the calendar with scheduled jobs requires a higher privileged permission, *Calendars.ReadWrite*. In this case, the app should request *Calendars.ReadWrite*.
 
-Granting an application more privileges than it needs is a poor security practice that exposes an app to unauthorized and unintended access to data or operations. Also, requiring more permissions than necessary may cause users to refrain from consenting to an app, affecting an app's adoption and usage.
+Granting an application more privileges than it needs is a poor security practice that exposes an app to unauthorized and unintended access to data or operations. Also, requesting more permissions than necessary may cause users to refrain from consenting to an app, affecting an app's adoption and usage.
 
 Apply the principle of least privilege when assigning and granting Microsoft Graph permissions to an app. For more information, see [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
 

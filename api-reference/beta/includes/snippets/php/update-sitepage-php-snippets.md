@@ -14,12 +14,9 @@ $requestBody->set@odatatype('#microsoft.graph.sitePage');
 
 $requestBody->setTitle('sample');
 
-$additionalData = [
-'showComments' => true,
-'showRecommendedPages' => false,
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setShowComments(true);
 
+$requestBody->setShowRecommendedPages(false);
 
 
 

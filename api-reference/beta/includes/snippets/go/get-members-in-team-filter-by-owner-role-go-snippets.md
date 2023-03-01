@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "roles/any"
 
-requestParameters := &graphconfig.MembersRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemMembersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.MembersRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemMembersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

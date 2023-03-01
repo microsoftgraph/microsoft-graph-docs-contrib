@@ -90,11 +90,11 @@ The following is a JSON representation of the resource.
   "defaultCurrencyIso": "String",
   "displayName": "String",
   "email": "String",
+  "languageTag": "String",
   "id": "String (identifier)",
-  "isPublished": true,
+  "isPublished": "Boolean",
   "phone": "String",
   "publicUrl": "String",
-  "languageTag": "String",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
   "webSiteUrl": "String"
 }

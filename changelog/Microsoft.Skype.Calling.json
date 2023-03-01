@@ -3,6 +3,134 @@
     {
       "ChangeList": [
         {
+          "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "onlineMeetingContentSharingDisabledReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingContentSharingDisabledReason** enumeration type.",
+          "Target": "onlineMeetingContentSharingDisabledReason"
+        },
+        {
+          "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "onlineMeetingVideoDisabledReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingVideoDisabledReason** enumeration type.",
+          "Target": "onlineMeetingVideoDisabledReason"
+        },
+        {
+          "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeetingRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the [onlineMeetingRestricted](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingRestricted?view=graph-rest-beta) resource type.",
+          "Target": "onlineMeetingRestricted"
+        },
+        {
+          "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
+          "ApiChange": "Resource",
+          "ChangedApiName": "watermarkProtectionValues",
+          "ChangeType": "Addition",
+          "Description": "Added the [watermarkProtectionValues](https://learn.microsoft.com/en-us/graph/api/resources/watermarkProtectionValues?view=graph-rest-beta) resource type.",
+          "Target": "watermarkProtectionValues"
+        },
+        {
+          "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
+          "ApiChange": "Property",
+          "ChangedApiName": "watermarkProtection",
+          "ChangeType": "Addition",
+          "Description": "Added the **watermarkProtection** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
+          "ApiChange": "Property",
+          "ChangedApiName": "restrictedExperience",
+          "ChangeType": "Addition",
+          "Description": "Added the **restrictedExperience** property to the [participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-14T17:48:36.7409742Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ea886698-6713-4541-a994-fe34ac144002",
+          "ApiChange": "Member",
+          "ChangedApiName": "coorganizer",
+          "ChangeType": "Addition",
+          "Description": "Added the **coorganizer** member to the **onlineMeetingRole** enumeration.",
+          "Target": "onlineMeetingRole"
+        }
+      ],
+      "Id": "ea886698-6713-4541-a994-fe34ac144002",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-02T18:25:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "joinMeetingIdMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [joinMeetingIdMeetingInfo](https://learn.microsoft.com/en-us/graph/api/resources/joinMeetingIdMeetingInfo?view=graph-rest-1.0) resource type.",
+          "Target": "joinMeetingIdMeetingInfo"
+        },
+        {
+          "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calls.JoinGroupCalls.Chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calls.JoinGroupCalls.Chat` to the [create](https://learn.microsoft.com/en-us/graph/api/application-post-calls?view=graph-rest-1.0) operation of the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "a185113d-67a1-436c-bda9-a852e696ce41",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-09T17:47:14.2823035Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+          "ApiChange": "Resource",
+          "ChangedApiName": "joinMeetingIdSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [joinMeetingIdSettings](https://learn.microsoft.com/en-us/graph/api/resources/joinmeetingidsettings?view=graph-rest-1.0) resource type.",
+          "Target": "joinMeetingIdSettings"
+        },
+        {
+          "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+          "ApiChange": "Property",
+          "ChangedApiName": "joinMeetingIdSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **joinMeetingIdSettings** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "d2ee5435-d64c-4947-99e0-5a1ef8332b38",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-09T17:44:20.7449096Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f1e8f2ba-e5b1-4104-88be-1ed7f6f44904",
           "ApiChange": "Resource",
           "ChangedApiName": "broadcastMeetingCaptionSettings",
@@ -676,7 +804,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "startHoldMusic",
           "ChangeType": "Addition",
-          "Description": "Added the [startHoldMusic](https://learn.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-1.0) method to the [participant](https://learn.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Description": "Added the [startHoldMusic](https://learn.microsoft.com/en-us/graph/api/participant-startholdmusic?view=graph-rest-1.0) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
           "Target": "participant"
         },
         {
@@ -684,7 +812,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "stopHoldMusic",
           "ChangeType": "Addition",
-          "Description": "Added the [stopHoldMusic](https://learn.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-1.0) method to the [participant](https://learn.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Description": "Added the [stopHoldMusic](https://learn.microsoft.com/en-us/graph/api/participant-stopholdmusic?view=graph-rest-1.0) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
           "Target": "participant"
         }
       ],
@@ -1522,7 +1650,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
           "ChangeType": "Addition",
-          "Description": "Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the **outOfOfficeSettings** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource type.",
           "Target": "outOfOfficeSettings"
         },
         {
@@ -1530,7 +1658,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
           "ChangeType": "Addition",
-          "Description": "Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.",
+          "Description": "Added the [outOfOfficeSettings](https://learn.microsoft.com/en-us/graph/api/resources/outofofficesettings?view=graph-rest-beta) complex type.",
           "Target": "outOfOfficeSettings"
         }
       ],
@@ -1548,7 +1676,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
           "ChangeType": "Addition",
-          "Description": "Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Description": "Added the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource type.",
           "Target": "presence"
         }
       ],
@@ -1834,7 +1962,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webhook",
           "ChangeType": "Addition",
-          "Description": "Added support for [webhook](webhooks.md) subscriptions to call records.",
+          "Description": "Added support for [webhook](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0) subscriptions to call records.",
           "Target": "webhook"
         },
         {
@@ -1884,7 +2012,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recordingInfo,callRoute,incomingContext",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [recordingInfo](https://learn.microsoft.com/en-us/graph/api/resources/recordinginfo?view=graph-rest-1.0), [callRoute](https://learn.microsoft.com/en-us/graph/api/resources/callRoute?view=graph-rest-1.0), [incomingContext](https://learn.microsoft.com/en-us/graph/api/resources/incomingcontext?view=graph-rest-1.0)",
+          "Description": "Added new complex types: [recordingInfo](https://learn.microsoft.com/en-us/graph/api/resources/recordinginfo?view=graph-rest-1.0), [callRoute](https://learn.microsoft.com/en-us/graph/api/resources/callRoute?view=graph-rest-1.0), [incomingContext](https://learn.microsoft.com/en-us/graph/api/resources/incomingcontext?view=graph-rest-1.0)",
           "Target": "recordingInfo,callRoute,incomingContext"
         },
         {
@@ -2020,7 +2148,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teleconferenceDeviceQuality,teleconferenceDeviceMediaQuality,teleconferenceDeviceAudioQuality,teleconferenceDeviceVideoQuality,teleconferenceDeviceScreenSharingQuality",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [teleconferenceDeviceQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicequality), [teleconferenceDeviceMediaQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicemediaquality), [teleconferenceDeviceAudioQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedeviceaudioquality), [teleconferenceDeviceVideoQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicevideoquality), [teleconferenceDeviceScreenSharingQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicescreensharingquality).",
+          "Description": "Added new complex types: [teleconferenceDeviceQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicequality), [teleconferenceDeviceMediaQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicemediaquality), [teleconferenceDeviceAudioQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedeviceaudioquality), [teleconferenceDeviceVideoQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicevideoquality), [teleconferenceDeviceScreenSharingQuality](https://learn.microsoft.com/en-us/graph/api/resources/teleconferencedevicescreensharingquality).",
           "Target": "teleconferenceDeviceQuality,teleconferenceDeviceMediaQuality,teleconferenceDeviceAudioQuality,teleconferenceDeviceVideoQuality,teleconferenceDeviceScreenSharingQuality"
         }
       ],
@@ -2114,7 +2242,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webhook",
           "ChangeType": "Addition",
-          "Description": "Added support for [webhook](webhooks.md) subscriptions to call records.",
+          "Description": "Added support for [webhook](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0) subscriptions to call records.",
           "Target": "webhook"
         }
       ],
@@ -2174,7 +2302,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "call,participant,onlineMeeting",
           "ChangeType": "Addition",
-          "Description": "Added the following resources: [call](https://learn.microsoft.com/en-us/graph/api/resouces/call?view=graph-rest-1.0), [participant](https://learn.microsoft.com/en-us/graph/api/resouces/participant?view=graph-rest-1.0), and [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resouces/onlinemeeting?view=graph-rest-1.0).",
+          "Description": "Added the following resources: [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0), [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0), and [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0).",
           "Target": "call,participant,onlineMeeting"
         },
         {
@@ -2182,7 +2310,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delete onlineMeeting",
           "ChangeType": "Addition",
-          "Description": "Added the [delete onlineMeeting](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-delete.md) operation.",
+          "Description": "Added the [delete onlineMeeting](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-delete?view=graph-rest-1.0) operation.",
           "Target": "delete onlineMeeting"
         }
       ],
@@ -2216,7 +2344,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "keepAlive",
           "ChangeType": "Addition",
-          "Description": "Added the [keepAlive](https://learn.microsoft.com/en-us/api-reference/beta/api/call-keepalive?view=graph-rest-beta) action to the [call](https://learn.microsoft.com/en-us/api-reference/beta/resources/call?view=graph-rest-beta) entity.",
+          "Description": "Added the [keepAlive](https://learn.microsoft.com/en-us/graph/api/call-keepalive?view=graph-rest-beta) action to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) entity.",
           "Target": "call"
         }
       ],
@@ -2316,7 +2444,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime,lastActionDateTime",
           "ChangeType": "Deletion",
-          "Description": "Removed the properties **createdDateTime** and **lastActionDateTime** from the [commsOperation](https://learn.microsoft.com/en-us/graph/.api/resource/commsOperation?view=graph-rest-beta) resource.",
+          "Description": "Removed the properties **createdDateTime** and **lastActionDateTime** from the [commsOperation](https://learn.microsoft.com/en-us/graph/api/resources/commsoperation?view=graph-rest-beta) resource.",
           "Target": "commsOperation"
         },
         {
@@ -2374,7 +2502,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mediaState",
           "ChangeType": "Addition",
-          "Description": "Added **mediaState** property to [call](/api-reference/beta/resources/call.md) resource",
+          "Description": "Added **mediaState** property to [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource",
           "Target": "call"
         },
         {
@@ -2382,7 +2510,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "recordResourceLocation,recordingLocation",
           "ChangeType": "Change",
-          "Description": "Renamed **recordResourceLocation** property in [recordOperation](/api-reference/beta/resources/recordOperation.md) resource to **recordingLocation**",
+          "Description": "Renamed **recordResourceLocation** property in [recordOperation](https://learn.microsoft.com/en-us/graph/api/resources/recordoperation?view=graph-rest-beta) resource to **recordingLocation**",
           "Target": "recordOperation"
         },
         {
@@ -2390,7 +2518,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "recordResourceAccessToken,recordingAccessToken",
           "ChangeType": "Change",
-          "Description": "Renamed **recordResourceAccessToken** property in [recordOperation](/api-reference/beta/resources/recordOperation.md) resource to **recordingAccessToken**",
+          "Description": "Renamed **recordResourceAccessToken** property in [recordOperation](https://learn.microsoft.com/en-us/graph/api/resources/recordoperation?view=graph-rest-beta) resource to **recordingAccessToken**",
           "Target": "recordOperation"
         },
         {
@@ -2398,7 +2526,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "capabilities",
           "ChangeType": "Addition",
-          "Description": "Added **capabilities** property to [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) resource",
+          "Description": "Added **capabilities** property to [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource",
           "Target": "onlineMeeting"
         },
         {
@@ -2406,7 +2534,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "videoTeleconferenceId",
           "ChangeType": "Addition",
-          "Description": "Added **videoTeleconferenceId** property to [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) resource",
+          "Description": "Added **videoTeleconferenceId** property to [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource",
           "Target": "onlineMeeting"
         },
         {
@@ -2414,7 +2542,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "producers",
           "ChangeType": "Addition",
-          "Description": "Added **producers** property to [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) resource",
+          "Description": "Added **producers** property to [meetingParticipants](https://learn.microsoft.com/en-us/graph/api/resources/meetingparticipants?view=graph-rest-beta) resource",
           "Target": "meetingParticipants"
         },
         {
@@ -2422,7 +2550,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contributors",
           "ChangeType": "Addition",
-          "Description": "Added **contributors** property to [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) resource",
+          "Description": "Added **contributors** property to [meetingParticipants](https://learn.microsoft.com/en-us/graph/api/resources/meetingparticipants?view=graph-rest-beta) resource",
           "Target": "meetingParticipants"
         }
       ],
@@ -2472,7 +2600,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "share content,mute and unmute itself,update the metadata associated with a call",
           "ChangeType": "Addition",
-          "Description": "Added APIs for applications to manage and participate in calls and meetings, including the ability to [share content](https://learn.microsoft.com/en-us/graph/api/call-changescreensharingrole?view=graph-rest-beta), [mute and unmute itself](https://learn.microsoft.com/en-us/graph/api/call-unmute?view=graph-rest-beta), and [update the metadata associated with a call](https://learn.microsoft.com/en-us/graph/api/call-updatemetadata?view=graph-rest-beta).",
+          "Description": "Added APIs for applications to manage and participate in calls and meetings, including the ability to [share content](https://learn.microsoft.com/en-us/graph/api/call-changescreensharingrole?view=graph-rest-beta), [mute and unmute itself](https://learn.microsoft.com/en-us/graph/api/call-unmute?view=graph-rest-beta), and update the metadata associated with a call.",
           "Target": "share content,mute and unmute itself,update the metadata associated with a call"
         },
         {
@@ -2508,122 +2636,122 @@
       "SubArea": ""
     },
     {
-    "ChangeList": [
-      {
-        "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
-        "ApiChange": "Resource",
-        "ChangedApiName": "virtualAppointment",
-        "ChangeType": "Addition",
-        "Description": "Added the [virtualAppointment](https://learn.microsoft.com/graph/api/resources/virtualappointment?view=graph-rest-beta) resource and supported methods.",
-        "Target": "virtualAppointment"
-      },
-      {
-        "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
-        "ApiChange": "Resource",
-        "ChangedApiName": "virtualAppointmentSettings",
-        "ChangeType": "Addition",
-        "Description": "Added the [virtualAppointmentSettings](https://learn.microsoft.com/graph/api/resources/virtualappointmentsettings?view=graph-rest-beta) resource type.",
-        "Target": "virtualAppointmentSettings"
-      },
-      {
-        "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
-        "ApiChange": "Resource",
-        "ChangedApiName": "virtualAppointmentUser",
-        "ChangeType": "Addition",
-        "Description": "Added the [virtualAppointmentUser](https://learn.microsoft.com/graph/api/resources/virtualappointmentuser?view=graph-rest-beta) resource type.",
-        "Target": "virtualAppointmentUser"
-      }
-    ],
+      "ChangeList": [
+        {
+          "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualAppointment",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualAppointment](https://learn.microsoft.com/graph/api/resources/virtualappointment?view=graph-rest-beta) resource and supported methods.",
+          "Target": "virtualAppointment"
+        },
+        {
+          "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualAppointmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualAppointmentSettings](https://learn.microsoft.com/graph/api/resources/virtualappointmentsettings?view=graph-rest-beta) resource type.",
+          "Target": "virtualAppointmentSettings"
+        },
+        {
+          "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualAppointmentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualAppointmentUser](https://learn.microsoft.com/graph/api/resources/virtualappointmentuser?view=graph-rest-beta) resource type.",
+          "Target": "virtualAppointmentUser"
+        }
+      ],
       "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2022-07-19T00:00:00",
-        "WorkloadArea": "Teamwork and communications",
-        "SubArea": "Meetings and calling"
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-19T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
-    "ChangeList": [
-      {
-        "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
-        "ApiChange": "Resource",
-        "ChangedApiName": "addLargeGalleryViewOperation",
-        "ChangeType": "Addition",
-        "Description": "Added the [addLargeGalleryViewOperation](https://learn.microsoft.com/en-us/graph/api/resources/addLargeGalleryViewOperation?view=graph-rest-1.0) resource and a supported method.",
-        "Target": "addLargeGalleryViewOperation"
-      },
-      {
-        "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
-        "ApiChange": "Method",
-        "ChangedApiName": "addLargeGalleryView",
-        "ChangeType": "Addition",
-        "Description": "Added the [addLargeGalleryView](https://learn.microsoft.com/en-us/graph/api/call-addLargeGalleryView?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
-        "Target": "call"
-      }
-    ],
-    "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
-    "Cloud": "Prod",
-    "Version": "v1.0",
-    "CreatedDateTime": "2022-09-28T13:12:12.3532131Z",
-    "WorkloadArea": "Teamwork and communications",
-    "SubArea": "Calls and online meetings"
+      "ChangeList": [
+        {
+          "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addLargeGalleryViewOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [addLargeGalleryViewOperation](https://learn.microsoft.com/en-us/graph/api/resources/addLargeGalleryViewOperation?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "addLargeGalleryViewOperation"
+        },
+        {
+          "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
+          "ApiChange": "Method",
+          "ChangedApiName": "addLargeGalleryView",
+          "ChangeType": "Addition",
+          "Description": "Added the [addLargeGalleryView](https://learn.microsoft.com/en-us/graph/api/call-addLargeGalleryView?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-28T13:12:12.3532131Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
-    "ChangeList": [
-      {
-        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
-        "ApiChange": "Relationship",
-        "ChangedApiName": "contentSharingSessions",
-        "ChangeType": "Addition",
-        "Description": "Added the **contentSharingSessions** relationship to the [call](https://learn.microsoft.com/graph/api/resources/call?view=graph-rest-1.0) resource.",
-        "Target": "call"
-      },
-      {
-        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
-        "ApiChange": "Property",
-        "ChangedApiName": "callOptions",
-        "ChangeType": "Addition",
-        "Description": "Added the **callOptions** property to the [call](https://learn.microsoft.com/graph/api/resources/call?view=graph-rest-1.0) resource.",
-        "Target": "call"
-      },
-      {
-        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
-        "ApiChange": "Resource",
-        "ChangedApiName": "callOptions",
-        "ChangeType": "Addition",
-        "Description": "Added the [callOptions](https://learn.microsoft.com/graph/api/resources/callOptions?view=graph-rest-1.0) resource type.",
-        "Target": "callOptions"
-      },
-      {
-        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
-        "ApiChange": "Resource",
-        "ChangedApiName": "contentSharingSession",
-        "ChangeType": "Addition",
-        "Description": "Added the [contentSharingSession](https://learn.microsoft.com/graph/api/resources/contentSharingSession?view=graph-rest-1.0) resource and supported methods.",
-        "Target": "contentSharingSession"
-      },
-      {
-        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
-        "ApiChange": "Resource",
-        "ChangedApiName": "incomingCallOptions",
-        "ChangeType": "Addition",
-        "Description": "Added the [incomingCallOptions](https://learn.microsoft.com/graph/api/resources/incomingCallOptions?view=graph-rest-1.0) resource type.",
-        "Target": "incomingCallOptions"
-      },
-      {
-        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
-        "ApiChange": "Resource",
-        "ChangedApiName": "outgoingCallOptions",
-        "ChangeType": "Addition",
-        "Description": "Added the [outgoingCallOptions](https://learn.microsoft.com/graph/api/resources/outgoingCallOptions?view=graph-rest-1.0) resource type.",
-        "Target": "outgoingCallOptions"
-      }
-    ],
-    "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
-    "Cloud": "Prod",
-    "Version": "v1.0",
-    "CreatedDateTime": "2022-09-30T16:22:06.915245Z",
-    "WorkloadArea": "Teamwork and communications",
-    "SubArea": "Calls and online meetings"
+      "ChangeList": [
+        {
+          "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "contentSharingSessions",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentSharingSessions** relationship to the [call](https://learn.microsoft.com/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+          "ApiChange": "Property",
+          "ChangedApiName": "callOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **callOptions** property to the [call](https://learn.microsoft.com/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [callOptions](https://learn.microsoft.com/graph/api/resources/callOptions?view=graph-rest-1.0) resource type.",
+          "Target": "callOptions"
+        },
+        {
+          "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentSharingSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentSharingSession](https://learn.microsoft.com/graph/api/resources/contentSharingSession?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "contentSharingSession"
+        },
+        {
+          "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incomingCallOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [incomingCallOptions](https://learn.microsoft.com/graph/api/resources/incomingCallOptions?view=graph-rest-1.0) resource type.",
+          "Target": "incomingCallOptions"
+        },
+        {
+          "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outgoingCallOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [outgoingCallOptions](https://learn.microsoft.com/graph/api/resources/outgoingCallOptions?view=graph-rest-1.0) resource type.",
+          "Target": "outgoingCallOptions"
+        }
+      ],
+      "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-30T16:22:06.915245Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2632,7 +2760,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentSharingSessions",
           "ChangeType": "Addition",
-          "Description": "Added the **contentSharingSessions** relationship to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Description": "Added the **contentSharingSessions** relationship to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         }
       ],
@@ -2640,6 +2768,50 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-09-05T16:22:06.9159065Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a689460b-853f-4cbd-8973-ffd1b9cc1376",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presenceStatusMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [presenceStatusMessage](https://learn.microsoft.com/en-us/graph/api/resources/presenceStatusMessage?view=graph-rest-beta) resource type.",
+          "Target": "presenceStatusMessage"
+        }
+      ],
+      "Id": "a689460b-853f-4cbd-8973-ffd1b9cc1376",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-16T00:17:48.4795622Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "62ddc58a-7613-45a9-9380-49e87c64ab00",
+          "ApiChange": "Property",
+          "ChangedApiName": "statusMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the `statusMessage` property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "62ddc58a-7613-45a9-9380-49e87c64ab00",
+          "ApiChange": "Method",
+          "ChangedApiName": "setStatusMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence-setstatusmessage?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "62ddc58a-7613-45a9-9380-49e87c64ab00",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-16T00:17:48.4795689Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }

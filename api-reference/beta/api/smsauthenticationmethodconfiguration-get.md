@@ -1,7 +1,7 @@
 ---
 title: "Get smsAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a smsAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -116,7 +116,8 @@ Content-Type: application/json
             "isRegistrationRequired": false,
             "isUsableForSignIn": true
         }
-    ]
+    ],
+    "excludeTargets": []
 }
 ```
 

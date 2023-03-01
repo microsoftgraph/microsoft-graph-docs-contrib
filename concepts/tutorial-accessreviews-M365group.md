@@ -2,8 +2,11 @@
 title: "Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph"
 description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Azure AD tenant."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph

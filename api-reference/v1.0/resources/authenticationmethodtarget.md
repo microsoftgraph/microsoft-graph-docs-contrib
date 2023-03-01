@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodTarget resource type"
-description: "A collection of users or groups enabled to use an authentication method as part of an authentication method policy."
+description: "A collection of groups that are enabled to use an authentication method as part of an authentication method policy."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-A collection of users or groups enabled to use an authentication method as part of an authentication method policy in Azure AD.
+A collection of groups that are enabled to use an authentication method as part of an authentication method policy in Azure AD.
 
 
 ## Properties
@@ -39,8 +39,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.authenticationMethodTarget",
   "id": "String (identifier)",
-  "targetType": "String",
   "isRegistrationRequired": "Boolean",
+  "targetType": "String",
   "useForSignIn": "Boolean"
 }
 ```

@@ -11,8 +11,12 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
-> **Note:** You can add a maximum of 200 members when you create a private channel.
+Create a new [channel](../resources/channel.md) in a team, as specified in the request body.  When you create a channel, the maximum length of the channel's `displayName` is 50 characters. This is the name that appears to the user in Microsoft Teams.
+
+If you're creating a private channel, you can add a maximum of 200 members.
+
+> [!NOTE]
+> Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
 
 ## Permissions
 
@@ -356,10 +360,6 @@ Content-type: application/json
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-private-channel-upn-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ---
 

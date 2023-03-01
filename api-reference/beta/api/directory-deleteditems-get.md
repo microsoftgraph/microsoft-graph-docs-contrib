@@ -83,7 +83,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directory"
+  "name": "get_directory_deleteditem"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb

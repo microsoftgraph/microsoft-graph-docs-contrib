@@ -1,17 +1,17 @@
 ---
 title: "Use delta query to track changes in Microsoft Graph data"
 description: "Use delta query to enable applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request."
-author: "jumasure"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jumasure
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 08/12/2022
 ---
 
 # Use delta query to track changes in Microsoft Graph data
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
-
-> [!div class="nextstepaction"]
-> [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 
 ## Use delta query to track changes in a resource collection
 
@@ -242,6 +242,7 @@ The same [permissions](./permissions-reference.md) that are required to read a s
 
 ## Delta query request examples
 
+- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Get incremental changes to events in a calendar view](delta-query-events.md)
 - [Get incremental changes to messages in a folder](./delta-query-messages.md)
 - [Get incremental changes to groups](./delta-query-groups.md)

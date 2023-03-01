@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.AssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.EducationUserItemAssignmentsRequestBuilderGetQueryParameters{
 	Expand: [] string {"submissions"},
 }
-configuration := &graphconfig.AssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.EducationUserItemAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

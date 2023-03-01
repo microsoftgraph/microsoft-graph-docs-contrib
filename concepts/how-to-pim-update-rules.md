@@ -2,9 +2,12 @@
 title: "Use privileged identity management (PIM) to update Azure AD rules"
 description: "Learn how to use the PIM API in Microsoft Graph to update Azure AD rules."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "governance"
+ms.date: 12/07/2022
 ---
 
 # Use privileged identity management (PIM) APIs in Microsoft Graph to update Azure AD rules
@@ -26,7 +29,6 @@ If successful, all requests return `204 No Content` response codes.
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Expiration_EndUser_Assignment`
-<!--+ Description:-->
 
 <!-- {
   "blockType": "request",
@@ -59,10 +61,7 @@ Content-Type: application/json
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyEnablementRule](/graph/api/resources/unifiedrolemanagementpolicyenablementrule)
 + Microsoft Graph rule ID: `Enablement_EndUser_Assignment`
-<!--+ Description:-->
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "how-to-pim-update-rules-Enablement_EndUser_Assignment"
@@ -70,7 +69,6 @@ Content-Type: application/json
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Enablement_EndUser_Assignment
 Content-Type: application/json
-
 {
     "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
     "id": "Enablement_EndUser_Assignment",
@@ -92,49 +90,18 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-enablement-enduser-assignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-enablement-enduser-assignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/how-to-pim-update-rules-enablement-enduser-assignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/how-to-pim-update-rules-enablement-enduser-assignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/how-to-pim-update-rules-enablement-enduser-assignment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-enablement-enduser-assignment-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ## Example 3: Require approval to activate
 
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyApprovalRule](/graph/api/resources/unifiedrolemanagementpolicyapprovalrule)
 + Microsoft Graph rule ID: `Approval_EndUser_Assignment`
-<!--+ Description:-->
 
 <!--
 Questions/Issues:
 1. By default, the primaryApprovers and escalationApprovers are always blank. What's the default behavior - who gets to approve? Do we call it out currently in docs?
 2. I cannot set escalationApprovers. Request succeeds but escalationApprovers isn't populated.
-
 -->
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "how-to-pim-update-rules-Approval_EndUser_Assignment"
@@ -142,7 +109,6 @@ Questions/Issues:
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Approval_EndUser_Assignment
 Content-Type: application/json
-
 {
     "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
     "id": "Approval_EndUser_Assignment",
@@ -186,42 +152,12 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-approval-enduser-assignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-approval-enduser-assignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/how-to-pim-update-rules-approval-enduser-assignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/how-to-pim-update-rules-approval-enduser-assignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/how-to-pim-update-rules-approval-enduser-assignment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-approval-enduser-assignment-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ## Example 4: Set expiration of eligible assignment 
 
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Expiration_Admin_Eligibility`
-<!--+ Description:-->
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "how-to-pim-update-rules-Expiration_Admin_Eligibility"
@@ -229,7 +165,6 @@ Content-Type: application/json
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Expiration_Admin_Eligibility
 Content-Type: application/json
-
 {
     "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
     "id": "Expiration_Admin_Eligibility",
@@ -248,42 +183,12 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-expiration-admin-eligibility-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-expiration-admin-eligibility-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/how-to-pim-update-rules-expiration-admin-eligibility-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/how-to-pim-update-rules-expiration-admin-eligibility-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/how-to-pim-update-rules-expiration-admin-eligibility-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-expiration-admin-eligibility-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ## Example 5: Set expiration of active assignment
 
 + Category of rule: Assignment rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Expiration_Admin_Assignment`
-<!--+ Description:-->
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "how-to-pim-update-rules-Expiration_Admin_Assignment"
@@ -291,7 +196,6 @@ Content-Type: application/json
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Expiration_Admin_Assignment
 Content-Type: application/json
-
 {
     "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
     "id": "Expiration_Admin_Assignment",
@@ -310,42 +214,12 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-expiration-admin-assignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-expiration-admin-assignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/how-to-pim-update-rules-expiration-admin-assignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/how-to-pim-update-rules-expiration-admin-assignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/how-to-pim-update-rules-expiration-admin-assignment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-expiration-admin-assignment-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ## Example 6: Set the justification and MFA requirements for active assignment
 
 + Category of rule: Assignment rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Enablement_Admin_Assignment`
-<!--+ Description:-->
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "how-to-pim-update-rules-Enablement_Admin_Assignment"
@@ -353,7 +227,6 @@ Content-Type: application/json
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67/rules/Enablement_Admin_Assignment
 Content-Type: application/json
-
 {
     "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
     "id": "Enablement_Admin_Assignment",
@@ -373,34 +246,6 @@ Content-Type: application/json
     }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-enablement-admin-assignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-enablement-admin-assignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/how-to-pim-update-rules-enablement-admin-assignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/how-to-pim-update-rules-enablement-admin-assignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/how-to-pim-update-rules-enablement-admin-assignment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-enablement-admin-assignment-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ## See also
 

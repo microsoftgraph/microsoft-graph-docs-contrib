@@ -28,12 +28,13 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. After it is set, this property can’t be updated. Required.|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it is set, this property can’t be updated. Required.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Additional user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only. ID of the plan. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |title|String|Required. Title of the plan.|
+|creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
 |owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it is set, this property can’t be updated. This property will not return a valid group ID if the container of the plan is not a group.|
 
 ## Relationships
@@ -72,6 +73,7 @@ The following is a JSON representation of the resource.
     }
   },
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "creationSource": {"@odata.type": "#microsoft.graph.plannerPlanCreation"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "container": {
