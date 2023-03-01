@@ -172,10 +172,6 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 [!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-skiptoken-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-skiptoken-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-classcategories-delta-skiptoken-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -251,10 +247,6 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-for-token-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-for-token-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

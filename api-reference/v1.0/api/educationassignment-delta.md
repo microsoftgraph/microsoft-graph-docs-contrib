@@ -243,10 +243,6 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-nextlink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-nextlink-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-assignments-delta-nextlink-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -402,10 +398,6 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-delatlink-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-delatlink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
