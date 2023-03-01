@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->print()->printersById('printer-id')->microsoftGraphRestoreFactoryDefaults()->post();
+$graphServiceClient->print()->printersById('printer-id')->restoreFactoryDefaults()->post();
 
 
 ```

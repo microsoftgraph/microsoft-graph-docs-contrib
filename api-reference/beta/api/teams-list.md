@@ -172,7 +172,6 @@ GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&
 
 ---
 
-
 #### Response
 
 The following is an example of a response.

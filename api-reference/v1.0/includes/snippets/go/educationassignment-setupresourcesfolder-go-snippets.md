@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewSetUpResourcesFolderPostRequestBody()
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").MicrosoftGraphSetUpResourcesFolder().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SetUpResourcesFolder().Post(context.Background(), requestBody, nil)
 
 
 ```

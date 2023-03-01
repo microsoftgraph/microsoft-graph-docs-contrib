@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 ---
 
-
 ### Response
 
 <!-- {

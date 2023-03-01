@@ -18,7 +18,7 @@ $requestBody->setResourceId('a5c51e59-3fcd-4a37-87a1-835c0c21488a');
 
 
 
-$graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->microsoftGraphBatchRecordDecisions()->post($requestBody);
+$graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->batchRecordDecisions()->post($requestBody);
 
 
 ```

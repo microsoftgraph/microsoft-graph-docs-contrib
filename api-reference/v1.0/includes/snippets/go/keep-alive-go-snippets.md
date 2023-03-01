@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Communications().CallsById("call-id").MicrosoftGraphKeepAlive().Post(context.Background(), nil)
+graphClient.Communications().CallsById("call-id").KeepAlive().Post(context.Background(), nil)
 
 
 ```

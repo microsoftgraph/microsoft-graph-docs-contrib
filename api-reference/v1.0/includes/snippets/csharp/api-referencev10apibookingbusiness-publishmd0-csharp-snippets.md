@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].MicrosoftGraphPublish.PostAsync();
+await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].Publish.PostAsync();
 
 
 ```

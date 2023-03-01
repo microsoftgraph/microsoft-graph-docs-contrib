@@ -26,7 +26,7 @@ timeZone := "Pacific Standard Time"
 endDateTime.SetTimeZone(&timeZone) 
 requestBody.SetEndDateTime(endDateTime)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").MicrosoftGraphGetStaffAvailability().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").GetStaffAvailability().Post(context.Background(), requestBody, nil)
 
 
 ```

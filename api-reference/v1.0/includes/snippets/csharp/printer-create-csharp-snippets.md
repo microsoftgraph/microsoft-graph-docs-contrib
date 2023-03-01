@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Print.Printers.MicrosoftGraphCreate.CreatePostRequestBody
+var requestBody = new Microsoft.Graph.Print.Printers.Create.CreatePostRequestBody
 {
 	DisplayName = "Test Printer",
 	Manufacturer = "Test Printer Manufacturer",
@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.Print.Printers.MicrosoftGraphCreate.Create
 	},
 	ConnectorId = null,
 };
-await graphClient.Print.Printers.MicrosoftGraphCreate.PostAsync(requestBody);
+await graphClient.Print.Printers.Create.PostAsync(requestBody);
 
 
 ```

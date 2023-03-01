@@ -81,7 +81,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudience
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

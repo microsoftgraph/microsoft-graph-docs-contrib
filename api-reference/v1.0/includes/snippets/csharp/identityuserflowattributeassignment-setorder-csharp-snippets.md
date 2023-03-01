@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Identity.B2xUserFlows.Item.UserAttributeAssignments.MicrosoftGraphSetOrder.SetOrderPostRequestBody
+var requestBody = new Microsoft.Graph.Identity.B2xUserFlows.Item.UserAttributeAssignments.SetOrder.SetOrderPostRequestBody
 {
 	NewAssignmentOrder = new AssignmentOrder
 	{
@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Identity.B2xUserFlows.Item.UserAttributeAs
 		},
 	},
 };
-await graphClient.Identity.B2xUserFlows["b2xIdentityUserFlow-id"].UserAttributeAssignments.MicrosoftGraphSetOrder.PostAsync(requestBody);
+await graphClient.Identity.B2xUserFlows["b2xIdentityUserFlow-id"].UserAttributeAssignments.SetOrder.PostAsync(requestBody);
 
 
 ```

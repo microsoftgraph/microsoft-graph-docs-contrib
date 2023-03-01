@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscove
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

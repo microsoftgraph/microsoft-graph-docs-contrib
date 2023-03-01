@@ -21,7 +21,7 @@ $attachmentInfo->setSize(3483322);
 $requestBody->setAttachmentInfo($attachmentInfo);
 
 
-$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->attachments()->microsoftGraphCreateUploadSession()->post($requestBody);
+$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->attachments()->createUploadSession()->post($requestBody);
 
 
 ```

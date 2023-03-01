@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphChangeScreenSharingRole.ChangeScreenSharingRolePostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.ChangeScreenSharingRole.ChangeScreenSharingRolePostRequestBody
 {
 	Role = ScreenSharingRole.Viewer,
 };
-await graphClient.Communications.Calls["call-id"].MicrosoftGraphChangeScreenSharingRole.PostAsync(requestBody);
+await graphClient.Communications.Calls["call-id"].ChangeScreenSharingRole.PostAsync(requestBody);
 
 
 ```

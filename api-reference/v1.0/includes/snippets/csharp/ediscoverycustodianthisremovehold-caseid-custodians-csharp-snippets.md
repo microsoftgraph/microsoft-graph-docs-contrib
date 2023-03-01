@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Custodians.MicrosoftGraphSecurityRemoveHold.RemoveHoldPostRequestBody
+var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Custodians.SecurityRemoveHold.RemoveHoldPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Custod
 		"b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8",
 	},
 };
-await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Custodians.MicrosoftGraphSecurityRemoveHold.PostAsync(requestBody);
+await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Custodians.SecurityRemoveHold.PostAsync(requestBody);
 
 
 ```

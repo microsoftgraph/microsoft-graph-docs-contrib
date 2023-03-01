@@ -98,7 +98,6 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 
 ---
 
-
 #### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -175,7 +174,6 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.

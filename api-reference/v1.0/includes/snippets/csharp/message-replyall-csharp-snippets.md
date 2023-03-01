@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Messages.Item.MicrosoftGraphReplyAll.ReplyAllPostRequestBody
+var requestBody = new Microsoft.Graph.Me.Messages.Item.ReplyAll.ReplyAllPostRequestBody
 {
 	Comment = "comment-value",
 };
-await graphClient.Me.Messages["message-id"].MicrosoftGraphReplyAll.PostAsync(requestBody);
+await graphClient.Me.Messages["message-id"].ReplyAll.PostAsync(requestBody);
 
 
 ```

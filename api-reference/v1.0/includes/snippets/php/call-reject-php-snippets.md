@@ -14,7 +14,7 @@ $requestBody->setReason(new RejectReason('busy'));
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->microsoftGraphReject()->post($requestBody);
+$graphServiceClient->communications()->callsById('call-id')->reject()->post($requestBody);
 
 
 ```

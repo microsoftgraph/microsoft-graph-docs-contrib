@@ -27,7 +27,7 @@ $requestBody->setToRecipients($toRecipientsArray);
 
 
 
-$graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->microsoftGraphForward()->post($requestBody);
+$graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->forward()->post($requestBody);
 
 
 ```

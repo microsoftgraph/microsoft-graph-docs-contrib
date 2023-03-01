@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(2)
 
-requestParameters := &graphconfig.UserItemChatsMicrosoft.graph.getAllMessages()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.UserItemChatsGetAllMessages()RequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.UserItemChatsMicrosoft.graph.getAllMessages()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemChatsGetAllMessages()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.UsersById("user-id").Chats().MicrosoftGraphGetAllMessages().Get(context.Background(), configuration)
+result, err := graphClient.UsersById("user-id").Chats().GetAllMessages().Get(context.Background(), configuration)
 
 
 ```

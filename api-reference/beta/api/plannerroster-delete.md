@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/beta/planner/rosters/5ba84f7a-aa11-4a51-a298-
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

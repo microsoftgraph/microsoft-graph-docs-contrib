@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequestsById("unifiedRoleEligibilityScheduleRequest-id").MicrosoftGraphCancel().Post(context.Background(), nil)
+graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequestsById("unifiedRoleEligibilityScheduleRequest-id").Cancel().Post(context.Background(), nil)
 
 
 ```

@@ -14,18 +14,18 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestSearch := "\"displayName:tier\""
 
-requestParameters := &graphconfig.GroupItemTransitiveMemberItemRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.GroupItemTransitiveMembersGraph.userRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Search: &requestSearch,
 	Select: [] string {"displayName","id"},
 }
-configuration := &graphconfig.GroupItemTransitiveMemberItemRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.GroupItemTransitiveMembersGraph.userRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").TransitiveMembersById("directoryObject-id").Get(context.Background(), configuration)
+result, err := graphClient.GroupsById("group-id").TransitiveMembers().GraphUser().Get(context.Background(), configuration)
 
 
 ```

@@ -329,7 +329,6 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 
 ---
 
-
 #### Response 3
 
 And here is the response from the third example. Note: The response object shown here might be shortened for readability.

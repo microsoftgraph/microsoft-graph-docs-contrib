@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Events.Item.MicrosoftGraphForward.ForwardPostRequestBody
+var requestBody = new Microsoft.Graph.Me.Events.Item.Forward.ForwardPostRequestBody
 {
 	ToRecipients = new List<Recipient>
 	{
@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Me.Events.Item.MicrosoftGraphForward.Forwa
 	},
 	Comment = "Dana, hope you can make this meeting.",
 };
-await graphClient.Me.Events["event-id"].MicrosoftGraphForward.PostAsync(requestBody);
+await graphClient.Me.Events["event-id"].Forward.PostAsync(requestBody);
 
 
 ```

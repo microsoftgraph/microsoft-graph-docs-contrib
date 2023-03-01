@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 user.SetAdditionalData(additionalData)
 requestBody.SetUser(user)
 
-graphClient.ChatsById("chat-id").MicrosoftGraphHideForUser().Post(context.Background(), requestBody, nil)
+graphClient.ChatsById("chat-id").HideForUser().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReplyAllPostRequestBody()
 comment := "comment-value"
 requestBody.SetComment(&comment) 
 
-graphClient.Me().MessagesById("message-id").MicrosoftGraphReplyAll().Post(context.Background(), requestBody, nil)
+graphClient.Me().MessagesById("message-id").ReplyAll().Post(context.Background(), requestBody, nil)
 
 
 ```

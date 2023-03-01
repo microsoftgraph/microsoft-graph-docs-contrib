@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->education()->users()->microsoftGraphDelta()->get();
+$requestResult = $graphServiceClient->education()->users()->delta()->get();
 
 
 ```

@@ -9,15 +9,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
+$requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
 
-$queryParameters = new UserRequestBuilderGetQueryParameters();
+$queryParameters = new DeltaRequestBuilderGetQueryParameters();
 $queryParameters->select = ["displayName","jobTitle","mobilePhone"];
 
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->users()->delta()->get($requestConfiguration);
 
 
 ```

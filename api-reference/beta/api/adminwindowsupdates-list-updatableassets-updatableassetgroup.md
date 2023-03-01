@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/micro
 
 ---
 
-
 ### Response
 
 <!-- {

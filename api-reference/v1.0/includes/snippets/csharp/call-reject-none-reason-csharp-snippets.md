@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphReject.RejectPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Reject.RejectPostRequestBody
 {
 	Reason = RejectReason.None,
 };
-await graphClient.Communications.Calls["call-id"].MicrosoftGraphReject.PostAsync(requestBody);
+await graphClient.Communications.Calls["call-id"].Reject.PostAsync(requestBody);
 
 
 ```

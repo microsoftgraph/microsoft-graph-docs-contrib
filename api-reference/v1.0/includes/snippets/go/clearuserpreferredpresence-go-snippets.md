@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewClearUserPreferredPresencePostRequestBody()
 
-graphClient.UsersById("user-id").Presence().MicrosoftGraphClearUserPreferredPresence().Post(context.Background(), requestBody, nil)
+graphClient.UsersById("user-id").Presence().ClearUserPreferredPresence().Post(context.Background(), requestBody, nil)
 
 
 ```

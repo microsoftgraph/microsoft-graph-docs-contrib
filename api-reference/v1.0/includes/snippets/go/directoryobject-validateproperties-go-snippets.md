@@ -17,7 +17,7 @@ requestBody.SetMailNickname(&mailNickname)
 onBehalfOfUserId := uuid.MustParse("onBehalfOfUserId-value")
 requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId) 
 
-graphClient.DirectoryObjects().MicrosoftGraphValidateProperties().Post(context.Background(), requestBody, nil)
+graphClient.DirectoryObjects().ValidateProperties().Post(context.Background(), requestBody, nil)
 
 
 ```

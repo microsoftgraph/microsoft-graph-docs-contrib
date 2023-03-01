@@ -14,7 +14,7 @@ $requestBody->setDestinationId('destinationId-value');
 
 
 
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->microsoftGraphMove()->post($requestBody);
+$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->move()->post($requestBody);
 
 
 ```

@@ -23,7 +23,7 @@ $user->setAdditionalData($additionalData);
 $requestBody->setUser($user);
 
 
-$graphServiceClient->chatsById('chat-id')->microsoftGraphHideForUser()->post($requestBody);
+$graphServiceClient->chatsById('chat-id')->hideForUser()->post($requestBody);
 
 
 ```

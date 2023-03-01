@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-b85
 
 ---
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -83,7 +83,6 @@ POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSch
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.MicrosoftGraphCopyToDefaultContentLocation.CopyToDefaultContentLocationPostRequestBody
+var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.CopyToDefaultContentLocation.CopyToDefaultContentLocationPostRequestBody
 {
 	SourceFile = new ItemReference
 	{
@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.MicrosoftGrap
 	},
 	DestinationFileName = "newname.txt",
 };
-await graphClient.Sites["site-id"].ContentTypes["contentType-id"].MicrosoftGraphCopyToDefaultContentLocation.PostAsync(requestBody);
+await graphClient.Sites["site-id"].ContentTypes["contentType-id"].CopyToDefaultContentLocation.PostAsync(requestBody);
 
 
 ```

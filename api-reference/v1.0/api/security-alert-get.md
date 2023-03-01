@@ -82,7 +82,6 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2/da637578995287051192_756
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

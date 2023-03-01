@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->microsoftGraphUnpublish()->post();
+$graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->unpublish()->post();
 
 
 ```

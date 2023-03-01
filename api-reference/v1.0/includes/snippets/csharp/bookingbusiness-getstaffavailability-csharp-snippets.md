@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Solutions.BookingBusinesses.Item.MicrosoftGraphGetStaffAvailability.GetStaffAvailabilityPostRequestBody
+var requestBody = new Microsoft.Graph.Solutions.BookingBusinesses.Item.GetStaffAvailability.GetStaffAvailabilityPostRequestBody
 {
 	StaffIds = new List<string>
 	{
@@ -23,7 +23,7 @@ var requestBody = new Microsoft.Graph.Solutions.BookingBusinesses.Item.Microsoft
 		TimeZone = "Pacific Standard Time",
 	},
 };
-var result = await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].MicrosoftGraphGetStaffAvailability.PostAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["bookingBusiness-id"].GetStaffAvailability.PostAsync(requestBody);
 
 
 ```

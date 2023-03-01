@@ -330,7 +330,6 @@ Prefer: include-unknown-enum-members
 
 ---
 
-
 #### Response
 The following is an example of the response  when `Prefer: include-unknown-enum-members` is provided in the request header.
 

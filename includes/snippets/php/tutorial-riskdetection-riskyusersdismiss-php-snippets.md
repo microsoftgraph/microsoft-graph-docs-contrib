@@ -14,7 +14,7 @@ $requestBody->setUserIds(['4628e7df-dff3-407c-a08f-75f08c0806dc', ]);
 
 
 
-$graphServiceClient->identityProtection()->riskyUsers()->microsoftGraphDismiss()->post($requestBody);
+$graphServiceClient->identityProtection()->riskyUsers()->dismiss()->post($requestBody);
 
 
 ```

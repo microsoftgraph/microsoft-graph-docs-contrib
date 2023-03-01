@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.MicrosoftGraphCheckMemberGroups.CheckMemberGroupsPostRequestBody
+var requestBody = new Microsoft.Graph.Me.CheckMemberGroups.CheckMemberGroupsPostRequestBody
 {
 	GroupIds = new List<string>
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Me.MicrosoftGraphCheckMemberGroups.CheckMe
 		"4fe90ae065a-478b9400e0a0e1cbd540",
 	},
 };
-var result = await graphClient.Me.MicrosoftGraphCheckMemberGroups.PostAsync(requestBody);
+var result = await graphClient.Me.CheckMemberGroups.PostAsync(requestBody);
 
 
 ```

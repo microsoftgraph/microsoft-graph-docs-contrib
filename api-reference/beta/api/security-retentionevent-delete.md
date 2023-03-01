@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/beta/security/triggers/retentionEvents/{reten
 
 ---
 
-
 ### Response
 >
 <!-- {

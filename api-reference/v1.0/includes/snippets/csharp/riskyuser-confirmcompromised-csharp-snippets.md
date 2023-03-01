@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.IdentityProtection.RiskyUsers.MicrosoftGraphConfirmCompromised.ConfirmCompromisedPostRequestBody
+var requestBody = new Microsoft.Graph.IdentityProtection.RiskyUsers.ConfirmCompromised.ConfirmCompromisedPostRequestBody
 {
 	UserIds = new List<string>
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.IdentityProtection.RiskyUsers.MicrosoftGra
 		"20f91ec9-d140-4d90-9cd9-f618587a1471",
 	},
 };
-await graphClient.IdentityProtection.RiskyUsers.MicrosoftGraphConfirmCompromised.PostAsync(requestBody);
+await graphClient.IdentityProtection.RiskyUsers.ConfirmCompromised.PostAsync(requestBody);
 
 
 ```

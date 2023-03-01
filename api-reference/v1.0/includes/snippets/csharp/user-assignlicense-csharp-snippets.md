@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.MicrosoftGraphAssignLicense.AssignLicensePostRequestBody
+var requestBody = new Microsoft.Graph.Me.AssignLicense.AssignLicensePostRequestBody
 {
 	AddLicenses = new List<AssignedLicense>
 	{
@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Me.MicrosoftGraphAssignLicense.AssignLicen
 		Guid.Parse("bea13e0c-3828-4daa-a392-28af7ff61a0f"),
 	},
 };
-var result = await graphClient.Me.MicrosoftGraphAssignLicense.PostAsync(requestBody);
+var result = await graphClient.Me.AssignLicense.PostAsync(requestBody);
 
 
 ```

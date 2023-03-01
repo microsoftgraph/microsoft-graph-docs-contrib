@@ -11,7 +11,7 @@ requestBody := graphmodels.NewSubscribeToTonePostRequestBody()
 clientContext := "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().CallsById("call-id").MicrosoftGraphSubscribeToTone().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Communications().CallsById("call-id").SubscribeToTone().Post(context.Background(), requestBody, nil)
 
 
 ```

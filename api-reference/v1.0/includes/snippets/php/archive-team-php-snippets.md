@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->teamsById('team-id')->microsoftGraphArchive()->post();
+$graphServiceClient->teamsById('team-id')->archive()->post();
 
 
 ```

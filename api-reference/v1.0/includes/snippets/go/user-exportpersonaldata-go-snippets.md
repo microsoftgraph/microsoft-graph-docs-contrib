@@ -11,7 +11,7 @@ requestBody := graphmodels.NewExportPersonalDataPostRequestBody()
 storageLocation := "storageLocation-value"
 requestBody.SetStorageLocation(&storageLocation) 
 
-graphClient.UsersById("user-id").MicrosoftGraphExportPersonalData().Post(context.Background(), requestBody, nil)
+graphClient.UsersById("user-id").ExportPersonalData().Post(context.Background(), requestBody, nil)
 
 
 ```

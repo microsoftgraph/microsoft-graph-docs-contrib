@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.DirectoryObjects.Item.MicrosoftGraphGetMemberGroups.GetMemberGroupsPostRequestBody
+var requestBody = new Microsoft.Graph.DirectoryObjects.Item.GetMemberGroups.GetMemberGroupsPostRequestBody
 {
 	SecurityEnabledOnly = false,
 };
-var result = await graphClient.DirectoryObjects["directoryObject-id"].MicrosoftGraphGetMemberGroups.PostAsync(requestBody);
+var result = await graphClient.DirectoryObjects["directoryObject-id"].GetMemberGroups.PostAsync(requestBody);
 
 
 ```

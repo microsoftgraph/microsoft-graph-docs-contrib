@@ -17,7 +17,7 @@ $queryParameters->select = ["displayName","givenName","surname"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->users()->microsoftGraphDelta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->users()->delta()->get($requestConfiguration);
 
 
 ```

@@ -31,7 +31,7 @@ $requestBody->setConnectorId(null);
 
 
 
-$graphServiceClient->print()->printers()->microsoftGraphCreate()->post($requestBody);
+$graphServiceClient->print()->printers()->create()->post($requestBody);
 
 
 ```

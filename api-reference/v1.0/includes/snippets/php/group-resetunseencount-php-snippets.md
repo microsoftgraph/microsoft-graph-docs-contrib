@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->groupsById('group-id')->microsoftGraphResetUnseenCount()->post();
+$graphServiceClient->groupsById('group-id')->resetUnseenCount()->post();
 
 
 ```

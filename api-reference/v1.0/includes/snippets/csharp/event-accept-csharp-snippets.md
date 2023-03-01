@@ -6,12 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Events.Item.MicrosoftGraphAccept.AcceptPostRequestBody
+var requestBody = new Microsoft.Graph.Me.Events.Item.Accept.AcceptPostRequestBody
 {
 	Comment = "comment-value",
 	SendResponse = true,
 };
-await graphClient.Me.Events["event-id"].MicrosoftGraphAccept.PostAsync(requestBody);
+await graphClient.Me.Events["event-id"].Accept.PostAsync(requestBody);
 
 
 ```

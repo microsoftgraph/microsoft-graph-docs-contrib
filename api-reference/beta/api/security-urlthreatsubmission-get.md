@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/security/threatSubmission/urlThreats/49c5ef
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

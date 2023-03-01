@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/beta/search/acronyms/{acronymsId}
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

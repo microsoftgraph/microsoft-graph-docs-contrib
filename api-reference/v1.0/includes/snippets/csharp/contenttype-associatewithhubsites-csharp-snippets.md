@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.MicrosoftGraphAssociateWithHubSites.AssociateWithHubSitesPostRequestBody
+var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.AssociateWithHubSites.AssociateWithHubSitesPostRequestBody
 {
 	HubSiteUrls = new List<string>
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.MicrosoftGrap
 	},
 	PropagateToExistingLists = false,
 };
-await graphClient.Sites["site-id"].ContentTypes["contentType-id"].MicrosoftGraphAssociateWithHubSites.PostAsync(requestBody);
+await graphClient.Sites["site-id"].ContentTypes["contentType-id"].AssociateWithHubSites.PostAsync(requestBody);
 
 
 ```

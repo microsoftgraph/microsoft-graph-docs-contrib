@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->domainsById('domain-id')->microsoftGraphPromote()->post();
+$requestResult = $graphServiceClient->domainsById('domain-id')->promote()->post();
 
 
 ```

@@ -85,7 +85,6 @@ POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/restoreFactoryD
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

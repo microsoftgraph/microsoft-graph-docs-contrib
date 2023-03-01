@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/operations/{richLongRunningO
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

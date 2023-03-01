@@ -781,7 +781,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
 Here is an example of the response.

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.UsersById("user-id").ChatsById("chat-id").MessagesById("chatMessage-id").MicrosoftGraphUndoSoftDelete().Post(context.Background(), nil)
+graphClient.UsersById("user-id").ChatsById("chat-id").MessagesById("chatMessage-id").UndoSoftDelete().Post(context.Background(), nil)
 
 
 ```

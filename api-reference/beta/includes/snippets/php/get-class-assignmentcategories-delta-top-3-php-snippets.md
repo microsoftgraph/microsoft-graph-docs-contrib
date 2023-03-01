@@ -9,15 +9,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new EducationCategoryRequestBuilderGetRequestConfiguration();
+$requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
 
-$queryParameters = new EducationCategoryRequestBuilderGetQueryParameters();
+$queryParameters = new DeltaRequestBuilderGetQueryParameters();
 $queryParameters->top = 3;
 
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentCategoriesById('educationCategory-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentCategories()->delta()->get($requestConfiguration);
 
 
 ```

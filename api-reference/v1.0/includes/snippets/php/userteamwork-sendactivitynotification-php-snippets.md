@@ -36,7 +36,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->usersById('user-id')->teamwork()->microsoftGraphSendActivityNotification()->post($requestBody);
+$graphServiceClient->usersById('user-id')->teamwork()->sendActivityNotification()->post($requestBody);
 
 
 ```

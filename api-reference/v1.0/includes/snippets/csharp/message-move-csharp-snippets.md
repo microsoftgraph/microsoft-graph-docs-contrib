@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Messages.Item.MicrosoftGraphMove.MovePostRequestBody
+var requestBody = new Microsoft.Graph.Me.Messages.Item.Move.MovePostRequestBody
 {
 	DestinationId = "deleteditems",
 };
-var result = await graphClient.Me.Messages["message-id"].MicrosoftGraphMove.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["message-id"].Move.PostAsync(requestBody);
 
 
 ```

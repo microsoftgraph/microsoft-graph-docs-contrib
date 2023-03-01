@@ -10,15 +10,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=minimal")
 
-requestParameters := &graphconfig.ContactItemRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.ContactsDelta()RequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mail"},
 }
-configuration := &graphconfig.ContactItemRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ContactsDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ContactsById("orgContact-id").Get(context.Background(), configuration)
+result, err := graphClient.Contacts().Delta().Get(context.Background(), configuration)
 
 
 ```

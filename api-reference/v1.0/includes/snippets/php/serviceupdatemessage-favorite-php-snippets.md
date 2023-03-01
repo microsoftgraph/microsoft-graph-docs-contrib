@@ -14,7 +14,7 @@ $requestBody->setMessageIds(['MC172851', 'MC167983', ]);
 
 
 
-$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->messages()->microsoftGraphFavorite()->post($requestBody);
+$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->messages()->favorite()->post($requestBody);
 
 
 ```

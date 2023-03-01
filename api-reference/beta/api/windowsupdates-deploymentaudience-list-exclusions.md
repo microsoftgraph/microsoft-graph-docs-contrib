@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/b
 
 ---
 
-
 ### Response
 
 <!-- {

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphAnswer.AnswerPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPostRequestBody
 {
 	CallbackUri = "callbackUri-value",
 	MediaConfig = new MediaConfig
@@ -30,7 +30,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphAn
 	},
 	ParticipantCapacity = 200,
 };
-await graphClient.Communications.Calls["call-id"].MicrosoftGraphAnswer.PostAsync(requestBody);
+await graphClient.Communications.Calls["call-id"].Answer.PostAsync(requestBody);
 
 
 ```

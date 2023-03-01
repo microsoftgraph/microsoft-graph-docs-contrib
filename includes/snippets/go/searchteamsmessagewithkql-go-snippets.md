@@ -34,7 +34,7 @@ requests := []graphmodels.SearchRequestable {
 }
 requestBody.SetRequests(requests)
 
-result, err := graphClient.Search().MicrosoftGraphQuery().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Search().Query().Post(context.Background(), requestBody, nil)
 
 
 ```

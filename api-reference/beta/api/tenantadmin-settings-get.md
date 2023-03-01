@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/admin/sharepoint/settings
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.GroupsById("group-id").MicrosoftGraphRemoveFavorite().Post(context.Background(), nil)
+graphClient.GroupsById("group-id").RemoveFavorite().Post(context.Background(), nil)
 
 
 ```

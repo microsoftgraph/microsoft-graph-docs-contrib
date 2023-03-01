@@ -89,7 +89,6 @@ POST https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/documen
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

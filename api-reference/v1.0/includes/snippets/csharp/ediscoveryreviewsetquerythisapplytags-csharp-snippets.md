@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.Queries.Item.MicrosoftGraphSecurityApplyTags.ApplyTagsPostRequestBody
+var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.Queries.Item.SecurityApplyTags.ApplyTagsPostRequestBody
 {
 	TagsToAdd = new List<Microsoft.Graph.Models.Security.EdiscoveryReviewTag>
 	{
@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Review
 		},
 	},
 };
-await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].Queries["ediscoveryReviewSetQuery-id"].MicrosoftGraphSecurityApplyTags.PostAsync(requestBody);
+await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].Queries["ediscoveryReviewSetQuery-id"].SecurityApplyTags.PostAsync(requestBody);
 
 
 ```

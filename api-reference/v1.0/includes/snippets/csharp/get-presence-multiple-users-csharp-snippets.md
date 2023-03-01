@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.MicrosoftGraphGetPresencesByUserId.GetPresencesByUserIdPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.GetPresencesByUserId.GetPresencesByUserIdPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Communications.MicrosoftGraphGetPresencesB
 		"66825e03-7ef5-42da-9069-724602c31f6b",
 	},
 };
-var result = await graphClient.Communications.MicrosoftGraphGetPresencesByUserId.PostAsync(requestBody);
+var result = await graphClient.Communications.GetPresencesByUserId.PostAsync(requestBody);
 
 
 ```

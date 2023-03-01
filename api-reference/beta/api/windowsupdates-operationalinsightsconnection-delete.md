@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/resourceConnection
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

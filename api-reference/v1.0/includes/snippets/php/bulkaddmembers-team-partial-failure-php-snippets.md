@@ -41,7 +41,7 @@ $requestBody->setValues($valuesArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->members()->microsoftGraphAdd()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->members()->add()->post($requestBody);
 
 
 ```

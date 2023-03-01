@@ -29,7 +29,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.SharesById("sharedDriveItem-id").Permission().MicrosoftGraphGrant().Post(context.Background(), requestBody, nil)
+result, err := graphClient.SharesById("sharedDriveItem-id").Permission().Grant().Post(context.Background(), requestBody, nil)
 
 
 ```

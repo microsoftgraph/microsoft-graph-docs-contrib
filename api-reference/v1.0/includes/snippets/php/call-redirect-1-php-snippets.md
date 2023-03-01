@@ -36,7 +36,7 @@ $requestBody->setCallbackUri('https://bot.contoso.com/api/calls/24701998-1a73-4d
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->microsoftGraphRedirect()->post($requestBody);
+$graphServiceClient->communications()->callsById('call-id')->redirect()->post($requestBody);
 
 
 ```

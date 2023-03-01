@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.MicrosoftGraphInvite.InvitePostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Invite.InvitePostRequestBody
 {
 	Participants = new List<InvitationParticipantInfo>
 	{
@@ -28,7 +28,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Mic
 	},
 	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
 };
-var result = await graphClient.Communications.Calls["call-id"].Participants.MicrosoftGraphInvite.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["call-id"].Participants.Invite.PostAsync(requestBody);
 
 
 ```

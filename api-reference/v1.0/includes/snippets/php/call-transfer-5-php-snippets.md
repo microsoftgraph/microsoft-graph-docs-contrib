@@ -50,7 +50,7 @@ $transferee->setParticipantId('909c6581-5130-43e9-88f3-fcb3582cde37');
 $requestBody->setTransferee($transferee);
 
 
-$graphServiceClient->communications()->callsById('call-id')->microsoftGraphTransfer()->post($requestBody);
+$graphServiceClient->communications()->callsById('call-id')->transfer()->post($requestBody);
 
 
 ```

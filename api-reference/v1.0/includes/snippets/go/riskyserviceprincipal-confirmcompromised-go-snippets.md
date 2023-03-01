@@ -14,7 +14,7 @@ servicePrincipalIds := []string {
 }
 requestBody.SetServicePrincipalIds(servicePrincipalIds)
 
-graphClient.IdentityProtection().RiskyServicePrincipals().MicrosoftGraphConfirmCompromised().Post(context.Background(), requestBody, nil)
+graphClient.IdentityProtection().RiskyServicePrincipals().ConfirmCompromised().Post(context.Background(), requestBody, nil)
 
 
 ```

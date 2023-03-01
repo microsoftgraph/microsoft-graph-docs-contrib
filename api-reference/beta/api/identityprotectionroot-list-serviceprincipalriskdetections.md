@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

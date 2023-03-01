@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Calendar.MicrosoftGraphGetSchedule.GetSchedulePostRequestBody
+var requestBody = new Microsoft.Graph.Me.Calendar.GetSchedule.GetSchedulePostRequestBody
 {
 	Schedules = new List<string>
 	{
@@ -25,7 +25,7 @@ var requestBody = new Microsoft.Graph.Me.Calendar.MicrosoftGraphGetSchedule.GetS
 	},
 	AvailabilityViewInterval = 60,
 };
-var result = await graphClient.Me.Calendar.MicrosoftGraphGetSchedule.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Me.Calendar.GetSchedule.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
 });

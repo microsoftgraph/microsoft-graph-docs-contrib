@@ -293,7 +293,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following is the response.

@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Users.Item.Presence.MicrosoftGraphClearUserPreferredPresence.ClearUserPreferredPresencePostRequestBody
+var requestBody = new Microsoft.Graph.Users.Item.Presence.ClearUserPreferredPresence.ClearUserPreferredPresencePostRequestBody
 {
 };
-await graphClient.Users["user-id"].Presence.MicrosoftGraphClearUserPreferredPresence.PostAsync(requestBody);
+await graphClient.Users["user-id"].Presence.ClearUserPreferredPresence.PostAsync(requestBody);
 
 
 ```

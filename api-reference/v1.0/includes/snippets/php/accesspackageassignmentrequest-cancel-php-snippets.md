@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequestsById('accessPackageAssignmentRequest-id')->microsoftGraphCancel()->post();
+$graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequestsById('accessPackageAssignmentRequest-id')->cancel()->post();
 
 
 ```

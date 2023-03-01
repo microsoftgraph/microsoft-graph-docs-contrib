@@ -14,16 +14,16 @@ headers.Add("Prefer", "odata.maxpagesize=2")
 requestStartdatetime := "2016-12-01T00:00:00Z"
 requestEnddatetime := "2016-12-30T00:00:00Z"
 
-requestParameters := &graphconfig.MeCalendarViewMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeCalendarViewDelta()RequestBuilderGetQueryParameters{
 	Startdatetime: &requestStartdatetime,
 	Enddatetime: &requestEnddatetime,
 }
-configuration := &graphconfig.MeCalendarViewMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeCalendarViewDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().CalendarView().MicrosoftGraphDelta().Get(context.Background(), configuration)
+result, err := graphClient.Me().CalendarView().Delta().Get(context.Background(), configuration)
 
 
 ```

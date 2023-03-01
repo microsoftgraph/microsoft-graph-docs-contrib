@@ -114,7 +114,6 @@ Prefer: odata.maxpagesize=2
 
 ---
 
-
 ### Sample initial response
 
 The response includes two events and a `@odata.nextLink` response header with a `skipToken`. 

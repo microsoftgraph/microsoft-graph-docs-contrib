@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.MicrosoftGraphFindMeetingTimes.FindMeetingTimesPostRequestBody
+var requestBody = new Microsoft.Graph.Me.FindMeetingTimes.FindMeetingTimesPostRequestBody
 {
 	Attendees = new List<AttendeeBase>
 	{
@@ -58,7 +58,7 @@ var requestBody = new Microsoft.Graph.Me.MicrosoftGraphFindMeetingTimes.FindMeet
 	ReturnSuggestionReasons = true,
 	MinimumAttendeePercentage = "100",
 };
-var result = await graphClient.Me.MicrosoftGraphFindMeetingTimes.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Me.FindMeetingTimes.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
 });

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Groups["group-id"].MicrosoftGraphRemoveFavorite.PostAsync();
+await graphClient.Groups["group-id"].RemoveFavorite.PostAsync();
 
 
 ```

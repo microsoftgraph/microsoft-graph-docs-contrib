@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
 
 ---
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

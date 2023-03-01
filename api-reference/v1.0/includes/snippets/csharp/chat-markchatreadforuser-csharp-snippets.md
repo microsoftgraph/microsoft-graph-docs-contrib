@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Chats.Item.MicrosoftGraphMarkChatReadForUser.MarkChatReadForUserPostRequestBody
+var requestBody = new Microsoft.Graph.Chats.Item.MarkChatReadForUser.MarkChatReadForUserPostRequestBody
 {
 	User = new TeamworkUserIdentity
 	{
@@ -19,7 +19,7 @@ var requestBody = new Microsoft.Graph.Chats.Item.MicrosoftGraphMarkChatReadForUs
 		},
 	},
 };
-await graphClient.Chats["chat-id"].MicrosoftGraphMarkChatReadForUser.PostAsync(requestBody);
+await graphClient.Chats["chat-id"].MarkChatReadForUser.PostAsync(requestBody);
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.MicrosoftGraphReply.ReplyPostRequestBody
+var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Reply.ReplyPostRequestBody
 {
 	Post = new Post
 	{
@@ -44,7 +44,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Micros
 		},
 	},
 };
-await graphClient.Groups["group-id"].Threads["conversationThread-id"].Posts["post-id"].MicrosoftGraphReply.PostAsync(requestBody);
+await graphClient.Groups["group-id"].Threads["conversationThread-id"].Posts["post-id"].Reply.PostAsync(requestBody);
 
 
 ```

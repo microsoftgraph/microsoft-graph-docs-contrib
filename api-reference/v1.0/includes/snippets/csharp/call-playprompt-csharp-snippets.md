@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphPlayPrompt.PlayPromptPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.PlayPrompt.PlayPromptPostRequestBody
 {
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
 	Prompts = new List<Prompt>
@@ -28,7 +28,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphPl
 		},
 	},
 };
-var result = await graphClient.Communications.Calls["call-id"].MicrosoftGraphPlayPrompt.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["call-id"].PlayPrompt.PostAsync(requestBody);
 
 
 ```

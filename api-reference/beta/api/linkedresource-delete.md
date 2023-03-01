@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks
 
 ---
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

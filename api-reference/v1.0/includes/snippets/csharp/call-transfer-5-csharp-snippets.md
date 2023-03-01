@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphTransfer.TransferPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Transfer.TransferPostRequestBody
 {
 	TransferTarget = new InvitationParticipantInfo
 	{
@@ -43,7 +43,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphTr
 		ParticipantId = "909c6581-5130-43e9-88f3-fcb3582cde37",
 	},
 };
-await graphClient.Communications.Calls["call-id"].MicrosoftGraphTransfer.PostAsync(requestBody);
+await graphClient.Communications.Calls["call-id"].Transfer.PostAsync(requestBody);
 
 
 ```

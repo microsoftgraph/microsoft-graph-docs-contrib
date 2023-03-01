@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->microsoftGraphSoftDelete()->post();
+$graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->softDelete()->post();
 
 
 ```

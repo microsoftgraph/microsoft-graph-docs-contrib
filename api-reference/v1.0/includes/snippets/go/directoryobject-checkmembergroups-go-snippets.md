@@ -18,7 +18,7 @@ groupIds := []string {
 }
 requestBody.SetGroupIds(groupIds)
 
-result, err := graphClient.DirectoryObjectsById("directoryObject-id").MicrosoftGraphCheckMemberGroups().Post(context.Background(), requestBody, nil)
+result, err := graphClient.DirectoryObjectsById("directoryObject-id").CheckMemberGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

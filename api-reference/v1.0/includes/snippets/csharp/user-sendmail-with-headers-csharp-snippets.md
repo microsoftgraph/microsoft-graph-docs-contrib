@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.MicrosoftGraphSendMail.SendMailPostRequestBody
+var requestBody = new Microsoft.Graph.Me.SendMail.SendMailPostRequestBody
 {
 	Message = new Message
 	{
@@ -41,7 +41,7 @@ var requestBody = new Microsoft.Graph.Me.MicrosoftGraphSendMail.SendMailPostRequ
 		},
 	},
 };
-await graphClient.Me.MicrosoftGraphSendMail.PostAsync(requestBody);
+await graphClient.Me.SendMail.PostAsync(requestBody);
 
 
 ```

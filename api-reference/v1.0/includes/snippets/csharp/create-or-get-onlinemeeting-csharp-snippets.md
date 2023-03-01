@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.OnlineMeetings.MicrosoftGraphCreateOrGet.CreateOrGetPostRequestBody
+var requestBody = new Microsoft.Graph.Me.OnlineMeetings.CreateOrGet.CreateOrGetPostRequestBody
 {
 	StartDateTime = DateTimeOffset.Parse("2020-02-06T01:49:21.3524945+00:00"),
 	EndDateTime = DateTimeOffset.Parse("2020-02-06T02:19:21.3524945+00:00"),
@@ -30,7 +30,7 @@ var requestBody = new Microsoft.Graph.Me.OnlineMeetings.MicrosoftGraphCreateOrGe
 		},
 	},
 };
-var result = await graphClient.Me.OnlineMeetings.MicrosoftGraphCreateOrGet.PostAsync(requestBody);
+var result = await graphClient.Me.OnlineMeetings.CreateOrGet.PostAsync(requestBody);
 
 
 ```

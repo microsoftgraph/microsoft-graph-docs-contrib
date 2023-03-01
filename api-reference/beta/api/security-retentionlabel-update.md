@@ -132,7 +132,6 @@ Content-length: 555
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

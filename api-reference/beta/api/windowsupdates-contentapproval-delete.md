@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/983
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

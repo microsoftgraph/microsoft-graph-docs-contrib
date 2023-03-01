@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeMicrosoft.graph.findMeetingTimesRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.MeFindMeetingTimesRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewFindMeetingTimesPostRequestBody()
@@ -84,7 +84,7 @@ requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons)
 minimumAttendeePercentage := "100"
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
-result, err := graphClient.Me().MicrosoftGraphFindMeetingTimes().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)
 
 
 ```

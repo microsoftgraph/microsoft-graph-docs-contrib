@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphRedirect.RedirectPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Redirect.RedirectPostRequestBody
 {
 	Targets = new List<InvitationParticipantInfo>
 	{
@@ -31,7 +31,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphRe
 	},
 	CallbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
 };
-await graphClient.Communications.Calls["call-id"].MicrosoftGraphRedirect.PostAsync(requestBody);
+await graphClient.Communications.Calls["call-id"].Redirect.PostAsync(requestBody);
 
 
 ```

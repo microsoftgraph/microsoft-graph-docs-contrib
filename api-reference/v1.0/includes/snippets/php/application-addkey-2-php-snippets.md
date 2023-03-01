@@ -28,7 +28,7 @@ $requestBody->setProof('eyJ0eXAiOiJ...');
 
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->microsoftGraphAddKey()->post($requestBody);
+$requestResult = $graphServiceClient->applicationsById('application-id')->addKey()->post($requestBody);
 
 
 ```

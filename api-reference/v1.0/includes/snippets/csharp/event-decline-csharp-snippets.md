@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Events.Item.MicrosoftGraphDecline.DeclinePostRequestBody
+var requestBody = new Microsoft.Graph.Me.Events.Item.Decline.DeclinePostRequestBody
 {
 	Comment = "I won't be able to make this week. How about next week?",
 	SendResponse = true,
@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Me.Events.Item.MicrosoftGraphDecline.Decli
 		},
 	},
 };
-await graphClient.Me.Events["event-id"].MicrosoftGraphDecline.PostAsync(requestBody);
+await graphClient.Me.Events["event-id"].Decline.PostAsync(requestBody);
 
 
 ```

@@ -13,15 +13,15 @@ headers.Add("Prefer", "odata.maxpagesize=2")
 
 requestSkiptoken := "R0usmcCM996atia_s"
 
-requestParameters := &graphconfig.MeCalendarViewMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeCalendarViewDelta()RequestBuilderGetQueryParameters{
 	Skiptoken: &requestSkiptoken,
 }
-configuration := &graphconfig.MeCalendarViewMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeCalendarViewDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().CalendarView().MicrosoftGraphDelta().Get(context.Background(), configuration)
+result, err := graphClient.Me().CalendarView().Delta().Get(context.Background(), configuration)
 
 
 ```

@@ -67,7 +67,6 @@ POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotT
 
 ---
 
-
 ##### Response
 Here is an example of the response.
 <!-- {

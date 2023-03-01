@@ -17,7 +17,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-result, err := graphClient.Me().MicrosoftGraphCheckMemberObjects().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().CheckMemberObjects().Post(context.Background(), requestBody, nil)
 
 
 ```

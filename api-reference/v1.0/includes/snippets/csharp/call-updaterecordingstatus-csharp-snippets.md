@@ -6,12 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphUpdateRecordingStatus.UpdateRecordingStatusPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.UpdateRecordingStatus.UpdateRecordingStatusPostRequestBody
 {
 	ClientContext = "clientContext-value",
 	Status = RecordingStatus.NotRecording | RecordingStatus.Recording | RecordingStatus.Failed,
 };
-var result = await graphClient.Communications.Calls["call-id"].MicrosoftGraphUpdateRecordingStatus.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["call-id"].UpdateRecordingStatus.PostAsync(requestBody);
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Messages.Item.MicrosoftGraphForward.ForwardPostRequestBody
+var requestBody = new Microsoft.Graph.Me.Messages.Item.Forward.ForwardPostRequestBody
 {
 	Comment = "comment-value",
 	ToRecipients = new List<Recipient>
@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Me.Messages.Item.MicrosoftGraphForward.For
 		},
 	},
 };
-await graphClient.Me.Messages["message-id"].MicrosoftGraphForward.PostAsync(requestBody);
+await graphClient.Me.Messages["message-id"].Forward.PostAsync(requestBody);
 
 
 ```

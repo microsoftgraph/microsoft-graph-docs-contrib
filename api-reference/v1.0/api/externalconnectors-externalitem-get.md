@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

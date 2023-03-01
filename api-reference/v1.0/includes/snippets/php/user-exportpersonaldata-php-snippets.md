@@ -14,7 +14,7 @@ $requestBody->setStorageLocation('storageLocation-value');
 
 
 
-$graphServiceClient->usersById('user-id')->microsoftGraphExportPersonalData()->post($requestBody);
+$graphServiceClient->usersById('user-id')->exportPersonalData()->post($requestBody);
 
 
 ```

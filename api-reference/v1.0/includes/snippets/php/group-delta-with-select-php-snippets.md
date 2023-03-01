@@ -17,7 +17,7 @@ $queryParameters->select = ["displayName","description","mailNickname"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->groups()->microsoftGraphDelta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groups()->delta()->get($requestConfiguration);
 
 
 ```

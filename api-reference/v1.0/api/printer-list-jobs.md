@@ -80,7 +80,6 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 
 ---
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

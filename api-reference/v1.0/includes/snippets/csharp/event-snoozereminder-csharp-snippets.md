@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Events.Item.MicrosoftGraphSnoozeReminder.SnoozeReminderPostRequestBody
+var requestBody = new Microsoft.Graph.Me.Events.Item.SnoozeReminder.SnoozeReminderPostRequestBody
 {
 	NewReminderTime = new DateTimeTimeZone
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Me.Events.Item.MicrosoftGraphSnoozeReminde
 		TimeZone = "timeZone-value",
 	},
 };
-await graphClient.Me.Events["event-id"].MicrosoftGraphSnoozeReminder.PostAsync(requestBody);
+await graphClient.Me.Events["event-id"].SnoozeReminder.PostAsync(requestBody);
 
 
 ```

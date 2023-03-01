@@ -14,7 +14,7 @@ $requestBody->setVerifiedPublisherId('1234567');
 
 
 
-$graphServiceClient->applicationsById('application-id')->microsoftGraphSetVerifiedPublisher()->post($requestBody);
+$graphServiceClient->applicationsById('application-id')->setVerifiedPublisher()->post($requestBody);
 
 
 ```

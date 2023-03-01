@@ -84,7 +84,6 @@ DELETE https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

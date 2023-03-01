@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/me/settings/itemInsights
 
 ---
 
-
 ### Response
 
 The following is an example of the response. 

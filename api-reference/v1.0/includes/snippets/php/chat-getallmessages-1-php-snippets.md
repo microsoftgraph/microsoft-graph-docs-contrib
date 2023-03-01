@@ -17,7 +17,7 @@ $queryParameters->top = 2;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->chats()->microsoftGraphGetAllMessages()->get($requestConfiguration);
+$requestResult = $graphServiceClient->usersById('user-id')->chats()->getAllMessages()->get($requestConfiguration);
 
 
 ```

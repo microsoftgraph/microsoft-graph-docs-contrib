@@ -23,7 +23,7 @@ additionalData := map[string]interface{}{
 transferTarget.SetAdditionalData(additionalData)
 requestBody.SetTransferTarget(transferTarget)
 
-graphClient.Communications().CallsById("call-id").MicrosoftGraphTransfer().Post(context.Background(), requestBody, nil)
+graphClient.Communications().CallsById("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 
 ```

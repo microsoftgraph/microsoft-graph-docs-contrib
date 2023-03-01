@@ -291,7 +291,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 
 ---
 
-
 ### Response
 
 The following is an example of the response for a failed provisioning event.

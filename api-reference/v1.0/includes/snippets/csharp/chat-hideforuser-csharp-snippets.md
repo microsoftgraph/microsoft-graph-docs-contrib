@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Chats.Item.MicrosoftGraphHideForUser.HideForUserPostRequestBody
+var requestBody = new Microsoft.Graph.Chats.Item.HideForUser.HideForUserPostRequestBody
 {
 	User = new TeamworkUserIdentity
 	{
@@ -19,7 +19,7 @@ var requestBody = new Microsoft.Graph.Chats.Item.MicrosoftGraphHideForUser.HideF
 		},
 	},
 };
-await graphClient.Chats["chat-id"].MicrosoftGraphHideForUser.PostAsync(requestBody);
+await graphClient.Chats["chat-id"].HideForUser.PostAsync(requestBody);
 
 
 ```

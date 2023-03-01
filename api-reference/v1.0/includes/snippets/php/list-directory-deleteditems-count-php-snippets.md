@@ -24,7 +24,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->directory()->deletedItems()->microsoftGraphGroup()->get($requestConfiguration);
+$requestResult = $graphServiceClient->directory()->deletedItems()->graphGroup()->get($requestConfiguration);
 
 
 ```

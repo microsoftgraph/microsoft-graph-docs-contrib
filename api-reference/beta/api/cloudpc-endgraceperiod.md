@@ -93,7 +93,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/
 
 ---
 
-
 ### Response
 
 <!-- {

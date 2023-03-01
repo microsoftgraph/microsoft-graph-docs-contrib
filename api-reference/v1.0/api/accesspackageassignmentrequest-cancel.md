@@ -83,7 +83,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.ServicePrincipals.Item.MicrosoftGraphAddKey.AddKeyPostRequestBody
+var requestBody = new Microsoft.Graph.ServicePrincipals.Item.AddKey.AddKeyPostRequestBody
 {
 	KeyCredential = new KeyCredential
 	{
@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.ServicePrincipals.Item.MicrosoftGraphAddKe
 	},
 	Proof = "eyJ0eXAiOiJ...",
 };
-var result = await graphClient.ServicePrincipals["servicePrincipal-id"].MicrosoftGraphAddKey.PostAsync(requestBody);
+var result = await graphClient.ServicePrincipals["servicePrincipal-id"].AddKey.PostAsync(requestBody);
 
 
 ```

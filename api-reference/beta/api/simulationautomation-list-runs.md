@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomat
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

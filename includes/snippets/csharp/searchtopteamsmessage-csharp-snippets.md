@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Search.MicrosoftGraphQuery.QueryPostRequestBody
+var requestBody = new Microsoft.Graph.Search.Query.QueryPostRequestBody
 {
 	Requests = new List<SearchRequest>
 	{
@@ -26,7 +26,7 @@ var requestBody = new Microsoft.Graph.Search.MicrosoftGraphQuery.QueryPostReques
 		},
 	},
 };
-var result = await graphClient.Search.MicrosoftGraphQuery.PostAsync(requestBody);
+var result = await graphClient.Search.Query.PostAsync(requestBody);
 
 
 ```

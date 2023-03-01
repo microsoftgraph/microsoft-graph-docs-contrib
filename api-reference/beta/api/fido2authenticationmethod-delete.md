@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/fid
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

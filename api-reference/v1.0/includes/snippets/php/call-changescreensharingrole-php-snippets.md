@@ -14,7 +14,7 @@ $requestBody->setRole(new ScreenSharingRole('viewer'));
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->microsoftGraphChangeScreenSharingRole()->post($requestBody);
+$graphServiceClient->communications()->callsById('call-id')->changeScreenSharingRole()->post($requestBody);
 
 
 ```

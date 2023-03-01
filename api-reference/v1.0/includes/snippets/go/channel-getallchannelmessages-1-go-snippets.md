@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "lastModifiedDateTime gt 2019-11-01T00:00:00Z and lastModifiedDateTime lt 2021-11-01T00:00:00Z"
 
-requestParameters := &graphconfig.TeamItemChannelsMicrosoft.graph.getAllMessages()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemChannelsGetAllMessages()RequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamItemChannelsMicrosoft.graph.getAllMessages()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemChannelsGetAllMessages()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Channels().MicrosoftGraphGetAllMessages().Get(context.Background(), configuration)
+result, err := graphClient.TeamsById("team-id").Channels().GetAllMessages().Get(context.Background(), configuration)
 
 
 ```

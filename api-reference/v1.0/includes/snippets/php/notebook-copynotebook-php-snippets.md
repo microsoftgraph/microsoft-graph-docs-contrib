@@ -16,7 +16,7 @@ $requestBody->setRenameAs('renameAs-value');
 
 
 
-$requestResult = $graphServiceClient->me()->onenote()->notebooksById('notebook-id')->microsoftGraphCopyNotebook()->post($requestBody);
+$requestResult = $graphServiceClient->me()->onenote()->notebooksById('notebook-id')->copyNotebook()->post($requestBody);
 
 
 ```

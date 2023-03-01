@@ -13,7 +13,7 @@ requestBody.SetKeyId(&keyId)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-graphClient.ApplicationsById("application-id").MicrosoftGraphRemoveKey().Post(context.Background(), requestBody, nil)
+graphClient.ApplicationsById("application-id").RemoveKey().Post(context.Background(), requestBody, nil)
 
 
 ```

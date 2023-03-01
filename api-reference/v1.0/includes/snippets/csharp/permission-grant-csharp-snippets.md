@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Shares.Item.Permission.MicrosoftGraphGrant.GrantPostRequestBody
+var requestBody = new Microsoft.Graph.Shares.Item.Permission.Grant.GrantPostRequestBody
 {
 	Recipients = new List<DriveRecipient>
 	{
@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Shares.Item.Permission.MicrosoftGraphGrant
 		"read",
 	},
 };
-var result = await graphClient.Shares["sharedDriveItem-id"].Permission.MicrosoftGraphGrant.PostAsync(requestBody);
+var result = await graphClient.Shares["sharedDriveItem-id"].Permission.Grant.PostAsync(requestBody);
 
 
 ```

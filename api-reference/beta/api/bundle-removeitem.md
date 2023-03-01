@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

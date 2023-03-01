@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.MicrosoftGraphCancelMediaProcessing.CancelMediaProcessingPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.CancelMediaProcessing.CancelMediaProcessingPostRequestBody
 {
 	ClientContext = "clientContext-value",
 };
-var result = await graphClient.Communications.Calls["call-id"].MicrosoftGraphCancelMediaProcessing.PostAsync(requestBody);
+var result = await graphClient.Communications.Calls["call-id"].CancelMediaProcessing.PostAsync(requestBody);
 
 
 ```

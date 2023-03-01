@@ -82,7 +82,6 @@ DELETE https://graph.microsoft.com/beta/termStore/sets/{setId}
 
 ---
 
-
 ### Response
 
 <!-- {

@@ -33,7 +33,7 @@ $proposedNewTime->setEnd($proposedNewTimeEnd);
 $requestBody->setProposedNewTime($proposedNewTime);
 
 
-$graphServiceClient->me()->eventsById('event-id')->microsoftGraphDecline()->post($requestBody);
+$graphServiceClient->me()->eventsById('event-id')->decline()->post($requestBody);
 
 
 ```

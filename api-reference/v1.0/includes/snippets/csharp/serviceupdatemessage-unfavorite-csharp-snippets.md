@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MicrosoftGraphUnfavorite.UnfavoritePostRequestBody
+var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.Unfavorite.UnfavoritePostRequestBody
 {
 	MessageIds = new List<string>
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.Microso
 		"MC167983",
 	},
 };
-var result = await graphClient.Admin.ServiceAnnouncement.Messages.MicrosoftGraphUnfavorite.PostAsync(requestBody);
+var result = await graphClient.Admin.ServiceAnnouncement.Messages.Unfavorite.PostAsync(requestBody);
 
 
 ```

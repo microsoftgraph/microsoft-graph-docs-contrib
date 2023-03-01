@@ -53,7 +53,7 @@ $message->setAttachments($attachmentsArray);
 $requestBody->setMessage($message);
 
 
-$graphServiceClient->me()->microsoftGraphSendMail()->post($requestBody);
+$graphServiceClient->me()->sendMail()->post($requestBody);
 
 
 ```

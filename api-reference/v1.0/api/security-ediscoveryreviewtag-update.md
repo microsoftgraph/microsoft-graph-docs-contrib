@@ -97,7 +97,6 @@ PATCH https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-c
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

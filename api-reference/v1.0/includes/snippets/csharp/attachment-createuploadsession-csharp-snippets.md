@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Messages.Item.Attachments.MicrosoftGraphCreateUploadSession.CreateUploadSessionPostRequestBody
+var requestBody = new Microsoft.Graph.Me.Messages.Item.Attachments.CreateUploadSession.CreateUploadSessionPostRequestBody
 {
 	AttachmentItem = new AttachmentItem
 	{
@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Me.Messages.Item.Attachments.MicrosoftGrap
 		Size = 3483322L,
 	},
 };
-var result = await graphClient.Me.Messages["message-id"].Attachments.MicrosoftGraphCreateUploadSession.PostAsync(requestBody);
+var result = await graphClient.Me.Messages["message-id"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->me()->planner()->allById('plannerDelta-id')->get();
+$requestResult = $graphServiceClient->me()->planner()->all()->delta()->get();
 
 
 ```

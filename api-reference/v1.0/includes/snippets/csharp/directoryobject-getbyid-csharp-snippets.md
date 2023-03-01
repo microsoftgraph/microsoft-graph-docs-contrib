@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.DirectoryObjects.MicrosoftGraphGetByIds.GetByIdsPostRequestBody
+var requestBody = new Microsoft.Graph.DirectoryObjects.GetByIds.GetByIdsPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -22,7 +22,7 @@ var requestBody = new Microsoft.Graph.DirectoryObjects.MicrosoftGraphGetByIds.Ge
 		"device",
 	},
 };
-var result = await graphClient.DirectoryObjects.MicrosoftGraphGetByIds.PostAsync(requestBody);
+var result = await graphClient.DirectoryObjects.GetByIds.PostAsync(requestBody);
 
 
 ```

@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/teamwork/devices/d8214fe3-4fe3-d821-e34f-21
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

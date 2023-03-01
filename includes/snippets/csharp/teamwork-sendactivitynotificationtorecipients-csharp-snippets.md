@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Teamwork.MicrosoftGraphSendActivityNotificationToRecipients.SendActivityNotificationToRecipientsPostRequestBody
+var requestBody = new Microsoft.Graph.Teamwork.SendActivityNotificationToRecipients.SendActivityNotificationToRecipientsPostRequestBody
 {
 	Topic = new TeamworkActivityTopic
 	{
@@ -60,7 +60,7 @@ var requestBody = new Microsoft.Graph.Teamwork.MicrosoftGraphSendActivityNotific
 		},
 	},
 };
-await graphClient.Teamwork.MicrosoftGraphSendActivityNotificationToRecipients.PostAsync(requestBody);
+await graphClient.Teamwork.SendActivityNotificationToRecipients.PostAsync(requestBody);
 
 
 ```

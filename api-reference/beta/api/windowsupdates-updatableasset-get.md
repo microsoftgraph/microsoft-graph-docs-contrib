@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7
 
 ---
 
-
 ### Response
 
 <!-- {

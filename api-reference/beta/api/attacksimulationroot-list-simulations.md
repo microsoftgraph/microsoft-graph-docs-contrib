@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

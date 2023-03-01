@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MicrosoftGraphCompleteMigration().Post(context.Background(), nil)
+graphClient.TeamsById("team-id").ChannelsById("channel-id").CompleteMigration().Post(context.Background(), nil)
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setComment('Cancelling for this week due to all hands');
 
 
 
-$graphServiceClient->me()->eventsById('event-id')->microsoftGraphCancel()->post($requestBody);
+$graphServiceClient->me()->eventsById('event-id')->cancel()->post($requestBody);
 
 
 ```

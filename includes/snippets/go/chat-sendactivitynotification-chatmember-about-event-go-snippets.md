@@ -29,7 +29,7 @@ additionalData := map[string]interface{}{
 recipient.SetAdditionalData(additionalData)
 requestBody.SetRecipient(recipient)
 
-graphClient.ChatsById("chat-id").MicrosoftGraphSendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.ChatsById("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

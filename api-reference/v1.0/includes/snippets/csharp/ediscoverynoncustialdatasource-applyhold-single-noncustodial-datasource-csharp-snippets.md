@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].NoncustodialDataSources["ediscoveryNoncustodialDataSource-id"].MicrosoftGraphSecurityApplyHold.PostAsync();
+await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].NoncustodialDataSources["ediscoveryNoncustodialDataSource-id"].SecurityApplyHold.PostAsync();
 
 
 ```

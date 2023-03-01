@@ -93,7 +93,6 @@ POST https://graph.microsoft.com/beta/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 
 ---
 
-
 ### Response
 
 The following is an example of the response. 

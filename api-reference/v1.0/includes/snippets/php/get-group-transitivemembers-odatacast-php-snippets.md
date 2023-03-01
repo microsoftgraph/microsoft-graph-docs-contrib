@@ -22,7 +22,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->microsoftGraphGroup()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->graphGroup()->get($requestConfiguration);
 
 
 ```

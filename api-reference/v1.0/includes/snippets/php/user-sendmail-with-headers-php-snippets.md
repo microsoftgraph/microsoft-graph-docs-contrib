@@ -52,7 +52,7 @@ $message->setInternetMessageHeaders($internetMessageHeadersArray);
 $requestBody->setMessage($message);
 
 
-$graphServiceClient->me()->microsoftGraphSendMail()->post($requestBody);
+$graphServiceClient->me()->sendMail()->post($requestBody);
 
 
 ```

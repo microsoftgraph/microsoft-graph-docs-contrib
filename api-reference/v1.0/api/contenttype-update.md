@@ -132,7 +132,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true} -->

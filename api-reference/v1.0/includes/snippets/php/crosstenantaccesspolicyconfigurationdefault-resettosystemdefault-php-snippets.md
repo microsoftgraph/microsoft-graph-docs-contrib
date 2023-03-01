@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->policies()->crossTenantAccessPolicy()->default()->microsoftGraphResetToSystemDefault()->post();
+$graphServiceClient->policies()->crossTenantAccessPolicy()->default()->resetToSystemDefault()->post();
 
 
 ```

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().EventsById("event-id").MicrosoftGraphDismissReminder().Post(context.Background(), nil)
+graphClient.Me().EventsById("event-id").DismissReminder().Post(context.Background(), nil)
 
 
 ```

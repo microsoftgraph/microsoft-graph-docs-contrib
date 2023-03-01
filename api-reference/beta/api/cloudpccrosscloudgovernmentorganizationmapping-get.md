@@ -90,7 +90,6 @@ X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

@@ -21,7 +21,7 @@ contentId := "my_inline_picture"
 attachmentItem.SetContentId(&contentId) 
 requestBody.SetAttachmentItem(attachmentItem)
 
-result, err := graphClient.Me().MessagesById("message-id").Attachments().MicrosoftGraphCreateUploadSession().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MessagesById("message-id").Attachments().CreateUploadSession().Post(context.Background(), requestBody, nil)
 
 
 ```

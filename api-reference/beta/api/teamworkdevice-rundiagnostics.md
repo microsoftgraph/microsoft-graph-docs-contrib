@@ -89,7 +89,6 @@ POST https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3
 
 ---
 
-
 ### Response
 
 <!-- {

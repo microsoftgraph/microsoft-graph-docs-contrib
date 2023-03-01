@@ -9,9 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new DirectoryObjectRequestBuilderGetRequestConfiguration();
+$requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
 
-$queryParameters = new DirectoryObjectRequestBuilderGetQueryParameters();
+$queryParameters = new GroupRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["deletedDateTime asc"];
 $queryParameters->select = ["id","displayName","deletedDateTime"];
@@ -24,7 +24,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->directory()->deletedItemsById('directoryObject-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->directory()->deletedItems()->graphGroup()->get($requestConfiguration);
 
 
 ```

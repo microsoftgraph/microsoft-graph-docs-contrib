@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/search/qnas/{qnaId}
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

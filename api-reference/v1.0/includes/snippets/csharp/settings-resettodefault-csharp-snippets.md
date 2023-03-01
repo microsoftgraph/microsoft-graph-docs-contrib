@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Settings.MicrosoftGraphSecurityResetToDefault.PostAsync();
+await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Settings.SecurityResetToDefault.PostAsync();
 
 
 ```

@@ -42,7 +42,7 @@ $requestBody->setClientContext('f2fa86af-3c51-4bc2-8fc0-475452d9764f');
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->participants()->microsoftGraphInvite()->post($requestBody);
+$requestResult = $graphServiceClient->communications()->callsById('call-id')->participants()->invite()->post($requestBody);
 
 
 ```

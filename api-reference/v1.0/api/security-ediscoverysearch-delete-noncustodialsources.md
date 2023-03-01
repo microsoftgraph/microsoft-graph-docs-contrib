@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

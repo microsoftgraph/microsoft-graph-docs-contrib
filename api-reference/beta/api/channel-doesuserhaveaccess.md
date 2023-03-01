@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -136,7 +135,6 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -184,7 +182,6 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

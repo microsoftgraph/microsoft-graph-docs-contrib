@@ -80,7 +80,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleSchedules(dire
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -171,7 +171,6 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{
 
 ---
 
-
 ### Response
 
 <!-- {

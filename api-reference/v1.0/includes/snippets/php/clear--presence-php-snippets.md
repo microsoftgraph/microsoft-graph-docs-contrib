@@ -14,7 +14,7 @@ $requestBody->setSessionId('22553876-f5ab-4529-bffb-cfe50aa89f87');
 
 
 
-$graphServiceClient->usersById('user-id')->presence()->microsoftGraphClearPresence()->post($requestBody);
+$graphServiceClient->usersById('user-id')->presence()->clearPresence()->post($requestBody);
 
 
 ```

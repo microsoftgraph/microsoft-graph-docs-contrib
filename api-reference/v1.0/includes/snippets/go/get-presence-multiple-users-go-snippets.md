@@ -15,7 +15,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-result, err := graphClient.Communications().MicrosoftGraphGetPresencesByUserId().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Communications().GetPresencesByUserId().Post(context.Background(), requestBody, nil)
 
 
 ```

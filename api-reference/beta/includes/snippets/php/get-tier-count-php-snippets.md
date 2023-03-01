@@ -9,9 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new DirectoryObjectRequestBuilderGetRequestConfiguration();
+$requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
 
-$queryParameters = new DirectoryObjectRequestBuilderGetQueryParameters();
+$queryParameters = new UserRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["displayName"];
 $queryParameters->search = "\"displayName:tier\"";
@@ -25,7 +25,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembersById('directoryObject-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->graphUser()->get($requestConfiguration);
 
 
 ```

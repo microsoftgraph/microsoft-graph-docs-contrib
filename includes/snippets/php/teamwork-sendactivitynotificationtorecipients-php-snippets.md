@@ -72,7 +72,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->teamwork()->microsoftGraphSendActivityNotificationToRecipients()->post($requestBody);
+$graphServiceClient->teamwork()->sendActivityNotificationToRecipients()->post($requestBody);
 
 
 ```

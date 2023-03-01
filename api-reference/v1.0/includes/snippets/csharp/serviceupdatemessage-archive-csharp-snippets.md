@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MicrosoftGraphArchive.ArchivePostRequestBody
+var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.Archive.ArchivePostRequestBody
 {
 	MessageIds = new List<string>
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.Microso
 		"MC167983",
 	},
 };
-var result = await graphClient.Admin.ServiceAnnouncement.Messages.MicrosoftGraphArchive.PostAsync(requestBody);
+var result = await graphClient.Admin.ServiceAnnouncement.Messages.Archive.PostAsync(requestBody);
 
 
 ```

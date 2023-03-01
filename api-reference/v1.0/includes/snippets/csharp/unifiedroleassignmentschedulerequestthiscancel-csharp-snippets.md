@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests["unifiedRoleAssignmentScheduleRequest-id"].MicrosoftGraphCancel.PostAsync();
+await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests["unifiedRoleAssignmentScheduleRequest-id"].Cancel.PostAsync();
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setMessageIds(['MC172851', 'MC167983', ]);
 
 
 
-$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->messages()->microsoftGraphUnfavorite()->post($requestBody);
+$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->messages()->unfavorite()->post($requestBody);
 
 
 ```

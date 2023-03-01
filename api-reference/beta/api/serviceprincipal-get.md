@@ -309,7 +309,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecuri
 
 ---
 
-
 #### Response
 
 <!-- {

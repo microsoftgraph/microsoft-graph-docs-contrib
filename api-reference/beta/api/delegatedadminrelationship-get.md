@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelations
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

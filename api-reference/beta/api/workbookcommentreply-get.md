@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/rep
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

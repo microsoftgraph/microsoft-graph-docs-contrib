@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 ---
 
-
 ### Response
 
 The following is an example of the response showing an instance of a roleEligibilitySchedule that is through a group assignment.

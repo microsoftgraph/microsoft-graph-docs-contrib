@@ -20,7 +20,7 @@ $requestBody->setExpirationDuration(new \DateInterval('PT1H'));
 
 
 
-$graphServiceClient->usersById('user-id')->presence()->microsoftGraphSetPresence()->post($requestBody);
+$graphServiceClient->usersById('user-id')->presence()->setPresence()->post($requestBody);
 
 
 ```

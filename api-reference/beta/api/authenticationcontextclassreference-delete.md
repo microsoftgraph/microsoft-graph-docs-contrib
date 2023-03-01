@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticatio
 
 ---
 
-
 ### Response
 The following is an example of the response
 <!-- {

@@ -64,6 +64,10 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationTrainingUserCoverage
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/securityreportsrootthisgetattacksimulationtrainingusercoverage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securityreportsrootthisgetattacksimulationtrainingusercoverage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -72,8 +76,15 @@ GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationTrainin
 [!INCLUDE [sample-code](../includes/snippets/java/securityreportsrootthisgetattacksimulationtrainingusercoverage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securityreportsrootthisgetattacksimulationtrainingusercoverage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/securityreportsrootthisgetattacksimulationtrainingusercoverage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following is an example of the response.

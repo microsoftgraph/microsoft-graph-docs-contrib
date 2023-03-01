@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XW
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

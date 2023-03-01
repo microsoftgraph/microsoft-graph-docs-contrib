@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here has been shortened for readability.
 <!-- {

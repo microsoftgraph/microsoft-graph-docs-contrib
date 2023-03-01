@@ -16,7 +16,7 @@ $requestBody->setMailTipsOptions(new MailTipsType('automaticreplies, mailboxfull
 
 
 
-$requestResult = $graphServiceClient->me()->microsoftGraphGetMailTips()->post($requestBody);
+$requestResult = $graphServiceClient->me()->getMailTips()->post($requestBody);
 
 
 ```

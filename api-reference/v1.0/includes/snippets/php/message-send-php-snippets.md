@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->messagesById('message-id')->microsoftGraphSend()->post();
+$graphServiceClient->me()->messagesById('message-id')->send()->post();
 
 
 ```

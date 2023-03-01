@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Communications.Calls.MicrosoftGraphLogTeleconferenceDeviceQuality.LogTeleconferenceDeviceQualityPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.LogTeleconferenceDeviceQuality.LogTeleconferenceDeviceQualityPostRequestBody
 {
 	Quality = new TeleconferenceDeviceQuality
 	{
@@ -96,7 +96,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.MicrosoftGraphLogTele
 		},
 	},
 };
-await graphClient.Communications.Calls.MicrosoftGraphLogTeleconferenceDeviceQuality.PostAsync(requestBody);
+await graphClient.Communications.Calls.LogTeleconferenceDeviceQuality.PostAsync(requestBody);
 
 
 ```

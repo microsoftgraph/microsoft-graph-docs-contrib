@@ -40,7 +40,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.TeamsById("team-id").MicrosoftGraphSendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.TeamsById("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -30,7 +30,7 @@ additionalData := map[string]interface{}{
 recipient.SetAdditionalData(additionalData)
 requestBody.SetRecipient(recipient)
 
-graphClient.TeamsById("team-id").MicrosoftGraphSendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.TeamsById("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->groupsById('group-id')->microsoftGraphRemoveFavorite()->post();
+$graphServiceClient->groupsById('group-id')->removeFavorite()->post();
 
 
 ```

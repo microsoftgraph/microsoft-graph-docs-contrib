@@ -75,7 +75,6 @@ GET https://graph.microsoft.com/beta/me/tasks/lists
 
 ---
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

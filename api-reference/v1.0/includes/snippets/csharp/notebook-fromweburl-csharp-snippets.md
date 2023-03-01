@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Me.Onenote.Notebooks.MicrosoftGraphGetNotebookFromWebUrl.GetNotebookFromWebUrlPostRequestBody
+var requestBody = new Microsoft.Graph.Me.Onenote.Notebooks.GetNotebookFromWebUrl.GetNotebookFromWebUrlPostRequestBody
 {
 	WebUrl = "webUrl value",
 };
-var result = await graphClient.Me.Onenote.Notebooks.MicrosoftGraphGetNotebookFromWebUrl.PostAsync(requestBody);
+var result = await graphClient.Me.Onenote.Notebooks.GetNotebookFromWebUrl.PostAsync(requestBody);
 
 
 ```

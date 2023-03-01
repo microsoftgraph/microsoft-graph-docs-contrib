@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Admin.ServiceAnnouncement.Issues["serviceHealthIssue-id"].MicrosoftGraphIncidentReport.GetAsync();
+await graphClient.Admin.ServiceAnnouncement.Issues["serviceHealthIssue-id"].IncidentReport.GetAsync();
 
 
 ```
