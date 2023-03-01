@@ -3,20 +3,32 @@
     {
       "ChangeList": [
         {
-          "Id": "92cd3f93-acde-444e-bc37-bf8edf681d97",
-          "ApiChange": "Property",
-          "ChangedApiName": "employeeLeaveDateTime",
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Synchronization.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the `employeeLeaveDateTime` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
-          "Target": "user"
+          "Description": "Added the `Synchronization.ReadWrite.All` application and delegated permissions to configure [synchronization settings](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta).",
+          "Target": "synchronization"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Synchronization.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `Synchronization.Read.All` application and delegated permissions to read [synchronization settings](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta).",
+          "Target": "synchronization"
         }
       ],
-      "Id": "92cd3f93-acde-444e-bc37-bf8edf681d97",
+      "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-01-05T01:35:50Z",
-      "WorkloadArea": "Users",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-28T00:00:00.0123959Z",
+      "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7b4dd650-8f30-470e-a850-93b0f21fd48a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "onPremisesDirectorySynchronizationDeletionPreventionType",
