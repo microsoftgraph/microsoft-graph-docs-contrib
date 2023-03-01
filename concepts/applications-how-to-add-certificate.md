@@ -6,7 +6,7 @@ ms.reviewer: saurabh.madan
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
-ms.date: 01/24/2022
+ms.date: 01/24/2023
 ---
 
 # Add a certificate to an app using Microsoft Graph
@@ -28,7 +28,7 @@ To complete this tutorial, you need the following resources and privileges:
 > [!CAUTION]
 > The use of certificates is highly recommended over secrets; however, we don't recommend using self-signed certificates. They can reduce the security bar of your application due to various factors like use of an outdated hash and cipher suites or lack of validation. We recommend procuring certificates from a well known trusted certificate authority.
 
-## Read the certificate details
+## Step 1: Read the certificate details
 
 To add a certificate programmatically using Microsoft Graph, you need the certificate's key. You can optionally add the certificate's thumbprint.
 
@@ -72,7 +72,7 @@ The output that's saved in the *.txt* file can be similar to the following.
 MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMjAeFw0yMzAxMTIwODExNTZaFw0yNDAxMTIwODMxNTZaMBMxETAPBgNVBAMMCDIwMjMwMTEyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseKf1weEacJ67D6/...dG+7WMIBsIUy0xz6MmyvfSohz3oNP4jHt7pJ9TyxnvDlaxQPUbuIL+DaXVkKRm1V3GgIpKTBqMzTf4tCpy7rpUZbhcwAFw6h9A==
 ```
 
-## Add the certificate details using Microsoft Graph
+## Step 2: Add the certificate details using Microsoft Graph
 
 ### Request
 
@@ -91,6 +91,8 @@ The following example adds a new certificate and replaces any existing certifica
 
 > **Note:** The key shown here has been shortened for readability.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "applications_howto_add_certificate"
@@ -113,13 +115,42 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/applications-howto-add-certificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/applications-howto-add-certificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/applications-howto-add-certificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/applications-howto-add-certificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/applications-howto-add-certificate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/applications-howto-add-certificate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 The following example adds a new certificate without replacing the existing certificate that's identified by thumbprint `52ED9B5038A47B9E2E2190715CC238359D4F8F73`.
 
 > **Note:** The key shown here has been shortened for readability.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "applications_howto_add_certificate"
+  "name": "applications_howto_append_certificate"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/bb77f42f-dacb-4ece-b3e6-285e63c24d52
@@ -146,13 +177,40 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/applications-howto-append-certificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/applications-howto-append-certificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/applications-howto-append-certificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/applications-howto-append-certificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/applications-howto-append-certificate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/applications-howto-append-certificate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 ### Response
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-## Test app-only authentication
+## Step 3: Test app-only authentication
 
 You can test the app-only authentication using Microsoft Graph PowerShell, as shown in the following example.
 

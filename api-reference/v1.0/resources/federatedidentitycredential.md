@@ -55,12 +55,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.federatedIdentityCredential",
-  "name": "String",
-  "issuer": "String",
-  "subject": "String",
-  "description": "String",
   "audiences": [
     "String"
-  ]
+  ],
+  "description": "String",
+  "issuer": "String",
+  "name": "String",
+  "subject": "String"
 }
 ```

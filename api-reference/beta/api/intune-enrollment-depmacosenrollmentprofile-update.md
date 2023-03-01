@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. [See here](/mem/intune/enrollment/windows-enrollment-methods) for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -84,19 +84,11 @@ The following table shows the properties that are required when you create the [
 |chooseYourLockScreenDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 |accessibilityScreenDisabled|Boolean|Indicates if Accessibility screen is disabled|
 |autoUnlockWithWatchDisabled|Boolean|Indicates if UnlockWithWatch screen is disabled|
+|skipPrimarySetupAccountCreation|Boolean|Indicates whether Setup Assistant will skip the user interface for primary account setup|
+|setPrimarySetupAccountAsRegularUser|Boolean|Indicates whether Setup Assistant will set the account as a regular user|
 |dontAutoPopulatePrimaryAccountInfo|Boolean|Indicates whether Setup Assistant will auto populate the primary account information|
-|lockPrimaryAccountInfo|Boolean|Indicates whether the primary account information will be locked|
-|managedLocalUserShortName|Boolean|Indicates whether or not this is the short name of the local account to manage|
 |primaryAccountFullName|String|Indicates what the full name for the primary account is|
 |primaryAccountUserName|String|Indicates what the account name for the primary account is|
-|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
-|setPrimarySetupAccountAsRegularUser|Boolean|Indicates whether Setup Assistant will set the account as a regular user|
-|skipPrimarySetupAccountCreation|Boolean|Indicates whether Setup Assistant will skip the user interface for primary account setup|
-|isLocalPrimaryAccount|Boolean|Indicates whether the profile is a local account|
-|isPrimaryUser|Boolean|Indicates whether the profile is a primary user|
-|primaryUser|String|Indicates who the primary user of the profile is|
-|primaryUserFullName|String|Indicates who the primary user of the profile is|
-|prefillAccountInfo|Boolean|Indicates whether the user will prefill their account info|
 |enableRestrictEditing|Boolean|Indicates whether the user will enable blockediting|
 
 
@@ -111,7 +103,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 2005
+Content-length: 1702
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -152,19 +144,11 @@ Content-length: 2005
   "chooseYourLockScreenDisabled": true,
   "accessibilityScreenDisabled": true,
   "autoUnlockWithWatchDisabled": true,
+  "skipPrimarySetupAccountCreation": true,
+  "setPrimarySetupAccountAsRegularUser": true,
   "dontAutoPopulatePrimaryAccountInfo": true,
-  "lockPrimaryAccountInfo": true,
-  "managedLocalUserShortName": true,
   "primaryAccountFullName": "Primary Account Full Name value",
   "primaryAccountUserName": "Primary Account User Name value",
-  "requestRequiresNetworkTether": true,
-  "setPrimarySetupAccountAsRegularUser": true,
-  "skipPrimarySetupAccountCreation": true,
-  "isLocalPrimaryAccount": true,
-  "isPrimaryUser": true,
-  "primaryUser": "Primary User value",
-  "primaryUserFullName": "Primary User Full Name value",
-  "prefillAccountInfo": true,
   "enableRestrictEditing": true
 }
 ```
@@ -174,7 +158,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2054
+Content-Length: 1751
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -216,19 +200,11 @@ Content-Length: 2054
   "chooseYourLockScreenDisabled": true,
   "accessibilityScreenDisabled": true,
   "autoUnlockWithWatchDisabled": true,
+  "skipPrimarySetupAccountCreation": true,
+  "setPrimarySetupAccountAsRegularUser": true,
   "dontAutoPopulatePrimaryAccountInfo": true,
-  "lockPrimaryAccountInfo": true,
-  "managedLocalUserShortName": true,
   "primaryAccountFullName": "Primary Account Full Name value",
   "primaryAccountUserName": "Primary Account User Name value",
-  "requestRequiresNetworkTether": true,
-  "setPrimarySetupAccountAsRegularUser": true,
-  "skipPrimarySetupAccountCreation": true,
-  "isLocalPrimaryAccount": true,
-  "isPrimaryUser": true,
-  "primaryUser": "Primary User value",
-  "primaryUserFullName": "Primary User Full Name value",
-  "prefillAccountInfo": true,
   "enableRestrictEditing": true
 }
 ```

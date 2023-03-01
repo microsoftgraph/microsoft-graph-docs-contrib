@@ -134,11 +134,6 @@ Content-Type: application/json
 
 ---
 
-
-
----
-
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -538,7 +533,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -551,3 +545,8 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+## See also
+
+- [Activity feed notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)
+- [Activity feed notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)

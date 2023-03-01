@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "assignSensitivityLabel",
           "ChangeType": "Addition",
-          "Description": "Added the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) method to the driveItem resource.",
           "Target": "driveItem"
         }
       ],
@@ -909,7 +909,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](https://learn.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
+          "Description": "Added the **expirationDateTime** property to the driveItem_invite DateTimeOffset type.",
           "Target": "driveItem_invite"
         },
         {
@@ -917,7 +917,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
-          "Description": "Added the **password** property to the [driveItem_invite](https://learn.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
+          "Description": "Added the **password** property to the driveItem_invite string type.",
           "Target": "driveItem_invite"
         }
       ],
@@ -953,7 +953,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](https://learn.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
+          "Description": "Added the **expirationDateTime** property to the driveItem_invite DateTimeOffset type.",
           "Target": "driveItem_invite"
         },
         {
@@ -961,7 +961,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
-          "Description": "Added the **password** property to the [driveItem_invite](https://learn.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
+          "Description": "Added the **password** property to the driveItem_invite string type.",
           "Target": "driveItem_invite"
         }
       ],
@@ -2342,7 +2342,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "addCopy",
           "ChangeType": "Addition",
-          "Description": "Added the [addCopy](https://learn.microsoft.com/en-us/graph/api/addCopy?view=graph-rest-1.0) method to the [addCopy](https://learn.microsoft.com/en-us/graph/api/addCopy?view=graph-rest-1.0) resource.",
+          "Description": "Added the addCopy method to the addCopy resource.",
           "Target": "addCopy"
         },
         {
@@ -2350,7 +2350,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "associateWithHubSites",
           "ChangeType": "Addition",
-          "Description": "Added the [associateWithHubSites](https://learn.microsoft.com/en-us/graph/api/associateWithHubSites?view=graph-rest-1.0) method to the [associateWithHubSites](https://learn.microsoft.com/en-us/graph/api/associateWithHubSites?view=graph-rest-1.0) resource.",
+          "Description": "Added the associateWithHubSites method to the associateWithHubSites resource.",
           "Target": "associateWithHubSites"
         },
         {
@@ -2358,7 +2358,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "copyToDefaultContentLocation",
           "ChangeType": "Addition",
-          "Description": "Added the [copyToDefaultContentLocation](https://learn.microsoft.com/en-us/graph/api/copyToDefaultContentLocation?view=graph-rest-1.0) method to the [copyToDefaultContentLocation](https://learn.microsoft.com/en-us/graph/api/copyToDefaultContentLocation?view=graph-rest-1.0) resource.",
+          "Description": "Added the copyToDefaultContentLocation method to the copyToDefaultContentLocation resource.",
           "Target": "copyToDefaultContentLocation"
         },
         {
@@ -2366,7 +2366,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "publish",
           "ChangeType": "Addition",
-          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) method to the [publish](https://learn.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) resource.",
+          "Description": "Added the publish method to the publish resource.",
           "Target": "publish"
         },
         {
@@ -2374,7 +2374,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unpublish",
           "ChangeType": "Addition",
-          "Description": "Added the [unpublish](https://learn.microsoft.com/en-us/graph/api/unpublish?view=graph-rest-1.0) method to the [unpublish](https://learn.microsoft.com/en-us/graph/api/unpublish?view=graph-rest-1.0) resource.",
+          "Description": "Added the unpublish method to the unpublish resource.",
           "Target": "unpublish"
         },
         {
@@ -2382,7 +2382,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getApplicableContentTypesForList",
           "ChangeType": "Addition",
-          "Description": "Added the [getApplicableContentTypesForList](https://learn.microsoft.com/en-us/graph/api/getApplicableContentTypesForList?view=graph-rest-1.0) method to the [getApplicableContentTypesForList](https://learn.microsoft.com/en-us/graph/api/getApplicableContentTypesForList?view=graph-rest-1.0) resource.",
+          "Description": "Added the getApplicableContentTypesForList method to the getApplicableContentTypesForList resource.",
           "Target": "getApplicableContentTypesForList"
         },
         {
@@ -2390,7 +2390,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "isPublished",
           "ChangeType": "Addition",
-          "Description": "Added the [isPublished](https://learn.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) method to the [isPublished](https://learn.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) resource.",
+          "Description": "Added the isPublished method to the isPublished resource.",
           "Target": "isPublished"
         }
       ],
@@ -2690,7 +2690,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "addCopyFromContentTypeHub",
           "ChangeType": "Addition",
-          "Description": "Added the [addCopyFromContentTypeHub](https://learn.microsoft.com/en-us/graph/api/addCopyFromContentTypeHub?view=graph-rest-1.0) method to the [contentType](https://learn.microsoft.com/en-us/graph/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the addCopyFromContentTypeHub method to the contentType resource.",
           "Target": "contentType"
         },
         {
@@ -2698,7 +2698,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getCompatibleHubContentTypes",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompatibleHubContentTypes](https://learn.microsoft.com/en-us/graph/api/getCompatibleHubContentTypes?view=graph-rest-1.0) method to the [contentType](https://learn.microsoft.com/en-us/graph/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the getCompatibleHubContentTypes method to the contentType resource.",
           "Target": "contentType"
         }
       ],
@@ -2998,7 +2998,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPositionOfWebPart",
           "ChangeType": "Addition",
-          "Description": "Added the [getPositionOfWebPart](https://learn.microsoft.com/en-us/graph/api/webPart?view=graph-rest-beta) method to the [webPart](https://docs.microsoft.com/en-us/graph/api/webPart?view=graph-rest-beta) resource.",
+          "Description": "Added the getPositionOfWebPart method to the webPart resource.",
           "Target": "webPart"
         },
         {
@@ -3006,7 +3006,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getWebPartsByPosition",
           "ChangeType": "Addition",
-          "Description": "Added the [getWebPartsByPosition](https://learn.microsoft.com/en-us/graph/api/sitePage?view=graph-rest-beta) method to the [sitePage](https://docs.microsoft.com/en-us/graph/api/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the getWebPartsByPosition method to the sitePage resource.",
           "Target": "sitePage"
         }
       ],
