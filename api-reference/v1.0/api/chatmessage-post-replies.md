@@ -155,7 +155,8 @@ Content-type: application/json
     },
     "attachments": [],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -259,9 +260,10 @@ HTTP/1.1 200 OK
       "contentType":"html",
       "content":"Hello World"
    },
-   "attachments":[ ],
-   "mentions":[ ],
-   "reactions":[ ]
+   "attachments":[],
+   "mentions":[],
+   "reactions":[],
+   "messageHistory": []
 }
 ```
 
