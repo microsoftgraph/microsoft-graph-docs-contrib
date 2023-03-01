@@ -1,5 +1,5 @@
 ---
-title: "List taskProcessingResults (for a userProcessingResult)"
+title: "List taskProcessingResults"
 description: "Get the taskProcessingResult resources from the taskProcessingResults object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List taskProcessingResults (for a userProcessingResult)
+# List taskProcessingResults
 
 Namespace: microsoft.graph.identityGovernance
 
