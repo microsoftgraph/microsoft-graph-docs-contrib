@@ -40,9 +40,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.entitlementManagementSettings",
-  "id": "String",
+  "durationUntilExternalUserDeletedAfterBlocked": "String (duration)",
   "externalUserLifecycleAction": "String",
-  "durationUntilExternalUserDeletedAfterBlocked": "String (duration)"
+  "id": "String"
 }
 ```
 

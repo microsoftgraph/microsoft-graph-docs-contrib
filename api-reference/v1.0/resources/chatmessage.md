@@ -110,30 +110,30 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
-  "etag": "string",
-  "messageType": "string",
-  "createdDateTime": "string (timestamp)",
-  "lastModifiedDateTime": "string (timestamp)",
-  "lastEditedDateTime": "string (timestamp)",
-  "deletedDateTime": "string (timestamp)",
-  "subject": "string",
-  "body": {"@odata.type": "microsoft.graph.itemBody"},
-  "summary": "string",
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
-  "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
-  "importance": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
-  "locale": "string",
-  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
-  "chatId": "string",
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string",
+  "chatId": "string",
+  "createdDateTime": "string (timestamp)",
+  "deletedDateTime": "string (timestamp)",
+  "etag": "string",
   "eventDetail": {
     "@odata.type": "microsoft.graph.eventMessageDetail"
-  }
+  },
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
+  "id": "string (identifier)",
+  "importance": "string",
+  "lastEditedDateTime": "string (timestamp)",
+  "lastModifiedDateTime": "string (timestamp)",
+  "locale": "string",
+  "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
+  "messageType": "string",
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
+  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "replyToId": "string (identifier)",
+  "subject": "string",
+  "summary": "string",
+  "webUrl": "string"
 }
 ```
 

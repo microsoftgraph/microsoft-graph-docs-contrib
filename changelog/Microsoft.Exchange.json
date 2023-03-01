@@ -67,7 +67,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "encryptedContent",
           "ChangeType": "Change",
-          "Description": "For subscriptions to changes in Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources that include resource data, the **encryptedContent** property of [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changemotification?view=graph-rest-beta) contains the encrypted data of the changed resource and related information to decrypt it.",
+          "Description": "For subscriptions to changes in Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources that include resource data, the **encryptedContent** property of changeNotification contains the encrypted data of the changed resource and related information to decrypt it.",
           "Target": "subscription"
         },
         {
@@ -75,7 +75,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resourceData",
           "ChangeType": "Change",
-          "Description": "For subscriptions to changes in Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources that include resource data, the **resourceData** property of [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changemotification?view=graph-rest-beta) identifies the changed resource.",
+          "Description": "For subscriptions to changes in Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources that include resource data, the **resourceData** property of changeNotification identifies the changed resource.",
           "Target": "subscription"
         }
       ],
@@ -235,7 +235,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isDefaultCalendar",
           "ChangeType": "Addition",
-          "Description": "Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Description": "Added the **isDefaultCalendar** property to the calendar entity.",
           "Target": "Calendar"
         }
       ],
@@ -597,7 +597,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "update a room or roomlist",
           "ChangeType": "Addition",
-          "Description": "Added the ability to [update a room or roomlist](https://learn.microsoft.com/en-us/graph/api/resources/place-get?view=graph-rest-beta).",
+          "Description": "Added the ability to update a room or roomlist.",
           "Target": "update a room or roomlist"
         }
       ],
@@ -703,7 +703,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "get the MIME content of a message",
           "ChangeType": "Addition",
-          "Description": "Added the capability to [get the MIME content of a message](outlook-get-mime-message.md).",
+          "Description": "Added the capability to get the MIME content of a message.",
           "Target": "get the MIME content of a message"
         }
       ],
@@ -745,7 +745,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permissions for the places API",
           "ChangeType": "Addition",
-          "Description": "Added delegated and application [permissions for the places API](permissions-reference.md#places-permissions): Place.Read.All",
+          "Description": "Added delegated and application permissions for the places API: Place.Read.All",
           "Target": "permissions for the places API"
         }
       ],
@@ -799,7 +799,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Scoping application permissions to specific Exchange Online mailboxes",
           "ChangeType": "Addition",
-          "Description": "Added the capability for administrators to limit app access to only specific mailboxes, even when an app has been granted application permissions to mail, mailbox settings, calendars, or contacts. For more details, see [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md).",
+          "Description": "Added the capability for administrators to limit app access to only specific mailboxes, even when an app has been granted application permissions to mail, mailbox settings, calendars, or contacts.",
           "Target": "Scoping application permissions to specific Exchange Online mailboxes"
         }
       ],
@@ -843,7 +843,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "get the MIME content of a message",
           "ChangeType": "Addition",
-          "Description": "Added the capability to [get the MIME content of a message](outlook-get-mime-message.md).",
+          "Description": "Added the capability to get the MIME content of a message.",
           "Target": "get the MIME content of a message"
         },
         {
@@ -869,7 +869,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "findMeetingTimes,February 2019",
           "ChangeType": "Change",
-          "Description": "Rolled back the type changes related to [findMeetingTimes](https://learn.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta) documented in [February 2019](#february-2019). The specific changes are listed in the following rows.",
+          "Description": "Rolled back the type changes related to [findMeetingTimes](https://learn.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta). The specific changes are listed in the following rows.",
           "Target": "findMeetingTimes,February 2019"
         },
         {
@@ -943,7 +943,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time",
           "ChangeType": "Addition",
-          "Description": "Added the [getSchedule](https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](https://learn.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](https://learn.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](https://learn.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md).",
+          "Description": "Added the [getSchedule](https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](https://learn.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](https://learn.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](https://learn.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support getting the free/busy, availability information for users, distribution lists, and resources for a given period of time.",
           "Target": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time"
         }
       ],
@@ -961,7 +961,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "attendees,attendeeBase,locationConstraint,locationConstraint,timeConstraint,timeConstraint",
           "ChangeType": "Change",
-          "Description": "Changed the data type of the following parameters of [findMeetingTimes](https://learn.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta): \u003Cbr\u003E**attendees**: from **attendeeBase** to [attendeeDataModel](https://learn.microsoft.com/en-us/graph/api/resources/attendeedatamodel?view=graph-rest-beta) \u003Cbr\u003E**locationConstraint**: from **locationConstraint** to [locationConstraints](https://learn.microsoft.com/en-us/graph/api/resources/locationconstraints?view=graph-rest-beta) \u003Cbr\u003E **timeConstraint**: from **timeConstraint** to [findMeetingTimesTimeConstraints](https://learn.microsoft.com/en-us/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta)",
+          "Description": "Changed the data type of the following parameters of [findMeetingTimes](https://learn.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta): \u003Cbr\u003E**attendees**: from **attendeeBase** to attendeeDataModel \u003Cbr\u003E**locationConstraint**: from **locationConstraint** to locationConstraints \u003Cbr\u003E **timeConstraint**: from **timeConstraint** to findMeetingTimesTimeConstraints",
           "Target": "findMeetingTimes,attendeeDataModel,locationConstraints,findMeetingTimesTimeConstraints"
         },
         {
@@ -969,7 +969,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "findMeetingTimes,meetingTimeSuggestionsResult",
           "ChangeType": "Change",
-          "Description": "Changed the return type of **findMeetingTimes** from **meetingTimeSuggestionsResult** to [findMeetingTimesResponse](https://learn.microsoft.com/en-us/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta)",
+          "Description": "Changed the return type of **findMeetingTimes** from **meetingTimeSuggestionsResult** to findMeetingTimesResponse",
           "Target": "findMeetingTimesResponse"
         },
         {
@@ -985,7 +985,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "locationConstraintItem,location,locationDataModel",
           "ChangeType": "Change",
-          "Description": "Changed the base type of [locationConstraintItem](https://learn.microsoft.com/en-us/graph/api/resources/locationconstraintitem?view=graph-rest-beta) from [location](https://learn.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) to [locationDataModel](https://learn.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta)",
+          "Description": "Changed the base type of [locationConstraintItem](https://learn.microsoft.com/en-us/graph/api/resources/locationconstraintitem?view=graph-rest-beta) from [location](https://learn.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) to locationDataModel",
           "Target": "locationConstraintItem,location,locationDataModel"
         },
         {
@@ -993,7 +993,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "attendeeAvailability,attendeeAvailability,locations,meetingTimeSlot,organizerAvailability,freeBusyStatus,availabilityStatus",
           "ChangeType": "Change",
-          "Description": "Changed the data types of the following properties of [meetingTimeSuggestion](https://learn.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): \u003Cbr\u003E **attendeeAvailability**: from collection of **attendeeAvailability** to collection of [attendeeAvailabilityDataModel](https://learn.microsoft.com/en-us/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) \u003Cbr\u003E **locations**: from collection of [location](https://learn.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) to collection of [locationDataModel](https://learn.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta) \u003Cbr\u003E **meetingTimeSlot**: from [timeSlot](https://learn.microsoft.com/en-us/graph/api/resources/timeslot?view=graph-rest-beta) to [meetingTimeSlotDataModel](https://learn.microsoft.com/en-us/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) \u003Cbr\u003E **organizerAvailability**: from **freeBusyStatus** to **availabilityStatus**",
+          "Description": "Changed the data types of the following properties of [meetingTimeSuggestion](https://learn.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): \u003Cbr\u003E **attendeeAvailability**: from collection of **attendeeAvailability** to collection of attendeeAvailabilityDataModel \u003Cbr\u003E **locations**: from collection of [location](https://learn.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) to collection of locationDataModel \u003Cbr\u003E **meetingTimeSlot**: from [timeSlot](https://learn.microsoft.com/en-us/graph/api/resources/timeslot?view=graph-rest-beta) to meetingTimeSlotDataModel \u003Cbr\u003E **organizerAvailability**: from **freeBusyStatus** to **availabilityStatus**",
           "Target": "meetingTimeSuggestion,attendeeAvailabilityDataModel,location,locationDataModel,timeSlot,meetingTimeSlotDataModel"
         },
         {
@@ -1001,7 +1001,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attendeeAvailabilityDataModel,attendeeDataModel,findMeetingTimesResponse,findMeetingTimesTimeConstraints,locationConstraints,locationDataModel,meetingTimeSlotDataModel,postalAddress,searchWindowTimeSlot",
           "ChangeType": "Addition",
-          "Description": "New complex types: \u003Cbr\u003E [attendeeAvailabilityDataModel](https://learn.microsoft.com/en-us/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) \u003Cbr\u003E [attendeeDataModel](https://learn.microsoft.com/en-us/graph/api/resources/attendeedatamodel?view=graph-rest-beta) \u003Cbr\u003E [findMeetingTimesResponse](https://learn.microsoft.com/en-us/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) \u003Cbr\u003E [findMeetingTimesTimeConstraints](https://learn.microsoft.com/en-us/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) \u003Cbr\u003E [locationConstraints](https://learn.microsoft.com/en-us/graph/api/resources/locationconstraints?view=graph-rest-beta) \u003Cbr\u003E [locationDataModel](https://learn.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta) \u003Cbr\u003E [meetingTimeSlotDataModel](https://learn.microsoft.com/en-us/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) \u003Cbr\u003E [postalAddress](https://learn.microsoft.com/en-us/graph/api/resources/postaladdress?view=graph-rest-beta) \u003Cbr\u003E [searchWindowTimeSlot](https://learn.microsoft.com/en-us/graph/api/resources/searchwindowtimeslot?view=graph-rest-beta)",
+          "Description": "New complex types: \u003Cbr\u003E attendeeAvailabilityDataModel \u003Cbr\u003E attendeeDataModel \u003Cbr\u003E findMeetingTimesResponse \u003Cbr\u003E findMeetingTimesTimeConstraints \u003Cbr\u003E locationConstraints \u003Cbr\u003E locationDataModel \u003Cbr\u003E meetingTimeSlotDataModel \u003Cbr\u003E postalAddress \u003Cbr\u003E searchWindowTimeSlot",
           "Target": "attendeeAvailabilityDataModel,attendeeDataModel,findMeetingTimesResponse,findMeetingTimesTimeConstraints,locationConstraints,locationDataModel,meetingTimeSlotDataModel,postalAddress,searchWindowTimeSlot"
         },
         {
@@ -1061,7 +1061,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time",
           "ChangeType": "Addition",
-          "Description": "Added the [getSchedule](https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-beta) action, and the [freeBusyError](https://learn.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-beta), [scheduleInformation](https://learn.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-beta), and [scheduleItem](https://learn.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-beta) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md).",
+          "Description": "Added the [getSchedule](https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-beta) action, and the [freeBusyError](https://learn.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-beta), [scheduleInformation](https://learn.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-beta), and [scheduleItem](https://learn.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-beta) complex types to support getting the free/busy, availability information for users, distribution lists, and resources for a given period of time.",
           "Target": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time"
         }
       ],
@@ -1933,6 +1933,128 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2015-12-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [Get calendar](https://learn.microsoft.com/en-us/graph/api/calendar-get?view=graph-rest-beta) method of the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [calendar: getSchedule](https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-beta) method of the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarView](https://learn.microsoft.com/en-us/graph/api/calendar-list-calendarview?view=graph-rest-beta) method of the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List events](https://learn.microsoft.com/en-us/graph/api/calendar-list-events?view=graph-rest-beta) method of the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [Get calendarGroup](https://learn.microsoft.com/en-us/graph/api/calendargroup-get?view=graph-rest-beta) method of the [calendarGroup](https://learn.microsoft.com/en-us/graph/api/resources/calendargroup?view=graph-rest-beta) resource.",
+          "Target": "calendarGroup"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendars](https://learn.microsoft.com/en-us/graph/api/calendargroup-list-calendars?view=graph-rest-beta) method of the [calendarGroup](https://learn.microsoft.com/en-us/graph/api/resources/calendargroup?view=graph-rest-beta) resource.",
+          "Target": "calendarGroup"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [event: delta](https://learn.microsoft.com/en-us/graph/api/event-delta?view=graph-rest-beta) method of the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [Get event](https://learn.microsoft.com/en-us/graph/api/event-get?view=graph-rest-beta) method of the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List instances](https://learn.microsoft.com/en-us/graph/api/event-list-instances?view=graph-rest-beta) method of the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarGroups](https://learn.microsoft.com/en-us/graph/api/user-list-calendargroups?view=graph-rest-beta) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendars](https://learn.microsoft.com/en-us/graph/api/user-list-calendars?view=graph-rest-beta) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarView](https://learn.microsoft.com/en-us/graph/api/user-list-calendarview?view=graph-rest-beta) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List events](https://learn.microsoft.com/en-us/graph/api/user-list-events?view=graph-rest-beta) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [user: reminderView](https://learn.microsoft.com/en-us/graph/api/user-reminderview?view=graph-rest-beta) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-28T00:00:00.000Z",
       "WorkloadArea": "Calendar",
       "SubArea": ""
     }

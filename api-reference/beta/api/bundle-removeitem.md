@@ -53,26 +53,11 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
 
 ```http
 DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item-id}
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/remove-from-bundle-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/remove-from-bundle-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-from-bundle-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response

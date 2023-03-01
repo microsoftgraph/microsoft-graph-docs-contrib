@@ -121,7 +121,7 @@ This resource supports:
 | assignedLicenses              | [assignedLicense](assignedlicense.md) collection                         | The licenses that are assigned to the group. <br><br>Returned only on `$select`. Supports `$filter` (`eq`).Read-only.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | autoSubscribeNewMembers       | Boolean                                                                  | Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`).                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | classification                | String                                                                   | Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`).                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| createdDateTime               | DateTimeOffset                                                           | Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Read-only.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| createdDateTime               | DateTimeOffset                                                           | Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | deletedDateTime               | DateTimeOffset                                                           | For some Azure Active Directory objects (user, group, application), if the object is deleted, it is first logically deleted, and this property is updated with the date and time when the object was deleted. Otherwise this property is `null`. If the object is restored, this property is updated to `null`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | description                   | String                                                                   | An optional description for the group. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) and `$search`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | displayName                   | String                                                                   | The display name for the group. This property is required when a group is created and cannot be cleared during updates. Maximum length is 256 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -338,53 +338,54 @@ The following is a JSON representation of the resource.
 ```json
 {
   "allowExternalSenders": false,
+  
+  "acceptedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
   "autoSubscribeNewMembers": true,
+  "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
   "classification": "String",
+  "conversations": [{ "@odata.type": "microsoft.graph.conversation" }],
   "createdDateTime": "String (timestamp)",
+  "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
   "description": "String",
   "displayName": "String",
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "events": [{ "@odata.type": "microsoft.graph.event" }],
   "groupTypes": ["String"],
   "hasMembersWithLicenseErrors": "Boolean",
   "hideFromAddressLists": false,
   "hideFromOutlookClients": false,
   "id": "String (identifier)",
-  "isSubscribedByMail": true,
   "isAssignableRole": false,
+  "isSubscribedByMail": true,
   "licenseProcessingState": "String",
   "mail": "String",
   "mailEnabled": true,
   "mailNickname": "String",
+  "memberOf": [{ "@odata.type": "microsoft.graph.directoryObject" }],
+  "members": [{ "@odata.type": "microsoft.graph.directoryObject" }],
+  "membersWithLicenseErrors": [{ "@odata.type": "microsoft.graph.user" }],
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [
     { "@odata.type": "microsoft.graph.onPremisesProvisioningError" }
   ],
   "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
+  "owners": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "preferredDataLocation": "String",
   "proxyAddresses": ["String"],
+  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "rejectedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
   "securityIdentifier": "String",
-  "unseenCount": 1024,
-  "visibility": "String",
-  "acceptedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "conversations": [{ "@odata.type": "microsoft.graph.conversation" }],
-  "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "events": [{ "@odata.type": "microsoft.graph.event" }],
-  "memberOf": [{ "@odata.type": "microsoft.graph.directoryObject" }],
-  "members": [{ "@odata.type": "microsoft.graph.directoryObject" }],
-  "membersWithLicenseErrors": [{ "@odata.type": "microsoft.graph.user" }],
-  "owners": [{ "@odata.type": "microsoft.graph.directoryObject" }],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "rejectedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "sites": [{ "@odata.type": "microsoft.graph.site" }],
-  "threads": [{ "@odata.type": "microsoft.graph.conversationThread" }]
+  "threads": [{ "@odata.type": "microsoft.graph.conversationThread" }],
+  "unseenCount": 1024,
+  "visibility": "String"
 }
 ```
 

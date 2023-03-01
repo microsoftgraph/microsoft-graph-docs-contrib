@@ -155,7 +155,9 @@ Content-Type: application/json
     },
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
-    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
+    "provisioningType": "shared",
+    "diskEncryptionState": "notAvailable"
 }
 ```
 
@@ -343,6 +345,8 @@ Content-Type: application/json
     },
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
-    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
+    "provisioningType": "shared",
+    "diskEncryptionState": "notAvailable"
 }
 ```

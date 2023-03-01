@@ -44,6 +44,7 @@ Inherits from [entity](entity.md).
 | customSecurityAttributeDefinitions | [customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection     | Schema of a custom security attributes (key-value pairs).                                                                 |
 |deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 |federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
+| onPremisesSynchronization | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization. |
 
 ## JSON representation
 
