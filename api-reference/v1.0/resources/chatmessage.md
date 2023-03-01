@@ -130,6 +130,11 @@ The following is a JSON representation of the resource.
   "messageType": "string",
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "messageHistory": [
+    {
+      "@odata.type": "microsoft.graph.chatMessageHistoryItem"
+    }
+  ],
   "replyToId": "string (identifier)",
   "subject": "string",
   "summary": "string",
