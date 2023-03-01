@@ -1,6 +1,6 @@
 ---
 title: "Get access without a user"
-description: "Learn how an app uses the client credentials grant flow to call Microsoft Graph on behalf of a user."
+description: "Learn how an app uses the client credentials grant flow to obtain an access token from the Microsoft identity platform and call Microsoft Graph with its own identity."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
@@ -12,7 +12,7 @@ ms.date: 02/22/2022
 
 # Get access without a user
 
-An app can access Microsoft Graph using one of two ways: on behalf of a signed-in user, also called *delegated access*, or with its own identity, also called *app-only access*. This article details how an app gets to [call Microsoft Graph with its own identity](./auth/auth-concepts.md#access-scenarios).
+To call Microsoft Graph, an app must obtain an access token from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article provides guidance on how an app can [access Microsoft Graph with its own identity](./auth/auth-concepts.md#access-scenarios), also called *app-only access*.
 
 This article details the raw HTTP requests involved for an app to call Microsoft Graph with its own identity using a popular flow called the [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). The authorization and token requests in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-library-msal) to get access tokens and call Microsoft Graph.
 
