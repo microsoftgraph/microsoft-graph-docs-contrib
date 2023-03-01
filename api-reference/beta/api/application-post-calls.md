@@ -2090,7 +2090,7 @@ Content-Type: application/json
 POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
-
+###### Delta Roster Disabled
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -2139,6 +2139,75 @@ Content-Type: application/json
 }
 ```
 
+###### Delta Roster Enabled
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "truncated": true
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceUrl": "/communications/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.deltaParticipants",
+          "participants": [
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "application": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "id": "(redacted)",
+                    "displayName": "(redacted)",
+                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde37",
+                    "identityProvider": "AAD",
+                    "ApplicationType": "Test User 101"
+                  }
+                },
+                "endpointType": "default",
+                "endpointId": "6f502235-df3e-4aca-a526-f2bd10eca6bd",
+                "clientVersion": "Test User 101",
+                "participantId": "79b41d99-1856-47e0-8312-e2cca2e1a03c"
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "label": "main-audio",
+                  "sourceId": "201",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": false,
+              "isInLobby": false,
+              "publishedStates": [],
+              "meetingRole": "presenter",
+              "isIdentityAnonymized": false,
+              "participantVersion": 1,
+              "restrictedExperience": {
+                "@odata.type": "#microsoft.graph.onlineMeetingRestricted"
+              },
+              "id": "79b41d99-1856-47e0-8312-e2cca2e1a03c"
+            }
+          ],
+          "sequenceNumber": 1
+        }
+      ]
+    }
+  ]
+}
+```
 > **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby
 
 ### Example 11: Create peer-to-peer PSTN call with service hosted media
