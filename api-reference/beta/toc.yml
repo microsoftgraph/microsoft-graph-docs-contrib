@@ -15236,7 +15236,7 @@ items:
           - name: Simulation
             href: resources/simulation.md
           - name: List
-            href: api/simulations-list.md
+            href: api/attacksimulationroot-list-simulations.md
           - name: Create
             href: api/attacksimulationroot-post-simulation.md
           - name: Get
