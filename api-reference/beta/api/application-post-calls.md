@@ -1181,7 +1181,7 @@ Content-Type: application/json
 POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
-
+###### Delta Roster Disabled (Default)
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -1270,7 +1270,100 @@ Content-Type: application/json
   ]
 }
 ```
-
+###### Delta Roster Enabled
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "truncated": true
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceUrl": "/communications/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.deltaParticipants",
+          "participants": [
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "user": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "John",
+                    "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+                  }
+                },
+                "languageId": "en-US"
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "1",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                },
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "video",
+                  "sourceId": "2",
+                  "direction": "receiveOnly",
+                  "serverMuted": false
+                },
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "videoBasedScreenSharing",
+                  "sourceId": "8",
+                  "direction": "receiveOnly",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": true,
+              "isInLobby": false,
+              "id": "0d7664b6-6432-43ed-8d27-d9e7adec188c"
+            },
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "application": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "Calling Bot",
+                    "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+                  }
+                }
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "10",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": false,
+              "isInLobby": false,
+              "id": "05491616-385f-44a8-9974-18cc5f9933c1"
+            }
+          ],
+          "sequenceNumber": 1
+        }
+      ]
+    }
+  ]
+}
+```
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join a scheduled meeting with joinMeetingId and passcode
@@ -2090,7 +2183,7 @@ Content-Type: application/json
 POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
-###### Delta Roster Disabled
+###### Delta Roster Disabled (Default)
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -2140,7 +2233,6 @@ Content-Type: application/json
 ```
 
 ###### Delta Roster Enabled
-
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -2165,43 +2257,28 @@ Content-Type: application/json
                 "@odata.type": "#microsoft.graph.participantInfo",
                 "identity": {
                   "@odata.type": "#microsoft.graph.identitySet",
-                  "application": {
+                  "guest": {
                     "@odata.type": "#microsoft.graph.identity",
-                    "id": "(redacted)",
-                    "displayName": "(redacted)",
-                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde37",
-                    "identityProvider": "AAD",
-                    "ApplicationType": "Test User 101"
+                    "displayName": "Guest User",
+                    "id": "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
                   }
-                },
-                "endpointType": "default",
-                "endpointId": "6f502235-df3e-4aca-a526-f2bd10eca6bd",
-                "clientVersion": "Test User 101",
-                "participantId": "79b41d99-1856-47e0-8312-e2cca2e1a03c"
+                }
               },
               "mediaStreams": [
                 {
                   "@odata.type": "#microsoft.graph.mediaStream",
                   "mediaType": "audio",
-                  "label": "main-audio",
-                  "sourceId": "201",
+                  "sourceId": "10",
                   "direction": "sendReceive",
                   "serverMuted": false
                 }
               ],
               "isMuted": false,
-              "isInLobby": false,
-              "publishedStates": [],
-              "meetingRole": "presenter",
-              "isIdentityAnonymized": false,
-              "participantVersion": 1,
-              "restrictedExperience": {
-                "@odata.type": "#microsoft.graph.onlineMeetingRestricted"
-              },
-              "id": "79b41d99-1856-47e0-8312-e2cca2e1a03c"
+              "isInLobby": true,
+              "id": "05491616-385f-44a8-9974-18cc5f9933c1"
             }
           ],
-          "sequenceNumber": 1
+          "sequenceNumber": 2
         }
       ]
     }
