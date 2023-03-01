@@ -845,6 +845,24 @@
       "CreatedDateTime": "2023-02-10T22:01:09.3277508Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1DE5FDD7-A053-4A64-B928-FDEC71191278",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureCommunicationServicesUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureCommunicationServicesUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-1.0) resource.",
+          "Target": "azureCommunicationServicesUserConversationMember"
+        }
+      ],
+      "Id": "0d00d1b1-db8b-490d-b3c2-73ca296139df",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-28T22:39:35.4042034Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

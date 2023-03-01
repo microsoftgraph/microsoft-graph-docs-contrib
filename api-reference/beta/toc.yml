@@ -12009,6 +12009,14 @@ items:
               href: api/organizationsettings-list-peopleinsights.md
             - name: Update
               href: api/insightssettings-update.md
+          - name: Org control for pronouns settings (preview)
+            items:
+            - name: Pronouns settings
+              href: resources/pronounssettings.md
+            - name: List
+              href: api/organizationsettings-list-pronounssettings.md
+            - name: Update
+              href: api/pronounssettings-update.md
           - name: Profile card customization (preview)
             items:
             - name: Profile card property
@@ -14552,6 +14560,14 @@ items:
             href: resources/meetingactivitystatistics.md
           - name: List activity statistics
             href: api/activitystatistics-list.md
+      - name: Pronouns settings (preview)
+        items:
+        - name: Pronouns settings
+          href: resources/pronounssettings.md
+        - name: List
+          href: api/organizationsettings-list-pronounssettings.md
+        - name: Update
+          href: api/pronounssettings-update.md
     - name: Personal contacts
       displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
