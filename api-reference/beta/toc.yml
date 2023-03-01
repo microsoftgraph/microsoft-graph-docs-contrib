@@ -15238,7 +15238,7 @@ items:
           - name: List
             href: api/simulations-list.md
           - name: Create
-            href: api/simulation-post.md
+            href: api/attacksimulationroot-post-simulation.md
           - name: Get
             href: api/simulation-get.md
           - name: Update
@@ -15260,7 +15260,7 @@ items:
           - name: Payload
             href: resources/payload.md
           - name: List
-            href: api/payload-list.md
+            href: api/attacksimulationroot-list-payloads.md
           - name: Get
             href: api/payload-get.md
           - name: Get payload detail
@@ -15293,7 +15293,7 @@ items:
           - name: Simulation automation
             href: resources/simulationautomation.md
           - name: List
-            href: api/simulationautomation-list.md
+            href: api/attacksimulationroot-list-simulationautomations.md
           - name: Get
             href: api/simulationautomation-get.md
         - name: Simulation automation run

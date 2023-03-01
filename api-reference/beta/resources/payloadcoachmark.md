@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the payload coachmark detail of a payload.
+Represents the payload coachmark detail of a payload. cocahmars are indicators to educate users about clues to look for to verify its authenticity.
 
 ## Properties
 

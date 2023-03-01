@@ -7113,7 +7113,7 @@ items:
           - name: Simulation
             href: resources/simulation.md
           - name: List
-            href: api/simulation-list.md
+            href: api/attacksimulationroot-list-simulations.md
           - name: Get
             href: api/simulation-get.md
           - name: List simulation users
@@ -7125,7 +7125,7 @@ items:
           - name: Simulation automation
             href: resources/simulationautomation.md
           - name: List
-            href: api/simulationautomation-list.md
+            href: api/attacksimulationroot-list-simulationautomations.md
           - name: Get
             href: api/simulationautomation-get.md
         - name: Simulation automation run
