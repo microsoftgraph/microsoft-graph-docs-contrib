@@ -101,11 +101,6 @@ Content-Type: application/json
 
 ---
 
-
-
----
-
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -176,11 +171,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
-
----
-
 
 #### Response
 <!-- {
@@ -383,10 +373,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
----
 #### Response
 <!-- {
   "blockType": "response",
@@ -474,11 +460,6 @@ Content-Type: application/json
 
 ---
 
-
-
----
-
----
 #### Response
 <!-- {
   "blockType": "response",
@@ -541,12 +522,6 @@ Content-Type: application/json
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/convert-team-from-non-standard-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
----
 
 ---
 
@@ -638,11 +613,6 @@ Content-Type: application/json
 
 ---
 
-
-
----
-
----
 #### Response
 <!-- {
   "blockType": "response",

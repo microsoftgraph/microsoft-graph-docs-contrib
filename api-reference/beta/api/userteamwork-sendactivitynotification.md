@@ -193,8 +193,8 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -204,6 +204,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## see also
+## See also
 
-[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+
+- [Activity feed notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)
+- [Activity feed notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)

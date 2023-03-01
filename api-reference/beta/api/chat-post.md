@@ -122,9 +122,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -211,9 +208,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -296,9 +290,6 @@ Content-Type: application/json
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-chat-oneonone-with-installed-apps-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 
@@ -459,9 +450,6 @@ Content-Type: application/json
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-chat-group-with-tenant-guest-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 

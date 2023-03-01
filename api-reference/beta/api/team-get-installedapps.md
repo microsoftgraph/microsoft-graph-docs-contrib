@@ -93,9 +93,6 @@ GET /teams/{id}/installedApps/{id}
 
 ---
 
-
----
-
 #### Response
 
 The following is an example of the response.
@@ -161,9 +158,6 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}?$expand=teams
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-installed-teams-apps-expand-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 
