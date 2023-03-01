@@ -20,7 +20,6 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
-
 ### actionAfterRetentionPeriod values 
 
 
