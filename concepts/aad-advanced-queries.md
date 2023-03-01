@@ -1,8 +1,11 @@
 ---
 title: "Advanced query capabilities on Azure AD directory objects"
 description: "Azure AD directory objects support advanced query capabilities to efficiently access data."
-author: "Licantrop0"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
+ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 11/23/2022
 ---
@@ -85,7 +88,7 @@ Properties of directory objects behave differently in their support for query pa
 + Getting empty collections (`/$count eq 0`, `/$count ne 0`) and collections with less than one object (`/$count eq 1`, `/$count ne 1`) is supported only with advanced query parameters.
 + The `not` and `ne` negation operators are supported only with advanced query parameters.
   + All properties that support the `eq` operator also support the `ne` or `not` operators.
-  + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/query-parameters#filter-using-lambda-operators).
+  + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/filter-query-parameter#filter-using-lambda-operators).
 
 The following tables summarizes support for `$filter` operators by properties of directory objects supported by the advanced query capabilities.
 

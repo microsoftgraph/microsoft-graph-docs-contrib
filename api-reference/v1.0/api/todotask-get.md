@@ -128,6 +128,10 @@ Content-Type: application/json
     "dueDateTime": {
         "dateTime": "2020-08-25T04:00:00.0000000",
         "timeZone": "UTC"
+    },
+    "startDateTime": {
+        "dateTime": "2020-06-23T04:00:00.0000000",
+        "timeZone": "UTC"
     }
 }
 ```
