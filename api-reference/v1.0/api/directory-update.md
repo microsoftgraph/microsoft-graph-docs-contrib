@@ -1,15 +1,16 @@
 ---
-title: "Update allowedValue"
-description: "Update the properties of an allowedValue object."
+title: "Update directory"
+description: "Update the properties of a directory object."
 author: "CecilyK"
-ms.localizdirectory-management"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Update allowedValue
+# Update directory
 Namespace: microsoft.graph
 
-Update the properties of an [allowedValue](../resources/allowedvalue.md) object.
+Update the properties of a [directory](../resources/directory.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
+PATCH /directory
 ```
 
 ## Request headers
@@ -43,13 +44,12 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects. Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [allowedValue](../resources/allowedvalue.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [directory](../resources/directory.md) object in the response body.
 
 ## Examples
 
@@ -57,16 +57,15 @@ If successful, this method returns a `200 OK` response code and an updated [allo
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_allowedvalue"
+  "name": "update_directory"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
+PATCH https://graph.microsoft.com/v1.0/directory
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.allowedValue",
-  "isActive": "Boolean"
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 
@@ -84,8 +83,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.allowedValue",
-  "id": "e18a0d39-a256-262e-2fc4-9f8e1ebfdea1",
-  "isActive": "Boolean"
+  "@odata.type": "#microsoft.graph.directory",
+  "id": "29e00904-6589-f87a-aabf-021e17420337"
 }
 ```
+

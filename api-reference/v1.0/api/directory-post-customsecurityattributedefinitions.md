@@ -42,7 +42,7 @@ POST /directory/customSecurityAttributeDefinitions
 ## Request body
 In the request body, supply a JSON representation of the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.
 
-The following table shows the properties that you can configure when you create the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md).
+You can specify the following properties when creating a **customSecurityAttributeDefinition**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -63,19 +63,11 @@ If successful, this method returns a `201 Created` response code and a [customSe
 
 ## Examples
 
-### Example 1: Add a custom security attribute
-
-The following example adds a new custom security attribute definition that is a single free-form value of type String.
-
-+ Attribute set: `Engineering`
-+ Attribute: `ProjectDate`
-
-#### Request
-
-# [HTTP](#tab/http)
+### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_customsecurityattributedefinition"
+  "name": "create_customsecurityattributedefinition_from_"
 }
 -->
 ``` http
@@ -83,252 +75,43 @@ POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitio
 Content-Type: application/json
 
 {
-    "attributeSet":"Engineering",
-    "description":"Target completion date",
-    "isCollection":false,
-    "isSearchable":true,
-    "name":"ProjectDate",
-    "status":"Available",
-    "type":"String",
-    "usePreDefinedValuesOnly": false
+  "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
+  "attributeSet": "String",
+  "description": "String",
+  "isCollection": "Boolean",
+  "isSearchable": "Boolean",
+  "name": "String",
+  "status": "String",
+  "type": "String",
+  "usePreDefinedValuesOnly": "Boolean"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-customsecurityattributedefinition-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-customsecurityattributedefinition-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-customsecurityattributedefinition-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
 }
 -->
-
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/customSecurityAttributeDefinitions/$entity",
-    "attributeSet": "Engineering",
-    "description": "Target completion date",
-    "id": "Engineering_ProjectDate",
-    "isCollection": false,
-    "isSearchable": true,
-    "name": "ProjectDate",
-    "status": "Available",
-    "type": "String",
-    "usePreDefinedValuesOnly": false
+  "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
+  "id": "ae2dd02c-6061-896c-9f53-3583b6a7163b",
+  "attributeSet": "String",
+  "description": "String",
+  "isCollection": "Boolean",
+  "isSearchable": "Boolean",
+  "name": "String",
+  "status": "String",
+  "type": "String",
+  "usePreDefinedValuesOnly": "Boolean"
 }
 ```
 
-### Example 2: Add a custom security attribute that supports multiple predefined values
-
-The following example adds a new custom security attribute definition that supports multiple values of type String that are predefined.
-
-+ Attribute set: `Engineering`
-+ Attribute: `Project`
-
-#### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_customsecurityattributedefinition_v2"
-}
--->
-``` http
-POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions
-Content-Type: application/json
-Content-length: 310
-
-{
-    "attributeSet":"Engineering",
-    "description":"Active projects for user",
-    "isCollection":true,
-    "isSearchable":true,
-    "name":"Project",
-    "status":"Available",
-    "type":"String",
-    "usePreDefinedValuesOnly": true
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-customsecurityattributedefinition-v2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-customsecurityattributedefinition-v2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-v2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-v2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-v2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-customsecurityattributedefinition-v2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
-}
--->
-
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/customSecurityAttributeDefinitions/$entity",
-    "attributeSet": "Engineering",
-    "description": "Active projects for user",
-    "id": "Engineering_Project",
-    "isCollection": true,
-    "isSearchable": true,
-    "name": "Project",
-    "status": "Available",
-    "type": "String",
-    "usePreDefinedValuesOnly": true
-}
-```
-
-### Example 3: Add a custom security attribute with a list of predefined values
-
-The following example adds a new custom security attribute definition with a list of predefined values as a collection of strings.
-
-+ Attribute set: `Engineering`
-+ Attribute: `Project`
-+ Attribute data type: Collection of Strings
-+ Predefined values: `Alpine`, `Baker`, `Cascade`
-
-#### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_customsecurityattributedefinition_allowedvalues"
-}
--->
-``` http
-POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions
-Content-Type: application/json
-
-{
-    "attributeSet": "Engineering",
-    "description": "Active projects for user",
-    "isCollection": true,
-    "isSearchable": true,
-    "name": "Project",
-    "status": "Available",
-    "type": "String",
-    "usePreDefinedValuesOnly": true,
-    "allowedValues": [
-        {
-            "id": "Alpine",
-            "isActive": true
-        },
-        {
-            "id": "Baker",
-            "isActive": true
-        },
-        {
-            "id": "Cascade",
-            "isActive": true
-        }
-    ]
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-customsecurityattributedefinition-allowedvalues-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-customsecurityattributedefinition-allowedvalues-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-allowedvalues-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-allowedvalues-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-allowedvalues-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-customsecurityattributedefinition-allowedvalues-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
-}
--->
-
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/customSecurityAttributeDefinitions/$entity",
-    "attributeSet": "Engineering",
-    "description": "Active projects for user",
-    "id": "Engineering_Project",
-    "isCollection": true,
-    "isSearchable": true,
-    "name": "Project",
-    "status": "Available",
-    "type": "String",
-    "usePreDefinedValuesOnly": true
-}
-```

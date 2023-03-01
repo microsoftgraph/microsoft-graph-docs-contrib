@@ -1,25 +1,26 @@
 ---
-title: "Get allowedValue"
-description: "Read the properties and relationships of an allowedValue object."
+title: "Get directory"
+description: "Read the properties and relationships of a directory object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "*directory-management"
 doc_type: apiPageType
 ---
 
-# Get allowedValue
+# Get directory
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [allowedValue](../resources/allowedvalue.md) object.
+Read the properties and relationships of a [directory](../resources/directory.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|directory-management|
+|Delegated (work or school account)|CustomSecAttributeDefinition.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
+|Application|CustomSecAttributeDefinition.ReadWrite.All
+|
 
 ## HTTP request
 
@@ -28,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
+GET /directory
 ```
 
 ## Optional query parameters
@@ -44,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [allowedValue](../resources/allowedvalue.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [directory](../resources/directory.md) object in the response body.
 
 ## Examples
 
@@ -52,11 +53,11 @@ If successful, this method returns a `200 OK` response code and an [allowedValue
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_allowedvalue"
+  "name": "get_directory"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
+GET https://graph.microsoft.com/v1.0/directory
 ```
 
 
@@ -66,7 +67,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.allowedValue"
+  "@odata.type": "microsoft.graph.directory"
 }
 -->
 ``` http
@@ -75,9 +76,8 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.allowedValue",
-    "id": "e18a0d39-a256-262e-2fc4-9f8e1ebfdea1",
-    "isActive": "Boolean"
+    "@odata.type": "#microsoft.graph.directory",
+    "id": "29e00904-6589-f87a-aabf-021e17420337"
   }
 }
 ```

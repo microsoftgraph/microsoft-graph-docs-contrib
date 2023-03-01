@@ -21,15 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
-
-+ Attribute Assignment Reader
-+ Attribute Definition Reader
-+ Attribute Assignment Administrator
-+ Attribute Definition Administrator
-
-By default, Global Administrator and other administrator roles do not have permissions to define, read, or assign custom security attributes.
-
 ## HTTP request
 
 <!-- {
@@ -41,7 +32,7 @@ GET /directory/attributeSets/{attributeSetId}
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,51 +48,21 @@ If successful, this method returns a `200 OK` response code and an [attributeSet
 
 ## Examples
 
-### Example: Get an attribute set
-
-The following example gets a single attribute set named `Engineering`.
-
-#### Request
-
-# [HTTP](#tab/http)
+### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_attributeset_single"
+  "name": "get_attributeset"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/directory/attributeSets/Engineering
+GET https://graph.microsoft.com/v1.0/directory/attributeSets/{attributeSetId}
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attributeset-single-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attributeset-single-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attributeset-single-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-attributeset-single-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-attributeset-single-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-attributeset-single-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,9 +74,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/attributeSets/$entity",
-    "description": "Attributes for engineering team",
-    "id": "Engineering",
-    "maxAttributesPerSet": 25
+  "value": {
+    "@odata.type": "#microsoft.graph.attributeSet",
+    "id": "58b91e55-5f03-83f0-e1bd-29c0c532e514",
+    "description": "String",
+    "maxAttributesPerSet": "Integer"
+  }
 }
 ```
+

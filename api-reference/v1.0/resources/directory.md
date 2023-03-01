@@ -40,6 +40,8 @@ Inherits from [entity](entity.md).
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |administrativeUnits|[administrativeUnit](administrativeunit.md) collection| Conceptual container for user and group directory objects.|
+| attributeSets                      | [attributeSet](attributeset.md) collection                                               | Group of related custom security attribute definitions.                                                                   |
+| customSecurityAttributeDefinitions | [customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection     | Schema of a custom security attributes (key-value pairs).                                                                 |
 |deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 |federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
 

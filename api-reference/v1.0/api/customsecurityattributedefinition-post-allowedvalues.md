@@ -21,8 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
-
 ## HTTP request
 
 <!-- {
@@ -33,7 +31,6 @@ The signed-in user must also be assigned the Attribute Definition Administrator 
 POST /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues
 ```
 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -43,12 +40,11 @@ POST /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefin
 ## Request body
 In the request body, supply a JSON representation of the [allowedValue](../resources/allowedvalue.md) object.
 
-The following table shows the properties that are required when you create the [allowedValue](../resources/allowedvalue.md).
+You can specify the following properties when creating an **allowedValue**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier for the predefined value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. Case sensitive. Required.|
-|isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects. Required.|
+|isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects. Required..|
 
 
 
@@ -58,62 +54,27 @@ If successful, this method returns a `201 Created` response code and an [allowed
 
 ## Examples
 
-### Example: Add a predefined value
-
-The following example adds a predefined value to a custom security attribute definition.
-
-+ Attribute set: `Engineering`
-+ Attribute: `Project`
-+ Predefined value: `Alpine`
-
-#### Request
-
-# [HTTP](#tab/http)
+### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_allowedvalue",
-  "sampleKeys": ["Engineering_Project"]
+  "name": "create_allowedvalue_from_"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues
+POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues
 Content-Type: application/json
 
 {
-    "id":"Alpine",
-    "isActive":"true"
+  "@odata.type": "#microsoft.graph.allowedValue",
+  "isActive": "Boolean"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-allowedvalue-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-allowedvalue-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-allowedvalue-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-allowedvalue-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-allowedvalue-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-allowedvalue-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
-#### Response
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -125,8 +86,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/customSecurityAttributeDefinitions('Engineering_Project')/allowedValues/$entity",
-    "id": "Alpine",
-    "isActive": true
+  "@odata.type": "#microsoft.graph.allowedValue",
+  "id": "e18a0d39-a256-262e-2fc4-9f8e1ebfdea1",
+  "isActive": "Boolean"
 }
 ```

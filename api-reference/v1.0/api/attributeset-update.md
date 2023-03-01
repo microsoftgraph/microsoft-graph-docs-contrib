@@ -21,8 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
-
 ## HTTP request
 
 <!-- {
@@ -40,9 +38,8 @@ PATCH /directory/attributeSets/{attributeSetId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-The following table specifies the properties that can be updated.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -53,67 +50,46 @@ The following table specifies the properties that can be updated.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and an updated [attributeSet](../resources/attributeset.md) object in the response body.
 
 ## Examples
 
-### Example: Update an attribute set
-
-The following example updates the description and the maximum number of attributes for an attribute set named `Engineering`.
-
-#### Request
-
-# [HTTP](#tab/http)
+### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "update_attributeset"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/directory/attributeSets/Engineering
+PATCH https://graph.microsoft.com/v1.0/directory/attributeSets/{attributeSetId}
 Content-Type: application/json
-Content-length: 119
 
 {
-    "description":"Attributes for engineering team",
-    "maxAttributesPerSet":20
+  "@odata.type": "#microsoft.graph.attributeSet",
+  "description": "String",
+  "maxAttributesPerSet": "Integer"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-attributeset-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-attributeset-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-attributeset-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-attributeset-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-attributeset-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-attributeset-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.attributeSet",
+  "id": "58b91e55-5f03-83f0-e1bd-29c0c532e514",
+  "description": "String",
+  "maxAttributesPerSet": "Integer"
+}
 ```
+
