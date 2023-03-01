@@ -1,6 +1,6 @@
 ---
 title: "Update learningContent"
-description: "Update the properties of a learningContent object."
+description: "Update the specified learningContent resource."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -8,13 +8,15 @@ doc_type: apiPageType
 ---
 
 # Update learningContent
+
 Namespace: microsoft.graph
 
-Update the properties of a [learningContent](../resources/learningcontent.md) object.
+Update the specified [learningContent](../resources/learningcontent.md) resource.
 
 Used by a [learning provider](../resources/learningprovider.md) to ingest or update the metadata for their content in Viva Learning. If the specified learning content doesn't yet exist for the specified provider, this operation creates the metadata for the new content. Otherwise, this operation replaces the metadata of the existing content.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -29,42 +31,46 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 For a specific learning content based on its ID (primary key):
+
 ``` http
 PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
 ```
 
 For a specific learning content based on its external ID (secondary key):
+
 ``` http
 PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}') 
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
 |additionalTags|String collection|Keywords, topics, and other tags associated with the learning content. Optional.|
 |contentWebUrl|String|The content web URL for the learning content. Required.|
 |contributors|String collection|The authors, creators, or contributors of the learning content. Optional.|
-|createdDateTime|DateTimeOffset|The date when the learning content was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
+|createdDateTime|DateTimeOffset|The date and time when the learning content was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 |description|String|The description or summary for the learning content. Optional.|
 |duration|Duration|The duration of the learning content in seconds. The value is represented in ISO 8601 format for durations. Optional.|
 |externalId|String|Unique external content ID for the learning content. Required.|
 |format|String|The format of the learning content. For example, `Course`, `Video`, `Book`, `Book Summary`, `Audiobook Summary`. Optional.|
-|isActive|Boolean|Indicates whether the content is active or not. Inactive content will not show up in the UI. The default value is `true`. Optional.|
+|isActive|Boolean|Indicates whether the content is active or not. Inactive content doesn't show up in the UI. The default value is `true`. Optional.|
 |isPremium|Boolean|Indicates whether the learning content requires the user to sign-in on the learning provider platform or not. The default value is `false`. Optional.|
 |isSearchable|Boolean|Indicates whether the learning content is searchable or not. The default value is `true`. Optional.|
 |languageTag|String|The language of the learning content, for example, `en-us` or `fr-fr`. Required.|
-|lastModifiedDateTime|DateTimeOffset|The date when the learning content was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
-|numberOfPages|Int32|The number of pages of the learning content, for example, 9. Optional.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the learning content was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
+|numberOfPages|Int32|The number of pages of the learning content, for example, `9`. Optional.|
 |skillTags|String collection|The skills tags associated with the learning content. Optional.|
 |sourceName|String|The source name of the learning content, such as `LinkedIn Learning` or `Coursera`. Optional.|
 |thumbnailWebUrl|String|The URL of learning content thumbnail image. Optional.|
@@ -81,6 +87,7 @@ If successful, this method returns a `202 Accepted` response code and an updated
 The following example shows a request that updates the metadata of a learning content based on its ID (primary key).
 
 #### Request
+
 The following example shows the request.
 
 <!-- {
@@ -125,8 +132,11 @@ Content-Type: application/json
 ```
 
 #### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -176,6 +186,7 @@ Content-Type: application/json
 The following example shows a request that updates the metadata of a learning content based on its external ID (secondary key).
 
 #### Request
+
 The following example shows the request.
 
 <!-- {
@@ -220,8 +231,11 @@ Content-Type: application/json
 ```
 
 #### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

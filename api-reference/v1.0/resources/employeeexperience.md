@@ -11,10 +11,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
 Represents a container that exposes navigation properties for employee experience resources.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get employeeExperience](../api/employeeexperience-get.md)|[employeeExperience](../resources/employeeexperience.md)|Read the properties and relationships of an [employeeExperience](../resources/employeeexperience.md) object.|
@@ -23,15 +23,19 @@ Represents a container that exposes navigation properties for employee experienc
 |[Create learningProvider](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new learningProvider object.|
 
 ## Properties
+
 None.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |learningProviders|[learningProvider](../resources/learningprovider.md) collection|A collection of learning providers.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
