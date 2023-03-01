@@ -108,9 +108,9 @@ Content-Type: application/json
     "id": "fcdbfb58-d0c6-85dd-d011-4e0ff9a6805d",
     "displayName": "String",
     "description": "String",
-    "eventQueries": [
+    "eventQuery": [
       {
-        "@odata.type": "microsoft.graph.security.eventQueries"
+        "@odata.type": "microsoft.graph.security.eventQuery"
       }
     ],
     "eventTriggerDateTime": "String (timestamp)",
