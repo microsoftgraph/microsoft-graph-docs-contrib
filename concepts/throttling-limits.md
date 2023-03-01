@@ -331,14 +331,15 @@ Limits are expressed as requests per second (rps).
 | DELETE   [appCatalogs](/graph/api/teamsapp-delete)      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
 | POST /[teams](/graph/api/team-post) | 10 rps | 100 rps  |
-| PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams), clone | 6 rps | 150 rps  |
+| PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams)| 6 rps | 150 rps  |
 | POST /```{team-id}```/ [clone](/graph/api/team-clone) | 6 rps | 150 rps  |
 | GET [channel message](/graph/api/chatmessage-get)  | 20 rps | 200 rps |
 | GET 1:1/[group chat message](/graph/api/chat-get#example-3-get-a-chat-and-all-its-members)  | 20 rps | 200 rps |
 | POST [channel message](/graph/api/channel-post-messages) | 50 rps | 500 rps |
 | POST 1:1/[group chat message](/graph/api/chat-post#example-2-create-a-group-chat) | 20 rps | 200 rps |
 | GET /teams/```{team-id}```/[schedule](/graph/api/schedule-get) and all APIs under this path | 30 rps | 600 rps |
-| [POST](/graph/api/schedule-share), [PUT](/graph//api/team-put-schedule) /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
+| POST /teams/```{team-id}```/[schedule](/graph/api/schedule-share) and all APIs under this path | 30 rps | 300 rps |
+|PUT /teams/```{team-id}```/[schedule](/graph//api/team-put-schedule) and all APIs under this path | 30 rps | 300 rps |
 | POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | 5 rps | 50 rps |
 | POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | 5 rps | 50 rps |
 | POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | 5 rps | 50 rps |
@@ -351,8 +352,7 @@ Limits are expressed as requests per second (rps).
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
-A maximum of 3000 messages per app per day can be sent to a given channel 
-(except when using [migration mode](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+A maximum of 3000 messages per app per day can be sent to a given channel (except when using [migration mode](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
