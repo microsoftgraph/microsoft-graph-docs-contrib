@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Functions
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-Get-MgDeviceManagementVirtualEndpointSnapshotSubscription
+Get-MgDeviceManagementVirtualEndpointSnapshot -CloudPcSnapshotId $cloudPcSnapshotId
 
 ```

@@ -4,16 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachment = new FileAttachment
+var requestBody = new Attachment
 {
+	OdataType = "#microsoft.graph.fileAttachment",
 	Name = "menu.txt",
-	ContentBytes = Convert.FromBase64String("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"contentBytes" , "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+		},
+	},
 };
+var result = await graphClient.Me.Events["{event-id}"].Attachments.PostAsync(requestBody);
 
-await graphClient.Me.Events["{event-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
 
 ```

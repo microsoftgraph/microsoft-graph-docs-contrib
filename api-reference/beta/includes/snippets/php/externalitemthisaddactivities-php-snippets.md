@@ -24,7 +24,7 @@ $requestBody->setActivities($activitiesArray);
 
 
 
-$requestResult = $graphServiceClient->connectionsById('externalConnection-id')->itemsById('externalItem-id')->addActivities()->post($requestBody);
+$requestResult = $graphServiceClient->connectionsById('externalConnection-id')->itemsById('externalItem-id')->externalConnectorsAddActivities()->post($requestBody);
 
 
 ```

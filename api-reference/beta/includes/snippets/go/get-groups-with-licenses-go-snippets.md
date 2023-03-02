@@ -13,6 +13,7 @@ requestFilter := "assignedLicenses/any()"
 requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","assignedLicenses"},
 	Filter: &requestFilter,
+	Expand: [] string {"members($select=id,displayName)"},
 }
 configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
