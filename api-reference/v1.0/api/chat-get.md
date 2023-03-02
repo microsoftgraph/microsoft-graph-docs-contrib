@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 
 ---
 
-
 #### Response
 The following example shows the response.
 
@@ -169,7 +168,6 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ---
 
-
 #### Response
 The following example shows the response.
 
@@ -239,7 +237,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.
@@ -373,7 +370,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLW
 
 ---
 
-
 #### Response
 The following example shows the response.
 
@@ -450,7 +446,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:ebe3857aa388434bab0cad9d2e09f4de@t
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.

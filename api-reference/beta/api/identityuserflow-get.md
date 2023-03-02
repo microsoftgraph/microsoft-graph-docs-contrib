@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/identity/userFlows/B2C_1_Pol1
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

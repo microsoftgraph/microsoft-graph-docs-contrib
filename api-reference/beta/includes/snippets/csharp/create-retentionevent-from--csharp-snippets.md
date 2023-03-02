@@ -4,36 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var retentionEvent = new Microsoft.Graph.Security.RetentionEvent
+var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionEvent
 {
+	OdataType = "#microsoft.graph.security.retentionEvent",
 	DisplayName = "String",
 	Description = "String",
-	EventQueries = new List<Microsoft.Graph.Security.EventQuery>()
+	EventQueries = new List<Microsoft.Graph.Beta.Models.Security.EventQuery>
 	{
-		new EventQueries
+		new Microsoft.Graph.Beta.Models.Security.EventQuery
 		{
-		}
+			OdataType = "microsoft.graph.security.eventQueries",
+		},
 	},
 	EventTriggerDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	CreatedBy = new IdentitySet
 	{
+		OdataType = "microsoft.graph.identitySet",
 	},
-	EventPropagationResults = new List<Microsoft.Graph.Security.EventPropagationResult>()
+	EventPropagationResults = new List<Microsoft.Graph.Beta.Models.Security.EventPropagationResult>
 	{
-		new EventPropagationResult
+		new Microsoft.Graph.Beta.Models.Security.EventPropagationResult
 		{
-		}
+			OdataType = "microsoft.graph.security.eventPropagationResult",
+		},
 	},
-	EventStatus = new RetentionEventStatus
+	EventStatus = new Microsoft.Graph.Beta.Models.Security.RetentionEventStatus
 	{
+		OdataType = "microsoft.graph.security.retentionEventStatus",
 	},
-	LastStatusUpdateDateTime = DateTimeOffset.Parse("String (timestamp)")
+	LastStatusUpdateDateTime = DateTimeOffset.Parse("String (timestamp)"),
 };
+var result = await graphClient.Security.Triggers.RetentionEvents.PostAsync(requestBody);
 
-await graphClient.Security.Triggers.RetentionEvents
-	.Request()
-	.AddAsync(retentionEvent);
 
 ```

@@ -4,26 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var legalHold = new Microsoft.Graph.Ediscovery.LegalHold
+var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.LegalHold
 {
+	OdataType = "#microsoft.graph.ediscovery.legalHold",
 	Description = "String",
 	CreatedBy = new IdentitySet
 	{
+		OdataType = "microsoft.graph.identitySet",
 	},
-	IsEnabled = false,
-	Status = Microsoft.Graph.Ediscovery.LegalHoldStatus.Pending,
+	IsEnabled = boolean,
+	Status = Microsoft.Graph.Beta.Models.Ediscovery.LegalHoldStatus.Pending,
 	ContentQuery = "String",
-	Errors = new List<String>()
+	Errors = new List<string>
 	{
-		"String"
+		"String",
 	},
-	DisplayName = "String"
+	DisplayName = "String",
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].LegalHolds.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].LegalHolds
-	.Request()
-	.AddAsync(legalHold);
 
 ```

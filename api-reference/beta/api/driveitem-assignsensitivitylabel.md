@@ -87,6 +87,7 @@ The following table lists the possible values for the error types.
 The following is an example of a request.
 
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "assignSensitivityLabel", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
 ``` http
 POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
@@ -99,7 +100,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assignsensitivitylabel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

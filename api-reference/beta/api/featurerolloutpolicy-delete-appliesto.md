@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

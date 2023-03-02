@@ -48,7 +48,6 @@ GET https://graph.microsoft.com/v1.0/me
 
 ---
 
-
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.drive", truncated: true } -->
 ```http
@@ -138,7 +136,6 @@ GET https://graph.microsoft.com/v1.0/users/{user-id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http

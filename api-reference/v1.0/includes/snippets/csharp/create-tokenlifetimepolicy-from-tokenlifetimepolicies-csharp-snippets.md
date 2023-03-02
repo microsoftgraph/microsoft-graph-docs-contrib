@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tokenLifetimePolicy = new TokenLifetimePolicy
+var requestBody = new TokenLifetimePolicy
 {
-	Definition = new List<String>()
+	Definition = new List<string>
 	{
-		"definition-value"
+		"definition-value",
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true
+	IsOrganizationDefault = true,
 };
+var result = await graphClient.Policies.TokenLifetimePolicies.PostAsync(requestBody);
 
-await graphClient.Policies.TokenLifetimePolicies
-	.Request()
-	.AddAsync(tokenLifetimePolicy);
 
 ```

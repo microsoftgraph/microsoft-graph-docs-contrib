@@ -71,7 +71,7 @@ The following is an example of the request to get the basic details from a [call
   "name": "get_callrecord"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 ```
 
@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -168,7 +167,7 @@ The following is an example of the request to get the full details from a [callR
   "name": "get_callrecord_expanded"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
 ```
 
@@ -197,7 +196,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

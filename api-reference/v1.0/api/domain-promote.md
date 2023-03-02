@@ -91,7 +91,6 @@ POST https://graph.microsoft.com/v1.0/domains/contoso.com/promote
 
 ---
 
-
 ### Response
 
 <!-- {

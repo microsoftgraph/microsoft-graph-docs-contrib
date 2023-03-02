@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var timeOffReason = new TimeOffReason
+var requestBody = new TimeOffReason
 {
 	DisplayName = "Vacation",
 	IconType = TimeOffReasonIconType.Plane,
-	IsActive = true
+	IsActive = true,
 };
+var result = await graphClient.Teams["{team-id}"].Schedule.TimeOffReasons.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Schedule.TimeOffReasons
-	.Request()
-	.AddAsync(timeOffReason);
 
 ```

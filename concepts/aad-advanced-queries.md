@@ -145,7 +145,6 @@ GET https://graph.microsoft.com/v1.0/users/$count
 
 ---
 
-
 <!-- {
   "blockType": "response",
   "@odata.type": "odata.error",
@@ -203,7 +202,6 @@ GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 
 ---
 
-
 ```json
 {
     "error": {
@@ -255,7 +253,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ```json
 {
@@ -310,7 +307,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 ```json
 {
     "error": {
@@ -364,7 +360,6 @@ GET https://graph.microsoft.com/v1.0/users?$count=true
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ```http
 HTTP/1.1 200 OK

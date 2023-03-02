@@ -197,7 +197,6 @@ Content-type: application/json
 
 ---
 
-
 The request returns a `201 Created` response code and the newly created group object in the response body.
 
 >**Note:** The response object shown here might be shortened for readability.
