@@ -1933,7 +1933,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "teamsMeetingsOrganized",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **teamsMeetingsOrganized** property to the [office365GroupsActivityCounts]https://learn.microsoft.com/en-us/graph/api/resources/office365groupsactivitycounts?view=graph-rest-beta) resource.",
+			  "Description": "Added the **teamsMeetingsOrganized** property to the [office365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/resources/office365groupsactivitycounts?view=graph-rest-beta) resource.",
 			  "Target": "Office365GroupsActivityCounts"
 			},
 			{
