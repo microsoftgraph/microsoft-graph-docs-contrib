@@ -32,13 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 For a specific learning content based on its ID (primary key):
 
 ``` http
-DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
+DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}/$ref
 ```
 
 For a specific learning content based on its external ID (secondary key):
 
 ``` http
-DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')
+DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')/$ref
 ```
 
 ## Request headers

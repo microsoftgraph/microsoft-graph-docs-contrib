@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 Represents a container that exposes navigation properties for employee experience resources.
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List learningProviders](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get the learningProvider resources from the learningProviders navigation property.|
+|[Create learningProvider](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new learningProvider object.|
+
 ## Properties
 None.
 

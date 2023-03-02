@@ -17,8 +17,6 @@ Represents a container that exposes navigation properties for employee experienc
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get employeeExperience](../api/employeeexperience-get.md)|[employeeExperience](../resources/employeeexperience.md)|Read the properties and relationships of an [employeeExperience](../resources/employeeexperience.md) object.|
-|[Update employeeExperience](../api/employeeexperience-update.md)|[employeeExperience](../resources/employeeexperience.md)|Update the properties of an [employeeExperience](../resources/employeeexperience.md) object.|
 |[List learningProviders](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get the learningProvider resources from the learningProviders navigation property.|
 |[Create learningProvider](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new learningProvider object.|
 

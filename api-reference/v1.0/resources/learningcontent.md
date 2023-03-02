@@ -20,7 +20,6 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List learningContents](../api/learningprovider-list-learningcontents.md)|[learningContent](../resources/learningcontent.md) collection|Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties.|
-|[Create learningContent](../api/learningprovider-post-learningcontents.md)|[learningContent](../resources/learningcontent.md)|Create a new [learningContent](../resources/learningcontent.md) object.|
 |[Get learningContent](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Get the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.|
 |[Update learningContent](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the properties of a [learningContent](../resources/learningcontent.md) object.|
 |[Delete learningContent](../api/learningprovider-delete-learningcontents.md)|None|Delete a [learningContent](../resources/learningcontent.md) object.|
