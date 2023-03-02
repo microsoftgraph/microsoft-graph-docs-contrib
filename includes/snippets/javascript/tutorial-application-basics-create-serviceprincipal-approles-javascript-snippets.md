@@ -10,18 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-const servicePrincipal = {
+const application = {
     appRoles: [
-        {
-            allowedMemberTypes: [
-                'User'
-            ],
-            description: 'Survey.ReadWrite.All',
-            displayName: 'Survey.ReadWrite.All',
-            id: '3ce57053-0ebf-42d8-bf7c-74161a450e4b',
-            isEnabled: true,
-            value: 'Survey.ReadWrite.All'
-        },
         {
             allowedMemberTypes: [
                 'User',
@@ -37,8 +27,7 @@ const servicePrincipal = {
     ]
 };
 
-await client.api('/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7')
-	.version('beta')
-	.update(servicePrincipal);
+await client.api('/applications/bbd46130-e957-4c38-a116-d4d02afd1057')
+	.update(application);
 
 ```

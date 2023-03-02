@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var featureRolloutPolicy = new FeatureRolloutPolicy
+var requestBody = new FeatureRolloutPolicy
 {
 	DisplayName = "PassthroughAuthentication rollout policy",
 	Description = "PassthroughAuthentication rollout policy",
 	Feature = StagedFeatureName.PassthroughAuthentication,
 	IsEnabled = true,
-	IsAppliedToOrganization = false
+	IsAppliedToOrganization = false,
 };
+var result = await graphClient.Policies.FeatureRolloutPolicies.PostAsync(requestBody);
 
-await graphClient.Policies.FeatureRolloutPolicies
-	.Request()
-	.AddAsync(featureRolloutPolicy);
 
 ```

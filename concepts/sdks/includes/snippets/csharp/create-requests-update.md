@@ -15,6 +15,5 @@ var team = new Team
 var teamId = "71766077-aacc-470a-be5e-ba47db3b2e88";
 
 await graphClient.Teams[teamId]
-    .Request()
-    .UpdateAsync(team);
+    .PatchAsync(team);
 ```

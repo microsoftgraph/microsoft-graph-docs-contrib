@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 
 ---
 
-
 #### Response
 
 The following is an example of the response
@@ -196,7 +195,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
