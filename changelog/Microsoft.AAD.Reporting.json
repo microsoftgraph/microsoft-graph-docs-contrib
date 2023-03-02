@@ -409,19 +409,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmCompromised",
           "ChangeType": "Addition",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the signin resource.",
-=======
-          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the [signin](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
->>>>>>> b3e1624cf45f43877276e25268214faa59f07fcd
-=======
-          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the [signin](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
->>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
-=======
-          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the signin resource.",
->>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the **signin** resource.",
+
           "Target": "signIn"
         },
         {
@@ -429,19 +418,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmSafe",
           "ChangeType": "Addition",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the signIn resource.",
-=======
-          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
->>>>>>> b3e1624cf45f43877276e25268214faa59f07fcd
-=======
-          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
->>>>>>> 6ee61f93e8c352beed657200c56b603cb44d57c7
-=======
-          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the signIn resource.",
->>>>>>> 1e963bc3bddd0352f6d7cdb741ad55193452312e
+          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the **signIn** resource.",
           "Target": "signIn"
         }
       ],
