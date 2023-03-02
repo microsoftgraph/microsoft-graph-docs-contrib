@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders
+GET https://graph.microsoft.com/beta/employeeExperience/learningProviders
 ```
 
 # [C#](#tab/csharp)
