@@ -65,7 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 #### Request
 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_teamsappsettings_1"
@@ -96,7 +96,7 @@ HTTP/1.1 204 No Content
 #### Request
 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_teamsappsettings_2"
