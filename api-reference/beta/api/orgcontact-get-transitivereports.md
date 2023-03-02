@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/contacts/45b7d2e7-b882-4a80-ba97-10b7a63b8f
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

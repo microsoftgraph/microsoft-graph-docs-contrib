@@ -91,7 +91,6 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 ---
 
-
 ### Response
 The following is an example of the response
 <!-- {

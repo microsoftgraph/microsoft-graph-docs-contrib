@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var outcomes = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes
-	.Request()
-	.Filter("isof('microsoft.graph.educationFeedbackResourceOutcome')")
-	.GetAsync();
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "isof('microsoft.graph.educationFeedbackResourceOutcome')";
+});
+
 
 ```

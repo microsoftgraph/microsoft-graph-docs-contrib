@@ -108,7 +108,6 @@ Content-Type: application/json
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 #### Response
 
@@ -178,7 +177,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -246,7 +244,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

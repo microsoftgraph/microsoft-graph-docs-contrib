@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/servicePrincipalRiskDete
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -182,7 +181,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/servicePrincipalRiskDete
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.
