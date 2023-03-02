@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Education.SynchronizationProfiles["{educationSynchronizationProfile-id}"]
-	.Start()
-	.Request()
-	.PostAsync();
+var result = await graphClient.Education.SynchronizationProfiles["{educationSynchronizationProfile-id}"].Start.PostAsync();
+
 
 ```

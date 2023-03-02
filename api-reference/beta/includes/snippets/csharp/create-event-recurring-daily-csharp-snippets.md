@@ -4,61 +4,61 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var @event = new Event
+var requestBody = new Event
 {
 	Subject = "Let's go for lunch",
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Does noon work for you?"
+		Content = "Does noon work for you?",
 	},
 	Start = new DateTimeTimeZone
 	{
 		DateTime = "2020-02-25T12:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2020-02-25T14:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	Location = new Location
 	{
-		DisplayName = "Harry's Bar"
+		DisplayName = "Harry's Bar",
 	},
-	Attendees = new List<Attendee>()
+	Attendees = new List<Attendee>
 	{
 		new Attendee
 		{
 			EmailAddress = new EmailAddress
 			{
 				Address = "AlexW@contoso.OnMicrosoft.com",
-				Name = "Alex Wilbur"
+				Name = "Alex Wilbur",
 			},
-			Type = AttendeeType.Required
-		}
+			Type = AttendeeType.Required,
+		},
 	},
 	Recurrence = new PatternedRecurrence
 	{
 		Pattern = new RecurrencePattern
 		{
 			Type = RecurrencePatternType.Daily,
-			Interval = 1
+			Interval = 1,
 		},
 		Range = new RecurrenceRange
 		{
 			Type = RecurrenceRangeType.Numbered,
-			StartDate = new Date(2020,2,25),
-			NumberOfOccurrences = 2
-		}
-	}
+			StartDate = new Date(DateTime.Parse("2020-02-25")),
+			NumberOfOccurrences = 2,
+		},
+	},
 };
+var result = await graphClient.Me.Events.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
 
-await graphClient.Me.Events
-	.Request()
-	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-	.AddAsync(@event);
 
 ```

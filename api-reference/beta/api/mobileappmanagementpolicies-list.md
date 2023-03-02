@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies
 
 ---
 
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

@@ -124,7 +124,6 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -332,7 +331,6 @@ GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -408,7 +406,6 @@ GET https://graph.microsoft.com/v1.0/users?$count=true&ConsistencyLevel=eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -93,8 +93,6 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 

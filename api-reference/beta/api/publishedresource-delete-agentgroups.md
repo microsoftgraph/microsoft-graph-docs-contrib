@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

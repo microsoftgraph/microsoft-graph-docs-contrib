@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var itemPublication = new ItemPublication
+var requestBody = new ItemPublication
 {
 	Publisher = "International Association of Branding Management Publishing",
-	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg"
+	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg",
 };
+var result = await graphClient.Users["{user-id}"].Profile.Publications["{itemPublication-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Profile.Publications["{itemPublication-id}"]
-	.Request()
-	.UpdateAsync(itemPublication);
 
 ```
