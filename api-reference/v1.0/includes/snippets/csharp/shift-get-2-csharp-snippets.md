@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var shiftPreferences = new ShiftPreferences
+var requestBody = new ShiftPreferences
 {
 	Id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",
-	Availability = new List<ShiftAvailability>()
+	Availability = new List<ShiftAvailability>
 	{
 		new ShiftAvailability
 		{
@@ -18,31 +18,31 @@ var shiftPreferences = new ShiftPreferences
 				Pattern = new RecurrencePattern
 				{
 					Type = RecurrencePatternType.Weekly,
-					DaysOfWeek = new List<DayOfWeek>()
+					DaysOfWeek = new List<DayOfWeekObject?>
 					{
-						DayOfWeek.Monday,
-						DayOfWeek.Wednesday,
-						DayOfWeek.Friday
+						DayOfWeekObject.Monday,
+						DayOfWeekObject.Wednesday,
+						DayOfWeekObject.Friday,
 					},
-					Interval = 1
+					Interval = 1,
 				},
 				Range = new RecurrenceRange
 				{
-					Type = RecurrenceRangeType.NoEnd
-				}
+					Type = RecurrenceRangeType.NoEnd,
+				},
 			},
 			TimeZone = "Pacific Standard Time",
-			TimeSlots = null
-		}
+			TimeSlots = null,
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@odata.etag", "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"}
-	}
+		{
+			"@odata.etag" , "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"
+		},
+	},
 };
+var result = await graphClient.Users["{user-id}"].Settings.ShiftPreferences.PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Settings.ShiftPreferences
-	.Request()
-	.UpdateAsync(shiftPreferences);
 
 ```

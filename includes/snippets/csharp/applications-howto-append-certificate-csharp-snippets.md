@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var application = new Application
+var requestBody = new Application
 {
-	KeyCredentials = new List<KeyCredential>()
+	KeyCredentials = new List<KeyCredential>
 	{
 		new KeyCredential
 		{
@@ -17,7 +17,7 @@ var application = new Application
 			Type = "AsymmetricX509Cert",
 			Usage = "Verify",
 			Key = Convert.FromBase64String("base64MIIDADCCAeigAwIBAgIQejfrj3S974xI//npv7hFHTANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExNDAeFw0yMzAxMTIwOTA4NThaFw0yNDAxMTIwOTI4NThaMBMxETAPBgNVBAMMCDIwMjMwMTE0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt5vEj6j1l5wOVHR4eDGe77HWslaIVJ1NqxrXPm/...+R+U7sboj+kUvmFzXI+Ge73Liu8egL2NzOHHpO43calWgq36a9YW1yhBQR1ioEchu6jmudW3rF6ktmVqQ=="),
-			DisplayName = "CN=20230114"
+			DisplayName = "CN=20230114",
 		},
 		new KeyCredential
 		{
@@ -25,13 +25,11 @@ var application = new Application
 			Type = "AsymmetricX509Cert",
 			Usage = "Verify",
 			Key = Convert.FromBase64String("base64MIIDADCCAeigAwIBAgIQfoIvchhpToxKEPI4iMrU1TANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMzAeFw0yMzAxMTIwODI3NTJaFw0yNDAxMTIwODQ3NTJaMBMxETAPBgNVBAMMCDIwMjMwMTEzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw+iqg1nMjYmFcFJh/.../S5X6qoEOyJBgtfpSBANWAdA=="),
-			DisplayName = "CN=20230113"
-		}
-	}
+			DisplayName = "CN=20230113",
+		},
+	},
 };
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
-await graphClient.Applications["{application-id}"]
-	.Request()
-	.UpdateAsync(application);
 
 ```

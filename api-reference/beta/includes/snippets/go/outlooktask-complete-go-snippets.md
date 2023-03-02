@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeOutlookTaskItemMicrosoft.graph.completeRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.MeOutlookTaskItemCompleteRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 
