@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

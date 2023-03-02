@@ -103,8 +103,6 @@ GET https://graph.microsoft.com/beta/me/authentication/emailMethods/3ddfcfc8-938
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 

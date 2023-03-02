@@ -61,10 +61,6 @@ This example removes the permission identified as {perm-id} from the item {item-
 DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -74,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{pe
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

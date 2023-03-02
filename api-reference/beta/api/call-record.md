@@ -132,7 +132,6 @@ Content-Length: 394
 
 ---
 
-
 ##### Response
 The following example shows the response.
 

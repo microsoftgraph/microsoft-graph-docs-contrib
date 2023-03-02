@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(3)
 
-requestParameters := &graphconfig.EducationClasseItemAssignmentCategoriesMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.EducationClasseItemAssignmentCategoriesDelta()RequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.EducationClasseItemAssignmentCategoriesMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.EducationClasseItemAssignmentCategoriesDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

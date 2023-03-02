@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates/4f2fc37d-967b-4929-995
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/tokenLifetimePolicies/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

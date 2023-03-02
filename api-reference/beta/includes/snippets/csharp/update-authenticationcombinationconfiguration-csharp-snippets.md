@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationCombinationConfiguration = new AuthenticationCombinationConfiguration
+var requestBody = new AuthenticationCombinationConfiguration
 {
-	AppliesToCombinations = new List<AuthenticationMethodModes>()
+	AppliesToCombinations = new List<AuthenticationMethodModes?>
 	{
-		AuthenticationMethodModes.Fido2
-	}
+		AuthenticationMethodModes.Fido2,
+	},
 };
+var result = await graphClient.Identity.ConditionalAccess.AuthenticationStrengths.Policies["{authenticationStrengthPolicy-id}"].CombinationConfigurations["{authenticationCombinationConfiguration-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.AuthenticationStrengths.Policies["{authenticationStrengthPolicy-id}"].CombinationConfigurations["{authenticationCombinationConfiguration-id}"]
-	.Request()
-	.UpdateAsync(authenticationCombinationConfiguration);
 
 ```

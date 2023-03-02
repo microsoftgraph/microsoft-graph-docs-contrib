@@ -4,28 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var recipients = new List<DriveRecipient>()
+var requestBody = new Microsoft.Graph.Shares.Item.Permission.Grant.GrantPostRequestBody
 {
-	new DriveRecipient
+	Recipients = new List<DriveRecipient>
 	{
-		Email = "john@contoso.com"
+		new DriveRecipient
+		{
+			Email = "john@contoso.com",
+		},
+		new DriveRecipient
+		{
+			Email = "ryan@external.com",
+		},
 	},
-	new DriveRecipient
+	Roles = new List<string>
 	{
-		Email = "ryan@external.com"
-	}
+		"read",
+	},
 };
+var result = await graphClient.Shares["{sharedDriveItem-id}"].Permission.Grant.PostAsync(requestBody);
 
-var roles = new List<String>()
-{
-	"read"
-};
-
-await graphClient.Shares["{sharedDriveItem-id}"].Permission
-	.Grant(roles,recipients)
-	.Request()
-	.PostAsync();
 
 ```

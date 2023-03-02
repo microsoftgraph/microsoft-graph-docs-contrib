@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var acronym = new Microsoft.Graph.Search.Acronym
+var requestBody = new Microsoft.Graph.Beta.Models.Search.Acronym
 {
 	DisplayName = "DNN",
 	StandsFor = "Deep Neural Network",
 	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
 	WebUrl = "http://microsoft.com/deep-neural-network",
-	State = Microsoft.Graph.Search.AnswerState.Draft
+	State = Microsoft.Graph.Beta.Models.Search.AnswerState.Draft,
 };
+var result = await graphClient.Search.Acronyms.PostAsync(requestBody);
 
-await graphClient.Search.Acronyms
-	.Request()
-	.AddAsync(acronym);
 
 ```

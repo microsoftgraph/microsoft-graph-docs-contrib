@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

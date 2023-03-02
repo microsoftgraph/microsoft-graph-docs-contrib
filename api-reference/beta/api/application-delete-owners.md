@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/owners/{id}/$ref
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
