@@ -28,12 +28,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.eventQuery"
+  "@odata.type": "microsoft.graph.security.eventQueries"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.eventQuery",
+  "@odata.type": "#microsoft.graph.security.eventQueries",
   "queryType": "String",
   "query": "String"
 }
