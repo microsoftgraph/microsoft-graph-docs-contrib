@@ -50,6 +50,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|approvers|[user](../resources/user.md) collection|Collection of users that can approve the request. Approvers are currently only supported for `delete` type of request.|
+|collaborators|[user](../resources/user.md) collection|Collection of users that can collaborate on the request.|
 | contentQuery         | String | KQL based content query that should be used for search. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|Contains the properties for data subject for the request.|
 |dataSubjectType|dataSubjectType|Data subject type. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
@@ -63,9 +65,7 @@ The following table shows the properties that are required when you create the [
 | pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause, allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to `false` if you want it to perform the estimate and then automatically begin with the retrieval of the content. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |regulations|String collection|One or more regulations for the request.|
 | siteLocations| [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| The SharePoint and OneDrive site locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
-|type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `access`, `tagForAction`, `unknownFutureValue`. The `delete` type is currently not supported.|
-|approvers|[user](../resources/user.md) collection|Collection of users that can approve the request.|
-|collaborators|[user](../resources/user.md) collection|Collection of users that can collaborate on the request.|
+|type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `access`, `delete`, `tagForAction`, `unknownFutureValue`.|
 
 ## Response
 
