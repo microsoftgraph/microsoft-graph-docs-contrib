@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a [shiftWorkCloudPcAccessState](../resources/cloudpc.md#shiftworkcloudpcaccessstate-values) object in the response body.
-Fail with 400 when calling it with dedicated Cloud PC.
+If the Cloud PC has been provisioned as a dedicated device, this method returns  `400 Bad request`.
 
 ## Examples
 
