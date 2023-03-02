@@ -66,7 +66,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_group_chat",
-  "sampleKeys": ["19:d0f51aeb0e8e43d0befb24be72b09ea7@thread.v2"]
+  "sampleKeys": ["19:b8577894a63548969c5c92bb9c80c5e1@thread.v2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
@@ -208,7 +208,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_chat_withmembers",
-  "sampleKeys": ["19:d0f51aeb0e8e43d0befb24be72b09ea7@thread.v2"]
+  "sampleKeys": ["19:b8577894a63548969c5c92bb9c80c5e1@thread.v2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2?$expand=members
@@ -419,7 +419,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_meeting_chat",
-  "sampleKeys": ["19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2"]
+  "sampleKeys": ["19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2?$expand=lastMessagePreview

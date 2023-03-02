@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations/{simulationId}/includedaccounttarget
+GET /security/attackSimulation/simulations/{simulationId}/includedAccountTarget
 ```
 
 ## Request headers
@@ -98,10 +98,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.addressbookaccounttargetcontent",
-    "type" : "addressBook",
-    "accountTargetEmails" : [
-        "john@contoso.com"
-    ]
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "john@contoso.com"
+  ]
 }
 ```
