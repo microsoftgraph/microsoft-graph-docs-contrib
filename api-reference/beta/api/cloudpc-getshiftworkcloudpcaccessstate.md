@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Get the [shiftWorkCloudPcAccessState](../resources/cloudpc.md#shiftworkcloudpcaccessstate-values) of a shift work Cloud PC. This API only supports shared-use licenses.
 For more information, see [cloudPcProvisioningPolicy] (../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)
 Shared-use licenses allow three users per license, with one user logged in at a time. Callers can get the latest shift work Cloud PC accessState and determine if the shift work Cloud PC is accessible to the user. 
-If a web client needs to connect to a shift work Cloud PC, the SharedCloudPcAccessState validates the bookmark scenario. If sharedCloudPcAccessState is not active/activating/hibernated, the web client shows a "bad bookmark".
+If a web client needs to connect to a shift work Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario. If sharedCloudPcAccessState is not active/activating/hibernated, the web client shows a "bad bookmark".
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
