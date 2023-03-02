@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var chatMessage = new ChatMessage
+var requestBody = new ChatMessage
 {
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Hello World"
-	}
+		Content = "Hello World",
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].Replies.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].Replies
-	.Request()
-	.AddAsync(chatMessage);
 
 ```

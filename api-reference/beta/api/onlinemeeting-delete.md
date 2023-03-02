@@ -91,7 +91,6 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868
 
 ---
 
-
 ### Response
 
 The following example shows the response.

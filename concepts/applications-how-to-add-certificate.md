@@ -141,7 +141,6 @@ Content-type: application/json
 
 ---
 
-
 The following example adds a new certificate without replacing the existing certificate that's identified by thumbprint `52ED9B5038A47B9E2E2190715CC238359D4F8F73`.
 
 > **Note:** The key shown here has been shortened for readability.
@@ -202,7 +201,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

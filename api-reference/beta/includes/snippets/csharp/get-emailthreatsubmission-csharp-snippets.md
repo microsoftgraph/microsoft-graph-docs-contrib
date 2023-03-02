@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var emailThreatSubmission = await graphClient.Security.ThreatSubmission.EmailThreats["{security.emailThreatSubmission-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Security.ThreatSubmission.EmailThreats["{emailThreatSubmission-id}"].GetAsync();
+
 
 ```

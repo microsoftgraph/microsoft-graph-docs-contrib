@@ -92,7 +92,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 
 ---
 
-
 ### Response
 
 <!-- {

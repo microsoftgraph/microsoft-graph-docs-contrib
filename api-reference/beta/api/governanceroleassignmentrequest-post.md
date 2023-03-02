@@ -177,7 +177,6 @@ Content-type: application/json
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 
 #### Response
@@ -298,7 +297,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -426,7 +424,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -522,7 +519,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -624,7 +620,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -745,7 +740,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

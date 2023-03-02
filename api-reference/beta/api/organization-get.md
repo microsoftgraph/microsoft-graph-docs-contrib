@@ -146,7 +146,6 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 
 ---
 
-
 ##### Response
 
 Here is an example of the response. 

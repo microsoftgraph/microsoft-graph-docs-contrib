@@ -92,7 +92,6 @@ POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-95
 
 ---
 
-
 ### Response
 The following example shows the response.
 <!-- {
