@@ -1925,7 +1925,7 @@
 			  "ApiChange": "Method",
 			  "ChangedApiName": "getTeamsTeamCounts",
 			  "ChangeType": "Addition",
-			  "Description": "Added the [getTeamsTeamCounts](https://learn.microsoft.com/graph/api/reportroot-getTeamsTeamCounts?view=graph-rest-beta) method to the **MicrosoftTeamsTeamActivityReport** resource.",
+			  "Description": "Added the [getTeamsTeamCounts](https://learn.microsoft.com/graph/api/reportroot-getTeamsTeamCounts?view=graph-rest-beta) method.",
 			  "Target": "getTeamsTeamCounts"
 			}
 		  ],
