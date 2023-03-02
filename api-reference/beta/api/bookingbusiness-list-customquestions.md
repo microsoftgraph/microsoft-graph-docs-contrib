@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 
 ---
 
-
 ### Response
 
 > **Note:** The response object shown here might be shortened for readability.

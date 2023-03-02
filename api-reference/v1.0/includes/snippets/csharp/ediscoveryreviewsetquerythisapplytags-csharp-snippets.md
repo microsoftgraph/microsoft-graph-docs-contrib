@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tagsToAdd = new List<Microsoft.Graph.Security.EdiscoveryReviewTag>()
+var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.Queries.Item.SecurityApplyTags.ApplyTagsPostRequestBody
 {
-	new Microsoft.Graph.Security.EdiscoveryReviewTag
+	TagsToAdd = new List<Microsoft.Graph.Models.Security.EdiscoveryReviewTag>
 	{
-		Id = "d3d99dc704a74801b792b3e1e722aa0d"
-	}
+		new Microsoft.Graph.Models.Security.EdiscoveryReviewTag
+		{
+			Id = "d3d99dc704a74801b792b3e1e722aa0d",
+		},
+	},
 };
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].Queries["{ediscoveryReviewSetQuery-id}"].SecurityApplyTags.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].ReviewSets["{security.ediscoveryReviewSet-id}"].Queries["{security.ediscoveryReviewSetQuery-id}"]
-	.ApplyTags(tagsToAdd,null)
-	.Request()
-	.PostAsync();
 
 ```
