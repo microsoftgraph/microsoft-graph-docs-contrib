@@ -128,7 +128,8 @@ Content-Type: application/json
     "displayName": "Sandeep's iPhone",
     "deviceTag": "",
     "phoneAppVersion": "6.5.4",
-    "createdDateTime": "2020-12-03T23:16:12Z"
+    "createdDateTime": "2020-12-03T23:16:12Z",
+    "clientAppName": "microsoftAuthenticator"
   }
 }
 ```
