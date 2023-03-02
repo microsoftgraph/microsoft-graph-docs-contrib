@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 
 ---
 
-
 ### Response
 Here is an example of the response. 
 >Note: The response object shown here might be shortened for readability.

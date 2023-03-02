@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "odata.maxpagesize=2")
 
-requestParameters := &graphconfig.MeContactFolderItemContactsMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeContactFolderItemContactsDelta()RequestBuilderGetQueryParameters{
 	Select: [] string {"displayName"},
 }
-configuration := &graphconfig.MeContactFolderItemContactsMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeContactFolderItemContactsDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

@@ -22,7 +22,7 @@ $requestBody->setStatus('String');
 
 
 
-$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->managementActionTenantDeploymentStatuses()->changeDeploymentStatus()->post($requestBody);
+$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->managementActionTenantDeploymentStatuses()->managedTenantsChangeDeploymentStatus()->post($requestBody);
 
 
 ```

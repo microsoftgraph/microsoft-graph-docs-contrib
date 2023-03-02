@@ -4,19 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var noncustodialDataSource = new Microsoft.Graph.Ediscovery.NoncustodialDataSource
+var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.NoncustodialDataSource
 {
 	ApplyHoldToSource = true,
-	DataSource = new UserSource
+	DataSource = new Microsoft.Graph.Beta.Models.Ediscovery.DataSource
 	{
-		Email = "adelev@contoso.com"
-	}
+		OdataType = "microsoft.graph.ediscovery.userSource",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"email" , "adelev@contoso.com"
+			},
+		},
+	},
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].NoncustodialDataSources.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].NoncustodialDataSources
-	.Request()
-	.AddAsync(noncustodialDataSource);
 
 ```

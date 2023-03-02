@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com/federationConfiguration
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

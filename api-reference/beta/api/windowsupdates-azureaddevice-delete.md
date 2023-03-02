@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/98
 
 ---
 
-
 ### Response
 
 <!-- {

@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/AAMkAGVmMDEzMTM4LTZmYWUtN
 
 ---
 
-
 ### Response
 
 The following is an example of the response. 

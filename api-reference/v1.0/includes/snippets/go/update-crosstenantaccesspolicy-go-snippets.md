@@ -8,8 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCrossTenantAccessPolicy()
-displayName := "CrossTenantAccessPolicy"
-requestBody.SetDisplayName(&displayName) 
+allowedCloudEndpoints := []string {
+	"microsoftonline.us",
+
+}
+requestBody.SetAllowedCloudEndpoints(allowedCloudEndpoints)
 
 result, err := graphClient.Policies().CrossTenantAccessPolicy().Patch(context.Background(), requestBody, nil)
 

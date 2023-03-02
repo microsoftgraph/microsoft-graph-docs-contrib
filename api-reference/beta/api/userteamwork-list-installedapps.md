@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -167,7 +166,6 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=t
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -261,7 +259,6 @@ GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
