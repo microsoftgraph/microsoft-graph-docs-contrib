@@ -137,22 +137,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/retentionLabel?view=graph-rest-beta) resource",
           "Target": "retentionLabel"
-        },
-        {
-          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
-          "ApiChange": "Resource",
-          "ChangedApiName": "retentionEvent",
-          "ChangeType": "Addition",
-          "Description": "Added the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/retentionEvent?view=graph-rest-beta) resource",
-          "Target": "retentionEvent"
-        },
-        {
-          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
-          "ApiChange": "Resource",
-          "ChangedApiName": "retentionEventType",
-          "ChangeType": "Addition",
-          "Description": "Added the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/retentionEventType?view=graph-rest-beta) resource",
-          "Target": "retentionEventType"
         }
       ],
       "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
@@ -161,6 +145,64 @@
       "CreatedDateTime": "2022-06-23T20:00:41.5572363Z",
       "WorkloadArea": "Security",
       "SubArea": "Records management"
-    }
-  ]
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventPropagationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventPropagationResult](https://learn.microsoft.com/en-us/graph/api/resources/eventPropagationResult?view=graph-rest-1.0) resource type.",
+          "Target": "eventPropagationResult"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventQuery](https://learn.microsoft.com/en-us/graph/api/resources/eventQuery?view=graph-rest-1.0) resource type.",
+          "Target": "eventQuery"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEventStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEventStatus](https://learn.microsoft.com/en-us/graph/api/resources/retentionEventStatus?view=graph-rest-1.0) resource type.",
+          "Target": "retentionEventStatus"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/retentionEvent?view=graph-rest-1.0) resource",
+          "Target": "retentionEvent"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/retentionEventType?view=graph-rest-1.0) resource",
+          "Target": "retentionEventType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventPropagationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventPropagationResult](https://learn.microsoft.com/en-us/graph/api/resources/eventPropagationResult?view=graph-rest-1.0) resource type.",
+          "Target": "eventPropagationResult"
+        }
+      ],
+      "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-20T20:00:41.5572363Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
+      } 
+    ]
 }
