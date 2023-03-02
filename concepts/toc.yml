@@ -304,8 +304,12 @@ items:
             href: education-upload-resource-overview.md
           - name: Upload feedback files
             href: education-upload-feedback-resource-overview.md
-          - name: Assignment and submission state transitions
-            href: assignments-submissions-states-transition.md
+          - name: Assignment and submission state sample overview
+            href: sample-assignment-submission-overview.md
+          - name: Assignment state transitions
+            href: assignments-states-transition.md
+          - name: Submission state transitions
+            href: submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
             href: education-build-notificationchannelurl.md
           - name: Set up an EDU development environment

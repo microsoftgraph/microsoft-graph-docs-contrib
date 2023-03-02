@@ -166,7 +166,8 @@ Content-type: application/json
 
 ## See also
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
+* [State transiton for Student and Teacher role](/graph/sample-assignment-submission-overview)
+* [States, transitions, and limitations for assignments](/graph/assignments-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
