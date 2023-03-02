@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Messages["{message-id}"]
-	.CreateForward(null,null,null)
-	.Request()
-	.PostAsync();
+var result = await graphClient.Me.Messages["{message-id}"].CreateForward.PostAsync(null);
+
 
 ```

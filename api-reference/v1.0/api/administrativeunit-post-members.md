@@ -135,7 +135,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
 #### Response
@@ -204,7 +203,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, provide the properties of the [group](../resources/group.md) object you want to add.
 

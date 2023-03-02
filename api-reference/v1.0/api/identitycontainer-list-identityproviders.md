@@ -180,7 +180,6 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders
 
 ---
 
-
 #### Response
 The following is an example of the response.
 

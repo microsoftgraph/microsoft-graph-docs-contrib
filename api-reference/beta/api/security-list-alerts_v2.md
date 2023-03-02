@@ -105,8 +105,6 @@ GET https://graph.microsoft.com/beta/security/alerts_v2
 
 ---
 
-
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 

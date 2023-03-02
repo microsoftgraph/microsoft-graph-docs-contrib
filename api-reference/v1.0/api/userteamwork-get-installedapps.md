@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

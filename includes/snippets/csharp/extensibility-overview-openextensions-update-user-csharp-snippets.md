@@ -4,19 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var extension = new Extension
+var requestBody = new Extension
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"xboxGamerTag", "FierceAdele"},
-		{"linkedInProfile", "www.linkedin.com/in/testlinkedinprofile"}
-	}
+		{
+			"xboxGamerTag" , "FierceAdele"
+		},
+		{
+			"linkedInProfile" , "www.linkedin.com/in/testlinkedinprofile"
+		},
+	},
 };
+var result = await graphClient.Users["{user-id}"].Extensions["{extension-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Extensions["{extension-id}"]
-	.Request()
-	.UpdateAsync(extension);
 
 ```

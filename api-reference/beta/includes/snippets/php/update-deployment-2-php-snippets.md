@@ -13,7 +13,7 @@ $requestBody = new Deployment();
 $requestBody->set@odatatype('#microsoft.graph.windowsUpdates.deployment');
 
 $settings = new DeploymentSettings();
-$settings->set@odatatype('microsoft.graph.windowsUpdates.windowsDeploymentSettings');
+$settings->set@odatatype('microsoft.graph.windowsUpdates.deploymentSettings');
 
 $settingsMonitoring = new MonitoringSettings();
 $monitoringRulesMonitoringRule1 = new MonitoringRule();

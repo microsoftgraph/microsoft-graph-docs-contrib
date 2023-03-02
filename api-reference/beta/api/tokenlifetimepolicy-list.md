@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/policies/tokenLifetimePolicies
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

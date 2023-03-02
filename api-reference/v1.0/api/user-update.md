@@ -210,7 +210,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -272,7 +271,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -330,7 +328,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 To remove the value of the schema extension from the user object, set the **ext55gb1l09_msLearnCourses** property to `null`.
 

@@ -127,7 +127,6 @@ GET https://graph.microsoft.com/v1.0/me/insights/used
 
 ---
 
-
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability. 
@@ -210,7 +209,6 @@ GET https://graph.microsoft.com/v1.0/me/insights/used?$orderby=LastUsed/LastAcce
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
