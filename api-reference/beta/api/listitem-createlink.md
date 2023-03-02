@@ -58,8 +58,8 @@ The following table shows the parameters that can be used with this action.
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
-|sendNotification|Boolean|If `true`, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint. The default is `false`. Optional.|
-| retainInheritedPermissions |  boolean                       | If `true`, any current inherited permissions are retained on the shared item when sharing the item for the first time. If `false`, all current permissions are removed when sharing for the first time. The default is `true`. Optional. |
+|sendNotification|Boolean|If `true`, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint. The default value is `false`. Optional.|
+| retainInheritedPermissions |  Boolean                       | If `true`, any current inherited permissions are retained on the shared item when sharing the item for the first time. If `false`, all current permissions are removed when sharing for the first time. The default value is `true`. Optional. |
 
 ### Link types
 
