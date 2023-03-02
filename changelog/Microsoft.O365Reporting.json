@@ -1926,7 +1926,7 @@
 			  "ChangedApiName": "teamsChannelMessages",
 			  "ChangeType": "Addition",
 			  "Description": "Added the **teamsChannelMessages** property to the [office365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/resources/office365groupsactivitycounts?view=graph-rest-beta) resource.",
-			  "Target": "getOffice365GroupsActivityCounts"
+			  "Target": "Office365GroupsActivityCounts"
 			},
 			{
 			  "Id": "a02cfa95-915d-411a-8acb-557c8d8aa659",
