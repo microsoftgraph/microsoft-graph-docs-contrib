@@ -4,43 +4,50 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var message = new Message
+var requestBody = new Message
 {
 	Subject = "Annual review",
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "You should be proud!"
+		Content = "You should be proud!",
 	},
-	ToRecipients = new List<Recipient>()
+	ToRecipients = new List<Recipient>
 	{
 		new Recipient
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "rufus@contoso.com"
-			}
-		}
+				Address = "rufus@contoso.com",
+			},
+		},
 	},
-	Extensions = new MessageExtensionsCollectionPage()
+	Extensions = new List<Extension>
 	{
-		new OpenTypeExtension
+		new Extension
 		{
-			ExtensionName = "Com.Contoso.Referral",
-			AdditionalData = new Dictionary<string, object>()
+			OdataType = "microsoft.graph.openTypeExtension",
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"companyName", "Wingtip Toys"},
-				{"expirationDate", "2015-12-30T11:00:00Z"},
-				{"dealValue", "10000"}
-			}
-		}
-	}
+				{
+					"extensionName" , "Com.Contoso.Referral"
+				},
+				{
+					"companyName" , "Wingtip Toys"
+				},
+				{
+					"expirationDate" , "2015-12-30T11:00:00.000Z"
+				},
+				{
+					"dealValue" , 10000
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Me.Messages.PostAsync(requestBody);
 
-await graphClient.Me.Messages
-	.Request()
-	.AddAsync(message);
 
 ```

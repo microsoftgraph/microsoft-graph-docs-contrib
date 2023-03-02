@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC172851
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

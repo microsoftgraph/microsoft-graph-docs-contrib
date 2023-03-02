@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissi
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

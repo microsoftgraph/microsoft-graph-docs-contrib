@@ -91,9 +91,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 
 ---
 
-
-
-
 ### Response
 
 The following is an example of the response.

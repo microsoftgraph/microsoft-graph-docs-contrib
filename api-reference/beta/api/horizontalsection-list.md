@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLa
 
 ---
 
-
 ### Response
 
 The following is an example of the response

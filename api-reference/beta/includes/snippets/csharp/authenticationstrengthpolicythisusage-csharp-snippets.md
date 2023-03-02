@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationStrengthUsage = await graphClient.Policies.AuthenticationStrengthPolicies["{authenticationStrengthPolicy-id}"]
-	.Usage()
-	.Request()
-	.GetAsync();
+var result = await graphClient.Policies.AuthenticationStrengthPolicies["{authenticationStrengthPolicy-id}"].Usage.GetAsync();
+
 
 ```

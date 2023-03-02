@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 
 ---
 
-
 ##### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

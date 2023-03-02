@@ -94,7 +94,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
 
 ---
 
-
 ### Response
 
 <!-- {

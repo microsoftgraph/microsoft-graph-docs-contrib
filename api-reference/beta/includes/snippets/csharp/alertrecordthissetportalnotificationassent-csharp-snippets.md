@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.DeviceManagement.Monitoring.AlertRecords["{deviceManagement.alertRecord-id}"]
-	.SetPortalNotificationAsSent()
-	.Request()
-	.PostAsync();
+await graphClient.DeviceManagement.Monitoring.AlertRecords["{alertRecord-id}"].DeviceManagementSetPortalNotificationAsSent.PostAsync();
+
 
 ```
