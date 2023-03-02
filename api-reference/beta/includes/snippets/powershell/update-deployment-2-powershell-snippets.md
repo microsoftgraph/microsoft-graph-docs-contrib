@@ -9,7 +9,7 @@ Import-Module Microsoft.Graph.WindowsUpdates
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
 	Settings = @{
-		"@odata.type" = "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
+		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentSettings"
 		Monitoring = @{
 			MonitoringRules = @(
 				@{

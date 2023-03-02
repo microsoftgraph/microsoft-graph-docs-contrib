@@ -133,7 +133,6 @@ Content-type: application/json
 
 ---
 
-
 <br/>
 
 ### Response

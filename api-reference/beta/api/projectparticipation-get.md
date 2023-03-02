@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/me/profile/projects/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

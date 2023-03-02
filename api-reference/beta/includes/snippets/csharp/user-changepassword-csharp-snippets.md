@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var currentPassword = "xWwvJ]6NMw+bWH-d";
+var requestBody = new Microsoft.Graph.Beta.Me.ChangePassword.ChangePasswordPostRequestBody
+{
+	CurrentPassword = "xWwvJ]6NMw+bWH-d",
+	NewPassword = "0eM85N54wFxWwvJ]",
+};
+await graphClient.Me.ChangePassword.PostAsync(requestBody);
 
-var newPassword = "0eM85N54wFxWwvJ]";
-
-await graphClient.Me
-	.ChangePassword(currentPassword,newPassword)
-	.Request()
-	.PostAsync();
 
 ```
