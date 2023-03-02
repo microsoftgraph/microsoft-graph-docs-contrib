@@ -104,7 +104,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Member|Description|
 |:---|:---|
-|unassigned|Default. Set to unassigned if the Cloud PC is not consuming any shared use licenses.|
+|unassigned|Default. Set to unassigned if the Cloud PC is not consuming any shared-use licenses.|
 |noLicensesAvailable|Indicates the shift work Cloud PC cannot be assigned any sharedUseLicenses as all shared use licenses are in use as of now.|
 |activationFailed|Indicates the shift work Cloud PC activation failed after user requested the shift work Cloud PC.|
 |active|Indicates the shift work Cloud PC is in active state with a shared use license assigned and the user could connect to this Cloud PC.|
