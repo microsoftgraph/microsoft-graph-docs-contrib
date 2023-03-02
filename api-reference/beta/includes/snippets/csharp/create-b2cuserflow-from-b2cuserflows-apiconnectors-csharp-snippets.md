@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var b2cIdentityUserFlow = new B2cIdentityUserFlow
+var requestBody = new B2cIdentityUserFlow
 {
 	Id = "UserFlowWithAPIConnector",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
@@ -15,23 +15,25 @@ var b2cIdentityUserFlow = new B2cIdentityUserFlow
 	{
 		PostFederationSignup = new IdentityApiConnector
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"@odata.id", "{apiConnectorId}"}
-			}
+				{
+					"@odata.id" , "{apiConnectorId}"
+				},
+			},
 		},
 		PostAttributeCollection = new IdentityApiConnector
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"@odata.id", "{apiConnectorId}"}
-			}
-		}
-	}
+				{
+					"@odata.id" , "{apiConnectorId}"
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Identity.B2cUserFlows.PostAsync(requestBody);
 
-await graphClient.Identity.B2cUserFlows
-	.Request()
-	.AddAsync(b2cIdentityUserFlow);
 
 ```

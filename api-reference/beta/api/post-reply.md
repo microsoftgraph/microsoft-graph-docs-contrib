@@ -135,7 +135,6 @@ Content-type: application/json
 
 ---
 
-
 ##### Response
 ##### Response
 Here is an example of the response.
