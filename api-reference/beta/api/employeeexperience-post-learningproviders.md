@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST /employeeExperience/learningProviders 
+POST https://graph.microsoft.com/beta/employeeExperience/learningProviders 
 Content-Type: application/json
 
 {
