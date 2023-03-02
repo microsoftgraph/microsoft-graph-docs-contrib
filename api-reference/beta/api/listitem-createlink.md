@@ -58,6 +58,8 @@ The following table shows the parameters that can be used with this action.
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
+|sendNotification|Boolean|If `true`, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint. The default value is `false`. Optional.|
+| retainInheritedPermissions |  Boolean                       | If `true`, any current inherited permissions are retained on the shared item when sharing the item for the first time. If `false`, all current permissions are removed when sharing for the first time. The default value is `true`. Optional. |
 
 ### Link types
 
@@ -95,6 +97,8 @@ The response will be `201 Created` if a new sharing link is created for the list
 ### Example 1: Create an anonymous sharing link
 The following example requests a sharing link to be created for the listItem specified by {itemId} in the list specified {listId}.
 The sharing link is configured to be read-only and usable by anyone with the link.
+For OneDrive for Business and SharePoint users, use the `sendNotification` parameter to create a sharing link. The `sharingLink` is then sent to recipients via email.
+All existing permissions are removed when sharing for the first time if `retainInheritedPermissions` is false.
 
 #### Request
 
@@ -116,7 +120,9 @@ Content-Type: application/json
     {
       "@odata.type": "microsoft.graph.driveRecipient"
     }
-  ]
+  ],
+  "sendNotification": true,
+  "retainInheritedPermissions": false
 }
 ```
 
@@ -227,7 +233,7 @@ Content-Type: application/json
 ### Example 3: Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
-When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
+When an embed link is created, the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
 >**Note:** Embed links are only supported for OneDrive personal.
 

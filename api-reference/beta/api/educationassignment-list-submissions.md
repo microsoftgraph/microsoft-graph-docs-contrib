@@ -202,7 +202,6 @@ GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-6
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 

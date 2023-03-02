@@ -120,7 +120,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
 #### Response
@@ -224,7 +223,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleAssignmentScheduleRequest = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests["{unifiedRoleAssignmentScheduleRequest-id}"]
-	.Request()
-	.Expand("roleDefinitionId")
-	.Select("principalId,action,roleDefinitionId")
-	.GetAsync();
+var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests["{unifiedRoleAssignmentScheduleRequest-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "principalId","action","roleDefinitionId" };
+	requestConfiguration.QueryParameters.Expand = new string []{ "roleDefinition","activatedUsing","principal","targetSchedule" };
+});
+
 
 ```

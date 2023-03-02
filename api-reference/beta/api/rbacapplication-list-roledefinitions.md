@@ -145,7 +145,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -297,7 +296,6 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -428,7 +426,6 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

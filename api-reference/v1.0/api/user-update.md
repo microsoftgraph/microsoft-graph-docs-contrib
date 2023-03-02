@@ -59,6 +59,7 @@ In the request body, supply the values for relevant fields that should be update
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`.|
 |givenName|String|The given name (first name) of the user.|
 |employeeHireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><br> For delegated scenarios, the calling user must have the Global Administrator role and the calling app assigned the _User.Read.All_ and _User-LifeCycleInfo.ReadWrite.All_ delegated permissions. |
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
 |mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. |
@@ -209,7 +210,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -271,7 +271,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -329,7 +328,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 To remove the value of the schema extension from the user object, set the **ext55gb1l09_msLearnCourses** property to `null`.
 

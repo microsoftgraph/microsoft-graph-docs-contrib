@@ -10,13 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
-
-requestCount := true
-
 requestParameters := &graphconfig.MeRequestBuilderGetQueryParameters{
 	Expand: [] string {"manager($levels=max;$select=id,displayName)"},
 	Select: [] string {"id","displayName"},
-	Count: &requestCount,
 }
 configuration := &graphconfig.MeRequestBuilderGetRequestConfiguration{
 	Headers: headers,

@@ -4,27 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var parameters = new List<SynchronizationJobApplicationParameters>()
+var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Jobs.Item.ProvisionOnDemand.ProvisionOnDemandPostRequestBody
 {
-	new SynchronizationJobApplicationParameters
+	Parameters = new List<SynchronizationJobApplicationParameters>
 	{
-		Subjects = new List<SynchronizationJobSubject>()
+		new SynchronizationJobApplicationParameters
 		{
-			new SynchronizationJobSubject
+			Subjects = new List<SynchronizationJobSubject>
 			{
-				ObjectId = "9bb0f679-a883-4a6f-8260-35b491b8b8c8",
-				ObjectTypeName = "User"
-			}
+				new SynchronizationJobSubject
+				{
+					ObjectId = "9bb0f679-a883-4a6f-8260-35b491b8b8c8",
+					ObjectTypeName = "User",
+				},
+			},
+			RuleId = "ea807875-5618-4f0a-9125-0b46a05298ca",
 		},
-		RuleId = "ea807875-5618-4f0a-9125-0b46a05298ca"
-	}
+	},
 };
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].ProvisionOnDemand.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
-	.ProvisionOnDemand(parameters)
-	.Request()
-	.PostAsync();
 
 ```
