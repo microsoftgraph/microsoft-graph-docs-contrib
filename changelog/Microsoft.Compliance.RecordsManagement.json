@@ -148,6 +148,29 @@
     },
     {
       "ChangeList": [
+        {"Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "eventPropagationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventPropagationStatus** enumeration type.",
+          "Target": "eventPropagationStatus"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "eventStatusType",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventStatusType** enumeration type.",
+          "Target": "eventStatusType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "queryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryType** enumeration type.",
+          "Target": "queryType"
+        }
         {
           "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
           "ApiChange": "Resource",
