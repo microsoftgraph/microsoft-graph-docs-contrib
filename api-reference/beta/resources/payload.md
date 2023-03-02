@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an attack simulation training payload in a tenant. A payload is the phishing email message and links or attachment content that's are presented to users in simulations
+Represents an attack simulation training payload in a tenant. A payload is the content (for example, message, links, and attachments) in a phishing email that is presented to users in an attack simulation training campaign.
 
 Inherits from [entity](../resources/entity.md).
 
