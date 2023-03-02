@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "approvers",
           "ChangeType": "Addition",
-          "Description": "Added the **approvers** relationship to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **approvers** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "collaborators",
           "ChangeType": "Addition",
-          "Description": "Added the **collaborators** relationship to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **collaborators** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         }
       ],
