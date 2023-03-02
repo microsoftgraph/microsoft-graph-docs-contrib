@@ -4,18 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var group = new Group
+var requestBody = new Microsoft.Graph.Beta.Models.ReferenceCreate
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id", "https://graph.microsoft.com/beta/groups/{id}"}
-	}
+	OdataId = "https://graph.microsoft.com/beta/groups/{id}",
 };
+await graphClient.Print.Shares["{printerShare-id}"].AllowedGroups.Ref.PostAsync(requestBody);
 
-await graphClient.Print.Shares["{printerShare-id}"].AllowedGroups.References
-	.Request()
-	.AddAsync(group);
 
 ```

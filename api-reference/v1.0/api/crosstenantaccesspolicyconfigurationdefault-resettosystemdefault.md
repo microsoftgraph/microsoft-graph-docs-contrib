@@ -90,7 +90,6 @@ POST https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default/r
 
 ---
 
-
 ### Response
 
 <!-- {

@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

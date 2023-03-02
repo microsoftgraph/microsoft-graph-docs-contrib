@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupDelta -Property "displayName,description,mailNickname" 
+Get-MgGroup -GroupId $groupId -Property "displayName,description,mailNickname" 
 
 ```

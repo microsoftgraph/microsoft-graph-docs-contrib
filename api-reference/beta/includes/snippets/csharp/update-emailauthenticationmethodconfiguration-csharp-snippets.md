@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationMethodConfiguration = new EmailAuthenticationMethodConfiguration
+var requestBody = new AuthenticationMethodConfiguration
 {
-	AllowExternalIdToUseEmailOtp = ExternalEmailOtpState.Disabled
+	OdataType = "#microsoft.graph.emailAuthenticationMethodConfiguration",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"allowExternalIdToUseEmailOtp" , "disabled"
+		},
+	},
 };
+var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
-	.Request()
-	.UpdateAsync(authenticationMethodConfiguration);
 
 ```

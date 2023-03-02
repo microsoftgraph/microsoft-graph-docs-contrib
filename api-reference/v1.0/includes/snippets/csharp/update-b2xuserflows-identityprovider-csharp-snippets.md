@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityProvider = new IdentityProvider
+var requestBody = new Microsoft.Graph.Identity.B2xUserFlows.Item.IdentityProviders.Item.IdentityProvider
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@odata.id", "https://graph.microsoft.com/v1.0/identityProviders/Facebook-OAUTH"}
-	}
+		{
+			"@odata.id" , "https://graph.microsoft.com/v1.0/identityProviders/Facebook-OAUTH"
+		},
+	},
 };
+await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].IdentityProviders["{identityProvider-id}"].PostAsync(requestBody);
 
-await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].IdentityProviders.References
-	.Request()
-	.AddAsync(identityProvider);
 
 ```

@@ -101,7 +101,6 @@ PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
