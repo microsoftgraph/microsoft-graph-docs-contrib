@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.TaskProcessingResultsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemTaskReportItemTaskProcessingResultsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","failureReason","processingStatus","subject","task"},
 }
-configuration := &graphconfig.TaskProcessingResultsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemTaskReportItemTaskProcessingResultsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

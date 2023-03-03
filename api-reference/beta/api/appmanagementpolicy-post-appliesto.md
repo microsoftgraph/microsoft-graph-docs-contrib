@@ -159,7 +159,6 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolici
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

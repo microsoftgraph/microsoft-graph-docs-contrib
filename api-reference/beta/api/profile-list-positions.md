@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/me/profile/positions
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

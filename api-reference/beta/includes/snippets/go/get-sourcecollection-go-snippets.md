@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.SourceCollectionRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.ComplianceEdiscoveryCaseItemSourceCollectionItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"},
 }
-configuration := &graphconfig.SourceCollectionRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ComplianceEdiscoveryCaseItemSourceCollectionItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

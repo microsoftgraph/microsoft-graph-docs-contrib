@@ -195,7 +195,6 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
 
 ---
 
-
 #### Response
 
 The following is an example of the response. 

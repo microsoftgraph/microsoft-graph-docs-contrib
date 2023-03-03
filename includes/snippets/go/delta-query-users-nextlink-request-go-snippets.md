@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestSkiptoken := "oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa"
 
-requestParameters := &graphconfig.DeltaRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.UsersDelta()RequestBuilderGetQueryParameters{
 	Skiptoken: &requestSkiptoken,
 }
-configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UsersDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

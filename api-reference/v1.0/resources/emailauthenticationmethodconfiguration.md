@@ -50,9 +50,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-  "id": "String (identifier)",
-  "state": "String",
   "allowExternalIdToUseEmailOtp": "String",
-  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
+  "id": "String (identifier)",
+  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ],
+  "state": "String"
 }
 ```

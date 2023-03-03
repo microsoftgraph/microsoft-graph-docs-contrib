@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"User-Agent": "ContosoLobApp/1.0",
-}
-configuration := &graphconfig.EvaluateApplicationRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("User-Agent", "ContosoLobApp/1.0")
+
+configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsSecurity.evaluateApplicationRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvaluateApplicationPostRequestBody()
@@ -101,7 +101,7 @@ additionalData := map[string]interface{}{
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)
 
-result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().EvaluateApplication().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().SecurityEvaluateApplication().Post(context.Background(), requestBody, configuration)
 
 
 ```

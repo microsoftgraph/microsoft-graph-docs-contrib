@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.AppliesToRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetQueryParameters{
 	Select: [] string {"id","appId","displayName","createdDateTime"},
 }
-configuration := &graphconfig.AppliesToRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-requestFilter := "graphlearn_courses/courseId eq ‘123’"
+requestFilter := "graphlearn_courses/courseId eq '123'"
 
 requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

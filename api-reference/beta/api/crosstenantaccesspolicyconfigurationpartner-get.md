@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9
 
 ---
 
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -110,6 +109,11 @@ Content-Type: application/json
 {
   "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
   "inboundTrust": null,
+  "automaticUserConsentSettings":
+  {
+    "inboundAllowed": null,
+    "outboundAllowed": null
+  },
   "b2bCollaborationInbound": null,
   "b2bCollaborationOutbound": null,
   "b2bDirectConnectOutbound": null,

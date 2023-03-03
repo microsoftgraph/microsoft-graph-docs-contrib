@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.MessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeMessagesRequestBuilderGetQueryParameters{
 	Orderby: [] string {"from/emailAddress/address"},
 }
-configuration := &graphconfig.MessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

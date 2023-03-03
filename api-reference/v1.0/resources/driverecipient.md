@@ -34,8 +34,8 @@ The recipients resource has these properties.
   "optionalProperties": ["alias", "objectId", "email"] } -->
 ```json
 {
-  "email": "string",
   "alias": "string",
+  "email": "string",
   "objectId": "string",
 }
 ```

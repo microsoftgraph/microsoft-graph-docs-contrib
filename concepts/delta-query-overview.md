@@ -1,7 +1,9 @@
 ---
 title: "Use delta query to track changes in Microsoft Graph data"
 description: "Use delta query to enable applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request."
-author: "jumasure"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jumasure
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 08/12/2022
@@ -10,9 +12,6 @@ ms.date: 08/12/2022
 # Use delta query to track changes in Microsoft Graph data
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
-
-> [!div class="nextstepaction"]
-> [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 
 ## Use delta query to track changes in a resource collection
 
@@ -98,16 +97,11 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-delta-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Resource representation in the delta query response
 
@@ -139,6 +133,7 @@ Delta query is currently supported for the following resources. Note that some r
 | Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                     |
 | Administrative units (preview)                                 | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource      |
 | Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                    |
+| Device objects                                                 | [delta](/graph/api/device-delta) function of the [device](/graph/api/resources/device) resource                                                    |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Drive items\*                                                  | [delta](/graph/api/driveitem-delta) function of the [driveItem](/graph/api/resources/driveitem) resource             |
 | Education assignments                                          | [delta](/graph/api/educationassignment-delta) function of the [educationAssignment](/graph/api/resources/educationassignment) resource             |
@@ -243,6 +238,7 @@ The same [permissions](./permissions-reference.md) that are required to read a s
 
 ## Delta query request examples
 
+- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Get incremental changes to events in a calendar view](delta-query-events.md)
 - [Get incremental changes to messages in a folder](./delta-query-messages.md)
 - [Get incremental changes to groups](./delta-query-groups.md)

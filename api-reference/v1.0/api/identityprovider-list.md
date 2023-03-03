@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/v1.0/identityProviders
 
 ---
 
-
 ##### Response
 
 <!-- {

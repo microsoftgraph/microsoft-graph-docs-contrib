@@ -60,14 +60,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 239
+Content-Length: 251
 
 {
   "value": {
     "@odata.type": "microsoft.graph.appLogCollectionDownloadDetails",
     "downloadUrl": "https://example.com/downloadUrl/",
     "decryptionKey": "Decryption Key value",
-    "appLogDecryptionAlgorithm": "aes256"
+    "appLogDecryptionAlgorithm": "unknownFutureValue"
   }
 }
 ```
