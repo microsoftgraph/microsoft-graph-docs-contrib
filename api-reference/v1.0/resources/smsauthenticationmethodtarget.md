@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # smsAuthenticationMethodTarget resource type
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 A collection of groups enabled to use [Text Message authentication methods policy](../resources/smsAuthenticationMethodConfiguration.md) in Azure AD.
 
 ## Properties
@@ -38,9 +36,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.smsAuthenticationMethodTarget",
-  "targetType": "String",
   "id": "String (identifier)",
+  "targetType": "String",
   "isRegistrationRequired": "Boolean",
   "isUsableForSignIn": "Boolean"
 }
 ```
+

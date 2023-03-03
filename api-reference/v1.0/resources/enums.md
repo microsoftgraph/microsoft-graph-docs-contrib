@@ -2294,3 +2294,11 @@ Possible values for user account types (group membership), per Windows definitio
 |sharedContent|
 |privateContent|
 |unknownFutureValue|
+
+### authenticationMethodsPolicyMigrationState values
+
+|Member|
+|:-----|
+|premigration|
+|migrationInProgress|
+|migrationComplete|
