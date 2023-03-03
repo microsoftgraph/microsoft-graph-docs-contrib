@@ -110,9 +110,9 @@ Automatically create teams for classes at the beginning of the school year, and 
 ### Create teams linked to your app
 
 Let customers create new [teams](/graph/api/resources/team) and [channels](/graph/api/resources/channel). 
-[Install](/graph/api/teamsappinstallation-add) your 
+[Install](/graph/api/resources/teamsappinstallation) your 
 [Teams app](/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
-[Pin your app to a tab](/graph/api/teamstab-add) in the new channel. 
+[Pin your app to a tab](/graph/api/resources/teamstab) in the new channel. 
 [Send messages](/graph/api/chatmessage-post) to the channel linking back to your website.
 
 
