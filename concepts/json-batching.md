@@ -2,8 +2,11 @@
 title: "Combine multiple requests in one HTTP call using JSON batching"
 description: "Use JSON batching to optimize your application by combining multiple requests into a single JSON object, saving the application significant network latency."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 10/08/2022
 ---
 
 # Combine multiple requests in one HTTP call using JSON batching
@@ -157,7 +160,7 @@ The status code on a batch response is typically `200` or `400`. If the batch re
 
 ## Sequencing requests with the dependsOn property
 
-Individual requests can be executed in a specified order by using the **dependsOn** property. This property is an array of strings that references the **id** of a different individual request. For this reason, the values for **id** must be unique. For example, in the following request, the client is specifying that requests should be run in the order request 1 then request 3, then request 2, then request 4.
+Individual requests can be executed in a specified order by using the **dependsOn** property. This property is an array of strings that references the **id** of a different individual request. For this reason, the values for **id** must be unique. For example, in the following request, the client is specifying that requests should be run in the order request 1 then request 2, then request 4, then request 3.
 
 ```json
 {
@@ -204,7 +207,6 @@ JSON batch requests are currently limited to 20 individual requests in addition 
 
 * Depending on the APIs that are part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of `429`.
-* Batches targeting Outlook resources (such as mail and calendar) can only contain four requests targeting the same mailbox. For details, see [Outlook service limits][throttling-outlook].
 
 For more information, see [Throttling and batching][throttling-and-batching].
 
@@ -215,7 +217,6 @@ For a list of current limitations related to batching, see [known issues][batchi
 [batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
 [throttling-and-batching]: throttling.md#throttling-and-batching
-[throttling-outlook]: throttling-limits.md#outlook-service-limits
 
 ## See also
 

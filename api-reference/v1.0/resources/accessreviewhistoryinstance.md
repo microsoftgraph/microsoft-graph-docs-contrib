@@ -1,7 +1,7 @@
 ---
 title: "accessReviewHistoryInstance resource type"
 description: "Represents a recurrence of an accessReviewHistoryDefinition object."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -50,13 +50,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewHistoryInstance",
-  "id": "String (identifier)",
-  "reviewHistoryPeriodStartDateTime": "String (timestamp)",
-  "reviewHistoryPeriodEndDateTime": "String (timestamp)",
-  "status": "String",
-  "runDateTime": "String (timestamp)",
-  "fulfilledDateTime": "String (timestamp)",
   "downloadUri": "String",
-  "expirationDateTime": "String (timestamp)"
+  "expirationDateTime": "String (timestamp)",
+  "fulfilledDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "reviewHistoryPeriodEndDateTime": "String (timestamp)",
+  "reviewHistoryPeriodStartDateTime": "String (timestamp)",
+  "runDateTime": "String (timestamp)",
+  "status": "String"
+  
 }
 ```

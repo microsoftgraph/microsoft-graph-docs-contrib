@@ -2,8 +2,11 @@
 title: "Microsoft Graph throttling guidance"
 description: "Find best practices for maintaining optimal performance of the Microsoft Graph service if an overwhelming number of requests occurs."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jameskitindi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/11/2022
 ---
 
 # Microsoft Graph throttling guidance
@@ -41,6 +44,7 @@ Whenever the throttling threshold is exceeded, Microsoft Graph responds with a r
 
 ```http
 HTTP/1.1 429 Too Many Requests
+Content-Length: 312
 Content-Type: application/json
 Retry-After: 10
 
@@ -97,4 +101,5 @@ If SDKs retry throttled requests automatically when they are not batched, thrott
 
 ## Next steps
 
-Identify the [throttling limits](throttling-limits.md) that apply for each Microsoft Graph resource.
+- Identify the [throttling limits](throttling-limits.md) that apply for each Microsoft Graph resource.
+- [Training module: Optimize network traffic with Microsoft Graph](/training/modules/optimize-network-traffic)

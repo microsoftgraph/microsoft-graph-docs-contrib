@@ -4,6 +4,7 @@ description: "Add an existing educationCategory to an educationAssignment"
 ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
+ms.collection: "education"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add one or more existing [educationCategory](../resources/educationcategory.md) objects to this [educationAssignment](../resources/educationassignment.md).
+Add one or more existing [educationCategory](../resources/educationcategory.md) objects to this [educationAssignment](../resources/educationassignment.md). Only teachers and students can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +48,8 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "add_educationcategory_to_educationassignment"
+  "name": "add_educationcategory_to_educationassignment",
+  "sampleKeys": ["11021", "19002"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/$ref

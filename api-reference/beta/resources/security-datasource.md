@@ -25,7 +25,7 @@ None.
 |createdDateTime|DateTimeOffset|The date and time the **dataSource** was created.|
 |displayName|String|The display name of the **dataSource**. This will be the name of the SharePoint site.|
 |id|String| The ID of the **dataSource**. This is not the ID of the actual site.|
-|holdStatus|String|The hold status of the **dataSource**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **dataSource**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 ## Relationships
 None.
 

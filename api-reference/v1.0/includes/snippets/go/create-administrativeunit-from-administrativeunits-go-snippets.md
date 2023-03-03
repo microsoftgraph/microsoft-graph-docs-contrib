@@ -7,14 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAdministrativeUnit()
+requestBody := graphmodels.NewAdministrativeUnit()
 displayName := "Seattle District Technical Schools"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Seattle district technical schools administration"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 visibility := "HiddenMembership"
-requestBody.SetVisibility(&visibility)
-result, err := graphClient.Directory().AdministrativeUnits().Post(requestBody)
+requestBody.SetVisibility(&visibility) 
+
+result, err := graphClient.Directory().AdministrativeUnits().Post(context.Background(), requestBody, nil)
 
 
 ```

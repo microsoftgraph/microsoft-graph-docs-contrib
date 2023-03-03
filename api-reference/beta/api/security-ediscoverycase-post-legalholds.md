@@ -42,17 +42,16 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
-You can specify the following properties when creating an **ediscoveryHoldPolicy**.
+You can specify the following properties when you create an **ediscoveryHoldPolicy**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the legal hold policy. Required.|
 |description|String|The description of the legal hold policy. Optional.|
-|contentQuery|String|The content query of the legal hold policy. Optional.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
 
 ## Examples
 
@@ -66,13 +65,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalHolds
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalHolds
 Content-Type: application/json
 
 {
     "displayname": "My legalHold with sources",
     "description": "Created from Graph API",
-    "contentQuery": "Bazooka",
     "userSources@odata.bind": [
         {
             "@odata.type": "microsoft.graph.security.userSource",
@@ -89,6 +87,7 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryholdpolicy-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -109,10 +108,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryholdpolicy-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryholdpolicy-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -128,7 +131,6 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/legalHolds/$entity",
     "isEnabled": true,
     "errors": [],
-    "contentQuery": "Bazooka",
     "description": "Created from Graph API",
     "createdDateTime": "2022-05-23T03:54:11.1Z",
     "lastModifiedDateTime": "2022-05-23T03:54:11.1Z",

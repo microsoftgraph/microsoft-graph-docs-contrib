@@ -3,7 +3,7 @@ title: "Get tenantDetailedInformation"
 description: "Read the properties and relationships of a tenantDetailedInformation object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -61,16 +61,13 @@ If successful, this method returns a `200 OK` response code and a [tenantDetaile
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsDetailedInformation/{tenantDetailedInformationId}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tenantdetailedinformation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tenantdetailedinformation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-tenantdetailedinformation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -81,9 +78,15 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsD
 [!INCLUDE [sample-code](../includes/snippets/go/get-tenantdetailedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-tenantdetailedinformation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-tenantdetailedinformation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

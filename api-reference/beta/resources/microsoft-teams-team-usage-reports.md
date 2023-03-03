@@ -1,19 +1,19 @@
 ---
-title: "Microsoft Teams team usage reports"
-description: "Use the Microsoft Teams team usage reports to get insights into the usage of teams in your organization."
+title: "Microsoft Teams team activity reports"
+description: "Use the Microsoft Teams team activity reports to get insights into the usage of teams in your organization."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "zhiliqiao"
 doc_type: conceptualPageType
 ---
 
-# Microsoft Teams team usage reports
+# Microsoft Teams team activity reports
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the Microsoft Teams team usage reports to get insights into the usage of teams in your organization.
+Use the Microsoft Teams team activity reports to get insights into the usage of teams in your organization.
 
 ## Reports
 

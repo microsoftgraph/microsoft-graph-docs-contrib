@@ -1,7 +1,7 @@
 ---
 title: "createDeviceLogCollectionRequest action"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -85,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 567
+Content-Length: 616
 
 {
   "value": {
@@ -98,11 +98,8 @@ Content-Length: 567
     "receivedDateTimeUTC": "2016-12-31T23:59:48.6545758-08:00",
     "initiatedByUserPrincipalName": "Initiated By User Principal Name value",
     "expirationDateTimeUTC": "2017-01-01T00:02:49.2157996-08:00",
-    "size": 1.3333333333333333
+    "size": 1.3333333333333333,
+    "enrolledByUser": "Enrolled By User value"
   }
 }
 ```
-
-
-
-

@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
+requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
 status := "Deprecated"
-requestBody.SetStatus(&status)
-customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(requestBody)
+requestBody.SetStatus(&status) 
+
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

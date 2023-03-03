@@ -32,13 +32,31 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation.|
 |createdDateTime|DateTimeOffset| The date and time the export was created.|
 |description|String| The description provided for the export.|
-|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
+|exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|microsoft.graph.security.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. |
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation.|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+
+### exportOptions values
+
+|Member|Description|
+|:----|-----------|
+|originalFiles|Include original files in native format. For example: docx, xlsx, pptx, doc, xlst, pptm, etc.|
+|text|Include extracted text from the original files.|
+|pdfReplacement|Replace original file with PDF version when available.|
+|fileInfo|Include metadata of original files in a load file.|
+|tags|Include tag information in fileInfo.|
+
+### exportFileStructure values
+
+|Member|Description|
+|:----|-----------|
+|None|Default file structure.|
+|directory|All files in a singe folder called NativeFiles.|
+|pst|Mails will be grouped in pst format.|
 
 ## Relationships
 |Relationship|Type|Description|

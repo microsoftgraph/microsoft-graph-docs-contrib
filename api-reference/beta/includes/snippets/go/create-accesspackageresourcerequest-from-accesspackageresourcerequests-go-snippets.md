@@ -7,28 +7,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageResourceRequest()
+requestBody := graphmodels.NewAccessPackageResourceRequest()
 catalogId := "26ac0c0a-08bc-4a7b-a313-839f58044ba5"
-requestBody.SetCatalogId(&catalogId)
+requestBody.SetCatalogId(&catalogId) 
 requestType := "AdminAdd"
-requestBody.SetRequestType(&requestType)
+requestBody.SetRequestType(&requestType) 
 justification := ""
-requestBody.SetJustification(&justification)
-accessPackageResource := msgraphsdk.NewAccessPackageResource()
-requestBody.SetAccessPackageResource(accessPackageResource)
+requestBody.SetJustification(&justification) 
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Sales"
-accessPackageResource.SetDisplayName(&displayName)
+accessPackageResource.SetDisplayName(&displayName) 
 description := "https://contoso.sharepoint.com/sites/Sales"
-accessPackageResource.SetDescription(&description)
+accessPackageResource.SetDescription(&description) 
 url := "https://contoso.sharepoint.com/sites/Sales"
-accessPackageResource.SetUrl(&url)
+accessPackageResource.SetUrl(&url) 
 resourceType := "SharePoint Online Site"
-accessPackageResource.SetResourceType(&resourceType)
+accessPackageResource.SetResourceType(&resourceType) 
 originId := "https://contoso.sharepoint.com/sites/Sales"
-accessPackageResource.SetOriginId(&originId)
+accessPackageResource.SetOriginId(&originId) 
 originSystem := "SharePointOnline"
-accessPackageResource.SetOriginSystem(&originSystem)
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+accessPackageResource.SetOriginSystem(&originSystem) 
+requestBody.SetAccessPackageResource(accessPackageResource)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "teamworkTag resource type"
 description: "Represents a tag associated with a team."
-author: "anniecolonna"
+author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -26,11 +26,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |[Create teamworkTag](../api/teamworktag-post.md)|[**teamworkTag**](teamworktag.md)|Create a new **teamworkTag** object.|
 |[Get teamworkTag](../api/teamworktag-get.md)|[**teamworkTag**](teamworktag.md)|Read the properties and relationships of a **teamworkTag** object.|
 |[Update teamworkTag](../api/teamworktag-update.md)|[**teamworkTag**](teamworktag.md)|Update the properties of a **teamworkTag** object.|
-|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a **teamworkTag** object.|
-|[List teamworkTagMembers](../api/teamworktagmember-list.md)|[**teamworkTagMember**](teamworktagmember.md) collection|Get a list of the members of a standard tag in a team and their properties.|
-|[Create teamworkTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Create a new **teamworkTagMember** object.|
-|[Get teamworkTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Get the properties and relationships of a member of a standard tag in a team.|
-|[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a member from a standard tag in the team.|
+|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a **teamworkTag** object permanently.|
 
 ## Properties
 |Property|Type|Description|
@@ -39,8 +35,15 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |displayName|String|Tag name as it will appear to the user in Microsoft Teams.|
 |id|String|ID of the tag.|
 |memberCount|Int32|The number of users assigned to the tag.|
-|tagType|teamworkTagType|The type of tag. Default is standard.|
+|tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of tag. Default is standard.|
 |teamId|String|ID of the team in which the tag is defined.|
+
+### teamworkTagType values
+
+| Member             | Description                                                                                               |
+|:-------------------|:----------------------------------------------------------------------------------------------------------|
+| standard           | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                         |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -60,11 +63,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkTag",
-  "id": "String (identifier)",
-  "teamId": "String",
+  "description": "String",
   "displayName": "String",
-  "memberCount": "Integer",
-  "tagType": "String"
+  "id": "String (identifier)",
+  "memberCount": "Int32",
+  "tagType": "String",
+  "teamId": "String"
 }
 ```
 
+## See also
+- [teamworkTagMember](../resources/teamworktagmember.md)

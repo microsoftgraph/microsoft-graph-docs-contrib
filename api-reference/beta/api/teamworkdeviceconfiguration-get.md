@@ -54,6 +54,8 @@ If successful, this method returns a `200 OK` response code and a [teamworkDevic
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -63,16 +65,13 @@ If successful, this method returns a `200 OK` response code and a [teamworkDevic
 ``` http
 GET https://graph.microsoft.com/beta/teamwork/devices/e19229ed-29ed-e192-ed29-92e1ed2992e1/configuration
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teamworkdeviceconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-teamworkdeviceconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-teamworkdeviceconfiguration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -87,11 +86,16 @@ GET https://graph.microsoft.com/beta/teamwork/devices/e19229ed-29ed-e192-ed29-92
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-teamworkdeviceconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-teamworkdeviceconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

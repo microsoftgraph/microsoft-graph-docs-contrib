@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Organization.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Organization.ReadWrite.All |
 
 ## HTTP request
 
@@ -55,22 +55,20 @@ The following is an example of a request to delete the `fr-FR` localization obje
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_organizationalbrandinglocalization"
+  "name": "delete_organizationalbrandinglocalization",
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d", "fr-FR"]
 }-->
 
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbrandinglocalization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-organizationalbrandinglocalization-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-organizationalbrandinglocalization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -85,9 +83,11 @@ DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-organizationalbrandinglocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-organizationalbrandinglocalization-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 

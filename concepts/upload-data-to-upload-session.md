@@ -15,6 +15,8 @@ You can upload the entire file, or split the file into multiple byte ranges, as 
 
 The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. When all the binary segments of a document are uploaded, the binary file is linked to the **printDocument**.
 
+> **Note**: If your app splits a file into multiple byte ranges, we recommend that the size of each byte range is a multiple of 200 KB unless you're using the Microsoft Graph SDK, which requires the segment size to be a multiple of 320 KB. 
+
 ## Upload a file
 
 ### Request
@@ -80,7 +82,7 @@ Content-Type: application/json
 
 * On failures, when the client sends a fragment the server has already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
   You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.
-* Including the `Authorizatio`n header when making the `PUT` call might result in an `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating the upload session. It should be not be included when uploading data to the upload session.
+* Including the `Authorization` header when making the `PUT` call might result in an `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating the upload session. It should be not be included when uploading data to the upload session.
 
 ## Complete a file upload
 

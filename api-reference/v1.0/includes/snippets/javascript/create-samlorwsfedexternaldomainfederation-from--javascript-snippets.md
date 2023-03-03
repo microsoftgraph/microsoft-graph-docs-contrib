@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const identityProviderBase = {
+const samlOrWsFedExternalDomainFederation = {
     '@odata.type': 'microsoft.graph.samlOrWsFedExternalDomainFederation',
     issuerUri: 'https://contoso.com/issuerUri',
     displayName: 'contoso display name',
@@ -26,8 +26,8 @@ const identityProviderBase = {
     signingCertificate: 'MIIDADCCAeigAwIBAgIQEX41y8r6'
 };
 
-await client.api('/directory/federationConfigurations')
+await client.api('/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation')
 	.version('beta')
-	.post(identityProviderBase);
+	.post(samlOrWsFedExternalDomainFederation);
 
 ```

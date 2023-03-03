@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.NamedLocationsRequestBuilderGetQueryParameters{
-	Filter: "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c:%20c%20eq%20'CA')",
+
+requestFilter := "microsoft.graph.countryNamedLocation/countriesAndRegions/any"
+
+requestParameters := &graphconfig.IdentityConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.NamedLocationsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityConditionalAccessNamedLocationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(context.Background(), configuration)
 
 
 ```

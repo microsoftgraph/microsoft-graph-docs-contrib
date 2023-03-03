@@ -1,7 +1,7 @@
 ---
 title: "accessReviewError resource type"
 description: "Represents an error that occurred within an access review instance lifecycle."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPublishedResource()
+requestBody := graphmodels.NewPublishedResource()
 displayName := "New provisioning"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 resourceName := "domain1.contoso.com"
-requestBody.SetResourceName(&resourceName)
-onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResources().Post(requestBody)
+requestBody.SetResourceName(&resourceName) 
+
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResources().Post(context.Background(), requestBody, nil)
 
 
 ```

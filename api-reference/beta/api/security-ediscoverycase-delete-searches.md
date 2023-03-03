@@ -1,6 +1,6 @@
 ---
 title: "Delete ediscoverySearch"
-description: "Deletes an ediscoverySearch object."
+description: "Delete an ediscoverySearch object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.
+Delete an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,8 +57,9 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/searches/60150269-9758-4439-9bc4-453c864d082f
+DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/searches/60150269-9758-4439-9bc4-453c864d082f
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-ediscoverysearch-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -79,13 +80,15 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-ediscoverysearch-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-ediscoverysearch-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

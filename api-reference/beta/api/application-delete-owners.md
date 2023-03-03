@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an owner from an [application](../resources/application.md).
+Remove an owner from an [application](../resources/application.md). As a recommended best practice, apps should have at least two owners.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,10 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/owners/{id}/$ref
+DELETE /applications(appId='{appId}')/owners/{id}/$ref
 ```
+
 > [!CAUTION]
 > If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is the app owner, the user will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
 
@@ -59,16 +63,13 @@ The following example shows the request.
 ```http
 DELETE https://graph.microsoft.com/beta/applications/{id}/owners/{id}/$ref
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-delete-owners-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/application-delete-owners-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/application-delete-owners-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -83,8 +84,11 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/owners/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/powershell/application-delete-owners-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/application-delete-owners-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

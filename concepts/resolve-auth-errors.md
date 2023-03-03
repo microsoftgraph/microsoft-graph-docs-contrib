@@ -33,7 +33,7 @@ Verify that you have requested the correct set of permissions based on the Micro
 **403 Forbidden error: Did your app acquire a token to match chosen permissions?** <br>
 
 Make sure that the type of permissions requested or granted matches the type of access token that your app acquires. You might be requesting and granting application permissions but using delegated interactive code flow tokens instead of client credential flow tokens, or requesting and granting delegated permissions but using client credential flow tokens instead of delegated code flow tokens. <br>
-* [Get access on behalf of users and delegated permissions](/graph/auth_v2_user) 
+* [Get access on behalf of users and delegated permissions](/graph/auth-v2-user) 
 * [Azure AD v2.0 - OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
 * [Get access without a user (daemon service) and application permissions](/graph/auth-v2-service)
 * [Azure AD v2.0 - OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)

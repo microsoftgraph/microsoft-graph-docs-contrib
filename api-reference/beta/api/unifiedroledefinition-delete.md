@@ -2,7 +2,7 @@
 title: "Delete unifiedRoleDefinition"
 description: "Delete a unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider.
+Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider. You cannot delete built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
+
 
 The following RBAC providers are currently supported:
 - Cloud PC
@@ -91,22 +92,20 @@ If successful, this method returns `204 No Content` response code. It does not r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_unifiedroledefinition"
+  "name": "delete_unifiedroledefinition",
+  "sampleKeys": ["f189965f-f560-4c59-9101-933d4c87a91a"]
 }-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91a
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-unifiedroledefinition-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-unifiedroledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -121,8 +120,11 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedroledefinition-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -154,22 +156,20 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_unifiedroledefinition_cloudpc"
+  "name": "delete_unifiedroledefinition_cloudpc",
+  "sampleKeys": ["b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"]
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
+DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroledefinition-cloudpc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-unifiedroledefinition-cloudpc-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-unifiedroledefinition-cloudpc-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -184,8 +184,11 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions/b
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroledefinition-cloudpc-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedroledefinition-cloudpc-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

@@ -59,16 +59,13 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 ``` http
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySchedules/1f06eafc-7532-429b-abf1-ab5a5f4a7052
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleeligibilityschedule-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleeligibilityschedule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -83,9 +80,11 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleeligibilityschedule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-unifiedroleeligibilityschedule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

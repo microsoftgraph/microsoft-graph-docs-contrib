@@ -62,23 +62,21 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_b2cUserFlow_list_userflowidentityProviders"
+  "name": "get_b2cUserFlow_list_userflowidentityProviders",
+  "sampleKeys": ["B2C_test_signin_signup"]
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-b2cuserflow-list-userflowidentityproviders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-b2cuserflow-list-userflowidentityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-b2cuserflow-list-userflowidentityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -89,8 +87,11 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signu
 [!INCLUDE [sample-code](../includes/snippets/go/get-b2cuserflow-list-userflowidentityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-b2cuserflow-list-userflowidentityproviders-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

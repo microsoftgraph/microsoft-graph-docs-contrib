@@ -1,7 +1,7 @@
 ---
 title: "zebraFotaArtifact resource type"
 description: "Describes a single artifact for a specific device model."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -29,12 +29,13 @@ Describes a single artifact for a specific device model.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of ZebraFotaArtifact.|
-|deviceModel|String|Artifact device model.|
-|osVersion|String|Artifact OS version.|
-|patchVersion|String|Artifact patch version.|
-|boardSupportPackageVersion|String|The version of the Board Support Package.|
-|releaseNotesUrl|String|Artifact release notes URL.|
+|id|String|Artifact unique ID from Zebra|
+|deviceModel|String|Applicable device model (e.g.: `TC8300`) |
+|osVersion|String|Artifact OS version (e.g.: `8.1.0`) |
+|patchVersion|String|Artifact patch version (e.g.: `U00`)|
+|boardSupportPackageVersion|String|The version of the Board Support Package (BSP. E.g.: `01.18.02.00`)|
+|releaseNotesUrl|String|Artifact release notes URL (e.g.: `https://www.zebra.com/<filename.pdf>`)|
+|description|String|Artifact description. (e.g.: `LifeGuard Update 98 (released 24-September-2021)|
 
 ## Relationships
 None
@@ -55,10 +56,7 @@ Here is a JSON representation of the resource.
   "osVersion": "String",
   "patchVersion": "String",
   "boardSupportPackageVersion": "String",
-  "releaseNotesUrl": "String"
+  "releaseNotesUrl": "String",
+  "description": "String"
 }
 ```
-
-
-
-

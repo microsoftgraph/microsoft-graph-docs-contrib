@@ -3,7 +3,7 @@ title: "tenantTag resource type"
 description: "Represents a tag that can be assigned to managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

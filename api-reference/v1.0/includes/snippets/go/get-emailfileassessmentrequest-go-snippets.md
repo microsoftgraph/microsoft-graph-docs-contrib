@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-threatAssessmentRequestId := "threatAssessmentRequest-id"
-result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById(&threatAssessmentRequestId).Get()
+
+result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById("threatAssessmentRequest-id").Get(context.Background(), nil)
 
 
 ```

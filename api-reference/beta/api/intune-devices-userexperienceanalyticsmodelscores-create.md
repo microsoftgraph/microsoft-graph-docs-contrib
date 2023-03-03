@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsModelScores"
 description: "Create a new userExperienceAnalyticsModelScores object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the u
 |appReliabilityScore|Double|The user experience analytics model app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |workFromAnywhereScore|Double|The user experience analytics model work from anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |batteryHealthScore|Double|The user experience analytics model battery health score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 
 
@@ -108,7 +108,3 @@ Content-Length: 463
   "healthStatus": "insufficientData"
 }
 ```
-
-
-
-

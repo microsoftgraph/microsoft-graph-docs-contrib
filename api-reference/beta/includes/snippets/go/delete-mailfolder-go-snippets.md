@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-mailFolderId := "mailFolder-id"
-graphClient.Me().MailFoldersById(&mailFolderId).Delete()
+
+graphClient.Me().MailFoldersById("mailFolder-id").Delete(context.Background(), nil)
 
 
 ```

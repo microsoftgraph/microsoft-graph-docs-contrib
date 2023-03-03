@@ -26,13 +26,13 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |[release](../api/security-ediscoverycustodian-release.md)|None|Release a custodian from a case.|
 |[applyHold](../api/security-ediscoverycustodian-applyhold.md)|None|Start the process of applying hold to eDiscovery custodians.|
 |[removeHold](../api/security-ediscoverycustodian-removehold.md)|None|Start the process of removing hold from eDiscovery custodians.|
-|[List ediscoveryIndexOperation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property.|
+|[List ediscoveryIndexOperation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get a list of the [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
 |[List siteSources](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
-|[Create siteSource](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new siteSource object.|
+|[Create siteSource](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object associated with an [eDiscovery custodian](../resources/security-ediscoverycustodian.md).|
 |[List unifiedGroupSources](../api/security-ediscoverycustodian-list-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Get the unifiedGroupSource resources from the unifiedGroupSources navigation property.|
-|[Create unifiedGroupSource](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Create a new unifiedGroupSource object.|
+|[Create unifiedGroupSource](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [eDiscovery custodian](../resources/security-ediscoverycustodian.md).|
 |[List userSources](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get the userSource resources from the userSources navigation property.|
-|[Create userSource](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new userSource object.|
+|[Create userSource](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object associated with an [eDiscovery custodian](../resources/security-ediscoverycustodian.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -44,8 +44,8 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |id|String|The ID for the custodian in the specified case. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Date and time the custodian object was last modified|
 |releasedDateTime|DateTimeOffset|Date and time the custodian was released from the case.|
-|status|microsoft.graph.ediscovery.custodianStatus|Status of the custodian. Possible values are: `active`, `released`.|
-|holdStatus|String|The hold status of the custodian.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|status|microsoft.graph.security.dataSourceContainerStatus|Status of the custodian. Possible values are: `active`, `released`.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the custodian.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ### custodianStatus values
 
@@ -70,7 +70,7 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |lastIndexOperation|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Operation entity that represents the latest indexing for the custodian.|
 |siteSources|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Data source entity for SharePoint sites associated with the custodian.|
 |unifiedGroupSources|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Data source entity for groups associated with the custodian.|
-|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data source entity for a the custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
+|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data source entity for a custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

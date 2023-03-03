@@ -1,17 +1,17 @@
 ---
-title: "Delete extensionProperty"
-description: "Delete an extensionProperty."
+title: "Delete extensionProperty (directory extension)"
+description: "Delete a directory extension definition."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
 
-# Delete extensionProperty
+# Delete extensionProperty (directory extension)
 
 Namespace: microsoft.graph
 
-Delete an [extensionProperty](../resources/extensionproperty.md) object. You can delete only properties that aren't synced from on-premises active directory.
+Delete a directory extension definition represented by an [extensionProperty](../resources/extensionproperty.md) object. You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 
 ## Permissions
 
@@ -60,16 +60,13 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties/1f0f15e3-925d-40f0-8fc8-9d3ad135bce0
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-extensionproperty-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-extensionproperty-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-extensionproperty-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -84,8 +81,11 @@ DELETE https://graph.microsoft.com/v1.0/applications/fd918e4b-c821-4efb-b50a-5ed
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-extensionproperty-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-extensionproperty-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

@@ -25,7 +25,7 @@ Inherits from [entity](entity.md).
 |[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. |
 |[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | None | Permanently deletes an item. |
-|[List deleted items owned by a user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
+|[List deleted items owned by a user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 
 ## Properties
@@ -42,6 +42,7 @@ Inherits from [entity](entity.md).
 |administrativeUnits|[administrativeUnit](administrativeunit.md) collection| Conceptual container for user and group directory objects.|
 |deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 |federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
+| onPremisesSynchronization | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization. |
 
 ## JSON representation
 

@@ -7,16 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewGroup()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"members@odata.bind":  []String {
+requestBody := graphmodels.NewGroup()
+additionalData := map[string]interface{}{
+	"members@odata.bind" := []string {
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+
 	}
 }
-groupId := "group-id"
-graphClient.GroupsById(&groupId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.GroupsById("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

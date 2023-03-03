@@ -3,7 +3,7 @@ title: "Update retentionLabel"
 description: "Update the properties of a retentionLabel object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|RecordsManagement.ReadWrite.All|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -74,6 +74,8 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_retentionlabel"
@@ -104,6 +106,31 @@ Content-length: 555
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-retentionlabel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-retentionlabel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-retentionlabel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-retentionlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-retentionlabel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-retentionlabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

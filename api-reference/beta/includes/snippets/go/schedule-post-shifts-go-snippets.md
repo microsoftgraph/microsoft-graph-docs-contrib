@@ -7,65 +7,77 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewShift()
+requestBody := graphmodels.NewShift()
 id := "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
-requestBody.SetId(&id)
+requestBody.SetId(&id) 
 userId := "c5d0c76b-80c4-481c-be50-923cd8d680a1"
-requestBody.SetUserId(&userId)
+requestBody.SetUserId(&userId) 
 schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
-requestBody.SetSchedulingGroupId(&schedulingGroupId)
-sharedShift := msgraphsdk.NewShiftItem()
+requestBody.SetSchedulingGroupId(&schedulingGroupId) 
+sharedShift := graphmodels.NewShiftItem()
+displayName := "Day shift"
+sharedShift.SetDisplayName(&displayName) 
+notes := "Please do inventory as part of your shift."
+sharedShift.SetNotes(&notes) 
+startDateTime , err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+sharedShift.SetStartDateTime(&startDateTime) 
+endDateTime , err := time.Parse(time.RFC3339, "2019-03-12T00:00:00Z")
+sharedShift.SetEndDateTime(&endDateTime) 
+theme := graphmodels.BLUE_SCHEDULEENTITYTHEME 
+sharedShift.SetTheme(&theme) 
+
+
+shiftActivity := graphmodels.NewShiftActivity()
+isPaid := true
+shiftActivity.SetIsPaid(&isPaid) 
+startDateTime , err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+shiftActivity.SetStartDateTime(&startDateTime) 
+endDateTime , err := time.Parse(time.RFC3339, "2019-03-11T15:15:00Z")
+shiftActivity.SetEndDateTime(&endDateTime) 
+code := ""
+shiftActivity.SetCode(&code) 
+displayName := "Lunch"
+shiftActivity.SetDisplayName(&displayName) 
+
+activities := []graphmodels.ShiftActivityable {
+	shiftActivity,
+
+}
+sharedShift.SetActivities(activities)
 requestBody.SetSharedShift(sharedShift)
+draftShift := graphmodels.NewShiftItem()
 displayName := "Day shift"
-sharedShift.SetDisplayName(&displayName)
+draftShift.SetDisplayName(&displayName) 
 notes := "Please do inventory as part of your shift."
-sharedShift.SetNotes(&notes)
-startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
-sharedShift.SetStartDateTime(&startDateTime)
-endDateTime, err := time.Parse(time.RFC3339, "2019-03-12T00:00:00Z")
-sharedShift.SetEndDateTime(&endDateTime)
-theme := "blue"
-sharedShift.SetTheme(&theme)
-sharedShift.SetActivities( []ShiftActivity {
-	msgraphsdk.NewShiftActivity(),
+draftShift.SetNotes(&notes) 
+startDateTime , err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+draftShift.SetStartDateTime(&startDateTime) 
+endDateTime , err := time.Parse(time.RFC3339, "2019-03-12T00:00:00Z")
+draftShift.SetEndDateTime(&endDateTime) 
+theme := graphmodels.BLUE_SCHEDULEENTITYTHEME 
+draftShift.SetTheme(&theme) 
+
+
+shiftActivity := graphmodels.NewShiftActivity()
 isPaid := true
-	SetIsPaid(&isPaid)
-startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
-	SetStartDateTime(&startDateTime)
-endDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:15:00Z")
-	SetEndDateTime(&endDateTime)
+shiftActivity.SetIsPaid(&isPaid) 
+startDateTime , err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+shiftActivity.SetStartDateTime(&startDateTime) 
+endDateTime , err := time.Parse(time.RFC3339, "2019-03-11T15:30:00Z")
+shiftActivity.SetEndDateTime(&endDateTime) 
 code := ""
-	SetCode(&code)
+shiftActivity.SetCode(&code) 
 displayName := "Lunch"
-	SetDisplayName(&displayName)
+shiftActivity.SetDisplayName(&displayName) 
+
+activities := []graphmodels.ShiftActivityable {
+	shiftActivity,
+
 }
-draftShift := msgraphsdk.NewShiftItem()
+draftShift.SetActivities(activities)
 requestBody.SetDraftShift(draftShift)
-displayName := "Day shift"
-draftShift.SetDisplayName(&displayName)
-notes := "Please do inventory as part of your shift."
-draftShift.SetNotes(&notes)
-startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
-draftShift.SetStartDateTime(&startDateTime)
-endDateTime, err := time.Parse(time.RFC3339, "2019-03-12T00:00:00Z")
-draftShift.SetEndDateTime(&endDateTime)
-theme := "blue"
-draftShift.SetTheme(&theme)
-draftShift.SetActivities( []ShiftActivity {
-	msgraphsdk.NewShiftActivity(),
-isPaid := true
-	SetIsPaid(&isPaid)
-startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
-	SetStartDateTime(&startDateTime)
-endDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:30:00Z")
-	SetEndDateTime(&endDateTime)
-code := ""
-	SetCode(&code)
-displayName := "Lunch"
-	SetDisplayName(&displayName)
-}
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().Shifts().Post(requestBody)
+
+result, err := graphClient.TeamsById("team-id").Schedule().Shifts().Post(context.Background(), requestBody, nil)
 
 
 ```

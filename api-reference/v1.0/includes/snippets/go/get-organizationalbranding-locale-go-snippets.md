@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Accept-Language": "fr-FR"
-}
-options := &msgraphsdk.BrandingRequestBuilderGetRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Accept-Language", "fr-FR")
+
+configuration := &graphconfig.OrganizationItemBrandingRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
-organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.OrganizationById("organization-id").Branding().Get(context.Background(), configuration)
 
 
 ```

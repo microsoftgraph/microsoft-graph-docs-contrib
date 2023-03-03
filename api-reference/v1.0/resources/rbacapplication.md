@@ -2,7 +2,7 @@
 title: "rbacApplication resource type"
 description: "Container for role definitions and role assignments for Microsoft 365 role-based access control (RBAC) providers"
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

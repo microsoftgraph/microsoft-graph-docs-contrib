@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.SchemaExtensionsRequestBuilderGetQueryParameters{
-	Filter: "id%20eq%20'graphlearn_test'",
+
+requestFilter := "id eq 'graphlearn_test'"
+
+requestParameters := &graphconfig.SchemaExtensionsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.SchemaExtensionsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SchemaExtensionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.SchemaExtensions().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.SchemaExtensions().Get(context.Background(), configuration)
 
 
 ```

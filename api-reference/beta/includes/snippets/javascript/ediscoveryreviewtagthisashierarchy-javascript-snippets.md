@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let asHierarchy = await client.api('/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/asHierarchy')
+let asHierarchy = await client.api('/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/asHierarchy')
 	.version('beta')
 	.get();
 

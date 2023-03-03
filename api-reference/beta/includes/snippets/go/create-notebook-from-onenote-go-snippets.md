@@ -7,10 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewNotebook()
+requestBody := graphmodels.NewNotebook()
 displayName := "My Private notebook"
-requestBody.SetDisplayName(&displayName)
-result, err := graphClient.Me().Onenote().Notebooks().Post(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().Onenote().Notebooks().Post(context.Background(), requestBody, nil)
 
 
 ```

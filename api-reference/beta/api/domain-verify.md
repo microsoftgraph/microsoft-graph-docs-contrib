@@ -29,6 +29,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Domain.ReadWrite.All |
 
+The work or school account needs to belong to one of the following roles:
+
+* Global Administrator
+* Domain Name Administrator
+* Partner Tier2 Support
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -57,21 +63,19 @@ If successful, this method returns `200 OK` response code and [domain](../resour
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "domain_verify"
+  "name": "domain_verify",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-verify-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-verify-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/domain-verify-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -86,8 +90,11 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 [!INCLUDE [sample-code](../includes/snippets/powershell/domain-verify-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/domain-verify-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ##### Response
 Note: The response object shown here might be shortened for readability.

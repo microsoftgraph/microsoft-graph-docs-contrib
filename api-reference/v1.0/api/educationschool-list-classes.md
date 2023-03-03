@@ -66,18 +66,15 @@ The following is an example of the request.
   "name": "get_classes_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes
+GET https://graph.microsoft.com/v1.0/education/schools/f2598f43-629c-4ea9-9265-97a34839644e/classes
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-classes-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -90,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-classes-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-classes-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -110,24 +111,27 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "11019",
-      "description": "Health Level 1",
-      "classCode": "Health 501",
-      "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.educationClass)",
+    "value": [
+        {
+            "id": "733b514d-790b-4542-9efd-1558644d8b1e",
+            "description": "Negotiation For Beginners training",
+            "displayName": "Negotiation For Beginners",
+            "mailNickname": "NegotiationForBeginners"
+        },
+        {
+            "id": "be29b3cb-f58e-4c83-9f58-ed082c317c2d",
+            "description": "Advanced Presentation Skills training",
+            "displayName": "Advanced Presentation Skills",
+            "mailNickname": "AdvancedPresentationSkills"
+        },
+        {
+            "id": "ef18b112-d6dc-4b56-8cee-85f82dbe8a7d",
+            "description": "Presentation Skills 101 training",
+            "displayName": "Presentation Skills 101",
+            "mailNickname": "PresentationSkills101"
         }
-      },
-      "displayName": "Health 1",
-      "externalId": "11019",
-      "externalName": "Health Level 1",
-      "externalSource": "sis",
-      "mailNickname": "fineartschool.net"
-    }  
-  ]
+    ]
 }
 ```
 

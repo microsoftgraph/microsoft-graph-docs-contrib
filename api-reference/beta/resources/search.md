@@ -2,7 +2,7 @@
 title: "search resource type"
 description: "The top-level object that represents the search endpoint in Microsoft Graph."
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

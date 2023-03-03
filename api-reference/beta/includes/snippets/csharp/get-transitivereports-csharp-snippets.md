@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var int32 = await graphClient.Contacts["{orgContact-id}"].TransitiveReports.$count
-	.Request()
-	.GetAsync();
+await graphClient.Contacts["{orgContact-id}"].TransitiveReports.Count.GetAsync();
+
 
 ```

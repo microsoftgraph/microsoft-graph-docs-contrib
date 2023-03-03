@@ -3,7 +3,7 @@ title: "retentionEventType resource type"
 description: "Represents a single group for the same type of retention events. An event type is a generic desription for similar events that can be used with any label with event-based retention."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 

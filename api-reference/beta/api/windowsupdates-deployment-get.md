@@ -1,7 +1,7 @@
 ---
 title: "Get deployment"
 description: "Read the properties and relationships of a deployment object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -61,16 +61,13 @@ If successful, this method returns a `200 OK` response code and a [deployment](.
 ``` http
 GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-deployment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-deployment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-deployment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -85,9 +82,11 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-deployment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-deployment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 

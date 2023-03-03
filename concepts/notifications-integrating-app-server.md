@@ -24,7 +24,7 @@ In order to send a notification to your user, your application service will:
 
 ## Guaranteed delivery on iOS
 
-On platforms like iOS, under certain power conditions, raw data notifications might be delayed in delivery due to batching, or not reach the target endpoint at all. For high-priority notifications being delivered to users on iOS, the Microsoft Graph notifications platform allows you to specify a raw-to-visual toast notification "fallback" option that automatically sends a visual toast notification to the target iOS device, thereby ensuring your user gets notified near real-time. To learn how to leverage fallback options, please see the [notification resource](/graph/api/resources/projectrome-notification.md).  
+On platforms like iOS, under certain power conditions, raw data notifications might be delayed in delivery due to batching, or not reach the target endpoint at all. For high-priority notifications being delivered to users on iOS, the Microsoft Graph notifications platform allows you to specify a raw-to-visual toast notification "fallback" option that automatically sends a visual toast notification to the target iOS device, thereby ensuring your user gets notified near real-time. To learn how to leverage fallback options, please see the [notification resource](/graph/api/resources/projectrome-notification).  
 
 ## Getting started
 To learn how your app service can start sending notifications to your users, see [notification](/graph/api/resources/projectrome-notification) and our [App Service sample](https://aka.ms/gnsample-appservice).

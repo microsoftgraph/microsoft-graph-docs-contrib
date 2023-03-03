@@ -7,57 +7,72 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEvent()
+requestBody := graphmodels.NewEvent()
 subject := "Let's go for lunch"
-requestBody.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := "HTML"
-body.SetContentType(&contentType)
+requestBody.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "Does noon time work for you?"
-body.SetContent(&content)
-start := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetStart(start)
+body.SetContent(&content) 
+requestBody.SetBody(body)
+start := graphmodels.NewDateTimeTimeZone()
 dateTime := "2017-09-04T12:00:00"
-start.SetDateTime(&dateTime)
+start.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-start.SetTimeZone(&timeZone)
-end := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetEnd(end)
+start.SetTimeZone(&timeZone) 
+requestBody.SetStart(start)
+end := graphmodels.NewDateTimeTimeZone()
 dateTime := "2017-09-04T14:00:00"
-end.SetDateTime(&dateTime)
+end.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-end.SetTimeZone(&timeZone)
-recurrence := msgraphsdk.NewPatternedRecurrence()
-requestBody.SetRecurrence(recurrence)
-pattern := msgraphsdk.NewRecurrencePattern()
-recurrence.SetPattern(pattern)
-type := "weekly"
-pattern.SetType(&type)
+end.SetTimeZone(&timeZone) 
+requestBody.SetEnd(end)
+recurrence := graphmodels.NewPatternedRecurrence()
+pattern := graphmodels.NewRecurrencePattern()
+type := graphmodels.WEEKLY_RECURRENCEPATTERNTYPE 
+pattern.SetType(&type) 
 interval := int32(1)
-pattern.SetInterval(&interval)
-pattern.SetDaysOfWeek( []DayOfWeek {
-	"Monday",
+pattern.SetInterval(&interval) 
+daysOfWeek := []graphmodels.DayOfWeekable {
+	dayOfWeek := graphmodels.MONDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
+
 }
-range := msgraphsdk.NewRecurrenceRange()
+pattern.SetDaysOfWeek(daysOfWeek)
+recurrence.SetPattern(pattern)
+range := graphmodels.NewRecurrenceRange()
+type := graphmodels.ENDDATE_RECURRENCERANGETYPE 
+range.SetType(&type) 
+startDate := 2017-09-04
+range.SetStartDate(&startDate) 
+endDate := 2017-12-31
+range.SetEndDate(&endDate) 
 recurrence.SetRange(range)
-type := "endDate"
-range.SetType(&type)
-startDate := "2017-09-04"
-range.SetStartDate(&startDate)
-endDate := "2017-12-31"
-range.SetEndDate(&endDate)
-location := msgraphsdk.NewLocation()
-requestBody.SetLocation(location)
+requestBody.SetRecurrence(recurrence)
+location := graphmodels.NewLocation()
 displayName := "Harry's Bar"
-location.SetDisplayName(&displayName)
-requestBody.SetAttendees( []Attendee {
-	msgraphsdk.NewAttendee(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "required",
-	}
+location.SetDisplayName(&displayName) 
+requestBody.SetLocation(location)
+
+
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
+address := "AdeleV@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+name := "Adele Vance"
+emailAddress.SetName(&name) 
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
+
+attendees := []graphmodels.Objectable {
+	attendee,
+
 }
-result, err := graphClient.Me().Events().Post(requestBody)
+requestBody.SetAttendees(attendees)
+
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

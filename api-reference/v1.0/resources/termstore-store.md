@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groups |[microsoft.graph.termStore.group](../resources/termstore-group.md) collection | Collection of all groups available in the term store.|
-|sets | [microsoft.graph.termStore.set](../resources/termstore-set.md) collection | Collection of all sets available in the term store.|
+|sets | [microsoft.graph.termStore.set](../resources/termstore-set.md) collection | Collection of all sets available in the term store. This relationship can only be used to load a specific term set.|
 
 
 ## JSON representation

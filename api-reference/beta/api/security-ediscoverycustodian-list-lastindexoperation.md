@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryIndexOperation"
+title: "List lastIndexOperation"
 description: "Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List ediscoveryIndexOperation
+# List lastIndexOperation
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property.
+Get a list of the [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) objects in the response body.
 
 ## Examples
 
@@ -61,8 +61,9 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/lastIndexOperation
+GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/lastIndexOperation
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoveryindexoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,11 +84,14 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscoveryindexoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-ediscoveryindexoperation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

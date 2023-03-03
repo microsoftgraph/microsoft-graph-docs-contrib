@@ -7,14 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewExternalConnection()
+requestBody := graphmodels.NewExternalConnection()
 id := "contosohr"
-requestBody.SetId(&id)
+requestBody.SetId(&id) 
 name := "Contoso HR"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 description := "Connection to index Contoso HR system"
-requestBody.SetDescription(&description)
-result, err := graphClient.External().Connections().Post(requestBody)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.External().Connections().Post(context.Background(), requestBody, nil)
 
 
 ```

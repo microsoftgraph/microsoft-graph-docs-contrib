@@ -42,17 +42,17 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHo
 ## Request body
 In the request body, supply a JSON representation of the [userSource](../resources/security-usersource.md) object.
 
-You can specify the following properties when creating a **userSource**.
+You can specify the following properties when you create a **userSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|SMTP address of the user.|
-|includedSources|String|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [userSource](../resources/security-usersource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.userSource](../resources/security-usersource.md) object in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_usersource_from_"
+  "name": "create_usersource_and_include_sources"
 }
 -->
 ``` http
@@ -74,32 +74,35 @@ Content-Type: application/json
     "includedSources": "mailbox, site"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-and-include-sources-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-and-include-sources-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-and-include-sources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-usersource-and-include-sources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-from--powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-and-include-sources-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-usersource-and-include-sources-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

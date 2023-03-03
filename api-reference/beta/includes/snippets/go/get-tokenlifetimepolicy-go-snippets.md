@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-tokenLifetimePolicyId := "tokenLifetimePolicy-id"
-result, err := graphClient.Policies().TokenLifetimePoliciesById(&tokenLifetimePolicyId).Get()
+
+result, err := graphClient.Policies().TokenLifetimePoliciesById("tokenLifetimePolicy-id").Get(context.Background(), nil)
 
 
 ```

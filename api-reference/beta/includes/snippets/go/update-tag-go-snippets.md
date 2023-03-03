@@ -7,12 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTag()
+requestBody := graphmodels.NewTag()
 description := "This is an updated description."
-requestBody.SetDescription(&description)
-caseId := "case-id"
-tagId := "tag-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Patch(requestBody)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

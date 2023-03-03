@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.BundlesRequestBuilderGetQueryParameters{
-	Filter: "bundle/album%20ne%20null",
+
+requestFilter := "bundle/album ne null"
+
+requestParameters := &graphconfig.DriveBundlesRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.BundlesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DriveBundlesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Drive().Bundles().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Drive().Bundles().Get(context.Background(), configuration)
 
 
 ```

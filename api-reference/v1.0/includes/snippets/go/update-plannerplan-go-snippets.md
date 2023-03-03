@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPlannerPlan()
-title := "title-value"
-requestBody.SetTitle(&title)
-headers := map[string]string{
-	"Prefer": "return=representation"
-	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
-}
-options := &msgraphsdk.PlannerPlanRequestBuilderPatchRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphconfig.PlannerPlanItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
-plannerPlanId := "plannerPlan-id"
-graphClient.Planner().PlansById(&plannerPlanId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewPlannerPlan()
+title := "title-value"
+requestBody.SetTitle(&title) 
+
+result, err := graphClient.Planner().PlansById("plannerPlan-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

@@ -414,4 +414,4 @@ Use the following definition to deserialize the **metadata** property and extrac
 
 ## See also
 
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)

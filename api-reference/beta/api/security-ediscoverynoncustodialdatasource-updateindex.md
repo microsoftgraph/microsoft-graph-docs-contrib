@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryNoncustodialDataSource: updateIndex"
-description: "Triggers a indexOperation to make a non-custodial data source and its associated data source searchable."
+description: "Trigger an indexOperation to make a non-custodial data source and its associated data source searchable."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Triggers a [indexOperation](../resources/security-ediscoveryIndexOperation.md)
+Trigger an [indexOperation](../resources/security-ediscoveryIndexOperation.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,8 +58,9 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/46333131344239353834433430454335/updateIndex
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/46333131344239353834433430454335/updateIndex
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustodialdatasourcethisupdateindex-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -76,17 +77,14 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustodialdatasourcethisupdateindex-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverynoncustodialdatasourcethisupdateindex-powershell-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustodialdatasourcethisupdateindex-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -44,7 +44,8 @@ If successful, this method returns a `200 OK` response code and a [bookingCurren
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["USD"]
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/solutions/bookingCurrencies/USD

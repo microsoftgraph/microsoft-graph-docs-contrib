@@ -2,7 +2,7 @@
 title: "sortProperty resource type"
 description: "Indicates the order to sort search results"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

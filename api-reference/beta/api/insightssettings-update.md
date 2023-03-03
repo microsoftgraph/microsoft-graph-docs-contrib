@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be item insights or people insights.
+Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be contact insights, item insights, or people insights.
 
 To learn more about customizing insights privacy for your organization, see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) 
@@ -21,7 +21,15 @@ To learn more about customizing insights privacy for your organization, see:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+To update settings for contact insights, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Organization.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+To update settings for item insights or people insights, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -30,8 +38,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
+>**Note:** Using delegated permissions for this operation to update insights for contacts, item, or people requires the signed-in user to have a global administrator role.
+
+
 ## HTTP request
+
+To update settings for contact insights:
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /organization/{organizationId}/settings/contactInsights
+```
 
 To update settings for item insights:
 <!-- { "blockType": "ignored" } -->
@@ -70,7 +87,76 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 
 ## Examples 
 
-### Example 1: Update settings for item insights
+### Example 1: Update settings for contact insights
+#### Request
+
+The following is an example of a request that shows how an admin updates **isEnabledInOrganization** to enable contact insights for the specified organization; the default for **isEnabledInOrganization** is false, disabling contact insights. The example also sets the **disabledForGroup** privacy setting to prohibit displaying user's contact insights in a particular Azure AD group.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_insightssettings_contactinsightsrequest"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/contactInsights
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-insightssettings-contactinsightsrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-insightssettings-contactinsightsrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-contactinsightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-contactinsightsrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-contactinsightsrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-insightssettings-contactinsightsrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.insightsSettings",
+  "name": "update_insightssettings_contactinsightsrequest"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
+
+### Example 2: Update settings for item insights
 #### Request
 
 Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying item insights of users in a particular Azure AD group.
@@ -91,16 +177,13 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-insightssettings-iteminsightrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-insightssettings-iteminsightrequest-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-insightssettings-iteminsightrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -115,9 +198,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-iteminsightrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-insightssettings-iteminsightrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 
@@ -140,7 +225,7 @@ Content-type: application/json
 ```
 
 
-### Example 2: Update settings for people insights
+### Example 3: Update settings for people insights
 #### Request
 
 The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
@@ -161,16 +246,13 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-insightssettings-peopleinsightsrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-insightssettings-peopleinsightsrequest-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-insightssettings-peopleinsightsrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -185,10 +267,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-peopleinsightsrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-insightssettings-peopleinsightsrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
-
 
 ### Response
 
@@ -213,4 +296,4 @@ Content-type: application/json
 ```
 
 
- 107  api-reference/beta/api/iteminsightssettings-get.md 
+

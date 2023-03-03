@@ -25,9 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/ownedObjects
+GET /servicePrincipals(appId='{appId}')/ownedObjects
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -54,18 +58,15 @@ Here is an example of the request.
   "name": "get_ownedobjects_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/ownedObjects
+GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-56124728e051/ownedObjects
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-ownedobjects-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-ownedobjects-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-ownedobjects-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -80,8 +81,11 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/ownedObjects
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-ownedobjects-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-ownedobjects-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 Here is an example of the response. 

@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryCase](../resources/security-ediscoverycase.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md) objects in the response body.
 
 ## Examples
 
@@ -62,6 +62,7 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoverycase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,12 +83,14 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscoverycase-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-ediscoverycase-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

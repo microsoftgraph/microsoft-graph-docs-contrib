@@ -1,7 +1,7 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "jpettere"
+author: "yyuank"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -11,21 +11,21 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [user](../resources/user.md) object. Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) to see properties they can manage.
+Update the properties of a [user](../resources/user.md) object. Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | User.ReadWrite, User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | User.ReadWrite    |
-|Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
+|Application | User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - Updating another user's **businessPhones**, **mobilePhone**, or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Message Center Reader, and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions. Only a Global Administrator assigned the Directory.AccessAsUser.All permission can update these properties for more privileged administrators.
-> - Your personal Microsoft account must be tied to an AAD tenant to update your profile with the User.ReadWrite delegated permission on a personal Microsoft account.
-> - Updating the **identities** property requires the User.ManageIdentities.All permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
+> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privilged administrator roles, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+> - Your personal Microsoft account must be tied to an Azure AD tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
+> - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -59,6 +59,7 @@ In the request body, supply the values for relevant fields that should be update
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`.|
 |givenName|String|The given name (first name) of the user.|
 |employeeHireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><br> For delegated scenarios, the calling user must have the Global Administrator role and the calling app assigned the _User.Read.All_ and _User-LifeCycleInfo.ReadWrite.All_ delegated permissions. |
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
 |mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. |
@@ -70,7 +71,7 @@ In the request body, supply the values for relevant fields that should be update
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters cannot be used when specifying this property.                            |
 |otherMails|String collection |A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified. `DisablePasswordExpiration` can also be specified. The two may be specified together; for example: `DisablePasswordExpiration, DisableStrongPassword`.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. This cannot be used for federated users. <br><br> The calling user must be assigned the *Directory.AccessAsUser.All* delegated permission to update this property. This property cannot be updated with only application permissions.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`. This cannot be used for federated users. <br><br> In delegated access, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission on behalf of the signed-in user. In application-only access, the calling app must be assigned the *User.ReadWrite.All* application permission and at least the *User Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference).|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example `en-US`.|
@@ -85,8 +86,8 @@ In the request body, supply the values for relevant fields that should be update
 |userType|String|A string value that can be used to classify user types in your directory, such as `Member` and `Guest`.          |
 
 > [!NOTE] 
-> - The following properties cannot be updated by an app with only application permissions: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
-> - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
+> - The following properties cannot be updated by an app with only application permissions: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **responsibilities**, **schools**, and **skills**.
+> - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **responsibilities**, **schools**, and **skills**.
 
 ### Manage extensions and associated data
 
@@ -123,16 +124,13 @@ Content-type: application/json
   "officeLocation": "18/2111"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -145,6 +143,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -181,16 +183,13 @@ Content-type: application/json
   "officeLocation": "18/2111"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-other-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-other-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-other-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -205,8 +204,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-other-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-other-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -221,7 +223,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Update the passwordProfile of a user to reset their password
 
-The following example shows a request to reset the password of another user. The calling user must be assigned the *Directory.AccessAsUser.All* delegated permission to update this property.
+The following example shows a request to reset the password of another user. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`.
 
 #### Request
 
@@ -242,16 +244,13 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-passwordprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-user-passwordprofile-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-user-passwordprofile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -266,8 +265,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-user-passwordprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-user-passwordprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 <!-- {
@@ -288,7 +290,7 @@ You can update or assign a value to a single property or all properties in the e
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_schemaextension"
+  "name": "update_schemaextension_for_userID"
 }-->
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
@@ -300,28 +302,34 @@ Content-type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-for-userid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-for-userid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-for-userid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-for-userid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-schemaextension-for-userid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+To remove the value of the schema extension from the user object, set the **ext55gb1l09_msLearnCourses** property to `null`.
 
 #### Response
 
@@ -331,17 +339,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-
->**Note:** To remove the value of the schema extension from the user object, set the property to `null`. For example:
->
->```http
->PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
->Content-type: application/json
->
->{
->    "ext55gb1l09_msLearnCourses": null
->}
->```
 
 ## See also
 

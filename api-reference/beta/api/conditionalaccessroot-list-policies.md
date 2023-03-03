@@ -66,16 +66,13 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$filter=displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-policies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-policies-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-policies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -90,8 +87,11 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$filter
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-policies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-policies-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -154,7 +154,9 @@ Content-type: application/json
                     "block"
                 ],
                 "customAuthenticationFactors": [],
-                "termsOfUse": []
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/conditionalAccessPolicies('ad8d2b4a-8d30-413f-88b8-144c6c8d98d9')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
             }
         },
         {

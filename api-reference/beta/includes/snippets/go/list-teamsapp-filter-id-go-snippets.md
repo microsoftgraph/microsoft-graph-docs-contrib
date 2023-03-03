@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.TeamsAppsRequestBuilderGetQueryParameters{
-	Filter: "id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'",
+
+requestFilter := "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'"
+
+requestParameters := &graphconfig.AppCatalogsTeamsAppsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.TeamsAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.AppCatalogsTeamsAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.AppCatalogs().TeamsApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.AppCatalogs().TeamsApps().Get(context.Background(), configuration)
 
 
 ```

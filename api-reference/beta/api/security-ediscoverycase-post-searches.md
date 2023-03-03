@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoverySearch"
+title: "Create searches"
 description: "Create a new ediscoverySearch object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoverySearch
+# Create searches
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -42,18 +42,18 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 ## Request body
 In the request body, supply a JSON representation of the [ediscoverySearch](../resources/security-ediscoverysearch.md) object.
 
-You can specify the following properties when creating an **ediscoverySearch**.
+You can specify the following properties when you create an **ediscoverySearch**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the search. Required|
 |description|String|The description of the search Optional.|
 |contentQuery|String|The query string used for the search. The query string in KQL (Keyword Query Language) format. Optional|
-|dataSourceScopes|String|The option to search across all mailboxes or sites in the tenant. The possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Optional.|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|The option to search across all mailboxes or sites in the tenant. The possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Optional.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoverySearch](../resources/security-ediscoverysearch.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) object in the response body.
 
 ## Examples
 
@@ -67,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches
 Content-Type: application/json
 
 {
@@ -75,15 +75,16 @@ Content-Type: application/json
     "description": "My first search",
     "contentQuery": "(Author=\"edison\")",
     "custodianSources@odata.bind": [
-        "https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources/43434642-3137-3138-3432-374142313639",
-        "https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/siteSources/169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+        "https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources/43434642-3137-3138-3432-374142313639",
+        "https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/siteSources/169718e3-a8df-449d-bef4-ee09fe1ddc5d",
         "https://graph.microsoft.com/beta/security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/unifiedGroupSources('32e14fa4-3106-4bd2-a245-34bf0c718a7e')"
     ],
     "noncustodialSources@odata.bind": [
-        "https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/35393639323133394345384344303043"
+        "https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/35393639323133394345384344303043"
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverysearch-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,12 +105,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverysearch-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoverysearch-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

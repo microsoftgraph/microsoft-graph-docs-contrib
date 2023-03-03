@@ -7,12 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewCheckinPostRequestBody()
 comment := "Updating the latest guidelines"
-requestBody.SetComment(&comment)
-driveId := "drive-id"
-driveItemId := "driveItem-id"
-graphClient.DrivesById(&driveId).ItemsById(&driveItemId).Checkin(drive-id, driveItem-id).Post(requestBody)
+requestBody.SetComment(&comment) 
+
+graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Checkin().Post(context.Background(), requestBody, nil)
 
 
 ```

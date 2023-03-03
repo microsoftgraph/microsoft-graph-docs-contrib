@@ -59,7 +59,8 @@ If successful, this method returns a `201 Created` response code and a [delegate
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_delegatedadminrelationshiprequest_from_"
+  "name": "create_delegatedadminrelationshiprequest_from_",
+  "sampleKeys": ["5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836"]
 }
 -->
 ``` http
@@ -70,16 +71,13 @@ Content-Type: application/json
   "action": "lockForApproval"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-delegatedadminrelationshiprequest-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-delegatedadminrelationshiprequest-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-delegatedadminrelationshiprequest-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -90,9 +88,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-delegatedadminrelationshiprequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-delegatedadminrelationshiprequest-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

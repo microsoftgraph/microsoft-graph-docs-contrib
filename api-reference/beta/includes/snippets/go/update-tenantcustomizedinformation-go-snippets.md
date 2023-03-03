@@ -7,32 +7,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTenantCustomizedInformation()
+requestBody := graphmodels.NewTenantCustomizedInformation()
 tenantId := "String"
-requestBody.SetTenantId(&tenantId)
-requestBody.SetContacts( []TenantContactInformation {
-	msgraphsdk.NewTenantContactInformation(),
+requestBody.SetTenantId(&tenantId) 
+
+
+tenantContactInformation := graphmodels.NewTenantContactInformation()
 name := "String"
-	SetName(&name)
+tenantContactInformation.SetName(&name) 
 title := "String"
-	SetTitle(&title)
+tenantContactInformation.SetTitle(&title) 
 email := "String"
-	SetEmail(&email)
+tenantContactInformation.SetEmail(&email) 
 phone := "String"
-	SetPhone(&phone)
+tenantContactInformation.SetPhone(&phone) 
 notes := "String"
-	SetNotes(&notes)
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "microsoft.graph.managedTenants.tenantContactInformation",
-	}
+tenantContactInformation.SetNotes(&notes) 
+
+contacts := []graphmodels.TenantContactInformationable {
+	tenantContactInformation,
+
 }
+requestBody.SetContacts(contacts)
 website := "String"
-requestBody.SetWebsite(&website)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
-}
-tenantCustomizedInformationId := "tenantCustomizedInformation-id"
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(requestBody)
+requestBody.SetWebsite(&website) 
+
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

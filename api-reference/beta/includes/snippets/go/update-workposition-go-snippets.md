@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewWorkPosition()
+requestBody := graphmodels.NewWorkPosition()
 isCurrent := true
-requestBody.SetIsCurrent(&isCurrent)
-workPositionId := "workPosition-id"
-graphClient.Me().Profile().PositionsById(&workPositionId).Patch(requestBody)
+requestBody.SetIsCurrent(&isCurrent) 
+
+result, err := graphClient.Me().Profile().PositionsById("workPosition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "zebraFotaDeployment resource type"
 description: "The Zebra FOTA deployment entity that describes settings, deployment device groups required to create a FOTA deployment, and deployment status."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -59,6 +59,7 @@ Here is a JSON representation of the resource.
     "deviceModel": "String",
     "updateType": "String",
     "timeZoneOffsetInMinutes": 1024,
+    "firmwareTargetArtifactDescription": "String",
     "firmwareTargetBoardSupportPackageVersion": "String",
     "firmwareTargetPatch": "String",
     "firmwareTargetOsVersion": "String",
@@ -76,6 +77,7 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.androidFotaDeploymentAssignment",
       "id": "String",
+      "displayName": "String",
       "target": {
         "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
         "groupId": "String"
@@ -101,7 +103,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-

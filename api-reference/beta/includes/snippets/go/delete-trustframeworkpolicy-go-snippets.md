@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-trustFrameworkPolicyId := "trustFrameworkPolicy-id"
-graphClient.TrustFramework().PoliciesById(&trustFrameworkPolicyId).Delete()
+
+graphClient.TrustFramework().PoliciesById("trustFrameworkPolicy-id").Delete(context.Background(), nil)
 
 
 ```

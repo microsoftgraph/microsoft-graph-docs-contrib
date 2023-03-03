@@ -7,16 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.InstancesRequestBuilderGetQueryParameters{
-	StartDateTime: "2019-04-08T09:00:00.0000000",
-	EndDateTime: "2019-04-30T09:00:00.0000000",
-	Select: "subject,bodyPreview,seriesMasterId,type,recurrence,start,end",
+
+requestStartDateTime := "2019-04-08T09:00:00.0000000"
+requestEndDateTime := "2019-04-30T09:00:00.0000000"
+
+requestParameters := &graphconfig.MeEventItemInstancesRequestBuilderGetQueryParameters{
+	StartDateTime: &requestStartDateTime,
+	EndDateTime: &requestEndDateTime,
+	Select: [] string {"subject","bodyPreview","seriesMasterId","type","recurrence","start","end"},
 }
-options := &msgraphsdk.InstancesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeEventItemInstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Instances().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().EventsById("event-id").Instances().Get(context.Background(), configuration)
 
 
 ```

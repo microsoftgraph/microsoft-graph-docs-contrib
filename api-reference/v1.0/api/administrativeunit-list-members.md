@@ -65,8 +65,9 @@ The following request will list the members of the administrative unit, returnin
   "name": "list_administrativeunit_members"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/c5729e7c-988e-417b-b287-14f5bd4711d8/members
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4/members
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-administrativeunit-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,8 +88,11 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/c5729e7c-988e
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-administrativeunit-members-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-administrativeunit-members-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 Here is an example of the response.
@@ -137,9 +141,10 @@ The following request will list the member references of the administrative unit
   "blockType": "request",
   "name": "list_administrativeunit_member_refs"
 } -->
-```msgraph-interactive
+```
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-administrativeunit-member-refs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -160,8 +165,11 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-administrativeunit-member-refs-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-administrativeunit-member-refs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 Here is an example of the response.

@@ -1,6 +1,6 @@
 ---
-title: "Update plannertaskdetails"
-description: "Update the properties of **plannertaskdetails** object."
+title: "Update plannerTaskDetails"
+description: "Update the properties of a **plannerTaskDetails** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of **plannertaskdetails** object.
+Update the properties of **plannerTaskDetails** object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -21,13 +22,14 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Tasks.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/{id}/details
 ```
+
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
@@ -35,29 +37,32 @@ PATCH /planner/tasks/{id}/details
 | If-Match  | Last known ETag value for the **plannerTaskDetails** to be updated. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|The collection of checklist items on the task.|
-|description|String|Description of the task|
+|description|String|The description of the task.|
+|notes|[itemBody](../resources/itembody.md)|Rich text description of the task. To be used by HTML-aware clients. For backwards compatibility, a plain-text version of the HTML description will be synced to the "description" field. If this field has not previously been set but "description" has been, the existing description will be synchronized to "notes" with minimal whitespace-preserving HTML markup. Setting both "description" and "notes" is an error and will result in an exception.|
 |previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|The collection of references on the task.|
 
 ## Response
 
-If successful, this method returns `204 No Content` response and empty content. If the request specifies `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and an updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_plannertaskdetails"
+  "name": "update_plannertaskdetails",
+  "sampleKeys": ["gcrYAaAkgU2EQUvpkNNXLGQAGTtu"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
@@ -91,15 +96,17 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
       "isChecked": true,
     },
     "a93c93c5-10a6-4167-9551-8bafa09967a7": null
-  }
+  },
+  "description": "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links"
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertaskdetails-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannertaskdetails-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertaskdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -110,10 +117,15 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-plannertaskdetails-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-plannertaskdetails-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,7 +136,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
+  "description": "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links",
+  "notes": {
+    "content": "<div style=\"white-space:pre-wrap\">Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links</div>",
+    "contentType": "html"
+  },
   "previewType": "automatic",
   "references": {
     "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {
@@ -195,5 +211,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

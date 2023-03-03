@@ -7,14 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
-	StartDateTime: "2020-01-01T19:00:00-08:00",
-	EndDateTime: "2020-01-02T19:00:00-08:00",
+
+requestStartDateTime := "2020-01-01T19:00:00-08:00"
+requestEndDateTime := "2020-01-02T19:00:00-08:00"
+
+requestParameters := &graphconfig.MeCalendarViewRequestBuilderGetQueryParameters{
+	StartDateTime: &requestStartDateTime,
+	EndDateTime: &requestEndDateTime,
 }
-options := &msgraphsdk.CalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeCalendarViewRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().CalendarView().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().CalendarView().Get(context.Background(), configuration)
 
 
 ```

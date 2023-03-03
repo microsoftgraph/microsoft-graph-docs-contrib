@@ -7,15 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.InstalledAppsRequestBuilderGetQueryParameters{
-	Expand: "teamsApp,teamsAppDefinition",
-	Filter: "teamsApp/externalId%20eq%20'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'",
+
+requestFilter := "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
+
+requestParameters := &graphconfig.UserItemTeamworkInstalledAppsRequestBuilderGetQueryParameters{
+	Expand: [] string {"teamsApp","teamsAppDefinition"},
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.InstalledAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemTeamworkInstalledAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-userId := "user-id"
-result, err := graphClient.UsersById(&userId).Teamwork().InstalledApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.UsersById("user-id").Teamwork().InstalledApps().Get(context.Background(), configuration)
 
 
 ```

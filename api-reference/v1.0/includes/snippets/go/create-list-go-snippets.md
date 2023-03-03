@@ -7,27 +7,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewList()
+requestBody := graphmodels.NewList()
 displayName := "Books"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetColumns( []ColumnDefinition {
-	msgraphsdk.NewColumnDefinition(),
+requestBody.SetDisplayName(&displayName) 
+
+
+columnDefinition := graphmodels.NewColumnDefinition()
 name := "Author"
-	SetName(&name)
-text := msgraphsdk.NewTextColumn()
-	SetText(text)
-	msgraphsdk.NewColumnDefinition(),
+columnDefinition.SetName(&name) 
+text := graphmodels.NewTextColumn()
+columnDefinition.SetText(text)
+columnDefinition1 := graphmodels.NewColumnDefinition()
 name := "PageCount"
-	SetName(&name)
-number := msgraphsdk.NewNumberColumn()
-	SetNumber(number)
+columnDefinition1.SetName(&name) 
+number := graphmodels.NewNumberColumn()
+columnDefinition1.SetNumber(number)
+
+columns := []graphmodels.ColumnDefinitionable {
+	columnDefinition,
+	columnDefinition1,
+
 }
-list := msgraphsdk.NewListInfo()
-requestBody.SetList(list)
+requestBody.SetColumns(columns)
+list := graphmodels.NewListInfo()
 template := "genericList"
-list.SetTemplate(&template)
-siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Lists().Post(requestBody)
+list.SetTemplate(&template) 
+requestBody.SetList(list)
+
+result, err := graphClient.SitesById("site-id").Lists().Post(context.Background(), requestBody, nil)
 
 
 ```

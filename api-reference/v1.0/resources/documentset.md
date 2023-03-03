@@ -1,17 +1,17 @@
 ---
-author: swapnil1993
 title: "documentSet resource type"
-description: "Contains metadata about document set settings."
+description: "Contains the metadata about the document set settings."
+author: "swapnil1993"
 ms.localizationpriority: medium
-doc_type: resourcePageType
 ms.prod: "sites-and-lists"
+doc_type: resourcePageType
 ---
 
 # documentSet resource type
 
 Namespace: microsoft.graph
 
-Represents a document set in SharePoint.
+Represents a document set in SharePoint. A document set is a group of related documents that you can manage as a single entity.
 
 ## Properties
 
@@ -37,10 +37,10 @@ The following is a JSON representation of a **documentSet** resource.
 
 ```json
 {
-  "shouldPrefixNameToFile": true,
   "allowedContentTypes": [{ "@type": "microsoft.graph.contentTypeInfo" }],
   "defaultContents": [{ "@type": "microsoft.graph.documentSetContent" }],
   "propagateWelcomePageChanges": false,
+  "shouldPrefixNameToFile": true,
   "welcomePageUrl": "string"
 }
 ```

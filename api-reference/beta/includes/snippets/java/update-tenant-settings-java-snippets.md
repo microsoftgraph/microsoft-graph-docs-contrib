@@ -12,6 +12,7 @@ LinkedList<String> excludedFileExtensionsForSyncAppList = new LinkedList<String>
 excludedFileExtensionsForSyncAppList.add(".mp3");
 settings.excludedFileExtensionsForSyncApp = excludedFileExtensionsForSyncAppList;
 settings.imageTaggingOption = ImageTaggingChoice.ENHANCED;
+settings.isLegacyAuthProtocolsEnabled = true;
 settings.isSitesStorageLimitAutomatic = false;
 settings.isSyncButtonHiddenOnPersonalSite = false;
 settings.isUnmanagedSyncAppForTenantRestricted = false;

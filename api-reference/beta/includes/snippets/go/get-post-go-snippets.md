@@ -7,10 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-groupId := "group-id"
-conversationThreadId := "conversationThread-id"
-postId := "post-id"
-result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Get()
+
+result, err := graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Get(context.Background(), nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -80,9 +80,9 @@ Content-type: application/json
 {
   "ToRecipients":[
       {
-        "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
-          "name":"Dana Swope"
+        "EmailAddress": {
+          "Address":"danas@contoso.onmicrosoft.com",
+          "Name":"Dana Swope"
         }
       }
      ],
@@ -90,16 +90,13 @@ Content-type: application/json
 }
 
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-forward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-forward-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/event-forward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -114,9 +111,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/event-forward-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/event-forward-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ##### Response
 Here is an example of the response.

@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite|
+|Application| Tasks.ReadWrite.All|
 
 ## HTTP request
 
@@ -63,7 +63,8 @@ If successful, this method returns a `200 OK` response code and an updated [chec
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_checklistitem"
+  "name": "update_checklistitem",
+  "sampleKeys": ["AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=", "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA", "e3a26c2e-7c6f-4317-9d71-c27267008202"]
 }
 -->
 ``` http
@@ -74,6 +75,7 @@ Content-Type: application/json
     "displayName": "buy cake"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-checklistitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,8 +96,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-checklistitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-checklistitem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

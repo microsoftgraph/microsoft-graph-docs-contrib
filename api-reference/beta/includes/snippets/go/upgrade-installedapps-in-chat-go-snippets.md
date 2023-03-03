@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-chatId := "chat-id"
-teamsAppInstallationId := "teamsAppInstallation-id"
-graphClient.ChatsById(&chatId).InstalledAppsById(&teamsAppInstallationId).Upgrade(chat-id, teamsAppInstallation-id).Post()
+
+graphClient.ChatsById("chat-id").InstalledAppsById("teamsAppInstallation-id").Upgrade().Post(context.Background(), nil)
 
 
 ```

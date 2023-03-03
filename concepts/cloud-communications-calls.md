@@ -34,5 +34,5 @@ Currently, bots are able to:
 
 ## See also
 
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)
 - [Permissions for calls](./permissions-reference.md#calls-permissions)

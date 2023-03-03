@@ -1,6 +1,6 @@
 ---
 title: "List noncustodialSources"
-description: "Get the ediscoveryNoncustodialDataSource resources from the noncustodialSources navigation property."
+description: "Get the list of noncustodialSources associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the ediscoveryNoncustodialDataSource resources from the noncustodialSources navigation property.
+
+Get the list of noncustodialSources associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) objects in the response body.
 
 ## Examples
 
@@ -56,38 +57,41 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_ediscoverynoncustodialdatasource"
+  "name": "list_noncustodialdatasource_associated_with_ediscovery_search"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/noncustodialsources
+GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/noncustodialsources
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoverynoncustodialdatasource-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-noncustodialdatasource-associated-with-ediscovery-search-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-ediscoverynoncustodialdatasource-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-noncustodialdatasource-associated-with-ediscovery-search-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-ediscoverynoncustodialdatasource-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-noncustodialdatasource-associated-with-ediscovery-search-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-ediscoverynoncustodialdatasource-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-noncustodialdatasource-associated-with-ediscovery-search-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscoverynoncustodialdatasource-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-noncustodialdatasource-associated-with-ediscovery-search-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-noncustodialdatasource-associated-with-ediscovery-search-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

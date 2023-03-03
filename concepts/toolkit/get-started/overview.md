@@ -13,7 +13,7 @@ Watch this short video to get started using the toolkit.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-For a step-by-step tutorial, see the [Get started with Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) module. 
+For a step-by-step tutorial, see the [Get started with Microsoft Graph Toolkit](/training/modules/msgraph-toolkit-intro/) module.
 
 ## Set up your Microsoft 365 tenant
 
@@ -35,7 +35,7 @@ You can use Microsoft Graph Toolkit in your application by referencing the loade
 To use the toolkit via `mgt-loader`, add the reference in a script to your code:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
 
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
@@ -69,7 +69,7 @@ The `@microsoft/mgt-element` is the core package that contains only the base cla
 
 <b>@microsoft/mgt-components</b>
 
-The `@microsoft/mgt-components` package contains all the Microsoft Graph connected web components, such as `Person`, `PeoplePicker`, and more. 
+The `@microsoft/mgt-components` package contains all the Microsoft Graph connected web components, such as `Person`, `PeoplePicker`, and more.
 
 **Providers**
 
@@ -93,15 +93,15 @@ Providers are available via a single package and can be installed as needed. The
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
-    <code>[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)</code> contains the `SharePointProvider` for authenticating in a SharePoint environment. 
+    <code>[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)</code> contains the `SharePointProvider` for authenticating in a SharePoint environment.
 
 - <b>@microsoft/mgt-proxy-provider</b>
 
-    <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code> contains the `ProxyProvider` for an application that proxy Graph calls through a backend service. 
+    <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code> contains the `ProxyProvider` for an application that proxy Graph calls through a backend service.
 
 <b>@microsoft/mgt</b>
 
-The `@microsoft/mgt` package is the main package that includes all the preceding packages and re-exports them so they are available via a single package that you can install. 
+The `@microsoft/mgt` package is the main package that includes all the preceding packages and re-exports them so they are available via a single package that you can install.
 
 <b>@microsoft/mgt-react</b>
 

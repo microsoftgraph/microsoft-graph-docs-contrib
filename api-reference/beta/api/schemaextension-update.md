@@ -70,7 +70,8 @@ The following is an example of the request. You must include the **owner** prope
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_schemaextension"
+  "name": "update_schemaextension_forcourse",
+  "sampleKeys": ["exto6x7sfft_courses"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/schemaExtensions/exto6x7sfft_courses
@@ -98,32 +99,32 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-forcourse-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-schemaextension-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-forcourse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-forcourse-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-forcourse-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-forcourse-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-schemaextension-forcourse-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

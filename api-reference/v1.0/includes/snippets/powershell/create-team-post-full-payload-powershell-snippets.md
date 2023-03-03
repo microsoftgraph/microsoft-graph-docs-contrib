@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	"Template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+	"Template@odata.bind" = "https://graph.microsoft.com/beta/teamsTemplates('standard')"
 	Visibility = "Private"
 	DisplayName = "Sample Engineering Team"
 	Description = "This is a sample engineering team, used to showcase the range of properties supported by this API"
@@ -26,7 +26,7 @@ $params = @{
 					"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')"
 					DisplayName = "A Pinned Website"
 					Configuration = @{
-						ContentUrl = "https://docs.microsoft.com/microsoftteams/microsoft-teams"
+						ContentUrl = "https://learn.microsoft.com/microsoftteams/microsoft-teams"
 					}
 				}
 				@{
@@ -72,6 +72,9 @@ $params = @{
 		AllowOwnerDeleteMessages = $true
 		AllowTeamMentions = $true
 		AllowChannelMentions = $true
+	}
+	DiscoverySettings = @{
+		ShowInTeamsSearchAndSuggestions = $true
 	}
 	InstalledApps = @(
 		@{

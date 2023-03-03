@@ -1,7 +1,7 @@
 ---
 title: "Get mobileThreatDefenseConnector"
 description: "Read properties and relationships of the mobileThreatDefenseConnector object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 502
+Content-Length: 874
 
 {
   "value": {
@@ -69,17 +69,19 @@ Content-Length: 502
     "id": "e4bede14-de14-e4be-14de-bee414debee4",
     "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
     "partnerState": "available",
+    "androidMobileApplicationManagementEnabled": true,
+    "iosMobileApplicationManagementEnabled": true,
     "androidEnabled": true,
     "iosEnabled": true,
+    "windowsEnabled": true,
     "androidDeviceBlockedOnMissingPartnerData": true,
     "iosDeviceBlockedOnMissingPartnerData": true,
+    "windowsDeviceBlockedOnMissingPartnerData": true,
     "partnerUnsupportedOsVersionBlocked": true,
-    "partnerUnresponsivenessThresholdInDays": 6
+    "partnerUnresponsivenessThresholdInDays": 6,
+    "allowPartnerToCollectIOSApplicationMetadata": true,
+    "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
+    "microsoftDefenderForEndpointAttachEnabled": true
   }
 }
 ```
-
-
-
-
-

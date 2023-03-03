@@ -1,10 +1,13 @@
 ---
 title: "Users in Microsoft Graph"
 description: "Use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user in your organization."
-author: "dkershaw10"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: yuan.karppanen
 ms.localizationpriority: high
 ms.prod: "users"
 ms.custom: scenarios:getting-started
+ms.date: 11/11/2022
 ---
 
 # Overview of users in Microsoft Graph
@@ -62,8 +65,5 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- Learn more about how to [work with users](/graph/api/resources/users).
-- Explore your own data from the **user** resource in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Authenticate with Microsoft Graph [on behalf of a user](auth-v2-user.md) or [as a daemon or service by consent of an administrator](auth-v2-service.md).
-- Set access control and policies for users with the [Azure AD API](/graph/api/resources/azure-ad-overview).
-- Review the [permissions](permissions-reference.md) your app will need to access user data.
+- The [user resource type](/graph/api/resources/users).
+- Training module: Build your skills and [learn how to work with users through Microsoft Graph](/training/modules/msgraph-access-user-data).

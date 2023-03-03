@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Data Connect overview"
 description: "Use Microsoft Graph Data Connect to access Microsoft 365 bulk data at scale, enable granular consent, and provide data security and governance."
-author: "fercobo-msft"
+author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ms.custom: scenarios:getting-started
@@ -15,7 +15,7 @@ Ideal for big data and machine learning, Data Connect lets you develop applicati
 
 ![An image that shows the applied data controls between Microsoft 365 data into the Azure cloud, as well as the output data.](images/data-connect-mgdc-capabilities.png)
 
-Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. 
+Microsoft Graph Data Connect uses Azure Synapse or Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. 
 
 Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
@@ -35,7 +35,7 @@ You can take advantage of Microsoft Graph Data Connect if you agree to the [Micr
 
 Rich applications require access to large amounts of data, often from many users in your organization at once. For this reason, Microsoft Graph’s standard, transactional data model has a tendency to throttle large datasets. Data delivery requires a complex infrastructure and thousands of API calls, any of which might be throttled due to resource limitations. 
 
-Microsoft Graph Data Connect resolves this challenge by accessing data in bulk and repeatedly copying Microsoft 365 data to your application by using Azure Data Factory. Data Connect also lets you choose between accessing data from everyone in your organization or just specific groups of people.
+Microsoft Graph Data Connect resolves this challenge by accessing data in bulk and repeatedly copying Microsoft 365 data to your application by using Azure Synapse or Azure Data Factory. Data Connect also lets you choose between accessing data from everyone in your organization or just specific groups of people.
 
 ## Granular data consent
 

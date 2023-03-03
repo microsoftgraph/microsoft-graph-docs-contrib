@@ -7,28 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDeployment()
-settings := msgraphsdk.NewDeploymentSettings()
-requestBody.SetSettings(settings)
-monitoring := msgraphsdk.NewMonitoringSettings()
-settings.SetMonitoring(monitoring)
-monitoring.SetMonitoringRules( []MonitoringRule {
-	msgraphsdk.NewMonitoringRule(),
-signal := "rollback"
-	SetSignal(&signal)
+requestBody := graphmodels.NewDeployment()
+settings := graphmodels.NewDeploymentSettings()
+monitoring := graphmodels.NewMonitoringSettings()
+
+
+monitoringRule := graphmodels.NewMonitoringRule()
+signal := graphmodels.ROLLBACK_MONITORINGSIGNAL 
+monitoringRule.SetSignal(&signal) 
 threshold := int32(5)
-	SetThreshold(&threshold)
-action := "pauseDeployment"
-	SetAction(&action)
+monitoringRule.SetThreshold(&threshold) 
+action := graphmodels.PAUSEDEPLOYMENT_MONITORINGACTION 
+monitoringRule.SetAction(&action) 
+
+monitoringRules := []graphmodels.MonitoringRuleable {
+	monitoringRule,
+
 }
-settings.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-}
-deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(requestBody)
+monitoring.SetMonitoringRules(monitoringRules)
+settings.SetMonitoring(monitoring)
+requestBody.SetSettings(settings)
+
+result, err := graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

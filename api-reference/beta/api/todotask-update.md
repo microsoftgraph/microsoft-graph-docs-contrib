@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Tasks.ReadWrite|
-|Delegated (personal Microsoft account)|Tasks.ReadWrite|
-|Application|Not supported|
+|Delegated (work or school account) | Tasks.ReadWrite    |
+|Delegated (personal Microsoft account) |  Tasks.ReadWrite    |
+|Application| Tasks.ReadWrite.All  |
 
 ## HTTP request
 
@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the task to occur.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone at which the task is scheduled to start.|
 |status|taskStatus|Indicates state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header.|
@@ -90,16 +91,13 @@ Content-Type: application/json
    }
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-todotask-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-todotask-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-todotask-objc-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-todotask-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -114,9 +112,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-todotask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-todotask-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
