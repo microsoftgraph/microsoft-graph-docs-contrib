@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 ---
 
-
 ##### Response
 
 The following is an example of the response. 

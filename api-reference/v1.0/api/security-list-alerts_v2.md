@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 

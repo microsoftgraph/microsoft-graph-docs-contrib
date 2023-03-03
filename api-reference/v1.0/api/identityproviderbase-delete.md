@@ -96,7 +96,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/identityProviders/{id}
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeMicrosoft.graph.findMeetingTimesRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.MeFindMeetingTimesRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewFindMeetingTimesPostRequestBody()

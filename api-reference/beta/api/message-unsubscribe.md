@@ -91,7 +91,6 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 <!-- {

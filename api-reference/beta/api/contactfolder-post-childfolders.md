@@ -90,7 +90,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.
 
 ### Response

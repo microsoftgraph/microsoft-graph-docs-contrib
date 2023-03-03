@@ -4,15 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Sites.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("search", "{query}")
-};
+	requestConfiguration.QueryParameters.Search = "{query}";
+});
 
-var sites = await graphClient.Sites
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

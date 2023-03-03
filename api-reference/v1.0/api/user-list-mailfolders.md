@@ -247,7 +247,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 
 ---
 
-
 #### Response
 The following is an example of the response.
 

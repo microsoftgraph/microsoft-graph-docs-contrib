@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

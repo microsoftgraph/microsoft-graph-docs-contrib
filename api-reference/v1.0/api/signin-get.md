@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-f
 
 ---
 
-
 ### Response
 
 Here is an example of the response.
