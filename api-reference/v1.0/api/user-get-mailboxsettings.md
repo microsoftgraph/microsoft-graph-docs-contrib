@@ -23,6 +23,7 @@ receipt of their email)
 - time format
 - time zone
 - [working hours](../resources/workinghours.md)
+- [user purpose](../resources/mailboxsettings.md#userpurpose-values)
 
 Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
 
@@ -40,6 +41,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## HTTP request
+
 To get all the mailbox settings for a user:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,7 +49,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, or working hours:
+To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user's recipient or mailbox type (for example, user purpose):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -70,7 +72,11 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
+
+GET /me/mailboxSettings/userPurpose
+GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
+
 ## Optional query parameters
 This method supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
@@ -93,13 +99,17 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - string (for **timeFormat**)
 - string (for **timeZone**)
 - [workingHours](../resources/workinghours.md)
+- [userPurpose](../resources/mailboxsettings.md#userpurpose-values)
 
 ## Examples
 
-### Example 1
+### Example 1: Get all mailbox settings of the signed-in user's mailbox
+
+Get all the mailbox settings of the signed-in user's mailbox that include settings for automatic replies, date format, locale (language and country/region), time format, time zone, working hours, and user purpose.
+
 #### Request
-The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format,
-locale (language and country/region), time format, time zone, and working hours.
+
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -122,8 +132,10 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ---
 
 #### Response
-The response includes all the mailbox settings of the signed-in user.
-Note: The response object shown here might be shortened for readability.
+
+The following is an example of the response that includes all mailbox settings of the signed-in user.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -169,15 +181,20 @@ Content-type: application/json
             "name":"Pacific Standard Time"
         }
     },
+    "userPurpose": {
+        "value": "user"
+    },
     "dateFormat": "MM/dd/yyyy",
     "timeFormat": "hh:mm tt",
     "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
 }
 ```
 
-### Example 2
+### Example 2: Get specifically the automatic replies settings of the signed-in user's mailbox
+
 #### Request
-The second example gets specifically the automatic replies settings of the signed-in user's mailbox.
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -199,8 +216,10 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ---
 
 #### Response
-The response includes only the automatic replies settings.
-Note: The response object shown here might be shortened for readability.
+
+The following is an example of the response that includes only the automatic replies settings.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -228,9 +247,11 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 3: Get specifically the working hour settings of the signed-in user's mailbox
+
 #### Request
-The third example gets specifically the working hour settings of the signed-in user's mailbox.
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -252,8 +273,10 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ---
 
 #### Response
-The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).
-Note: The response object shown here might be shortened for readability.
+
+The following is an example of the response that includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "name": "get_mailboxsettings_3",
@@ -300,6 +323,41 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Get specifically the user purpose settings of the signed-in user's mailbox
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_mailboxsettings_4"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/mailboxSettings/userPurpose
+```
+
+#### Response
+
+The following is an example of the response that includes only the [user purpose](../resources/mailboxsettings.md#userpurpose-values) settings.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_mailboxsettings_4",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userPurpose"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('622eaaff-0683-4862-9de4-f2ec83c2bd98')/mailboxSettings/userPurpose",
+    "value": "user"
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -308,6 +366,7 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
+  "suppressions": ["Error: get_mailboxsettings_4:
+      Unable to locate a definition for resource type: microsoft.graph.userPurpose"
   ]
 }-->
