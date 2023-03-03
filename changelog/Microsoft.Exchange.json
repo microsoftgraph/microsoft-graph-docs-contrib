@@ -89,6 +89,66 @@
     {
       "ChangeList": [
         {
+          "Id": "eebbe000-313f-4698-87b1-651a9e75f114",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPurpose",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPurpose** property to the [mailboxSettings](https://learn.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0) resource.",
+          "Target": "mailboxSettings"
+        },
+        {
+          "Id": "eebbe000-313f-4698-87b1-651a9e75f114",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userPurpose",
+          "ChangeType": "Addition",
+          "Description": "Added the [userPurpose](https://learn.microsoft.com/en-us/graph/api/resources/userpurpose?view=graph-rest-1.0) resource type.",
+          "Target": "userPurpose"
+        },
+        {
+          "Id": "eebbe000-313f-4698-87b1-651a9e75f114",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "userPurpose",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPurpose** enumeration type.",
+          "Target": "userPurpose"
+        }
+      ],
+      "Id": "eebbe000-313f-4698-87b1-651a9e75f114",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-15T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "aaed27af-4717-4e50-8c8a-a5c7f87c0491",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "mailboxRecipientType",
+          "ChangeType": "Change",
+          "Description": "Renamed the **mailboxRecipientType** enumeration as **userPurpose**.",
+          "Target": "userPurpose"
+        },
+        {
+          "Id": "aaed27af-4717-4e50-8c8a-a5c7f87c0491",
+          "ApiChange": "Member",
+          "ChangedApiName": "mailboxRecipientType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `unknown` member from the **userPurpose** enumeration.",
+          "Target": "userPurpose"
+        }
+      ],
+      "Id": "aaed27af-4717-4e50-8c8a-a5c7f87c0491",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-15T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "116d29dd-f97b-421c-9b55-531aac9d4b38",
           "ApiChange": "Property",
           "ChangedApiName": "contentId",

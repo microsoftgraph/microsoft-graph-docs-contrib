@@ -11796,6 +11796,8 @@ items:
             href: api/device-update.md
           - name: Delete device
             href: api/device-delete.md
+          - name: Get delta
+            href: api/device-delta.md
           - name: Check member objects
             href: api/directoryobject-checkmemberobjects.md
           - name: Get member objects
