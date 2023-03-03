@@ -11,6 +11,18 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### userPurpose values
+
+| Member             | 
+|:-------------------|
+| user               |
+| linked             |
+| shared             |
+| room               |
+| equipment          |
+| others             |
+| unknownFutureValue |
+
 ### recommendationCategory values 
 
 |Member|
