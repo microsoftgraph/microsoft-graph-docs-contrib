@@ -2975,7 +2975,7 @@
             "ApiChange": "Member",
             "ChangedApiName": "getShiftWorkCloudPcAccessState",
             "ChangeType": "Addition",
-            "Description": "Added 'hibernated' in **shiftWorkCloudPcAccessState** enumeration type.",
+            "Description": "Added the 'hibernated' member to the **shiftWorkCloudPcAccessState** enumeration type.",
             "Target": "getShiftWorkCloudPcAccessState"
           }
         ],
