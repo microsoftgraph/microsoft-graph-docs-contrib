@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var ids = new List<String>()
+var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.NoncustodialDataSources.SecurityApplyHold.ApplyHoldPostRequestBody
 {
-	"39333641443238353535383731453339",
-	"46333131344239353834433430454335"
+	Ids = new List<string>
+	{
+		"39333641443238353535383731453339",
+		"46333131344239353834433430454335",
+	},
 };
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].NoncustodialDataSources.SecurityApplyHold.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].NoncustodialDataSources
-	.ApplyHold(ids)
-	.Request()
-	.PostAsync();
 
 ```

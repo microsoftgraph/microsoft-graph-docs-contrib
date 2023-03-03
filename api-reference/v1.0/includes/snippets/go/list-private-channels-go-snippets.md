@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "membershipType eq 'private'"
 
-requestParameters := &graphconfig.ChannelsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemChannelsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ChannelsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

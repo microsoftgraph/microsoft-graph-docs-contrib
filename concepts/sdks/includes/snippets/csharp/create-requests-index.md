@@ -5,6 +5,5 @@
 
 string messageId = "AQMkAGUy..";
 var message = await graphClient.Me.Messages[messageId]
-    .Request()
     .GetAsync();
 ```

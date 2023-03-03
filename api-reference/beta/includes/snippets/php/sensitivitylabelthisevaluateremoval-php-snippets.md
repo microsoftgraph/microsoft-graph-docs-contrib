@@ -96,7 +96,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->evaluateRemoval()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->securityEvaluateRemoval()->post($requestBody, $requestConfiguration);
 
 
 ```

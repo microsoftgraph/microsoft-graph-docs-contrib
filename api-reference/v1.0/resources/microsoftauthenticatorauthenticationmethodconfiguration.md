@@ -23,8 +23,8 @@ Represents a Microsoft Authenticator authentication methods policy. Authenticati
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The authentication method policy identifier.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 |featureSettings|[microsoftAuthenticatorFeatureSettings](../resources/microsoftauthenticatorfeaturesettings.md)|A collection of Microsoft Authenticator settings such as application context and location context, and whether they are enabled for all users or specific users only.|
+|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|

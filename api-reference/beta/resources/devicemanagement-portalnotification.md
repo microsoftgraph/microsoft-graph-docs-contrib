@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Represents the portal notification associated with the [alert record](devicemanagement-alertrecord.md) of a user.
 
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
+
 ## Properties
 
 |Property|Type|Description|

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
+Create a new [channel](../resources/channel.md) in a team, as specified in the request body. When you create a channel, the maximum length of the channel's `displayName` is 50 characters. This is the name that appears to the user in Microsoft Teams.
 
 You can add a maximum of 200 members when you create a private channel.
 
@@ -114,9 +114,6 @@ Content-type: application/json
 
 ---
 
-
----
-
 #### Response
 
 The following is an example of the response.
@@ -199,9 +196,6 @@ Content-type: application/json
 
 ---
 
-
----
-
 #### Response
 
 The following is an example of the response.
@@ -280,8 +274,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -368,9 +360,6 @@ Content-type: application/json
 
 ---
 
-
----
-
 #### Response
 
 The following is an example of the response.
@@ -454,8 +443,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -544,7 +531,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

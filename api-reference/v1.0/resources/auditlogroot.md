@@ -83,7 +83,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs
 
 ---
 
-
 <!-- {
   "blockType": "response",
   "truncated": true,

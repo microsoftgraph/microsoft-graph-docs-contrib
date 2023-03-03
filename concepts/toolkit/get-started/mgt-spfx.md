@@ -14,6 +14,13 @@ To prevent multiple components from registering their own set of Microsoft Graph
 > [!CAUTION]
 > The SharePoint Framework library for Microsoft Graph Toolkit is meant to be used with **SharePoint Framework extensions and non-isolated web parts**. If you're building isolated web parts, don't use the SharePoint Framework library for Microsoft Graph Toolkit. Instead, load Microsoft Graph Toolkit directly from the @microsoft/mgt (or @microsoft/mgt-react if you use React) package. SharePoint Framework doesn't support referencing library components from isolated web parts and doing so will cause runtime errors in the isolated web part.
 
+## Prerequisites
+
+Before you deploy your SharePoint Framework package to your tenant, you will need to deploy the `@microsoft/mgt-spfx` SharePoint Framework package to your tenant. You can download the package that corresponds to the version of `@microsoft/mgt-spfx` that you used in your project from the [Releases](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) section on GitHub. This package needs to be uploaded to the App Catalog and deplyoed to all sites.
+
+>[!IMPORTANT]
+>Because only one version of the SharePoint Framework library for Microsoft Graph Toolkit can be installed in the tenant, before you use the Microsoft Graph Toolkit in your solution, determine whether your organization or customer already has a version of the SharePoint Framework library deployed and use the same version.
+
 ## Installation
 
 To load Microsoft Graph Toolkit components from the library, add the `@microsoft/mgt-spfx` package as a runtime dependency to your SharePoint Framework project:
@@ -27,11 +34,6 @@ or
 ```bash
 yarn add @microsoft/mgt-spfx
 ```
-
-Before deploying your SharePoint Framework package to your tenant, you will need to deploy the `@microsoft/mgt-spfx` SharePoint Framework package to your tenant. You can download the package corresponding to the version of `@microsoft/mgt-spfx` that you used in your project, from the [Releases](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) section on GitHub.
-
->[!IMPORTANT]
->Because only one version of the SharePoint Framework library for Microsoft Graph Toolkit can be installed in the tenant, before you use the Microsoft Graph Toolkit in your solution, determine whether your organization or customer already has a version of the SharePoint Framework library deployed and use the same version.
 
 ## Usage
 

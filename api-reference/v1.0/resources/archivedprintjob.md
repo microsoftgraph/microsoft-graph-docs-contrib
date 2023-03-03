@@ -39,17 +39,17 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 	{	
-  "@odata.type": "#microsoft.graph.archivedPrintJob",	
-  "id": "String (identifier)",	
-  "printerId": "String",	
-  "processingState": "String",	
-  "createdDateTime": "String (timestamp)",	
+  "@odata.type": "#microsoft.graph.archivedPrintJob",
+  "acquiredByPrinter": "Boolean",
   "acquiredDateTime": "String (timestamp)",	
   "completionDateTime": "String (timestamp)",	
-  "acquiredByPrinter": "Boolean",	
   "copiesPrinted": "Integer",	
   "createdBy": {	
     "@odata.type": "microsoft.graph.userIdentity"	
-  }	
+  },
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",	
+  "printerId": "String",	
+  "processingState": "String"	
 }
 ```

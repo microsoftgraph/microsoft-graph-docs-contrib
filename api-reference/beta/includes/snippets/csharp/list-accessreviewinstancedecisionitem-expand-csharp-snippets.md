@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var filterByCurrentUser = await graphClient.IdentityGovernance.AccessReviews.Decisions
-	.FilterByCurrentUser(AccessReviewInstanceDecisionItemFilterByCurrentUserOptions.Reviewer)
-	.Request()
-	.Expand("instance($expand=definition)")
-	.GetAsync();
+var result = await graphClient.IdentityGovernance.AccessReviews.Decisions["{accessReviewInstanceDecisionItem-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "instance($expand=definition)" };
+});
+
 
 ```

@@ -81,7 +81,7 @@ POST /groups/{groupId}/events/{eventId}/extensions
 POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
 POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
 POST /organization/{organizationId}/extensions
-POST /users/{userIdd|userPrincipalName}/contacts/{contactId}/extensions
+POST /users/{userId|userPrincipalName}/contacts/{contactId}/extensions
 POST /users/{userId|userPrincipalName}/extensions
 POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions
 POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
@@ -201,7 +201,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 1
 
@@ -335,7 +334,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response 2
 
 Here is the response for the second example. The response body includes the following for the new extension:
@@ -419,7 +417,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response 3
 
 Here is the response from the third example request.
@@ -491,7 +488,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -511,7 +508,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 4
 
@@ -583,7 +579,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -603,7 +599,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 5
 

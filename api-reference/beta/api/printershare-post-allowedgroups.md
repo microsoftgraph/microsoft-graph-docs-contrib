@@ -88,7 +88,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a reference to a group entity by including the group's Microsoft Graph URI in the `@odata.id` field of the JSON body.
 
 ### Response

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"User-Agent": "ContosoLOBApp/1.0",
-}
-configuration := &graphconfig.EvaluateRemovalRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("User-Agent", "ContosoLOBApp/1.0")
+
+configuration := &graphconfig.InformationProtectionPolicyLabelsEvaluateRemovalRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvaluateRemovalPostRequestBody()

@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntX
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

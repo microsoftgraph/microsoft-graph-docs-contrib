@@ -1,7 +1,7 @@
 ---
 title: "deviceLicensingStatus enum type"
 description: "Indicates the device licensing status after Windows device based subscription has been enabled."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -36,8 +36,3 @@ Indicates the device licensing status after Windows device based subscription ha
 |deviceLicenseRemoveFailed|13|This status is set when the device license removing fails.|
 |unknownFutureValue|14|This is put here as a place holder for future extension.|
 |unknown|-1|Default. Set to unknown when status cannot be determined.|
-
-
-
-
-

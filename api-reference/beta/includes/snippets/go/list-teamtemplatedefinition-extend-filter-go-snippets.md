@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "definitions/any"
 
-requestParameters := &graphconfig.TeamTemplatesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamworkTeamTemplatesRequestBuilderGetQueryParameters{
 	Expand: [] string {"definitions"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamTemplatesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamworkTeamTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

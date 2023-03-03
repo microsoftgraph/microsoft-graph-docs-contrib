@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
 
-This method supports federation. Any shared channel that the request initiator belongs to will be included in the response.
+>**Note:** Guest users can't see private or shared channels that they aren't members of in the response for this API.
 
 ## Permissions
 
@@ -38,7 +38,7 @@ GET /teams/{team-id}/channels
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the $filter and $select [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -98,8 +98,6 @@ GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -174,7 +172,6 @@ GET https://graph.microsoft.com/v1.0/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -247,7 +244,6 @@ GET https://graph.microsoft.com/v1.0/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

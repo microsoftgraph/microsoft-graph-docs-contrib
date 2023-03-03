@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | ChannelMessage.ReadWrite, Group.ReadWrite.All** |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ChannelMessage.UpdatePolicyViolation.All, ChannelMessage.ReadWrite.All, Group.ReadWrite.All** |
+| Application                            | ChannelMessage.UpdatePolicyViolation.All, Group.ReadWrite.All** |
 
 > **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
@@ -81,12 +81,14 @@ specifying only the **policyViolation** property.
 
 ## Response body
 For applications that use delegated permissions:
-If successful, this method returns a `204 NoContent` response.
+If successful, this method returns a `204 No Content` response.
 
 For applications that use application permissions:
 If successful, this method returns a `200 OK` response.
 
-## Example for updating policyViolation by using application permissions
+## Examples
+
+### Example 1: Update policyViolation using application permissions
 
 #### Request
 
@@ -142,7 +144,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 Here is an example of the response.
@@ -165,7 +166,7 @@ HTTP/1.1 200 OK
 }-->
 
 
-## Example for updating any property of a message by using delegated permissions
+### Example 2: Update any property of a message using delegated permissions
 
 #### Request
 
@@ -211,7 +212,7 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-1-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -236,7 +237,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 Here is an example of the response.
@@ -249,7 +249,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the mentions of a message by using delegated permissions
+### Example 3: Update the mentions of a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
 
@@ -323,7 +324,7 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-2-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -348,7 +349,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 Here is an example of the response.
@@ -361,7 +361,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the content with attachments of a message by using delegated permissions
+### Example 4: Update the content with attachments of a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
@@ -422,7 +423,7 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-3-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -447,7 +448,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 Here is an example of the response.
@@ -460,7 +460,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the reactions in a message by using delegated permissions
+### Example 5: Update the reactions in a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
 
@@ -756,7 +757,7 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-4-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -780,7 +781,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
