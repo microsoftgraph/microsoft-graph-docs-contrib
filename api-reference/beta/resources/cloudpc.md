@@ -111,7 +111,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |activating|Indicates that a user is requesting to connect the Cloud PC and the service is starting.|
 |waitlisted|The waitlisted value is deprecated and will stop returning on May 17, 2023. Indicates the shift work Cloud PC is in waitlisted state after the user requests to connect this Cloud PC and all shared use licenses are being actively used.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-|hibernated|Indicates the shift work Cloud PC is in the hibernated state before it's shutdown and deallocated. Shift work Cloud PC in hibernated state is still accessible by end user.|
+|hibernated|Indicates the shift work Cloud PC is in the hibernated state before it's shut down and deallocated. A Shift work Cloud PC in hibernated state is still accessible by the end user.|
 
 ## Relationships
 
