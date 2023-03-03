@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/MC172851
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

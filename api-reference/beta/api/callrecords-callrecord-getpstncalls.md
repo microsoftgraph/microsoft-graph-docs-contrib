@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

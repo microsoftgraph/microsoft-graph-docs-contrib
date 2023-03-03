@@ -188,7 +188,6 @@ GET https://graph.microsoft.com/beta/users/{id}
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -258,7 +257,6 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -322,6 +320,7 @@ For more examples of custom security attribute assignments, see [Examples: Assig
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_customsecurityattributes"
@@ -329,6 +328,32 @@ For more examples of custom security attribute assignments, see [Examples: Assig
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-customsecurityattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-customsecurityattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-customsecurityattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-customsecurityattributes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-customsecurityattributes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-user-customsecurityattributes-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -419,7 +444,6 @@ GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -495,7 +519,6 @@ GET https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

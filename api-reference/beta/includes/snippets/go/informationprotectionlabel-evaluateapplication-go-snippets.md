@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.InformationProtectionPolicyLabelsMicrosoft.graph.evaluateApplicationRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.InformationProtectionPolicyLabelsEvaluateApplicationRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvaluateApplicationPostRequestBody()

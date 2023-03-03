@@ -93,7 +93,6 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-
 
 ---
 
-
 ##### Response
 <!-- {
   "blockType": "response",

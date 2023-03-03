@@ -115,7 +115,6 @@ Authorization: Bearer {Token}
 
 ---
 
-
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 
 <!-- {
