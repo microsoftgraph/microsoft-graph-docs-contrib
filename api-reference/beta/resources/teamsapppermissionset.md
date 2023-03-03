@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set of resource-specific permissions.
+Set of required/granted permissions that can associated with a Teams app.
 
 ## Properties
 |Property|Type|Description|

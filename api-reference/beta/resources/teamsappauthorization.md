@@ -18,7 +18,7 @@ The authorization details of a [teamsApp](teamsapp.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|requiredPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of permissions associated with [teamsApp](teamsapp.md).|
+|requiredPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of permissions required by the [teamsApp](teamsapp.md).|
 
 ## Relationships
 None.

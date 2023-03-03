@@ -43,7 +43,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique ID (not the team's app ID). |
-|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource-specific permissions consented while installing or upgrading the teamsApp. They are specified in teams app manifest.|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource-specific permissions consented while installing or upgrading the teamsApp.|
 
 ## Relationships
 
