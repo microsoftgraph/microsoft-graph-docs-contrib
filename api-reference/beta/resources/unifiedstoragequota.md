@@ -24,7 +24,7 @@ The unifiedStorageQuota resource providers an aggregate view of a user's quota i
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|the user id|
+|id|String|the user id.|
 |manageWebUrl|String| A URL that can be used in a browser to manage the breakdown. Read-only. |
 |remaining|Int64| Total space remaining before reaching the quota limit, in bytes. |
 |state|usqState| Enumeration value that indicates the state of the storage space. |
