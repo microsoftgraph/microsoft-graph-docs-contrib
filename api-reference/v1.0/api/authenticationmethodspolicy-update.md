@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationMethodsPolicy"
 description: "Update the properties of an authenticationMethodsPolicy object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -43,10 +43,14 @@ PATCH /policies/authenticationMethodsPolicy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [authenticationMethodConfigurations](../resources/authenticationmethodconfiguration.md) object to prompt users to set up targeted authentication methods. 
+In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods. 
+
+|Property|Type|Description|
+|:---|:---|:---|
+|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
 
 ## Response
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
@@ -60,12 +64,11 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
-    "registrationEnforcement": {
+  "registrationEnforcement": {
     "authenticationMethodsRegistrationCampaign": {
         "snoozeDurationInDays": 1,
         "state": "enabled",
@@ -77,22 +80,8 @@ Content-Type: application/json
                 "targetedAuthenticationMethod": "microsoftAuthenticator"
             }
         ]
-      }
-    },
-    "authenticationMethodConfigurations": [
-        {
-            "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-            "id": "Fido2",
-            "state": "disabled",
-            "isSelfServiceRegistrationAllowed": false,
-            "isAttestationEnforced": false,
-            "keyRestrictions": {
-                "isEnforced": false,
-                "enforcementType": "block",
-                "aaGuids": []
-            }
-        }
-    ]
+    }
+  }
 }
 ```
 
@@ -125,6 +114,29 @@ Content-Type: application/json
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
 
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+  "id": "authenticationMethodsPolicy",
+  "displayName": "Authentication Methods Policy",
+  "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
+  "lastModifiedDateTime": "2021-05-25T01:08:08.6712279Z",
+  "policyVersion": "1.4",
+  "registrationEnforcement": {
+    "authenticationMethodsRegistrationCampaign": {
+        "snoozeDurationInDays": 1,
+        "state": "enabled",
+        "excludeTargets": [],
+        "includeTargets": [
+            {
+                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                "targetType": "group",
+                "targetedAuthenticationMethod": "microsoftAuthenticator"
+            }
+        ]
+    }
+  }
+}
 ```
