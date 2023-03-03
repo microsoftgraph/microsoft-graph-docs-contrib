@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The unifiedStorageQuota resource providers an aggregate view of a user's quota information across multiple services.
+The unifiedStorageQuota resource provides an aggregate view of a user's quota information across multiple services.
 
 ## Methods
 |Method|Return type|Description|
