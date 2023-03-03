@@ -3,7 +3,7 @@ title: "setting resource type"
 description: "Represents a setting that is used within a baseline."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

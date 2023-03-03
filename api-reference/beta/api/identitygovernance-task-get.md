@@ -45,7 +45,8 @@ GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
 Fetch tasks for a lifecycle workflow version.
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "ignored",
+  "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "2", "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee"]
 }
 -->
 ``` http
@@ -68,7 +69,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [task](../resources/identitygovernance-task.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) object in the response body.
 
 ## Examples
 
@@ -123,16 +124,13 @@ The following is an example of a request to get a task from a workflow version.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_get_workflowVersion_task"
+  "name": "lifecycleworkflows_get_workflowVersion_task",
+  "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "2", "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee"]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-workflowversion-task-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-get-workflowversion-task-javascript-snippets.md)]
@@ -143,7 +141,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

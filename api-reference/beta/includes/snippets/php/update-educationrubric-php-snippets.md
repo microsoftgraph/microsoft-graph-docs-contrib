@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Example Credit Rubric after display name patch');
 
 
 
-$graphServiceClient->education()->me()->rubricsById('educationRubric-id')->patch($requestBody);
+$requestResult = $graphServiceClient->education()->me()->rubricsById('educationRubric-id')->patch($requestBody);
 
 
 ```

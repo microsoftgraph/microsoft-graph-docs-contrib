@@ -13,7 +13,7 @@ $requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new UserRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
-$queryParameters->orderBy = ["displayName"];
+$queryParameters->orderby = ["displayName"];
 $queryParameters->search = "\"displayName:tier\"";
 $queryParameters->select = ["displayName","id"];
 
@@ -25,7 +25,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->user()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->graphUser()->get($requestConfiguration);
 
 
 ```

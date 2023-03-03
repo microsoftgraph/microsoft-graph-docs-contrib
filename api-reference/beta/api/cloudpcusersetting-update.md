@@ -52,10 +52,10 @@ The following table shows the properties that are required when you update the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The setting name displayed in the user interface.|
-|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `True`.  |
-|selfServiceEnabled|Boolean|To turn on the self-service option, change this setting to `True`. |
+|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.  |
+|selfServiceEnabled|Boolean|To turn on the self-service option, change this setting to `true`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
+|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 
 
 
@@ -66,6 +66,8 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,10 +117,10 @@ Content-Type: application/json
 
 ---
 
-
-
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

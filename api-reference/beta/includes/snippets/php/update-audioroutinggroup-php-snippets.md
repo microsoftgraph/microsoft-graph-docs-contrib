@@ -20,7 +20,7 @@ $requestBody->setReceivers(['550fae72-d251-43ec-868c-373732c2704f', '72f988bf-86
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->audioRoutingGroupsById('audioRoutingGroup-id')->patch($requestBody);
+$requestResult = $graphServiceClient->communications()->callsById('call-id')->audioRoutingGroupsById('audioRoutingGroup-id')->patch($requestBody);
 
 
 ```

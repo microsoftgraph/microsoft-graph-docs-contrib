@@ -11,7 +11,7 @@ requestBody := graphmodels.NewTag()
 description := "This is an updated description."
 requestBody.SetDescription(&description) 
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -16,7 +16,7 @@ $requestBody->setEnableConnection(true);
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettingsById('cloudPcExternalPartnerSetting-id')->patch($requestBody);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettingsById('cloudPcExternalPartnerSetting-id')->patch($requestBody);
 
 
 ```

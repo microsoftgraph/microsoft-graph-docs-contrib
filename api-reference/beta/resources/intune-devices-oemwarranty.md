@@ -1,7 +1,7 @@
 ---
 title: "oemWarranty resource type"
 description: "OEM Warranty information for a given device"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -60,9 +60,3 @@ Here is a JSON representation of the resource.
   "deviceConfigurationUrl": "String"
 }
 ```
-
-
-
-
-
-

@@ -23,7 +23,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->tasksById('plannerTask-id')->bucketTaskBoardFormat()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->bucketTaskBoardFormat()->patch($requestBody, $requestConfiguration);
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyConfigurationIngestionType enum type"
 description: "Group Policy Configuration Ingestion Type"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -25,9 +25,3 @@ Group Policy Configuration Ingestion Type
 |builtIn|2|Indicates policy created have definitions ingested through system ingestion process|
 |mixed|3|Indicated atleast 1 tenant admin & system ingested definitions configured for this policy|
 |unknownFutureValue|4|Unknown future enum value|
-
-
-
-
-
-

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationDelta
+Get-MgApplication -ApplicationId $applicationId
 
 ```

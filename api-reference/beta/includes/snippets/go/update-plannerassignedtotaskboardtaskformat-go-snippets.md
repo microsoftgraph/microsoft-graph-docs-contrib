@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-	"If-Match": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
-configuration := &graphconfig.AssignedToTaskBoardFormatRequestBuilderPatchRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphconfig.PlannerTaskItemAssignedToTaskBoardFormatRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerAssignedToTaskBoardTaskFormat()
@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 orderHintsByAssignee.SetAdditionalData(additionalData)
 requestBody.SetOrderHintsByAssignee(orderHintsByAssignee)
 
-graphClient.Planner().TasksById("plannerTask-id").AssignedToTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().TasksById("plannerTask-id").AssignedToTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```

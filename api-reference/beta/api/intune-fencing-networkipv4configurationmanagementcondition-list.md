@@ -1,7 +1,7 @@
 ---
 title: "List networkIPv4ConfigurationManagementConditions"
 description: "List properties and relationships of the networkIPv4ConfigurationManagementCondition objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -90,6 +90,3 @@ Content-Length: 810
   ]
 }
 ```
-
-
-

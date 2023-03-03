@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews/M
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-servicehealth-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews/M
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -158,7 +157,6 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews/M
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -198,7 +196,7 @@ Content-Type: application/json
                 "createdDateTime": "2020-11-12T07:07:38.97Z",
                 "postType": "Regular",
                 "description": {
-                    "contentType": "Text",
+                    "contentType": "Html",
                     "content": "Users may have been intermittently unable to access some Microsoft 365 services. We'll provide an update within 30 minutes."
                   }
               }

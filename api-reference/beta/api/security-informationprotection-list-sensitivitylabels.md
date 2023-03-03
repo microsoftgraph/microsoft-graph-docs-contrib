@@ -73,7 +73,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_sensitivitylabel"
+  "name": "list_sensitivitylabel",
+  "sampleKeys": ["bob@contoso.com"]
 }
 -->
 
@@ -102,7 +103,6 @@ GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationP
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

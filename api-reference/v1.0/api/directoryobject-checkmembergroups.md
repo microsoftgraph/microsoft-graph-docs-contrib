@@ -192,7 +192,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response
@@ -230,7 +229,7 @@ Content-type: application/json
   "name": "directoryobject_checkmembergroups_me"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
 Content-type: application/json
 
 {
@@ -266,7 +265,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -25,8 +25,8 @@ Here is a JSON representation of a **fieldValueSet** resource.
 {
     "Author": "Brad Cleaver",
     "AuthorLookupId": "13",
-    "Name": "Kangaroos and Wallabies: A Deep Dive",
     "Color": "Red",
+    "Name": "Kangaroos and Wallabies: A Deep Dive",
     "Quantity": 350,
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileNineWorkEasConfiguration resource type"
 description: "By providing configurations in this profile you can instruct the Nine Work email client on Android Work Profile devices to communicate with an Exchange server and get email, contacts, calendar, tasks, and notes. Furthermore, you can also specify how much email to sync and how often the device should sync."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -118,9 +118,3 @@ Here is a JSON representation of the resource.
   "syncTasks": true
 }
 ```
-
-
-
-
-
-

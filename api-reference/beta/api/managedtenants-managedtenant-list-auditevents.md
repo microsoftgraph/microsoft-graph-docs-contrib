@@ -3,7 +3,7 @@ title: "List auditEvents"
 description: "Get a list of the auditEvent objects and their properties."
 author: "vkumar2015"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 

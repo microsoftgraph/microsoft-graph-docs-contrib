@@ -88,6 +88,7 @@ Content-type: application/json
     "phone":"206-555-0100",
     "email":"manager@fourthcoffee.com",
     "webSiteUrl":"https://www.fourthcoffee.com",
+    "languageTag":"en-US",
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,

@@ -1,7 +1,7 @@
 ---
 title: "bitLockerRecoveryInformationType enum type"
 description: "BitLockerRecoveryInformationType types"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -22,9 +22,3 @@ BitLockerRecoveryInformationType types
 |:---|:---|:---|
 |passwordAndKey|1|Store recovery passwords and key packages.|
 |passwordOnly|2|Store recovery passwords only.|
-
-
-
-
-
-

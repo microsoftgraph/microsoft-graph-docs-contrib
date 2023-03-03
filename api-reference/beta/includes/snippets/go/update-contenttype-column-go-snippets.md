@@ -15,7 +15,7 @@ requestBody.SetHidden(&hidden)
 propagateChanges := false
 requestBody.SetPropagateChanges(&propagateChanges) 
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").ColumnsById("columnDefinition-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.SitesById("site-id").ContentTypesById("contentType-id").ColumnsById("columnDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setDescription('Target completion date (YYYY/MM/DD)');
 
 
 
-$graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->patch($requestBody);
+$requestResult = $graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->patch($requestBody);
 
 
 ```

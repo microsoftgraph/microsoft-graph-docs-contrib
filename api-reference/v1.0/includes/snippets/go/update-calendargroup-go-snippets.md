@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCalendarGroup()
 name := "name-value"
 requestBody.SetName(&name) 
 
-graphClient.Me().CalendarGroupsById("calendarGroup-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().CalendarGroupsById("calendarGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

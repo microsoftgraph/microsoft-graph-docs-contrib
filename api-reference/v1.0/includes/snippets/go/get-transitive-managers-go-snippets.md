@@ -7,16 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
-
-requestCount := true
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
 
 requestParameters := &graphconfig.MeRequestBuilderGetQueryParameters{
 	Expand: [] string {"manager($levels=max;$select=id,displayName)"},
 	Select: [] string {"id","displayName"},
-	Count: &requestCount,
 }
 configuration := &graphconfig.MeRequestBuilderGetRequestConfiguration{
 	Headers: headers,

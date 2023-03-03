@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 federatedIdpMfaBehavior := graphmodels.ACCEPTIFMFADONEBYFEDERATEDIDP_FEDERATEDIDPMFABEHAVIOR 
 requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior) 
 
-graphClient.DomainsById("domain-id").FederationConfigurationById("internalDomainFederation-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.DomainsById("domain-id").FederationConfigurationById("internalDomainFederation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

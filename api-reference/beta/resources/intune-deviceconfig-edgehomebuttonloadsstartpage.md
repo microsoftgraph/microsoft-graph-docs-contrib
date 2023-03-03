@@ -1,7 +1,7 @@
 ---
 title: "edgeHomeButtonLoadsStartPage resource type"
 description: "Show the home button; clicking the home button loads the Start page - this is also the default value."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -39,9 +39,3 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.edgeHomeButtonLoadsStartPage"
 }
 ```
-
-
-
-
-
-

@@ -44,9 +44,9 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.ENDDATE_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2017-09-04"
+startDate := 2017-09-04
 range.SetStartDate(&startDate) 
-endDate := "2017-12-31"
+endDate := 2017-12-31
 range.SetEndDate(&endDate) 
 recurrence.SetRange(range)
 requestBody.SetRecurrence(recurrence)

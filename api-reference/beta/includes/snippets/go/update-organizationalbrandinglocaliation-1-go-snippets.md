@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Accept-Language": "0",
-}
-configuration := &graphconfig.BrandingRequestBuilderPatchRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Accept-Language", "0")
+
+configuration := &graphconfig.OrganizationItemBrandingRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOrganizationalBranding()
@@ -19,7 +19,7 @@ requestBody.SetSignInPageText(&signInPageText)
 usernameHintText := "DefaultHint"
 requestBody.SetUsernameHintText(&usernameHintText) 
 
-graphClient.OrganizationById("organization-id").Branding().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.OrganizationById("organization-id").Branding().Patch(context.Background(), requestBody, configuration)
 
 
 ```

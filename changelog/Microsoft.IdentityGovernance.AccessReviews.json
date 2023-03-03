@@ -1119,7 +1119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "groupPeerOutlierRecommendationInsightSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [groupPeerOutlierRecommendationInsightSettings](https://learn.microsoft.com/en-us/graph/api/resources/groupPeerOutlierRecommendationInsightSettings?view=graph-rest-beta) resource type. Use this resource to configure decision recommendations in Azure AD access reviews that are based on the access that a user's peers have.",
+          "Description": "Added the [groupPeerOutlierRecommendationInsightSettings](https://learn.microsoft.com/en-us/graph/api/resources/groupPeerOutlierRecommendationInsightSettings?view=graph-rest-beta) resource type. Use this resource to configure decision recommendations in Azure AD access reviews that are based on the affiliation that a user has with other users within the group.",
           "Target": "groupPeerOutlierRecommendationInsightSettings"
         },
         {

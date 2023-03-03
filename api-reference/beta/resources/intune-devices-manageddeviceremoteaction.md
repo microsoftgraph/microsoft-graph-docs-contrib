@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceRemoteAction enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -36,9 +36,5 @@ Not yet documented
 |moveDeviceToOrganizationalUnit|13|Name of the moveDevicesToOU action.|
 |activateDeviceEsim|14|Name of action to Activate eSIM on the device.|
 |collectDiagnostics|15|Name of the collectDiagnostics action.|
-
-
-
-
-
-
+|initiateMobileDeviceManagementKeyRecovery|16|Name of action to initiate MDM key recovery|
+|initiateOnDemandProactiveRemediation|17|Name of action to initiate On Demand Proactive Remediation|

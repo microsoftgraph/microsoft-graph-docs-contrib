@@ -2,7 +2,7 @@
 title: "officeClientConfiguration resource type"
 description: "Office Client Configuration."
 localization_priority: Normal
-author: "dougeby"
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -83,8 +83,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-

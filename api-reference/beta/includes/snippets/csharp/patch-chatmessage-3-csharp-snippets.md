@@ -59,6 +59,9 @@ var chatMessage = new ChatMessage
 	},
 	Reactions = new List<ChatMessageReaction>()
 	{
+	},
+	MessageHistory = new List<ChatMessageHistoryItem>()
+	{
 	}
 };
 

@@ -27,11 +27,11 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |:-------------|:------------|:------------|
 |attributes|[accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) collection| Contains information about the attributes to be collected from the requestor and sent to the resource application. |
 |addedBy|String|The name of the user or application that first added this resource. Read-only.|
-|addedOn|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|addedOn|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |description|String|A description for the resource.|
 |displayName|String|The display name of the resource, such as the application name, group name or site name.|
 |id|String| Read-only.|
-|isPendingOnboarding|Boolean|True if the resource is not yet available for assignment.|
+|isPendingOnboarding|Boolean|True if the resource is not yet available for assignment. Read-only. |
 |originId|String|The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group. |
 |originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication` or `AadGroup`.|
 |resourceType|String|The type of the resource, such as `Application` if it is an Azure AD connected application, or `SharePoint Online Site` for a SharePoint Online site.|

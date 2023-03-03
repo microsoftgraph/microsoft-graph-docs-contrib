@@ -58,7 +58,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->me()->planner()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->me()->planner()->patch($requestBody, $requestConfiguration);
 
 
 ```

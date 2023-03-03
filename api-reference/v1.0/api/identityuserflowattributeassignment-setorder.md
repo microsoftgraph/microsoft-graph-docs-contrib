@@ -68,7 +68,7 @@ If successful, this action returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments/setOrder
+POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows/{id}/userAttributeAssignments/setOrder
 Content-Type: application/json
 
 {
@@ -106,7 +106,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

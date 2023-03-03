@@ -1,7 +1,7 @@
 ---
 title: "windowsAppIdentifier resource type"
 description: "The identifier for a Windows app."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -41,9 +41,3 @@ Here is a JSON representation of the resource.
   "windowsAppId": "String"
 }
 ```
-
-
-
-
-
-

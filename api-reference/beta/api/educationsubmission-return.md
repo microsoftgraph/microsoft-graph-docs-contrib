@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite   |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application | EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/022fb52d-1278-d21f-e827-2221a6a3e516/return
+POST https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/submissions/d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a/return
 ```
 
 # [C#](#tab/csharp)
@@ -82,7 +82,6 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 
 ---
 
-
 ### Response
 The following is an example of the response.
 
@@ -99,20 +98,22 @@ HTTP/1.1 200 Ok
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
     "status": "returned",
-    "submittedDateTime": "2021-09-03T18:20:11.2167718Z",
+    "submittedDateTime": null,
     "unsubmittedDateTime": null,
-    "returnedDateTime": "2021-09-03T19:01:45.6526389Z",
-    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RKYRQDN3FDQWNA24OCLHBD5C2SH",
-    "id": "022fb52d-1278-d21f-e827-2221a6a3e516",
+    "returnedDateTime": "2022-10-19T23:00:30.9243194Z",
+    "reassignedDateTime": null,
+    "resourcesFolderUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%222be08d97-b140-4eec-8cbd-88238d571060%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%22d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "id": "d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a",
     "recipient": {
         "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+        "userId": "61243ddb-6f39-499d-b232-9fa8cef26b3a"
     },
     "submittedBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": "61243ddb-6f39-499d-b232-9fa8cef26b3a",
             "displayName": null
         }
     },
@@ -128,7 +129,15 @@ HTTP/1.1 200 Ok
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
+        }
+    },
+    "reassignedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
             "displayName": null
         }
     }

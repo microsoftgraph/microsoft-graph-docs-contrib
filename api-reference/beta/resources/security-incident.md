@@ -25,6 +25,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |[List incidents](../api/security-list-incidents.md)|[microsoft.graph.security.incident](../resources/security-incident.md) collection|Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender has created to track attacks in an organization.|
 |[Get incident](../api/security-incident-get.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Read the properties and relationships of an [incident](../resources/security-incident.md) object.|
 |[Update incident](../api/security-incident-update.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Update the properties of an [incident](../resources/security-incident.md) object.|
+|[Create comment for incident](../api/security-incident-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [incident](../resources/security-incident.md) based on the specified incident **id** property.|
 
 
 ## Properties
@@ -42,8 +43,8 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
-|tags|String collection|Array of custom tags associated with an incident.|
+|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`.|
+|customTags|String collection|Array of custom tags associated with an incident.|
 
 
 ### incidentStatus values 
@@ -52,6 +53,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 | :-------------------| :-------------------------------------------------------------------------------------------------------------------- |
 | active			        | The incident is in active state.                                                                                      |
 | resolved            | The incident is in resolved state.                                                                                    |
+| inProgress          | The incident is in mitigation progress.                                                                               |
 | redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property. |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                     |
 
@@ -87,7 +89,7 @@ The following is a JSON representation of the resource.
   "determination": "String",
   "status": "String",
   "severity": "String",
-  "tags": [
+  "customTags": [
     "String"
   ],
   "comments": [

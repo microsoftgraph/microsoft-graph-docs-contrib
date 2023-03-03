@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.MessageRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeMessageItemRequestBuilderGetQueryParameters{
 	Select: [] string {"internetMessageHeaders"},
 }
-configuration := &graphconfig.MessageRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMessageItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -43,7 +43,7 @@ POST /solutions/bookingBusinesses/{id}/appointments
 
 In the request body, supply a JSON representation of a [bookingAppointment](../resources/bookingappointment.md) object.
 
-If the maximum number of customers (**maximumAttedeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
+If the maximum number of customers (**maximumAttendeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
 
 - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
 
@@ -78,6 +78,7 @@ Content-type: application/json
     },
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
+    "anonymousJoinWebUrl": null,
     "postBuffer": "PT10M",
     "preBuffer": "PT5M",
     "price": 10.0,
@@ -219,9 +220,10 @@ Content-type: application/json
     "preBuffer": "PT5M",
     "postBuffer": "PT10M",
     "priceType": "fixedPrice",
-    "price": 10,
+    "price": 10.0,
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
+    "anonymousJoinWebUrl": null,
     "staffMemberIds": [],
     "startDateTime": {
         "dateTime": "2018-05-01T12:00:00.0000000Z",

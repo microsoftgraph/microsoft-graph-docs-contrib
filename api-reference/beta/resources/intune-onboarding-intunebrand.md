@@ -1,7 +1,7 @@
 ---
 title: "intuneBrand resource type"
 description: "intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -42,8 +42,10 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
+|disableDeviceCategorySelection|Boolean|Boolean that indicates if Device Category Selection will be shown in Company Portal|
 |showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
+|showConfigurationManagerApps|Boolean|Boolean that indicates if ConfigurationManagerApps will be shown in Company Portal|
 |sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
 |disableClientTelemetry|Boolean|Applies to telemetry sent from all clients to the Intune service. When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.|
@@ -109,16 +111,12 @@ Here is a JSON representation of the resource.
       "action": "String"
     }
   ],
+  "disableDeviceCategorySelection": true,
   "showAzureADEnterpriseApps": true,
   "showOfficeWebApps": true,
+  "showConfigurationManagerApps": true,
   "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "String",
   "disableClientTelemetry": true
 }
 ```
-
-
-
-
-
-

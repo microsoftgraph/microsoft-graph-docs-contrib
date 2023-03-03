@@ -11,7 +11,7 @@ requestBody := graphmodels.NewLanguageProficiency()
 allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
 requestBody.SetAllowedAudiences(&allowedAudiences) 
 
-graphClient.Me().Profile().LanguagesById("languageProficiency-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Profile().LanguagesById("languageProficiency-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

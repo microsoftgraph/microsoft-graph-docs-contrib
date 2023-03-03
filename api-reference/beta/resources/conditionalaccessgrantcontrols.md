@@ -33,9 +33,15 @@ Consider the following when you use the `passwordChange` control:
 - The policy should target `all` applications, and not exclude any applications.
 - The policy cannot contain any other condition.
 
+### Known issue when using when using `authenticationStrength` control
+
+You can create or update a Conditional Access policy with `authenticationStrength` grant control. However, when reading the policy, the `authenticationStrength` information might be missing from the response.
+
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+| authenticationStrength | [authenticationStrengthPolicy](authenticationstrengthpolicy.md) | The authentication strength required by the conditional access policy. Optional.|
 
 ## JSON representation
 
@@ -47,7 +53,8 @@ The following is a JSON representation of the resource.
     "operator",
     "builtInControls",
     "customAuthenticationFactors",
-    "termsOfUse"
+    "termsOfUse",
+    "authenticationStrength"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessGrantControls",
   "baseType": null
@@ -58,7 +65,8 @@ The following is a JSON representation of the resource.
   "builtInControls": ["String"],
   "customAuthenticationFactors": ["String"],
   "operator": "String",
-  "termsOfUse": ["String"]
+  "termsOfUse": ["String"],
+  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrengthPolicy"}
 }
 ```
 

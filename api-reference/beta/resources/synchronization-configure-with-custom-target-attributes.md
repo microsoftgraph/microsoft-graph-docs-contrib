@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
+ms.date: 07/20/2022
 ---
 
 # Configure synchronization with custom target attributes
@@ -113,7 +114,6 @@ Authorization: Bearer {Token}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 

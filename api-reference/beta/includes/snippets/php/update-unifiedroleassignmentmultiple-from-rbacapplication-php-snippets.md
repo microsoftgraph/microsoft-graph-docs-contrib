@@ -14,7 +14,7 @@ $requestBody->setPrincipalIds(['0aeec2c1-fee7-4e02-b534-6f920d25b300', '2d5386a7
 
 
 
-$graphServiceClient->roleManagement()->deviceManagement()->roleAssignmentsById('unifiedRoleAssignmentMultiple-id')->patch($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignmentsById('unifiedRoleAssignmentMultiple-id')->patch($requestBody);
 
 
 ```

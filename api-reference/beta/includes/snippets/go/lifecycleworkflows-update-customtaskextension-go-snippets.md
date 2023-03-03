@@ -39,7 +39,7 @@ timeoutDuration , err := abstractions.ParseISODuration("PT20M")
 callbackConfiguration.SetTimeoutDuration(&timeoutDuration) 
 requestBody.SetCallbackConfiguration(callbackConfiguration)
 
-graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensionsById("customTaskExtension-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensionsById("customTaskExtension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

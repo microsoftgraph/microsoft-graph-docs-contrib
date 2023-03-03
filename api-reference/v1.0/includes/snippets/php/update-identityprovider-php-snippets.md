@@ -14,7 +14,7 @@ $requestBody->setClientSecret('1111111111111');
 
 
 
-$graphServiceClient->identityProvidersById('identityProvider-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identityProvidersById('identityProvider-id')->patch($requestBody);
 
 
 ```

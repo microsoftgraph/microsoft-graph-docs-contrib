@@ -1,7 +1,7 @@
 ---
 title: "signingCertificateUpdateStatus resource type"
 description: "Provides status of the last update of the signing certificate."
-author: "akgoel23"
+author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var ediscoverySearch = new Microsoft.Graph.Security.EdiscoverySearch
+var requestBody = new Microsoft.Graph.Models.Security.EdiscoverySearch
 {
-	DisplayName = "Teams search"
+	DisplayName = "Teams search",
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Searches["{ediscoverySearch-id}"].PatchAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Searches["{security.ediscoverySearch-id}"]
-	.Request()
-	.UpdateAsync(ediscoverySearch);
 
 ```

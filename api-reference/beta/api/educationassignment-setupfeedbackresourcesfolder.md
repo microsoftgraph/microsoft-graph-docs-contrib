@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md).
+Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md). Only teachers can perform this operation.
 
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
@@ -91,9 +91,11 @@ Content-type: application/json
 
 ---
 
-
 ### Response
+
 The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

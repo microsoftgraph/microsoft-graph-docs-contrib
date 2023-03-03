@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(2)
 
-requestParameters := &graphconfig.GetAllMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.UserItemChatsGetAllMessages()RequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.GetAllMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemChatsGetAllMessages()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

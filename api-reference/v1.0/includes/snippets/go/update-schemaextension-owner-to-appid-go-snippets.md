@@ -42,7 +42,7 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 }
 requestBody.SetProperties(properties)
 
-graphClient.SchemaExtensionsById("schemaExtension-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.SchemaExtensionsById("schemaExtension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

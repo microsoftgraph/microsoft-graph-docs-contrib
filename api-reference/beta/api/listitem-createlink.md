@@ -58,6 +58,8 @@ The following table shows the parameters that can be used with this action.
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
+| retainInheritedPermissions |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
+|sendNotification|Boolean|If `true`, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint. The default value is `false`. Optional.|
 
 ### Link types
 
@@ -95,14 +97,15 @@ The response will be `201 Created` if a new sharing link is created for the list
 ### Example 1: Create an anonymous sharing link
 The following example requests a sharing link to be created for the listItem specified by {itemId} in the list specified {listId}.
 The sharing link is configured to be read-only and usable by anyone with the link.
+For OneDrive for Business and SharePoint users, use the `sendNotification` parameter to create a sharing link. The `sharingLink` is then sent to recipients via email.
+All existing permissions are removed when sharing for the first time if `retainInheritedPermissions` is false.
 
 #### Request
 
 
 <!-- {
   "blockType": "request",
-  "name": "listItem_createlink_for_itemID_in_specific_list",
-  "sampleKeys": ["contoso.sharepoint.com,2288913C-B09C-46C4-BD1D-AEBB3A6E08EB,133A857A-DC2E-4A41-BCF7-D2B9BBC016AF", "A90E03FB-8446-4E0F-82E7-810FA7595A66", "3"]
+  "name": "listItem_createlink_for_itemID_in_specific_list"
 }-->
 
 ```http
@@ -117,7 +120,9 @@ Content-Type: application/json
     {
       "@odata.type": "microsoft.graph.driveRecipient"
     }
-  ]
+  ],
+  "sendNotification": true,
+  "retainInheritedPermissions": false
 }
 ```
 
@@ -162,8 +167,7 @@ To create a company sharable link, use the **scope** parameter with a value of `
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "listItem_createlink_create_company_shareable_links",
-  "sampleKeys": ["contoso.sharepoint.com,2288913C-B09C-46C4-BD1D-AEBB3A6E08EB,133A857A-DC2E-4A41-BCF7-D2B9BBC016AF", "A90E03FB-8446-4E0F-82E7-810FA7595A66", "3"]
+  "name": "listItem_createlink_create_company_shareable_links"
 }-->
 
 ```http
@@ -229,7 +233,7 @@ Content-Type: application/json
 ### Example 3: Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
-When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
+When an embed link is created, the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
 >**Note:** Embed links are only supported for OneDrive personal.
 
@@ -239,8 +243,7 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "listItem_createlink_3",
-  "sampleKeys": ["contoso.sharepoint.com,2288913C-B09C-46C4-BD1D-AEBB3A6E08EB,133A857A-DC2E-4A41-BCF7-D2B9BBC016AF", "A90E03FB-8446-4E0F-82E7-810FA7595A66", "3"]
+  "name": "listItem_createlink_3"
 }-->
 
 ```http

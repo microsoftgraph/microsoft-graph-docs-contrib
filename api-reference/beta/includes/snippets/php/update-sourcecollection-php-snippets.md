@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Quarterly Financials search');
 
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->patch($requestBody);
+$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->patch($requestBody);
 
 
 ```

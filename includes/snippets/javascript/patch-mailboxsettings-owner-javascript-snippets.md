@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const mailboxSettings = {
-  delegateMeetingMessageDeliveryOptions: "sendToDelegateAndPrincipal"
+  delegateMeetingMessageDeliveryOptions: 'sendToDelegateAndPrincipal'
 };
 
-let res = await client.api('/users/AlexW@contoso.OnMicrosoft.com/mailboxsettings')
+await client.api('/users/AlexW@contoso.OnMicrosoft.com/mailboxsettings')
 	.version('beta')
 	.update(mailboxSettings);
 

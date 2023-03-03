@@ -1,7 +1,7 @@
 ---
 title: "List depEnrollmentBaseProfiles"
 description: "List properties and relationships of the depEnrollmentBaseProfile objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1219
+Content-Length: 1292
 
 {
   "value": [
@@ -91,14 +91,11 @@ Content-Length: 1219
       "privacyPaneDisabled": true,
       "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
-      "configurationWebUrl": true
+      "configurationWebUrl": true,
+      "enabledSkipKeys": [
+        "Enabled Skip Keys value"
+      ]
     }
   ]
 }
 ```
-
-
-
-
-
-

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAppManagementPolicy()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled) 
 
-graphClient.Policies().AppManagementPoliciesById("appManagementPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().AppManagementPoliciesById("appManagementPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

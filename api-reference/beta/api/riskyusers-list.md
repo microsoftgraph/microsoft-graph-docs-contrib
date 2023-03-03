@@ -2,7 +2,7 @@
 title: "List riskyUsers"
 description: "Retrieve the properties and relationships of a collection of **riskyUser** objects."
 ms.localizationpriority: medium
-author: "cloudhandler"
+author: "tracyshi"
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 ---
@@ -154,7 +154,6 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers?$filter=riskL
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 Here is an example of the response.
