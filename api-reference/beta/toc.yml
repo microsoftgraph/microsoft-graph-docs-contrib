@@ -371,7 +371,7 @@ items:
           href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
-        - name: Get shift work cloudPc's access state
+        - name: Get shift work cloudPCs access state
           href: api/cloudpc-getshiftworkcloudpcaccessstate.md
         - name: Reboot
           href: api/cloudpc-reboot.md

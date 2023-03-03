@@ -104,11 +104,11 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Member|Description|
 |:---|:---|
-|unassigned|Default. Set to unassigned if the Cloud PC is not consuming any shared-use licenses.|
-|noLicensesAvailable|Indicates the shift work Cloud PC cannot be assigned any sharedUseLicenses as all shared use licenses are in use as of now.|
-|activationFailed|Indicates the shift work Cloud PC activation failed after user requested the shift work Cloud PC.|
-|active|Indicates the shift work Cloud PC is in active state with a shared use license assigned and the user could connect to this Cloud PC.|
-|activating|Indicates the shift work Cloud PC is in activating state after the user requests to connect this Cloud PC, service is working on starting the Cloud PC.|
+|unassigned|Set to unassigned if the Cloud PC is not consuming any shared-use licenses. The default value is unassigned.|
+|noLicensesAvailable|Indicates that all shared-use licenses are in use.|
+|activationFailed|Indicates the shift work Cloud PC activation failed after the user requested a shift work Cloud PC.|
+|active|Indicates the shift work Cloud PC is in an active state with a shared-use license assigned, and the user could connect to the Cloud PC.|
+|activating|Indicates that a user is requesting to connect the Cloud PC and the service is starting.|
 |waitlisted|The waitlisted value is deprecated and will stop returning on May 17, 2023. Indicates the shift work Cloud PC is in waitlisted state after the user requests to connect this Cloud PC and all shared use licenses are being actively used.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 |hibernated|Indicates the shift work Cloud PC is in the hibernated state before it's shutdown and deallocated. Shift work Cloud PC in hibernated state is still accessible by end user.|
