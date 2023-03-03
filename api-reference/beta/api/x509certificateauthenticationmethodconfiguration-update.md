@@ -45,7 +45,6 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 The following properties can be updated.
 
 |Property|Type|Description|
