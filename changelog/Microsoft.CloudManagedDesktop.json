@@ -2972,7 +2972,7 @@
         "ChangeList": [
           {
             "Id": "90d99702-fe6e-44c7-a45a-a2ad1442bd22",
-            "ApiChange": "Enumeration",
+            "ApiChange": "Member",
             "ChangedApiName": "getShiftWorkCloudPcAccessState",
             "ChangeType": "Addition",
             "Description": "Added 'hibernated' in **shiftWorkCloudPcAccessState** enumeration type.",
