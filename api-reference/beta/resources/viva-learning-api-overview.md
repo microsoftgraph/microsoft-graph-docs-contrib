@@ -32,7 +32,7 @@ With the appropriate delegated or application [employee learning permissions](/g
 ## Use cases for the employee learning API in Microsoft Graph
 Use the employee learning APIs to do the following:
 - [Register a provider with Viva Learning](../api/employeeexperience-post-learningproviders.md), provide a display name, square logo that is displayed on a learning content card, and a long logo that is displayed in the **Details** page, which is required for the provider content to show up in Viva Learning. The returned registration ID can be used to make the subsequent calls for content ingestion.
-- Enable or disable a registration and update the display name and logo URLs for a provider.  
+- Update the display name and logo URLs for a provider.  
 - [Get the details about a provider](../api/learningprovider-get.md) in Viva Learning for a specific **registrationId**.  
 - [Get the list of provider registrations](../api/employeeexperience-list-learningproviders.md) in Viva Learning for a tenant.
 - [Delete a registration](../api/employeeexperience-delete-learningproviders.md) of a provider in Viva Learning.

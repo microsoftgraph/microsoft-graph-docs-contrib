@@ -102,8 +102,6 @@ Content-length: 158
 
 ---
 
-
-
 ### Response
 
 <!-- {

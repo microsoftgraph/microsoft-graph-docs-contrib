@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var group = await graphClient.Groups["{group-id}"]
-	.Request()
-	.Select("allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount")
-	.GetAsync();
+var result = await graphClient.Groups["{group-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount" };
+});
+
 
 ```

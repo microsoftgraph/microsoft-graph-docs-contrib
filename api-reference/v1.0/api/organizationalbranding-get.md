@@ -98,7 +98,6 @@ Accept-Language: 0
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -177,7 +176,6 @@ Accept-Language: 0
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -234,7 +232,6 @@ Accept-Language: fr-FR
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -344,7 +341,6 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

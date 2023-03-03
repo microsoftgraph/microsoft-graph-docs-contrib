@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sh
 
 ---
 
-
 #### Response
 
 The following is an example of the response. 

@@ -110,7 +110,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 
 #### Response
@@ -209,7 +208,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -305,7 +303,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders?i
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
