@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recommendation",
           "ChangeType": "Addition",
-          "Description": "Added the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource and its associated methods. Azure AD recommendations are personalized and actionable insights for you to implement Azure AD best practices in your tenant.",
+          "Description": "Added the **recommendation** resource and its associated methods. Azure AD recommendations are personalized and actionable insights for you to implement Azure AD best practices in your tenant.",
           "Target": "recommendation"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recommendationBase",
           "ChangeType": "Addition",
-          "Description": "Added the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationbase?view=graph-rest-beta) resource.",
+          "Description": "Added the **recommendationBase** resource.",
           "Target": "recommendationBase"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "impactedResource",
           "ChangeType": "Addition",
-          "Description": "Added the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource and its associated methods.",
+          "Description": "Added the impactedResource** resource and its associated methods.",
           "Target": "impactedResource"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "actionStep",
           "ChangeType": "Addition",
-          "Description": "Added the [actionStep](https://learn.microsoft.com/en-us/graph/api/resources/actionStep?view=graph-rest-beta) resource.",
+          "Description": "Added the **actionStep** resource.",
           "Target": "actionStep"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "actionUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [actionUrl](https://learn.microsoft.com/en-us/graph/api/resources/actionUrl?view=graph-rest-beta) resource.",
+          "Description": "Added the **actionUrl** resource.",
           "Target": "actionUrl"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "recommendations",
           "ChangeType": "Addition",
-          "Description": "Added the recommendations navigation property to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Description": "Added the recommendations navigation property to the **directory** resource.",
           "Target": "directory"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "DirectoryRecommendations.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `DirectoryRecommendations.Read.All` delegated and application permissions to the read operations of [Azure AD recommendations](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta).",
+          "Description": "Added support for the `DirectoryRecommendations.Read.All` delegated and application permissions to the read operations of Azure AD recommendations.",
           "Target": "recommendation"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "DirectoryRecommendations.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `DirectoryRecommendations.ReadWrite.All` delegated and application permissions to the read and write operations of [Azure AD recommendations](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta).",
+          "Description": "Added support for the `DirectoryRecommendations.ReadWrite.All` delegated and application permissions to the read and write operations of Azure AD recommendations.",
           "Target": "recommendation"
         }
       ],
