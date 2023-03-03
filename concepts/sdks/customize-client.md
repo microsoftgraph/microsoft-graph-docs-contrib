@@ -17,8 +17,7 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 // https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(...);
 
-var authProvider = new TokenCredentialAuthProvider(
-    interactiveCredential, scopes);
+var authProvider = new AzureIdentityAuthenticationProvider(tokenCredential, scopes);
 
 var handlers = GraphClientFactory.CreateDefaultHandlers();
 
