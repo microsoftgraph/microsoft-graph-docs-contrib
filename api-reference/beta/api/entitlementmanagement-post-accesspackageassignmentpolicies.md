@@ -305,7 +305,7 @@ The following example shows a request to create an access package assignment pol
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies_verifiableCredentialSettings"
+  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies_questions"
 }-->
 
 ```http
@@ -632,14 +632,14 @@ The following example shows how to create an access package policy with a verifi
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentpolicy_customaccesspackageworkflowextension"
+  "name": "create_accesspackageassignmentpolicy_verifiablecredentials"
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 Content-type: application/json
 
 {
-  "displayName": "extension-policy",
+  "displayName": "policy-with-verified-id",
   "description": "test",
   "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
   "expiration": {
