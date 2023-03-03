@@ -356,13 +356,11 @@ In order to be valid, properties restriction should specify a valid, queryable m
 
 ## Example 6: Specify select properties
 
-You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
+You can specify the fields you want back in the response, as part of the **fields** sub-property in listItem or an internal **listItem** sub-property in driveItem of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
 
-Note that property selection for custom properties in SharePoint is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.
+Note that property selection for custom properties in SharePoint is only available for **listItem** or **driveItem** since these are the only two SharePoint entities in Microsoft Graph that support custom properties.
 
-To retrieve a custom property for a **driveItem**, query **listItem** instead.
-
-### Request
+### ListItem request
 
 ```HTTP
 POST /search/query
@@ -386,7 +384,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+### ListItem response
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -432,6 +430,67 @@ Content-type: application/json
   ]
 }
 ```
+
+### DriveItem request
+
+```HTTP
+POST /search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "driveItem"
+      ],
+      "query": {
+        "queryString": "contoso"
+      },
+      "fields": [
+          "listId",
+          "author",
+          "title"
+      ]
+    }
+  ]
+}
+```
+
+### DriveItem response
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+  "value": [
+    {
+      "searchTerms": [],
+      "hitsContainers": [
+        {
+          "hits": [
+            {
+              "hitId": "01SWVK7NZFPB6EAQPNVFDLA2TXYRKZYPEI",
+              "rank": 1,
+              "summary": "",
+              "resource": {
+                "@odata.type": "#microsoft.graph.driveItem",
+                "listItem": {
+                  "@odata.type": "#microsoft.graph.listItem",
+                  "fields": {
+                    "listId": "a6a27920-6750-4c20-9efe-33f0631124a0",
+                    "author": "John",
+                    "title": "The new Bing"
+                  },
+                  "id": "407c7825-ed41-46a9-b06a-77c4559c3c88"
+                }
+              }
+            }
+          ],
+          "total": 37420104,
+          "moreResultsAvailable": true
+        }
+      ]
+    }
+  ]
+}
 
 ## Known limitations
 
