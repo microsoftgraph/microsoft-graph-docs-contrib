@@ -29,7 +29,7 @@ The unifiedStorageQuota resource providers an aggregate view of a user's quota i
 |remaining|Int64| Total space remaining before reaching the quota limit in bytes. |
 |state|usqState| Enumeration value that indicates the state of the storage space. |
 |total|Int64| Total allowed storage space in bytes. |
-|used|Int64| Total space used, in bytes. |
+|used|Int64| Total space used in bytes. |
 
 ## Relationships
 |Relationship|Type|Description|
