@@ -307,9 +307,268 @@ $reactionsArray []= $reactionsChatMessageReaction8;
 $requestBody->setReactions($reactionsArray);
 
 
+$messageHistoryChatMessageHistoryItem1 = new ChatMessageHistoryItem();
+$messageHistoryChatMessageHistoryItem1->setModifiedDateTime(new DateTime('2018-10-21T08:10:30.489Z'));
+
+$messageHistoryChatMessageHistoryItem1->setActions(new ChatMessageActions('reactionadded'));
+
+$messageHistoryChatMessageHistoryItem1Reaction = new ChatMessageReaction();
+$messageHistoryChatMessageHistoryItem1Reaction->setReactionType('angry');
+
+$messageHistoryChatMessageHistoryItem1ReactionUser = new ChatMessageReactionIdentitySet();
+$messageHistoryChatMessageHistoryItem1ReactionUser->setApplication(null);
+
+$messageHistoryChatMessageHistoryItem1ReactionUser->setDevice(null);
+
+$messageHistoryChatMessageHistoryItem1ReactionUserUser = new Identity();
+$messageHistoryChatMessageHistoryItem1ReactionUserUser->setId('f1b66449-b46d-49b0-9c3c-53c10a5c818e');
+
+$messageHistoryChatMessageHistoryItem1ReactionUserUser->setDisplayName(null);
+
+$additionalData = [
+'userIdentityType' => 'aadUser', 
+];
+$messageHistoryChatMessageHistoryItem1ReactionUserUser->setAdditionalData($additionalData);
 
 
-$graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
+
+$messageHistoryChatMessageHistoryItem1ReactionUser->setUser($messageHistoryChatMessageHistoryItem1ReactionUserUser);
+
+$messageHistoryChatMessageHistoryItem1Reaction->setUser($messageHistoryChatMessageHistoryItem1ReactionUser);
+
+$messageHistoryChatMessageHistoryItem1->setReaction($messageHistoryChatMessageHistoryItem1Reaction);
+
+$messageHistoryArray []= $messageHistoryChatMessageHistoryItem1;
+$messageHistoryChatMessageHistoryItem2 = new ChatMessageHistoryItem();
+$messageHistoryChatMessageHistoryItem2->setModifiedDateTime(new DateTime('2018-10-21T08:10:32.489Z'));
+
+$messageHistoryChatMessageHistoryItem2->setActions(new ChatMessageActions('reactionadded'));
+
+$messageHistoryChatMessageHistoryItem2Reaction = new ChatMessageReaction();
+$messageHistoryChatMessageHistoryItem2Reaction->setReactionType('laugh');
+
+$messageHistoryChatMessageHistoryItem2ReactionUser = new ChatMessageReactionIdentitySet();
+$messageHistoryChatMessageHistoryItem2ReactionUser->setApplication(null);
+
+$messageHistoryChatMessageHistoryItem2ReactionUser->setDevice(null);
+
+$messageHistoryChatMessageHistoryItem2ReactionUserUser = new Identity();
+$messageHistoryChatMessageHistoryItem2ReactionUserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7a4e');
+
+$messageHistoryChatMessageHistoryItem2ReactionUserUser->setDisplayName(null);
+
+$additionalData = [
+'userIdentityType' => 'aadUser', 
+];
+$messageHistoryChatMessageHistoryItem2ReactionUserUser->setAdditionalData($additionalData);
+
+
+
+$messageHistoryChatMessageHistoryItem2ReactionUser->setUser($messageHistoryChatMessageHistoryItem2ReactionUserUser);
+
+$messageHistoryChatMessageHistoryItem2Reaction->setUser($messageHistoryChatMessageHistoryItem2ReactionUser);
+
+$messageHistoryChatMessageHistoryItem2->setReaction($messageHistoryChatMessageHistoryItem2Reaction);
+
+$messageHistoryArray []= $messageHistoryChatMessageHistoryItem2;
+$messageHistoryChatMessageHistoryItem3 = new ChatMessageHistoryItem();
+$messageHistoryChatMessageHistoryItem3->setModifiedDateTime(new DateTime('2018-10-21T02:17:14.67Z'));
+
+$messageHistoryChatMessageHistoryItem3->setActions(new ChatMessageActions('reactionadded'));
+
+$messageHistoryChatMessageHistoryItem3Reaction = new ChatMessageReaction();
+$messageHistoryChatMessageHistoryItem3Reaction->setReactionType('like');
+
+$messageHistoryChatMessageHistoryItem3ReactionUser = new ChatMessageReactionIdentitySet();
+$messageHistoryChatMessageHistoryItem3ReactionUser->setApplication(null);
+
+$messageHistoryChatMessageHistoryItem3ReactionUser->setDevice(null);
+
+$messageHistoryChatMessageHistoryItem3ReactionUserUser = new Identity();
+$messageHistoryChatMessageHistoryItem3ReactionUserUser->setId('f1b66449-b46d-49b0-9c3c-53c10a5c818e');
+
+$messageHistoryChatMessageHistoryItem3ReactionUserUser->setDisplayName(null);
+
+$additionalData = [
+'userIdentityType' => 'aadUser', 
+];
+$messageHistoryChatMessageHistoryItem3ReactionUserUser->setAdditionalData($additionalData);
+
+
+
+$messageHistoryChatMessageHistoryItem3ReactionUser->setUser($messageHistoryChatMessageHistoryItem3ReactionUserUser);
+
+$messageHistoryChatMessageHistoryItem3Reaction->setUser($messageHistoryChatMessageHistoryItem3ReactionUser);
+
+$messageHistoryChatMessageHistoryItem3->setReaction($messageHistoryChatMessageHistoryItem3Reaction);
+
+$messageHistoryArray []= $messageHistoryChatMessageHistoryItem3;
+$messageHistoryChatMessageHistoryItem4 = new ChatMessageHistoryItem();
+$messageHistoryChatMessageHistoryItem4->setModifiedDateTime(new DateTime('2018-10-21T02:34:40.3Z'));
+
+$messageHistoryChatMessageHistoryItem4->setActions(new ChatMessageActions('reactionadded'));
+
+$messageHistoryChatMessageHistoryItem4Reaction = new ChatMessageReaction();
+$messageHistoryChatMessageHistoryItem4Reaction->setReactionType('like');
+
+$messageHistoryChatMessageHistoryItem4ReactionUser = new ChatMessageReactionIdentitySet();
+$messageHistoryChatMessageHistoryItem4ReactionUser->setApplication(null);
+
+$messageHistoryChatMessageHistoryItem4ReactionUser->setDevice(null);
+
+$messageHistoryChatMessageHistoryItem4ReactionUserUser = new Identity();
+$messageHistoryChatMessageHistoryItem4ReactionUserUser->setId('4c9041b7-449a-40f7-8855-56da239b9fd1');
+
+$messageHistoryChatMessageHistoryItem4ReactionUserUser->setDisplayName(null);
+
+$additionalData = [
+'userIdentityType' => 'aadUser', 
+];
+$messageHistoryChatMessageHistoryItem4ReactionUserUser->setAdditionalData($additionalData);
+
+
+
+$messageHistoryChatMessageHistoryItem4ReactionUser->setUser($messageHistoryChatMessageHistoryItem4ReactionUserUser);
+
+$messageHistoryChatMessageHistoryItem4Reaction->setUser($messageHistoryChatMessageHistoryItem4ReactionUser);
+
+$messageHistoryChatMessageHistoryItem4->setReaction($messageHistoryChatMessageHistoryItem4Reaction);
+
+$messageHistoryArray []= $messageHistoryChatMessageHistoryItem4;
+$messageHistoryChatMessageHistoryItem5 = new ChatMessageHistoryItem();
+$messageHistoryChatMessageHistoryItem5->setModifiedDateTime(new DateTime('2018-10-21T08:10:25.489Z'));
+
+$messageHistoryChatMessageHistoryItem5->setActions(new ChatMessageActions('reactionadded'));
+
+$messageHistoryChatMessageHistoryItem5Reaction = new ChatMessageReaction();
+$messageHistoryChatMessageHistoryItem5Reaction->setReactionType('like');
+
+$messageHistoryChatMessageHistoryItem5ReactionUser = new ChatMessageReactionIdentitySet();
+$messageHistoryChatMessageHistoryItem5ReactionUser->setApplication(null);
+
+$messageHistoryChatMessageHistoryItem5ReactionUser->setDevice(null);
+
+$messageHistoryChatMessageHistoryItem5ReactionUserUser = new Identity();
+$messageHistoryChatMessageHistoryItem5ReactionUserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7a4e');
+
+$messageHistoryChatMessageHistoryItem5ReactionUserUser->setDisplayName(null);
+
+$additionalData = [
+'userIdentityType' => 'aadUser', 
+];
+$messageHistoryChatMessageHistoryItem5ReactionUserUser->setAdditionalData($additionalData);
+
+
+
+$messageHistoryChatMessageHistoryItem5ReactionUser->setUser($messageHistoryChatMessageHistoryItem5ReactionUserUser);
+
+$messageHistoryChatMessageHistoryItem5Reaction->setUser($messageHistoryChatMessageHistoryItem5ReactionUser);
+
+$messageHistoryChatMessageHistoryItem5->setReaction($messageHistoryChatMessageHistoryItem5Reaction);
+
+$messageHistoryArray []= $messageHistoryChatMessageHistoryItem5;
+$messageHistoryChatMessageHistoryItem6 = new ChatMessageHistoryItem();
+$messageHistoryChatMessageHistoryItem6->setModifiedDateTime(new DateTime('2018-10-21T08:10:31.489Z'));
+
+$messageHistoryChatMessageHistoryItem6->setActions(new ChatMessageActions('reactionadded'));
+
+$messageHistoryChatMessageHistoryItem6Reaction = new ChatMessageReaction();
+$messageHistoryChatMessageHistoryItem6Reaction->setReactionType('heart');
+
+$messageHistoryChatMessageHistoryItem6ReactionUser = new ChatMessageReactionIdentitySet();
+$messageHistoryChatMessageHistoryItem6ReactionUser->setApplication(null);
+
+$messageHistoryChatMessageHistoryItem6ReactionUser->setDevice(null);
+
+$messageHistoryChatMessageHistoryItem6ReactionUserUser = new Identity();
+$messageHistoryChatMessageHistoryItem6ReactionUserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7a4e');
+
+$messageHistoryChatMessageHistoryItem6ReactionUserUser->setDisplayName(null);
+
+$additionalData = [
+'userIdentityType' => 'aadUser', 
+];
+$messageHistoryChatMessageHistoryItem6ReactionUserUser->setAdditionalData($additionalData);
+
+
+
+$messageHistoryChatMessageHistoryItem6ReactionUser->setUser($messageHistoryChatMessageHistoryItem6ReactionUserUser);
+
+$messageHistoryChatMessageHistoryItem6Reaction->setUser($messageHistoryChatMessageHistoryItem6ReactionUser);
+
+$messageHistoryChatMessageHistoryItem6->setReaction($messageHistoryChatMessageHistoryItem6Reaction);
+
+$messageHistoryArray []= $messageHistoryChatMessageHistoryItem6;
+$messageHistoryChatMessageHistoryItem7 = new ChatMessageHistoryItem();
+$messageHistoryChatMessageHistoryItem7->setModifiedDateTime(new DateTime('2018-10-21T08:10:33.489Z'));
+
+$messageHistoryChatMessageHistoryItem7->setActions(new ChatMessageActions('reactionadded'));
+
+$messageHistoryChatMessageHistoryItem7Reaction = new ChatMessageReaction();
+$messageHistoryChatMessageHistoryItem7Reaction->setReactionType('sad');
+
+$messageHistoryChatMessageHistoryItem7ReactionUser = new ChatMessageReactionIdentitySet();
+$messageHistoryChatMessageHistoryItem7ReactionUser->setApplication(null);
+
+$messageHistoryChatMessageHistoryItem7ReactionUser->setDevice(null);
+
+$messageHistoryChatMessageHistoryItem7ReactionUserUser = new Identity();
+$messageHistoryChatMessageHistoryItem7ReactionUserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7a4e');
+
+$messageHistoryChatMessageHistoryItem7ReactionUserUser->setDisplayName(null);
+
+$additionalData = [
+'userIdentityType' => 'aadUser', 
+];
+$messageHistoryChatMessageHistoryItem7ReactionUserUser->setAdditionalData($additionalData);
+
+
+
+$messageHistoryChatMessageHistoryItem7ReactionUser->setUser($messageHistoryChatMessageHistoryItem7ReactionUserUser);
+
+$messageHistoryChatMessageHistoryItem7Reaction->setUser($messageHistoryChatMessageHistoryItem7ReactionUser);
+
+$messageHistoryChatMessageHistoryItem7->setReaction($messageHistoryChatMessageHistoryItem7Reaction);
+
+$messageHistoryArray []= $messageHistoryChatMessageHistoryItem7;
+$messageHistoryChatMessageHistoryItem8 = new ChatMessageHistoryItem();
+$messageHistoryChatMessageHistoryItem8->setModifiedDateTime(new DateTime('2018-10-21T08:10:34.489Z'));
+
+$messageHistoryChatMessageHistoryItem8->setActions(new ChatMessageActions('surprised'));
+
+$messageHistoryChatMessageHistoryItem8Reaction = new ChatMessageReaction();
+$messageHistoryChatMessageHistoryItem8Reaction->setReactionType('sad');
+
+$messageHistoryChatMessageHistoryItem8ReactionUser = new ChatMessageReactionIdentitySet();
+$messageHistoryChatMessageHistoryItem8ReactionUser->setApplication(null);
+
+$messageHistoryChatMessageHistoryItem8ReactionUser->setDevice(null);
+
+$messageHistoryChatMessageHistoryItem8ReactionUserUser = new Identity();
+$messageHistoryChatMessageHistoryItem8ReactionUserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7a4e');
+
+$messageHistoryChatMessageHistoryItem8ReactionUserUser->setDisplayName(null);
+
+$additionalData = [
+'userIdentityType' => 'aadUser', 
+];
+$messageHistoryChatMessageHistoryItem8ReactionUserUser->setAdditionalData($additionalData);
+
+
+
+$messageHistoryChatMessageHistoryItem8ReactionUser->setUser($messageHistoryChatMessageHistoryItem8ReactionUserUser);
+
+$messageHistoryChatMessageHistoryItem8Reaction->setUser($messageHistoryChatMessageHistoryItem8ReactionUser);
+
+$messageHistoryChatMessageHistoryItem8->setReaction($messageHistoryChatMessageHistoryItem8Reaction);
+
+$messageHistoryArray []= $messageHistoryChatMessageHistoryItem8;
+$requestBody->setMessageHistory($messageHistoryArray);
+
+
+
+
+$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
 
 
 ```

@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-	"If-Match": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
-configuration := &graphconfig.DetailsRequestBuilderPatchRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphconfig.PlannerPlanItemDetailsRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerPlanDetails()
@@ -31,7 +31,7 @@ category3 := null
 categoryDescriptions.SetCategory3(&category3) 
 requestBody.SetCategoryDescriptions(categoryDescriptions)
 
-graphClient.Planner().PlansById("plannerPlan-id").Details().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().PlansById("plannerPlan-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

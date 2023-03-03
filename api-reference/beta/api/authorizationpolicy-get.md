@@ -81,6 +81,7 @@ Content-type: application/json
     "description": "Used to manage authorization related settings across the company.",
     "enabledPreviewFeatures": [],
     "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
+    "allowUserConsentForRiskyApps": false,
     "blockMsolPowerShell": ""
     "defaultUserRolePermissions": {
         "allowedToCreateApps": true,

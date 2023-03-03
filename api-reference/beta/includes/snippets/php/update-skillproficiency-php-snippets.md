@@ -16,7 +16,7 @@ $requestBody->setProficiency(new SkillProficiencyLevel('advancedprofessional'));
 
 
 
-$graphServiceClient->me()->profile()->skillsById('skillProficiency-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->skillsById('skillProficiency-id')->patch($requestBody);
 
 
 ```

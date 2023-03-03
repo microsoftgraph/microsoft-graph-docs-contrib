@@ -21,7 +21,7 @@ $authorizationInfo->setCertificateUserIds(['5432109876543210@mil', ]);
 $requestBody->setAuthorizationInfo($authorizationInfo);
 
 
-$graphServiceClient->usersById('user-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
 
 
 ```

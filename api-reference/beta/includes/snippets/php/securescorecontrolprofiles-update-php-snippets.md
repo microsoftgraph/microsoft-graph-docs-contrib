@@ -14,7 +14,7 @@ $requestBody->setControlStateUpdates('controlStateUpdates-value');
 
 
 
-$graphServiceClient->security()->secureScoreControlProfilesById('secureScoreControlProfile-id')->patch($requestBody);
+$requestResult = $graphServiceClient->security()->secureScoreControlProfilesById('secureScoreControlProfile-id')->patch($requestBody);
 
 
 ```

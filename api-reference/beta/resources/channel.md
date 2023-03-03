@@ -59,7 +59,7 @@ where files are shared, and where tabs are added.
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |description|String|Optional textual description for the channel.|
-|displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
+|displayName|String|Channel name as it will appear to the user in Microsoft Teams. The maximum length is 50 characters.|
 |id|String|The channel's unique identifier. Read-only.|
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
@@ -140,3 +140,8 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+## See also
+
+- [Channel lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
+- [Channel lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)

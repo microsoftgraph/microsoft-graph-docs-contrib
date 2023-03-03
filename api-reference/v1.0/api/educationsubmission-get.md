@@ -1,7 +1,7 @@
 ---
 title: "Get educationSubmission"
 description: "Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher or application with application permissions has full access to all submissions. "
-author: cristobal-buenrostro
+author: Sureshpadimi88
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a particular [submission](../resources/educationsubmission.md).
+Retrieve a particular [submission](../resources/educationsubmission.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent this work.
 
@@ -33,10 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-The following are the available `$expand` options for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options. For details, see the examples section.
+## Optional query parameters
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |
@@ -160,7 +160,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-submission-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -184,7 +184,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 

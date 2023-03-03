@@ -1,5 +1,5 @@
 ---
-title: "Get workflow (lifecycle workflow)"
+title: "Get workflow (in Lifecycle Workflows)"
 description: "Read the properties and relationships of a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get workflow (lifecycle workflow)
+# Get workflow (in Lifecycle Workflows)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 
 ## Optional query parameters
 
-This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. The **tasks** relationship is expanded by default and `$expand` is supported by the **createdBy** and **lastModifiedBy** relationships. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,11 +57,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [workflow](../resources/identitygovernance-workflow.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) object in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the details of a workflow
+
+#### Request
 
 The following is an example of a request.
 
@@ -91,14 +93,17 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-get-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-workflow-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-get-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -183,6 +188,47 @@ Content-Type: application/json
     ],
     "createdBy": {
         "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    }
+}
+```
+
+
+### Example 2: Retrieve specific properties of a workflow
+
+#### Request
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/c0548e6c-8849-46e8-be14-8b6d2b04957e?$select=id,displayName,executionConditions,category
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows(id,displayName,executionConditions,category)/$entity",
+    "category": "leaver",
+    "displayName": "Pre-Offboarding employees in the R&D department",
+    "id": "c0548e6c-8849-46e8-be14-8b6d2b04957e",
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'R&D')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeLeaveDateTime",
+            "offsetInDays": -7
+        }
     }
 }
 ```

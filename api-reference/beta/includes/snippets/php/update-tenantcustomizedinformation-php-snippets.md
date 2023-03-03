@@ -36,7 +36,7 @@ $requestBody->setWebsite('String');
 
 
 
-$graphServiceClient->tenantRelationships()->managedTenants()->tenantsCustomizedInformationById('tenantCustomizedInformation-id')->patch($requestBody);
+$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->tenantsCustomizedInformationById('tenantCustomizedInformation-id')->patch($requestBody);
 
 
 ```

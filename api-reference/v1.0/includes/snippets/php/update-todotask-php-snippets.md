@@ -19,7 +19,7 @@ $dueDateTime->setTimeZone('Eastern Standard Time');
 $requestBody->setDueDateTime($dueDateTime);
 
 
-$graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->patch($requestBody);
 
 
 ```

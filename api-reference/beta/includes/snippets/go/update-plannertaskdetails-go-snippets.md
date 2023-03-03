@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-	"If-Match": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
-configuration := &graphconfig.DetailsRequestBuilderPatchRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphconfig.PlannerTaskItemDetailsRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerTaskDetails()
@@ -53,8 +53,10 @@ checklist.Set"a93c93c5-10a6-4167-9551-8bafa09967a7"(&"a93c93c5-10a6-4167-9551-8b
 }
 checklist.SetAdditionalData(additionalData)
 requestBody.SetChecklist(checklist)
+description := "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links"
+requestBody.SetDescription(&description) 
 
-graphClient.Planner().TasksById("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().TasksById("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

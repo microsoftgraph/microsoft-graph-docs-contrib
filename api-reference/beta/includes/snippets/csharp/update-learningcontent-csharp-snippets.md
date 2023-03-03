@@ -10,7 +10,7 @@ var learningContent = new LearningContent
 {
 	Title = "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
 	Description = "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
-	ContentWebUrl = "https://docs.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+	ContentWebUrl = "https://learn.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/",
 	SourceName = "MsLearn",
 	ThumbnailWebUrl = "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
 	LanguageTag = "en-us",

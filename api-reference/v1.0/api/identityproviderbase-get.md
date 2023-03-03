@@ -235,7 +235,6 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OI
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

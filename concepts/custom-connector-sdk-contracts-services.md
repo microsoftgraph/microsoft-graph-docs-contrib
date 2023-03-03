@@ -1,14 +1,14 @@
 ---
-title: "Microsoft Graph connectors SDK contract services"
+title: "Microsoft Graph connectors SDK (preview) contract services"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: Learn about the Microsoft Graph connectors SDK contract services.
+description: Learn about the Microsoft Graph connectors SDK (preview) contract services.
 ---
 
-# Microsoft Graph connectors SDK services
+# Microsoft Graph connectors SDK (preview) services
 
 This article describes the services that are part of the contract protocol buffer files. Implement these services as part of the connector.
 
@@ -19,4 +19,4 @@ This article describes the services that are part of the contract protocol buffe
 |[ConnectorCrawl](/graph/custom-connector-sdk-contracts-connectorcrawler) |Includes APIs that are called during a crawl. |
 |[ConnectorOAuth](/graph/custom-connector-sdk-contracts-connectoroauth) |Service for OAuth flows such as refreshing access tokens during crawls. |
 
-You can download the contract protocol buffer files from the Microsoft Graph connectors SDK [contracts](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts) page on GitHub.
+You can download the contract protocol buffer files from the Microsoft Graph connectors SDK (preview) [contracts](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts) page on GitHub.

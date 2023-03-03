@@ -1,7 +1,7 @@
 ---
 title: "Get riskyUser"
 description: "Read the properties and relationships of a riskyUser object."
-author: "cloudhandler"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -87,8 +87,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/c2b6c2b9-dddc
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

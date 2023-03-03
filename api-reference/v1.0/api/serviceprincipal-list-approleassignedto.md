@@ -27,13 +27,18 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+[!INCLUDE [permissions-applicationreadwriteownedby-disclaimer](../../includes/permissions-applicationreadwriteownedby-disclaimer.md)]
 
 ## HTTP request
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/appRoleAssignedTo
+GET /servicePrincipals(appId='{appId}')/appRoleAssignedTo
 ```
 
 ## Optional query parameters
@@ -96,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

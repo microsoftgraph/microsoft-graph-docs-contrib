@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &graphconfig.ChatsRequestBuilderGetQueryParameters{
-	OrderBy: [] string {"lastMessagePreview/createdDateTime desc"},
+	Orderby: [] string {"lastMessagePreview/createdDateTime desc"},
 }
 configuration := &graphconfig.ChatsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

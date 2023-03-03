@@ -36,7 +36,7 @@ $tabsTeamsTab1 = new TeamsTab();
 $tabsTeamsTab1->setDisplayName('A Pinned Website');
 
 $tabsTeamsTab1Configuration = new TeamsTabConfiguration();
-$tabsTeamsTab1Configuration->setContentUrl('https://docs.microsoft.com/microsoftteams/microsoft-teams');
+$tabsTeamsTab1Configuration->setContentUrl('https://learn.microsoft.com/microsoftteams/microsoft-teams');
 
 
 $tabsTeamsTab1->setConfiguration($tabsTeamsTab1Configuration);
@@ -134,6 +134,11 @@ $messagingSettings->setAllowChannelMentions(true);
 
 
 $requestBody->setMessagingSettings($messagingSettings);
+$discoverySettings = new TeamDiscoverySettings();
+$discoverySettings->setShowInTeamsSearchAndSuggestions(true);
+
+
+$requestBody->setDiscoverySettings($discoverySettings);
 $installedAppsTeamsAppInstallation1 = new TeamsAppInstallation();
 $additionalData = [
 'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'com.microsoft.teamspace.tab.vsts\')', 
@@ -156,13 +161,7 @@ $requestBody->setInstalledApps($installedAppsArray);
 
 
 $additionalData = [
-'template@odata.bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')', 
-'discoverySettings' => $requestBody = new DiscoverySettings();
-$requestBody->setShowInTeamsSearchAndSuggestions(true);
-
-
-$requestBody->setDiscoverySettings($discoverySettings);
-
+'template@odata.bind' => 'https://graph.microsoft.com/beta/teamsTemplates(\'standard\')', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

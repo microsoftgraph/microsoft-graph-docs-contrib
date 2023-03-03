@@ -33,6 +33,10 @@ requestedModalities := []graphmodels.Modalityable {
 
 }
 requestBody.SetRequestedModalities(requestedModalities)
+callOptions := graphmodels.NewCallOptions()
+isContentSharingNotificationEnabled := true
+callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
+requestBody.SetCallOptions(callOptions)
 mediaConfig := graphmodels.NewMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
 

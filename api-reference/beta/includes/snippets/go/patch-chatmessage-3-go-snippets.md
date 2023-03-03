@@ -88,8 +88,12 @@ reactions := []graphmodels.ChatMessageReactionable {
 
 }
 requestBody.SetReactions(reactions)
+messageHistory := []graphmodels.ChatMessageHistoryItemable {
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
+}
+requestBody.SetMessageHistory(messageHistory)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -18,16 +18,18 @@ Restart a stopped synchronization job, forcing it to reprocess all the objects i
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported. |
-|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Synchronization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
 
 ## HTTP Request
+
+`{servicePrincipalId}` refers to the **id** of the service principal object. **id** is referred to as the **Object ID** of the enterprise application in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
+POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/restart
 ```
 
 ## Request headers
@@ -95,7 +97,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of a response.

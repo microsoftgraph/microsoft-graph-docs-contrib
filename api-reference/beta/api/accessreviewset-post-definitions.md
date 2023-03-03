@@ -137,12 +137,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -305,12 +300,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-inactiveguests-m365-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-inactiveguests-m365-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -500,12 +490,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-allusers-m365-aadrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-allusers-m365-aadrole-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -656,12 +641,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-group-multistage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-group-multistage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -725,13 +705,13 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create an access review on a group with membership outlier insights and user sign in insights for recommendations
+### Example 5: Create an access review on a group with insights about user-to-group affiliation and user sign in for recommendations
 
 The following example creates an access review with the following settings:
 + The review reviews all members of a group with the **id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
 + A specific user with the user **id** `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.
 + It recurs weekly and continues indefinitely.
-+ Both membership outlier and user sign in are insights for reviewers.
++ Both user-to-group affiliation and user sign in are insights for reviewers.
 
 #### Request
 
@@ -806,13 +786,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-insights-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-insights-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

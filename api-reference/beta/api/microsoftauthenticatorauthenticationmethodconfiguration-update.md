@@ -1,7 +1,7 @@
 ---
 title: "Update microsoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Update the properties of a microsoftAuthenticatorAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -101,8 +101,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

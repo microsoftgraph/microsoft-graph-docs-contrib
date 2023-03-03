@@ -1,7 +1,7 @@
 ---
 title: "Update smsAuthenticationMethodConfiguration"
 description: "Update the properties of a smsAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -107,24 +107,14 @@ Content-Type: application/json
 
 ---
 
-
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.smsAuthenticationMethodConfiguration"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
-  "id": "713980c7-80c7-7139-c780-3971c7803971",
-  "state": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

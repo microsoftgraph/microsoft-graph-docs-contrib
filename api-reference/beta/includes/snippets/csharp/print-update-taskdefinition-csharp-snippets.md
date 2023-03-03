@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var printTaskDefinition = new PrintTaskDefinition
+var requestBody = new PrintTaskDefinition
 {
 	DisplayName = "Test TaskDefinitionName",
 	CreatedBy = new AppIdentity
 	{
-		DisplayName = "Requesting App Display Name"
-	}
+		DisplayName = "Requesting App Display Name",
+	},
 };
+var result = await graphClient.Print.TaskDefinitions["{printTaskDefinition-id}"].PatchAsync(requestBody);
 
-await graphClient.Print.TaskDefinitions["{printTaskDefinition-id}"]
-	.Request()
-	.UpdateAsync(printTaskDefinition);
 
 ```

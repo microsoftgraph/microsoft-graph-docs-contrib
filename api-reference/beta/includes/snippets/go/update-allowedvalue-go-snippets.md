@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAllowedValue()
 isActive := false
 requestBody.SetIsActive(&isActive) 
 
-graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").AllowedValuesById("allowedValue-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").AllowedValuesById("allowedValue-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new assignment. 
+Create a new assignment.
 
 Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -55,18 +55,18 @@ POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-
 Content-type: application/json
 
 {
-    "dueDateTime": "2021-09-07T00:00:00Z",
-    "displayName": "Reading test 09.03 #4",
+    "dueDateTime": "2022-09-16T00:00:00Z",
+    "displayName": "Reading test 09.14",
     "instructions": {
         "contentType": "text",
         "content": "Read chapter 4"
     },
     "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
         "maxPoints": 50
     },
     "assignTo": {
-        "@odata.type": "#microsoft.graph.educationAssignmentGradeType"
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
     },
     "status": "draft",
     "allowStudentsToAddResourcesToSubmission": true
@@ -102,7 +102,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -116,25 +116,26 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",
-    "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
-    "displayName": "Reading test 09.03 #5",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",
+    "classId": "f4a941ff-9da6-4707-ba5b-0eae93cad0b4",
+    "displayName": "Reading test 09.14",
     "closeDateTime": null,
-    "dueDateTime": "2021-09-07T00:00:00Z",
+    "dueDateTime": "2022-09-16T00:00:00Z",
     "assignDateTime": null,
     "assignedDateTime": null,
     "allowLateSubmissions": true,
     "resourcesFolderUrl": null,
-    "createdDateTime": "2021-09-03T23:57:14.6088791Z",
-    "lastModifiedDateTime": "2021-09-03T23:57:14.6398613Z",
+    "createdDateTime": "2022-09-14T21:23:17.8898549Z",
+    "lastModifiedDateTime": "2022-09-14T21:23:17.9055807Z",
     "allowStudentsToAddResourcesToSubmission": true,
     "status": "draft",
     "notificationChannelUrl": null,
-    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%224679bc1b-90c5-45af-ae1a-d5357672ed39%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22f4a941ff-9da6-4707-ba5b-0eae93cad0b4%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22ea77e1dd-1e04-4051-967e-09129d42290f%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "none",
     "addedStudentAction": "none",
-    "id": "4679bc1b-90c5-45af-ae1a-d5357672ed39",
+    "id": "ea77e1dd-1e04-4051-967e-09129d42290f",
     "instructions": {
-        "content": "Read chapter 5",
+        "content": "Read chapter 4",
         "contentType": "text"
     },
     "grading": {
@@ -179,5 +180,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

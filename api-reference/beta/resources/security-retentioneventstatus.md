@@ -3,7 +3,7 @@ title: "retentionEventStatus resource type"
 description: "For event-based retention, provides the status of the propagation of the event to the specified locations after the event has been created."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 

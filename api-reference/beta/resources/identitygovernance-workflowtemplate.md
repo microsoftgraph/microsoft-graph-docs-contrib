@@ -30,12 +30,17 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow template. The possible values are: `joiner`, `leaver`.|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow template. The possible values are: `joiner`, `leaver`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |description|String|The description of the `workflowTemplate`.|
-|displayName|String|The display name of the `workflowTemplate`. <br><br>Supports  `orderby`.|
+|displayName|String|The display name of the `workflowTemplate`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Conditions describing when to execute the workflow and the criteria to identify in-scope subject set.|
-|id|String|The unique identifier for the `workflowTemplate`. Inherited from [entity](../resources/entity.md).|
-|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a [workflow](../resources/identitygovernance-workflow.md). This relationship is expanded by default.|
+|id|String|The unique identifier for the `workflowTemplate`. Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+
+### Supported workflow templates
+
+Lifecycle Workflows currently provide the following predefined workflow templates:
+
+[!INCLUDE [identitygovernance-lifecycleworkflows-workflowtemplates](../includes/identitygovernance-lifecycleworkflows-workflowtemplates.md)]
 
 ## Relationships
 

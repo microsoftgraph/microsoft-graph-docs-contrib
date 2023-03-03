@@ -159,7 +159,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "topicModelingSettings",
 			"ChangeType": "Addition",
-			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-1.0) resource to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicmodelingsettings?view=graph-rest-1.0) resource to the microsoft.graph.security subnamespace.",
 			"Target": "topicModelingSettings"
 		  },
 		  {
@@ -367,7 +367,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "topicModelingSettings",
 			"ChangeType": "Addition",
-			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [topicModelingSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-topicmodelingsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "topicModelingSettings"
 		  },
 		  {
@@ -393,6 +393,98 @@
 		"CreatedDateTime": "2022-05-18T15:12:10.6346707Z",
 		"WorkloadArea": "Security",
 		"SubArea": "eDiscovery"
+	  },
+	  {
+		"ChangeList": [
+		  {
+			"Id": "42153eec-8631-4737-af85-edfc4fb7301e",
+			"ApiChange": "Enumeration",
+			"ChangedApiName": "purgeAreas",
+			"ChangeType": "Addition",
+			"Description": "Added the **purgeAreas** enumeration type.",
+			"Target": "purgeAreas"
+		  },
+		  {
+			"Id": "42153eec-8631-4737-af85-edfc4fb7301e",
+			"ApiChange": "Enumeration",
+			"ChangedApiName": "purgeType",
+			"ChangeType": "Addition",
+			"Description": "Added the **purgeType** enumeration type.",
+			"Target": "purgeType"
+		  },
+		  {
+			"Id": "42153eec-8631-4737-af85-edfc4fb7301e",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "purgeType",
+			"ChangeType": "Addition",
+			"Description": "Added the **purgeType** parameter to the [purgeData](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta) method.",
+			"Target": "purgeData"
+		  },
+		  {
+			"Id": "42153eec-8631-4737-af85-edfc4fb7301e",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "purgeAreas",
+			"ChangeType": "Addition",
+			"Description": "Added the **purgeAreas** parameter to the [purgeData](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta) method.",
+			"Target": "purgeData"
+		  }
+		],
+		"Id": "42153eec-8631-4737-af85-edfc4fb7301e",
+		"Cloud": "Prod",
+		"Version": "beta",
+		"CreatedDateTime": "2022-11-29T07:06:27.7065254Z",
+		"WorkloadArea": "Security",
+			"SubArea": "eDiscovery"
+	  },
+	  {
+		"ChangeList": [
+		  {
+			"Id": "18e1a99b-7d51-4920-a339-cacdb90eac0a",
+			"ApiChange": "Member",
+			"ChangedApiName": "purgeData",
+			"ChangeType": "Addition",
+			"Description": "Added the `purgeData` member to the **caseAction** enumeration.",
+			"Target": "caseAction"
+		  },
+		  {
+			"Id": "18e1a99b-7d51-4920-a339-cacdb90eac0a",
+			"ApiChange": "Enumeration",
+			"ChangedApiName": "purgeAreas",
+			"ChangeType": "Addition",
+			"Description": "Added the **purgeAreas** enumeration type.",
+			"Target": "purgeAreas"
+		  },
+		  {
+			"Id": "18e1a99b-7d51-4920-a339-cacdb90eac0a",
+			"ApiChange": "Enumeration",
+			"ChangedApiName": "purgeType",
+			"ChangeType": "Addition",
+			"Description": "Added the **purgeType** enumeration type.",
+			"Target": "purgeType"
+		  },
+		  {
+			"Id": "18e1a99b-7d51-4920-a339-cacdb90eac0a",
+			"ApiChange": "Resource",
+			"ChangedApiName": "ediscoveryPurgeDataOperation",
+			"ChangeType": "Addition",
+			"Description": "Added the [ediscoveryPurgeDataOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryPurgeDataOperation?view=graph-rest-1.0) resource",
+			"Target": "ediscoveryPurgeDataOperation"
+		  },
+		  {
+			"Id": "18e1a99b-7d51-4920-a339-cacdb90eac0a",
+			"ApiChange": "Method",
+			"ChangedApiName": "purgeData",
+			"ChangeType": "Addition",
+			"Description": "Added the [purgeData](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverySearch?view=graph-rest-1.0) resource.",
+			"Target": "ediscoverySearch"
+		  }
+		],
+		"Id": "18e1a99b-7d51-4920-a339-cacdb90eac0a",
+		"Cloud": "Prod",
+		"Version": "v1.0",
+		"CreatedDateTime": "2022-11-29T14:12:20.4783952Z",
+		"WorkloadArea": "Security",
+			"SubArea": "eDiscovery"
 	  }
 	]
   }

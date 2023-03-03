@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationGroupIdOptionsType enum type"
 description: "Possible values for the DeliveryOptimizationGroupIdOptionsType setting."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -25,9 +25,3 @@ Possible values for the DeliveryOptimizationGroupIdOptionsType setting.
 |authenticatedDomainSid|2|Authenticated domain SID.|
 |dhcpUserOption|3|DHCP user option.|
 |dnsSuffix|4|DNS suffix.|
-
-
-
-
-
-

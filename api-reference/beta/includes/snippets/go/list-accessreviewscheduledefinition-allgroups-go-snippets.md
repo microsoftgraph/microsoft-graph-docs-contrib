@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "contains(scope/microsoft.graph.accessReviewQueryScope/query,%20'./members')"
 
-requestParameters := &graphconfig.DefinitionsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityGovernanceAccessReviewsDefinitionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.DefinitionsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceAccessReviewsDefinitionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -20,7 +20,7 @@ text.SetContentType(&contentType)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").OutcomesById("educationOutcome-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").OutcomesById("educationOutcome-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

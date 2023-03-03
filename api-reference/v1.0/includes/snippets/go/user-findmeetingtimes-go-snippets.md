@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "outlook.timezone=\"Pacific Standard Time\"",
-}
-configuration := &graphconfig.FindMeetingTimesRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
+configuration := &graphconfig.MeFindMeetingTimesRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewFindMeetingTimesPostRequestBody()
@@ -81,7 +81,7 @@ meetingDuration , err := abstractions.ParseISODuration("PT1H")
 requestBody.SetMeetingDuration(&meetingDuration) 
 returnSuggestionReasons := true
 requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons) 
-minimumAttendeePercentage := float64(100)
+minimumAttendeePercentage := "100"
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
 result, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)

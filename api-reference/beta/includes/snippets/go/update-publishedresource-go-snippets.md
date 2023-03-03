@@ -11,7 +11,7 @@ requestBody := graphmodels.NewPublishedResource()
 displayName := "Demo provisioning (updated)"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResourcesById("publishedResource-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResourcesById("publishedResource-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

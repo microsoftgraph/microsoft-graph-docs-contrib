@@ -1,7 +1,7 @@
 ---
 title: "locateDevice action"
 description: "Locate a device"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Locate a device
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/locateDevice
 POST /deviceManagement/managedDevices/{managedDeviceId}/locateDevice
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/locateDevice
+POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/managedDevices/{managedDeviceId}/locateDevice
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/locateDevice
+POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}/locateDevice
 ```
 
 ### Response
@@ -60,10 +60,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-

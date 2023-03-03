@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "name eq 'Project' and status eq 'Available'"
 
-requestParameters := &graphconfig.CustomSecurityAttributeDefinitionsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DirectoryCustomSecurityAttributeDefinitionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.CustomSecurityAttributeDefinitionsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DirectoryCustomSecurityAttributeDefinitionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

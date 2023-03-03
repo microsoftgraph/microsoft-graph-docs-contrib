@@ -18,7 +18,7 @@ requestBody.SetIsWheelChairAccessible(&isWheelChairAccessible)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.PlacesById("place-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.PlacesById("place-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

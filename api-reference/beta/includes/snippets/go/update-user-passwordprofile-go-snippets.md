@@ -9,13 +9,13 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUser()
 passwordProfile := graphmodels.NewPasswordProfile()
-forceChangePasswordNextSignIn := false
+forceChangePasswordNextSignIn := true
 passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn) 
 password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 
-graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -37,7 +37,7 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 }
 -->
 ``` http
-POST /identityGovernance/deletedItems/lifecycleWorkflows/workflows/{workflowId}/restore
+POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/restore
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [workflow](../resources/identitygovernance-workflow.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) in the response body.
 
 ## Examples
 
@@ -91,7 +91,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/dele
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response

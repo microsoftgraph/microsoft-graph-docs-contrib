@@ -7,15 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewSchedulePutRequestBody()
-additionalData := map[string]interface{}{
-	enabled := true
+requestBody := graphmodels.NewSchedule()
+enabled := true
 requestBody.SetEnabled(&enabled) 
-	"timeZone" : "America/Chicago", 
-}
-requestBody.SetAdditionalData(additionalData)
+timeZone := "America/Chicago"
+requestBody.SetTimeZone(&timeZone) 
 
-graphClient.TeamsById("team-id").Schedule().Put(context.Background(), requestBody, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 
 ```

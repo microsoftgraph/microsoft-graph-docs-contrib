@@ -32,6 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                             |
 | Application                            | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+For an app create a group with owners or members while it has the *Group.Create* permission, the app must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
++ The app can assign itself as the group's owner or member.
++ To create the group with users as owners or members, the app must have at least the *User.Read.All* permission.
++ To create the group with other service principals as owners or members, the app must have at least the *Application.Read.All* permission.
++ To create the group with either users or service principals as owners or members, the app must have at least the *Directory.Read.All* permission.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -220,7 +226,7 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -304,6 +310,8 @@ Content-type: application/json
 #### Request
 
 The following is an example of the request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
+
+A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type, its **securityEnabled** must be set to `true`, and **visibility** can only be `Private`.
 
 # [HTTP](#tab/http)
 

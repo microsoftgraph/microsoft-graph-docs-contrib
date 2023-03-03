@@ -1,7 +1,7 @@
 ---
 title: "windowsPhone81AppX resource type"
-description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Line Of Business apps."
-author: "dougeby"
+description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Line Of Business apps. Inherits from graph.mobileLobApp."
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties and inherited properties for Windows Phone 8.1 AppX Line Of Business apps.
+Contains properties and inherited properties for Windows Phone 8.1 AppX Line Of Business apps. Inherits from graph.mobileLobApp.
 
 
 Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
@@ -140,9 +140,3 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
-
-
-
-
-
-

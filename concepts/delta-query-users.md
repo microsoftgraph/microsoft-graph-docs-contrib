@@ -1,9 +1,12 @@
 ---
 title: "Get incremental changes for users"
 description: "Use delta query to discover changes without fetching the entire set of users to compare changes. Example shows a series of requests to track changes to users."
-author: "jumasure"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/17/2022
 ---
 
 # Get incremental changes for users
@@ -43,9 +46,37 @@ Take note of the following items:
 - The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
 - The initial request doesn't include a state token. State tokens will be used in subsequent requests.
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-users-initial-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delta-query-users-initial-request-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delta-query-users-initial-request-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delta-query-users-initial-request-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delta-query-users-initial-request-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delta-query-users-initial-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Initial response
 
@@ -53,6 +84,11 @@ If successful, this method returns `200 OK` response code and [user](/graph/api/
 
 In this example, a `@odata.nextLink` URL is returned indicating there are more pages of data to be retrieved in the session. The `$select` query parameter from the initial request is encoded into the `@odata.nextLink` URL.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -91,14 +127,47 @@ Content-type: application/json
 
 The second request specifies the `skipToken` returned from the previous response. Notice the `$select` parameter is encoded and included in the `skipToken`.
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-users-nextlink-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delta-query-users-nextlink-request-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delta-query-users-nextlink-request-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delta-query-users-nextlink-request-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delta-query-users-nextlink-request-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delta-query-users-nextlink-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### nextLink response
 
 The response contains another `@odata.nextLink` with a new `skipToken` value, which indicates that more changes that were tracked for users are available. Use the `@odata.nextLink` URL in more requests until a `@odata.deltaLink` URL (in an `@odata.deltaLink` parameter) is returned in the final response, even if the value is an empty array.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -127,14 +196,47 @@ Content-type: application/json
 
 The third request uses the latest `skipToken` returned from the last sync request. 
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-users-nextlink-request2"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delta-query-users-nextlink-request2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delta-query-users-nextlink-request2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delta-query-users-nextlink-request2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delta-query-users-nextlink-request2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delta-query-users-nextlink-request2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Final nextLink response
 
 When a `@odata.deltaLink` URL is returned, there's no more data about the existing state of the user objects. For future requests, the application uses the `@odata.deltaLink` URL to learn about other changes to users. Save the `deltaToken` and use it in the subsequent request URL to discover more changes to users.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -163,14 +265,47 @@ Content-type: application/json
 
 Using the `deltaToken` from the [last response](#final-nextlink-response), you'll get changes (additions, deletions, or updates) to users since the last request.
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delta-query-users-deltalink-request"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delta-query-users-deltalink-request-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delta-query-users-deltalink-request-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delta-query-users-deltalink-request-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delta-query-users-deltalink-request-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delta-query-users-deltalink-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ## deltaLink response
 
 If no changes have occurred, a `@odata.deltaLink` is returned with no results - the **value** property is an empty array.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -187,6 +322,11 @@ If changes have occurred, a collection of changed user objects is included. The 
 > [!NOTE]
 > This request might have replication delays for users that were recently created, updated, or deleted. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

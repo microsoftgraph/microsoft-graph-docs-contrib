@@ -1,7 +1,8 @@
 ---
 title: "Get educationSubmittedSubmissionResource"
-description: "Retrieve a submitted resource."
-author: "mmast-msft"
+
+description: "Retrieve a submitted resource. This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources."
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [submitted resource](../resources/educationsubmissionresource.md). 
+Retrieve a [submitted resource](../resources/educationsubmissionresource.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 Resources will be available to a teacher or an application with application permissions after a student submits it, and will be available to the student after the teacher releases the submission. Note that teachers can leave notes in some resources.
 
@@ -31,8 +32,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources/{id}
 ```
+
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |
@@ -51,6 +54,7 @@ The following is an example of the request.
   "name": "get_educationsubmittedsubmissionresource",
   "sampleKeys": ["11021", "19002", "850f51b7", "f2387c3b-ec39-4bf2-a399-d7242677f024"]
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submittedResources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```

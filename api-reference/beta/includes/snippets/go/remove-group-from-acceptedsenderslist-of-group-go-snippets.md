@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestId := "https://graph.microsoft.com/beta/groups/{other-group-id}"
 
-requestParameters := &graphconfig.RefRequestBuilderDeleteQueryParameters{
+requestParameters := &graphconfig.GroupItemAcceptedSenders$refRequestBuilderDeleteQueryParameters{
 	Id: &requestId,
 }
-configuration := &graphconfig.RefRequestBuilderDeleteRequestConfiguration{
+configuration := &graphconfig.GroupItemAcceptedSenders$refRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

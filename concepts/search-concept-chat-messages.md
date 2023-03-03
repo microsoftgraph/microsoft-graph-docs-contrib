@@ -20,6 +20,8 @@ Teams message search also looks for attachments. The [supported file types](/Sha
 #### Request
 The following example queries Teams chat messages in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by descending **dateTime**.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "basicSearchTeamsMessage"
@@ -45,6 +47,32 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/basicsearchteamsmessage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/basicsearchteamsmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/basicsearchteamsmessage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/basicsearchteamsmessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/basicsearchteamsmessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/basicsearchteamsmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -107,6 +135,8 @@ Content-type: application/json
 #### Request
 The following example uses the search query shown in Example 1, and sorts the results by relevance. 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "searchTopTeamsMessage"
@@ -121,7 +151,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "message"
+        "chatMessage"
       ],
       "query": {
         "queryString": "test"
@@ -133,6 +163,32 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/searchtopteamsmessage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/searchtopteamsmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/searchtopteamsmessage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/searchtopteamsmessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/searchtopteamsmessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/searchtopteamsmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -209,6 +265,8 @@ You can use the following  scope terms in your [Keyword Query Language (KQL)](/s
 #### Request
 The following example shows how to search a message that contains Contoso that Bob sent to Alice after 2022-07-14.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "searchTeamsMessageWithKQL"
@@ -223,7 +281,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "message"
+        "chatMessage"
       ],
       "query": {
         "queryString": "contoso from:bob to:alice sent>2022-07-14"
@@ -235,6 +293,33 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/searchteamsmessagewithkql-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/searchteamsmessagewithkql-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/searchteamsmessagewithkql-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/searchteamsmessagewithkql-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/searchteamsmessagewithkql-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/searchteamsmessagewithkql-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -291,8 +376,8 @@ Content-type: application/json
 ## Known limitations
 
 - You can access only the signed-in user's Teams message or the message the user is included in.
-- The search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage.md). You can use the [Teams API](/graph/api/chatmessage-get.md) to retrieve more details about any single message.
-- For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer.md) type contains the number of results on the page, not the total number of matching results.
+- The search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage). You can use the [Teams API](/graph/api/chatmessage-get) to retrieve more details about any single message.
+- For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for messages.
 - You can't use this API with other entity types at this time.
 

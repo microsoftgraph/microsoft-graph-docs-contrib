@@ -28,9 +28,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /servicePrincipals/{id}
+PATCH /servicePrincipals(appId='{appId}')
 ```
 ## Request headers
 | Name       | Description|
@@ -119,7 +121,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -156,7 +157,7 @@ The following example shows how to assign a custom security attribute with a str
 
 To assign custom security attributes, the calling principal must be assigned the Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
 
-For other similar examples for users, see [Assign, update, or remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+For other similar examples for users, see [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples).
 
 #### Request
 
@@ -208,7 +209,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 description := "A new roleAssignment"
 requestBody.SetDescription(&description) 
 
-graphClient.RoleManagement().CloudPC().RoleAssignmentsById("unifiedRoleAssignmentMultiple-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignmentsById("unifiedRoleAssignmentMultiple-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

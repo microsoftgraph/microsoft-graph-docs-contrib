@@ -39,6 +39,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | [List accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of the  **accesspackage** objects which list this access package as incompatible. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[accessPackage](../resources/accesspackage.md) collection|Retrieve the list of **accessPackage** objects filtered on the signed-in user.|
 | [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) | [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection | Retrieve a list of **accessPackageAssignmentRequestRequirement** objects with request requirements. |
+| [moveToCatalog](../api/accesspackage-movetocatalog.md) | None | Move an access package to a different catalog.|
 
 ## Properties
 

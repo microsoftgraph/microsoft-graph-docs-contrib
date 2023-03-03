@@ -1,7 +1,7 @@
 ---
 title: "securityReportsRoot: getAttackSimulationSimulationUserCoverage"
-description: "List simulation coverage for users of a tenant in attack simulation and training campaigns."
-author: "Gopal-MSFT"
+description: "List training coverage for each tenant user in attack simulation and training campaigns."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List [training coverage](../resources/attacksimulationtrainingusercoverage.md) for each user of a tenant in attack simulation and training campaigns.
+List [training coverage](../resources/attacksimulationtrainingusercoverage.md) for each tenant user in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) collection in the response body.
 
 ## Examples
 
@@ -80,19 +80,14 @@ GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationSimulat
 [!INCLUDE [sample-code](../includes/snippets/go/securityreportsrootthisgetattacksimulationsimulationusercoverage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/securityreportsrootthisgetattacksimulationsimulationusercoverage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/securityreportsrootthisgetattacksimulationsimulationusercoverage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -115,8 +110,8 @@ Content-Type: application/json
             "compromisedCount": 0,
             "attackSimulationUser": {
                 "userId": "9a00ce98-2c83-41be-89f7-6fdff7950aa9",
-                "displayName": "Vamsi Krishna",
-                "email": "vamsi@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+                "displayName": "Reed Flores",
+                "email": "reed@contoso.com"
             }
         },
         {

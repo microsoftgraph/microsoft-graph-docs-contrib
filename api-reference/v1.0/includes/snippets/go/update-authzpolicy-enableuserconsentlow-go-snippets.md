@@ -16,7 +16,7 @@ permissionGrantPoliciesAssigned := []string {
 defaultUserRolePermissions.SetPermissionGrantPoliciesAssigned(permissionGrantPoliciesAssigned)
 requestBody.SetDefaultUserRolePermissions(defaultUserRolePermissions)
 
-graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -40,7 +40,7 @@ POST /chats/{chat-Id}/pinnedMessages
 |Content-Type|application/json. Required.|
 
 ## Request body
-The request body should contain the chat message ID.
+In the request body, supply the ID of a chat message to pin.
 
 ## Response
 
@@ -94,8 +94,6 @@ Content-length: 63
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -114,3 +112,8 @@ Content-Type: application/json
   "id": "1616964509832"
 }
 ```
+
+## See also
+
+- [Pinned message C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-pinned-messages/csharp)
+- [Pinned message Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-pinned-messages/nodejs)
