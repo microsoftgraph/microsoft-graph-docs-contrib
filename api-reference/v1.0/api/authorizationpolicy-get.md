@@ -79,6 +79,7 @@ Content-type: application/json
     "allowedToSignUpEmailBasedSubscriptions": true,
     "allowedToUseSSPR": true,
     "allowEmailVerifiedUsersToJoinOrganization": true,
+    "allowUserConsentForRiskyApps": false,
     "blockMsolPowerShell": null,
     "displayName": "Authorization Policy",
     "description": "Used to manage authorization related settings across the company.",
