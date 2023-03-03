@@ -2955,7 +2955,7 @@
           {
             "Id": "cd9618a1-6427-4149-a0dd-0748e2b77b6f",
             "ApiChange": "Enumeration",
-            "ChangedApiName": "getShiftWorkCloudPcAccessState",
+            "ChangedApiName": "shiftWorkCloudPcAccessState",
             "ChangeType": "Addition",
             "Description": "Added the **shiftWorkCloudPcAccessState** enumeration type.",
             "Target": "getShiftWorkCloudPcAccessState"
