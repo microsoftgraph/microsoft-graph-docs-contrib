@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UserAttributeAssignmentsRequestBuilderGetQueryParameters{
-	Expand: "userAttribute",
+requestParameters := &graphconfig.IdentityB2xUserFlowItemUserAttributeAssignmentsRequestBuilderGetQueryParameters{
+	Expand: [] string {"userAttribute"},
 }
-options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityB2xUserFlowItemUserAttributeAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignments().Get(context.Background(), configuration)
 
 
 ```

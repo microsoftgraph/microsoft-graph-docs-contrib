@@ -40,13 +40,14 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Prefer:<br>odata.maxpagesize={x} | Set the maximum page size preference. The maximum page size cannot be greater than 1000. If not specified, default page size is 100. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [serviceHealthIssue](../resources/servicehealthissue.md) objects in the response body. The response is paginated and each page contains 100 objects.
+If successful, this method returns a `200 OK` response code and a collection of [serviceHealthIssue](../resources/servicehealthissue.md) objects in the response body. The response is paginated and default page size is 100.
 
 ## Example
 
@@ -62,16 +63,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-servicehealthissue-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-servicehealthissue-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-servicehealthissue-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -86,8 +84,11 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-servicehealthissue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-servicehealthissue-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -131,7 +132,7 @@ Content-Type: application/json
           "createdDateTime": "2020-11-12T07:07:38.97Z",
           "postType": "Regular",
           "description": {
-            "contentType": "Text",
+            "contentType": "Html",
             "content": "Title: Limited number of users unable to send or receive email through the Exchange Online service\n\nUser Impact: Users may be unable to send or receive email through the Exchange Online service."
           }
         }

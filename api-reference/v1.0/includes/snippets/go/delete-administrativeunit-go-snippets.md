@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-administrativeUnitId := "administrativeUnit-id"
-graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Delete()
+
+graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").Delete(context.Background(), nil)
 
 
 ```

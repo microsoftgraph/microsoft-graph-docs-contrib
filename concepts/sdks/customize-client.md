@@ -9,17 +9,17 @@ author: DarrelMiller
 
 The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios. You can add and remove middleware components. It is important to note that the order in which middleware components run is significant.
 
+<!-- markdownlint-disable MD051 -->
 ## [C#](#tab/csharp)
 
 ```csharp
 // using Azure.Identity;
-// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(...);
 
-var authProvider = new TokenCredentialAuthProvider(
-    interactiveCredential, scopes);
+var authProvider = new AzureIdentityAuthenticationProvider(tokenCredential, scopes);
 
-var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
+var handlers = GraphClientFactory.CreateDefaultHandlers();
 
 // Remove a default handler
 var compressionHandler =
@@ -32,12 +32,14 @@ handlers.Add(new ChaosHandler());
 
 var httpClient = GraphClientFactory.Create(handlers);
 
-var customGraphClient = new GraphServiceClient(httpClient);
+var customGraphClient = new GraphServiceClient(httpClient, authProvider);
 
-var messages = await customGraphClient.Me.Messages.Request()
-    .Top(100)
-    .Select(m => m.Subject)
-    .GetAsync();
+var messages = await graphClient.Me.Messages
+        .GetAsync(requestConfiguration => 
+        {
+            requestConfiguration.QueryParameters.Top = 100;
+            requestConfiguration.QueryParameters.Select = new string[] { "subject" };
+        });
 ```
 
 ## [TypeScript](#tab/typeScript)
@@ -145,7 +147,7 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ```go
 import (
-    a "github.com/microsoft/kiota-authentication-azure-go"
+    a "github.com/microsoftgraph/msgraph-sdk-go-core/authentication"
     khttp "github.com/microsoft/kiota-http-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
     core "github.com/microsoftgraph/msgraph-sdk-go-core"
@@ -172,6 +174,39 @@ adapter, err :=
         auth, nil, nil, httpClient)
 
 client := msgraphsdk.NewGraphServiceClient(adapter)
+```
+
+## [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+```python
+# using Azure.Identity
+# https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.interactivebrowsercredential
+interactive_credential = InteractiveBrowserCredential()
+scopes = ['https://graph.microsoft.com/.default']
+authProvider = AzureIdentityAuthenticationProvider(interactive_credential, scopes=scopes)
+
+# Get default middleware
+middleware = GraphClientFactory.get_default_middleware(options=None)
+
+# Remove a default handler
+retry_handler = [handler for handler in middleware if isinstance(handler, RetryHandler)][0]
+middleware.remove(retry_handler)
+
+# Add custom middleware
+# Implement a custom middleware by extending the BaseMiddleware class
+# https://github.com/microsoft/kiota-http-go/blob/main/kiota_http/middleware/middleware.py
+middleware.append(MyCustomMiddleware())
+
+# Create an HTTP client with the middleware
+http_client = GraphClientFactory().create_with_custom_middleware(middleware)
+
+# Create a request adapter with the HTTP client
+adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
+
+# Create Graph client
+client = GraphServiceClient(adapter)
 ```
 
 ---
@@ -214,10 +249,10 @@ var credential = new ClientSecretCredential(
 
 var scopes = new[] { "https://graph.microsoft.com/.default" };
 
-// This example works with Microsoft.Graph 4+
-var httpClient = GraphClientFactory.Create(new TokenCredentialAuthProvider(credential, scopes), proxy: new WebProxy(new Uri(proxyAddress)));
+// This example works with Microsoft.Graph 5+
+var httpClient = GraphClientFactory.Create(proxy: new WebProxy(new Uri(proxyAddress)));
 
-var graphClient = new GraphServiceClient(httpClient);
+var graphClient = new GraphServiceClient(httpClient, new AzureIdentityAuthenticationProvider(credential, scopes));
 ```
 
 ## [TypeScript](#tab/typeScript)
@@ -257,7 +292,7 @@ const client = MicrosoftGraph.Client.initWithMiddleware({
 
 ## [Java](#tab/java)
 
-```Java
+```java
 final int proxyPort = 8080;
 final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.hostname", proxyPort);
 
@@ -317,6 +352,63 @@ final GraphServiceClient graphServiceClient =
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-The Microsoft Graph SDK for Go does not currently support HTTP proxy. See [this GitHub issue](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15) for more details.
+```go
+import (
+   a "github.com/microsoft/kiota-authentication-azure-go"
+   khttp "github.com/microsoft/kiota-http-go"
+   msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+   core "github.com/microsoftgraph/msgraph-sdk-go-core"
+)
+
+// Auth provider
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
+
+// Get default middleware from SDK
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
+
+// Create an HTTP client with the middleware
+httpClient := core.GetClientWithAuthenticatedProxySettings("http://proxy-url", "username", "password", defaultMiddleware...)
+
+// A client that does not require user and password auth can use
+httpClient := core.GetClientWithProxySettings("http://proxy-url", defaultMiddleware...)
+
+// Create the adapter
+// Passing nil values causes the adapter to use default implementations
+adapter, err :=
+    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
+        auth, nil, nil, httpClient)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+```
+
+## [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+```python
+# using Azure.Identity
+# https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.interactivebrowsercredential
+interactive_credential = InteractiveBrowserCredential()
+scopes = ['https://graph.microsoft.com/.default']
+authProvider = AzureIdentityAuthenticationProvider(interactive_credential, scopes=scopes)
+
+# Proxy URLs
+proxies = {
+    'http://': 'http://proxy-url',
+    'https://': 'http://proxy-url'
+}
+
+# Create a custom HTTP client with the proxies
+http_client = AsyncClient(proxies=proxies)
+
+# Apply Graph default middleware to HTTP client
+http_client = GraphClientFactory.create_with_default_middleware(client=http_client)
+
+# Create a request adapter with the HTTP client
+adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
+
+# Create Graph client
+client = GraphServiceClient(adapter)
+```
 
 ---

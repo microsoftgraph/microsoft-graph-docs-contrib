@@ -1,0 +1,30 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "f685e2e7-e767-4dc2-b668-3516e9ccf8d5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "workspaces",
+          "ChangeType": "Addition",
+          "Description": "Added the **workspaces** relationship to the [roomList](https://learn.microsoft.com/en-us/graph/api/resources/roomList?view=graph-rest-beta) resource.",
+          "Target": "roomList"
+        },
+        {
+          "Id": "f685e2e7-e767-4dc2-b668-3516e9ccf8d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workspace",
+          "ChangeType": "Addition",
+          "Description": "Added the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
+        }
+      ],
+      "Id": "f685e2e7-e767-4dc2-b668-3516e9ccf8d5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-10T18:49:04.1521461Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    }
+  ]
+}

@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEdiscoveryHoldPolicy()
+requestBody := graphmodels.NewEdiscoveryHoldPolicy()
 description := "updated description"
-requestBody.SetDescription(&description)
-contentQuery := "bazooka bazooka"
-requestBody.SetContentQuery(&contentQuery)
-ediscoveryCaseId := "ediscoveryCase-id"
-ediscoveryHoldPolicyId := "ediscoveryHoldPolicy-id"
-graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).LegalHoldsById(&ediscoveryHoldPolicyId).Patch(requestBody)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHoldsById("ediscoveryHoldPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

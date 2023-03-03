@@ -3,7 +3,7 @@ title: "workloadStatus resource type"
 description: "Represent the status for a workload."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

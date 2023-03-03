@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents a Temporary Access Pass registered to a user. A Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. The availability and settings that can be configured for the **temporaryAccessPassAuthenticationMethod** depends on the [Temporary Access Pass methods policy](temporaryaccesspassauthenticationmethodconfiguration.md).
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+
 ## Methods
 
 |Method|Return type|Description|

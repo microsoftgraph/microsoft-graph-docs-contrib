@@ -64,21 +64,19 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bookingbusiness_getcalendarview"
+  "name": "bookingbusiness_getcalendarview",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-getcalendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -93,8 +91,11 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-getcalendarview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/bookingbusiness-getcalendarview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 The following is an example of the response. 
@@ -168,11 +169,11 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
+            "invoiceAmount": 10.0,
             "invoiceId": "1003",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",
@@ -292,11 +293,11 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
+            "invoiceAmount": 10.0,
             "invoiceId": "1001",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",

@@ -49,6 +49,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required|
 | Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use `application/json` for a JSON object and `text/plain` for MIME content |
+| Prefer: outlook.timezone | string | Sets the time zone for the `Sent` field of the reply message in HTML that this API creates based on the request body. The value can be any of the [supportedTimeZones](outlookuser-supportedtimezones.md) configured for the user. If not specified, that `Sent` field is in UTC.<br><br> Use this header only if you're specifying the `Content-Type: application/json` header to create the reply message in HTML. If you use the `Content-Type: text/plain` header, this `Prefer` header does not have any effect. Optional.|
 
 ## Request body
 When using JSON format, provide a JSON object with the following parameters.
@@ -75,7 +76,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "message_replyall"
+  "name": "message_replyall",
+  "sampleKeys": ["AAMkADA1MTAAAH5JaKAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaKAAA=/replyAll
@@ -94,16 +96,13 @@ Content-Type: application/json
     "comment": "Please take a look at the attached guidelines before you decide on the name." 
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-replyall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-replyall-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/message-replyall-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -116,6 +115,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-replyall-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-replyall-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

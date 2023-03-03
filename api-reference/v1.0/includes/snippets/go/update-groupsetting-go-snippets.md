@@ -7,17 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewGroupSetting()
-requestBody.SetValues( []SettingValue {
-	msgraphsdk.NewSettingValue(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "AllowToAddGuests",
-		"value": "true",
-	}
+requestBody := graphmodels.NewGroupSetting()
+
+
+settingValue := graphmodels.NewSettingValue()
+name := "AllowToAddGuests"
+settingValue.SetName(&name) 
+value := "true"
+settingValue.SetValue(&value) 
+
+values := []graphmodels.SettingValueable {
+	settingValue,
+
 }
-groupId := "group-id"
-groupSettingId := "groupSetting-id"
-graphClient.GroupsById(&groupId).SettingsById(&groupSettingId).Patch(requestBody)
+requestBody.SetValues(values)
+
+result, err := graphClient.GroupsById("group-id").SettingsById("groupSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

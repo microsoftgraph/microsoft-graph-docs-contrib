@@ -7,20 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewLinkedResource()
+requestBody := graphmodels.NewLinkedResource()
 webUrl := "http://microsoft.com"
-requestBody.SetWebUrl(&webUrl)
+requestBody.SetWebUrl(&webUrl) 
 applicationName := "Microsoft"
-requestBody.SetApplicationName(&applicationName)
+requestBody.SetApplicationName(&applicationName) 
 displayName := "Microsoft"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.linkedResource",
-}
-todoTaskListId := "todoTaskList-id"
-todoTaskId := "todoTask-id"
-linkedResourceId := "linkedResource-id"
-graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResourcesById(&linkedResourceId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").LinkedResourcesById("linkedResource-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

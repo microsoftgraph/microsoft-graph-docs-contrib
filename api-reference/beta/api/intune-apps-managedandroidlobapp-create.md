@@ -1,7 +1,7 @@
 ---
 title: "Create managedAndroidLobApp"
 description: "Create a new managedAndroidLobApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -74,11 +74,11 @@ The following table shows the properties that are required when you create the m
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |packageId|String|The package identifier.|
-|identityName|String|The Identity Name.|
+|identityName|String|The Identity Name. This property is deprecated starting in February 2023 (Release 2302).|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of managed Android Line of Business (LoB) app.|
 |versionCode|String|The version code of managed Android Line of Business (LoB) app.|
-|identityVersion|String|The identity version.|
+|identityVersion|String|The identity version. This property is deprecated starting in February 2023 (Release 2302).|
 
 
 
@@ -217,7 +217,3 @@ Content-Length: 1760
   "identityVersion": "Identity Version value"
 }
 ```
-
-
-
-

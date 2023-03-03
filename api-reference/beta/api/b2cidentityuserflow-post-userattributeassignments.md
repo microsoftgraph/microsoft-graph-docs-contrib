@@ -68,7 +68,8 @@ If successful, this method returns a `201 Created` response code and an [identit
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_identityuserflowattributeassignment_from__1"
+  "name": "create_identityuserflowattributeassignment_from__1",
+  "sampleKeys": ["B2C_1_Consumer"]
 }
 -->
 
@@ -87,16 +88,9 @@ Content-Type: application/json
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityuserflowattributeassignment-from--1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-identityuserflowattributeassignment-from--1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-identityuserflowattributeassignment-from--1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -107,8 +101,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-identityuserflowattributeassignment-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-identityuserflowattributeassignment-from--1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-identityuserflowattributeassignment-from--1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

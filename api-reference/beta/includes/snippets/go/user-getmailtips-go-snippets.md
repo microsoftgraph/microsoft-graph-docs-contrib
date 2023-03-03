@@ -7,14 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetEmailAddresses( []String {
+requestBody := graphmodels.NewGetMailTipsPostRequestBody()
+emailAddresses := []string {
 	"danas@contoso.onmicrosoft.com",
 	"fannyd@contoso.onmicrosoft.com",
+
 }
-mailTipsOptions := "automaticReplies, mailboxFullStatus"
-requestBody.SetMailTipsOptions(&mailTipsOptions)
-result, err := graphClient.Me().GetMailTips().Post(requestBody)
+requestBody.SetEmailAddresses(emailAddresses)
+mailTipsOptions := graphmodels.AUTOMATICREPLIES, MAILBOXFULLSTATUS_MAILTIPSTYPE 
+requestBody.SetMailTipsOptions(&mailTipsOptions) 
+
+result, err := graphClient.Me().GetMailTips().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ServiceHealthRequestBuilderGetQueryParameters{
-	Expand: "issues",
+requestParameters := &graphconfig.AdminServiceAnnouncementHealthOverviewItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"issues"},
 }
-options := &msgraphsdk.ServiceHealthRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.AdminServiceAnnouncementHealthOverviewItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-serviceHealthId := "serviceHealth-id"
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviewsById(&serviceHealthId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviewsById("serviceHealth-id").Get(context.Background(), configuration)
 
 
 ```

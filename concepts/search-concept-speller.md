@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API to request spelling corrections"
 description: "Use the Microsoft Search API in Microsoft Graph to request spelling corrections to handle mismatches between typos in user queries and correct words in matched contents."
-author: "nmoreau"
+author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---

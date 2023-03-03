@@ -3,6 +3,250 @@
     {
       "ChangeList": [
         {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendation",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource and its associated methods. Azure AD recommendations are personalized and actionable insights for you to implement Azure AD best practices in your tenant.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationbase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "impactedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionStep",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionStep](https://learn.microsoft.com/en-us/graph/api/resources/actionStep?view=graph-rest-beta) resource.",
+          "Target": "actionStep"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionUrl](https://learn.microsoft.com/en-us/graph/api/resources/actionUrl?view=graph-rest-beta) resource.",
+          "Target": "actionUrl"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "recommendations",
+          "ChangeType": "Addition",
+          "Description": "Added the recommendations navigation property to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "DirectoryRecommendations.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `DirectoryRecommendations.Read.All` delegated and application permissions to the read operations of [Azure AD recommendations](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta).",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "DirectoryRecommendations.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `DirectoryRecommendations.ReadWrite.All` delegated and application permissions to the read and write operations of [Azure AD recommendations](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta).",
+          "Target": "recommendation"
+        }
+      ],
+      "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-02T00:00:00.601897Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationEventType** enumeration type.",
+          "Target": "authenticationEventType"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appliedAuthenticationEventListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [appliedAuthenticationEventListener](https://learn.microsoft.com/en-us/graph/api/resources/appliedAuthenticationEventListener?view=graph-rest-beta) resource type.",
+          "Target": "appliedAuthenticationEventListener"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationEventHandlerResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationEventHandlerResult](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventHandlerResult?view=graph-rest-beta) resource type.",
+          "Target": "authenticationEventHandlerResult"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionCalloutResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionCalloutResult](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCalloutResult?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionCalloutResult"
+        },
+        {
+          "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+          "ApiChange": "Property",
+          "ChangedApiName": "appliedEventListeners",
+          "ChangeType": "Addition",
+          "Description": "Added the **appliedEventListeners** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "51411b81-15ff-4baf-a5e6-eac4c80628ff",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-30T22:13:27.8065468Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationAppAdminConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationAppAdminConfiguration** enumeration type.",
+          "Target": "authenticationAppAdminConfiguration"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationAppEvaluation",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationAppEvaluation** enumeration type.",
+          "Target": "authenticationAppEvaluation"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationAppPolicyStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationAppPolicyStatus** enumeration type.",
+          "Target": "authenticationAppPolicyStatus"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAppDeviceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAppDeviceDetails](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAppDeviceDetails?view=graph-rest-beta) resource type.",
+          "Target": "authenticationAppDeviceDetails"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAppPolicyDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAppPolicyDetails](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAppPolicyDetails?view=graph-rest-beta) resource type.",
+          "Target": "authenticationAppPolicyDetails"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationAppDeviceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationAppDeviceDetails` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationAppPolicyEvaluationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationAppPolicyEvaluationDetails` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-07T17:44:47.9011014Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },  
+
+        {
+      "ChangeList": [
+        {
+          "Id": "a87b3d78-8579-4500-b0fe-2ee2a498d8b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "a87b3d78-8579-4500-b0fe-2ee2a498d8b8",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "a87b3d78-8579-4500-b0fe-2ee2a498d8b8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-05T15:32:15.4715841Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    }, 
+
+    {
+         "ChangeList": [
+           {
+            "Id": "32ae0a92-8eca-4f25-8552-7600bc9370f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "isAdmin",
+            "ChangeType": "Addition",
+            "Description": "Added the `isAdmin` property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+            "Target": "userRegistrationDetails"
+          },
+          {
+            "Id": "32ae0a92-8eca-4f25-8552-7600bc9370f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "userType",
+            "ChangeType": "Addition",
+            "Description": "Added the `userType` property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+            "Target": "userRegistrationDetails"
+          }
+        ],
+        "Id": "32ae0a92-8eca-4f25-8552-7600bc9370f5",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2022-08-05T18:50:22.4220905Z",
+        "WorkloadArea": "Reports",
+        "SubArea": "Identity and access reports"
+      },
+    {
+      "ChangeList": [
+        {
           "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
           "ApiChange": "Member",
           "ChangedApiName": "anonymizedIPAddress",
@@ -87,7 +331,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-05T22:00:19.7139376Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
     {
@@ -97,7 +341,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sessionControlsNotSatisfied",
           "ChangeType": "Addition",
-          "Description": "Added the **sessionControlsNotSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **sessionControlsNotSatisfied** property to the [appliedConditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
           "Target": "appliedConditionalAccessPolicy"
         }
       ],
@@ -123,7 +367,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "defaultMfaMethod",
           "ChangeType": "Addition",
-          "Description": "Added the **defaultMfaMethod** property to the [userRegistrationDetails](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **defaultMfaMethod** property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
           "Target": "userRegistrationDetails"
         }
       ],
@@ -157,7 +401,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "clientCredentialType",
           "ChangeType": "Addition",
-          "Description": "Added the **clientCredentialType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. Use this property to investigate the credential types that user clients or service principals use to authenticate to Azure AD.",
+          "Description": "Added the **clientCredentialType** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. Use this property to investigate the credential types that user clients or service principals use to authenticate to Azure AD.",
           "Target": "signIn"
         },
         {
@@ -165,7 +409,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmCompromised",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the [signin](https://docs.microsoft.com/en-us/graph/api/signin?view=graph-rest-beta) resource.",
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the signin resource.",
           "Target": "signIn"
         },
         {
@@ -173,7 +417,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmSafe",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmSafe](https://docs.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the [signIn](https://docs.microsoft.com/en-us/graph/api/signin?view=graph-rest-beta) resource.",
+          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the signIn resource.",
           "Target": "signIn"
         }
       ],
@@ -191,7 +435,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "userRegistrationDetails",
               "ChangeType": "Addition",
-              "Description": "Added the **userRegistrationDetails** relationship to [authenticationMethodsRoot](https://docs.microsoft.com/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
+              "Description": "Added the **userRegistrationDetails** relationship to [authenticationMethodsRoot](https://learn.microsoft.com/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
               "Target": "authenticationMethodsRoot"
             },
             {
@@ -199,7 +443,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "userRegistrationDetails",
               "ChangeType": "Addition",
-              "Description": "Added the [userRegistrationDetails](https://docs.microsoft.com/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource and related methods. The userRegistrationDetails resource provides details of the authentication methods registered for the user.",
+              "Description": "Added the [userRegistrationDetails](https://learn.microsoft.com/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource and related methods. The userRegistrationDetails resource provides details of the authentication methods registered for the user.",
               "Target": "userRegistrationDetails"
             }
         ],
@@ -217,7 +461,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "disableResilienceDefaults",
                 "ChangeType": "Addition",
-                "Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls?view=graph-rest-1.0) resource. Setting this property determines whether to block authentications during an outage whenever a policy condition can't be evaluated in real-time, or allow policies to be evaluated using session information collected prior to an outage.",
+                "Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls?view=graph-rest-1.0) resource. Setting this property determines whether to block authentications during an outage whenever a policy condition can't be evaluated in real-time, or allow policies to be evaluated using session information collected prior to an outage.",
                 "Target": "conditionalAccessSessionControls"
             }
         ],
@@ -251,7 +495,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationContext",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationContext](https://docs.microsoft.com/en-us/graph/api/resources/authenticationContext?view=graph-rest-beta) resource type.",
+          "Description": "Added the [authenticationContext](https://learn.microsoft.com/en-us/graph/api/resources/authenticationContext?view=graph-rest-beta) resource type.",
           "Target": "authenticationContext"
         },
         {
@@ -259,7 +503,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationContextClassReferences",
           "ChangeType": "Addition",
-          "Description": "Added the **authenticationContextClassReferences** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **authenticationContextClassReferences** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -267,7 +511,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "azureResourceId",
           "ChangeType": "Addition",
-          "Description": "Added the **azureResourceId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **azureResourceId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -275,7 +519,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "federatedCredentialId",
           "ChangeType": "Addition",
-          "Description": "Added the **federatedCredentialId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **federatedCredentialId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -283,7 +527,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resourceServicePrincipalId",
           "ChangeType": "Addition",
-          "Description": "Added the **resourceServicePrincipalId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **resourceServicePrincipalId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -291,7 +535,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sessionLifetimePolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **sessionLifetimePolicies** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **sessionLifetimePolicies** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -299,7 +543,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sessionLifetimePolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [sessionLifetimePolicy](https://docs.microsoft.com/en-us/graph/api/resources/sessionLifetimePolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [sessionLifetimePolicy](https://learn.microsoft.com/en-us/graph/api/resources/sessionLifetimePolicy?view=graph-rest-beta) resource.",
           "Target": "sessionLifetimePolicy"
         }
       ],
@@ -317,7 +561,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "excludeRulesSatisfied",
             "ChangeType": "Addition",
-            "Description": "Added the **excludeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Description": "Added the **excludeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
             "Target": "appliedConditionalAccessPolicy"
           },
           {
@@ -325,7 +569,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "includeRulesSatisfied",
             "ChangeType": "Addition",
-            "Description": "Added the **includeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Description": "Added the **includeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
             "Target": "appliedConditionalAccessPolicy"
           },
           {
@@ -333,7 +577,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "displayName",
             "ChangeType": "Addition",
-            "Description": "Added the **displayName** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Description": "Added the **displayName** property to the [appliedConditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
             "Target": "appliedConditionalAccessPolicy"
           },
           {
@@ -341,7 +585,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "authenticationRequirementPolicies",
             "ChangeType": "Addition",
-            "Description": "Added the **authenticationRequirementPolicies** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. This property provides details about the sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.",
+            "Description": "Added the **authenticationRequirementPolicies** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. This property provides details about the sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.",
             "Target": "signIn"
           },
           {
@@ -349,7 +593,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "crossTenantAccessType",
             "ChangeType": "Addition",
-            "Description": "Added the **crossTenantAccessType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. Where the sign in crossed tenant boundaries, this resource describes the type of cross-tenant access for example, B2B Collaboration or B2B Direct Connect.",
+            "Description": "Added the **crossTenantAccessType** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. Where the sign in crossed tenant boundaries, this resource describes the type of cross-tenant access for example, B2B Collaboration or B2B Direct Connect.",
             "Target": "signIn"
           },
           {
@@ -357,7 +601,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "flaggedForReview",
             "ChangeType": "Addition",
-            "Description": "Added the **flaggedForReview** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **flaggedForReview** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -365,7 +609,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "homeTenantId",
             "ChangeType": "Addition",
-            "Description": "Added the **homeTenantId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **homeTenantId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -373,7 +617,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "ipAddressFromResourceProvider",
             "ChangeType": "Addition",
-            "Description": "Added the **ipAddressFromResourceProvider** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **ipAddressFromResourceProvider** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -381,7 +625,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "resourceTenantId ",
             "ChangeType": "Addition",
-            "Description": "Added the **resourceTenantId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **resourceTenantId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -389,7 +633,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "signInEventTypes",
             "ChangeType": "Addition",
-            "Description": "Added the **signInEventTypes** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **signInEventTypes** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -397,7 +641,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "signInIdentifier",
             "ChangeType": "Addition",
-            "Description": "Added the **signInIdentifier** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **signInIdentifier** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -405,7 +649,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "userType",
             "ChangeType": "Addition",
-            "Description": "Added the **userType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **userType** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -413,7 +657,7 @@
             "ApiChange": "Enum type",
             "ChangedApiName": "signInUserType",
             "ChangeType": "Addition",
-            "Description": "Added the **signInUserType** enumeration [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **signInUserType** enumeration [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -421,7 +665,7 @@
             "ApiChange": "Enum type",
             "ChangedApiName": "signInIdentifierType",
             "ChangeType": "Addition",
-            "Description": "Added the **signInIdentifierType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Description": "Added the **signInIdentifierType** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
             "Target": "signIn"
           },
           {
@@ -429,7 +673,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "autonomousSystemNumber",
               "ChangeType": "Addition",
-              "Description": "Added the **autonomousSystemNumber** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Description": "Added the **autonomousSystemNumber** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
               "Target": "signIn"
           },
           {
@@ -437,7 +681,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "isTenantRestricted",
               "ChangeType": "Addition",
-              "Description": "Added the **isTenantRestricted** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Description": "Added the **isTenantRestricted** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
               "Target": "signIn"
           },
           {
@@ -445,7 +689,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "privateLinkDetails",
               "ChangeType": "Addition",
-              "Description": "Added the **privateLinkDetails** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Description": "Added the **privateLinkDetails** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
               "Target": "signIn"
           },
           {
@@ -453,7 +697,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "servicePrincipalCredentialKeyId",
               "ChangeType": "Addition",
-              "Description": "Added the **servicePrincipalCredentialKeyId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. In service principal authentication and sign-ins, this property contains the unique identifier of the service principal key credential.",
+              "Description": "Added the **servicePrincipalCredentialKeyId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. In service principal authentication and sign-ins, this property contains the unique identifier of the service principal key credential.",
               "Target": "signIn"
           },
           {
@@ -461,7 +705,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "servicePrincipalCredentialThumbprint",
               "ChangeType": "Addition",
-              "Description": "Added the **servicePrincipalCredentialThumbprint** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. In service principal authentication and sign-ins, this property contains the certificate thumbprint of the service principal's certificate.",
+              "Description": "Added the **servicePrincipalCredentialThumbprint** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. In service principal authentication and sign-ins, this property contains the certificate thumbprint of the service principal's certificate.",
               "Target": "signIn"
           },
           {
@@ -469,7 +713,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "privateLinkDetails",
               "ChangeType": "Addition",
-              "Description": "Added the [privateLinkDetails](https://docs.microsoft.com/en-us/graph/api/resources/privateLinkDetails?view=graph-rest-beta) resource type.",
+              "Description": "Added the [privateLinkDetails](https://learn.microsoft.com/en-us/graph/api/resources/privateLinkDetails?view=graph-rest-beta) resource type.",
               "Target": "privateLinkDetails"
           },
           {
@@ -477,7 +721,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "authenticationRequirementPolicy",
             "ChangeType": "Addition",
-            "Description": "Added the [authenticationRequirementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationRequirementPolicy?view=graph-rest-beta) resource type. This resource provides the attributes of the policy that required MFA for sign in.",
+            "Description": "Added the [authenticationRequirementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationRequirementPolicy?view=graph-rest-beta) resource type. This resource provides the attributes of the policy that required MFA for sign in.",
             "Target": "authenticationRequirementPolicy"
           },
           {
@@ -485,7 +729,7 @@
             "ApiChange": "Enum type",
             "ChangedApiName": "requirementProvider",
             "ChangeType": "Change",
-            "Description": "Changed the **requirementProvider** enumeration. Removed the current `MFA`, `CA`, and `unknownFutureValue` enumeration members and replaced them with new members. The new enumeration members provide a comprehensive list of possible Azure AD features that require MFA in the [authenticationRequirementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationRequirementPolicy?view=graph-rest-beta).",
+            "Description": "Changed the **requirementProvider** enumeration. Removed the current `MFA`, `CA`, and `unknownFutureValue` enumeration members and replaced them with new members. The new enumeration members provide a comprehensive list of possible Azure AD features that require MFA in the [authenticationRequirementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationRequirementPolicy?view=graph-rest-beta).",
             "Target": "requirementProvider"
           },
           {
@@ -493,7 +737,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "conditionalAccessRuleSatisfied",
             "ChangeType": "Addition",
-            "Description": "Added the [conditionalAccessRuleSatisfied](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessRuleSatisfied?view=graph-rest-beta) resource type. This resource provides the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity.",
+            "Description": "Added the [conditionalAccessRuleSatisfied](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRuleSatisfied?view=graph-rest-beta) resource type. This resource provides the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity.",
             "Target": "conditionalAccessRuleSatisfied"
           },
           {
@@ -541,7 +785,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "mfaDetail",
               "ChangeType": "Deprecation",
-              "Description": "Deprecated the **mfaDetail** property on the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Description": "Deprecated the **mfaDetail** property on the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
               "Target": "signIn"
           }
       ],
@@ -559,7 +803,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "riskEventTypes",
           "ChangeType": "Deletion",
-          "Description": "Deleted the deprecated **riskEventTypes** property of the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource. Replaced with the **riskEventTypes_v2** property.",
+          "Description": "Deleted the deprecated **riskEventTypes** property of the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource. Replaced with the **riskEventTypes_v2** property.",
           "Target": "signIn"
         }
       ],
@@ -577,7 +821,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "user",
           "ChangeType": "Change",
-          "Description": "Changed the type of the **user** property of [auditActivityInitiator](https://docs.microsoft.com/en-us/graph/api/resources/auditActivityInitiator?view=graph-rest-beta) from **userIdentity** to [auditUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta). **auditUserIdentity** includes tenant identifiers to support more detailed cross-tenant sign in identification.",
+          "Description": "Changed the type of the **user** property of [auditActivityInitiator](https://learn.microsoft.com/en-us/graph/api/resources/auditActivityInitiator?view=graph-rest-beta) from **userIdentity** to [auditUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta). **auditUserIdentity** includes tenant identifiers to support more detailed cross-tenant sign in identification.",
           "Target": "auditActivityInitiator"
         },
         {
@@ -601,7 +845,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationStrength",
           "ChangeType": "Addition",
-          "Description": "Added the **authenticationStrength** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **authenticationStrength** property to the [appliedConditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
           "Target": "appliedConditionalAccessPolicy"
         },
         {
@@ -609,7 +853,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "auditUserIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [auditUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta) resource type. This resource includes tenant identifiers to support more detailed cross-tenant sign in identification.",
+          "Description": "Added the [auditUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta) resource type. This resource includes tenant identifiers to support more detailed cross-tenant sign in identification.",
           "Target": "auditUserIdentity"
         },
         {
@@ -617,7 +861,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationStrength",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationStrength](https://docs.microsoft.com/en-us/graph/api/resources/authenticationStrength?view=graph-rest-beta) resource type.",
+          "Description": "Added the [authenticationStrength](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrength?view=graph-rest-beta) resource type.",
           "Target": "authenticationStrength"
         },
         {
@@ -625,7 +869,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "alternateSignInName",
           "ChangeType": "Deletion",
-          "Description": "Removed the deprecated **alternateSignInName** property from the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Removed the deprecated **alternateSignInName** property from the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -633,7 +877,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationProtocol",
           "ChangeType": "Addition",
-          "Description": "Added the **authenticationProtocol** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **authenticationProtocol** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -641,7 +885,7 @@
           "ApiChange": "String",
           "ChangedApiName": "authenticationRequirement",
           "ChangeType": "Addition",
-          "Description": "Added the **authenticationRequirement** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **authenticationRequirement** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -649,7 +893,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "homeTenantName",
           "ChangeType": "Addition",
-          "Description": "Added the **homeTenantName** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **homeTenantName** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -657,7 +901,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "incomingTokenType",
           "ChangeType": "Addition",
-          "Description": "Added the **incomingTokenType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **incomingTokenType** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -665,7 +909,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "uniqueTokenIdentifier",
           "ChangeType": "Addition",
-          "Description": "Added the **uniqueTokenIdentifier** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **uniqueTokenIdentifier** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         }
       ],
@@ -683,7 +927,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "userAgent",
                 "ChangeType": "Addition",
-                "Description": "Added the **userAgent** property to the [directoryAudit](https://docs.microsoft.com/en-us/graph/api/resources/directoryAudit?view=graph-rest-beta) resource.",
+                "Description": "Added the **userAgent** property to the [directoryAudit](https://learn.microsoft.com/en-us/graph/api/resources/directoryAudit?view=graph-rest-beta) resource.",
                 "Target": "directoryAudit"
             }
         ],
@@ -701,7 +945,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "lastNonInteractiveSignInDateTime",
             "ChangeType": "Addition",
-            "Description": "Added the **lastNonInteractiveSignInDateTime** property to the [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+            "Description": "Added the **lastNonInteractiveSignInDateTime** property to the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
             "Target": "signInActivity"
           },
           {
@@ -709,7 +953,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "lastNonInteractiveSignInRequestId",
             "ChangeType": "Addition",
-            "Description": "Added the **lastNonInteractiveSignInRequestId** property to the [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+            "Description": "Added the **lastNonInteractiveSignInRequestId** property to the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
             "Target": "signInActivity"
           }
         ],
@@ -727,7 +971,7 @@
                 "ApiChange": "Relationship",
                 "ChangedApiName": "provisioning",
                 "ChangeType": "Addition",
-                "Description": "Added the **provisioning** relationship to the [auditLogRoot](https://docs.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-1.0) resource.",
+                "Description": "Added the **provisioning** relationship to the [auditLogRoot](https://learn.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-1.0) resource.",
                 "Target": "auditLogRoot"
             },
             {
@@ -735,7 +979,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningObjectSummary",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-1.0) resource type.",
                 "Target": "provisioningObjectSummary"
             },
             {
@@ -743,7 +987,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningServicePrincipal",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/provisioningServicePrincipal?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [provisioningServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/provisioningServicePrincipal?view=graph-rest-1.0) resource type.",
                 "Target": "provisioningServicePrincipal"
             },
             {
@@ -751,7 +995,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "initiator",
                 "ChangeType": "Addition",
-                "Description": "Added the [initiator](https://docs.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [initiator](https://learn.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-1.0) resource type.",
                 "Target": "initiator"
             },
             {
@@ -759,7 +1003,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningSystem",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [provisioningSystem](https://learn.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-1.0) resource type.",
                 "Target": "provisioningSystem"
             },
             {
@@ -767,7 +1011,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "detailsInfo",
                 "ChangeType": "Addition",
-                "Description": "Added the [detailsInfo](https://docs.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [detailsInfo](https://learn.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-1.0) resource type.",
                 "Target": "detailsInfo"
             },
             {
@@ -775,7 +1019,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisionedIdentity",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisionedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [provisionedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-1.0) resource type.",
                 "Target": "provisionedIdentity"
             },
             {
@@ -783,7 +1027,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningStatusInfo",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [provisioningStatusInfo](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-1.0) resource type.",
                 "Target": "provisioningStatusInfo"
             },
             {
@@ -791,7 +1035,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningErrorInfo",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningErrorInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [provisioningErrorInfo](https://learn.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-1.0) resource type.",
                 "Target": "provisioningErrorInfo"
             },
             {
@@ -799,7 +1043,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningStep",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningStep](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [provisioningStep](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-1.0) resource type.",
                 "Target": "provisioningStep"
             },
             {
@@ -807,7 +1051,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "identity",
                 "ChangeType": "Addition",
-                "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.",
+                "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.",
                 "Target": "identity"
             },
             {
@@ -865,7 +1109,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "provisioningAction",
                 "ChangeType": "Addition",
-                "Description": "Added the **provisioningAction** property to the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Description": "Added the **provisioningAction** property to the [provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
                 "Target": "provisioningObjectSummary"
             },
             {
@@ -873,7 +1117,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "provisioningStatusInfo",
                 "ChangeType": "Addition",
-                "Description": "Added the **provisioningStatusInfo** property to the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Description": "Added the **provisioningStatusInfo** property to the [provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
                 "Target": "provisioningObjectSummary"
             },
             {
@@ -881,7 +1125,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningSystem",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-beta) resource type. Replaces the provisioningSystemDetails type. No schema change.",
+                "Description": "Added the [provisioningSystem](https://learn.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-beta) resource type. Replaces the provisioningSystemDetails type. No schema change.",
                 "Target": "provisioningSystem"
             },
             {
@@ -889,7 +1133,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningStatusInfo",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Description": "Added the [provisioningStatusInfo](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
                 "Target": "provisioningStatusInfo"
             },
             {
@@ -897,7 +1141,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningErrorInfo",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningErrorInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-beta) resource type.",
+                "Description": "Added the [provisioningErrorInfo](https://learn.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-beta) resource type.",
                 "Target": "provisioningErrorInfo"
             },
             {
@@ -929,7 +1173,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "sourceSystem",
                 "ChangeType": "Change",
-                "Description": "Changed the type of the **sourceSystem** property in the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Description": "Changed the type of the **sourceSystem** property in the [provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
                 "Target": "provisioningObjectSummary"
             },
             {
@@ -937,7 +1181,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "targetSystem",
                 "ChangeType": "Change",
-                "Description": "Changed the type of the **targetSystem** property in the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Description": "Changed the type of the **targetSystem** property in the [provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
                 "Target": "provisioningObjectSummary"
             },
             {
@@ -953,7 +1197,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "errorCategory",
                 "ChangeType": "Change",
-                "Description": "Changed the type of the **errorCategory** property in the [statusDetails](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource.",
+                "Description": "Changed the type of the **errorCategory** property in the [statusDetails](https://learn.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource.",
                 "Target": "statusDetails"
             },
             {
@@ -969,7 +1213,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "statusInfo",
                 "ChangeType": "Change",
-                "Description": "Deprecated the **statusInfo** property from [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta).",
+                "Description": "Deprecated the **statusInfo** property from [provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta).",
                 "Target": "provisioningObjectSummary"
             },
             {
@@ -977,7 +1221,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "action",
                 "ChangeType": "Change",
-                "Description": "Deprecated the **action** property from [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta).",
+                "Description": "Deprecated the **action** property from [provisioningObjectSummary](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta).",
                 "Target": "provisioningObjectSummary"
             },
             {
@@ -985,7 +1229,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "statusDetails",
                 "ChangeType": "Change",
-                "Description": "Deprecated the [statusDetails](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource. This is to be replaced by the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Description": "Deprecated the [statusDetails](https://learn.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource. This is to be replaced by the [provisioningStatusInfo](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
                 "Target": "statusDetails"
             },
             {
@@ -993,7 +1237,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "statusBase",
                 "ChangeType": "Change",
-                "Description": "Deprecated the [statusBase](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource. This is to be replaced by the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Description": "Deprecated the [statusBase](https://learn.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource. This is to be replaced by the [provisioningStatusInfo](https://learn.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
                 "Target": "statusBase"
             }
         ],
@@ -1011,7 +1255,7 @@
                "ApiChange":"Relationship",
                "ChangedApiName":"authenticationMethods",
                "ChangeType":"Addition",
-               "Description":"Added the **authenticationMethods** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+               "Description":"Added the **authenticationMethods** relationship to [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
                "Target":"reportRoot"
             },
             {
@@ -1019,7 +1263,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"userRegistrationFeatureSummary",
                "ChangeType":"Addition",
-               "Description":"Added the [userRegistrationFeatureSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-beta) resource type.",
+               "Description":"Added the [userRegistrationFeatureSummary](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-beta) resource type.",
                "Target":"userRegistrationFeatureSummary"
             },
             {
@@ -1027,7 +1271,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"userRegistrationFeatureCount",
                "ChangeType":"Addition",
-               "Description":"Added the [userRegistrationFeatureCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureCount?view=graph-rest-beta) resource type.",
+               "Description":"Added the [userRegistrationFeatureCount](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureCount?view=graph-rest-beta) resource type.",
                "Target":"userRegistrationFeatureCount"
             },
             {
@@ -1035,7 +1279,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"userRegistrationMethodSummary",
                "ChangeType":"Addition",
-               "Description":"Added the [userRegistrationMethodSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-beta) resource type.",
+               "Description":"Added the [userRegistrationMethodSummary](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-beta) resource type.",
                "Target":"userRegistrationMethodSummary"
             },
             {
@@ -1043,7 +1287,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"userRegistrationMethodCount",
                "ChangeType":"Addition",
-               "Description":"Added the [userRegistrationMethodCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodCount?view=graph-rest-beta) resource type.",
+               "Description":"Added the [userRegistrationMethodCount](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationMethodCount?view=graph-rest-beta) resource type.",
                "Target":"userRegistrationMethodCount"
             },
             {
@@ -1051,7 +1295,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"authenticationMethodsRoot",
                "ChangeType":"Addition",
-               "Description":"Added the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource type.",
+               "Description":"Added the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource type.",
                "Target":"authenticationMethodsRoot"
             },
             {
@@ -1083,7 +1327,7 @@
                "ApiChange":"Method",
                "ChangedApiName":"usersRegisteredByFeature",
                "ChangeType":"Addition",
-               "Description":"Added the [usersRegisteredByFeature](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
+               "Description":"Added the [usersRegisteredByFeature](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
                "Target":"authenticationMethodsRoot"
             },
             {
@@ -1091,7 +1335,7 @@
                "ApiChange":"Method",
                "ChangedApiName":"usersRegisteredByMethod",
                "ChangeType":"Addition",
-               "Description":"Added the [usersRegisteredByMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
+               "Description":"Added the [usersRegisteredByMethod](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
                "Target":"authenticationMethodsRoot"
             },
             {
@@ -1125,7 +1369,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "outlookM365,outlook2019",
           "ChangeType": "Addition",
-          "Description": "Added the **outlookM365** and **outlook2019** properties to the [getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.",
+          "Description": "Added the **outlookM365** and **outlook2019** properties to the getEmailAppUsageVersionsUserCounts entity.",
           "Target": "getEmailAppUsageVersionsUserCounts"
         }
       ],
@@ -1143,7 +1387,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getM365AppUserDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [getM365AppUserDetail](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta) method.",
+          "Description": "Added the [getM365AppUserDetail](https://learn.microsoft.com/en-us/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta) method.",
           "Target": "getM365AppUserDetail"
         },
         {
@@ -1151,7 +1395,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getM365AppUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [getM365AppUserCounts](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta) method.",
+          "Description": "Added the [getM365AppUserCounts](https://learn.microsoft.com/en-us/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta) method.",
           "Target": "getM365AppUserCounts"
         },
         {
@@ -1159,7 +1403,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getM365AppPlatformUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [getM365AppPlatformUserCounts](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta) method.",
+          "Description": "Added the [getM365AppPlatformUserCounts](https://learn.microsoft.com/en-us/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta) method.",
           "Target": "getM365AppPlatformUserCounts"
         }
       ],
@@ -1177,7 +1421,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary,listing",
           "ChangeType": "Addition",
-          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://docs.microsoft.com/en-us/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://docs.microsoft.com/en-us/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
+          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://learn.microsoft.com/en-us/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
           "Target": "relyingPartyDetailedSummary,listing"
         }
       ],
@@ -1195,7 +1439,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Meeting Created,Meeting Interacted",
           "ChangeType": "Addition",
-          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API CSV entity.",
+          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API CSV entity.",
           "Target": "getEmailActivityCounts"
         },
         {
@@ -1203,7 +1447,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Meeting Created,Meeting Interacted",
           "ChangeType": "Addition",
-          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API CSV entity.",
+          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API CSV entity.",
           "Target": "getEmailActivityUserCounts"
         },
         {
@@ -1211,7 +1455,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Meeting Created,Meeting Interacted",
           "ChangeType": "Addition",
-          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityuserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API CSV entity.",
+          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityuserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API CSV entity.",
           "Target": "getEmailActivityuserDetail"
         }
       ],
@@ -1229,7 +1473,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "networkDisplayName",
           "ChangeType": "Addition",
-          "Description": "Added **networkDisplayName** property to the [yammerGroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta) entity.",
+          "Description": "Added **networkDisplayName** property to the yammerGroupsActivityDetail entity.",
           "Target": "yammerGroupsActivityDetail"
         }
       ],
@@ -1247,7 +1491,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Authorization for APIs to read Microsoft 365 usage reports",
           "ChangeType": "Change",
-          "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](reportroot-authorization.md).",
+          "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles.",
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
@@ -1265,7 +1509,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Authorization for APIs to read Microsoft 365 usage reports",
           "ChangeType": "Change",
-          "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](reportroot-authorization.md).",
+          "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role.",
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
@@ -1283,7 +1527,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemCount,deletedItemSizeInBytes",
           "ChangeType": "Addition",
-          "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the [mailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) entity.",
+          "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the mailboxUsageDetail entity.",
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1291,7 +1535,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "groupId",
           "ChangeType": "Addition",
-          "Description": "Added the **groupId** property to the [office365GroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) entity.",
+          "Description": "Added the **groupId** property to the [office365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) entity.",
           "Target": "office365GroupsActivityDetail"
         },
         {
@@ -1299,7 +1543,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added the **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) entity.",
+          "Description": "Added the **ownerPrincipalName** property to the oneDriveUsageAccountDetail entity.",
           "Target": "oneDriveUsageAccountDetail"
         },
         {
@@ -1307,7 +1551,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added the **ownerPrincipalName** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.",
+          "Description": "Added the **ownerPrincipalName** property to the sharePointSiteUsageDetail entity.",
           "Target": "sharePointSiteUsageDetail"
         },
         {
@@ -1315,7 +1559,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "office365Active,office365Inactive",
           "ChangeType": "Addition",
-          "Description": "Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.",
+          "Description": "Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](https://learn.microsoft.com/en-us/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.",
           "Target": "office365ServicesUserCounts"
         }
       ],
@@ -1333,7 +1577,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemCount",
           "ChangeType": "Addition",
-          "Description": "Added **deletedItemCount** property to the [mailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) entity.",
+          "Description": "Added **deletedItemCount** property to the mailboxUsageDetail entity.",
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1341,7 +1585,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemSizeInBytes",
           "ChangeType": "Addition",
-          "Description": "Added **deletedItemSizeInBytes** property to the [mailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) entity.",
+          "Description": "Added **deletedItemSizeInBytes** property to the mailboxUsageDetail entity.",
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1349,7 +1593,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "groupId",
           "ChangeType": "Addition",
-          "Description": "Added **groupId** property to the [office365GroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) entity.",
+          "Description": "Added **groupId** property to the [office365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) entity.",
           "Target": "office365GroupsActivityDetail"
         }
       ],
@@ -1367,7 +1611,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "reportroot-getcredentialusagesummary,reportroot-getcredentialuserregistrationcount,reportroot-list-credentialuserregistrationdetails,reportroot-list-usercredentialusagedetails",
           "ChangeType": "Addition",
-          "Description": "Added new reports for retrieving user registration and usage information:, \u003Cul\u003E\u003Cli\u003E[reportroot-getcredentialusagesummary](https://docs.microsoft.com/en-us/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.\u003C/li\u003E\u003Cli\u003E[reportroot-getcredentialuserregistrationcount](https://docs.microsoft.com/en-us/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-credentialuserregistrationdetails](https://docs.microsoft.com/en-us/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-usercredentialusagedetails](https://docs.microsoft.com/en-us/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.\u003C/li\u003E\u003C/ul\u003E",
+          "Description": "Added new reports for retrieving user registration and usage information: \u003Cul\u003E\u003Cli\u003E[reportroot-getcredentialusagesummary](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.\u003C/li\u003E\u003Cli\u003E[reportroot-getcredentialuserregistrationcount](https://learn.microsoft.com/en-us/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-credentialuserregistrationdetails](https://learn.microsoft.com/en-us/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E reportroot-list-usercredentialusagedetails - Reports usage of self-service password reset for a user.\u003C/li\u003E\u003C/ul\u003E",
           "Target": "reportroot-getcredentialusagesummary,reportroot-getcredentialuserregistrationcount,reportroot-list-credentialuserregistrationdetails,reportroot-list-usercredentialusagedetails"
         }
       ],
@@ -1385,7 +1629,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) entity.",
+          "Description": "Added **ownerPrincipalName** property to the oneDriveUsageAccountDetail entity.",
           "Target": "oneDriveUsageAccountDetail"
         },
         {
@@ -1393,7 +1637,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added **ownerPrincipalName** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.",
+          "Description": "Added **ownerPrincipalName** property to the sharePointSiteUsageDetail entity.",
           "Target": "sharePointSiteUsageDetail"
         }
       ],
@@ -1411,7 +1655,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "office365Active,office365Inactive",
           "ChangeType": "Addition",
-          "Description": "Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.",
+          "Description": "Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](https://learn.microsoft.com/en-us/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.",
           "Target": "office365ServicesUserCounts"
         }
       ],
@@ -1429,7 +1673,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts",
           "ChangeType": "Addition",
-          "Description": "Added the following APIs:\u003Cbr\u003E[getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageAppsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageQuotaStatusMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationsUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActiveUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActiveUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ServicesUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta)\u003Cbr\u003E [getOffice365GroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageAccountCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityPages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageSiteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsagePages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta).",
+          "Description": "Added the following APIs:\u003Cbr\u003E[getEmailActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getEmailActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageAppsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageVersionsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageMailboxCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageQuotaStatusMailboxCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationsUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActiveUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActiveUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ServicesUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta)\u003Cbr\u003E [getOffice365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityGroupCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageAccountDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageAccountCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityPages](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageSiteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsagePages](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageDistributionUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta).",
           "Target": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts"
         }
       ],
@@ -1455,7 +1699,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "riskDetail,riskLevelAggregated,riskLevelDuringSignIn,riskEventTypes,riskState",
           "ChangeType": "Addition",
-          "Description": "Introduced additional risk properties in the [signIn API](https://docs.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta), including **riskDetail**, **riskLevelAggregated**, **riskLevelDuringSignIn**, **riskEventTypes**, and **riskState**.",
+          "Description": "Introduced additional risk properties in the [signIn API](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta), including **riskDetail**, **riskLevelAggregated**, **riskLevelDuringSignIn**, **riskEventTypes**, and **riskState**.",
           "Target": "signIn API"
         },
         {
@@ -1463,7 +1707,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationProcessingDetails,originalRequestID,isInteractive,tokenIssuerName,tokenIssuerType,correlationId,processingTimeinMilliseconds",
           "ChangeType": "Addition",
-          "Description": "Introduced additional sign-in properties in the [signIn API](https://docs.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta), including **authenticationProcessingDetails**, **originalRequestID**, **isInteractive**, **tokenIssuerName**, **tokenIssuerType**, **correlationId**, and **processingTimeinMilliseconds**.",
+          "Description": "Introduced additional sign-in properties in the [signIn API](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta), including **authenticationProcessingDetails**, **originalRequestID**, **isInteractive**, **tokenIssuerName**, **tokenIssuerType**, **correlationId**, and **processingTimeinMilliseconds**.",
           "Target": "signIn API"
         }
       ],
@@ -1481,7 +1725,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Site ID",
           "ChangeType": "Addition",
-          "Description": "Added the **Site ID** property to [getSharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0).",
+          "Description": "Added the **Site ID** property to [getSharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0).",
           "Target": "getSharePointSiteUsageDetail"
         }
       ],
@@ -1499,7 +1743,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "directoryAudit,signIn",
           "ChangeType": "Addition",
-          "Description": "Added the [directoryAudit](https://docs.microsoft.com/en-us/graph/api/resources/directoryaudit?view=graph-rest-beta) and [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) entities to support a new audit log API.",
+          "Description": "Added the [directoryAudit](https://learn.microsoft.com/en-us/graph/api/resources/directoryaudit?view=graph-rest-beta) and [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) entities to support a new audit log API.",
           "Target": "directoryAudit,signIn"
         },
         {
@@ -1507,7 +1751,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appIndentity,auditActivityInitiator,conditionalAccessPolicy,deviceDetail,mfaDetail,modifiedProperty,signinLocation,signinStatus,targetResource,targetResourceApp,targetResourceDevice,targetResourceDirectory,targetResourceGroup,targetResourceOther,targetResourcePolicy,targetResourceRole,targetResourceServicePrincipal,targetResourceUser,userIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the following resources to support the audit log API: [appIndentity](https://docs.microsoft.com/en-us/graph/api/resources/appidentity?view=graph-rest-beta), [auditActivityInitiator](https://docs.microsoft.com/en-us/graph/api/resources/auditactivityinitiator?view=graph-rest-beta), [conditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta), [deviceDetail](https://docs.microsoft.com/en-us/graph/api/resources/devicedetail?view=graph-rest-beta), [mfaDetail](https://docs.microsoft.com/en-us/graph/api/resources/mfadetail?view=graph-rest-beta), [modifiedProperty](https://docs.microsoft.com/en-us/graph/api/resources/modifiedproperty?view=graph-rest-beta), [signinLocation](https://docs.microsoft.com/en-us/graph/api/resources/signinlocation?view=graph-rest-beta), [signinStatus](https://docs.microsoft.com/en-us/graph/api/resources/signinstatus?view=graph-rest-beta), [targetResource](https://docs.microsoft.com/en-us/graph/api/resources/targetresource?view=graph-rest-beta), [targetResourceApp](https://docs.microsoft.com/en-us/graph/api/resources/targetresourceapp?view=graph-rest-beta), [targetResourceDevice](https://docs.microsoft.com/en-us/graph/api/resources/targetresourcedevice?view=graph-rest-beta), [targetResourceDirectory](https://docs.microsoft.com/en-us/graph/api/resources/targetresourcedirectory?view=graph-rest-beta), [targetResourceGroup](https://docs.microsoft.com/en-us/graph/api/resources/targetresourcegroup?view=graph-rest-beta), [targetResourceOther](https://docs.microsoft.com/en-us/graph/api/resources/targetresourceother?view=graph-rest-beta), [targetResourcePolicy](https://docs.microsoft.com/en-us/graph/api/resources/targetresourcepolicy?view=graph-rest-beta), [targetResourceRole](https://docs.microsoft.com/en-us/graph/api/resources/targetresourcerole?view=graph-rest-beta), [targetResourceServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/targetresourceserviceprincipal?view=graph-rest-beta), [targetResourceUser](https://docs.microsoft.com/en-us/graph/api/resources/targetresourceuser?view=graph-rest-beta), [userIdentity](https://docs.microsoft.com/en-us/graph/api/resources/useridentity?view=graph-rest-beta)",
+          "Description": "Added the following resources to support the audit log API: [appIndentity](https://learn.microsoft.com/en-us/graph/api/resources/appidentity?view=graph-rest-beta), [auditActivityInitiator](https://learn.microsoft.com/en-us/graph/api/resources/auditactivityinitiator?view=graph-rest-beta), [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta), [deviceDetail](https://learn.microsoft.com/en-us/graph/api/resources/devicedetail?view=graph-rest-beta), [mfaDetail](https://learn.microsoft.com/en-us/graph/api/resources/mfadetail?view=graph-rest-beta), [modifiedProperty](https://learn.microsoft.com/en-us/graph/api/resources/modifiedproperty?view=graph-rest-beta), [signinLocation](https://learn.microsoft.com/en-us/graph/api/resources/signinlocation?view=graph-rest-beta), [signinStatus](https://learn.microsoft.com/en-us/graph/api/resources/signinstatus?view=graph-rest-beta), [targetResource](https://learn.microsoft.com/en-us/graph/api/resources/targetresource?view=graph-rest-beta), [targetResourceApp](https://learn.microsoft.com/en-us/graph/api/resources/targetresourceapp?view=graph-rest-beta), [targetResourceDevice](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcedevice?view=graph-rest-beta), [targetResourceDirectory](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcedirectory?view=graph-rest-beta), [targetResourceGroup](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcegroup?view=graph-rest-beta), [targetResourceOther](https://learn.microsoft.com/en-us/graph/api/resources/targetresourceother?view=graph-rest-beta), [targetResourcePolicy](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcepolicy?view=graph-rest-beta), [targetResourceRole](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcerole?view=graph-rest-beta), [targetResourceServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/targetresourceserviceprincipal?view=graph-rest-beta), [targetResourceUser](https://learn.microsoft.com/en-us/graph/api/resources/targetresourceuser?view=graph-rest-beta), [userIdentity](https://learn.microsoft.com/en-us/graph/api/resources/useridentity?view=graph-rest-beta)",
           "Target": "appIndentity,auditActivityInitiator,conditionalAccessPolicy,deviceDetail,mfaDetail,modifiedProperty,signinLocation,signinStatus,targetResource,targetResourceApp,targetResourceDevice,targetResourceDirectory,targetResourceGroup,targetResourceOther,targetResourcePolicy,targetResourceRole,targetResourceServicePrincipal,targetResourceUser,userIdentity"
         }
       ],
@@ -1561,7 +1805,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "siteId",
           "ChangeType": "Addition",
-          "Description": "Added the **siteId** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta) entity.",
+          "Description": "Added the **siteId** property to the sharePointSiteUsageDetail entity.",
           "Target": "sharePointSiteUsageDetail"
         }
       ],
@@ -1579,7 +1823,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activatedOnSharedComputer",
           "ChangeType": "Addition",
-          "Description": "Added the **activatedOnSharedComputer** property to the [userActivationCounts](https://docs.microsoft.com/en-us/graph/api/resources/useractivationcounts?view=graph-rest-beta) entity.",
+          "Description": "Added the **activatedOnSharedComputer** property to the userActivationCounts entity.",
           "Target": "userActivationCounts"
         },
         {
@@ -1587,7 +1831,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharedComputerActivation",
           "ChangeType": "Addition",
-          "Description": "Added the **sharedComputerActivation** property to the [office365ActivationsUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/office365activationsusercounts?view=graph-rest-beta) entity.",
+          "Description": "Added the **sharedComputerActivation** property to the office365ActivationsUserCounts entity.",
           "Target": "office365ActivationsUserCounts"
         }
       ],
@@ -1605,7 +1849,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getTeamsUserActivityUserDetail,getTeamsUserActivityCounts,getTeamsUserActivityUserCounts,getTeamsDeviceUsageUserDetail,getTeamsDeviceUsageUserCounts,getTeamsDeviceUsageDistributionUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the following APIs:\u003Cbr\u003E[getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getTeamsUserActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta)",
+          "Description": "Added the following APIs:\u003Cbr\u003E[getTeamsUserActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getTeamsUserActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getTeamsUserActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getTeamsDeviceUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getTeamsDeviceUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getTeamsDeviceUsageDistributionUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta)",
           "Target": "getTeamsUserActivityUserDetail,getTeamsUserActivityCounts,getTeamsUserActivityUserCounts,getTeamsDeviceUsageUserDetail,getTeamsDeviceUsageUserCounts,getTeamsDeviceUsageDistributionUserCounts"
         }
       ],
@@ -1623,7 +1867,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts,getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts,getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts,getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts",
           "ChangeType": "Addition",
-          "Description": "Added the following APIs:\u003Cbr\u003E[getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getEmailAppUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getEmailAppUsageAppsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getEmailAppUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getMailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)\u003Cbr\u003E[getMailboxUsageMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-1.0)\u003Cbr\u003E[getMailboxUsageQuotaStatusMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0)\u003Cbr\u003E[getMailboxUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActivationsUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActivationCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActivationsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActiveUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActiveUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ServicesUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365GroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)\u003Cbr\u003E [getOffice365GroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365GroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365GroupsActivityStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365GroupsActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveUsageAccountCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointActivityPages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsageSiteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsagePages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getYammerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getYammerDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerGroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0)\u003Cbr\u003E[getYammerGroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerGroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-1.0).",
+          "Description": "Added the following APIs:\u003Cbr\u003E[getEmailActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getEmailActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getEmailActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getEmailAppUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getEmailAppUsageAppsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getEmailAppUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getEmailAppUsageVersionsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getMailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)\u003Cbr\u003E[getMailboxUsageMailboxCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-1.0)\u003Cbr\u003E[getMailboxUsageQuotaStatusMailboxCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0)\u003Cbr\u003E[getMailboxUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActivationsUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActivationCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActivationsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActiveUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ActiveUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365ServicesUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)\u003Cbr\u003E [getOffice365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365GroupsActivityGroupCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365GroupsActivityStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-1.0)\u003Cbr\u003E[getOffice365GroupsActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveUsageAccountDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveUsageAccountCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveUsageFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getOneDriveUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointActivityPages](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsageFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsageSiteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-1.0)\u003Cbr\u003E[getSharePointSiteUsagePages](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageDistributionUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getYammerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerDeviceUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-1.0)\u003Cbr\u003E[getYammerDeviceUsageDistributionUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerDeviceUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerGroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0)\u003Cbr\u003E[getYammerGroupsActivityGroupCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-1.0)\u003Cbr\u003E[getYammerGroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-1.0).",
           "Target": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts,getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts,getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts,getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts"
         }
       ],
@@ -1641,7 +1885,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts,getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts,getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts,getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts",
           "ChangeType": "Addition",
-          "Description": "Added JSON support for the following APIs:\u003Cbr\u003E[getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageAppsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageQuotaStatusMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationsUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActiveUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActiveUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ServicesUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta)\u003Cbr\u003E [getOffice365GroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageAccountCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityPages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageSiteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsagePages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getYammerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getYammerDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerGroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta)\u003Cbr\u003E[getYammerGroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerGroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta).",
+          "Description": "Added JSON support for the following APIs:\u003Cbr\u003E[getEmailActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getEmailActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageAppsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getEmailAppUsageVersionsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageMailboxCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageQuotaStatusMailboxCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta)\u003Cbr\u003E[getMailboxUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationsUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActivationsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActiveUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ActiveUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365ServicesUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta)\u003Cbr\u003E [getOffice365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityGroupCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta)\u003Cbr\u003E[getOffice365GroupsActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageAccountDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageAccountCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta)\u003Cbr\u003E[getOneDriveUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointActivityPages](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageSiteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta)\u003Cbr\u003E[getSharePointSiteUsagePages](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageDistributionUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessDeviceUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessOrganizerActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessParticipantActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getYammerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerDeviceUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta)\u003Cbr\u003E[getYammerDeviceUsageDistributionUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerDeviceUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerGroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta)\u003Cbr\u003E[getYammerGroupsActivityGroupCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta)\u003Cbr\u003E[getYammerGroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta).",
           "Target": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts,getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts,getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts,getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts"
         }
       ],
@@ -1659,7 +1903,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta), [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), and [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) APIs. These replaced the EmailActivity API.",
+          "Description": "Added the [getEmailActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta), [getEmailActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), and [getEmailActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) APIs. These replaced the EmailActivity API.",
           "Target": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts"
         },
         {
@@ -1667,7 +1911,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getEmailAppUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta), [getEmailAppUsageAppsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta), [getEmailAppUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta), and [getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) APIs. These replaced the EmailAppUsage API.",
+          "Description": "Added the [getEmailAppUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta), [getEmailAppUsageAppsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta), [getEmailAppUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta), and [getEmailAppUsageVersionsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) APIs. These replaced the EmailAppUsage API.",
           "Target": "getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts"
         },
         {
@@ -1675,7 +1919,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage",
           "ChangeType": "Change",
-          "Description": "Added the [getMailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta), [getMailboxUsageMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta), [getMailboxUsageQuotaStatusMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta), and [getMailboxUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta) APIs. These replaced the MailboxUsage API.",
+          "Description": "Added the [getMailboxUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta), [getMailboxUsageMailboxCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta), [getMailboxUsageQuotaStatusMailboxCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta), and [getMailboxUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta) APIs. These replaced the MailboxUsage API.",
           "Target": "getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage"
         },
         {
@@ -1683,7 +1927,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getOffice365ActivationsUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta), [getOffice365ActivationCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta), and [getOffice365ActivationsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta) APIs. These replaced the Office365Activations API.",
+          "Description": "Added the [getOffice365ActivationsUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta), [getOffice365ActivationCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta), and [getOffice365ActivationsUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta) APIs. These replaced the Office365Activations API.",
           "Target": "getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts"
         },
         {
@@ -1691,7 +1935,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getOffice365ActiveUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta), [getOffice365ActiveUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta), and [getOffice365ServicesUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta) APIs. These replaced the Office365ActiveUser API.",
+          "Description": "Added the [getOffice365ActiveUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta), [getOffice365ActiveUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta), and [getOffice365ServicesUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta) APIs. These replaced the Office365ActiveUser API.",
           "Target": "getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts"
         },
         {
@@ -1699,7 +1943,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getOffice365GroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta), [getOffice365GroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta),[getOffice365GroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta), [getOffice365GroupsActivityStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta), and [getOffice365GroupsActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta) APIs. These replaced the Office365GroupsActivity API.",
+          "Description": "Added the [getOffice365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta), [getOffice365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta),[getOffice365GroupsActivityGroupCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta), [getOffice365GroupsActivityStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta), and [getOffice365GroupsActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta) APIs. These replaced the Office365GroupsActivity API.",
           "Target": "getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts"
         },
         {
@@ -1707,7 +1951,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getOneDriveActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta), [getOneDriveActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta), and [getOneDriveActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta) APIs. These replaced the OneDriveActivity API.",
+          "Description": "Added the [getOneDriveActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta), [getOneDriveActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta), and [getOneDriveActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta) APIs. These replaced the OneDriveActivity API.",
           "Target": "getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts"
         },
         {
@@ -1715,7 +1959,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage",
           "ChangeType": "Change",
-          "Description": "Added the [getOneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta), [getOneDriveUsageAccountCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta), [getOneDriveUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta), and [getOneDriveUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta) APIs. These replaced the OneDriveUsage API.",
+          "Description": "Added the [getOneDriveUsageAccountDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta), [getOneDriveUsageAccountCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta), [getOneDriveUsageFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta), and [getOneDriveUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta) APIs. These replaced the OneDriveUsage API.",
           "Target": "getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage"
         },
         {
@@ -1723,7 +1967,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages",
           "ChangeType": "Change",
-          "Description": "Added the [getSharePointActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta), [getSharePointActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta), [getSharePointActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta), and [getSharePointActivityPages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta) APIs. These replaced the SharePointActivity API.",
+          "Description": "Added the [getSharePointActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta), [getSharePointActivityFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta), [getSharePointActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta), and [getSharePointActivityPages](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta) APIs. These replaced the SharePointActivity API.",
           "Target": "getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages"
         },
         {
@@ -1731,7 +1975,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages",
           "ChangeType": "Change",
-          "Description": "Added the [getSharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta), [getSharePointSiteUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta), [getSharePointSiteUsageSiteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta), [getSharePointSiteUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta), and [getSharePointSiteUsagePages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta) APIs. These replaced the SharePointSiteUsage API.",
+          "Description": "Added the [getSharePointSiteUsageDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta), [getSharePointSiteUsageFileCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta), [getSharePointSiteUsageSiteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta), [getSharePointSiteUsageStorage](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta), and [getSharePointSiteUsagePages](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta) APIs. These replaced the SharePointSiteUsage API.",
           "Target": "getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages"
         },
         {
@@ -1739,7 +1983,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getSkypeForBusinessActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta), [getSkypeForBusinessActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta), and [getSkypeForBusinessActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta) APIs. These replaced the SfbActivity API.",
+          "Description": "Added the [getSkypeForBusinessActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta), [getSkypeForBusinessActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta), and [getSkypeForBusinessActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta) APIs. These replaced the SfbActivity API.",
           "Target": "getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts"
         },
         {
@@ -1747,7 +1991,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getSkypeForBusinessDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta), [getSkypeForBusinessDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta), and [getSkypeForBusinessDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta) APIs. These replaced the SfbDeviceUsage API.",
+          "Description": "Added the [getSkypeForBusinessDeviceUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta), [getSkypeForBusinessDeviceUsageDistributionUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta), and [getSkypeForBusinessDeviceUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta) APIs. These replaced the SfbDeviceUsage API.",
           "Target": "getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts"
         },
         {
@@ -1755,7 +1999,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getSkypeForBusinessOrganizerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessOrganizerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta), and [getSkypeForBusinessOrganizerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta) APIs. These replaced the SfbOrganizerActivity API.",
+          "Description": "Added the [getSkypeForBusinessOrganizerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessOrganizerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta), and [getSkypeForBusinessOrganizerActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta) APIs. These replaced the SfbOrganizerActivity API.",
           "Target": "getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts"
         },
         {
@@ -1763,7 +2007,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getSkypeForBusinessParticipantActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta), [getSkypeForBusinessParticipantActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta), and [getSkypeForBusinessParticipantActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta) APIs. These replaced the SfbParticipantActivity API.",
+          "Description": "Added the [getSkypeForBusinessParticipantActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta), [getSkypeForBusinessParticipantActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta), and [getSkypeForBusinessParticipantActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta) APIs. These replaced the SfbParticipantActivity API.",
           "Target": "getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts"
         },
         {
@@ -1771,7 +2015,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getSkypeForBusinessPeerToPeerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessPeerToPeerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta), and [getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta) APIs. These replaced the SfbP2PActivity API.",
+          "Description": "Added the [getSkypeForBusinessPeerToPeerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessPeerToPeerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta), and [getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta) APIs. These replaced the SfbP2PActivity API.",
           "Target": "getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts"
         },
         {
@@ -1779,7 +2023,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getYammerActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-beta), [getYammerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-beta), and [getYammerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-beta) APIs. These replaced the YammerActivity API.",
+          "Description": "Added the [getYammerActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-beta), [getYammerActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-beta), and [getYammerActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-beta) APIs. These replaced the YammerActivity API.",
           "Target": "getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts"
         },
         {
@@ -1787,7 +2031,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getYammerDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta), [getYammerDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta), and [getYammerDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta) APIs. These replaced the YammerDeviceUsage API.",
+          "Description": "Added the [getYammerDeviceUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta), [getYammerDeviceUsageDistributionUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta), and [getYammerDeviceUsageUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta) APIs. These replaced the YammerDeviceUsage API.",
           "Target": "getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts"
         },
         {
@@ -1795,7 +2039,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts",
           "ChangeType": "Change",
-          "Description": "Added the [getYammerGroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta), [getYammerGroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta), and [getYammerGroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta) APIs. These replaced the YammerGroupsActivity API.",
+          "Description": "Added the [getYammerGroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta), [getYammerGroupsActivityGroupCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta), and [getYammerGroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta) APIs. These replaced the YammerGroupsActivity API.",
           "Target": "getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts"
         }
       ],
@@ -1813,7 +2057,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "report",
           "ChangeType": "Addition",
-          "Description": "Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. For more details, see [report](https://docs.microsoft.com/en-us/graph/api/resources/report?view=graph-rest-beta).",
+          "Description": "Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. For more details, see [report](https://learn.microsoft.com/en-us/graph/api/resources/report?view=graph-rest-beta).",
           "Target": "report"
         }
       ],

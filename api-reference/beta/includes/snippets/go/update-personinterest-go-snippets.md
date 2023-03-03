@@ -7,12 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonInterest()
-requestBody.SetCategories( []String {
+requestBody := graphmodels.NewPersonInterest()
+categories := []string {
 	"Sports",
+
 }
-personInterestId := "personInterest-id"
-graphClient.Me().Profile().InterestsById(&personInterestId).Patch(requestBody)
+requestBody.SetCategories(categories)
+
+result, err := graphClient.Me().Profile().InterestsById("personInterest-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

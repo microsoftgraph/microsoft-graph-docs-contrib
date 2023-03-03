@@ -27,13 +27,44 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Global Administrator
+* Users
+* Directory Readers
+* Directory Writers
+* Compliance Administrator
+* Device Managers
+* Application Administrator
+* Security Reader
+* Security Administrator
+* Privileged Role Administrator
+* Cloud Application Administrator
+* Customer LockBox Access Approver
+* Dynamics 365 Administrator
+* Power BI Administrator
+* Desktop Analytics Administrator
+* Microsoft Managed Desktop Administrator
+* Teams Communications Administrator
+* Teams Communications Support Engineer
+* Teams Communications Support Specialist
+* Teams Administrator
+* Compliance Data Administrator
+* Security Operator
+* Kaizala Administrator
+* Global Reader
+* Directory Reviewer
+* Windows 365 Administrator
+
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
+GET /devices(deviceId='{deviceId}')
 ```
+
 ## Optional query parameters
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 ## Request headers
@@ -62,16 +93,13 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-device-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-device-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -86,8 +114,11 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-device-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-device-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 The following example shows a response for a device with no **hostNames**. 
@@ -151,16 +182,13 @@ The following request retrieves the **id** and **extensionAttributes** property 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d1821983?$select=id,extensionAttributes
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-device-select-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-device-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -175,8 +203,11 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-device-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-device-select-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

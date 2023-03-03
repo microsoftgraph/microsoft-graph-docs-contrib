@@ -7,17 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetTagsToAdd( []Tag {
-	msgraphsdk.NewTag(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "b4798d14-748d-468e-a1ec-96a2b1d49677",
-	}
+requestBody := graphmodels.NewApplyTagsPostRequestBody()
+
+
+tag := graphmodels.NewTag()
+id := "b4798d14-748d-468e-a1ec-96a2b1d49677"
+tag.SetId(&id) 
+
+tagsToAdd := []graphmodels.Objectable {
+	tag,
+
 }
-caseId := "case-id"
-reviewSetId := "reviewSet-id"
-reviewSetQueryId := "reviewSetQuery-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).ApplyTags(case-id, reviewSet-id, reviewSetQuery-id).Post(requestBody)
+requestBody.SetTagsToAdd(tagsToAdd)
+
+graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").QueriesById("reviewSetQuery-id").EdiscoveryApplyTags().Post(context.Background(), requestBody, nil)
 
 
 ```

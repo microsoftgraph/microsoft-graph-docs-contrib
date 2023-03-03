@@ -58,7 +58,8 @@ Here is an example of the request.
 
 <!-- {
     "blockType": "ignored",
-    "name": "upsert_historyItem"
+    "name": "upsert_historyItem",
+  "sampleKeys": ["13881113971988980728", "390e06e2-7e5b-4133-8014-fac7ac5991af"]
 } -->
 
 ```http

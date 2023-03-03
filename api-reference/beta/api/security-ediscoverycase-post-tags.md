@@ -63,11 +63,11 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_ediscoveryreviewtag_from_"
+  "name": "create_ediscoveryreviewtag_selectibility_many"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 
 {
     "displayName": "My tag API",
@@ -75,29 +75,28 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
     "childSelectability": "Many"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewtag-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewtag-selectibility-many-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryreviewtag-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryreviewtag-selectibility-many-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewtag-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewtag-selectibility-many-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-selectibility-many-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryreviewtag-from--powershell-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryreviewtag-selectibility-many-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 The following is an example of the response.
@@ -136,13 +135,15 @@ Content-Type: application/json
 ### Example 2: Create a tag with a parent
 #### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_ediscoveryreviewtag_from_"
+  "name": "create_tqag_with_a_parent"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 
 {
     "displayName": "My tag API",
@@ -152,6 +153,27 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-tqag-with-a-parent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-tqag-with-a-parent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-tqag-with-a-parent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tqag-with-a-parent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-tqag-with-a-parent-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response.

@@ -65,6 +65,7 @@ If successful, this method returns a `200 OK` response code and a [deviceRegistr
 ``` http
 GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-deviceregistrationpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -85,9 +86,11 @@ GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-deviceregistrationpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-deviceregistrationpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 

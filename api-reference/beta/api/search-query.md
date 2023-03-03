@@ -2,7 +2,7 @@
 title: "searchEntity: query"
 description: "Run a specified search query. Search results are provided in the response."
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
+| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All, Acronym.Read.All, Bookmark.Read.All, ChannelMessage.Read.All, Chat.Read, QnA.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Files.Read.All, Sites.Read.All |
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
+|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
 
 ## Response
 
@@ -91,16 +91,13 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -115,8 +112,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/search-query-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/search-query-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -168,7 +168,7 @@ Content-type: application/json
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
-- Use [aggregations](/graph/search-concept-aggregations) to refine search results
+- Use [aggregations](/graph/search-concept-aggregation) to refine search results
 - Enable [spell corrections](/graph/search-concept-speller) in search results
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

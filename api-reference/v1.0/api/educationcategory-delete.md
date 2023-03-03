@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an existing [category](../resources/educationcategory.md).
+Delete an existing [category](../resources/educationcategory.md). Only teachers can perform this operation.
 
 ## Permissions
 
@@ -20,15 +20,15 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged)             |
 | :------------------------------------- | :------------------------------------------------------ |
 | Delegated (work or school account)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not Supported.                                          |
-| Application                            | Not Supported.                                          |
+| Delegated (personal Microsoft account) | Not supported.                                          |
+| Application                            | Not supported.                                          |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/{id}
+DELETE /education/classes/{id}/assignmentCategories/{id}
 ```
 
 ## Request headers
@@ -61,16 +61,13 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/education/classes/c42f493f-42b4-4e7d-8148-af894cbc518b/assignmentCategories/b93d3b6b-360c-45c0-8764-e8bb622a9504
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -85,8 +82,11 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/c42f493f-42b4-4e7d-814
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationassignment-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-educationassignment-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

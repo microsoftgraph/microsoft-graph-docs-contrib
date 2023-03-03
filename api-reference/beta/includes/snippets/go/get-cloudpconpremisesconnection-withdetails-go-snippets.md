@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.CloudPcOnPremisesConnectionRequestBuilderGetQueryParameters{
-	Select: "id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse",
+requestParameters := &graphconfig.DeviceManagementVirtualEndpointOnPremisesConnectionItemRequestBuilderGetQueryParameters{
+	Select: [] string {"id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse"},
 }
-options := &msgraphsdk.CloudPcOnPremisesConnectionRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceManagementVirtualEndpointOnPremisesConnectionItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-cloudPcOnPremisesConnectionId := "cloudPcOnPremisesConnection-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById(&cloudPcOnPremisesConnectionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById("cloudPcOnPremisesConnection-id").Get(context.Background(), configuration)
 
 
 ```

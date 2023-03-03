@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSectionGroup()
+requestBody := graphmodels.NewSectionGroup()
 displayName := "Section group name"
-requestBody.SetDisplayName(&displayName)
-notebookId := "notebook-id"
-result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).SectionGroups().Post(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().Onenote().NotebooksById("notebook-id").SectionGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

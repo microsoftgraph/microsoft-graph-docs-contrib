@@ -1,7 +1,7 @@
 ---
 title: "deviceShellScript resource type"
 description: "Intune will provide customer the ability to run their Shell scripts on the enrolled Mac OS devices. The script can be run once or periodically."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -39,7 +39,7 @@ Intune will provide customer the ability to run their Shell scripts on the enrol
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-devices-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
 |fileName|String|Script file name.|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
 
@@ -79,7 +79,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-

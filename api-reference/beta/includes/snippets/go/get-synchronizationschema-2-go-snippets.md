@@ -7,15 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Authorization": "Bearer {Token}"
-}
-options := &msgraphsdk.SchemaRequestBuilderGetRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Authorization", "Bearer {Token}")
+
+configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemSchemaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
-servicePrincipalId := "servicePrincipal-id"
-synchronizationJobId := "synchronizationJob-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Schema().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Schema().Get(context.Background(), configuration)
 
 
 ```

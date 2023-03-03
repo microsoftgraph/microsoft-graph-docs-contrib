@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var synchronizationJob = new SynchronizationJob
+var requestBody = new SynchronizationJob
 {
-	TemplateId = "BoxOutDelta"
+	TemplateId = "BoxOutDelta",
 };
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs
-	.Request()
-	.AddAsync(synchronizationJob);
 
 ```

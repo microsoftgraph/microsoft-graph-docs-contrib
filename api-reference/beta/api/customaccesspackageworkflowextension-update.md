@@ -1,7 +1,7 @@
 ---
 title: "Update customAccessPackageWorkflowExtension"
 description: "Update the properties of a customAccessPackageWorkflowExtension object."
-author: "currenmehta"
+author: "currenmehta-zz"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -75,16 +75,13 @@ Content-Type: application/json
   "description": "this is for graph testing only"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-customaccesspackageworkflowextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-customaccesspackageworkflowextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-customaccesspackageworkflowextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -95,9 +92,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-customaccesspackageworkflowextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-customaccesspackageworkflowextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

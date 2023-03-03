@@ -56,7 +56,7 @@ In the request body, supply a JSON representation of an [onlineMeeting](../resou
 
 > [!CAUTION]
 >
-> Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported. For details, see [Known issues](/graph/known-issues#presenter-role-cannot-be-assigned-to-non-azure-ad-participants) for more details.
+> Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported.
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
@@ -84,16 +84,13 @@ Content-Type: application/json
   "subject":"User Token Meeting"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-user-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-user-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -108,8 +105,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-onlinemeeting-user-token-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-onlinemeeting-user-token-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -176,85 +176,7 @@ Content-Type: application/json
     }
 ```
 
-
-### Example 2: Create an online meeting in a Microsoft Teams channel with a user token
-
-#### Request
-
-The following is an example of a request.
-
->**Note:** The Object ID of the user token passed should be a member of the channel represented by **threadId** in the payload.
-
-```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
-Content-Type: application/json
-
-{
-  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
-  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
-  "subject":"User meeting in Microsoft Teams channel.",
-  "chatInfo": {
-    "threadId":"19%3A3b5239894b776357c1dd79%40thread.skype"
-  }
-}
-```
-#### Response
-
-The following is an example of the response.
-
->**Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "example",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onlineMeeting"
-} -->
-
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f40f86-17cc-42e7-85f4-f03880d6')/onlineMeetings/$entity",
-  "audioConferencing": {
-    "tollNumber": "+12534478",
-    "tollFreeNumber": "+18660588",
-    "ConferenceId": "24229",
-    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-49f-45b-bc69-b8a330?id=24229"
-  },
-  "chatInfo": {
-    "threadId": "19%3A3b52398f3c5244b776357c1dd79%40thread.skype",
-    "messageId": "1563302249053",
-    "replyChainMessageId": null
-  },
-  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
-  "startDateTime": "2019-07-11T02:17:17.6491364Z",
-  "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItHRTNaR1F6WGhyZWFkLnYy",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2288bf-86f1-41af-91ab-2011db47%22%2c%22Oid%22%3a%22fae72-d51-43ec-68c-3704f%22%7d",
-  "participants": {
-    "organizer": {
-      "identity": {
-        "user": {
-          "id": "55ae72-d251-43ec-868c-373704f",
-          "tenantId": "72f98f-86f1-41af-91ab-2d7db47",
-          "displayName": "Mario Rogers"
-        }
-      },
-      "role": "presenter",
-      "upn": "upn-value"
-    }
-  },
-  "subject": "User meeting in Microsoft Teams channel.",
-  "joinMeetingIdSettings": {
-    "isPasscodeRequired": false,
-    "joinMeetingId": "1234567890",
-    "passcode": null
-  }
-}
-```
-
-### Example 3: Create a Microsoft Teams live event with a user token
+### Example 2: Create a Microsoft Teams live event with a user token
 
 #### Request
 
@@ -356,28 +278,22 @@ The following is an example of the response.
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
-### Example 4: Create an online meeting that requires a passcode
+### Example 3: Create an online meeting that requires a passcode
 
 The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+
 #### Request
 
 The following is an example of a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode is not supported.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-with-passcode"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -393,6 +309,32 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-online-meeting-with-passcode-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-online-meeting-with-passcode-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-online-meeting-with-passcode-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-online-meeting-with-passcode-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-online-meeting-with-passcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-online-meeting-with-passcode-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The following is an example of the response.
@@ -400,7 +342,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
@@ -450,12 +392,20 @@ Content-Type: application/json
 ```
 
 
-### Example 5: Create an online meeting that does not require a passcode
+### Example 4: Create an online meeting that does not require a passcode
 
 When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
+
 #### Request
 
 The following is an example of a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-without-passcode"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -470,6 +420,32 @@ Content-Type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-online-meeting-without-passcode-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-online-meeting-without-passcode-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-online-meeting-without-passcode-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-online-meeting-without-passcode-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-online-meeting-without-passcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-online-meeting-without-passcode-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 or
 
@@ -491,7 +467,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
@@ -539,3 +515,17 @@ Content-Type: application/json
   }
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create onlineMeeting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

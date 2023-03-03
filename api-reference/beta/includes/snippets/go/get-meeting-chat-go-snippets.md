@@ -7,8 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Get()
+requestParameters := &graphconfig.ChatItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"lastMessagePreview"},
+}
+configuration := &graphconfig.ChatItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.ChatsById("chat-id").Get(context.Background(), configuration)
 
 
 ```

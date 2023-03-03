@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-calendarGroupId := "calendarGroup-id"
-result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Get()
+
+result, err := graphClient.Me().CalendarGroupsById("calendarGroup-id").Get(context.Background(), nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "List depMacOSEnrollmentProfiles"
 description: "List properties and relationships of the depMacOSEnrollmentProfile objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1566
+Content-Length: 1964
 
 {
   "value": [
@@ -92,6 +92,9 @@ Content-Length: 1566
       "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
       "configurationWebUrl": true,
+      "enabledSkipKeys": [
+        "Enabled Skip Keys value"
+      ],
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,
@@ -100,12 +103,14 @@ Content-Length: 1566
       "iCloudStorageDisabled": true,
       "chooseYourLockScreenDisabled": true,
       "accessibilityScreenDisabled": true,
-      "autoUnlockWithWatchDisabled": true
+      "autoUnlockWithWatchDisabled": true,
+      "skipPrimarySetupAccountCreation": true,
+      "setPrimarySetupAccountAsRegularUser": true,
+      "dontAutoPopulatePrimaryAccountInfo": true,
+      "primaryAccountFullName": "Primary Account Full Name value",
+      "primaryAccountUserName": "Primary Account User Name value",
+      "enableRestrictEditing": true
     }
   ]
 }
 ```
-
-
-
-

@@ -48,8 +48,12 @@ DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 DELETE /organization/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+DELETE /me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{userId}/todo/lists/{todoTaskListId}/extensions/{extensionId}
+DELETE /users/{userId}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
+DELETE /me/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
@@ -86,16 +90,13 @@ The first example references an extension by its name and deletes the extension 
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-opentypeextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-opentypeextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-opentypeextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -110,8 +111,11 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-opentypeextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-opentypeextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 The second example deletes an extension in the specified group event.
 

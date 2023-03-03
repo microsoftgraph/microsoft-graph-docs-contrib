@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPermissionGrantConditionSet()
-permissionType := "delegated"
-requestBody.SetPermissionType(&permissionType)
+requestBody := graphmodels.NewPermissionGrantConditionSet()
+permissionType := graphmodels.DELEGATED_PERMISSIONTYPE 
+requestBody.SetPermissionType(&permissionType) 
 resourceApplication := "00000003-0000-0000-c000-000000000000"
-requestBody.SetResourceApplication(&resourceApplication)
-permissionGrantPolicyId := "permissionGrantPolicy-id"
-result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Excludes().Post(requestBody)
+requestBody.SetResourceApplication(&resourceApplication) 
+
+result, err := graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Excludes().Post(context.Background(), requestBody, nil)
 
 
 ```

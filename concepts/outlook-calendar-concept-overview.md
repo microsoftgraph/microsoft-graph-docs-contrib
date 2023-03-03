@@ -84,7 +84,7 @@ Depending on your app scenario, you can use the places API within the context of
 
 ## Take advantage of social intelligence and other developer conveniences in Microsoft Graph
 
-Use the [people API](people-example.md) in Microsoft Graph to connect to [people data](/graph/api/resources/person) which is based on a user's communication and collaboration patterns and business relationships. You can implement controls such as a people picker and suggest persons relevant to the user when organizing meetings on the user's behalf.
+Use the [people API](people-insights-overview.md) in Microsoft Graph to connect to [people data](/graph/api/resources/person) which is based on a user's communication and collaboration patterns and business relationships. You can implement controls such as a people picker and suggest persons relevant to the user when organizing meetings on the user's behalf.
 
 Save overhead in storing and managing app data in external data stores. With Microsoft Graph, you can store custom app data as [open extensions](extensibility-overview.md#open-extensions) in individual resource instances. If you require the data to be typed or would like to be able to share the typed schema, you can store custom app data in [schema extensions](extensibility-overview.md#schema-extensions).
 
@@ -106,7 +106,7 @@ Looking for the API reference for this service?
   - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
   - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
   - [Propose meeting times in an Outlook calendar (preview)](outlook-calendar-meeting-proposals.md)
-  - [Use Outlook to organize or attend meetings online (preview)](outlook-calendar-online-meetings.md)
+  - [Create or set an event as an online meeting in an Outlook calendar](outlook-calendar-online-meetings.md)
   - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
   - [Getting shared events](outlook-get-shared-events-calendars.md)
   - [Attaching large files to Outlook messages or events](outlook-large-attachments.md)

@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents open extensions (formerly known as Office 365 data extensions), an [extensibility option](/graph/extensibility-overview) that provides an easy way to directly add untyped properties to a resource in Microsoft Graph.
+Represents open extensions (also known as open type extensions, and formerly known as Office 365 data extensions), an [extensibility option](/graph/extensibility-overview) that provides an easy way to directly add untyped properties to a resource in Microsoft Graph.
 
 Any open extension added to a resource shows up in the **extensions** navigation property. Each extension has an **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `com.contoso.ContactInfo`. **Do not use** the Microsoft domain (`com.microsoft` or `com.onmicrosoft`) in an extension name.
 
@@ -64,8 +64,8 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|extensionName|String|A unique text identifier for an open type data extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+|extensionName|String|A unique text identifier for an open type data extension. Optional.|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only. <br/><br/> The **id** must be defined during the Create operation via one of the following ways: <ul><li> Explicitly define the **id** property in the request body. <li> Define an **extensionName** property in the request body, and Microsoft Graph automatically assigns the same value to the **id** property. <ul><li> In subsequent updates, you can change the **extensionName** property value to one that's different from the **id** value. <li>In subsequent updates, specifying only the **id** property in the request body automatically deletes the **extensionName** property from the open extension.</ul></ul>|
 
 
 ## Relationships
@@ -88,7 +88,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "extensionName": "string",
-  "id": "string (identifier)"
+  "id": "String (identifier)"
 }
 ```
 

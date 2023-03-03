@@ -7,60 +7,72 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEvent()
-subject := "Let's go for lunch"
-requestBody.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := "HTML"
-body.SetContentType(&contentType)
-content := "Does noon work for you?"
-body.SetContent(&content)
-start := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetStart(start)
-dateTime := "2020-02-25T12:00:00"
-start.SetDateTime(&dateTime)
-timeZone := "Pacific Standard Time"
-start.SetTimeZone(&timeZone)
-end := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetEnd(end)
-dateTime := "2020-02-25T14:00:00"
-end.SetDateTime(&dateTime)
-timeZone := "Pacific Standard Time"
-end.SetTimeZone(&timeZone)
-location := msgraphsdk.NewLocation()
-requestBody.SetLocation(location)
-displayName := "Harry's Bar"
-location.SetDisplayName(&displayName)
-requestBody.SetAttendees( []Attendee {
-	msgraphsdk.NewAttendee(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "required",
-	}
-}
-recurrence := msgraphsdk.NewPatternedRecurrence()
-requestBody.SetRecurrence(recurrence)
-pattern := msgraphsdk.NewRecurrencePattern()
-recurrence.SetPattern(pattern)
-type := "daily"
-pattern.SetType(&type)
-interval := int32(1)
-pattern.SetInterval(&interval)
-range := msgraphsdk.NewRecurrenceRange()
-recurrence.SetRange(range)
-type := "numbered"
-range.SetType(&type)
-startDate := "2020-02-25"
-range.SetStartDate(&startDate)
-numberOfOccurrences := int32(2)
-range.SetNumberOfOccurrences(&numberOfOccurrences)
-headers := map[string]string{
-	"Prefer": "outlook.timezone="Pacific Standard Time""
-}
-options := &msgraphsdk.EventsRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
+configuration := &graphconfig.MeEventsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewEvent()
+subject := "Let's go for lunch"
+requestBody.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
+content := "Does noon work for you?"
+body.SetContent(&content) 
+requestBody.SetBody(body)
+start := graphmodels.NewDateTimeTimeZone()
+dateTime := "2020-02-25T12:00:00"
+start.SetDateTime(&dateTime) 
+timeZone := "Pacific Standard Time"
+start.SetTimeZone(&timeZone) 
+requestBody.SetStart(start)
+end := graphmodels.NewDateTimeTimeZone()
+dateTime := "2020-02-25T14:00:00"
+end.SetDateTime(&dateTime) 
+timeZone := "Pacific Standard Time"
+end.SetTimeZone(&timeZone) 
+requestBody.SetEnd(end)
+location := graphmodels.NewLocation()
+displayName := "Harry's Bar"
+location.SetDisplayName(&displayName) 
+requestBody.SetLocation(location)
+
+
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
+address := "AlexW@contoso.OnMicrosoft.com"
+emailAddress.SetAddress(&address) 
+name := "Alex Wilbur"
+emailAddress.SetName(&name) 
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
+
+attendees := []graphmodels.Objectable {
+	attendee,
+
+}
+requestBody.SetAttendees(attendees)
+recurrence := graphmodels.NewPatternedRecurrence()
+pattern := graphmodels.NewRecurrencePattern()
+type := graphmodels.DAILY_RECURRENCEPATTERNTYPE 
+pattern.SetType(&type) 
+interval := int32(1)
+pattern.SetInterval(&interval) 
+recurrence.SetPattern(pattern)
+range := graphmodels.NewRecurrenceRange()
+type := graphmodels.NUMBERED_RECURRENCERANGETYPE 
+range.SetType(&type) 
+startDate := 2020-02-25
+range.SetStartDate(&startDate) 
+numberOfOccurrences := int32(2)
+range.SetNumberOfOccurrences(&numberOfOccurrences) 
+recurrence.SetRange(range)
+requestBody.SetRecurrence(recurrence)
+
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

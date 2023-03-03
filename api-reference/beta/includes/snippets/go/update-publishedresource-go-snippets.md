@@ -7,12 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPublishedResource()
+requestBody := graphmodels.NewPublishedResource()
 displayName := "Demo provisioning (updated)"
-requestBody.SetDisplayName(&displayName)
-onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-publishedResourceId := "publishedResource-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResourcesById(&publishedResourceId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResourcesById("publishedResource-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

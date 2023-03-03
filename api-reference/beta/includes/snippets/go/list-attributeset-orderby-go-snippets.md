@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.AttributeSetsRequestBuilderGetQueryParameters{
-	OrderBy: "id",
+requestParameters := &graphconfig.DirectoryAttributeSetsRequestBuilderGetQueryParameters{
+	Orderby: [] string {"id"},
 }
-options := &msgraphsdk.AttributeSetsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DirectoryAttributeSetsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Directory().AttributeSets().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Directory().AttributeSets().Get(context.Background(), configuration)
 
 
 ```

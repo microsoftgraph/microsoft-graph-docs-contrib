@@ -4,7 +4,7 @@ description: "An event attendee. This can be a person or resource such as a meet
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "harini84"
+author: "iamgirishck"
 ---
 
 # attendee resource type

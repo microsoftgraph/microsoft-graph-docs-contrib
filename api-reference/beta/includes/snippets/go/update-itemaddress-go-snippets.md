@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewItemAddress()
-allowedAudiences := "me"
-requestBody.SetAllowedAudiences(&allowedAudiences)
+requestBody := graphmodels.NewItemAddress()
+allowedAudiences := graphmodels.ME_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
 displayName := "Secret Hideout"
-requestBody.SetDisplayName(&displayName)
-userId := "user-id"
-itemAddressId := "itemAddress-id"
-graphClient.UsersById(&userId).Profile().AddressesById(&itemAddressId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.UsersById("user-id").Profile().AddressesById("itemAddress-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

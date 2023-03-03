@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMicrosoftApplicationDataAccessSettings()
+requestBody := graphmodels.NewMicrosoftApplicationDataAccessSettings()
 disabledForGroup := "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
-requestBody.SetDisabledForGroup(&disabledForGroup)
-organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Settings().MicrosoftApplicationDataAccess().Patch(requestBody)
+requestBody.SetDisabledForGroup(&disabledForGroup) 
+
+result, err := graphClient.OrganizationById("organization-id").Settings().MicrosoftApplicationDataAccess().Patch(context.Background(), requestBody, nil)
 
 
 ```

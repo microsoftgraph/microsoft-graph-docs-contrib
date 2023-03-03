@@ -15,6 +15,7 @@ Online meeting artifacts are content produced for the duration of an online meet
   - Available for meetings other than Teams live events
   - Only available when the meeting has concluded
   - Only the meeting organizer can access
+  - Includes guest and federated users that were part of the online meeting
 - Recordings of a Teams live event, in the form of a download link that expires in 60 seconds. Recordings have the following characteristics:
   - Only available for Teams live events
   - Only available when the Teams live event has concluded
@@ -42,4 +43,4 @@ After that date, the _OnlineMeetingArtifact.Read.All_ permissions will be requir
 
 ## See also
 
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)

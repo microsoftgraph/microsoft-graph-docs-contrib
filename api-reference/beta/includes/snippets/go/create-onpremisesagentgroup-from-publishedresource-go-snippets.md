@@ -7,10 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-publishedResourceId := "publishedResource-id"
-onPremisesAgentGroupId := "onPremisesAgentGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResourcesById(&publishedResourceId).AgentGroupsById(&onPremisesAgentGroupId).$ref().Delete()
+
+graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResourcesById("publishedResource-id").AgentGroupsById("onPremisesAgentGroup-id").$ref().Delete(context.Background(), nil)
 
 
 ```

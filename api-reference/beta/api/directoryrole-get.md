@@ -1,7 +1,7 @@
 ---
 title: "Get directoryRole"
 description: "Retrieve the properties of a directoryRole object."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -27,11 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
+
+You can address the directory role using either its **id** or **roleTemplateId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/{role-id}
-GET /directoryRoles/roleTemplateId={roleTemplateId}
+GET /directoryRoles(roleTemplateId='{roleTemplateId}')
 ```
+
 ## Optional query parameters
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
@@ -60,16 +63,13 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26cc85f1830
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26c
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryrole-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-directoryrole-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -112,14 +116,12 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-<!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
-
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_directoryrole_templateId"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b
+```http
+GET https://graph.microsoft.com/beta/directoryRoles(roleTemplateId='88d8e3e3-8f55-4a1e-953a-9b9898b8876b')
 ```
 
 

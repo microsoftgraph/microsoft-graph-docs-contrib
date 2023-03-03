@@ -56,7 +56,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions

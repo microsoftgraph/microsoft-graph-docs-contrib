@@ -4,13 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var isSyncedFromOnPremises = true;
+var result = await graphClient.DirectoryObjects.GetAvailableExtensionProperties.PostAsync(null);
 
-await graphClient.DirectoryObjects
-	.GetAvailableExtensionProperties(isSyncedFromOnPremises)
-	.Request()
-	.PostAsync();
 
 ```

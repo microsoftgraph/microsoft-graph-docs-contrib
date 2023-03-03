@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-plannerTaskId := "plannerTask-id"
-result, err := graphClient.Planner().TasksById(&plannerTaskId).ProgressTaskBoardFormat().Get()
+
+result, err := graphClient.Planner().TasksById("plannerTask-id").ProgressTaskBoardFormat().Get(context.Background(), nil)
 
 
 ```

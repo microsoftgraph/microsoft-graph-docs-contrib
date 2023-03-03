@@ -1,7 +1,7 @@
 ---
 title: "accessReviewQueryScope resource type"
 description: "Defines what needs to be reviewed in an access review."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.accessReviewQueryScope",
   "query": "String",
-  "queryType": "String",
-  "queryRoot": "String"
+  "queryRoot": "String",
+  "queryType": "String"
 }
 ```

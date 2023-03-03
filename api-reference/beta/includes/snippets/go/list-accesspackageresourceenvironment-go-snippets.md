@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.AccessPackageResourceEnvironmentsRequestBuilderGetQueryParameters{
-	Filter: "originSystem%20eq%20'SharePointOnline'",
+
+requestFilter := "originSystem eq 'SharePointOnline'"
+
+requestParameters := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageResourceEnvironmentsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.AccessPackageResourceEnvironmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceEntitlementManagementAccessPackageResourceEnvironmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().Get(context.Background(), configuration)
 
 
 ```

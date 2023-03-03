@@ -64,11 +64,11 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.removehold"
+  "name": "start_ediscoverycustodianthis.removehold"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/removeHold
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/removeHold
 Content-Type: application/json
 
 {
@@ -78,29 +78,28 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverycustodianthisremovehold-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/start-ediscoverycustodianthisremovehold-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverycustodianthisremovehold-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/start-ediscoverycustodianthisremovehold-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/ediscoverycustodianthisremovehold-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/start-ediscoverycustodianthisremovehold-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/ediscoverycustodianthisremovehold-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/start-ediscoverycustodianthisremovehold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverycustodianthisremovehold-powershell-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/start-ediscoverycustodianthisremovehold-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 The following is an example of the response.
@@ -121,35 +120,34 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.removehold"
+  "name": "ediscoverycustodianthis.removehold_single_noncustodial_source"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/39333641443238353535383731453339/removeHold
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/39333641443238353535383731453339/removeHold
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverycustodianthisremovehold-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverycustodianthisremovehold-single-noncustodial-source-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverycustodianthisremovehold-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverycustodianthisremovehold-single-noncustodial-source-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/ediscoverycustodianthisremovehold-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoverycustodianthisremovehold-single-noncustodial-source-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/ediscoverycustodianthisremovehold-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/ediscoverycustodianthisremovehold-single-noncustodial-source-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverycustodianthisremovehold-powershell-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoverycustodianthisremovehold-single-noncustodial-source-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 The following is an example of the response.

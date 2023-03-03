@@ -32,14 +32,16 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/assignmentRequests
 ```
 
-## Optional query parameters
+## Query parameters
 
-This method supports the `$select`, `$expand` and `$filter` OData query parameters to help customize the response.
+This method supports the `$select`, `$expand` and `$filter` OData query parameters to help customize the response.  Not all attributes of an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) are supported for filtering.
+
+If the user or application only has permissions within a specific catalog or catalogs, you must include in the query a filter which specifies an access package, such as `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.
 
 ### Example scenarios for using query parameters
 
+- To retrieve requests created after a specific date, include `$filter=createdDateTime gt 2022-04-01T00:00:01Z` in the query.
 - To retrieve the access package of each request, include `$expand=accessPackage` in the query.
-- To retrieve only requests for a specific access package, include in the query a filter such as `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.
 - To retrieve the resulting assignment, include `$expand=assignment` in the query.
 - To obtain more details on the requestor, include `$expand=requestor` in the query.
 
@@ -71,16 +73,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accesspackageassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-accesspackageassignmentrequest-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-accesspackageassignmentrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -95,9 +94,11 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-accesspackageassignmentrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-accesspackageassignmentrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

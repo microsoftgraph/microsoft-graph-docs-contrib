@@ -39,7 +39,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |justification|String|The requestor's supplied justification.|
 |requestState|String|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `DeliveryFailed`, `Submitted` or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
-|requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd` or `UserRemove`. Read-only.|
+|requestType|String|One of `UserAdd`, `UserExtend`, `UserUpdate`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd`, `UserUpdate` or `UserRemove`. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)| The range of dates that access is to be assigned to the requestor. Read-only.|
 |answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
 

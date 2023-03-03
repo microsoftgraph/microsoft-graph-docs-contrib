@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-printTaskDefinitionId := "printTaskDefinition-id"
-printTaskId := "printTask-id"
-result, err := graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).TasksById(&printTaskId).Get()
+
+result, err := graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").TasksById("printTask-id").Get(context.Background(), nil)
 
 
 ```

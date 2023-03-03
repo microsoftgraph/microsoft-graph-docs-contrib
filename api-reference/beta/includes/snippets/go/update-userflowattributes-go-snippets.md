@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIdentityUserFlowAttribute()
+requestBody := graphmodels.NewIdentityUserFlowAttribute()
 description := "Your new hobby"
-requestBody.SetDescription(&description)
-identityUserFlowAttributeId := "identityUserFlowAttribute-id"
-graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Patch(requestBody)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Identity().UserFlowAttributesById("identityUserFlowAttribute-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 String cancellationMessage = "Your appointment has been successfully cancelled. Please call us again.";
 
-graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").appointments("AAMkADKoAAA=")
+graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").appointments("AAMkADKoAAA=")
 	.cancel(BookingAppointmentCancelParameterSet
 		.newBuilder()
 		.withCancellationMessage(cancellationMessage)

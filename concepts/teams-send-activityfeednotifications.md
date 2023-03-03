@@ -120,19 +120,21 @@ For details about what topics are supported for each scenario, see the specific 
 This example shows how you can send an activity feed notification for a new task created in a chat. In this case, the Teams app must be installed in a chat with Id `chatId` and user `569363e2-4e49-4661-87f2-16f245c5d66a` must be part of the chat as well.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_for_task_created_in_chat"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/chats/{chatId}"
+        "value": "https://graph.microsoft.com/v1.0/chats/{chatId}"
     },
     "activityType": "taskCreated",
     "previewText": {
@@ -151,6 +153,32 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-for-task-created-in-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-for-task-created-in-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-for-task-created-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-for-task-created-in-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-for-task-created-in-chat-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-for-task-created-in-chat-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -166,19 +194,21 @@ HTTP/1.1 204 No Content
 This example shows how you can send an activity feed notification for a team. This example notifies the team owner about a new task created that requires their attention.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_task_created_in_teams"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/teams/{teamId}"
+        "value": "https://graph.microsoft.com/v1.0/teams/{teamId}"
     },
     "activityType": "taskCreated",
     "previewText": {
@@ -196,6 +226,32 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-task-created-in-teams-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-task-created-in-teams-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-task-created-in-teams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-task-created-in-teams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-task-created-in-teams-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-task-created-in-teams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {
@@ -217,13 +273,15 @@ The Yammer notification example shown earlier uses a custom topic because Yammer
 > `webUrl` must start with the Microsoft Teams domain (teams.microsoft.com for example).
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_customer_task"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
 {
@@ -249,6 +307,32 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-customer-task-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-customer-task-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-customer-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-customer-task-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-customer-task-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-customer-task-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -263,17 +347,16 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all team members. This example notifies the team members about a new event. 
 
-> [!NOTE]
-> The ability to send notifications to all team members is currently only available in beta.
-
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_about_event"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
 Content-Type: application/json
 
 {
@@ -293,6 +376,32 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-about-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-about-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-about-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-about-event-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-about-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-about-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -307,17 +416,16 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all channel members. This example notifies the channel members about a new event. 
 
-> [!NOTE]
-> The ability to send notifications to all channel members is currently only available in beta.
-
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_channelmember_about_event"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
 Content-Type: application/json
 
 {
@@ -338,6 +446,32 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-channelmember-about-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-channelmember-about-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-channelmember-about-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-channelmember-about-event-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-channelmember-about-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-channelmember-about-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -352,18 +486,17 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all chat members. This example notifies the chat members about a new event. 
 
-> [!NOTE]
-> The ability to send notifications to all chat members is currently only available in beta.
-
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_chatmember_about_event"
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
 Content-Type: application/json
 
 {
@@ -383,6 +516,32 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-chatmember-about-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-chatmember-about-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-chatmember-about-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-chatmember-about-event-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-chatmember-about-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-chatmember-about-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -397,11 +556,10 @@ HTTP/1.1 204 No Content
 
 The following example shows how to send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
 
-> [!NOTE]
-> The ability to send notifications to multiple users in bulk is currently only available in beta.
-
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamwork_sendactivitynotificationtorecipients"
@@ -409,13 +567,13 @@ The following example shows how to send an activity feed notification to multipl
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/teamwork/sendActivityNotificationToRecipients
+POST https://graph.microsoft.com/v1.0/teamwork/sendActivityNotificationToRecipients
 Content-Type: application/json
 
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+        "value": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}"
     },
     "activityType": "pendingFinanceApprovalRequests",
     "previewText": {
@@ -443,6 +601,32 @@ Content-Type: application/json
     ] 
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamwork-sendactivitynotificationtorecipients-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/teamwork-sendactivitynotificationtorecipients-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/teamwork-sendactivitynotificationtorecipients-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

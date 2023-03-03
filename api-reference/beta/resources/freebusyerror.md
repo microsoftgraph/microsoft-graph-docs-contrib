@@ -4,7 +4,7 @@ description: "Represents error information from attempting to get the availabili
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: calendar
-author: "harini84"
+author: "iamgirishck"
 ---
 
 # freeBusyError resource type

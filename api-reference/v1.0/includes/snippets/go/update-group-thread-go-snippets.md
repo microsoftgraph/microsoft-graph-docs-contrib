@@ -7,17 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewConversationThread()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"originalStartTimeZone": "originalStartTimeZone-value",
-	"originalEndTimeZone": "originalEndTimeZone-value",
-	"iCalUId": "iCalUId-value",
-	"reminderMinutesBeforeStart": ,
-	"isReminderOn": true,
+requestBody := graphmodels.NewConversationThread()
+additionalData := map[string]interface{}{
+	"originalStartTimeZone" : "originalStartTimeZone-value", 
+	"originalEndTimeZone" : "originalEndTimeZone-value", 
+responseStatus := graphmodels.New()
+response := ""
+responseStatus.SetResponse(&response) 
+time := "datetime-value"
+responseStatus.SetTime(&time) 
+	requestBody.SetResponseStatus(responseStatus)
+	"iCalUId" : "iCalUId-value", 
+	"reminderMinutesBeforeStart" : int32(99) , 
+	isReminderOn := true
+requestBody.SetIsReminderOn(&isReminderOn) 
 }
-groupId := "group-id"
-conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

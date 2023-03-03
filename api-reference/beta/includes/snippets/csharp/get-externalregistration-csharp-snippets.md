@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var meetingRegistration = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration
-	.Request()
-	.GetAsync();
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.GetAsync();
+
 
 ```

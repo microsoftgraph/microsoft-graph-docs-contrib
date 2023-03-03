@@ -1,7 +1,7 @@
 ---
 title: "List windowsManagedDevices"
 description: "List properties and relationships of the windowsManagedDevice objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10025
+Content-Length: 10075
 
 {
   "value": [
@@ -257,7 +257,8 @@ Content-Length: 10025
       "configurationManagerClientInformation": {
         "@odata.type": "microsoft.graph.configurationManagerClientInformation",
         "clientIdentifier": "Client Identifier value",
-        "isBlocked": true
+        "isBlocked": true,
+        "clientVersion": "Client Version value"
       },
       "ethernetMacAddress": "Ethernet Mac Address value",
       "physicalMemoryInBytes": 5,
@@ -283,7 +284,3 @@ Content-Length: 10025
   ]
 }
 ```
-
-
-
-

@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.PoliciesRequestBuilderGetQueryParameters{
-	Filter: "displayName%20eq%20'SimplePolicy1'%20or%20displayName%20eq%20'SimplePolicy2'",
+
+requestFilter := "displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'"
+
+requestParameters := &graphconfig.IdentityConditionalAccessPoliciesRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.PoliciesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityConditionalAccessPoliciesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().Policies().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Identity().ConditionalAccess().Policies().Get(context.Background(), configuration)
 
 
 ```

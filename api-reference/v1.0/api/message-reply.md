@@ -1,6 +1,6 @@
 ---
 title: "message: reply"
-description: "Reply to the sender of a message using either JSON or MIME format. "
+description: "Reply to the sender of a message using either JSON or MIME format."
 ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 Reply to the sender of a [message](../resources/message.md) using either JSON or MIME format.
 
 When using JSON format:
-- Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+* Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP `400 Bad Request` error.
+* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 
 When using MIME format:
 - Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
@@ -42,11 +42,13 @@ POST /users/{id | userPrincipalName}/messages/{id}/reply
 POST /me/mailFolders/{id}/messages/{id}/reply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
 | Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
+| Prefer: outlook.timezone | string | Sets the time zone for the `Sent` field of the reply message in HTML that this API creates based on the request body. The value can be any of the [supportedTimeZones](outlookuser-supportedtimezones.md) configured for the user. If not specified, that `Sent` field is in UTC.<br><br> Use this header only if you're specifying the `Content-Type: application/json` header to create the reply message in HTML. If you use the `Content-Type: text/plain` header, this `Prefer` header does not have any effect. Optional.|
 
 ## Request body
 When using JSON format, provide a JSON object in the request body with the following parameters.
@@ -60,15 +62,15 @@ When specifying the body in MIME format, provide the MIME content with the appli
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
-If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
+If the request body includes malformed MIME content, this method returns a `400 Bad Request` error code and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 ### Example 1: Reply in JSON format to an existing message
 The following example includes a comment and adds a recipient to the reply message.
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,16 +102,13 @@ Content-Type: application/json
   "comment": "Samantha, Randi, would you name the group please?" 
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-reply-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-reply-v1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/message-reply-v1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -124,11 +123,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-reply-v1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-reply-v1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-##### Response
-Here is an example of the response.
+#### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -137,9 +139,9 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-### Exaxmple 2: Reply in MIME format to an existing message
-##### Request
-
+### Example 2: Reply in MIME format to an existing message
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "message_reply_mime_v1"
@@ -152,8 +154,8 @@ Content-type: text/plain
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
 ```
 
-##### Response
-Here is an example of the response.
+#### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

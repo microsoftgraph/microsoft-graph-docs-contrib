@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AppConsentRequest appConsentRequest = graphClient.identityGovernance().appConsent().appConsentRequests("af330b30-dd59-4482-a848-0fd81b0438ed")
+AppConsentRequest appConsentRequest = graphClient.identityGovernance().appConsent().appConsentRequests("7322e5f3-0f15-4eb8-9e82-2029e8622f5d")
 	.buildRequest()
 	.get();
 

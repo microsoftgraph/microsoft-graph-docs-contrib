@@ -7,15 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "include-unknown-enum-members"
-}
-options := &msgraphsdk.SubmissionsRequestBuilderGetRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "include-unknown-enum-members")
+
+configuration := &graphconfig.EducationClasseItemAssignmentItemSubmissionsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Submissions().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Submissions().Get(context.Background(), configuration)
 
 
 ```

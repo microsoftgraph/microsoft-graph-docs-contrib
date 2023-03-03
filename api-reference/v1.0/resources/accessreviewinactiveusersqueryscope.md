@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInactiveUsersQueryScope resource type"
 description: "A type of accessReviewQueryScope that allows only inactive users to be selected in the scope of an access review."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -38,9 +38,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+  "inactiveDuration": "String (duration)",
   "query": "String",
-  "queryType": "String",
   "queryRoot": "String",
-  "inactiveDuration": "String (duration)"
+  "queryType": "String"
+  
 }
 ```

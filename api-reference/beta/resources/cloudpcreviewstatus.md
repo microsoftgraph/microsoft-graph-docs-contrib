@@ -20,6 +20,7 @@ Represents details about the review status of a Cloud PC.
 |:---|:---|:---|
 |azureStorageAccountId|String|The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.|
 |azureStorageAccountName|String|The name of the Azure Storage account in which the Cloud PC snapshot is being saved.|
+|azureStorageContainerName|String|The name of the container in an Azure Storage account in which the Cloud PC snapshot is being saved.|
 |inReview|Boolean| `True` if the Cloud PC is set to in review by the administrator.|
 |restorePointDateTime|DateTimeOffset|The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 |reviewStartDateTime|DateTimeOffset|The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
@@ -51,6 +52,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcReviewStatus",
   "azureStorageAccountId": "String",
   "azureStorageAccountName": "String",
+  "azureStorageContainerName": "String",
   "inReview": "Boolean",
   "restorePointDateTime": "String (timestamp)",
   "reviewStartDateTime": "String (timestamp)",

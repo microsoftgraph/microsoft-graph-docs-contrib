@@ -7,21 +7,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UserRequestBuilderGetQueryParameters{
-	Count: true,
-	OrderBy: "displayName",
-	Search: "%22displayName:tier%22",
-	Select: "displayName,id",
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestCount := true
+requestSearch := "\"displayName:tier\""
+
+requestParameters := &graphconfig.GroupItemTransitiveMembersGraph.userRequestBuilderGetQueryParameters{
+	Count: &requestCount,
+	Orderby: [] string {"displayName"},
+	Search: &requestSearch,
+	Select: [] string {"displayName","id"},
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
-}
-options := &msgraphsdk.UserRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+configuration := &graphconfig.GroupItemTransitiveMembersGraph.userRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).TransitiveMembers().User(group-id).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.GroupsById("group-id").TransitiveMembers().GraphUser().Get(context.Background(), configuration)
 
 
 ```

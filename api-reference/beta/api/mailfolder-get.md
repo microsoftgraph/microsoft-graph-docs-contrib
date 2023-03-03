@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a message folder object.
 
-There are two scenarios where an app can get another user's mail folder:
+The following list shows the two existing scenarios where an app can get another user's mail folder:
 
 * If the app has application permissions, or,
-* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. For more details, see [Get Outlook messages in a shared or delegated folder](/graph/outlook-share-messages-folders).
 
 ## Permissions
 
@@ -55,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [mailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Examples
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and [mailFolder](../
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -76,16 +76,13 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -100,8 +97,11 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-mailfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-mailfolder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 <!-- markdownlint-disable MD024 -->
 
@@ -137,29 +137,26 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkAGVmMDEzM"],
+  "sampleKeys": ["AAMkAGVmMDEzN"],
   "name": "get_mailSearchfolder"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailsearchfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -174,8 +171,11 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-mailsearchfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-mailsearchfolder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

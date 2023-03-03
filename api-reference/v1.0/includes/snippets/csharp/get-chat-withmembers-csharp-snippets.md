@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var chat = await graphClient.Chats["{chat-id}"]
-	.Request()
-	.Expand("members")
-	.GetAsync();
+var result = await graphClient.Chats["{chat-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "members" };
+});
+
 
 ```

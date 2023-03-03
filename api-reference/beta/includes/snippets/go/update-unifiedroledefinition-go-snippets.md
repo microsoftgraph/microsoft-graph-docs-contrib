@@ -7,21 +7,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUnifiedRoleDefinition()
+requestBody := graphmodels.NewUnifiedRoleDefinition()
 description := "Update basic properties of application registrations"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 displayName := "Application Registration Support Administrator"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetRolePermissions( []UnifiedRolePermission {
-	msgraphsdk.NewUnifiedRolePermission(),
-	SetAdditionalData(map[string]interface{}{
-		"allowedResourceActions":  []String {
-			"microsoft.directory/applications/basic/read",
-		}
-	}
+requestBody.SetDisplayName(&displayName) 
+
+
+unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
+allowedResourceActions := []string {
+	"microsoft.directory/applications/basic/read",
+
 }
-unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(requestBody)
+unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
+
+rolePermissions := []graphmodels.UnifiedRolePermissionable {
+	unifiedRolePermission,
+
+}
+requestBody.SetRolePermissions(rolePermissions)
+
+result, err := graphClient.RoleManagement().Directory().RoleDefinitionsById("unifiedRoleDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

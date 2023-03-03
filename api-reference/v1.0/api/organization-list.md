@@ -2,7 +2,7 @@
 title: "List organization"
 description: "Retrieve a list of organization objects."
 ms.localizationpriority: medium
-author: "KuiGithui"
+author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -55,16 +55,13 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organization-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -77,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/organization
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-organization-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-organization-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -107,11 +108,13 @@ Content-type: application/json
             "country": null,
             "countryLetterCode": "NL",
             "createdDateTime": "2021-08-02T10:30:06Z",
+            "defaultUsageLocation": "String",
             "displayName": "Contoso",
             "isMultipleDataLocationsForServicesEnabled": null,
             "marketingNotificationEmails": [],
             "onPremisesLastSyncDateTime": null,
             "onPremisesSyncEnabled": null,
+            "partnerTenantType": "ResellerPartnerDelegatedAdmin",
             "postalCode": null,
             "preferredLanguage": "en",
             "securityComplianceNotificationMails": [],

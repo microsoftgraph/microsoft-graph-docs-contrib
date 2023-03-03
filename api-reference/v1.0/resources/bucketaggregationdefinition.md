@@ -2,7 +2,7 @@
 title: "bucketAggregationDefinition resource type"
 description: "Provides the details on how to generate the agregations in the results"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
@@ -38,11 +38,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "sortBy": "String",
   "isDescending": true,
-  "prefixFilter": "String",
   "minimumCount": 1024,
-  "ranges": [{"@odata.type": "microsoft.graph.bucketAggregationRange"}]
+  "prefixFilter": "String",
+  "ranges": [{"@odata.type": "microsoft.graph.bucketAggregationRange"}],
+  "sortBy": "String"
 }
 ```
 

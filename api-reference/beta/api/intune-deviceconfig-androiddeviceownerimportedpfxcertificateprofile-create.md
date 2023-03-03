@@ -1,7 +1,7 @@
 ---
 title: "Create androidDeviceOwnerImportedPFXCertificateProfile"
 description: "Create a new androidDeviceOwnerImportedPFXCertificateProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [androidDeviceOwnerImportedPFXCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -67,6 +67,8 @@ The following table shows the properties that are required when you create the a
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Inherited from [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md). Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |intendedPurpose|[intendedPurpose](../resources/intune-deviceconfig-intendedpurpose.md)|Intended Purpose of the Certificate Profile - which could be Unassigned, SmimeEncryption, SmimeSigning etc. Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|certificateAccessType|[androidDeviceOwnerCertificateAccessType](../resources/intune-deviceconfig-androiddeviceownercertificateaccesstype.md)|Certificate access type. Possible values are: `userApproval`, `specificApps`, `unknownFutureValue`.|
+|silentCertificateAccessDetails|[androidDeviceOwnerSilentCertificateAccess](../resources/intune-deviceconfig-androiddeviceownersilentcertificateaccess.md) collection|Certificate access information. This collection can contain a maximum of 50 elements.|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1503
+Content-length: 1728
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerImportedPFXCertificateProfile",
@@ -124,7 +126,14 @@ Content-length: 1503
     }
   ],
   "subjectAlternativeNameType": "emailAddress",
-  "intendedPurpose": "smimeEncryption"
+  "intendedPurpose": "smimeEncryption",
+  "certificateAccessType": "specificApps",
+  "silentCertificateAccessDetails": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+      "packageId": "Package Id value"
+    }
+  ]
 }
 ```
 
@@ -133,7 +142,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1675
+Content-Length: 1900
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerImportedPFXCertificateProfile",
@@ -180,10 +189,13 @@ Content-Length: 1675
     }
   ],
   "subjectAlternativeNameType": "emailAddress",
-  "intendedPurpose": "smimeEncryption"
+  "intendedPurpose": "smimeEncryption",
+  "certificateAccessType": "specificApps",
+  "silentCertificateAccessDetails": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+      "packageId": "Package Id value"
+    }
+  ]
 }
 ```
-
-
-
-

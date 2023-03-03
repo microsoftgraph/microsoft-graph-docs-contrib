@@ -98,7 +98,7 @@ The CSV file has the following headers for columns:
 - Report Period
 
 > [!NOTE] 
-> The values in the Meetings Organized Count might not be the sum of the Ad Hoc Meetings Organized Count, Scheduled One-time Meetings Organized Count, and Scheduled Recurring Meetings Organized Count that a user organized during the specified time period. This is because the Unclassified meetings value is not inlcuded in the output CSV file. For details, see [Microsoft Teams user activity report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/user-activity-report).
+> The values in the Meetings Organized Count might not be the sum of the Ad Hoc Meetings Organized Count, Scheduled One-time Meetings Organized Count, and Scheduled Recurring Meetings Organized Count that a user organized during the specified time period. This is because the Unclassified meetings value is not included in the output CSV file. For details, see [Microsoft Teams user activity report](/microsoftteams/teams-analytics-and-reports/user-activity-report).
 
 ## Example
 
@@ -112,7 +112,7 @@ The following is an example of the request.
   "name": "reportroot_getteamsuseractivityuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(period='D7')
 ```
 
@@ -154,4 +154,3 @@ Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User
   "suppressions": [
   ]
 }-->
-

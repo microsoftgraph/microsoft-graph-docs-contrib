@@ -21,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
+| Delegated (personal Microsoft account) |Not supported.|
+| Application |Not supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -32,8 +34,6 @@ DELETE /education/synchronizationProfiles/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -41,8 +41,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `202 Accepted` response code and no response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -52,16 +52,13 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationprofile-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationprofile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -76,11 +73,14 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-synchronizationprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-synchronizationprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-##### Response
-Here is an example of the response.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

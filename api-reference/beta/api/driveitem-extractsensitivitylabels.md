@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. In case of failure to extract the sensitivity labels of a file, an extraction error will be thrown with the applicable error code and message.
 
+For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
+
 > **Note**: This API is applicable only for supported file extensions. When called, this API first retrieves the sensitivity label metadata of the file from the database, then it checks to determine whether the sensitivity label details are the latest in terms of file content. If yes, the retrieved values from the database are returned. If no, then sensitivity labels are extracted from the content stream of the file, the corresponding metadata is updated in the database, and the newly extracted values are returned.
 
 ## Permissions
@@ -21,8 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)                                                             |
 |:--------------------------------------|:--------------------------------------------------------------------------------------------------------|
-|Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                        |
+|Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                |
+|Delegated (personal Microsoft account) | Not supported.                                                                                          |
 |Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                |
 
 ## HTTP request
@@ -74,21 +76,16 @@ The following is an example of a request.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "extract-sensitivitylabels", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "extract-sensitivitylabels", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
 ``` http
 POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/extractSensitivityLabels
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/extract-sensitivitylabels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/extract-sensitivitylabels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
 
 ### Response
 

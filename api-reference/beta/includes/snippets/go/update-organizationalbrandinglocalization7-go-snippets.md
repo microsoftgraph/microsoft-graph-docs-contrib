@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewOrganizationalBrandingLocalization()
+requestBody := graphmodels.NewOrganizationalBrandingLocalization()
 signInPageText := "Welcome to Contoso France."
-requestBody.SetSignInPageText(&signInPageText)
+requestBody.SetSignInPageText(&signInPageText) 
 usernameHintText := " "
-requestBody.SetUsernameHintText(&usernameHintText)
-organizationId := "organization-id"
-organizationalBrandingLocalizationId := "organizationalBrandingLocalization-id"
-graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(requestBody)
+requestBody.SetUsernameHintText(&usernameHintText) 
+
+result, err := graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

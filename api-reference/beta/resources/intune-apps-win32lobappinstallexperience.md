@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppInstallExperience resource type"
 description: "Contains installation experience properties for a Win32 App"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Contains installation experience properties for a Win32 App
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Indicates the type of execution context the app runs in. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context the app runs in. Possible values are: `system`, `user`.|
 |deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Device restart behavior. Possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
 
 ## Relationships
@@ -40,7 +40,3 @@ Here is a JSON representation of the resource.
   "deviceRestartBehavior": "String"
 }
 ```
-
-
-
-
