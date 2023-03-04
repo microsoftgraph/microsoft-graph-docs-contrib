@@ -385,7 +385,7 @@ items:
               - name: Get links to assignments and submissions
                 href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
-                href: update-assignment-and-grade-data.md               
+                href: update-assignment-and-grade-data.md           
               - name: Download all resources from a set of assignments
                 href: download-resources-from-assignment.md
               - name: Share assignments with an embedded Teams application

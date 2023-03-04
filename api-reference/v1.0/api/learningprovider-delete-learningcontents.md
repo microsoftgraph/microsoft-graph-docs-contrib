@@ -1,6 +1,6 @@
 ---
 title: "Delete learningContent"
-description: "Delete a learningContent object."
+description: "Delete the specified learningContent resource that represents the metadata of the specified provider's ingested content."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -8,9 +8,8 @@ doc_type: apiPageType
 ---
 
 # Delete learningContent
-Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph
 
 Delete the specified [learningContent](../resources/learningcontent.md) resource that represents the metadata of the specified provider's ingested content.
 
@@ -31,21 +30,25 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 For a specific learning content based on its ID (primary key):
+
 ``` http
 DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}/$ref
 ```
 
 For a specific learning content based on its external ID (secondary key):
+
 ``` http
 DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')/$ref
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -69,11 +72,13 @@ The following example shows the request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678/$ref
+DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678/$ref
 ```
 
 #### Response
+
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -88,6 +93,7 @@ HTTP/1.1 204 No Content
 The following example shows a request that deletes a learning content resource based on its external ID (secondary key).
 
 #### Request
+
 The following example shows the request.
 
 <!-- {
@@ -97,11 +103,13 @@ The following example shows the request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='27rg2ifb28gf28')/$ref
+DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='27rg2ifb28gf28')/$ref
 ```
 
 #### Response
+
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
