@@ -22,8 +22,8 @@ Represents a method of shipment in Dynamics 365 Business Central, such as UPS, F
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get shipmentMethods](../api/dynamics-shipmentmethods-get.md)|[shipmentMethods](dynamics-shipmentmethods.md)|Get a shipment method.|
-|[Post shipmentMethods](../api/dynamics-create-shipmentmethods.md)|[shipmentMethods](dynamics-shipmentmethods.md)|Create a shipment method.|
-|[Patch shipmentMethods](../api/dynamics-shipmentmethods-update.md)|[shipmentMethods](dynamics-shipmentmethods.md)|Update a shipment method.|
+|[Create shipmentMethods](../api/dynamics-create-shipmentmethods.md)|[shipmentMethods](dynamics-shipmentmethods.md)|Create a shipment method.|
+|[Update shipmentMethods](../api/dynamics-shipmentmethods-update.md)|[shipmentMethods](dynamics-shipmentmethods.md)|Update a shipment method.|
 |[Delete shipmentMethods](../api/dynamics-shipmentmethods-delete.md)|None|Delete a shipment method.|
 
 ## Properties
