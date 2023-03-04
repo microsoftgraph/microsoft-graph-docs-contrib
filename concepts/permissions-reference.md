@@ -940,8 +940,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _LearningContent.Read.All_ |    Read learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
-| _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningContent.Read.All_ |    Read all learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningContent.ReadWrite.All_  |    Manage all learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
 
 
 ---
