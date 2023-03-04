@@ -385,7 +385,7 @@ items:
               - name: Get links to assignments and submissions
                 href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
-                href: update-assignment-and-grade-data.md               
+                href: update-assignment-and-grade-data.md           
               - name: Download all resources from a set of assignments
                 href: download-resources-from-assignment.md
               - name: Share assignments with an embedded Teams application
@@ -565,6 +565,8 @@ items:
             href: item-insights-overview.md
           - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
+          - name: Enable or disable pronouns (preview)
+            href: pronouns-configure-pronouns-availability.md
       - name: Personal contacts
         items:
           - name: Overview
@@ -710,7 +712,7 @@ items:
                 href: teams-create-group-and-team.md
               - name: List all teams
                 href: teams-list-all-teams.md
-          - name: Licensing and payment models
+          - name: Payment models and licensing requirements
             href: teams-licenses.md
           - name: Protected APIs
             href: teams-protected-apis.md

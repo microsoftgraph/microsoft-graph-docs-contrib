@@ -100,7 +100,6 @@ Content-Length: 24
 
 ---
 
-
 ##### Response
 
 <!-- {
@@ -208,7 +207,6 @@ Content-Length: 24
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 <!-- {
