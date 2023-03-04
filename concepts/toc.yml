@@ -590,26 +590,28 @@ items:
           - name: Overview
             href: search-concept-overview.md
             displayName: search
-          - name: Search messages
-            href: search-concept-messages.md
-          - name: Search Teams messages
-            href: search-concept-chat-messages.md
-          - name: Search events
-            href: search-concept-events.md
-          - name: Search content in OneDrive and SharePoint
-            href: search-concept-files.md
-          - name: Search connectors
-            href: search-concept-custom-types.md
-          - name: Search people
-            href: search-concept-person.md
           - name: Search acronyms
             href: search-concept-acronym.md
           - name: Search bookmarks
-            href: search-concept-bookmark.md
-          - name: Search qnas
-            href: search-concept-qna.md
+            href: search-concept-bookmark.md 
+          - name: Search connectors
+            href: search-concept-custom-types.md
+          - name: Search content in OneDrive and SharePoint
+            href: search-concept-files.md
           - name: Search with application permissions
             href: search-concept-searchall.md
+          - name: Search multiple entity types
+            href: search-concept-interleaving.md
+          - name: Search Outlook events
+            href: search-concept-events.md
+          - name: Search Outlook messages
+            href: search-concept-messages.md
+          - name: Search people
+            href: search-concept-person.md
+          - name: Search qnas
+            href: search-concept-qna.md
+          - name: Search Teams messages
+            href: search-concept-chat-messages.md
           - name: Manage admin search answers (preview)
             href: search-concept-answers.md
           - name: Manage search results layout
@@ -626,8 +628,6 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
-          - name: Search interleaving results
-            href: search-concept-interleaving.md
       - name: Security
         items:
           - name: Overview
