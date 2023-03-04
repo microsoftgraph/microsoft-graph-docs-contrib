@@ -8840,16 +8840,8 @@ items:
           - name: User experience analytics device timeline event
             href: resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
             items:
-            - name: List
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
             - name: Get
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md
-            - name: Create
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-create.md
-            - name: Delete
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-delete.md
-            - name: Update
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-update.md
+              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md            
           - name: User experience analytics device without cloud identity
             href: resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md
             items:
