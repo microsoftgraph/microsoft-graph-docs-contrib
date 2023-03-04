@@ -9,8 +9,6 @@ doc_type: conceptualPageType
 
 # Use the employee learning API to integrate with Viva Learning
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Viva Learning is a centralized employee learning hub in Microsoft Teams that lets employees integrate learning and building skills into their work day. In Viva Learning, teams can discover, share, recommend, and learn from content libraries provided by both their organization and partners. They can quickly access assigned or recently completed learning content, and do all of this without leaving Microsoft Teams.
 
 The employee learning API in Microsoft Graph enables apps to make content from a learning management system (LMS) or learning provider available in Viva Learning. Use the following resources to integrate with Viva Learning:
