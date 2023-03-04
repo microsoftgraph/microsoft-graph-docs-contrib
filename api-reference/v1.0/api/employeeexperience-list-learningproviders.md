@@ -1,6 +1,6 @@
 ---
 title: "List learningProviders"
-description: "Get a list of the learningProvider objects and their properties."
+description: "Get a list of the learningProvider resources registered in Viva Learning for a tenant."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ---
 
 # List learningProviders
-Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph
 
 Get a list of the [learningProvider](../resources/learningprovider.md) resources registered in Viva Learning for a tenant.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,14 +34,17 @@ GET /employeeExperience/learningProviders
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -51,58 +54,35 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
 
-# [HTTP](#tab/http)
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "list_learningprovider"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/learningProviders
+GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-learningprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-learningprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-learningprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-learningprovider-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-learningprovider-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
 ### Response
+
 The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.learningProvider",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.learningProvider)"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#learningProviders",
     "value": [
         {
             "id": "ba9790ef-21d5-4c17-808c-acda55230253",
@@ -125,4 +105,3 @@ Content-type: application/json
     ]
 }
 ```
-
