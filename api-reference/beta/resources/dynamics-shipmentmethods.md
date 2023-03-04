@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
 {
   "code": "String",
   "displayName": "String",
-  "id": "String",
+  "id": "String (identifier)",
   "lastModifiedDateTime": "Datetime"
 }
 ```
