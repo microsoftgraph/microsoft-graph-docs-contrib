@@ -155,6 +155,12 @@ Threat indicators sent via the Microsoft Graph security API are available today 
 
 Support in other Microsoft security services will be available soon.
 
+## Threat Intelligence (preview)
+
+Microsoft Defender Threat Intelligence (MDTI) delivers world-class threat intelligence to help protect your organization from modern cyber threats. Using MDTI you can identify adversaries and their operations, accelerate detection and remediation, and enhance your security investments and workflows.
+
+MDTI APIs (Preview) allow you to operationalize intelligence found within the user interface. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including IoCs and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
+
 ## Threat submission
 
 The Microsoft Graph threat submission API helps organizations to submit a threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft checks the submission against the organizational policies in effect and sends it to human graders for analysis. The result then helps tenant administrators understand the threat scanning verdict and adjust their organizational policy. Admins can also use the results to report legitimate emails to prevent them from getting blocked.
@@ -200,6 +206,17 @@ The following are some of the most popular requests for working with the Microso
 |Submit TI Indicators|[Submit tiIndicators](../api/tiindicator-submittiindicators.md)| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
 |Update TI Indicators|[Update tiIndicator](../api/tiindicator-update.md) </br>[Update multiple tiIndicators](../api/tiindicator-updatetiindicators.md)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) </br>[https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/updateTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Delete TI Indicators|[Delete tiIndicator](../api/tiindicator-delete.md) </br>[Delete multiple tiIndicators](../api/tiindicator-deletetiindicators.md) </br>[Delete tiIndicator by externalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)| DELETE </br>[https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) </br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)</br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicatorsByExternalId](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicatorsByExternalId&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Threat Intelligence** |||
+| Get Host Details | | |
+| Get Article | | https://graph.microsoft.com/beta/security/threatIntelligence/articles/{id} |
+| List Articles | |https://graph.microsoft.com/beta/security/threatIntelligence/articles |
+| Get Article Indicator | | |
+| Get Intel Profile | | https://graph.microsoft.com/beta/security/threatIntelligence/threatIntel/{id} |
+| List Intel Profiles | | https://graph.microsoft.com/beta/security/threatIntelligence/threatIntel |
+| Get Intel Profile Indicator | | |
+| Get Host Component | | |
+| Get Host Cookie | | |
+| Get Host Tracker | | |
 | **Threat submission**|||
 |Get email threat submission|[Get emailThreat](../api/security-emailthreatsubmission-get.md)| [https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreats/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |List email threat submissions | [List emailThreats](../api/security-emailthreatsubmission-list.md) | [https://graph.microsoft.com/beta/threatSubmission/emailThreats](https://developer.microsoft.com/graph/graph-explorer?request=threatSubmission/emailThreats&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Hostname or IP Address which is (or has been) addressible over the internet
+Represents an Hostname or IP Address which is (or has been) addressible over the internet.
 
 This is an abstract type. Implementations of this type include:
 * [microsoft.graph.security.hostname](../resources/security-hostname.md)
