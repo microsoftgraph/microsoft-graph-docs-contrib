@@ -607,7 +607,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-02-23T17:51:20.2849381Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -729,7 +729,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-26T03:28:35.6530846Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1075,7 +1075,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-01-21T05:00:51.2098683Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1157,7 +1157,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-04T17:32:27.4508092Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1295,7 +1295,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-12-27T19:38:22.6051064Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1361,7 +1361,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-10-26T21:12:54.2274365Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1643,7 +1643,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-10-24T16:00:37.4721718Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1789,7 +1789,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-09-23T16:37:09.541616Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2143,7 +2143,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-09-20T03:44:24.4116858Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2401,7 +2401,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-17T14:56:13.6840353Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2763,7 +2763,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-17T15:18:01.980486Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2813,7 +2813,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-07-25T18:53:32.7807195Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -3119,7 +3119,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-25T16:04:20.7470831Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -3145,7 +3145,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-22T00:01:01.1312062Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -3307,7 +3307,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-06-21T22:22:25.0486576Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -3693,7 +3693,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-05-23T19:55:40.7681825Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -4327,7 +4327,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-04-25T16:31:12.488884Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -4601,7 +4601,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-03-21T19:31:11.5427286Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -8837,7 +8837,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": " Corporate management"
     },
     {
@@ -9015,7 +9015,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-16T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -9245,7 +9245,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -9447,7 +9447,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -9491,7 +9491,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -9869,7 +9869,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -9911,7 +9911,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -9971,7 +9971,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -10205,7 +10205,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -10271,7 +10271,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -10489,7 +10489,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -10635,7 +10635,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -10933,7 +10933,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -10959,7 +10959,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -11033,7 +11033,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -11219,7 +11219,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -11261,7 +11261,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -11287,7 +11287,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -11505,7 +11505,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -11723,7 +11723,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -11901,7 +11901,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -12135,7 +12135,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -12321,7 +12321,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -12555,7 +12555,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -12813,7 +12813,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -13311,7 +13311,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -13761,7 +13761,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -13779,7 +13779,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14061,7 +14061,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14279,7 +14279,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14513,7 +14513,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14827,7 +14827,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15037,7 +15037,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15111,7 +15111,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15345,7 +15345,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15483,7 +15483,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15653,7 +15653,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15935,7 +15935,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15961,7 +15961,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-10-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16275,7 +16275,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16293,7 +16293,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16383,7 +16383,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16707,7 +16707,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16741,7 +16741,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -17111,7 +17111,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -17493,7 +17493,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -17543,7 +17543,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -18027,7 +18027,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -18069,7 +18069,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -18303,7 +18303,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-02-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -18745,7 +18745,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -19003,7 +19003,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-12-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -19373,7 +19373,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-11-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -19857,7 +19857,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-10-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -20163,7 +20163,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -20349,7 +20349,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -20543,7 +20543,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-07-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -20947,7 +20947,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -21449,7 +21449,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -21819,7 +21819,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -22517,7 +22517,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -22791,7 +22791,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-02-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -22945,7 +22945,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -22963,7 +22963,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-12-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
