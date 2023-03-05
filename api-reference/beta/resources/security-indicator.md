@@ -1,9 +1,9 @@
 ---
 title: "indicator resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ This is an abstract type.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|**TODO: Add Description**|
-|source|microsoft.graph.security.indicatorSource|**TODO: Add Description**.The possible values are: `mdti`, `osint`, `public`, `unknownFutureValue`.|
+|source|microsoft.graph.security.indicatorSource|**TODO: Add Description**.The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
