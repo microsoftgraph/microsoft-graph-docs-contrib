@@ -1,18 +1,18 @@
 ---
-title: "Get host"
-description: "Read the properties and relationships of a microsoft.graph.security.host object."
+title: "Get articleIndicator"
+description: "Read the properties and relationships of a microsoft.graph.security.articleIndicator object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get host
+# Get articleIndicator
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object.
+Read the properties and relationships of a [microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/threatIntelligence/hosts/{hostId}
+GET /security/threatIntelligence/articleIndicators/{articleIndicatorId}
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.host](../resources/security-host.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) object in the response body.
 
 ## Examples
 
@@ -54,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_host"
+  "name": "get_articleindicator"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/{hostId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/articleIndicators/{articleIndicatorId}
 ```
 
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.host"
+  "@odata.type": "microsoft.graph.security.articleIndicator"
 }
 -->
 ``` http
@@ -77,10 +77,9 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.host",
-    "id": "String",
-    "firstSeenDateTime": "String (timestamp)",
-    "lastSeenDateTime": "String (timestamp)"
+    "@odata.type": "#microsoft.graph.security.articleIndicator",
+    "id": "0b3f0361-0440-9f5d-f834-339d4cc532b8",
+    "source": "String"
   }
 }
 ```

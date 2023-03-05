@@ -78,7 +78,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.host",
-    "id": "String",
+    "id": "150f0a1d-16bc-acc6-2f67-f731a4aa2da2",
     "firstSeenDateTime": "String (timestamp)",
     "lastSeenDateTime": "String (timestamp)"
   }

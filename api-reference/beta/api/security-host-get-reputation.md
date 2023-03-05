@@ -1,18 +1,17 @@
 ---
-title: "Get host"
-description: "Read the properties and relationships of a microsoft.graph.security.host object."
+title: "Get hostReputation"
+description: "Get the hostReputation resources from the reputation navigation property."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
-doc_type: apiPageType
 ---
 
-# Get host
+# Get hostReputation
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object.
+Get the hostReputation resources from the reputation navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/threatIntelligence/hosts/{hostId}
+GET /security/threatIntelligence/hosts/{hostId}/reputation
 ```
 
 ## Optional query parameters
@@ -46,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.host](../resources/security-host.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [hostReputation](../resources/hostreputation.md) objects in the response body.
 
 ## Examples
 
@@ -54,11 +53,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_host"
+  "name": "list_hostreputation"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/{hostId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/{hostId}/reputation
 ```
 
 
@@ -68,7 +67,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.host"
+  "@odata.type": "Collection(microsoft.graph.security.hostReputation)"
 }
 -->
 ``` http
@@ -76,12 +75,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.host",
-    "id": "String",
-    "firstSeenDateTime": "String (timestamp)",
-    "lastSeenDateTime": "String (timestamp)"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.hostReputation",
+      "id": "1e3b9ded-abb6-1828-c4ef-a5ca48b287a0",
+      "classification": "String",
+      "score": "Integer",
+      "rules": [
+        {
+          "@odata.type": "microsoft.graph.security.hostReputationRule"
+        }
+      ]
+    }
+  ]
 }
 ```
 

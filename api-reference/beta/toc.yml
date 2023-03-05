@@ -15695,11 +15695,22 @@ items:
           href: api/tiindicator-deletetiindicators.md
         - name: Delete multiple by external ID
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
-      - name: Threat Intelligence
+      - name: Threat Intelligence (preview)
         href: resources/security-threatintelligence.md
         items:
+          - name: Article
+            items:
+              name: Article
+              href: resources/security-article.md
           - name: Host
-            href: resources/security-host.md
+            items:
+              name: Host
+              href: resources/security-host.md
+          - name: HostReputation
+            items: 
+              name: HostReputation
+              href: resources/security-hostreputation.md
+          
       - name: Threat submission (preview)
         href: resources/security-threatsubmission.md
         items:

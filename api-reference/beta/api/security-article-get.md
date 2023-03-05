@@ -1,18 +1,18 @@
 ---
-title: "Get host"
-description: "Read the properties and relationships of a microsoft.graph.security.host object."
+title: "Get article"
+description: "Read the properties and relationships of a microsoft.graph.security.article object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get host
+# Get article
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object.
+Read the properties and relationships of a [microsoft.graph.security.article](../resources/security-article.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/threatIntelligence/hosts/{hostId}
+GET /security/threatIntelligence/articles/{articleId}
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.host](../resources/security-host.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.article](../resources/security-article.md) object in the response body.
 
 ## Examples
 
@@ -54,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_host"
+  "name": "get_article"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/{hostId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/{articleId}
 ```
 
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.host"
+  "@odata.type": "microsoft.graph.security.article"
 }
 -->
 ``` http
@@ -77,10 +77,22 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.host",
+    "@odata.type": "#microsoft.graph.security.article",
     "id": "String",
-    "firstSeenDateTime": "String (timestamp)",
-    "lastSeenDateTime": "String (timestamp)"
+    "createdDateTime": "String (timestamp)",
+    "lastUpdatedDateTime": "String (timestamp)",
+    "title": "String",
+    "summary": {
+      "@odata.type": "microsoft.graph.security.formattedContent"
+    },
+    "featured": "Boolean",
+    "body": {
+      "@odata.type": "microsoft.graph.security.formattedContent"
+    },
+    "tags": [
+      "String"
+    ],
+    "imageUrl": "String"
   }
 }
 ```
