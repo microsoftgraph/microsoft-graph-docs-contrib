@@ -15751,7 +15751,7 @@ items:
         - name: Passive DNS Record
           items:
           - name: Passive DNS Record
-            href: resources/security-passivedns.md
+            href: resources/security-passivednsrecord.md
         - name: Vulnerability
           items:
           - name: CVSS Summary
