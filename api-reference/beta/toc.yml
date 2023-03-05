@@ -15702,14 +15702,66 @@ items:
           items:
           - name: Article
             href: resources/security-article.md
+          - name: Formatted Content
+            href: resources/security-formattedcontent.md
+        - name: Article Indicator
+        - name: Artifact
         - name: Host
           items:
+          - name: Autonomous System
+            href: resources/security-autonomoussystem.md
           - name: Host
-            href: resources/security-host.md
-        - name: HostReputation
-          items: 
-          - name: HostReputation
-            href: resources/security-hostreputation.md
+            items:
+            - name: Host
+              href: resources/security-host.md
+            - name: Hostname
+              href: resources/security-hostname.md
+            - name: IP Address
+              href: resources/security-ipaddress.md
+          - name: Host Cookie
+            items:
+            - name: Host Cookie
+              href: resources/security-hostcookie.md
+          - name: Host Cookie
+            items:
+            - name: Host Cookie
+              href: resources/security-hostcookie.md
+          - name: Host Component
+            items:
+            - name: Host Component
+              href: resources/security-hostcomponent.md
+          - name: Host Reputation
+            items: 
+            - name: HostReputation
+              href: resources/security-hostreputation.md
+            - name: Host Reputation Rule
+              href: resources/security-hostreputationrule.md
+          - name: Host Tracker
+            items:
+            - name: Host Tracker
+              href: resources/security-hosttracker.md
+        - name: Intelligence Profile (Intel Profile)
+          items:
+          - name: Intelligence Profile
+            href: resources/security-intelligenceprofile.md
+          - name: Intelligence Profile Indicator
+            href: resources/security-intelligenceprofileindicator.md
+          - name: Intelligence Profile Sponsor State
+            href: resources/security-intelligenceprofilesponsorstate.md
+        - name: Passive DNS Record
+          items:
+          - name: Passive DNS Record
+            href: resources/security-passivedns.md
+        - name: Vulnerability
+          items:
+          - name: CVSS Summary
+            href: resources/security-cvsssummary.md
+          - name: Hyperlink
+            href: resources/security-hyperlink.md
+          - name: Vulnerability
+            href: resources/security-vulnerability.md
+          - name: Vulnerability Componet
+            href: resources/security-vulnerabilitycomponent.md
       - name: Threat submission (preview)
         href: resources/security-threatsubmission.md
         items:
