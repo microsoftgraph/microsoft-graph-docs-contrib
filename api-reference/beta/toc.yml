@@ -15698,19 +15698,18 @@ items:
       - name: Threat Intelligence (preview)
         href: resources/security-threatintelligence.md
         items:
+        - name: Article
+          items:
           - name: Article
-            items:
-              name: Article
-              href: resources/security-article.md
+            href: resources/security-article.md
+        - name: Host
+          items:
           - name: Host
-            items:
-              name: Host
-              href: resources/security-host.md
+            href: resources/security-host.md
+        - name: HostReputation
+          items: 
           - name: HostReputation
-            items: 
-              name: HostReputation
-              href: resources/security-hostreputation.md
-          
+            href: resources/security-hostreputation.md
       - name: Threat submission (preview)
         href: resources/security-threatsubmission.md
         items:
