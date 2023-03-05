@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [articleIndicator](../resources/articleindicator.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) objects in the response body.
 
 ## Examples
 
