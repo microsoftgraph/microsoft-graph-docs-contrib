@@ -101,7 +101,7 @@
       "CreatedDateTime": "2023-02-27:00:00.8027648Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -219,7 +219,7 @@
       "CreatedDateTime": "2023-01-25T22:29:56.4129094Z",
       "WorkloadArea": "Application",
       "SubArea": ""
-     },	  
+     },
      {
       "ChangeList": [
         {
@@ -245,7 +245,7 @@
       "CreatedDateTime": "2022-11-09T21:02:17.1897204Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -311,7 +311,7 @@
       "CreatedDateTime": "2023-01-26T00:00:00.3287778Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
-    },   
+    },
     {
       "ChangeList": [
         {
@@ -442,7 +442,7 @@
     },
     {
       "ChangeList": [
-        { 
+        {
           "Id": "4bf37336-391f-4ce3-909b-03314160aade",
           "ApiChange": "Method",
           "ChangedApiName": "members",
@@ -516,7 +516,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
-    
+
     {
       "ChangeList": [
         {
@@ -635,7 +635,7 @@
     },
     {
       "ChangeList": [
-        { 
+        {
           "Id": "b5a1875e-c52b-44f0-be4c-7a316c68335d",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
@@ -643,7 +643,7 @@
           "Description": "Added the [PATCH](https://learn.microsoft.com/graph/api/emailauthenticationmethod-update) operation to the [emailAuthenticationMethod](https://learn.microsoft.com/graph/api/resources/emailauthenticationmethod) resource, allowing the updating of email addresses used for authentication.",
           "Target": "emailAuthenticationMethod"
         },
-        { 
+        {
           "Id": "b5a1875e-c52b-44f0-be4c-7a316c68335d",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
@@ -772,7 +772,7 @@
       "CreatedDateTime": "2022-11-18T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-    }, 	   
+    },
     {
       "ChangeList": [
         {
@@ -982,7 +982,7 @@
       "CreatedDateTime": "2022-08-26T16:03:39.5633059Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
-    }, 	  
+    },
     {
       "ChangeList": [
         {
@@ -1378,7 +1378,7 @@
       "CreatedDateTime": "2022-06-06T00:00:00",
       "WorkloadArea": "Identity and access ",
       "SubArea": " Identity and sign-in"
-    }, 	  
+    },
     {
       "ChangeList": [
         {
@@ -1506,7 +1506,7 @@
       "CreatedDateTime": "2022-08-29T01:05:45.1783348Z",
       "WorkloadArea": "Application",
       "SubArea": ""
-    },    
+    },
     {
       "ChangeList": [
         {
@@ -1527,7 +1527,7 @@
     },
     {
       "ChangeList": [
-        { 
+        {
           "Id": "daa9406f-39d6-48fc-aaa4-452a7494b05c",
           "ApiChange": "Method",
           "ChangedApiName": "assignedPrincipals",
@@ -1708,7 +1708,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **accessPackageCustomExtensionHandlerStatus** enumeration type.",
           "Target": "accessPackageCustomExtensionHandlerStatus"
-        }        
+        }
       ],
       "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
       "Cloud": "Prod",
@@ -1753,7 +1753,7 @@
           "Description": "Added the **transitiveRoleAssignments** relationship to the [rbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/rbacApplication?view=graph-rest-beta) resource.",
           "Target": "rbacApplication"
         },
-        { 
+        {
           "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
           "ApiChange": "Method",
           "ChangedApiName": "transitiveRoleAssignments",
@@ -2213,7 +2213,7 @@
         "CreatedDateTime": "2022-01-24T00:00:00.8892294Z",
         "WorkloadArea": "Users",
         "SubArea": ""
-      },	  
+      },
       {
       "ChangeList": [
         {
@@ -2279,10 +2279,10 @@
       "CreatedDateTime": "2022-01-06T00:00:00.8892294Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
-    },	  
+    },
   	{
       "ChangeList": [
-        { 
+        {
           "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
@@ -2326,7 +2326,7 @@
     },
     {
       "ChangeList": [
-      { 
+      {
         "Id": "4bf37336-391f-4ce3-909b-03314160aade",
         "ApiChange": "Method",
         "ChangedApiName": "POST",
@@ -2377,7 +2377,7 @@
             "ChangeType": "Addition",
             "Description": "Added the [self signed certificate](https://learn.microsoft.com/en-us/graph/api/resources/selfsignedcertificate?view=graph-rest-1.0) resource and it properties. ",
             "Target": "servicePrincipal"
-          },        
+          },
           {
             "Id": "6f9968b1-82f2-4ecb-acd1-245e04d5a5e5",
             "ApiChange": "Resource",
@@ -2396,7 +2396,7 @@
     },
     {
     "ChangeList": [
-      { 
+      {
         "Id": "4bf37336-391f-4ce3-909b-03314160aade",
         "ApiChange": "Method",
         "ChangedApiName": "POST",
@@ -2743,7 +2743,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [validationResult](https://learn.microsoft.com/en-us/graph/api/resources/validationResult?view=graph-rest-beta) resource.",
           "Target": "validationResult"
-        }         
+        }
       ],
       "Id": "cc9daa2b-0fbd-42b3-8bfb-b7593e031739",
       "Cloud": "Prod",
@@ -2942,7 +2942,7 @@
       "WorkloadArea": "Users",
       "SubArea": ""
     },
-    { 
+    {
       "ChangeList": [
        {
          "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
@@ -3167,7 +3167,7 @@
           "ChangeType": "Change",
           "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource type. The **appRoleAssignments** navigation property returns app roles assigned to the user directly, or assigned to the user indirectly through a group that the user is a member of.",
           "Target": "user"
-        },        
+        },
         {
           "Id": "479558a4-5491-4463-bf2f-4474590767db",
           "ApiChange": "Relationship",
@@ -3337,7 +3337,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [appManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appManagementPolicy?view=graph-rest-beta) resource and associated methods.",
           "Target": "appManagementPolicy"
-        }      
+        }
       ],
       "Id": "2dca7e8b-c8af-45c1-9fa6-f108e93d8562",
       "Cloud": "prd",
@@ -12114,7 +12114,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
-    {      
+    {
       "ChangeList": [
         {
           "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
@@ -12249,7 +12249,7 @@
       "CreatedDateTime": "2022-07-05T08:35:28.7105558Z",
       "WorkloadArea": "Users",
       "SubArea": ""
-    },  
+    },
     {
       "ChangeList": [
         {
@@ -12286,7 +12286,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
-    { 
+    {
       "ChangeList": [
         {
           "Id": "e34ea993-f4f1-46c0-b78f-e87332e1685e",
@@ -12387,7 +12387,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [signingCertificateUpdateStatus](https://learn.microsoft.com/en-us/graph/api/resources/signingCertificateUpdateStatus?view=graph-rest-1.0) resource type.",
           "Target": "signingCertificateUpdateStatus"
-        },       
+        },
         {
           "Id": "58b7beda-c767-4468-914b-23774fe6f181",
           "ApiChange": "Resource",
@@ -12403,7 +12403,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-1.0) resource and associated methods. Use this resource to federate your domains with Azure AD.",
           "Target": "internalDomainFederation"
-        }        
+        }
       ],
       "Id": "58b7beda-c767-4468-914b-23774fe6f181",
       "Cloud": "Prod",
@@ -12714,6 +12714,56 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-30T17:56:44.238139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allowedValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [allowedValue](https://learn.microsoft.com/en-us/graph/api/resources/allowedValue?view=graph-rest-1.0) resource",
+          "Target": "allowedValue"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeSet](https://learn.microsoft.com/en-us/graph/api/resources/attributeSet?view=graph-rest-1.0) resource",
+          "Target": "attributeSet"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [customSecurityAttributeDefinition](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeDefinition?view=graph-rest-1.0) resource",
+          "Target": "customSecurityAttributeDefinition"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeSets",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeSets** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **customSecurityAttributeDefinitions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        }
+      ],
+      "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-01T12:59:41.4957833Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }
