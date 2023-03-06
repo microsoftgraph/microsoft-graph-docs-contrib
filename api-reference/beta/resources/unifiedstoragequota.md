@@ -34,7 +34,7 @@ The unifiedStorageQuota resource provides an aggregate view of a user's quota in
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|services|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection| The of services contributing to the user's quota usage. |
+|services|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection| The breakdown of services contributing to the user's quota usage. |
 
 ### usqState values
 | Value          |

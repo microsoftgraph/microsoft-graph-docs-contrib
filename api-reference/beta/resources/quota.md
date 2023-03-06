@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: The quota resource provides details about space constrains on a drive resource.
+description: The quota resource provides details about space constraints on a drive resource.
 ms.date: 09/10/2017
 title: Quota
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **quota** resource provides details about space constrains on a [drive](drive.md) resource. The values will reflect the overall total/used unified storage quota across multiple Microsoft services.
+The **quota** resource provides details about space constraints on a [drive](drive.md) resource. The values reflect the total/used unified storage quota across multiple Microsoft services.
 
 ## JSON representation
 
