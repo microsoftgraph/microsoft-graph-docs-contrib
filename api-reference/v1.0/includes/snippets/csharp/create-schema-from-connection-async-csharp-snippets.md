@@ -4,43 +4,48 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var schema = new Microsoft.Graph.ExternalConnectors.Schema
+var requestBody = new Microsoft.Graph.External.Connections.Item.Schema.SchemaPostRequestBody
 {
-	BaseType = "microsoft.graph.externalItem",
-	Properties = new List<Microsoft.Graph.ExternalConnectors.Property>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		new Microsoft.Graph.ExternalConnectors.Property
 		{
-			Name = "ticketTitle",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
-			IsSearchable = true,
-			IsRetrievable = true,
-			Labels = new List<Microsoft.Graph.ExternalConnectors.Label>()
+			"baseType" , "microsoft.graph.externalItem"
+		},
+		{
+			"properties" , new List<>
 			{
-				Microsoft.Graph.ExternalConnectors.Label.Title
+				new 
+				{
+					Name = "ticketTitle",
+					Type = "String",
+					IsSearchable = "true",
+					IsRetrievable = "true",
+					Labels = new List<string>
+					{
+						"title",
+					},
+				},
+				new 
+				{
+					Name = "priority",
+					Type = "String",
+					IsQueryable = "true",
+					IsRetrievable = "true",
+					IsSearchable = "false",
+				},
+				new 
+				{
+					Name = "assignee",
+					Type = "String",
+					IsRetrievable = "true",
+				},
 			}
 		},
-		new Microsoft.Graph.ExternalConnectors.Property
-		{
-			Name = "priority",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
-			IsQueryable = true,
-			IsRetrievable = true,
-			IsSearchable = false
-		},
-		new Microsoft.Graph.ExternalConnectors.Property
-		{
-			Name = "assignee",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
-			IsRetrievable = true
-		}
-	}
+	},
 };
+await graphClient.External.Connections["{externalConnection-id}"].Schema.PostAsync(requestBody);
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Schema
-	.Request()
-	.AddAsync(schema);
 
 ```

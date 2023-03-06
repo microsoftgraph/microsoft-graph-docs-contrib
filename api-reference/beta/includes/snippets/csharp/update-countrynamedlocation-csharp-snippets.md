@@ -4,21 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var namedLocation = new CountryNamedLocation
+var requestBody = new NamedLocation
 {
+	OdataType = "#microsoft.graph.countryNamedLocation",
 	DisplayName = "Updated named location without unknown countries and regions",
-	CountriesAndRegions = new List<String>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		"CA",
-		"IN"
+		{
+			"countriesAndRegions" , new List<string>
+			{
+				"CA",
+				"IN",
+			}
+		},
+		{
+			"includeUnknownCountriesAndRegions" , false
+		},
 	},
-	IncludeUnknownCountriesAndRegions = false
 };
+var result = await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"]
-	.Request()
-	.UpdateAsync(namedLocation);
 
 ```

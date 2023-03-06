@@ -86,8 +86,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 
 ---
 
-
-
 ### Response
 <!-- {
   "blockType": "response",

@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers/
 
 ---
 
-
 ### Response
 
 <!-- {
