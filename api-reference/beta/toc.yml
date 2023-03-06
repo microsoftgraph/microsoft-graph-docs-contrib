@@ -15706,37 +15706,32 @@ items:
             href: api/security-article-get.md
         - name: Article Indicator
           items:
-          -name
+          -name: Article Indicator
           href: resources/security-articleindicator.md
-        - name: Artifact
         - name: Host
           items:
             - name: Host
               href: resources/security-host.md
             - name: Get
               href: api/security-host-get.md
-          - name: Host Cookie
-            items:
+        - name: Host Cookie
+          items:
             - name: Host Cookie
               href: resources/security-hostcookie.md
-          - name: Host Cookie
-            items:
-            - name: Host Cookie
-              href: resources/security-hostcookie.md
+        - name: Host Component
+          items:
           - name: Host Component
-            items:
-            - name: Host Component
-              href: resources/security-hostcomponent.md
-          - name: Host Reputation
-            items: 
-            - name: HostReputation
-              href: resources/security-hostreputation.md
-            - name: Host Reputation Rule
-              href: resources/security-hostreputationrule.md
+            href: resources/security-hostcomponent.md
+        - name: Host Reputation
+          items: 
+          - name: HostReputation
+            href: resources/security-hostreputation.md
+          - name: Host Reputation Rule
+            href: resources/security-hostreputationrule.md
+        - name: Host Tracker
+          items:
           - name: Host Tracker
-            items:
-            - name: Host Tracker
-              href: resources/security-hosttracker.md
+            href: resources/security-hosttracker.md
         - name: Intelligence Profile (Intel Profile)
           items:
           - name: Intelligence Profile
