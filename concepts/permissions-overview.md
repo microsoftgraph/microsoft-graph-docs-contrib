@@ -47,7 +47,7 @@ In a delegated access scenario, an app may allow users to sign in with their per
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app can access resources and APIs within the boundaries of the user's permissions.
 
 > [!NOTE]
-> Permissions granted through [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
+> Permissions granted through [Azure AD RBAC](/azure/active-directory/roles/custom-overview) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Application permissions
 
@@ -61,7 +61,7 @@ Apart from being assigned Microsoft Graph application permissions, an app may al
 - When the app is assigned an Azure AD built-in or custom administrative roles.
 
 > [!NOTE]
-> Permissions granted through [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
+> Permissions granted through [Azure AD RBAC](/azure/active-directory/roles/custom-overview) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Comparison of delegated and application permissions
 
