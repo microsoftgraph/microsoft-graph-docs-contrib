@@ -27,11 +27,11 @@ Microsoft's Threat Intelligence APIs (Preview) allow you to operationalize intel
 |[Get hostComponent](../api/security-hostcomponent-get.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) |Get the hostComponent resources|
 |[Get hostCookie](../api/security-hostcookie-get.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) |Get the hostCookie resources from the hostCookies navigation property.|
 |[Get hostTracker](../api/security-hostTracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get the hostTracker resource from the trackers navigation property.|
-|[List intelProfileIndicators](../api/security-intelligenceprofile-list-indicators.md)|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Get the intelligenceProfileIndicator resources from the intelProfileIndicators navigation property.|
-|[List intelProfiles](../api/security-threatintelligence-list-intelprofiles.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get the intelligenceProfile resources from the intelProfiles navigation property.|
-|[Get hostTracker](../api/security-hostname-get-hostTracker.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get the hostTracker resource from the trackers navigation property.|
+|[Get intelProfileIndicators](../api/security-intelligenceprofileindicator-get.md)|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Get the intelligenceProfileIndicator resources from the intelProfileIndicators navigation property.|
+|[List intelProfiles](../api/security-intelligenceprofile-list.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get the intelligenceProfile resources from the intelProfiles navigation property.|
+|[Get hostTracker](../api/security-hostTracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get the hostTracker resource from the trackers navigation property.|
 |[Get passiveDnsRecord](../api/security-passiveDnsRecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passiveDnsRecord.md) |Get the hostTracker resource from the trackers navigation property.|
-|[List vulnerabilities](../api/security-threatintelligence-list-vulnerabilities.md)|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Get the vulnerability resources from the vulnerabilities navigation property.|
+|[List vulnerabilities](../api/security-vulnerability-list.md)|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Get the vulnerability resources from the vulnerabilities navigation property.|
 
 ## Relationships
 |Relationship|Type|Description|
