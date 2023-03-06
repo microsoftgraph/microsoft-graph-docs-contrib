@@ -92,8 +92,6 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 

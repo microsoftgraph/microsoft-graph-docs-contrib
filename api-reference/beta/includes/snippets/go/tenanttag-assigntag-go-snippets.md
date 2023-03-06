@@ -14,7 +14,7 @@ tenantIds := []string {
 }
 requestBody.SetTenantIds(tenantIds)
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").AssignTag().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").ManagedTenantsAssignTag().Post(context.Background(), requestBody, nil)
 
 
 ```

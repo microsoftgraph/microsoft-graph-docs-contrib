@@ -385,7 +385,7 @@ items:
               - name: Get links to assignments and submissions
                 href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
-                href: update-assignment-and-grade-data.md               
+                href: update-assignment-and-grade-data.md           
               - name: Download all resources from a set of assignments
                 href: download-resources-from-assignment.md
               - name: Share assignments with an embedded Teams application
@@ -565,6 +565,8 @@ items:
             href: item-insights-overview.md
           - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
+          - name: Enable or disable pronouns (preview)
+            href: pronouns-configure-pronouns-availability.md
       - name: Personal contacts
         items:
           - name: Overview
@@ -588,26 +590,28 @@ items:
           - name: Overview
             href: search-concept-overview.md
             displayName: search
-          - name: Search messages
-            href: search-concept-messages.md
-          - name: Search Teams messages
-            href: search-concept-chat-messages.md
-          - name: Search events
-            href: search-concept-events.md
-          - name: Search content in OneDrive and SharePoint
-            href: search-concept-files.md
-          - name: Search connectors
-            href: search-concept-custom-types.md
-          - name: Search people
-            href: search-concept-person.md
           - name: Search acronyms
             href: search-concept-acronym.md
           - name: Search bookmarks
-            href: search-concept-bookmark.md
-          - name: Search qnas
-            href: search-concept-qna.md
+            href: search-concept-bookmark.md 
+          - name: Search connectors
+            href: search-concept-custom-types.md
+          - name: Search content in OneDrive and SharePoint
+            href: search-concept-files.md
           - name: Search with application permissions
             href: search-concept-searchall.md
+          - name: Search multiple entity types
+            href: search-concept-interleaving.md
+          - name: Search Outlook events
+            href: search-concept-events.md
+          - name: Search Outlook messages
+            href: search-concept-messages.md
+          - name: Search people
+            href: search-concept-person.md
+          - name: Search qnas
+            href: search-concept-qna.md
+          - name: Search Teams messages
+            href: search-concept-chat-messages.md
           - name: Manage admin search answers (preview)
             href: search-concept-answers.md
           - name: Manage search results layout
@@ -624,8 +628,6 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
-          - name: Search interleaving results
-            href: search-concept-interleaving.md
       - name: Security
         items:
           - name: Overview
@@ -710,7 +712,7 @@ items:
                 href: teams-create-group-and-team.md
               - name: List all teams
                 href: teams-list-all-teams.md
-          - name: Licensing and payment models
+          - name: Payment models and licensing requirements
             href: teams-licenses.md
           - name: Protected APIs
             href: teams-protected-apis.md

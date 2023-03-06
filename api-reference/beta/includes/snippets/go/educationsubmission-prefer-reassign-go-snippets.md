@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "include-unknown-enum-members")
 
-configuration := &graphconfig.EducationClasseItemAssignmentItemSubmissionItemMicrosoft.graph.reassignRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.EducationClasseItemAssignmentItemSubmissionItemReassignRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 

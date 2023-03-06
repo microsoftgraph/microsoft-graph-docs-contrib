@@ -4,39 +4,57 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Review inactive guests on teams",
 	DescriptionForAdmins = "Control guest user access to our teams.",
 	DescriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more.",
-	InstanceEnumerationScope = new AccessReviewQueryScope
+	InstanceEnumerationScope = new AccessReviewScope
 	{
-		Query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
-		QueryType = "MicrosoftGraph"
+		OdataType = "#microsoft.graph.accessReviewQueryScope",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"query" , "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
+			},
+			{
+				"queryType" , "MicrosoftGraph"
+			},
+		},
 	},
-	Scope = new AccessReviewInactiveUsersQueryScope
+	Scope = new AccessReviewScope
 	{
-		Query = "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
-		QueryType = "MicrosoftGraph",
-		InactiveDuration = new Duration("P30D")
+		OdataType = "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"query" , "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"
+			},
+			{
+				"queryType" , "MicrosoftGraph"
+			},
+			{
+				"inactiveDuration" , "P30D"
+			},
+		},
 	},
-	Reviewers = new List<AccessReviewReviewerScope>()
+	Reviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "./owners",
-			QueryType = "MicrosoftGraph"
-		}
+			QueryType = "MicrosoftGraph",
+		},
 	},
-	FallbackReviewers = new List<AccessReviewReviewerScope>()
+	FallbackReviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-			QueryType = "MicrosoftGraph"
-		}
+			QueryType = "MicrosoftGraph",
+		},
 	},
 	Settings = new AccessReviewScheduleSettings
 	{
@@ -51,22 +69,20 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 			{
 				Type = RecurrencePatternType.AbsoluteMonthly,
 				DayOfMonth = 5,
-				Interval = 3
+				Interval = 3,
 			},
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = new Date(2020,5,4)
-			}
+				StartDate = new Date(DateTime.Parse("2020-05-04T00:00:00.000Z")),
+			},
 		},
 		DefaultDecisionEnabled = true,
 		DefaultDecision = "Deny",
-		AutoApplyDecisionsEnabled = true
-	}
+		AutoApplyDecisionsEnabled = true,
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

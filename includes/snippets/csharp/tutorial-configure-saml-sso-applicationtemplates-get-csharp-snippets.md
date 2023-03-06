@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var applicationTemplates = await graphClient.ApplicationTemplates
-	.Request()
-	.Filter("displayName eq 'AWS IAM Identity Center (successor to AWS Single Sign-On)'")
-	.GetAsync();
+var result = await graphClient.ApplicationTemplates.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "displayName eq 'AWS IAM Identity Center '";
+});
+
 
 ```

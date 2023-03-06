@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/operations/f1b138
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
