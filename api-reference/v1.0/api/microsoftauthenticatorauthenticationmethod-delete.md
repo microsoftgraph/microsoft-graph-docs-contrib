@@ -101,8 +101,6 @@ DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/mic
 
 ---
 
-
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

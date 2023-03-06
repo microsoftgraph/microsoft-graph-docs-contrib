@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var onlineMeeting = new OnlineMeeting
+var requestBody = new OnlineMeeting
 {
-	StartDateTime = DateTimeOffset.Parse("2020-09-09T21:33:30.8546353+00:00"),
-	EndDateTime = DateTimeOffset.Parse("2020-09-09T22:03:30.8566356+00:00"),
-	Subject = "Patch Meeting Subject"
+	StartDateTime = DateTimeOffset.Parse("2020-09-09T14:33:30.8546353-07:00"),
+	EndDateTime = DateTimeOffset.Parse("2020-09-09T15:03:30.8566356-07:00"),
+	Subject = "Patch Meeting Subject",
 };
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"]
-	.Request()
-	.UpdateAsync(onlineMeeting);
 
 ```

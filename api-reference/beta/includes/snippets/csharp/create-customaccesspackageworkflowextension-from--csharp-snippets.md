@@ -4,26 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var customAccessPackageWorkflowExtension = new CustomAccessPackageWorkflowExtension
+var requestBody = new CustomAccessPackageWorkflowExtension
 {
 	DisplayName = "test_action_0124",
 	Description = "this is for graph testing only",
-	EndpointConfiguration = new LogicAppTriggerEndpointConfiguration
+	EndpointConfiguration = new CustomExtensionEndpointConfiguration
 	{
-		SubscriptionId = "38ab2ccc-3747-4567-b36b-9478f5602f0d",
-		ResourceGroupName = "EMLogicApp",
-		LogicAppWorkflowName = "customextension_test"
+		OdataType = "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"subscriptionId" , "38ab2ccc-3747-4567-b36b-9478f5602f0d"
+			},
+			{
+				"resourceGroupName" , "EMLogicApp"
+			},
+			{
+				"logicAppWorkflowName" , "customextension_test"
+			},
+		},
 	},
-	AuthenticationConfiguration = new AzureAdTokenAuthentication
+	AuthenticationConfiguration = new CustomExtensionAuthenticationConfiguration
 	{
-		ResourceId = "f604bd15-f785-4309-ad7c-6fad18ddb6cb"
-	}
+		OdataType = "#microsoft.graph.azureAdTokenAuthentication",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"resourceId" , "f604bd15-f785-4309-ad7c-6fad18ddb6cb"
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].CustomAccessPackageWorkflowExtensions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].CustomAccessPackageWorkflowExtensions
-	.Request()
-	.AddAsync(customAccessPackageWorkflowExtension);
 
 ```

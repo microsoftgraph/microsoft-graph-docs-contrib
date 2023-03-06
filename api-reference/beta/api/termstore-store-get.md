@@ -86,8 +86,6 @@ GET https://graph.microsoft.com/beta/termStore
 
 ---
 
-
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -149,7 +147,6 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

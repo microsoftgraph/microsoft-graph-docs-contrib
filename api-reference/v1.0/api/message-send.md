@@ -97,7 +97,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 
 ---
 
-
 ##### Response
 
 Here is an example of the response.

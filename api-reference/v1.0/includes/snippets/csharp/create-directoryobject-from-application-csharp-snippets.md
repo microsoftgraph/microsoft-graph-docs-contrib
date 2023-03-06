@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var directoryObject = new DirectoryObject
+var requestBody = new Microsoft.Graph.Models.ReferenceCreate
 {
-	Id = "{id}"
+	OdataId = "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 };
+await graphClient.Applications["{application-id}"].Owners.Ref.PostAsync(requestBody);
 
-await graphClient.Applications["{application-id}"].Owners.References
-	.Request()
-	.AddAsync(directoryObject);
 
 ```
