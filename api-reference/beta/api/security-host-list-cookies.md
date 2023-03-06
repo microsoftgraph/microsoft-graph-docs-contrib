@@ -1,7 +1,6 @@
 ---
 title: "List cookies"
 description: "Get the hostCookie resources from the cookies navigation property."
-components navigation property."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

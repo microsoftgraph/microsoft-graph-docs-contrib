@@ -1,7 +1,6 @@
 ---
 title: "List passiveDns for a host"
 description: "Get the passiveDnsRecord resources from the passiveDns navigation property."
-components navigation property."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

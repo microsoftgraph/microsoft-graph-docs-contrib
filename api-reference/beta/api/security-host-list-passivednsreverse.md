@@ -1,7 +1,6 @@
 ---
 title: "List passiveDnsReverse"
 description: "Get the passiveDnsRecord resources from the passiveDnsReverse navigation property."
-components navigation property."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
