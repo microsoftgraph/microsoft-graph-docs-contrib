@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [Hostname](../resources/security-hostname.md) or [IP Address](../resources/security-ipaddress.md) which is (or has been) addressible over the internet.
+Represents a [Hostname](../resources/security-hostname.md) or [IP Address](../resources/security-ipaddress.md) which is (or has been) addressible over the internet and Microsoft Threat Intelligence has knowledge. 
 
 This is an abstract type. Implementations of this type include:
 * [microsoft.graph.security.hostname](../resources/security-hostname.md)
@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |[List components](../api/security-host-list-components.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Get the hostComponent resources from the components navigation property.|
 |[List cookies](../api/security-host-list-cookies.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Get the hostCookie resources from the cookies navigation property.|
 |[List passiveDns](../api/security-host-list-passivedns.md)|[microsoft.graph.security.passivednsrecord](../resources/security-passivednsrecord.md) collection|Get the passiveDns resources from the passiveDns navigation property.|
-|[List passiveDnsReverse](../api/security-host-list-passivedns.md)|[microsoft.graph.security.passivednsrecord](../resources/security-passivednsrecord.md) collection|Get the passiveDns resources from the passiveDnsReverse navigation property.|
+|[List passiveDnsReverse](../api/security-host-list-passivednsreverse.md)|[microsoft.graph.security.passivednsrecord](../resources/security-passivednsrecord.md) collection|Get the passiveDns resources from the passiveDnsReverse navigation property.|
 |[Get reputation](../api/security-host-get-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) |Get the hostReputation resources from the reputation navigation property.|
 |[List trackers](../api/security-host-list-trackers.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Get the hostTracker resources from the trackers navigation property.|
 

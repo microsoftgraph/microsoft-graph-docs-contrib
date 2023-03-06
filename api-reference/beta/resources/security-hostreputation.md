@@ -25,10 +25,10 @@ Reputation data is important to understanding the trustworthiness of your own at
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classification|microsoft.graph.security.hostReputationClassification|**TODO: Add Description**.The possible values are: `unknown`, `neutral`, `suspicious`, `malicious`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description**|
-|rules|[microsoft.graph.security.hostReputationRule](../resources/security-hostreputationrule.md) collection|**TODO: Add Description**|
-|score|Int32|**TODO: Add Description**|
+|classification|microsoft.graph.security.hostReputationClassification|The calculated reputation of the host. The possible values are: `unknown`, `neutral`, `suspicious`, `malicious`, `unknownFutureValue`.|
+|id|String|A system-generated id for this `hostReputation`|
+|rules|[microsoft.graph.security.hostReputationRule](../resources/security-hostreputationrule.md) collection|A collection of rules that have been used to calculate the classification and score.|
+|score|Int32|The calculated score (0-100) of the requested host. A higher value indicates that this [host](../resources/security-host.md) is more likely to be suspicious or malicious.|
 
 ## Relationships
 None.

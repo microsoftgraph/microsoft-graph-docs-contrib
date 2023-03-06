@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A rule that is used (in combination with other rules) to determine the Reputation of a [Hostname](../resources/security-hostname.md) or [IP Address](../resources/security-ipaddress.md). Eacth `hostReputationRule` only applies within the parent [hostReputation](../resources/security-hostreputation.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|link|String|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|severity|microsoft.graph.security.hostReputationRuleSeverity|**TODO: Add Description**.The possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|description|String|A description of the rule which gives more context|
+|relatedDetailsUrl|String| link to a web page with details related to this rule|
+|name|String|A name of the rule|
+|severity|microsoft.graph.security.hostReputationRuleSeverity|An indication of the serverity this rule has against the reputation score.The possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   "name": "String",
   "description": "String",
   "severity": "String",
-  "link": "String"
+  "relatedDetailsUrl": "String"
 }
 ```
 
