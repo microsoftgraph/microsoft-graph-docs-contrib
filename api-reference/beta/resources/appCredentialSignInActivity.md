@@ -7,7 +7,7 @@ ms.prod: "reports"
 doc_type: "resourcePageType"
 ---
 
-# userCredentialUsageDetails resource type
+# appCredentialSignInActivity resource type
 
 Namespace: microsoft.graph
 

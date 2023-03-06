@@ -7,7 +7,7 @@ ms.prod: "reports"
 doc_type: "resourcePageType"
 ---
 
-# userCredentialUsageDetails resource type
+# servicePrincipalSignInActivity resource type
 
 Namespace: microsoft.graph
 
@@ -17,22 +17,22 @@ The sign-in activities for a servicePrincipal. Contains information about last u
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List servicePrincipalSignInActivity](../api/serviceprincipal-lastusedate-list.md) | servicePrincipalSignInActivity | Retrieve a list of servicePrincipalSignInActivity objects. |
-| [Get servicePrincipalSignInActivity](../api/serviceprincipal-lastusedate-get.md) | servicePrincipalSignInActivity| Read properties and relationships of a servicePrincipalSignInActivity object. |
+| Method                                                                             | Return Type                    | Description                                                                   |
+| :--------------------------------------------------------------------------------- | :----------------------------- | :---------------------------------------------------------------------------- |
+| [List servicePrincipalSignInActivity](../api/serviceprincipal-lastusedate-list.md) | servicePrincipalSignInActivity | Retrieve a list of servicePrincipalSignInActivity objects.                    |
+| [Get servicePrincipalSignInActivity](../api/serviceprincipal-lastusedate-get.md)   | servicePrincipalSignInActivity | Read properties and relationships of a servicePrincipalSignInActivity object. |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-| id                                              | string                         | The unique id for each service principal sign-in event.                                                                              | 
-| appId                                           | string                         | The application id of the resource.                                                                                                  | 
-| delegatedClientSignInActivity                   | microsoft.graph.signInActivity | The sign-in activity of the application in a delegated flow (user sign in) where the application is acting like a client.            | 
-| delegatedResourceSignInActivity                 | microsoft.graph.signInActivity | The sign-in activity of the application in a delegated flow (user sign in) where the application is acting like a resource.          | 
-| applicationAuthenticationClientSignInActivity   | microsoft.graph.signInActivity | The sign-in activity of the application in a app-only auth flow (app to app tokens) where the application is acting like a client.   | 
-| applicationAuthenticationResourceSignInActivity | microsoft.graph.signInActivity | The sign-in activity of the application in a app-only auth flow (app to app tokens) where the application is acting like a resource. | 
-| lastSignInActivity | microsoft.graph.signInActivity | The most recent sign-in activity of the application across delegated or app only flows where the application is used like a client or resource. | 
+| Property                                        | Type                           | Description                                                                                                                                     |
+| :---------------------------------------------- | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                                              | string                         | The unique id for each service principal sign-in event.                                                                                         |
+| appId                                           | string                         | The application id of the resource.                                                                                                             |
+| delegatedClientSignInActivity                   | microsoft.graph.signInActivity | The sign-in activity of the application in a delegated flow (user sign in) where the application is acting like a client.                       |
+| delegatedResourceSignInActivity                 | microsoft.graph.signInActivity | The sign-in activity of the application in a delegated flow (user sign in) where the application is acting like a resource.                     |
+| applicationAuthenticationClientSignInActivity   | microsoft.graph.signInActivity | The sign-in activity of the application in a app-only auth flow (app to app tokens) where the application is acting like a client.              |
+| applicationAuthenticationResourceSignInActivity | microsoft.graph.signInActivity | The sign-in activity of the application in a app-only auth flow (app to app tokens) where the application is acting like a resource.            |
+| lastSignInActivity                              | microsoft.graph.signInActivity | The most recent sign-in activity of the application across delegated or app only flows where the application is used like a client or resource. |
 
 
 ## Relationships

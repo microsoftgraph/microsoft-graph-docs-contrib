@@ -14707,9 +14707,9 @@ items:
             href: resources/servicePrincipalSignInActivity.md
             items:
             - name: Get service principal activity
-              href: api/serviceprincipal-lastuseddate-get.md
+              href: api/serviceprincipal-lastusedate-get.md
             - name: List service principal activity
-              href: api/serviceprincipal-lastuseddate-list.md
+              href: api/serviceprincipal-lastusedate-list.md
         - name: Application credential activity
           items:
           - name: Application credential activity
