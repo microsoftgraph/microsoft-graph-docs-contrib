@@ -35,13 +35,13 @@ For an app to get authorization and access to Microsoft Graph using the authoriz
 
 ## 1. Register the app
 
-Before the app can use the Microsoft identity platform endpoint or call Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
+Before the app can call the Microsoft identity platform endpoints or Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
 
 From the app registration, save the following values:
 
-- The application (client) ID assigned by the app registration portal.
+- The application (client) ID assigned by the Microsoft identity platform
 - A redirect URI (or reply URL) for the app to receive responses from Azure AD.
-- A client (application) secret (password), a public/private key pair (certificate), or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
+- A client (application) secret (password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 
 ## 2. Request an authorization code
 
