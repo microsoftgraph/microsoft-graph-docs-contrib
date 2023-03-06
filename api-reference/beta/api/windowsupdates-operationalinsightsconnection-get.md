@@ -1,7 +1,7 @@
 ---
 title: "Get operationalInsightsConnection"
 description: "Read the properties and relationships of an operationalInsightsConnection object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -88,8 +88,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response.

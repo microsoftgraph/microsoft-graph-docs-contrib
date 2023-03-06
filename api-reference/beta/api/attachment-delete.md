@@ -166,7 +166,6 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

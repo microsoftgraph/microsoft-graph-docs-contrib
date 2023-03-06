@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestToken := "1230919asd190410jlka"
 
-requestParameters := &graphconfig.SiteItemListItemItemsMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SiteItemListItemItemsDelta()RequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphconfig.SiteItemListItemItemsMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SiteItemListItemItemsDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

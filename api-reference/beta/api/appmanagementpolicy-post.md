@@ -130,7 +130,6 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

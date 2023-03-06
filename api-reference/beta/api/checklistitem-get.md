@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
-|Application|Tasks.Read, Tasks.ReadWrite|
+|Application|Tasks.Read.All, Tasks.ReadWrite.All|
 
 ## HTTP request
 
@@ -110,8 +110,6 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzN
 
 ---
 
-
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -150,7 +148,7 @@ GET https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtNGQz
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-checklistitem-2-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -174,8 +172,6 @@ GET https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtNGQz
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

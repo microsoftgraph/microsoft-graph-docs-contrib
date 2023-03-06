@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite|
+|Application|Tasks.Read.All, Tasks.ReadWrite.All  |
 
 ## HTTP request
 
@@ -88,8 +88,6 @@ GET https://graph.microsoft.com/beta/me/todo/lists/35e2-35e2-721a-e235-1a72e2351
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
