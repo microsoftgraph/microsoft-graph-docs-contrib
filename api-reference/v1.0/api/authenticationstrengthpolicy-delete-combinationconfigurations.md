@@ -1,7 +1,7 @@
 ---
 title: "Delete authenticationCombinationConfiguration"
 description: "Delete an authenticationCombinationConfiguration for a custom authenticationStrengthPolicy object."
-author: "mmcla;inbarckMS"
+author: "inbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

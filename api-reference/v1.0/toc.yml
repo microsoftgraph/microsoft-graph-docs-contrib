@@ -5187,7 +5187,7 @@ items:
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
-- name: Authentication strengths
+        - name: Authentication strengths
           items:
           - name: Overview
             href: resources/authenticationstrengths-overview.md

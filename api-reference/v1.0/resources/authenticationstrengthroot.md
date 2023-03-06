@@ -2,7 +2,7 @@
 title: "authenticationStrengthRoot resource type"
 description: "The authenticationStrengthRoot resource is the entry point for the authentication strengths object model."
 ms.localizationpriority: medium
-author: "mmcla;inbarckMS"
+author: "inbarckMS"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

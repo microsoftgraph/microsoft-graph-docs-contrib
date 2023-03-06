@@ -1,7 +1,7 @@
 ---
 title: "authenticationStrengthPolicy resource type"
 description: "A collection of settings that define specific combinations of authentication methods and metadata. The authentication strength policy, when applied to a given scenario using Azure AD Conditional Access, defines which authentication methods must be used to authenticate in that scenario."
-author: "mmcla;inbarckMS"
+author: "inbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
