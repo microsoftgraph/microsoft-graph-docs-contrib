@@ -13,7 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Web components are details describing a web page or server infrastructure gleaned from Microsoft performing a web crawl or scan. These components allow a user to understand the makeup of a webpage or the technology and services driving a specific piece of infrastructure. Pivoting on unique components can find actors' infrastructure or other sites that are compromised. Users can also understand if a website might be vulnerable to a specific attack or compromise based on the technologies that it is running.
+
+These `HostComponent` Entities have specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
 
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
@@ -21,29 +23,22 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List hostComponents](../api/security-hostname-list-components.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Get a list of the [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) objects and their properties.|
-|[Create hostComponent](../api/security-hostname-post-components.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)|Create a new [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) object.|
 |[Get hostComponent](../api/security-hostcomponent-get.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)|Read the properties and relationships of a [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) object.|
-|[Update hostComponent](../api/security-hostcomponent-update.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)|Update the properties of a [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) object.|
-|[Delete hostComponent](../api/security-hostname-delete-components.md)|None|Delete a [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) object.|
-|[List host](../api/security-threatintelligence-list-hosts.md)|[microsoft.graph.security.host](../resources/security-host.md) collection|Get the host resources from the host navigation property.|
-|[Add host](../api/security-hostcomponent-post-host.md)|[microsoft.graph.security.host](../resources/security-host.md)|Add host by posting to the host collection.|
-|[Remove host](../api/security-hostcomponent-delete-host.md)|None|Remove a [microsoft.graph.security.host](../resources/security-host.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|**TODO: Add Description**|
-|firstSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|lastSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|version|String|**TODO: Add Description**|
+|category|String| The type of component that was detected (e.g. Operating System, Framework, Remote Access, Server).|
+|firstSeenDateTime|DateTimeOffset|The first date and time that this web Component was observed by Microsoft Threat Intelligence.|
+|id|String|A system-generated id for this `hostComponent`. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time that this web Component was observed by Microsoft Threat Intelligence.|
+|name|String|A name  running on the artifact (e.g. Microsoft IIS).|
+|version|String|The component version running on the artifact (e.g. v8.5). This should not be assumed to be strictly numerical|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[host](../resources/security-host.md)|**TODO: Add Description**|
+|host|[host](../resources/security-host.md)|The [host](../resources/security-host.md) related to this component. This is a reverse Navigation Property. When navigating to Components from a [host](../resources/security-host.md), this should be assumed to be a return reference.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

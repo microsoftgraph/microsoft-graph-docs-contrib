@@ -13,7 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Trackers are unique codes or values found within web pages and often used to track user interaction. These codes can be used to correlate a disparate group of websites to a central entity. Often, actors will copy the source code of a victim’s website they are looking to impersonate for a phishing campaign. Seldomly will actors take the time to remove these IDs that allow users to identify these fraudulent sites using Microsoft’s Trackers data set. Actors may also deploy tracker IDs to see how successful their cyber-attack campaigns are. This is similar to marketers when they leverage SEO IDs, such as a Google Analytics Tracker ID, to track the success of their marketing campaign.
+
+These `HostTracker` Entities have specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
 
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
@@ -21,28 +23,21 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List hostTrackers](../api/security-hostname-list-trackers.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Get a list of the [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) objects and their properties.|
-|[Create hostTracker](../api/security-hostname-post-trackers.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md)|Create a new [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) object.|
 |[Get hostTracker](../api/security-hosttracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md)|Read the properties and relationships of a [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) object.|
-|[Update hostTracker](../api/security-hosttracker-update.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md)|Update the properties of a [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) object.|
-|[Delete hostTracker](../api/security-hostname-delete-trackers.md)|None|Delete a [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) object.|
-|[List host](../api/security-threatintelligence-list-hosts.md)|[microsoft.graph.security.host](../resources/security-host.md) collection|Get the host resources from the host navigation property.|
-|[Add host](../api/security-hosttracker-post-host.md)|[microsoft.graph.security.host](../resources/security-host.md)|Add host by posting to the host collection.|
-|[Remove host](../api/security-hosttracker-delete-host.md)|None|Remove a [microsoft.graph.security.host](../resources/security-host.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|kind|String|**TODO: Add Description**|
-|lastSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|value|String|**TODO: Add Description**|
+|firstSeenDateTime|DateTimeOffset|The first date and time that this hostTracker was observed by Microsoft Threat Intelligence.|
+|id|String| A system-generated id for this `hostTracker`.  Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
+|kind|String|The kind of hostTracker that was detected (e.g. GoogleAnalyticsID, JarmHash)|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time that this hostTracker was observed by Microsoft Threat Intelligence |
+|value|String|The identification value for the hostTracker|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[host](../resources/security-host.md)|**TODO: Add Description**|
+|host|[host](../resources/security-host.md)|The [host](../resources/security-host.md) related to this `hostTracker`. When navigating to a `hostTracker` from a [host](../resources/security-host.md), this should be assumed to be a return reference.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

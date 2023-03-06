@@ -13,31 +13,25 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Cookies are small pieces of data sent from a server to a client as the user browses the internet. These values sometimes contain a state for the application or little bits of tracking data. Threat Intelligence highlights and indexes cookie names observed when crawling a website and allows users to dig into everywhere we have observed specific cookie names across its crawling and data collection. Cookies are also used by malicious actors to keep track of infected victims or store data to be used later.
 
+These `HostCookie` Entities have specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List hostCookies](../api/security-hostname-list-cookies.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Get a list of the [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) objects and their properties.|
-|[Create hostCookie](../api/security-hostname-post-cookies.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md)|Create a new [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) object.|
 |[Get hostCookie](../api/security-hostcookie-get.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md)|Read the properties and relationships of a [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) object.|
-|[Update hostCookie](../api/security-hostcookie-update.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md)|Update the properties of a [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) object.|
-|[Delete hostCookie](../api/security-hostname-delete-cookies.md)|None|Delete a [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) object.|
-|[List host](../api/security-threatintelligence-list-hosts.md)|[microsoft.graph.security.host](../resources/security-host.md) collection|Get the host resources from the host navigation property.|
-|[Add host](../api/security-hostcookie-post-host.md)|[microsoft.graph.security.host](../resources/security-host.md)|Add host by posting to the host collection.|
-|[Remove host](../api/security-hostcookie-delete-host.md)|None|Remove a [microsoft.graph.security.host](../resources/security-host.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|domain|String|**TODO: Add Description**|
-|firstSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|lastSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
+|domain|String|The the URI for which the Cookie is valid.|
+|firstSeenDateTime|DateTimeOffset|The first date and time that this `hostCookie` was observed by Microsoft Threat Intelligence.|
+|id|String|A system-generated id for this `hostCookie`.  Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time that this `hostCookie` was observed by Microsoft Threat Intelligence.|
+|name|String|The name of the Cookie (e.g. JSESSIONID, SEARCH_NAMESITE).|
 
 ## Relationships
 |Relationship|Type|Description|
