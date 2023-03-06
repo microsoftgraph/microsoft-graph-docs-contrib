@@ -87,11 +87,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyServicePrincipals/9
 
 ---
 
-
----
-
-
-
 ### Response
 <!-- {
   "blockType": "response",

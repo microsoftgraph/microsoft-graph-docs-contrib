@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
 requestTop := int32(2)
-requestFilter := "lastModifiedDateTime ge 2022-09-22T00:00:00.000Z and lastModifiedDateTime le 2022-09-24T00:00:00.000Z"
+requestFilter := "lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and lastModifiedDateTime lt 2022-09-24T00:00:00.000Z"
 
 requestParameters := &graphconfig.ChatItemMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,

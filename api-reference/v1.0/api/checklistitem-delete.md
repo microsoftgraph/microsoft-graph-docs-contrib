@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNG
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

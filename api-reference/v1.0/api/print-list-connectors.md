@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/print/connectors
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

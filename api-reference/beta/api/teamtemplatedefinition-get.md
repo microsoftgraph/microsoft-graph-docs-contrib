@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Team.Create|
+|Delegated (work or school account)|TeamTemplates.Read|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|Team.Create|
+|Application|TeamTemplates.Read.All|
 
 ## HTTP request
 
@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates/com.microsoft.teams.
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response

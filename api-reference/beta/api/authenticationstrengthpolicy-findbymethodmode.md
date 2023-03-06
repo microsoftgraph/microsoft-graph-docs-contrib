@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!CAUTION] 
-  > The `findByMethodMode` function is only available in `/beta` and will not become available in `/v1.0`. To get a list of  [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) filtered to only include policies that include the authentication method mode specified in the request, use XXX instead
+  > The `findByMethodMode` function is only available in `/beta` and will not become available in `/v1.0`. To get a list of [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) filtered to only include policies that include the authentication method mode specified in the request, use OData instead:
+  > 
+  ``` http
+GET /policies/authenticationStrengthPolicies?$filter[allowedCombinations/any(x:x has 'sms, password')
 
 
 Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
@@ -73,6 +76,10 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/findByMethodMode(authenticationMethodModes=["sms"])
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/authenticationstrengthpolicythisfindbymethodmode-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/authenticationstrengthpolicythisfindbymethodmode-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,7 +97,6 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/fin
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response

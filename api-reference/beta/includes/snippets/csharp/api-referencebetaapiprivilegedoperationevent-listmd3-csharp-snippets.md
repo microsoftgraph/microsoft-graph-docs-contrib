@@ -4,17 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.PrivilegedOperationEvents.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Filter = "(creationDateTime ge 2017-06-25T07:00:00Z) and ";
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.QueryParameters.Orderby = new string []{ "creationDateTime desc" };
+});
 
-var privilegedOperationEvents = await graphClient.PrivilegedOperationEvents
-	.Request( queryOptions )
-	.Filter("(creationDateTime ge 2017-06-25T07:00:00Z) and (creationDateTime le 2017-07-25T17:30:17Z)")
-	.OrderBy("creationDateTime desc")
-	.GetAsync();
 
 ```

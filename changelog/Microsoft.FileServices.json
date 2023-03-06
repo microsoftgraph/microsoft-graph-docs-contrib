@@ -437,6 +437,96 @@
     {
       "ChangeList":[
         {
+          "Id": "FA782B9D-526C-403F-AA57-8144A4E736FB",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "createLink"
+        }
+    ],
+    "Id": "FA782B9D-526C-403F-AA57-8144A4E736FB",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "26776B71-9B2E-45A3-B0CD-D6ECF7CF82C3",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Target": "listItem"
+        }
+    ],
+    "Id": "26776B71-9B2E-45A3-B0CD-D6ECF7CF82C3",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+    "WorkloadArea": "Sites and lists",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "96E5DE9E-A56A-4FD1-B8E2-23BA9D180975",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [invite](https://learn.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "invite"
+        }
+    ],
+    "Id": "96E5DE9E-A56A-4FD1-B8E2-23BA9D180975",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "B90040F5-2D0D-4C16-BFA0-EBCD27BD5361",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Target": "createLink"
+        }
+    ],
+    "Id": "B90040F5-2D0D-4C16-BFA0-EBCD27BD5361",
+    "Cloud": "prd",
+    "Version": "v1.0",
+    "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "C68D4B2B-9D39-4562-92D7-1754A687EF64",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [invite](https://docs.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Target": "invite"
+        }
+    ],
+    "Id": "C68D4B2B-9D39-4562-92D7-1754A687EF64",
+    "Cloud": "prd",
+    "Version": "v1.0",
+    "CreatedDateTime": "2022-01-12T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
           "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
           "ApiChange": "Parameter",
           "ChangedApiName": "type",
@@ -3014,6 +3104,42 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-12-05T03:42:44.8308328Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the `sendNotification` parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) method of [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta).",
+          "Target": "createLink"
+        }
+      ],
+      "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-01T10:39:05.8609784Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b5aef9f7-ffc6-4018-997a-b7f5dcbfe30f",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the `sendNotification` parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) method of [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta).",
+          "Target": "createLink"
+        }
+      ],
+      "Id": "b5aef9f7-ffc6-4018-997a-b7f5dcbfe30f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-01T10:39:05.8609784Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     }

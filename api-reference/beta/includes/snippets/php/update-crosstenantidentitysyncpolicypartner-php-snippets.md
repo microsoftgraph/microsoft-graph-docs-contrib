@@ -10,17 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CrossTenantIdentitySyncPolicyPartner();
-$additionalData = [
-'userSyncInbound' => $requestBody = new UserSyncInbound();
-		$requestBody->setIsSyncAllowed(true);
+$userSyncInbound = new CrossTenantUserSyncInbound();
+$userSyncInbound->setIsSyncAllowed(true);
 
 
 $requestBody->setUserSyncInbound($userSyncInbound);
-
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->partnersById('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->patch($requestBody);
