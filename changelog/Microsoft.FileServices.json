@@ -3116,14 +3116,6 @@
           "ChangeType": "Addition",
           "Description": "Added the `sendNotification` parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) method of [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta).",
           "Target": "createLink"
-        },
-        {
-          "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "sendNotification",
-          "ChangeType": "Addition",
-          "Description": "Added the `sendNotification` parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) method of [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta).",
-          "Target": "createLink"
         }
       ],
       "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
@@ -3131,6 +3123,24 @@
       "Version": "beta",
       "CreatedDateTime": "2023-03-01T10:39:05.8609784Z",
       "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b5aef9f7-ffc6-4018-997a-b7f5dcbfe30f",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the `sendNotification` parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) method of [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta).",
+          "Target": "createLink"
+        }
+      ],
+      "Id": "b5aef9f7-ffc6-4018-997a-b7f5dcbfe30f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-01T10:39:05.8609784Z",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     }
   ]
