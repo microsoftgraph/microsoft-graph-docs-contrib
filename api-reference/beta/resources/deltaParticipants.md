@@ -2,7 +2,7 @@
 title: "deltaParticipants resource type"
 description: "Delta Participants type that is published by Communications servers to notify changed participants since last update."
 author: "sasthana"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "removedState resource type"
 description: "Resource type that contains the deletion reason for the resource."
 author: "sasthana"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
