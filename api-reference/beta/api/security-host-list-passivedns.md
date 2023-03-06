@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List passiveDnsReverse
+# List passiveDns
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
