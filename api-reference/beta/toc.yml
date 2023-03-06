@@ -10615,6 +10615,34 @@ items:
             href: resources/windowsupdates-driverupdatecatalogentry.md
           - name: List catalog entries
             href: api/windowsupdates-catalog-list-entries.md
+        - name: Compliance change
+          href: resources/windowsupdates-compliancechange.md
+          items: 
+          - name: List
+            href: api/windowsupdates-updatepolicy-list-compliancechanges.md
+          - name: Get
+            href: api/windowsupdates-compliancechange-get.md
+          - name: Update
+            href: api/windowsupdates-compliancechange-update.md
+          - name: Delete
+            href: api/windowsupdates-compliancechange-delete.md
+        - name: Content approval
+          href: resources/windowsupdates-contentapproval.md
+          items:
+          - name: List
+            href: api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md
+          - name: Create
+            href: api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md
+          - name: Get
+            href: api/windowsupdates-contentapproval-get.md
+          - name: Update
+            href: api/windowsupdates-contentapproval-update.md
+          - name: Delete
+            href: api/windowsupdates-contentapproval-delete.md
+        - name: Deployable content
+          items:
+          - name: Catalog content
+            href: resources/windowsupdates-catalogcontent.md
         - name: Deployment
           href: resources/windowsupdates-deployment.md
           items:
@@ -10628,10 +10656,6 @@ items:
             href: api/windowsupdates-deployment-update.md
           - name: Delete deployment
             href: api/windowsupdates-deployment-delete.md
-        - name: Deployable content
-          items:
-          - name: Catalog content
-            href: resources/windowsupdates-catalogcontent.md
         - name: Deployment audience
           href: resources/windowsupdates-deploymentaudience.md
           items:
@@ -10651,43 +10675,26 @@ items:
             href: api/windowsupdates-deploymentaudience-updateaudience.md
           - name: Update by ID
             href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
-        - name: Update policy
-          href: resources/windowsupdates-updatepolicy.md
+        - name: Resource connection
+          href: resources/windowsupdates-resourceconnection.md
           items:
           - name: List
-            href: api/adminwindowsupdates-list-updatepolicies.md
-          - name: Create
-            href: api/adminwindowsupdates-post-updatepolicies.md
+            href: api/adminwindowsupdates-list-resourceconnections.md
           - name: Get
-            href: api/windowsupdates-updatepolicy-get.md
-          - name: Update
-            href: api/windowsupdates-updatepolicy-update.md
+            href: api/windowsupdates-resourceconnection-get.md
           - name: Delete
-            href: api/windowsupdates-updatepolicy-delete.md
-        - name: Compliance change
-          href: resources/windowsupdates-compliancechange.md
-          items: 
-          - name: List
-            href: api/windowsupdates-updatepolicy-list-compliancechanges.md
-          - name: Get
-            href: api/windowsupdates-compliancechange-get.md
-          - name: Update
-            href: api/windowsupdates-compliancechange-update.md
-          - name: Delete
-            href: api/windowsupdates-compliancechange-delete.md
-          - name: Content approval
-            href: resources/windowsupdates-contentapproval.md
+            href: api/windowsupdates-resourceconnection-delete.md
+          - name: Operational insights connection
+            href: resources/windowsupdates-operationalinsightsconnection.md
             items:
             - name: List
-              href: api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md
+              href: api/adminwindowsupdates-list-resourceconnections-operationalinsightsconnection.md
             - name: Create
-              href: api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md
+              href: api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
             - name: Get
-              href: api/windowsupdates-contentapproval-get.md
-            - name: Update
-              href: api/windowsupdates-contentapproval-update.md
+              href: api/windowsupdates-operationalinsightsconnection-get.md
             - name: Delete
-              href: api/windowsupdates-contentapproval-delete.md
+              href: api/windowsupdates-resourceconnection-delete.md
         - name: Updatable asset
           href: resources/windowsupdates-updatableasset.md
           items:
@@ -10735,26 +10742,19 @@ items:
               href: api/windowsupdates-updatableassetgroup-removemembers.md
             - name: Remove members by ID
               href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
-        - name: Resource connection
-          href: resources/windowsupdates-resourceconnection.md
+        - name: Update policy
+          href: resources/windowsupdates-updatepolicy.md
           items:
           - name: List
-            href: api/adminwindowsupdates-list-resourceconnections.md
+            href: api/adminwindowsupdates-list-updatepolicies.md
+          - name: Create
+            href: api/adminwindowsupdates-post-updatepolicies.md
           - name: Get
-            href: api/windowsupdates-resourceconnection-get.md
+            href: api/windowsupdates-updatepolicy-get.md
+          - name: Update
+            href: api/windowsupdates-updatepolicy-update.md
           - name: Delete
-            href: api/windowsupdates-resourceconnection-delete.md
-          - name: Operational insights connection
-            href: resources/windowsupdates-operationalinsightsconnection.md
-            items:
-            - name: List
-              href: api/adminwindowsupdates-list-resourceconnections-operationalinsightsconnection.md
-            - name: Create
-              href: api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md
-            - name: Get
-              href: api/windowsupdates-operationalinsightsconnection-get.md
-            - name: Delete
-              href: api/windowsupdates-resourceconnection-delete.md
+            href: api/windowsupdates-updatepolicy-delete.md
       - name: Multi-tenant management (preview)
         items:
         - name: Managed tenant
@@ -16620,7 +16620,7 @@ items:
               href: api/teamworkdeviceoperation-list.md
             - name: Get
               href: api/teamworkdeviceoperation-get.md
-      - name: Employee learning (preview)
+      - name: Employee learning
         displayName: Viva Learning
         items:
         - name: Overview
