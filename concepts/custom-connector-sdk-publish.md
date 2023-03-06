@@ -5,12 +5,12 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn how to publish the connectors you build using the Microsoft Graph connectors SDK (preview) to the Microsoft 365 admin center."
+description: "Learn how to publish the connectors you build using the Microsoft Graph connectors SDK to the Microsoft 365 admin center."
 ---
 
 # Publish custom connectors to the Microsoft 365 admin center
 
-When you use the Microsoft Graph connectors SDK (preview), you can publish your custom connectors through the Microsoft 365 admin center, the same way that Microsoft built-in connectors are published.
+When you use the Microsoft Graph connectors SDK, you can publish your custom connectors through the Microsoft 365 admin center, the same way that Microsoft built-in connectors are published.
 
 >[!Note]
 > Read the [Setup for your Graph connector](/microsoftsearch/configure-connector) article to understand the general Graph connectors setup instructions.
