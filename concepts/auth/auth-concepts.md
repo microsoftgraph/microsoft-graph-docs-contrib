@@ -10,9 +10,9 @@ ms.date: 02/28/2022
 
 # Authentication and authorization basics
 
-Microsoft Graph is a protected web API endpoint for accessing data in Microsoft cloud services like Azure AD and Microsoft 365. It's protected by the Microsoft identity platform.
+Microsoft Graph is a protected web API for accessing data in Microsoft cloud services like Azure AD and Microsoft 365. It's protected by the Microsoft identity platform.
 
-The Microsoft identity platform must authorize any app that calls Microsoft Graph. This authorization is presented in the form of an *access token*, an opaque string that proves that the calling app is authorized to access the resource, in this case Microsoft Graph.
+The Microsoft identity platform must authorize any app that calls Microsoft Graph. This authorization is presented in the form of an *access token*, an object that proves that the calling app is authorized to access the resource, in this case Microsoft Graph.
 
 This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [next steps](#see-also) section.
 
@@ -22,7 +22,7 @@ Before your app can get an access token from the Microsoft identity platform, it
 
 - **Application ID**: A unique identifier assigned by the Microsoft identity platform.
 - **Redirect URI/URL**: One or more endpoints at which your app receives responses from the Microsoft identity platform. (For native and mobile apps, the URI is assigned by the Microsoft identity platform.)
-- **Client secret**: A password or a public/private key pair that your app uses to authenticate with the Microsoft identity platform. (Not needed for native or mobile apps.)
+- **Client secret**: A password that your app uses to authenticate with the Microsoft identity platform. You can optionally use a public/private key pair in the form of a certificate or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 
 For more information, see [Register an application with the Microsoft identity platform](../auth-register-app-v2.md).
 
@@ -53,7 +53,7 @@ Apps get privileges to call Microsoft Graph with their own identity through one 
 + When the app is assigned ownership of the resource that it intends to manage
 
 > [!NOTE]
-> An app can also get permissions through [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). These permissions don't limit the app to calling Microsoft Graph APIs.
+> An app can also get permissions through [Azure AD roles](/azure/active-directory/roles/permissions-reference). These permissions don't limit the app to calling Microsoft Graph APIs.
 
 ## Microsoft Graph permissions
 
@@ -74,7 +74,7 @@ For more information about Microsoft Graph permissions and how to use them, see 
 
 ## Access tokens
 
-An application makes an authentication request to get access tokens that it uses to call an API. Access tokens that the Microsoft identity platform issues contain information (claims). Web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use the claims to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. The caller should treat access tokens as opaque strings because the contents of the token are intended for the API only. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport layer security (TLS).
+An application makes an authentication request to the Microsoft identity platform get access tokens that it uses to call an API. Access tokens that the Microsoft identity platform issues contain details about the application and the user, known as *claims*. Web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use the claims to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. The caller should treat access tokens as opaque strings because the contents of the token are intended for the API only. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport layer security (TLS).
 
 The following example shows a Microsoft identity platform access token:
 
@@ -94,7 +94,7 @@ Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
 
 ### Get an access token
 
-We recommend that you use authentication libraries to manage your token interactions with the Microsoft identity platform. Authentication libraries abstract many protocol details like validation, cookie handling, token caching, and maintaining secure connections, from the developer, and let you focus your development on your app's functionality. Microsoft publishes open-source client libraries and server middleware.
+We recommend that you use authentication libraries to manage your token interactions with the Microsoft identity platform. Authentication libraries abstract many protocol details like validation, cookie handling, token caching, and maintaining secure connections, and let you focus your development on your app's functionality. Microsoft publishes open-source client libraries and server middleware.
 
 For the Microsoft identity platform endpoint:
 
