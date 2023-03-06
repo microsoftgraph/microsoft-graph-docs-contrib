@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationMethodConfiguration = new SoftwareOathAuthenticationMethodConfiguration
+var requestBody = new AuthenticationMethodConfiguration
 {
-	State = AuthenticationMethodState.Disabled
+	OdataType = "#microsoft.graph.softwareOathAuthenticationMethodConfiguration",
+	State = AuthenticationMethodState.Disabled,
 };
+var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
-	.Request()
-	.UpdateAsync(authenticationMethodConfiguration);
 
 ```

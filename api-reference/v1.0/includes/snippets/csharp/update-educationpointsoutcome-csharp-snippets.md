@@ -4,18 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationOutcome = new EducationPointsOutcome
+var requestBody = new EducationOutcome
 {
-	Points = new EducationAssignmentPointsGrade
+	OdataType = "#microsoft.graph.educationPointsOutcome",
+	AdditionalData = new Dictionary<string, object>
 	{
-		Points = 85f
-	}
+		{
+			"points" , new 
+			{
+				OdataType = "#microsoft.graph.educationAssignmentPointsGrade",
+				Points = 85.0,
+			}
+		},
+	},
 };
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"].PatchAsync(requestBody);
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"]
-	.Request()
-	.UpdateAsync(educationOutcome);
 
 ```

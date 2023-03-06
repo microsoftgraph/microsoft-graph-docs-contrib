@@ -97,8 +97,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/supportedR
 
 ---
 
-
-
 ### Response
 
 The following is an example of the response.

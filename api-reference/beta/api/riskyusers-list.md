@@ -155,7 +155,6 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers?$filter=riskL
 
 ---
 
-
 #### Response
 Here is an example of the response.
 <!-- {

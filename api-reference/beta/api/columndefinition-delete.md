@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentTyp
 
 ---
 
-
 ### Response
 
 <!-- {

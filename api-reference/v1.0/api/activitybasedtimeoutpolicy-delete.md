@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies/{i
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

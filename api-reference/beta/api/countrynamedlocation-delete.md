@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocation
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

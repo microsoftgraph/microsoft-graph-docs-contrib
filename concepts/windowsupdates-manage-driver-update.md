@@ -199,7 +199,7 @@ Content-type: application/json
 
 ## Step 5: Create driver approval
 
-Deployments for driver updates are created and enforced on a policy through [compliance changes](/graph/api/resources/windowsupdates-compliance). [Content approvals](/graph/api/esources/windowsupdates-contentapproval) for driver updates are added to a policy by specifying the [catalog entry](/graph/api/resources/windowsupdates-catalogentry) associated to a specific driver update. Content will only be delivered to devices in the deployment audiences associated with the update policy when approved.
+Deployments for driver updates are created and enforced on a policy through [compliance changes](/graph/api/resources/windowsupdates-compliancechange). [Content approvals](/graph/api/resources/windowsupdates-contentapproval) for driver updates are added to a policy by specifying the [catalog entry](/graph/api/resources/windowsupdates-catalogentry) associated to a specific driver update. Content will only be delivered to devices in the deployment audiences associated with the update policy when approved.
 
 The following example shows how to add a content approval to an existing policy.
 

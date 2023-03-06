@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsMicrosoft.graph.security.evaluateRemovalRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsSecurity.evaluateRemovalRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvaluateRemovalPostRequestBody()
@@ -76,7 +76,7 @@ isDowngradeJustified := true
 downgradeJustification.SetIsDowngradeJustified(&isDowngradeJustified) 
 requestBody.SetDowngradeJustification(downgradeJustification)
 
-result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().EvaluateRemoval().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().SecurityEvaluateRemoval().Post(context.Background(), requestBody, configuration)
 
 
 ```
