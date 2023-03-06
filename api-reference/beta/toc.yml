@@ -1272,7 +1272,7 @@ items:
           - name: Acquire access token
             href: api/synchronization-synchronization-acquireaccesstoken.md
           - name: Add secrets
-            href: api/synchronization-synchronization-secrets.md
+            href: api/synchronization-serviceprincipal-put-synchronization.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
