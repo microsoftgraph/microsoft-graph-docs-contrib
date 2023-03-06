@@ -12,7 +12,7 @@ ms.date: 02/28/2022
 
 Microsoft Graph is a protected web API for accessing data in Microsoft cloud services like Azure AD and Microsoft 365. It's protected by the Microsoft identity platform.
 
-The Microsoft identity platform must authorize any app that calls Microsoft Graph. This authorization is presented in the form of an *access token*, an object that proves that the calling app is authorized to access the resource, in this case Microsoft Graph.
+The Microsoft identity platform must authorize any app that calls Microsoft Graph. This authorization is presented in the form of an *access token*, an artifact that proves that the calling app is authorized to access the resource, in this case Microsoft Graph.
 
 This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [next steps](#see-also) section.
 
@@ -22,7 +22,7 @@ Before your app can get an access token from the Microsoft identity platform, it
 
 - **Application ID**: A unique identifier assigned by the Microsoft identity platform.
 - **Redirect URI/URL**: One or more endpoints at which your app receives responses from the Microsoft identity platform. (For native and mobile apps, the URI is assigned by the Microsoft identity platform.)
-- **Client secret**: A password that your app uses to authenticate with the Microsoft identity platform. You can optionally use a public/private key pair in the form of a certificate or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
+- **Client secret**: A password that your app uses to authenticate with the Microsoft identity platform. You can optionally use a certificate or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 
 For more information, see [Register an application with the Microsoft identity platform](../auth-register-app-v2.md).
 
@@ -53,7 +53,7 @@ Apps get privileges to call Microsoft Graph with their own identity through one 
 + When the app is assigned ownership of the resource that it intends to manage
 
 > [!NOTE]
-> An app can also get permissions through [Azure AD roles](/azure/active-directory/roles/permissions-reference). These permissions don't limit the app to calling Microsoft Graph APIs.
+> An app can also get permissions through Azure AD role-based access control (Azure AD RBAC). To get the list of permissions that are available through Azure AD RBAC, see [Azure AD roles](/azure/active-directory/roles/permissions-reference).
 
 ## Microsoft Graph permissions
 
@@ -61,12 +61,10 @@ Microsoft Graph exposes granular permissions that control the access that apps h
 
 Microsoft Graph exposes two types of permissions for the supported [access scenarios](#access-scenarios):
 
-- Delegated permissions
-- Application permissions
+- Delegated permissions: Also called *scopes*, allow the application to act on behalf of the signed-in user.
+- Application permissions: Also called *app roles*, allow the app to access data on its own, without a signed-in user.
 
-Delegated permissions, also called *scopes*, allow the application to act on behalf of the signed-in user. Application permissions, also called *app roles*, allow the app to access data on its own, without a signed-in user.
-
-When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, your app is given access to the resources, and APIs that it has requested. For apps that access resources and APIs without a signed-in user, the administrator preconsents to the application permissions when the app is installed.
+When a user signs in to your app they, or, in some cases, administrators, are given a chance to consent to the delegated permissions. If they grant consent, your app is given access to the resources, and APIs that it has requested. For apps that access resources and APIs without a signed-in user, administrators should preconsent to the application permissions when the app is installed.
 
 [!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
 
