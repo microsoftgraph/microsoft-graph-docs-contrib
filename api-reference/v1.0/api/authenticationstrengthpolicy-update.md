@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationStrengthPolicy"
 description: "Update the properties of an authenticationStrengthPolicy object."
-author: "mmcla;inbarckMS"
+author: "inbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
