@@ -44,7 +44,7 @@ Microsoft's Threat Intelligence APIs (Preview) allow you to operationalize intel
 |hostCookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|**TODO: Add Description**|
 |hostTrackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|**TODO: Add Description**|
 |intelProfileIndicators|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|**TODO: Add Description**|
-|intelProfiles|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|**TODO: Add Description**|
+|intelProfiles|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Intelligence Profiles provide the most up-to-date threat actor and tooling infrastructure visibility in the industry today, enabling Threat Intel and SecOps teams to streamline their advanced threat hunting and analysis workflows.|
 |passiveDnsRecords|[microsoft.graph.security.passiveDns](../resources/security-passivednsrecord.md) collection|**TODO: Add Description**|
 |vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|**TODO: Add Description**|
 
