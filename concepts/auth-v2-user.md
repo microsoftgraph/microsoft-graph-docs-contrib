@@ -33,6 +33,10 @@ For an app to get authorization and access to Microsoft Graph using the authoriz
 4. Use the access token to call Microsoft Graph.
 5. Use the refresh token to renew an expired access token.
 
+> [!TIP]
+> [![Try steps 2-5 in Postman](./images/auth-v2/runinpostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d)<br/>
+> Try steps 2-5 in Postman. Don't forget to replace tokens and IDs!
+
 ## 1. Register the app
 
 Before the app can call the Microsoft identity platform endpoints or Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
