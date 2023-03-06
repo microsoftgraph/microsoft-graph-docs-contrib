@@ -28,10 +28,10 @@ Before proceeding with the steps in this article:
 For an app to get authorization and access to Microsoft Graph using the authorization code flow, you must follow these five steps:
 
 1. Register the app with Azure AD.
-2. Get authorization.
-3. Get an access token.
-4. Use the access token to call Microsoft Graph
-5. Use a refresh token to get a new access token.
+2. Request an authorization code.
+3. Request an access token.
+4. Use the access token to call Microsoft Graph.
+5. Use the refresh token to renew an expired access token.
 
 ## 1. Register the app
 
@@ -40,10 +40,10 @@ Before the app can use the Microsoft identity platform endpoint or call Microsof
 From the app registration, save the following values:
 
 - The application (client) ID assigned by the app registration portal.
-- A client (application) secret, either a password or a public/private key pair (certificate). The client secret isn't required for native apps.
 - A redirect URI (or reply URL) for the app to receive responses from Azure AD.
+- A client (application) secret (password), a public/private key pair (certificate), or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 
-## 2. Get authorization
+## 2. Request an authorization code
 
 The first step in the authorization code flow is for the user to authorize the app to act on their behalf.
 
@@ -116,7 +116,7 @@ https://localhost/myapp/?code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d&state=12345&
 | state         | If a state parameter is included in the request, the same value should appear in the response. The app should verify that the state values in the request and response are identical. This check helps to detect [Cross-Site Request Forgery (CSRF) attacks](https://tools.ietf.org/html/rfc6749#section-10.12) against the client. |
 | session_state | A unique value that identifies the current user session. This value is a GUID, but should be treated as an opaque value that is passed without examination.                                                                                                                                                                |
 
-## 3. Get a token
+## 3. Request an access token
 
 The app uses the authorization `code` received in the previous step to request an access token by sending a `POST` request to the `/token` endpoint.
 
@@ -167,7 +167,7 @@ curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 
 ### Token response
 
-Although the access token is opaque to the app, the response contains a list of the permissions that the access token is good for in the `scope` parameter. The response is similar to the following sample.
+The access token contains a list of the permissions that the access token is good for in the `scope` parameter. The response is similar to the following sample.
 
 ```json
 HTTP/1.1 200 OK
@@ -250,7 +250,7 @@ Content-Length: 407
 }
 ```
 
-## 5. Use the refresh token to get a new access token
+## 5. Use the refresh token to renew an expired access token
 
 Access tokens are short lived, and the app must refresh them after they expire to continue accessing resources. The app does so by submitting another `POST` request to the `/token` endpoint, this time:
 
