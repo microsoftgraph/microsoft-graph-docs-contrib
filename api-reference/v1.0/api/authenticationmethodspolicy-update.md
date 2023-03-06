@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
+PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 Content-Type: application/json
 
 {
