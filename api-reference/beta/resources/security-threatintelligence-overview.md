@@ -36,29 +36,14 @@ Microsoft's Threat Intelligence APIs (Preview) allow you to operationalize intel
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|articleIndicators|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) collection|Refers to indicators of threat or compromise highlighted in an [microsoft.graph.security.article](../resources/security-article.md). **Note**: List retrieval is not yet supported.|
 |articles|[microsoft.graph.security.article](../resources/security-article.md) collection|Returns a list of `aricles`.|
-|hosts|[microsoft.graph.security.host](../resources/security-host.md) collection|**TODO: Add Description**|
-|hostComponents|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|**TODO: Add Description**|
-|hostCookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|**TODO: Add Description**|
-|hostTrackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|**TODO: Add Description**|
-|intelProfileIndicators|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|**TODO: Add Description**|
+|articleIndicators|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) collection|Refers to indicators of threat or compromise highlighted in an [microsoft.graph.security.article](../resources/security-article.md). **Note**: List retrieval is not yet supported.|
+|hosts|[microsoft.graph.security.host](../resources/security-host.md) collection|Refers to [microsoft.graph.security.host](../resources/security-host.md)s that Microsoft Threat Intelligence has observed. **Note**: List retrieval is not yet supported.|
+|hostComponents|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Retrieve details about [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)s. **Note**: List retrieval is not yet supported.|
+|hostCookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Retrieve details about [microsoft.graph.security.hostCookie](../resources/security-hostCookie.md)s. **Note**: List retrieval is not yet supported.|
+|hostTrackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Retrieve details about [microsoft.graph.security.hostTracker](../resources/security-hostTracker.md)s. **Note**: List retrieval is not yet supported.|
 |intelProfiles|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Intelligence Profiles provide the most up-to-date threat actor and tooling infrastructure visibility in the industry today, enabling Threat Intel and SecOps teams to streamline their advanced threat hunting and analysis workflows.|
-|passiveDnsRecords|[microsoft.graph.security.passiveDns](../resources/security-passivednsrecord.md) collection|**TODO: Add Description**|
+|intelProfileIndicators|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Refers to indicators of threat or compromise highlighted in an [microsoft.graph.security.intelligenceprofile](../resources/security-intelligenceprofile.md). **Note**: List retrieval is not yet supported.|
+|passiveDnsRecords|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Retrieve details about [microsoft.graph.security.passiveDnsRecord](../resources/security-passiveDnsRecord.md)s. **Note**: List retrieval is not yet supported.|
 |vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|**TODO: Add Description**|
-
-## JSON representation
-The following is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.security.threatIntelligence",
-  "openType": false
-}
--->
-``` json
-{
-  "@odata.type": "#microsoft.graph.security.threatIntelligence"
-}
-```
 
