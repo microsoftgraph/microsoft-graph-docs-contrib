@@ -13,25 +13,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+While the Microsoft Threat Intelligence APIs will provide retrieval support for many types of [artifacts](../resources/security-artifact.md), there will be some data elements that either are not yet supported or cannot be supported. This `unclassifiedArtifact` extends artifacts, communicating what information has been gathered to allow for information analysis.
 
+This `unclassifiedArtifact` is not an addressible EntityType. The data contained is meant to communicate available information where applicable.
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List unclassifiedArtifacts](../api/security-unclassifiedartifact-list.md)|[microsoft.graph.security.unclassifiedArtifact](../resources/security-unclassifiedartifact.md) collection|Get a list of the [microsoft.graph.security.unclassifiedArtifact](../resources/security-unclassifiedartifact.md) objects and their properties.|
-|[Get unclassifiedArtifact](../api/security-unclassifiedartifact-get.md)|[microsoft.graph.security.unclassifiedArtifact](../resources/security-unclassifiedartifact.md)|Read the properties and relationships of a [microsoft.graph.security.unclassifiedArtifact](../resources/security-unclassifiedartifact.md) object.|
-|[Update unclassifiedArtifact](../api/security-unclassifiedartifact-update.md)|[microsoft.graph.security.unclassifiedArtifact](../resources/security-unclassifiedartifact.md)|Update the properties of a [microsoft.graph.security.unclassifiedArtifact](../resources/security-unclassifiedartifact.md) object.|
-|[Delete unclassifiedArtifact](../api/security-unclassifiedartifact-delete.md)|None|Delete a [microsoft.graph.security.unclassifiedArtifact](../resources/security-unclassifiedartifact.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|kind|String|**TODO: Add Description**|
-|value|String|**TODO: Add Description**|
+|id|String|The system-generated id for this unclassifiedArtifact. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
+|kind|String|The kind for this unclassifiedArtifact, describing what this value means.|
+|value|String|The value for this unclassifiedArtifact|
 
 ## Relationships
 None.

@@ -13,22 +13,25 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+`artifact` is not an addressible EntityType. Instead, it is used as an abstract representation of an entity found online by Microsoft's Security services.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List artifacts](../api/security-passivedns-list-artifact.md)|[microsoft.graph.security.artifact](../resources/security-artifact.md) collection|Get a list of the [microsoft.graph.security.artifact](../resources/security-artifact.md) objects and their properties.|
-|[Create artifact](../api/security-passivedns-post-artifact.md)|[microsoft.graph.security.artifact](../resources/security-artifact.md)|Create a new [microsoft.graph.security.artifact](../resources/security-artifact.md) object.|
-|[Get artifact](../api/security-artifact-get.md)|[microsoft.graph.security.artifact](../resources/security-artifact.md)|Read the properties and relationships of a [microsoft.graph.security.artifact](../resources/security-artifact.md) object.|
-|[Update artifact](../api/security-artifact-update.md)|[microsoft.graph.security.artifact](../resources/security-artifact.md)|Update the properties of a [microsoft.graph.security.artifact](../resources/security-artifact.md) object.|
-|[Delete artifact](../api/security-passivedns-delete-artifact.md)|None|Delete a [microsoft.graph.security.artifact](../resources/security-artifact.md) object.|
+Current types of artifacts include:
+* [host](../resources/security-host.md)
+  * [hostname](../resources/security-hostname.md)
+  * [ipAddresss](../resources/security-ipaddress.md)
+* [hostComponent](../resources/security-hostcomponent.md)
+* [hostCookie](../resources/security-hostcookie.md)
+* [hostTracker](../resources/security-hosttracker.md)
+* [passiveDnsRecord](../resources/security-passiveDnsRecord.md)
+* [unclassifiedArtifact](../resources/security-unclassifiedartifact.md)
+
+Instances of `artifact` identified in the following Microsoft Security API Groups should handle the possible implementations. Microsoft Security APIs that currently support `artifact` type:
+* [Microsoft Threat Intelligence](../resources/security-threatintelligence-overview.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
+|id|String|A system-generated id.|
 
 ## Relationships
 None.
