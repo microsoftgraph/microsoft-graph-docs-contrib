@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/6c
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

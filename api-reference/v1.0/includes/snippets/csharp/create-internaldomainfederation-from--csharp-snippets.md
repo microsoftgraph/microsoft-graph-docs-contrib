@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var internalDomainFederation = new InternalDomainFederation
+var requestBody = new InternalDomainFederation
 {
+	OdataType = "#microsoft.graph.internalDomainFederation",
 	DisplayName = "Contoso",
 	IssuerUri = "http://contoso.com/adfs/services/trust",
 	MetadataExchangeUri = "https://sts.contoso.com/adfs/services/trust/mex",
@@ -19,11 +20,9 @@ var internalDomainFederation = new InternalDomainFederation
 	PromptLoginBehavior = PromptLoginBehavior.NativeSupport,
 	IsSignedAuthenticationRequestRequired = true,
 	NextSigningCertificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp
+	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp,
 };
+var result = await graphClient.Domains["{domain-id}"].FederationConfiguration.PostAsync(requestBody);
 
-await graphClient.Domains["{domain-id}"].FederationConfiguration
-	.Request()
-	.AddAsync(internalDomainFederation);
 
 ```

@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/security/attackSimulation/simulations/2f
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

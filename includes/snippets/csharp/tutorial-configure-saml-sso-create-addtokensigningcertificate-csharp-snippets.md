@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var displayName = "CN=AWSContoso";
+var requestBody = new Microsoft.Graph.ServicePrincipals.Item.AddTokenSigningCertificate.AddTokenSigningCertificatePostRequestBody
+{
+	DisplayName = "CN=AWSContoso",
+	EndDateTime = DateTimeOffset.Parse("2024-01-25T00:00:00Z"),
+};
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].AddTokenSigningCertificate.PostAsync(requestBody);
 
-var endDateTime = DateTimeOffset.Parse("2024-01-25T00:00:00Z");
-
-await graphClient.ServicePrincipals["{servicePrincipal-id}"]
-	.AddTokenSigningCertificate(displayName,endDateTime)
-	.Request()
-	.PostAsync();
 
 ```

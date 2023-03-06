@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var key = "Base64-encoded-pfx-content";
+var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.UploadPkcs12.UploadPkcs12PostRequestBody
+{
+	Key = "Base64-encoded-pfx-content",
+	Password = "password-value",
+};
+var result = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].UploadPkcs12.PostAsync(requestBody);
 
-var password = "password-value";
-
-await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"]
-	.UploadPkcs12(key,password)
-	.Request()
-	.PostAsync();
 
 ```

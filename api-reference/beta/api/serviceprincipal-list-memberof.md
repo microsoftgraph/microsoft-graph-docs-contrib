@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
