@@ -881,6 +881,40 @@
       "CreatedDateTime": "2023-02-28T22:39:35.4042034Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "chatMessageActions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessageActions** enumeration type.",
+          "Target": "chatMessageActions"
+        },
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMessageHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageHistoryItem?view=graph-rest-1.0) resource type.",
+          "Target": "chatMessageHistoryItem"
+        },
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Property",
+          "ChangedApiName": "messageHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the `messageHistory` property to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-06T23:04:05.0154606Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
     }
   ]
 }
