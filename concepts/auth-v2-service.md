@@ -29,8 +29,8 @@ For an app to get authorization and access to Microsoft Graph using the client c
 
 1. Register the app with Azure AD.
 2. Configure Microsoft Graph application permissions on the app.
-3. Get administrator consent.
-4. Get an access token.
+3. Request administrator consent.
+4. Request an access token.
 5. Call Microsoft Graph using the access token.
 
 ## 1. Register the app
@@ -40,7 +40,7 @@ Before the app can use the Microsoft identity platform endpoint or call Microsof
 From the app registration, save the following values:
 
 - The application (client) ID assigned by the app registration portal.
-- A client (application) secret, either a password or a public/private key pair (certificate). The client secret isn't required for native apps.
+- A client (application) secret (password), a certificate, or a federated identity credential.
 - A redirect URI for the app to receive token responses from Azure AD.
 - A redirect URI for the service to receive admin consent responses if the app implements functionality to request administrator consent.
 
@@ -65,9 +65,9 @@ The following screenshot shows the **Select Permissions** dialog box for Microso
 > 
 > Configure the least privileged set of permissions required by the app to improve its security posture. For more information, see [Best practices for using Microsoft Graph permissions](./permissions-overview.md#best-practices-for-using-microsoft-graph-permissions).
 
-## 3. Get administrator consent
+## 3. Request administrator consent
 
-You can rely on an administrator to grant the permissions your app needs at the [Azure portal](https://portal.azure.com). However, a better option is to provide a sign-up experience for administrators by using the Microsoft identity platform `/adminconsent` endpoint.
+Administrators can grant the permissions your app needs at the [Azure portal](https://portal.azure.com). However, when you don't have access to the Azure portal, you can provide a sign-up experience for administrators by using the Microsoft identity platform `/adminconsent` endpoint.
 
 > [!IMPORTANT]
 > 
@@ -128,7 +128,7 @@ https://localhost/myapp/permissions?admin_consent=True&tenant=38d49456-54d4-455d
 > 
 > https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=https://localhost/myapp/permissions 
 
-## 4. Get an access token
+## 4. Request an access token
 
 In the OAuth 2.0 client credentials grant flow, you use the application ID and client secret values that you saved when you registered your app to request an access token directly from the Microsoft identity platform `/token` endpoint.
 
