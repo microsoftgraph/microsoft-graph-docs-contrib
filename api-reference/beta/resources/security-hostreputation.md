@@ -13,16 +13,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities (such as First and Last Seen timestamps or [Autonomous System](../resources/security-autonomoussystem.md) details) and a list of rules that impact the reputation score when applicable.
+
+Reputation data is important to understanding the trustworthiness of your own attack surface and is also useful when assessing unknown [hostNames](../resources/security-hostname.md) or [IP addresses](../resources/security-ipaddress.md) that appear in investigations. These scores will uncover any prior malicious or suspicious activity that impacted the entity, or other known indicators of compromise that should be considered.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List hostReputations](../api/security-host-list-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) collection|Get a list of the [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) objects and their properties.|
-|[Create hostReputation](../api/security-host-post-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Create a new [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) object.|
-|[Get hostReputation](../api/security-hostreputation-get.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Read the properties and relationships of a [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) object.|
-|[Update hostReputation](../api/security-hostreputation-update.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Update the properties of a [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) object.|
-|[Delete hostReputation](../api/security-host-delete-reputation.md)|None|Delete a [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) object.|
+|[Get hostReputation](../api/security-host-get-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Read the properties and relationships of a [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) object, for a given [microsoft.graph.security.host](../resources/security-host.md).|
 
 ## Properties
 |Property|Type|Description|

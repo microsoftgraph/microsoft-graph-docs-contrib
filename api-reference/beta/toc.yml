@@ -15702,22 +15702,19 @@ items:
           items:
           - name: Article
             href: resources/security-article.md
-          - name: Formatted Content
-            href: resources/security-formattedcontent.md
+          - name: Get
+            href: api/security-article-get.md
         - name: Article Indicator
+          items:
+          -name
+          href: resources/security-articleindicator.md
         - name: Artifact
         - name: Host
           items:
-          - name: Autonomous System
-            href: resources/security-autonomoussystem.md
-          - name: Host
-            items:
             - name: Host
               href: resources/security-host.md
-            - name: Hostname
-              href: resources/security-hostname.md
-            - name: IP Address
-              href: resources/security-ipaddress.md
+            - name: Get
+              href: api/security-host-get.md
           - name: Host Cookie
             items:
             - name: Host Cookie

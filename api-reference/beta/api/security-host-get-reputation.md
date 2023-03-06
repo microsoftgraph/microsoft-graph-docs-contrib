@@ -11,7 +11,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the hostReputation resources from the reputation navigation property.
+Get the [hostReputation](../resources/security-hostreputation.md) resources from the reputation navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [hostReputation](../resources/hostreputation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [hostReputation](../resources/security-hostreputation.md) object in the response body.
 
 ## Examples
 
@@ -75,17 +75,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+  "@odata.type": "#microsoft.graph.security.hostReputation",
+  "id": "1e3b9ded-abb6-1828-c4ef-a5ca48b287a0",
+  "classification": "String",
+  "score": "Integer",
+  "rules": [
     {
-      "@odata.type": "#microsoft.graph.security.hostReputation",
-      "id": "1e3b9ded-abb6-1828-c4ef-a5ca48b287a0",
-      "classification": "String",
-      "score": "Integer",
-      "rules": [
-        {
-          "@odata.type": "microsoft.graph.security.hostReputationRule"
-        }
-      ]
+      "@odata.type": "microsoft.graph.security.hostReputationRule"
     }
   ]
 }

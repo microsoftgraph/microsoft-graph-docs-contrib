@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Hostname or IP Address which is (or has been) addressible over the internet
+Represents a [Hostname](../resources/security-hostname.md) or [IP Address](../resources/security-ipaddress.md) which is (or has been) addressible over the internet.
 
 This is an abstract type. Implementations of this type include:
 * [microsoft.graph.security.hostname](../resources/security-hostname.md)
@@ -30,7 +30,7 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |[List cookies](../api/security-hostname-list-cookies.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Get the hostCookie resources from the cookies navigation property.|
 |[List passiveDns](../api/security-hostname-list-passivedns.md)|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md) collection|Get the passiveDns resources from the passiveDns navigation property.|
 |[List passiveDnsReverse](../api/security-hostname-list-passivedns.md)|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md) collection|Get the passiveDns resources from the passiveDnsReverse navigation property.|
-|[List hostReputation](../api/security-host-list-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) collection|Get the hostReputation resources from the reputation navigation property.|
+|[Get hostReputation](../api/security-host-get-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) collection|Get the hostReputation resources from the reputation navigation property.|
 |[List trackers](../api/security-hostname-list-trackers.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Get the hostTracker resources from the trackers navigation property.|
 
 ## Properties
@@ -45,8 +45,8 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |:---|:---|:---|
 |components|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|`hostComponents` that are associated with this host|
 |cookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|`hostCookies` that are associated with this host|
-|passiveDns|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md) collection|`passiveDns` that are associated with this host|
-|passiveDnsReverse|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md) collection| Reverse DNS retrieval about this host.|
+|passiveDns|[microsoft.graph.security.passiveDnsEntry](../resources/security-passiveDnsEntry.md) collection|`passiveDnsEntry` that are associated with this host|
+|passiveDnsReverse|[microsoft.graph.security.passiveDnsEntry](../resources/security-passiveDnsEntry.md) collection| Reverse DNS retrieval about this host.|
 |reputation|[hostReputation](../resources/security-hostreputation.md)|Represents a calculated reputation of this host|
 |trackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|`hostTrackers` that are associated with this host|
 
