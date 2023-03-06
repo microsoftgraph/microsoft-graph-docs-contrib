@@ -15708,8 +15708,8 @@ items:
             href: api/security-article-list.md
         - name: Article Indicator
           items:
-            -name: Article Indicator
-            href: resources/security-articleindicator.md
+            - name: Article Indicator
+              href: resources/security-articleindicator.md
         - name: Host
           items:
             - name: Host
