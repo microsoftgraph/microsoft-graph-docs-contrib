@@ -20,9 +20,9 @@ Represents an error that occurred during the synchronization process.
 <!-- Add descriptions for the properties. Fill in the examples. -->
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|code|String| The error code. For example, "". |
-|message|String| The error message. For example, "".  |
-|tenantActionable|Boolean| The action to take to resolve the error. For example, "".|
+|code|String| The error code. |
+|message|String| The error message.  |
+|tenantActionable|Boolean| The action to take to resolve the error.|
 
 ## JSON representation
 
