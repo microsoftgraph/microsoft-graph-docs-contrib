@@ -1,6 +1,6 @@
 ---
 title: "autonomousSystem resource type"
-description: "**TODO: Add Description**"
+description: "This represents data assigned in an Autonomous System."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This represents data assigned in an Autonomous System.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|number|Int32|**TODO: Add Description**|
-|organization|String|**TODO: Add Description**|
-|value|String|**TODO: Add Description**|
+|name|String|The name of the Autonomous System.|
+|number|Int32|The Autonomous System Number, assigned by IANA.|
+|organization|String|The Automous System Organization name.   |
+|value|String|A displayable value for these Autonomous System details.|
 
 ## Relationships
 None.
