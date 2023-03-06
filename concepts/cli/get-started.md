@@ -11,11 +11,7 @@ In this guide, you'll use the Microsoft Graph command-line interface (CLI) to pe
 
 ## API version
 
-By default, the Microsoft Graph CLI uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). You can change the version by TBD.
-
-```bash
-TBD
-```
+The Microsoft Graph CLI uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true).
 
 ## Authentication
 

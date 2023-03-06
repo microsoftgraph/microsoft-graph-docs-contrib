@@ -116,7 +116,3 @@ Commands:
   list                                Get the list of applications in this organization.
   validate-properties
 ```
-
-## Next steps
-
-- TBD
