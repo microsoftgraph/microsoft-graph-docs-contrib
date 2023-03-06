@@ -190,7 +190,7 @@ Content-Type: application/json
     },
     {
         "id" : "federatedMultiFactor",
-        "displayName" : "Federation (multi-factor)",
+        "displayName" : "Federation (multifactor)",
         "authenticationMethod" : "federation"
     },
     {
@@ -200,7 +200,7 @@ Content-Type: application/json
     },
     {
         "id": "x509CertificateMultiFactor",
-        "displayName" : "Certificate-based authentication (multi-factor)",
+        "displayName" : "Certificate-based authentication (multifactor)",
         "authenticationMethod" : "x509Certificate"
     }
   ]
