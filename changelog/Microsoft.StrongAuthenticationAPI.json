@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resetPassword",
           "ChangeType": "Deletion",
-          "Description": "Deleted the **requireChangeOnNextSignIn** property from the [authenticationMethod: resetPassword](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethod-resetpassword?view=graph-rest-1.0) method.",
+          "Description": "Deleted the **requireChangeOnNextSignIn** property from the [authenticationMethod: resetPassword](https://learn.microsoft.com/en-us/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0) method.",
           "Target": "resetPassword"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resetPassword",
           "ChangeType": "Deletion",
-          "Description": "Deleted the **requireChangeOnNextSignIn** property from the [authenticationMethod: resetPassword](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethod-resetpassword?view=graph-rest-beta) method.",
+          "Description": "Deleted the **requireChangeOnNextSignIn** property from the [authenticationMethod: resetPassword](https://learn.microsoft.com/en-us/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta) method.",
           "Target": "resetPassword"
         }
       ],
