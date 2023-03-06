@@ -17,6 +17,7 @@ Update the following configuration files to use this test utility:
 
 - **ConnectionInfo.json**: This file contains all the information about the connection - the connector ID that identifies the custom connector for which this connection is being created, the data source URL, credentials to access the data source, the schema associated with the connection, and extra parameters for the connection. This configuration file is in the Config folder of the test application.
 - **CustomConnectorPortMap.json**: After you create the custom connector, add the mapping of the connector ID and the port it's running on to this file. This file is in the Microsoft Graph connector agent installation folder.
+- **Manifest.json**: The manifest file is required for identifying a connector and it's configuration while publishing a connection through the Microsoft 365 Admin Center. Update the manifest.json
 
   ![Screenshot of the port mapping in the CustomConnectorPortMap.json file.](images/connectors-sdk/port.png)
 
@@ -38,6 +39,9 @@ The test utility has three options:
 - **Test data source crawl with simulated connection**: Tests the methods in ConnectorCrawlerService. It invokes the crawl with the schedule specified in ConnectionInfo.json and prints the status of the ongoing or last completed crawl every minute. When the first crawl finishes successfully, it displays the message that the crawl has completed, and the platform keeps running to trigger additional crawls at the interval specified in ConnectionInfo.json. If you specify an incremental crawl frequency in the ConnectionInfo.json file, it triggers the incremental crawl after the first full crawl.
 
 ![Screenshot of the test utility output showing the third test scenario and that the crawl is completed](images/connectors-sdk/test3complete.png)
+
+- **Test the validity of the manifest file**: Test the validity of the manifest file
+- **Test end to end connection publish flow**: Test end to end connection publish flow
 
 To stop the utility from crawling the data source, close and restart the GraphConnectorAgentTest executable file. You can then choose a different test option, or retest an option after you update the connector code or the configuration files.
 

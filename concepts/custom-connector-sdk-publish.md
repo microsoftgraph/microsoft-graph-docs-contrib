@@ -44,11 +44,11 @@ Use the following steps to publish a connection for your custom connector:
     ```
 
     - **connectorId** should be a GUID. This field is the same as **ConnectorUniqueId** in the Connector Info Service implementation file or the GUID that you define.
-    - **AuthTypes** must be a non-empty array with one or more of the following types: `Anonymous`, `Basic`, `Windows`, `OAuth`.
-    - **additionalCrawlsSupported** is optional; you can define crawl types in addition to full and periodic full crawl, depending on your implementation and the data source support.
+    - **AuthTypes** must be a non-empty array with one or more of the following types: `Anonymous`, `Basic`, `Windows`, `OAuth2ClientCredentials`.
+    - **additionalCrawlsSupported** is optional; you can define crawl types in addition to full and periodic full crawl, depending on your implementation and the data source support. Only `Incremental` crawl is available as an option currently.
 
     >[!Note]
-    > The manifest file is automatically generated in the output directory of your project if you're using the C# project template. You can edit/update the manifest file as required.
+    > The manifest file is automatically generated in the output directory of your project if you're using the C# project template. You can edit/update the manifest file as required. It is recommended to test the validity of your manifest file using the test application.
 
 4. Name the connection. For details, see [Step 2: Name the connection](/microsoftsearch/configure-connector#step-2-name-the-connection).
 
