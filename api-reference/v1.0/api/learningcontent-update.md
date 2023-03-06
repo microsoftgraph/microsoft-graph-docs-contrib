@@ -1,6 +1,6 @@
 ---
 title: "Update learningContent"
-description: "Update the properties of a learningContent object."
+description: "Update the specified learningContent resource."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -8,15 +8,15 @@ doc_type: apiPageType
 ---
 
 # Update learningContent
-Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph
 
 Update the specified [learningContent](../resources/learningcontent.md) resource.
 
 Used by a [learning provider](../resources/learningprovider.md) to ingest or update the metadata for their content in Viva Learning. If the specified learning content doesn't yet exist for the specified provider, this operation creates the metadata for the new content. Otherwise, this operation replaces the metadata of the existing content.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -33,24 +33,27 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 For a specific learning content based on its ID (primary key):
+
 ``` http
 PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
 ```
 
 For a specific learning content based on its external ID (secondary key):
+
 ``` http
 PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}') 
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -84,6 +87,7 @@ If successful, this method returns a `202 Accepted` response code and an updated
 The following example shows a request that updates the metadata of a learning content based on its ID (primary key).
 
 #### Request
+
 The following example shows the request.
 
 <!-- {
@@ -93,7 +97,7 @@ The following example shows the request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678
+PATCH  https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678
 Content-Type: application/json
 
 {
@@ -108,7 +112,10 @@ Content-Type: application/json
     "format": "Book",
     "createdDateTime": "2018-01-01T00:00:00Z",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-    "contributors": ["Scott Simpson"],
+    "contributors": [
+      "Lina Wagner",
+      "Lisa Richter"
+    ],
     "additionalTags": [
         "Create private or public teams",
         "Add members to teams"
@@ -125,8 +132,11 @@ Content-Type: application/json
 ```
 
 #### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -138,7 +148,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
     "id": "77029588-a660-46b6-ba58-3ce4d21d5678",
     "externalId": "LP4471",
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
@@ -171,25 +181,12 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-learningcontent-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-learningcontent-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-learningcontent-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Example 2: Update the metadata of a learning content based on its external ID
 
 The following example shows a request that updates the metadata of a learning content based on its external ID (secondary key).
 
 #### Request
+
 The following example shows the request.
 
 <!-- {
@@ -199,7 +196,7 @@ The following example shows the request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='LP4471') 
+PATCH  https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='LP4471') 
 Content-Type: application/json
 
 {
@@ -214,7 +211,10 @@ Content-Type: application/json
     "format": "Book",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-    "contributor": "Scott Simpson",
+    "contributors": [
+        "Lina Wagner",
+        "Lisa Richter"
+    ],
     "additionalTags": [
         "Create private or public teams",
         "Add members to teams"
@@ -231,8 +231,11 @@ Content-Type: application/json
 ```
 
 #### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -244,7 +247,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
     "id": "77029588-a660-46b6-ba58-3ce4d21d5678",
     "externalId": "LP4471",
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",

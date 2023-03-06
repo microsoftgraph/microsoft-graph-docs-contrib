@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a container that exposes navigation properties for employee experience resources.
 
 ## Methods
@@ -23,15 +21,19 @@ Represents a container that exposes navigation properties for employee experienc
 |[Create learningProvider](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new [learningProvider](../resources/learningprovider.md) object and register it with Viva Learning using the specified display name and logos for different themes.|
 
 ## Properties
+
 None.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |learningProviders|[learningProvider](../resources/learningprovider.md) collection|A collection of learning providers.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -41,6 +43,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.employeeExperience"
+  "@odata.type": "#microsoft.graph.employeeExperience"
 }
 ```
