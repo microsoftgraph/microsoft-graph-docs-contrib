@@ -45,8 +45,8 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |:---|:---|:---|
 |components|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|`hostComponents` that are associated with this host|
 |cookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|`hostCookies` that are associated with this host|
-|passiveDns|[microsoft.graph.security.passiveDnsEntry](../resources/security-passiveDnsEntry.md) collection|`passiveDnsEntry` that are associated with this host|
-|passiveDnsReverse|[microsoft.graph.security.passiveDnsEntry](../resources/security-passiveDnsEntry.md) collection| Reverse DNS retrieval about this host.|
+|passiveDns|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Passive DNS retrieval about this host|
+|passiveDnsReverse|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection| Reverse Passive DNS retrieval about this host.|
 |reputation|[hostReputation](../resources/security-hostreputation.md)|Represents a calculated reputation of this host|
 |trackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|`hostTrackers` that are associated with this host|
 
