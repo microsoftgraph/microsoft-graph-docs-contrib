@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An `intelligenceProfileSponsorState` communicates a known state-sponsor of an actor related to a threat or vulnerability outlined in an Intelligence Profile.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|countryOrRegionCode|String|**TODO: Add Description**|
-|countryOrRegionLabel|String|**TODO: Add Description**|
+|countryOrRegionCode|String|A codified representation for this sponsor state.|
+|countryOrRegionLabel|String|A display label for this sponsor state.|
 
 ## Relationships
 None.

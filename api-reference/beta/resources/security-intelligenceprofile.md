@@ -21,7 +21,7 @@ Users of the Microsoft Threat Intelligence Profiles APIs have access to detailed
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List intelligenceProfiles](../api/security-threatintelligence-list-intelprofiles.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of the [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.|
+|[List intelligenceProfiles](../api/security-intelligenceprofile-list.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of the [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.|
 |[Get intelligenceProfile](../api/security-intelligenceprofile-get.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md)|Read the properties and relationships of a [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) object.|
 |[List indicators](../api/security-intelligenceprofile-list-indicators.md)|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Get the intelligenceProfileIndicator resources from the indicators navigation property.|
 

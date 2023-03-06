@@ -15718,44 +15718,48 @@ items:
               href: resources/security-host.md
             - name: Get
               href: api/security-host-get.md
-        - name: Host Cookie
-          items:
-            - name: Host Cookie
-              href: resources/security-hostcookie.md
         - name: Host Component
           items:
           - name: Host Component
             href: resources/security-hostcomponent.md
-        - name: Host Reputation
-          items: 
-          - name: HostReputation
-            href: resources/security-hostreputation.md
-          - name: Host Reputation Rule
-            href: resources/security-hostreputationrule.md
+          - name: Get
+            href: api/security-hostcomponent-get.md
+        - name: Host Cookie
+          items:
+            - name: Host Cookie
+              href: resources/security-hostcookie.md
+            - name: Get
+              href: api/security-hostcookie-get.md
         - name: Host Tracker
           items:
           - name: Host Tracker
             href: resources/security-hosttracker.md
+          - name: Get
+            href: api/security-hosttracker-get.md
         - name: Intelligence Profile (Intel Profile)
           items:
           - name: Intelligence Profile
             href: resources/security-intelligenceprofile.md
+          - name: Get
+            href: api/security-intelligenceprofile-get.md
+          - name: List
+            href: api/security-intelligenceprofile-list.md
+        - name: Intelligence Profile Indicator
+          items:
           - name: Intelligence Profile Indicator
             href: resources/security-intelligenceprofileindicator.md
-          - name: Intelligence Profile Sponsor State
-            href: resources/security-intelligenceprofilesponsorstate.md
+          - name: Get
+            href: api/security-intelligenceprofileindicator-get.md
         - name: Passive DNS Record
           items:
           - name: Passive DNS Record
             href: resources/security-passivednsrecord.md
         - name: Vulnerability
           items:
-          - name: CVSS Summary
-            href: resources/security-cvsssummary.md
-          - name: Hyperlink
-            href: resources/security-hyperlink.md
           - name: Vulnerability
             href: resources/security-vulnerability.md
+        - name: Vulnerability Component
+          items:
           - name: Vulnerability Componet
             href: resources/security-vulnerabilitycomponent.md
       - name: Threat submission (preview)

@@ -13,10 +13,10 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+`intelligenceProfileIndicator` are used to communicate indicators of threat or compromise that are related to the contents of [intelligenceProfile](../resources/security-intelligenceProfile.md).
 
+The Relationship from an `intelligenceProfileIndicator` to an [artifact](../resources/security-artifact.md) provides the means for Microsoft Threat Intelligence API users to further evaluate details about reported indicator.
 
-Inherits from [microsoft.graph.security.indicator](../resources/security-indicator.md).
 
 ## Methods
 |Method|Return type|Description|
