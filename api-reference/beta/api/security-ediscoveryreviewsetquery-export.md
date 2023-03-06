@@ -48,13 +48,12 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|outputName|String| Name of the export. Required. |
-|description|String| Description of the export |
-|azureBlobContainer (deprecated) |String| when you export to your own Azure storage account, this is the container URL. We will be deprecating the property from April,2023. |
-|azureBlobToken (deprecated) |String| when you export to your own Azure storage account, SAS token for the container URL. We will be deprecating the property from April,2023. |
-|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.  Please note: 'fileInfo' option would be automatically set to true and will be deprecated from April 2023.|
+|description|String| Description of the export. |
+|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`. The `fileInfo` member is deprecated and will stop returning data on April, 2023.|
 |exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
-
+|outputName|String| Name of the export. Required. |
+|azureBlobContainer (deprecated) |String| when you export to your own Azure storage account, this is the container URL. The **azureBlobContainer** property is deprecated and will stop returning data on April, 2023. |
+|azureBlobToken (deprecated) |String| when you export to your own Azure storage account, SAS token for the container URL. The **azureBlobToken** property is deprecated and will stop returning data on April, 2023. |
 
 ## Response
 

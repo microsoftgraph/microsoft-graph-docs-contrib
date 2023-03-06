@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryExportFileMetadata resource type"
-description: "Represents the meta data for ediscovery export."
+description: "Represents the file metadata for an export in eDiscovery."
 author: "vbhatt0211"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,20 +13,22 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file meta data for export in ediscovery.
+Represents the file metadata for an export in eDiscovery.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
-
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|fileName | String | Name of the file. |
-|size| Int64 | Size of the file. |
-|downloadUrl| String |URL to download the export. | 
+|downloadUrl| String |The URL to download the export. |
+|fileName | String | The name of the file. |
+|size| Int64 | The size of the file. |
+
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -39,9 +41,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryExportFileMetadata",
+  "downloadUrl": "String",
   "fileName": "String",
-  "size": "Integer",
-  "downloadUrl": "String"
+  "size": "Int64"
 }
 ```
-
