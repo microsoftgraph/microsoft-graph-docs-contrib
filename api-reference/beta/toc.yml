@@ -15704,10 +15704,12 @@ items:
             href: resources/security-article.md
           - name: Get
             href: api/security-article-get.md
+          - name: List
+            href: api/security-article-list.md
         - name: Article Indicator
           items:
-          -name: Article Indicator
-          href: resources/security-articleindicator.md
+            -name: Article Indicator
+            href: resources/security-articleindicator.md
         - name: Host
           items:
             - name: Host
