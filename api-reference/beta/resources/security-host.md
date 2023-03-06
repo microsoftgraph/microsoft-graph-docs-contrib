@@ -28,9 +28,9 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |[Get host](../api/security-host-get.md)|[microsoft.graph.security.host](../resources/security-host.md)|Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object.|
 |[List components](../api/security-hostname-list-components.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Get the hostComponent resources from the components navigation property.|
 |[List cookies](../api/security-hostname-list-cookies.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Get the hostCookie resources from the cookies navigation property.|
-|[List passiveDns](../api/security-hostname-list-passivedns.md)|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md) collection|Get the passiveDns resources from the passiveDns navigation property.|
-|[List passiveDnsReverse](../api/security-hostname-list-passivedns.md)|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md) collection|Get the passiveDns resources from the passiveDnsReverse navigation property.|
-|[Get hostReputation](../api/security-host-get-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) collection|Get the hostReputation resources from the reputation navigation property.|
+|[List passiveDns](../api/security-hostname-list-passivedns.md)|[microsoft.graph.security.passivednsrecord](../resources/security-passivednsrecord.md) collection|Get the passiveDns resources from the passiveDns navigation property.|
+|[List passiveDnsReverse](../api/security-hostname-list-passivedns.md)|[microsoft.graph.security.passivednsrecord](../resources/security-passivednsrecord.md) collection|Get the passiveDns resources from the passiveDnsReverse navigation property.|
+|[Get reputation](../api/security-host-get-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) |Get the hostReputation resources from the reputation navigation property.|
 |[List trackers](../api/security-hostname-list-trackers.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Get the hostTracker resources from the trackers navigation property.|
 
 ## Properties
