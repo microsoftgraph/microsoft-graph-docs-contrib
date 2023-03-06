@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A `formattedContent` is meant to represent formatted data content, and indicates both the content and format of that data. This will not represent large binary contents.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|String|**TODO: Add Description**|
-|format|microsoft.graph.security.contentFormat|**TODO: Add Description**.The possible values are: `text`, `html`, `markdown`, `unknownFutureValue`.|
+|content|String|The content of this `formattedContent`.  |
+|format|microsoft.graph.security.contentFormat|The format of the content. The possible values are: `text`, `html`, `markdown`, `unknownFutureValue`.|
 
 ## Relationships
 None.

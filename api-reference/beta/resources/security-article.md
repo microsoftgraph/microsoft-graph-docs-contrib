@@ -18,7 +18,7 @@ Articles are narratives by Microsoft that provide insight into threat actors, to
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List articles](../api/security-threatintelligence-list-articles.md)|[microsoft.graph.security.article](../resources/security-article.md) collection|Get a list of the [microsoft.graph.security.article](../resources/security-article.md) objects and their properties.|
+|[List articles](../api/security-article-list.md)|[microsoft.graph.security.article](../resources/security-article.md) collection|Get a list of the [microsoft.graph.security.article](../resources/security-article.md) objects and their properties.|
 |[Get article](../api/security-article-get.md)|[microsoft.graph.security.article](../resources/security-article.md)|Read the properties and relationships of a [microsoft.graph.security.article](../resources/security-article.md) object.|
 |[List indicators](../api/security-article-list-indicators.md)|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) collection|Get the articleIndicator resources from the indicators navigation property.|
 

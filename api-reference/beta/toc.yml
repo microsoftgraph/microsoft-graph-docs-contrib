@@ -15710,6 +15710,8 @@ items:
           items:
             - name: Article Indicator
               href: resources/security-articleindicator.md
+            - name: Get
+              href: api/security-articleindicator-get.md
         - name: Host
           items:
             - name: Host

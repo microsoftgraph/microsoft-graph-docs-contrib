@@ -13,23 +13,23 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+`ArticleIndicators` are used to communicate indicators of threat or compromise that are related to the contents of [article](../resources/security-article.md).
 
+The Relationship from an `ArticleIndicator` to an [artifact](../resources/security-artifact.md) provides the means for Microsoft Threat Intelligence API users to further evaluate details about reported indicator.
 
 Inherits from [microsoft.graph.security.indicator](../resources/security-indicator.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List articleIndicators](../api/security-article-list-indicators.md)|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) collection|Get a list of the [microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) objects and their properties.|
 |[Get articleIndicator](../api/security-articleindicator-get.md)|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md)|Read the properties and relationships of a [microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) object.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The system-generated id for the articleIndicator|
-|source|microsoft.graph.security.indicatorSource|Communicates where this indicator originated. The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`.|
+|id|String|The system-generated id for the `articleIndicator`|
+|source|microsoft.graph.security.indicatorSource|Communicates where this `articleIndicator` originated. The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|

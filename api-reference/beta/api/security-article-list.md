@@ -34,7 +34,11 @@ GET /security/threatIntelligence/articles
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$search`, `$top`, `$skip`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+
+The API enforces the following conditions when supporting `$select`:
+* Only single-term searches are supported today
 
 ## Request headers
 |Name|Description|
@@ -58,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/{articleId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/articles
 ```
 
 
@@ -76,24 +80,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.article",
-    "id": "dc5ca917-48fd-d7d5-eec0-2d492f042636",
-    "createdDateTime": "String (timestamp)",
-    "lastUpdatedDateTime": "String (timestamp)",
-    "title": "String",
-    "summary": {
-      "@odata.type": "microsoft.graph.security.formattedContent"
-    },
-    "featured": "Boolean",
-    "body": {
-      "@odata.type": "microsoft.graph.security.formattedContent"
-    },
-    "tags": [
-      "String"
-    ],
-    "imageUrl": "String"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.article",
+      "id": "dc5ca917-48fd-d7d5-eec0-2d492f042636",
+      "createdDateTime": "String (timestamp)",
+      "lastUpdatedDateTime": "String (timestamp)",
+      "title": "String",
+      "summary": {
+        "@odata.type": "microsoft.graph.security.formattedContent"
+      },
+      "featured": "Boolean",
+      "body": {
+        "@odata.type": "microsoft.graph.security.formattedContent"
+      },
+      "tags": [
+        "String"
+      ],
+      "imageUrl": "String"
+    }
+  ]
 }
 ```
 
