@@ -140,7 +140,6 @@ Prefer: return=representation
 
 ---
 
-
 #### Response
 
 The following is an example of the response. 

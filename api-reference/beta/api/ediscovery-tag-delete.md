@@ -100,7 +100,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0
 
 ---
 
-
 ### Response
 
 <!-- {

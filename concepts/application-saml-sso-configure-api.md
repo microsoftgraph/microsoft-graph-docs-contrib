@@ -69,7 +69,6 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -154,7 +153,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 > [!NOTE]
 > Allow some time for the app to be provisioned into your Azure AD tenant. It is not instant. One strategy is to do a GET query on the application or service principal object every 5-10 seconds until the query is successful.
@@ -384,7 +382,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -446,7 +443,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -552,7 +548,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -628,7 +623,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -699,7 +693,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -760,7 +753,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -1001,7 +993,6 @@ Content-type: application/json
 
 ---
 
-
 ##### Response
 
 <!-- {
@@ -1058,7 +1049,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -1124,7 +1114,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -1198,7 +1187,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -1293,7 +1281,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52f
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -1344,7 +1331,6 @@ DELETE https://graph.microsoft.com/v1.0/users/040f9599-7c0f-4f94-aa75-8394c4c6ea
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -1394,7 +1380,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

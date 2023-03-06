@@ -4,22 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var noncustodialDataSource = new Microsoft.Graph.Ediscovery.NoncustodialDataSource
+var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.NoncustodialDataSource
 {
 	ApplyHoldToSource = false,
-	DataSource = new SiteSource
+	DataSource = new Microsoft.Graph.Beta.Models.Ediscovery.DataSource
 	{
-		Site = new Site
+		OdataType = "microsoft.graph.ediscovery.siteSource",
+		AdditionalData = new Dictionary<string, object>
 		{
-			WebUrl = "https://contoso.sharepoint.com/sites/SecretSite"
-		}
-	}
+			{
+				"site" , new 
+				{
+					WebUrl = "https://contoso.sharepoint.com/sites/SecretSite",
+				}
+			},
+		},
+	},
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].NoncustodialDataSources.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].NoncustodialDataSources
-	.Request()
-	.AddAsync(noncustodialDataSource);
 
 ```

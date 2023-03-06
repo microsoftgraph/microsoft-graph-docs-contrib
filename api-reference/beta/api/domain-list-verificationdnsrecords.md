@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 
 ---
 
-
 ##### Response
 
 Note: The response object shown here might be shortened for readability.

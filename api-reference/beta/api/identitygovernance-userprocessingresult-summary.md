@@ -111,7 +111,6 @@ GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 ### Response
 
 The following is an example of the response
