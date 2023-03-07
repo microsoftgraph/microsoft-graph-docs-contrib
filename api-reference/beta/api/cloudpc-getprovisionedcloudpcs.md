@@ -80,7 +80,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "Collection(microsoft.graph.cloudPcConnectivityEvent)",
+  "@odata.type": "Collection(microsoft.graph.cloudPC)",
   "name": "cloudpc.getProvisionedCloudPCs"
 }
 -->
