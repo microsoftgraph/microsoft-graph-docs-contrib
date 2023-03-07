@@ -81,7 +81,7 @@ Content-Type: application/json
     "score": 100,
     "rules": [
       {
-        "name": "RiskIQ Intel Article",
+        "name": "Microsoft Defender Threat Intelligence Intel Article",
         "description": "Activity Snapshot: DPRK Actors Target Maritime Sector",
         "severity": "high",
         "relatedDetailsUrl": "https://ti.defender.microsoft.com/article/831b70a4"

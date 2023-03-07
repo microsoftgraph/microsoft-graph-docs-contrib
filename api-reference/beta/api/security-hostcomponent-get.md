@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hostComponents/{hostComponentId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hostComponents/TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t
 ```
 
 
@@ -71,20 +71,23 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.security.hostComponent"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.hostComponent",
-    "id": "931b6aea-d0c3-4d23-8a3c-19066b03b9aa",
-    "firstSeenDateTime": "String (timestamp)",
-    "lastSeenDateTime": "String (timestamp)",
-    "name": "String",
-    "version": "String",
-    "category": "String"
-  }
+      "@odata.type": "#microsoft.graph.security.hostComponent",
+      "id": "TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t",
+      "firstSeenDateTime": "2023-02-28T00:00:19.644Z",
+      "lastSeenDateTime": "2023-03-06T23:58:55.615Z",
+      "name": "Microsoft-IIS",
+      "version": "10.0",
+      "category": "Server",
+      "host": {
+          "id": "c1.microsoft.com"
+      }
+    }
 }
 ```
 
