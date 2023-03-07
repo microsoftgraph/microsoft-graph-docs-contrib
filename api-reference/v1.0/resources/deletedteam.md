@@ -21,6 +21,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[getAllMessages](../api/deletedteam-getallmessages.md)|[chatMessage](../resources/chatmessage.md) collection|Get all messages in the deleted team.|
+|[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -30,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|channels|[channel](../resources/channel.md) collection|The channels those are either shared with this deleted team or created in this deleted team.|
+|channels|[channel](../resources/channel.md) collection|The channels that are either shared with this deleted team or created in this deleted team.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

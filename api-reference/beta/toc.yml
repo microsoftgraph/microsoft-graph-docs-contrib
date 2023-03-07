@@ -16882,7 +16882,7 @@ items:
             href: api/team-completemigration.md
           - name: List permission grants
             href: api/team-list-permissiongrants.md
-          - name: Team template (preview)
+          - name: Team template
             items:
               - name: Team template
                 href: resources/teamtemplate.md
