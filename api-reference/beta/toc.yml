@@ -82,6 +82,9 @@ items:
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
       href: /graph/extensibility-overview?context=graph/api/beta
+    - name: Enable metered APIs
+      href: /graph/metered-api-setup?context=graph/api/beta
+      displayName: monetize, charge, cost, pricing
     - name: Use Graph Explorer
       items:
       - name: Get started
