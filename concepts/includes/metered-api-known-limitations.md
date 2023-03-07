@@ -8,5 +8,5 @@ ms.localizationpriority: high
 
 The following limitations apply to metered APIs:
 
-- Metered Microsoft 365 APIs and services are not currently available in national cloud deployments, including Microsoft 365 GCC deployments accessed through the worldwide Microsoft Graph endpoint. For details about national clouds, see [National cloud deployments](/graph/deployments.md).
+- Metered Microsoft 365 APIs and services are only available in the Microsoft global environment and not currently available in national cloud deployments, including Microsoft 365 GCC deployments accessed through the worldwide Microsoft Graph endpoint. For details about national clouds, see [National cloud deployments](/graph/deployments.md).
 - The target application must be a confidential client application (for example, web application, web API, or daemon/service). Public client applications (desktop and mobile applications) are not supported.
