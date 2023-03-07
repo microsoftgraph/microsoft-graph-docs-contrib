@@ -21,7 +21,7 @@
         {
           "Id": "376c7fac-b9f8-4d4c-b9e4-4e7c8eda2122",
           "ApiChange": "Member",
-          "ChangedApiName": "microsoftAdminPortal",
+          "ChangedApiName": "microsoftAdminPortals",
           "ChangeType": "Addition",
           "Description": "Added the `microsoftAdminPortals` member to the **conditionalAccessRule** enumeration.",
           "Target": "conditionalAccessRule"
