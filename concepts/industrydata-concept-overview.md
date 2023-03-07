@@ -10,9 +10,9 @@ doc_type: conceptual
 
 # Overview of the industry data API in Microsoft Graph (preview)
 
-The industry data API is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. Use the API to retrieve statistics after the data is processed, and assist with monitoring and troubleshooting.
+The industry data API in Microsoft Graph is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. Use the API to retrieve statistics after the data is processed, and assist with monitoring and troubleshooting.
 
-In the current release, the API is highly tailored to the education industry.
+Currently, the API is highly tailored to the education industry.
 
 ## Why integrate with the industry API?
 
@@ -29,7 +29,7 @@ Most education software developers learn early on that class roster is one of th
 
 Use the industry data API to manage end-to-end synchronization scenarios with School Data Sync.
 
-School Data Sync helps automate the process of importing and synchronizing student identity and roster data from an SIS <!--with Azure Active Directory (Azure AD) and Microsoft 365. When the information is synchronized, you can use the Education roster APIs to read the roster information into the applications-->. A system integrator who configures the integration of a SIS of a school with School Data Sync can use the industry data API to set up synchronization from either a .CSV file or a supported SIS API connector.
+School Data Sync helps automate the process of importing and synchronizing student identity and roster data from an SIS<!--with Azure Active Directory (Azure AD) and Microsoft 365. When the information is synchronized, you can use the Education roster APIs to read the roster information into the applications-->. A system integrator who configures the integration of a SIS of a school with School Data Sync can use the industry data API to set up synchronization from either a CSV file or a supported SIS API connector.
 
 ## API reference
 
@@ -41,5 +41,5 @@ Looking for the API reference for this service?
 
 - To learn more about the industry data APIs as tailored to the education sector, see [Use the industry data API as an extract, transform, and load (ETL) engine](/graph/api/resources/industry-data-overview?view=graph-rest-beta&preserve-view=true).
 - Learn more about [education scenarios in Microsoft Graph](education-concept-overview.md).
-- Set up an education demo developer tenant, [School Data Sync](msgraph-onboarding-sds.md), [Microsoft Teams](msgraph-onboarding-msteams.md), and [try the education APIs in Graph Explorer](msgraph-onboarding-graphexplorer.md).
+- Set up an [education demo developer tenant](/graph/msgraph-onboarding-overview), [School Data Sync](msgraph-onboarding-sds.md), and [Microsoft Teams](msgraph-onboarding-msteams.md).
 - Try the industry data APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
