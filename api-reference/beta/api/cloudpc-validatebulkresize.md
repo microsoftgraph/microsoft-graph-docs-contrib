@@ -73,7 +73,6 @@ If successful, this method returns a `200 OK` response code and the requested [c
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/validateBulkResize
 Content-Type: application/json
-Content-length: 163
 
 {
   "cloudPcIds": [
@@ -100,13 +99,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcResizeValidationResult) ",
-   "value":[
+   "value": [
       {
+         "@odata.type": "#microsoft.graph.cloudPcResizeValidationResult",
          "cloudPcId":"30d0e128-de93-41dc-89ec-33d84bb662a0",
          "validationResult":"success"
       },
       {
+         "@odata.type": "#microsoft.graph.cloudPcResizeValidationResult",
          "cloudPcId":"7c82a3e3-9459-44e4-94d9-b92f93bf78dd",
          "validationResult":"operationNotSupported"
       }
