@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

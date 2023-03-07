@@ -213,7 +213,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

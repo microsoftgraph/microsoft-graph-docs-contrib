@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 
 ---
 
-
 ##### Response
 
 <!-- {

@@ -87,7 +87,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of [calendarGroup](../resources/calendargroup.md) object.
 ### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.

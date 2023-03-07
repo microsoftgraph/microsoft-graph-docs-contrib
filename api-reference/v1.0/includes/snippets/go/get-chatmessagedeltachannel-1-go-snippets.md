@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestTop := int32(2)
 
-requestParameters := &graphconfig.TeamItemChannelItemMessagesMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemChannelItemMessagesDelta()RequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.TeamItemChannelItemMessagesMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemChannelItemMessagesDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

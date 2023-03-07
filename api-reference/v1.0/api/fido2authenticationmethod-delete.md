@@ -100,7 +100,6 @@ DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/fid
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

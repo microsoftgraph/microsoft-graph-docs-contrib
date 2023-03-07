@@ -122,7 +122,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 Here is the example response

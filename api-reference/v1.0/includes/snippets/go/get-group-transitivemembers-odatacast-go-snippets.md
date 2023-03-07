@@ -13,15 +13,15 @@ headers.Add("ConsistencyLevel", "eventual")
 
 requestCount := true
 
-requestParameters := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.GroupItemTransitiveMembersGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 }
-configuration := &graphconfig.GroupItemTransitiveMembersMicrosoft.graph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.GroupItemTransitiveMembersGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").TransitiveMembers().Group().Get(context.Background(), configuration)
+result, err := graphClient.GroupsById("group-id").TransitiveMembers().GraphGroup().Get(context.Background(), configuration)
 
 
 ```

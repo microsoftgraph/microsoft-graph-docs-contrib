@@ -117,7 +117,6 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 ---
 
-
 #### Response
 The following example shows the response.
 
@@ -258,7 +257,6 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

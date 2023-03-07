@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Owners["{directoryObject-id}"].Reference
-	.Request()
-	.DeleteAsync();
+var requestBody = new Microsoft.Graph.ServicePrincipals.Item.Owners.Item.Ref.$refDeleteRequestBody
+{
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"@odata.id" , "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+		},
+	},
+};
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Owners["{directoryObject-id}"].Ref.DeleteAsync(requestBody);
+
 
 ```
