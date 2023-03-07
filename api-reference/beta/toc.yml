@@ -10623,6 +10623,8 @@ items:
             href: api/cloudpc-troubleshoot.md
           - name: Retry partner agent installation
             href: api/cloudpc-retrypartneragentinstallation.md
+          - name: Get provisioned cloudPCs by groupId and servicePlanId
+            href: api/cloudpc-getprovisionedcloudpcs.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:
