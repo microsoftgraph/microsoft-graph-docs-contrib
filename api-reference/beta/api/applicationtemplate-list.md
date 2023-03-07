@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

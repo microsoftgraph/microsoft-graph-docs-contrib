@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->

@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/l
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

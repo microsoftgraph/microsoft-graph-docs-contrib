@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->

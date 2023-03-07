@@ -92,7 +92,6 @@ PATCH https://graph.microsoft.com/beta/policies/externalIdentitiesPolicy
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

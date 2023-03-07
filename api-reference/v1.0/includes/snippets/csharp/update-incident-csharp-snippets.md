@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var incident = new Microsoft.Graph.Security.Incident
+var requestBody = new Microsoft.Graph.Models.Security.Incident
 {
-	Classification = Microsoft.Graph.Security.AlertClassification.TruePositive,
-	Determination = Microsoft.Graph.Security.AlertDetermination.MultiStagedAttack,
-	CustomTags = new List<String>()
+	Classification = Microsoft.Graph.Models.Security.AlertClassification.TruePositive,
+	Determination = Microsoft.Graph.Models.Security.AlertDetermination.MultiStagedAttack,
+	CustomTags = new List<string>
 	{
-		"Demo"
-	}
+		"Demo",
+	},
 };
+var result = await graphClient.Security.Incidents["{incident-id}"].PatchAsync(requestBody);
 
-await graphClient.Security.Incidents["{security.incident-id}"]
-	.Request()
-	.UpdateAsync(incident);
 
 ```

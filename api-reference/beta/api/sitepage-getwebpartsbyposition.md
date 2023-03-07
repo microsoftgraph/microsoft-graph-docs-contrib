@@ -68,13 +68,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_webparts_by_position"
 }
 -->
 
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/getWebPartsByPosition(horizontalSectionId={horizontalSectionId},columnId={columnId},webPartIndex={webPartIndex},isInVerticalSection={isInVerticalSection})
+```
 
 ### Response
 

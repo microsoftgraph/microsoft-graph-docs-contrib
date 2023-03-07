@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionC
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
