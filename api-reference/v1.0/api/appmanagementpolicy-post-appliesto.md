@@ -17,10 +17,10 @@ Assign an [appManagementPolicy](../resources/appManagementPolicy.md) policy obje
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                |
-| :------------------------------------- | :--------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                        |
+| :------------------------------------- | :----------------------------------------------------------------- |
 | Delegated (work or school account)     | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                             |
+| Delegated (personal Microsoft account) | Not supported.                                                     |
 | Application                            | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
@@ -34,7 +34,7 @@ POST /applications/{id}/appManagementPolicies/$ref
 ## Request headers
 
 | Name          | Description                 |
-|:--------------|:----------------------------|
+| :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
@@ -55,7 +55,6 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request to assign an appManagementPolicy to an application.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_appliesTo"

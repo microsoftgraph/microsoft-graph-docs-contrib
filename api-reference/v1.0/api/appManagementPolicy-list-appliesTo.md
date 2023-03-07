@@ -1,6 +1,6 @@
 ---
 title: "List appliesTo"
-description: "List resources assigned to an application management policy."
+description: "List application or service principal resources assigned to an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
@@ -17,10 +17,10 @@ List application and service principal objects assigned an [appManagementPolicy]
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                             |
-| :------------------------------------- | :--------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                                                                  |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                             |
+| Delegated (personal Microsoft account) | Not supported.                                                                                               |
 | Application                            | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_appManagementPolicyAppliesTo"
