@@ -9820,7 +9820,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -11639,10 +11639,12 @@ items:
       - name: Currencies
         href: resources/dynamics-currencies.md
         items:
-        - name: Get currencies
-          href: api/dynamics-currencies-get.md
         - name: Create currencies
           href: api/dynamics-create-currencies.md
+        - name: Get currencies
+          href: api/dynamics-currencies-get.md
+        - name: Update currencies
+          href: api/dynamics-currencies-update.md
         - name: Delete currencies
           href: api/dynamics-currencies-delete.md
       - name: Customer

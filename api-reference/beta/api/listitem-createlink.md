@@ -59,7 +59,7 @@ The following table shows the parameters that can be used with this action.
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
 | retainInheritedPermissions |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
-|sendNotification|Boolean|If `true`, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint. The default value is `false`. Optional.|
+|sendNotification|Boolean|If `true`, this method sends a [sharing link](../resources/permission.md#sharing-links) in an email to users specified in `recipients`. Applicable to OneDrive for Business and SharePoint. The default value is `false`. Optional.|
 
 ### Link types
 
