@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamsAppResourceSpecificPermissionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppResourceSpecificPermissionType** enumeration type.",
+          "Target": "teamsAppResourceSpecificPermissionType"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppAuthorization",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppAuthorization](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppAuthorization?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppAuthorization"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppPermissionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppPermissionSet](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppPermissionSet?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppPermissionSet"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppResourceSpecificPermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppResourceSpecificPermission](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppResourceSpecificPermission?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppResourceSpecificPermission"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorization",
+          "ChangeType": "Addition",
+          "Description": "Added the `authorization` property to the [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Property",
+          "ChangedApiName": "consentedPermissionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the `consentedPermissionSet` property to the [teamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppInstallation?view=graph-rest-beta) resource.",
+          "Target": "teamsAppInstallation"
+        }
+      ],
+      "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-06T00:51:19.3981715Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "adc688c0-193c-44da-bf01-bebf53fbf02d",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMembersNotificationRecipient",
