@@ -118,6 +118,44 @@ A URL constructed with only the siteCollection (`SPSite`) ID will point to the r
 GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
 ```
 
+## Mapping from SharePoint REST v1 API URL's to Microsoft Graph API URL's
+
+These examples are intended to help developers familiar with SharePoint REST v1 API URL patterns adapt their use cases to similar Microsoft Graph API URL patterns.
+
+### Pattern 1
+```http
+GET https://graph.microsoft.com/v1.0/sites/{hostname}:/{site-server-relative-url}
+
+Access the site associated with the specified `SPWeb` URL.
+
+### Example 1
+```http
+GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/teams/hr/benefits
+```
+
+Returns information about the site associated with `SPWeb` URL https://contoso.sharepoint.com/teams/hr/benefits.
+In this example, "benefits" is an `SPWeb` within the site collection (`SPSite`) at https://contoso.sharepoint.com/teams/hr.
+
+### Pattern 2
+```http
+GET https://graph.microsoft.com/v1.0/sites/{hostname}:/{site-server-relative-url}:/lists/{list-id}/items/{item-id}
+
+Access the list item associated with the following components:
+| Component                                      | Description
+|:-----------------------------------------------|:-----------------------------------
+| {hostname}                                     | The hostname of the site
+| {site-server-relative-url}                     | The server-relative URL of the site (`SPWeb`)
+| {list-id}                                      | The GUID ID of the list (`SPList`) in the above site
+| {item-id}                                      | The GUID or integer ID of the list item (`SPListItem`) in the above list
+
+### Example 2
+```http
+GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/teams/hr/benefits:/lists/5771e865-4e91-48b8-a0de-35a25d4e52fe/items/42
+```
+
+Returns information about the `SPListItem` with integer ID `42`, belonging to the list with GUID ID `5771e865-4e91-48b8-a0de-35a25d4e52fe`,
+belonging to the site associated with `SPWeb` URL https://contoso.sharepoint.com/teams/hr/benefits.
+
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
