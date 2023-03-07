@@ -154,7 +154,6 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

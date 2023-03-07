@@ -80,9 +80,9 @@ Content-type: application/json
 {
   "ToRecipients":[
       {
-        "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
-          "name":"Dana Swope"
+        "EmailAddress": {
+          "Address":"danas@contoso.onmicrosoft.com",
+          "Name":"Dana Swope"
         }
       }
      ],
@@ -116,8 +116,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ##### Response
 Here is an example of the response.

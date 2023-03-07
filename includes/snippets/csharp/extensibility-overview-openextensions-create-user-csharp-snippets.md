@@ -4,22 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var extension = new OpenTypeExtension
+var requestBody = new Extension
 {
-	ExtensionName = "com.contoso.socialSettings",
+	OdataType = "#microsoft.graph.openTypeExtension",
 	Id = "com.contoso.socialSettings",
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"skypeId", "skypeId.AdeleV"},
-		{"linkedInProfile", "www.linkedin.com/in/testlinkedinprofile"},
-		{"xboxGamerTag", "AwesomeAdele"}
-	}
+		{
+			"extensionName" , "com.contoso.socialSettings"
+		},
+		{
+			"skypeId" , "skypeId.AdeleV"
+		},
+		{
+			"linkedInProfile" , "www.linkedin.com/in/testlinkedinprofile"
+		},
+		{
+			"xboxGamerTag" , "AwesomeAdele"
+		},
+	},
 };
+var result = await graphClient.Users["{user-id}"].Extensions.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Extensions
-	.Request()
-	.AddAsync(extension);
 
 ```

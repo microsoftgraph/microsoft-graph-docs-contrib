@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

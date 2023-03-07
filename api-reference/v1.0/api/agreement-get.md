@@ -80,7 +80,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/0e
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -142,7 +141,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/09
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
