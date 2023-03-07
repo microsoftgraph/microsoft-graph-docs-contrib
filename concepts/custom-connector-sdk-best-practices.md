@@ -25,7 +25,7 @@ Both periodic full and incremental crawls have their crawl progress markers.
 ### Usage of the crawl progress marker during periodic full crawls
 
 The SDK sends the crawl progress marker if the previous crawl crashed or a scheduled crawl was missed due to the Microsoft Graph connector agent being offline during periodic full crawls.
-If no previous crawl crash had occurred, you have to crawl the data source from the beginning.
+If the previous crawl had not crashed, you have to crawl the data source from the beginning.
 
 ### Usage of the crawl progress marker during incremental crawls
 

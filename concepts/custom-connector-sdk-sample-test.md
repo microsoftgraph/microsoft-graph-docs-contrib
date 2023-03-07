@@ -58,11 +58,7 @@ Use the following steps to test your connector:
 
 ```
 
-3. Run GraphConnectorAgentTest.exe, which is located in the C:\Program Files\Graph connector agent\TestApp folder.
-
-4. Make sure the connector is running.
-
-5. Update the manifest.json as:
+3. Update the manifest.json file located in the following folder: C:\Program Files\Graph connector agent\TestApp\Config:
 
 ```json
     {
@@ -74,6 +70,10 @@ Use the following steps to test your connector:
     }
 
 ```
+
+4. Run GraphConnectorAgentTest.exe, which is located in the C:\Program Files\Graph connector agent\TestApp folder.
+
+5. Make sure the connector is running.
 
 6. Test the connector using options all the options (1, 2, 3, 4, 5) in GraphConnectorAgentTest.exe.
 
