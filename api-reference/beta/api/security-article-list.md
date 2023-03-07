@@ -1,6 +1,6 @@
 ---
 title: "List articles"
-description: "Read the properties and relationships of a microsoft.graph.security.article object."
+description: "Read the properties and relationships of a microsoft.graph.security.article objects."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
