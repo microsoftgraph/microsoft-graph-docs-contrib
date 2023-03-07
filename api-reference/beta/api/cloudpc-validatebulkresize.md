@@ -62,9 +62,9 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 ## Examples
 
-### Example 1: Perform status validation for selected Cloud PCs to check if the devices can be bulk resized
+### Request
 
-#### Request
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -87,7 +87,9 @@ Content-length: 163
 ```
 ---
 
-#### Response
+### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
