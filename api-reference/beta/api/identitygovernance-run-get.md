@@ -1,5 +1,5 @@
 ---
-title: "Get run (for a lifecycle workflow)"
+title: "Get run"
 description: "Read the properties and relationships of a run object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get run (for a lifecycle workflow)
+# Get run
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 #### Response
 
 The following is an example of the response
@@ -178,7 +177,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

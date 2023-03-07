@@ -61,6 +61,9 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
+> [!NOTE]
+> The `$top` query parameter might not return all chats within a single response object. If the result set for all chats spans multiple pages, the response object includes an **@odata.nextLink** property that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned.
+
 ## Request headers
 
 | Header       | Value |
@@ -118,7 +121,6 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -219,7 +221,6 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -427,7 +428,6 @@ GET https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview/createdDa
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -522,7 +522,6 @@ GET https://graph.microsoft.com/v1.0/chats?$expand=lastMessagePreview
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -31,7 +31,7 @@ removeExclusions := []string {
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudienceById().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().WindowsUpdatesUpdateAudienceById().Post(context.Background(), requestBody, nil)
 
 
 ```

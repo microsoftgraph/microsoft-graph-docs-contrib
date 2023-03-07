@@ -79,6 +79,31 @@
             "source_path_from_root": "/concepts/change-notifications-delivery.md",
             "redirect_url": "/graph/change-notifications-delivery-event-hubs",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md",
+            "redirect_url": "/graph/synchronization-configure-with-directory-extension-attributes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md",
+            "redirect_url": "/graph/synchronization-configure-with-custom-target-attributes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/synchronization-synchronizationjob-provision-on-demand.md",
+            "redirect_url": "/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/synchronization-quarantine.md",
+            "redirect_url": "/graph/api/resources/synchronization-synchronizationquarantine?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/synchronization-synchronization-secrets.md",
+            "redirect_url": "/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-beta",
+            "redirect_document_id": true
         }
     ]
 }

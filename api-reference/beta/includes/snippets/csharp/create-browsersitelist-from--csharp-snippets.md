@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var browserSiteList = new BrowserSiteList
+var requestBody = new BrowserSiteList
 {
 	DisplayName = "Production Site List A",
-	Description = "Production site list for team A"
+	Description = "Production site list for team A",
 };
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists.PostAsync(requestBody);
 
-await graphClient.Admin.Edge.InternetExplorerMode.SiteLists
-	.Request()
-	.AddAsync(browserSiteList);
 
 ```

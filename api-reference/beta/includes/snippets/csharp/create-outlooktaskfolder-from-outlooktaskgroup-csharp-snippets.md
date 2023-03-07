@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var outlookTaskFolder = new OutlookTaskFolder
+var requestBody = new OutlookTaskFolder
 {
-	Name = "Cooking"
+	Name = "Cooking",
 };
+var result = await graphClient.Me.Outlook.TaskGroups["{outlookTaskGroup-id}"].TaskFolders.PostAsync(requestBody);
 
-await graphClient.Me.Outlook.TaskGroups["{outlookTaskGroup-id}"].TaskFolders
-	.Request()
-	.AddAsync(outlookTaskFolder);
 
 ```

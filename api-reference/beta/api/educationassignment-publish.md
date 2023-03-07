@@ -94,7 +94,6 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 
 ---
 
-
 ### Response
 The following is an example of a response. 
 

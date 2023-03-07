@@ -87,8 +87,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 ---
 
-
-
 ### Response
 
 <!-- {
