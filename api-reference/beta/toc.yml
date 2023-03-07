@@ -15463,27 +15463,23 @@ items:
           - name: List
             href: api/attacksimulationroot-list-simulations.md
           - name: Create
-            href: api/attacksimulationroot-create-simulation.md
+            href: api/attacksimulationroot-post-simulation.md
           - name: Get
-            href: api/attacksimulationroot-get-simulations.md
+            href: api/simulation-get.md
           - name: Update
-            href: api/attacksimulationroot-update-simulation.md
+            href: api/simulation-update.md
           - name: Delete
-            href: api/attacksimulationroot-delete-simulation.md
+            href: api/simulation-delete.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
             href: api/simulationreportoverview-get.md
-          - name: Get excluded account targets
-            href: api/attacksimulationroot-get-excludedaccounttarget.md
-          - name: Get included account targets
-            href: api/attacksimulationroot-get-includedaccounttarget.md
         - name: Attack simulation operation
           items:
           - name: Attack simulation operation
             href: resources/attacksimulationoperation.md
           - name: Get
-            href: api/attacksimulationroot-get-operation.md
+            href: api/attacksimulationoperation-get.md
         - name: Payload
           items:
           - name: Payload
@@ -15491,9 +15487,9 @@ items:
           - name: List
             href: api/attacksimulationroot-list-payloads.md
           - name: Get
-            href: api/attacksimulationroot-get-payload.md
+            href: api/payload-get.md
           - name: Get payload detail
-            href: api/attacksimulationroot-get-payloadsdetails.md
+            href: api/payloaddetail-get.md
         - name: Reports
           items:
           - name: Attack simulation reports
@@ -15524,7 +15520,7 @@ items:
           - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
           - name: Get
-            href: api/attacksimulationroot-get-simulationautomations.md
+            href: api/simulationautomation-get.md
         - name: Simulation automation run
           items:
           - name: Simulation automation run

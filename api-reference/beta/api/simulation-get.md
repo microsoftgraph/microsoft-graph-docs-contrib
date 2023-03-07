@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get simulation
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -35,25 +36,7 @@ GET /security/attackSimulation/simulations/{simulationId}
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
-
-If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
-
-The following are examples of their use:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /security/attackSimulation/simulations/{simulationId}?$count=true
-GET /security/attackSimulation/simulations/{simulationId}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulations/{simulationId}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulations/{simulationId}?$orderby={property}
-GET /security/attackSimulation/simulations/{simulationId}?$skipToken={skipToken}
-GET /security/attackSimulation/simulations/{simulationId}?$top=1
-GET /security/attackSimulation/simulations/{simulationId}?$select={property}
-```
+This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -69,12 +52,14 @@ If successful, this method returns a `200 OK` response code and a [simulation](.
 
 ## Examples
 
-### Request
+### Example 1: Get an attack simulation campaign
+
+The following example shows how to get an attack simulation campaign for a tenant.
+
+#### Request
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_simulation"
@@ -84,33 +69,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-simulation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-simulation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-simulation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-simulation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-simulation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-simulation-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -149,5 +108,87 @@ Content-Type: application/json
     "isAutomated": false,
     "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
     "payloadDeliveryPlatform": "email"
+}
+```
+
+### Example 2: Get included account targets
+
+The following example shows how to get included account targets (users) for an attack simulation campaign for a tenant.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_simulation_includedAccountTarget"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/includedAccountTarget
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accountTargetContent"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "john@contoso.com"
+  ]
+}
+```
+
+### Example 3: Get excluded account targets
+
+The following example shows how to get excluded account targets (users) for an attack simulation campaign for a tenant.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_simulation_excludedAccountTarget"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/excludedAccountTarget
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accountTargetContent"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "alie@contoso.com"
+  ]
 }
 ```

@@ -32,25 +32,8 @@ GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}
 ```
 
 ## Optional query parameters
-This method supports the `$count`, `$filter`, `$orderby`, `$skip`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **displayName** and **status** properties.
 
-If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
-
-The following are examples of their use:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$count=true
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$orderby={property}
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$skip={skipCount}
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$top=1
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$select={property}
-```
+This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -70,8 +53,6 @@ If successful, this method returns a `200 OK` response code and a [simulationAut
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_simulationautomation"
@@ -80,32 +61,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomations/fbad62b0-b32d-b6ac-9f48-d84bbea08f96
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-simulationautomation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-simulationautomation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-simulationautomation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-simulationautomation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-simulationautomation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-simulationautomation-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -144,4 +99,3 @@ Content-Type: application/json
     "nextRunDateTime": "2022-01-01T01:01:01.01Z"
 }
 ```
-

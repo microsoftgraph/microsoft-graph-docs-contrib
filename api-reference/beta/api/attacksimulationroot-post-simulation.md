@@ -72,8 +72,6 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_simulation"
@@ -85,14 +83,11 @@ Content-type: application/json
 
 {
   "displayName": "Graph Simulation",
-  "payloadDeliveryPlatform": "email",
   "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
   "durationInDays": 7,
   "attackTechnique": "credentialHarvesting",
-  "attackType": "social",
   "status": "scheduled",
-  "completionDateTime": "2022-09-16T06:13:08.4297612Z",
-  "launchDateTime": "2022-09-05T06:13:08.4297612Z",
+  "durationInDays": "3",
   "includedAccountTarget": {
     "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
     "type" : "addressBook",
@@ -102,32 +97,6 @@ Content-type: application/json
   },
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-simulation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-simulation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-simulation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-simulation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-simulation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-simulation-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
