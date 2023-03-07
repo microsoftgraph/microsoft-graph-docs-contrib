@@ -85,7 +85,7 @@ Content-Type: application/json
       "version": "10.0",
       "category": "Server",
       "host": {
-          "id": "c1.microsoft.com"
+          "id": "contoso.com"
       }
     }
 }

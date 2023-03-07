@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/microsoft.com
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com
 ```
 
 
@@ -80,9 +80,9 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.hostname",
-    "id": "microsoft.com",
-    "firstSeenDateTime": "1985-06-06T06:25:53Z",
-    "lastSeenDateTime": "2023-03-07T13:19:35Z",
+    "id": "contoso.com",
+    "firstSeenDateTime": "2009-09-02T03:29:10.000Z",
+    "lastSeenDateTime": "2009-09-02T03:29:10.000Z",
     "registrar": "MarkMonitor Inc.",
     "registrant": "Microsoft Corporation"
   }

@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/microsoft.com/passiveDns
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/passiveDns
 ```
 
 
@@ -85,7 +85,7 @@ Content-Type: application/json
       "collectedDateTime": "2023-03-07T13:59:34.735Z",
       "recordType": "A",
       "parentHost": {
-          "id": "microsoft.com"
+          "id": "contoso.com"
       },
       "artifact": {
           "@odata.type": "#microsoft.graph.security.ipAddress",

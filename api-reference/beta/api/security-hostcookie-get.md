@@ -71,18 +71,21 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.security.hostCookie"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.hostCookie",
-    "id": "ca967bf8-cfd2-a07e-64af-db72f1d80348",
-    "firstSeenDateTime": "String (timestamp)",
-    "lastSeenDateTime": "String (timestamp)",
-    "name": "String",
-    "domain": "String"
+    "id": "c2VjdXJlbWFpbC5jb250b3NvLmNvbSQkT0lEQyQkc2VjdXJlbWFpbC5jb250b3NvLmNvbQ==",
+    "firstSeenDateTime": "2022-02-26T07:23:34.558Z",
+    "lastSeenDateTime": "2023-02-28T04:57:15.288Z",
+    "domain": "securemail.contoso.com",
+    "name": "OIDC",
+    "host": {
+        "id": "securemail.contoso.com"
+    }
   }
 }
 ```
