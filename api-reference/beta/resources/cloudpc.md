@@ -62,9 +62,10 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |managedDeviceName|String|The Intune device name of the Cloud PC.|
 |onPremisesConnectionName|String|The Azure network connection that is applied during the provisioning of Cloud PCs.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
+|partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
-|partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
@@ -118,28 +119,29 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPC",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "imageDisplayName": "String",
   "aadDeviceId": "String",
+  "connectivityResult": "String",
+  "diskEncryptionState": "String",
+  "displayName": "String",
+  "gracePeriodEndDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "imageDisplayName": "String",
+  "lastLoginResult": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastRemoteActionResult": "String",
   "managedDeviceId": "String",
   "managedDeviceName": "String",
+  "onPremisesConnectionName": "String",
+  "osVersion": "String",
+  "partnerAgentInstallResults": "String",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
-  "partnerAgentInstallResults": "String",
-  "onPremisesConnectionName": "String",
+  "provisioningType": "String",
   "servicePlanId": "String",
-  "servicePlanType": "String",
   "servicePlanName": "String",
+  "servicePlanType": "String",
   "status": "String",
-  "userPrincipalName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "gracePeriodEndDateTime": "String (timestamp)",
   "userAccountType": "String",
-  "osVersion": "String",
-  "lastRemoteActionResult": "String",
-  "lastLoginResult": "String",
-  "connectivityResult": "String",
-  "diskEncryptionState": "String"
+  "userPrincipalName": "String"
 }
 ```

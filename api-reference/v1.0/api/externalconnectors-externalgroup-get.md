@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 

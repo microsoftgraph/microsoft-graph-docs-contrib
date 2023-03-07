@@ -126,7 +126,6 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -190,7 +189,6 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/b
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

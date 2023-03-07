@@ -105,7 +105,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

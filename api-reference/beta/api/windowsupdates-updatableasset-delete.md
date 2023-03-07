@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/b5
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",
