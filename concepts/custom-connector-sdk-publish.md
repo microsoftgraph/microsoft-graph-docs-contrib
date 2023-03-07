@@ -39,7 +39,7 @@ Use the following steps to publish a connection for your custom connector:
 
     The data in the parameter is opaque to the platform. It's serialized and stored as a string and passed to the connector. The connector can deserialize this data as required and use it.
 
-7. On the [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels) page, assign semantic labels to your source properties. The default MRT will not work if semantic labels are not assigned.
+7. On the [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels) page, assign semantic labels to your source properties. The default result type will not work if semantic labels are not assigned.
 
 8. Manage the schema:
   
