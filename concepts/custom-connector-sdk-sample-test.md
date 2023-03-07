@@ -63,7 +63,7 @@ Use the following steps to test your connector:
 ```json
     {
     // This is your unique connector ID/provider ID.
-    "connectorId": "<ConnectorGuid>",
+    "connectorId": "a1c127ed-29ce-47fb-ad4a-8836871922ea", //Update your ConnectorUniqueId here
     
     // This is a list of all supported auth types. Remove the ones that the connector does not support.
     "authTypes": [ "Anonymous" ]   
