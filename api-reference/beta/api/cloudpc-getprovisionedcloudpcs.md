@@ -90,13 +90,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#cloudPCs",
     "value": [
         {
+            "@odata.type": "#microsoft.graph.cloudPC",
             "id": "662009bc-7732-4f6f-8726-25883518b33e",
             "displayName": "Demo-0",
             "imageDisplayName": "Windows-10 19h1-evd",
             "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
+            "diskEncryptionState": "encryptedUsingCustomerManagedKey",
             "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
             "managedDeviceName": "CPC-ps1-SHYL-46",
             "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c3732450",
@@ -110,10 +111,12 @@ Content-Type: application/json
             "provisioningType": "dedicated"
         },
         {
+            "@odata.type": "#microsoft.graph.cloudPC",
             "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
             "displayName": "Demo-1",
             "imageDisplayName": "Custom image name",
             "aadDeviceId": "61289490-ef06-4962-8f49-455329c8893c",
+            "diskEncryptionState": "encryptedUsingCustomerManagedKey",
             "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d65970",
             "managedDeviceName": "CPC-ps2-7ERZ-QE",
             "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c86029dff",
