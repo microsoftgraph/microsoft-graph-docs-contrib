@@ -77,6 +77,7 @@ The following is an example of a request.
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/bulkResize
 Content-Type: application/json
 Content-length: 163
+
 {
   "cloudPcIds": [
     "30d0e128-de93-41dc-89ec-33d84bb662a0", 
@@ -85,10 +86,6 @@ Content-length: 163
   "targetServicePlanId": "662009bc-7732-4f6f-8726-25883518b33e"
 }
 ```
-
----
-
-
 
 ### Response
 
