@@ -18,11 +18,11 @@ Start an existing synchronization job. If the job is in a paused state, it will 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported. |
-|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Synchronization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -83,7 +83,6 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 The following is an example of a response.

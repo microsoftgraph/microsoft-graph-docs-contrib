@@ -104,7 +104,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 If successful, this method returns `201 Created` response code and [extensionProperty](../resources/extensionProperty.md) object in the response body.

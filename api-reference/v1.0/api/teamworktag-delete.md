@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/53c53217-fe77-4383-bc5a-ed4937a1ae
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -84,9 +84,6 @@ DELETE https://graph.microsoft.com/beta/print/taskDefinitions/4c6a0f26-8e5d-4bf6
 
 ---
 
-
----
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

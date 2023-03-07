@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedroleassignmentmultiple-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -122,7 +122,6 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -199,7 +198,6 @@ GET  https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -290,7 +288,6 @@ GET  https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments?$fi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

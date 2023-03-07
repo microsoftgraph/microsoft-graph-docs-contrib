@@ -103,7 +103,6 @@ Content-Type: application/json
 
 ---
 
-
 In this example, `{id}` and `{resourceId-value}` would both be the `id` of the resource service principal, and `{principalId}` would be the `id` of the assigned user, group, or client service principal.
 
 ### Response

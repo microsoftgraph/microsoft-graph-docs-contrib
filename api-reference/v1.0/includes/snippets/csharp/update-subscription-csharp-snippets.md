@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var subscription = new Subscription
+var requestBody = new Subscription
 {
-	ExpirationDateTime = DateTimeOffset.Parse("2016-11-22T18:23:45.9356913Z")
+	ExpirationDateTime = DateTimeOffset.Parse("2016-11-22T18:23:45.9356913Z"),
 };
+var result = await graphClient.Subscriptions["{subscription-id}"].PatchAsync(requestBody);
 
-await graphClient.Subscriptions["{subscription-id}"]
-	.Request()
-	.UpdateAsync(subscription);
 
 ```
