@@ -1,5 +1,5 @@
 ---
-title: "List tasks (in a lifecycle workflow)"
+title: "List tasks"
 description: "Retrieve the details of the built-in tasks in Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List tasks (in a lifecycle workflow)
+# List tasks
 
 Namespace: microsoft.graph.identityGovernance
 
