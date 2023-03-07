@@ -9,5 +9,5 @@ This API has [licensing and payment requirements](/graph/teams-licenses). If the
 
 | Sample error type                | Status code            | Sample error message                                                                                      |
 |:---------------------------------|:-----------------------|:----------------------------------------------------------------------------------------------------------|
-| E5 license requirement not met   | 402 (Payment Required) | `...needs a valid license to access this API...`, `...tenant needs a valid license to access this API...` |
-| Evaluation capacity exceeded     | 402 (Payment Required) | `...evaluation mode capacity has been exceeded. Use a valid billing model...`                             |
+| E5 license requirement not met   | 402 (Payment Required) | `"...needs a valid license to access this API..."` </br> `"...tenant needs a valid license to access this API..."` |
+| Evaluation capacity exceeded     | 402 (Payment Required) | `"...evaluation mode capacity has been exceeded. Use a valid billing model..."`                             |

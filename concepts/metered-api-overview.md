@@ -26,9 +26,9 @@ Most Microsoft Graph APIs are standard APIs. These APIs perform standard operati
 High-capacity APIs ensure that customers and developers have access to data at scale. This category includes purpose-built, bulk export or import endpoints and Microsoft Graph services. These APIs may be metered and incur additional costs beyond user subscription licenses.
 
 ### Advanced APIs
-Advanced APIs provide access to enriched or aggregated data, or advanced functionality that extends from Microsoft 365. The [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md) ApI is an example of an advanced API. These APIs may be metered and incur additional costs beyond user subscription licenses.
+Advanced APIs provide access to enriched or aggregated data, or advanced functionality that extends from Microsoft 365. The [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md) API is an example of an advanced API. These APIs may be metered and incur additional costs beyond user subscription licenses.
 
-## Access metered APIs
+## Accessing metered APIs
 To access metered Microsoft 365 APIs and services, an application must be associated with an active Microsoft Azure subscription. For details about how to associate an app to a subscription, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup).
 
 ## Considerations for using metered APIs
@@ -44,3 +44,4 @@ Keep the following considerations in mind when you use metered Microsoft 365 API
 
 - [Metered Microsoft 365 APIs and services](/graph/metered-api-list)
 - [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup)
+- [Payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md)
