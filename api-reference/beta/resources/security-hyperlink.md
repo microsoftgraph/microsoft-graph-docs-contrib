@@ -1,6 +1,6 @@
 ---
 title: "hyperlink resource type"
-description: "**TODO: Add Description**"
+description: "A representation of the data used to create a hyperlink."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A representation of the data used to create a hyperlink.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|url|String|**TODO: Add Description**|
+|name|String| A name for this hyperlink|
+|url|String|The URL for this hyperlink|
 
 ## Relationships
 None.

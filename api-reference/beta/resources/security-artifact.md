@@ -1,6 +1,6 @@
 ---
 title: "artifact resource type"
-description: "**TODO: Add Description**"
+description: "An abstract representation of an entity found online by Microsoft's Security services"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -16,6 +16,7 @@ Namespace: microsoft.graph.security
 `artifact` is not an addressible EntityType. Instead, it is used as an abstract representation of an entity found online by Microsoft's Security services.
 
 Current types of artifacts include:
+
 * [host](../resources/security-host.md)
   * [hostname](../resources/security-hostname.md)
   * [ipAddresss](../resources/security-ipaddress.md)
@@ -26,6 +27,7 @@ Current types of artifacts include:
 * [unclassifiedArtifact](../resources/security-unclassifiedartifact.md)
 
 Instances of `artifact` identified in the following Microsoft Security API Groups should handle the possible implementations. Microsoft Security APIs that currently support `artifact` type:
+
 * [Microsoft Threat Intelligence](../resources/security-threatintelligence-overview.md)
 
 ## Properties

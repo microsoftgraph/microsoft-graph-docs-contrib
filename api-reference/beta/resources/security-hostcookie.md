@@ -36,7 +36,7 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[host](../resources/security-host.md)|**TODO: Add Description**|
+|host|[host](../resources/security-host.md)|This relationship indicates that a cookie of this name and domain was found related to this host.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

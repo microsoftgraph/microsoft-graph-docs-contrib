@@ -1,6 +1,6 @@
 ---
 title: "cvssSummary resource type"
-description: "**TODO: Add Description**"
+description: "Represents a Common Vulnerability Scoring System (CVSS) evaluation of a vulnerability."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A `cvssSummary` represents a Common Vulnerability Scoring System (CVSS) evaluation of a vulnerability.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|score|Decimal|**TODO: Add Description**|
-|severity|microsoft.graph.security.vulnerabilitySeverity|**TODO: Add Description**.The possible values are: `none`, `low`, `medium`, `high`, `critical`, `unknownFutureValue`.|
-|vectorString|String|**TODO: Add Description**|
+|score|Decimal|The CVSS score about this vulnerability.|
+|severity|microsoft.graph.security.vulnerabilitySeverity|The CVSS severity rating for this vulnerability. The possible values are: `none`, `low`, `medium`, `high`, `critical`, `unknownFutureValue`.|
+|vectorString|String|The CVSS vector string for this vulnerability.|
 
 ## Relationships
 None.

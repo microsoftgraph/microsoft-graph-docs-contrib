@@ -22,7 +22,7 @@ This is an abstract type, representing an indicator of compromise or increased r
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
+|id|String|The system-generated id for the indicator.|
 |source|microsoft.graph.security.indicatorSource|The source providing this Indicator.The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`.|
 
 ## Relationships

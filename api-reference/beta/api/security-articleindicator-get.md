@@ -78,7 +78,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.articleIndicator",
-    "id": "ff3eecd2-a2be-27c2-8dc0-40d1c0eada55",
+    "id": "ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==",
     "source": "microsoftDefenderThreatIntelligence",
     "artifact": {
         "@odata.type": "#microsoft.graph.security.hostname",

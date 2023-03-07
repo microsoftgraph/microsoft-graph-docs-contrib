@@ -1,6 +1,6 @@
 ---
 title: "articleIndicator resource type"
-description: "**TODO: Add Description**"
+description: "Used to communicate indicators of threat or compromise that are related to the contents of an article"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-`ArticleIndicators` are used to communicate indicators of threat or compromise that are related to the contents of [article](../resources/security-article.md).
+`ArticleIndicators` are used to communicate indicators of threat or compromise that are related to the contents of an [article](../resources/security-article.md).
 
 The Relationship from an `ArticleIndicator` to an [artifact](../resources/security-artifact.md) provides the means for Microsoft Threat Intelligence API users to further evaluate details about reported indicator.
 
