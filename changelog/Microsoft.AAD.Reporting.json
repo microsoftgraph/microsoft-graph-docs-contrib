@@ -7,12 +7,12 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationStrengthResult",
           "ChangeType": "Addition",
-          "Description": "Added the **authenticationStrengthResult** property to the [authenticationStrength](https://docs.microsoft.com/en-us/graph/api/resources/authenticationStrength?view=graph-rest-beta) resource.",
-          "Target": "authenticationStrengthResult"
+          "Description": "Added the **authenticationStrengthResult** property to the [authenticationStrength](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrength?view=graph-rest-beta) resource.",
+          "Target": "authenticationStrength"
         },
         {
           "Id": "376c7fac-b9f8-4d4c-b9e4-4e7c8eda2122",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "authenticationStrengthResult",
           "ChangeType": "Addition",
           "Description": "Added the **authenticationStrengthResult** enumeration type.",
