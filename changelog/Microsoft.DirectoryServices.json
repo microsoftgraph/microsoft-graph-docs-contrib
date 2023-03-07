@@ -85,6 +85,24 @@
       "SubArea": "Directory management"
     },
     {
+	"ChangeList": [
+        {
+          "Id": "92cd3f93-acde-444e-bc37-bf8edf681d97",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeLeaveDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `employeeLeaveDateTime` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "92cd3f93-acde-444e-bc37-bf8edf681d97",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-01T01:35:50Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+  },
+    {
       "ChangeList": [
         {
           "Id": "d8d56f67-839e-42a2-a4f1-e493c1653729",
@@ -98,7 +116,7 @@
       "Id": "d8d56f67-839e-42a2-a4f1-e493c1653729",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-02-27:00:00.8027648Z",
+      "CreatedDateTime": "2023-02-27T00:00:26.8027648Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }, 

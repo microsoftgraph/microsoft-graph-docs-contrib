@@ -10,11 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
-
-requestCount := true
-
 requestParameters := &graphconfig.MeAppRoleAssignedResourcesRequestBuilderGetQueryParameters{
-	Count: &requestCount,
 	Select: [] string {"displayName","accountEnabled","servicePrincipalType","signInAudience"},
 }
 configuration := &graphconfig.MeAppRoleAssignedResourcesRequestBuilderGetRequestConfiguration{

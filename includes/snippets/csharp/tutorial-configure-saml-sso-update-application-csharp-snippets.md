@@ -4,25 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var application = new Application
+var requestBody = new Application
 {
 	Web = new WebApplication
 	{
-		RedirectUris = new List<String>()
+		RedirectUris = new List<string>
 		{
-			"https://signin.aws.amazon.com/saml"
-		}
+			"https://signin.aws.amazon.com/saml",
+		},
 	},
-	IdentifierUris = new List<String>()
+	IdentifierUris = new List<string>
 	{
-		"https://signin.aws.amazon.com/saml"
-	}
+		"https://signin.aws.amazon.com/saml",
+	},
 };
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
-await graphClient.Applications["{application-id}"]
-	.Request()
-	.UpdateAsync(application);
 
 ```

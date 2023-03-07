@@ -12,7 +12,6 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new AppRoleAssignedResourcesRequestBuilderGetQueryParameters();
-$queryParameters->count = true;
 $queryParameters->select = ["displayName","accountEnabled","servicePrincipalType","signInAudience"];
 
 $headers = [

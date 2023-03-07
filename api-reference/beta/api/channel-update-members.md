@@ -100,7 +100,6 @@ content-length: 26
 
 ---
 
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability. 
