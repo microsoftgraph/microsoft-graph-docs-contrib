@@ -4,7 +4,7 @@ description: "Represents information published by a federated service describing
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "paekirap"
+author: "PaulEkirapa"
 ---
 
 # serviceProvisioningErro resource type
