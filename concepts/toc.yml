@@ -77,6 +77,13 @@ items:
             href: deployments.md
           - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
+      - name: API metering
+        items:
+          - name: Overview
+            href: metered-api-overview.md
+            displayName: monetize, charge, cost, pricing
+          - name: List of metered APIs
+            href: metered-api-list.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -829,6 +836,8 @@ items:
           - name: Add custom data
             displayName: directory extensions, schema extensions, open extensions, extension attributes
             href: extensibility-overview.md
+          - name: Enable metered APIs
+            href: metered-api-setup.md
           - name: Use Graph Explorer
             items:
               - name: Get started
