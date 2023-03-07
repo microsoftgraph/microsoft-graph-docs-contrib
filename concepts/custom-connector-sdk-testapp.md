@@ -58,7 +58,7 @@ The test utility has five options:
 
 ![Screenshot of the test utility output showing the second test scenario completed](images/connectors-sdk/test2complete.png)
 
-- **Validate Manifest**: Validates the content of manifest.json. It checks whether the APIs related to the information provided in the manifest are implemented. The test application returns the updated manifest post validation. Use this validated manifest for further testing and use.
+- **Validate Manifest**: Validates the content of manifest.json. It checks whether the APIs related to the information provided in the manifest are implemented. The test application returns the updated manifest after validation. Use this validated manifest for further testing and use.
 
 ![Screenshot of the test utility output showing the third test scenario completed](images/connectors-sdk/test3complete.png)
 
@@ -66,7 +66,7 @@ The test utility has five options:
 
 ![Screenshot of the test utility output showing the fourth test scenario completed](images/connectors-sdk/test4complete.png)
 
-- **Test end to end connection publish flow**: Validates the entire flow from creating the custom connection to crawling the datasource. You will be prompted to give inputs in the same sequence as the Microsoft 365 Admin Center connection publish flow. Validations will happen at every step basis your inputs.
+- **Test end-to-end connection publish flow**: Validates the entire flow from creating the custom connection to crawling the datasource. You will be prompted to give inputs in the same sequence as the Microsoft 365 Admin Center connection publish flow. Validation happens at every step based on your inputs.
 
 ![Screenshot of the test utility output showing the fifth test scenario completed](images/connectors-sdk/test5complete.png)
 
