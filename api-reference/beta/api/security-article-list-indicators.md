@@ -71,7 +71,7 @@ The following is an example of the response
   "@odata.type": "Collection(microsoft.graph.security.articleIndicator)"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -79,8 +79,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.articleIndicator",
-      "id": "0b3f0361-0440-9f5d-f834-339d4cc532b8",
-      "source": "String"
+      "id": "ff3eecd2-a2be-27c2-8dc0-40d1c0eada55",
+      "source": "microsoftDefenderThreatIntelligence",
+      "artifact": {
+          "@odata.type": "#microsoft.graph.security.hostname",
+          "id": "fake-malicious.site"
+      }
     }
   ]
 }
