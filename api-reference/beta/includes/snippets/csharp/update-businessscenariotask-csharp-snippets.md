@@ -4,21 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var businessScenarioTask = new BusinessScenarioTask
+var requestBody = new BusinessScenarioTask
 {
+	OdataType = "#microsoft.graph.businessScenarioTask",
 	Title = "Customer order #12010",
 	PercentComplete = 20,
 	Priority = 1,
 	BusinessScenarioProperties = new BusinessScenarioProperties
 	{
-		ExternalObjectVersion = "000003"
-	}
+		ExternalObjectVersion = "000003",
+	},
 };
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.Tasks["{businessScenarioTask-id}"].PatchAsync(requestBody);
 
-await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.Tasks["{businessScenarioTask-id}"]
-	.Request()
-	.UpdateAsync(businessScenarioTask);
 
 ```

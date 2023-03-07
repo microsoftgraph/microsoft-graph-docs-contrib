@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-f
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

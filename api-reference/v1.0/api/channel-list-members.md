@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

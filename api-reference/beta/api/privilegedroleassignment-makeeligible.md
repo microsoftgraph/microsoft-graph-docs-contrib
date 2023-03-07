@@ -86,7 +86,6 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makeEligibl
 
 ---
 
-
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {

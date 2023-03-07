@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var userProcessingResult = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{identityGovernance.workflow-id}"].Runs["{identityGovernance.run-id}"].UserProcessingResults["{identityGovernance.userProcessingResult-id}"]
-	.Request()
-	.Select("id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject")
-	.GetAsync();
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].Runs["{run-id}"].UserProcessingResults["{userProcessingResult-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","failedTasksCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","subject" };
+});
+
 
 ```

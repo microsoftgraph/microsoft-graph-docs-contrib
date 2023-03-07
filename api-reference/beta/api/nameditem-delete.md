@@ -62,10 +62,6 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 DELETE https://graph.microsoft.com/beta/me/drive/items/{itemID}/workbook/names/{name}
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-nameditem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-nameditem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{itemID}/workbook/names/{
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 Here is an example of the response. 

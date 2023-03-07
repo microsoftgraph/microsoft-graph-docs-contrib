@@ -93,7 +93,6 @@ Content-Length: 24
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 

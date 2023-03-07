@@ -1,5 +1,5 @@
 ---
-title: "List workflows (in Lifecycle Workflows)"
+title: "List workflows"
 description: "Get a list of the workflow objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List workflows (in Lifecycle Workflows)
+# List workflows
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -233,7 +232,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response
