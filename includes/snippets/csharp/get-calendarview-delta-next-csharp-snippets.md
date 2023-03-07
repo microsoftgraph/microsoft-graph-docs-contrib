@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var delta = await graphClient.Me.CalendarView
-	.Delta()
-	.Request()
-	.Header("Prefer","odata.maxpagesize=2")
-	.GetAsync();
+var result = await graphClient.Me.CalendarView.Delta.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Deltatoken = "R0usmcMDNGg0J1E";
+	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
+});
+
 
 ```

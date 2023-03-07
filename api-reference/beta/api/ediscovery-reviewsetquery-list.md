@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-4
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

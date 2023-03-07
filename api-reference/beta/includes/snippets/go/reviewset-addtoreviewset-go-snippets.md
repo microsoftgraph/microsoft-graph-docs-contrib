@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").AddToReviewSet().Post(context.Background(), requestBody, nil)
+graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").EdiscoveryAddToReviewSet().Post(context.Background(), requestBody, nil)
 
 
 ```

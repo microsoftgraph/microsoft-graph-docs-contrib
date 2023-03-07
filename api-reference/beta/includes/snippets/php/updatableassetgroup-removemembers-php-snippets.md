@@ -22,7 +22,7 @@ $requestBody->setAssets($assetsArray);
 
 
 
-$graphServiceClient->admin()->windows()->updates()->updatableAssetsById('updatableAsset-id')->removeMembers()->post($requestBody);
+$graphServiceClient->admin()->windows()->updates()->updatableAssetsById('updatableAsset-id')->windowsUpdatesRemoveMembers()->post($requestBody);
 
 
 ```

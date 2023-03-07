@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var clientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54";
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.SubscribeToTone.SubscribeToTonePostRequestBody
+{
+	ClientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54",
+};
+var result = await graphClient.Communications.Calls["{call-id}"].SubscribeToTone.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.SubscribeToTone(clientContext)
-	.Request()
-	.PostAsync();
 
 ```

@@ -102,11 +102,6 @@ DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/sof
 
 ---
 
-
----
-
-
-
 ### Response
 <!-- {
   "blockType": "response",

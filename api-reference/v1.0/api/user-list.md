@@ -114,7 +114,6 @@ GET https://graph.microsoft.com/v1.0/users
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -209,7 +208,6 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -358,7 +356,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -435,7 +432,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -510,7 +506,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -645,7 +640,6 @@ GET https://graph.microsoft.com/v1.0/users?$select=ext55gb1l09_msLearnCourses
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -132,7 +132,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->evaluateApplication()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->securityEvaluateApplication()->post($requestBody, $requestConfiguration);
 
 
 ```
