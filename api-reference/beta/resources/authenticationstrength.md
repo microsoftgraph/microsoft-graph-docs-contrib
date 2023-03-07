@@ -19,7 +19,7 @@ Represents the custom authentication strength enforced in a conditional access p
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationStrengthId|String|Identifier of the authentication strength.|
-|authenticationStrengthResult|String|The result of the authentication strength. The possible values are: `notSet`, `skippedForProofUp`, `satisfied`, `singleChallengeRequired`, `multipleChallengesRequired`, `singleRegistrationRequired`, `multipleRegistrationsRequired`, `cannotSatisfyDueToCombinationConfiguration`, `cannotSatisfy`, `unknownFutureValue`.|
+|authenticationStrengthResult|authenticationStrengthResult|The result of the authentication strength. The possible values are: `notSet`, `skippedForProofUp`, `satisfied`, `singleChallengeRequired`, `multipleChallengesRequired`, `singleRegistrationRequired`, `multipleRegistrationsRequired`, `cannotSatisfyDueToCombinationConfiguration`, `cannotSatisfy`, `unknownFutureValue`.|
 |displayName|String|The name of the authentication strength.|
 
 ## Relationships
