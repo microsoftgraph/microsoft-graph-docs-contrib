@@ -81,7 +81,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 <!-- {

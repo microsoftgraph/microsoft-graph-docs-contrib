@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = new TeamworkUserIdentity
+var requestBody = new Microsoft.Graph.Chats.Item.HideForUser.HideForUserPostRequestBody
 {
-	Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
-	AdditionalData = new Dictionary<string, object>()
+	User = new TeamworkUserIdentity
 	{
-		{"tenantId", "2a690434-97d9-4eed-83a6-f5f13600199a"}
-	}
+		Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"tenantId" , "2a690434-97d9-4eed-83a6-f5f13600199a"
+			},
+		},
+	},
 };
+await graphClient.Chats["{chat-id}"].HideForUser.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"]
-	.HideForUser(user)
-	.Request()
-	.PostAsync();
 
 ```

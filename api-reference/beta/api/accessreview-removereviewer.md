@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16
 
 ---
 
-
 ##### Response
 <!-- {
   "blockType": "response",

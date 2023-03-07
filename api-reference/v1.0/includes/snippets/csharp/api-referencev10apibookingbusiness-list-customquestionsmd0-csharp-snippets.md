@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var customQuestions = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].CustomQuestions
-	.Request()
-	.GetAsync();
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].CustomQuestions.GetAsync();
+
 
 ```

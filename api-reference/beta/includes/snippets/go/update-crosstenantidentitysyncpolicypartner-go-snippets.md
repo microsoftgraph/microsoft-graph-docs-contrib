@@ -8,13 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCrossTenantIdentitySyncPolicyPartner()
-additionalData := map[string]interface{}{
-userSyncInbound := graphmodels.New()
-	isSyncAllowed := true
+userSyncInbound := graphmodels.NewCrossTenantUserSyncInbound()
+isSyncAllowed := true
 userSyncInbound.SetIsSyncAllowed(&isSyncAllowed) 
-	requestBody.SetUserSyncInbound(userSyncInbound)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetUserSyncInbound(userSyncInbound)
 
 result, err := graphClient.Policies().CrossTenantAccessPolicy().PartnersById("crossTenantAccessPolicyConfigurationPartner-tenantId").IdentitySynchronization().Patch(context.Background(), requestBody, nil)
 
