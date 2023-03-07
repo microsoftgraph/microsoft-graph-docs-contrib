@@ -1,5 +1,5 @@
 ---
-title: "passiveDns resource type"
+title: "passiveDnsRecord resource type"
 description: "**TODO: Add Description**"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# passiveDns resource type
+# passiveDnsRecord resource type
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Passive DNS is a system of record that stores DNS resolution data for a given location, record, and timeframe. This historical resolution data set allows users to view which domains resolved to an IP address and vice versa. This data set allows for time-based correlation based on domain or IP overlap. Passive DNS may enable the identification of previously unknown or newly stood-up threat actor infrastructure.
 
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
@@ -21,33 +21,22 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List passiveDns](../api/security-hostname-list-passivedns.md)|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md) collection|Get a list of the [microsoft.graph.security.passiveDns](../resources/security-passivedns.md) objects and their properties.|
-|[Create passiveDns](../api/security-hostname-post-passivedns.md)|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md)|Create a new [microsoft.graph.security.passiveDns](../resources/security-passivedns.md) object.|
-|[Get passiveDns](../api/security-passivedns-get.md)|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md)|Read the properties and relationships of a [microsoft.graph.security.passiveDns](../resources/security-passivedns.md) object.|
-|[Update passiveDns](../api/security-passivedns-update.md)|[microsoft.graph.security.passiveDns](../resources/security-passivedns.md)|Update the properties of a [microsoft.graph.security.passiveDns](../resources/security-passivedns.md) object.|
-|[Delete passiveDns](../api/security-hostname-delete-passivedns.md)|None|Delete a [microsoft.graph.security.passiveDns](../resources/security-passivedns.md) object.|
-|[List artifact](../api/security-passivedns-list-artifact.md)|[microsoft.graph.security.artifact](../resources/security-artifact.md) collection|Get the artifact resources from the artifact navigation property.|
-|[Add artifact](../api/security-passivedns-post-artifact.md)|[microsoft.graph.security.artifact](../resources/security-artifact.md)|Add artifact by posting to the artifact collection.|
-|[Remove artifact](../api/security-passivedns-delete-artifact.md)|None|Remove a [microsoft.graph.security.artifact](../resources/security-artifact.md) object.|
-|[List host](../api/security-threatintelligence-list-hosts.md)|[microsoft.graph.security.host](../resources/security-host.md) collection|Get the host resources from the parentHost navigation property.|
-|[Add host](../api/security-passivedns-post-parenthost.md)|[microsoft.graph.security.host](../resources/security-host.md)|Add parentHost by posting to the parentHost collection.|
-|[Remove host](../api/security-passivedns-delete-parenthost.md)|None|Remove a [microsoft.graph.security.host](../resources/security-host.md) object.|
+|[Get passiveDns](../api/security-passivednsrecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md)|Read the properties and relationships of a [microsoft.graph.security.passivednsrecord](../resources/security-passivednsrecord.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|collectedDateTime|DateTimeOffset|**TODO: Add Description**|
-|firstSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|lastSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|recordType|String|**TODO: Add Description**|
-|sources|microsoft.graph.security.passiveDnsSource collection|**TODO: Add Description**|
+|collectedDateTime|DateTimeOffset|The date and time that this passiveDnsRecord entry was collected by Microsoft.|
+|firstSeenDateTime|DateTimeOffset|The date and time that this passiveDnsRecord entry was first seen|
+|id|String|The id for this passiveDnsRecord entry. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
+|lastSeenDateTime|DateTimeOffset|The date and time that this passiveDnsRecord entry was most recently seen|
+|recordType|String|The DNS record type for this passiveDnsRecord entry|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|artifact|[artifact](../resources/security-artifact.md)|**TODO: Add Description**|
-|parentHost|[host](../resources/security-host.md)|**TODO: Add Description**|
+|artifact|[artifact](../resources/security-artifact.md)|The [artifact](../resources/security-artifact.md) related to this passiveDnsRecord entry.|
+|parentHost|[host](../resources/security-host.md)|The parent [host](../resources/security-host.md) related to this passiveDnsRecord entry. Generally, this is the value that would have been searched to discover this passiveDnsRecord value.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -66,10 +55,7 @@ The following is a JSON representation of the resource.
   "firstSeenDateTime": "String (timestamp)",
   "lastSeenDateTime": "String (timestamp)",
   "collectedDateTime": "String (timestamp)",
-  "recordType": "String",
-  "sources": [
-    "String"
-  ]
+  "recordType": "String"
 }
 ```
 

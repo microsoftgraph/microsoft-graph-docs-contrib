@@ -15754,6 +15754,8 @@ items:
           items:
           - name: Passive DNS Record
             href: resources/security-passivednsrecord.md
+          - name: Get
+            href: api/security-passivednsrecord-get.md
         - name: Vulnerability
           items:
           - name: Vulnerability
