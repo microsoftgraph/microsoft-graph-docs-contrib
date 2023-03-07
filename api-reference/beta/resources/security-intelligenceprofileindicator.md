@@ -1,6 +1,6 @@
 ---
 title: "intelligenceProfileIndicator resource type"
-description: "**TODO: Add Description**"
+description: "An Indicator of threat or compromise related to an IntelligenceProfile"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

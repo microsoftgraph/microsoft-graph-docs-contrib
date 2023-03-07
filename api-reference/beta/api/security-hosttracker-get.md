@@ -71,7 +71,7 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.security.hostTracker"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 

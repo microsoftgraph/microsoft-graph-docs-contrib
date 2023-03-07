@@ -1,6 +1,6 @@
 ---
 title: "hostname resource type"
-description: "**TODO: Add Description**"
+description: "Represents a named host which is (or has been) addressible over the internet"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

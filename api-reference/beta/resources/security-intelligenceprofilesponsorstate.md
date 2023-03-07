@@ -1,6 +1,6 @@
 ---
 title: "intelligenceProfileSponsorState resource type"
-description: "**TODO: Add Description**"
+description: "A known state-sponsor of an actor related to a threat or vulnerability outlined in an Intelligence Profile"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

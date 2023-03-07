@@ -1,6 +1,6 @@
 ---
 title: "ipAddress resource type"
-description: "**TODO: Add Description**"
+description: "Represents an IP Address which is (or has been) addressible over the internet"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

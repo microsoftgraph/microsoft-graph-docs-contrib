@@ -71,7 +71,7 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.security.intelligenceProfile"
 }
 -->
-``` json
+```json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -95,8 +95,8 @@ Content-Type: application/json
     "sponsorStates": [
       {
         "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState",{
-        "countryOrRegionLabel": "Russia",
-        "countryOrRegionCode": "ru"
+        "label": "Russia",
+        "code": "ru"
         }
       }
     ],

@@ -34,7 +34,7 @@ GET /security/threatIntelligence/hosts/{hostId}/cookies
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/{hostId}/cookies
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/cookies
 ```
 
 
@@ -71,7 +71,7 @@ The following is an example of the response
   "@odata.type": "Collection(microsoft.graph.security.hostCookie)"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 

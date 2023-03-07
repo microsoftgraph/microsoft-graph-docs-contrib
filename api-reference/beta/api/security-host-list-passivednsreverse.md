@@ -71,7 +71,7 @@ The following is an example of the response
   "@odata.type": "Collection(microsoft.graph.security.passiveDnsRecorde)"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 

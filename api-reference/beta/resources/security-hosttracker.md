@@ -1,6 +1,6 @@
 ---
 title: "hostTracker resource type"
-description: "**TODO: Add Description**"
+description: "Trackers are unique codes or values found within web pages and often used to track user interaction."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -28,10 +28,10 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|The first date and time that this hostTracker was observed by Microsoft Threat Intelligence.|
+|firstSeenDateTime|DateTimeOffset|The first date and time that this `hostTracker` was observed by Microsoft Threat Intelligence.|
 |id|String| A system-generated id for this `hostTracker`.  Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
 |kind|String|The kind of hostTracker that was detected (e.g. GoogleAnalyticsID, JarmHash)|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time that this hostTracker was observed by Microsoft Threat Intelligence |
+|lastSeenDateTime|DateTimeOffset|The most recent date and time that this `hostTracker` was observed by Microsoft Threat Intelligence. |
 |value|String|The identification value for the hostTracker|
 
 ## Relationships

@@ -1,6 +1,6 @@
 ---
 title: "formattedContent resource type"
-description: "**TODO: Add Description**"
+description: "Represents formatted data content, and indicates both the content and format of that data."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A `formattedContent` is meant to represent formatted data content, and indicates both the content and format of that data. This will not represent large binary contents.
+A `formattedContent` represents formatted data content, and indicates both the content and format of that data. This will not represent large binary contents.
 
 ## Properties
 |Property|Type|Description|

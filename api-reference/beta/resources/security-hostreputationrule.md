@@ -1,6 +1,6 @@
 ---
 title: "hostReputationRule resource type"
-description: "**TODO: Add Description**"
+description: "A rule that is used (in combination with other rules) to determine the Reputation of a host"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

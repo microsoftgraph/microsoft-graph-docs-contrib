@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/{articleId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5ab
 ```
 
 
@@ -71,28 +71,36 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.security.article"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.article",
-    "id": "String",
-    "createdDateTime": "String (timestamp)",
-    "lastUpdatedDateTime": "String (timestamp)",
-    "title": "String",
+    "@odata.context": "$metadata#articles/$entity",
+    "id": "a272d5ab",
+    "createdDateTime": "2023-03-03T18:20:22.677Z",
+    "lastUpdatedDateTime": "2023-03-03T18:20:22.677Z",
+    "title": "Batloader Malware Abuses Legitimate Tools Uses Obfuscated JavaScript Files in Q4 2022 Attacks",
     "summary": {
-      "@odata.type": "microsoft.graph.security.formattedContent"
+        "content": "Trend Micro discusses Batloader campaigns that were observed in the last quarter of 2022.",
+        "format": "markdown"
     },
-    "featured": "Boolean",
+    "isFeatured": false,
     "body": {
-      "@odata.type": "microsoft.graph.security.formattedContent"
+        "content": "#### Description\r\nTrend Micro discusses Batloader...",
+        "format": "markdown"
     },
     "tags": [
-      "String"
+        "OSINT",
+        "Batloader",
+        "RoyalRansomware",
+        "Python",
+        "JavaScript",
+        "MSI",
+        "PowerShell"
     ],
-    "imageUrl": "String"
+    "imageUrl": null
   }
 }
 ```

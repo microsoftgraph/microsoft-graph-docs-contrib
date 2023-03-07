@@ -34,7 +34,7 @@ GET /security/threatIntelligence/intelProfiles
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -96,8 +96,8 @@ Content-Type: application/json
     "sponsorStates": [
       {
         "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState",{
-        "countryOrRegionLabel": "Russia",
-        "countryOrRegionCode": "ru"
+        "label": "Russia",
+        "code": "ru"
         }
       }
     ],

@@ -1,6 +1,6 @@
 ---
 title: "indicator resource type"
-description: "**TODO: Add Description**"
+description: "Indicators communicate artifacts usually indicating affection by or relation to an attack vector or malicious actor."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,30 +13,22 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+Indicators communicate artifacts usually indicating affection by or relation to an attack vector or malicious actor.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List indicators](../api/security-indicator-list.md)|[microsoft.graph.security.indicator](../resources/security-indicator.md) collection|Get a list of the [microsoft.graph.security.indicator](../resources/security-indicator.md) objects and their properties.|
-|[Get indicator](../api/security-indicator-get.md)|[microsoft.graph.security.indicator](../resources/security-indicator.md)|Read the properties and relationships of a [microsoft.graph.security.indicator](../resources/security-indicator.md) object.|
-|[Update indicator](../api/security-indicator-update.md)|[microsoft.graph.security.indicator](../resources/security-indicator.md)|Update the properties of a [microsoft.graph.security.indicator](../resources/security-indicator.md) object.|
-|[Delete indicator](../api/security-indicator-delete.md)|None|Delete a [microsoft.graph.security.indicator](../resources/security-indicator.md) object.|
-|[List artifact](../api/security-passivedns-list-artifact.md)|[microsoft.graph.security.artifact](../resources/security-artifact.md) collection|Get the artifact resources from the artifact navigation property.|
-|[Add artifact](../api/security-indicator-post-artifact.md)|[microsoft.graph.security.artifact](../resources/security-artifact.md)|Add artifact by posting to the artifact collection.|
-|[Remove artifact](../api/security-indicator-delete-artifact.md)|None|Remove a [microsoft.graph.security.artifact](../resources/security-artifact.md) object.|
+This is an abstract type, representing an indicator of compromise or increased risk. This EntityType is not directly addressible. Users would interact through one of the following sub types:
+* [ArticleIndicator](../resources/security-articleindicator.md)
+* [IntelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|**TODO: Add Description**|
-|source|microsoft.graph.security.indicatorSource|**TODO: Add Description**.The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`.|
+|source|microsoft.graph.security.indicatorSource|The source providing this Indicator.The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|artifact|[artifact](../resources/security-artifact.md)|**TODO: Add Description**|
+|artifact|[artifact](../resources/security-artifact.md)|The artifact related to this Indicator.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

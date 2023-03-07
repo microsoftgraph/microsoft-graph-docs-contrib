@@ -1,6 +1,6 @@
 ---
 title: "hostCookie resource type"
-description: "**TODO: Add Description**"
+description: "Cookies are small pieces of data sent from a server to a client as the user browses the internet."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

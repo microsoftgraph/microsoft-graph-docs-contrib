@@ -1,6 +1,6 @@
 ---
 title: "hostComponent resource type"
-description: "**TODO: Add Description**"
+description: "Web components are details describing a web page or server infrastructure gleaned from Microsoft performing a web crawl or scan."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

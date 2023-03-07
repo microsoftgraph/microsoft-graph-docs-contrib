@@ -1,6 +1,6 @@
 ---
 title: "intelligenceProfile resource type"
-description: "**TODO: Add Description**"
+description: "Intelligence Profiles provide up-to-date threat actor infrastructure visibility"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Threat Intelligence Profiles API provides the most up-to-date threat actor infrastructure visibility in the industry today, enabling Threat Intelligence and Security Operations (SecOps) teams to streamline their advanced threat hunting and analysis workflows. These teams have historically struggled to obtain visibility into the full extent of nation state and cybercriminal adversary infrastructures, creating blind spots in detection and response automation, hunting, and analytics. Sophisticated security professionals can use Microsoft’s Intelligence Profile APIs, along with the [indicators](../resources/security-intelligenceprofileindicator.md) and other associated markers, to automate defense of their organizations and track potentially malicious activity targeting their organization or industry. Users of the Microsoft Threat Intelligence Profiles APIs have access to detailed threat actor intel profiles, including background information and interpretation guidance.
+The Microsoft Threat Intelligence Profiles (Intel Profile) API provides the most up-to-date threat actor infrastructure visibility in the industry today, enabling Threat Intelligence and Security Operations (SecOps) teams to streamline their advanced threat hunting and analysis workflows. These teams have historically struggled to obtain visibility into the full extent of nation state and cybercriminal adversary infrastructures, creating blind spots in detection and response automation, hunting, and analytics. Sophisticated security professionals can use Microsoft’s Intelligence Profile APIs, along with the [indicators](../resources/security-intelligenceprofileindicator.md) and other associated markers, to automate defense of their organizations and track potentially malicious activity targeting their organization or industry. Users of the Microsoft Threat Intelligence Profiles APIs have access to detailed threat actor intel profiles, including background information and interpretation guidance.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,11 +27,11 @@ The Microsoft Threat Intelligence Profiles API provides the most up-to-date thre
 |:---|:---|:---|
 |aliases|String collection|A list of commonly-known aliases for the Threat Intelligence included in the `intelligenceProfile`.|
 |description|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|A synopsis of the threat actor. This property places the threat actor in wider context, tracing its discovery, history, significant campaigns, targeting, techniques of note, affiliations with governments, law enforcement countermeasures, and any areas of dispute among the security community regarding attribution.|
-|firstActiveDateTime|DateTimeOffset|**TODO: Add Description**|
+|firstActiveDateTime|DateTimeOffset|The date and time that this Intelligence Profiles was first active|
 |id|String|The system generated id for this Intelligence Profile|
 |kind|microsoft.graph.security.intelligenceProfileKind|A categorization of the type of this `intelligenceProfile`. The possible values are: `actor`, `tool`, `unknownFutureValue`.|
-|sponsorStates|[microsoft.graph.security.intelligenceProfileSponsorState](../resources/security-intelligenceprofilesponsorstate.md) collection|**TODO: Add Description**|
-|summary|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|**TODO: Add Description**|
+|sponsorStates|[microsoft.graph.security.intelligenceProfileSponsorState](../resources/security-intelligenceprofilesponsorstate.md) collection|Known States (such as a Country or Government) who have sponsored threat actors associated with this Intelligence Profiles|
+|summary|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|A short summary of this IntelligenceProfile|
 |targets|String collection|Known Targets related to this Intelligence Profile|
 |title|String|The title of this Intelligence Profile|
 |tradecraft|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|Formatted information featuring a description of the group's distinctive
