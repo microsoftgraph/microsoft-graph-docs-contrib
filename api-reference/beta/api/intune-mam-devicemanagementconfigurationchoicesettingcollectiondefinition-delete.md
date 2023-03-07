@@ -1,13 +1,13 @@
 ---
-title: "Delete userExperienceAnalyticsDeviceTimelineEvents"
-description: "Deletes a userExperienceAnalyticsDeviceTimelineEvents."
+title: "Delete deviceManagementConfigurationChoiceSettingCollectionDefinition"
+description: "Deletes a deviceManagementConfigurationChoiceSettingCollectionDefinition."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# Delete userExperienceAnalyticsDeviceTimelineEvents
+# Delete deviceManagementConfigurationChoiceSettingCollectionDefinition
 
 Namespace: microsoft.graph
 
@@ -15,16 +15,16 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [userExperienceAnalyticsDeviceTimelineEvents](../resources/intune-devices-userexperienceanalyticsdevicetimelineevents.md).
+Deletes a [deviceManagementConfigurationChoiceSettingCollectionDefinition](../resources/intune-mam-devicemanagementconfigurationchoicesettingcollectiondefinition.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /deviceManagement/userExperienceAnalyticsDeviceTimelineEvents/{userExperienceAnalyticsDeviceTimelineEventsId}
+DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceTimelineEvents/{userExperienceAnalyticsDeviceTimelineEventsId}
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ### Response
