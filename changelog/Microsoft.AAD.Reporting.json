@@ -23,7 +23,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "microsoftAdminPortal",
           "ChangeType": "Addition",
-          "Description": "Added the `microsoftAdminPortal` member to the **conditionalAccessRule** enumeration.",
+          "Description": "Added the `microsoftAdminPortals` member to the **conditionalAccessRule** enumeration.",
           "Target": "conditionalAccessRule"
         }
       ],
