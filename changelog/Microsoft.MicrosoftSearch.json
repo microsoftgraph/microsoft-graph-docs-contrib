@@ -593,14 +593,6 @@
           "Target": "entityType"
         },
         {
-          "Id": "f69b59bf-58e7-41f2-a598-d6e050ce75c7",
-          "ApiChange": "Member",
-          "ChangedApiName": "qna",
-          "ChangeType": "Addition",
-          "Description": "Added the **qna** member to the **entityType** enumeration.",
-          "Target": "entityType"
-        },
-        {
           "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
           "ApiChange": "Member",
           "ChangedApiName": "chatMessage",
@@ -729,6 +721,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-12-12T04:12:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f69b59bf-58e7-41f2-a598-d6e050ce75c7",
+          "ApiChange": "Member",
+          "ChangedApiName": "qna",
+          "ChangeType": "Addition",
+          "Description": "Added the **qna** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+      ],
+      "Id": "65c699bb-49cf-4a9d-bee0-7e2950d966a4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-07T04:12:04.628237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
     }
