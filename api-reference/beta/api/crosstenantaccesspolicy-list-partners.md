@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 
 ---
 
-
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -193,7 +192,6 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners?$
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -100,6 +100,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](/MicrosoftTeams/get-started-with-teams-templates). |
+| templateDefinition | [teamtemplatedefinition](teamtemplatedefinition.md)| Generic representation of a team template definition for a team with a specific structure and configuration.|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps to access the team.|
 |tags|[teamworkTag](../resources/teamworktag.md) collection|The tags associated with the team.|
 

@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 ---
 
-
 ### Response
 
 The following response object shows an x509CertificateAuthenticationMethodConfiguration with its default configuration.

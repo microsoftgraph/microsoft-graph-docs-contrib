@@ -107,7 +107,6 @@ Content-Type: application/json
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 

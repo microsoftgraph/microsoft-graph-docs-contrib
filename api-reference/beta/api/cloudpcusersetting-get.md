@@ -96,8 +96,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 
 ---
 
-
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -167,8 +165,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/usersettin
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 

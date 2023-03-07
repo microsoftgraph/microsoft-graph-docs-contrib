@@ -441,7 +441,6 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSett
 
 ---
 
-
 The following request uses an app token.
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -554,7 +553,6 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ---
 
-
 The following request uses application permission.
 
 <!-- { "blockType": "ignored" }-->
@@ -620,7 +618,6 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 The following request uses application permission.
 <!-- { "blockType": "ignored" }-->
