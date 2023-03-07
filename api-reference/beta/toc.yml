@@ -16242,7 +16242,7 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Tenant settings (preview)
+      - name: Tenant settings
         items:
           - name: Settings
             href: resources/tenantadmin-settings.md

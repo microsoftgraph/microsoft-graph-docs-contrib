@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get settings
 Namespace: microsoft.graph.tenantAdmin
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the tenant-level [settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive.
 
 ## Permissions
@@ -67,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/sharepoint/settings
+GET https://graph.microsoft.com/v1.0/admin/sharepoint/settings
 ```
 
 # [C#](#tab/csharp)
