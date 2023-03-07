@@ -10597,6 +10597,8 @@ items:
             href: api/cloudpc-getcloudpcconnectivityhistory.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
+          - name: Get provisioned cloudPCs by groupId and servicePlanId
+            href: api/cloudpc-getprovisionedcloudpcs.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
@@ -10623,8 +10625,6 @@ items:
             href: api/cloudpc-troubleshoot.md
           - name: Retry partner agent installation
             href: api/cloudpc-retrypartneragentinstallation.md
-          - name: Get provisioned cloudPCs by groupId and servicePlanId
-            href: api/cloudpc-getprovisionedcloudpcs.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:
