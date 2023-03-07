@@ -91,7 +91,8 @@ Content-length: 163
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "@odata.type": "Collection(microsoft.graph.cloudPcResizeValidationResult)",
+  "name": "cloudpc.validateBulkResize"
 }
 -->
 
