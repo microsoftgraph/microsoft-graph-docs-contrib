@@ -15702,10 +15702,12 @@ items:
           items:
           - name: Article
             href: resources/security-article.md
-          - name: Get
+          - name: Get Article
             href: api/security-article-get.md
-          - name: List
+          - name: List Articles
             href: api/security-article-list.md
+          - name: List Article Indicators
+            href: api/security-article-list-indicators.md
         - name: Article Indicator
           items:
             - name: Article Indicator
@@ -15716,8 +15718,20 @@ items:
           items:
             - name: Host
               href: resources/security-host.md
-            - name: Get
+            - name: Get Host
               href: api/security-host-get.md
+            - name: List Components
+              href: api/security-host-list-components.md
+            - name: List Cookies
+              href: api/security-host-list-cookies.md
+            - name: List Passive DNS
+              href: api/security-host-list-passivedns.md
+            - name: List Passive DNS Reverse
+              href: api/security-host-list-passivednsreverse.md
+            - name: Get Reputation
+              href: api/security-host-get-reputation.md
+            - name: List Trackers
+              href: api/security-host-list-trackers.md
         - name: Host Component
           items:
           - name: Host Component
@@ -15740,10 +15754,12 @@ items:
           items:
           - name: Intelligence Profile
             href: resources/security-intelligenceprofile.md
-          - name: Get
+          - name: Get Intelligence Profile 
             href: api/security-intelligenceprofile-get.md
-          - name: List
+          - name: List Intelligence Profiles
             href: api/security-intelligenceprofile-list.md
+          - name: List Intelligence Profile Indicators
+            href: api/security-intelligenceprofile-list-indicators.md
         - name: Intelligence Profile Indicator
           items:
           - name: Intelligence Profile Indicator

@@ -1,6 +1,6 @@
 ---
 title: "passiveDnsRecord resource type"
-description: "**TODO: Add Description**"
+description: "Represents a Passive DNS Record"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

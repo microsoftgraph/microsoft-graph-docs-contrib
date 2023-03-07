@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.passiveDns](../resources/security-passivedns.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.passiveDns](../resources/security-passivednsrecord.md) object in the response body.
 
 ## Examples
 
