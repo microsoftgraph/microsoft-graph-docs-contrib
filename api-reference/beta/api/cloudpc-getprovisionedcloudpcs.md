@@ -108,7 +108,16 @@ Content-Type: application/json
             "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
             "lastModifiedDateTime": "2020-07-23T10:29:57Z",
             "statusDetails": null,
-            "provisioningType": "dedicated"
+            "provisioningType": "dedicated",
+            "connectivityResult": "",
+            "gracePeriodEndDateTime": null,
+            "lastLoginResult": "2020-07-23T10:29:57Z",
+            "lastRemoteActionResult": "Succeed",
+            "onPremisesConnectionName": "Test-OPNC",
+            "osVersion": null,
+            "partnerAgentInstallResults": null,
+            "provisioningPolicyName": "Test-Policy",
+            "userAccountType": null
         },
         {
             "@odata.type": "#microsoft.graph.cloudPC",
@@ -127,7 +136,16 @@ Content-Type: application/json
             "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
             "lastModifiedDateTime": "2020-07-28T18:14:34Z",
             "statusDetails": null,
-            "provisioningType": "dedicated"
+            "provisioningType": "dedicated",
+            "connectivityResult": "",
+            "gracePeriodEndDateTime": null,
+            "lastLoginResult": "2020-07-23T10:29:57Z",
+            "lastRemoteActionResult": "Succeed",
+            "onPremisesConnectionName": "Test-OPNC",
+            "osVersion": null,
+            "partnerAgentInstallResults": null,
+            "provisioningPolicyName": "Test-Policy",
+            "userAccountType": null
         }
     ]
 }
