@@ -91,7 +91,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/19c308f2-e088-464d-8cc
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 

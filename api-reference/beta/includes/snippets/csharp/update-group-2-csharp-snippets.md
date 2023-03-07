@@ -4,21 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var group = new Group
+var requestBody = new Group
 {
-	AssignedLabels = new List<AssignedLabel>()
+	AssignedLabels = new List<AssignedLabel>
 	{
 		new AssignedLabel
 		{
-			LabelId = "45cd0c48-c540-4358-ad79-a3658cdc5b88"
-		}
-	}
+			LabelId = "45cd0c48-c540-4358-ad79-a3658cdc5b88",
+		},
+	},
 };
+var result = await graphClient.Groups["{group-id}"].PatchAsync(requestBody);
 
-await graphClient.Groups["{group-id}"]
-	.Request()
-	.UpdateAsync(group);
 
 ```

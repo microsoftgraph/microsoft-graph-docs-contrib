@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders/{id} 
+GET /employeeExperience/learningProviders/{learningProviderId}
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70
+GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70
 ```
 
 # [C#](#tab/csharp)

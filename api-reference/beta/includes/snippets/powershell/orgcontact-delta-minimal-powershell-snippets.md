@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgContactDelta -Property "displayName,jobTitle,mail" 
+Get-MgContact -OrgContactId $orgContactId -Property "displayName,jobTitle,mail" 
 
 ```

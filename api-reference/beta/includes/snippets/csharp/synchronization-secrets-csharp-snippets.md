@@ -4,21 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var secrets = new SynchronizationSecretKeyStringValuePair
+var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Secrets.SynchronizationSecretKeyStringValuePair
 {
-	Value = new List<String>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		"",
-		"",
-		"",
-		""
-	}
+		{
+			"value" , new List<>
+			{
+				new 
+				{
+					Key = "BaseAddress",
+					Value = "user@domain.com",
+				},
+				new 
+				{
+					Key = "SecretToken",
+					Value = "password-value",
+				},
+				new 
+				{
+					Key = "SyncNotificationSettings",
+					Value = "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}",
+				},
+				new 
+				{
+					Key = "SyncAll",
+					Value = "false",
+				},
+			}
+		},
+	},
 };
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Secrets.PutAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization
-	.Request()
-	.PutAsync(secrets);
 
 ```

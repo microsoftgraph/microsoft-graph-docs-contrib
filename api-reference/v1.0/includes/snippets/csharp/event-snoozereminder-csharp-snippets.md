@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var newReminderTime = new DateTimeTimeZone
+var requestBody = new Microsoft.Graph.Me.Events.Item.SnoozeReminder.SnoozeReminderPostRequestBody
 {
-	DateTime = "dateTime-value",
-	TimeZone = "timeZone-value"
+	NewReminderTime = new DateTimeTimeZone
+	{
+		DateTime = "dateTime-value",
+		TimeZone = "timeZone-value",
+	},
 };
+await graphClient.Me.Events["{event-id}"].SnoozeReminder.PostAsync(requestBody);
 
-await graphClient.Me.Events["{event-id}"]
-	.SnoozeReminder(newReminderTime)
-	.Request()
-	.PostAsync();
 
 ```
