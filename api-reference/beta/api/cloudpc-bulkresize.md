@@ -96,7 +96,8 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "@odata.type": "Collection(microsoft.graph.cloudPcBulkRemoteActionResult)",
+  "name": "cloudpc.bulkResize"
 }
 -->
 
@@ -104,9 +105,9 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcBulkRemoteActionResult",
     "value": [
       {
+        "@odata.type":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcBulkRemoteActionResult",
         "actionName": "Resize",
         "actionState": "pending",
         "startDateTime": "2021-06-23T09:28:32.8260335Z",
@@ -116,6 +117,7 @@ HTTP/1.1 200 OK
         "statusDetails": null
       },
       {
+        "@odata.type":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcBulkRemoteActionResult",
         "actionName": "Resize",
         "actionState": "failed",
         "startDateTime": "2021-06-23T09:28:32.8260335Z",
