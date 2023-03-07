@@ -64,18 +64,14 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpc.bulkResize"
 }
 -->
-
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/bulkResize
 Content-Type: application/json
-Content-length: 163
 
 {
   "cloudPcIds": [
