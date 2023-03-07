@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 To validate a set of [cloudPC](../resources/cloudpc.md) to see if they can be bulk resized in the organization using delegated permission:
-
 ``` http
 POST /deviceManagement/virtualEndpoint/cloudPCs/validateBulkResize
 ```
@@ -64,9 +63,11 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 ### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
-  "name": "cloudpc-validatebulkresize"
+  "name": "cloudpc.validatebulkresize"
 }
 -->
 
@@ -90,7 +91,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "Collection(microsoft.graph.cloudPcResizeValidationResult)",
-  "name": "cloudpc.validateBulkResize"
+  "truncated": true
 }
 -->
 
@@ -99,17 +100,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "value": [
-      {
-         "@odata.type": "#microsoft.graph.cloudPcResizeValidationResult",
-         "cloudPcId":"30d0e128-de93-41dc-89ec-33d84bb662a0",
-         "validationResult":"success"
-      },
-      {
-         "@odata.type": "#microsoft.graph.cloudPcResizeValidationResult",
-         "cloudPcId":"7c82a3e3-9459-44e4-94d9-b92f93bf78dd",
-         "validationResult":"operationNotSupported"
-      }
-   ]
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.cloudPcResizeValidationResult",
+            "cloudPcId": "30d0e128-de93-41dc-89ec-33d84bb662a0",
+            "validationResult": "success"
+        },
+        {
+            "@odata.type": "#microsoft.graph.cloudPcResizeValidationResult",
+            "cloudPcId": "7c82a3e3-9459-44e4-94d9-b92f93bf78dd",
+            "validationResult": "operationNotSupported"
+        }
+    ]
 }
 ```
