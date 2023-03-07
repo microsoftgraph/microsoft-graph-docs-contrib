@@ -68,8 +68,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpc_restore",
-  "sampleKeys": ["4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd"]
+  "name": "cloudpc.bulkResize"
 }
 -->
 
