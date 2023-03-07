@@ -22,7 +22,7 @@ Update the following configuration files to use this test utility:
   ![Screenshot of the port mapping in the CustomConnectorPortMap.json file.](images/connectors-sdk/port.png)
 
     >[!Note]
-      >You can add multiple connector IDs and their corresponding port information to this file using the \<Connector Id>:\<Port> format. Each unique connector should be running on a different port.
+    >You can add multiple connector IDs and their corresponding port information to this file using the \<Connector Id>:\<Port> format. Each unique connector should be running on a different port.
 
 - **Manifest.json**: The manifest file is required for identifying a connector and it's configuration while publishing a connection through the Microsoft 365 Admin Center. Update this manifest file to use it for validation in this test application. This file is in the Config folder of the test application.
 
@@ -64,11 +64,11 @@ The test utility has five options:
 
 - **Test data source crawl with simulated connection**: Tests the methods in ConnectorCrawlerService. It invokes the crawl with the schedule specified in ConnectionInfo.json and prints the status of the ongoing or last completed crawl every minute. When the first crawl finishes successfully, it displays the message that the crawl has completed, and the platform keeps running to trigger additional crawls at the interval specified in ConnectionInfo.json. If you specify an incremental crawl frequency in the ConnectionInfo.json file, it triggers the incremental crawl after the first full crawl.
 
-![Screenshot of the test utility output showing the fourth test scenario and that the crawl is completed](images/connectors-sdk/test4complete.png)
+![Screenshot of the test utility output showing the fourth test scenario completed](images/connectors-sdk/test4complete.png)
 
 - **Test end to end connection publish flow**: Validates the entire flow from creating the custom connection to crawling the datasource. You will be prompted to give inputs in the same sequence as the Microsoft 365 Admin Center connection publish flow. Validations will happen at every step basis your inputs.
 
-![Screenshot of the test utility output showing the fourth test scenario and that the crawl is completed](images/connectors-sdk/test5complete.png)
+![Screenshot of the test utility output showing the fifth test scenario completed](images/connectors-sdk/test5complete.png)
 
 To stop the utility from crawling the data source, close and restart the GraphConnectorAgentTest executable file. You can then choose a different test option, or retest an option after you update the connector code or the configuration files.
 
