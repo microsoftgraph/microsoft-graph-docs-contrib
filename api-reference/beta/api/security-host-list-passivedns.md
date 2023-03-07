@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/{hostId}/passiveDns
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/microsoft.com/passiveDns
 ```
 
 
@@ -71,7 +71,7 @@ The following is an example of the response
   "@odata.type": "Collection(microsoft.graph.security.passiveDnsRecord)"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -79,14 +79,18 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.passiveDnsRecord",
-      "id": "6c559be2-93a3-bc87-bf89-2b8858d18c59",
-      "firstSeenDateTime": "String (timestamp)",
-      "lastSeenDateTime": "String (timestamp)",
-      "collectedDateTime": "String (timestamp)",
-      "recordType": "String",
-      "sources": [
-        "String"
-      ]
+      "id": "bWljcm9zb2Z0LmNvbTcxNDA5MjAuMTAzLjg1LjMz",
+      "firstSeenDateTime": "2022-04-18T10:31:12Z",
+      "lastSeenDateTime": "2023-03-07T13:19:35Z",
+      "collectedDateTime": "2023-03-07T13:59:34.735Z",
+      "recordType": "A",
+      "parentHost": {
+          "id": "microsoft.com"
+      },
+      "artifact": {
+          "@odata.type": "#microsoft.graph.security.ipAddress",
+          "id": "20.103.85.33"
+      }
     }
   ]
 }

@@ -57,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/{hostId}/reputation
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/fake-malicious.site/reputation
 ```
 
 
@@ -70,19 +70,40 @@ The following is an example of the response
   "@odata.type": "Collection(microsoft.graph.security.hostReputation)"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.hostReputation",
-  "id": "1e3b9ded-abb6-1828-c4ef-a5ca48b287a0",
-  "classification": "String",
-  "score": "Integer",
-  "rules": [
-    {
-      "@odata.type": "microsoft.graph.security.hostReputationRule"
-    }
+    "@odata.type": "#microsoft.graph.security.hostReputation",
+    "id": "1e3b9ded-abb6-1828-c4ef-a5ca48b287a0",
+    "classification": "malicious",
+    "score": 100,
+    "rules": [
+      {
+        "name": "RiskIQ Intel Article",
+        "description": "Activity Snapshot: DPRK Actors Target Maritime Sector",
+        "severity": "high",
+        "relatedDetailsUrl": "https://ti.defender.microsoft.com/article/831b70a4"
+      },
+      {
+        "name": "Name server",
+        "description": "Domain is using a name server that has been associated with suspicious behavior",
+        "severity": "medium",
+        "relatedDetailsUrl": null
+      },
+      {
+        "name": "Registrar",
+        "description": "Domains registered using this registrar are frequently associated with suspicious behavior",
+        "severity": "medium",
+        "relatedDetailsUrl": null
+      },
+      {
+        "name": "Resolving IP Address",
+        "description": "192.168.1.1",
+        "severity": "low",
+        "relatedDetailsUrl": "https://ti.defender.microsoft.com/search?query=192.168.1.1"
+      }
   ]
 }
 ```

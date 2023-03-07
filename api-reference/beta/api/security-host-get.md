@@ -12,7 +12,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object.
+Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object. [host](../resources/security-host.md) is the abstract base type, where an implementation will be returned. Currently-supported implementations:
+* [microsoft.graph.security.hostname](../resources/security-hostname.md)
+* [microsoft.graph.security.ipAddress](../resources/security-ipaddress.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/{hostId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/microsoft.com
 ```
 
 
@@ -71,16 +73,18 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.security.host"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.host",
-    "id": "String",
-    "firstSeenDateTime": "String (timestamp)",
-    "lastSeenDateTime": "String (timestamp)"
+    "@odata.type": "#microsoft.graph.security.hostname",
+    "id": "microsoft.com",
+    "firstSeenDateTime": "1985-06-06T06:25:53Z",
+    "lastSeenDateTime": "2023-03-07T13:19:35Z",
+    "registrar": "MarkMonitor Inc.",
+    "registrant": "Microsoft Corporation"
   }
 }
 ```
