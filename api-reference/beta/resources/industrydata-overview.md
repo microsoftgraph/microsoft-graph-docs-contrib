@@ -9,13 +9,13 @@ doc_type: conceptual
 
 # Use the industry data API as an extract, transform, and load (ETL) engine (preview)
 
-Namespace: microsoft.graph.industryData
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The industry data API is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. The API provides resources that you can use to get statistics after the data is processed, and assist with monitoring and troubleshooting.
 
 Currently, the API is highly tailored to the education industry.
+
+The industry data API is defined in the OData subnamespace `microsoft.graph.industryData`.
 
 ## Industry data API and education
 
