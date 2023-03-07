@@ -71,38 +71,50 @@ The following is an example of the response
   "@odata.type": "Collection(microsoft.graph.security.intelligenceProfile)"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.intelligenceProfile",
-      "id": "e4752836-7b20-ed7c-8a05-5b53d7c9f248",
-      "kind": "String",
-      "title": "String",
-      "firstActiveDateTime": "String (timestamp)",
-      "aliases": [
-        "String"
-      ],
-      "targets": [
-        "String"
-      ],
-      "sponsorStates": [
-        {
-          "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState"
+    "value": {
+    "@odata.type": "#microsoft.graph.security.intelligenceProfile",
+    "id": "actinium",
+    "kind": "actor",
+    "title": "ACTINIUM",
+    "firstActiveDateTime": "2022-01-31T16:00:00.000Z",
+    "aliases": [
+      "Primitive Bear",
+      "TEMP.Armageddon",
+      "Shuckworm",
+      "Gamaredon"
+    ],
+    "targets": [
+      "Government",
+      "Humanitarian"
+    ],
+    "sponsorStates": [
+      {
+        "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState",{
+        "countryOrRegionLabel": "Russia",
+        "countryOrRegionCode": "ru"
         }
-      ],
-      "summary": {
-        "@odata.type": "microsoft.graph.security.formattedContent"
-      },
-      "description": {
-        "@odata.type": "microsoft.graph.security.formattedContent"
-      },
-      "tradecraft": {
-        "@odata.type": "microsoft.graph.security.formattedContent"
       }
+    ],
+    "summary": {
+      "@odata.type": "microsoft.graph.security.formattedContent",
+      "content": "ACTINIUM is an activity group with a long history of targeting government and private sector organizations that have a presence in or an association with Ukraine",
+      "format": "text"
+    },
+    "description": {
+      "@odata.type": "microsoft.graph.security.formattedContent",
+      "content": "### Summary\n\nACTINIUM is an activity group with a long history of targeting government and private sector organizations that have a presence in or an association with Ukraine. On February 4, 2022, Microsoft released a [blog]...",
+      "format": "markdown"
+    },
+    "tradecraft": {
+      "@odata.type": "microsoft.graph.security.formattedContent",
+      "content": "#### Tactics, Techniques, and Procedures\n\n[ACTINIUM](https://attack.mitre.org/groups/G0047/) has exhibited use of the following attack techniques...",
+      "format": "markdown"
     }
   ]
 }

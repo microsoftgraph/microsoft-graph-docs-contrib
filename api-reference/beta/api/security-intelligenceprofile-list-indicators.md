@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles/{intelligenceProfileId}/indicators
+GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles/actinium/indicators
 ```
 
 
@@ -71,7 +71,7 @@ The following is an example of the response
   "@odata.type": "Collection(microsoft.graph.security.intelligenceProfileIndicator)"
 }
 -->
-``` http
+``` json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -80,9 +80,13 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.intelligenceProfileIndicator",
       "id": "ff3eecd2-a2be-27c2-8dc0-40d1c0eada55",
-      "source": "String",
-      "firstSeenDateTime": "String (timestamp)",
-      "lastSeenDateTime": "String (timestamp)"
+      "source": "microsoftDefenderThreatIntelligence",
+      "firstSeenDateTime": "2022-05-02T23:09:20.000Z",
+      "lastSeenDateTime": null,
+      "artifact": {
+          "@odata.type": "#microsoft.graph.security.hostname",
+          "id": "fake-malicious.site"
+      }
     }
   ]
 }
