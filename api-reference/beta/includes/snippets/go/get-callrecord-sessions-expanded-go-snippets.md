@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.SessionsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.CommunicationsCallRecordItemSessionsRequestBuilderGetQueryParameters{
 	Expand: [] string {"segments"},
 }
-configuration := &graphconfig.SessionsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.CommunicationsCallRecordItemSessionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.ConditionalAccessTemplateRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityConditionalAccessTemplateItemRequestBuilderGetQueryParameters{
 	Select: [] string {"details"},
 }
-configuration := &graphconfig.ConditionalAccessTemplateRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityConditionalAccessTemplateItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

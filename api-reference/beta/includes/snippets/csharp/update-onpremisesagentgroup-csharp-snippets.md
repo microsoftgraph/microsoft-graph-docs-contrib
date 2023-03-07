@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var onPremisesAgentGroup = new OnPremisesAgentGroup
+var requestBody = new OnPremisesAgentGroup
 {
-	DisplayName = "Group New Name"
+	DisplayName = "Group New Name",
 };
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].AgentGroups["{onPremisesAgentGroup-id}"].PatchAsync(requestBody);
 
-await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].AgentGroups["{onPremisesAgentGroup-id}"]
-	.Request()
-	.UpdateAsync(onPremisesAgentGroup);
 
 ```

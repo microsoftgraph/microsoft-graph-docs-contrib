@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-}
-configuration := &graphconfig.TimeOffReasonRequestBuilderPutRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+
+configuration := &graphconfig.TeamItemScheduleTimeOffReasonItemRequestBuilderPutRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewTimeOffReason()

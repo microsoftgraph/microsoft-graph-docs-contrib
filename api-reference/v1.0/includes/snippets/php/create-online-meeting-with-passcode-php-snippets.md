@@ -16,17 +16,11 @@ $requestBody->setEndDateTime(new DateTime('2019-07-12T15:00:34.2464912-07:00'));
 
 $requestBody->setSubject('User meeting');
 
-$additionalData = [
-'joinMeetingIdSettings' => $requestBody = new JoinMeetingIdSettings();
-		$requestBody->setIsPasscodeRequired(true);
+$joinMeetingIdSettings = new JoinMeetingIdSettings();
+$joinMeetingIdSettings->setIsPasscodeRequired(true);
 
 
 $requestBody->setJoinMeetingIdSettings($joinMeetingIdSettings);
-
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $requestResult = $graphServiceClient->me()->onlineMeetings()->post($requestBody);

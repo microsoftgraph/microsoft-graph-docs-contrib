@@ -81,8 +81,8 @@ Here is a JSON representation of the resource
   "isLocked": true,
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
-  "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "topic": "string",
+  "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueSenders": ["string"]
 }
 

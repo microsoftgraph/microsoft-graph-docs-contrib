@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestFilter := "scenarios has 'secureFoundation'"
 
-requestParameters := &graphconfig.TemplatesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityConditionalAccessTemplatesRequestBuilderGetQueryParameters{
 	Select: [] string {"name","description","id","scenarios"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TemplatesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityConditionalAccessTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

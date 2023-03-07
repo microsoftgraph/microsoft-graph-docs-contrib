@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestCount := true
 
-requestParameters := &graphconfig.ContactsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeContactsRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 }
-configuration := &graphconfig.ContactsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

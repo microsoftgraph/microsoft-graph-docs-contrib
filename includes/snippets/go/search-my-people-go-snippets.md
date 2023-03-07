@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestSearch := "\"Irene McGowen\""
 
-requestParameters := &graphconfig.PeopleRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MePeopleRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 }
-configuration := &graphconfig.PeopleRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MePeopleRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

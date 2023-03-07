@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroup -Search "displayName:OneVideo" OR "mail:onevideo" 
+Get-MgGroup -Search '"displayName:OneVideo" OR "mail:onevideo"' 
 
 ```

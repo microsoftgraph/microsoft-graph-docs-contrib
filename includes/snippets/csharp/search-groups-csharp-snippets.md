@@ -4,15 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Groups.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$search", "\"displayName:OneVideo OR mail:onevideo\"")
-};
+	requestConfiguration.QueryParameters.Search = "\"displayName:OneVideo\" OR \"mail:onevideo\"";
+});
 
-var groups = await graphClient.Groups
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

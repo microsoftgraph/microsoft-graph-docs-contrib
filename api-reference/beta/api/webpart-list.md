@@ -62,15 +62,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
+
 <!-- {
   "blockType": "request",
   "name": "list_webpart"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
 ```
+
 
 ### Response
 
