@@ -1,5 +1,5 @@
 ---
-title: "synchronization: secrets"
+title: "Add synchronization secrets"
 description: "Provide credentials for establishing connectivity with the target system."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "ArvindHarinder1"
 ms.prod: "applications"
 ---
 
-# synchronization: secrets
+# Add synchronization secrets
 
 Namespace: microsoft.graph
 

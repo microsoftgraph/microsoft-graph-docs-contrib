@@ -1272,11 +1272,7 @@ items:
           - name: Acquire access token
             href: api/synchronization-synchronization-acquireaccesstoken.md
           - name: Add secrets
-            href: api/synchronization-synchronization-secrets.md
-          - name: Synchronize custom target attributes
-            href: resources/synchronization-configure-with-custom-target-attributes.md
-          - name: Synchronize directory extension attributes
-            href: resources/synchronization-configure-with-directory-extension-attributes.md
+            href: api/synchronization-serviceprincipal-put-synchronization.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -1311,6 +1307,8 @@ items:
             href: api/synchronization-synchronizationschema-update.md
           - name: Reset schema
             href: api/synchronization-synchronizationschema-delete.md
+          - name: Parse attribute mapping expression
+            href: api/synchronization-synchronizationschema-parseexpression.md
           - name: Directory definition
             href: resources/synchronization-directorydefinition.md
             items:
