@@ -14,7 +14,7 @@ Whether metered or not, APIs in Microsoft Graph follow these two principles:
 - Customer data ownership: Customer data belongs to the customer. Learn more about how [Microsoft categorizes customer data](https://www.microsoft.com/trust-center/privacy/customer-data-definitions). 
 - Reasonable access: The service provides access to customer content, within [defined limits](throttling-limits.md). 
 
-Metering some APIs helps to ensure the health of the current and future Microsoft Graph ecosystem by balancing platform access and cost. In the event that a Microsoft Graph API that is included with user subscription licenses becomes metered, that will be a non-backwards compatible change and follow the [versioning, support, and breaking change policies for Microsoft Graph](versioning-and-support.md).
+Metering some APIs helps to ensure the health of the current and future Microsoft Graph ecosystem by balancing platform access and cost. In the event that a Microsoft Graph API that is included with user subscription licenses becomes metered, that would be a non-backwards compatible change and would follow the [versioning, support, and breaking change policies for Microsoft Graph](versioning-and-support.md).
 
 ## API categories and metering
 Microsoft Graph APIs fall into three categories, and metering may apply based on the category of the API.
@@ -26,7 +26,7 @@ Most Microsoft Graph APIs are standard APIs. These APIs perform standard operati
 High-capacity APIs ensure that customers and developers have access to data at scale. This category includes purpose-built, bulk export or import endpoints and Microsoft Graph services. These APIs may be metered and incur additional costs beyond user subscription licenses.
 
 ### Advanced APIs
-Advanced APIs provide access to enriched or aggregated data, or advanced functionality that extends from Microsoft 365. The [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel.md) API is an example of an advanced API. These APIs may be metered and incur additional costs beyond user subscription licenses.
+Advanced APIs provide access to enriched or aggregated data, or advanced functionality that extends from Microsoft 365. The [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) API is an example of an advanced API. These APIs may be metered and incur additional costs beyond user subscription licenses.
 
 ## Accessing metered APIs
 To access metered Microsoft 365 APIs and services, an application must be associated with an active Microsoft Azure subscription. For details about how to associate an app to a subscription, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup).
