@@ -123,7 +123,7 @@ Content-Type: application/json
     "featureSettings": {
         "companionAppAllowedState" : {
             "state": "enabled",
-              "includeTarget": {
+            "includeTarget": {
                 "targetType": "group",
                 "id": "all_users"
             },
