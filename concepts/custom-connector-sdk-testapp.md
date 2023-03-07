@@ -24,7 +24,7 @@ Update the following configuration files to use this test utility:
     >[!Note]
     >You can add multiple connector IDs and their corresponding port information to this file using the \<Connector Id>:\<Port> format. Each unique connector should be running on a different port.
 
-- **Manifest.json**: The manifest file is required for identifying a connector and it's configuration while publishing a connection through the Microsoft 365 Admin Center. Update this manifest file to use it for validation in this test application. This file is in the Config folder of the test application.
+- **Manifest.json**: The manifest file is required in order to identify a connector and its configuration while publishing a connection through the Microsoft 365 Admin Center. Update this manifest file to use it for validation in this test application. This file is in the Config folder of the test application.
 
   Provide the manifest details in the following format:
 
