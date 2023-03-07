@@ -1,5 +1,5 @@
 ---
-title: "run: summary (of a lifecycle workflow)"
+title: "run: summary"
 description: "A summary of runs for a specified time period. Since the amount of runs returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# run: summary (of a lifecycle workflow)
+# run: summary
 
 Namespace: microsoft.graph.identityGovernance
 
