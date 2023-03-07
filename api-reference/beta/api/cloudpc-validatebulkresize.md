@@ -64,8 +64,6 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpc-validatebulkresize"
@@ -85,7 +83,6 @@ Content-length: 163
   "targetServicePlanId": "662009bc-7732-4f6f-8726-25883518b33e"
 }
 ```
----
 
 ### Response
 
