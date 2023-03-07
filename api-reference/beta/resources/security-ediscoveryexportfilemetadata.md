@@ -15,7 +15,6 @@ Namespace: microsoft.graph.security
 
 Represents the file metadata for an export in eDiscovery.
 
-Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Properties
 

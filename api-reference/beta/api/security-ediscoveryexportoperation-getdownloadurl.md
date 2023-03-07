@@ -14,9 +14,9 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!CAUTION]
-The **getDownloadUrl** method is deprecated and will stop returning data on April, 2023. Please use the new **exportFileMetadata** property in the response of operation by ID URL
+The **getDownloadUrl** method is deprecated and will stop returning data on April, 30th 2023. Please use the new **exportFileMetadata** property returned in resource [Get caseOperation](../api/security-ediscoverycase-get.md)
 
-If an Azure blob URL is not provided in export action, the export operation exports the files to an internal store. Contents of this store can be fetched by calling into this function. This returns a download URL where the zipped content is delivered as a stream.
+If an Azure blob URL is not provided in export action, the export operation exports the files to an internal store. Contents of this store can be fetched by calling into this function. This returns a download URL where the zipped content is delivered as a stream.e
 
 
 ## Permissions
