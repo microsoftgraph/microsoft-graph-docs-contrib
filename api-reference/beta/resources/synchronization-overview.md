@@ -203,5 +203,5 @@ HTTP/1.1 200 OK
 ```
 ## See also
 
-* [Configure synchronization with directory extension attributes](../resources/synchronization-configure-with-directory-extension-attributes.md)
-* [Configure synchronization with custom target attributes](../resources/synchronization-configure-with-custom-target-attributes.md)
+* [Configure synchronization with directory extension attributes](/graph/synchronization-configure-with-directory-extension-attributes)
+* [Configure synchronization with custom target attributes](/graph/synchronization-configure-with-custom-target-attributes)

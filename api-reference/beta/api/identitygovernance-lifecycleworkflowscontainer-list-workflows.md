@@ -1,5 +1,5 @@
 ---
-title: "List workflows (in Lifecycle Workflows)"
+title: "List workflows"
 description: "Get a list of the workflow objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List workflows (in Lifecycle Workflows)
+# List workflows
 
 Namespace: microsoft.graph.identityGovernance
 
