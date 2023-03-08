@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "sessions",
                     "ChangeType": "Change",
-                    "Description": "Change maximum page size to 60 sessions for a [callRecords query](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0).",
+                    "Description": "Changed the maximum page size to 60 sessions in a query for the [callRecords](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0) resource.",
                     "Target": "callRecord"
                 }
             ],
@@ -25,7 +25,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "sessions",
                     "ChangeType": "Change",
-                    "Description": "Change maximum page size to 60 sessions for a [callRecords query](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-api-overview?view=graph-rest-beta).",
+                    "Description": "Changed the maximum page size to 60 sessions in a query for the [callRecords](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) resource.",
                     "Target": "callRecord"
                 }
             ],
