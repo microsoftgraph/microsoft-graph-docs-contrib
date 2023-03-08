@@ -16,7 +16,7 @@ Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md)
 > [!WARNING]
 >
 >- This method does not support channel meetings.
->- This method can only return the 50 most recent reports.
+>- This method can only return up to 50 most recent reports.
 
 ## Permissions
 
