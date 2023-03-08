@@ -51,14 +51,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationMethodsPolicy",
-  "id": "String (identifier)",
-  "displayName": "String",
   "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "policyVersion": "String",
   "registrationEnforcement": {
     "@odata.type": "microsoft.graph.registrationEnforcement"
-  } 
+  },
   "systemCredentialPreferences": {
     "@odata.type": "microsoft.graph.systemCredentialPreferences"
   }
