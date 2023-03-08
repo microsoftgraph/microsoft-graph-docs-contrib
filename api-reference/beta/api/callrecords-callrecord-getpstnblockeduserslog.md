@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getPstnBlockedUsersLog"
 description: "Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of pstnBlockedUsersLogRow entries."
-author: "radoslag"
+author: "radoslag" 
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
