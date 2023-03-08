@@ -85,7 +85,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->extractContentLabel()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->securityExtractContentLabel()->post($requestBody, $requestConfiguration);
 
 
 ```

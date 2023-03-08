@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 
 ---
 
-
 #### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -216,7 +215,6 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displ
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

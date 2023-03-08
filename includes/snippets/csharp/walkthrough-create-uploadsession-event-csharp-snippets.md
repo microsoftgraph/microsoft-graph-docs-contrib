@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachmentItem = new AttachmentItem
+var requestBody = new Microsoft.Graph.Me.Events.Item.Attachments.CreateUploadSession.CreateUploadSessionPostRequestBody
 {
-	AttachmentType = AttachmentType.File,
-	Name = "flower",
-	Size = 3483322
+	AttachmentItem = new AttachmentItem
+	{
+		AttachmentType = AttachmentType.File,
+		Name = "flower",
+		Size = 3483322L,
+	},
 };
+var result = await graphClient.Me.Events["{event-id}"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
-await graphClient.Me.Events["{event-id}"].Attachments
-	.CreateUploadSession(attachmentItem)
-	.Request()
-	.PostAsync();
 
 ```

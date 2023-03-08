@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var allowedCombinations = new List<AuthenticationMethodModes>()
+var requestBody = new Microsoft.Graph.Beta.Policies.AuthenticationStrengthPolicies.Item.UpdateAllowedCombinations.UpdateAllowedCombinationsPostRequestBody
 {
-	AuthenticationMethodModes.Password | AuthenticationMethodModes.Voice
+	AllowedCombinations = new List<AuthenticationMethodModes?>
+	{
+		AuthenticationMethodModes.Password | AuthenticationMethodModes.Voice,
+	},
 };
+var result = await graphClient.Policies.AuthenticationStrengthPolicies["{authenticationStrengthPolicy-id}"].UpdateAllowedCombinations.PostAsync(requestBody);
 
-await graphClient.Policies.AuthenticationStrengthPolicies["{authenticationStrengthPolicy-id}"]
-	.UpdateAllowedCombinations(allowedCombinations)
-	.Request()
-	.PostAsync();
 
 ```

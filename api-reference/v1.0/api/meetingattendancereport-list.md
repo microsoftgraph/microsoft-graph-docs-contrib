@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ---
 
-
 ### Response
 
 > **Note**: The response object shown here might be shortened for readability.

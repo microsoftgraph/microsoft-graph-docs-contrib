@@ -43,15 +43,15 @@ To use application permission for this API, tenant administrators must create an
 Get a single transcript of an online meeting.
 
 ```http
-GET /me/onlineMeetings({meetingId})/transcripts({transcriptId})
-GET /users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})
+GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
+GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 ```
 
 Get the content of a single transcript of an online meeting.
 
 ```http
-GET me/onlineMeetings({meetingId})/transcripts({transcriptId})/content
-GET users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})/content
+GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
 
 ## Request headers
@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/bf040af7-a5ff-4abe-a8c
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -94,9 +94,6 @@ GET https://graph.microsoft.com/v1.0/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/
 
 ---
 
----
-
-
 ### Response
 
 The following is an example of the response.
