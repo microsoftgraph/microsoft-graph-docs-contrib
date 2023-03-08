@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsMicrosoft.graph.security.extractContentLabelRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsSecurity.extractContentLabelRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewExtractContentLabelPostRequestBody()
@@ -74,7 +74,7 @@ additionalData := map[string]interface{}{
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
 
-result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().ExtractContentLabel().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().SecurityExtractContentLabel().Post(context.Background(), requestBody, configuration)
 
 
 ```

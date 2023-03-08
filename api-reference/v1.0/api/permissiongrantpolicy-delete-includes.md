@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/my-cust
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

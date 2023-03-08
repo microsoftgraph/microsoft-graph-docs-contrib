@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

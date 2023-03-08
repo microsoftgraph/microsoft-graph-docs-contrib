@@ -44,6 +44,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |:---|:---|:---|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only. |
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Catalog of the access package containing this policy. Read-only.|
+|questions|[accessPackageQuestion](../resources/accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -72,6 +73,11 @@ The following is a JSON representation of the resource.
   "requestorSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"
   },
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageQuestion"
+    }
+  ],
   "requestApprovalSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
   },

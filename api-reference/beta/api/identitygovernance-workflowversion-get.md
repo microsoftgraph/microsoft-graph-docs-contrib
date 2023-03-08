@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 #### Response
 
 The following is an example of the response
@@ -201,7 +200,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_get_workflowversion_select"
+  "name": "lifecycleworkflows_get_workflowversion_select",
+  "sampleKeys": ["15239232-66ed-445b-8292-2f5bbb2eb833", "2"]
 }
 -->
 ``` http
@@ -233,7 +233,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

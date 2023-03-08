@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var federatedIdentityCredentials = await graphClient.Applications["{application-id}"].FederatedIdentityCredentials
-	.Request()
-	.GetAsync();
+var result = await graphClient.Applications["{application-id}"].FederatedIdentityCredentials.GetAsync();
+
 
 ```

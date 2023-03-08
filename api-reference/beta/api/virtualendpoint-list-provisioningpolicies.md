@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -125,6 +124,7 @@ Content-Type: application/json
           "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
           "type": "hybridAzureADJoin"
       },
+      "enableSingleSignOn": true,
       "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
       "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
       "imageDisplayName": "Image Display Name value",
@@ -133,7 +133,8 @@ Content-Type: application/json
       "windowsSettings": {
         "language": "en-US"
       },
-      "managedBy": "windows365"
+      "managedBy": "windows365",
+      "provisioningType": "dedicated"
     }
   ]
 }
