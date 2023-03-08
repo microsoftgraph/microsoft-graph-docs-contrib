@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-
 
 ---
 
-
 ### Response
 
 <!-- {

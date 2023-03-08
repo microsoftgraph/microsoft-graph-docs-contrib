@@ -4,19 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityApiConnector = new IdentityApiConnector
+var requestBody = new IdentityApiConnector
 {
-	AuthenticationConfiguration = new Pkcs12Certificate
+	AuthenticationConfiguration = new ApiAuthenticationConfigurationBase
 	{
-		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
-		Password = "secret"
-	}
+		OdataType = "#microsoft.graph.pkcs12Certificate",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"pkcs12Value" , "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+			},
+			{
+				"password" , "secret"
+			},
+		},
+	},
 };
+var result = await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"]
-	.Request()
-	.UpdateAsync(identityApiConnector);
 
 ```

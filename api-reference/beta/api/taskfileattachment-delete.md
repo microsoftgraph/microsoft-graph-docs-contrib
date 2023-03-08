@@ -88,8 +88,6 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMehdkfuhgAAA=/tasks/AAMk
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 <!-- {

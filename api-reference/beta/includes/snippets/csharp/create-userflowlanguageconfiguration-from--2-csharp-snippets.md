@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var userFlowLanguageConfiguration = new UserFlowLanguageConfiguration
+var requestBody = new Microsoft.Graph.Beta.Identity.B2cUserFlows.Item.Languages.Item.Language
 {
-	IsEnabled = false
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"isEnabled" , false
+		},
+	},
 };
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].Languages["{userFlowLanguageConfiguration-id}"].PutAsync(requestBody);
 
-await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].Languages["{userFlowLanguageConfiguration-id}"]
-	.Request()
-	.PutAsync(userFlowLanguageConfiguration);
 
 ```

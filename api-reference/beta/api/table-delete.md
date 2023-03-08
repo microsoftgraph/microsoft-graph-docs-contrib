@@ -58,10 +58,6 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/table-delete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/table-delete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -71,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 Here is an example of the response. 

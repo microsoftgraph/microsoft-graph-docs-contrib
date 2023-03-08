@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

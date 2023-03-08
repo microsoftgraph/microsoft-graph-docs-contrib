@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var itemAddress = new ItemAddress
+var requestBody = new ItemAddress
 {
 	DisplayName = "Home",
 	Detail = new PhysicalAddress
@@ -17,12 +17,10 @@ var itemAddress = new ItemAddress
 		City = "London",
 		State = null,
 		CountryOrRegion = "United Kingdom",
-		PostalCode = "E14 3TD"
-	}
+		PostalCode = "E14 3TD",
+	},
 };
+var result = await graphClient.Me.Profile.Addresses.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Addresses
-	.Request()
-	.AddAsync(itemAddress);
 
 ```
