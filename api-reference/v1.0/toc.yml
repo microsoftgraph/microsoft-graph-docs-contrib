@@ -82,6 +82,9 @@ items:
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
       href: /graph/extensibility-overview?context=graph/api/1.0
+    - name: Enable metered APIs
+      href: /graph/metered-api-setup?context=graph/api/1.0
+      displayName: monetize, charge, cost, pricing
     - name: Use Graph Explorer
       items:
       - name: Get started
@@ -4218,7 +4221,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management role assignment
             href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -7124,7 +7127,7 @@ items:
           - name: List
             href: api/attacksimulationroot-list-simulations.md
           - name: Get
-            href: api/attacksimulationroot-get-simulations.md
+            href: api/simulation-get.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
@@ -7136,7 +7139,7 @@ items:
           - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
           - name: Get
-            href: api/attacksimulationroot-get-simulationautomations.md
+            href: api/simulationautomation-get.md
         - name: Simulation automation run
           items:
           - name: Simulation automation run
