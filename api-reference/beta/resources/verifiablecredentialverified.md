@@ -17,9 +17,7 @@ Used for the **credentialType** property of [verifiable credential settings](ver
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|expiryDateTime|DateTimeOffset| The specific date and time that the presentation request will expire and a new one will need to be generated. |
+None.
 
 ## Relationships
 None.
