@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unifiedStorageQuota",
           "ChangeType": "Addition",
-          "Description": "Added the servicestoragequotabreakdown-get method to the serviceStorageQuotaBreakdown resource.",
+          "Description": "Added the [servicestoragequotabreakdown-get](https://learn.microsoft.com/en-us/graph/api/servicestoragequotabreakdown-get?view=graph-rest-beta) method to the [serviceStorageQuotaBreakdown](https://learn.microsoft.com/en-us/graph/api/resources/serviceStorageQuotaBreakdown?view=graph-rest-beta) resource.",
           "Target": "serviceStorageQuotaBreakdown"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unifiedStorageQuota",
           "ChangeType": "Addition",
-          "Description": "Added the servicestoragequotabreakdown-list method to the serviceStorageQuotaBreakdown resource.",
+          "Description": "Added the [servicestoragequotabreakdown-list](https://learn.microsoft.com/en-us/graph/api/servicestoragequotabreakdown-list?view=graph-rest-beta) method to the [serviceStorageQuotaBreakdown](https://learn.microsoft.com/en-us/graph/api/resources/serviceStorageQuotaBreakdown?view=graph-rest-beta) resource.",
           "Target": "serviceStorageQuotaBreakdown"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unifiedStorageQuota",
           "ChangeType": "Addition",
-          "Description": "Added the unifiedstoragequota-get method to the unifiedstoragequota resource.",
+          "Description": "Added the [unifiedstoragequota-get](https://learn.microsoft.com/en-us/graph/api/unifiedstoragequota-get?view=graph-rest-beta) method to the [unifiedStorageQuota](https://learn.microsoft.com/en-us/graph/api/resources/unifiedStorageQuota?view=graph-rest-beta) resource.",
           "Target": "unifiedstoragequota"
         },
         {
