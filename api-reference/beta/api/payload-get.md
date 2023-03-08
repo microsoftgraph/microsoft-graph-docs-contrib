@@ -37,25 +37,7 @@ GET /security/attackSimulation/payloads/{payloadId}
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
-
-If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
-
-The following are examples of their use:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /security/attackSimulation/payloads/{payloadId}?$count=true
-GET /security/attackSimulation/payloads/{payloadId}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/payloads/{payloadId}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/payloads/{payloadId}?$orderby={property}
-GET /security/attackSimulation/payloads/{payloadId}?$skipToken={skipToken}
-GET /security/attackSimulation/payloads/{payloadId}?$top=1
-GET /security/attackSimulation/payloads/{payloadId}?$select={property}
-```
+This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -115,7 +97,7 @@ Content-Type: application/json
     "language": "en",
     "predictedCompromiseRate": 20.0,
     "complexity": "medium",
-    "attackTechnique": "credentialHarvesting",
+    "technique": "credentialHarvesting",
     "createdBy": {
         "email": "faiza@contoso.com",
         "id": "121212",
