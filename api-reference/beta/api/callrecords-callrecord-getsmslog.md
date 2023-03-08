@@ -128,3 +128,11 @@ Content-Type: application/json
 * [Get log of direct routing calls](callrecords-callrecord-getdirectroutingcalls.md)
 * [Get aggregated report of the audio conferencing dial-out](callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)
 * [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+        "Error: callrecordthis.getsmslog/container/callCharge:
+            Expected type String but actual was Double. Property: callCharge, actual value: '0'"
+    ]
+}-->

@@ -147,3 +147,13 @@ HTTP/1.1 200 OK
 - [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)
 - [Get log of direct routing calls](callrecords-callrecord-getdirectroutingcalls.md)
 - [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+      "Error: callrecord_getpstncalls/container/connectionCharge:
+      Expected type String but actual was Double. Property: connectionCharge, actual value: '0'",
+      "Error: callrecord_getpstncalls/container/charge:
+      Expected type String but actual was Double. Property: charge, actual value: '0'"
+    ]
+}-->

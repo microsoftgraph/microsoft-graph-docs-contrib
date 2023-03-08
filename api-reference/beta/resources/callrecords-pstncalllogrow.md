@@ -94,3 +94,17 @@ The following is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+      "Error: microsoft.graph.callRecords.pstnCallLogRow/charge:
+      Referenced type microsoft.graph.decimal is not defined in the doc set! Potential suggestion: microsoft.graph.groupPolicyPresentationDecimalTextBox",
+      "Error: microsoft.graph.callRecords.pstnCallLogRow/connectionCharge:
+      Referenced type microsoft.graph.decimal is not defined in the doc set! Potential suggestion: microsoft.graph.groupPolicyPresentationDecimalTextBox",
+      "Error: microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport/totalCallCharge:
+      Referenced type microsoft.graph.decimal is not defined in the doc set! Potential suggestion: microsoft.graph.groupPolicyPresentationDecimalTextBox",
+      "Error: microsoft.graph.callRecords.smsLogRow/callCharge:
+      Referenced type microsoft.graph.decimal is not defined in the doc set! Potential suggestion: microsoft.graph.groupPolicyPresentationDecimalTextBox"
+    ]
+}-->
