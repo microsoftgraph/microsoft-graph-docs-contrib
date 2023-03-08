@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2510
+Content-Length: 1957
 
 {
   "value": [
@@ -71,21 +71,9 @@ Content-Length: 2510
       "partnerState": "unavailable",
       "displayName": "Display Name value",
       "macOsOnboarded": true,
-      "windowsOnboarded": true,
       "androidOnboarded": true,
       "iosOnboarded": true,
       "macOsEnrollmentAssignments": [
-        {
-          "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
-          "target": {
-            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-            "deviceAndAppManagementAssignmentFilterType": "include",
-            "collectionId": "Collection Id value"
-          }
-        }
-      ],
-      "windowsEnrollmentAssignments": [
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {

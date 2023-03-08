@@ -1,5 +1,5 @@
 ---
-title: "Create workflow (lifecycle workflow)"
+title: "Create workflow"
 description: "Create a new workflow object. You can create up to 50 workflows in a tenant."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create workflow (lifecycle workflow)
+# Create workflow
 
 Namespace: microsoft.graph.identityGovernance
 
