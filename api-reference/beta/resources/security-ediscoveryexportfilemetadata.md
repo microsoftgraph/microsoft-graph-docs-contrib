@@ -15,7 +15,6 @@ Namespace: microsoft.graph.security
 
 Represents the file metadata for an export in eDiscovery.
 
-
 ## Properties
 
 |Property|Type|Description|
@@ -30,9 +29,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.ediscoveryExportFileMetadata",
-  "baseType": "microsoft.graph.security.caseOperation",
   "openType": false
 }
 -->
