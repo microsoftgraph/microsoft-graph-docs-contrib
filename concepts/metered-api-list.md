@@ -1,6 +1,6 @@
 ---
-title: "Metered Microsoft 365 APIs and services"
-description: "Get a list of metered Microsoft 365 APIs and services in Microsoft Graph."
+title: "Metered APIs and services in Microsoft Graph"
+description: "Get a list of metered APIs and services in Microsoft Graph."
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
@@ -8,11 +8,11 @@ ms.custom: scenarios:getting-started
 
 # Metered Microsoft 365 APIs and services
 
-This article provides a list of metered Microsoft 365 APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](metered-api-overview.md). 
+This article provides a list of metered APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md). 
 
-Some metered Microsoft 365 APIs and services are protected and require additional validation beyond permissions and admin consent. Before you can use these protected APIs, you must submit a request.
+Some metered APIs and services in Microsoft Graph are protected and require additional validation beyond permissions and admin consent. Before you can use these protected APIs, you must submit a request.
 
-The following table lists the metered Microsoft 365 APIs.
+The following table lists the metered APIs and services in Microsoft Graph.
 
 | API | Billing and license information | Protected API form |
 |:--------------------------|:--------------------------|:----------------------------------------|
@@ -25,7 +25,7 @@ The following table lists the metered Microsoft 365 APIs.
 
 ## See also
 
-- [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview)
-- [Enable Microsoft 365 metered APIs and services](/graph/metered-api-setup)
+- [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
+- [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)
 - [Protected APIs in Microsoft Teams](/graph/teams-protected-apis)
 

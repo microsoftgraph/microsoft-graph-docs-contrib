@@ -77,7 +77,7 @@ items:
             href: deployments.md
           - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
-      - name: API metering
+      - name: Metered APIs
         items:
           - name: Overview
             href: metered-api-overview.md
