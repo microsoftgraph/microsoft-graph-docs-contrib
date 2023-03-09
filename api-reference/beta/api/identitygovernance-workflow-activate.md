@@ -27,8 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Lifecycle workflows administrator
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -67,7 +66,6 @@ If successful, this action returns a `204 No Content` response code.
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_workflowthis.activate"
@@ -78,34 +76,12 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/work
 Content-Type: application/json
 
 {
-    "subjects": [ 
-        { "id": "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"},
-        { "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"}
-    ]
+"subjects": [ 
+{ "id": "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"},
+{ "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"}
+]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-workflowthisactivate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-workflowthisactivate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-workflowthisactivate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-workflowthisactivate-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-workflowthisactivate-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

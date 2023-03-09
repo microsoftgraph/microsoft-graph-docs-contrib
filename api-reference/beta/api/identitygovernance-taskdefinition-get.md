@@ -27,9 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Global reader
-- Lifecycle workflows administrator
+- Global Reader
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -65,7 +64,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_get_taskdefinition"
@@ -74,32 +72,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions/1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-taskdefinition-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-get-taskdefinition-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-get-taskdefinition-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-get-taskdefinition-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-taskdefinition-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-get-taskdefinition-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -116,12 +88,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions/$entity",
-    "category": "joiner,leaver",
-    "description": "Disable user account in the directory",
-    "displayName": "Disable User Account",
-    "id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
-    "version": 1,
-    "parameters": []
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions/$entity",
+"category": "joiner,leaver",
+"description": "Disable user account in the directory",
+"displayName": "Disable User Account",
+"id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
+"version": 1,
+"parameters": []
 }
 ```

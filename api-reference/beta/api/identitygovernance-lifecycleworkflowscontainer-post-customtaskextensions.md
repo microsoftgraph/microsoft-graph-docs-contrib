@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Lifecycle workflows administrator
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -75,7 +74,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_create_customtaskextension_from_"
@@ -87,55 +85,29 @@ Content-Type: application/json
 Content-length: 588
 
 {
-    "displayName": "Grant manager access to mailbox and OneDrive",
-    "description": "Grant manager access to mailbox and OneDrive",
-    "endpointConfiguration": {
-        "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-        "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-        "resourceGroupName": "RG-LCM",
-        "logicAppWorkflowName": "ManagerAccess"
-    },
-    "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
-    },
-    "clientConfiguration": {
-        "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-        "maximumRetries": 1,
-        "timeoutInMilliseconds": 1000
-    },
-    "callbackConfiguration": {
-        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
-    }
+"displayName": "Grant manager access to mailbox and OneDrive",
+"description": "Grant manager access to mailbox and OneDrive",
+"endpointConfiguration": {
+"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+"resourceGroupName": "RG-LCM",
+"logicAppWorkflowName": "ManagerAccess"
+},
+"authenticationConfiguration": {
+"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+"resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+},
+"clientConfiguration": {
+"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+"maximumRetries": 1,
+"timeoutInMilliseconds": 1000
+},
+"callbackConfiguration": {
+"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+"timeoutDuration": "PT5M"
+}
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-create-customtaskextension-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-create-customtaskextension-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-create-customtaskextension-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-create-customtaskextension-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-create-customtaskextension-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-create-customtaskextension-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -152,30 +124,30 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
-    "id": "ee2590e4-4572-4820-a397-969ecd7bd6a9",
-    "displayName": "Grant manager access to mailbox and OneDrive",
-    "description": "Grant manager access to mailbox and OneDrive",
-    "createdDateTime": "2022-08-24T22:37:46.1790566Z",
-    "lastModifiedDateTime": "2022-08-24T22:37:46.179062Z",
-    "endpointConfiguration": {
-        "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-        "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-        "resourceGroupName": "RG-LCM",
-        "logicAppWorkflowName": "ManagerAccess"
-    },
-    "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
-    },
-    "clientConfiguration": {
-        "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-        "maximumRetries": 1,
-        "timeoutInMilliseconds": 1000
-    },
-    "callbackConfiguration": {
-        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
-    }
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
+"id": "ee2590e4-4572-4820-a397-969ecd7bd6a9",
+"displayName": "Grant manager access to mailbox and OneDrive",
+"description": "Grant manager access to mailbox and OneDrive",
+"createdDateTime": "2022-08-24T22:37:46.1790566Z",
+"lastModifiedDateTime": "2022-08-24T22:37:46.179062Z",
+"endpointConfiguration": {
+"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+"resourceGroupName": "RG-LCM",
+"logicAppWorkflowName": "ManagerAccess"
+},
+"authenticationConfiguration": {
+"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+"resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+},
+"clientConfiguration": {
+"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+"maximumRetries": 1,
+"timeoutInMilliseconds": 1000
+},
+"callbackConfiguration": {
+"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+"timeoutDuration": "PT5M"
+}
 }
 ```

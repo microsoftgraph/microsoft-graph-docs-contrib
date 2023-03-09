@@ -27,9 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Global reader
-- Lifecycle workflows administrator
+- Global Reader
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -121,7 +120,6 @@ Content-Type: application/json
 
 The following is an example of a request to get a task from a workflow version.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_get_workflowVersion_task",
@@ -131,16 +129,6 @@ The following is an example of a request to get a task from a workflow version.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-get-workflowversion-task-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-get-workflowversion-task-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -157,20 +145,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/versions(1)/tasks/$entity",
-  "category": "joiner,leaver",
-  "continueOnError": false,
-  "description": "Add user to selected groups",
-  "displayName": "Add User To Groups",
-  "executionSequence": 2,
-  "id": "eedd8043-90a1-4e3c-9112-b2a8917ea3ae",
-  "isEnabled": true,
-  "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
-  "arguments": [
-    {
-      "name": "groupID",
-      "value": "e5659cb0-bcbb-4a9f-9092-90f72bd19028"
-    }
-  ]
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/versions(1)/tasks/$entity",
+"category": "joiner,leaver",
+"continueOnError": false,
+"description": "Add user to selected groups",
+"displayName": "Add User To Groups",
+"executionSequence": 2,
+"id": "eedd8043-90a1-4e3c-9112-b2a8917ea3ae",
+"isEnabled": true,
+"taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+"arguments": [
+{
+"name": "groupID",
+"value": "e5659cb0-bcbb-4a9f-9092-90f72bd19028"
+}
+]
 }
 ```
