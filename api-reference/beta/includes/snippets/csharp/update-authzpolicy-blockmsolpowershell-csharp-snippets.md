@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authorizationPolicy = new AuthorizationPolicy
+var requestBody = new AuthorizationPolicy
 {
-	BlockMsolPowerShell = true
+	BlockMsolPowerShell = true,
 };
+var result = await graphClient.Policies.AuthorizationPolicy["{authorizationPolicy-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.AuthorizationPolicy["{authorizationPolicy-id}"]
-	.Request()
-	.UpdateAsync(authorizationPolicy);
 
 ```

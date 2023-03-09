@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

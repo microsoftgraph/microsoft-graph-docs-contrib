@@ -21,7 +21,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Domain.Read.All, Domain.ReadWrite.All|
 
-The calling user must be assigned the Global Administrator [Azure AD role](/azure/active-directory/roles/permissions-reference).
+The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+- Security Administrator
+- External Identity Provider Administrator
 
 ## HTTP request
 
@@ -88,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com/federationConfiguration
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

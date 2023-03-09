@@ -21,10 +21,6 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 >
 > The extensions mentioned in this article are not similar to Azure AD [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with directory extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-directory-extensions).
 
-
-> [!div class="nextstepaction"]
-> [Training module: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
-
 ## Why add custom data to Microsoft Graph?
 
 - As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
@@ -95,7 +91,6 @@ PATCH https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0
 
 ---
 
-
 The request returns a `204 No Content` response object.
 
 ##### Read the extension attributes
@@ -137,7 +132,6 @@ GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExte
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ###### Response
 
@@ -243,7 +237,6 @@ POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69
 
 ---
 
-
 ###### Response
 
 A directory extension property named `extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker` is created with an extension name that follows the following naming convention: *extension_{appId-without-hyphens}_{extensionProperty-name}*.
@@ -323,7 +316,6 @@ POST https://graph.microsoft.com/v1.0/users
 
 ---
 
-
 The request returns a `201 Created` response code and a [user](/graph/api/resources/user) object in the response body.
 
 ##### Retrieve a directory extension
@@ -367,7 +359,6 @@ GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -546,7 +537,6 @@ POST https://graph.microsoft.com/v1.0/schemaExtensions
 
 ---
 
-
 ###### Response
 
 <!-- {
@@ -636,7 +626,6 @@ POST https://graph.microsoft.com/beta/users
 
 ---
 
-
 The request returns a `201 Created` response code and a [schemaExtension](/graph/api/resources/schemaextension) object in the response body
 
 ##### Update or delete a schema extension property
@@ -688,7 +677,6 @@ PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3
 
 ---
 
-
 The request returns a `204 No Content` response object.
 
 ##### Retrieve the schema extension property
@@ -732,7 +720,6 @@ GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ###### Response
 
@@ -835,7 +822,6 @@ POST https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 The request returns a `201 Created` response code and an [openTypeExtension](/graph/api/resources/opentypeextension) object in the response body.
 
@@ -975,6 +961,7 @@ For known limitations using extensions, see the [extensions section](known-issue
 
 ## Next steps
 
+- [Training module: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
 - [Add custom data to users using open extensions](extensibility-open-users.md)
 - [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 

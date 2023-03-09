@@ -86,7 +86,6 @@ POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response" } -->

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewChannel()
 displayName := "Import_150958_99z"
@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 createdDateTime , err := time.Parse(time.RFC3339, "2020-03-14T11:22:17.067Z")
 requestBody.SetCreatedDateTime(&createdDateTime) 
 additionalData := map[string]interface{}{
-	"@microsoft.graph.channelCreationMode" : "migration", 
+	"microsoftGraphChannelCreationMode" : "migration", 
 }
 requestBody.SetAdditionalData(additionalData)
 
