@@ -72,6 +72,10 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-select.md)]
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -107,6 +111,10 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
+
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-list.md)]
 
 # [Go](#tab/Go)
 
@@ -144,6 +152,10 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-index.md)]
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -177,6 +189,10 @@ You can use the `$expand` filter to request a related entity, or collection of e
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
+
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-expand.md)]
 
 # [Go](#tab/Go)
 
@@ -212,6 +228,10 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-delete.md)]
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -245,6 +265,10 @@ For SDKs that support a fluent style, new items can be added to collections with
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
+
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-create.md)]
 
 # [Go](#tab/Go)
 
@@ -280,6 +304,10 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-update.md)]
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -314,6 +342,10 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-headers.md)]
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -347,6 +379,10 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
+
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-queryparams.md)]
 
 # [Go](#tab/Go)
 
