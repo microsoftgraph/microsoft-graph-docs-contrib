@@ -62,6 +62,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |onPremisesConnectionName|String|The Azure network connection that is applied during the provisioning of Cloud PCs.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
 |partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
+|powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The Power State of the Cloud PC. Possible values include running, poweredOff. This is only supported for Cloud PCs with the provisioningType set to 'shared'.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
@@ -99,6 +100,14 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
+#### cloudPCPowerState values
+
+|Member|Description|
+|:---|:---|
+|running|Indicates that Cloud PC is running.|
+|poweredOff|Indicates that Cloud PC is powered off.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
 ## Relationships
 
 None.
@@ -133,6 +142,7 @@ The following is a JSON representation of the resource.
   "onPremisesConnectionName": "String",
   "osVersion": "String",
   "partnerAgentInstallResults": "String",
+  "powerState": "String",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
   "provisioningType": "String",

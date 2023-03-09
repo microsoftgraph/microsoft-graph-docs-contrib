@@ -1,5 +1,31 @@
 {
-    "changelog": [        
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "powerState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **powerState** property to the [cloudPc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc.md).",
+                    "Target": "cloudpc"
+                },
+                {
+                    "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPCPowerState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPCPowerState** enumeration type.",
+                    "Target": "cloudpc"
+                }
+            ],
+            "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-03-09T02:52:10.3002588Z",     
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
         {
             "ChangeList": [
                 {
