@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Lifecycle workflows administrator
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -73,7 +72,6 @@ If successful, this action returns a `204 No Content` response code.
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_update_customtaskextension"
@@ -85,55 +83,29 @@ Content-Type: application/json
 Content-length: 588
 
 {
-    "displayName": "Grant manager access to mailbox and OneDrive",
-    "description": "Grant manager access to mailbox and OneDrive",
-    "endpointConfiguration": {
-        "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-        "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-        "resourceGroupName": "RG-LCM",
-        "logicAppWorkflowName": "ManagerAccess"
-    },
-    "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
-    },
-    "clientConfiguration": {
-        "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-        "maximumRetries": 1,
-        "timeoutInMilliseconds": 1000
-    },
-    "callbackConfiguration": {
-        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT20M"
-    }
+"displayName": "Grant manager access to mailbox and OneDrive",
+"description": "Grant manager access to mailbox and OneDrive",
+"endpointConfiguration": {
+"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+"resourceGroupName": "RG-LCM",
+"logicAppWorkflowName": "ManagerAccess"
+},
+"authenticationConfiguration": {
+"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+"resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+},
+"clientConfiguration": {
+"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+"maximumRetries": 1,
+"timeoutInMilliseconds": 1000
+},
+"callbackConfiguration": {
+"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+"timeoutDuration": "PT20M"
+}
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-update-customtaskextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-update-customtaskextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-update-customtaskextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-update-customtaskextension-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-update-customtaskextension-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-update-customtaskextension-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

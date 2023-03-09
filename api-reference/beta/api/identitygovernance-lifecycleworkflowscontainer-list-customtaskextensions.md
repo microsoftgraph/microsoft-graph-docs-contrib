@@ -27,9 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Global reader
-- Lifecycle workflows administrator
+- Global Reader
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -65,7 +64,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_customtaskextension"
@@ -74,32 +72,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-customtaskextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-customtaskextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-customtaskextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-customtaskextension-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-customtaskextension-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-customtaskextension-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -115,58 +87,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions",
-    "@odata.count": 2,
-    "value": [
-        {
-            "id": "c0c5b05b-6b5b-4c8d-8060-2ae8df425f4b",
-            "displayName": "Query and assign Teams phone number",
-            "description": "Query and assign Teams phone number",
-            "createdDateTime": "2022-08-24T20:34:52.3028938Z",
-            "lastModifiedDateTime": "2022-08-24T20:35:07.716353Z",
-            "callbackConfiguration": null,
-            "endpointConfiguration": {
-                "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-                "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-                "resourceGroupName": "RG-LCM",
-                "logicAppWorkflowName": "TeamsPhoneNumber"
-            },
-            "authenticationConfiguration": {
-                "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-                "resourceId": "b9c29c27-b116-47a9-925b-ff3b19bafa3b"
-            },
-            "clientConfiguration": {
-                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-                "maximumRetries": 1,
-                "timeoutInMilliseconds": 1000
-            }
-        },
-        {
-            "id": "ffcc4c85-5a14-448e-a390-77abf2700369",
-            "displayName": "Grant manager access to mailbox and OneDrive",
-            "description": "Grant manager access to mailbox and OneDrive",
-            "createdDateTime": "2022-08-24T20:36:14.7006029Z",
-            "lastModifiedDateTime": "2022-08-24T20:42:07.9885265Z",
-            "endpointConfiguration": {
-                "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-                "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-                "resourceGroupName": "RG-LCM",
-                "logicAppWorkflowName": "ManagerAccess"
-            },
-            "authenticationConfiguration": {
-                "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-                "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
-            },
-            "clientConfiguration": {
-                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-                "maximumRetries": 1,
-                "timeoutInMilliseconds": 1000
-            },
-            "callbackConfiguration": {
-                "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-                "timeoutDuration": "PT5M"
-            }
-        }
-    ]
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions",
+"@odata.count": 2,
+"value": [
+{
+"id": "c0c5b05b-6b5b-4c8d-8060-2ae8df425f4b",
+"displayName": "Query and assign Teams phone number",
+"description": "Query and assign Teams phone number",
+"createdDateTime": "2022-08-24T20:34:52.3028938Z",
+"lastModifiedDateTime": "2022-08-24T20:35:07.716353Z",
+"callbackConfiguration": null,
+"endpointConfiguration": {
+"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+"resourceGroupName": "RG-LCM",
+"logicAppWorkflowName": "TeamsPhoneNumber"
+},
+"authenticationConfiguration": {
+"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+"resourceId": "b9c29c27-b116-47a9-925b-ff3b19bafa3b"
+},
+"clientConfiguration": {
+"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+"maximumRetries": 1,
+"timeoutInMilliseconds": 1000
+}
+},
+{
+"id": "ffcc4c85-5a14-448e-a390-77abf2700369",
+"displayName": "Grant manager access to mailbox and OneDrive",
+"description": "Grant manager access to mailbox and OneDrive",
+"createdDateTime": "2022-08-24T20:36:14.7006029Z",
+"lastModifiedDateTime": "2022-08-24T20:42:07.9885265Z",
+"endpointConfiguration": {
+"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+"resourceGroupName": "RG-LCM",
+"logicAppWorkflowName": "ManagerAccess"
+},
+"authenticationConfiguration": {
+"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+"resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+},
+"clientConfiguration": {
+"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+"maximumRetries": 1,
+"timeoutInMilliseconds": 1000
+},
+"callbackConfiguration": {
+"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+"timeoutDuration": "PT5M"
+}
+}
+]
 }
 ```

@@ -27,9 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Global reader
-- Lifecycle workflows administrator
+- Global Reader
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -67,7 +66,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_deleteditemcontainer"
@@ -77,31 +75,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-deleteditemcontainer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-deleteditemcontainer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-deleteditemcontainer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-deleteditemcontainer-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-deleteditemcontainer-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-deleteditemcontainer-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -118,29 +91,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows",
-    "value": [
-        {
-            "category": "joiner",
-            "description": "Configure new hire tasks for onboarding employees on their first day",
-            "displayName": "US Onboard new hire employee",
-            "lastModifiedDateTime": "2022-08-24T18:25:09.4212828Z",
-            "createdDateTime": "2022-08-24T18:24:14.4067873Z",
-            "deletedDateTime": "2022-08-24T18:25:09.5729865Z",
-            "id": "f1937e0c-c509-4250-ab51-d5e6e35fcbda",
-            "version": 1
-        },
-        {
-            "category": "joiner",
-            "description": "Configure new hire tasks for onboarding employees on their first day",
-            "displayName": "EU Onboard new hire employee",
-            "lastModifiedDateTime": "2022-08-24T18:25:09.4050443Z",
-            "createdDateTime": "2022-08-24T18:24:40.0689833Z",
-            "deletedDateTime": "2022-08-24T18:25:09.5542954Z",
-            "id": "21d2c0fb-dcaa-4abb-88db-891d76c84e9a",
-            "version": 1
-        }
-    ]
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows",
+"value": [
+{
+"category": "joiner",
+"description": "Configure new hire tasks for onboarding employees on their first day",
+"displayName": "US Onboard new hire employee",
+"lastModifiedDateTime": "2022-08-24T18:25:09.4212828Z",
+"createdDateTime": "2022-08-24T18:24:14.4067873Z",
+"deletedDateTime": "2022-08-24T18:25:09.5729865Z",
+"id": "f1937e0c-c509-4250-ab51-d5e6e35fcbda",
+"version": 1
+},
+{
+"category": "joiner",
+"description": "Configure new hire tasks for onboarding employees on their first day",
+"displayName": "EU Onboard new hire employee",
+"lastModifiedDateTime": "2022-08-24T18:25:09.4050443Z",
+"createdDateTime": "2022-08-24T18:24:40.0689833Z",
+"deletedDateTime": "2022-08-24T18:25:09.5542954Z",
+"id": "21d2c0fb-dcaa-4abb-88db-891d76c84e9a",
+"version": 1
+}
+]
 }
 ```
 
@@ -150,8 +123,6 @@ Content-Type: application/json
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_deleteditemcontainer_select"
@@ -160,32 +131,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows?$select=id,category,displayName,description,version&$filter=category eq 'leaver'
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-deleteditemcontainer-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-deleteditemcontainer-select-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-deleteditemcontainer-select-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-deleteditemcontainer-select-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-deleteditemcontainer-select-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-deleteditemcontainer-select-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -202,15 +147,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows(category,displayName,description,version)",
-    "value": [
-        {
-            "category": "leaver",
-            "description": "Employee offboarding for Contoso Germany.",
-            "displayName": "Germany offboard employees",
-            "id": "952b23c5-cc25-48c9-8848-95da4dd9dc6d",
-            "version": 4
-        }
-    ]
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows(category,displayName,description,version)",
+"value": [
+{
+"category": "leaver",
+"description": "Employee offboarding for Contoso Germany.",
+"displayName": "Germany offboard employees",
+"id": "952b23c5-cc25-48c9-8848-95da4dd9dc6d",
+"version": 4
+}
+]
 }
 ```
