@@ -241,7 +241,7 @@ Content-Type: application/json
 }
 ]
 },
- {
+{
 "category": "leaver",
 "description": "Send offboarding email to user’s manager before the last day of work",
 "displayName": "Send email before user’s last day",

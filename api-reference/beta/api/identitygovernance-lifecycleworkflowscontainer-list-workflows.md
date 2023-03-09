@@ -27,9 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Global reader
-- Lifecycle workflows administrator
+- Global Reader
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -67,7 +66,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_workflow"
@@ -77,31 +75,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-workflow-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-workflow-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflow-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflow-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-workflow-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -118,75 +91,75 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows",
-    "value": [
-        {
-            "category": "joiner",
-            "description": "Configure pre-hire tasks for onboarding employees before their first day",
-            "displayName": "Global pre hire",
-            "lastModifiedDateTime": "2022-08-16T20:05:51.4618603Z",
-            "createdDateTime": "2022-01-10T20:04:30.619368Z",
-            "id": "c007a148-5bf1-4f38-82b4-377fb23b1711",
-            "isEnabled": true,
-            "isSchedulingEnabled": true,
-            "version": 12
-        },
-        {
-            "category": "joiner",
-            "description": "Configure new hire tasks for onboarding employees on their first day",
-            "displayName": "Global new hire",
-            "lastModifiedDateTime": "2022-08-18T17:24:42.6051254Z",
-            "createdDateTime": "2022-05-06T14:10:39.9700268Z",
-            "id": "559d8339-ab4e-4c41-a517-ed5d8dd9fbf5",
-            "isEnabled": true,
-            "isSchedulingEnabled": true,
-            "version": 5
-        },
-        {
-            "category": "joiner",
-            "description": "Configure pre-hire tasks for onboarding employees before their first day",
-            "displayName": "Onboard pre-hire employee",
-            "lastModifiedDateTime": "2022-08-16T20:01:28.3589067Z",
-            "createdDateTime": "2022-08-16T17:48:55.2262907Z",
-            "id": "d0454160-b8e9-432f-8a85-790021e64c9e",
-            "isEnabled": false,
-            "isSchedulingEnabled": false,
-            "version": 1
-        },
-        {
-            "category": "leaver",
-            "description": "Configure offboarding tasks for employees after their last day of work",
-            "displayName": "Post-Offboarding of an employee",
-            "lastModifiedDateTime": "2022-08-17T18:57:30.5091553Z",
-            "createdDateTime": "2022-08-17T18:57:07.1840042Z",
-            "id": "15f9c6db-ada8-4417-927f-17ac24b54b9b",
-            "isEnabled": true,
-            "isSchedulingEnabled": false,
-            "version": 1
-        },
-        {
-            "category": "leaver",
-            "description": "Execute real-time termination tasks for employees on their last day of work",
-            "displayName": "Real-time employee termination",
-            "lastModifiedDateTime": "2022-08-19T20:34:15.4212506Z",
-            "createdDateTime": "2022-08-19T20:34:15.4212481Z",
-            "id": "57bc6612-2c20-4141-9dab-aa11a95b8fbc",
-            "isEnabled": true,
-            "isSchedulingEnabled": false,
-            "version": 1
-        },
-        {
-            "category": "joiner",
-            "description": "Configure new hire tasks for onboarding employees on their first day",
-            "displayName": "Onboard new hire employee",
-            "lastModifiedDateTime": "2022-08-24T15:39:17.6496744Z",
-            "createdDateTime": "2022-08-24T15:39:17.6496704Z",
-            "id": "156ce798-1eb6-4e0a-8515-e79f54d04390",
-            "isEnabled": true,
-            "isSchedulingEnabled": false,
-            "version": 1
-        }
-    ]
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows",
+"value": [
+{
+"category": "joiner",
+"description": "Configure pre-hire tasks for onboarding employees before their first day",
+"displayName": "Global pre hire",
+"lastModifiedDateTime": "2022-08-16T20:05:51.4618603Z",
+"createdDateTime": "2022-01-10T20:04:30.619368Z",
+"id": "c007a148-5bf1-4f38-82b4-377fb23b1711",
+"isEnabled": true,
+"isSchedulingEnabled": true,
+"version": 12
+},
+{
+"category": "joiner",
+"description": "Configure new hire tasks for onboarding employees on their first day",
+"displayName": "Global new hire",
+"lastModifiedDateTime": "2022-08-18T17:24:42.6051254Z",
+"createdDateTime": "2022-05-06T14:10:39.9700268Z",
+"id": "559d8339-ab4e-4c41-a517-ed5d8dd9fbf5",
+"isEnabled": true,
+"isSchedulingEnabled": true,
+"version": 5
+},
+{
+"category": "joiner",
+"description": "Configure pre-hire tasks for onboarding employees before their first day",
+"displayName": "Onboard pre-hire employee",
+"lastModifiedDateTime": "2022-08-16T20:01:28.3589067Z",
+"createdDateTime": "2022-08-16T17:48:55.2262907Z",
+"id": "d0454160-b8e9-432f-8a85-790021e64c9e",
+"isEnabled": false,
+"isSchedulingEnabled": false,
+"version": 1
+},
+{
+"category": "leaver",
+"description": "Configure offboarding tasks for employees after their last day of work",
+"displayName": "Post-Offboarding of an employee",
+"lastModifiedDateTime": "2022-08-17T18:57:30.5091553Z",
+"createdDateTime": "2022-08-17T18:57:07.1840042Z",
+"id": "15f9c6db-ada8-4417-927f-17ac24b54b9b",
+"isEnabled": true,
+"isSchedulingEnabled": false,
+"version": 1
+},
+{
+"category": "leaver",
+"description": "Execute real-time termination tasks for employees on their last day of work",
+"displayName": "Real-time employee termination",
+"lastModifiedDateTime": "2022-08-19T20:34:15.4212506Z",
+"createdDateTime": "2022-08-19T20:34:15.4212481Z",
+"id": "57bc6612-2c20-4141-9dab-aa11a95b8fbc",
+"isEnabled": true,
+"isSchedulingEnabled": false,
+"version": 1
+},
+{
+"category": "joiner",
+"description": "Configure new hire tasks for onboarding employees on their first day",
+"displayName": "Onboard new hire employee",
+"lastModifiedDateTime": "2022-08-24T15:39:17.6496744Z",
+"createdDateTime": "2022-08-24T15:39:17.6496704Z",
+"id": "156ce798-1eb6-4e0a-8515-e79f54d04390",
+"isEnabled": true,
+"isSchedulingEnabled": false,
+"version": 1
+}
+]
 }
 ```
 
@@ -196,8 +169,6 @@ Content-Type: application/json
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_workflow_select"
@@ -206,32 +177,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows?$filter=category eq 'leaver'&$select=id,category,displayName,isEnabled,isSchedulingEnabled
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflow-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-workflow-select-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-workflow-select-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflow-select-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflow-select-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-workflow-select-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following is an example of the response
@@ -246,15 +191,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows(category,displayName,isEnabled,isSchedulingEnabled)",
-    "value": [
-        {
-            "category": "leaver",
-            "displayName": "Pre-Offboarding employees in the R&D department",
-            "id": "c0548e6c-8849-46e8-be14-8b6d2b04957e",
-            "isEnabled": true,
-            "isSchedulingEnabled": true
-        }
-    ]
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows(category,displayName,isEnabled,isSchedulingEnabled)",
+"value": [
+{
+"category": "leaver",
+"displayName": "Pre-Offboarding employees in the R&D department",
+"id": "c0548e6c-8849-46e8-be14-8b6d2b04957e",
+"isEnabled": true,
+"isSchedulingEnabled": true
+}
+]
 }
 ```
