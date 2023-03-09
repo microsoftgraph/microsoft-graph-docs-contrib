@@ -145,6 +145,40 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
+# [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [AuthorizationCodeContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/AuthorizationCodeContext.php).
+```php
+<?php
+use Microsoft\Graph\GraphRequestAdapter;
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
+use Microsoft\Kiota\Authentication\Oauth\AuthorizationCodeContext;
+
+//Missing comment to explain these 2 statements
+set_include_path(__DIR__);
+require 'vendor/autoload.php';
+
+// Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
+$tokenRequestContext = new AuthorizationCodeContext(
+    'tenantId',
+    'clientId',
+    'clientSecret',
+    'authCode',
+    'redirectUri'
+);
+$scopes = ['User.Read', 'Mail.Read'];
+$authProvider = new GraphPhpLeagueAuthenticationProvider($tokenRequestContext, $scopes);
+
+//Initialize the request adapter. This handles HTTP concerns
+$requestAdapter = new GraphRequestAdapter($authProvider);
+
+// Initialize the service client
+$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+```
+
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -299,6 +333,37 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
+# [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [ClientCredentialContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/ClientCredentialContext.php).
+```php
+<?php
+use Microsoft\Graph\GraphRequestAdapter;
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
+
+//Missing comment to explain these 2 statements
+set_include_path(__DIR__);
+require 'vendor/autoload.php';
+
+// Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
+$tokenRequestContext = new ClientCredentialContext(
+    'TENANT_ID',
+    'CLIENT_ID',
+    'CLIENT_SECRET'
+);
+$scopes = ['https://graph.microsoft.com/.default'];
+$authProvider = new PhpLeagueAuthenticationProvider($tokenRequestContext, $scopes);
+
+//Initialize the request adapter. This handles HTTP concerns
+$requestAdapter = new GraphRequestAdapter($authProvider);
+
+// Initialize the service client
+$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+```
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -398,6 +463,38 @@ final GraphServiceClient graphClient = GraphServiceClient
         .buildClient();
 
 final User me = graphClient.me().buildRequest().get();
+```
+
+# [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [OnBehalfOfContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/OnBehalfOfContext.php).
+```php
+<?php
+use Microsoft\Graph\GraphRequestAdapter;
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
+use Microsoft\Kiota\Authentication\Oauth\OnBehalfOfContext;
+
+//Missing comment to explain these 2 statements
+set_include_path(__DIR__);
+require 'vendor/autoload.php';
+
+// Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
+$tokenRequestContext = new OnBehalfOfContext(
+    'TENANT_ID',
+    'CLIENT_ID',
+    'CLIENT_SECRET', 
+    'USER_ASSERTION'
+);
+$scopes = ['https://graph.microsoft.com/.default'];
+$authProvider = new PhpLeagueAuthenticationProvider($tokenRequestContext, $scopes);
+
+//Initialize the request adapter. This handles HTTP concerns
+$requestAdapter = new GraphRequestAdapter($authProvider);
+
+// Initialize the service client
+$graphServiceClient = new GraphServiceClient($requestAdapter);
+
 ```
 
 # [Go](#tab/Go)
@@ -513,6 +610,9 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
+# [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
@@ -605,6 +705,9 @@ Not applicable.
 
 Not applicable.
 
+# [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
+
 # [Go](#tab/Go)
 
 Not applicable.
@@ -669,6 +772,9 @@ final GraphServiceClient graphClient =
 
 final User me = graphClient.me().buildRequest().get();
 ```
+
+# [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
 # [Go](#tab/Go)
 
@@ -762,6 +868,9 @@ final GraphServiceClient graphClient =
 
 final User me = graphClient.me().buildRequest().get();
 ```
+
+# [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
 # [Go](#tab/Go)
 

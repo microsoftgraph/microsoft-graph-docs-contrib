@@ -109,29 +109,32 @@ GraphServiceClient graphClient = GraphServiceClient
 # [PHP](#tab/PHP)
 
 ```php
-// PHP client currently doesn't have an authentication provider. You will need to handle
-// getting an access token. The following example demonstrates the client credential
-// OAuth flow and assumes that an administrator has consented to the application.
-$guzzle = new \GuzzleHttp\Client();
-$url = 'https://login.microsoftonline.com/' . $tenantId . '/oauth2/token?api-version=1.0';
-$token = json_decode($guzzle->post($url, [
-    'form_params' => [
-        'client_id' => $clientId,
-        'client_secret' => $clientSecret,
-        'resource' => 'https://graph.microsoft.com/',
-        'grant_type' => 'client_credentials',
-    ],
-])->getBody()->getContents());
-$accessToken = $token->access_token;
+<?php
+use Microsoft\Graph\GraphRequestAdapter;
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-// Create a new Graph client.
-$graph = new Graph();
-$graph->setAccessToken($accessToken);
+//Missing comment to explain these 2 statements
+set_include_path(__DIR__);
+require 'vendor/autoload.php';
 
-// Make a call to /me Graph resource.
-$user = $graph->createRequest("GET", "/me")
-              ->setReturnType(Model\User::class)
-              ->execute();
+// Create an auth provider object. We are using the ClientCredentialContext library in this example.
+$tokenRequestContext = new ClientCredentialContext(
+    'TENANT_ID',
+    'CLIENT_ID',
+    'CLIENT_SECRET'
+);
+$scopes = ['https://graph.microsoft.com/.default'];
+$authProvider = new PhpLeagueAuthenticationProvider($tokenRequestContext, $scopes);
+
+//Initialize the request adapter. This handles HTTP concerns
+$requestAdapter = new GraphRequestAdapter($authProvider);
+
+// Initialize the service client
+$graphServiceClient = new GraphServiceClient($requestAdapter);
+
 ```
 
 # [Go](#tab/Go)
