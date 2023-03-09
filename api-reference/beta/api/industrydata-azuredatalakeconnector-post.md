@@ -45,7 +45,7 @@ POST /external/industryData/dataConnectors
 
 ## Request body
 
-In the request body, supply a JSON representation of the [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.industryData.azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
 
 You can specify the following properties when you create an **azureDataLakeConnector**.
 
@@ -55,7 +55,7 @@ You can specify the following properties when you create an **azureDataLakeConne
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.industryData.azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object in the response body.
 
 ## Examples
 

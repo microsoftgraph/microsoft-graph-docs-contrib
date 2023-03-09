@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [industryDataRun](../resources/industrydata-industrydatarun.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.industryData.industryDataRun](../resources/industrydata-industrydatarun.md) object in the response body.
 
 ## Examples
 

@@ -51,7 +51,7 @@ POST /external/industryData/inboundFlows
 
 ## Request body
 
-In the request body, supply a JSON representation of the [inboundFlow](../resources/industrydata-inboundflow.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.industryData.inboundFlow](../resources/industrydata-inboundflow.md) object.
 
 You can specify the following properties when you create an **inboundFlow**.
 
@@ -64,7 +64,7 @@ You can specify the following properties when you create an **inboundFlow**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [inboundFlow](../resources/industrydata-inboundflow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.industryData.inboundFlow](../resources/industrydata-inboundflow.md) object in the response body.
 
 ## Examples
 

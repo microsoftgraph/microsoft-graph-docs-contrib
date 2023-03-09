@@ -9,11 +9,11 @@ doc_type: apiPageType
 
 # List fileValidateOperations
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of  long-running [file validation operations](../resources/industrydata-filevalidateoperation.md) and their statuses.
+Get a list of long-running [file validation operations](../resources/industrydata-filevalidateoperation.md) and their statuses.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [fileValidateOperation](../resources/industrydata-filevalidateoperation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.industryData.fileValidateOperation](../resources/industrydata-filevalidateoperation.md) objects in the response body.
 
 ## Examples
 
