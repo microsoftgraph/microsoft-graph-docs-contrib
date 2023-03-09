@@ -1,6 +1,6 @@
 ---
 title: "serviceStorageQuotaBreakdown resource type"
-description: "The serviceStorageQuotaBreakdown resource represents a proportion of the unified storage quota associated with a specific service."
+description: "Represents a proportion of the unified storage quota associated with a specific service."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
 ms.prod: "unified-storage-quota"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The serviceStorageQuotaBreakdown resource represents a proportion of the unified storage quota associated with a specific service.
+Represents a proportion of the unified storage quota associated with a specific service.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceStorageQuotaBreakdown](../api/servicestoragequotabreakdown-get.md)|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md)|Read the properties and relationships of a [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) object.|
+|[Get serviceStorageQuotaBreakdown](../api/unifiedstoragequota-get-services.md)|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md)|Read the properties and relationships of a [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -2060,9 +2060,9 @@ items:
           - name: UnifiedStorageQuotaServices
             items:
             - name: Get
-              href: api/servicestoragequotabreakdown-get.md
+              href: api/unifiedstoragequota-get-services.md
             - name: List
-              href: api/servicestoragequotabreakdown-list.md
+              href: api/unifiedstoragequota-list-services.md
         - name: Reports
           items:
           - name: Organized by printer
