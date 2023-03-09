@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Overview of metered APIs and services in Microsoft Graph
 
-Microsoft Graph includes APIs that are available at no additional cost with [user subscription licenses](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) and APIs and services that are metered. Metered 365 APIs and services in Microsoft Graph incur costs based on usage. The costs might be incurred per API call made, per object returned in an API call, or through other measures.
+Microsoft Graph includes APIs that are available at no additional cost with [user subscription licenses](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) and APIs and services that are metered. Metered APIs and services in Microsoft Graph incur costs based on usage. The costs might be incurred per API call made, per object returned in an API call, or through other measures.
 
 Whether metered or not, APIs in Microsoft Graph follow these two principles:
 - Customer data ownership: Customer data belongs to the customer. Learn more about how [Microsoft categorizes customer data](https://www.microsoft.com/trust-center/privacy/customer-data-definitions). 
