@@ -147,6 +147,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # [PHP](#tab/PHP)
 The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [AuthorizationCodeContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/AuthorizationCodeContext.php).
+
 ```php
 <?php
 use Microsoft\Graph\GraphRequestAdapter;
@@ -335,6 +336,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # [PHP](#tab/PHP)
 The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [ClientCredentialContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/ClientCredentialContext.php).
+
 ```php
 <?php
 use Microsoft\Graph\GraphRequestAdapter;
@@ -467,6 +469,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # [PHP](#tab/PHP)
 The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [OnBehalfOfContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/OnBehalfOfContext.php).
+
 ```php
 <?php
 use Microsoft\Graph\GraphRequestAdapter;

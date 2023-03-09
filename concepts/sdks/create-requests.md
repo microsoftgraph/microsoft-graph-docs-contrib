@@ -33,6 +33,10 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-read.md)]
+
 # [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
