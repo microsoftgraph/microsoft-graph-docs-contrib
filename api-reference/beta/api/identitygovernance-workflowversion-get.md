@@ -190,68 +190,68 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(category,displayName,versionNumber,executionConditions,tasks())/$entity",
-"category": "leaver",
-"displayName": "Post-Offboarding of an employee",
-"versionNumber": 2,
-"executionConditions": {
-"@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-"scope": {
-"@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-"rule": "department eq 'Marketing'"
-},
-"trigger": {
-"@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-"timeBasedAttribute": "employeeLeaveDateTime",
-"offsetInDays": 7
-}
-},
-"tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(2)/tasks",
-"tasks": [
-{
-"category": "leaver",
-"continueOnError": false,
-"description": "Send offboarding email to user’s manager before the last day of work",
-"displayName": "Send email before user’s last day",
-"executionSequence": 1,
-"id": "320c8e32-225a-4624-a9fb-ef3da9d63713",
-"isEnabled": true,
- "taskDefinitionId": "52853a3e-f4e5-4eb8-bb24-1ac09a1da935",
-"arguments": []
-},
-{
-"category": "leaver",
-"continueOnError": false,
-"description": "Delete user account in Azure AD",
-"displayName": "Delete User Account",
-"executionSequence": 2,
-"id": "c455fb46-da19-4755-ab28-d9b3ff4f5662",
-isEnabled": true,
-"taskDefinitionId": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
-"arguments": []
-},
-{
-"category": "leaver",
-"continueOnError": false,
-"description": "Remove all licenses assigned to the user",
-"displayName": "Remove all licenses for user",
-"executionSequence": 3,
-"id": "08feb85b-4ce4-4d7e-98fe-aceb0c1a8439",
-"isEnabled": true,
-"taskDefinitionId": "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e",
-"arguments": []
-},
-{
-"category": "leaver",
-"continueOnError": false,
-"description": "Remove user from all Teams memberships",
-"displayName": "Remove user from all Teams",
-"executionSequence": 4,
-"id": "950a0190-a76b-4287-a610-2efaa97a64f3",
-"isEnabled": true,
-"taskDefinitionId": "81f7b200-2816-4b3b-8c5d-dc556f07b024",
-"arguments": []
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(category,displayName,versionNumber,executionConditions,tasks())/$entity",
+    "category": "leaver",
+    "displayName": "Post-Offboarding of an employee",
+    "versionNumber": 2,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "department eq 'Marketing'"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeLeaveDateTime",
+            "offsetInDays": 7
+        }
+    },
+    "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(2)/tasks",
+    "tasks": [
+        {
+            "category": "leaver",
+            "continueOnError": false,
+            "description": "Send offboarding email to user’s manager before the last day of work",
+            "displayName": "Send email before user’s last day",
+            "executionSequence": 1,
+            "id": "320c8e32-225a-4624-a9fb-ef3da9d63713",
+            "isEnabled": true,
+            "taskDefinitionId": "52853a3e-f4e5-4eb8-bb24-1ac09a1da935",
+            "arguments": []
+        },
+        {
+            "category": "leaver",
+            "continueOnError": false,
+            "description": "Delete user account in Azure AD",
+            "displayName": "Delete User Account",
+            "executionSequence": 2,
+            "id": "c455fb46-da19-4755-ab28-d9b3ff4f5662",
+            "isEnabled": true,
+            "taskDefinitionId": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
+            "arguments": []
+        },
+        {
+            "category": "leaver",
+            "continueOnError": false,
+            "description": "Remove all licenses assigned to the user",
+            "displayName": "Remove all licenses for user",
+            "executionSequence": 3,
+            "id": "08feb85b-4ce4-4d7e-98fe-aceb0c1a8439",
+            "isEnabled": true,
+            "taskDefinitionId": "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e",
+            "arguments": []
+        },
+        {
+            "category": "leaver",
+            "continueOnError": false,
+            "description": "Remove user from all Teams memberships",
+            "displayName": "Remove user from all Teams",
+            "executionSequence": 4,
+            "id": "950a0190-a76b-4287-a610-2efaa97a64f3",
+            "isEnabled": true,
+            "taskDefinitionId": "81f7b200-2816-4b3b-8c5d-dc556f07b024",
+            "arguments": []
+        }
+    ]
 }
 ```

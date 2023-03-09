@@ -299,124 +299,124 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
-"value": [
-{
-"category": "joiner,leaver",
-"description": "Add user to selected groups",
-"displayName": "Add User To Groups",
-"id": "22085229-5809-45e8-97fd-270d28d66910",
-"version": 1,
-"parameters": [
-{
-"name": "groupID",
-"values": [],
-"valueType": "string"
-}
-]
-},
-{
-"category": "joiner,leaver",
-"description": "Disable user account in the directory",
-"displayName": "Disable User Account",
-"id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
-"version": 1,
-"parameters": []
-},
-{
-"category": "joiner,leaver",
-"description": "Enable user account in the directory",
-"displayName": "Enable User Account",
-"id": "6fc52c9d-398b-4305-9763-15f42c1676fc",
-"version": 1,
-"parameters": []
-},
-{
-"category": "joiner,leaver",
-"description": "Remove user from membership of selected Azure AD groups",
-"displayName": "Remove user from selected groups",
-"id": "1953a66c-751c-45e5-8bfe-01462c70da3c",
-"version": 1,
-"parameters": [
-{
-"name": "groupID",
-"values": [],
-"valueType": "string"
-}
-]
-},
-{
-"category": "joiner",
-"description": "Generate Temporary Access Pass and send via email to user's manager",
-"displayName": "Generate TAP And Send Email",
-"id": "1b555e50-7f65-41d5-b514-5894a026d10d",
-"version": 1,
-"parameters": [
-{
-"name": "tapLifetimeMinutes",
-values": [],
-"valueType": "string"
-},
-{
-"name": "tapIsUsableOnce",
-"values": [
-"true",
-"false"
-],
-"valueType": "enum"
-}
-]
-},
-{
-"category": "joiner",
-"description": "Send welcome email to new hire",
-"displayName": "Send Welcome Email",
-"id": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
-"version": 1,
-"parameters": []
-},
-{
-"category": "joiner,leaver",
-"description": "Add user to selected teams",
-"displayName": "Add User To Teams",
-"id": "e440ed8d-25a1-4618-84ce-091ed5be5594",
-"version": 1,
-"parameters": [
-{
-"name": "teamID",
-"values": [],
-"valueType": "string"
-}
-]
-},
-{
-"category": "joiner,leaver",
-"description": "Remove user from membership of selected Teams",
-"displayName": "Remove user from selected Teams",
-"id": "06aa7acb-01af-4824-8899-b14e5ed788d6",
-"version": 1,
-"parameters": [
-{
-"name": "teamID",
-"values": [],
-"valueType": "string"
-}
-]
-},
-{
-"category": "joiner,leaver",
-"description": "Run a Custom Task Extension to callout to an external system.",
-"displayName": "Run a Custom Task Extension",
-"id": "4262b724-8dba-4fad-afc3-43fcbb497a0e",
-"version": 1,
-"parameters": [
-{
-"name": "customTaskExtensionID",
-"values": [],
-"valueType": "string"
-}
-]
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
+    "value": [
+        {
+            "category": "joiner,leaver",
+            "description": "Add user to selected groups",
+            "displayName": "Add User To Groups",
+            "id": "22085229-5809-45e8-97fd-270d28d66910",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "groupID",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "joiner,leaver",
+            "description": "Disable user account in the directory",
+            "displayName": "Disable User Account",
+            "id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
+            "version": 1,
+            "parameters": []
+        },
+        {
+            "category": "joiner,leaver",
+            "description": "Enable user account in the directory",
+            "displayName": "Enable User Account",
+            "id": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+            "version": 1,
+            "parameters": []
+        },
+        {
+            "category": "joiner,leaver",
+            "description": "Remove user from membership of selected Azure AD groups",
+            "displayName": "Remove user from selected groups",
+            "id": "1953a66c-751c-45e5-8bfe-01462c70da3c",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "groupID",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "joiner",
+            "description": "Generate Temporary Access Pass and send via email to user's manager",
+            "displayName": "Generate TAP And Send Email",
+            "id": "1b555e50-7f65-41d5-b514-5894a026d10d",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "tapLifetimeMinutes",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "tapIsUsableOnce",
+                    "values": [
+                        "true",
+                        "false"
+                    ],
+                    "valueType": "enum"
+                }
+            ]
+        },
+        {
+            "category": "joiner",
+            "description": "Send welcome email to new hire",
+            "displayName": "Send Welcome Email",
+            "id": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+            "version": 1,
+            "parameters": []
+        },
+        {
+            "category": "joiner,leaver",
+            "description": "Add user to selected teams",
+            "displayName": "Add User To Teams",
+            "id": "e440ed8d-25a1-4618-84ce-091ed5be5594",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "teamID",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "joiner,leaver",
+            "description": "Remove user from membership of selected Teams",
+            "displayName": "Remove user from selected Teams",
+            "id": "06aa7acb-01af-4824-8899-b14e5ed788d6",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "teamID",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "joiner,leaver",
+            "description": "Run a Custom Task Extension to callout to an external system.",
+            "displayName": "Run a Custom Task Extension",
+            "id": "4262b724-8dba-4fad-afc3-43fcbb497a0e",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "customTaskExtensionID",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        }
+    ]
 }
 ```
