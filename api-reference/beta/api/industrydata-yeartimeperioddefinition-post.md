@@ -45,7 +45,7 @@ POST /external/industryData/years
 
 ## Request body
 
-In the request body, supply a JSON representation of the [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.
 
 You can specify the following properties when you create a **yearTimePeriodDefinition**.
 
@@ -58,7 +58,7 @@ You can specify the following properties when you create a **yearTimePeriodDefin
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object in the response body.
 
 ## Examples
 

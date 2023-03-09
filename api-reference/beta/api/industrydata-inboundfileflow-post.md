@@ -51,7 +51,7 @@ POST /external/industryData/inboundFlows
 
 ## Request body
 
-In the request body, supply a JSON representation of the [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
 
 You can specify the following properties when you create an **inboundFileFlow**.
 
@@ -66,7 +66,7 @@ You can specify the following properties when you create an **inboundFileFlow**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md) object in the response body.
 
 ## Examples
 

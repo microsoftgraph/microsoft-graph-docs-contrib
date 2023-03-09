@@ -45,7 +45,7 @@ POST /external/industryData/sourceSystems
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.industryData.sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.
 
 You can specify the following properties when you create a **sourceSystemDefinition**.
 
@@ -57,7 +57,7 @@ You can specify the following properties when you create a **sourceSystemDefinit
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.industryData.sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object in the response body.
 
 ## Examples
 

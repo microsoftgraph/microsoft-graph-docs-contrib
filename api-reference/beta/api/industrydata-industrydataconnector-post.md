@@ -45,7 +45,7 @@ POST /external/industryData/dataConnectors
 
 ## Request body
 
-In the request body, supply a JSON representation of the [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
 
 You can specify the following properties when you create an **industryDataConnector**.
 
@@ -55,7 +55,7 @@ You can specify the following properties when you create an **industryDataConnec
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md) object in the response body.
 
 ## Examples
 

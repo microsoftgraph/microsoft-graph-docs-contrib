@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Get fileValidateOperations
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [fileValidateOperation](../resources/industrydata-filevalidateoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.industryData.fileValidateOperation](../resources/industrydata-filevalidateoperation.md) object in the response body.
 
 ## Examples
 

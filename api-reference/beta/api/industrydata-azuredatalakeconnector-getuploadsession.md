@@ -39,11 +39,10 @@ GET /external/industryData/dataConnectors/{industryDataConnectorId}/microsoft.gr
 ## Function parameters
 
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
 
 | Parameter    | Type    | Description                                                                                                                          |
 | :----------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------- |
-| resetSession | Boolean | `True` indicates that a new [fileUploadSession](../resources/industrydata-fileuploadsession.md) with an empty container is returned. |
+| resetSession | Boolean | `True` indicates that a new [microsoft.graph.industryData.fileUploadSession](../resources/industrydata-fileuploadsession.md) with an empty container is returned. |
 
 ## Request headers
 
@@ -57,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [fileUploadSession](../resources/industrydata-fileuploadsession.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [microsoft.graph.industryData.fileUploadSession](../resources/industrydata-fileuploadsession.md) in the response body.
 
 ## Examples
 
