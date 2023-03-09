@@ -16,7 +16,7 @@ $requestBody->setMemberEntityType('#microsoft.graph.windowsUpdates.azureADDevice
 
 
 
-$graphServiceClient->admin()->windows()->updates()->updatableAssetsById('updatableAsset-id')->removeMembersById()->post($requestBody);
+$graphServiceClient->admin()->windows()->updates()->updatableAssetsById('updatableAsset-id')->windowsUpdatesRemoveMembersById()->post($requestBody);
 
 
 ```

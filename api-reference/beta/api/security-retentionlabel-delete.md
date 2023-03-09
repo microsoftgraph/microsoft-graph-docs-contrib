@@ -86,8 +86,6 @@ DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retenti
 
 ---
 
-
-
 ### Response
 >
 <!-- {
