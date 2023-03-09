@@ -261,6 +261,24 @@
       "CreatedDateTime": "2022-12-22T00:00:00.1642286Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e393aa08-85ce-4352-9d3b-930bebb43139",
+          "ApiChange": "Property",
+          "ChangedApiName": "companionAppAllowedState",
+          "ChangeType": "Addition",
+          "Description": "Added the `companionAppAllowedState` property to the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource.",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        }
+      ],
+      "Id": "e393aa08-85ce-4352-9d3b-930bebb43139",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-08T16:03:17.7593978Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

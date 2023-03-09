@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewUnifiedRoleAssignment()
 principalId := "6b937a9d-c731-465b-a844-2d5b5368c161"

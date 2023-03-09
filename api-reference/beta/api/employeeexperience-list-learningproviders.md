@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders
+GET https://graph.microsoft.com/beta/employeeExperience/learningProviders
 ```
 
 # [C#](#tab/csharp)
@@ -84,7 +84,6 @@ GET /employeeExperience/learningProviders
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 ### Response
