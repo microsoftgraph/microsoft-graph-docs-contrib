@@ -8,6 +8,7 @@ ms.prod: "search"
 
 # Supported Language Codes
 The Accept-Language request HTTP header indicates list of acceptable human languages for response. The value will be leveraged for localization on server side. The following list shows the Accept-Language header supported by Microsoft Graph APIs.
+
 | Accept-Language string | Language |
 |:---|:---|
 |af|Afrikaans|
