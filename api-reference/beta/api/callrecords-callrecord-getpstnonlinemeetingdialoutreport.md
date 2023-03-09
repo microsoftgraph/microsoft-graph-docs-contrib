@@ -45,7 +45,6 @@ GET /communications/callRecords/getPstnOnlineMeetingDialoutReport(fromDateTime={
 ## Function parameters
 
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
