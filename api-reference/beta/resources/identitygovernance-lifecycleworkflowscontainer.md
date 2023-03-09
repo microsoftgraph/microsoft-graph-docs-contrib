@@ -15,8 +15,6 @@ Namespace: microsoft.graph.identityGovernance
 
 A container for the relationships that expose the Azure AD Identity Governance life cycle workflows API capabilities.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 
 None.
@@ -25,7 +23,7 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier used for individually addressing the lifecycle workflows objects. Inherited from [entity](../resources/entity.md).|
+|id|String|Identifier used for individually addressing the lifecycle workflows objects.|
 
 ## Relationships
 
@@ -45,7 +43,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.lifecycleWorkflowsContainer",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

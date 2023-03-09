@@ -15,8 +15,6 @@ Namespace: microsoft.graph.identityGovernance
 
 Represents the built-in tasks that you can use to construct tasks for lifecycle workflows. Each task has a unique template identifier. For a full list of available built-in tasks, see [supported tasks](../resources/identitygovernance-task.md#supported-tasks).
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -28,10 +26,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the HR function that the tasks created using this definition can be used with. The possible values are: `joiner`, `leaver`. This is a multi-valued enumeration whose allowed combinations are `joiner`, `joiner,leaver`, or `leaver`.<br><br>Supports `$filter`(`eq`, `ne`, `has`) and `$orderby`. |
+|category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the HR function that the tasks created using this definition can be used with. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. This is a multi-valued enumeration whose allowed combinations are `joiner`, `joiner,leaver`, or `leaver`.<br><br>Supports `$filter`(`eq`, `ne`, `has`) and `$orderby`. |
+|ContinueOnError|Boolean|Defines if the workflow will continue if the task has an error.|
 |description|String|The description of the taskDefinition.|
 |displayName|String|The display name of the taskDefinition.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
-|id|String|The unique identifier for the taskDefinition. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier for the taskDefinition.|
 |parameters|[microsoft.graph.identityGovernance.parameter](../resources/identitygovernance-parameter.md) collection|The parameters that must be supplied when creating a workflow task object.<br><br>Supports `$filter`(`any`).|
 |version|Int32|The version number of the taskDefinition. New records are pushed when we add support for new parameters.<br><br>Supports `$filter`(`ge`, `gt`, `le`, `lt`, `eq`, `ne`) and `$orderby`.|
 
@@ -46,7 +45,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.taskDefinition",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

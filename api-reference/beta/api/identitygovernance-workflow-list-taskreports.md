@@ -27,9 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-- Global administrator
-- Global reader
-- Lifecycle workflows administrator
+- Global Reader
+- Lifecycle Workflows Administrator
 
 ## HTTP request
 
@@ -67,7 +66,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_taskreport"
@@ -77,32 +75,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/taskReports
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskreport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-taskreport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-taskreport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskreport-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-taskreport-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-taskreport-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 The following is an example of the response
@@ -118,58 +90,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/taskReports",
-    "@odata.count": 4,
-    "value": [
-        {
-            "id": "3a3bea11-99ca-462d-86fb-d283db8d734a",
-            "runId": "dad77a47-6eda-4de7-bc37-fe8eb5aaf17d",
-            "processingStatus": "completed",
-            "successfulUsersCount": 2,
-            "failedUsersCount": 0,
-            "unprocessedUsersCount": 0,
-            "totalUsersCount": 2,
-            "startedDateTime": "2022-08-24T23:28:04.5785337Z",
-            "completedDateTime": "2022-08-24T23:28:11.1348863Z",
-            "lastUpdatedDateTime": "2022-08-24T23:33:09.1980352Z"
-        },
-        {
-            "id": "23f37fcb-040d-4ee9-91df-1234700ebeb6",
-            "runId": "dad77a47-6eda-4de7-bc37-fe8eb5aaf17d",
-            "processingStatus": "completed",
-            "successfulUsersCount": 2,
-            "failedUsersCount": 0,
-            "unprocessedUsersCount": 0,
-            "totalUsersCount": 2,
-            "startedDateTime": "2022-08-24T23:28:04.5861287Z",
-            "completedDateTime": "2022-08-24T23:28:11.1348863Z",
-            "lastUpdatedDateTime": "2022-08-24T23:33:09.2051571Z"
-        },
-        {
-            "id": "462e6deb-a7b4-4777-a494-389c495862b8",
-            "runId": "a512bb50-3423-4bdc-ad5e-9731095b3b9a",
-            "processingStatus": "completed",
-            "successfulUsersCount": 2,
-            "failedUsersCount": 0,
-            "unprocessedUsersCount": 0,
-            "totalUsersCount": 2,
-            "startedDateTime": "2022-08-25T00:15:05.25581Z",
-            "completedDateTime": "2022-08-25T00:15:11.8535443Z",
-            "lastUpdatedDateTime": "2022-08-25T00:20:05.8759088Z"
-        },
-        {
-            "id": "e3dd0719-a50a-463d-b32d-7176fa4519e4",
-            "runId": "a512bb50-3423-4bdc-ad5e-9731095b3b9a",
-            "processingStatus": "completed",
-            "successfulUsersCount": 2,
-            "failedUsersCount": 0,
-            "unprocessedUsersCount": 0,
-            "totalUsersCount": 2,
-            "startedDateTime": "2022-08-25T00:15:05.2771389Z",
-            "completedDateTime": "2022-08-25T00:15:11.8535443Z",
-            "lastUpdatedDateTime": "2022-08-25T00:20:05.9002556Z"
-        }
-    ]
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/taskReports",
+"@odata.count": 4,
+"value": [
+{
+"id": "3a3bea11-99ca-462d-86fb-d283db8d734a",
+"runId": "dad77a47-6eda-4de7-bc37-fe8eb5aaf17d",
+"processingStatus": "completed",
+"successfulUsersCount": 2,
+"failedUsersCount": 0,
+"unprocessedUsersCount": 0,
+"totalUsersCount": 2,
+"startedDateTime": "2022-08-24T23:28:04.5785337Z",
+"completedDateTime": "2022-08-24T23:28:11.1348863Z",
+"lastUpdatedDateTime": "2022-08-24T23:33:09.1980352Z"
+},
+{
+"id": "23f37fcb-040d-4ee9-91df-1234700ebeb6",
+"runId": "dad77a47-6eda-4de7-bc37-fe8eb5aaf17d",
+"processingStatus": "completed",
+"successfulUsersCount": 2,
+"failedUsersCount": 0,
+"unprocessedUsersCount": 0,
+"totalUsersCount": 2,
+"startedDateTime": "2022-08-24T23:28:04.5861287Z",
+"completedDateTime": "2022-08-24T23:28:11.1348863Z",
+"lastUpdatedDateTime": "2022-08-24T23:33:09.2051571Z"
+},
+{
+"id": "462e6deb-a7b4-4777-a494-389c495862b8",
+"runId": "a512bb50-3423-4bdc-ad5e-9731095b3b9a",
+"processingStatus": "completed",
+"successfulUsersCount": 2,
+"failedUsersCount": 0,
+"unprocessedUsersCount": 0,
+"totalUsersCount": 2,
+"startedDateTime": "2022-08-25T00:15:05.25581Z",
+"completedDateTime": "2022-08-25T00:15:11.8535443Z",
+"lastUpdatedDateTime": "2022-08-25T00:20:05.8759088Z"
+},
+{
+"id": "e3dd0719-a50a-463d-b32d-7176fa4519e4",
+"runId": "a512bb50-3423-4bdc-ad5e-9731095b3b9a",
+"processingStatus": "completed",
+"successfulUsersCount": 2,
+"failedUsersCount": 0,
+"unprocessedUsersCount": 0,
+"totalUsersCount": 2,
+"startedDateTime": "2022-08-25T00:15:05.2771389Z",
+"completedDateTime": "2022-08-25T00:15:11.8535443Z",
+"lastUpdatedDateTime": "2022-08-25T00:20:05.9002556Z"
+}
+]
 }
 ```
 
@@ -179,8 +151,6 @@ Content-Type: application/json
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_taskreport_select"
@@ -189,32 +159,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/taskReports?$select=id,failedUsersCount,processingStatus,successfulUsersCount,totalUsersCount,unprocessedUsersCount,taskDefinition,taskProcessingResults
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskreport-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-taskreport-select-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-taskreport-select-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskreport-select-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-taskreport-select-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-taskreport-select-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -231,32 +175,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/taskReports(id,failedUsersCount,processingStatus,successfulUsersCount,totalUsersCount,unprocessedUsersCount,taskDefinition,taskProcessingResults)",
-    "value": [
-        {
-            "id": "443c7611-45df-48c0-bf5e-dc6068c402f0",
-            "processingStatus": "completed",
-            "successfulUsersCount": 1,
-            "failedUsersCount": 0,
-            "unprocessedUsersCount": 0,
-            "totalUsersCount": 1
-        },
-        {
-            "id": "92bbb4a0-3815-48a7-8f83-f5dadc4f6793",
-            "processingStatus": "completed",
-            "successfulUsersCount": 1,
-            "failedUsersCount": 0,
-            "unprocessedUsersCount": 0,
-            "totalUsersCount": 1
-        },
-        {
-            "id": "d64d2b78-3823-4ec8-b6d3-efd3d41a5e98",
-            "processingStatus": "completed",
-            "successfulUsersCount": 1,
-            "failedUsersCount": 0,
-            "unprocessedUsersCount": 0,
-            "totalUsersCount": 1
-        }
-    ]
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/taskReports(id,failedUsersCount,processingStatus,successfulUsersCount,totalUsersCount,unprocessedUsersCount,taskDefinition,taskProcessingResults)",
+"value": [
+{
+"id": "443c7611-45df-48c0-bf5e-dc6068c402f0",
+"processingStatus": "completed",
+"successfulUsersCount": 1,
+"failedUsersCount": 0,
+"unprocessedUsersCount": 0,
+"totalUsersCount": 1
+},
+{
+"id": "92bbb4a0-3815-48a7-8f83-f5dadc4f6793",
+"processingStatus": "completed",
+"successfulUsersCount": 1,
+"failedUsersCount": 0,
+"unprocessedUsersCount": 0,
+"totalUsersCount": 1
+},
+{
+"id": "d64d2b78-3823-4ec8-b6d3-efd3d41a5e98",
+"processingStatus": "completed",
+"successfulUsersCount": 1,
+"failedUsersCount": 0,
+"unprocessedUsersCount": 0,
+"totalUsersCount": 1
+}
+]
 }
 ```

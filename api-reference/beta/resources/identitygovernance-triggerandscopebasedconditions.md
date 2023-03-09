@@ -21,7 +21,7 @@ Inherits from [workflowExecutionConditions](../resources/identitygovernance-work
 
 |Property|Type|Description|
 |:---|:---|:---|
-|scope|[microsoft.graph.subjectSet](../resources/subjectset.md)|Defines who the workflow runs for.|
+|scope|[microsoft.graph.identityGovernance.ruleBasedSubjectSet](../resources/identitygovernance-rulebasedsubjectset.md)|Defines who the workflow runs for.|
 |trigger|[microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md)|What triggers a workflow to run.|
 
 ## Relationships

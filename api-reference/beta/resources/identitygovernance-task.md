@@ -17,8 +17,6 @@ Represents the built-in tasks available for lifecycle workflows. Tasks are the a
 
 A workflow can have up to 25 tasks.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -38,15 +36,11 @@ Inherits from [entity](../resources/entity.md).
 |description|String|A string that describes the purpose of the task for administrative use. Optional.|
 |displayName|String|A unique string that identifies the task. Required.<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |executionSequence|Int32|An integer that states in what order the task will run in a workflow.<br><br>Supports `$orderby`.|
-|id|String|Identifier used for individually addressing a specific task. Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|id|String|Identifier used for individually addressing a specific task.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |isEnabled|Boolean|A boolean value that denotes whether the task is set to run or not. Optional.<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |taskDefinitionId|String|A unique template identifier for the task. For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see [supported tasks](../resources/identitygovernance-task.md#supported-tasks). Required.<br><br>Supports `$filter`(`eq`, `ne`).|
 
 ### Supported tasks
-<!-- Comment out CRR until we can resolve the links problem
-
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
--->
 
 [!INCLUDE [lifecycle-workflows-tasks-table](../includes/identitygovernance-lifecycleworkflows-tasks-table.md)]
 
@@ -63,7 +57,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.task",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
