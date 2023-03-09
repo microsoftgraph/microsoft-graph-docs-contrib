@@ -1,6 +1,6 @@
 ---
 title: "List serviceStorageQuotaBreakdown"
-description: "Get a list of the serviceStorageQuotaBreakdown objects and their properties."
+description: "Get a list of serviceStorageQuotaBreakdown objects and their properties."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
 ms.prod: "unified-storage-quota"
