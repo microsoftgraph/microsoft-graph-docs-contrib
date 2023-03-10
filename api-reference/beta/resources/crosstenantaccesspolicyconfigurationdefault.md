@@ -72,6 +72,9 @@ The following is a JSON representation of the resource.
   "automaticUserConsentSettings": {
     "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
   },
+  "invitationRedemptionIdentityProviderConfiguration": {
+    "@odata.type": "microsoft.graph.defaultInvitationRedemptionIdentityProviderConfiguration"
+  },
   "isServiceDefault": "Boolean"
 }
 ```

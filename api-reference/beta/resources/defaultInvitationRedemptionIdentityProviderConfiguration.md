@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "primaryIdentityProviderPrecedenceOrder": "String Collection",
-  "fallbackIdentityProvider": "String Collection"
+  "primaryIdentityProviderPrecedenceOrder": ["String"],
+  "fallbackIdentityProvider": ["String"]
 }
 ```
