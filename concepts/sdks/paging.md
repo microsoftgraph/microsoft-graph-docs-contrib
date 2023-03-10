@@ -115,6 +115,21 @@ while(messagesPage != null) {
 }
 ```
 
+### [PHP](#tab/PHP)
+
+```php
+while ($messages->getOdatanextLink()) {
+    $requestInfo = $graphServiceClient->usersById(USER_ID)->messages()->createGetRequestInformation($requestConfig);
+    $requestInfo->setUri($messages->getOdatanextLink());
+    $messages = $requestAdapter->sendAsync($requestInfo, [MessageCollectionResponse::class, 'createFromDiscriminatorValue'])->wait();
+
+    foreach ($messages->getValue() as $message) {
+        echo "Subject: {$message->getSubject()}\n";
+    }
+}
+
+```
+
 ### [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
