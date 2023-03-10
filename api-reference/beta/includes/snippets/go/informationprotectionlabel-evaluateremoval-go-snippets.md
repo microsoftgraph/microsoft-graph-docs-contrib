@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
@@ -71,9 +71,9 @@ metadata := []graphmodels.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"format@odata.type" : "#microsoft.graph.contentFormat", 
-	"state@odata.type" : "#microsoft.graph.contentState", 
-	"metadata@odata.type" : "#Collection(microsoft.graph.keyValuePair)", 
+	"odataType" : "#microsoft.graph.contentFormat", 
+	"odataType" : "#microsoft.graph.contentState", 
+	"odataType" : "#Collection(microsoft.graph.keyValuePair)", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
