@@ -141,6 +141,20 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
     .buildClient();
 ```
 
+# [PHP](#tab/PHP)
+We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom configured Guzzle client using:
+```php
+<?php
+use Microsoft\Graph\Core\GraphClientFactory;
+use Microsoft\Graph\GraphRequestAdapter;
+
+$guzzleConfig = [
+    // your custom config
+];
+$httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
+$requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
+```
+
 ## [Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
