@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the custom extension callout instane record information.
+Defines the custom extension callout instance record information.
 
 ## Properties
 |Property|Type|Description|
