@@ -45,7 +45,7 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
 3. Use **az resource create** to create a new instance of the **Microosft.GraphServices/accounts** resource type to associate your application registration with the active subscription. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the newly created resource.
 
   ```PowerShell
-  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId`": `"myAppGUID`"}" --latest-include-preview --location Global --subscription mySubscriptionGUID
+  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId`": `"myAppGUID`"}" --location Global --subscription mySubscriptionGUID
   ```
 
   | Parameter | Description |
