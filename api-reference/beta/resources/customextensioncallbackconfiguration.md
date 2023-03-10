@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+
 Callback settings that defines how long Azure AD can wait for a resume signal for the call out that was made by Azure AD. This is an abstract type.
 
 ## Properties
