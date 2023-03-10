@@ -3412,25 +3412,6 @@ items:
             href: resources/intune-devices-devicegeolocation.md
           - name: Device health attestation state
             href: resources/intune-devices-devicehealthattestationstate.md
-          - name: Device log collection request
-            href: resources/intune-devices-devicelogcollectionrequest.md
-          - name: Device log collection response
-            href: resources/intune-devices-devicelogcollectionresponse.md
-            items:
-            - name: List
-              href: api/intune-devices-devicelogcollectionresponse-list.md
-            - name: Get
-              href: api/intune-devices-devicelogcollectionresponse-get.md
-            - name: Create
-              href: api/intune-devices-devicelogcollectionresponse-create.md
-            - name: Delete
-              href: api/intune-devices-devicelogcollectionresponse-delete.md
-            - name: Update
-              href: api/intune-devices-devicelogcollectionresponse-update.md
-            - name: createDownloadUrl action
-              href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
-          - name: Device log collection template type
-            href: resources/intune-devices-devicelogcollectiontemplatetype.md
           - name: Device management
             href: resources/intune-auditing-devicemanagement.md
             items:
@@ -3507,8 +3488,6 @@ items:
               href: api/intune-devices-manageddevice-delete.md
             - name: Update
               href: api/intune-devices-manageddevice-update.md
-            - name: createDeviceLogCollectionRequest action
-              href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
             - name: retire action
               href: api/intune-devices-manageddevice-retire.md
             - name: wipe action
