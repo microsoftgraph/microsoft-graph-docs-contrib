@@ -1,6 +1,6 @@
 ---
 title: "Remove appliesTo"
-description: "Remove a policy to application or service principal object."
+description: "Remove an appManagementPolicy from an application or service principal object."
 ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Remove an [appManagementPolicy](../resources/appManagementPolicy.md) policy object to an application or service principal object. The application or service principal adopts this policy over the tenant-wide [tenantAppManagementPolicy](../resources/tenantappmanagementpolicy.md) setting. 
+Remove an [appManagementPolicy](../resources/appManagementPolicy.md) policy object from an application or service principal object. When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide [tenantAppManagementPolicy](../resources/tenantappmanagementpolicy.md) setting. 
 
 ## Permissions
 
@@ -48,11 +48,11 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Examples
 
-### Example 1: Remove an appManagementPolicy to an application object
+### Example 1: Remove an appManagementPolicy from an application object
 
 #### Request
 
-The following is an example of the request to remove an appManagementPolicy to an application.
+The following is an example of the request to remove an appManagementPolicy from an application.
 
 
 # [HTTP](#tab/http)
@@ -83,11 +83,11 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Remove an appManagementPolicy to a service principal object
+### Example 2: Remove an appManagementPolicy from a service principal object
 
 #### Request
 
-The following is an example of the request to remove an appManagementPolicy to a service principal.
+The following is an example of the request to remove an appManagementPolicy from a service principal.
 
 
 
