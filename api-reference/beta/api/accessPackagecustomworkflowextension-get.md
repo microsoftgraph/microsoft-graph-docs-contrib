@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
 
 ## Examples
 
-### Access package assignment request
+### Retrieve a custom extension for use with an access package assignment request
 The following is an example of a access package assignment request custom workflow extension.
 <!-- {
   "blockType": "request",
@@ -86,10 +86,10 @@ Content-Type: application/json
       "clientConfiguration":null,
       "endpointConfiguration":{
          "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
-         "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
+         "subscriptionId":"001cec88-6efc-43e6-b3ab-eed908bc8203",
          "resourceGroupName":"test",
          "logicAppWorkflowName":"elm-extension-email",
-         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/8ccffea766ae48e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
+         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/8ccffea356ae00e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
       },
       "authenticationConfiguration":{
          "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### Access package assignment
+### Retrieve a custom extension for use with an access package assignment
 The following is an example of a access package assignment custom workflow extension.
 <!-- {
   "blockType": "request",
@@ -138,10 +138,10 @@ Content-Type: application/json
       "clientConfiguration":null,
       "endpointConfiguration":{
          "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
-         "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
+         "subscriptionId":"1c6c85a2-f9ef-4181-b6f0-3b25da0772d7",
          "resourceGroupName":"test",
          "logicAppWorkflowName":"elm-extension-email",
-         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/7ccffea766ae48e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
+         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/7zzffea766ae89d680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
       },
       "authenticationConfiguration":{
          "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
