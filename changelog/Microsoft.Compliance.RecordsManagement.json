@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "eventQuery",
           "ChangeType": "Addition",
-          "Description": "Added the [eventQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-eventQuery?view=graph-rest-beta) resource type.",
+          "Description": "Added the [eventQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-eventQueries?view=graph-rest-beta) resource type.",
           "Target": "eventQuery"
         },
         {
