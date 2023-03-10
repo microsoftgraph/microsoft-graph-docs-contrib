@@ -30,13 +30,14 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+  "@odata.type": "microsoft.graph.defaultInvitationRedemptionIdentityProviderConfiguration",
+  "baseType": "microsoft.graph.invitationRedemptionIdentityProviderConfiguration"
 }
 -->
 
 ``` json
 {
-  "primaryIdentityProviderPrecedenceOrder": "String",
-  "fallbackIdentityProvider": "String"
+  "primaryIdentityProviderPrecedenceOrder": "String Collection",
+  "fallbackIdentityProvider": "String Collection"
 }
 ```

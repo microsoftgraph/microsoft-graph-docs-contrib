@@ -20,8 +20,8 @@ Defines the base type invitation redemption provider configuration base type to 
 
 |Property|Type|Description|
 |:---|:---|:---|
-| primaryIdentityProviderPrecedenceOrder | [Collectionb2bIdentityProvidersType[]](../resources/enums.md) | Collection of identity providers in priority order of preference to be used for guest user invitation redemption |
-| fallbackIdentityProvider | [b2bIdentityProvidersType[]](../resources/enums.md) | Collection of fallback identity providers to be used in case no primary identity provider can be used for guest user invitation redemption. |
+| primaryIdentityProviderPrecedenceOrder | b2bIdentityProvidersType Collection | Collection of identity providers in priority order of preference to be used for guest user invitation redemption |
+| fallbackIdentityProvider | b2bIdentityProvidersType Collection | Collection of fallback identity providers to be used in case no primary identity provider can be used for guest user invitation redemption. |
 
 ## Relationships
 
@@ -32,13 +32,13 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+  "@odata.type": "microsoft.graph.invitationRedemptionIdentityProviderConfiguration"
 }
 -->
 
 ``` json
 {
-  "primaryIdentityProviderPrecedenceOrder": "String",
-  "fallbackIdentityProvider": "String"
+  "primaryIdentityProviderPrecedenceOrder": "String Collection",
+  "fallbackIdentityProvider": "String Collection"
 }
 ```

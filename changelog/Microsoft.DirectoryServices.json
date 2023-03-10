@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "defaultInvitationRedemptionIdentityProviderConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **defaultInvitationRedemptionIdentityProviderConfiguration** resource.",
+          "Description": "Added the [defaultInvitationRedemptionIdentityProviderConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/defaultInvitationRedemptionIdentityProviderConfiguration?view=graph-rest-beta) resource.",
           "Target": "defaultInvitationRedemptionIdentityProviderConfiguration"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "invitationRedemptionIdentityProviderConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **invitationRedemptionIdentityProviderConfiguration** resource.",
+          "Description": "Added the [invitationRedemptionIdentityProviderConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/invitationRedemptionIdentityProviderConfiguration?view=graph-rest-beta) resource.",
           "Target": "invitationRedemptionIdentityProviderConfiguration"
         },
         {
