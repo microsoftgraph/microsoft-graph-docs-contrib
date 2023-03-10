@@ -28,9 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /solutions/bookingBusinesses/{id}/customers/{id}
 ```
-```
-Note: currently it requires {id} in base64 form to work. {id} in GUID form currently does not work.
-```
+> Note: currently it requires {id} in base64 form to work. {id} in GUID form currently does not work.
 
 ## Optional query parameters
 
