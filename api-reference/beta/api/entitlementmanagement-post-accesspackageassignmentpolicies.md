@@ -497,7 +497,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create a policy and specify the stages to trigger pre-defined custom workflow extensions (This property is currently in deprecation path)
+### Example 4: Create a policy and specify the stages to trigger pre-defined custom workflow extensions
 
 #### Request
 
