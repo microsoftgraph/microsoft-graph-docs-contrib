@@ -19,7 +19,7 @@ Callback settings that defines how long Azure AD can wait for a resume signal fo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutDuration|Duration|The max duration that Azure AD will wait for a resume action for the callout that was sent by Azure AD is represented in ISO 8601 format. The Valid range for entitlement management custom extension is between `5 minutes` and `14 days`. For example, `PT3H` refers to three hours, `P3D` refers to three days, `PT10M` refers to ten minutes|
+|timeoutDuration|Duration|The max duration that Azure AD will wait for a resume action for the callout that was sent by Azure AD is represented in ISO 8601 format. The Valid range for entitlement management custom extension is between 5 minutes and 14 days. For example, `PT3H` refers to three hours, `P3D` refers to three days, `PT10M` refers to ten minutes.|
 
 ## Relationships
 None.
