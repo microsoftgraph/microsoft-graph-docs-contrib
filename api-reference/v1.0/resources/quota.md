@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **quota** resource provides details about space constraints on a [drive](drive.md) resource. The values reflect the total/used unified storage quota across multiple Microsoft services.
+The **quota** resource provides details about space constraints on a [drive](drive.md) resource. In OneDrive Personal, the values reflect the total/used unified storage quota across multiple Microsoft services.
 
 ## JSON representation
 

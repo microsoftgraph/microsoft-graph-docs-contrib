@@ -19,7 +19,6 @@ The unifiedStorageQuota resource provides an aggregate view of a user's quota in
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get unifiedStorageQuota](../api/unifiedstoragequota-get.md)|[unifiedStorageQuota](../resources/unifiedstoragequota.md)|Read the properties and relationships of a [unifiedStorageQuota](../resources/unifiedstoragequota.md) object.|
-|[List services](../api/unifiedstoragequota-list-services.md)|[unifiedStorageQuota](#usqState-values) collection|Get a list of services in the serviceStorageQuotaBreakdown.|
 
 ## Properties
 |Property|Type|Description|
@@ -27,7 +26,7 @@ The unifiedStorageQuota resource provides an aggregate view of a user's quota in
 |id|String|The user id.|
 |manageWebUrl|String| A URL that can be used in a browser to manage the breakdown. Read-only. |
 |remaining|Int64| Total space remaining before reaching the quota limit in bytes. |
-|state|usqState| Enumeration value that indicates the state of the storage space. |
+|state|[usqState](#usqstate-values)| Enumeration value that indicates the state of the storage space. |
 |total|Int64| Total allowed storage space in bytes. |
 |used|Int64| Total space used in bytes. |
 
@@ -61,7 +60,7 @@ The following is a JSON representation of the resource.
   "id": "String",
   "manageWebUrl": "String",
   "remaining": "Integer",
-  "state": "String",
+  "state": "normal | nearing | critical | full | overLimit",
   "total": "Integer",
   "used": "Integer"
 }

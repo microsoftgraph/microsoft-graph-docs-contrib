@@ -18,15 +18,16 @@ Represents a proportion of the unified storage quota associated with a specific 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List serviceStorageQuotaBreakdown](../api/unifiedstoragequota-list-services.md)| [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection|Get a list of services in the serviceStorageQuotaBreakdown.|
 |[Get serviceStorageQuotaBreakdown](../api/unifiedstoragequota-get-services.md)|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md)|Read the properties and relationships of a [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the breakdown that can be displayed to users. Localized. Read-only.|
-|id|String|The id of the breakdown. Read-only.|
-|manageWebUrl|String|A URL that can be used in a browser to manage the breakdown. Read-only.|
-|used|Int64|The number of bytes this breakdown is consuming. Read-only.|
+|displayName|String|The service breakdown name displayed to users. Localized. Read-only.|
+|id|String|The service breakdown id. Read-only.|
+|manageWebUrl|String|A URL that can be used in a browser to manage the service breakdown. Read-only.|
+|used|Int64|The number of bytes this service breakdown is consuming. Read-only.|
 
 ## Relationships
 None.
