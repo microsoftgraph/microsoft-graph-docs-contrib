@@ -34,6 +34,8 @@ Granular controls let you determine the users, groups, and apps, both in your or
 
 Default cross-tenant access settings determine your stance for inbound and outbound collaboration with all other Azure AD organizations. Any external collaboration with an organization not listed explicitly in your cross-tenant access settings will inherit these default settings. Default settings are defined using the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type.
 
+Additionally, you can use default inbound access settings to configure custom redemption flow. Custom redemption flow determines which identity provider will be prioritized to be used when a guest user tries to redeem their invitation.
+
 By default, Azure AD assigns all Azure AD tenants a service default configuration for cross-tenant access settings. You can override these service defaults with your own configuration to suit your organization. You can confirm whether you're using the service default settings or have modified the default settings by looking at the **isServiceDefault** property returned when you query the default endpoint.
 
 ## Partner cross-tenant access settings
@@ -342,6 +344,27 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 
 </td>
 <td> Users in group 'g1' are blocked from accessing application 'a1' only. All users, including users in group 'g1' are able to access any other application. </td>
+</tr>
+<tr>
+    <td>
+        Prioritize using SAML/WS-Fed over Azure AD during guest user invitation redemption
+    </td>
+    <td>
+
+``` json 
+"invitationRedemptionIdentityProviderConfiguration": { 
+    "primaryIdentityProviderPrecedenceOrder": [ 
+        "externalFederation",
+        "azureActiveDirectory", 
+        "socialIdentityProviders" 
+    ], 
+    "fallbackIdentityProvider": "defaultConfiguredIdp" 
+} 
+```
+</td>
+<td>
+Check if guest user belongs to a SAML/WS-Fed partner before trying Azure AD for authentication and then check if it belongs to social identity provider like Google, Facebook etc. 
+</td>
 </tr>
 </table>
 

@@ -3,6 +3,49 @@
     {
       "ChangeList": [
         {
+          "Id": "ce3e7a2a-5cfe-463a-9036-344e46577138",
+          "ApiChange": "Property",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationDefault",
+          "ChangeType": "Added the defaultInvitationRedemptionIdentityProviderConfiguration property",
+          "Description": "Added the **defaultInvitationRedemptionIdentityProviderConfiguration** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "a1361f3a-dca1-4152-bb64-d0519396e483",
+          "ApiChange": "Resource",
+          "ChangedApiName": "defaultInvitationRedemptionIdentityProviderConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultInvitationRedemptionIdentityProviderConfiguration** resource.",
+          "Target": "defaultInvitationRedemptionIdentityProviderConfiguration"
+        },
+        {
+          "Id": "a855e656-218a-4e6e-95e7-18488ed0dfd2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invitationRedemptionIdentityProviderConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **invitationRedemptionIdentityProviderConfiguration** resource.",
+          "Target": "invitationRedemptionIdentityProviderConfiguration"
+        },
+        {
+          "Id": "1ff4e867-c4f7-40d0-80eb-0ab46081d5ef",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "b2bIdentityProvidersType",
+          "ChangeType": "Addition",
+          "Description": "Added the **b2bIdentityProvidersType** enumeration type.",
+          "Target": "b2bIdentityProvidersType"
+        }
+
+      ],
+      "Id": "af17c965-f4f1-4a8e-a15a-2808a7f51aec",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-09T03:22:24.1309263Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
           "ApiChange": "Permission",
           "ChangedApiName": "Synchronization.ReadWrite.All",

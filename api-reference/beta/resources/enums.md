@@ -3700,3 +3700,15 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoftAuthenticator|
 |outlookMobile|
 |unknownFutureValue|
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|AzureActiveDirectory|
+|ExternalFederation|
+|SocialIdentityProviders|
+|EmailOneTimePasscode|
+|MicrosoftAccount|
+|DefaultConfiguredIdp|
+|unknownFutureValue|
