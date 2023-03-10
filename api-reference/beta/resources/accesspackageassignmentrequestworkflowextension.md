@@ -17,8 +17,8 @@ Defines the attributes of a logic app, which can be called at various stages of 
 
 The following use cases can be integrated with logic apps using [access package assignment request](accesspackageassignmentrequest.md) workflow:
 - When an [access package is requested](accesspackageassignmentrequest.md)
-- When an [access package request is granted](accesspackageassignmentrequest.md)
 - When an [access package request is approved](accesspackageassignmentrequest.md)
+- When an [access package request is granted](accesspackageassignmentrequest.md)
 - When an [access package assignment expires](accesspackageassignmentrequest.md)
 
 
