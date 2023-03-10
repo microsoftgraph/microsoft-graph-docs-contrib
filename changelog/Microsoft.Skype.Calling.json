@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "2b9babe7-efcd-4ddd-9482-df2636ec976e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "watermarkProtectionValues",
+          "ChangeType": "Addition",
+          "Description": "Added the [watermarkProtectionValues](https://learn.microsoft.com/en-us/graph/api/resources/watermarkProtectionValues?view=graph-rest-1.0) resource type.",
+          "Target": "watermarkProtectionValues"
+        }
+      ],
+      "Id": "2b9babe7-efcd-4ddd-9482-df2636ec976e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-09T22:34:36.2871929Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7225e1a9-2931-4ee2-bd06-ec29de99843e",
+          "ApiChange": "Property",
+          "ChangedApiName": "watermarkProtection",
+          "ChangeType": "Addition",
+          "Description": "Added the `watermarkProtection` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "7225e1a9-2931-4ee2-bd06-ec29de99843e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-09T22:34:36.2871959Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "05977d57-f279-432f-b811-ff44dc36ad0c",
           "ApiChange": "Property",
           "ChangedApiName": "allowParticipantsToChangeName",
