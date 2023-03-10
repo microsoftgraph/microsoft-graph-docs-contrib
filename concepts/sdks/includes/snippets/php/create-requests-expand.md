@@ -1,5 +1,10 @@
 <!-- markdownlint-disable MD041 -->
 
 ```php
-//sample here
+$response = $graphServiceClient->usersById('USER_ID')->messages()->get(new MessagesRequestBuilderGetRequestConfiguration(
+        queryParameters: new MessagesRequestBuilderGetQueryParameters(
+            expand: ['attachments',]
+        )
+    ));
+$messages = $response->wait();
 ```
