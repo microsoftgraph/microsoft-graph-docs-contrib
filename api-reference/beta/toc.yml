@@ -15828,11 +15828,11 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
-      - name: Records management (preview)
+      - name: Records management 
         items:
         - name: Overview
           href: resources/security-recordsManagement-overview.md
-        - name: Retention label
+        - name: Retention label (preview)
           href: resources/security-retentionlabel.md
           items:
           - name: List
