@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentTyp
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

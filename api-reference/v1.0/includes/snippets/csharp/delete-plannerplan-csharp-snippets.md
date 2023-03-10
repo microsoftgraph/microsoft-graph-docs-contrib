@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Planner.Plans["{plannerPlan-id}"]
-	.Request()
-	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
-	.DeleteAsync();
+await graphClient.Planner.Plans["{plannerPlan-id}"].DeleteAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
+
 
 ```

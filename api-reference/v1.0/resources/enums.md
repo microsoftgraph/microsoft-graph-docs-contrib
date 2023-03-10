@@ -11,6 +11,17 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### userPurpose values
+| Member             | 
+|:-------------------|
+| user               |
+| linked             |
+| shared             |
+| room               |
+| equipment          |
+| others             |
+| unknownFutureValue |
+
 ### bookingsAvailabilityStatus values
 |Member|
 |:---|
@@ -2277,4 +2288,20 @@ Possible values for user account types (group membership), per Windows definitio
 |terminated|
 |terminating|
 |terminationRequested|
+|unknownFutureValue|
+
+### onPremisesDirectorySynchronizationDeletionPreventionType values
+
+|Member|
+|:-----|
+|disabled|
+|enabledForCount|
+|enabledForPercentage|
+
+### searchContent values 
+
+|Member|
+|:---|
+|sharedContent|
+|privateContent|
 |unknownFutureValue|

@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerBucket = new PlannerBucket
+var requestBody = new PlannerBucket
 {
 	Name = "Advertising",
 	PlanId = "xqQg5FS2LkCp935s-FIFm2QAFkHM",
-	OrderHint = " !"
+	OrderHint = " !",
 };
+var result = await graphClient.Planner.Buckets.PostAsync(requestBody);
 
-await graphClient.Planner.Buckets
-	.Request()
-	.AddAsync(plannerBucket);
 
 ```

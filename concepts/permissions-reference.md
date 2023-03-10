@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 12/09/2022
+ms.date: 02/17/2022
 ---
 
 # Microsoft Graph permissions reference
@@ -940,8 +940,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _LearningContent.Read.All_ |    Read learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
-| _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningContent.Read.All_ |    Read all learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningContent.ReadWrite.All_  |    Manage all learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
 
 
 ---
@@ -2210,6 +2210,33 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 
 ---
 
+## Synchronization permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes | No |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes |
+
+### Example usage
+
+#### Delegated
+- _Synchronization.Read.All_: Get the list of subject rights request available to the user (`GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema`).
+- _Synchronization.ReadWrite.All_: Create a subject rights request (`PUT /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema`).
+
+#### Application
+- _Synchronization.Read.All_: Get the list of subject rights request available to the user (`GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/`).
+- _Synchronization.ReadWrite.All_: Create a subject rights request (`POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/starta`).
+
+
 ## Subject rights request permissions
 
 #### Delegated permissions
@@ -2309,6 +2336,18 @@ Taxonomy permissions are valid only on work or school accounts.
 | _Team.Create_  | Create teams | Create teams, without a signed-in user. | Yes | No |
 | _Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
 
+## Team templates permissions
+
+#### Delegated permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamTemplates.Read_ | TeamTemplates.Read is "Sign-in and read Teams templates available for this user" | Allows read of the available Teams Templates for the user | No | No |
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamTemplates.Read.All_ | Read all available Teams Templates | Allows read of the available Teams Templates, without signed user	| No | No |
+
 ## Team settings permissions
 
 #### Delegated permissions
@@ -2324,6 +2363,7 @@ Taxonomy permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamSettings.Read.All_ | Read all teams' settings | Read this team's settings, without a signed-in user.  | Yes | No |
 | _TeamSettings.ReadWrite.All_ | Read and change all teams' settings. | Read and change all teams' settings, without a signed-in user.  | Yes | No |
+
 
 ## Teams activity permissions
 
@@ -2706,7 +2746,6 @@ Threat hunting permissions are valid only on work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read.All_ |    Read all users' full profiles | Allows the app to read the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.| Yes |
-| _User.ReadBasic.All_ |    Read all users' basic profiles | Allows the app to read a basic set of profile properties of other users in your organization without a signed-in user. Includes display name, first and last name, email address, open extensions, and photo. | Yes |
 | _User.ReadWrite.All_ |   Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | Yes |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, without a signed-in user. | Yes |
 | _User.EnableDisableAccount.All_       |    Enable and disable user accounts | Allows the app to enable and disable users' accounts, without a signed-in user.| Yes |
@@ -2756,8 +2795,10 @@ The _User.ReadBasic.All_ permission constrains app access to a limited set of pr
 
 - displayName
 - givenName
+- id
 - mail
 - photo
+- securityIdentifier
 - surname
 - userPrincipalName
 

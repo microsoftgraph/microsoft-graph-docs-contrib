@@ -90,7 +90,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

@@ -1,5 +1,5 @@
 ---
-title: "List taskProcessingResult (for a taskReport)"
+title: "List taskProcessingResult"
 description: "Get a list of taskProcessingResult objects and their properties for a taskReport."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -213,7 +212,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

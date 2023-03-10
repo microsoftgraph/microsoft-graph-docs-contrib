@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd2
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

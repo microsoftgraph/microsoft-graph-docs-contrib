@@ -32,7 +32,9 @@ The JSON blob contains the types of resources expected in the response, the unde
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
 |queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags related to spelling correction. Optional. |
+|region|String|The geographic location for the search. Required for searches that use application permissions. For details, see [Get the region value](/graph/search-concept-searchall). |
 |resultTemplateOptions|[resultTemplateOption](resulttemplateoption.md) collection|Provides the search result template options to render search results from connectors.|
+|sharePointOneDriveOptions|[sharePointOneDriveOptions](sharepointonedriveoptions.md)|Indicates the kind of contents to be searched when a search is performed using application permissions. Optional.|
 |size|Int32|The size of the page to be retrieved.The maximum value is 1000. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 
@@ -51,7 +53,9 @@ The following is a JSON representation of the resource.
   "from": "Int32",
   "query": {"@odata.type": "microsoft.graph.searchQuery"},
   "queryAlterationOptions": {"@odata.type": "microsoft.graph.searchAlterationOptions"},
+  "region": "String",
   "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}],
+  "sharePointOneDriveOptions": {"@odata.type": "microsoft.graph.sharePointOneDriveOptions"},
   "size": "Int32"
 }
 ```
@@ -64,6 +68,7 @@ The following is a JSON representation of the resource.
 - Use [aggregations](/graph/search-concept-aggregation) to refine search results
 - Use [display layout](/graph/search-concept-display-layout.md)
 - Enable [spell corrections](/graph/search-concept-speller) in search results
+- [Search SharePoint content with application permissions](/graph/search-concept-searchall)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
