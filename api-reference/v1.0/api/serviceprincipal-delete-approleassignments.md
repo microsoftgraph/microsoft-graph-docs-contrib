@@ -96,7 +96,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipal-id}/
 
 ---
 
-
 ### Response
 
 <!-- {

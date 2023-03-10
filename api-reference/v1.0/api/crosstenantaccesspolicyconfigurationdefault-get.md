@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default
 
 ---
 
-
 ### Response
 
 The following response object shows a default cross-tenant policy inherited from Azure AD, as identified by **isServiceDefault** set to `true`.

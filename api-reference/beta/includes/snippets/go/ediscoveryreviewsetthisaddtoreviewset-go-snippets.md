@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewAddToReviewSetPostRequestBody()
 search := graphmodels.NewEdiscoverySearch()
@@ -15,7 +15,7 @@ requestBody.SetSearch(search)
 additionalDataOptions := graphmodels.LINKEDFILES_ADDITIONALDATAOPTIONS 
 requestBody.SetAdditionalDataOptions(&additionalDataOptions) 
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").ReviewSetsById("ediscoveryReviewSet-id").AddToReviewSet().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").ReviewSetsById("ediscoveryReviewSet-id").SecurityAddToReviewSet().Post(context.Background(), requestBody, nil)
 
 
 ```

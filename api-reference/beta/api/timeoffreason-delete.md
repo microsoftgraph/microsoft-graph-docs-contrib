@@ -93,7 +93,6 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 
 ---
 
-
 ### Response
 
 The following is an example of the response. 

@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

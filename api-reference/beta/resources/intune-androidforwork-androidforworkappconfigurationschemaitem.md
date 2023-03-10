@@ -28,7 +28,7 @@ Single configuration item inside an Android for Work application's custom config
 |defaultStringValue|String|Default value for string type items, if specified by the app developer|
 |defaultStringArrayValue|String collection|Default value for string array type items, if specified by the app developer|
 |dataType|[androidForWorkAppConfigurationSchemaItemDataType](../resources/intune-androidforwork-androidforworkappconfigurationschemaitemdatatype.md)|The type of value this item describes. Possible values are: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
-|selections|[keyValuePair](../resources/intune-androidforwork-keyvaluepair.md) collection|List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)|
+|selections|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)|
 
 ## Relationships
 None

@@ -443,7 +443,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmCompromised",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the signin resource.",
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the **signin** resource.",
+
           "Target": "signIn"
         },
         {
@@ -451,7 +452,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmSafe",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the signIn resource.",
+          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the **signIn** resource.",
           "Target": "signIn"
         }
       ],
@@ -1403,7 +1404,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "outlookM365,outlook2019",
           "ChangeType": "Addition",
-          "Description": "Added the **outlookM365** and **outlook2019** properties to the getEmailAppUsageVersionsUserCounts entity.",
+          "Description": "Added the **outlookM365** and **outlook2019** properties to the **getEmailAppUsageVersionsUserCounts** entity.",
           "Target": "getEmailAppUsageVersionsUserCounts"
         }
       ],
@@ -1507,7 +1508,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "networkDisplayName",
           "ChangeType": "Addition",
-          "Description": "Added **networkDisplayName** property to the yammerGroupsActivityDetail entity.",
+          "Description": "Added **networkDisplayName** property to the **yammerGroupsActivityDetail entity**.",
           "Target": "yammerGroupsActivityDetail"
         }
       ],
@@ -1525,7 +1526,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Authorization for APIs to read Microsoft 365 usage reports",
           "ChangeType": "Change",
-          "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles.",
+          "Description": "For delegated permissions to allow apps to read Microsoft 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](https://learn.microsoft.com/en-us/graph/reportroot-authorization).",
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
@@ -1561,7 +1562,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemCount,deletedItemSizeInBytes",
           "ChangeType": "Addition",
-          "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the mailboxUsageDetail entity.",
+          "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the **mailboxUsageDetail** entity.",
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1577,7 +1578,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added the **ownerPrincipalName** property to the oneDriveUsageAccountDetail entity.",
+          "Description": "Added the **ownerPrincipalName** property to the **oneDriveUsageAccountDetail** entity.",
           "Target": "oneDriveUsageAccountDetail"
         },
         {
@@ -1585,7 +1586,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added the **ownerPrincipalName** property to the sharePointSiteUsageDetail entity.",
+          "Description": "Added the **ownerPrincipalName** property to the **sharePointSiteUsageDetail** entity.",
           "Target": "sharePointSiteUsageDetail"
         },
         {
@@ -1611,7 +1612,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemCount",
           "ChangeType": "Addition",
-          "Description": "Added **deletedItemCount** property to the mailboxUsageDetail entity.",
+          "Description": "Added **deletedItemCount** property to the **mailboxUsageDetail** entity.",
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1619,7 +1620,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemSizeInBytes",
           "ChangeType": "Addition",
-          "Description": "Added **deletedItemSizeInBytes** property to the mailboxUsageDetail entity.",
+          "Description": "Added **deletedItemSizeInBytes** property to the **mailboxUsageDetail** entity.",
           "Target": "mailboxUsageDetail"
         },
         {
@@ -1663,7 +1664,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added **ownerPrincipalName** property to the oneDriveUsageAccountDetail entity.",
+          "Description": "Added **ownerPrincipalName** property to the **oneDriveUsageAccountDetail** entity.",
           "Target": "oneDriveUsageAccountDetail"
         },
         {
@@ -1671,7 +1672,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added **ownerPrincipalName** property to the sharePointSiteUsageDetail entity.",
+          "Description": "Added **ownerPrincipalName** property to the **sharePointSiteUsageDetail** entity.",
           "Target": "sharePointSiteUsageDetail"
         }
       ],
@@ -1839,7 +1840,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "siteId",
           "ChangeType": "Addition",
-          "Description": "Added the **siteId** property to the sharePointSiteUsageDetail entity.",
+          "Description": "Added the **siteId** property to the **sharePointSiteUsageDetail** entity.",
           "Target": "sharePointSiteUsageDetail"
         }
       ],
@@ -1857,7 +1858,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activatedOnSharedComputer",
           "ChangeType": "Addition",
-          "Description": "Added the **activatedOnSharedComputer** property to the userActivationCounts entity.",
+          "Description": "Added the **activatedOnSharedComputer** property to the **userActivationCounts** entity.",
           "Target": "userActivationCounts"
         },
         {
@@ -1865,7 +1866,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharedComputerActivation",
           "ChangeType": "Addition",
-          "Description": "Added the **sharedComputerActivation** property to the office365ActivationsUserCounts entity.",
+          "Description": "Added the **sharedComputerActivation** property to the **office365ActivationsUserCounts** entity.",
           "Target": "office365ActivationsUserCounts"
         }
       ],

@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/interests/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

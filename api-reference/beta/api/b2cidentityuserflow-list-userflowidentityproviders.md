@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signu
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
