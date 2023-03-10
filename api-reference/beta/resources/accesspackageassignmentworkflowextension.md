@@ -35,12 +35,12 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
-|createdBy|String|Identity with UPN as display name who created the entity.|
+|createdBy|String|The userPrincipalName of the user or identity of the subject who created this resource. Read-only.|
 |createdDateTime|DateTimeOffset|Entity created datetime.|
 |description|String|Description for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|Display name for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|id|String|Identifier for the customAccessPackageWorkflowExtension object. Inherited from [entity](../resources/entity.md).|
+|id|String|Read-only.|
 |lastModifiedBy|String|Identity with UPN as display name who modified entity. |
 |lastModifiedDateTime|DateTimeOffset|Entity modified datetime.|
 
