@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |source|String|Source from where customer is trying to resume the request, which can be stored in service and will be helpful for auditing.|
-|type|String|Indicate at which stage the custom callout extension was executed.The possible values are: `microsoft.graph.accessPackageCustomExtensionStage.ssignmentRequestCreated`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestApproved`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestGranted`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestRemoved`|
+|type|String|Indicate at which stage the custom callout extension was executed.The possible values are: `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestApproved`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestGranted`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestRemoved`|
 |data|[customExtensionData](../resources/customextensiondata.md)|[Access Package Assignment Request Callback Data](../resources/accesspackageassignmentrequestcallbackdata.md)|
 
 
@@ -111,7 +111,7 @@ Content-Type: application/json
     "stage": "AssignmentRequestCreated",
     "customExtensionStageInstanceId": "857d0c50-466b-4840-bb5b-c92cea7141ff",
     "state": "denied",
-    "customExtensionStageInstanceDetail": "Protentail risk user based on the SOD check"
+    "customExtensionStageInstanceDetail": "Potential risk user based on the SOD check"
   }
 }
 ```
