@@ -1,6 +1,6 @@
 ---
 title: "cloudPcLaunchInfo resource type"
-description: "Contains the information to connect a cloud PC."
+description: "Contains the information to connect a Cloud PC."
 author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -20,8 +20,8 @@ Contains the information to connect a [cloudPC](../resources/cloudpc.md).
 |:---|:---|:---|
 |cloudPcId|String|The unique identifier of the Cloud PC.|
 |cloudPcLaunchUrl|String|The connect URL of the Cloud PC.|
-|windows365SwitchCompatible|Boolean|Indicate if the Cloud PC supports switch functionality. If the value is true, it supports. If the value is false, it doesn't support.|
-|windows365SwitchNotCompatibleReason|String|Indicate the reason Cloud PC doesn't support switch. "CPCOsVersionNotMeetRequirement" indicates user needs to update their CloudPc OS version. "CPCHardwareNotMeetRequirement" indicates the cloud pc needs more cpu or ram to support the functionality.|
+|windows365SwitchCompatible|Boolean|Indicates whether the Cloud PC supports switch functionality. If the value is `true`, it supports switch functionality; otherwise,  `false`.|
+|windows365SwitchNotCompatibleReason|String|Indicates the reason the Cloud PC doesn't support switch. `CPCOsVersionNotMeetRequirement` indicates that the user needs to update their Cloud PC operation system version. `CPCHardwareNotMeetRequirement` indicates that the Cloud PC needs more CPU or RAM to support the functionality.|
 
 ## Relationships
 None.
