@@ -8842,7 +8842,7 @@ items:
             href: resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
             items:
             - name: Get
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md            
+              href: api/intune-devices-userexperienceanalyticsdevicetimelineevents-get.md            
           - name: User experience analytics device without cloud identity
             href: resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md
             items:
