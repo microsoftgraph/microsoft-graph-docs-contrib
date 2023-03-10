@@ -1,7 +1,7 @@
 ---
 title: "List authenticationStrengthPolicies"
 description: "Get a list of the authenticationStrengthPolicy objects and their properties."
-author: "inbarckMS"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -32,8 +32,7 @@ GET /policies/authenticationStrengthPolicies
 ```
 
 ## Optional query parameters
-This method supports the `filter` OData query parameter on the `policyType` and `policyName` properties to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
+This method supports the `$filter` OData query parameter on the **policyType** and **policyName** properties to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -51,12 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_authenticationstrengthpolicy"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies
 ```
