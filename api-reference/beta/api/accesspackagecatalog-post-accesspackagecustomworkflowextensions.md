@@ -1,5 +1,5 @@
 ---
-title: "Create accessPackageCustomWorkflowExtensions"
+title: "Create accessPackageCustomWorkflowExtension"
 description: "Create a new accessPackageCustomWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
