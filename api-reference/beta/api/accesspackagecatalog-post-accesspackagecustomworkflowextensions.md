@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [accessPa
 
 ## Examples
 
-### Access package assignment request
+### Create a custom extension for use with an access package assignment request
 The following is an example of a access package assignment request custom workflow extension.
 
 <!-- {
@@ -135,7 +135,7 @@ Content-Type: application/json
 } 
 ```
 
-### Access package assignment
+### Create a custom extension for use with an access package assignment
 The following is an example of a access package assignment custom workflow extension.
 
 # [HTTP](#tab/http)
