@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
   "inboundAllowed": {
     "@odata.type": "Boolean"
   },
-  "applications": {
+  "outboundAllowed": {
     "@odata.type": "Boolean"
   }
 }

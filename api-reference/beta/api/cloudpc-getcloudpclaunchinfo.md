@@ -95,7 +95,9 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcLaunchInfo",
   "cloudPcId": "a20d556d-85f7-88cc-bb9c-08d9902bb7bb",
-  "cloudPcLaunchUrl": "https://rdweb-r0.wvdselfhost.microsoft.com/api/arm/weblaunch/tenants/662009bc-7732-4f6f-8726-25883518b33e/resources/662009bc-7732-4f6f-8726-25883518b33e"
+  "cloudPcLaunchUrl": "https://rdweb-r0.wvdselfhost.microsoft.com/api/arm/weblaunch/tenants/662009bc-7732-4f6f-8726-25883518b33e/resources/662009bc-7732-4f6f-8726-25883518b33e",
+  "windows365SwitchCompatible":false,
+  "windows365SwitchNotCompatibleReason":"CPCHardwareNotMeetRequirement"
 }
 ```
 
