@@ -3676,3 +3676,11 @@ Possible values for user account types (group membership), per Windows definitio
 |tokenIssuanceStart|
 |pageRenderStart|
 |unknownFutureValue|
+
+### microsoftAuthenticatorAuthenticationMethodClientAppName values
+
+|Member|
+|:-----|
+|microsoftAuthenticator|
+|outlookMobile|
+|unknownFutureValue|
