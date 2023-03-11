@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update retentionEventType
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a [retentionEventType](../resources/security-retentioneventtype.md) object.
 
 ## Permissions
@@ -63,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/eventType
+PATCH https://graph.microsoft.com/v1/security/labels/retentionLabels/{retentionLabelId}/eventType
 Content-Type: application/json
 Content-length: 199
 
