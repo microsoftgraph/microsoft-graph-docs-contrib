@@ -27,9 +27,9 @@ Further information and examples are described in [Planner Task Recurrence Conce
 |:---|:---|:---|
 |nextInSeriesTaskId|String|The **taskId** of the next task in this series. This value is assigned at the time the next task in the series is created, and is `null` prior to that time.|
 |occurrenceId|Int32|The 1-based index of this task within the recurrence series. The first task in a series has the value `1`, the next task in the series has the value `2`, and so on.|
-|previousInSeriesTaskId|String|The **taskId** of the previous task in this series. `null` for the first task in a series since no predecessor. All subsequent tasks in the series have a value that corresponds to their predecessors.|
+|previousInSeriesTaskId|String|The **taskId** of the previous task in this series. `null` for the first task in a series since it has no predecessor. All subsequent tasks in the series have a value that corresponds to their predecessors.|
 |recurrenceStartDateTime|DateTimeOffset|The date and time when this recurrence series begin. For the first task in a series (**occurrenceId** = 1) this value is copied from `schedule.patternStartDateTime`. For subsequent tasks in the series (**occurrenceId** >= 2) this value is copied from the previous task and never changes; it preserves the start date of the recurring series. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|schedule|[plannerRecurrenceSchedule](../resources/plannerrecurrenceschedule.md)|The schedule for recurrence. Clients define and edit recurrence by specifying the schedule. If **nextInSeriesTaskId** isn't assigned, clients might terminate the series by assigning `null` to this property.|
+|schedule|[plannerRecurrenceSchedule](../resources/plannerrecurrenceschedule.md)|The schedule for recurrence. Clients define and edit recurrence by specifying the schedule. If **nextInSeriesTaskId** isn't assigned, clients may terminate the series by assigning `null` to this property.|
 |seriesId|String|The recurrence series this task belongs to. A GUID-based value that serves as the unique identifier for a series.|
 
 ## Relationships
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is an example JSON representation of the resource.
+The following is an example JSON representation of the resource. See [Planner Task Recurrence Concepts](../../../concepts/planner-task-recurrence-concept.md) for real examples.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerTaskRecurrence"

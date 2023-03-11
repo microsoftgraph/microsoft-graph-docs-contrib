@@ -600,6 +600,8 @@ items:
             href: businessscenarios-concept-overview.md
           - name: Configuring task rules (preview)
             href: planner-task-rules-overview.md
+          - name: Planner task recurrence concept
+            href: planner-task-recurrence-concept.md
         displayName: Planner
       - name: Teamwork and communications
         items:
