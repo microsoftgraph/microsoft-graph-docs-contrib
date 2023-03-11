@@ -14,9 +14,9 @@ Whether metered or not, APIs in Microsoft Graph follow these two principles:
 - Customer data ownership: Customer data belongs to the customer. Learn more about how [Microsoft categorizes customer data](https://www.microsoft.com/trust-center/privacy/customer-data-definitions). 
 - Reasonable access: The service provides access to customer content, within [defined limits](throttling-limits.md). 
 
-Metering some APIs helps to ensure the health of the current and future Microsoft Graph ecosystem by balancing platform access and cost. In the event that a Microsoft Graph API that is included with user subscription licenses becomes metered, that would be a non-backwards compatible change and would follow the [versioning, support, and breaking change policies for Microsoft Graph](versioning-and-support.md).
+Metering some APIs helps to ensure the health of the current and future Microsoft Graph ecosystem by balancing platform access and cost. In the event that a Microsoft Graph API that is included with user subscription licenses becomes metered, that would be a non-backward compatible change and the [versioning, support, and breaking change policies for Microsoft Graph](versioning-and-support.md) would apply.
 
-You can find the list of metered APIs and services in Microsoft Graph [here](/graph/metered-api-list). 
+For the list of metered APIs and services, see [Metered APIs and services](/graph/metered-api-list). 
 
 ## API categories and metering
 Microsoft Graph APIs fall into three categories, and metering may apply based on the category of the API.
