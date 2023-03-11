@@ -67,7 +67,7 @@ In the meantime, to unblock development and testing, you can use the following w
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 
-## Bookings
+## Customer booking
 
 ### Error when querying bookingBusinesses
 
@@ -151,21 +151,6 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 ### Update notifications occur on creation and soft deletion of groups
 
 [Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group soft deletion.
-
-## Channel
-
-### Create channel
-
-When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
-
-- Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
-- Start with an underscore (_) or period (.), or end with a period (.).
-
-## Cloud communications 
-
-### View meeting details menu is not available on Microsoft Teams client
-
-The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
 ## Contacts
 
@@ -413,7 +398,7 @@ This error is due to intermittent license check failures, which we are working t
 
 When querying [followed sites](/graph/api/sites-list-followed) through Microsoft Graph, the response might have incorrect results and those results might not match the results from following content in SharePoint. As a temporary workaround, you can use the [Following people and content REST API](/sharepoint/dev/general-development/following-people-and-content-rest-api-reference-for-sharepoint).
 
-## Teamwork (Microsoft Teams)
+## Teamwork and communications (Microsoft Teams)
 
 ### Unable to filter team members by roles
 
@@ -468,6 +453,44 @@ The permissions TeamworkAppSettings.Read.All and TeamworkAppSettings.ReadWrite.A
 GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
 ```
 
+### Create channel can return an error response
+
+When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
+
+- Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
+- Start with an underscore (_) or period (.), or end with a period (.).
+
+### View meeting details menu is not available on Microsoft Teams client
+
+The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
+
+## Query parameters 
+
+### Some limitations apply to query parameters
+
+The following limitations apply to query parameters:
+
+- Multiple namespaces are not supported.
+- GET requests on `$ref` with casting are not supported on users, groups, devices, service principals, and applications.
+- `@odata.bind` is not supported. This means that you can't properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
+- `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
+- `$expand`:
+  - For directory objects, returns a maximum of 20 objects.
+  - No support for `@odata.nextLink`.
+  - No support for more than one level of expand.
+  - For directory objects, no support for nesting other query parameters such as `$filter` and `$select` in `$expand`.
+- `$filter`
+  - `/attachments` endpoint does not support filters. If present, the `$filter` parameter is ignored.
+  - Cross-workload filtering is not supported.
+- `$search`:
+  - Full-text search is only available for a subset of entities, such as messages.
+  - Cross-workload searching is not supported.
+  - Searching is not supported in Azure AD B2C tenants.
+- `$count`:
+  - Not supported in Azure AD B2C tenants.
+  - When using the `$count=true` query string when querying against directory objects, the `@odata.count` property will be present only in the first page of the paged data.
+- Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
+
 ## Users
 
 ### Encode number (#) symbols in userPrincipalName
@@ -505,33 +528,6 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 ### showInAddressList property is out of sync with Microsoft Exchange
 
 When querying users through Microsoft Graph, the **showInAddressList** property may not indicate the same status shown in Microsoft Exchange. We recommend you manage this functionality directly with Microsoft Exchange through the Microsoft 365 admin center and not to use this property in Microsoft Graph.
-
-## Query parameters 
-
-### Some limitations apply to query parameters
-
-The following limitations apply to query parameters:
-
-- Multiple namespaces are not supported.
-- GET requests on `$ref` with casting are not supported on users, groups, devices, service principals, and applications.
-- `@odata.bind` is not supported. This means that you can't properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
-- `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
-- `$expand`:
-  - For directory objects, returns a maximum of 20 objects.
-  - No support for `@odata.nextLink`.
-  - No support for more than one level of expand.
-  - For directory objects, no support for nesting other query parameters such as `$filter` and `$select` in `$expand`.
-- `$filter`
-  - `/attachments` endpoint does not support filters. If present, the `$filter` parameter is ignored.
-  - Cross-workload filtering is not supported.
-- `$search`:
-  - Full-text search is only available for a subset of entities, such as messages.
-  - Cross-workload searching is not supported.
-  - Searching is not supported in Azure AD B2C tenants.
-- `$count`:
-  - Not supported in Azure AD B2C tenants.
-  - When using the `$count=true` query string when querying against directory objects, the `@odata.count` property will be present only in the first page of the paged data.
-- Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs (deprecated)
 
