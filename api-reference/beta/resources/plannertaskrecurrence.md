@@ -25,12 +25,12 @@ Further information and examples are described in [Planner Task Recurrence Conce
 
 |Property|Type|Description|
 |:---|:---|:---|
-|seriesId|String|The recurrence series this task belongs to. Guid-based, so guaranteed to be distinct for a series.|
-|occurrenceId|Int32|The 1-based index of this task within the recurrence series. The first task in a series will have the value 1, the next task in the series will have the value 2, and so on.|
-|previousInSeriesTaskId|String|The taskId of the previous task in this series. This will be null for the first task in a series since there is no previous before the first. All subsequent tasks in the series will have a value corresponding to their predecessor.|
-|nextInSeriesTaskId|String|The taskId of the next task in this series. This value is assigned at the time the next task in the series is created, and is null prior to that time.|
-|schedule|[plannerRecurrenceSchedule](../resources/plannerrecurrenceschedule.md)|The schedule for recurrence. Clients define and edit recurrence by specifying the schedule. If `nextInSeriesTaskId` is not assigned, clients may terminate the series by assigning `null` to this property.|
-|recurrenceStartDateTime|DateTimeOffset|The date when this recurrence series began. For the first task in a series (occurrenceId = 1) this value is copied from `schedule.patternStartDateTime`. For subsequent tasks in the series (occurenceId >= 2) this value is copied from the previous task and never changes: it preserves the start date of the recurring series.|
+|nextInSeriesTaskId|String|The **taskId** of the next task in this series. This value is assigned at the time the next task in the series is created, and is `null` prior to that time.|
+|occurrenceId|Int32|The 1-based index of this task within the recurrence series. The first task in a series has the value `1`, the next task in the series has the value `2`, and so on.|
+|previousInSeriesTaskId|String|The **taskId** of the previous task in this series. `null` for the first task in a series since no predecessor. All subsequent tasks in the series have a value that corresponds to their predecessors.|
+|recurrenceStartDateTime|DateTimeOffset|The date and time when this recurrence series begin. For the first task in a series (**occurrenceId** = 1) this value is copied from `schedule.patternStartDateTime`. For subsequent tasks in the series (**occurrenceId** >= 2) this value is copied from the previous task and never changes; it preserves the start date of the recurring series. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|schedule|[plannerRecurrenceSchedule](../resources/plannerrecurrenceschedule.md)|The schedule for recurrence. Clients define and edit recurrence by specifying the schedule. If **nextInSeriesTaskId** isn't assigned, clients might terminate the series by assigning `null` to this property.|
+|seriesId|String|The recurrence series this task belongs to. A GUID-based value that serves as the unique identifier for a series.|
 
 ## Relationships
 
@@ -47,11 +47,11 @@ The following is an example JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerTaskRecurrence",
-  "seriesId": "String",
+  "nextInSeriesTaskId": "String",
   "occurrenceId": 1024,
   "previousInSeriesTaskId": "String",
-  "nextInSeriesTaskId": "String",
+  "recurrenceStartDateTime": "String (timestamp)",
   "schedule": { "@odata.type": "#microsoft.graph.plannerRecurrenceSchedule" },
-  "recurrenceStartDateTime": "String (timestamp)"
+  "seriesId": "String",
 }
 ```
