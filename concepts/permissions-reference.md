@@ -643,6 +643,40 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_ConsentRequest.Read.All_ |Read consent requests |Allows the app to read app consent requests and approvals without a signed-in user. |Yes |
 |_ConsentRequest.ReadWrite.All_ |Read and write consent requests |Allows the app to read app consent requests and approvals, and deny or approve those requests without a signed-in user. |Yes |
 
+## Cross-tenant user profile sharing permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_CrossTenantUserProfileSharing.Read_ |Read current user's cross-tenant information sharing details  |Allows the app to list and query the logged-in user's profile information sharing. |No | Yes |
+|_CrossTenantUserProfileSharing.Read.All_ |Read all cross-tenant user profile data sharing details  |Allows the app to list and query all the user profile information sharing from and to the current tenant. |No | Yes |
+|_CrossTenantUserProfileSharing.ReadWrite_ |Remove external user's data from the current tenant. |Allows an application to delete an user's data from an external tenant, when performed by the owner of that data. |No |No|
+|_CrossTenantUserProfileSharing.ReadWrite.All_ |Remove user's data from an external tenant. |Allows the app to create, read, update, and delete user contacts. |Yes |No|
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_CrossTenantUserProfileSharing.Read.All_ |Read all cross-tenant user profile data sharing details  |Allows the app to list and query all the user profile information sharing from and to the current tenant. |No | Yes |
+|_CrossTenantUserProfileSharing.ReadWrite.All_ |Remove user's data from an external tenant. |Allows the app to create, read, update, and delete user contacts. |Yes |No|
+
+### Example usage
+
+#### Delegated
+
+* _CrossTenantUserProfileSharing.Read_: Read current user's cross-tenant information sharing details (`GET /directory/outboundSharedUserProfile/{id}`).
+* _CrossTenantUserProfileSharing.ReadWrite_: Remove current user's data from an external tenant (`POST /directory/crossTenantUserProfileSharing/{id}/removePersonalData`).
+* _CrossTenantUserProfileSharing.Read.All_: Read all external user's data from the current tenant (`POST /directory/inboundSharedUserProfiles`).
+
+#### Application
+
+* _CrossTenantUserProfileSharing.Read.All_: Read all external user's data from the current tenant (`POST /directory/inboundSharedUserProfiles`).
+* _CrossTenantUserProfileSharing.ReadWrite.All_: Remove external user's data from the current tenant (`POST /directory/inboundSharedUserProfiles/{id}/removePersonalData`).
+* _CrossTenantUserProfileSharing.Read.All_: Export external user's data from the current tenant (`POST /directory/inboundSharedUserProfiles{id}/exportPersonalData`).
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
 ## Contacts permissions
 
 #### Delegated permissions
