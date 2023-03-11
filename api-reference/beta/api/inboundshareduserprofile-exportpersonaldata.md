@@ -88,7 +88,7 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 HTTP/1.1 202 Accepted
 
 {
-    "Location": "https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f"
+    "Location": "https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f",
     "Retry-After": 60
 }
 ```
