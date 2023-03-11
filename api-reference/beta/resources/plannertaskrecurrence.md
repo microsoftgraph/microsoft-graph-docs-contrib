@@ -19,6 +19,8 @@ Given a non-recurring task, a client can make it into a recurring task by specif
 
 When a _task with active recurrence_ is marked complete (**percentComplete** set to `100`), a new task is created to continue the series. Alternately, if a _task with active recurrence_ is deleted without cancelling recurrence, a new task is also created to continue the series. If the series should be discontinued, the **schedule** should first be set to `null`, then the task can be deleted and recurrence stops.
 
+Further information and examples are described in [Planner Task Recurrence Concepts](../../../concepts/planner-task-recurrence-concept.md).
+
 ## Properties
 
 |Property|Type|Description|
@@ -45,23 +47,11 @@ The following is an example JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerTaskRecurrence",
-  "seriesId": "qOqWwPLt4U-LIsWV5ByUuA",
-  "occurrenceId": 2,
-  "previousInSeriesTaskId": "2C-0IBG4kEqTv29ghsqlpf8ACJq_",
-  "nextInSeriesTaskId": null,
-  "schedule": {
-    "pattern": {
-      "type": "daily",
-      "interval": 33,
-      "firstDayOfWeek": "sunday",
-      "dayOfMonth": 0,
-      "daysOfWeek": [],
-      "index": "first",
-      "month": 0
-    },
-    "patternStartDateTime": "2022-02-22T02:10:33Z",
-    "nextOccurrenceDateTime": "2022-04-29T02:10:33Z"
-  },
-  "recurrenceStartDateTime": "2022-02-22T02:10:33Z"
+  "seriesId": "String",
+  "occurrenceId": 1024,
+  "previousInSeriesTaskId": "String",
+  "nextInSeriesTaskId": "String",
+  "schedule": { "@odata.type": "#microsoft.graph.plannerRecurrenceSchedule" },
+  "recurrenceStartDateTime": "String (timestamp)"
 }
 ```

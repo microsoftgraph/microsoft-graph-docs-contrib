@@ -15,13 +15,7 @@ Namespace: microsoft.graph
 
 Represents the schedule for recurrence for a [Planner task](plannertask.md) in Microsoft 365. Currently, **plannerRecurrenceSchedule** includes a recurrence pattern definition (**pattern**), a start date for that pattern (**patternStartDateTime**), and a system-generated property that indicates the next occurrence date (**nextOccurrenceDateTime**). To define a recurrence schedule, clients must specify the **pattern** and **patternStartDateTime**; the service calculates the **nextOccurrenceDateTime**.
 
-The **pattern** is a [recurrencePattern](../resources/recurrencepattern.md). For details, see [Planner-specific notes about the recurrencePattern](#planner-specific-notes-about-the-recurrencepattern).
-
-The **patternStartDateTime** indicates the starting date and time of the series, as a **DateTimeOffset**. A non-null value must be assigned to **patternStartDateTime** whenever the **pattern** property is used; this is currently the only way to define recurrence. Clients should generally reassign this value when they make a change to the **recurrence.schedule.pattern** to indicate the starting date of the new pattern, however if clients don't include a value then the service continues the series using a sane default value based on the schedule (see notes and clarifications below).
-
-The **nextOccurrenceDateTime** is a read-only system-generated field. It provides the service-calculated date that will be used as the **dueDateTime** for the next [plannerTask](plannertask.md) in the series. The **nextOccurrenceDateTime** is calculated from the **pattern** along with either the **patternStartDateTime** or an _anchor value_ that tracks the originally scheduled date of the given task.
-
-Planner doesn't utilize the **recurrenceRange** resource type at this time.
+Further information and examples are described in [Planner Task Recurrence Concepts](../../../concepts/planner-task-recurrence-concept.md).
 
 ## Properties
 
@@ -46,55 +40,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerRecurrenceSchedule",
-  "pattern": {
-    "type": "weekly",
-    "interval": 1,
-    "firstDayOfWeek": "sunday",
-    "dayOfMonth": 0,
-    "daysOfWeek": ["monday","wednesday","friday"],
-    "index": "first",
-    "month": 0
-  },
-  "patternStartDateTime": "2022-02-22T02:10:33Z",
-  "nextOccurrenceDateTime": "2022-04-29T02:10:33Z"
+  "pattern": { "@odata.type": "#microsoft.graph.recurrencePattern" },
+  "patternStartDateTime": "String (timestamp)",
+  "nextOccurrenceDateTime": "String (timestamp)"
 }
 ```
-
-## Planner-specific notes about the recurrencePattern
-
-Planner-specific restrictions for **recurrencePattern**:
-
-- `relativeMonthly` and `relativeYearly` patterns may not specify more than one day for **daysOfWeek**.
-- For `weekly` patterns, if **daysOfWeek** contains more than one day, the **interval** must be `1`.
-
-Clarifications about **recurrencePattern**:
-
-- Whenever any property within a **recurrencePattern** is changed, all relevant pattern properties must be specified. For example, a pattern with **type** as `daily` and **interval** as `1` cannot be patched with only **interval** as `2`; otherwise, the service returns a `400 Bad Request` response code. A **type** as `daily` must also be specified, even though the type is not changing. This is normal behavior for the **recurrencePattern** resource type, though some other properties within Planner work differently.
-- Unused properties are automatically assigned a default value. For example, the **month** property is only used for yearly patterns, with valid values from `1` to `12`. However, `daily`, `weekly`, and `monthly` patterns have `0` assigned to the **month** property. Enums properties, **firstDayOfWeek** and **index**, get default values that correspond to the first enum value: `sunday` and `first`, respectively.
-- For `absoluteMonthly` patterns, if the selected **dayOfMonth** doesn't exist in a particular month, the _last_ day of the month will be substituted.
-  - Example: if **dayOfMonth** is `31` and we recur for April, the selected date is April 30.
-  - Example: if **dayOfMonth** is `29`, `30`, or `31` and we recur for February, the selected date is the _last_ day of February.
-- Similarly, for `absoluteYearly` patterns with a **month** of `2` (February), a **dayOfMonth** of `29` is replaced with `28` in non-leap years.
-- The **firstDayOfWeek** property is used to distinguish between what is considered _this week_ and what is considered _next week_. This comes into play when you _change_ a weekly pattern. The _next_ task is scheduled for _next_ week, and **firstDayOfWeek** determines when _next_ week begins. The following is an example with one _Given_ and three alternate _When/Then_ results.
-  - Given that the existing **pattern** is weekly every Wednesday with **firstDayOfWeek** as `Sunday`. The **dueDateTime** is Wednesday 2/2.
-    - When the **pattern** is changed to be every Tuesday, then the **nextOccurrenceDateTime** is Tuesday 2/8.
-    - When the **pattern** is changed to be every Thursday, then the **nextOccurrenceDateTime** is Thursday 2/10.
-    - When the **pattern** is changed to be every Thursday and **firstDayOfWeek** is changed to `Thursday`, then **nextOccurrenceDateTime** is Thursday 2/3.
-  - Note particularly the difference of Thursday 2/10 vs. Thursday 2/3. When **firstDayOfWeek** is `Thursday`, Thursday 2/3 is _not in the same week_ as Wednesday 2/2 because a new week starts on Thursday; whereas if the **firstDayOfWeek** isn't `Thursday`, then Thursday 2/3 is in the _same week_ as Wednesday 2/2 and Thursday 2/10 is in the _next week_.
-  - If a client reassigns the **patternStartDateTime** when they change the pattern, then the **firstDayOfWeek** doesn't come into play.
-
-## Notes about the schedule and due date
-
-The **dueDateTime** may be edited by clients to have a different value, without affecting the schedule and the **nextOccurrenceDateTime**. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series appears as originally scheduled, unless the **pattern** and/or the **patternStartDateTime** are explicitly updated. Hence, postponing the due date doesn't result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting occurs. Knowing _today's date_ is relevant for calculating the next meeting or event date, but it is not relevant for calculating the next task due date.
-
-The following is a single _Given_ with three distinct _When/Then_ possibilities, to illustrate:
-
-- Given a weekly Wednesday task was created with due date 2/2; its **nextOccurrenceDateTime** is 2/9. The task is overdue, and the due date has been changed to 2/16, although this doesn't affect the **nextOccurrenceDateTime**. We fork to three distinct and mutually exclusive possibilities:
-  - When the overdue task is marked complete, then the next task in the series is created with a due date 2/9 (not 2/23). Since the recurrence schedule wasn't changed, 2/9 follows the original 2/2 due date.
-  - When the **pattern** of the overdue task is changed to weekly on Thursdays, then **nextOccurrenceDateTime** is changed to 2/10.
-  - When the **patternStartDateTime** of the overdue task is changed to 2/9, then the **nextOccurrenceDateTime** is changed to 2/16 (the next date after the pattern start date, according to the pattern).
-
-Things to note from the above:
-
-- The default behavior, when **patternStartDateTime** isn't explicitly reassigned, is that the schedule continues based on the _original_ due date. In this case, 2/2 rather than the current due date 2/16.
-- If the **patternStartDateTime** is changed then the **nextOccurrenceDateTime** is recalculated using that new start date.
