@@ -92,7 +92,7 @@ After you associate your application registration and subscription, your applica
 
 You can monitor cost and usage of metered APIs and services in Microsoft Graph through [Azure Cost Management + Billing](/azure/cost-management-billing/). This provides access to costs within the subscription, which can be split based on application, calling tenant, or meter.
 
-## Bills for metered Microsoft 365 API and service usage
+## Bills for metered API and service usage
 
 After the subscription billing cycle runs, typically on the 5th day of the month, a subscription owner or users with role-based permissions can download an invoice. For details, see [View and download your Azure invoice](/azure/cost-management-billing/understand/download-azure-invoice).
 
