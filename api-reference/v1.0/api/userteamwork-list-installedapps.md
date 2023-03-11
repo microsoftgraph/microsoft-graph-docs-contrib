@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).
 
 > [!NOTE]
-> The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
+> - The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
+> - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
 ## Permissions
 
@@ -96,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -163,7 +163,6 @@ GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -255,7 +254,6 @@ GET https://graph.microsoft.com/v1.0/users/97a5a533-833d-494b-b543-c0afe026cb96/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

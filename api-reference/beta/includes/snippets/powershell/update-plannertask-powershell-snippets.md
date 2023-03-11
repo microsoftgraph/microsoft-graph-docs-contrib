@@ -19,6 +19,7 @@ $params = @{
 	}
 }
 
-Update-MgPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params
+Update-MgPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=" 
+
 
 ```

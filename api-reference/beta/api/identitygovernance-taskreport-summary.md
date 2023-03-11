@@ -1,5 +1,5 @@
 ---
-title: "taskReport: summary (of a lifecycle workflow)"
+title: "taskReport: summary"
 description: "A summary of task processing results for a specified time period. Since the amount of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# taskReport: summary (of a lifecycle workflow)
+# taskReport: summary
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -111,7 +111,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

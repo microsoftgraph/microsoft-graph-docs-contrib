@@ -57,12 +57,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/$ref
+DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/$ref
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-learningprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-learningprovider-javascript-snippets.md)]
@@ -73,7 +69,6 @@ DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d7
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 ### Response

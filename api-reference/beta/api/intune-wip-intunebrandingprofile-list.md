@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2461
+Content-Length: 2508
 
 {
   "value": [
@@ -116,6 +116,7 @@ Content-Length: 2461
           "action": "remove"
         }
       ],
+      "disableDeviceCategorySelection": true,
       "showAzureADEnterpriseApps": true,
       "showOfficeWebApps": true,
       "showConfigurationManagerApps": true,

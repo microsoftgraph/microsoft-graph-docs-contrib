@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantIds = new List<String>()
+var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.TenantTags.Item.ManagedTenantsAssignTag.AssignTagPostRequestBody
 {
-	"String"
+	TenantIds = new List<string>
+	{
+		"String",
+	},
 };
+var result = await graphClient.TenantRelationships.ManagedTenants.TenantTags["{tenantTag-id}"].ManagedTenantsAssignTag.PostAsync(requestBody);
 
-await graphClient.TenantRelationships.ManagedTenants.TenantTags["{managedTenants.tenantTag-id}"]
-	.AssignTag(tenantIds)
-	.Request()
-	.PostAsync();
 
 ```
