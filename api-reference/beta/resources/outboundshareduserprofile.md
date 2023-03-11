@@ -28,7 +28,7 @@ Represents an Azure AD user that has shared profile data with an external Azure 
 |Property|Type|Description|
 |:---|:---|:---|
 | userId | String | The object id of the external user. Read-only. |
-| tenants | [tenantReference](../resource/tenantreference.md) collection | The collection of external Azure AD tenants that the user has shared profile data with. Read-only. |
+| tenants | [tenantReference](../resources/tenantreference.md) collection | The collection of external Azure AD tenants that the user has shared profile data with. Read-only. |
 
 ## Relationships
 
