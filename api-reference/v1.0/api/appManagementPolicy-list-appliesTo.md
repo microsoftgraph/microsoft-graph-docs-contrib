@@ -71,7 +71,7 @@ The following is an example of the request.
   "name": "list_appManagementPolicyAppliesTo"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}/appliesTo
 ```
 
@@ -117,7 +117,7 @@ The following is an example of the request using $select query option.
   "name": "list_appManagementPolicyAppliesTo_select"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}/appliesTo?$select=id,appId,displayName,createdDateTime
 ```
 

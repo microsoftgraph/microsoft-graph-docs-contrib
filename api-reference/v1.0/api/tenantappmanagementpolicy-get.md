@@ -17,7 +17,7 @@ Read the properties of a [tenantAppManagementPolicy](../resources/tenantAppManag
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                |
+| Permission type                        | Permissions (from least to most privileged)                |
 | :------------------------------------- | :--------------------------------------------------------- |
 | Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
@@ -52,14 +52,14 @@ If successful, this method returns a `200 OK` response code and the requested [d
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_tenantAppManagementPolicy"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
+GET https://graph.microsoft.com/v1.0/policies/defaultAppManagementPolicy
 ```
 
 ### Response
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/defaultAppManagementPolicy/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/defaultAppManagementPolicy/$entity",
     "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/defaultAppManagementPolicy/00000000-0000-0000-0000-000000000000",
     "id": "00000000-0000-0000-0000-000000000000",
     "displayName": "Default app management tenant policy",

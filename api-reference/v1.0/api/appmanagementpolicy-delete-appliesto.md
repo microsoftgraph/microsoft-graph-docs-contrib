@@ -17,10 +17,10 @@ Remove an [appManagementPolicy](../resources/appManagementPolicy.md) policy obje
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                |
-| :------------------------------------- | :--------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                        |
+| :------------------------------------- | :----------------------------------------------------------------- |
 | Delegated (work or school account)     | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                             |
+| Delegated (personal Microsoft account) | Not supported.                                                     |
 | Application                            | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
@@ -34,7 +34,7 @@ DELETE /applications/{id}/appManagementPolicies/$ref
 ## Request headers
 
 | Name          | Description                 |
-|:--------------|:----------------------------|
+| :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
@@ -61,7 +61,7 @@ The following is an example of the request to remove an appManagementPolicy to a
   "name": "remove_appliesTo"
 }-->
 
-```msgraph-interactive
+```http
 DELETE https://graph.microsoft.com/v1.0/applications/{id}/appManagementPolicies/$ref
 Content-type: application/json
 

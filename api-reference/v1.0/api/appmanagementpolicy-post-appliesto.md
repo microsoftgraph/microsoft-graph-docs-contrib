@@ -60,7 +60,7 @@ The following is an example of the request to assign an appManagementPolicy to a
   "name": "assign_appliesTo"
 }-->
 
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/applications/{id}/appManagementPolicies/$ref
 Content-type: application/json
 

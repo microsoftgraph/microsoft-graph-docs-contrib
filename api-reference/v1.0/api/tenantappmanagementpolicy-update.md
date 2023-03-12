@@ -74,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
+PATCH https://graph.microsoft.com/v1.0/policies/defaultAppManagementPolicy
 Content-Type: application/json
 
 {
