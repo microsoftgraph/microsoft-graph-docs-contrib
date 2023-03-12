@@ -1,6 +1,6 @@
 ---
 title: "List outboundSharedUserProfiles"
-description: "Read the properties of an outboundSharedUserProfile."
+description: "Retrieve the properties of all outboundSharedUserProfiles."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
