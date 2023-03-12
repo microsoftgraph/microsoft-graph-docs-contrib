@@ -1,0 +1,95 @@
+---
+title: "learningCourseActivity resource type"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+doc_type: resourcePageType
+---
+
+# learningCourseActivity resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the metadata of learner course activities for employee learning.
+
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Create learningCourseActivity](../api/employeeexperienceuser-post-learningcourseactivities.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Create a new [learningCourseActivity](../resources/learningcourseactivity.md) object.|
+|[Get learningCourseActivity](../api/learningcourseactivity-get.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
+|[Get learningCourseActivity By ExternalCourseActivityId](../api/learningcourseactivity-getByExternalCourseActivityId.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
+|[Update learningCourseActivity](../api/learningcourseactivity-update.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Update the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
+|[Delete learningCourseActivity](../api/employeeexperienceuser-delete-learningcourseactivities.md)|None|Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
+|[List learningCourseActivity for user](../api/employeeexperienceuser-list-learningcourseactivities.md)|Collection of [learningCourseActivity](../resources/learningcourseactivity.md) object|Retrieve all courses for a user.|
+|[Get learningCourseActivity course details for a user](../api/employeeexperience-get)|[learningCourseActivity](../resources/learningcourseactivity.md)|Retrives a course details for a user.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|@odata.type|String|**Type to determine if it’s a LearningAssignment or SelfInitiated course**
+|assignmentType|AssignmentType (Required/Recommended)|**AssignmentType for the course activity (required/recommended)**
+|registrationId|String|**Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s**
+|startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner**
+|assignerUserId|String|**The user id of the assigner**
+|dueDateTime|DateTimtTimeZone|**Due date for the course activity**
+|assignedDateTime|DateTimeOffset|**Date time value when the assignment was completed**
+|completedDateTime|DateTimeOffset|**Date time value when the assignment was completed**|
+|completionPercentage|Int32|**Percenatge completion value of course**|
+|externalcourseActivityId|String|**A course activity id generated at provider**|
+|Id|String|**The resultant id of this request can be used to make further interactions to the course activity API’s**
+|learnerUserId|String|**The user id of the learner**|
+|learningContentId|String|**The Id of learning content received when learning content is created on Viva Learning using learningContent graph API’s**|
+|learningProviderId|String|**he registration Id of the provider**|
+|status|courseStatus|**Represents status of the course activity. Values are (notStarted/inProgress/completed)**|
+
+
+## Error Conditions and Messages
+|Scenario|Method|HTTP Code|Code|Message|Details|
+|:---|:---|:---|:---|:---|:---|
+|Method not supported for entity|GET, DELETE, PATCH|405|MethodNotAllowed|**This method is not supported for this entity type. Reference the Microsoft Graph documentation for the methods applicable to this entity.**|
+|User doesn't have appropriate permission scope|GET, DELETE, PATCH|403|Forbidden|**Your account does not have access to this report or data. Please contact your global administrator to request access.** 
+|Forbidden|POST, GET, DELETE, PATCH|403|Forbidden|**You do not have a service plan adequate for this request.** 
+|Bad Request|POST, DELETE, PATCH, GET|400|BadRequest|**This provider isn't enabled for the given tenant.** 
+|Bad Request|POST, DELETE, PATCH, GET|400|BadRequest|**There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.**
+|Bad Request|PATCH|400|BadRequest|**Required fields are missing**|[{"code": "badRequest","message": "Input Field {fieldName} is required"}]|
+|Bad Request|PATCH|400|BadRequest|**Input fields are invalid** |[{"code": "badRequest","message": "Input field {fieldName} is invalid"}]|
+|Multiple Field validations failed|PATCH, POST|400|BadRequest|**BadRequest**|[{"code": "badRequest","message": "Input field {fieldName} shouldn't be empty"},{"code": "badRequest","message": "Input Field {fieldName} is required"}, {"code": "badRequest","message": "Input field {fieldName} length exceeded than {expectedLength}"}]|
+|Bad Request|DELETE, GET, PATCH|404|NotFound|**The requested assignment {id} doesn’t exist."**
+|Internal Server Error|POST, GET, DELETE, PATCH|500|InternalServerError|**Internal Server Error.** 
+|Request throttled|POST, GET, DELETE, PATCH|429|Too Many Requests|**[{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}]**| 
+|Service Unavailable|POST, GET, DELETE, PATCH|503|Service Unavailable|**[{"code": "ServiceUnavailable","message": "Retry after {noOfMinutes} minutes"}]**|
+|Forbidden|POST, PATCH|403|Forbidden|**The provider is not valid to create course activity for the given learning content**|When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created|
+|Forbidden|POST, PATCH|403|Forbidden|**User License is not valid to perform the operation**|When the user for which Assignment is being created does not have a premium license|
+
+
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.learningCourseActivity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.learningCourseActivity",
+  "externalcourseActivityId": "String",
+  "learningProviderId": "String",
+  "learningContentId": "String",
+  "learnerUserId": "String",
+  "status": "String",
+  "completedDateTime": "String (timestamp)",
+  "completionPercentage": "Integer"
+}
+```
+
