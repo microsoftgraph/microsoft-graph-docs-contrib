@@ -28,10 +28,6 @@ A learning course activity of type 'Assignment' can be created by setting '@odat
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 POST /employeeExperience/learningProviders/{registrationId}/learningCourseActivities
 ```
@@ -140,10 +136,6 @@ A learning course activity of type 'Self-initiated' can be created by setting '@
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 POST /employeeExperience/learningProviders/{registrationId}/learningCourseActivities
 ```

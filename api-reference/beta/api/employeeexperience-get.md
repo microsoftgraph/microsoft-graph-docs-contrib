@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Retrieves a particular course details for a user using courseActivityId
+Retrieves course activity details for a user using courseActivityId.
 
 Read the properties and relationships of an [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
@@ -26,19 +26,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Request for a provider to retrieve course activity details of a given user:
+
 ``` http
 GET users/{user-id}/employeeExperience/learningCourseActivities/{id}
-This request is used by provider to retrive a particular course details for a user
 ```
 or
 
+Request for the signed-in user to retrieve course activity details:
+
 ``` http
 GET me/employeeExperience/learningCourseActivities/{id}
-This request is used if user is making the call for himself to retrive a particular course details
 ```
 
 ## Optional query parameters
@@ -60,32 +58,24 @@ If successful, this method returns a 200 OK response code and a [learningCourseA
 
 ### Request
 The following is an example of a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_employeeexperience"
-}
--->
+
+Request for a provider to retrieve course activity details of a given user:
+
 ``` http
 GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/learningCourseActivities/{id}
-This request is used by provider to retrive a particular course details for a user
 ```
 or
 
+Request for the signed-in user to retrieve course activity details:
+
 ``` http
 GET https://graph.microsoft.com/beta/me/employeeExperience/learningCourseActivities/{id}
-This request is used if user is making the call for himself to retrive a particular course details
 ```
 
 
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.vivaLearning.employeeExperience"
-}
--->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

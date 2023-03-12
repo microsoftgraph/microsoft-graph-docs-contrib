@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |registrationId|String|**Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s**
 |startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner**
 |assignerUserId|String|**The user id of the assigner**
-|dueDateTime|DateTimtTimeZone|**Due date for the course activity**
+|dueDateTime|DateTimeTimeZone|**Due date for the course activity**
 |assignedDateTime|DateTimeOffset|**Date time value when the assignment was completed**
 |completedDateTime|DateTimeOffset|**Date time value when the assignment was completed**|
 |completionPercentage|Int32|**Percenatge completion value of course**|

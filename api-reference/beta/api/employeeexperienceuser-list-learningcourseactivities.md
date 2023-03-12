@@ -29,15 +29,17 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+Request for the signed-in user to retrieve all the course activities belonging to the user:
+
 ``` http
 GET me/employeeExperience/learningCourseActivities
-This request is used if the user is making the call for himself to retrive all the courses. It’s a User token flow
 ```
 or
 
+Request for a provider to retrieve all the course activities of a given user:
+
 ``` http
 GET users/{user-id}/employeeExperience/learningCourseActivities
-This request can be used by provider to retrive all the courses for a user
 ```
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -63,25 +65,22 @@ The following is an example of a request.
   "name": "list_learningcourseactivity"
 }
 -->
+Request for a provider to retrieve all the course activities of a given user:
+
 ``` http
 GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/learningCourseActivities
-This request can be ussed by provider to retrive all the courses for a user
 ```
 or
 
+Request for the signed-in user to retrieve all the course activities belonging to the user:
+
 ``` http
 GET https://graph.microsoft.com/beta/me/employeeExperience/learningCourseActivities
-This request is used if the user is making the call for himself to retrive all the courses
 ```
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.vivaLearning.learningCourseActivity)"
-}
--->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

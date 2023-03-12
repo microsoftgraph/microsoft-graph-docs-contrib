@@ -52,11 +52,7 @@ If successful, this method returns a `200 OK` response code and a [learningAssig
 
 ### Request
 The following is an example of a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_learningassignment"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/v1.0/learningAssignment
 ```
@@ -65,12 +61,7 @@ GET https://graph.microsoft.com/v1.0/learningAssignment
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.vivaLearning.learningAssignment"
-}
--->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
