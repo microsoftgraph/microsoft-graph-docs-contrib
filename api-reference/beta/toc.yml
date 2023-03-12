@@ -12677,35 +12677,35 @@ items:
           - name: Application authentication method policy
             items:
             - name: Overview
-              href: resources/applicationAuthenticationMethodPolicy.md
+              href: resources/applicationauthenticationmethodpolicy.md
             - name: Tenant app management policy
               items:
               - name: Tenant app management policy
-                href: resources/tenantAppManagementPolicy.md
+                href: resources/tenantappmanagementpolicy.md
               - name: Get
-                href: api/tenantAppManagementPolicy-get.md
+                href: api/tenantappmanagementpolicy-get.md
               - name: Update
-                href: api/tenantAppManagementPolicy-update.md
+                href: api/tenantappmanagementpolicy-update.md
             - name: App management policy
               items:
               - name: App management policy
-                href: resources/appManagementPolicy.md
+                href: resources/appmanagementpolicy.md
               - name: List
-                href: api/appManagementPolicy-list.md
+                href: api/appmanagementpolicy-list.md
               - name: Get
-                href: api/appManagementPolicy-get.md
+                href: api/appmanagementpolicy-get.md
               - name: Create
-                href: api/appManagementPolicy-post.md
+                href: api/appmanagementpolicy-post.md
               - name: Update
-                href: api/appManagementPolicy-update.md
+                href: api/appmanagementpolicy-update.md
               - name: Delete
-                href: api/appManagementPolicy-delete.md
+                href: api/appmanagementpolicy-delete.md
               - name: Create appliesTo
-                href: api/appManagementPolicy-post-appliesTo.md
+                href: api/appmanagementpolicy-post-appliesto.md
               - name: List appliesTo
-                href: api/appManagementPolicy-list-appliesTo.md
+                href: api/appmanagementpolicy-list-appliesto.md
               - name: Delete appliesTo
-                href: api/appmanagementpolicy-delete-appliesTo.md
+                href: api/appmanagementpolicy-delete-appliesto.md
           - name: Authentication events policy
             items:
             - name: Authentication events policy
