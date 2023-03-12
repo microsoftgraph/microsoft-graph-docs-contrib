@@ -164,6 +164,7 @@ You can specify the following properties when creating a **learningCourseActivit
 |completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
 |externalcourseActivityId|String|A course activity id generated at provider (Optional)|
 |Id|String|The resultant id of this request can be used to make further interactions to the course activity API’s|
+|completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive)|
 
 ## Response
 
