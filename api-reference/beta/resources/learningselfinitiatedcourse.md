@@ -1,9 +1,9 @@
 ---
 title: "learningSelfInitiatedCourse resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents self initiated learner course record."
+author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "employee-learning"
 doc_type: resourcePageType
 ---
 
@@ -11,10 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
+Represents the metadata of self-initiated course activity record of learner.
 
 Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 

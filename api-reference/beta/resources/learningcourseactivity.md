@@ -1,9 +1,9 @@
 ---
 title: "learningCourseActivity resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents learner course activity entity type - Assigned to Self initiated record."
+author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "employee-learning"
 doc_type: resourcePageType
 ---
 
