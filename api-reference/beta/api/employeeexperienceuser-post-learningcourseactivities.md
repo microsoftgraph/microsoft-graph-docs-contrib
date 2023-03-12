@@ -94,6 +94,7 @@ Content-Type: application/json
   "status": "NotStarted",
   "completedDateTime": null,
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "completionPercentage":20
 }
 ```
 
@@ -127,7 +128,8 @@ Content-Type: application/json
   "status": "NotStarted",
   "completedDateTime": null,
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002:749c8786-99bb-4b3b-8d5d-586428f6aaa3"
+  "id": "7ba2228a-e020-11ec-9d64-0242ac120002:749c8786-99bb-4b3b-8d5d-586428f6aaa3",
+  "completionPercentage":20
 }
 ```
 ## Create self-initiated learning course activity 
@@ -184,6 +186,7 @@ Content-Type: application/json
   "completedDateTime": null,
   "startedDateTime": "2021-05-21T22:57:17+00:00",
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "completionPercentage":20
 }
 ```
 
@@ -206,5 +209,6 @@ Content-Type: application/json
   "startedDateTime": "2021-05-21T22:57:17+00:00",
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "id": "7ba2228a-e020-11ec-9d64-0242ac120002:749c8786-99bb-4b3b-8d5d-586428f6aaa3",
+  "completionPercentage":20
 }
 ```
