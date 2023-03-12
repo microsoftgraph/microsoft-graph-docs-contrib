@@ -48,9 +48,9 @@ Use the employee learning APIs to do the following:
    - [Get details of learning course activity ](../api/learningcourseactivity-get.md) by using **learningCourseActivityId**.
    - [Get details of learning course activity ](../api/learningcourseactivity-getByExternalCourseActivityId.md) by using **externalCourseActivityId**.
    - [Update details of learning course activity ](../api/learningcourseactivity-update.md) by using **learningCourseActivityId**.
-   - [Delete learning course activity](../api/employeeexperienceuser-delete-learningcourseactivities.md)
-   - [Get the list of the courses for a user](../api/employeeexperienceuser-list-learningcourseactivities.md)
-   - [Get details of a course for a user](../api/employeeexperience-get.md) by using **learningCourseActivityId**
+   - [Delete learning course activity](../api/learningcourseactivity-delete.md)
+   - [Get the list of the courses for a user](../api/learningcourseactivity-list.md)
+   - [Get details of a course for a user](../api/learningcourseactivity-details.md) by using **learningCourseActivityId**
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

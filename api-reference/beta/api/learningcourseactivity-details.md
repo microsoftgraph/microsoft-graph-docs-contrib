@@ -1,9 +1,9 @@
 ---
 title: "Get employeeExperience"
 description: "Read the properties and relationships of an employeeExperience object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 
@@ -20,20 +20,20 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**LearningAssignedCourse.Read.All,LearningSelfInitiatedCourse.Read.All**|
+|Delegated (work or school account)|**LearningAssignedCourse.Read,LearningSelfInitiatedCourse.Read**|
 |Delegated (personal Microsoft account)|**Not supported**|
-|Application|**Not supported**|
+|Application|**LearningAssignedCourse.Read.All,LearningSelfInitiatedCourse.Read.All**|
 
 ## HTTP request
 
-Request for a provider to retrieve course activity details of a given user:
+Request for a provider to retrieve course activity details of a given user. Appropriate Application permission of course activity type is required to access the api.
 
 ``` http
 GET users/{user-id}/employeeExperience/learningCourseActivities/{id}
 ```
 or
 
-Request for the signed-in user to retrieve course activity details:
+Request for the signed-in user to retrieve course activity details. Appropriate Delegated permission of course activity type is required to access the api.
 
 ``` http
 GET me/employeeExperience/learningCourseActivities/{id}

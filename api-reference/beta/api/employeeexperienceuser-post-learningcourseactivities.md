@@ -1,9 +1,9 @@
 ---
 title: "Create learningCourseActivity"
 description: "Create a new learningCourseActivity object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 
