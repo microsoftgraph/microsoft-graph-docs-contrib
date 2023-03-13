@@ -1,6 +1,6 @@
 ---
 title: "smsAuthenticationMethodConfiguration resource type"
-description: "Represents a Text Message authentication methods policy."
+description: "Represents a text message authentication methods policy."
 author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
