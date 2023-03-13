@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Represents this tenant's email OTP authentication methods policy. Authentication methods policies define configuration settings and users or groups who are enabled to use the authentication method. Email OTP may be used by the tenant's cloud-native users for self-service password reset, or by external users for authentication during invitation redemption and self-service sign-up for specific apps in user flows.
 
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
+
 ## Methods
 
 |Method|Return type|Description|

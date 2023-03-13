@@ -101,11 +101,10 @@ Content-Type: application/json
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration"
+  "truncated": true
 }
 -->
 ``` http
