@@ -1,7 +1,7 @@
 ---
 title: "List authenticationStrengthPolicies"
 description: "Get a list of the authenticationStrengthPolicy objects and their properties."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 The **authenticationStrengthRoot** resource is the entry point for the authentication strengths object model.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 
 None.
@@ -24,7 +22,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationCombinations|authenticationMethodModes collection|A collection of all valid authentication method combinations in the system.|
-|id|String|A system-generated identifier. Inherited from [entity](../resources/entity.md).|
+|id|String|A system-generated identifier.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -38,7 +36,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationStrengthRoot",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

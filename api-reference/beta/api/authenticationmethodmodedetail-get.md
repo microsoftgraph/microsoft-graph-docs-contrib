@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationMethodModeDetail"
 description: "Read the properties and relationships of an authenticationMethodModeDetail object."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

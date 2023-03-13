@@ -1,7 +1,7 @@
 ---
 title: "Create authenticationStrengthPolicy"
 description: "Create a new custom authenticationStrengthPolicy object."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

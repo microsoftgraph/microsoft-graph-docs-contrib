@@ -31,7 +31,7 @@ A collection of settings that define specific combinations of authentication met
 |createdDateTime|DateTimeOffset|The datetime when this policy was created.|
 |description|String|The human-readable description of this policy.|
 |displayName|String|The human-readable display name of this policy. <br><br>Supports `$filter` (`eq`, `ne`, `not` , and `in`). |
-|id|String|The system-generated identifier for this mode. Inherited from [entity](../resources/entity.md).|
+|id|String|The system-generated identifier for this mode.|
 |modifiedDateTime|DateTimeOffset|The datetime when this policy was last modified.|
 |policyType|authenticationStrengthPolicyType|A descriptor of whether this policy is built into Azure AD or created by an admin for the tenant. The possible values are: `builtIn`, `custom`, `unknownFutureValue`. <br><br>Supports `$filter` (`eq`, `ne`, `not` , and `in`). |
 |requirementsSatisfied|authenticationStrengthRequirements|A descriptor of whether this authentication strength grants the MFA claim upon successful satisfaction. The possible values are: `none`, `mfa`, `unknownFutureValue`.|
@@ -47,7 +47,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationStrengthPolicy",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

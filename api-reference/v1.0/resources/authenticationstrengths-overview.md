@@ -2,10 +2,10 @@
 title: "Azure AD authentication strengths API overview"
 description: "Authentication strengths are sets of authentication method combinations that determine which methods your users can use to authenticate to access a resource."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "InbarckMS"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 12/10/2022
+ms.date: 03/13/2023
 ---
 
 # Azure AD authentication strengths API overview

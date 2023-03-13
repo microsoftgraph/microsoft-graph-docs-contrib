@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationCombinationConfiguration"
 description: "Read the properties and relationships of an authenticationCombinationConfiguration object."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

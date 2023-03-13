@@ -1,7 +1,7 @@
 ---
 title: "authenticationStrengthPolicy: usage"
 description: "The`usage function allows the caller to see which Conditional Access policies reference a specified authentication strength policy"
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

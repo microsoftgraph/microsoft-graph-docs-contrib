@@ -1,7 +1,7 @@
 ---
 title: "List authenticationMethodModes"
 description: "Get a list of all supported authentication methods, or all supported authentication method combinations."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

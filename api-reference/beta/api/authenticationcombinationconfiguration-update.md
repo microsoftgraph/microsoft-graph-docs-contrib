@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationCombinationConfiguration"
 description: "Update the properties of an authenticationCombinationConfiguration object."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

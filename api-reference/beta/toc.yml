@@ -12327,7 +12327,7 @@ items:
               href: api/authenticationcombinationconfiguration-update.md
             - name: Delete
               href: api/authenticationstrengthpolicy-delete-combinationconfigurations.md
-            - name: Update allowed combinations (deprecated)
+            - name: Update allowed combinations 
               href: api/authenticationstrengthpolicy-updateallowedcombinations.md
           - name: Authentication method modes
             href: resources/authenticationmethodmodedetail.md
