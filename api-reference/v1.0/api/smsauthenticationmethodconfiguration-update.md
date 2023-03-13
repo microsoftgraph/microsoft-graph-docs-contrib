@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object, which represents the Text Message authentication method policy for the Azure AD tenant.
+Update the properties of a [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object, which represents the text message authentication method policy for the Azure AD tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
