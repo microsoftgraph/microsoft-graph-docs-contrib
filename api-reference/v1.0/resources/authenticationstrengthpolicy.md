@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 A collection of settings that define specific combinations of authentication methods and metadata. The authentication strength policy, when applied to a given scenario using Azure AD Conditional Access, defines which authentication methods must be used to authenticate in that scenario. An authentication strength may be built-in or custom (defined by the tenant) and may or may not fulfill the requirements to grant an MFA claim.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -25,8 +23,6 @@ Inherits from [entity](../resources/entity.md).
 |[Delete authenticationStrengthPolicy](../api/authenticationstrengthroot-delete-policies.md)|None|Delete a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't delete a built-in **authenticationStrengthPolicy** object.|
 |[List usage](../api/authenticationstrengthpolicy-usage.md)|[authenticationStrengthUsage](../resources/authenticationstrengthusage.md)|Find all [conditionalAccessPolicies](../resources/conditionalaccesspolicy.md) that reference an authentication strength.|
 |[updateAllowedCombinations](../api/authenticationstrengthpolicy-updateallowedcombinations.md)|[updateAllowedCombinationsResult](../resources/updateallowedcombinationsresult.md)|Update the allowed [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) for a given [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md).|
-|[List combinationConfigurations](../api/authenticationstrengthpolicy-list-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) collection|Get the authenticationCombinationConfiguration resources from the combinationConfigurations navigation property.|
-|[Create authenticationCombinationConfiguration](../api/authenticationstrengthpolicy-post-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Create a new authenticationCombinationConfiguration object.|
 
 ## Properties
 |Property|Type|Description|

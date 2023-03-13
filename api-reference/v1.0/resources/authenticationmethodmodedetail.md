@@ -15,7 +15,6 @@ The details of the **authenticationMethodModes** objects that can be defined for
 
 For more information on authentication methods, see the [authentication methods overview](../resources/authenticationmethods-overview.md)
 
-Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -28,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |authenticationMethod|baseAuthenticationMethod|The authentication method that this mode modifies. The possible values are: `password`, `voice`, `hardwareOath`, `softwareOath`, `sms`, `fido2`, `windowsHelloForBusiness`, `microsoftAuthenticator`, `temporaryAccessPass`, `email`, `x509Certificate`, `federation`, `unknownFutureValue`.|
 |displayName|String|The display name of this mode|
-|id|String|The system-generated identifier for this mode. Inherited from [entity](../resources/entity.md).|
+|id|String|The system-generated identifier for this mode. |
 
 ## Relationships
 None.
@@ -39,7 +38,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationMethodModeDetail",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

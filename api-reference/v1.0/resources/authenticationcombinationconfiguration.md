@@ -11,11 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An authentication combination configuration sets restrictions on specific types, modes, versions, etc. of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md).
-
+An authentication combination configuration sets restrictions on specific types, modes, and versions of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md).
 This is an abstract type. In use, [fido2combinationConfigurations](fido2combinationconfiguration.md) may be created and managed as described below. 
-
-Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -30,18 +27,16 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object that's defined for the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for fido2combinationConfigurations is `"fido2"`.|
-|id|String|A unique system-generated identifier. Inherited from [entity](../resources/entity.md).|
+|id|String|A unique system-generated identifier.|
 
 ## Relationships
-None.
-
+|id|String|A unique system-generated identifier.|
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationCombinationConfiguration",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
