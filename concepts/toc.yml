@@ -472,10 +472,10 @@ items:
                   - name: Rules for Azure AD roles
                     href: identity-governance-pim-rules-overview.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Customize and update rules for Azure AD roles
+                  - name: Customize and update rules
                     href: how-to-pim-update-rules.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Assign Azure AD roles with PIM
+                  - name: Assign Azure AD roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
       - name: Mail

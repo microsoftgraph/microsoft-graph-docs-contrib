@@ -45,12 +45,12 @@ The following image shows the activation role settings on the Azure portal, mapp
 
 :::image type="content" source="images/identity-governance-pim-ux-role-rules-screenshots/pim-ux-role-rule.activation.png" alt-text="PIM role activation settings on the Azure portal.":::
 
-| Number | Azure portal UX Description                                                                                                                              | Microsoft Graph Rule ID / Derived resource type                                                   | Enforced for caller |
-|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
-| 1      | Activation maximum duration (hours)                                                                                                                      | `Expiration_EndUser_Assignment` / unifiedRoleManagementPolicyExpirationRule                       | End user            |
+| Number | Azure portal UX Description                                                                                                                                        | Microsoft Graph Rule ID / Derived resource type                                                   | Enforced for caller |
+|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------|
+| 1      | Activation maximum duration (hours)                                                                                                                                | `Expiration_EndUser_Assignment` / unifiedRoleManagementPolicyExpirationRule                       | End user            |
 | 2      | On activation, require: None, Azure AD Multi-Factor Authentication <br/><br/>Require ticket information on activation<br/><br/>Require justification on activation | `Enablement_Admin_Eligibility` / unifiedRoleManagementPolicyEnablementRule                        | Admin               |
-| 3      | Require approval to activate                                                                                                                             | `Approval_EndUser_Assignment` / unifiedRoleManagementPolicyApprovalRule                           | End user            |
-| 4      | **Not implemented**                                                                                                                                      | `AuthenticationContext_EndUser_Assignment` / unifiedRoleManagementPolicyAuthenticationContextRule | End user            |
+| 3      | On activation, require: Azure AD Conditional Access authentication context (Preview)                                                                               | `AuthenticationContext_EndUser_Assignment` / unifiedRoleManagementPolicyAuthenticationContextRule | End user            |
+| 4      | Require approval to activate                                                                                                                                       | `Approval_EndUser_Assignment` / unifiedRoleManagementPolicyApprovalRule                           | End user            |
 
 ## Assignment rules
 
