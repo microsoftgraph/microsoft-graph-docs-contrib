@@ -10,7 +10,9 @@ doc_type: resourcePageType
 # smsAuthenticationMethodTarget resource type
 Namespace: microsoft.graph
 
-A collection of groups enabled to use [Text Message authentication methods policy](../resources/smsAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of groups enabled to use the [text message authentication methods policy](../resources/smsAuthenticationMethodConfiguration.md) in Azure AD.
+
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
 ## Properties
 |Property|Type|Description|
