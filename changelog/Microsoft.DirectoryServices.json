@@ -71,7 +71,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-03-20T00:00:00.0123959Z",
-      "WorkloadArea": "Directory-Services",
+      "WorkloadArea": "identity-and-sign-in",
       "SubArea": ""
     },
     {

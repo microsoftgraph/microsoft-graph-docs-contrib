@@ -3,7 +3,7 @@ title: "tenantReference resource type"
 description: "Represents the information used to identify an Azure AD tenant."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

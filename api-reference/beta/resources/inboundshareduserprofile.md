@@ -3,7 +3,7 @@ title: "inboundSharedUserProfile resource type"
 description: "Represents an Azure AD user from an external Azure AD tenant whose profile data is shared with the current tenant using B2B direct connect."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
