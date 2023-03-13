@@ -34,8 +34,7 @@ The Microsoft Threat Intelligence Profiles (Intel Profile) API provides the most
 |summary|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|A short summary of this IntelligenceProfile|
 |targets|String collection|Known Targets related to this Intelligence Profile|
 |title|String|The title of this Intelligence Profile|
-|tradecraft|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|Formatted information featuring a description of the group's distinctive
-Tactics, Techniques, and Procedures (TTP), followed by a list of all known custom, commodity, and publicly available implants used by the group.|
+|tradecraft|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|Formatted information featuring a description of the group's distinctive Tactics, Techniques, and Procedures (TTP), followed by a list of all known custom, commodity, and publicly available implants used by the group.|
 
 ## Relationships
 |Relationship|Type|Description|
