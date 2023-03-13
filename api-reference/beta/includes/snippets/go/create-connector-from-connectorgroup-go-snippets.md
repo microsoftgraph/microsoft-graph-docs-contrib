@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewReferenceCreate()
-"@odata.id" := "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}"
-requestBody.Set"@odata.id"(&"@odata.id") 
+odataId := "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}"
+requestBody.SetOdataId(&odataId) 
 
-graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroupsById("connectorGroup-id").Members().$ref().Post(context.Background(), requestBody, nil)
+graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroupsById("connectorGroup-id").Members().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```
