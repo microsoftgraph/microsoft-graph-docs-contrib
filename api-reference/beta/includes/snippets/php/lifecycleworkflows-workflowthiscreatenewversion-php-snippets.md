@@ -84,7 +84,7 @@ $workflow->setTasks($tasksArray);
 $requestBody->setWorkflow($workflow);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->createNewVersion()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->identityGovernanceCreateNewVersion()->post($requestBody);
 
 
 ```

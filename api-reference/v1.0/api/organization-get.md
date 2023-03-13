@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/v1.0/organization/dcd219dd-bc68-4b9b-bf0b-4a33a7
 
 ---
 
-
 ##### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
@@ -126,6 +125,7 @@ Content-type: application/json
     "marketingNotificationEmails": [],
     "onPremisesLastSyncDateTime": null,
     "onPremisesSyncEnabled": null,
+    "partnerTenantType": "ResellerPartnerDelegatedAdmin",
     "postalCode": null,
     "preferredLanguage": "en",
     "securityComplianceNotificationMails": [],

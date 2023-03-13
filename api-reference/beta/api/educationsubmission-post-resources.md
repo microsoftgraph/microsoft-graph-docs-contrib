@@ -111,7 +111,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 
@@ -196,7 +195,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationlinkresource-from-educationsubmission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -204,7 +203,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 
@@ -299,7 +297,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 
@@ -392,7 +389,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 
@@ -487,7 +483,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 
@@ -580,7 +575,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 

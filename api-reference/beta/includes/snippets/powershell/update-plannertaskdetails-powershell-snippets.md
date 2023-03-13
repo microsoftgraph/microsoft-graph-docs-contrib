@@ -38,6 +38,7 @@ Updated checklist:Sub items
 Updated references:Related links"
 }
 
-Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params
+Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=" 
+
 
 ```

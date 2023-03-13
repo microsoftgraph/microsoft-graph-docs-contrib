@@ -86,16 +86,11 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4
 [!INCLUDE [sample-code](../includes/snippets/go/list-noncustodialdatasource-for-specific-caseid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-noncustodialdatasource-for-specific-caseid-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-noncustodialdatasource-for-specific-caseid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

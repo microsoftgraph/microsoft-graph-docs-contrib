@@ -82,9 +82,6 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRo
 
 ---
 
-
----
-
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {

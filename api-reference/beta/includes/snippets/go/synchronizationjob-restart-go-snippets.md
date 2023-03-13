@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer <token>")
 
-configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemMicrosoft.graph.restartRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemRestartRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewRestartPostRequestBody()

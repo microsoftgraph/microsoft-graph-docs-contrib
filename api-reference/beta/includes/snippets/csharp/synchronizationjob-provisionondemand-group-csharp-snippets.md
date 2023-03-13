@@ -4,43 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var parameters = new List<SynchronizationJobApplicationParameters>()
+var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Jobs.Item.ProvisionOnDemand.ProvisionOnDemandPostRequestBody
 {
-	new SynchronizationJobApplicationParameters
+	Parameters = new List<SynchronizationJobApplicationParameters>
 	{
-		RuleId = "33f7c90d-bf71-41b1-bda6-aaf0ddbee5d8#V2",
-		Subjects = new List<SynchronizationJobSubject>()
+		new SynchronizationJobApplicationParameters
 		{
-			new SynchronizationJobSubject
+			RuleId = "33f7c90d-bf71-41b1-bda6-aaf0ddbee5d8#V2",
+			Subjects = new List<SynchronizationJobSubject>
 			{
-				ObjectId = "8213fd99-d6b6-417b-8e13-af6334856215",
-				ObjectTypeName = "Group",
-				Links = new SynchronizationLinkedObjects
+				new SynchronizationJobSubject
 				{
-					Members = new List<SynchronizationJobSubject>()
+					ObjectId = "8213fd99-d6b6-417b-8e13-af6334856215",
+					ObjectTypeName = "Group",
+					Links = new SynchronizationLinkedObjects
 					{
-						new SynchronizationJobSubject
+						Members = new List<SynchronizationJobSubject>
 						{
-							ObjectId = "cbc86211-6ada-4803-b73f-8039cf56d8a2",
-							ObjectTypeName = "User"
+							new SynchronizationJobSubject
+							{
+								ObjectId = "cbc86211-6ada-4803-b73f-8039cf56d8a2",
+								ObjectTypeName = "User",
+							},
+							new SynchronizationJobSubject
+							{
+								ObjectId = "2bc86211-6ada-4803-b73f-8039cf56d8a2",
+								ObjectTypeName = "User",
+							},
 						},
-						new SynchronizationJobSubject
-						{
-							ObjectId = "2bc86211-6ada-4803-b73f-8039cf56d8a2",
-							ObjectTypeName = "User"
-						}
-					}
-				}
-			}
-		}
-	}
+					},
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].ProvisionOnDemand.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
-	.ProvisionOnDemand(parameters)
-	.Request()
-	.PostAsync();
 
 ```

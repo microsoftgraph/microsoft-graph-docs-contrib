@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/peop
 
 ---
 
-
 ### Response
 
 Here is an example of the response. 

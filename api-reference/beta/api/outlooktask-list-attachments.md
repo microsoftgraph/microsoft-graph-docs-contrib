@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 
 ---
 
-
 ### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.

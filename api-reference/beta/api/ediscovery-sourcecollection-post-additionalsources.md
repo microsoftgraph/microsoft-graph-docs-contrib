@@ -110,9 +110,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -185,9 +182,6 @@ Content-Type: application/json
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/add-site-to-additional-sources-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 
