@@ -1,7 +1,7 @@
 ---
 title: "Delete authenticationStrengthPolicy"
 description: "Delete a custom authenticationStrengthPolicy object."
-author: "inbarckMS"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -48,12 +48,6 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "delete_authenticationstrengthpolicy"
-}
--->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/6e7d7469-07c5-4bb2-a801-5eaef8fb7c1e/$ref
 ```

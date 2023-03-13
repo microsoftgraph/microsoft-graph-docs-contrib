@@ -54,12 +54,6 @@ If successful, this method returns a `204 NO CONTENT` response code.
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_authenticationstrengthpolicy"
-}
--->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/a34a4c89-c5bf-4c0b-927d-adc396bf1f19
 Content-Type: application/json

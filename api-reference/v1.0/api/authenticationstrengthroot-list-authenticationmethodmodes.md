@@ -1,7 +1,7 @@
 ---
 title: "List authenticationMethodModes"
 description: "Get a list of all supported authentication methods, or all supported authentication method combinations."
-author: "inbarckMS"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -67,12 +67,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
 .
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_authenticationmethodmodedetail"
-}
--->
 ``` http
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/authenticationMethodModes
 ```
@@ -178,12 +172,6 @@ Content-Type: application/json
 The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
 
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_authenticationcombinations"
-}
--->
 ``` http
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/combinations
 ```

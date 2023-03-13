@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationCombinationConfiguration"
 description: "Update the properties of an authenticationCombinationConfiguration object."
-author: "inbarckMS"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -58,12 +58,6 @@ If successful, this method returns a `204 NO CONTENT` response code.
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_authenticationcombinationconfiguration"
-}
--->
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/4643f174-fe85-42b8-8b84-516775750a30
 Content-Type: application/json

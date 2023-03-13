@@ -1,7 +1,7 @@
 ---
 title: "authenticationStrengthPolicy: updateAllowedCombinations"
 description: "Update the allowedCombinations collection for a given authentication strength policy object."
-author: "mmcla; inbarckMS"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -55,12 +55,6 @@ If successful, this action returns a `200 OK` response code and a [updateAllowed
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "authenticationstrengthpolicythis.updateallowedcombinations"
-}
--->
 ``` http
 POST https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/33c5d2c0-884e-4b5d-a5b8-5395082b092c/updateAllowedCombinations
 Content-Type: application/json

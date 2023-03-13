@@ -1,7 +1,7 @@
 ---
 title: "authenticationStrengthPolicy: usage"
-description: "The `usage` function allows the caller to see which Conditional Access policies reference a specified authentication strength policy"
-author: "inbarckMS"
+description: "Allows the caller to see which Conditional Access policies reference a specified authentication strength policy."
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -10,8 +10,7 @@ doc_type: apiPageType
 # authenticationStrengthPolicy: usage
 Namespace: microsoft.graph
 
-The `usage` function allows the caller to see which Conditional Access policies reference a specified authentication strength policy. The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim. Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
-
+Allows the caller to see which Conditional Access policies reference a specified authentication strength policy. The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim. Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,12 +47,6 @@ If successful, this function returns a `200 OK` response code and an [authentica
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "authenticationstrengthpolicythis.usage"
-}
--->
 ``` http
 GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}/usage
 ```

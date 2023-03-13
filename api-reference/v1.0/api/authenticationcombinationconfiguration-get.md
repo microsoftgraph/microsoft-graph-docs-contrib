@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationCombinationConfiguration"
 description: "Read the properties and relationships of an authenticationCombinationConfiguration object."
-author: "inbarckMS"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -53,12 +53,6 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_authenticationcombinationconfiguration"
-}
--->
 ``` http
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/133b68c4-503b-4e87-839a-6c286a27381b
 ```
@@ -66,12 +60,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationSt
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationCombinationConfiguration"
-}
--->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

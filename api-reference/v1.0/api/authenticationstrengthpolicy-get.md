@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationStrengthPolicy"
 description: "Read the properties and relationships of an authenticationStrengthPolicy object."
-author: "inbarckMS"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -51,12 +51,6 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_authenticationstrengthpolicy"
-}
--->
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/00000000-0000-0000-0000-000000000004
 ```
@@ -64,12 +58,7 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/000
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationStrengthPolicy"
-}
--->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
