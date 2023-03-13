@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identity/conditionalAccess/authenticationStrengths/policies/{authenticationStrengthPolicyId}/combinationConfigurations/{authenticationCombinationConfigurationId}
+GET /identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations/{authenticationCombinationConfigurationId}
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/133b68c4-503b-4e87-839a-6c286a27381b
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/133b68c4-503b-4e87-839a-6c286a27381b
 ```
 
 # [C#](#tab/csharp)

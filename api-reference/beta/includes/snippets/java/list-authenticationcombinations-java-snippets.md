@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AuthenticationMethodModesCollectionPage authenticationCombinations = graphClient.customRequest("/identity/conditionalAccess/authenticationStrengths/authenticationCombinations", AuthenticationMethodModesCollectionPage.class)
+AuthenticationMethodModesCollectionPage authenticationCombinations = graphClient.customRequest("/identity/conditionalAccess/authenticationStrength/combinations", AuthenticationMethodModesCollectionPage.class)
 	.buildRequest()
 	.get();
 

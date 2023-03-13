@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let authenticationCombinations = await client.api('/identity/conditionalAccess/authenticationStrengths/authenticationCombinations')
+let authenticationCombinations = await client.api('/identity/conditionalAccess/authenticationStrength/combinations')
 	.version('beta')
 	.get();
 

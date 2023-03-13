@@ -190,7 +190,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrengths/authenticationCombinations",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrength/combinations",
     "value": [
         "windowsHelloForBusiness",
         "fido2",

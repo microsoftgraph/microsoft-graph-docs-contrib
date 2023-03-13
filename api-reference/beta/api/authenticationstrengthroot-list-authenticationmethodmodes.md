@@ -43,7 +43,7 @@ Retrieve the flat collection of authenticationCombinations objects, representing
 }
 -->
 ``` http
-GET /identity/conditionalAccess/authenticationStrengths/authenticationCombinations
+GET /identity/conditionalAccess/authenticationStrength/combinations
 ```
 
 ## Optional query parameters
@@ -212,7 +212,7 @@ The following is an example of a request to retrieve the flat collection of auth
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/authenticationCombinations
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/combinations
 ```
 
 # [C#](#tab/csharp)
@@ -256,7 +256,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrengths/authenticationCombinations",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrength/combinations",
     "value": [
         "windowsHelloForBusiness",
         "fido2",

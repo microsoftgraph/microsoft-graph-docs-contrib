@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identity/conditionalAccess/authenticationStrengths/policies/{authenticationStrengthPolicyId}/combinationConfigurations
+POST /identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ The following is an example of a request.
 
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/8313edec-d6af-483f-87b8-ec7cccfd2ab4/combinationConfigurations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/8313edec-d6af-483f-87b8-ec7cccfd2ab4/combinationConfigurations
 Content-Type: application/json
 Content-length: 130
 
