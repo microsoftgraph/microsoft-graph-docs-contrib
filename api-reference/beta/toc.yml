@@ -321,7 +321,7 @@ items:
           href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
-        - name: Get delta for directory objects
+        - name: Get delta for directory object
           href: api/directoryobject-delta.md
         - name: Validate password
           href: api/user-validatepassword.md
@@ -338,7 +338,7 @@ items:
           href: api/user-post-approleassignments.md
         - name: Remove app role assignment
           href: api/user-delete-approleassignments.md
-        - name: Get delta for directory objects
+        - name: Get delta for directory object
           href: api/directoryobject-delta.md
       - name: Calendar
         href: resources/calendar.md
@@ -723,7 +723,7 @@ items:
           href: api/group-delete-owners.md
         - name: Get delta
           href: api/group-delta.md
-        - name: Get delta for directory objects
+        - name: Get delta for directory object
           href: api/directoryobject-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
@@ -760,7 +760,7 @@ items:
           href: api/group-post-approleassignments.md
         - name: Remove app role assignment
           href: api/group-delete-approleassignments.md
-        - name: Get delta for directory objects
+        - name: Get delta for directory object
           href: api/directoryobject-delta.md
       - name: Attachment
         items:
@@ -968,7 +968,7 @@ items:
           href: api/application-delete.md
         - name: Get delta
           href: api/application-delta.md
-        - name: Get delta for directory objects
+        - name: Get delta for directory object
           href: api/directoryobject-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
@@ -1163,7 +1163,7 @@ items:
           href: api/serviceprincipal-list-ownedobjects.md
         - name: Get delta
           href: api/serviceprincipal-delta.md
-        - name: Get delta for directory objects
+        - name: Get delta for directory object
           href: api/directoryobject-delta.md
         - name: App role assignment
           href: resources/approleassignment.md
@@ -11926,7 +11926,7 @@ items:
             href: api/administrativeunit-delete.md
           - name: Get delta
             href: api/administrativeunit-delta.md
-          - name: Get delta for directory objects
+          - name: Get delta for directory object
             href: api/directoryobject-delta.md
           - name: Add a member
             href: api/administrativeunit-post-members.md
@@ -12012,7 +12012,7 @@ items:
         - name: Device
           href: resources/device.md
           items:
-          - name: Get delta for directory objects
+          - name: Get delta for directory object
             href: api/directoryobject-delta.md
           - name: List devices
             href: api/device-list.md
@@ -12124,7 +12124,7 @@ items:
             href: api/directoryrole-list-scopedmembers.md
           - name: Get delta
             href: api/directoryrole-delta.md
-          - name: Get delta for directory objects
+          - name: Get delta for directory object
             href: api/directoryobject-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
@@ -12272,7 +12272,7 @@ items:
             href: api/orgcontact-get.md
           - name: Get org contact delta
             href: api/orgcontact-delta.md
-          - name: Get delta for directory objects
+          - name: Get delta for directory object
             href: api/directoryobject-delta.md
           - name: Directory objects
             href: resources/directoryobject.md
