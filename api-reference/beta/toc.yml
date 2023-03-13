@@ -395,6 +395,8 @@ items:
       - name: Directory object
         href: resources/directoryobject.md
         items:
+        - name: Get delta
+          href: api/directoryobject-delta.md
         - name: Activate service plan (deprecated)
           href: api/user-activateserviceplan.md
         - name: Assign license
