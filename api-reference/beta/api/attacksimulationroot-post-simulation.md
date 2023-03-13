@@ -49,19 +49,21 @@ The following table shows the properties that are required when you create the s
 
 | Property | Type        | Description |
 |:-------------|:------------|:------------|
-|attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
+|attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `oAuthConsentGrant`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |attackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|completionDateTime|DateTimeOffset|Date and time of completion of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign.|
-|createdDateTime|DateTimeOffset|Date and time of creation of the attack simulation and training campaign.|
 |displayName|String|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
-|durationInDays|Int32|Simulation duration in days.|
+|durationInDays|Int32|Simulation duration in days Optional.|
+|endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|End user notification setting detail.|
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the simulation.|
+|loginPage|[loginPage](../resources/loginPage.md)|loginPage associated to a simulation|
+|landingPage|[landingPage](../resources/landingPage.md)|landingPage associated to a simulation|
+|oAuthConsentAppDetail|[oAuthConsentAppDetail](../resources/oauthconsentappdetail.md)|Details required for oAuthConsentGrant technique.|
+|payload|[payload](../resources/payload.md)|Payload associated to a simulation|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
 |launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
-|payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |status|[simulationStatus](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-
+|trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Training setting detail.|
 ## Response
 
 If successful, this method returns a `202 Accepted` response code and a tracking header named `location` in the response.
@@ -85,6 +87,8 @@ Content-type: application/json
 {
   "displayName": "Graph Simulation",
   "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
+  "loginPage@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
+  "landingPage@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
   "durationInDays": 7,
   "attackTechnique": "credentialHarvesting",
   "status": "scheduled",
@@ -96,6 +100,23 @@ Content-type: application/json
         "john@contoso.com"
     ]
   },
+  "trainingSetting" : {
+      "settingType" : "noTraining"
+  },
+  "endUserNotificationSetting" : {
+    "notificationPreference" : "microsoft",
+    "settingType" : "noTraining",
+    "positiveReinforcement" : {
+      "deliveryPreference" : "deliverAfterCampaignEnd",
+      "endUserNotification" : "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a", 
+      "defaultLanguage" : "en"
+    },
+    "simulationNotification" : {
+      "targettedUserType" : "compromised",
+      "endUserNotification@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a", 
+      "defaultLanguage" : "en"
+    }
+  }
 }
 ```
 

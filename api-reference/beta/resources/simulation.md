@@ -31,6 +31,10 @@ Inherits from [entity](../resources/entity.md).
 |[Update simulation](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update the properties of a [simulation](../resources/simulation.md) object.|
 |[Delete simulation](../api/simulation-delete.md)|None|Delete a [simulation](../resources/simulation.md) object.|
 |[Get payload](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
+|[Get endUserNotificationSetting](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
+|[Get loginPage](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
+|[Get landingPage](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
+|[Get trainingSetting](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
 
 ## Properties
 
@@ -45,6 +49,7 @@ Inherits from [entity](../resources/entity.md).
 |description|String|Description of the attack simulation and training campaign.|
 |displayName|String|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |durationInDays|Int32|Simulation duration in days.|
+|endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|End user notification setting detail.|
 |excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from the simulation.|
 |id|String|Unique identifier for the attack simulation and training campaign. Inherited from [entity](../resources/entity.md).|
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the simulation.|
@@ -52,6 +57,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign.|
 |launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
+|oAuthConsentAppDetail|[oAuthConsentAppDetail](../resources/oauthconsentappdetail.md)|OAuth app details for OAuth technique.|
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
@@ -81,6 +87,7 @@ Inherits from [entity](../resources/entity.md).
 |linkInAttachment| Attack technique that involves an end user clicking a URL link in an attachment. |
 |linkToMalwareFile| Attack technique that involves an end user clicking a URL link to a malware file. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|oAuthConsentGrant|  Attack technique that involves an end user giving access consent to an app.|
 
 ### simulationAttackType values
 
@@ -116,6 +123,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|landingPage|[landingPage](../resources/landingpage.md)|The landingPage associated with a simulation during its creation|
+|loginPage|[loginPage](../resources/loginpage.md)|The loginPage associated with a simulation during its creation|
 |payload|[payload](../resources/payload.md)|The payload associated with a simulation during its creation.|
 
 ## JSON representation
