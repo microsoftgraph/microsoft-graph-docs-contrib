@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 An aggregation of [task processing results](../resources/identitygovernance-taskprocessingresult.md) for a specific [workflow task](../resources/identitygovernance-task.md) within a [workflow run](../resources/identitygovernance-run.md). With this report, the health status of a workflow task within a workflow run can be easily determined and thus the source of error can be identified more quickly should a workflow run not have been completed successfully.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -29,7 +31,7 @@ An aggregation of [task processing results](../resources/identitygovernance-task
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|The date time that the associated run completed. Value is `null` if the run has not completed.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |failedUsersCount|Int32|The number of users in the run execution for which the associated task failed.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
-|id|String|The unique identifier of the task report.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|id|String|The unique identifier of the task report. Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |lastUpdatedDateTime|DateTimeOffset|The date and time that the task report was last updated.|
 |processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md)|The processing status of the associated task based on the taskProcessingResults. The possible values are based on the number of `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, and `unknownFutureValue`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |runId|String|The unique identifier of the associated [run](../resources/identitygovernance-run.md).|
@@ -53,21 +55,22 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.taskReport",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.taskReport",
-  "id": "String (identifier)",
-  "runId": "String",
-  "processingStatus": "String",
-  "successfulUsersCount": "Integer",
-  "failedUsersCount": "Integer",
-  "unprocessedUsersCount": "Integer",
-  "totalUsersCount": "Integer",
-  "startedDateTime": "String (timestamp)",
-  "completedDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)"
+"@odata.type": "#microsoft.graph.identityGovernance.taskReport",
+"id": "String (identifier)",
+"runId": "String",
+"processingStatus": "String",
+"successfulUsersCount": "Integer",
+"failedUsersCount": "Integer",
+"unprocessedUsersCount": "Integer",
+"totalUsersCount": "Integer",
+"startedDateTime": "String (timestamp)",
+"completedDateTime": "String (timestamp)",
+"lastUpdatedDateTime": "String (timestamp)"
 }
 ```

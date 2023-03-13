@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Represents the built-in tasks that you can use to construct tasks for lifecycle workflows. Each task has a unique template identifier. For a full list of available built-in tasks, see [supported tasks](../resources/identitygovernance-task.md#supported-tasks).
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -30,7 +32,7 @@ Represents the built-in tasks that you can use to construct tasks for lifecycle 
 |ContinueOnError|Boolean|Defines if the workflow will continue if the task has an error.|
 |description|String|The description of the taskDefinition.|
 |displayName|String|The display name of the taskDefinition.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
-|id|String|The unique identifier for the taskDefinition.|
+|id|String|The unique identifier for the taskDefinition. Inherited from [entity](../resources/entity.md).|
 |parameters|[microsoft.graph.identityGovernance.parameter](../resources/identitygovernance-parameter.md) collection|The parameters that must be supplied when creating a workflow task object.<br><br>Supports `$filter`(`any`).|
 |version|Int32|The version number of the taskDefinition. New records are pushed when we add support for new parameters.<br><br>Supports `$filter`(`ge`, `gt`, `le`, `lt`, `eq`, `ne`) and `$orderby`.|
 
@@ -45,22 +47,23 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.taskDefinition",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.taskDefinition",
-  "id": "String (identifier)",
-  "category": "String",
-  "continueOnError": "Boolean",
-  "description": "String",
-  "displayName": "String",
-  "parameters": [
-    {
-      "@odata.type": "microsoft.graph.identityGovernance.parameter"
-    }
-  ],
-  "version": "Integer"
+"@odata.type": "#microsoft.graph.identityGovernance.taskDefinition",
+"id": "String (identifier)",
+"category": "String",
+"continueOnError": "Boolean",
+"description": "String",
+"displayName": "String",
+"parameters": [
+{
+"@odata.type": "microsoft.graph.identityGovernance.parameter"
+}
+],
+"version": "Integer"
 }
 ```

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 A container for deleted lifecycle workflow objects during the period before they are permanently deleted. Azure AD may permanently delete the workflows after 30 days, or you may [permanently delete the workflows](../api/identitygovernance-deletedItemcontainer-delete.md), or you may [restore the deleted workflow and its associated objects](../api/identitygovernance-workflow-restore.md).
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -28,7 +30,7 @@ A container for deleted lifecycle workflow objects during the period before they
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the [workflow](../resources/identitygovernance-workflow.md) that was deleted.|
+|id|String|The unique identifier of the [workflow](../resources/identitygovernance-workflow.md) that was deleted. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 
@@ -43,6 +45,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deletedItemContainer",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

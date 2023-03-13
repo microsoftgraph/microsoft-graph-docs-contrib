@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Represents the result of a [lifecycle workflow](../resources/identitygovernance-workflow.md) that ran for a collection of users because they fulfilled the [conditions](../resources/identitygovernance-workflowexecutionconditions.md) of the lifecycle workflow. The result is an aggregation of all [user processing results](../resources/identitygovernance-userprocessingresult.md) of the users that were either processed within an [interval](../resources/identitygovernance-lifecyclemanagementsettings.md#properties) or were part of an [on-demand execution](../api/identitygovernance-workflow-activate.md).
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -57,24 +59,25 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.run",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.run",
-  "id": "String (identifier)",
-  "completedDateTime": "String (timestamp)",
-  "failedTasksCount": "Integer",
-  "failedUsersCount": "Integer",
-  "lastUpdatedDateTime": "String (timestamp)",
-  "processingStatus": "String",
-  "startedDateTime": "String (timestamp)",
-  "scheduledDateTime": "String (timestamp)",
-  "successfulUsersCount": "Integer",
-  "totalTasksCounts": "Integer",
-  "totalUsersCount": "Integer",
-  "totalUnprocessedTasksCount": "Integer",
-  "workflowExecutionType": "String"
+"@odata.type": "#microsoft.graph.identityGovernance.run",
+"id": "String (identifier)",
+"completedDateTime": "String (timestamp)",
+"failedTasksCount": "Integer",
+"failedUsersCount": "Integer",
+"lastUpdatedDateTime": "String (timestamp)",
+"processingStatus": "String",
+"startedDateTime": "String (timestamp)",
+"scheduledDateTime": "String (timestamp)",
+"successfulUsersCount": "Integer",
+"totalTasksCounts": "Integer",
+"totalUsersCount": "Integer",
+"totalUnprocessedTasksCount": "Integer",
+"workflowExecutionType": "String"
 }
 ```

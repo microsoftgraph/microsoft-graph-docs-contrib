@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Result of a [lifecycle workflow](../resources/identitygovernance-workflow.md) that was executed for a specific user because the user fulfilled the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) of the lifecycle workflow. The result is an aggregation of all [task processing results](../resources/identitygovernance-taskprocessingresult.md) of the [workflow tasks](../resources/identitygovernance-task.md) that were part of the lifecycle workflow and executed for the specific user.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -30,7 +32,7 @@ Result of a [lifecycle workflow](../resources/identitygovernance-workflow.md) th
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|The date time that the workflow execution for a user completed. Value is null if the workflow hasn't completed.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |failedTasksCount|Int32|The number of tasks that failed in the workflow execution.|
-|id|String|Identifier used for individually addressing a specific user processing result.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|id|String|Identifier used for individually addressing a specific user processing result.Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |processingStatus|microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus|The workflow execution status. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |scheduledDateTime|DateTimeOffset|The date time that the workflow is scheduled to be executed for a user.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |startedDateTime|DateTimeOffset|The date time that the workflow execution started. Value is `null` if the workflow execution has not started.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
@@ -53,21 +55,22 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.userProcessingResult",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.userProcessingResult",
-  "id": "String (identifier)",
-  "completedDateTime": "String (timestamp)",
-  "failedTasksCount": "Integer",
-  "processingStatus": "String",
-  "scheduledDateTime": "String (timestamp)",
-  "startedDateTime": "String (timestamp)",
-  "totalTasksCount": "Integer",
-  "totalUnprocessedTasksCount": "Integer",
-  "workflowExecutionType": "String",
-  "workflowVersion": "Integer"
+"@odata.type": "#microsoft.graph.identityGovernance.userProcessingResult",
+"id": "String (identifier)",
+"completedDateTime": "String (timestamp)",
+"failedTasksCount": "Integer",
+"processingStatus": "String",
+"scheduledDateTime": "String (timestamp)",
+"startedDateTime": "String (timestamp)",
+"totalTasksCount": "Integer",
+"totalUnprocessedTasksCount": "Integer",
+"workflowExecutionType": "String",
+"workflowVersion": "Integer"
 }
 ```
