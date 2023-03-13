@@ -2,7 +2,7 @@
 title: "Remove manager"
 description: "Remove a user's manager."
 ms.localizationpriority: medium
-author: "milanholemans"
+author: "yyuank"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -52,20 +52,18 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_manager"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
+DELETE https://graph.microsoft.com/beta/users/{id}/manager/$ref
 ```
-
----
 
 ##### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response"
 } -->
