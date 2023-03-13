@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
   "allowExternalIdToUseEmailOtp": "String",
-    "excludeTargets": [
+  "excludeTargets": [
     {
       "@odata.type": "microsoft.graph.excludeTarget"
     }
