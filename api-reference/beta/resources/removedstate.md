@@ -1,6 +1,6 @@
 ---
 title: "removedState resource type"
-description: "Resource type that contains the deletion reason for the resource."
+description: "Represents the deletion reason for a resource."
 author: "sasthana"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,21 +13,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource type that contains the deletion reason for the resource.
+Represents the deletion reason for a resource.
 
 ## Properties
-| Property	     | Type    | Description                                                |
-|:---------------|:--------|:-----------------------------------------------------------|
-| reason     | String  | The removal reason for the resource.      |
+
+| Property | Type   | Description                          |
+|:---------|:-------|:-------------------------------------|
+| reason   | String | The removal reason for the resource. |
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.removedState"
+} -->
 ```json
 {
   "@odata.type": "#microsoft.graph.removedState",
   "reason": "String"
 }
 ```
-

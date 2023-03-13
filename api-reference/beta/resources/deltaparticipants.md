@@ -16,21 +16,23 @@ Namespace: microsoft.graph
 Delta Participants type that is published by Communications servers to notify changed participants since last update.
 
 ## Properties
-| Property	     | Type    | Description                                                |
-|:---------------|:--------|:-----------------------------------------------------------|
-| sequenceNumber     | Integer  | The sequence number for the roster update.      |
-| participants        | [participant](participant.md) collection             | Read-only. Nullable.                                                |
+
+| Property       | Type                                     | Description                                |
+|:---------------|:-----------------------------------------|:-------------------------------------------|
+| sequenceNumber | Integer                                  | The sequence number for the roster update. |
+| participants   | [participant](participant.md) collection | Read-only. Nullable.                       |
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.deltaParticipants"
+} -->
 ```json
 {
   "@odata.type": "#microsoft.graph.deltaParticipants",
-  "participants": [ { "@odata.type": "#microsoft.graph.participant" } ],
-  "sequenceNumber": "String"
+  "participants": [{"@odata.type": "#microsoft.graph.participant"}],
+  "sequenceNumber": "Integer"
 }
 ```
-
-

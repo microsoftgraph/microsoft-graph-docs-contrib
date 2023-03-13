@@ -1181,7 +1181,9 @@ Content-Type: application/json
 POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
-###### Delta Roster Disabled (Default)
+
+##### Delta roster disabled (default)
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -1270,7 +1272,9 @@ Content-Type: application/json
   ]
 }
 ```
-###### Delta Roster Enabled
+
+##### Delta roster enabled
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -1364,6 +1368,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join a scheduled meeting with joinMeetingId and passcode
@@ -2183,7 +2188,8 @@ Content-Type: application/json
 POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
-###### Delta Roster Disabled (Default)
+
+##### Delta roster disabled (default)
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -2232,7 +2238,8 @@ Content-Type: application/json
 }
 ```
 
-###### Delta Roster Enabled
+##### Delta roster enabled
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -2285,7 +2292,8 @@ Content-Type: application/json
   ]
 }
 ```
-> **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby
+
+> **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby.
 
 ### Example 11: Create peer-to-peer PSTN call with service hosted media
 
