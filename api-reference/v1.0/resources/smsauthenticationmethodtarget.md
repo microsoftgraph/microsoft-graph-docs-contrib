@@ -1,6 +1,6 @@
 ---
 title: "smsAuthenticationMethodTarget resource type"
-description: "A collection of groups enabled to use Text Message authentication methods policy."
+description: "A collection of groups enabled to use the text message authentication methods policy."
 author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
