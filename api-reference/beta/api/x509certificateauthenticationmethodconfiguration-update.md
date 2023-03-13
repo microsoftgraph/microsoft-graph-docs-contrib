@@ -45,7 +45,6 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 |Content-Type|application/json. Required.|
 
 ## Request body
-The following properties can be updated.
 
 |Property|Type|Description|
 |:---|:---|:---|
