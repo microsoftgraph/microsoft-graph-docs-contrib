@@ -38,6 +38,7 @@ Track changes for a collection of a directory object type.
 ```http
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.application')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.administrativeUnit')
+GET /directoryObjects/delta?$filter=isof('microsoft.graph.appRoleAssignment') or isof('microsoft.graph.user')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.device')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.directoryRole')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.group')
@@ -46,7 +47,7 @@ GET /directoryObjects/delta?$filter=isof('microsoft.graph.servicePrincipal')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.user')
 ```
 
-Track changes for a directory object.
+Track changes for a directory object. This request isn't supported on the `appRoleAssignment` resource.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -202,8 +203,9 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=id eq '87d34
 
 #### Response
 
-The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`:
+The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`.
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -308,7 +310,6 @@ The following example shows the initial request selecting one property each from
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.group')&$select=microsoft.graph.user/surname,microsoft.graph.group/displayName
 Prefer: return=minimal
 ```
-
 
 #### Response
 

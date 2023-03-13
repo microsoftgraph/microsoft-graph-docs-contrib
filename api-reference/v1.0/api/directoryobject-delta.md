@@ -46,16 +46,12 @@ GET /directoryObjects/delta?$filter=isof('microsoft.graph.servicePrincipal')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.user')
 ```
 
-> **Note:** To complete a delta query on the `appRoleAssignment` resource, at minimum both the `appRoleAssignment` and `user` resources must be specified in the $filter parameter, with the option of also including groups or service principals if desired (the read all permissions of the additional resources will be required). Note that all resources specified will be returned.
-
-Track changes for a directory object.
+Track changes for a directory object. This request isn't supported on the `appRoleAssignment` resource.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryObjects/delta?$filter=id eq '{id}'
 ```
-
-> **Note:** Id filtering is not supported on the `appRoleAssignment` resource.
 
 ### OData query parameters
 
@@ -149,16 +145,9 @@ Content-type: application/json
   "value":[
     {
       "@odata.type": "#microsoft.graph.user",
-      "businessPhones": [
-          "+1 425 555 0109"
-      ],
       "displayName": "Adele Vance",
       "givenName": "Adele",
       "jobTitle": "Retail Manager",
-      "mail": "AdeleV@contoso.onmicrosoft.com",
-      "mobilePhone": "+1 425 555 0109",
-      "officeLocation": "18/2111",
-      "preferredLanguage": "en-US",
       "surname": "Vance",
       "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
@@ -206,8 +195,9 @@ GET https://graph.microsoft.com/v1.0/directoryObjects/delta?$filter=id eq '87d34
 
 #### Response
 
-The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`:
+The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`.
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -262,7 +252,6 @@ The following example shows the initial request selecting one property each from
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryObjects/delta?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.group')&$select=microsoft.graph.user/surname,microsoft.graph.group/displayName
 ```
-
 
 #### Response
 
