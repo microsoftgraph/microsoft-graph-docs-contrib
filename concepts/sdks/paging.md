@@ -118,15 +118,14 @@ while(messagesPage != null) {
 ### [PHP](#tab/PHP)
 
 ```php
-while ($messages->getOdatanextLink()) {
-    $requestInfo = $graphServiceClient->usersById(USER_ID)->messages()->createGetRequestInformation($requestConfig);
-    $requestInfo->setUri($messages->getOdatanextLink());
-    $messages = $requestAdapter->sendAsync($requestInfo, [MessageCollectionResponse::class, 'createFromDiscriminatorValue'])->wait();
+$pageIterator = new PageIterator($graphResponse, $requestAdapter, $parsableConstructor);
+$pageIterator->setHeaders(["Content-Type" => "application/json"]);
 
-    foreach ($messages->getValue() as $message) {
-        echo "Subject: {$message->getSubject()}\n";
-    }
-}
+$items = [];
+$pageIterator->iterate(function ($pageItem) use (&$items) {
+      $items []= $pageItem;
+      return true;
+})
 
 ```
 
@@ -256,6 +255,24 @@ while (!pageIterator.isComplete()) {
 
 ```java
 // not supported in java SDK
+```
+
+### [PHP](#tab/PHP)
+
+```php
+$pageIterator = new PageIterator($graphResponse, $requestAdapter, $parsableConstructor);
+$pageIterator->setHeaders(["Content-Type" => "application/json"]);
+$items = [];
+
+$pageIterator->iterate(function ($pageItem) use (&$items) {
+      return $pageItem->id !== '2';
+});
+
+// resumes iteration from user with id 3
+$pageIterator->iterate(function ($pageItem) use (&$items) {
+      $items []= $pageItem;
+      return true;
+});
 ```
 
 ### [Go](#tab/Go)
