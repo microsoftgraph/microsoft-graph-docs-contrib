@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "623236ab-f089-4a77-ac57-461467532759",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "imageTaggingChoice",
+          "ChangeType": "Addition",
+          "Description": "Added the **imageTaggingChoice** enumeration type.",
+          "Target": "imageTaggingChoice"
+        },
+        {
+          "Id": "623236ab-f089-4a77-ac57-461467532759",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sharingCapabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingCapabilities** enumeration type.",
+          "Target": "sharingCapabilities"
+        },
+        {
+          "Id": "623236ab-f089-4a77-ac57-461467532759",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sharingDomainRestrictionMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingDomainRestrictionMode** enumeration type.",
+          "Target": "sharingDomainRestrictionMode"
+        },
+        {
+          "Id": "623236ab-f089-4a77-ac57-461467532759",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharepoint** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "623236ab-f089-4a77-ac57-461467532759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "idleSessionSignOut",
+          "ChangeType": "Addition",
+          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-1.0) resource type.",
+          "Target": "idleSessionSignOut"
+        },
+        {
+          "Id": "623236ab-f089-4a77-ac57-461467532759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-1.0) resource type and supported methods.",
+          "Target": "settings"
+        },
+        {
+          "Id": "623236ab-f089-4a77-ac57-461467532759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-1.0) resource type.",
+          "Target": "sharepoint"
+        }
+      ],
+      "Id": "623236ab-f089-4a77-ac57-461467532759",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-13T15:54:52.3823276Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
           "ApiChange": "Method",
           "ChangedApiName": "assignSensitivityLabel",
