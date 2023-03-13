@@ -1,16 +1,16 @@
 ---
-title: "Overview of role management through the privileged identity management (PIM) API"
+title: "Use the PIM API to manage Azure AD role assignments"
 description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources in your organization."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 12/07/2022
+ms.date: 03/13/2023
 ---
 
-# Overview of role management through the privileged identity management (PIM) API
+# Use the PIM API to manage Azure AD role assignments
 
-Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, role-assignable groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft cloud services such as Microsoft 365 or Microsoft Intune.
+Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, role-assignable groups, or service principals. The resources can be in Azure Active Directory (Azure AD), Azure, and other Microsoft cloud services such as Microsoft 365 or Microsoft Intune.
 
 The Microsoft Graph PIM API for role management allows you to govern privileged access and limit excessive access. This article introduces the governance capabilities of PIM APIs in Microsoft Graph.
 
@@ -83,6 +83,10 @@ The following table lists scenarios for using PIM to manage Azure AD rules and t
 | Get the details of a role management policy assignment including the policy and rules or settings associated with the Azure AD role       | [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)         |
 
 For more information about using Microsoft Graph to configure rules, see [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules).
+
+## Get security alerts for Azure AD roles
+
+PIM for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant.
 
 ## PIM and identity security with Zero Trust
 
