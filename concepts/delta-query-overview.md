@@ -137,7 +137,7 @@ Delta query is currently supported for the following resources. Note that some r
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                     |
 | Administrative units (preview)                                 | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource      |
-| Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                    |
+| Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage) resource                                  |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Drive items\*                                                  | [delta](/graph/api/driveitem-delta) function of the [driveItem](/graph/api/resources/driveitem) resource             |
 | Education assignments                                          | [delta](/graph/api/educationassignment-delta) function of the [educationAssignment](/graph/api/resources/educationassignment) resource             |
@@ -154,6 +154,7 @@ Delta query is currently supported for the following resources. Note that some r
 | OAuth2PermissionGrants                                         | [delta](/graph/api/oauth2permissiongrant-delta) function of the [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) resource        |
 | Personal contact folders                                       | [delta](/graph/api/contactfolder-delta) function of the [contactFolder](/graph/api/resources/contactfolder) resource |
 | Personal contacts in a folder                                  | [delta](/graph/api/contact-delta) function of the [contact](/graph/api/resources/contact) resource                   |
+| Planner buckets (preview)                                    | [delta](/graph/api/plannerbucket-delta) function (preview) of the [plannerBucket](/graph/api/resources/plannerbucket) resource        |
 | Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function (preview) of the all segment of [plannerUser](/graph/api/resources/planneruser) resource        |
 | Service principals                                             | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                       |
 | To-do tasks in a task list                                     | [delta](/graph/api/todotask-delta) function of the [todoTask](/graph/api/resources/todotask) resource                                               |
