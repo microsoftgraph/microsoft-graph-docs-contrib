@@ -385,6 +385,8 @@ Content-Type: application/json
 
 ---
 
+## Manage owners
+
 ### Identify ownerless service principals and service principals with one owner
 
 Least privilege delegated permission: `Application.ReadWrite.All`
