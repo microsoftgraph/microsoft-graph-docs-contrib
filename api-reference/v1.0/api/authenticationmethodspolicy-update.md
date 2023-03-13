@@ -43,7 +43,7 @@ PATCH /policies/authenticationMethodsPolicy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods. 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
