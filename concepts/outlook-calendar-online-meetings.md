@@ -65,7 +65,6 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -179,7 +178,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -327,7 +325,6 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDZAAA=?$select=is
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -404,7 +401,6 @@ PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDaAAA=
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

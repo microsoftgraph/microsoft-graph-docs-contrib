@@ -97,9 +97,6 @@ Content-type: application/json
 
 ---
 
-
----
-
 In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
 
 ### Response

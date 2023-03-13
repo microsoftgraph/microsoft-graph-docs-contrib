@@ -132,7 +132,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '0000000
 
 ---
 
-
 #### Response
 
 In the response object, details for Azure AD Graph application permissions are listed in the **appRoles** object while details for delegated permissions are listed in the **oauth2PermissionScopes** object.
@@ -266,7 +265,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

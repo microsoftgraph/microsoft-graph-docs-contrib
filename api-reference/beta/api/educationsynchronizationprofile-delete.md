@@ -79,7 +79,6 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

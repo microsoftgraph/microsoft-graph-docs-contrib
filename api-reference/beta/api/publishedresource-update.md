@@ -95,7 +95,6 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

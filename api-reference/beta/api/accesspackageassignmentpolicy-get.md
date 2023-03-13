@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -166,7 +165,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
