@@ -38,7 +38,6 @@ Track changes for a collection of a directory object type.
 ```http
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.application')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.administrativeUnit')
-GET /directoryObjects/delta?$filter=isof('microsoft.graph.appRoleAssignment') or isof('microsoft.graph.user')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.device')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.directoryRole')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.group')
@@ -47,7 +46,7 @@ GET /directoryObjects/delta?$filter=isof('microsoft.graph.servicePrincipal')
 GET /directoryObjects/delta?$filter=isof('microsoft.graph.user')
 ```
 
-Track changes for a directory object. This request isn't supported on the `appRoleAssignment` resource.
+Track changes for a directory object.
 
 <!-- { "blockType": "ignored" } -->
 ```http
