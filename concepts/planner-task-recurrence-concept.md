@@ -301,18 +301,18 @@ Several error cases are interspersed, which illustrate incorrect changes to part
 ### Add recurrence to an existing plannerTask; and add a due date for the task
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa
+PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
 {
-  "recurrence": {
-    "schedule": {
-      "pattern": {
-        "type": "daily",
-        "interval": 2
-      },
-      "patternStartDateTime": "2021-11-13T10:30:00.0Z",
-    }
-  },
-  "dueDateTime": "2021-11-13T10:30:00.0Z"
+    "recurrence": {
+        "schedule": {
+            "pattern": {
+                "type": "daily",
+                "interval": 2
+            },
+            "patternStartDateTime": "2021-11-13T10:30:00Z"
+        }
+    },
+    "dueDateTime": "2021-11-13T10:30:00Z"
 }
 
 HTTP/1.1 204 NO CONTENT
@@ -321,60 +321,60 @@ HTTP/1.1 204 NO CONTENT
 #### Get the task to which we just added recurrence
 
 ```json
-GET https://graph.microsoft.com/v1.0/planner/tasks/JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa
+GET https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
 
 HTTP/1.1 200 OK
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#planner/tasks/$entity",
-  "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBASCc=\"",
-  "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
-  "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
-  "title": "Water the plants",
-  "orderHint": "8586352620867692777",
-  "assigneePriority": "",
-  "percentComplete": 0,
-  "priority": 5,
-  "startDate": null,
-  "createdDateTime": "2019-08-20T23:46:38.708303Z",
-  "hasDescription": false,
-  "previewType": "automatic",
-  "completedDateTime": null,
-  "completedBy": null,
-  "referenceCount": 0,
-  "checklistItemCount": 0,
-  "activeChecklistItemCount": 0,
-  "conversationThreadId": null,
-  "id": "JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa",
-  "createdBy": {
-    "user": {
-      "displayName": null,
-      "id": "edcfc4b0-be77-4866-948a-b93267e151f8"
-    }
-  },
-  "appliedCategories": {},
-  "assignments": {},
-  "recurrence": {
-    "seriesId": "94-gJEq82jFDusjcDIS8aj53sAFd",
-    "occurrenceId": 1,
-    "previousInSeriesTaskId": null,
-    "nextInSeriesTaskId": null,
-    "recurrenceStartDateTime": "2021-11-13T10:30:00.0Z",
-    "schedule": {
-      "pattern": {
-        "type": "daily",
-        "interval": 2,
-        "month": 0,
-        "dayOfMonth": 0,
-        "firstDayOfWeek": "sunday",
-        "daysOfWeek": [],
-        "index": "first"
-      },
-      "patternStartDateTime": "2021-11-13T10:30:00.0Z",
-      "nextOccurrenceDateTime": "2021-11-15T10:30:00.0Z"
-    }
-  },
-  "dueDateTime": "2021-11-13T10:30:00.0Z",
-  "creationSource": null
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#planner/tasks/$entity",
+    "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBASCc=\"",
+    "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
+    "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
+    "title": "Water the plants",
+    "orderHint": "8586352620867692777",
+    "assigneePriority": "",
+    "percentComplete": 0,
+    "priority": 5,
+    "startDate": null,
+    "createdDateTime": "2019-08-20T23:46:38.708303Z",
+    "hasDescription": false,
+    "previewType": "automatic",
+    "completedDateTime": null,
+    "completedBy": null,
+    "referenceCount": 0,
+    "checklistItemCount": 0,
+    "activeChecklistItemCount": 0,
+    "conversationThreadId": null,
+    "id": "Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV",
+    "createdBy": {
+        "user": {
+            "displayName": null,
+            "id": "edcfc4b0-be77-4866-948a-b93267e151f8"
+        }
+    },
+    "appliedCategories": {},
+    "assignments": {},
+    "recurrence": {
+        "seriesId": "w5tLb5HceUmpuiYlhdXyHg",
+        "occurrenceId": 1,
+        "previousInSeriesTaskId": null,
+        "nextInSeriesTaskId": null,
+        "recurrenceStartDateTime": "2021-11-13T10:30:00Z",
+        "schedule": {
+            "patternStartDateTime": "2021-11-13T10:30:00Z",
+            "nextOccurrenceDateTime": "2021-11-15T10:30:00Z",
+            "pattern": {
+                "type": "daily",
+                "interval": 2,
+                "firstDayOfWeek": "sunday",
+                "dayOfMonth": 0,
+                "daysOfWeek": [],
+                "index": "first",
+                "month": 0
+            }
+        }
+    },
+    "dueDateTime": "2021-11-13T10:30:00Z",
+    "creationSource": null
 }
 ```
 
@@ -390,9 +390,9 @@ HTTP/1.1 200 OK
 ### Mark the task complete, triggering recurrence
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa
+PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
 {
-  "percentComplete": 100
+    "percentComplete": 100
 }
 
 HTTP/1.1 204 NO CONTENT
@@ -401,33 +401,33 @@ HTTP/1.1 204 NO CONTENT
 #### Get the now-complete task, so we can discover the id of the next task in the series
 
 ```json
-GET https://graph.microsoft.com/v1.0/planner/tasks/JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa
+GET https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
 
 HTTP/1.1 200 OK
 {
-  "_comment": "other fields omitted for brevity",
-  "percentComplete": 100,
-  "recurrence": {
-    "seriesId": "94-gJEq82jFDusjcDIS8aj53sAFd",
-    "occurrenceId": 1,
-    "previousInSeriesTaskId": null,
-    "nextInSeriesTaskId": "EE8fn48SJF-FDnk582k28fhajai9",
-    "recurrenceStartDateTime": "2021-11-13T10:30:00.0Z",
-    "schedule": {
-      "pattern": {
-        "type": "daily",
-        "interval": 2,
-        "month": 0,
-        "dayOfMonth": 0,
-        "firstDayOfWeek": "sunday",
-        "daysOfWeek": [],
-        "index": "first"
-      },
-      "patternStartDateTime": "2021-11-13T10:30:00.0Z",
-      "nextOccurrenceDateTime": "2021-11-15T10:30:00.0Z"
-    }
-  },
-  "dueDateTime": "2021-11-13T10:30:00.0Z",
+    "_comment": "other fields omitted for brevity",
+    "percentComplete": 100,
+    "recurrence": {
+        "seriesId": "w5tLb5HceUmpuiYlhdXyHg",
+        "occurrenceId": 1,
+        "previousInSeriesTaskId": null,
+        "nextInSeriesTaskId": "GxOo0ms1iEu3eBI1-6lk85UAI5FI",
+        "recurrenceStartDateTime": "2021-11-13T10:30:00Z",
+        "schedule": {
+            "patternStartDateTime": "2021-11-13T10:30:00Z",
+            "nextOccurrenceDateTime": "2021-11-15T10:30:00Z",
+            "pattern": {
+                "type": "daily",
+                "interval": 2,
+                "firstDayOfWeek": "sunday",
+                "dayOfMonth": 0,
+                "daysOfWeek": [],
+                "index": "first",
+                "month": 0
+            }
+        }
+    },
+    "dueDateTime": "2021-11-13T10:30:00Z",
 }
 ```
 
@@ -439,39 +439,39 @@ HTTP/1.1 200 OK
 ### Get the new task in the series (2nd occurrence)
 
 ```json
-GET https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 
 HTTP/1.1 200 OK
 {
-  "_comment": "other fields omitted for brevity",
-  "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
-  "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
-  "title": "Water the plants",
-  "percentComplete": 0,
-  "id": "EE8fn48SJF-FDnk582k28fhajai9",
-  "appliedCategories": {},
-  "assignments": {},
-  "recurrence": {
-    "seriesId": "94-gJEq82jFDusjcDIS8aj53sAFd",
-    "occurrenceId": 2,
-    "previousInSeriesTaskId": "JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa",
-    "nextInSeriesTaskId": null,
-    "recurrenceStartDateTime": "2021-11-13T10:30:00.0Z",
-    "schedule": {
-      "pattern": {
-        "type": "daily",
-        "interval": 2,
-        "month": 0,
-        "dayOfMonth": 0,
-        "firstDayOfWeek": "sunday",
-        "daysOfWeek": [],
-        "index": "first"
-      },
-      "patternStartDateTime": "2021-11-13T10:30:00.0Z",
-      "nextOccurrenceDateTime": "2021-11-17T10:30:00.0Z"
-    }
-  },
-  "dueDateTime": "2021-11-15T10:30:00.0Z"
+    "_comment": "other fields omitted for brevity",
+    "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
+    "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
+    "title": "Water the plants",
+    "percentComplete": 0,
+    "id": "GxOo0ms1iEu3eBI1-6lk85UAI5FI",
+    "appliedCategories": {},
+    "assignments": {},
+    "recurrence": {
+        "seriesId": "w5tLb5HceUmpuiYlhdXyHg",
+        "occurrenceId": 2,
+        "previousInSeriesTaskId": "Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV",
+        "nextInSeriesTaskId": null,
+        "recurrenceStartDateTime": "2021-11-13T10:30:00Z",
+        "schedule": {
+            "patternStartDateTime": "2021-11-13T10:30:00Z",
+            "nextOccurrenceDateTime": "2021-11-17T10:30:00Z",
+            "pattern": {
+                "type": "daily",
+                "interval": 2,
+                "firstDayOfWeek": "sunday",
+                "dayOfMonth": 0,
+                "daysOfWeek": [],
+                "index": "first",
+                "month": 0
+            }
+        }
+    },
+    "dueDateTime": "2021-11-15T10:30:00Z"
 }
 ```
 
@@ -485,19 +485,19 @@ HTTP/1.1 200 OK
 ### Edit recurrence on the task (one day per week); and set the due date to null
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 {
-  "recurrence": {
-    "schedule": {
-      "pattern": {
-        "type": "weekly",
-        "interval": 1,
-        "daysOfWeek": [ "tuesday" ],
-        "firstDayOfWeek": "sunday"
-      }
-    }
-  },
-  "dueDateTime": null
+    "recurrence": {
+        "schedule": {
+            "pattern": {
+                "type": "weekly",
+                "interval": 1,
+                "daysOfWeek": [ "tuesday" ],
+                "firstDayOfWeek": "sunday"
+            }
+        }
+    },
+    "dueDateTime": null
 }
 
 HTTP/1.1 204 NO CONTENT
@@ -506,39 +506,39 @@ HTTP/1.1 204 NO CONTENT
 #### Get the task again to see the result of our edit
 
 ```json
-GET https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 
 HTTP/1.1 200 OK
 {
-  "_comment": "other fields omitted for brevity",
-  "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
-  "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
-  "title": "Water the plants",
-  "percentComplete": 0,
-  "id": "EE8fn48SJF-FDnk582k28fhajai9",
-  "appliedCategories": {},
-  "assignments": {},
-  "recurrence": {
-    "seriesId": "94-gJEq82jFDusjcDIS8aj53sAFd",
-    "occurrenceId": 2,
-    "previousInSeriesTaskId": "JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa",
-    "nextInSeriesTaskId": null,
-    "recurrenceStartDateTime": "2021-11-13T10:30:00.0Z",
-    "schedule": {
-      "pattern": {
-        "type": "weekly",
-        "interval": 1,
-        "daysOfWeek": [ "tuesday" ],
-        "firstDayOfWeek": "sunday",
-        "month": 0,
-        "dayOfMonth": 0,
-        "index": "first"
-      },
-      "patternStartDateTime": "2021-11-13T10:30:00.0Z",
-      "nextOccurrenceDateTime": "2021-11-23T10:30:00.0Z"
-    }
-  },
-  "dueDateTime": null
+    "_comment": "other fields omitted for brevity",
+    "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
+    "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
+    "title": "Water the plants",
+    "percentComplete": 0,
+    "id": "GxOo0ms1iEu3eBI1-6lk85UAI5FI",
+    "appliedCategories": {},
+    "assignments": {},
+    "recurrence": {
+        "seriesId": "w5tLb5HceUmpuiYlhdXyHg",
+        "occurrenceId": 2,
+        "previousInSeriesTaskId": "Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV",
+        "nextInSeriesTaskId": null,
+        "recurrenceStartDateTime": "2021-11-13T10:30:00Z",
+        "schedule": {
+            "patternStartDateTime": "2021-11-13T10:30:00Z",
+            "nextOccurrenceDateTime": "2021-11-23T10:30:00Z",
+            "pattern": {
+                "type": "weekly",
+                "interval": 1,
+                "firstDayOfWeek": "sunday",
+                "dayOfMonth": 0,
+                "daysOfWeek": [ "tuesday" ],
+                "index": "first",
+                "month": 0
+            }
+        }
+    },
+    "dueDateTime": null
 }
 ```
 
@@ -550,11 +550,11 @@ HTTP/1.1 200 OK
 ### Remove the recurrence schedule, thereby terminating the series
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 {
-  "recurrence": {
-    "schedule": null
-  }
+    "recurrence": {
+        "schedule": null
+    }
 }
 
 HTTP/1.1 204 NO CONTENT
@@ -563,19 +563,20 @@ HTTP/1.1 204 NO CONTENT
 #### Get the task with the recurrence schedule deleted
 
 ```json
-GET https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 
 HTTP/1.1 200 OK
 {
-  "_comment": "other fields omitted for brevity",
-  "recurrence": {
-    "seriesId": "94-gJEq82jFDusjcDIS8aj53sAFd",
-    "occurrenceId": 2,
-    "previousInSeriesTaskId": "JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa",
-    "nextInSeriesTaskId": null,
-    "recurrenceStartDateTime": "2021-11-13T10:30:00.0Z"
-  },
-  "dueDateTime": null
+    "_comment": "other fields omitted for brevity",
+    "recurrence": {
+        "seriesId": "w5tLb5HceUmpuiYlhdXyHg",
+        "occurrenceId": 2,
+        "previousInSeriesTaskId": "Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV",
+        "nextInSeriesTaskId": null,
+        "schedule": null,
+        "recurrenceStartDateTime": "2021-11-13T10:30:00Z"
+    },
+    "dueDateTime": null
 }
 ```
 
@@ -586,46 +587,50 @@ HTTP/1.1 200 OK
 ### Error case: Attempt to add a new recurrence schedule without specifying the patternStartDateTime
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 {
-  "recurrence": {
-    "schedule": {
-      "pattern": {
-        "type": "daily",
-        "interval": 5
-      }
+    "recurrence": {
+        "schedule": {
+            "pattern": {
+                "type": "daily",
+                "interval": 5
+            }
+        }
     }
-  }
 }
 
 HTTP/1.1 400 BAD REQUEST
 {
-  "error": {
-    "code": "",
-    "message": "Schema validation has failed. Validation for field 'Recurrence.Schedule.PatternStartDateTime', on entity 'Task' has failed: A non-null value must be specified for this field.",
-    "innerError": {
-      "request-id": "922f7646-513a-4f63-a231-9cf2d7b647cb",
-      "date": "2021-06-22T21:37:35"
+    "error": {
+        "code": "",
+        "message": "Schema validation has failed. Validation for field 'Recurrence.Schedule.Range', on entity 'Task' has failed: A non-null value must be specified for this field.",
+        "innerError": {
+            "request-id": "922f7646-513a-4f63-a231-9cf2d7b647cb",
+            "date": "2021-06-22T21:37:35"
+        }
     }
-  }
 }
 ```
+
+#### Comments about the above
+
+- There is a small bug here: the error message should mention Recurrence.Schedule.PatternStartDateTime rather than Recurrence.Schedule.Range. The Planner team intends to fix this error message.
 
 ### Reinstate recurrence on the task by adding a new schedule
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 {
-  "recurrence": {
-    "schedule": {
-      "pattern": {
-        "type": "absoluteMonthly",
-        "interval": 2,
-        "dayOfMonth": 25
-      },
-      "patternStartDateTime": "2021-11-25T10:30:00.0Z",
+    "recurrence": {
+        "schedule": {
+            "pattern": {
+                "type": "absoluteMonthly",
+                "interval": 2,
+                "dayOfMonth": 25
+            },
+            "patternStartDateTime": "2021-11-25T10:30:00Z"
+        }
     }
-  }
 }
 
 HTTP/1.1 204 NO CONTENT
@@ -634,39 +639,39 @@ HTTP/1.1 204 NO CONTENT
 #### Get the task with the new recurrence schedule
 
 ```json
-GET https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 
 HTTP/1.1 200 OK
 {
-  "_comment": "other fields omitted for brevity",
-  "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
-  "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
-  "title": "Water the plants",
-  "percentComplete": 0,
-  "id": "EE8fn48SJF-FDnk582k28fhajai9",
-  "appliedCategories": {},
-  "assignments": {},
-  "recurrence": {
-    "seriesId": "94-gJEq82jFDusjcDIS8aj53sAFd",
-    "occurrenceId": 2,
-    "previousInSeriesTaskId": "JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa",
-    "nextInSeriesTaskId": null,
-    "recurrenceStartDateTime": "2021-11-13T10:30:00.0Z",
-    "schedule": {
-      "pattern": {
-        "type": "absoluteMonthly",
-        "interval": 2,
-        "daysOfWeek": [],
-        "firstDayOfWeek": "sunday",
-        "month": 0,
-        "dayOfMonth": 25,
-        "index": "first"
-      },
-      "patternStartDateTime": "2021-11-25T10:30:00.0Z",
-      "nextOccurrenceDateTime": "2022-01-25T10:30:00.0Z"
-    }
-  },
-  "dueDateTime": null
+    "_comment": "other fields omitted for brevity",
+    "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
+    "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
+    "title": "Water the plants",
+    "percentComplete": 0,
+    "id": "GxOo0ms1iEu3eBI1-6lk85UAI5FI",
+    "appliedCategories": {},
+    "assignments": {},
+    "recurrence": {
+        "seriesId": "w5tLb5HceUmpuiYlhdXyHg",
+        "occurrenceId": 2,
+        "previousInSeriesTaskId": "Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV",
+        "nextInSeriesTaskId": null,
+        "recurrenceStartDateTime": "2021-11-13T10:30:00Z",
+        "schedule": {
+            "patternStartDateTime": "2021-11-25T10:30:00Z",
+            "nextOccurrenceDateTime": "2022-01-25T10:30:00Z",
+            "pattern": {
+                "type": "absoluteMonthly",
+                "interval": 2,
+                "firstDayOfWeek": "sunday",
+                "dayOfMonth": 25,
+                "daysOfWeek": [],
+                "index": "first",
+                "month": 0
+            }
+        }
+    },
+    "dueDateTime": null
 }
 ```
 
@@ -678,34 +683,32 @@ HTTP/1.1 200 OK
 ### Error case: Attempt to edit a read-only property
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 {
-  "recurrence": {
-    "schedule": {
-      "nextOccurrenceDateTime": "2021-12-06T10:30:00.0Z"
+    "recurrence": {
+        "seriesId": "abc"
     }
-  }
 }
 
 HTTP/1.1 400 BAD REQUEST
 {
-  "error": {
-    "code": "",
-    "message": "Schema validation has failed. Validation for field 'Recurrence.Schedule.NextOccurrenceDate', on entity 'Task' has failed: NextOccurrenceDate is read-only.",
-    "innerError": {
-      "request-id": "922f7646-513a-4f63-a231-9cf2d7b647cb",
-      "date": "2021-06-22T21:37:35"
+    "error": {
+        "code": "",
+        "message": "Invalid recurrence sub-property assignment(s): \"seriesId\".",
+        "innerError": {
+            "request-id": "922f7646-513a-4f63-a231-9cf2d7b647cb",
+            "date": "2021-06-22T21:37:35"
+        }
     }
-  }
 }
 ```
 
 ### Mark the task complete, triggering recurrence again
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 {
-  "percentComplete": 100
+    "percentComplete": 100
 }
 
 HTTP/1.1 204 NO CONTENT
@@ -714,101 +717,101 @@ HTTP/1.1 204 NO CONTENT
 #### Get the now-complete task, so we can discover the id of the next task in the series
 
 ```json
-GET https://graph.microsoft.com/v1.0/planner/tasks/EE8fn48SJF-FDnk582k28fhajai9
+GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 
 HTTP/1.1 200 OK
 {
-  "_comment": "other fields omitted for brevity",
-  "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
-  "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
-  "title": "Water the plants",
-  "percentComplete": 100,
-  "id": "EE8fn48SJF-FDnk582k28fhajai9",
-  "appliedCategories": {},
-  "assignments": {},
-  "recurrence": {
-    "seriesId": "94-gJEq82jFDusjcDIS8aj53sAFd",
-    "occurrenceId": 2,
-    "previousInSeriesTaskId": "JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa",
-    "nextInSeriesTaskId": "-6zr7XfE6E2JvxCSmE7Wdf8AClON",
-    "recurrenceStartDateTime": "2021-11-13T10:30:00.0Z",
-    "schedule": {
-      "pattern": {
-        "type": "absoluteMonthly",
-        "interval": 2,
-        "daysOfWeek": [],
-        "firstDayOfWeek": "sunday",
-        "month": 0,
-        "dayOfMonth": 25,
-        "index": "first"
-      },
-      "patternStartDateTime": "2021-11-25T10:30:00.0Z",
-      "nextOccurrenceDateTime": "2022-01-25T10:30:00.0Z"
-    }
-  },
-  "dueDateTime": null
+    "_comment": "other fields omitted for brevity",
+    "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
+    "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
+    "title": "Water the plants",
+    "percentComplete": 100,
+    "id": "GxOo0ms1iEu3eBI1-6lk85UAI5FI",
+    "appliedCategories": {},
+    "assignments": {},
+    "recurrence": {
+        "seriesId": "w5tLb5HceUmpuiYlhdXyHg",
+        "occurrenceId": 2,
+        "previousInSeriesTaskId": "Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV",
+        "nextInSeriesTaskId": "-6zr7XfE6E2JvxCSmE7Wdf8AClON",
+        "recurrenceStartDateTime": "2021-11-13T10:30:00Z",
+        "schedule": {
+            "patternStartDateTime": "2021-11-25T10:30:00Z",
+            "nextOccurrenceDateTime": "2022-01-25T10:30:00Z",
+            "pattern": {
+                "type": "absoluteMonthly",
+                "interval": 2,
+                "firstDayOfWeek": "sunday",
+                "dayOfMonth": 25,
+                "daysOfWeek": [],
+                "index": "first",
+                "month": 0
+            }
+        }
+    },
+    "dueDateTime": null
 }
 ```
 
 ### Error case: Attempt to delete the recurrence schedule when the nextInSeriesTaskId is already assigned
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/JiEyMB3Gw0OnUKUe6F-ZnZUAH9xa
+PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
 {
-  "recurrence": {
-    "schedule": null
-  }
+    "recurrence": {
+        "schedule": null
+    }
 }
 
 HTTP/1.1 400 BAD REQUEST
 {
-  "error": {
-    "code": "",
-    "message": "Schema validation has failed. Validation for field 'Recurrence.Schedule', on entity 'Task' has failed: This field cannot be changed or deleted since nextInSeriesTaskId is already assigned.",
-    "innerError": {
-      "request-id": "922f7646-513a-4f63-a231-9cf2d7b647cb",
-      "date": "2021-06-22T21:37:35"
+    "error": {
+        "code": "",
+        "message": "Schema validation has failed. Validation for field 'Recurrence', on entity 'Task' has failed: Cannot add/edit/delete recurrence when the next instance should already be created.",
+        "innerError": {
+            "request-id": "922f7646-513a-4f63-a231-9cf2d7b647cb",
+            "date": "2021-06-22T21:37:35"
+        }
     }
-  }
 }
 ```
 
 ### Get the new task in the series (3rd occurrence)
 
 ```json
-GET https://graph.microsoft.com/v1.0/planner/tasks/-6zr7XfE6E2JvxCSmE7Wdf8AClON
+GET https://graph.microsoft.com/beta/planner/tasks/-6zr7XfE6E2JvxCSmE7Wdf8AClON
 
 HTTP/1.1 200 OK
 {
-  "_comment": "other fields omitted for brevity",
-  "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
-  "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
-  "title": "Water the plants",
-  "percentComplete": 0,
-  "id": "-6zr7XfE6E2JvxCSmE7Wdf8AClON",
-  "appliedCategories": {},
-  "assignments": {},
-  "recurrence": {
-    "seriesId": "94-gJEq82jFDusjcDIS8aj53sAFd",
-    "occurrenceId": 3,
-    "previousInSeriesTaskId": "EE8fn48SJF-FDnk582k28fhajai9",
-    "nextInSeriesTaskId": null,
-    "recurrenceStartDateTime": "2021-11-13T10:30:00.0Z",
-    "schedule": {
-      "pattern": {
-        "type": "absoluteMonthly",
-        "interval": 2,
-        "daysOfWeek": [],
-        "firstDayOfWeek": "sunday",
-        "month": 0,
-        "dayOfMonth": 25,
-        "index": "first"
-      },
-      "patternStartDateTime": "2021-11-25T10:30:00.0Z",
-      "nextOccurrenceDateTime": "2022-03-25T10:30:00.0Z"
-    }
-  },
-  "dueDateTime": "2022-01-25T10:30:00.0Z"
+    "_comment": "other fields omitted for brevity",
+    "planId": "4CaQUsrKXkyMDBhpF9cu-JUAAZ1V",
+    "bucketId": "mVAeurfATUOEkpxi-60a9pUAJDxm",
+    "title": "Water the plants",
+    "percentComplete": 0,
+    "id": "-6zr7XfE6E2JvxCSmE7Wdf8AClON",
+    "appliedCategories": {},
+    "assignments": {},
+    "recurrence": {
+        "seriesId": "w5tLb5HceUmpuiYlhdXyHg",
+        "occurrenceId": 3,
+        "previousInSeriesTaskId": "GxOo0ms1iEu3eBI1-6lk85UAI5FI",
+        "nextInSeriesTaskId": null,
+        "recurrenceStartDateTime": "2021-11-13T10:30:00Z",
+        "schedule": {
+            "patternStartDateTime": "2021-11-25T10:30:00Z",
+            "nextOccurrenceDateTime": "2022-03-25T10:30:00Z",
+            "pattern": {
+                "type": "absoluteMonthly",
+                "interval": 2,
+                "firstDayOfWeek": "sunday",
+                "dayOfMonth": 25,
+                "daysOfWeek": [],
+                "index": "first",
+                "month": 0
+            }
+        }
+    },
+    "dueDateTime": "2022-01-25T10:30:00Z"
 }
 ```
 
