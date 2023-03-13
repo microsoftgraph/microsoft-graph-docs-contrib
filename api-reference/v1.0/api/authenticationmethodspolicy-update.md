@@ -43,14 +43,14 @@ PATCH /policies/authenticationMethodsPolicy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods. 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
 
 ## Response
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code and an [authenticationMethodsPolicy](authenticationmethodspolicy.md) object in the response body.
 
 ## Examples
 
