@@ -15,7 +15,6 @@ An abstract type that exposes properties relating to the instances of membership
 + [privilegedAccessGroupAssignmentScheduleInstance](privilegedaccessgroupassignmentscheduleinstance.md)
 + [privilegedAccessGroupEligibilityScheduleInstance](privilegedaccessgroupeligibilityscheduleinstance.md)
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
