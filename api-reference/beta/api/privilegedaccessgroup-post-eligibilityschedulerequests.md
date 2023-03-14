@@ -134,7 +134,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Extend eligible request
+### Example 2: An admin extends an eligible group membership for a principal
 
 The following request extends an existing eligibility schedule request before it expires.
 
