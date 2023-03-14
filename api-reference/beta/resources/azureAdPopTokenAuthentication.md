@@ -17,9 +17,7 @@ Defines the Azure AD application used to authenticate a logic app with a [custom
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|resourceId|String|The **appID** of the Azure AD application to use to authenticate a logic app with a custom access package workflow extension.|
+None.
 
 ## JSON representation
 
