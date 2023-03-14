@@ -107,8 +107,6 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "group_delta"
