@@ -1,6 +1,6 @@
 ---
 title: "azureAdTokenAuthentication resource type"
-description: "Defines the Azure AD application used to authenticate with a custom access package or Lifecycle Workflow extension."
+description: "Defines the Azure AD application used to authenticate with a custom access package or Lifecycle Workflow custom task extension."
 author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
