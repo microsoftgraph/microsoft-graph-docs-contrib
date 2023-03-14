@@ -100,8 +100,7 @@ Content-Type: application/json
 "logicAppWorkflowName": "ManagerAccess"
 },
 "authenticationConfiguration": {
-"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-"resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+"@odata.type": "#microsoft.graph.azureADPopTokenAuthentication"
 },
 "clientConfiguration": {
 "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",

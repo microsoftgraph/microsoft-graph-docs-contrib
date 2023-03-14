@@ -19,6 +19,8 @@ This abstract type is inherited by:
 [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md)
 [azureAdPopTokenAuthentication](../resources/azureAdPopTokenAuthentication.md)
 
+The type of token authentication used depends on the token security. If the token security value is normal, you will use the [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md) resource type. If the value is Proof of Possession, you will use the [azureAdPopTokenAuthentication](../resources/azureAdPopTokenAuthentication.md) resource type.
+
 ## Properties
 
 None.

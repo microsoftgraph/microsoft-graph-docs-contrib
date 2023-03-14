@@ -1,6 +1,6 @@
 ---
 title: "azureAdTokenAuthentication resource type"
-description: "Defines the Azure AD application used to authenticate with a custom access package workflow extension."
+description: "Defines the Azure AD application used to authenticate with a custom access package or Lifecycle Workflow extension."
 author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -17,9 +17,7 @@ Defines the Azure AD application used to authenticate a logic app with a [custom
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|resourceId|String|The **appID** of the Azure AD application to use to authenticate a logic app with a custom access package workflow extension.|
+None.
 
 ## JSON representation
 
@@ -33,7 +31,6 @@ The following is a JSON representation of the resource.
 
 ``` json
 { 
-  "@odata.type": "#microsoft.graph.azureAdTokenAuthentication", 
-  "resourceId": "String" 
+"@odata.type": "#microsoft.graph.azureAdTokenAuthentication"
  } 
 ```
