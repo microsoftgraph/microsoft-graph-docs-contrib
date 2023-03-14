@@ -525,6 +525,8 @@ items:
           href: api/user-list-manager.md
         - name: List direct reports
           href: api/user-list-directreports.md
+        - name: Remove manager
+          href: api/user-delete-manager.md
       - name: Outlook settings
         items:
         - name: Mailbox settings
