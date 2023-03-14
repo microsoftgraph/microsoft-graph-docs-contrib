@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Verifiable credential requirements status indicating that the credential verification is completed and the issued credentials are not expired.
 Inherits from [verifiableCredentialRequirementStatus](../resources/verifiablecredentialrequirementstatus.md).
-Used for the **credentialType** property of [verifiable credential settings](verifiablecredentialsettings.md).
+Used for the **verifiableCredentialRequirementStatus** property of [access package assignment request requirements](accessPackageAssignmentRequestRequirements.md).
 
 
 ## Properties
@@ -33,6 +33,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.verifiableCredentialVerified"
+  "@odata.type": "#microsoft.graph.verifiableCredentialVerified"
 }
 ```
