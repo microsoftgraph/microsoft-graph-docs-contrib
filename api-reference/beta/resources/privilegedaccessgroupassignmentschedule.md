@@ -28,7 +28,7 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership assignment to the group that is governed by PIM. Required. The possible values are: `owner`, `member`, `unknownFutureValue`.|
 |assignmentType|privilegedAccessGroupAssignmentType|Indicates whether the membership or ownership assignment for the principal is granted through activation or direct assignment. Required. The possible values are: `assigned`, `activated`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|When the schedule was created. Optional.|
-|createdUsing|String|The identifier of the access assignment or eligibility request that creates this schedule. Optional.|
+|createdUsing|String|The identifier of the access assignment or eligibility request that created this schedule. Optional.|
 |groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Required.|
 |id|String|The identifier of the schedule. Required. Inherited from [entity](../resources/entity.md).|
 |memberType|privilegedAccessGroupMemberType|Indicates whether the assignment is derived from a direct group assignment or through a transitive assignment. The possible values are: `direct`, `group`, `unknownFutureValue`.|
