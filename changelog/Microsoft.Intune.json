@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "certificateStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateStatus** enumeration type.",
+          "Target": "certificateStatus"
+        },
+        {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enterpriseCodeSigningCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [enterpriseCodeSigningCertificate](https://learn.microsoft.com/graph/api/resources/intune-enterpriseCodeSigningCertificate?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "enterpriseCodeSigningCertificate"
+        },
+        {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosLobAppProvisioningConfigurationAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [iosLobAppProvisioningConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-iosLobAppProvisioningConfigurationAssignment?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "iosLobAppProvisioningConfigurationAssignment"
+        }
+      ],
+      "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-24T19:29:25.3635133Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1b1df16b-4cd4-40a1-bf07-2be59450ef36",
           "ApiChange": "Key",
           "ChangedApiName": "deviceManagement",
