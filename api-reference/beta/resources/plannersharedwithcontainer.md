@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the relationship of a planner Plan to a planner Container. Plans can be shared with containers that are not the original container the plan belongs to. When the plan is verifying a user's access to it, the plan will additionally check the authorization logic of the containers is it shared with.
+Represents the relationship of a planner Plan to a planner Container. Plans can be shared with containers that are not the original container the plan belongs to. When the plan is verifying a user's access to it, the plan will additionally check the authorization logic of the containers it is shared with.
 
 Inherits from [plannerPlanContainer](plannerplancontainer.md).
 
