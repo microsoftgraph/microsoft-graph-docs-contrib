@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Retrieve specific properties of all eligibility requests
 
 ### Request
 The following is an example of a request.
