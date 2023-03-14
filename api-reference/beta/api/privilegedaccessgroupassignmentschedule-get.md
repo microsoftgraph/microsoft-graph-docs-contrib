@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentSchedule/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentSchedules/$entity",
     "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
     "scheduleInfo": {
       "startDateTime": "2022-04-11T11:50:06.343Z",
@@ -93,56 +93,6 @@ Content-Type: application/json
     "createdDateTime": "2022-04-11T11:50:06.343Z",
     "modifiedDateTime": null,
     "createdUsing": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
-    "status": "Provisioned",
-    "assignmentType": "Assigned",
-    "memberType": "Direct",
-    "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
-    "accessId": "member",
-    "groupId": "14b9e371-5c2c-4ee5-a4a5-2980060d4f4e",
-}
-```
-
-### Example 2: Retrieve an assignment schedule that's scoped to a principal
-
-#### Request
-<!-- {
-  "blockType": "request",
-  "name": "get_privilegedaccessgroupassignmentschedule"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules/$filter=principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
-```
-
-
-#### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.privilegedAccessGroupAssignmentSchedule"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentSchedule/$entity",
-    "id": "3cce9d87-3986-4f19-8335-7ed075408ca2",
-    "scheduleInfo": {
-      "startDateTime": "2022-04-11T11:50:06.343Z",
-        "recurrence": null,
-        "expiration": {
-            "type": "noExpiration",
-            "endDateTime": null,
-            "duration": null
-        }
-    },
-    "createdDateTime": "2022-04-11T11:50:06.343Z",
-    "modifiedDateTime": null,
-    "createdUsing": "3cce9d87-3986-4f19-8335-7ed075408ca2",
     "status": "Provisioned",
     "assignmentType": "Assigned",
     "memberType": "Direct",
