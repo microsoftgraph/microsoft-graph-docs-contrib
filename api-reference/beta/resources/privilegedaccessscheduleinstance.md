@@ -20,12 +20,6 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 None.
-<!-- |Method|Return type|Description|
-|:---|:---|:---|
-|[List privilegedAccessScheduleInstances](../api/privilegedaccessscheduleinstance-list.md)|[privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md) collection|Get a list of the [privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md) objects and their properties.|
-|[Get privilegedAccessScheduleInstance](../api/privilegedaccessscheduleinstance-get.md)|[privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md)|Read the properties and relationships of a [privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md) object.|
-|[Update privilegedAccessScheduleInstance](../api/privilegedaccessscheduleinstance-update.md)|[privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md)|Update the properties of a [privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md) object.|
-|[Delete privilegedAccessScheduleInstance](../api/privilegedaccessscheduleinstance-delete.md)|None|Delete a [privilegedAccessScheduleInstance](../resources/privilegedaccessscheduleinstance.md) object.| -->
 
 ## Properties
 |Property|Type|Description|

@@ -17,15 +17,6 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 None.
-<!-- |Method|Return type|Description|
-|:---|:---|:---|
-|[List privilegedAccessRoots](../api/identitygovernance-list-privilegedaccess.md)|[privilegedAccessRoot](../resources/privilegedaccessroot.md) collection|Get a list of the [privilegedAccessRoot](../resources/privilegedaccessroot.md) objects and their properties.|
-|[Create privilegedAccessRoot](../api/identitygovernance-post-privilegedaccess.md)|[privilegedAccessRoot](../resources/privilegedaccessroot.md)|Create a new [privilegedAccessRoot](../resources/privilegedaccessroot.md) object.|
-|[Get privilegedAccessRoot](../api/privilegedaccessroot-get.md)|[privilegedAccessRoot](../resources/privilegedaccessroot.md)|Read the properties and relationships of a [privilegedAccessRoot](../resources/privilegedaccessroot.md) object.|
-|[Update privilegedAccessRoot](../api/privilegedaccessroot-update.md)|[privilegedAccessRoot](../resources/privilegedaccessroot.md)|Update the properties of a [privilegedAccessRoot](../resources/privilegedaccessroot.md) object.|
-|[Delete privilegedAccessRoot](../api/identitygovernance-delete-privilegedaccess.md)|None|Delete a [privilegedAccessRoot](../resources/privilegedaccessroot.md) object.|
-|[List privilegedAccessGroup](../api/privilegedaccessroot-list-group.md)|[privilegedAccessGroup](../resources/privilegedaccessgroup.md) collection|Get the privilegedAccessGroup resources from the group navigation property.|
-|[Create privilegedAccessGroup](../api/privilegedaccessroot-post-group.md)|[privilegedAccessGroup](../resources/privilegedaccessgroup.md)|Create a new privilegedAccessGroup object.| -->
 
 ## Properties
 |Property|Type|Description|
