@@ -2528,6 +2528,7 @@ Possible values for user account types (group membership), per Windows definitio
 |b2bDirectConnectUser|
 |otherExternalUser|
 |serviceProvider|
+|microsoftAdminPortals|
 
 ### signInAccessType values 
 
@@ -3551,6 +3552,21 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |none|
 |mfa|
+|unknownFutureValue|
+
+### authenticationStrengthResult values
+
+|Member|
+|:---|
+|notSet|
+|skippedForProofUp|
+|satisfied|
+|singleChallengeRequired|
+|multipleChallengesRequired|
+|singleRegistrationRequired|
+|multipleRegistrationsRequired|
+|cannotSatisfyDueToCombinationConfiguration|
+|cannotSatisfy|
 |unknownFutureValue|
 
 ### authenticationMethodModes values
