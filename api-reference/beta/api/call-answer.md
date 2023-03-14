@@ -115,7 +115,6 @@ Content-Length: 211
 
 ---
 
-
 #### Response
 Here is an example of the response. 
 

@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates/c75034
 
 ---
 
-
 #### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -205,7 +204,6 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates/c75034
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response

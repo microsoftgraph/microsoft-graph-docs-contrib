@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/directory/attributeSets/Engineering
 
 ---
 
-
 #### Response
 
 <!-- {

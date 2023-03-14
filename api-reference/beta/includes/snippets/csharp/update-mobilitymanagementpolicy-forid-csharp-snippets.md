@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var mobilityManagementPolicy = new MobilityManagementPolicy
+var requestBody = new MobilityManagementPolicy
 {
+	OdataType = "#microsoft.graph.mobilityManagementPolicy",
 	ComplianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance",
 	DiscoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
-	TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx"
+	TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx",
 };
+var result = await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"]
-	.Request()
-	.UpdateAsync(mobilityManagementPolicy);
 
 ```

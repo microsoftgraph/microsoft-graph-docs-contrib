@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/myRoles
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -4,21 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var inputIds = new List<String>()
+var requestBody = new Microsoft.Graph.Beta.Me.TranslateExchangeIds.TranslateExchangeIdsPostRequestBody
 {
-	"{rest-formatted-id-1}",
-	"{rest-formatted-id-2}"
+	InputIds = new List<string>
+	{
+		"{rest-formatted-id-1}",
+		"{rest-formatted-id-2}",
+	},
+	SourceIdType = ExchangeIdFormat.RestId,
+	TargetIdType = ExchangeIdFormat.RestImmutableEntryId,
 };
+var result = await graphClient.Me.TranslateExchangeIds.PostAsync(requestBody);
 
-var sourceIdType = ExchangeIdFormat.RestId;
-
-var targetIdType = ExchangeIdFormat.RestImmutableEntryId;
-
-await graphClient.Me
-	.TranslateExchangeIds(inputIds,targetIdType,sourceIdType)
-	.Request()
-	.PostAsync();
 
 ```

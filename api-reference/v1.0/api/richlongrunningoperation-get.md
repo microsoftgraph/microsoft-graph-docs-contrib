@@ -88,8 +88,6 @@ GET https://graph.microsoft.com/v1.0/sites/root/operations/contentTypeCopy,0x010
 
 ---
 
-
-
 ### Response
 
 The following is an example of the response.

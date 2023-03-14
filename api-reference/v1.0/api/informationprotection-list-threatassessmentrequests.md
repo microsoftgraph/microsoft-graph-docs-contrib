@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
