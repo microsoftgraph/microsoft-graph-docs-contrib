@@ -20,6 +20,35 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
+### eventPropagationStatus values 
+
+|Member|
+|:---|
+|none|
+|inProcessing|
+|failed|
+|success|
+|unknownFutureValue|
+
+### eventStatusType values 
+
+|Member|
+|:---|
+|pending|
+|error|
+|success|
+|notAvaliable|
+|unknownFutureValue|
+
+### queryType values 
+
+|Member|
+|:---|
+|files|
+|messages|
+|unknownFutureValue|
+
+
 
 <!--
 {

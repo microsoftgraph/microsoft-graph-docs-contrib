@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLobApp/1.0")
@@ -71,10 +71,10 @@ metadata := []graphmodels.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"format@odata.type" : "#microsoft.graph.security.contentFormat", 
+	"odataType" : "#microsoft.graph.security.contentFormat", 
 	"format" : "default", 
-	"state@odata.type" : "#microsoft.graph.security.contentState", 
-	"metadata@odata.type" : "#Collection(microsoft.graph.security.keyValuePair)", 
+	"odataType" : "#microsoft.graph.security.contentState", 
+	"odataType" : "#Collection(microsoft.graph.security.keyValuePair)", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
@@ -94,9 +94,9 @@ extendedProperties := []graphmodels.KeyValuePairable {
 }
 labelingOptions.SetExtendedProperties(extendedProperties)
 additionalData := map[string]interface{}{
-	"assignmentMethod@odata.type" : "#microsoft.graph.security.assignmentMethod", 
-	"labelId@odata.type" : "#Guid", 
-	"extendedProperties@odata.type" : "#Collection(microsoft.graph.security.keyValuePair)", 
+	"odataType" : "#microsoft.graph.security.assignmentMethod", 
+	"odataType" : "#Guid", 
+	"odataType" : "#Collection(microsoft.graph.security.keyValuePair)", 
 }
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)
