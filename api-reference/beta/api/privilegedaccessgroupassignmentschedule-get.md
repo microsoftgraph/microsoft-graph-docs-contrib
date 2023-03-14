@@ -32,11 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/assignmentSchedules/?$filter=groupId eq {groupId}
-```
-
-``` http
-GET /identityGovernance/privilegedAccess/group/assignmentSchedulesfilterByCurrentUser(on='principal')
+GET /identityGovernance/privilegedAccess/group/assignmentSchedules/{privilegedAccessGroupAssignmentScheduleId}
 ```
 
 ## Optional query parameters
@@ -65,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [privilegedAcc
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=groupId eq '14b9e371-5c2c-4ee5-a4a5-2980060d4f4e'
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules/8ba569e8-7024-f5f8-91ec-9b75d92897f1
 ```
 
 

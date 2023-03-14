@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq 'groupId'
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?filter=principalId eq 'principalId'
 ```
 
 ## Optional query parameters
@@ -60,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'
 ```
 
 
