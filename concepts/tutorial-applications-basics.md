@@ -333,6 +333,7 @@ Content-Type: application/json
 
 ### Create app roles on an application object
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-create-serviceprincipal-approles"
