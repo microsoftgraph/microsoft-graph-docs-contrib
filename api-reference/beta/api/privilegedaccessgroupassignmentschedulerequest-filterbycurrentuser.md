@@ -60,7 +60,7 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 
 ### Example 1: Retrieve a principal's requests scoped to a specific group and that are pending approval
 
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "privilegedaccessgroupassignmentschedulerequestthis.filterbycurrentuser"
