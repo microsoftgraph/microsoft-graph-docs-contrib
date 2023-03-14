@@ -321,6 +321,8 @@ items:
           href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: Validate password
           href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
@@ -336,6 +338,8 @@ items:
           href: api/user-post-approleassignments.md
         - name: Remove app role assignment
           href: api/user-delete-approleassignments.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -391,6 +395,8 @@ items:
       - name: Directory object
         href: resources/directoryobject.md
         items:
+        - name: Get delta
+          href: api/directoryobject-delta.md
         - name: Activate service plan (deprecated)
           href: api/user-activateserviceplan.md
         - name: Assign license
@@ -519,6 +525,8 @@ items:
           href: api/user-list-manager.md
         - name: List direct reports
           href: api/user-list-directreports.md
+        - name: Remove manager
+          href: api/user-delete-manager.md
       - name: Outlook settings
         items:
         - name: Mailbox settings
@@ -717,6 +725,8 @@ items:
           href: api/group-delete-owners.md
         - name: Get delta
           href: api/group-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
         - name: Evaluate dynamic membership
@@ -752,6 +762,8 @@ items:
           href: api/group-post-approleassignments.md
         - name: Remove app role assignment
           href: api/group-delete-approleassignments.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
       - name: Attachment
         items:
         - name: Attachment
@@ -958,6 +970,8 @@ items:
           href: api/application-delete.md
         - name: Get delta
           href: api/application-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: List deleted applications owned by user
@@ -1149,8 +1163,10 @@ items:
           href: api/serviceprincipal-list-createdobjects.md
         - name: List ownedObjects
           href: api/serviceprincipal-list-ownedobjects.md
-        - name: delta
+        - name: Get delta
           href: api/serviceprincipal-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: App role assignment
           href: resources/approleassignment.md
           items:
@@ -1879,9 +1895,8 @@ items:
         - name: Update
           href: api/bookingstaffmember-update.md
         - name: Delete
-          href: api/bookingstaffmember-delete.md
+          href: api/bookingstaffmember-delete.md 
     - name: Device and app management
-      expanded: true
       items:
       - name: Browser management (preview)
         displayName: Edge, Internet Explorer, IE mode, site list
@@ -11912,6 +11927,8 @@ items:
             href: api/administrativeunit-delete.md
           - name: Get delta
             href: api/administrativeunit-delta.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: Add a member
             href: api/administrativeunit-post-members.md
           - name: List members
@@ -11996,6 +12013,8 @@ items:
         - name: Device
           href: resources/device.md
           items:
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: List devices
             href: api/device-list.md
           - name: Create device
@@ -12047,6 +12066,8 @@ items:
             href: api/directoryobject-checkmembergroups.md
           - name: Get directoryObjects by ids
             href: api/directoryobject-getbyids.md
+          - name: Get delta
+            href: api/directoryobject-delta.md
           - name: Validate properties
             href: api/directoryobject-validateproperties.md
         - name: Directory recommendations (preview)
@@ -12104,6 +12125,8 @@ items:
             href: api/directoryrole-list-scopedmembers.md
           - name: Get delta
             href: api/directoryrole-delta.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:
@@ -12250,6 +12273,8 @@ items:
             href: api/orgcontact-get.md
           - name: Get org contact delta
             href: api/orgcontact-delta.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: Directory objects
             href: resources/directoryobject.md
             items:
@@ -14117,6 +14142,122 @@ items:
               href: api/agreement-post-files.md
             - name: List localized files
               href: api/agreement-list-files.md
+    - name: Industry data ETL (preview)
+      items:
+        - name: Overview
+          href: resources/industrydata-overview.md
+        - name: Azure Data Lake connector 
+          href: resources/industrydata-azuredatalakeconnector.md
+          items:
+            - name: List
+              href: api/industrydata-azuredatalakeconnector-list.md          
+            - name: Create
+              href: api/industrydata-azuredatalakeconnector-post.md
+            - name: Get
+              href: api/industrydata-azuredatalakeconnector-get.md
+            - name: Update
+              href: api/industrydata-azuredatalakeconnector-update.md
+            - name: Delete
+              href: api/industrydata-azuredatalakeconnector-delete.md              
+            - name: Get upload session
+              href: api/industrydata-azuredatalakeconnector-getuploadsession.md
+        - name: File validate operation
+          href: resources/industrydata-filevalidateoperation.md
+          items:
+            - name: List
+              href: api/industrydata-filevalidateoperation-list.md
+            - name: Get
+              href: api/industrydata-filevalidateoperation-get.md
+        - name: Inbound file flow
+          href: resources/industrydata-inboundfileflow.md
+          items:
+            - name: List
+              href: api/industrydata-inboundfileflow-list.md          
+            - name: Create
+              href: api/industrydata-inboundfileflow-post.md
+            - name: Get
+              href: api/industrydata-inboundfileflow-get.md
+            - name: Update
+              href: api/industrydata-inboundfileflow-update.md
+            - name: Delete
+              href: api/industrydata-inboundfileflow-delete.md                        
+        - name: Inbound flow
+          href: resources/industrydata-inboundflow.md
+          items:
+            - name: List
+              href: api/industrydata-inboundflow-list.md
+            - name: Create
+              href: api/industrydata-inboundflow-post.md
+            - name: Get
+              href: api/industrydata-inboundflow-get.md
+            - name: Update
+              href: api/industrydata-inboundflow-update.md
+            - name: Delete
+              href: api/industrydata-inboundflow-delete.md              
+        - name: Industry data connector
+          href: resources/industrydata-industrydataconnector.md
+          items:
+            - name: List
+              href: api/industrydata-industrydataconnector-list.md
+            - name: Create
+              href: api/industrydata-industrydataconnector-post.md
+            - name: Get
+              href: api/industrydata-industrydataconnector-get.md
+            - name: Update
+              href: api/industrydata-industrydataconnector-update.md
+            - name: Delete
+              href: api/industrydata-industrydataconnector-delete.md              
+            - name: Validate
+              href: api/industrydata-industrydataconnector-validate.md
+        - name: Industry data run
+          href: resources/industrydata-industrydatarun.md
+          items:
+            - name: List
+              href: api/industrydata-industrydatarun-list.md          
+            - name: Get
+              href: api/industrydata-industrydatarun-get.md
+            - name: Get statistics
+              href: api/industrydata-industrydatarun-getstatistics.md
+        - name: Reference definition
+          href: resources/industrydata-referencedefinition.md
+          items:
+            - name: List
+              href: api/industrydata-referencedefinition-list.md
+            - name: Get
+              href: api/industrydata-referencedefinition-get.md
+        - name: Role group
+          href: resources/industrydata-rolegroup.md
+          items:
+            - name: List
+              href: api/industrydata-rolegroup-list.md          
+            - name: Get
+              href: api/industrydata-rolegroup-get.md
+        - name: Source system definition
+          href: resources/industrydata-sourcesystemdefinition.md
+          items:
+            - name: List
+              href: api/industrydata-sourcesystemdefinition-list.md          
+            - name: Create
+              href: api/industrydata-sourcesystemdefinition-post.md
+            - name: Get
+              href: api/industrydata-sourcesystemdefinition-get.md
+            - name: Update
+              href: api/industrydata-sourcesystemdefinition-update.md
+            - name: Delete
+              href: api/industrydata-sourcesystemdefinition-delete.md
+        - name: Year time period definition
+          href: resources/industrydata-yeartimeperioddefinition.md
+          items:
+            - name: List
+              href: api/industrydata-yeartimeperioddefinition-list.md
+            - name: Create
+              href: api/industrydata-yeartimeperioddefinition-post.md
+            - name: Get
+              href: api/industrydata-yeartimeperioddefinition-get.md
+            - name: Update
+              href: api/industrydata-yeartimeperioddefinition-update.md
+            - name: Delete
+              href: api/industrydata-yeartimeperioddefinition-delete.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
