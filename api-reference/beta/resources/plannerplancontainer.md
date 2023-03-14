@@ -22,7 +22,7 @@ Planner currently supports the container types listed in the following table. Wh
 |group| Plan is contained by a [group](group.md).| `https://graph.microsoft.com/beta/groups/<id>` |
 |roster| Plan is contained by a [plannerRoster](plannerroster.md). | `https://graph.microsoft.com/beta/planner/rosters/<id>` |
 |project| Plan is contained by a Project from [Microsoft Project for the web](/project-for-the-web/projectforweb-admin-home). | Microsoft Project currently doesn't have a resource path on Microsoft Graph. Project details and members can be managed from [Microsoft Project](https://project.microsoft.com). |
-|driveItem| Plan is contained by a [driveItem](driveitem.md). | https://graph.microsoft.com/beta/drives/&lt;driveId&gt;/items/&lt;itemId&gt;|
+|driveItem| Plan is contained by a [driveItem](driveitem.md). | `https://graph.microsoft.com/beta/drives/<driveId>/items/<itemId>`|
 
 ## Properties
 |Property|Type|Description|
