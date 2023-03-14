@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Verifiable credentials type reference containing the type of the credential issued and list of accepted issuers.
 Used for the **credentialType** property of [verifiable credential settings](verifiablecredentialsettings.md).
 
 
@@ -34,11 +35,10 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.verifiableCredentialType",
-    "credentialTypes":[{
-        "@odata.type": "#microsoft.graph.verifiableCredentialType",
-        "issuers": ["did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>…"],
-        "credentialType": "VerifiedCredentialExpert"
-    }]
+      "@odata.type": "#microsoft.graph.verifiableCredentialType",
+      "issuers": [
+        "did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>…"
+      ],
+      "credentialType": "VerifiedCredentialExpert"
 }
 ```

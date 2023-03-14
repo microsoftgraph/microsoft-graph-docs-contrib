@@ -47,6 +47,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
 |questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
+|verifiableCredentialSettings|[verifiableCredentialSettings](verifiablecredentialsettings.md)|Claims and issuers settings for Verifiable credentials.|
 
 
 ## Relationships
@@ -98,6 +99,9 @@ The following is a JSON representation of the resource.
   },
   "accessReviewSettings": {
     "@odata.type": "microsoft.graph.assignmentReviewSettings"
+  },
+  "verifiableCredentialSettings": {
+    "@odata.type": "microsoft.graph.verifiableCredentialSettings"
   }
 }
 ```

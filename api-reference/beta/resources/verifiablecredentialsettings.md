@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Settings containing verifiable credentials types that are required for a presentation scenario. Administrators may configure an access package policy with these settings to require a requester to provide credentials while requesting for the package.
+
 Used for the **verifiableCredentialSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md).
 
 Subtypes include [verifiableCredentialType](verifiableCredentialType.md).

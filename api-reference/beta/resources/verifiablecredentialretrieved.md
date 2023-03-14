@@ -1,6 +1,6 @@
 ---
 title: "verifiableCredentialRetrieved resource type"
-description: "Verifiable credential requirements status indicating that the credential verfication is still required but has been retrieved by the user."
+description: "Verifiable credential requirements status indicating that the credential verification is still required but the presentation request has been retrieved by the user."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Verifiable credential requirements status indicating that the credential verification is still required but the presentation request has been retrieved by the user.
+Inherits from [verifiableCredentialRequirementStatus](../resources/verifiablecredentialrequirementstatus.md).
 Used for the **credentialType** property of [verifiable credential settings](verifiablecredentialsettings.md).
 
 
@@ -35,7 +37,7 @@ The following is a JSON representation of the resource.
 {
     "@odata.type": "#microsoft.graph.verifiableCredentialRetrieved",
     "credentialRetrieved":{
-        "expiryDateTime": "",
+        "expiryDateTime": "2023-02-10T00:35:53.214Z",
     }
 }
 ```

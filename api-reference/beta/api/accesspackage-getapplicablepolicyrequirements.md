@@ -203,3 +203,155 @@ Content-Type: application/json
     ]
 }
 ```
+
+### Example 3: Get policy requirements for verifiable credential status requirements
+
+#### Request
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
+```
+
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+        {
+            "policyId": "a93f6641-bcba-ec11-9d14-001a7dda7113",
+            "policyDisplayName": "VC Policy 1",
+            "policyDescription": "VC Policy Description 1",
+            "isApprovalRequiredForAdd": false,
+            "isApprovalRequiredForUpdate": false,
+            "isApprovalRequired": false,
+            "isApprovalRequiredForExtension": false,
+            "isCustomAssignmentScheduleAllowed": true,
+            "allowCustomAssignmentSchedule": true,
+            "isRequestorJustificationRequired": false,
+            "schedule": {
+                "startDateTime": null,
+                "duration": "P365D",
+                "stopDateTime": null,
+                "expiration": {
+                "endDateTime": null,
+                "duration": "P365D",
+                "type": "afterDuration"
+                },
+                "recurrence": null
+            },
+            "questions": [],
+            "existingAnswers": [],
+            "verifiableCredentialRequirementStatus": {
+                "@odata.type": "#microsoft.graph.verifiableCredentialRequired",
+                "expiryDateTime": "2022-05-10T23:32:47.8232759Z",
+                "url": "openid://vc/?request_uri=https://beta.did.msidentity.com/v1.0/87654321-0000-0000-0000-000000000000/verifiablecredentials/request/e4ef27ca-eb8c-4b63-823b-3b95140eac11",
+            }
+        }
+    ]
+}
+```
+
+### Example 4: Get policy requirements for verifiable credential status requirements after the QR code scan or URL link clicked by the requester
+
+#### Request
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
+```
+
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+        {
+            "policyId": "a93f6641-bcba-ec11-9d14-001a7dda7113",
+            "policyDisplayName": "VC Policy 1",
+            "policyDescription": "VC Policy Description 1",
+            "isApprovalRequiredForAdd": false,
+            "isApprovalRequiredForUpdate": false,
+            "isApprovalRequired": false,
+            "isApprovalRequiredForExtension": false,
+            "isCustomAssignmentScheduleAllowed": true,
+            "allowCustomAssignmentSchedule": true,
+            "isRequestorJustificationRequired": false,
+            "schedule": {
+                "startDateTime": null,
+                "duration": "P365D",
+                "stopDateTime": null,
+                "expiration": {
+                "endDateTime": null,
+                "duration": "P365D",
+                "type": "afterDuration"
+                },
+                "recurrence": null
+            },
+            "questions": [],
+            "existingAnswers": [],
+            "verifiableCredentialRequirementStatus": {
+                "@odata.type": "#microsoft.graph.verifiableCredentialRetrieved",
+                "expiryDateTime": "2022-05-10T23:32:47.8232759Z",
+            }
+        }
+    ]
+}
+```
+
+### Example 5: Get policy requirements for verifiable credential status requirements after credentials have been presented and verified
+#### Request
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
+```
+
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+        {
+            "policyId": "a93f6641-bcba-ec11-9d14-001a7dda7113",
+            "policyDisplayName": "VC Policy 1",
+            "policyDescription": "VC Policy Description 1",
+            "isApprovalRequiredForAdd": false,
+            "isApprovalRequiredForUpdate": false,
+            "isApprovalRequired": false,
+            "isApprovalRequiredForExtension": false,
+            "isCustomAssignmentScheduleAllowed": true,
+            "allowCustomAssignmentSchedule": true,
+            "isRequestorJustificationRequired": false,
+            "schedule": {
+                "startDateTime": null,
+                "duration": "P365D",
+                "stopDateTime": null,
+                "expiration": {
+                "endDateTime": null,
+                "duration": "P365D",
+                "type": "afterDuration"
+                },
+                "recurrence": null
+            },
+            "questions": [],
+            "existingAnswers": [],
+            "verifiableCredentialRequirementStatus": {
+                "@odata.type": "#microsoft.graph.verifiableCredentialVerified"
+            }
+        }
+    ]
+}
+```

@@ -1,6 +1,6 @@
 ---
 title: "verifiableCredentialRequired resource type"
-description: "Verifiable credential requirements status indicating that credentials verification is required and returns the information returned by the presentation request. The information can be provided to the user to initiate the credential verification process."
+description: "Verifiable credential requirements status indicating that credentials verification is required and returns the information required to initiate the credential verification process."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Verifiable credential requirements status indicating that credentials verification is required and returns the information required to initiate the credential verification process.
 Used for the **credentialType** property of [verifiable credential settings](verifiablecredentialsettings.md).
 
 
@@ -36,8 +37,8 @@ The following is a JSON representation of the resource.
 {
     "@odata.type": "#microsoft.graph.verifiableCredentialRequired",
     "credentialRequied":{
-        "expiryDateTime": "",
-        "url": "VerifiedCredentialExpert"
+        "expiryDateTime": "2023-02-10T00:35:53.214Z",
+        "url": "openid://vc/?request_uri=https://beta.did.msidentity.com/v1.0/87654321-0000-0000-0000-000000000000/verifiablecredentials/request/e4ef27ca-eb8c-4b63-823b-3b95140eac11"
     }
 }
 ```
