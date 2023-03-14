@@ -23,11 +23,18 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|scheduleRequestActions| Represents the type of operation on the access assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. Required.|
-|isValidationOnly|Boolean|Represents whether the request intends to evaluate the payload without writing to the system. This can be used in UI to enable or disable scenarios. The default value is `false`. Optional.|
-|justification|String|Represents the justification for the request. Optional.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the access assignment or eligibility request. The request can be for a single occurrence or multiple recurring instances. Optional.|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Represents the ticket information provided by the caller for tracking purposes. Optional.|
+|action|String|Represents the type of operation on the group membership or ownership assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`. <br/><ul><li>`adminAssign`: For administrators to assign roles to principals.</li><li>`adminRemove`: For administrators to remove principals from roles.</li><li> `adminUpdate`: For administrators to change existing role assignments.</li><li>`adminExtend`: For administrators to extend expiring assignments.</li><li>`adminRenew`: For administrators to renew expired assignments.</li><li>`selfActivate`: For principals to activate their assignments.</li><li>`selfDeactivate`: For principals to deactivate their active assignments.</li></ul>|
+|approvalId|String|The identifier of the approval of the request. Inherited from [request](../resources/request.md).|
+|completedDateTime|DateTimeOffset|The request completion date time. Inherited from [request](../resources/request.md).|
+|createdBy|[identitySet](../resources/identityset.md)|The principal that created this request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`, and on `null` values).|
+|createdDateTime|DateTimeOffset|The request creation date time. Inherited from [request](../resources/request.md). Read-only.|
+|customData|String|Free text field to define any custom data for the request. Not used. Inherited from [request](../resources/request.md).|
+|id|String|The unique identifier for the **privilegedAccessGroupAssignmentScheduleRequest** object. Key, not nullable, Read-only. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
+|isValidationOnly|Boolean|Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
+|justification|String|A message provided by users and administrators when create they create the **privilegedAccessGroupAssignmentScheduleRequest** object.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the group membership or ownership assignment. Recurring schedules are currently unsupported.|
+|status|String|The status of the group membership or ownership assignment request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`).|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the group membership or ownership assignment request including details of the ticket number and ticket system.|
 
 ## Relationships
 None.
