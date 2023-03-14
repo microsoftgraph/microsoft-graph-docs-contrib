@@ -1879,9 +1879,8 @@ items:
         - name: Update
           href: api/bookingstaffmember-update.md
         - name: Delete
-          href: api/bookingstaffmember-delete.md
+          href: api/bookingstaffmember-delete.md 
     - name: Device and app management
-      expanded: true
       items:
       - name: Browser management (preview)
         displayName: Edge, Internet Explorer, IE mode, site list
@@ -14117,6 +14116,122 @@ items:
               href: api/agreement-post-files.md
             - name: List localized files
               href: api/agreement-list-files.md
+    - name: Industry data ETL (preview)
+      items:
+        - name: Overview
+          href: resources/industrydata-overview.md
+        - name: Azure Data Lake connector 
+          href: resources/industrydata-azuredatalakeconnector.md
+          items:
+            - name: List
+              href: api/industrydata-azuredatalakeconnector-list.md          
+            - name: Create
+              href: api/industrydata-azuredatalakeconnector-post.md
+            - name: Get
+              href: api/industrydata-azuredatalakeconnector-get.md
+            - name: Update
+              href: api/industrydata-azuredatalakeconnector-update.md
+            - name: Delete
+              href: api/industrydata-azuredatalakeconnector-delete.md              
+            - name: Get upload session
+              href: api/industrydata-azuredatalakeconnector-getuploadsession.md
+        - name: File validate operation
+          href: resources/industrydata-filevalidateoperation.md
+          items:
+            - name: List
+              href: api/industrydata-filevalidateoperation-list.md
+            - name: Get
+              href: api/industrydata-filevalidateoperation-get.md
+        - name: Inbound file flow
+          href: resources/industrydata-inboundfileflow.md
+          items:
+            - name: List
+              href: api/industrydata-inboundfileflow-list.md          
+            - name: Create
+              href: api/industrydata-inboundfileflow-post.md
+            - name: Get
+              href: api/industrydata-inboundfileflow-get.md
+            - name: Update
+              href: api/industrydata-inboundfileflow-update.md
+            - name: Delete
+              href: api/industrydata-inboundfileflow-delete.md                        
+        - name: Inbound flow
+          href: resources/industrydata-inboundflow.md
+          items:
+            - name: List
+              href: api/industrydata-inboundflow-list.md
+            - name: Create
+              href: api/industrydata-inboundflow-post.md
+            - name: Get
+              href: api/industrydata-inboundflow-get.md
+            - name: Update
+              href: api/industrydata-inboundflow-update.md
+            - name: Delete
+              href: api/industrydata-inboundflow-delete.md              
+        - name: Industry data connector
+          href: resources/industrydata-industrydataconnector.md
+          items:
+            - name: List
+              href: api/industrydata-industrydataconnector-list.md
+            - name: Create
+              href: api/industrydata-industrydataconnector-post.md
+            - name: Get
+              href: api/industrydata-industrydataconnector-get.md
+            - name: Update
+              href: api/industrydata-industrydataconnector-update.md
+            - name: Delete
+              href: api/industrydata-industrydataconnector-delete.md              
+            - name: Validate
+              href: api/industrydata-industrydataconnector-validate.md
+        - name: Industry data run
+          href: resources/industrydata-industrydatarun.md
+          items:
+            - name: List
+              href: api/industrydata-industrydatarun-list.md          
+            - name: Get
+              href: api/industrydata-industrydatarun-get.md
+            - name: Get statistics
+              href: api/industrydata-industrydatarun-getstatistics.md
+        - name: Reference definition
+          href: resources/industrydata-referencedefinition.md
+          items:
+            - name: List
+              href: api/industrydata-referencedefinition-list.md
+            - name: Get
+              href: api/industrydata-referencedefinition-get.md
+        - name: Role group
+          href: resources/industrydata-rolegroup.md
+          items:
+            - name: List
+              href: api/industrydata-rolegroup-list.md          
+            - name: Get
+              href: api/industrydata-rolegroup-get.md
+        - name: Source system definition
+          href: resources/industrydata-sourcesystemdefinition.md
+          items:
+            - name: List
+              href: api/industrydata-sourcesystemdefinition-list.md          
+            - name: Create
+              href: api/industrydata-sourcesystemdefinition-post.md
+            - name: Get
+              href: api/industrydata-sourcesystemdefinition-get.md
+            - name: Update
+              href: api/industrydata-sourcesystemdefinition-update.md
+            - name: Delete
+              href: api/industrydata-sourcesystemdefinition-delete.md
+        - name: Year time period definition
+          href: resources/industrydata-yeartimeperioddefinition.md
+          items:
+            - name: List
+              href: api/industrydata-yeartimeperioddefinition-list.md
+            - name: Create
+              href: api/industrydata-yeartimeperioddefinition-post.md
+            - name: Get
+              href: api/industrydata-yeartimeperioddefinition-get.md
+            - name: Update
+              href: api/industrydata-yeartimeperioddefinition-update.md
+            - name: Delete
+              href: api/industrydata-yeartimeperioddefinition-delete.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:

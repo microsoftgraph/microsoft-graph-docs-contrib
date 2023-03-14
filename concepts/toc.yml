@@ -478,6 +478,8 @@ items:
                   - name: Assign Azure AD roles with PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
+      - name: Industry data ETL (preview)
+        href: industrydata-concept-overview.md
       - name: Mail
         items:
           - name: Overview
