@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [privilegedAcc
 
 ## Examples
 
-### Example 1
+### Example 1: Get all eligibility schedule requests
 
 #### Request
 The following is an example of a request.
