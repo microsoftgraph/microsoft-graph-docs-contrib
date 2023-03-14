@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
