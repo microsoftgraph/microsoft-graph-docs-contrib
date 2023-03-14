@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [privileg
 
 ## Examples
 
-### Example 1: Create an eligible schedule request (Admin adds eligible assignment for user)
+### Example 1: An admin creates an eligible group ownership request for a principal
 
 The following request creates an eligibility schedule request to make a principal eligible to be a group owner. The eligible ownership expires after two hours.
 
