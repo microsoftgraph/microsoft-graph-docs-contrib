@@ -68,11 +68,9 @@ You can specify the following properties when creating a **customTaskExtension**
 
 If successful, this method returns a `201 Created` response code and a [microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) object in the response body.
 
-## Examples
+## Example
 
-### Example 1 - Create a custom task extension using the azureADTokenAuthentication configuration type
-
-#### Request
+### Request
 
 The following is an example of a request.
 
@@ -111,7 +109,7 @@ Content-length: 588
 }
 ```
 
-#### Response
+### Response
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -141,94 +139,6 @@ Content-Type: application/json
 "authenticationConfiguration": {
 "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
 "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
-},
-"clientConfiguration": {
-"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-"maximumRetries": 1,
-"timeoutInMilliseconds": 1000
-},
-"callbackConfiguration": {
-"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-"timeoutDuration": "PT5M"
-}
-}
-```
-
-### Example 2 - Create a custom task extension using the azureADPopTokenAuthentication configuration type
-
-#### Request
-
-The following is an example of a request.
-
-<!-- {
-  "blockType": "request",
-  "name": "lifecycleworkflows_create_customtaskextension_from_"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions
-Content-Type: application/json
-Content-length: 588
-
-{
-"displayName": "Grant manager access to mailbox and OneDrive",
-"description": "Grant manager access to mailbox and OneDrive",
-"endpointConfiguration": {
-"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-"resourceGroupName": "RG-LCM",
-"logicAppWorkflowName": "ManagerAccess"
-},
-"authenticationConfiguration": {
-"@odata.type": "#microsoft.graph.azureADPopTokenAuthentication"
-},
-"clientConfiguration": {
-"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-"maximumRetries": 1,
-"timeoutInMilliseconds": 1000
-},
-"callbackConfiguration": {
-"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-"timeoutDuration": "PT5M",
-"timeoutDuration": "PT1H",
-"authorizedApps": [
-{
-"id": "47ae1c37-309c-4841-bdeb-d6fe154f50da"
-}
-]
-}
-}
-```
-
-#### Response
-
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.identityGovernance.customTaskExtension_azureADtoken"
-}
--->
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
-"id": "ee2590e4-4572-4820-a397-969ecd7bd6a9",
-"displayName": "Grant manager access to mailbox and OneDrive",
-"description": "Grant manager access to mailbox and OneDrive",
-"createdDateTime": "2022-08-24T22:37:46.1790566Z",
-"lastModifiedDateTime": "2022-08-24T22:37:46.179062Z",
-"endpointConfiguration": {
-"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-"resourceGroupName": "RG-LCM",
-"logicAppWorkflowName": "ManagerAccess"
-},
-"authenticationConfiguration": {
-"@odata.type": "#microsoft.graph.azureADPopTokenAuthentication"
 },
 "clientConfiguration": {
 "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
