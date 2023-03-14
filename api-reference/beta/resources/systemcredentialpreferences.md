@@ -1,6 +1,6 @@
 ---
 title: "systemCredentialPreferences resource type"
-description: "A complex type that defines settings to prompt users in the organization to use the most appropriate credentials among the ones registered by the user. Presently, a user has selected the default authentication method. With this implementation, this chosen credential is determined dynamically based on various factors including security, availability, and user experience. This credential will override the current method selected by the user. At present this will only apply to MFA. Going forward, in future releases, this will be applicable for all user authentications."
+description: "Represents a resource that dynamically detects and prompts users with the users preferred multifactor authentication method from the registered methods."
 author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Dynamically detect and prompt users with their preferred multi-factor authentication method from the registered methods
+Represents a resource that dynamically detects and prompts users with the users preferred multifactor authentication method from the registered methods.
 
 ## Properties
 

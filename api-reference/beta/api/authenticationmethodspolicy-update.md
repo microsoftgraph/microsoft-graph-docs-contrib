@@ -45,7 +45,7 @@ PATCH /policies/authenticationMethodsPolicy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods. 
+In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -136,20 +136,29 @@ Content-Type: application/json
   "policyVersion": "1.4",
   "registrationEnforcement": {
     "authenticationMethodsRegistrationCampaign": {
-        "snoozeDurationInDays": 1,
-        "state": "enabled",
-        "excludeTargets": [],
-        "includeTargets": [
-            {
-                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
-                "targetType": "group",
-                "targetedAuthenticationMethod": "microsoftAuthenticator"
-            }
-        ]
+      "snoozeDurationInDays": 1,
+      "state": "enabled",
+      "excludeTargets": [],
+      "includeTargets": [
+        {
+          "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+          "targetType": "group",
+          "targetedAuthenticationMethod": "microsoftAuthenticator"
+        }
+      ]
     }
   },
   "systemCredentialPreferences": {
-    "@odata.type": "microsoft.graph.systemCredentialPreferences"
+    "@odata.type": "#microsoft.graph.systemCredentialPreferences",
+    "excludeTargets": [],
+    "id": "systemCredentialPreferences",
+    "includeTargets": [
+      {
+        "id": "all_users",
+        "targetType": "group"
+      }
+    ],
+    "state": "enabled"
   }
 }
 ```
