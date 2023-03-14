@@ -1,5 +1,5 @@
 ---
-title: "List taskProcessingResults (for a run)"
+title: "List taskProcessingResults"
 description: "Get the taskProcessingResult resources from a run."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List taskProcessingResults (for a run)
+# List taskProcessingResults
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 ### Response
 
 The following is an example of the response
@@ -193,7 +192,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

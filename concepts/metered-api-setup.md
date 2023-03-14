@@ -8,18 +8,13 @@ ms.custom: scenarios:getting-started
 
 # Enable metered Microsoft 365 APIs and services
 
-Some Microsoft 365 APIs and services in Microsoft Graph are metered and require payment for use. For a current list of APIs that require payment, see [Metered Microsoft 365 APIs and services](metered-api-list.md).
+Some Microsoft 365 APIs and services in Microsoft Graph are [metered and require payment for use](metered-api-overview.md). For a current list of APIs that require payment, see [Metered Microsoft 365 APIs and services](metered-api-list.md).
 
 To consume metered Microsoft 365 APIs and services, the application registration for the Azure Active Directory application that consumes the APIs must be associated with an Azure subscription. This subscription will be billed for any metered charges. This association also allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of the application. 
 
 This article describes how to associate your application with an Azure subscription.
 
-## Known limitations
-
-The following limitations apply to metered APIs:
-
-- Metered Microsoft 365 APIs and services are not currently available in national cloud deployments, including Microsoft 365 GCC deployments accessed through the worldwide Microsoft Graph endpoint. For details about national clouds, see [National cloud deployments](deployments.md).
-- The target application must be a confidential client application (for example, web application, web API, or daemon/service). Public client applications (desktop and mobile applications) are not supported.
+[!INCLUDE [Metered API Known Limitations](includes/metered-api-known-limitations.md)]
 
 ## Prerequisites
 
@@ -50,7 +45,7 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
 3. Use **az resource create** to create a new instance of the **Microosft.GraphServices/accounts** resource type to associate your application registration with the active subscription. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the newly created resource.
 
   ```PowerShell
-  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId\`": `"myAppGUID`"}" --latest-include-preview --location Global –-subscription mySubscriptionGUID
+  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId`": `"myAppGUID`"}" --latest-include-preview --location Global --subscription mySubscriptionGUID
   ```
 
   | Parameter | Description |

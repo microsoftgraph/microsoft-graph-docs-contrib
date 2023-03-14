@@ -101,7 +101,6 @@ Content-Type: application/json
 
 ---
 
-
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {

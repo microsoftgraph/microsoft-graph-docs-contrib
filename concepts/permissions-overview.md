@@ -155,7 +155,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 ---
 
-
 #### Response
 The following object is an example of the response:
 ```json

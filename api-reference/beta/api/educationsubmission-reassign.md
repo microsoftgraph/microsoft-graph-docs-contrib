@@ -90,7 +90,6 @@ POST https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-
 
 ---
 
-
 #### Response
 The following is an example of the response when `Prefer: include-unknown-enum-members` is NOT provided in the request header and the submission hasn't been returned before.
 
@@ -194,7 +193,6 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header and the submission hasn't been returned before.

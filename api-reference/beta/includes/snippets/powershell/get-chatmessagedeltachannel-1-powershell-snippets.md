@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Top 2 
+Get-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -Top 2 
 
 ```

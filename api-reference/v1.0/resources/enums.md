@@ -11,6 +11,17 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### userPurpose values
+| Member             | 
+|:-------------------|
+| user               |
+| linked             |
+| shared             |
+| room               |
+| equipment          |
+| others             |
+| unknownFutureValue |
+
 ### bookingsAvailabilityStatus values
 |Member|
 |:---|

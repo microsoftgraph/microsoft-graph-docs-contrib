@@ -104,7 +104,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-
 ### Response
 
 Here is an example of the response. The **completedDateTime** and other date-related properties in the response are expressed in PST.

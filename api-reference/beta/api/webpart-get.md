@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/webParts
 
 ---
 
-
 #### Response
 
 The following is an example of the response
