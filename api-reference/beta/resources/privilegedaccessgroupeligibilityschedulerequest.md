@@ -35,7 +35,7 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |createdDateTime|DateTimeOffset|The request creation date time. Inherited from [request](../resources/request.md). Read-only.|
 |customData|String|Free text field to define any custom data for the request. Not used. Inherited from [request](../resources/request.md).|
 |groupId|String|The identifier of the group representing the scope of the membership and ownership eligibility through PIM for groups. Required.|
-|id|String|The unique identifier for the **privilegedAccessGroupAssignmentScheduleRequest** object. Key, not nullable, Read-only. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
+|id|String|The unique identifier for the **privilegedAccessGroupEligibilityScheduleRequest** object. Key, not nullable, read-only. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 |isValidationOnly|Boolean|Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when create they create the **privilegedAccessGroupAssignmentScheduleRequest** object.|
 |principalId|String|The identifier of the principal whose membership or ownership eligibility to the group is managed through PIM for groups. Required.|
