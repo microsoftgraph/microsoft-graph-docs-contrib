@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is an example JSON representation of the resource. See [Planner Task Recurrence Concepts](../../../concepts/planner-task-recurrence-concept.md) for real examples.
+The following is a JSON representation of the resource. For real-looking examples that include this resource, see [Configuring task recurrence in Planner](../../../concepts/planner-task-recurrence-concept.md).
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerRecurrenceSchedule"
