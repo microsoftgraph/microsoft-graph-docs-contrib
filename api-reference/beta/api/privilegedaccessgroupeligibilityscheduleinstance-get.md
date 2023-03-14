@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [privilegedAcc
 
 ### Example 1: Get all eligibility schedule instances
 
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_privilegedaccessgroupeligibilityscheduleinstance"
