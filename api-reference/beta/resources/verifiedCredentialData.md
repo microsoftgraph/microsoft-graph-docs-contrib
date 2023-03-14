@@ -21,7 +21,7 @@ Used for the **verifiedCredentialsData** property of [access package assignment 
 |:---|:---|:---|
 |authority|String| The authority ID for the issuer. |
 |type|Collection string| The list of credential types provided by the issuer. |
-|claims|[verifiableCredentialClaims](verifiableCredentialClaims.md)| Key value pair of claims retrieved from the credential that was provided and verified. |
+|claims|[verifiedCredentialClaims](verifiedcredentialclaims.md)| Key value pair of claims retrieved from the credential that was provided and verified. |
 
 ## Relationships
 None.

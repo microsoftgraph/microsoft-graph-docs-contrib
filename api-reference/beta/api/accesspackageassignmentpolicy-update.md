@@ -349,7 +349,6 @@ To remove the verifiable credentials requirement from a policy, assign an empty 
 
 #### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
