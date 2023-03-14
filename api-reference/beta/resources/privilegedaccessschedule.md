@@ -25,7 +25,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|When the schedule was created. Optional.|
-|createdUsing|String|The identifier of the access assignment or eligibility request that creates this schedule. Optional.|
+|createdUsing|String|The identifier of the access assignment or eligibility request that created this schedule. Optional.|
 |id|String|The identifier of the schedule. Required. Inherited from [entity](../resources/entity.md).|
 |modifiedDateTime|DateTimeOffset|When the schedule was last modified. Optional.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the period of the access assignment or eligibility. The scheduleInfo can represent a single occurrence or multiple recurring instances. Required.|
