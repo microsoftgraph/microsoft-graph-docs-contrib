@@ -32,7 +32,7 @@ Defines authentication methods and the users that are allowed to use them to sig
 |policyMigrationState|authenticationMethodsPolicyMigrationState|The state of migration of the authentication methods policy from the legacy multifactor authentication and self-service password reset (SSPR) policies. The possible values are: <br/><li>`premigration` - means the authentication methods policy is used for authentication only, legacy policies are respected. <li>`migrationInProgress` - means the authentication methods policy is used for both authenication and SSPR, legacy policies are respected. <li>`migrationComplete` - means the authentication methods policy is used for authentication and SSPR, legacy policies are ignored. <li>`unknownFutureValue` - Evolvable enumeration sentinel value. Do not use. |
 |reconfirmationInDays|Int32|Days before the user will be asked to reconfirm their method. |
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to remind users to set up targeted authentication methods.|
-
+|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with the most preferred credential for multi factor authentication|
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -59,8 +59,18 @@ The following is a JSON representation of the resource.
   "registrationEnforcement": {
     "@odata.type": "microsoft.graph.registrationEnforcement"
   },
-  "systemCredentialPreferences": {
-    "@odata.type": "microsoft.graph.systemCredentialPreferences"
-  }
+  {
+    "@odata.type": "#microsoft.graph.systemCredentialPreferences",
+    "excludeTargets": [
+    ],
+    "id": "systemCredentialPreferences",
+    "includeTargets": [
+        {
+            "id": "all_users",
+            "targetType": "group"
+        }
+    ],
+    "state": "enabled"
+}
 }
 ```
