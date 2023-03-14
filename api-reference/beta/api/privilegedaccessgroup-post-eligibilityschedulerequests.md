@@ -49,9 +49,12 @@ You can specify the following properties when creating a **privilegedAccessGroup
 |Property|Type|Description|
 |:---|:---|:---|
 |accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership eligibility relationship to the group. The possible values are: `owner`, `member`. Required.|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Optional.|
+|action|String|Represents the type of the operation on the group membership or ownership assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`. <br/><ul><li>`adminAssign`: For administrators to assign roles to principals.</li><li>`adminRemove`: For administrators to remove principals from roles.</li><li> `adminUpdate`: For administrators to change existing role assignments.</li><li>`adminExtend`: For administrators to extend expiring assignments.</li><li>`adminRenew`: For administrators to renew expired assignments.</li><li>`selfActivate`: For principals to activate their assignments.</li><li>`selfDeactivate`: For principals to deactivate their active assignments.</li></ul>|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Required.|
+|justification|String|A message provided by users and administrators when create they create the **privilegedAccessGroupAssignmentScheduleRequest** object.|
 |principalId|String|The identifier of the principal whose membership or ownership eligibility to the group is managed through PIM for groups. Required.|
-|targetScheduleId|String|The identifier of the schedule that's created from the request. Optional.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the group membership or ownership assignment for PIM for groups. Recurring schedules are currently unsupported. Required.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the group membership or ownership assignment request including details of the ticket number and ticket system. Optional.|
 
 
 ## Response
