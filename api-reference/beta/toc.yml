@@ -321,6 +321,8 @@ items:
           href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: Validate password
           href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
@@ -336,6 +338,8 @@ items:
           href: api/user-post-approleassignments.md
         - name: Remove app role assignment
           href: api/user-delete-approleassignments.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -391,6 +395,8 @@ items:
       - name: Directory object
         href: resources/directoryobject.md
         items:
+        - name: Get delta
+          href: api/directoryobject-delta.md
         - name: Activate service plan (deprecated)
           href: api/user-activateserviceplan.md
         - name: Assign license
@@ -717,6 +723,8 @@ items:
           href: api/group-delete-owners.md
         - name: Get delta
           href: api/group-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
         - name: Evaluate dynamic membership
@@ -752,6 +760,8 @@ items:
           href: api/group-post-approleassignments.md
         - name: Remove app role assignment
           href: api/group-delete-approleassignments.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
       - name: Attachment
         items:
         - name: Attachment
@@ -958,6 +968,8 @@ items:
           href: api/application-delete.md
         - name: Get delta
           href: api/application-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: List deleted applications owned by user
@@ -1149,8 +1161,10 @@ items:
           href: api/serviceprincipal-list-createdobjects.md
         - name: List ownedObjects
           href: api/serviceprincipal-list-ownedobjects.md
-        - name: delta
+        - name: Get delta
           href: api/serviceprincipal-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: App role assignment
           href: resources/approleassignment.md
           items:
@@ -11911,6 +11925,8 @@ items:
             href: api/administrativeunit-delete.md
           - name: Get delta
             href: api/administrativeunit-delta.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: Add a member
             href: api/administrativeunit-post-members.md
           - name: List members
@@ -11995,6 +12011,8 @@ items:
         - name: Device
           href: resources/device.md
           items:
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: List devices
             href: api/device-list.md
           - name: Create device
@@ -12046,6 +12064,8 @@ items:
             href: api/directoryobject-checkmembergroups.md
           - name: Get directoryObjects by ids
             href: api/directoryobject-getbyids.md
+          - name: Get delta
+            href: api/directoryobject-delta.md
           - name: Validate properties
             href: api/directoryobject-validateproperties.md
         - name: Directory recommendations (preview)
@@ -12103,6 +12123,8 @@ items:
             href: api/directoryrole-list-scopedmembers.md
           - name: Get delta
             href: api/directoryrole-delta.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:
@@ -12249,6 +12271,8 @@ items:
             href: api/orgcontact-get.md
           - name: Get org contact delta
             href: api/orgcontact-delta.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: Directory objects
             href: resources/directoryobject.md
             items:
