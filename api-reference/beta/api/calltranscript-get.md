@@ -173,7 +173,8 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 #### Response
 
-Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content.
+Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content. Negative offsets indicate that the transcription began while the conversation was ongoing.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -250,7 +251,13 @@ WEBVTT
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a transcript test.</v>
 ```
+
+>**Note:** Examples 4 and 5 will be deprecated.
+
 ### Example 4: Get a callTranscript content specifying Accept header
+
+>**Note:** As example 4 is getting deprecated, Accept header will also be deprecated.
+
 #### Request
 
 # [HTTP](#tab/http)
@@ -310,6 +317,9 @@ User Name
 This is a transcript test.
 ```
 ### Example 5: Get a callTranscript content with $format getting precedence over the Accept header
+
+>**Note:** As example 5 is getting deprecated, $format query parameter will also be deprecated.
+
 #### Request
 
 # [HTTP](#tab/http)
