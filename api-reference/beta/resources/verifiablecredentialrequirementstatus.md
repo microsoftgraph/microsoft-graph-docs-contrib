@@ -1,7 +1,7 @@
 ---
 title: "verifiableCredentialRequirementStatus resource type"
 description: "Abstract type representing the verifiable credential requirement status for an access package."
-author: "udmaha"
+author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

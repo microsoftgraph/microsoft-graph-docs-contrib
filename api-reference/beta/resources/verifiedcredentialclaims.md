@@ -1,7 +1,7 @@
 ---
 title: "verifiedCredentialClaims resource type"
 description: "Open type containing the key value pair of the claims retrieved from the credentials. Names must be valid property names, values may be restricted to a list of types via an annotation with term `Validation.OpenPropertyTypeConstraint`."
-author: "udmaha"
+author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
