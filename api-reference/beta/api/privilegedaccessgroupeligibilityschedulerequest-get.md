@@ -109,7 +109,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Get specific properties of all eligibility schedule requests
 
 #### Request
 The following is an example of a request.
