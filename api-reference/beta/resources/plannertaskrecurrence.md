@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents recurrence for a [Planner task](plannertask.md) in Microsoft 365. This resource allows clients to define and edit recurrence for a Planner Task. To add or edit recurrence, clients specify the **schedule**. For details, see [plannerRecurrenceSchedule](../resources/plannerrecurrenceschedule.md). To cancel recurrence, clients set the same **schedule** to `null`. In addition to the schedule, the **plannerTaskRecurrence** resource provides several more system-generated, read-only properties, useful for tracking and understanding recurrence. For a Planner task, once recurrence has been defined, it can't be set to `null`; although for tasks that have never had recurrence defined, recurrence is `null`.
+Represents recurrence for a [Planner task](plannertask.md) in Microsoft 365, allowing clients to define and edit recurrence for a Planner task. To add or edit recurrence, clients specify the **schedule**. For details, see [plannerRecurrenceSchedule](../resources/plannerrecurrenceschedule.md). To cancel recurrence, clients set the same **schedule** to `null`. The **plannerTaskRecurrence** provides also system-generated, read-only properties, useful for tracking and understanding recurrence. For a Planner task, once recurrence has been defined, it can't be set to `null`; although for tasks that have never had recurrence defined, recurrence is `null`.
 
 Given a non-recurring task, a client can make it into a recurring task by specifying **schedule**. When the schedule is added, Planner populates the **seriesId** and **occurrenceId** properties, as well as other properties. An **occurrenceId** of `1` indicates that this is the first task in the series. The second task in the series has an **occurrenceId** of `2`. The **seriesId** is a unique new string, created for the first task. The second task and all future tasks in the series inherit the **seriesId** from the first task, indicating that they are part of the same _recurring series_.
 
 When a _task with active recurrence_ is marked complete (**percentComplete** set to `100`), a new task is created to continue the series. Alternately, if a _task with active recurrence_ is deleted without cancelling recurrence, a new task is also created to continue the series. If the series should be discontinued, the **schedule** should first be set to `null`, then the task can be deleted and recurrence stops.
 
-Further information and examples are described in [Planner Task Recurrence Concepts](../../../concepts/planner-task-recurrence-concept.md).
+For more details, see [Planner Task Recurrence Concepts](../../../concepts/planner-task-recurrence-concept.md).
 
 ## Properties
 

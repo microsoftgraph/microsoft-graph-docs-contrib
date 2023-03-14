@@ -1,6 +1,6 @@
 ---
 title: "plannerRecurrenceSchedule resource type"
-description: "Represents the schedule for recurrence for a Planner task in Microsoft 365."
+description: "Represents the schedule for recurrence of a Planner task in Microsoft 365."
 author: "DaMoksha"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the schedule for recurrence for a [Planner task](plannertask.md) in Microsoft 365. Currently, **plannerRecurrenceSchedule** includes a recurrence pattern definition (**pattern**), a start date for that pattern (**patternStartDateTime**), and a system-generated property that indicates the next occurrence date (**nextOccurrenceDateTime**). To define a recurrence schedule, clients must specify the **pattern** and **patternStartDateTime**; the service calculates the **nextOccurrenceDateTime**.
+Represents the schedule for recurrence of a [Planner task](plannertask.md) in Microsoft 365. Currently, **plannerRecurrenceSchedule** includes a recurrence pattern definition (**pattern**), a start date for that pattern (**patternStartDateTime**), and a system-generated property that indicates the next occurrence date (**nextOccurrenceDateTime**). To define a recurrence schedule, clients must specify the **pattern** and **patternStartDateTime**; the service calculates the **nextOccurrenceDateTime**.
 
-Further information and examples are described in [Planner Task Recurrence Concepts](../../../concepts/planner-task-recurrence-concept.md).
+For more details, see [Planner Task Recurrence Concepts](../../../concepts/planner-task-recurrence-concept.md).
 
 ## Properties
 
