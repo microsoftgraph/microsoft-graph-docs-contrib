@@ -110,7 +110,7 @@ Content-Type: application/json
 
 ### Example 2
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
