@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"Prefer": "outlook.timezone=\"Pacific Standard Time\"",
-}
-requestParameters := &graphconfig.EventRequestBuilderGetQueryParameters{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
+requestParameters := &graphconfig.MeEventItemRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","body","bodyPreview","organizer","attendees","start","end","location","hideAttendees"},
 }
-configuration := &graphconfig.EventRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeEventItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

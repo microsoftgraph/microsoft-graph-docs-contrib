@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestFilter := "joinMeetingIdSettings/joinMeetingId eq '1234567890'"
 
-requestParameters := &graphconfig.OnlineMeetingsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeOnlineMeetingsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.OnlineMeetingsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeOnlineMeetingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

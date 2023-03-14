@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.AttachmentRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeMessageItemAttachmentItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"microsoft.graph.itemattachment/item"},
 }
-configuration := &graphconfig.AttachmentRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMessageItemAttachmentItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

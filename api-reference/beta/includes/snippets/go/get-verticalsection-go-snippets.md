@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.VerticalSectionRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SiteItemPageItemCanvasLayoutVerticalSectionRequestBuilderGetQueryParameters{
 	Select: [] string {"emphasis","expand=webparts"},
 }
-configuration := &graphconfig.VerticalSectionRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SiteItemPageItemCanvasLayoutVerticalSectionRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -18,7 +18,7 @@ $requestBody->setIds(['String', 'String', 'String', ]);
 
 
 
-$graphServiceClient->admin()->windows()->updates()->updatableAssets()->enrollAssetsById()->post($requestBody);
+$graphServiceClient->admin()->windows()->updates()->updatableAssets()->windowsUpdatesEnrollAssetsById()->post($requestBody);
 
 
 ```

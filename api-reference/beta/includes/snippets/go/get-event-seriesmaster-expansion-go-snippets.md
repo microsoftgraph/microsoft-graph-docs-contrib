@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.EventRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.MeEventItemRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","start","end","occurrenceId","exceptionOccurrences","cancelledOccurrences"},
 	Expand: [] string {"exceptionOccurrences"},
 }
-configuration := &graphconfig.EventRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeEventItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

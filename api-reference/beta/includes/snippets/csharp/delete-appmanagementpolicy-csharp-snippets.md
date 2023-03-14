@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Policies.AppManagementPolicies["{appManagementPolicy-id}"]
-	.Request()
-	.DeleteAsync();
+await graphClient.Policies.AppManagementPolicies["{appManagementPolicy-id}"].DeleteAsync();
+
 
 ```

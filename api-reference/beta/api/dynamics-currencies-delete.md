@@ -1,9 +1,9 @@
 ---
-title: Delete currencies 
-description: Deletes a currency object in Dynamics 365 Business Central.
-services: project-madeira
+title: "Delete currencies" 
+description: "Delete a currency object in Dynamics 365 Business Central."
+services: "project-madeira"
 documentationcenter: ''
-author: SusanneWindfeldPedersen
+author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
@@ -39,28 +39,27 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **currencies**, the **currencies** will not be
- updated. |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **currencies**, the **currencies** will not be updated. |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
-**Request**
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 
-**Response** 
+### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 ```http
 HTTP/1.1 204 No Content

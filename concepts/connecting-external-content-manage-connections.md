@@ -111,6 +111,13 @@ Note that the following limitations apply to Adaptive Cards in the eDiscovery re
 - Data binding expressions with `${}` are not supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello ${name}"` is not.
 - Only data binding expressions for single-valued properties are supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello {employee.Name}"` is not.
 
+### Activity settings
+In activity settings, you can provide a way for Microsoft 365 apps to detect **share activity**, which will enable your content to be recommended to users who interact with that content the most. The way to do this is to add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase), which will allow a given URL detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem). 
+
+The following image shows how your item might appear within recommendation experiences across the Microsoft 365 suite. 
+
+![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
+
 ## Update a connection
 
 To change the display name, description, or enabled content experiences for an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).

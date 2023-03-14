@@ -1,5 +1,5 @@
 ---
-title: "Get userProcessingResult (for a run of a lifecycle workflow)"
+title: "Get userProcessingResult"
 description: "Read the properties of a userProcessingResult for a run of a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get userProcessingResult (for a run of a lifecycle workflow)
+# Get userProcessingResult
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the user processing result of a [run](../resources/identitygovernance-run.md) object.
+Get the user processing result of a user processing result of a [run](../resources/identitygovernance-run.md).
 
 ## Permissions
 
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 #### Response
 
 The following is an example of the response
@@ -179,7 +178,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 #### Response
 
 The following is an example of the response
@@ -206,4 +204,3 @@ Content-Type: application/json
     }
 }
 ```
-

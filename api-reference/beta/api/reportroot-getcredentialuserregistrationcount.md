@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

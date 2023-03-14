@@ -105,7 +105,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 
 ---
 
-
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
