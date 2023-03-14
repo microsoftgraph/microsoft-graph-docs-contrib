@@ -1,6 +1,6 @@
 ---
 title: "customExtensionCalloutInstance resource type"
-description: "Defines the custom extension callout instane record information, this is read only object"
+description: "Defines the calls that were made by an instance of a custom extension callout.
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -18,11 +18,11 @@ Defines the custom extension callout instance record information.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customExtensionId|String|Identification of the custom extension triggered at this instance.|
-|detail|String|Detail provided by the customer during callback of the request instance.|
-|externalCorrelationId|String|Logic app unique run Id.|
+|customExtensionId|String|Identification of the custom extension that was triggered at this instance.|
+|detail|String|Details provided by the logic app during the callback of the request instance.|
+|externalCorrelationId|String|The unique run identifier for the logic app.|
 |id|String|Unique identifier for the callout instance. Read-only.|
-|status|customExtensionCalloutInstanceStatus|Status of request to custom extension..The possible values are: `calloutSent`, `callbackReceived`, `calloutFailed`, `callbackTimedOut`, `waitingForCallback`, `unknownFutureValue`.|
+|status|customExtensionCalloutInstanceStatus| The status of the request to the custom extension. The possible values are: `calloutSent`, `callbackReceived`, `calloutFailed`, `callbackTimedOut`, `waitingForCallback`, `unknownFutureValue`.|
 
 ## Relationships
 None.

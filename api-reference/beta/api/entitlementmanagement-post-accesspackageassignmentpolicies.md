@@ -620,7 +620,7 @@ Content-type: application/json
 
 #### Request
 
-In the following example, the pre-defined **accessPackageCustomWorkflowExtension** object is triggered when an access package assigned request is created and when it's granted.  The identifier provided within the **customExtension** field is the **accessPackageCustomWorkflowExtension** object's ID.
+In the following example, the pre-defined **accessPackageCustomWorkflowExtension** object is triggered when an access package assignment request is created and when it's granted.  The identifier provided within the **customExtension** field is the **accessPackageCustomWorkflowExtension** object's ID.
 
 
 <!-- {

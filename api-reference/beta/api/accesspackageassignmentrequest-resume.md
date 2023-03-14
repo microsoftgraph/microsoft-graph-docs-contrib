@@ -47,8 +47,8 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |source|String|Source from where customer is trying to resume the request, which can be stored in service and will be helpful for auditing.|
-|type|String|Indicate at which stage the custom callout extension was executed.The possible values are: `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestApproved`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestGranted`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestRemoved`|
-|data|[customExtensionData](../resources/customextensiondata.md)|[Access Package Assignment Request Callback Data](../resources/accesspackageassignmentrequestcallbackdata.md)|
+|type|String|Indicate at which stage the custom callout extension was executed. The possible values are: `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestApproved`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestGranted`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestRemoved`|
+|data|[customExtensionData](../resources/customextensiondata.md)| Contains information about the instance of the callout that was made to the customer endpoint. |
 
 
 
@@ -58,7 +58,9 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Resume a request
+### Example 1: Resume an access package assignment request
+
+#### Request
 The following is an example of a on how to resume a resume that waiting for callback.
 <!-- {
   "blockType": "request"
@@ -81,9 +83,8 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -93,7 +94,9 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Deny an access package assignment request
+### Example 2: Deny an access package assignment request
+
+#### Request
 The following is an example to deny an assignment request which is waiting for callback which resuming the processing of a request. Request can not be denied at `assignmentRequestCreated` stage of callout.
 <!-- {
   "blockType": "request"
@@ -119,7 +122,6 @@ Content-Type: application/json
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

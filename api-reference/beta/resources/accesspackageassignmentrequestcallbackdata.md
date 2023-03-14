@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequestCallbackData resource type"
-description: "Access package assignment request workflow calllback back that custom extension endpoint callback, derived from [customextensiondata](../resources/customextensiondata.md)"
+description: "Data for an access package assignment request workflow callback."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -21,10 +21,10 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customExtensionStageInstanceId|String|Unique Id of the callout to the custom extension that was made at a stage of request processing.|
-|customExtensionStageInstanceDetail|String|Details for the callback so that the admin or approver can see this information.|
-|stage|accessPackageCustomExtensionStage|Indicate at which stage the custom callout extension will be executed.The possible values are: `assignmentRequestCreated`, `assignmentRequestApproved`, `assignmentRequestGranted`, `assignmentRequestRemoved`, `assignmentFourteenDaysBeforeExpiration`, `assignmentOneDayBeforeExpiration`, `unknownFutureValue`.|
-|state|String|Allow extension to be able to deny or cancel the request submitted by the requestor. Supported values: `Denied`, `Canceled`. This property can only be set for `assignmentRequestCreated` stage.|
+|customExtensionStageInstanceId|String|Unique identifier of the callout to the custom extension.|
+|customExtensionStageInstanceDetail|String|Details for the callback.|
+|stage|accessPackageCustomExtensionStage|Indicates the stage at which the custom callout extension will be executed. The possible values are: `assignmentRequestCreated`, `assignmentRequestApproved`, `assignmentRequestGranted`, `assignmentRequestRemoved`, `assignmentFourteenDaysBeforeExpiration`, `assignmentOneDayBeforeExpiration`, `unknownFutureValue`.|
+|state|String|Allow the extension to be able to deny or cancel the request submitted by the requestor. The supported values are `Denied` and `Canceled`. This property can only be set for an `assignmentRequestCreated` stage.|
 
 ## Relationships
 None.

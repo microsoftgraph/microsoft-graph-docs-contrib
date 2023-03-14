@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequestWorkflowExtension resource type"
-description: "Defines the attributes of a logic app, which can be called at various stages of an access package request cycle."
+description: "Defines the attributes of a logic ap that can be called at various stages of an access package request cycle."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the attributes of a logic app, which can be called at various stages of an access package request cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. 
+Defines the attributes of a logic app that can be called at various stages of an access package request cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. 
 
 The following use cases can be integrated with logic apps using [access package assignment request](accesspackageassignmentrequest.md) workflow:
 - When an [access package is requested](accesspackageassignmentrequest.md)
@@ -38,14 +38,14 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
-|createdBy|String|The userPrincipalName of the user or identity of the subject who created this resource. Read-only.|
-|createdDateTime|DateTimeOffset|Entity created datetime.|
+|createdBy|String|The userPrincipalName of the user or identity of the subject that created this resource. Read-only.|
+|createdDateTime|DateTimeOffset|When the entity was created.|
 |description|String|Description for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|Display name for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |id|String|Read-only.|
-|lastModifiedBy|String|Identity with UPN as display name who modified entity. |
-|lastModifiedDateTime|DateTimeOffset|Entity modified datetime.|
+|lastModifiedBy|String|The userPrincipalName of the identity that last modified the entity. |
+|lastModifiedDateTime|DateTimeOffset|When the entity was last modified.|
 
 ## Relationships
 None.
