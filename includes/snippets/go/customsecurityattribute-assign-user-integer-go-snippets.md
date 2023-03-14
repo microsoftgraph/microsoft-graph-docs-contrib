@@ -5,14 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewUser()
 customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
 additionalData := map[string]interface{}{
 engineering := graphmodels.New()
-"numVendors@odata.type" := "#Int32"
-engineering.Set"numVendors@odata.type"(&"numVendors@odata.type") 
+odataType := "#Int32"
+engineering.SetOdataType(&odataType) 
 numVendors := int32(4)
 engineering.SetNumVendors(&numVendors) 
 	customSecurityAttributes.SetEngineering(engineering)

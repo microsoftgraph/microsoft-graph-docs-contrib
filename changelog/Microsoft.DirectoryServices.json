@@ -443,6 +443,42 @@
     {
       "ChangeList": [
         {
+          "Id": "04fb09f6-d2b7-48b7-9fd1-72916809de5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-beta) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-beta) resource.",
+          "Target": "directoryObject"
+        }
+      ],
+      "Id": "04fb09f6-d2b7-48b7-9fd1-72916809de5d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-13T00:00:00.2142092Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7e7346db-a7e5-40c2-987a-2bbba5076f7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-1.0) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+          "Target": "directoryObject"
+        }
+      ],
+      "Id": "7e7346db-a7e5-40c2-987a-2bbba5076f7b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-13T00:00:00.215084Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "06a63cc8-a5be-49af-adf7-8c34a822c8d9",
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",

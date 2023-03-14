@@ -1,5 +1,5 @@
 ---
-title: "Delete workflow (lifecycle workflow)"
+title: "Delete workflow"
 description: "Deletes a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Delete workflow (lifecycle workflow)
+# Delete workflow
 
 Namespace: microsoft.graph.identityGovernance
 

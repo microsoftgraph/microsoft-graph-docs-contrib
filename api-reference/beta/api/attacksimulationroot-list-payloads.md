@@ -37,7 +37,7 @@ GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
+This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **technique**, **simulationAttackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
 
 If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
@@ -129,7 +129,7 @@ Content-Type: application/json
             "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
             "name": "AttackSimTest Payload",
             "description": "AttackSim Test Payload",
-            "attackType": "social",
+            "simulationAttackType": "social",
             "platform": "email",
             "isAutomated": null,
             "status": "draft",
@@ -137,7 +137,7 @@ Content-Type: application/json
             "language": "en",
             "predictedCompromiseRate": 20.0,
             "complexity": "medium",
-            "attackTechnique": "credentialHarvesting",
+            "technique": "credentialHarvesting",
             "createdBy": {
                 "email": "faiza@contoso.com",
                 "id": "121212",

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewAuthenticationMethodsPolicy()
 registrationEnforcement := graphmodels.NewRegistrationEnforcement()
@@ -66,7 +66,7 @@ authenticationMethodConfigurations := []graphmodels.AuthenticationMethodConfigur
 }
 requestBody.SetAuthenticationMethodConfigurations(authenticationMethodConfigurations)
 additionalData := map[string]interface{}{
-	"@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy", 
+	"odataContext" : "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy", 
 }
 requestBody.SetAdditionalData(additionalData)
 
