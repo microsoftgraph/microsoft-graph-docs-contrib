@@ -252,11 +252,12 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
->**Note:** Examples 4 and 5 will be deprecated.
+> [!NOTE]
+> The document format for transcripts will be deprecated in 60 days.
 
 ### Example 4: Get a callTranscript content specifying Accept header
 
->**Note:** As example 4 is getting deprecated, Accept header will also be deprecated.
+>**Note:** As document format is getting deprecated, `Accept` header will also be deprecated.
 
 #### Request
 
@@ -318,7 +319,7 @@ This is a transcript test.
 ```
 ### Example 5: Get a callTranscript content with $format getting precedence over the Accept header
 
->**Note:** As example 5 is getting deprecated, $format query parameter will also be deprecated.
+>**Note:** As document format is getting deprecated, `$format` query parameter will also be deprecated.
 
 #### Request
 
