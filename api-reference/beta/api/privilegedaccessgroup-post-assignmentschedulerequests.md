@@ -143,7 +143,7 @@ Content-Type: application/json
 
 ### Example 2: User activates their eligible assignment for PIM for Groups
 
-In the following request, a user identified by **principalId** `3cce9d87-3986-4f19-8335-7ed075408ca2` activates their *eligible role* to group managed by PIM identified by **grouId** `2b5ed229-4072-478d-9504-a047ebd4b07d`.
+In the following request, a user identified by **principalId** `3cce9d87-3986-4f19-8335-7ed075408ca2` activates their *eligible membership* to a group managed by PIM identified by **grouId** `2b5ed229-4072-478d-9504-a047ebd4b07d`.
 
 #### Request
 <!-- {
