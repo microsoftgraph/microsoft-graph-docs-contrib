@@ -20,10 +20,12 @@ In the [Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-gro
 ## User-scoped datasets
 1. User-scoped datasets can be Messages, Events, Users, etc.
 2. Scope Options:
+
     * **All users in the tenant**: returns data for all the users in the tenant. More information can be found [here](/graph/data-connect-filtering.md).
     * **All users in the tenant with a scope filter**: returns data for all the users in the tenant that are part of the scope filter applied. 
         1. Scope Filter can help filter down the users desired, if left empty it returns all the data of the users. More information can be found [here](/graph/data-connect-filtering.md).
     *	**Select groups from the Microsoft 365 tenant**: data is extracted for individual users in the mentioned group from scope.
+    
 3.	Groups can be distribution groups, security groups, or M365 groups.
 4.	MGDC expands the list of users from the scoped groups provided and then extracts data for each of those users. 
 5.	**Example**:  The customer wants to extract the Messages dataset and creates a security group of users A, B, and C in a tenant of 500 users, and passes this group. MGDC expands the provided security group into a list of users, extracts the messages data for those three users and delivers the data for those users to the customer. The customer will only receive the messages dataset for individual users A, B, and C out of their tenant of 500 users.
