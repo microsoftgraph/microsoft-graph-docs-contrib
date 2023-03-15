@@ -12,7 +12,7 @@ This article describes how to embed the Microsoft Teams experience within your a
 
 To improve your app's the response time and help lower costs, you'll want to minimize the number of times a message is read from Microsoft Graph. This article explains how to retrieve messages once and cache them, and then use change notifications to get only the subsequent messages.
 
-## Step 1: Design and set up the architecture
+## Step 1: Design and set up architecture
 
 The following diagram shows the suggested high-level architecture for an app that integrates with Teams.
 
@@ -35,7 +35,7 @@ After you set up these components, you can start using Teams APIs.
 
 ## Step 2: Create a new chat
 
-Before sending a new [chatMessage](/graph/api/resources/chatmessage), you must create a [chat](/graph/api/resources/chat) by assigning [members](/graph/api/resources/conversationmember). The following example shows how to create a grup chat. For more examples that show how to create different chat types, see [Create chat](/graph/api/chat-post).
+Before sending a new [chatMessage](/graph/api/resources/chatmessage), you must create a [chat](/graph/api/resources/chat) by assigning [members](/graph/api/resources/conversationmember). The following example shows how to create a group chat. For more examples that show how to create different chat types, see [Create chat](/graph/api/chat-post).
 
 ### Request
 
