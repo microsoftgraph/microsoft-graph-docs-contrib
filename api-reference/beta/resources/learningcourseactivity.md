@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|**Type to determine if it’s a LearningAssignment or SelfInitiated course**
-|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md)|**[assignmentType](../resources/assignmentType.md) for the course activity (required/recommended)**
+|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md)|**assignmentType for the course activity (required/recommended)**
 |registrationId|String|**Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s**
 |startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner**
 |assignerUserId|String|**The user id of the assigner**
