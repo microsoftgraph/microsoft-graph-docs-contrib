@@ -8,30 +8,30 @@ ms.prod: "microsoft-teams"
 
 # Embed Microsoft Teams in your app
 
-This article describes how to embed the Microsoft Teams experience within your application. This prevents users from needing to switch between your application and Teams and enables them to read and send Teams messages directly from your app.
+This article describes how to embed the Microsoft Teams experience within your application. By embedding Teams in your app, you prevent users from having to switch between your application and Teams; they can read and send Teams messages directly from your app.
 
-To improve the response time of your app and lower costs, you want to minimize the number of times a message is read from Microsoft Graph. This article shows how you can retrieve messages one time, cache them, and then use change notifications to get only the subsequent messages.
+To improve your app's the response time and help lower costs, you'll want to minimize the number of times a message is read from Microsoft Graph. This article explains how to retrieve messages once and cache them, and then use change notifications to get only the subsequent messages.
 
 ## Step 1: Design and set up the architecture
 
-The following diagram shows the suggested high-level architecture.
+The following diagram shows the suggested high-level architecture for an app that integrates with Teams.
 
 ![Diagram showing Teams integration with an application UI](images/teams-how-to-write-interactive-message-app-system-diagram.png)
 
-The architecture includes three components that you add to your existing application system:
+The architecture includes three components:
 
-1. A **chat UI** gets user inputs and displays messages. It makes API requests (such as `POST`/`GET` chats, `POST`/`GET` messages) to Microsoft Teams APIs. It also gets new messages in real time from the server component.
+- A **chat UI** that gets user inputs and displays messages. The chat UI makes API requests (such as `POST`/`GET` chats, `POST`/`GET` messages) to Teams APIs. It also gets new messages in real time from the server component.
 
-2. A **server component** that subscribes to change notifications in real time to get new messages from Teams APIs. When Teams APIs [send change notifications](#step-7-receive-and-decrypt-change-notifications), a webhook URL is required to listen to the change notifications, and your UI, such as the users’ mobile phone, might not have a webhook URL. The server component, however, has a stable webhook URL. The new messages are then pushed from the server component to the chat UI, using communication methods such as ASP.NET [SignalR](/aspnet/signalr/overview/getting-started/introduction-to-signalr).
+- A **server component** that subscribes to change notifications in real time to get new messages from Teams APIs. When Teams APIs [send change notifications](#step-7-receive-and-decrypt-change-notifications), a webhook URL is required to listen to the change notifications, and your UI, such as the users' mobile phone, might not have a webhook URL. The server component, however, has a stable webhook URL. The new messages are then pushed from the server component to the chat UI, using communication methods such as ASP.NET [SignalR](/aspnet/signalr/overview/getting-started/introduction-to-signalr).
 
     > [!NOTE]
     > You might also choose to have the server component, instead of the chat UI, make all the API requests to Teams APIs, and cache all the messages. For example, if you have another backend system component that also needs to make API requests, such as for compliance and auditing, you might choose to centralize the API requests and caching on the server component instead.
 
-3. A **cache** that persists messages. To improve the response time for your application and to potentially lower the costs for you, minimize reading the same message multiple times by storing messages in this cache. You do not want to be surprised by the API consumption charges later. To learn how to set up a cache, see [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
+- A **cache** that persists messages. To improve the response time for your application and to potentially lower the costs for you, minimize reading the same message multiple times by storing messages in this cache. You do not want to be surprised by the API consumption charges later. To learn how to set up a cache, see [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
 
     Some Teams APIs have licensing and payment requirements. For details, see [Payment models and licensing requirements](/graph/teams-licenses) for details.
 
-When these system components are all set up, you can start using Teams APIs. 
+After you set up these components, you can start using Teams APIs. 
 
 ## Step 2: Create a new chat
 
